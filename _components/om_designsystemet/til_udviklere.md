@@ -22,17 +22,17 @@ npm install --save dkfds
 Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i 'dist/'-mappen.</p>
 
 <h3>Inkluder DKFDS Components i dit projekt</h3>
-<p>Den hurtigst måde at få inkluderet FDS' css i dit projekt er at tilføje følgende link-tag:</p>
+<p>Den hurtigste måde at få inkluderet FDS' css i dit projekt er at tilføje følgende link-tag:</p>
 ```shell
   <link type='text/css' rel='stylesheet' href='[path to dkfds folder]/dist/css/dkfds.css'>
 ```
-<p>For at inkludere javascripten, tilføj følgende tag i slutningen af body-tagget:</p>
+<p>For at inkludere JavaScript skal du tilføje følgende tag i slutningen af body-tagget:</p>
 ```shell
   <script src='[path to dkfds folder]/dist/js/dkfds.js'></script>
 ```
 
 <h4>Note til Webpack</h4>
-<p>For at inkludere stylingen skal visse variabler tilpasses:</p>
+<p>For at inkludere stylingen skal du tilpasse disse variabler:</p>
 
 ```shell
   $font-path:         '~dkfds/src/fonts/IBMPlexSans/';
@@ -42,14 +42,14 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
   @import '../node_modules/dkfds/dist/scss/dkfds';
 ```
 
-<p>For at inkludere javascripten via webpack, tilføj følgende linie i din main.js fil:</p>
+<p>For at inkludere JavaScript via webpack skal du tilføje følgende linje i din main.js fil:</p>
 
 ```shell
   import "dkfds";
 ```
 
-<h4>Fix for bug i Edge og Internet Explorer</h4>
-<p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. For at løse dette kan man tilføje stylingen direkte i <code>head</code> sektionen:</p>
+<h4>Fix for bug i Microsoft Edge og Internet Explorer</h4>
+<p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje stylingen direkte i <code>head</code> sektionen.</p>
 ```shell
   <style>
     /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. */   
@@ -60,7 +60,7 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
 ```
 
 <h2>DKFDS Plugins</h2>
-<p>Det er kun styling (css eller scss) som skal inkluderes fra plugins projektet. Den JavaScript og HTML som findes i projektet er kun til at lave de eksempler som kan ses på dette dokumentationssite.</p>
+<p>Du skal kun inkludere styling (CSS eller SCSS) fra dkfds-plugins projektet.</p>
 <p>Der er i øjeblikket lavet temaer til følgende:</p>
 <ul class="nobullet-list">
     <li><a href="https://datatables.net/" class="icon-link" target="_blank">Datatables<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
@@ -68,7 +68,7 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
     <li><a href="https://github.com/Pikaday/Pikaday" target="_blank" class="icon-link">Pikaday<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-<p>Projektet er på npm og kan installeres ved at skrive følgende i en kommando-prompt:</p>
+<p>dkfds-plugins projektet er tilgængeligt via npm og du kan installere det ved at skrive følgende i en kommando-prompt:</p>
 
 ```shell
 npm install dkfds-plugins --save
@@ -81,7 +81,7 @@ npm install dkfds-plugins --save
 &lt;link rel="stylesheet" href="[path-to-plugins-project]/dist/css/dkfds-datatables-theme.standalone.min.css"&gt;
 </pre>
 
-<p>Eller inkluder temaet i scss (Bemærk, at dkfds skal importeres først):</p>
+<p>Eller inkluder temaerne i SCSS (Bemærk, at du først skal importere dkfds):</p>
 
 <pre>
 @import "~dkfds-plugins/dist/scss/dkfds-datatables-theme";
