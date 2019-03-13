@@ -38,7 +38,7 @@ subnav:
   <ul>
     <li>
       <b>Refaktoreret fra 'dkwds' til 'dkfds'</b>
-      <p>Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds">'dkfds'</a> i steden for 'dkwds'. </p>
+      <p class="m-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds">'dkfds'</a> i steden for 'dkwds'. </p>
     </li>
     <li class="mt-4">
       <b>Bourbon er fjernet</b>
