@@ -1467,12 +1467,20 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
   @import <span class="s1">'../node_modules/dkfds/dist/scss/dkfds'</span>;
 </code></pre>
 </div>
+<p><strong>Browserspecifik styling tilføjes i projektet</strong></p>
+<p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>
+<p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p>
 
 <p>For at inkludere JavaScript via webpack skal du tilføje følgende linje i din main.js fil:</p>
 
 <div class="language-shell highlighter-rouge"><pre class="highlight"><code>  import <span class="s2">"dkfds"</span>;
 </code></pre>
 </div>
+
+<h4>Note til gulp</h4>
+<p><strong>Browserspecifik styling tilføjes i projektet</strong></p>
+<p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>
+<p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p>
 
 <h4>Fix for bug i Microsoft Edge og Internet Explorer</h4>
 <p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje stylingen direkte i <code>head</code> sektionen.</p>
