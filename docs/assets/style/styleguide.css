@@ -4045,7 +4045,7 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  display: inline-flex;
+  display: inline-block;
   width: 100%;
   padding: calc(8px - 2px) calc(16px - 2px);
   border-radius: 4px;
@@ -6671,7 +6671,6 @@ input[type="search"] {
     min-height: 40px;
     min-width: 40px;
     padding: 8px 0;
-    display: flex;
     align-items: center;
     justify-content: center;
     color: #1a1a1a; }
