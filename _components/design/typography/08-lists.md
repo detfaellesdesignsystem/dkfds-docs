@@ -41,7 +41,7 @@ order: 07
         <h1 class="h4">Vejledning</h1>
         <ul>
             <li>Hold listerne så korte og faktuelle som muligt.</li>
-            <li•	Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
+            <li>Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
             <li>Brug punkter, når der ikke er et hierarki i informationerne.</li>
         </ul>
       </section>

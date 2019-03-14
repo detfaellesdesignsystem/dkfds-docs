@@ -12,7 +12,7 @@ order: 10
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="helptext-docs-tech">
-    Brugervenlighed
+    Retningslinjer
   </button>
   <div id="helptext-docs-tech" aria-hidden="true" class="accordion-content">
     <p>Hjælpetekst og fejltekst knytter sig i udpræget grad til formularer. Du kan også anvende dem, hvor der er behov for at hjælpe brugeren med forklaring af et element eller at give feedback på et element.</p>
