@@ -4,9 +4,9 @@ title: Manchettekst (lead paragraph)
 parent: typography
 order: 04
 ---
-<p class="font-lead">Manchettekst bruges typisk til at introducere et trin eller en sides indhold. Den bruges hvor og når det giver mening i kontekst.</p>
+<p class="font-lead">Du kan bruge manchettekst til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.</p>
 
-<p>Giv tekst extra focus ved at give den klassen <code>.font-lead</code>.</p>
+<p>Du kan give teksten extra fokus ved at give den klassen <code>.font-lead</code>.</p>
 
 {% include code/preview.html component="lead_paragraph" %}
 {% include code/accordion.html component="lead_paragraph" %}
@@ -22,9 +22,9 @@ order: 04
       <section>   
           <ul>
             <li>Hold manchetteksten kort og præcis, gerne max tre linjer.</li>  
-            <li>Manchetteksten er kun til korte introduktionstekster ikke til lange informationstekster. Brug brødtekst og lister til yderligere informationer.</li>
-            <li>Brug ikke manchettekst, hvis det ikke er nødvendigt. Fx når brugeren kan afkode siden uden og begynde at indtaste med det samme.</li>
-            <li>Typisk starter indtastningsflowet eller en sektion lige under manchetteksten, men den kan godt følges af brødtekst, lister, links, o.l. hvis det er nødvendigt for brugerens gennemførelse af løsningen.</li>
+            <li>Manchetteksten er kun til korte introduktionstekster og ikke til lange informationstekster. Brug brødtekst og lister til yderligere informationstekster.</li>
+            <li>Brug kun manchettekst, når og hvor det er nødvendigt. Brug fx ikke manchettekst, hvis brugeren selv kan afkode siden og begynde at indtaste med det samme.</li>
+            <li>Typisk starter indtastningsflowet eller en sektion lige under manchetteksten. Hvis det understøtter brugerens gennemførelse af løsningen, kan du godt indsætte brødtekst, lister, links, o.l. efter manchetteksten.</li>
           </ul>
       </section>
     </article>

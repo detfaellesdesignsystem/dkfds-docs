@@ -16,8 +16,8 @@ order: 07
     Implementering
   </button>
   <div id="lists-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>For at lave en liste uden styling kan enten klassen <code>.unstyled-list</code> benyttes eller et mixin <code>@include unstyled-list;</code>.</p>
-    <p>For at lave en liste uden bullets, hvor man bibeholder afstanden, kan enten klassen <code>.nobullet-list</code> benyttes eller et mixin <code>@include nobullet-list;</code>.</p>
+    <p>For at lave en liste uden styling kan du enten benytte klassen <code>unstyled-list</code> eller et mixin <code>@include unstyled-list;</code>.</p>
+    <p>For at lave en liste uden bullets, hvor man bibeholder afstanden, kan du enten benytte klassen <code>nobullet-list</code> eller et mixin <code>@include nobullet-list;</code>.</p>
   </div>
 </div>
 
@@ -41,7 +41,7 @@ order: 07
         <h1 class="h4">Vejledning</h1>
         <ul>
             <li>Hold listerne så korte og faktuelle som muligt.</li>
-            <li>Brug tal i listerne, når der er et hierarki i det der præsentere.</li>
+            <li•	Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
             <li>Brug punkter, når der ikke er et hierarki i informationerne.</li>
         </ul>
       </section>
