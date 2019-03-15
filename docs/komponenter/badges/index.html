@@ -19,8 +19,8 @@
 <meta property="og:title" content="Badges | Det Fælles Designsystem">
 
 
-<meta name="description" content="Badges draw attention to new or important content.">
-<meta property="og:description" content="Badges draw attention to new or important content.">
+<meta name="description" content="Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller vigtigt indhold.">
+<meta property="og:description" content="Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller vigtigt indhold.">
 
 
 
@@ -424,7 +424,7 @@
 
 <a href="/dkfds-docs/design/kanter/" 
   class="  nav-link">
-  Kanter, streger, skygger
+  Hjørner, streger, skygger
 </a>
 
 
@@ -1670,7 +1670,7 @@
           </p>
           <h1 class="mt-0" id="badges">Badges</h1>
           
-            <p class="font-lead">Badges draw attention to new or important content.</p>
+            <p class="font-lead">Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller vigtigt indhold.</p>
           
       
           
@@ -1734,27 +1734,29 @@
       <section>
           <h2 class="h4">Tilgængelighed</h2>
           <ul>
-              <li>Interaktive badges markeres tydeligt med en focus-tilstand, når brugere vha tab-tasten navigerer sig frem til dem.</li>
-              <li>Hvis badges anvendes dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden, skal du anvende ARIA live regions til at gøre skærmlæsere på opmærksomme på ændringerne.</li>
+              <li>Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tabulatortasten navigerer sig frem til dem.</li>
+              <li>Du skal anvende ARIA live regions til at gøre skærmlæsere på opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.</li>
           </ul>
       </section>
       <section>
           <h2 class="h4">Brugervenlighed</h2>
           <h3 class="h5">Anvendes til</h3>
-          <p>Badges anvendes til at gøre opmærksom på ændringer, nyt eller vigtigt indhold.</p>
+          <ul>
+            <li>Brug badges til at gøre opmærksom på ændringer, nyt eller vigtigt indhold.</li>
+          </ul>
           <h3 class="h5">Anvendes ikke til</h3>
           <ul>
-              <li>Hvis et badges placering gør, at det kan misforstås som en knap, skal du undlade at anvende det. Test altid for dette, når du anvender badges.</li>
+              <li>Brug ikke badge, hvis placeringen af det får brugeren til at tro, det er en knap. Test altid for dette, når du vil anvende badges.</li>
               <li>Overvej at markere ændringer på siden ved at markere selve det ændrede fx med en baggrundsfarve eller en typografisk markering som fx fed tekst.</li>
-              <li>Hvis indholdet forventes at udskiftes dynamisk som fx en nyhedsside, kan det være nok blot at placere nyeste øverst og undlade badge.</li>
+              <li>Brug ikke badge på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyhedssider, hvor brugeren nemt kan se, hvad der er det nyeste indhold, når det blot står øverst.</li>
           </ul>
           <h3 class="h5">Vejledning</h3>                
           <ul>
-              <li>Brug ord og begreber, der kan genkendes fra løsningens kontekst og ikke ukendte. </li>  
-              <li>Badges skrives med store bogstaver.</li>
-              <li>Hvis det anvendte badge ikke er interaktivt (fx som link), skal det ikke have hover, focus eller active styling.</li>
-              <li>Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer ensartet opførsel indenfor løsningen.</li>
-              <li>Vær varsom med at markere for meget med badges – brug dem kun, hvor det virkelig er meningsfuldt.</li>
+              <li>Brug ord og begreber, som brugeren kan genkendes fra løsningen.</li>  
+              <li>Skriv badges med store bogstaver.</li>
+              <li>Brug ikke hover, focus eller active styling til et badge, som ikke er interaktivt (fx link).</li>
+              <li>Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer ensartet opførsel af komponenterne inden for løsningen.</li>
+              <li>Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor det virkelig er meningsfuldt.</li>
           </ul>
       </section>
     </article>

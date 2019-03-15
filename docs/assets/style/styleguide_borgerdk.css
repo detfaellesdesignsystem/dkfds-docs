@@ -5649,7 +5649,7 @@ footer .footer-theme {
         margin-right: -4px; }
         .header .nav-actions > li, .header .nav-actions > li:first-child {
           margin: calc(8px - 2px) 4px; } }
-  @media (max-width: lg) {
+  @media (max-width: 1199px) {
     .header .function-link {
       display: block;
       margin-top: 8px; }
