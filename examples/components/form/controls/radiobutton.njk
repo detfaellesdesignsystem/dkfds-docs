@@ -1,11 +1,25 @@
 {% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
 
 <div class="container">
-    <ul class="unstyled-list">
-      {% for item in radiobuttons_example.items %}
-      <li class="mb-2">
-        {{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.sr) }}
-      </li>
-      {% endfor %}
-    </ul>
+    <fieldset>
+      <legend class="h5">Lille radioknap</legend>
+        <ul class="nobullet-list">
+          {% for item in radiobuttons_example_small.items %}
+          <li>
+            {{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.sr) }}
+          </li>
+          {% endfor %}
+        </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend class="h5">Stor radioknap (anbefalet)</legend>
+        <ul class="nobullet-list">
+          {% for item in radiobuttons_example_large.items %}
+          <li>
+            {{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.sr) }}
+          </li>
+          {% endfor %}
+        </ul>
+    </fieldset>
 </div>

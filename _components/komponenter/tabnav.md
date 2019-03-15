@@ -5,7 +5,7 @@ type: component
 title: Faneblade
 category: Komponenter_category
 subcategory: Komponenter
-lead: "Horizontal navigation."
+lead: "Faneblade udgør den vandrette eller horisontale navigation i en løsning. Brugeren kan aktivere det tilhørende indhold ved at klikke på fanebladet."
 ---
 <h2>Faneblade</h2>
 {% include code/preview.html component="tabnav" %}

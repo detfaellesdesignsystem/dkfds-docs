@@ -16,8 +16,8 @@ order: 01
     <section>
         <h3 class="h4">Statiske hjørner</h3>
         <ul>
-            <li><p>Statiske hjørner er lige og har en <code>border-radius: 0px;</code></p></li>
-            <li><p>For at få lige hjørner bruges variablen <code>$static-border-radius</code></p></li>
+            <li>Statiske hjørner er lige og har en <code>border-radius: 0px;</code></li>
+            <li>For at få lige hjørner skal du bruge variablen <code>$static-border-radius</code></li>
         </ul>
         <p class="h5 mb-3">Eksempel:</p>
         <div class="code-highlight">
@@ -25,9 +25,9 @@ order: 01
         </div>
         <h3 class="h4">Interaktive hjørner</h3>
         <ul>
-            <li><p>Interaktive hjørner er runde og har en <code>border-radius: 4px;</code></p></li>
-            <li><p>For at få runde hjørner bruges variablen <code>$interactive-border-radius</code></p></li>
-            <li><p>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</p></li>
+            <li>Interaktive hjørner er runde og har en <code>border-radius: 4px;</code></li>
+            <li>For at få runde hjørner skal du bruge variablen <code>$interactive-border-radius</code></li>
+            <li>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</li>
         </ul>
         <p class="h5 mb-3">Eksempel:</p>
         <div class="code-highlight">

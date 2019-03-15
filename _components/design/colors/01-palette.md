@@ -7,7 +7,7 @@ order: 01
 
 <!-- new setup start -->
 <h3 class="h4">Primærfarver for borger.dk</h3>
-<p>Primærfarven bruges på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til borger.dk.</p>
+<p>Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til borger.dk</p>
 <div class="color-row-container">
   <div class="row color-row">
     <!-- borger primary START -->
@@ -40,7 +40,7 @@ order: 01
   </div>
 </div>
 <h3 class="h4">Primærfarver for Virk</h3>
-<p>Primærfarven bruges på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til Virk.</p>
+<p>Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til Virk.</p>
 <div class="color-row-container">
   <div class="row color-row">
     <!-- virk primary START -->
@@ -74,7 +74,7 @@ order: 01
 </div>
 
 <h2>Generel palette</h2>
-<p>Den generelle palette består mest af gråtoner og nogle få dedikerede farver til kommunikation og feedback. Paletten understøtter de visuelle principper om et neutralt, simpelt og fleksibelt designsystem.</p>
+<p>Designsystemets generelle palette består mest af gråtoner og nogle få dedikerede farver til kommunikation og feedback. Paletten understøtter de visuelle principper om et neutralt, simpelt og fleksibelt designsystem.</p>
 <h3 class="h4">Gråtoneskala</h3>
 <div class="color-row-container">
   <div class="row color-row">

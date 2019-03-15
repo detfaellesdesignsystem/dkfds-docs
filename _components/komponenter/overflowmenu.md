@@ -5,7 +5,7 @@ type: component
 title: Overflow menu
 category: Komponenter_category
 subcategory: Komponenter
-lead: Vis/Skjul liste af links eller knapper
+lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links eller knapper. Når brugeren klikker på menulinjen, folder listen sig ud. 
 ---
 
 {% include code/preview.html component="overflow-menu" %}

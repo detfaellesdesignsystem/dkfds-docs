@@ -1,11 +1,11 @@
 {
-  "radiobuttons_example": {
+  "radiobuttons_example_small": {
     "items": [
       {
         "id": "unchecked",
         "name": "unchecked",
         "value": "truth",
-        "text": "Unchecked",
+        "text": "Ikke-udfyldt radioknap",
         "checked": false,
         "disabled": false
       },
@@ -13,7 +13,7 @@
         "id": "Checked",
         "name": "Checked",
         "value": "Checked",
-        "text": "Checked",
+        "text": "Udfyldt radioknap",
         "checked": true,
         "disabled": false
       },
@@ -21,7 +21,7 @@
         "id": "Disabled",
         "name": "Disabled",
         "value": "Disabled",
-        "text": "Disabled",
+        "text": "Inaktiv ikke-udfyldt radioknap (disabled)",
         "checked": false,
         "disabled": true
       },
@@ -29,7 +29,7 @@
         "id": "Disabled-checked",
         "name": "Disabled-checked",
         "value": "Disabled-checked",
-        "text": "Disabled checked",
+        "text": "Inaktiv udfyldt radioknap (disabled)",
         "checked": true,
         "disabled": true
       },
@@ -37,16 +37,20 @@
         "id": "Focus",
         "name": "Focus",
         "value": "Focus",
-        "text": "Focus",
+        "text": "Ikke-udfyldt radioknap i fokus",
         "checked": false,
         "disabled": false,
         "focus": true
-      },
+      }
+    ]
+  },
+  "radiobuttons_example_large": {
+    "items": [
       {
         "id": "Unchecked-large",
         "name": "Unchecked-large",
         "value": "Unchecked-large",
-        "text": "Unchecked-large",
+        "text": "Stor ikke-udfyldt radioknap",
         "checked": false,
         "disabled": false,
         "large": true
@@ -55,7 +59,7 @@
         "id": "Checked-large",
         "name": "Checked-large",
         "value": "Checked-large",
-        "text": "Checked-large",
+        "text": "Stor udfyldt radioknap",
         "checked": true,
         "disabled": false,
         "large": true
@@ -64,7 +68,7 @@
         "id": "Disabled-large",
         "name": "Disabled-large",
         "value": "Disabled-large",
-        "text": "Disabled-large",
+        "text": "Stor inaktiv ikke-udfyldt radioknap (disabled)",
         "checked": false,
         "disabled": true,
         "large": true
@@ -73,7 +77,7 @@
         "id": "Disabled-checked-large",
         "name": "Disabled-checked-large",
         "value": "Disabled-checked-large",
-        "text": "Disabled-checked-large",
+        "text": "Stor inaktiv udfyldt radioknap (disabled)",
         "checked": true,
         "disabled": true,
         "large": true
@@ -82,7 +86,7 @@
         "id": "Focus-large",
         "name": "Focus-large",
         "value": "Focus-large",
-        "text": "Focus-large",
+        "text": "Stor ikke-udfyldt radioknap i fokus",
         "checked": false,
         "disabled": false,
         "large": true,

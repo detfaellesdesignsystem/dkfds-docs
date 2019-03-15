@@ -4,10 +4,8 @@ layout: styleguide
 type: component
 title: Cards
 category: Komponenter_category
-subcategory: Komponenter 
-lead: A card is a sheet of material that serves as an entry point to more detailed information.
+subcategory: Komponenter
 ---
-
 {% include code/preview.html component="cards" %}
 {% include code/accordion.html component="cards" %}
 <div class="accordion-bordered">
@@ -17,7 +15,8 @@ lead: A card is a sheet of material that serves as an entry point to more detail
   </button>
   <div id="code-documentation" class="accordion-content">
     <section>
-        <p>Alle cards har en <code>.card</code> class. Cards kan bestå af en header, et tekstområde, et contentområde og et aktionområde. Der er ingen specifik rækkefølge af områder og de kan derfor sammensættes efter eget behov og i alle størrelser. Der skal dog overholdes, hvad der bliver placeret i de forskellige områder. Hver område er beskrevet nedenfor. </p> 
+        <p>Alle cards har en <code>card</code> class. Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde. Du kan frit sammensætte rækkefølge og størrelser af alle områder efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder. </p>
+        <p>Hvert område er beskrevet nedenfor.</p> 
         <h2 class="h4">Header</h2>
         <p>Headeren har en <code>.card-header</code> class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.</p>
         <ul>
@@ -29,14 +28,14 @@ lead: A card is a sheet of material that serves as an entry point to more detail
         <ul>
           <li><code>.text</code></li>
         </ul>
-        <h2 class="h4">Contentområde</h2>
-        <p>Contentområdet har en <code>.card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class. <code>.card-content</code> har en stribet baggrundsfarve, denne baggrundsfarve er midlertidig og vises kun for at indikere contentområdet. For at se hvilke andre baggrundsfarver der kan bruges, se på "Baggrundsfarver" under "Hjælpefunktioner" i sidenavigationen. Det er også muligt at tilføje andre farver.</p> 
+        <h2 class="h4">Indholdsområde</h2>
+        <p>Indholdsområdet har en <code>card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class. .card-content har en stribet baggrundsfarve. Denne baggrundsfarve er midlertidig og bliver kun vist for at indikere indholdsområdet. Du kan se, hvilke andre baggrundsfarver der kan bruges, under "Baggrundsfarver" og "Hjælpefunktioner" i sidenavigationen. Det er også muligt at tilføje andre farver.</p> 
         <ul>
           <li><code>.content-text</code></li>
           <li><code>.content</code></li>
         </ul>
         <h2 class="h4">Aktionsområde</h2>
-        <p>Aktionsområdet har en <code>.card-action</code> class, kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.</p>
+        <p>Aktionsområdet har en <code>card-action</code> class og kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.</p>
         <ul>
           <li><code>.action-content</code></li>
           <li><code>.action-buttons</code></li>
@@ -55,15 +54,15 @@ lead: A card is a sheet of material that serves as an entry point to more detail
      <article>
         <section>
             <h2 class="h4">Tilgængelighed</h2>
-            <p>Cards skal overholde html outline, så browseren og evt. skærmlæsere kan afkode det korrekt. Dvs hvis det foregående afsnit er en heading 3, skal dit cards’ overskrift være en heading 4.</p>
+            <p>Cards skal overholde html outline, så browser og eventuelle skærmlæsere kan afkode det korrekt. Dvs. overskriften på dit cards skal være en heading 4, hvis det foregående afsnit er en heading 3.</p>
         </section>
         <section>
             <h2 class="h4">Brugervenlighed</h2>
             <h3 class="h4">Anvendes til</h3>
-            <p>Cards anvendes til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Det kan fx være en afledt, men ikke direkte koblet ekstra funktion ift sidens kontekst. </p>
+            <p>Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Det kan fx være en afledt, men ikke direkte koblet ekstra funktion ift. sidens sammenhæng.</p>
             <h3 class="h4">Anvendes ikke til</h3>
             <ul>
-                <li>Cards anvendes ikke til det primære indhold på en løsning, men til indhold der kan stå og forstås alene og fortsat være del af den samlede løsning.</li>
+                <li>Brug ikke cards til det primære indhold på en løsning, men derimod til indhold, der kan stå og forstås alene og fortsat være del af den samlede løsning.</li>
                 <li>Brug ikke cards udelukkende af visuelle hensyn, som placeholders for ornamental grafik eller indhold uden interaktion.</li>
                 <li>Cards er ikke en statusbesked.</li>
             </ul>
@@ -72,9 +71,9 @@ lead: A card is a sheet of material that serves as an entry point to more detail
                 <li>Cards skal tilbyde en enkel og fokuseret funktion. </li>
                 <li>Cards er velegnede til interaktion med brugeren, men brug dem kun, når der tilbydes en ekstra funktionalitet af grupperet indhold.</li>
                 <li>Cards er velegnede til responsive løsninger.</li>
-                <li>Der kan være flere cards på en side, men sørg for at de fremtræder roligt i sidens layout og ikke bryder sidens naturlige aflæsning.</li>
-                <li>Undgå lange tekster.</li>
-                <li>Skriv kort og præcist.</li>
+                <li>Du kan godt indsætte flere cards på en side, men sørg for at de fremtræder roligt i sidens layout og ikke bryder brugerens naturlige aflæsning af siden.</li>
+                <li>Undgå lange tekster i cards.</li>
+                <li>Skriv kort og præcist i hvert card.</li>
             </ul>
         </section>
     </article>

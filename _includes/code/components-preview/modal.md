@@ -9,7 +9,7 @@ title: Modal.html
     <br>
     <br>
     <button class="button button-primary" data-micromodal-trigger="modal-passive">Åben
-        modal (passive)</button>
+        modal (passiv)</button>
     <div class="styleguide-spacer-modals"></div>
 </div>
 

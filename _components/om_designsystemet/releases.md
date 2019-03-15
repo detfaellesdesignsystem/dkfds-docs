@@ -13,7 +13,7 @@ subnav:
   href: '#version-212'
 ---
 <p class="font-lead">Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.</p>
-<p>Her du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på github<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></p>
+<p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på github<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></p>
 
 
   <h2 class="mb-0" id="version-301">Version 3.0.1</h2>

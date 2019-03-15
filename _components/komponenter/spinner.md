@@ -5,7 +5,7 @@ type: element
 title: Spinner
 category: Komponenter_category
 subcategory: Komponenter
-lead: Spinner lead
+lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 ---
 
 {% include code/preview.html component="spinner" %}
@@ -18,9 +18,7 @@ lead: Spinner lead
   <div id="code-spinner-docs" aria-hidden="false" class="accordion-content">
     <section>
         <p>For at implementere en spinner tilføjes en <code>.spinner</code> class på en lukket div.</p>
-        <ul>
-        <li>Eksempel: <code>&lt;div class="spinner"&gt;&lt;/div&gt;</code></li>
-        </ul>
+        <p>Eksempel: <code>&lt;div class="spinner"&gt;&lt;/div&gt;</code></p>
         <p>For at ændre spinnerens størrelse kan <code>font-size</code> gøres større eller mindre.</p>
     </section>
   </div>

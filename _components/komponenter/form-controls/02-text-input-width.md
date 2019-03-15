@@ -15,7 +15,7 @@ lead:
   <div id="text-input-width" aria-hidden="true" class="accordion-content">
     <article>
         <section>
-            <h3 class="h4">Input bredde med rem</h3>   
+            <h3 class="h4">Inputfelt: Bredde med rem</h3>   
             <p>Inputfelter har en standard bredde på 32rem, for at ændre bredden på inputfelter bruges nedenstående klasser:</p>
             <ul>
               <li><code>.input-width-xxs</code> har en bredde på 8rem</li>
@@ -25,7 +25,7 @@ lead:
               <li><code>.input-width-l</code> har en bredde på 40rem</li>
               <li><code>.input-width-xl</code> har en bredde på 48rem</li>
             </ul>
-            <h3 class="h4">Input bredde med tegn</h3>
+            <h3 class="h4">Inputfelt: Bredde med tegn</h3>
             <p>For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:</p>
             <ul>
               <li><code>.input-char-4</code> har en bredde der passer til 4 tegn</li>
@@ -61,17 +61,17 @@ lead:
     <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
-          <p>Feltets bredde skal modsvare det, brugeren forventes at indtaste, så tegn ikke skjules.</p>
+          <p>Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.</p>
       </section>
       <section>
           <h3 class="h4">Brugervenlighed</h3>
           <h4 class="h5">Anvendes til</h4>
-          <p>Feltbredden angiver det forventede omfang, så brugeren kan få en fornemmelse af, hvad der skal indtastes. Dvs fx et felt til et dansk postnummer bør kun være 4 tegn bredt, hvorimod et felt til gadenavn bør være fx 27 tegn. </p>
-          <p>Feltbredde bruges til at begrænse antallet af tegn i et felt.</p>
+          <p>Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på 27 tegn.</p>
+          <p>Brug feltbredden til at begrænse antallet af tegn i et felt.</p>
           <h4 class="h5">Anvendes ikke til</h4>
-          <p>Feltbredde anvendes ikke til at validere brugerens input. Hvis der er et bestemt krav til inputvalidering, bør det angives i en vejledning.</p>
+          <p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
           <h4 class="h5">Vejledning</h4>
-          <p>Tilføj feltbredde-værdier som modsvarer den mængde information, brugeren forventes at indtaste, så tegn ikke skjules eller brugeren bliver i tvivl om, vedkommende har indtastet for lidt.</p>
+          <p>Tilføj feltbreddeværdier svarende til den mængde information, du forventer, at brugeren indtaster. På den måde får brugeren overblik over sin indtastning.</p>
       </section>
     </article>
   </div>

@@ -1,5 +1,5 @@
 {
-  "checkbox_example": {
+  "checkbox_example_small": {
     "items": [
       {
         "id": "Unchecked",
@@ -7,7 +7,7 @@
         "value": "unchecked",
         "checked": false,
         "disabled": false,
-        "text": "Unchecked"
+        "text": "Ikke-udfyldt tjekboks"
       },
       {
         "id": "Checked",
@@ -15,7 +15,7 @@
         "value": "checked",
         "checked": true,
         "disabled": false,
-        "text": "Checked"
+        "text": "Udfyldt tjekboks"
       },
       {
         "id": "disabled",
@@ -23,7 +23,7 @@
         "value": "disabled",
         "checked": false,
         "disabled": true,
-        "text": "Disabled"
+        "text": "Inaktiv ikke-udfyldt tjekboks (disabled)"
       },
       {
         "id": "disabled-checked",
@@ -31,7 +31,7 @@
         "value": "disabled-checked",
         "checked": true,
         "disabled": true,
-        "text": "Disabled checked"
+        "text": "Inaktiv udfyldt tjekboks (disabled)"
       },
       {
         "id": "fokus",
@@ -40,16 +40,21 @@
         "checked": false,
         "disabled": false,
         "focus": true,
-        "text": "",
+        "text": "Ikke-udfyldt tjekboks i fokus",
         "class": ""
-      },
+      }
+    ]
+  },
+
+  "checkbox_example_large": {
+    "items": [
       {
         "id": "Unchecked-large",
         "name": "unchecked-large",
         "value": "unchecked-large",
         "checked": false,
         "disabled": false,
-        "text": "Unchecked-large",
+        "text": "Stor ikke-udfyldt tjekboks",
         "large": true
       },
       {
@@ -58,7 +63,7 @@
         "value": "checked-large",
         "checked": true,
         "disabled": false,
-        "text": "Checked-large",
+        "text": "Stor udfyldt tjekboks",
         "large": true
       },
       {
@@ -67,7 +72,7 @@
         "value": "disabled-large",
         "checked": false,
         "disabled": true,
-        "text": "Disabled-large",
+        "text": "Stor inaktiv ikke-udfyldt tjekboks (disabled)",
         "large": true
       },
       {
@@ -76,7 +81,7 @@
         "value": "disabled-checked-large",
         "checked": true,
         "disabled": true,
-        "text": "Disabled-checked-large",
+        "text": "Stor inaktiv udfyldt tjekboks (disabled)",
         "large": true
       },
       {
@@ -86,7 +91,7 @@
         "checked": false,
         "disabled": false,
         "focus": true,
-        "text": "Focus-large",
+        "text": "Stor ikke-udfyldt tjekboks i fokus",
         "large": true
       }
     ]

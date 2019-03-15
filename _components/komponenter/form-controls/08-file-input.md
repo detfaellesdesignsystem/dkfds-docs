@@ -17,12 +17,12 @@ lead: Lader brugeren vælge en fil.
         <p>Vi anbefaler at bruge det indbyggede input felt til filer <code>type="file"</code> frem for en skræddersyet løsning.</p>
         <p>Årsagen til dette er:</p>
           <ul class="content-list">
-          <li>at feltet får fokus, når man tabber gennem siden</li>
+          <li>at feltet får fokus, når man tabulerer gennem siden</li>
           <li>at feltet fungerer ved brug af tastatur</li>
           <li>at feltet fungerer ved brug af hjælpemidler</li>
-          <li>at feltet fungerer, selv når javascript er utilgængeligt</li>
+          <li>at feltet fungerer, selv når JavaScript er utilgængeligt.</li>
         </ul>
-        <p>En skræddersyet løsning af denne type felt bør udfylde ovenstående kriterier.</p>
+        <p>Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.</p>
     </section>
   </div>
 </div>
@@ -36,16 +36,16 @@ lead: Lader brugeren vælge en fil.
     <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
-          <p>Bør kun anvendes, hvis det er strengt nødvendigt for din løsning.</p>
+          <p>Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.</p>
       </section>
       <section>
           <h3 class="h4">Brugervenlighed</h3>
           <h4 class="h5">Anvendes til</h4>
-          <p>Lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.</p>
+          <p>Brug det til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.</p>
           <h4 class="h5">Vejledning</h4>
           <ul>
-              <li>Sørg for at brugeren får en respons, når filen er overført.</li>
-              <li>Gør tydeligt opmærksom på, hvilke formater og størrelser, der vil blive accepteret.</li>
+              <li>Sørg for at brugeren får en positiv respons, når filen er overført.</li>
+              <li>Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil blive accepteret.</li>
               <li>Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.</li>
           </ul>
       </section>

@@ -5,7 +5,7 @@ type: component
 title: Søgefelt
 category: Komponenter_category
 subcategory: Komponenter
-lead: Et felt, der har til formål at udstille mulighed for at søge efter bestemt indhold
+lead: Et søgefelt udstiller brugerne muligheden for brugerne for at søge efter bestemt indhold på siden eller i løsningen.
 ---
 
 {% include code/preview.html component="search" classes="preview-search-bar" %}

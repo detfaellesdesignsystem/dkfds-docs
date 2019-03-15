@@ -8,6 +8,8 @@ subcategory: Komponenter
 description: Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen.
 ---
 
+<p>Modalvinduer er separate vinduer, som popper-up, når du aktiverer dem. De indeholder typisk afgrænset viden og kommer i to former: Åben modal (aktiv) indeholder tekst og link, som brugeren kan handle på. Åben modal (passiv) indeholder kun tekst, som brugeren kan læse.</p>
+
 {% include code/preview.html component="modal" %}
 {% include code/accordion.html component="modal" %}
 <div class="accordion-bordered">

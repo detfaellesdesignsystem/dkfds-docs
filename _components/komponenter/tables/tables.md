@@ -7,10 +7,10 @@ type: component
 title: Tabeller
 category: Komponenter_category
 subcategory: Komponenter
-lead: Tabeller viser data i kolonner og rækker
+lead: Tabeller er en systematisk opstilling af data og viser data i kolonner og rækker.
 subnav:
 - text: Standard
-  href: '#table'
+  href: '#tabel'
 - text: Uden ramme
   href: '#uden-ramme'
 - text: Zebralinier
@@ -22,6 +22,7 @@ subnav:
 - text: Med titel i venstre kolonne
   href: '#med-titel-i-venstre-kolonne'
 ---
+
 
 <h2 class="h3">Retningslinjer</h2>
 <h3 class="h4">Tilgængelighed</h3>

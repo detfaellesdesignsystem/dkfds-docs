@@ -4,7 +4,7 @@ layout: iframed
 title: Buttons.html
 ---
 <div class="container">
-    <p class="h5">Primær knapper</p>
+    <p class="h5">Primærknapper</p>
     <button class="button button-primary"> Default</button>
     <button class="button button-primary button-hover"> Hover</button>
     <button class="button button-primary button-active"> Active</button>
@@ -12,7 +12,7 @@ title: Buttons.html
     <button class="button button-primary" disabled tab-index="-1"
         aria-disabled="true"> Disabled</button>
 
-    <p class="h5">Sekundær knapper</p>
+    <p class="h5">Sekundærknapper</p>
     <button class="button button-secondary"> Default</button>
     <button class="button button-secondary button-hover"> Hover</button>
     <button class="button button-secondary button-active"> Active</button>
@@ -20,7 +20,7 @@ title: Buttons.html
     <button class="button button-secondary" disabled tab-index="-1"
         aria-disabled="true"> Disabled</button>
 
-    <p class="h5">Tertiær knapper</p>
+    <p class="h5">Tertiærknapper</p>
     <button class="button button-tertiary"> Default</button>
     <button class="button button-tertiary button-hover"> Hover</button>
     <button class="button button-tertiary button-active"> Active</button>

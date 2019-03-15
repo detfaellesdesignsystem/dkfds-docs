@@ -2,7 +2,7 @@
 title: Datovælger
 parent: Form controls
 order: 07
-lead: Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.
+lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
 ---
 
 {% include code/preview.html component="date-input" %}
@@ -44,11 +44,11 @@ lead: Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.
       <section>
           <h3 class="h4">Brugervenlighed</h3>
           <h4 class="h5">Anvendes til</h4>
-          <p>Sætte brugeren i stand til at tilføje struktureret datoinformation.</p>
+          <p>Sætter brugeren i stand til at tilføje struktureret datoinformation.</p>
           <h4 class="h5">Anvendes ikke til</h4>
-          <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/dkfds-docs/udvidelser/pikaday/">datovælgerudvidelsen</a> eller på anden vis indikere, hvilke præcise datoer, der er ledige for brugeren.</p>
+          <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/dkfds-docs/udvidelser/pikaday/">datepicker udvidelsen</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.</p>
           <h4 class="h5">Vejledning</h4>
-          <p>Felternes rækkefølge skal modsvare den datoform, der anvendes i Danmark, dvs. dag, måned og år. Det skal afspejles i felternes labels.</p>
+          <p>Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, dvs. dag, måned og år. Felternes labels skal også afspejle det.</p>
       </section>
     </article>
   </div>

@@ -2,7 +2,7 @@
   "button_example": {
     "button_groups": [
       {
-        "label": "Primær knapper",
+        "label": "Primærknapper",
         "items": [
           {
             "text": "Default",
@@ -28,7 +28,7 @@
         ]
       },
       {
-        "label": "Sekundær knapper",
+        "label": "Sekundærknapper",
         "items": [
           {
             "text": "Default",
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "label": "Tertiær knapper",
+        "label": "Tertiærknapper",
         "items": [
           {
             "text": "Default",

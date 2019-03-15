@@ -5,7 +5,7 @@ type: component
 title: Accordions
 category: Komponenter_category
 subcategory: Komponenter
-lead: Accordions are a list of headers that can be clicked to hide or reveal additional content.
+lead: En accordion er et grafisk element, som du kan bruge til vise indhold med. Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.
 ---
 
 {% include code/preview.html component="accordion" %}
@@ -20,8 +20,8 @@ lead: Accordions are a list of headers that can be clicked to hide or reveal add
       <section>
           <h2 class="h4">Tilgængelighed</h2>
           <ul>
-              <li>Accordions markeres tydeligt med en focus-tilstand, når brugere vha tab-tasten navigerer sig frem til dem.</li>
-              <li>Accordions er tilgængelige i den anbefalede løsning, men vi anbefaler, at du anvender dem i begrænset omfang, da en stor del af brugerne ikke opdager indholdet på accordions udover den aktive.</li>
+              <li>Accordions bliver automatisk fremhævet, når brugere ved hjælp af tabulatortasten navigerer sig frem til dem.</li>
+              <li>Accordions er en del af den anbefalede løsning, men vi anbefaler, at du anvender dem i begrænset omfang. En stor del af brugerne ser kun overskrift på accordion (aktive tekst) og opdager ikke det underliggende indhold.</li>
           </ul>
       </section>
       <section>
@@ -31,14 +31,14 @@ lead: Accordions are a list of headers that can be clicked to hide or reveal add
           <h3 class="h5">Anvendes ikke til</h3>
           <ul>
               <li>Accordions erstatter individuelle sider i en selvbetjeningsløsning eller hjemmeside.</li>
-              <li>Accordions anvendes ikke til små mængder indhold, der i stedet kunne stå tydeligt på siden.</li>
-              <li>Accordions anvendes ikke til at kollapse indhold i fx søgeresultater eller andre længere oversigter.</li>
-              <li>Accordions anvendes ikke til at opdele et logisk flow eller en sekvens af handlinger. Der bør du evt. istedet anvende en tringuide.</li>
+              <li>Brug ikke accordions til små mængder indhold, der i stedet kunne stå synligt på siden.</li>
+              <li>Brug ikke accordions til at kollapse indhold i fx søgeresultater eller andre længere oversigter.</li>
+              <li>Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger. Der bør du eventuelt i stedet anvende en tringuide.</li>
           </ul>
           <h3 class="h5">Vejledning</h3>                
           <ul>
-              <li>Overvej at lade den accordion med det vigtigste indhold være foldet ud, så du sikrer at dine brugere læser den.</li>
-              <li>Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere spiselig. Overvej om det er nødvendigt at kollapse indhold og hvorfor, det er det. Hvis indholdet er unødigt langt eller uoverskueligt, bør det i stedet omformuleres og evt. splittes ud i flere sider. </li>
+              <li>Overvej at lade den accordion, som har det vigtigste indhold, være foldet ud, når brugerne kommer ind på siden. Så er du sikker på, at dine brugere læser den.</li>
+              <li>Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere spiselig. Overvej om det er nødvendigt at kollapse indhold og hvorfor, det er det. Hvis indholdet er unødigt langt eller uoverskueligt, bør du i stedet omformulere teksten og eventuelt fordele den på flere sider.</li>
           </ul>
       </section>
     </article>

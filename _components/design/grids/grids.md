@@ -7,7 +7,7 @@ type: component
 title: Grid
 category: Design_category
 subcategory: Design
-lead: Det fælles designsystem benytter et simpelt mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system, med fem responsive breakpoints.
+lead: Det fælles designsystem benytter et simpelt mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system med fem responsive breakpoints.
 subnav:
 - text: Introduktion
   href: '#thegridsystem'
@@ -26,7 +26,7 @@ subnav:
 ---
 <section class="section">
     <h2 id="thegridsystem">Introduktion</h2>
-    <p>Gridsystemet bruger containere, rækker og kolonner til at opbygge sider. Gridsystemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor vises eksempler på brugen af gridsystemet</p>
+    <p>Gridsystemet bruger containere, rækker og kolonner til at opbygge sider. Gridsystemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af gridsystemet.</p>
     {% include code/preview.html component="grid--how-it-works" %}
     {% include code/accordion.html component="grid--how-it-works" %}
     <p>Eksemplet ovenfor viser tre kolonner som har samme bredde på både mobil, tablet og desktop.</p>
@@ -88,52 +88,51 @@ subnav:
     <p>Som udgangspunkt findes der 5 breakpoints: extra small, small, medium, large, or extra large.</p>
 
     <h3>Klasser som rammer alle breakpoints</h3>
-    <p>Brug klassen <code>.col</code> eller <code>.col-*</code> uden responsive prefix (fx. md).</p>
+    <p>Brug klassen <code>.col</code> eller <code>.col-*</code> uden responsivt prefix (fx. md).</p>
 
     {% include code/preview.html component="grid--all-breakpoints" %}
     {% include code/accordion.html component="grid--all-breakpoints" %}
 
-    <h3>Fra stablede kolonner til kolonner som vises på en række</h3>
-    <p>Ved at bruge fx <code>.col-md-*</code> klassen, vil kolonnerne starte ud med at være placeret horizontalt over hinanden på mobile enheder og fra medium-skærme vil de være vist vertikalt på en række.</p>
-
+    <h3>Fra stablede kolonner til kolonner på række</h3>
+    <p>Ved at bruge fx <code>.col-md-*</code> klassen vil kolonnerne til at begynde med være placeret lodret over hinanden på mobile enheder. Fra medium-skærme vil de være vist vandret på en række.</p>
     {% include code/preview.html component="grid--stacked-horizontal" %}
     {% include code/accordion.html component="grid--stacked-horizontal" %}
 
     <h3>Brug af forskellige kolonne-klasser</h3>
-    <p>Det er muligt at mikse forskellige kolonne-klasser.</p>
+    <p>Du kan mikse forskellige kolonne-klasser.</p>
 
     {% include code/preview.html component="grid--mix-match" %}
     {% include code/accordion.html component="grid--mix-match" %}
 
     <h3>Kolonneombrydning</h3>
-    <p>Hvis der er mere end 12 kolonner på en række vil ekstra kolonner blive vist på en ny linie under de første 12</p>
+    <p>Hvis der er mere end 12 kolonner på en række, vil ekstra kolonner blive vist på en ny linje under de første 12.</p>
 
     {% include code/preview.html component="grid--column-wrapping" %}
     {% include code/accordion.html component="grid--column-wrapping" %}
 
     <h3>Indlejre</h3>
-    <p>Flere rækker og dertilhørende kolonner kan indlejres i hinanden.</p>
+    <p>Du kan indlejre flere rækker med tilhørende kolonner i hinanden.</p>
 
     {% include code/preview.html component="grid--nesting" %}
     {% include code/accordion.html component="grid--nesting" %}
 
     <h3>Ingen afstand mellem kolonner (ingen gutter)</h3>
-    <p>Tilføj klassen <code>.no-gutters</code> til rækken for at fjerne den horisontale padding i kolonnerne.</p>
+    <p>Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen <code>no-gutters</code> til rækken.</p>
     {% include code/preview.html component="grid--no-gutters" %}
     {% include code/accordion.html component="grid--no-gutters" %}
 </section>
 
 <section class="section">
     <h2 id="auto-fill-layout-columns">'Auto' og 'Fill' kolonner</h2>
-    <p>Det er muligt at specificere bredden på en kolonne uden en eksplicit nummer-klasse som fx <code>.col-sm-6</code>.</p>
+    <p>Du kan specificere bredden på en kolonne uden at angive en eksplicit nummer-klasse som fx <code>col-sm-6</code>.</p>
     
     <h3>Specifik bredde på kun én kolonne</h3>
-    <p>Ved kun at give én kolonne en eksplicit bredde (.col-6) tilpasser de resterende kolonner sig.</p>
+    <p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (.col-6). De øvrige kolonner tilpasser sig automatisk samme bredde. </p>
     {% include code/preview.html component="grid--one-column-width" %}
     {% include code/accordion.html component="grid--one-column-width" %}
 
-    <h3>Kolonnebredde efter indhold</h3>
-    <p>Ved at brug <code>col-{breakpoint}-auto</code> tilpasser kolonnerne sig til deres indhold.</p>
+    <h3>Individuel kolonnebredde efter indhold</h3>
+    <p>Ved at brug <code>col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
     {% include code/preview.html component="grid--variable-width-content" %}
     {% include code/accordion.html component="grid--variable-width-content" %}
 </section>
@@ -152,7 +151,7 @@ subnav:
     {% include code/preview.html component="grid--offsets" %}
     {% include code/accordion.html component="grid--offsets" %}
 
-    <p>Det er muligt at nulstille forskydning ved fx at bruge <code>.offset-md-0</code></p>
+    <p>Du kan nulstille forskydning ved fx at bruge klassen <code>offset-md-0</code></p>
 
     {% include code/preview.html component="grid--offsets-reset" %}
     {% include code/accordion.html component="grid--offsets-reset" %}
@@ -161,9 +160,9 @@ subnav:
 
 <section class="section">
     <h2 id="utility">Hjælpeklasser</h2>
-    <p>Designsystemet kommer med forskellige hjælpeklasser, fx. flex, margin og bredde. Disse hjælpeklasser kan kombineres med grid-systemet.</p>
-    <h3 >Hjælpeklasser: Flexbox</h3>
-    <p>Brug designsystemets flexbox hjælpeklasser-klasser til at ændre på placeringsen af kolonnerne og placeringen af indholdet i kolonnerne.</p>
+    <p>Designsystemet kommer med forskellige hjælpeklasser, fx. flex, margin og bredde. Du kan kombinere disse hjælpeklasser med grid-systemet.</p>
+    <h3>Hjælpeklasser: Flexbox</h3>
+    <p>Brug designsystemets flexbox hjælpeklasser til at ændre på placeringen af kolonnerne og placeringen af indholdet i kolonnerne.</p>
 
     <h4>Vertikal alignment</h4>
 
@@ -180,13 +179,13 @@ subnav:
     {% include code/accordion.html component="grid--util-flex-horizontal-align" %}
 
     <h3>Hjælpeklasser: Margin</h3>
-    <p>Det er også muligt at bruge margin-hjælpeklasserne såsom <code>.mr-auto</code>.</p>
+    <p>Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx <code>mr-auto</code>.</p>
 
     {% include code/preview.html component="grid--util-margin" %}
     {% include code/accordion.html component="grid--util-margin" %}
 
-    <h3>Hjælpeklasser: bredde</h3>
-    <p>Hvis du ønsker rækker og klonner som gør fra kant til kant kan du envent undlade <code>.container</code> eller tilføje klassen <code>.w-percent-100</code>.</p>
+    <h3>Hjælpeklasser: Bredde</h3>
+    <p>Vil du have rækker og kolonner som går fra kant til kant, skal du undlade .container eller tilføje klassen <code>w-percent-100</code>.</p>
 </section>
 
 <section class="section">

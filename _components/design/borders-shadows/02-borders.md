@@ -36,19 +36,19 @@ order: 02
   </button>
   <div id="borders-docs" class="accordion-content">
     <section>
-        <h3 class="h4">Ydre borders</h3>
+        <h3 class="h4">Ydre streger</h3>
         <ul>
-            <li><p>Ydre borders er 1px bredde og er mørkegrå. For at bruge ydre borders bruges variablen <code>$outer-border</code></p></li>
-            <li><p>Bruges som ydre borders på komponenter, til at adskille dem fra hinanden.</p></li>
+            <li>Ydre streger er 1px bredde og er mørkegrå. Brug variablen $outer-border for at opsætte ydre kanter.</li>
+            <li>Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.</li>
         </ul>
         <p class="h5 mb-3">Eksempel:</p>
         <div class="code-highlight">
             <code>border: $outer-border;</code>
         </div>
-        <h3 class="h4">Indre borders</h3>
+        <h3 class="h4">Indre streger</h3>
         <ul>
-            <li><p>Indre borders er 1px bredde og er lysegrå. For at bruge indre borders bruges variablen <code>$inner-border</code></p></li>
-            <li><p>Anvendes som indvendige border i komponenter, der kræver separering af elementer.</p></li>
+            <li><p>Indre streger er 1px bredde og er lysegrå. For at bruge indre borders bruges variablen <code>$inner-border</code></p></li>
+            <li><p>Anvendes som indvendige streger i komponenter, der kræver separering af elementer.</p></li>
         </ul>
         <p class="h5 mb-3">Eksempel:</p>
         <div class="code-highlight">
