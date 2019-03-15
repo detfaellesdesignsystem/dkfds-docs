@@ -4,7 +4,7 @@ layout: styleguide
 title: Visuelt design (look & feel)
 category: Design_category
 subcategory: Design
-lead: Det har været afgørende at skabe et design, der er tilpas neutralt så det ikke konflikter med hverken borger.dk eller Virks visuelle stile; som er simpelt at forstå og anvende for alle, fra designere over udviklere til projektansvarlige; og som er fleksibelt nok til at kunne favne alle typer af selvbetjeningsløsninger. Med det håber vi, at der vil blive brugt mere tid på brugerinddragelse og brugertests af flow og funktionalitet end på at diskutere synsninger om former og farver.
+lead: 
 order: 25
 subnav:
 - text: Visuel integration på portalerne
@@ -19,10 +19,17 @@ subnav:
   href: '#to_brands'
 ---
 
+<p>Ved etableringen af designsystemet har det været afgørende at skabe et design, der lever op til nogle grundlæggende vilkår:</p>
 
+<ul>
+    <li>det skal være så tilpas neutralt, at det ikke konflikter den visuelle stil for  hverken borger.dk eller Virk</li>
+    <li>det er simpelt at forstå og anvende for alle, fra designere over udviklere til projektansvarlige</li>
+    <li>det er fleksibelt nok til at kunne favne alle typer af selvbetjeningsløsninger.</li> 
+</ul>
+<p>Ved at skabe et design, som opfylder disse vilkår, er det målsætningen, at produktejere, projektledere og udviklere får frigjort tid til at fokusere på brugerne: Dvs. bruge mere tid på brugerinddragelse og brugertests af flow og funktionalitet, end på at diskutere synsninger om former og farver.</p>
 <h2 id="visuel_integration_på_portalerne">Visuel integration på portalerne</h2>
-<p>Der er ganske få elementer, der brander selvbetjeningsløsningen som enten en del af borger.dk eller en del af Virk, og dette gøres via simpel temahåndtering. Det er disse få elementer, der skaber sammenhængen til den ene eller den anden portal og det drejer sig om ganske få linjers kode, der skal til for at temahåndtere mellem borger.dk og Virk. Selvbetjeningsløsningen integreres visuelt til en specifik portal via følgende:</p>
-
+<p>Ganske få elementer brander en selvbetjeningsløsning som en del af borger.dk eller  Virk og skaber sammenhængen til den ene eller anden portal. Brandingen sker via en simpel temahåndtering og nogle få linjers kode. </p>
+<p>Du integrerer selvbetjeningsløsningen visuelt til én af de to portaler gennem disse fem elementer:</p>
 <ol>
   <li>Logo</li>
   <li>Baggrundsfarve i headerens første linje</li>
@@ -49,31 +56,30 @@ subnav:
 
 
 <h2 id="principper_for_den_visuelle_stil">Principper for den visuelle stil</h2>
-<p>Det visuelle design skal på en gang passe ind på både borger.dk og Virk samt understøtte brugervenlighed i selvbetjeningsløsninger som ofte er komplekse systemer og forretningsprocesser, men som ikke desto mindre skal være brugervenlige og simple at anvende, derfor er der tre principper som gennemsyrer designet.</p>
+<p>Det visuelle design skal på én gang passe ind på både borger.dk og Virk og understøtte brugervenlighed i selvbetjeningsløsninger. De kan bestå i komplekse systemer og forretningsprocesser, som skal være brugervenlige og simple at anvende. For understøtte denne kompleksitet er der tre principper som gennemsyrer designet:</p>
 
-<h3>Neutralt</h3>
-<p>Et neutralt minimalistisk design er mere robust i forhold til tidens trends og fremtidige grafiske ændringer på portalerne, og i forhold til skiftende
-myndighedskonstruktioner. Neutralt betyder også at konservativt og tidsløst design prioriteres frem for det moderne og trendy. En selvbetjeningsløsning er en seriøs dialog med brugeren via inputfelter og tekst, ikke et udfordrende kunstværk.</p>
+<h3>Neutralt design signalerer seriøsitet</h3>
+<p>Et neutralt og minimalistisk design er mere robust i forhold til tidens trends, fremtidige grafiske ændringer på portalerne og skiftende myndighedskonstruktioner. Det neutrale design prioriterer et konservativt og tidløst udseende fremfor det moderne og trendy: En selvbetjeningsløsning er en seriøs dialog med brugeren via inputfelter og tekst - ikke et udfordrende kunstværk.</p>
 
-<h3>Simpelt</h3>
+<h3>Simpelt design hjælper brugerne</h3>
 <p>Simpelt at bruge. Simpelt for brugerne. Designet skal være nemt at anvende og gøre det let at bygge løsninger, der er nemme at anvende for brugerne. Designet søger at understøtte en tilgang, hvor det funktionelle og det æstetiske går op i en højere enhed uden store kreative penselstrøg.</p>
 
-<h3>Målrettet</h3>
-<p>Designet er målrettet selvbetjeningsløsninger. Det skal kunne bruges til alle typer af selvbetjeningsløsninger med forskellige målgrupper, og stadig sikre konsistens og sammenhæng på tværs, ved at de samme komponenter og de samme interaktionsmønstre kan anvendes på tværs af selvbetjeningsløsningerne.</p>
+<h3>Målrettet design skaber ensartethed</h3>
+<p>Designet er målrettet selvbetjeningsløsninger. Det skal kunne bruges til alle typer af selvbetjeningsløsninger med forskellige målgrupper. Og det skal sikre konsistens og sammenhæng på tværs ved at anvende de samme komponenter og de samme interaktionsmønstre på tværs af selvbetjeningsløsningerne.</p>
 
 
 <h2 id="sammenhaeng_og_konsistens">Sammenhæng og konsistens på tværs af selvbetjeningsløsninger</h2>
-<p>Ved at følge retningslinjerne i designsystemet og gøre brug af komponenterne som anbefalet, sikrer du at brugerne ikke skal genlære nye komponenter og måder at komponenterne opfører sig på fra selvbetjeningsløsning til selvbetjeningsløsning.</p>
-<p>Din selvbetjeningsløsning er en del af et større kompleks af offentlige selvbetjeningsløsninger, og det kan du udnytte til din fordel. Den typiske bruger, er ikke særligt ofte i kontakt med lige præcis din selvbetjeningsløsning, men oftere i kontakt med forskellige andre selvbetjeningsløsninger. Så hvis alle selvbetjeningsløsninger derfor følger de samme retningslinjer, komponenter og minder om hinanden, så vil brugeren også bedre kunne bruge din selvbetjeningsløsning.</p>
+<p>Ved at følge retningslinjerne i designsystemet og gøre brug af komponenterne som anbefalet, sikrer du, at brugerne ikke skal genlære nye komponenter på tværs af selvbetjeningsløsninger og måder de opfører sig på.</p>
+<p>Din selvbetjeningsløsning er en del af et større kompleks af offentlige selvbetjeningsløsninger. Det kan du udnytte til din fordel. Den typiske bruger er måske kun sjældent i kontakt med lige netop din selvbetjeningsløsning, men samtidig i kontakt med en række andre selvbetjeningsløsninger. Brugeren får derfor nemmere ved at anvende lige netop din løsning, når alle selvbetjeningsløsninger følger de samme retningslinjer, og anvender de samme komponenter og dermed minder om hinanden.</p>
 
 <h3 class="h5">Brugerne bliver mere effektive</h3>
-<p>Når brugerne ikke skal lære unikke designs at kende fra selvbetjeningsløsning til selvbetjeningsløsning og bekymre sig om, hvor hvad findes fra gang til gang bliver brugerne mere effektive.</p>
+<p>Når brugerne genkender designet på tværs af selvbetjeningsløsninger bliver de mere effektive i deres interaktion med løsningerne.</p>
 
 <h3 class="h5">Brugervenligheden øges</h3>
-<p>Når brugerne føler sig trygge og kan genkende din løsning, fordi de genkender den fra de mange andre selvbetjeningsløsninger, hvor komponenterne fungerer på samme måde øges brugervenligheden.</p>
+<p>Brugerne føler sig trygge, når de kan genkende din løsning, fordi de genkender den fra de mange andre selvbetjeningsløsninger, hvor komponenterne fungerer på samme måde. Det øger brugervenligheden.</p>
 
 <h3 class="h5">Brugeroplevelsen bliver bedre</h3>
-<p>Når du bruger mere tid på brugerinddragelse, brugertests, procesforbedringer og sammenhænge til andre selvbetjeningsløsninger end på at designe og genopfinde de samme komponenter igen, så bliver brugeroplevelsen bedre.</p>
+<p>Brugeroplevelsen bliver bedre, når du bruger mere tid på brugerinddragelse, brugertests, procesforbedringer og sammenhænge til andre selvbetjeningsløsninger i stedet for at bruge tid på design og komponenter.</p>
 <p><a href="/dkfds-docs/eksempler/">Se eksempler på selvbetjeningsløsninger</a></p>
 
 
@@ -82,15 +88,15 @@ myndighedskonstruktioner. Neutralt betyder også at konservativt og tidsløst de
 <ol>
   <li>
     <h3 class="h5">Det er ineffektivt med to forskellige manualer</h3>
-    <p>Indtil nu har der været to forskellige manualer at forholde sig til, når man skulle bygge selvbetjeningsløsninger, hvilket er ineffektivt og fordyrende. Nu er der kun et designsystem at forholde sig til.</p>
+    <p>Indtil nu har der været to forskellige manualer at forholde sig til, når man skulle bygge selvbetjeningsløsninger. Det er ineffektivt og fordyrende. Nu er der kun ét designsystem at forholde sig til.</p>
   </li>
    <li>
     <h3 class="h5">Lav opdateringsfrekvens</h3>
-    <p>De eksisterende manualer er forældede og opdateres med lav frekvens. Det Fælles Designsystem vil løbende blive opdateret.</p>
+    <p>De eksisterende manualer er forældede og bliver sjældent opdaterede. Det Fælles Designsystem bliver løbende opdateret.</p>
   </li>
    <li>
     <h3 class="h5">Manglende åbenhed</h3>
-    <p>Det har været svært at præge indholdet i de eksisterende manualer. Det Fælles Designsystem er open source via GitHub og alle kan dermed arbejde med på designsystemet.</p>
+    <p>Det har været svært at præge indholdet i de eksisterende manualer. Det Fælles Designsystem er et open source system via GitHub. Alle kan derfor arbejde på designsystemet og bidrage til udviklingen.</p>
   </li>
 </ol>
 
@@ -114,8 +120,7 @@ myndighedskonstruktioner. Neutralt betyder også at konservativt og tidsløst de
 </div>
 
 <h2 id="to_brands">Portalerne er to selvstændige brands</h2>
-<p>Borger.dk er et brand under Digitaliseringsstyrelsen, som henvender sig til og samler digital selvbetjening til borgere. Virk er et brand under Erhvervsstyrelsen, som henvender sig til og samler digitale selvbetjeningsløsninger til virksomheder. De to brands adskiller sig kommunikativt såvel som visuelt. Det Fælles Designsystem har indbygget temahåndtering, så uanset om man bygger til borger.dk eller Virk, så anvender man samme kode og kun få komponenter bærer portalernes brands videre i en selvbetjeningsløsning. I stedet for at fokusere på borger.dk og Virk som brands er fokus på den gode brugeroplevelse og
-sammenhæng på tværs, uanset hvilken portal en selvbetjeningsløsning påbegyndes fra. Borgere og virksomheder skal kunne genkende komponenter og mønstre i brugergrænsefladerne uanset hvem en selvbetjeningsløsning er henvendt til og hvilken portal, der har ansvar for at udstille den.</p>
+<p>Borger.dk er et brand under Digitaliseringsstyrelsen, som henvender sig til og samler digital selvbetjening til borgere. Virk er et brand under Erhvervsstyrelsen, som henvender sig til og samler digitale selvbetjeningsløsninger til virksomheder. De to brands adskiller sig kommunikativt såvel som visuelt. Det Fælles Designsystem har indbygget temahåndtering. Dvs. uanset om du udvikler en løsning til borger.dk eller Virk, så anvender du den samme kode, mens nogle få komponenter bærer portalernes brands videre ind i løsningen. I stedet for at fokusere på borger.dk og Virk som brands er fokus målrettet den gode brugeroplevelse og et sammenhængende design på tværs af løsningerne. Det gælder, uanset hvilken portal løsninger er knyttet til. Borgere og virksomheder skal altså kunne genkende komponenter og mønstre i brugergrænsefladerne, uanset hvem en selvbetjeningsløsning er henvendt til og hvilken portal, der har ansvar for at udstille den.</p>
 <div class="row">
   <div class="col-12 col-md-6">
     <h3 class="h5 mb-0">Borger.dk</h3>

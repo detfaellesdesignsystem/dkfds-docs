@@ -42,6 +42,7 @@ order: 07
         <ul>
             <li>Hold listerne så korte og faktuelle som muligt.</li>
             <li>Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
+            <li>Ved brug af tal, hold da listen til så få niveauer som muligt - og hvis muligt under 3 niveauer.</li>
             <li>Brug punkter, når der ikke er et hierarki i informationerne.</li>
         </ul>
       </section>
