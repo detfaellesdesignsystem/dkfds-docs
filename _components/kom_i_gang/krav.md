@@ -1,11 +1,11 @@
 ---
-permalink: /krav/
+permalink: /komigang/krav/
+redirect_from:
+- /krav/
 layout: styleguide
 title: Krav
-category: Krav_category
-lead: 
+category: Kom_i_gang_category
 ---
-
 <div class="alert alert-warning " role="alert">
     <div class="alert-body">
         <p class="alert-heading">Nye krav primo april 2019</p>

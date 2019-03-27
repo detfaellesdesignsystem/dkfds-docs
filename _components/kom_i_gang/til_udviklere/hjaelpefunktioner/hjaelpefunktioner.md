@@ -1,10 +1,12 @@
 ---
-permalink: /design/utility/
+permalink: /komigang/tiludviklere/utilities/
+redirect_from:
+- /design/utility/
 layout: styleguide
 type: component
-title: Utilities (Hjælpeklasser)
-category: Design_category
-subcategory: Design
+title: Hjælpeklasser (Utilities)
+category: Kom_i_gang_category
+parentlink: /komigang/tiludviklere/
 description: Du kan bruge hjælpeklasser til at skræddersy dit indhold i forhold til placering, afstande, farver, bredde og visning 
 subnav:
 - text: Responsive hjælpeklasser

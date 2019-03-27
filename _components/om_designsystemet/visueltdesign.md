@@ -1,11 +1,11 @@
 ---
-permalink: /design/visueltdesign/
+permalink: /omdesignsystemet/visuelledesign/
+redirect_from:
+- /design/visueltdesign/
 layout: styleguide
-title: Visuelt design (look & feel)
-category: Design_category
-subcategory: Design
+title: Det visuelle design
+category: Om_designsystemet_category
 lead: 
-order: 25
 subnav:
 - text: Visuel integration på portalerne
   href: '#visuel_integration_på_portalerne'

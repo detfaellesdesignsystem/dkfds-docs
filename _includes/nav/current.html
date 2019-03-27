@@ -6,6 +6,8 @@
   {% assign _active = true %}
 {% elsif page.collection and include.page.subnav.type == page.collection %}
   {% assign _current = true %}
+{% elsif include.page.url == page.parentlink %}
+{% assign _current = true %}
 {% elsif include.page.subnav %}
   {% for _subnav in include.page.subnav %}
     {% if _subnav.href and _subnav.href == page.permalink %}

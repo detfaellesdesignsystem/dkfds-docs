@@ -1,10 +1,15 @@
 ---
-permalink: /design/sideopbygning/
+permalink: /komigang/tildesignere/sideopbygning/
+redirect_from:
+- /design/sideopbygning/
 layout: styleguide
 title: Sideopbygning (layout)
-category: Design_category
+category: Kom_i_gang_category
+parentlink: /komigang/tildesignere/
 lead: Dette afsnit beskriver regler og principper for struktur og placering af komponenter i en selvbetjeningsløsning. Et godt layout er harmonisk, ensartet, logisk opbygget, og understøtter brugerens handlinger. Det er således både behageligt for øjet og let for brugeren at anvende.
 subnav:
+- text: Grid (12 kolonner)
+  href: '#grid'
 - text: Baseline grid
   href: '#baselinegrid'
 - text: Grundlæggende struktur
@@ -16,7 +21,24 @@ subnav:
 - text: Footer
   href: '#footer'
 ---
-<h2 id="baselinegrid">Baseline grid</h2>
+<h2 id="grid">Grid (12 kolonner)</h2>
+<p>Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige bredde kolonner med 24 px afstand mellem hver kolonne. Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.</p>
+<p>I tablet- og mobilvisninger folder layoutet sammen til respektivt 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst.</p> 
+<h3>Responsivt med break points</h3>
+<p>Det Fælles Designsystem er responsivt og tilpasser sig således automatisk det tilgængelige vinduesareal.</p>
+<p>Sidens break points – de værdier, hvorefter siden automatisk tilpasser sig arealet – er:</p>
+<ul>
+    <li>Desktop/stor skærm: 1200px</li>
+    <li>Desktop/middel skærm: 992px</li>
+    <li>Tablet: 768px</li>
+    <li>Mobil: 480px</li>
+</ul>
+<figure>
+    <img src="{{ site.baseurl }}/img/descriptionimages/dfd-grid.png" width="100%" alt="Grafik der viser Det Fælles Designsystems grid-layout" title="Det Fælles Designsystems grid-layout">
+    <figcaption>Det Fælles Designsystems grid-layout fra mobil til desktop</figcaption>
+</figure>
+
+<h2 id="baselinegrid">Baseline grid (8 point)</h2>
 <p>I Det Fælles Designsystem går alle lodrette dimensioner, højder på komponenter og afstande i højderetningen op med en faktor 8. Dvs. 8px, 16px, 24px, 32px, 40px, 48px, 56px, etc.  Det er designsystemets baseline grid.</p>
 <p>Gentagelsen af værdier skaber ro og balance på tværs af det visuelle layout og mellem sidens lodrette elementer. For tekst er det ikke tekstens størrelse, men linjehøjden, der skal gå op i en faktor 8.</p>
 <p>Du kan læse mere om baseline grid i artiklen <a href="https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032" class="icon-link">8-Point Grid: Vertical Rhythm<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>.</p>

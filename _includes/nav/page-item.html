@@ -12,7 +12,14 @@
   {% unless include.flat -%}
     {% assign _href_key = include.href_key %}
     {% assign _text_key = include.href_key %}
+    {% if include.subcategorynav -%}
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    {% assign _links = site.data.nav[include.subcategorynav] %}
+    {% else -%}
+    <!-- Uses page.subnav as navmenu-->
     {% assign _links = include.links | default: include.page.subnav %}
+    {% endif %}
+
     {% if _links.href -%}
       {% assign _href_key = _links.href %}
       {% assign _text_key = _links.text %}
@@ -21,6 +28,7 @@
     {% elsif _links.type %}
       {% assign _links = nil %}
     {% endif %}
+
     {% if _links -%}
     <ul class="{{ include.subnav_class | default: 'sidenav-sub_list' }}">{%
       include nav/list.html

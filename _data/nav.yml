@@ -1,14 +1,16 @@
 #Primary menu on desktop:
 primary:
+  - href: /komigang/
   - href: /design/
   - href: /komponenter/
   - href: /udvidelser/
   - href: /eksempler/
-  - href: /krav/
   - href: /omdesignsystemet/
 
 #Primary menu on mobile:
 mobile:
+  - href: /komigang/
+    categorynav: 'Kom_igang_category'
   - href: /design/
     categorynav: 'Design_category'
   - href: /komponenter/
@@ -17,25 +19,43 @@ mobile:
     categorynav: 'Udvidelser_category'
   - href: /eksempler/
     categorynav: 'Eksempler_category'
-  - href: /krav/
-    categorynav: 'Krav_category'
   - href: /omdesignsystemet/
     categorynav: 'Om_designsystemet_category'    
 
+#Left menu for kom igang-category
+Kom_i_gang_category:
+- alternative_text: Overblik
+  href: /komigang/
+- href: /komigang/krav/
+- href: /komigang/tiludviklere/
+  subcategorynav: 'Til_udviklere_category'
+- href: /komigang/tildesignere/
+  subcategorynav: 'Til_designere_category'
+- href: /komigang/tilprojekteledere/
+- href: /komigang/tilgaengelighed/
+#- href: /komigang/uxprincipper/
+
+#Left menu for kom igang-category
+Til_udviklere_category:
+- href: /komigang/tiludviklere/utilities/
+- href: /komigang/tiludviklere/eksempler-implementering/
+- href: /komigang/tiludviklere/anbefalinger-vaerktoejer/
+
+#Left menu for kom igang-category
+Til_designere_category:
+- href: /komigang/tildesignere/sideopbygning/
+- href: /komigang/tildesignere/design-selvbetjeningsloesninger/
+
 #Left menu for design-category
 Design_category:
-  - alternative_text: Overblik
-    href: /design/
+- alternative_text: Overblik
+  href: /design/
 #  - href: /design/accessibility/
-  - href: /design/farver/
-  - href: /design/typography/
-  - href: /design/grid/
-  - href: /design/ikoner/
-  - href: /design/kanter/
-  - href: /design/sideopbygning/
-  - href: /design/visueltdesign/
-  - href: /design/utility/
-  - href: /design/uxprincipper/
+- href: /design/farver/
+- href: /design/typography/
+- href: /design/grid/
+- href: /design/ikoner/
+- href: /design/kanter/
     
 #Left menu for komponent-category
 Komponenter_category:
@@ -74,34 +94,9 @@ Eksempler_category:
     href: /eksempler/
   - href: /eksempler/sideeksempler/
 
-Krav_category:
-  - alternative_text: Overblik
-    href: /krav/
-#  - href: /krav/krav_til_design/
-#  - href: /krav/krav_til_integration/
-#  - href: /krav/faellesoffentligekrav/
-
-#Left menu for 
-#Getting started:
-#  - alternative_text: Overblik
-#    href: /getting-started/
-#  - href: /getting-started/developers/
-#  - href: /getting-started/designers/
-#  - href: /getting-started/projectmanagers/
-#  - href: /getting-started/integration-til-portalerne/
-#  - href: /getting-started/bidrag-til-designsystemet/
-#  - href: /getting-started/video-tutorials/
-#  - href: /getting-started/loesninger/
-
 Om_designsystemet_category:
   - alternative_text: Overblik
     href: /omdesignsystemet/
-  - href: /omdesignsystemet/tilpopl/
-  - href: /omdesignsystemet/tiludviklere/
-  - href: /omdesignsystemet/anbefalinger-vaerktoejer/
   - href: /omdesignsystemet/gennemgang/
+  - href: /omdesignsystemet/visuelledesign/
   - href: /omdesignsystemet/releases/
-# - href: /about/updates/
-# - href: /about/product-roadmap/
-# - href: /about/research/
-# - href: /about/component-status/
