@@ -15,9 +15,9 @@ subnav:
     <p>Dit fokus, som designer af en selvbetjeningsløsning, bør være på brugervenlighed og brugernes effektivitet igennem selvbetjeningsløsningen, ikke på personligt at “shine” ved brug af “krom” og tidens trends. </p>
 </section>
 <section>
-    <h2>Design-filer</h2>
+    <h2>Designfiler</h2>
     <p>Du er velkommen til at bidrage med flere designressourcer eller med opdateringer af eksisterende filer.</p>
-    <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
+    <div class="alert alert-warning alert--paragraph" role="alert" aria-label="Beskedbox der viser en advarsel">
         <div class="alert-body">
             <p class="alert-text">Dokumentationssiden er “source of truth” ikke designfilerne.</p>
         </div>
