@@ -7,8 +7,8 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
 
 <div class="alert alert-info" role="alert" aria-label="Styleguiden er gået i beta">
   <div class="alert-body">
-      <p class="alert-heading">BETA</p>
-      <p class="alert-text">Det Fælles Designsystem er den kommende fælles guide til selvbetjeningsløsninger, der skal på borger.dk og Virk. Hjælp os gerne med at forbedre det via <a href="https://github.com/detfaellesdesignsystem/dkfds-components">GitHub</a>.</p>
+      <p class="alert-heading">BETA - lidt endnu</p>
+      <p class="alert-text">Det Fælles Designsystem er lige på trapperne. FDS teamet har desværre været ramt af sygdom, men vi arbejder på højtryk for at kunne fjerne beta-mærket. Det sker i denne uge. Beklager ulejligheden.</p>
   </div>
 </div>
 

@@ -10,7 +10,7 @@ primary:
 #Primary menu on mobile:
 mobile:
   - href: /komigang/
-    categorynav: 'Kom_igang_category'
+    categorynav: 'Kom_i_gang_category'
   - href: /design/
     categorynav: 'Design_category'
   - href: /komponenter/
@@ -28,9 +28,9 @@ Kom_i_gang_category:
   href: /komigang/
 - href: /komigang/krav/
 - href: /komigang/tiludviklere/
-  subcategorynav: 'Til_udviklere_category'
+  categorynav: 'Til_udviklere_category'
 - href: /komigang/tildesignere/
-  subcategorynav: 'Til_designere_category'
+  categorynav: 'Til_designere_category'
 - href: /komigang/tilprojekteledere/
 - href: /komigang/tilgaengelighed/
 #- href: /komigang/uxprincipper/
