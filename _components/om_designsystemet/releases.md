@@ -5,6 +5,8 @@ title: Release notes
 category: Om_designsystemet_category
 description: Release notes for dkfds
 subnav:
+- text: Version 3.0.2
+  href: '#version-302'
 - text: Version 3.0.1
   href: '#version-301'
 - text: Version 3.0.0
@@ -15,6 +17,23 @@ subnav:
 <p class="font-lead">Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.</p>
 <p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på github<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></p>
 
+<h2 class="mb-0" id="version-302">Version 3.0.2</h2>
+  <p class="small-text mt-0">19-02-2019</p>
+  <ul>
+    <li>Tilføjet info om fiks af Microsoft Edge bug i navigation, hvor bullets blev vist trods styling</li>
+    <li>Defineret tilbage-knap</li>
+    <li>Tilføjet readonly eksempel i input felter</li>
+    <li>Ændret Skjul/Vis eksempel ved brug af radio knap for at løse tilgængelighedsproblemer</li>
+    <li>Fikset fejl på dropdown-menu i Internet Explorer, hvor pilen blev vist to gange</li>
+    <li>Nederste border i header ændret til $outer-border</li>
+    <li>Tilføjet klassen .nobullet-list, som kan bruges ved liste af links</li>
+    <li>Flyttet Pikaday datovælger plugin til Plugins-projektet</li>
+    <li>Tilføjet .break-word klasse til brug i tabeller, hvor man bruger lange filnavne i kolonnerne</li>
+    <li>Ændret disabled link farve</li>
+    <li>Fjernet $color-link-active farven, da den ikke længere bliver brugt</li>
+    <li>Opdateret styling og definition af eksterne links</li>
+    <li>Ændret skrifttype tykkelse på søgefelts knappen</li>
+  </ul>
 
   <h2 class="mb-0" id="version-301">Version 3.0.1</h2>
   <p class="small-text mt-0">18-01-2019</p>
