@@ -8,8 +8,6 @@ category: Kom_i_gang_category
 description: Til udviklere, der skal gøre brug af Det Fælles Designsystem.
 ---
 
-<p class="font-lead">Lorem ipsum</p>
-
 <p>FDS er opdelt i to projekter:</p>
 <ul class="nobullet-list">
     <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components" target="_blank" class="icon-link">DKFDS Components (kernen som indeholder komponenterne)<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
