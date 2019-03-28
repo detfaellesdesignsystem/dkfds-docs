@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="400px" height="200px" viewBox="0 0 400 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
     <title>Group 2</title>
     <desc>Created with Sketch.</desc>
     <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -17,9 +17,15 @@
                         <tspan x="185" y="132">Phasellus posuere neque?</tspan>
                         <tspan x="185" y="160">Nullam quis nunc dui?</tspan>
                     </text>
-                    <circle id="Oval" fill="#1A1A1A" cx="175.5" cy="102.5" r="2.5"></circle>
-                    <circle id="Oval" fill="#1A1A1A" cx="175.5" cy="130.5" r="2.5"></circle>
-                    <circle id="Oval" fill="#1A1A1A" cx="175.5" cy="158.5" r="2.5"></circle>
+                    <g id="Oval-punktopstilling" transform="translate(173.000000, 152.000000)" fill="#1A1A1A">
+                        <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                    </g>
+                    <g id="Oval-punktopstilling" transform="translate(173.000000, 125.000000)" fill="#1A1A1A">
+                        <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                    </g>
+                    <g id="Oval-punktopstilling" transform="translate(173.000000, 97.000000)" fill="#1A1A1A">
+                        <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                    </g>
                     <g id="Faq" transform="translate(24.000000, 24.000000)">
                         <g id="Group-15">
                             <path d="M22.9935897,45.6521739 L9.80769231,60 L9.80769231,45.6521739 L8,45.6521739 C3.581722,45.6521739 5.41083001e-16,42.0704519 0,37.6521739 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 L77,0 C81.418278,-8.11624501e-16 85,3.581722 85,8 L85,37.6521739 C85,42.0704519 81.418278,45.6521739 77,45.6521739 L22.9935897,45.6521739 Z" id="Rectangle-2" fill="#ECEDF4"></path>

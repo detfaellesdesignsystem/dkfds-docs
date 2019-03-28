@@ -687,13 +687,13 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: map-get($spacers, 4);
+  padding: map-get($spacers, 5);
   background-color: $background-alternative;
   img{
     height: 100%;
   }
   &--turquoise{
-    background-color: $color-data-turquoise;
+    background-color: $color-data-turquoise-high-opacity;
   }
   &--teal{
     background-color: $color-data-teal;
@@ -708,7 +708,7 @@ code {
     background-color: $color-data-purple;
   }
   &--violet{
-    background-color: $color-data-violet;
+    background-color: $color-data-violet-high-opacity;
   }
 }
 
@@ -971,4 +971,9 @@ code {
   box-shadow: $box-shadow-slightly;
   background-color: $color-white;
   border: $outer-border;
+}
+
+/* HOME */
+.bg-turquoise{
+  background-color: $color-data-turquoise-medium-opacity;
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="252px" height="180px" viewBox="0 0 252 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Forum_Deltag_Front</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Illustrationer_Front" transform="translate(-942.000000, -566.000000)">
+            <g id="Forum_Deltag" transform="translate(942.000000, 566.000000)">
+                <g id="Speech-1">
+                    <path d="M25,80 L0,80 L17,64.4166667 L17,8 C17,3.581722 20.581722,8.11624501e-16 25,0 L169,0 C173.418278,-8.11624501e-16 177,3.581722 177,8 L177,72 C177,76.418278 173.418278,80 169,80 L25,80 Z" id="Rectangle-2" fill="#FFFFFF"></path>
+                    <g id="Small-icon" transform="translate(35.000000, 25.000000)">
+                        <g id="Group-3">
+                            <circle id="Oval" stroke="#1A1A1A" stroke-width="3" cx="15" cy="15" r="15"></circle>
+                            <text id="?" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="16" font-weight="bold" line-spacing="24" fill="#1A1A1A">
+                                <tspan x="11" y="19">?</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(82.000000, 23.000000)">
+                        <rect id="Rectangle" fill="#474E95" x="0" y="0" width="40" height="6"></rect>
+                        <rect id="Rectangle" fill="#C8CADF" x="0" y="14" width="80" height="6"></rect>
+                        <rect id="Rectangle" fill="#C8CADF" x="0" y="28" width="55" height="6"></rect>
+                    </g>
+                </g>
+                <g id="Speech-2" transform="translate(75.000000, 100.000000)">
+                    <path d="M25,80 L0,80 L17,64.4166667 L17,8 C17,3.581722 20.581722,8.11624501e-16 25,0 L169,0 C173.418278,-8.11624501e-16 177,3.581722 177,8 L177,72 C177,76.418278 173.418278,80 169,80 L25,80 Z" id="Rectangle-2-Copy" fill="#FFFFFF" transform="translate(88.500000, 40.000000) scale(-1, 1) translate(-88.500000, -40.000000) "></path>
+                    <g id="Group-3" transform="translate(65.000000, 23.000000)">
+                        <rect id="Rectangle" fill="#474E95" x="0" y="0" width="40" height="6"></rect>
+                        <rect id="Rectangle" fill="#C8CADF" x="0" y="14" width="80" height="6"></rect>
+                        <rect id="Rectangle" fill="#C8CADF" x="0" y="28" width="55" height="6"></rect>
+                    </g>
+                    <g id="Small-icon" transform="translate(18.000000, 25.000000)">
+                        <g id="Group-3">
+                            <circle id="Oval" stroke="#1A1A1A" stroke-width="3" cx="15" cy="15" r="15"></circle>
+                            <text id="?" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="16" font-weight="bold" line-spacing="24" fill="#1A1A1A">
+                                <tspan x="12.44" y="19">!</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
