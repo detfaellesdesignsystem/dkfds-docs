@@ -5,6 +5,7 @@ redirect_from:
 layout: styleguide
 title: Til projektledere
 category: Kom_i_gang_category
+subcategory: Kom i gang
 description: Til produktejere og projektledere, der skal, eller er interesseret i at gøre brug af Det Fælles Designsystem i deres projekt.
 subnav:
 - text: Fordele ved at anvende Det Fælles Designsystem

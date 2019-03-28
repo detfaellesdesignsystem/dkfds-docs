@@ -5,6 +5,7 @@ redirect_from:
 layout: styleguide
 title: Det visuelle design
 category: Om_designsystemet_category
+subcategory: Om designsystemet
 lead: 
 subnav:
 - text: Visuel integration på portalerne

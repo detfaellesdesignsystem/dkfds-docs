@@ -5,6 +5,7 @@ redirect_from:
 layout: styleguide
 title: Krav
 category: Kom_i_gang_category
+subcategory: Kom i gang
 ---
 <div class="alert alert-warning " role="alert">
     <div class="alert-body">

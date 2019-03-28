@@ -642,9 +642,34 @@ code {
     justify-content: center;
     padding: map-get($spacers, 4);
     background-color: $background-alternative;
+
+    &.design-box{
+      background-color: $color-data-turquoise-high-opacity;
+    }
+
+    &.componenent-box{
+      background-color: $color-data-teal-medium-opacity;
+    }
+    &.extension-box{
+      background-color: $color-data-violet-medium-opacity;
+    }
+    &.example-box{
+      background-color: $color-data-purple-medium-opacity;
+    }
+    &.about-box{
+      background-color: $color-data-orange-medium-opacity;
+    }
+    &.gettingstarted-box{
+      background-color: $color-data-magenta-medium-opacity;
+    }
+
     &:focus{
       background-color: $background-alternative;
       outline: $focus-outline;
+    }
+
+    img{
+      max-height: 100%;
     }
   }
   p{

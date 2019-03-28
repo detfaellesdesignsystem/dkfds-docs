@@ -3,6 +3,7 @@ permalink: /komigang/tilgaengelighed/
 layout: styleguide
 title: Tilgængelighed
 category: Kom_i_gang_category
+subcategory: Kom i gang
 ---
  <section>
         <ul>

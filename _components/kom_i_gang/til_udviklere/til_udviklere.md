@@ -5,6 +5,7 @@ redirect_from:
 layout: styleguide
 title: Til udviklere
 category: Kom_i_gang_category
+subcategory: Kom i gang
 description: Til udviklere, der skal gøre brug af Det Fælles Designsystem.
 ---
 

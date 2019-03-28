@@ -6,6 +6,7 @@ layout: styleguide
 type: component
 title: Hjælpeklasser (Utilities)
 category: Kom_i_gang_category
+subcategory: Kom i gang
 parentlink: /komigang/tiludviklere/
 description: Du kan bruge hjælpeklasser til at skræddersy dit indhold i forhold til placering, afstande, farver, bredde og visning 
 subnav:

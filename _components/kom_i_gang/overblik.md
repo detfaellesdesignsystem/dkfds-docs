@@ -4,13 +4,50 @@ layout: styleguide
 title: Kom i gang
 category: Kom_i_gang_category
 description: Det Fælles Designsystem er inspireret af og bygger på et fundament af international best practice.
+lead: Det Fælles designsystem er en samling af kode og designretningslinjer, der hjælper dig med at bygge selvbetjeningsløsninger. Vi har taget hånd om det lavpraktiske så du kan koncentrere dig om dine brugeres rejse og oplevelse.
 ---
-<p>Det Fælles Designsystem er inspireret af følgende kilder: </p>
-<ul>
-    <li>det amerikanske offentlige <a href="https://v2.designsystem.digital.gov/" class="icon-link">US Web Design System<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li>den engelske pendant <a href="https://design-system.service.gov.uk/" class="icon-link">GOV.uk Design System<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-<p>Det bygger dermed på et fundament af internationalt anerkendte og bedste praksis for design af løsninger.</p>
-<p>Designsystemet anviser et minimalt og fleksibelt design: Komponenterne er nøje udvalgt blandt de muligheder, som kilderne stiller til rådighed.</p>
-<p>Designsystemet giver lette og stabile selvbetjeningsløsninger. Med sin ensartede funktionalitet og design skaber det genkendelighed for brugerne på tværs af selvbetjeningsløsningerne. Det gør det nemmere for brugerne at navigere i og anvende løsningerne, da den samlede brugerrejse på tværs af offentlige selvbetjeningsløsninger bliver mere ensartet.</p>
-<p>På de underliggende sider finder du en beskrivelse af principper og valg af løsninger bag designsystemet. Beskrivelserne bliver redigeret, når der bliver udgivet større, nye versioner.</p>
+
+<div class="row">
+ <div class="col-12 col-md-4">
+      <div class="demo-component-box">
+          <a href="/dkfds-docs/komigang/krav/" class="demo-component-box__img gettingstarted-box">
+              <img src="{{ site.baseurl }}/img/componenticons/krav.svg" alt="">
+          </a>
+          <p><a href="/dkfds-docs/komigang/selvbetjeningsloesninger/">Krav</a></p>
+      </div>
+  </div>
+  <div class="col-12 col-md-4">
+      <div class="demo-component-box">
+          <a href="/dkfds-docs/komigang/tiludviklere/" class="demo-component-box__img gettingstarted-box">
+              <img src="{{ site.baseurl }}/img/componenticons/TilUdviklere.svg" alt="">
+          </a>
+          <p><a href="/dkfds-docs/komigang/tiludviklere/">Til udviklere</a></p>
+      </div>
+  </div>
+  <div class="col-12 col-md-4">
+      <div class="demo-component-box">
+          <a href="/dkfds-docs/komigang/tildesignere/" class="demo-component-box__img gettingstarted-box">
+              <img src="{{ site.baseurl }}/img/componenticons/TilDesignere.svg" alt="">
+          </a>
+          <p><a href="/dkfds-docs/komigang/tildesignere/">Til designere</a></p>
+      </div>
+  </div>
+</div>
+<div class="row">
+ <div class="col-12 col-md-4">
+      <div class="demo-component-box">
+          <a href="/dkfds-docs/komigang/tilprojekteledere/" class="demo-component-box__img gettingstarted-box">
+              <img src="{{ site.baseurl }}/img/componenticons/TilProjektledere.svg" alt="">
+          </a>
+              <p><a href="/dkfds-docs/komigang/tilprojekteledere/">Til projektledere</a></p>
+      </div>
+  </div>
+  <div class="col-12 col-md-4">
+      <div class="demo-component-box">
+          <a href="/dkfds-docs/komigang/tilgaengelighed/" class="demo-component-box__img gettingstarted-box">
+              <img src="{{ site.baseurl }}/img/componenticons/Tilgaengelighed.svg" alt="">
+          </a>
+          <p><a href="/dkfds-docs/komigang/tilgaengelighed/">Tilgængelighed</a></p>
+      </div>
+  </div>
+</div>

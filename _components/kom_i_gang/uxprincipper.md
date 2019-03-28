@@ -5,6 +5,7 @@ redirect_from:
 layout: styleguide
 title: UX principper i Det Fælles Designsystem
 category: Kom_i_gang_category
+subcategory: Kom i gang
 description: Brugeroplevelsesdesign (UX) handler om langt mere end et designsystem alene kan rumme, da det i høj grad handler om at ramme brugerens forventninger og dække dennes behov, samtidig med at man når sine forretningsmål inden for de rammer og vilkår man har.
 ---
 <article>

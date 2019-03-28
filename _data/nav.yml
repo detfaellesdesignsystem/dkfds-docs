@@ -92,7 +92,9 @@ Udvidelser_category:
 Eksempler_category:
   - alternative_text: Overblik
     href: /eksempler/
-  - href: /eksempler/sideeksempler/
+  - href: /eksempler/selvbetjeningsloesninger/
+  - href: /eksempler/opsummeringsside/
+  - href: /eksempler/kvittering/
 
 Om_designsystemet_category:
   - alternative_text: Overblik

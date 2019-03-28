@@ -5,6 +5,7 @@ redirect_from:
 layout: styleguide
 title: Sideopbygning (layout)
 category: Kom_i_gang_category
+subcategory: Kom i gang
 parentlink: /komigang/tildesignere/
 lead: Dette afsnit beskriver regler og principper for struktur og placering af komponenter i en selvbetjeningsløsning. Et godt layout er harmonisk, ensartet, logisk opbygget, og understøtter brugerens handlinger. Det er således både behageligt for øjet og let for brugeren at anvende.
 subnav:

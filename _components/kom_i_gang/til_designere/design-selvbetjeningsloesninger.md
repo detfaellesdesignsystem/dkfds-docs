@@ -4,6 +4,7 @@ layout: styleguide
 title: Kort guide til design af selvbetjeningsløsninger
 category: Kom_i_gang_category
 parentlink: /komigang/tildesignere/
+subcategory: Kom i gang
 ---
 <section>
     <p>Når du som designer skal sætte en selvbetjeningsløsning op, skal du være opmærksom på følgende:</p>
