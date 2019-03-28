@@ -7924,12 +7924,12 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 24px;
   background-color: #F5F5F5; }
   .demo-img-container img {
     height: 100%; }
   .demo-img-container--turquoise {
-    background-color: #56D4D6; }
+    background-color: #9AE5E6; }
   .demo-img-container--teal {
     background-color: #15b094; }
   .demo-img-container--orange {
@@ -7939,7 +7939,7 @@ code {
   .demo-img-container--purple {
     background-color: #8F2B8F; }
   .demo-img-container--violet {
-    background-color: #474E95; }
+    background-color: #9195BF; }
 
 .demo-img-placeholder {
   height: 150px; }
@@ -8138,6 +8138,10 @@ code {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
   border: 1px solid #747474; }
+
+/* HOME */
+.bg-turquoise {
+  background-color: #CCF2F3; }
 
 .is-neutral {
   display: none; }
