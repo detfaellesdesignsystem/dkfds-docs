@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="141px" viewBox="0 0 136 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Overflow menu-with-dropshadow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer_Ver02" transform="translate(-532.000000, -2039.000000)">
+            <g id="Overflow-menu" transform="translate(532.000000, 2039.000000)">
+                <polygon id="Rectangle-22" fill="#FFFFFF" fill-rule="nonzero" points="0 48 105 48 113 40 121 48 136 48 134 141 0 141"></polygon>
+                <rect id="Rectangle-15" fill="#DCDCDC" fill-rule="nonzero" x="24" y="112" width="60" height="8"></rect>
+                <rect id="Rectangle-15" fill="#DCDCDC" fill-rule="nonzero" x="24" y="91" width="78" height="8"></rect>
+                <polygon id="Rectangle-15" fill="#DCDCDC" fill-rule="nonzero" points="24 71 92 71 92 79 24 79"></polygon>
+                <circle id="Oval-5" fill="#1A1A1A" cx="113" cy="28" r="4"></circle>
+                <circle id="Oval-5-Copy" fill="#1A1A1A" cx="113" cy="16" r="4"></circle>
+                <circle id="Oval-5-Copy-2" fill="#1A1A1A" cx="113" cy="4" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="164px" viewBox="0 0 118 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>UX UI Designere</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer_Ver02" transform="translate(-542.000000, -4066.000000)">
+            <g id="UX-UI-Designere" transform="translate(542.000000, 4066.000000)">
+                <g id="Book">
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="118" height="148"></rect>
+                    <rect id="Rectangle-15" fill="#DCDCDC" fill-rule="nonzero" x="32" y="122" width="74" height="4"></rect>
+                    <rect id="Rectangle-15-Copy-10" fill="#DCDCDC" fill-rule="nonzero" x="32" y="132" width="40" height="4"></rect>
+                    <g id="Info" transform="translate(51.000000, 15.000000)">
+                        <circle id="Oval" fill="#DCDCDC" fill-rule="evenodd" cx="17" cy="17" r="17"></circle>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="13" y="15" width="6" height="2"></rect>
+                        <rect id="Rectangle-Copy" fill="#FFFFFF" fill-rule="evenodd" x="13" y="23" width="8" height="2"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="15" y="15" width="4" height="10"></rect>
+                        <path d="M17,12.9069767 C16.3023221,12.9069767 15.7945752,12.7480636 15.4767442,12.4302326 C15.1589131,12.1124015 15,11.7054288 15,11.2093023 L15,10.6976744 C15,10.2015479 15.1589131,9.79457523 15.4767442,9.47674419 C15.7945752,9.15891314 16.3023221,9 17,9 C17.6976779,9 18.2054248,9.15891314 18.5232558,9.47674419 C18.8410869,9.79457523 19,10.2015479 19,10.6976744 L19,11.2093023 C19,11.7054288 18.8410869,12.1124015 18.5232558,12.4302326 C18.2054248,12.7480636 17.6976779,12.9069767 17,12.9069767 Z" id="i" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                    <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="0" y="0" width="20" height="148"></rect>
+                    <path d="M20,160 L10,164 L10,148 L20,148 L30,148 L30,164 L20,160 Z" id="Rectangle-10-Copy-2" fill="#454545" fill-rule="nonzero"></path>
+                </g>
+                <g id="ruler-pencil" transform="translate(46.000000, 63.000000)" stroke="#454545" stroke-linejoin="round" stroke-width="2">
+                    <path d="M27,33 L41,33" id="Path"></path>
+                    <path d="M27,8 L41,8" id="Path"></path>
+                    <polygon id="Path" stroke-linecap="square" points="41 33 34 42 27 33 27 0 41 0"></polygon>
+                    <path d="M0,10 L8,10" id="Path"></path>
+                    <path d="M0,18 L6,18" id="Path"></path>
+                    <path d="M0,26 L8,26" id="Path"></path>
+                    <path d="M0,34 L6,34" id="Path"></path>
+                    <rect id="Rectangle" stroke-linecap="square" x="0" y="0" width="16" height="44"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

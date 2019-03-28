@@ -7897,9 +7897,23 @@ code {
   @media (min-width: 768px) {
     .demo-component-box__img {
       display: flex; } }
+  .demo-component-box__img.design-box {
+    background-color: #9AE5E6; }
+  .demo-component-box__img.componenent-box {
+    background-color: #B9E7DF; }
+  .demo-component-box__img.extension-box {
+    background-color: #C8CADF; }
+  .demo-component-box__img.example-box {
+    background-color: #DDBFDD; }
+  .demo-component-box__img.about-box {
+    background-color: #FFD2C3; }
+  .demo-component-box__img.gettingstarted-box {
+    background-color: #F3BADA; }
   .demo-component-box__img:focus {
     background-color: #F5F5F5;
     outline: 4px solid #747474; }
+  .demo-component-box__img img {
+    max-height: 100%; }
 
 .demo-component-box p {
   margin-top: 16px;

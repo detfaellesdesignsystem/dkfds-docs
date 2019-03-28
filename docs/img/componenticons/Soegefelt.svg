@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="224px" height="40px" viewBox="0 0 224 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Søgefelt</title>
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Søgefelt-with-dropshadow</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Overview_illustrationer" transform="translate(-840.000000, -1992.000000)">
-            <g id="Søgefelt" transform="translate(840.000000, 1992.000000)">
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer_Ver02" transform="translate(-840.000000, -2390.000000)">
+            <g id="Søgefelt" transform="translate(840.000000, 2390.000000)">
                 <path d="M4,0 L186,0 L186,40 L4,40 C1.790861,40 2.705415e-16,38.209139 0,36 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="Input-field" fill="#FFFFFF"></path>
                 <path d="M168,0 L220,0 C222.209139,-4.05812251e-16 224,1.790861 224,4 L224,36 C224,38.209139 222.209139,40 220,40 L168,40 L168,0 Z" id="Button" fill="#454545"></path>
                 <path d="M170,2 L170,38 L220,38 C221.104569,38 222,37.1045695 222,36 L222,4 C222,2.8954305 221.104569,2 220,2 L170,2 Z M168,0 L220,0 C222.209139,-4.05812251e-16 224,1.790861 224,4 L224,36 C224,38.209139 222.209139,40 220,40 L168,40 L168,0 Z" id="Button" fill="#1A1A1A" fill-rule="nonzero"></path>
