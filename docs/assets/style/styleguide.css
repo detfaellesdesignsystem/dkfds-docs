@@ -7905,7 +7905,6 @@ code {
   .demo-component-box__img.gettingstarted-box {
     background-color: #F3BADA; }
   .demo-component-box__img:focus {
-    background-color: #F5F5F5;
     outline: 4px solid #747474; }
   .demo-component-box__img img {
     max-height: 100%; }
