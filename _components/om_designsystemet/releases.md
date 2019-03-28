@@ -20,23 +20,23 @@ subnav:
 <p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på github<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></p>
 
 <h2 class="mb-0" id="version-303">Version 3.0.3</h2>
-  <p class="small-text mt-0">27-03-2019</p>
-    <ul>
-        <li>Fjernet eksempler fra projekt</li>
-        <li>Ændret macros, så de er mere dynamiske, så flere projekter kan gøre brug af dem</li>
-        <li>Fikset fejl med fokus på overflow menu i Firefox</li>
-        <li>Fikset fejl med ol liste i flere niveauer</li>
-        <li>Fjernet gammel JavaScript, som var årsag til fejl ved loading af javascript filen</li>
-        <li>Ændret HR kant farve</li>
-        <li>Ændret kant farve på tertiær knap</li>
-        <li>Tilføjet afstand på tags og knapper på lille skærm</li>
-        <li>Opdateret footers</li>
-        <li>Tilføjet JavaScript der håndterer lukning af overflow menuer, når man åbner en ny</li>
+<p class="small-text mt-0">27-03-2019</p>
+<ul>
+    <li>Fjernet eksempler fra projekt</li>
+    <li>Ændret macros, så de er mere dynamiske, så flere projekter kan gøre brug af dem</li>
+    <li>Fikset fejl med fokus på overflow menu i Firefox</li>
+    <li>Fikset fejl med ol liste i flere niveauer</li>
+    <li>Fjernet gammel JavaScript, som var årsag til fejl ved loading af javascript filen</li>
+    <li>Ændret HR kant farve</li>
+    <li>Ændret kant farve på tertiær knap</li>
+    <li>Tilføjet afstand på tags og knapper på lille skærm</li>
+    <li>Opdateret footers</li>
+    <li>Tilføjet JavaScript der håndterer lukning af overflow menuer, når man åbner en ny</li>
 </ul>
 
 <h2 class="mb-0" id="version-302">Version 3.0.2</h2>
-  <p class="small-text mt-0">19-02-2019</p>
-  <ul>
+<p class="small-text mt-0">19-02-2019</p>
+<ul>
     <li>Tilføjet info om fiks af Microsoft Edge bug i navigation, hvor bullets blev vist trods styling</li>
     <li>Defineret tilbage-knap</li>
     <li>Tilføjet readonly eksempel i input felter</li>
@@ -50,7 +50,7 @@ subnav:
     <li>Fjernet $color-link-active farven, da den ikke længere bliver brugt</li>
     <li>Opdateret styling og definition af eksterne links</li>
     <li>Ændret skrifttype tykkelse på søgefelts knappen</li>
-  </ul>
+</ul>
 
   <h2 class="mb-0" id="version-301">Version 3.0.1</h2>
   <p class="small-text mt-0">18-01-2019</p>
