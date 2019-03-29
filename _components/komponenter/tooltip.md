@@ -8,6 +8,21 @@ subcategory: Komponenter
 description: Tooltip bruges til at forklare en tekst yderligere eller give mere information, som ikke umiddelbart er nødvendig.
 lead: Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller fører musen hen over for at få en kort forklaring på indhold, ord eller begreber.  
 ---
+<p>Du kan anvende tooltip og popover til at tilføje informationer til elementer i brugergrænsefladen.</p>
+<p><strong>Tooltips</strong></p>
+<ul>
+    <li>Åbner automatisk, når brugeren markerer et element med mus eller tastatur.</li>
+    <li>Kort tekst</li>
+    <li>Til præcisering af hvad elementer i brugergrænsefladen er/gør, som fx funktionsikoner (klikbare ikoner), knapper, links, tekst og billeder. </li>
+    <li>Kan sættes på alle elementer inkl. links og knapper.</li>
+</ul>
+<p><strong>Popover</strong></p>
+<ul>
+    <li>Åbner når brugeren klikker på et element med mus eller tastatur.</li>
+    <li>Kort og lang tekst, kan også indeholde overskrifter, illustrationer mm.</li>
+    <li>Til relaterede forklaringer af elementer i brugergrænsefladen, som fx til hjælp og ekstra detaljer.</li>
+    <li>Bør kun sættes på elementer som brugeren ikke ellers kan interagere med, som fx et spørgsmålstegnsikon eller et ord i en tekst.</li>
+</ul>
 
 {% include code/preview.html component="tooltip" %}
 {% include code/accordion.html component="tooltip" %}
@@ -43,7 +58,33 @@ lead: Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller 
     Retningslinjer
   </button>
   <div id="tooltip-docs" class="accordion-content">
-    
+    <h2 class="h4">Tilgængelighed</h2>
+    <ul>
+        <li>Tooltip og popovers skal kunne lukkes med escape knappen på keyboardet.</li>
+        <li>Fokus skal blive på det element, der afstedkom tooltippen eller popoveren.</li>
+        <li>Brug aria-describedby på elementet der udløser tooltippen eller popoveren.</li>
+        <li>Tooltips skal både vises, ved markering med mus og keyboard.</li>
+    </ul>
+    <h2 class="h4">Brugervenlighed</h2>
+    <h3 class="h5">Anvendes til</h3>
+    <p>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen. Brug popover til at knytte relaterede informationer, der uddyber/forklarer et element eller en funktion i brugergrænsefladen.</p>
+    <h3 class="h5">Anvendes ikke til</h3>
+    <p>Informationer der er essentielle for at brugeren kan gennemføre løsningen, hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst.</p>
+    <h3 class="h5">Vejledning</h3>
+    <ul>
+        <li>Gør indholdet i tooltips og popovers så kort og koncist som muligt.</li>
+        <li>Vær konsistent i brugen af tooltips og popovers, så brugeren ikke skal gætte sig til om der er tooltips/popovers eller ej.</li>
+        <li>Gør det let at se, hvilket element tooltippen/popoveren hører til.</li>
+        <li>Brug altid tooltips til funktionsikoner (klikbare ikoner) uden label.</li>
+        <li>Sørg for at tooltips og popovers er tydelige at se og læse.</li>
+        <li>Placer tooltips og popovers så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert kan brugeren blive nødt til at lukke og åbne tooltip/popover igen for at forstå sammenhængen.</li>
+        <li>Sættes der tooltip/popover på et ord i en tekst, markeres ordet med en stiplet linje under. Brug det i begrænset omfang, da det let virker forstyrrende.</li>
+    </ul>
+    <h3 class="h5">Links</h3>
+    <ul class="nobullet-list">
+        <li><a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+    </ul>
   </div>
 </div>
 
