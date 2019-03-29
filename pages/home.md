@@ -57,7 +57,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
                 </li>
             </ul>
         </div>
-        <div class="col-12 col-lg-5 align-self-center">
+        <div class="col-12 col-lg-5">
             <img src="{{ site.baseurl }}/img/descriptionimages/Inspiration.svg" alt="Det Fælles Designsystem forside billede" class="d-none d-lg-inline-block">
         </div>
     </div>

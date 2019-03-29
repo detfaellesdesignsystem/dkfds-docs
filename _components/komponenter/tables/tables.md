@@ -10,7 +10,7 @@ subcategory: Komponenter
 lead: Tabeller er en systematisk opstilling af data og viser data i kolonner og rækker.
 subnav:
 - text: Standard
-  href: '#tabel'
+  href: '#standard'
 - text: Uden ramme
   href: '#uden-ramme'
 - text: Zebralinier

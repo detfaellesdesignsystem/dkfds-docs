@@ -32,7 +32,7 @@ subnav:
         <a href="/dkfds-docs/downloads/FDS v303 SVG.zip">Download svg-filer (version 3.0.3)</a>
     </p>
     <p>Svg-filerne kan importeres i de fleste design/prototype programmer m.fl. og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).</p>
-    <p>For at gøre det nemmere at komme i gang stiller vi nedenstående filer til rådighed, men “source of truth”, vores fælles referencepunkt, er dokumentationssiden her og ikke filerne. </p>
+    <p>For at gøre det nemmere at komme i gang stiller vi ovenstående filer til rådighed, men “source of truth”, vores fælles referencepunkt, er dokumentationssiden her og ikke filerne. </p>
 </section>
 <section>
     <h2>Dit ansvar som designer</h2>
