@@ -22,6 +22,7 @@ subnav:
 - text: Footer
   href: '#footer'
 ---
+<hr class="my-6" />
 <h2 id="grid">Grid (12 kolonner)</h2>
 <p>Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige bredde kolonner med 24 px afstand mellem hver kolonne. Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.</p>
 <p>I tablet- og mobilvisninger folder layoutet sammen til respektivt 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst.</p> 
@@ -44,6 +45,7 @@ subnav:
 <p>Gentagelsen af værdier skaber ro og balance på tværs af det visuelle layout og mellem sidens lodrette elementer. For tekst er det ikke tekstens størrelse, men linjehøjden, der skal gå op i en faktor 8.</p>
 <p>Du kan læse mere om baseline grid i artiklen <a href="https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032" class="icon-link">8-Point Grid: Vertical Rhythm<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>.</p>
 
+<hr class="my-6" />
 <h2 id="struktur">Grundlæggende struktur</h2>
 <p>En selvbetjeningsløsning er delt op i tre overordnede områder.</p>
 <ul>
@@ -51,9 +53,17 @@ subnav:
     <li>Indhold</li>
     <li>Footer</li>
 </ul>
-<figure><img src="{{ site.baseurl }}/img/descriptionimages/header-indhold-footer.png" alt="Viser opbygningen af en side i designsystemet"></figure>
 
-<h2 id="header">Header</h2>
+<p><strong>Header</strong></p>
+<div><img src="{{ site.baseurl }}/img/descriptionimages/Header_eksempel.svg" class="bg-darkgrey p-5" alt="Viser opbygningen af en side i designsystemet"></div>
+
+<p><strong>Indhold</strong></p>
+<div><img src="{{ site.baseurl }}/img/descriptionimages/Indhold_eksempel.svg" class="bg-darkgrey p-5" alt="Viser opbygningen af en side i designsystemet"></div>
+
+<p><strong>Footer</strong></p>
+<div><img src="{{ site.baseurl }}/img/descriptionimages/Footer_eksempel.svg" class="bg-darkgrey p-5" alt="Viser opbygningen af en side i designsystemet"></div>
+
+<h3>Header</h3>
 <p>Headeren identificerer portal, ansvarlig myndighed og den bruger, der er logget ind med NemLog-in. Headeren fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.</p>
 <p>Headeren er ens på tværs af trin og undersider i en given selvbetjeningsløsning. Den er således et “ankerpunkt”, som brugeren altid kan vende tilbage til og orientere sig ved. </p>
 <p>En header består af et antal rækker, som vist nedenfor.</p>
@@ -85,28 +95,54 @@ subnav:
 
 <h2 id="indhold">Indhold</h2>
 <p>Det specifikke indhold i selvbetjeningsløsningerne kan variere. De konkrete retningslinjer for layout er derfor erstattet af nogle principper, som du skal betragte som anbefalinger, da de ikke stiller krav om, hvordan en given selvbetjeningsløsning specifikt skal se ud. Principperne retter sig særligt mod selvbetjeningsløsninger til lavfrekvente og ikke-professionelle brugere. De er følgende:</p>
+<div class="row">
+    <div class="col-12 col-lg-5 bg-alternative">
+        <h3 class="h5">Gør det let at skimme indholdet</h3>
+        <p>Lad fx overskrifter, labels, brødtekst, inputfelter og primærknap flugte til venstre ned ad siden, så øjets flugt primært foregår i en bevægelse op og ned ad siden (i én kolonne).</p>
+    </div>
+    <div class="col-12 col-lg-7 bg-darkgrey text-align-center">
+        <img src="{{ site.baseurl }}/img/descriptionimages/Skimme.svg" class="my-5 mx-2" alt="Grafisk visning af en side som er let at skimme" />
+    </div>
+</div>
 
-<h3 class="h5">Gør det let at skimme indholdet</h3>
-<p>Lad fx overskrifter, labels, brødtekst, inputfelter og primærknap flugte til venstre ned ad siden, så øjets flugt primært foregår i en bevægelse op og ned ad siden (i én kolonne).</p>
-<img src="{{ site.baseurl }}/img/descriptionimages/skimbar.png" alt="Grafisk visning af en side som er let at skimme" class="description-image">
-
-<h3 class="h5">Gør løsningen let og luftigt</h3>
-<p>Dvs. gør god brug af “luft” (white space). Det gør sidens indhold lettere at overskue og forstå.</p>
-<img src="{{ site.baseurl }}/img/descriptionimages/let-og-luftig.png" alt="Luft omkring elementer" class="description-image">
-
-<h3 class="h5">Vis hvad der hænger sammen med hvad</h3>
-<p>Skab fx klare gestalter: Placer elementer, der hører sammen, tættere på hinanden, og adskil/fjern elementer, der ikke hører sammen, fra hinanden.</p>
-<img src="{{ site.baseurl }}/img/descriptionimages/Sammenhaeng.png" alt="Billedet viser gruppering af elementer" class="description-image">
-
-<h3 class="h5">Del indholdet op i små bidder</h3>
-<p>Gør layoutet overskueligt ved at dele løsningen eller siden op i mindre bidder. Fx et spørgsmål pr. side i en trinbaseret løsning. Brug overskrifter, underoverskrifter og lister til at skabe overskuelighed på teksttunge sider.</p>
-<img src="{{ site.baseurl }}/img/descriptionimages/del-op.png" alt="Gruppering af indhold i små bidder." class="description-image">
-
-<h3 class="h5">Brug et responsivt grid</h3>
-<p>Brug et grid-system til fx til at styre dit layout. Grid skaber struktur i informationer. Responsivt grid tilpasser sig desuden skærmformatet.</p>
-<img src="{{ site.baseurl }}/img/descriptionimages/brug-et-grid.png" alt="Side med gridsystem." class="description-image">
-<p><a href="/dkfds-docs/design/grid/">Grid’et i designsystemet</a></p>
-<p><a href="/dkfds-docs/eksempler/">Eksempler på selvbetjeningsløsninger</a></p>
+<div class="row mt-5">
+    <div class="col-12 col-lg-5 bg-alternative">
+        <h3 class="h5">Gør løsningen let og luftigt</h3>
+        <p>Dvs. gør god brug af “luft” (white space). Det gør sidens indhold lettere at overskue og forstå.</p>
+    </div>
+    <div class="col-12 col-lg-7 bg-darkgrey align-text-center">
+        <img src="{{ site.baseurl }}/img/descriptionimages/Let_og_luftig.svg" class="my-5 mx-2" alt="Luft omkring elementer" />
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-12 col-lg-5 bg-alternative">
+        <h3 class="h5">Vis hvad der hænger sammen med hvad</h3>
+        <p>Skab fx klare gestalter: Placer elementer, der hører sammen, tættere på hinanden, og adskil/fjern elementer, der ikke hører sammen, fra hinanden.</p>
+    </div>
+    <div class="col-12 col-lg-7 bg-darkgrey align-text-center">
+        <img src="{{ site.baseurl }}/img/descriptionimages/Sammenhaenge.svg" class="my-5 mx-2" alt="Billedet viser gruppering af elementer" />
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-12 col-lg-5 bg-alternative">
+        <h3 class="h5">Del indholdet op i små bidder</h3>
+        <p>Gør layoutet overskueligt ved at dele løsningen eller siden op i mindre bidder. Fx et spørgsmål pr. side i en trinbaseret løsning. Brug overskrifter, underoverskrifter og lister til at skabe overskuelighed på teksttunge sider.</p>
+    </div>
+    <div class="col-12 col-lg-7 bg-darkgrey align-text-center">
+        <img src="{{ site.baseurl }}/img/descriptionimages/Del_op_i_trin.svg" class="my-5 mx-2" alt="Gruppering af indhold i små bidder" />
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-12 col-lg-5 bg-alternative">
+       <h3 class="h5">Brug et responsivt grid</h3>
+       <p>Brug et grid-system til fx til at styre dit layout. Grid skaber struktur i informationer. Responsivt grid tilpasser sig desuden skærmformatet.</p>
+       <p><a href="/dkfds-docs/design/grid/">Grid’et i designsystemet</a></p>
+       <p><a href="/dkfds-docs/eksempler/">Eksempler på selvbetjeningsløsninger</a></p>
+    </div>
+    <div class="col-12 col-lg-7 bg-darkgrey align-text-center">
+        <img src="{{ site.baseurl }}/img/descriptionimages/Brug_et_grid.svg" class="my-5 mx-2" alt="Side med gridsystem" />
+    </div>
+</div>
 
 <h2 id="footer">Footer</h2>
 <p>Footeren fungerer som sidens afslutning. Her får du mulighed for endnu en gang at angive informationer om løsningen: Hvilken myndighed, der er ansvarlig for selvbetjeningsløsningen, og hvordan brugeren får support og kommer i kontakt med dig som myndighed. </p>
