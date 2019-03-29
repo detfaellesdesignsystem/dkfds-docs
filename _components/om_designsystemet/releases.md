@@ -19,6 +19,19 @@ subnav:
 ---
 <p class="font-lead">Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.</p>
 <p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på github<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></p>
+<h2 class="h3">Versionering</h2>
+<p>Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link">semantisk versionering<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.</p>
+<p>Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR (y), PATCH (z)</p>
+<ul>
+    <li>MAJOR: Ændringer i kode og/eller design, der ikke er bagud-kompatibelt, som fx erstatning eller sletning af komponenter og ændringer i eksisterende komponenter, der forandrer dem så de ikke længere ligner i kode og/eller design.</li>
+    <li>MINOR: Tilføjelser, ændringer og ny funktionalitet, der er bagud-kompatible.</li>
+    <li>PATCHE: bagud-kompatible fejlrettelser (bug fixes).</li>
+</ul>
+<h3 class="h4">Release proces</h3>
+<p>Det er et levende designsystem, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens. </p>
+
+<!--<h3 class="h4">Udvikling og test </h3>
+<p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
 
 <h2 class="mb-0" id="version-303">Version 3.0.3</h2>
 <p class="small-text mt-0">27-03-2019</p>
