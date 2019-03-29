@@ -6352,14 +6352,15 @@ input[type="search"] {
   box-shadow: 0 2px 4px 0 #BFBFBF;
   border: 1px solid #747474;
   overflow: hidden;
-  background: #ffffff;
-  height: 100%; }
+  background: #ffffff; }
   .card-small > :last-of-type {
     padding-bottom: 24px; }
   .card-medium > :last-of-type {
     padding-bottom: 24px; }
   .card-large > :last-of-type {
     padding-bottom: 24px; }
+  .card-align-height {
+    height: 100%; }
   .card p {
     max-width: 60ch;
     margin-top: 16px;
