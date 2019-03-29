@@ -39,12 +39,9 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
 </div>
 
 <div class="container">
-    <div class="row py-8">
-        <div class="col-12 col-lg-5 align-self-center align-text-center">
-            <img src="{{ site.baseurl }}/img/descriptionimages/Inspiration.png" alt="Det Fælles Designsystem forside billede" class="d-none d-lg-inline-block">
-        </div>
+    <div class="row py-9">
         <div class="col-12 col-lg-7">
-            <h2>Vi er inspireret af US Web Design Standards og Gov.uk Design System</h2>
+            <h2 class="h3 mt-0">Vi er inspireret af US Web Design Standards og Gov.uk Design System</h2>
             <p>Det Fælles Designsystem tager ved lære af de bedste og genbruger både UX- og UI-viden, samt kode i så vid udstrækning som vi kan. Vi følger med i hvad US
             Web Design Standards og Gov.uk Design System laver og undersøger, og kan varmt anbefale at gøre brug af disse to offentlige frameworks til inspiration.</p>
             <ul class="nobullet-list">
@@ -60,10 +57,13 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
                 </li>
             </ul>
         </div>
+        <div class="col-12 col-lg-5 align-self-center">
+            <img src="{{ site.baseurl }}/img/descriptionimages/Inspiration.svg" alt="Det Fælles Designsystem forside billede" class="d-none d-lg-inline-block">
+        </div>
     </div>
-    <div class="row pb-lg-8">
+    <div class="row py-lg-9">
         <div class="col-12 col-lg-7">
-            <h2>Brugervenlighed over tidens designtrend</h2>
+            <h2 class="h3 mt-0">Brugervenlighed over tidens designtrend</h2>
             <p>Designtrends skifter, det som var moderne i går er umoderne i morgen, men mange selvbetjeningsløsninger overlever modens luner. Ved primært at holde det visuelle design til gråtoner og hvid, uden “krom” og med så lidt branding som muligt, har vi lavet et visuelt robust designsystem, der ikke forsøger at være trendy, men neutralt, simpelt og fleksibelt, så det passer ind på både borger.dk og Virk trods deres forskelligheder. Så kan du fokusere på brugerens behov og brugerrejse i stedet for på former og farver.</p>
             <p>
               <a href="/dkfds-docs/design/visueltdesign/"> 
@@ -71,16 +71,13 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
               </a>
             </p>
         </div>
-        <div class="col-12 col-lg-5 align-self-center align-text-center">
+        <div class="col-12 col-lg-5 align-self-center">
             <img src="{{ site.baseurl }}/img/descriptionimages/Brugervenlighed_Illustration.svg" alt="Det Fælles Designsystem forside billede" class="d-none d-lg-inline-block">
         </div>
     </div>
-    <div class="row pb-lg-4">
-        <div class="col-12 col-lg-5 align-self-center align-text-center">
-            <img src="{{ site.baseurl }}/img/descriptionimages/Kodefrihed_Illustration.svg" alt="Det Fælles Designsystem forside billede" class="d-none d-lg-inline-block">
-        </div>
+    <div class="row py-lg-9">
         <div class="col-12 col-lg-7">
-            <h2>Kodefrihed under ansvar</h2>
+            <h2 class="h3 mt-0">Kodefrihed under ansvar</h2>
             <p>Vi har bestræbt os på at lave et designsystem, der er let at anvende og kode med, men vi vil ikke tvinge nogen væk fra deres favorit (JavaScript) framework. Sålænge det visuelle design består som beskrevet i systemet, så er du velkommen til at udnytte de teknologier du finder bedst, men giv vores kode et kig, den er lige til at gå til.</p>
             <p>
               <a href="/dkfds-docs/omdesignsystemet/tiludviklere/"> 
@@ -88,9 +85,12 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
               </a>
             </p>
         </div>
+        <div class="col-12 col-lg-5 align-self-center">
+            <img src="{{ site.baseurl }}/img/descriptionimages/Kodefrihed_Illustration.svg" alt="Det Fælles Designsystem forside billede" class="d-none d-lg-inline-block">
+        </div>
     </div>
-    <hr class="mt-6 mb-8">
-    <h2>Byg en selvbetjeningsløsning</h2>
+    <hr class="mt-6 mb-9">
+    <h2 class="h3 mt-0">Byg en selvbetjeningsløsning</h2>
     <div class="row">
       <div class="col-12 col-md-4">
         <div class="demo-img-container demo-img-container--turquoise d-none d-md-flex">
@@ -120,15 +120,8 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <p><a href="/dkfds-docs/eksempler/">Eksempler</a></p>
       </div>
     </div>
-    <!--
-    <hr class="my-6">
-    -->
-    <!--<h2>Selvevaluer om din selvbetjeningsløsnings lever op til designkravene</h2>
-    <p>Selvevaluer om du overholder designsystemet, og se hvilke krav der gælder for selvbetjeningsløsninger, der skal på borger.dk og Virk.</p>
-    <p><a href="/dkfds-docs/krav/">Se om du lever op til kravet om brug af designsystemet</a></p>
-    -->
-    <hr class="my-6">
-    <h2>Deltag i designsystemet</h2>
+    <hr class="my-9">
+    <h2 class="h3 mt-0">Deltag i designsystemet</h2>
     <div class="row">
       <div class="col-12 col-md-4">
         <div class="demo-img-container demo-img-container--violet d-none d-md-flex">
@@ -158,4 +151,9 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         </ul>
       </div>
     </div>
+    <hr class="my-9">
+    <h2 class="h3 mt-0">Release notes</h2>
+    <p>Hold dig opdateret på de seneste versioner.</p>
+    <p><a href="/dkfds-docs/omdesignsystemet/releases/">Release Notes</a></p>
 </div>
+
