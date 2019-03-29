@@ -15,8 +15,12 @@ subcategory: Komponenter
   </button>
   <div id="code-documentation" class="accordion-content">
     <section>
-        <p>Alle cards har en <code>card</code> class. Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde. Du kan frit sammensætte rækkefølge og størrelser af alle områder efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder. </p>
+        <p>Alle cards har en <code>card</code> class.</p>
+        <p>Sæt card til fuld højde ved at tilføje klassen <code>card-align-height</code>.</p>
+        
+        <p>Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde. Du kan frit sammensætte rækkefølge og størrelser af alle områder efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder. </p>
         <p>Hvert område er beskrevet nedenfor.</p> 
+        
         <h2 class="h4">Header</h2>
         <p>Headeren har en <code>.card-header</code> class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.</p>
         <ul>

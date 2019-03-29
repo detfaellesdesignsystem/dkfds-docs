@@ -196,7 +196,7 @@ title: Cards.html
                                 <div class="content">
                                     <div class="row justify-content-center">
                                         <div class="col-12">
-                                            <img src="{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg" alt="">
+                                            <img src="{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg" class="d-block" alt="" />
               </div>
                                         </div>
                                     </div>

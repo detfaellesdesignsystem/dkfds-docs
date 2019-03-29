@@ -53,7 +53,7 @@
         "name": "card5",
         "header": "Header",
         "subheader": "Understøttende tekst",
-        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg\" alt=\"\">"
+        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg\" class=\"d-block\" alt=\"\" />"
       }
     ]
   },
