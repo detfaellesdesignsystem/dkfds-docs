@@ -1373,7 +1373,7 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p&gt;</span>Dette er <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"disabled"</span>
                     <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>et standard link,
-                    disabled<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                    disabled<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>disabled<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -1408,7 +1408,7 @@
             on a dark background.<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>This is a text <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"disabled"</span>
                 <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>disabled link state<span class="nt">&lt;/a&gt;</span>
-            on a dark background.<span class="nt">&lt;/p&gt;</span>
+            on a dark background.<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>disabled<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;&lt;b&gt;</span>This is a 
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
  in bold<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
@@ -1436,6 +1436,8 @@
             <h3 class="h4">Eksternt link</h3>
             <p>Du kan definere et eksternt link i koden ved at sætte klassen <code>icon-link</code> på <code>a</code> elementet. Derudover skal du tilføje SVG ikonet inline: <code>&lt;svg class="icon-svg"&gt;&lt;use xlink:href="#open-in-new"&gt;&lt;/use&gt;&lt;/svg&gt;</code>.</p>
             <p>For at kunne bruge denne metode, husk da at inkludere SVG ikon samlingen i toppen af hver side under <code>&lt;body&gt;</code>.</p>
+            <h3 class="h4">Disabled link</h3>
+            Tilføj tekst til skærmoplæser i linket for at gøre opmærksom på at linket er deaktiveret: <code>&lt;span class="sr-only"&gt;disabled&lt;/span&gt;</code>
         </section>
      </article>
   </div>
