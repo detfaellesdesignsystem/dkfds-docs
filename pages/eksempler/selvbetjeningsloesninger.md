@@ -20,7 +20,6 @@ subnav:
 
 <!-- Løsning 1: Aktindsigt -->
 <h2 id="solution-1">Løsning 1: Aktindsigt</h2>
-<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <div class="row">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
     <a href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-1" title="Aktindsigt, 1. side"><img src="{{ site.baseurl }}/img/examples_pages/aktindsigt/aktindsigt-1.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
@@ -41,7 +40,6 @@ subnav:
 
 <!-- Løsning 2: Børnetilskud -->
 <h2 id="solution-2">Løsning 2: Børnetilskud</h2>
-<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <div class="row">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
     <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt-2" title="Børnetilskud, 1. side: Oversigt med cards"><img src="{{ site.baseurl }}/img/examples_pages/boernetilskud/boernetilskud-oversigt-2.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
@@ -62,7 +60,6 @@ subnav:
 
 <!-- Løsning 3: Erstatningssag -->
 <h2 id="solution-3">Løsning 3: Erstatningssag</h2>
-<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <div class="row">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
     <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-1" title="Erstatningssag, side 1: Oplysninger om afsender"><img src="{{ site.baseurl }}/img/examples_pages/aes/aes1.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
@@ -105,7 +102,6 @@ subnav:
 
 <!-- Løsning 4: Digital flytning -->
 <h2 id="solution-4">Løsning 4: Digital flytning</h2>
-<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <div class="row">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
     <a href="{{ site.baseurl }}/pages/eksempler/digital-flytning/flytning-1" title="Digital flytning, side 1: Oversigt"><img src="{{ site.baseurl }}/img/examples_pages/digital-flytning/flytning-1.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
@@ -129,7 +125,6 @@ subnav:
 
 <!-- Løsning 5: Strategiske virksomhedsalliancer -->
 <h2 id="solution-5">Løsning 5: Strategiske virksomhedsalliancer</h2>
-<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <div class="row">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
     <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1" title="Strategiske virksomhedsalliancer, side 1: Stamdata"><img src="{{ site.baseurl }}/img/examples_pages/strategiske-virksomhedsalliancer/strategiske-virksomhedsalliancer1.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
@@ -150,7 +145,6 @@ subnav:
 
 <!-- Løsning 6: Praktikplads -->
 <!-- <h2 id="solution-6">Løsning 6: Praktikplads</h2>
-<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <div class="row">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
     <a href="{{ site.baseurl }}/pages/eksempler/praktikplads/praktikplads-1"><img src="{{ site.baseurl }}/img/examples_pages/praktikplads.PNG" alt="" style="max-width: 100%; width: 1018px"></a>

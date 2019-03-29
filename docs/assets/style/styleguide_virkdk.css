@@ -1566,7 +1566,7 @@ a {
   a:disabled, a.disabled {
     cursor: not-allowed !important;
     color: #454545 !important;
-    opacity: 0.5; }
+    opacity: 0.3; }
     a:disabled:focus, a.disabled:focus {
       outline: none;
       background-color: transparent; }
@@ -4095,14 +4095,15 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
       border-color: #004993; }
     .button.button-primary:disabled,
     .button.button-primary .disabled {
-      opacity: 0.5;
-      box-shadow: none !important; }
+      opacity: 0.3;
+      box-shadow: none !important;
+      cursor: not-allowed; }
       .button.button-primary:disabled:hover,
       .button.button-primary .disabled:hover {
         color: #ffffff !important;
         background-color: #0059B3 !important;
         border-color: #004993 !important;
-        opacity: 0.5 !important;
+        opacity: 0.3 !important;
         box-shadow: none !important; }
   .button.button-secondary {
     color: #1a1a1a;
@@ -4119,14 +4120,16 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
       border-color: #747474; }
     .button.button-secondary:disabled,
     .button.button-secondary .disabled {
-      opacity: 0.5;
-      box-shadow: none !important; }
+      opacity: 0.3;
+      box-shadow: none !important;
+      cursor: not-allowed;
+      border-color: #BFBFBF !important; }
       .button.button-secondary:disabled:hover,
       .button.button-secondary .disabled:hover {
         color: #1a1a1a !important;
         background-color: #F5F5F5 !important;
         border-color: #BFBFBF !important;
-        opacity: 0.5 !important;
+        opacity: 0.3 !important;
         box-shadow: none !important; }
   .button.button-tertiary {
     border-color: #747474;
@@ -4142,15 +4145,16 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
       background-color: transparent; }
     .button.button-tertiary:disabled,
     .button.button-tertiary .disabled {
-      opacity: 0.5;
-      box-shadow: none !important; }
+      opacity: 0.3;
+      box-shadow: none !important;
+      cursor: not-allowed; }
       .button.button-tertiary:disabled:hover,
       .button.button-tertiary .disabled:hover {
         border-color: #747474 !important;
         background-color: transparent !important;
         color: #1a1a1a;
         font-weight: 400 !important;
-        opacity: 0.5;
+        opacity: 0.3;
         box-shadow: none !important; }
   .button.button-quaternary {
     color: #454545;
@@ -4173,14 +4177,15 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
       border-bottom-color: transparent; }
     .button.button-quaternary:disabled,
     .button.button-quaternary .disabled {
-      opacity: 0.5;
-      box-shadow: none !important; }
+      opacity: 0.3;
+      box-shadow: none !important;
+      cursor: not-allowed; }
       .button.button-quaternary:disabled:hover,
       .button.button-quaternary .disabled:hover {
         color: #454545 !important;
         background-color: transparent !important;
         font-weight: 400 !important;
-        opacity: 0.5 !important;
+        opacity: 0.3 !important;
         box-shadow: none !important; }
     .button.button-quaternary .icon-svg {
       margin-right: 0; }
@@ -4199,14 +4204,15 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
       border-color: #BFBFBF; }
     .button.button-small:disabled,
     .button.button-small .disabled {
-      opacity: 0.5;
-      box-shadow: none !important; }
+      opacity: 0.3;
+      box-shadow: none !important;
+      cursor: not-allowed; }
       .button.button-small:disabled:hover,
       .button.button-small .disabled:hover {
         color: #1a1a1a !important;
         background-color: #F5F5F5 !important;
         border-color: #BFBFBF !important;
-        opacity: 0.5 !important;
+        opacity: 0.3 !important;
         box-shadow: none !important; }
   .button .icon-svg {
     margin-right: 4px;
@@ -7638,11 +7644,11 @@ table.dataTable .overflow-menu .overflow-list li {
   .color-container-large.borger-dark {
     background-color: #233614; }
   .color-container-large.virk-primary {
-    background-color: #067293; }
+    background-color: #0059B3; }
   .color-container-large.virk-medium {
-    background-color: #04556E; }
+    background-color: #004993; }
   .color-container-large.virk-dark {
-    background-color: #033747; }
+    background-color: #003972; }
   .color-container-large.color-positive {
     background-color: #358000; }
   .color-container-large.color-negative {
