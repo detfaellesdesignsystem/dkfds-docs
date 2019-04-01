@@ -4,14 +4,6 @@ layout: landing
 title: Forside
 description: Vær med til at bygge simple og effektive selvbetjeningsløsninger fra et solidt grundlag, der lader dig fokusere på brugervenlighed og brugerinddragelse frem for at diskutere nyt design igen og igen.
 ---
-<div class="container mb-lg-5">
-    <div class="alert alert-info" role="alert" aria-label="Styleguiden er gået i beta">
-      <div class="alert-body">
-          <p class="alert-heading">BETA - lidt endnu</p>
-          <p class="alert-text">Det Fælles Designsystem er lige på trapperne. FDS teamet har desværre været ramt af sygdom, men vi arbejder på højtryk for at kunne fjerne beta-mærket. Det sker i denne uge. Beklager ulejligheden.</p>
-      </div>
-    </div>
-</div>
 <div class="bg-turquoise py-9">
     <div class="container">
         <div class="row">

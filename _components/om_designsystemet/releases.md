@@ -6,6 +6,8 @@ category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for dkfds
 subnav:
+- text: Version 4.0.0
+  href: '#version-400'
 - text: Version 3.0.3
   href: '#version-303'
 - text: Version 3.0.2
@@ -23,15 +25,23 @@ subnav:
 <p>Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link">semantisk versionering<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.</p>
 <p>Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR (y), PATCH (z)</p>
 <ul>
-    <li>MAJOR: Ændringer i kode og/eller design, der ikke er bagud-kompatibelt, som fx erstatning eller sletning af komponenter og ændringer i eksisterende komponenter, der forandrer dem så de ikke længere ligner i kode og/eller design.</li>
+    <li>MAJOR: Ændringer i kode og/eller design, der ikke er bagud-kompatible - som fx erstatning eller sletning af komponenter eller ændringer i kode og/eller design, der medfører bagudrettede tilpasninger ved opdatering til den gældende version.</li>
     <li>MINOR: Tilføjelser, ændringer og ny funktionalitet, der er bagud-kompatible.</li>
-    <li>PATCHE: bagud-kompatible fejlrettelser (bug fixes).</li>
+    <li>PATCH: bagud-kompatible fejlrettelser (bug fixes).</li>
 </ul>
 <h3 class="h4">Release proces</h3>
-<p>Det er et levende designsystem, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens. </p>
+<p>DDesignsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens. </p>
 
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
+
+<h2 class="mb-0" id="version-400">Version 4.0.0</h2>
+<p class="small-text mt-0">01-04-2019</p>
+<ul>
+    <li>Fjernet højde på cards</li>
+    <li>Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.</li>
+    <li>Fikset fokus border på faneblad</li>
+</ul>
 
 <h2 class="mb-0" id="version-303">Version 3.0.3</h2>
 <p class="small-text mt-0">27-03-2019</p>
