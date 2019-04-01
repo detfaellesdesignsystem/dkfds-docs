@@ -3,7 +3,7 @@ permalink: /preview-components/tabnav.html
 layout: iframed 
 title: Tabnav.html
 ---
-<div class="container">
+<div class="container pb-8">
     <p class="h4">Tab navigation</p>
 
     <ul class="tabnav">

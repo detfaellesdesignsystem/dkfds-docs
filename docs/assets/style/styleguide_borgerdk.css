@@ -6823,7 +6823,6 @@ input[type="search"] {
   padding-left: 0;
   list-style-type: none;
   padding: 0;
-  overflow: hidden;
   border-bottom: 1px solid #747474; }
   .tabnav > li {
     margin-bottom: 0;
@@ -6832,13 +6831,11 @@ input[type="search"] {
     .tabnav > li::before {
       content: "" !important;
       padding-right: 0 !important; }
+  @media (min-width: 768px) {
+    .tabnav {
+      display: flex; } }
   .tabnav li {
-    float: none;
-    margin-bottom: 0;
-    float: none; }
-    @media (min-width: 768px) {
-      .tabnav li {
-        float: left; } }
+    margin-bottom: 0; }
     .tabnav li a {
       display: block;
       color: #1a1a1a;
@@ -6855,7 +6852,7 @@ input[type="search"] {
         color: #44831E;
         box-shadow: inset 0px -7px 0px 0px #44831E; }
       .tabnav li a:focus {
-        outline: 0px solid #747474; }
+        outline: 4px solid #747474; }
       .tabnav li a.active {
         color: #44831E;
         box-shadow: inset 0px -7px 0px 0px #44831E;
