@@ -67,7 +67,10 @@ lead: Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller 
     </ul>
     <h2 class="h4">Brugervenlighed</h2>
     <h3 class="h5">Anvendes til</h3>
-    <p>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen. Brug popover til at knytte relaterede informationer, der uddyber/forklarer et element eller en funktion i brugergrænsefladen.</p>
+    <ul>
+        <li>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen.</li>
+        <li>Brug popover til at knytte relaterede informationer, der uddyber/forklarer et element eller en funktion i brugergrænsefladen.</li>
+    </ul>
     <h3 class="h5">Anvendes ikke til</h3>
     <p>Informationer der er essentielle for at brugeren kan gennemføre løsningen, hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst.</p>
     <h3 class="h5">Vejledning</h3>
