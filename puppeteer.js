@@ -5,15 +5,21 @@ var path = 'pdf/'
 var root = "https://detfaellesdesignsystem.github.io/dkfds-docs/";
 var targetRootDir = "pdf/";
 var pdfUrls = ["",
+    "komigang/krav/",
+    "komigang/tiludviklere/",
+    "komigang/tiludviklere/utilities/",
+    "komigang/tiludviklere/eksempler-implementering/",
+    "komigang/tiludviklere/anbefalinger-vaerktoejer/",
+    "komigang/tildesignere/",
+    "komigang/tildesignere/design-selvbetjeningsloesninger/",
+    "komigang/tildesignere/sideopbygning/",
+    "komigang/tilprojekteledere/",
+    "komigang/tilgaengelighed/",
     "design/farver/",
     "design/typography/",
     "design/grid/",
     "design/ikoner/",
     "design/kanter/",
-    "design/sideopbygning/",
-    "design/visueltdesign/",
-    "design/utility/",
-    "design/uxprincipper/",
     "komponenter/accordions/",
     "komponenter/badges/",
     "komponenter/beskeder/",
@@ -37,10 +43,8 @@ var pdfUrls = ["",
     "udvidelser/selectwoo-multiselect/",
     "udvidelser/pikaday/",
     "omdesignsystemet/",
-    "omdesignsystemet/tilpopl/",
-    "omdesignsystemet/tiludviklere/",
-    "omdesignsystemet/anbefalingerudvikling/",
     "omdesignsystemet/gennemgang/",
+    "omdesignsystemet/visuelledesign/",
     "omdesignsystemet/releases/",
     "privatlivspolitik/"
 ];
@@ -63,7 +67,7 @@ var exampleUrls = [
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'networkidle2'});
         await page.setViewport({width: resWidth, height: resHeight});
-        await page.emulateMedia('screen');
+        await page.emulateMedia('screen')
         await page.evaluate(() => {
             var buttons = document.querySelectorAll('.accordion-button');
             for(var i = 0; i < buttons.length; i++){
@@ -79,7 +83,7 @@ var exampleUrls = [
         });
 
         if(pdfUrls[i] != "") {
-            var filename = pdfUrls[i].replace('/', '-');
+            var filename = pdfUrls[i].replace(/\//g, '-');
             filename = filename.substring(0, filename.length - 1);
         } else{
             filename = "frontpage";
@@ -120,7 +124,7 @@ var exampleUrls = [
 
         var filename = pdfUrls[i];
         if(pdfUrls[i] != "") {
-            filename = filename.replace('/', '-');
+            filename = filename.replace(/\//g, '-');
             filename = filename.substring(0, filename.length - 1);
         } else{
             filename = "frontpage";
