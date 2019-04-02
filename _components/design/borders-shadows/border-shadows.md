@@ -1,5 +1,7 @@
 ---
-permalink: /design/kanter/
+permalink: /design/borders/
+redirect_from:
+- /design/kanter/
 layout: styleguide
 title: Hjørner, streger, skygger
 category: Design_category
