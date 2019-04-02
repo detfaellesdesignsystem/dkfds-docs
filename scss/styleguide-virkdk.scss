@@ -14,9 +14,9 @@ $image-path:        '~dkfds/src/img';
 $site-image-path:   '~dkfds/src/img';
 $icons-folder-path: '~dkfds/src/img/svg-icons';
 @import '../node_modules/dkfds/src/stylesheets/dkfds-virkdk';
-@import '~dkfds-plugins/src/components/datatables/style/dkfds-datatables-theme';
-@import '~dkfds-plugins/src/components/selectwoo/style/dkfds-selectwoo-theme';
-@import '~dkfds-plugins/src/components/pikaday/style/dkfds-pikaday-theme';
+@import '~dkfds-plugins/src/components/datatables/dkfds-datatables-theme';
+@import '~dkfds-plugins/src/components/selectwoo/dkfds-selectwoo-theme';
+@import '~dkfds-plugins/src/components/pikaday/dkfds-pikaday-theme';
 @import 'styleguide-base';
 
 .is-neutral{ display:none }

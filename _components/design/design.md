@@ -48,5 +48,13 @@ lead: Styling-elementerne er de mindste byggesten i systemet. Alle større kompo
             <p><a href="/dkfds-docs/design/ikoner/">Ikoner</a></p>
         </div>
     </div>
+    <div class="col-12 col-md-4">
+        <div class="demo-component-box">
+            <a href="/dkfds-docs/design/logoer/" class="demo-component-box__img design-box">
+                <img src="{{ site.baseurl }}/img/componenticons/Logo.svg" alt="">
+            </a>
+            <p><a href="/dkfds-docs/design/logoer/">Logoer</a></p>
+        </div>
+    </div>
 </div>
 
