@@ -12,7 +12,8 @@ title: Line_length.html
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <p class="demo-typesetting">Svarer til ca 75 tegn på desktop.</p>
+            <p class="demo-typesetting">Svarer til ca 75 tegn på desktop.
+            </p>
 
             <p class="h5">Linjelængde for manchettekst (font-lead)-
                 Desktop</p>

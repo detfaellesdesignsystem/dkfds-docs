@@ -9,7 +9,8 @@ title: Pikaday.html
             <div class="date-group mt-3">
                 <div class="form-group form-group-year ">
                     <button class="button button-calendar"> unstyled
-                        button-open-calendar js-calendar-datepicker</button>
+                        button-open-calendar
+                        js-calendar-datepicker</button>
                 </div>
             </div>
         </div>

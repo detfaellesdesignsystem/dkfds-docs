@@ -7,7 +7,8 @@ title: Datatables--selectable.html
     <div class="row">
         <div class="col-12">
             <p class="form-label">Selectable row</p>
-            <table id="js-datatable-example-selectable" class="table table--zebra w-percent-100">
+            <table id="js-datatable-example-selectable"
+                class="table table--zebra w-percent-100">
                 <thead>
                     <tr>
                         <th></th>

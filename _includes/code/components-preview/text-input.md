@@ -16,20 +16,23 @@ title: Text-input.html
     </div>
 
     <div class="form-group">
-        <label class="form-label " for="input-focus">Inputfelt i fokus</label>
+        <label class="form-label " for="input-focus">Inputfelt i
+            fokus</label>
 
         <input class="form-input  focus " placeholder="" id="input-focus"
             value="" name="input-focus" type="text">
     </div>
 
     <div class="form-group form-error">
-        <label class="form-label " for="form-error">Inputfelt med fejl</label>
+        <label class="form-label " for="form-error">Inputfelt med
+            fejl</label>
         <span class="form-hint" id="input-hint-message-form-error">Fx
             12345678</span>
         <span class="form-error-message" id="form-error-message-form-error"
             role="alert">Hjælpsom fejlbesked</span>
-        <input class="form-input   " placeholder="" id="form-error" value=""
-            name="form-error" type="text" aria-describedby="form-error-message-form-error"
+        <input class="form-input   " placeholder="" id="form-error"
+            value="" name="form-error" type="text"
+            aria-describedby="form-error-message-form-error"
             aria-describedby="input-hint-message-form-error">
     </div>
 
@@ -43,7 +46,8 @@ title: Text-input.html
 
     <div class="form-group">
         <label class="form-label " for="input-optional">Inputfelt som er
-            valgfrit<span class="weight-normal"> (frivilligt)</span></label>
+            valgfrit<span class="weight-normal">
+                (frivilligt)</span></label>
 
         <input class="form-input   " placeholder="" id="input-optional"
             value="" name="" type="text">

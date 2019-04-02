@@ -8,15 +8,17 @@ title: Example-boernetilskud-ansoegning-2.html
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem" aria-label="logo link"
-                class="logo"></a>
-            <button class="button button-secondary button-menu-open js-menu-open ml-auto"
+            <a href="javascript:void(0);" title="Hjem"
+                aria-label="logo link" class="logo"></a>
+            <button
+                class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><b class="username">Christian Emil Vestergaard Christiansen</b>
+                <p class="user">
+                    <b class="username">Christian Emil Vestergaard Christiansen</b>
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
@@ -50,7 +52,8 @@ title: Example-boernetilskud-ansoegning-2.html
     <div class="overlay"></div>
     <nav role="navigation" class=" nav">
         <!-- collapsible-->
-        <button class="button button-tertiary button-menu-close js-menu-close"
+        <button
+            class="button button-tertiary button-menu-close js-menu-close"
             title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
 
         <!-- 3: Main navigation-->
@@ -60,20 +63,23 @@ title: Example-boernetilskud-ansoegning-2.html
                 <ul class="nav-primary">
                     <li>
                         <div class="overflow-menu">
-                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
+                            <button
+                                class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
                                 data-js-target="#headeroverflow1"
                                 aria-haspopup="true" aria-expanded="false">
                                 <span>Oversigt</span>
                             </button>
-                            <div class="overflow-menu-inner" id="headeroverflow1"
-                                aria-hidden="true">
+                            <div class="overflow-menu-inner"
+                                id="headeroverflow1" aria-hidden="true">
                                 <ul class="overflow-list">
                                     <li>
-                                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt">Overssigtsside
+                                        <a
+                                            href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt">Overssigtsside
                                             som liste</a>
                                     </li>
                                     <li>
-                                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt-2">Oversigt
+                                        <a
+                                            href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt-2">Oversigt
                                             med cards</a>
                                     </li>
                                 </ul>
@@ -86,28 +92,33 @@ title: Example-boernetilskud-ansoegning-2.html
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Kom godt i gang">
+                        <a href="#" class="nav-link"
+                            title="Kom godt i gang">
                             <span>Udbetalinger</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="#" class="nav-link"
+                            title="Fællesoffentlige krav">
                             <span>Sager</span>
                         </a>
                     </li>
                     <li>
                         <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1"
-                            class="nav-link current" title="Fællesoffentlige krav">
+                            class="nav-link current"
+                            title="Fællesoffentlige krav">
                             <span>Ansøgninger</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="#" class="nav-link"
+                            title="Fællesoffentlige krav">
                             <span>Ændringer</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="#" class="nav-link"
+                            title="Fællesoffentlige krav">
                             <span>Dokumentation</span>
                         </a>
                     </li>
@@ -117,7 +128,8 @@ title: Example-boernetilskud-ansoegning-2.html
         <!-- 3: Main navigation end-->
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b></p>
+            <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
+            </p>
             <a href="#" class="button button-secondary button-signout">
                 Log ud
             </a>
@@ -126,7 +138,8 @@ title: Example-boernetilskud-ansoegning-2.html
         <div class="solution-info-mobile">
             <p><b>Erhvervsministeriet</b></p>
             <p><button class="button-unstyled button-contact"
-                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button></p>
+                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+            </p>
         </div>
 
     </nav> <!-- collapsible nav end-->
@@ -135,17 +148,20 @@ title: Example-boernetilskud-ansoegning-2.html
 <main class="container page-container">
 
     <div class="overflow-menu  overflow-menu--open-right ">
-        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
-            aria-haspopup="true" aria-expanded="false">
+        <button class="button-overflow-menu js-dropdown "
+            data-js-target="#overflow_steps" aria-haspopup="true"
+            aria-expanded="false">
             Trin 2 af 6
             <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
             <span class="sr-only">Åbner overflow menu</span>
         </button>
-        <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
+        <div class="overflow-menu-inner" id="overflow_steps"
+            aria-hidden="true">
 
             <ul class='sidenav-list'>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1'>
+                    <a
+                        href='/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1'>
                         1. Hvilke børn søger du tilskud til?
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -189,13 +205,14 @@ title: Example-boernetilskud-ansoegning-2.html
         <div class="alert alert-info alert--paragraph" role="alert"
             aria-label="Adresse info">
             <div class="alert-body">
-                <p class="alert-heading">For at du kan modtage
-                    børnetilskud til enlige, skal du være enlig forsørger</p>
+                <p class="alert-heading">For at du kan modtage børnetilskud
+                    til enlige, skal du være enlig forsørger</p>
                 <p>Du er enlig forsørger, når du ikke får økonomisk og
                     praktisk hjælp fra en anden person over 18 år, som du
                     kan blive gift med.</p>
                 <a class="icon-link" href='#'>Læs mere om, hvornår du er
-                    enlig forsøger på borger.dk/enlig<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
+                    enlig forsøger på
+                    borger.dk/enlig<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
             </div>
         </div>
         <div class="mt-7">
@@ -205,29 +222,41 @@ title: Example-boernetilskud-ansoegning-2.html
                     <label class="form-label icon-link">Jeg blev eller
                         bliver enlig:</label>
                     <span class="form-hint"></span>
-                    <span class="form-error-message" id="form-error-message-input-error"
+                    <span class="form-error-message"
+                        id="form-error-message-input-error"
                         role="alert"></span>
                     <div class="date-group js-calendar-group mt-3">
                         <div class="form-group form-group-day">
-                            <label class="form-label" for="date_of_day_2">Dato</label>
+                            <label class="form-label"
+                                for="date_of_day_2">Dato</label>
                             <input class="form-input js-calendar-day-input"
-                                id="date_of_day_2" type="tel" min="1" max="31"
-                                maxlength="2" pattern="^[0-9]{0,2}$"
-                                data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på månenden som tal">
+                                id="date_of_day_2" type="tel" min="1"
+                                max="31" maxlength="2"
+                                pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indskriv dag på månenden som tal">
                         </div>
                         <div class="form-group form-group-month">
-                            <label class="form-label" for="date_of_month_1">Måned</label>
-                            <input class="form-input js-calendar-month-input"
+                            <label class="form-label"
+                                for="date_of_month_1">Måned</label>
+                            <input
+                                class="form-input js-calendar-month-input"
                                 id="date_of_month_1" type="tel" min="1"
-                                max="12" maxlength="2" pattern="^[0-9]{0,2}$"
-                                data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer">
+                                max="12" maxlength="2"
+                                pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indskriv månedens nummer">
                         </div>
                         <div class="form-group form-group-year ">
-                            <label class="form-label" for="date_of_year_3">År</label>
-                            <input class="form-input js-calendar-year-input"
+                            <label class="form-label"
+                                for="date_of_year_3">År</label>
+                            <input
+                                class="form-input js-calendar-year-input"
                                 for="date_of_year_3" type="tel" min="1900"
-                                max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
-                                data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal">
+                                max="3000" maxlength="4"
+                                pattern="^[0-9]{0,4}$"
+                                data-input-regex="^[0-9]{0,4}$"
+                                title="Indskriv årstal">
                         </div>
                     </div>
                 </div>
@@ -247,11 +276,17 @@ title: Example-boernetilskud-ansoegning-2.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span class="h5 weight-semibold">Eksempelstyrelsen</span></li>
-                    <li><a class="function-link" href="mailto:support@example.dk">support@example.dk</a></li>
+                    <li><span
+                            class="h5 weight-semibold">Eksempelstyrelsen</span>
+                    </li>
+                    <li><a class="function-link"
+                            href="mailto:support@example.dk">support@example.dk</a>
+                    </li>
                     <li><a class="function-link" href="tel:12 34 56 78">12
                             34 56 78</a></li>
-                    <li><a href="#" class="function-link">Tilgængelighedserklæring</a></li>
+                    <li><a href="#"
+                            class="function-link">Tilgængelighedserklæring</a>
+                    </li>
                     <li><a href="#" class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
