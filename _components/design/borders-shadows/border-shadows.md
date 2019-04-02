@@ -10,7 +10,7 @@ description: Hjørner, streger og skygger hjælper med at danne ramme om indhold
 # order: 25
 subnav:
 - text: Hjørner
-  href: '#border-radius'
+  href: '#hjørner'
 - text: Streger
   href: '#streger'
 - text: Skygger
