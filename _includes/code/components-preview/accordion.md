@@ -16,7 +16,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#info"></use></svg>
                 </span>
             </button>
-            <div id="a1" class="accordion-content">
+
+            <div id="a1" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -34,7 +35,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#close-circle-outline"></use></svg>
                 </span>
             </button>
-            <div id="a2" class="accordion-content">
+
+            <div id="a2" aria-hidden="false" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -52,7 +54,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#alert-outline"></use></svg>
                 </span>
             </button>
-            <div id="a3" class="accordion-content">
+
+            <div id="a3" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -70,7 +73,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#acheck-circle-outline"></use></svg>
                 </span>
             </button>
-            <div id="a4" class="accordion-content">
+
+            <div id="a4" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -83,7 +87,8 @@ title: Accordion.html
             <button class="accordion-button" aria-expanded="false"
                 aria-controls="a5">
                 Ut enim ad minim veniam</button>
-            <div id="a5" class="accordion-content">
+
+            <div id="a5" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -108,7 +113,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#info"></use></svg>
                 </span>
             </button>
-            <div id="b-a1" class="accordion-content">
+
+            <div id="b-a1" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -126,7 +132,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#close-circle-outline"></use></svg>
                 </span>
             </button>
-            <div id="b-a2" class="accordion-content">
+
+            <div id="b-a2" aria-hidden="false" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -144,7 +151,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#alert-outline"></use></svg>
                 </span>
             </button>
-            <div id="b-a3" class="accordion-content">
+
+            <div id="b-a3" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -162,7 +170,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#acheck-circle-outline"></use></svg>
                 </span>
             </button>
-            <div id="b-a4" class="accordion-content">
+
+            <div id="b-a4" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -175,7 +184,8 @@ title: Accordion.html
             <button class="accordion-button" aria-expanded="false"
                 aria-controls="b-a5">
                 Ut enim ad minim veniam</button>
-            <div id="b-a5" class="accordion-content">
+
+            <div id="b-a5" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -202,7 +212,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#info"></use></svg>
                 </span>
             </button>
-            <div id="m-a1" class="accordion-content">
+
+            <div id="m-a1" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -220,7 +231,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#close-circle-outline"></use></svg>
                 </span>
             </button>
-            <div id="m-a2" class="accordion-content">
+
+            <div id="m-a2" aria-hidden="false" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -238,7 +250,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#alert-outline"></use></svg>
                 </span>
             </button>
-            <div id="m-a3" class="accordion-content">
+
+            <div id="m-a3" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -256,7 +269,8 @@ title: Accordion.html
                     <svg class="icon-svg " ><use xlink:href="#acheck-circle-outline"></use></svg>
                 </span>
             </button>
-            <div id="m-a4" class="accordion-content">
+
+            <div id="m-a4" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -269,7 +283,8 @@ title: Accordion.html
             <button class="accordion-button" aria-expanded="false"
                 aria-controls="m-a5">
                 Ut enim ad minim veniam</button>
-            <div id="m-a5" class="accordion-content">
+
+            <div id="m-a5" aria-hidden="true" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
