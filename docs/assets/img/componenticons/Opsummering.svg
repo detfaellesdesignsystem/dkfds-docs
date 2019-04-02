@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="148px" viewBox="0 0 128 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Opsummering_With_BG</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer_Ver02" transform="translate(-537.000000, -3691.000000)">
+            <g id="Opsummering" transform="translate(537.000000, 3691.000000)">
+                <rect id="Rectangle-10" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="128" height="148"></rect>
+                <g id="pen-01" transform="translate(105.000000, 25.000000)" fill="#1A1A1A" fill-rule="nonzero">
+                    <path d="M5.0625,2.1875 L0.1875,7.0625 C0.0625,7.1875 0,7.3125 0,7.5 L0,9.375 C0,9.75 0.25,10 0.625,10 L2.5,10 C2.6875,10 2.8125,9.9375 2.9375,9.8125 L7.8125,4.9375 L5.0625,2.1875 Z" id="Path"></path>
+                    <path d="M9.8125,2.0625 L7.9375,0.1875 C7.6875,-0.0625 7.3125,-0.0625 7.0625,0.1875 L5.9375,1.3125 L8.6875,4.0625 L9.8125,2.9375 C10.0625,2.6875 10.0625,2.3125 9.8125,2.0625 Z" id="Path"></path>
+                </g>
+                <g id="pen-01" transform="translate(105.000000, 55.000000)" fill="#1A1A1A" fill-rule="nonzero">
+                    <path d="M5.0625,2.1875 L0.1875,7.0625 C0.0625,7.1875 0,7.3125 0,7.5 L0,9.375 C0,9.75 0.25,10 0.625,10 L2.5,10 C2.6875,10 2.8125,9.9375 2.9375,9.8125 L7.8125,4.9375 L5.0625,2.1875 Z" id="Path"></path>
+                    <path d="M9.8125,2.0625 L7.9375,0.1875 C7.6875,-0.0625 7.3125,-0.0625 7.0625,0.1875 L5.9375,1.3125 L8.6875,4.0625 L9.8125,2.9375 C10.0625,2.6875 10.0625,2.3125 9.8125,2.0625 Z" id="Path"></path>
+                </g>
+                <g id="pen-01" transform="translate(105.000000, 85.000000)" fill="#1A1A1A" fill-rule="nonzero">
+                    <path d="M5.0625,2.1875 L0.1875,7.0625 C0.0625,7.1875 0,7.3125 0,7.5 L0,9.375 C0,9.75 0.25,10 0.625,10 L2.5,10 C2.6875,10 2.8125,9.9375 2.9375,9.8125 L7.8125,4.9375 L5.0625,2.1875 Z" id="Path"></path>
+                    <path d="M9.8125,2.0625 L7.9375,0.1875 C7.6875,-0.0625 7.3125,-0.0625 7.0625,0.1875 L5.9375,1.3125 L8.6875,4.0625 L9.8125,2.9375 C10.0625,2.6875 10.0625,2.3125 9.8125,2.0625 Z" id="Path"></path>
+                </g>
+                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="44" width="128" height="2"></rect>
+                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="74" width="128" height="2"></rect>
+                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="104" width="128" height="2"></rect>
+                <rect id="Button---Virk" fill="#BFBFBF" x="37" y="117" width="54" height="20" rx="4"></rect>
+                <g id="Check-mark" transform="translate(64.500000, 125.000000) rotate(-315.000000) translate(-64.500000, -125.000000) translate(61.000000, 118.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <rect id="Rectangle-15" x="0" y="12" width="7" height="2"></rect>
+                    <rect id="Rectangle-15" transform="translate(6.000000, 7.000000) rotate(-270.000000) translate(-6.000000, -7.000000) " x="-1" y="6" width="14" height="2"></rect>
+                </g>
+                <g id="Group-6" transform="translate(11.000000, 28.000000)" fill="#DCDCDC" fill-rule="nonzero">
+                    <rect id="Rectangle-15" x="0" y="0" width="80" height="4"></rect>
+                </g>
+                <g id="Group-6" transform="translate(11.000000, 58.000000)" fill="#DCDCDC" fill-rule="nonzero">
+                    <rect id="Rectangle-15" x="0" y="0" width="80" height="4"></rect>
+                    <rect id="Rectangle-15" x="0" y="30" width="80" height="4"></rect>
+                </g>
+                <rect id="Rectangle-10" fill="#1A1A1A" fill-rule="nonzero" x="0" y="0" width="128" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

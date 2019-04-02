@@ -359,8 +359,8 @@ th {
 
 .header .portal-header .logo {
   background-image: url(/dkfds-docs/assets/svg/logo_virk.svg);
-  width: 90px;
-  height: 58px; }
+  height: 4.8rem;
+  width: 7.8rem; }
 
 /*! dkfds @version */
 .tippy-touch {
@@ -7147,17 +7147,19 @@ table.dataTable .overflow-menu .overflow-list li {
 /*
   Styling for selectWoo/select2 component.
 */
-.select2 ul, .select2-container ul {
-  margin: 0;
-  list-style-type: none;
-  padding-left: 0; }
-  .select2 ul > li, .select2-container ul > li {
-    margin-bottom: 0;
-    margin-top: 0;
+.select2, .select2-container {
+  z-index: 8000; }
+  .select2 ul, .select2-container ul {
+    margin: 0;
+    list-style-type: none;
     padding-left: 0; }
-    .select2 ul > li::before, .select2-container ul > li::before {
-      content: "" !important;
-      padding-right: 0 !important; }
+    .select2 ul > li, .select2-container ul > li {
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-left: 0; }
+      .select2 ul > li::before, .select2-container ul > li::before {
+        content: "" !important;
+        padding-right: 0 !important; }
 
 .select2 {
   min-height: 40px;
