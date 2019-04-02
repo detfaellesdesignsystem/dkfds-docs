@@ -5011,12 +5011,10 @@ ol {
   margin-top: 40px; }
 
 .page-container {
-  padding-top: 2.4rem;
-  padding-bottom: 5.6rem; }
+  padding-top: 2.4rem; }
   @media (min-width: 768px) {
     .page-container {
-      padding-top: 4rem;
-      padding-bottom: 5.6rem; } }
+      padding-top: 4rem; } }
 
 body {
   display: flex;
@@ -5426,7 +5424,8 @@ footer .h1, footer .h2, footer .h3, footer .h4, footer .h5, footer .h6 {
 footer .footer {
   border-top: 1px solid #747474;
   padding-top: calc(16px - 1px);
-  padding-bottom: calc(16px - 1px); }
+  padding-bottom: calc(16px - 1px);
+  margin-top: 8rem; }
   @media (min-width: 768px) {
     footer .footer {
       padding-bottom: 56px; } }
