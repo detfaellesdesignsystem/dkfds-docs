@@ -1380,7 +1380,7 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p&gt;</span>Link som åbner en <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>ekstern
-                    website<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;</span>
+                    website<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;</span>
             <span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -1394,8 +1394,8 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                    <span class="na">class=</span><span class="s">"function-link"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#printer"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Funktions
-                    link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+                    <span class="na">class=</span><span class="s">"function-link"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">aria-hidden =</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#printer"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Funktionslink<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
@@ -1421,7 +1421,7 @@
             on a dark background.<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>This is a link that goes to an <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span>
                 <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>external
-                website<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;</span>
+                website<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;</span>
             on a dark background.<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;p&gt;</span>This is a text <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"disabled"</span>
                 <span class="na">disabled=</span><span class="s">"disabled"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>disabled link state<span class="nt">&lt;/a&gt;</span>
@@ -1448,8 +1448,9 @@
   <div id="links-docs-tech" aria-hidden="true" class="accordion-content">
      <article>
         <section>
-            <h3 class="h4">Footerlink</h3>
+            <h3 class="h4">Functionslink</h3>
             <p>Du kan definere et footerlink i koden ved at sætte klassen <code>function-link</code>.</p>
+            <p>Bemærk, at <code>aria-hidden="true"</code> bør sættes på ikonet, så det ikke læses af en skærmoplæser.</p>
             <h3 class="h4">Eksternt link</h3>
             <p>Du kan definere et eksternt link i koden ved at sætte klassen <code>icon-link</code> på <code>a</code> elementet. Derudover skal du tilføje SVG ikonet inline: <code>&lt;svg class="icon-svg"&gt;&lt;use xlink:href="#open-in-new"&gt;&lt;/use&gt;&lt;/svg&gt;</code>.</p>
             <p>For at kunne bruge denne metode, husk da at inkludere SVG ikon samlingen i toppen af hver side under <code>&lt;body&gt;</code>.</p>

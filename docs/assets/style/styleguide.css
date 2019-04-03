@@ -4223,8 +4223,9 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
   text-align: left;
   -webkit-font-smoothing: auto;
   color: inherit; }
-  .button-unstyled:hover {
-    background-color: transparent; }
+  .button-unstyled:hover, .button-unstyled:focus {
+    background-color: transparent;
+    color: inherit; }
 
 @media (min-width: 576px) {
   .button + .button {
@@ -5227,8 +5228,9 @@ hr {
   position: relative;
   transition: none;
   border-radius: 3px; }
-  .accordion-button:hover {
-    background-color: transparent; }
+  .accordion-button:hover, .accordion-button:focus {
+    background-color: transparent;
+    color: inherit; }
   .accordion-button:hover {
     background-color: #DCDCDC; }
   .accordion-button h1, .accordion-button .h1,
@@ -5534,7 +5536,7 @@ footer .footer-theme {
       flex-direction: row;
       padding-top: calc(16px - 1px);
       padding-bottom: calc(16px - 1px); }
-    .header .solution-header .solution-heading a {
+    .header .solution-header .solution-heading a, .header .solution-header .solution-heading h1 {
       font-size: 2.8rem;
       line-height: 3.2rem;
       font-weight: 600;
@@ -5542,7 +5544,7 @@ footer .footer-theme {
       text-decoration: none;
       display: inline-block; }
       @media (max-width: 767px) {
-        .header .solution-header .solution-heading a {
+        .header .solution-header .solution-heading a, .header .solution-header .solution-heading h1 {
           font-size: 2.2rem;
           line-height: 2.4rem; } }
     .header .solution-header .solution-info {
@@ -6050,8 +6052,9 @@ footer .footer-theme {
     text-align: left;
     -webkit-font-smoothing: auto;
     color: inherit; }
-    .nav-primary .overflow-menu .overflow-menu-inner button:hover {
-      background-color: transparent; }
+    .nav-primary .overflow-menu .overflow-menu-inner button:hover, .nav-primary .overflow-menu .overflow-menu-inner button:focus {
+      background-color: transparent;
+      color: inherit; }
   .nav-primary .overflow-menu .overflow-menu-inner a {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -6681,8 +6684,9 @@ input[type="search"] {
     align-items: center;
     justify-content: center;
     color: #1a1a1a; }
-    .overflow-menu .button-overflow-menu:hover {
-      background-color: transparent; }
+    .overflow-menu .button-overflow-menu:hover, .overflow-menu .button-overflow-menu:focus {
+      background-color: transparent;
+      color: inherit; }
     .overflow-menu .button-overflow-menu:hover {
       text-decoration: underline; }
     .overflow-menu .button-overflow-menu:after, .overflow-menu .button-overflow-menu:before {
@@ -6748,8 +6752,9 @@ input[type="search"] {
       text-align: left;
       -webkit-font-smoothing: auto;
       color: inherit; }
-      .overflow-menu .overflow-list button:hover {
-        background-color: transparent; }
+      .overflow-menu .overflow-list button:hover, .overflow-menu .overflow-list button:focus {
+        background-color: transparent;
+        color: inherit; }
     .overflow-menu .overflow-list a {
       font-size: 1.6rem;
       line-height: 2.4rem;
