@@ -13,7 +13,7 @@ title: Footer-complex.html
                             <h1 class="h5 mb-4" title="Links"
                                 aria-label="Links">Links</h1>
 
-                            <ul class=" mt-0 nobullet-list">
+                            <ul class=" mt-0 mb-0 nobullet-list">
 
                                 <li><a class="function-link" href="#">Læs
                                         lidt om dit</a></li>
@@ -37,7 +37,7 @@ title: Footer-complex.html
                             <h1 class="h5 mb-4" title="Links"
                                 aria-label="Links">Links</h1>
 
-                            <ul class=" mt-0 nobullet-list">
+                            <ul class=" mt-0 mb-0 nobullet-list">
 
                                 <li><a class="function-link" href="#">Læs
                                         lidt om dit</a></li>
@@ -61,7 +61,7 @@ title: Footer-complex.html
                             <h1 class="h5 mb-4" title="Links"
                                 aria-label="Links">Links</h1>
 
-                            <ul class=" mt-0 nobullet-list">
+                            <ul class=" mt-0 mb-0 nobullet-list">
 
                                 <li><a class="function-link" href="#">Læs
                                         lidt om dit</a></li>
@@ -85,7 +85,7 @@ title: Footer-complex.html
                             <h1 class="h5 mb-4" title="Links"
                                 aria-label="Links">Links</h1>
 
-                            <ul class=" mt-0 nobullet-list">
+                            <ul class=" mt-0 mb-0 nobullet-list">
 
                                 <li><a class="function-link" href="#">Læs
                                         lidt om dit</a></li>
@@ -107,7 +107,7 @@ title: Footer-complex.html
                     <section>
                         <div class=" align-text-left ">
 
-                            <ul class=" mt-0 nobullet-list inline-list ">
+                            <ul class=" mt-4 nobullet-list inline-list ">
 
                                 <li><span
                                         class="h5 weight-semibold">Digitaliseringsstyrelsen</span>

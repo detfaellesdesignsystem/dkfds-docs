@@ -7,7 +7,7 @@
       "lists": [
         {
           "inline_list": false,
-          "listclass": "mt-0 nobullet-list",
+          "listclass": "mt-0 mb-0 nobullet-list",
           "listitems": [
             {"content": "<a class=\"function-link\" href=\"#\">Læs lidt om dit</a>"},
             {"content": "<a class=\"function-link\" href=\"#\">Her er også lidt om dat</a>"},
@@ -23,7 +23,7 @@
       "lists": [
         {
           "inline_list": false,
-          "listclass": "mt-0 nobullet-list",
+          "listclass": "mt-0 mb-0 nobullet-list",
           "listitems": [
             {"content": "<a class=\"function-link\" href=\"#\">Læs lidt om dit</a>"},
             {"content": "<a class=\"function-link\" href=\"#\">Her er også lidt om dat</a>"},
@@ -39,7 +39,7 @@
       "lists": [
         {
           "inline_list": false,
-          "listclass": "mt-0 nobullet-list",
+          "listclass": "mt-0 mb-0 nobullet-list",
           "listitems": [
             {"content": "<a class=\"function-link\" href=\"#\">Læs lidt om dit</a>"},
             {"content": "<a class=\"function-link\" href=\"#\">Her er også lidt om dat</a>"},
@@ -55,7 +55,7 @@
       "lists": [
         {
           "inline_list": false,
-          "listclass": "mt-0 nobullet-list",
+          "listclass": "mt-0 mb-0 nobullet-list",
           "listitems": [
             {"content": "<a class=\"function-link\" href=\"#\">Læs lidt om dit</a>"},
             {"content": "<a class=\"function-link\" href=\"#\">Her er også lidt om dat</a>"},
@@ -70,7 +70,7 @@
       "lists": [
         {
           "inline_list": true,
-          "listclass": "mt-0 nobullet-list",
+          "listclass": "mt-4 nobullet-list",
           "listitems": [
             {"content": "<span class=\"h5 weight-semibold\">Digitaliseringsstyrelsen</span>"},
             {"content": "<a href=\"mailto:support@myndighed.dk\" class=\"function-link\" title=\"Skriv til Digitaliseringsstyrelsen\">support@myndighed.dk</a>"},
