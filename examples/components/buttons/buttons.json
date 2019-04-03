@@ -119,6 +119,17 @@
             "icon": "refresh"
           }
         ]
+      },
+      {
+        "label": "Knap som ikon",
+        "items": [
+          {
+            "text": "",
+            "class": "unstyled",
+            "icon": "delete-outline",
+            "sronly": "Slet"
+          }
+        ]
       }
     ]
   }

@@ -72,7 +72,7 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p>Link som åbner en <a href="" class="icon-link">ekstern
-                    website<svg class="icon-svg " ><use xlink:href="#open-in-new"></use></svg></a>
+                    website<svg class="icon-svg "  ><use xlink:href="#open-in-new"></use></svg></a>
             </p>
         </div>
     </div>
@@ -86,8 +86,8 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p><a href="javascript:void(0);"
-                    class="function-link"><svg class="icon-svg " ><use xlink:href="#printer"></use></svg>Funktions
-                    link</a></p>
+                    class="function-link"><svg class="icon-svg "  aria-hidden ="true"><use xlink:href="#printer"></use></svg>Funktionslink</a>
+            </p>
         </div>
     </div>
 
@@ -113,7 +113,7 @@ title: Links.html
             on a dark background.</p>
         <p>This is a link that goes to an <a href=""
                 class="icon-link">external
-                website<svg class="icon-svg " ><use xlink:href="#open-in-new"></use></svg></a>
+                website<svg class="icon-svg "  ><use xlink:href="#open-in-new"></use></svg></a>
             on a dark background.</p>
         <p>This is a text <a href="javascript:void(0);" class="disabled"
                 disabled="disabled" tabindex="-1">disabled link state</a>

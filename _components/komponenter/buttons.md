@@ -17,12 +17,19 @@ description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke
   </button>
   <div id="code-documentation" class="accordion-content">
     <section>
+      <h2 class="h4">Klasser</h2>
       <p>Knap styling kan både sættes på &lt;button&gt; og &lt;a&gt; tags ved at tilføje følgende klasser:</p>
       <ul>
         <li><code>button button-primary</code></li>
         <li><code>button button-secondary</code></li>
         <li><code>button button-tertiary</code></li>
+        <li><code>button button-quaternary</code></li>
+        <li><code>button button-unstyled</code></li>
       </ul>
+      <h3 class="h5">button-quaternary</h3>
+      <p><code>button button-quaternary</code> bruges kun som Tilbage link - inklusiv icon.</p>
+      <h3 class="h5">button-unstyled</h3>
+      <p><code>button button-unstyled</code> bruges i de fælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmoplæsere. Fx <code>&lt;span class="sr-only"&gt;Slet&lt;/span&gt;</code>.</p>
     </section>
   </div>
 </div>

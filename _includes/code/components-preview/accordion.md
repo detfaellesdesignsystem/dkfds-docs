@@ -13,7 +13,7 @@ title: Accordion.html
                 Lorem ipsum dolor sit amet
                 <span class="accordion-icon ">
                     <span class="icon_text">Information</span>
-                    <svg class="icon-svg " ><use xlink:href="#info"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#info"></use></svg>
                 </span>
             </button>
 
@@ -32,7 +32,7 @@ title: Accordion.html
                 Consectetur adipiscing elit
                 <span class="accordion-icon ">
                     <span class="icon_text">Fejl</span>
-                    <svg class="icon-svg " ><use xlink:href="#close-circle-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#close-circle-outline"></use></svg>
                 </span>
             </button>
 
@@ -51,7 +51,7 @@ title: Accordion.html
                 Sed do eiusmod tempor
                 <span class="accordion-icon ">
                     <span class="icon_text">Advarsel</span>
-                    <svg class="icon-svg " ><use xlink:href="#alert-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#alert-outline"></use></svg>
                 </span>
             </button>
 
@@ -70,7 +70,7 @@ title: Accordion.html
                 Labore et dolore magna
                 <span class="accordion-icon ">
                     <span class="icon_text">Success</span>
-                    <svg class="icon-svg " ><use xlink:href="#acheck-circle-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#acheck-circle-outline"></use></svg>
                 </span>
             </button>
 
@@ -110,7 +110,7 @@ title: Accordion.html
                 Lorem ipsum dolor sit amet
                 <span class="accordion-icon ">
                     <span class="icon_text">Information</span>
-                    <svg class="icon-svg " ><use xlink:href="#info"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#info"></use></svg>
                 </span>
             </button>
 
@@ -129,7 +129,7 @@ title: Accordion.html
                 Consectetur adipiscing elit
                 <span class="accordion-icon ">
                     <span class="icon_text">Fejl</span>
-                    <svg class="icon-svg " ><use xlink:href="#close-circle-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#close-circle-outline"></use></svg>
                 </span>
             </button>
 
@@ -148,7 +148,7 @@ title: Accordion.html
                 Sed do eiusmod tempor
                 <span class="accordion-icon ">
                     <span class="icon_text">Advarsel</span>
-                    <svg class="icon-svg " ><use xlink:href="#alert-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#alert-outline"></use></svg>
                 </span>
             </button>
 
@@ -167,7 +167,7 @@ title: Accordion.html
                 Labore et dolore magna
                 <span class="accordion-icon ">
                     <span class="icon_text">Success</span>
-                    <svg class="icon-svg " ><use xlink:href="#acheck-circle-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#acheck-circle-outline"></use></svg>
                 </span>
             </button>
 
@@ -209,7 +209,7 @@ title: Accordion.html
                 Lorem ipsum dolor sit amet
                 <span class="accordion-icon ">
                     <span class="icon_text">Information</span>
-                    <svg class="icon-svg " ><use xlink:href="#info"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#info"></use></svg>
                 </span>
             </button>
 
@@ -228,7 +228,7 @@ title: Accordion.html
                 Consectetur adipiscing elit
                 <span class="accordion-icon ">
                     <span class="icon_text">Fejl</span>
-                    <svg class="icon-svg " ><use xlink:href="#close-circle-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#close-circle-outline"></use></svg>
                 </span>
             </button>
 
@@ -247,7 +247,7 @@ title: Accordion.html
                 Sed do eiusmod tempor
                 <span class="accordion-icon ">
                     <span class="icon_text">Advarsel</span>
-                    <svg class="icon-svg " ><use xlink:href="#alert-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#alert-outline"></use></svg>
                 </span>
             </button>
 
@@ -266,7 +266,7 @@ title: Accordion.html
                 Labore et dolore magna
                 <span class="accordion-icon ">
                     <span class="icon_text">Success</span>
-                    <svg class="icon-svg " ><use xlink:href="#acheck-circle-outline"></use></svg>
+                    <svg class="icon-svg "  ><use xlink:href="#acheck-circle-outline"></use></svg>
                 </span>
             </button>
 

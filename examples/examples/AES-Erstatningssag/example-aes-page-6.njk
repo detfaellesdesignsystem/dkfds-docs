@@ -133,7 +133,12 @@
                 <td class="mt-4 mt-lg-0">
                 {{textinput("id-pagenumber", "Angiv sidetal", "(frivilligt)", "input-width-xs", "", "Sidetal", "sr-only", false, "")}}
                 </td>
-                <td class="align-text-md-right mt-4 mt-lg-0"><a href="#" class="function-link link-right" title="Slet fil">{{ icon_svg('delete-outline')}}</a></td>
+                <td class="align-text-md-right mt-4 mt-lg-0">
+                    <button class="button button-unstyled">
+                        <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                        <span class="sr-only">Slet</span>
+                    </button>
+                </td>
             </tr>
         </tbody>
     </table>
