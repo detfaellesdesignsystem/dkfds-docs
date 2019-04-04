@@ -55,4 +55,6 @@ title: Buttons.html
     <button class="button button-unstyled">
         <svg class="icon-svg "  aria-hidden ="true"><use xlink:href="#delete-outline"></use></svg>
         <span class="sr-only">Slet</span></button>
+    <p class="h5">Vedhæft fil</p>
+    <input type="file" id="file" name="file" />
 </div>

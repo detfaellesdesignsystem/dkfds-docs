@@ -30,6 +30,8 @@ description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke
       <p><code>button button-quaternary</code> bruges kun som Tilbage link - inklusiv icon.</p>
       <h3 class="h5">button-unstyled</h3>
       <p><code>button button-unstyled</code> bruges i de fælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx <code>&lt;span class="sr-only"&gt;Slet&lt;/span&gt;</code>.</p>
+      <h3 class="h5">Vedhæft fil</h3>
+      <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/dkfds-docs/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
     </section>
   </div>
 </div>
