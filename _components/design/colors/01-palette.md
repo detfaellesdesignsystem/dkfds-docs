@@ -47,7 +47,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-large virk-primary"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#067293</p>
+        <p class="code-color-hex">#0059B3</p>
         <p class="code-color-variable">$primary-color</p>
       </div>
     </div>
@@ -56,7 +56,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-large virk-medium"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#04556E</p>
+        <p class="code-color-hex">#004993</p>
         <p class="code-color-variable">$primary-medium </p>
       </div>
     </div>
@@ -65,7 +65,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-large virk-dark"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#033747</p>
+        <p class="code-color-hex">#003972</p>
         <p class="code-color-variable">$primary-dark </p>
       </div>
     </div>
