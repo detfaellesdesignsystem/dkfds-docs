@@ -10,8 +10,7 @@ title: Labels.html
             <label class="form-label">Dette er en feltoverskrift</label>
         </div>
         <div class="col-12 col-md-6">
-            <pre>font-family:
-                "IBMPlexSans","system"<br>font-weight:600<br>font-size:1.6rem<br>line-height:2.4rem<br>margin:1.6rem 0 1.6rem 0</pre>
+            <pre>font-family: "IBMPlexSans","system"<br>font-weight:600<br>font-size:1.6rem<br>line-height:2.4rem<br>margin:1.6rem 0 1.6rem 0</pre>
         </div>
     </div>
     <div class="row">
@@ -26,8 +25,7 @@ title: Labels.html
             </table>
         </div>
         <div class="col-12 col-md-6">
-            <pre>font-family:
-                "IBMPlexSans","system"<br>font-weight:600<br>font-size:1.6rem<br>line-height:2.4rem<br>margin:1.6rem 0 1.6rem 0</pre>
+            <pre>font-family: "IBMPlexSans","system"<br>font-weight:600<br>font-size:1.6rem<br>line-height:2.4rem<br>margin:1.6rem 0 1.6rem 0</pre>
         </div>
     </div>
 </div>
