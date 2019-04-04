@@ -4,17 +4,22 @@ layout: styleguide
 title: Logoer
 category: Design_category
 lead: Din selvbetjeningsløsning er del af en større helhed på borger.dk og Virk, dette kommunikeres bl.a. via portalens logo i headeren.
+subnav:
+- text: Retningslinjer for logo i headeren
+  href: '#header'
+- text: Retningslinjer for logo i footeren
+  href: '#footer'
 ---
 
 <p>Du kan placere dit myndighedslogo i footeren, hvis du har behov for det.</p>
 <h2>SVG-filer til download</h2>
 <img src="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg" alt="" height="48px" />
 <p>Skal din løsning på borger.dk skal der være et borger.dk logo i headeren.</p>
-<p><a href="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg">Download borger.dks logo (svg-fil)</a></p>
+<p><a href="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg" download>Download borger.dks logo (svg-fil)</a></p>
 <img src="{{ site.baseurl }}/assets/svg/logo_virk.svg" alt="" height="48px" />
 <p>Skal din løsning på Virk skal der være et Virk logo i headeren.</p>
-<p><a href="{{ site.baseurl }}/assets/svg/logo_virk.svg">Download Virks logo (svg-fil)</a></p>
-<h2>Retningslinjer for logo i headeren</h2>
+<p><a href="{{ site.baseurl }}/assets/svg/logo_virk.svg" download>Download Virks logo (svg-fil)</a></p>
+<h2 id="header">Retningslinjer for logo i headeren</h2>
 <h3>Begrænsninger</h3>
 <ul>
     <li>Format: SVG</li>
@@ -40,7 +45,7 @@ lead: Din selvbetjeningsløsning er del af en større helhed på borger.dk og Vi
     <li><a href="https://www.nngroup.com/videos/logo-placement/" class="icon-link">Logo Placement Affects Web Navigation and Brand Recall<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="https://www.nngroup.com/articles/homepage-links/" class="icon-link">Homepage Links Remain a Necessity<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
-<h2>Retningslinjer for logo i footeren</h2>
+<h2 id="footer">Retningslinjer for logo i footeren</h2>
 <p>Gør kun brug af muligheden for at placere et myndighedslogo i footeren, hvis det understøtter brugerens gennemførelse af selvbetjeningsløsningen</p>
 <h3>Størrelse</h3>
 <ul>
