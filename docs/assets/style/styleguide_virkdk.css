@@ -4043,6 +4043,26 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
   .d-xl-inline-flex {
     display: inline-flex !important; } }
 
+@media print {
+  .d-print-none {
+    display: none !important; }
+  .d-print-inline {
+    display: inline !important; }
+  .d-print-inline-block {
+    display: inline-block !important; }
+  .d-print-block {
+    display: block !important; }
+  .d-print-table {
+    display: table !important; }
+  .d-print-table-row {
+    display: table-row !important; }
+  .d-print-table-cell {
+    display: table-cell !important; }
+  .d-print-flex {
+    display: flex !important; }
+  .d-print-inline-flex {
+    display: inline-flex !important; } }
+
 .section + .section {
   margin-top: 24px; }
 
@@ -6344,7 +6364,7 @@ a.skipnav {
   z-index: 8000;
   max-width: none;
   outline-offset: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     a.skipnav:focus {
       background-color: #ffffff;
       left: 0;
