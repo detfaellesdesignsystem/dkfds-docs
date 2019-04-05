@@ -18,6 +18,8 @@ subnav:
   href: '#brødtekst-body-copy'
 - text: Links
   href: '#links'
+- text: Skip link
+  href: '#skip-link'
 - text: Lister
   href: '#lister'
 - text: Stor tekst (display text)
