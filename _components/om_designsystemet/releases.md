@@ -6,6 +6,8 @@ category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for dkfds
 subnav:
+- text: Version 4.0.1
+  href: '#version-401'
 - text: Version 4.0.0
   href: '#version-400'
 - text: Version 3.0.3
@@ -34,6 +36,19 @@ subnav:
 
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
+
+<h2 class="mb-0" id="version-401">Version 4.0.1</h2>
+<p class="small-text mt-0">08-04-2019</p>
+<ul>
+    <li>Opdateret skip link udseende</li>
+    <li>Ændret styling, så a-element i solution-header nu kan være et h1-element</li>
+    <li>Fikset readonly fejl i Internet Explorer</li>
+    <li>Tilpasset footer margin og padding</li>
+    <li>Tilføjet print display css klasser (Fx d-print-none)</li>
+    <li>Tilføjet logo definition</li>
+    <li>Tooltip skriftstørrelse ændret fra 13 til 16px</li>
+    <li>Fikset hover farve på icon knap (button-unstyled)</li>
+</ul>
 
 <h2 class="mb-0" id="version-400">Version 4.0.0</h2>
 <p class="small-text mt-0">01-04-2019</p>
