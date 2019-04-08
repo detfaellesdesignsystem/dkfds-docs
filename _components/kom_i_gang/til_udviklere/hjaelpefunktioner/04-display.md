@@ -110,11 +110,11 @@ Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code>
     </tr>
     <tr>
       <td>Vis element med inline-block display ved print</td>
-      <td><code>d-print-inline</code></td>
+      <td><code>d-print-inline-block</code></td>
     </tr>
     <tr>
       <td>Vis element med block display ved print</td>
-      <td><code>d-print-inline</code></td>
+      <td><code>d-print-block</code></td>
     </tr>
     <tr>
       <td>Vis element som tabel display ved print</td>
