@@ -28,5 +28,6 @@ order: 10
         <li>Placer fejlteksten dér, hvor fejlen forekommer.</li>
         <li>Fejltekst er som udgangspunkt rød. I formulerer skal du indikere fejltekst med en rød streg. Andre steder end i formularer skal du indikere fejltekst med et fejlikon.</li>
     </ul>
+    <p><a href="https://www.nngroup.com/articles/errors-forms-design-guidelines/" class="icon-link">Ti gode råd vedrørende fejlbeskeder i formularer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></p>
   </div>
 </div>

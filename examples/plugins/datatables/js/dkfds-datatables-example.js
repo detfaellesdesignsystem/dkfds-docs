@@ -340,7 +340,7 @@ class datatablesExamples {
                 "orderable": false,
                 "responsivePriority": 1, //do not responsive hide last
                 "render": function ( data, type, full, meta ) {
-                    return  `<button class="button button-unstyled px-3 js-delete-modal-trigger"><svg class="icon-svg"><use xlink:href="#delete-outline"></use></svg></button>`
+                    return  `<button class="button button-unstyled px-3 js-delete-modal-trigger"><svg class="icon-svg" class="aria-hidden"><use xlink:href="#delete-outline"></use></svg><span class="sr-only">Slet</span></button>`
                 }
             }
         ],
@@ -365,8 +365,8 @@ class datatablesExamples {
     /////////////////////////////////
     //Give dummy buttons to top bar (all datatables)
     /////////////////////////////////
-    var downloadButton = "<button class='button button-unstyled mr-4 js-tooltip' tabindex='0' aria-label='Download som PDF' title='Download som PDF'><svg class='icon-svg m-0'><use xlink:href='#download'></use></svg></button>";
-    var settingsButton = "<button class='button button-unstyled mr-4 js-tooltip' tabindex='0' aria-label='Rediger egenskaber' title='Rediger egenskaber'><svg class='icon-svg m-0'><use xlink:href='#settings'></use></svg></button>";
+    var downloadButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Download som PDF'><svg class='icon-svg m-0' aria-hidden=\"true\"><use xlink:href='#download'></use></svg></button>";
+    var settingsButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Rediger egenskaber'><svg class='icon-svg m-0' aria-hidden=\"true\"><use xlink:href='#settings'></use></button>";
     $('.dataTables_filter').prepend(downloadButton).prepend(settingsButton);
     var event = new Event('init-tooltips');
     $('body')[0].dispatchEvent(event);

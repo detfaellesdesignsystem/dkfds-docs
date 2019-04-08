@@ -120,7 +120,12 @@
         {{ checkbox("id-documentation-1", "Oplysninger om varigt mén", "Oplysninger om varigt mén", false, false, "Oplysninger om varigt mén", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check' aria-controls='collapse-check' aria-expanded='false'") }}
         <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
             <div class="py-4">
-                <button href="example-aes-page-8" class="button button-secondary mt-4">Tilføj dokument</button>
+                <form class="form">
+                    <div class="form-group file-input">
+                        <label class="form-label" for="file">Tilføj dokument</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+                </form>
                 <table class="table table--borderless table--compact table--responsive-headers mt-5">
                     <thead>
                         <tr>
@@ -135,13 +140,23 @@
                             <td class="break-word w-percent-md-40">{{ icon_svg('file')}} prn0237452_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype1", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
                             <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-1-expanded", "Kommentar", "(Frivilligt)", "input-width-m", "Kommentar", "sr-only", "") }}</td>
-                            <td class="align-text-md-right mt-4 mt-lg-0"><a href="#" class="function-link link-right" title="Slet fil">{{ icon_svg('delete-outline')}}</a></td>
+                            <td class="align-text-md-right mt-4 mt-lg-0">
+                                <button class="button button-unstyled">
+                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                    <span class="sr-only">Slet</span>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}} sgn1023152_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype2", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
                             <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-2-expanded", "Kommentar", "(Frivilligt)", "input-width-m", "Kommentar", "sr-only", "") }}</td>
-                            <td class="align-text-md-right mt-4 mt-lg-0"><a href="#" class="function-link link-right" title="Slet fil">{{ icon_svg('delete-outline')}}</a></td>
+                            <td class="align-text-md-right mt-4 mt-lg-0">
+                                <button class="button button-unstyled">
+                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                    <span class="sr-only">Slet</span>
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -152,7 +167,12 @@
         {{ checkbox("id-documentation-2", "Oplysninger om tabt erhvervsevne", "Oplysninger om tabt erhvervsevne", false, false, "Oplysninger om tabt erhvervsevne", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'") }}
         <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
             <div class="py-4">
-                <button href="example-aes-page-8" class="button button-secondary mt-4">Tilføj dokument</button>
+                <form class="form">
+                    <div class="form-group file-input">
+                        <label class="form-label" for="file">Tilføj dokument</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+                </form>
                 <table class="table table--borderless table--compact table--responsive-headers mt-5">
                     <thead>
                         <tr>
@@ -167,13 +187,23 @@
                             <td class="break-word w-percent-md-40">{{ icon_svg('file')}} dkf4903283_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype3", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
                             <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-3-expanded", "Kommentar", "(frivilligt)", "input-width-m", "Kommentar", "sr-only", "") }}</td>
-                            <td class="align-text-md-right mt-4 mt-lg-0"><a href="#" class="function-link link-right" title="Slet fil">{{ icon_svg('delete-outline')}}</a></td>
+                            <td class="align-text-md-right mt-4 mt-lg-0">
+                                <button class="button button-unstyled">
+                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                    <span class="sr-only">Slet</span>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}} kfo1127303_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype4", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
                             <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-4-expanded", "Kommentar", "(frivilligt)", "input-width-m", "Kommentar", "sr-only", "") }}</td>
-                            <td class="align-text-md-right mt-4 mt-lg-0"><a href="#" class="function-link link-right" title="Slet fil">{{ icon_svg('delete-outline')}}</a></td>
+                            <td class="align-text-md-right mt-4 mt-lg-0">
+                                <button class="button button-unstyled">
+                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                    <span class="sr-only">Slet</span>
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -184,7 +214,12 @@
         {{ checkbox("id-documentation-3", "Tilføj andre dokumenter", "Tilføj andre dokumenter", false, false, "Tilføj andre dokumenter", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check2' aria-controls='collapse-check2' aria-expanded='false'") }}
         <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
             <div class="py-4">
-                <button href="example-aes-page-8" class="button button-secondary mt-4">Tilføj dokument</button>
+                <form class="form">
+                    <div class="form-group file-input">
+                        <label class="form-label" for="file">Tilføj dokument</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+                </form>
                 <table class="table table--borderless table--compact table--responsive-headers mt-5">
                     <thead>
                         <tr>
@@ -199,13 +234,23 @@
                             <td class="break-word w-percent-md-40">{{ icon_svg('file')}} ohb3428439_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype5", "Vælg dokumentationsype", select_example.options, "", "", "", "sr-only")}}</td>
                             <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-5-expanded", "Kommentar", "(Frivilligt)", "input-width-m", "Kommentar", "sr-only", "") }}</td>
-                            <td class="align-text-md-right mt-4 mt-lg-0"><a href="#" class="function-link link-right" title="Slet fil">{{ icon_svg('delete-outline')}}</a></td>
+                            <td class="align-text-md-right mt-4 mt-lg-0">
+                                <button class="button button-unstyled">
+                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                    <span class="sr-only">Slet</span>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}} sdv5644382_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype6", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
                             <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-6-expanded", "Kommentar", "(Frivilligt)", "input-width-m", "Kommentar", "sr-only", "") }}</td>
-                            <td class="align-text-md-right mt-4 mt-lg-0"><a href="#" class="function-link link-right" title="Slet fil">{{ icon_svg('delete-outline')}}</a></td>
+                            <td class="align-text-md-right mt-4 mt-lg-0">
+                                <button class="button button-unstyled">
+                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                    <span class="sr-only">Slet</span>
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

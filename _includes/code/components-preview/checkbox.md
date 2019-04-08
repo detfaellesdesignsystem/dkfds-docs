@@ -13,7 +13,8 @@ title: Checkbox.html
                 <div class="form-group ">
                     <input id="Unchecked" type="checkbox" name="unchecked"
                         value="unchecked" class="form-checkbox   ">
-                    <label for="Unchecked" class="">Ikke-udfyldt tjekboks</label>
+                    <label for="Unchecked" class="">Ikke-udfyldt
+                        tjekboks</label>
                 </div>
 
             </li>
@@ -42,9 +43,9 @@ title: Checkbox.html
             <li>
 
                 <div class="form-group ">
-                    <input id="disabled-checked" type="checkbox" name="disabled-checked"
-                        value="disabled-checked" class="form-checkbox   "
-                        disabled checked>
+                    <input id="disabled-checked" type="checkbox"
+                        name="disabled-checked" value="disabled-checked"
+                        class="form-checkbox   " disabled checked>
                     <label for="disabled-checked" class="">Inaktiv udfyldt
                         tjekboks (disabled)</label>
                 </div>
@@ -54,8 +55,8 @@ title: Checkbox.html
             <li>
 
                 <div class="form-group ">
-                    <input id="fokus" type="checkbox" name="Focus" value="fokus"
-                        class="form-checkbox focus  ">
+                    <input id="fokus" type="checkbox" name="Focus"
+                        value="fokus" class="form-checkbox focus  ">
                     <label for="fokus" class="">Ikke-udfyldt tjekboks i
                         fokus</label>
                 </div>
@@ -71,10 +72,11 @@ title: Checkbox.html
             <li>
 
                 <div class="form-group ">
-                    <input id="Unchecked-large" type="checkbox" name="unchecked-large"
-                        value="unchecked-large" class="form-checkbox  checkbox-large ">
-                    <label for="Unchecked-large" class="">Stor
-                        ikke-udfyldt tjekboks</label>
+                    <input id="Unchecked-large" type="checkbox"
+                        name="unchecked-large" value="unchecked-large"
+                        class="form-checkbox  checkbox-large ">
+                    <label for="Unchecked-large" class="">Stor ikke-udfyldt
+                        tjekboks</label>
                 </div>
 
             </li>
@@ -82,9 +84,9 @@ title: Checkbox.html
             <li>
 
                 <div class="form-group ">
-                    <input id="Checked-large" type="checkbox" name="checked-large"
-                        value="checked-large" class="form-checkbox  checkbox-large "
-                        checked>
+                    <input id="Checked-large" type="checkbox"
+                        name="checked-large" value="checked-large"
+                        class="form-checkbox  checkbox-large " checked>
                     <label for="Checked-large" class="">Stor udfyldt
                         tjekboks</label>
                 </div>
@@ -94,9 +96,9 @@ title: Checkbox.html
             <li>
 
                 <div class="form-group ">
-                    <input id="disabled-large" type="checkbox" name="disabled-large"
-                        value="disabled-large" class="form-checkbox  checkbox-large "
-                        disabled>
+                    <input id="disabled-large" type="checkbox"
+                        name="disabled-large" value="disabled-large"
+                        class="form-checkbox  checkbox-large " disabled>
                     <label for="disabled-large" class="">Stor inaktiv
                         ikke-udfyldt tjekboks (disabled)</label>
                 </div>
@@ -107,7 +109,8 @@ title: Checkbox.html
 
                 <div class="form-group ">
                     <input id="disabled-checked-large" type="checkbox"
-                        name="disabled-checked-large" value="disabled-checked-large"
+                        name="disabled-checked-large"
+                        value="disabled-checked-large"
                         class="form-checkbox  checkbox-large " disabled
                         checked>
                     <label for="disabled-checked-large" class="">Stor
@@ -119,8 +122,9 @@ title: Checkbox.html
             <li>
 
                 <div class="form-group ">
-                    <input id="fokus-large" type="checkbox" name="fokus-large"
-                        value="fokus-large" class="form-checkbox focus checkbox-large ">
+                    <input id="fokus-large" type="checkbox"
+                        name="fokus-large" value="fokus-large"
+                        class="form-checkbox focus checkbox-large ">
                     <label for="fokus-large" class="">Stor ikke-udfyldt
                         tjekboks i fokus</label>
                 </div>

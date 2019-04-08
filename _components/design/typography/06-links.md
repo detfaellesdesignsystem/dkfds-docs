@@ -18,13 +18,14 @@ order: 06
   <div id="links-docs-tech" aria-hidden="true" class="accordion-content">
      <article>
         <section>
-            <h3 class="h4">Footerlink</h3>
-            <p>Du kan definere et footerlink i koden ved at sætte klassen <code>function-link</code>.</p>
+            <h3 class="h4">Funktionslink</h3>
+            <p>Du kan definere et funktionslink i koden ved at sætte klassen <code>function-link</code>.</p>
+            <p>Bemærk, at <code>aria-hidden="true"</code> bør sættes på ikonet, så det ikke læses af en skærmlæser.</p>
             <h3 class="h4">Eksternt link</h3>
             <p>Du kan definere et eksternt link i koden ved at sætte klassen <code>icon-link</code> på <code>a</code> elementet. Derudover skal du tilføje SVG ikonet inline: <code>&lt;svg class="icon-svg"&gt;&lt;use xlink:href="#open-in-new"&gt;&lt;/use&gt;&lt;/svg&gt;</code>.</p>
             <p>For at kunne bruge denne metode, husk da at inkludere SVG ikon samlingen i toppen af hver side under <code>&lt;body&gt;</code>.</p>
             <h3 class="h4">Disabled link</h3>
-            Tilføj tekst til skærmoplæser i linket for at gøre opmærksom på at linket er deaktiveret: <code>&lt;span class="sr-only"&gt;disabled&lt;/span&gt;</code>
+            Tilføj tekst til skærmlæser i linket for at gøre opmærksom på at linket er deaktiveret: <code>&lt;span class="sr-only"&gt;disabled&lt;/span&gt;</code>
         </section>
      </article>
   </div>

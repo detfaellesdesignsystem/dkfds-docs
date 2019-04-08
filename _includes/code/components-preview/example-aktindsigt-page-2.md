@@ -8,15 +8,17 @@ title: Example-aktindsigt-page-2.html
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem" aria-label="logo link"
-                class="logo"></a>
-            <button class="button button-secondary button-menu-open js-menu-open ml-auto"
+            <a href="javascript:void(0);" title="Hjem"
+                aria-label="logo link" class="logo"></a>
+            <button
+                class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><b class="username">Christian Emil Vestergaard Christiansen</b>
+                <p class="user">
+                    <b class="username">Christian Emil Vestergaard Christiansen</b>
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
@@ -41,8 +43,10 @@ title: Example-aktindsigt-page-2.html
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
-                <p>Support: 72 20 60 00 · <button class="button-unstyled button-contact"
-                        data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg"><use href="#menu-right"></use></svg></button></p>
+                <p>Support: 72 20 60 00 · <button
+                        class="button-unstyled button-contact"
+                        data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg"><use href="#menu-right"></use></svg></button>
+                </p>
 
             </div>
         </div>
@@ -51,11 +55,13 @@ title: Example-aktindsigt-page-2.html
     <div class="overlay"></div>
     <nav role="navigation" class=" nav">
         <!-- collapsible-->
-        <button class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
+        <button
+            class="button button-tertiary button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b></p>
+            <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
+            </p>
             <a href="#" class="button button-secondary button-signout">
                 Log ud
             </a>
@@ -64,7 +70,8 @@ title: Example-aktindsigt-page-2.html
         <div class="solution-info-mobile">
             <p><b>Erhvervsministeriet</b></p>
             <p><button class="button-unstyled button-contact"
-                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button></p>
+                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+            </p>
         </div>
 
     </nav> <!-- collapsible nav end-->
@@ -73,17 +80,20 @@ title: Example-aktindsigt-page-2.html
 <main class="container page-container">
 
     <div class="overflow-menu  overflow-menu--open-right ">
-        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
-            aria-haspopup="true" aria-expanded="false">
+        <button class="button-overflow-menu js-dropdown "
+            data-js-target="#overflow_steps" aria-haspopup="true"
+            aria-expanded="false">
             Trin 2 af 3
             <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
             <span class="sr-only">Åbner overflow menu</span>
         </button>
-        <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
+        <div class="overflow-menu-inner" id="overflow_steps"
+            aria-hidden="true">
 
             <ul class='sidenav-list'>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/aktindsigt/aktindsigt-1'>
+                    <a
+                        href='/dkfds-docs/pages/eksempler/aktindsigt/aktindsigt-1'>
                         1. Inden du går igang
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -97,7 +107,8 @@ title: Example-aktindsigt-page-2.html
                     </a>
                 </li>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/aktindsigt/aktindsigt-3'>
+                    <a
+                        href='/dkfds-docs/pages/eksempler/aktindsigt/aktindsigt-3'>
                         3. Bekræft oplysninger
                     </a>
                 </li>
@@ -112,44 +123,48 @@ title: Example-aktindsigt-page-2.html
             <div class="mt-0">
 
                 <div class="form-group">
-                    <label class="form-label " for="id-fornavn">Fornavn</label>
+                    <label class="form-label "
+                        for="id-fornavn">Fornavn</label>
 
-                    <input class="form-input  input-width-m " placeholder=""
-                        id="id-fornavn" value="" name="Input til fornavn"
-                        type="text">
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-fornavn" value=""
+                        name="Input til fornavn" type="text">
                 </div>
 
             </div>
             <div class="mt-5">
 
                 <div class="form-group">
-                    <label class="form-label " for="id-efternavn">Efternavn</label>
+                    <label class="form-label "
+                        for="id-efternavn">Efternavn</label>
 
-                    <input class="form-input  input-width-m " placeholder=""
-                        id="id-efternavn" value="" name="Input til efternavn"
-                        type="text">
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-efternavn" value=""
+                        name="Input til efternavn" type="text">
                 </div>
 
             </div>
             <div class="mt-5">
 
                 <div class="form-group">
-                    <label class="form-label " for="id-gade-vej">Gade/vej</label>
+                    <label class="form-label "
+                        for="id-gade-vej">Gade/vej</label>
 
-                    <input class="form-input  input-width-m " placeholder=""
-                        id="id-gade-vej" value="" name="Input til gade/vej"
-                        type="text">
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-gade-vej" value=""
+                        name="Input til gade/vej" type="text">
                 </div>
 
             </div>
             <div class="mt-5">
 
                 <div class="form-group">
-                    <label class="form-label " for="id-husnummer">Husnummer</label>
+                    <label class="form-label "
+                        for="id-husnummer">Husnummer</label>
 
                     <input class="form-input  input-width-xxs "
-                        placeholder="" id="id-husnummer" value="" name="Input til husnummer"
-                        type="text">
+                        placeholder="" id="id-husnummer" value=""
+                        name="Input til husnummer" type="text">
                 </div>
 
             </div>
@@ -157,11 +172,12 @@ title: Example-aktindsigt-page-2.html
 
                 <div class="form-group">
                     <label class="form-label " for="id-etage">Etage<span
-                            class="weight-normal"> (frivilligt)</span></label>
+                            class="weight-normal">
+                            (frivilligt)</span></label>
 
                     <input class="form-input  input-width-xxs "
-                        placeholder="" id="id-etage" value="" name="Input til etage"
-                        type="text">
+                        placeholder="" id="id-etage" value=""
+                        name="Input til etage" type="text">
                 </div>
 
             </div>
@@ -169,23 +185,27 @@ title: Example-aktindsigt-page-2.html
 
                 <div class="form-group">
                     <label class="form-label " for="id-side">Side<span
-                            class="weight-normal"> (frivilligt)</span></label>
-                    <span class="form-hint" id="input-hint-message-id-side">Fx:
-                        TV, 2. dør</span>
+                            class="weight-normal">
+                            (frivilligt)</span></label>
+                    <span class="form-hint"
+                        id="input-hint-message-id-side">Fx: TV, 2.
+                        dør</span>
 
-                    <input class="form-input  input-width-xs " placeholder=""
-                        id="id-side" value="" name="Input til side" type="text">
+                    <input class="form-input  input-width-xs "
+                        placeholder="" id="id-side" value=""
+                        name="Input til side" type="text">
                 </div>
 
             </div>
             <div class="mt-5">
 
                 <div class="form-group">
-                    <label class="form-label " for="id-postnummer">Postnummer</label>
+                    <label class="form-label "
+                        for="id-postnummer">Postnummer</label>
 
                     <input class="form-input  input-width-xxs "
-                        placeholder="" id="id-postnummer" value="" name="Input til postnummer"
-                        type="text">
+                        placeholder="" id="id-postnummer" value=""
+                        name="Input til postnummer" type="text">
                 </div>
 
             </div>
@@ -194,8 +214,9 @@ title: Example-aktindsigt-page-2.html
                 <div class="form-group">
                     <label class="form-label " for="id-by">By</label>
 
-                    <input class="form-input  input-width-m " placeholder=""
-                        id="id-by" value="" name="Input til by" type="text">
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-by" value=""
+                        name="Input til by" type="text">
                 </div>
 
             </div>
@@ -206,9 +227,9 @@ title: Example-aktindsigt-page-2.html
                         CO-adresse<span class="weight-normal">
                             (frivilligt)</span></label>
 
-                    <input class="form-input  input-width-m " placeholder=""
-                        id="id-co-adresse" value="" name="Input til CO-adresse"
-                        type="text">
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-co-adresse" value=""
+                        name="Input til CO-adresse" type="text">
                 </div>
 
             </div>
@@ -219,8 +240,9 @@ title: Example-aktindsigt-page-2.html
             <div class="mt-3">
 
                 <div class="form-group ">
-                    <input id="id-aktindsigt-ja" type="radio" name="aktindsigt"
-                        value="Ja" class="form-radio  radio-large ">
+                    <input id="id-aktindsigt-ja" type="radio"
+                        name="aktindsigt" value="Ja"
+                        class="form-radio  radio-large ">
                     <label for="id-aktindsigt-ja" class="radio-large">Ja
                     </label>
                 </div>
@@ -229,8 +251,9 @@ title: Example-aktindsigt-page-2.html
             <div class="mt-3">
 
                 <div class="form-group ">
-                    <input id="id-aktindsigt-nej" type="radio" name="aktindsigt"
-                        value="Ja" class="form-radio  radio-large ">
+                    <input id="id-aktindsigt-nej" type="radio"
+                        name="aktindsigt" value="Ja"
+                        class="form-radio  radio-large ">
                     <label for="id-aktindsigt-nej" class="radio-large">Nej
                     </label>
                 </div>
@@ -251,11 +274,17 @@ title: Example-aktindsigt-page-2.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span class="h5 weight-semibold">Eksempelstyrelsen</span></li>
-                    <li><a class="function-link" href="mailto:support@example.dk">support@example.dk</a></li>
+                    <li><span
+                            class="h5 weight-semibold">Eksempelstyrelsen</span>
+                    </li>
+                    <li><a class="function-link"
+                            href="mailto:support@example.dk">support@example.dk</a>
+                    </li>
                     <li><a class="function-link" href="tel:12 34 56 78">12
                             34 56 78</a></li>
-                    <li><a href="#" class="function-link">Tilgængelighedserklæring</a></li>
+                    <li><a href="#"
+                            class="function-link">Tilgængelighedserklæring</a>
+                    </li>
                     <li><a href="#" class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
@@ -275,16 +304,17 @@ title: Example-aktindsigt-page-2.html
                 </h1>
             </header>
             <main class="modal__content">
-                <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
+                <div class="alert alert-warning" role="alert"
+                    aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
                         <p class="alert-text">Noget tekst, der forklarer
                             det af advarende karakter, som brugeren bør
                             vide inden denne ringer eller skriver. Noget
-                            tekst, der forklarer det af advarende
-                            karakter, som brugeren bør vide inden denne
-                            ringer eller skriver.</p>
+                            tekst, der forklarer det af advarende karakter,
+                            som brugeren bør vide inden denne ringer eller
+                            skriver.</p>
                     </div>
                 </div>
                 <h3>En form for support</h3>
@@ -295,11 +325,14 @@ title: Example-aktindsigt-page-2.html
                 </ul>
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
-                <p class="m-0">Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <p class="m-0">
+                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     kl. 9-17</p>
-                <p class="m-0">Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    kl. 9-17</p>
-                <p class="m-0">Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <p class="m-0">
+                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
+                </p>
+                <p class="m-0">
+                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     kl. kl. 9-14</p>
             </main>
 

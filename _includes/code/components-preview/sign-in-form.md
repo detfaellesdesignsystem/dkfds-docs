@@ -9,14 +9,15 @@ title: Sign-in-form.html
         <span>or <a href="javascript:void(0);">create an account</a></span>
 
         <label for="username">Username or email address</label>
-        <input id="username" name="username" type="text" autocapitalize="off"
-            autocorrect="off">
+        <input id="username" name="username" type="text"
+            autocapitalize="off" autocorrect="off">
 
         <label for="password">Password</label>
         <input id="password" name="password" type="password">
         <p class="form-note">
-            <a title="Show password" href="javascript:void(0);" class="show_password"
-                aria-controls="password-sign-in">Show password</a>
+            <a title="Show password" href="javascript:void(0);"
+                class="show_password" aria-controls="password-sign-in">Show
+                password</a>
         </p>
 
         <input type="submit" value="Sign in">

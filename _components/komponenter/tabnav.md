@@ -20,6 +20,7 @@ lead: "Faneblade udgør den vandrette eller horisontale navigation i en løsning
         <ul class="content-list">
           <li>Det aktive menupunkt skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
           <li>Det aktive menupunkt skal have en <code>.active</code> class, som har en border-bottom, som bliver sat med variablen <code>$tabs-border-bottom</code></li>
+          <li>Det aktive element gøres tilgængeligt for skærmlæsere ved at tilføje koden <code>&lt;span class="sr-only"&gt;(valgt)&lt;/span&gt;</code> i elementet. Teksten i <code>span</code>-elementet vil blive læst af skærmlæseren, men vil ikke være synlig på siden.</li>
           <li>Teksten og borderen på det aktive menupunkt skal være primærfarven, som og sættes med variablen <code>$color-primary</code></li>
           <li>Det aktive menupunkt skal have en <code>.active</code> class, der har en border-bottom, som bliver sat med variablen <code>$tabs-border-bottom</code></li>
           <li>På hover skal teksten på menupunktet skifte, her skal variablen <code>$color-link-hover</code> bruges. Derudover skal der tiføjes en border-bottom, som igen bliver sat med variablen <code>$tabs-border-bottom</code></li> 

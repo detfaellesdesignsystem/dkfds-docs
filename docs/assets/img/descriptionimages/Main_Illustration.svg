@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="570px" height="322px" viewBox="0 0 570 322" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Main Illustration</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Forside" transform="translate(-576.000000, -225.000000)">
+            <g id="01_TopBanner" transform="translate(0.000000, 128.000000)">
+                <g id="Main-Illustration" transform="translate(576.000000, 97.000000)">
+                    <g id="Laptop" transform="translate(0.000000, 21.000000)">
+                        <path d="M78,0 L458,0 C463.522847,-1.01453063e-15 468,4.4771525 468,10 L468,264 L68,264 L68,10 C68,4.4771525 72.4771525,1.01453063e-15 78,0 Z" id="Rectangle" fill="#F5F5F5"></path>
+                        <rect id="Rectangle" fill="#DCDCDC" x="68" y="263" width="400" height="1"></rect>
+                        <rect id="Rectangle" fill="#DCDCDC" x="83" y="15" width="370" height="234"></rect>
+                        <g id="Dashed-Box" transform="translate(151.000000, 32.000000)" fill="#F5F5F5">
+                            <path d="M0,217 L8,217 L8,220 L0,220 L0,217 Z M72,217 L80,217 L80,220 L72,220 L72,217 Z M144,217 L152,217 L152,220 L144,220 L144,217 Z M12,217 L20,217 L20,220 L12,220 L12,217 Z M84,217 L92,217 L92,220 L84,220 L84,217 Z M156,217 L164,217 L164,220 L156,220 L156,217 Z M24,217 L32,217 L32,220 L24,220 L24,217 Z M96,217 L104,217 L104,220 L96,220 L96,217 Z M168,217 L176,217 L176,220 L168,220 L168,217 Z M36,217 L44,217 L44,220 L36,220 L36,217 Z M108,217 L116,217 L116,220 L108,220 L108,217 Z M180,217 L188,217 L188,220 L180,220 L180,217 Z M48,217 L56,217 L56,220 L48,220 L48,217 Z M120,217 L128,217 L128,220 L120,220 L120,217 Z M192,217 L200,217 L200,220 L192,220 L192,217 Z M216,217 L224,217 L224,220 L216,220 L216,217 Z M60,217 L68,217 L68,220 L60,220 L60,217 Z M132,217 L140,217 L140,220 L132,220 L132,217 Z M204,217 L212,217 L212,220 L204,220 L204,217 Z M228,217 L236,217 L236,220 L228,220 L228,217 Z" id="Combined-Shape"></path>
+                            <path d="M0,80 L8,80 L8,83 L0,83 L0,80 Z M72,80 L80,80 L80,83 L72,83 L72,80 Z M144,80 L152,80 L152,83 L144,83 L144,80 Z M12,80 L20,80 L20,83 L12,83 L12,80 Z M84,80 L92,80 L92,83 L84,83 L84,80 Z M156,80 L164,80 L164,83 L156,83 L156,80 Z M24,80 L32,80 L32,83 L24,83 L24,80 Z M96,80 L104,80 L104,83 L96,83 L96,80 Z M168,80 L176,80 L176,83 L168,83 L168,80 Z M36,80 L44,80 L44,83 L36,83 L36,80 Z M108,80 L116,80 L116,83 L108,83 L108,80 Z M180,80 L188,80 L188,83 L180,83 L180,80 Z M48,80 L56,80 L56,83 L48,83 L48,80 Z M120,80 L128,80 L128,83 L120,83 L120,80 Z M192,80 L200,80 L200,83 L192,83 L192,80 Z M216,80 L224,80 L224,83 L216,83 L216,80 Z M60,80 L68,80 L68,83 L60,83 L60,80 Z M132,80 L140,80 L140,83 L132,83 L132,80 Z M204,80 L212,80 L212,83 L204,83 L204,80 Z M228,80 L236,80 L236,83 L228,83 L228,80 Z" id="Combined-Shape"></path>
+                            <path d="M0,53 L8,53 L8,56 L0,56 L0,53 Z M72,53 L80,53 L80,56 L72,56 L72,53 Z M144,53 L152,53 L152,56 L144,56 L144,53 Z M12,53 L20,53 L20,56 L12,56 L12,53 Z M84,53 L92,53 L92,56 L84,56 L84,53 Z M156,53 L164,53 L164,56 L156,56 L156,53 Z M24,53 L32,53 L32,56 L24,56 L24,53 Z M96,53 L104,53 L104,56 L96,56 L96,53 Z M168,53 L176,53 L176,56 L168,56 L168,53 Z M36,53 L44,53 L44,56 L36,56 L36,53 Z M108,53 L116,53 L116,56 L108,56 L108,53 Z M180,53 L188,53 L188,56 L180,56 L180,53 Z M48,53 L56,53 L56,56 L48,56 L48,53 Z M120,53 L128,53 L128,56 L120,56 L120,53 Z M192,53 L200,53 L200,56 L192,56 L192,53 Z M216,53 L224,53 L224,56 L216,56 L216,53 Z M60,53 L68,53 L68,56 L60,56 L60,53 Z M132,53 L140,53 L140,56 L132,56 L132,53 Z M204,53 L212,53 L212,56 L204,56 L204,53 Z M228,53 L236,53 L236,56 L228,56 L228,53 Z" id="Combined-Shape"></path>
+                            <path d="M0,0 L8,0 L8,3 L0,3 L0,0 Z M72,0 L80,0 L80,3 L72,3 L72,0 Z M144,0 L152,0 L152,3 L144,3 L144,0 Z M12,0 L20,0 L20,3 L12,3 L12,0 Z M84,0 L92,0 L92,3 L84,3 L84,0 Z M156,0 L164,0 L164,3 L156,3 L156,0 Z M24,0 L32,0 L32,3 L24,3 L24,0 Z M96,0 L104,0 L104,3 L96,3 L96,0 Z M168,0 L176,0 L176,3 L168,3 L168,0 Z M36,0 L44,0 L44,3 L36,3 L36,0 Z M108,0 L116,0 L116,3 L108,3 L108,0 Z M180,0 L188,0 L188,3 L180,3 L180,0 Z M48,0 L56,0 L56,3 L48,3 L48,0 Z M120,0 L128,0 L128,3 L120,3 L120,0 Z M192,0 L200,0 L200,3 L192,3 L192,0 Z M216,0 L224,0 L224,3 L216,3 L216,0 Z M60,0 L68,0 L68,3 L60,3 L60,0 Z M132,0 L140,0 L140,3 L132,3 L132,0 Z M204,0 L212,0 L212,3 L204,3 L204,0 Z M228,0 L236,0 L236,3 L228,3 L228,0 Z" id="Combined-Shape"></path>
+                            <path d="M233,80 L236,80 L236,88 L233,88 L233,80 Z M233,116 L236,116 L236,124 L233,124 L233,116 Z M233,152 L236,152 L236,160 L233,160 L233,152 Z M233,188 L236,188 L236,196 L233,196 L233,188 Z M233,92 L236,92 L236,100 L233,100 L233,92 Z M233,128 L236,128 L236,136 L233,136 L233,128 Z M233,164 L236,164 L236,172 L233,172 L233,164 Z M233,200 L236,200 L236,208 L233,208 L233,200 Z M233,104 L236,104 L236,112 L233,112 L233,104 Z M233,140 L236,140 L236,148 L233,148 L233,140 Z M233,176 L236,176 L236,184 L233,184 L233,176 Z M233,212 L236,212 L236,220 L233,220 L233,212 Z" id="Combined-Shape"></path>
+                            <path d="M155,80 L158,80 L158,88 L155,88 L155,80 Z M155,116 L158,116 L158,124 L155,124 L155,116 Z M155,152 L158,152 L158,160 L155,160 L155,152 Z M155,188 L158,188 L158,196 L155,196 L155,188 Z M155,92 L158,92 L158,100 L155,100 L155,92 Z M155,128 L158,128 L158,136 L155,136 L155,128 Z M155,164 L158,164 L158,172 L155,172 L155,164 Z M155,200 L158,200 L158,208 L155,208 L155,200 Z M155,104 L158,104 L158,112 L155,112 L155,104 Z M155,140 L158,140 L158,148 L155,148 L155,140 Z M155,176 L158,176 L158,184 L155,184 L155,176 Z M155,212 L158,212 L158,220 L155,220 L155,212 Z" id="Combined-Shape"></path>
+                            <path d="M78,80 L81,80 L81,88 L78,88 L78,80 Z M78,116 L81,116 L81,124 L78,124 L78,116 Z M78,152 L81,152 L81,160 L78,160 L78,152 Z M78,188 L81,188 L81,196 L78,196 L78,188 Z M78,92 L81,92 L81,100 L78,100 L78,92 Z M78,128 L81,128 L81,136 L78,136 L78,128 Z M78,164 L81,164 L81,172 L78,172 L78,164 Z M78,200 L81,200 L81,208 L78,208 L78,200 Z M78,104 L81,104 L81,112 L78,112 L78,104 Z M78,140 L81,140 L81,148 L78,148 L78,140 Z M78,176 L81,176 L81,184 L78,184 L78,176 Z M78,212 L81,212 L81,220 L78,220 L78,212 Z" id="Combined-Shape"></path>
+                            <path d="M0,80 L3,80 L3,88 L0,88 L0,80 Z M0,116 L3,116 L3,124 L0,124 L0,116 Z M0,152 L3,152 L3,160 L0,160 L0,152 Z M0,188 L3,188 L3,196 L0,196 L0,188 Z M0,92 L3,92 L3,100 L0,100 L0,92 Z M0,128 L3,128 L3,136 L0,136 L0,128 Z M0,164 L3,164 L3,172 L0,172 L0,164 Z M0,200 L3,200 L3,208 L0,208 L0,200 Z M0,104 L3,104 L3,112 L0,112 L0,104 Z M0,140 L3,140 L3,148 L0,148 L0,140 Z M0,176 L3,176 L3,184 L0,184 L0,176 Z M0,212 L3,212 L3,220 L0,220 L0,212 Z" id="Combined-Shape-Copy"></path>
+                            <path d="M0,0 L3,0 L3,8 L0,8 L0,0 Z M0,36 L3,36 L3,44 L0,44 L0,36 Z M0,12 L3,12 L3,20 L0,20 L0,12 Z M0,48 L3,48 L3,56 L0,56 L0,48 Z M0,24 L3,24 L3,32 L0,32 L0,24 Z" id="Combined-Shape-Copy-3"></path>
+                            <path d="M233,0 L236,0 L236,8 L233,8 L233,0 Z M233,36 L236,36 L236,44 L233,44 L233,36 Z M233,12 L236,12 L236,20 L233,20 L233,12 Z M233,48 L236,48 L236,56 L233,56 L233,48 Z M233,24 L236,24 L236,32 L233,32 L233,24 Z" id="Combined-Shape-Copy-4"></path>
+                        </g>
+                        <path d="M1,264 L535,264 C535.552285,264 536,264.447715 536,265 L536,273 C536,276.313708 533.313708,279 530,279 L6,279 C2.6862915,279 4.05812251e-16,276.313708 0,273 L0,265 C-6.76353751e-17,264.447715 0.44771525,264 1,264 Z" id="Rectangle" fill="#F5F5F5"></path>
+                        <path d="M233,264 L304,264 C304.552285,264 305,264.447715 305,265 L305,268 C305,270.209139 303.209139,272 301,272 L236,272 C233.790861,272 232,270.209139 232,268 L232,265 C232,264.447715 232.447715,264 233,264 Z" id="Rectangle" fill="#DCDCDC"></path>
+                        <polygon id="Rectangle-Copy" fill="#DCDCDC" points="5 279 531 279 509 284 28 284"></polygon>
+                    </g>
+                    <g id="Card" transform="translate(24.000000, 0.000000)">
+                        <rect id="Rectangle-6" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="80" height="88"></rect>
+                        <rect id="Rectangle-6" fill="#14B094" fill-rule="nonzero" x="0" y="0" width="80" height="40"></rect>
+                        <g id="Group-3" transform="translate(23.000000, 5.000000)" stroke="#FFFFFF" stroke-width="2">
+                            <rect id="Rectangle" transform="translate(20.000000, 20.000000) rotate(-270.000000) translate(-20.000000, -20.000000) " x="11" y="11" width="18" height="18"></rect>
+                            <circle id="Oval" cx="10" cy="10" r="10"></circle>
+                        </g>
+                        <polygon id="Rectangle-6" fill="#B9E7DF" fill-rule="nonzero" points="10 50 70 50 70 54 10 54"></polygon>
+                        <polygon id="Rectangle-6" fill="#B9E7DF" fill-rule="nonzero" points="10 58 70 58 70 62 10 62"></polygon>
+                        <polygon id="Rectangle-6" fill="#B9E7DF" fill-rule="nonzero" points="10 66 70 66 70 70 10 70"></polygon>
+                        <polygon id="Rectangle-6-Copy" fill="#B9E7DF" fill-rule="nonzero" points="10 74 40 74 40 78 10 78"></polygon>
+                    </g>
+                    <g id="Card" transform="translate(430.000000, 59.000000)">
+                        <rect id="White_BG" fill="#FFFFFF" x="0" y="0" width="140" height="68"></rect>
+                        <rect id="Rectangle-15" fill="#B9E7DF" fill-rule="nonzero" x="20" y="36" width="96" height="4"></rect>
+                        <rect id="Rectangle-15-Copy-4" fill="#B9E7DF" fill-rule="nonzero" x="20" y="44" width="73" height="4"></rect>
+                        <rect id="Rectangle-15-Copy" fill="#14B094" fill-rule="nonzero" x="20" y="20" width="28" height="8"></rect>
+                        <rect id="Rectangle-15-Copy-2" fill="#14B094" fill-rule="nonzero" x="105" y="20" width="15" height="8"></rect>
+                        <rect id="Rectangle-15-Copy-3" fill="#14B094" fill-rule="nonzero" x="52" y="20" width="49" height="8"></rect>
+                    </g>
+                    <g id="Card" transform="translate(151.000000, 133.000000)">
+                        <rect id="White_BG" fill="#FFFFFF" x="0" y="0" width="158" height="96"></rect>
+                        <rect id="Rectangle-15-Copy-6" fill="#14B094" fill-rule="nonzero" x="20" y="20" width="20" height="4"></rect>
+                        <rect id="Rectangle-15-Copy-7" fill="#14B094" fill-rule="nonzero" x="20" y="52" width="20" height="4"></rect>
+                        <rect id="Rectangle-15" stroke="#74D0BF" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" x="21" y="29" width="116" height="14" rx="2"></rect>
+                        <rect id="Rectangle-15-Copy-8" stroke="#74D0BF" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" x="21" y="61" width="74" height="14" rx="2"></rect>
+                    </g>
+                    <g id="Card" transform="translate(371.000000, 218.000000)">
+                        <rect id="White_BG" fill="#FFFFFF" x="0" y="0" width="120" height="104"></rect>
+                        <rect id="Rectangle-15" fill="#B9E7DF" fill-rule="nonzero" x="20" y="44" width="81" height="4"></rect>
+                        <rect id="Rectangle-15-Copy-5" fill="#B9E7DF" fill-rule="nonzero" x="20" y="32" width="66" height="4"></rect>
+                        <rect id="Rectangle-15-Copy-6" fill="#B9E7DF" fill-rule="nonzero" x="20" y="20" width="78" height="4"></rect>
+                        <rect id="Rectangle-15-Copy-4" fill="#B9E7DF" fill-rule="nonzero" x="20" y="56" width="72" height="4"></rect>
+                        <rect id="Rectangle-15-Copy-7" fill="#B9E7DF" fill-rule="nonzero" x="20" y="68" width="80" height="4"></rect>
+                        <rect id="Rectangle-15-Copy-8" fill="#B9E7DF" fill-rule="nonzero" x="20" y="80" width="21" height="4"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

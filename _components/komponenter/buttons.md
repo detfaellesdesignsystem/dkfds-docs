@@ -17,12 +17,21 @@ description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke
   </button>
   <div id="code-documentation" class="accordion-content">
     <section>
+      <h2 class="h4">Klasser</h2>
       <p>Knap styling kan både sættes på &lt;button&gt; og &lt;a&gt; tags ved at tilføje følgende klasser:</p>
       <ul>
         <li><code>button button-primary</code></li>
         <li><code>button button-secondary</code></li>
         <li><code>button button-tertiary</code></li>
+        <li><code>button button-quaternary</code></li>
+        <li><code>button button-unstyled</code></li>
       </ul>
+      <h3 class="h5">button-quaternary</h3>
+      <p><code>button button-quaternary</code> bruges kun som Tilbage link - inklusiv icon.</p>
+      <h3 class="h5">button-unstyled</h3>
+      <p><code>button button-unstyled</code> bruges i de fælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx <code>&lt;span class="sr-only"&gt;Slet&lt;/span&gt;</code>.</p>
+      <h3 class="h5">Vedhæft fil</h3>
+      <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/dkfds-docs/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
     </section>
   </div>
 </div>
@@ -64,6 +73,10 @@ description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke
               <li>I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i knappen for at signalere bestemte handlinger som fx ”Gem”.</li>
               <li>Funktioner af mindre vigtighed bør du style som link.</li>
           </ul>
+      </section>
+      <section>
+          <h2 class="h4">Retningslinjer for vedhæft fil</h2>
+          <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/dkfds-docs/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
       </section>
     </article>
   </div>

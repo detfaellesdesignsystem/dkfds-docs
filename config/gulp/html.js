@@ -86,10 +86,9 @@ gulp.task('nunjucks', function () {
             path: 'node_modules/dkfds/src/'
         }))
         .pipe(prettify({
-
             wrap_line_length: 75,
             max_preserve_newlines: 1,
-            unformatted: [ /*'a',*/ 'abbr', 'area', 'audio', 'b', 'bdi', 'bdo', 'br', /*'button',*/ 'canvas', 'cite',
+            unformatted: [ /*'a',*/ 'abbr','pre', 'area', 'audio', 'b', 'bdi', 'bdo', 'br', /*'button',*/ 'canvas', 'cite',
                 'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', /*'i',*/ 'iframe', 'img',
                 /*'input',*/ 'ins', 'kbd', 'keygen', /*'label',*/ 'map', 'mark', 'math', 'meter', 'noscript',
                 'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', /* 'script', */ /*'select',*/ 'small',

@@ -12,6 +12,15 @@ lead: En accordion er et grafisk element, som du kan bruge til vise indhold med.
 {% include code/accordion.html component="accordion" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
+    aria-expanded="false" aria-controls="technical">
+    Implementering
+  </button>
+  <div id="technical" class="accordion-content">
+    <p>Man kan undlade at sætte <code>aria-hidden</code> attribut på <code>accordion-content</code>, hvis man har implementeret dkfds.js i sit projekt. <code>aria-hidden</code> vil da blive tilføjet automatisk via javascript.</p>
+  </div>
+</div>
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
     aria-expanded="true" aria-controls="documentation">
     Retningslinjer
   </button>

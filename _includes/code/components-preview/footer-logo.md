@@ -16,7 +16,8 @@ title: Footer-logo.html
 
                             <ul class=" unstyled-list">
 
-                                <li><span href="/dkfds-docs/" class="logo"></span></li>
+                                <li><span href="/dkfds-docs/"
+                                        class="logo"></span></li>
 
                             </ul>
 
@@ -26,14 +27,18 @@ title: Footer-logo.html
                 <div class="col-12 col-sm-12 col-md-3 footer-col">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Kontakt" aria-label="Kontakt">Kontakt</h1>
+                            <h1 class="h5 mb-4" title="Kontakt"
+                                aria-label="Kontakt">Kontakt</h1>
 
                             <ul class=" mt-0 nobullet-list">
 
-                                <li><a class="function-link" href="mailto:support@myndighed.dk">support@myndighed.dk</a></li>
+                                <li><a class="function-link"
+                                        href="mailto:support@myndighed.dk">support@myndighed.dk</a>
+                                </li>
 
-                                <li><a class="function-link" href="tel:004512345678">(+45)
-                                        12 34 56 78</a></li>
+                                <li><a class="function-link"
+                                        href="tel:004512345678">(+45) 12 34
+                                        56 78</a></li>
 
                             </ul>
 
@@ -43,7 +48,8 @@ title: Footer-logo.html
                 <div class="col-12 col-sm-12 col-md-3 footer-col">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links" aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4" title="Links"
+                                aria-label="Links">Links</h1>
 
                             <ul class=" mt-0 nobullet-list">
 
@@ -66,15 +72,19 @@ title: Footer-logo.html
                 <div class="col-12 col-sm-12 col-md-3 footer-col">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Webtilgængelighed og cookies"
-                                aria-label="Webtilgængelighed og cookies">Webtilgængelighed
-                                og cookies</h1>
+                            <h1 class="h5 mb-4"
+                                title="Webtilgængelighed og cookies"
+                                aria-label="Webtilgængelighed og cookies">
+                                Webtilgængelighed og cookies</h1>
 
                             <ul class=" mt-0 nobullet-list">
 
-                                <li><a class="function-link" href="#">Tilgængelighedserklæring</a></li>
+                                <li><a class="function-link"
+                                        href="#">Tilgængelighedserklæring</a>
+                                </li>
 
-                                <li><a class="function-link" href="#">Privatlivspolitik
+                                <li><a class="function-link"
+                                        href="#">Privatlivspolitik
                                         (cookies)</a></li>
 
                             </ul>

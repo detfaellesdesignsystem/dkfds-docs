@@ -17,7 +17,8 @@ title: Table--borderless-zebra.html
                 <tr>
                     <td>Declaration of Independence</td>
                     <td>Statement adopted by the Continental Congress
-                        declaring independence from the British Empire.</td>
+                        declaring independence from the British Empire.
+                    </td>
                     <td>1776</td>
                 </tr>
                 <tr>
@@ -29,8 +30,8 @@ title: Table--borderless-zebra.html
                 <tr>
                     <td>Declaration of Sentiments</td>
                     <td>A document written during the Seneca Falls
-                        Convention outlining the rights that American
-                        women should be entitled
+                        Convention outlining the rights that American women
+                        should be entitled
                         to as citizens.</td>
                     <td>1848</td>
                 </tr>

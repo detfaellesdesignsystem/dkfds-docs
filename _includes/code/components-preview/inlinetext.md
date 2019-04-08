@@ -22,7 +22,8 @@ title: Inlinetext.html
     </div>
     <div class="row">
         <div class="col-12 col-md-6">
-            <p class="small-text">Dette er lille brødtekst (.small-text)</p>
+            <p class="small-text">Dette er lille brødtekst (.small-text)
+            </p>
         </div>
         <div class="col-12 col-md-6">
             <pre>font-family: "IBMPlexSans","system"<br>font-weight:400<br>font-size:1.4rem<br>line-height:2.4rem<br>margin:1.6rem 0 1.6rem 0</pre>

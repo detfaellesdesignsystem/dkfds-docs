@@ -5,7 +5,8 @@ title: Datatables--edit.html
 ---
 <div class="container">
     <p class="form-label">Funktionalitet i overflow-menu</p>
-    <table id="js-datatable-example-edit" class="table table--zebra table--lines w-percent-100">
+    <table id="js-datatable-example-edit"
+        class="table table--zebra table--lines w-percent-100">
         <thead>
             <tr>
                 <th>Navn</th>
@@ -23,7 +24,8 @@ title: Datatables--edit.html
 
 <div class="container pt-7">
     <p class="form-label">Funktionalitet uden overflow-menu</p>
-    <table id="js-datatable-example-edit2" class="table table--zebra table--lines w-percent-100">
+    <table id="js-datatable-example-edit2"
+        class="table table--zebra table--lines w-percent-100">
         <thead>
             <tr>
                 <th>Navn</th>
@@ -53,7 +55,8 @@ title: Datatables--edit.html
                 <div class="row">
                     <div class="col-12">
                         <div class="alert alert-error alert--show-icon"
-                            role="alert" aria-label="Beskedbox der viser en fejlmeddelselse">
+                            role="alert"
+                            aria-label="Beskedbox der viser en fejlmeddelselse">
                             <div class="alert-body">
                                 <h3 class="alert-heading">Error alert -
                                     with icon</h3>
@@ -66,14 +69,17 @@ title: Datatables--edit.html
                         <input id="edit-row-id" name="" type="hidden">
                         <div class="form-group">
                             <label class="form-label">Navn:</label>
-                            <input class="form-input" id="edit-navn" name=""
-                                type="text">
+                            <input class="form-input" id="edit-navn"
+                                name="" type="text">
                         </div>
                         <div class="form-group input-error">
-                            <label class="form-label " for="input-error">Vejnavn</label>
-                            <span class="form-hint" id="input-hint-message-input-error">For
+                            <label class="form-label "
+                                for="input-error">Vejnavn</label>
+                            <span class="form-hint"
+                                id="input-hint-message-input-error">For
                                 example, lærkevej</span>
-                            <span class="input-error-message" id="input-error-message-input-error"
+                            <span class="input-error-message"
+                                id="input-error-message-input-error"
                                 role="alert">Fejl i vejnavn</span>
                             <input class="form-input" id="edit-vejnavn"
                                 name="input-error" type="text"
@@ -96,7 +102,8 @@ title: Datatables--edit.html
                 <button class="button button-primary js-edit-save-trigger"
                     aria-label="Save changes to the row">Gem</button>
                 <button class="button button-quaternary"
-                    data-micromodal-close aria-label="Close this dialog window, no changes saved">Annuller</button>
+                    data-micromodal-close
+                    aria-label="Close this dialog window, no changes saved">Annuller</button>
                 <!--<button class="button button-primary">En knap</button>
                 <button class="button button-secondary" data-micromodal-close aria-label="Close this dialog window">Knap som lukker modal</button>-->
             </footer>
@@ -121,9 +128,11 @@ title: Datatables--edit.html
                 <p>Er du sikker på at du gerne vil slette rækken?</p>
             </main>
             <footer class="modal__footer">
-                <button class="button button-primary js-delete-trigger">Ja</button>
+                <button
+                    class="button button-primary js-delete-trigger">Ja</button>
                 <button class="button button-secondary"
-                    data-micromodal-close aria-label="Close this dialog window">Nej</button>
+                    data-micromodal-close
+                    aria-label="Close this dialog window">Nej</button>
             </footer>
             <button class="modal__close button button-quaternary"
                 aria-label="Close modal" data-micromodal-close>Luk</button>

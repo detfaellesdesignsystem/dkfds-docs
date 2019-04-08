@@ -8,15 +8,17 @@ title: Example-virksomhedsalliancer-page-4.html
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem" aria-label="logo link"
-                class="logo"></a>
-            <button class="button button-secondary button-menu-open js-menu-open ml-auto"
+            <a href="javascript:void(0);" title="Hjem"
+                aria-label="logo link" class="logo"></a>
+            <button
+                class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><b class="username">Christian Emil Vestergaard Christiansen</b>
+                <p class="user">
+                    <b class="username">Christian Emil Vestergaard Christiansen</b>
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
@@ -42,7 +44,8 @@ title: Example-virksomhedsalliancer-page-4.html
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p><button class="button-unstyled button-contact"
-                        data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg"><use href="#menu-right"></use></svg></button></p>
+                        data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg"><use href="#menu-right"></use></svg></button>
+                </p>
 
             </div>
         </div>
@@ -50,8 +53,9 @@ title: Example-virksomhedsalliancer-page-4.html
 
     <nav role="navigation" class=" nav">
         <!-- collapsible-->
-        <button class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
+        <button
+            class="button button-tertiary button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Navn</b></p>
@@ -64,7 +68,8 @@ title: Example-virksomhedsalliancer-page-4.html
         <div class="solution-info-mobile">
             <p><b>Erhvervsministeriet</b></p>
             <p><button class="button-unstyled button-contact"
-                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button></p>
+                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+            </p>
         </div>
     </nav> <!-- collapsible nav end-->
 </header>
@@ -72,17 +77,20 @@ title: Example-virksomhedsalliancer-page-4.html
 <main class="container page-container">
 
     <div class="overflow-menu  overflow-menu--open-right ">
-        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
-            aria-haspopup="true" aria-expanded="false">
+        <button class="button-overflow-menu js-dropdown "
+            data-js-target="#overflow_steps" aria-haspopup="true"
+            aria-expanded="false">
             Trin 4 af 4
             <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
             <span class="sr-only">Åbner overflow menu</span>
         </button>
-        <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
+        <div class="overflow-menu-inner" id="overflow_steps"
+            aria-hidden="true">
 
             <ul class='sidenav-list'>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'>
+                    <a
+                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'>
                         1. Stamdata
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -90,7 +98,8 @@ title: Example-virksomhedsalliancer-page-4.html
                     </a>
                 </li>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
+                    <a
+                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
                         2. SMV-kriterier
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -98,7 +107,8 @@ title: Example-virksomhedsalliancer-page-4.html
                     </a>
                 </li>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
+                    <a
+                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
                         3. Statsstøtte
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -122,8 +132,9 @@ title: Example-virksomhedsalliancer-page-4.html
         <div class="form-group">
             <label class="form-label " for="id-advisors">Navn(-e) på
                 rådgivere på ambassaden/generalkonsulatet</label>
-            <span class="form-hint" id="input-hint-message-id-advisors">Navne
-                skal skrives i samme rækkefølge, som landene er anført</span>
+            <span class="form-hint"
+                id="input-hint-message-id-advisors">Navne skal skrives i
+                samme rækkefølge, som landene er anført</span>
 
             <textarea class="form-input input-width-m" placeholder="" id="id-advisors" name="Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet" type="text" ></textarea>
         </div>
@@ -135,8 +146,9 @@ title: Example-virksomhedsalliancer-page-4.html
             <label class="form-label " for="id-companyalliance">Navn på
                 virksomhedsalliance</label>
 
-            <input class="form-input  input-width-m " placeholder="" id="id-companyalliance"
-                value="" name="Input til navn på virksomhedsalliance" type="text">
+            <input class="form-input  input-width-m " placeholder=""
+                id="id-companyalliance" value=""
+                name="Input til navn på virksomhedsalliance" type="text">
         </div>
 
     </div>
@@ -147,40 +159,80 @@ title: Example-virksomhedsalliancer-page-4.html
         <div class="mt-3 ">
 
             <div class="form-group ">
-                <input id="id-state-yes" type="radio" name="minimis" value="Ja"
-                    class="form-radio  radio-large " data-js-target='#collapse-radio'
+                <input id="id-state-yes" type="radio" name="minimis"
+                    value="Ja" class="form-radio  radio-large "
+                    data-js-target='#collapse-radio'
                     aria-controls='collapse-radio' aria-expanded='false'>
                 <label for="id-state-yes" class="radio-large">Ja </label>
             </div>
 
-            <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
+            <div id="collapse-radio" aria-hidden="true"
+                class="box-border-l collapsed">
                 <div class="py-4">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <button href="example-aes-page-8" class="button button-secondary mt-0">Tilføj
-                                dokument</button>
-                            <table class="table table--borderless table--compact table--responsive-headers mt-6">
+                            <form class="form">
+                                <div class="form-group file-input">
+                                    <label class="form-label"
+                                        for="file">Tilføj dokument</label>
+                                    <input type="file" id="file"
+                                        name="file">
+                                </div>
+                            </form>
+                            <table
+                                class="table table--borderless table--compact table--responsive-headers mt-6">
                                 <thead>
                                     <tr>
                                         <th>Filnavn</th>
-                                        <th class="align-text-right">Slet</th>
+                                        <th class="align-text-right">Slet
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="mt-4 mt-lg-0 break-word w-percent-md-40"><svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf</td>
-                                        <td class="align-text-right mt-4 mt-lg-0"><a
-                                                href="#" class="function-link link-right"><svg class="icon-svg " ><use xlink:href="#delete-outline"></use></svg></a></td>
+                                        <td
+                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf
+                                        </td>
+                                        <td
+                                            class="align-text-right mt-4 mt-lg-0">
+                                            <button
+                                                class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span
+                                                    class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td class="mt-4 mt-lg-0 break-word w-percent-md-40"><svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf</td>
-                                        <td class="align-text-right mt-4 mt-lg-0"><a
-                                                href="#" class="function-link link-right"><svg class="icon-svg " ><use xlink:href="#delete-outline"></use></svg></a></td>
+                                        <td
+                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf
+                                        </td>
+                                        <td
+                                            class="align-text-right mt-4 mt-lg-0">
+                                            <button
+                                                class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span
+                                                    class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td class="mt-4 mt-lg-0 break-word w-percent-md-40"><svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf</td>
-                                        <td class="align-text-right mt-4 mt-lg-0"><a
-                                                href="#" class="function-link link-right"><svg class="icon-svg " ><use xlink:href="#delete-outline"></use></svg></a></td>
+                                        <td
+                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf
+                                        </td>
+                                        <td
+                                            class="align-text-right mt-4 mt-lg-0">
+                                            <button
+                                                class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span
+                                                    class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -192,8 +244,8 @@ title: Example-virksomhedsalliancer-page-4.html
         <div class="mt-3">
 
             <div class="form-group ">
-                <input id="id-state-no" type="radio" name="minimis" value="Nej"
-                    class="form-radio  radio-large ">
+                <input id="id-state-no" type="radio" name="minimis"
+                    value="Nej" class="form-radio  radio-large ">
                 <label for="id-state-no" class="radio-large">Nej </label>
             </div>
 
@@ -212,11 +264,17 @@ title: Example-virksomhedsalliancer-page-4.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span class="h5 weight-semibold">Eksempelstyrelsen</span></li>
-                    <li><a class="function-link" href="mailto:support@example.dk">support@example.dk</a></li>
+                    <li><span
+                            class="h5 weight-semibold">Eksempelstyrelsen</span>
+                    </li>
+                    <li><a class="function-link"
+                            href="mailto:support@example.dk">support@example.dk</a>
+                    </li>
                     <li><a class="function-link" href="tel:12 34 56 78">12
                             34 56 78</a></li>
-                    <li><a href="#" class="function-link">Tilgængelighedserklæring</a></li>
+                    <li><a href="#"
+                            class="function-link">Tilgængelighedserklæring</a>
+                    </li>
                     <li><a href="#" class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
@@ -236,16 +294,17 @@ title: Example-virksomhedsalliancer-page-4.html
                 </h1>
             </header>
             <main class="modal__content">
-                <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
+                <div class="alert alert-warning" role="alert"
+                    aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
                         <p class="alert-text">Noget tekst, der forklarer
                             det af advarende karakter, som brugeren bør
                             vide inden denne ringer eller skriver. Noget
-                            tekst, der forklarer det af advarende
-                            karakter, som brugeren bør vide inden denne
-                            ringer eller skriver.</p>
+                            tekst, der forklarer det af advarende karakter,
+                            som brugeren bør vide inden denne ringer eller
+                            skriver.</p>
                     </div>
                 </div>
                 <h3>En form for support</h3>
@@ -256,11 +315,14 @@ title: Example-virksomhedsalliancer-page-4.html
                 </ul>
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
-                <p class="m-0">Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <p class="m-0">
+                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     kl. 9-17</p>
-                <p class="m-0">Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    kl. 9-17</p>
-                <p class="m-0">Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <p class="m-0">
+                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
+                </p>
+                <p class="m-0">
+                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     kl. kl. 9-14</p>
             </main>
 

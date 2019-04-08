@@ -110,7 +110,12 @@
         "
     ) }}
     <h1>Tilføj dokumentation for første undersøgelse af skaden</h1>
-    <button href="example-aes-page-8" class="button button-secondary">Tilføj dokument</button>
+    <form class="form">
+        <div class="form-group file-input">
+            <label class="form-label" for="file">Tilføj dokument</label>
+            <input type="file" id="file" name="file">
+        </div>
+    </form>
     <table class="table table--borderless table--compact table--responsive-headers mt-6">
         <thead>
             <tr>
@@ -128,7 +133,12 @@
                 <td class="mt-4 mt-lg-0">
                 {{textinput("id-pagenumber", "Angiv sidetal", "(frivilligt)", "input-width-xs", "", "Sidetal", "sr-only", false, "")}}
                 </td>
-                <td class="align-text-md-right mt-4 mt-lg-0"><a href="#" class="function-link link-right" title="Slet fil">{{ icon_svg('delete-outline')}}</a></td>
+                <td class="align-text-md-right mt-4 mt-lg-0">
+                    <button class="button button-unstyled">
+                        <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                        <span class="sr-only">Slet</span>
+                    </button>
+                </td>
             </tr>
         </tbody>
     </table>

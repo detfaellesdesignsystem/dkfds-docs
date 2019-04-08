@@ -10,32 +10,10 @@ title: Footer-complex.html
                 <div class="col-12 col-sm-12 col-md-3 footer-col">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links" aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4" title="Links"
+                                aria-label="Links">Links</h1>
 
-                            <ul class=" mt-0 nobullet-list">
-
-                                <li><a class="function-link" href="#">Læs
-                                        lidt om dit</a></li>
-
-                                <li><a class="function-link" href="#">Her
-                                        er også lidt om dat</a></li>
-
-                                <li><a class="function-link" href="#">Eller
-                                        måske er du interesseret i noget
-                                        helt andet, som tager mange linjer
-                                        at forklare</a></li>
-
-                            </ul>
-
-                        </div>
-                    </section>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 footer-col">
-                    <section>
-                        <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links" aria-label="Links">Links</h1>
-
-                            <ul class=" mt-0 nobullet-list">
+                            <ul class=" mt-0 mb-0 nobullet-list">
 
                                 <li><a class="function-link" href="#">Læs
                                         lidt om dit</a></li>
@@ -56,9 +34,10 @@ title: Footer-complex.html
                 <div class="col-12 col-sm-12 col-md-3 footer-col">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links" aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4" title="Links"
+                                aria-label="Links">Links</h1>
 
-                            <ul class=" mt-0 nobullet-list">
+                            <ul class=" mt-0 mb-0 nobullet-list">
 
                                 <li><a class="function-link" href="#">Læs
                                         lidt om dit</a></li>
@@ -79,9 +58,34 @@ title: Footer-complex.html
                 <div class="col-12 col-sm-12 col-md-3 footer-col">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links" aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4" title="Links"
+                                aria-label="Links">Links</h1>
 
-                            <ul class=" mt-0 nobullet-list">
+                            <ul class=" mt-0 mb-0 nobullet-list">
+
+                                <li><a class="function-link" href="#">Læs
+                                        lidt om dit</a></li>
+
+                                <li><a class="function-link" href="#">Her
+                                        er også lidt om dat</a></li>
+
+                                <li><a class="function-link" href="#">Eller
+                                        måske er du interesseret i noget
+                                        helt andet, som tager mange linjer
+                                        at forklare</a></li>
+
+                            </ul>
+
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 footer-col">
+                    <section>
+                        <div class=" align-text-left ">
+                            <h1 class="h5 mb-4" title="Links"
+                                aria-label="Links">Links</h1>
+
+                            <ul class=" mt-0 mb-0 nobullet-list">
 
                                 <li><a class="function-link" href="#">Læs
                                         lidt om dit</a></li>
@@ -103,20 +107,28 @@ title: Footer-complex.html
                     <section>
                         <div class=" align-text-left ">
 
-                            <ul class=" mt-0 nobullet-list inline-list ">
+                            <ul class=" mt-4 nobullet-list inline-list ">
 
-                                <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen</span></li>
+                                <li><span
+                                        class="h5 weight-semibold">Digitaliseringsstyrelsen</span>
+                                </li>
 
                                 <li><a href="mailto:support@myndighed.dk"
-                                        class="function-link" title="Skriv til Digitaliseringsstyrelsen">support@myndighed.dk</a></li>
+                                        class="function-link"
+                                        title="Skriv til Digitaliseringsstyrelsen">support@myndighed.dk</a>
+                                </li>
 
-                                <li><a href="tel:+4512345678" class="function-link"
+                                <li><a href="tel:+4512345678"
+                                        class="function-link"
                                         title="Ring til Digitaliseringsstyrelsen">(+45)
                                         12 34 56 78</a></li>
 
-                                <li><a href="#" class="function-link">Tilgængelighedserklæring</a></li>
+                                <li><a href="#"
+                                        class="function-link">Tilgængelighedserklæring</a>
+                                </li>
 
-                                <li><a href="#" class="function-link">Privatlivspolitik
+                                <li><a href="#"
+                                        class="function-link">Privatlivspolitik
                                         (cookies)</a></li>
 
                             </ul>

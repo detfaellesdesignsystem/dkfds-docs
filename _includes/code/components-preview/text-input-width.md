@@ -70,15 +70,17 @@ title: Text-input-width.html
     <div class="form-group">
         <label class="form-label " for="input-type-text-char-11">Inputfelt
             med klassen input-char-11 (11 tegn)</label>
-        <input class="form-input input-char-11" id="input-type-text-char-11"
-            name="input-type-text-char-11" type="text">
+        <input class="form-input input-char-11"
+            id="input-type-text-char-11" name="input-type-text-char-11"
+            type="text">
     </div>
 
     <div class="form-group">
         <label class="form-label " for="input-type-text-char-27">Inputfelt
             med klassen input-char-27 (27 tegn)</label>
-        <input class="form-input input-char-27" id="input-type-text-char-27"
-            name="input-type-text-char-27" type="text">
+        <input class="form-input input-char-27"
+            id="input-type-text-char-27" name="input-type-text-char-27"
+            type="text">
     </div>
 
 </div>

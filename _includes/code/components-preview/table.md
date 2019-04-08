@@ -19,11 +19,11 @@ title: Table.html
                     <td>Dagrenovation</td>
                     <td>Grøn</td>
                     <td>Madaffald, samt papir, pap eller plastik der ikke
-                        kan genanvendes, fordi der er madrester eller
-                        andet snask på.</td>
+                        kan genanvendes, fordi der er madrester eller andet
+                        snask på.</td>
                     <td>Alt det affald, du smider ud i din primære
-                        skraldespand, som er dagrenovationen, bliver
-                        hentet og kørt på forbrændingen. </td>
+                        skraldespand, som er dagrenovationen, bliver hentet
+                        og kørt på forbrændingen. </td>
                 </tr>
                 <tr>
                     <td>Bioaffald og kompost</td>
@@ -37,8 +37,8 @@ title: Table.html
                     <td>Hvid</td>
                     <td>Alle typer glas og flasker.</td>
                     <td>De hele vinflasker rengøres og genbruges af
-                        vinhuse, mens glasskårene bliver smeltet om til
-                        nyt glas.</td>
+                        vinhuse, mens glasskårene bliver smeltet om til nyt
+                        glas.</td>
                 </tr>
                 <tr>
                     <td>Elektronik</td>

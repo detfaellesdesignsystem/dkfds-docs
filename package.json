@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "dkfds": "^3.0.0",
+    "dkfds": "^4.0.0",
     "dkfds-plugins": "*",
     "easy-pdf-merge": "^0.2.0",
     "gulp-flatten": "^0.4.0",

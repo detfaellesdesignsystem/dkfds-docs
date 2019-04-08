@@ -63,7 +63,7 @@ subnav:
 <p><strong>Footer</strong></p>
 <div><img src="{{ site.baseurl }}/img/descriptionimages/Footer_eksempel.svg" class="bg-darkgrey p-5" alt="Viser opbygningen af en side i designsystemet"></div>
 
-<h3>Header</h3>
+<h2 id="header">Header</h2>
 <p>Headeren identificerer portal, ansvarlig myndighed og den bruger, der er logget ind med NemLog-in. Headeren fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.</p>
 <p>Headeren er ens på tværs af trin og undersider i en given selvbetjeningsløsning. Den er således et “ankerpunkt”, som brugeren altid kan vende tilbage til og orientere sig ved. </p>
 <p>En header består af et antal rækker, som vist nedenfor.</p>
@@ -81,7 +81,7 @@ subnav:
 <p>Brug kun rækker 3,4,5, samt knapper, links og ekstra navigation, når det er nødvendigt.</p>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/header-opbygning.png" alt="Viser opbygningen af designsystemets header"></figure>
 <h3 class="h5">Række 1 (obligatorisk)</h3>
-<p>Portal-logo, NemLog-in-oplysninger, eventuelt ”Log ud” knap.</p>
+<p>Portal-logo, NemLog-in-oplysninger og ”Log ud” knap.</p>
 <h3 class="h5">Række 2 (obligatorisk)</h3>
 <p>Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt support/kontakt oplysninger.</p>
 <h3 class="h5">Række 3 (frivillig)</h3>

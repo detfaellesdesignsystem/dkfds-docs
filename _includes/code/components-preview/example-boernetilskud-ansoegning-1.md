@@ -8,15 +8,17 @@ title: Example-boernetilskud-ansoegning-1.html
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem" aria-label="logo link"
-                class="logo"></a>
-            <button class="button button-secondary button-menu-open js-menu-open ml-auto"
+            <a href="javascript:void(0);" title="Hjem"
+                aria-label="logo link" class="logo"></a>
+            <button
+                class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><b class="username">Christian Emil Vestergaard Christiansen</b>
+                <p class="user">
+                    <b class="username">Christian Emil Vestergaard Christiansen</b>
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
@@ -50,8 +52,9 @@ title: Example-boernetilskud-ansoegning-1.html
     <div class="overlay"></div>
     <nav role="navigation" class=" nav">
         <!-- collapsible-->
-        <button class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
+        <button
+            class="button button-tertiary button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
 
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
@@ -60,20 +63,23 @@ title: Example-boernetilskud-ansoegning-1.html
                 <ul class="nav-primary">
                     <li>
                         <div class="overflow-menu">
-                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
+                            <button
+                                class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
                                 data-js-target="#headeroverflow1"
                                 aria-haspopup="true" aria-expanded="false">
                                 <span>Oversigt</span>
                             </button>
-                            <div class="overflow-menu-inner" id="headeroverflow1"
-                                aria-hidden="true">
+                            <div class="overflow-menu-inner"
+                                id="headeroverflow1" aria-hidden="true">
                                 <ul class="overflow-list">
                                     <li>
-                                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt">Overssigtsside
+                                        <a
+                                            href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt">Overssigtsside
                                             som liste</a>
                                     </li>
                                     <li>
-                                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt-2">Oversigt
+                                        <a
+                                            href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt-2">Oversigt
                                             med cards</a>
                                     </li>
                                 </ul>
@@ -86,28 +92,33 @@ title: Example-boernetilskud-ansoegning-1.html
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Kom godt i gang">
+                        <a href="#" class="nav-link"
+                            title="Kom godt i gang">
                             <span>Udbetalinger</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="#" class="nav-link"
+                            title="Fællesoffentlige krav">
                             <span>Sager</span>
                         </a>
                     </li>
                     <li>
                         <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1"
-                            class="nav-link current" title="Fællesoffentlige krav">
+                            class="nav-link current"
+                            title="Fællesoffentlige krav">
                             <span>Ansøgninger</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="#" class="nav-link"
+                            title="Fællesoffentlige krav">
                             <span>Ændringer</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="#" class="nav-link"
+                            title="Fællesoffentlige krav">
                             <span>Dokumentation</span>
                         </a>
                     </li>
@@ -117,7 +128,8 @@ title: Example-boernetilskud-ansoegning-1.html
         <!-- 3: Main navigation end-->
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b></p>
+            <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
+            </p>
             <a href="#" class="button button-secondary button-signout">
                 Log ud
             </a>
@@ -126,7 +138,8 @@ title: Example-boernetilskud-ansoegning-1.html
         <div class="solution-info-mobile">
             <p><b>Erhvervsministeriet</b></p>
             <p><button class="button-unstyled button-contact"
-                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button></p>
+                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+            </p>
         </div>
 
     </nav> <!-- collapsible nav end-->
@@ -154,7 +167,8 @@ title: Example-boernetilskud-ansoegning-1.html
                         </a>
                     </li>
                     <li>
-                        <a href='/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-2'>
+                        <a
+                            href='/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-2'>
                             2. Hvornår blev du eller bliver du enlig?
                         </a>
                     </li>
@@ -205,11 +219,13 @@ title: Example-boernetilskud-ansoegning-1.html
                         </div>
 
                         <div class="form-group ">
-                            <input id="checkbox-id-1" type="checkbox" name=""
-                                value="checkbox1_selected" class="form-checkbox  checkbox-large "
+                            <input id="checkbox-id-1" type="checkbox"
+                                name="" value="checkbox1_selected"
+                                class="form-checkbox  checkbox-large "
                                 disabled>
                             <label for="checkbox-id-1" class="">Keld
-                                Hedagaardsen <br> 353535-3535 <br> Fælles</label>
+                                Hedagaardsen <br> 353535-3535
+                                <br> Fælles</label>
                         </div>
 
                         <div class="alert alert-warning" role="alert"
@@ -225,21 +241,26 @@ title: Example-boernetilskud-ansoegning-1.html
                         </div>
 
                         <div class="form-group ">
-                            <input id="checkbox-id-2" type="checkbox" name=""
-                                value="checkbox2_selected" class="form-checkbox  checkbox-large "
+                            <input id="checkbox-id-2" type="checkbox"
+                                name="" value="checkbox2_selected"
+                                class="form-checkbox  checkbox-large "
                                 disabled>
                             <label for="checkbox-id-2" class="">Anita
-                                Hedagaardsen <br> 353535-3535 <br> Fælles</label>
+                                Hedagaardsen <br> 353535-3535
+                                <br> Fælles</label>
                         </div>
 
                         <div class="form-group ">
-                            <input id="checkbox-id-3" type="checkbox" name=""
-                                value="checkbox3_selected" class="form-checkbox  checkbox-large ">
-                            <label for="checkbox-id-3" class=""><b>Ylmig Hedagaardsen</b>
-                                <br> 353535-3535 <br> Fælles</label>
+                            <input id="checkbox-id-3" type="checkbox"
+                                name="" value="checkbox3_selected"
+                                class="form-checkbox  checkbox-large ">
+                            <label for="checkbox-id-3"
+                                class=""><b>Ylmig Hedagaardsen</b> <br> 353535-3535
+                                <br> Fælles</label>
                         </div>
 
-                        <button class="button button-secondary mt-4"><svg class="icon-svg " ><use xlink:href="#add"></use></svg>
+                        <button
+                            class="button button-secondary mt-4"><svg class="icon-svg "  ><use xlink:href="#add"></use></svg>
                             Tilføj barn</button>
                     </fieldset>
                     <div>
@@ -259,11 +280,17 @@ title: Example-boernetilskud-ansoegning-1.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span class="h5 weight-semibold">Eksempelstyrelsen</span></li>
-                    <li><a class="function-link" href="mailto:support@example.dk">support@example.dk</a></li>
+                    <li><span
+                            class="h5 weight-semibold">Eksempelstyrelsen</span>
+                    </li>
+                    <li><a class="function-link"
+                            href="mailto:support@example.dk">support@example.dk</a>
+                    </li>
                     <li><a class="function-link" href="tel:12 34 56 78">12
                             34 56 78</a></li>
-                    <li><a href="#" class="function-link">Tilgængelighedserklæring</a></li>
+                    <li><a href="#"
+                            class="function-link">Tilgængelighedserklæring</a>
+                    </li>
                     <li><a href="#" class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
