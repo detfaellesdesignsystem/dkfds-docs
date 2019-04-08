@@ -56,7 +56,7 @@ title: Example-kvittering-2.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
@@ -94,7 +94,7 @@ title: Example-kvittering-2.html
             <p class="font-lead">Nedenfor finder du dine indtastninger fra
                 de foregående sider.</p>
             <button
-                class="button button-secondary"><svg class="icon-svg " ><use xlink:href="#printer"></use></svg>
+                class="button button-secondary"><svg class="icon-svg "  ><use xlink:href="#printer"></use></svg>
                 Udskriv kvittering</button>
             <h2>Dine oplysninger</h2>
             <table

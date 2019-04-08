@@ -54,7 +54,7 @@ title: Example-praktikplads-page-4.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
 
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
@@ -119,10 +119,10 @@ title: Example-praktikplads-page-4.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg " ><use xlink:href="#printer"></use></svg>
+                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#printer"></use></svg>
                         Udskriv</a>
                     <a href=""
-                        class="function-link"><svg class="icon-svg " ><use xlink:href="#help-circle-outline"></use></svg>
+                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#help-circle-outline"></use></svg>
                         Hjælp</a>
                 </div>
             </div>

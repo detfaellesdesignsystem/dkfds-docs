@@ -74,6 +74,10 @@ description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke
               <li>Funktioner af mindre vigtighed bør du style som link.</li>
           </ul>
       </section>
+      <section>
+          <h2 class="h4">Retningslinjer for vedhæft fil</h2>
+          <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/dkfds-docs/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
+      </section>
     </article>
   </div>
 </div>
