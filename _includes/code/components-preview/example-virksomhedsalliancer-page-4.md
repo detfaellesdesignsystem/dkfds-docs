@@ -55,7 +55,7 @@ title: Example-virksomhedsalliancer-page-4.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Navn</b></p>
@@ -192,7 +192,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                     <tr>
                                         <td
                                             class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf
+                                            <svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf
                                         </td>
                                         <td
                                             class="align-text-right mt-4 mt-lg-0">
@@ -207,7 +207,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                     <tr>
                                         <td
                                             class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf
+                                            <svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf
                                         </td>
                                         <td
                                             class="align-text-right mt-4 mt-lg-0">
@@ -222,7 +222,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                     <tr>
                                         <td
                                             class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf
+                                            <svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf
                                         </td>
                                         <td
                                             class="align-text-right mt-4 mt-lg-0">

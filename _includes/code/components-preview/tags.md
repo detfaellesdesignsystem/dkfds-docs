@@ -12,15 +12,15 @@ title: Tags.html
 
     <p class="h5">Tags med ikon</p>
     <button class="tag ">Default
-        <svg class="icon-svg "  ><use xlink:href="#close-circle"></use></svg>
+        <svg class="icon-svg " ><use xlink:href="#close-circle"></use></svg>
     </button>
     <button class="tag tag-hover">Hover
-        <svg class="icon-svg "  ><use xlink:href="#close-circle"></use></svg>
+        <svg class="icon-svg " ><use xlink:href="#close-circle"></use></svg>
     </button>
     <button class="tag tag-active">Active
-        <svg class="icon-svg "  ><use xlink:href="#close-circle"></use></svg>
+        <svg class="icon-svg " ><use xlink:href="#close-circle"></use></svg>
     </button>
     <button class="tag focus">Focus
-        <svg class="icon-svg "  ><use xlink:href="#close-circle"></use></svg>
+        <svg class="icon-svg " ><use xlink:href="#close-circle"></use></svg>
     </button>
 </div>

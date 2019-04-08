@@ -57,7 +57,7 @@ title: Example-opsummering.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user">
@@ -79,7 +79,7 @@ title: Example-opsummering.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="" class="function-link">
-                        <svg class="icon-svg "  ><use xlink:href="#save"></use></svg>
+                        <svg class="icon-svg " ><use xlink:href="#save"></use></svg>
                         Gem kladde</a>
                 </div>
             </div>
