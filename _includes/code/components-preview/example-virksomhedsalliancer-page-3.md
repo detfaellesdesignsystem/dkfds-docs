@@ -225,6 +225,7 @@ title: Example-virksomhedsalliancer-page-3.html
                                         data-input-regex="^[0-9]{0,4}$"
                                         title="Indskriv årstal">
                                 </div>
+
                             </div>
                         </div>
                     </fieldset>
