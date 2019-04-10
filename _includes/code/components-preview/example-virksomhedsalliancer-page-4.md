@@ -22,7 +22,7 @@ title: Example-virksomhedsalliancer-page-4.html
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
-                    Log ud
+                    Log af
                 </a>
             </div>
         </div>
@@ -61,7 +61,7 @@ title: Example-virksomhedsalliancer-page-4.html
             <p class="user"><b>Navn</b></p>
 
             <a href="#" class="button button-secondary button-signout">
-                Log ud
+                Log af
             </a>
         </div>
 

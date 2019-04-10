@@ -22,7 +22,7 @@ title: Example-flytning-page-3.html
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
-                    Log ud
+                    Log af
                 </a>
             </div>
         </div>
@@ -62,7 +62,7 @@ title: Example-flytning-page-3.html
             <p class="user"><b>Navn</b></p>
 
             <a href="#" class="button button-secondary button-signout">
-                Log ud
+                Log af
             </a>
         </div>
 

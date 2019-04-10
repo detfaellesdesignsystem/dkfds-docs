@@ -16,7 +16,8 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
     <section>
          <ul>
           <li>Dato-komponenten består af 2 dele: 3 input-felter og en datepicker.</li>
-          <li>Inputfelterne bruger 'regex-input-mask' scriptet som forhindre brugeren i at indskrive mere end 2 tal for dag og måned, og 4 tal i år-inputtet. Derudover forhindre 'regex-input-mask' at brugeren indskriver tegn som ikke er tal. Eksempel for day og måned: <code> data-input-regex="^[0-9]{0,2}$"</code></li>
+          <li>Attributten <code>data-input-regex</code> håndteres af JavaScript via dkfds.js filen, som derfor bør importeres i projektet.
+           Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere end 2 tal for dag og måned, og 4 tal i år-inputtet derudover  Eksempel for dag og måned: <code> data-input-regex="^[0-9]{0,2}$"</code></li>
           <li>
             For at initialisere dato-komponenten skal <code>.date-group</code>-elementet have klassen <code>.js-calendar-group</code>. Derudover skal de tre inputfelter have følgende klasser:
             <ul>

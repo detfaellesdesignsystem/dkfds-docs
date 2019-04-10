@@ -20,7 +20,7 @@ title: Header-simple.html
                 <p class="user"><b class="username">Lone hansen</b> </p>
 
                 <a href="#" class="button button-secondary" role="button">
-                    Log ud
+                    Log af
                 </a>
             </div>
         </div>
@@ -57,7 +57,7 @@ title: Header-simple.html
         <div class="portal-info-mobile">
             <p class="user"><b>Lone Hansen</b></p>
             <a href="#" class="button button-secondary button-signout">
-                Log ud
+                Log af
             </a>
         </div>
 

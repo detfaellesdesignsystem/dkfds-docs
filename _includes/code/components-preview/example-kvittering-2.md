@@ -22,7 +22,7 @@ title: Example-kvittering-2.html
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
-                    Log ud
+                    Log af
                 </a>
             </div>
         </div>
@@ -63,7 +63,7 @@ title: Example-kvittering-2.html
             </p>
             <p class="mt-0">Københavns Urmager Værksted v/Martin Elsig</p>
             <a href="#" class="button button-secondary button-signout">
-                Log ud
+                Log af
             </a>
         </div>
 

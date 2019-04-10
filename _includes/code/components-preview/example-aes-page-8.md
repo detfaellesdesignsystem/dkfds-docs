@@ -22,7 +22,7 @@ title: Example-aes-page-8.html
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
-                    Log ud
+                    Log af
                 </a>
             </div>
         </div>
@@ -63,7 +63,7 @@ title: Example-aes-page-8.html
             <p class="user">
                 <b>Christian Emil Vestergaard Christiansen</b><br>Forsikringens Forsikringsfirma</p>
                 <a href="#" class="button button-secondary button-signout">
-                    Log ud
+                    Log af
                 </a>
         </div>
 

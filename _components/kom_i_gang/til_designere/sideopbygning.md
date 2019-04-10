@@ -81,7 +81,7 @@ subnav:
 <p>Brug kun rækker 3,4,5, samt knapper, links og ekstra navigation, når det er nødvendigt.</p>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/header-opbygning.png" alt="Viser opbygningen af designsystemets header"></figure>
 <h3 class="h5">Række 1 (obligatorisk)</h3>
-<p>Portal-logo, NemLog-in-oplysninger og ”Log ud” knap.</p>
+<p>Portal-logo, NemLog-in-oplysninger og ”Log af” knap.</p>
 <h3 class="h5">Række 2 (obligatorisk)</h3>
 <p>Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt support/kontakt oplysninger.</p>
 <h3 class="h5">Række 3 (frivillig)</h3>

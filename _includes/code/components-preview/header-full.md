@@ -19,7 +19,7 @@ title: Header-full.html
                     <b class="weight-semibold">Christian Emil Vestergaard Christensen</b><br>Københavns Urmager og Værksted v/Martin Elsig</p>
                     <a href="#" class="button button-secondary"
                         role="button">
-                        Log ud
+                        Log af
                     </a>
             </div>
         </div>
@@ -229,7 +229,7 @@ title: Header-full.html
             </p>
             <p>Københavns Urmager og Værksted v/Martin Elsig</p>
             <a href="#" class="button button-secondary" role="button">
-                Log ud
+                Log af
             </a>
         </div>
 

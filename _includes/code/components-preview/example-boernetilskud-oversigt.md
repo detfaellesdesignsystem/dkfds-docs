@@ -22,7 +22,7 @@ title: Example-boernetilskud-oversigt.html
                 </p>
 
                 <a href="#" class="button button-secondary" role="button">
-                    Log ud
+                    Log af
                 </a>
             </div>
         </div>
@@ -131,7 +131,7 @@ title: Example-boernetilskud-oversigt.html
             <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
             </p>
             <a href="#" class="button button-secondary button-signout">
-                Log ud
+                Log af
             </a>
         </div>
 

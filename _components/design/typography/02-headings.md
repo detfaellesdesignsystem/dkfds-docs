@@ -85,11 +85,12 @@ order: 02
           <ul>
               <li>Hold en stram overskriftsstruktur i koden. En h3 altid er under en h2, en h4 under en h3 osv. h1 er altid øverst i hierarkiet.</li>  
               <li>Du bør ikke springe overskriftsled over og fx gå direkte fra en h2 til en h4.</li>
-              <li>Hvis du visuelt vil have et andet udtryk, så brug en <code>>class="hX"</code> til at style overskriften om. Dermed bryder du ikke logikken for skærmlæsere, men får et andet visuelt udtryk på dine overskrifter.</li>
+              <li>Hvis du visuelt vil have et andet udtryk, så brug en <code>class="hX"</code> til at style overskriften om. Dermed bryder du ikke logikken for skærmlæsere, men får et andet visuelt udtryk på dine overskrifter.</li>
           </ul>
           <h5>Hvis du vil vide mere</h5>
           <ul>
             <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" class="icon-link">H42: Using h1-h6 to identify headings<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
           </ul>
       </section>
     </article>

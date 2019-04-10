@@ -19,7 +19,7 @@ title: Header-medium.html
                     <b class="weight-semibold">Christian Emil Vestergaard Christensen</b><br>Københavns Urmager og Værksted v/Martin Elsig</p>
                     <a href="#" class="button button-secondary"
                         role="button">
-                        Log ud
+                        Log af
                     </a>
             </div>
         </div>
@@ -98,7 +98,7 @@ title: Header-medium.html
         <div class="portal-info-mobile">
             <p class="user"><b>Ida Ester Petersen</b></p>
             <a href="#" class="button button-secondary button-signout">
-                Log ud
+                Log af
             </a>
         </div>
 
