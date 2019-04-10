@@ -53,7 +53,7 @@ subnav:
 <h2 class="mb-0" id="version-400">Version 4.0.0</h2>
 <p class="small-text mt-0">01-04-2019</p>
 <ul>
-    <li>Fjernet højde på cards</li>
+    <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Fjernet højde på cards</li>
     <li>Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.</li>
     <li>Fikset fokus border på faneblad</li>
 </ul>
@@ -62,7 +62,7 @@ subnav:
 <p class="small-text mt-0">27-03-2019</p>
 <ul>
     <li>Fjernet eksempler fra projekt</li>
-    <li>Ændret macros, så de er mere dynamiske, så flere projekter kan gøre brug af dem</li>
+    <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Ændret macros, så de er mere dynamiske, så flere projekter kan gøre brug af dem</li>
     <li>Fikset fejl med fokus på overflow menu i Firefox</li>
     <li>Fikset fejl med ol liste i flere niveauer</li>
     <li>Fjernet gammel JavaScript, som var årsag til fejl ved loading af javascript filen</li>
@@ -77,16 +77,16 @@ subnav:
 <p class="small-text mt-0">19-02-2019</p>
 <ul>
     <li>Tilføjet info om fiks af Microsoft Edge bug i navigation, hvor bullets blev vist trods styling</li>
-    <li>Defineret tilbage-knap</li>
+    <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Defineret tilbage-knap</li>
     <li>Tilføjet readonly eksempel i input felter</li>
     <li>Ændret Skjul/Vis eksempel ved brug af radio knap for at løse tilgængelighedsproblemer</li>
     <li>Fikset fejl på dropdown-menu i Internet Explorer, hvor pilen blev vist to gange</li>
     <li>Nederste border i header ændret til $outer-border</li>
     <li>Tilføjet klassen .nobullet-list, som kan bruges ved liste af links</li>
-    <li>Flyttet Pikaday datovælger plugin til Plugins-projektet</li>
+    <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Flyttet Pikaday datovælger plugin til Plugins-projektet</li>
     <li>Tilføjet .break-word klasse til brug i tabeller, hvor man bruger lange filnavne i kolonnerne</li>
     <li>Ændret disabled link farve</li>
-    <li>Fjernet $color-link-active farven, da den ikke længere bliver brugt</li>
+    <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Fjernet $color-link-active farven, da den ikke længere bliver brugt</li>
     <li>Opdateret styling og definition af eksterne links</li>
     <li>Ændret skrifttype tykkelse på søgefelts knappen</li>
 </ul>
@@ -112,19 +112,19 @@ subnav:
   <p class="small-text mt-0">14-01-2019</p>
   <ul>
     <li>
-      <b>Refaktoreret fra 'dkwds' til 'dkfds'</b>
+      <b><label class="color-warning badge badge-small mr-3">Breaking change</label>Refaktoreret fra 'dkwds' til 'dkfds'</b>
       <p class="m-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds">'dkfds'</a> i steden for 'dkwds'. </p>
     </li>
     <li class="mt-4">
-      <b>Bourbon er fjernet</b>
+      <b><label class="color-warning badge badge-small mr-3">Breaking change</label>Bourbon er fjernet</b>
       <p class="m-0">Biblioteket 'Bourbon' er ikke længere en del af designsystemet. Det vil derfor ikke længere være muligt at benytte sig af deres hjælpeklasser og funktioner. </p>
     </li>
     <li class="mt-4">
-      <b>Nyt gridsystem</b>
+      <b><label class="color-warning badge badge-small mr-3">Breaking change</label>Nyt gridsystem</b>
       <p class="m-0"> USDW's gamle float-grid (NEAT) og Bootstraps grid er fjernet. I steden for er USWD's nye grid inkluderet. Der er lavet tilpasninger af dette grid så det køre på de samme variable og klassenavne som i den forrige version af FDS. Der skal derfor ikke laves nogen tilpasninger for at få dette grid inkluderet.</p>
     </li>
     <li class="mt-4">
-      <b>Plugins project</b>
+      <b><label class="color-warning badge badge-small mr-3">Breaking change</label>Plugins project</b>
       <p class="m-0"> Datatables og SelectWoo er ikke længere en del af komponent-biblioteket. Der er derimod oprettet et nyt projekt (dkfds-plugins) hvor disse nu lever.</p>
     </li>
     <li class="mt-4">

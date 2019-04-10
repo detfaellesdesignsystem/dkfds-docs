@@ -8166,3 +8166,8 @@ code {
 .bg-darkgrey {
   background-color: #DCDCDC; }
 
+/* BADGE COLORS */
+.badge.color-warning {
+  background-color: #febb30;
+  color: #1a1a1a; }
+
