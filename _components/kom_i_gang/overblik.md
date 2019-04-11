@@ -13,7 +13,7 @@ lead: Det Fælles designsystem er en samling af kode og designretningslinjer, de
           <a href="/dkfds-docs/komigang/krav/" class="demo-component-box__img gettingstarted-box">
               <img src="{{ site.baseurl }}/img/componenticons/Krav.svg" alt="">
           </a>
-          <p><a href="/dkfds-docs/komigang/selvbetjeningsloesninger/">Krav</a></p>
+          <p><a href="/dkfds-docs/komigang/krav/">Krav</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">

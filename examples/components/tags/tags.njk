@@ -2,10 +2,10 @@
 {% from "components/tags/tags.njk" import tag as tag %}
 
 <div class="container">
-  {%- for tags in tag_example.items -%}
-    {%- if tags.label %}
-      <p class="h5">{{ tags.label }}</p>
-    {% endif -%}
-    {{ tag(tags.text, tags.class, tags.attribute, tags.icon) }}
-  {% endfor -%}
+{%- for example in tag_examples -%}
+{%- if example.label %}
+<p class="h5">{{ example.label }}</p>
+{% endif -%}
+{%- for tags in example.items -%}{{ tag(tags.text, tags.class, tags.attribute, tags.icon) }}{% endfor -%}
+{% endfor -%}
 </div>
