@@ -58,6 +58,14 @@ subnav:
     <li>Fikset fokus border på faneblad</li>
 </ul>
 
+<div class="alert alert-info" role="alert"
+    aria-label="Der vises fremhævet information">
+    <div class="alert-body">
+        <p class="alert-heading">Semantisk versionering</p>
+        <p class="alert-text">Fra denne release 4.0.0 og fremover vil FDS gøre brug af semantisk versionering.</p>
+    </div>
+</div>
+
 <h2 class="mb-0" id="version-303">Version 3.0.3</h2>
 <p class="small-text mt-0">27-03-2019</p>
 <ul>
