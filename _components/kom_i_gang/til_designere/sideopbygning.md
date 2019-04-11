@@ -24,7 +24,7 @@ subnav:
 ---
 <hr class="my-6" />
 <h2 id="grid">Grid (12 kolonner)</h2>
-<p>Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige bredde kolonner med 24 px afstand mellem hver kolonne. Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.</p>
+<p>Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige bredde kolonner med 32px (16px på hver side af en kolonne) afstand mellem hver kolonne. Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.</p>
 <p>I tablet- og mobilvisninger folder layoutet sammen til respektivt 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst.</p> 
 <h3>Responsivt med break points</h3>
 <p>Det Fælles Designsystem er responsivt og tilpasser sig således automatisk det tilgængelige vinduesareal.</p>

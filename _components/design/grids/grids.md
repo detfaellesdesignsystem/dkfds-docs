@@ -39,16 +39,16 @@ subnav:
         <thead>
             <tr>
                 <th></th>
-                <th>Extra small<br /><small>&lt;576px</small></th>
-                <th>Small<br /><small>&ge;576px</small></th>
-                <th>Medium<br /><small>&ge;768px</small></th>
-                <th>Large<br /><small>&ge;992px</small></th>
-                <th>Extra large<br /><small>&ge;1200px</small></th>
+                <th>Ekstra lille<br /><small>&lt;576px</small></th>
+                <th>Lille<br /><small>&ge;576px</small></th>
+                <th>Mellem<br /><small>&ge;768px</small></th>
+                <th>Stor<br /><small>&ge;992px</small></th>
+                <th>Ekstra stor<br /><small>&ge;1200px</small></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th>Max container width</th>
+                <th>Max. container bredde</th>
                 <td>None (auto)</td>
                 <td>None (auto)</td>
                 <td>None (auto)</td>
@@ -56,7 +56,7 @@ subnav:
                 <td>1140px</td>
             </tr>
             <tr>
-                <th>Class prefix</th>
+                <th>Klasser</th>
                 <td><code>.col-</code></td>
                 <td><code>.col-sm-</code></td>
                 <td><code>.col-md-</code></td>
@@ -64,20 +64,20 @@ subnav:
                 <td><code>.col-xl-</code></td>
             </tr>
             <tr>
-                <th># of columns</th>
+                <th>Antal kolonner</th>
                 <td colspan="5">12</td>
             </tr>
             <tr>
-                <th>Gutter width</th>
-                <td colspan="5">1rem (16px on each side of a column)</td>
+                <th>Afstand mellem kolonner (Gutter)</th>
+                <td colspan="5">32px (16px på hver side af en kolonne)</td>
             </tr>
             <tr>
-                <th>Nestable</th>
-                <td colspan="5">Yes</td>
+                <th>Kan indlejres</th>
+                <td colspan="5">Ja - man kan godt have rækker inde i en kolonne</td>
             </tr>
             <tr>
-                <th>Column ordring</th>
-                <td colspan="5">Yes</td>
+                <th>Ændre kolonners rækkefølge</th>
+                <td colspan="5">Ja</td>
             </tr>
         </tbody>
     </table>
