@@ -136,7 +136,7 @@ title: Example-virksomhedsalliancer-page-4.html
                 id="input-hint-message-id-advisors">Navne skal skrives i
                 samme rækkefølge, som landene er anført</span>
 
-            <textarea class="form-input input-width-m" placeholder="" id="id-advisors" name="Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet" type="text" ></textarea>
+            <textarea class="form-input input-width-m" rows="5" placeholder="" id="id-advisors" name="Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet" type="text" ></textarea>
         </div>
 
     </div>

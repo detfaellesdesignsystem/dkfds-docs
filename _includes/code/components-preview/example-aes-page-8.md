@@ -206,7 +206,7 @@ title: Example-aes-page-8.html
                     <label class="form-label "
                         for="id-comment-1-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" placeholder="" id="id-comment-1-expanded" name="Kommentar" type="text" ></textarea>
+                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-1-expanded" name="Kommentar" type="text" ></textarea>
                 </div>
 
             </div>
@@ -231,7 +231,7 @@ title: Example-aes-page-8.html
                     <label class="form-label "
                         for="id-comment-2-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" placeholder="" id="id-comment-2-expanded" name="Kommentar" type="text" ></textarea>
+                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-2-expanded" name="Kommentar" type="text" ></textarea>
                 </div>
 
             </div>
@@ -256,7 +256,7 @@ title: Example-aes-page-8.html
                     <label class="form-label "
                         for="id-comment-3-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" placeholder="" id="id-comment-3-expanded" name="Kommentar" type="text" ></textarea>
+                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-3-expanded" name="Kommentar" type="text" ></textarea>
                 </div>
 
             </div>
@@ -283,7 +283,7 @@ title: Example-aes-page-8.html
                     <label class="form-label "
                         for="id-comment-4-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" placeholder="" id="id-comment-4-expanded" name="Kommentar" type="text" ></textarea>
+                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-4-expanded" name="Kommentar" type="text" ></textarea>
                 </div>
 
             </div>

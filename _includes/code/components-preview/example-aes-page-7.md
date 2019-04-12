@@ -240,7 +240,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (Frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -277,7 +277,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (Frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-2-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-2-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -352,7 +352,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-3-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-3-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -389,7 +389,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-4-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-4-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -464,7 +464,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (Frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-5-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-5-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -501,7 +501,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (Frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-6-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-6-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
