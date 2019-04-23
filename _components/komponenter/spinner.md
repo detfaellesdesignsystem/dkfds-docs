@@ -12,10 +12,10 @@ lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at ind
 {% include code/accordion.html component="spinner" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="code-spinner-docs">
+      aria-expanded="false" aria-controls="code-spinner-docs">
     Implementering
   </button>
-  <div id="code-spinner-docs" aria-hidden="false" class="accordion-content">
+  <div id="code-spinner-docs" aria-hidden="true" class="accordion-content">
     <section>
         <p>For at implementere en spinner tilføjes en <code>.spinner</code> class på en lukket div.</p>
         <p>Eksempel: <code>&lt;div class="spinner"&gt;&lt;/div&gt;</code></p>

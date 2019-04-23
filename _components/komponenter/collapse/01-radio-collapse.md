@@ -9,10 +9,10 @@ lead:
 {% include code/accordion.html component="radio-toggle-content" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="radio-toggle-content-tech">
+      aria-expanded="false" aria-controls="radio-toggle-content-tech">
     Implementering
   </button>
-  <div id="radio-toggle-content-tech" aria-hidden="false" class="accordion-content">
+  <div id="radio-toggle-content-tech" aria-hidden="true" class="accordion-content">
     <section>
         <p>For at initialisere collapse funktionaliteten på en radioknap skal <code>input[type=radio]</code> have følgende:</p>
         <ul>

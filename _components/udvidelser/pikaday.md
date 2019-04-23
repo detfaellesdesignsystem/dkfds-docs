@@ -14,7 +14,7 @@ alertwarningtext: Pikaday er ikke inkluderet i kernen af Det Fælles Designsyste
 {% include code/accordion.html component="date-input-datepicker" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-    aria-expanded="true" aria-controls="tech-docs">
+    aria-expanded="false" aria-controls="tech-docs">
     Implementering
   </button>
   <div id="tech-docs" class="accordion-content">

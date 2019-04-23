@@ -9,10 +9,10 @@ lead:
 {% include code/accordion.html component="table--responsive" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-    aria-expanded="true" aria-controls="tech-responsive-docs">
+    aria-expanded="false" aria-controls="tech-responsive-docs">
     Implementering
   </button>
-  <div id="tech-responsive-docs" class="accordion-content">
+  <div id="tech-responsive-docs" aria-hidden="true" class="accordion-content">
       <section>
         <h3 class="h4">Responsive headers</h3>
          <p><code>data-title</code> attribut bør tilføjes til hver <code>td</code>, således at en label bliver tilføjet for hver celle på mindre skærme.</p>

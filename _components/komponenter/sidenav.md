@@ -17,10 +17,10 @@ description: Sidenavigation anvendes til at afspejle et navigations-hierarki i o
 {% include code/accordion.html component="sidenav--compare" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="sidenav-tech-docs">
+      aria-expanded="false" aria-controls="sidenav-tech-docs">
     Implementering
   </button>
-  <div id="sidenav-tech-docs" aria-hidden="false" class="accordion-content">
+  <div id="sidenav-tech-docs" aria-hidden="true" class="accordion-content">
     <section>
         <h2 class="h4">Sidenavigation</h2>
         <h3 class="h5">Aktive menupunkter</h3>

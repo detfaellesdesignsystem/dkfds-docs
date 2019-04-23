@@ -11,10 +11,10 @@ lead: "Faneblade udgør den vandrette eller horisontale navigation i en løsning
 {% include code/accordion.html component="tabnav" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="code-tabnav-docs">
+      aria-expanded="false" aria-controls="code-tabnav-docs">
     Implementering
   </button>
-  <div id="code-tabnav-docs" aria-hidden="false" class="accordion-content">
+  <div id="code-tabnav-docs" aria-hidden="true" class="accordion-content">
     <section>
         <ul class="content-list">
           <li>Det aktive menupunkt skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
