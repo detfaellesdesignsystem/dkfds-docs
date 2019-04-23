@@ -11,7 +11,7 @@ alertwarningtext: Bruger man udvidelser skal de styles, så de visuelt passer in
 <div class="row">
  <div class="col-12 col-md-4">
       <div class="demo-component-box">
-          <a href="/dkfds-docs/udvidelser/datatables/" class="demo-component-box__img extension-box">
+          <a href="/dkfds-docs/udvidelser/datatables/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Avancerede_Tabeller.svg" alt="">
           </a>
           <p><a href="/dkfds-docs/udvidelser/datatables/">Avancerede tabeller</a></p>
@@ -19,7 +19,7 @@ alertwarningtext: Bruger man udvidelser skal de styles, så de visuelt passer in
   </div>
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
-          <a href="/dkfds-docs/udvidelser/selectwoo-multiselect/" class="demo-component-box__img extension-box">
+          <a href="/dkfds-docs/udvidelser/selectwoo-multiselect/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Multiselect.svg" alt="">
           </a>
           <p><a href="/dkfds-docs/udvidelser/selectwoo-multiselect/">Multiselect dropdown</a></p>
@@ -27,7 +27,7 @@ alertwarningtext: Bruger man udvidelser skal de styles, så de visuelt passer in
   </div>
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
-          <a href="/dkfds-docs/udvidelser/pikaday/" class="demo-component-box__img extension-box">
+          <a href="/dkfds-docs/udvidelser/pikaday/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Datepicker.svg" alt="">
           </a>
           <p><a href="/dkfds-docs/udvidelser/pikaday/">Datepicker</a></p>
