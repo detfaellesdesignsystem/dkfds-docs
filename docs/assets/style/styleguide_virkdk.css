@@ -4653,7 +4653,8 @@ input[readonly][type=text], textarea[readonly] {
   color: #1a1a1a;
   border: none;
   cursor: default;
-  padding: 0; }
+  padding: 0;
+  pointer-events: none; }
 
 .form-checkbox,
 .form-radio {
