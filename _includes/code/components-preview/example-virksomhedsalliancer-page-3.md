@@ -221,7 +221,7 @@ title: Example-virksomhedsalliancer-page-3.html
                                         for="date_of_year_3">År</label>
                                     <input
                                         class="form-input js-calendar-year-input"
-                                        for="date_of_year_3" type="tel"
+                                        id="date_of_year_3" type="tel"
                                         min="1900" max="3000" maxlength="4"
                                         pattern="^[0-9]{0,4}$"
                                         data-input-regex="^[0-9]{0,4}$"
