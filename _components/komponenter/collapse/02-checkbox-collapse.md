@@ -9,10 +9,10 @@ lead:
 {% include code/accordion.html component="checkbox-toggle-content" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="checkbox-toggle-content-tech">
+      aria-expanded="false" aria-controls="checkbox-toggle-content-tech">
     Implementering
   </button>
-  <div id="checkbox-toggle-content-tech" aria-hidden="false" class="accordion-content">
+  <div id="checkbox-toggle-content-tech" aria-hidden="true" class="accordion-content">
     <section>
         <p>For at initialisere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
         <ul>

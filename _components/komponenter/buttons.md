@@ -59,7 +59,7 @@ description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke
       <section>
           <h2 class="h4">Brugervenlighed</h2>
           <h3 class="h5">Anvendes til</h3>
-          <p>Du kan bruge knapper til at anvise centrale funktioner til brugerne som fx ”Gem”, ”Hent”, ”Log ind” og ”Log ud”.</p>
+          <p>Du kan bruge knapper til at anvise centrale funktioner til brugerne som fx ”Gem”, ”Hent”, ”Log ind” og ”Log af”.</p>
           <h3 class="h5">Anvendes ikke til</h3>
           <p>Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anvende link.</p>
           <h3 class="h5">Vejledning</h3>

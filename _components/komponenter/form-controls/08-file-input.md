@@ -9,10 +9,10 @@ lead: Lader brugeren vælge en fil.
 {% include code/accordion.html component="file-input" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="file-input-tech">
+      aria-expanded="false" aria-controls="file-input-tech">
     Implementering
   </button>
-  <div id="file-input-tech" aria-hidden="false" class="accordion-content">
+  <div id="file-input-tech" aria-hidden="true" class="accordion-content">
     <section>
         <p>Vi anbefaler at bruge det indbyggede input felt til filer <code>type="file"</code> frem for en skræddersyet løsning.</p>
         <p>Årsagen til dette er:</p>

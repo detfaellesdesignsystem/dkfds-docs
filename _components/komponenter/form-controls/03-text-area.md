@@ -8,6 +8,17 @@ lead:
 {% include code/preview.html component="text-area" %}
 {% include code/accordion.html component="text-area" %}
 <div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="text-area-tech">
+    Implementering
+  </button>
+  <div id="text-area-tech" aria-hidden="true" class="accordion-content">
+    <article>
+      <section>
+        <p>Sæt højden på et textarea ved brug af <code>rows</code> attributten.</p>
+      </section>
+    </article>
+  </div>
+</div><div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="text-area-docs">
     Retningslinjer

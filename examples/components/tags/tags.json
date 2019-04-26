@@ -1,10 +1,10 @@
 {
-  "tag_example": {
+  "tag_examples": [
+    {"label": "Tags",
     "items": [
       {
         "text": "Default",
-        "class": "",
-        "label": "Tags"
+        "class": ""
       },
       {
         "text": "Hover",
@@ -17,28 +17,30 @@
       {
         "text": "Focus",
         "class": "focus"
-      },
-      {
-        "text": "Default",
-        "class": "",
-        "label": "Tags med ikon",
-        "icon": "close-circle"
-      },
-      {
-        "text": "Hover",
-        "class": "tag-hover",
-        "icon": "close-circle"
-      },
-      {
-        "text": "Active",
-        "class": "tag-active",
-        "icon": "close-circle"
-      },
-      {
-        "text": "Focus",
-        "class": "focus",
-        "icon": "close-circle"
-      }
-    ]
-  }
+      }]},
+    {"label": "Tags med ikon",
+      "items": [
+        {
+          "text": "Default",
+          "class": "",
+          "icon": "close-circle"
+        },
+        {
+          "text": "Hover",
+          "class": "tag-hover",
+          "icon": "close-circle"
+        },
+        {
+          "text": "Active",
+          "class": "tag-active",
+          "icon": "close-circle"
+        },
+        {
+          "text": "Focus",
+          "class": "focus",
+          "icon": "close-circle"
+        }
+      ]
+    }
+  ]
 }

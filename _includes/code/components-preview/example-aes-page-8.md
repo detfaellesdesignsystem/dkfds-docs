@@ -9,7 +9,7 @@ title: Example-aes-page-8.html
     <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo"></a>
+                aria-label="logo link" class="logo alert-leave"></a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,8 +21,9 @@ title: Example-aes-page-8.html
                     <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
                 </p>
 
-                <a href="#" class="button button-secondary" role="button">
-                    Log ud
+                <a href="#" class="button button-secondary alert-leave"
+                    role="button">
+                    Log af
                 </a>
             </div>
         </div>
@@ -32,7 +33,8 @@ title: Example-aes-page-8.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link">
+                <a href="#" title="Hjem" aria-label="logo link"
+                    class="alert-leave2">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
             </div>
@@ -63,7 +65,7 @@ title: Example-aes-page-8.html
             <p class="user">
                 <b>Christian Emil Vestergaard Christiansen</b><br>Forsikringens Forsikringsfirma</p>
                 <a href="#" class="button button-secondary button-signout">
-                    Log ud
+                    Log af
                 </a>
         </div>
 
@@ -206,7 +208,7 @@ title: Example-aes-page-8.html
                     <label class="form-label "
                         for="id-comment-1-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" placeholder="" id="id-comment-1-expanded" name="Kommentar" type="text" ></textarea>
+                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-1-expanded" name="Kommentar" type="text" ></textarea>
                 </div>
 
             </div>
@@ -231,7 +233,7 @@ title: Example-aes-page-8.html
                     <label class="form-label "
                         for="id-comment-2-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" placeholder="" id="id-comment-2-expanded" name="Kommentar" type="text" ></textarea>
+                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-2-expanded" name="Kommentar" type="text" ></textarea>
                 </div>
 
             </div>
@@ -256,7 +258,7 @@ title: Example-aes-page-8.html
                     <label class="form-label "
                         for="id-comment-3-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" placeholder="" id="id-comment-3-expanded" name="Kommentar" type="text" ></textarea>
+                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-3-expanded" name="Kommentar" type="text" ></textarea>
                 </div>
 
             </div>
@@ -283,7 +285,7 @@ title: Example-aes-page-8.html
                     <label class="form-label "
                         for="id-comment-4-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" placeholder="" id="id-comment-4-expanded" name="Kommentar" type="text" ></textarea>
+                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-4-expanded" name="Kommentar" type="text" ></textarea>
                 </div>
 
             </div>

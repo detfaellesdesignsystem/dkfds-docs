@@ -4278,6 +4278,8 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
   padding: 0;
   padding-left: 8px;
   padding-right: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
   border-radius: 4px;
   border: none;
   font-size: 1.6rem;
@@ -4297,9 +4299,8 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
   @media (min-width: 576px) {
     .tag {
       width: auto; } }
-  @media (max-width: 767px) {
-    .tag + .tag {
-      margin-top: 8px; } }
+  .tag + .tag {
+    margin-bottom: 8px; }
   .tag:hover, .tag.tag-hover {
     background-color: #747474; }
   .tag:active, .tag.tag-active {
@@ -4310,15 +4311,6 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
     border-color: #747474;
     outline-color: #747474;
     position: relative; }
-    .tag.focus:after, .tag:focus:after {
-      content: "";
-      background: #747474;
-      position: absolute;
-      width: calc(100% + 4px);
-      height: calc(100% + 4px);
-      left: -2px;
-      top: -2px;
-      z-index: -1; }
   .tag .icon-svg {
     float: right;
     margin: 0px 0px 0px 5px;
@@ -4588,11 +4580,8 @@ figure {
 table .form-input {
   margin-top: 0; }
 
-table textarea.form-input {
-  height: 4rem; }
-
 textarea.form-input {
-  height: 16rem; }
+  height: auto; }
 
 .form-select {
   border: 1px solid #747474;
@@ -4665,7 +4654,8 @@ input[readonly][type=text], textarea[readonly] {
   color: #1a1a1a;
   border: none;
   cursor: default;
-  padding: 0; }
+  padding: 0;
+  pointer-events: none; }
 
 .form-checkbox,
 .form-radio {
@@ -5735,7 +5725,7 @@ footer .footer-theme {
       .modal .modal__header {
         padding-right: 48px; } }
   .modal .modal__title {
-    margin: 0; }
+    margin: 0 48px 0 0; }
   .modal .modal__content {
     margin-top: 8px; }
     .modal .modal__content > *:first-child {
@@ -5898,17 +5888,17 @@ footer .footer-theme {
         padding-right: 12px; } }
   @media (min-width: 992px) {
     .nav-primary button[aria-expanded=true] span {
-      border-bottom-color: #44831E;
-      border-bottom-color: #44831E;
-      border-bottom-color: #44831E; } }
+      border-bottom: 7px solid #44831E;
+      border-bottom: 7px solid #44831E;
+      border-bottom: 7px solid #44831E; } }
   @media (max-width: lg) {
     .nav-primary .nav-link:hover {
       background-color: #F5F5F5; } }
   @media (min-width: 992px) {
     .nav-primary .nav-link:hover span {
-      border-bottom-color: #44831E;
-      border-bottom-color: #44831E;
-      border-bottom-color: #44831E; } }
+      border-bottom: 7px solid #44831E;
+      border-bottom: 7px solid #44831E;
+      border-bottom: 7px solid #44831E; } }
   @media (min-width: 992px) {
     .nav-primary .nav-link span {
       display: block;
@@ -5916,9 +5906,9 @@ footer .footer-theme {
       padding-bottom: 9px; } }
   @media (min-width: 992px) {
     .nav-primary .current span {
-      border-bottom-color: #44831E;
-      border-bottom-color: #44831E;
-      border-bottom-color: #44831E; } }
+      border-bottom: 7px solid #44831E;
+      border-bottom: 7px solid #44831E;
+      border-bottom: 7px solid #44831E; } }
   .nav-primary a.current {
     font-weight: 600;
     color: #44831E; }
@@ -5973,17 +5963,19 @@ footer .footer-theme {
   line-height: 2.4rem;
   display: block;
   padding-top: calc(16px - 1px);
-  padding-bottom: calc(16px - 1px);
+  padding-bottom: 0;
   white-space: nowrap;
   width: 100%; }
   @media (min-width: 992px) {
     .nav-primary .overflow-menu .button-overflow-menu {
       width: unset; } }
   .nav-primary .overflow-menu .button-overflow-menu span {
-    padding-right: 24px; }
+    padding-right: 24px;
+    padding-bottom: 9px;
+    display: block; }
   @media (min-width: 992px) {
     .nav-primary .overflow-menu .button-overflow-menu:hover span {
-      border-bottom-color: #44831E; } }
+      border-bottom: 7px solid #44831E; } }
   .nav-primary .overflow-menu .button-overflow-menu:focus, .nav-primary .overflow-menu .button-overflow-menu:active {
     outline: 4px solid #747474; }
   .nav-primary .overflow-menu .button-overflow-menu:hover {
@@ -6870,7 +6862,6 @@ a.skipnav {
           margin-right: 0;
           margin-bottom: 0; } }
       .tabnav li a:hover {
-        color: #44831E;
         box-shadow: inset 0px -7px 0px 0px #44831E; }
       .tabnav li a:focus {
         outline: 4px solid #747474; }
@@ -8178,4 +8169,9 @@ code {
 
 .bg-darkgrey {
   background-color: #DCDCDC; }
+
+/* BADGE COLORS */
+.badge.color-warning {
+  background-color: #febb30;
+  color: #1a1a1a; }
 

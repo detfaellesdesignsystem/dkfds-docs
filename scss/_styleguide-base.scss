@@ -131,6 +131,7 @@
 .color-warning {
   background-color: $color-warning;
 }
+
 .color-info {
   background-color: $color-info;
 }
@@ -983,4 +984,10 @@ code {
 }
 .bg-darkgrey{
   background-color: $color-gray-mediumpale;
+}
+/* BADGE COLORS */
+
+.badge.color-warning {
+  background-color: $color-warning;
+  color: $color-black;
 }

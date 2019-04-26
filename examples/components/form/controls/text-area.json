@@ -4,13 +4,15 @@
       {
         "id": "input-area",
         "label": "Tekstområde med label",
-        "name": "input-area"
+        "name": "input-area",
+        "rows": 5
       },
       {
         "id": "input-error",
         "label": "Tekstområde med fejlbesked",
         "name": "input-error",
-        "error": "Hjælpsom fejlbesked"
+        "error": "Hjælpsom fejlbesked",
+        "rows": 5
       }
     ]
   }

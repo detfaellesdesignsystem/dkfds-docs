@@ -8,7 +8,8 @@ title: Header-medium.html
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="#" title="Home" aria-label="Home" class="logo"></a>
+            <a href="#" title="Home" aria-label="Home"
+                class="logo alert-leave"></a>
             <button
                 class="button button-tertiary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -17,9 +18,9 @@ title: Header-medium.html
             <div class="portal-info">
                 <p class="user">
                     <b class="weight-semibold">Christian Emil Vestergaard Christensen</b><br>Københavns Urmager og Værksted v/Martin Elsig</p>
-                    <a href="#" class="button button-secondary"
+                    <a href="#" class="button button-secondary alert-leave"
                         role="button">
-                        Log ud
+                        Log af
                     </a>
             </div>
         </div>
@@ -29,17 +30,16 @@ title: Header-medium.html
     <div class="solution-header">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Home" aria-label="Home">En længere
-                    løsningstitel</a>
+                <a href="#" title="Home" aria-label="Home"
+                    class="alert-leave2">En længere løsningstitel</a>
             </div>
 
             <!--2B: Solution header: Authority name + text-->
             <div class="solution-info">
                 <!-- nav-secondary -->
                 <h6 class="h5 authority-name">Myndighedsnavn</h6>
-                <p>Support: 12 34 56 78 · <button
-                        class="button-unstyled button-contact"
-                        data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+                <p>Support: 12 34 56 78 · <a href="#"
+                        class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
                 </p>
             </div>
         </div>
@@ -88,7 +88,7 @@ title: Header-medium.html
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
-                    <a href=""
+                    <a href="#"
                         class="function-link"><svg class="icon-svg "  aria-hidden ="true"><use xlink:href="#printer"></use></svg>Funktionsikon</a>
                 </div>
             </div>
@@ -97,16 +97,16 @@ title: Header-medium.html
 
         <div class="portal-info-mobile">
             <p class="user"><b>Ida Ester Petersen</b></p>
-            <a href="#" class="button button-secondary button-signout">
-                Log ud
+            <a href="#"
+                class="button button-secondary button-signout alert-leave">
+                Log af
             </a>
         </div>
 
         <div class="solution-info-mobile">
             <h6 class="h5 authority-name">Myndighedsnavn</h6>
-            <p>Support: 12 34 56 78 · <button
-                    class="button-unstyled button-contact"
-                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+            <p>Support: 12 34 56 78 · <a href="#"
+                    class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
             </p>
         </div>
 

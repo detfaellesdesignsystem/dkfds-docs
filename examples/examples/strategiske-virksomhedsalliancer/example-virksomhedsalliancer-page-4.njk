@@ -25,7 +25,7 @@
         <p class="user"><b>Navn</b></p>
         {# <p class="mt-0">Københavns Urmager Værksted v/Martin Elsig</p> #}
         <a href="#" class="button button-secondary button-signout">
-          Log ud
+          Log af
         </a>
       </div>
 
@@ -75,7 +75,7 @@
     ) }}
     <h1>Tilskud til land</h1>
     <div class="mt-0">
-        {{textarea("id-advisors", "Navn(-e) på rådgivere på ambassaden/generalkonsulatet", "", "input-width-m", "Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet", "", "", "Navne skal skrives i samme rækkefølge, som landene er anført")}}
+        {{textarea("id-advisors", "Navn(-e) på rådgivere på ambassaden/generalkonsulatet", "", "input-width-m", "Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet", "", "", "Navne skal skrives i samme rækkefølge, som landene er anført", "", 5)}}
     </div>
     <div class="mt-6">
         {{textinput("id-companyalliance", "Navn på virksomhedsalliance", "", "input-width-m", "", "Input til navn på virksomhedsalliance", "", false, "")}}
