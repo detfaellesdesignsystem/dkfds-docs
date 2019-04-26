@@ -8,8 +8,6 @@ subcategory: Komponenter
 lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links eller knapper. Når brugeren klikker på menulinjen, folder listen sig ud. 
 ---
 
-{% include code/preview.html component="overflow-menu" %}
-{% include code/accordion.html component="overflow-menu" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="overflow-docs">
@@ -75,4 +73,4 @@ lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links el
   </div>
 </div>
 
-
+{% include child-sections.html parent='Overflowmenu' %}
