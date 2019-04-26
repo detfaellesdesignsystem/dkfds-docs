@@ -372,7 +372,7 @@
     padding: 8px 16px 8px 16px;
     margin-bottom: 0rem;
     margin-top: 0rem;
-  
+
     .text-white {
       color:$color-white;
     }
@@ -498,7 +498,7 @@
   }
 }
 
-//------------ Code 
+//------------ Code
 code,
 pre {
   background-color: $color-gray-pale;
@@ -575,6 +575,10 @@ code {
     }
   }
 }
+.page-tringuide-overflowmenu-html .container,
+.page-tringuide-responsive-overflowmenu-html .container{
+  min-height: 400px;
+}
 .page-basic-collapse-html, .page-modal-html, .page-text-input-html, .page-tags-html, .page-search-html  .container{
   padding-top: 4px;
   padding-bottom: 4px;
@@ -590,9 +594,6 @@ code {
 }
 .page-basic-collapse-html{
   min-height: 150px;
-}
-.page-tags-html .container{
-  min-height: 180px;
 }
 .page-date-input-html{
   & .container{
@@ -740,7 +741,7 @@ code {
 
   .button {
     background-color: black;
-    border-color: white !important; 
+    border-color: white !important;
     display: inline;
     &:hover, &:visited {
       color: white;

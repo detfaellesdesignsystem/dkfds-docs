@@ -1,0 +1,38 @@
+{
+  "sidenavsInformation":
+  {
+    "links": [
+      {
+        "text": "Parent link",
+        "information": "Informationstekst for parent link"
+      },
+      {
+        "text": "Current page",
+        "information": "Informationstekst for current link",
+        "current": true,
+        "links": [
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link",
+            "active": true
+          },
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link"
+          }
+        ]
+      },
+      {
+        "text": "Another link",
+        "information": "Informationstekst for another link"
+      }
+    ]
+  }
+}

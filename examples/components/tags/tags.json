@@ -1,6 +1,6 @@
 {
-  "tag_examples": [
-    {"label": "Tags",
+  "tag_examples":
+  {
     "items": [
       {
         "text": "Default",
@@ -17,30 +17,7 @@
       {
         "text": "Focus",
         "class": "focus"
-      }]},
-    {"label": "Tags med ikon",
-      "items": [
-        {
-          "text": "Default",
-          "class": "",
-          "icon": "close-circle"
-        },
-        {
-          "text": "Hover",
-          "class": "tag-hover",
-          "icon": "close-circle"
-        },
-        {
-          "text": "Active",
-          "class": "tag-active",
-          "icon": "close-circle"
-        },
-        {
-          "text": "Focus",
-          "class": "focus",
-          "icon": "close-circle"
-        }
-      ]
-    }
-  ]
+      }
+    ]
+  }
 }
