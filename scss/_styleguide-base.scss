@@ -372,7 +372,7 @@
     padding: 8px 16px 8px 16px;
     margin-bottom: 0rem;
     margin-top: 0rem;
-  
+
     .text-white {
       color:$color-white;
     }
@@ -498,7 +498,7 @@
   }
 }
 
-//------------ Code 
+//------------ Code
 code,
 pre {
   background-color: $color-gray-pale;
@@ -740,7 +740,7 @@ code {
 
   .button {
     background-color: black;
-    border-color: white !important; 
+    border-color: white !important;
     display: inline;
     &:hover, &:visited {
       color: white;
@@ -988,6 +988,10 @@ code {
 /* BADGE COLORS */
 
 .badge.color-warning {
-  background-color: $color-warning;
+  background-color: $color-warning-light;
+  color: $color-black;
+}
+.badge.color-info {
+  background-color: $color-info-light;
   color: $color-black;
 }

@@ -6,6 +6,8 @@ category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for dkfds
 subnav:
+- text: Version 4.1.0
+  href: '#version-410'
 - text: Version 4.0.1
   href: '#version-401'
 - text: Version 4.0.0
@@ -36,6 +38,19 @@ subnav:
 
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
+
+<h2 class="mb-0" id="version-401">Version 4.1.0</h2>
+<p class="small-text mt-0">26-04-2019</p>
+<ul>
+    <li><label class="color-info badge badge-small mr-3">Change</label>Fjernet fast højde på tekstområde (textarea) - man kan/bør nu sætte højden med rows attributten</li>
+    <li>Fjernet tekstmarkøren på et read only felt i Internet Explorer</li>
+    <li>Tilføjet eksempler på advarsel, når man forlader siden i eksempelløsningerne</li>
+    <li>Tilføjet afstand af tags, når de fylder flere linjer</li>
+    <li>Fjernet primærfarve på teksten i fanebladmenu ved hover</li>
+    <li>Fikset fokusramme på faneblad</li>
+    <li>Fikset fejl i modalvindue, hvor overskriften blev overlappet af luk knappen</li>
+    <li><label class="color-info badge badge-small mr-3">Change</label>Log ud skal nu hedde Log af</li>
+</ul>
 
 <h2 class="mb-0" id="version-401">Version 4.0.1</h2>
 <p class="small-text mt-0">08-04-2019</p>
