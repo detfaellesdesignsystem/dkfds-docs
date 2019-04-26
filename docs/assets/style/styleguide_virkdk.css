@@ -8171,7 +8171,11 @@ code {
 
 /* BADGE COLORS */
 .badge.color-warning {
-  background-color: #febb30;
+  background-color: #ffeecc;
+  color: #1a1a1a; }
+
+.badge.color-info {
+  background-color: #e2f2fb;
   color: #1a1a1a; }
 
 .is-neutral {
