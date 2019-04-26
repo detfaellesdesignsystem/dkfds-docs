@@ -1,26 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="180px" height="118px" viewBox="0 0 180 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>Multiselect dropdown_With_BG</title>
+<svg width="220px" height="160px" viewBox="0 0 220 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Multiselect-with-dropshadow</title>
     <desc>Created with Sketch.</desc>
-    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Overview_illustrationer_Ver02" transform="translate(-511.000000, -3331.000000)">
-            <g id="Multiselect-dropdown" transform="translate(511.000000, 3331.000000)">
-                <rect id="Rectangle-6" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="180" height="118"></rect>
-                <rect id="Rectangle-15" fill="#DCDCDC" fill-rule="nonzero" x="36" y="102" width="132" height="4"></rect>
-                <rect id="Rectangle-15" fill="#DCDCDC" fill-rule="nonzero" x="36" y="72" width="132" height="4"></rect>
-                <rect id="Rectangle-15" fill="#DCDCDC" fill-rule="nonzero" x="36" y="42" width="132" height="4"></rect>
-                <path d="M14.1714286,68 L22.1714286,68 C23.2759981,68 24.1714286,68.8954305 24.1714286,70 L24.1714286,78 C24.1714286,79.1045695 23.2759981,80 22.1714286,80 L14.1714286,80 C13.0668591,80 12.1714286,79.1045695 12.1714286,78 L12.1714286,70 C12.1714286,68.8954305 13.0668591,68 14.1714286,68 Z M21.7000241,70.8619288 L17.0858258,75.4761271 L14.6428331,73.0331344 L13.7000241,73.9759435 L17.0858258,77.3617452 L22.6428331,71.8047379 L21.7000241,70.8619288 Z" id="Box" fill="#1A1A1A"></path>
-                <path d="M14.1714286,98 L22.1714286,98 C23.2759981,98 24.1714286,98.8954305 24.1714286,100 L24.1714286,108 C24.1714286,109.104569 23.2759981,110 22.1714286,110 L14.1714286,110 C13.0668591,110 12.1714286,109.104569 12.1714286,108 L12.1714286,100 C12.1714286,98.8954305 13.0668591,98 14.1714286,98 Z M21.7000241,100.861929 L17.0858258,105.476127 L14.6428331,103.033134 L13.7000241,103.975943 L17.0858258,107.361745 L22.6428331,101.804738 L21.7000241,100.861929 Z" id="Box-Copy" fill="#1A1A1A"></path>
-                <path d="M14.0588235,39.5441176 C13.7745593,39.5441176 13.5441176,39.7745593 13.5441176,40.0588235 L13.5441176,47.9411765 C13.5441176,48.2254407 13.7745593,48.4558824 14.0588235,48.4558824 L21.9411765,48.4558824 C22.2254407,48.4558824 22.4558824,48.2254407 22.4558824,47.9411765 L22.4558824,40.0588235 C22.4558824,39.7745593 22.2254407,39.5441176 21.9411765,39.5441176 L14.0588235,39.5441176 Z M14.0588235,38 L21.9411765,38 C23.0782333,38 24,38.9217667 24,40.0588235 L24,47.9411765 C24,49.0782333 23.0782333,50 21.9411765,50 L14.0588235,50 C12.9217667,50 12,49.0782333 12,47.9411765 L12,40.0588235 C12,38.9217667 12.9217667,38 14.0588235,38 Z" id="Box" fill="#1A1A1A" fill-rule="nonzero"></path>
-                <rect id="Rectangle-15" fill="#DCDCDC" fill-rule="nonzero" x="12" y="10" width="124" height="8"></rect>
-                <g id="Small-arrow" transform="translate(160.485281, 16.485281) rotate(-135.000000) translate(-160.485281, -16.485281) translate(154.485281, 10.485281)" fill="#1A1A1A" fill-rule="nonzero">
-                    <rect id="Rectangle-15" x="2" y="10" width="10" height="2"></rect>
-                    <rect id="Rectangle-15" transform="translate(11.000000, 7.000000) rotate(-270.000000) translate(-11.000000, -7.000000) " x="6" y="6" width="10" height="2"></rect>
+    <defs>
+        <filter x="-17.2%" y="-24.2%" width="134.4%" height="151.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.101960784   0 0 0 0 0.101960784   0 0 0 0 0.101960784  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-490.000000, -1342.000000)">
+            <g id="Multiselect" filter="url(#filter-1)" transform="translate(510.000000, 1360.000000)">
+                <rect id="Rectangle-11" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="180" height="120"></rect>
+                <rect id="Rectangle-11" fill="#BFBFBF" fill-rule="nonzero" x="0" y="0" width="180" height="24"></rect>
+                <rect id="Rectangle-12" fill="#999999" fill-rule="nonzero" x="12" y="8" width="32" height="8" rx="4"></rect>
+                <rect id="Rectangle-12-Copy" fill="#999999" fill-rule="nonzero" x="52" y="8" width="32" height="8" rx="4"></rect>
+                <rect id="Rectangle-7" fill="#F5F5F5" fill-rule="nonzero" x="0" y="24" width="180" height="1"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="33" y="36" width="99" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="33" y="56" width="99" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="33" y="76" width="99" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="33" y="96" width="99" height="8"></rect>
+                <text id="JS" font-family="IBMPlexSans, IBM Plex Sans" font-size="24" font-weight="normal" fill="#1A1A1A">
+                    <tspan x="147" y="111">JS</tspan>
+                </text>
+                <g id="Unmarked-checkbox-large-Copy" transform="translate(12.000000, 34.000000)" fill="#454545" fill-rule="nonzero">
+                    <path d="M2.05882353,1.54411765 C1.77455932,1.54411765 1.54411765,1.77455932 1.54411765,2.05882353 L1.54411765,9.94117647 C1.54411765,10.2254407 1.77455932,10.4558824 2.05882353,10.4558824 L9.94117647,10.4558824 C10.2254407,10.4558824 10.4558824,10.2254407 10.4558824,9.94117647 L10.4558824,2.05882353 C10.4558824,1.77455932 10.2254407,1.54411765 9.94117647,1.54411765 L2.05882353,1.54411765 Z M2.05882353,4.57150657e-16 L9.94117647,4.57150657e-16 C11.0782333,1.25818605e-15 12,0.921766692 12,2.05882353 L12,9.94117647 C12,11.0782333 11.0782333,12 9.94117647,12 L2.05882353,12 C0.921766692,12 1.14915865e-15,11.0782333 0,9.94117647 L4.57150657e-16,2.05882353 C3.17901356e-16,0.921766692 0.921766692,2.08873953e-16 2.05882353,4.57150657e-16 Z" id="Box"></path>
                 </g>
-                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="28" width="180" height="2"></rect>
-                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="58" width="180" height="2"></rect>
-                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="88" width="180" height="2"></rect>
+                <g id="Unmarked-checkbox-large-Copy-2" transform="translate(12.000000, 54.000000)" fill="#454545" fill-rule="nonzero">
+                    <path d="M2.05882353,1.54411765 C1.77455932,1.54411765 1.54411765,1.77455932 1.54411765,2.05882353 L1.54411765,9.94117647 C1.54411765,10.2254407 1.77455932,10.4558824 2.05882353,10.4558824 L9.94117647,10.4558824 C10.2254407,10.4558824 10.4558824,10.2254407 10.4558824,9.94117647 L10.4558824,2.05882353 C10.4558824,1.77455932 10.2254407,1.54411765 9.94117647,1.54411765 L2.05882353,1.54411765 Z M2.05882353,4.57150657e-16 L9.94117647,4.57150657e-16 C11.0782333,1.25818605e-15 12,0.921766692 12,2.05882353 L12,9.94117647 C12,11.0782333 11.0782333,12 9.94117647,12 L2.05882353,12 C0.921766692,12 1.14915865e-15,11.0782333 0,9.94117647 L4.57150657e-16,2.05882353 C3.17901356e-16,0.921766692 0.921766692,2.08873953e-16 2.05882353,4.57150657e-16 Z" id="Box"></path>
+                </g>
+                <g id="Unmarked-checkbox-large-Copy-3" transform="translate(12.000000, 74.000000)" fill="#454545" fill-rule="nonzero">
+                    <path d="M2.05882353,1.54411765 C1.77455932,1.54411765 1.54411765,1.77455932 1.54411765,2.05882353 L1.54411765,9.94117647 C1.54411765,10.2254407 1.77455932,10.4558824 2.05882353,10.4558824 L9.94117647,10.4558824 C10.2254407,10.4558824 10.4558824,10.2254407 10.4558824,9.94117647 L10.4558824,2.05882353 C10.4558824,1.77455932 10.2254407,1.54411765 9.94117647,1.54411765 L2.05882353,1.54411765 Z M2.05882353,4.57150657e-16 L9.94117647,4.57150657e-16 C11.0782333,1.25818605e-15 12,0.921766692 12,2.05882353 L12,9.94117647 C12,11.0782333 11.0782333,12 9.94117647,12 L2.05882353,12 C0.921766692,12 1.14915865e-15,11.0782333 0,9.94117647 L4.57150657e-16,2.05882353 C3.17901356e-16,0.921766692 0.921766692,2.08873953e-16 2.05882353,4.57150657e-16 Z" id="Box"></path>
+                </g>
+                <g id="Unmarked-checkbox-large-Copy-4" transform="translate(12.000000, 94.000000)" fill="#454545" fill-rule="nonzero">
+                    <path d="M2.05882353,1.54411765 C1.77455932,1.54411765 1.54411765,1.77455932 1.54411765,2.05882353 L1.54411765,9.94117647 C1.54411765,10.2254407 1.77455932,10.4558824 2.05882353,10.4558824 L9.94117647,10.4558824 C10.2254407,10.4558824 10.4558824,10.2254407 10.4558824,9.94117647 L10.4558824,2.05882353 C10.4558824,1.77455932 10.2254407,1.54411765 9.94117647,1.54411765 L2.05882353,1.54411765 Z M2.05882353,4.57150657e-16 L9.94117647,4.57150657e-16 C11.0782333,1.25818605e-15 12,0.921766692 12,2.05882353 L12,9.94117647 C12,11.0782333 11.0782333,12 9.94117647,12 L2.05882353,12 C0.921766692,12 1.14915865e-15,11.0782333 0,9.94117647 L4.57150657e-16,2.05882353 C3.17901356e-16,0.921766692 0.921766692,2.08873953e-16 2.05882353,4.57150657e-16 Z" id="Box"></path>
+                </g>
+                <g id="ic_arrow_dropdown" transform="translate(160.000000, 12.000000) scale(1, -1) translate(-160.000000, -12.000000) translate(148.000000, 0.000000)">
+                    <g id="Shape">
+                        <polygon points="0 0.24 24 0.24 24 23.28 0 23.28"></polygon>
+                        <polygon fill="#454545" points="7.41 8.4864 12 12.8832 16.59 8.4864 18 9.84 12 15.6 6 9.84"></polygon>
+                    </g>
+                </g>
+                <g id="Marked-checkbox-large" transform="translate(12.000000, 54.000000)">
+                    <rect id="Path" fill="#FFFFFF" x="0" y="0" width="12" height="12" rx="2"></rect>
+                    <path d="M2,0 L10,0 C11.1045695,-2.02906125e-16 12,0.8954305 12,2 L12,10 C12,11.1045695 11.1045695,12 10,12 L2,12 C0.8954305,12 1.3527075e-16,11.1045695 0,10 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z M9.52859548,2.86192881 L4.91439718,7.47612711 L2.47140452,5.03313445 L1.52859548,5.97594349 L4.91439718,9.36174519 L10.4714045,3.80473785 L9.52859548,2.86192881 Z" id="Box" fill="#454545"></path>
+                </g>
+                <g id="Marked-checkbox-large-Copy" transform="translate(12.000000, 74.000000)">
+                    <rect id="Path" fill="#FFFFFF" x="0" y="0" width="12" height="12" rx="2"></rect>
+                    <path d="M2,0 L10,0 C11.1045695,-2.02906125e-16 12,0.8954305 12,2 L12,10 C12,11.1045695 11.1045695,12 10,12 L2,12 C0.8954305,12 1.3527075e-16,11.1045695 0,10 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z M9.52859548,2.86192881 L4.91439718,7.47612711 L2.47140452,5.03313445 L1.52859548,5.97594349 L4.91439718,9.36174519 L10.4714045,3.80473785 L9.52859548,2.86192881 Z" id="Box" fill="#454545"></path>
+                </g>
             </g>
         </g>
     </g>
