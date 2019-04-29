@@ -1648,7 +1648,40 @@
           <h1 class="mt-0" id="beskeder-alerts">Beskeder (Alerts)</h1>
           
       
-          
+          <h2 class="h3">Retningslinjer</h2>
+<section>
+    <h2 class="h4">Tilgængelighed</h2>
+    <ul>
+        <li>Anvend ARIA <code>role=alert</code> til at øge tilgængeligheden ved at markere beskeden som en ikke-interaktiv del af sidens indhold. Mærk beskeden med <code>role=alertdialog</code>, hvis den indeholder interaktivitet for brugeren.</li>
+        <li>Undgå at skjule beskeder på siden ved hjælp af fx <code>display:none</code> eller <code>visibility: hidden;</code>. De risikerer at blive læst op af en skærmlæser.</li>
+    </ul>
+</section>
+<section>
+    <h2 class="h4">Brugervenlighed</h2>
+    <h3 class="h5">Anvendes til</h3>
+    <ul>
+        <li>Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, fejl og opmærksomhedspunkter fx om opdateringer, o.l.</li>
+        <li>Anvend beskeder til at bekræfte en handling eller give besked om behov for handling.</li>
+    </ul>
+    <h3 class="h5">Anvendes ikke til</h3>
+        <ul>
+            <li>Brug ikke beskeder til at markere fejlindtastning i et specifikt felt.</li>
+            <li>Brug modaldialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.</li>
+        </ul>
+    <h3 class="h5">Vejledning</h3>
+    <ul>
+        <li>Brug kun beskeder, når det er reelt nødvendigt og meningsfuldt.</li>
+        <li>Gør informationen aktiv og handlingsanvisende, så brugeren forstår, hvad der er behov for eller hvad den aktuelle status er. </li>
+        <li>Brug ord og begreber, som brugeren kan genkende fra løsningen.</li>
+        <li>Skriv kort og præcist og undgå tekniske beskeder, der kan forvirre brugeren.</li>
+        <li>Brug beskeder til at øge brugerens forståelse for løsningen. </li>
+    </ul>
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-standard">
+  <h2 id="standard">Standard</h2>
+  
+  
 <div class="component-preview ">
 
     <!--<div class="loader-container">
@@ -1703,6 +1736,36 @@
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-icons">
+  <h2 id="beskeder-med-ikon">Beskeder med ikon</h2>
+  
+  
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/alerts-icons"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-alerts-icons">Kode</button>
+  <div id="code-alerts-icons" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info alert--show-icon"</span> <span class="na">role=</span><span class="s">"alert"</span>
         <span class="na">aria-label=</span><span class="s">"Beskedbox der viser information"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
@@ -1738,6 +1801,36 @@
                 error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-texts">
+  <h2 id="forskellige-teksteksempler">Forskellige teksteksempler</h2>
+  
+  
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/alerts-texts"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-alerts-texts">Kode</button>
+  <div id="code-alerts-texts" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info alert--show-icon"</span> <span class="na">role=</span><span class="s">"alert"</span>
         <span class="na">aria-label=</span><span class="s">"Beskedbox der viser information"</span><span class="nt">&gt;</span>
@@ -1778,43 +1871,9 @@
   </div>
 </div>
 
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="alert-docs">
-    Retningslinjer
-  </button>
-  <div id="alert-docs" aria-hidden="false" class="accordion-content">
-    <article>
-        <section>
-            <h2 class="h4">Tilgængelighed</h2>
-            <ul>
-                <li>Anvend ARIA <code>role=alert</code> til at øge tilgængeligheden ved at markere beskeden som en ikke-interaktiv del af sidens indhold. Mærk beskeden med <code>role=alertdialog</code>, hvis den indeholder interaktivitet for brugeren.</li>
-                <li>Undgå at skjule beskeder på siden ved hjælp af fx <code>display:none</code> eller <code>visibility: hidden;</code>. De risikerer at blive læst op af en skærmlæser.</li>
-            </ul>
-        </section>
-        <section>
-            <h2 class="h4">Brugervenlighed</h2>
-            <h3 class="h5">Anvendes til</h3>
-            <ul>
-                <li>Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, fejl og opmærksomhedspunkter fx om opdateringer, o.l.</li>
-                <li>Anvend beskeder til at bekræfte en handling eller give besked om behov for handling.</li>
-            </ul>
-            <h3 class="h5">Anvendes ikke til</h3>
-                <ul>
-                    <li>Brug ikke beskeder til at markere fejlindtastning i et specifikt felt.</li>
-                    <li>Brug modaldialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.</li>
-                </ul>
-            <h3 class="h5">Vejledning</h3>
-            <ul>
-                <li>Brug kun beskeder, når det er reelt nødvendigt og meningsfuldt.</li>
-                <li>Gør informationen aktiv og handlingsanvisende, så brugeren forstår, hvad der er behov for eller hvad den aktuelle status er. </li>
-                <li>Brug ord og begreber, som brugeren kan genkende fra løsningen.</li>
-                <li>Skriv kort og præcist og undgå tekniske beskeder, der kan forvirre brugeren.</li>
-                <li>Brug beskeder til at øge brugerens forståelse for løsningen. </li>
-            </ul>
-        </section>
-    </article>
-  </div>
-</div>
+
+</section>
+
 
       </section>
     </main>
