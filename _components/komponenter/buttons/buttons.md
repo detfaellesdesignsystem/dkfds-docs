@@ -60,17 +60,22 @@ subnav:
   <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/dkfds-docs/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
 </section>
 
-<h2 class="h3">Implementering</h2>
-<section>
-  <p>Knap styling kan både sættes på &lt;button&gt; og &lt;a&gt; tags ved at tilføje følgende klasser:</p>
-  <ul>
-    <li><code>button button-primary</code></li>
-    <li><code>button button-secondary</code></li>
-    <li><code>button button-tertiary</code></li>
-    <li><code>button button-quaternary</code></li>
-    <li><code>button button-unstyled</code></li>
-  </ul>
-</section>
-
+<div class="accordion-bordered mt-7">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="buttons-docs">
+    Implementering
+  </button>
+  <div id="buttons-docs" aria-hidden="true" class="accordion-content">
+    <section>
+      <p>Knap styling kan både sættes på &lt;button&gt; og &lt;a&gt; tags ved at tilføje følgende klasser:</p>
+      <ul>
+        <li><code>button button-primary</code></li>
+        <li><code>button button-secondary</code></li>
+        <li><code>button button-tertiary</code></li>
+        <li><code>button button-quaternary</code></li>
+        <li><code>button button-unstyled</code></li>
+      </ul>
+    </section>
+  </div>
+</div>
 
 {% include child-sections.html parent='Buttons' %}

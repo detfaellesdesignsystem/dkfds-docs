@@ -2,34 +2,34 @@
   "alert_example": {
     "items": [
       {
-        "name": "info",
-        "classes": "alert-info",
+        "name": "info with icon",
+        "classes": "alert-info alert--show-icon",
         "role": "alert",
-        "title": "Informativ besked",
-        "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+        "title": "Informativ besked - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         "aria": "Beskedbox der viser information"
       },
       {
-        "name": "success",
-        "classes": "alert-success",
+        "name": "success with icon",
+        "classes": "alert-success alert--show-icon",
         "role": "alert",
-        "title": "Succesmeddelelse",
+        "title": "Succesmeddelelse - med ikon",
         "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         "aria": "Beskedbox der viser succes"
       },
       {
-        "name": "warning",
-        "classes": "alert-warning",
+        "name": "warning with icon",
+        "classes": "alert-warning alert--show-icon",
         "role": "alert",
-        "title": "Advarsel",
+        "title": "Advarsel - med ikon",
         "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         "aria": "Beskedbox der viser en advarsel"
       },
       {
-        "name": "error",
-        "classes": "alert-error",
+        "name": "error with icon",
+        "classes": "alert-error alert--show-icon",
         "role": "alert",
-        "title": "Fejlbesked",
+        "title": "Fejlbesked - med ikon",
         "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         "aria": "Beskedbox der viser en fejlmeddelselse"
       }

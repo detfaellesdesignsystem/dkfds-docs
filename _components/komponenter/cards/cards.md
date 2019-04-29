@@ -40,9 +40,8 @@ subnav:
     </ul>
 </section>
 
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button"
-    aria-expanded="false" aria-controls="code-documentation">
+<div class="accordion-bordered mt-7">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="code-documentation">
     Implementering
   </button>
   <div id="code-documentation" class="accordion-content">
