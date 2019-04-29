@@ -575,11 +575,15 @@ code {
     }
   }
 }
+.page-tringuide-overflowmenu-html .container,
+.page-tringuide-responsive-overflowmenu-html .container{
+  min-height: 400px;
+}
 .page-basic-collapse-html, .page-modal-html, .page-text-input-html, .page-tags-html, .page-search-html  .container{
   padding-top: 4px;
   padding-bottom: 4px;
 }
-.page-overflow-menu-html .container{
+.page-overflow-menu-html .container, .page-overflow-menu-left-html .container{
   min-height: 400px;
 }
 .page-text-input-html .container, .page-text-input-width-html .container{ //quick fix for iframe resize
@@ -590,9 +594,6 @@ code {
 }
 .page-basic-collapse-html{
   min-height: 150px;
-}
-.page-tags-html .container{
-  min-height: 180px;
 }
 .page-date-input-html{
   & .container{

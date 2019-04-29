@@ -79,7 +79,7 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p>Dette er <a href="javascript:void(0);" class="disabled"
-                    disabled="disabled" tabindex="-1">et standard link,
+                    aria-disabled="true" tabindex="-1">et standard link,
                     disabled<span class="sr-only">disabled</span></a></p>
         </div>
     </div>
@@ -116,7 +116,7 @@ title: Links.html
                 website<svg class="icon-svg "  ><use xlink:href="#open-in-new"></use></svg></a>
             on a dark background.</p>
         <p>This is a text <a href="javascript:void(0);" class="disabled"
-                disabled="disabled" tabindex="-1">disabled link state</a>
+                aria-disabled="true" tabindex="-1">disabled link state</a>
             on a dark background.<span class="sr-only">disabled</span></p>
         <p><b>This is a 
   <a href="javascript:void(0);" class="" >link</a>

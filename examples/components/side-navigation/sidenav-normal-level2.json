@@ -1,0 +1,35 @@
+{
+  "sidenavsNormal":
+  {
+    "links": [
+      {
+        "text": "Parent link"
+      },
+      {
+        "text": "Current page",
+        "current": true,
+        "links": [
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link",
+            "active": true
+          },
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link"
+          }
+        ]
+      },
+      {
+        "text": "Another link"
+      }
+    ]
+  }
+}

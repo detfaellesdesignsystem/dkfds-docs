@@ -1,0 +1,17 @@
+{
+  "sidenavsNormal":
+  {
+    "links": [
+      {
+        "text": "Parent link"
+      },
+      {
+        "text": "Current page",
+        "active": true
+      },
+      {
+        "text": "Another link"
+      }
+    ]
+  }
+}

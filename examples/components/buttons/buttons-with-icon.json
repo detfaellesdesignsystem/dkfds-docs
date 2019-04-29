@@ -1,0 +1,12 @@
+{
+  "button_example":
+  {
+    "items": [
+      {
+        "text": "Refresh",
+        "class": "primary",
+        "icon": "refresh"
+      }
+    ]
+  }
+}

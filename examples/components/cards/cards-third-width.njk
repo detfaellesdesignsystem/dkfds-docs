@@ -1,0 +1,23 @@
+{% from "components/cards/cards.njk" import cards4 as cards4 %}
+{% from "components/cards/cards.njk" import cards5 as cards5 %}
+{% from "components/cards/cards.njk" import cards6 as cards6 %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+      {% for card4 in cards4_example.items -%}
+        {{ cards4(card4.name, card4.header, card4.subheader, card4.cardtext, card4.contenttext, card4.cardcontent, card4.actioncontent, card4.actionbuttons, card4.actionlinks ) }}
+      {%- endfor %}
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
+      {% for card5 in cards5_example.items -%}
+        {{ cards5(card5.name, card5.header, card5.subheader, card5.cardtext, card5.contenttext, card5.cardcontent, card5.actioncontent, card5.actionbuttons, card5.actionlinks ) }}
+      {%- endfor %}
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
+      {% for card6 in cards6_example.items -%}
+        {{ cards6(card6.name, card6.header, card6.subheader, card6.cardtext, card6.contenttext, card6.cardcontent, card6.actioncontent, card6.actionbuttons, card6.actionlinks ) }}
+      {%- endfor %}
+    </div>
+  </div>
+</div>

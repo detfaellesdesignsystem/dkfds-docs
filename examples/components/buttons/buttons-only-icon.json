@@ -1,0 +1,13 @@
+{
+  "button_example":
+  {
+    "items": [
+      {
+        "text": "",
+        "class": "unstyled",
+        "icon": "delete-outline",
+        "sronly": "Slet"
+      }
+    ]
+  }
+}

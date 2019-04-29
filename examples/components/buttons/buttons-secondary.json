@@ -1,0 +1,27 @@
+{
+  "button_example": {
+    "items": [
+      {
+        "text": "Default",
+        "class": "secondary"
+      },
+      {
+        "text": "Hover",
+        "class": "secondary button-hover"
+      },
+      {
+        "text": "Active",
+        "class": "secondary button-active"
+      },
+      {
+        "text": "Focus",
+        "class": "secondary focus"
+      },
+      {
+        "text": "Disabled",
+        "class": "secondary",
+        "attribute": "disabled tab-index=\"-1\" aria-disabled=\"true\""
+      }
+    ]
+  }
+}

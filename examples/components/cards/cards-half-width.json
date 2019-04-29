@@ -1,0 +1,25 @@
+{
+  "cards2_example": {
+    "items": [
+      {
+        "name": "card2",
+        "header": "Header",
+        "subheader": "Understøttende tekst",
+        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_med_halv_bredde_1_EKSEMPEL.svg\" alt=\"\">",
+        "cardtext": "Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til."
+      }
+    ]
+  },
+  "cards3_example": {
+    "items": [
+      {
+        "name": "card3",
+        "header": "Header",
+        "subheader": "Understøttende tekst",
+        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg\" alt=\"\">",
+        "actionbuttons": "<button class=\"button button-secondary\">Sekundærknap</button> <button class=\"button button-tertiary\">Tertiærknap</button>",
+        "actionlinks": "<ul class=\"nobullet-list\"><li><a href=\"javascript:void(0);\" class=\"default link state\">Et link til et sted i løsningen</a></li><li><a href=\"javascript:void(0);\" class=\"icon-link\">Et link til et sted uden for løsningen<svg class=\"icon-svg\"><use xlink:href=\"#open-in-new\"></use></svg></a></li></ul>"
+      }
+    ]
+  }
+}
