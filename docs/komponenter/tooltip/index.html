@@ -1650,87 +1650,44 @@
             <p class="font-lead">Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller fører musen hen over for at få en kort forklaring på indhold, ord eller begreber.</p>
           
       
-          <p>Du kan anvende tooltip og popover til at tilføje informationer til elementer i brugergrænsefladen.</p>
-<p><strong>Tooltips</strong></p>
-<ul>
-    <li>Åbner automatisk, når brugeren markerer et element med mus eller tastatur.</li>
-    <li>Kort tekst</li>
-    <li>Til præcisering af hvad elementer i brugergrænsefladen er/gør, som fx funktionsikoner (klikbare ikoner), knapper, links, tekst og billeder. </li>
-    <li>Kan sættes på alle elementer inkl. links og knapper.</li>
-</ul>
-<p><strong>Popover</strong></p>
-<ul>
-    <li>Åbner når brugeren klikker på et element med mus eller tastatur.</li>
-    <li>Kort og lang tekst, kan også indeholde overskrifter, illustrationer mm.</li>
-    <li>Til relaterede forklaringer af elementer i brugergrænsefladen, som fx til hjælp og ekstra detaljer.</li>
-    <li>Bør kun sættes på elementer som brugeren ikke ellers kan interagere med, som fx et spørgsmålstegnsikon eller et ord i en tekst.</li>
-</ul>
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/tooltip"></iframe>
-</div>
-<div class="accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-tooltip">Kode</button>
-  <div id="code-tooltip" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Tooltip (kommer frem ved mouse-over):<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
-        <span class="na">title=</span><span class="s">"Dette er et tooltip"</span><span class="nt">&gt;</span>
-        Knap med tooltip
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til
-            screenreaders<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Ikon med popover (kræver tryk)<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"popover js-tooltip"</span>
-        <span class="na">data-tippy-trigger=</span><span class="s">"click"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
-        <span class="na">title=</span><span class="s">"Dette er en hjælpetekst i en popover"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#help-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span</span>
-            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
-            popover<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Ikon med tooltip<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"js-tooltip"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
-        <span class="na">title=</span><span class="s">"Dette er en hjælpetekst i en popover"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#help-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span</span>
-            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
-            popover<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Eksempel på konfiguration - placering:<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
-        <span class="na">data-tippy-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Top tooltip"</span><span class="nt">&gt;</span>Top <span class="nt">&lt;span</span>
-            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
-            top<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
-        <span class="na">data-tippy-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Bund tooltip"</span><span class="nt">&gt;</span>Bund <span class="nt">&lt;span</span>
-            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
-            bottom<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
-        <span class="na">data-tippy-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Venstre tooltip"</span><span class="nt">&gt;</span>Venstre <span class="nt">&lt;span</span>
-            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
-            venstre<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
-        <span class="na">data-tippy-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Højre tooltip"</span><span class="nt">&gt;</span>Højre <span class="nt">&lt;span</span>
-            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
-            højre<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tooltip-tech-docs">
-    Implementering
-  </button>
-  <div id="tooltip-tech-docs" aria-hidden="true" class="accordion-content">
+          <article>
     <section>
+        <h2 class="h3">Retningslinjer</h2>
+        <h3 class="h4">Tilgængelighed</h3>
+        <ul>
+            <li>Tooltip og popovers skal kunne lukkes med escape knappen på keyboardet.</li>
+            <li>Fokus skal blive på det element, der afstedkom tooltippen eller popoveren.</li>
+            <li>Brug aria-describedby på elementet der udløser tooltippen eller popoveren.</li>
+            <li>Tooltips skal både vises, ved markering med mus og keyboard.</li>
+        </ul>
+        <h3 class="h4">Brugervenlighed</h3>
+        <h4 class="h5">Anvendes til</h4>
+        <ul>
+            <li>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen.</li>
+            <li>Brug popover til at knytte relaterede informationer, der uddyber/forklarer et element eller en funktion i brugergrænsefladen.</li>
+        </ul>
+        <h4 class="h5">Anvendes ikke til</h4>
+        <p>Informationer der er essentielle for at brugeren kan gennemføre løsningen, hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst.</p>
+        <h4 class="h5">Vejledning</h4>
+        <ul>
+            <li>Gør indholdet i tooltips og popovers så kort og koncist som muligt.</li>
+            <li>Vær konsistent i brugen af tooltips og popovers, så brugeren ikke skal gætte sig til om der er tooltips/popovers eller ej.</li>
+            <li>Gør det let at se, hvilket element tooltippen/popoveren hører til.</li>
+            <li>Brug altid tooltips til funktionsikoner (klikbare ikoner) uden label.</li>
+            <li>Sørg for at tooltips og popovers er tydelige at se og læse.</li>
+            <li>Placer tooltips og popovers så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert kan brugeren blive nødt til at lukke og åbne tooltip/popover igen for at forstå sammenhængen.</li>
+            <li>Sættes der tooltip/popover på et ord i en tekst, markeres ordet med en stiplet linje under. Brug det i begrænset omfang, da det let virker forstyrrende.</li>
+        </ul>
+        <h3 class="h5">Links</h3>
+        <ul class="nobullet-list">
+            <li><a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        </ul>
+    </section>
+</article>
+<article>
+    <section>
+        <h2 class="h3">Implementering</h2>
         <p>Tooltips og popovers bygger på <a href="https://atomiks.github.io/tippyjs/" class="icon-link">tippy.js<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</p>
         <p>For at initialisere et tooltip eller en popover skal et HTML-element have klassen <code>'.js-tooltip'</code> og en <code>'title'</code>-attribut:</p>
         <div class="code-highlight">
@@ -1747,46 +1704,161 @@
           </code>
         </div>
     </section>
+</article>
+
+<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-button">
+  <h2 id="tooltip-kommer-frem-ved-mouse-over">Tooltip (kommer frem ved mouse-over)</h2>
+  
+  
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/tooltip-button"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-tooltip-button">Kode</button>
+  <div id="code-tooltip-button" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
+        <span class="na">title=</span><span class="s">"Dette er et tooltip"</span><span class="nt">&gt;</span>
+        Knap med tooltip
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til
+            screenreaders<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
   </div>
 </div>
 
-<div class="accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="tooltip-docs">
-    Retningslinjer
-  </button>
-  <div id="tooltip-docs" class="accordion-content">
-    <h2 class="h4">Tilgængelighed</h2>
-    <ul>
-        <li>Tooltip og popovers skal kunne lukkes med escape knappen på keyboardet.</li>
-        <li>Fokus skal blive på det element, der afstedkom tooltippen eller popoveren.</li>
-        <li>Brug aria-describedby på elementet der udløser tooltippen eller popoveren.</li>
-        <li>Tooltips skal både vises, ved markering med mus og keyboard.</li>
-    </ul>
-    <h2 class="h4">Brugervenlighed</h2>
-    <h3 class="h5">Anvendes til</h3>
-    <ul>
-        <li>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen.</li>
-        <li>Brug popover til at knytte relaterede informationer, der uddyber/forklarer et element eller en funktion i brugergrænsefladen.</li>
-    </ul>
-    <h3 class="h5">Anvendes ikke til</h3>
-    <p>Informationer der er essentielle for at brugeren kan gennemføre løsningen, hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst.</p>
-    <h3 class="h5">Vejledning</h3>
-    <ul>
-        <li>Gør indholdet i tooltips og popovers så kort og koncist som muligt.</li>
-        <li>Vær konsistent i brugen af tooltips og popovers, så brugeren ikke skal gætte sig til om der er tooltips/popovers eller ej.</li>
-        <li>Gør det let at se, hvilket element tooltippen/popoveren hører til.</li>
-        <li>Brug altid tooltips til funktionsikoner (klikbare ikoner) uden label.</li>
-        <li>Sørg for at tooltips og popovers er tydelige at se og læse.</li>
-        <li>Placer tooltips og popovers så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert kan brugeren blive nødt til at lukke og åbne tooltip/popover igen for at forstå sammenhængen.</li>
-        <li>Sættes der tooltip/popover på et ord i en tekst, markeres ordet med en stiplet linje under. Brug det i begrænset omfang, da det let virker forstyrrende.</li>
-    </ul>
-    <h3 class="h5">Links</h3>
-    <ul class="nobullet-list">
-        <li><a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-    </ul>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/tooltip/popover-icon">
+  <h2 id="ikon-med-popover-kræver-tryk">Ikon med popover (kræver tryk)</h2>
+  
+  
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/popover-icon"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-popover-icon">Kode</button>
+  <div id="code-popover-icon" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"popover js-tooltip"</span>
+        <span class="na">data-tippy-trigger=</span><span class="s">"click"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
+        <span class="na">title=</span><span class="s">"Dette er en hjælpetekst i en popover"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#help-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span</span>
+            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
+            popover<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
   </div>
 </div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-icon">
+  <h2 id="ikon-med-tooltip">Ikon med tooltip</h2>
+  
+  
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/tooltip-icon"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-tooltip-icon">Kode</button>
+  <div id="code-tooltip-icon" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"js-tooltip"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
+        <span class="na">title=</span><span class="s">"Dette er en hjælpetekst i en popover"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#help-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span</span>
+            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
+            popover<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-position">
+  <h2 id="placering-af-tooltip">Placering af tooltip</h2>
+  
+  
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/tooltip-position"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-tooltip-position">Kode</button>
+  <div id="code-tooltip-position" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-8"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Placering: top --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
+        <span class="na">data-tippy-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Top tooltip"</span><span class="nt">&gt;</span>Top <span class="nt">&lt;span</span>
+            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
+            top<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+
+    <span class="c">&lt;!-- Placering: bund --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
+        <span class="na">data-tippy-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Bund tooltip"</span><span class="nt">&gt;</span>Bund <span class="nt">&lt;span</span>
+            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
+            bottom<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+
+    <span class="c">&lt;!-- Placering: venstre --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
+        <span class="na">data-tippy-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Venstre tooltip"</span><span class="nt">&gt;</span>Venstre <span class="nt">&lt;span</span>
+            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
+            venstre<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+
+    <span class="c">&lt;!-- Placering: højre --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
+        <span class="na">data-tippy-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Højre tooltip"</span><span class="nt">&gt;</span>Højre <span class="nt">&lt;span</span>
+            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
+            højre<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
 
 
       </section>

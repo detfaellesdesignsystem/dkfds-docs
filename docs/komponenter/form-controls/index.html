@@ -2717,8 +2717,8 @@
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group file-input"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"file"</span><span class="nt">&gt;</span>Vedhæft fil<span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"file"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"fileinput"</span><span class="nt">&gt;</span>Vedhæft fil<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"fileinput"</span> <span class="na">name=</span><span class="s">"file"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/form&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -2825,7 +2825,7 @@
                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                         <span class="na">for=</span><span class="s">"date_of_year_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
-                        <span class="na">for=</span><span class="s">"date_of_year_3"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1900"</span>
+                        <span class="na">id=</span><span class="s">"date_of_year_3"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1900"</span>
                         <span class="na">max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
                         <span class="na">title=</span><span class="s">"Indskriv årstal"</span><span class="nt">&gt;</span>
@@ -2884,6 +2884,14 @@
           <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/dkfds-docs/udvidelser/pikaday/">datepicker udvidelsen</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.</p>
           <h4 class="h5">Vejledning</h4>
           <p>Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, dvs. dag, måned og år. Felternes labels skal også afspejle det.</p>
+      </section>
+      <section>
+      <h3 class="h4">Links</h3>
+      <ul class="nobullet-list">
+        <li><a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">GovUKs anbefalinger til datovælgeren<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://design-system.service.gov.uk/patterns/dates/" class="icon-link">GovUK om at spørge brugeren om datoer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" class="icon-link">USWDS om datovælgeren<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+      </ul>
       </section>
     </article>
   </div>

@@ -699,6 +699,39 @@
     
 
     
+    <ul class="overflow-list">
+  
+  <li>
+    
+      
+
+
+<a href="#card-med-fuld-bredde">Card med fuld bredde</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#card-med-halv-bredde">Card med halv bredde</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#card-med-tredjedel-bredde">Card med tredjedel bredde</a>
+    
+  </li>
+
+</ul>
+    
   
 
 
@@ -1384,6 +1417,39 @@
     
 
     
+    <ul class="sidenav-sub_list">
+  
+  <li>
+    
+      
+
+
+<a href="#card-med-fuld-bredde">Card med fuld bredde</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#card-med-halv-bredde">Card med halv bredde</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#card-med-tredjedel-bredde">Card med tredjedel bredde</a>
+    
+  </li>
+
+</ul>
+    
   
 
 
@@ -1645,22 +1711,90 @@
           <h1 class="mt-0" id="cards">Cards</h1>
           
       
-          
+          <h2 class="h3">Retningslinjer</h2>
+<section>
+    <h3 class="h4">Tilgængelighed</h3>
+    <p>Cards skal overholde html outline, så browser og eventuelle skærmlæsere kan afkode det korrekt. Dvs. overskriften på dit cards skal være en heading 4, hvis det foregående afsnit er en heading 3.</p>
+</section>
+<section>
+    <h3 class="h4">Brugervenlighed</h3>
+    <h4 class="h5">Anvendes til</h4>
+    <p>Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Det kan fx være en afledt, men ikke direkte koblet ekstra funktion ift. sidens sammenhæng.</p>
+    <h4 class="h5">Anvendes ikke til</h4>
+    <ul>
+        <li>Brug ikke cards til det primære indhold på en løsning, men derimod til indhold, der kan stå og forstås alene og fortsat være del af den samlede løsning.</li>
+        <li>Brug ikke cards udelukkende af visuelle hensyn, som placeholders for ornamental grafik eller indhold uden interaktion.</li>
+        <li>Cards er ikke en statusbesked.</li>
+    </ul>
+    <h4 class="h5">Vejledning</h4>
+    <ul>
+        <li>Cards skal tilbyde en enkel og fokuseret funktion. </li>
+        <li>Cards er velegnede til interaktion med brugeren, men brug dem kun, når der tilbydes en ekstra funktionalitet af grupperet indhold.</li>
+        <li>Cards er velegnede til responsive løsninger.</li>
+        <li>Du kan godt indsætte flere cards på en side, men sørg for at de fremtræder roligt i sidens layout og ikke bryder brugerens naturlige aflæsning af siden.</li>
+        <li>Undgå lange tekster i cards.</li>
+        <li>Skriv kort og præcist i hvert card.</li>
+    </ul>
+</section>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="code-documentation">
+    Implementering
+  </button>
+  <div id="code-documentation" class="accordion-content">
+    <section>
+        <p>Alle cards har en <code>card</code> class.</p>
+        <p>Sæt card til fuld højde ved at tilføje klassen <code>card-align-height</code>.</p>
+        
+        <p>Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde. Du kan frit sammensætte rækkefølge og størrelser af alle områder efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder. </p>
+        <p>Hvert område er beskrevet nedenfor.</p> 
+        
+        <h2 class="h4">Header</h2>
+        <p>Headeren har en <code>.card-header</code> class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.</p>
+        <ul>
+          <li><code>.header-titel</code></li>
+          <li><code>.subheader</code></li>
+        </ul>
+        <h2 class="h4">Tekstområde</h2>
+        <p>Tekstområdet har en <code>.card-text</code> class, og indeholder brødtekst, som har en class.</p>
+        <ul>
+          <li><code>.text</code></li>
+        </ul>
+        <h2 class="h4">Indholdsområde</h2>
+        <p>Indholdsområdet har en <code>card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class. .card-content har en stribet baggrundsfarve. Denne baggrundsfarve er midlertidig og bliver kun vist for at indikere indholdsområdet. Du kan se, hvilke andre baggrundsfarver der kan bruges, under "Baggrundsfarver" og "Hjælpefunktioner" i sidenavigationen. Det er også muligt at tilføje andre farver.</p> 
+        <ul>
+          <li><code>.content-text</code></li>
+          <li><code>.content</code></li>
+        </ul>
+        <h2 class="h4">Aktionsområde</h2>
+        <p>Aktionsområdet har en <code>card-action</code> class og kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.</p>
+        <ul>
+          <li><code>.action-content</code></li>
+          <li><code>.action-buttons</code></li>
+          <li><code>.action-links</code></li>
+        </ul>
+    </section>
+  </div>
+</div>
+
+<section class="styleguide-child-container content" id="section-/komponenter/cards/card-full-width">
+  <h2 id="card-med-fuld-bredde">Card med fuld bredde</h2>
+  
+  
 <div class="component-preview ">
 
     <!--<div class="loader-container">
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/cards"></iframe>
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/cards-full-width"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-cards">Kode</button>
-  <div id="code-cards" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-cards-full-width">Kode</button>
+  <div id="code-cards-full-width" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h4&gt;</span>Card med fuld bredde<span class="nt">&lt;/h4&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
@@ -1717,17 +1851,68 @@
 
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
 
-        <span class="nt">&lt;h4&gt;</span>Card med halv bredde<span class="nt">&lt;/h4&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
 
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span> <span class="na">title=</span><span class="s">"Card header"</span>
-                            <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst<span class="nt">&lt;/p&gt;</span>
+  </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/cards/card-half-width">
+  <h2 id="card-med-halv-bredde">Card med halv bredde</h2>
+  
+  
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/cards-half-width"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-cards-half-width">Kode</button>
+  <div id="code-cards-half-width" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span> <span class="na">title=</span><span class="s">"Card header"</span>
+                        <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-content"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-center"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/dkfds-docs/img/cards/Card_med_halv_bredde_1_EKSEMPEL.svg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Dette er et <span class="nt">&lt;em&gt;</span>tekstområde<span class="nt">&lt;/em&gt;</span>,
+                            hvor du kan skrive hvad du har lyst til.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
 
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-content"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-text"</span><span class="nt">&gt;</span>
@@ -1736,175 +1921,48 @@
                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
                             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-center"</span><span class="nt">&gt;</span>
                                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/dkfds-docs/img/cards/Card_med_halv_bredde_1_EKSEMPEL.svg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/dkfds-docs/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
               <span class="nt">&lt;/div&gt;</span>
                                 <span class="nt">&lt;/div&gt;</span>
                             <span class="nt">&lt;/div&gt;</span>
                         <span class="nt">&lt;/div&gt;</span>
 
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Dette er et
-                                <span class="nt">&lt;em&gt;</span>tekstområde<span class="nt">&lt;/em&gt;</span>, hvor du kan skrive
-                                hvad du har lyst til.<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span> <span class="na">title=</span><span class="s">"Card header"</span>
+                                <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
+                            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-action"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-content"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-buttons"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;button</span>
+                                    <span class="na">class=</span><span class="s">"button button-secondary"</span><span class="nt">&gt;</span>Sekundærknap<span class="nt">&lt;/button&gt;</span>
+                                <span class="nt">&lt;button</span>
+                                    <span class="na">class=</span><span class="s">"button button-tertiary"</span><span class="nt">&gt;</span>Tertiærknap<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-links"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
+                                            <span class="na">class=</span><span class="s">"default link state"</span><span class="nt">&gt;</span>Et
+                                            link til et sted i
+                                            løsningen<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
+                                            <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>Et link til
+                                            et sted uden for
+                                            løsningen<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;</span>
+                                    <span class="nt">&lt;/li&gt;</span>
+                                <span class="nt">&lt;/ul&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
                         <span class="nt">&lt;/div&gt;</span>
 
                     <span class="nt">&lt;/div&gt;</span>
 
                 <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;div</span>
-                    <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-content"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-text"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-center"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/dkfds-docs/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span>
-                                    <span class="na">title=</span><span class="s">"Card header"</span>
-                                    <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
-                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst
-                                <span class="nt">&lt;/p&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-action"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-content"</span><span class="nt">&gt;</span>
-
-                                <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-buttons"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;button</span>
-                                        <span class="na">class=</span><span class="s">"button button-secondary"</span><span class="nt">&gt;</span>Sekundærknap<span class="nt">&lt;/button&gt;</span>
-                                    <span class="nt">&lt;button</span>
-                                        <span class="na">class=</span><span class="s">"button button-tertiary"</span><span class="nt">&gt;</span>Tertiærknap<span class="nt">&lt;/button&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-links"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                                                <span class="na">class=</span><span class="s">"default link state"</span><span class="nt">&gt;</span>Et
-                                                link til et sted i
-                                                løsningen<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                                                <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>Et link
-                                                til et sted uden for
-                                                løsningen<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;</span>
-                                        <span class="nt">&lt;/li&gt;</span>
-                                    <span class="nt">&lt;/ul&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-
-                        <span class="nt">&lt;/div&gt;</span>
-
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-
-                <span class="nt">&lt;h4&gt;</span>Card med en tredjedel bredde<span class="nt">&lt;/h4&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span>
-                                    <span class="na">title=</span><span class="s">"Card header"</span>
-                                    <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
-                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst
-                                <span class="nt">&lt;/p&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Dette er et
-                                    <span class="nt">&lt;em&gt;</span>tekstområde<span class="nt">&lt;/em&gt;</span>, hvor du kan
-                                    skrive hvad du har lyst til.<span class="nt">&lt;/p&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-action"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-content"</span><span class="nt">&gt;</span>
-
-                                <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-buttons"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;button</span>
-                                        <span class="na">class=</span><span class="s">"button button-secondary"</span><span class="nt">&gt;</span>Sekundærknap<span class="nt">&lt;/button&gt;</span>
-                                    <span class="nt">&lt;button</span>
-                                        <span class="na">class=</span><span class="s">"button button-tertiary"</span><span class="nt">&gt;</span>Tertiærknap<span class="nt">&lt;/button&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-links"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                                                <span class="na">class=</span><span class="s">"default link state"</span><span class="nt">&gt;</span>Et
-                                                link til et sted i
-                                                løsningen<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                                                <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>Et link
-                                                til et sted uden for
-                                                løsningen<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;</span>
-                                        <span class="nt">&lt;/li&gt;</span>
-                                    <span class="nt">&lt;/ul&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-
-                        <span class="nt">&lt;/div&gt;</span>
-
-                    <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span>
-                        <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span>
-                                    <span class="na">title=</span><span class="s">"Card header"</span>
-                                    <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
-                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst
-                                <span class="nt">&lt;/p&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-content"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-text"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;div</span>
-                                        <span class="na">class=</span><span class="s">"row justify-content-center"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-                                            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/dkfds-docs/img/cards/Card_Tredjedel_2_EKSEMPEL.svg"</span> <span class="na">class=</span><span class="s">"d-block"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-                                        <span class="nt">&lt;/div&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-
-                            <span class="nt">&lt;/div&gt;</span>
-
-                        <span class="nt">&lt;/div&gt;</span>
-                        <span class="nt">&lt;div</span>
-                            <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
-
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span>
-                                        <span class="na">title=</span><span class="s">"Card header"</span>
-                                        <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
-                                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende
-                                        tekst<span class="nt">&lt;/p&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Dette er et
-                                        <span class="nt">&lt;em&gt;</span>tekstområde<span class="nt">&lt;/em&gt;</span>, hvor du kan
-                                        skrive hvad du har lyst til.<span class="nt">&lt;/p&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-
-                            <span class="nt">&lt;/div&gt;</span>
-
-                        <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 
@@ -1912,79 +1970,123 @@
   </div>
 </div>
 
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="code-documentation">
-    Implementering
-  </button>
-  <div id="code-documentation" class="accordion-content">
-    <section>
-        <p>Alle cards har en <code>card</code> class.</p>
-        <p>Sæt card til fuld højde ved at tilføje klassen <code>card-align-height</code>.</p>
-        
-        <p>Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde. Du kan frit sammensætte rækkefølge og størrelser af alle områder efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder. </p>
-        <p>Hvert område er beskrevet nedenfor.</p> 
-        
-        <h2 class="h4">Header</h2>
-        <p>Headeren har en <code>.card-header</code> class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.</p>
-        <ul>
-          <li><code>.header-titel</code></li>
-          <li><code>.subheader</code></li>
-        </ul>
-        <h2 class="h4">Tekstområde</h2>
-        <p>Tekstområdet har en <code>.card-text</code> class, og indeholder brødtekst, som har en class.</p>
-        <ul>
-          <li><code>.text</code></li>
-        </ul>
-        <h2 class="h4">Indholdsområde</h2>
-        <p>Indholdsområdet har en <code>card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class. .card-content har en stribet baggrundsfarve. Denne baggrundsfarve er midlertidig og bliver kun vist for at indikere indholdsområdet. Du kan se, hvilke andre baggrundsfarver der kan bruges, under "Baggrundsfarver" og "Hjælpefunktioner" i sidenavigationen. Det er også muligt at tilføje andre farver.</p> 
-        <ul>
-          <li><code>.content-text</code></li>
-          <li><code>.content</code></li>
-        </ul>
-        <h2 class="h4">Aktionsområde</h2>
-        <p>Aktionsområdet har en <code>card-action</code> class og kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.</p>
-        <ul>
-          <li><code>.action-content</code></li>
-          <li><code>.action-buttons</code></li>
-          <li><code>.action-links</code></li>
-        </ul>
-    </section>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/cards/card-third-width">
+  <h2 id="card-med-tredjedel-bredde">Card med tredjedel bredde</h2>
+  
+  
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/cards-third-width"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-cards-third-width">Kode</button>
+  <div id="code-cards-third-width" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span> <span class="na">title=</span><span class="s">"Card header"</span>
+                        <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Dette er et <span class="nt">&lt;em&gt;</span>tekstområde<span class="nt">&lt;/em&gt;</span>, hvor
+                        du kan skrive hvad du har lyst til.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-action"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-content"</span><span class="nt">&gt;</span>
+
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-buttons"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span>
+                            <span class="na">class=</span><span class="s">"button button-secondary"</span><span class="nt">&gt;</span>Sekundærknap<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span>
+                            <span class="na">class=</span><span class="s">"button button-tertiary"</span><span class="nt">&gt;</span>Tertiærknap<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"action-links"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
+                                    <span class="na">class=</span><span class="s">"default link state"</span><span class="nt">&gt;</span>Et link til
+                                    et sted i løsningen<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
+                                    <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>Et link til et sted
+                                    uden for
+                                    løsningen<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;</span>
+                            <span class="nt">&lt;/li&gt;</span>
+                        <span class="nt">&lt;/ul&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span> <span class="na">title=</span><span class="s">"Card header"</span>
+                        <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-content"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-center"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/dkfds-docs/img/cards/Card_Tredjedel_2_EKSEMPEL.svg"</span> <span class="na">class=</span><span class="s">"d-block"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5 header-title"</span> <span class="na">title=</span><span class="s">"Card header"</span>
+                            <span class="na">aria-label=</span><span class="s">"Card header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sub-header"</span><span class="nt">&gt;</span>Understøttende tekst<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Dette er et <span class="nt">&lt;em&gt;</span>tekstområde<span class="nt">&lt;/em&gt;</span>,
+                            hvor du kan skrive hvad du har lyst til.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
   </div>
 </div>
 
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="alert-docs">
-    Retningslinjer
-  </button>
-  <div id="alert-docs" aria-hidden="false" class="accordion-content">
-     <article>
-        <section>
-            <h2 class="h4">Tilgængelighed</h2>
-            <p>Cards skal overholde html outline, så browser og eventuelle skærmlæsere kan afkode det korrekt. Dvs. overskriften på dit cards skal være en heading 4, hvis det foregående afsnit er en heading 3.</p>
-        </section>
-        <section>
-            <h2 class="h4">Brugervenlighed</h2>
-            <h3 class="h4">Anvendes til</h3>
-            <p>Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Det kan fx være en afledt, men ikke direkte koblet ekstra funktion ift. sidens sammenhæng.</p>
-            <h3 class="h4">Anvendes ikke til</h3>
-            <ul>
-                <li>Brug ikke cards til det primære indhold på en løsning, men derimod til indhold, der kan stå og forstås alene og fortsat være del af den samlede løsning.</li>
-                <li>Brug ikke cards udelukkende af visuelle hensyn, som placeholders for ornamental grafik eller indhold uden interaktion.</li>
-                <li>Cards er ikke en statusbesked.</li>
-            </ul>
-            <h3 class="h4">Vejledning</h3>
-            <ul>
-                <li>Cards skal tilbyde en enkel og fokuseret funktion. </li>
-                <li>Cards er velegnede til interaktion med brugeren, men brug dem kun, når der tilbydes en ekstra funktionalitet af grupperet indhold.</li>
-                <li>Cards er velegnede til responsive løsninger.</li>
-                <li>Du kan godt indsætte flere cards på en side, men sørg for at de fremtræder roligt i sidens layout og ikke bryder brugerens naturlige aflæsning af siden.</li>
-                <li>Undgå lange tekster i cards.</li>
-                <li>Skriv kort og præcist i hvert card.</li>
-            </ul>
-        </section>
-    </article>
-  </div>
-</div>
+
+</section>
+
 
       </section>
     </main>
