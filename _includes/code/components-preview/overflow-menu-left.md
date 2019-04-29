@@ -3,7 +3,7 @@ permalink: /preview-components/overflow-menu-left.html
 layout: iframed 
 title: Overflow-menu-left.html
 ---
-<div class="container pt-6 pl-8">
+<div class="container pt-6 align-text-right">
 
     <div class="overflow-menu  overflow-menu--open-left ">
         <button class="button-overflow-menu js-dropdown "
