@@ -96,6 +96,8 @@ title: Test
 <div class="container">
     <h2>Accordion</h2>
     {% include code/preview.html component="accordion" %}
+    {% include code/preview.html component="accordion-border" %}
+    {% include code/preview.html component="accordion-multi" %}
 </div>
 <div class="container">
     <h2>Badges</h2>
@@ -104,15 +106,20 @@ title: Test
 <div class="container">
     <h2>Beskeder</h2>
     {% include code/preview.html component="alerts" %}
+    {% include code/preview.html component="alerts-icons" %}
+    {% include code/preview.html component="alerts-texts" %}
 </div>
 <div class="container">
     <h2>Cards</h2>
-    {% include code/preview.html component="cards" %}
+    {% include code/preview.html component="cards-full-width" %}
+    {% include code/preview.html component="cards-half-width" %}
+    {% include code/preview.html component="cards-third-width" %}
 </div>
 <div class="container">
     <h2>Faneblade</h2>
     {% include code/preview.html component="tabnav" %}
 </div>
+<article>
 <section>
     <div class="container">
         <h2>Footers</h2>
@@ -128,6 +135,7 @@ title: Test
     <div class="container"><h3>Footer med logo</h3></div>
     {% include code/demo.html component="footer-logo" %}
 </section>
+</article>
 <div class="container">
     <h2>Formular-elementer</h2>
     <h3>Felter</h3>
@@ -160,7 +168,13 @@ title: Test
 </section>
 <div class="container">
   <h2>Knapper</h2>
-  {% include code/preview.html component="buttons" %}
+  {% include code/preview.html component="buttons-primary" %}
+  {% include code/preview.html component="buttons-secondary" %}
+  {% include code/preview.html component="buttons-secondary" %}
+  {% include code/preview.html component="buttons-back" %}
+  {% include code/preview.html component="buttons-only-icon" %}
+  {% include code/preview.html component="buttons-with-icon" %}
+  {% include code/preview.html component="buttons-fileupload" %}
 </div>
 <div class="container">
   <h2>Modalvinduer</h2>
@@ -168,11 +182,24 @@ title: Test
 </div>
 <div class="container">
   <h2>Overflow menu</h2>
+  
   {% include code/preview.html component="overflow-menu" %}
+  {% include code/preview.html component="overflow-menu-left" %}
 </div>
 <div class="container">
-  <h2>Sidenavigation</h2>
-  {% include code/preview.html component="sidenav--compare" %}
+    <h2>Sidenavigation</h2>
+    <h3>Ét niveau</h3>
+    {% include code/preview.html component="sidenav-normal-level1" %}
+    <h3>2 niveauer</h3>
+    {% include code/preview.html component="sidenav-normal-level2" %}
+    <h3>3 niveauer</h3>
+    {% include code/preview.html component="sidenav-normal-level3" %}
+    <h3>Ét niveau</h3>
+    {% include code/preview.html component="sidenav-information-level1" %}
+    <h3>2 niveauer</h3>
+    {% include code/preview.html component="sidenav-information-level2" %}
+    <h3>3 niveauer</h3>
+    {% include code/preview.html component="sidenav-information-level3" %}
 </div>
 <div class="container">
   <h2>Skjul og vis (Collapse)</h2>
@@ -209,14 +236,22 @@ title: Test
 <div class="container">
   <h2>Tags</h2>
   {% include code/preview.html component="tags" %}
+  {% include code/preview.html component="tags-icon" %}
 </div>
 <div class="container">
   <h2>Tooltip og popover</h2>
-  {% include code/preview.html component="tooltip" %}
+  {% include code/preview.html component="tooltip-button" %}
+  {% include code/preview.html component="tooltip-icon" %}
+  {% include code/preview.html component="popover-icon" %}
+  {% include code/preview.html component="tooltip-position" %}
 </div>
 <div class="container">
   <h2>Trinindikatorer</h2>
-  {% include code/preview.html component="tringuide" %}
+  {% include code/preview.html component="tringuide-overflowmenu" %}
+  {% include code/preview.html component="tringuide-responsive-overflowmenu" %}
+  {% include code/preview.html component="tringuide-clickable" %}
+  {% include code/preview.html component="tringuide-locked" %}
+  {% include code/preview.html component="tringuide-information" %}
 </div>
 <div class="container">
   <h2>Datatables</h2>
