@@ -126,13 +126,9 @@ title: Test
         <h3>Simpel</h3>
     </div>
     {% include code/demo.html component="footer-simple" %}
-    <div class="container"><h3>Tre kolonner</h3></div>
     {% include code/demo.html component="footer-three-columns" %}
-    <div class="container"><h3>Fire kolonner</h3></div>
     {% include code/demo.html component="footer-four-columns" %}
-    <div class="container"><h3>Kompleks</h3></div>
     {% include code/demo.html component="footer-complex" %}
-    <div class="container"><h3>Footer med logo</h3></div>
     {% include code/demo.html component="footer-logo" %}
 </section>
 </article>
@@ -160,11 +156,15 @@ title: Test
         <h2>Headers</h2>
         <h3>Standard header</h3>
     </div>
+    <article>
     {% include code/demo.html component="header-simple" %}
-    <div class="container"><h3>Standard header med topmenu</h3></div>
+    </article>
+    <article>
     {% include code/demo.html component="header-medium" %}
-    <div class="container"><h3>Kompleks header</h3></div>
+    </article>
+    <article>
     {% include code/demo.html component="header-full" %}
+    </article>
 </section>
 <div class="container">
   <h2>Knapper</h2>
@@ -258,7 +258,7 @@ title: Test
   {% include code/preview.html component="datatables" %}
 </div>
 <div class="container">
-  <h2>Datatables</h2>
+  <h2>Multiselect</h2>
   {% include code/preview.html component="selectwoo-multiselect" %}
 </div>
 <div class="container">
