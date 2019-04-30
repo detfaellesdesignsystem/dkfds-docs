@@ -16,8 +16,7 @@ title: Footer-logo.html
 
                             <ul class=" unstyled-list">
 
-                                <li><span href="/dkfds-docs/"
-                                        class="logo"></span></li>
+                                <li><img src="/dkfds-docs/assets/img/ea507176c85c67b71f7909f3bac14040.png" class="logo" alt="Logostyrelsen" /></li>
 
                             </ul>
 
