@@ -24,8 +24,7 @@ subnav:
 ---
 <hr class="my-6" />
 <h2 id="grid">Grid (12 kolonner)</h2>
-<p>Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige bredde kolonner med 32px (16px på hver side af en kolonne) afstand mellem hver kolonne. Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.</p>
-<p>I tablet- og mobilvisninger folder layoutet sammen til respektivt 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst.</p> 
+<p>Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige bredde kolonner med 32px (16px på hver side af en kolonne) afstand mellem hver kolonne. Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.</p> 
 <h3>Responsivt med break points</h3>
 <p>Det Fælles Designsystem er responsivt og tilpasser sig således automatisk det tilgængelige vinduesareal.</p>
 <p>Sidens break points – de værdier, hvorefter siden automatisk tilpasser sig arealet – er:</p>
@@ -33,12 +32,8 @@ subnav:
     <li>Desktop/stor skærm: 1200px</li>
     <li>Desktop/middel skærm: 992px</li>
     <li>Tablet: 768px</li>
-    <li>Mobil: 480px</li>
+    <li>Mobil: 576px</li>
 </ul>
-<figure>
-    <img src="{{ site.baseurl }}/img/descriptionimages/dfd-grid.png" width="100%" alt="Grafik der viser Det Fælles Designsystems grid-layout" title="Det Fælles Designsystems grid-layout">
-    <figcaption>Det Fælles Designsystems grid-layout fra mobil til desktop</figcaption>
-</figure>
 
 <h2 id="baselinegrid">Baseline grid (8 point)</h2>
 <p>I Det Fælles Designsystem går alle lodrette dimensioner, højder på komponenter og afstande i højderetningen op med en faktor 8. Dvs. 8px, 16px, 24px, 32px, 40px, 48px, 56px, etc.  Det er designsystemets baseline grid.</p>
