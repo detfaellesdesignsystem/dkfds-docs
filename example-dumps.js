@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-var root = "http://127.0.0.1:4000/dkfds-docs/";
+var root = "https://dkfdsdevelop.github.io/dkfds-docs/";
 var targetRootDir = "img/examples_pages/";
 
 var exampleUrls = [
@@ -38,13 +38,13 @@ var exampleUrls = [
 
 
 (async () => {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-
     var resWidth = 1125; // width of screenshot
     var resHeight = 961;
 
     for(var i=0; i<exampleUrls.length; i++){
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+        console.log(root + exampleUrls[i].url);
         await page.goto(root + exampleUrls[i].url, {waitUntil: 'networkidle2'});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.emulateMedia('screen');
@@ -56,7 +56,6 @@ var exampleUrls = [
         var pdfFileName =  targetRootDir+exampleUrls[i].folder+'/'+exampleUrls[i].filename;
 
         await page.screenshot({path: pdfFileName});
+        await browser.close();
     }
-
-    await browser.close();
 })();
