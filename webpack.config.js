@@ -100,6 +100,13 @@ module.exports = function (outputPath, prod) {
       modules: ["node_modules"]
     },
     plugins: [
+      new CopyWebpackPlugin(
+          [
+              {//copies all content from /img to /assets/img
+                  from: "./img/**/*",
+                  to: "" // i assets
+              }
+          ]),
       new MiniCssExtractPlugin(
         {
           filename: 'style/[name].css',
