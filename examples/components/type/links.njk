@@ -2,7 +2,7 @@
 {% from "components/type/links.njk" import link as link %}
 
 <div class="container">
-  <div class="row">
+    <div class="row">
         <div class="col-12 col-md-6">
             <p>{{ link('javascript:void(0);', '', 'Standard link','') }}</p>
         </div>
@@ -52,7 +52,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <p>Link som åbner en <a href="" class="icon-link">ekstern website{{icon_svg('open-in-new')}}</a> </p>
+            <p>Link som åbner et <a href="" class="icon-link">ekstern website{{icon_svg('open-in-new')}}</a> </p>
         </div>
     </div>
     <div class="row">
@@ -65,17 +65,52 @@
             <p><a href="javascript:void(0);" class="function-link">{{ icon_svg('printer', "", "", true)}}Funktionslink</a></p>
         </div>
     </div>
-
-  <div class="background-dark p-6">
-    <p>This is a {{ link('javascript:void(0);', '', 'default link state','') }} on a dark background.</p>
-    <p>This is a {{ link('javascript:void(0);', 'link-hover', 'hover link state','') }} on a dark background.</p>
-    <p>This is a {{ link('javascript:void(0);', 'link-active', 'active link state','') }} on a dark background.</p>
-    <p>This is a {{ link('javascript:void(0);', 'link-visited', 'visited link state','') }} on a dark background.</p>
-    <p>This is a {{ link('javascript:void(0);', 'link-focus', 'focus link state','') }} on a dark background.</p>
-    <p>This is a link that goes to an <a href="" class="icon-link">external website{{icon_svg('open-in-new')}}</a> on a dark background.</p>
-    <p>This is a text <a href="javascript:void(0);" class="disabled" aria-disabled="true" tabindex="-1">disabled link state</a> on a dark background.<span class="sr-only">disabled</span></p>
-    <p><b>This is a {{ link('javascript:void(0);', '', 'link','') }} in bold</b></p>
-    <p><small>This is a {{ link('javascript:void(0);', '', 'link','') }} in smalltext</small></p>
-  </div>
+</div>
+<div class="container background-dark p-6">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>{{ link('javascript:void(0);', '', 'Standard link','') }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>{{ link('javascript:void(0);', 'link-hover', 'Standard link, hover','') }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>{{ link('javascript:void(0);', 'link-active', 'Standard link, active','') }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>{{ link('javascript:void(0);', 'link-visited', 'Standard link, visited','') }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>{{ link('javascript:void(0);', 'link-focus', 'Standard link, focus','') }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>{{ link('javascript:void(0);', 'function-link', 'Footer link','') }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Link som åbner et <a href="" class="icon-link">ekstern website{{icon_svg('open-in-new')}}</a> </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Dette er <a href="javascript:void(0);" class="disabled" aria-disabled="true" tabindex="-1">et standard link, disabled<span class="sr-only">disabled</span></a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p><a href="javascript:void(0);" class="function-link">{{ icon_svg('printer', "", "", true)}}Funktionslink</a></p>
+        </div>
+    </div>
 </div>
 
