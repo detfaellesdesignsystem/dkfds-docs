@@ -5,7 +5,7 @@ title: Tringuide-responsive-overflowmenu.html
 ---
 <div class="container pt-5">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col">
+        <div class="col-12 col-lg-3 sidebar-col">
             <div
                 class="overflow-menu  overflow-menu--open-right overflow-menu--md-no-responsive">
                 <button class="button-overflow-menu js-dropdown "

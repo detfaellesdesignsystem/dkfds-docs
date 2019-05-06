@@ -5,86 +5,86 @@ title: Tringuide-information.html
 ---
 <div class="container">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col">
+        <div class="col-12 col-lg-3 sidebar-col>
+            
+  <ul class=" sidenav-list">
 
-            <ul class="sidenav-list">
+            <li>
+                <a href="">
+                    <div class="d-inline-block">
+                        1. Trin 1
 
-                <li>
-                    <a href="">
-                        <div class="d-inline-block">
-                            1. Trin 1
+                        <p class="sidenav-information">Informationstekst
+                            for trin 1</p>
 
-                            <p class="sidenav-information">
-                                Informationstekst for trin 1</p>
+                    </div>
 
-                        </div>
+                    <span class="sidenav-icon">
+                        <svg class="icon-svg "  ><use xlink:href="#check"></use></svg>
+                    </span>
 
-                        <span class="sidenav-icon">
-                            <svg class="icon-svg "  ><use xlink:href="#check"></use></svg>
-                        </span>
+                </a>
+            </li>
 
-                    </a>
-                </li>
+            <li>
+                <a href="">
+                    <div class="d-inline-block">
+                        2. Trin 2
 
-                <li>
-                    <a href="">
-                        <div class="d-inline-block">
-                            2. Trin 2
+                        <p class="sidenav-information">Informationstekst
+                            for trin 2</p>
 
-                            <p class="sidenav-information">
-                                Informationstekst for trin 2</p>
+                    </div>
 
-                        </div>
+                    <span class="sidenav-icon">
+                        <svg class="icon-svg "  ><use xlink:href="#check"></use></svg>
+                    </span>
 
-                        <span class="sidenav-icon">
-                            <svg class="icon-svg "  ><use xlink:href="#check"></use></svg>
-                        </span>
+                </a>
+            </li>
 
-                    </a>
-                </li>
+            <li>
+                <a href="" class="active">
+                    <div class="d-inline-block">
+                        3. Trin 3 (valgt)
 
-                <li>
-                    <a href="" class="active">
-                        <div class="d-inline-block">
-                            3. Trin 3 (valgt)
+                        <p class="sidenav-information">Informationstekst
+                            for trin 3</p>
 
-                            <p class="sidenav-information">
-                                Informationstekst for trin 3</p>
+                    </div>
 
-                        </div>
+                    <span class="sidenav-icon">
+                        <svg class="icon-svg "  ><use xlink:href="#check"></use></svg>
+                    </span>
 
-                        <span class="sidenav-icon">
-                            <svg class="icon-svg "  ><use xlink:href="#check"></use></svg>
-                        </span>
+                </a>
+            </li>
 
-                    </a>
-                </li>
+            <li>
+                <a href="">
+                    <div class="d-inline-block">
+                        4. Trin 4
 
-                <li>
-                    <a href="">
-                        <div class="d-inline-block">
-                            4. Trin 4
+                        <p class="sidenav-information">Informationstekst
+                            for trin 4</p>
 
-                            <p class="sidenav-information">
-                                Informationstekst for trin 4</p>
+                    </div>
 
-                        </div>
+                </a>
+            </li>
 
-                    </a>
-                </li>
+            <li>
+                <a href="">
+                    <div class="d-inline-block">
+                        5. Trin 5
 
-                <li>
-                    <a href="">
-                        <div class="d-inline-block">
-                            5. Trin 5
+                        <p class="sidenav-information">Informationstekst
+                            for trin 5</p>
 
-                            <p class="sidenav-information">
-                                Informationstekst for trin 5</p>
+                    </div>
 
-                        </div>
-
-                    </a>
-                </li>
+                </a>
+            </li>
 
             </ul>
 
