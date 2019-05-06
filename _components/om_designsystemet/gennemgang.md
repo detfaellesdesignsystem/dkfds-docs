@@ -346,7 +346,7 @@ subnav:
             <li>Desktop/stor skærm: 1200px</li>
             <li>Desktop/middel skærm: 992px</li>
             <li>Tablet: 768px</li>
-            <li>Mobil: 480px</li>
+            <li>Mobil: 576px</li>
         </ul>
         <figure>
             <img src="{{ site.baseurl }}/img/descriptionimages/dfd-grid.png" width="100%" alt="Grafik der viser Det Fælles Designsystems grid-layout" title="Det Fælles Designsystems grid-layout">

@@ -1,6 +1,10 @@
 {% from "components/side-navigation/tringuide.njk" import tringuide_locked as tringuide_locked %}
 
 <div class="container pt-5">
-    {{ tringuide_locked(tringuiden.trinlisten) }}
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col">
+            {{ tringuide_locked(tringuiden.trinlisten) }}
+        </div>
+    </div>
 </div>
 

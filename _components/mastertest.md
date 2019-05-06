@@ -247,11 +247,17 @@ title: Test
 </div>
 <div class="container">
   <h2>Trinindikatorer</h2>
+  <h3>Trinindikator i overflow-menu</h3>
   {% include code/preview.html component="tringuide-overflowmenu" %}
+  <h3>Trinindikator - responsivt i overflow-menu</h3>
   {% include code/preview.html component="tringuide-responsive-overflowmenu" %}
+  <h3>Klikbar trinindikator</h3>
   {% include code/preview.html component="tringuide-clickable" %}
+  <h3>Låst trinindikator</h3>
   {% include code/preview.html component="tringuide-locked" %}
+  <h3>Trinindikator med information</h3>
   {% include code/preview.html component="tringuide-information" %}
+  <h3></h3>
 </div>
 <div class="container">
   <h2>Datatables</h2>

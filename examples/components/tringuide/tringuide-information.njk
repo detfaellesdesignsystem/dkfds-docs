@@ -1,5 +1,9 @@
 {% from "components/side-navigation/tringuide.njk" import tringuide_information as tringuide_information %}
 
 <div class="container">
-    {{ tringuide_information(tringuiden.trinlisten) }}
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col">
+            {{ tringuide_information(tringuiden.trinlisten) }}
+        </div>
+    </div>
 </div>
