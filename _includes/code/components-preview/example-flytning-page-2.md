@@ -176,7 +176,9 @@ title: Example-flytning-page-2.html
                                     class="form-checkbox   " disabled
                                     checked>
                                 <label for="id-person-1"
-                                    class="checkbox"></label>
+                                    class="checkbox"><span
+                                        class="sr-only">Vælg Klaus Egegreen
+                                        Hansen</span></label>
                             </div>
                         </td>
                         <td>Klaus Egegreen Hansen</td>
@@ -188,7 +190,9 @@ title: Example-flytning-page-2.html
                                 <input id="id-person-2" type="checkbox"
                                     name="Checkbox for Line" value=""
                                     class="form-checkbox   ">
-                                <label for="id-person-2" class=""></label>
+                                <label for="id-person-2" class=""><span
+                                        class="sr-only">Vælg Line Von
+                                        Larsen</span></label>
                             </div>
                         </td>
                         <td>Line Von Larsen</td>
