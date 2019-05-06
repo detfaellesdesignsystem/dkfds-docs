@@ -54,6 +54,7 @@ title: Example-virksomhedsalliancer-page-2.html
         </div>
     </div>
 
+    <div class="overlay"></div>
     <nav role="navigation" class=" nav">
         <!-- collapsible-->
         <button
