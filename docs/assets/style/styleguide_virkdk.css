@@ -5446,8 +5446,9 @@ footer .footer {
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    height: 100px;
-    width: 150px; }
+    height: auto;
+    max-height: 100%;
+    max-width: 150px; }
   footer .footer ul:not(:last-child) {
     margin-bottom: 24px; }
   footer .footer ul.footer-links li {
