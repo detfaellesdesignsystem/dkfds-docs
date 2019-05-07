@@ -1,6 +1,6 @@
 ---
 title: Dropdown-menu
-parent: Form controls
+parent: Formcontrols
 order: 04
 lead:
 ---

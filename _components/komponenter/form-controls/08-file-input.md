@@ -1,8 +1,7 @@
 ---
 title: Vedhæft fil
-parent: Form controls
+parent: Formcontrols
 order: 07
-lead: Lader brugeren vælge en fil.
 ---
 
 {% include code/preview.html component="file-input" %}

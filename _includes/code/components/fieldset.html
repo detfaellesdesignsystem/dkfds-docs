@@ -1,0 +1,116 @@
+<div class="container">
+    <form>
+        <fieldset class="mb-7">
+            <legend class="h3">Dine kontaktoplysninger</legend>
+
+            <div class="form-group">
+                <label class="form-label " for="fnavn">Fornavn</label>
+
+                <input class="form-input   " placeholder="" id="fnavn"
+                    value="" name="fnavn" type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label " for="enavn">Efternavn</label>
+
+                <input class="form-input   " placeholder="" id="enavn"
+                    value="" name="enavn" type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label " for="email">E-mail
+                    adresse</label>
+
+                <input class="form-input   " placeholder="" id="email"
+                    value="" name="email" type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label " for="telefon">Telefonnr.</label>
+
+                <input class="form-input   " placeholder="" id="telefon"
+                    value="" name="telefon" type="text">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend class="h4">Hvordan vil du helst kontaktes?</legend>
+            <ul class="nobullet-list">
+                <li>
+
+                    <div class="form-group ">
+                        <input id="kontakt-telefon" type="radio"
+                            name="kontakt" value="kontakt-telefon"
+                            class="form-radio   ">
+                        <label for="kontakt-telefon" class="">Pr. telefon
+                        </label>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="form-group ">
+                        <input id="kontakt-email" type="radio"
+                            name="kontakt" value="kontakt-email"
+                            class="form-radio   ">
+                        <label for="kontakt-email" class="">Pr. e-mail
+                        </label>
+                    </div>
+
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend class="h4">Hvornår på dagen vil det passe bedst, at vi
+                kontakter dig?</legend>
+            <ul class="nobullet-list">
+                <li>
+
+                    <div class="form-group ">
+                        <input id="morgen" type="checkbox"
+                            name="tidspunkt[]" value="morgen"
+                            class="form-checkbox   ">
+                        <label for="morgen" class="">Om morgenen</label>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="form-group ">
+                        <input id="middag" type="checkbox"
+                            name="tidspunkt[]" value="middag"
+                            class="form-checkbox   ">
+                        <label for="middag" class="">Ved middagstid</label>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="form-group ">
+                        <input id="eftermiddag" type="checkbox"
+                            name="tidspunkt[]" value="eftermiddag"
+                            class="form-checkbox   ">
+                        <label for="eftermiddag" class="">Om
+                            eftermiddagen</label>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="form-group ">
+                        <input id="aften" type="checkbox"
+                            name="tidspunkt[]" value="aften"
+                            class="form-checkbox   ">
+                        <label for="aften" class="">Om aftenen</label>
+                    </div>
+
+                </li>
+            </ul>
+        </fieldset>
+
+        <div class="form-group">
+            <button class="button button-primary"> Gem oplysninger
+            </button>
+        </div>
+    </form>
+</div>
