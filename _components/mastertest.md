@@ -150,6 +150,8 @@ title: Test
     {% include code/preview.html component="date-input" %}
     <h3>Vedhæft fil</h3>
     {% include code/preview.html component="file-input" %}
+    <h3>Fieldset</h3>
+    {% include code/preview.html component="fieldset" %}
 </div>
 <section>
     <div class="container">

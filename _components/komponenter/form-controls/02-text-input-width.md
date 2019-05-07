@@ -1,6 +1,6 @@
 ---
 title: Feltbredde
-parent: Form controls
+parent: Formcontrols
 order: 02
 lead: 
 ---

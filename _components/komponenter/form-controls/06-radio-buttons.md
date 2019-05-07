@@ -1,6 +1,6 @@
 ---
 title: Radioknap
-parent: Form controls
+parent: Formcontrols
 order: 06
 lead: 
 ---

@@ -5441,8 +5441,9 @@ footer .footer {
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    height: 100px;
-    width: 150px; }
+    height: auto;
+    max-height: 100%;
+    max-width: 150px; }
   footer .footer ul:not(:last-child) {
     margin-bottom: 24px; }
   footer .footer ul.footer-links li {
@@ -5904,8 +5905,7 @@ footer .footer-theme {
       border-bottom: 7px solid #747474;
       border-bottom: 7px solid #747474; } }
   .nav-primary a.current {
-    font-weight: 600;
-    color: #747474; }
+    font-weight: 600; }
   .nav-primary button.current {
     font-weight: 600; }
 

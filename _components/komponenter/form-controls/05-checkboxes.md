@@ -1,6 +1,6 @@
 ---
 title: Tjekboks
-parent: Form controls
+parent: Formcontrols
 order: 05
 lead:
 ---
