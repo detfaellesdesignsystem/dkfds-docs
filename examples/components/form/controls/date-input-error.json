@@ -1,0 +1,18 @@
+{
+ "datoinput_example":
+   {
+     "items": [
+      {
+        "label": "Indsendelsesfrist",
+        "hint": "For eksempel: 05 12 2018",
+        "day": "Dag",
+        "month": "Måned",
+        "year": "År",
+        "error": "Fødselsdato kan skal være i fortiden",
+        "dayValue": "01",
+        "monthValue": "12",
+        "yearValue": "2030"
+      }
+     ]
+   }
+}
