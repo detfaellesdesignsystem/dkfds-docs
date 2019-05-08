@@ -30,7 +30,7 @@ alertwarningtext: Bruger man udvidelser skal de styles, så de visuelt passer in
           <a href="/dkfds-docs/udvidelser/pikaday/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Datepicker.svg" alt="">
           </a>
-          <p><a href="/dkfds-docs/udvidelser/pikaday/">Datepicker</a></p>
+          <p><a href="/dkfds-docs/udvidelser/pikaday/">Datovælger (datepicker)</a></p>
       </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 ---
-title: Datovælger
+title: Datoangivelse
 parent: Formcontrols
 order: 07
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
