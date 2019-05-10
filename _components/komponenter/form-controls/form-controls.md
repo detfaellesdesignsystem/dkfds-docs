@@ -25,8 +25,8 @@ subnav:
   href: '#datovælger'
 - text: Vedhæft fil
   href: '#vedhæft-fil'
-- text: Fieldset
-  href: '#fieldset'
+- text: Struktur (Fieldset)
+  href: '#struktur-fieldset'
 ---
 
 <h2 class="h4">Generelt om tilgængelighed af formularelementer</h2>

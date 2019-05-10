@@ -1,5 +1,5 @@
 ---
-title: Fieldset
+title: Struktur (Fieldset)
 parent: Formcontrols
 order: 071
 lead: Brug <code>fieldset</code> til opbygningen af en formular
@@ -9,10 +9,10 @@ lead: Brug <code>fieldset</code> til opbygningen af en formular
 {% include code/accordion.html component="fieldset" %}
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="text-input-docs">
+      aria-expanded="true" aria-controls="fieldset-docs">
     Retningslinjer
   </button>
-  <div id="text-input-docs" aria-hidden="false" class="accordion-content">
+  <div id="fieldset-docs" aria-hidden="false" class="accordion-content">
     <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
