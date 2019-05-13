@@ -2,7 +2,7 @@
 title: Struktur (Fieldset)
 parent: Formcontrols
 order: 071
-lead: Brug <code>fieldset</code> til opbygningen af en formular
+lead: Brug <code>fieldset</code> til opbygningen af en formular" til "Brug fieldset til at strukturere indholdet i mindre grupperinger. Dette er både godt for skærmlæsere og overblikket.
 ---
 
 {% include code/preview.html component="fieldset" %}

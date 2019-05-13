@@ -2,6 +2,8 @@
 {% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
 {% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
 {% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
+
 <div class="container">
     <form>
     <fieldset>
@@ -44,7 +46,21 @@
             </ul>
         </fieldset>
     </div>
-
+    <fieldset>
+        <legend><h2 class="h4">Personlige oplysninger</h2></legend>
+        {{datoinput("Indsendelsesfrist", "For eksempel: 05 12 2018", "Dag", "Måned", "År")}}
+    </fieldset>
+    <fieldset>
+        <legend><h3 class="h5">Bor du i Odense?</h3></legend>
+        <ul class="nobullet-list">
+          <li>
+            {{ radiobutton("odense-ja", "odense", "odense-ja", false, false, "Ja", "", "", true) }}
+          </li>
+          <li>
+            {{ radiobutton("odense-nej", "odense", "odense-nej", false, false, "Nej", "", "", true) }}
+          </li>
+        </ul>
+    </fieldset>
     <div class="form-group mt-9">
         {{ button("Gem oplysninger", "primary") }}
     </div>
