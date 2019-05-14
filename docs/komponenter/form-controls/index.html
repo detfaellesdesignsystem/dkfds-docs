@@ -2924,7 +2924,16 @@
   
     <p class="font-lead">Brug <code>fieldset</code> til opbygningen af en formular" til "Brug fieldset til at strukturere indholdet i mindre grupperinger. Dette er både godt for skærmlæsere og overblikket.</p>
   
-  
+  <section>
+  <h3 class="h4">Tilgængelighed</h3>
+  <p><code>Fieldset</code> er vigtig for tilgængeligheden i en formular. Den hjælper skærmlæsere med at forstå sammenhængen og logikken i en formular.</p>
+</section>
+<section>
+    <h3 class="h4">Brugervenlighed</h3>
+    <h4 class="h5">Anvendes til</h4>
+    <p>Bruges til at gruppere felter i en formular.</p>
+</section>
+
 <div class="component-preview ">
 
     <!--<div class="loader-container">
@@ -2937,6 +2946,69 @@
   
   <button class="accordion-button" aria-controls="code-fieldset">Kode</button>
   <div id="code-fieldset" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend&gt;</span>
+                <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>Dine kontaktoplysninger<span class="nt">&lt;/h1&gt;</span>
+            <span class="nt">&lt;/legend&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"fnavn"</span>
+                    <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"fnavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"enavn"</span>
+                    <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"enavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>E-mail
+                    adresse<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"email"</span>
+                    <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"telefon"</span>
+                    <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"telefon"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary mt-9"</span><span class="nt">&gt;</span> Gem oplysninger
+            <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<h3>Kompleks formular struktur</h3>
+
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/dkfds-docs/preview-components/fieldset-complex"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-fieldset-complex">Kode</button>
+  <div id="code-fieldset-complex" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;form&gt;</span>
@@ -3150,7 +3222,6 @@
             <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary mt-9"</span><span class="nt">&gt;</span> Gem oplysninger
             <span class="nt">&lt;/button&gt;</span>
-
         <span class="nt">&lt;/fieldset&gt;</span>
     <span class="nt">&lt;/form&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -3161,26 +3232,6 @@
   </div>
 </div>
 
-<div class="accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="fieldset-docs">
-    Retningslinjer
-  </button>
-  <div id="fieldset-docs" aria-hidden="false" class="accordion-content">
-    <article>
-      <section>
-          <h3 class="h4">Tilgængelighed</h3>
-          <p><code>Fieldset</code> er vigtig for tilgængeligheden i en formular. Den hjælper skærmlæsere med at forstå sammenhængen og logikken i en formular.</p>
-      </section>
-      <section>
-        <h3 class="h4">Brugervenlighed</h3>
-        <h4 class="h5">Anvendes til</h4>
-        <ul>
-            <li>Bruges til at gruppere felter i en formular.</li>
-        </ul>
-      </section>
-    </article>
-  </div>
-</div>
 
 </section>
 
