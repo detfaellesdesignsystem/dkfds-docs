@@ -102,7 +102,7 @@ class datepickerGroup {
     }
 
     validateInputs(){
-        var day = parseInt(this.dayInputElement.value)
+        var day = parseInt(this.dayInputElement.value);
         var month = parseInt(this.monthInputElement.value);
         var year = parseInt(this.yearInputElement.value);
         var maxDay = new Date(year, month, 0).getDate();
