@@ -1,5 +1,5 @@
 ---
-title: Datovælger
+title: Datoangivelse
 parent: Formcontrols
 order: 07
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
@@ -60,5 +60,22 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
       </ul>
       </section>
     </article>
+  </div>
+</div>
+<h3>Datoangivelse med fejl</h3>
+{% include code/preview.html component="date-input-error" %}
+{% include code/accordion.html component="date-input-error" %}
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="false" aria-controls="date-input-error-tech">
+    Implementering
+  </button>
+  <div id="date-input-error-tech" aria-hidden="true" class="accordion-content">
+    <section>
+        <ul>
+            <li>Tilføj en hjælpsom fejlbesked over felterne i elementet <code>&lt;span class="form-error-message" id="form-error-message-input-error" role="alert"&gt;</code>.</li> 
+            <li>Tilføj klassen <code>form-error</code> på <code>form-group</code> <code>div</code> elementet.</li>
+        </ul> 
+    </section>
   </div>
 </div>

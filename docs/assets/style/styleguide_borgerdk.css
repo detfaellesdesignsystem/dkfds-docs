@@ -4381,6 +4381,10 @@ figure {
   .icon-svg--inherit-color {
     fill: currentColor; }
 
+.inline-svg {
+  height: 1em;
+  width: 1em; }
+
 .icon-svg-large {
   height: 4.8rem;
   width: 4.8rem;
@@ -4648,6 +4652,12 @@ input[type=text]:disabled, textarea:disabled {
   background: #F5F5F5;
   color: #999999;
   cursor: not-allowed; }
+
+input[readonly][type=text] {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: auto; }
 
 input[readonly][type=text], textarea[readonly] {
   background-color: transparent;
@@ -6737,7 +6747,7 @@ a.skipnav {
       background-color: #F5F5F5; }
   .overflow-menu .overflow-menu-inner {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     width: auto;
     border: 1px solid #747474;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);

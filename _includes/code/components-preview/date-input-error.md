@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/date-input.html
+permalink: /preview-components/date-input-error.html
 layout: iframed 
-title: Date-input.html
+title: Date-input-error.html
 ---
 <div class="container">
 
