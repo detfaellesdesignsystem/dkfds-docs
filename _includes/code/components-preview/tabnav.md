@@ -10,7 +10,7 @@ title: Tabnav.html
 
         <li>
             <a href="#tab1" aria-expanded="false">
-                Tabnav 1
+                <span>Tabnav 1</span>
 
             </a>
 
@@ -30,7 +30,7 @@ title: Tabnav.html
 
         <li>
             <a href="#tab2" class="active" aria-expanded="true">
-                Tabnav 2
+                <span>Tabnav 2</span>
                 <span class="sr-only">(valgt)</span>
             </a>
 
@@ -50,7 +50,7 @@ title: Tabnav.html
 
         <li>
             <a href="#tab3" aria-expanded="false">
-                Tabnav 3
+                <span>Tabnav 3</span>
 
             </a>
 
@@ -70,7 +70,7 @@ title: Tabnav.html
 
         <li>
             <a href="#tab4" aria-expanded="false">
-                Tabnav 4
+                <span>Tabnav 4</span>
 
             </a>
 
@@ -90,7 +90,7 @@ title: Tabnav.html
 
         <li>
             <a href="#tab5" aria-expanded="false">
-                Tabnav 5
+                <span>Tabnav 5</span>
 
             </a>
 
@@ -110,7 +110,7 @@ title: Tabnav.html
 
         <li>
             <a href="#tab6" aria-expanded="false">
-                Tabnav 6
+                <span>Tabnav 6</span>
 
             </a>
 
