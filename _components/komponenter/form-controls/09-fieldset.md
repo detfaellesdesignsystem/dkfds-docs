@@ -9,9 +9,10 @@ lead: Brug <code>fieldset</code> til at strukturere indholdet i mindre grupperin
   <p><code>Fieldset</code> er vigtig for tilgængeligheden i en formular. Den hjælper skærmlæsere med at forstå sammenhængen og logikken i en formular.</p>
 </section>
 
+<h3>Simpel formularstruktur</h3>
 {% include code/preview.html component="fieldset" %}
 {% include code/accordion.html component="fieldset" %}
 
-<h3>Kompleks formular struktur</h3>
+<h3>Kompleks formularstruktur</h3>
 {% include code/preview.html component="fieldset-complex" %}
 {% include code/accordion.html component="fieldset-complex" %}
