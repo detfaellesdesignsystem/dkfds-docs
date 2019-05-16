@@ -188,11 +188,10 @@ title: Example-virksomhedsalliancer-page-3.html
                             name="Input til ordningens navn" type="text">
                     </div>
 
-                    <div class="form-group">
-                        <fieldset>
-                            <legend><label
-                                    class="form-label icon-link">Dato for
-                                    modtagelse</label></legend>
+                    <fieldset>
+                        <div class="form-group ">
+                            <label class="form-label icon-link">Dato for
+                                modtagelse</label>
                             <span class="form-hint">Fx. 28 04 1996</span>
                             <span class="form-error-message"
                                 id="form-error-message-input-error"
@@ -236,8 +235,8 @@ title: Example-virksomhedsalliancer-page-3.html
                                 </div>
 
                             </div>
-                        </fieldset>
-                    </div>
+                        </div>
+                    </fieldset>
 
                     <div class="form-group">
                         <label class="form-label " for="id-amount">Beløb i

@@ -58,7 +58,7 @@ order: 25
         <p>Tilføj klassen <code>inline-svg</code> på ikoner, som skal fremgå i en tekst. Ikonet vil da tilpasse sig linjehøjden.</p> 
         <h2 class="h5">Tilgængelighed</h2>
         <p>Ikoner bør tilføjes en <code>alt</code> tekst til elementet, der beskriver ikonet, så skærmlæsere kan læse ikonet op.</p>
-        <p>I tilfælde, hvor ikonet ikke skal læses op, tilføj da attributten <code>aria-hiden="true"</code>. Denne attribut vil gøre ikonet usynligt for skærmlæsere.</p>
+        <p>I tilfælde, hvor ikonet ikke skal læses op, tilføj da attributten <code>aria-hidden="true"</code>. Denne attribut vil gøre ikonet usynligt for skærmlæsere.</p>
         <p>Dekorative ikoner bør undgås, men hvis de bruges skal de ikke beskrives eller have “alt” tekst, da de ikke bærer nogen betydning eller er vigtige for brugeren.</p>
     </section>
   </div>

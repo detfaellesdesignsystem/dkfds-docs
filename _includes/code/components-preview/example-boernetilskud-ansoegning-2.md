@@ -220,10 +220,10 @@ title: Example-boernetilskud-ansoegning-2.html
         </div>
         <div class="mt-7">
 
-            <div class="form-group">
-                <fieldset>
-                    <legend><label class="form-label icon-link">Jeg blev
-                            eller bliver enlig:</label></legend>
+            <fieldset>
+                <div class="form-group ">
+                    <label class="form-label icon-link">Jeg blev eller
+                        bliver enlig:</label>
                     <span class="form-hint"></span>
                     <span class="form-error-message"
                         id="form-error-message-input-error"
@@ -263,8 +263,8 @@ title: Example-boernetilskud-ansoegning-2.html
                         </div>
 
                     </div>
-                </fieldset>
-            </div>
+                </div>
+            </fieldset>
 
         </div>
     </section>

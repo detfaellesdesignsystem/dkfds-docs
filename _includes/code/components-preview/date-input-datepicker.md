@@ -5,11 +5,9 @@ title: Date-input-datepicker.html
 ---
 <div class="container">
 
-    <div class="form-group">
-        <fieldset>
-            <legend><label
-                    class="form-label icon-link">Indsendelsesfrist</label>
-            </legend>
+    <fieldset>
+        <div class="form-group ">
+            <label class="form-label icon-link">Indsendelsesfrist</label>
             <span class="form-hint">For eksempel: 05 12 2018</span>
             <span class="form-error-message"
                 id="form-error-message-input-error" role="alert"></span>
@@ -49,7 +47,7 @@ title: Date-input-datepicker.html
                 </button>
 
             </div>
-        </fieldset>
-    </div>
+        </div>
+    </fieldset>
 
 </div>

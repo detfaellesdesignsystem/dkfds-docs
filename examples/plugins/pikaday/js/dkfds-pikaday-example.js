@@ -12,7 +12,7 @@ class datepickerGroup {
       this.pikadayInstance = null;
       this.datepickerElement = $(el).find(jsDatepickerSelector);
       this.dateGroup = el;
-      this.formGroup = $(el).parent('.form-group fieldset');
+      this.formGroup = $(el).parent('.form-group');
       this.dayInputElement = null;
       this.monthInputElement = null;
       this.yearInputElement = null;
@@ -102,9 +102,9 @@ class datepickerGroup {
     }
 
     validateInputs(){
-        var day = parseInt(this.dayInputElement.value);
-        var month = parseInt(this.monthInputElement.value);
-        var year = parseInt(this.yearInputElement.value);
+        var day = this.dayInputElement.value;
+        var month = this.monthInputElement.value;
+        var year = this.yearInputElement.value;
         var maxDay = new Date(year, month, 0).getDate();
 
         var dayRegexStr = this.dayInputElement.getAttribute('data-input-regex');
@@ -117,18 +117,20 @@ class datepickerGroup {
 
         var msg = "";
         var isValid = true;
-        if(rDay.exec(day) === null || rMonth.exec(month) === null || rYear.exec(year) === null){
-            isValid = false;
-            msg = "Hov, den indtastede dato er ikke gyldig."
-            this.showError(msg);
-        }else if(day > maxDay){
-            isValid = false;
-            msg = "Hov, den dag findes ikke i den valgte måned."
-            this.showError(msg);
-        }else if(month > 12){
-            isValid = false;
-            msg = "Hov, den måned findes ikke."
-            this.showError(msg);
+        if(day != "" || month != "" ||  year != "") {
+            if ((rDay.exec(day) === null || rMonth.exec(month) === null || rYear.exec(year) === null)) {
+                isValid = false;
+                msg = "Hov, den indtastede dato er ikke gyldig."
+                this.showError(msg);
+            } else if (day > maxDay) {
+                isValid = false;
+                msg = "Hov, den dag findes ikke i den valgte måned."
+                this.showError(msg);
+            } else if (month > 12) {
+                isValid = false;
+                msg = "Hov, den måned findes ikke."
+                this.showError(msg);
+            }
         }
 
         if(isValid){

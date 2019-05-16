@@ -178,14 +178,12 @@ title: Example-aes-page-5.html
 
     <h1>Oplysninger om sagen</h1>
 
-    <div class="form-group">
-        <fieldset>
-            <legend><label class="form-label icon-link">Skadedato<button
-                        class="js-tooltip tooltip"
-                        data-tippy-trigger="click"
-                        title="Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum."
-                        aria-label="Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum."><svg class='icon-svg'><use xlink:href='#help-circle-outline'></use></svg></button></label>
-            </legend>
+    <fieldset>
+        <div class="form-group ">
+            <label class="form-label icon-link">Skadedato<button
+                    class="js-tooltip tooltip" data-tippy-trigger="click"
+                    title="Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum."
+                    aria-label="Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum."><svg class='icon-svg'><use xlink:href='#help-circle-outline'></use></svg></button></label>
             <span class="form-hint">Fx. 28 04 1996</span>
             <span class="form-error-message"
                 id="form-error-message-input-error" role="alert"></span>
@@ -219,8 +217,8 @@ title: Example-aes-page-5.html
                 </div>
 
             </div>
-        </fieldset>
-    </div>
+        </div>
+    </fieldset>
 
     <div class="mt-6">
 
@@ -254,11 +252,10 @@ title: Example-aes-page-5.html
             class="box-border-l collapsed">
             <div class="py-4">
 
-                <div class="form-group">
-                    <fieldset>
-                        <legend><label
-                                class="form-label icon-link">Berammelsesdato</label>
-                        </legend>
+                <fieldset>
+                    <div class="form-group ">
+                        <label
+                            class="form-label icon-link">Berammelsesdato</label>
                         <span class="form-hint">Fx. 28 04 1996</span>
                         <span class="form-error-message"
                             id="form-error-message-input-error"
@@ -299,8 +296,8 @@ title: Example-aes-page-5.html
                             </div>
 
                         </div>
-                    </fieldset>
-                </div>
+                    </div>
+                </fieldset>
 
                 <div class="mt-5">
 
