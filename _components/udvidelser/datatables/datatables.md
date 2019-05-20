@@ -12,10 +12,6 @@ alerts:
 - type: warning
   header: Denne komponent er ikke en del af kernen af Det Fælles Designsystem
   content: Datatables er et eksternt bibliotek (<a href="https://datatables.net/" class="icon-link">datatables.net<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>), som ikke er inkluderet i Det Fælles Designsystem.<br>I <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">DKFDS-plugins<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> projektet kan man finde et tema til Datatables (dkfds-datatables-theme.css). <br>JavaScript i DKFDS-plugins projektet kan bruges som inspiration til, hvordan datatables kan inkluderes og bruges i et projekt.
-- type: warning
-  icon: true
-  header: Du skal gøre en ekstra indsats for at gøre Datatables tilgængelig
-  content: Projekter skal selv håndtere ekstra kode, for at gøre paginering i Datatables tilgængeligt.<br /> Se under Implementering for mere info.
 subnav:
 - text: Datatable
   href: '#datatables'
@@ -30,6 +26,14 @@ subnav:
 ---
 
 <h2 class="h4">Tilgængelighed</h2>
+<div class="alert alert-warning alert--show-icon" role="alert">
+  <div class="alert-body">
+      <h3 class="alert-heading">Paginering i Datatables</h3>
+      <p class="alert-text">
+        Projekter skal selv håndtere ekstra kode, for at gøre paginering i Datatables tilgængeligt.<br> Se under Implementering for mere info.
+      </p>
+  </div>
+</div>
 <ul>
     <li>Datatables anvender bl.a. ARIA til at øge tilgængeligheden. Du skal imidlertid være opmærksom på, at en kompliceret tabel med mange rækker, kolonner og muligheder øger det kognitive load og dermed sænker den reelle tilgængelighed.</li>
     <li>Du skal bruger- og performanceteste prototyper med Datatables med entydigt positive resultat ift din målgruppe, hvis du ønsker at anvende den.</li>

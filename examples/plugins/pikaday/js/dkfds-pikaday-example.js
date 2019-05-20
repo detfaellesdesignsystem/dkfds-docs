@@ -120,7 +120,7 @@ class datepickerGroup {
         if(day != "" || month != "" ||  year != "") {
             if ((rDay.exec(day) === null || rMonth.exec(month) === null || rYear.exec(year) === null)) {
                 isValid = false;
-                msg = "Hov, den indtastede dato er ikke gyldig."
+                msg = "Beklager, men du kan kun bruge tal."
                 this.showError(msg);
             } else if (day > maxDay) {
                 isValid = false;
