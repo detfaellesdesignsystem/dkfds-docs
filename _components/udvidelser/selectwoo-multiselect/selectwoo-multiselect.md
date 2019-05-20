@@ -6,8 +6,10 @@ title: Multiselect dropdown
 category: Udvidelser_category
 subcategory: Udvidelser
 lead: Gør det muligt for brugeren at vælge flere elementer fra en liste.
-alertwarningheader: Denne komponent er ikke en del af kernen af Det Fælles Designsystem
-alertwarningtext: SelectWoo er ikke inkluderet i kernen af Det Fælles Designsystem. For at inkludere SelectWoo skal der inkluderes et eksternt bibliotek, se implementeringsafsnittet nedenfor.<br><br>Det Fælles Designsystem har implementeret et tema til SelectWoo, som findes i <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">Plugins projektet<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.
+alerts:
+- type: warning
+  header: Denne komponent er ikke en del af kernen af Det Fælles Designsystem
+  content: SelectWoo er ikke inkluderet i kernen af Det Fælles Designsystem. For at inkludere SelectWoo skal der inkluderes et eksternt bibliotek, se implementeringsafsnittet nedenfor.<br><br>Det Fælles Designsystem har implementeret et tema til SelectWoo, som findes i <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">Plugins projektet<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.
 subnav:
 - text: Standard
   href: '#standard'

@@ -10,8 +10,8 @@ layout: default
         {% assign sidenavFromNavData = site.data.nav[page.category] %}
         {% if sidenavFromNavData %}
         <ul class="sidenav-list">
-          {% include nav/list.html 
-            links=sidenavFromNavData               
+          {% include nav/list.html
+            links=sidenavFromNavData
             use_alt_text=true
           %}
         </ul>
@@ -21,20 +21,21 @@ layout: default
 
     <main class="col-12 col-lg-9" id="main-content">
       <section id="section-{{page.id}}">
-          {% if page.alertwarningheader or page.alertwarningtext  %}
-          <div class="alert alert-warning" role="alert">
+          {% for alert in page.alerts %}
+          <div class="alert alert-{{ alert.type }} {% if alert.icon %}alert--show-icon{% endif %}" role="alert">
               <div class="alert-body">
-                  {% if page.alertwarningheader %}
-                  <h3 class="alert-heading">{{page.alertwarningheader}}</h3>
+                  {% if alert.header %}
+                  <h3 class="alert-heading">{{alert.header}}</h3>
                   {% endif %}
-                  {% if page.alertwarningtext  %}
+                  {% if alert.content  %}
                   <p class="alert-text">
-                    {{page.alertwarningtext}}
+                    {{alert.content}}
                   </p>
                   {% endif %}
               </div>
           </div>
-          {% endif %}
+          {% endfor %}
+
           <p class="h6 m-0">
             {{ page.subcategory }}
           </p>
@@ -42,7 +43,7 @@ layout: default
           {% if page.lead != null and page.lead != "" %}
             <p class="font-lead">{{ page.lead }}</p>
           {% endif %}
-      
+
           {{ content }}
       </section>
     </main>

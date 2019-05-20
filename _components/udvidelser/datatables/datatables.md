@@ -8,8 +8,14 @@ title: Avancerede tabeller
 category: Udvidelser_category
 subcategory: Udvidelser
 lead: Avancerede tabeller er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.
-alertwarningheader: Denne komponent er ikke en del af kernen af Det Fælles Designsystem
-alertwarningtext:  Datatables er et eksternt bibliotek (<a href="https://datatables.net/" class="icon-link">datatables.net<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>), som ikke er inkluderet i Det Fælles Designsystem.<br>I <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">DKFDS-plugins<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> projektet kan man finde et tema til Datatables (dkfds-datatables-theme.css). <br>JavaScript i DKFDS-plugins projektet kan bruges som inspiration til, hvordan datatables kan inkluderes og bruges i et projekt.
+alerts:
+- type: warning
+  header: Denne komponent er ikke en del af kernen af Det Fælles Designsystem
+  content: Datatables er et eksternt bibliotek (<a href="https://datatables.net/" class="icon-link">datatables.net<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>), som ikke er inkluderet i Det Fælles Designsystem.<br>I <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">DKFDS-plugins<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> projektet kan man finde et tema til Datatables (dkfds-datatables-theme.css). <br>JavaScript i DKFDS-plugins projektet kan bruges som inspiration til, hvordan datatables kan inkluderes og bruges i et projekt.
+- type: warning
+  icon: true
+  header: Du skal gøre en ekstra indsats for at gøre Datatables tilgængelig
+  content: Projekter skal selv håndtere ekstra kode, for at gøre paginering i Datatables tilgængeligt.<br /> Se under Implementering for mere info.
 subnav:
 - text: Datatable
   href: '#datatables'
@@ -41,5 +47,9 @@ subnav:
     <li>Overvej om behovet kan løses ved enten en anden præsentation af data eller funktion.</li>
     <li>Datatables er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.</li>
 </ul>
+
+<h2 class="h4">Implementering</h2>
+<p>Datatables fejler på tilgængelig, når det kommer til disabled pagineringsknapper. For at gøre paginering tilgængeligt skal der tilføjes attributten <code>aria-disabled="true"</code> på knapper, som er disabled.</p>
+<p>Se evt. hvordan vi har gjort det i vores eksempler i JavaScript filen <code>dkfds-docs/assets/js/dkfds-datatables-example.js</code>.</p>
 
 {% include child-sections.html parent='Datatables' %}

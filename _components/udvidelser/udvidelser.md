@@ -4,8 +4,10 @@ layout: styleguide
 title: Udvidelser
 category: Udvidelser_category
 lead: Udvidelser er komponenter som er for store og specialiserede til, at de kan være en del af kernen. Det er valgfrit om selvbetjeningsløsninger vil inkludere Udvidelser.
-alertwarningheader: Brug udvidelser på eget ansvar
-alertwarningtext: Bruger man udvidelser skal de styles, så de visuelt passer ind i designsystemet. Support får man hos udbyderen af udvidelsen.
+alerts:
+- type: warning
+  header: Brug udvidelser på eget ansvar
+  content: Bruger man udvidelser skal de styles, så de visuelt passer ind i designsystemet. Support får man hos udbyderen af udvidelsen.
 ---
 
 <div class="row">

@@ -1493,7 +1493,7 @@
     <main class="col-12 col-lg-9" id="main-content">
       <section id="section-/udvidelser/datatables">
           
-          <div class="alert alert-warning" role="alert">
+          <div class="alert alert-warning " role="alert">
               <div class="alert-body">
                   
                   <h3 class="alert-heading">Denne komponent er ikke en del af kernen af Det Fælles Designsystem</h3>
@@ -1506,6 +1506,20 @@
               </div>
           </div>
           
+          <div class="alert alert-warning alert--show-icon" role="alert">
+              <div class="alert-body">
+                  
+                  <h3 class="alert-heading">Du skal gøre en ekstra indsats for at gøre Datatables tilgængelig</h3>
+                  
+                  
+                  <p class="alert-text">
+                    Projekter skal selv håndtere ekstra kode, for at gøre paginering i Datatables tilgængeligt.<br /> Se under Implementering for mere info.
+                  </p>
+                  
+              </div>
+          </div>
+          
+
           <p class="h6 m-0">
             Udvidelser
           </p>
@@ -1513,7 +1527,7 @@
           
             <p class="font-lead">Avancerede tabeller er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.</p>
           
-      
+
           <h2 class="h4">Tilgængelighed</h2>
 <ul>
     <li>Datatables anvender bl.a. ARIA til at øge tilgængeligheden. Du skal imidlertid være opmærksom på, at en kompliceret tabel med mange rækker, kolonner og muligheder øger det kognitive load og dermed sænker den reelle tilgængelighed.</li>
@@ -1532,6 +1546,10 @@
     <li>Overvej om behovet kan løses ved enten en anden præsentation af data eller funktion.</li>
     <li>Datatables er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.</li>
 </ul>
+
+<h2 class="h4">Implementering</h2>
+<p>Datatables fejler på tilgængelig, når det kommer til disabled pagineringsknapper. For at gøre paginering tilgængeligt skal der tilføjes attributten <code>aria-disabled="true"</code> på knapper, som er disabled.</p>
+<p>Se evt. hvordan vi har gjort det i vores eksempler i JavaScript filen <code>dkfds-docs/assets/js/dkfds-datatables-example.js</code>.</p>
 
 <section class="styleguide-child-container content" id="section-/udvidelser/datatables/01-datatable">
   <h2 id="datatables">Datatables</h2>
@@ -2863,6 +2881,7 @@
 
   </div>
 </div>
+
 
 <footer>
   <div class="footer">

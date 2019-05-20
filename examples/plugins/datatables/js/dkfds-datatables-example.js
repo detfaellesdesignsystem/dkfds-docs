@@ -50,6 +50,10 @@ class datatablesExamples {
                 }
             });
         },
+        "fnDrawCallback": function( oSettings ) {
+            $('.dataTables_paginate a[aria-disabled=true]').removeAttr("aria-disabled");
+            $('.dataTables_paginate .disabled').attr("aria-disabled", "true");
+        }
     });
 
 
@@ -78,6 +82,10 @@ class datatablesExamples {
                 }
             });
         },
+        "fnDrawCallback": function( oSettings ) {
+            $('.dataTables_paginate a[aria-disabled=true]').removeAttr("aria-disabled");
+            $('.dataTables_paginate .disabled').attr("aria-disabled", "true");
+        }
     } );
 
     //////////////////////////////////////
@@ -90,7 +98,7 @@ class datatablesExamples {
             orderable: false,
             targets:   0,
             render: function ( data, type, full, meta ) {
-                var checkboxid = "checkbox-"+ Math.random().toString(36).substring(7); 
+                var checkboxid = "checkbox-"+ Math.random().toString(36).substring(7);
                 return "<div class='form-group'>"+
                             "<input id='"+checkboxid+"' type='checkbox' name='checked' class='form-checkbox'>"+
                             "<label for='"+checkboxid+"' ></label>" +
@@ -109,6 +117,10 @@ class datatablesExamples {
                 }
             });
         },
+        "fnDrawCallback": function( oSettings ) {
+            $('.dataTables_paginate a[aria-disabled=true]').removeAttr("aria-disabled");
+            $('.dataTables_paginate .disabled').attr("aria-disabled", "true");
+        }
     });
 
     $(jsSelectorDatatable_Example_selectable).on("click", "input[type='checkbox']", function (event) {
@@ -118,7 +130,7 @@ class datatablesExamples {
             $(event.target).closest("tr").removeClass("selected-row");
         }
     } );
-    
+
     //////////////////////////////////////
     //Init a datatable with expand row
     //////////////////////////////////////
@@ -153,7 +165,7 @@ class datatablesExamples {
                 "orderable":      false,
                 "data":           null,
                 "defaultContent": '',
-                "width": "24px" 
+                "width": "24px"
             },
             { "data": "name" },
             { "data": "address.street" },
@@ -174,6 +186,10 @@ class datatablesExamples {
                 }
             });
         },
+        "fnDrawCallback": function( oSettings ) {
+            $('.dataTables_paginate a[aria-disabled=true]').removeAttr("aria-disabled");
+            $('.dataTables_paginate .disabled').attr("aria-disabled", "true");
+        }
     } );
 
     var toggleDetails = function(element){
@@ -239,10 +255,10 @@ class datatablesExamples {
                                         <li><button class="js-delete-modal-trigger danger-delete">Slet <svg class="icon-svg"><use xlink:href="#delete"></use></svg></button></li>
                                     </ul>
                                 </div>
-                            </div>` 
-                } 
+                            </div>`
+                }
             }
-        ], 
+        ],
         'createdRow': function( row, data, dataIndex ) {
             $(row).find('td').each(function( index, elm ) {
                 if(!$(elm).hasClass('row-control')){
@@ -256,6 +272,10 @@ class datatablesExamples {
             $(jsSelectorDatatable_Example_edit).find('.js-dropdown').each(function( index ) {
                 new dropdown(this);
             });
+        },
+        "fnDrawCallback": function( oSettings ) {
+            $('.dataTables_paginate a[aria-disabled=true]').removeAttr("aria-disabled");
+            $('.dataTables_paginate .disabled').attr("aria-disabled", "true");
         }
     } );
 
@@ -317,7 +337,7 @@ class datatablesExamples {
         //close modal
         microModal.close('modal-delete');
     });
-        
+
     //////////////////////////////////
     //Edit tabel uden overflow-menu.
     //////////////////////////////////
@@ -353,6 +373,10 @@ class datatablesExamples {
                 }
             });
         },
+        "fnDrawCallback": function( oSettings ) {
+            $('.dataTables_paginate a[aria-disabled=true]').removeAttr("aria-disabled");
+            $('.dataTables_paginate .disabled').attr("aria-disabled", "true");
+        }
     });
     $(jsSelectorDatatable_Example_edit2).on('click', '.js-delete-modal-trigger', function () {
 
@@ -401,9 +425,13 @@ class datatablesExamples {
                 }
             });
         },
+        "fnDrawCallback": function( oSettings ) {
+            $('.dataTables_paginate a[aria-disabled=true]').removeAttr("aria-disabled");
+            $('.dataTables_paginate .disabled').attr("aria-disabled", "true");
+        }
     } );
 
-  }  
+  }
 }
 
 $(document).ready(function() {

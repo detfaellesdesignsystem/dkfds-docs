@@ -55,7 +55,8 @@ order: 25
         <h2 class="h5">Ikoner indsat med klasser</h2>
         <p>Ikoner der indsættes inline med i-tagget får på den måde samme skriftstørrelse. Følgende kode indsætter et 'alert'-ikon: <code>&lt;i class="icon icon-alert-outline"&gt;&lt;/i&gt;</code></p>        
         <h2 class="h5">Ikoner i tekst</h2>
-        <p>Tilføj klassen <code>inline-svg</code> på ikoner, som skal fremgå i en tekst. Ikonet vil da tilpasse sig linjehøjden.</p> 
+        <p>Tilføj klassen <code>inline-svg</code> på ikoner, som skal fremgå i en tekst. Ikonet vil da tilpasse sig linjehøjden. Se eksemplet herunder:</p>
+        <p>Lorem ipsum <svg class="icon-svg inline-svg"><use xlink:href="#language"></use></svg> dolor sit amet.</p> 
         <h2 class="h5">Tilgængelighed</h2>
         <p>Ikoner bør tilføjes en <code>alt</code> tekst til elementet, der beskriver ikonet, så skærmlæsere kan læse ikonet op.</p>
         <p>I tilfælde, hvor ikonet ikke skal læses op, tilføj da attributten <code>aria-hidden="true"</code>. Denne attribut vil gøre ikonet usynligt for skærmlæsere.</p>

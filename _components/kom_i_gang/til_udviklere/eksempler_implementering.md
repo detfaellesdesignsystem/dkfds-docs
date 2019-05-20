@@ -5,7 +5,9 @@ layout: styleguide
 title: Eksempler på implementering
 category: Kom_i_gang_category
 subcategory: Kom i gang
-alertwarningtext: Eksemplerne på implementering af dkfds og dkfds-plugins på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
+alerts:
+- type: warning
+  content: Eksemplerne på implementering af dkfds og dkfds-plugins på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
 ---
 <section>
     <h2>Angular</h2>
