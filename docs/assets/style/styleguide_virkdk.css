@@ -5675,10 +5675,10 @@ footer .footer-theme {
         .header .nav-actions > li, .header .nav-actions > li:first-child {
           margin: calc(8px - 2px) 4px; } }
   @media (max-width: 1199px) {
-    .header .function-link {
+    .header .function-link:not(.icon-link) {
       display: block;
       margin-top: 8px; }
-      .header .function-link .icon-svg {
+      .header .function-link:not(.icon-link) .icon-svg {
         float: left;
         margin-left: 0;
         margin-right: 4px; } }
@@ -5889,8 +5889,11 @@ footer .footer-theme {
       line-height: 2.4rem;
       display: block;
       padding-top: calc(16px - 1px);
-      padding-bottom: 0px;
+      padding-bottom: calc(16px - 1px);
       white-space: nowrap; }
+      @media (min-width: 992px) {
+        .nav-primary > li > a {
+          padding-bottom: 0px; } }
       @media (min-width: 992px) {
         .nav-primary > li > a:hover {
           background-color: transparent; } }
@@ -5916,7 +5919,9 @@ footer .footer-theme {
   @media (min-width: 992px) {
     .nav-primary .nav-link span {
       display: block;
-      border-bottom: 7px solid transparent;
+      border-bottom: 7px solid transparent; } }
+  @media (min-width: 992px) {
+    .nav-primary .nav-link span {
       padding-bottom: 9px; } }
   @media (min-width: 992px) {
     .nav-primary .current span {
@@ -5984,8 +5989,11 @@ footer .footer-theme {
       width: unset; } }
   .nav-primary .overflow-menu .button-overflow-menu span {
     padding-right: 24px;
-    padding-bottom: 9px;
+    padding-bottom: calc(16px - 1px);
     display: block; }
+    @media (min-width: 992px) {
+      .nav-primary .overflow-menu .button-overflow-menu span {
+        padding-bottom: 9px; } }
   @media (min-width: 992px) {
     .nav-primary .overflow-menu .button-overflow-menu:hover span {
       border-bottom: 7px solid #0059B3; } }
@@ -6728,7 +6736,7 @@ a.skipnav {
       width: 0;
       position: absolute;
       pointer-events: none;
-      z-index: 3;
+      z-index: 2;
       bottom: calc(8px * -1 - 1px); }
     .overflow-menu .button-overflow-menu:after {
       border-bottom-color: #fff;
