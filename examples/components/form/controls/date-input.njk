@@ -2,6 +2,8 @@
 
 <div class="container">
 {% for item in datoinput_example.items %}
-  {{datoinput(item.label, item.hint, item.day, item.month, item.year, item.tooltip, item.tooltipTitle, item.datepicker)}}
+<!-- Start code: {{ item.label }} -->
+  {{datoinput(item.label, item.hint, item.day, item.month, item.year, item.tooltip, item.tooltipTitle, item.datepicker, item.error, item.dayValue, item.monthValue, item.yearValue)}}
+<!-- End code: {{ item.label }} -->
 {% endfor %}
 </div>

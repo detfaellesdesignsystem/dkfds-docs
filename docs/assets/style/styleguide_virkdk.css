@@ -7894,10 +7894,10 @@ code {
   min-height: 150px; }
 
 .page-date-input-html .container {
-  height: 200px; }
+  min-height: 200px; }
 
 .page-date-input-datepicker-html .container {
-  height: 400px; }
+  min-height: 400px; }
 
 .styleguide-spacer-modals {
   height: 400px; }

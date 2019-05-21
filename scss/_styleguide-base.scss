@@ -597,12 +597,12 @@ code {
 }
 .page-date-input-html{
   & .container{
-    height: 200px; //so that datepicker is visible
+    min-height: 200px; //so that datepicker is visible
   }
 }
 .page-date-input-datepicker-html{
   .container{
-    height: 400px; //so that datepicker is visible
+    min-height: 400px; //so that datepicker is visible
   }
 }
 .styleguide-spacer-modals{
