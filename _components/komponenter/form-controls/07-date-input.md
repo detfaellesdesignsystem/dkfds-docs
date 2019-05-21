@@ -54,9 +54,10 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
       <section>
       <h3 class="h4">Links</h3>
       <ul class="nobullet-list">
-        <li><a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">GovUKs anbefalinger til datovælgeren<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
         <li><a href="https://design-system.service.gov.uk/patterns/dates/" class="icon-link">GovUK om at spørge brugeren om datoer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
         <li><a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" class="icon-link">USWDS om datovælgeren<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link">GovUK om fejlmeddelelser generelt<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
       </ul>
       </section>
     </article>

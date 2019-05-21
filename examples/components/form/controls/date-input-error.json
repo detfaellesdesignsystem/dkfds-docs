@@ -3,12 +3,12 @@
    {
      "items": [
       {
-        "label": "Indsendelsesfrist",
+        "label": "Datoangivelse med fejl",
         "hint": "For eksempel: 05 12 2018",
         "day": "Dag",
         "month": "Måned",
         "year": "År",
-        "error": "Fødselsdato kan skal være i fortiden",
+        "error": "Skriv en kort fejlmeddelelse, der hjælper brugeren videre",
         "dayValue": "01",
         "monthValue": "12",
         "yearValue": "2030"

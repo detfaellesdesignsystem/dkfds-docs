@@ -7,11 +7,12 @@ title: Date-input-error.html
 
     <fieldset>
         <div class="form-group  form-error ">
-            <label class="form-label icon-link">Indsendelsesfrist</label>
+            <label class="form-label icon-link">Datoangivelse med
+                fejl</label>
             <span class="form-hint">For eksempel: 05 12 2018</span>
             <span class="form-error-message"
-                id="form-error-message-input-error"
-                role="alert">Fødselsdato kan skal være i fortiden</span>
+                id="form-error-message-input-error" role="alert">Skriv en
+                kort fejlmeddelelse, der hjælper brugeren videre</span>
             <div class="date-group js-calendar-group mt-3">
                 <div class="form-group form-group-day">
                     <label class="form-label"
