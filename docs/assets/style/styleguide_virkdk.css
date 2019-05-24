@@ -4380,6 +4380,10 @@ figure {
   .icon-svg--inherit-color {
     fill: currentColor; }
 
+.inline-svg {
+  height: 1em;
+  width: 1em; }
+
 .icon-svg-large {
   height: 4.8rem;
   width: 4.8rem;
@@ -4647,6 +4651,12 @@ input[type=text]:disabled, textarea:disabled {
   background: #F5F5F5;
   color: #999999;
   cursor: not-allowed; }
+
+input[readonly][type=text] {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: auto; }
 
 input[readonly][type=text], textarea[readonly] {
   background-color: transparent;
@@ -5050,11 +5060,15 @@ fieldset {
   margin: 0;
   padding: 0; }
 
+fieldset ul {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
 fieldset + fieldset {
   margin-top: 24px; }
 
-.form-group + fieldset {
-  margin-top: 24px; }
+legend h1, legend .h1, legend h2, legend .h2, legend h3, legend .h3, legend h4, legend .h4, legend h5, legend .h5, legend h6, legend .h6 {
+  margin-bottom: 0px; }
 
 input.input-width-xxs, select.input-width-xxs, textarea.input-width-xxs {
   max-width: 8rem !important;
@@ -5446,8 +5460,9 @@ footer .footer {
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    height: 100px;
-    width: 150px; }
+    height: auto;
+    max-height: 100%;
+    max-width: 150px; }
   footer .footer ul:not(:last-child) {
     margin-bottom: 24px; }
   footer .footer ul.footer-links li {
@@ -5909,8 +5924,7 @@ footer .footer-theme {
       border-bottom: 7px solid #0059B3;
       border-bottom: 7px solid #0059B3; } }
   .nav-primary a.current {
-    font-weight: 600;
-    color: #0059B3; }
+    font-weight: 600; }
   .nav-primary button.current {
     font-weight: 600; }
 
@@ -6714,7 +6728,7 @@ a.skipnav {
       width: 0;
       position: absolute;
       pointer-events: none;
-      z-index: 2;
+      z-index: 3;
       bottom: calc(8px * -1 - 1px); }
     .overflow-menu .button-overflow-menu:after {
       border-bottom-color: #fff;
@@ -6732,7 +6746,7 @@ a.skipnav {
       background-color: #F5F5F5; }
   .overflow-menu .overflow-menu-inner {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     width: auto;
     border: 1px solid #747474;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -7859,11 +7873,15 @@ code {
 .page-ui-components .font-lead:first-of-type {
   margin-top: 3.2rem; }
 
+.page-tringuide-overflowmenu-html .container,
+.page-tringuide-responsive-overflowmenu-html .container {
+  min-height: 400px; }
+
 .page-basic-collapse-html, .page-modal-html, .page-text-input-html, .page-tags-html, .page-search-html .container {
   padding-top: 4px;
   padding-bottom: 4px; }
 
-.page-overflow-menu-html .container {
+.page-overflow-menu-html .container, .page-overflow-menu-left-html .container {
   min-height: 400px; }
 
 .page-text-input-html .container, .page-text-input-width-html .container {
@@ -7875,14 +7893,11 @@ code {
 .page-basic-collapse-html {
   min-height: 150px; }
 
-.page-tags-html .container {
-  min-height: 180px; }
-
 .page-date-input-html .container {
-  height: 200px; }
+  min-height: 200px; }
 
 .page-date-input-datepicker-html .container {
-  height: 400px; }
+  min-height: 400px; }
 
 .styleguide-spacer-modals {
   height: 400px; }

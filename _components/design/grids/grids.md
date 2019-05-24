@@ -53,7 +53,7 @@ subnav:
                 <td>None (auto)</td>
                 <td>None (auto)</td>
                 <td>None (auto)</td>
-                <td>1140px</td>
+                <td>1200px</td>
             </tr>
             <tr>
                 <th>Klasser</th>

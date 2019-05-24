@@ -1,0 +1,53 @@
+{
+  "sidenavsInformation":
+  {
+    "links": [
+      {
+        "text": "Parent link",
+        "information": "Informationstekst for parent link"
+      },
+      {
+        "text": "Current page",
+        "information": "Informationstekst for current link",
+        "current": true,
+        "links": [
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link",
+            "current": true,
+            "links": [
+              {
+                "text": "Grandchild link"
+              },
+              {
+                "text": "Grandchild link"
+              },
+              {
+                "text": "Grandchild link",
+                "active": true
+              },
+              {
+                "text": "Grandchild link"
+              }
+            ]
+          },
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link"
+          }
+        ]
+      },
+      {
+        "text": "Another link",
+        "information": "Informationstekst for another link"
+      }
+    ]
+  }
+}

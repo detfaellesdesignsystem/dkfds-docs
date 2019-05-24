@@ -1,0 +1,15 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+<div class="container">
+    <form>
+    <fieldset>
+        <legend><h1 class="h2">Dine kontaktoplysninger</h1></legend>
+        {{textinput("fnavn", "Fornavn", false, "", false, "fnavn", "", false, false)}}
+        {{textinput("enavn", "Efternavn", false, "", false, "enavn", "", false, false)}}
+        {{textinput("email", "E-mail adresse", false, "", false, "email", "", false, false)}}
+        {{textinput("telefon", "Telefonnr.", false, "", false, "telefon", "", false, false)}}
+        {{ button("Gem oplysninger", "primary mt-9") }}
+    </fieldset>
+  </form>
+</div>

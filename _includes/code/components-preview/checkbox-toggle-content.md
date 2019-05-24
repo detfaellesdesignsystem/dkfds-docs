@@ -21,7 +21,7 @@ title: Checkbox-toggle-content.html
     </div>
 
     <div class="form-group ">
-        <input id="id-checkbox2" type="checkbox" name="Name" value="Value"
+        <input id="id-checkbox2" type="checkbox" name="Name2" value="Value"
             class="form-checkbox  checkbox-large js-checkbox-toggle-content"
             checked data-js-target='#collapse-check2'
             aria-controls='collapse-check2' aria-expanded='false'>

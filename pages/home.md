@@ -138,8 +138,8 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <h3 class="h4">Forum for deltagelse</h3>
         <p>Alle myndigheder med en interesse i at præge udviklingen og få indflydelse på designsystemets indhold er velkomne. Man skal blot allerede benytte systemet eller have planlagt at benytte det.</p>
         <ul class="nobullet-list">
-            <li><a href="#" class="disabled" disabled="disabled">Deltagerforum (under udvikling)</a></li>
-            <li><a href="#" class="disabled" disabled="disabled">Governancemodel (under udvikling)</a></li>
+            <li><a href="#" class="disabled" aria-disabled="true">Deltagerforum (under udvikling)</a></li>
+            <li><a href="#" class="disabled" aria-disabled="true">Governancemodel (under udvikling)</a></li>
         </ul>
       </div>
     </div>

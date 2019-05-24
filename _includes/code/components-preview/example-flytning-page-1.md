@@ -45,8 +45,9 @@ title: Example-flytning-page-1.html
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
-                <p><button class="button-unstyled button-contact"
-                        data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg"><use href="#menu-right"></use></svg></button>
+                <p><a href="javascript:void(0);"
+                        data-micromodal-trigger="modal-contact"
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -70,8 +71,9 @@ title: Example-flytning-page-1.html
 
         <div class="solution-info-mobile">
             <p><b>Erhvervsministeriet</b></p>
-            <p><button class="button-unstyled button-contact"
-                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+            <p><a href="javascript:void(0);"
+                    data-micromodal-trigger="modal-contact"
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 
@@ -79,11 +81,10 @@ title: Example-flytning-page-1.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#"></use></svg>
-                        Om digital flytning</a>
+                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#"></use></svg>Om
+                        digital flytning</a>
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#language"></use></svg>
-                        Sprog
+                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#language"></use></svg>Sprog
 
                     </a>
                 </div>

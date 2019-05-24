@@ -32,60 +32,6 @@
         "title": "Fejlbesked",
         "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         "aria": "Beskedbox der viser en fejlmeddelselse"
-      },
-      {
-        "name": "info with icon",
-        "classes": "alert-info alert--show-icon",
-        "role": "alert",
-        "title": "Informativ besked - med ikon",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser information"
-      },
-      {
-        "name": "success with icon",
-        "classes": "alert-success alert--show-icon",
-        "role": "alert",
-        "title": "Succesmeddelelse - med ikon",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser succes"
-      },
-      {
-        "name": "warning with icon",
-        "classes": "alert-warning alert--show-icon",
-        "role": "alert",
-        "title": "Advarsel - med ikon",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser en advarsel"
-      },
-      {
-        "name": "error with icon",
-        "classes": "alert-error alert--show-icon",
-        "role": "alert",
-        "title": "Fejlbesked - med ikon",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser en fejlmeddelselse"
-      },
-      {
-        "name": "info no text",
-        "classes": "alert-info alert--show-icon",
-        "role": "alert",
-        "title": "Informativ besked - kun overskrift",
-        "aria": "Beskedbox der viser information"
-      },
-      {
-        "name": "info no heading",
-        "classes": "alert-info",
-        "role": "alert",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser information"
-      },
-      {
-        "name": "Info paragraph",
-        "classes": "alert-info alert--paragraph",
-        "role": "alert",
-        "title": "Informativ besked - tekstafsnit",
-        "content": "Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro quisquam est, qui doloremipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-        "aria": "Beskedbox der viser information"
       }
     ]
   }

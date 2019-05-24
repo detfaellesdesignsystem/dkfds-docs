@@ -1,6 +1,6 @@
 ---
 title: Textarea
-parent: Form controls
+parent: Formcontrols
 order: 03
 lead: 
 ---

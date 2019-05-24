@@ -1,0 +1,38 @@
+{
+  "alert_example": {
+    "items": [
+      {
+        "name": "info with icon",
+        "classes": "alert-info alert--show-icon",
+        "role": "alert",
+        "title": "Informativ besked - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "aria": "Beskedbox der viser information"
+      },
+      {
+        "name": "success with icon",
+        "classes": "alert-success alert--show-icon",
+        "role": "alert",
+        "title": "Succesmeddelelse - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "aria": "Beskedbox der viser succes"
+      },
+      {
+        "name": "warning with icon",
+        "classes": "alert-warning alert--show-icon",
+        "role": "alert",
+        "title": "Advarsel - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "aria": "Beskedbox der viser en advarsel"
+      },
+      {
+        "name": "error with icon",
+        "classes": "alert-error alert--show-icon",
+        "role": "alert",
+        "title": "Fejlbesked - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "aria": "Beskedbox der viser en fejlmeddelselse"
+      }
+    ]
+  }
+}

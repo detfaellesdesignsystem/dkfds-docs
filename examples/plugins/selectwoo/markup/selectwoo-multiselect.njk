@@ -1,13 +1,13 @@
 {% macro select2(name, id, label, options, multiple) %}
   <div class="form-group">
-    <label class="form-label" for="{{name}}">{{label}}</label>
+    <label class="form-label" for="{{id}}">{{label}}</label>
     <select name="{{name}}" id="{{id}}" class="d-none" {% if multiple %}multiple{% endif %}>
       {% for option in options %}
         <option value="{{option.value}}">{{option.text}}</option>
       {% endfor %}
     </select>
   </div>
-{% endmacro %} 
+{% endmacro %}
 
 <div class="container">
   <form class="form mb-6">

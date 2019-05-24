@@ -34,13 +34,25 @@ class datepickerGroup {
             that.formatInputs();
             that.validateInputs();
         });
+        this.dayInputElement.addEventListener("paste", function(){
+            that.formatInputs();
+            that.validateInputs();
+        });
 
         this.monthInputElement.addEventListener("blur", function(){
             that.formatInputs();
             that.validateInputs();
         });
+        this.monthInputElement.addEventListener("paste", function(){
+            that.formatInputs();
+            that.validateInputs();
+        });
 
         this.yearInputElement.addEventListener("blur", function(){
+            that.formatInputs();
+            that.validateInputs();
+        });
+        this.yearInputElement.addEventListener("paste", function(){
             that.formatInputs();
             that.validateInputs();
         });
@@ -90,21 +102,35 @@ class datepickerGroup {
     }
 
     validateInputs(){
-        var day = parseInt(this.dayInputElement.value)
-        var month = parseInt(this.monthInputElement.value);
-        var year = parseInt(this.yearInputElement.value);
+        var day = this.dayInputElement.value;
+        var month = this.monthInputElement.value;
+        var year = this.yearInputElement.value;
         var maxDay = new Date(year, month, 0).getDate();
+
+        var dayRegexStr = this.dayInputElement.getAttribute('data-input-regex');
+        var monthRegexStr = this.monthInputElement.getAttribute('data-input-regex');
+        var yearRegexStr = this.yearInputElement.getAttribute('data-input-regex');
+
+        var rDay = new RegExp(dayRegexStr);
+        var rMonth = new RegExp(monthRegexStr);
+        var rYear = new RegExp(yearRegexStr);
 
         var msg = "";
         var isValid = true;
-        if(day > maxDay){
-            isValid = false;
-            msg = "Hov, den dag findes ikke i den valgte måned."
-            this.showError(msg);
-        }else if(month > 12){
-            isValid = false;
-            msg = "Hov, den måned findes ikke."
-            this.showError(msg);
+        if(day != "" || month != "" ||  year != "") {
+            if ((rDay.exec(day) === null || rMonth.exec(month) === null || rYear.exec(year) === null)) {
+                isValid = false;
+                msg = "Beklager, men du kan kun bruge tal."
+                this.showError(msg);
+            } else if (day > maxDay) {
+                isValid = false;
+                msg = "Hov, den dag findes ikke i den valgte måned."
+                this.showError(msg);
+            } else if (month > 12) {
+                isValid = false;
+                msg = "Hov, den måned findes ikke."
+                this.showError(msg);
+            }
         }
 
         if(isValid){

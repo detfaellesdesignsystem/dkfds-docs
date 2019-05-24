@@ -346,12 +346,8 @@ subnav:
             <li>Desktop/stor skærm: 1200px</li>
             <li>Desktop/middel skærm: 992px</li>
             <li>Tablet: 768px</li>
-            <li>Mobil: 480px</li>
+            <li>Mobil: 576px</li>
         </ul>
-        <figure>
-            <img src="{{ site.baseurl }}/img/descriptionimages/dfd-grid.png" width="100%" alt="Grafik der viser Det Fælles Designsystems grid-layout" title="Det Fælles Designsystems grid-layout">
-            <figcaption>Det Fælles Designsystems grid-layout fra mobil til desktop</figcaption>
-        </figure>
         <h3>Typiske grid-layouts</h3>
         <p>Du kan kombinere de 12 kolonner og flette dem sammen, så du ender med layout varianter, der fx består af 3/9, 4/8, 4/4/4 osv. Alle sider bygger på den måde på det samme fundament, som bidrager til at skabe ro og overblik.</p>
         <figure>

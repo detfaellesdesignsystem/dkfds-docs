@@ -1,6 +1,6 @@
 ---
-title: Datovælger
-parent: Form controls
+title: Datoangivelse
+parent: Formcontrols
 order: 07
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
 ---
@@ -27,6 +27,8 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
             </ul>
           </li>
           <li>Hvis du vil koble en datovælger på dit datofelt, kan du bruge udvidelsen <a href="/dkfds-docs/udvidelser/pikaday/">Pikaday</a>.</li>
+          <li>Ved fejl, tilføj da en hjælpsom fejlbesked over felterne i elementet <code>&lt;span class="form-error-message" id="form-error-message-input-error" role="alert"&gt;</code>.</li> 
+          <li>Tilføj klassen <code>form-error</code> på <code>form-group</code> <code>div</code> elementet, når der vises en fejlbesked.</li>
         </ul>
     </section>
   </div>
@@ -50,6 +52,15 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
           <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/dkfds-docs/udvidelser/pikaday/">datepicker udvidelsen</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.</p>
           <h4 class="h5">Vejledning</h4>
           <p>Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, dvs. dag, måned og år. Felternes labels skal også afspejle det.</p>
+      </section>
+      <section>
+      <h3 class="h4">Links</h3>
+      <ul class="nobullet-list">
+        <li><a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://design-system.service.gov.uk/patterns/dates/" class="icon-link">GovUK om at spørge brugeren om datoer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" class="icon-link">USWDS om datovælgeren<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link">GovUK om fejlmeddelelser generelt<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+      </ul>
       </section>
     </article>
   </div>

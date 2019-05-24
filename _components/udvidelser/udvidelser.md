@@ -4,8 +4,10 @@ layout: styleguide
 title: Udvidelser
 category: Udvidelser_category
 lead: Udvidelser er komponenter som er for store og specialiserede til, at de kan være en del af kernen. Det er valgfrit om selvbetjeningsløsninger vil inkludere Udvidelser.
-alertwarningheader: Brug udvidelser på eget ansvar
-alertwarningtext: Bruger man udvidelser skal de styles, så de visuelt passer ind i designsystemet. Support får man hos udbyderen af udvidelsen.
+alerts:
+- type: warning
+  header: Brug udvidelser på eget ansvar
+  content: Bruger man udvidelser skal de styles, så de visuelt passer ind i designsystemet. Support får man hos udbyderen af udvidelsen.
 ---
 
 <div class="row">
@@ -30,7 +32,7 @@ alertwarningtext: Bruger man udvidelser skal de styles, så de visuelt passer in
           <a href="/dkfds-docs/udvidelser/pikaday/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Datepicker.svg" alt="">
           </a>
-          <p><a href="/dkfds-docs/udvidelser/pikaday/">Datepicker</a></p>
+          <p><a href="/dkfds-docs/udvidelser/pikaday/">Datovælger (datepicker)</a></p>
       </div>
   </div>
 </div>

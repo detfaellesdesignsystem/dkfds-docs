@@ -26,12 +26,40 @@ order: 25
   <div id="icons-implementation" class="accordion-content">
     <section>
         <p>Ikonerne kan indsættes på to måder, enten via klasser eller som inline svg.</p>
-        <h2 class="h5">Ikoner indsat via klasser</h2>
-        <p>Ikoner der indsættes inline med i-tagget får på den måde samme skriftstørrelse og farve. Følgende kode indsætter et 'alert'-ikon: <code>&lt;i class="icon icon-alert-outline"&gt;&lt;/i&gt;</code></p>
-        <h2 class="h5">Ikoner indsat via inline svg</h2>
+        <h2 class="h5">Ikoner indsat med inline svg (Anbefalet)</h2>
         <p>I toppen af <code>&lt;body&gt;</code> er alle svg-ikoner indsat i et område som er skjult. Følgende kode linker til et af disse svg ikoner og indsætter det via dets <code>id</code>: <code>&lt;svg class="icon-svg"&gt;&lt;use xlink:href="#alert-outline"&gt;&lt;/use&gt;&lt;/svg&gt;</code></p>
+        <p>Ved brug af <code>svg use</code> metoden, refererer du til et ikon, som er defineret et andet sted i htmlkoden. Du bør derfor huske at tilføje ikonerne som svg i koden, så referencen virker. Du kan dog nøjes med at tilføje de ikoner, du rent faktisk har brug for. Se eksemplet herunder.</p>
+        <pre>
+        &lt;div class="hide-base-svg"&gt;
+            &lt;!--?xml version="1.0" encoding="UTF-8"?--&gt;
+            &lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
+                &lt;symbol id="add" viewBox="0 0 24 24"&gt;
+                    &lt;path d="M0 0h24v24H0z" fill="none"&gt;&lt;/path&gt;
+                    &lt;path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"&gt;&lt;/path&gt;
+                &lt;/symbol&gt;
+                &lt;symbol id="alert-outline" viewBox="0 0 24 24"&gt;
+                    &lt;path fill="currentColor" d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"&gt;&lt;/path&gt;
+                &lt;/symbol&gt;
+                &lt;symbol id="open-in-new" viewBox="0 0 24 24"&gt;
+                    &lt;path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"&gt;&lt;/path&gt;
+                &lt;/symbol&gt;
+                &lt;symbol id="success" viewBox="0 0 24 24"&gt;
+                    &lt;path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"&gt;&lt;/path&gt;
+                &lt;/symbol&gt;
+                &lt;symbol id="warning" viewBox="0 0 24 24"&gt;
+                    &lt;path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"&gt;&lt;/path&gt;
+                &lt;/symbol&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        </pre>
+        <h2 class="h5">Ikoner indsat med klasser</h2>
+        <p>Ikoner der indsættes inline med i-tagget får på den måde samme skriftstørrelse. Følgende kode indsætter et 'alert'-ikon: <code>&lt;i class="icon icon-alert-outline"&gt;&lt;/i&gt;</code></p>        
+        <h2 class="h5">Ikoner i tekst</h2>
+        <p>Tilføj klassen <code>inline-svg</code> på ikoner, som skal fremgå i en tekst. Ikonet vil da tilpasse sig linjehøjden. Se eksemplet herunder:</p>
+        <p>Lorem ipsum <svg class="icon-svg inline-svg"><use xlink:href="#language"></use></svg> dolor sit amet.</p> 
         <h2 class="h5">Tilgængelighed</h2>
-        <p>Husk at beskrive ikonet med tekst, evt. med “alt” tekst i koden, hvis ikonet står for sig selv, fx ikonet for “åbner i nyt vindue” <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg> skal der altid “alt” tekst på i koden. Fx: <code>&lt;i class="icon icon-alert-outline” alt=“beskrivelse af ikonet skrives her”&gt;&lt;/i&gt;</code></p>
+        <p>Ikoner bør tilføjes en <code>alt</code> tekst til elementet, der beskriver ikonet, så skærmlæsere kan læse ikonet op.</p>
+        <p>I tilfælde, hvor ikonet ikke skal læses op, tilføj da attributten <code>aria-hidden="true"</code>. Denne attribut vil gøre ikonet usynligt for skærmlæsere.</p>
         <p>Dekorative ikoner bør undgås, men hvis de bruges skal de ikke beskrives eller have “alt” tekst, da de ikke bærer nogen betydning eller er vigtige for brugeren.</p>
     </section>
   </div>

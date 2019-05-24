@@ -45,9 +45,9 @@ title: Example-opsummering.html
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
-                <p>Support: 72 20 60 00 · <button
-                        class="button-unstyled button-contact"
-                        data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg"><use href="#menu-right"></use></svg></button>
+                <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
+                        data-micromodal-trigger="modal-contact"
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -71,18 +71,18 @@ title: Example-opsummering.html
 
         <div class="solution-info-mobile">
             <p><b>Erhvervsministeriet</b></p>
-            <p>Support: 72 20 60 00 <br> <button
-                    class="button-unstyled button-contact"
-                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+            <p>Support: 72 20 60 00 <br><a href="javascript:void(0);"
+                    data-micromodal-trigger="modal-contact"
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
-                    <a href="" class="function-link">
-                        <svg class="icon-svg "  ><use xlink:href="#save"></use></svg>
-                        Gem kladde</a>
+                    <a href=""
+                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#save"></use></svg>Gem
+                        kladde</a>
                 </div>
             </div>
         </div>

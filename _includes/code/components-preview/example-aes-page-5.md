@@ -45,9 +45,9 @@ title: Example-aes-page-5.html
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
-                <p>Support: 72 20 60 00 · <button
-                        class="button-unstyled button-contact"
-                        data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg"><use href="#menu-right"></use></svg></button>
+                <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
+                        data-micromodal-trigger="modal-contact"
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true<"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -71,9 +71,9 @@ title: Example-aes-page-5.html
 
         <div class="solution-info-mobile">
             <p><b>Erhvervsministeriet</b></p>
-            <p>Support: 72 20 60 00 <br> <button
-                    class="button-unstyled button-contact"
-                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+            <p>Support: 72 20 60 00 <br><a href="javascript:void(0);"
+                    data-micromodal-trigger="modal-contact"
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 
@@ -81,8 +81,8 @@ title: Example-aes-page-5.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#save"></use></svg>
-                        Gem kladde</a>
+                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#save"></use></svg>Gem
+                        kladde</a>
                 </div>
             </div>
         </div>
@@ -179,7 +179,7 @@ title: Example-aes-page-5.html
     <h1>Oplysninger om sagen</h1>
 
     <fieldset>
-        <div class="form-group">
+        <div class="form-group ">
             <label class="form-label icon-link">Skadedato<button
                     class="js-tooltip tooltip" data-tippy-trigger="click"
                     title="Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum."
@@ -192,28 +192,28 @@ title: Example-aes-page-5.html
                     <label class="form-label"
                         for="date_of_day_2">Dato</label>
                     <input class="form-input js-calendar-day-input"
-                        id="date_of_day_2" type="tel" min="1" max="31"
-                        maxlength="2" pattern="^[0-9]{0,2}$"
+                        id="date_of_day_2" value="" type="tel" min="1"
+                        max="31" maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
-                        title="Indskriv dag på månenden som tal">
+                        title="Indskriv dag på månenden som tal" />
                 </div>
                 <div class="form-group form-group-month">
                     <label class="form-label"
                         for="date_of_month_1">Måned</label>
                     <input class="form-input js-calendar-month-input"
-                        id="date_of_month_1" type="tel" min="1" max="12"
-                        maxlength="2" pattern="^[0-9]{0,2}$"
+                        id="date_of_month_1" value="" type="tel" min="1"
+                        max="12" maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
-                        title="Indskriv månedens nummer">
+                        title="Indskriv månedens nummer" />
                 </div>
                 <div class="form-group form-group-year ">
                     <label class="form-label"
                         for="date_of_year_3">År</label>
                     <input class="form-input js-calendar-year-input"
-                        for="date_of_year_3" type="tel" min="1900"
+                        id="date_of_year_3" value="" type="tel" min="1900"
                         max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
                         data-input-regex="^[0-9]{0,4}$"
-                        title="Indskriv årstal">
+                        title="Indskriv årstal" />
                 </div>
 
             </div>
@@ -253,7 +253,7 @@ title: Example-aes-page-5.html
             <div class="py-4">
 
                 <fieldset>
-                    <div class="form-group">
+                    <div class="form-group ">
                         <label
                             class="form-label icon-link">Berammelsesdato</label>
                         <span class="form-hint">Fx. 28 04 1996</span>
@@ -266,33 +266,33 @@ title: Example-aes-page-5.html
                                     for="date_of_day_2">Dato</label>
                                 <input
                                     class="form-input js-calendar-day-input"
-                                    id="date_of_day_2" type="tel" min="1"
-                                    max="31" maxlength="2"
+                                    id="date_of_day_2" value="" type="tel"
+                                    min="1" max="31" maxlength="2"
                                     pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
-                                    title="Indskriv dag på månenden som tal">
+                                    title="Indskriv dag på månenden som tal" />
                             </div>
                             <div class="form-group form-group-month">
                                 <label class="form-label"
                                     for="date_of_month_1">Måned</label>
                                 <input
                                     class="form-input js-calendar-month-input"
-                                    id="date_of_month_1" type="tel" min="1"
-                                    max="12" maxlength="2"
-                                    pattern="^[0-9]{0,2}$"
+                                    id="date_of_month_1" value=""
+                                    type="tel" min="1" max="12"
+                                    maxlength="2" pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
-                                    title="Indskriv månedens nummer">
+                                    title="Indskriv månedens nummer" />
                             </div>
                             <div class="form-group form-group-year ">
                                 <label class="form-label"
                                     for="date_of_year_3">År</label>
                                 <input
                                     class="form-input js-calendar-year-input"
-                                    for="date_of_year_3" type="tel"
+                                    id="date_of_year_3" value="" type="tel"
                                     min="1900" max="3000" maxlength="4"
                                     pattern="^[0-9]{0,4}$"
                                     data-input-regex="^[0-9]{0,4}$"
-                                    title="Indskriv årstal">
+                                    title="Indskriv årstal" />
                             </div>
 
                         </div>

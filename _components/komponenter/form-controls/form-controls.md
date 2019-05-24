@@ -21,10 +21,12 @@ subnav:
   href: '#tjekboks'
 - text: Radioknap
   href: '#radioknap'
-- text: Datovælger
-  href: '#datovælger'
+- text: Datoangivelse
+  href: '#datoangivelse'
 - text: Vedhæft fil
   href: '#vedhæft-fil'
+- text: Struktur (Fieldset)
+  href: '#struktur-fieldset'
 ---
 
 <h2 class="h4">Generelt om tilgængelighed af formularelementer</h2>
@@ -40,4 +42,4 @@ subnav:
     <li>Tillad copy/paste i formularelementer, hvor brugeren selv skal indtaste oplysninger.</li>
 </ul>
 
-{% include child-sections.html parent='Form controls' %}
+{% include child-sections.html parent='Formcontrols' %}
