@@ -26,7 +26,7 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
               <li>År input: <code>.js-calendar-year-input</code></li>
             </ul>
           </li>
-          <li>Hvis du vil koble en datovælger på dit datofelt, kan du bruge udvidelsen <a href="/dkfds-docs/udvidelser/pikaday/">Pikaday</a>.</li>
+          <li>Hvis du vil koble en datovælger på dit datofelt, kan du bruge udvidelsen <a href="/udvidelser/pikaday/">Pikaday</a>.</li>
           <li>Ved fejl, tilføj da en hjælpsom fejlbesked over felterne i elementet <code>&lt;span class="form-error-message" id="form-error-message-input-error" role="alert"&gt;</code>.</li> 
           <li>Tilføj klassen <code>form-error</code> på <code>form-group</code> <code>div</code> elementet, når der vises en fejlbesked.</li>
         </ul>
@@ -49,7 +49,7 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
           <h4 class="h5">Anvendes til</h4>
           <p>Sætter brugeren i stand til at tilføje struktureret datoinformation.</p>
           <h4 class="h5">Anvendes ikke til</h4>
-          <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/dkfds-docs/udvidelser/pikaday/">datepicker udvidelsen</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.</p>
+          <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/udvidelser/pikaday/">datepicker udvidelsen</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.</p>
           <h4 class="h5">Vejledning</h4>
           <p>Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, dvs. dag, måned og år. Felternes labels skal også afspejle det.</p>
       </section>

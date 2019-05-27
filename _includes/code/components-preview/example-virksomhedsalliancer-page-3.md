@@ -95,7 +95,7 @@ title: Example-virksomhedsalliancer-page-3.html
             <ul class='sidenav-list'>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'>
                         1. Stamdata
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -104,7 +104,7 @@ title: Example-virksomhedsalliancer-page-3.html
                 </li>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
                         2. SMV-kriterier
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -112,14 +112,14 @@ title: Example-virksomhedsalliancer-page-3.html
                     </a>
                 </li>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'
+                    <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'
                         class='active'>
                         3. Statsstøtte
                     </a>
                 </li>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'>
                         4. Tilskud til land
                     </a>
                 </li>
@@ -276,9 +276,9 @@ title: Example-virksomhedsalliancer-page-3.html
     </div>
 
     <nav class="page-navigation">
-        <a href="/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4"
+        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4"
             class="button button-primary">Næste</a>
-        <a href="/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
+        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
             class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>

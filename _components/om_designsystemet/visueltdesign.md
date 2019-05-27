@@ -43,17 +43,17 @@ subnav:
 
 <h3 class="h5">Header-temaer</h3>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/header-temaer.png" alt="Temahåndtering i header" class="description-image"></figure>
-<p><a href="/dkfds-docs/komponenter/headers/">Gå til headerkomponenten</a></p>
-<p><a href="/dkfds-docs/design/sideopbygning/?s=undefined#header">Læs om layout til headeren</a></p>
+<p><a href="/komponenter/headers/">Gå til headerkomponenten</a></p>
+<p><a href="/design/sideopbygning/?s=undefined#header">Læs om layout til headeren</a></p>
 
 <h3 class="h5">Venstremenu/tringuide-temaer</h3>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/venstremenu-tringuide.png" alt="Temahåndtering i venstremenu" class="description-image"></figure>
-<p><a href="/dkfds-docs/komponenter/sidenav/">Gå til venstremenukomponenten</a></p>
-<p><a href="/dkfds-docs/komponenter/trinindikatorer/">Læs om de forskellige tringuides</a></p>
+<p><a href="/komponenter/sidenav/">Gå til venstremenukomponenten</a></p>
+<p><a href="/komponenter/trinindikatorer/">Læs om de forskellige tringuides</a></p>
 
 <h3 class="h5">Primærknap-temaer</h3>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/Primaerknapper.png" alt="Temahåndtering og knapper" class="description-image"></figure>
-<p><a href="/dkfds-docs/komponenter/buttons/">Læs om knapper</a></p>
+<p><a href="/komponenter/buttons/">Læs om knapper</a></p>
 
 
 <h2 id="principper_for_den_visuelle_stil">Principper for den visuelle stil</h2>
@@ -81,7 +81,7 @@ subnav:
 
 <h3 class="h5">Brugeroplevelsen bliver bedre</h3>
 <p>Brugeroplevelsen bliver bedre, når du bruger mere tid på brugerinddragelse, brugertests, procesforbedringer og sammenhænge til andre selvbetjeningsløsninger i stedet for at bruge tid på design og komponenter.</p>
-<p><a href="/dkfds-docs/eksempler/">Se eksempler på selvbetjeningsløsninger</a></p>
+<p><a href="/eksempler/">Se eksempler på selvbetjeningsløsninger</a></p>
 
 
 <h2 id="baggrund_for_designsystemet">Baggrund for designsystemet</h2>

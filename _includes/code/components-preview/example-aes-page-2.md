@@ -105,8 +105,7 @@ title: Example-aes-page-2.html
 
             <ul class='sidenav-list'>
                 <li>
-                    <a
-                        href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-1'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
                         1. Oplysninger om afsender
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -114,51 +113,44 @@ title: Example-aes-page-2.html
                     </a>
                 </li>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-2'
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-2'
                         class='active'>
                         2. Hvis AES har spørgsmål til sagen
                     </a>
                 </li>
                 <li>
-                    <a
-                        href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-3'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-3'>
                         3. Oplysninger om skadelidte
                     </a>
                 </li>
                 <li>
-                    <a
-                        href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-4'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-4'>
                         4. Sagens natur
                     </a>
                 </li>
                 <li>
-                    <a
-                        href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-5'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-5'>
                         5. Oplysninger om sagen
                     </a>
                 </li>
                 <li>
-                    <a
-                        href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-6'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-6'>
                         6. Tilføj dokumentation for første undersøgelse af
                         skaden
                     </a>
                 </li>
                 <li>
-                    <a
-                        href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-7'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-7'>
                         7. Tilføj dokumentation fra sagen
                     </a>
                 </li>
                 <li>
-                    <a
-                        href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-8'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-8'>
                         8. Tilføj kommentarer til sagen
                     </a>
                 </li>
                 <li>
-                    <a
-                        href='/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-9'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-9'>
                         9. Opsummering
                     </a>
                 </li>
@@ -196,9 +188,9 @@ title: Example-aes-page-2.html
 
     </div>
     <nav class="page-navigation">
-        <a href="/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-3"
+        <a href="/pages/eksempler/AES-erstatningssag/aes-3"
             class="button button-primary">Næste</a>
-        <a href="/dkfds-docs/pages/eksempler/AES-erstatningssag/aes-1"
+        <a href="/pages/eksempler/AES-erstatningssag/aes-1"
             class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>

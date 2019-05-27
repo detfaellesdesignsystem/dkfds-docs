@@ -9,7 +9,7 @@ subcategory: Design
 lead: Da designsystemet er fælles for både borger.dk og Virk er der portalspecifikke farver og samtidig en generel palette, der anvendes uanset, hvilken portal din selvbetjeningsløsning skal på. 
 ---
 
-<p><a href="/dkfds-docs/design/visueltdesign/">Om det visuelle design (look and feel)</a></p>
+<p><a href="/design/visueltdesign/">Om det visuelle design (look and feel)</a></p>
 
 <h2>Portalfarver (temaer)</h2>
 <p>Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af temahåndtering i koden.</p>

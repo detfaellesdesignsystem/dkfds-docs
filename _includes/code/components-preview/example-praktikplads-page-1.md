@@ -65,7 +65,7 @@ title: Example-praktikplads-page-1.html
             <div class="navbar-inner container">
                 <ul class="nav-primary">
                     <li>
-                        <a href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-1"
+                        <a href="/pages/eksempler/praktikplads/praktikplads-1"
                             class="nav-link current" title="Designsystem">
                             <span>2021</span>
                         </a>
@@ -88,19 +88,19 @@ title: Example-praktikplads-page-1.html
                                 <ul class="overflow-list">
                                     <li>
                                         <a
-                                            href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-2">Revision
+                                            href="/pages/eksempler/praktikplads/praktikplads-2">Revision
                                             3:
                                             Regulering<br> oprettet 01-12-2019</a>
                                     </li>
                                     <li>
                                         <a
-                                            href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-2">Revision
+                                            href="/pages/eksempler/praktikplads/praktikplads-2">Revision
                                             2:
                                             Regulering<br> oprettet 01-09-2019</a>
                                     </li>
                                     <li>
                                         <a
-                                            href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-2">Revision
+                                            href="/pages/eksempler/praktikplads/praktikplads-2">Revision
                                             1:
                                             Opgørelse<br> oprettet 01-06-2019</a>
                                     </li>
@@ -157,15 +157,15 @@ title: Example-praktikplads-page-1.html
     <section class="page-content">
         <h3 class="mb-0">Forskudsopgørelse</h3>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-4">Se
+                href="/pages/eksempler/praktikplads/praktikplads-4">Se
                 beregningerne for jeres virksomhed</a></p>
         <h3 class="mb-0">Elever</h3>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-4">Se
+                href="/pages/eksempler/praktikplads/praktikplads-4">Se
                 jeres elever</a></p>
         <h3 class="mb-0">Medarbejdere</h3>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-4">Se
+                href="/pages/eksempler/praktikplads/praktikplads-4">Se
                 jeres erhvervsuddannede medarbejdere</a></p>
     </section>
 </main>

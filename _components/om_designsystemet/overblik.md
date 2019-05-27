@@ -9,26 +9,26 @@ lead: Designsystemet anviser et minimalt og fleksibelt design. På de underligge
 <div class="row">
  <div class="col-12 col-md-4">
       <div class="demo-component-box">
-          <a href="/dkfds-docs/omdesignsystemet/gennemgang/" class="demo-component-box__img about-box" aria-hidden="true" tabindex="-1">
+          <a href="/omdesignsystemet/gennemgang/" class="demo-component-box__img about-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Gennemgang.svg" alt="">
           </a>
-          <p><a href="/dkfds-docs/omdesignsystemet/gennemgang/">Gennemgang af designsystemet</a></p>
+          <p><a href="/omdesignsystemet/gennemgang/">Gennemgang af designsystemet</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
-          <a href="/dkfds-docs/omdesignsystemet/visuelledesign/" class="demo-component-box__img about-box" aria-hidden="true" tabindex="-1">
+          <a href="/omdesignsystemet/visuelledesign/" class="demo-component-box__img about-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/VisuelleDesign.svg" alt="">
           </a>
-          <p><a href="/dkfds-docs/omdesignsystemet/visuelledesign/">Det visuelle design</a></p>
+          <p><a href="/omdesignsystemet/visuelledesign/">Det visuelle design</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
-          <a href="/dkfds-docs/omdesignsystemet/releases/" class="demo-component-box__img about-box" aria-hidden="true" tabindex="-1">
+          <a href="/omdesignsystemet/releases/" class="demo-component-box__img about-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Releasenotes.svg" alt="">
           </a>
-          <p><a href="/dkfds-docs/omdesignsystemet/releases/">Release notes</a></p>
+          <p><a href="/omdesignsystemet/releases/">Release notes</a></p>
       </div>
   </div>
 </div>
@@ -45,4 +45,4 @@ lead: Designsystemet anviser et minimalt og fleksibelt design. På de underligge
 <p>Det Fælles Designsystem anviser et minimalt og fleksibelt design. Komponenterne er nøje udvalgt til selvbetjeningsløsninger. Systemets frontendarkitektur afspejler vores ønske om at der bygges selvbetjeningsløsninger med høj performance, hvor kun det nødvendige hentes ind i løsningen.</p>
 <p>Designsystemet giver lette og stabile selvbetjeningsløsninger. Med sin ensartede funktionalitet og design skaber det genkendelighed for brugerne på tværs af selvbetjeningsløsningerne. Det gør det nemmere for brugerne at navigere i og anvende løsningerne, da den samlede brugerrejse på tværs af offentlige selvbetjeningsløsninger bliver mere ensartet.</p>
 <p>På de underliggende sider finder du en beskrivelse af principper og valg af løsninger bag designsystemet.</p>
-<p><a href="/dkfds-docs/omdesignsystemet/gennemgang/">Gennemgang af designsystemet</a></p>
+<p><a href="/omdesignsystemet/gennemgang/">Gennemgang af designsystemet</a></p>

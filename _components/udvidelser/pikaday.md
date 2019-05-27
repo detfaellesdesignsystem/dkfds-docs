@@ -20,7 +20,7 @@ alerts:
     Implementering
   </button>
   <div id="tech-docs" class="accordion-content">
-    <p>Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/dkfds-docs/omdesignsystemet/tiludviklere/">Til udviklere</a></p>
+    <p>Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a></p>
     <p>Stien til filen du skal inkludere for Pikaday er henholdsvis <code>[path-to-plugins-project]/dist/css/dkfds-pikaday-theme.standalone.min.css</code> for CSS filen og <code>~dkfds-plugins/dist/scss/dkfds-pikaday-theme</code> for SCSS filen.</p>
     <p>Man skal dog stadig inkludere Pikadays egen CSS og JavaScript. Følg <a href="https://github.com/Pikaday/Pikaday" class="icon-link">Pikadays egen dokumentation<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a> for implementering af pluginnet i dit projekt.</p> 
   </div>
@@ -38,7 +38,7 @@ alerts:
           <h4 class="h5">Anvendes til</h4>
           <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.</p>
           <h4 class="h5">Anvendes ikke til</h4>
-          <p>Tidsangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="dkfds-docs/komponenter/form-controls/#datoangivelse" title="">datoangivelse</a></p>
+          <p>Tidsangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/form-controls/#datoangivelse" title="">datoangivelse</a></p>
       </section>
     </article>
   </div>

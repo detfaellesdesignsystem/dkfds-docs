@@ -86,7 +86,7 @@ subnav:
 <h3 class="h5">Række 5 (frivillig)</h3>
 <p>Funktionslinks (igangsætter system- eller OS-funktionalitet, fx gem, print osv.)</p>
 <p>En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servicere både simple og komplekse løsninger. Den er også kompleks at anvende for brugerne. Du bør derfor udgangspunkt anvende færre end fem rækker i din header.</p>
-<p><a href="/dkfds-docs/komponenter/headers/">Se header-komponenten</a></p>
+<p><a href="/komponenter/headers/">Se header-komponenten</a></p>
 
 <h2 id="indhold">Indhold</h2>
 <p>Det specifikke indhold i selvbetjeningsløsningerne kan variere. De konkrete retningslinjer for layout er derfor erstattet af nogle principper, som du skal betragte som anbefalinger, da de ikke stiller krav om, hvordan en given selvbetjeningsløsning specifikt skal se ud. Principperne retter sig særligt mod selvbetjeningsløsninger til lavfrekvente og ikke-professionelle brugere. De er følgende:</p>
@@ -131,8 +131,8 @@ subnav:
     <div class="col-12 col-lg-5 bg-alternative">
        <h3 class="h5">Brug et responsivt grid</h3>
        <p>Brug et grid-system til fx til at styre dit layout. Grid skaber struktur i informationer. Responsivt grid tilpasser sig desuden skærmformatet.</p>
-       <p><a href="/dkfds-docs/design/grid/">Grid’et i designsystemet</a></p>
-       <p><a href="/dkfds-docs/eksempler/">Eksempler på selvbetjeningsløsninger</a></p>
+       <p><a href="/design/grid/">Grid’et i designsystemet</a></p>
+       <p><a href="/eksempler/">Eksempler på selvbetjeningsløsninger</a></p>
     </div>
     <div class="col-12 col-lg-7 bg-darkgrey align-text-center">
         <img src="{{ site.baseurl }}/img/descriptionimages/Brug_et_grid.svg" class="my-5 mx-2" alt="Side med gridsystem" />
@@ -157,5 +157,5 @@ subnav:
 
 <p>Footeren indeholder altid ansvarlig myndighed, tilgængelighedserklæring og cookieoplysning. Det er op til den enkelte myndighed at vælge en footer, som passer til den mængde indhold, der er rigtig for den konkrete selvbetjeningsløsning.</p>
 
-<p><a href="/dkfds-docs/komponenter/footers/">Se footer-komponenten</a></p>
+<p><a href="/komponenter/footers/">Se footer-komponenten</a></p>
 

@@ -51,7 +51,7 @@ subnav:
                 <tbody>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/design/utility/">Hjælpeklasser (utilities)</a></td>
+                        <td><a href="/design/utility/">Hjælpeklasser (utilities)</a></td>
                         <td></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -60,7 +60,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/design/typography/">Typografi</a></td>
+                        <td><a href="/design/typography/">Typografi</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/typography/" class="icon-link">Typography<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -69,7 +69,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/design/farver/">Farver</a></td>
+                        <td><a href="/design/farver/">Farver</a></td>
                         <td>Ja</td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -78,7 +78,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/design/ikoner/">Ikoner</a></td>
+                        <td><a href="/design/ikoner/">Ikoner</a></td>
                         <td>Ja</td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -87,7 +87,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/design/kanter/">Hjørner, streger og skygger</a></td>
+                        <td><a href="/design/kanter/">Hjørner, streger og skygger</a></td>
                         <td></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -96,7 +96,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/design/grid/">Grid</a></td>
+                        <td><a href="/design/grid/">Grid</a></td>
                         <td></td>
                         <td><a href="https://v2.designsystem.digital.gov/utilities/layout-grid/" class="icon-link">Layout Grid<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -105,7 +105,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/buttons/">Knapper</a></td>
+                        <td><a href="/komponenter/buttons/">Knapper</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/buttons/" class="icon-link">Buttons<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -114,7 +114,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/tags/">Tags</a></td>
+                        <td><a href="/komponenter/tags/">Tags</a></td>
                         <td>Ja</td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -123,7 +123,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/accordions/">Accordions</a></td>
+                        <td><a href="/komponenter/accordions/">Accordions</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/accordions/" class="icon-link">Accordions<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -132,7 +132,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/beskeder/">Beskeder</a></td>
+                        <td><a href="/komponenter/beskeder/">Beskeder</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/alerts/" class="icon-link">Alerts<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -141,7 +141,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/cards/">Cards</a></td>
+                        <td><a href="/komponenter/cards/">Cards</a></td>
                         <td></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -150,7 +150,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/form-controls/">Formular elementer</a></td>
+                        <td><a href="/komponenter/form-controls/">Formular elementer</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/form-controls/" class="icon-link">Form controls<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href="https://design-system.service.gov.uk/components/radios/" class="icon-link">Radio<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a><br>
@@ -163,7 +163,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Nej</td>
-                        <td><a href="/dkfds-docs/udvidelser/selectwoo-multiselect/">Multiselect dropdown</a></td>
+                        <td><a href="/udvidelser/selectwoo-multiselect/">Multiselect dropdown</a></td>
                         <td></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -172,7 +172,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/search/">Søgefelt</a></td>
+                        <td><a href="/komponenter/search/">Søgefelt</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/search-bar/" class="icon-link">Search bar<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -181,7 +181,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/badges/">Badges</a></td>
+                        <td><a href="/komponenter/badges/">Badges</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/labels/" class="icon-link">Labels<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href="https://design-system.service.gov.uk/components/tag/" class="icon-link">Tags<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a><br>
@@ -192,7 +192,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/tables/">Tabeller</a></td>
+                        <td><a href="/komponenter/tables/">Tabeller</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/tables/" class="icon-link">Tables<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -201,7 +201,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Nej</td>
-                        <td><a href="/dkfds-docs/udvidelser/datatables/">Avancerede tabeller</a></td>
+                        <td><a href="/udvidelser/datatables/">Avancerede tabeller</a></td>
                         <td></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -210,7 +210,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/trinindikatorer/">Trinindikatorer</a></td>
+                        <td><a href="/komponenter/trinindikatorer/">Trinindikatorer</a></td>
                         <td>Ja</td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -219,7 +219,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/sidenav/">Sidenavigation</a></td>
+                        <td><a href="/komponenter/sidenav/">Sidenavigation</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/sidenav/" class="icon-link">Sidenavigation<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -228,7 +228,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/tabnav/">Faneblade</a></td>
+                        <td><a href="/komponenter/tabnav/">Faneblade</a></td>
                         <td></td>
                         <td><a href="https://designsystem.digital.gov/components/headers/" class="icon-link">Headers<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
@@ -237,7 +237,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/spinner/">Spinner</a></td>
+                        <td><a href="/komponenter/spinner/">Spinner</a></td>
                         <td>Ja</td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -246,7 +246,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/overflowmenu/">Overflow menu</a></td>
+                        <td><a href="/komponenter/overflowmenu/">Overflow menu</a></td>
                         <td>Ja</td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -255,7 +255,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Nej</td>
-                        <td><a href="/dkfds-docs/komponenter/modals/">Modalvinduer</a></td>
+                        <td><a href="/komponenter/modals/">Modalvinduer</a></td>
                         <td></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -264,7 +264,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Nej</td>
-                        <td><a href="/dkfds-docs/komponenter/tooltip/">Tooltip og popover</a></td>
+                        <td><a href="/komponenter/tooltip/">Tooltip og popover</a></td>
                         <td></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -273,7 +273,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/collapse/">Skjul og vis (Collapse)</a></td>
+                        <td><a href="/komponenter/collapse/">Skjul og vis (Collapse)</a></td>
                         <td></td>
                         <td><a href=""></a></td>
                         <td><a href="https://design-system.service.gov.uk/components/radios/" class="icon-link">Radios<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
@@ -282,7 +282,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/headers/">Headers</a></td>
+                        <td><a href="/komponenter/headers/">Headers</a></td>
                         <td></td>
                         <td></td>
                         <td><a href=""></a></td>
@@ -291,7 +291,7 @@ subnav:
                     </tr>
                     <tr>
                         <td>Ja</td>
-                        <td><a href="/dkfds-docs/komponenter/footers/">Footers</a></td>
+                        <td><a href="/komponenter/footers/">Footers</a></td>
                         <td>Ja</td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>

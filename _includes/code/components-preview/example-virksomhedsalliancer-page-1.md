@@ -94,26 +94,26 @@ title: Example-virksomhedsalliancer-page-1.html
 
             <ul class='sidenav-list'>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'
+                    <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'
                         class='active'>
                         1. Stamdata
                     </a>
                 </li>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
                         2. SMV-kriterier
                     </a>
                 </li>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
                         3. Statsstøtte
                     </a>
                 </li>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'>
                         4. Tilskud til land
                     </a>
                 </li>
@@ -211,7 +211,7 @@ title: Example-virksomhedsalliancer-page-1.html
     </div>
 
     <nav class="page-navigation">
-        <a href="/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
+        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
             class="button button-primary">Næste</a>
     </nav>
 </main>

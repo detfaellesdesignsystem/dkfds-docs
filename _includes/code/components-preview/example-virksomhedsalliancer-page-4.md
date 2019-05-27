@@ -95,7 +95,7 @@ title: Example-virksomhedsalliancer-page-4.html
             <ul class='sidenav-list'>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'>
                         1. Stamdata
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -104,7 +104,7 @@ title: Example-virksomhedsalliancer-page-4.html
                 </li>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
                         2. SMV-kriterier
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -113,7 +113,7 @@ title: Example-virksomhedsalliancer-page-4.html
                 </li>
                 <li>
                     <a
-                        href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
+                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
                         3. Statsstøtte
                         <span class='sidenav-icon'>
                             <svg class='icon-svg'><use xlink:href='#check'></use></svg>
@@ -121,7 +121,7 @@ title: Example-virksomhedsalliancer-page-4.html
                     </a>
                 </li>
                 <li>
-                    <a href='/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'
+                    <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'
                         class='active'>
                         4. Tilskud til land
                     </a>
@@ -259,7 +259,7 @@ title: Example-virksomhedsalliancer-page-4.html
 
     <nav class="page-navigation">
         <a href="#" class="button button-primary">Næste</a>
-        <a href="/dkfds-docs/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3"
+        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3"
             class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>

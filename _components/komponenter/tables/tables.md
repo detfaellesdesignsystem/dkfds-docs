@@ -43,7 +43,7 @@ subnav:
 <ul>
     <li>Tabeller er en kompleks størrelse og når du bruger tabeller, skal du sikre dig, at din opmærkning overholder tilgængelighedskravene.  </li>
     <li>Vær meget opmærksom på typen af data, din tabel skal præsentere brugeren for.</li>
-    <li>Såfremt der er tale om meget <a href="/dkfds-docs/udvidelser/datatables/">avancerede tabeller</a>, kan der bruges en udvidelse</li>
+    <li>Såfremt der er tale om meget <a href="/udvidelser/datatables/">avancerede tabeller</a>, kan der bruges en udvidelse</li>
 </ul>
 
 {% include child-sections.html parent='Tables' %}

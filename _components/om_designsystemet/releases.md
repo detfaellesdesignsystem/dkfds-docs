@@ -47,12 +47,12 @@ subnav:
     <li>Fjernet primærfarven på tekst i aktivt menupunkt i header.</li>
     <li>Tilføjet klassen inline-svg, som kan bruges på ikoner, der skal fremgå i tekst, således at de matcher teksthøjden.</li>
     <li>Ændret afstand fra label til read-only felt.</li>
-    <li><label class="color-info badge badge-small mr-3">Change</label>Ændret JavaScript, der håndterer regex maske på dato felt, således at man nu kan bruge copy/paste igen.
+    <li>Ændret JavaScript, der håndterer regex maske på dato felt, således at man nu kan bruge copy/paste igen.
         <ul>    
     	    <li>Fejlhåndtering omkring ikke gyldige karakterer indsat i feltet med copy/paste bør håndteres i projektet selv.</li>
         </ul>
     </li>
-    <li>Tilføjet sektion omkring <a href="/dkfds-docs/komponenter/form-controls/#struktur-fieldset">formularstruktur</a>.</li>
+    <li>Tilføjet sektion omkring <a href="/komponenter/form-controls/#struktur-fieldset">formularstruktur</a>.</li>
 
 </ul>
 <h2 class="mb-0" id="version-410">Version 4.1.0</h2>

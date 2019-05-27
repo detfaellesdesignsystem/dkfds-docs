@@ -65,7 +65,7 @@ title: Example-praktikplads-page-3.html
             <div class="navbar-inner container">
                 <ul class="nav-primary">
                     <li>
-                        <a href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-1"
+                        <a href="/pages/eksempler/praktikplads/praktikplads-1"
                             class="nav-link" title="Designsystem">
                             <span>2021</span>
                         </a>
@@ -88,19 +88,19 @@ title: Example-praktikplads-page-3.html
                                 <ul class="overflow-list">
                                     <li>
                                         <a
-                                            href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-2">Revision
+                                            href="/pages/eksempler/praktikplads/praktikplads-2">Revision
                                             3:
                                             Regulering<br> oprettet 01-12-2019</a>
                                     </li>
                                     <li>
                                         <a
-                                            href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-2">Revision
+                                            href="/pages/eksempler/praktikplads/praktikplads-2">Revision
                                             2:
                                             Regulering<br> oprettet 01-09-2019</a>
                                     </li>
                                     <li>
                                         <a
-                                            href="/dkfds-docs/pages/eksempler/praktikplads/praktikplads-2">Revision
+                                            href="/pages/eksempler/praktikplads/praktikplads-2">Revision
                                             1:
                                             Opgørelse<br> oprettet 01-06-2019</a>
                                     </li>

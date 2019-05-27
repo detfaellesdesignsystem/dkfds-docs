@@ -25,11 +25,11 @@ subnav:
     </div>
     <p>
         <strong>Sketch</strong><br />
-        <a href="/dkfds-docs/downloads/Det_Faelles_Designsystem (Version 3.0.3).sketch">Download sketch-fil (version 3.0.3)</a>
+        <a href="/downloads/Det_Faelles_Designsystem (Version 3.0.3).sketch">Download sketch-fil (version 3.0.3)</a>
     </p>
     <p>
         <strong>SVG</strong><br />
-        <a href="/dkfds-docs/downloads/FDS v303 SVG.zip">Download svg-filer (version 3.0.3)</a>
+        <a href="/downloads/FDS v303 SVG.zip">Download svg-filer (version 3.0.3)</a>
     </p>
     <p>Svg-filerne kan importeres i de fleste design/prototype programmer m.fl. og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).</p>
     <p>For at gøre det nemmere at komme i gang stiller vi ovenstående filer til rådighed, men “source of truth”, vores fælles referencepunkt, er dokumentationssiden her og ikke filerne. </p>
@@ -37,7 +37,7 @@ subnav:
 <section>
     <h2>Dit ansvar som designer</h2>
     <p>Følg allerede etablerede standarder og konventioner for placering og gruppering af komponenter og reproducer gængse interaktionsmønstre. Kig gerne vores vejledning til sideopbygning igennem. </p>
-    <p><a href="/dkfds-docs/komigang/tildesignere/sideopbygning/">Sideopbygning (layout)</a></p>
+    <p><a href="/komigang/tildesignere/sideopbygning/">Sideopbygning (layout)</a></p>
     <p>Hav forståelse for dit ansvar for sammenhængen i mellem og på tværs af de mange tusinde selvbetjeningsløsninger, der kan tilgås fra borger.dk og Virk. Ved at tage ansvar, er du med til at gøre brugerne mere effektive, så de ikke skal genlære alle offentlige brugergrænseflader forfra hver gang. </p>
-    <p><a href="/dkfds-docs/komigang/tildesignere/design-selvbetjeningsloesninger/">Kort guide til design af selvbetjeningsløsninger</a></p>
+    <p><a href="/komigang/tildesignere/design-selvbetjeningsloesninger/">Kort guide til design af selvbetjeningsløsninger</a></p>
 </section>

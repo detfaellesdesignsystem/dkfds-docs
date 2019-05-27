@@ -76,12 +76,12 @@ title: Example-boernetilskud-oversigt.html
                                 <ul class="overflow-list">
                                     <li>
                                         <a class="current"
-                                            href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt">Overssigtsside
+                                            href="/pages/eksempler/boernetilskud/boernetilskud-oversigt">Overssigtsside
                                             som liste</a>
                                     </li>
                                     <li>
                                         <a
-                                            href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-oversigt-2">Oversigt
+                                            href="/pages/eksempler/boernetilskud/boernetilskud-oversigt-2">Oversigt
                                             med cards</a>
                                     </li>
                                 </ul>
@@ -89,37 +89,37 @@ title: Example-boernetilskud-oversigt.html
                         </div>
                     </li>
                     <li>
-                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1"
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-1"
                             class="nav-link" title="Eksempler">
                             <span>Beskeder</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1"
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-1"
                             class="nav-link" title="Kom godt i gang">
                             <span>Udbetalinger</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1"
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-1"
                             class="nav-link" title="Fællesoffentlige krav">
                             <span>Sager</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1"
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-1"
                             class="nav-link" title="Fællesoffentlige krav">
                             <span>Ansøgninger</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1"
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-1"
                             class="nav-link" title="Fællesoffentlige krav">
                             <span>Ændringer</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1"
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-1"
                             class="nav-link" title="Fællesoffentlige krav">
                             <span>Dokumentation</span>
                         </a>
@@ -157,27 +157,27 @@ title: Example-boernetilskud-oversigt.html
     <section class="page-content">
         <p class="h3 mb-0">Beskeder</p>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1">Læs
+                href="/pages/eksempler/boernetilskud/boernetilskud-1">Læs
                 beskeder omkring dine aktive sager</a></p>
         <p class="h3 mb-0">Udbetalinger</p>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1">Se
+                href="/pages/eksempler/boernetilskud/boernetilskud-1">Se
                 tidligere og kommende udbetalinger</a></p>
         <p class="h3 mb-0">Sager</p>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1">Få
+                href="/pages/eksempler/boernetilskud/boernetilskud-1">Få
                 status på dine nuværende sager</a></p>
         <p class="h3 mb-0">Ansøgninger</p>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1">Se
+                href="/pages/eksempler/boernetilskud/boernetilskud-1">Se
                 aktive og tidligere ansøgninger</a></p>
         <p class="h3 mb-0">Ændringer</p>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1">Foretag
+                href="/pages/eksempler/boernetilskud/boernetilskud-1">Foretag
                 ændringer omkring dit børnetilskud</a></p>
         <p class="h3 mb-0">Dokumentation</p>
         <p class="mt-0"><a
-                href="/dkfds-docs/pages/eksempler/boernetilskud/boernetilskud-1">Opslagsværk
+                href="/pages/eksempler/boernetilskud/boernetilskud-1">Opslagsværk
                 for hvordan børnetilskud fungerer</a></p>
     </section>
 </main>

@@ -58,7 +58,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             <h2 class="h3 mt-0">Brugervenlighed over tidens designtrend</h2>
             <p>Designtrends skifter, det som var moderne i går er umoderne i morgen, men mange selvbetjeningsløsninger overlever modens luner. Ved primært at holde det visuelle design til gråtoner og hvid, uden “krom” og med så lidt branding som muligt, har vi lavet et visuelt robust designsystem, der ikke forsøger at være trendy, men neutralt, simpelt og fleksibelt, så det passer ind på både borger.dk og Virk trods deres forskelligheder. Så kan du fokusere på brugerens behov og brugerrejse i stedet for på former og farver.</p>
             <p>
-              <a href="/dkfds-docs/design/visueltdesign/"> 
+              <a href="/design/visueltdesign/"> 
                 Om det visuelle design
               </a>
             </p>
@@ -72,7 +72,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             <h2 class="h3 mt-0">Kodefrihed under ansvar</h2>
             <p>Vi har bestræbt os på at lave et designsystem, der er let at anvende og kode med, men vi vil ikke tvinge nogen væk fra deres favorit (JavaScript) framework. Sålænge det visuelle design består som beskrevet i systemet, så er du velkommen til at udnytte de teknologier du finder bedst, men giv vores kode et kig, den er lige til at gå til.</p>
             <p>
-              <a href="/dkfds-docs/omdesignsystemet/tiludviklere/"> 
+              <a href="/omdesignsystemet/tiludviklere/"> 
                 Til udviklere
               </a>
             </p>
@@ -90,7 +90,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         </div>
         <h3 class="h4">Kom godt i gang med designet</h3>
         <p>Stringent og minimalistisk design er en del af rygraden for systemet. Nogle Få grundlæggende designbeslutninger danner fundament for hele systemet af komponenter.</p>
-        <p><a href="/dkfds-docs/design/">Design</a></p>
+        <p><a href="/design/">Design</a></p>
       </div>
       <div class="col-12 col-md-4">
         <div class="demo-img-container demo-img-container--turquoise d-none d-md-flex">
@@ -99,8 +99,8 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <h3 class="h4">Skab ensartede løsninger</h3>
         <p>Løsninger opbygges af prædefinerede komponenter, som kan kombineres på forskellig vis og dermed tilpasses til de enkelte løsninger.</p>
         <ul class="nobullet-list">
-            <li><a href="/dkfds-docs/komponenter/">Komponenter</a></li>
-            <li><a href="/dkfds-docs/udvidelser/">Udvidelser</a></li>
+            <li><a href="/komponenter/">Komponenter</a></li>
+            <li><a href="/udvidelser/">Udvidelser</a></li>
         </ul>
       </div>
       <div class="col-12 col-md-4">
@@ -109,7 +109,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         </div>
         <h3 class="h4">Lad dig inspirere</h3>
         <p>Udforsk de forskellige eksempler og se, hvordan designsystemet kan anvendes til at bygge forskelligartede selvbetjeningsløsninger.</p>
-        <p><a href="/dkfds-docs/eksempler/">Eksempler</a></p>
+        <p><a href="/eksempler/">Eksempler</a></p>
       </div>
     </div>
     <hr class="my-9">
@@ -121,7 +121,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         </div>
         <h3 class="h4">Et levende designsystem</h3>
         <p>For at sikre transparens, er systemet åbent for alle. Jo flere løsninger der laves, jo klogere bliver vi på, hvordan det skal fungere — og det skal naturligvis løbende afspejles.</p>
-        <p><a href="/dkfds-docs/omdesignsystemet/">Om designsystemet</a></p>
+        <p><a href="/omdesignsystemet/">Om designsystemet</a></p>
       </div>
       <div class="col-12 col-md-4">
         <div class="demo-img-container demo-img-container--violet d-none d-md-flex">
@@ -146,6 +146,6 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
     <hr class="my-9">
     <h2 class="h3 mt-0">Release notes</h2>
     <p>Hold dig opdateret på de seneste versioner.</p>
-    <p><a href="/dkfds-docs/omdesignsystemet/releases/">Release Notes</a></p>
+    <p><a href="/omdesignsystemet/releases/">Release Notes</a></p>
 </div>
 

@@ -12,7 +12,7 @@ lead:
   </button>
   <div id="tech-filebutton" class="accordion-content">
     <section>
-      <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/dkfds-docs/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
+      <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
     </section>
   </div>
 </div>

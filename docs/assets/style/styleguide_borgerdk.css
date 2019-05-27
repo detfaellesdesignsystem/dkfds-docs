@@ -360,7 +360,7 @@ th {
 .header .portal-header {
   background-color: #f1f1f1; }
   .header .portal-header .logo {
-    background-image: url(/dkfds-docs/assets/svg/logo-borgerdk.svg);
+    background-image: url(/assets/svg/logo-borgerdk.svg);
     height: 4.8rem; }
 
 /*! dkfds @version */
@@ -858,9 +858,9 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
 /* stylelint-disable at-rule-empty-line-before */
 @font-face {
   font-family: "IBMPlexSans";
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-Regular.eot);
+  src: url(/assets/fonts/IBMPlexSans-Regular.eot);
   /* IE9 Compat Modes */
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-Regular.eot?#iefix) format("embedded-opentype"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Regular.woff) format("woff"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Regular.woff2) format("woff2"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Regular.ttf) format("truetype");
+  src: url(/assets/fonts/IBMPlexSans-Regular.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/IBMPlexSans-Regular.woff) format("woff"), url(/assets/fonts/IBMPlexSans-Regular.woff2) format("woff2"), url(/assets/fonts/IBMPlexSans-Regular.ttf) format("truetype");
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 400;
@@ -868,9 +868,9 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
 
 @font-face {
   font-family: "IBMPlexSans";
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-Medium.eot);
+  src: url(/assets/fonts/IBMPlexSans-Medium.eot);
   /* IE9 Compat Modes */
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-Medium.eot?#iefix) format("embedded-opentype"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Medium.woff) format("woff"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Medium.woff2) format("woff2"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Medium.ttf) format("truetype");
+  src: url(/assets/fonts/IBMPlexSans-Medium.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/IBMPlexSans-Medium.woff) format("woff"), url(/assets/fonts/IBMPlexSans-Medium.woff2) format("woff2"), url(/assets/fonts/IBMPlexSans-Medium.ttf) format("truetype");
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 500;
@@ -878,9 +878,9 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
 
 @font-face {
   font-family: "IBMPlexSans";
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-SemiBold.eot);
+  src: url(/assets/fonts/IBMPlexSans-SemiBold.eot);
   /* IE9 Compat Modes */
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-SemiBold.eot?#iefix) format("embedded-opentype"), url(/dkfds-docs/assets/fonts/IBMPlexSans-SemiBold.woff) format("woff"), url(/dkfds-docs/assets/fonts/IBMPlexSans-SemiBold.woff2) format("woff2"), url(/dkfds-docs/assets/fonts/IBMPlexSans-SemiBold.ttf) format("truetype");
+  src: url(/assets/fonts/IBMPlexSans-SemiBold.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/IBMPlexSans-SemiBold.woff) format("woff"), url(/assets/fonts/IBMPlexSans-SemiBold.woff2) format("woff2"), url(/assets/fonts/IBMPlexSans-SemiBold.ttf) format("truetype");
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 600;
@@ -888,9 +888,9 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
 
 @font-face {
   font-family: "IBMPlexSans";
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-Bold.eot);
+  src: url(/assets/fonts/IBMPlexSans-Bold.eot);
   /* IE9 Compat Modes */
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-Bold.eot?#iefix) format("embedded-opentype"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Bold.woff) format("woff"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Bold.woff2) format("woff2"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Bold.ttf) format("truetype");
+  src: url(/assets/fonts/IBMPlexSans-Bold.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/IBMPlexSans-Bold.woff) format("woff"), url(/assets/fonts/IBMPlexSans-Bold.woff2) format("woff2"), url(/assets/fonts/IBMPlexSans-Bold.ttf) format("truetype");
   /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 700;
@@ -898,9 +898,9 @@ body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-anima
 
 @font-face {
   font-family: "IBMPlexSans";
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-Italic.eot);
+  src: url(/assets/fonts/IBMPlexSans-Italic.eot);
   /* IE9 Compat Modes */
-  src: url(/dkfds-docs/assets/fonts/IBMPlexSans-Italic.eot?#iefix) format("embedded-opentype"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Italic.woff) format("woff"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Italic.woff2) format("woff2"), url(/dkfds-docs/assets/fonts/IBMPlexSans-Italic.ttf) format("truetype");
+  src: url(/assets/fonts/IBMPlexSans-Italic.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/IBMPlexSans-Italic.woff) format("woff"), url(/assets/fonts/IBMPlexSans-Italic.woff2) format("woff2"), url(/assets/fonts/IBMPlexSans-Italic.ttf) format("truetype");
   /* Safari, Android, iOS */
   font-style: italic;
   font-weight: 400;
@@ -4393,148 +4393,148 @@ figure {
     fill: currentColor; }
 
 .icon-add {
-  background-image: url(/dkfds-docs/assets/svg/add.svg); }
+  background-image: url(/assets/svg/add.svg); }
 
 .icon-alert-outline {
-  background-image: url(/dkfds-docs/assets/svg/alert-outline.svg); }
+  background-image: url(/assets/svg/alert-outline.svg); }
 
 .icon-angle-arrow-down {
-  background-image: url(/dkfds-docs/assets/svg/angle-arrow-down.svg); }
+  background-image: url(/assets/svg/angle-arrow-down.svg); }
 
 .icon-angle-arrow-up {
-  background-image: url(/dkfds-docs/assets/svg/angle-arrow-up.svg); }
+  background-image: url(/assets/svg/angle-arrow-up.svg); }
 
 .icon-arrow-left {
-  background-image: url(/dkfds-docs/assets/svg/arrow-left.svg); }
+  background-image: url(/assets/svg/arrow-left.svg); }
 
 .icon-arrow-right {
-  background-image: url(/dkfds-docs/assets/svg/arrow-right.svg); }
+  background-image: url(/assets/svg/arrow-right.svg); }
 
 .icon-book-open {
-  background-image: url(/dkfds-docs/assets/svg/book-open.svg); }
+  background-image: url(/assets/svg/book-open.svg); }
 
 .icon-calendar {
-  background-image: url(/dkfds-docs/assets/svg/calendar.svg); }
+  background-image: url(/assets/svg/calendar.svg); }
 
 .icon-cash-multiple {
-  background-image: url(/dkfds-docs/assets/svg/cash-multiple.svg); }
+  background-image: url(/assets/svg/cash-multiple.svg); }
 
 .icon-check {
-  background-image: url(/dkfds-docs/assets/svg/check.svg); }
+  background-image: url(/assets/svg/check.svg); }
 
 .icon-check-circle-outline {
-  background-image: url(/dkfds-docs/assets/svg/check-circle-outline.svg); }
+  background-image: url(/assets/svg/check-circle-outline.svg); }
 
 .icon-chevron-left {
-  background-image: url(/dkfds-docs/assets/svg/chevron-left.svg); }
+  background-image: url(/assets/svg/chevron-left.svg); }
 
 .icon-chevron-right {
-  background-image: url(/dkfds-docs/assets/svg/chevron-right.svg); }
+  background-image: url(/assets/svg/chevron-right.svg); }
 
 .icon-close {
-  background-image: url(/dkfds-docs/assets/svg/close.svg); }
+  background-image: url(/assets/svg/close.svg); }
 
 .icon-close-circle {
-  background-image: url(/dkfds-docs/assets/svg/close-circle.svg); }
+  background-image: url(/assets/svg/close-circle.svg); }
 
 .icon-close-circle-outline {
-  background-image: url(/dkfds-docs/assets/svg/close-circle-outline.svg); }
+  background-image: url(/assets/svg/close-circle-outline.svg); }
 
 .icon-content-save {
-  background-image: url(/dkfds-docs/assets/svg/content-save.svg); }
+  background-image: url(/assets/svg/content-save.svg); }
 
 .icon-delete {
-  background-image: url(/dkfds-docs/assets/svg/delete.svg); }
+  background-image: url(/assets/svg/delete.svg); }
 
 .icon-delete-outline {
-  background-image: url(/dkfds-docs/assets/svg/delete-outline.svg); }
+  background-image: url(/assets/svg/delete-outline.svg); }
 
 .icon-dots-vertical {
-  background-image: url(/dkfds-docs/assets/svg/dots-vertical.svg); }
+  background-image: url(/assets/svg/dots-vertical.svg); }
 
 .icon-download {
-  background-image: url(/dkfds-docs/assets/svg/download.svg); }
+  background-image: url(/assets/svg/download.svg); }
 
 .icon-error {
-  background-image: url(/dkfds-docs/assets/svg/error.svg); }
+  background-image: url(/assets/svg/error.svg); }
 
 .icon-file {
-  background-image: url(/dkfds-docs/assets/svg/file.svg); }
+  background-image: url(/assets/svg/file.svg); }
 
 .icon-file-document-box {
-  background-image: url(/dkfds-docs/assets/svg/file-document-box.svg); }
+  background-image: url(/assets/svg/file-document-box.svg); }
 
 .icon-folder-multiple {
-  background-image: url(/dkfds-docs/assets/svg/folder-multiple.svg); }
+  background-image: url(/assets/svg/folder-multiple.svg); }
 
 .icon-help {
-  background-image: url(/dkfds-docs/assets/svg/help.svg); }
+  background-image: url(/assets/svg/help.svg); }
 
 .icon-help-circle-outline {
-  background-image: url(/dkfds-docs/assets/svg/help-circle-outline.svg); }
+  background-image: url(/assets/svg/help-circle-outline.svg); }
 
 .icon-info {
-  background-image: url(/dkfds-docs/assets/svg/info.svg); }
+  background-image: url(/assets/svg/info.svg); }
 
 .icon-language {
-  background-image: url(/dkfds-docs/assets/svg/language.svg); }
+  background-image: url(/assets/svg/language.svg); }
 
 .icon-magnify {
-  background-image: url(/dkfds-docs/assets/svg/magnify.svg); }
+  background-image: url(/assets/svg/magnify.svg); }
 
 .icon-menu-down {
-  background-image: url(/dkfds-docs/assets/svg/menu-down.svg); }
+  background-image: url(/assets/svg/menu-down.svg); }
 
 .icon-menu-left {
-  background-image: url(/dkfds-docs/assets/svg/menu-left.svg); }
+  background-image: url(/assets/svg/menu-left.svg); }
 
 .icon-menu-right {
-  background-image: url(/dkfds-docs/assets/svg/menu-right.svg); }
+  background-image: url(/assets/svg/menu-right.svg); }
 
 .icon-menu-up {
-  background-image: url(/dkfds-docs/assets/svg/menu-up.svg); }
+  background-image: url(/assets/svg/menu-up.svg); }
 
 .icon-message {
-  background-image: url(/dkfds-docs/assets/svg/message.svg); }
+  background-image: url(/assets/svg/message.svg); }
 
 .icon-minus {
-  background-image: url(/dkfds-docs/assets/svg/minus.svg); }
+  background-image: url(/assets/svg/minus.svg); }
 
 .icon-open-in-new {
-  background-image: url(/dkfds-docs/assets/svg/open-in-new.svg); }
+  background-image: url(/assets/svg/open-in-new.svg); }
 
 .icon-pencil {
-  background-image: url(/dkfds-docs/assets/svg/pencil.svg); }
+  background-image: url(/assets/svg/pencil.svg); }
 
 .icon-plus {
-  background-image: url(/dkfds-docs/assets/svg/plus.svg); }
+  background-image: url(/assets/svg/plus.svg); }
 
 .icon-printer {
-  background-image: url(/dkfds-docs/assets/svg/printer.svg); }
+  background-image: url(/assets/svg/printer.svg); }
 
 .icon-refresh {
-  background-image: url(/dkfds-docs/assets/svg/refresh.svg); }
+  background-image: url(/assets/svg/refresh.svg); }
 
 .icon-save {
-  background-image: url(/dkfds-docs/assets/svg/save.svg); }
+  background-image: url(/assets/svg/save.svg); }
 
 .icon-settings {
-  background-image: url(/dkfds-docs/assets/svg/settings.svg); }
+  background-image: url(/assets/svg/settings.svg); }
 
 .icon-sort-acending {
-  background-image: url(/dkfds-docs/assets/svg/sort-acending.svg); }
+  background-image: url(/assets/svg/sort-acending.svg); }
 
 .icon-sort-descending {
-  background-image: url(/dkfds-docs/assets/svg/sort-descending.svg); }
+  background-image: url(/assets/svg/sort-descending.svg); }
 
 .icon-sort-none {
-  background-image: url(/dkfds-docs/assets/svg/sort-none.svg); }
+  background-image: url(/assets/svg/sort-none.svg); }
 
 .icon-success {
-  background-image: url(/dkfds-docs/assets/svg/success.svg); }
+  background-image: url(/assets/svg/success.svg); }
 
 .icon-warning {
-  background-image: url(/dkfds-docs/assets/svg/warning.svg); }
+  background-image: url(/assets/svg/warning.svg); }
 
 .hide-base-svg {
   display: none; }
@@ -5239,7 +5239,7 @@ hr {
   -webkit-font-smoothing: auto;
   color: inherit;
   background-color: #F5F5F5;
-  background-image: url(/dkfds-docs/assets/svg/minus.svg);
+  background-image: url(/assets/svg/minus.svg);
   background-position: left 1.6rem center;
   background-repeat: no-repeat;
   background-size: 2.4rem;
@@ -5371,7 +5371,7 @@ hr {
     border-bottom: 1px solid #BFBFBF; }
 
 .accordion-button[aria-expanded=false] {
-  background-image: url(/dkfds-docs/assets/svg/plus.svg);
+  background-image: url(/assets/svg/plus.svg);
   background-repeat: no-repeat;
   background-size: 2.4rem;
   border-radius: 3px 3px 3px 3px; }
@@ -5410,28 +5410,28 @@ hr {
   background-color: #eeffe2;
   border-color: #358000; }
   .alert-success.alert--show-icon {
-    background-image: url(/dkfds-docs/assets/svg/success.svg);
+    background-image: url(/assets/svg/success.svg);
     padding-left: 48px; }
 
 .alert-warning {
   background-color: #ffeecc;
   border-color: #febb30; }
   .alert-warning.alert--show-icon {
-    background-image: url(/dkfds-docs/assets/svg/warning.svg);
+    background-image: url(/assets/svg/warning.svg);
     padding-left: 48px; }
 
 .alert-error {
   background-color: #ffe0e0;
   border-color: #CC0000; }
   .alert-error.alert--show-icon {
-    background-image: url(/dkfds-docs/assets/svg/error.svg);
+    background-image: url(/assets/svg/error.svg);
     padding-left: 48px; }
 
 .alert-info {
   background-color: #e2f2fb;
   border-color: #1B86C3; }
   .alert-info.alert--show-icon {
-    background-image: url(/dkfds-docs/assets/svg/info.svg);
+    background-image: url(/assets/svg/info.svg);
     padding-left: 48px; }
 
 .alert + .alert {
@@ -5457,7 +5457,7 @@ footer .footer {
     footer .footer .footer-col:not(:first-child) {
       margin-top: 0; } }
   footer .footer .logo {
-    background-image: url(/dkfds-docs/assets/img/ea507176c85c67b71f7909f3bac14040.png);
+    background-image: url(/assets/img/ea507176c85c67b71f7909f3bac14040.png);
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -5482,7 +5482,7 @@ footer .footer-theme {
   width: 100%;
   z-index: 7000; }
   .header .logo {
-    background-image: url(/dkfds-docs/assets/img/dcbb8bd9e12b03bf43fc7e0321979570.png);
+    background-image: url(/assets/img/dcbb8bd9e12b03bf43fc7e0321979570.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -5995,24 +5995,24 @@ footer .footer-theme {
   .nav-primary .overflow-menu .button-overflow-menu:hover {
     text-decoration: none; }
   .nav-primary .overflow-menu .button-overflow-menu[aria-expanded=false] {
-    background-image: url(/dkfds-docs/assets/svg/plus.svg);
+    background-image: url(/assets/svg/plus.svg);
     background-repeat: no-repeat;
     background-position: right 16px center;
     background-size: 24px; }
     @media (min-width: 992px) {
       .nav-primary .overflow-menu .button-overflow-menu[aria-expanded=false] {
-        background-image: url(/dkfds-docs/assets/svg/angle-arrow-down.svg);
+        background-image: url(/assets/svg/angle-arrow-down.svg);
         background-position: right 1rem center;
         border-left: 1px solid transparent;
         border-right: 1px solid transparent; } }
   .nav-primary .overflow-menu .button-overflow-menu[aria-expanded=true] {
-    background-image: url(/dkfds-docs/assets/svg/minus.svg);
+    background-image: url(/assets/svg/minus.svg);
     background-repeat: no-repeat;
     background-position: right 16px center;
     background-size: 24px; }
     @media (min-width: 992px) {
       .nav-primary .overflow-menu .button-overflow-menu[aria-expanded=true] {
-        background-image: url(/dkfds-docs/assets/svg/angle-arrow-down-white.svg);
+        background-image: url(/assets/svg/angle-arrow-down-white.svg);
         background-position: right 1rem center;
         border-left: 1px solid #999999;
         border-right: 1px solid #999999;

@@ -93,7 +93,7 @@ module.exports = function (outputPath, prod) {
     },
     output: {
       path: path.resolve(__dirname, 'assets'), //dist folder is /assets
-      publicPath: "/dkfds-docs/assets/", // written in front of urls in scss
+      publicPath: "/assets/", // written in front of urls in scss
       filename: "js/[name].js"
     },
     resolve: {
