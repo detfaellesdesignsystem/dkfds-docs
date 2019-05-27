@@ -9,7 +9,7 @@ npm-debug.log
 .jekyll_get_cache/
 /package-lock.json
 .idea/
-# Preview components are fetched and generated from components repository 
+# Preview components are fetched and generated from components repository
 _preview-components
 
 # Assets are generated during building process
@@ -19,3 +19,4 @@ assets
 pdf
 docs/puppeteer.js
 
+docs/CNAME
