@@ -6071,8 +6071,11 @@ footer .footer-theme {
       padding: 8px 0 8px 0; }
     .nav-primary .overflow-menu .overflow-menu-inner .overflow-list .overflow-list li:first-of-type a {
       padding: 0px 0 8px 0; }
-    .nav-primary .overflow-menu .overflow-menu-inner .overflow-list .overflow-list li:last-of-type a {
-      padding: 8px 0 32px 0; }
+    @media (min-width: 992px) {
+      .nav-primary .overflow-menu .overflow-menu-inner .overflow-list .overflow-list li:last-of-type a {
+        padding: 8px 0 32px 0; } }
+  .nav-primary .overflow-menu .overflow-menu-inner .overflow-list .sidenav-sub_list {
+    margin-left: 16px; }
   .nav-primary .overflow-menu .overflow-menu-inner button {
     background-color: transparent;
     border: 0;
@@ -6738,7 +6741,7 @@ a.skipnav {
       width: 0;
       position: absolute;
       pointer-events: none;
-      z-index: 2;
+      z-index: 3;
       bottom: calc(8px * -1 - 1px); }
     .overflow-menu .button-overflow-menu:after {
       border-bottom-color: #fff;
