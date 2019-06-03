@@ -39,7 +39,7 @@ layout: default
           <p class="h6 m-0">
             {{ page.subcategory }}
           </p>
-          <h1 class="mt-0" id="{{ page.title | slugify }}">{{ page.title }}</h1>
+          <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
           {% if page.lead != null and page.lead != "" %}
             <p class="font-lead">{{ page.lead }}</p>
           {% endif %}
