@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-var root = "https://dkfdsdevelop.github.io/dkfds-docs/";
+var root = "http://127.0.0.1:4000/";
 var targetRootDir = "img/examples_pages/";
 
 var exampleUrls = [

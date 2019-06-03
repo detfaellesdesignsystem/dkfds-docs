@@ -177,7 +177,7 @@ title: Example-aes-page-7.html
     <div class="form-group mt-0">
         <fieldset>
             <legend>
-                <h1 class="mt-0">Tilføj dokumentation fra sagen</h1>
+                <h1>Tilføj dokumentation fra sagen</h1>
             </legend>
             <ul class="nobullet-list">
                 <li>

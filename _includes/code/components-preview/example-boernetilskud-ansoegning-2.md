@@ -203,7 +203,7 @@ title: Example-boernetilskud-ansoegning-2.html
     </div>
 
     <section class="page-content">
-        <h1 class="mt-0">Hvornår blev du eller bliver du enlig?</h1>
+        <h1>Hvornår blev du eller bliver du enlig?</h1>
 
         <div class="alert alert-info alert--paragraph" role="alert"
             aria-label="Adresse info">

@@ -150,7 +150,7 @@ title: Example-boernetilskud-oversigt-2.html
 
 <main class="container page-container">
     <header class="page-header">
-        <h1>Oversigt</h1>
+        <h1 class="mt-6 mt-md-7">Oversigt</h1>
         <p class="font-lead">Brug en af de følgende funktioner, til at
             administrere børnetilskud:</p>
     </header>

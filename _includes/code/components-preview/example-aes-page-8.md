@@ -182,7 +182,7 @@ title: Example-aes-page-8.html
     <div class="form-group mt-0">
         <fieldset>
             <legend>
-                <h1 class="mt-0">Tilføj kommentarer til sagen</h1>
+                <h1>Tilføj kommentarer til sagen</h1>
             </legend>
             <ul class="nobullet-list">
                 <li>

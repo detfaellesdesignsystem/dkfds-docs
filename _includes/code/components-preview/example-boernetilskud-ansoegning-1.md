@@ -200,7 +200,7 @@ title: Example-boernetilskud-ansoegning-1.html
             </div>
         </div>
 
-        <h1 class="mt-0">Hvilke børn søger du tilskud til?</h1>
+        <h1>Hvilke børn søger du tilskud til?</h1>
     </header>
     <section class="page-content">
         <div class="row">
