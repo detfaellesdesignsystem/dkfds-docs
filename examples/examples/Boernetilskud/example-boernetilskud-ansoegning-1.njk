@@ -135,19 +135,28 @@
     <section class="page-content">
         <div class="row">
             <div class="col-12 col-md-8 col-lg-5">
-                <h2 class="h3 mb-4">Jeg søger tilskud til:</h2>
                 <form class="form">
-                    <fieldset>
-                        {{ alert("alert-warning", "alert", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.", "Beskedbox der viser en advarsel" ) }}
-                        {{ checkbox("checkbox-id-1", "", "checkbox1_selected", true, false, "Keld Hedagaardsen <br> 353535-3535 <br> Fælles", "", false, true) }}
-
-                        {{ alert("alert-warning", "alert", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.", "Beskedbox der viser en advarsel" ) }}
-                        {{ checkbox("checkbox-id-2", "", "checkbox2_selected", true, false, "Anita Hedagaardsen <br> 353535-3535 <br> Fælles", "", false, true) }}
-
-                        {{ checkbox("checkbox-id-3", "", "checkbox3_selected", false, false, "<b>Ylmig Hedagaardsen</b> <br> 353535-3535 <br> Fælles", "", false, true) }}
+                    <div class="form-group">
+                        <fieldset>
+                            <legend><h2 class="h4">Jeg søger tilskud til:</h2></legend>
+                            <ul class="nobullet-list">
+                                <li>
+                                    {{ alert("alert-warning", "alert", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.", "Beskedbox der viser en advarsel" ) }}
+                                    {{ checkbox("checkbox-id-1", "", "checkbox1_selected", true, false, "Keld Hedagaardsen <br> 353535-3535 <br> Fælles", "", false, true) }}
+                                </li>
+                                <li>
+                                    {{ alert("alert-warning", "alert", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.", "Beskedbox der viser en advarsel" ) }}
+                                    {{ checkbox("checkbox-id-2", "", "checkbox2_selected", true, false, "Anita Hedagaardsen <br> 353535-3535 <br> Fælles", "", false, true) }}
+                                </li>
+                                <li>
+                                    {{ checkbox("checkbox-id-3", "", "checkbox3_selected", false, false, "<b>Ylmig Hedagaardsen</b> <br> 353535-3535 <br> Fælles", "", false, true) }}
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
                         <button class="button button-secondary mt-4">{{ icon_svg('add')}} Tilføj barn</button>
-                    </fieldset>
-                    <div>
+                    </div>
                 </form>
             </div>
         </div>

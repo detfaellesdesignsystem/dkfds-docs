@@ -47,24 +47,20 @@ title: Fieldset-complex.html
                     <ul class="nobullet-list">
                         <li>
 
-                            <div class="form-group ">
-                                <input id="kontakt-telefon" type="radio"
-                                    name="kontakt" value="kontakt-telefon"
-                                    class="form-radio  radio-large ">
-                                <label for="kontakt-telefon" class="">Pr.
-                                    telefon </label>
-                            </div>
+                            <input id="kontakt-telefon" type="radio"
+                                name="kontakt" value="kontakt-telefon"
+                                class="form-radio  radio-large " />
+                            <label for="kontakt-telefon" class="">Pr.
+                                telefon </label>
 
                         </li>
                         <li>
 
-                            <div class="form-group ">
-                                <input id="kontakt-email" type="radio"
-                                    name="kontakt" value="kontakt-email"
-                                    class="form-radio  radio-large ">
-                                <label for="kontakt-email" class="">Pr.
-                                    e-mail </label>
-                            </div>
+                            <input id="kontakt-email" type="radio"
+                                name="kontakt" value="kontakt-email"
+                                class="form-radio  radio-large " />
+                            <label for="kontakt-email" class="">Pr. e-mail
+                            </label>
 
                         </li>
                     </ul>
@@ -79,46 +75,37 @@ title: Fieldset-complex.html
                     <ul class="nobullet-list">
                         <li>
 
-                            <div class="form-group ">
-                                <input id="morgen" type="checkbox"
-                                    name="tidspunkt[]" value="morgen"
-                                    class="form-checkbox  checkbox-large ">
-                                <label for="morgen" class="">Om
-                                    morgenen</label>
-                            </div>
+                            <input id="morgen" type="checkbox"
+                                name="tidspunkt[]" value="morgen"
+                                class="form-checkbox  checkbox-large " />
+                            <label for="morgen" class="">Om
+                                morgenen</label>
 
                         </li>
                         <li>
 
-                            <div class="form-group ">
-                                <input id="middag" type="checkbox"
-                                    name="tidspunkt[]" value="middag"
-                                    class="form-checkbox  checkbox-large ">
-                                <label for="middag" class="">Ved
-                                    middagstid</label>
-                            </div>
+                            <input id="middag" type="checkbox"
+                                name="tidspunkt[]" value="middag"
+                                class="form-checkbox  checkbox-large " />
+                            <label for="middag" class="">Ved
+                                middagstid</label>
 
                         </li>
                         <li>
 
-                            <div class="form-group ">
-                                <input id="eftermiddag" type="checkbox"
-                                    name="tidspunkt[]" value="eftermiddag"
-                                    class="form-checkbox  checkbox-large ">
-                                <label for="eftermiddag" class="">Om
-                                    eftermiddagen</label>
-                            </div>
+                            <input id="eftermiddag" type="checkbox"
+                                name="tidspunkt[]" value="eftermiddag"
+                                class="form-checkbox  checkbox-large " />
+                            <label for="eftermiddag" class="">Om
+                                eftermiddagen</label>
 
                         </li>
                         <li>
 
-                            <div class="form-group ">
-                                <input id="aften" type="checkbox"
-                                    name="tidspunkt[]" value="aften"
-                                    class="form-checkbox  checkbox-large ">
-                                <label for="aften" class="">Om
-                                    aftenen</label>
-                            </div>
+                            <input id="aften" type="checkbox"
+                                name="tidspunkt[]" value="aften"
+                                class="form-checkbox  checkbox-large " />
+                            <label for="aften" class="">Om aftenen</label>
 
                         </li>
                     </ul>
@@ -189,25 +176,20 @@ title: Fieldset-complex.html
                             <ul class="nobullet-list">
                                 <li>
 
-                                    <div class="form-group ">
-                                        <input id="odense-ja" type="radio"
-                                            name="odense" value="odense-ja"
-                                            class="form-radio  radio-large ">
-                                        <label for="odense-ja" class="">Ja
-                                        </label>
-                                    </div>
+                                    <input id="odense-ja" type="radio"
+                                        name="odense" value="odense-ja"
+                                        class="form-radio  radio-large " />
+                                    <label for="odense-ja" class="">Ja
+                                    </label>
 
                                 </li>
                                 <li>
 
-                                    <div class="form-group ">
-                                        <input id="odense-nej" type="radio"
-                                            name="odense"
-                                            value="odense-nej"
-                                            class="form-radio  radio-large ">
-                                        <label for="odense-nej"
-                                            class="">Nej </label>
-                                    </div>
+                                    <input id="odense-nej" type="radio"
+                                        name="odense" value="odense-nej"
+                                        class="form-radio  radio-large " />
+                                    <label for="odense-nej" class="">Nej
+                                    </label>
 
                                 </li>
                             </ul>
