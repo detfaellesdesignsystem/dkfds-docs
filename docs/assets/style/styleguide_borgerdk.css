@@ -7907,6 +7907,9 @@ code {
 .page-basic-collapse-html {
   min-height: 150px; }
 
+.page-skiplink-html .container {
+  min-height: 150px; }
+
 .page-date-input-html .container {
   min-height: 200px; }
 
