@@ -5,7 +5,7 @@ parent: typography
 order: 06
 ---
 
-<p class="font-lead">Et skip link er et skjult link på siden, som først bliver synligt når man har det i fokus. Ved brug af skiplink giver man ens brugere mulighed for at hoppe direkte til indholdet på siden således, at de ikke skal tabbe igennem menuen, eller vente på at skærmlæseren har læst det hele igennem.</p>
+<p class="font-lead">Et "skip link" er et skjult link, lavet til brugere, der anvender keyboard til at navigere med. Skip linket gør det muligt, at springe menuer over og hoppe direkte til indholdet på siden.</p>
 <p>Et skip link bør være det første element på siden som rammes af tabulatoren. Ved aktivering af skip linket flyttes fokus til indholdet på siden.</p>
 {% include code/preview.html component="skiplink" %}
 {% include code/accordion.html component="skiplink" %}
