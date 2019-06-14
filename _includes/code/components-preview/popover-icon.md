@@ -3,10 +3,10 @@ permalink: /preview-components/popover-icon.html
 layout: iframed 
 title: Popover-icon.html
 ---
-<div class="container py-8" style="margin-top: 400px; margin-left: 200px;">
+<div class="container py-8">
     <a href="javascript:void(0)" class="popover js-tooltip"
-        data-tippy-trigger="click"
-        title="Dette er en hjælpetekst i en popover"><svg class="icon-svg "  ><use xlink:href="#help-circle-outline"></use></svg><span
+        data-tooltip-trigger="click" data-tooltip-position="top"
+        data-title="Dette er en hjælpetekst i en popover"><svg class="icon-svg "  ><use xlink:href="#help-circle-outline"></use></svg><span
             class="sr-only">Dette er tooltipteksten til screenreaders,
             popover</span></a>
 </div>
