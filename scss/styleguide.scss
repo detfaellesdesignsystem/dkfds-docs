@@ -16,9 +16,12 @@ $font-path:         '~dkfds/src/fonts/IBMPlexSans/';
 $image-path:        '~dkfds/src/img';
 $site-image-path:   '~dkfds/src/img';
 $icons-folder-path: '~dkfds/src/img/svg-icons';
+
+@import '~tippy.js/index.css';
 @import '../node_modules/dkfds/src/stylesheets/dkfds';
 @import '~dkfds-plugins/src/components/datatables/dkfds-datatables-theme';
 @import '~dkfds-plugins/src/components/selectwoo/dkfds-selectwoo-theme';
 @import '~dkfds-plugins/src/components/pikaday/dkfds-pikaday-theme';
+@import '~dkfds-plugins/src/components/tippy/dkfds-tippy-theme';
 
 @import 'styleguide-base';

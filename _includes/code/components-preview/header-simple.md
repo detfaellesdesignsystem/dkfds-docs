@@ -9,7 +9,7 @@ title: Header-simple.html
     <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                aria-label="logo link" class="logo"></a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -19,8 +19,7 @@ title: Header-simple.html
 
                 <p class="user"><b class="username">Lone hansen</b> </p>
 
-                <a href="#" class="button button-secondary alert-leave"
-                    role="button">
+                <a href="#" class="button button-secondary" role="button">
                     Log af
                 </a>
             </div>
@@ -31,8 +30,7 @@ title: Header-simple.html
     <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link"
-                    class="alert-leave2">
+                <a href="#" title="Hjem" aria-label="logo link">
                     Løsningstitel
                 </a>
             </div>
@@ -54,7 +52,7 @@ title: Header-simple.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Lone Hansen</b></p>

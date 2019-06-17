@@ -35,4 +35,12 @@ alerts:
           <p><a href="/udvidelser/pikaday/">Datovælger (datepicker)</a></p>
       </div>
   </div>
+  <div class="col-12 col-md-4">
+    <div class="demo-component-box">
+        <a href="/udvidelser/tippy/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
+            <img src="{{ site.baseurl }}/img/componenticons/Tooltip.svg" alt="">
+        </a>
+        <p><a href="/udvidelser/tippy/">Tooltip og popover</a></p>
+    </div>
+  </div>
 </div>

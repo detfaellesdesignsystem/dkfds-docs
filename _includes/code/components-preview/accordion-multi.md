@@ -13,11 +13,10 @@ title: Accordion-multi.html
                 Lorem ipsum dolor sit amet
                 <span class="accordion-icon ">
                     <span class="icon_text">Information</span>
-                    <svg class="icon-svg "  ><use xlink:href="#info"></use></svg>
+                    <svg class="icon-svg " ><use xlink:href="#info"></use></svg>
                 </span>
             </button>
-
-            <div id="m-a1" aria-hidden="true" class="accordion-content">
+            <div id="m-a1" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -32,11 +31,10 @@ title: Accordion-multi.html
                 Consectetur adipiscing elit
                 <span class="accordion-icon ">
                     <span class="icon_text">Fejl</span>
-                    <svg class="icon-svg "  ><use xlink:href="#close-circle-outline"></use></svg>
+                    <svg class="icon-svg " ><use xlink:href="#close-circle-outline"></use></svg>
                 </span>
             </button>
-
-            <div id="m-a2" aria-hidden="false" class="accordion-content">
+            <div id="m-a2" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -51,11 +49,10 @@ title: Accordion-multi.html
                 Sed do eiusmod tempor
                 <span class="accordion-icon ">
                     <span class="icon_text">Advarsel</span>
-                    <svg class="icon-svg "  ><use xlink:href="#alert-outline"></use></svg>
+                    <svg class="icon-svg " ><use xlink:href="#alert-outline"></use></svg>
                 </span>
             </button>
-
-            <div id="m-a3" aria-hidden="true" class="accordion-content">
+            <div id="m-a3" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -70,11 +67,10 @@ title: Accordion-multi.html
                 Labore et dolore magna
                 <span class="accordion-icon ">
                     <span class="icon_text">Success</span>
-                    <svg class="icon-svg "  ><use xlink:href="#acheck-circle-outline"></use></svg>
+                    <svg class="icon-svg " ><use xlink:href="#acheck-circle-outline"></use></svg>
                 </span>
             </button>
-
-            <div id="m-a4" aria-hidden="true" class="accordion-content">
+            <div id="m-a4" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -87,8 +83,7 @@ title: Accordion-multi.html
             <button class="accordion-button" aria-expanded="false"
                 aria-controls="m-a5">
                 Ut enim ad minim veniam</button>
-
-            <div id="m-a5" aria-hidden="true" class="accordion-content">
+            <div id="m-a5" class="accordion-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud

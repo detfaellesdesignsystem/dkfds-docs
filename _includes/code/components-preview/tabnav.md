@@ -11,42 +11,36 @@ title: Tabnav.html
         <li>
             <a href="">
                 Tabnav 1
-
             </a>
         </li>
 
         <li>
             <a href="" class="active">
                 Tabnav 2
-                <span class="sr-only">(valgt)</span>
             </a>
         </li>
 
         <li>
             <a href="">
                 Tabnav 3
-
             </a>
         </li>
 
         <li>
             <a href="">
                 Tabnav 4
-
             </a>
         </li>
 
         <li>
             <a href="">
                 Tabnav 5
-
             </a>
         </li>
 
         <li>
             <a href="">
                 Tabnav 6
-
             </a>
         </li>
 

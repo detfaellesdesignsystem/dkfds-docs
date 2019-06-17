@@ -9,7 +9,7 @@ title: Example-aes-page-7.html
     <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                aria-label="logo link" class="logo"></a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,8 +21,7 @@ title: Example-aes-page-7.html
                     <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
                 </p>
 
-                <a href="#" class="button button-secondary alert-leave"
-                    role="button">
+                <a href="#" class="button button-secondary" role="button">
                     Log af
                 </a>
             </div>
@@ -33,8 +32,7 @@ title: Example-aes-page-7.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link"
-                    class="alert-leave2">
+                <a href="#" title="Hjem" aria-label="logo link">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
             </div>
@@ -59,7 +57,7 @@ title: Example-aes-page-7.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user">
@@ -81,7 +79,7 @@ title: Example-aes-page-7.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#save"></use></svg>
+                        class="function-link"><svg class="icon-svg " ><use xlink:href="#save"></use></svg>
                         Gem kladde</a>
                 </div>
             </div>
@@ -211,7 +209,7 @@ title: Example-aes-page-7.html
                     <tbody>
                         <tr>
                             <td class="break-word w-percent-md-40">
-                                <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                <svg class="icon-svg " ><use xlink:href="#file"></use></svg>
                                 prn0237452_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">
                                 <div class="form-group">
@@ -234,7 +232,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (Frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -248,7 +246,7 @@ title: Example-aes-page-7.html
                         <tr>
                             <td
                                 class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                <svg class="icon-svg " ><use xlink:href="#file"></use></svg>
                                 sgn1023152_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">
                                 <div class="form-group">
@@ -271,7 +269,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (Frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-2-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-2-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -323,7 +321,7 @@ title: Example-aes-page-7.html
                     <tbody>
                         <tr>
                             <td class="break-word w-percent-md-40">
-                                <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                <svg class="icon-svg " ><use xlink:href="#file"></use></svg>
                                 dkf4903283_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">
                                 <div class="form-group">
@@ -346,7 +344,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-3-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-3-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -360,7 +358,7 @@ title: Example-aes-page-7.html
                         <tr>
                             <td
                                 class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                <svg class="icon-svg " ><use xlink:href="#file"></use></svg>
                                 kfo1127303_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">
                                 <div class="form-group">
@@ -383,7 +381,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-4-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-4-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -435,7 +433,7 @@ title: Example-aes-page-7.html
                     <tbody>
                         <tr>
                             <td class="break-word w-percent-md-40">
-                                <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                <svg class="icon-svg " ><use xlink:href="#file"></use></svg>
                                 ohb3428439_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">
                                 <div class="form-group">
@@ -458,7 +456,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (Frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-5-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-5-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>
@@ -472,7 +470,7 @@ title: Example-aes-page-7.html
                         <tr>
                             <td
                                 class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                <svg class="icon-svg " ><use xlink:href="#file"></use></svg>
                                 sdv5644382_attest.pdf</td>
                             <td class="mt-4 mt-lg-0">
                                 <div class="form-group">
@@ -495,7 +493,7 @@ title: Example-aes-page-7.html
                                             class="weight-normal">
                                             (Frivilligt)</span></label>
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-6-expanded" name="Kommentar" type="text" ></textarea>
+                                    <textarea class="form-input input-width-m" placeholder="" id="id-documentation-6-expanded" name="Kommentar" type="text" ></textarea>
                                 </div>
 
                             </td>

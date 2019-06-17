@@ -6,7 +6,7 @@ title: Date-input-datepicker.html
 <div class="container">
 
     <fieldset>
-        <div class="form-group ">
+        <div class="form-group">
             <label class="form-label icon-link">Indsendelsesfrist</label>
             <span class="form-hint">For eksempel: 05 12 2018</span>
             <span class="form-error-message"
@@ -16,36 +16,29 @@ title: Date-input-datepicker.html
                     <label class="form-label"
                         for="date_of_day_2">Dag</label>
                     <input class="form-input js-calendar-day-input"
-                        id="date_of_day_2" value="" type="tel" min="1"
-                        max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                        id="date_of_day_2" type="tel" min="1" max="31"
+                        maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
-                        title="Indskriv dag på månenden som tal" />
+                        title="Indskriv dag på månenden som tal">
                 </div>
                 <div class="form-group form-group-month">
                     <label class="form-label"
                         for="date_of_month_1">Måned</label>
                     <input class="form-input js-calendar-month-input"
-                        id="date_of_month_1" value="" type="tel" min="1"
-                        max="12" maxlength="2" pattern="^[0-9]{0,2}$"
+                        id="date_of_month_1" type="tel" min="1" max="12"
+                        maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
-                        title="Indskriv månedens nummer" />
+                        title="Indskriv månedens nummer">
                 </div>
                 <div class="form-group form-group-year ">
                     <label class="form-label"
                         for="date_of_year_3">År</label>
                     <input class="form-input js-calendar-year-input"
-                        id="date_of_year_3" value="" type="tel" min="1900"
+                        for="date_of_year_3" type="tel" min="1900"
                         max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
                         data-input-regex="^[0-9]{0,4}$"
-                        title="Indskriv årstal" />
+                        title="Indskriv årstal">
                 </div>
-
-                <button
-                    class="button-unstyled button-open-calendar js-calendar-datepicker">
-                    <span class="sr-only">Åben kalenderen</span>
-                    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#calendar"></use></svg>
-                </button>
-
             </div>
         </div>
     </fieldset>
