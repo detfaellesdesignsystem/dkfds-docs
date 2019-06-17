@@ -2168,7 +2168,7 @@
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-area"</span><span class="nt">&gt;</span>Tekstområde med
             label<span class="nt">&lt;/label&gt;</span>
 
-        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">rows=</span><span class="s">"5"</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-area"</span> <span class="na">name=</span><span class="s">"input-area"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="nt">&gt;&lt;/textarea&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-area"</span> <span class="na">name=</span><span class="s">"input-area"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="nt">&gt;&lt;/textarea&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
@@ -2178,7 +2178,7 @@
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
             <span class="na">id=</span><span class="s">"form-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Hjælpsom
             fejlbesked<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">rows=</span><span class="s">"5"</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">"input-error"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"form-error-message-input-error"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">"input-error"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"form-error-message-input-error"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;/div&gt;</span>
@@ -2819,7 +2819,7 @@
     <span class="c">&lt;!-- Start code: Indsendelsesfrist --&gt;</span>
 
     <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label icon-link"</span><span class="nt">&gt;</span>Indsendelsesfrist<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>For eksempel: 05 12 2018<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
@@ -2829,30 +2829,29 @@
                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                         <span class="na">for=</span><span class="s">"date_of_day_2"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span>
-                        <span class="na">id=</span><span class="s">"date_of_day_2"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span>
-                        <span class="na">max=</span><span class="s">"31"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
+                        <span class="na">id=</span><span class="s">"date_of_day_2"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span>
+                        <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv dag på månenden som tal"</span> <span class="nt">/&gt;</span>
+                        <span class="na">title=</span><span class="s">"Indskriv dag på månenden som tal"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                         <span class="na">for=</span><span class="s">"date_of_month_1"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-month-input"</span>
-                        <span class="na">id=</span><span class="s">"date_of_month_1"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span>
-                        <span class="na">max=</span><span class="s">"12"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
+                        <span class="na">id=</span><span class="s">"date_of_month_1"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span>
+                        <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span> <span class="nt">/&gt;</span>
+                        <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                         <span class="na">for=</span><span class="s">"date_of_year_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
-                        <span class="na">id=</span><span class="s">"date_of_year_3"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1900"</span>
+                        <span class="na">for=</span><span class="s">"date_of_year_3"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1900"</span>
                         <span class="na">max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv årstal"</span> <span class="nt">/&gt;</span>
+                        <span class="na">title=</span><span class="s">"Indskriv årstal"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
-
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
@@ -2862,43 +2861,40 @@
     <span class="c">&lt;!-- Start code: Datoangivelse med fejl --&gt;</span>
 
     <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group  form-error "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label icon-link"</span><span class="nt">&gt;</span>Datoangivelse med
                 fejl<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>For eksempel: 05 12 2018<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
-                <span class="na">id=</span><span class="s">"form-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Skriv en
-                kort fejlmeddelelse, der hjælper brugeren videre<span class="nt">&lt;/span&gt;</span>
+                <span class="na">id=</span><span class="s">"form-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;/span&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group mt-3"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                         <span class="na">for=</span><span class="s">"date_of_day_2"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span>
-                        <span class="na">id=</span><span class="s">"date_of_day_2"</span> <span class="na">value=</span><span class="s">"01"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span>
-                        <span class="na">max=</span><span class="s">"31"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
+                        <span class="na">id=</span><span class="s">"date_of_day_2"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span>
+                        <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv dag på månenden som tal"</span> <span class="nt">/&gt;</span>
+                        <span class="na">title=</span><span class="s">"Indskriv dag på månenden som tal"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                         <span class="na">for=</span><span class="s">"date_of_month_1"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-month-input"</span>
-                        <span class="na">id=</span><span class="s">"date_of_month_1"</span> <span class="na">value=</span><span class="s">"12"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span>
-                        <span class="na">max=</span><span class="s">"12"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
+                        <span class="na">id=</span><span class="s">"date_of_month_1"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span>
+                        <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span> <span class="nt">/&gt;</span>
+                        <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                         <span class="na">for=</span><span class="s">"date_of_year_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
-                        <span class="na">id=</span><span class="s">"date_of_year_3"</span> <span class="na">value=</span><span class="s">"2030"</span> <span class="na">type=</span><span class="s">"tel"</span>
-                        <span class="na">min=</span><span class="s">"1900"</span> <span class="na">max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span>
-                        <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
+                        <span class="na">for=</span><span class="s">"date_of_year_3"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1900"</span>
+                        <span class="na">max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv årstal"</span> <span class="nt">/&gt;</span>
+                        <span class="na">title=</span><span class="s">"Indskriv årstal"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
-
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
@@ -3033,8 +3029,8 @@
                     <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"telefon"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary mt-9"</span><span class="nt">&gt;</span> Gem oplysninger
-            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary mt-9"</span><span class="nt">&gt;</span> Gem
+                oplysninger<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/fieldset&gt;</span>
     <span class="nt">&lt;/form&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -3188,7 +3184,7 @@
                     <span class="nt">&lt;/legend&gt;</span>
 
                     <span class="nt">&lt;fieldset&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                             <span class="nt">&lt;label</span>
                                 <span class="na">class=</span><span class="s">"form-label icon-link"</span><span class="nt">&gt;</span>Indsendelsesfrist<span class="nt">&lt;/label&gt;</span>
                             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>For eksempel: 05 12
@@ -3202,38 +3198,34 @@
                                         <span class="na">for=</span><span class="s">"date_of_day_2"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
                                     <span class="nt">&lt;input</span>
                                         <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span>
-                                        <span class="na">id=</span><span class="s">"date_of_day_2"</span> <span class="na">value=</span><span class="s">""</span>
-                                        <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span>
-                                        <span class="na">maxlength=</span><span class="s">"2"</span>
+                                        <span class="na">id=</span><span class="s">"date_of_day_2"</span> <span class="na">type=</span><span class="s">"tel"</span>
+                                        <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span> <span class="na">maxlength=</span><span class="s">"2"</span>
                                         <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
                                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                                        <span class="na">title=</span><span class="s">"Indskriv dag på månenden som tal"</span> <span class="nt">/&gt;</span>
+                                        <span class="na">title=</span><span class="s">"Indskriv dag på månenden som tal"</span><span class="nt">&gt;</span>
                                 <span class="nt">&lt;/div&gt;</span>
                                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
                                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                                         <span class="na">for=</span><span class="s">"date_of_month_1"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
                                     <span class="nt">&lt;input</span>
                                         <span class="na">class=</span><span class="s">"form-input js-calendar-month-input"</span>
-                                        <span class="na">id=</span><span class="s">"date_of_month_1"</span> <span class="na">value=</span><span class="s">""</span>
-                                        <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span>
-                                        <span class="na">maxlength=</span><span class="s">"2"</span>
+                                        <span class="na">id=</span><span class="s">"date_of_month_1"</span> <span class="na">type=</span><span class="s">"tel"</span>
+                                        <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span> <span class="na">maxlength=</span><span class="s">"2"</span>
                                         <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
                                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                                        <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span> <span class="nt">/&gt;</span>
+                                        <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span><span class="nt">&gt;</span>
                                 <span class="nt">&lt;/div&gt;</span>
                                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
                                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
                                         <span class="na">for=</span><span class="s">"date_of_year_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
                                     <span class="nt">&lt;input</span>
                                         <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
-                                        <span class="na">id=</span><span class="s">"date_of_year_3"</span> <span class="na">value=</span><span class="s">""</span>
-                                        <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1900"</span> <span class="na">max=</span><span class="s">"3000"</span>
-                                        <span class="na">maxlength=</span><span class="s">"4"</span>
+                                        <span class="na">for=</span><span class="s">"date_of_year_3"</span> <span class="na">type=</span><span class="s">"tel"</span>
+                                        <span class="na">min=</span><span class="s">"1900"</span> <span class="na">max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span>
                                         <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
                                         <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
-                                        <span class="na">title=</span><span class="s">"Indskriv årstal"</span> <span class="nt">/&gt;</span>
+                                        <span class="na">title=</span><span class="s">"Indskriv årstal"</span><span class="nt">&gt;</span>
                                 <span class="nt">&lt;/div&gt;</span>
-
                             <span class="nt">&lt;/div&gt;</span>
                         <span class="nt">&lt;/div&gt;</span>
                     <span class="nt">&lt;/fieldset&gt;</span>
@@ -3272,8 +3264,8 @@
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/fieldset&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary mt-9"</span><span class="nt">&gt;</span> Gem oplysninger
-            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary mt-9"</span><span class="nt">&gt;</span> Gem
+                oplysninger<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/fieldset&gt;</span>
     <span class="nt">&lt;/form&gt;</span>
 <span class="nt">&lt;/div&gt;</span>

@@ -1731,8 +1731,8 @@
   <div id="code-tooltip-button" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
-        <span class="na">title=</span><span class="s">"Dette er et tooltip"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
+        <span class="na">data-title=</span><span class="s">"Dette er et tooltip"</span><span class="nt">&gt;</span>
         Knap med tooltip
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til
             screenreaders<span class="nt">&lt;/span&gt;</span>
@@ -1767,8 +1767,8 @@
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-8"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"popover js-tooltip"</span>
-        <span class="na">data-tippy-trigger=</span><span class="s">"click"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
-        <span class="na">title=</span><span class="s">"Dette er en hjælpetekst i en popover"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#help-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span</span>
+        <span class="na">data-tooltip-trigger=</span><span class="s">"click"</span> <span class="na">data-tooltip-position=</span><span class="s">"top"</span>
+        <span class="na">data-title=</span><span class="s">"Dette er en hjælpetekst i en popover"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#help-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span</span>
             <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
             popover<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1800,8 +1800,8 @@
   <div id="code-tooltip-icon" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"js-tooltip"</span> <span class="na">role=</span><span class="s">"tooltip"</span>
-        <span class="na">title=</span><span class="s">"Dette er en hjælpetekst i en popover"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#help-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span> <span class="na">class=</span><span class="s">"js-tooltip"</span>
+        <span class="na">data-title=</span><span class="s">"Dette er en hjælpetekst i en popover"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#help-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span</span>
             <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
             popover<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1835,27 +1835,15 @@
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container py-8"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Placering: top --&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
-        <span class="na">data-tippy-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Top tooltip"</span><span class="nt">&gt;</span>Top <span class="nt">&lt;span</span>
+        <span class="na">data-tooltip-position=</span><span class="s">"top"</span> <span class="na">data-title=</span><span class="s">"Top tooltip"</span><span class="nt">&gt;</span>Top <span class="nt">&lt;span</span>
             <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
             top<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
 
     <span class="c">&lt;!-- Placering: bund --&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
-        <span class="na">data-tippy-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Bund tooltip"</span><span class="nt">&gt;</span>Bund <span class="nt">&lt;span</span>
+        <span class="na">data-tooltip-position=</span><span class="s">"bottom"</span> <span class="na">data-title=</span><span class="s">"Bund tooltip"</span><span class="nt">&gt;</span>Bund <span class="nt">&lt;span</span>
             <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
             bottom<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-
-    <span class="c">&lt;!-- Placering: venstre --&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
-        <span class="na">data-tippy-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Venstre tooltip"</span><span class="nt">&gt;</span>Venstre <span class="nt">&lt;span</span>
-            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
-            venstre<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
-
-    <span class="c">&lt;!-- Placering: højre --&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-tooltip"</span>
-        <span class="na">data-tippy-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Højre tooltip"</span><span class="nt">&gt;</span>Højre <span class="nt">&lt;span</span>
-            <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dette er tooltipteksten til screenreaders,
-            højre<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
