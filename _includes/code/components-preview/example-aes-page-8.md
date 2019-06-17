@@ -179,111 +179,125 @@ title: Example-aes-page-8.html
         </div>
     </div>
 
-    <h1>Tilføj kommentarer til sagen</h1>
-    <div class="mt-0">
+    <div class="form-group mt-0">
+        <fieldset>
+            <legend>
+                <h1>Tilføj kommentarer til sagen</h1>
+            </legend>
+            <ul class="nobullet-list">
+                <li>
 
-        <div class="form-group ">
-            <input id="id-comments-1" type="checkbox"
-                name="Faktuelle oplysninger" value="Faktuelle oplysninger"
-                class="form-checkbox  checkbox-large js-checkbox-toggle-content"
-                data-js-target='#collapse-check'
-                aria-controls='collapse-check' aria-expanded='false'>
-            <label for="id-comments-1" class="">Faktuelle
-                oplysninger</label>
-        </div>
+                    <input id="id-comments-1" type="checkbox"
+                        name="Faktuelle oplysninger"
+                        value="Faktuelle oplysninger"
+                        class="form-checkbox  checkbox-large js-checkbox-toggle-content"
+                        data-js-target='#collapse-check'
+                        aria-controls='collapse-check'
+                        aria-expanded='false' />
+                    <label for="id-comments-1" class="">Faktuelle
+                        oplysninger</label>
 
-        <div id="collapse-check" aria-hidden="true"
-            class="box-border-l collapsed">
-            <div class="py-4">
+                    <div id="collapse-check" aria-hidden="true"
+                        class="box-border-l collapsed">
+                        <div class="py-4">
 
-                <div class="form-group">
-                    <label class="form-label "
-                        for="id-comment-1-expanded">Kommentar</label>
+                            <div class="form-group">
+                                <label class="form-label "
+                                    for="id-comment-1-expanded">Kommentar</label>
 
-                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-1-expanded" name="Kommentar" type="text" ></textarea>
-                </div>
+                                <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-1-expanded" name="Kommentar" type="text" ></textarea>
+                            </div>
 
-            </div>
-        </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mt-3">
+
+                        <input id="id-comments-2" type="checkbox"
+                            name="Spørgsmål til AES"
+                            value="Spørgsmål til AES"
+                            class="form-checkbox  checkbox-large js-checkbox-toggle-content"
+                            data-js-target='#collapse-check1'
+                            aria-controls='collapse-check'
+                            aria-expanded='false' />
+                        <label for="id-comments-2" class="">Spørgsmål til
+                            AES</label>
+
+                        <div id="collapse-check1" aria-hidden="true"
+                            class="box-border-l collapsed">
+                            <div class="py-4">
+
+                                <div class="form-group">
+                                    <label class="form-label "
+                                        for="id-comment-2-expanded">Kommentar</label>
+
+                                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-2-expanded" name="Kommentar" type="text" ></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mt-3">
+
+                        <input id="id-comments-3" type="checkbox"
+                            name="Instruks til AES"
+                            value="Instruks til AES"
+                            class="form-checkbox  checkbox-large js-checkbox-toggle-content"
+                            data-js-target='#collapse-check2'
+                            aria-controls='collapse-check'
+                            aria-expanded='false' />
+                        <label for="id-comments-3" class="">Instruks til
+                            AES</label>
+
+                        <div id="collapse-check2" aria-hidden="true"
+                            class="box-border-l collapsed">
+                            <div class="py-4">
+
+                                <div class="form-group">
+                                    <label class="form-label "
+                                        for="id-comment-3-expanded">Kommentar</label>
+
+                                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-3-expanded" name="Kommentar" type="text" ></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mt-3">
+
+                        <input id="id-comments-4" type="checkbox"
+                            name="Særlige forsikringsbetingelser"
+                            value="Særlige forsikringsbetingelser"
+                            class="form-checkbox  checkbox-large js-checkbox-toggle-content"
+                            data-js-target='#collapse-check3'
+                            aria-controls='collapse-check'
+                            aria-expanded='false' />
+                        <label for="id-comments-4" class="">Særlige
+                            forsikringsbetingelser</label>
+
+                        <div id="collapse-check3" aria-hidden="true"
+                            class="box-border-l collapsed">
+                            <div class="py-4">
+
+                                <div class="form-group">
+                                    <label class="form-label "
+                                        for="id-comment-4-expanded">Kommentar</label>
+
+                                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-4-expanded" name="Kommentar" type="text" ></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
     </div>
-    <div class="mt-3">
-
-        <div class="form-group ">
-            <input id="id-comments-2" type="checkbox"
-                name="Spørgsmål til AES" value="Spørgsmål til AES"
-                class="form-checkbox  checkbox-large js-checkbox-toggle-content"
-                data-js-target='#collapse-check1'
-                aria-controls='collapse-check' aria-expanded='false'>
-            <label for="id-comments-2" class="">Spørgsmål til AES</label>
-        </div>
-
-        <div id="collapse-check1" aria-hidden="true"
-            class="box-border-l collapsed">
-            <div class="py-4">
-
-                <div class="form-group">
-                    <label class="form-label "
-                        for="id-comment-2-expanded">Kommentar</label>
-
-                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-2-expanded" name="Kommentar" type="text" ></textarea>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="mt-3">
-
-        <div class="form-group ">
-            <input id="id-comments-3" type="checkbox"
-                name="Instruks til AES" value="Instruks til AES"
-                class="form-checkbox  checkbox-large js-checkbox-toggle-content"
-                data-js-target='#collapse-check2'
-                aria-controls='collapse-check' aria-expanded='false'>
-            <label for="id-comments-3" class="">Instruks til AES</label>
-        </div>
-
-        <div id="collapse-check2" aria-hidden="true"
-            class="box-border-l collapsed">
-            <div class="py-4">
-
-                <div class="form-group">
-                    <label class="form-label "
-                        for="id-comment-3-expanded">Kommentar</label>
-
-                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-3-expanded" name="Kommentar" type="text" ></textarea>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="mt-3">
-
-        <div class="form-group ">
-            <input id="id-comments-4" type="checkbox"
-                name="Særlige forsikringsbetingelser"
-                value="Særlige forsikringsbetingelser"
-                class="form-checkbox  checkbox-large js-checkbox-toggle-content"
-                data-js-target='#collapse-check3'
-                aria-controls='collapse-check' aria-expanded='false'>
-            <label for="id-comments-4" class="">Særlige
-                forsikringsbetingelser</label>
-        </div>
-
-        <div id="collapse-check3" aria-hidden="true"
-            class="box-border-l collapsed">
-            <div class="py-4">
-
-                <div class="form-group">
-                    <label class="form-label "
-                        for="id-comment-4-expanded">Kommentar</label>
-
-                    <textarea class="form-input input-width-m" rows="3" placeholder="" id="id-comment-4-expanded" name="Kommentar" type="text" ></textarea>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <nav class="page-navigation">
         <a href="/pages/eksempler/AES-erstatningssag/aes-9"
             class="button button-primary">Næste</a>

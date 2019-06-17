@@ -102,35 +102,19 @@
       <div class="mt-5">
         {{select("Vælg uddannelse", "select-education", "Vælg uddannelse", "input-width-m", "- Vælg -", "", false)}}
       </div>
-      <div class="mt-5">
-        <label class="form-label">Sagen handler om</label>
+      <div class="form-group">
+          <fieldset>
+            <legend class="form-label">Sagen handler om</legend>
+            <ul class="nobullet-list">
+              <li>
+                {{radiobutton("id-view1", "Vælg visning", "Elevpoint", false, false, "Elevpoint", "", false, false)}}
+              </li>
+              <li>
+                {{radiobutton("id-view2", "Vælg visning", "Aftaleperiode", false, true, "Aftaleperiode", "", false, false)}}
+              </li>
+            </ul>
+          </fieldset>
       </div>
-      <div class="mt-3">
-        {{radiobutton("id-view1", "Vælg visning", "Elevpoint", false, false, "Elevpoint", "", false, false)}}
-      </div>
-      <div class="mt-0">
-        {{radiobutton("id-view2", "Vælg visning", "Aftaleperiode", false, true, "Aftaleperiode", "", false, false)}}
-      </div>
-      <!--<div class="row">
-        <div class="col-12">
-         <table class="mt-5 table table--zebra table--lines w-percent-100" id="js-datatable-example-praktikplads">
-          <thead>
-            <tr>
-              <th>Elev</th>
-              <th>Fødselsdato</th>
-              <th>Uddannelse</th>
-              <th>Uddannelsesvægt</th>
-              <th>Erhvervsuddannede medarbejdere</th>
-              <th>Beregnede erhvervsuddannede</th>
-            </tr>
-          </thead>
-          <tbody>
-
-          </tbody>
-        </table>
-        </div>
-      </div>-->
-
     </section>
   </main>
 {% endblock %}

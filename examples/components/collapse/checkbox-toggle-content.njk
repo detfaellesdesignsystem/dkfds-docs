@@ -1,19 +1,29 @@
 {% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
 
 <div class="container">
-  {{ checkbox("id-checkbox1", "Name", "Value", false, false, "Checkbox viser indhold", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'") }}
-  <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
-    <div class="py-4">
-      <p>Dette indhold bliver vist når checkboxen er valgt.</p>
+    <div class="form-group">
+        <fieldset>
+            <legend><h2 class="h4">Vælg fra listen</h2></legend>
+            <ul class="nobullet-list">
+                <li>
+                {{ checkbox("id-checkbox1", "Name", "Value", false, false, "Checkbox viser indhold", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'") }}
+                <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
+                    <div class="py-4">
+                    <p>Dette indhold bliver vist når checkboxen er valgt.</p>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    {{ checkbox("id-checkbox2", "Name2", "Value", false, true, "Checkbox viser indhold", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check2' aria-controls='collapse-check2' aria-expanded='false'") }}
+                    <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                          <p>Dette indhold bliver vist når checkboxen er valgt.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
     </div>
-  </div>
-
-  {{ checkbox("id-checkbox2", "Name2", "Value", false, true, "Checkbox viser indhold", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check2' aria-controls='collapse-check2' aria-expanded='false'") }}
-  <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
-    <div class="py-4">
-      <p>Dette indhold bliver vist når checkboxen er valgt.</p>
-    </div>
-  </div>
 </div>
 
 
