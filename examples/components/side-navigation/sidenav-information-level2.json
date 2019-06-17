@@ -16,22 +16,7 @@
           },
           {
             "text": "Child link",
-            "current": true,
-            "links": [
-              {
-                "text": "Grandchild link"
-              },
-              {
-                "text": "Grandchild link"
-              },
-              {
-                "text": "Grandchild link",
-                "active": true
-              },
-              {
-                "text": "Grandchild link"
-              }
-            ]
+            "active": true
           },
           {
             "text": "Child link"
