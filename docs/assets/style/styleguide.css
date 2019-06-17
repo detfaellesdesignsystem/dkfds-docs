@@ -1672,13 +1672,13 @@ small, .small-text {
   color: #1a1a1a;
   text-transform: none; }
 
-/*h1, .h1, //Removed this styling, it make for a messy margin handling. 
+/*h1, .h1, //Removed this styling, it make for a messy margin handling.
 h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6, 
-p{ 
+h6, .h6,
+p{
   &:first-child{
     margin-top: 0;
   }
@@ -1687,11 +1687,8 @@ p{
   }
 }*/
 h1, .h1 {
-  margin-top: 3rem;
-  margin-bottom: 1.6rem; }
-  @media (min-width: 768px) {
-    h1, .h1 {
-      margin-top: 4rem; } }
+  margin-bottom: 1.6rem;
+  margin-top: 0px; }
 
 h2, .h2 {
   margin-top: 3rem;
@@ -5358,7 +5355,8 @@ hr {
   .accordion-content[aria-hidden=true] {
     display: none; }
 
-.accordion-button[aria-describedby="error-message"] {
+.accordion-button[aria-describedby="error-message"],
+.accordion-button.accordion-error {
   border: solid 2px #CC0000 !important; }
 
 .accordion-button[aria-expanded=true] {

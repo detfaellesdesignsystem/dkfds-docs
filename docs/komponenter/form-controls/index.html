@@ -1833,7 +1833,7 @@
           <p class="h6 m-0">
             Komponenter
           </p>
-          <h1 class="mt-0" id="formular-elementer">Formular-elementer</h1>
+          <h1 id="formular-elementer">Formular-elementer</h1>
           
             <p class="font-lead">Du kan bruge formularelementerne til at opbygge blanketter til din selvbetjeningsløsning.</p>
           
@@ -2335,136 +2335,120 @@
   <div id="code-checkbox" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Lille tjekboks<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Lille tjekboks<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Unchecked"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"unchecked"</span>
-                        <span class="na">value=</span><span class="s">"unchecked"</span> <span class="na">class=</span><span class="s">"form-checkbox   "</span><span class="nt">&gt;</span>
+                        <span class="na">value=</span><span class="s">"unchecked"</span> <span class="na">class=</span><span class="s">"form-checkbox   "</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Unchecked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ikke-udfyldt
                         tjekboks<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checked"</span>
-                        <span class="na">value=</span><span class="s">"checked"</span> <span class="na">class=</span><span class="s">"form-checkbox   "</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                        <span class="na">value=</span><span class="s">"checked"</span> <span class="na">class=</span><span class="s">"form-checkbox   "</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Udfyldt tjekboks<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"disabled"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"disabled"</span>
-                        <span class="na">value=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"form-checkbox   "</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+                        <span class="na">value=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">"form-checkbox   "</span>
+                        <span class="na">disabled</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Inaktiv ikke-udfyldt
                         tjekboks (disabled)<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"disabled-checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
                         <span class="na">name=</span><span class="s">"disabled-checked"</span> <span class="na">value=</span><span class="s">"disabled-checked"</span>
-                        <span class="na">class=</span><span class="s">"form-checkbox   "</span> <span class="na">disabled</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox   "</span> <span class="na">disabled</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabled-checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Inaktiv udfyldt
                         tjekboks (disabled)<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"fokus"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Focus"</span>
-                        <span class="na">value=</span><span class="s">"fokus"</span> <span class="na">class=</span><span class="s">"form-checkbox focus  "</span><span class="nt">&gt;</span>
+                        <span class="na">value=</span><span class="s">"fokus"</span> <span class="na">class=</span><span class="s">"form-checkbox focus  "</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fokus"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ikke-udfyldt tjekboks i
                         fokus<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-        <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/fieldset&gt;</span>
-    <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Stor tjekboks (anbefalet)<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Stor tjekboks (anbefalet)<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Unchecked-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
                         <span class="na">name=</span><span class="s">"unchecked-large"</span> <span class="na">value=</span><span class="s">"unchecked-large"</span>
-                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Unchecked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor ikke-udfyldt
                         tjekboks<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
                         <span class="na">name=</span><span class="s">"checked-large"</span> <span class="na">value=</span><span class="s">"checked-large"</span>
-                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor udfyldt
                         tjekboks<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"disabled-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
                         <span class="na">name=</span><span class="s">"disabled-large"</span> <span class="na">value=</span><span class="s">"disabled-large"</span>
-                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabled-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor inaktiv
                         ikke-udfyldt tjekboks (disabled)<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"disabled-checked-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
                         <span class="na">name=</span><span class="s">"disabled-checked-large"</span>
                         <span class="na">value=</span><span class="s">"disabled-checked-large"</span>
                         <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="na">disabled</span>
-                        <span class="na">checked</span><span class="nt">&gt;</span>
+                        <span class="na">checked</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabled-checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor
                         inaktiv udfyldt tjekboks (disabled)<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"fokus-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
                         <span class="na">name=</span><span class="s">"fokus-large"</span> <span class="na">value=</span><span class="s">"fokus-large"</span>
-                        <span class="na">class=</span><span class="s">"form-checkbox focus checkbox-large "</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox focus checkbox-large "</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fokus-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor ikke-udfyldt
                         tjekboks i fokus<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-        <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/fieldset&gt;</span>
-
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
@@ -2535,136 +2519,121 @@
   <div id="code-radiobutton" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Lille radioknap<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Lille radioknap<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"unchecked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"unchecked"</span>
-                        <span class="na">value=</span><span class="s">"truth"</span> <span class="na">class=</span><span class="s">"form-radio   "</span><span class="nt">&gt;</span>
+                        <span class="na">value=</span><span class="s">"truth"</span> <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"unchecked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ikke-udfyldt radioknap
                     <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Checked"</span>
-                        <span class="na">value=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                        <span class="na">value=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Udfyldt radioknap
                     <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Disabled"</span>
-                        <span class="na">value=</span><span class="s">"Disabled"</span> <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+                        <span class="na">value=</span><span class="s">"Disabled"</span> <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Inaktiv ikke-udfyldt
                         radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled-checked"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Disabled-checked"</span> <span class="na">value=</span><span class="s">"Disabled-checked"</span>
-                        <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">disabled</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">disabled</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Inaktiv udfyldt
                         radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Focus"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Focus"</span>
-                        <span class="na">value=</span><span class="s">"Focus"</span> <span class="na">class=</span><span class="s">"form-radio focus  "</span><span class="nt">&gt;</span>
+                        <span class="na">value=</span><span class="s">"Focus"</span> <span class="na">class=</span><span class="s">"form-radio focus  "</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Focus"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ikke-udfyldt radioknap i
                         fokus <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-        <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/fieldset&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 
-    <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Stor radioknap (anbefalet)<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Stor radioknap (anbefalet)<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Unchecked-large"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Unchecked-large"</span> <span class="na">value=</span><span class="s">"Unchecked-large"</span>
-                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Unchecked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor ikke-udfyldt
                         radioknap <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked-large"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Checked-large"</span> <span class="na">value=</span><span class="s">"Checked-large"</span>
-                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor udfyldt
                         radioknap <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled-large"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Disabled-large"</span> <span class="na">value=</span><span class="s">"Disabled-large"</span>
-                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor inaktiv
                         ikke-udfyldt radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled-checked-large"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Disabled-checked-large"</span>
                         <span class="na">value=</span><span class="s">"Disabled-checked-large"</span>
-                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">disabled</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">disabled</span>
+                        <span class="na">checked</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor
                         inaktiv udfyldt radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Focus-large"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Focus-large"</span>
                         <span class="na">value=</span><span class="s">"Focus-large"</span>
-                        <span class="na">class=</span><span class="s">"form-radio focus radio-large "</span><span class="nt">&gt;</span>
+                        <span class="na">class=</span><span class="s">"form-radio focus radio-large "</span> <span class="nt">/&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Focus-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor ikke-udfyldt
                         radioknap i fokus <span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
 
-        <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/fieldset&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
@@ -3104,24 +3073,20 @@
                     <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
 
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"kontakt-telefon"</span> <span class="na">type=</span><span class="s">"radio"</span>
-                                    <span class="na">name=</span><span class="s">"kontakt"</span> <span class="na">value=</span><span class="s">"kontakt-telefon"</span>
-                                    <span class="na">class=</span><span class="s">"form-radio  radio-large "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-telefon"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr.
-                                    telefon <span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"kontakt-telefon"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                                <span class="na">name=</span><span class="s">"kontakt"</span> <span class="na">value=</span><span class="s">"kontakt-telefon"</span>
+                                <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-telefon"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr.
+                                telefon <span class="nt">&lt;/label&gt;</span>
 
                         <span class="nt">&lt;/li&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
 
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"kontakt-email"</span> <span class="na">type=</span><span class="s">"radio"</span>
-                                    <span class="na">name=</span><span class="s">"kontakt"</span> <span class="na">value=</span><span class="s">"kontakt-email"</span>
-                                    <span class="na">class=</span><span class="s">"form-radio  radio-large "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-email"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr.
-                                    e-mail <span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"kontakt-email"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                                <span class="na">name=</span><span class="s">"kontakt"</span> <span class="na">value=</span><span class="s">"kontakt-email"</span>
+                                <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-email"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr. e-mail
+                            <span class="nt">&lt;/label&gt;</span>
 
                         <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;/ul&gt;</span>
@@ -3136,46 +3101,37 @@
                     <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
 
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"morgen"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                                    <span class="na">name=</span><span class="s">"tidspunkt[]"</span> <span class="na">value=</span><span class="s">"morgen"</span>
-                                    <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"morgen"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Om
-                                    morgenen<span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"morgen"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                                <span class="na">name=</span><span class="s">"tidspunkt[]"</span> <span class="na">value=</span><span class="s">"morgen"</span>
+                                <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"morgen"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Om
+                                morgenen<span class="nt">&lt;/label&gt;</span>
 
                         <span class="nt">&lt;/li&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
 
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"middag"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                                    <span class="na">name=</span><span class="s">"tidspunkt[]"</span> <span class="na">value=</span><span class="s">"middag"</span>
-                                    <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"middag"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ved
-                                    middagstid<span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"middag"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                                <span class="na">name=</span><span class="s">"tidspunkt[]"</span> <span class="na">value=</span><span class="s">"middag"</span>
+                                <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"middag"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ved
+                                middagstid<span class="nt">&lt;/label&gt;</span>
 
                         <span class="nt">&lt;/li&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
 
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"eftermiddag"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                                    <span class="na">name=</span><span class="s">"tidspunkt[]"</span> <span class="na">value=</span><span class="s">"eftermiddag"</span>
-                                    <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"eftermiddag"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Om
-                                    eftermiddagen<span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"eftermiddag"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                                <span class="na">name=</span><span class="s">"tidspunkt[]"</span> <span class="na">value=</span><span class="s">"eftermiddag"</span>
+                                <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"eftermiddag"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Om
+                                eftermiddagen<span class="nt">&lt;/label&gt;</span>
 
                         <span class="nt">&lt;/li&gt;</span>
                         <span class="nt">&lt;li&gt;</span>
 
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"aften"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                                    <span class="na">name=</span><span class="s">"tidspunkt[]"</span> <span class="na">value=</span><span class="s">"aften"</span>
-                                    <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"aften"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Om
-                                    aftenen<span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"aften"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                                <span class="na">name=</span><span class="s">"tidspunkt[]"</span> <span class="na">value=</span><span class="s">"aften"</span>
+                                <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"aften"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Om aftenen<span class="nt">&lt;/label&gt;</span>
 
                         <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;/ul&gt;</span>
@@ -3246,25 +3202,20 @@
                             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
                                 <span class="nt">&lt;li&gt;</span>
 
-                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"odense-ja"</span> <span class="na">type=</span><span class="s">"radio"</span>
-                                            <span class="na">name=</span><span class="s">"odense"</span> <span class="na">value=</span><span class="s">"odense-ja"</span>
-                                            <span class="na">class=</span><span class="s">"form-radio  radio-large "</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-ja"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ja
-                                        <span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"odense-ja"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                                        <span class="na">name=</span><span class="s">"odense"</span> <span class="na">value=</span><span class="s">"odense-ja"</span>
+                                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-ja"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ja
+                                    <span class="nt">&lt;/label&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
                                 <span class="nt">&lt;li&gt;</span>
 
-                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"odense-nej"</span> <span class="na">type=</span><span class="s">"radio"</span>
-                                            <span class="na">name=</span><span class="s">"odense"</span>
-                                            <span class="na">value=</span><span class="s">"odense-nej"</span>
-                                            <span class="na">class=</span><span class="s">"form-radio  radio-large "</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-nej"</span>
-                                            <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Nej <span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"odense-nej"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                                        <span class="na">name=</span><span class="s">"odense"</span> <span class="na">value=</span><span class="s">"odense-nej"</span>
+                                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-nej"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Nej
+                                    <span class="nt">&lt;/label&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
                             <span class="nt">&lt;/ul&gt;</span>
