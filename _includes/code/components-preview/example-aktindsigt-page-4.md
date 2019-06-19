@@ -81,12 +81,13 @@ title: Example-aktindsigt-page-4.html
 
 <main class="container page-container">
 
-    <div class="alert alert alert-success alert--show-icon" role="alert"
+    <div class="alert alert alert-success alert--show-icon " role="alert"
         aria-label="success">
         <div class="alert-body">
             <p class="alert-heading">Success</p>
             <p class="alert-text">Vi har modtaget dine oplysninger og vil
                 behandle ansøgningen hurtigst muligt</p>
+
         </div>
     </div>
 

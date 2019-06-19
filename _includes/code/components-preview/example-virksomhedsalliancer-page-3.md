@@ -130,7 +130,7 @@ title: Example-virksomhedsalliancer-page-3.html
 
     <h1>Statsstøtte</h1>
 
-    <div class="alert alert alert-info alert--paragraph" role="alert"
+    <div class="alert alert alert-info alert--paragraph " role="alert"
         aria-label="warning">
         <div class="alert-body">
             <p class="alert-text">Virksomheder må ikke modtage statsstøtte,
@@ -139,6 +139,7 @@ title: Example-virksomhedsalliancer-page-3.html
                 givet fra Eksportrådet er omfattet af de-minimis-reglerne
                 og de skal nævnes
                 nedenfor.<br><br>Hvis virksomheden juridisk er en del af en koncernstruktur (indenlandsk som udenlandsk), som tilsammen hæfter for de-minimis-støtte, oplyses det fulde beløb for hele koncernen. Se Statsstøttehåndbogen side 65-86, hvis du er i tvivl om, hvor meget af koncernen, der er omfattet.<br><br>Støtte fra eksportrådet i form af tilskud ydes i henhold til EU-reglerne for de-minimis-støtte, jf. Komissionernes forordning (EU) nr. 1407/2013 af 18. december 2013.</p>
+
         </div>
     </div>
 

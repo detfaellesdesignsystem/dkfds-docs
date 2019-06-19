@@ -163,7 +163,7 @@ title: Example-flytning-page-1.html
     </div>
     <div class="mb-8 mt-4">
 
-        <div class="alert alert alert-warning alert--show-icon alert--paragraph"
+        <div class="alert alert alert-warning alert--show-icon alert--paragraph "
             role="alert" aria-label="warning">
             <div class="alert-body">
                 <p class="alert-heading">Skal din nye adresse beskyttes fra
@@ -174,6 +174,7 @@ title: Example-flytning-page-1.html
                     anmelder flytning. Ellers risikerer du, at navne- og
                     adressebeskyttelsen ikke er gældende fra første dag på
                     din nye adresse.</p>
+
             </div>
         </div>
 

@@ -81,20 +81,22 @@ title: Example-aes-page-10.html
 
 <main class="container page-container">
 
-    <div class="alert alert alert-success alert--show-icon" role="alert"
+    <div class="alert alert alert-success alert--show-icon " role="alert"
         aria-label="success">
         <div class="alert-body">
             <p class="alert-heading">Sagen er sendt til AES</p>
             <p class="alert-text"></p>
+
         </div>
     </div>
 
-    <div class="alert alert alert-warning alert--show-icon" role="alert"
+    <div class="alert alert alert-warning alert--show-icon " role="alert"
         aria-label="warning">
         <div class="alert-body">
             <p class="alert-heading">Husk betaling</p>
             <p class="alert-text">Gebyret skal indsættes på vores konto i
                 banken</p>
+
         </div>
     </div>
 
