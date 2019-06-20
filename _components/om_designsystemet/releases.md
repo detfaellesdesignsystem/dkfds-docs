@@ -6,8 +6,8 @@ category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for dkfds
 subnav:
-- text: Version 4.1.2
-  href: '#version-412'
+- text: Version 4.2.0
+  href: '#version-420'
 - text: Version 4.1.1
   href: '#version-411'
 - text: Version 4.1.0
@@ -43,11 +43,11 @@ subnav:
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
 
-<h2 class="mb-0" id="version-412">Version 4.1.2</h2>
+<h2 class="mb-0" id="version-420">Version 4.2.0</h2>
 <p class="small-text mt-0">20-06-2019</p>
 <ul>
     <li>Fjernet margin-top på h1.</li>
-    <li>Fjernet form-group div fra li i radioknap og tjekboks liste (Løser udfordringen med at JAWS skærmlæseren læser skrivebeskyttet ved hver tjekboks eller radioknap).</li>
+    <li><label class="color-info badge badge-small mr-3">Change</label>Fjernet form-group div fra li i radioknap og tjekboks liste (Løser udfordringen med at JAWS skærmlæseren læser skrivebeskyttet ved hver tjekboks eller radioknap).</li>
     <li>Fikset styling i niveau 4 i sidemenuen på mobil.</li>
     <li>Fikset tilgængelighed på responsiv tringuide - aria-hidden opdateres nu automatisk alt efter status på komponenten.</li>
     <li>Responsiv tabel er  nu sat til display:block på små skærme således at skærmlæsere ikke tror det er en tom tabel.</li>
