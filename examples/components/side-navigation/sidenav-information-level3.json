@@ -16,7 +16,22 @@
           },
           {
             "text": "Child link",
-            "active": true
+            "current": true,
+            "links": [
+              {
+                "text": "Grandchild link"
+              },
+              {
+                "text": "Grandchild link"
+              },
+              {
+                "text": "Grandchild link",
+                "active": true
+              },
+              {
+                "text": "Grandchild link"
+              }
+            ]
           },
           {
             "text": "Child link"

@@ -8,7 +8,7 @@ title: Accordion.html
     <ul class="accordion ">
 
         <li>
-            <button class="accordion-button" aria-expanded="false"
+            <button class="accordion-button " aria-expanded="false"
                 aria-controls="a1">
                 Lorem ipsum dolor sit amet
                 <span class="accordion-icon ">
@@ -18,6 +18,7 @@ title: Accordion.html
             </button>
 
             <div id="a1" aria-hidden="true" class="accordion-content">
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -27,8 +28,9 @@ title: Accordion.html
         </li>
 
         <li>
-            <button class="accordion-button" aria-expanded="true"
-                aria-describedby="error-message" aria-controls="a2">
+            <button class="accordion-button  accordion-error "
+                aria-expanded="true" aria-describedby="a2"
+                aria-controls="a2">
                 Consectetur adipiscing elit
                 <span class="accordion-icon ">
                     <span class="icon_text">Fejl</span>
@@ -37,6 +39,17 @@ title: Accordion.html
             </button>
 
             <div id="a2" aria-hidden="false" class="accordion-content">
+
+                <div class="alert alert-error" role="alert"
+                    aria-label="Fejlbesked i accordion">
+                    <div class="alert-body">
+                        <p class="alert-text">Sed ut perspiciatis unde
+                            omnis iste natus
+                            error sit voluptatem accusantium doloremque
+                            laudantium.</p>
+                    </div>
+                </div>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -46,7 +59,7 @@ title: Accordion.html
         </li>
 
         <li>
-            <button class="accordion-button" aria-expanded="false"
+            <button class="accordion-button " aria-expanded="false"
                 aria-controls="a3">
                 Sed do eiusmod tempor
                 <span class="accordion-icon ">
@@ -56,6 +69,7 @@ title: Accordion.html
             </button>
 
             <div id="a3" aria-hidden="true" class="accordion-content">
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -65,7 +79,7 @@ title: Accordion.html
         </li>
 
         <li>
-            <button class="accordion-button" aria-expanded="false"
+            <button class="accordion-button " aria-expanded="false"
                 aria-controls="a4">
                 Labore et dolore magna
                 <span class="accordion-icon ">
@@ -75,6 +89,7 @@ title: Accordion.html
             </button>
 
             <div id="a4" aria-hidden="true" class="accordion-content">
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -84,11 +99,12 @@ title: Accordion.html
         </li>
 
         <li>
-            <button class="accordion-button" aria-expanded="false"
+            <button class="accordion-button " aria-expanded="false"
                 aria-controls="a5">
                 Ut enim ad minim veniam</button>
 
             <div id="a5" aria-hidden="true" class="accordion-content">
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud

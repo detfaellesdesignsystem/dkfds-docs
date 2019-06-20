@@ -47,61 +47,13 @@ title: Sidenav-information-level2.html
                     </li>
 
                     <li>
-                        <a href="" class="current">
+                        <a href="" class="active">
 
                             <div class="d-inline-block">
                                 Child link
 
                             </div>
                         </a>
-
-                        <ul class="sidenav-sub_list">
-
-                            <li>
-                                <a href="">
-
-                                    <div class="d-inline-block">
-                                        Grandchild link
-
-                                    </div>
-                                </a>
-
-                            </li>
-
-                            <li>
-                                <a href="">
-
-                                    <div class="d-inline-block">
-                                        Grandchild link
-
-                                    </div>
-                                </a>
-
-                            </li>
-
-                            <li>
-                                <a href="" class="active">
-
-                                    <div class="d-inline-block">
-                                        Grandchild link
-
-                                    </div>
-                                </a>
-
-                            </li>
-
-                            <li>
-                                <a href="">
-
-                                    <div class="d-inline-block">
-                                        Grandchild link
-
-                                    </div>
-                                </a>
-
-                            </li>
-
-                        </ul>
 
                     </li>
 

@@ -1710,7 +1710,7 @@
           <p class="h6 m-0">
             Komponenter
           </p>
-          <h1 class="mt-0" id="skjul-og-vis-collapse">Skjul og vis (Collapse)</h1>
+          <h1 id="skjul-og-vis-collapse">Skjul og vis (Collapse)</h1>
           
 
           <p>Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.</p>
@@ -1734,58 +1734,65 @@
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container js-radio-toggle-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;legend&gt;</span>Vælg en radioknap<span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg en radioknap<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
 
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio1"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
-                <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">checked</span>
-                <span class="na">data-js-target=</span><span class="s">'#collapse-radio1'</span>
-                <span class="na">aria-controls=</span><span class="s">'collapse-radio1'</span> <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold <span class="nt">&lt;span</span>
-                    <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
-                    herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio1"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
+                    <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">checked</span>
+                    <span class="na">data-js-target=</span><span class="s">'#collapse-radio1'</span>
+                    <span class="na">aria-controls=</span><span class="s">'collapse-radio1'</span>
+                    <span class="na">aria-expanded=</span><span class="s">'false'</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
+                        herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
-        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-            <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
+                    <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"textinput1"</span><span class="nt">&gt;</span>Inputfelt
-                        med label<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span>
+                                <span class="na">for=</span><span class="s">"textinput1"</span><span class="nt">&gt;</span>Inputfelt med
+                                label<span class="nt">&lt;/label&gt;</span>
 
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
-                        <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"textinput1"</span> <span class="na">value=</span><span class="s">""</span>
-                        <span class="na">name=</span><span class="s">"text1"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
+                                <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"textinput1"</span> <span class="na">value=</span><span class="s">""</span>
+                                <span class="na">name=</span><span class="s">"text1"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+
+                    <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
 
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
+                    <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span>
+                    <span class="na">data-js-target=</span><span class="s">'#collapse-radio2'</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
+                        herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
-                <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span>
-                <span class="na">data-js-target=</span><span class="s">'#collapse-radio2'</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold <span class="nt">&lt;span</span>
-                    <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
-                    herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
+                    <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
 
-        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-            <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span>
+                                <span class="na">for=</span><span class="s">"textinput2"</span><span class="nt">&gt;</span>Inputfelt med
+                                label<span class="nt">&lt;/label&gt;</span>
 
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"textinput2"</span><span class="nt">&gt;</span>Inputfelt
-                        med label<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
+                                <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"textinput2"</span> <span class="na">value=</span><span class="s">""</span>
+                                <span class="na">name=</span><span class="s">"text2"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
 
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
-                        <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"textinput2"</span> <span class="na">value=</span><span class="s">""</span>
-                        <span class="na">name=</span><span class="s">"text2"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
-
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
@@ -1864,35 +1871,52 @@
   <div id="code-checkbox-toggle-content" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend&gt;</span>
+                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg fra listen<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox1"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name"</span> <span class="na">value=</span><span class="s">"Value"</span>
-            <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large js-checkbox-toggle-content"</span>
-            <span class="na">data-js-target=</span><span class="s">'#collapse-check1'</span>
-            <span class="na">aria-controls=</span><span class="s">'collapse-check1'</span> <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-checkbox1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checkbox viser indhold<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox1"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name"</span>
+                        <span class="na">value=</span><span class="s">"Value"</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large js-checkbox-toggle-content"</span>
+                        <span class="na">data-js-target=</span><span class="s">'#collapse-check1'</span>
+                        <span class="na">aria-controls=</span><span class="s">'collapse-check1'</span>
+                        <span class="na">aria-expanded=</span><span class="s">'false'</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-checkbox1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checkbox viser
+                        indhold<span class="nt">&lt;/label&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-        <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når checkboxen er valgt.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
+                        <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når checkboxen er
+                                valgt.<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group "</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox2"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name2"</span> <span class="na">value=</span><span class="s">"Value"</span>
-            <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large js-checkbox-toggle-content"</span>
-            <span class="na">checked</span> <span class="na">data-js-target=</span><span class="s">'#collapse-check2'</span>
-            <span class="na">aria-controls=</span><span class="s">'collapse-check2'</span> <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-checkbox2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checkbox viser indhold<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox2"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name2"</span>
+                        <span class="na">value=</span><span class="s">"Value"</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large js-checkbox-toggle-content"</span>
+                        <span class="na">checked</span> <span class="na">data-js-target=</span><span class="s">'#collapse-check2'</span>
+                        <span class="na">aria-controls=</span><span class="s">'collapse-check2'</span>
+                        <span class="na">aria-expanded=</span><span class="s">'false'</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-checkbox2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checkbox viser
+                        indhold<span class="nt">&lt;/label&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-        <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når checkboxen er valgt.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
+                        <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når checkboxen er
+                                valgt.<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>

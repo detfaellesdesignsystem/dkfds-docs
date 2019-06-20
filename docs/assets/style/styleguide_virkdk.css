@@ -1677,13 +1677,13 @@ small, .small-text {
   color: #1a1a1a;
   text-transform: none; }
 
-/*h1, .h1, //Removed this styling, it make for a messy margin handling. 
+/*h1, .h1, //Removed this styling, it make for a messy margin handling.
 h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6, 
-p{ 
+h6, .h6,
+p{
   &:first-child{
     margin-top: 0;
   }
@@ -1692,11 +1692,8 @@ p{
   }
 }*/
 h1, .h1 {
-  margin-top: 3rem;
-  margin-bottom: 1.6rem; }
-  @media (min-width: 768px) {
-    h1, .h1 {
-      margin-top: 4rem; } }
+  margin-bottom: 1.6rem;
+  margin-top: 0px; }
 
 h2, .h2 {
   margin-top: 3rem;
@@ -5197,26 +5194,28 @@ input.input-char-27, select.input-char-27, textarea.input-char-27 {
   .table.table--zebra.table--borderless tr:last-child td {
     border-bottom-color: transparent; }
   @media (max-width: 767px) {
-    .table.table--responsive-headers thead {
-      display: none; }
-    .table.table--responsive-headers tr {
-      border-bottom: 1px solid #BFBFBF; }
-      .table.table--responsive-headers tr:last-child {
-        border-bottom: 0; }
-    .table.table--responsive-headers tr td, .table.table--responsive-headers tr th {
-      display: block;
-      border: none !important; }
-      .table.table--responsive-headers tr td[data-title]:not([data-title=""]):before, .table.table--responsive-headers tr th[data-title]:not([data-title=""]):before {
-        content: attr(data-title);
-        text-align: left;
+    .table.table--responsive-headers {
+      display: block; }
+      .table.table--responsive-headers thead {
+        display: none; }
+      .table.table--responsive-headers tr {
+        border-bottom: 1px solid #BFBFBF; }
+        .table.table--responsive-headers tr:last-child {
+          border-bottom: 0; }
+      .table.table--responsive-headers tr td, .table.table--responsive-headers tr th {
         display: block;
-        font-weight: 600; }
-    .table.table--responsive-headers.table--borderless tbody tr:first-child {
-      border-top: solid 1px #BFBFBF; }
-    .table.table--responsive-headers.table--borderless tbody tr:last-child {
-      border-bottom: solid 1px #BFBFBF; }
-    .table.table--responsive-headers.table--borderless tbody tr td:first-child, .table.table--responsive-headers.table--borderless tbody tr th:first-child {
-      padding-left: 16px; } }
+        border: none !important; }
+        .table.table--responsive-headers tr td[data-title]:not([data-title=""]):before, .table.table--responsive-headers tr th[data-title]:not([data-title=""]):before {
+          content: attr(data-title);
+          text-align: left;
+          display: block;
+          font-weight: 600; }
+      .table.table--responsive-headers.table--borderless tbody tr:first-child {
+        border-top: solid 1px #BFBFBF; }
+      .table.table--responsive-headers.table--borderless tbody tr:last-child {
+        border-bottom: solid 1px #BFBFBF; }
+      .table.table--responsive-headers.table--borderless tbody tr td:first-child, .table.table--responsive-headers.table--borderless tbody tr th:first-child {
+        padding-left: 16px; } }
 
 .table--responsive-scroll {
   overflow-x: auto;
@@ -5361,7 +5360,8 @@ hr {
   .accordion-content[aria-hidden=true] {
     display: none; }
 
-.accordion-button[aria-describedby="error-message"] {
+.accordion-button[aria-describedby="error-message"],
+.accordion-button.accordion-error {
   border: solid 2px #CC0000 !important; }
 
 .accordion-button[aria-expanded=true] {
@@ -5675,10 +5675,10 @@ footer .footer-theme {
         .header .nav-actions > li, .header .nav-actions > li:first-child {
           margin: calc(8px - 2px) 4px; } }
   @media (max-width: 1199px) {
-    .header .function-link {
+    .header .function-link:not(.icon-link) {
       display: block;
       margin-top: 8px; }
-      .header .function-link .icon-svg {
+      .header .function-link:not(.icon-link) .icon-svg {
         float: left;
         margin-left: 0;
         margin-right: 4px; } }
@@ -5889,8 +5889,11 @@ footer .footer-theme {
       line-height: 2.4rem;
       display: block;
       padding-top: calc(16px - 1px);
-      padding-bottom: 0px;
+      padding-bottom: calc(16px - 1px);
       white-space: nowrap; }
+      @media (min-width: 992px) {
+        .nav-primary > li > a {
+          padding-bottom: 0px; } }
       @media (min-width: 992px) {
         .nav-primary > li > a:hover {
           background-color: transparent; } }
@@ -5916,7 +5919,9 @@ footer .footer-theme {
   @media (min-width: 992px) {
     .nav-primary .nav-link span {
       display: block;
-      border-bottom: 7px solid transparent;
+      border-bottom: 7px solid transparent; } }
+  @media (min-width: 992px) {
+    .nav-primary .nav-link span {
       padding-bottom: 9px; } }
   @media (min-width: 992px) {
     .nav-primary .current span {
@@ -5984,8 +5989,11 @@ footer .footer-theme {
       width: unset; } }
   .nav-primary .overflow-menu .button-overflow-menu span {
     padding-right: 24px;
-    padding-bottom: 9px;
+    padding-bottom: calc(16px - 1px);
     display: block; }
+    @media (min-width: 992px) {
+      .nav-primary .overflow-menu .button-overflow-menu span {
+        padding-bottom: 9px; } }
   @media (min-width: 992px) {
     .nav-primary .overflow-menu .button-overflow-menu:hover span {
       border-bottom: 7px solid #0059B3; } }
@@ -6061,8 +6069,11 @@ footer .footer-theme {
       padding: 8px 0 8px 0; }
     .nav-primary .overflow-menu .overflow-menu-inner .overflow-list .overflow-list li:first-of-type a {
       padding: 0px 0 8px 0; }
-    .nav-primary .overflow-menu .overflow-menu-inner .overflow-list .overflow-list li:last-of-type a {
-      padding: 8px 0 32px 0; }
+    @media (min-width: 992px) {
+      .nav-primary .overflow-menu .overflow-menu-inner .overflow-list .overflow-list li:last-of-type a {
+        padding: 8px 0 32px 0; } }
+  .nav-primary .overflow-menu .overflow-menu-inner .overflow-list .sidenav-sub_list {
+    margin-left: 16px; }
   .nav-primary .overflow-menu .overflow-menu-inner button {
     background-color: transparent;
     border: 0;
@@ -7891,6 +7902,9 @@ code {
   padding-top: 4px; }
 
 .page-basic-collapse-html {
+  min-height: 150px; }
+
+.page-skiplink-html .container {
   min-height: 150px; }
 
 .page-date-input-html .container {

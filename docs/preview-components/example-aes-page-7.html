@@ -253,288 +253,290 @@
         </div>
     </div>
 
-    <h1>Tilføj dokumentation fra sagen</h1>
-    <div>
+    <div class="form-group mt-0">
+        <fieldset>
+            <legend>
+                <h1>Tilføj dokumentation fra sagen</h1>
+            </legend>
+            <ul class="nobullet-list">
+                <li>
 
-        <div class="form-group ">
-            <input id="id-documentation-1" type="checkbox" name="Oplysninger om varigt mén" value="Oplysninger om varigt mén" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check" aria-controls="collapse-check" aria-expanded="false" />
-            <label for="id-documentation-1" class="">Oplysninger om varigt
-                mén</label>
-        </div>
+                    <input id="id-documentation-1" type="checkbox" name="Oplysninger om varigt mén" value="Oplysninger om varigt mén" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check" aria-controls="collapse-check" aria-expanded="false" />
+                    <label for="id-documentation-1" class="">Oplysninger om
+                        varigt mén</label>
 
-        <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
-            <div class="py-4">
-                <form class="form">
-                    <div class="form-group file-input">
-                        <label class="form-label" for="file">Tilføj
-                            dokument</label>
-                        <input type="file" id="file" name="file" />
+                    <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <form class="form">
+                                <div class="form-group file-input">
+                                    <label class="form-label" for="file">Tilføj dokument</label>
+                                    <input type="file" id="file" name="file" />
+                                </div>
+                            </form>
+                            <table class="table table--borderless table--compact table--responsive-headers mt-5">
+                                <thead>
+                                    <tr>
+                                        <th>Filnavn</th>
+                                        <th>Navngiv dokument</th>
+                                        <th>Kommentar (frivilligt)</th>
+                                        <th class="align-text-right">Slet
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="break-word w-percent-md-40">
+                                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>
+                                            prn0237452_attest.pdf</td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="select-dokumentationdtype1">Vælg
+                                                    dokumentationstype</label>
+                                                <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype1">
+                                                    <option value=""></option>
+
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
+
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="id-documentation-1-expanded">Kommentar<span class="weight-normal">
+                                                        (Frivilligt)</span></label>
+
+                                                <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text"></textarea>
+                                            </div>
+
+                                        </td>
+                                        <td class="align-text-md-right mt-4 mt-lg-0">
+                                            <button class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>
+                                            sgn1023152_attest.pdf</td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="select-dokumentationdtype2">Vælg
+                                                    dokumentationstype</label>
+                                                <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype2">
+                                                    <option value=""></option>
+
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
+
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="id-documentation-2-expanded">Kommentar<span class="weight-normal">
+                                                        (Frivilligt)</span></label>
+
+                                                <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-2-expanded" name="Kommentar" type="text"></textarea>
+                                            </div>
+
+                                        </td>
+                                        <td class="align-text-md-right mt-4 mt-lg-0">
+                                            <button class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </form>
-                <table class="table table--borderless table--compact table--responsive-headers mt-5">
-                    <thead>
-                        <tr>
-                            <th>Filnavn</th>
-                            <th>Navngiv dokument</th>
-                            <th>Kommentar (frivilligt)</th>
-                            <th class="align-text-right">Slet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="break-word w-percent-md-40">
-                                <svg class="icon-svg "><use xlink:href="#file"></use></svg>
-                                prn0237452_attest.pdf</td>
-                            <td class="mt-4 mt-lg-0">
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="select-dokumentationdtype1">Vælg
-                                        dokumentationstype</label>
-                                    <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype1">
-                                        <option value=""></option>
+                </li>
+                <li>
 
-                                    </select>
+                    <input id="id-documentation-2" type="checkbox" name="Oplysninger om tabt erhvervsevne" value="Oplysninger om tabt erhvervsevne" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check1" aria-controls="collapse-check1" aria-expanded="false" />
+                    <label for="id-documentation-2" class="">Oplysninger om
+                        tabt erhvervsevne</label>
+
+                    <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <form class="form">
+                                <div class="form-group file-input">
+                                    <label class="form-label" for="file">Tilføj dokument</label>
+                                    <input type="file" id="file" name="file" />
                                 </div>
-                            </td>
-                            <td class="mt-4 mt-lg-0">
+                            </form>
+                            <table class="table table--borderless table--compact table--responsive-headers mt-5">
+                                <thead>
+                                    <tr>
+                                        <th>Filnavn</th>
+                                        <th>Navngiv dokument</th>
+                                        <th>Kommentar (frivilligt)</th>
+                                        <th class="align-text-right">Slet
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="break-word w-percent-md-40">
+                                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>
+                                            dkf4903283_attest.pdf</td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="select-dokumentationdtype3">Vælg
+                                                    dokumentationstype</label>
+                                                <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype3">
+                                                    <option value=""></option>
 
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="id-documentation-1-expanded">Kommentar<span class="weight-normal">
-                                            (Frivilligt)</span></label>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text"></textarea>
-                                </div>
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="id-documentation-3-expanded">Kommentar<span class="weight-normal">
+                                                        (frivilligt)</span></label>
 
-                            </td>
-                            <td class="align-text-md-right mt-4 mt-lg-0">
-                                <button class="button button-unstyled">
-                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                    <span class="sr-only">Slet</span>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                <svg class="icon-svg "><use xlink:href="#file"></use></svg>
-                                sgn1023152_attest.pdf</td>
-                            <td class="mt-4 mt-lg-0">
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="select-dokumentationdtype2">Vælg
-                                        dokumentationstype</label>
-                                    <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype2">
-                                        <option value=""></option>
+                                                <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-3-expanded" name="Kommentar" type="text"></textarea>
+                                            </div>
 
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="mt-4 mt-lg-0">
+                                        </td>
+                                        <td class="align-text-md-right mt-4 mt-lg-0">
+                                            <button class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>
+                                            kfo1127303_attest.pdf</td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="select-dokumentationdtype4">Vælg
+                                                    dokumentationstype</label>
+                                                <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype4">
+                                                    <option value=""></option>
 
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="id-documentation-2-expanded">Kommentar<span class="weight-normal">
-                                            (Frivilligt)</span></label>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-2-expanded" name="Kommentar" type="text"></textarea>
-                                </div>
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="id-documentation-4-expanded">Kommentar<span class="weight-normal">
+                                                        (frivilligt)</span></label>
 
-                            </td>
-                            <td class="align-text-md-right mt-4 mt-lg-0">
-                                <button class="button button-unstyled">
-                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                    <span class="sr-only">Slet</span>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="mt-3">
+                                                <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-4-expanded" name="Kommentar" type="text"></textarea>
+                                            </div>
 
-        <div class="form-group ">
-            <input id="id-documentation-2" type="checkbox" name="Oplysninger om tabt erhvervsevne" value="Oplysninger om tabt erhvervsevne" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check1" aria-controls="collapse-check1" aria-expanded="false" />
-            <label for="id-documentation-2" class="">Oplysninger om tabt
-                erhvervsevne</label>
-        </div>
-
-        <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
-            <div class="py-4">
-                <form class="form">
-                    <div class="form-group file-input">
-                        <label class="form-label" for="file">Tilføj
-                            dokument</label>
-                        <input type="file" id="file" name="file" />
+                                        </td>
+                                        <td class="align-text-md-right mt-4 mt-lg-0">
+                                            <button class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </form>
-                <table class="table table--borderless table--compact table--responsive-headers mt-5">
-                    <thead>
-                        <tr>
-                            <th>Filnavn</th>
-                            <th>Navngiv dokument</th>
-                            <th>Kommentar (frivilligt)</th>
-                            <th class="align-text-right">Slet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="break-word w-percent-md-40">
-                                <svg class="icon-svg "><use xlink:href="#file"></use></svg>
-                                dkf4903283_attest.pdf</td>
-                            <td class="mt-4 mt-lg-0">
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="select-dokumentationdtype3">Vælg
-                                        dokumentationstype</label>
-                                    <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype3">
-                                        <option value=""></option>
+                </li>
+                <li>
 
-                                    </select>
+                    <input id="id-documentation-3" type="checkbox" name="Tilføj andre dokumenter" value="Tilføj andre dokumenter" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check2" aria-controls="collapse-check2" aria-expanded="false" />
+                    <label for="id-documentation-3" class="">Tilføj andre
+                        dokumenter</label>
+
+                    <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <form class="form">
+                                <div class="form-group file-input">
+                                    <label class="form-label" for="file">Tilføj dokument</label>
+                                    <input type="file" id="file" name="file" />
                                 </div>
-                            </td>
-                            <td class="mt-4 mt-lg-0">
+                            </form>
+                            <table class="table table--borderless table--compact table--responsive-headers mt-5">
+                                <thead>
+                                    <tr>
+                                        <th>Filnavn</th>
+                                        <th>Navngiv dokument</th>
+                                        <th>Kommentar (frivilligt)</th>
+                                        <th class="align-text-right">Slet
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="break-word w-percent-md-40">
+                                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>
+                                            ohb3428439_attest.pdf</td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="select-dokumentationdtype5">Vælg
+                                                    dokumentationsype</label>
+                                                <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype5">
+                                                    <option value=""></option>
 
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="id-documentation-3-expanded">Kommentar<span class="weight-normal">
-                                            (frivilligt)</span></label>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-3-expanded" name="Kommentar" type="text"></textarea>
-                                </div>
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="id-documentation-5-expanded">Kommentar<span class="weight-normal">
+                                                        (Frivilligt)</span></label>
 
-                            </td>
-                            <td class="align-text-md-right mt-4 mt-lg-0">
-                                <button class="button button-unstyled">
-                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                    <span class="sr-only">Slet</span>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                <svg class="icon-svg "><use xlink:href="#file"></use></svg>
-                                kfo1127303_attest.pdf</td>
-                            <td class="mt-4 mt-lg-0">
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="select-dokumentationdtype4">Vælg
-                                        dokumentationstype</label>
-                                    <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype4">
-                                        <option value=""></option>
+                                                <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-5-expanded" name="Kommentar" type="text"></textarea>
+                                            </div>
 
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="mt-4 mt-lg-0">
+                                        </td>
+                                        <td class="align-text-md-right mt-4 mt-lg-0">
+                                            <button class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>
+                                            sdv5644382_attest.pdf</td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="select-dokumentationdtype6">Vælg
+                                                    dokumentationstype</label>
+                                                <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype6">
+                                                    <option value=""></option>
 
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="id-documentation-4-expanded">Kommentar<span class="weight-normal">
-                                            (frivilligt)</span></label>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
 
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-4-expanded" name="Kommentar" type="text"></textarea>
-                                </div>
+                                            <div class="form-group">
+                                                <label class="form-label sr-only" for="id-documentation-6-expanded">Kommentar<span class="weight-normal">
+                                                        (Frivilligt)</span></label>
 
-                            </td>
-                            <td class="align-text-md-right mt-4 mt-lg-0">
-                                <button class="button button-unstyled">
-                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                    <span class="sr-only">Slet</span>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="mt-3">
+                                                <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-6-expanded" name="Kommentar" type="text"></textarea>
+                                            </div>
 
-        <div class="form-group ">
-            <input id="id-documentation-3" type="checkbox" name="Tilføj andre dokumenter" value="Tilføj andre dokumenter" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check2" aria-controls="collapse-check2" aria-expanded="false" />
-            <label for="id-documentation-3" class="">Tilføj andre
-                dokumenter</label>
-        </div>
-
-        <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
-            <div class="py-4">
-                <form class="form">
-                    <div class="form-group file-input">
-                        <label class="form-label" for="file">Tilføj
-                            dokument</label>
-                        <input type="file" id="file" name="file" />
+                                        </td>
+                                        <td class="align-text-md-right mt-4 mt-lg-0">
+                                            <button class="button button-unstyled">
+                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                <span class="sr-only">Slet</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </form>
-                <table class="table table--borderless table--compact table--responsive-headers mt-5">
-                    <thead>
-                        <tr>
-                            <th>Filnavn</th>
-                            <th>Navngiv dokument</th>
-                            <th>Kommentar (frivilligt)</th>
-                            <th class="align-text-right">Slet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="break-word w-percent-md-40">
-                                <svg class="icon-svg "><use xlink:href="#file"></use></svg>
-                                ohb3428439_attest.pdf</td>
-                            <td class="mt-4 mt-lg-0">
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="select-dokumentationdtype5">Vælg
-                                        dokumentationsype</label>
-                                    <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype5">
-                                        <option value=""></option>
-
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="mt-4 mt-lg-0">
-
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="id-documentation-5-expanded">Kommentar<span class="weight-normal">
-                                            (Frivilligt)</span></label>
-
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-5-expanded" name="Kommentar" type="text"></textarea>
-                                </div>
-
-                            </td>
-                            <td class="align-text-md-right mt-4 mt-lg-0">
-                                <button class="button button-unstyled">
-                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                    <span class="sr-only">Slet</span>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                <svg class="icon-svg "><use xlink:href="#file"></use></svg>
-                                sdv5644382_attest.pdf</td>
-                            <td class="mt-4 mt-lg-0">
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="select-dokumentationdtype6">Vælg
-                                        dokumentationstype</label>
-                                    <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype6">
-                                        <option value=""></option>
-
-                                    </select>
-                                </div>
-                            </td>
-                            <td class="mt-4 mt-lg-0">
-
-                                <div class="form-group">
-                                    <label class="form-label sr-only" for="id-documentation-6-expanded">Kommentar<span class="weight-normal">
-                                            (Frivilligt)</span></label>
-
-                                    <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-6-expanded" name="Kommentar" type="text"></textarea>
-                                </div>
-
-                            </td>
-                            <td class="align-text-md-right mt-4 mt-lg-0">
-                                <button class="button button-unstyled">
-                                    <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                    <span class="sr-only">Slet</span>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+                </li>
+            </ul>
+        </fieldset>
     </div>
     <nav class="page-navigation">
         <a href="/pages/eksempler/AES-erstatningssag/aes-8" class="button button-primary">Næste</a>
