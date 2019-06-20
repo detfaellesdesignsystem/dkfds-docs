@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const merge = require('easy-pdf-merge');
 
 var path = 'pdf/'
-var root = "https://designsystem.dk";
+var root = "https://designsystem.dk/";
 var targetRootDir = "pdf/";
 var pdfUrls = ["",
     "komigang/krav/",
