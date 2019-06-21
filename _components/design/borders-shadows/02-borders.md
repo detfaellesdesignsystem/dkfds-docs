@@ -17,6 +17,10 @@ order: 02
                 <p class="form-hint">Bruges til indre streger i et element, se fx tabeller.</p>
                 <div class="inner-border-example"></div>
                 
+                  <p class="h5">Indre-indre-streger</p>
+                                <p class="form-hint">Bruges til indre streger i et element, som allerede er omkranset af indre steger, se fx sidenavigation.</p>
+                                <div class="inner-inner-border-example"></div>
+                
                 <p class="h5">Knap-streger</p>
                 <p class="form-hint">Specifik streg til knapper.</p>
                 <div class="button-border-example"></div>
