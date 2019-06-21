@@ -8,7 +8,7 @@ title: Alerts-close.html
     <div class="alert alert-info  has-close" role="alert"
         aria-label="Beskedbox der viser information">
         <div class="alert-body">
-            <p class="alert-heading">Informativ besked</p><a
+            <p class="alert-heading  pr-7">Informativ besked</p><a
                 href="javascript:void(0);"
                 class="alert-close"><svg class="icon-svg"><use xlink:href="#close"></use></svg>Luk</a>
             <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum
@@ -23,7 +23,7 @@ title: Alerts-close.html
     <div class="alert alert-success  has-close" role="alert"
         aria-label="Beskedbox der viser succes">
         <div class="alert-body">
-            <p class="alert-heading">Succesmeddelelse</p><a
+            <p class="alert-heading  pr-7">Succesmeddelelse</p><a
                 href="javascript:void(0);"
                 class="alert-close"><svg class="icon-svg"><use xlink:href="#close"></use></svg>Luk</a>
             <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
@@ -35,7 +35,7 @@ title: Alerts-close.html
     <div class="alert alert-warning  has-close" role="alert"
         aria-label="Beskedbox der viser en advarsel">
         <div class="alert-body">
-            <p class="alert-heading">Advarsel</p><a
+            <p class="alert-heading  pr-7">Advarsel</p><a
                 href="javascript:void(0);"
                 class="alert-close"><svg class="icon-svg"><use xlink:href="#close"></use></svg>Luk</a>
             <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
@@ -47,7 +47,7 @@ title: Alerts-close.html
     <div class="alert alert-error  has-close" role="alert"
         aria-label="Beskedbox der viser en fejlmeddelselse">
         <div class="alert-body">
-            <p class="alert-heading">Fejlbesked</p><a
+            <p class="alert-heading  pr-7">Fejlbesked</p><a
                 href="javascript:void(0);"
                 class="alert-close"><svg class="icon-svg"><use xlink:href="#close"></use></svg>Luk</a>
             <p class="alert-text">Sed ut perspiciatis unde omnis iste natus

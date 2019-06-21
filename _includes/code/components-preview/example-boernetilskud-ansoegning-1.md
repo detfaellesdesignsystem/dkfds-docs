@@ -218,7 +218,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                         role="alert"
                                         aria-label="Beskedbox der viser en advarsel">
                                         <div class="alert-body">
-                                            <p class="alert-heading">
+                                            <p class="alert-heading ">
                                                 Allerede registreret</p>
                                             <p class="alert-text">Sed ut
                                                 perspiciatis unde omnis
@@ -245,7 +245,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                         role="alert"
                                         aria-label="Beskedbox der viser en advarsel">
                                         <div class="alert-body">
-                                            <p class="alert-heading">
+                                            <p class="alert-heading ">
                                                 Allerede registreret</p>
                                             <p class="alert-text">Sed ut
                                                 perspiciatis unde omnis

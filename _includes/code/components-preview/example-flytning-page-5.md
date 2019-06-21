@@ -97,7 +97,7 @@ title: Example-flytning-page-5.html
     <div class="alert alert alert-error alert--show-icon " role="alert"
         aria-label="error">
         <div class="alert-body">
-            <p class="alert-heading">Der er sket en fejl</p>
+            <p class="alert-heading ">Der er sket en fejl</p>
             <p class="alert-text">Der er sket en fejl hos KRAK. Afstanden
                 til din nuværende læge kan ikke beregnes i øjeblikket.
                 Beregningen er vigtig for at dit lægevalg kan blive
@@ -169,7 +169,7 @@ title: Example-flytning-page-5.html
         <div class="alert alert alert-info alert--paragraph " role="alert"
             aria-label="warning">
             <div class="alert-body">
-                <p class="alert-heading">Når du anmelder flytning skal du
+                <p class="alert-heading ">Når du anmelder flytning skal du
                     altid vælge læge også selv om det er tidligere læge du
                     ønsker.</p>
                 <p class="alert-text">

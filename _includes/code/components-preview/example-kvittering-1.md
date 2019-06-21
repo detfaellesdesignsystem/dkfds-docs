@@ -84,7 +84,7 @@ title: Example-kvittering-1.html
     <div class="alert alert alert-success alert--show-icon " role="alert"
         aria-label="success">
         <div class="alert-body">
-            <p class="alert-heading">Sagen er sendt til AES</p>
+            <p class="alert-heading ">Sagen er sendt til AES</p>
             <p class="alert-text"></p>
 
         </div>
@@ -93,7 +93,7 @@ title: Example-kvittering-1.html
     <div class="alert alert alert-warning alert--show-icon " role="alert"
         aria-label="warning">
         <div class="alert-body">
-            <p class="alert-heading">Husk betaling</p>
+            <p class="alert-heading ">Husk betaling</p>
             <p class="alert-text">Gebyret skal indsættes på vores konto i
                 banken</p>
 

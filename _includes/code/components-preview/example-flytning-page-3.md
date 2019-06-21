@@ -148,7 +148,7 @@ title: Example-flytning-page-3.html
     <div class="alert alert alert-warning " role="alert"
         aria-label="warning">
         <div class="alert-body">
-            <p class="alert-heading">Ikke alle adresser er registreret i
+            <p class="alert-heading ">Ikke alle adresser er registreret i
                 dette register</p>
             <p class="alert-text">Kan du ikke finde din
                 tilflytningsadresse, bedes du kontakte din

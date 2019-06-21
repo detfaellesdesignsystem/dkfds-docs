@@ -8,7 +8,8 @@ title: Alerts-texts.html
     <div class="alert alert-info alert--show-icon " role="alert"
         aria-label="Beskedbox der viser information">
         <div class="alert-body">
-            <p class="alert-heading">Informativ besked - kun overskrift</p>
+            <p class="alert-heading ">Informativ besked - kun overskrift
+            </p>
             <p class="alert-text"></p>
 
         </div>
@@ -26,7 +27,7 @@ title: Alerts-texts.html
     <div class="alert alert-info alert--paragraph " role="alert"
         aria-label="Beskedbox der viser information">
         <div class="alert-body">
-            <p class="alert-heading">Informativ besked - tekstafsnit</p>
+            <p class="alert-heading ">Informativ besked - tekstafsnit</p>
             <p class="alert-text">Multi line. Sed ut perspiciatis unde
                 omnis iste natus error sit voluptatem accusantium
                 doloremque laudantium, totam rem Nemo enim ipsam voluptatem

@@ -166,8 +166,8 @@ title: Example-flytning-page-1.html
         <div class="alert alert alert-warning alert--show-icon alert--paragraph "
             role="alert" aria-label="warning">
             <div class="alert-body">
-                <p class="alert-heading">Skal din nye adresse beskyttes fra
-                    første dag?</p>
+                <p class="alert-heading ">Skal din nye adresse beskyttes
+                    fra første dag?</p>
                 <p class="alert-text">Hvis du ønsker navne- og
                     adressebeskyttelse i forbindelse med denne flytning,
                     bør du anmode om navne- og adressebeskyttelse, før du
