@@ -15,7 +15,7 @@ title: Sidenav--compare.html
                         <nav>
                             <ul class="sidenav-list">
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -26,8 +26,8 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
-                                    <a href="" class="active">
+                                <li class=" active  ">
+                                    <a href="">
 
                                         <div class="d-inline-block">
                                             Current page
@@ -37,7 +37,7 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -61,7 +61,7 @@ title: Sidenav--compare.html
                         <nav>
                             <ul class="sidenav-list">
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -72,8 +72,8 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
-                                    <a href="" class="current">
+                                <li class="current   ">
+                                    <a href="">
 
                                         <div class="d-inline-block">
                                             Current page
@@ -83,7 +83,7 @@ title: Sidenav--compare.html
 
                                     <ul class="sidenav-sub_list">
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -95,19 +95,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
-                                            <a href="" class="active">
-
-                                                <div
-                                                    class="d-inline-block">
-                                                    Child link
-
-                                                </div>
-                                            </a>
-
-                                        </li>
-
-                                        <li>
+                                        <li class=" active  ">
                                             <a href="">
 
                                                 <div
@@ -119,7 +107,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -131,7 +119,19 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
+                                            <a href="">
+
+                                                <div
+                                                    class="d-inline-block">
+                                                    Child link
+
+                                                </div>
+                                            </a>
+
+                                        </li>
+
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -147,7 +147,7 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -171,7 +171,7 @@ title: Sidenav--compare.html
                         <nav>
                             <ul class="sidenav-list">
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -182,8 +182,8 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
-                                    <a href="" class="current">
+                                <li class="current   ">
+                                    <a href="">
 
                                         <div class="d-inline-block">
                                             Current page
@@ -193,7 +193,7 @@ title: Sidenav--compare.html
 
                                     <ul class="sidenav-sub_list">
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -205,8 +205,8 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
-                                            <a href="" class="current">
+                                        <li class="current   ">
+                                            <a href="">
 
                                                 <div
                                                     class="d-inline-block">
@@ -217,7 +217,7 @@ title: Sidenav--compare.html
 
                                             <ul class="sidenav-sub_list">
 
-                                                <li>
+                                                <li class="   ">
                                                     <a href="">
 
                                                         <div
@@ -229,7 +229,7 @@ title: Sidenav--compare.html
 
                                                 </li>
 
-                                                <li>
+                                                <li class="   ">
                                                     <a href="">
 
                                                         <div
@@ -241,9 +241,8 @@ title: Sidenav--compare.html
 
                                                 </li>
 
-                                                <li>
-                                                    <a href=""
-                                                        class="active">
+                                                <li class=" active  ">
+                                                    <a href="">
 
                                                         <div
                                                             class="d-inline-block">
@@ -254,7 +253,7 @@ title: Sidenav--compare.html
 
                                                 </li>
 
-                                                <li>
+                                                <li class="   ">
                                                     <a href="">
 
                                                         <div
@@ -270,7 +269,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -282,7 +281,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -294,7 +293,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -310,7 +309,7 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -339,7 +338,7 @@ title: Sidenav--compare.html
                         <nav>
                             <ul class="sidenav-list">
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -354,8 +353,8 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
-                                    <a href="" class="active">
+                                <li class=" active  ">
+                                    <a href="">
 
                                         <div class="d-inline-block">
                                             Current page
@@ -369,7 +368,7 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -397,7 +396,7 @@ title: Sidenav--compare.html
                         <nav>
                             <ul class="sidenav-list">
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -412,8 +411,8 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
-                                    <a href="" class="current">
+                                <li class="current   ">
+                                    <a href="">
 
                                         <div class="d-inline-block">
                                             Current page
@@ -427,7 +426,7 @@ title: Sidenav--compare.html
 
                                     <ul class="sidenav-sub_list">
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -439,19 +438,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
-                                            <a href="" class="active">
-
-                                                <div
-                                                    class="d-inline-block">
-                                                    Child link
-
-                                                </div>
-                                            </a>
-
-                                        </li>
-
-                                        <li>
+                                        <li class=" active  ">
                                             <a href="">
 
                                                 <div
@@ -463,7 +450,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -475,7 +462,19 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
+                                            <a href="">
+
+                                                <div
+                                                    class="d-inline-block">
+                                                    Child link
+
+                                                </div>
+                                            </a>
+
+                                        </li>
+
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -491,7 +490,7 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -519,7 +518,7 @@ title: Sidenav--compare.html
                         <nav>
                             <ul class="sidenav-list">
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">
@@ -534,8 +533,8 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
-                                    <a href="" class="current">
+                                <li class="current   ">
+                                    <a href="">
 
                                         <div class="d-inline-block">
                                             Current page
@@ -549,7 +548,7 @@ title: Sidenav--compare.html
 
                                     <ul class="sidenav-sub_list">
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -561,8 +560,8 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
-                                            <a href="" class="current">
+                                        <li class="current   ">
+                                            <a href="">
 
                                                 <div
                                                     class="d-inline-block">
@@ -573,7 +572,7 @@ title: Sidenav--compare.html
 
                                             <ul class="sidenav-sub_list">
 
-                                                <li>
+                                                <li class="   ">
                                                     <a href="">
 
                                                         <div
@@ -585,7 +584,7 @@ title: Sidenav--compare.html
 
                                                 </li>
 
-                                                <li>
+                                                <li class="   ">
                                                     <a href="">
 
                                                         <div
@@ -597,9 +596,8 @@ title: Sidenav--compare.html
 
                                                 </li>
 
-                                                <li>
-                                                    <a href=""
-                                                        class="active">
+                                                <li class=" active  ">
+                                                    <a href="">
 
                                                         <div
                                                             class="d-inline-block">
@@ -610,7 +608,7 @@ title: Sidenav--compare.html
 
                                                 </li>
 
-                                                <li>
+                                                <li class="   ">
                                                     <a href="">
 
                                                         <div
@@ -626,7 +624,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -638,7 +636,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -650,7 +648,7 @@ title: Sidenav--compare.html
 
                                         </li>
 
-                                        <li>
+                                        <li class="   ">
                                             <a href="">
 
                                                 <div
@@ -666,7 +664,7 @@ title: Sidenav--compare.html
 
                                 </li>
 
-                                <li>
+                                <li class="   ">
                                     <a href="">
 
                                         <div class="d-inline-block">

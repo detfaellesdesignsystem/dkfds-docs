@@ -7,7 +7,7 @@ title: Sidenav-information-level3.html
     <nav>
         <ul class="sidenav-list">
 
-            <li>
+            <li class="   ">
                 <a href="">
 
                     <div class="d-inline-block">
@@ -21,8 +21,8 @@ title: Sidenav-information-level3.html
 
             </li>
 
-            <li>
-                <a href="" class="current">
+            <li class="current   ">
+                <a href="">
 
                     <div class="d-inline-block">
                         Current page
@@ -35,7 +35,7 @@ title: Sidenav-information-level3.html
 
                 <ul class="sidenav-sub_list">
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -46,8 +46,8 @@ title: Sidenav-information-level3.html
 
                     </li>
 
-                    <li>
-                        <a href="" class="current">
+                    <li class="current   ">
+                        <a href="">
 
                             <div class="d-inline-block">
                                 Child link
@@ -57,7 +57,7 @@ title: Sidenav-information-level3.html
 
                         <ul class="sidenav-sub_list">
 
-                            <li>
+                            <li class="   ">
                                 <a href="">
 
                                     <div class="d-inline-block">
@@ -68,7 +68,7 @@ title: Sidenav-information-level3.html
 
                             </li>
 
-                            <li>
+                            <li class="   ">
                                 <a href="">
 
                                     <div class="d-inline-block">
@@ -79,8 +79,8 @@ title: Sidenav-information-level3.html
 
                             </li>
 
-                            <li>
-                                <a href="" class="active">
+                            <li class=" active  ">
+                                <a href="">
 
                                     <div class="d-inline-block">
                                         Grandchild link
@@ -90,7 +90,7 @@ title: Sidenav-information-level3.html
 
                             </li>
 
-                            <li>
+                            <li class="   ">
                                 <a href="">
 
                                     <div class="d-inline-block">
@@ -105,7 +105,7 @@ title: Sidenav-information-level3.html
 
                     </li>
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -116,7 +116,7 @@ title: Sidenav-information-level3.html
 
                     </li>
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -127,7 +127,7 @@ title: Sidenav-information-level3.html
 
                     </li>
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -142,7 +142,7 @@ title: Sidenav-information-level3.html
 
             </li>
 
-            <li>
+            <li class="   ">
                 <a href="">
 
                     <div class="d-inline-block">

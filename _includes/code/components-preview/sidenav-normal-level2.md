@@ -7,7 +7,7 @@ title: Sidenav-normal-level2.html
     <nav>
         <ul class="sidenav-list">
 
-            <li>
+            <li class="   ">
                 <a href="">
 
                     <div class="d-inline-block">
@@ -18,8 +18,8 @@ title: Sidenav-normal-level2.html
 
             </li>
 
-            <li>
-                <a href="" class="current">
+            <li class="current   ">
+                <a href="">
 
                     <div class="d-inline-block">
                         Current page
@@ -29,7 +29,7 @@ title: Sidenav-normal-level2.html
 
                 <ul class="sidenav-sub_list">
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -40,18 +40,7 @@ title: Sidenav-normal-level2.html
 
                     </li>
 
-                    <li>
-                        <a href="" class="active">
-
-                            <div class="d-inline-block">
-                                Child link
-
-                            </div>
-                        </a>
-
-                    </li>
-
-                    <li>
+                    <li class=" active  ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -62,7 +51,7 @@ title: Sidenav-normal-level2.html
 
                     </li>
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -73,7 +62,18 @@ title: Sidenav-normal-level2.html
 
                     </li>
 
-                    <li>
+                    <li class="   ">
+                        <a href="">
+
+                            <div class="d-inline-block">
+                                Child link
+
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -88,7 +88,7 @@ title: Sidenav-normal-level2.html
 
             </li>
 
-            <li>
+            <li class="   ">
                 <a href="">
 
                     <div class="d-inline-block">

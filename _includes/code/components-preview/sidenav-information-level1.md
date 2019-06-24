@@ -7,7 +7,7 @@ title: Sidenav-information-level1.html
     <nav>
         <ul class="sidenav-list">
 
-            <li>
+            <li class="   ">
                 <a href="">
 
                     <div class="d-inline-block">
@@ -21,8 +21,8 @@ title: Sidenav-information-level1.html
 
             </li>
 
-            <li>
-                <a href="" class="active">
+            <li class=" active  ">
+                <a href="">
 
                     <div class="d-inline-block">
                         Current page
@@ -35,7 +35,7 @@ title: Sidenav-information-level1.html
 
             </li>
 
-            <li>
+            <li class="   ">
                 <a href="">
 
                     <div class="d-inline-block">

@@ -5,6 +5,7 @@ title: Gennemgang af designsystemet
 category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Gennemgang af designsystemet for bedre forståelse af brugen og opbygningen af projektet. 
+anchor: true
 subnav:
 - text: Frontend arkitektur
   href: '#frontend-arkitektur'

@@ -8,6 +8,7 @@ category: Design_category
 subcategory: Design
 description: Hjørner, streger og skygger hjælper med at danne ramme om indhold på siden.
 # order: 25
+anchor: true
 subnav:
 - text: Hjørner
   href: '#hjørner'

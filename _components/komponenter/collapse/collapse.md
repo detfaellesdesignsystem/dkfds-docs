@@ -5,6 +5,7 @@ type: component
 title: Skjul og vis (Collapse)
 category: Komponenter_category
 subcategory: Komponenter
+anchor: true
 subnav:
 - text: Skjul/vis indhold via radioknap
   href: '#radioknap-skjul-og-vis-indhold'

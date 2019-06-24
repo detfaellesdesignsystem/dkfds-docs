@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/sidenav-normal-level3.html
+permalink: /preview-components/sidenav-anchor.html
 layout: iframed 
-title: Sidenav-normal-level3.html
+title: Sidenav-anchor.html
 ---
 <div class="container mt-6 mb-6">
     <nav>
@@ -40,7 +40,7 @@ title: Sidenav-normal-level3.html
 
                     </li>
 
-                    <li class="current   ">
+                    <li class=" active has-anchor-links ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -52,7 +52,7 @@ title: Sidenav-normal-level3.html
                         <ul class="sidenav-sub_list">
 
                             <li class="   ">
-                                <a href="">
+                                <a href="#">
 
                                     <div class="d-inline-block">
                                         Grandchild link
@@ -63,18 +63,7 @@ title: Sidenav-normal-level3.html
                             </li>
 
                             <li class="   ">
-                                <a href="">
-
-                                    <div class="d-inline-block">
-                                        Grandchild link
-
-                                    </div>
-                                </a>
-
-                            </li>
-
-                            <li class=" active  ">
-                                <a href="">
+                                <a href="#">
 
                                     <div class="d-inline-block">
                                         Grandchild link
@@ -85,7 +74,18 @@ title: Sidenav-normal-level3.html
                             </li>
 
                             <li class="   ">
-                                <a href="">
+                                <a href="#">
+
+                                    <div class="d-inline-block">
+                                        Grandchild link
+
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li class="   ">
+                                <a href="#">
 
                                     <div class="d-inline-block">
                                         Grandchild link

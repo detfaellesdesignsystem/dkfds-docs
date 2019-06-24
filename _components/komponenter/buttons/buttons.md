@@ -6,6 +6,7 @@ title: Knapper
 category: Komponenter_category
 subcategory: Komponenter
 description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke på og dermed udløse en funktion eller handling. De kommer i flere grafiske former og er inddelt i et hierarki med primære, sekundære og tertiære knapper.
+anchor: true
 subnav:
 - text: Primærknap
   href: '#primærknap'

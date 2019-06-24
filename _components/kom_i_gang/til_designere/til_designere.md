@@ -5,11 +5,6 @@ title: Til designere
 category: Kom_i_gang_category
 subcategory: Kom i gang
 description: Til produktejere og projektledere, der skal, eller er interesseret i at gøre brug af Det Fælles Designsystem i deres projekt.
-subnav:
-- text: Fordele ved at anvende Det Fælles Designsystem
-  href: '#fordele'
-- text: Følg op på din løsning
-  href: '#foelg-op'
 ---
 <section>
     <p class="font-lead">Ved at følge designsystemet er du med til at skabe sammenhæng i og imellem de mange offentlige selvbetjeningsløsninger du ikke selv designer, til gavn for alle brugere.</p>
