@@ -82,12 +82,13 @@ title: Example-kvittering-2.html
 
 <main class="container  page-container">
 
-    <div class="alert alert alert-success alert--show-icon" role="alert"
+    <div class="alert alert alert-success alert--show-icon " role="alert"
         aria-label="success">
         <div class="alert-body">
-            <p class="alert-heading">Kvittering</p>
+            <p class="alert-heading ">Kvittering</p>
             <p class="alert-text">Din virksomhedsregistrering er modtaget
             </p>
+
         </div>
     </div>
 

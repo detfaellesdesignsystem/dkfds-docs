@@ -214,17 +214,18 @@ title: Example-boernetilskud-ansoegning-1.html
                             <ul class="nobullet-list">
                                 <li>
 
-                                    <div class="alert alert-warning"
+                                    <div class="alert alert-warning "
                                         role="alert"
                                         aria-label="Beskedbox der viser en advarsel">
                                         <div class="alert-body">
-                                            <p class="alert-heading">
+                                            <p class="alert-heading ">
                                                 Allerede registreret</p>
                                             <p class="alert-text">Sed ut
                                                 perspiciatis unde omnis
                                                 iste natus error sit
                                                 voluptatem accusantium
                                                 doloremque laudantium.</p>
+
                                         </div>
                                     </div>
 
@@ -240,17 +241,18 @@ title: Example-boernetilskud-ansoegning-1.html
                                 </li>
                                 <li>
 
-                                    <div class="alert alert-warning"
+                                    <div class="alert alert-warning "
                                         role="alert"
                                         aria-label="Beskedbox der viser en advarsel">
                                         <div class="alert-body">
-                                            <p class="alert-heading">
+                                            <p class="alert-heading ">
                                                 Allerede registreret</p>
                                             <p class="alert-text">Sed ut
                                                 perspiciatis unde omnis
                                                 iste natus error sit
                                                 voluptatem accusantium
                                                 doloremque laudantium.</p>
+
                                         </div>
                                     </div>
 

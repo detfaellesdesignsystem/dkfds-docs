@@ -2,11 +2,9 @@
 
 import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
-require('./scroll-to-top-for-hash');
 var iFrameResize = require('./vendor/iframeResizer');
-var calculateAnchorPosition = require('./calculate-anchor-position');
-
 import "dkfds";
+require('./sidenav');
 
 
 $(document).ready(function () {
@@ -20,7 +18,7 @@ $(document).ready(function () {
     }
   });
 
-  // Add style when navigating 
+  // Add style when navigating
   $('a').on('click', function (e) {
     var hashLocation  = $(this).attr('href').split('#')[ 1 ];
     if(hashLocation == undefined){ //if normal link
@@ -44,6 +42,7 @@ $(document).ready(function () {
     }
   });
 
+
   // Add style to preview-iframes
   var previewElements = document.getElementsByClassName('preview-iframe');
   for (var j = previewElements.length - 1; j >= 0; j--) {
@@ -56,7 +55,7 @@ $(document).ready(function () {
 
   iFrameResize({ log: false, heightCalculationMethod: 'taggedElement', resizeFrom: 'child' }, '.preview-iframe');
 
-  //quick fix to trigger iframeresizer. 
+  //quick fix to trigger iframeresizer.
   setTimeout(function () {
     var iframes = $('.preview-iframe');
     iframes.each(function(index) {
@@ -94,6 +93,7 @@ $(document).ready(function () {
         }
     });
 
+    // alert upon closing page
     window.onbeforeunload = function (e) {
         console.log(inFormOrLink);
         if(document.getElementsByClassName('layout-demo').length > 0) {
