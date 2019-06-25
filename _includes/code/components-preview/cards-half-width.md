@@ -6,7 +6,7 @@ title: Cards-half-width.html
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-            <div class="card">
+            <div class="card ">
 
                 <div class="card-header">
                     <p class="h5 header-title" title="Card header"
@@ -36,7 +36,7 @@ title: Cards-half-width.html
 
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0">
-                <div class="card">
+                <div class="card ">
 
                     <div class="card-content">
                         <div class="content-text">
