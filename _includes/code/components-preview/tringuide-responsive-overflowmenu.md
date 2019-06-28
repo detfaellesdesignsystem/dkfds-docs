@@ -34,8 +34,8 @@ title: Tringuide-responsive-overflowmenu.html
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="active">
+                        <li class="active">
+                            <a href="#">
                                 3. Trin 3 (valgt)
                             </a>
                         </li>

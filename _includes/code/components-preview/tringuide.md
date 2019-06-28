@@ -114,7 +114,7 @@ title: Tringuide.html
 
             <ul class="sidenav-list">
 
-                <li>
+                <li class=" ">
                     <a href="">
                         1. Trin 1
 
@@ -125,7 +125,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         2. Trin 2
 
@@ -136,8 +136,8 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
-                    <a href="" class="active">
+                <li class=" active">
+                    <a href="">
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
@@ -147,14 +147,14 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         4. Trin 4
 
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         5. Trin 5
 
@@ -171,7 +171,7 @@ title: Tringuide.html
 
             <ul class="sidenav-list-locked">
 
-                <li class="disabled">
+                <li class="disabled  ">
                     <a disabled tab-index="-1" aria-disabled="true">
                         1. Trin 1
 
@@ -182,7 +182,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class="disabled">
+                <li class="disabled  ">
                     <a disabled tab-index="-1" aria-disabled="true">
                         2. Trin 2
 
@@ -193,9 +193,8 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a class="active" disabled tab-index="-1"
-                        aria-disabled="true">
+                <li class="disabled active ">
+                    <a disabled tab-index="-1" aria-disabled="true">
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
@@ -205,14 +204,14 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class="disabled">
+                <li class="disabled  ">
                     <a disabled tab-index="-1" aria-disabled="true">
                         4. Trin 4
 
                     </a>
                 </li>
 
-                <li class="disabled">
+                <li class="disabled  ">
                     <a disabled tab-index="-1" aria-disabled="true">
                         5. Trin 5
 
@@ -227,7 +226,7 @@ title: Tringuide.html
 
             <ul class="sidenav-list">
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             1. Trin 1
@@ -244,7 +243,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             2. Trin 2
@@ -261,8 +260,8 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
-                    <a href="" class="active">
+                <li class=" active">
+                    <a href="">
                         <div class="d-inline-block">
                             3. Trin 3 (valgt)
 
@@ -278,7 +277,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             4. Trin 4
@@ -291,7 +290,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             5. Trin 5
