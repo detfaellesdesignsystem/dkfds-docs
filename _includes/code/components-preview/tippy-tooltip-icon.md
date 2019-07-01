@@ -5,7 +5,7 @@ title: Tippy-tooltip-icon.html
 ---
 <div class="container py-8">
     <a href="javascript:void(0)" class="js-tippy" role="tooltip"
-        data-tippy-content="Dette er en hjælpetekst i en popover"><svg class="icon-svg " ><use xlink:href="#help-circle-outline"></use></svg><span
+        data-tippy-content="Dette er en hjælpetekst i en popover"><svg class="icon-svg "  ><use xlink:href="#help-circle-outline"></use></svg><span
             class="sr-only">Dette er tooltipteksten til screenreaders,
             popover</span></a>
 </div>

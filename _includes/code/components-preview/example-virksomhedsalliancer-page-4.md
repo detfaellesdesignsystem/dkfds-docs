@@ -9,7 +9,7 @@ title: Example-virksomhedsalliancer-page-4.html
     <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo"></a>
+                aria-label="logo link" class="logo alert-leave"></a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,7 +21,8 @@ title: Example-virksomhedsalliancer-page-4.html
                     <b class="username">Christian Emil Vestergaard Christiansen</b>
                 </p>
 
-                <a href="#" class="button button-secondary" role="button">
+                <a href="#" class="button button-secondary alert-leave"
+                    role="button">
                     Log af
                 </a>
             </div>
@@ -32,7 +33,8 @@ title: Example-virksomhedsalliancer-page-4.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link">
+                <a href="#" title="Hjem" aria-label="logo link"
+                    class="alert-leave2">
                     Strategiske virksomhedsalliancer
                 </a>
             </div>
@@ -57,7 +59,7 @@ title: Example-virksomhedsalliancer-page-4.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Navn</b></p>
@@ -139,7 +141,7 @@ title: Example-virksomhedsalliancer-page-4.html
                 id="input-hint-message-id-advisors">Navne skal skrives i
                 samme rækkefølge, som landene er anført</span>
 
-            <textarea class="form-input input-width-m" placeholder="" id="id-advisors" name="Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet" type="text" ></textarea>
+            <textarea class="form-input input-width-m" rows="5" placeholder="" id="id-advisors" name="Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet" type="text" ></textarea>
         </div>
 
     </div>
@@ -195,7 +197,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                     <tr>
                                         <td
                                             class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                            <svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf
+                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf
                                         </td>
                                         <td
                                             class="align-text-right mt-4 mt-lg-0">
@@ -210,7 +212,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                     <tr>
                                         <td
                                             class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                            <svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf
+                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf
                                         </td>
                                         <td
                                             class="align-text-right mt-4 mt-lg-0">
@@ -225,7 +227,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                     <tr>
                                         <td
                                             class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                            <svg class="icon-svg " ><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf
+                                            <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf
                                         </td>
                                         <td
                                             class="align-text-right mt-4 mt-lg-0">

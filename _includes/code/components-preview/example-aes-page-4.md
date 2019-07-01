@@ -9,7 +9,7 @@ title: Example-aes-page-4.html
     <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo"></a>
+                aria-label="logo link" class="logo alert-leave"></a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,7 +21,8 @@ title: Example-aes-page-4.html
                     <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
                 </p>
 
-                <a href="#" class="button button-secondary" role="button">
+                <a href="#" class="button button-secondary alert-leave"
+                    role="button">
                     Log af
                 </a>
             </div>
@@ -32,7 +33,8 @@ title: Example-aes-page-4.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link">
+                <a href="#" title="Hjem" aria-label="logo link"
+                    class="alert-leave2">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
             </div>
@@ -57,7 +59,7 @@ title: Example-aes-page-4.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg " ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user">
@@ -79,7 +81,7 @@ title: Example-aes-page-4.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href=""
-                        class="function-link"><svg class="icon-svg " ><use xlink:href="#save"></use></svg>Gem
+                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#save"></use></svg>Gem
                         kladde</a>
                 </div>
             </div>

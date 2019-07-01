@@ -20,7 +20,7 @@ mobile:
   - href: /eksempler/
     categorynav: 'Eksempler_category'
   - href: /omdesignsystemet/
-    categorynav: 'Om_designsystemet_category'    
+    categorynav: 'Om_designsystemet_category'
 
 #Left menu for kom igang-category
 Kom_i_gang_category:
@@ -85,10 +85,11 @@ Komponenter_category:
 #Left menu for udvidelser-category
 Udvidelser_category:
   - alternative_text: Overblik
-    href: /udvidelser/ 
+    href: /udvidelser/
   - href: /udvidelser/datatables/
   - href: /udvidelser/selectwoo-multiselect/
   - href: /udvidelser/pikaday/
+  - href: /udvidelser/tippy/
 
 Eksempler_category:
   - alternative_text: Overblik

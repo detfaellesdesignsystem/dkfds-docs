@@ -131,7 +131,7 @@ title: Fieldset-complex.html
                     </legend>
 
                     <fieldset>
-                        <div class="form-group">
+                        <div class="form-group ">
                             <label
                                 class="form-label icon-link">Indsendelsesfrist</label>
                             <span class="form-hint">For eksempel: 05 12
@@ -145,34 +145,38 @@ title: Fieldset-complex.html
                                         for="date_of_day_2">Dag</label>
                                     <input
                                         class="form-input js-calendar-day-input"
-                                        id="date_of_day_2" type="tel"
-                                        min="1" max="31" maxlength="2"
+                                        id="date_of_day_2" value=""
+                                        type="tel" min="1" max="31"
+                                        maxlength="2"
                                         pattern="^[0-9]{0,2}$"
                                         data-input-regex="^[0-9]{0,2}$"
-                                        title="Indskriv dag på månenden som tal">
+                                        title="Indskriv dag på månenden som tal" />
                                 </div>
                                 <div class="form-group form-group-month">
                                     <label class="form-label"
                                         for="date_of_month_1">Måned</label>
                                     <input
                                         class="form-input js-calendar-month-input"
-                                        id="date_of_month_1" type="tel"
-                                        min="1" max="12" maxlength="2"
+                                        id="date_of_month_1" value=""
+                                        type="tel" min="1" max="12"
+                                        maxlength="2"
                                         pattern="^[0-9]{0,2}$"
                                         data-input-regex="^[0-9]{0,2}$"
-                                        title="Indskriv månedens nummer">
+                                        title="Indskriv månedens nummer" />
                                 </div>
                                 <div class="form-group form-group-year ">
                                     <label class="form-label"
                                         for="date_of_year_3">År</label>
                                     <input
                                         class="form-input js-calendar-year-input"
-                                        for="date_of_year_3" type="tel"
-                                        min="1900" max="3000" maxlength="4"
+                                        id="date_of_year_3" value=""
+                                        type="tel" min="1900" max="3000"
+                                        maxlength="4"
                                         pattern="^[0-9]{0,4}$"
                                         data-input-regex="^[0-9]{0,4}$"
-                                        title="Indskriv årstal">
+                                        title="Indskriv årstal" />
                                 </div>
+
                             </div>
                         </div>
                     </fieldset>
@@ -211,8 +215,8 @@ title: Fieldset-complex.html
                     </div>
                 </fieldset>
             </div>
-            <button class="button button-primary mt-9"> Gem
-                oplysninger</button>
+            <button class="button button-primary mt-9"> Gem oplysninger
+            </button>
         </fieldset>
     </form>
 </div>
