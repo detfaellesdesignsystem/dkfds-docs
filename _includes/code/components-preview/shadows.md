@@ -3,18 +3,32 @@ permalink: /preview-components/shadows.html
 layout: iframed 
 title: Shadows.html
 ---
-<div class="container mb-5">
+<div class="container">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-6">
             <p class="h5 mt-md-0">Modalvindue</p>
             <div class="heavy-shadow-example"></div>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 8px 16px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
             <p class="h5 mt-6 mt-md-0">Overflowmenu</p>
             <div class="moderately-shadow-example"></div>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 4px 8px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
             <p class="h5 mt-6 mt-md-0">Cards</p>
             <div class="slightly-shadow-example"></div>
         </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 2px 4px 0 rgba(#000, 0.3);</pre>
+        </div>
     </div>
+</div>

@@ -6,7 +6,6 @@ order: 03
 ---
 
 {% include code/preview.html component="shadows" %}
-{% include code/accordion.html component="shadows" %}
 <div class="accordion-bordered">
     <button class="button-unstyled accordion-button"
         aria-expanded="false" aria-controls="shadows-docs">

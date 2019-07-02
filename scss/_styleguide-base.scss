@@ -923,12 +923,12 @@ code {
 
 //BORDER RADIUS
 .static-border-radius-example {
-  border-top-left-radius:$static-border-radius;
+  border-top-left-radius:$static-border-radius; //  0
   width: 144px;
   height: 120px;
   background-color: $color-gray-pale;
-  border-left: solid 6px $color-black;
-  border-top: solid 6px $color-black;
+  border-left: $outer-border;
+  border-top: $outer-border;
 }
 
 .interactive-border-radius-example {
@@ -936,8 +936,8 @@ code {
   width: 144px;
   height: 120px;
   background-color: $color-gray-pale;
-  border-left: solid 6px $color-black;
-  border-top: solid 6px $color-black;
+  border-left: $outer-border;
+  border-top: $outer-border;
 }
 
 //BORDERS
