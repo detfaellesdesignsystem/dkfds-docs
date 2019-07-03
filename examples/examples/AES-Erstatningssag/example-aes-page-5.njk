@@ -109,24 +109,21 @@
         "
     ) }}
 
-    <h1>Oplysninger om sagen</h1>
+    <fieldset>
+        <legend><h1>Oplysninger om sagen</h1></legend>
 
-    {{datoinput("Skadedato", "Fx. 28 04 1996", "Dato", "Måned", "År", true, "Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum.")}}
+        {{datoinput("Skadedato", "Fx. 28 04 1996", "Dato", "Måned", "År", true, "Her står relevant uddybbende hjælpetekst.")}}
 
-    <div class="mt-6">
-        {{textinput("id-skadenummer", "Jeres sags-/skadenummer", "", "input-width-m", false, "Input til Jeres sags-/skadenummer", "", false, false, "", "", "", true, "Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum.")}}
-    </div>
-    <div class="form-group">
-        <fieldset>
-            <legend class="form-label">Verserer der en retssag?</legend>
-            {{ checkbox("id-retssag", "Ja, der verserer en retssag", "Ja, der verserer en retssag", false, false, "Ja, der verserer en retssag", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check' aria-controls='collapse-check' aria-expanded='false'") }}
+        {{textinput("id-skadenummer", "Jeres sags-/skadenummer", "", "input-width-m", false, "Input til Jeres sags-/skadenummer", "", false, false, "", "", "", true, "Her står relevant uddybbende hjælpetekst.")}}
+        <div class="form-group">
+            {{ checkbox("id-retssag", "Der verserer en retssag", "Der verserer en retssag", false, false, "Der verserer en retssag", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check' aria-controls='collapse-check' aria-expanded='false'") }}
             <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
                 <div class="py-4">
                     {{datoinput("Berammelsesdato", "Fx. 28 04 1996", "Dato", "Måned", "År")}}
                 </div>
             </div>
-        </fieldset>
-    </div>
+        </div>
+    </fieldset>
     <nav class="page-navigation">
         <a href="/pages/eksempler/AES-erstatningssag/aes-6" class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-4" class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>

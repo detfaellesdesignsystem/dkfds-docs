@@ -6,12 +6,12 @@ title: Example-aes-page-6.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -171,13 +171,17 @@ title: Example-aes-page-6.html
         </div>
     </div>
 
-    <h1>Tilføj dokumentation for første undersøgelse af skaden</h1>
-    <form class="form">
-        <div class="form-group file-input">
-            <label class="form-label" for="file">Tilføj dokument</label>
-            <input type="file" id="file" name="file">
-        </div>
-    </form>
+    <div role="group" aria-describedby="tilfoej-documentation">
+        <h1 id="tilfoej-documentation">Tilføj dokumentation for første
+            undersøgelse af skaden</h1>
+        <form class="form">
+            <div class="form-group file-input">
+                <label class="form-label" for="file">Tilføj
+                    dokument</label>
+                <input type="file" id="file" name="file">
+            </div>
+        </form>
+    </div>
     <table
         class="table table--borderless table--compact table--responsive-headers mt-6">
         <thead>

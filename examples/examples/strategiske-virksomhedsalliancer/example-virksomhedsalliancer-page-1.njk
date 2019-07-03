@@ -61,19 +61,19 @@
         </ul>
         "
     ) }}
-
-    <h1>Stamdata</h1>
-    {{textinput("id-cvr-number", "CVR nummer", "", "input-char-8", "", "Input til cvr nummer", "", false, "")}}
-    {{textinput("id-companyname", "Navn på virksomhed", "", "input-width-m", "", "Input til navn på virksomhed", "", false, "")}}
-    {{textinput("id-companyaddress", "Adresse", "", "input-width-m", "", "Input til virksomhedsadresse", "", false, "")}}
-    {{textinput("id-zipcode", "Postnr.", "", "input-char-4", "", "Input til postnummer", "", false, "")}}
-    {{textinput("id-companycity", "By", "", "input-width-m", "", "Input til by", "", false, "")}}
-    {{textinput("id-companyphone", "Telefonnr.", "", "input-char-8", "", "Input til telefonnummer", "", false, "")}}
-    {{textinput("id-companywebsite", "Website", "(frivilligt)", "input-width-m", "", "Input til website", "", false, "")}}
-    {{textinput("id-company-contactperson", "Kontaktperson.", "", "input-width-m", "", "Input til kontaktperson", "", false, "")}}
-    {{textinput("id-companyemail", "E-mail", "", "input-width-m", "", "Input til email", "", false, false, "Kvittering bliver sendt til denne e-mailadresse", "")}}
-    {{textinput("id-launchyear", "Etableringsår", "", "input-char-4", "", "Input til etableringsår", "", false, "")}}
-
+    <div role="group" aria-describedby="stamdata">
+        <h1 id="stamdata">Stamdata</h1>
+        {{textinput("id-cvr-number", "CVR nummer", "", "input-char-8", "", "Input til cvr nummer", "", false, "")}}
+        {{textinput("id-companyname", "Navn på virksomhed", "", "input-width-m", "", "Input til navn på virksomhed", "", false, "")}}
+        {{textinput("id-companyaddress", "Adresse", "", "input-width-m", "", "Input til virksomhedsadresse", "", false, "")}}
+        {{textinput("id-zipcode", "Postnr.", "", "input-char-4", "", "Input til postnummer", "", false, "")}}
+        {{textinput("id-companycity", "By", "", "input-width-m", "", "Input til by", "", false, "")}}
+        {{textinput("id-companyphone", "Telefonnr.", "", "input-char-8", "", "Input til telefonnummer", "", false, "")}}
+        {{textinput("id-companywebsite", "Website", "(frivilligt)", "input-width-m", "", "Input til website", "", false, "")}}
+        {{textinput("id-company-contactperson", "Kontaktperson.", "", "input-width-m", "", "Input til kontaktperson", "", false, "")}}
+        {{textinput("id-companyemail", "E-mail", "", "input-width-m", "", "Input til email", "", false, false, "Kvittering bliver sendt til denne e-mailadresse", "")}}
+        {{textinput("id-launchyear", "Etableringsår", "", "input-char-4", "", "Input til etableringsår", "", false, "")}}
+    </div>
     <nav class="page-navigation">
       <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2" class="button button-primary">Næste</a>
     </nav>

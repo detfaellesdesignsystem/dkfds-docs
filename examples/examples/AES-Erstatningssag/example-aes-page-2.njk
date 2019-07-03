@@ -96,13 +96,15 @@
             </ul>
             "
         ) }}
-    <h1>Hvis AES har spørgsmål til sagen</h1>
-    {{textinput("id-company-contact", "Virksomhedens kontaktperson", "", "input-width-m", "", "Input til virksomhedens kontaktperson", "", false, true, "", "Svend Pedersen")}}
-    <br>
-    <button href="#" class="button button-secondary">{{icon_svg("add")}} Vælg en anden kontaktperson</button>
-    <div class="mt-5">
-        {{textinput("id-company-number", "Telefonummer til kontaktperson", "", "input-width-xs", "", "Telefonummer til kontaktperson", "", false, false, "", "")}}
-    </div>
+
+    <fieldset>
+        <legend><h1>Hvis AES har spørgsmål til sagen</h1></legend>
+        {{textinput("id-company-contact", "Virksomhedens kontaktperson", "", "input-width-m", "", "Input til virksomhedens kontaktperson", "", false, false, "", "Svend Pedersen", "", "", "", true)}}
+        <button href="#" class="button button-secondary mt-4">{{icon_svg("add")}} Vælg en anden kontaktperson</button>
+        <div class="mt-5">
+            {{textinput("id-company-number", "Telefonummer til kontaktperson", "", "input-width-xs", "", "Telefonummer til kontaktperson", "", false, false, "", "")}}
+        </div>
+    </fieldset>
     <nav class="page-navigation">
         <a href="/pages/eksempler/AES-erstatningssag/aes-3" class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-1" class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>

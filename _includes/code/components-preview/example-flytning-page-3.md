@@ -6,12 +6,12 @@ title: Example-flytning-page-3.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -159,11 +159,11 @@ title: Example-flytning-page-3.html
 
     <div class="mt-6">
 
-        <fieldset>
-            <div class="form-group ">
-                <label class="form-label icon-link">Dato for
-                    flytning</label>
-                <span class="form-hint">Fx. 28 04 1996</span>
+        <div class="form-group ">
+            <fieldset>
+                <legend><label class="form-label icon-link">Dato for
+                        flytning</label>
+                    <span class="form-hint">Fx. 28 04 1996</span></legend>
                 <span class="form-error-message"
                     id="form-error-message-input-error"
                     role="alert"></span>
@@ -199,8 +199,8 @@ title: Example-flytning-page-3.html
                     </div>
 
                 </div>
-            </div>
-        </fieldset>
+            </fieldset>
+        </div>
 
     </div>
     <div class="mt-6">

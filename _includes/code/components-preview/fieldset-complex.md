@@ -117,12 +117,12 @@ title: Fieldset-complex.html
                         <h2 class="h4">Personlige oplysninger</h2>
                     </legend>
 
-                    <fieldset>
-                        <div class="form-group ">
-                            <label
-                                class="form-label icon-link">Indsendelsesfrist</label>
-                            <span class="form-hint">For eksempel: 05 12
-                                2018</span>
+                    <div class="form-group ">
+                        <fieldset>
+                            <legend><label
+                                    class="form-label icon-link">Indsendelsesfrist</label>
+                                <span class="form-hint">For eksempel: 05 12
+                                    2018</span></legend>
                             <span class="form-error-message"
                                 id="form-error-message-input-error"
                                 role="alert"></span>
@@ -165,8 +165,8 @@ title: Fieldset-complex.html
                                 </div>
 
                             </div>
-                        </div>
-                    </fieldset>
+                        </fieldset>
+                    </div>
 
                     <div class="form-group">
                         <fieldset>
