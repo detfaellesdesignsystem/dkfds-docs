@@ -7,10 +7,12 @@ title: Date-input.html
 
     <!-- Start code: Indsendelsesfrist -->
 
-    <fieldset>
-        <div class="form-group ">
-            <label class="form-label icon-link">Indsendelsesfrist</label>
-            <span class="form-hint">For eksempel: 05 12 2018</span>
+    <div class="form-group ">
+        <fieldset>
+            <legend><label
+                    class="form-label icon-link">Indsendelsesfrist</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
             <span class="form-error-message"
                 id="form-error-message-input-error" role="alert"></span>
             <div class="date-group js-calendar-group mt-3">
@@ -43,18 +45,19 @@ title: Date-input.html
                 </div>
 
             </div>
-        </div>
-    </fieldset>
+        </fieldset>
+    </div>
 
     <!-- End code: Indsendelsesfrist -->
 
     <!-- Start code: Datoangivelse med fejl -->
 
-    <fieldset>
-        <div class="form-group  form-error ">
-            <label class="form-label icon-link">Datoangivelse med
-                fejl</label>
-            <span class="form-hint">For eksempel: 05 12 2018</span>
+    <div class="form-group  form-error ">
+        <fieldset>
+            <legend><label class="form-label icon-link">Datoangivelse med
+                    fejl</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
             <span class="form-error-message"
                 id="form-error-message-input-error" role="alert">Skriv en
                 kort fejlmeddelelse, der hjælper brugeren videre</span>
@@ -89,8 +92,8 @@ title: Date-input.html
                 </div>
 
             </div>
-        </div>
-    </fieldset>
+        </fieldset>
+    </div>
 
     <!-- End code: Datoangivelse med fejl -->
 

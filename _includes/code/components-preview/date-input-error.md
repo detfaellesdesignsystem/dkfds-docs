@@ -5,11 +5,12 @@ title: Date-input-error.html
 ---
 <div class="container">
 
-    <fieldset>
-        <div class="form-group  form-error ">
-            <label class="form-label icon-link">Datoangivelse med
-                fejl</label>
-            <span class="form-hint">For eksempel: 05 12 2018</span>
+    <div class="form-group  form-error ">
+        <fieldset>
+            <legend><label class="form-label icon-link">Datoangivelse med
+                    fejl</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
             <span class="form-error-message"
                 id="form-error-message-input-error" role="alert">Skriv en
                 kort fejlmeddelelse, der hjælper brugeren videre</span>
@@ -44,7 +45,7 @@ title: Date-input-error.html
                 </div>
 
             </div>
-        </div>
-    </fieldset>
+        </fieldset>
+    </div>
 
 </div>

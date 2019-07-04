@@ -6,12 +6,12 @@ title: Example-aes-page-2.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -159,34 +159,39 @@ title: Example-aes-page-2.html
         </div>
     </div>
 
-    <h1>Hvis AES har spørgsmål til sagen</h1>
-
-    <div class="form-group">
-        <label class="form-label " for="id-company-contact">Virksomhedens
-            kontaktperson</label>
-
-        <input class="form-input  input-width-m "
-            placeholder="Svend Pedersen" id="id-company-contact" value=""
-            name="Input til virksomhedens kontaktperson" type="text"
-            disabled="disabled">
-    </div>
-
-    <br>
-    <button href="#"
-        class="button button-secondary"><svg class="icon-svg "  ><use xlink:href="#add"></use></svg>
-        Vælg en anden kontaktperson</button>
-    <div class="mt-5">
+    <fieldset>
+        <legend>
+            <h1>Hvis AES har spørgsmål til sagen</h1>
+        </legend>
 
         <div class="form-group">
-            <label class="form-label " for="id-company-number">Telefonummer
-                til kontaktperson</label>
+            <label class="form-label "
+                for="id-company-contact">Virksomhedens
+                kontaktperson</label>
 
-            <input class="form-input  input-width-xs " placeholder=""
-                id="id-company-number" value=""
-                name="Telefonummer til kontaktperson" type="text">
+            <input class="form-input  input-width-m "
+                placeholder="Svend Pedersen" id="id-company-contact"
+                value="" name="Input til virksomhedens kontaktperson"
+                type="text" readonly>
         </div>
 
-    </div>
+        <button href="#"
+            class="button button-secondary mt-4"><svg class="icon-svg "  ><use xlink:href="#add"></use></svg>
+            Vælg en anden kontaktperson</button>
+        <div class="mt-5">
+
+            <div class="form-group">
+                <label class="form-label "
+                    for="id-company-number">Telefonummer til
+                    kontaktperson</label>
+
+                <input class="form-input  input-width-xs " placeholder=""
+                    id="id-company-number" value=""
+                    name="Telefonummer til kontaktperson" type="text">
+            </div>
+
+        </div>
+    </fieldset>
     <nav class="page-navigation">
         <a href="/pages/eksempler/AES-erstatningssag/aes-3"
             class="button button-primary">Næste</a>

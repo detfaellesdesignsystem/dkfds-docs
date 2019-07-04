@@ -6,12 +6,12 @@ title: Example-virksomhedsalliancer-page-3.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -130,7 +130,7 @@ title: Example-virksomhedsalliancer-page-3.html
 
     <h1>Statsstøtte</h1>
 
-    <div class="alert alert alert-info alert--paragraph" role="alert"
+    <div class="alert alert alert-info alert--paragraph " role="alert"
         aria-label="warning">
         <div class="alert-body">
             <p class="alert-text">Virksomheder må ikke modtage statsstøtte,
@@ -139,6 +139,7 @@ title: Example-virksomhedsalliancer-page-3.html
                 givet fra Eksportrådet er omfattet af de-minimis-reglerne
                 og de skal nævnes
                 nedenfor.<br><br>Hvis virksomheden juridisk er en del af en koncernstruktur (indenlandsk som udenlandsk), som tilsammen hæfter for de-minimis-støtte, oplyses det fulde beløb for hele koncernen. Se Statsstøttehåndbogen side 65-86, hvis du er i tvivl om, hvor meget af koncernen, der er omfattet.<br><br>Støtte fra eksportrådet i form af tilskud ydes i henhold til EU-reglerne for de-minimis-støtte, jf. Komissionernes forordning (EU) nr. 1407/2013 af 18. december 2013.</p>
+
         </div>
     </div>
 
@@ -193,13 +194,13 @@ title: Example-virksomhedsalliancer-page-3.html
                                     type="text">
                             </div>
 
-                            <fieldset>
-                                <div class="form-group ">
-                                    <label
-                                        class="form-label icon-link">Dato
-                                        for modtagelse</label>
-                                    <span class="form-hint">Fx. 28 04
-                                        1996</span>
+                            <div class="form-group ">
+                                <fieldset>
+                                    <legend><label
+                                            class="form-label icon-link">Dato
+                                            for modtagelse</label>
+                                        <span class="form-hint">Fx. 28 04
+                                            1996</span></legend>
                                     <span class="form-error-message"
                                         id="form-error-message-input-error"
                                         role="alert"></span>
@@ -247,8 +248,8 @@ title: Example-virksomhedsalliancer-page-3.html
                                         </div>
 
                                     </div>
-                                </div>
-                            </fieldset>
+                                </fieldset>
+                            </div>
 
                             <div class="form-group">
                                 <label class="form-label "

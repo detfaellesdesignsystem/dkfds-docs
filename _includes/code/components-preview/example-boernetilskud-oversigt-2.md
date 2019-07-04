@@ -6,12 +6,12 @@ title: Example-boernetilskud-oversigt-2.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -158,7 +158,7 @@ title: Example-boernetilskud-oversigt-2.html
         <div class="row">
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class="card">
+                <div class="card card-align-height">
                     <div class="card-header">
                         <p class="h5 header-title" title="Card header"
                             aria-label="Card header">Beskeder</p>
@@ -172,18 +172,20 @@ title: Example-boernetilskud-oversigt-2.html
                             </div>
                         </div>
                     </div>
-                    <div class="card-action">
-                        <div class="action-links">
-                            <a
-                                href="/pages/eksempler/boernetilskud/boernetilskud-1">Læs
-                                beskeder omkring dine aktive sager</a>
+                    <div class="card-footer">
+                        <div class="card-action">
+                            <div class="action-links">
+                                <a
+                                    href="/pages/eksempler/boernetilskud/boernetilskud-1">Læs
+                                    beskeder omkring dine aktive sager</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-                <div class="card">
+                <div class="card card-align-height">
                     <div class="card-header">
                         <p class="h5 header-title" title="Card header"
                             aria-label="Card header">Udbetalinger</p>
@@ -197,18 +199,20 @@ title: Example-boernetilskud-oversigt-2.html
                             </div>
                         </div>
                     </div>
-                    <div class="card-action">
-                        <div class="action-links">
-                            <a
-                                href="/pages/eksempler/boernetilskud/boernetilskud-1">Se
-                                tidligere og kommende udbetalinger</a>
+                    <div class="card-footer">
+                        <div class="card-action">
+                            <div class="action-links">
+                                <a
+                                    href="/pages/eksempler/boernetilskud/boernetilskud-1">Se
+                                    tidligere og kommende udbetalinger</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-                <div class="card">
+                <div class="card card-align-height">
                     <div class="card-header">
                         <p class="h5 header-title" title="Card header"
                             aria-label="Card header">Sager</p>
@@ -222,11 +226,13 @@ title: Example-boernetilskud-oversigt-2.html
                             </div>
                         </div>
                     </div>
-                    <div class="card-action">
-                        <div class="action-links">
-                            <a
-                                href="/pages/eksempler/boernetilskud/boernetilskud-1">Få
-                                status på dine nuværende sager</a>
+                    <div class="card-footer">
+                        <div class="card-action">
+                            <div class="action-links">
+                                <a
+                                    href="/pages/eksempler/boernetilskud/boernetilskud-1">Få
+                                    status på dine nuværende sager</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,7 +241,7 @@ title: Example-boernetilskud-oversigt-2.html
         <div class="row">
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
-                <div class="card">
+                <div class="card card-align-height">
                     <div class="card-header">
                         <p class="h5 header-title" title="Card header"
                             aria-label="Card header">Ansøgninger</p>
@@ -249,18 +255,20 @@ title: Example-boernetilskud-oversigt-2.html
                             </div>
                         </div>
                     </div>
-                    <div class="card-action">
-                        <div class="action-links">
-                            <a
-                                href="/pages/eksempler/boernetilskud/boernetilskud-1">Se
-                                aktive og tidligere ansøgninger</a>
+                    <div class="card-footer">
+                        <div class="card-action">
+                            <div class="action-links">
+                                <a
+                                    href="/pages/eksempler/boernetilskud/boernetilskud-1">Se
+                                    aktive og tidligere ansøgninger</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
-                <div class="card">
+                <div class="card card-align-height">
                     <div class="card-header">
                         <p class="h5 header-title" title="Card header"
                             aria-label="Card header">Ændringer</p>
@@ -274,18 +282,20 @@ title: Example-boernetilskud-oversigt-2.html
                             </div>
                         </div>
                     </div>
-                    <div class="card-action">
-                        <div class="action-links">
-                            <a
-                                href="/pages/eksempler/boernetilskud/boernetilskud-1">Foretag
-                                ændringer omkring dit børnetilskud</a>
+                    <div class="card-footer">
+                        <div class="card-action">
+                            <div class="action-links">
+                                <a
+                                    href="/pages/eksempler/boernetilskud/boernetilskud-1">Foretag
+                                    ændringer omkring dit børnetilskud</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
-                <div class="card">
+                <div class="card card-align-height">
                     <div class="card-header">
                         <p class="h5 header-title" title="Card header"
                             aria-label="Card header">Dokumentation</p>
@@ -299,11 +309,13 @@ title: Example-boernetilskud-oversigt-2.html
                             </div>
                         </div>
                     </div>
-                    <div class="card-action">
-                        <div class="action-links">
-                            <a
-                                href="/pages/eksempler/boernetilskud/boernetilskud-1">Opslagsværk
-                                for hvordan børnetilskud fungerer</a>
+                    <div class="card-footer">
+                        <div class="card-action">
+                            <div class="action-links">
+                                <a
+                                    href="/pages/eksempler/boernetilskud/boernetilskud-1">Opslagsværk
+                                    for hvordan børnetilskud fungerer</a>
+                            </div>
                         </div>
                     </div>
                 </div>

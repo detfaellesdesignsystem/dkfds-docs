@@ -6,12 +6,12 @@ title: Example-kvittering-1.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -81,20 +81,22 @@ title: Example-kvittering-1.html
 
 <main class="container page-container">
 
-    <div class="alert alert alert-success alert--show-icon" role="alert"
+    <div class="alert alert alert-success alert--show-icon " role="alert"
         aria-label="success">
         <div class="alert-body">
-            <p class="alert-heading">Sagen er sendt til AES</p>
+            <p class="alert-heading ">Sagen er sendt til AES</p>
             <p class="alert-text"></p>
+
         </div>
     </div>
 
-    <div class="alert alert alert-warning alert--show-icon" role="alert"
+    <div class="alert alert alert-warning alert--show-icon " role="alert"
         aria-label="warning">
         <div class="alert-body">
-            <p class="alert-heading">Husk betaling</p>
+            <p class="alert-heading ">Husk betaling</p>
             <p class="alert-text">Gebyret skal indsættes på vores konto i
                 banken</p>
+
         </div>
     </div>
 

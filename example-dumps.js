@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-var root = "http://127.0.0.1:4000/";
+var root = "https://develop.designsystem.dk/";
 var targetRootDir = "img/examples_pages/";
 
 var exampleUrls = [

@@ -6,12 +6,12 @@ title: Example-flytning-page-1.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -163,17 +163,18 @@ title: Example-flytning-page-1.html
     </div>
     <div class="mb-8 mt-4">
 
-        <div class="alert alert alert-warning alert--show-icon alert--paragraph"
+        <div class="alert alert alert-warning alert--show-icon alert--paragraph "
             role="alert" aria-label="warning">
             <div class="alert-body">
-                <p class="alert-heading">Skal din nye adresse beskyttes fra
-                    første dag?</p>
+                <p class="alert-heading ">Skal din nye adresse beskyttes
+                    fra første dag?</p>
                 <p class="alert-text">Hvis du ønsker navne- og
                     adressebeskyttelse i forbindelse med denne flytning,
                     bør du anmode om navne- og adressebeskyttelse, før du
                     anmelder flytning. Ellers risikerer du, at navne- og
                     adressebeskyttelsen ikke er gældende fra første dag på
                     din nye adresse.</p>
+
             </div>
         </div>
 
@@ -212,7 +213,7 @@ title: Example-flytning-page-1.html
         </div>
     </div>
     <nav class="page-navigation">
-        <a href="//pages/eksempler/digital-flytning/flytning-2"
+        <a href="/pages/eksempler/digital-flytning/flytning-2"
             class="button button-primary">Næste</a>
     </nav>
 
@@ -221,7 +222,7 @@ title: Example-flytning-page-1.html
     </div>
     <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
-            <div class="card">
+            <div class="card card-align-height">
                 <div class="card-header">
                     <p class="h5 header-title" title="Card header"
                         aria-label="Card header adressebeskyttelse">
@@ -229,21 +230,23 @@ title: Example-flytning-page-1.html
                     <p class="sub-header">Her kan du kan oprette, rette
                         eller slette dine adressebeskyttelser.</p>
                 </div>
-                <div class="card-action">
-                    <div class="action-links">
-                        <ul class="nobullet-list">
-                            <li>
-                                <a href="#"
-                                    class="icon-link">Adressebeskyttelse
-                                    <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
-                            </li>
-                        </ul>
+                <div class="card-footer">
+                    <div class="card-action">
+                        <div class="action-links">
+                            <ul class="nobullet-list">
+                                <li>
+                                    <a href="#"
+                                        class="icon-link">Adressebeskyttelse
+                                        <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
-            <div class="card">
+            <div class="card card-align-height">
                 <div class="card-header">
                     <p class="h5 header-title" title="Card header"
                         aria-label="Card header adressebeskyttelse">Udrejse
@@ -251,21 +254,23 @@ title: Example-flytning-page-1.html
                     <p class="sub-header">Hvis du flytter til udlandet,
                         skal du benytte nedenstående link.</p>
                 </div>
-                <div class="card-action">
-                    <div class="action-links">
-                        <ul class="nobullet-list">
-                            <li>
-                                <a href="#" class="icon-link">Anmeld
-                                    udrejse
-                                    <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
-                            </li>
-                        </ul>
+                <div class="card-footer">
+                    <div class="card-action">
+                        <div class="action-links">
+                            <ul class="nobullet-list">
+                                <li>
+                                    <a href="#" class="icon-link">Anmeld
+                                        udrejse
+                                        <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
-            <div class="card">
+            <div class="card card-align-height">
                 <div class="card-header">
                     <p class="h5 header-title" title="Card header"
                         aria-label="Card header adressebeskyttelse">
@@ -273,15 +278,17 @@ title: Example-flytning-page-1.html
                     <p class="sub-header">Afgiv en eller flere fulmagt til
                         at anmelde flytning.</p>
                 </div>
-                <div class="card-action">
-                    <div class="action-links">
-                        <ul class="nobullet-list">
-                            <li>
-                                <a href="#" class="icon-link">Angiv
-                                    fuldmagt
-                                    <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
-                            </li>
-                        </ul>
+                <div class="card-footer">
+                    <div class="card-action">
+                        <div class="action-links">
+                            <ul class="nobullet-list">
+                                <li>
+                                    <a href="#" class="icon-link">Angiv
+                                        fuldmagt
+                                        <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

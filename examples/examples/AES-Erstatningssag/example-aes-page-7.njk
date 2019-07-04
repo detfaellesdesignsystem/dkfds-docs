@@ -35,7 +35,7 @@
       <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
           <div class="nav-actions">
-            <a href="" class="function-link">{{icon_svg("save")}} Gem kladde</a>
+            <a href="" class="function-link">{{icon_svg("save")}}Gem kladde</a>
           </div>
         </div>
       </div>
@@ -114,9 +114,8 @@
         </ul>
         "
     ) }}
-    <div class="form-group mt-0">
-        <fieldset>
-            <legend><h1>Tilføj dokumentation fra sagen</h1></legend>
+        <div role="group" aria-describedby="dokumentation-fra-sagen">
+            <h1 id="dokumentation-fra-sagen">Tilføj dokumentation fra sagen</h1>
             <ul class="nobullet-list">
                 <li>
                     {{ checkbox("id-documentation-1", "Oplysninger om varigt mén", "Oplysninger om varigt mén", false, false, "Oplysninger om varigt mén", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check' aria-controls='collapse-check' aria-expanded='false'") }}
@@ -260,8 +259,7 @@
                     </div>
                 </li>
             </ul>
-        </fieldset>
-    </div>
+        </div>
     <nav class="page-navigation">
         <a href="/pages/eksempler/AES-erstatningssag/aes-8" class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-6" class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>

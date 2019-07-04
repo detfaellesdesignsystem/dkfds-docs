@@ -6,12 +6,12 @@ title: Example-flytning-page-5.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -94,16 +94,17 @@ title: Example-flytning-page-5.html
 
 <main class="container page-container">
 
-    <div class="alert alert alert-error alert--show-icon" role="alert"
+    <div class="alert alert alert-error alert--show-icon " role="alert"
         aria-label="error">
         <div class="alert-body">
-            <p class="alert-heading">Der er sket en fejl</p>
+            <p class="alert-heading ">Der er sket en fejl</p>
             <p class="alert-text">Der er sket en fejl hos KRAK. Afstanden
                 til din nuværende læge kan ikke beregnes i øjeblikket.
                 Beregningen er vigtig for at dit lægevalg kan blive
                 registreret korrekt. Fejlen er blevet registreret og vil
                 blive rettet hurtigst muligt. Prøv at registrere din
                 flytning senere.</p>
+
         </div>
     </div>
 
@@ -165,14 +166,15 @@ title: Example-flytning-page-5.html
     <h1>Lægevalg</h1>
     <div class="mt-0">
 
-        <div class="alert alert alert-info alert--paragraph" role="alert"
+        <div class="alert alert alert-info alert--paragraph " role="alert"
             aria-label="warning">
             <div class="alert-body">
-                <p class="alert-heading">Når du anmelder flytning skal du
+                <p class="alert-heading ">Når du anmelder flytning skal du
                     altid vælge læge også selv om det er tidligere læge du
                     ønsker.</p>
                 <p class="alert-text">
                     <br>Du kan kontakte Folkeregisteret, på telefonnr. 3366 3366, såfremt der er lukket for tilgang til læger inden for en radius af 5 km.<br><br>Flytter du inden for Københavns kommune, men uden for lægens 5 km grænse, kan du beholde lægen. Du skal acceptere ikke at kunne få sygebesøg af lægen.<br><br>Flytter du tik Københavns kommune uden for lægens km grænse, kan du kun beholde din læge, hvis du opfylder betingelserne og accepterer ikke at kunne få sygebesøg af lægen.<br><br>Betingelserne i § 1 stk 9, i Bekendtgørelsen om valg og skift af alment praktiserende læge og om behandling hos læge i praksissektoren for at kunne beholde lægen.<br><br>Du vil modtage dit nye sundhedskort i løbet af 2-3 uger. Hvis du ikke modtager dit nye sundhedskort, skal du kontakte kommunen inden 60 dage fra din flyttedato. Ellers kommer du til at betale for dit nye kort.</p>
+
             </div>
         </div>
 
@@ -181,33 +183,29 @@ title: Example-flytning-page-5.html
         <label class="form-label">Ny adresse</label>
         <p class="mt-0">Odensegade 23, 4.tv. 2100 København Ø</p>
     </div>
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-            <table
-                class="table table--borderless table--compact table--responsive-headers mt-5">
-                <thead>
-                    <tr>
-                        <th>Personer som flytter</th>
-                        <th>Læge efter flytning</th>
-                        <th>Afstand</th>
-                        <th class="align-text-md-right">Skift læge</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Klaus Egegreen Hansen</td>
-                        <td>John Doe <br>Østerbrogade 893 18.tv.
-                            <br>2100 København Ø</td>
-                        <td>0,6 Km</td>
-                        <td class="align-text-md-right"><a href="#"
-                                title="Skift læge">
-                                <svg class='icon-svg'><use xlink:href='#pencil'></use></svg></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <table
+        class="table table--borderless table--compact table--responsive-headers mt-5 w-percent-lg-70">
+        <thead>
+            <tr>
+                <th>Personer som flytter</th>
+                <th>Læge efter flytning</th>
+                <th>Afstand</th>
+                <th class="align-text-md-right">Skift læge</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Klaus Egegreen Hansen</td>
+                <td>John Doe <br>Østerbrogade 893 18.tv.
+                    <br>2100 København Ø</td>
+                <td>0,6 Km</td>
+                <td class="align-text-md-right"><a href="#"
+                        title="Skift læge">
+                        <svg class='icon-svg'><use xlink:href='#pencil'></use></svg></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <nav class="page-navigation">
         <a href="#" class="button button-primary">Næste</a>

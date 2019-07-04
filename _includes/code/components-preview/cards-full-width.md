@@ -6,7 +6,7 @@ title: Cards-full-width.html
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <div class="card">
+            <div class="card ">
 
                 <div class="card-header">
                     <p class="h5 header-title" title="Card header"

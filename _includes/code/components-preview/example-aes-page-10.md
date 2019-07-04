@@ -6,12 +6,12 @@ title: Example-aes-page-10.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -81,65 +81,62 @@ title: Example-aes-page-10.html
 
 <main class="container page-container">
 
-    <div class="alert alert alert-success alert--show-icon" role="alert"
+    <div class="alert alert alert-success alert--show-icon " role="alert"
         aria-label="success">
         <div class="alert-body">
-            <p class="alert-heading">Sagen er sendt til AES</p>
+            <p class="alert-heading ">Sagen er sendt til AES</p>
             <p class="alert-text"></p>
+
         </div>
     </div>
 
-    <div class="alert alert alert-warning alert--show-icon" role="alert"
+    <div class="alert alert alert-warning alert--show-icon " role="alert"
         aria-label="warning">
         <div class="alert-body">
-            <p class="alert-heading">Husk betaling</p>
+            <p class="alert-heading ">Husk betaling</p>
             <p class="alert-text">Gebyret skal indsættes på vores konto i
                 banken</p>
+
         </div>
     </div>
 
+    <h1 class="mt-5">Kvittering</h1>
+    <p class="form-hint mt-2">Referencenummer: 28346863</p>
+    <p class="mb-4">Hvis du ønsker dokumentation på fremsendelse kan du
+        downloade anmodningen.</p>
+    <button
+        class="button button-secondary"><svg class="icon-svg "  ><use xlink:href="#download"></use></svg>
+        Download kvittering som pdf</button>
+    <h2 class="h4 mt-7">Hvad sker der nu</h2>
+    <p>Sagens parter vil indenfor 7 hverdage modtage en kvittering med
+        journalnummer og oplysninger om, hvornår AES forventer at have en
+        udtalelse klar.</p>
+    <h2 class="h4 mt-7">Husk betaling</h2>
+    <p class="my-0">Gebyret for udtalelsen skal sættes ind på vores konto i
+        Danske Bank:</p>
     <div class="row">
-        <div class="col-12">
-            <h1 class="mt-5">Kvittering</h1>
-            <p class="form-hint mt-2">Referencenummer: 28346863</p>
-            <p class="mb-4">Hvis du ønsker dokumentation på fremsendelse
-                kan du downloade anmodningen.</p>
-            <button
-                class="button button-secondary"><svg class="icon-svg "  ><use xlink:href="#download"></use></svg>
-                Download kvittering som pdf</button>
-            <h2 class="h4 mt-7">Hvad sker der nu</h2>
-            <p>Sagens parter vil indenfor 7 hverdage modtage en kvittering
-                med journalnummer og oplysninger om, hvornår AES forventer
-                at have en udtalelse klar.</p>
-            <h2 class="h4 mt-7">Husk betaling</h2>
-            <p class="my-0">Gebyret for udtalelsen skal sættes ind på vores
-                konto i Danske Bank:</p>
-            <div class="row">
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3">
-                    <table class="table table--borderless table--compact">
-                        <tbody>
-                            <tr>
-                                <td class="weight-semibold">Reg.nr.:</td>
-                                <td>0216</td>
-                            </tr>
-                            <tr>
-                                <td class="weight-semibold">Kontonr.:</td>
-                                <td>4069068936</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <p>Gebyr: 6.220 kr.
-                <br> Ved overførslen skal I oplyse skadelidtes CPR-nr.: 1702671913</p>
-                <h2 class="h4">Ved spørgsmål eller supplerende oplysninger
-                </h2>
-                <p>Kontakt AES på aes@aes.dk eller 72 00 60 00
-                    <br> Referencenummer: 28346863</p>
-                    <button class="button button-secondary mt-7">Opret ny
-                        sag</button>
+        <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+            <table class="table table--borderless table--compact">
+                <tbody>
+                    <tr>
+                        <td class="weight-semibold">Reg.nr.:</td>
+                        <td>0216</td>
+                    </tr>
+                    <tr>
+                        <td class="weight-semibold">Kontonr.:</td>
+                        <td>4069068936</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    <p>Gebyr: 6.220 kr.
+        <br> Ved overførslen skal I oplyse skadelidtes CPR-nr.: 1702671913</p>
+        <h2 class="h4">Ved spørgsmål eller supplerende oplysninger</h2>
+        <p>Kontakt AES på aes@aes.dk eller 72 00 60 00
+            <br> Referencenummer: 28346863</p>
+            <button class="button button-secondary mt-7">Opret ny
+                sag</button>
 </main>
 
 <footer>

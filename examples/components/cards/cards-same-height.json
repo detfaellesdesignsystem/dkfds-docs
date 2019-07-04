@@ -1,0 +1,27 @@
+{
+  "cards7_examples": {
+    "items": [
+      {
+        "name": "card7",
+        "header": "Header",
+        "subheader": "Understøttende tekst",
+        "cardtext": "Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til.",
+        "actionbuttons": "<button class=\"button button-secondary\">Sekundærknap</button>"
+      },
+      {
+        "name": "card7",
+        "header": "Header",
+        "subheader": "Understøttende tekst",
+        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg\" class=\"d-block\" alt=\"\" />",
+        "actionbuttons": "<button class=\"button button-secondary\">Sekundærknap</button>"
+      },
+      {
+        "name": "card7",
+        "header": "Header",
+        "subheader": "Understøttende tekst",
+        "cardtext": "Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til.",
+        "actionbuttons": "<button class=\"button button-secondary\">Sekundærknap</button>"
+      }
+    ]
+  }
+}

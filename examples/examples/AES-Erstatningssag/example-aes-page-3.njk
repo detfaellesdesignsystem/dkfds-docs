@@ -101,17 +101,15 @@
         "
     ) }}
 
-    <h1>Oplysninger om skadelidte</h1>
-
-    <div class="form-group search">
-      <label for="iid-cpr" class="sr-only">Skadelidtes CPR-nr.</label>
-      <input class="form-input input-width-xs" id="id-cpr" name="" title="Search" type="search">
-      <button class="button button-search">{{ icon_svg('magnify', 'm-0')}}<span class="sr-only">Søg</span></button>
-    </div>
-    <div class="mt-5">
-        <label class="form-label">Navn</label>
-        <p class="mt-0">Susanne Maria Zaggariasen</p>
-    </div>
+    <fieldset>
+        <legend><h1>Oplysninger om skadelidte</h1></legend>
+        <div class="form-group search">
+          <label for="iid-cpr" class="sr-only">Skadelidtes CPR-nr.</label>
+          <input class="form-input input-width-xs" id="id-cpr" name="" title="Search" type="search">
+          <button class="button button-search">{{ icon_svg('magnify', 'm-0')}}<span class="sr-only">Søg</span></button>
+        </div>
+        {{textinput("navn", "Navn", "", "input-width-m", "", "navn", "", false, "", "", "", "Susanne Maria Zaggariasen", "", "", true)}}
+    </fieldset>
     <nav class="page-navigation">
         <a href="/pages/eksempler/AES-erstatningssag/aes-4" class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-2" class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>

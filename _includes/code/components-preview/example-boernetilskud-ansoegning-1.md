@@ -6,12 +6,12 @@ title: Example-boernetilskud-ansoegning-1.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header d-print-none">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 aria-label="logo link" class="logo alert-leave"></a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto"
+                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
@@ -214,17 +214,18 @@ title: Example-boernetilskud-ansoegning-1.html
                             <ul class="nobullet-list">
                                 <li>
 
-                                    <div class="alert alert-warning"
+                                    <div class="alert alert-warning "
                                         role="alert"
                                         aria-label="Beskedbox der viser en advarsel">
                                         <div class="alert-body">
-                                            <p class="alert-heading">
+                                            <p class="alert-heading ">
                                                 Allerede registreret</p>
                                             <p class="alert-text">Sed ut
                                                 perspiciatis unde omnis
                                                 iste natus error sit
                                                 voluptatem accusantium
                                                 doloremque laudantium.</p>
+
                                         </div>
                                     </div>
 
@@ -240,17 +241,18 @@ title: Example-boernetilskud-ansoegning-1.html
                                 </li>
                                 <li>
 
-                                    <div class="alert alert-warning"
+                                    <div class="alert alert-warning "
                                         role="alert"
                                         aria-label="Beskedbox der viser en advarsel">
                                         <div class="alert-body">
-                                            <p class="alert-heading">
+                                            <p class="alert-heading ">
                                                 Allerede registreret</p>
                                             <p class="alert-text">Sed ut
                                                 perspiciatis unde omnis
                                                 iste natus error sit
                                                 voluptatem accusantium
                                                 doloremque laudantium.</p>
+
                                         </div>
                                     </div>
 

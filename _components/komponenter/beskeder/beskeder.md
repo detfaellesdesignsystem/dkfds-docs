@@ -5,7 +5,16 @@ type: component
 title: Beskeder (Alerts)
 category: Komponenter_category
 subcategory: Komponenter
-description: Beskeder (Alerts) er farvede bokse, eventuelt tilknytte et ikon, du kan bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer, o.l. 
+description: Beskeder (Alerts) er farvede bokse, eventuelt tilknytte et ikon, du kan bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer, o.l.
+subnav:
+- text: Standard
+  href: '#standard'
+- text: Beskeder med ikon
+  href: '#beskeder-med-ikon'
+- text: Forskellige teksteksempler
+  href: '#forskellige-teksteksempler'
+- text: Beskeder med lukknap
+  href: '#beskeder-med-lukknap'
 ---
 <h2 class="h3">Retningslinjer</h2>
 <section>

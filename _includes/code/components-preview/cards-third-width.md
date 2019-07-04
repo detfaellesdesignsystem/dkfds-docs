@@ -6,7 +6,7 @@ title: Cards-third-width.html
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="card">
+            <div class="card ">
 
                 <div class="card-header">
                     <p class="h5 header-title" title="Card header"
@@ -47,7 +47,7 @@ title: Cards-third-width.html
 
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-            <div class="card">
+            <div class="card ">
 
                 <div class="card-header">
                     <p class="h5 header-title" title="Card header"
@@ -72,7 +72,7 @@ title: Cards-third-width.html
 
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-                <div class="card">
+                <div class="card ">
 
                     <div class="card-header">
                         <p class="h5 header-title" title="Card header"
