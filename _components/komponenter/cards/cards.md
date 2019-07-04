@@ -12,6 +12,8 @@ subnav:
   href: '#card-med-halv-bredde'
 - text: Card med tredjedel bredde
   href: '#card-med-tredjedel-bredde'
+- text: Cards med samme højde
+  href: '#cards-med-samme-højde'
 ---
 
 <h2 class="h3">Retningslinjer</h2>
