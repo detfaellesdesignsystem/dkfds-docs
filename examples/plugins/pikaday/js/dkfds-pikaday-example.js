@@ -1,6 +1,6 @@
 'use strict';
 import $ from "jquery";
-window.$ = window.jQuery = $
+window.$ = window.jQuery = $;
 const Pikaday = require('pikaday');
 const jsDatepickerSelector = '.js-calendar-datepicker';
 const jsDayInput = '.js-calendar-day-input';
@@ -12,7 +12,7 @@ class datepickerGroup {
       this.pikadayInstance = null;
       this.datepickerElement = $(el).find(jsDatepickerSelector);
       this.dateGroup = el;
-      this.formGroup = $(el).parent('.form-group');
+      this.formGroup = $(el).parent('fieldset');
       this.dayInputElement = null;
       this.monthInputElement = null;
       this.yearInputElement = null;
