@@ -6747,6 +6747,8 @@ a.skipnav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-flow: row wrap; }
+    .card-align-height > * {
+      width: 100%; }
     .card-align-height .card-footer {
       align-self: flex-end; }
   .card p {
@@ -7343,6 +7345,21 @@ a.skipnav {
   border: none;
   background: none;
   padding: 0; }
+
+@media print {
+  body {
+    display: block; }
+  .page-container {
+    display: block; }
+  fieldset {
+    page-break-before: avoid;
+    page-break-inside: auto;
+    display: block;
+    overflow: visible !important; }
+  .form-group {
+    page-break-inside: avoid; }
+  .form-label {
+    page-break-after: avoid; } }
 
 table.dataTable th:focus, table.dataTable td:focus {
   outline: 4px solid #747474;
