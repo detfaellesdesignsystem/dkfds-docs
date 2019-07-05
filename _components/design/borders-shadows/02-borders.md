@@ -5,30 +5,7 @@ parent: borders-shadows
 order: 02
 ---
 
-<div class="component-preview ">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-6">
-                <p class="h5">Ydre-streger</p>
-                <p class="form-hint">Bruges til de yderste streger i et element, se fx tabeller.</p>
-                <div class="outer-border-example"></div>
-                
-                <p class="h5">Indre-streger</p>
-                <p class="form-hint">Bruges til indre streger i et element, se fx tabeller.</p>
-                <div class="inner-border-example"></div>
-                
-                <p class="h5">Knap-streger</p>
-                <p class="form-hint">Specifik streg til knapper.</p>
-                <div class="button-border-example"></div>
-                
-                <p class="h5">Horisontal ruler</p>
-                <p class="form-hint">Hr-tagget har samme farve som den Indre streg</p>
-                <hr>
-            </div>
-        </div>
-    </div>
-</div>
-
+{% include code/preview.html component="borders" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="borders-docs">
