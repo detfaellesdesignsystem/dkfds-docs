@@ -7359,7 +7359,31 @@ a.skipnav {
   .form-group {
     page-break-inside: avoid; }
   .form-label {
-    page-break-after: avoid; } }
+    page-break-after: avoid; }
+  .form-checkbox + label::before,
+  .form-radio + label::before {
+    border: none; }
+  .form-checkbox:checked + label:after, .form-radio:checked + label:after, .form-checkbox.checkbox-large:checked + label:after, .form-radio.radio-large:checked + label:after {
+    box-shadow: -2px 2px 0 0 #000;
+    transform: rotate(-46deg);
+    -webkit-transform: rotate(-46deg);
+    border-radius: 0;
+    height: 7px;
+    width: 12px;
+    background-color: transparent;
+    position: absolute;
+    left: 3px;
+    top: 4px; }
+  .form-checkbox.checkbox-large:checked + label:after, .form-radio.radio-large:checked + label:after {
+    height: 12px;
+    width: 22px;
+    left: 6px;
+    top: 6px; }
+  .form-radio + label::before {
+    border-radius: 0; }
+  .form-checkbox + label::before, .form-radio + label::before, .form-checkbox:checked + label:before {
+    border: 0;
+    background-color: transparent; } }
 
 table.dataTable th:focus, table.dataTable td:focus {
   outline: 4px solid #747474;
@@ -8532,16 +8556,16 @@ code {
   width: 144px;
   height: 120px;
   background-color: #F5F5F5;
-  border-left: solid 6px #1a1a1a;
-  border-top: solid 6px #1a1a1a; }
+  border-left: 1px solid #747474;
+  border-top: 1px solid #747474; }
 
 .interactive-border-radius-example {
   border-top-left-radius: 4px;
   width: 144px;
   height: 120px;
   background-color: #F5F5F5;
-  border-left: solid 6px #1a1a1a;
-  border-top: solid 6px #1a1a1a; }
+  border-left: 1px solid #747474;
+  border-top: 1px solid #747474; }
 
 .outer-border-example {
   border-top: 1px solid #747474; }
