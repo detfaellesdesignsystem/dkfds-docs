@@ -24,6 +24,8 @@ subnav:
   href: '#positiv-negativ-farver'
 - text: Datavisualiseringsfarver
   href: '#datavisualiseringsfarver'
+- text: Tekst på baggrundsfarver
+  href: '#tekst-baggrundsfarver'
 ---
 
 <p><a href="/design/visueltdesign/">Om det visuelle design (look and feel)</a></p>
@@ -653,7 +655,7 @@ subnav:
 </div>
 
 
-<h2 class="heading">Tekst på baggrundsfarver</h2>
+<h2 class="heading" id="tekst-baggrundsfarver">Tekst på baggrundsfarver</h2>
 <p class="font-lead">Din tekst skal være læsbar for alle og efterleve gældende regler for kontrastforhold.</p>
 <p>Nedenfor er angivet på hvilke baggrundsfarver, du kan regne med at designsystemets tekst har kontrast nok.</p>
 <ul class="nobullet-list">
