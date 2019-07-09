@@ -4,7 +4,7 @@ parent: Hjælpefunktioner
 order: 03
 ---
 
-<p>Der er opsat hjælpefunktioner som genererer klasser til margin og padding. Disse hjælpefunktioner er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/" class="icon-link">Bootstraps Spacing Utilities<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+<p>Der er opsat hjælpefunktioner som genererer klasser til margin og padding. Disse hjælpefunktioner er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/" class="icon-link">Bootstraps Spacing Utilities<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 Format: <code>{css-egenskab}{retning}-{størrelse}</code> og <code>{css-egenskab}{retning}-{breakpoint}-{størrelse}</code>.
 
 <h3 class="h5 mb-0">CSS egenskab:</h3>

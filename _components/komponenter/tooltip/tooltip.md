@@ -38,8 +38,8 @@ lead: Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller 
         </ul>
         <h3 class="h5">Links</h3>
         <ul class="nobullet-list">
-            <li><a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
     </section>
 </article>
@@ -50,7 +50,7 @@ lead: Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller 
   </button>
   <div id="tooltip-code-doc" class="accordion-content">
      <section>
-       <p>Tooltips og popovers bygger på <a href="https://atomiks.github.io/tippyjs/" class="icon-link">tippy.js<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+       <p>Tooltips og popovers bygger på <a href="https://atomiks.github.io/tippyjs/" class="icon-link">tippy.js<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
        <p>For at initialisere et tooltip eller en popover skal et HTML-element have klassen <code>'.js-tooltip'</code> og en <code>'title'</code>-attribut:</p>
        <div class="code-highlight">
          <code>
@@ -58,7 +58,7 @@ lead: Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller 
          </code> 
        </div>
        <p>Vi definerer et tooltip som en hjælpetekst som vises ved mouseover, og en popover som hjælpetekst der vises ved et klik. For at lave et tooltip om til en popover skal der tilføjes følgende attribut: <code>data-tippy-trigger="click"</code></p>
-       <p>Tippy.js har mange konfigurationsmuligheder, og den fulde liste kan ses på <a href="https://atomiks.github.io/tippyjs/" class="icon-link">deres hjemmeside<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+       <p>Tippy.js har mange konfigurationsmuligheder, og den fulde liste kan ses på <a href="https://atomiks.github.io/tippyjs/" class="icon-link">deres hjemmeside<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
        <p>I følgende eksempel er tooltippet konfigureret til at vises til venstre: </p>
        <div class="code-highlight">
          <code>

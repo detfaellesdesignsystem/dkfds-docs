@@ -62,7 +62,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/design/typography/">Typografi</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/typography/" class="icon-link">Typography<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://designsystem.digital.gov/components/typography/" class="icon-link">Typography<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -82,7 +82,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
-                        <td><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                     </tr>
                     <tr>
@@ -98,7 +98,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/design/grid/">Grid</a></td>
                         <td></td>
-                        <td><a href="https://v2.designsystem.digital.gov/utilities/layout-grid/" class="icon-link">Layout Grid<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://v2.designsystem.digital.gov/utilities/layout-grid/" class="icon-link">Layout Grid<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -107,7 +107,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/komponenter/buttons/">Knapper</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/buttons/" class="icon-link">Buttons<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://designsystem.digital.gov/components/buttons/" class="icon-link">Buttons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -125,7 +125,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/komponenter/accordions/">Accordions</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/accordions/" class="icon-link">Accordions<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://designsystem.digital.gov/components/accordions/" class="icon-link">Accordions<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -134,7 +134,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/komponenter/beskeder/">Beskeder</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/alerts/" class="icon-link">Alerts<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://designsystem.digital.gov/components/alerts/" class="icon-link">Alerts<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -146,17 +146,17 @@ subnav:
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
-                        <td><a href="https://www.lightningdesignsystem.com/components/cards/" class="icon-link">Lightning Design System<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://www.lightningdesignsystem.com/components/cards/" class="icon-link">Lightning Design System<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                     </tr>
                     <tr>
                         <td>Ja</td>
                         <td><a href="/komponenter/form-controls/">Formular elementer</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/form-controls/" class="icon-link">Form controls<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
-                        <td><a href="https://design-system.service.gov.uk/components/radios/" class="icon-link">Radio<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a><br>
-                            <a href="https://design-system.service.gov.uk/components/checkboxes/" class="icon-link">Checkbox<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a><br>
-                            <a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">Date input<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a><br>
-                            <a href="https://design-system.service.gov.uk/components/file-upload/" class="icon-link">File upload<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a><br>
+                        <td><a href="https://designsystem.digital.gov/components/form-controls/" class="icon-link">Form controls<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://design-system.service.gov.uk/components/radios/" class="icon-link">Radio<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a><br>
+                            <a href="https://design-system.service.gov.uk/components/checkboxes/" class="icon-link">Checkbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a><br>
+                            <a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">Date input<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a><br>
+                            <a href="https://design-system.service.gov.uk/components/file-upload/" class="icon-link">File upload<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a><br>
                         </td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -168,13 +168,13 @@ subnav:
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
-                        <td><a href="https://github.com/woocommerce/selectWoo" class="icon-link">SelectWoo<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://github.com/woocommerce/selectWoo" class="icon-link">SelectWoo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                     </tr>
                     <tr>
                         <td>Ja</td>
                         <td><a href="/komponenter/search/">Søgefelt</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/search-bar/" class="icon-link">Search bar<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://designsystem.digital.gov/components/search-bar/" class="icon-link">Search bar<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -183,9 +183,9 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/komponenter/badges/">Badges</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/labels/" class="icon-link">Labels<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
-                        <td><a href="https://design-system.service.gov.uk/components/tag/" class="icon-link">Tags<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a><br>
-                            <a href="https://design-system.service.gov.uk/components/phase-banner/" class="icon-link">Phase banner<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                        <td><a href="https://designsystem.digital.gov/components/labels/" class="icon-link">Labels<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://design-system.service.gov.uk/components/tag/" class="icon-link">Tags<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a><br>
+                            <a href="https://design-system.service.gov.uk/components/phase-banner/" class="icon-link">Phase banner<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
                         </td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -194,7 +194,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/komponenter/tables/">Tabeller</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/tables/" class="icon-link">Tables<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://designsystem.digital.gov/components/tables/" class="icon-link">Tables<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -206,7 +206,7 @@ subnav:
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
-                        <td><a href="https://datatables.net/" class="icon-link">Data Tables<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://datatables.net/" class="icon-link">Data Tables<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                     </tr>
                     <tr>
                         <td>Ja</td>
@@ -221,7 +221,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/komponenter/sidenav/">Sidenavigation</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/sidenav/" class="icon-link">Sidenavigation<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://designsystem.digital.gov/components/sidenav/" class="icon-link">Sidenavigation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -230,7 +230,7 @@ subnav:
                         <td>Ja</td>
                         <td><a href="/komponenter/tabnav/">Faneblade</a></td>
                         <td></td>
-                        <td><a href="https://designsystem.digital.gov/components/headers/" class="icon-link">Headers<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://designsystem.digital.gov/components/headers/" class="icon-link">Headers<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
@@ -242,7 +242,7 @@ subnav:
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
-                        <td><a href="https://projects.lukehaas.me/css-loaders/" class="icon-link">CSS Loaders<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://projects.lukehaas.me/css-loaders/" class="icon-link">CSS Loaders<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                     </tr>
                     <tr>
                         <td>Ja</td>
@@ -251,7 +251,7 @@ subnav:
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
-                        <td><a href="http://www.carbondesignsystem.com/components/overflow-menu/code" class="icon-link">Carbon Design System<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="http://www.carbondesignsystem.com/components/overflow-menu/code" class="icon-link">Carbon Design System<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                     </tr>
                     <tr>
                         <td>Nej</td>
@@ -260,7 +260,7 @@ subnav:
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
-                        <td><a href="https://micromodal.now.sh/" class="icon-link">MicroModal<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://micromodal.now.sh/" class="icon-link">MicroModal<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                     </tr>
                     <tr>
                         <td>Nej</td>
@@ -269,14 +269,14 @@ subnav:
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
-                        <td><a href="https://atomiks.github.io/tippyjs/" class="icon-link">Tippy.js<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://atomiks.github.io/tippyjs/" class="icon-link">Tippy.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                     </tr>
                     <tr>
                         <td>Ja</td>
                         <td><a href="/komponenter/collapse/">Skjul og vis (Collapse)</a></td>
                         <td></td>
                         <td><a href=""></a></td>
-                        <td><a href="https://design-system.service.gov.uk/components/radios/" class="icon-link">Radios<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></td>
+                        <td><a href="https://design-system.service.gov.uk/components/radios/" class="icon-link">Radios<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></td>
                         <td><a href=""></a></td>
                         <td><a href=""></a></td>
                     </tr>
@@ -323,13 +323,13 @@ subnav:
         <h3 class="h5">Læs mere om webtilgængelighed</h3>
         <ul class="nobullet-list">
             <li>
-                <a href="https://digst.dk/digital-service/webtilgaengelighed/" class="icon-link">Webtilgængelighed<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                <a href="https://digst.dk/digital-service/webtilgaengelighed/" class="icon-link">Webtilgængelighed<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
             </li>
             <li>
-                <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">Web Content Accessibility Guidelines (WCAG) 2.1<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">Web Content Accessibility Guidelines (WCAG) 2.1<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
             </li>
             <li>
-                <a href="https://www.w3.org/WAI/WCAG21/quickref/" class="icon-link">How to Meet WCAG 2 (Quick Reference)<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                <a href="https://www.w3.org/WAI/WCAG21/quickref/" class="icon-link">How to Meet WCAG 2 (Quick Reference)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
             </li>
         </ul>
     </section>
@@ -362,46 +362,46 @@ subnav:
         <p>I designsystemet går alle vertikale dimensioner og afstande op med en faktor 8. Gennem gentagelsen af værdier opstår der en ro og balance på tværs af det visuelle layout og mellem sidens lodrette elementer.</p>
         <h4 class="h5">Læs mere om 8pt grid</h4>
         <ul class="nobullet-list">
-            <li><a href="https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032" class="icon-link">8-Point Grid: Vertical Rhythm<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032" class="icon-link">8-Point Grid: Vertical Rhythm<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
     </section>
     <section>
         <h2 id="font">Font</h2>
         <p>Det Fælles Designsystem anvender en typografi baseret på skrifttypen IBM Plex Sans (som er en webfont), en farveskala og specificeringer til blandt andet hjørner, streger og skygger.</p>
-        <p>IBM Plex Sans er valgt som font, da det er en æstetisk og læsbar open source font, der kan anvendes gratis under <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web" class="icon-link">SIL Open Font License<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+        <p>IBM Plex Sans er valgt som font, da det er en æstetisk og læsbar open source font, der kan anvendes gratis under <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web" class="icon-link">SIL Open Font License<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
         <p>IBM Plex Sans er en alsidig sans serif font, der egner sig godt til brugergrænseflader. Fonten har de karakteristika, som designsystemet promoverer. Den er simpel og neutral i sit udtryk og yderst skalerbar grundet de mange variationer (typer, vægte, sprog, m.m.), som fonten understøtter.</p>
         <h3 class="h5">Læs mere om fonten</h3>
         <ul class="nobullet-list">
-            <li><a href="https://www.ibm.com/plex/" class="icon-link">IBM Plex Sans<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.ibm.com/plex/" class="icon-link">IBM Plex Sans<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
     </section>
     <section id="koden">
         <h2>Koden</h2>
         <p>Det Fælles designsystem er kodet i HTML5/CSS3 og det er tilstræbt, at al kode lever op til standarden.</p>
         <ul class="nobullet-list">
-            <li><a href="https://whatwg.org/" class="icon-link">Whatwg HTML5 specifikationer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.w3.org/Style/CSS/specs.en.html" class="icon-link">W3C CSS specifikationer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="http://html5doctor.com/" class="icon-link">HTML5 Doctor<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="icon-link">A Guide to flexbox<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://whatwg.org/" class="icon-link">Whatwg HTML5 specifikationer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.w3.org/Style/CSS/specs.en.html" class="icon-link">W3C CSS specifikationer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="http://html5doctor.com/" class="icon-link">HTML5 Doctor<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="icon-link">A Guide to flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Vanilla JS</h3>
         <p>For at øge ydeevnen gennem færre forespørgsler, der skal behandles, overhead og - ikke mindst - mindske afhængigheden til tredjepartsleverandører og deres potentielle tekniske gæld, er det besluttet, at designsystemet anvender Vanilla JS (Plain JS). Det vil sige, at designsystemet og de integrerede udvidelser ikke anvender framework som fx jQuery eller andet.</p>
         <h4 class="h5">Læs mere om Vanilla JS her</h4>
             <ul class="nobullet-list">
-            <li><a href="https://google.github.io/styleguide/jsguide.html" class="icon-link">Google JavaScript Style Guide<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.w3schools.com/js/js_conventions.asp" class="icon-link">JavaScript Style Guide<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://plainjs.com/" class="icon-link">Plain JS<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://google.github.io/styleguide/jsguide.html" class="icon-link">Google JavaScript Style Guide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.w3schools.com/js/js_conventions.asp" class="icon-link">JavaScript Style Guide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://plainjs.com/" class="icon-link">Plain JS<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Styling og temaer</h3>
         <h4 class="h5">Læs mere om styling her</h4>
             <ul class="nobullet-list">
-            <li><a href="https://designsystem.digital.gov/documentation/developers/#customization-and-theming" class="icon-link">Customization and theming<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://designsystem.digital.gov/documentation/developers/#customization-and-theming" class="icon-link">Customization and theming<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>CSS og JS arkitektur</h3>
         <p>Det Fælles Designsystem har en tilsvarende opbygning som US Web Design Standards.</p>    
         <h4 class="h5">Læs mere om CSS og JS arkitektur her</h4>
             <ul class="nobullet-list">
-            <li><a href="https://designsystem.digital.gov/documentation/developers/#css-architecture" class="icon-link">CSS architecture<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://designsystem.digital.gov/documentation/developers/#css-architecture" class="icon-link">CSS architecture<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Det Fælles Designsystem giver framework-frihed</h3>
         <p>Det Fælles Designsystem er en UX reference med en simpel, valgfri kodeløsning og ikke et endegyldigt teknologivalg. Designsystemet er en række anbefalinger, der understøtter en mere ensartet brugeroplevelse af offentlige selvbetjeningsløsninger.</p>
@@ -420,23 +420,23 @@ subnav:
             <li>Spinner</li>
             <li>Tags</li>
             <li>Trinindikatorer </li>
-            <li><a href="https://micromodal.now.sh/" class="icon-link">Modalvinduer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://atomiks.github.io/tippyjs/" class="icon-link">Tooltip<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://micromodal.now.sh/" class="icon-link">Modalvinduer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://atomiks.github.io/tippyjs/" class="icon-link">Tooltip<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <p>Andre udvidelser er valgfrie, og det er derfor op til udvikleren i samarbejde med sin forretning at vurdere, hvad der er nødvendigt for den enkelte løsning.</p>
         <p>Det Fælles Designsystem anbefaler følgende udvidelser:</p>
         <ul class="nobullet-list">
-            <li><a href="https://datatables.net/" class="icon-link">Avancerede tabeller<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://github.com/woocommerce/selectWoo" class="icon-link">Multiselect<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://pikaday.com/" class="icon-link">Pikaday<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://datatables.net/" class="icon-link">Avancerede tabeller<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://github.com/woocommerce/selectWoo" class="icon-link">Multiselect<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://pikaday.com/" class="icon-link">Pikaday<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>   
         <h3>Ikoner</h3>
         <p>Ikoner betragtes ikke som en reel udvidelse, selvom de bliver hentet udefra. Vi har udvalgt ikoner fra Material Design i .svg (Scalable Vector Graphic) format. De ligger som en samlet “pakke” af <code>symbol</code> efter <code>body</code>. På denne måde sparer vi et større antal forespørgsler for den enkelte side. Koden for ikoner fylder ganske lidt.</p>
         <p>Ikonerne er angivet som <code>symbol</code> med tilføjet <code>title</code> og <code>desc</code> og de kaldes i html koden vha <code>use</code>, fordi det er den mest effektive anvendelse af svg-ikoner, hvor man via shadow DOM dynamisk opretter kopier af det oprindelige <code>symbol</code>.</p>
         <h4>Læs mere om ikoner her</h4>
             <ul class="nobullet-list">
-            <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/" class="icon-link">Styling SVG <code>use</code> Content with CSS<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/" class="icon-link">Styling SVG <code>use</code> Content with CSS<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>  
         <h3>Det Fælles Designsystem stiller krav til udvidelser</h3>
         <p>For at sikre sammenhæng og ensartethed i designsystemet har vi opstillet en række minimumskrav til udvidelser af systemet:</p>
@@ -509,8 +509,8 @@ subnav:
         <p>Når browseren først åbner forbindelse til en given server, og derefter laver en tidlig indlæsning af en ressource, kan den senere hurtigt beregne eksempelvis layout. Bemærk, at browseren ikke anvender ressourcerne på dette tidspunkt, men kun gør dem klar. Det kaldes også ”lazy load”.</p>
         <h4 class="h5">Læs mere om preload her</h4>
             <ul class="nobullet-list">
-            <li><a href="https://www.w3.org/TR/preload/" class="icon-link">Preload<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/" class="icon-link">Preload - what is it good for?<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.w3.org/TR/preload/" class="icon-link">Preload<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/" class="icon-link">Preload - what is it good for?<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Fonte</h3>
         <p>Indlæsning og beregning af web-fonte kontra system-fonte kan potentielt være omkostningstungt for både leverandør og bruger. Ved at anvende preconnect, preload samt <code>font-display:swap</code> understøtter designsystemet brugerens behov for hurtig adgang til løsningens indhold.</p>
@@ -521,17 +521,17 @@ subnav:
         <p>Font-display er endnu ikke implementeret i IE/Edge. Løsningen er ikke desto mindre valgt, da den generelt set tilbyder det bedste alternativ.</p>
         <h5>Læs mere om font-stack her</h5>
             <ul class="nobullet-list">
-            <li><a href="https://css-tricks.com/snippets/css/system-font-stack/" class="icon-link">System font-stack<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://css-tricks.com/snippets/css/system-font-stack/" class="icon-link">System font-stack<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Favicon</h3>
         <p>Et favicon er en lille grafik, der vises i browserens fane – eksempelvis som desktop-ikon, bogmærke eller lignende. Der skal være et favicon til stede på serveren af hensyn til et default browser-forespørgsel, som ellers vil få indlæsningen til at føles langsom og generere en 404-fejl i loggen.</p>
         <p>Det er nødvendigt at generere en lang række varianter af favicons af hensyn til de mange platforme, brugere i dag benytter sig af.</p>
-        <p> I Det Fælles Designsystem har vi valgt at anvende <a href="https://realfavicongenerator.net/" class="icon-link">Real Favicon Generator<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>  og  favicon-filerne er placeret i en undermappe. </p>
+        <p> I Det Fælles Designsystem har vi valgt at anvende <a href="https://realfavicongenerator.net/" class="icon-link">Real Favicon Generator<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>  og  favicon-filerne er placeret i en undermappe. </p>
         <h4>Bemærk</h4>
         <p>Det har tidligere været et problem for iframes, at deres indhold også skulle have et favicon for ikke at generere en 404. Det har ikke været muligt at teste og bekræfte denne opførsel i moderne browsere.</p>
         <h4 class="h5">Læs mere om favicon her</h4>
             <ul class="nobullet-list">
-            <li><a href="https://realfavicongenerator.net/" class="icon-link">Real Favicon Generator<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://realfavicongenerator.net/" class="icon-link">Real Favicon Generator<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
     </section>
     <section id="versioner">

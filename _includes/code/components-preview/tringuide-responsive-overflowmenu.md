@@ -22,7 +22,7 @@ title: Tringuide-responsive-overflowmenu.html
                             <a href="#">
                                 1. Trin 1
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
@@ -30,7 +30,7 @@ title: Tringuide-responsive-overflowmenu.html
                             <a href="#">
                                 2. Trin 2
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>

@@ -37,7 +37,7 @@ title: Cards-third-width.html
                             <li><a href="javascript:void(0);"
                                     class="icon-link">Et link til et sted
                                     uden for
-                                    løsningen<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                                    løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
                             </li>
                         </ul>
                     </div>

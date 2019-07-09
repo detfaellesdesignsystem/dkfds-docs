@@ -20,7 +20,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
                 </li>
                 <li>
                     <a href="https://github.com/detfaellesdesignsystem/dkfds-components" class="icon-link">
-                        Se koden på Github<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg>
+                        Se koden på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>
                     </a>
                 </li>
             </ul>
@@ -58,7 +58,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             <li><a href="#">Få indflydelse i Samarbejdsforum</a></li>
             <li>
                 <a href="https://github.com/detfaellesdesignsystem/dkfds-components" class="icon-link">
-                    Meld fejl og mangler ind via GitHub<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg>
+                    Meld fejl og mangler ind via GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>
                 </a>
             </li>
         </ul>

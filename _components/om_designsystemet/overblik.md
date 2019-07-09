@@ -37,8 +37,8 @@ lead: Designsystemet anviser et minimalt og fleksibelt design. På de underligge
 
 <p>Det Fælles Designsystem er særligt inspireret af to andre velrenommerede offentlige open source designsystemer, nemlig:</p>
 <ul>
-    <li>det amerikanske <a href="https://v2.designsystem.digital.gov/" class="icon-link">US Web Design System<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li>det engelske <a href="https://design-system.service.gov.uk/" class="icon-link">GOV.uk Design System<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li>det amerikanske <a href="https://v2.designsystem.digital.gov/" class="icon-link">US Web Design System<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li>det engelske <a href="https://design-system.service.gov.uk/" class="icon-link">GOV.uk Design System<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 <p>Designsystemet bygger dermed på et fundament af internationalt anerkendte standarder og bedste praksis for design af løsninger, og vi anbefaler, at du også henter inspiration fra disse to, når behovet opstår.</p>
 

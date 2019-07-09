@@ -41,7 +41,7 @@ title: Header-full.html
                 <h6 class="h5 authority-name">Myndighedsnavn</h6>
                 <p>Support: 12 34 56 78 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
             </div>
         </div>
@@ -52,7 +52,7 @@ title: Header-full.html
         <!-- collapsible-->
         <button
             class="button button-secondary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
             <!--3A: Main navigation-->
@@ -123,7 +123,7 @@ title: Header-full.html
                                 data-js-target="#headeroverflow2"
                                 aria-haspopup="true" aria-expanded="false">
                                 Overflow menu
-                                <svg class="icon-svg "  ><use xlink:href="#menu-down"></use></svg>
+                                <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
                             </button>
                             <div class="overflow-menu-inner"
                                 id="headeroverflow2" aria-hidden="true">
@@ -157,7 +157,7 @@ title: Header-full.html
                                     aria-haspopup="true"
                                     aria-expanded="false">
                                     Overflow menu
-                                    <svg class="icon-svg "  ><use xlink:href="#menu-down"></use></svg>
+                                    <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
                                 </button>
                                 <div class="overflow-menu-inner"
                                     id="headeroverflow3"
@@ -199,9 +199,9 @@ title: Header-full.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  aria-hidden ="true"><use xlink:href="#printer"></use></svg>Funktionsikon</a>
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#printer"></use></svg>Funktionsikon</a>
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  aria-hidden ="true"><use xlink:href="#content-save"></use></svg>Funktionsikon</a>
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#content-save"></use></svg>Funktionsikon</a>
                 </div>
             </div>
         </div>
@@ -222,7 +222,7 @@ title: Header-full.html
             <h6 class="h5 authority-name">Myndighedsnavn</h6>
             <p>Support: 12 34 56 78 · <a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 

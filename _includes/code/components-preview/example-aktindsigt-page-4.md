@@ -59,7 +59,7 @@ title: Example-aktindsigt-page-4.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
@@ -109,10 +109,10 @@ title: Example-aktindsigt-page-4.html
     </div>
 
     <button href="#"
-        class="button button-secondary mt-7"><svg class="icon-svg "  ><use xlink:href="#download"></use></svg>
+        class="button button-secondary mt-7"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#download"></use></svg>
         Gem som pdf</button> <br>
     <button href="#"
-        class="button button-secondary mt-3"><svg class="icon-svg "  ><use xlink:href="#printer"></use></svg>
+        class="button button-secondary mt-3"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#printer"></use></svg>
         Print</button>
 
 </main>

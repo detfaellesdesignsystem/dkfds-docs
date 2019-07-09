@@ -26,7 +26,7 @@ subnav:
 ---
 <section class="section">
     <h2 id="thegridsystem">Introduktion</h2>
-    <p>Gridsystemet bruger containere, rækker og kolonner til at opbygge sider. Gridsystemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af gridsystemet.</p>
+    <p>Gridsystemet bruger containere, rækker og kolonner til at opbygge sider. Gridsystemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af gridsystemet.</p>
     {% include code/preview.html component="grid--how-it-works" %}
     {% include code/accordion.html component="grid--how-it-works" %}
     <p>Eksemplet ovenfor viser tre kolonner som har samme bredde på både mobil, tablet og desktop.</p>

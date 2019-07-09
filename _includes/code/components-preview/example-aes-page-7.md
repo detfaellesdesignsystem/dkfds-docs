@@ -59,7 +59,7 @@ title: Example-aes-page-7.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user">
@@ -81,7 +81,7 @@ title: Example-aes-page-7.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#save"></use></svg>Gem
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#save"></use></svg>Gem
                         kladde</a>
                 </div>
             </div>
@@ -97,7 +97,7 @@ title: Example-aes-page-7.html
             data-js-target="#overflow_steps" aria-haspopup="true"
             aria-expanded="false">
             Trin 7 af 9
-            <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
             <span class="sr-only">Åbner overflow menu</span>
         </button>
         <div class="overflow-menu-inner" id="overflow_steps"
@@ -212,7 +212,7 @@ title: Example-aes-page-7.html
                             <tbody>
                                 <tr>
                                     <td class="break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         prn0237452_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group">
@@ -254,7 +254,7 @@ title: Example-aes-page-7.html
                                 <tr>
                                     <td
                                         class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         sgn1023152_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group">
@@ -333,7 +333,7 @@ title: Example-aes-page-7.html
                             <tbody>
                                 <tr>
                                     <td class="break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         dkf4903283_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group">
@@ -375,7 +375,7 @@ title: Example-aes-page-7.html
                                 <tr>
                                     <td
                                         class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         kfo1127303_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group">
@@ -454,7 +454,7 @@ title: Example-aes-page-7.html
                             <tbody>
                                 <tr>
                                     <td class="break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         ohb3428439_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group">
@@ -496,7 +496,7 @@ title: Example-aes-page-7.html
                                 <tr>
                                     <td
                                         class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         sdv5644382_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group">

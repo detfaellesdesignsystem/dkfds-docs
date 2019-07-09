@@ -40,7 +40,7 @@ subnav:
             <li>Tænk modulært, dvs. lav en struktur af de elementer, du har brug for, og brug kun dem.</li>
             <li>Gennemgå altid koden med en kollega for at sikre, at din kode er brugbar.</li>
             <li>Brug formaliserede testmetoder, så du tester koden metodisk og i samme omfang hver gang.</li>
-            <li>Anvend WhatWG til HTML reference og W3C til CSS reference og til at sikre kodens validitet gennem <a href="https://checker.html5.org/" class="icon-link">Nu Html Checker<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://jigsaw.w3.org/css-validator/" class="icon-link">CSS Validation Service<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+            <li>Anvend WhatWG til HTML reference og W3C til CSS reference og til at sikre kodens validitet gennem <a href="https://checker.html5.org/" class="icon-link">Nu Html Checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://jigsaw.w3.org/css-validator/" class="icon-link">CSS Validation Service<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</li>
             <li>Undgå unødigt kompliceret funktionalitet.</li>
             <li>Indlæs kun biblioteker (fx jQuery), hvis du skal bruge dem.</li>
             <li>Anvend eksempelkoden i designsystemet som reference for den aktuelle løsning.</li>
@@ -51,27 +51,27 @@ subnav:
     <section>
         <h2 id="koden">Frontend-kode</h2>
         <h3>HTML og CSS</h3>
-        <p>Du skal altid kode selvbetjeningsløsningens brugergrænseflade i valid HTML5, som det er defineret i <a href="https://whatwg.org/" class="icon-link">WhatWG<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</p>
-        <p>Du skal huske på, at HTML5 er et format i udvikling, og at browseren ikke har ensartet understøttelse. Det er vigtigt, at du tjekker løsningens integritet og browserunderstøttelse i forhold til din målgruppe. Du kan fx anvende <a href="https://caniuse.com/" class="icon-link">Can I use<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> til at kontrollere understøttelsen af det enkelte tag.</p>
+        <p>Du skal altid kode selvbetjeningsløsningens brugergrænseflade i valid HTML5, som det er defineret i <a href="https://whatwg.org/" class="icon-link">WhatWG<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+        <p>Du skal huske på, at HTML5 er et format i udvikling, og at browseren ikke har ensartet understøttelse. Det er vigtigt, at du tjekker løsningens integritet og browserunderstøttelse i forhold til din målgruppe. Du kan fx anvende <a href="https://caniuse.com/" class="icon-link">Can I use<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> til at kontrollere understøttelsen af det enkelte tag.</p>
         <h4>Læs mere om HTML og CSS</h4>
         <ul class="nobullet-list">
-            <li><a href=" https://whatwg.org/" class="icon-link">WhatWG<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://caniuse.com/" class="icon-link">Can I Use<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="http://html5doctor.com/" class="icon-link">HTML5 Doctor<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="icon-link">A Guide to flexbox<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.keycdn.com/blog/oocss" class="icon-link">OOCSS<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="http://getbem.com/" class="icon-link">BEM<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href=" https://whatwg.org/" class="icon-link">WhatWG<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://caniuse.com/" class="icon-link">Can I Use<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="http://html5doctor.com/" class="icon-link">HTML5 Doctor<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="icon-link">A Guide to flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.keycdn.com/blog/oocss" class="icon-link">OOCSS<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="http://getbem.com/" class="icon-link">BEM<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Javascript</h3>
         <p>Det Fælles Designsystem anvender ”Vanilla JavaScript” (”Vanilla JS” eller ”Plain JS”) og ikke et JavaScript bibliotek som fx jQuery, der skaber afhængighed til tredjeparts leverandører. På den måde anvender designsystemet optimerede løsninger og undgår afhængighed af tredjepartsleverandører og deres eventuelle tekniske gæld.</p>
         <p>Du kan altså godt anvende en tredjeparts løsning (se listen over anbefalede udvidelser). Men ønsker du at udvikle en funktionskomponent, og at den skal kunne inkluderes i designsystemets kerne, så skal du udvikle den i Vanilla JS. </p>
         <h4>Læs mere om Javascript</h4>
         <ul class="nobullet-list">
-            <li><a href="https://google.github.io/styleguide/jsguide.html" class="icon-link">Google JavaScript Style Guide<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.w3schools.com/js/js_conventions.asp" class="icon-link">JavaScript Style Guide<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://plainjs.com/" class="icon-link">Plain JS<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks" class="icon-link">Learn vanilla JavaScript<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> </li>
-            <li><a href="https://medium.com/@trombino.marco/you-might-not-need-jquery-a-2018-performance-case-study-aa6531d0b0c3" class="icon-link">You might not need jQuery<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> </li>
+            <li><a href="https://google.github.io/styleguide/jsguide.html" class="icon-link">Google JavaScript Style Guide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.w3schools.com/js/js_conventions.asp" class="icon-link">JavaScript Style Guide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://plainjs.com/" class="icon-link">Plain JS<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks" class="icon-link">Learn vanilla JavaScript<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> </li>
+            <li><a href="https://medium.com/@trombino.marco/you-might-not-need-jquery-a-2018-performance-case-study-aa6531d0b0c3" class="icon-link">You might not need jQuery<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> </li>
         </ul>
         <h3>Kodekvalitet og validering</h3>
         <p>Koden skal være enkel, korrekt, forståelig, gennemtestet og dokumenteret, så andre udviklere kan gennemskue, genanvende og vedligeholde den i deres projekter. Det er til fordel for både udvikling, brugere og forretning og kan forhindre opbygningen af teknisk gæld.</p>
@@ -80,11 +80,11 @@ subnav:
         <p>Alle løsninger skal altid bestå formaliserede funktions-, regressions- og accepttest, inden de går i produktion.</p>
         <h4>Læs mere om kodekvalitet og validering</h4>
         <ul class="nobullet-list">
-            <li><a href="https://validator.w3.org/" class="icon-link">W3 HTML validator<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://jigsaw.w3.org/css-validator/" class="icon-link">JW3 CSS validator<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://dzone.com/articles/what-does-code-quality-actually-mean" class="icon-link">What does code quality actually mean?<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://dzone.com/articles/an-introduction-to-code-coverage" class="icon-link">An introduction to code coverage<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> </li>
-            <li><a href="https://designsystem.digital.gov/documentation/code-guidelines/" class="icon-link">US Web Design System - Code Guidelines<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> </li>
+            <li><a href="https://validator.w3.org/" class="icon-link">W3 HTML validator<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/" class="icon-link">JW3 CSS validator<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://dzone.com/articles/what-does-code-quality-actually-mean" class="icon-link">What does code quality actually mean?<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://dzone.com/articles/an-introduction-to-code-coverage" class="icon-link">An introduction to code coverage<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> </li>
+            <li><a href="https://designsystem.digital.gov/documentation/code-guidelines/" class="icon-link">US Web Design System - Code Guidelines<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> </li>
         </ul>
     </section>
     <section>
@@ -149,10 +149,10 @@ subnav:
         </ul>
         <h4>Du kan læse mere om performance her:</h4>
         <ul class="nobullet-list">
-            <li><a href="https://designsystem.digital.gov/performance/" class="icon-link">US Web Design Standards - performance<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/" class="icon-link">2018 average load times<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.nngroup.com/articles/website-response-times/" class="icon-link">Website response times<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://speakerdeck.com/csswizardry/its-my-third-party-and-ill-cry-if-i-want-to" class="icon-link">It's my third party and I'll cry if I want to (slides)<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://designsystem.digital.gov/performance/" class="icon-link">US Web Design Standards - performance<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/" class="icon-link">2018 average load times<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.nngroup.com/articles/website-response-times/" class="icon-link">Website response times<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://speakerdeck.com/csswizardry/its-my-third-party-and-ill-cry-if-i-want-to" class="icon-link">It's my third party and I'll cry if I want to (slides)<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Performance-test</h3>
         <p>Test af selvbetjeningsløsningers præstation eller performance er en videnskab i sig selv: Den består i at teste og justere en lang række parametre for at afdække løsningens måde at præstere på.</p>
@@ -167,10 +167,10 @@ subnav:
         <p>Google Chrome, Internet Explorer/Edge, Mozilla og Safari stiller en lang række værktøjer til rådighed for test og fejlsøgning i en løsning. Ved at trykke på F12, når du står i Chrome, åbner Developer Tools alt lige fra kodevisning til måling af ydeevne. Hver for sig er disse værktøjer uundværlige for aftestning og fejlsøgning.</p>
         <h5>Læs mere om udviklerværktøjer</h5>
         <ul class="nobullet-list">
-            <li><a href="https://developers.google.com/web/tools/chrome-devtools/" class="icon-link">Chrome Developer Tools<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://docs.microsoft.com/da-dk/microsoft-edge/devtools-guide" class="icon-link">Microsoft Edge Devtools<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Tools" class="icon-link">Mozilla Developer Tools<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://developer.apple.com/safari/tools/" class="icon-link">Safari Developer Tools<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://developers.google.com/web/tools/chrome-devtools/" class="icon-link">Chrome Developer Tools<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://docs.microsoft.com/da-dk/microsoft-edge/devtools-guide" class="icon-link">Microsoft Edge Devtools<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Tools" class="icon-link">Mozilla Developer Tools<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://developer.apple.com/safari/tools/" class="icon-link">Safari Developer Tools<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h4>Lighthouse</h4>
         <p>Ved at anvende Chrome Developer Tools får du adgang til applikationen ”Lighthouse” (tryk F12, når du står i Google Chrome, og vælg fanen "Audit"), der giver en analyse og scoring (fra 0-100) af en sides ydeevne fordelt på disse fem parametre:</p>
@@ -185,13 +185,13 @@ subnav:
         <p>Lighthouse giver som en konsekvens af sin vurdering gode råd til, hvor du kan eller bør sætte ind for at forbedre løsningens ydeevne. </p>
         <h5>Læs mere om Lighthouse</h5>
         <ul class="nobullet-list">
-            <li><a href="https://developers.google.com/web/tools/lighthouse/" class="icon-link">Lighthouse<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://developers.google.com/web/tools/lighthouse/" class="icon-link">Lighthouse<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h4>PageSpeed Insights</h4>
         <p>Page Speed Insights er et Google værktøj, der måler indlæsningshastigheden for en løsning på henholdsvis mobil og desktop og kommer med forslag til mulige forbedringer.</p>
         <h5>Læs mere om PageSpeed Insights</h5>
         <ul class="nobullet-list">
-            <li><a href="https://developers.google.com/speed/pagespeed/insights/" class="icon-link">PageSpeed Insights<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://developers.google.com/speed/pagespeed/insights/" class="icon-link">PageSpeed Insights<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
     </section>
     <section>       
@@ -201,8 +201,8 @@ subnav:
         <p>Du kan med fordel anvende et værktøj som fx Minifier til at minimere "spild" i JS og CSS filer, så de fylder mindst muligt. Du kan typisk finde lignende funktioner som udvidelse til værktøjer til redigering af kode. </p>
         <h4 class="h5">Læs mere om Minifier</h4>
         <ul class="nobullet-list">
-            <li><a href="https://www.keycdn.com/support/how-to-minify-css-js-and-html" class="icon-link">How to minify<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.minifier.org/" class="icon-link">Minifier<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.keycdn.com/support/how-to-minify-css-js-and-html" class="icon-link">How to minify<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.minifier.org/" class="icon-link">Minifier<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Kritiske vej (Critical path)</h3>
         <p>Den kritiske vej (Critical Path) er den samlede sekvens af processer i tid fra en bruger aktiverer et link til den funktionelle selvbetjeningsløsning eller side er tilgængelig.</p>
@@ -231,11 +231,11 @@ subnav:
         <p>Især i SPA (Single Page Applications) løsninger giver dette koncept dog mening, da brugeren kun skal hente den ene side – med mindre det er en løsning, hvor brugeren ofte skal vende tilbage gentagne gange.</p>
         <h4 class="h5">Læs mere om Critical Path CSS</h4>
         <ul class="nobullet-list">
-            <li><a href="https://medium.freecodecamp.org/an-introduction-to-web-performance-and-the-critical-rendering-path-ce1fb5029494" class="icon-link">An introduction to web performance and the critical rendering path<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://medium.com/@luisvieira_gmr/understanding-the-critical-rendering-path-rendering-pages-in-1-second-735c6e45b47a" class="icon-link">Understanding the critical rendering path<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://varvy.com/pagespeed/critical-render-path.html" class="icon-link">Critical render path<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/page-speed-rules-and-recommendations" class="icon-link">Page speed rules and recommendations<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.sitepoint.com/how-and-why-you-should-inline-your-critical-css/" class="icon-link">How and why you should inline your critical css<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://medium.freecodecamp.org/an-introduction-to-web-performance-and-the-critical-rendering-path-ce1fb5029494" class="icon-link">An introduction to web performance and the critical rendering path<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://medium.com/@luisvieira_gmr/understanding-the-critical-rendering-path-rendering-pages-in-1-second-735c6e45b47a" class="icon-link">Understanding the critical rendering path<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://varvy.com/pagespeed/critical-render-path.html" class="icon-link">Critical render path<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/page-speed-rules-and-recommendations" class="icon-link">Page speed rules and recommendations<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.sitepoint.com/how-and-why-you-should-inline-your-critical-css/" class="icon-link">How and why you should inline your critical css<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <h3>Preload af ressourcer</h3>
         <p>Du kan forberede browseren på at indlæse og beregne din selvbetjeningsløsning ved at anvende preconnect og preload i <code>head</code>.</p>
@@ -247,8 +247,8 @@ subnav:
         </ul>
         <h4 class="h5">Læs mere om preload her</h4>
         <ul>
-            <li><a href="https://www.w3.org/TR/preload/" class="icon-link">Preload - W3C Candidate Recommendation 26 October 2017<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/" class="icon-link">Preload - What is it good for?<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.w3.org/TR/preload/" class="icon-link">Preload - W3C Candidate Recommendation 26 October 2017<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/" class="icon-link">Preload - What is it good for?<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
     </section>
 </article>

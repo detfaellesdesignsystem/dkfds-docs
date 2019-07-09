@@ -89,8 +89,8 @@ order: 02
           </ul>
           <h5>Hvis du vil vide mere</h5>
           <ul>
-            <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" class="icon-link">H42: Using h1-h6 to identify headings<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" class="icon-link">H42: Using h1-h6 to identify headings<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
           </ul>
       </section>
     </article>

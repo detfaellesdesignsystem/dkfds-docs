@@ -45,7 +45,7 @@ title: Date-input-datepicker.html
                 <button
                     class="button-unstyled button-open-calendar js-calendar-datepicker">
                     <span class="sr-only">Åben kalenderen</span>
-                    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#calendar"></use></svg>
+                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#calendar"></use></svg>
                 </button>
 
             </div>
