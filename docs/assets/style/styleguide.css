@@ -5412,7 +5412,7 @@ input.input-char-27, select.input-char-27, textarea.input-char-27 {
     font-weight: 600; }
   .table tbody tr {
     background-color: transparent; }
-  .table tr:last-child td {
+  .table tr:last-child td, .table tr:last-child th {
     border-bottom: none; }
   .table.table--borderless {
     border-color: transparent; }
@@ -5458,6 +5458,7 @@ input.input-char-27, select.input-char-27, textarea.input-char-27 {
     .table.table--zebra.table--borderless td:last-child, .table.table--zebra.table--borderless th:last-child {
       border-left-color: transparent;
       border-right-color: transparent; }
+  .table.table--zebra.table--borderless tr:last-child th,
   .table.table--zebra.table--borderless tr:last-child td {
     border-bottom-color: transparent; }
   @media (max-width: 767px) {
