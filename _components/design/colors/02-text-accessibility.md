@@ -5,9 +5,9 @@ parent: colors-depricated
 order: 02
 ---
 
-<p>WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" class="icon-link">at least 4.5:1<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. This ensures that viewers who cannot see the full color spectrum are able to read the text.</p>
+<p>WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" class="icon-link">at least 4.5:1<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. This ensures that viewers who cannot see the full color spectrum are able to read the text.</p>
 <p>The options below offer color palette combinations that fall within the range of Section 508 compliant foreground/background color contrast ratios. To ensure that text remains accessible, use only these permitted color combinations.</p>
-<p>If you choose to customize beyond this palette, this <a href="http://webaim.org/resources/contrastchecker/" class="icon-link">color contrast tool<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> is a useful resource for testing the compliance of any color combination.</p>
+<p>If you choose to customize beyond this palette, this <a href="http://webaim.org/resources/contrastchecker/" class="icon-link">color contrast tool<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> is a useful resource for testing the compliance of any color combination.</p>
 <h4 class="heading">Fully accessible combinations</h4>
 
 <h4>Colors on a white background</h4>

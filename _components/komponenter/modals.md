@@ -19,7 +19,7 @@ description: Modalvinduer anvendes til at tvinge brugerens fokus på et specifik
   </button>
   <div id="modal-tech-docs" aria-hidden="true" class="accordion-content">
     <section>
-        <p>Modal komponenten er implementeret med scriptet <a href="https://micromodal.now.sh" class="icon-link">Micromodal<svg class="icon-svg" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+        <p>Modal komponenten er implementeret med scriptet <a href="https://micromodal.now.sh" class="icon-link">Micromodal<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
         <p>En modal kan åbens ved at sætte følgende attribut på fx en knap: <code>data-micromodal-trigger="modal-id"</code>. Dette vil åbne modalen som har id'et 'modal-id'</p>
         <p>En modal kan lukkes ved at sætte følgende attribut på en knap inde i modalen: <code>data-micromodal-close</code>.</p>
         <p>Det er også muligt at åbne og lukke modalen programmatisk via javascript: <code>MicroModal.show('modal-id');</code> og <code>MicroModal.close('modal-id');</code></p>
