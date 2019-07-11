@@ -166,114 +166,117 @@
     </nav> <!-- collapsible nav end-->
 </header>
 
-<main class="container page-container">
+<div class="container page-container">
+    <div class="row">
+        <aside class="col-12 col-lg-3 sidebar-col">
+            <div class="overflow-menu  overflow-menu--open-right overflow-menu--lg-no-responsive">
+                <button class="button-overflow-menu js-dropdown " data-js-target="#overflow4" aria-haspopup="true" aria-expanded="false">
+                    Trin 1 af 4
+                    <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+                    <span class="sr-only">Åbner overflow menu</span>
+                </button>
+                <div class="overflow-menu-inner" id="overflow4" aria-hidden="true">
+                    <ul class="sidenav-list">
+                        <li>
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1" class="active">
+                                1. Stamdata (valgt)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
+                                2. SMV-kriterier
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
+                                3. Statsstøtte
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
+                                4. Tilskud til land
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="col-12 col-lg-9" id="main-content">
+            <div role="group" aria-describedby="stamdata">
+                <h1 id="stamdata">Stamdata</h1>
 
-    <div class="overflow-menu  overflow-menu--open-right ">
-        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps" aria-haspopup="true" aria-expanded="false">
-            Trin 1 af 4
-            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
-            <span class="sr-only">Åbner overflow menu</span>
-        </button>
-        <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
+                <div class="form-group">
+                    <label class="form-label " for="id-cvr-number">CVR
+                        nummer</label>
 
-            <ul class="sidenav-list">
-                <li>
-                    <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1" class="active">
-                        1. Stamdata
-                    </a>
-                </li>
-                <li>
-                    <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
-                        2. SMV-kriterier
-                    </a>
-                </li>
-                <li>
-                    <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
-                        3. Statsstøtte
-                    </a>
-                </li>
-                <li>
-                    <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
-                        4. Tilskud til land
-                    </a>
-                </li>
-            </ul>
+                    <input class="form-input  input-char-8 " placeholder="" id="id-cvr-number" value="" name="Input til cvr nummer" type="text" />
+                </div>
 
-        </div>
+                <div class="form-group">
+                    <label class="form-label " for="id-companyname">Navn på
+                        virksomhed</label>
+
+                    <input class="form-input  input-width-m " placeholder="" id="id-companyname" value="" name="Input til navn på virksomhed" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label " for="id-companyaddress">Adresse</label>
+
+                    <input class="form-input  input-width-m " placeholder="" id="id-companyaddress" value="" name="Input til virksomhedsadresse" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label " for="id-zipcode">Postnr.</label>
+
+                    <input class="form-input  input-char-4 " placeholder="" id="id-zipcode" value="" name="Input til postnummer" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label " for="id-companycity">By</label>
+
+                    <input class="form-input  input-width-m " placeholder="" id="id-companycity" value="" name="Input til by" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label " for="id-companyphone">Telefonnr.</label>
+
+                    <input class="form-input  input-char-8 " placeholder="" id="id-companyphone" value="" name="Input til telefonnummer" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label " for="id-companywebsite">Website<span class="weight-normal">
+                            (frivilligt)</span></label>
+
+                    <input class="form-input  input-width-m " placeholder="" id="id-companywebsite" value="" name="Input til website" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label " for="id-company-contactperson">Kontaktperson.</label>
+
+                    <input class="form-input  input-width-m " placeholder="" id="id-company-contactperson" value="" name="Input til kontaktperson" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label " for="id-companyemail">E-mail</label>
+                    <span class="form-hint" id="input-hint-message-id-companyemail">Kvittering
+                        bliver sendt til denne e-mailadresse</span>
+
+                    <input class="form-input  input-width-m " placeholder="" id="id-companyemail" value="" name="Input til email" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label " for="id-launchyear">Etableringsår</label>
+
+                    <input class="form-input  input-char-4 " placeholder="" id="id-launchyear" value="" name="Input til etableringsår" type="text" />
+                </div>
+
+            </div>
+            <nav class="page-navigation">
+                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2" class="button button-primary">Næste</a>
+            </nav>
+        </main>
     </div>
-
-    <div role="group" aria-describedby="stamdata">
-        <h1 id="stamdata">Stamdata</h1>
-
-        <div class="form-group">
-            <label class="form-label " for="id-cvr-number">CVR
-                nummer</label>
-
-            <input class="form-input  input-char-8 " placeholder="" id="id-cvr-number" value="" name="Input til cvr nummer" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companyname">Navn på
-                virksomhed</label>
-
-            <input class="form-input  input-width-m " placeholder="" id="id-companyname" value="" name="Input til navn på virksomhed" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companyaddress">Adresse</label>
-
-            <input class="form-input  input-width-m " placeholder="" id="id-companyaddress" value="" name="Input til virksomhedsadresse" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-zipcode">Postnr.</label>
-
-            <input class="form-input  input-char-4 " placeholder="" id="id-zipcode" value="" name="Input til postnummer" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companycity">By</label>
-
-            <input class="form-input  input-width-m " placeholder="" id="id-companycity" value="" name="Input til by" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companyphone">Telefonnr.</label>
-
-            <input class="form-input  input-char-8 " placeholder="" id="id-companyphone" value="" name="Input til telefonnummer" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companywebsite">Website<span class="weight-normal"> (frivilligt)</span></label>
-
-            <input class="form-input  input-width-m " placeholder="" id="id-companywebsite" value="" name="Input til website" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-company-contactperson">Kontaktperson.</label>
-
-            <input class="form-input  input-width-m " placeholder="" id="id-company-contactperson" value="" name="Input til kontaktperson" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companyemail">E-mail</label>
-            <span class="form-hint" id="input-hint-message-id-companyemail">Kvittering bliver
-                sendt til denne e-mailadresse</span>
-
-            <input class="form-input  input-width-m " placeholder="" id="id-companyemail" value="" name="Input til email" type="text" />
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-launchyear">Etableringsår</label>
-
-            <input class="form-input  input-char-4 " placeholder="" id="id-launchyear" value="" name="Input til etableringsår" type="text" />
-        </div>
-
-    </div>
-    <nav class="page-navigation">
-        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2" class="button button-primary">Næste</a>
-    </nav>
-</main>
+</div>
 
 <footer>
     <div class="footer">
