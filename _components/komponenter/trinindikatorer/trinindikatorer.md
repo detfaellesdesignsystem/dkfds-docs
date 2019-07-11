@@ -7,6 +7,17 @@ category: Komponenter_category
 subcategory: Komponenter
 description: Tringuides anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.
 lead: Trinindikatorer markerer trin i guides til brugerne om, hvordan de fx skal tilgå en løsning eller som fører dem igennem en kendt sekvens af spørgsmål.
+subnav:
+- text: Trinindikator i overflow-menu
+  href: '#trinindikator-i-overflow-menu'
+- text: Trinindikator - responsivt i overflow-menu
+  href: 'trinindikator-responsivt-i-overflow-menu'
+- text: Klikbar trinindikator
+  href: '#klikbar-trinindikator'
+- text: Låst trinindikator
+  href: '#låst-trinindikator'
+- text: Trinindikator med information
+  href: '#trinindikator-med-information'
 ---
 <h2 class="h3">Retningslinjer</h2>
 <section>

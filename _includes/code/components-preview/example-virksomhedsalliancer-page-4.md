@@ -79,197 +79,209 @@ title: Example-virksomhedsalliancer-page-4.html
     </nav> <!-- collapsible nav end-->
 </header>
 
-<main class="container page-container">
+<div class="container page-container">
+    <div class="row">
+        <aside class="col-12 col-lg-3 sidebar-col">
+            <div
+                class="overflow-menu  overflow-menu--open-right overflow-menu--lg-no-responsive">
+                <button class="button-overflow-menu js-dropdown "
+                    data-js-target="#overflow4" aria-haspopup="true"
+                    aria-expanded="false">
+                    Trin 1 af 4
+                    <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+                    <span class="sr-only">Åbner overflow menu</span>
+                </button>
+                <div class="overflow-menu-inner" id="overflow4"
+                    aria-hidden="true">
+                    <ul class="sidenav-list">
+                        <li>
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
+                                1. Stamdata
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
+                                2. SMV-kriterier
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
+                                3. Statsstøtte
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4"
+                                class="active">
+                                4. Tilskud til land (valgt)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="col-12 col-lg-9" id="main-content">
+            <h1>Tilskud til land</h1>
+            <div class="mt-0">
 
-    <div class="overflow-menu  overflow-menu--open-right ">
-        <button class="button-overflow-menu js-dropdown "
-            data-js-target="#overflow_steps" aria-haspopup="true"
-            aria-expanded="false">
-            Trin 4 af 4
-            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
-            <span class="sr-only">Åbner overflow menu</span>
-        </button>
-        <div class="overflow-menu-inner" id="overflow_steps"
-            aria-hidden="true">
+                <div class="form-group">
+                    <label class="form-label " for="id-advisors">Navn(-e)
+                        på rådgivere på
+                        ambassaden/generalkonsulatet</label>
+                    <span class="form-hint"
+                        id="input-hint-message-id-advisors">Navne skal
+                        skrives i samme rækkefølge, som landene er
+                        anført</span>
 
-            <ul class='sidenav-list'>
-                <li>
-                    <a
-                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'>
-                        1. Stamdata
-                        <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
-                        2. SMV-kriterier
-                        <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
-                        3. Statsstøtte
-                        <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'
-                        class='active'>
-                        4. Tilskud til land
-                    </a>
-                </li>
-            </ul>
+                    <textarea class="form-input input-width-m" rows="5" placeholder="" id="id-advisors" name="Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet" type="text" ></textarea>
+                </div>
 
-        </div>
-    </div>
+            </div>
+            <div class="mt-6">
 
-    <h1>Tilskud til land</h1>
-    <div class="mt-0">
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-companyalliance">Navn på
+                        virksomhedsalliance</label>
 
-        <div class="form-group">
-            <label class="form-label " for="id-advisors">Navn(-e) på
-                rådgivere på ambassaden/generalkonsulatet</label>
-            <span class="form-hint"
-                id="input-hint-message-id-advisors">Navne skal skrives i
-                samme rækkefølge, som landene er anført</span>
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-companyalliance" value=""
+                        name="Input til navn på virksomhedsalliance"
+                        type="text">
+                </div>
 
-            <textarea class="form-input input-width-m" rows="5" placeholder="" id="id-advisors" name="Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet" type="text" ></textarea>
-        </div>
+            </div>
+            <h2 class="mt-6 mb-3">Bilag og bemærkninger</h2>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label">Ønsker du at vedhæfte bilag
+                        til ansøgningen (det er muligt at vedhæfte op til 3
+                        bilag)?</legend>
+                    <ul class="nobullet-list">
+                        <li>
 
-    </div>
-    <div class="mt-6">
+                            <input id="id-state-yes" type="radio"
+                                name="minimis" value="Ja"
+                                class="form-radio  radio-large "
+                                data-js-target='#collapse-radio'
+                                aria-controls='collapse-radio'
+                                aria-expanded='false' />
+                            <label for="id-state-yes"
+                                class="radio-large">Ja </label>
 
-        <div class="form-group">
-            <label class="form-label " for="id-companyalliance">Navn på
-                virksomhedsalliance</label>
-
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-companyalliance" value=""
-                name="Input til navn på virksomhedsalliance" type="text">
-        </div>
-
-    </div>
-    <h2 class="mt-6 mb-3">Bilag og bemærkninger</h2>
-    <div class="form-group">
-        <fieldset>
-            <legend class="form-label">Ønsker du at vedhæfte bilag til
-                ansøgningen (det er muligt at vedhæfte op til 3 bilag)?
-            </legend>
-            <ul class="nobullet-list">
-                <li>
-
-                    <input id="id-state-yes" type="radio" name="minimis"
-                        value="Ja" class="form-radio  radio-large "
-                        data-js-target='#collapse-radio'
-                        aria-controls='collapse-radio'
-                        aria-expanded='false' />
-                    <label for="id-state-yes" class="radio-large">Ja
-                    </label>
-
-                    <div id="collapse-radio" aria-hidden="true"
-                        class="box-border-l collapsed">
-                        <div class="py-4">
-                            <div class="row">
-                                <div
-                                    class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    <form class="form">
-                                        <div class="form-group file-input">
-                                            <label class="form-label"
-                                                for="file">Tilføj
-                                                dokument</label>
-                                            <input type="file" id="file"
-                                                name="file">
+                            <div id="collapse-radio" aria-hidden="true"
+                                class="box-border-l collapsed">
+                                <div class="py-4">
+                                    <div class="row">
+                                        <div
+                                            class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                            <form class="form">
+                                                <div
+                                                    class="form-group file-input">
+                                                    <label
+                                                        class="form-label"
+                                                        for="file">Tilføj
+                                                        dokument</label>
+                                                    <input type="file"
+                                                        id="file"
+                                                        name="file">
+                                                </div>
+                                            </form>
+                                            <table
+                                                class="table table--borderless table--compact table--responsive-headers mt-6">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Filnavn</th>
+                                                        <th
+                                                            class="align-text-right">
+                                                            Slet</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                                            <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf
+                                                        </td>
+                                                        <td
+                                                            class="align-text-right mt-4 mt-lg-0">
+                                                            <button
+                                                                class="button button-unstyled">
+                                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                                <span
+                                                                    class="sr-only">Slet</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                                            <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf
+                                                        </td>
+                                                        <td
+                                                            class="align-text-right mt-4 mt-lg-0">
+                                                            <button
+                                                                class="button button-unstyled">
+                                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                                <span
+                                                                    class="sr-only">Slet</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                                                            <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf
+                                                        </td>
+                                                        <td
+                                                            class="align-text-right mt-4 mt-lg-0">
+                                                            <button
+                                                                class="button button-unstyled">
+                                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                                <span
+                                                                    class="sr-only">Slet</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                    </form>
-                                    <table
-                                        class="table table--borderless table--compact table--responsive-headers mt-6">
-                                        <thead>
-                                            <tr>
-                                                <th>Filnavn</th>
-                                                <th
-                                                    class="align-text-right">
-                                                    Slet</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td
-                                                    class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                                    <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf
-                                                </td>
-                                                <td
-                                                    class="align-text-right mt-4 mt-lg-0">
-                                                    <button
-                                                        class="button button-unstyled">
-                                                        <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                                        <span
-                                                            class="sr-only">Slet</span>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td
-                                                    class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                                    <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf
-                                                </td>
-                                                <td
-                                                    class="align-text-right mt-4 mt-lg-0">
-                                                    <button
-                                                        class="button button-unstyled">
-                                                        <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                                        <span
-                                                            class="sr-only">Slet</span>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td
-                                                    class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                                    <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf
-                                                </td>
-                                                <td
-                                                    class="align-text-right mt-4 mt-lg-0">
-                                                    <button
-                                                        class="button button-unstyled">
-                                                        <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-                                                        <span
-                                                            class="sr-only">Slet</span>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
+                        </li>
+                        <li>
 
-                    <input id="id-state-no" type="radio" name="minimis"
-                        value="Nej" class="form-radio  radio-large " />
-                    <label for="id-state-no" class="radio-large">Nej
-                    </label>
+                            <input id="id-state-no" type="radio"
+                                name="minimis" value="Nej"
+                                class="form-radio  radio-large " />
+                            <label for="id-state-no"
+                                class="radio-large">Nej </label>
 
-                </li>
-            </ul>
-        </fieldset>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <nav class="page-navigation">
+                <a href="#" class="button button-primary">Næste</a>
+                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3"
+                    class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            </nav>
+        </main>
     </div>
-
-    <nav class="page-navigation">
-        <a href="#" class="button button-primary">Næste</a>
-        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3"
-            class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
-    </nav>
-</main>
+</div>
 
 <footer>
     <div class="footer">
