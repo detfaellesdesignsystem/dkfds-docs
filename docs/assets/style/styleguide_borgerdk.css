@@ -6607,8 +6607,7 @@ input[type="search"] {
   .sidenav-list-locked > li {
     background-color: transparent;
     border-top: 1px solid #BFBFBF;
-    font-size: 1.6rem;
-    cursor: default; }
+    font-size: 1.6rem; }
     .sidenav-list-locked > li:first-child {
       border-top: none; }
     .sidenav-list-locked > li:last-child a {
@@ -6626,8 +6625,7 @@ input[type="search"] {
     .sidenav-list-locked a:hover {
       background-color: #ffffff;
       text-decoration: none;
-      color: #233614;
-      cursor: default; }
+      color: #233614; }
     .sidenav-list-locked a:focus {
       outline-offset: 0;
       position: relative;
