@@ -180,7 +180,7 @@ title: Example-aes-page-5.html
                             class="js-tooltip tooltip"
                             data-tippy-trigger="click"
                             title="Her står relevant uddybbende hjælpetekst."
-                            aria-label="Her står relevant uddybbende hjælpetekst."><svg class='icon-svg'><use xlink:href='#help-circle-outline'></use></svg></button></label>
+                            aria-label="Her står relevant uddybbende hjælpetekst."><svg class='icon-svg' aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href='#help-circle-outline'></use></svg></button></label>
                     <span class="form-hint">Fx. 28 04 1996</span></legend>
                 <span class="form-error-message"
                     id="form-error-message-input-error"
