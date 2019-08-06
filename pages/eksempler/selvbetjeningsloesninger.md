@@ -140,6 +140,12 @@ subnav:
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
     <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4" title="Strategiske virksomhedsalliancer, side 4: Tilskud til land"><img src="{{ site.baseurl }}/img/examples_pages/strategiske-virksomhedsalliancer/strategiske-virksomhedsalliancer4.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
   </div>
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+    <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5" title="Strategiske virksomhedsalliancer, side 5: Opsummering"><img src="{{ site.baseurl }}/img/examples_pages/strategiske-virksomhedsalliancer/strategiske-virksomhedsalliancer5.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
+  </div>
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+    <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-6" title="Strategiske virksomhedsalliancer, side 4: Kvittering"><img src="{{ site.baseurl }}/img/examples_pages/strategiske-virksomhedsalliancer/strategiske-virksomhedsalliancer6.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
+  </div>
 </div>
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">Demo strategiske virksomhedsalliancer</a>
 

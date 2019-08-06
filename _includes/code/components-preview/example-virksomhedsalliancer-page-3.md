@@ -87,13 +87,13 @@ title: Example-virksomhedsalliancer-page-3.html
                 <button class="button-overflow-menu js-dropdown "
                     data-js-target="#overflow4" aria-haspopup="true"
                     aria-expanded="false">
-                    Trin 1 af 4
+                    Trin 3 af 6
                     <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
                 <div class="overflow-menu-inner" id="overflow4"
                     aria-hidden="true">
-                    <ul class="sidenav-list">
+                    <ul class="sidenav-list sidenav-list-locked">
                         <li>
                             <a
                                 href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
@@ -122,6 +122,18 @@ title: Example-virksomhedsalliancer-page-3.html
                             <a
                                 href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
                                 4. Tilskud til land
+                            </a>
+                        </li>
+                        <li class="disabled">
+                            <a href="javascript:void(0)" disabled
+                                tab-index="-1" aria-disabled="true">
+                                5. Opsummering
+                            </a>
+                        </li>
+                        <li class="disabled">
+                            <a href="javascript:void(0)" disabled
+                                tab-index="-1" aria-disabled="true">
+                                6. Kvittering
                             </a>
                         </li>
                     </ul>

@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 
-var root = "https://develop.designsystem.dk/";
+var root = "http://127.0.0.1:4000/";
+//var root = "https://develop.designsystem.dk/";
 var targetRootDir = "img/examples_pages/";
 
 var exampleUrls = [
@@ -31,6 +32,8 @@ var exampleUrls = [
     {"url": "pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/", "folder": "strategiske-virksomhedsalliancer", "filename": "strategiske-virksomhedsalliancer2.PNG"},
     {"url": "pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/", "folder": "strategiske-virksomhedsalliancer", "filename": "strategiske-virksomhedsalliancer3.PNG"},
     {"url": "pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/", "folder": "strategiske-virksomhedsalliancer", "filename": "strategiske-virksomhedsalliancer4.PNG"},
+    {"url": "pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/", "folder": "strategiske-virksomhedsalliancer", "filename": "strategiske-virksomhedsalliancer5.PNG"},
+    {"url": "pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-6/", "folder": "strategiske-virksomhedsalliancer", "filename": "strategiske-virksomhedsalliancer6.PNG"},
     {"url": "pages/eksempler/opsummering/opsummering-1/", "folder": "opsummering", "filename": "opsummeringsside.PNG"},
     {"url": "pages/eksempler/kvittering/kvittering-1/", "folder": "kvittering", "filename": "kvittering1.PNG"},
     {"url": "pages/eksempler/kvittering/kvittering-2/", "folder": "kvittering", "filename": "kvittering2.PNG"}
