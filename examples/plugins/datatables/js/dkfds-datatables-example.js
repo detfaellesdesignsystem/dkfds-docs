@@ -389,8 +389,8 @@ class datatablesExamples {
     /////////////////////////////////
     //Give dummy buttons to top bar (all datatables)
     /////////////////////////////////
-    var downloadButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Download som PDF'><svg class='icon-svg m-0' aria-hidden=\"true\"><use xlink:href='#download'></use></svg></button>";
-    var settingsButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Rediger egenskaber'><svg class='icon-svg m-0' aria-hidden=\"true\"><use xlink:href='#settings'></use></button>";
+    var downloadButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Download som PDF'><svg class='icon-svg m-0' aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href='#download'></use></svg></button>";
+    var settingsButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Rediger egenskaber'><svg class='icon-svg m-0' aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href='#settings'></use></button>";
     $('.dataTables_filter').prepend(downloadButton).prepend(settingsButton);
     var event = new Event('init-tooltips');
     $('body')[0].dispatchEvent(event);

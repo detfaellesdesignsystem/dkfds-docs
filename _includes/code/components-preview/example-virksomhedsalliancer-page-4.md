@@ -47,7 +47,7 @@ title: Example-virksomhedsalliancer-page-4.html
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -73,7 +73,7 @@ title: Example-virksomhedsalliancer-page-4.html
             <p><b>Erhvervsministeriet</b></p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
     </nav> <!-- collapsible nav end-->
@@ -88,7 +88,7 @@ title: Example-virksomhedsalliancer-page-4.html
                     data-js-target="#overflow4" aria-haspopup="true"
                     aria-expanded="false">
                     Trin 4 af 6
-                    <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
                 <div class="overflow-menu-inner" id="overflow4"
@@ -230,7 +230,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                                             class="align-text-right mt-4 mt-lg-0">
                                                             <button
                                                                 class="button button-unstyled">
-                                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                                <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                                                 <span
                                                                     class="sr-only">Slet</span>
                                                             </button>
@@ -245,7 +245,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                                             class="align-text-right mt-4 mt-lg-0">
                                                             <button
                                                                 class="button button-unstyled">
-                                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                                <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                                                 <span
                                                                     class="sr-only">Slet</span>
                                                             </button>
@@ -260,7 +260,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                                             class="align-text-right mt-4 mt-lg-0">
                                                             <button
                                                                 class="button button-unstyled">
-                                                                <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                                                <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                                                 <span
                                                                     class="sr-only">Slet</span>
                                                             </button>
@@ -290,7 +290,7 @@ title: Example-virksomhedsalliancer-page-4.html
                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/"
                     class="button button-primary">Næste</a>
                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3"
-                    class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+                    class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
             </nav>
         </main>
     </div>

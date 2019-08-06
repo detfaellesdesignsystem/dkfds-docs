@@ -47,7 +47,7 @@ title: Example-aktindsigt-page-2.html
 
                 <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true<"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" tabindex="-1" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -98,7 +98,7 @@ title: Example-aktindsigt-page-2.html
                     <a href='/pages/eksempler/aktindsigt/aktindsigt-1'>
                         1. Inden du går igang
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -235,7 +235,7 @@ title: Example-aktindsigt-page-2.html
         <a href="/pages/eksempler/aktindsigt/aktindsigt-3"
             class="button button-primary">Næste</a>
         <a href="/pages/eksempler/aktindsigt/aktindsigt-1"
-            class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 

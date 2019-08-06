@@ -47,7 +47,7 @@ title: Example-aes-page-5.html
 
                 <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true<"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -73,7 +73,7 @@ title: Example-aes-page-5.html
             <p><b>Erhvervsministeriet</b></p>
             <p>Support: 72 20 60 00 <br><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 
@@ -108,7 +108,7 @@ title: Example-aes-page-5.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
                         1. Oplysninger om afsender
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -116,7 +116,7 @@ title: Example-aes-page-5.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-2'>
                         2. Hvis AES har spørgsmål til sagen
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -124,7 +124,7 @@ title: Example-aes-page-5.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-3'>
                         3. Oplysninger om skadelidte
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -132,7 +132,7 @@ title: Example-aes-page-5.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-4'>
                         4. Sagens natur
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -306,7 +306,7 @@ title: Example-aes-page-5.html
         <a href="/pages/eksempler/AES-erstatningssag/aes-6"
             class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-4"
-            class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 

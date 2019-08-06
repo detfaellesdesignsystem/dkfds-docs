@@ -47,7 +47,7 @@ title: Example-opsummering-2.html
 
                 <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -88,7 +88,7 @@ title: Example-opsummering-2.html
                     data-js-target="#overflow4" aria-haspopup="true"
                     aria-expanded="false">
                     Trin 5 af 6
-                    <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+                    <svg class="icon-svg" aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
                 <div class="overflow-menu-inner" id="overflow4"
@@ -344,7 +344,7 @@ title: Example-opsummering-2.html
                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-6/"
                     class="button button-primary">Send sagen</a>
                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/"
-                    class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+                    class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
             </nav>
         </main>
     </div>
