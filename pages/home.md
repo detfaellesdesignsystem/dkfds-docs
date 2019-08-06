@@ -14,7 +14,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             </p>
             <ul class="nobullet-list">
                 <li>
-                    <a href="/kom-igang">
+                    <a href="/komigang/">
                         Kom godt igang
                     </a>
                 </li>
@@ -68,7 +68,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <h2 class="mt-0">Support</h2>
         <p>Se hvilke krav som gælder for din løsning. Har du spørgsmål, så kontakt os på mail, så skal vi hjælpe dig så godt vi kan, men brug GitHub til support og teknik.</p>
         <ul class="nobullet-list">
-            <li><a href="/kom-igang/krav">Krav</a></li>
+            <li><a href="/komigang/krav/">Krav</a></li>
             <li><a href="mailto:fds@erst.dk">Skriv en mail til os</a></li>
         </ul>
     </div>

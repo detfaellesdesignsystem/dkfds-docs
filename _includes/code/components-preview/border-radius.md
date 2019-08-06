@@ -12,7 +12,7 @@ title: Border-radius.html
             <div class="static-border-radius-example"></div>
         </div>
         <div class="col-12 col-sm-12 col-md-6">
-            <pre>border-top-left-radius: 0;</pre>
+            <pre>border-radius: 0;</pre>
         </div>
     </div>
     <p class="h5">Runde hjørner (4px)</p>
@@ -23,7 +23,7 @@ title: Border-radius.html
             <div class="interactive-border-radius-example"></div>
         </div>
         <div class="col-12 col-sm-12 col-md-6">
-            <pre>box-shadow: $box-shadow-slightly;</pre>
+            <pre>border-radius: 4px</pre>
         </div>
     </div>
 </div>
