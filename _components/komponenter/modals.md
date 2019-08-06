@@ -12,7 +12,7 @@ description: Modalvinduer anvendes til at tvinge brugerens fokus på et specifik
 
 {% include code/preview.html component="modal" %}
 {% include code/accordion.html component="modal" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="modal-tech-docs">
     Implementering
@@ -33,7 +33,7 @@ description: Modalvinduer anvendes til at tvinge brugerens fokus på et specifik
   </div>
 </div>
 
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="modal-docs">
     Retningslinjer

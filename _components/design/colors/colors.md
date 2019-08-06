@@ -14,7 +14,7 @@ lead: Da designsystemet er fælles for både borger.dk og Virk er der portalspec
 <h2>Portalfarver (temaer)</h2>
 <p>Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af temahåndtering i koden.</p>
 
-<div class="accordion-bordered mb-6">
+<div class="accordion accordion-bordered mb-6">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="theme">
     Implementering

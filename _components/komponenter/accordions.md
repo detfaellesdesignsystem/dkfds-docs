@@ -36,7 +36,7 @@ lead: En accordion er et grafisk element, som du kan bruge til vise indhold med.
 <h2>Standard</h2>
 {% include code/preview.html component="accordion" %}
 {% include code/accordion.html component="accordion" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="technical">
     Implementering
@@ -49,7 +49,7 @@ lead: En accordion er et grafisk element, som du kan bruge til vise indhold med.
 <h2>Tilføj ramme</h2>
 {% include code/preview.html component="accordion-border" %}
 {% include code/accordion.html component="accordion-border" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="technical-border">
     Implementering
@@ -62,7 +62,7 @@ lead: En accordion er et grafisk element, som du kan bruge til vise indhold med.
 <h2>Tillad mere end én åben accordion</h2>
 {% include code/preview.html component="accordion-multi" %}
 {% include code/accordion.html component="accordion-multi" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="technical-multi">
     Implementering

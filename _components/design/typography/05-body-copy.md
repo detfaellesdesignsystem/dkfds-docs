@@ -10,7 +10,7 @@ order: 05
 {% include code/preview.html component="inlinetext" %}
 {% include code/accordion.html component="inlinetext" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="bodycopy-docs-tech">
     Implementering
@@ -28,7 +28,7 @@ order: 05
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typobody-docs">
     Retningslinjer

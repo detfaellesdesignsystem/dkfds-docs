@@ -8,7 +8,7 @@ lead:
 
 {% include code/preview.html component="select" classes="preview-dropdown" %}
 {% include code/accordion.html component="select" %}
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="dropdown-docs">
     Retningslinjer

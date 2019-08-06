@@ -9,7 +9,7 @@ order: 10
 
 {% include code/preview.html component="helptext" %}
 {% include code/accordion.html component="helptext" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="helptext-docs-tech">
     Retningslinjer

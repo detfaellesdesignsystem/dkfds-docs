@@ -9,7 +9,7 @@ order: 06
 <p>Et skip link bør være det første element på siden som rammes af tabulatoren. Ved aktivering af skip linket flyttes fokus til indholdet på siden.</p>
 {% include code/preview.html component="skiplink" %}
 {% include code/accordion.html component="skiplink" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="skipnav-docs-tech">
     Implementering

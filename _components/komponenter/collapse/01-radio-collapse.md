@@ -7,7 +7,7 @@ lead:
 
 {% include code/preview.html component="radio-toggle-content" %}
 {% include code/accordion.html component="radio-toggle-content" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="radio-toggle-content-tech">
     Implementering
@@ -30,7 +30,7 @@ lead:
     </section>
   </div>
 </div>
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="checkbox-toggle-content-docs">
     Retningslinjer

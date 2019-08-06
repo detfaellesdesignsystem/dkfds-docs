@@ -9,7 +9,7 @@ order: 02
 
 {% include code/preview.html component="address-form" %}
 {% include code/accordion.html component="address-form" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="address-form-docs">
     Retningslinjer

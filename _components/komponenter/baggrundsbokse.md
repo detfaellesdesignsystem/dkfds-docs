@@ -10,7 +10,7 @@ lead: Baggrundsbokse are a list of headers that can be clicked to hide or reveal
 
 {% include code/preview.html component="accordion" %}
 {% include code/accordion.html component="accordion" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="true" aria-controls="documentation">
     Retningslinjer

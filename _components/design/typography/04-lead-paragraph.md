@@ -12,7 +12,7 @@ order: 04
 {% include code/accordion.html component="lead_paragraph" %}
 
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typolead-docs">
     Retningslinjer

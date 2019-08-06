@@ -9,7 +9,7 @@ lead: "Faneblade udgør den vandrette eller horisontale navigation i en løsning
 ---
 {% include code/preview.html component="tabnav" %}
 {% include code/accordion.html component="tabnav" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="code-tabnav-docs">
     Implementering
@@ -29,7 +29,7 @@ lead: "Faneblade udgør den vandrette eller horisontale navigation i en løsning
 </div>
 
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="faneblad-docs">
     Retningslinjer

@@ -10,7 +10,7 @@ order: 07
 {% include code/preview.html component="displaytext" %}
 {% include code/accordion.html component="displaytext" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typodisplay-docs">
     Retningslinjer

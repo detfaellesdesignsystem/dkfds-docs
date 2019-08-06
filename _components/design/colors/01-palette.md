@@ -560,7 +560,7 @@ order: 01
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="color-implementation">
     Implementering

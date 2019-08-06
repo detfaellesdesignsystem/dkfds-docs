@@ -6,7 +6,7 @@ lead:
 ---
 {% include code/preview.html component="buttons-fileupload" %}
 {% include code/accordion.html component="buttons-fileupload" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tech-filebutton">
     Implementering
   </button>

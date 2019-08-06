@@ -4,31 +4,7 @@ var Cookies = require('./vendor/js-cookie');
 var iFrameResize = require('./vendor/iframeResizer');
 import * as h from "dkfds/src/js/dkfds";
 require('./sidenav');
-
-
 $(document).ready(function () {
-    console.log('dkfds', h);
-
-    let blabla = '  <input id="id-checkbox5" type="checkbox" name="Name"\n' +
-        '                        value="Value"\n' +
-        '                        class="form-checkbox  checkbox-large js-checkbox-toggle-content"\n' +
-        '                        data-js-target=\'#collapse-check5\'\n' +
-        '                        aria-controls=\'collapse-check1\'\n' +
-        '                        aria-expanded=\'false\' />\n' +
-        '                    <label for="id-checkbox5" class="">Checkbox viser\n' +
-        '                        indhold</label>\n' +
-        '\n' +
-        '                    <div id="collapse-check5" aria-hidden="true"\n' +
-        '                        class="box-border-l collapsed">\n' +
-        '                        <div class="py-4">\n' +
-        '                            <p>Dette indhold bliver vist når checkboxen er\n' +
-        '                                valgt.</p>\n' +
-        '                        </div>\n' +
-        '                    </div>';
-    document.getElementById('checkbox-toggle-content-tech').innerHTML = blabla + document.getElementById('checkbox-toggle-content-tech').innerHTML;
-    new h.checkboxToggleContent(document.getElementById('id-checkbox5'));
-
-
 
     // Initialize The style switcher fill
     $('.style-switcher').val(window.curStyle);

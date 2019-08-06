@@ -9,7 +9,7 @@ order: 03
 {% include code/preview.html component="labels" %}
 {% include code/accordion.html component="labels" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="labels-docs-tech">
     Implementering
@@ -20,7 +20,7 @@ order: 03
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typolabels-docs">
     Retningslinjer

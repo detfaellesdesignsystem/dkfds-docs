@@ -7,7 +7,7 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
 
 {% include code/preview.html component="date-input" %}
 {% include code/accordion.html component="date-input" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="date-input-tech">
     Implementering
@@ -33,7 +33,7 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
     </section>
   </div>
 </div>
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="date-input-docs">
     Retningslinjer
