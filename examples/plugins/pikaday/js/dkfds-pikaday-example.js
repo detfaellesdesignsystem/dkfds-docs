@@ -12,7 +12,6 @@ class datepickerGroup {
       this.pikadayInstance = null;
       this.datepickerElement = $(el).find(jsDatepickerSelector);
       this.dateGroup = el;
-      this.formGroup = $(el).parent('.form-group');
       this.dayInputElement = null;
       this.monthInputElement = null;
       this.yearInputElement = null;
@@ -24,9 +23,9 @@ class datepickerGroup {
     }
 
     initDateInputs(){
-        this.dayInputElement = this.formGroup.find(jsDayInput)[0];
-        this.monthInputElement = this.formGroup.find(jsMonthInput)[0];
-        this.yearInputElement = this.formGroup.find(jsYearInput)[0];
+        this.dayInputElement = $(this.dateGroup).find(jsDayInput)[0];
+        this.monthInputElement = $(this.dateGroup).find(jsMonthInput)[0];
+        this.yearInputElement = $(this.dateGroup).find(jsYearInput)[0];
 
         var that = this;
 
@@ -140,14 +139,14 @@ class datepickerGroup {
         return isValid;
     }
     showError(msg){
-        this.formGroup[0].classList.add("form-error");
+        this.dateGroup.classList.add("form-error");
         var message = $(this.dateGroup).siblings(".form-error-message");
         if(message.length != 0){
             message[0].textContent = msg;
         }
     }
     removeError(){
-        this.formGroup[0].classList.remove("form-error");
+        this.dateGroup.classList.remove("form-error");
         var message = $(this.dateGroup).siblings(".form-error-message");
         if(message.length != 0){
             message[0].textContent = "";
