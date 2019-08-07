@@ -2,10 +2,9 @@
 import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
 var iFrameResize = require('./vendor/iframeResizer');
-import * as h from "dkfds/src/js/dkfds";
+import * as DKFDS from "dkfds";
 require('./sidenav');
 $(document).ready(function () {
-
     // Initialize The style switcher fill
     $('.style-switcher').val(window.curStyle);
     $('.style-switcher').on('change', function () {
