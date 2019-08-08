@@ -12,7 +12,7 @@
         "name": "card7",
         "header": "Header",
         "subheader": "Understøttende tekst",
-        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg\" class=\"d-block\" alt=\"\" />",
+        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg\" class=\"d-block w-percent-100\" alt=\"\" />",
         "actionbuttons": "<button class=\"button button-secondary\">Sekundærknap</button>"
       },
       {

@@ -5,7 +5,7 @@ title: Cards-same-height.html
 ---
 <div class="container">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
             <div class="card card-align-height">
 
                 <div class="card-header">
@@ -32,7 +32,7 @@ title: Cards-same-height.html
             </div>
 
         </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
             <div class="card card-align-height">
 
                 <div class="card-content">
@@ -40,7 +40,7 @@ title: Cards-same-height.html
                     <div class="content">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <img src="{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg" class="d-block" alt="" />
+                                <img src="{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg" class="d-block w-percent-100" alt="" />
                   </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ title: Cards-same-height.html
                 </div>
 
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
                 <div class="card card-align-height">
 
                     <div class="card-header">
