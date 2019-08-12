@@ -56,5 +56,13 @@ lead: Styling-elementerne er de mindste byggesten i systemet. Alle større kompo
             <p><a href="/design/logoer/">Logoer</a></p>
         </div>
     </div>
+    <div class="col-12 col-md-4">
+        <div class="demo-component-box">
+            <a href="/design/print/" class="demo-component-box__img design-box" aria-hidden="true" tabindex="-1">
+                <svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#printer"></use></svg>
+            </a>
+            <p><a href="/design/print/">Print</a></p>
+        </div>
+    </div>
 </div>
 
