@@ -34,8 +34,8 @@
       {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},
       {"content": "<a class=\"function-link\" href=\"mailto:support@example.dk\">support@example.dk</a>"},
       {"content": "<a class=\"function-link\" href=\"tel:12 34 56 78\">12 34 56 78</a>"},
-      {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"},
-      {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>"}
+      {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true},
+      {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
     ]
   }
 }

@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
       {% for card7 in cards7_examples.items -%}
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
         {{ cards7(card7.name, card7.header, card7.subheader, card7.cardtext, card7.contenttext, card7.cardcontent, card7.actioncontent, card7.actionbuttons, card7.actionlinks, true ) }}
     </div>
     {%- endfor %}

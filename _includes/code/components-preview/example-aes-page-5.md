@@ -6,10 +6,12 @@ title: Example-aes-page-5.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                aria-label="logo link" class="logo alert-leave">
+                <span class="d-none d-print-block">Portalnavn</span>
+            </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,7 +23,8 @@ title: Example-aes-page-5.html
                     <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
                 </p>
 
-                <a href="#" class="button button-secondary alert-leave"
+                <a href="#"
+                    class="button button-secondary alert-leave d-print-none"
                     role="button">
                     Log af
                 </a>
@@ -234,8 +237,7 @@ title: Example-aes-page-5.html
 
         <div class="form-group">
 
-            <input id="id-retssag" type="checkbox"
-                name="Der verserer en retssag"
+            <input id="id-retssag" type="checkbox" name=""
                 value="Der verserer en retssag"
                 class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                 data-js-target='#collapse-check'
@@ -302,7 +304,7 @@ title: Example-aes-page-5.html
             </div>
         </div>
     </fieldset>
-    <nav class="page-navigation">
+    <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-6"
             class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-4"
@@ -315,18 +317,19 @@ title: Example-aes-page-5.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span
+                    <li class=""><span
                             class="h5 weight-semibold">Eksempelstyrelsen</span>
                     </li>
-                    <li><a class="function-link"
+                    <li class=""><a class="function-link"
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
-                    <li><a class="function-link" href="tel:12 34 56 78">12
-                            34 56 78</a></li>
-                    <li><a href="#"
+                    <li class=""><a class="function-link"
+                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                    <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
-                    <li><a href="#" class="function-link">Privatlivspolitik
+                    <li class="d-print-none"><a href="#"
+                            class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
             </div>

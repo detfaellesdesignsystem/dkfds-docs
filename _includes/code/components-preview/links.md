@@ -11,7 +11,7 @@ title: Links.html
             </p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>color: #004d99</pre>
+            <pre>color: #004D99</pre>
         </div>
     </div>
     <div class="row">
@@ -22,7 +22,7 @@ title: Links.html
             </p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>color: #004080</pre>
+            <pre>color: #000040</pre>
         </div>
     </div>
     <div class="row">
@@ -33,7 +33,7 @@ title: Links.html
             </p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>color: #000040</pre>
+            <pre>color: #004D99</pre>
         </div>
     </div>
     <div class="row">

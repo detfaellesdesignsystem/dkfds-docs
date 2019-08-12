@@ -62,7 +62,7 @@ title: Cards-third-width.html
                     <div class="content">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <img src="{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg" class="d-block" alt="" />
+                                <img src="{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg" class="d-block w-percent-100" alt="" />
               </div>
                             </div>
                         </div>

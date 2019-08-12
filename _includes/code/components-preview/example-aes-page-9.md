@@ -6,10 +6,12 @@ title: Example-aes-page-9.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                aria-label="logo link" class="logo alert-leave">
+                <span class="d-none d-print-block">Portalnavn</span>
+            </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,7 +23,8 @@ title: Example-aes-page-9.html
                     <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
                 </p>
 
-                <a href="#" class="button button-secondary alert-leave"
+                <a href="#"
+                    class="button button-secondary alert-leave d-print-none"
                     role="button">
                     Log af
                 </a>
@@ -187,7 +190,7 @@ title: Example-aes-page-9.html
         korrekte.</p>
     <h2>Dine oplysninger</h2>
     <table
-        class="table table--borderless table--compact table--responsive-headers w-percent-lg-70">
+        class="table table--borderless table--compact table--responsive-headers d-print-table w-percent-lg-70">
         <tbody>
             <tr>
                 <th class="w-percent-md-30">Virksomhedens navn</th>
@@ -214,7 +217,7 @@ title: Example-aes-page-9.html
     </table>
     <h3 class="h4">Oplysninger om skadelidte</h3>
     <table
-        class="table table--borderless table--compact table--responsive-headers mt-6 mb-7 w-percent-lg-70">
+        class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-lg-70">
         <tbody>
             <tr>
                 <th class="w-percent-md-30">Skadelidtes navn</th>
@@ -234,7 +237,7 @@ title: Example-aes-page-9.html
     </table>
     <h3 class="h4">Oplysninger om sagen</h3>
     <table
-        class="table table--borderless table--compact table--responsive-headers mt-6 mb-7 w-percent-lg-70">
+        class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-lg-70">
         <tbody>
             <tr>
                 <th class="w-percent-md-30">Sagstype</th>
@@ -282,7 +285,7 @@ title: Example-aes-page-9.html
     </table>
     <h3 class="h4">Yderligere oplysninger</h3>
     <table
-        class="table table--borderless table--compact table--responsive-headers mt-6 mb-7 w-percent-lg-70">
+        class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-lg-70">
         <tbody>
             <tr>
                 <th class="w-percent-md-30">Faktuelle oplysninger</th>
@@ -306,7 +309,7 @@ title: Example-aes-page-9.html
     <h2>Bilagsoversigt</h2>
     <h3 class="h4">Første undersøgelse af skade</h3>
     <table
-        class="table table--borderless table--compact table--responsive-headers mt-6 mb-7 w-percent-lg-70">
+        class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-lg-70">
         <thead>
             <tr>
                 <th>Original titel</th>
@@ -330,7 +333,7 @@ title: Example-aes-page-9.html
     </table>
     <h3 class="h4">Oplysninger om varigt mén</h3>
     <table
-        class="table table--borderless table--compact table--responsive-headers mt-6 mb-7 w-percent-lg-70">
+        class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-lg-70">
         <thead>
             <tr>
                 <th>Original titel</th>
@@ -363,7 +366,7 @@ title: Example-aes-page-9.html
     </table>
     <h3 class="h4">Første undersøgelse af skade</h3>
     <table
-        class="table table--borderless table--responsive-headers table--compact mt-6 w-percent-lg-70">
+        class="table table--borderless table--responsive-headers d-print-table table--compact mt-6 w-percent-lg-70">
         <thead>
             <tr>
                 <th>Original titel</th>
@@ -386,7 +389,7 @@ title: Example-aes-page-9.html
         </tbody>
     </table>
 
-    <nav class="page-navigation">
+    <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-10"
             class="button button-primary">Send sagen til AES</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-8"
@@ -399,18 +402,19 @@ title: Example-aes-page-9.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span
+                    <li class=""><span
                             class="h5 weight-semibold">Eksempelstyrelsen</span>
                     </li>
-                    <li><a class="function-link"
+                    <li class=""><a class="function-link"
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
-                    <li><a class="function-link" href="tel:12 34 56 78">12
-                            34 56 78</a></li>
-                    <li><a href="#"
+                    <li class=""><a class="function-link"
+                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                    <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
-                    <li><a href="#" class="function-link">Privatlivspolitik
+                    <li class="d-print-none"><a href="#"
+                            class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
             </div>

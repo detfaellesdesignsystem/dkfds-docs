@@ -97,9 +97,9 @@
             {{ alert("alert alert-success alert--show-icon", "alert", "Kvittering", "Din virksomhedsregistrering er modtaget", "success" ) }}
             <h1 class="mt-5">Kvittering</h1>
             <p class="font-lead">Nedenfor finder du dine indtastninger fra de foregående sider.</p>
-            <button class="button button-secondary">{{ icon_svg('printer')}} Udskriv kvittering</button>
+            <button class="button button-secondary d-print-none">{{ icon_svg('printer')}} Udskriv kvittering</button>
             <h2>Dine oplysninger</h2>
-            <table class="table table--borderless table--compact table--responsive-headers mb-7">
+            <table class="table table--borderless table--compact table--responsive-headers d-print-table mb-7">
                 <tbody>
                     <tr>
                         <th class="w-percent-md-30">Virksomhedens navn</th>
@@ -116,7 +116,7 @@
                 </tbody>
             </table>
             <h3 class="h4">Oplysninger om skadelidte</h3>
-            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
                 <tbody>
                     <tr>
                         <th class="w-percent-md-30">Skadelidtes navn</th>
@@ -129,7 +129,7 @@
                 </tbody>
             </table>
             <h3 class="h4">Oplysninger om sagen</h3>
-            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
                 <tbody>
                     <tr>
                         <th class="w-percent-md-30">Sagstype</th>
@@ -158,7 +158,7 @@
                 </tbody>
             </table>
             <h3 class="h4">Yderligere oplysninger</h3>
-            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
                 <tbody>
                     <tr>
                         <th class="w-percent-md-30">Faktuelle oplysninger</th>
@@ -173,7 +173,7 @@
             </table>
             <h2>Bilagsoversigt</h2>
             <h3 class="h4">Første undersøgelse af skade</h3>
-            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
                 <thead>
                     <tr>
                         <th>Original titel</th>
@@ -192,7 +192,7 @@
                 </tbody>
             </table>
             <h3 class="h4">Oplysninger om varigt mén</h3>
-            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
                 <thead>
                     <tr>
                         <th>Original titel</th>
@@ -217,7 +217,7 @@
                 </tbody>
             </table>
             <h3 class="h4">Første undersøgelse af skade</h3>
-            <table class="table table--borderless table--responsive-headers table--compact mt-6">
+            <table class="table table--borderless table--responsive-headers d-print-table table--compact mt-6">
                 <thead>
                     <tr>
                         <th>Original titel</th>

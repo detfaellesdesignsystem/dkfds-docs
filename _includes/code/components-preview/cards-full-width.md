@@ -26,7 +26,7 @@ title: Cards-full-width.html
                     <div class="content">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <img src="{{ site.baseurl }}/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg" alt="">
+                                <img src="{{ site.baseurl }}/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg" alt="" class="w-percent-100">
               </div>
                             </div>
                         </div>
