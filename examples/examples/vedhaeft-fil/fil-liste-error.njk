@@ -1,0 +1,22 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<div class="container">
+    <h1>Dokumenter til sagen<span class="weight-normal">(frivilligt)</span></h1>
+    <table class="table table--borderless table--responsive-headers">
+        <thead>
+            <tr>
+                <th>Filnavn</th>
+                <th>Navngiv dookument</th>
+                <th>Slet</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td><a hrf="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Lægeerklæring.pdf</a></td>
+                <td>{{textinput('input1', 'Navngiv dokument', '', '', '', 'filename', 'sr-only')}}</td>
+                <td><a hrf="#" class="function-link">{{ icon_svg('delete-outline')}}<span class="sr-only">Slet fil</span></a></td>
+             </tr>
+        </tbody>
+    </table>
+</div>
