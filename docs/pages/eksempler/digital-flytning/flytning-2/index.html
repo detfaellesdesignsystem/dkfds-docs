@@ -102,10 +102,12 @@
     <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                aria-label="logo link" class="logo alert-leave">
+                <span class="d-none d-print-block">Portalnavn</span>
+            </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -117,7 +119,8 @@
                     <b class="username">Christian Emil Vestergaard Christiansen</b>
                 </p>
 
-                <a href="#" class="button button-secondary alert-leave"
+                <a href="#"
+                    class="button button-secondary alert-leave d-print-none"
                     role="button">
                     Log af
                 </a>
@@ -251,7 +254,7 @@
     <div class="row">
         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
             <table
-                class="table table--borderless table--compact table--responsive-headers mt-3 mb-5">
+                class="table table--borderless table--compact table--responsive-headers d-print-table mt-3 mb-5">
                 <thead>
                     <tr>
                         <th></th>
@@ -291,11 +294,11 @@
     </div>
     <div>
         <button
-            class="button button-secondary"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#add"></use></svg>Tilføj
+            class="button button-secondary d-print-none"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#add"></use></svg>Tilføj
             personer</button>
     </div>
 
-    <nav class="page-navigation">
+    <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/digital-flytning/flytning-3"
             class="button button-primary">Næste</a>
         <a href="/pages/eksempler/digital-flytning/flytning-1"
@@ -308,18 +311,19 @@
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span
+                    <li class=""><span
                             class="h5 weight-semibold">Eksempelstyrelsen</span>
                     </li>
-                    <li><a class="function-link"
+                    <li class=""><a class="function-link"
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
-                    <li><a class="function-link" href="tel:12 34 56 78">12
-                            34 56 78</a></li>
-                    <li><a href="#"
+                    <li class=""><a class="function-link"
+                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                    <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
-                    <li><a href="#" class="function-link">Privatlivspolitik
+                    <li class="d-print-none"><a href="#"
+                            class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
             </div>
