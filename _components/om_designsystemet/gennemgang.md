@@ -4,7 +4,7 @@ layout: styleguide
 title: Gennemgang af designsystemet
 category: Om_designsystemet_category
 subcategory: Om designsystemet
-description: Gennemgang af designsystemet for bedre forståelse af brugen og opbygningen af projektet. 
+description: Designsystemet anviser et minimalt og fleksibelt design. På de underliggende sider finder du en beskrivelse af principper og valg af løsninger bag designsystemet.
 subnav:
 - text: Frontend arkitektur
   href: '#frontend-arkitektur'
@@ -23,8 +23,19 @@ subnav:
 - text: Versioner og releases
   href: '#versioner'
 ---
-
 <article>
+    <section>
+        <h2 class="h3">Vi står på skuldrene af andre store designsystemer</h2>
+        <p>Det Fælles Designsystem er særligt inspireret af to andre velrenommerede offentlige open source designsystemer, nemlig:</p>
+        <ul>
+            <li>det amerikanske <a href="https://v2.designsystem.digital.gov/" class="icon-link">US Web Design System<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li>det engelske <a href="https://design-system.service.gov.uk/" class="icon-link">GOV.uk Design System<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+        </ul>
+        <p>Designsystemet bygger dermed på et fundament af internationalt anerkendte standarder og bedste praksis for design af løsninger, og vi anbefaler, at du også henter inspiration fra disse to, når behovet opstår.</p>
+        <p>Det Fælles Designsystem anviser et minimalt og fleksibelt design. Komponenterne er nøje udvalgt til selvbetjeningsløsninger. Systemets frontendarkitektur afspejler vores ønske om at der bygges selvbetjeningsløsninger med høj performance, hvor kun det nødvendige hentes ind i løsningen.</p>
+        <p>Designsystemet giver lette og stabile selvbetjeningsløsninger. Med sin ensartede funktionalitet og design skaber det genkendelighed for brugerne på tværs af selvbetjeningsløsningerne. Det gør det nemmere for brugerne at navigere i og anvende løsningerne, da den samlede brugerrejse på tværs af offentlige selvbetjeningsløsninger bliver mere ensartet.</p>
+        <p>På de underliggende sider finder du en beskrivelse af principper og valg af løsninger bag designsystemet.</p>
+    </section>
     <section>
         <h2 id="frontend-arkitektur">Frontend arkitektur</h2>
         <p>Det Fælles Designsystem er en simpel samling af grundlæggende funktioner og design, der skaber et solidt grundlag for udviklingen af selvbetjeningsløsninger på borger.dk og Virk.</p>
