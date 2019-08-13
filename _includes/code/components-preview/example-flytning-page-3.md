@@ -208,7 +208,8 @@ title: Example-flytning-page-3.html
     </div>
     <div class="mt-6">
 
-        <div class="form-group">
+        <div class="form-group ">
+
             <label class="form-label " for="select-street">Gade /
                 vejnavn</label>
             <select class="input-width-m form-select" name="Gade / vejnavn"
@@ -221,7 +222,8 @@ title: Example-flytning-page-3.html
     </div>
     <div class="mt-6">
 
-        <div class="form-group">
+        <div class="form-group ">
+
             <label class="form-label " for="select-housenumber">Husnr. /
                 bogstav</label>
             <select class="input-width-xxs form-select"
@@ -235,7 +237,8 @@ title: Example-flytning-page-3.html
     </div>
     <div class="mt-6">
 
-        <div class="form-group">
+        <div class="form-group ">
+
             <label class="form-label " for="select-door">Etage,
                 side/dør</label>
             <select class="input-width-xxs form-select"

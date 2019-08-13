@@ -202,7 +202,8 @@ title: Example-aes-page-6.html
                 </td>
                 <td class="mt-4 mt-lg-0">
 
-                    <div class="form-group">
+                    <div class="form-group ">
+
                         <label class="form-label sr-only"
                             for="select-dokumentationtype">Vælg
                             dokumentationstype</label>

@@ -16,6 +16,8 @@ subnav:
   href: '#solution-4'
 - text: 'Løsning 5: Strategiske virksomhedsalliancer'
   href: '#solution-5'
+- text: 'Løsning 6: Dokumenter til sagen'
+  href: '#solution-6'
 ---
 
 <!-- Løsning 1: Aktindsigt -->
@@ -149,23 +151,13 @@ subnav:
 </div>
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">Demo strategiske virksomhedsalliancer</a>
 
-<!-- Løsning 6: Praktikplads -->
-<!-- <h2 id="solution-6">Løsning 6: Praktikplads</h2>
+
+<!-- Løsning 5: Strategiske virksomhedsalliancer -->
+<h2 id="solution-6">Løsning 6: Dokumenter til sagen</h2>
 <div class="row">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/praktikplads/praktikplads-1"><img src="{{ site.baseurl }}/img/examples_pages/praktikplads.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/praktikplads/praktikplads-1"><img src="{{ site.baseurl }}/img/examples_pages/praktikplads.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-   <a href="{{ site.baseurl }}/pages/eksempler/praktikplads/praktikplads-1"><img src="{{ site.baseurl }}/img/examples_pages/praktikplads.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-1" title="Dokumenter til sagen"><img src="{{ site.baseurl }}/img/examples_pages/vedhaeft-fil/fil-1.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
   </div>
 </div>
-<div class="row mt-5">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/praktikplads/praktikplads-1"><img src="{{ site.baseurl }}/img/examples_pages/praktikplads.PNG" alt="" style="max-width: 100%; width: 1018px"></a>
-  </div>
-</div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/praktikplads/praktikplads-1">Demo praktikplads</a>
- -->
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-1">Demo Dokumenter til sagen</a>
+

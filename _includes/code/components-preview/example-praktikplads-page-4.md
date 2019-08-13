@@ -170,7 +170,8 @@ title: Example-praktikplads-page-4.html
         </div>
         <div class="mt-5">
 
-            <div class="form-group">
+            <div class="form-group ">
+
                 <label class="form-label " for="select-education">Vælg
                     uddannelse</label>
                 <select class="input-width-m form-select"

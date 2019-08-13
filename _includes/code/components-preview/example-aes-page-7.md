@@ -218,7 +218,8 @@ title: Example-aes-page-7.html
                                         <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         prn0237452_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype1">Vælg
@@ -260,7 +261,8 @@ title: Example-aes-page-7.html
                                         <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         sgn1023152_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype2">Vælg
@@ -339,7 +341,8 @@ title: Example-aes-page-7.html
                                         <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         dkf4903283_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype3">Vælg
@@ -381,7 +384,8 @@ title: Example-aes-page-7.html
                                         <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         kfo1127303_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype4">Vælg
@@ -460,7 +464,8 @@ title: Example-aes-page-7.html
                                         <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         ohb3428439_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype5">Vælg
@@ -502,7 +507,8 @@ title: Example-aes-page-7.html
                                         <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file"></use></svg>
                                         sdv5644382_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype6">Vælg
