@@ -8,11 +8,11 @@
             <g id="Group-11" transform="translate(88.000000, 2044.000000)">
                 <g id="Card-med-fuld-bredde--Copy-3">
                     <rect id="Grey_BG" fill="#B9E7DF" x="0" y="0" width="832" height="300"></rect>
-                    <text id="Aliquam-aliquet-nibo" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="32" font-weight="bold" line-spacing="40" fill="#1A1A1A">
+                    <text id="Aliquam-aliquet-nibo" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="32" font-weight="bold" line-spacing="40" fill="#1A1A1A">
                         <tspan x="32" y="57">Aliquam aliquet niboh </tspan>
                         <tspan x="32" y="97">faucibus varius </tspan>
                     </text>
-                    <text id="Aenean-euismod-vesti" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="24" fill="#454545">
+                    <text id="Aenean-euismod-vesti" font-family="IBMPlexSans, IBM Plex Sans, Arial" font-size="16" font-weight="normal" line-spacing="24" fill="#454545">
                         <tspan x="32" y="138">Aenean euismod vestibulum </tspan>
                         <tspan x="32" y="162">lacinia. Pellentesque nec nisi diam. </tspan>
                         <tspan x="32" y="186">Pellentesque nec urna vel ante </tspan>
@@ -42,19 +42,19 @@
                         <rect id="Rectangle-Copy-2" x="301" y="0" width="1" height="223"></rect>
                         <rect id="Rectangle-Copy-2" x="401" y="0" width="1" height="223"></rect>
                     </g>
-                    <text id="2015" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2015" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="20.6" y="235">2015</tspan>
                     </text>
-                    <text id="2018" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2018" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="318.1" y="235">2018</tspan>
                     </text>
-                    <text id="2019" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2019" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="418.1" y="235">2019</tspan>
                     </text>
-                    <text id="2016" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2016" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="118.1" y="235">2016</tspan>
                     </text>
-                    <text id="2017" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2017" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="219.1" y="235">2017</tspan>
                     </text>
                     <path d="M33,105.613502 C71.2674013,105.613502 69.2104906,162.277149 103.878807,162.277149 C138.547124,162.277149 138.547124,133.993996 169.173946,133.993996 C199.800768,133.993996 199.800768,157.44268 227.791667,157.44268 C255.782566,157.44268 261.125509,26.5192236 293.416667,26.5192236 C331.476428,26.5192236 331.476428,69.157727 364.667509,69.157727 C397.207687,69.157727 392.095566,105.613502 433,105.613502 C433,105.613502 433,138.248743 433,203.519224 L33,203.519224 C33,138.248743 33,105.613502 33,105.613502 Z" id="Path-4" fill="#74D0BF" fill-rule="nonzero"></path>
@@ -70,11 +70,11 @@
                 </g>
                 <g id="Card-med-fuld-bredde--Copy-4">
                     <rect id="Grey_BG" fill="#B9E7DF" x="0" y="0" width="832" height="300"></rect>
-                    <text id="Aliquam-aliquet-nibo" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="32" font-weight="bold" line-spacing="40" fill="#1A1A1A">
+                    <text id="Aliquam-aliquet-nibo" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="32" font-weight="bold" line-spacing="40" fill="#1A1A1A">
                         <tspan x="32" y="57">Aliquam aliquet niboh </tspan>
                         <tspan x="32" y="97">faucibus varius </tspan>
                     </text>
-                    <text id="Aenean-euismod-vesti" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="24" fill="#454545">
+                    <text id="Aenean-euismod-vesti" font-family="IBMPlexSans, IBM Plex Sans, Arial" font-size="16" font-weight="normal" line-spacing="24" fill="#454545">
                         <tspan x="32" y="138">Aenean euismod vestibulum </tspan>
                         <tspan x="32" y="162">lacinia. Pellentesque nec nisi diam. </tspan>
                         <tspan x="32" y="186">Pellentesque nec urna vel ante </tspan>
@@ -104,19 +104,19 @@
                         <rect id="Rectangle-Copy-2" x="301" y="0" width="1" height="223"></rect>
                         <rect id="Rectangle-Copy-2" x="401" y="0" width="1" height="223"></rect>
                     </g>
-                    <text id="2015" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2015" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="20.6" y="235">2015</tspan>
                     </text>
-                    <text id="2018" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2018" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="318.1" y="235">2018</tspan>
                     </text>
-                    <text id="2019" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2019" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="418.1" y="235">2019</tspan>
                     </text>
-                    <text id="2016" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2016" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="118.1" y="235">2016</tspan>
                     </text>
-                    <text id="2017" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="2017" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="219.1" y="235">2017</tspan>
                     </text>
                     <path d="M33,105.613502 C71.2674013,105.613502 69.2104906,162.277149 103.878807,162.277149 C138.547124,162.277149 138.547124,133.993996 169.173946,133.993996 C199.800768,133.993996 199.800768,157.44268 227.791667,157.44268 C255.782566,157.44268 261.125509,26.5192236 293.416667,26.5192236 C331.476428,26.5192236 331.476428,69.157727 364.667509,69.157727 C397.207687,69.157727 392.095566,105.613502 433,105.613502 C433,105.613502 433,138.248743 433,203.519224 L33,203.519224 C33,138.248743 33,105.613502 33,105.613502 Z" id="Path-4" fill="#74D0BF" fill-rule="nonzero"></path>

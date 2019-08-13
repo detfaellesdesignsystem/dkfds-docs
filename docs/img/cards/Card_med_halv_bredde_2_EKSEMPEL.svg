@@ -8,11 +8,11 @@
             <g id="Group-2" transform="translate(520.000000, 2464.000000)">
                 <g id="Card-med-halv-bredde-2-Copy">
                     <rect id="Grey_BG" fill="#C8CADF" x="0" y="0" width="400" height="200"></rect>
-                    <text id="3-ofte-stillede-spør" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="24" font-weight="bold" line-spacing="32" fill="#1A1A1A">
+                    <text id="3-ofte-stillede-spør" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="24" font-weight="bold" line-spacing="32" fill="#1A1A1A">
                         <tspan x="173" y="41">3 ofte stillede </tspan>
                         <tspan x="173" y="73">spørgsmål</tspan>
                     </text>
-                    <text id="In-viverra-faucibus" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="28" fill="#1A1A1A">
+                    <text id="In-viverra-faucibus" font-family="IBMPlexSans, IBM Plex Sans, Arial" font-size="16" font-weight="normal" line-spacing="28" fill="#1A1A1A">
                         <tspan x="185" y="104">In viverra faucibus lorem?</tspan>
                         <tspan x="185" y="132">Phasellus posuere neque?</tspan>
                         <tspan x="185" y="160">Nullam quis nunc dui?</tspan>

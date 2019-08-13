@@ -11,27 +11,27 @@
                     <g id="Chart" transform="translate(49.000000, 52.000000)">
                         <path d="M77.2629885,94.7089529 C101.402777,80.2043049 109.213601,48.8767996 94.7089529,24.7370115 C80.2043049,0.597223374 48.8767996,-7.21360095 24.7370115,7.29104709 C0.597223374,21.7956951 -7.21360095,53.1232004 7.29104709,77.2629885 C21.7956951,101.402777 53.1232004,109.213601 77.2629885,94.7089529 Z" id="Oval" stroke="#FBE7F2" stroke-width="10" fill-rule="nonzero"></path>
                         <path d="M96.8281156,28.6481345 C84.4835212,3.33796514 53.9583039,-7.17271008 28.6481345,5.17188435 C3.33796514,17.5164788 -7.17271008,48.0416961 5.17188435,73.3518655 C17.5164788,98.6620349 48.0416961,109.17271 73.3518655,96.8281156 C98.6620349,84.4835212 109.17271,53.9583039 96.8281156,28.6481345 Z" id="Oval" stroke="#E874B5" stroke-width="10" stroke-dasharray="57,880" fill-rule="nonzero"></path>
-                        <text id="22%" font-family="IBMPlexSans, IBM Plex Sans" font-size="30" font-weight="normal" fill="#1A1A1A">
+                        <text id="22%" font-family="IBMPlexSans, IBM Plex Sans, Arial" font-size="30" font-weight="normal" fill="#1A1A1A">
                             <tspan x="19.595" y="60">22%</tspan>
                         </text>
                     </g>
                     <g id="Chart-Copy" transform="translate(250.000000, 49.000000)">
                         <path d="M77.2629885,94.7089529 C101.402777,80.2043049 109.213601,48.8767996 94.7089529,24.7370115 C80.2043049,0.597223374 48.8767996,-7.21360095 24.7370115,7.29104709 C0.597223374,21.7956951 -7.21360095,53.1232004 7.29104709,77.2629885 C21.7956951,101.402777 53.1232004,109.213601 77.2629885,94.7089529 Z" id="Oval" stroke="#FBE7F2" stroke-width="10" fill-rule="nonzero"></path>
                         <path d="M96.8281156,28.6481345 C84.4835212,3.33796514 53.9583039,-7.17271008 28.6481345,5.17188435 C3.33796514,17.5164788 -7.17271008,48.0416961 5.17188435,73.3518655 C17.5164788,98.6620349 48.0416961,109.17271 73.3518655,96.8281156 C98.6620349,84.4835212 109.17271,53.9583039 96.8281156,28.6481345 Z" id="Oval" stroke="#E874B5" stroke-width="10" stroke-dasharray="59,205" fill-rule="nonzero"></path>
-                        <text id="41%" font-family="IBMPlexSans, IBM Plex Sans" font-size="30" font-weight="normal" fill="#1A1A1A">
+                        <text id="41%" font-family="IBMPlexSans, IBM Plex Sans, Arial" font-size="30" font-weight="normal" fill="#1A1A1A">
                             <tspan x="23.095" y="60">41%</tspan>
                         </text>
                     </g>
-                    <text id="2018" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="16" font-weight="bold" fill="#1A1A1A">
+                    <text id="2018" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="16" font-weight="bold" fill="#1A1A1A">
                         <tspan x="81.3" y="32">2018</tspan>
                     </text>
-                    <text id="Lorem-ipsum-dolor-si" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="24" fill="#1A1A1A">
+                    <text id="Lorem-ipsum-dolor-si" font-family="IBMPlexSans, IBM Plex Sans, Arial" font-size="12" font-weight="normal" line-spacing="24" fill="#1A1A1A">
                         <tspan x="26.284" y="174">Lorem ipsum dolor sit amet</tspan>
                     </text>
-                    <text id="Etiam-aliquet-at-fel" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="24" fill="#1A1A1A">
+                    <text id="Etiam-aliquet-at-fel" font-family="IBMPlexSans, IBM Plex Sans, Arial" font-size="12" font-weight="normal" line-spacing="24" fill="#1A1A1A">
                         <tspan x="236.186" y="174">Etiam aliquet at felis vel</tspan>
                     </text>
-                    <text id="2019" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="16" font-weight="bold" fill="#1A1A1A">
+                    <text id="2019" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="16" font-weight="bold" fill="#1A1A1A">
                         <tspan x="281.3" y="32">2019</tspan>
                     </text>
                 </g>

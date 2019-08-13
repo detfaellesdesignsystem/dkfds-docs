@@ -9,13 +9,13 @@
                 <g id="Group-8">
                     <g id="Card-med-en-tredjedel-bredde-Copy-4">
                         <rect id="Grey_BG-Copy" fill="#CCF2F3" x="0" y="0" width="254" height="200"></rect>
-                        <text id="Lorem-ipsum-fordelin" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="16" font-weight="bold" line-spacing="24" fill="#1A1A1A">
+                        <text id="Lorem-ipsum-fordelin" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="16" font-weight="bold" line-spacing="24" fill="#1A1A1A">
                             <tspan x="42.6" y="32">Lorem ipsum fordeling</tspan>
                         </text>
-                        <text id="København" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="24" fill="#1A1A1A">
+                        <text id="København" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="24" fill="#1A1A1A">
                             <tspan x="43.002" y="180">København</tspan>
                         </text>
-                        <text id="Hele-landet" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="12" font-weight="bold" line-spacing="24" fill="#1A1A1A">
+                        <text id="Hele-landet" font-family="IBMPlexSans-Bold, IBM Plex Sans, Arial" font-size="12" font-weight="bold" line-spacing="24" fill="#1A1A1A">
                             <tspan x="142.552" y="180">Hele landet</tspan>
                         </text>
                     </g>
