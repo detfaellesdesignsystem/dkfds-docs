@@ -86,7 +86,8 @@ title: Fil-liste-error.html
 <main class="container page-container">
     <h1>Dokumenter til sagen <span
             class="weight-normal">(frivilligt)</span></h1>
-    <table class="table table--borderless table--responsive-headers">
+    <table
+        class="table table--borderless table--responsive-headers d-print-table">
         <thead>
             <tr>
                 <th>Filnavn</th>
