@@ -9,7 +9,7 @@ title: Header-simple.html
     <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave">
+                class="logo alert-leave">
                 <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
@@ -34,8 +34,7 @@ title: Header-simple.html
     <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link"
-                    class="alert-leave2">
+                <a href="#" title="Hjem" class="alert-leave2">
                     Løsningstitel
                 </a>
             </div>

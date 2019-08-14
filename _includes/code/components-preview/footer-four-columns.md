@@ -7,7 +7,7 @@ title: Footer-four-columns.html
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-3 footer-col">
+                <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
                         <div class=" align-text-left ">
                             <h1 class="h5 mb-4" title="Ansvarlig myndighed"
@@ -16,15 +16,15 @@ title: Footer-four-columns.html
 
                             <ul class=" unstyled-list">
 
-                                <li>
+                                <li class="">
                                     <p>Digitaliseringsstyrelsen</p>
                                 </li>
 
-                                <li>
+                                <li class="">
                                     <p>Landgreven 4</p>
                                 </li>
 
-                                <li>
+                                <li class="">
                                     <p>1413 København K</p>
                                 </li>
 
@@ -33,7 +33,7 @@ title: Footer-four-columns.html
                         </div>
                     </section>
                 </div>
-                <div class="col-12 col-sm-12 col-md-3 footer-col">
+                <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
                         <div class=" align-text-left ">
                             <h1 class="h5 mb-4" title="Kontakt"
@@ -41,11 +41,11 @@ title: Footer-four-columns.html
 
                             <ul class=" mt-0 nobullet-list">
 
-                                <li><a class="function-link"
+                                <li class=""><a class="function-link"
                                         href="mailto:support@myndighed.dk">support@myndighed.dk</a>
                                 </li>
 
-                                <li><a class="function-link"
+                                <li class=""><a class="function-link"
                                         href="tel:004512345678">(+45) 12 34
                                         56 78</a></li>
 
@@ -54,7 +54,8 @@ title: Footer-four-columns.html
                         </div>
                     </section>
                 </div>
-                <div class="col-12 col-sm-12 col-md-3 footer-col">
+                <div
+                    class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
                     <section>
                         <div class=" align-text-left ">
                             <h1 class="h5 mb-4" title="Links"
@@ -62,23 +63,26 @@ title: Footer-four-columns.html
 
                             <ul class=" mt-0 nobullet-list">
 
-                                <li><a class="function-link" href="#">Læs
-                                        lidt om dit</a></li>
+                                <li class=""><a class="function-link"
+                                        href="#">Læs lidt om dit</a></li>
 
-                                <li><a class="function-link" href="#">Her
-                                        er også lidt om dat</a></li>
+                                <li class=""><a class="function-link"
+                                        href="#">Her er også lidt om
+                                        dat</a></li>
 
-                                <li><a class="function-link" href="#">Eller
-                                        måske er du interesseret i noget
-                                        helt andet, som tager mange linjer
-                                        at forklare</a></li>
+                                <li class=""><a class="function-link"
+                                        href="#">Eller måske er du
+                                        interesseret i noget helt andet,
+                                        som tager mange linjer at
+                                        forklare</a></li>
 
                             </ul>
 
                         </div>
                     </section>
                 </div>
-                <div class="col-12 col-sm-12 col-md-3 footer-col">
+                <div
+                    class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
                     <section>
                         <div class=" align-text-left ">
                             <h1 class="h5 mb-4"
@@ -88,11 +92,11 @@ title: Footer-four-columns.html
 
                             <ul class=" mt-0 nobullet-list">
 
-                                <li><a class="function-link"
+                                <li class=""><a class="function-link"
                                         href="#">Tilgængelighedserklæring</a>
                                 </li>
 
-                                <li><a class="function-link"
+                                <li class=""><a class="function-link"
                                         href="#">Privatlivspolitik
                                         (cookies)</a></li>
 

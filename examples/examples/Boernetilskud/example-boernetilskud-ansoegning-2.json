@@ -5,8 +5,7 @@
     },
     "logolink": {
       "title": "Hjem",
-      "href" : "javascript:void(0);",
-      "label": "logo link"
+      "href" : "javascript:void(0);"
     },
     "link": {
       "href": "#",
@@ -19,7 +18,6 @@
     "title": {
       "href": "#",
       "title": "Hjem",
-      "label": "logo link",
       "text": "Familieydelser - børnetilskud"
     },
     "authority": {
