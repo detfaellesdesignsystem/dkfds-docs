@@ -5563,6 +5563,10 @@ footer .footer-theme {
       flex-direction: row;
       padding-top: calc(16px - 1px);
       padding-bottom: calc(16px - 1px); }
+      @media print {
+        .header .solution-header .solution-header-inner {
+          display: block;
+          overflow: hidden; } }
     .header .solution-header .solution-heading a, .header .solution-header .solution-heading h1 {
       font-size: 2.8rem;
       line-height: 3.2rem;
@@ -5574,14 +5578,26 @@ footer .footer-theme {
         .header .solution-header .solution-heading a, .header .solution-header .solution-heading h1 {
           font-size: 2.2rem;
           line-height: 2.4rem; } }
+    @media print {
+      .header .solution-header .solution-heading {
+        display: inline-block; } }
     .header .solution-header .solution-info {
       display: none; }
+      @media print {
+        .header .solution-header .solution-info {
+          display: block;
+          float: right;
+          margin-left: 0;
+          text-align: right; } }
       @media (min-width: 992px) {
         .header .solution-header .solution-info {
           margin-left: auto;
           text-align: right;
           max-width: 60%;
           display: block; } }
+  @media print and (min-width: 992px) {
+    .header .solution-header .solution-info {
+      margin-left: 0; } }
   .header .authority-name {
     color: #454545; }
   .header .button-contact {
