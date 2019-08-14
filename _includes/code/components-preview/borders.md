@@ -12,7 +12,7 @@ title: Borders.html
               <div class="outer-border-example"></div>
           </div>
           <div class="col-12 col-md-6">
-              <pre>border-top: 1px solid #747474</pre>
+              <pre>border: 1px solid #747474</pre>
           </div>
       </div>
       <div class="row">
@@ -23,7 +23,7 @@ title: Borders.html
               <div class="inner-border-example"></div>
           </div>
           <div class="col-12 col-md-6">
-              <pre>border-top: 1px solid #BFBFBF</pre>
+              <pre>border: 1px solid #BFBFBF</pre>
           </div>
       </div>
       <div class="row">
@@ -33,7 +33,7 @@ title: Borders.html
               <div class="button-border-example"></div>
           </div>
           <div class="col-12 col-md-6">
-              <pre>border-top: 2px solid #454545</pre>
+              <pre>border: 2px solid #454545</pre>
           </div>
       </div>
       <div class="row">
