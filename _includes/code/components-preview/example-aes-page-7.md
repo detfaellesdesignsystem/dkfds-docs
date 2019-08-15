@@ -42,7 +42,7 @@ title: Example-aes-page-7.html
             </div>
 
             <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info">
+            <div class="solution-info d-print-none">
                 <!-- nav-secondary -->
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>

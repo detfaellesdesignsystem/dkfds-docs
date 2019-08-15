@@ -40,7 +40,7 @@ title: Header-simple.html
             </div>
 
             <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info">
+            <div class="solution-info ">
                 <!-- nav-secondary -->
 
                 <h6 class="h5 authority-name"> Myndighedsnavn</h6>
