@@ -47,9 +47,10 @@ title: Example-aktindsigt-page-3.html
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
-                <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
-                        data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" tabindex="-1" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
+                            href="javascript:void(0);"
+                            data-micromodal-trigger="modal-contact"
+                            class="function-link d-inline-block"><svg class="icon-svg" tabindex="-1" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
@@ -131,21 +132,21 @@ title: Example-aktindsigt-page-3.html
                     <tr>
                         <th class="w-percent-md-30">Navn</th>
                         <td>Karen Jensen</td>
-                        <td class="align-text-md-right"><a
+                        <td class="align-text-md-right d-print-none"><a
                                 href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
                         </td>
                     </tr>
                     <tr>
                         <th class="w-percent-md-30">Adresse</th>
                         <td>Vængetstræde 77<br>0081 Købstad</td>
-                        <td class="align-text-md-right"><a
+                        <td class="align-text-md-right d-print-none"><a
                                 href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
                         </td>
                     </tr>
                     <tr>
                         <th class="w-percent-md-30">Alder</th>
                         <td>39</td>
-                        <td class="align-text-md-right"><a
+                        <td class="align-text-md-right d-print-none"><a
                                 href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
                         </td>
                     </tr>
@@ -153,7 +154,7 @@ title: Example-aktindsigt-page-3.html
                         <th class="w-percent-md-30">Tidligere ansøgninger
                         </th>
                         <td>Nej</td>
-                        <td class="align-text-md-right"><a
+                        <td class="align-text-md-right d-print-none"><a
                                 href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
                         </td>
                     </tr>
