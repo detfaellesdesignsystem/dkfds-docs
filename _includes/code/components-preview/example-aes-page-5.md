@@ -238,7 +238,7 @@ title: Example-aes-page-5.html
 
             <input id="id-retssag" type="checkbox" name=""
                 value="Der verserer en retssag"
-                class="form-checkbox  checkbox-large js-checkbox-toggle-content"
+                class="form-checkbox  checkbox-large js-checkbox-toggle-content printIfChecked"
                 data-js-target='#collapse-check'
                 aria-controls='collapse-check' aria-expanded='false' />
             <label for="id-retssag" class="">Der verserer en

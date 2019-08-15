@@ -194,21 +194,21 @@ title: Example-aes-page-9.html
             <tr>
                 <th class="w-percent-md-30">Virksomhedens navn</th>
                 <td>Forsikringens forsikring (enhed)</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-1">Rediger</a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Kontaktperson</th>
                 <td>John Doe<br>privatskade@ff.dk<br>+45 1234 5678</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-2">Rediger</a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Afsender er</th>
                 <td>Forsikringens forsikring (enhed)</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-1">Rediger</a>
                 </td>
             </tr>
@@ -221,14 +221,14 @@ title: Example-aes-page-9.html
             <tr>
                 <th class="w-percent-md-30">Skadelidtes navn</th>
                 <td>Susanne Maria Zaggariasen</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-3">Rediger</a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Skadelidtes CPR</th>
                 <td>110687-1478</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-3">Rediger</a>
                 </td>
             </tr>
@@ -241,42 +241,42 @@ title: Example-aes-page-9.html
             <tr>
                 <th class="w-percent-md-30">Sagstype</th>
                 <td>Erstatningsansvarloven</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-4">Rediger</a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Emne</th>
                 <td>Mén (6.220 kr.)</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-4">Rediger</a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Skadedato</th>
                 <td>1/10-2017</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-5">Rediger</a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Sagsnummer</th>
                 <td>prsk013456</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-5">Rediger</a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Verserende retsag</th>
                 <td>Nej</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-5">Rediger</a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Skadelidtes advokat</th>
                 <td>Nej</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-5">Rediger</a>
                 </td>
             </tr>
@@ -300,8 +300,8 @@ title: Example-aes-page-9.html
                     adipiscing euismod arcu. Quisque facilisis mattis
                     lacus.
                 </td>
-                <td class="align-text-md-right"><a href="#">Rediger</a>
-                </td>
+                <td class="align-text-md-right d-print-none"><a
+                        href="#">Rediger</a></td>
             </tr>
         </tbody>
     </table>
@@ -324,7 +324,7 @@ title: Example-aes-page-9.html
                 <td>Journal fra egen læge</td>
                 <td>2/10-2017</td>
                 <td>2,3 mb</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-7">Rediger</a>
                 </td>
             </tr>
@@ -348,7 +348,7 @@ title: Example-aes-page-9.html
                 <td>Journal fra egen læge</td>
                 <td>2/10-2017</td>
                 <td>2,3 mb</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-7">Rediger</a>
                 </td>
             </tr>
@@ -357,7 +357,7 @@ title: Example-aes-page-9.html
                 <td>Journal fra egen læge</td>
                 <td>2/10-2017</td>
                 <td>2,3 mb</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-7">Rediger</a>
                 </td>
             </tr>
@@ -381,7 +381,7 @@ title: Example-aes-page-9.html
                 <td>Journal fra egen læge</td>
                 <td>2/10-2017</td>
                 <td>2,3 mb</td>
-                <td class="align-text-md-right"><a
+                <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-7">Rediger</a>
                 </td>
             </tr>
