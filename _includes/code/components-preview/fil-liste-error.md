@@ -37,7 +37,7 @@ title: Fil-liste-error.html
         <div class="container solution-header-inner">
             <div class="solution-heading">
                 <a href="#" title="Hjem" class="alert-leave2">
-                    Eksempelløsning
+                    Eksempel på upload-fejl
                 </a>
             </div>
 
@@ -91,13 +91,13 @@ title: Fil-liste-error.html
         <thead>
             <tr>
                 <th>Filnavn</th>
-                <th>Navngiv dookument</th>
+                <th>Navngiv dokument</th>
                 <th>Slet</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a hrf="#"
+                <td><a href="#"
                         class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Lægeerklæring.pdf</a>
                 </td>
                 <td>
@@ -122,12 +122,12 @@ title: Fil-liste-error.html
                         </select>
                     </div>
                 </td>
-                <td><a hrf="#"
+                <td><a href="#"
                         class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#delete-outline"></use></svg><span
                             class="sr-only">Slet fil</span></a></td>
             </tr>
             <tr>
-                <td><a hrf="#"
+                <td><a href="#"
                         class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Fuldmagt_88.pdf</a>
                 </td>
                 <td>
@@ -153,7 +153,7 @@ title: Fil-liste-error.html
                         </select>
                     </div>
                 </td>
-                <td><a hrf="#"
+                <td><a href="#"
                         class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#delete-outline"></use></svg><span
                             class="sr-only">Slet fil</span></a></td>
             </tr>
@@ -164,11 +164,11 @@ title: Fil-liste-error.html
                             role="alert">Dokumentet er større end 10 MB, og
                             kan derfor ikke tilføjes. Opdel dokumentet og
                             tilføj som flere dokumenter.</span>
-                        <a hrf="#"
+                        <a href="#"
                             class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_tilskadekomne.pdf</a>
                     </div>
                 </td>
-                <td><a hrf="#"
+                <td><a href="#"
                         class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#delete-outline"></use></svg><span
                             class="sr-only">Slet fil</span></a></td>
             </tr>
@@ -181,11 +181,11 @@ title: Fil-liste-error.html
                             skal være af typen PDF, DOCX, DOC, BMP, GIF,
                             HTM, HTML, JPEG, JPG, PNG, RTF, TIF eller
                             TXT.</span>
-                        <a hrf="#"
+                        <a href="#"
                             class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_arbejdsgiver.indd</a>
                     </div>
                 </td>
-                <td><a hrf="#"
+                <td><a href="#"
                         class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#delete-outline"></use></svg><span
                             class="sr-only">Slet fil</span></a></td>
             </tr>
@@ -197,11 +197,11 @@ title: Fil-liste-error.html
                             der er sket en teknisk fejl. Forsøg at tilføje
                             dokumentet i gen. Sker samme fejl igen, kan du
                             kontakte FDS.</span>
-                        <a hrf="#"
+                        <a href="#"
                             class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Journal.pdf</a>
                     </div>
                 </td>
-                <td><a hrf="#"
+                <td><a href="#"
                         class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#delete-outline"></use></svg><span
                             class="sr-only">Slet fil</span></a></td>
             </tr>

@@ -4322,6 +4322,8 @@ figure {
   vertical-align: middle; }
   .icon-svg--inherit-color {
     fill: currentColor; }
+  .icon-svg:focus {
+    outline: none; }
 
 .inline-svg {
   height: 1em;
@@ -4331,7 +4333,7 @@ figure {
   height: 4.8rem;
   width: 4.8rem;
   vertical-align: middle; }
-  .icon-svg-large--inherit-color {
+  .icon-svg-large--inheCard-illustration-graf.svgrit-color {
     fill: currentColor; }
 
 .icon-add {
