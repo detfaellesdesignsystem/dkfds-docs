@@ -26,6 +26,7 @@ title: Cards-full-width.html
                     <div class="content">
                         <div class="row justify-content-center">
                             <div class="col-12">
+                                <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
                                 <div class='row bg-teal p-6'>
                                     <div
                                         class='col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0'>
@@ -40,7 +41,7 @@ title: Cards-full-width.html
                                         </p>
                                     </div>
                                     <div class='col-12 col-md-6 col-lg-7'>
-                                        <img src='{{ site.baseurl }}/img/cards/card-illustration-graf.svg' alt='' class='w-percent-100' /></div>
+                                        <img src='{{ site.baseurl }}/img/cards/card-illustration-graf.svg' alt='Graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100' /></div>
                                     </div>
                                 </div>
                             </div>
