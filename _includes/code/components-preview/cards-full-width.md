@@ -40,8 +40,9 @@ title: Cards-full-width.html
                                             gravida justo at, euismod ex.
                                         </p>
                                     </div>
-                                    <div class='col-12 col-md-6 col-lg-7'>
-                                        <img src='{{ site.baseurl }}/img/cards/card-illustration-graf.svg' alt='Graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100' /></div>
+                                    <div
+                                        class='col-12 col-md-6 col-lg-7 align-text-right'>
+                                        <img src='{{ site.baseurl }}/img/cards/card-illustration-graf.svg' alt='Graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100 w-percent-lg-80' /></div>
                                     </div>
                                 </div>
                             </div>
