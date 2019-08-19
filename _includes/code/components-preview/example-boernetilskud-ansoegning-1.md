@@ -58,7 +58,7 @@ title: Example-boernetilskud-ansoegning-1.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
 
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
@@ -285,7 +285,7 @@ title: Example-boernetilskud-ansoegning-1.html
                     </div>
                     <div class="form-group">
                         <button
-                            class="button button-secondary mt-4"><svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#add"></use></svg>
+                            class="button button-secondary mt-4"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#add"></use></svg>
                             Tilføj barn</button>
                     </div>
                 </form>

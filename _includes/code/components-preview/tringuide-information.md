@@ -20,7 +20,7 @@ title: Tringuide-information.html
                         </div>
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -37,7 +37,7 @@ title: Tringuide-information.html
                         </div>
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -54,7 +54,7 @@ title: Tringuide-information.html
                         </div>
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>

@@ -62,7 +62,7 @@ title: Fil-liste-error.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
@@ -98,7 +98,7 @@ title: Fil-liste-error.html
         <tbody>
             <tr>
                 <td><a href="#"
-                        class="function-link"><svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Lægeerklæring.pdf</a>
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Lægeerklæring.pdf</a>
                 </td>
                 <td>
                     <div class="form-group ">
@@ -128,7 +128,7 @@ title: Fil-liste-error.html
             </tr>
             <tr>
                 <td><a href="#"
-                        class="function-link"><svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Fuldmagt_88.pdf</a>
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Fuldmagt_88.pdf</a>
                 </td>
                 <td>
                     <div class="form-group form-error">
@@ -165,7 +165,7 @@ title: Fil-liste-error.html
                             kan derfor ikke tilføjes. Opdel dokumentet og
                             tilføj som flere dokumenter.</span>
                         <a href="#"
-                            class="function-link"><svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_tilskadekomne.pdf</a>
+                            class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_tilskadekomne.pdf</a>
                     </div>
                 </td>
                 <td><a href="#"
@@ -182,7 +182,7 @@ title: Fil-liste-error.html
                             HTM, HTML, JPEG, JPG, PNG, RTF, TIF eller
                             TXT.</span>
                         <a href="#"
-                            class="function-link"><svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_arbejdsgiver.indd</a>
+                            class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_arbejdsgiver.indd</a>
                     </div>
                 </td>
                 <td><a href="#"
@@ -198,7 +198,7 @@ title: Fil-liste-error.html
                             dokumentet i gen. Sker samme fejl igen, kan du
                             kontakte FDS.</span>
                         <a href="#"
-                            class="function-link"><svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Journal.pdf</a>
+                            class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#file-pdf-outline"></use></svg>Journal.pdf</a>
                     </div>
                 </td>
                 <td><a href="#"
