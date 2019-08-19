@@ -6,24 +6,24 @@ title: Buttons-back.html
 <div class="container py-8">
 
     <button class="button button-quaternary">
-        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
+        <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
         Default </button>
 
     <button class="button button-quaternary button-hover">
-        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
+        <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
         Hover </button>
 
     <button class="button button-quaternary button-active">
-        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
+        <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
         Active </button>
 
     <button class="button button-quaternary focus">
-        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
+        <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
         Focus </button>
 
     <button class="button button-quaternary" disabled tab-index="-1"
         aria-disabled="true">
-        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
+        <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#menu-left"></use></svg>
         Disabled </button>
 
 </div>

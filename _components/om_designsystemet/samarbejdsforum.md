@@ -16,8 +16,13 @@ subnav:
 <article>
     <section>
         <h2 class="h3" id="næste-møde">Næste møde</h2>
-        <p>Næste møde planlægges og meldes ud snarest. Vi regner med det bliver i midt/slut september. Næste møde planlægges og meldes ud snarest. </p>
-        <!--<p><a href="mailto:FDS@erst.dk?subject=Tilmelding%20til%20samarbejdsforum" class="icon-link">Tilmeld dig og dine kollegaer her<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></p>-->
+         <div class="alert alert-warning" role="alert">
+                <div class="alert-body">
+                    <p class="alert-heading">Mandag den 23. september, kl 9:00 - 10-:0</p>
+                    <p class="alert-text">Digitaliseringsstyrelsen, Landgreven 4, 1301 København K</p>
+                    <p><a href="mailto:FDS@erst.dk?subject=Tilmelding%20til%20samarbejdsforum" class="icon-link">Tilmeld/frameld dig og dine kollegaer via mail</a></p>
+                </div>
+            </div>
     </section>
     <section>
         <h2 class="h3" id="netværk-sparring-support">Netværk, sparring og support</h2>

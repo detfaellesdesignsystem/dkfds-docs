@@ -6,7 +6,7 @@ title: Buttons-with-icon.html
 <div class="container py-8">
 
     <button class="button button-primary">
-        <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#refresh"></use></svg>
+        <svg class="icon-svg "  focusable="true" aria-hidden="true" tabindex="-1"><use xlink:href="#refresh"></use></svg>
         Refresh </button>
 
 </div>
