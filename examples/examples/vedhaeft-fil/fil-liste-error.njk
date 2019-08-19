@@ -1,5 +1,6 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/form/controls/select.njk" import select as select %}
+{% from "components/buttons/buttons.njk" import button as button %}
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
@@ -49,12 +50,12 @@
              <tr>
                 <td><a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Lægeerklæring.pdf</a></td>
                 <td> {{select(select_example1.name, select_example1.id, select_example1.label, select_example1.class, select_example1.optiontitle, select_example1.options, select_example1.disabled, select_example1.classLabel)}}</td>
-                <td><a href="#" class="function-link">{{ icon_svg('delete-outline', '', '', true, false, '')}}<span class="sr-only">Slet fil</span></a></td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
              </tr>
              <tr>
                 <td><a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Fuldmagt_88.pdf</a></td>
                 <td> {{select(select_example2.name, select_example2.id, select_example2.label, select_example2.class, select_example2.optiontitle, select_example2.options, select_example2.disabled, select_example2.classLabel, select_example2.formError)}}</td>
-                <td><a href="#" class="function-link">{{ icon_svg('delete-outline', '', '', true, false, '')}}<span class="sr-only">Slet fil</span></a></td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
              </tr>
              <tr>
                 <td colspan="2">
@@ -63,7 +64,7 @@
                         <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Spørgeskema_tilskadekomne.pdf</a>
                     </div>
                 </td>
-                <td><a href="#" class="function-link">{{ icon_svg('delete-outline', '', '', true, false, '')}}<span class="sr-only">Slet fil</span></a></td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
              </tr>
              <tr>
                 <td colspan="2">
@@ -72,7 +73,7 @@
                         <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Spørgeskema_arbejdsgiver.indd</a>
                     </div>
                 </td>
-                <td><a href="#" class="function-link">{{ icon_svg('delete-outline', '', '', true, false, '')}}<span class="sr-only">Slet fil</span></a></td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
              </tr>
              <tr>
                 <td colspan="2">
@@ -81,7 +82,7 @@
                         <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Journal.pdf</a>
                     </div>
                 </td>
-                <td><a href="#" class="function-link">{{ icon_svg('delete-outline', '', '', true, false, '')}}<span class="sr-only">Slet fil</span></a></td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
              </tr>
         </tbody>
     </table>

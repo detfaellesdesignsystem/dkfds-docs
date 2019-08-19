@@ -13,7 +13,7 @@ title: Accordion-multi.html
                 Lorem ipsum dolor sit amet
                 <span class="accordion-icon ">
                     <span class="icon_text">Information</span>
-                    <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#info"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#info"></use></svg>
                 </span>
             </button>
 
@@ -34,7 +34,7 @@ title: Accordion-multi.html
                 Consectetur adipiscing elit
                 <span class="accordion-icon ">
                     <span class="icon_text">Fejl</span>
-                    <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#close-circle-outline"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close-circle-outline"></use></svg>
                 </span>
             </button>
 
@@ -64,7 +64,7 @@ title: Accordion-multi.html
                 Sed do eiusmod tempor
                 <span class="accordion-icon ">
                     <span class="icon_text">Advarsel</span>
-                    <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#alert-outline"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#alert-outline"></use></svg>
                 </span>
             </button>
 
@@ -84,7 +84,7 @@ title: Accordion-multi.html
                 Labore et dolore magna
                 <span class="accordion-icon ">
                     <span class="icon_text">Success</span>
-                    <svg class="icon-svg "  focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#acheck-circle-outline"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#acheck-circle-outline"></use></svg>
                 </span>
             </button>
 
