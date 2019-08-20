@@ -6,6 +6,8 @@ category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for dkfds
 subnav:
+- text: Version 4.4.0
+  href: '#version-440'
 - text: Version 4.3.0
   href: '#version-430'
 - text: Version 4.2.0
@@ -45,6 +47,16 @@ subnav:
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
 
+<h2 class="mb-0" id="version-440">Version 4.4.0</h2>
+<p class="small-text mt-0">04-07-2019</p>
+<ul>
+    <li>Tilpasset css til print</li>
+    <li>Farven på valgt menupunkt i sidenavgationen er ændret til #A1A1A1</li>
+    <li>Ændret udseende på tjekboks og radioknao ved print</li>
+    <li>Fikset fejl med border på den sidste række i en tabel</li>
+    <li>Fikset fejl med modal ved print</li>
+    <li>Tilpasset retningslinjer for ikoner i forhold til tilgængelighed</li>
+</ul>
 <h2 class="mb-0" id="version-430">Version 4.3.0</h2>
 <p class="small-text mt-0">04-07-2019</p>
 <ul>
