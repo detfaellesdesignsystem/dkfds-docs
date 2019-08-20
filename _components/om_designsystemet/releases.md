@@ -48,11 +48,11 @@ subnav:
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
 
 <h2 class="mb-0" id="version-440">Version 4.4.0</h2>
-<p class="small-text mt-0">04-07-2019</p>
+<p class="small-text mt-0">20-08-2019</p>
 <ul>
     <li>Tilpasset css til print</li>
-    <li>Farven på valgt menupunkt i sidenavgationen er ændret til #A1A1A1</li>
-    <li>Ændret udseende på tjekboks og radioknao ved print</li>
+    <li><label class="color-info badge badge-small mr-3">Change</label>Farven på valgt menupunkt i sidenavigationen er ændret til #1A1A1A</li>
+    <li>Ændret udseende på tjekboks og radioknap ved print</li>
     <li>Fikset fejl med border på den sidste række i en tabel</li>
     <li>Fikset fejl med modal ved print</li>
     <li>Tilpasset retningslinjer for ikoner i forhold til tilgængelighed</li>

@@ -21,6 +21,7 @@ var pdfUrls = ["",
     "design/ikoner/",
     "design/kanter/",
     "design/logoer/",
+    "design/print/",
     "komponenter/accordions/",
     "komponenter/badges/",
     "komponenter/beskeder/",
@@ -47,6 +48,9 @@ var pdfUrls = ["",
     "omdesignsystemet/gennemgang/",
     "omdesignsystemet/visuelledesign/",
     "omdesignsystemet/releases/",
+    "omdesignsystemet/samarbejdsforum/",
+    "omdesignsystemet/styregruppe/",
+    "omdesignsystemet/fds-teamet/",
     "privatlivspolitik/"
 ];
 
