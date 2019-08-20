@@ -121,15 +121,13 @@ subnav:
         <li>Hvor mange indmeldte supporthenvendelser, der handler om funktions- og systemfejl? Fx opgjort med antal og frekvens i forhold til cyklus for offentliggørelse af løsningen. </li>
         <li>Hvor alvorlige fejlene er, eventuelt opgjort på en skala fra 1-10?</li>
     </ul>
-    
-    
     <h4>Læs mere om opfølgning og metrikker her</h4>
     <ul class="nobullet-list">
-        <li><a href="https://www.smartbugmedia.com/blog/website-redesign-projects-key-metrics-to-track-from-day-1" class="icon-link">Key Metrics to track from day 1<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://www.staceybarr.com/measure-up/quantitative-versus-qualitative-kpis/" class="icon-link">Quantitative Versus Qualitative KPIs<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://www.simplilearn.com/itil-csf-kpis-article" class="icon-link">ITIL, CSF, KPIs<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://simplicable.com/new/critical-success-factors" class="icon-link">Critical Succes Factors<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://airbrake.io/blog/metrics/code-quality-metrics-management" class="icon-link">Code Quality Metrics<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://designsystem.digital.gov/performance/" class="icon-link">US Web Design System - Performance<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://www.smartbugmedia.com/blog/website-redesign-projects-key-metrics-to-track-from-day-1" class="icon-link">Key Metrics to track from day 1<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://www.staceybarr.com/measure-up/quantitative-versus-qualitative-kpis/" class="icon-link">Quantitative Versus Qualitative KPIs<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://www.simplilearn.com/itil-csf-kpis-article" class="icon-link">ITIL, CSF, KPIs<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://simplicable.com/new/critical-success-factors" class="icon-link">Critical Succes Factors<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://airbrake.io/blog/metrics/code-quality-metrics-management" class="icon-link">Code Quality Metrics<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://designsystem.digital.gov/performance/" class="icon-link">US Web Design System - Performance<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     </ul>
 </section>

@@ -6,10 +6,12 @@ title: Example-aktindsigt-page-2.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                class="logo alert-leave">
+                <span class="d-none d-print-block">Portalnavn</span>
+            </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,7 +23,8 @@ title: Example-aktindsigt-page-2.html
                     <b class="username">Christian Emil Vestergaard Christiansen</b>
                 </p>
 
-                <a href="#" class="button button-secondary alert-leave"
+                <a href="#"
+                    class="button button-secondary alert-leave d-print-none"
                     role="button">
                     Log af
                 </a>
@@ -33,21 +36,21 @@ title: Example-aktindsigt-page-2.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link"
-                    class="alert-leave2">
+                <a href="#" title="Hjem" class="alert-leave2">
                     Ansøg om indsigt
                 </a>
             </div>
 
             <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info">
+            <div class="solution-info ">
                 <!-- nav-secondary -->
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
-                <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
-                        data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true<"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
+                            href="javascript:void(0);"
+                            data-micromodal-trigger="modal-contact"
+                            class="function-link d-inline-block"><svg class="icon-svg" tabindex="-1" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
@@ -59,7 +62,7 @@ title: Example-aktindsigt-page-2.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
@@ -87,7 +90,7 @@ title: Example-aktindsigt-page-2.html
             data-js-target="#overflow_steps" aria-haspopup="true"
             aria-expanded="false">
             Trin 2 af 3
-            <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
             <span class="sr-only">Åbner overflow menu</span>
         </button>
         <div class="overflow-menu-inner" id="overflow_steps"
@@ -98,7 +101,7 @@ title: Example-aktindsigt-page-2.html
                     <a href='/pages/eksempler/aktindsigt/aktindsigt-1'>
                         1. Inden du går igang
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -231,11 +234,11 @@ title: Example-aktindsigt-page-2.html
             </div>
         </div>
     </form>
-    <nav class="page-navigation">
+    <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/aktindsigt/aktindsigt-3"
             class="button button-primary">Næste</a>
         <a href="/pages/eksempler/aktindsigt/aktindsigt-1"
-            class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 
@@ -244,18 +247,19 @@ title: Example-aktindsigt-page-2.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span
+                    <li class=""><span
                             class="h5 weight-semibold">Eksempelstyrelsen</span>
                     </li>
-                    <li><a class="function-link"
+                    <li class=""><a class="function-link"
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
-                    <li><a class="function-link" href="tel:12 34 56 78">12
-                            34 56 78</a></li>
-                    <li><a href="#"
+                    <li class=""><a class="function-link"
+                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                    <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
-                    <li><a href="#" class="function-link">Privatlivspolitik
+                    <li class="d-print-none"><a href="#"
+                            class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
             </div>

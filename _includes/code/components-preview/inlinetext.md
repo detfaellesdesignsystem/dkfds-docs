@@ -17,7 +17,7 @@ title: Inlinetext.html
             <p><small>Dette er lille brødtekst (small-tag)</small></p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system"<br>font-weight:400<br>font-size:1.4rem<br>line-height:2.4rem<br>margin:1.6rem 0 1.6rem 0</pre>
+            <pre>font-family: "IBMPlexSans","system"<br>font-weight:400<br>font-size:1.4rem<br>line-height:2.4rem</pre>
         </div>
     </div>
     <div class="row">
@@ -26,7 +26,7 @@ title: Inlinetext.html
             </p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system"<br>font-weight:400<br>font-size:1.4rem<br>line-height:2.4rem<br>margin:1.6rem 0 1.6rem 0</pre>
+            <pre>font-family: "IBMPlexSans","system"<br>font-weight:400<br>font-size:1.4rem<br>line-height:2.4rem</pre>
         </div>
     </div>
     <div class="row">
@@ -34,7 +34,7 @@ title: Inlinetext.html
             <p><strong>Dette er fed brødtekst</strong></p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system"<br>font-weight:700<br>font-size:1.6rem<br>line-height:2.4rem<br>margin:1.6rem 0 1.6rem 0</pre>
+            <pre>font-family: "IBMPlexSans","system"<br>font-weight:700<br>font-size:1.6rem<br>line-height:2.4rem</pre>
         </div>
     </div>
 </div>

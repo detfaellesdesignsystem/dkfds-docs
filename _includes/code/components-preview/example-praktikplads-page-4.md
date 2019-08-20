@@ -6,10 +6,12 @@ title: Example-praktikplads-page-4.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                class="logo alert-leave">
+                <span class="d-none d-print-block">Portalnavn</span>
+            </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -19,7 +21,8 @@ title: Example-praktikplads-page-4.html
 
                 <p class="user"><b class="username">Jens Jensen</b> </p>
 
-                <a href="#" class="button button-secondary alert-leave"
+                <a href="#"
+                    class="button button-secondary alert-leave d-print-none"
                     role="button">
                     Log af
                 </a>
@@ -31,21 +34,20 @@ title: Example-praktikplads-page-4.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link"
-                    class="alert-leave2">
+                <a href="#" title="Hjem" class="alert-leave2">
                     Praktikplads AUB
                 </a>
             </div>
 
             <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info">
+            <div class="solution-info ">
                 <!-- nav-secondary -->
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -57,7 +59,7 @@ title: Example-praktikplads-page-4.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
@@ -122,9 +124,9 @@ title: Example-praktikplads-page-4.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#printer"></use></svg>Udskriv</a>
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>Udskriv</a>
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#help-circle-outline"></use></svg>Hjælp</a>
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg>Hjælp</a>
                 </div>
             </div>
         </div>
@@ -167,7 +169,8 @@ title: Example-praktikplads-page-4.html
         </div>
         <div class="mt-5">
 
-            <div class="form-group">
+            <div class="form-group ">
+
                 <label class="form-label " for="select-education">Vælg
                     uddannelse</label>
                 <select class="input-width-m form-select"
@@ -210,18 +213,19 @@ title: Example-praktikplads-page-4.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span
+                    <li class=""><span
                             class="h5 weight-semibold">Eksempelstyrelsen</span>
                     </li>
-                    <li><a class="function-link"
+                    <li class=""><a class="function-link"
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
-                    <li><a class="function-link" href="tel:12 34 56 78">12
-                            34 56 78</a></li>
-                    <li><a href="#"
+                    <li class=""><a class="function-link"
+                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                    <li class=""><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
-                    <li><a href="#" class="function-link">Privatlivspolitik
+                    <li class=""><a href="#"
+                            class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
             </div>

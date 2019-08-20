@@ -247,12 +247,12 @@ class datatablesExamples {
                     var overflowID = "overflow-table-"+full.id;
                     return  `<div class="overflow-menu overflow-menu--open-left overflow-menu--hover-bg">
                                 <button class="button-overflow-menu js-dropdown" data-js-target="#`+ overflowID +`" aria-haspopup="true" aria-expanded="false">
-                                    <svg class="icon-svg"><use xlink:href="#dots-vertical"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#dots-vertical"></use></svg>
                                 </button>
                                 <div class="overflow-menu-inner" id="`+ overflowID +`" aria-hidden="true">
                                     <ul class="overflow-list">
-                                        <li><button class="js-edit-modal-trigger">Rediger <svg class="icon-svg"><use xlink:href="#pencil"></use></svg></button></li>
-                                        <li><button class="js-delete-modal-trigger danger-delete">Slet <svg class="icon-svg"><use xlink:href="#delete"></use></svg></button></li>
+                                        <li><button class="js-edit-modal-trigger">Rediger <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#pencil"></use></svg></button></li>
+                                        <li><button class="js-delete-modal-trigger danger-delete">Slet <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete"></use></svg></button></li>
                                     </ul>
                                 </div>
                             </div>`
@@ -360,7 +360,7 @@ class datatablesExamples {
                 "orderable": false,
                 "responsivePriority": 1, //do not responsive hide last
                 "render": function ( data, type, full, meta ) {
-                    return  `<button class="button button-unstyled px-3 js-delete-modal-trigger"><svg class="icon-svg" class="aria-hidden"><use xlink:href="#delete-outline"></use></svg><span class="sr-only">Slet</span></button>`
+                    return  `<button class="button button-unstyled px-3 js-delete-modal-trigger"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg><span class="sr-only">Slet</span></button>`
                 }
             }
         ],
@@ -389,8 +389,8 @@ class datatablesExamples {
     /////////////////////////////////
     //Give dummy buttons to top bar (all datatables)
     /////////////////////////////////
-    var downloadButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Download som PDF'><svg class='icon-svg m-0' aria-hidden=\"true\"><use xlink:href='#download'></use></svg></button>";
-    var settingsButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Rediger egenskaber'><svg class='icon-svg m-0' aria-hidden=\"true\"><use xlink:href='#settings'></use></button>";
+    var downloadButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Download som PDF'><svg class='icon-svg m-0' aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href='#download'></use></svg></button>";
+    var settingsButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Rediger egenskaber'><svg class='icon-svg m-0' aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href='#settings'></use></button>";
     $('.dataTables_filter').prepend(downloadButton).prepend(settingsButton);
     var event = new Event('init-tooltips');
     $('body')[0].dispatchEvent(event);

@@ -1,5 +1,5 @@
 ---
-title: Knap som ikon
+title: Ikon som knap
 parent: Buttons
 order: 06
 lead: 

@@ -11,7 +11,7 @@ title: Links.html
             </p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>color: #004d99</pre>
+            <pre>color: #004D99</pre>
         </div>
     </div>
     <div class="row">
@@ -22,7 +22,7 @@ title: Links.html
             </p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>color: #004080</pre>
+            <pre>color: #000040</pre>
         </div>
     </div>
     <div class="row">
@@ -33,7 +33,7 @@ title: Links.html
             </p>
         </div>
         <div class="col-12 col-md-6">
-            <pre>color: #000040</pre>
+            <pre>color: #004D99</pre>
         </div>
     </div>
     <div class="row">
@@ -72,7 +72,7 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p>Link som åbner et <a href="" class="icon-link">ekstern
-                    website<svg class="icon-svg "  ><use xlink:href="#open-in-new"></use></svg></a>
+                    website<svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#open-in-new"></use></svg></a>
             </p>
         </div>
     </div>
@@ -86,7 +86,7 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p><a href="javascript:void(0);"
-                    class="function-link"><svg class="icon-svg "  aria-hidden ="true"><use xlink:href="#printer"></use></svg>Funktionslink</a>
+                    class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>Funktionslink</a>
             </p>
         </div>
     </div>
@@ -142,7 +142,7 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p>Link som åbner et <a href="" class="icon-link">ekstern
-                    website<svg class="icon-svg "  ><use xlink:href="#open-in-new"></use></svg></a>
+                    website<svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#open-in-new"></use></svg></a>
             </p>
         </div>
     </div>
@@ -156,7 +156,7 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p><a href="javascript:void(0);"
-                    class="function-link"><svg class="icon-svg "  aria-hidden ="true"><use xlink:href="#printer"></use></svg>Funktionslink</a>
+                    class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>Funktionslink</a>
             </p>
         </div>
     </div>

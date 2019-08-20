@@ -17,7 +17,6 @@
   }
 }
 
-
 // Typography --------------
 .demo-typesetting{
   border-top: 2px solid $color-data-violet;
@@ -675,6 +674,11 @@ code {
     img{
       max-height: 100%;
     }
+
+    svg.icon-svg{
+      height: 10.4rem;
+      width: 10.4rem;
+    }
   }
   p{
     margin-top: 16px;
@@ -729,6 +733,9 @@ code {
 
   @include media-breakpoint-up(md) {
     margin-bottom: 5.9rem;
+  }
+  @media print{
+    margin-bottom: 0px !important;
   }
 }
 
@@ -923,12 +930,12 @@ code {
 
 //BORDER RADIUS
 .static-border-radius-example {
-  border-top-left-radius:$static-border-radius;
+  border-top-left-radius:$static-border-radius; //  0
   width: 144px;
   height: 120px;
   background-color: $color-gray-pale;
-  border-left: solid 6px $color-black;
-  border-top: solid 6px $color-black;
+  border-left: $outer-border;
+  border-top: $outer-border;
 }
 
 .interactive-border-radius-example {
@@ -936,8 +943,8 @@ code {
   width: 144px;
   height: 120px;
   background-color: $color-gray-pale;
-  border-left: solid 6px $color-black;
-  border-top: solid 6px $color-black;
+  border-left: $outer-border;
+  border-top: $outer-border;
 }
 
 //BORDERS

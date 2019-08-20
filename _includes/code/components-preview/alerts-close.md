@@ -10,7 +10,7 @@ title: Alerts-close.html
         <div class="alert-body">
             <p class="alert-heading  pr-7">Informativ besked</p><a
                 href="javascript:void(0);"
-                class="alert-close"><svg class="icon-svg"><use xlink:href="#close"></use></svg>Luk</a>
+                class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
             <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum
                 dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
                 dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
@@ -25,7 +25,7 @@ title: Alerts-close.html
         <div class="alert-body">
             <p class="alert-heading  pr-7">Succesmeddelelse</p><a
                 href="javascript:void(0);"
-                class="alert-close"><svg class="icon-svg"><use xlink:href="#close"></use></svg>Luk</a>
+                class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
             <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
                 error sit voluptatem accusantium doloremque laudantium.</p>
 
@@ -37,7 +37,7 @@ title: Alerts-close.html
         <div class="alert-body">
             <p class="alert-heading  pr-7">Advarsel</p><a
                 href="javascript:void(0);"
-                class="alert-close"><svg class="icon-svg"><use xlink:href="#close"></use></svg>Luk</a>
+                class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
             <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
                 error sit voluptatem accusantium doloremque laudantium.</p>
 
@@ -49,7 +49,7 @@ title: Alerts-close.html
         <div class="alert-body">
             <p class="alert-heading  pr-7">Fejlbesked</p><a
                 href="javascript:void(0);"
-                class="alert-close"><svg class="icon-svg"><use xlink:href="#close"></use></svg>Luk</a>
+                class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
             <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
                 error sit voluptatem accusantium doloremque laudantium.</p>
 

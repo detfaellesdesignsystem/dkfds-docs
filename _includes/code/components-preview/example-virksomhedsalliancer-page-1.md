@@ -6,10 +6,12 @@ title: Example-virksomhedsalliancer-page-1.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                class="logo alert-leave">
+                <span class="d-none d-print-block">Portalnavn</span>
+            </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,7 +23,8 @@ title: Example-virksomhedsalliancer-page-1.html
                     <b class="username">Christian Emil Vestergaard Christiansen</b>
                 </p>
 
-                <a href="#" class="button button-secondary alert-leave"
+                <a href="#"
+                    class="button button-secondary alert-leave d-print-none"
                     role="button">
                     Log af
                 </a>
@@ -33,21 +36,20 @@ title: Example-virksomhedsalliancer-page-1.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link"
-                    class="alert-leave2">
+                <a href="#" title="Hjem" class="alert-leave2">
                     Strategiske virksomhedsalliancer
                 </a>
             </div>
 
             <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info">
+            <div class="solution-info ">
                 <!-- nav-secondary -->
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -59,7 +61,7 @@ title: Example-virksomhedsalliancer-page-1.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><b>Navn</b></p>
@@ -73,172 +75,194 @@ title: Example-virksomhedsalliancer-page-1.html
             <p><b>Erhvervsministeriet</b></p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
     </nav> <!-- collapsible nav end-->
 </header>
 
-<main class="container page-container">
+<div class="container page-container">
+    <div class="row">
+        <aside class="col-12 col-lg-3 sidebar-col">
+            <div
+                class="overflow-menu  overflow-menu--open-right overflow-menu--lg-no-responsive">
+                <button class="button-overflow-menu js-dropdown "
+                    data-js-target="#overflow4" aria-haspopup="true"
+                    aria-expanded="false">
+                    Trin 1 af 6
+                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
+                    <span class="sr-only">Åbner overflow menu</span>
+                </button>
+                <div class="overflow-menu-inner" id="overflow4"
+                    aria-hidden="true">
+                    <ul class="sidenav-list sidenav-list-locked">
+                        <li>
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1"
+                                class="active">
+                                1. Stamdata (valgt)
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
+                                2. SMV-kriterier
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
+                                3. Statsstøtte
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
+                                4. Tilskud til land
+                            </a>
+                        </li>
+                        <li class="disabled">
+                            <a href="javascript:void(0)" disabled
+                                tab-index="-1" aria-disabled="true">
+                                5. Opsummering
+                            </a>
+                        </li>
+                        <li class="disabled">
+                            <a href="javascript:void(0)" disabled
+                                tab-index="-1" aria-disabled="true">
+                                6. Kvittering
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="col-12 col-lg-9" id="main-content">
+            <div role="group" aria-describedby="stamdata">
+                <h1 id="stamdata">Stamdata</h1>
 
-    <div class="overflow-menu  overflow-menu--open-right ">
-        <button class="button-overflow-menu js-dropdown "
-            data-js-target="#overflow_steps" aria-haspopup="true"
-            aria-expanded="false">
-            Trin 1 af 4
-            <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
-            <span class="sr-only">Åbner overflow menu</span>
-        </button>
-        <div class="overflow-menu-inner" id="overflow_steps"
-            aria-hidden="true">
+                <div class="form-group">
+                    <label class="form-label " for="id-cvr-number">CVR
+                        nummer</label>
 
-            <ul class='sidenav-list'>
-                <li>
-                    <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'
-                        class='active'>
-                        1. Stamdata
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2'>
-                        2. SMV-kriterier
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
-                        3. Statsstøtte
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'>
-                        4. Tilskud til land
-                    </a>
-                </li>
-            </ul>
+                    <input class="form-input  input-char-8 " placeholder=""
+                        id="id-cvr-number" value=""
+                        name="Input til cvr nummer" type="text">
+                </div>
 
-        </div>
+                <div class="form-group">
+                    <label class="form-label " for="id-companyname">Navn på
+                        virksomhed</label>
+
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-companyname" value=""
+                        name="Input til navn på virksomhed" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-companyaddress">Adresse</label>
+
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-companyaddress" value=""
+                        name="Input til virksomhedsadresse" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-zipcode">Postnr.</label>
+
+                    <input class="form-input  input-char-4 " placeholder=""
+                        id="id-zipcode" value=""
+                        name="Input til postnummer" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-companycity">By</label>
+
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-companycity" value=""
+                        name="Input til by" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-companyphone">Telefonnr.</label>
+
+                    <input class="form-input  input-char-8 " placeholder=""
+                        id="id-companyphone" value=""
+                        name="Input til telefonnummer" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-companywebsite">Website<span
+                            class="weight-normal">
+                            (frivilligt)</span></label>
+
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-companywebsite" value=""
+                        name="Input til website" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-company-contactperson">Kontaktperson.</label>
+
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-company-contactperson"
+                        value="" name="Input til kontaktperson"
+                        type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-companyemail">E-mail</label>
+                    <span class="form-hint"
+                        id="input-hint-message-id-companyemail">Kvittering
+                        bliver sendt til denne e-mailadresse</span>
+
+                    <input class="form-input  input-width-m "
+                        placeholder="" id="id-companyemail" value=""
+                        name="Input til email" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label "
+                        for="id-launchyear">Etableringsår</label>
+
+                    <input class="form-input  input-char-4 " placeholder=""
+                        id="id-launchyear" value=""
+                        name="Input til etableringsår" type="text">
+                </div>
+
+            </div>
+            <nav class="page-navigation d-print-none">
+                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
+                    class="button button-primary">Næste</a>
+            </nav>
+        </main>
     </div>
-
-    <div role="group" aria-describedby="stamdata">
-        <h1 id="stamdata">Stamdata</h1>
-
-        <div class="form-group">
-            <label class="form-label " for="id-cvr-number">CVR
-                nummer</label>
-
-            <input class="form-input  input-char-8 " placeholder=""
-                id="id-cvr-number" value="" name="Input til cvr nummer"
-                type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companyname">Navn på
-                virksomhed</label>
-
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-companyname" value=""
-                name="Input til navn på virksomhed" type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label "
-                for="id-companyaddress">Adresse</label>
-
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-companyaddress" value=""
-                name="Input til virksomhedsadresse" type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-zipcode">Postnr.</label>
-
-            <input class="form-input  input-char-4 " placeholder=""
-                id="id-zipcode" value="" name="Input til postnummer"
-                type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companycity">By</label>
-
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-companycity" value="" name="Input til by"
-                type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label "
-                for="id-companyphone">Telefonnr.</label>
-
-            <input class="form-input  input-char-8 " placeholder=""
-                id="id-companyphone" value=""
-                name="Input til telefonnummer" type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companywebsite">Website<span
-                    class="weight-normal"> (frivilligt)</span></label>
-
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-companywebsite" value="" name="Input til website"
-                type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label "
-                for="id-company-contactperson">Kontaktperson.</label>
-
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-company-contactperson" value=""
-                name="Input til kontaktperson" type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="id-companyemail">E-mail</label>
-            <span class="form-hint"
-                id="input-hint-message-id-companyemail">Kvittering bliver
-                sendt til denne e-mailadresse</span>
-
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-companyemail" value="" name="Input til email"
-                type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label "
-                for="id-launchyear">Etableringsår</label>
-
-            <input class="form-input  input-char-4 " placeholder=""
-                id="id-launchyear" value="" name="Input til etableringsår"
-                type="text">
-        </div>
-
-    </div>
-    <nav class="page-navigation">
-        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
-            class="button button-primary">Næste</a>
-    </nav>
-</main>
+</div>
 
 <footer>
     <div class="footer">
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span
+                    <li class=""><span
                             class="h5 weight-semibold">Eksempelstyrelsen</span>
                     </li>
-                    <li><a class="function-link"
+                    <li class=""><a class="function-link"
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
-                    <li><a class="function-link" href="tel:12 34 56 78">12
-                            34 56 78</a></li>
-                    <li><a href="#"
+                    <li class=""><a class="function-link"
+                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                    <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
-                    <li><a href="#" class="function-link">Privatlivspolitik
+                    <li class="d-print-none"><a href="#"
+                            class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
             </div>

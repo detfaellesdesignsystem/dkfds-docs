@@ -95,8 +95,17 @@ $(document).ready(function () {
 
     // alert upon closing page
     window.onbeforeunload = function (e) {
-        console.log(inFormOrLink);
-        if(document.getElementsByClassName('layout-demo').length > 0) {
+
+        // do not show popup if destination is within the same solution flow
+        var showPopup = true;
+        var targetUrl = document.activeElement.href.split('/');
+        var currentUrl = window.location.href.split('/');
+        if(targetUrl.length != 0){
+            if(targetUrl[5] == currentUrl[5]){
+                showPopup = false;
+            }
+        }
+        if(document.getElementsByClassName('layout-demo').length > 0 && showPopup) {
             if(!inFormOrLink) {
                 e = e || window.event;
 

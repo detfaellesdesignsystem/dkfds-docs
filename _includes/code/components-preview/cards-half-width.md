@@ -21,7 +21,7 @@ title: Cards-half-width.html
                     <div class="content">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <img src="{{ site.baseurl }}/img/cards/Card_med_halv_bredde_1_EKSEMPEL.svg" alt="">
+                                <img src="{{ site.baseurl }}/img/cards/Card_med_halv_bredde_1_EKSEMPEL.svg" alt="" class="w-percent-100">
               </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ title: Cards-half-width.html
                         <div class="content">
                             <div class="row justify-content-center">
                                 <div class="col-12">
-                                    <img src="{{ site.baseurl }}/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="">
+                                    <img src="{{ site.baseurl }}/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="" class="w-percent-100">
               </div>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ title: Cards-half-width.html
                                     <li><a href="javascript:void(0);"
                                             class="icon-link">Et link til
                                             et sted uden for
-                                            løsningen<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                                            løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
                                     </li>
                                 </ul>
                             </div>

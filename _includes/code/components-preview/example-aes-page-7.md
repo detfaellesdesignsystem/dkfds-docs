@@ -6,10 +6,12 @@ title: Example-aes-page-7.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                class="logo alert-leave">
+                <span class="d-none d-print-block">Portalnavn</span>
+            </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,7 +23,8 @@ title: Example-aes-page-7.html
                     <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
                 </p>
 
-                <a href="#" class="button button-secondary alert-leave"
+                <a href="#"
+                    class="button button-secondary alert-leave d-print-none"
                     role="button">
                     Log af
                 </a>
@@ -33,21 +36,20 @@ title: Example-aes-page-7.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link"
-                    class="alert-leave2">
+                <a href="#" title="Hjem" class="alert-leave2">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
             </div>
 
             <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info">
+            <div class="solution-info d-print-none">
                 <!-- nav-secondary -->
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true<"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -59,7 +61,7 @@ title: Example-aes-page-7.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user">
@@ -73,7 +75,7 @@ title: Example-aes-page-7.html
             <p><b>Erhvervsministeriet</b></p>
             <p>Support: 72 20 60 00 <br><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 
@@ -81,7 +83,7 @@ title: Example-aes-page-7.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  ><use xlink:href="#save"></use></svg>Gem
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#save"></use></svg>Gem
                         kladde</a>
                 </div>
             </div>
@@ -97,7 +99,7 @@ title: Example-aes-page-7.html
             data-js-target="#overflow_steps" aria-haspopup="true"
             aria-expanded="false">
             Trin 7 af 9
-            <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
             <span class="sr-only">Åbner overflow menu</span>
         </button>
         <div class="overflow-menu-inner" id="overflow_steps"
@@ -108,7 +110,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
                         1. Oplysninger om afsender
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -116,7 +118,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-2'>
                         2. Hvis AES har spørgsmål til sagen
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -124,7 +126,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-3'>
                         3. Oplysninger om skadelidte
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -132,7 +134,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-4'>
                         4. Sagens natur
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -140,7 +142,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-5'>
                         5. Oplysninger om sagen
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -149,7 +151,7 @@ title: Example-aes-page-7.html
                         6. Tilføj dokumentation for første undersøgelse af
                         skaden
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -212,10 +214,11 @@ title: Example-aes-page-7.html
                             <tbody>
                                 <tr>
                                     <td class="break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#file"></use></svg>
                                         prn0237452_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype1">Vælg
@@ -245,7 +248,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -254,10 +257,11 @@ title: Example-aes-page-7.html
                                 <tr>
                                     <td
                                         class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#file"></use></svg>
                                         sgn1023152_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype2">Vælg
@@ -287,7 +291,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -333,10 +337,11 @@ title: Example-aes-page-7.html
                             <tbody>
                                 <tr>
                                     <td class="break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#file"></use></svg>
                                         dkf4903283_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype3">Vælg
@@ -366,7 +371,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -375,10 +380,11 @@ title: Example-aes-page-7.html
                                 <tr>
                                     <td
                                         class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#file"></use></svg>
                                         kfo1127303_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype4">Vælg
@@ -408,7 +414,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -454,10 +460,11 @@ title: Example-aes-page-7.html
                             <tbody>
                                 <tr>
                                     <td class="break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#file"></use></svg>
                                         ohb3428439_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype5">Vælg
@@ -487,7 +494,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -496,10 +503,11 @@ title: Example-aes-page-7.html
                                 <tr>
                                     <td
                                         class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                        <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                                        <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#file"></use></svg>
                                         sdv5644382_attest.pdf</td>
                                     <td class="mt-4 mt-lg-0">
-                                        <div class="form-group">
+                                        <div class="form-group ">
+
                                             <label
                                                 class="form-label sr-only"
                                                 for="select-dokumentationdtype6">Vælg
@@ -529,7 +537,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -542,11 +550,11 @@ title: Example-aes-page-7.html
             </li>
         </ul>
     </div>
-    <nav class="page-navigation">
+    <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-8"
             class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-6"
-            class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            class="button button-quaternary"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 
@@ -555,18 +563,19 @@ title: Example-aes-page-7.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span
+                    <li class=""><span
                             class="h5 weight-semibold">Eksempelstyrelsen</span>
                     </li>
-                    <li><a class="function-link"
+                    <li class=""><a class="function-link"
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
-                    <li><a class="function-link" href="tel:12 34 56 78">12
-                            34 56 78</a></li>
-                    <li><a href="#"
+                    <li class=""><a class="function-link"
+                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                    <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
-                    <li><a href="#" class="function-link">Privatlivspolitik
+                    <li class="d-print-none"><a href="#"
+                            class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
             </div>

@@ -20,12 +20,10 @@ mobile:
   - href: /eksempler/
     categorynav: 'Eksempler_category'
   - href: /omdesignsystemet/
-    categorynav: 'Om_designsystemet_category'    
+    categorynav: 'Om_designsystemet_category'
 
 #Left menu for kom igang-category
 Kom_i_gang_category:
-- alternative_text: Overblik
-  href: /komigang/
 - href: /komigang/krav/
 - href: /komigang/tiludviklere/
   categorynav: 'Til_udviklere_category'
@@ -48,8 +46,6 @@ Til_designere_category:
 
 #Left menu for design-category
 Design_category:
-- alternative_text: Overblik
-  href: /design/
 #  - href: /design/accessibility/
 - href: /design/farver/
 - href: /design/typography/
@@ -57,11 +53,10 @@ Design_category:
 - href: /design/borders/
 - href: /design/ikoner/
 - href: /design/logoer/
+- href: /design/print/
 
 #Left menu for komponent-category
 Komponenter_category:
-  - alternative_text: Overblik
-    href: /komponenter/
   - href: /komponenter/accordions/
   - href: /komponenter/badges/
   - href: /komponenter/beskeder/
@@ -84,22 +79,19 @@ Komponenter_category:
 
 #Left menu for udvidelser-category
 Udvidelser_category:
-  - alternative_text: Overblik
-    href: /udvidelser/ 
   - href: /udvidelser/datatables/
   - href: /udvidelser/selectwoo-multiselect/
   - href: /udvidelser/pikaday/
 
 Eksempler_category:
-  - alternative_text: Overblik
-    href: /eksempler/
   - href: /eksempler/selvbetjeningsloesninger/
   - href: /eksempler/opsummeringsside/
   - href: /eksempler/kvittering/
 
 Om_designsystemet_category:
-  - alternative_text: Overblik
-    href: /omdesignsystemet/
+  - href: /omdesignsystemet/samarbejdsforum/
+  - href: /omdesignsystemet/styregruppe/
+  - href: /omdesignsystemet/fds-teamet/
   - href: /omdesignsystemet/gennemgang/
   - href: /omdesignsystemet/visuelledesign/
   - href: /omdesignsystemet/releases/

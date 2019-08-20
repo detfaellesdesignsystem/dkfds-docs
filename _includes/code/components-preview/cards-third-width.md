@@ -37,7 +37,7 @@ title: Cards-third-width.html
                             <li><a href="javascript:void(0);"
                                     class="icon-link">Et link til et sted
                                     uden for
-                                    løsningen<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                                    løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
                             </li>
                         </ul>
                     </div>
@@ -62,7 +62,7 @@ title: Cards-third-width.html
                     <div class="content">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <img src="{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg" class="d-block" alt="" />
+                                <img src="{{ site.baseurl }}/img/cards/Card_Tredjedel_2_EKSEMPEL.svg" class="d-block w-percent-100" alt="" />
               </div>
                             </div>
                         </div>

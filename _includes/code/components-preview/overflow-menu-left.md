@@ -10,7 +10,7 @@ title: Overflow-menu-left.html
             data-js-target="#overflow2" aria-haspopup="true"
             aria-expanded="false">
             Overflow menu
-            <svg class="icon-svg"><use xlink:href="#dots-vertical"></use></svg>
+            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#dots-vertical"></use></svg>
             <span class="sr-only">Åbner overflow menu</span>
         </button>
         <div class="overflow-menu-inner" id="overflow2" aria-hidden="true">

@@ -11,8 +11,8 @@ description: Til udviklere, der skal gøre brug af Det Fælles Designsystem.
 
 <p>FDS er opdelt i to projekter:</p>
 <ul class="nobullet-list">
-    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components" target="_blank" class="icon-link">DKFDS Components (kernen som indeholder komponenterne)<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" target="_blank" class="icon-link">DKFDS Plugins<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components" target="_blank" class="icon-link">DKFDS Components (kernen som indeholder komponenterne)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" target="_blank" class="icon-link">DKFDS Plugins<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
 <h2>Installation</h2>
@@ -45,7 +45,7 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
 ```
 <p><strong>Browserspecifik styling tilføjes i projektet</strong></p>
 <p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>
-<p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p> 
+<p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p> 
 
 <p>For at inkludere JavaScript via webpack skal du tilføje følgende linje i din main.js fil:</p>
 
@@ -57,7 +57,7 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
 <h4>Note til gulp</h4>
 <p><strong>Browserspecifik styling tilføjes i projektet</strong></p>
 <p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>
-<p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p>
+<p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p>
 <p>Disse browsers bør defineres i autoprefixer:</p>
 <pre>
 [
@@ -84,9 +84,9 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
 <p>Du skal kun inkludere styling (CSS eller SCSS) fra dkfds-plugins projektet.</p>
 <p>Der er i øjeblikket lavet temaer til følgende:</p>
 <ul class="nobullet-list">
-    <li><a href="https://datatables.net/" class="icon-link" target="_blank">Datatables<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/woocommerce/selectWoo" target="_blank" class="icon-link">SelectWoo<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/Pikaday/Pikaday" target="_blank" class="icon-link">Pikaday<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://datatables.net/" class="icon-link" target="_blank">Datatables<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://github.com/woocommerce/selectWoo" target="_blank" class="icon-link">SelectWoo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://github.com/Pikaday/Pikaday" target="_blank" class="icon-link">Pikaday<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
 <p>dkfds-plugins projektet er tilgængeligt via npm og du kan installere det ved at skrive følgende i en kommando-prompt:</p>

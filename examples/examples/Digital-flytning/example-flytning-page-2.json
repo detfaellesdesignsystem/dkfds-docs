@@ -5,8 +5,7 @@
     },
     "logolink": {
       "title": "Hjem",
-      "href" : "javascript:void(0);",
-      "label": "logo link"
+      "href" : "javascript:void(0);"
     },
     "link": {
       "href": "#",
@@ -19,12 +18,11 @@
     "title": {
       "href": "#",
       "title": "Hjem",
-      "label": "logo link",
       "text": "Digital flytning"
     },
     "authority": {
       "name": "Styrelsen for Eksempler",
-      "text": "<a href=\"javascript:void(0);\" data-micromodal-trigger=\"modal-contact\" class=\"function-link d-inline-block\"><svg class=\"icon-svg\" aria-hidden=\"true\"><use xlink:href=\"#card-text-outline\"></use></svg>Kontakt</a>"
+      "text": "<a href=\"javascript:void(0);\" data-micromodal-trigger=\"modal-contact\" class=\"function-link d-inline-block d-print-none\"><svg class=\"icon-svg\" aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href=\"#card-text-outline\"></use></svg>Kontakt</a>"
     }
   },
   "modal_contact_data": {
@@ -37,8 +35,8 @@
       {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},
       {"content": "<a class=\"function-link\" href=\"mailto:support@example.dk\">support@example.dk</a>"},
       {"content": "<a class=\"function-link\" href=\"tel:12 34 56 78\">12 34 56 78</a>"},
-      {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"},
-      {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>"}
+      {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true},
+      {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
     ]
   }
 }

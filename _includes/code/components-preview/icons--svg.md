@@ -9,7 +9,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#add"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#add"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>add</span>
@@ -19,7 +19,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#alert-outline"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#alert-outline"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>alert-outline</span>
@@ -29,7 +29,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#angle-arrow-down"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#angle-arrow-down"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>angle-arrow-down</span>
@@ -39,7 +39,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#angle-arrow-up"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#angle-arrow-up"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>angle-arrow-up</span>
@@ -49,7 +49,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#arrow-left"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#arrow-left"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>arrow-left</span>
@@ -59,7 +59,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#arrow-right"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#arrow-right"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>arrow-right</span>
@@ -69,7 +69,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#calendar"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#calendar"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>calendar</span>
@@ -79,7 +79,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#check"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>check</span>
@@ -89,7 +89,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#check-circle-outline"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check-circle-outline"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>check-circle-outline</span>
@@ -99,7 +99,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#chevron-left"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#chevron-left"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>chevron-left</span>
@@ -109,7 +109,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#chevron-right"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#chevron-right"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>chevron-right</span>
@@ -119,7 +119,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#close"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>close</span>
@@ -129,7 +129,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#close-circle"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close-circle"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>close-circle</span>
@@ -139,7 +139,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#close-circle-outline"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close-circle-outline"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>close-circle-outline</span>
@@ -149,7 +149,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#content-save"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#content-save"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>content-save</span>
@@ -159,7 +159,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#delete"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#delete"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>delete</span>
@@ -169,7 +169,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#delete-outline"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#delete-outline"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>delete-outline</span>
@@ -179,7 +179,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#dots-vertical"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#dots-vertical"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>dots-vertical</span>
@@ -189,7 +189,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#download"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#download"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>download</span>
@@ -199,7 +199,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#error"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#error"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>error</span>
@@ -209,7 +209,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#file"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#file"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>file</span>
@@ -219,7 +219,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#help"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>help</span>
@@ -229,7 +229,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#help-circle-outline"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>help-circle-outline</span>
@@ -239,7 +239,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#info"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#info"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>info</span>
@@ -249,7 +249,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#language"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#language"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>language</span>
@@ -259,7 +259,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#magnify"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#magnify"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>magnify</span>
@@ -269,7 +269,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#menu-down"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#menu-down"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>menu-down</span>
@@ -279,7 +279,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#menu-left"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#menu-left"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>menu-left</span>
@@ -289,7 +289,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#menu-right"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#menu-right"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>menu-right</span>
@@ -299,7 +299,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#menu-up"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#menu-up"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>menu-up</span>
@@ -309,7 +309,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#minus"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#minus"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>minus</span>
@@ -319,7 +319,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#open-in-new"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#open-in-new"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>open-in-new</span>
@@ -329,7 +329,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#pencil"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#pencil"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>pencil</span>
@@ -339,7 +339,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#plus"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#plus"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>plus</span>
@@ -349,7 +349,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#printer"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>printer</span>
@@ -359,7 +359,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#refresh"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#refresh"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>refresh</span>
@@ -369,7 +369,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#save"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#save"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>save</span>
@@ -379,7 +379,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#settings"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#settings"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>settings</span>
@@ -389,7 +389,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#sort-acending"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#sort-acending"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>sort-acending</span>
@@ -399,7 +399,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#sort-descending"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#sort-descending"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>sort-descending</span>
@@ -409,7 +409,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#sort-none"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#sort-none"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>sort-none</span>
@@ -419,7 +419,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#success"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#success"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>success</span>
@@ -429,7 +429,7 @@ title: Icons--svg.html
         <div class="col-md-2">
             <div class="icon-box">
                 <div>
-                    <svg class="icon-svg "  ><use xlink:href="#warning"></use></svg>
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#warning"></use></svg>
                 </div>
                 <span class="icon-name"><span class="sr-only">Example of
                     </span>warning</span>

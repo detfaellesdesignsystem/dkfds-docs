@@ -1,0 +1,99 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/form/controls/select.njk" import select as select %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{% from "components/modal/modal.njk" import modal as modal %}
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+
+{% block header %}
+  <header class="header" role="banner">
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+
+    <div class="overlay"></div>
+    <nav role="navigation" class=" nav"> <!-- collapsible-->
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+
+      <div class="portal-info-mobile">
+        <p class="user"><b>Christian Emil Vestergaard Christiansen</b></p>
+        <a href="#" class="button button-secondary button-signout">
+          Log af
+        </a>
+      </div>
+
+      <div class="solution-info-mobile">
+        <p><b>Erhvervsministeriet</b></p>
+        <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+      </div>
+
+    </nav> <!-- collapsible nav end-->
+  </header>
+{% endblock %}
+
+
+{% block body %}
+<main class="container page-container">
+    <h1>Dokumenter til sagen <span class="weight-normal">(frivilligt)</span></h1>
+    <table class="table table--borderless table--responsive-headers d-print-table">
+        <thead>
+            <tr>
+                <th>Filnavn</th>
+                <th>Navngiv dokument</th>
+                <th>Slet</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td><a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Lægeerklæring.pdf</a></td>
+                <td> {{select(select_example1.name, select_example1.id, select_example1.label, select_example1.class, select_example1.optiontitle, select_example1.options, select_example1.disabled, select_example1.classLabel)}}</td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
+             </tr>
+             <tr>
+                <td><a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Fuldmagt_88.pdf</a></td>
+                <td> {{select(select_example2.name, select_example2.id, select_example2.label, select_example2.class, select_example2.optiontitle, select_example2.options, select_example2.disabled, select_example2.classLabel, select_example2.formError)}}</td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
+             </tr>
+             <tr>
+                <td colspan="2">
+                    <div class="form-group form-error">
+                        <span class="form-error-message" role="alert">Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</span>
+                        <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Spørgeskema_tilskadekomne.pdf</a>
+                    </div>
+                </td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
+             </tr>
+             <tr>
+                <td colspan="2">
+                    <div class="form-group form-error">
+                        <span class="form-error-message" role="alert">Dokumentet er ikke en gyldig filtype, og kan derfor ikke tilføjes. Filen skal være af typen PDF, DOCX, DOC, BMP, GIF, HTM, HTML, JPEG, JPG, PNG, RTF, TIF eller TXT.</span>
+                        <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Spørgeskema_arbejdsgiver.indd</a>
+                    </div>
+                </td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
+             </tr>
+             <tr>
+                <td colspan="2">
+                    <div class="form-group form-error">
+                        <span class="form-error-message" role="alert">Dokumentet blev ikke tilføjet, da der er sket en teknisk fejl. Forsøg at tilføje dokumentet i gen. Sker samme fejl igen, kan du kontakte FDS.</span>
+                        <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Journal.pdf</a>
+                    </div>
+                </td>
+                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
+             </tr>
+        </tbody>
+    </table>
+    <nav class="page-navigation d-print-none">
+      <button class="button button-primary" disabled>Næste</button>
+    </nav>
+</main>
+{% endblock %}
+{% block footer -%}
+  {{ footer_simple(footer_data) }}
+{% endblock %}
+
+{{ modal('modal-contact', modal_contact_data) }}
+

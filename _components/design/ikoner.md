@@ -3,15 +3,16 @@ permalink: /design/ikoner/
 layout: styleguide
 title: Ikoner
 category: Design_category
+subcategory: Design
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 order: 25
 ---
 
-<p>Nedenfor vises de ikoner som er inkluderet i designsystemet. Ikonerne er reserveret til deres specifikke formål og skal anvendes som sådan. Hvis du har brug for yderligere ikoner henviser vi til <a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>, <a href="https://materialdesignicons.com" class="icon-link">Material Design Icons<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> eller lignende</p>
+<p>Nedenfor vises de ikoner som er inkluderet i designsystemet. Ikonerne er reserveret til deres specifikke formål og skal anvendes som sådan. Hvis du har brug for yderligere ikoner henviser vi til <a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, <a href="https://materialdesignicons.com" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller lignende</p>
 
 <div class="alert alert-info alert--paragraph" role="alert" aria-label="Beskedbox der viser information">
   <div class="alert-body">
-    <p class="alert-text">Bruges eller skabes andre ikoner end de viste skal de <a class="icon-link" href="https://material.io/design/iconography/system-icons.html#grid-keyline-shapes">passe ind visuelt<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a> og de må ikke ligne eller kunne forvirres med designsystemets andre ikoner.</p>
+    <p class="alert-text">Bruges eller skabes andre ikoner end de viste skal de <a class="icon-link" href="https://material.io/design/iconography/system-icons.html#grid-keyline-shapes">passe ind visuelt<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og de må ikke ligne eller kunne forvirres med designsystemets andre ikoner.</p>
   </div>
 </div>
 
@@ -27,7 +28,7 @@ order: 25
     <section>
         <p>Ikonerne kan indsættes på to måder, enten via klasser eller som inline svg.</p>
         <h2 class="h5">Ikoner indsat med inline svg (Anbefalet)</h2>
-        <p>I toppen af <code>&lt;body&gt;</code> er alle svg-ikoner indsat i et område som er skjult. Følgende kode linker til et af disse svg ikoner og indsætter det via dets <code>id</code>: <code>&lt;svg class="icon-svg"&gt;&lt;use xlink:href="#alert-outline"&gt;&lt;/use&gt;&lt;/svg&gt;</code></p>
+        <p>I toppen af <code>&lt;body&gt;</code> er alle svg-ikoner indsat i et område som er skjult. Følgende kode linker til et af disse svg ikoner og indsætter det via dets <code>id</code>: <code>&lt;svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"&gt;&lt;use xlink:href="#alert-outline"&gt;&lt;/use&gt;&lt;/svg&gt;</code></p>
         <p>Ved brug af <code>svg use</code> metoden, refererer du til et ikon, som er defineret et andet sted i htmlkoden. Du bør derfor huske at tilføje ikonerne som svg i koden, så referencen virker. Du kan dog nøjes med at tilføje de ikoner, du rent faktisk har brug for. Se eksemplet herunder.</p>
         <pre>
         &lt;div class="hide-base-svg"&gt;
@@ -56,11 +57,12 @@ order: 25
         <p>Ikoner der indsættes inline med i-tagget får på den måde samme skriftstørrelse. Følgende kode indsætter et 'alert'-ikon: <code>&lt;i class="icon icon-alert-outline"&gt;&lt;/i&gt;</code></p>        
         <h2 class="h5">Ikoner i tekst</h2>
         <p>Tilføj klassen <code>inline-svg</code> på ikoner, som skal fremgå i en tekst. Ikonet vil da tilpasse sig linjehøjden. Se eksemplet herunder:</p>
-        <p>Lorem ipsum <svg class="icon-svg inline-svg"><use xlink:href="#language"></use></svg> dolor sit amet.</p> 
+        <p>Lorem ipsum <svg class="icon-svg inline-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg> dolor sit amet.</p> 
         <h2 class="h5">Tilgængelighed</h2>
         <p>Ikoner bør tilføjes en <code>alt</code> tekst til elementet, der beskriver ikonet, så skærmlæsere kan læse ikonet op.</p>
         <p>I tilfælde, hvor ikonet ikke skal læses op, tilføj da attributten <code>aria-hidden="true"</code>. Denne attribut vil gøre ikonet usynligt for skærmlæsere.</p>
         <p>Dekorative ikoner bør undgås, men hvis de bruges skal de ikke beskrives eller have “alt” tekst, da de ikke bærer nogen betydning eller er vigtige for brugeren.</p>
+        <p>Da Internet Explorer sætter fokus på svg elementer bør <code>focusable="false"</code> tilføjes, således at der ikke længeres sættes fokus på ikonet med tab-tasten.<br/>Bemærk, at <code>tabindex="-1"</code> på nuværende tidspunkt ikke understøttes på SVG elementer i Internet Explorer, hvorfor <code>focusable="false"</code> bruges i stedet.</p>
     </section>
   </div>
 </div>
@@ -83,13 +85,13 @@ order: 25
   <h2 class="h5">Illustrative ikoner</h2>
   <p>Illustrative ikoner er unikke for en given selvbetjeningsløsning, der giver mening i den givne kontekst, men ikke nødvendigvis i andre sammenhænge.</p>
   <p>Ikoner der anvendes illustrativt må ikke ligne eller være de samme som anvendes til navigation, feedback og funktionalitet.</p>
-  <p>Vi bruger Material Design ikoner som udgangspunkt, men illustrative ikoner kan også tegnes specifikt til en løsning. Gøres dette, anbefaler vi at følge <a href="https://material.io/design/iconography/system-icons.html#" class="icon-link">Material Designs anvisninger for design af ikoner<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>.
+  <p>Vi bruger Material Design ikoner som udgangspunkt, men illustrative ikoner kan også tegnes specifikt til en løsning. Gøres dette, anbefaler vi at følge <a href="https://material.io/design/iconography/system-icons.html#" class="icon-link">Material Designs anvisninger for design af ikoner<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
   </p>
   <h2 class="h5">Links</h2>
   <ul class="nobullet-list">
-      <li><a href="https://www.nngroup.com/articles/classifying-icons/" class="icon-link">https://www.nngroup.com/articles/classifying-icons/<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a></li>
-      <li><a href="https://www.nngroup.com/articles/icon-usability/" class="icon-link">https://www.nngroup.com/articles/icon-usability/<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a></li>
-      <li><a href="https://www.nngroup.com/articles/icon-testing/" class="icon-link">https://www.nngroup.com/articles/icon-testing/<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a></li>
+      <li><a href="https://www.nngroup.com/articles/classifying-icons/" class="icon-link">https://www.nngroup.com/articles/classifying-icons/<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+      <li><a href="https://www.nngroup.com/articles/icon-usability/" class="icon-link">https://www.nngroup.com/articles/icon-usability/<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+      <li><a href="https://www.nngroup.com/articles/icon-testing/" class="icon-link">https://www.nngroup.com/articles/icon-testing/<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
   </ul>
   </div>
 </div>

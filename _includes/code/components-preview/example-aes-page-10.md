@@ -6,10 +6,12 @@ title: Example-aes-page-10.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
-                aria-label="logo link" class="logo alert-leave"></a>
+                class="logo alert-leave">
+                <span class="d-none d-print-block">Portalnavn</span>
+            </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -21,7 +23,8 @@ title: Example-aes-page-10.html
                     <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
                 </p>
 
-                <a href="#" class="button button-secondary alert-leave"
+                <a href="#"
+                    class="button button-secondary alert-leave d-print-none"
                     role="button">
                     Log af
                 </a>
@@ -33,21 +36,20 @@ title: Example-aes-page-10.html
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" aria-label="logo link"
-                    class="alert-leave2">
+                <a href="#" title="Hjem" class="alert-leave2">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
             </div>
 
             <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info">
+            <div class="solution-info d-print-none">
                 <!-- nav-secondary -->
 
                 <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true<"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -59,7 +61,7 @@ title: Example-aes-page-10.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user">
@@ -73,7 +75,7 @@ title: Example-aes-page-10.html
             <p><b>Erhvervsministeriet</b></p>
             <p>Support: 72 20 60 00 <br><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
     </nav> <!-- collapsible nav end-->
@@ -105,7 +107,7 @@ title: Example-aes-page-10.html
     <p class="mb-4">Hvis du ønsker dokumentation på fremsendelse kan du
         downloade anmodningen.</p>
     <button
-        class="button button-secondary"><svg class="icon-svg "  ><use xlink:href="#download"></use></svg>
+        class="button button-secondary d-print-none"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#download"></use></svg>
         Download kvittering som pdf</button>
     <h2 class="h4 mt-7">Hvad sker der nu</h2>
     <p>Sagens parter vil indenfor 7 hverdage modtage en kvittering med
@@ -135,8 +137,8 @@ title: Example-aes-page-10.html
         <h2 class="h4">Ved spørgsmål eller supplerende oplysninger</h2>
         <p>Kontakt AES på aes@aes.dk eller 72 00 60 00
             <br> Referencenummer: 28346863</p>
-            <button class="button button-secondary mt-7">Opret ny
-                sag</button>
+            <button class="button button-secondary mt-7 d-print-none">Opret
+                ny sag</button>
 </main>
 
 <footer>
@@ -144,18 +146,19 @@ title: Example-aes-page-10.html
         <div class="container">
             <div class="align-text-left">
                 <ul class="unstyled-list inline-list">
-                    <li><span
+                    <li class=""><span
                             class="h5 weight-semibold">Eksempelstyrelsen</span>
                     </li>
-                    <li><a class="function-link"
+                    <li class=""><a class="function-link"
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
-                    <li><a class="function-link" href="tel:12 34 56 78">12
-                            34 56 78</a></li>
-                    <li><a href="#"
+                    <li class=""><a class="function-link"
+                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                    <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
-                    <li><a href="#" class="function-link">Privatlivspolitik
+                    <li class="d-print-none"><a href="#"
+                            class="function-link">Privatlivspolitik
                             (cookies)</a></li>
                 </ul>
             </div>

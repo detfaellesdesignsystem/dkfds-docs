@@ -6,7 +6,6 @@ order: 01
 ---
 
 {% include code/preview.html component="border-radius" %}
-{% include code/accordion.html component="border-radius" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="border-radius-docs">

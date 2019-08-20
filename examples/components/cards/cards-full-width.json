@@ -6,9 +6,9 @@
         "header": "Header",
         "subheader": "Understøttende tekst",
         "cardtext": "Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til.",
-        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg\" alt=\"\">",
+        "cardcontent": "<img src=\"{{ site.baseurl }}/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg\" alt=\"\" class=\"w-percent-100\">",
         "actionbuttons": "<button class=\"button button-secondary\">Sekundærknap</button> <button class=\"button button-tertiary\">Tertiærknap</button>",
-        "actionlinks": "<ul class=\"nobullet-list\"><li><a href=\"javascript:void(0);\" class=\"default link state\">Et link til et sted i løsningen</a></li><li><a href=\"javascript:void(0);\" class=\"icon-link\">Et link til et sted uden for løsningen<svg class=\"icon-svg\"><use xlink:href=\"#open-in-new\"></use></svg></a></li></ul>"
+        "actionlinks": "<ul class=\"nobullet-list\"><li><a href=\"javascript:void(0);\" class=\"default link state\">Et link til et sted i løsningen</a></li><li><a href=\"javascript:void(0);\" class=\"icon-link\">Et link til et sted uden for løsningen<svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\" tabindex=\"-1\"><use xlink:href=\"#open-in-new\"></use></svg></a></li></ul>"
       }
     ]
   }

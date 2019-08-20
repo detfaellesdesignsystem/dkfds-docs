@@ -6,10 +6,10 @@ title: Header-medium.html
 <header class="header" role="banner">
 
     <!--1A: Portal header -->
-    <div class="portal-header d-print-none">
+    <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="#" title="Home" aria-label="Home"
-                class="logo alert-leave"></a>
+            <a href="#" title="Hjem" class="logo alert-leave"><span
+                    class="d-none d-print-block">Portalnavn</span></a>
             <button
                 class="button button-tertiary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
@@ -18,7 +18,8 @@ title: Header-medium.html
             <div class="portal-info">
                 <p class="user">
                     <b class="weight-semibold">Christian Emil Vestergaard Christensen</b><br>Københavns Urmager og Værksted v/Martin Elsig</p>
-                    <a href="#" class="button button-secondary alert-leave"
+                    <a href="#"
+                        class="button button-secondary alert-leave d-print-none"
                         role="button">
                         Log af
                     </a>
@@ -38,8 +39,9 @@ title: Header-medium.html
             <div class="solution-info">
                 <!-- nav-secondary -->
                 <h6 class="h5 authority-name">Myndighedsnavn</h6>
-                <p>Support: 12 34 56 78 · <a href="#"
-                        class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                <p>Support: 12 34 56 78 <span class="d-print-none">· <a
+                            href="#"
+                            class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></span>
                 </p>
             </div>
         </div>
@@ -50,7 +52,7 @@ title: Header-medium.html
         <!-- collapsible-->
         <button
             class="button button-secondary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
             <!--3A: Main navigation-->
@@ -89,7 +91,7 @@ title: Header-medium.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg "  aria-hidden ="true"><use xlink:href="#printer"></use></svg>Funktionsikon</a>
+                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>Funktionsikon</a>
                 </div>
             </div>
         </div>
@@ -106,7 +108,7 @@ title: Header-medium.html
         <div class="solution-info-mobile">
             <h6 class="h5 authority-name">Myndighedsnavn</h6>
             <p>Support: 12 34 56 78 · <a href="#"
-                    class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+                    class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
             </p>
         </div>
 

@@ -26,60 +26,80 @@
 
       <div class="solution-info-mobile">
         <p><b>Erhvervsministeriet</b></p>
-        <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+        <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
     </nav> <!-- collapsible nav end-->
   </header>
 {% endblock %}
 
 {% block body %}
-<main class="container page-container">
+<div class="container page-container">
+    <div class="row">
+        <aside class="col-12 col-lg-3 sidebar-col">
+            <div class="overflow-menu  overflow-menu--open-right overflow-menu--lg-no-responsive">
+                <button class="button-overflow-menu js-dropdown " data-js-target="#overflow4" aria-haspopup="true" aria-expanded="false">
+                   Trin 2 af 6
+                   <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
+                   <span class="sr-only">Åbner overflow menu</span>
+                </button>
+                <div class="overflow-menu-inner" id="overflow4" aria-hidden="true">
+                   <ul class="sidenav-list sidenav-list-locked">
+                       <li>
+                           <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
+                               1. Stamdata
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                </span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2" class="active">
+                               2. SMV-kriterier (valgt)
+                           </a>
+                       </li>
+                       <li>
+                           <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
+                               3. Statsstøtte
+                           </a>
+                       </li>
+                       <li>
+                           <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
+                               4. Tilskud til land
+                           </a>
+                       </li>
+                        <li class="disabled">
+                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                               5. Opsummering
+                            </a>
+                        </li>
+                        <li class="disabled">
+                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                                6. Kvittering
+                            </a>
+                        </li>
+                   </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="col-12 col-lg-9" id="main-content">
+            <h1>SMV-kriterier</h1>
+            <p class="font-lead">Ved tildeling af støtte SMV'er defineres som SMV som værende en virksomhed</p>
+            <ul>
+                <li class="font-lead mt-4 mb-4">Med mindre end 250 ansatte</li>
+                <li class="font-lead mt-4 mb-4">Med en årlig omsætning, der ikke må overstige 375 mio. kr i det seneste regnskab</li>
+            </ul>
+            <p class="mt-6">Hvis ansøger er ejet af moderselskab(-er) med mere end 49% og/eller har et datterselskab(-er) med en ejerandel på mere end 49% skal antal ansatte og omsætning for hele koncernen medregnes, dvs. heri skal også medregnes, hvis moderselskabet er ejet af et andet moderselskab med mere end 49% osv.<br>Dette er uanset om moderselskaber og/eller datterselskaber er danske eller udenlandske.</p>
+            <a href="#" class="5">Se eksempel</a>
+            {{textinput("id-employees", "Antal ansatte i seneste regnskabsår", "", "input-width-m", "", "Input til antal ansatte i seneste regnskabsår", "", false, false, "")}}
+            {{textinput("id-sales", "Omsætning i DKK i seneste regnskabsår", "", "input-width-m", "", "Input til omsætning i DKK i seneste regnskabsår", "", false, false, "Angives i helt tal, fx. 11.650.334", "")}}
 
-    {{overflowmenu("Trin 2 af 4","overflow_steps", true, false, "menu-down" ,"
-        <ul class='sidenav-list'>
-            <li>
-                <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1'>
-                    1. Stamdata
-                    <span class='sidenav-icon'>
-                        <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2' class='active'>
-                    2. SMV-kriterier
-                </a>
-            </li>
-            <li>
-                <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3'>
-                    3. Statsstøtte
-                </a>
-            </li>
-            <li>
-                <a href='/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4'>
-                    4. Tilskud til land
-                </a>
-            </li>
-        </ul>
-        "
-    ) }}
-
-    <h1>SMV-kriterier</h1>
-    <p class="font-lead">Ved tildeling af støtte SMV'er defineres som SMV som værende en virksomhed</p>
-    <ul>
-        <li class="font-lead mt-4 mb-4">Med mindre end 250 ansatte</li>
-        <li class="font-lead mt-4 mb-4">Med en årlig omsætning, der ikke må overstige 375 mio. kr i det seneste regnskab</li>
-    </ul>
-    <p class="mt-6">Hvis ansøger er ejet af moderselskab(-er) med mere end 49% og/eller har et datterselskab(-er) med en ejerandel på mere end 49% skal antal ansatte og omsætning for hele koncernen medregnes, dvs. heri skal også medregnes, hvis moderselskabet er ejet af et andet moderselskab med mere end 49% osv.<br>Dette er uanset om moderselskaber og/eller datterselskaber er danske eller udenlandske.</p>
-    <a href="#" class="5">Se eksempel</a>
-    {{textinput("id-employees", "Antal ansatte i seneste regnskabsår", "", "input-width-m", "", "Input til antal ansatte i seneste regnskabsår", "", false, false, "")}}
-    {{textinput("id-sales", "Omsætning i DKK i seneste regnskabsår", "", "input-width-m", "", "Input til omsætning i DKK i seneste regnskabsår", "", false, false, "Angives i helt tal, fx. 11.650.334", "")}}
-
-    <nav class="page-navigation">
-      <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3" class="button button-primary">Næste</a>
-      <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1" class="button button-quaternary"><svg class="icon-svg "><use xlink:href="#menu-left"></use></svg>Tilbage</a>
-    </nav>
-</main>
+            <nav class="page-navigation d-print-none">
+              <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3" class="button button-primary">Næste</a>
+              <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1" class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            </nav>
+        </main>
+    </div>
+</div>
 {% endblock %}
 
 {% block banner -%}
