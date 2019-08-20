@@ -6,6 +6,8 @@ category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for dkfds
 subnav:
+- text: Version 4.3.0
+  href: '#version-430'
 - text: Version 4.2.0
   href: '#version-420'
 - text: Version 4.1.1
@@ -43,6 +45,16 @@ subnav:
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
 
+<h2 class="mb-0" id="version-430">Version 4.3.0</h2>
+<p class="small-text mt-0">04-07-2019</p>
+<ul>
+    <li>Fjernet farve på small-text mixin.</li>
+    <li>Tilpasset positionering af ikon på knapper.</li>
+    <li>Fikset fejl i input felter, hvor specialtegn (Å, Ö, Ä etc.) ikke blev vist korrekt.</li>
+    <li>Tilføjet eksempel på lukknap i <a href="/komponenter/beskeder/#beskeder-med-lukknap">Beskeder</a>.</li>
+    <li><label class="color-info badge badge-small mr-3">Change</label>Tilføjet mulighed for at <a href="/komponenter/cards/#cards-med-samme-højde">positionere action knapper i cards</a> i bunden.</li>
+    <li>Fikset fejl ved print af eksempelløsninger i Firefox - tilføjet yderligere print CSS.</li>
+</ul>
 <h2 class="mb-0" id="version-420">Version 4.2.0</h2>
 <p class="small-text mt-0">20-06-2019</p>
 <ul>
