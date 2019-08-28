@@ -18,7 +18,7 @@ subnav:
         <h2 class="h3" id="næste-møde">Næste møde</h2>
          <div class="alert alert-warning" role="alert">
                 <div class="alert-body">
-                    <p class="alert-heading">Mandag den 23. september, kl 9:00 - 10:30</p>
+                    <p class="alert-heading">Onsdag den 25. september, kl 9:00 - 10:30</p>
                     <p class="alert-text">Digitaliseringsstyrelsen, Landgreven 4, 1301 København K</p>
                     <p><a href="mailto:FDS@erst.dk?subject=Tilmelding%20til%20samarbejdsforum" class="icon-link">Tilmeld/frameld dig og dine kollegaer via mail</a></p>
                 </div>
