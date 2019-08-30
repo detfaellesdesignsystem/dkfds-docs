@@ -26,8 +26,25 @@ title: Cards-full-width.html
                     <div class="content">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <img src="{{ site.baseurl }}/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg" alt="" class="w-percent-100">
-              </div>
+                                <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
+                                <div class='row bg-teal p-6'>
+                                    <div
+                                        class='col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0'>
+                                        <h2>Aliquam aliquet niboh faucibus
+                                            varius</h2>
+                                        <p>Aenean euismod vestibulum
+                                            lacinia. Pellentesque nec nisi
+                                            diam. Pellentesque nec urna vel
+                                            ante ultrices facilisis sed in
+                                            dolor. Curabitur eu leo semper,
+                                            gravida justo at, euismod ex.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class='col-12 col-md-6 col-lg-7 align-text-right'>
+                                        <img src='{{ site.baseurl }}/img/cards/card-illustration-graf.svg' alt='Graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100 w-percent-lg-80' /></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

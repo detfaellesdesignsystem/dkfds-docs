@@ -989,6 +989,9 @@ code {
 .bg-turquoise{
   background-color: $color-data-turquoise-medium-opacity;
 }
+.bg-turquoise-dark{
+  background-color: $color-data-turquoise;
+}
 /* sideopbygning */
 .bg-darkgrey{
   background-color: $color-gray-mediumpale;
@@ -996,6 +999,16 @@ code {
 .bg-darkgrey{
   background-color: $color-gray-mediumpale;
 }
+.bg-teal{
+  background-color: $color-data-teal-medium-opacity;
+}
+.bg-magenta{
+  background-color: $color-data-magenta-medium-opacity;
+}
+.bg-violet{
+  background-color: $color-data-violet-medium-opacity;
+}
+
 /* BADGE COLORS */
 
 .badge.color-warning {
