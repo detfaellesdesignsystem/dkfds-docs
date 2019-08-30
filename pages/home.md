@@ -51,19 +51,19 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         </div>
     </div>
     <hr />
-    <!--<div class="py-9">
+    <div class="py-9">
         <h2 class="mt-0">Samarbejde</h2>
         <p>Det Fælles Designsystem bliver løbende opdateret og vedligeholdt. For at sikre transparens, er systemet åbent for alle. Alle myndigheder med en interesse i at præge udviklingen og få indflydelse på designsystemets indhold er velkomne. </p>
         <ul class="nobullet-list">
-            <li><a href="#">Få indflydelse i Samarbejdsforum</a></li>
+            <li><a href="/omdesignsystemet/samarbejdsforum/">Få indflydelse i Samarbejdsforum</a></li>
             <li>
-                <a href="https://github.com/detfaellesdesignsystem/dkfds-components" class="icon-link">
+                <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">
                     Meld fejl og mangler ind via GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>
                 </a>
             </li>
         </ul>
     </div>
-    <hr />-->
+    <hr />
     <div class="py-9">
         <h2 class="mt-0">Support</h2>
         <p>Se hvilke krav som gælder for din løsning. Har du spørgsmål, så kontakt os på mail, så skal vi hjælpe dig så godt vi kan, men brug GitHub til support og teknik.</p>
