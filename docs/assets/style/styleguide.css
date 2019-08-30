@@ -8295,12 +8295,24 @@ code {
 .bg-turquoise {
   background-color: #CCF2F3; }
 
+.bg-turquoise-dark {
+  background-color: #56D4D6; }
+
 /* sideopbygning */
 .bg-darkgrey {
   background-color: #DCDCDC; }
 
 .bg-darkgrey {
   background-color: #DCDCDC; }
+
+.bg-teal {
+  background-color: #B9E7DF; }
+
+.bg-magenta {
+  background-color: #F3BADA; }
+
+.bg-violet {
+  background-color: #C8CADF; }
 
 /* BADGE COLORS */
 .badge.color-warning {
