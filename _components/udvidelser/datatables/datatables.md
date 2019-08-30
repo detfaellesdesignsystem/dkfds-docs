@@ -55,5 +55,5 @@ subnav:
 <h2 class="h4">Implementering</h2>
 <p>Datatables fejler på tilgængelig, når det kommer til disabled pagineringsknapper. For at gøre paginering tilgængeligt skal der tilføjes attributten <code>aria-disabled="true"</code> på knapper, som er disabled.</p>
 <p>Se evt. hvordan vi har gjort det i vores eksempler i JavaScript filen <code>assets/js/dkfds-datatables-example.js</code>.</p>
-
+<p>Se hvordan vi har implementeret Datatables i JavaScript her: <a href="https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/datatables/js/dkfds-datatables-example.js" class="icon-link">https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/datatables/js/dkfds-datatables-example.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
 {% include child-sections.html parent='Datatables' %}
