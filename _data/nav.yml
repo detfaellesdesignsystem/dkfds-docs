@@ -25,6 +25,7 @@ mobile:
 #Left menu for kom igang-category
 Kom_i_gang_category:
 - href: /komigang/krav/
+  categorynav: 'Krav_category'
 - href: /komigang/tiludviklere/
   categorynav: 'Til_udviklere_category'
 - href: /komigang/tildesignere/
@@ -32,6 +33,14 @@ Kom_i_gang_category:
 - href: /komigang/tilprojekteledere/
 - href: /komigang/tilgaengelighed/
 #- href: /komigang/uxprincipper/
+
+
+#Left menu for kom igang-category
+Krav_category:
+- href: /komigang/krav/borgerdk
+- href: /komigang/krav/virk
+- href: /komigang/krav/designtjekliste
+- href: /komigang/krav/faelles-krav
 
 #Left menu for kom igang-category
 Til_udviklere_category:

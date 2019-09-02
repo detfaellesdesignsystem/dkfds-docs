@@ -6,6 +6,10 @@ var root = "https://designsystem.dk/";
 var targetRootDir = "pdf/";
 var pdfUrls = ["",
     "komigang/krav/",
+    "komigang/krav/borgerdk/",
+    "komigang/krav/virk/",
+    "komigang/krav/designtjekliste/",
+    "komigang/krav/faelles-krav/",
     "komigang/tiludviklere/",
     "komigang/tiludviklere/utilities/",
     "komigang/tiludviklere/eksempler-implementering/",
