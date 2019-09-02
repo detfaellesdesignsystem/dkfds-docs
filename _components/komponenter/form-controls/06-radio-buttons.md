@@ -7,7 +7,7 @@ lead:
 
 {% include code/preview.html component="radiobutton" %}
 {% include code/accordion.html component="radiobutton" %}
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="radio-docs">
     Retningslinjer

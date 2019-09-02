@@ -36,7 +36,7 @@ lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links el
   </ul>
 </section>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="overflow-docs">
     Implementering
   </button>

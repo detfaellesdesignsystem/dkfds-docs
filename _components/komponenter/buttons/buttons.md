@@ -60,7 +60,7 @@ subnav:
   <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
 </section>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="buttons-docs">
     Implementering
   </button>

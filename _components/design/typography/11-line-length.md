@@ -9,7 +9,7 @@ order: 11
 
 {% include code/preview.html component="line_length" %}
 {% include code/accordion.html component="line_length" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="linelength-docs-tech">
     Implementering

@@ -7,7 +7,7 @@ lead:
 
 {% include code/preview.html component="text-input-width" %}
 {% include code/accordion.html component="text-input-width" %}
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="text-input-width">
     Implementering
@@ -52,7 +52,7 @@ lead:
   </div>
 </div>
 
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="text-input-width-docs">
     Retningslinjer

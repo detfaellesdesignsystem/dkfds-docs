@@ -6,7 +6,7 @@ order: 07
 
 {% include code/preview.html component="file-input" %}
 {% include code/accordion.html component="file-input" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="file-input-tech">
     Implementering
@@ -26,7 +26,7 @@ order: 07
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="file-input-docs">
     Retningslinjer

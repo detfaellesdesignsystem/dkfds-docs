@@ -44,7 +44,7 @@ subnav:
     </ul>
 </section>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="trin-code-documentation">
     Implementering
   </button>

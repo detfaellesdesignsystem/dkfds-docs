@@ -10,7 +10,7 @@ order: 06
 
 {% include code/preview.html component="links" %}
 {% include code/accordion.html component="links" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="links-docs-tech">
     Implementering
@@ -30,7 +30,7 @@ order: 06
      </article>
   </div>
 </div>
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typolinks-docs">
     Retningslinjer

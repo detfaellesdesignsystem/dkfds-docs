@@ -7,7 +7,7 @@ lead:
 
 {% include code/preview.html component="basic-collapse" %}
 {% include code/accordion.html component="basic-collapse" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="collapse-tech">
     Implementering
@@ -29,7 +29,7 @@ lead:
     </section>
   </div>
 </div>
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="collapse-docs">
     Retningslinjer

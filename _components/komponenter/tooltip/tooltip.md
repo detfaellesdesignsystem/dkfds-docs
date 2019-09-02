@@ -44,7 +44,7 @@ lead: Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller 
     </section>
 </article>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tooltip-code-doc">
     Implementering
   </button>

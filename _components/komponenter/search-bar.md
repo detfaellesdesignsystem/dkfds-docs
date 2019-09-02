@@ -10,7 +10,7 @@ lead: Et søgefelt udstiller brugerne muligheden for brugerne for at søge efter
 
 {% include code/preview.html component="search" classes="preview-search-bar" %}
 {% include code/accordion.html component="search" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="search-code-documentation">
     Implementering
@@ -24,7 +24,7 @@ lead: Et søgefelt udstiller brugerne muligheden for brugerne for at søge efter
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="search-bar-docs">
     Retningslinjer

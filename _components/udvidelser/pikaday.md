@@ -17,7 +17,7 @@ alerts:
 
 {% include code/preview.html component="date-input-datepicker" %}
 {% include code/accordion.html component="date-input-datepicker" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="tech-docs">
     Implementering
@@ -29,7 +29,7 @@ alerts:
   </div>
 </div>
 
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="guideline-docs">
     Retningslinjer

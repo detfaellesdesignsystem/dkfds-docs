@@ -7,7 +7,7 @@ lead:
 
 {% include code/preview.html component="table--responsive" %}
 {% include code/accordion.html component="table--responsive" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="tech-responsive-docs">
     Implementering

@@ -10,7 +10,7 @@ lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
 
 {% include code/preview.html component="badges" %}
 {% include code/accordion.html component="badges" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="code-documentation">
     Implementering
@@ -35,7 +35,7 @@ lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="label-docs">
     Retningslinjer

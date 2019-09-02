@@ -6,7 +6,7 @@ lead:
 ---
 {% include code/preview.html component="buttons-only-icon" %}
 {% include code/accordion.html component="buttons-only-icon" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="tech-only-icon">
     Implementering

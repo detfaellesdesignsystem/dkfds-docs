@@ -44,7 +44,7 @@ subnav:
       <li>Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.</li>
   </ul>
 </section>
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="sidenav-tech-docs">
     Implementering
   </button>

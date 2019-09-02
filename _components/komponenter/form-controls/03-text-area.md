@@ -7,7 +7,7 @@ lead:
 
 {% include code/preview.html component="text-area" %}
 {% include code/accordion.html component="text-area" %}
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="text-area-tech">
     Implementering
   </button>
@@ -18,7 +18,7 @@ lead:
       </section>
     </article>
   </div>
-</div><div class="accordion-bordered accordion-docs">
+</div><div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="text-area-docs">
     Retningslinjer

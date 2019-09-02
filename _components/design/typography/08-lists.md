@@ -10,7 +10,7 @@ order: 07
 {% include code/preview.html component="lists" classes="preview-lists" %}
 {% include code/accordion.html component="lists" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="lists-docs-tech">
     Implementering
@@ -21,7 +21,7 @@ order: 07
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typolists-docs">
     Retningslinjer
