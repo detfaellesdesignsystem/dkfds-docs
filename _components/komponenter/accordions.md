@@ -43,6 +43,11 @@ lead: En accordion er et grafisk element, som du kan bruge til vise indhold med.
   </button>
   <div id="technical" class="accordion-content">
     <p>Man kan undlade at sætte <code>aria-hidden</code> attribut på <code>accordion-content</code>, hvis man har implementeret dkfds.js i sit projekt. <code>aria-hidden</code> vil da blive tilføjet automatisk via javascript.</p>
+    <h2 class="h5">JavaScript</h2>
+    <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+    <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+    <pre>new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</pre>
+    <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
   </div>
 </div>
 

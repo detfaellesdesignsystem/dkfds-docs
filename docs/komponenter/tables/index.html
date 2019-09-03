@@ -2124,6 +2124,11 @@
     &lt;td data-title="Hvor ender det?"&gt;Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen. &lt;/td&gt;
 &lt;/tr&gt;
          </pre>
+        <h2 class="h5">JavaScript</h2>
+        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+        <pre>new DKFDS.ResponsiveTable(document.getElementByID('TABLE-ID'));</pre>
+        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
       </section>
   </div>
 </div>

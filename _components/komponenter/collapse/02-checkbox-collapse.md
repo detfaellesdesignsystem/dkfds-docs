@@ -26,6 +26,11 @@ lead:
           <li><code>id=”id-of-target-to-collapse”</code></li>
           <li><code>aria-hidden="true/false"</code></li>
         </ul>
+        <h2 class="h5">JavaScript</h2>
+        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+        <pre>new DKFDS.CheckboxToggleContent(document.getElementByID('CHECKBOX-INPUT-ID'));</pre>
+        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
     </section>
   </div>
 </div>

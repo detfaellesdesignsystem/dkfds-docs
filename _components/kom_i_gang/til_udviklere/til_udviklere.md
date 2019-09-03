@@ -25,13 +25,21 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
 
 <h3>Inkluder DKFDS Components i dit projekt</h3>
 <p>Den hurtigste måde at få inkluderet FDS' css i dit projekt er at tilføje følgende link-tag:</p>
+
+<h4 class="h5">Borger.dk tema</h4>
 ```shell
-  <link type='text/css' rel='stylesheet' href='[path to dkfds folder]/dist/css/dkfds.css'>
+  <link type='text/css' rel='stylesheet' href='[path to dkfds folder]/dist/css/dkfds-borgerdk.css'>
 ```
+<h4 class="h5">Virk tema</h4>
+```shell
+  <link type='text/css' rel='stylesheet' href='[path to dkfds folder]/dist/css/dkfds-virkdk.css'>
+```
+<h4 class="h5">JavaScript</h4>
 <p>For at inkludere JavaScript skal du tilføje følgende tag i slutningen af body-tagget:</p>
 ```shell
   <script src='[path to dkfds folder]/dist/js/dkfds.js'></script>
 ```
+<p>Du kan selv gøre brug af DKFDS javascript ved brug af det globale objekt <code>DKFDS</code>. For mere info, se under hver <a href="/komponenter/">komponent</a>, som gør brug af JavaScript.</p>
 
 <h4>Note til Webpack</h4>
 <p>For at inkludere stylingen skal du tilpasse disse variabler:</p>
@@ -53,6 +61,13 @@ Du kan enten benytte source-filerne i 'src/'-mappen eller de kompilerede filer i
   import "dkfds";
 ```
 
+<p>Eller, hvis du ønsker at gøre brug af dkfds Javascript funktioner:</p> 
+
+```shell
+import * as DKFDS from "dkfds";
+```
+
+<p>I dette tilfælde vil du da ved brug af objektet <code>DKFDS</code> kunne oprette nye accordions, overflowmenuer etc.  selv efter pageload. Se under hver <a href="/komponenter/">komponent</a>, hvordan man gør.</p>
 
 <h4>Note til gulp</h4>
 <p><strong>Browserspecifik styling tilføjes i projektet</strong></p>
