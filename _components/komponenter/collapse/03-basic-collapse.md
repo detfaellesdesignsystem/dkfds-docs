@@ -32,8 +32,8 @@ lead:
         <pre>new DKFDS.Collapse(document.getElementByID('COLLAPSE-BUTTON-ID'));</pre>
         <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
         <h3 class="h5">Events</h3>
-        <p>Når en skjul/vis komponent bliver foldet ud, bliver der udløst et <code>expanded</code> event på knappen, som man kan koble sig på via. en eventlistener.</p>
-        <p>Når en skjul/vis komponent bliver foldet ind, bliver der udløst et <code>collapsed</code> event på knappen, som man kan koble sig på via. en eventlistener.</p>
+        <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
+        <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
     </section>
   </div>
 </div>
