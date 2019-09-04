@@ -62,6 +62,9 @@ lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links el
         <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
         <pre>new DKFDS.Dropdown(document.getElementByID('OVERFLOW-BUTTON-ID'));</pre>
         <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
+        <h3 class="h5">Events</h3>
+        <p>Når en overflow menu bliver foldet ud, bliver der udløst et <code>expanded</code> event på knappen, som man kan koble sig på via. en eventlistener.</p>
+        <p>Når en overflow menu bliver foldet ind, bliver der udløst et <code>collapsed</code> event på knappen, som man kan koble sig på via. en eventlistener.</p>
     </section>
   </div>
 </div>
