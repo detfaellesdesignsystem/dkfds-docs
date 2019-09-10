@@ -1,25 +1,33 @@
 ---
-permalink: /komponenter/modals/
+permalink: /udvidelser/micromodal/
+redirect_from:
+- /komponenter/modals/
 layout: styleguide
 type: component
-title: Modalvinduer
-category: Komponenter_category
-subcategory: Komponenter
+title: Modalvinduer (MicroModal)
+category: Udvidelser_category
+subcategory: Udvidelser
 description: Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen.
+alerts:
+- type: warning
+  header: Denne komponent er ikke en del af kernen af Det Fælles Designsystem
+  content: MicroModal er ikke inkluderet i kernen af Det Fælles Designsystem. For at inkludere MicroModal skal der inkluderes et eksternt bibliotek, se implementeringsafsnittet nedenfor.<br><br>Det Fælles Designsystem har implementeret et tema til MicroModal, som findes i <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">Plugins<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a> projektet.
 ---
 
 <p>Modalvinduer er separate vinduer, som popper-up, når du aktiverer dem. De indeholder typisk afgrænset viden og kommer i to former: Åben modal (aktiv) indeholder tekst og link, som brugeren kan handle på. Åben modal (passiv) indeholder kun tekst, som brugeren kan læse.</p>
 
-{% include code/preview.html component="modal" %}
-{% include code/accordion.html component="modal" %}
-<div class="accordion accordion-bordered">
+{% include code/preview.html component="micromodal" %}
+{% include code/accordion.html component="micromodal" %}
+<div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="modal-tech-docs">
     Implementering
   </button>
   <div id="modal-tech-docs" aria-hidden="true" class="accordion-content">
     <section>
-        <p>Modal komponenten er implementeret med scriptet <a href="https://micromodal.now.sh" class="icon-link">Micromodal<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+        <p>Modal komponenten er implementeret med scriptet <a href="https://micromodal.now.sh" class="icon-link">Micromodal<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+        <p>Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a></p>
+        <p>Stien til filen du skal inkludere for MicroModal er henholdsvis [path-to-plugins-project]/dist/css/dkfds-micromodal-theme.standalone.min.css for CSS filen og ~dkfds-plugins/dist/scss/dkfds-micromodal-theme for SCSS filen.</p>
         <p>En modal kan åbens ved at sætte følgende attribut på fx en knap: <code>data-micromodal-trigger="modal-id"</code>. Dette vil åbne modalen som har id'et 'modal-id'</p>
         <p>En modal kan lukkes ved at sætte følgende attribut på en knap inde i modalen: <code>data-micromodal-close</code>.</p>
         <p>Det er også muligt at åbne og lukke modalen programmatisk via javascript: <code>MicroModal.show('modal-id');</code> og <code>MicroModal.close('modal-id');</code></p>
@@ -33,7 +41,7 @@ description: Modalvinduer anvendes til at tvinge brugerens fokus på et specifik
   </div>
 </div>
 
-<div class="accordion accordion-bordered accordion-docs">
+<div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="modal-docs">
     Retningslinjer

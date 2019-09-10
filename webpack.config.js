@@ -12,7 +12,8 @@ module.exports = function (outputPath, prod) {
       styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
       "dkfds-datatables-example": ["./examples/plugins/datatables/js/dkfds-datatables-example.js"],
       "dkfds-selectwoo-example": ["./examples/plugins/selectwoo/js/dkfds-selectwoo-example.js"],
-      "dkfds-pikaday-example": ["./examples/plugins/pikaday/js/dkfds-pikaday-example.js"]
+      "dkfds-pikaday-example": ["./examples/plugins/pikaday/js/dkfds-pikaday-example.js"],
+      "dkfds-micromodal-example": ["./examples/plugins/micromodal/js/dkfds-micromodal-example.js"]
     },
     module: {
       rules: [

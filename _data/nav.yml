@@ -75,7 +75,6 @@ Komponenter_category:
   - href: /komponenter/form-controls/
   - href: /komponenter/headers/
   - href: /komponenter/buttons/
-  - href: /komponenter/modals/
   - href: /komponenter/overflowmenu/
   - href: /komponenter/sidenav/
   - href: /komponenter/collapse/
@@ -89,8 +88,9 @@ Komponenter_category:
 #Left menu for udvidelser-category
 Udvidelser_category:
   - href: /udvidelser/datatables/
-  - href: /udvidelser/selectwoo-multiselect/
   - href: /udvidelser/pikaday/
+  - href: /udvidelser/micromodal/
+  - href: /udvidelser/selectwoo-multiselect/
 
 Eksempler_category:
   - href: /eksempler/selvbetjeningsloesninger/

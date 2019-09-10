@@ -1,11 +1,12 @@
 'use strict';
 import $ from "jquery";
 window.$ = window.jQuery = $
-const microModal = require("dkfds/src/vendor/micromodal.js");
+
+import MicroModal from 'micromodal';
 const dropdown = require('dkfds/src/js/components/dropdown.js');
 const dt = require( 'datatables.net' ); //Core datatables
-const dt_select =require( 'datatables.net-select' ); //Makes datatable rows selectable
-const dt_responsive =require( 'datatables.net-responsive' ); //Makes datatables responsive
+const dt_select = require( 'datatables.net-select' ); //Makes datatable rows selectable
+const dt_responsive = require( 'datatables.net-responsive' ); //Makes datatables responsive
 
 const jsSelectorDatatable_Example_basic = "#js-datatable-example-basic";
 const jsSelectorDatatable_Example_extra_pagination = "#js-datatable-example-extra_pagination";
@@ -36,6 +37,15 @@ class datatablesExamples {
             "previous":   "Forrige"
         },
     };
+
+    MicroModal.init({
+        onShow: function(){
+            document.getElementsByTagName('body')[0].classList.add('modal-active');
+        },
+        onClose: function(){
+            document.getElementsByTagName('body')[0].classList.remove('modal-active');
+        }
+    })
 
     //////////////////////////////////////
     //Init a datatable with no configuration
@@ -297,7 +307,7 @@ class datatablesExamples {
         $('#edit-firmanavn').val(data.company.name);
 
         //open modal
-         microModal.show('modal-edit');
+        MicroModal.show('modal-edit');
     });
 
     //Update edit row
@@ -316,7 +326,7 @@ class datatablesExamples {
         table_edit.row(currentEditTr).data(data).draw();
 
         //close modal
-        microModal.close('modal-edit');
+        MicroModal.close('modal-edit');
     });
 
     var currentDeleteTr = null
@@ -326,7 +336,7 @@ class datatablesExamples {
         currentDeleteTr = $(this).closest('tr');
 
         //open modal
-        microModal.show('modal-delete');
+        MicroModal.show('modal-delete');
     });
     //do delete
     $('body').on('click', '.js-delete-trigger', function () {
@@ -335,7 +345,7 @@ class datatablesExamples {
         table_edit.row(currentDeleteTr).remove().draw();
 
         //close modal
-        microModal.close('modal-delete');
+        MicroModal.close('modal-delete');
     });
 
     //////////////////////////////////
@@ -383,7 +393,7 @@ class datatablesExamples {
         currentDeleteTr = $(this).closest('tr');
 
         //open modal
-        microModal.show('modal-delete');
+        MicroModal.show('modal-delete');
     });
 
     /////////////////////////////////

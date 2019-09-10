@@ -22,6 +22,7 @@
     "easy-pdf-merge": "^0.2.0",
     "gulp-flatten": "^0.4.0",
     "jquery": "^3.3.1",
+    "micromodal": "^0.4.0",
     "pikaday": "^1.8.0",
     "puppeteer": "^1.12.2",
     "select-woo": "^1.0.1"
