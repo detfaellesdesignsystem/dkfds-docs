@@ -25,7 +25,8 @@
     "micromodal": "^0.4.0",
     "pikaday": "^1.8.0",
     "puppeteer": "^1.12.2",
-    "select-woo": "^1.0.1"
+    "select-woo": "^1.0.1",
+    "tippy.js": "^4.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",

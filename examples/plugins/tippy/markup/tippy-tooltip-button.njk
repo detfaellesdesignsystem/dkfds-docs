@@ -1,0 +1,9 @@
+{% import "components/buttons/buttons.njk" as button %}
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+
+<div class="container py-8">
+  <button class="button button-primary js-tippy" role="tooltip" data-tippy-content="Dette er et tooltip">
+    Knap med tooltip
+    <span class="sr-only">Dette er tooltipteksten til screenreaders</span>
+  </button>
+</div>
