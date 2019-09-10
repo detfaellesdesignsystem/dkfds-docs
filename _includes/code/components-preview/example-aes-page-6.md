@@ -230,7 +230,7 @@ title: Example-aes-page-6.html
                 </td>
                 <td class="align-text-md-right mt-4 mt-lg-0">
                     <button class="button button-unstyled">
-                        <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
+                        <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete-outline"></use></svg>
                         <span class="sr-only">Slet</span>
                     </button>
                 </td>
