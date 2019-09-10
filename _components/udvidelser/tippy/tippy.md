@@ -1,7 +1,5 @@
 ---
 permalink: /udvidelser/tippy/
-redirect_from:
-- /komponenter/tooltip/
 layout: styleguide
 type: component
 title: Tippy (tooltip)
