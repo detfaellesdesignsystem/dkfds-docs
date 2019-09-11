@@ -18,6 +18,9 @@ $(document).ready(function () {
 
     // Add style when navigating
     $('a').on('click', function (e) {
+        if($(this).attr('href') === "javascript:void(0)"){
+            return;
+        }
         var hashLocation  = $(this).attr('href').split('#')[ 1 ];
         if(hashLocation == undefined){ //if normal link
             e.preventDefault();
