@@ -5,6 +5,7 @@ title: Samarbejdsforum
 category: Om_designsystemet_category
 subcategory: Om designsystemet
 lead: Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsystemet. Myndigheder, som overvejer at anvende designsystemet, kan også deltage. I forummet sparrer vi om FDS og udviklingen fremadrettet.
+anchor: true
 subnav:
 - text: Næste møde
   href: '#næste-møde'

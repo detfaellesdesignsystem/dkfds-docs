@@ -5,6 +5,7 @@ type: component
 title: Cards
 category: Komponenter_category
 subcategory: Komponenter
+anchor: true
 subnav:
 - text: Card med fuld bredde
   href: '#card-med-fuld-bredde'

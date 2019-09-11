@@ -1,0 +1,54 @@
+{
+  "sidenavsNormal":
+  {
+    "links": [
+      {
+        "text": "Parent link"
+      },
+      {
+        "text": "Current page",
+        "current": true,
+        "links": [
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link",
+            "active": true,
+            "isAnchorLinks": true,
+            "links": [
+              {
+                "text": "Grandchild link",
+                "href" : "#"
+              },
+              {
+                "text": "Grandchild link",
+                "href" : "#"
+              },
+              {
+                "text": "Grandchild link",
+                "href" : "#"
+              },
+              {
+                "text": "Grandchild link",
+                "href" : "#"
+              }
+            ]
+          },
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link"
+          },
+          {
+            "text": "Child link"
+          }
+        ]
+      },
+      {
+        "text": "Another link"
+      }
+    ]
+  }
+}

@@ -6,6 +6,7 @@ title: Sidenavigation
 category: Komponenter_category
 subcategory: Komponenter
 description: Sidenavigation anvendes til at afspejle et navigations-hierarki i op til tre niveauer i venstre side af siden.
+anchor: true
 subnav:
 - text: Normal sidenavigation
   href: '#normal-sidenavigation'

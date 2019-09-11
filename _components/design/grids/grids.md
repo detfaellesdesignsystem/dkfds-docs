@@ -8,6 +8,7 @@ title: Grid
 category: Design_category
 subcategory: Design
 lead: Det fælles designsystem benytter et simpelt mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system med fem responsive breakpoints.
+anchor: true
 subnav:
 - text: Introduktion
   href: '#thegridsystem'

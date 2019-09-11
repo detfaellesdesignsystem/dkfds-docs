@@ -5,6 +5,7 @@ title: Logoer
 category: Design_category
 lead: Din selvbetjeningsløsning er del af en større helhed på borger.dk og Virk, dette kommunikeres bl.a. via portalens logo i headeren.
 subcategory: Design
+anchor: true
 subnav:
 - text: Retningslinjer for logo i headeren
   href: '#header'

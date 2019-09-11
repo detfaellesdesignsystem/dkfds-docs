@@ -10,6 +10,7 @@ alerts:
 - type: warning
   header: Denne komponent er ikke en del af kernen af Det Fælles Designsystem
   content: SelectWoo er ikke inkluderet i kernen af Det Fælles Designsystem. For at inkludere SelectWoo skal der inkluderes et eksternt bibliotek, se implementeringsafsnittet nedenfor.<br><br>Det Fælles Designsystem har implementeret et tema til SelectWoo, som findes i <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">Plugins projektet<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+anchor: true
 subnav:
 - text: Standard
   href: '#standard'

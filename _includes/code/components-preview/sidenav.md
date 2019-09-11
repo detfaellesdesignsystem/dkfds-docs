@@ -9,7 +9,7 @@ title: Sidenav.html
             <nav>
                 <ul class="sidenav-list">
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">
@@ -20,8 +20,8 @@ title: Sidenav.html
 
                     </li>
 
-                    <li>
-                        <a href="" class="current">
+                    <li class="current   ">
+                        <a href="">
 
                             <div class="d-inline-block">
                                 Current page
@@ -31,7 +31,7 @@ title: Sidenav.html
 
                         <ul class="sidenav-sub_list">
 
-                            <li>
+                            <li class="   ">
                                 <a href="">
 
                                     <div class="d-inline-block">
@@ -42,8 +42,8 @@ title: Sidenav.html
 
                             </li>
 
-                            <li>
-                                <a href="" class="current">
+                            <li class="current   ">
+                                <a href="">
 
                                     <div class="d-inline-block">
                                         Child link
@@ -53,7 +53,7 @@ title: Sidenav.html
 
                                 <ul class="sidenav-sub_list">
 
-                                    <li>
+                                    <li class="   ">
                                         <a href="">
 
                                             <div class="d-inline-block">
@@ -64,7 +64,7 @@ title: Sidenav.html
 
                                     </li>
 
-                                    <li>
+                                    <li class="   ">
                                         <a href="">
 
                                             <div class="d-inline-block">
@@ -75,8 +75,8 @@ title: Sidenav.html
 
                                     </li>
 
-                                    <li>
-                                        <a href="" class="active">
+                                    <li class=" active  ">
+                                        <a href="">
 
                                             <div class="d-inline-block">
                                                 Grandchild link
@@ -86,7 +86,7 @@ title: Sidenav.html
 
                                     </li>
 
-                                    <li>
+                                    <li class="   ">
                                         <a href="">
 
                                             <div class="d-inline-block">
@@ -101,7 +101,7 @@ title: Sidenav.html
 
                             </li>
 
-                            <li>
+                            <li class="   ">
                                 <a href="">
 
                                     <div class="d-inline-block">
@@ -112,7 +112,7 @@ title: Sidenav.html
 
                             </li>
 
-                            <li>
+                            <li class="   ">
                                 <a href="">
 
                                     <div class="d-inline-block">
@@ -123,7 +123,7 @@ title: Sidenav.html
 
                             </li>
 
-                            <li>
+                            <li class="   ">
                                 <a href="">
 
                                     <div class="d-inline-block">
@@ -138,7 +138,7 @@ title: Sidenav.html
 
                     </li>
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
                             <div class="d-inline-block">

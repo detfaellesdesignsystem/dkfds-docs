@@ -5,6 +5,7 @@ title: Selvbetjeningsløsninger
 category: Eksempler_category
 subcategory: Eksempler
 description: Eksempler på selvbetjeningsløsninger, der gør brug af Det Fælles Designsystem
+anchor: true
 subnav:
 - text: 'Løsning 1: Aktindsigt'
   href: '#solution-1'
