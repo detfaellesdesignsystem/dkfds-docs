@@ -1,5 +1,5 @@
 {% include nav/current.html page=include.page %}
-<li class="{% if _current -%}current {% endif %} {%  if _active -%}active {% endif %} {%  if _anchor -%}has-anchor-links{% endif %}">
+<li class="{% if _current -%}current {% endif %}{%  if _active -%}active {% endif %}{%  if _anchor -%}has-anchor-links{% endif %}">
 
 {% assign titletext = include.page.title %}
   {%  assign _anchor = false %}
