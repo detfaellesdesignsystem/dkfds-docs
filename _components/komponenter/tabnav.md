@@ -16,14 +16,15 @@ lead: "Faneblade udgør den vandrette eller horisontale navigation i en løsning
   </button>
   <div id="code-tabnav-docs" aria-hidden="true" class="accordion-content">
     <section>
-        <ul class="content-list">
-          <li>Det aktive menupunkt skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
-          <li>Det aktive menupunkt skal have en <code>.active</code> class, som har en border-bottom, som bliver sat med variablen <code>$tabs-border-bottom</code></li>
-          <li>Det aktive element gøres tilgængeligt for skærmlæsere ved at tilføje koden <code>&lt;span class="sr-only"&gt;(valgt)&lt;/span&gt;</code> i elementet. Teksten i <code>span</code>-elementet vil blive læst af skærmlæseren, men vil ikke være synlig på siden.</li>
-          <li>Teksten og borderen på det aktive menupunkt skal være primærfarven, som og sættes med variablen <code>$color-primary</code></li>
-          <li>Det aktive menupunkt skal have en <code>.active</code> class, der har en border-bottom, som bliver sat med variablen <code>$tabs-border-bottom</code></li>
-          <li>På hover skal teksten på menupunktet skifte, her skal variablen <code>$color-link-hover</code> bruges. Derudover skal der tiføjes en border-bottom, som igen bliver sat med variablen <code>$tabs-border-bottom</code></li> 
-        </ul>
+        <h2 class="h4">JavaScript</h2>
+        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+        <pre>new DKFDS.Tabnav(document.getElementByID('TABNAV-ID'));</pre>
+        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
+        <h3 class="h5">Events</h3>
+        <p>Når man vælger et nyt faneblad, bliver eventet <code>fds.tabnav.changed</code> udløst på <code>.tabnav</code> elementet, som man kan koble sig på med en eventlistener.</p>
+        <p>Når et faneblad åbnes, bliver eventet <code>fds.tabnav.open</code> udløst på det tilhørende <code>.tabnav-item</code> menu element, som man kan koble sig på med en eventlistener.</p>
+        <p>Når et faneblad lukkes, bliver eventet <code>fds.tabnav.close</code> udløst på det tilhørende <code>.tabnav-item</code> menu element, som man kan koble sig på med en eventlistener.</p>
     </section>
   </div>
 </div>

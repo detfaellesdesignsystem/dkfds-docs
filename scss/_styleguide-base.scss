@@ -602,6 +602,11 @@ code {
     min-height: 200px; //so that datepicker is visible
   }
 }
+.page-tabnav-html{
+  & .container{
+    min-height: 480px;
+  }
+}
 .page-date-input-datepicker-html{
   .container{
     min-height: 400px; //so that datepicker is visible

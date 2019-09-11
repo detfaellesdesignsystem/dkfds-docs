@@ -3,6 +3,7 @@ import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
 var iFrameResize = require('./vendor/iframeResizer');
 import * as DKFDS from "dkfds";
+
 require('./sidenav');
 $(document).ready(function () {
     // Initialize The style switcher fill
