@@ -1,10 +1,10 @@
 ---
-permalink: /komigang/krav/designtjekliste
+permalink: /komigang/tildesignere/designtjekliste/
 layout: styleguide
 title: Designtjekliste
 category: Kom_i_gang_category
 subcategory: Kom i gang
-parentlink: /komigang/krav/
+parentlink: /komigang/tildesignere/
 ---
 <h2 class="h5">1. Headeren skal indeholde de obligatoriske linjer og følge layoutreglerne</h2>
 <p>Headerens to obligatoriske linjer - med portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt - skal altid være at finde i alle selvbetjeningsløsninger og <a href="/komigang/tildesignere/sideopbygning/#header">hele headeren skal følge retningslinjerne for layout</a>.</p>

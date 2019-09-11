@@ -1,5 +1,5 @@
 ---
-permalink: /komigang/krav/faelles-krav
+permalink: /komigang/krav/faelles-krav/
 layout: styleguide
 title: Fælles krav til digitale løsninger
 category: Kom_i_gang_category
