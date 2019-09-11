@@ -1,12 +1,12 @@
 ---
-permalink: /komigang/krav/faelles-krav/
+permalink: /komigang/krav/om-kravene/
 layout: styleguide
-title: Fælles krav til digitale løsninger
+title: Om kravene
 category: Kom_i_gang_category
 subcategory: Kom i gang
 parentlink: /komigang/krav/
 ---
-<p><a href="https://arkitektur.digst.dk/faelles-krav-til-digitale-loesninger" class="icon-link">Fælles krav<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> består af tre forskellige typer af krav:</p>
+<p><a href="https://arkitektur.digst.dk/faelles-krav-til-digitale-loesninger" class="icon-link">De fælles krav til digitale løsninger <svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> består af tre forskellige typer af krav:</p>
 <ul>
     <li>Eksterne krav: krav fra eksterne kilder som fc lovgivning og sikkerhedsstandarder.</li>
     <li>Fælles aftalte krav: krav, som de statslige myndigheder, KL og Danske Regioner har udarbejdet i fællesskab</li>

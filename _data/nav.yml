@@ -38,7 +38,7 @@ Kom_i_gang_category:
 #Left menu for kom igang-category
 Krav_category:
 - href: /komigang/krav/borgerdk-virk/
-- href: /komigang/krav/faelles-krav/
+- href: /komigang/krav/om-kravene/
 
 #Left menu for kom igang-category
 Til_udviklere_category:
@@ -49,8 +49,8 @@ Til_udviklere_category:
 #Left menu for kom igang-category
 Til_designere_category:
 - href: /komigang/tildesignere/design-selvbetjeningsloesninger/
-- href: /komigang/tildesignere/designtjekliste/
 - href: /komigang/tildesignere/sideopbygning/
+- href: /komigang/tildesignere/designtjekliste/
 
 #Left menu for design-category
 Design_category:
