@@ -16,10 +16,10 @@ subnav:
   href: '#tertiærknapper'
 - text: Tilbage-knap
   href: '#tilbage-knap'
+- text: Knap med ikon
+  href: '#knap-med-ikon'
 - text: Ikon som knap
   href: '#ikon-som-knap'
-- text: Knap som ikon
-  href: '#knap-som-ikon'
 - text: Vedhæft fil
   href: '#vedhæft-fil'
 ---
