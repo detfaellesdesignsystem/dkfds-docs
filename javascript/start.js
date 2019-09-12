@@ -2,10 +2,17 @@
 import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
 var iFrameResize = require('./vendor/iframeResizer');
+const TestFDS = require('./test');
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
 $(document).ready(function () {
+
+    let path = window.location.pathname;
+    if(path.includes('mastertest')){
+        new TestFDS(DKFDS);
+    }
+
     // Initialize The style switcher fill
     $('.style-switcher').val(window.curStyle);
     $('.style-switcher').on('change', function () {

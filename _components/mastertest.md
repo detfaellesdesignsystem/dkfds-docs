@@ -273,3 +273,32 @@ title: Test
   <h2>Pikaday</h2>
   {% include code/preview.html component="date-input-datepicker" %}
 </div>
+
+
+<div class="container">
+  <h2>JS introduced komponents</h2>
+  <h3>Accordion</h3>
+  <button id="newAccordionTrigger" class="button button-secondary mb-8">Hent komponent</button>
+  <div id="newAccordion"></div>
+  <h3>Overflow menu</h3>
+  <button id="newOverflowMenuTrigger" class="button button-secondary mb-8">Hent komponent</button>
+  <div id="newOverflowMenu"></div>
+  <h3>Skjul/vis standard</h3>
+  <button id="newCollapseTrigger" class="button button-secondary mb-8">Hent komponent</button>
+  <div id="newCollapse"></div>
+  <h3>Skjul/vis radioknap</h3>
+  <button id="newCollapseRadioTrigger" class="button button-secondary mb-8">Hent komponent</button>
+  <div id="newCollapseRadio"></div>
+  <h3>Skjul/vis tjekboks</h3>
+  <button id="newCollapseCheckboxTrigger" class="button button-secondary mb-8">Hent komponent</button>
+  <div id="newCollapseCheckbox"></div>
+  <h3>Responsiv tabel</h3>
+  <button id="newTableTrigger" class="button button-secondary mb-8">Hent komponent</button>
+  <div id="newTable"></div>
+  <h3>Faneblad</h3>
+  <button id="newTabnavTrigger" class="button button-secondary mb-8">Hent komponent</button>
+  <div id="newTabnav"></div>
+  <h3>Tooltip</h3>
+  <button id="newTooltipTrigger" class="button button-secondary mb-8">Hent komponent</button>
+  <div id="newTooltip"></div>
+</div>
