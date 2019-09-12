@@ -18,3 +18,7 @@ lead: Det Fælles Designsystem (FDS) er bygget op omkring en agil governancemode
     <li><a href="/omdesignsystemet/styregruppe/">Styregruppe</a>, leder samarbejdet og træffer de formelle beslutninger om udviklingen af FDS.</li>
     <li><a href="/omdesignsystemet/fds-teamet/">FDS-teamet</a> står for den daglige drift og videreudvikling af FDS.</li>
 </ul>
+<div>
+    <img src="{{ site.baseurl }}/img/descriptionimages/governancemodel-md.svg" class="w-percent-100 d-none d-md-block" alt="" />
+    <img src="{{ site.baseurl }}/img/descriptionimages/governancemodel-xs.svg" class="w-percent-100 d-block d-md-none" alt="" />
+</div>
