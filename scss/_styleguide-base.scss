@@ -588,11 +588,14 @@ code {
 .page-text-input-html .container, .page-text-input-width-html .container{ //quick fix for iframe resize
   padding-bottom: 4px;
 }
-.page-accordion-html{
-  padding-top: 4px;
+.page-accordion-html, .page-accordion-border-html, .page-accordion-multi-html{
+  .container {
+    padding-top: 8px;
+  }
 }
-.page-basic-collapse-html{
+.page-basic-collapse-html .container{
   min-height: 150px;
+  padding-top: 8px;
 }
 .page-skiplink-html .container{
   min-height: 150px;
