@@ -208,7 +208,7 @@ title: Fil-liste-error.html
         </tbody>
     </table>
     <nav class="page-navigation d-print-none">
-        <button class="button button-primary" disabled>Næste</button>
+        <button class="button button-primary">Næste</button>
     </nav>
 </main>
 
