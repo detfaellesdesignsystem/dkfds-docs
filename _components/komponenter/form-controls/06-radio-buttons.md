@@ -40,7 +40,7 @@ lead:
         </ul>
         <h4 class="h5">Vejledning</h4>
         <ul>
-            <li>Brugeren skal kunne tappe eller klikke på radioknappen eller dens label for at vælge dens værdi.</li>
+            <li>Brugeren skal kunne tappe eller klikke på radioknappen eller dens label for at vælge dens værdi. Den fravælges, når en anden radioknap vælges.</li>
             <li>Du bør opstille lister med radioknapper i lodret linje af hensyn til brugerens læseretning.</li>
             <li>Sørg for at der er tilstrækkelig luft omkring den enkelte radioknap, så den er brugbar på touchskærme.</li>
             <li>Vær forsigtig med at angive et standard valg, da det kan have en modsatrettet effekt: Brugeren kan føle sig manipuleret eller foretager ikke et bevidst valg.</li>
