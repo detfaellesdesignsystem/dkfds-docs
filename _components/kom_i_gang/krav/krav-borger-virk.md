@@ -25,7 +25,7 @@ subnav:
     <li><a href="/komponenter">Komponenter</a> og <a href="udvidelser">udvidelser</a> skal være anvendt som anvist i designsystemet</li>
 </ul>
 <p>Det ANBEFALES desuden, at løsningen har en <a href="/komponenter/footers/">footer</a>, der er bygget som anvist i designsystemet.</p>
-<p><a href="/komigang/tildesignere/designtjekliste">Se også designtjeklisten, der beskriver hvordan man efterlever designet</a></p>
+<p><a href="/komigang/tildesignere/designtjekliste/">Designtjekliste</a></p>
 <h2 class="h4" id="integration-paa-borgerdk">Integration på borger.dk</h2>
 <ul>
     <li>din løsning skal være <a href="https://www.digitaliser.dk/resource/2406098" class="icon-link">tilsluttet via opis<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
