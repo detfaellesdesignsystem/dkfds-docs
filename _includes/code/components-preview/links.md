@@ -79,8 +79,8 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p>Dette er <a href="javascript:void(0);" class="disabled"
-                    aria-disabled="true" tabindex="-1">et standard link,
-                    disabled<span class="sr-only">disabled</span></a></p>
+                    aria-disabled="true">et standard link, disabled<span
+                        class="sr-only">disabled</span></a></p>
         </div>
     </div>
     <div class="row">
@@ -149,8 +149,8 @@ title: Links.html
     <div class="row">
         <div class="col-12">
             <p>Dette er <a href="javascript:void(0);" class="disabled"
-                    aria-disabled="true" tabindex="-1">et standard link,
-                    disabled<span class="sr-only">disabled</span></a></p>
+                    aria-disabled="true">et standard link, disabled<span
+                        class="sr-only">disabled</span></a></p>
         </div>
     </div>
     <div class="row">

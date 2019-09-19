@@ -49,7 +49,7 @@ title: Example-flytning-page-1.html
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -239,7 +239,7 @@ title: Example-flytning-page-1.html
                                 <li>
                                     <a href="#"
                                         class="icon-link">Adressebeskyttelse
-                                        <svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#open-in-new"></use></svg></a>
+                                        <svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#open-in-new"></use></svg></a>
                                 </li>
                             </ul>
                         </div>
@@ -263,7 +263,7 @@ title: Example-flytning-page-1.html
                                 <li>
                                     <a href="#" class="icon-link">Anmeld
                                         udrejse
-                                        <svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#open-in-new"></use></svg></a>
+                                        <svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#open-in-new"></use></svg></a>
                                 </li>
                             </ul>
                         </div>
@@ -287,7 +287,7 @@ title: Example-flytning-page-1.html
                                 <li>
                                     <a href="#" class="icon-link">Angiv
                                         fuldmagt
-                                        <svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#open-in-new"></use></svg></a>
+                                        <svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#open-in-new"></use></svg></a>
                                 </li>
                             </ul>
                         </div>

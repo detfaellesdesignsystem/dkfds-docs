@@ -49,7 +49,7 @@ title: Example-flytning-page-5.html
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -126,7 +126,7 @@ title: Example-flytning-page-5.html
                     <a href='/pages/eksempler/digital-flytning/flytning-1'>
                         1. Oversigt
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -134,7 +134,7 @@ title: Example-flytning-page-5.html
                     <a href='/pages/eksempler/digital-flytning/flytning-2'>
                         2. Personer
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -142,7 +142,7 @@ title: Example-flytning-page-5.html
                     <a href='/pages/eksempler/digital-flytning/flytning-3'>
                         3. Adresse
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -150,7 +150,7 @@ title: Example-flytning-page-5.html
                     <a href='/pages/eksempler/digital-flytning/flytning-4'>
                         4. Særlig flytning
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -203,7 +203,7 @@ title: Example-flytning-page-5.html
                 <td>0,6 Km</td>
                 <td class="align-text-md-right"><a href="#"
                         title="Skift læge">
-                        <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#pencil"></use></svg></a>
+                        <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#pencil"></use></svg></a>
                 </td>
             </tr>
         </tbody>
@@ -212,7 +212,7 @@ title: Example-flytning-page-5.html
     <nav class="page-navigation d-print-none">
         <a href="#" class="button button-primary">Næste</a>
         <a href='/pages/eksempler/digital-flytning/flytning-4'
-            class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 

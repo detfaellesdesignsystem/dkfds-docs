@@ -44,7 +44,7 @@ title: Header-full.html
                 <p>Support: 12 34 56 78 <span class="d-print-none">· <a
                             href="javascript:void(0);"
                             data-micromodal-trigger="modal-contact"
-                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
+                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
             </div>
         </div>
@@ -225,7 +225,7 @@ title: Header-full.html
             <h6 class="h5 authority-name">Myndighedsnavn</h6>
             <p>Support: 12 34 56 78 · <a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 

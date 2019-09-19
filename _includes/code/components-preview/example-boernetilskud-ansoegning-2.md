@@ -169,7 +169,7 @@ title: Example-boernetilskud-ansoegning-2.html
                         href='//pages/eksempler/boernetilskud/boernetilskud-1'>
                         1. Hvilke børn søger du tilskud til?
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -217,7 +217,7 @@ title: Example-boernetilskud-ansoegning-2.html
                     kan blive gift med.</p>
                 <a class="icon-link" href='#'>Læs mere om, hvornår du er
                     enlig forsøger på
-                    borger.dk/enlig<svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#open-in-new"></use></svg></a>
+                    borger.dk/enlig<svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#open-in-new"></use></svg></a>
             </div>
         </div>
         <div class="mt-7">
@@ -273,7 +273,7 @@ title: Example-boernetilskud-ansoegning-2.html
     <nav class="page-navigation d-print-none">
         <a href="#" class="button button-primary">Næste</a>
         <a href="/pages/eksempler/boernetilskud/boernetilskud-1"
-            class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 

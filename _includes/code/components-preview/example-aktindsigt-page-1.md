@@ -50,7 +50,7 @@ title: Example-aktindsigt-page-1.html
                 <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
                             href="javascript:void(0);"
                             data-micromodal-trigger="modal-contact"
-                            class="function-link d-inline-block"><svg class="icon-svg" tabindex="-1" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
+                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>

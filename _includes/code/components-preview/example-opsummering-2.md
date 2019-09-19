@@ -50,7 +50,7 @@ title: Example-opsummering-2.html
                 <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
                             href="javascript:void(0);"
                             data-micromodal-trigger="modal-contact"
-                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
+                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
@@ -91,7 +91,7 @@ title: Example-opsummering-2.html
                     data-js-target="#overflow4" aria-haspopup="true"
                     aria-expanded="false">
                     Trin 5 af 6
-                    <svg class="icon-svg" aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-down"></use></svg>
+                    <svg class="icon-svg" aria-hidden='true' focusable='false'><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
                 <div class="overflow-menu-inner" id="overflow4"
@@ -102,7 +102,7 @@ title: Example-opsummering-2.html
                                 href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
                                 1. Stamdata
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
@@ -111,7 +111,7 @@ title: Example-opsummering-2.html
                                 href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
                                 2. SMV-kriterier
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
@@ -120,7 +120,7 @@ title: Example-opsummering-2.html
                                 href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
                                 3. Statsstøtte
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
@@ -129,7 +129,7 @@ title: Example-opsummering-2.html
                                 href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
                                 4. Tilskud til land
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
@@ -347,7 +347,7 @@ title: Example-opsummering-2.html
                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-6/"
                     class="button button-primary">Send sagen</a>
                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/"
-                    class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+                    class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
             </nav>
         </main>
     </div>
