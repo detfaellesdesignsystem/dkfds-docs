@@ -45,7 +45,7 @@ class datatablesExamples {
         onClose: function(){
             document.getElementsByTagName('body')[0].classList.remove('modal-active');
         }
-    })
+    });
 
     //////////////////////////////////////
     //Init a datatable with no configuration

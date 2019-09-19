@@ -31,7 +31,7 @@ title: Tringuide-clickable.html
                     </a>
                 </li>
 
-                <li class=" active">
+                <li class=" active current">
                     <a href="">
                         3. Trin 3 (valgt)
 

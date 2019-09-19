@@ -7,7 +7,7 @@ title: Tringuide-locked.html
     <div class="row">
         <div class="col-12 col-lg-3 sidebar-col">
 
-            <ul class="sidenav-list-locked">
+            <ul class="sidenav-list sidenav-list-locked">
 
                 <li class="disabled  ">
                     <a disabled tab-index="-1" aria-disabled="true">
@@ -31,7 +31,7 @@ title: Tringuide-locked.html
                     </a>
                 </li>
 
-                <li class="disabled active ">
+                <li class="disabled active current ">
                     <a disabled tab-index="-1" aria-disabled="true">
                         3. Trin 3 (valgt)
 

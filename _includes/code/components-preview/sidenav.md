@@ -12,10 +12,8 @@ title: Sidenav.html
                     <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Parent link
+                            Hovedside
 
-                            </div>
                         </a>
 
                     </li>
@@ -23,10 +21,8 @@ title: Sidenav.html
                     <li class="current   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Current page
+                            Underside
 
-                            </div>
                         </a>
 
                         <ul class="sidenav-sub_list">
@@ -34,10 +30,8 @@ title: Sidenav.html
                             <li class="   ">
                                 <a href="">
 
-                                    <div class="d-inline-block">
-                                        Child link
+                                    Underside
 
-                                    </div>
                                 </a>
 
                             </li>
@@ -45,10 +39,8 @@ title: Sidenav.html
                             <li class="current   ">
                                 <a href="">
 
-                                    <div class="d-inline-block">
-                                        Child link
+                                    Underside
 
-                                    </div>
                                 </a>
 
                                 <ul class="sidenav-sub_list">
@@ -56,10 +48,8 @@ title: Sidenav.html
                                     <li class="   ">
                                         <a href="">
 
-                                            <div class="d-inline-block">
-                                                Grandchild link
+                                            Underside
 
-                                            </div>
                                         </a>
 
                                     </li>
@@ -67,10 +57,8 @@ title: Sidenav.html
                                     <li class="   ">
                                         <a href="">
 
-                                            <div class="d-inline-block">
-                                                Grandchild link
+                                            Underside
 
-                                            </div>
                                         </a>
 
                                     </li>
@@ -78,10 +66,8 @@ title: Sidenav.html
                                     <li class=" active  ">
                                         <a href="">
 
-                                            <div class="d-inline-block">
-                                                Grandchild link
+                                            Underside
 
-                                            </div>
                                         </a>
 
                                     </li>
@@ -89,10 +75,8 @@ title: Sidenav.html
                                     <li class="   ">
                                         <a href="">
 
-                                            <div class="d-inline-block">
-                                                Grandchild link
+                                            Underside
 
-                                            </div>
                                         </a>
 
                                     </li>
@@ -104,10 +88,8 @@ title: Sidenav.html
                             <li class="   ">
                                 <a href="">
 
-                                    <div class="d-inline-block">
-                                        Child link
+                                    Underside
 
-                                    </div>
                                 </a>
 
                             </li>
@@ -115,10 +97,8 @@ title: Sidenav.html
                             <li class="   ">
                                 <a href="">
 
-                                    <div class="d-inline-block">
-                                        Child link
+                                    Underside
 
-                                    </div>
                                 </a>
 
                             </li>
@@ -126,10 +106,8 @@ title: Sidenav.html
                             <li class="   ">
                                 <a href="">
 
-                                    <div class="d-inline-block">
-                                        Child link
+                                    Underside
 
-                                    </div>
                                 </a>
 
                             </li>
@@ -141,10 +119,8 @@ title: Sidenav.html
                     <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Another link
+                            Hovedside
 
-                            </div>
                         </a>
 
                     </li>

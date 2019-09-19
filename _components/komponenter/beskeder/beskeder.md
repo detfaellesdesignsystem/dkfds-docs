@@ -6,6 +6,7 @@ title: Beskeder (Alerts)
 category: Komponenter_category
 subcategory: Komponenter
 description: Beskeder (Alerts) er farvede bokse, eventuelt tilknytte et ikon, du kan bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer, o.l.
+anchor: true
 subnav:
 - text: Standard
   href: '#standard'

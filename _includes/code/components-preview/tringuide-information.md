@@ -43,7 +43,7 @@ title: Tringuide-information.html
                     </a>
                 </li>
 
-                <li class=" active">
+                <li class=" active current">
                     <a href="">
                         <div class="d-inline-block">
                             3. Trin 3 (valgt)

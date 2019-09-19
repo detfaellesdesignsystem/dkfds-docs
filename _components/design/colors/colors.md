@@ -7,6 +7,7 @@ title: Farver
 category: Design_category
 subcategory: Design
 lead: Da designsystemet er fælles for både borger.dk og Virk er der portalspecifikke farver og samtidig en generel palette, der anvendes uanset, hvilken portal din selvbetjeningsløsning skal på.
+anchor: true
 subnav:
 - text: Portalfarver (tema)
   href: '#portalfarver'

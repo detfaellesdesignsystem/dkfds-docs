@@ -10,10 +10,8 @@ title: Sidenav-anchor.html
             <li class="   ">
                 <a href="">
 
-                    <div class="d-inline-block">
-                        Parent link
+                    Hovedside
 
-                    </div>
                 </a>
 
             </li>
@@ -21,10 +19,8 @@ title: Sidenav-anchor.html
             <li class="current   ">
                 <a href="">
 
-                    <div class="d-inline-block">
-                        Current page
+                    Hovedside
 
-                    </div>
                 </a>
 
                 <ul class="sidenav-sub_list">
@@ -32,10 +28,8 @@ title: Sidenav-anchor.html
                     <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
@@ -43,10 +37,8 @@ title: Sidenav-anchor.html
                     <li class=" active has-anchor-links ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                         <ul class="sidenav-sub_list">
@@ -54,10 +46,8 @@ title: Sidenav-anchor.html
                             <li class="   ">
                                 <a href="#">
 
-                                    <div class="d-inline-block">
-                                        Grandchild link
+                                    Anchor link
 
-                                    </div>
                                 </a>
 
                             </li>
@@ -65,10 +55,8 @@ title: Sidenav-anchor.html
                             <li class="   ">
                                 <a href="#">
 
-                                    <div class="d-inline-block">
-                                        Grandchild link
+                                    Anchor link
 
-                                    </div>
                                 </a>
 
                             </li>
@@ -76,10 +64,8 @@ title: Sidenav-anchor.html
                             <li class="   ">
                                 <a href="#">
 
-                                    <div class="d-inline-block">
-                                        Grandchild link
+                                    Anchor link
 
-                                    </div>
                                 </a>
 
                             </li>
@@ -87,10 +73,8 @@ title: Sidenav-anchor.html
                             <li class="   ">
                                 <a href="#">
 
-                                    <div class="d-inline-block">
-                                        Grandchild link
+                                    Anchor link
 
-                                    </div>
                                 </a>
 
                             </li>
@@ -102,10 +86,8 @@ title: Sidenav-anchor.html
                     <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
@@ -113,10 +95,8 @@ title: Sidenav-anchor.html
                     <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
@@ -124,10 +104,8 @@ title: Sidenav-anchor.html
                     <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
@@ -139,10 +117,8 @@ title: Sidenav-anchor.html
             <li class="   ">
                 <a href="">
 
-                    <div class="d-inline-block">
-                        Another link
+                    Hovedside
 
-                    </div>
                 </a>
 
             </li>

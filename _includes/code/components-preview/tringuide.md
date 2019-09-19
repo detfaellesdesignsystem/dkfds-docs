@@ -136,7 +136,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class=" active">
+                <li class=" active current">
                     <a href="">
                         3. Trin 3 (valgt)
 
@@ -169,7 +169,7 @@ title: Tringuide.html
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col">
             <p class="h5 mt-6">Låst trinindikator</p>
 
-            <ul class="sidenav-list-locked">
+            <ul class="sidenav-list sidenav-list-locked">
 
                 <li class="disabled  ">
                     <a disabled tab-index="-1" aria-disabled="true">
@@ -193,7 +193,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class="disabled active ">
+                <li class="disabled active current ">
                     <a disabled tab-index="-1" aria-disabled="true">
                         3. Trin 3 (valgt)
 
@@ -260,7 +260,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class=" active">
+                <li class=" active current">
                     <a href="">
                         <div class="d-inline-block">
                             3. Trin 3 (valgt)

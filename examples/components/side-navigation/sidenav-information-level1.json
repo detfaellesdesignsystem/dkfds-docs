@@ -3,16 +3,17 @@
   {
     "links": [
       {
-        "text": "Parent link",
+        "text": "Hovedside",
         "information": "Informationstekst for parent link"
       },
       {
-        "text": "Current page",
+        "text": "Hovedside",
         "information": "Informationstekst for current link",
+        "current": true,
         "active": true
       },
       {
-        "text": "Another link",
+        "text": "Hovedside",
         "information": "Informationstekst for another link"
       }
     ]

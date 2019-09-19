@@ -4,49 +4,49 @@
   {
     "links": [
       {
-        "text": "Parent link",
+        "text": "Hovedside",
         "information": "Informationstekst for parent link"
       },
       {
-        "text": "Current page",
+        "text": "Hovedside",
         "information": "Informationstekst for current link",
         "current": true,
         "links": [
           {
-            "text": "Child link"
+            "text": "Underside"
           },
           {
-            "text": "Child link",
+            "text": "Underside",
             "current": true,
             "links": [
               {
-                "text": "Grandchild link"
+                "text": "Underside"
               },
               {
-                "text": "Grandchild link"
+                "text": "Underside"
               },
               {
-                "text": "Grandchild link",
+                "text": "Underside",
                 "active": true
               },
               {
-                "text": "Grandchild link"
+                "text": "Underside"
               }
             ]
           },
           {
-            "text": "Child link"
+            "text": "Underside"
           },
           {
-            "text": "Child link"
+            "text": "Underside"
           },
           {
-            "text": "Child link"
+            "text": "Underside"
           }
         ]
       },
       {
-        "text": "Another link",
+        "text": "Hovedside",
         "information": "Informationstekst for another link"
       }
     ]
