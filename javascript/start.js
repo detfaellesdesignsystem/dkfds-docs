@@ -3,6 +3,7 @@ import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
 var iFrameResize = require('./vendor/iframeResizer');
 const TestFDS = require('./test');
+import {CookiePrompter, NetMinersTracker } from  "./vendor/CookiePrompter-2.0.7";
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
@@ -12,6 +13,24 @@ $(document).ready(function () {
     if(path.includes('mastertest')){
         new TestFDS(DKFDS);
     }
+
+    CookiePrompter.init({
+        trackers: [{
+            name: NetMinersTracker,
+            config: {
+                scriptLocation: 'https://es.netminers.dk/script/383053B8-D66E-4E78-8B58-63F6A2DC54EE/'
+            }
+        }],
+        readMoreUrl: '/privatlivspolitik',
+        showOKbutton: true,
+        textOKbutton: 'Accepter',
+        enableLog: true,
+        textHeader: '',
+        textblock1: 'Det Fælles Designsystem bruger cookies til at forbedre siden.',
+        textNoThanks: 'Afvis',
+        textblock2: '',
+        textReadMore: 'Læs om vores brug af cookies.'
+    });
 
     // Initialize The style switcher fill
     $('.style-switcher').val(window.curStyle);

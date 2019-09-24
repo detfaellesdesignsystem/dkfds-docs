@@ -25,6 +25,26 @@
   text-align: center;
 }
 
+// CookiePrompter -------------- //
+#eksCookiePrompt{
+  background-color: $color-black;
+  color: $color-white;
+  padding-top: map-get($spacers, 4);
+  padding-bottom: map-get($spacers, 4);
+  p, a:link, a:hover, a:visited, a:active {
+    color: $color-white;
+  }
+  .icon-svg{
+    fill: currentColor;
+  }
+  ul{
+    max-width: none;
+  }
+  p{
+    max-width: none;
+  }
+}
+
 // Colors -------------- //
 
 // Base colors
