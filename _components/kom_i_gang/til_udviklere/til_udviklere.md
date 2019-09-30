@@ -110,7 +110,7 @@ import * as DKFDS from "dkfds";
 npm install dkfds-plugins --save
 ```
 
-<p>Modulet 'dkfds-plugins' er nu installeret i 'node_modules' mappen.<br>
+<p>Modulet 'dkfds-plugins' er nu installeret i 'node_modules' mappen.</p>
 <p>Inkluder derefter temaerne enten som css direkte:</p>
 
 <pre>
