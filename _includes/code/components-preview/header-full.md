@@ -237,12 +237,12 @@ title: Header-full.html
         data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true"
             aria-labelledby="modal-contact-1">
-            <header class="modal__header">
+            <div class="modal__header">
                 <h1 class="modal__title h2" id="modal-contact-1">
                     Kontakt
                 </h1>
-            </header>
-            <main class="modal__content">
+            </div>
+            <div class="modal__content">
                 <div class="alert alert-warning" role="alert"
                     aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
@@ -273,7 +273,7 @@ title: Header-full.html
                 <p class="m-0">
                     Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     kl. kl. 9-14</p>
-            </main>
+            </div>
 
             <button class="modal__close button button-secondary"
                 aria-label="Close modal" data-micromodal-close>Luk</button>

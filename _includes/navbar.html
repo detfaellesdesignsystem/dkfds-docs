@@ -1,11 +1,10 @@
-<a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-
-<header class="header" role="banner">
+<header class="header">
+  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
      <!--2A: Solutiuon header -->
     <div class="solution-header">
       <div class="solution-header-inner container">
         <div class="solution-heading d-flex align-items-center">
-            <a href="/" title="Home" aria-label="Home">Det Fælles Designsystem</a>
+            <a href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a>
         </div>
         <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
       </div>
@@ -13,7 +12,7 @@
 
     <div class="overlay"></div>
     <!-- Desktop main menu-->
-    <nav role="navigation" class="nav d-none d-lg-block">
+    <nav class="nav d-none d-lg-block" aria-label="Hovedmenu">
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
@@ -31,7 +30,8 @@
           <!-- 3B: Main navigation - secondary menu-->
           <ul class="unstyled-list nav-actions">
             <li>
-              <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+              <label for="style-switcher" class="sr-only">Skift mellem temaer</label>
+              <select class="form-select style-switcher" name="Style switcher" id="style-switcher">
                 <option value="">- Vælg tema -</option>
                 <option value="styleguide">Tema: Neutralt</option>
                 <option value="virkdk">Tema: Virk</option>
@@ -46,7 +46,7 @@
     <!-- collapsible nav end-->
 
     <!-- Mobile main menu-->
-    <nav role="navigation" class="nav d-lg-none">
+    <nav class="nav d-lg-none" aria-label="Mobil hovedmenu">
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
@@ -63,7 +63,8 @@
           <!-- 3B: Main navigation - secondary menu-->
           <ul class="unstyled-list nav-actions">
             <li>
-              <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+              <label for="style-switcher-mobile" class="sr-only">Skift mellem temaer</label>
+              <select class="form-select style-switcher" name="Style switcher" id="style-switcher-mobile">
                 <option value="">- Vælg tema -</option>
                 <option value="styleguide">Tema: Neutralt</option>
                 <option value="virkdk">Tema: Virk</option>

@@ -10,7 +10,6 @@ title: Example-boernetilskud-oversigt-2.html
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" title="Hjem"
                 class="logo alert-leave">
-                <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
