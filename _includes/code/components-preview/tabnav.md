@@ -8,8 +8,8 @@ title: Tabnav.html
 
     <ul class="tabnav">
 
-        <li>
-            <a href="#tab1" class=" tabnav-item" aria-expanded="false">
+        <li class="">
+            <a href="#tab1" class="tabnav-item" aria-expanded="false">
                 <span>Tabnav 1</span>
 
             </a>
@@ -28,9 +28,8 @@ title: Tabnav.html
             </section>
         </li>
 
-        <li>
-            <a href="#tab2" class="active tabnav-item"
-                aria-expanded="true">
+        <li class="active">
+            <a href="#tab2" class="tabnav-item" aria-expanded="true">
                 <span>Tabnav 2</span>
                 <span class="sr-only">(valgt)</span>
             </a>
@@ -49,8 +48,8 @@ title: Tabnav.html
             </section>
         </li>
 
-        <li>
-            <a href="#tab3" class=" tabnav-item" aria-expanded="false">
+        <li class="">
+            <a href="#tab3" class="tabnav-item" aria-expanded="false">
                 <span>Tabnav 3</span>
 
             </a>
@@ -69,8 +68,8 @@ title: Tabnav.html
             </section>
         </li>
 
-        <li>
-            <a href="#tab4" class=" tabnav-item" aria-expanded="false">
+        <li class="">
+            <a href="#tab4" class="tabnav-item" aria-expanded="false">
                 <span>Tabnav 4</span>
 
             </a>
@@ -89,8 +88,8 @@ title: Tabnav.html
             </section>
         </li>
 
-        <li>
-            <a href="#tab5" class=" tabnav-item" aria-expanded="false">
+        <li class="">
+            <a href="#tab5" class="tabnav-item" aria-expanded="false">
                 <span>Tabnav 5</span>
 
             </a>
@@ -109,8 +108,8 @@ title: Tabnav.html
             </section>
         </li>
 
-        <li>
-            <a href="#tab6" class=" tabnav-item" aria-expanded="false">
+        <li class="">
+            <a href="#tab6" class="tabnav-item" aria-expanded="false">
                 <span>Tabnav 6</span>
 
             </a>
