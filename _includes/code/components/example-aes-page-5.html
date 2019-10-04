@@ -1,9 +1,9 @@
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
@@ -51,7 +51,7 @@
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -164,139 +164,119 @@
         </div>
     </div>
 
-    <fieldset>
-        <legend>
-            <h1>Oplysninger om sagen</h1>
-        </legend>
+    <h1>Oplysninger om sagen</h1>
 
-        <div class="form-group ">
-            <fieldset>
-                <legend><label
-                        class="form-label icon-link">Skadedato<button
-                            class="js-tooltip tooltip"
-                            data-tippy-trigger="click"
-                            title="Her står relevant uddybbende hjælpetekst."
-                            aria-label="Her står relevant uddybbende hjælpetekst."><svg class='icon-svg' aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href='#help-circle-outline'></use></svg></button></label>
-                    <span class="form-hint">Fx. 28 04 1996</span></legend>
-                <span class="form-error-message"
-                    id="form-error-message-input-error"
-                    role="alert"></span>
-                <div class="date-group js-calendar-group mt-3">
-                    <div class="form-group form-group-day">
-                        <label class="form-label"
-                            for="date_of_day_2">Dato</label>
-                        <input class="form-input js-calendar-day-input"
-                            id="date_of_day_2" value="" type="tel" min="1"
-                            max="31" maxlength="2" pattern="^[0-9]{0,2}$"
-                            data-input-regex="^[0-9]{0,2}$"
-                            title="Indskriv dag på månenden som tal" />
-                    </div>
-                    <div class="form-group form-group-month">
-                        <label class="form-label"
-                            for="date_of_month_1">Måned</label>
-                        <input class="form-input js-calendar-month-input"
-                            id="date_of_month_1" value="" type="tel"
-                            min="1" max="12" maxlength="2"
-                            pattern="^[0-9]{0,2}$"
-                            data-input-regex="^[0-9]{0,2}$"
-                            title="Indskriv månedens nummer" />
-                    </div>
-                    <div class="form-group form-group-year ">
-                        <label class="form-label"
-                            for="date_of_year_3">År</label>
-                        <input class="form-input js-calendar-year-input"
-                            id="date_of_year_3" value="" type="tel"
-                            min="1900" max="3000" maxlength="4"
-                            pattern="^[0-9]{0,4}$"
-                            data-input-regex="^[0-9]{0,4}$"
-                            title="Indskriv årstal" />
-                    </div>
+    <div class="form-group ">
+        <fieldset>
+            <legend><label class="form-label">Skadedato<a
+                        href="javascript:void(0)" class="js-tooltip"
+                        data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a></label>
+                <span class="form-hint">Fx. 28 04 1996</span></legend>
 
+            <div class="date-group js-calendar-group mt-3">
+                <div class="form-group form-group-day">
+                    <label class="form-label" for="date-day">Dato</label>
+                    <input class="form-input js-calendar-day-input"
+                        id="date-day" value="" type="tel" min="1" max="31"
+                        maxlength="2" pattern="^[0-9]{0,2}$"
+                        data-input-regex="^[0-9]{0,2}$"
+                        title="Indskriv dag på månenden som tal" />
                 </div>
-            </fieldset>
-        </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label"
+                        for="date-month">Måned</label>
+                    <input class="form-input js-calendar-month-input"
+                        id="date-month" value="" type="tel" min="1"
+                        max="12" maxlength="2" pattern="^[0-9]{0,2}$"
+                        data-input-regex="^[0-9]{0,2}$"
+                        title="Indskriv månedens nummer" />
+                </div>
+                <div class="form-group form-group-year ">
+                    <label class="form-label" for="date-year">År</label>
+                    <input class="form-input js-calendar-year-input"
+                        id="date-year" value="" type="tel" min="1900"
+                        max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
+                        data-input-regex="^[0-9]{0,4}$"
+                        title="Indskriv årstal" />
+                </div>
 
-        <div class="form-group">
-            <label class="form-label " for="id-skadenummer">Jeres
-                sags-/skadenummer<button class="js-tooltip tooltip"
-                    data-tippy-trigger="click"
-                    title="Her står relevant uddybbende hjælpetekst."
-                    aria-label="Her står relevant uddybbende hjælpetekst."><svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#help-circle-outline'></use></svg></button></label>
+            </div>
+        </fieldset>
+    </div>
 
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-skadenummer" value=""
-                name="Input til Jeres sags-/skadenummer" type="text">
-        </div>
+    <div class="form-group">
+        <label class="form-label " for="id-skadenummer">Jeres
+            sags-/skadenummer<a href="javascript:void(0)"
+                class="js-tooltip"
+                data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a></label>
 
-        <div class="form-group">
+        <input class="form-input  input-width-m " placeholder=""
+            id="id-skadenummer" value=""
+            name="Input til Jeres sags-/skadenummer" type="text">
+    </div>
 
-            <input id="id-retssag" type="checkbox" name=""
-                value="Der verserer en retssag"
-                class="form-checkbox  checkbox-large js-checkbox-toggle-content printIfChecked"
-                data-js-target='#collapse-check'
-                aria-controls='collapse-check' aria-expanded='false' />
-            <label for="id-retssag" class="">Der verserer en
-                retssag</label>
+    <div class="form-group">
 
-            <div id="collapse-check" aria-hidden="true"
-                class="box-border-l collapsed">
-                <div class="py-4">
+        <input id="id-retssag" type="checkbox"
+            value="Der verserer en retssag"
+            class="form-checkbox  checkbox-large js-checkbox-toggle-content printIfChecked"
+            data-js-target='#collapse-check' aria-controls='collapse-check'
+            aria-expanded='false' />
+        <label for="id-retssag" class="">Der verserer en retssag</label>
 
-                    <div class="form-group ">
-                        <fieldset>
-                            <legend><label
-                                    class="form-label icon-link">Berammelsesdato</label>
-                                <span class="form-hint">Fx. 28 04
-                                    1996</span></legend>
-                            <span class="form-error-message"
-                                id="form-error-message-input-error"
-                                role="alert"></span>
-                            <div class="date-group js-calendar-group mt-3">
-                                <div class="form-group form-group-day">
-                                    <label class="form-label"
-                                        for="date_of_day_2">Dato</label>
-                                    <input
-                                        class="form-input js-calendar-day-input"
-                                        id="date_of_day_2" value=""
-                                        type="tel" min="1" max="31"
-                                        maxlength="2"
-                                        pattern="^[0-9]{0,2}$"
-                                        data-input-regex="^[0-9]{0,2}$"
-                                        title="Indskriv dag på månenden som tal" />
-                                </div>
-                                <div class="form-group form-group-month">
-                                    <label class="form-label"
-                                        for="date_of_month_1">Måned</label>
-                                    <input
-                                        class="form-input js-calendar-month-input"
-                                        id="date_of_month_1" value=""
-                                        type="tel" min="1" max="12"
-                                        maxlength="2"
-                                        pattern="^[0-9]{0,2}$"
-                                        data-input-regex="^[0-9]{0,2}$"
-                                        title="Indskriv månedens nummer" />
-                                </div>
-                                <div class="form-group form-group-year ">
-                                    <label class="form-label"
-                                        for="date_of_year_3">År</label>
-                                    <input
-                                        class="form-input js-calendar-year-input"
-                                        id="date_of_year_3" value=""
-                                        type="tel" min="1900" max="3000"
-                                        maxlength="4"
-                                        pattern="^[0-9]{0,4}$"
-                                        data-input-regex="^[0-9]{0,4}$"
-                                        title="Indskriv årstal" />
-                                </div>
+        <div id="collapse-check" aria-hidden="true"
+            class="box-border-l collapsed">
+            <div class="py-4">
 
+                <div class="form-group ">
+                    <fieldset>
+                        <legend><label
+                                class="form-label">Berammelsesdato</label>
+                            <span class="form-hint">Fx. 28 04 1996</span>
+                        </legend>
+
+                        <div class="date-group js-calendar-group mt-3">
+                            <div class="form-group form-group-day">
+                                <label class="form-label"
+                                    for="date-day2">Dato</label>
+                                <input
+                                    class="form-input js-calendar-day-input"
+                                    id="date-day2" value="" type="tel"
+                                    min="1" max="31" maxlength="2"
+                                    pattern="^[0-9]{0,2}$"
+                                    data-input-regex="^[0-9]{0,2}$"
+                                    title="Indskriv dag på månenden som tal" />
                             </div>
-                        </fieldset>
-                    </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label"
+                                    for="date-month2">Måned</label>
+                                <input
+                                    class="form-input js-calendar-month-input"
+                                    id="date-month2" value="" type="tel"
+                                    min="1" max="12" maxlength="2"
+                                    pattern="^[0-9]{0,2}$"
+                                    data-input-regex="^[0-9]{0,2}$"
+                                    title="Indskriv månedens nummer" />
+                            </div>
+                            <div class="form-group form-group-year ">
+                                <label class="form-label"
+                                    for="date-year2">År</label>
+                                <input
+                                    class="form-input js-calendar-year-input"
+                                    id="date-year2" value="" type="tel"
+                                    min="1900" max="3000" maxlength="4"
+                                    pattern="^[0-9]{0,4}$"
+                                    data-input-regex="^[0-9]{0,4}$"
+                                    title="Indskriv årstal" />
+                            </div>
 
+                        </div>
+                    </fieldset>
                 </div>
+
             </div>
         </div>
-    </fieldset>
+    </div>
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-6"
             class="button button-primary">Næste</a>
@@ -317,7 +297,7 @@
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -341,8 +321,7 @@
                 </h1>
             </div>
             <div class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -363,13 +342,13 @@
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
             </div>
 

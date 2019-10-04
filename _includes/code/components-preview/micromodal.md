@@ -19,25 +19,25 @@ title: Micromodal.html
         data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true"
             aria-labelledby="modal-title-1">
-            <header class="modal__header">
+            <div class="modal__header">
                 <h1 class="modal__title h2" id="modal-title-1">
                     Modal
                 </h1>
-            </header>
-            <main class="modal__content">
+            </div>
+            <div class="modal__content">
                 <p>Modalens indhold. Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad
                     minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat</p>
-            </main>
+            </div>
 
-            <footer class="modal__footer">
+            <div class="modal__footer">
                 <button class="button button-primary"
                     aria-label="Fx bekræft handling">Primærknap</button><button
                     class="button button-secondary" data-micromodal-close
                     aria-label="Fx lukker modal vinduet">Sekundærknap</button>
-            </footer>
+            </div>
 
             <button class="modal__close button button-secondary"
                 aria-label="Close modal" data-micromodal-close>Luk</button>
@@ -50,18 +50,18 @@ title: Micromodal.html
         data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true"
             aria-labelledby="modal-title-2">
-            <header class="modal__header">
+            <div class="modal__header">
                 <h1 class="modal__title h2" id="modal-title-2">
                     Modal
                 </h1>
-            </header>
-            <main class="modal__content">
+            </div>
+            <div class="modal__content">
                 <p>Modalens indhold. Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad
                     minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat</p>
-            </main>
+            </div>
 
             <button class="modal__close button button-secondary"
                 aria-label="Close modal" data-micromodal-close>Luk</button>

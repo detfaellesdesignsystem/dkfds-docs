@@ -9,11 +9,11 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -68,12 +68,12 @@
                            </a>
                        </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                5. Opsummering
                             </a>
                         </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                 6. Kvittering
                             </a>
                         </li>

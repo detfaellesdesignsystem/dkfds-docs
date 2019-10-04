@@ -10,12 +10,12 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
         <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
         <!-- 3: Main navigation-->
@@ -94,7 +94,7 @@
 
 {% block body %}
   <main class="container page-container">
-    <header class="page-header">
+    <section class="page-content">
         {{overflowmenu("Trin 1 af 6","overflow_steps", true, false, "menu-down" ,"
               <ul class='sidenav-list'>
                   <li>
@@ -131,14 +131,12 @@
               "
           ) }}
         <h1>{{title}}</h1>
-    </header>
-    <section class="page-content">
         <div class="row">
             <div class="col-12 col-md-8 col-lg-5">
                 <form class="form">
                     <div class="form-group">
                         <fieldset>
-                            <legend><h2 class="h4">Jeg søger tilskud til:</h2></legend>
+                            <legend class="h4">Jeg søger tilskud til:</legend>
                             <ul class="nobullet-list">
                                 <li>
                                     {{ alert("alert-warning", "alert", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.", "Beskedbox der viser en advarsel" ) }}

@@ -13,7 +13,6 @@ lead:
     Implementering
   </button>
   <div id="radio-toggle-content-tech" aria-hidden="true" class="accordion-content">
-    <section>
         <p>For at initialisere collapse funktionaliteten på en radioknap skal <code>input[type=radio]</code> have følgende:</p>
         <ul>
           <li>Attributten <code>name</code>: alle radioknapper I en gruppe skal have samme værdi i 'name'-attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
@@ -36,7 +35,6 @@ lead:
         <h3 class="h5">Events</h3>
         <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
         <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-    </section>
   </div>
 </div>
 <div class="accordion accordion-bordered accordion-docs">
@@ -45,7 +43,6 @@ lead:
     Retningslinjer
   </button>
   <div id="checkbox-toggle-content-docs" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
@@ -63,6 +60,5 @@ lead:
           <h4 class="h5">Vejledning</h4>                
           <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
       </section>
-    </article>
   </div>
 </div>

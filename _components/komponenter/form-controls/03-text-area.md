@@ -12,11 +12,7 @@ lead:
     Implementering
   </button>
   <div id="text-area-tech" aria-hidden="true" class="accordion-content">
-    <article>
-      <section>
-        <p>Sæt højden på et textarea ved brug af <code>rows</code> attributten.</p>
-      </section>
-    </article>
+    <p>Sæt højden på et textarea ved brug af <code>rows</code> attributten.</p>
   </div>
 </div><div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
@@ -24,7 +20,6 @@ lead:
     Retningslinjer
   </button>
   <div id="text-area-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <p>Tekstområdet bliver automatisk fremhævet, når brugeren navigerer sig hen til det ved hjælp af tabulator-tasten.</p>
@@ -48,6 +43,5 @@ lead:
               <li>Placér fejlbeskeder imellem label og felt, og markeér feltet med rødt.</li>
           </ul>
       </section>
-    </article>
   </div>
 </div>

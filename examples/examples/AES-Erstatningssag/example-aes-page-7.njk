@@ -12,12 +12,12 @@
 {% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -123,8 +123,8 @@
                         <div class="py-4">
                             <form class="form">
                                 <div class="form-group file-input">
-                                    <label class="form-label" for="file">Tilføj dokument</label>
-                                    <input type="file" id="file" name="file">
+                                    <label class="form-label" for="input-file">Tilføj dokument</label>
+                                    <input type="file" id="input-file" name="file">
                                 </div>
                             </form>
                             <table class="table table--borderless table--compact table--responsive-headers mt-5">
@@ -139,7 +139,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="break-word w-percent-md-40">{{ icon_svg('file')}} prn0237452_attest.pdf</td>
-                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype1", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
+                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype1", "Vælg dokumentationstype", "", "Vælg type", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "", "", "sr-only")}}</td>
                                         <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-1-expanded", "Kommentar", "(Frivilligt)", "input-width-m", "Kommentar", "sr-only", "", "", "", "1") }}</td>
                                         <td class="align-text-md-right mt-4 mt-lg-0">
                                             <button class="button button-unstyled">
@@ -150,7 +150,7 @@
                                     </tr>
                                     <tr>
                                         <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}} sgn1023152_attest.pdf</td>
-                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype2", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
+                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype2", "Vælg dokumentationstype", "", "Vælg type", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "", "", "sr-only")}}</td>
                                         <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-2-expanded", "Kommentar", "(Frivilligt)", "input-width-m", "Kommentar", "sr-only", "", "", "", "1") }}</td>
                                         <td class="align-text-md-right mt-4 mt-lg-0">
                                             <button class="button button-unstyled">
@@ -170,8 +170,8 @@
                         <div class="py-4">
                             <form class="form">
                                 <div class="form-group file-input">
-                                    <label class="form-label" for="file">Tilføj dokument</label>
-                                    <input type="file" id="file" name="file">
+                                    <label class="form-label" for="input-file2">Tilføj dokument</label>
+                                    <input type="file" id="input-file2" name="file">
                                 </div>
                             </form>
                             <table class="table table--borderless table--compact table--responsive-headers mt-5">
@@ -186,7 +186,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="break-word w-percent-md-40">{{ icon_svg('file')}} dkf4903283_attest.pdf</td>
-                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype3", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
+                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype3", "Vælg dokumentationstype", "", "Vælg type",  [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "", "", "sr-only")}}</td>
                                         <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-3-expanded", "Kommentar", "(frivilligt)", "input-width-m", "Kommentar", "sr-only", "", "", "", "1") }}</td>
                                         <td class="align-text-md-right mt-4 mt-lg-0">
                                             <button class="button button-unstyled">
@@ -197,7 +197,7 @@
                                     </tr>
                                     <tr>
                                         <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}} kfo1127303_attest.pdf</td>
-                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype4", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
+                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype4", "Vælg dokumentationstype", "", "Vælg type", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "", "", "sr-only")}}</td>
                                         <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-4-expanded", "Kommentar", "(frivilligt)", "input-width-m", "Kommentar", "sr-only", "", "", "", "1") }}</td>
                                         <td class="align-text-md-right mt-4 mt-lg-0">
                                             <button class="button button-unstyled">
@@ -217,8 +217,8 @@
                         <div class="py-4">
                             <form class="form">
                                 <div class="form-group file-input">
-                                    <label class="form-label" for="file">Tilføj dokument</label>
-                                    <input type="file" id="file" name="file">
+                                    <label class="form-label" for="input-file3">Tilføj dokument</label>
+                                    <input type="file" id="input-file3" name="file">
                                 </div>
                             </form>
                             <table class="table table--borderless table--compact table--responsive-headers mt-5">
@@ -233,7 +233,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="break-word w-percent-md-40">{{ icon_svg('file')}} ohb3428439_attest.pdf</td>
-                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype5", "Vælg dokumentationsype", select_example.options, "", "", "", "sr-only")}}</td>
+                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationstype5", "Vælg dokumentationstype", "", "Vælg type", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "", "", "sr-only")}}</td>
                                         <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-5-expanded", "Kommentar", "(Frivilligt)", "input-width-m", "Kommentar", "sr-only", "", "", "", "1") }}</td>
                                         <td class="align-text-md-right mt-4 mt-lg-0">
                                             <button class="button button-unstyled">
@@ -244,7 +244,7 @@
                                     </tr>
                                     <tr>
                                         <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}} sdv5644382_attest.pdf</td>
-                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationdtype6", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
+                                        <td class="mt-4 mt-lg-0">{{select("Navngiv dokument", "select-dokumentationstype6", "Vælg dokumentationstype", "", "Vælg type", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "", "", "sr-only")}}</td>
                                         <td class="mt-4 mt-lg-0">{{ textarea("id-documentation-6-expanded", "Kommentar", "(Frivilligt)", "input-width-m", "Kommentar", "sr-only", "", "", "", "1") }}</td>
                                         <td class="align-text-md-right mt-4 mt-lg-0">
                                             <button class="button button-unstyled">

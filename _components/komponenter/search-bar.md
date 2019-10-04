@@ -30,7 +30,6 @@ lead: Et søgefelt udstiller brugerne muligheden for brugerne for at søge efter
     Retningslinjer
   </button>
   <div id="search-bar-docs" aria-hidden="false" class="accordion-content">
-       <article>
         <section>
             <h2 class="h4">Tilgængelighed</h2>
             <ul>
@@ -58,6 +57,5 @@ lead: Et søgefelt udstiller brugerne muligheden for brugerne for at søge efter
                 <li>Søgeknappen skal være en submit-knap.</li>
             </ul>
         </section>
-      </article>
   </div>
 </div>

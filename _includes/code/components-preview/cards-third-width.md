@@ -9,8 +9,7 @@ title: Cards-third-width.html
             <div class="card ">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header">Header</p>
+                    <p class="h5 header-title">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -50,8 +49,7 @@ title: Cards-third-width.html
             <div class="card ">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header">Header</p>
+                    <p class="h5 header-title">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -93,8 +91,7 @@ title: Cards-third-width.html
             <div class="card ">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header">Header</p>
+                    <p class="h5 header-title">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 

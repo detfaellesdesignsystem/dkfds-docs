@@ -3,12 +3,12 @@ permalink: /preview-components/example-boernetilskud-oversigt.html
 layout: iframed 
 title: Example-boernetilskud-oversigt.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
@@ -53,7 +53,7 @@ title: Example-boernetilskud-oversigt.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -150,12 +150,10 @@ title: Example-boernetilskud-oversigt.html
 </header>
 
 <main class="container page-container">
-    <header class="page-header">
+    <section class="page-content">
         <h1 class="mt-6 mt-md-7">Oversigt</h1>
         <p class="font-lead">Brug en af de følgende funktioner, til at
             administrere børnetilskud:</p>
-    </header>
-    <section class="page-content">
         <p class="h3 mb-0">Beskeder</p>
         <p class="mt-0"><a
                 href="/pages/eksempler/boernetilskud/boernetilskud-1">Læs
@@ -195,7 +193,7 @@ title: Example-boernetilskud-oversigt.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>

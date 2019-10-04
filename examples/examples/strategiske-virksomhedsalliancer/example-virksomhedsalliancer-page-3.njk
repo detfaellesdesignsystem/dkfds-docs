@@ -14,11 +14,11 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -76,12 +76,12 @@
                            </a>
                        </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                5. Opsummering
                             </a>
                         </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                 6. Kvittering
                             </a>
                         </li>
@@ -104,7 +104,7 @@
             <legend class="form-label">Har i modtaget støtte gennem andre internationale de-minimis-ordninger (fx OECD)?</legend>
             <ul class="nobullet-list">
                 <li>
-                    {{radiobutton("id-state-yes", "minimis", "Ja", false, false, "Ja", "radio-large", false, true, "data-js-target='#collapse-radio' aria-controls='collapse-radio' aria-expanded='false'", "", "data-js-target='#collapse-radio' aria-controls='collapse-radio' aria-expanded='false'")}}
+                    {{radiobutton("id-state-yes", "minimis", "Ja", false, false, "Ja", "radio-large", false, true, 'data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false"', "", 'data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false"')}}
                     <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
                         <div class="py-4">
                             {{textinput("id-minimis-name", "Ordningens navn", "", "input-width-m", "", "Input til ordningens navn", "", false, "")}}

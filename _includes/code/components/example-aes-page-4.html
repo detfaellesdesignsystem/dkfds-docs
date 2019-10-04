@@ -1,9 +1,9 @@
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
@@ -51,7 +51,7 @@
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -161,88 +161,84 @@
         </div>
     </div>
 
-    <fieldset>
-        <legend>
-            <h1>Sagens natur</h1>
-        </legend>
-        <div class="form-group">
-            <fieldset>
-                <legend class="form-label">Sagen handler om</legend>
-                <ul class="nobullet-list">
-                    <li>
+    <h1>Sagens natur</h1>
+    <div class="form-group">
+        <fieldset>
+            <legend class="form-label">Sagen handler om</legend>
+            <ul class="nobullet-list">
+                <li>
 
-                        <input id="id-case1" type="radio"
-                            name="Sagen handler om"
-                            value="Ulykkesforsikring (ASL §81)"
-                            class="form-radio  radio-large " />
-                        <label for="id-case1"
-                            class="radio-large">Ulykkesforsikring (ASL §81)
-                        </label>
+                    <input id="id-case1" type="radio"
+                        name="Sagen handler om"
+                        value="Ulykkesforsikring (ASL §81)"
+                        class="form-radio  radio-large " />
+                    <label for="id-case1"
+                        class="radio-large">Ulykkesforsikring (ASL §81)
+                    </label>
 
-                    </li>
-                    <li>
+                </li>
+                <li>
 
-                        <input id="id-case2" type="radio"
-                            name="Sagen handler om"
-                            value="Erstatningsansvar (ASL §10)"
-                            class="form-radio  radio-large " />
-                        <label for="id-case2"
-                            class="radio-large">Erstatningsansvar (ASL §10)
-                        </label>
+                    <input id="id-case2" type="radio"
+                        name="Sagen handler om"
+                        value="Erstatningsansvar (ASL §10)"
+                        class="form-radio  radio-large " />
+                    <label for="id-case2"
+                        class="radio-large">Erstatningsansvar (ASL §10)
+                    </label>
 
-                    </li>
-                    <li>
+                </li>
+                <li>
 
-                        <input id="id-case3" type="radio"
-                            name="Sagen handler om"
-                            value="Patientskade (ASL §10)"
-                            class="form-radio  radio-large " />
-                        <label for="id-case3"
-                            class="radio-large">Forsikringsselskab (ASL
-                            §10) </label>
+                    <input id="id-case3" type="radio"
+                        name="Sagen handler om"
+                        value="Patientskade (ASL §10)"
+                        class="form-radio  radio-large " />
+                    <label for="id-case3"
+                        class="radio-large">Forsikringsselskab (ASL §10)
+                    </label>
 
-                    </li>
-                </ul>
-            </fieldset>
-        </div>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
 
-        <div class="form-group">
-            <fieldset>
-                <legend class="form-label">AES skal vurdere</legend>
-                <ul class="nobullet-list">
-                    <li>
+    <div class="form-group">
+        <fieldset>
+            <legend class="form-label">AES skal vurdere</legend>
+            <ul class="nobullet-list">
+                <li>
 
-                        <input id="id-aes1" type="radio"
-                            name="AES skal vurdere" value="Mén (6.220 kr.)"
-                            class="form-radio  radio-large " />
-                        <label for="id-aes1" class="radio-large">Mén (6.220
-                            kr.) </label>
+                    <input id="id-aes1" type="radio"
+                        name="AES skal vurdere" value="Mén (6.220 kr.)"
+                        class="form-radio  radio-large " />
+                    <label for="id-aes1" class="radio-large">Mén (6.220
+                        kr.) </label>
 
-                    </li>
-                    <li>
+                </li>
+                <li>
 
-                        <input id="id-aes2" type="radio"
-                            name="AES skal vurdere"
-                            value="Tab af erhvervsevne (22.280 kr.)"
-                            class="form-radio  radio-large " />
-                        <label for="id-aes2" class="radio-large">Tab af
-                            erhvervsevne (22.280 kr.) </label>
+                    <input id="id-aes2" type="radio"
+                        name="AES skal vurdere"
+                        value="Tab af erhvervsevne (22.280 kr.)"
+                        class="form-radio  radio-large " />
+                    <label for="id-aes2" class="radio-large">Tab af
+                        erhvervsevne (22.280 kr.) </label>
 
-                    </li>
-                    <li>
+                </li>
+                <li>
 
-                        <input id="id-aes3" type="radio"
-                            name="AES skal vurdere"
-                            value="Mén + tab af erhvervsevne (22.280 kr.)"
-                            class="form-radio  radio-large " />
-                        <label for="id-aes3" class="radio-large">Mén + tab
-                            af erhvervsevne (22.280 kr.) </label>
+                    <input id="id-aes3" type="radio"
+                        name="AES skal vurdere"
+                        value="Mén + tab af erhvervsevne (22.280 kr.)"
+                        class="form-radio  radio-large " />
+                    <label for="id-aes3" class="radio-large">Mén + tab af
+                        erhvervsevne (22.280 kr.) </label>
 
-                    </li>
-                </ul>
-            </fieldset>
-        </div>
-    </fieldset>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
 
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-5"
@@ -264,7 +260,7 @@
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -288,8 +284,7 @@
                 </h1>
             </div>
             <div class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -310,13 +305,13 @@
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
             </div>
 

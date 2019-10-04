@@ -9,12 +9,12 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <!-- 3: Main navigation-->
@@ -92,11 +92,9 @@
 
 {% block body %}
   <main class="container page-container">
-    <header class="page-header">
+    <section class="page-content">
       <h1 class="mt-6 mt-md-7">{{title}}</h1>
       <p class="font-lead">Brug en af de følgende funktioner, til at administrere børnetilskud:</p>
-    </header>
-    <section class="page-content">
       <p class="h3 mb-0">Beskeder</p>
       <p class="mt-0"><a href="/pages/eksempler/boernetilskud/boernetilskud-1">Læs beskeder omkring dine aktive sager</a></p>
       <p class="h3 mb-0">Udbetalinger</p>

@@ -5,9 +5,8 @@
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
 
 <div class="container">
+    <h1 class="h2">Dine kontaktoplysninger</h1>
     <form>
-    <fieldset>
-        <legend><h1 class="h2">Dine kontaktoplysninger</h1></legend>
         {{textinput("fnavn", "Fornavn", false, "", false, "fnavn", "", false, false)}}
         {{textinput("enavn", "Efternavn", false, "", false, "enavn", "", false, false)}}
         {{textinput("email", "E-mail adresse", false, "", false, "email", "", false, false)}}
@@ -15,7 +14,7 @@
 
         <div class="form-group">
             <fieldset>
-                <legend><h2 class="h4">Hvordan vil du helst kontaktes?</h2></legend>
+                <legend class="h4">Hvordan vil du helst kontaktes?</legend>
                 <ul class="nobullet-list">
                   <li>
                     {{ radiobutton("kontakt-telefon", "kontakt", "kontakt-telefon", false, false, "Pr. telefon", "", "", true) }}
@@ -28,7 +27,7 @@
         </div>
         <div class="form-group">
             <fieldset>
-                <legend><h2 class="h4">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</h2></legend>
+                <legend class="h4">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</legend>
                 <ul class="nobullet-list">
                   <li>
                     {{ checkbox("morgen", "tidspunkt[]", "morgen", false, false, "Om morgenen", "", "", true, "", "", "", "", "false") }}
@@ -47,12 +46,12 @@
         </div>
         <div class="form-group">
             <fieldset>
-                <legend><h2 class="h4">Personlige oplysninger</h2></legend>
+                <legend class="h4">Personlige oplysninger</legend>
                 {{datoinput("Indsendelsesfrist", "For eksempel: 05 12 2018", "Dag", "Måned", "År")}}
 
                 <div class="form-group">
                     <fieldset>
-                        <legend><h3 class="h5">Bor du i Odense?</h3></legend>
+                        <legend class="h5">Bor du i Odense?</legend>
                         <ul class="nobullet-list">
                           <li>
                             {{ radiobutton("odense-ja", "odense", "odense-ja", false, false, "Ja", "", "", true) }}
@@ -66,6 +65,5 @@
             </fieldset>
         </div>
         {{ button("Gem oplysninger", "primary mt-9") }}
-    </fieldset>
   </form>
 </div>

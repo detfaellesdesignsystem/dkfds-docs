@@ -9,12 +9,12 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -100,16 +100,13 @@
         </ul>
         "
     ) }}
-
-    <fieldset>
-        <legend><h1>Oplysninger om skadelidte</h1></legend>
-        <div class="form-group search">
-          <label for="iid-cpr" class="sr-only">Skadelidtes CPR-nr.</label>
-          <input class="form-input input-width-xs" id="id-cpr" name="" title="Search" type="search">
-          <button class="button button-search">{{ icon_svg('magnify', 'm-0')}}<span class="sr-only">Søg</span></button>
-        </div>
-        {{textinput("navn", "Navn", "", "input-width-m", "", "navn", "", false, "", "", "", "Susanne Maria Zaggariasen", "", "", true)}}
-    </fieldset>
+    <h1>Oplysninger om skadelidte</h1>
+    <div class="form-group search">
+      <label for="id-cpr" class="sr-only">Skadelidtes CPR-nr.</label>
+      <input class="form-input input-width-xs" id="id-cpr" title="Search" type="search">
+      <button class="button button-search">{{ icon_svg('magnify', 'm-0')}}<span class="sr-only">Søg</span></button>
+    </div>
+    {{textinput("navn", "Navn", "", "input-width-m", "", "navn", "", false, "", "", "", "Susanne Maria Zaggariasen", "", "", true)}}
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-4" class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-2" class="button button-quaternary"><svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#menu-left"></use></svg>Tilbage</a>

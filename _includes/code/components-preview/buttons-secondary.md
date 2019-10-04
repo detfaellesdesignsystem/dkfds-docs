@@ -13,7 +13,6 @@ title: Buttons-secondary.html
 
     <button class="button button-secondary focus"> Focus </button>
 
-    <button class="button button-secondary" disabled tab-index="-1"
-        aria-disabled="true"> Disabled </button>
+    <button class="button button-secondary" disabled> Disabled </button>
 
 </div>

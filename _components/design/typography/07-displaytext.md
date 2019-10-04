@@ -16,7 +16,6 @@ order: 07
     Retningslinjer
   </button>
   <div id="typodisplay-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>   
         <h3 class="h4">Anvendes til</h3>
         <ul>
@@ -31,6 +30,5 @@ order: 07
         <h3 class="h4">Vejledning</h3>
         <p>Brug kun stor tekst i meget begrænset omfang og til nøje udvalgte kommunikative formål.</p>
       </section>
-    </article>
   </div>
 </div>

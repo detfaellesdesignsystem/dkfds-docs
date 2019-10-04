@@ -20,7 +20,7 @@
       {
         "text": "Disabled",
         "class": "primary",
-        "attribute": "disabled tab-index=\"-1\" aria-disabled=\"true\""
+        "attribute": "disabled"
       }
     ]
   }

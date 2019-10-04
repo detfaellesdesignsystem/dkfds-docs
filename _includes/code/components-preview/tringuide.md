@@ -172,7 +172,7 @@ title: Tringuide.html
             <ul class="sidenav-list sidenav-list-locked">
 
                 <li class="disabled  ">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                    <a tabindex="-1" aria-disabled="true">
                         1. Trin 1
 
                         <span class="sidenav-icon">
@@ -183,7 +183,7 @@ title: Tringuide.html
                 </li>
 
                 <li class="disabled  ">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                    <a tabindex="-1" aria-disabled="true">
                         2. Trin 2
 
                         <span class="sidenav-icon">
@@ -194,7 +194,7 @@ title: Tringuide.html
                 </li>
 
                 <li class="disabled active current ">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                    <a tabindex="-1" aria-disabled="true">
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
@@ -205,14 +205,14 @@ title: Tringuide.html
                 </li>
 
                 <li class="disabled  ">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                    <a tabindex="-1" aria-disabled="true">
                         4. Trin 4
 
                     </a>
                 </li>
 
                 <li class="disabled  ">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                    <a tabindex="-1" aria-disabled="true">
                         5. Trin 5
 
                     </a>

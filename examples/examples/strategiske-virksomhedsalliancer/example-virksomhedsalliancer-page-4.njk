@@ -14,11 +14,11 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -79,12 +79,12 @@
                            </a>
                        </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                5. Opsummering
                             </a>
                         </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                 6. Kvittering
                             </a>
                         </li>
@@ -113,8 +113,8 @@
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                             <form class="form">
                                                 <div class="form-group file-input">
-                                                    <label class="form-label" for="file">Tilføj dokument</label>
-                                                    <input type="file" id="file" name="file">
+                                                    <label class="form-label" for="input-file">Tilføj dokument</label>
+                                                    <input type="file" id="input-file" name="file">
                                                 </div>
                                             </form>
                                             <table class="table table--borderless table--compact table--responsive-headers mt-6">

@@ -3,7 +3,7 @@ permalink: /preview-components/example-praktikplads-page-4.html
 layout: iframed 
 title: Example-praktikplads-page-4.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
@@ -54,7 +54,7 @@ title: Example-praktikplads-page-4.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"

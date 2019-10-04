@@ -25,7 +25,7 @@
       {
         "text": "Disabled",
         "class": "quaternary",
-        "attribute": "disabled tab-index=\"-1\" aria-disabled=\"true\"",
+        "attribute": "disabled",
         "icon": "menu-left"
       }
     ]

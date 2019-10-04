@@ -66,7 +66,6 @@ subnav:
     Implementering
   </button>
   <div id="buttons-docs" aria-hidden="true" class="accordion-content">
-    <section>
       <p>Knap styling kan både sættes på &lt;button&gt; og &lt;a&gt; tags ved at tilføje følgende klasser:</p>
       <ul>
         <li><code>button button-primary</code></li>
@@ -75,7 +74,6 @@ subnav:
         <li><code>button button-quaternary</code></li>
         <li><code>button button-unstyled</code></li>
       </ul>
-    </section>
   </div>
 </div>
 

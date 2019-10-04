@@ -3,12 +3,12 @@ permalink: /preview-components/example-aes-page-9.html
 layout: iframed 
 title: Example-aes-page-9.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
@@ -56,7 +56,7 @@ title: Example-aes-page-9.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -407,7 +407,7 @@ title: Example-aes-page-9.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -431,8 +431,7 @@ title: Example-aes-page-9.html
                 </h1>
             </div>
             <div class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -453,13 +452,13 @@ title: Example-aes-page-9.html
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
             </div>
 

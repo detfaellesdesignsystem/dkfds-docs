@@ -13,7 +13,6 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
     Implementering
   </button>
   <div id="date-input-tech" aria-hidden="true" class="accordion-content">
-    <section>
          <ul>
           <li>Dato-komponenten består af 2 dele: 3 input-felter og en datepicker.</li>
           <li>Attributten <code>data-input-regex</code> håndteres af JavaScript via dkfds.js filen, som derfor bør importeres i projektet.
@@ -30,7 +29,6 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
           <li>Ved fejl, tilføj da en hjælpsom fejlbesked over felterne i elementet <code>&lt;span class="form-error-message" id="form-error-message-input-error" role="alert"&gt;</code>.</li> 
           <li>Tilføj klassen <code>form-error</code> på <code>form-group</code> <code>div</code> elementet, når der vises en fejlbesked.</li>
         </ul>
-    </section>
   </div>
 </div>
 <div class="accordion accordion-bordered">
@@ -39,7 +37,6 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
     Retningslinjer
   </button>
   <div id="date-input-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <p>Anvend ikke JavaScript til automatisk at flytte fokus fra felt til felt, da det gør det svært for tastatur-brugere at navigere i formularen.</p>          
@@ -62,6 +59,5 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
         <li><a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link">GovUK om fejlmeddelelser generelt<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
       </ul>
       </section>
-    </article>
   </div>
 </div>

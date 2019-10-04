@@ -5,7 +5,7 @@
         "name": "card2",
         "header": "Header",
         "subheader": "Understøttende tekst",
-        "cardcontent": "<!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --><div class='row bg-magenta p-6'><div class='col-12 col-sm-6 mb-6 mb-sm-0'><h2 class='h5'>2018</h2><img src='{{ site.baseurl }}/img/cards/card-illustration-22procent.svg' alt='22%' class='w-percent-60 w-percent-sm-40 w-percent-md-60' /><p class='mt-0'>Lorem ipsum dolor sit amet</p></div><div class='col-12 col-sm-6'><h2 class='h5'>2019</h2><img src='{{ site.baseurl }}/img/cards/card-illustration-41procent.svg' alt='41%' class='w-percent-60 w-percent-sm-40 w-percent-md-60' /><p class='mt-0'>Etiam aliquet at felis vel</p></div></div>",
+        "cardcontent": "<!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --><div class=\"row bg-magenta p-6\"><div class=\"col-12 col-sm-6 mb-6 mb-sm-0\"><h2 class=\"h5\">2018</h2><img src=\"{{ site.baseurl }}/img/cards/card-illustration-22procent.svg\" alt=\"22%\" class=\"w-percent-60 w-percent-sm-40 w-percent-md-60\" /><p class=\"mt-0\">Lorem ipsum dolor sit amet</p></div><div class=\"col-12 col-sm-6\"><h2 class=\"h5\">2019</h2><img src=\"{{ site.baseurl }}/img/cards/card-illustration-41procent.svg\" alt=\"41%\" class=\"w-percent-60 w-percent-sm-40 w-percent-md-60\" /><p class=\"mt-0\">Etiam aliquet at felis vel</p></div></div>",
         "cardtext": "Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til."
       }
     ]
@@ -16,7 +16,7 @@
         "name": "card3",
         "header": "Header",
         "subheader": "Understøttende tekst",
-        "cardcontent": "<!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --><div class='row bg-violet p-6'><div class='col-12 col-lg-6 mb-6 mb-sm-0 align-text-left d-sm-none d-lg-block'><img src='{{ site.baseurl }}/img/cards/card-illustration-talebobler.svg' aria-hidden='true' class='w-percent-100' /></div><div class='col-12 col-lg-6 align-text-left'><h2 class='h3 mb-0'>3 ofte stillede spørgsmål</h2><ul class='mt-0 noindent-list'><li>In viverra faucibus lorem?</li><li>Phasellus posuere neque?</li><li>Nullam quis nunc dui?</li></ul></div></div>",
+        "cardcontent": "<!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --><div class=\"row bg-violet p-6\"><div class=\"col-12 col-lg-6 mb-6 mb-sm-0 align-text-left d-sm-none d-lg-block\"><img src=\"{{ site.baseurl }}/img/cards/card-illustration-talebobler.svg\" alt=\"\" aria-hidden=\"true\" class=\"w-percent-100\" /></div><div class=\"col-12 col-lg-6 align-text-left\"><h2 class=\"h3 mb-0\">3 ofte stillede spørgsmål</h2><ul class=\"mt-0 noindent-list\"><li>In viverra faucibus lorem?</li><li>Phasellus posuere neque?</li><li>Nullam quis nunc dui?</li></ul></div></div>",
         "actionbuttons": "<button class=\"button button-secondary\">Sekundærknap</button> <button class=\"button button-tertiary\">Tertiærknap</button>",
         "actionlinks": "<ul class=\"nobullet-list\"><li><a href=\"javascript:void(0);\" class=\"default link state\">Et link til et sted i løsningen</a></li><li><a href=\"javascript:void(0);\" class=\"icon-link\">Et link til et sted uden for løsningen<svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\" tabindex=\"-1\"><use xlink:href=\"#open-in-new\"></use></svg></a></li></ul>"
       }

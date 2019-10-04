@@ -10,12 +10,12 @@
 {% from "components/form/controls/select.njk" import select as select %}
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -113,8 +113,8 @@
     <h1 id="tilfoej-documentation">Tilføj dokumentation for første undersøgelse af skaden</h1>
     <form class="form">
         <div class="form-group file-input">
-            <label class="form-label" for="file">Tilføj dokument</label>
-            <input type="file" id="file" name="file">
+            <label class="form-label" for="input-file">Tilføj dokument</label>
+            <input type="file" id="input-file" name="file">
         </div>
     </form>
     </div>
@@ -131,7 +131,7 @@
             <tr>
                 <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}}prn1023152_journal.pdf</td>
                 <td class="mt-4 mt-lg-0">
-                  {{select("Navngiv dokument", "select-dokumentationtype", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
+                  {{select("Navngiv dokument", "select-dokumentationtype", "Vælg dokumentationstype", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "Vælg type", "", "", "sr-only")}}</td>
                 <td class="mt-4 mt-lg-0">
                 {{textinput("id-pagenumber", "Angiv sidetal", "(frivilligt)", "input-width-xs", "", "Sidetal", "sr-only", false, "")}}
                 </td>

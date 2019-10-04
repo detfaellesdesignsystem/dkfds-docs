@@ -5,9 +5,7 @@ title: Radio-toggle-content.html
 ---
 <div class="container js-radio-toggle-group">
     <fieldset>
-        <legend>
-            <h2 class="h4">Vælg en radioknap</h2>
-        </legend>
+        <legend class="h4">Vælg en radioknap</legend>
         <ul class="nobullet-list">
             <li>
 

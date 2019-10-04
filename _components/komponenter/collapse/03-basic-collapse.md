@@ -13,7 +13,6 @@ lead:
     Implementering
   </button>
   <div id="collapse-tech" aria-hidden="true" class="accordion-content">
-    <section>
         <p>For at initialisere collapse funktionaliteten skal et HTML-element have klassen <code>.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
         <p>Dette HTML-element skal yderligere have følgende attributter:</p>
         <ul>
@@ -34,7 +33,6 @@ lead:
         <h3 class="h5">Events</h3>
         <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
         <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
-    </section>
   </div>
 </div>
 <div class="accordion accordion-bordered accordion-docs">
@@ -43,7 +41,6 @@ lead:
     Retningslinjer
   </button>
   <div id="collapse-docs" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
@@ -65,6 +62,5 @@ lead:
               <li>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje, at fordele det ud over flere sider i stedet.</li>
           </ul>
       </section>
-    </article>
   </div>
 </div> 

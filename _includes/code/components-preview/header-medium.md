@@ -3,7 +3,7 @@ permalink: /preview-components/header-medium.html
 layout: iframed 
 title: Header-medium.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
@@ -48,7 +48,7 @@ title: Header-medium.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-secondary button-menu-close js-menu-close"

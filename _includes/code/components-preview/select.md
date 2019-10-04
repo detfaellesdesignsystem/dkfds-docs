@@ -11,7 +11,7 @@ title: Select.html
             <label class="form-label " for="options">Dropdown label
                 (select)</label>
             <select class=" form-select" name="options" id="options">
-                <option value></option>
+                <option value>Vælg</option>
 
                 <option value="option1">Mulighed 1</option>
 

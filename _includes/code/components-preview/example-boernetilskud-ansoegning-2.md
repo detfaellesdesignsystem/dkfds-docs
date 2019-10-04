@@ -3,12 +3,12 @@ permalink: /preview-components/example-boernetilskud-ansoegning-2.html
 layout: iframed 
 title: Example-boernetilskud-ansoegning-2.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
@@ -53,7 +53,7 @@ title: Example-boernetilskud-ansoegning-2.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -223,40 +223,38 @@ title: Example-boernetilskud-ansoegning-2.html
 
             <div class="form-group ">
                 <fieldset>
-                    <legend><label class="form-label icon-link">Jeg blev
-                            eller bliver enlig:</label>
+                    <legend><label class="form-label">Jeg blev eller bliver
+                            enlig:</label>
                         <span class="form-hint"></span></legend>
-                    <span class="form-error-message"
-                        id="form-error-message-input-error"
-                        role="alert"></span>
+
                     <div class="date-group js-calendar-group mt-3">
                         <div class="form-group form-group-day">
                             <label class="form-label"
-                                for="date_of_day_2">Dato</label>
+                                for="date-day">Dato</label>
                             <input class="form-input js-calendar-day-input"
-                                id="date_of_day_2" value="" type="tel"
-                                min="1" max="31" maxlength="2"
+                                id="date-day" value="" type="tel" min="1"
+                                max="31" maxlength="2"
                                 pattern="^[0-9]{0,2}$"
                                 data-input-regex="^[0-9]{0,2}$"
                                 title="Indskriv dag på månenden som tal" />
                         </div>
                         <div class="form-group form-group-month">
                             <label class="form-label"
-                                for="date_of_month_1">Måned</label>
+                                for="date-month">Måned</label>
                             <input
                                 class="form-input js-calendar-month-input"
-                                id="date_of_month_1" value="" type="tel"
-                                min="1" max="12" maxlength="2"
+                                id="date-month" value="" type="tel" min="1"
+                                max="12" maxlength="2"
                                 pattern="^[0-9]{0,2}$"
                                 data-input-regex="^[0-9]{0,2}$"
                                 title="Indskriv månedens nummer" />
                         </div>
                         <div class="form-group form-group-year ">
                             <label class="form-label"
-                                for="date_of_year_3">År</label>
+                                for="date-year">År</label>
                             <input
                                 class="form-input js-calendar-year-input"
-                                id="date_of_year_3" value="" type="tel"
+                                id="date-year" value="" type="tel"
                                 min="1900" max="3000" maxlength="4"
                                 pattern="^[0-9]{0,4}$"
                                 data-input-regex="^[0-9]{0,4}$"
@@ -288,7 +286,7 @@ title: Example-boernetilskud-ansoegning-2.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>

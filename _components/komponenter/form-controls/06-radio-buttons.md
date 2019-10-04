@@ -13,7 +13,6 @@ lead:
     Retningslinjer
   </button>
   <div id="radio-docs" aria-hidden="false" class="accordion-content">
-   <article>
       <section>
         <h3 class="h4">Tilgængelighed</h3>
         <ul>
@@ -46,6 +45,5 @@ lead:
             <li>Vær forsigtig med at angive et standard valg, da det kan have en modsatrettet effekt: Brugeren kan føle sig manipuleret eller foretager ikke et bevidst valg.</li>
         </ul>
       </section>
-    </article>
   </div>
 </div>

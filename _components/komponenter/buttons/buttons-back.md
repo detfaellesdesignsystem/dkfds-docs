@@ -12,8 +12,6 @@ lead:
     Implementering
   </button>
   <div id="code-documentation" class="accordion-content">
-    <section>
       <p><code>button button-quaternary</code> bruges kun som Tilbage link - husk ikonet.</p>
-    </section>
   </div>
 </div>

@@ -3,12 +3,12 @@ permalink: /preview-components/example-flytning-page-3.html
 layout: iframed 
 title: Example-flytning-page-3.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
@@ -56,7 +56,7 @@ title: Example-flytning-page-3.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -162,39 +162,34 @@ title: Example-flytning-page-3.html
 
         <div class="form-group ">
             <fieldset>
-                <legend><label class="form-label icon-link">Dato for
-                        flytning</label>
+                <legend><label class="form-label">Dato for flytning</label>
                     <span class="form-hint">Fx. 28 04 1996</span></legend>
-                <span class="form-error-message"
-                    id="form-error-message-input-error"
-                    role="alert"></span>
+
                 <div class="date-group js-calendar-group mt-3">
                     <div class="form-group form-group-day">
                         <label class="form-label"
-                            for="date_of_day_2">Dato</label>
+                            for="date-day">Dato</label>
                         <input class="form-input js-calendar-day-input"
-                            id="date_of_day_2" value="" type="tel" min="1"
+                            id="date-day" value="" type="tel" min="1"
                             max="31" maxlength="2" pattern="^[0-9]{0,2}$"
                             data-input-regex="^[0-9]{0,2}$"
                             title="Indskriv dag på månenden som tal" />
                     </div>
                     <div class="form-group form-group-month">
                         <label class="form-label"
-                            for="date_of_month_1">Måned</label>
+                            for="date-month">Måned</label>
                         <input class="form-input js-calendar-month-input"
-                            id="date_of_month_1" value="" type="tel"
-                            min="1" max="12" maxlength="2"
-                            pattern="^[0-9]{0,2}$"
+                            id="date-month" value="" type="tel" min="1"
+                            max="12" maxlength="2" pattern="^[0-9]{0,2}$"
                             data-input-regex="^[0-9]{0,2}$"
                             title="Indskriv månedens nummer" />
                     </div>
                     <div class="form-group form-group-year ">
                         <label class="form-label"
-                            for="date_of_year_3">År</label>
+                            for="date-year">År</label>
                         <input class="form-input js-calendar-year-input"
-                            id="date_of_year_3" value="" type="tel"
-                            min="1900" max="3000" maxlength="4"
-                            pattern="^[0-9]{0,4}$"
+                            id="date-year" value="" type="tel" min="1900"
+                            max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
                             data-input-regex="^[0-9]{0,4}$"
                             title="Indskriv årstal" />
                     </div>
@@ -212,7 +207,9 @@ title: Example-flytning-page-3.html
                 vejnavn</label>
             <select class="input-width-m form-select" name="Gade / vejnavn"
                 id="select-street">
-                <option value>- Vælg -</option>
+                <option value>Vælg fra listen</option>
+
+                <option value="Byvej">Byvej</option>
 
             </select>
         </div>
@@ -227,7 +224,13 @@ title: Example-flytning-page-3.html
             <select class="input-width-xxs form-select"
                 name="Husnr. / bogstav" id="select-housenumber"
                 disabled="disabled">
-                <option value></option>
+                <option value>Vælg fra listen</option>
+
+                <option value="1">1</option>
+
+                <option value="2">2</option>
+
+                <option value="3">3</option>
 
             </select>
         </div>
@@ -242,7 +245,9 @@ title: Example-flytning-page-3.html
             <select class="input-width-xxs form-select"
                 name="Etage, side/dør" id="select-door"
                 disabled="disabled">
-                <option value></option>
+                <option value>Vælg fra listen</option>
+
+                <option value="1">1</option>
 
             </select>
         </div>
@@ -283,7 +288,7 @@ title: Example-flytning-page-3.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -307,8 +312,7 @@ title: Example-flytning-page-3.html
                 </h1>
             </div>
             <div class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -329,13 +333,13 @@ title: Example-flytning-page-3.html
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
             </div>
 

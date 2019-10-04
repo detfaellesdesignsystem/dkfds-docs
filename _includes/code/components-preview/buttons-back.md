@@ -21,8 +21,7 @@ title: Buttons-back.html
         <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#menu-left"></use></svg>
         Focus </button>
 
-    <button class="button button-quaternary" disabled tab-index="-1"
-        aria-disabled="true">
+    <button class="button button-quaternary" disabled>
         <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#menu-left"></use></svg>
         Disabled </button>
 

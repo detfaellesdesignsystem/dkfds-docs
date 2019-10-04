@@ -3,12 +3,12 @@ permalink: /preview-components/example-aes-page-2.html
 layout: iframed 
 title: Example-aes-page-2.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
@@ -57,7 +57,7 @@ title: Example-aes-page-2.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -161,39 +161,33 @@ title: Example-aes-page-2.html
         </div>
     </div>
 
-    <fieldset>
-        <legend>
-            <h1>Hvis AES har spørgsmål til sagen</h1>
-        </legend>
+    <h1>Hvis AES har spørgsmål til sagen</h1>
+
+    <div class="form-group">
+        <label class="form-label " for="id-company-contact">Virksomhedens
+            kontaktperson</label>
+
+        <input class="form-input  input-width-m "
+            placeholder="Svend Pedersen" id="id-company-contact" value=""
+            name="Input til virksomhedens kontaktperson" type="text"
+            readonly>
+    </div>
+
+    <button
+        class="button button-secondary mt-4 d-print-none"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#add"></use></svg>
+        Vælg en anden kontaktperson</button>
+    <div class="mt-5">
 
         <div class="form-group">
-            <label class="form-label "
-                for="id-company-contact">Virksomhedens
-                kontaktperson</label>
+            <label class="form-label " for="id-company-number">Telefonummer
+                til kontaktperson</label>
 
-            <input class="form-input  input-width-m "
-                placeholder="Svend Pedersen" id="id-company-contact"
-                value="" name="Input til virksomhedens kontaktperson"
-                type="text" readonly>
+            <input class="form-input  input-width-xs " placeholder=""
+                id="id-company-number" value=""
+                name="Telefonummer til kontaktperson" type="text">
         </div>
 
-        <button href="#"
-            class="button button-secondary mt-4 d-print-none"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#add"></use></svg>
-            Vælg en anden kontaktperson</button>
-        <div class="mt-5">
-
-            <div class="form-group">
-                <label class="form-label "
-                    for="id-company-number">Telefonummer til
-                    kontaktperson</label>
-
-                <input class="form-input  input-width-xs " placeholder=""
-                    id="id-company-number" value=""
-                    name="Telefonummer til kontaktperson" type="text">
-            </div>
-
-        </div>
-    </fieldset>
+    </div>
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-3"
             class="button button-primary">Næste</a>
@@ -214,7 +208,7 @@ title: Example-aes-page-2.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -238,8 +232,7 @@ title: Example-aes-page-2.html
                 </h1>
             </div>
             <div class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -260,13 +253,13 @@ title: Example-aes-page-2.html
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
             </div>
 

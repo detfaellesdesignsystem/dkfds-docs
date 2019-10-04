@@ -11,8 +11,7 @@ title: Footer-complex.html
                     class="col-12 col-sm-12 col-md-3 footer-col  d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links"
-                                aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4">Links</h1>
 
                             <ul class=" mt-0 mb-0 nobullet-list">
 
@@ -38,8 +37,7 @@ title: Footer-complex.html
                     class="col-12 col-sm-12 col-md-3 footer-col  d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links"
-                                aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4">Links</h1>
 
                             <ul class=" mt-0 mb-0 nobullet-list">
 
@@ -65,8 +63,7 @@ title: Footer-complex.html
                     class="col-12 col-sm-12 col-md-3 footer-col  d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links"
-                                aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4">Links</h1>
 
                             <ul class=" mt-0 mb-0 nobullet-list">
 
@@ -92,8 +89,7 @@ title: Footer-complex.html
                     class="col-12 col-sm-12 col-md-3 footer-col  d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links"
-                                aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4">Links</h1>
 
                             <ul class=" mt-0 mb-0 nobullet-list">
 
@@ -121,8 +117,9 @@ title: Footer-complex.html
 
                             <ul class=" mt-4 nobullet-list inline-list ">
 
-                                <li class=""><span
-                                        class="h5 weight-semibold">Digitaliseringsstyrelsen</span>
+                                <li class="">
+                                    <h1 class="h5 d-inline-block">
+                                        Digitaliseringsstyrelsen</h1>
                                 </li>
 
                                 <li class=""><a

@@ -13,12 +13,12 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -91,13 +91,13 @@
     {{datoinput("Dato for flytning", "Fx. 28 04 1996", "Dato", "Måned", "År")}}
   </div>
   <div class="mt-6">
-    {{select("Gade / vejnavn", "select-street", "Gade / vejnavn", "input-width-m", "- Vælg -", "", false)}}
+    {{select("Gade / vejnavn", "select-street", "Gade / vejnavn", "input-width-m", "Vælg fra listen", [{value: 'Byvej', text:'Byvej' }], false)}}
   </div>
   <div class="mt-6">
-    {{select("Husnr. / bogstav", "select-housenumber", "Husnr. / bogstav", "input-width-xxs", "", "", true)}}
+    {{select("Husnr. / bogstav", "select-housenumber", "Husnr. / bogstav", "input-width-xxs", "Vælg fra listen",  [{value: '1', text:'1'}, {value: '2', text:'2'}, {value: '3', text:'3'}], true)}}
   </div>
   <div class="mt-6">
-    {{select("Etage, side/dør", "select-door", "Etage, side/dør", "input-width-xxs", "", "", true)}}
+    {{select("Etage, side/dør", "select-door", "Etage, side/dør", "input-width-xxs", "Vælg fra listen", [{value: '1', text:'1'}], true)}}
   </div>
   <div class="mt-6">
     {{textinput("id-co", "C/O navn", "(frivilligt)", "input-width-m", false, "Input til C/O navn", "", false, false, "C/O navn skal kun udfyldes, hvis du skal bo til leje hos de nuværende beboere.", "")}}

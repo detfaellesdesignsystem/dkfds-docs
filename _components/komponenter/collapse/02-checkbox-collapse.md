@@ -13,7 +13,6 @@ lead:
     Implementering
   </button>
   <div id="checkbox-toggle-content-tech" aria-hidden="true" class="accordion-content">
-    <section>
         <p>For at initialisere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
         <ul>
           <li>Klassen <code>'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret. </li>
@@ -34,6 +33,5 @@ lead:
         <h3 class="h5">Events</h3>
         <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
         <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-    </section>
   </div>
 </div>

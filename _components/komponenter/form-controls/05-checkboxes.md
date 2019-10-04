@@ -14,7 +14,6 @@ lead:
     Retningslinjer
   </button>
   <div id="checkbox-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
@@ -47,6 +46,5 @@ lead:
               <li>Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er brugbar på touchskærme.</li>
           </ul>
       </section>
-    </article>
   </div>
 </div>

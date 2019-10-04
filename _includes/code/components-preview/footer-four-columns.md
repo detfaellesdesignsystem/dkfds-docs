@@ -10,9 +10,7 @@ title: Footer-four-columns.html
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Ansvarlig myndighed"
-                                aria-label="Ansvarlig myndighed">Ansvarlig
-                                myndighed</h1>
+                            <h1 class="h5 mb-4">Ansvarlig myndighed</h1>
 
                             <ul class=" unstyled-list">
 
@@ -36,8 +34,7 @@ title: Footer-four-columns.html
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Kontakt"
-                                aria-label="Kontakt">Kontakt</h1>
+                            <h1 class="h5 mb-4">Kontakt</h1>
 
                             <ul class=" mt-0 nobullet-list">
 
@@ -58,8 +55,7 @@ title: Footer-four-columns.html
                     class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4" title="Links"
-                                aria-label="Links">Links</h1>
+                            <h1 class="h5 mb-4">Links</h1>
 
                             <ul class=" mt-0 nobullet-list">
 
@@ -85,10 +81,8 @@ title: Footer-four-columns.html
                     class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h1 class="h5 mb-4"
-                                title="Webtilgængelighed og cookies"
-                                aria-label="Webtilgængelighed og cookies">
-                                Webtilgængelighed og cookies</h1>
+                            <h1 class="h5 mb-4">Webtilgængelighed og
+                                cookies</h1>
 
                             <ul class=" mt-0 nobullet-list">
 

@@ -9,8 +9,7 @@ title: Cards-same-height.html
             <div class="card card-align-height">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header">Header</p>
+                    <p class="h5 header-title">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -66,8 +65,7 @@ title: Cards-same-height.html
                 </div>
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header">Header</p>
+                    <p class="h5 header-title">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -88,8 +86,7 @@ title: Cards-same-height.html
             <div class="card card-align-height">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header">Header</p>
+                    <p class="h5 header-title">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 

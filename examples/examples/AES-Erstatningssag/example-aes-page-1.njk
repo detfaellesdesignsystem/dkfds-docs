@@ -10,12 +10,12 @@
 {% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -96,23 +96,20 @@
         </ul>
         "
     ) }}
-
-    <fieldset>
-        <legend><h1>Oplysninger om afsender</h1></legend>
-        {{textinput("virksomhed", "Virksomhed", "", "input-width-m", "", "virksomhed", "", false, "", "", "", "Forsikringens Forsikringsfirma", "", "", true)}}
-        <div class="form-group">
-            <fieldset>
-                <legend class="form-label">Afsender er</legend>
-                <ul class="nobullet-list">
-                    <li>{{radiobutton("id-afsender1", "afsender", "Advokat for forsikringsselskab", false, false, "Advokat for forsikringsselskab", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                    <li>{{radiobutton("id-afsender2", "afsender", "Advokat for skadelidte", false, false, "Advokat for skadelidte", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                    <li>{{radiobutton("id-afsender3", "afsender", "Forsikringsselskab", false, false, "Forsikringsselskab", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                    <li>{{radiobutton("id-afsender4", "afsender", "Erstatningsnævnet", false, false, "Erstatningsnævnet", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                    <li>{{radiobutton("id-afsender5", "afsender", "Anden", false, false, "Anden", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                </ul>
-            </fieldset>
-        </div>
-    </fieldset>
+    <h1>Oplysninger om afsender</h1>
+    {{textinput("virksomhed", "Virksomhed", "", "input-width-m", "", "virksomhed", "", false, "", "", "", "Forsikringens Forsikringsfirma", "", "", true)}}
+    <div class="form-group">
+        <fieldset>
+            <legend class="form-label">Afsender er</legend>
+            <ul class="nobullet-list">
+                <li>{{radiobutton("id-afsender1", "afsender", "Advokat for forsikringsselskab", false, false, "Advokat for forsikringsselskab", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
+                <li>{{radiobutton("id-afsender2", "afsender", "Advokat for skadelidte", false, false, "Advokat for skadelidte", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
+                <li>{{radiobutton("id-afsender3", "afsender", "Forsikringsselskab", false, false, "Forsikringsselskab", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
+                <li>{{radiobutton("id-afsender4", "afsender", "Erstatningsnævnet", false, false, "Erstatningsnævnet", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
+                <li>{{radiobutton("id-afsender5", "afsender", "Anden", false, false, "Anden", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
+            </ul>
+        </fieldset>
+    </div>
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-2" class="button button-primary">Næste</a>
     </nav>

@@ -4,43 +4,38 @@ layout: iframed
 title: Fieldset.html
 ---
 <div class="container">
+    <h1 class="h2">Dine kontaktoplysninger</h1>
     <form>
-        <fieldset>
-            <legend>
-                <h1 class="h2">Dine kontaktoplysninger</h1>
-            </legend>
 
-            <div class="form-group">
-                <label class="form-label " for="fnavn">Fornavn</label>
+        <div class="form-group">
+            <label class="form-label " for="fnavn">Fornavn</label>
 
-                <input class="form-input   " placeholder="" id="fnavn"
-                    value="" name="fnavn" type="text">
-            </div>
+            <input class="form-input   " placeholder="" id="fnavn" value=""
+                name="fnavn" type="text">
+        </div>
 
-            <div class="form-group">
-                <label class="form-label " for="enavn">Efternavn</label>
+        <div class="form-group">
+            <label class="form-label " for="enavn">Efternavn</label>
 
-                <input class="form-input   " placeholder="" id="enavn"
-                    value="" name="enavn" type="text">
-            </div>
+            <input class="form-input   " placeholder="" id="enavn" value=""
+                name="enavn" type="text">
+        </div>
 
-            <div class="form-group">
-                <label class="form-label " for="email">E-mail
-                    adresse</label>
+        <div class="form-group">
+            <label class="form-label " for="email">E-mail adresse</label>
 
-                <input class="form-input   " placeholder="" id="email"
-                    value="" name="email" type="text">
-            </div>
+            <input class="form-input   " placeholder="" id="email" value=""
+                name="email" type="text">
+        </div>
 
-            <div class="form-group">
-                <label class="form-label " for="telefon">Telefonnr.</label>
+        <div class="form-group">
+            <label class="form-label " for="telefon">Telefonnr.</label>
 
-                <input class="form-input   " placeholder="" id="telefon"
-                    value="" name="telefon" type="text">
-            </div>
+            <input class="form-input   " placeholder="" id="telefon"
+                value="" name="telefon" type="text">
+        </div>
 
-            <button class="button button-primary mt-9"> Gem oplysninger
-            </button>
-        </fieldset>
+        <button class="button button-primary mt-9"> Gem oplysninger
+        </button>
     </form>
 </div>

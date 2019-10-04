@@ -3,12 +3,12 @@ permalink: /preview-components/example-boernetilskud-oversigt-2.html
 layout: iframed 
 title: Example-boernetilskud-oversigt-2.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
@@ -53,7 +53,7 @@ title: Example-boernetilskud-oversigt-2.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -150,19 +150,16 @@ title: Example-boernetilskud-oversigt-2.html
 </header>
 
 <main class="container page-container">
-    <header class="page-header">
+    <section class="page-content">
         <h1 class="mt-6 mt-md-7">Oversigt</h1>
         <p class="font-lead">Brug en af de følgende funktioner, til at
             administrere børnetilskud:</p>
-    </header>
-    <section class="page-content">
         <div class="row">
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                 <div class="card card-align-height">
                     <div class="card-header">
-                        <p class="h5 header-title" title="Card header"
-                            aria-label="Card header">Beskeder</p>
+                        <p class="h5 header-title">Beskeder</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -188,8 +185,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6 mt-sm-0">
                 <div class="card card-align-height">
                     <div class="card-header">
-                        <p class="h5 header-title" title="Card header"
-                            aria-label="Card header">Udbetalinger</p>
+                        <p class="h5 header-title">Udbetalinger</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -215,8 +211,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6 mt-md-0">
                 <div class="card card-align-height">
                     <div class="card-header">
-                        <p class="h5 header-title" title="Card header"
-                            aria-label="Card header">Sager</p>
+                        <p class="h5 header-title">Sager</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -242,8 +237,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6">
                 <div class="card card-align-height">
                     <div class="card-header">
-                        <p class="h5 header-title" title="Card header"
-                            aria-label="Card header">Ansøgninger</p>
+                        <p class="h5 header-title">Ansøgninger</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -269,8 +263,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6">
                 <div class="card card-align-height">
                     <div class="card-header">
-                        <p class="h5 header-title" title="Card header"
-                            aria-label="Card header">Ændringer</p>
+                        <p class="h5 header-title">Ændringer</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -296,8 +289,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6">
                 <div class="card card-align-height">
                     <div class="card-header">
-                        <p class="h5 header-title" title="Card header"
-                            aria-label="Card header">Dokumentation</p>
+                        <p class="h5 header-title">Dokumentation</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -335,7 +327,7 @@ title: Example-boernetilskud-oversigt-2.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>

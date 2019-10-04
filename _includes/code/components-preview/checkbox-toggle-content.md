@@ -6,14 +6,12 @@ title: Checkbox-toggle-content.html
 <div class="container">
     <div class="form-group">
         <fieldset>
-            <legend>
-                <h2 class="h4">Vælg fra listen</h2>
-            </legend>
+            <legend class="h4">Vælg fra listen</legend>
             <ul class="nobullet-list">
                 <li>
 
-                    <input id="id-checkbox1" type="checkbox" name="Name"
-                        value="Value"
+                    <input id="id-checkbox1" type="checkbox"
+                        name="checkbox1" value="1"
                         class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                         data-js-target='#collapse-check1'
                         aria-controls='collapse-check1'
@@ -31,8 +29,8 @@ title: Checkbox-toggle-content.html
                 </li>
                 <li>
 
-                    <input id="id-checkbox2" type="checkbox" name="Name2"
-                        value="Value"
+                    <input id="id-checkbox2" type="checkbox"
+                        name="checkbox2" value="1"
                         class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                         checked data-js-target='#collapse-check2'
                         aria-controls='collapse-check2'
