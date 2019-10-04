@@ -23,7 +23,7 @@ subnav:
     <li>Løsningen skal <a href="/omdesignsystemet/visuelledesign/">tematiseres</a>, så den passer visuelt ind på portalen den skal vises på</li>
     <li>Der skal være en <a href="/komponenter/headers/">header</a>, der er bygget op som anvist i designsystemet</li>
     <li>Du skal anvende/efterligne <a href="/komigang/tiludviklere/">stylesheetet</a> som anvist i designsystemet</li>
-    <li><a href="/komponenter">Komponenter</a> og <a href="udvidelser">udvidelser</a> skal være anvendt som anvist i designsystemet</li>
+    <li><a href="/komponenter/">Komponenter</a> og <a href="/udvidelser/">udvidelser</a> skal være anvendt som anvist i designsystemet</li>
 </ul>
 <p>Det ANBEFALES desuden, at løsningen har en <a href="/komponenter/footers/">footer</a>, der er bygget som anvist i designsystemet.</p>
 <p><a href="/komigang/tildesignere/designtjekliste/">Designtjekliste</a></p>
