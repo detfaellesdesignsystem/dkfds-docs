@@ -4,6 +4,7 @@ parentlink: /komigang/tiludviklere/
 layout: styleguide
 title: Eksempler på implementering
 category: Kom_i_gang_category
+description: Eksempler på implementering af DKFDS i forskellige typer af projekter
 subcategory: Kom i gang
 alerts:
 - type: warning
