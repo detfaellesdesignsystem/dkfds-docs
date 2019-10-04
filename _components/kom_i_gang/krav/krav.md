@@ -6,6 +6,7 @@ layout: styleguide
 title: Krav til selvbetjeningsløsninger
 category: Kom_i_gang_category
 subcategory: Kom i gang
+description: Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler, skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem og integrationsproces.
 ---
 <p class="font-lead">Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler, skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem og integrationsproces.</p>
 <p><a href="/komigang/krav/borgerdk-virk">Når du skal på borger.dk og Virk - integrationsproces og designkrav</a></p>

@@ -4,6 +4,7 @@ layout: styleguide
 title: Om kravene
 category: Kom_i_gang_category
 subcategory: Kom i gang
+description: Information om eksterne krav, fælles aftalte krav og krav til digitale løsninger der skal på borger.dk og Virk.
 parentlink: /komigang/krav/
 ---
 <p><a href="https://arkitektur.digst.dk/faelles-krav-til-digitale-loesninger" class="icon-link">De fælles krav til digitale løsninger<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> består af tre forskellige typer af krav:</p>

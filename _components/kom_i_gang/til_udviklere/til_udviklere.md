@@ -11,8 +11,8 @@ description: Til udviklere, der skal gøre brug af Det Fælles Designsystem.
 
 <p>FDS er opdelt i to projekter:</p>
 <ul class="nobullet-list">
-    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components" target="_blank" class="icon-link">DKFDS Components (kernen som indeholder komponenterne)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" target="_blank" class="icon-link">DKFDS Plugins<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components" class="icon-link">DKFDS Components (kernen som indeholder komponenterne)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">DKFDS Plugins<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
 <h2>Installation</h2>
@@ -99,9 +99,9 @@ import * as DKFDS from "dkfds";
 <p>Du skal kun inkludere styling (CSS eller SCSS) fra dkfds-plugins projektet.</p>
 <p>Der er i øjeblikket lavet temaer til følgende:</p>
 <ul class="nobullet-list">
-    <li><a href="https://datatables.net/" class="icon-link" target="_blank">Datatables<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/woocommerce/selectWoo" target="_blank" class="icon-link">SelectWoo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/Pikaday/Pikaday" target="_blank" class="icon-link">Pikaday<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://datatables.net/" class="icon-link">Datatables<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://github.com/woocommerce/selectWoo" class="icon-link">SelectWoo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://github.com/Pikaday/Pikaday" class="icon-link">Pikaday<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
 <p>dkfds-plugins projektet er tilgængeligt via npm og du kan installere det ved at skrive følgende i en kommando-prompt:</p>

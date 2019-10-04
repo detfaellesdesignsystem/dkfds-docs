@@ -5,6 +5,7 @@ title: Når du skal på borger.dk og Virk
 category: Kom_i_gang_category
 subcategory: Kom i gang
 parentlink: /komigang/krav/
+description: Din selvbetjeningsløsningen opfylder kravene til integration og design, når du har fulgt portalernes integrationsproces og anvendt det Fælles Designsystem som anvist.
 anchor: true
 subnav:
 - text: Design til borger.dk og Virk
