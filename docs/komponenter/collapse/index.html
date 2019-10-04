@@ -1818,9 +1818,7 @@
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container js-radio-toggle-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;legend&gt;</span>
-            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg en radioknap<span class="nt">&lt;/h2&gt;</span>
-        <span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg en radioknap<span class="nt">&lt;/legend&gt;</span>
         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
 
@@ -1891,7 +1889,6 @@
     Implementering
   </button>
   <div id="radio-toggle-content-tech" aria-hidden="true" class="accordion-content">
-    <section>
         <p>For at initialisere collapse funktionaliteten på en radioknap skal <code>input[type=radio]</code> have følgende:</p>
         <ul>
           <li>Attributten <code>name</code>: alle radioknapper I en gruppe skal have samme værdi i 'name'-attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
@@ -1914,7 +1911,6 @@
         <h3 class="h5">Events</h3>
         <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
         <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-    </section>
   </div>
 </div>
 <div class="accordion accordion-bordered accordion-docs">
@@ -1922,7 +1918,6 @@
     Retningslinjer
   </button>
   <div id="checkbox-toggle-content-docs" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
@@ -1940,7 +1935,6 @@
           <h4 class="h5">Vejledning</h4>                
           <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
       </section>
-    </article>
   </div>
 </div>
 
@@ -1966,14 +1960,12 @@
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;fieldset&gt;</span>
-            <span class="nt">&lt;legend&gt;</span>
-                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg fra listen<span class="nt">&lt;/h2&gt;</span>
-            <span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg fra listen<span class="nt">&lt;/legend&gt;</span>
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;li&gt;</span>
 
-                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox1"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name"</span>
-                        <span class="na">value=</span><span class="s">"Value"</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox1"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                        <span class="na">name=</span><span class="s">"checkbox1"</span> <span class="na">value=</span><span class="s">"1"</span>
                         <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large js-checkbox-toggle-content"</span>
                         <span class="na">data-js-target=</span><span class="s">'#collapse-check1'</span>
                         <span class="na">aria-controls=</span><span class="s">'collapse-check1'</span>
@@ -1991,8 +1983,8 @@
                 <span class="nt">&lt;/li&gt;</span>
                 <span class="nt">&lt;li&gt;</span>
 
-                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox2"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name2"</span>
-                        <span class="na">value=</span><span class="s">"Value"</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox2"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                        <span class="na">name=</span><span class="s">"checkbox2"</span> <span class="na">value=</span><span class="s">"1"</span>
                         <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large js-checkbox-toggle-content"</span>
                         <span class="na">checked</span> <span class="na">data-js-target=</span><span class="s">'#collapse-check2'</span>
                         <span class="na">aria-controls=</span><span class="s">'collapse-check2'</span>
@@ -2024,7 +2016,6 @@
     Implementering
   </button>
   <div id="checkbox-toggle-content-tech" aria-hidden="true" class="accordion-content">
-    <section>
         <p>For at initialisere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
         <ul>
           <li>Klassen <code>'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret. </li>
@@ -2045,7 +2036,6 @@
         <h3 class="h5">Events</h3>
         <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
         <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-    </section>
   </div>
 </div>
 
@@ -2093,7 +2083,6 @@
     Implementering
   </button>
   <div id="collapse-tech" aria-hidden="true" class="accordion-content">
-    <section>
         <p>For at initialisere collapse funktionaliteten skal et HTML-element have klassen <code>.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
         <p>Dette HTML-element skal yderligere have følgende attributter:</p>
         <ul>
@@ -2114,7 +2103,6 @@
         <h3 class="h5">Events</h3>
         <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
         <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
-    </section>
   </div>
 </div>
 <div class="accordion accordion-bordered accordion-docs">
@@ -2122,7 +2110,6 @@
     Retningslinjer
   </button>
   <div id="collapse-docs" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
@@ -2144,7 +2131,6 @@
               <li>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje, at fordele det ud over flere sider i stedet.</li>
           </ul>
       </section>
-    </article>
   </div>
 </div>
 
