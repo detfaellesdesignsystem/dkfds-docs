@@ -4,8 +4,7 @@ layout: styleguide
 title: FDS-teamet
 category: Om_designsystemet_category
 subcategory: Om designsystemet
-description: Styregruppen er sammensat af ledelsesrepræsentanter fra Digitaliseringsstyrelsen og Erhvervsstyrelsen. Styregruppen bliver betjent af FDS-teamet.
-lead:
+description: "FDS teamet varetager to primære funktioner: Løbende drift og udvikling og Sekretariatsbetjening af styregruppen og samarbejdsforummet."
 ---
 <p class="font-lead mb-0">FDS-teamet varetager to primære funktioner:</p>
 <ul class="font-lead mt-0">

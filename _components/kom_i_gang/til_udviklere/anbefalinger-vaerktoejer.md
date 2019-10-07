@@ -36,7 +36,7 @@ subnav:
     <li>Tænk modulært, dvs. lav en struktur af de elementer, du har brug for, og brug kun dem.</li>
     <li>Gennemgå altid koden med en kollega for at sikre, at din kode er brugbar.</li>
     <li>Brug formaliserede testmetoder, så du tester koden metodisk og i samme omfang hver gang.</li>
-    <li>Anvend WhatWG til HTML reference og W3C til CSS reference og til at sikre kodens validitet gennem <a href="https://checker.html5.org/" class="icon-link">Nu Html Checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://jigsaw.w3.org/css-validator/" class="icon-link">CSS Validation Service<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+    <li>Anvend WhatWG til HTML reference og W3C til CSS reference og til at sikre kodens validitet gennem <a href="https://checker.html5.org" class="icon-link">Nu Html Checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://jigsaw.w3.org/css-validator/" class="icon-link">CSS Validation Service<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
     <li>Undgå unødigt kompliceret funktionalitet.</li>
     <li>Indlæs kun biblioteker (fx jQuery), hvis du skal bruge dem.</li>
     <li>Anvend eksempelkoden i designsystemet som reference for den aktuelle løsning.</li>
@@ -191,7 +191,6 @@ subnav:
 <p>Du kan med fordel anvende et værktøj som fx Minifier til at minimere "spild" i JS og CSS filer, så de fylder mindst muligt. Du kan typisk finde lignende funktioner som udvidelse til værktøjer til redigering af kode. </p>
 <h4 class="h5">Læs mere om Minifier</h4>
 <ul class="nobullet-list">
-    <li><a href="https://www.keycdn.com/support/how-to-minify-css-js-and-html" class="icon-link">How to minify<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="https://www.minifier.org/" class="icon-link">Minifier<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 <h3>Kritiske vej (Critical path)</h3>
@@ -221,7 +220,7 @@ subnav:
 <p>Især i SPA (Single Page Applications) løsninger giver dette koncept dog mening, da brugeren kun skal hente den ene side – med mindre det er en løsning, hvor brugeren ofte skal vende tilbage gentagne gange.</p>
 <h4 class="h5">Læs mere om Critical Path CSS</h4>
 <ul class="nobullet-list">
-    <li><a href="https://medium.freecodecamp.org/an-introduction-to-web-performance-and-the-critical-rendering-path-ce1fb5029494" class="icon-link">An introduction to web performance and the critical rendering path<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://www.freecodecamp.org/news/an-introduction-to-web-performance-and-the-critical-rendering-path-ce1fb5029494/" class="icon-link">An introduction to web performance and the critical rendering path<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="https://medium.com/@luisvieira_gmr/understanding-the-critical-rendering-path-rendering-pages-in-1-second-735c6e45b47a" class="icon-link">Understanding the critical rendering path<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="https://varvy.com/pagespeed/critical-render-path.html" class="icon-link">Critical render path<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/page-speed-rules-and-recommendations" class="icon-link">Page speed rules and recommendations<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>

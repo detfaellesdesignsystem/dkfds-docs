@@ -4,7 +4,7 @@ layout: styleguide
 title: Til designere
 category: Kom_i_gang_category
 subcategory: Kom i gang
-description: Til produktejere og projektledere, der skal, eller er interesseret i at gøre brug af Det Fælles Designsystem i deres projekt.
+description: Information om Det Fælles Designsystem, der retter sig mod designere
 ---
 
 <p class="font-lead">Ved at følge designsystemet er du med til at skabe sammenhæng i og imellem de mange offentlige selvbetjeningsløsninger du ikke selv designer, til gavn for alle brugere.</p>

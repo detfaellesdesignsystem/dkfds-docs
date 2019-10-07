@@ -3,7 +3,7 @@ permalink: /komigang/
 layout: styleguide
 title: Kom i gang
 category: Kom_i_gang_category
-description: Det Fælles Designsystem er inspireret af og bygger på et fundament af international best practice.
+description: Information på hvordan man kommer igang med at bruge Det Fælles Designsystem
 lead: Det Fælles designsystem er en samling af kode og designretningslinjer, der hjælper dig med at bygge selvbetjeningsløsninger. Vi har taget hånd om det lavpraktiske så du kan koncentrere dig om dine brugeres rejse og oplevelse.
 ---
 
