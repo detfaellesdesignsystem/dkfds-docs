@@ -47,3 +47,6 @@ lead:
       </section>
   </div>
 </div>
+<h3>Radioknapper med fejlbesked</h3>
+{% include code/preview.html component="radiobutton-error" %}
+{% include code/accordion.html component="radiobutton-error" %}

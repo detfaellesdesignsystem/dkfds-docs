@@ -1,0 +1,51 @@
+{
+  "checkbox_examples": {
+    "items": [
+      {
+        "id": "car",
+        "name": "transport[]",
+        "value": "car",
+        "checked": false,
+        "disabled": false,
+        "text": "Bil",
+        "large": true
+      },
+      {
+        "id": "bus",
+        "name": "transport[]",
+        "value": "bus",
+        "checked": false,
+        "disabled": false,
+        "text": "Bus",
+        "large": true
+      },
+      {
+        "id": "train",
+        "name": "transport[]",
+        "value": "train",
+        "checked": false,
+        "disabled": false,
+        "text": "Tog",
+        "large": true
+      },
+      {
+        "id": "plane",
+        "name": "transport[]",
+        "value": "plane",
+        "checked": false,
+        "disabled": false,
+        "text": "Fly",
+        "large": true
+      },
+      {
+        "id": "ferry",
+        "name": "transport[]",
+        "value": "ferry",
+        "checked": false,
+        "disabled": false,
+        "text": "Færge",
+        "large": true
+      }
+    ]
+  }
+}

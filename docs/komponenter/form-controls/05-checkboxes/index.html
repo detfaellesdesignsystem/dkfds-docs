@@ -1531,6 +1531,86 @@
       </section>
   </div>
 </div>
+<h3>Tjekboks med fejlbesked</h3>
+
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/checkbox-error"></iframe>
+</div>
+<div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-checkbox-error">Kode</button>
+  <div id="code-checkbox-error" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Hvilken type af transport gør du brug af
+                regelmæssigt?<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Hjælpsom
+                fejlbesked<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"car"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"transport[]"</span>
+                        <span class="na">value=</span><span class="s">"car"</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"car"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Bil<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"bus"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"transport[]"</span>
+                        <span class="na">value=</span><span class="s">"bus"</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"bus"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Bus<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"train"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"transport[]"</span>
+                        <span class="na">value=</span><span class="s">"train"</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"train"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Tog<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"plane"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"transport[]"</span>
+                        <span class="na">value=</span><span class="s">"plane"</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"plane"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Fly<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"ferry"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"transport[]"</span>
+                        <span class="na">value=</span><span class="s">"ferry"</span>
+                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"ferry"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Færge<span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
 
 
       </section>

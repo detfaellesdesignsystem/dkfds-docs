@@ -1,0 +1,34 @@
+{
+  "radiobuttons_example_large": {
+    "items": [
+      {
+        "id": "weekly",
+        "name": "often-pay",
+        "value": "weekly",
+        "text": "Ugentligt",
+        "checked": false,
+        "disabled": false,
+        "large": true
+
+      },
+      {
+        "id": "fortnightly",
+        "name": "often-pay",
+        "value": "fortnightly",
+        "text": "Hver fjortende dag",
+        "checked": false,
+        "disabled": false,
+        "large": true
+      },
+      {
+        "id": "monthly",
+        "name": "often-pay",
+        "value": "monthly",
+        "text": "Månedligt",
+        "checked": false,
+        "disabled": false,
+        "large": true
+      }
+    ]
+  }
+}

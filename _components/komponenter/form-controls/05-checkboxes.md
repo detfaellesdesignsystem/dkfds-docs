@@ -48,3 +48,6 @@ lead:
       </section>
   </div>
 </div>
+<h3>Tjekboks med fejlbesked</h3>
+{% include code/preview.html component="checkbox-error" %}
+{% include code/accordion.html component="checkbox-error" %}
