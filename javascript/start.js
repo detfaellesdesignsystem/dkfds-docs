@@ -3,7 +3,7 @@ import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
 var iFrameResize = require('./vendor/iframeResizer');
 const TestFDS = require('./test');
-import {CookiePrompter, NetMinersTracker } from  "./vendor/CookiePrompter-2.0.7";
+import {CookiePrompter, NetMinersTracker, CookieMgr } from  "./vendor/CookiePrompter-2.0.7";
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
@@ -33,8 +33,20 @@ $(document).ready(function () {
         textReadMore: 'Læs om vores brug af cookies.'
     });
 
-    $('#noStatsCookies').click(function(){
-        CookiePrompter.eraseCookiesAndRemovePrompt();
+    if($('#statCookiesNo').length !== 0 && CookieMgr.readCookie('cookieOptOut') === "n"){
+        $('#statCookiesNo').prop("checked", true);
+    }
+
+    $('input#statCookiesYes').change(function() {
+        if ($(this).is(':checked')){
+            CookieMgr.createCookie('cookieOptOut', 'y', 1);
+        }
+    });
+
+    $('input#statCookiesNo').change(function() {
+        if ($(this).is(':checked')){
+            CookiePrompter.eraseCookiesAndRemovePrompt();
+        }
     });
 
     // Initialize The style switcher fill

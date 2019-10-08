@@ -78,10 +78,24 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 <p>Hvis du klikker dig videre til endnu en side, uden at vælge "Nej tak ...", sættes der cookies til at samle statistik, og banneret forsvinder. Oplysningerne er anonyme og bliver ikke koblet til dig som bruger.</p>
 
 <h3 class="h4">Stop med at samle statistik</h3>
-<p>Ønsker du ikke længere, at vi samler statistik om din brug af FDS, så kan du klikke nej tak til statistik nedenfor. Så vil dine besøg på FDS ikke blive registreret. Vi bruger en cookie for at huske dit nej til statistik.</p>
+<p>Ønsker du ikke længere, at vi samler statistik om din brug af FDS, så kan du vælge nej tak til at vi indsamler statistik nedenfor. Så vil dine besøg på FDS ikke blive registreret. Vi bruger en cookie for at huske dit nej til statistik.</p>
 
-<p>Når du klikker på Nej tak til statistik, bliver der ikke sat cookies fra Netminers.</p>
-<button id="noStatsCookies" class="button button-tertiary">Nej tak til statistik</button>
+<p>Når du klikker på Nej tak, bliver der ikke sat cookies fra Netminers.</p>
+<div class="form-group">
+    <fieldset>
+        <legend class="h5">Må vi indsamle statistik om din brug af FDS?</legend>
+        <ul class="nobullet-list">
+            <li>
+                <input id="statCookiesYes" type="radio" name="statCookies" value="1" class="form-radio  radio-large " checked />
+                <label for="statCookiesYes">Ja</label>
+            </li>
+            <li>
+                <input id="statCookiesNo" type="radio" name="statCookies" value="0" class="form-radio  radio-large " />
+                <label for="statCookiesNo">Nej tak</label>
+            </li>
+        </ul>
+    </fieldset>
+</div>
 
 <h3 class="h4">Cookies ved brugerundersøgelser</h3>
 <p>Når vi gennemfører brugerundersøgelser på FDS, anvender vi cookies, dels til at styre, hvor mange gange du som bruger ser invitationen til undersøgelsen, dels til at registrere, om du har svaret på undersøgelsen. På den måde sikrer vi, at du som bruger ikke ser invitationen til undersøgelsen igen, efter du har svaret.</p>
