@@ -1,7 +1,9 @@
 ---
-permalink: /privatlivspolitik/
+permalink: /privatlivspolitik-cookies/
+redirect_from:
+- /privatlivspolitik/
 layout: styleguide-nosidebar
-title: Privatlivspolitik og Cookies på Det Fælles Designsystem (FDS)
+title: Privatlivspolitik og cookies
 description: Privatlivspolitik og cookie information
 ---
 
