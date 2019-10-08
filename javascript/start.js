@@ -18,7 +18,8 @@ $(document).ready(function () {
         trackers: [{
             name: NetMinersTracker,
             config: {
-                scriptLocation: 'https://es.netminers.dk/script/383053B8-D66E-4E78-8B58-63F6A2DC54EE/'
+                scriptLocation: 'https://es.netminers.dk/script/383053B8-D66E-4E78-8B58-63F6A2DC54EE/',
+                netminersAccount: "es"
             }
         }],
         readMoreUrl: '/privatlivspolitik',
@@ -30,6 +31,10 @@ $(document).ready(function () {
         textNoThanks: 'Afvis',
         textblock2: '',
         textReadMore: 'Læs om vores brug af cookies.'
+    });
+
+    $('#noStatsCookies').click(function(){
+        CookiePrompter.eraseCookiesAndRemovePrompt();
     });
 
     // Initialize The style switcher fill
