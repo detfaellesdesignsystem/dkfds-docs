@@ -16,5 +16,5 @@ description: Når du skal have en selvbetjeningsløsning på borger.dk, Virk ell
 </ul>
 <p>Kravet om anvendelse af det Fælles Designsystem er en del af den den fællesoffentlige digitale arkitektur, der indeholder en række fælles krav til digitale løsninger, herunder “Krav til løsninger, der skal på borger.dk og Virk - Fælles krav til digitale løsninger: nr. 13”.</p>
 <ul class="nobullet-list">
-    <li><a href="https://arkitektur.digst.dk/faelles-krav-til-digitale-loesninger" class="icon-link">Fælles krav til digitale løsninger - Den fællesoffentlige digitale arkitektur<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://arkitektur.digst.dk/node/697" class="icon-link">Fælles krav til digitale løsninger - Den fællesoffentlige digitale arkitektur<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>

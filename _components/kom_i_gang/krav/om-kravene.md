@@ -7,7 +7,7 @@ subcategory: Kom i gang
 description: Information om eksterne krav, fælles aftalte krav og krav til digitale løsninger der skal på borger.dk og Virk.
 parentlink: /komigang/krav/
 ---
-<p><a href="https://arkitektur.digst.dk/faelles-krav-til-digitale-loesninger" class="icon-link">De fælles krav til digitale løsninger<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> består af tre forskellige typer af krav:</p>
+<p><a href="https://arkitektur.digst.dk/node/697" class="icon-link">De fælles krav til digitale løsninger<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> består af tre forskellige typer af krav:</p>
 <ul>
     <li>Eksterne krav: krav fra eksterne kilder som fc lovgivning og sikkerhedsstandarder.</li>
     <li>Fælles aftalte krav: krav, som de statslige myndigheder, KL og Danske Regioner har udarbejdet i fællesskab</li>
