@@ -454,29 +454,25 @@ var CookiePrompter = (function () {
             html.push('<div id="eksCookiePromptInner">');
         } else {
             html.push('<div id="eksCookiePrompt">');
-            html.push('<div id="eksCookiePromptInner" class="container"><div class="row">');
+            html.push('<div id="eksCookiePromptInner" class="container">');
         }
 
-        html.push('<div class="col-12 col-md-7">');
         if(config.textHeader !== '') {
             html.push('<strong>' + config.textHeader + '</strong>');
         }
-        html.push('<p>' + config.textblock1);
+        html.push('<p class="mt-0 mb-0">' + config.textblock1);
         if (config.readMoreUrl && document.location.hash !== '#cookieprompt') {
             html.push(' <a href="' + config.readMoreUrl + '#cookieprompt">' + config.textReadMore + '</a>');
         }
         html.push(config.textblock2 + '</p>');
-        html.push('</div>');
-        html.push('<div class="col-12 col-md-5 align-text-md-right">');
 
         if(config.showOKbutton){
-            html.push('<ul class="cpButtons unstyled-list mt-4 mb-4"><li class="d-inline-block"><a href="#" class="cpAcceptBtn function-link"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>'+config.textOKbutton+'</a></li>');
-            html.push('<li class="d-inline-block ml-8"><a href="#" id="eksCookieNo" class="function-link"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>' + config.textNoThanks + '</a></li></ul>');
+            html.push('<ul class="cpButtons unstyled-list mt-4"><li class="d-md-inline-block mb-4 mb-md-0"><a href="#" class="cpAcceptBtn button button-secondary">'+config.textOKbutton+'</a></li>');
+            html.push('<li class="d-md-inline-block ml-md-4"><a href="#" id="eksCookieNo" class="button button-tertiary">' + config.textNoThanks + '</a></li></ul>');
         }
         if(config.explicitAccept){
             html.push('<div class="cpButtons"><a href="#" class="cpAcceptBtn">'+config.textAccept+'</a><a href="#" class="cpDontAcceptBtn">'+config.textDontAccept+'</a></div>');
         }
-        html.push('</div></div>');
         html.push('</div></div>');
         var body = document.getElementsByTagName('body')[0];
         var block = document.createElement('div');

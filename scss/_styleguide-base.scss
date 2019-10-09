@@ -49,21 +49,18 @@
 
 // CookiePrompter -------------- //
 #eksCookiePrompt{
-  background-color: $color-black;
-  color: $color-white;
-  padding-top: map-get($spacers, 4);
-  padding-bottom: map-get($spacers, 4);
-  p, a:link, a:hover, a:visited, a:active {
-    color: $color-white;
-  }
-  .icon-svg{
-    fill: currentColor;
-  }
-  ul{
-    max-width: none;
-  }
+  background-color: $background-normal;
+  border-top: $outer-border;
+  color: $color-black;
+  padding-top: map-get($spacers, 6);
+  padding-bottom: map-get($spacers, 6);
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 9500;
   p{
-    max-width: none;
+
   }
 }
 

@@ -14,7 +14,7 @@ $(document).ready(function () {
         new TestFDS(DKFDS);
     }
 
-    CookiePrompter.init({
+    let cookiePrompt = CookiePrompter.init({
         trackers: [{
             name: NetMinersTracker,
             config: {
@@ -24,14 +24,23 @@ $(document).ready(function () {
         }],
         readMoreUrl: '/privatlivspolitik',
         showOKbutton: true,
-        textOKbutton: 'Accepter',
+        textOKbutton: 'Accepter cookies',
         enableLog: true,
         textHeader: '',
-        textblock1: 'Det Fælles Designsystem bruger cookies til at forbedre siden.',
-        textNoThanks: 'Afvis',
-        textblock2: '',
-        textReadMore: 'Læs om vores brug af cookies.'
+        textblock1: 'Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres. Ved at fortsætte accepterer du ',
+        textNoThanks: 'Nej tak til cookies',
+        textblock2: '.',
+        textReadMore: 'vores brug af cookies',
+        onReady: function(){
+            if($('#eksCookiePrompt').length !== 0){
+                $('body').addClass('hasCookiePrompt');
+            }
+        },
+        onOptOut: function(){
+            $('body').removeClass('hasCookiePrompt');
+        }
     });
+
 
     if($('#statCookiesNo').length !== 0 && CookieMgr.readCookie('cookieOptOut') === "n"){
         $('#statCookiesNo').prop("checked", true);
