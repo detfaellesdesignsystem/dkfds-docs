@@ -19,6 +19,9 @@ lead: Det Fælles Designsystem (FDS) er bygget op omkring en agil governancemode
     <li><a href="/omdesignsystemet/fds-teamet/">FDS-teamet</a> står for den daglige drift og videreudvikling af FDS.</li>
 </ul>
 <div>
-    <img src="{{ site.baseurl }}/img/descriptionimages/governancemodel-md.svg" class="w-percent-100 d-none d-md-block" alt="" />
-    <img src="{{ site.baseurl }}/img/descriptionimages/governancemodel-xs.svg" class="w-percent-100 d-block d-md-none" alt="" />
+    <figure>
+    <img src="{{ site.baseurl }}/img/descriptionimages/governancemodel-md.svg" class="w-percent-100 d-none d-md-block" alt="Governancemodel" />
+    <img src="{{ site.baseurl }}/img/descriptionimages/governancemodel-xs.svg" class="w-percent-100 d-block d-md-none" alt="Governancemodel" />
+    <figcaption>Billedet viser hvordan det Fælles Designsystem indgår i et større governance setup. Designsystemet understøttes og supporteres af et team, kaldet FDS team. Når de projekter, der anvender det Fælles Designsystem opdager en fejl, har ændringsønsker eller gerne ser noget tilføjet til systemet, så kan de melde det ind til FDS team via GitHub. FDS-teamet prioriterer opgaven ind i backloggen i forhold til den overordnede strategi og det gældende roadmap. Hvis de myndigheder, der anvender det Fælles Designsystem, har ønsker og behov som de gerne vil have FDS-teamet til at prioritere, kan de melde det ind via af Samarbejdsforum, hvor forummet laver en indstilling til Styregruppen, der vil behandle forespørgslen og enten afvise eller godkende det i henhold til den overordnede strategi. Godkender styregruppen Samarbejdsforums indstilling indsættes denne i roadmappet, der informerer FDS-teamets arbejde.</figcaption>
+    </figure>
 </div>
