@@ -34,12 +34,17 @@ $(document).ready(function () {
         onReady: function(){
             if($('#eksCookiePrompt').length !== 0){
                 $('body').addClass('hasCookiePrompt');
+                $('.cpAcceptBtn').click(function(){
+                    $('body').removeClass('hasCookiePrompt');
+                    console.log('hej');
+                });
             }
         },
         onOptOut: function(){
             $('body').removeClass('hasCookiePrompt');
         }
     });
+
 
 
     if($('#statCookiesNo').length !== 0 && CookieMgr.readCookie('cookieOptOut') === "n"){

@@ -59,8 +59,17 @@
   right: 0px;
   left: 0px;
   z-index: 9500;
-  p{
+}
 
+body.hasCookiePrompt footer .footer {
+  margin-bottom: calc(#{map-get($spacers, 3)} * 33);
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: calc(#{map-get($spacers, 3)} * 29);
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: calc(#{map-get($spacers, 3)} * 22);
   }
 }
 
