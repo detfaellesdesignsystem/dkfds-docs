@@ -9,6 +9,8 @@ import * as DKFDS from "dkfds";
 require('./sidenav');
 $(document).ready(function () {
 
+    DKFDS.init();
+
     let path = window.location.pathname;
     if(path.includes('mastertest')){
         new TestFDS(DKFDS);
@@ -25,7 +27,7 @@ $(document).ready(function () {
         readMoreUrl: '/privatlivspolitik',
         showOKbutton: true,
         textOKbutton: 'Accepter cookies',
-        enableLog: true,
+        enableLog: false,
         textHeader: '',
         textblock1: 'Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres. Ved at fortsætte accepterer du ',
         textNoThanks: 'Nej tak til cookies',
