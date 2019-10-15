@@ -395,7 +395,7 @@ var CookiePrompter = (function () {
     };
 
     var removePrompt = function () {
-        var el = document.getElementById("eksCookiePrompt");
+        var el = document.getElementById("cookiePrompt");
         if (el) {
             el.parentNode.removeChild(el);
         }
@@ -449,13 +449,11 @@ var CookiePrompter = (function () {
         removePrompt();
 
         var html = [];
-        if (config.styling.cssclass) {
-            html.push('<div class="' + config.styling.cssclass + '" id="eksCookiePrompt">');
-            html.push('<div id="eksCookiePromptInner">');
-        } else {
-            html.push('<div id="eksCookiePrompt">');
-            html.push('<div id="eksCookiePromptInner" class="container">');
-        }
+
+
+        html.push('<div class="container">');
+        html.push('<div class="card w-percent-md-50">');
+        html.push('<div class="card-text pt-6 pl-6 pr-6 pb-0">');
 
         if(config.textHeader !== '') {
             html.push('<strong>' + config.textHeader + '</strong>');
@@ -465,18 +463,21 @@ var CookiePrompter = (function () {
             html.push(' <a href="' + config.readMoreUrl + '#cookieprompt">' + config.textReadMore + '</a>');
         }
         html.push(config.textblock2 + '</p>');
+        html.push('</div>');
+        html.push('<div class="card-action pb-6 pl-6 pr-6">');
 
         if(config.showOKbutton){
-            html.push('<ul class="cpButtons unstyled-list mt-4"><li class="d-md-inline-block mb-4 mb-md-0"><a href="#" class="cpAcceptBtn button button-secondary">'+config.textOKbutton+'</a></li>');
+            html.push('<ul class="unstyled-list mt-4"><li class="d-md-inline-block mb-4 mb-md-0"><a href="#" class="cpAcceptBtn button button-secondary">'+config.textOKbutton+'</a></li>');
             html.push('<li class="d-md-inline-block ml-md-4"><a href="#" id="eksCookieNo" class="button button-tertiary">' + config.textNoThanks + '</a></li></ul>');
         }
         if(config.explicitAccept){
-            html.push('<div class="cpButtons"><a href="#" class="cpAcceptBtn">'+config.textAccept+'</a><a href="#" class="cpDontAcceptBtn">'+config.textDontAccept+'</a></div>');
+            html.push('<a href="#" class="cpAcceptBtn">'+config.textAccept+'</a><a href="#" class="cpDontAcceptBtn">'+config.textDontAccept+'</a>');
         }
-        html.push('</div></div>');
+        html.push('</div></div></div>');
         var body = document.getElementsByTagName('body')[0];
         var block = document.createElement('div');
-        block.className ='eksCookieContainer';
+        block.className ='mr-md-5 ml-md-5 mb-md-5 mb-4';
+        block.id ='cookiePrompt';
         block.innerHTML = html.join('');
         body.insertBefore(block, body.firstChild);
         var link = document.getElementById('eksCookieNo');

@@ -48,12 +48,8 @@
 }
 
 // CookiePrompter -------------- //
-#eksCookiePrompt{
-  background-color: $background-normal;
-  border-top: $outer-border;
+#cookiePrompt{
   color: $color-black;
-  padding-top: map-get($spacers, 6);
-  padding-bottom: map-get($spacers, 6);
   position: fixed;
   bottom: 0px;
   right: 0px;
