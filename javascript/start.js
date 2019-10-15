@@ -38,7 +38,6 @@ $(document).ready(function () {
                 $('body').addClass('hasCookiePrompt');
                 $('.cpAcceptBtn').click(function(){
                     $('body').removeClass('hasCookiePrompt');
-                    console.log('hej');
                 });
             }
         },
