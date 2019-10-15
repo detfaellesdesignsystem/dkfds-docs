@@ -3,19 +3,18 @@ permalink: /preview-components/tabnav.html
 layout: iframed 
 title: Tabnav.html
 ---
-<div class="container pb-8">
-    <p class="h4">Tab navigation</p>
+<div class="container">
 
     <ul class="tabnav">
 
         <li class="">
             <a href="#tab1" class="tabnav-item" aria-expanded="false">
-                <span>Tabnav 1</span>
+                <span>Fane 1</span>
 
             </a>
 
             <section class="tabnav-panel" aria-hidden="true" id="tab1">
-                <h2>Tabnav 1</h2>
+                <h2>Indhold 1</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus
                     hendrerit augue, ac lacinia nisl dolor et augue. Ut
                     lorem massa, consequat ut orci sit amet, maximus dictum
@@ -30,12 +29,12 @@ title: Tabnav.html
 
         <li class="active">
             <a href="#tab2" class="tabnav-item" aria-expanded="true">
-                <span>Tabnav 2</span>
+                <span>Fane 2</span>
                 <span class="sr-only">(valgt)</span>
             </a>
 
             <section class="tabnav-panel" aria-hidden="false" id="tab2">
-                <h2>Tabnav 2</h2>
+                <h2>Indhold 2</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus
                     hendrerit augue, ac lacinia nisl dolor et augue. Ut
                     lorem massa, consequat ut orci sit amet, maximus dictum
@@ -50,12 +49,12 @@ title: Tabnav.html
 
         <li class="">
             <a href="#tab3" class="tabnav-item" aria-expanded="false">
-                <span>Tabnav 3</span>
+                <span>Fane 3</span>
 
             </a>
 
             <section class="tabnav-panel" aria-hidden="true" id="tab3">
-                <h2>Tabnav 3</h2>
+                <h2>Indhold 3</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus
                     hendrerit augue, ac lacinia nisl dolor et augue. Ut
                     lorem massa, consequat ut orci sit amet, maximus dictum
@@ -70,12 +69,12 @@ title: Tabnav.html
 
         <li class="">
             <a href="#tab4" class="tabnav-item" aria-expanded="false">
-                <span>Tabnav 4</span>
+                <span>Fane 4</span>
 
             </a>
 
             <section class="tabnav-panel" aria-hidden="true" id="tab4">
-                <h2>Tabnav 4</h2>
+                <h2>Indhold 4</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus
                     hendrerit augue, ac lacinia nisl dolor et augue. Ut
                     lorem massa, consequat ut orci sit amet, maximus dictum
@@ -90,12 +89,12 @@ title: Tabnav.html
 
         <li class="">
             <a href="#tab5" class="tabnav-item" aria-expanded="false">
-                <span>Tabnav 5</span>
+                <span>Fane 5</span>
 
             </a>
 
             <section class="tabnav-panel" aria-hidden="true" id="tab5">
-                <h2>Tabnav 5</h2>
+                <h2>Indhold 5</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus
                     hendrerit augue, ac lacinia nisl dolor et augue. Ut
                     lorem massa, consequat ut orci sit amet, maximus dictum
@@ -110,12 +109,12 @@ title: Tabnav.html
 
         <li class="">
             <a href="#tab6" class="tabnav-item" aria-expanded="false">
-                <span>Tabnav 6</span>
+                <span>Fane 6</span>
 
             </a>
 
             <section class="tabnav-panel" aria-hidden="true" id="tab6">
-                <h2>Tabnav 6</h2>
+                <h2>Indhold 6</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus
                     hendrerit augue, ac lacinia nisl dolor et augue. Ut
                     lorem massa, consequat ut orci sit amet, maximus dictum
