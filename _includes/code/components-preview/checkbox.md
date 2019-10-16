@@ -126,8 +126,7 @@ title: Checkbox.html
     <!-- Example with error message -->
     <div class="form-group form-error">
         <fieldset>
-            <legend class="h5">Hvilken type af transport gør du brug af
-                regelmæssigt?</legend>
+            <legend class="h5">Tjekboks med fejl</legend>
             <span class="form-error-message" role="alert">Hjælpsom
                 fejlbesked</span>
             <ul class="nobullet-list">
