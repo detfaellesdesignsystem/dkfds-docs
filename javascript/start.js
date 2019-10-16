@@ -45,24 +45,48 @@ $(document).ready(function () {
             $('body').removeClass('hasCookiePrompt');
         }
     });
+    if($('#cookieForm').length !== 0) {
+        $('#cookieButtons').hide();
+        $('#cookieNoAlert').hide();
+        $('#cookieYesAlert').hide();
 
+        if (CookieMgr.readCookie('cookieOptOut') === "n") {
+            $('#statCookiesNo').prop("checked", true);
+            $('#originalValue').val('0');
+        }else{
+            $('#originalValue').val('1');
+        }
 
+        $('#cookieForm').submit(function (event) {
+            event.preventDefault();
+            var val = $('input[name=statCookies]:checked').val();
+            if (val === "1") {
+                CookieMgr.createCookie('cookieOptOut', 'y', 1);
+                $('#cookieYesAlert').show();
+            } else {
+                CookiePrompter.eraseCookiesAndRemovePrompt();
+                $('#cookieNoAlert').show();
+            }
 
-    if($('#statCookiesNo').length !== 0 && CookieMgr.readCookie('cookieOptOut') === "n"){
-        $('#statCookiesNo').prop("checked", true);
+            $('#cookieButtons').hide();
+        });
+
+        $('input[type=radio][name=statCookies]').change(function () {
+            $('#cookieButtons').show();
+            $('#cookieNoAlert').hide();
+            $('#cookieYesAlert').hide();
+        });
+
+        $('#cookieCancel').click(function(){
+            if($('#originalValue').val()){
+                $('#statCookiesYes').prop("checked", true);
+            } else{
+                $('#statCookiesNo').prop("checked", true);
+            }
+
+            $('#cookieButtons').hide();
+        });
     }
-
-    $('input#statCookiesYes').change(function() {
-        if ($(this).is(':checked')){
-            CookieMgr.createCookie('cookieOptOut', 'y', 1);
-        }
-    });
-
-    $('input#statCookiesNo').change(function() {
-        if ($(this).is(':checked')){
-            CookiePrompter.eraseCookiesAndRemovePrompt();
-        }
-    });
 
     // Initialize The style switcher fill
     $('.style-switcher').val(window.curStyle);

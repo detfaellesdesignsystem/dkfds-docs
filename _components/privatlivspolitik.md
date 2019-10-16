@@ -59,7 +59,7 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 
 <h3 class="h4">Hvad er en cookie?</h3>
 
-<p>En cookie er et lille stykke kode, der bliver gemt på din computer, telefon eller hvad du bruger til at surfe på internettet med. Cookies har mange anvendelsesmuligheder. 
+<p>En cookie er et lille stykke kode, der bliver gemt på din computer, telefon eller hvad du bruger til at surfe på internettet med. Cookies har mange anvendelsesmuligheder.</p> 
 
 <h3 class="h4">Formålet med cookies på FDS</h3>
 <p>På FDS bruges cookies primært til et formål:</p>
@@ -78,24 +78,42 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 <p>Hvis du klikker dig videre til endnu en side, uden at vælge "Nej tak ...", sættes der cookies til at samle statistik, og banneret forsvinder. Oplysningerne er anonyme og bliver ikke koblet til dig som bruger.</p>
 
 <h3 class="h4">Stop med at samle statistik</h3>
-<p>Ønsker du ikke længere, at vi samler statistik om din brug af FDS, så kan du vælge nej tak til at vi indsamler statistik nedenfor. Så vil dine besøg på FDS ikke blive registreret. Vi bruger en cookie for at huske dit nej til statistik.</p>
+<p>Ønsker du ikke længere, at vi samler statistik om din brug af FDS, så kan du vælge "nej" til at vi indsamler statistik nedenfor. Så vil dine besøg på FDS ikke blive registreret til forbedring af brugeroplevelsen. Vi bruger en cookie for at huske dit "nej" til statistik.</p>
 
-<p>Når du klikker på Nej tak, bliver der ikke sat cookies fra Netminers.</p>
-<div class="form-group">
-    <fieldset>
-        <legend class="h5">Må vi indsamle statistik om din brug af FDS?</legend>
-        <ul class="nobullet-list">
-            <li>
-                <input id="statCookiesYes" type="radio" name="statCookies" value="1" class="form-radio  radio-large " checked />
-                <label for="statCookiesYes">Ja</label>
-            </li>
-            <li>
-                <input id="statCookiesNo" type="radio" name="statCookies" value="0" class="form-radio  radio-large " />
-                <label for="statCookiesNo">Nej tak</label>
-            </li>
-        </ul>
-    </fieldset>
+<p>Når du klikker på "nej", bliver der ikke sat cookies fra Netminers.</p>
+<form id="cookieForm" method="post" action="/">
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Må vi indsamle statistik om din brug af FDS?</legend>
+            <ul class="nobullet-list">
+                <li>
+                    <input id="statCookiesYes" type="radio" name="statCookies" value="1" class="form-radio  radio-large " checked />
+                    <label for="statCookiesYes">Ja</label>
+                </li>
+                <li>
+                    <input id="statCookiesNo" type="radio" name="statCookies" value="0" class="form-radio  radio-large " />
+                    <label for="statCookiesNo">Nej</label>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+    <div id="cookieButtons" class="mt-6">
+        <input type="hidden" id="originalValue" value="" />
+        <button type="submit" class="button button-secondary" id="cookieSave">Gem</button>
+        <button type="button" class="button button-tertiary" id="cookieCancel">Annuller</button>
+    </div>
+</form>
+<div class="alert alert-success alert--show-icon" role="alert" id="cookieNoAlert">
+    <div class="alert-body">
+        <p class="alert-text">Ok, vi samler ikke længere anonymiseret statistik til forbedring af brugeroplevelsen</p>
+    </div>
 </div>
+<div class="alert alert-success alert--show-icon" role="alert" id="cookieYesAlert">
+    <div class="alert-body">
+        <p class="alert-text">Tak, vi samler nu anonymiseret statistik til forbedring af brugeroplevelsen</p>
+    </div>
+</div>
+
 
 <h3 class="h4">Cookies ved brugerundersøgelser</h3>
 <p>Når vi gennemfører brugerundersøgelser på FDS, anvender vi cookies, dels til at styre, hvor mange gange du som bruger ser invitationen til undersøgelsen, dels til at registrere, om du har svaret på undersøgelsen. På den måde sikrer vi, at du som bruger ikke ser invitationen til undersøgelsen igen, efter du har svaret.</p>
@@ -114,4 +132,3 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
     <li><a href="https://en.wikipedia.org/wiki/HTTP_cookie" class="icon-link">Læs om cookies<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="https://www.retsinformation.dk/Forms/R0710.aspx?id=139279" class="icon-link">Læs Cookiebekendtgørelse<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
-
