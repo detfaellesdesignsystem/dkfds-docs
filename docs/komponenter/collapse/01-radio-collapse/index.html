@@ -1406,22 +1406,27 @@
                 <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
                     <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span>
                     <span class="na">data-js-target=</span><span class="s">'#collapse-radio2'</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold med
+                    fejl <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
                         herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
                 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
                     <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
 
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
                             <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span>
                                 <span class="na">for=</span><span class="s">"textinput2"</span><span class="nt">&gt;</span>Inputfelt med
                                 label<span class="nt">&lt;/label&gt;</span>
 
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
+                                <span class="na">id=</span><span class="s">"form-error-message-textinput2"</span>
+                                <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Hjælpsom fejlbesked<span class="nt">&lt;/span&gt;</span>
                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
                                 <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"textinput2"</span> <span class="na">value=</span><span class="s">""</span>
-                                <span class="na">name=</span><span class="s">"text2"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                                <span class="na">name=</span><span class="s">"text2"</span> <span class="na">type=</span><span class="s">"text"</span>
+                                <span class="na">aria-describedby=</span><span class="s">"form-error-message-textinput2"</span>
+                                <span class="na">aria-describedby=</span><span class="s">"input-hint-message-textinput2"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;/div&gt;</span>
 
                     <span class="nt">&lt;/div&gt;</span>

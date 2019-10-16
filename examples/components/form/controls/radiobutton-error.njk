@@ -6,7 +6,7 @@
           <legend class="h5">Hvor ofte får du udbetalt løn?</legend>
             <span class="form-error-message" role="alert">Hjælpsom fejlbesked</span>
             <ul class="nobullet-list">
-              {% for item in radiobuttons_example_large.items %}
+              {% for item in radiobuttons_error_example.items %}
               <li>
                 {{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.attr, item.inputClasses, item.inputAttrs, item.formClasses, item.srOnly) }}
               </li>
