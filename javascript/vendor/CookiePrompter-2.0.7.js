@@ -452,7 +452,7 @@ var CookiePrompter = (function () {
 
 
         html.push('<div class="container">');
-        html.push('<div class="card w-percent-md-50">');
+        html.push('<div class="card w-percent-md-70 w-percent-lg-50">');
         html.push('<div class="card-text pt-6 pl-6 pr-6 pb-0">');
 
         if(config.textHeader !== '') {
