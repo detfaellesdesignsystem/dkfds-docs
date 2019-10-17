@@ -111,8 +111,8 @@ class TestFDS{
             "            </section>\n" +
             "        </li>\n" +
             "\n" +
-            "        <li>\n" +
-            "            <a href=\"#tab21\" class=\"active tabnav-item\"\n" +
+            "        <li class='active'>\n" +
+            "            <a href=\"#tab21\" class=\"tabnav-item\"\n" +
             "                aria-expanded=\"true\">\n" +
             "                <span>Tabnav 2</span>\n" +
             "                <span class=\"sr-only\">(valgt)</span>\n" +

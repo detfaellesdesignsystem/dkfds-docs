@@ -97,18 +97,18 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
             </ul>
         </fieldset>
     </div>
-    <div id="cookieButtons" class="mt-6">
+    <div id="cookieButtons" class="mt-6 d-none">
         <input type="hidden" id="originalValue" value="" />
         <button type="submit" class="button button-secondary" id="cookieSave">Gem</button>
         <button type="button" class="button button-tertiary" id="cookieCancel">Annuller</button>
     </div>
 </form>
-<div class="alert alert-success alert--show-icon alert--paragraph" role="alert" id="cookieNoAlert">
+<div class="alert alert-success alert--show-icon alert--paragraph d-none" role="alert" id="cookieNoAlert">
     <div class="alert-body">
         <p class="alert-text">Ok, vi samler ikke længere anonymiseret statistik til forbedring af brugeroplevelsen</p>
     </div>
 </div>
-<div class="alert alert-success alert--show-icon alert--paragraph" role="alert" id="cookieYesAlert">
+<div class="alert alert-success alert--show-icon alert--paragraph d-none" role="alert" id="cookieYesAlert">
     <div class="alert-body">
         <p class="alert-text">Tak, vi samler nu anonymiseret statistik til forbedring af brugeroplevelsen</p>
     </div>

@@ -46,9 +46,6 @@ $(document).ready(function () {
         }
     });
     if($('#cookieForm').length !== 0) {
-        $('#cookieButtons').hide();
-        $('#cookieNoAlert').hide();
-        $('#cookieYesAlert').hide();
 
         if (CookieMgr.readCookie('cookieOptOut') === "n") {
             $('#statCookiesNo').prop("checked", true);
@@ -62,29 +59,31 @@ $(document).ready(function () {
             var val = $('input[name=statCookies]:checked').val();
             if (val === "1") {
                 CookieMgr.createCookie('cookieOptOut', 'y', 1);
-                $('#cookieYesAlert').show();
+                $('#cookieYesAlert').removeClass('d-none');
+                $('#originalValue').val('1');
             } else {
                 CookiePrompter.eraseCookiesAndRemovePrompt();
-                $('#cookieNoAlert').show();
+                $('#cookieNoAlert').removeClass('d-none');
+                $('#originalValue').val('0');
             }
 
-            $('#cookieButtons').hide();
+            $('#cookieButtons').addClass('d-none');
         });
 
         $('input[type=radio][name=statCookies]').change(function () {
-            $('#cookieButtons').show();
-            $('#cookieNoAlert').hide();
-            $('#cookieYesAlert').hide();
+            $('#cookieButtons').removeClass('d-none');
+            $('#cookieNoAlert').addClass('d-none');
+            $('#cookieYesAlert').addClass('d-none');
         });
 
         $('#cookieCancel').click(function(){
-            if($('#originalValue').val()){
+            if($('#originalValue').val() === "1"){
                 $('#statCookiesYes').prop("checked", true);
             } else{
                 $('#statCookiesNo').prop("checked", true);
             }
 
-            $('#cookieButtons').hide();
+            $('#cookieButtons').addClass('d-none');
         });
     }
 
@@ -178,27 +177,30 @@ $(document).ready(function () {
 
     // alert upon closing page
     window.onbeforeunload = function (e) {
-
         // do not show popup if destination is within the same solution flow
-        var showPopup = true;
-        var targetUrl = document.activeElement.href.split('/');
-        var currentUrl = window.location.href.split('/');
-        if(targetUrl.length != 0){
-            if(targetUrl[5] == currentUrl[5]){
-                showPopup = false;
-            }
-        }
-        if(document.getElementsByClassName('layout-demo').length > 0 && showPopup) {
-            if(!inFormOrLink) {
-                e = e || window.event;
-
-                // For IE and Firefox prior to version 4
-                if (e) {
-                    e.returnValue = 'Sure?';
+        if(document.getElementsByClassName('layout-demo').length > 0){
+            var showPopup = true;
+            if(e.target != document){
+                var targetUrl = document.activeElement.href.split('/');
+                var currentUrl = window.location.href.split('/');
+                if(targetUrl.length != 0){
+                    if(targetUrl[5] == currentUrl[5]){
+                        showPopup = false;
+                    }
                 }
+            }
+            if(showPopup) {
+                if(!inFormOrLink) {
+                    e = e || window.event;
 
-                // For Safari
-                return 'Sure?';
+                    // For IE and Firefox prior to version 4
+                    if (e) {
+                        e.returnValue = 'Sure?';
+                    }
+
+                    // For Safari
+                    return 'Sure?';
+                }
             }
         }
     };
