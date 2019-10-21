@@ -5,6 +5,7 @@ title: Fonte og typografi
 category: Design_category
 subcategory: Design
 lead: "Fonte og typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter."
+anchor: true
 subnav:
 - text: Fonte
   href: '#fonte'

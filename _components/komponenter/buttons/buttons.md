@@ -6,6 +6,7 @@ title: Knapper
 category: Komponenter_category
 subcategory: Komponenter
 description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke på og dermed udløse en funktion eller handling. De kommer i flere grafiske former og er inddelt i et hierarki med primære, sekundære og tertiære knapper.
+anchor: true
 subnav:
 - text: Primærknap
   href: '#primærknap'
@@ -15,10 +16,10 @@ subnav:
   href: '#tertiærknapper'
 - text: Tilbage-knap
   href: '#tilbage-knap'
+- text: Knap med ikon
+  href: '#knap-med-ikon'
 - text: Ikon som knap
   href: '#ikon-som-knap'
-- text: Knap som ikon
-  href: '#knap-som-ikon'
 - text: Vedhæft fil
   href: '#vedhæft-fil'
 ---
@@ -60,12 +61,11 @@ subnav:
   <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
 </section>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="buttons-docs">
     Implementering
   </button>
   <div id="buttons-docs" aria-hidden="true" class="accordion-content">
-    <section>
       <p>Knap styling kan både sættes på &lt;button&gt; og &lt;a&gt; tags ved at tilføje følgende klasser:</p>
       <ul>
         <li><code>button button-primary</code></li>
@@ -74,7 +74,6 @@ subnav:
         <li><code>button button-quaternary</code></li>
         <li><code>button button-unstyled</code></li>
       </ul>
-    </section>
   </div>
 </div>
 

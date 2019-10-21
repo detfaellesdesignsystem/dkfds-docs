@@ -8,6 +8,7 @@ category: Kom_i_gang_category
 subcategory: Kom i gang
 parentlink: /komigang/tildesignere/
 lead: Dette afsnit beskriver regler og principper for struktur og placering af komponenter i en selvbetjeningsløsning. Et godt layout er harmonisk, ensartet, logisk opbygget, og understøtter brugerens handlinger. Det er således både behageligt for øjet og let for brugeren at anvende.
+anchor: true
 subnav:
 - text: Grid (12 kolonner)
   href: '#grid'
@@ -35,11 +36,14 @@ subnav:
     <li>Mobil: 576px</li>
 </ul>
 
-<h2 id="baselinegrid">Baseline grid (8 point)</h2>
+<h2 id="baselinegrid">Baseline grid</h2>
+<h3>8 point</h3>
 <p>I Det Fælles Designsystem går alle lodrette dimensioner, højder på komponenter og afstande i højderetningen op med en faktor 8. Dvs. 8px, 16px, 24px, 32px, 40px, 48px, 56px, etc.  Det er designsystemets baseline grid.</p>
 <p>Gentagelsen af værdier skaber ro og balance på tværs af det visuelle layout og mellem sidens lodrette elementer. For tekst er det ikke tekstens størrelse, men linjehøjden, der skal gå op i en faktor 8.</p>
 <p>Du kan læse mere om baseline grid i artiklen <a href="https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032" class="icon-link">8-Point Grid: Vertical Rhythm<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
-
+<h3>4 point</h3>
+<p>Ikoner, typografi og nogle elementer i komponenter kan justeres til et 4px grid.</p>
+<p>Se Material Designs forklaring af baseline grid i artiklen <a href="https://material.io/design/layout/spacing-methods.html#baseline" class="icon-link">Spacing Methods - Baseline<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 <hr class="my-6" />
 <h2 id="struktur">Grundlæggende struktur</h2>
 <p>En selvbetjeningsløsning er delt op i tre overordnede områder.</p>

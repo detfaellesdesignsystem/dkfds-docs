@@ -7,79 +7,65 @@ title: Sidenav-normal-level2.html
     <nav>
         <ul class="sidenav-list">
 
-            <li>
+            <li class="   ">
                 <a href="">
 
-                    <div class="d-inline-block">
-                        Parent link
+                    Hovedside
 
-                    </div>
                 </a>
 
             </li>
 
-            <li>
-                <a href="" class="current">
+            <li class="current   ">
+                <a href="">
 
-                    <div class="d-inline-block">
-                        Current page
+                    Hovedside
 
-                    </div>
                 </a>
 
                 <ul class="sidenav-sub_list">
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
 
-                    <li>
-                        <a href="" class="active">
+                    <li class=" active  ">
+                        <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
 
-                    <li>
+                    <li class="   ">
                         <a href="">
 
-                            <div class="d-inline-block">
-                                Child link
+                            Underside
 
-                            </div>
                         </a>
 
                     </li>
@@ -88,13 +74,11 @@ title: Sidenav-normal-level2.html
 
             </li>
 
-            <li>
+            <li class="   ">
                 <a href="">
 
-                    <div class="d-inline-block">
-                        Another link
+                    Hovedside
 
-                    </div>
                 </a>
 
             </li>

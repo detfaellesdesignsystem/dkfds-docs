@@ -7,6 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: Tringuides anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.
 lead: Trinindikatorer markerer trin i guides til brugerne om, hvordan de fx skal tilgå en løsning eller som fører dem igennem en kendt sekvens af spørgsmål.
+anchor: true
 subnav:
 - text: I overflow-menu
   href: '#trinindikator-i-overflow-menu'
@@ -44,7 +45,7 @@ subnav:
     </ul>
 </section>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="trin-code-documentation">
     Implementering
   </button>

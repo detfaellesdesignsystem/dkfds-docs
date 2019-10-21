@@ -4,67 +4,72 @@ layout: iframed
 title: Modal.html
 ---
 <div class="container">
-    <button class="button button-primary"
-        data-micromodal-trigger="modal-active">Åben modal (aktiv)</button>
+    <button class="button button-primary" data-toggle="modal"
+        data-target="#modal-active-id">Åben modal (aktiv)</button>
     <br>
     <br>
-    <button class="button button-primary"
-        data-micromodal-trigger="modal-passive">Åben modal
-        (passiv)</button>
+    <button class="button button-primary" data-toggle="modal"
+        data-target="#modal-passive-id">Åben modal (passiv)</button>
     <div class="styleguide-spacer-modals"></div>
 </div>
 
-<div class="modal" id="modal-active" aria-hidden="true">
-    <div class="modal__overlay bg-modal" tabindex="-1"
-        data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true"
-            aria-labelledby="modal-title-1">
-            <header class="modal__header">
-                <h1 class="modal__title h2" id="modal-title-1">
-                    Modal
-                </h1>
-            </header>
-            <main class="modal__content">
+<div class="modal bg-modal" id="modal-active-id" tabindex="-1"
+    role="dialog" aria-labelledby="modal-active-id-heading"
+    aria-modal="true">
+    <div tabindex="0"></div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title h2" id="modal-active-id-heading">
+                    Modal</h1>
+                <button type="button" class="close button button-secondary"
+                    data-dismiss="modal">
+                    Luk
+                </button>
+            </div>
+            <div class="modal-body">
                 <p>Modalens indhold. Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad
                     minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat</p>
-            </main>
-
-            <footer class="modal__footer">
+            </div>
+            <div class="modal-footer">
                 <button class="button button-primary"
                     aria-label="Fx bekræft handling">Primærknap</button><button
                     class="button button-secondary" data-micromodal-close
                     aria-label="Fx lukker modal vinduet">Sekundærknap</button>
-            </footer>
-
-            <button class="modal__close button button-secondary"
-                aria-label="Close modal" data-micromodal-close>Luk</button>
+            </div>
         </div>
     </div>
+    <div tabindex="0"></div>
 </div>
 
-<div class="modal" id="modal-passive" aria-hidden="true">
-    <div class="modal__overlay bg-modal" tabindex="-1"
-        data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true"
-            aria-labelledby="modal-title-2">
-            <header class="modal__header">
-                <h1 class="modal__title h2" id="modal-title-2">
-                    Modal
-                </h1>
-            </header>
-            <main class="modal__content">
+<div class="modal bg-modal" id="modal-passive-id" tabindex="-1"
+    role="dialog" aria-labelledby="modal-passive-id-heading"
+    aria-modal="true">
+    <div tabindex="0"></div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title h2" id="modal-passive-id-heading">
+                    Modal</h1>
+                <button type="button" class="close button button-secondary"
+                    data-dismiss="modal">
+                    Luk
+                </button>
+            </div>
+            <div class="modal-body">
                 <p>Modalens indhold. Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad
                     minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat</p>
-            </main>
+            </div>
+            <div class="modal-footer">
 
-            <button class="modal__close button button-secondary"
-                aria-label="Close modal" data-micromodal-close>Luk</button>
+            </div>
         </div>
     </div>
+    <div tabindex="0"></div>
 </div>

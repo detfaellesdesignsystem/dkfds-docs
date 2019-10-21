@@ -3,14 +3,13 @@ permalink: /preview-components/fil-liste-error.html
 layout: iframed 
 title: Fil-liste-error.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
-                <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
@@ -50,7 +49,7 @@ title: Fil-liste-error.html
                 <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
                             href="javascript:void(0);"
                             data-micromodal-trigger="modal-contact"
-                            class="function-link d-inline-block"><svg class="icon-svg" tabindex="-1" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
+                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
@@ -58,7 +57,7 @@ title: Fil-liste-error.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -107,7 +106,7 @@ title: Fil-liste-error.html
                             for="options">Navngiv dokument</label>
                         <select class=" form-select" name="options"
                             id="options">
-                            <option value></option>
+                            <option value>Vælg</option>
 
                             <option value="Lægeerklæring" selected>
                                 Lægeerklæring</option>
@@ -135,10 +134,10 @@ title: Fil-liste-error.html
                         <span class="form-error-message" role="alert">Angiv
                             navn på dokument</span>
                         <label class="form-label sr-only"
-                            for="options">Navngiv dokument</label>
-                        <select class=" form-select" name="options"
-                            id="options">
-                            <option value></option>
+                            for="options2">Navngiv dokument</label>
+                        <select class=" form-select" name="options2"
+                            id="options2">
+                            <option value>Vælg</option>
 
                             <option value="Lægeerklæring">Lægeerklæring
                             </option>
@@ -208,7 +207,7 @@ title: Fil-liste-error.html
         </tbody>
     </table>
     <nav class="page-navigation d-print-none">
-        <button class="button button-primary" disabled>Næste</button>
+        <button class="button button-primary">Næste</button>
     </nav>
 </main>
 
@@ -224,7 +223,7 @@ title: Fil-liste-error.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -242,14 +241,13 @@ title: Fil-liste-error.html
         data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true"
             aria-labelledby="modal-contact-1">
-            <header class="modal__header">
+            <div class="modal__header">
                 <h1 class="modal__title h2" id="modal-contact-1">
                     Kontakt
                 </h1>
-            </header>
-            <main class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+            </div>
+            <div class="modal__content">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -270,15 +268,15 @@ title: Fil-liste-error.html
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
-            </main>
+            </div>
 
             <button class="modal__close button button-secondary"
                 aria-label="Close modal" data-micromodal-close>Luk</button>

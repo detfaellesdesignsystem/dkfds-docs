@@ -7,13 +7,12 @@ lead:
 
 {% include code/preview.html component="radio-toggle-content" %}
 {% include code/accordion.html component="radio-toggle-content" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="radio-toggle-content-tech">
     Implementering
   </button>
   <div id="radio-toggle-content-tech" aria-hidden="true" class="accordion-content">
-    <section>
         <p>For at initialisere collapse funktionaliteten på en radioknap skal <code>input[type=radio]</code> have følgende:</p>
         <ul>
           <li>Attributten <code>name</code>: alle radioknapper I en gruppe skal have samme værdi i 'name'-attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
@@ -27,16 +26,23 @@ lead:
           <li><code>id=”id-of-target-to-collapse”</code></li>
           <li><code>aria-hidden="true/false"</code></li>
         </ul>
-    </section>
+        <h2 class="h5">JavaScript</h2>
+        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+        <pre>new DKFDS.RadioToggleGroup(document.getElementByID('DIV-CONTAINER-ID'));</pre>
+        <p>Sæt et <code>id</code> på det element, som har klassen <code>js-radio-toggle-group</code></p>
+        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
+        <h3 class="h5">Events</h3>
+        <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
+        <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
   </div>
 </div>
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="checkbox-toggle-content-docs">
     Retningslinjer
   </button>
   <div id="checkbox-toggle-content-docs" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
@@ -54,6 +60,5 @@ lead:
           <h4 class="h5">Vejledning</h4>                
           <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
       </section>
-    </article>
   </div>
 </div>

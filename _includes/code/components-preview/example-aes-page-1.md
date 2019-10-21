@@ -3,14 +3,13 @@ permalink: /preview-components/example-aes-page-1.html
 layout: iframed 
 title: Example-aes-page-1.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
-                <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
@@ -50,7 +49,7 @@ title: Example-aes-page-1.html
                 <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
                             href="javascript:void(0);"
                             data-micromodal-trigger="modal-contact"
-                            class="function-link d-inline-block"><svg class="icon-svg" tabindex="-1" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
+                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
@@ -58,7 +57,7 @@ title: Example-aes-page-1.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -160,65 +159,57 @@ title: Example-aes-page-1.html
         </div>
     </div>
 
-    <fieldset>
-        <legend>
-            <h1>Oplysninger om afsender</h1>
-        </legend>
+    <h1>Oplysninger om afsender</h1>
 
-        <div class="form-group">
-            <label class="form-label " for="virksomhed">Virksomhed</label>
+    <div class="form-group">
+        <label class="form-label " for="virksomhed">Virksomhed</label>
 
-            <input class="form-input  input-width-m " placeholder=""
-                id="virksomhed" value="Forsikringens Forsikringsfirma"
-                name="virksomhed" type="text" readonly>
-        </div>
+        <input class="form-input  input-width-m " placeholder=""
+            id="virksomhed" value="Forsikringens Forsikringsfirma"
+            name="virksomhed" type="text" readonly>
+    </div>
 
-        <div class="form-group">
-            <fieldset>
-                <legend class="form-label">Afsender er</legend>
-                <ul class="nobullet-list">
-                    <li>
-                        <input id="id-afsender1" type="radio"
-                            name="afsender"
-                            value="Advokat for forsikringsselskab"
-                            class="form-radio  radio-large " />
-                        <label for="id-afsender1"
-                            class="radio-large">Advokat for
-                            forsikringsselskab </label>
-                    </li>
-                    <li>
-                        <input id="id-afsender2" type="radio"
-                            name="afsender" value="Advokat for skadelidte"
-                            class="form-radio  radio-large " />
-                        <label for="id-afsender2"
-                            class="radio-large">Advokat for skadelidte
-                        </label>
-                    </li>
-                    <li>
-                        <input id="id-afsender3" type="radio"
-                            name="afsender" value="Forsikringsselskab"
-                            class="form-radio  radio-large " />
-                        <label for="id-afsender3"
-                            class="radio-large">Forsikringsselskab </label>
-                    </li>
-                    <li>
-                        <input id="id-afsender4" type="radio"
-                            name="afsender" value="Erstatningsnævnet"
-                            class="form-radio  radio-large " />
-                        <label for="id-afsender4"
-                            class="radio-large">Erstatningsnævnet </label>
-                    </li>
-                    <li>
-                        <input id="id-afsender5" type="radio"
-                            name="afsender" value="Anden"
-                            class="form-radio  radio-large " />
-                        <label for="id-afsender5" class="radio-large">Anden
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-        </div>
-    </fieldset>
+    <div class="form-group">
+        <fieldset>
+            <legend class="form-label">Afsender er</legend>
+            <ul class="nobullet-list">
+                <li>
+                    <input id="id-afsender1" type="radio" name="afsender"
+                        value="Advokat for forsikringsselskab"
+                        class="form-radio  radio-large " />
+                    <label for="id-afsender1" class="radio-large">Advokat
+                        for forsikringsselskab </label>
+                </li>
+                <li>
+                    <input id="id-afsender2" type="radio" name="afsender"
+                        value="Advokat for skadelidte"
+                        class="form-radio  radio-large " />
+                    <label for="id-afsender2" class="radio-large">Advokat
+                        for skadelidte </label>
+                </li>
+                <li>
+                    <input id="id-afsender3" type="radio" name="afsender"
+                        value="Forsikringsselskab"
+                        class="form-radio  radio-large " />
+                    <label for="id-afsender3"
+                        class="radio-large">Forsikringsselskab </label>
+                </li>
+                <li>
+                    <input id="id-afsender4" type="radio" name="afsender"
+                        value="Erstatningsnævnet"
+                        class="form-radio  radio-large " />
+                    <label for="id-afsender4"
+                        class="radio-large">Erstatningsnævnet </label>
+                </li>
+                <li>
+                    <input id="id-afsender5" type="radio" name="afsender"
+                        value="Anden" class="form-radio  radio-large " />
+                    <label for="id-afsender5" class="radio-large">Anden
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-2"
             class="button button-primary">Næste</a>
@@ -237,7 +228,7 @@ title: Example-aes-page-1.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -255,14 +246,13 @@ title: Example-aes-page-1.html
         data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true"
             aria-labelledby="modal-contact-1">
-            <header class="modal__header">
+            <div class="modal__header">
                 <h1 class="modal__title h2" id="modal-contact-1">
                     Kontakt
                 </h1>
-            </header>
-            <main class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+            </div>
+            <div class="modal__content">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -283,15 +273,15 @@ title: Example-aes-page-1.html
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
-            </main>
+            </div>
 
             <button class="modal__close button button-secondary"
                 aria-label="Close modal" data-micromodal-close>Luk</button>

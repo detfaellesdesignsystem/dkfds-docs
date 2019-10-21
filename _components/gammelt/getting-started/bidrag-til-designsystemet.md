@@ -3,7 +3,7 @@ permalink: /getting-started/bidrag-til-designsystemet/
 layout: styleguide
 title: Bidrag til designsystemet
 category: Getting started
-lead: Du vil her kunne finde forskellige guides til hvordan man kan komme i gang med at bidrage til Frontend styelguiden, både som programmør og som ikke-koder. 
+lead: Du vil her kunne finde forskellige guides til hvordan man kan komme i gang med at bidrage til Frontend styleguiden, både som programmør og som ikke-koder. 
 subnav:
 - text: Bidrag som ikke-koder
   href: '#bidrag-til-styleguiden-uden-kendskab-til-kode'

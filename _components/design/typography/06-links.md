@@ -10,13 +10,12 @@ order: 06
 
 {% include code/preview.html component="links" %}
 {% include code/accordion.html component="links" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="links-docs-tech">
     Implementering
   </button>
   <div id="links-docs-tech" aria-hidden="true" class="accordion-content">
-     <article>
         <section>
             <h3 class="h4">Funktionslink</h3>
             <p>Du kan definere et funktionslink i koden ved at sætte klassen <code>function-link</code>.</p>
@@ -27,16 +26,14 @@ order: 06
             <h3 class="h4">Disabled link</h3>
             Tilføj tekst til skærmlæser i linket for at gøre opmærksom på at linket er deaktiveret: <code>&lt;span class="sr-only"&gt;disabled&lt;/span&gt;</code>
         </section>
-     </article>
   </div>
 </div>
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typolinks-docs">
     Retningslinjer
   </button>
   <div id="typolinks-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>
         <h3 class="h4">Tilgængelighed</h3>
           <ul>
@@ -58,6 +55,5 @@ order: 06
         <p>Brug links med omtanke i en selvbetjeningsløsning. Linker du for meget ud til eksterne websites, kan det virke forstyrrende for flowet og få brugeren ud af kontekst. Omvendt kan det give stor værdi for brugeren, hvis du linker ud til relevante informationer. Fx informationer, som understøtter brugerens vej gennem selvbetjeningsløsningen og/eller giver væsentlige input til, hvad brugeren skal indtaste i løsningen.</p>
         <p>Gør gerne brugeren opmærksom på, hvor det eksterne link fører hen, fx i en parentes som en del af linket, hvis det ikke fremgår af linkteksten.</p>
       </section>
-    </article>
   </div>
 </div>

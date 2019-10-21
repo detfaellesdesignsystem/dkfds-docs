@@ -7,6 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information om indhold, der kan kategoriseres, filtreres eller på anden beskrives med nøgleord.
 lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation om indhold, der kan kategoriseres, filtreres eller på anden beskrives med nøgleord. Tags forekommer med og uden ikon.
+anchor: true
 subnav:
 - text: Standard
   href: '#standard'
@@ -42,19 +43,17 @@ subnav:
   </ul>
 </section>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tags-code-doc">
     Implementering
   </button>
   <div id="tags-code-doc" class="accordion-content">
-     <section>
         <p>Der er to eksempler på hvordan tags kan se ud. Ét uden ikon og ét med ikon.</p>
         <p>Alle tags skal have en <code>.tag</code> class <code>&lt;button&gt;&lt;/button&gt;</code> elementet. Hvis et tag skal have ikon, skal der yderligere tilføjes en <code>.tag-icon</code> class.</p>
         <p>Et tag vil se følgende ud:</p>
         <p><code>&lt;button class="tag"&gt;My tag&lt;/button&gt;</code></p>
         <p>Et tag med ikon vil se følgende ud:</p>
         <p><code>&lt;button class="tag tag-icon"&gt;My tag&lt;/button&gt;</code></p>
-     </section>
   </div>
 </div>
 

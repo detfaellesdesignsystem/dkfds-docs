@@ -3,14 +3,13 @@ permalink: /preview-components/example-aes-page-7.html
 layout: iframed 
 title: Example-aes-page-7.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
-                <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
@@ -49,7 +48,7 @@ title: Example-aes-page-7.html
 
                 <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -57,7 +56,7 @@ title: Example-aes-page-7.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -75,7 +74,7 @@ title: Example-aes-page-7.html
             <p><b>Erhvervsministeriet</b></p>
             <p>Support: 72 20 60 00 <br><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 
@@ -110,7 +109,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
                         1. Oplysninger om afsender
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -118,7 +117,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-2'>
                         2. Hvis AES har spørgsmål til sagen
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -126,7 +125,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-3'>
                         3. Oplysninger om skadelidte
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -134,7 +133,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-4'>
                         4. Sagens natur
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -142,7 +141,7 @@ title: Example-aes-page-7.html
                     <a href='/pages/eksempler/AES-erstatningssag/aes-5'>
                         5. Oplysninger om sagen
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -151,7 +150,7 @@ title: Example-aes-page-7.html
                         6. Tilføj dokumentation for første undersøgelse af
                         skaden
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -196,9 +195,11 @@ title: Example-aes-page-7.html
                     <div class="py-4">
                         <form class="form">
                             <div class="form-group file-input">
-                                <label class="form-label" for="file">Tilføj
+                                <label class="form-label"
+                                    for="input-file">Tilføj
                                     dokument</label>
-                                <input type="file" id="file" name="file">
+                                <input type="file" id="input-file"
+                                    name="file">
                             </div>
                         </form>
                         <table
@@ -219,14 +220,18 @@ title: Example-aes-page-7.html
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group ">
 
-                                            <label
-                                                class="form-label sr-only"
+                                            <label class="form-label "
                                                 for="select-dokumentationdtype1">Vælg
                                                 dokumentationstype</label>
                                             <select class=" form-select"
                                                 name="Navngiv dokument"
                                                 id="select-dokumentationdtype1">
-                                                <option value></option>
+                                                <option value>Vælg type
+                                                </option>
+
+                                                <option
+                                                    value="Lægeerklæring">
+                                                    Lægeerklæring</option>
 
                                             </select>
                                         </div>
@@ -240,7 +245,7 @@ title: Example-aes-page-7.html
                                                     class="weight-normal">
                                                     (Frivilligt)</span></label>
 
-                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text" ></textarea>
+                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-1-expanded" name="Kommentar" ></textarea>
                                         </div>
 
                                     </td>
@@ -248,7 +253,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -262,14 +267,18 @@ title: Example-aes-page-7.html
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group ">
 
-                                            <label
-                                                class="form-label sr-only"
+                                            <label class="form-label "
                                                 for="select-dokumentationdtype2">Vælg
                                                 dokumentationstype</label>
                                             <select class=" form-select"
                                                 name="Navngiv dokument"
                                                 id="select-dokumentationdtype2">
-                                                <option value></option>
+                                                <option value>Vælg type
+                                                </option>
+
+                                                <option
+                                                    value="Lægeerklæring">
+                                                    Lægeerklæring</option>
 
                                             </select>
                                         </div>
@@ -283,7 +292,7 @@ title: Example-aes-page-7.html
                                                     class="weight-normal">
                                                     (Frivilligt)</span></label>
 
-                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-2-expanded" name="Kommentar" type="text" ></textarea>
+                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-2-expanded" name="Kommentar" ></textarea>
                                         </div>
 
                                     </td>
@@ -291,7 +300,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -319,9 +328,11 @@ title: Example-aes-page-7.html
                     <div class="py-4">
                         <form class="form">
                             <div class="form-group file-input">
-                                <label class="form-label" for="file">Tilføj
+                                <label class="form-label"
+                                    for="input-file2">Tilføj
                                     dokument</label>
-                                <input type="file" id="file" name="file">
+                                <input type="file" id="input-file2"
+                                    name="file">
                             </div>
                         </form>
                         <table
@@ -342,14 +353,18 @@ title: Example-aes-page-7.html
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group ">
 
-                                            <label
-                                                class="form-label sr-only"
+                                            <label class="form-label "
                                                 for="select-dokumentationdtype3">Vælg
                                                 dokumentationstype</label>
                                             <select class=" form-select"
                                                 name="Navngiv dokument"
                                                 id="select-dokumentationdtype3">
-                                                <option value></option>
+                                                <option value>Vælg type
+                                                </option>
+
+                                                <option
+                                                    value="Lægeerklæring">
+                                                    Lægeerklæring</option>
 
                                             </select>
                                         </div>
@@ -363,7 +378,7 @@ title: Example-aes-page-7.html
                                                     class="weight-normal">
                                                     (frivilligt)</span></label>
 
-                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-3-expanded" name="Kommentar" type="text" ></textarea>
+                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-3-expanded" name="Kommentar" ></textarea>
                                         </div>
 
                                     </td>
@@ -371,7 +386,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -385,14 +400,18 @@ title: Example-aes-page-7.html
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group ">
 
-                                            <label
-                                                class="form-label sr-only"
+                                            <label class="form-label "
                                                 for="select-dokumentationdtype4">Vælg
                                                 dokumentationstype</label>
                                             <select class=" form-select"
                                                 name="Navngiv dokument"
                                                 id="select-dokumentationdtype4">
-                                                <option value></option>
+                                                <option value>Vælg type
+                                                </option>
+
+                                                <option
+                                                    value="Lægeerklæring">
+                                                    Lægeerklæring</option>
 
                                             </select>
                                         </div>
@@ -406,7 +425,7 @@ title: Example-aes-page-7.html
                                                     class="weight-normal">
                                                     (frivilligt)</span></label>
 
-                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-4-expanded" name="Kommentar" type="text" ></textarea>
+                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-4-expanded" name="Kommentar" ></textarea>
                                         </div>
 
                                     </td>
@@ -414,7 +433,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -442,9 +461,11 @@ title: Example-aes-page-7.html
                     <div class="py-4">
                         <form class="form">
                             <div class="form-group file-input">
-                                <label class="form-label" for="file">Tilføj
+                                <label class="form-label"
+                                    for="input-file3">Tilføj
                                     dokument</label>
-                                <input type="file" id="file" name="file">
+                                <input type="file" id="input-file3"
+                                    name="file">
                             </div>
                         </form>
                         <table
@@ -465,14 +486,18 @@ title: Example-aes-page-7.html
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group ">
 
-                                            <label
-                                                class="form-label sr-only"
-                                                for="select-dokumentationdtype5">Vælg
-                                                dokumentationsype</label>
+                                            <label class="form-label "
+                                                for="select-dokumentationstype5">Vælg
+                                                dokumentationstype</label>
                                             <select class=" form-select"
                                                 name="Navngiv dokument"
-                                                id="select-dokumentationdtype5">
-                                                <option value></option>
+                                                id="select-dokumentationstype5">
+                                                <option value>Vælg type
+                                                </option>
+
+                                                <option
+                                                    value="Lægeerklæring">
+                                                    Lægeerklæring</option>
 
                                             </select>
                                         </div>
@@ -486,7 +511,7 @@ title: Example-aes-page-7.html
                                                     class="weight-normal">
                                                     (Frivilligt)</span></label>
 
-                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-5-expanded" name="Kommentar" type="text" ></textarea>
+                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-5-expanded" name="Kommentar" ></textarea>
                                         </div>
 
                                     </td>
@@ -494,7 +519,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -508,14 +533,18 @@ title: Example-aes-page-7.html
                                     <td class="mt-4 mt-lg-0">
                                         <div class="form-group ">
 
-                                            <label
-                                                class="form-label sr-only"
-                                                for="select-dokumentationdtype6">Vælg
+                                            <label class="form-label "
+                                                for="select-dokumentationstype6">Vælg
                                                 dokumentationstype</label>
                                             <select class=" form-select"
                                                 name="Navngiv dokument"
-                                                id="select-dokumentationdtype6">
-                                                <option value></option>
+                                                id="select-dokumentationstype6">
+                                                <option value>Vælg type
+                                                </option>
+
+                                                <option
+                                                    value="Lægeerklæring">
+                                                    Lægeerklæring</option>
 
                                             </select>
                                         </div>
@@ -529,7 +558,7 @@ title: Example-aes-page-7.html
                                                     class="weight-normal">
                                                     (Frivilligt)</span></label>
 
-                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-6-expanded" name="Kommentar" type="text" ></textarea>
+                                            <textarea class="form-input input-width-m" rows="1" placeholder="" id="id-documentation-6-expanded" name="Kommentar" ></textarea>
                                         </div>
 
                                     </td>
@@ -537,7 +566,7 @@ title: Example-aes-page-7.html
                                         class="align-text-md-right mt-4 mt-lg-0">
                                         <button
                                             class="button button-unstyled">
-                                            <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
+                                            <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete-outline"></use></svg>
                                             <span
                                                 class="sr-only">Slet</span>
                                         </button>
@@ -554,7 +583,7 @@ title: Example-aes-page-7.html
         <a href="/pages/eksempler/AES-erstatningssag/aes-8"
             class="button button-primary">Næste</a>
         <a href="/pages/eksempler/AES-erstatningssag/aes-6"
-            class="button button-quaternary"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+            class="button button-quaternary"><svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 
@@ -570,7 +599,7 @@ title: Example-aes-page-7.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -588,14 +617,13 @@ title: Example-aes-page-7.html
         data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true"
             aria-labelledby="modal-contact-1">
-            <header class="modal__header">
+            <div class="modal__header">
                 <h1 class="modal__title h2" id="modal-contact-1">
                     Kontakt
                 </h1>
-            </header>
-            <main class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+            </div>
+            <div class="modal__content">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -616,15 +644,15 @@ title: Example-aes-page-7.html
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
-            </main>
+            </div>
 
             <button class="modal__close button button-secondary"
                 aria-label="Close modal" data-micromodal-close>Luk</button>

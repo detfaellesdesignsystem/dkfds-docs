@@ -1,7 +1,7 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
 
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
@@ -29,13 +29,13 @@
           <!--2B: Solution header: Authority name + text-->
           <div class="solution-info"> <!-- nav-secondary -->
               <h6 class="h5 authority-name">Myndighedsnavn</h6>
-              <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span></p>
+              <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span></p>
           </div>
         </div>
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
@@ -169,7 +169,7 @@
 
       <div class="solution-info-mobile">
         <h6 class="h5 authority-name">Myndighedsnavn</h6>
-        <p>Support: 12 34 56 78 · <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+        <p>Support: 12 34 56 78 · <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
 
     </nav> <!-- collapsible nav end-->

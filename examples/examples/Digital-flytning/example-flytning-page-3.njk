@@ -13,12 +13,12 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -55,7 +55,7 @@
               <a href='/pages/eksempler/digital-flytning/flytning-1'>
                   1. Oversigt
                   <span class='sidenav-icon'>
-                      <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                      <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                   </span>
               </a>
           </li>
@@ -63,7 +63,7 @@
               <a href='/pages/eksempler/digital-flytning/flytning-2'>
                   2. Personer
                   <span class='sidenav-icon'>
-                      <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                      <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                   </span>
               </a>
           </li>
@@ -91,13 +91,13 @@
     {{datoinput("Dato for flytning", "Fx. 28 04 1996", "Dato", "Måned", "År")}}
   </div>
   <div class="mt-6">
-    {{select("Gade / vejnavn", "select-street", "Gade / vejnavn", "input-width-m", "- Vælg -", "", false)}}
+    {{select("Gade / vejnavn", "select-street", "Gade / vejnavn", "input-width-m", "Vælg fra listen", [{value: 'Byvej', text:'Byvej' }], false)}}
   </div>
   <div class="mt-6">
-    {{select("Husnr. / bogstav", "select-housenumber", "Husnr. / bogstav", "input-width-xxs", "", "", true)}}
+    {{select("Husnr. / bogstav", "select-housenumber", "Husnr. / bogstav", "input-width-xxs", "Vælg fra listen",  [{value: '1', text:'1'}, {value: '2', text:'2'}, {value: '3', text:'3'}], true)}}
   </div>
   <div class="mt-6">
-    {{select("Etage, side/dør", "select-door", "Etage, side/dør", "input-width-xxs", "", "", true)}}
+    {{select("Etage, side/dør", "select-door", "Etage, side/dør", "input-width-xxs", "Vælg fra listen", [{value: '1', text:'1'}], true)}}
   </div>
   <div class="mt-6">
     {{textinput("id-co", "C/O navn", "(frivilligt)", "input-width-m", false, "Input til C/O navn", "", false, false, "C/O navn skal kun udfyldes, hvis du skal bo til leje hos de nuværende beboere.", "")}}
@@ -105,7 +105,7 @@
 
   <nav class="page-navigation d-print-none">
     <a href="/pages/eksempler/digital-flytning/flytning-4" class="button button-primary">Næste</a>
-    <a href="/pages/eksempler/digital-flytning/flytning-2" class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+    <a href="/pages/eksempler/digital-flytning/flytning-2" class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
   </nav>
 </main>
 {% endblock %}

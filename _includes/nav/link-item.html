@@ -7,4 +7,6 @@
   {% assign _href = link[_href_key] %}
 {% endif %}
 {% assign _text_key = include.text_key | default: 'text' %}
-<a href="{{ _href }}"{% if _href == page.permalink or _href == page.url %} class="current"{% endif %}>{{ link[_text_key] | smartify }}</a>
+<li class="{% if _href == page.permalink or _href == page.url %}current{% endif %} {%  if _anchor -%}has-anchor-links{% endif %}">
+<a href="{{ _href }}">{{ link[_text_key] | smartify }}</a>
+</li>

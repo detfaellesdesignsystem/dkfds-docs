@@ -9,11 +9,11 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -39,48 +39,48 @@
             <div class="overflow-menu  overflow-menu--open-right overflow-menu--lg-no-responsive">
                 <button class="button-overflow-menu js-dropdown " data-js-target="#overflow4" aria-haspopup="true" aria-expanded="false">
                    Trin 6 af 6
-                   <svg class="icon-svg" aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-down"></use></svg>
+                   <svg class="icon-svg" aria-hidden='true' focusable='false'><use xlink:href="#menu-down"></use></svg>
                    <span class="sr-only">Åbner overflow menu</span>
                 </button>
                 <div class="overflow-menu-inner" id="overflow4" aria-hidden="true">
                     <ul class="sidenav-list sidenav-list-locked">
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                 1. Stamdata
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                 2. SMV-kriterier
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                 3. Statsstøtte
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                 4. Tilskud til land
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
                         <li class="disabled">
-                            <a href="javascript:void(0)" disabled tab-index="-1" aria-disabled="true">
+                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
                                5. Opsummering
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>

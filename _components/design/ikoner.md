@@ -19,7 +19,7 @@ order: 25
 {% include code/preview.html component="icons--svg" %}
 {% include code/accordion.html component="icons--svg" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="icons-implementation">
     Implementering
@@ -67,7 +67,7 @@ order: 25
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="true" aria-controls="icons-docs">
     Retningslinjer

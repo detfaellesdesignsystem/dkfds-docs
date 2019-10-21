@@ -3,14 +3,15 @@
   {
     "links": [
       {
-        "text": "Parent link"
+        "text": "Hovedside"
       },
       {
-        "text": "Current page",
+        "text": "Hovedside",
+        "current": true,
         "active": true
       },
       {
-        "text": "Another link"
+        "text": "Hovedside"
       }
     ]
   }

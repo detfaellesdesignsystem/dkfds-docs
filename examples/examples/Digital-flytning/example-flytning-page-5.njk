@@ -11,12 +11,12 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -55,7 +55,7 @@
               <a href='/pages/eksempler/digital-flytning/flytning-1'>
                   1. Oversigt
                   <span class='sidenav-icon'>
-                      <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                      <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                   </span>
               </a>
           </li>
@@ -63,7 +63,7 @@
               <a href='/pages/eksempler/digital-flytning/flytning-2'>
                   2. Personer
                   <span class='sidenav-icon'>
-                      <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                      <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                   </span>
               </a>
           </li>
@@ -71,7 +71,7 @@
               <a href='/pages/eksempler/digital-flytning/flytning-3'>
                   3. Adresse
                   <span class='sidenav-icon'>
-                      <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                      <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                   </span>
               </a>
           </li>
@@ -79,7 +79,7 @@
               <a href='/pages/eksempler/digital-flytning/flytning-4'>
                   4. Særlig flytning
                   <span class='sidenav-icon'>
-                      <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                      <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                   </span>
               </a>
           </li>
@@ -114,14 +114,14 @@
         <td>Klaus Egegreen Hansen</td>
         <td>John Doe <br>Østerbrogade 893 18.tv. <br>2100 København Ø</td>
         <td>0,6 Km</td>
-        <td class="align-text-md-right"><a href="#" title="Skift læge"> <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#pencil"></use></svg></a></td>
+        <td class="align-text-md-right"><a href="#" aria-label="Skift læge"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#pencil"></use></svg></a></td>
       </tr>
     </tbody>
   </table>
 
   <nav class="page-navigation d-print-none">
     <a href="#" class="button button-primary">Næste</a>
-    <a href='/pages/eksempler/digital-flytning/flytning-4' class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+    <a href='/pages/eksempler/digital-flytning/flytning-4' class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
   </nav>
 </main>
 {% endblock %}

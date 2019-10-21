@@ -68,7 +68,7 @@ title: Tringuide.html
                     data-js-target="#overflow4" aria-haspopup="true"
                     aria-expanded="false">
                     Trin 3 af 5
-                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
+                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
                 <div class="overflow-menu-inner" id="overflow4"
@@ -78,7 +78,7 @@ title: Tringuide.html
                             <a href="#">
                                 1. Trin 1
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
@@ -86,7 +86,7 @@ title: Tringuide.html
                             <a href="#">
                                 2. Trin 2
                                 <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
@@ -114,7 +114,7 @@ title: Tringuide.html
 
             <ul class="sidenav-list">
 
-                <li>
+                <li class=" ">
                     <a href="">
                         1. Trin 1
 
@@ -125,7 +125,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         2. Trin 2
 
@@ -136,8 +136,8 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
-                    <a href="" class="active">
+                <li class=" active current">
+                    <a href="">
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
@@ -147,14 +147,14 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         4. Trin 4
 
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         5. Trin 5
 
@@ -169,10 +169,10 @@ title: Tringuide.html
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col">
             <p class="h5 mt-6">Låst trinindikator</p>
 
-            <ul class="sidenav-list-locked">
+            <ul class="sidenav-list sidenav-list-locked">
 
-                <li class="disabled">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
                         1. Trin 1
 
                         <span class="sidenav-icon">
@@ -182,8 +182,8 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
                         2. Trin 2
 
                         <span class="sidenav-icon">
@@ -193,9 +193,8 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a class="active" disabled tab-index="-1"
-                        aria-disabled="true">
+                <li class="disabled active current ">
+                    <a tabindex="-1" aria-disabled="true">
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
@@ -205,15 +204,15 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
                         4. Trin 4
 
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
                         5. Trin 5
 
                     </a>
@@ -227,7 +226,7 @@ title: Tringuide.html
 
             <ul class="sidenav-list">
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             1. Trin 1
@@ -244,7 +243,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             2. Trin 2
@@ -261,8 +260,8 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
-                    <a href="" class="active">
+                <li class=" active current">
+                    <a href="">
                         <div class="d-inline-block">
                             3. Trin 3 (valgt)
 
@@ -278,7 +277,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             4. Trin 4
@@ -291,7 +290,7 @@ title: Tringuide.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             5. Trin 5

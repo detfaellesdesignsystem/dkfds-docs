@@ -6,7 +6,7 @@ layout: styleguide
 title: Det visuelle design
 category: Om_designsystemet_category
 subcategory: Om designsystemet
-lead: 
+anchor: true
 subnav:
 - text: Visuel integration på portalerne
   href: '#visuel_integration_på_portalerne'

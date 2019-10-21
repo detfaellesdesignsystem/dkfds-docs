@@ -434,7 +434,7 @@ title: Icons.html
     </div>
 </div>
 
-<style scoped>
+<style>
     .icon-box {
         width: 100%;
         height: 200px;

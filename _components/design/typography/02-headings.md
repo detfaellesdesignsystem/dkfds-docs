@@ -17,7 +17,7 @@ order: 02
 {% include code/preview.html component="headings" %}
 {% include code/accordion.html component="headings" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="headings-docs-tech">
     Implementering
@@ -47,13 +47,12 @@ order: 02
 </div>
 
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typoheadings-docs">
     Retningslinjer
   </button>
   <div id="typoheadings-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <p>Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.</p>
       <section>
           <h4>Tilgængelighed</h4>
@@ -93,6 +92,5 @@ order: 02
             <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
           </ul>
       </section>
-    </article>
   </div>
 </div>

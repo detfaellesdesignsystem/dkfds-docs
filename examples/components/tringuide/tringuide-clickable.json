@@ -15,6 +15,7 @@
         "text": "Trin 3 (valgt)",
         "information": "Informationstekst for trin 3",
         "icon": "check",
+        "current": true,
         "active": true
       },
       {

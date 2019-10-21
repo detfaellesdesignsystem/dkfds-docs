@@ -13,3 +13,6 @@ lead:
 <h3>3 niveauer</h3>
 {% include code/preview.html component="sidenav-normal-level3" %}
 {% include code/accordion.html component="sidenav-normal-level3" %}
+<h3>Aktivt link med anchor links</h3>
+{% include code/preview.html component="sidenav-anchor" %}
+{% include code/accordion.html component="sidenav-anchor" %}

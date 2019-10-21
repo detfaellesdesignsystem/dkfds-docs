@@ -10,12 +10,12 @@
 {% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -87,7 +87,7 @@
         </tbody>
     </table>
     <nav class="page-navigation d-print-none">
-      <button class="button button-primary" disabled>Næste</button>
+      <button class="button button-primary">Næste</button>
     </nav>
 </main>
 {% endblock %}

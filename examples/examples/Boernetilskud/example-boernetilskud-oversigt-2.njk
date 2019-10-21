@@ -11,12 +11,12 @@
 
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <!-- 3: Main navigation-->
@@ -94,17 +94,15 @@
 
 {% block body %}
   <main class="container page-container">
-    <header class="page-header">
+    <section class="page-content">
       <h1 class="mt-6 mt-md-7">{{title}}</h1>
       <p class="font-lead">Brug en af de følgende funktioner, til at administrere børnetilskud:</p>
-    </header>
-    <section class="page-content">
       <div class="row">
         {# CARD 1 #}
         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
           <div class="card card-align-height">
             <div class="card-header">
-              <p class="h5 header-title" title="Card header" aria-label="Card header">Beskeder</p>
+              <p class="h5 header-title">Beskeder</p>
             </div>
             <div class="card-content bg-alternative py-4">
               <div class="content">
@@ -128,7 +126,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6 mt-sm-0">
           <div class="card card-align-height">
             <div class="card-header">
-              <p class="h5 header-title" title="Card header" aria-label="Card header">Udbetalinger</p>
+              <p class="h5 header-title">Udbetalinger</p>
             </div>
             <div class="card-content bg-alternative py-4">
               <div class="content">
@@ -152,7 +150,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6 mt-md-0">
           <div class="card card-align-height">
             <div class="card-header">
-              <p class="h5 header-title" title="Card header" aria-label="Card header">Sager</p>
+              <p class="h5 header-title">Sager</p>
             </div>
             <div class="card-content bg-alternative py-4">
               <div class="content">
@@ -176,7 +174,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6">
           <div class="card card-align-height">
             <div class="card-header">
-              <p class="h5 header-title" title="Card header" aria-label="Card header">Ansøgninger</p>
+              <p class="h5 header-title">Ansøgninger</p>
             </div>
             <div class="card-content bg-alternative py-4">
               <div class="content">
@@ -200,7 +198,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6">
           <div class="card card-align-height">
             <div class="card-header">
-              <p class="h5 header-title" title="Card header" aria-label="Card header">Ændringer</p>
+              <p class="h5 header-title">Ændringer</p>
             </div>
             <div class="card-content bg-alternative py-4">
               <div class="content">
@@ -224,7 +222,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-6">
           <div class="card card-align-height">
             <div class="card-header">
-              <p class="h5 header-title" title="Card header" aria-label="Card header">Dokumentation</p>
+              <p class="h5 header-title">Dokumentation</p>
             </div>
             <div class="card-content bg-alternative py-4">
               <div class="content">

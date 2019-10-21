@@ -1,11 +1,13 @@
 {% include nav/current.html page=include.page %}
+<li class="{% if _current -%}current {% endif %}{%  if _active -%}active {% endif %}{%  if _anchor -%}has-anchor-links{% endif %}">
 
-{% assign titletext = include.page.title  %}
+{% assign titletext = include.page.title %}
+  {%  assign _anchor = false %}
 {% if include.use_alt_text and include.alternative_text %}
   {% assign titletext = include.alternative_text %}
 {% endif %}
-<a href="{{ include.page.url | relative_url }}" 
-  class="{% if _current -%}current {% endif %} {%  if _active -%}active {% endif %} nav-link">
+<a href="{{ include.page.url | relative_url }}"
+  class="nav-link">
   {{ titletext | smartify }}
 </a>
 {% if _current -%}
@@ -39,3 +41,4 @@
     {% endif %}
   {% endunless %}
 {% endif %}
+</li>

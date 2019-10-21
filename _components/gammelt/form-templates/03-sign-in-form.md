@@ -7,7 +7,7 @@ lead: A template for signing a user into a website or app
 
 {% include code/preview.html component="sign-in-form" %}
 {% include code/accordion.html component="sign-in-form" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="signin-form-docs">
     Retningslinjer

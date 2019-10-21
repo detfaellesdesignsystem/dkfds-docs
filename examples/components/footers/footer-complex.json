@@ -4,7 +4,7 @@
       "col_size_desktop": 3,
       "text_align_right": false,
       "class": " d-print-none",
-      "content": "<h1 class=\"h5 mb-4\" title=\"Links\" aria-label=\"Links\">Links</h1>",
+      "content": "<h1 class=\"h5 mb-4\">Links</h1>",
       "lists": [
         {
           "inline_list": false,
@@ -21,7 +21,7 @@
       "col_size_desktop": 3,
       "text_align_right": false,
       "class": " d-print-none",
-      "content": "<h1 class=\"h5 mb-4\" title=\"Links\" aria-label=\"Links\">Links</h1>",
+      "content": "<h1 class=\"h5 mb-4\">Links</h1>",
       "lists": [
         {
           "inline_list": false,
@@ -38,7 +38,7 @@
       "col_size_desktop": 3,
       "text_align_right": false,
       "class": " d-print-none",
-      "content": "<h1 class=\"h5 mb-4\" title=\"Links\" aria-label=\"Links\">Links</h1>",
+      "content": "<h1 class=\"h5 mb-4\">Links</h1>",
       "lists": [
         {
           "inline_list": false,
@@ -55,7 +55,7 @@
       "col_size_desktop": 3,
       "text_align_right": false,
       "class": " d-print-none",
-      "content": "<h1 class=\"h5 mb-4\" title=\"Links\" aria-label=\"Links\">Links</h1>",
+      "content": "<h1 class=\"h5 mb-4\">Links</h1>",
       "lists": [
         {
           "inline_list": false,
@@ -76,7 +76,7 @@
           "inline_list": true,
           "listclass": "mt-4 nobullet-list",
           "listitems": [
-            {"content": "<span class=\"h5 weight-semibold\">Digitaliseringsstyrelsen</span>"},
+            {"content": "<h1 class=\"h5 d-inline-block\">Digitaliseringsstyrelsen</h1>"},
             {"content": "<a href=\"mailto:support@myndighed.dk\" class=\"function-link\" title=\"Skriv til Digitaliseringsstyrelsen\">support@myndighed.dk</a>"},
             {"content": "<a href=\"tel:+4512345678\" class=\"function-link\" title=\"Ring til Digitaliseringsstyrelsen\">(+45) 12 34 56 78</a>"},
             {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true},

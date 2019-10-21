@@ -10,7 +10,7 @@ order: 07
 {% include code/preview.html component="lists" classes="preview-lists" %}
 {% include code/accordion.html component="lists" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="lists-docs-tech">
     Implementering
@@ -21,24 +21,23 @@ order: 07
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typolists-docs">
     Retningslinjer
   </button>
   <div id="typolists-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>   
-        <h1 class="h4">Anvendes til</h1>
+        <h3 class="h4">Anvendes til</h3>
         <ul>
             <li>Brug lister, når du skal liste ord eller sætninger op.</li>
             <li>Brug lister til at give brugeren et hurtigt overblik.</li>
         </ul>
-        <h1 class="h4">Anvendes ikke til</h1>
+        <h3 class="h4">Anvendes ikke til</h3>
         <ul>
             <li>Lister af lange afsnit med forklarende tekst. Brug mellemrum i stedet.</li>
         </ul>
-        <h1 class="h4">Vejledning</h1>
+        <h3 class="h4">Vejledning</h3>
         <ul>
             <li>Hold listerne så korte og faktuelle som muligt.</li>
             <li>Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
@@ -46,6 +45,5 @@ order: 07
             <li>Brug punkter, når der ikke er et hierarki i informationerne.</li>
         </ul>
       </section>
-    </article>
   </div>
 </div>

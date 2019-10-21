@@ -9,12 +9,12 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -26,7 +26,7 @@
 
       <div class="solution-info-mobile">
         <p><b>Erhvervsministeriet</b></p>
-        <p>Support: 72 20 60 00 <br><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+        <p>Support: 72 20 60 00 <br><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
 
       <div class="navbar">
@@ -49,7 +49,7 @@
                     <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
                         1. Oplysninger om afsender
                         <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
@@ -97,17 +97,15 @@
             "
         ) }}
 
-    <fieldset>
-        <legend><h1>Hvis AES har spørgsmål til sagen</h1></legend>
-        {{textinput("id-company-contact", "Virksomhedens kontaktperson", "", "input-width-m", "", "Input til virksomhedens kontaktperson", "", false, false, "", "Svend Pedersen", "", "", "", true)}}
-        <button href="#" class="button button-secondary mt-4 d-print-none">{{icon_svg("add")}} Vælg en anden kontaktperson</button>
-        <div class="mt-5">
-            {{textinput("id-company-number", "Telefonummer til kontaktperson", "", "input-width-xs", "", "Telefonummer til kontaktperson", "", false, false, "", "")}}
-        </div>
-    </fieldset>
+    <h1>Hvis AES har spørgsmål til sagen</h1>
+    {{textinput("id-company-contact", "Virksomhedens kontaktperson", "", "input-width-m", "", "Input til virksomhedens kontaktperson", "", false, false, "", "Svend Pedersen", "", "", "", true)}}
+    <button class="button button-secondary mt-4 d-print-none">{{icon_svg("add")}} Vælg en anden kontaktperson</button>
+    <div class="mt-5">
+        {{textinput("id-company-number", "Telefonummer til kontaktperson", "", "input-width-xs", "", "Telefonummer til kontaktperson", "", false, false, "", "")}}
+    </div>
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-3" class="button button-primary">Næste</a>
-        <a href="/pages/eksempler/AES-erstatningssag/aes-1" class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+        <a href="/pages/eksempler/AES-erstatningssag/aes-1" class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 {% endblock %}

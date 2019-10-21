@@ -5,6 +5,7 @@ type: component
 title: Cards
 category: Komponenter_category
 subcategory: Komponenter
+anchor: true
 subnav:
 - text: Card med fuld bredde
   href: '#card-med-fuld-bredde'
@@ -42,7 +43,7 @@ subnav:
     </ul>
 </section>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="code-documentation">
     Implementering
   </button>

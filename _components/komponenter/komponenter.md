@@ -80,14 +80,6 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
   </div>
   <div class="col-12 col-md-4">
     <div class="demo-component-box">
-        <a href="/komponenter/modals/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
-            <img src="{{ site.baseurl }}/img/componenticons/Modal.svg" alt="">
-        </a>
-        <p><a href="/komponenter/modals/">Modalvinduer</a></p>
-    </div>
-  </div>
-  <div class="col-12 col-md-4">
-    <div class="demo-component-box">
         <a href="/komponenter/overflowmenu/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Overflow menu.svg" alt="">
         </a>

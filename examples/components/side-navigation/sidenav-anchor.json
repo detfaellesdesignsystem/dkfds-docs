@@ -1,0 +1,54 @@
+{
+  "sidenavsNormal":
+  {
+    "links": [
+      {
+        "text": "Hovedside"
+      },
+      {
+        "text": "Hovedside",
+        "current": true,
+        "links": [
+          {
+            "text": "Underside"
+          },
+          {
+            "text": "Underside",
+            "active": true,
+            "isAnchorLinks": true,
+            "links": [
+              {
+                "text": "Anchor link",
+                "href" : "#"
+              },
+              {
+                "text": "Anchor link",
+                "href" : "#"
+              },
+              {
+                "text": "Anchor link",
+                "href" : "#"
+              },
+              {
+                "text": "Anchor link",
+                "href" : "#"
+              }
+            ]
+          },
+          {
+            "text": "Underside"
+          },
+          {
+            "text": "Underside"
+          },
+          {
+            "text": "Underside"
+          }
+        ]
+      },
+      {
+        "text": "Hovedside"
+      }
+    ]
+  }
+}

@@ -9,7 +9,7 @@ order: 03
 {% include code/preview.html component="labels" %}
 {% include code/accordion.html component="labels" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="labels-docs-tech">
     Implementering
@@ -20,13 +20,12 @@ order: 03
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typolabels-docs">
     Retningslinjer
   </button>
   <div id="typolabels-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Feltoverskrift (label)</h3>
           <p>Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er dit spørgsmål til brugeren og feltet, som brugerne kan skrive i, er svaret de giver dig.</p>              
@@ -42,6 +41,5 @@ order: 03
           <p>Tabeloverskrifter er visuelt ens med feltoverskrifter. Du kan bruge dem til at skabe overblik over rækker eller kolonner af data i tabeller og lister.</p>
           <p>Tabeloverskrifter beskriver, hvad indholdet i en række eller kolonne angiver.</p>
       </section>
-    </article>
   </div>
 </div>

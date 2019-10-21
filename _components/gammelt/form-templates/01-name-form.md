@@ -7,7 +7,7 @@ lead: A standard template for collecting a person’s full name
 
 {% include code/preview.html component="name-form" %}
 {% include code/accordion.html component="name-form" %}
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="name-form-docs">
     Retningslinjer

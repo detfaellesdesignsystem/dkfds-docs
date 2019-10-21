@@ -6,33 +6,30 @@ order: 07
 
 {% include code/preview.html component="file-input" %}
 {% include code/accordion.html component="file-input" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="file-input-tech">
     Implementering
   </button>
   <div id="file-input-tech" aria-hidden="true" class="accordion-content">
-    <section>
-        <p>Vi anbefaler at bruge det indbyggede input felt til filer <code>type="file"</code> frem for en skræddersyet løsning.</p>
-        <p>Årsagen til dette er:</p>
-          <ul class="content-list">
-          <li>at feltet får fokus, når man tabulerer gennem siden</li>
-          <li>at feltet fungerer ved brug af tastatur</li>
-          <li>at feltet fungerer ved brug af hjælpemidler</li>
-          <li>at feltet fungerer, selv når JavaScript er utilgængeligt.</li>
-        </ul>
-        <p>Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.</p>
-    </section>
+    <p>Vi anbefaler at bruge det indbyggede input felt til filer <code>type="file"</code> frem for en skræddersyet løsning.</p>
+    <p>Årsagen til dette er:</p>
+      <ul class="content-list">
+      <li>at feltet får fokus, når man tabulerer gennem siden</li>
+      <li>at feltet fungerer ved brug af tastatur</li>
+      <li>at feltet fungerer ved brug af hjælpemidler</li>
+      <li>at feltet fungerer, selv når JavaScript er utilgængeligt.</li>
+    </ul>
+    <p>Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.</p>
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="file-input-docs">
     Retningslinjer
   </button>
   <div id="file-input-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <p>Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.</p>
@@ -48,5 +45,4 @@ order: 07
               <li>Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.</li>
           </ul>
       </section>
-  </article>
 </div>

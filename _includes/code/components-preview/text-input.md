@@ -41,7 +41,7 @@ title: Text-input.html
             låst</label>
 
         <input class="form-input   " placeholder="" id="input-disabled"
-            value="" name="" type="text" disabled="disabled">
+            value="" name="input-disabled" type="text" disabled="disabled">
     </div>
 
     <div class="form-group">
@@ -50,7 +50,7 @@ title: Text-input.html
                 (frivilligt)</span></label>
 
         <input class="form-input   " placeholder="" id="input-optional"
-            value="" name="" type="text">
+            value="" name="input-optional" type="text">
     </div>
 
     <div class="form-group">
@@ -58,7 +58,7 @@ title: Text-input.html
             readonly</label>
 
         <input class="form-input   " placeholder="" id="input-readonly"
-            value="012345-6789" name="" type="text" readonly>
+            value="012345-6789" name="input-readonly" type="text" readonly>
     </div>
 
 </div>

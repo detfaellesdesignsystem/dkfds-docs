@@ -3,14 +3,13 @@ permalink: /preview-components/example-flytning-page-1.html
 layout: iframed 
 title: Example-flytning-page-1.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
-                <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
@@ -49,7 +48,7 @@ title: Example-flytning-page-1.html
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
-                        class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" tabindex="-1" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+                        class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
             </div>
@@ -57,7 +56,7 @@ title: Example-flytning-page-1.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -226,9 +225,7 @@ title: Example-flytning-page-1.html
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
             <div class="card card-align-height">
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header adressebeskyttelse">
-                        Adressebeskyttelse</p>
+                    <p class="h5 header-title">Adressebeskyttelse</p>
                     <p class="sub-header">Her kan du kan oprette, rette
                         eller slette dine adressebeskyttelser.</p>
                 </div>
@@ -239,7 +236,7 @@ title: Example-flytning-page-1.html
                                 <li>
                                     <a href="#"
                                         class="icon-link">Adressebeskyttelse
-                                        <svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#open-in-new"></use></svg></a>
+                                        <svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#open-in-new"></use></svg></a>
                                 </li>
                             </ul>
                         </div>
@@ -250,9 +247,7 @@ title: Example-flytning-page-1.html
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
             <div class="card card-align-height">
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header adressebeskyttelse">Udrejse
-                    </p>
+                    <p class="h5 header-title">Udrejse</p>
                     <p class="sub-header">Hvis du flytter til udlandet,
                         skal du benytte nedenstående link.</p>
                 </div>
@@ -263,7 +258,7 @@ title: Example-flytning-page-1.html
                                 <li>
                                     <a href="#" class="icon-link">Anmeld
                                         udrejse
-                                        <svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#open-in-new"></use></svg></a>
+                                        <svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#open-in-new"></use></svg></a>
                                 </li>
                             </ul>
                         </div>
@@ -274,9 +269,7 @@ title: Example-flytning-page-1.html
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
             <div class="card card-align-height">
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header"
-                        aria-label="Card header adressebeskyttelse">
-                        Fuldmagt</p>
+                    <p class="h5 header-title">Fuldmagt</p>
                     <p class="sub-header">Afgiv en eller flere fulmagt til
                         at anmelde flytning.</p>
                 </div>
@@ -287,7 +280,7 @@ title: Example-flytning-page-1.html
                                 <li>
                                     <a href="#" class="icon-link">Angiv
                                         fuldmagt
-                                        <svg class="icon-svg " aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href="#open-in-new"></use></svg></a>
+                                        <svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#open-in-new"></use></svg></a>
                                 </li>
                             </ul>
                         </div>
@@ -310,7 +303,7 @@ title: Example-flytning-page-1.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>
@@ -328,14 +321,13 @@ title: Example-flytning-page-1.html
         data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true"
             aria-labelledby="modal-contact-1">
-            <header class="modal__header">
+            <div class="modal__header">
                 <h1 class="modal__title h2" id="modal-contact-1">
                     Kontakt
                 </h1>
-            </header>
-            <main class="modal__content">
-                <div class="alert alert-warning" role="alert"
-                    aria-label="Beskedbox der viser en advarsel">
+            </div>
+            <div class="modal__content">
+                <div class="alert alert-warning" role="alert">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information
                             af advarende karakter</h3>
@@ -356,15 +348,15 @@ title: Example-flytning-page-1.html
                 <p>Kan du ringe direkte til: 12 34 56 78</p>
                 <p>Telefonen er åben:</p>
                 <p class="m-0">
-                    Mandag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. 9-17</p>
                 <p class="m-0">
-                    Tirsdag-torsdag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp kl. 9-17
-                </p>
+                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    kl. 9-17</p>
                 <p class="m-0">
-                    Fredag:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     kl. kl. 9-14</p>
-            </main>
+            </div>
 
             <button class="modal__close button button-secondary"
                 aria-label="Close modal" data-micromodal-close>Luk</button>

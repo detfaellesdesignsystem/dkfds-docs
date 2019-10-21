@@ -9,7 +9,7 @@ title: Tringuide-clickable.html
 
             <ul class="sidenav-list">
 
-                <li>
+                <li class=" ">
                     <a href="">
                         1. Trin 1
 
@@ -20,7 +20,7 @@ title: Tringuide-clickable.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         2. Trin 2
 
@@ -31,8 +31,8 @@ title: Tringuide-clickable.html
                     </a>
                 </li>
 
-                <li>
-                    <a href="" class="active">
+                <li class=" active current">
+                    <a href="">
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
@@ -42,14 +42,14 @@ title: Tringuide-clickable.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         4. Trin 4
 
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         5. Trin 5
 

@@ -4,7 +4,7 @@ layout: iframed
 title: Text-input-width.html
 ---
 <div class="container">
-    <h4>Input bredde med rem</h4>
+    <h1 class="h4">Input bredde med rem</h1>
 
     <div class="form-group">
         <label class="form-label " for="input-type-text-xxs">Inputfelt med
@@ -51,7 +51,7 @@ title: Text-input-width.html
 </div>
 
 <div class="container">
-    <h4 class="mt-7">Input bredde med tegn</h4>
+    <h1 class="h4 mt-7">Input bredde med tegn</h1>
 
     <div class="form-group">
         <label class="form-label " for="input-type-text-char-4">Inputfelt

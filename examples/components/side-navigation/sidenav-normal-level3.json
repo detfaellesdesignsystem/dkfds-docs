@@ -3,47 +3,47 @@
   {
     "links": [
       {
-        "text": "Parent link"
+        "text": "Hovedside"
       },
       {
-        "text": "Current page",
+        "text": "Hovedside",
         "current": true,
         "links": [
           {
-            "text": "Child link"
+            "text": "Underside"
           },
           {
-            "text": "Child link",
+            "text": "Underside",
             "current": true,
             "links": [
               {
-                "text": "Grandchild link"
+                "text": "Underside"
               },
               {
-                "text": "Grandchild link"
+                "text": "Underside"
               },
               {
-                "text": "Grandchild link",
+                "text": "Underside",
                 "active": true
               },
               {
-                "text": "Grandchild link"
+                "text": "Underside"
               }
             ]
           },
           {
-            "text": "Child link"
+            "text": "Underside"
           },
           {
-            "text": "Child link"
+            "text": "Underside"
           },
           {
-            "text": "Child link"
+            "text": "Underside"
           }
         ]
       },
       {
-        "text": "Another link"
+        "text": "Hovedside"
       }
     ]
   }

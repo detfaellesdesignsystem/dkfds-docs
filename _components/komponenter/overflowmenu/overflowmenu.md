@@ -36,7 +36,7 @@ lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links el
   </ul>
 </section>
 
-<div class="accordion-bordered mt-7">
+<div class="accordion accordion-bordered mt-7">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="overflow-docs">
     Implementering
   </button>
@@ -54,9 +54,17 @@ lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links el
           <li>Højre: <code>.overflow-menu--open-right</code></li>
         </ul>
         <p>Der er lavet et specifikt liste element til overflow-menuen (se <code>.overflow-list</code>) som kan indeholde links eller buttons. Det er dog ikke nødvendigt at benytte denne liste. Overflow-menuen er bare en container hvor man kan placere det indhold man nu har lyst til.</p>
-        <h2 class="h4">Javascript</h2>
+        <h2 class="h4">Skjul/vis</h2>
         <p>Initialiser collapse/expand javascript med at placere følgende på button elementet: <code>class="js-dropdown" data-js-target="#overflow1"</code>
         Elementet som skal collapses/expandes skal have et matchende id <code>id="overflow1"</code> (placeres på <code>.overflow-menu-inner</code>)</p>
+        <h2 class="h4">Javascript</h2>
+        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+        <pre>new DKFDS.Dropdown(document.getElementByID('OVERFLOW-BUTTON-ID'));</pre>
+        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
+        <h3 class="h5">Events</h3>
+        <p>Når en overflow menu bliver foldet ud, bliver eventet <code>fds.dropdown.open</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
+        <p>Når en overflow menu bliver foldet ind, bliver eventet <code>fds.dropdown.close</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
     </section>
   </div>
 </div>

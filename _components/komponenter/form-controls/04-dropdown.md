@@ -8,13 +8,12 @@ lead:
 
 {% include code/preview.html component="select" classes="preview-dropdown" %}
 {% include code/accordion.html component="select" %}
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="dropdown-docs">
     Retningslinjer
   </button>
   <div id="dropdown-docs" aria-hidden="false" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Tilgængelighed</h3>
           <p>Dropdown menu skal have et label tilknyttet.</p>
@@ -40,6 +39,5 @@ lead:
               <li>Anvend ikke JavaScript til automatisk at sende den valgte værdi, men sørg for at der er en submit-knap til at sende formularen med.</li>
           </ul>
       </section>
-    </article>
   </div>
 </div>

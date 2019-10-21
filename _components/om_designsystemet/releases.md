@@ -5,6 +5,7 @@ title: Release notes
 category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for dkfds
+anchor: true
 subnav:
 - text: Version 4.4.0
   href: '#version-440'

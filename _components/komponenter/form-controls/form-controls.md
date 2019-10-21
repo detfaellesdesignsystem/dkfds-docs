@@ -8,6 +8,7 @@ title: Formular-elementer
 category: Komponenter_category
 subcategory: Komponenter
 lead: Du kan bruge formularelementerne til at opbygge blanketter til din selvbetjeningsløsning. 
+anchor: true
 subnav:
 - text: Felter
   href: '#felter'

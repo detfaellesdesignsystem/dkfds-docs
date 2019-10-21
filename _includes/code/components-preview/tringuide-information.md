@@ -9,7 +9,7 @@ title: Tringuide-information.html
 
             <ul class="sidenav-list">
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             1. Trin 1
@@ -26,7 +26,7 @@ title: Tringuide-information.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             2. Trin 2
@@ -43,8 +43,8 @@ title: Tringuide-information.html
                     </a>
                 </li>
 
-                <li>
-                    <a href="" class="active">
+                <li class=" active current">
+                    <a href="">
                         <div class="d-inline-block">
                             3. Trin 3 (valgt)
 
@@ -60,7 +60,7 @@ title: Tringuide-information.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             4. Trin 4
@@ -73,7 +73,7 @@ title: Tringuide-information.html
                     </a>
                 </li>
 
-                <li>
+                <li class=" ">
                     <a href="">
                         <div class="d-inline-block">
                             5. Trin 5

@@ -7,10 +7,10 @@ title: Tringuide-locked.html
     <div class="row">
         <div class="col-12 col-lg-3 sidebar-col">
 
-            <ul class="sidenav-list-locked">
+            <ul class="sidenav-list sidenav-list-locked">
 
-                <li class="disabled">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
                         1. Trin 1
 
                         <span class="sidenav-icon">
@@ -20,8 +20,8 @@ title: Tringuide-locked.html
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
                         2. Trin 2
 
                         <span class="sidenav-icon">
@@ -31,9 +31,8 @@ title: Tringuide-locked.html
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a class="active" disabled tab-index="-1"
-                        aria-disabled="true">
+                <li class="disabled active current ">
+                    <a tabindex="-1" aria-disabled="true">
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
@@ -43,15 +42,15 @@ title: Tringuide-locked.html
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
                         4. Trin 4
 
                     </a>
                 </li>
 
-                <li class="disabled">
-                    <a disabled tab-index="-1" aria-disabled="true">
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
                         5. Trin 5
 
                     </a>

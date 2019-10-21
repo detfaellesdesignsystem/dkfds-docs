@@ -10,7 +10,7 @@ order: 05
 {% include code/preview.html component="inlinetext" %}
 {% include code/accordion.html component="inlinetext" %}
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="bodycopy-docs-tech">
     Implementering
@@ -28,14 +28,12 @@ order: 05
   </div>
 </div>
 
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typobody-docs">
     Retningslinjer
   </button>
   <div id="typobody-docs" aria-hidden="false" class="accordion-content">
-    <article>
-      <section>   
           <ul>
             <li>Undgå "mure af tekst" i din selvbetjeningsløsning: Bruge white space / mellemrum til at skabe luft mellem tekster og øge læsbarheden.</li>
             <li>Brug kun fed tekst i meget begrænset omfang: Fx inde i sætninger til at fremhæve særligt centrale tal eller pointer.</li>
@@ -43,7 +41,5 @@ order: 05
             <li>Brug ikke understreget tekst, da det ligner links.</li>
             <li>Brug ikke kursiv tekst, da det nedsætter læsbarheden.</li>
           </ul>
-      </section>
-    </article>
   </div>
 </div>

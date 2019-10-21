@@ -17,7 +17,7 @@ alerts:
 
 {% include code/preview.html component="date-input-datepicker" %}
 {% include code/accordion.html component="date-input-datepicker" %}
-<div class="accordion-bordered">
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="tech-docs">
     Implementering
@@ -29,13 +29,12 @@ alerts:
   </div>
 </div>
 
-<div class="accordion-bordered accordion-docs">
+<div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="guideline-docs">
     Retningslinjer
   </button>
   <div id="guideline-docs" class="accordion-content">
-    <article>
       <section>
           <h3 class="h4">Brugervenlighed</h3>
           <h4 class="h5">Anvendes til</h4>
@@ -43,6 +42,5 @@ alerts:
           <h4 class="h5">Anvendes ikke til</h4>
           <p>Tidsangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/form-controls/#datoangivelse" title="">datoangivelse</a></p>
       </section>
-    </article>
   </div>
 </div>

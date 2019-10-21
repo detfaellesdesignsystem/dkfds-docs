@@ -10,12 +10,12 @@
 {% from "components/form/controls/select.njk" import select as select %}
 
 {% block header %}
-  <header class="header" role="banner">
+  <header class="header">
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav"> <!-- collapsible-->
+    <nav class=" nav"> <!-- collapsible-->
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -27,7 +27,7 @@
 
       <div class="solution-info-mobile">
         <p><b>Erhvervsministeriet</b></p>
-        <p>Support: 72 20 60 00 <br><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+        <p>Support: 72 20 60 00 <br><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
 
       <div class="navbar">
@@ -50,7 +50,7 @@
                 <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
                     1. Oplysninger om afsender
                     <span class='sidenav-icon'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                     </span>
                 </a>
             </li>
@@ -58,7 +58,7 @@
                 <a href='/pages/eksempler/AES-erstatningssag/aes-2'>
                     2. Hvis AES har spørgsmål til sagen
                     <span class='sidenav-icon'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                     </span>
                 </a>
             </li>
@@ -66,7 +66,7 @@
                 <a href='/pages/eksempler/AES-erstatningssag/aes-3'>
                     3. Oplysninger om skadelidte
                     <span class='sidenav-icon'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                     </span>
                 </a>
             </li>
@@ -74,7 +74,7 @@
                 <a href='/pages/eksempler/AES-erstatningssag/aes-4'>
                     4. Sagens natur
                     <span class='sidenav-icon'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                     </span>
                 </a>
             </li>
@@ -82,7 +82,7 @@
                 <a href='/pages/eksempler/AES-erstatningssag/aes-5'>
                     5. Oplysninger om sagen
                     <span class='sidenav-icon'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
+                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                     </span>
                 </a>
             </li>
@@ -113,8 +113,8 @@
     <h1 id="tilfoej-documentation">Tilføj dokumentation for første undersøgelse af skaden</h1>
     <form class="form">
         <div class="form-group file-input">
-            <label class="form-label" for="file">Tilføj dokument</label>
-            <input type="file" id="file" name="file">
+            <label class="form-label" for="input-file">Tilføj dokument</label>
+            <input type="file" id="input-file" name="file">
         </div>
     </form>
     </div>
@@ -131,13 +131,13 @@
             <tr>
                 <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}}prn1023152_journal.pdf</td>
                 <td class="mt-4 mt-lg-0">
-                  {{select("Navngiv dokument", "select-dokumentationtype", "Vælg dokumentationstype", select_example.options, "", "", "", "sr-only")}}</td>
+                  {{select("Navngiv dokument", "select-dokumentationtype", "Vælg dokumentationstype", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "Vælg type", "", "", "sr-only")}}</td>
                 <td class="mt-4 mt-lg-0">
                 {{textinput("id-pagenumber", "Angiv sidetal", "(frivilligt)", "input-width-xs", "", "Sidetal", "sr-only", false, "")}}
                 </td>
                 <td class="align-text-md-right mt-4 mt-lg-0">
                     <button class="button button-unstyled">
-                        <svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#delete-outline"></use></svg>
+                        <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete-outline"></use></svg>
                         <span class="sr-only">Slet</span>
                     </button>
                 </td>
@@ -147,7 +147,7 @@
 
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-7" class="button button-primary">Næste</a>
-        <a href="/pages/eksempler/AES-erstatningssag/aes-5" class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
+        <a href="/pages/eksempler/AES-erstatningssag/aes-5" class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 {% endblock %}

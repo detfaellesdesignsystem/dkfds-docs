@@ -19,14 +19,14 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/detfaellesdesignsystem/dkfds-components" class="icon-link">
+                    <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" class="icon-link">
                         Se koden på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>
                     </a>
                 </li>
             </ul>
           </div>
           <div class="col-12 col-lg-5 align-text-center">
-            <img src="{{ site.baseurl }}/img/descriptionimages/Main_Illustration.svg" alt="Det Fælles Designsystem forside billede" class="d-none d-lg-inline-block">
+            <img src="{{ site.baseurl }}/img/descriptionimages/Main_Illustration.svg" alt="" class="d-none d-lg-inline-block">
           </div>
         </div>
     </div>
@@ -37,33 +37,33 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <div class="col-12 col-lg-4">
             <h2 class="mt-0">Design</h2>
             <p>Disse grundlæggende designbeslutninger danner fundament for hele systemet af komponenter, eksempler og systemet selv.</p>
-            <p><a href="/design">Følg designet</a></p>
+            <p><a href="/design/">Følg designet</a></p>
         </div>
         <div class="col-12 col-lg-4">
             <h2 class="mt-0">Komponenter</h2>
             <p>Komponenterne er byggeklodserne, som du kan bruge til at bygge den løsning dine brugere har behov for.</p>
-            <p><a href="/komponenter">Brug komponenterne</a></p>
+            <p><a href="/komponenter/">Brug komponenterne</a></p>
         </div>
         <div class="col-12 col-lg-4">
             <h2 class="mt-0">Eksempler</h2>
             <p>Få inspiration til, hvordan designsystemet kan anvendes til at bygge selvbetjenings-løsninger med.</p>
-            <p><a href="/eksempler">Se eksemplerne</a></p>
+            <p><a href="/eksempler/">Se eksemplerne</a></p>
         </div>
     </div>
     <hr />
-    <!--<div class="py-9">
+    <div class="py-9">
         <h2 class="mt-0">Samarbejde</h2>
         <p>Det Fælles Designsystem bliver løbende opdateret og vedligeholdt. For at sikre transparens, er systemet åbent for alle. Alle myndigheder med en interesse i at præge udviklingen og få indflydelse på designsystemets indhold er velkomne. </p>
         <ul class="nobullet-list">
-            <li><a href="#">Få indflydelse i Samarbejdsforum</a></li>
+            <li><a href="/omdesignsystemet/samarbejdsforum/">Få indflydelse i Samarbejdsforum</a></li>
             <li>
-                <a href="https://github.com/detfaellesdesignsystem/dkfds-components" class="icon-link">
+                <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">
                     Meld fejl og mangler ind via GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>
                 </a>
             </li>
         </ul>
     </div>
-    <hr />-->
+    <hr />
     <div class="py-9">
         <h2 class="mt-0">Support</h2>
         <p>Se hvilke krav som gælder for din løsning. Har du spørgsmål, så kontakt os på mail, så skal vi hjælpe dig så godt vi kan, men brug GitHub til support og teknik.</p>

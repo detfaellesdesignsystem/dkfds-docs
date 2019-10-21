@@ -35,8 +35,8 @@ title: Tringuide-overflowmenu.html
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href='#' class='active'>
+                        <li class='active current'>
+                            <a href='#'>
                                 3. Trin 3 (valgt)
                             </a>
                         </li>

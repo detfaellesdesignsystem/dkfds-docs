@@ -50,7 +50,7 @@ title: Grid.html
     </div>
 </div>
 
-<style scoped>
+<style>
     .grid-example {
         margin-bottom: 1em;
         padding-left: 16px;

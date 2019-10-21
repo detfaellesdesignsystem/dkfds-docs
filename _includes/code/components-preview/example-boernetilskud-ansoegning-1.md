@@ -3,14 +3,13 @@ permalink: /preview-components/example-boernetilskud-ansoegning-1.html
 layout: iframed 
 title: Example-boernetilskud-ansoegning-1.html
 ---
-<header class="header" role="banner">
+<header class="header">
 
     <!--1A: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" title="Hjem"
+            <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
-                <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
@@ -54,7 +53,7 @@ title: Example-boernetilskud-ansoegning-1.html
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class=" nav">
+    <nav class=" nav">
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
@@ -151,7 +150,7 @@ title: Example-boernetilskud-ansoegning-1.html
 </header>
 
 <main class="container page-container">
-    <header class="page-header">
+    <section class="page-content">
 
         <div class="overflow-menu  overflow-menu--open-right ">
             <button class="button-overflow-menu js-dropdown "
@@ -203,15 +202,12 @@ title: Example-boernetilskud-ansoegning-1.html
         </div>
 
         <h1>Hvilke børn søger du tilskud til?</h1>
-    </header>
-    <section class="page-content">
         <div class="row">
             <div class="col-12 col-md-8 col-lg-5">
                 <form class="form">
                     <div class="form-group">
                         <fieldset>
-                            <legend>
-                                <h2 class="h4">Jeg søger tilskud til:</h2>
+                            <legend class="h4">Jeg søger tilskud til:
                             </legend>
                             <ul class="nobullet-list">
                                 <li>
@@ -232,7 +228,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                     </div>
 
                                     <input id="checkbox-id-1"
-                                        type="checkbox" name=""
+                                        type="checkbox"
                                         value="checkbox1_selected"
                                         class="form-checkbox  checkbox-large "
                                         disabled />
@@ -259,7 +255,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                     </div>
 
                                     <input id="checkbox-id-2"
-                                        type="checkbox" name=""
+                                        type="checkbox"
                                         value="checkbox2_selected"
                                         class="form-checkbox  checkbox-large "
                                         disabled />
@@ -271,7 +267,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                 <li>
 
                                     <input id="checkbox-id-3"
-                                        type="checkbox" name=""
+                                        type="checkbox"
                                         value="checkbox3_selected"
                                         class="form-checkbox  checkbox-large " />
                                     <label for="checkbox-id-3"
@@ -311,7 +307,7 @@ title: Example-boernetilskud-ansoegning-1.html
                             href="mailto:support@example.dk">support@example.dk</a>
                     </li>
                     <li class=""><a class="function-link"
-                            href="tel:12 34 56 78">12 34 56 78</a></li>
+                            href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Tilgængelighedserklæring</a>
                     </li>

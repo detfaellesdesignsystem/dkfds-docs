@@ -2,12 +2,12 @@
 {% from "components/header/header.njk" import portal_header as portal_header %}
 {% from "components/header/header.njk" import solution_header as solution_header %}
 
-<header class="header" role="banner">
+<header class="header">
   {{ portal_header(portal_header_data) }}
   {{ solution_header(solution_header_data) }}
 
   <div class="overlay"></div>
-  <nav role="navigation" class=" nav"> <!-- collapsible-->
+  <nav class=" nav"> <!-- collapsible-->
     <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
     <div class="portal-info-mobile">

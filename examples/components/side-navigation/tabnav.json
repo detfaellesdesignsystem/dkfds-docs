@@ -2,23 +2,41 @@
   "tabnavlist": {
     "items": [
       {
-        "title": "Tabnav 1"
+        "title": "Fane 1",
+        "id": "tab1",
+        "heading": "Indhold 1",
+        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
       },
       {
-        "title": "Tabnav 2",
-        "active": true
+        "title": "Fane 2",
+        "active": true,
+        "id": "tab2",
+        "heading": "Indhold 2",
+        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
       },
       {
-        "title": "Tabnav 3"
+        "title": "Fane 3",
+        "id": "tab3",
+        "heading": "Indhold 3",
+        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
       },
       {
-        "title": "Tabnav 4"
+        "title": "Fane 4",
+        "id": "tab4",
+        "heading": "Indhold 4",
+        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
       },
       {
-        "title": "Tabnav 5"
+        "title": "Fane 5",
+        "id": "tab5",
+        "heading": "Indhold 5",
+        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
       },
       {
-        "title": "Tabnav 6"
+        "title": "Fane 6",
+        "id": "tab6",
+        "heading": "Indhold 6",
+        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
       }
     ]
   }
