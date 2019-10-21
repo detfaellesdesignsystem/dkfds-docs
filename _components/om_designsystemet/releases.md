@@ -7,6 +7,8 @@ subcategory: Om designsystemet
 description: Release notes for dkfds
 anchor: true
 subnav:
+- text: Version 5.0.0
+  href: '#version-500'
 - text: Version 4.4.0
   href: '#version-440'
 - text: Version 4.3.0
@@ -47,6 +49,48 @@ subnav:
 
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
+
+
+<h2 class="mb-0" id="version-500">Version 5.0.0</h2>
+<p class="small-text mt-0">21-10-2019</p>
+<ul>
+    <li>
+        <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initere javascript med funktionen <code>DKFDS.init()</code> på hver side.
+        <p class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="https://designsystem.dk/komigang/tiludviklere/">implmentering af dkfds til udviklere</a>.</p>
+    </li>
+    <li>
+        <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
+        <p class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+    </li>
+    <li>
+        <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/komponenter/sidenav/">Sidenavigationen</a> har fået nyt design.
+        <p class="form-hint mt-0">HTML er blevet ændret - se korrekt struktur under <a href="/komponenter/sidenav/">komponenten</a>.</p>
+    </li>
+    <li>
+        <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/komponenter/tabnav/">Faneblads-komponenten</a> er blevet redefineret.
+        <p class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/tabnav/">komponenten</a>.</p>
+    </li>
+    <li>
+        <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/udvidelser/tippy/">Den gamle tooltip (tippy)</a> er blevet flyttet til udvidelser.
+        <p class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</p>
+    </li>
+    <li>
+        <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/udvidelser/micromodal/">Modalvinduer-komponenten</a> er blevet flyttet til udvidelser.
+        <p class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</p>
+    </li>
+    <li>
+        Ny og simpel <a href="/komponenter/tooltip/">tooltip</a> komponent er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
+    </li>
+    <li>
+        Der er tilføjet events til komponenter. Man kan nu koble sig på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnitter på hver <a href="/komponenter/">komponent</a>. 
+    </li>
+    <li>
+        Information om <a href="/komigang/krav/">Krav til selvbetjeningsløsninger</a> er nu tilføjet til designsystem.dk. 
+    </li>
+    <li>
+        Tabellerne følger nu <a href="/komigang/tildesignere/sideopbygning/#baselinegrid">8point grid</a>
+    </li>
+</ul>
 
 <h2 class="mb-0" id="version-440">Version 4.4.0</h2>
 <p class="small-text mt-0">20-08-2019</p>

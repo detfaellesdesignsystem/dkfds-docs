@@ -1616,10 +1616,13 @@
 <p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser dkfds til dit eget tema</a>.</p>
 <h4 class="h5">Inkludér JavaScript</h4>
 <p>JavaScript kan inkluderes med et script tag eller importeres ind i en eksistende js fil.</p>
+<h5 class="h6">Script tag<h5>
 <pre>&lt;script src='[sti til dkfds mappen]/dist/js/dkfds.js'&gt;&lt;/script&gt;</pre>
+<h5 class="h6">Importer modulet i en .js fil<h5>
 <pre>import * as DKFDS from "dkfds";</pre>
+<h5 class="h6">Init<h5>
 <p>Når dkfds er inkluderet skal du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
-<h5 class="h6">Eksempel</h5>
+<p class="mb-2">Eksempel:</p>
 <pre>
 document.addEventListener("DOMContentLoaded", function(){
   // Handler when the DOM is fully loaded
@@ -1627,8 +1630,9 @@ document.addEventListener("DOMContentLoaded", function(){
 });</pre>
 <p>For yderligere JavaScript funktioner, se under hver <a href="/komponenter/">komponent</a>.</p>
 
+
 <h4 id="temahaandtering">Temahåndtering</h4>
-<p>Designsystemer er udviklet med 2 forskellige temaer. Standard temaet er det neutrale tema hvor primærfarven er grå. Denne grå farve skal som minimum overskrives, da det neutrale tema blot er ment som en skabelon til sit eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.</p>
+<p>Designsystemet er udviklet med 2 forskellige temaer. Standard temaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.</p>
 <p>Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nolge få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.</p>
 <p class="mb-2">Tema eksempel – borger.dk (scss):</p>
 <pre>
@@ -1657,7 +1661,7 @@ $icons-folder-path: '~dkfds/src/img/svg-icons';
 <h5>Browserspecifik styling tilføjes i projektet</h5>
 <h6>Webpack</h6>
 <p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>
-<p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p>
+<p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p> 
 <h6>Gulp</h6>
 <p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>
 <p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p>
@@ -1670,18 +1674,19 @@ $icons-folder-path: '~dkfds/src/img/svg-icons';
   'IE 10',
   'IE 9',
 ]
-</pre>
+</pre> 
+
 
 <h4>Fix for bug i Microsoft Edge og Internet Explorer</h4>
 <p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje stylingen direkte i <code>head</code> sektionen.</p>
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>  &lt;style&gt;
-    /<span class="k">*</span> Fixes Edge bug, where list-style-type:none is ignored <span class="k">if </span>it<span class="s1">'s set after li has been hidden. */   
+```shell
+  <style>
+    /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. */   
     ul {
       list-style-type: none;
     }
-  &lt;/style&gt;
-</span></code></pre>
-</div>
+  </style>
+```
 
 <h2>DKFDS Plugins</h2>
 <p>Du skal kun inkludere styling (CSS eller SCSS) fra dkfds-plugins projektet.</p>
@@ -1696,9 +1701,9 @@ $icons-folder-path: '~dkfds/src/img/svg-icons';
 
 <p>dkfds-plugins projektet er tilgængeligt via npm og du kan installere det ved at skrive følgende i en kommando-prompt:</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>npm install dkfds-plugins --save
-</code></pre>
-</div>
+```shell
+npm install dkfds-plugins --save
+```
 
 <p>Modulet 'dkfds-plugins' er nu installeret i 'node_modules' mappen.</p>
 <p>Inkluder derefter temaerne enten som css direkte:</p>
@@ -1712,6 +1717,7 @@ $icons-folder-path: '~dkfds/src/img/svg-icons';
 <pre>
 @import "~dkfds-plugins/dist/scss/dkfds-datatables-theme";
 </pre>
+</h5></h5></h5></h5></h5></h5>
 
       </section>
     </main>
