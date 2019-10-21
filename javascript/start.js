@@ -7,14 +7,18 @@ import {CookiePrompter, NetMinersTracker, CookieMgr } from  "./vendor/CookieProm
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
-$(document).ready(function () {
-
+document.addEventListener("DOMContentLoaded", function(){
+    // Handler when the DOM is fully loaded
     DKFDS.init();
 
-    let path = window.location.pathname;
-    if(path.includes('mastertest')){
+
+    let path = window.location.pathname.split('/');
+    if(path.indexOf('mastertest') !== -1){
         new TestFDS(DKFDS);
     }
+});
+
+$(document).ready(function () {
 
     let cookiePrompt = CookiePrompter.init({
         trackers: [{
@@ -181,11 +185,13 @@ $(document).ready(function () {
         if(document.getElementsByClassName('layout-demo').length > 0){
             var showPopup = true;
             if(e.target != document){
-                var targetUrl = document.activeElement.href.split('/');
-                var currentUrl = window.location.href.split('/');
-                if(targetUrl.length != 0){
-                    if(targetUrl[5] == currentUrl[5]){
-                        showPopup = false;
+                if(document.activeElement.href !== null && document.activeElement.href !== undefined && window.location.href !== null && window.location.href !== undefined) {
+                    var targetUrl = document.activeElement.href.split('/');
+                    var currentUrl = window.location.href.split('/');
+                    if (targetUrl.length != 0) {
+                        if (targetUrl[5] == currentUrl[5]) {
+                            showPopup = false;
+                        }
                     }
                 }
             }

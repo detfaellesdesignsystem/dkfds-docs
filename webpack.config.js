@@ -20,7 +20,7 @@ module.exports = function (outputPath, prod) {
       rules: [
         {
           test: /\.js$/,
-          exclude: /node_modules|vendor/,
+          exclude: [/node_modules\/(?!(micromodal)\/).*/, /vendor/],
           use: [
             {
               loader: "babel-loader",

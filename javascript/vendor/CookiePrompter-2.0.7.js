@@ -586,4 +586,4 @@ var CookiePrompter = (function () {
     return { init: init, removeCookies: removeCookies,removePrompt:removePrompt,eraseCookiesAndRemovePrompt:eraseCookiesAndRemovePrompt };
 })();
 
-module.exports = {CookiePrompter, NetMinersTracker, CookieMgr, TestTracker, ReferrerHandler, SiteImproveTracker};
+module.exports = { CookiePrompter: CookiePrompter, NetMinersTracker: NetMinersTracker, CookieMgr: CookieMgr, TestTracker: TestTracker, TestTracker: TestTracker, SiteImproveTracker: SiteImproveTracker};

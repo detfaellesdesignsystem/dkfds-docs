@@ -1,5 +1,3 @@
-import $ from "jquery";
-window.$ = window.jQuery = $;
 import tippy from 'tippy.js';
 
 var initTippy = function (){
@@ -10,7 +8,6 @@ var initTippy = function (){
     });
 };
 
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function(){
     initTippy();
 });
-

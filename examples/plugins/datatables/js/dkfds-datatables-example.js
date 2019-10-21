@@ -1,7 +1,7 @@
 'use strict';
 import $ from "jquery";
-window.$ = window.jQuery = $
-
+window.$ = window.jQuery = $;
+import "@babel/polyfill/noConflict";
 import MicroModal from 'micromodal';
 const dropdown = require('dkfds/src/js/components/dropdown.js');
 const dt = require( 'datatables.net' ); //Core datatables
@@ -402,8 +402,6 @@ class datatablesExamples {
     var downloadButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Download som PDF'><svg class='icon-svg m-0' aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href='#download'></use></svg></button>";
     var settingsButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Rediger egenskaber'><svg class='icon-svg m-0' aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href='#settings'></use></button>";
     $('.dataTables_filter').prepend(downloadButton).prepend(settingsButton);
-    var event = new Event('init-tooltips');
-    $('body')[0].dispatchEvent(event);
 
     /////////////////////////////////
     //PRAKTIKPLADS DATATABLE

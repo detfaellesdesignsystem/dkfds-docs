@@ -1,8 +1,7 @@
-import $ from "jquery";
-window.$ = window.jQuery = $;
+import "@babel/polyfill/noConflict";
 import MicroModal from 'micromodal';
 
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function(){
     MicroModal.init({
         onShow: function(){
             document.getElementsByTagName('body')[0].classList.add('modal-active');
