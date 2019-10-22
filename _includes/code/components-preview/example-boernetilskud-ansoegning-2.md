@@ -106,10 +106,9 @@ title: Example-boernetilskud-ansoegning-2.html
                             <span>Sager</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="current">
                         <a href="/pages/eksempler/boernetilskud/boernetilskud-1"
-                            class="nav-link current"
-                            title="Fællesoffentlige krav">
+                            class="nav-link" title="Fællesoffentlige krav">
                             <span>Ansøgninger</span>
                         </a>
                     </li>

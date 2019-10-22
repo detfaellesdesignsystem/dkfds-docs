@@ -1,9 +1,7 @@
-
 {% assign _uniqueid = 0 %}
 {% for link in include.links -%}
   {% assign _page = link.href | resolve_permalink %}
   {% assign _uniqueid = _uniqueid | plus:1 %}
-  <li>
     {%
       include nav/nav-primary_nav-item.html
       page=_page
@@ -13,5 +11,4 @@
       text=link.text
       uniqueid=_uniqueid
     %}
-  </li>
 {% endfor %}

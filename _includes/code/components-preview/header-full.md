@@ -83,10 +83,10 @@ title: Header-full.html
                             <span>Fjerde menupunkt</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="current">
                         <div class="overflow-menu">
                             <button
-                                class="current button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
+                                class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
                                 data-js-target="#headeroverflow1"
                                 aria-haspopup="true" aria-expanded="false">
                                 <span>Femte menupunkt</span>
@@ -94,11 +94,10 @@ title: Header-full.html
                             <div class="overflow-menu-inner"
                                 id="headeroverflow1" aria-hidden="true">
                                 <ul class="overflow-list">
-                                    <li>
-                                        <a class="current"
-                                            href="#">Subsektion med en
-                                            meget lang titel som går i
-                                            flere linier</a>
+                                    <li class="active">
+                                        <a href="#">Subsektion med en meget
+                                            lang titel som går i flere
+                                            linier</a>
                                     </li>
                                     <li>
                                         <a href="#">Subsektion title</a>
