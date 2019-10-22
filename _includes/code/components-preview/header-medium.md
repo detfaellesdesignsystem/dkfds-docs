@@ -63,9 +63,8 @@ title: Header-medium.html
                             <span>Første menupunkt</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="current nav-link"
-                            title="Eksempler">
+                    <li class="current">
+                        <a href="#" class="nav-link" title="Eksempler">
                             <span>Andet menupunkt</span>
                         </a>
                     </li>
