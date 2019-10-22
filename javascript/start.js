@@ -181,17 +181,16 @@ $(document).ready(function () {
 
     // alert upon closing page
     window.onbeforeunload = function (e) {
+        console.log(e);
         // do not show popup if destination is within the same solution flow
         if(document.getElementsByClassName('layout-demo').length > 0){
             var showPopup = true;
-            if(e.target != document){
-                if(document.activeElement.href !== null && document.activeElement.href !== undefined && window.location.href !== null && window.location.href !== undefined) {
-                    var targetUrl = document.activeElement.href.split('/');
-                    var currentUrl = window.location.href.split('/');
-                    if (targetUrl.length != 0) {
-                        if (targetUrl[5] == currentUrl[5]) {
-                            showPopup = false;
-                        }
+            if(document.activeElement.href !== null && document.activeElement.href !== undefined && window.location.href !== null && window.location.href !== undefined) {
+                var targetUrl = document.activeElement.href.split('/');
+                var currentUrl = window.location.href.split('/');
+                if (targetUrl.length != 0) {
+                    if (targetUrl[5] == currentUrl[5]) {
+                        showPopup = false;
                     }
                 }
             }
