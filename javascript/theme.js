@@ -2,7 +2,7 @@ const themeAlertId = 'themeAlert';
 const cookieName = 'theme';
 const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
-const isDebugging = true;
+const isDebugging = false;
 const demoSelectorId = 'themeSelector';
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // load stylesheet
     setStylesheet();
+
+    setFooterSwitcher();
 
     // handle theme selector on demo pages
     initDemoThemeSelector();
@@ -78,12 +80,17 @@ let setStylesheet = function(){
 
     document.getElementsByTagName('head')[0].appendChild(lnk);
 };
+
 let hideThemeAlert = function(){
-    document.getElementById(themeAlertId).classList.add('d-none');
+    if(document.getElementById(themeAlertId) !== null) {
+        document.getElementById(themeAlertId).classList.add('d-none');
+    }
 };
 
 let showThemeAlert = function(){
-    document.getElementById(themeAlertId).classList.remove('d-none');
+    if(document.getElementById(themeAlertId) !== null) {
+        document.getElementById(themeAlertId).classList.remove('d-none');
+    }
 };
 
 let setRandomThemeCookie = function(){
@@ -154,11 +161,9 @@ let getCookie = function(name) {
 let initDemoThemeSelector = function(){
     let demoSelector = document.getElementById(demoSelectorId);
     if(demoSelector !== null && demoSelector !== undefined){
-        console.log('demoSelector', demoSelector);
         setCorrectSelectedtheme();
 
         demoSelector.addEventListener('change', (event) => {
-            console.log('change event', event);
            let value = document.getElementById(demoSelectorId).value;
            if(themes.indexOf(value) >= 0) {
                setThemeCookie(value);
@@ -173,7 +178,6 @@ let initDemoThemeSelector = function(){
 };
 
 let setCorrectSelectedtheme = function(){
-
     let demoSelector = document.getElementById(demoSelectorId);
     let options = demoSelector.getElementsByTagName('option');
     let cookie = getThemeCookie();
@@ -183,8 +187,37 @@ let setCorrectSelectedtheme = function(){
             demoSelector.selectedIndex = i;
         }
     }
-
 };
+
+let setFooterSwitcher = function(){
+    if(document.getElementById('changeTheme') !== null) {
+        let cookie = getThemeCookie();
+        let theme = "";
+        switch (cookie) {
+            case 'virk':
+                theme = "Borger.dk";
+                break;
+            case 'borgerdk':
+                theme = "Virk";
+                break;
+
+        }
+
+        var text = "Skift til " + theme + " tema";
+        document.getElementById('changeThemeText').innerText = text;
+
+        document.getElementById('changeTheme').addEventListener('click', toggleTheme);
+    }
+};
+let toggleTheme = function(){
+  let cookie = getThemeCookie();
+  if(cookie === 'virk'){
+      onBorgerdkThemeSelected();
+  } else if(cookie === 'borgerdk'){
+      onVirkThemeSelected();
+  }
+};
+
 let debug = function(title, value){
     if(isDebugging){
         console.log(title, value);

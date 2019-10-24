@@ -133,7 +133,6 @@ $(document).ready(function () {
 
     // alert upon closing page
     window.onbeforeunload = function (e) {
-        console.log('beforeunload', e);
         // do not show popup if destination is within the same solution flow
         if(document.getElementsByClassName('layout-demo').length > 0 && window.themeChangeProcess === undefined){
             var showPopup = true;
