@@ -7,10 +7,10 @@ import {CookiePrompter, NetMinersTracker, CookieMgr } from  "./vendor/CookieProm
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
+require('./theme');
 document.addEventListener("DOMContentLoaded", function(){
     // Handler when the DOM is fully loaded
     DKFDS.init();
-
 
     let path = window.location.pathname.split('/');
     if(path.indexOf('mastertest') !== -1){
@@ -91,54 +91,6 @@ $(document).ready(function () {
         });
     }
 
-    // Initialize The style switcher fill
-    $('.style-switcher').val(window.curStyle);
-    $('.style-switcher').on('change', function () {
-        if (window.curStyle !== this.value) {
-            var onlyUrl = window.location.href.replace(window.location.search, '');
-            var url = (onlyUrl.indexOf('#') != -1 ? onlyUrl.split('#')[0]+'?s='+this.value : onlyUrl + '?s='+this.value);
-            window.location = url;
-        }
-    });
-
-    // Add style when navigating
-    $('a').on('click', function (e) {
-        if($(this).attr('href') === "javascript:void(0)"){
-            return;
-        }
-        var hashLocation  = $(this).attr('href').split('#')[ 1 ];
-        if(hashLocation == undefined){ //if normal link
-            e.preventDefault();
-            var onlyUrl =  $(this).attr('href');
-            var s = (window.curStyle != undefined && !onlyUrl.includes('http') ? '?s='+window.curStyle : "");
-            var url = (onlyUrl.indexOf('#') != -1 ? onlyUrl.split('#')[0]+s+'#'+ onlyUrl.split('#')[1] : onlyUrl + s);
-            var target =  $(this).attr('target');
-            var blank = false;
-            if(target != undefined) {
-                blank = target.includes('blank') ? true : false;
-            }
-            if(blank) {
-                window.open(
-                    url,
-                    '_blank' // <- This is what makes it open in a new window.
-                );
-            } else {
-                window.location.href = url;
-            }
-        }
-    });
-
-
-    // Add style to preview-iframes
-    var previewElements = document.getElementsByClassName('preview-iframe');
-    for (var j = previewElements.length - 1; j >= 0; j--) {
-        if (window.curStyle){
-            previewElements[j].src = previewElements[j].src + '?s=' + window.curStyle;
-        }
-    }
-
-    //O
-
     iFrameResize({ log: false, heightCalculationMethod: 'taggedElement', resizeFrom: 'child' }, '.preview-iframe');
 
     //quick fix to trigger iframeresizer.
@@ -181,9 +133,9 @@ $(document).ready(function () {
 
     // alert upon closing page
     window.onbeforeunload = function (e) {
-        console.log(e);
+        console.log('beforeunload', e);
         // do not show popup if destination is within the same solution flow
-        if(document.getElementsByClassName('layout-demo').length > 0){
+        if(document.getElementsByClassName('layout-demo').length > 0 && window.themeChangeProcess === undefined){
             var showPopup = true;
             if(document.activeElement.href !== null && document.activeElement.href !== undefined && window.location.href !== null && window.location.href !== undefined) {
                 var targetUrl = document.activeElement.href.split('/');

@@ -41,21 +41,3 @@
   }
 </style>
 
-<!-- frontend styleguide stylesheet-->
-<script>
-    var lnk = document.createElement('link');
-    lnk.type='text/css';
-    lnk.rel='stylesheet';
-
-    window.baseurl='{{ site.baseurl }}';
-    if (window.location.search.indexOf('s=virkdk') !== -1) {
-      lnk.href= window.baseurl + '/assets/style/styleguide_virkdk.css';
-      window.curStyle = "virkdk";
-    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
-      lnk.href= window.baseurl + '/assets/style/styleguide_borgerdk.css';
-      window.curStyle = "borgerdk";
-    } else {
-      lnk.href= window.baseurl + '/assets/style/styleguide.css';
-    }
-    document.getElementsByTagName('head')[0].appendChild(lnk);
-</script>
