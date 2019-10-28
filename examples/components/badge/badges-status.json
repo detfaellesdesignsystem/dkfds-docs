@@ -1,0 +1,42 @@
+{
+  "badge_example_small": {
+    "items": [
+      {
+        "class": "badge-small badge-success",
+        "label": "Succes"
+      },
+      {
+        "class": "badge-small badge-info",
+        "label": "Information"
+      },
+      {
+        "class": "badge-small badge-warning",
+        "label": "Advarsel"
+      },
+      {
+        "class": "badge-small badge-error",
+        "label": "Fejl"
+      }
+    ]
+  },
+  "badge_example_large": {
+    "items": [
+      {
+        "class": "badge-large badge-success",
+        "label": "Succes"
+      },
+      {
+        "class": "badge-large badge-info",
+        "label": "Information"
+      },
+      {
+        "class": "badge-large badge-warning",
+        "label": "Advarsel"
+      },
+      {
+        "class": "badge-large badge-error",
+        "label": "Fejl"
+      }
+    ]
+  }
+}

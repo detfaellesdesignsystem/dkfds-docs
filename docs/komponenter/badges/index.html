@@ -581,7 +581,7 @@
     
       
 
-<li class="current active ">
+<li class="current active has-anchor-links">
 
 
   
@@ -601,6 +601,31 @@
 
     
 
+    
+    <ul class="overflow-list">
+  
+    
+      
+
+
+<li class=" ">
+<a href="#nyhedsbadges">Nyhedsbadges</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" ">
+<a href="#statusbadges">Statusbadges</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -1325,7 +1350,7 @@
     
       
 
-<li class="current active ">
+<li class="current active has-anchor-links">
 
 
   
@@ -1345,6 +1370,31 @@
 
     
 
+    
+    <ul class="sidenav-sub_list">
+  
+    
+      
+
+
+<li class=" ">
+<a href="#nyhedsbadges">Nyhedsbadges</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" ">
+<a href="#statusbadges">Statusbadges</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -1667,7 +1717,40 @@
             <p class="font-lead">Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller vigtigt indhold.</p>
           
 
-          
+          <section>
+<h2 class="h3">Retningslinjer</h2>
+ <section>
+      <h3 class="h4">Tilgængelighed</h3>
+      <ul>
+          <li>Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tabulatortasten navigerer sig frem til dem.</li>
+          <li>Du skal anvende ARIA live regions til at gøre skærmlæsere på opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.</li>
+      </ul>
+  </section>
+  <section>
+      <h3 class="h4">Brugervenlighed</h3>
+      <h4 class="h5">Anvendes til</h4>
+      <ul>
+        <li>Brug badges til at gøre opmærksom på ændringer, nyt eller vigtigt indhold.</li>
+      </ul>
+      <h4 class="h5">Anvendes ikke til</h4>
+      <ul>
+          <li>Brug ikke badge, hvis placeringen af det får brugeren til at tro, det er en knap. Test altid for dette, når du vil anvende badges.</li>
+          <li>Overvej at markere ændringer på siden ved at markere selve det ændrede fx med en baggrundsfarve eller en typografisk markering som fx fed tekst.</li>
+          <li>Brug ikke badge på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyhedssider, hvor brugeren nemt kan se, hvad der er det nyeste indhold, når det blot står øverst.</li>
+      </ul>
+      <h4 class="h5">Vejledning</h4>                
+      <ul>
+          <li>Brug ord og begreber, som brugeren kan genkendes fra løsningen.</li>  
+          <li>Skriv badges med store bogstaver.</li>
+          <li>Brug ikke hover, focus eller active styling til et badge, som ikke er interaktivt (fx link).</li>
+          <li>Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer ensartet opførsel af komponenterne inden for løsningen.</li>
+          <li>Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor det virkelig er meningsfuldt.</li>
+      </ul>
+  </section>
+</section>
+
+<h2 id="nyhedsbadges">Nyhedsbadges</h2>
+
 <div class="component-preview ">
 
     <!--<div class="loader-container">
@@ -1681,7 +1764,7 @@
   <button class="accordion-button" aria-controls="code-badges">Kode</button>
   <div id="code-badges" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pb-5"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Stort badge<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large"</span><span class="nt">&gt;</span>Nyhed<span class="nt">&lt;/label&gt;</span>
 
@@ -1708,48 +1791,63 @@
     </ul>
     <p>Et stort badge vil se følgende ud:</p>
     <ul>
-      <li><code>&lt;label class="badge badge-large"My badge&lt;/label&gt;</code></li>
+      <li><code>&lt;label class="badge badge-large"&gt;My badge&lt;/label&gt;</code></li>
     </ul>
     <p>Et lille badge vil se følgende ud:</p>
     <ul>
-      <li><code>&lt;label class="badge badge-small"My badge&lt;/label&gt;</code></li>
+      <li><code>&lt;label class="badge badge-small"&gt;My badge&lt;/label&gt;</code></li>
     </ul>
   </div>
 </div>
 
+<h2 id="statusbadges">Statusbadges</h2>
+
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/badges-status"></iframe>
+</div>
+<div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-badges-status">Kode</button>
+  <div id="code-badges-status" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pb-5"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Store badges<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;div&gt;&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large badge-success"</span><span class="nt">&gt;</span>Succes<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large badge-info"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large badge-warning"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large badge-error"</span><span class="nt">&gt;</span>Fejl<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Små badges<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;div&gt;&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-success"</span><span class="nt">&gt;</span>Succes<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-info"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-warning"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-error"</span><span class="nt">&gt;</span>Fejl<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
 <div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="label-docs">
-    Retningslinjer
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="code-documentation-status">
+    Implementering
   </button>
-  <div id="label-docs" aria-hidden="false" class="accordion-content">
-  <section>
-      <h2 class="h4">Tilgængelighed</h2>
-      <ul>
-          <li>Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tabulatortasten navigerer sig frem til dem.</li>
-          <li>Du skal anvende ARIA live regions til at gøre skærmlæsere på opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.</li>
-      </ul>
-  </section>
-  <section>
-      <h2 class="h4">Brugervenlighed</h2>
-      <h3 class="h5">Anvendes til</h3>
-      <ul>
-        <li>Brug badges til at gøre opmærksom på ændringer, nyt eller vigtigt indhold.</li>
-      </ul>
-      <h3 class="h5">Anvendes ikke til</h3>
-      <ul>
-          <li>Brug ikke badge, hvis placeringen af det får brugeren til at tro, det er en knap. Test altid for dette, når du vil anvende badges.</li>
-          <li>Overvej at markere ændringer på siden ved at markere selve det ændrede fx med en baggrundsfarve eller en typografisk markering som fx fed tekst.</li>
-          <li>Brug ikke badge på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyhedssider, hvor brugeren nemt kan se, hvad der er det nyeste indhold, når det blot står øverst.</li>
-      </ul>
-      <h3 class="h5">Vejledning</h3>                
-      <ul>
-          <li>Brug ord og begreber, som brugeren kan genkendes fra løsningen.</li>  
-          <li>Skriv badges med store bogstaver.</li>
-          <li>Brug ikke hover, focus eller active styling til et badge, som ikke er interaktivt (fx link).</li>
-          <li>Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer ensartet opførsel af komponenterne inden for løsningen.</li>
-          <li>Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor det virkelig er meningsfuldt.</li>
-      </ul>
-  </section>
+  <div id="code-documentation-status" class="accordion-content">
+    <p>Statusbadges har 4 forskellige farver og formål:</p>
+    <ul>
+        <li><label class="badge badge-small badge-success">Grøn</label>, som er succesfarven og implementeres med klassen <code>badge-success</code></li>
+        <li><label class="badge badge-small badge-info">Blå</label>, som er informationsfarven og implementeres med klassen <code>badge-info</code></li>
+        <li><label class="badge badge-small badge-warning">Gul</label>, som er advarselsfarven og implementeres med klassen <code>badge-warning</code></li>
+        <li><label class="badge badge-small badge-error">Rød</label>, som er fejlfarven og implementeres med klassen <code>badge-error</code></li>
+    </ul>
   </div>
 </div>
 

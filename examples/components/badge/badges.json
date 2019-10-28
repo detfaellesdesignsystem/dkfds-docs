@@ -2,14 +2,14 @@
   "badge_example": {
     "items": [
       {
-        "class": "large",
-        "label": "Stort badge",
-        "state": "large"
+        "class": "badge-large",
+        "label": "Nyhed",
+        "heading": "Stort badge"
       },
       {
-        "class": "small",
-        "label": "Lille badge",
-        "state": "small"
+        "class": "badge-small",
+        "label": "Lille nyhed",
+        "heading": "Lille badge"
       }
     ]
   }
