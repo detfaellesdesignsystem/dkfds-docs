@@ -25,6 +25,10 @@ order: 06
             <p>For at kunne bruge denne metode, husk da at inkludere SVG ikon samlingen i toppen af hver side under <code>&lt;body&gt;</code>.</p>
             <h3 class="h4">Disabled link</h3>
             Tilføj tekst til skærmlæser i linket for at gøre opmærksom på at linket er deaktiveret: <code>&lt;span class="sr-only"&gt;disabled&lt;/span&gt;</code>
+            <h3 class="h4">Tilbage link</h3>
+            <p>Tilbage-linket defineres ved at tilføje klassen <code>back-link</code> til et <code>&lt;a&gt;</code> element.</p>
+            <p>Linket placeres øverst på siden, lige over heading i main-sektionen.</p>
+            <p>Se vores eksempelløsning <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a> for eksempel på implementering af tilbage-linket.</p>
         </section>
   </div>
 </div>

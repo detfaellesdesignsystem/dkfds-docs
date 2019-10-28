@@ -60,10 +60,10 @@ title: Links.html
     </div>
     <div class="row">
         <div class="col-12 col-md-6">
-            <p>
-                <a href="javascript:void(0);" class="function-link">Footer
-                    link</a>
-            </p>
+
+            <a href="javascript:void(0);" class="function-link">Footer
+                link</a>
+
         </div>
         <div class="col-12 col-md-6">
             <pre>color: #1a1a1a;</pre>
@@ -84,10 +84,14 @@ title: Links.html
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <p><a href="javascript:void(0);"
-                    class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>Funktionslink</a>
-            </p>
+        <div class="col-12 py-4">
+            <a href="javascript:void(0);"
+                class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>Funktionslink</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 py-4">
+            <a href="javascript:void(0);" class="back-link">Tilbage</a>
         </div>
     </div>
 </div>
@@ -154,10 +158,9 @@ title: Links.html
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <p><a href="javascript:void(0);"
-                    class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>Funktionslink</a>
-            </p>
+        <div class="col-12 py-4">
+            <a href="javascript:void(0);"
+                class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>Funktionslink</a>
         </div>
     </div>
 </div>
