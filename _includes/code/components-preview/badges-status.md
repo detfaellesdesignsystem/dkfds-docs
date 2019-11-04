@@ -4,16 +4,16 @@ layout: iframed
 title: Badges-status.html
 ---
 <div class="container pb-5">
-    <p class="h5">Store badges</p>
-    <div><label class="badge badge-large badge-success">Succes</label>
-        <label class="badge badge-large badge-info">Information</label>
-        <label class="badge badge-large badge-warning">Advarsel</label>
-        <label class="badge badge-large badge-error">Fejl</label>
-    </div>
-    <p class="h5">Små badges</p>
-    <div><label class="badge badge-small badge-success">Succes</label>
-        <label class="badge badge-small badge-info">Information</label>
-        <label class="badge badge-small badge-warning">Advarsel</label>
-        <label class="badge badge-small badge-error">Fejl</label>
-    </div>
+    <p class="mb-5">Positiv<br />
+        <label class="badge badge-small badge-success">Text</label>
+    </p>
+    <p class="mb-5">Neutral<br />
+        <label class="badge badge-small badge-info">Text</label>
+    </p>
+    <p class="mb-5">Advarsel<br />
+        <label class="badge badge-small badge-warning">Text</label>
+    </p>
+    <p class="mb-5">Negativ<br />
+        <label class="badge badge-small badge-error">Text</label>
+    </p>
 </div>

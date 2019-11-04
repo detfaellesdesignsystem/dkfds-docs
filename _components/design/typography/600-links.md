@@ -7,7 +7,7 @@ order: 600
 
 <p class="font-lead">Links anvendes til at linke rundt i løsningen og til at linke ud af løsningen til eksterne sites.</p>
 <p>Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.</p>
-<p>Se også vores <a href="/komponenter/funktionslink/">funktionslink</a> og <a href="/komponenter/tilbage-link/">tilbage-link</a>.</p>
+<p>Se også vores <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.</p>
 
 {% include code/preview.html component="links" %}
 {% include code/accordion.html component="links" %}

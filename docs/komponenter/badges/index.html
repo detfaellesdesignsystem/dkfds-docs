@@ -563,7 +563,7 @@
     
       
 
-<li class="">
+<li class="has-anchor-links">
 
 
   
@@ -1334,19 +1334,6 @@
 
 
           </ul>
-
-          <!-- 3B: Main navigation - secondary menu-->
-          <ul class="unstyled-list nav-actions">
-            <li>
-              <label for="style-switcher-mobile" class="sr-only">Skift mellem temaer</label>
-              <select class="form-select style-switcher" name="Style switcher" id="style-switcher-mobile">
-                <option value="">- Vælg tema -</option>
-                <option value="styleguide">Tema: Neutralt</option>
-                <option value="virkdk">Tema: Virk</option>
-                <option value="borgerdk">Tema: Borger.dk</option>
-              </select>
-            </li>
-          </ul>
         </div>
       </div>
       <!-- 3: Main navigation end-->
@@ -1368,7 +1355,7 @@
     
       
 
-<li class="">
+<li class="has-anchor-links">
 
 
   
@@ -1888,18 +1875,18 @@
   <div id="code-badges-status" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pb-5"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Store badges<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;div&gt;&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large badge-success"</span><span class="nt">&gt;</span>Succes<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large badge-info"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large badge-warning"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-large badge-error"</span><span class="nt">&gt;</span>Fejl<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Små badges<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;div&gt;&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-success"</span><span class="nt">&gt;</span>Succes<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-info"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-warning"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-error"</span><span class="nt">&gt;</span>Fejl<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-5"</span><span class="nt">&gt;</span>Positiv<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-success"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-5"</span><span class="nt">&gt;</span>Neutral<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-info"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-5"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-warning"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-5"</span><span class="nt">&gt;</span>Negativ<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"badge badge-small badge-error"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
@@ -1920,6 +1907,7 @@
         <li><label class="badge badge-small badge-warning">Gul</label>, som er advarselsfarven og implementeres med klassen <code>badge-warning</code></li>
         <li><label class="badge badge-small badge-error">Rød</label>, som er fejlfarven og implementeres med klassen <code>badge-error</code></li>
     </ul>
+    <p>Se eksempel på anvendelse af statusbadges i vores <a href="/omdesignsystemet/releases/">release notes</a>.</p>
   </div>
 </div>
 

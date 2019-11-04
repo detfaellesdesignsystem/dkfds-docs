@@ -6,6 +6,14 @@ title: Accordions
 category: Komponenter_category
 subcategory: Komponenter
 lead: En accordion er et grafisk element, som du kan bruge til vise indhold med. Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.
+anchor: true
+subnav:
+- text: Standard
+  href: '#standard'
+- text: Tilføj ramme
+  href: '#tilfoej-ramme'
+- text: Tillad mere end én åben accordion
+  href: '#tillad-mere-end-en-aaben-accordion' 
 ---
 
 <h2 class="h3">Retningslinjer</h2>
@@ -33,7 +41,7 @@ lead: En accordion er et grafisk element, som du kan bruge til vise indhold med.
       <li>Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere spiselig. Overvej om det er nødvendigt at kollapse indhold og hvorfor, det er det. Hvis indholdet er unødigt langt eller uoverskueligt, bør du i stedet omformulere teksten og eventuelt fordele den på flere sider.</li>
   </ul>
 </section>
-<h2>Standard</h2>
+<h2 id="standard">Standard</h2>
 {% include code/preview.html component="accordion" %}
 {% include code/accordion.html component="accordion" %}
 <div class="accordion accordion-bordered">
@@ -54,7 +62,7 @@ lead: En accordion er et grafisk element, som du kan bruge til vise indhold med.
   </div>
 </div>
 
-<h2>Tilføj ramme</h2>
+<h2 id="tilfoej-ramme">Tilføj ramme</h2>
 {% include code/preview.html component="accordion-border" %}
 {% include code/accordion.html component="accordion-border" %}
 <div class="accordion accordion-bordered">
@@ -67,7 +75,7 @@ lead: En accordion er et grafisk element, som du kan bruge til vise indhold med.
   </div>
 </div>
 
-<h2>Tillad mere end én åben accordion</h2>
+<h2 id="tillad-mere-end-en-aaben-accordion">Tillad mere end én åben accordion</h2>
 {% include code/preview.html component="accordion-multi" %}
 {% include code/accordion.html component="accordion-multi" %}
 <div class="accordion accordion-bordered">

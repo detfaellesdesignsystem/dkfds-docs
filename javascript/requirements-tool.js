@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function(){
             showPopup = false;
         } else {
             let activeElement = document.activeElement;
-            if(activeElement.href !== undefined && activeElement.innerText === "Redigér"){
+            if(activeElement.href !== undefined && (activeElement.innerText === "Redigér" || activeElement.innerText === "Tilbage")){
                 showPopup = false;
             }
 

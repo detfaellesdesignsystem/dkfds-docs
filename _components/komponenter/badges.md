@@ -87,5 +87,6 @@ subnav:
         <li><label class="badge badge-small badge-warning">Gul</label>, som er advarselsfarven og implementeres med klassen <code>badge-warning</code></li>
         <li><label class="badge badge-small badge-error">Rød</label>, som er fejlfarven og implementeres med klassen <code>badge-error</code></li>
     </ul>
+    <p>Se eksempel på anvendelse af statusbadges i vores <a href="/omdesignsystemet/releases/">release notes</a>.</p>
   </div>
 </div>
