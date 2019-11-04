@@ -2,7 +2,7 @@
 type: component
 title: Overskrifter
 parent: typography
-order: 02
+order: 200
 ---
 
 <p class="font-lead">Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning.</p>

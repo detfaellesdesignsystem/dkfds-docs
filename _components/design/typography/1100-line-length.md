@@ -2,7 +2,7 @@
 type: component
 title: Linjelængde
 parent: typography
-order: 11
+order: 1100
 ---
 
 <p class="font-lead">For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.</p>

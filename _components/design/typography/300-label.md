@@ -2,7 +2,7 @@
 type: component
 title: Felt- og tabeloverskrifter (label og th)
 parent: typography
-order: 03
+order: 300
 ---
 <p class="font-lead">I eksemplet nedenfor viser vi, hvordan overskrifter til felter og overskrifter i tabeller ser ud. Overskrifter til felter og tabeller er ens, men der er forskel i koden.</p>
 

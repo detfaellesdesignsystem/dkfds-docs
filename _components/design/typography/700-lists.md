@@ -2,7 +2,7 @@
 type: component
 title: Lister
 parent: typography
-order: 07
+order: 700
 ---
 
 <p class="font-lead">Lister bruges til at organisere information, så det giver brugeren overblik.</p>

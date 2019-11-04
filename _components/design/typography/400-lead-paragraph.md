@@ -2,7 +2,7 @@
 type: component
 title: Manchettekst (lead paragraph)
 parent: typography
-order: 04
+order: 400
 ---
 <p class="font-lead">Du kan bruge manchettekst til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.</p>
 

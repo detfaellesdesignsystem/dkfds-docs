@@ -2,7 +2,7 @@
 type: component
 title: Brødtekst (body copy)
 parent: typography
-order: 05
+order: 500
 ---
 
 <p class="font-lead">Brødtekst er standardformateringen for tekst i designsystemet og bliver i særdeleshed brugt til afsnit af tekst.</p>

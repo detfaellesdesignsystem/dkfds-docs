@@ -2,7 +2,7 @@
 type: component
 title: Stor tekst (display text)
 parent: typography
-order: 07
+order: 800
 ---
 
 <p class="font-lead">Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord. </p>

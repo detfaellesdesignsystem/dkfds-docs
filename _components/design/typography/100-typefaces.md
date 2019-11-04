@@ -2,7 +2,7 @@
 type: component
 title: Fonte
 parent: typography
-order: 01
+order: 100
 ---
 
 <p>Hvis din selvbetjeningsløsning skal integreres på borger.dk og Virk, skal du benytte fonten “IBM Plex Sans”. Fonten er valgt, fordi alle browsere præsenterer den flot og den  er nem at arbejde med. Samtidig bygger den visuelt bro mellem de fonte, der for tiden bliver anvendt på borger.dk og Virk.</p>

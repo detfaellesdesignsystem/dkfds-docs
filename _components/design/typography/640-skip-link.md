@@ -2,7 +2,7 @@
 type: component
 title: Skip link
 parent: typography
-order: 06
+order: 640
 ---
 
 <p class="font-lead">Et "skip link" er et skjult link, lavet til brugere, der anvender keyboard til at navigere med. Skip linket gør det muligt, at springe menuer over og hoppe direkte til indholdet på siden.</p>

@@ -2,7 +2,7 @@
 type: component
 title: Hjælpetekst og fejlbeskeder
 parent: typography
-order: 10
+order: 1000
 ---
 
 <p class="font-lead">Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlbeskeder.</p>

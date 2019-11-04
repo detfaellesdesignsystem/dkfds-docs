@@ -2,36 +2,15 @@
 type: component
 title: Links
 parent: typography
-order: 06
+order: 600
 ---
 
 <p class="font-lead">Links anvendes til at linke rundt i løsningen og til at linke ud af løsningen til eksterne sites.</p>
 <p>Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.</p>
+<p>Se også vores <a href="/komponenter/funktionslink/">funktionslink</a> og <a href="/komponenter/tilbage-link/">tilbage-link</a>.</p>
 
 {% include code/preview.html component="links" %}
 {% include code/accordion.html component="links" %}
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button"
-      aria-expanded="false" aria-controls="links-docs-tech">
-    Implementering
-  </button>
-  <div id="links-docs-tech" aria-hidden="true" class="accordion-content">
-        <section>
-            <h3 class="h4">Funktionslink</h3>
-            <p>Du kan definere et funktionslink i koden ved at sætte klassen <code>function-link</code>.</p>
-            <p>Bemærk, at <code>aria-hidden="true"</code> bør sættes på ikonet, så det ikke læses af en skærmlæser.</p>
-            <h3 class="h4">Eksternt link</h3>
-            <p>Du kan definere et eksternt link i koden ved at sætte klassen <code>icon-link</code> på <code>a</code> elementet. Derudover skal du tilføje SVG ikonet inline: <code>&lt;svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"&gt;&lt;use xlink:href="#open-in-new"&gt;&lt;/use&gt;&lt;/svg&gt;</code>.</p>
-            <p>For at kunne bruge denne metode, husk da at inkludere SVG ikon samlingen i toppen af hver side under <code>&lt;body&gt;</code>.</p>
-            <h3 class="h4">Disabled link</h3>
-            Tilføj tekst til skærmlæser i linket for at gøre opmærksom på at linket er deaktiveret: <code>&lt;span class="sr-only"&gt;disabled&lt;/span&gt;</code>
-            <h3 class="h4">Tilbage link</h3>
-            <p>Tilbage-linket defineres ved at tilføje klassen <code>back-link</code> til et <code>&lt;a&gt;</code> element.</p>
-            <p>Linket placeres øverst på siden, lige over heading i main-sektionen.</p>
-            <p>Se vores eksempelløsning <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a> for eksempel på implementering af tilbage-linket.</p>
-        </section>
-  </div>
-</div>
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="typolinks-docs">
@@ -52,7 +31,7 @@ order: 06
         <h3 class="h4">Anvendes til</h3>
         <ul>
             <li>Brug links til at lade brugeren navigere til andre sider i din løsning.</li>
-            <li>Brug links til at linke til sider uden for din løsning. Husk at markere dette med et ikon som beskrevet under implementeringsafsnittet.</li>
+            <li>Brug links til at linke til sider uden for din løsning. Husk at markere dette med et ikon som beskrevet under implementeringsafsnittet under <a href="#eksternt-link">eksternt link</a>.</li>
         </ul>
         <h3 class="h4">Brugervenlighed</h3>
         <p>Hvis et link fører væk fra den aktuelle side og brugeren kan miste data eller risikere at skulle udfylde samme del igen ved at følge linket, så advisér brugeren om dette i et modalvindue. Bed også brugeren om at be- eller afkræfte ønsket om at forlade siden.</p>

@@ -2,7 +2,7 @@
 type: component
 title: Linjeafstand
 parent: typography
-order: 12
+order: 1200
 ---
 
 <p class="font-lead">Linjeafstanden er baseret på teksttypernes linjehøjde.</p>
