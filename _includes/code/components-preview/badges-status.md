@@ -5,15 +5,11 @@ title: Badges-status.html
 ---
 <div class="container pb-5">
     <p class="h5">Store badges</p>
-    <div><label class="badge badge-large badge-success">Succes</label>
-        <label class="badge badge-large badge-info">Information</label>
-        <label class="badge badge-large badge-warning">Advarsel</label>
-        <label class="badge badge-large badge-error">Fejl</label>
+    <div>
+
     </div>
     <p class="h5">Små badges</p>
-    <div><label class="badge badge-small badge-success">Succes</label>
-        <label class="badge badge-small badge-info">Information</label>
-        <label class="badge badge-small badge-warning">Advarsel</label>
-        <label class="badge badge-small badge-error">Fejl</label>
+    <div>
+
     </div>
 </div>

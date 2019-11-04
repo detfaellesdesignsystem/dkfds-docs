@@ -2,30 +2,30 @@ const themeAlertId = 'themeAlert';
 const cookieName = 'theme';
 const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
-const isDebugging = false;
+const isDebugging = true;
 const demoSelectorId = 'themeSelector';
 
 document.addEventListener("DOMContentLoaded", function(){
+        debug('cookie', getThemeCookie());
 
-    debug('cookie', getThemeCookie());
+        // verify cookie contains correct value
+        verifyCookieOrDelete();
 
-    // verify cookie contains correct value
-    verifyCookieOrDelete();
+        // show theme alert on pages
+        themeAlertMessage();
 
-    // show theme alert on pages
-    themeAlertMessage();
+        // set cookie if missing
+        setCookieIfMissing();
 
-    // set cookie if missing
-    setCookieIfMissing();
+        // load stylesheet
+        setStylesheet();
 
-    // load stylesheet
-    setStylesheet();
+        setFooterSwitcher();
 
-    setFooterSwitcher();
-
-    // handle theme selector on demo pages
-    initDemoThemeSelector();
+        // handle theme selector on demo pages
+        initDemoThemeSelector();
 });
+
 let setCookieIfMissing = function (){
     if(!isCookieSet()){
         debug('Cookie was not set', getThemeCookie());

@@ -49,6 +49,14 @@ $(document).ready(function () {
             $('body').removeClass('hasCookiePrompt');
         }
     });
+
+    $('#start-reqtool').click(function(e){
+        e.preventDefault();
+        localStorage.removeItem("reqTool");
+
+        window.location.href =  $(this).attr('href');
+    });
+
     if($('#cookieForm').length !== 0) {
 
         if (CookieMgr.readCookie('cookieOptOut') === "n") {

@@ -32,11 +32,11 @@ description: Til udviklere, der skal gøre brug af Det Fælles Designsystem.
 <p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser dkfds til dit eget tema</a>.</p>
 <h4 class="h5">Inkludér JavaScript</h4>
 <p>JavaScript kan inkluderes med et script tag eller importeres ind i en eksistende js fil.</p>
-<h5 class="h6">Script tag<h5>
+<h5 class="h6">Script tag</h5>
 <pre>&lt;script src='[sti til dkfds mappen]/dist/js/dkfds.js'&gt;&lt;/script&gt;</pre>
-<h5 class="h6">Importer modulet i en .js fil<h5>
+<h5 class="h6">Importer modulet i en .js fil</h5>
 <pre>import * as DKFDS from "dkfds";</pre>
-<h5 class="h6">Init<h5>
+<h5 class="h6">Init</h5>
 <p>Når dkfds er inkluderet skal du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
 <p class="mb-2">Eksempel:</p>
 <pre>

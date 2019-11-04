@@ -2,16 +2,19 @@
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
 <head>
-    {% include head.html %}
+  {% include head.html %}
 </head>
 <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
 {% include code/components/base-svg.html %}
-{{ content }}
-{% include demo-footer.html %}
+{% include requirements-tool/header.html %}
 
-<script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
+<main class="page-container container" id="main-content">
+  {{ content }}
+</main>
+
+{% include requirements-tool/footer.html %}
+
+<script src="{{ site.baseurl }}/assets/js/requirements-tool.js"></script>
 <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
-<script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-<script src="{{ site.baseurl }}/assets/js/dkfds-micromodal-example.js"></script>
 </body>
 </html>
