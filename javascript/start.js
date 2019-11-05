@@ -126,6 +126,9 @@ $(document).ready(function () {
                 return false;
             }
         }
+
+
+
         if($(this).hasClass('alert-leave2')){
             var r = confirm("Du er ved at forlade siden. Evt. indtastninger der ikke er gemt vil gå tabt. Vil du fortsætte?");
             if (r == true) {
@@ -138,6 +141,21 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.icon-link').click(function(e){
+
+        var r = confirm("Du er ved at forlade selvbetjeningsløsningen. Data, der ikke er gemt vil gå tabt. Vil du fortsætte?");
+        if (r == true) {
+            inFormOrLink = true;
+            return true;
+        } else {
+            e.preventDefault();
+            inFormOrLink = false;
+            return false;
+        }
+
+    });
+
 
     // alert upon closing page
     window.onbeforeunload = function (e) {

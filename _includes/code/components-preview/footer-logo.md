@@ -61,11 +61,13 @@ title: Footer-logo.html
                                         href="#">Her er også lidt om
                                         dat</a></li>
 
-                                <li class=""><a class="function-link"
+                                <li class=""><a
+                                        class="function-link icon-link"
                                         href="#">Eller måske er du
                                         interesseret i noget helt andet,
                                         som tager mange linjer at
-                                        forklare</a></li>
+                                        forklare<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+                                </li>
 
                             </ul>
 
@@ -83,8 +85,8 @@ title: Footer-logo.html
 
                             <ul class=" mt-0 nobullet-list">
 
-                                <li class=""><a class="function-link"
-                                        href="#">Tilgængelighedserklæring</a>
+                                <li class=""><a href="#"
+                                        class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
                                 </li>
 
                                 <li class=""><a class="function-link"

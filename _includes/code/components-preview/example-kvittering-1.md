@@ -161,7 +161,7 @@ title: Example-kvittering-1.html
                     <li class=""><a class="function-link"
                             href="tel:12345678">12345678</a></li>
                     <li class="d-print-none"><a href="#"
-                            class="function-link">Tilgængelighedserklæring</a>
+                            class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
                     </li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Privatlivspolitik
