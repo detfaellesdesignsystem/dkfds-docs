@@ -223,7 +223,6 @@ let formSubmitHandler = function(){
     if(form.length > 0) {
         let id = form[0].id.split('-')[1];
         form[0].addEventListener("submit", function(e){
-            console.log("submitting");
             e.preventDefault();
             formSubmit(id);
         }, false);
@@ -413,7 +412,6 @@ let getCurrentFormId = function(){
  */
 let checkTotalMeltdown = function(){
   if (getCurrentFormId() !== false && questions[getIndexOfQuestion(getCurrentFormId())].status === false){
-      console.log("An error occured - resetting the entire flow.");
       localStorage.removeItem(storageKey);
       goTo('');
   }
