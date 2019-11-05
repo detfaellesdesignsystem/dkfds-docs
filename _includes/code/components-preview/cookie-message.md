@@ -10,9 +10,7 @@ title: Cookie-message.html
                 <p class="mt-0 mb-0">
                     Vi indsamler statistik ved hjælp af cookies. Alle
                     indsamlede data anonymiseres. Ved at fortsætte
-                    accepterer du <a
-                        href="/privatlivspolitik#cookieprompt">vores brug
-                        af cookies</a>.
+                    accepterer du <a href="#">vores brug af cookies</a>.
                 </p>
             </div>
             <div class="card-action pb-6 pl-6 pr-6">

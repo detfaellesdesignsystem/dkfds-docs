@@ -621,9 +621,9 @@ code {
 }
 .page-cookie-message-html > .container{
 
-  min-height: 400px;
+  min-height: 300px;
   @include media-breakpoint-up(md) {
-    min-height: 300px;
+    min-height: 250px;
   }
 }
 .page-text-input-html .container, .page-text-input-width-html .container{ //quick fix for iframe resize
