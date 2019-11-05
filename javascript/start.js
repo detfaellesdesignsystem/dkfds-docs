@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
         new TestFDS(DKFDS);
     }
 
-    console.log('hej');
 });
 
 $(document).ready(function () {
