@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function(){
     if(path.indexOf('mastertest') !== -1){
         new TestFDS(DKFDS);
     }
+
+    console.log('hej');
 });
 
 $(document).ready(function () {
