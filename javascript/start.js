@@ -3,7 +3,7 @@ import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
 var iFrameResize = require('./vendor/iframeResizer');
 const TestFDS = require('./test');
-import {CookiePrompter, NetMinersTracker, CookieMgr } from  "./vendor/CookiePrompter-2.0.7";
+import {CookiePrompter, NetMinersTracker, CookieMgr } from "./vendor/CookiePrompter";
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
@@ -20,35 +20,37 @@ document.addEventListener("DOMContentLoaded", function(){
 
 $(document).ready(function () {
 
-    let cookiePrompt = CookiePrompter.init({
-        trackers: [{
-            name: NetMinersTracker,
-            config: {
-                scriptLocation: 'https://es.netminers.dk/script/383053B8-D66E-4E78-8B58-63F6A2DC54EE/',
-                netminersAccount: "es"
+    if (document.getElementsByClassName('page-cookie-message-html').length === 0) {
+        let cookiePrompt = CookiePrompter.init({
+            trackers: [{
+                name: NetMinersTracker,
+                config: {
+                    scriptLocation: 'https://es.netminers.dk/script/383053B8-D66E-4E78-8B58-63F6A2DC54EE/',
+                    netminersAccount: "es"
+                }
+            }],
+            readMoreUrl: '/privatlivspolitik',
+            showOKbutton: true,
+            textOKbutton: 'Accepter cookies',
+            enableLog: false,
+            textHeader: '',
+            textblock1: 'Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres. Ved at fortsætte accepterer du ',
+            textNoThanks: 'Nej tak til cookies',
+            textblock2: '.',
+            textReadMore: 'vores brug af cookies',
+            onReady: function () {
+                if ($('#cookieMessage').length !== 0) {
+                    $('body').addClass('cookie-message-active');
+                    $('.acceptCookieButton').click(function () {
+                        $('body').removeClass('cookie-message-active');
+                    });
+                }
+            },
+            onOptOut: function () {
+                $('body').removeClass('cookie-message-active');
             }
-        }],
-        readMoreUrl: '/privatlivspolitik',
-        showOKbutton: true,
-        textOKbutton: 'Accepter cookies',
-        enableLog: false,
-        textHeader: '',
-        textblock1: 'Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres. Ved at fortsætte accepterer du ',
-        textNoThanks: 'Nej tak til cookies',
-        textblock2: '.',
-        textReadMore: 'vores brug af cookies',
-        onReady: function(){
-            if($('#eksCookiePrompt').length !== 0){
-                $('body').addClass('hasCookiePrompt');
-                $('.cpAcceptBtn').click(function(){
-                    $('body').removeClass('hasCookiePrompt');
-                });
-            }
-        },
-        onOptOut: function(){
-            $('body').removeClass('hasCookiePrompt');
-        }
-    });
+        });
+    }
 
     $('#start-reqtool').click(function(e){
         e.preventDefault();

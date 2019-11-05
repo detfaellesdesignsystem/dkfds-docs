@@ -1,3 +1,8 @@
+
+/*
+* This script was based on the CookiePrompter v2.0.7 - https://github.com/CookiePrompter/CookiePrompter
+* This script has been edited and does not correspond to any version of the original CookiePrompter.
+* */
 var CookieMgr = (function () {
     var enableLog = false;
     var setCookieOnTopLevelDomain=false;
@@ -95,65 +100,7 @@ var TestTracker = (function() {
     };
     return { init: init,injectCode:injectCode,eraseCookie:eraseCookie };
 })();
-var GemiusTracker = (function () {
-    "use strict";
 
-    var scriptLocation,gemiusAccount,loadAsync=false,enableLog=false;
-
-    var log = function (msg) {
-        if (window.console && enableLog) {
-            console.log(msg);
-        }
-    };
-    var injectCode = function (injectCfg) {
-        if (gemiusAccount && scriptLocation !== '') {
-            log('inserting Geminus tracking code');
-            window.pp_gemius_identifier = new String(gemiusAccount);
-            var script = document.createElement('script');
-            script.src = scriptLocation;
-            setAsyncOnScript(script,injectCfg);
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(script, s);
-        }
-    };
-
-    var eraseCookie = function(){
-        // user should be redirected to http://optout.hit.gemius.pl/removeDK.php
-    };
-
-    var init = function(cfg) {
-        scriptLocation = cfg.scriptLocation;
-        gemiusAccount = cfg.gemiusAccount;
-        loadAsync = cfg.async || true;
-        if (cfg.ready && typeof cfg.ready === 'function') {
-            cfg.ready({scriptLocation:scriptLocation,gemiusAccount:gemiusAccount});
-        }
-    };
-
-
-    var setAsyncOnScript = function(ga,injectCfg){
-        // if injectCode is called with a cfg object where async is set, use that. Otherwise fallback
-        if(injectCfg && typeof(injectCfg.async)!=='undefined'){
-            log('setting async attribute from injectCfg');
-            if(injectCfg.async===true){
-                log('it was true');
-                ga.async = injectCfg.async ;
-            }else{
-                ga.async = undefined;
-            }
-        }else{
-            log('setting default async attribute');
-            if(loadAsync === true){
-                ga.async = loadAsync ;
-            }else{
-                ga.async = undefined;
-            }
-        }
-    };
-
-
-    return { init:init, injectCode: injectCode,eraseCookie:eraseCookie };
-})();
 var NetMinersTracker = (function () {
     "use strict";
     var netminersAccount,scriptLocation,enableLog = false;
@@ -190,91 +137,6 @@ var NetMinersTracker = (function () {
     };
 
     return { init:init,injectCode: injectCode, eraseCookie: eraseCookie };
-})();
-var GoogleAnalyticsTracker = (function() {
-    "use strict";
-    var cookieMgr = CookieMgr,
-        loadAsync=true,
-        account,
-        params=[],
-        fakeAnalytics,
-        enableLog = false;
-
-    var log = function (msg) {
-        if (window.console && enableLog) {
-            console.log(msg);
-        }
-    };
-
-    var eraseCookie = function () {
-        // known google analytics cookies
-        cookieMgr.eraseCookie('__utma');
-        cookieMgr.eraseCookie('__utmb');
-        cookieMgr.eraseCookie('__utmc');
-        cookieMgr.eraseCookie('__utmz');
-    };
-
-    var injectCode = function (injectCfg) {
-        log('injectCfg:');
-        log(injectCfg);
-        if (account) {
-            log('inserting Google Analytics tracking code');
-            window._gaq = window._gaq || [];
-            window._gaq.push(['_setAccount', account]);
-            window._gaq.push(['_trackPageview']);
-            for (var i = 0; i < params.length; i++) {
-                window._gaq.push(params[i]);
-            }
-
-            (function () {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                setAsyncOnScript(ga,injectCfg);
-                if (fakeAnalytics === true) {
-                    ga.src = '/scripts/FakeAnalytics.js';
-                } else {
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
-                        'http://www') + '.google-analytics.com/ga.js';
-                }
-                log('async property on script: '+ga.async);
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-        }
-    };
-
-    var setAsyncOnScript = function(ga,injectCfg){
-        // if injectCode is called with a cfg object where async is set, use that. Otherwise fallback
-        if(injectCfg && typeof(injectCfg.async)!=='undefined'){
-            log('setting async attribute from injectCfg');
-            if(injectCfg.async===true){
-                log('it was true');
-                ga.async = injectCfg.async ;
-            }else{
-                ga.async = undefined;
-            }
-        }else{
-            log('setting default async attribute');
-            if(loadAsync === true){
-                ga.async = loadAsync ;
-            }else{
-                ga.async = undefined;
-            }
-        }
-    };
-
-    var init = function(cfg) {
-        loadAsync = cfg.async || true;
-        params = cfg.params || [];
-        account = cfg.account;
-        fakeAnalytics = cfg.fakeAnalytics;
-        // if there is a ready() function on the configuration, this will be called.
-        if (cfg.ready && typeof cfg.ready === 'function') {
-            cfg.ready({ loadAsync:loadAsync,params:params,account:account,fakeAnalytics:fakeAnalytics});
-        }
-    };
-
-    return {init:init,eraseCookie:eraseCookie, injectCode:injectCode};
 })();
 var SiteImproveTracker = (function () {
     "use strict";
@@ -395,7 +257,7 @@ var CookiePrompter = (function () {
     };
 
     var removePrompt = function () {
-        var el = document.getElementById("cookiePrompt");
+        var el = document.getElementById("cookieMessage");
         if (el) {
             el.parentNode.removeChild(el);
         }
@@ -424,7 +286,7 @@ var CookiePrompter = (function () {
     };
 
     var bindAcceptCookiesBtn = function(){
-        var acceptbtns = document.getElementsByClassName('cpAcceptBtn');
+        var acceptbtns = document.getElementsByClassName('acceptCookieButton');
         for (var i = acceptbtns.length - 1; i >= 0; i--) {
             var btn = acceptbtns[i];
             btn.onclick = acceptBtnClick;
@@ -467,20 +329,19 @@ var CookiePrompter = (function () {
         html.push('<div class="card-action pb-6 pl-6 pr-6">');
 
         if(config.showOKbutton){
-            html.push('<ul class="unstyled-list mt-4"><li class="d-md-inline-block mb-4 mb-md-0"><a href="#" class="cpAcceptBtn button button-secondary">'+config.textOKbutton+'</a></li>');
-            html.push('<li class="d-md-inline-block ml-md-4"><a href="#" id="eksCookieNo" class="button button-tertiary">' + config.textNoThanks + '</a></li></ul>');
+            html.push('<ul class="unstyled-list mt-4"><li class="d-md-inline-block mb-4 mb-md-0"><a href="#" class="button button-secondary acceptCookieButton" id="acceptCookieButton">'+config.textOKbutton+'</a></li>');
+            html.push('<li class="d-md-inline-block ml-md-4"><a href="#" id="declineCookieButton" class="button button-tertiary">' + config.textNoThanks + '</a></li></ul>');
         }
         if(config.explicitAccept){
-            html.push('<a href="#" class="cpAcceptBtn">'+config.textAccept+'</a><a href="#" class="cpDontAcceptBtn">'+config.textDontAccept+'</a>');
+            html.push('<a href="#" class="acceptCookieButton">'+config.textAccept+'</a><a href="#" class="cpDontAcceptBtn">'+config.textDontAccept+'</a>');
         }
         html.push('</div></div></div>');
         var body = document.getElementsByTagName('body')[0];
         var block = document.createElement('div');
-        block.className ='mr-md-5 ml-md-5 mb-md-5 mb-4';
-        block.id ='cookiePrompt';
+        block.id ='cookieMessage';
         block.innerHTML = html.join('');
         body.insertBefore(block, body.firstChild);
-        var link = document.getElementById('eksCookieNo');
+        var link = document.getElementById('declineCookieButton');
         if (link) {
             link.onclick = eraseCookiesAndRemovePrompt;
         }

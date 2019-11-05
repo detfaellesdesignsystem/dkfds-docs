@@ -40,6 +40,14 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
   </div>
   <div class="col-12 col-md-4">
     <div class="demo-component-box">
+        <a href="/komponenter/cookiemeddelelse/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
+            <img src="{{ site.baseurl }}/img/componenticons/Cookie.svg" alt="">
+        </a>
+        <p><a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse</a></p>
+    </div>
+  </div>
+  <div class="col-12 col-md-4">
+    <div class="demo-component-box">
         <a href="/komponenter/tabnav/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Tabs.svg" alt="">
         </a>
