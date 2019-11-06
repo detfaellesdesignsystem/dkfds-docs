@@ -6,7 +6,7 @@ title: Borders.html
   <div class="container">
       <div class="row">
           <div class="col-12 col-md-6">
-              <p class="h5">Ydre-streger</p>
+              <h3 class="h5">Ydre-streger</h3>
               <p class="form-hint">Bruges til de yderste streger i et
                   element, se fx tabeller.</p>
               <div class="outer-border-example"></div>
@@ -17,7 +17,7 @@ title: Borders.html
       </div>
       <div class="row">
           <div class="col-12 col-md-6">
-              <p class="h5">Indre-streger</p>
+              <h3 class="h5">Indre-streger</h3>
               <p class="form-hint">Bruges til indre streger i et element,
                   se fx tabeller.</p>
               <div class="inner-border-example"></div>
@@ -28,7 +28,7 @@ title: Borders.html
       </div>
       <div class="row">
           <div class="col-12 col-md-6">
-              <p class="h5">Indre-indre-streger</p>
+              <h3 class="h5">Indre-indre-streger</h3>
               <p class="form-hint">Bruges til indre streger i et element,
                   som allerede er omkranset af indre steger, se fx
                   sidenavigation.</p>
@@ -40,20 +40,20 @@ title: Borders.html
       </div>
       <div class="row">
           <div class="col-12 col-md-6">
-              <p class="h5">Knap-streger</p>
+              <h3 class="h5">Knap-streger</h3>
               <p class="form-hint">Specifik streg til knapper.</p>
               <div class="button-border-example"></div>
           </div>
-          <div class="col-12 col-md-6">
-              <p class="h6 mb-0 mt-0">Virk tema:</p>
+          <div class="col-12 col-md-6 mt-4">
+              <h4 class="h6 mb-0 mt-0">Virk tema:</h4>
               <pre class="mt-0">border: 2px solid #004993</pre>
-              <p class="h6 mb-0 mt-0">Borger.dk tema:</p>
+              <h4 class="h6 mb-0 mt-0">Borger.dk tema:</h4>
               <pre class="mt-0">border: 2px solid #3C5C22</pre>
           </div>
       </div>
       <div class="row">
           <div class="col-12 col-md-6">
-              <p class="h5">Horisontal ruler</p>
+              <h3 class="h5">Horisontal ruler</h3>
               <p class="form-hint">Hr-tagget har samme farve som den Indre
                   streg</p>
               <hr />

@@ -4,7 +4,7 @@ layout: iframed
 title: Border-radius.html
 ---
 <div class="container">
-    <p class="h5">Firkantede hjørner (0px)</p>
+    <h3 class="h5">Firkantede hjørner (0px)</h3>
     <p class="form-hint">Bruges til elementer, som man ikke kan interagere
         med.</p>
     <div class="row">
@@ -15,7 +15,7 @@ title: Border-radius.html
             <pre>border-radius: 0;</pre>
         </div>
     </div>
-    <p class="h5">Runde hjørner (4px)</p>
+    <h3 class="h5">Runde hjørner (4px)</h3>
     <p class="form-hint">Bruges til interaktive elementer, fx input-felter
         og knapper.</p>
     <div class="row">

@@ -6,7 +6,7 @@ title: Shadows.html
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
-            <p class="h5 mt-md-0">Modalvindue</p>
+            <h3 class="h5">Modalvindue</h3>
             <p class="form-hint">Skygge, der bruges på modalvinduer.</p>
             <div class="heavy-shadow-example"></div>
         </div>
@@ -16,7 +16,7 @@ title: Shadows.html
     </div>
     <div class="row mt-5">
         <div class="col-12 col-md-6">
-            <p class="h5 mt-6 mt-md-0">Overflowmenu</p>
+            <h3 class="h5">Overflowmenu</h3>
             <p class="form-hint">Skygge, der bruges på overflow menuer</p>
             <div class="moderately-shadow-example"></div>
         </div>
@@ -26,7 +26,7 @@ title: Shadows.html
     </div>
     <div class="row mt-5">
         <div class="col-12 col-md-6">
-            <p class="h5 mt-6 mt-md-0">Cards</p>
+            <h3 class="h5">Cards</h3>
             <p class="form-hint">Skygge, der bruges på cards</p>
             <div class="slightly-shadow-example"></div>
         </div>
