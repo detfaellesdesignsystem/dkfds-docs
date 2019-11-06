@@ -119,8 +119,8 @@ subnav:
         <li><a href="https://www.ibm.com/plex/" class="icon-link">IBM Plex Sans<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     </ul>
 </section>
-<section id="koden">
-    <h2>Koden</h2>
+<section>
+    <h2 id="koden">Koden</h2>
     <p>Det Fælles designsystem er kodet i HTML5/CSS3 og det er tilstræbt, at al kode lever op til standarden.</p>
     <ul class="nobullet-list">
         <li><a href="https://whatwg.org/" class="icon-link">Whatwg HTML5 specifikationer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
@@ -154,8 +154,8 @@ subnav:
     <p>Komponenterne i designsystemet vil løbende blive opdateret. Men ønsker du her og nu at anvende en anden kodeløsning som fx en dedikeret React-løsning eller en Single Page Application (SPA), Progressive Web Application (PWA), Web Component eller lignende, så kan du det.</p>
     <p>Designsystemet anbefaler nemlig ikke en specifik model eller framework: Det centrale er, at brugeroplevelsen er ensartet - ikke at koden er det.</p>
 </section>
-<section id="udvidelser">
-    <h2>Udvidelser</h2>
+<section>
+    <h2 id="udvidelser">Udvidelser</h2>
     <p>Brugeren af en typisk selvbetjeningsløsning har ofte behov for yderligere interaktion end blot layout og typografi. Derfor har vi tilføjet en række funktioner i form af udvidelser til dkfds_core.css samt et anbefalet udvidelseskatalog med ekstra funktionalitet.</p>
     <p>En udvidelse kan være alt lige fra en spinner, der viser at en løsning er under indlæsning til et avanceret tabel-system som Data Tables.</p>
     <p>Visse funktionsudvidelser er meget generelle og derfor placeret i dkfds_core.css. Udvidelser, der på denne måde bliver del af kernen, vil altid være bygget af teamet bag designsystemet. Det drejer sig om:</p>
@@ -242,8 +242,8 @@ subnav:
         <li>En integreret udvidelse kan tage udgangspunkt i en ”anbefalet udvidelse”. På grund af udbredelse på tværs af løsninger, har vi valgt at lave vores egen tilsvarende komponent og gøre den til en kernefunktionalitet i designsystemet.</li>
     </ul>
 </section>
-<section id="performance">
-    <h2>Performance</h2>
+<section>
+    <h2 id="performance">Performance</h2>
     <h3>Browsere</h3>
     <p>Designsystemet udtaler sig ikke om bestemt browser-understøttelse, som derimod bør være afhængig af brugernes behov, krav og forventninger til selvbetjeningsløsningen.</p>
     <p>Dog skal du altid sikre bredest mulig understøttelse. Fravalg eller manglende understøttelse skal du skrive som del af dokumentationen for løsningen.</p>
@@ -278,8 +278,8 @@ subnav:
         <li><a href="https://realfavicongenerator.net/" class="icon-link">Real Favicon Generator<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     </ul>
 </section>
-<section id="versioner">
-    <h2>Versioner og releases via Github og NPM</h2>
+<section>
+    <h2 id="versioner">Versioner og releases via Github og NPM</h2>
     <p>Det Fælles Designsystems kode distribueres via Github. </p>
     <p>GitHub er et online versionsstyringssystem og en samling af koder (kode-repositorie), hvor organisationer, firmaer og enkeltpersoner opbevarer og udstiller deres kode. Andre kan herefter anvende den som den er, eller oprette en kopi (fork), som de bygger videre på selv og senere udstiller til potentiel inklusion i ophavet.</p>
     <p>Alle interesserede i designsystemet kan dermed få adgang til at anvende koden ved at hente den på GitHub.</p>
