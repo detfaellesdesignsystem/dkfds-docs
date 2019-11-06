@@ -105,18 +105,18 @@ subnav:
 <div class="row">
   <div class="col-12 col-md-6">
     <h4 class="h5">HTML-guiden</h4>
-    <img src="{{ site.baseurl }}/img/descriptionimages/HTML-guiden.png" alt="HTML-guiden" class="description-image">
+    <img src="{{ site.baseurl }}/img/descriptionimages/HTML-guiden.png" alt="Skærmbillede af HTML-guiden" class="description-image">
   </div>
   <div class="col-12 col-md-6">
     <h4 class="h5">Virks Designmanual</h4>
-    <img src="{{ site.baseurl }}/img/descriptionimages/Virks-designmanual.png" alt="Virks designmanual" class="description-image">
+    <img src="{{ site.baseurl }}/img/descriptionimages/Virks-designmanual.png" alt="Skærmbillede af Virks designmanual" class="description-image">
   </div>
 </div>
 <h3>Det Fælles Designsystem</h3>
 <div class="row">
   <div class="col-12 col-md-6">
     <h4 class="h5">Det Fælles Designsystem</h4>
-    <img src="{{ site.baseurl }}/img/descriptionimages/Det-faellles-designsystem.jpg" alt="Det Fælles Designsystem" class="description-image">
+    <img src="{{ site.baseurl }}/img/descriptionimages/Det-faellles-designsystem.jpg" alt="Skærmbillede af Det Fælles Designsystem" class="description-image">
   </div>
 </div>
 
@@ -125,10 +125,10 @@ subnav:
 <div class="row">
   <div class="col-12 col-md-6">
     <h3 class="h5 mb-0">Borger.dk</h3>
-    <img src="{{ site.baseurl }}/img/descriptionimages/borger.dk.jpg" alt="Borger.dk">
+    <img src="{{ site.baseurl }}/img/descriptionimages/borger.dk.jpg" alt="Skærmbillede af Borger.dk">
   </div>
   <div class="col-12 col-md-6">
     <h3 class="h5 mb-0">Virk</h3>
-    <img src="{{ site.baseurl }}/img/descriptionimages/virk.png" alt="Virk">
+    <img src="{{ site.baseurl }}/img/descriptionimages/virk.png" alt="Skærmbillede af Virk">
   </div>
 </div>
