@@ -145,7 +145,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.icon-link').click(function(e){
+    $('.layout-iframed .icon-link, .layout-demo .icon-link').click(function(e){
 
         var r = confirm("Du er ved at forlade selvbetjeningsløsningen. Data, der ikke er gemt vil gå tabt. Vil du fortsætte?");
         if (r == true) {
