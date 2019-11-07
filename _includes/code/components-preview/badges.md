@@ -4,9 +4,9 @@ layout: iframed
 title: Badges.html
 ---
 <div class="container pb-5">
-    <p class="h5">Stort badge</p>
+    <h3 class="h5">Stort badge</h3>
     <label class="badge badge-large">Nyhed</label>
 
-    <p class="h5">Lille badge</p>
+    <h3 class="h5">Lille badge</h3>
     <label class="badge badge-small">Lille nyhed</label>
 </div>

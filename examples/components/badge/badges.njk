@@ -3,7 +3,7 @@
 <div class="container pb-5">
   {%- for badges in badge_example.items -%}
     {%- if badges.heading %}
-      <p class="h5">{{ badges.heading }}</p>
+      <h3 class="h5">{{ badges.heading }}</h3>
     {% endif -%}
     {{ badge(badges.class, badges.label) }}
   {% endfor -%}

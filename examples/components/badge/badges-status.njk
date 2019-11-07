@@ -2,9 +2,8 @@
 
 <div class="container pb-5">
   {%- for badges in badge_example_small.items -%}
-    <p class="mb-5">{{ badges.title }}<br />
+    <h3 class="h5">{{ badges.title }}</h3>
     {{ badge(badges.class, badges.label) }}
-    </p>
   {% endfor -%}
 </div>
 
