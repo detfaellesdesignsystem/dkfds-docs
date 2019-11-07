@@ -13,7 +13,7 @@ lead: Her finder du forskellige eksempler på hvordan selvbetjeningsløsninger o
           <a href="/eksempler/selvbetjeningsloesninger/" class="demo-component-box__img example-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Selvbetjening.svg" alt="">
           </a>
-          <p><a href="/eksempler/selvbetjeningsloesninger/">Selvbetjeningsløsninger</a></p>
+          <p><a href="/eksempler/selvbetjeningsloesninger/"><strong>Selvbetjeningsløsninger</strong></a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
@@ -21,7 +21,7 @@ lead: Her finder du forskellige eksempler på hvordan selvbetjeningsløsninger o
           <a href="/eksempler/opsummeringsside/" class="demo-component-box__img example-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Opsummering.svg" alt="">
           </a>
-          <p><a href="/eksempler/opsummeringsside/">Opsummeringsside</a></p>
+          <p><a href="/eksempler/opsummeringsside/"><strong>Opsummeringsside</strong></a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
@@ -29,7 +29,7 @@ lead: Her finder du forskellige eksempler på hvordan selvbetjeningsløsninger o
           <a href="/eksempler/kvittering/" class="demo-component-box__img example-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Kvittering.svg" alt="">
           </a>
-          <p><a href="/eksempler/kvittering/">Kvittering</a></p>
+          <p><a href="/eksempler/kvittering/"><strong>Kvittering</strong></a></p>
       </div>
   </div>
 </div>
