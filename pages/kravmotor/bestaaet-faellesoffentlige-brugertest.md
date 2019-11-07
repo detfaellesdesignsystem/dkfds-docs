@@ -6,7 +6,7 @@ description:
 ---
 <a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
 <h1>Har samme løsning allerede bestået den fællesoffentlige brugertest?</h1>
-<p class="form-hint">Eksempelvis i en anden kommune eller hos en anden myndighed.</p>
+<p>Eksempelvis i en anden kommune eller hos en anden myndighed.</p>
 <form method="post" action="." id="form-Q600">
     <div class="form-group">
         <fieldset>

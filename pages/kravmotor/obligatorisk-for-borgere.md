@@ -6,7 +6,7 @@ description:
 ---
 <a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
 <h1>Er løsningen obligatorisk at anvende for borgerne?</h1>
-<p class="form-hint">Gælder når lovgivningen stiller krav om, at borgerne skal benytte digital selvbetjening. <a href="javascript:void(0)" class="js-tippy" data-tippy-content="Stiller lovgivningen krav om, at borgerne skal benytte digital selvbetjening, når de vil indberette, anmelde eller ansøge inden for det konkrete område?"><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg><span class="sr-only">Stiller lovgivningen krav om, at borgerne skal benytte digital selvbetjening, når de vil indberette, anmelde eller ansøge inden for det konkrete område?</span></a></p>
+<p>Gælder når lovgivningen stiller krav om, at borgere skal benytte digital selvbetjening. <a href="javascript:void(0)" class="js-tippy" data-tippy-content="Stiller lovgivningen krav om, at borgerne skal benytte digital selvbetjening, når de vil indberette, anmelde eller ansøge inden for det konkrete område?"><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg><span class="sr-only">Stiller lovgivningen krav om, at borgerne skal benytte digital selvbetjening, når de vil indberette, anmelde eller ansøge inden for det konkrete område?</span></a></p>
 <form method="post" action="." id="form-Q300">
     <div class="form-group">
         <fieldset>

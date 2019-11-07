@@ -8,10 +8,10 @@ category: Kom_i_gang_category
 subcategory: Kom i gang
 description: Information om eksterne krav, fælles aftalte krav og krav til digitale løsninger der skal på borger.dk og Virk.
 parentlink: /komigang/krav/
-lead: "Svar på syv spørgsmål og se hvad der gælder for din løsning."
+lead: "Du skal maksimalt svare på 7 spørgsmål"
 ---
 
-<a href="/krav-vaerktoej/anvendes-af-virksomheder/" id="start-reqtool" class="button button-primary">Start fælles krav værktøj</a>
+<a href="/krav-vaerktoej/anvendes-af-virksomheder/" id="start-reqtool" class="button button-primary mb-7">Start fælles krav værktøj</a>
 <p>Vær opmærksom på at der også er en række krav fra eksterne kilder:</p>
 <ul>
     <li>Forvaltningsloven</li>
