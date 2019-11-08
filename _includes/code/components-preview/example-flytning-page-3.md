@@ -160,7 +160,7 @@ title: Example-flytning-page-3.html
 
     <div class="mt-6">
 
-        <div class="form-group ">
+        <div class="form-group  ">
             <fieldset>
                 <legend><label class="form-label">Dato for flytning</label>
                     <span class="form-hint">Fx. 28 04 1996</span></legend>

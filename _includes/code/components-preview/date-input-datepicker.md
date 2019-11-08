@@ -5,7 +5,7 @@ title: Date-input-datepicker.html
 ---
 <div class="container">
 
-    <div class="form-group ">
+    <div class="form-group  ">
         <fieldset>
             <legend><label class="form-label">Indsendelsesfrist</label>
                 <span class="form-hint">For eksempel: 05 12 2018</span>

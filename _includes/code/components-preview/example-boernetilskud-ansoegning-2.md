@@ -220,7 +220,7 @@ title: Example-boernetilskud-ansoegning-2.html
         </div>
         <div class="mt-7">
 
-            <div class="form-group ">
+            <div class="form-group  ">
                 <fieldset>
                     <legend><label class="form-label">Jeg blev eller bliver
                             enlig:</label>

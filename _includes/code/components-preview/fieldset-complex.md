@@ -105,7 +105,7 @@ title: Fieldset-complex.html
             <fieldset>
                 <legend class="h4">Personlige oplysninger</legend>
 
-                <div class="form-group ">
+                <div class="form-group  mt-0">
                     <fieldset>
                         <legend><label
                                 class="form-label">Indsendelsesfrist</label>

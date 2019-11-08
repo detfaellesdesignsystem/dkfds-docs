@@ -213,7 +213,7 @@ title: Example-virksomhedsalliancer-page-3.html
                                             type="text">
                                     </div>
 
-                                    <div class="form-group ">
+                                    <div class="form-group  ">
                                         <fieldset>
                                             <legend><label
                                                     class="form-label">Dato

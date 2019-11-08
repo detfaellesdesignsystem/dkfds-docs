@@ -7,7 +7,7 @@ title: Date-input.html
 
     <!-- Start code: Indsendelsesfrist -->
 
-    <div class="form-group ">
+    <div class="form-group  ">
         <fieldset>
             <legend><label class="form-label">Indsendelsesfrist</label>
                 <span class="form-hint">For eksempel: 05 12 2018</span>
@@ -48,7 +48,7 @@ title: Date-input.html
 
     <!-- Start code: Datoangivelse med fejl -->
 
-    <div class="form-group  form-error ">
+    <div class="form-group  form-error  ">
         <fieldset>
             <legend><label class="form-label">Datoangivelse med
                     fejl</label>

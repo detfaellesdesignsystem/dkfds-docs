@@ -5,7 +5,7 @@ title: Date-input-error.html
 ---
 <div class="container">
 
-    <div class="form-group  form-error ">
+    <div class="form-group  form-error  ">
         <fieldset>
             <legend><label class="form-label">Datoangivelse med
                     fejl</label>

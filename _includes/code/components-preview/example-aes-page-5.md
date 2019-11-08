@@ -171,7 +171,7 @@ title: Example-aes-page-5.html
 
     <h1>Oplysninger om sagen</h1>
 
-    <div class="form-group ">
+    <div class="form-group  ">
         <fieldset>
             <legend><label class="form-label">Skadedato<a
                         href="javascript:void(0)" class="js-tooltip"
@@ -233,7 +233,7 @@ title: Example-aes-page-5.html
             class="box-border-l collapsed">
             <div class="py-4">
 
-                <div class="form-group ">
+                <div class="form-group  ">
                     <fieldset>
                         <legend><label
                                 class="form-label">Berammelsesdato</label>
