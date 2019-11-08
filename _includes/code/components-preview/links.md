@@ -58,4 +58,15 @@ title: Links.html
             <pre>color: #004D99;outline: 4px solid #747474;</pre>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>Dette er et
+                <a href="javascript:void(0);" class="bold-link">fremhævet
+                    link</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-weight: 700;</pre>
+        </div>
+    </div>
 </div>
