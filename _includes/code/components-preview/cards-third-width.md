@@ -24,8 +24,7 @@ title: Cards-third-width.html
                     </div>
                     <div class="action-buttons">
                         <button
-                            class="button button-secondary">Sekundærknap</button>
-                        <button
+                            class="button button-secondary">Sekundærknap</button><button
                             class="button button-tertiary">Tertiærknap</button>
                     </div>
                     <div class="action-links">
