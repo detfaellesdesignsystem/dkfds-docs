@@ -3,7 +3,7 @@ permalink: /preview-components/cards-half-width.html
 layout: iframed 
 title: Cards-half-width.html
 ---
-<div class="container">
+<div class="container pb-5">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card ">

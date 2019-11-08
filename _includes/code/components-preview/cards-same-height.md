@@ -3,7 +3,7 @@ permalink: /preview-components/cards-same-height.html
 layout: iframed 
 title: Cards-same-height.html
 ---
-<div class="container">
+<div class="container pb-5">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
             <div class="card card-align-height">
