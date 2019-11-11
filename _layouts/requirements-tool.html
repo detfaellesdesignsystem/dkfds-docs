@@ -3,6 +3,12 @@
 <!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
 <head>
   {% include head.html %}
+  <style>
+    @page {
+      size: auto;   /* auto is the initial value */
+      margin: 0;  /* this affects the margin in the printer settings */
+    }
+  </style>
 </head>
 <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
 {% include code/components/base-svg.html %}
