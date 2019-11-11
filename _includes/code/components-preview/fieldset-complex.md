@@ -111,7 +111,9 @@ title: Fieldset-complex.html
                                 class="form-label">Indsendelsesfrist</label>
                             <span class="form-hint">For eksempel: 05 12
                                 2018</span></legend>
-
+                        <span class="form-error-message  d-none"
+                            id="form-error-message-input-error"
+                            role="alert"></span>
                         <div class="date-group js-calendar-group mt-3">
                             <div class="form-group form-group-day">
                                 <label class="form-label"
@@ -119,8 +121,8 @@ title: Fieldset-complex.html
                                 <input
                                     class="form-input js-calendar-day-input"
                                     id="date-day" value="" type="tel"
-                                    min="1" max="31" maxlength="2"
-                                    pattern="^[0-9]{0,2}$"
+                                    data-min="1" data-max="31"
+                                    maxlength="2" pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
                                     title="Indskriv dag på månenden som tal" />
                             </div>
@@ -130,8 +132,8 @@ title: Fieldset-complex.html
                                 <input
                                     class="form-input js-calendar-month-input"
                                     id="date-month" value="" type="tel"
-                                    min="1" max="12" maxlength="2"
-                                    pattern="^[0-9]{0,2}$"
+                                    data-min="1" data-max="12"
+                                    maxlength="2" pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
                                     title="Indskriv månedens nummer" />
                             </div>
@@ -141,8 +143,8 @@ title: Fieldset-complex.html
                                 <input
                                     class="form-input js-calendar-year-input"
                                     id="date-year" value="" type="tel"
-                                    min="1900" max="3000" maxlength="4"
-                                    pattern="^[0-9]{0,4}$"
+                                    data-min="1900" data-max="3000"
+                                    maxlength="4" pattern="^[0-9]{0,4}$"
                                     data-input-regex="^[0-9]{0,4}$"
                                     title="Indskriv årstal" />
                             </div>
