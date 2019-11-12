@@ -1,12 +1,20 @@
 ---
-permalink: /privatlivspolitik-cookies/
+permalink: /omdesignsystemet/privatlivspolitik-cookies/
 redirect_from:
 - /privatlivspolitik/
-layout: styleguide-nosidebar
+- /privatlivspolitik-cookies/
+category: Om_designsystemet_category
+subcategory: Om designsystemet
+layout: styleguide
 title: Privatlivspolitik og cookies
 description: Privatlivspolitik og cookie information
+anchor: true
+subnav:
+- text: Privatlivspolitik
+  href: '#privatlivspolitik'
+- text: Brug af cookies på Det Fælles Designsystem
+  href: '#brug-af-cookies-paa-fds'
 ---
-
 <h2 id="privatlivspolitik">Privatlivspolitik</h2>
 <p>På denne side kan du læse om vores behandling af dine personoplysninger og dine rettigheder.</p>
 <p>Erhvervsstyrelsen behandler de oplysninger, du giver os eller vi indsamler om dig, i overensstemmelse med gældende regler. Vi er bevidste om, at dine oplysninger skal behandles med respekt for oplysningernes fortrolighed og for dit privatliv.</p>
@@ -55,7 +63,7 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 
 <p>Datatilsynet er den uafhængige statslige myndighed, som fører tilsyn med, at reglerne i databeskyttelsesforordningen og databeskyttelsesloven overholdes. Datatilsynet har bl.a. til opgave at vejlede og rådgive myndighederne i behandlingen af personoplysninger. Datatilsynet behandler også klager over myndigheders behandling af personoplysninger samt gennemfører inspektioner hos myndigheder og private virksomheder.</p>
 
-<h2 class="brug-af-cookies-paa-fds">Brug af cookies på Det Fælles Designsystem (FDS)</h2>
+<h2 class="brug-af-cookies-paa-fds" id="brug-af-cookies-paa-fds">Brug af cookies på Det Fælles Designsystem (FDS)</h2>
 
 <h3 class="h4">Hvad er en cookie?</h3>
 
