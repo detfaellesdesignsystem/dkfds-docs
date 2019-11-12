@@ -123,51 +123,53 @@ title: Example-aktindsigt-page-3.html
     </div>
 
     <h1>Bekræft oplysninger</h1>
-    <div class="row">
-        <div class="col-12 col-lg-8">
-            <table
-                class="table table--borderless table--compact table--responsive-headers d-print-table">
-                <tbody>
-                    <tr>
-                        <th class="w-percent-md-30">Navn</th>
-                        <td>Karen Jensen</td>
-                        <td class="align-text-md-right d-print-none"><a
-                                href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Adresse</th>
-                        <td>Vængetstræde 77<br>0081 Købstad</td>
-                        <td class="align-text-md-right d-print-none"><a
-                                href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Alder</th>
-                        <td>39</td>
-                        <td class="align-text-md-right d-print-none"><a
-                                href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Tidligere ansøgninger
-                        </th>
-                        <td>Nej</td>
-                        <td class="align-text-md-right d-print-none"><a
-                                href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
 
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/aktindsigt/aktindsigt-4"
-            class="button button-primary">Næste</a>
-        <a href="/pages/eksempler/aktindsigt/aktindsigt-2"
-            class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
-    </nav>
+    <form class="form" method="post"
+        action="/pages/eksempler/aktindsigt/aktindsigt-4">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <table
+                    class="table table--borderless table--compact table--responsive-headers d-print-table">
+                    <tbody>
+                        <tr>
+                            <th class="w-percent-md-30">Navn</th>
+                            <td>Karen Jensen</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Adresse</th>
+                            <td>Vængetstræde 77<br>0081 Købstad</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Alder</th>
+                            <td>39</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Tidligere
+                                ansøgninger</th>
+                            <td>Nej</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <button type="submit"
+            class="button button-primary d-print-none mt-7">Næste</button>
+        <p><a href="/pages/eksempler/aktindsigt/aktindsigt-2"
+                class="back-link d-print-none">Tilbage</a></p>
+    </form>
 </main>
 
 <footer>

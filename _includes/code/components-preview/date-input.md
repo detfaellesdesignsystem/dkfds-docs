@@ -57,7 +57,7 @@ title: Date-input.html
                 <span class="form-hint">For eksempel: 05 12 2018</span>
             </legend>
             <span class="form-error-message "
-                id="form-error-message-input-error" role="alert">Skriv en
+                id="form-error-message-input-error2" role="alert">Skriv en
                 kort fejlmeddelelse, der hjælper brugeren videre</span>
             <div class="date-group js-calendar-group mt-3">
                 <div class="form-group form-group-day">

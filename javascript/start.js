@@ -60,6 +60,11 @@ $(document).ready(function () {
         window.location.href =  $(this).attr('href');
     });
 
+    $('.layout-demo form').submit(function(e){
+        e.preventDefault();
+        window.location.href = window.location.origin + $(this).attr('action');
+    });
+
     if($('#cookieForm').length !== 0) {
 
         if (CookieMgr.readCookie('cookieOptOut') === "n") {

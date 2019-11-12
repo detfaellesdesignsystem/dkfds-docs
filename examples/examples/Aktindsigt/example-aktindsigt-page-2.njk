@@ -60,7 +60,7 @@
         "
     ) }}
 
-    <form class="form">
+    <form class="form" method="post" action="/pages/eksempler/aktindsigt/aktindsigt-3">
         <div role="group" aria-describedby="oplysninger-om-dig">
             <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
             {{textinput("id-fornavn", "Fornavn", "", "input-width-m", "", "Input til fornavn", "", false, "")}}
@@ -86,11 +86,9 @@
                 </fieldset>
             </div>
         </div>
+        <button type="submit" class="button button-primary d-print-none mt-7">Næste</button>
+        <p><a href="/pages/eksempler/aktindsigt/aktindsigt-1" class="back-link d-print-none">Tilbage</a></p>
     </form>
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/aktindsigt/aktindsigt-3" class="button button-primary">Næste</a>
-        <a href="/pages/eksempler/aktindsigt/aktindsigt-1" class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
-    </nav>
 </main>
 {% endblock %}
 

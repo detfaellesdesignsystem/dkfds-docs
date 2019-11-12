@@ -212,8 +212,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                 <li>
 
                                     <div class="alert alert-warning "
-                                        role="alert"
-                                        aria-label="Beskedbox der viser en advarsel">
+                                        role="alert" aria-label="">
                                         <div class="alert-body">
                                             <p class="alert-heading ">
                                                 Allerede registreret</p>
@@ -239,8 +238,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                 <li>
 
                                     <div class="alert alert-warning "
-                                        role="alert"
-                                        aria-label="Beskedbox der viser en advarsel">
+                                        role="alert" aria-label="">
                                         <div class="alert-body">
                                             <p class="alert-heading ">
                                                 Allerede registreret</p>
