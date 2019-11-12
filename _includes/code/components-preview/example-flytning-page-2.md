@@ -147,7 +147,7 @@ title: Example-flytning-page-2.html
         eventuelle børn kan vælges.</p>
     <p class="mt-6">Hvis der er flere personer i din husstand, som skal
         medtages i flytteanmeldelsen, skal de tilføjes særskilt ved
-        angivelse af CPR-nr. Angiv maks 5 cpr-numre (10 cifre uden
+        angivelse af CPR-nr. Angiv maks. 5 cpr-numre (10 cifre uden
         bindestreg)</p>
     <a href="#" class="icon-link">Regler i forbindelse med flytning når vi
         har børn
@@ -222,7 +222,7 @@ title: Example-flytning-page-2.html
                     <li class=""><a class="function-link"
                             href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
-                            class="function-link">Tilgængelighedserklæring</a>
+                            class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
                     </li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Privatlivspolitik

@@ -54,24 +54,6 @@
   }
 </style>
 
-<!-- frontend styleguide stylesheet-->
-<script>
-    var lnk = document.createElement('link');
-    lnk.type='text/css';
-    lnk.rel='stylesheet';
-
-    window.baseurl='';
-    if (window.location.search.indexOf('s=virkdk') !== -1) {
-      lnk.href= window.baseurl + '/assets/style/styleguide_virkdk.css';
-      window.curStyle = "virkdk";
-    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
-      lnk.href= window.baseurl + '/assets/style/styleguide_borgerdk.css';
-      window.curStyle = "borgerdk";
-    } else {
-      lnk.href= window.baseurl + '/assets/style/styleguide.css';
-    }
-    document.getElementsByTagName('head')[0].appendChild(lnk);
-</script>
 
   </head>
   <body class="page-links layout-component">
@@ -235,19 +217,6 @@
 
 
 
-          </ul>
-
-          <!-- 3B: Main navigation - secondary menu-->
-          <ul class="unstyled-list nav-actions">
-            <li>
-              <label for="style-switcher" class="sr-only">Skift mellem temaer</label>
-              <select class="form-select style-switcher" name="Style switcher" id="style-switcher">
-                <option value="">- Vælg tema -</option>
-                <option value="styleguide">Tema: Neutralt</option>
-                <option value="virkdk">Tema: Virk</option>
-                <option value="borgerdk">Tema: Borger.dk</option>
-              </select>
-            </li>
           </ul>
         </div>
       </div>
@@ -609,7 +578,7 @@
     
       
 
-<li class="">
+<li class="has-anchor-links">
 
 
   
@@ -1320,6 +1289,15 @@
     </aside>
 
     <main class="col-12 col-lg-9" id="main-content">
+          <div aria-label="Vælg et tema" role="alert" class="alert alert-warning has-close d-none mt-4" id="themeAlert">
+        <div class="alert-body">
+            <p class="alert-heading pr-7">Vælg et tema</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
+            <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
+            <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
+            <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
+        </div>
+    </div>
+
       <section id="section-/design/typography/06-links">
           
 
@@ -1402,10 +1380,10 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>
-                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"function-link"</span><span class="nt">&gt;</span>Footer
-                    link<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/p&gt;</span>
+
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"function-link"</span><span class="nt">&gt;</span>Footer
+                link<span class="nt">&lt;/a&gt;</span>
+
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;pre&gt;</span>color: #1a1a1a;<span class="nt">&lt;/pre&gt;</span>
@@ -1426,10 +1404,14 @@
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                    <span class="na">class=</span><span class="s">"function-link"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#printer"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Funktionslink<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 py-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
+                <span class="na">class=</span><span class="s">"function-link"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#printer"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Funktionslink<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 py-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"back-link"</span><span class="nt">&gt;</span>Tilbage<span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1496,10 +1478,9 @@
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                    <span class="na">class=</span><span class="s">"function-link"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#printer"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Funktionslink<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 py-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
+                <span class="na">class=</span><span class="s">"function-link"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#printer"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Funktionslink<span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1524,6 +1505,10 @@
             <p>For at kunne bruge denne metode, husk da at inkludere SVG ikon samlingen i toppen af hver side under <code>&lt;body&gt;</code>.</p>
             <h3 class="h4">Disabled link</h3>
             Tilføj tekst til skærmlæser i linket for at gøre opmærksom på at linket er deaktiveret: <code>&lt;span class="sr-only"&gt;disabled&lt;/span&gt;</code>
+            <h3 class="h4">Tilbage link</h3>
+            <p>Tilbage-linket defineres ved at tilføje klassen <code>back-link</code> til et <code>&lt;a&gt;</code> element.</p>
+            <p>Linket placeres øverst på siden, lige over heading i main-sektionen.</p>
+            <p>Se vores eksempelløsning <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a> for eksempel på implementering af tilbage-linket.</p>
         </section>
   </div>
 </div>
@@ -1573,6 +1558,7 @@
           <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem">FDS@erst.dk</a></li>
           <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
           <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
         </ul>
       </div>
     </div>

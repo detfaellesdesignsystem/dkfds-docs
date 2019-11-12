@@ -1,0 +1,26 @@
+{
+  "badge_example_small": {
+    "items": [
+      {
+        "class": "badge-small badge-success",
+        "label": "Positiv tekst",
+        "title": "Positiv status"
+      },
+      {
+        "class": "badge-small badge-info",
+        "label": "Neutral tekst",
+        "title": "Neutral status"
+      },
+      {
+        "class": "badge-small badge-warning",
+        "label": "Advarende tekst",
+        "title": "Advarende status"
+      },
+      {
+        "class": "badge-small badge-error",
+        "label": "Negativ tekst",
+        "title": "Negativ status"
+      }
+    ]
+  }
+}

@@ -44,7 +44,7 @@ subnav:
       <div class="color-container-large borger-primary"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#44831E</p>
-        <p class="code-color-variable">$primary-color</p>
+        <p class="code-color-variable">$color-primary-color</p>
       </div>
     </div>
     <!-- borger primary END -->
@@ -53,7 +53,7 @@ subnav:
       <div class="color-container-large borger-medium"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#3C5C22</p>
-        <p class="code-color-variable">$primary-medium</p>
+        <p class="code-color-variable">$color-primary-medium</p>
       </div>
     </div>
     <!-- borger medium END -->
@@ -62,7 +62,7 @@ subnav:
       <div class="color-container-large borger-dark"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#233614</p>
-        <p class="code-color-variable">$primary-dark</p>
+        <p class="code-color-variable">$color-primary-dark</p>
       </div>
     </div>
     <!-- borger dark END -->
@@ -77,7 +77,7 @@ subnav:
       <div class="color-container-large virk-primary"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#0059B3</p>
-        <p class="code-color-variable">$primary-color</p>
+        <p class="code-color-variable">$color-primary-color</p>
       </div>
     </div>
     <!--virk primary END -->
@@ -86,7 +86,7 @@ subnav:
       <div class="color-container-large virk-medium"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#004993</p>
-        <p class="code-color-variable">$primary-medium </p>
+        <p class="code-color-variable">$color-primary-medium </p>
       </div>
     </div>
     <!--virk medium END -->
@@ -95,7 +95,7 @@ subnav:
       <div class="color-container-large virk-dark"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#003972</p>
-        <p class="code-color-variable">$primary-dark </p>
+        <p class="code-color-variable">$color-primary-dark </p>
       </div>
     </div>
     <!--virk dark END -->

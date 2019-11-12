@@ -32,11 +32,11 @@ description: Til udviklere, der skal gøre brug af Det Fælles Designsystem.
 <p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser dkfds til dit eget tema</a>.</p>
 <h4 class="h5">Inkludér JavaScript</h4>
 <p>JavaScript kan inkluderes med et script tag eller importeres ind i en eksistende js fil.</p>
-<h5 class="h6">Script tag<h5>
+<h5 class="h6">Script tag</h5>
 <pre>&lt;script src='[sti til dkfds mappen]/dist/js/dkfds.js'&gt;&lt;/script&gt;</pre>
-<h5 class="h6">Importer modulet i en .js fil<h5>
+<h5 class="h6">Importer modulet i en .js fil</h5>
 <pre>import * as DKFDS from "dkfds";</pre>
-<h5 class="h6">Init<h5>
+<h5 class="h6">Init</h5>
 <p>Når dkfds er inkluderet skal du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
 <p class="mb-2">Eksempel:</p>
 <pre>
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <h4 id="temahaandtering">Temahåndtering</h4>
 <p>Designsystemet er udviklet med 2 forskellige temaer. Standard temaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.</p>
-<p>Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nolge få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.</p>
+<p>Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.</p>
 <p class="mb-2">Tema eksempel – borger.dk (scss):</p>
 <pre>
 // These variables overwrite the default values, giving the style the borger.dk theme

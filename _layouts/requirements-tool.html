@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
+<head>
+  {% include head.html %}
+</head>
+<body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+{% include code/components/base-svg.html %}
+{% include requirements-tool/header.html %}
+
+<main class="page-container container" id="main-content">
+  {{ content }}
+</main>
+
+{% include requirements-tool/footer.html %}
+
+<script src="{{ site.baseurl }}/assets/js/requirements-tool.js"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
+</body>
+</html>

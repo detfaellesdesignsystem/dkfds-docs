@@ -54,24 +54,6 @@
   }
 </style>
 
-<!-- frontend styleguide stylesheet-->
-<script>
-    var lnk = document.createElement('link');
-    lnk.type='text/css';
-    lnk.rel='stylesheet';
-
-    window.baseurl='';
-    if (window.location.search.indexOf('s=virkdk') !== -1) {
-      lnk.href= window.baseurl + '/assets/style/styleguide_virkdk.css';
-      window.curStyle = "virkdk";
-    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
-      lnk.href= window.baseurl + '/assets/style/styleguide_borgerdk.css';
-      window.curStyle = "borgerdk";
-    } else {
-      lnk.href= window.baseurl + '/assets/style/styleguide.css';
-    }
-    document.getElementsByTagName('head')[0].appendChild(lnk);
-</script>
 
   </head>
   <body class="page-manchettekst-lead-paragraph layout-component">
@@ -235,19 +217,6 @@
 
 
 
-          </ul>
-
-          <!-- 3B: Main navigation - secondary menu-->
-          <ul class="unstyled-list nav-actions">
-            <li>
-              <label for="style-switcher" class="sr-only">Skift mellem temaer</label>
-              <select class="form-select style-switcher" name="Style switcher" id="style-switcher">
-                <option value="">- Vælg tema -</option>
-                <option value="styleguide">Tema: Neutralt</option>
-                <option value="virkdk">Tema: Virk</option>
-                <option value="borgerdk">Tema: Borger.dk</option>
-              </select>
-            </li>
           </ul>
         </div>
       </div>
@@ -609,7 +578,7 @@
     
       
 
-<li class="">
+<li class="has-anchor-links">
 
 
   
@@ -1320,6 +1289,15 @@
     </aside>
 
     <main class="col-12 col-lg-9" id="main-content">
+          <div aria-label="Vælg et tema" role="alert" class="alert alert-warning has-close d-none mt-4" id="themeAlert">
+        <div class="alert-body">
+            <p class="alert-heading pr-7">Vælg et tema</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
+            <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
+            <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
+            <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
+        </div>
+    </div>
+
       <section id="section-/design/typography/04-lead-paragraph">
           
 
@@ -1394,6 +1372,7 @@
           <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem">FDS@erst.dk</a></li>
           <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
           <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
         </ul>
       </div>
     </div>

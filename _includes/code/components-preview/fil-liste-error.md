@@ -83,6 +83,7 @@ title: Fil-liste-error.html
 </header>
 
 <main class="container page-container">
+    <a href="javascript:void(0);" class="back-link">Tilbage</a>
     <h1>Dokumenter til sagen <span
             class="weight-normal">(frivilligt)</span></h1>
     <table
@@ -225,7 +226,7 @@ title: Fil-liste-error.html
                     <li class=""><a class="function-link"
                             href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
-                            class="function-link">Tilgængelighedserklæring</a>
+                            class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
                     </li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Privatlivspolitik

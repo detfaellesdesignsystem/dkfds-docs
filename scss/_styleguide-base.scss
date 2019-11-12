@@ -1,3 +1,15 @@
+/// theme alert
+#borgerdkThemeBtn{
+  color: #ffffff;
+  background-color: #44831E;
+  border-color: #3C5C22;
+}
+#virkThemeBtn{
+   color: #ffffff;
+   background-color: #0059B3;
+   border-color: #004993;
+ }
+
 
 // Preview box (e.g. used by header and footer documentation) -------- //
 .preview {
@@ -45,28 +57,6 @@
   color: $color-data-violet;
   padding-top: 1rem;
   text-align: center;
-}
-
-// CookiePrompter -------------- //
-#cookiePrompt{
-  color: $color-black;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  z-index: 9500;
-}
-
-body.hasCookiePrompt footer .footer {
-  margin-bottom: calc(#{map-get($spacers, 3)} * 33);
-
-  @include media-breakpoint-up(sm) {
-    margin-bottom: calc(#{map-get($spacers, 3)} * 29);
-  }
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: calc(#{map-get($spacers, 3)} * 22);
-  }
 }
 
 // Colors -------------- //
@@ -628,6 +618,13 @@ code {
 }
 .page-overflow-menu-html .container, .page-overflow-menu-left-html .container{
   min-height: 400px;
+}
+.page-cookie-message-html > .container{
+
+  min-height: 300px;
+  @include media-breakpoint-up(md) {
+    min-height: 250px;
+  }
 }
 .page-text-input-html .container, .page-text-input-width-html .container{ //quick fix for iframe resize
   padding-bottom: 4px;

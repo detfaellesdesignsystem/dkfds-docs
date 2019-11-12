@@ -20,6 +20,7 @@ layout: default
     </aside>
 
     <main class="col-12 col-lg-9" id="main-content">
+      {% include theme-alert.html %}
       <section id="section-{{page.id}}">
           {% for alert in page.alerts %}
           <div class="alert alert-{{ alert.type }} {% if alert.icon %}alert--show-icon{% endif %}" role="alert">

@@ -56,7 +56,7 @@ title: Datatables--edit.html
                     <div class="col-12">
                         <div class="alert alert-error alert--show-icon"
                             role="alert"
-                            aria-label="Beskedbox der viser en fejlmeddelselse">
+                            aria-label="Beskedbox der viser en fejlmeddelelse">
                             <div class="alert-body">
                                 <h3 class="alert-heading">Error alert -
                                     with icon</h3>

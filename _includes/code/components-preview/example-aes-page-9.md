@@ -266,7 +266,7 @@ title: Example-aes-page-9.html
                 </td>
             </tr>
             <tr>
-                <th class="w-percent-md-30">Verserende retsag</th>
+                <th class="w-percent-md-30">Verserende retssag</th>
                 <td>Nej</td>
                 <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-5">Rediger</a>
@@ -409,7 +409,7 @@ title: Example-aes-page-9.html
                     <li class=""><a class="function-link"
                             href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
-                            class="function-link">Tilgængelighedserklæring</a>
+                            class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
                     </li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Privatlivspolitik

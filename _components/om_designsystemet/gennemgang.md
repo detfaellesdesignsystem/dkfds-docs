@@ -82,7 +82,7 @@ subnav:
     <p>Det Fælles Designsystem ønsker at hjælpe dig med at skabe  en god oplevelse for dine brugere: Når de bruger din selvbetjeningsløsning skal de opleve et visuelt og funktionelt design og layout, der er neutralt, simpelt og fleksibelt.</p>
     <h3>12 kolonner (horisontalt)</h3>
     <p>Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige brede kolonner med 32px afstand mellem hver kolonne (16 px på hver side af en kolonne). Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.</p>
-    <p>I tablet- og mobilvisninger folder layoutet sammen til respektivt 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst.</p> 
+    <p>I tablet- og mobilvisninger folder layoutet sammen til 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst.</p> 
     <h3>Responsivt med break points</h3>
     <p>Det Fælles Designsystem er responsivt og tilpasser sig således automatisk det tilgængelige vinduesareal.</p>
     <p>Sidens break points – de værdier, hvorefter siden automatisk tilpasser sig arealet – er:</p>
@@ -119,8 +119,8 @@ subnav:
         <li><a href="https://www.ibm.com/plex/" class="icon-link">IBM Plex Sans<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     </ul>
 </section>
-<section id="koden">
-    <h2>Koden</h2>
+<section>
+    <h2 id="koden">Koden</h2>
     <p>Det Fælles designsystem er kodet i HTML5/CSS3 og det er tilstræbt, at al kode lever op til standarden.</p>
     <ul class="nobullet-list">
         <li><a href="https://whatwg.org/" class="icon-link">Whatwg HTML5 specifikationer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
@@ -154,8 +154,8 @@ subnav:
     <p>Komponenterne i designsystemet vil løbende blive opdateret. Men ønsker du her og nu at anvende en anden kodeløsning som fx en dedikeret React-løsning eller en Single Page Application (SPA), Progressive Web Application (PWA), Web Component eller lignende, så kan du det.</p>
     <p>Designsystemet anbefaler nemlig ikke en specifik model eller framework: Det centrale er, at brugeroplevelsen er ensartet - ikke at koden er det.</p>
 </section>
-<section id="udvidelser">
-    <h2>Udvidelser</h2>
+<section>
+    <h2 id="udvidelser">Udvidelser</h2>
     <p>Brugeren af en typisk selvbetjeningsløsning har ofte behov for yderligere interaktion end blot layout og typografi. Derfor har vi tilføjet en række funktioner i form af udvidelser til dkfds_core.css samt et anbefalet udvidelseskatalog med ekstra funktionalitet.</p>
     <p>En udvidelse kan være alt lige fra en spinner, der viser at en løsning er under indlæsning til et avanceret tabel-system som Data Tables.</p>
     <p>Visse funktionsudvidelser er meget generelle og derfor placeret i dkfds_core.css. Udvidelser, der på denne måde bliver del af kernen, vil altid være bygget af teamet bag designsystemet. Det drejer sig om:</p>
@@ -176,7 +176,7 @@ subnav:
     </ul>   
     <h3>Ikoner</h3>
     <p>Ikoner betragtes ikke som en reel udvidelse, selvom de bliver hentet udefra. Vi har udvalgt ikoner fra Material Design i .svg (Scalable Vector Graphic) format. De ligger som en samlet “pakke” af <code>symbol</code> efter <code>body</code>. På denne måde sparer vi et større antal forespørgsler for den enkelte side. Koden for ikoner fylder ganske lidt.</p>
-    <p>Ikonerne er angivet som <code>symbol</code> med tilføjet <code>title</code> og <code>desc</code> og de kaldes i html koden vha <code>use</code>, fordi det er den mest effektive anvendelse af svg-ikoner, hvor man via shadow DOM dynamisk opretter kopier af det oprindelige <code>symbol</code>.</p>
+    <p>Ikonerne er angivet som <code>symbol</code> med tilføjet <code>title</code> og <code>desc</code> og de kaldes i html koden ved hjælp af <code>use</code>, fordi det er den mest effektive anvendelse af svg-ikoner, hvor man via shadow DOM dynamisk opretter kopier af det oprindelige <code>symbol</code>.</p>
     <h4>Læs mere om ikoner her</h4>
         <ul class="nobullet-list">
         <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
@@ -242,8 +242,8 @@ subnav:
         <li>En integreret udvidelse kan tage udgangspunkt i en ”anbefalet udvidelse”. På grund af udbredelse på tværs af løsninger, har vi valgt at lave vores egen tilsvarende komponent og gøre den til en kernefunktionalitet i designsystemet.</li>
     </ul>
 </section>
-<section id="performance">
-    <h2>Performance</h2>
+<section>
+    <h2 id="performance">Performance</h2>
     <h3>Browsere</h3>
     <p>Designsystemet udtaler sig ikke om bestemt browser-understøttelse, som derimod bør være afhængig af brugernes behov, krav og forventninger til selvbetjeningsløsningen.</p>
     <p>Dog skal du altid sikre bredest mulig understøttelse. Fravalg eller manglende understøttelse skal du skrive som del af dokumentationen for løsningen.</p>
@@ -278,8 +278,8 @@ subnav:
         <li><a href="https://realfavicongenerator.net/" class="icon-link">Real Favicon Generator<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     </ul>
 </section>
-<section id="versioner">
-    <h2>Versioner og releases via Github og NPM</h2>
+<section>
+    <h2 id="versioner">Versioner og releases via Github og NPM</h2>
     <p>Det Fælles Designsystems kode distribueres via Github. </p>
     <p>GitHub er et online versionsstyringssystem og en samling af koder (kode-repositorie), hvor organisationer, firmaer og enkeltpersoner opbevarer og udstiller deres kode. Andre kan herefter anvende den som den er, eller oprette en kopi (fork), som de bygger videre på selv og senere udstiller til potentiel inklusion i ophavet.</p>
     <p>Alle interesserede i designsystemet kan dermed få adgang til at anvende koden ved at hente den på GitHub.</p>

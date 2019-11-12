@@ -40,13 +40,13 @@ Krav_category:
 - href: /komigang/krav/borgerdk-virk/
 - href: /komigang/krav/om-kravene/
 
-#Left menu for kom igang-category
+#Left menu for til udviklere-category
 Til_udviklere_category:
 - href: /komigang/tiludviklere/utilities/
 - href: /komigang/tiludviklere/eksempler-implementering/
 - href: /komigang/tiludviklere/anbefalinger-vaerktoejer/
 
-#Left menu for kom igang-category
+#Left menu for til designere-category
 Til_designere_category:
 - href: /komigang/tildesignere/design-selvbetjeningsloesninger/
 - href: /komigang/tildesignere/sideopbygning/
@@ -69,9 +69,11 @@ Komponenter_category:
   - href: /komponenter/badges/
   - href: /komponenter/beskeder/
   - href: /komponenter/cards/
+  - href: /komponenter/cookiemeddelelse/
   - href: /komponenter/tabnav/
   - href: /komponenter/footers/
   - href: /komponenter/form-controls/
+  - href: /komponenter/funktionslink/
   - href: /komponenter/headers/
   - href: /komponenter/buttons/
   - href: /komponenter/overflowmenu/
@@ -79,6 +81,7 @@ Komponenter_category:
   - href: /komponenter/collapse/
   - href: /komponenter/spinner/
   - href: /komponenter/search/
+  - href: /komponenter/tilbage-link/
   - href: /komponenter/tables/
   - href: /komponenter/tags/
   - href: /komponenter/tooltip/

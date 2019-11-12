@@ -166,7 +166,7 @@ title: Example-virksomhedsalliancer-page-3.html
                         (EU de-minimis) i DKK</label>
                     <span class="form-hint"
                         id="input-hint-message-id-state">Modtaget fra dags
-                        dato og de tre seneste løbende år eksl. det
+                        dato og de tre seneste løbende år ekskl. det
                         aktuelle projekt.</span>
 
                     <input class="form-input  input-width-m "
@@ -345,7 +345,7 @@ title: Example-virksomhedsalliancer-page-3.html
                     <li class=""><a class="function-link"
                             href="tel:12345678">12 34 56 78</a></li>
                     <li class="d-print-none"><a href="#"
-                            class="function-link">Tilgængelighedserklæring</a>
+                            class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
                     </li>
                     <li class="d-print-none"><a href="#"
                             class="function-link">Privatlivspolitik

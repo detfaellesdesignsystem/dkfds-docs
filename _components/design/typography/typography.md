@@ -19,6 +19,10 @@ subnav:
   href: '#brødtekst-body-copy'
 - text: Links
   href: '#links'
+- text: Eksternt link
+  href: '#eksternt-link'
+- text: Footer link
+  href: '#footer-links'
 - text: Skip link
   href: '#skip-link'
 - text: Lister
