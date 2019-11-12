@@ -11,7 +11,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
           <a href="/komponenter/accordions/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Accordion.svg" alt="">
           </a>
-          <p><a href="/komponenter/accordions/">Accordions</a></p>
+          <p><a href="/komponenter/accordions/" class="bold-link">Accordions</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
@@ -19,7 +19,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/badges/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Badges.svg" alt="">
         </a>
-        <p><a href="/komponenter/badges/">Badges</a></p>
+        <p><a href="/komponenter/badges/" class="bold-link">Badges</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -27,7 +27,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/beskeder/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Beskeder.svg" alt="">
         </a>
-        <p><a href="/komponenter/beskeder/">Beskeder (Alerts)</a></p>
+        <p><a href="/komponenter/beskeder/" class="bold-link">Beskeder (Alerts)</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -35,7 +35,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/cards/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Cards.svg" alt="">
         </a>
-        <p><a href="/komponenter/cards/">Cards</a></p>
+        <p><a href="/komponenter/cards/" class="bold-link">Cards</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -43,7 +43,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/cookiemeddelelse/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Cookie.svg" alt="">
         </a>
-        <p><a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse</a></p>
+        <p><a href="/komponenter/cookiemeddelelse/" class="bold-link">Cookiemeddelelse</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -51,7 +51,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/tabnav/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Tabs.svg" alt="">
         </a>
-        <p><a href="/komponenter/tabnav/">Faneblade</a></p>
+        <p><a href="/komponenter/tabnav/" class="bold-link">Faneblade</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -59,7 +59,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/footers/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Footer.svg" alt="">
         </a>
-        <p><a href="/komponenter/footers/">Footers</a></p>
+        <p><a href="/komponenter/footers/" class="bold-link">Footers</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -67,7 +67,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/form-controls/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Form.svg" alt="">
         </a>
-        <p><a href="/komponenter/form-controls/">Formular elementer</a></p>
+        <p><a href="/komponenter/form-controls/" class="bold-link">Formular elementer</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -75,7 +75,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/headers/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Header.svg" alt="">
         </a>
-        <p><a href="/komponenter/headers/">Headers</a></p>
+        <p><a href="/komponenter/headers/" class="bold-link">Headers</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -83,7 +83,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/buttons/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Knapper.svg" alt="">
         </a>
-        <p><a href="/komponenter/buttons/">Knapper</a></p>
+        <p><a href="/komponenter/buttons/" class="bold-link">Knapper</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -91,7 +91,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/overflowmenu/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Overflow menu.svg" alt="">
         </a>
-        <p><a href="/komponenter/overflowmenu/">Overflow menu</a></p>
+        <p><a href="/komponenter/overflowmenu/" class="bold-link">Overflow menu</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -99,7 +99,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/sidenav/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Sidenavigation.svg" alt="">
         </a>
-        <p><a href="/komponenter/sidenav/">Sidenavigation</a></p>
+        <p><a href="/komponenter/sidenav/" class="bold-link">Sidenavigation</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -107,7 +107,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/collapse/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Skjul+vis (collapse).svg" alt="">
         </a>
-        <p><a href="/komponenter/collapse/">Skjul og vis (Collapse)</a></p>
+        <p><a href="/komponenter/collapse/" class="bold-link">Skjul og vis (Collapse)</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -115,7 +115,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/spinner/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Spinner.svg" alt="">
         </a>
-        <p><a href="/komponenter/spinner/">Spinner</a></p>
+        <p><a href="/komponenter/spinner/" class="bold-link">Spinner</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -123,7 +123,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/search/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Soegefelt.svg" alt="">
         </a>
-        <p><a href="/komponenter/search/">Søgefelt</a></p>
+        <p><a href="/komponenter/search/" class="bold-link">Søgefelt</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -131,7 +131,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/tables/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Tabeller.svg" alt="">
         </a>
-        <p><a href="/komponenter/tables/">Tabeller</a></p>
+        <p><a href="/komponenter/tables/" class="bold-link">Tabeller</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -139,7 +139,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/tags/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Tags.svg" alt="">
         </a>
-        <p><a href="/komponenter/tags/">Tags</a></p>
+        <p><a href="/komponenter/tags/" class="bold-link">Tags</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -147,7 +147,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/tooltip/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Tooltip.svg" alt="">
         </a>
-        <p><a href="/komponenter/tooltip/">Tooltip og popover</a></p>
+        <p><a href="/komponenter/tooltip/" class="bold-link">Tooltip og popover</a></p>
     </div>
   </div>
   <div class="col-12 col-md-4">
@@ -155,7 +155,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
         <a href="/komponenter/trinindikatorer/" class="demo-component-box__img componenent-box" aria-hidden="true" tabindex="-1">
             <img src="{{ site.baseurl }}/img/componenticons/Trinindikatorer.svg" alt="">
         </a>
-        <p><a href="/komponenter/trinindikatorer/">Trinindikatorer</a></p>
+        <p><a href="/komponenter/trinindikatorer/" class="bold-link">Trinindikatorer</a></p>
     </div>
   </div>
 </div>

@@ -16,7 +16,7 @@ alerts:
           <a href="/udvidelser/datatables/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Avancerede_Tabeller.svg" alt="">
           </a>
-          <p><a href="/udvidelser/datatables/">Avancerede tabeller</a></p>
+          <p><a href="/udvidelser/datatables/" class="bold-link">Avancerede tabeller</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
@@ -24,7 +24,7 @@ alerts:
           <a href="/udvidelser/selectwoo-multiselect/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Multiselect.svg" alt="">
           </a>
-          <p><a href="/udvidelser/selectwoo-multiselect/">Multiselect dropdown</a></p>
+          <p><a href="/udvidelser/selectwoo-multiselect/" class="bold-link">Multiselect dropdown</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
@@ -32,7 +32,7 @@ alerts:
           <a href="/udvidelser/pikaday/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
               <img src="{{ site.baseurl }}/img/componenticons/Datepicker.svg" alt="">
           </a>
-          <p><a href="/udvidelser/pikaday/">Datovælger (datepicker)</a></p>
+          <p><a href="/udvidelser/pikaday/" class="bold-link">Datovælger (datepicker)</a></p>
       </div>
   </div>
     <div class="col-12 col-md-4">
@@ -40,7 +40,7 @@ alerts:
             <a href="/udvidelser/micromodal/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
                 <img src="{{ site.baseurl }}/img/componenticons/Modal.svg" alt="">
             </a>
-            <p><a href="/udvidelser/micromodal/">Modalvinduer</a></p>
+            <p><a href="/udvidelser/micromodal/" class="bold-link">Modalvinduer</a></p>
         </div>
     </div>
      <div class="col-12 col-md-4">
@@ -48,7 +48,7 @@ alerts:
             <a href="/udvidelser/tippy/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
                 <img src="{{ site.baseurl }}/img/componenticons/Tooltip.svg" alt="">
             </a>
-            <p><a href="/udvidelser/tippy/">Tooltip og popover</a></p>
+            <p><a href="/udvidelser/tippy/" class="bold-link">Tooltip og popover</a></p>
         </div>
       </div>
 </div>

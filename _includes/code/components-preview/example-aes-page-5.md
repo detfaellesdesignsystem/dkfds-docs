@@ -171,19 +171,20 @@ title: Example-aes-page-5.html
 
     <h1>Oplysninger om sagen</h1>
 
-    <div class="form-group ">
+    <div class="form-group  ">
         <fieldset>
             <legend><label class="form-label">Skadedato<a
                         href="javascript:void(0)" class="js-tooltip"
                         data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a></label>
                 <span class="form-hint">Fx. 28 04 1996</span></legend>
-
+            <span class="form-error-message  d-none"
+                id="form-error-message-input-error" role="alert"></span>
             <div class="date-group js-calendar-group mt-3">
                 <div class="form-group form-group-day">
                     <label class="form-label" for="date-day">Dato</label>
                     <input class="form-input js-calendar-day-input"
-                        id="date-day" value="" type="tel" min="1" max="31"
-                        maxlength="2" pattern="^[0-9]{0,2}$"
+                        id="date-day" value="" type="tel" data-min="1"
+                        data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
                         title="Indskriv dag på månenden som tal" />
                 </div>
@@ -191,16 +192,17 @@ title: Example-aes-page-5.html
                     <label class="form-label"
                         for="date-month">Måned</label>
                     <input class="form-input js-calendar-month-input"
-                        id="date-month" value="" type="tel" min="1"
-                        max="12" maxlength="2" pattern="^[0-9]{0,2}$"
+                        id="date-month" value="" type="tel" data-min="1"
+                        data-max="12" maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
                         title="Indskriv månedens nummer" />
                 </div>
                 <div class="form-group form-group-year ">
                     <label class="form-label" for="date-year">År</label>
                     <input class="form-input js-calendar-year-input"
-                        id="date-year" value="" type="tel" min="1900"
-                        max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
+                        id="date-year" value="" type="tel" data-min="1900"
+                        data-max="3000" maxlength="4"
+                        pattern="^[0-9]{0,4}$"
                         data-input-regex="^[0-9]{0,4}$"
                         title="Indskriv årstal" />
                 </div>
@@ -233,13 +235,15 @@ title: Example-aes-page-5.html
             class="box-border-l collapsed">
             <div class="py-4">
 
-                <div class="form-group ">
+                <div class="form-group  ">
                     <fieldset>
                         <legend><label
                                 class="form-label">Berammelsesdato</label>
                             <span class="form-hint">Fx. 28 04 1996</span>
                         </legend>
-
+                        <span class="form-error-message  d-none"
+                            id="form-error-message-input-error"
+                            role="alert"></span>
                         <div class="date-group js-calendar-group mt-3">
                             <div class="form-group form-group-day">
                                 <label class="form-label"
@@ -247,8 +251,8 @@ title: Example-aes-page-5.html
                                 <input
                                     class="form-input js-calendar-day-input"
                                     id="date-day2" value="" type="tel"
-                                    min="1" max="31" maxlength="2"
-                                    pattern="^[0-9]{0,2}$"
+                                    data-min="1" data-max="31"
+                                    maxlength="2" pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
                                     title="Indskriv dag på månenden som tal" />
                             </div>
@@ -258,8 +262,8 @@ title: Example-aes-page-5.html
                                 <input
                                     class="form-input js-calendar-month-input"
                                     id="date-month2" value="" type="tel"
-                                    min="1" max="12" maxlength="2"
-                                    pattern="^[0-9]{0,2}$"
+                                    data-min="1" data-max="12"
+                                    maxlength="2" pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
                                     title="Indskriv månedens nummer" />
                             </div>
@@ -269,8 +273,8 @@ title: Example-aes-page-5.html
                                 <input
                                     class="form-input js-calendar-year-input"
                                     id="date-year2" value="" type="tel"
-                                    min="1900" max="3000" maxlength="4"
-                                    pattern="^[0-9]{0,4}$"
+                                    data-min="1900" data-max="3000"
+                                    maxlength="4" pattern="^[0-9]{0,4}$"
                                     data-input-regex="^[0-9]{0,4}$"
                                     title="Indskriv årstal" />
                             </div>
