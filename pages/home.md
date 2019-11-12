@@ -14,14 +14,10 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             </p>
             <ul class="nobullet-list">
                 <li>
-                    <a href="/komigang/">
-                        <strong>Kom godt igang</strong>
-                    </a>
+                    <a href="/komigang/" class="bold-link">Kom godt igang</a>
                 </li>
                 <li>
-                    <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" class="icon-link">
-                        <strong>Se koden på Github</strong><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>
-                    </a>
+                    <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" class="icon-link bold-link">Se koden på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
                 </li>
             </ul>
           </div>
