@@ -7,6 +7,8 @@ subcategory: Om designsystemet
 description: Release notes for dkfds
 anchor: true
 subnav:
+- text: Version 5.1.0
+  href: '#version-510'
 - text: Version 5.0.0
   href: '#version-500'
 - text: Version 4.4.0
@@ -50,6 +52,31 @@ subnav:
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
 
+<h2 class="mb-0" id="version-510">Version 5.1.0</h2>
+<p class="small-text mt-0">12-11-2019</p>
+<ul>
+    <li>
+        <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse komponent</a> er tilføjet i kernen.
+    </li>
+    <li>
+        <a href="/komponenter/tilbage-link/">Tilbage link</a> er tilføjet i kernen.
+        <p class="form-hint mt-0">Bemærk, at <a href="/komponenter/tilbage-link/">Tilbage link</a> anbefales frem for <a href="/komponenter/buttons/#tilbage-knap">Tilbage knap</a>.</p>
+    </li>
+    <li>
+        Fokuskant tilføjet på #main-content ved fokus fra <a href="/design/typography/#skip-link">Skip link</a>.
+    </li>
+    <li>
+        <a href="/komponenter/badges/#statusbadges">Statusbadges</a> er tilføjet i kernen.
+    </li>
+    <li>
+        Fejl i overflow menu brugt i header fikset.
+        <p class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+    </li>
+    <li>
+        Opdateret beskrivelse af implementering af DKFDS under <a href="/komigang/tiludviklere/">Til udviklere</a>.
+        <p class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/komigang/tiludviklere/#temahaandtering">temahåndtering</a>.</p>
+    </li>
+</ul>
 
 <h2 class="mb-0" id="version-500">Version 5.0.0</h2>
 <p class="small-text mt-0">22-10-2019</p>
