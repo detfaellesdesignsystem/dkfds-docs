@@ -122,9 +122,9 @@ title: Example-virksomhedsalliancer-page-4.html
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4"
-                                class="active">
+                        <li class="active">
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
                                 4. Tilskud til land (valgt)
                             </a>
                         </li>

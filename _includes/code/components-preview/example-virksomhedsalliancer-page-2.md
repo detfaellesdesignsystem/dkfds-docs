@@ -104,9 +104,9 @@ title: Example-virksomhedsalliancer-page-2.html
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
-                                class="active">
+                        <li class="active">
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
                                 2. SMV-kriterier (valgt)
                             </a>
                         </li>

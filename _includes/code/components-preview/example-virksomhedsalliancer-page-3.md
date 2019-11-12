@@ -113,9 +113,9 @@ title: Example-virksomhedsalliancer-page-3.html
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3"
-                                class="active">
+                        <li class="active">
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
                                 3. Statsstøtte (valgt)
                             </a>
                         </li>

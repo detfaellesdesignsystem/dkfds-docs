@@ -95,9 +95,9 @@ title: Example-virksomhedsalliancer-page-1.html
                 <div class="overflow-menu-inner" id="overflow4"
                     aria-hidden="true">
                     <ul class="sidenav-list sidenav-list-locked">
-                        <li>
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1"
-                                class="active">
+                        <li class="active">
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
                                 1. Stamdata (valgt)
                             </a>
                         </li>
