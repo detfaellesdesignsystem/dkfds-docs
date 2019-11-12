@@ -222,7 +222,7 @@ title: Example-kvittering-3.html
                         <td>prsk013456</td>
                     </tr>
                     <tr>
-                        <th class="w-percent-md-30">Verserende retsag</th>
+                        <th class="w-percent-md-30">Verserende retssag</th>
                         <td>Nej</td>
                     </tr>
                     <tr>

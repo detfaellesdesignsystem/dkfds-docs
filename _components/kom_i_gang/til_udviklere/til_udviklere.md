@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <h4 id="temahaandtering">Temahåndtering</h4>
 <p>Designsystemet er udviklet med 2 forskellige temaer. Standard temaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.</p>
-<p>Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nolge få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.</p>
+<p>Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.</p>
 <p class="mb-2">Tema eksempel – borger.dk (scss):</p>
 <pre>
 // These variables overwrite the default values, giving the style the borger.dk theme

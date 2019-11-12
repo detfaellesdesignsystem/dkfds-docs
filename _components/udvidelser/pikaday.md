@@ -12,7 +12,7 @@ alerts:
   content: Pikaday er ikke inkluderet i kernen af Det Fælles Designsystem. For at inkludere Pikaday skal der inkluderes et eksternt bibliotek, se implementeringsafsnittet nedenfor.<br><br>Det Fælles Designsystem har implementeret et tema til Pikaday, som findes i <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">Plugins<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> projektet.
 - type: error
   header: Pikaday er på nuværende tidspunkt ikke tilgængelig
-  content: Pikaday er på nuværende tidspunt ikke tilgængelig, når man har en skærmlæser kørende. Vi har oprettet en sag hos tredjepart og afventer løsning.
+  content: Pikaday er på nuværende tidspunkt ikke tilgængelig, når man har en skærmlæser kørende. Vi har oprettet en sag hos tredjepart og afventer løsning.
 ---
 
 {% include code/preview.html component="date-input-datepicker" %}

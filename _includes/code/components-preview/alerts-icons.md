@@ -36,7 +36,7 @@ title: Alerts-icons.html
     </div>
 
     <div class="alert alert-error alert--show-icon " role="alert"
-        aria-label="Beskedbox der viser en fejlmeddelselse">
+        aria-label="Beskedbox der viser en fejlmeddelelse">
         <div class="alert-body">
             <p class="alert-heading ">Fejlbesked - med ikon</p>
             <p class="alert-text">Sed ut perspiciatis unde omnis iste natus

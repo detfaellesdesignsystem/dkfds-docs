@@ -265,7 +265,7 @@ title: Example-opsummering.html
                 </td>
             </tr>
             <tr>
-                <th class="w-percent-md-30">Verserende retsag</th>
+                <th class="w-percent-md-30">Verserende retssag</th>
                 <td>Nej</td>
                 <td class="align-text-md-right d-print-none"><a
                         href="/pages/eksempler/AES-erstatningssag/aes-5">Rediger</a>

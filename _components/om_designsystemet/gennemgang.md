@@ -82,7 +82,7 @@ subnav:
     <p>Det Fælles Designsystem ønsker at hjælpe dig med at skabe  en god oplevelse for dine brugere: Når de bruger din selvbetjeningsløsning skal de opleve et visuelt og funktionelt design og layout, der er neutralt, simpelt og fleksibelt.</p>
     <h3>12 kolonner (horisontalt)</h3>
     <p>Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige brede kolonner med 32px afstand mellem hver kolonne (16 px på hver side af en kolonne). Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.</p>
-    <p>I tablet- og mobilvisninger folder layoutet sammen til respektivt 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst.</p> 
+    <p>I tablet- og mobilvisninger folder layoutet sammen til 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst.</p> 
     <h3>Responsivt med break points</h3>
     <p>Det Fælles Designsystem er responsivt og tilpasser sig således automatisk det tilgængelige vinduesareal.</p>
     <p>Sidens break points – de værdier, hvorefter siden automatisk tilpasser sig arealet – er:</p>
@@ -176,7 +176,7 @@ subnav:
     </ul>   
     <h3>Ikoner</h3>
     <p>Ikoner betragtes ikke som en reel udvidelse, selvom de bliver hentet udefra. Vi har udvalgt ikoner fra Material Design i .svg (Scalable Vector Graphic) format. De ligger som en samlet “pakke” af <code>symbol</code> efter <code>body</code>. På denne måde sparer vi et større antal forespørgsler for den enkelte side. Koden for ikoner fylder ganske lidt.</p>
-    <p>Ikonerne er angivet som <code>symbol</code> med tilføjet <code>title</code> og <code>desc</code> og de kaldes i html koden vha <code>use</code>, fordi det er den mest effektive anvendelse af svg-ikoner, hvor man via shadow DOM dynamisk opretter kopier af det oprindelige <code>symbol</code>.</p>
+    <p>Ikonerne er angivet som <code>symbol</code> med tilføjet <code>title</code> og <code>desc</code> og de kaldes i html koden ved hjælp af <code>use</code>, fordi det er den mest effektive anvendelse af svg-ikoner, hvor man via shadow DOM dynamisk opretter kopier af det oprindelige <code>symbol</code>.</p>
     <h4>Læs mere om ikoner her</h4>
         <ul class="nobullet-list">
         <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>

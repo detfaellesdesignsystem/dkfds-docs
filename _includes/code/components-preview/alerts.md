@@ -39,7 +39,7 @@ title: Alerts.html
     </div>
 
     <div class="alert alert-error " role="alert"
-        aria-label="Beskedbox der viser en fejlmeddelselse">
+        aria-label="Beskedbox der viser en fejlmeddelelse">
         <div class="alert-body">
             <p class="alert-heading ">Fejlbesked</p>
             <p class="alert-text">Sed ut perspiciatis unde omnis iste natus

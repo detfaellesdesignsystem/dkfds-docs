@@ -45,7 +45,7 @@ title: Alerts-close.html
     </div>
 
     <div class="alert alert-error  has-close" role="alert"
-        aria-label="Beskedbox der viser en fejlmeddelselse">
+        aria-label="Beskedbox der viser en fejlmeddelelse">
         <div class="alert-body">
             <p class="alert-heading  pr-7">Fejlbesked</p><a
                 href="javascript:void(0);"

@@ -224,7 +224,7 @@ title: Example-opsummering-2.html
                                 href="#">Rediger</a></td>
                     </tr>
                     <tr>
-                        <th class="w-percent-md-30">Verserende retsag</th>
+                        <th class="w-percent-md-30">Verserende retssag</th>
                         <td>Nej</td>
                         <td class="align-text-md-right d-print-none"><a
                                 href="#">Rediger</a></td>
