@@ -18,9 +18,8 @@ title: Example-boernetilskud-ansoegning-1.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen</b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -130,7 +129,7 @@ title: Example-boernetilskud-ansoegning-1.html
         <!-- 3: Main navigation end-->
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
+            <p class="user bold">Christian Emil Vestergaard Christiansen
             </p>
             <a href="#" class="button button-secondary button-signout">
                 Log af
@@ -138,7 +137,7 @@ title: Example-boernetilskud-ansoegning-1.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
@@ -268,8 +267,8 @@ title: Example-boernetilskud-ansoegning-1.html
                                         value="checkbox3_selected"
                                         class="form-checkbox  checkbox-large " />
                                     <label for="checkbox-id-3"
-                                        class=""><b>Ylmig Hedagaardsen</b>
-                                        <br> 353535-3535
+                                        class=""><span class="bold">Ylmig
+                                            Hedagaardsen</span> <br> 353535-3535
                                         <br> Fælles</label>
 
                                 </li>

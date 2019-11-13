@@ -18,9 +18,10 @@ title: Example-aes-page-1.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen<br><span
+                            class="weight-normal">Forsikringens
+                            Forsikringsfirma</span></span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -64,8 +65,9 @@ title: Example-aes-page-1.html
             title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user">
-                <b>Christian Emil Vestergaard Christiansen</b><br>Forsikringens Forsikringsfirma</p>
+            <p class="user"><span class="weight-semibold">Christian Emil
+                    Vestergaard
+                    Christiansen</span><br />Forsikringens Forsikringsfirma</p>
 
                 <a href="#" class="button button-secondary button-signout">
                     Log af
@@ -73,7 +75,7 @@ title: Example-aes-page-1.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p>Support: 72 20 60 00 <br><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>

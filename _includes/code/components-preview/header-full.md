@@ -17,8 +17,9 @@ title: Header-full.html
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
-                <p class="user">
-                    <b class="weight-semibold">Christian Emil Vestergaard Christensen</b><br>Københavns Urmager og Værksted v/Martin Elsig</p>
+                <p class="user"><span class="weight-semibold">Christian
+                        Emil Vestergaard
+                        Christensen</span><br />Københavns Urmager og Værksted v/Martin Elsig</p>
                     <a href="#"
                         class="button button-secondary alert-leave d-print-none"
                         role="button">
@@ -210,9 +211,7 @@ title: Header-full.html
         <!-- 5: Contextual actions end-->
 
         <div class="portal-info-mobile">
-            <p class="user">
-                <b class="username">Christian Emil Vestergaard Christensen</b>
-            </p>
+            <p class="user">Christian Emil Vestergaard Christensen</p>
             <p>Københavns Urmager og Værksted v/Martin Elsig</p>
             <a href="#" class="button button-secondary alert-leave"
                 role="button">
