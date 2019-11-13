@@ -5,7 +5,7 @@ title: Accordion-multi.html
 ---
 <div class="container">
 
-    <ul class="accordion " aria-multiselectable="true">
+    <ul class="accordion  accordion-multiselectable">
 
         <li>
             <button class="accordion-button " aria-expanded="false"
