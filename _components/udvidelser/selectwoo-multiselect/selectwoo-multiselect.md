@@ -19,13 +19,6 @@ subnav:
 - text: Gruppering
   href: '#gruppering'
 ---
-
-<div class="alert alert-error" role="alert">
-  <div class="alert-body">
-    <h2 class="alert-heading h3">Ikon mangler - Vi afventer fix fra SelectWoo</h2>
-  </div>
-</div>
-
 <h2 class="h4">Tilgængelighed</h2>
 <ul>
     <li>Bemærk: Multiselect dropdown-funktionen (SelectWoo) er gennemtestet af Det Fælles Designsystem og opfylder ikke alle krav til en anbefalet udvidelse. Det er dog den bedste, vi har kunnet finde indtil videre. Du skal bruger- og performanceteste prototyper med SelectWoo med entydigt positive resultat i forhold til din målgruppe, hvis du ønsker at anvende den. Det anbefales generelt, at du overvejer en anden løsning end en multiselect i din løsning.</li>
