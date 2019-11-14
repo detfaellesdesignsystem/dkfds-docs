@@ -4,7 +4,6 @@ layout: iframed
 title: Datatables--expandable-row.html
 ---
 <div class="container">
-    <p class="form-label">Expandable row</p>
     <table id="js-datatable-example-detailsrow"
         class="table table--lines w-percent-100">
         <thead>

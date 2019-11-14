@@ -151,12 +151,11 @@ class datatablesExamples {
         return '<div class="details-row-content">'+
           '<div class="row">'+
             '<div class="col-5">'+
-              '<p class="h3">Headline</p>' +
+              '<h3 class="mt-0">Headline</h3>' +
               '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna <a href="#">aliqua</a>.</p>'+
-              '<div class="responsive-content"></div>'+
             '</div>'+
             '<div class="col-6">'+
-                '<img src="https://ramen-files.s3.amazonaws.com/charturl-images/2017-01-26/9b64e497-3a7a-40c8-b7c7-322f84f84ba9.png"></div>' +
+                '<img src="https://ramen-files.s3.amazonaws.com/charturl-images/2017-01-26/9b64e497-3a7a-40c8-b7c7-322f84f84ba9.png" alt="Eksempelbillede" role="presentation"/>' +
             '</div>' +
         '</div>';
     }
