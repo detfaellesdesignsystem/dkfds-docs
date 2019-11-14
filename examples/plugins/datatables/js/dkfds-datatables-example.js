@@ -151,7 +151,7 @@ class datatablesExamples {
         return '<div class="details-row-content">' +
             '<h3 class="mt-0">Overskrift</h3>'+
           ' <div class="table--responsive-scroll">\n' +
-            '        <table class="table">\n' +
+            '        <table class="table table--zebra">\n' +
             '            <thead>\n' +
             '                <tr>\n' +
             '                    <th>Affaldstype</th>\n' +
