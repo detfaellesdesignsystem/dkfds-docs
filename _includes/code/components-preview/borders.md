@@ -54,8 +54,8 @@ title: Borders.html
       <div class="row">
           <div class="col-12 col-md-6">
               <h3 class="h5">Horisontal ruler</h3>
-              <p class="form-hint">Hr-tagget har samme farve som den Indre
-                  streg</p>
+              <p class="form-hint"><code>hr</code> elementet har samme
+                  farve som den Indre streg</p>
               <hr />
           </div>
           <div class="col-12 col-md-6">
