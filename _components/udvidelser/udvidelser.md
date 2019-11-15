@@ -14,7 +14,7 @@ alerts:
  <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/udvidelser/datatables/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/Avancerede_Tabeller.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/Avancerede_Tabeller.svg" >
           </a>
           <p><a href="/udvidelser/datatables/" class="bold-link">Avancerede tabeller</a></p>
       </div>
@@ -22,7 +22,7 @@ alerts:
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/udvidelser/selectwoo-multiselect/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/Multiselect.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/Multiselect.svg" >
           </a>
           <p><a href="/udvidelser/selectwoo-multiselect/" class="bold-link">Multiselect dropdown</a></p>
       </div>
@@ -30,7 +30,7 @@ alerts:
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/udvidelser/pikaday/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/Datepicker.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/Datepicker.svg" >
           </a>
           <p><a href="/udvidelser/pikaday/" class="bold-link">Datovælger (datepicker)</a></p>
       </div>
@@ -38,7 +38,7 @@ alerts:
     <div class="col-12 col-md-4">
         <div class="demo-component-box">
             <a href="/udvidelser/micromodal/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
-                <img src="{{ site.baseurl }}/img/componenticons/Modal.svg" alt="">
+                <img src="{{ site.baseurl }}/img/componenticons/Modal.svg" >
             </a>
             <p><a href="/udvidelser/micromodal/" class="bold-link">Modalvinduer</a></p>
         </div>
@@ -46,7 +46,7 @@ alerts:
      <div class="col-12 col-md-4">
         <div class="demo-component-box">
             <a href="/udvidelser/tippy/" class="demo-component-box__img extension-box" aria-hidden="true" tabindex="-1">
-                <img src="{{ site.baseurl }}/img/componenticons/Tooltip.svg" alt="">
+                <img src="{{ site.baseurl }}/img/componenticons/Tooltip.svg" >
             </a>
             <p><a href="/udvidelser/tippy/" class="bold-link">Tooltip og popover</a></p>
         </div>

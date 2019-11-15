@@ -11,7 +11,7 @@ lead: Her finder du forskellige eksempler på hvordan selvbetjeningsløsninger o
  <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/eksempler/selvbetjeningsloesninger/" class="demo-component-box__img example-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/Selvbetjening.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/Selvbetjening.svg">
           </a>
           <p><a href="/eksempler/selvbetjeningsloesninger/" class="bold-link">Selvbetjeningsløsninger</a></p>
       </div>
@@ -19,7 +19,7 @@ lead: Her finder du forskellige eksempler på hvordan selvbetjeningsløsninger o
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/eksempler/opsummeringsside/" class="demo-component-box__img example-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/Opsummering.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/Opsummering.svg">
           </a>
           <p><a href="/eksempler/opsummeringsside/" class="bold-link">Opsummeringsside</a></p>
       </div>
@@ -27,7 +27,7 @@ lead: Her finder du forskellige eksempler på hvordan selvbetjeningsløsninger o
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/eksempler/kvittering/" class="demo-component-box__img example-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/Kvittering.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/Kvittering.svg">
           </a>
           <p><a href="/eksempler/kvittering/" class="bold-link">Kvittering</a></p>
       </div>

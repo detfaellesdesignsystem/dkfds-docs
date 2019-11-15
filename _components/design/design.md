@@ -11,7 +11,7 @@ lead: Styling-elementerne er de mindste byggesten i systemet. Alle større kompo
     <div class="col-12 col-md-4">
         <div class="demo-component-box ">
             <a href="/design/farver/" class="demo-component-box__img design-box" aria-hidden="true" tabindex="-1">
-                <img src="{{ site.baseurl }}/img/componenticons/Farver.svg" alt="">
+                <img src="{{ site.baseurl }}/img/componenticons/Farver.svg" >
             </a>
             <p><a href="/design/farver/" class="bold-link">Farver</a></p>
         </div>
@@ -19,7 +19,7 @@ lead: Styling-elementerne er de mindste byggesten i systemet. Alle større kompo
     <div class="col-12 col-md-4">
         <div class="demo-component-box">
              <a href="/design/typography/" class="demo-component-box__img design-box" aria-hidden="true" tabindex="-1">
-                <img src="{{ site.baseurl }}/img/componenticons/Typography.svg" alt="">
+                <img src="{{ site.baseurl }}/img/componenticons/Typography.svg" >
             </a>
             <p><a href="/design/typography/" class="bold-link">Fonte og Typografi</a></p>
         </div>
@@ -27,7 +27,7 @@ lead: Styling-elementerne er de mindste byggesten i systemet. Alle større kompo
     <div class="col-12 col-md-4">
         <div class="demo-component-box">
             <a href="/design/grid/" class="demo-component-box__img design-box" aria-hidden="true" tabindex="-1">
-                <img src="{{ site.baseurl }}/img/componenticons/Grid.svg" alt="">
+                <img src="{{ site.baseurl }}/img/componenticons/Grid.svg" >
             </a>
             <p><a href="/design/grid/" class="bold-link">Grid</a></p>
         </div>
@@ -35,7 +35,7 @@ lead: Styling-elementerne er de mindste byggesten i systemet. Alle større kompo
     <div class="col-12 col-md-4">
         <div class="demo-component-box">
             <a href="/design/kanter/" class="demo-component-box__img design-box" aria-hidden="true" tabindex="-1">
-                <img src="{{ site.baseurl }}/img/componenticons/Streger.svg" alt="">
+                <img src="{{ site.baseurl }}/img/componenticons/Streger.svg" >
             </a>
             <p><a href="/design/borders/" class="bold-link">Hjørner, streger og skygger</a></p>
         </div>
@@ -43,7 +43,7 @@ lead: Styling-elementerne er de mindste byggesten i systemet. Alle større kompo
     <div class="col-12 col-md-4">
         <div class="demo-component-box">
             <a href="/design/ikoner/" class="demo-component-box__img design-box" aria-hidden="true" tabindex="-1">
-                <img src="{{ site.baseurl }}/img/componenticons/Ikoner.svg" alt="">
+                <img src="{{ site.baseurl }}/img/componenticons/Ikoner.svg" >
             </a>
             <p><a href="/design/ikoner/" class="bold-link">Ikoner</a></p>
         </div>
@@ -51,7 +51,7 @@ lead: Styling-elementerne er de mindste byggesten i systemet. Alle større kompo
     <div class="col-12 col-md-4">
         <div class="demo-component-box">
             <a href="/design/logoer/" class="demo-component-box__img design-box" aria-hidden="true" tabindex="-1">
-                <img src="{{ site.baseurl }}/img/componenticons/Logo.svg" alt="">
+                <img src="{{ site.baseurl }}/img/componenticons/Logo.svg" >
             </a>
             <p><a href="/design/logoer/" class="bold-link">Logoer</a></p>
         </div>
