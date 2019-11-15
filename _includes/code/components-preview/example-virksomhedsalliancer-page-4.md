@@ -30,7 +30,7 @@ title: Example-virksomhedsalliancer-page-4.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -96,7 +96,7 @@ title: Example-virksomhedsalliancer-page-4.html
                     <ul class="sidenav-list sidenav-list-locked">
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/">
                                 1. Stamdata
                                 <span class="sidenav-icon"
                                     aria-label="Gennemført">
@@ -106,7 +106,7 @@ title: Example-virksomhedsalliancer-page-4.html
                         </li>
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/">
                                 2. SMV-kriterier
                                 <span class="sidenav-icon"
                                     aria-label="Gennemført">
@@ -116,7 +116,7 @@ title: Example-virksomhedsalliancer-page-4.html
                         </li>
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/">
                                 3. Statsstøtte
                                 <span class="sidenav-icon"
                                     aria-label="Gennemført">
@@ -126,7 +126,7 @@ title: Example-virksomhedsalliancer-page-4.html
                         </li>
                         <li class="active">
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/">
                                 4. Tilskud til land (valgt)
                             </a>
                         </li>
@@ -292,7 +292,7 @@ title: Example-virksomhedsalliancer-page-4.html
             <nav class="page-navigation d-print-none">
                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/"
                     class="button button-primary">Næste</a>
-                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3"
+                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/"
                     class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
             </nav>
         </main>

@@ -70,7 +70,7 @@ order: 200
     Afsnit (h2)                 1.4
     Afsnit (h2)                 1.5
 </pre>
-          <p>Skærmlæseren læser dette op for brugere, der orienterer sig via skærmlæser. Det er derfor vigtigt, at du anvender strukturen, så brugere med skærmlæsere nemt kan hoppe imellem afsnit og underafsnit. </p>
+          <p>Skærmlæseren læser dette op for brugere, der orienterer sig via skærmlæser. Det er derfor vigtigt, at du anvender strukturen, så brugere med skærmlæsere nemt kan hoppe mellem afsnit og underafsnit. </p>
           <p>Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig ændre på overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.</p>
           <h5>Hvornår skal du bruge overskrifter?</h5>
           <ul>

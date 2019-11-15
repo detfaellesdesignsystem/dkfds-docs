@@ -30,7 +30,7 @@ title: Example-boernetilskud-ansoegning-2.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -215,7 +215,7 @@ title: Example-boernetilskud-ansoegning-2.html
                                 data-min="1" data-max="31" maxlength="2"
                                 pattern="^[0-9]{0,2}$"
                                 data-input-regex="^[0-9]{0,2}$"
-                                title="Indskriv dag på månenden som tal" />
+                                title="Indskriv dag på måneden som tal" />
                         </div>
                         <div class="form-group form-group-month">
                             <label class="form-label"

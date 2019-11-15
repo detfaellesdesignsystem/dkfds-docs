@@ -1,5 +1,5 @@
 ---
-title: Forskellig liniehøjde
+title: Forskellig linjehøjde
 parent: Tables
 order: 05
 lead: 

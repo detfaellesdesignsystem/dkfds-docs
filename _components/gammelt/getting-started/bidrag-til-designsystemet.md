@@ -92,7 +92,7 @@ Dine ændringer er nu lagt op på Frontend Styleguiden!
 
 ### Spørgsmål
 #### Hvorfor kan jeg ikke se min bidragelse på den officielle Frontend Styleguide hjemmeside?
-Selvom du har skubbet dine ændringer op til Frontend Styleguiden, vil der gå noget tid før de kommer på selve Frontend Styleguidens hjemmeside. Selve hjemmesiden bliver nemlig kun fornyet en gang imellem, hvor den der tager alle ændringerne der er blevet lavet, siden sidst den blev fornyet. Vær derfor tålmodig, og hvis du er i tvivl om dine ændringer er blevet skubbet op til Frontend Styleguiden, kan du gå ind på følgende link, for at se om din "Commit"-besked kan ses:
+Selvom du har skubbet dine ændringer op til Frontend Styleguiden, vil der gå noget tid før de kommer på selve Frontend Styleguidens hjemmeside. Selve hjemmesiden bliver nemlig kun fornyet en gang mellem, hvor den der tager alle ændringerne der er blevet lavet, siden sidst den blev fornyet. Vær derfor tålmodig, og hvis du er i tvivl om dine ændringer er blevet skubbet op til Frontend Styleguiden, kan du gå ind på følgende link, for at se om din "Commit"-besked kan ses:
 
 <https://github.com/FSGpilot/dkfds-docs/commits/master>
 
@@ -115,7 +115,7 @@ Du har nu gemt dit allerførste markdown dokument og kan nu skabe dine egne mark
 
 ### Brug Typoras funktioner
 
-Som sagt kan Typora ses lidt ligesom word. Hvis du vil ændre din tekst, skal du klikke et sted oppe i toppen. Forskellen mellem word og Typora er dog, at hvor du i word kan klikke på forskellige ikoner for at ændre på teksten, skal du i Typora vælge dine tekstændringer ved at tykke på de forskellige drop-down menuer. Hvis du kigger i toppen af Typora er der forskellige menuer at vælge imellem.
+Som sagt kan Typora ses lidt ligesom word. Hvis du vil ændre din tekst, skal du klikke et sted oppe i toppen. Forskellen mellem word og Typora er dog, at hvor du i word kan klikke på forskellige ikoner for at ændre på teksten, skal du i Typora vælge dine tekstændringer ved at tykke på de forskellige drop-down menuer. Hvis du kigger i toppen af Typora er der forskellige menuer at vælge mellem.
 
 ![]({{site.baseurl}}/img/docsimages/typora-menus.png)
 

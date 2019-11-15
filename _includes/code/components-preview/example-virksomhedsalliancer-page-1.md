@@ -30,7 +30,7 @@ title: Example-virksomhedsalliancer-page-1.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -96,25 +96,25 @@ title: Example-virksomhedsalliancer-page-1.html
                     <ul class="sidenav-list sidenav-list-locked">
                         <li class="active">
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/">
                                 1. Stamdata (valgt)
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/">
                                 2. SMV-kriterier
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/">
                                 3. Statsstøtte
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/">
                                 4. Tilskud til land
                             </a>
                         </li>
@@ -236,7 +236,7 @@ title: Example-virksomhedsalliancer-page-1.html
 
             </div>
             <nav class="page-navigation d-print-none">
-                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
+                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/"
                     class="button button-primary">Næste</a>
             </nav>
         </main>

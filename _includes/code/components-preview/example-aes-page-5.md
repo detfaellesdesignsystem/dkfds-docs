@@ -32,7 +32,7 @@ title: Example-aes-page-5.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -108,7 +108,7 @@ title: Example-aes-page-5.html
 
             <ul class='sidenav-list'>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-1/'>
                         1. Oplysninger om afsender
                         <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
@@ -116,7 +116,7 @@ title: Example-aes-page-5.html
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-2'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-2/'>
                         2. Hvis AES har spørgsmål til sagen
                         <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
@@ -124,7 +124,7 @@ title: Example-aes-page-5.html
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-3'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-3/'>
                         3. Oplysninger om skadelidte
                         <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
@@ -132,7 +132,7 @@ title: Example-aes-page-5.html
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-4'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-4/'>
                         4. Sagens natur
                         <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
@@ -140,28 +140,28 @@ title: Example-aes-page-5.html
                     </a>
                 </li>
                 <li class='active current'>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-5'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-5/'>
                         5. Oplysninger om sagen
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-6'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-6/'>
                         6. Tilføj dokumentation for første undersøgelse af
                         skaden
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-7'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-7/'>
                         7. Tilføj dokumentation fra sagen
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-8'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-8/'>
                         8. Tilføj kommentarer til sagen
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-9'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-9/'>
                         9. Opsummering
                     </a>
                 </li>
@@ -187,7 +187,7 @@ title: Example-aes-page-5.html
                         id="date-day" value="" type="tel" data-min="1"
                         data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
-                        title="Indskriv dag på månenden som tal" />
+                        title="Indskriv dag på måneden som tal" />
                 </div>
                 <div class="form-group form-group-month">
                     <label class="form-label"
@@ -255,7 +255,7 @@ title: Example-aes-page-5.html
                                     data-min="1" data-max="31"
                                     maxlength="2" pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
-                                    title="Indskriv dag på månenden som tal" />
+                                    title="Indskriv dag på måneden som tal" />
                             </div>
                             <div class="form-group form-group-month">
                                 <label class="form-label"

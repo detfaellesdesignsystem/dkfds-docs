@@ -55,7 +55,7 @@ subnav:
 <p class="small-text mt-0">22-10-2019</p>
 <ul>
     <li>
-        <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initere javascript med funktionen <code>DKFDS.init()</code> på hver side.
+        <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen <code>DKFDS.init()</code> på hver side.
         <p class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/komigang/tiludviklere/">implementering af dkfds til udviklere</a>.</p>
     </li>
     <li>
@@ -259,14 +259,14 @@ subnav:
       <p class="form-hint mt-0">Accordions plus og minus ikon er flyttet til starten af accordion-knappen</p>
     </li>
     <li class="mt-4">
-      Focus farve
-      <p class="form-hint mt-0">Focus-farven er ændret fra den gule farve (#febb30) til en grå farve (#747474). Farven er blevet ændret fordi den gule farve ikke overholder WCAG 2.1. Hvis man ønsker en anden focus-farve kan variablen <code>$color-focus</code> overskrives.</p>
+      Fokus farve
+      <p class="form-hint mt-0">Fokus farven er ændret fra den gule farve (#febb30) til en grå farve (#747474). Farven er blevet ændret fordi den gule farve ikke overholder WCAG 2.1. Hvis man ønsker en anden focus-farve kan variablen <code>$color-focus</code> overskrives.</p>
     </li>
     <li class="mt-4">
       Radioknapper og checkbokse
       <ul class="form-hint">
-        <li>Styling af radiobuttons kræver nu denne klasse på selve input[type=radio]: "form-radio".</li>
-        <li>Styling af checkboxe kræver nu denne klasse på selve input[type=checkbox]: "form-check".</li>
+        <li>Styling af radio knapper kræver nu denne klasse på selve input[type=radio]: "form-radio".</li>
+        <li>Styling af tjekbokse kræver nu denne klasse på selve input[type=checkbox]: "form-check".</li>
       </ul>
     </li>
   </ul>
@@ -288,7 +288,7 @@ subnav:
         <li>Display-1 går fra 120px til 80px</li>
         <li>Display-2 går fra 60px til 32px;</li>
       </ul>
-      <p class="form-hint mt-0">Hvis du ønsker at beholde det samme visualle udtryk skal man gå fra h5 til h4.</p>
+      <p class="form-hint mt-0">Hvis du ønsker at beholde det samme visuelle udtryk skal man gå fra h5 til h4.</p>
     </li>
     <li class="mt-4">
       Ny max-width styling

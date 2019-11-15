@@ -19,7 +19,7 @@ subnav:
 - text: Responsiv
   href: '#responsiv'
 - text: Linjehøjde
-  href: '#forskellig-liniehøjde'
+  href: '#forskellig-linjehøjde'
 - text: Med titel i venstre kolonne
   href: '#med-titel-i-venstre-kolonne'
 ---

@@ -30,7 +30,7 @@ title: Header-simple.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">

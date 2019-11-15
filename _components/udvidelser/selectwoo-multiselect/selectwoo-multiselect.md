@@ -36,7 +36,7 @@ subnav:
 <ul>
     <li>En multiselect dropdown er en avanceret funktion, der bør anvendes i meget begrænset omfang.</li>
     <li>Overvej om du kan tilbyde en bedre og mere overskuelig løsning fx tjekbokse.</li>
-    <li>På trods af de udvidede muligheder i Select2-udvidelsen bør implementationen holdes så enkel som muligt. </li>
+    <li>På trods af de udvidede muligheder i Select2-udvidelsen bør implementeringen holdes så enkel som muligt. </li>
     <li>Var varsom med at ændre indholdet af næste multiselect i forhold til det forrige valg.</li>
     <li>Begræns antallet af valgmuligheder i listen, så brugeren ikke mister overblik over sit valg.</li>
     <li>SelectWoo er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.</li>

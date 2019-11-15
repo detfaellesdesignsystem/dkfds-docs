@@ -59,7 +59,7 @@ subnav:
 <p>Giv logoet en alt-tekst, der beskriver at brugeren åbner myndighedens forside: “[Indsæt myndighed] forside”.</p>
 <h3>Brugervenlighed</h3>
 <ul>
-    <li>Footer-logoet går til myndighedens forside</li>
+    <li>Logoet i <a href="/komponenter/footers/#footer-logo">footeren</a> går til myndighedens forside</li>
     <li>Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.</li>
     <li>Myndighedens logo er kun at finde i footeren og der er kun et logo</li>
     <li>Venstrestil altid logoet i footeren</li>
