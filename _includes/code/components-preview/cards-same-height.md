@@ -102,8 +102,7 @@ title: Cards-same-height.html
 
                 <div class="card-text">
                     <p class="text">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Vestibulum sit amet ultricies
-                        nunc.</p>
+                        adipiscing elit.</p>
                 </div>
 
                 <div class="card-footer">
