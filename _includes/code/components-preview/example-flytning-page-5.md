@@ -123,7 +123,7 @@ title: Example-flytning-page-5.html
                 <li>
                     <a href='/pages/eksempler/digital-flytning/flytning-1'>
                         1. Oversigt
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -131,7 +131,7 @@ title: Example-flytning-page-5.html
                 <li>
                     <a href='/pages/eksempler/digital-flytning/flytning-2'>
                         2. Personer
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -139,7 +139,7 @@ title: Example-flytning-page-5.html
                 <li>
                     <a href='/pages/eksempler/digital-flytning/flytning-3'>
                         3. Adresse
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -147,14 +147,13 @@ title: Example-flytning-page-5.html
                 <li>
                     <a href='/pages/eksempler/digital-flytning/flytning-4'>
                         4. Særlig flytning
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-5'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/digital-flytning/flytning-5'>
                         5. Lægevalg
                     </a>
                 </li>

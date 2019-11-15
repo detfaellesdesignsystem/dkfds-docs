@@ -108,9 +108,8 @@ title: Example-flytning-page-1.html
             aria-hidden="true">
 
             <ul class='sidenav-list'>
-                <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-1'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/digital-flytning/flytning-1'>
                         1. Oversigt
                     </a>
                 </li>

@@ -98,7 +98,8 @@ title: Example-virksomhedsalliancer-page-2.html
                             <a
                                 href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
                                 1. Stamdata
-                                <span class="sidenav-icon">
+                                <span class="sidenav-icon"
+                                    aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>

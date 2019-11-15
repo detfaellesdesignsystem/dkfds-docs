@@ -162,9 +162,9 @@ title: Example-boernetilskud-ansoegning-1.html
                 aria-hidden="true">
 
                 <ul class='sidenav-list'>
-                    <li>
-                        <a href='/pages/eksempler/boernetilskud/boernetilskud-1'
-                            class='active'>
+                    <li class='active current'>
+                        <a
+                            href='/pages/eksempler/boernetilskud/boernetilskud-1'>
                             1. Hvilke børn søger du tilskud til?
                         </a>
                     </li>
@@ -172,26 +172,6 @@ title: Example-boernetilskud-ansoegning-1.html
                         <a
                             href='/pages/eksempler/boernetilskud/boernetilskud-2'>
                             2. Hvornår blev du eller bliver du enlig?
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            3.
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            4.
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            5.
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            6.
                         </a>
                     </li>
                 </ul>

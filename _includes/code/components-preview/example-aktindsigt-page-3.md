@@ -97,7 +97,7 @@ title: Example-aktindsigt-page-3.html
                 <li>
                     <a href='/pages/eksempler/aktindsigt/aktindsigt-1'>
                         1. Inden du går igang
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -105,14 +105,13 @@ title: Example-aktindsigt-page-3.html
                 <li>
                     <a href='/pages/eksempler/aktindsigt/aktindsigt-2'>
                         2. Oplysninger om dig
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-3'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/aktindsigt/aktindsigt-3'>
                         3. Bekræft oplysninger
                     </a>
                 </li>

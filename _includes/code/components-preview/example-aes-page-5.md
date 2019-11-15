@@ -110,7 +110,7 @@ title: Example-aes-page-5.html
                 <li>
                     <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
                         1. Oplysninger om afsender
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -118,7 +118,7 @@ title: Example-aes-page-5.html
                 <li>
                     <a href='/pages/eksempler/AES-erstatningssag/aes-2'>
                         2. Hvis AES har spørgsmål til sagen
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -126,7 +126,7 @@ title: Example-aes-page-5.html
                 <li>
                     <a href='/pages/eksempler/AES-erstatningssag/aes-3'>
                         3. Oplysninger om skadelidte
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -134,14 +134,13 @@ title: Example-aes-page-5.html
                 <li>
                     <a href='/pages/eksempler/AES-erstatningssag/aes-4'>
                         4. Sagens natur
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-5'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-5'>
                         5. Oplysninger om sagen
                     </a>
                 </li>

@@ -109,9 +109,8 @@ title: Example-aes-page-1.html
             aria-hidden="true">
 
             <ul class='sidenav-list'>
-                <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-1'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
                         1. Oplysninger om afsender
                     </a>
                 </li>

@@ -98,7 +98,8 @@ title: Example-kvittering-3.html
                             <a href="javascript:void(0)" tabindex="-1"
                                 aria-disabled="true">
                                 1. Stamdata
-                                <span class="sidenav-icon">
+                                <span class="sidenav-icon"
+                                    aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
@@ -107,7 +108,8 @@ title: Example-kvittering-3.html
                             <a href="javascript:void(0)" tabindex="-1"
                                 aria-disabled="true">
                                 2. SMV-kriterier
-                                <span class="sidenav-icon">
+                                <span class="sidenav-icon"
+                                    aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
@@ -116,7 +118,8 @@ title: Example-kvittering-3.html
                             <a href="javascript:void(0)" tabindex="-1"
                                 aria-disabled="true">
                                 3. Statsstøtte
-                                <span class="sidenav-icon">
+                                <span class="sidenav-icon"
+                                    aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
@@ -125,7 +128,8 @@ title: Example-kvittering-3.html
                             <a href="javascript:void(0)" tabindex="-1"
                                 aria-disabled="true">
                                 4. Tilskud til land
-                                <span class="sidenav-icon">
+                                <span class="sidenav-icon"
+                                    aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
@@ -134,7 +138,8 @@ title: Example-kvittering-3.html
                             <a href="javascript:void(0)" tabindex="-1"
                                 aria-disabled="true">
                                 5. Opsummering
-                                <span class="sidenav-icon">
+                                <span class="sidenav-icon"
+                                    aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>

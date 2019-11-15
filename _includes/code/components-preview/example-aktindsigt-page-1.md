@@ -95,9 +95,8 @@ title: Example-aktindsigt-page-1.html
             aria-hidden="true">
 
             <ul class='sidenav-list'>
-                <li>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-1'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/aktindsigt/aktindsigt-1'>
                         1. Inden du går igang
                     </a>
                 </li>
