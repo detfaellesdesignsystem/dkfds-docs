@@ -8,6 +8,8 @@ lead: Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designs
 subnav:
 - text: Næste møde
   href: '#næste-møde'
+- text: Nyhedsbrev
+  href: '#nyhedsbrev'
 - text: Netværk, sparring og support
   href: '#netværk-sparring-support'
 - text: Få indflydelse via samarbejde
@@ -19,7 +21,7 @@ subnav:
          <p>Næste samarbejdsforum er ikke planlagt endnu.</p>
     </section>
     <section>
-        <h2 class="h3">Nyhedsbrev</h2>
+        <h2 class="h3" id="nyhedsbrev">Nyhedsbrev</h2>
          <div class="alert alert-success d-none" id="newsletter-message" role="alert">
                 <div class="alert-body">
                     <p class="alert-text"></p>
