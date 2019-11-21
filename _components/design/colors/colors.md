@@ -630,7 +630,7 @@ subnav:
       <!-- black-on-pale start -->
       <div class="color-container-small color-gray-pale">
         <div class="color-text-container">
-          <p class="text-black">Normal tekst på pale</p>
+          <p class="text-black">Normal tekst på grå</p>
         </div>
       </div>
       <!-- black-on-pale end -->
@@ -638,6 +638,13 @@ subnav:
       <div class="color-container-small bordered color-white">
         <div class="color-text-container">
           <p class="form-hint">Hjælpetekst på hvid</p>
+        </div>
+      </div>
+      <!-- gray-on-white end -->
+      <!-- helptext-on-gray start -->
+      <div class="color-container-small color-gray-pale">
+        <div class="color-text-container">
+          <p class="form-hint">Hjælpetekst på grå</p>
         </div>
       </div>
       <!-- gray-on-white end -->
@@ -651,7 +658,7 @@ subnav:
       <!-- link-on-gray start -->
       <div class="color-container-small color-gray-pale">
         <div class="color-text-container">
-          <p><a href="#">Link på pale</a></p>
+          <p><a href="#">Link på grå</a></p>
         </div>
       </div>
       <!-- link-on-gray end -->
@@ -668,7 +675,7 @@ subnav:
       <!-- negative on gray start -->
       <div class="color-container-small color-gray-pale">
         <div class="color-text-container">
-          <p class="text-negative">Negativ tekst på pale</p>
+          <p class="text-negative">Negativ tekst på grå</p>
         </div>
       </div>
       <!-- negative on gray end -->
@@ -682,7 +689,7 @@ subnav:
       <!-- positive on gray start -->
       <div class="color-container-small color-gray-pale">
         <div class="color-text-container">
-          <p class="text-positive">Positiv tekst på pale</p>
+          <p class="text-positive">Positiv tekst på grå</p>
         </div>
       </div>
       <!-- positive on gray end -->
@@ -718,7 +725,7 @@ subnav:
       <!-- color-gray-pale start -->
       <div class="color-container-small color-gray-pale">
         <div class="color-text-container">
-          <p class="text-black">Sort på pale</p>
+          <p class="text-black">Sort på grå</p>
         </div>
       </div>
       <!-- color-gray-pale end -->

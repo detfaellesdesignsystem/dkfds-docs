@@ -9,6 +9,7 @@ subcategory: Kom i gang
 alerts:
 - type: warning
   content: Eksemplerne på implementering af dkfds og dkfds-plugins på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
+lead: "Vi tager gerne i mod rettelser og tilføjelser til beskrivelserne på denne side, da brugerne gerne selv er "
 ---
 <section>
     <h2>Angular</h2>

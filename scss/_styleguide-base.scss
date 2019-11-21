@@ -385,6 +385,12 @@
     background-color: $color-data-violet-low-opacity;
   }
 }
+.color-gray-pale {
+  background-color: $color-gray-pale;
+  .form-hint{
+    color: $color-gray-dark;
+  }
+}
 
 .color-container-small {
   height: 40px;
