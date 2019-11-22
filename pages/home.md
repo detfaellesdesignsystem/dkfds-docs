@@ -53,8 +53,8 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <ul class="nobullet-list">
             <li><a href="/omdesignsystemet/samarbejdsforum/">Få indflydelse i Samarbejdsforum</a></li>
             <li>
-                <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">
-                    Meld fejl og mangler ind via GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>
+                <a href="/omdesignsystemet/nyhedsmail">
+                    Nyhedsmail
                 </a>
             </li>
         </ul>
@@ -64,7 +64,11 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <h2 class="mt-0">Support</h2>
         <p>Se hvilke krav som gælder for din løsning. Har du spørgsmål, så kontakt os på mail, så skal vi hjælpe dig så godt vi kan, men brug GitHub til support og teknik.</p>
         <ul class="nobullet-list">
-            <li><a href="/komigang/krav/">Krav</a></li>
+            <li>
+                <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">
+                    Meld fejl og mangler ind via GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>
+                </a>
+            </li>
             <li><a href="mailto:fds@erst.dk" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>Skriv en mail til os</a></li>
         </ul>
     </div>
