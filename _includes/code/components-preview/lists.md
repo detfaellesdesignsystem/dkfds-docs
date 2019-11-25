@@ -9,43 +9,30 @@ title: Lists.html
             <p class="h4">Unordered list</p>
             <ul>
 
-                <li>
-                    Unordered list
+                <li>Unordered list</li>
 
-                </li>
+                <li>Unordered list</li>
 
-                <li>
-                    Unordered list
+                <li>Unordered list</li>
 
-                </li>
+                <li>Unordered list<ul class="sub_list">
 
-                <li>
-                    Unordered list
+                        <li>Unordered list</li>
 
-                </li>
+                        <li>Unordered list</li>
 
-                <li>
-                    Unordered list
+                        <li>Unordered list<ul class="sub_list">
 
-                    <ul class="sub_list">
+                                <li>Unordered list</li>
 
-                        <li>
-                            Unordered list
+                                <li>Unordered list</li>
 
-                        </li>
+                                <li>Unordered list</li>
 
-                        <li>
-                            Unordered list
-
-                        </li>
-
-                        <li>
-                            Unordered list
-
+                            </ul>
                         </li>
 
                     </ul>
-
                 </li>
 
             </ul>
@@ -53,29 +40,19 @@ title: Lists.html
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
             <p class="h4">Ordered list</p>
             <ol>
-                <li>Ordered list
-
-                </li>
-                <li>Ordered list
-
-                </li>
-                <li>Ordered list
-
-                </li>
-                <li>Ordered list
-
-                    <ol class="sub_list">
-                        <li>Ordered list
-
-                        </li>
-                        <li>Ordered list
-
-                        </li>
-                        <li>Ordered list
-
+                <li>Ordered list</li>
+                <li>Ordered list</li>
+                <li>Ordered list</li>
+                <li>Ordered list<ol class="sub_list">
+                        <li>Ordered list</li>
+                        <li>Ordered list</li>
+                        <li>Ordered list<ol class="sub_list">
+                                <li>Ordered list</li>
+                                <li>Ordered list</li>
+                                <li>Ordered list</li>
+                            </ol>
                         </li>
                     </ol>
-
                 </li>
             </ol>
         </div>
