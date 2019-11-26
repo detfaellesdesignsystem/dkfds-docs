@@ -1,7 +1,8 @@
 ---
-permalink: /omdesignsystemet/nyhedsmail/
+permalink: /omdesignsystemet/nyhedsmail/afmeld/
+parentlink: /omdesignsystemet/nyhedsmail/
 layout: styleguide
-title: Nyhedsmail
+title: Afmeld nyhedsmail
 category: Om_designsystemet_category
 subcategory: Om designsystemet
 ---
@@ -18,18 +19,8 @@ subcategory: Om designsystemet
             <span class="form-error-message d-none"></span>
             <input type="text" class="form-input" id="i_newsform_email" name="i_email" value="" />
             <input type="hidden" id="i_newsform_navn" name="i_navn" value="" />
+            <input type="hidden" id="i_newsform_segment" name="i_segment" value="" />
         </div>
-        <div class="form-group">
-            <fieldset>
-                <legend class="h4 mb-0">Vælg mails</legend>
-                <span class="form-error-message d-none"></span>
-                <ul class="nobullet-list" id="subscriptions">
-                </ul>
-            </fieldset>
-        </div>
-        <button id="Tilmeld" class="button button-primary mt-9" type="button" name="Tilmeld" title="Tilmeld" value="Tilmeld">Tilmeld</button>
-        <p class="mt-7 pt-0">
-            <a href="/omdesignsystemet/nyhedsmail/afmeld/">Afmeld</a>
-        </p>
+        <button id="Frameld" class="button button-primary mt-9" type="button" name="Tilmeld" title="Tilmeld" value="Tilmeld">Afmeld</button>
     </form>
 </div>
