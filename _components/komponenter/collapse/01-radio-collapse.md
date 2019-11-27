@@ -56,7 +56,7 @@ lead:
           <h3 class="h4">Brugervenlighed</h3>
           <h4 class="h5">Anvendes til</h4>
           <ul>
-              <li>at vise en ekstra felter relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</li>
+              <li>at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</li>
           </ul>
           <h4 class="h5">Anvendes ikke til</h4>
           <ul>
