@@ -180,6 +180,7 @@ title: Example-aes-page-1.html
                         class="form-radio  radio-large " />
                     <label for="id-afsender1" class="radio-large">Advokat
                         for forsikringsselskab </label>
+
                 </li>
                 <li>
                     <input id="id-afsender2" type="radio" name="afsender"
@@ -187,6 +188,7 @@ title: Example-aes-page-1.html
                         class="form-radio  radio-large " />
                     <label for="id-afsender2" class="radio-large">Advokat
                         for skadelidte </label>
+
                 </li>
                 <li>
                     <input id="id-afsender3" type="radio" name="afsender"
@@ -194,6 +196,7 @@ title: Example-aes-page-1.html
                         class="form-radio  radio-large " />
                     <label for="id-afsender3"
                         class="radio-large">Forsikringsselskab </label>
+
                 </li>
                 <li>
                     <input id="id-afsender4" type="radio" name="afsender"
@@ -201,12 +204,14 @@ title: Example-aes-page-1.html
                         class="form-radio  radio-large " />
                     <label for="id-afsender4"
                         class="radio-large">Erstatningsnævnet </label>
+
                 </li>
                 <li>
                     <input id="id-afsender5" type="radio" name="afsender"
                         value="Anden" class="form-radio  radio-large " />
                     <label for="id-afsender5" class="radio-large">Anden
                     </label>
+
                 </li>
             </ul>
         </fieldset>
