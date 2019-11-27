@@ -22,5 +22,8 @@ subcategory: Om designsystemet
             <input type="hidden" id="i_newsform_segment" name="i_segment" value="" />
         </div>
         <button id="Frameld" class="button button-primary mt-9" type="button" name="Tilmeld" title="Tilmeld" value="Tilmeld">Afmeld</button>
+        <p class="mt-7 pt-0">
+        <a href="/omdesignsystemet/nyhedsmail/">Tilmeld</a>
+        </p>
     </form>
 </div>
