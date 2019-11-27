@@ -76,7 +76,8 @@ class datatablesExamples {
         'processing': true,
         'ajax': {
             "url": "https://jsonplaceholder.typicode.com/users",
-            "dataSrc": ""
+            "dataSrc": "",
+            "crossDomain": true
         },
         'columns': [
             { "data": "name" },
@@ -205,7 +206,8 @@ class datatablesExamples {
         'language': languageConfig,
         'ajax': {
             "url": "https://jsonplaceholder.typicode.com/users",
-            "dataSrc": ""
+            "dataSrc": "",
+            "crossDomain": true
         },
         'rowId': "id",
         'columns': [
@@ -278,7 +280,8 @@ class datatablesExamples {
         language: languageConfig,
         ajax: {
             "url": "https://jsonplaceholder.typicode.com/users",
-            "dataSrc": ""
+            "dataSrc": "",
+            "crossDomain": true
         },
         rowId: "id",
         columns: [
@@ -394,7 +397,8 @@ class datatablesExamples {
         language: languageConfig,
         ajax: {
             "url": "https://jsonplaceholder.typicode.com/users",
-            "dataSrc": ""
+            "dataSrc": "",
+            "crossDomain": true
         },
         rowId: "id",
         columns: [

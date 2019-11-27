@@ -7,6 +7,12 @@ subcategory: Om designsystemet
 description: Release notes for dkfds
 anchor: true
 subnav:
+- text: Version 5.2.0
+  href: '#version-520'
+- text: Version 5.1.0
+  href: '#version-510'
+- text: Version 5.1.1
+  href: '#version-510'
 - text: Version 5.0.0
   href: '#version-500'
 - text: Version 4.4.0
@@ -21,18 +27,8 @@ subnav:
   href: '#version-410'
 - text: Version 4.0.1
   href: '#version-401'
-- text: Version 4.0.0
-  href: '#version-400'
-- text: Version 3.0.3
-  href: '#version-303'
-- text: Version 3.0.2
-  href: '#version-302'
-- text: Version 3.0.1
-  href: '#version-301'
-- text: Version 3.0.0
-  href: '#version-300'
-- text: Version 2.1.2
-  href: '#version-212'
+- text: Tidligere versioner
+  href: '#tidligere-versioner'
 ---
 <p class="font-lead">Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.</p>
 <p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
@@ -50,6 +46,63 @@ subnav:
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
 
+<h2 class="mb-0" id="version-520">Version 5.2.0</h2>
+<p class="small-text mt-0">27-11-2019</p>
+<ul>
+    <li>
+        <label class="color-info badge badge-small mr-3">Change</label>Ændret accordion aria-multiselectable så man i stedet kan bruge klassen accordion-multiselectable
+        <p class="form-hint mt-0">Ændringen er fortsat bagudkompatibel, men den tidligere implementering anbefales ikke, da det ikke var valid HTML.</p>
+    </li>
+    <li>
+        Teksten i <a href="/komponenter/cards/#cards-med-samme-højde">cards med samme højde</a> placeres nu korrekt
+    </li>
+    <li>
+        Tilføjet mere afstand mellem links i footer
+    </li>
+    <li>
+        Overskriftstørrelser på mobil er blevet opdateret
+    </li>
+    <li>
+        Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/sidenav/#sidenavigation-med-information">sidenavigation</a> og <a href="/komponenter/trinindikatorer/#trinindikator-med-information">trinindikator</a>
+    </li>
+    <li>
+        Tilføjet eksempel på <a href="/udvidelser/datatables/#expandable-table">tabel i Datatable</a>
+        <p class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+    </li>
+    <li>
+        Opdateret <a href="/komigang/tiludviklere/eksempler-implementering/">Eksempel på implementering i Angular</a>
+    </li>
+</ul>
+
+<h2 class="mb-0" id="version-510">Version 5.1.0</h2>
+<p class="small-text mt-0">12-11-2019</p>
+<ul>
+    <li>
+        <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse komponent</a> er tilføjet i kernen.
+    </li>
+    <li>
+        <a href="/komponenter/tilbage-link/">Tilbage link</a> er tilføjet i kernen.
+        <p class="form-hint mt-0">Bemærk, at <a href="/komponenter/tilbage-link/">Tilbage link</a> anbefales frem for <a href="/komponenter/buttons/#tilbage-knap">Tilbage knap</a>.</p>
+    </li>
+    <li>
+        Fokuskant tilføjet på #main-content ved fokus fra <a href="/design/typography/#skip-link">Skip link</a>.
+    </li>
+    <li>
+        <a href="/komponenter/badges/#statusbadges">Statusbadges</a> er tilføjet i kernen.
+    </li>
+    <li>
+        Fejl i overflow menu brugt i header fikset.
+        <p class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+    </li>
+    <li>
+        Fikset print af modal fra iPhone.
+        <p class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/67" class="icon-link">Github issue #67<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+    </li>
+    <li>
+        Opdateret beskrivelse af implementering af DKFDS under <a href="/komigang/tiludviklere/">Til udviklere</a>.
+        <p class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/komigang/tiludviklere/#temahaandtering">temahåndtering</a>.</p>
+    </li>
+</ul>
 
 <h2 class="mb-0" id="version-500">Version 5.0.0</h2>
 <p class="small-text mt-0">22-10-2019</p>
@@ -161,7 +214,7 @@ subnav:
     <li>Fikset hover farve på icon knap (button-unstyled)</li>
 </ul>
 
-<h2 class="mb-0" id="version-400">Version 4.0.0</h2>
+<h2 class="mb-0" id="tidligere-versioner">Version 4.0.0</h2>
 <p class="small-text mt-0">01-04-2019</p>
 <ul>
     <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Fjernet højde på cards</li>
