@@ -72,9 +72,8 @@ title: Example-aktindsigt-page-2.html
 
         <div class="solution-info-mobile">
             <p class="bold">Erhvervsministeriet</p>
-            <p><a href="javascript:void(0);"
-                    data-micromodal-trigger="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+            <p><button class="button-unstyled button-contact"
+                    data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-right"></use></svg></button>
             </p>
         </div>
 
@@ -83,158 +82,53 @@ title: Example-aktindsigt-page-2.html
 
 <main class="container page-container">
 
-    <div class="overflow-menu  overflow-menu--open-right ">
-        <button class="button-overflow-menu js-dropdown "
-            data-js-target="#overflow_steps" aria-haspopup="true"
-            aria-expanded="false">
-            Trin 2 af 3
-            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
-            <span class="sr-only">Åbner overflow menu</span>
-        </button>
-        <div class="overflow-menu-inner" id="overflow_steps"
-            aria-hidden="true">
-
-            <ul class='sidenav-list'>
-                <li>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-1'>
-                        1. Inden du går igang
-                        <span class='sidenav-icon' aria-label='Gennemført'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
-                        </span>
-                    </a>
-                </li>
-                <li class='active current'>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-2'>
-                        2. Oplysninger om dig
-                    </a>
-                </li>
-                <li>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-3'>
-                        3. Bekræft oplysninger
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
+    <a href="/pages/eksempler/aktindsigt/aktindsigt-1/"
+        class="back-link">Tilbage</a>
+    <h1>Bekræft oplysninger</h1>
 
     <form class="form" method="post"
-        action="/pages/eksempler/aktindsigt/aktindsigt-3">
-        <div role="group" aria-describedby="oplysninger-om-dig">
-            <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
-
-            <div class="form-group">
-                <label class="form-label " for="id-fornavn">Fornavn</label>
-
-                <input class="form-input  input-width-m " placeholder=""
-                    id="id-fornavn" value="" name="Input til fornavn"
-                    type="text">
-            </div>
-
-            <div class="form-group">
-                <label class="form-label "
-                    for="id-efternavn">Efternavn</label>
-
-                <input class="form-input  input-width-m " placeholder=""
-                    id="id-efternavn" value="" name="Input til efternavn"
-                    type="text">
-            </div>
-
-            <div class="form-group">
-                <label class="form-label "
-                    for="id-gade-vej">Gade/vej</label>
-
-                <input class="form-input  input-width-m " placeholder=""
-                    id="id-gade-vej" value="" name="Input til gade/vej"
-                    type="text">
-            </div>
-
-            <div class="form-group">
-                <label class="form-label "
-                    for="id-husnummer">Husnummer</label>
-
-                <input class="form-input  input-width-xxs " placeholder=""
-                    id="id-husnummer" value="" name="Input til husnummer"
-                    type="text">
-            </div>
-
-            <div class="form-group">
-                <label class="form-label " for="id-etage">Etage<span
-                        class="weight-normal"> (frivilligt)</span></label>
-
-                <input class="form-input  input-width-xxs " placeholder=""
-                    id="id-etage" value="" name="Input til etage"
-                    type="text">
-            </div>
-
-            <div class="form-group">
-                <label class="form-label " for="id-side">Side<span
-                        class="weight-normal"> (frivilligt)</span></label>
-                <span class="form-hint" id="input-hint-message-id-side">Fx:
-                    TV, 2. dør</span>
-
-                <input class="form-input  input-width-xs " placeholder=""
-                    id="id-side" value="" name="Input til side"
-                    type="text">
-            </div>
-
-            <div class="form-group">
-                <label class="form-label "
-                    for="id-postnummer">Postnummer</label>
-
-                <input class="form-input  input-width-xxs " placeholder=""
-                    id="id-postnummer" value="" name="Input til postnummer"
-                    type="text">
-            </div>
-
-            <div class="form-group">
-                <label class="form-label " for="id-by">By</label>
-
-                <input class="form-input  input-width-m " placeholder=""
-                    id="id-by" value="" name="Input til by" type="text">
-            </div>
-
-            <div class="form-group">
-                <label class="form-label " for="id-co-adresse">Evt.
-                    CO-adresse<span class="weight-normal">
-                        (frivilligt)</span></label>
-
-                <input class="form-input  input-width-m " placeholder=""
-                    id="id-co-adresse" value="" name="Input til CO-adresse"
-                    type="text">
-            </div>
-
-            <div class="form-group">
-                <fieldset>
-                    <legend class="form-label">Er der tidligere søgt om
-                        aktindsigt?</legend>
-                    <ul class="nobullet-list">
-                        <li>
-
-                            <input id="id-aktindsigt-ja" type="radio"
-                                name="aktindsigt" value="Ja"
-                                class="form-radio  radio-large " />
-                            <label for="id-aktindsigt-ja"
-                                class="radio-large">Ja </label>
-
-                        </li>
-                        <li>
-
-                            <input id="id-aktindsigt-nej" type="radio"
-                                name="aktindsigt" value="Ja"
-                                class="form-radio  radio-large " />
-                            <label for="id-aktindsigt-nej"
-                                class="radio-large">Nej </label>
-
-                        </li>
-                    </ul>
-                </fieldset>
+        action="/pages/eksempler/aktindsigt/aktindsigt-3/">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <table
+                    class="table table--borderless table--compact table--responsive-headers d-print-table">
+                    <tbody>
+                        <tr>
+                            <th class="w-percent-md-30">Navn</th>
+                            <td>Karen Jensen</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Adresse</th>
+                            <td>Vængetstræde 77<br>0081 Købstad</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Alder</th>
+                            <td>39</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Tidligere
+                                ansøgninger</th>
+                            <td>Nej</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+
         <button type="submit"
             class="button button-primary d-print-none mt-7">Næste</button>
-        <p><a href="/pages/eksempler/aktindsigt/aktindsigt-1"
-                class="back-link d-print-none">Tilbage</a></p>
     </form>
 </main>
 

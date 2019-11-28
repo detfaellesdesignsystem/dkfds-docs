@@ -6,6 +6,7 @@
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
 
+{% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% block header %}
   <header class="header">
@@ -33,70 +34,29 @@
 {% endblock %}
 
 {% block body %}
-  <main class="container page-container">
-    {{overflowmenu("Trin 3 af 3","overflow_steps", true, false, "menu-down" ,"
-        <ul class='sidenav-list'>
-            <li>
-                <a href='/pages/eksempler/aktindsigt/aktindsigt-1'>
-                    1. Inden du går igang
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href='/pages/eksempler/aktindsigt/aktindsigt-2'>
-                    2. Oplysninger om dig
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li class='active current'>
-                <a href='/pages/eksempler/aktindsigt/aktindsigt-3'>
-                    3. Bekræft oplysninger
-                </a>
-            </li>
-        </ul>
-        "
-    ) }}
+<main class="container page-container">
+    {{ alert("alert alert-success alert--show-icon", "alert", "Success", "Vi har modtaget dine oplysninger og vil behandle ansøgningen hurtigst muligt", "success" ) }}
 
+    <h1 class="mt-5">Kvittering</h1>
+    <label class="form-label">Navn</label>
+    <p class="mt-0">Karen Jensen</p>
+    <div class="mt-5">
+      <label class="form-label">Adresse</label>
+      <p class="mt-0">Vængetstræde 77 <br>
+      0081 Købstad</p>
+    </div>
+    <div class="mt-5">
+      <label class="form-label">Alder</label>
+      <p class="mt-0">39</p>
+    </div>
+    <div class="mt-5">
+      <label class="form-label">Tidligere ansøgninger</label>
+      <p class="mt-0">Nej</p>
+    </div>
 
-    <h1>Bekræft oplysninger</h1>
+    <button class="button button-secondary mt-7 d-print-none">{{ icon_svg('download')}} Gem som pdf</button> <br>
+    <button class="button button-secondary mt-3 d-print-none">{{ icon_svg('printer')}} Print</button>
 
-    <form class="form" method="post" action="/pages/eksempler/aktindsigt/aktindsigt-4">
-        <div class="row">
-            <div class="col-12 col-lg-8">
-            <table class="table table--borderless table--compact table--responsive-headers d-print-table">
-                <tbody>
-                    <tr>
-                        <th class="w-percent-md-30">Navn</th>
-                        <td>Karen Jensen</td>
-                        <td class="align-text-md-right d-print-none"><a href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Adresse</th>
-                        <td>Vængetstræde 77<br>0081 Købstad</td>
-                        <td class="align-text-md-right d-print-none"><a href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Alder</th>
-                        <td>39</td>
-                        <td class="align-text-md-right d-print-none"><a href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Tidligere ansøgninger</th>
-                        <td>Nej</td>
-                        <td class="align-text-md-right d-print-none"><a href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-        </div>
-
-        <button type="submit" class="button button-primary d-print-none mt-7">Næste</button>
-        <p><a href="/pages/eksempler/aktindsigt/aktindsigt-2" class="back-link d-print-none">Tilbage</a></p>
-    </form>
 </main>
 {% endblock %}
 
