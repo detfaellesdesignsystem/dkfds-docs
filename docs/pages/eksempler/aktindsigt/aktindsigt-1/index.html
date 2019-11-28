@@ -94,7 +94,7 @@
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="" class="alert-leave2">
+                <a href="#" title="Hjem" class="alert-leave2">
                     Ansøg om indsigt
                 </a>
             </div>
@@ -143,59 +143,122 @@
 
 <main class="container page-container">
 
-    <div class="overflow-menu  overflow-menu--open-right ">
-        <button class="button-overflow-menu js-dropdown "
-            data-js-target="#overflow_steps" aria-haspopup="true"
-            aria-expanded="false">
-            Trin 1 af 3
-            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
-            <span class="sr-only">Åbner overflow menu</span>
-        </button>
-        <div class="overflow-menu-inner" id="overflow_steps"
-            aria-hidden="true">
+    <form class="form" method="post"
+        action="/pages/eksempler/aktindsigt/aktindsigt-2/">
+        <div role="group" aria-describedby="oplysninger-om-dig">
+            <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
 
-            <ul class='sidenav-list'>
-                <li class='active current'>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-1'>
-                        1. Inden du går igang
-                    </a>
-                </li>
-                <li>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-2'>
-                        2. Oplysninger om dig
-                    </a>
-                </li>
-                <li>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-3'>
-                        3. Bekræft oplysninger
-                    </a>
-                </li>
-            </ul>
+            <div class="form-group">
+                <label class="form-label " for="id-fornavn">Fornavn</label>
 
+                <input class="form-input  input-width-m " placeholder=""
+                    id="id-fornavn" value="" name="Input til fornavn"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label "
+                    for="id-efternavn">Efternavn</label>
+
+                <input class="form-input  input-width-m " placeholder=""
+                    id="id-efternavn" value="" name="Input til efternavn"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label "
+                    for="id-gade-vej">Gade/vej</label>
+
+                <input class="form-input  input-width-m " placeholder=""
+                    id="id-gade-vej" value="" name="Input til gade/vej"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label "
+                    for="id-husnummer">Husnummer</label>
+
+                <input class="form-input  input-width-xxs " placeholder=""
+                    id="id-husnummer" value="" name="Input til husnummer"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label " for="id-etage">Etage<span
+                        class="weight-normal"> (frivilligt)</span></label>
+
+                <input class="form-input  input-width-xxs " placeholder=""
+                    id="id-etage" value="" name="Input til etage"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label " for="id-side">Side<span
+                        class="weight-normal"> (frivilligt)</span></label>
+                <span class="form-hint" id="input-hint-message-id-side">Fx:
+                    TV, 2. dør</span>
+
+                <input class="form-input  input-width-xs " placeholder=""
+                    id="id-side" value="" name="Input til side"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label "
+                    for="id-postnummer">Postnummer</label>
+
+                <input class="form-input  input-width-xxs " placeholder=""
+                    id="id-postnummer" value="" name="Input til postnummer"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label " for="id-by">By</label>
+
+                <input class="form-input  input-width-m " placeholder=""
+                    id="id-by" value="" name="Input til by" type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label " for="id-co-adresse">Evt.
+                    CO-adresse<span class="weight-normal">
+                        (frivilligt)</span></label>
+
+                <input class="form-input  input-width-m " placeholder=""
+                    id="id-co-adresse" value="" name="Input til CO-adresse"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label">Er der tidligere søgt om
+                        aktindsigt?</legend>
+                    <ul class="nobullet-list">
+                        <li>
+
+                            <input id="id-aktindsigt-ja" type="radio"
+                                name="aktindsigt" value="Ja"
+                                class="form-radio  radio-large " />
+                            <label for="id-aktindsigt-ja"
+                                class="radio-large">Ja </label>
+
+                        </li>
+                        <li>
+
+                            <input id="id-aktindsigt-nej" type="radio"
+                                name="aktindsigt" value="Ja"
+                                class="form-radio  radio-large " />
+                            <label for="id-aktindsigt-nej"
+                                class="radio-large">Nej </label>
+
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
         </div>
-    </div>
-
-    <h1>Inden du går igang</h1>
-    <p class="font-lead">Inden du går igang, skal du være opmærksom på:</p>
-    <ul>
-        <li class="mt-6">At alle oplysninger kan ændres, efter at du har
-            indtastet dem. Det gælder dog ikke, når løsningen er sendt.
-        </li>
-        <li class="mt-6">At oplysningerne ikke bliver brugt i andre
-            sammenhænge, med mindre du får andet af vide.</li>
-        <li class="mt-6">At du kan forvente en afgørelse i løbet af 14
-            dage. Ansøgningen er underlagt lov om indsigt på området, Vær
-            opmærksom på, at nedenstående oplysninger ikke benyttes i andre
-            sammenhænge, med mindre andet er anført.</li>
-    </ul>
-    <h2 class="mb-0">Hvis du vil klage</h2>
-    <p class="mb-0 mt-4">Klager skal være modtaget senest to måneder efter
-        afgørelsen af din ansøgning.</p>
-
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/aktindsigt/aktindsigt-2"
-            class="button button-primary">Næste</a>
-    </nav>
+        <button type="submit"
+            class="button button-primary d-print-none mt-7">Næste</button>
+    </form>
 </main>
 
 <footer>
@@ -270,7 +333,6 @@
         </div>
     </div>
 </div>
-
 
 
 <footer class="demo-footer d-print-none">
