@@ -49,14 +49,19 @@ lead:
               <li>Radioknapperne skal kunne aktiveres og håndteres fra tastatur.</li>
               <li>Skjul ikke meningsbærende indhold som fx beskrivelser/labels med denne funktionalitet.</li>
               <li>Vis kun de ekstra muligheder, når brugeren har foretaget et valg.</li>
+              <li>Da der er nogle begrænsninger, vil det være en god idé at teste med en skærmlæser (Fx NVDA) om alt indhold kan navigeres til med tastatur samt læses op.</li>
           </ul>
       </section>
       <section>
           <h3 class="h4">Brugervenlighed</h3>
           <h4 class="h5">Anvendes til</h4>
-          <p>Vise yderligere information eller en ekstra funktion relevant til brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes per email.</p>
+          <ul>
+              <li>at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</li>
+          </ul>
           <h4 class="h5">Anvendes ikke til</h4>
-          <p>Anvend ikke denne mulighed til inline-placerede radioknapper. </p>
+          <ul>
+            <li>at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.</li>
+          </ul>
           <h4 class="h5">Vejledning</h4>                
           <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
       </section>

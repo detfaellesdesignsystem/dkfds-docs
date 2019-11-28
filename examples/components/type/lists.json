@@ -9,7 +9,12 @@
         "list_ul": [
           {"text": "Unordered list"},
           {"text": "Unordered list"},
-          {"text": "Unordered list"}
+          {"text": "Unordered list",
+            "list_ul": [
+              {"text": "Unordered list"},
+              {"text": "Unordered list"},
+              {"text": "Unordered list"}
+            ]}
         ]
       }
     ],
@@ -22,7 +27,12 @@
         "list_ol": [
           {"text": "Ordered list"},
           {"text": "Ordered list"},
-          {"text": "Ordered list"}
+          {"text": "Ordered list",
+            "list_ol": [
+              {"text": "Ordered list"},
+              {"text": "Ordered list"},
+              {"text": "Ordered list"}
+            ]}
         ]
       }
     ]

@@ -21,7 +21,16 @@ title: Lists.html
 
                         <li>Unordered list</li>
 
-                        <li>Unordered list</li>
+                        <li>Unordered list<ul class="sub_list">
+
+                                <li>Unordered list</li>
+
+                                <li>Unordered list</li>
+
+                                <li>Unordered list</li>
+
+                            </ul>
+                        </li>
 
                     </ul>
                 </li>
@@ -37,7 +46,12 @@ title: Lists.html
                 <li>Ordered list<ol class="sub_list">
                         <li>Ordered list</li>
                         <li>Ordered list</li>
-                        <li>Ordered list</li>
+                        <li>Ordered list<ol class="sub_list">
+                                <li>Ordered list</li>
+                                <li>Ordered list</li>
+                                <li>Ordered list</li>
+                            </ol>
+                        </li>
                     </ol>
                 </li>
             </ol>
