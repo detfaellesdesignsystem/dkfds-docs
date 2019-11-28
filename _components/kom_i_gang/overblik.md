@@ -11,25 +11,25 @@ lead: Det Fælles designsystem er en samling af kode og designretningslinjer, de
  <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/komigang/krav/" class="demo-component-box__img gettingstarted-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/Krav.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/Krav.svg" />
           </a>
-          <p><a href="/komigang/krav/">Krav</a></p>
+          <p><a href="/komigang/krav/" class="bold-link">Krav</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/komigang/tiludviklere/" class="demo-component-box__img gettingstarted-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/TilUdviklere.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/TilUdviklere.svg" >
           </a>
-          <p><a href="/komigang/tiludviklere/">Til udviklere</a></p>
+          <p><a href="/komigang/tiludviklere/" class="bold-link">Til udviklere</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/komigang/tildesignere/" class="demo-component-box__img gettingstarted-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/TilDesignere.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/TilDesignere.svg" >
           </a>
-          <p><a href="/komigang/tildesignere/">Til designere</a></p>
+          <p><a href="/komigang/tildesignere/" class="bold-link">Til designere</a></p>
       </div>
   </div>
 </div>
@@ -37,17 +37,17 @@ lead: Det Fælles designsystem er en samling af kode og designretningslinjer, de
  <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/komigang/tilprojekteledere/" class="demo-component-box__img gettingstarted-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/TilProjektledere.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/TilProjektledere.svg" >
           </a>
-              <p><a href="/komigang/tilprojekteledere/">Til projektledere</a></p>
+              <p><a href="/komigang/tilprojekteledere/" class="bold-link">Til projektledere</a></p>
       </div>
   </div>
   <div class="col-12 col-md-4">
       <div class="demo-component-box">
           <a href="/komigang/tilgaengelighed/" class="demo-component-box__img gettingstarted-box" aria-hidden="true" tabindex="-1">
-              <img src="{{ site.baseurl }}/img/componenticons/Tilgaengelighed_kantet.svg" alt="">
+              <img src="{{ site.baseurl }}/img/componenticons/Tilgaengelighed_kantet.svg" >
           </a>
-          <p><a href="/komigang/tilgaengelighed/">Tilgængelighed</a></p>
+          <p><a href="/komigang/tilgaengelighed/" class="bold-link">Tilgængelighed</a></p>
       </div>
   </div>
 </div>

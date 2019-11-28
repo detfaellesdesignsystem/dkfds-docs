@@ -16,13 +16,13 @@ title: Checkbox-toggle-content.html
                         data-js-target='#collapse-check1'
                         aria-controls='collapse-check1'
                         aria-expanded='false' />
-                    <label for="id-checkbox1" class="">Checkbox viser
+                    <label for="id-checkbox1" class="">Tjekboks viser
                         indhold</label>
 
                     <div id="collapse-check1" aria-hidden="true"
                         class="box-border-l collapsed">
                         <div class="py-4">
-                            <p>Dette indhold bliver vist når checkboxen er
+                            <p>Dette indhold bliver vist når tjekboksen er
                                 valgt.</p>
                         </div>
                     </div>
@@ -35,13 +35,13 @@ title: Checkbox-toggle-content.html
                         checked data-js-target='#collapse-check2'
                         aria-controls='collapse-check2'
                         aria-expanded='false' />
-                    <label for="id-checkbox2" class="">Checkbox viser
+                    <label for="id-checkbox2" class="">Tjekboks viser
                         indhold</label>
 
                     <div id="collapse-check2" aria-hidden="true"
                         class="box-border-l collapsed">
                         <div class="py-4">
-                            <p>Dette indhold bliver vist når checkboxen er
+                            <p>Dette indhold bliver vist når tjekboksen er
                                 valgt.</p>
                         </div>
                     </div>

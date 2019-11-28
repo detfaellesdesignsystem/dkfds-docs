@@ -18,9 +18,8 @@ title: Example-virksomhedsalliancer-page-3.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen</b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -31,7 +30,7 @@ title: Example-virksomhedsalliancer-page-3.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -63,7 +62,7 @@ title: Example-virksomhedsalliancer-page-3.html
             title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Navn</b></p>
+            <p class="user bold">Navn</p>
 
             <a href="#" class="button button-secondary button-signout">
                 Log af
@@ -71,7 +70,7 @@ title: Example-virksomhedsalliancer-page-3.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
@@ -97,31 +96,33 @@ title: Example-virksomhedsalliancer-page-3.html
                     <ul class="sidenav-list sidenav-list-locked">
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/">
                                 1. Stamdata
-                                <span class="sidenav-icon">
+                                <span class="sidenav-icon"
+                                    aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/">
                                 2. SMV-kriterier
-                                <span class="sidenav-icon">
+                                <span class="sidenav-icon"
+                                    aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3"
-                                class="active">
+                        <li class="active">
+                            <a
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/">
                                 3. Statsstøtte (valgt)
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4">
+                                href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/">
                                 4. Tilskud til land
                             </a>
                         </li>
@@ -154,7 +155,7 @@ title: Example-virksomhedsalliancer-page-3.html
                         seneste 3 år. Tidligere tilskud givet fra
                         Eksportrådet er omfattet af de-minimis-reglerne og
                         de skal nævnes
-                        nedenfor.<br><br>Hvis virksomheden juridisk er en del af en koncernstruktur (indenlandsk som udenlandsk), som tilsammen hæfter for de-minimis-støtte, oplyses det fulde beløb for hele koncernen. Se Statsstøttehåndbogen side 65-86, hvis du er i tvivl om, hvor meget af koncernen, der er omfattet.<br><br>Støtte fra eksportrådet i form af tilskud ydes i henhold til EU-reglerne for de-minimis-støtte, jf. Komissionernes forordning (EU) nr. 1407/2013 af 18. december 2013.</p>
+                        nedenfor.<br><br>Hvis virksomheden juridisk er en del af en koncernstruktur (indenlandsk som udenlandsk), som tilsammen hæfter for de-minimis-støtte, oplyses det fulde beløb for hele koncernen. Se Statsstøttehåndbogen side 65-86, hvis du er i tvivl om, hvor meget af koncernen, der er omfattet.<br><br>Støtte fra eksportrådet i form af tilskud ydes i henhold til EU-reglerne for de-minimis-støtte, jf. Kommissionernes forordning (EU) nr. 1407/2013 af 18. december 2013.</p>
 
                 </div>
             </div>
@@ -213,7 +214,7 @@ title: Example-virksomhedsalliancer-page-3.html
                                             type="text">
                                     </div>
 
-                                    <div class="form-group ">
+                                    <div class="form-group  ">
                                         <fieldset>
                                             <legend><label
                                                     class="form-label">Dato
@@ -221,7 +222,10 @@ title: Example-virksomhedsalliancer-page-3.html
                                                 <span class="form-hint">Fx.
                                                     28 04 1996</span>
                                             </legend>
-
+                                            <span
+                                                class="form-error-message  d-none"
+                                                id="form-error-message-input-error"
+                                                role="alert"></span>
                                             <div
                                                 class="date-group js-calendar-group mt-3">
                                                 <div
@@ -233,11 +237,12 @@ title: Example-virksomhedsalliancer-page-3.html
                                                         class="form-input js-calendar-day-input"
                                                         id="date-day"
                                                         value="" type="tel"
-                                                        min="1" max="31"
+                                                        data-min="1"
+                                                        data-max="31"
                                                         maxlength="2"
                                                         pattern="^[0-9]{0,2}$"
                                                         data-input-regex="^[0-9]{0,2}$"
-                                                        title="Indskriv dag på månenden som tal" />
+                                                        title="Indskriv dag på måneden som tal" />
                                                 </div>
                                                 <div
                                                     class="form-group form-group-month">
@@ -248,7 +253,8 @@ title: Example-virksomhedsalliancer-page-3.html
                                                         class="form-input js-calendar-month-input"
                                                         id="date-month"
                                                         value="" type="tel"
-                                                        min="1" max="12"
+                                                        data-min="1"
+                                                        data-max="12"
                                                         maxlength="2"
                                                         pattern="^[0-9]{0,2}$"
                                                         data-input-regex="^[0-9]{0,2}$"
@@ -263,8 +269,8 @@ title: Example-virksomhedsalliancer-page-3.html
                                                         class="form-input js-calendar-year-input"
                                                         id="date-year"
                                                         value="" type="tel"
-                                                        min="1900"
-                                                        max="3000"
+                                                        data-min="1900"
+                                                        data-max="3000"
                                                         maxlength="4"
                                                         pattern="^[0-9]{0,4}$"
                                                         data-input-regex="^[0-9]{0,4}$"
@@ -322,9 +328,9 @@ title: Example-virksomhedsalliancer-page-3.html
             </div>
 
             <nav class="page-navigation d-print-none">
-                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4"
+                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/"
                     class="button button-primary">Næste</a>
-                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2"
+                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/"
                     class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
             </nav>
         </main>

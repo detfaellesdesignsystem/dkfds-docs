@@ -3,7 +3,7 @@ permalink: /preview-components/cards-third-width.html
 layout: iframed 
 title: Cards-third-width.html
 ---
-<div class="container">
+<div class="container pb-5">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4">
             <div class="card ">
@@ -24,8 +24,7 @@ title: Cards-third-width.html
                     </div>
                     <div class="action-buttons">
                         <button
-                            class="button button-secondary">Sekundærknap</button>
-                        <button
+                            class="button button-secondary">Sekundærknap</button><button
                             class="button button-tertiary">Tertiærknap</button>
                     </div>
                     <div class="action-links">

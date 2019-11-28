@@ -18,9 +18,8 @@ title: Example-kvittering-2.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen</b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -31,7 +30,7 @@ title: Example-kvittering-2.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -63,7 +62,7 @@ title: Example-kvittering-2.html
             title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
+            <p class="user bold">Christian Emil Vestergaard Christiansen
             </p>
             <p class="mt-0">Københavns Urmager Værksted v/Martin Elsig</p>
             <a href="#" class="button button-secondary button-signout">
@@ -72,7 +71,7 @@ title: Example-kvittering-2.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>

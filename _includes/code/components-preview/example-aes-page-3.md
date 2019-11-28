@@ -18,9 +18,10 @@ title: Example-aes-page-3.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen<br><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen<br><span
+                            class="weight-normal">Forsikringens
+                            Forsikringsfirma</span></span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -31,7 +32,7 @@ title: Example-aes-page-3.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -63,15 +64,16 @@ title: Example-aes-page-3.html
             title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user">
-                <b>Christian Emil Vestergaard Christiansen</b><br>Forsikringens Forsikringsfirma</p>
+            <p class="user"><span class="weight-semibold">Christian Emil
+                    Vestergaard
+                    Christiansen</span><br />Forsikringens Forsikringsfirma</p>
                 <a href="#" class="button button-secondary button-signout">
                     Log af
                 </a>
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p>Support: 72 20 60 00 <br><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
@@ -106,55 +108,54 @@ title: Example-aes-page-3.html
 
             <ul class='sidenav-list'>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-1'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-1/'>
                         1. Oplysninger om afsender
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-2'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-2/'>
                         2. Hvis AES har spørgsmål til sagen
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-3'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-3/'>
                         3. Oplysninger om skadelidte
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-4'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-4/'>
                         4. Sagens natur
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-5'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-5/'>
                         5. Oplysninger om sagen
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-6'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-6/'>
                         6. Tilføj dokumentation for første undersøgelse af
                         skaden
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-7'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-7/'>
                         7. Tilføj dokumentation fra sagen
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-8'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-8/'>
                         8. Tilføj kommentarer til sagen
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/AES-erstatningssag/aes-9'>
+                    <a href='/pages/eksempler/AES-erstatningssag/aes-9/'>
                         9. Opsummering
                     </a>
                 </li>

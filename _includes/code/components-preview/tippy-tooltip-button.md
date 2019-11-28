@@ -8,6 +8,6 @@ title: Tippy-tooltip-button.html
         data-tippy-content="Dette er et tooltip">
         Knap med tooltip
         <span class="sr-only">Dette er tooltipteksten til
-            screenreaders</span>
+            skærmlæsere</span>
     </button>
 </div>

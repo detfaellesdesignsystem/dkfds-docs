@@ -43,13 +43,13 @@ subnav:
 
 <h3 class="h5">Header-temaer</h3>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/header-temaer.png" alt="Temahåndtering i header" class="description-image"></figure>
-<p><a href="/komponenter/headers/">Gå til headerkomponenten</a></p>
-<p><a href="/design/sideopbygning/?s=undefined#header">Læs om layout til headeren</a></p>
+<p><a href="/komponenter/headers/">Gå til header komponenten</a></p>
+<p><a href="/design/sideopbygning/#header">Læs om layout til headeren</a></p>
 
 <h3 class="h5">Venstremenu/tringuide-temaer</h3>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/venstremenu-tringuide.png" alt="Temahåndtering i venstremenu" class="description-image"></figure>
-<p><a href="/komponenter/sidenav/">Gå til venstremenukomponenten</a></p>
-<p><a href="/komponenter/trinindikatorer/">Læs om de forskellige tringuides</a></p>
+<p><a href="/komponenter/sidenav/">Gå til Sidenavigation komponenten</a></p>
+<p><a href="/komponenter/trinindikatorer/">Læs om de forskellige trinindikatorer</a></p>
 
 <h3 class="h5">Primærknap-temaer</h3>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/Primaerknapper.png" alt="Temahåndtering og knapper" class="description-image"></figure>

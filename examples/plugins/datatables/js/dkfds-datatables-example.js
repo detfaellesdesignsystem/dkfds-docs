@@ -76,7 +76,8 @@ class datatablesExamples {
         'processing': true,
         'ajax': {
             "url": "https://jsonplaceholder.typicode.com/users",
-            "dataSrc": ""
+            "dataSrc": "",
+            "crossDomain": true
         },
         'columns': [
             { "data": "name" },
@@ -148,16 +149,55 @@ class datatablesExamples {
     // Formatting function for row details - modify as you need
     function format ( d ) {
         // `d` is the original data object for the row
-        return '<div class="details-row-content">'+
-          '<div class="row">'+
-            '<div class="col-5">'+
-              '<p class="h3">Headline</p>' +
-              '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna <a href="#">aliqua</a>.</p>'+
-              '<div class="responsive-content"></div>'+
-            '</div>'+
-            '<div class="col-6">'+
-                '<img src="https://ramen-files.s3.amazonaws.com/charturl-images/2017-01-26/9b64e497-3a7a-40c8-b7c7-322f84f84ba9.png"></div>' +
-            '</div>' +
+        return '<div class="details-row-content">' +
+            '<h3 class="mt-0">Overskrift</h3>'+
+          ' <div class="table--responsive-scroll">\n' +
+            '        <table class="table table--zebra">\n' +
+            '            <thead>\n' +
+            '                <tr>\n' +
+            '                    <th>Affaldstype</th>\n' +
+            '                    <th>Farvekode</th>\n' +
+            '                    <th>Beskrivelse</th>\n' +
+            '                    <th>Hvor ender det?</th>\n' +
+            '                </tr>\n' +
+            '            </thead>\n' +
+            '            <tbody>\n' +
+            '                <tr>\n' +
+            '                    <td>Dagrenovation</td>\n' +
+            '                    <td>Grøn</td>\n' +
+            '                    <td>Madaffald, samt papir, pap eller plastik der ikke\n' +
+            '                        kan genanvendes, fordi der er madrester eller andet\n' +
+            '                        snask på.</td>\n' +
+            '                    <td>Alt det affald, du smider ud i din primære\n' +
+            '                        skraldespand, som er dagrenovationen, bliver hentet\n' +
+            '                        og kørt på forbrændingen. </td>\n' +
+            '                </tr>\n' +
+            '                <tr>\n' +
+            '                    <td>Bioaffald og kompost</td>\n' +
+            '                    <td>Beige</td>\n' +
+            '                    <td>Alt madaffald uden fødevareemballage.</td>\n' +
+            '                    <td>Bioaffaldet kommes i bionedbrydelige poser, som\n' +
+            '                        bliver komposteret til muld.</td>\n' +
+            '                </tr>\n' +
+            '                <tr>\n' +
+            '                    <td>Glas</td>\n' +
+            '                    <td>Hvid</td>\n' +
+            '                    <td>Alle typer glas og flasker.</td>\n' +
+            '                    <td>De hele vinflasker rengøres og genbruges af\n' +
+            '                        vinhuse, mens glasskårene bliver smeltet om til nyt\n' +
+            '                        glas.</td>\n' +
+            '                </tr>\n' +
+            '                <tr>\n' +
+            '                    <td>Elektronik</td>\n' +
+            '                    <td>Orange</td>\n' +
+            '                    <td>Genstande der har brugt strøm.</td>\n' +
+            '                    <td>Det elektroniske affald bliver typisk kørt til et\n' +
+            '                        demonteringsanlæg, hvor det bliver skilt ad, så de\n' +
+            '                        forskellige dele kan genanvendes separat.</td>\n' +
+            '                </tr>\n' +
+            '            </tbody>\n' +
+            '        </table>\n' +
+            '    </div>'
         '</div>';
     }
 
@@ -166,7 +206,8 @@ class datatablesExamples {
         'language': languageConfig,
         'ajax': {
             "url": "https://jsonplaceholder.typicode.com/users",
-            "dataSrc": ""
+            "dataSrc": "",
+            "crossDomain": true
         },
         'rowId': "id",
         'columns': [
@@ -239,7 +280,8 @@ class datatablesExamples {
         language: languageConfig,
         ajax: {
             "url": "https://jsonplaceholder.typicode.com/users",
-            "dataSrc": ""
+            "dataSrc": "",
+            "crossDomain": true
         },
         rowId: "id",
         columns: [
@@ -355,7 +397,8 @@ class datatablesExamples {
         language: languageConfig,
         ajax: {
             "url": "https://jsonplaceholder.typicode.com/users",
-            "dataSrc": ""
+            "dataSrc": "",
+            "crossDomain": true
         },
         rowId: "id",
         columns: [

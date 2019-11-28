@@ -18,9 +18,8 @@ title: Example-flytning-page-2.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen</b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -31,7 +30,7 @@ title: Example-flytning-page-2.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -63,7 +62,7 @@ title: Example-flytning-page-2.html
             title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Navn</b></p>
+            <p class="user bold">Navn</p>
 
             <a href="#" class="button button-secondary button-signout">
                 Log af
@@ -71,7 +70,7 @@ title: Example-flytning-page-2.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
@@ -110,14 +109,13 @@ title: Example-flytning-page-2.html
                 <li>
                     <a href='/pages/eksempler/digital-flytning/flytning-1'>
                         1. Oversigt
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-2'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/digital-flytning/flytning-2'>
                         2. Personer
                     </a>
                 </li>

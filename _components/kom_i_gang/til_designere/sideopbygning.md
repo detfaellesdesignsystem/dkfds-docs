@@ -147,7 +147,7 @@ subnav:
 <p>Footeren fungerer som sidens afslutning. Her får du mulighed for endnu en gang at angive informationer om løsningen: Hvilken myndighed, der er ansvarlig for selvbetjeningsløsningen, og hvordan brugeren får support og kommer i kontakt med dig som myndighed. </p>
 <p>I footeren har du også mulighed for at sende brugere videre ved at linke ud af selvbetjeningsløsningen. Fx kan du angive ikke-løsningsspecifikke informationer i form af telefontider og lignende.</p>
 <p>Vi anbefaler, at du afslutter din selvbetjeningsløsning med en footer.</p>
-<p>Designsystemet giver mulighed for forskellige typer footere, som dækker forskellige behov. En footer kan være placeret i en række eller i 4 blokke af 3 kolonner.</p>
+<p>Designsystemet giver mulighed for forskellige typer <a href="/komponenter/footers/">footers</a>, som dækker forskellige behov. En footer kan være placeret i en række eller i 4 blokke af 3 kolonner.</p>
 
 <h3 class="h4">Footer på en række</h3>
 <figure><img src="{{ site.baseurl }}/img/descriptionimages/footer-paa-en-linje.png" alt="Footer på linie"></figure>

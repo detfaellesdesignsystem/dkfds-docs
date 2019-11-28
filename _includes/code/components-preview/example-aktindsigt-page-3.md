@@ -18,9 +18,8 @@ title: Example-aktindsigt-page-3.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen</b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -31,7 +30,7 @@ title: Example-aktindsigt-page-3.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -64,7 +63,7 @@ title: Example-aktindsigt-page-3.html
             title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
+            <p class="user bold">Christian Emil Vestergaard Christiansen
             </p>
             <a href="#" class="button button-secondary button-signout">
                 Log af
@@ -72,7 +71,7 @@ title: Example-aktindsigt-page-3.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p><button class="button-unstyled button-contact"
                     data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-right"></use></svg></button>
             </p>
@@ -98,7 +97,7 @@ title: Example-aktindsigt-page-3.html
                 <li>
                     <a href='/pages/eksempler/aktindsigt/aktindsigt-1'>
                         1. Inden du går igang
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -106,14 +105,13 @@ title: Example-aktindsigt-page-3.html
                 <li>
                     <a href='/pages/eksempler/aktindsigt/aktindsigt-2'>
                         2. Oplysninger om dig
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href='/pages/eksempler/aktindsigt/aktindsigt-3'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/aktindsigt/aktindsigt-3'>
                         3. Bekræft oplysninger
                     </a>
                 </li>
@@ -123,51 +121,53 @@ title: Example-aktindsigt-page-3.html
     </div>
 
     <h1>Bekræft oplysninger</h1>
-    <div class="row">
-        <div class="col-12 col-lg-8">
-            <table
-                class="table table--borderless table--compact table--responsive-headers d-print-table">
-                <tbody>
-                    <tr>
-                        <th class="w-percent-md-30">Navn</th>
-                        <td>Karen Jensen</td>
-                        <td class="align-text-md-right d-print-none"><a
-                                href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Adresse</th>
-                        <td>Vængetstræde 77<br>0081 Købstad</td>
-                        <td class="align-text-md-right d-print-none"><a
-                                href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Alder</th>
-                        <td>39</td>
-                        <td class="align-text-md-right d-print-none"><a
-                                href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Tidligere ansøgninger
-                        </th>
-                        <td>Nej</td>
-                        <td class="align-text-md-right d-print-none"><a
-                                href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
 
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/aktindsigt/aktindsigt-4"
-            class="button button-primary">Næste</a>
-        <a href="/pages/eksempler/aktindsigt/aktindsigt-2"
-            class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
-    </nav>
+    <form class="form" method="post"
+        action="/pages/eksempler/aktindsigt/aktindsigt-4">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <table
+                    class="table table--borderless table--compact table--responsive-headers d-print-table">
+                    <tbody>
+                        <tr>
+                            <th class="w-percent-md-30">Navn</th>
+                            <td>Karen Jensen</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Adresse</th>
+                            <td>Vængetstræde 77<br>0081 Købstad</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Alder</th>
+                            <td>39</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-percent-md-30">Tidligere
+                                ansøgninger</th>
+                            <td>Nej</td>
+                            <td class="align-text-md-right d-print-none"><a
+                                    href="/pages/eksempler/aktindsigt/aktindsigt-2">Rediger</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <button type="submit"
+            class="button button-primary d-print-none mt-7">Næste</button>
+        <p><a href="/pages/eksempler/aktindsigt/aktindsigt-2"
+                class="back-link d-print-none">Tilbage</a></p>
+    </form>
 </main>
 
 <footer>

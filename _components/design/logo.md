@@ -15,10 +15,10 @@ subnav:
 
 <p>Du kan placere dit myndighedslogo i footeren, hvis du har behov for det.</p>
 <h2>SVG-filer til download</h2>
-<img src="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg" alt="" height="48" />
+<img src="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg"  height="48" />
 <p>Skal din løsning på borger.dk skal der være et borger.dk logo i headeren.</p>
 <p><a href="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg" download="logo-borgerdk">Download borger.dks logo (svg-fil)</a></p>
-<img src="{{ site.baseurl }}/assets/svg/logo_virk.svg" alt="" height="48" />
+<img src="{{ site.baseurl }}/assets/svg/logo_virk.svg"  height="48" />
 <p>Skal din løsning på Virk skal der være et Virk logo i headeren.</p>
 <p><a href="{{ site.baseurl }}/assets/svg/logo_virk.svg" download="logo_virk">Download Virks logo (svg-fil)</a></p>
 <h2 id="header">Retningslinjer for logo i headeren</h2>
@@ -59,7 +59,7 @@ subnav:
 <p>Giv logoet en alt-tekst, der beskriver at brugeren åbner myndighedens forside: “[Indsæt myndighed] forside”.</p>
 <h3>Brugervenlighed</h3>
 <ul>
-    <li>Footer-logoet går til myndighedens forside</li>
+    <li>Logoet i <a href="/komponenter/footers/#footer-logo">footeren</a> går til myndighedens forside</li>
     <li>Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.</li>
     <li>Myndighedens logo er kun at finde i footeren og der er kun et logo</li>
     <li>Venstrestil altid logoet i footeren</li>

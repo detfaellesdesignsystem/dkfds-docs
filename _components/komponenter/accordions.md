@@ -84,6 +84,6 @@ subnav:
     Implementering
   </button>
   <div id="technical-multi" class="accordion-content">
-    <p>Man kan også tillade at flere kan være åbne på samme tid. Dette gøres ved at tilføje <code>aria-multiselectable="true"</code> attributten til <code>.accordion</code>.</p>
+    <p>Man kan også tillade at flere kan være åbne på samme tid. Dette gøres ved at tilføje klassen <code>accordion-multiselectable</code> til <code>.accordion</code>.</p>
   </div>
 </div>

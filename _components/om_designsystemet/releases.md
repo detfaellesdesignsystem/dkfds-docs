@@ -7,7 +7,11 @@ subcategory: Om designsystemet
 description: Release notes for dkfds
 anchor: true
 subnav:
+- text: Version 5.2.0
+  href: '#version-520'
 - text: Version 5.1.0
+  href: '#version-510'
+- text: Version 5.1.1
   href: '#version-510'
 - text: Version 5.0.0
   href: '#version-500'
@@ -23,18 +27,8 @@ subnav:
   href: '#version-410'
 - text: Version 4.0.1
   href: '#version-401'
-- text: Version 4.0.0
-  href: '#version-400'
-- text: Version 3.0.3
-  href: '#version-303'
-- text: Version 3.0.2
-  href: '#version-302'
-- text: Version 3.0.1
-  href: '#version-301'
-- text: Version 3.0.0
-  href: '#version-300'
-- text: Version 2.1.2
-  href: '#version-212'
+- text: Tidligere versioner
+  href: '#tidligere-versioner'
 ---
 <p class="font-lead">Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.</p>
 <p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
@@ -51,6 +45,34 @@ subnav:
 
 <!--<h3 class="h4">Udvikling og test </h3>
 <p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
+
+<h2 class="mb-0" id="version-520">Version 5.2.0</h2>
+<p class="small-text mt-0">27-11-2019</p>
+<ul>
+    <li>
+        <label class="color-info badge badge-small mr-3">Change</label>Ændret accordion aria-multiselectable så man i stedet kan bruge klassen accordion-multiselectable
+        <p class="form-hint mt-0">Ændringen er fortsat bagudkompatibel, men den tidligere implementering anbefales ikke, da det ikke var valid HTML.</p>
+    </li>
+    <li>
+        Teksten i <a href="/komponenter/cards/#cards-med-samme-højde">cards med samme højde</a> placeres nu korrekt
+    </li>
+    <li>
+        Tilføjet mere afstand mellem links i footer
+    </li>
+    <li>
+        Overskriftstørrelser på mobil er blevet opdateret
+    </li>
+    <li>
+        Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/sidenav/#sidenavigation-med-information">sidenavigation</a> og <a href="/komponenter/trinindikatorer/#trinindikator-med-information">trinindikator</a>
+    </li>
+    <li>
+        Tilføjet eksempel på <a href="/udvidelser/datatables/#expandable-table">tabel i Datatable</a>
+        <p class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+    </li>
+    <li>
+        Opdateret <a href="/komigang/tiludviklere/eksempler-implementering/">Eksempel på implementering i Angular</a>
+    </li>
+</ul>
 
 <h2 class="mb-0" id="version-510">Version 5.1.0</h2>
 <p class="small-text mt-0">12-11-2019</p>
@@ -86,7 +108,7 @@ subnav:
 <p class="small-text mt-0">22-10-2019</p>
 <ul>
     <li>
-        <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initere javascript med funktionen <code>DKFDS.init()</code> på hver side.
+        <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen <code>DKFDS.init()</code> på hver side.
         <p class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/komigang/tiludviklere/">implementering af dkfds til udviklere</a>.</p>
     </li>
     <li>
@@ -192,7 +214,7 @@ subnav:
     <li>Fikset hover farve på icon knap (button-unstyled)</li>
 </ul>
 
-<h2 class="mb-0" id="version-400">Version 4.0.0</h2>
+<h2 class="mb-0" id="tidligere-versioner">Version 4.0.0</h2>
 <p class="small-text mt-0">01-04-2019</p>
 <ul>
     <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Fjernet højde på cards</li>
@@ -243,13 +265,13 @@ subnav:
 
   <h2 class="mb-0" id="version-301">Version 3.0.1</h2>
   <p class="small-text mt-0">18-01-2019</p>
-  <p><b>Smårettelser til CSS og ikoner</b></p>
+  <h3 class="h4">Smårettelser til CSS og ikoner</h3>
   <ul>
     <li>.small-text og .small-tag klasserne fik ændret font-size fra 13px til 14px</li>
     <li>Ændrede level 2 og 3 i sidenavigation på mobil</li>
     <li>Rettede ikonerne help og close-circle</li>
   </ul>
-  <p><b>Smårettelser til eksempler</b></p>
+  <h3 class="h4">Smårettelser til eksempler</h3>
   <ul>
     <li>Typesetting blev delt i to: Linjeafstand og Linjelængde</li>
     <li>Fejl i Popover-eksemplet blev rettet</li>
@@ -262,42 +284,42 @@ subnav:
   <p class="small-text mt-0">14-01-2019</p>
   <ul>
     <li>
-      <b><label class="color-warning badge badge-small mr-3">Breaking change</label>Refaktoreret fra 'dkwds' til 'dkfds'</b>
-      <p class="m-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds">'dkfds'</a> i steden for 'dkwds'. </p>
+      <label class="color-warning badge badge-small mr-3">Breaking change</label>Refaktoreret fra 'dkwds' til 'dkfds'
+      <p class="form-hint mt-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds">'dkfds'</a> i steden for 'dkwds'. </p>
     </li>
     <li class="mt-4">
-      <b><label class="color-warning badge badge-small mr-3">Breaking change</label>Bourbon er fjernet</b>
-      <p class="m-0">Biblioteket 'Bourbon' er ikke længere en del af designsystemet. Det vil derfor ikke længere være muligt at benytte sig af deres hjælpeklasser og funktioner. </p>
+      <label class="color-warning badge badge-small mr-3">Breaking change</label>Bourbon er fjernet
+      <p class="form-hint mt-0">Biblioteket 'Bourbon' er ikke længere en del af designsystemet. Det vil derfor ikke længere være muligt at benytte sig af deres hjælpeklasser og funktioner. </p>
     </li>
     <li class="mt-4">
-      <b><label class="color-warning badge badge-small mr-3">Breaking change</label>Nyt gridsystem</b>
-      <p class="m-0"> USDW's gamle float-grid (NEAT) og Bootstraps grid er fjernet. I steden for er USWD's nye grid inkluderet. Der er lavet tilpasninger af dette grid så det køre på de samme variable og klassenavne som i den forrige version af FDS. Der skal derfor ikke laves nogen tilpasninger for at få dette grid inkluderet.</p>
+      <label class="color-warning badge badge-small mr-3">Breaking change</label>Nyt gridsystem
+      <p class="form-hint mt-0"> USDW's gamle float-grid (NEAT) og Bootstraps grid er fjernet. I steden for er USWD's nye grid inkluderet. Der er lavet tilpasninger af dette grid så det køre på de samme variable og klassenavne som i den forrige version af FDS. Der skal derfor ikke laves nogen tilpasninger for at få dette grid inkluderet.</p>
     </li>
     <li class="mt-4">
-      <b><label class="color-warning badge badge-small mr-3">Breaking change</label>Plugins project</b>
-      <p class="m-0"> Datatables og SelectWoo er ikke længere en del af komponent-biblioteket. Der er derimod oprettet et nyt projekt (dkfds-plugins) hvor disse nu lever.</p>
+      <label class="color-warning badge badge-small mr-3">Breaking change</label>Plugins project
+      <p class="form-hint mt-0"> Datatables og SelectWoo er ikke længere en del af komponent-biblioteket. Der er derimod oprettet et nyt projekt (dkfds-plugins) hvor disse nu lever.</p>
     </li>
     <li class="mt-4">
-      <b>Nye klasser</b>
-      <p class="m-0"> De følgende klasser er blev omdøbt:</p>
-      <ul>
+      Nye klasser
+      <p class="form-hint mt-0"> De følgende klasser er blev omdøbt:</p>
+      <ul class="form-hint">
         <li>.input-success --> .form-success</li>
         <li>.input-error-message --> .form-error-message</li>
       </ul>
     </li>
     <li class="mt-4">
-      <b>Accordion</b>
-      <p class="m-0">Accordions plus og minus ikon er flyttet til starten af accordion-knappen</p>
+      Accordion
+      <p class="form-hint mt-0">Accordions plus og minus ikon er flyttet til starten af accordion-knappen</p>
     </li>
     <li class="mt-4">
-      <b>Focus farve</b>
-      <p class="m-0">Focus-farven er ændret fra den gule farve (#febb30) til en grå farve (#747474). Farven er blevet ændret fordi den gule farve ikke overholder WCAG 2.1. Hvis man ønsker en anden focus-farve kan variablen <code>$color-focus</code> overskrives.</p>
+      Fokus farve
+      <p class="form-hint mt-0">Fokus farven er ændret fra den gule farve (#febb30) til en grå farve (#747474). Farven er blevet ændret fordi den gule farve ikke overholder WCAG 2.1. Hvis man ønsker en anden fokus farve kan variablen <code>$color-focus</code> overskrives.</p>
     </li>
     <li class="mt-4">
-      <b>Radioknapper og checkbokse</b>
-      <ul>
-        <li>Styling af radiobuttons kræver nu denne klasse på selve input[type=radio]: "form-radio".</li>
-        <li> Styling af checkboxe kræver nu denne klasse på selve input[type=checkbox]: "form-check".</li>
+      Radioknapper og checkbokse
+      <ul class="form-hint">
+        <li>Styling af radio knapper kræver nu denne klasse på selve input[type=radio]: "form-radio".</li>
+        <li>Styling af tjekbokse kræver nu denne klasse på selve input[type=checkbox]: "form-check".</li>
       </ul>
     </li>
   </ul>
@@ -308,8 +330,8 @@ subnav:
   <p class="small-text mt-0">16-10-2018</p>
   <ul>
     <li>
-      <b>Nye skriftstørrelser til H1-H6</b>
-      <ul>
+      Nye skriftstørrelser til H1-H6
+      <ul class="form-hint">
         <li>H1 går fra 36px til 40px.</li>
         <li>H2 går fra 27px til 30px.</li>
         <li>H3 er stadig 24px.</li>
@@ -319,15 +341,15 @@ subnav:
         <li>Display-1 går fra 120px til 80px</li>
         <li>Display-2 går fra 60px til 32px;</li>
       </ul>
-      <p>Hvis du ønsker at beholde det samme visualle udtryk skal man gå fra h5 til h4.</p>
+      <p class="form-hint mt-0">Hvis du ønsker at beholde det samme visuelle udtryk skal man gå fra h5 til h4.</p>
     </li>
     <li class="mt-4">
-      <b>Ny max-width styling</b>
-      <p class="m-0">Klassen '.content' er fjernet. Max-width stylingen er nu kodet direkte til p, font-lead etc.</p>
+      Ny max-width styling
+      <p class="form-hint mt-0">Klassen '.content' er fjernet. Max-width stylingen er nu kodet direkte til p, font-lead etc.</p>
     </li>
     <li class="mt-4">
-      <b>Sidenavigation i bunden af eksempelsiderne:</b>
-      <p class="m-0">"Breadcrumb" er omdøbt til "page-navigation". 	Html'en er nu således ud:</p>
+      Sidenavigation i bunden af eksempelsiderne:
+      <p class="form-hint mt-0">"Breadcrumb" er omdøbt til "page-navigation". 	Html'en er nu således ud:</p>
       <div class="code-highlight">
         <code>
           &lt;nav class="page-navigation"&gt; <br>

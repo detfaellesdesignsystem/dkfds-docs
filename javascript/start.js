@@ -8,6 +8,7 @@ import * as DKFDS from "dkfds";
 
 require('./sidenav');
 require('./theme');
+require('./newsletter');
 document.addEventListener("DOMContentLoaded", function(){
     // Handler when the DOM is fully loaded
     DKFDS.init();
@@ -58,6 +59,11 @@ $(document).ready(function () {
         localStorage.removeItem("reqTool");
 
         window.location.href =  $(this).attr('href');
+    });
+
+    $('.layout-demo form').submit(function(e){
+        e.preventDefault();
+        window.location.href = window.location.origin + $(this).attr('action');
     });
 
     if($('#cookieForm').length !== 0) {

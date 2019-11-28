@@ -230,7 +230,7 @@ title: Test
   {% include code/preview.html component="table--bordered-zebra" %}
   <h3>Responsiv</h3>
   {% include code/preview.html component="table--responsive" %}
-  <h3>Forskellig liniehøjde</h3>
+  <h3>Forskellig linjehøjde</h3>
   {% include code/preview.html component="table--lineheight" %}
   <h3>Med titel i venstre kolonne</h3>
   {% include code/preview.html component="table--body-headers" %}

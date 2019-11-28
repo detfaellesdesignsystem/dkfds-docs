@@ -18,7 +18,8 @@ title: Header-simple.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><b class="username">Lone Hansen</b> </p>
+                <p class="user"><span class="username bold">Lone
+                        Hansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -29,7 +30,7 @@ title: Header-simple.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -58,14 +59,14 @@ title: Header-simple.html
             title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Lone Hansen</b></p>
+            <p class="user bold">Lone Hansen</p>
             <a href="#" class="button button-secondary button-signout">
                 Log af
             </a>
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Myndighedsnavn</b></p>
+            <p class="bold">Myndighedsnavn</p>
             <p>Support: 12 34 56 78</p>
         </div>
 

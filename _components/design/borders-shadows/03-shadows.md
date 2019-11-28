@@ -21,9 +21,9 @@ order: 03
             <div class="code-highlight">
                 <code> box-shadow: $box-shadow-heavy;</code>
             </div>
-            <h3 class="h4">Overflowmenu</h3>
+            <h3 class="h4">Overflow menu</h3>
             <ul>
-                <li><p>Overflowmenuer har en sort skygge på 0 4px 16px 0 og har variablen <code>$box-shadow-moderately</code></p></li>
+                <li><p>Overflow menu har en sort skygge på 0 4px 16px 0 og har variablen <code>$box-shadow-moderately</code></p></li>
             </ul>
             <p class="h5 mb-3">Eksempel:</p>
             <div class="code-highlight">

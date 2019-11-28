@@ -18,9 +18,8 @@ title: Example-flytning-page-3.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen</b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -31,7 +30,7 @@ title: Example-flytning-page-3.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -63,7 +62,7 @@ title: Example-flytning-page-3.html
             title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Navn</b></p>
+            <p class="user bold">Navn</p>
 
             <a href="#" class="button button-secondary button-signout">
                 Log af
@@ -71,7 +70,7 @@ title: Example-flytning-page-3.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
@@ -110,7 +109,7 @@ title: Example-flytning-page-3.html
                 <li>
                     <a href='/pages/eksempler/digital-flytning/flytning-1'>
                         1. Oversigt
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
@@ -118,14 +117,13 @@ title: Example-flytning-page-3.html
                 <li>
                     <a href='/pages/eksempler/digital-flytning/flytning-2'>
                         2. Personer
-                        <span class='sidenav-icon'>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-3'
-                        class='active'>
+                <li class='active current'>
+                    <a href='/pages/eksempler/digital-flytning/flytning-3'>
                         3. Adresse
                     </a>
                 </li>
@@ -160,27 +158,31 @@ title: Example-flytning-page-3.html
 
     <div class="mt-6">
 
-        <div class="form-group ">
+        <div class="form-group  ">
             <fieldset>
                 <legend><label class="form-label">Dato for flytning</label>
                     <span class="form-hint">Fx. 28 04 1996</span></legend>
-
+                <span class="form-error-message  d-none"
+                    id="form-error-message-input-error"
+                    role="alert"></span>
                 <div class="date-group js-calendar-group mt-3">
                     <div class="form-group form-group-day">
                         <label class="form-label"
                             for="date-day">Dato</label>
                         <input class="form-input js-calendar-day-input"
-                            id="date-day" value="" type="tel" min="1"
-                            max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                            id="date-day" value="" type="tel" data-min="1"
+                            data-max="31" maxlength="2"
+                            pattern="^[0-9]{0,2}$"
                             data-input-regex="^[0-9]{0,2}$"
-                            title="Indskriv dag på månenden som tal" />
+                            title="Indskriv dag på måneden som tal" />
                     </div>
                     <div class="form-group form-group-month">
                         <label class="form-label"
                             for="date-month">Måned</label>
                         <input class="form-input js-calendar-month-input"
-                            id="date-month" value="" type="tel" min="1"
-                            max="12" maxlength="2" pattern="^[0-9]{0,2}$"
+                            id="date-month" value="" type="tel"
+                            data-min="1" data-max="12" maxlength="2"
+                            pattern="^[0-9]{0,2}$"
                             data-input-regex="^[0-9]{0,2}$"
                             title="Indskriv månedens nummer" />
                     </div>
@@ -188,8 +190,9 @@ title: Example-flytning-page-3.html
                         <label class="form-label"
                             for="date-year">År</label>
                         <input class="form-input js-calendar-year-input"
-                            id="date-year" value="" type="tel" min="1900"
-                            max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
+                            id="date-year" value="" type="tel"
+                            data-min="1900" data-max="3000" maxlength="4"
+                            pattern="^[0-9]{0,4}$"
                             data-input-regex="^[0-9]{0,4}$"
                             title="Indskriv årstal" />
                     </div>

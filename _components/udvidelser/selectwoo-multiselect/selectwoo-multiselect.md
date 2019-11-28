@@ -19,13 +19,6 @@ subnav:
 - text: Gruppering
   href: '#gruppering'
 ---
-
-<div class="alert alert-error" role="alert">
-  <div class="alert-body">
-    <h2 class="alert-heading h3">Ikon mangler - Vi afventer fix fra SelectWoo</h2>
-  </div>
-</div>
-
 <h2 class="h4">Tilgængelighed</h2>
 <ul>
     <li>Bemærk: Multiselect dropdown-funktionen (SelectWoo) er gennemtestet af Det Fælles Designsystem og opfylder ikke alle krav til en anbefalet udvidelse. Det er dog den bedste, vi har kunnet finde indtil videre. Du skal bruger- og performanceteste prototyper med SelectWoo med entydigt positive resultat i forhold til din målgruppe, hvis du ønsker at anvende den. Det anbefales generelt, at du overvejer en anden løsning end en multiselect i din løsning.</li>
@@ -43,7 +36,7 @@ subnav:
 <ul>
     <li>En multiselect dropdown er en avanceret funktion, der bør anvendes i meget begrænset omfang.</li>
     <li>Overvej om du kan tilbyde en bedre og mere overskuelig løsning fx tjekbokse.</li>
-    <li>På trods af de udvidede muligheder i Select2-udvidelsen bør implementationen holdes så enkel som muligt. </li>
+    <li>På trods af de udvidede muligheder i Select2-udvidelsen bør implementeringen holdes så enkel som muligt. </li>
     <li>Var varsom med at ændre indholdet af næste multiselect i forhold til det forrige valg.</li>
     <li>Begræns antallet af valgmuligheder i listen, så brugeren ikke mister overblik over sit valg.</li>
     <li>SelectWoo er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.</li>
@@ -57,7 +50,7 @@ subnav:
   <div id="code-documentation" class="accordion-content">
    <p>Multiselect funktionaliteten bygger på biblioteket <a href="https://github.com/woocommerce/selectWoo" class="icon-link">SelectWoo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, som er en tilgængelig implementering af det populære bibliotek <a href="https://select2.org/" class="icon-link">Select2<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
    <p>Det må antages at det er et begrænset antal selvbetjeningsløsninger som har brug for denne funktionalitet, derfor er dette bibliotek ikke inkluderet i standard javascript filen <code>dkfds.js</code>. En udvikler skal derfor selv inkludere de nødvendige filer for at få SelectWoo til at virke. Select2's <a href="https://select2.org/getting-started/installation" class="icon-link">guide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> kan bruges til opsætningen, dog skal SelectWoo's javascript filer bruges i steden for. Det er vigtigt at både javascript filer, og styling filer bliver inkluderet.</p>
-   <p>På dette dokumentationssite er multiselect funktionaliteten en del af javascript filen <code>selectwoo-examples.js</code>, denne fil har kun til formål at vise funktionaliteten på dette dokumentationsite, og skal ikke inkluderes i selve selvbetjeningsløsningen.</p>
+   <p>På dette designsystem.dk er multiselect funktionaliteten en del af javascript filen <code>dkfds-selectwoo-example.js</code>, denne fil har kun til formål at vise funktionaliteten på dette designsystem.dk, og skal ikke inkluderes i selve selvbetjeningsløsningen.</p>
    <p>Eksemplet på denne side er implementeret her: <a href="https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/selectwoo/js/dkfds-selectwoo-example.js" class="icon-link">https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/selectwoo/js/dkfds-selectwoo-example.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
   </div>
 </div>

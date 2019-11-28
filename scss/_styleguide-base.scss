@@ -385,6 +385,12 @@
     background-color: $color-data-violet-low-opacity;
   }
 }
+.color-gray-pale {
+  background-color: $color-gray-pale;
+  .form-hint{
+    color: $color-gray-dark;
+  }
+}
 
 .color-container-small {
   height: 40px;
@@ -634,6 +640,9 @@ code {
     padding-top: 8px;
   }
 }
+.page-file-input-html .container{
+  min-height: 100px;
+}
 .page-basic-collapse-html .container{
   min-height: 150px;
   padding-top: 8px;
@@ -694,27 +703,8 @@ code {
     align-items: center;
     justify-content: center;
     padding: map-get($spacers, 4);
-    background-color: $background-alternative;
-
-    &.design-box{
-      background-color: $color-data-turquoise-high-opacity;
-    }
-
-    &.componenent-box{
-      background-color: $color-data-teal-medium-opacity;
-    }
-    &.extension-box{
-      background-color: $color-data-violet-medium-opacity;
-    }
-    &.example-box{
-      background-color: $color-data-purple-medium-opacity;
-    }
-    &.about-box{
-      background-color: $color-data-orange-medium-opacity;
-    }
-    &.gettingstarted-box{
-      background-color: $color-data-magenta-medium-opacity;
-    }
+    background-color: $color-gray-medium-dark;
+    border-radius: 4px;
 
     &:focus{
       outline: $focus-outline;

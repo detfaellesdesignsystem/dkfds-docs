@@ -1,12 +1,20 @@
 ---
-permalink: /privatlivspolitik-cookies/
+permalink: /omdesignsystemet/privatlivspolitik-cookies/
 redirect_from:
 - /privatlivspolitik/
-layout: styleguide-nosidebar
+- /privatlivspolitik-cookies/
+category: Om_designsystemet_category
+subcategory: Om designsystemet
+layout: styleguide
 title: Privatlivspolitik og cookies
 description: Privatlivspolitik og cookie information
+anchor: true
+subnav:
+- text: Privatlivspolitik
+  href: '#privatlivspolitik'
+- text: Brug af cookies på Det Fælles Designsystem
+  href: '#brug-af-cookies-paa-fds'
 ---
-
 <h2 id="privatlivspolitik">Privatlivspolitik</h2>
 <p>På denne side kan du læse om vores behandling af dine personoplysninger og dine rettigheder.</p>
 <p>Erhvervsstyrelsen behandler de oplysninger, du giver os eller vi indsamler om dig, i overensstemmelse med gældende regler. Vi er bevidste om, at dine oplysninger skal behandles med respekt for oplysningernes fortrolighed og for dit privatliv.</p>
@@ -55,7 +63,7 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 
 <p>Datatilsynet er den uafhængige statslige myndighed, som fører tilsyn med, at reglerne i databeskyttelsesforordningen og databeskyttelsesloven overholdes. Datatilsynet har bl.a. til opgave at vejlede og rådgive myndighederne i behandlingen af personoplysninger. Datatilsynet behandler også klager over myndigheders behandling af personoplysninger samt gennemfører inspektioner hos myndigheder og private virksomheder.</p>
 
-<h2 class="brug-af-cookies-paa-fds">Brug af cookies på Det Fælles Designsystem (FDS)</h2>
+<h2 class="brug-af-cookies-paa-fds" id="brug-af-cookies-paa-fds">Brug af cookies på Det Fælles Designsystem (FDS)</h2>
 
 <h3 class="h4">Hvad er en cookie?</h3>
 
@@ -119,12 +127,10 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 <p>Når vi gennemfører brugerundersøgelser på FDS, anvender vi cookies, dels til at styre, hvor mange gange du som bruger ser invitationen til undersøgelsen, dels til at registrere, om du har svaret på undersøgelsen. På den måde sikrer vi, at du som bruger ikke ser invitationen til undersøgelsen igen, efter du har svaret.</p>
 
 <h3 class="h4">Cookies som er tekniske forudsætninger</h3>
-<p>Der bliver sat cookies, når du anvender FDS.</p>
-
-<p>Hvis du ikke har Adobe flash player installeret og du ønsker at se en vejledningsfilm, får du mulighed for at hente flash player. Henter du flash player vil Adobe sætte en cookie.</p>
+<p>Vi sætter cookies for at indsamle statistik og for at huske dit valgte tema på designsystem.dk.</p>
 
 <h3 class="h4">Sådan undgår eller sletter du cookies</h3>
-<p>Ønsker du ikke at modtage cookies fra FDS, skal du, under internetindstillinger i din browser, vælge avancerede cookieindstillinger og tilføje FDS til listen over websites, du vil blokere cookies fra.</p>
+<p>Ønsker du ikke, at FDS sætter cookies, kan du bruge funktionen her på siden til at slå cookies fra. Ønsker du ikke, at der bliver sat cookies generelt, kan du tilføje FDS til listen over websites, du gerne vil blokere cookies fra i internetindstillingerne i din browser.</p>
 
 <h3 class="h4">Flere oplysninger om cookies</h3>
 <p>Her kan du læse om hvad cookies kan bruges til:</p>

@@ -18,9 +18,8 @@ title: Example-boernetilskud-ansoegning-2.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen</b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -31,7 +30,7 @@ title: Example-boernetilskud-ansoegning-2.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -130,7 +129,7 @@ title: Example-boernetilskud-ansoegning-2.html
         <!-- 3: Main navigation end-->
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
+            <p class="user bold">Christian Emil Vestergaard Christiansen
             </p>
             <a href="#" class="button button-secondary button-signout">
                 Log af
@@ -138,7 +137,7 @@ title: Example-boernetilskud-ansoegning-2.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
@@ -164,37 +163,16 @@ title: Example-boernetilskud-ansoegning-2.html
             <ul class='sidenav-list'>
                 <li>
                     <a
-                        href='//pages/eksempler/boernetilskud/boernetilskud-1'>
+                        href='/pages/eksempler/boernetilskud/boernetilskud-1'>
                         1. Hvilke børn søger du tilskud til?
-                        <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
+                        <span class='sidenav-icon' aria-label='Gennemført'>
+                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href='//pages/eksempler/boernetilskud/boernetilskud-2'
-                        class='active'>
+                <li class='active current'>
+                    <a href='#'>
                         2. Hvornår blev du eller bliver du enlig?
-                    </a>
-                </li>
-                <li>
-                    <a href='#'>
-                        3. Hvornår blev du eller bliver du enlig?
-                    </a>
-                </li>
-                <li>
-                    <a href='#'>
-                        4. Hvornår blev du eller bliver du enlig?
-                    </a>
-                </li>
-                <li>
-                    <a href='#'>
-                        5. Hvornår blev du eller bliver du enlig?
-                    </a>
-                </li>
-                <li>
-                    <a href='#'>
-                        6. Hvornår blev du eller bliver du enlig?
                     </a>
                 </li>
             </ul>
@@ -220,30 +198,32 @@ title: Example-boernetilskud-ansoegning-2.html
         </div>
         <div class="mt-7">
 
-            <div class="form-group ">
+            <div class="form-group  ">
                 <fieldset>
                     <legend><label class="form-label">Jeg blev eller bliver
                             enlig:</label>
                         <span class="form-hint"></span></legend>
-
+                    <span class="form-error-message  d-none"
+                        id="form-error-message-input-error"
+                        role="alert"></span>
                     <div class="date-group js-calendar-group mt-3">
                         <div class="form-group form-group-day">
                             <label class="form-label"
                                 for="date-day">Dato</label>
                             <input class="form-input js-calendar-day-input"
-                                id="date-day" value="" type="tel" min="1"
-                                max="31" maxlength="2"
+                                id="date-day" value="" type="tel"
+                                data-min="1" data-max="31" maxlength="2"
                                 pattern="^[0-9]{0,2}$"
                                 data-input-regex="^[0-9]{0,2}$"
-                                title="Indskriv dag på månenden som tal" />
+                                title="Indskriv dag på måneden som tal" />
                         </div>
                         <div class="form-group form-group-month">
                             <label class="form-label"
                                 for="date-month">Måned</label>
                             <input
                                 class="form-input js-calendar-month-input"
-                                id="date-month" value="" type="tel" min="1"
-                                max="12" maxlength="2"
+                                id="date-month" value="" type="tel"
+                                data-min="1" data-max="12" maxlength="2"
                                 pattern="^[0-9]{0,2}$"
                                 data-input-regex="^[0-9]{0,2}$"
                                 title="Indskriv månedens nummer" />
@@ -254,8 +234,8 @@ title: Example-boernetilskud-ansoegning-2.html
                             <input
                                 class="form-input js-calendar-year-input"
                                 id="date-year" value="" type="tel"
-                                min="1900" max="3000" maxlength="4"
-                                pattern="^[0-9]{0,4}$"
+                                data-min="1900" data-max="3000"
+                                maxlength="4" pattern="^[0-9]{0,4}$"
                                 data-input-regex="^[0-9]{0,4}$"
                                 title="Indskriv årstal" />
                         </div>

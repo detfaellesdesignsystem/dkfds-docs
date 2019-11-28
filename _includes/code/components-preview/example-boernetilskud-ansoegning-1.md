@@ -18,9 +18,8 @@ title: Example-boernetilskud-ansoegning-1.html
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user">
-                    <b class="username">Christian Emil Vestergaard Christiansen</b>
-                </p>
+                <p class="user"><span class="username bold">Christian Emil
+                        Vestergaard Christiansen</span> </p>
 
                 <a href="#"
                     class="button button-secondary alert-leave d-print-none"
@@ -31,7 +30,7 @@ title: Example-boernetilskud-ansoegning-1.html
         </div>
     </div>
 
-    <!--2A: Solutiuon header -->
+    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
@@ -130,7 +129,7 @@ title: Example-boernetilskud-ansoegning-1.html
         <!-- 3: Main navigation end-->
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b>
+            <p class="user bold">Christian Emil Vestergaard Christiansen
             </p>
             <a href="#" class="button button-secondary button-signout">
                 Log af
@@ -138,7 +137,7 @@ title: Example-boernetilskud-ansoegning-1.html
         </div>
 
         <div class="solution-info-mobile">
-            <p><b>Erhvervsministeriet</b></p>
+            <p class="bold">Erhvervsministeriet</p>
             <p><a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
@@ -163,9 +162,9 @@ title: Example-boernetilskud-ansoegning-1.html
                 aria-hidden="true">
 
                 <ul class='sidenav-list'>
-                    <li>
-                        <a href='/pages/eksempler/boernetilskud/boernetilskud-1'
-                            class='active'>
+                    <li class='active current'>
+                        <a
+                            href='/pages/eksempler/boernetilskud/boernetilskud-1'>
                             1. Hvilke børn søger du tilskud til?
                         </a>
                     </li>
@@ -173,26 +172,6 @@ title: Example-boernetilskud-ansoegning-1.html
                         <a
                             href='/pages/eksempler/boernetilskud/boernetilskud-2'>
                             2. Hvornår blev du eller bliver du enlig?
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            3.
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            4.
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            5.
-                        </a>
-                    </li>
-                    <li>
-                        <a href='#'>
-                            6.
                         </a>
                     </li>
                 </ul>
@@ -212,8 +191,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                 <li>
 
                                     <div class="alert alert-warning "
-                                        role="alert"
-                                        aria-label="Beskedbox der viser en advarsel">
+                                        role="alert" aria-label="">
                                         <div class="alert-body">
                                             <p class="alert-heading ">
                                                 Allerede registreret</p>
@@ -239,8 +217,7 @@ title: Example-boernetilskud-ansoegning-1.html
                                 <li>
 
                                     <div class="alert alert-warning "
-                                        role="alert"
-                                        aria-label="Beskedbox der viser en advarsel">
+                                        role="alert" aria-label="">
                                         <div class="alert-body">
                                             <p class="alert-heading ">
                                                 Allerede registreret</p>
@@ -270,8 +247,8 @@ title: Example-boernetilskud-ansoegning-1.html
                                         value="checkbox3_selected"
                                         class="form-checkbox  checkbox-large " />
                                     <label for="checkbox-id-3"
-                                        class=""><b>Ylmig Hedagaardsen</b>
-                                        <br> 353535-3535
+                                        class=""><span class="bold">Ylmig
+                                            Hedagaardsen</span> <br> 353535-3535
                                         <br> Fælles</label>
 
                                 </li>
