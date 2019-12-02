@@ -18,23 +18,49 @@
         ]
       }
     ],
-    "list_ol": [
-      {"text": "Ordered list"},
-      {"text": "Ordered list"},
-      {"text": "Ordered list"},
-      {
-        "text": "Ordered list",
-        "list_ol": [
-          {"text": "Ordered list"},
-          {"text": "Ordered list"},
-          {"text": "Ordered list",
-            "list_ol": [
-              {"text": "Ordered list"},
-              {"text": "Ordered list"},
-              {"text": "Ordered list"}
-            ]}
-        ]
-      }
-    ]
+    "list_ol": {
+      "items": [
+        {
+          "text": "Ordered list"
+        },
+        {
+          "text": "Ordered list"
+        },
+        {
+          "text": "Ordered list"
+        },
+        {
+          "text": "Ordered list",
+          "list_ol": {
+            "type": "a",
+            "items": [
+              {
+                "text": "Ordered list"
+              },
+              {
+                "text": "Ordered list"
+              },
+              {
+                "text": "Ordered list",
+                "list_ol": {
+                  "type": "i",
+                  "items": [
+                    {
+                      "text": "Ordered list"
+                    },
+                    {
+                      "text": "Ordered list"
+                    },
+                    {
+                      "text": "Ordered list"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
   }
 }

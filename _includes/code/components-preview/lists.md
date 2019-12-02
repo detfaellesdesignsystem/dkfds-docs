@@ -43,10 +43,10 @@ title: Lists.html
                 <li>Ordered list</li>
                 <li>Ordered list</li>
                 <li>Ordered list</li>
-                <li>Ordered list<ol class="sub_list">
+                <li>Ordered list<ol class="sub_list" type="a">
                         <li>Ordered list</li>
                         <li>Ordered list</li>
-                        <li>Ordered list<ol class="sub_list">
+                        <li>Ordered list<ol class="sub_list" type="i">
                                 <li>Ordered list</li>
                                 <li>Ordered list</li>
                                 <li>Ordered list</li>
