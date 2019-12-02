@@ -14,8 +14,8 @@ title: Radiobutton.html
 
                     <input id="unchecked" type="radio" name="unchecked"
                         value="truth" class="form-radio   " />
-                    <label for="unchecked" class="">Ikke-udfyldt radioknap
-                    </label>
+                    <label for="unchecked" id="form-label-unchecked"
+                        class="">Ikke-udfyldt radioknap </label>
 
                 </li>
 
@@ -23,8 +23,8 @@ title: Radiobutton.html
 
                     <input id="Checked" type="radio" name="Checked"
                         value="Checked" class="form-radio   " checked />
-                    <label for="Checked" class="">Udfyldt radioknap
-                    </label>
+                    <label for="Checked" id="form-label-Checked"
+                        class="">Udfyldt radioknap </label>
 
                 </li>
 
@@ -32,8 +32,9 @@ title: Radiobutton.html
 
                     <input id="Disabled" type="radio" name="Disabled"
                         value="Disabled" class="form-radio   " disabled />
-                    <label for="Disabled" class="">Inaktiv ikke-udfyldt
-                        radioknap (disabled) </label>
+                    <label for="Disabled" id="form-label-Disabled"
+                        class="">Inaktiv ikke-udfyldt radioknap (disabled)
+                    </label>
 
                 </li>
 
@@ -42,8 +43,9 @@ title: Radiobutton.html
                     <input id="Disabled-checked" type="radio"
                         name="Disabled-checked" value="Disabled-checked"
                         class="form-radio   " disabled checked />
-                    <label for="Disabled-checked" class="">Inaktiv udfyldt
-                        radioknap (disabled) </label>
+                    <label for="Disabled-checked"
+                        id="form-label-Disabled-checked" class="">Inaktiv
+                        udfyldt radioknap (disabled) </label>
 
                 </li>
 
@@ -51,8 +53,8 @@ title: Radiobutton.html
 
                     <input id="Focus" type="radio" name="Focus"
                         value="Focus" class="form-radio focus  " />
-                    <label for="Focus" class="">Ikke-udfyldt radioknap i
-                        fokus </label>
+                    <label for="Focus" id="form-label-Focus"
+                        class="">Ikke-udfyldt radioknap i fokus </label>
 
                 </li>
 
@@ -71,8 +73,9 @@ title: Radiobutton.html
                     <input id="Unchecked-large" type="radio"
                         name="Unchecked-large" value="Unchecked-large"
                         class="form-radio  radio-large " />
-                    <label for="Unchecked-large" class="">Stor ikke-udfyldt
-                        radioknap </label>
+                    <label for="Unchecked-large"
+                        id="form-label-Unchecked-large" class="">Stor
+                        ikke-udfyldt radioknap </label>
 
                 </li>
 
@@ -81,7 +84,8 @@ title: Radiobutton.html
                     <input id="Checked-large" type="radio"
                         name="Checked-large" value="Checked-large"
                         class="form-radio  radio-large " checked />
-                    <label for="Checked-large" class="">Stor udfyldt
+                    <label for="Checked-large"
+                        id="form-label-Checked-large" class="">Stor udfyldt
                         radioknap </label>
 
                 </li>
@@ -91,8 +95,9 @@ title: Radiobutton.html
                     <input id="Disabled-large" type="radio"
                         name="Disabled-large" value="Disabled-large"
                         class="form-radio  radio-large " disabled />
-                    <label for="Disabled-large" class="">Stor inaktiv
-                        ikke-udfyldt radioknap (disabled) </label>
+                    <label for="Disabled-large"
+                        id="form-label-Disabled-large" class="">Stor
+                        inaktiv ikke-udfyldt radioknap (disabled) </label>
 
                 </li>
 
@@ -103,8 +108,10 @@ title: Radiobutton.html
                         value="Disabled-checked-large"
                         class="form-radio  radio-large " disabled
                         checked />
-                    <label for="Disabled-checked-large" class="">Stor
-                        inaktiv udfyldt radioknap (disabled) </label>
+                    <label for="Disabled-checked-large"
+                        id="form-label-Disabled-checked-large"
+                        class="">Stor inaktiv udfyldt radioknap (disabled)
+                    </label>
 
                 </li>
 
@@ -113,8 +120,9 @@ title: Radiobutton.html
                     <input id="Focus-large" type="radio" name="Focus-large"
                         value="Focus-large"
                         class="form-radio focus radio-large " />
-                    <label for="Focus-large" class="">Stor ikke-udfyldt
-                        radioknap i fokus </label>
+                    <label for="Focus-large" id="form-label-Focus-large"
+                        class="">Stor ikke-udfyldt radioknap i fokus
+                    </label>
 
                 </li>
 
@@ -134,7 +142,8 @@ title: Radiobutton.html
 
                     <input id="weekly" type="radio" name="often-pay"
                         value="weekly" class="form-radio  radio-large " />
-                    <label for="weekly" class="">Ugentligt </label>
+                    <label for="weekly" id="form-label-weekly"
+                        class="">Ugentligt </label>
 
                 </li>
 
@@ -143,8 +152,8 @@ title: Radiobutton.html
                     <input id="fortnightly" type="radio" name="often-pay"
                         value="fortnightly"
                         class="form-radio  radio-large " />
-                    <label for="fortnightly" class="">Hver fjortende dag
-                    </label>
+                    <label for="fortnightly" id="form-label-fortnightly"
+                        class="">Hver fjortende dag </label>
 
                 </li>
 
@@ -152,7 +161,8 @@ title: Radiobutton.html
 
                     <input id="monthly" type="radio" name="often-pay"
                         value="monthly" class="form-radio  radio-large " />
-                    <label for="monthly" class="">Månedligt </label>
+                    <label for="monthly" id="form-label-monthly"
+                        class="">Månedligt </label>
 
                 </li>
 
@@ -170,9 +180,11 @@ title: Radiobutton.html
 
                     <input id="radio-helptext-1" type="radio"
                         name="radio-helptext" value="v1"
-                        aria-describedby="helptext-radio-helptext-1"
+                        aria-labelledby="form-label-radio-helptext-1 helptext-radio-helptext-1"
                         class="form-radio  radio-large " />
-                    <label for="radio-helptext-1" class="">Valg 1 </label>
+                    <label for="radio-helptext-1"
+                        id="form-label-radio-helptext-1" class="">Valg 1
+                    </label>
                     <span class="form-hint"
                         id="helptext-radio-helptext-1">Dette er en
                         hjælpetekst</span>
@@ -183,9 +195,11 @@ title: Radiobutton.html
 
                     <input id="radio-helptext-2" type="radio"
                         name="radio-helptext" value="v2"
-                        aria-describedby="helptext-radio-helptext-2"
+                        aria-labelledby="form-label-radio-helptext-2 helptext-radio-helptext-2"
                         class="form-radio  radio-large " />
-                    <label for="radio-helptext-2" class="">Valg 2 </label>
+                    <label for="radio-helptext-2"
+                        id="form-label-radio-helptext-2" class="">Valg 2
+                    </label>
                     <span class="form-hint"
                         id="helptext-radio-helptext-2">Dette er en
                         hjælpetekst</span>

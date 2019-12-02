@@ -100,7 +100,7 @@
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
@@ -201,13 +201,13 @@
             <div class="mt-6">
 
                 <div class="form-group">
-                    <label class="form-label " for="id-state">Statsstøtte
-                        (EU de-minimis) i DKK</label>
+                    <label class="form-label " for="id-state" id="form-label-id-state">Statsstøtte (EU
+                        de-minimis) i DKK</label>
                     <span class="form-hint" id="input-hint-message-id-state">Modtaget fra dags
                         dato og de tre seneste løbende år ekskl. det
                         aktuelle projekt.</span>
 
-                    <input class="form-input  input-width-m " placeholder="" id="id-state" value="" name="Input til statsstøtte (EU de-minimis) i DKK" type="text" />
+                    <input class="form-input  input-width-m " placeholder="" id="id-state" value="" name="Input til statsstøtte (EU de-minimis) i DKK" type="text" aria-labelledby="form-label-id-state input-hint-message-id-state" />
                 </div>
 
             </div>
@@ -221,13 +221,13 @@
                         <li>
 
                             <input id="id-state-yes" type="radio" name="minimis" value="Ja" class="form-radio  radio-large " data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false" />
-                            <label for="id-state-yes" class="radio-large" data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false">Ja </label>
+                            <label for="id-state-yes" id="form-label-id-state-yes" class="radio-large" data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false">Ja </label>
 
                             <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
                                 <div class="py-4">
 
                                     <div class="form-group">
-                                        <label class="form-label " for="id-minimis-name">Ordningens
+                                        <label class="form-label " for="id-minimis-name" id="form-label-id-minimis-name">Ordningens
                                             navn</label>
 
                                         <input class="form-input  input-width-m " placeholder="" id="id-minimis-name" value="" name="Input til ordningens navn" type="text" />
@@ -260,20 +260,20 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="form-label " for="id-amount">Beløb i
-                                            DKK</label>
+                                        <label class="form-label " for="id-amount" id="form-label-id-amount">Beløb
+                                            i DKK</label>
 
                                         <input class="form-input  input-width-xs " placeholder="" id="id-amount" value="" name="Input til beløb i DKK" type="text" />
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="form-label " for="id-reference">Henvisning
+                                        <label class="form-label " for="id-reference" id="form-label-id-reference">Henvisning
                                             til yderligere information om
                                             ordningen</label>
                                         <span class="form-hint" id="input-hint-message-id-reference">Fx.
                                             et link (url)</span>
 
-                                        <input class="form-input  input-width-m " placeholder="" id="id-reference" value="" name="Input til henvisning til yderligere information om ordningen" type="text" />
+                                        <input class="form-input  input-width-m " placeholder="" id="id-reference" value="" name="Input til henvisning til yderligere information om ordningen" type="text" aria-labelledby="form-label-id-reference input-hint-message-id-reference" />
                                     </div>
 
                                 </div>
@@ -282,7 +282,7 @@
                         <li>
 
                             <input id="id-state-no" type="radio" name="minimis" value="Nej" class="form-radio  radio-large " />
-                            <label for="id-state-no" class="radio-large">Nej </label>
+                            <label for="id-state-no" id="form-label-id-state-no" class="radio-large">Nej </label>
 
                         </li>
                     </ul>

@@ -43,7 +43,7 @@ title: Example-aktindsigt-page-1.html
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
                             href="javascript:void(0);"
@@ -89,7 +89,8 @@ title: Example-aktindsigt-page-1.html
             <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
 
             <div class="form-group">
-                <label class="form-label " for="id-fornavn">Fornavn</label>
+                <label class="form-label " for="id-fornavn"
+                    id="form-label-id-fornavn">Fornavn</label>
 
                 <input class="form-input  input-width-m " placeholder=""
                     id="id-fornavn" value="" name="Input til fornavn"
@@ -97,8 +98,8 @@ title: Example-aktindsigt-page-1.html
             </div>
 
             <div class="form-group">
-                <label class="form-label "
-                    for="id-efternavn">Efternavn</label>
+                <label class="form-label " for="id-efternavn"
+                    id="form-label-id-efternavn">Efternavn</label>
 
                 <input class="form-input  input-width-m " placeholder=""
                     id="id-efternavn" value="" name="Input til efternavn"
@@ -106,8 +107,8 @@ title: Example-aktindsigt-page-1.html
             </div>
 
             <div class="form-group">
-                <label class="form-label "
-                    for="id-gade-vej">Gade/vej</label>
+                <label class="form-label " for="id-gade-vej"
+                    id="form-label-id-gade-vej">Gade/vej</label>
 
                 <input class="form-input  input-width-m " placeholder=""
                     id="id-gade-vej" value="" name="Input til gade/vej"
@@ -115,8 +116,8 @@ title: Example-aktindsigt-page-1.html
             </div>
 
             <div class="form-group">
-                <label class="form-label "
-                    for="id-husnummer">Husnummer</label>
+                <label class="form-label " for="id-husnummer"
+                    id="form-label-id-husnummer">Husnummer</label>
 
                 <input class="form-input  input-width-xxs " placeholder=""
                     id="id-husnummer" value="" name="Input til husnummer"
@@ -124,7 +125,8 @@ title: Example-aktindsigt-page-1.html
             </div>
 
             <div class="form-group">
-                <label class="form-label " for="id-etage">Etage<span
+                <label class="form-label " for="id-etage"
+                    id="form-label-id-etage">Etage<span
                         class="weight-normal"> (frivilligt)</span></label>
 
                 <input class="form-input  input-width-xxs " placeholder=""
@@ -133,19 +135,20 @@ title: Example-aktindsigt-page-1.html
             </div>
 
             <div class="form-group">
-                <label class="form-label " for="id-side">Side<span
+                <label class="form-label " for="id-side"
+                    id="form-label-id-side">Side<span
                         class="weight-normal"> (frivilligt)</span></label>
                 <span class="form-hint" id="input-hint-message-id-side">Fx:
                     TV, 2. dør</span>
 
                 <input class="form-input  input-width-xs " placeholder=""
-                    id="id-side" value="" name="Input til side"
-                    type="text">
+                    id="id-side" value="" name="Input til side" type="text"
+                    aria-labelledby="form-label-id-side input-hint-message-id-side">
             </div>
 
             <div class="form-group">
-                <label class="form-label "
-                    for="id-postnummer">Postnummer</label>
+                <label class="form-label " for="id-postnummer"
+                    id="form-label-id-postnummer">Postnummer</label>
 
                 <input class="form-input  input-width-xxs " placeholder=""
                     id="id-postnummer" value="" name="Input til postnummer"
@@ -153,16 +156,17 @@ title: Example-aktindsigt-page-1.html
             </div>
 
             <div class="form-group">
-                <label class="form-label " for="id-by">By</label>
+                <label class="form-label " for="id-by"
+                    id="form-label-id-by">By</label>
 
                 <input class="form-input  input-width-m " placeholder=""
                     id="id-by" value="" name="Input til by" type="text">
             </div>
 
             <div class="form-group">
-                <label class="form-label " for="id-co-adresse">Evt.
-                    CO-adresse<span class="weight-normal">
-                        (frivilligt)</span></label>
+                <label class="form-label " for="id-co-adresse"
+                    id="form-label-id-co-adresse">Evt. CO-adresse<span
+                        class="weight-normal"> (frivilligt)</span></label>
 
                 <input class="form-input  input-width-m " placeholder=""
                     id="id-co-adresse" value="" name="Input til CO-adresse"
@@ -180,6 +184,7 @@ title: Example-aktindsigt-page-1.html
                                 name="aktindsigt" value="Ja"
                                 class="form-radio  radio-large " />
                             <label for="id-aktindsigt-ja"
+                                id="form-label-id-aktindsigt-ja"
                                 class="radio-large">Ja </label>
 
                         </li>
@@ -189,6 +194,7 @@ title: Example-aktindsigt-page-1.html
                                 name="aktindsigt" value="Ja"
                                 class="form-radio  radio-large " />
                             <label for="id-aktindsigt-nej"
+                                id="form-label-id-aktindsigt-nej"
                                 class="radio-large">Nej </label>
 
                         </li>

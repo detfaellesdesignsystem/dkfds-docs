@@ -10,8 +10,8 @@ title: Address-form.html
         <div class="input-grid input-grid-small">
 
             <div class="form-group">
-                <label class="form-label "
-                    for="input-text-postnummer">Postnummer</label>
+                <label class="form-label " for="input-text-postnummer"
+                    id="form-label-input-text-postnummer">Postnummer</label>
 
                 <input class="form-input  false " placeholder=""
                     id="input-text-postnummer" value=""
@@ -23,7 +23,8 @@ title: Address-form.html
         <div class="input-grid input-grid-medium">
 
             <div class="form-group">
-                <label class="form-label " for="input-text-by">By</label>
+                <label class="form-label " for="input-text-by"
+                    id="form-label-input-text-by">By</label>
 
                 <input class="form-input  false " placeholder=""
                     id="input-text-by" value="" name="input-text-by"
@@ -33,7 +34,8 @@ title: Address-form.html
         </div>
 
         <div class="form-group">
-            <label class="form-label " for="input-text-gade">Gade</label>
+            <label class="form-label " for="input-text-gade"
+                id="form-label-input-text-gade">Gade</label>
 
             <input class="form-input  false " placeholder=""
                 id="input-text-gade" value="" name="input-text-gade"
@@ -43,8 +45,8 @@ title: Address-form.html
         <div class="input-grid input-grid-small">
 
             <div class="form-group">
-                <label class="form-label "
-                    for="input-text-husnummer">Husnummer</label>
+                <label class="form-label " for="input-text-husnummer"
+                    id="form-label-input-text-husnummer">Husnummer</label>
 
                 <input class="form-input  false " placeholder=""
                     id="input-text-husnummer" value=""
@@ -55,7 +57,8 @@ title: Address-form.html
         <div class="input-grid input-grid-small">
 
             <div class="form-group">
-                <label class="form-label " for="input-text-dør">Dør</label>
+                <label class="form-label " for="input-text-dør"
+                    id="form-label-input-text-dør">Dør</label>
 
                 <input class="form-input  false " placeholder=""
                     id="input-text-dør" value="" name="input-text-dør"
@@ -67,7 +70,8 @@ title: Address-form.html
 
             <div class="form-group">
                 <label class="form-label input-optional"
-                    for="input-text-coadresse">C/O-adresse</label>
+                    for="input-text-coadresse"
+                    id="form-label-input-text-coadresse">C/O-adresse</label>
 
                 <input class="form-input  false " placeholder=""
                     id="input-text-coadresse" value=""

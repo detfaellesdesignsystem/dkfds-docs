@@ -39,7 +39,7 @@ title: Header-medium.html
             <!--2B: Solution header: Authority name + text-->
             <div class="solution-info">
                 <!-- nav-secondary -->
-                <h6 class="h5 authority-name">Myndighedsnavn</h6>
+                <p class="h5 authority-name">Myndighedsnavn</p>
                 <p>Support: 12 34 56 78 <span class="d-print-none">· <a
                             href="#"
                             class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></span>
@@ -106,7 +106,7 @@ title: Header-medium.html
         </div>
 
         <div class="solution-info-mobile">
-            <h6 class="h5 authority-name">Myndighedsnavn</h6>
+            <p class="h5 authority-name">Myndighedsnavn</p>
             <p>Support: 12 34 56 78 · <a href="#"
                     class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a>
             </p>

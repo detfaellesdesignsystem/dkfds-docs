@@ -100,7 +100,7 @@
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
@@ -279,12 +279,13 @@
     <div class="mt-6">
 
         <div class="form-group">
-            <label class="form-label " for="id-co">C/O navn<span class="weight-normal"> (frivilligt)</span></label>
+            <label class="form-label " for="id-co" id="form-label-id-co">C/O navn<span class="weight-normal">
+                    (frivilligt)</span></label>
             <span class="form-hint" id="input-hint-message-id-co">C/O navn
                 skal kun udfyldes, hvis du skal bo til leje hos de
                 nuværende beboere.</span>
 
-            <input class="form-input  input-width-m " placeholder="" id="id-co" value="" name="Input til C/O navn" type="text" />
+            <input class="form-input  input-width-m " placeholder="" id="id-co" value="" name="Input til C/O navn" type="text" aria-labelledby="form-label-id-co input-hint-message-id-co" />
         </div>
 
     </div>
