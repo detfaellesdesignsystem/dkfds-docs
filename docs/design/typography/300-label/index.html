@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1386,14 +1390,35 @@
 
           <p class="font-lead">I eksemplet nedenfor viser vi, hvordan overskrifter til felter og overskrifter i tabeller ser ud. Overskrifter til felter og tabeller er ens, men der er forskel i koden.</p>
 
-<div class="component-preview ">
+<div class="component-preview  component-preview-labels" aria-label="">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/labels"></iframe>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <label class="form-label">Dette er en feltoverskrift</label>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:600<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <table class="table table--borderless">
+                <thead>
+                    <tr style="border-bottom:0;">
+                        <th style="border-bottom:0;">Dette er en
+                            kolonneoverskrift i en tabel</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:600<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-labels">Kode</button>
@@ -1491,6 +1516,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

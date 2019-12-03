@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1798,15 +1802,24 @@
             <p class="font-lead">Et søgefelt udstiller brugerne muligheden for brugerne for at søge efter bestemt indhold på siden eller i løsningen.</p>
           
 
-          
-<div class="component-preview preview-search-bar">
+          <div class="component-preview preview-search-bar component-preview-search" aria-label="Eksempel på søgefelt">
+    <div class="container">
+    <div class="form-group search">
+        <label for="input-type-text" class="sr-only">Søg efter
+            indhold</label>
+        <input class="form-input input-char-27" id="input-type-text" name="search-button" title="Search" type="search" />
+        <button class="button button-search">Søg</button>
+    </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/search"></iframe>
+    <div class="form-group search">
+        <label for="input-type-text-icon" class="sr-only">Søg efter
+            indhold</label>
+        <input class="form-input input-width-xs" id="input-type-text-icon" name="search-icon" title="Search" type="search" />
+        <button class="button button-search"><svg class="icon-svg m-0" focusable="false" aria-hidden="true"><use xlink:href="#magnify"></use></svg><span class="sr-only">Søg</span></button>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-search">Kode</button>
@@ -1919,6 +1932,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

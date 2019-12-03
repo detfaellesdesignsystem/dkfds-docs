@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,13 @@
           <h1 id="ikon-med-popover-kræver-tryk">Ikon med popover (kræver tryk)</h1>
           
 
-          
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tippy-popover-icon"></iframe>
+          <div class="component-preview  component-preview-tippy-popover-icon" aria-label="">
+    <div class="container py-8">
+    <a href="javascript:void(0)" class="popover js-tippy" data-tippy-trigger="click" data-tippy-content="Dette er en hjælpetekst i en popover"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg><span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            popover</span></a>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tippy-popover-icon">Kode</button>
@@ -1439,6 +1441,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,32 @@
           <h1 id="tilbage-knap">Tilbage-knap</h1>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-buttons-back" aria-label="Eksempel på tilbageknap">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-quaternary">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-back"></iframe>
+    <button class="button button-quaternary button-hover">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Hover </button>
+
+    <button class="button button-quaternary button-active">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Active </button>
+
+    <button class="button button-quaternary focus">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Focus </button>
+
+    <button class="button button-quaternary" disabled="">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Disabled </button>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-back">Kode</button>
@@ -1465,6 +1486,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

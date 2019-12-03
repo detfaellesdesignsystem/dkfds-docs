@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1386,14 +1390,43 @@
 
           <p class="font-lead">Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord. </p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/displaytext"></iframe>
+<div class="component-preview  component-preview-displaytext" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-1">Display, text 1</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:4.8rem<br />line-height:5.6rem<br />color:#1a1a1a<br />margin-bottom:0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-2">Display, text 2</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:3.2rem<br />line-height:4rem<br />margin:1.6rem 0 0 0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-1 text-positive">Display, positive</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color:#358000</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-2 text-negative">Display, negative</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color:#CC0000</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-displaytext">Kode</button>
@@ -1488,6 +1521,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1536,15 +1540,41 @@
             <p class="font-lead">Gør det muligt for brugeren, at vælge en dato ved klik på knap.</p>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-date-input-datepicker" aria-label="">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="form-group  ">
+        <fieldset>
+            <legend><label class="form-label">Indsendelsesfrist</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
+            <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
+            <div class="date-group js-calendar-group mt-3">
+                <div class="form-group form-group-day">
+                    <label class="form-label" for="date-day">Dag</label>
+                    <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="date-month">Måned</label>
+                    <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                </div>
+                <div class="form-group form-group-year ">
+                    <label class="form-label" for="date-year">År</label>
+                    <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/date-input-datepicker"></iframe>
+                <button class="button-unstyled button-open-calendar js-calendar-datepicker">
+                    <span class="sr-only">Åben kalenderen</span>
+                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#calendar"></use></svg>
+                </button>
+
+            </div>
+        </fieldset>
+    </div>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-date-input-datepicker">Kode</button>
@@ -1656,6 +1686,15 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+<script src="/assets/js/dkfds-pikaday-example.js"></script>
+
+
 
 
 <!-- begin usabilla live embed code -->

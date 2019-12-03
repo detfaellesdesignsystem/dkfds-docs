@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1888,14 +1892,59 @@
 <h3>Brug den overskrift som ser bedst ud uden at ødelægge oplevelsen for brugere, der anvender skærmlæsere</h3>
 <p>Alle HTML-overskrifter h1 til h6 er stylet; dvs. de er tildelt en størrelse, farve og vægt. Du kan overskrive stylingen, så den bliver visuelt ændret, og samtidig holde en semantisk korrekt opbygning til skærmlæseren. Det kan fx være relevant, hvis det ser bedre ud, at en overskrift h3 ligner en overskrift h5. Du kan ændre styling på en heading ved at bruge denne struktur: <code>&lt;h3 class="h5"&gt;</code>. Det vil fortsat være brugervenligt for brugere, der anvender skærmlæsere.</p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/headings"></iframe>
+<div class="component-preview  component-preview-headings" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h1>Overskrift 1</h1>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:700;<br />font-size:4rem;<br />color:#1a1a1a;<br />line-height:4.8rem;<br />margin:0 0 1.6rem 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2>Overskrift 2</h2>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:3rem;<br />color:#1a1a1a;<br />line-height:4rem;<br />margin:4rem 0 1.6rem 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3>Overskrift 3</h3>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:2.4rem;<br />color:#1a1a1a;<br />line-height:3.2rem;<br />margin:4rem 0 1.6rem 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h4>Overskrift 4</h4>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:2rem;<br />color:#1a1a1a;<br />line-height:3.2rem;<br />margin:2.4rem 0 1.6rem 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h5>Overskrift 5</h5>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:1.6rem;<br />color:#1a1a1a;<br />line-height:2.4rem;<br />margin:2.4rem 0 0 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h6>Overskrift 6</h6>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:1.3rem;<br />text-transform: uppercase;<br />color:#1a1a1a;<br />line-height:2.4rem;<br />margin:2.4rem 0 0 0;</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-headings">Kode</button>
@@ -2040,14 +2089,35 @@
   
   <p class="font-lead">I eksemplet nedenfor viser vi, hvordan overskrifter til felter og overskrifter i tabeller ser ud. Overskrifter til felter og tabeller er ens, men der er forskel i koden.</p>
 
-<div class="component-preview ">
+<div class="component-preview  component-preview-labels" aria-label="">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/labels"></iframe>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <label class="form-label">Dette er en feltoverskrift</label>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:600<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <table class="table table--borderless">
+                <thead>
+                    <tr style="border-bottom:0;">
+                        <th style="border-bottom:0;">Dette er en
+                            kolonneoverskrift i en tabel</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:600<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-labels">Kode</button>
@@ -2128,14 +2198,19 @@
 
 <p>Du kan give teksten extra fokus ved at give den klassen <code>.font-lead</code>.</p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/lead_paragraph"></iframe>
+<div class="component-preview  component-preview-lead-paragraph" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="font-lead">Manchettekst (.font-lead)</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:2rem<br />line-height:3.2rem<br />margin:2.4rem 0 1.6rem 0</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-lead_paragraph">Kode</button>
@@ -2179,14 +2254,44 @@
   
   <p class="font-lead">Brødtekst er standardformateringen for tekst i designsystemet og bliver i særdeleshed brugt til afsnit af tekst.</p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/inlinetext"></iframe>
+<div class="component-preview  component-preview-inlinetext" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>Brødtekst</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.6rem<br />line-height:2.4rem<br />margin:1.6rem 0 1.6rem 0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><small>Dette er lille brødtekst (small-tag)</small></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.4rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="small-text">Dette er lille brødtekst (.small-text)
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.4rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><strong>Dette er fed brødtekst</strong></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-inlinetext">Kode</button>
@@ -2275,14 +2380,76 @@
 <p>Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.</p>
 <p>Se også vores <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.</p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/links"></iframe>
+<div class="component-preview  component-preview-links" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="">Standard link</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #004D99</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="link-hover">Standard
+                    link, hover</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #000040</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="link-active">Standard
+                    link, active</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #004D99</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="link-visited">Standard
+                    link, visited</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #800080</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="link-focus">Standard
+                    link, focus</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #004D99;outline: 4px solid #747474;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>Dette er et
+                <a href="javascript:void(0);" class="bold-link">fremhævet
+                    link</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-weight: 700;</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-links">Kode</button>
@@ -2396,15 +2563,18 @@
 <section class="styleguide-child-container content" id="section-/design/typography/620-external-link">
   <h2 id="eksternt-link">Eksternt link</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/external-link"></iframe>
+  <div class="component-preview  component-preview-external-link" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p>Link som åbner et <a href="" class="icon-link">eksternt
+                    website<svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+            </p>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-external-link">Kode</button>
@@ -2441,15 +2611,22 @@
 <section class="styleguide-child-container content" id="section-/design/typography/630-footer-links">
   <h2 id="footer-links">Footer links</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-footer-links" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <a href="javascript:void(0);" class="function-link">Footer
+                link</a>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/footer-links"></iframe>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #1a1a1a;<br />text-decoration: underline</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-footer-links">Kode</button>
@@ -2483,15 +2660,16 @@
   
   <p class="font-lead">Et "skip link" er et skjult link, lavet til brugere, der anvender keyboard til at navigere med. Skip linket gør det muligt, at springe menuer over og hoppe direkte til indholdet på siden.</p>
 <p>Et skip link bør være det første element på siden som rammes af tabulatoren. Ved aktivering af skip linket flyttes fokus til indholdet på siden.</p>
+<div class="component-preview  component-preview-skiplink" aria-label="">
+    <div class="container">
+    <p>For at se skip link, klik på denne tekst og tryk derefter på
+        tab-tasten.</p>
 
-<div class="component-preview ">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/skiplink"></iframe>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-skiplink">Kode</button>
@@ -2528,14 +2706,64 @@
   
   <p class="font-lead">Lister bruges til at organisere information, så det giver brugeren overblik.</p>
 
-<div class="component-preview preview-lists">
+<div class="component-preview preview-lists component-preview-lists" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="h4">Unordered list</p>
+            <ul>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <li>Unordered list</li>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/lists"></iframe>
+                <li>Unordered list</li>
+
+                <li>Unordered list</li>
+
+                <li>Unordered list<ul class="sub_list">
+
+                        <li>Unordered list</li>
+
+                        <li>Unordered list</li>
+
+                        <li>Unordered list<ul class="sub_list">
+
+                                <li>Unordered list</li>
+
+                                <li>Unordered list</li>
+
+                                <li>Unordered list</li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="h4">Ordered list</p>
+            <ol>
+                <li>Ordered list</li>
+                <li>Ordered list</li>
+                <li>Ordered list</li>
+                <li>Ordered list<ol class="sub_list" type="a">
+                        <li>Ordered list</li>
+                        <li>Ordered list</li>
+                        <li>Ordered list<ol class="sub_list" type="i">
+                                <li>Ordered list</li>
+                                <li>Ordered list</li>
+                                <li>Ordered list</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-lists">Kode</button>
@@ -2646,14 +2874,43 @@
   
   <p class="font-lead">Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord. </p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/displaytext"></iframe>
+<div class="component-preview  component-preview-displaytext" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-1">Display, text 1</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:4.8rem<br />line-height:5.6rem<br />color:#1a1a1a<br />margin-bottom:0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-2">Display, text 2</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:3.2rem<br />line-height:4rem<br />margin:1.6rem 0 0 0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-1 text-positive">Display, positive</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color:#358000</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-2 text-negative">Display, negative</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color:#CC0000</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-displaytext">Kode</button>
@@ -2729,14 +2986,40 @@
   
   <p class="font-lead">Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlbeskeder.</p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/helptext"></iframe>
+<div class="component-preview  component-preview-helptext" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><span class="form-hint" id="input-hint-message-form-error">Hjælpetekst, der
+                    forklarer, hvad du skal gøre</span></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family:"IBMPlexSans","system"<br />font-weight:400<br />font-size:1.6rem<br />line-height:2.4rem<br />color:#747474</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="color-gray-pale my-4 p-4">
+                <p class="m-0"><span class="form-hint" id="input-hint-message-form-error">Hjælpetekst i
+                        active state</span></p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family:"IBMPlexSans","system"<br />font-weight:400<br />font-size:1.6rem<br />line-height:2.4rem<br />color:#747474</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><span class="form-error-message" id="form-error-message-form-error" role="alert">Fejlbesked, der hjælper brugeren
+                    videre</span></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family:"IBMPlexSans","system"<br />font-weight: 600<br />font-size: 1.6rem<br />line-height: 2.4rem<br />color: #CC0000<br />margin-top: 4px</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-helptext">Kode</button>
@@ -2813,14 +3096,33 @@
   
   <p class="font-lead">For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.</p>
 
-<div class="component-preview ">
+<div class="component-preview  component-preview-line-length" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="h5">Linjelængde for brødtekst (p) - Desktop</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="demo-typesetting">Svarer til ca 75 tegn på desktop.
+            </p>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/line_length"></iframe>
+            <p class="h5">Linjelængde for manchettekst (font-lead)-
+                Desktop</p>
+            <p class="font-lead">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
+            <p class="font-lead demo-typesetting">Svarer til ca 75 tegn på
+                desktop.</p>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-line_length">Kode</button>
@@ -2874,14 +3176,45 @@
   
   <p class="font-lead">Linjeafstanden er baseret på teksttypernes linjehøjde.</p>
 
-<div class="component-preview ">
+<div class="component-preview  component-preview-line-spacing" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="h1">Sidetitel</p>
+            <p class="font-lead">Lead tekst Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <h2>Sektionsoverskrift</h2>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/line_spacing"></iframe>
+            <h3>Underoverskrift</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
+
+            <h4>Underoverskrift</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
+
+            <h5>Under-underoverskrift</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-line_spacing">Kode</button>
@@ -2959,6 +3292,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

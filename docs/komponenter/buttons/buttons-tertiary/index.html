@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,22 @@
           <h1 id="tertiærknapper">Tertiærknapper</h1>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-buttons-tertiary" aria-label="Eksempel på tertiær knap">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-tertiary"> Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-tertiary"></iframe>
+    <button class="button button-tertiary button-hover"> Hover </button>
+
+    <button class="button button-tertiary button-active"> Active </button>
+
+    <button class="button button-tertiary focus"> Focus </button>
+
+    <button class="button button-tertiary" disabled=""> Disabled </button>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-tertiary">Kode</button>
@@ -1445,6 +1456,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

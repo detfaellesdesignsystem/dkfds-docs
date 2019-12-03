@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,33 @@
           <h1 id="hjørner">Hjørner</h1>
           
 
-          
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/border-radius"></iframe>
+          <div class="component-preview  component-preview-border-radius" aria-label="">
+    <div class="container">
+    <h3 class="h5">Firkantede hjørner (0px)</h3>
+    <p class="form-hint">Bruges til elementer, som man ikke kan interagere
+        med.</p>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="static-border-radius-example"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <pre>border-radius: 0;</pre>
+        </div>
+    </div>
+    <h3 class="h5">Runde hjørner (4px)</h3>
+    <p class="form-hint">Bruges til interaktive elementer, fx input-felter
+        og knapper.</p>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="interactive-border-radius-example"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <pre>border-radius: 4px</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="border-radius-docs">
     Implementering
@@ -1448,6 +1470,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

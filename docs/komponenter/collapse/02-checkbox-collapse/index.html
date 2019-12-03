@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,44 @@
           <h1 id="checkbox-skjul-og-vis-indhold">Checkbox - skjul og vis indhold</h1>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-checkbox-toggle-content" aria-label="Eksempel på skjul/vis med tjekbokse">
+    <div class="container">
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Vælg fra listen</legend>
+            <ul class="nobullet-list">
+                <li>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    <input id="id-checkbox1" type="checkbox" name="checkbox1" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check1" aria-controls="collapse-check1" aria-expanded="false" />
+                    <label for="id-checkbox1" class="">Tjekboks viser
+                        indhold</label>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/checkbox-toggle-content"></iframe>
+                    <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <p>Dette indhold bliver vist når tjekboksen er
+                                valgt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+
+                    <input id="id-checkbox2" type="checkbox" name="checkbox2" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" checked="" data-js-target="#collapse-check2" aria-controls="collapse-check2" aria-expanded="false" />
+                    <label for="id-checkbox2" class="">Tjekboks viser
+                        indhold</label>
+
+                    <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <p>Dette indhold bliver vist når tjekboksen er
+                                valgt.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-checkbox-toggle-content">Kode</button>
@@ -1506,6 +1539,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

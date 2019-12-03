@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1386,14 +1390,69 @@
 
           <p class="font-lead">A standard template for entering a U.S. mailing or shipping address</p>
 
-<div class="component-preview ">
+<div class="component-preview  component-preview-address-form" aria-label="">
+    <form class="form-large">
+    <fieldset>
+        <legend>Adresse</legend>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <div class="input-grid input-grid-small">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/address-form"></iframe>
+            <div class="form-group">
+                <label class="form-label " for="input-text-postnummer" id="form-label-input-text-postnummer">Postnummer</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-postnummer" value="" name="input-text-postnummer" type="text" />
+            </div>
+
+        </div>
+
+        <div class="input-grid input-grid-medium">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-by" id="form-label-input-text-by">By</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-by" value="" name="input-text-by" type="text" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="input-text-gade" id="form-label-input-text-gade">Gade</label>
+
+            <input class="form-input  false " placeholder="" id="input-text-gade" value="" name="input-text-gade" type="text" />
+        </div>
+
+        <div class="input-grid input-grid-small">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-husnummer" id="form-label-input-text-husnummer">Husnummer</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-husnummer" value="" name="input-text-husnummer" type="text" />
+            </div>
+
+        </div>
+        <div class="input-grid input-grid-small">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-dør" id="form-label-input-text-dør">Dør</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-dør" value="" name="input-text-dør" type="text" />
+            </div>
+
+        </div>
+        <div class="input-grid input-grid-large">
+
+            <div class="form-group">
+                <label class="form-label input-optional" for="input-text-coadresse" id="form-label-input-text-coadresse">C/O-adresse</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-coadresse" value="" name="input-text-coadresse" type="text" />
+            </div>
+
+        </div>
+
+    </fieldset>
+</form>
 </div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-address-form">Kode</button>
@@ -1548,6 +1607,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

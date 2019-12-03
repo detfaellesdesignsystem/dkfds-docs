@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1881,15 +1885,16 @@
 </section>
 
 <h2 id="nyhedsbadges">Nyhedsbadges</h2>
+<div class="component-preview  component-preview-badges" aria-label="Eksempel på badges">
+    <div class="container pb-5">
+    <h3 class="h5">Stort badge</h3>
+    <label class="badge badge-large">Nyhed</label>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/badges"></iframe>
+    <h3 class="h5">Lille badge</h3>
+    <label class="badge badge-small">Lille nyhed</label>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-badges">Kode</button>
@@ -1932,15 +1937,19 @@
 </div>
 
 <h2 id="statusbadges">Statusbadges</h2>
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/badges-status"></iframe>
+<div class="component-preview  component-preview-badges-status" aria-label="">
+    <div class="container pb-5">
+    <h3 class="h5">Positiv status</h3>
+    <label class="badge badge-small badge-success">Positiv tekst</label>
+    <h3 class="h5">Neutral status</h3>
+    <label class="badge badge-small badge-info">Neutral tekst</label>
+    <h3 class="h5">Advarende status</h3>
+    <label class="badge badge-small badge-warning">Advarende tekst</label>
+    <h3 class="h5">Negativ status</h3>
+    <label class="badge badge-small badge-error">Negativ tekst</label>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-badges-status">Kode</button>
@@ -2004,6 +2013,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

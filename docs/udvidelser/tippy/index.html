@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1534,15 +1538,16 @@
 <section class="styleguide-child-container content" id="section-/udvidelser/tippy/tippy-tooltip-button">
   <h2 id="tooltip-kommer-frem-ved-mouse-over">Tooltip (kommer frem ved mouse-over)</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tippy-tooltip-button"></iframe>
+  <div class="component-preview  component-preview-tippy-tooltip-button" aria-label="">
+    <div class="container py-8">
+    <button class="button button-primary js-tippy" data-tippy-content="Dette er et tooltip">
+        Knap med tooltip
+        <span class="sr-only">Dette er tooltipteksten til
+            skærmlæsere</span>
+    </button>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tippy-tooltip-button">Kode</button>
@@ -1569,15 +1574,13 @@
 <section class="styleguide-child-container content" id="section-/udvidelser/tippy/tippy-popover-icon">
   <h2 id="ikon-med-popover-kræver-tryk">Ikon med popover (kræver tryk)</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tippy-popover-icon"></iframe>
+  <div class="component-preview  component-preview-tippy-popover-icon" aria-label="">
+    <div class="container py-8">
+    <a href="javascript:void(0)" class="popover js-tippy" data-tippy-trigger="click" data-tippy-content="Dette er en hjælpetekst i en popover"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg><span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            popover</span></a>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tippy-popover-icon">Kode</button>
@@ -1603,15 +1606,13 @@
 <section class="styleguide-child-container content" id="section-/udvidelser/tippy/tippy-tooltip-icon">
   <h2 id="ikon-med-tooltip">Ikon med tooltip</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tippy-tooltip-icon"></iframe>
+  <div class="component-preview  component-preview-tippy-tooltip-icon" aria-label="">
+    <div class="container py-8">
+    <a href="javascript:void(0)" class="js-tippy" data-tippy-content="Dette er en hjælpetekst i en tooltip"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg><span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            popover</span></a>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tippy-tooltip-icon">Kode</button>
@@ -1636,15 +1637,27 @@
 <section class="styleguide-child-container content" id="section-/udvidelser/tippy/tippy-tooltip-position">
   <h2 id="placering-af-tooltip">Placering af tooltip</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-tippy-tooltip-position" aria-label="">
+    <div class="container py-8">
+    <!-- Placering: top -->
+    <button class="button button-primary js-tippy" data-tippy-placement="top" data-tippy-content="Top tooltip">Top
+        <span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            top</span></button>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <!-- Placering: bund -->
+    <button class="button button-primary js-tippy" data-tippy-placement="bottom" data-tippy-content="Bund tooltip">Bund <span class="sr-only">Dette
+            er tooltipteksten til skærmlæsere, bottom</span></button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tippy-tooltip-position"></iframe>
+    <!-- Placering: venstre -->
+    <button class="button button-primary js-tippy" data-tippy-placement="left" data-tippy-content="Venstre tooltip">Venstre <span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            venstre</span></button>
+
+    <!-- Placering: højre -->
+    <button class="button button-primary js-tippy" data-tippy-placement="right" data-tippy-content="Højre tooltip">Højre <span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            højre</span></button>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tippy-tooltip-position">Kode</button>
@@ -1713,6 +1726,15 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
+<script src="/assets/js/dkfds-tippy-example.js"></script>
+
 
 
 <!-- begin usabilla live embed code -->

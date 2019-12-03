@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,41 @@
           <h1 id="skygger">Skygger</h1>
           
 
-          
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/shadows"></iframe>
+          <div class="component-preview  component-preview-shadows" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Modalvindue</h3>
+            <p class="form-hint">Skygge, der bruges på modalvinduer.</p>
+            <div class="heavy-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 8px 16px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Overflow menu</h3>
+            <p class="form-hint">Skygge, der bruges på overflow menuer</p>
+            <div class="moderately-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 4px 8px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Cards</h3>
+            <p class="form-hint">Skygge, der bruges på cards</p>
+            <div class="slightly-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 2px 4px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion-bordered">
     <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="shadows-docs">
         Implementering
@@ -1453,6 +1483,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

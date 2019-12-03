@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,16 @@
           <h1 id="placering-af-tooltip">Placering af tooltip</h1>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-tooltip-position" aria-label="Eksempel på placering af tooltip">
+    <div class="container py-8">
+    <!-- Placering: top -->
+    <button class="button button-primary js-tooltip" data-tooltip-position="top" data-tooltip="Top tooltip">Top</button>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tooltip-position"></iframe>
+    <!-- Placering: bund -->
+    <button class="button button-primary js-tooltip" data-tooltip-position="bottom" data-tooltip="Bund tooltip">Bund</button>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tooltip-position">Kode</button>
@@ -1442,6 +1447,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

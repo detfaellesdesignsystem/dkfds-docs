@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1389,15 +1393,27 @@
             <p class="font-lead">Gruppering af valgmuligheder med <code>optgroup</code></p>
           
 
-          
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/selectwoo-multiselect--groups"></iframe>
+          <div class="component-preview  component-preview-selectwoo-multiselect-groups" aria-label="">
+    <div class="container">
+    <form class="form mb-6">
+        <div class="form-group">
+            <label class="form-label" for="js-selectwoo-example3">Vælg
+                flere muligheder</label>
+            <select name="SelectWooExample3" id="js-selectwoo-example3" class="d-none" multiple="">
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            </select>
+        </div>
+    </form>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-selectwoo-multiselect--groups">Kode</button>
@@ -1456,6 +1472,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

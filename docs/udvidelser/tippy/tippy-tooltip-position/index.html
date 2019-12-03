@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,27 @@
           <h1 id="placering-af-tooltip">Placering af tooltip</h1>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-tippy-tooltip-position" aria-label="">
+    <div class="container py-8">
+    <!-- Placering: top -->
+    <button class="button button-primary js-tippy" data-tippy-placement="top" data-tippy-content="Top tooltip">Top
+        <span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            top</span></button>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <!-- Placering: bund -->
+    <button class="button button-primary js-tippy" data-tippy-placement="bottom" data-tippy-content="Bund tooltip">Bund <span class="sr-only">Dette
+            er tooltipteksten til skærmlæsere, bottom</span></button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tippy-tooltip-position"></iframe>
+    <!-- Placering: venstre -->
+    <button class="button button-primary js-tippy" data-tippy-placement="left" data-tippy-content="Venstre tooltip">Venstre <span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            venstre</span></button>
+
+    <!-- Placering: højre -->
+    <button class="button button-primary js-tippy" data-tippy-placement="right" data-tippy-content="Højre tooltip">Højre <span class="sr-only">Dette er tooltipteksten til skærmlæsere,
+            højre</span></button>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tippy-tooltip-position">Kode</button>
@@ -1459,6 +1475,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

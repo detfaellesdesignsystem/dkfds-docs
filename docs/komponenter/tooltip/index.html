@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1858,15 +1862,14 @@
 <section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-button">
   <h2 id="tooltip-kommer-frem-ved-mouse-over">Tooltip (kommer frem ved mouse-over)</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tooltip-button"></iframe>
+  <div class="component-preview  component-preview-tooltip-button" aria-label="Eksempel på tooltip">
+    <div class="container py-8">
+    <button class="button button-primary js-tooltip" data-tooltip="Dette er et tooltip">
+        Knap med tooltip
+    </button>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tooltip-button">Kode</button>
@@ -1891,15 +1894,12 @@
 <section class="styleguide-child-container content" id="section-/komponenter/tooltip/popover-icon">
   <h2 id="ikon-med-popover-kræver-tryk">Ikon med popover (kræver tryk)</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/popover-icon"></iframe>
+  <div class="component-preview  component-preview-popover-icon" aria-label="Eksempel på popover ikon">
+    <div class="container py-8">
+    <a href="javascript:void(0)" class="popover js-tooltip" data-tooltip-trigger="click" data-tooltip-position="top" aria-label="Klik på ikon for tooltip" data-tooltip="Dette er en hjælpetekst i en popover"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg></a>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-popover-icon">Kode</button>
@@ -1924,15 +1924,12 @@
 <section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-icon">
   <h2 id="ikon-med-tooltip">Ikon med tooltip</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tooltip-icon"></iframe>
+  <div class="component-preview  component-preview-tooltip-icon" aria-label="Eksempel på ikon med tooltip">
+    <div class="container py-8">
+    <a href="javascript:void(0)" class="js-tooltip" data-tooltip="Dette er en hjælpetekst i en popover"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg></a>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tooltip-icon">Kode</button>
@@ -1955,15 +1952,16 @@
 <section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-position">
   <h2 id="placering-af-tooltip">Placering af tooltip</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-tooltip-position" aria-label="Eksempel på placering af tooltip">
+    <div class="container py-8">
+    <!-- Placering: top -->
+    <button class="button button-primary js-tooltip" data-tooltip-position="top" data-tooltip="Top tooltip">Top</button>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tooltip-position"></iframe>
+    <!-- Placering: bund -->
+    <button class="button button-primary js-tooltip" data-tooltip-position="bottom" data-tooltip="Bund tooltip">Bund</button>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tooltip-position">Kode</button>
@@ -2015,6 +2013,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

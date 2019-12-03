@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1807,16 +1811,61 @@
     <h3>Klasser som rammer alle breakpoints</h3>
     <p>Brug klassen <code>.col</code> eller <code>.col-*</code> uden responsivt prefix (fx. md).</p>
 
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--all-breakpoints"></iframe>
+    <div class="component-preview  component-preview-grid-all-breakpoints" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2 grid-example-measure-row">
+            <div class="col-1">
+                <div class="align-text-center px-2">1</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">2</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">3</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">4</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">5</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">6</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">7</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">8</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">9</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">10</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">11</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">12</div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row">
+            <div class="col-8">col-8</div>
+            <div class="col-4">col-4</div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--all-breakpoints">Kode</button>
@@ -1884,16 +1933,22 @@
 
     <h3>Fra stablede kolonner til kolonner på række</h3>
     <p>Ved at bruge fx <code>.col-md-*</code> klassen vil kolonnerne til at begynde med være placeret lodret over hinanden på mobile enheder. Fra medium-skærme vil de være vist vandret på en række.</p>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--stacked-horizontal"></iframe>
+    <div class="component-preview  component-preview-grid-stacked-horizontal" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-8">col-md-8</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md">col-md</div>
+            <div class="col-md">col-md</div>
+            <div class="col-md">col-md</div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--stacked-horizontal">Kode</button>
@@ -1923,16 +1978,31 @@
     <h3>Brug af forskellige kolonne-klasser</h3>
     <p>Du kan mikse forskellige kolonne-klasser.</p>
 
-    
+    <div class="component-preview  component-preview-grid-mix-match" aria-label="">
+    <div class="grid-example">
+    <div class="container w-percent-100">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row mb-2">
+            <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
 
-<div class="component-preview ">
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row mb-2">
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--mix-match"></iframe>
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--mix-match">Kode</button>
@@ -1971,16 +2041,20 @@
     <h3>Kolonneombrydning</h3>
     <p>Hvis der er mere end 12 kolonner på en række, vil ekstra kolonner blive vist på en ny linje under de første 12.</p>
 
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--column-wrapping"></iframe>
+    <div class="component-preview  component-preview-grid-column-wrapping" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col-9">.col-9</div>
+            <div class="col-4">
+                .col-4<br />9 + 4 = 13 &gt; 12, det betyder at denne 4-kolonne div bliver vist på en nye linie</div>
+                <div class="col-6">
+                    .col-6<br />Efterfølgende kolonner fortsætter på denne nye linie</div>
+                </div>
+            </div>
+        </div>
 </div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--column-wrapping">Kode</button>
@@ -2008,16 +2082,26 @@
     <h3>Indlejre</h3>
     <p>Du kan indlejre flere rækker med tilhørende kolonner i hinanden.</p>
 
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--nesting"></iframe>
+    <div class="component-preview  component-preview-grid-nesting" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                Level 1: .col-sm-9
+                <div class="row">
+                    <div class="col-8 col-sm-6">
+                        Level 2: .col-8 .col-sm-6
+                    </div>
+                    <div class="col-4 col-sm-6">
+                        Level 2: .col-4 .col-sm-6
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--nesting">Kode</button>
@@ -2050,16 +2134,16 @@
 
     <h3>Ingen afstand mellem kolonner (ingen gutter)</h3>
     <p>Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen <code>no-gutters</code> til rækken.</p>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--no-gutters"></iframe>
+    <div class="component-preview  component-preview-grid-no-gutters" aria-label="">
+    <div class="grid-example container">
+    <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8
+        </div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--no-gutters">Kode</button>
@@ -2087,16 +2171,35 @@
     
     <h3>Specifik bredde på kun én kolonne</h3>
     <p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (.col-6). De øvrige kolonner tilpasser sig automatisk samme bredde. </p>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--one-column-width"></iframe>
+    <div class="component-preview  component-preview-grid-one-column-width" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-6">
+                2 of 3 (.col-6)
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-5">
+                2 of 3 (.col-5)
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--one-column-width">Kode</button>
@@ -2138,16 +2241,35 @@
 
     <h3>Individuel kolonnebredde efter indhold</h3>
     <p>Ved at brug <code>col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--variable-width-content"></iframe>
+    <div class="component-preview  component-preview-grid-variable-width-content" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row justify-content-md-center mb-2">
+            <div class="col col-md-2">
+                1 of 3
+            </div>
+            <div class="col-md-auto">
+                Kolonne med variabel bredde
+            </div>
+            <div class="col col-md-2">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-md-auto">
+                Kolonne med variabel bredde
+            </div>
+            <div class="col col-md-2">
+                3 of 3
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--variable-width-content">Kode</button>
@@ -2193,16 +2315,24 @@
     <h3>Order-klasser</h3>
     <p>Brug klasserne <code>.order-</code> til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx <code>.order-1.order-md-2</code>).</p>
 
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--ordering-visual"></iframe>
+    <div class="component-preview  component-preview-grid-ordering-visual" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Første kolonne, men ingen order-klasse
+            </div>
+            <div class="col order-12">
+                Anden kolonne, men vises som sidste kolonne
+            </div>
+            <div class="col order-1">
+                Tredje kolonne, men vises som anden kolonne
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--ordering-visual">Kode</button>
@@ -2234,16 +2364,62 @@
     <h3>Forskyd kolonner</h3>
     <p>Brug klasserne <code>.offset-</code> til at forskyde kolonner, fx forskyder <code>.offset-md-4</code> 4 kolonner til højre.</p>
 
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--offsets"></iframe>
+    <div class="component-preview  component-preview-grid-offsets" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2 grid-example-measure-row">
+            <div class="col-1">
+                <div class="align-text-center px-2">1</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">2</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">3</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">4</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">5</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">6</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">7</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">8</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">9</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">10</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">11</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">12</div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--offsets">Kode</button>
@@ -2312,16 +2488,26 @@
 
     <p>Du kan nulstille forskydning ved fx at bruge klassen <code>offset-md-0</code></p>
 
-    
+    <div class="component-preview  component-preview-grid-offsets-reset" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                .col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+        </div>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--offsets-reset"></iframe>
+        <div class="row">
+            <div class="col-sm-6 col-md-5 col-lg-6">
+                .col.col-sm-6.col-md-5.col-lg-6</div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                .col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--offsets-reset">Kode</button>
@@ -2363,16 +2549,46 @@
 
     <h4>Vertikal alignment</h4>
 
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--util-flex-vertical-align-01"></iframe>
+    <div class="component-preview  component-preview-grid-util-flex-vertical-align-01" aria-label="">
+    <div class="grid-example v-align">
+    <div class="container">
+        <div class="row align-items-start mb-2 grid-example-row-flex">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row align-items-center mb-2 grid-example-row-flex">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row align-items-end grid-example-row-flex">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--util-flex-vertical-align-01">Kode</button>
@@ -2424,16 +2640,24 @@
 
 
     <br />
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--util-flex-vertical-align-02"></iframe>
+    <div class="component-preview  component-preview-grid-util-flex-vertical-align-02" aria-label="">
+    <div class="grid-example v-align">
+    <div class="container">
+        <div class="row mb-2 grid-example-row-flex">
+            <div class="col align-self-start">
+                One of three columns
+            </div>
+            <div class="col align-self-center">
+                One of three columns
+            </div>
+            <div class="col align-self-end">
+                One of three columns
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--util-flex-vertical-align-02">Kode</button>
@@ -2464,16 +2688,53 @@
 
     <h4>Horisontal alignment</h4>
 
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--util-flex-horizontal-align"></iframe>
+    <div class="component-preview  component-preview-grid-util-flex-horizontal-align" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row justify-content-start mb-2">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-center mb-2">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-end mb-2">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-around mb-2">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--util-flex-horizontal-align">Kode</button>
@@ -2534,16 +2795,25 @@
     <h3>Hjælpeklasser: Margin</h3>
     <p>Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx <code>mr-auto</code>.</p>
 
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--util-margin"></iframe>
+    <div class="component-preview  component-preview-grid-util-margin" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+        </div>
+        <div class="row">
+            <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+            <div class="col-auto">.col-auto</div>
+        </div>
+    </div>
 </div>
+</div>
+
     <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--util-margin">Kode</button>
@@ -2630,6 +2900,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

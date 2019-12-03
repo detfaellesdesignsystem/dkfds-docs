@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1389,15 +1393,26 @@
             <p class="font-lead">An expandable table allows the user to show and hide content of a row.</p>
           
 
-          
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/datatables--expandable-row"></iframe>
+          <div class="component-preview  component-preview-datatables-expandable-row" aria-label="">
+    <div class="container">
+    <table id="js-datatable-example-detailsrow" class="table table--lines w-percent-100">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Navn</th>
+                <!--<th>Email</th>-->
+                <th>Vej</th>
+                <th>By</th>
+                <th>Telefon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Filled in by js-->
+        </tbody>
+    </table>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-datatables--expandable-row">Kode</button>
@@ -1455,6 +1470,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1620,15 +1624,33 @@
 <section class="styleguide-child-container content" id="section-/design/borders-shadows/01-border-radius">
   <h2 id="hjørner">Hjørner</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/border-radius"></iframe>
+  <div class="component-preview  component-preview-border-radius" aria-label="">
+    <div class="container">
+    <h3 class="h5">Firkantede hjørner (0px)</h3>
+    <p class="form-hint">Bruges til elementer, som man ikke kan interagere
+        med.</p>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="static-border-radius-example"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <pre>border-radius: 0;</pre>
+        </div>
+    </div>
+    <h3 class="h5">Runde hjørner (4px)</h3>
+    <p class="form-hint">Bruges til interaktive elementer, fx input-felter
+        og knapper.</p>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="interactive-border-radius-example"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <pre>border-radius: 4px</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="border-radius-docs">
     Implementering
@@ -1663,15 +1685,69 @@
 <section class="styleguide-child-container content" id="section-/design/borders-shadows/02-borders">
   <h2 id="streger">Streger</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/borders"></iframe>
+  <div class="component-preview  component-preview-borders" aria-label="">
+      <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Ydre-streger</h3>
+              <p class="form-hint">Bruges til de yderste streger i et
+                  element, se fx tabeller.</p>
+              <div class="outer-border-example"></div>
+          </div>
+          <div class="col-12 col-md-6">
+              <pre>border: 1px solid #747474</pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Indre-streger</h3>
+              <p class="form-hint">Bruges til indre streger i et element,
+                  se fx tabeller.</p>
+              <div class="inner-border-example"></div>
+          </div>
+          <div class="col-12 col-md-6">
+              <pre>border: 1px solid #BFBFBF</pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Indre-indre-streger</h3>
+              <p class="form-hint">Bruges til indre streger i et element,
+                  som allerede er omkranset af indre steger, se fx
+                  sidenavigation.</p>
+              <div class="inner-inner-border-example"></div>
+          </div>
+          <div class="col-12 col-md-6">
+              <pre>border: 1px solid #DCDCDC</pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Knap-streger</h3>
+              <p class="form-hint">Specifik streg til knapper.</p>
+              <div class="button-border-example"></div>
+          </div>
+          <div class="col-12 col-md-6 mt-4">
+              <h4 class="h6 mb-0 mt-0">Virk tema:</h4>
+              <pre class="mt-0">border: 2px solid #004993</pre>
+              <h4 class="h6 mb-0 mt-0">Borger.dk tema:</h4>
+              <pre class="mt-0">border: 2px solid #3C5C22</pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Horisontal ruler</h3>
+              <p class="form-hint"><code>hr</code> elementet har samme
+                  farve som den Indre streg</p>
+              <hr />
+          </div>
+          <div class="col-12 col-md-6">
+              <pre>border-top: 1px solid #BFBFBF</pre>
+          </div>
+      </div>
+  </div>
 </div>
+
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="borders-docs">
     Implementering
@@ -1714,15 +1790,41 @@
 <section class="styleguide-child-container content" id="section-/design/borders-shadows/03-shadows">
   <h2 id="skygger">Skygger</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/shadows"></iframe>
+  <div class="component-preview  component-preview-shadows" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Modalvindue</h3>
+            <p class="form-hint">Skygge, der bruges på modalvinduer.</p>
+            <div class="heavy-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 8px 16px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Overflow menu</h3>
+            <p class="form-hint">Skygge, der bruges på overflow menuer</p>
+            <div class="moderately-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 4px 8px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Cards</h3>
+            <p class="form-hint">Skygge, der bruges på cards</p>
+            <div class="slightly-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 2px 4px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion-bordered">
     <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="shadows-docs">
         Implementering
@@ -1785,6 +1887,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

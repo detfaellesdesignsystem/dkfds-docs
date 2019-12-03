@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1798,15 +1802,136 @@
             <p class="font-lead">Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere ser de skjulte sektioner, når du anvender faneblade.</p>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-tabnav" aria-label="Eksempel på faneblad">
+    <div class="container pt-3 pt-md-0">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <ul class="tabnav">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tabnav"></iframe>
+        <li class="">
+            <a href="#tab1" class="tabnav-item" aria-expanded="false">
+                <span>Fane 1</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab1">
+                <h2>Indhold 1</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="active">
+            <a href="#tab2" class="tabnav-item" aria-expanded="true">
+                <span>Fane 2</span>
+                <span class="sr-only">(valgt)</span>
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="false" id="tab2">
+                <h2>Indhold 2</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="">
+            <a href="#tab3" class="tabnav-item" aria-expanded="false">
+                <span>Fane 3</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab3">
+                <h2>Indhold 3</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="">
+            <a href="#tab4" class="tabnav-item" aria-expanded="false">
+                <span>Fane 4</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab4">
+                <h2>Indhold 4</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="">
+            <a href="#tab5" class="tabnav-item" aria-expanded="false">
+                <span>Fane 5</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab5">
+                <h2>Indhold 5</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="">
+            <a href="#tab6" class="tabnav-item" aria-expanded="false">
+                <span>Fane 6</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab6">
+                <h2>Indhold 6</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+    </ul>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tabnav">Kode</button>
@@ -2020,6 +2145,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1386,15 +1390,16 @@
 
           <p class="font-lead">Et "skip link" er et skjult link, lavet til brugere, der anvender keyboard til at navigere med. Skip linket gør det muligt, at springe menuer over og hoppe direkte til indholdet på siden.</p>
 <p>Et skip link bør være det første element på siden som rammes af tabulatoren. Ved aktivering af skip linket flyttes fokus til indholdet på siden.</p>
+<div class="component-preview  component-preview-skiplink" aria-label="">
+    <div class="container">
+    <p>For at se skip link, klik på denne tekst og tryk derefter på
+        tab-tasten.</p>
 
-<div class="component-preview ">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/skiplink"></iframe>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-skiplink">Kode</button>
@@ -1450,6 +1455,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

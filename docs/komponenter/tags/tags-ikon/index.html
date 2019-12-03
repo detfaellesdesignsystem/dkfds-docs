@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,20 @@
           <h1 id="tags-med-ikon">Tags med ikon</h1>
           
 
-          
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tags-icon"></iframe>
+          <div class="component-preview  component-preview-tags-icon" aria-label="Eksempel på tags med ikon">
+    <div class="container py-8">
+    <button class="tag tag-icon">Default
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg>
+    </button><button class="tag tag-icon tag-hover">Hover
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg>
+    </button><button class="tag tag-icon tag-active">Active
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg>
+    </button><button class="tag tag-icon focus">Focus
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg>
+    </button>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tags-icon">Kode</button>
@@ -1443,6 +1452,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

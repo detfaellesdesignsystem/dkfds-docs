@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1801,15 +1805,27 @@
   
     <p class="font-lead">A standard template for collecting a person’s full name</p>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-name-form" aria-label="">
+    <form class="form-large">
+    <fieldset>
+        <legend>Navn</legend>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <div class="form-group">
+            <label class="form-label " for="NaN" id="form-label-NaN">Fornavn</label>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/name-form"></iframe>
+            <input class="form-input  false " placeholder="" id="NaN" value="" name="NaN" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="NaN" id="form-label-NaN">Efternavn</label>
+
+            <input class="form-input  false " placeholder="" id="NaN" value="" name="NaN" type="text" />
+        </div>
+
+    </fieldset>
+</form>
 </div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-name-form">Kode</button>
@@ -1877,14 +1893,69 @@
   
   <p class="font-lead">A standard template for entering a U.S. mailing or shipping address</p>
 
-<div class="component-preview ">
+<div class="component-preview  component-preview-address-form" aria-label="">
+    <form class="form-large">
+    <fieldset>
+        <legend>Adresse</legend>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <div class="input-grid input-grid-small">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/address-form"></iframe>
+            <div class="form-group">
+                <label class="form-label " for="input-text-postnummer" id="form-label-input-text-postnummer">Postnummer</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-postnummer" value="" name="input-text-postnummer" type="text" />
+            </div>
+
+        </div>
+
+        <div class="input-grid input-grid-medium">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-by" id="form-label-input-text-by">By</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-by" value="" name="input-text-by" type="text" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="input-text-gade" id="form-label-input-text-gade">Gade</label>
+
+            <input class="form-input  false " placeholder="" id="input-text-gade" value="" name="input-text-gade" type="text" />
+        </div>
+
+        <div class="input-grid input-grid-small">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-husnummer" id="form-label-input-text-husnummer">Husnummer</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-husnummer" value="" name="input-text-husnummer" type="text" />
+            </div>
+
+        </div>
+        <div class="input-grid input-grid-small">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-dør" id="form-label-input-text-dør">Dør</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-dør" value="" name="input-text-dør" type="text" />
+            </div>
+
+        </div>
+        <div class="input-grid input-grid-large">
+
+            <div class="form-group">
+                <label class="form-label input-optional" for="input-text-coadresse" id="form-label-input-text-coadresse">C/O-adresse</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-coadresse" value="" name="input-text-coadresse" type="text" />
+            </div>
+
+        </div>
+
+    </fieldset>
+</form>
 </div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-address-form">Kode</button>
@@ -2020,15 +2091,41 @@
   
     <p class="font-lead">A standard template for resetting a password</p>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-password-reset-form" aria-label="">
+    <form class="form">
+    <fieldset>
+        <legend class="drop_text">Reset password</legend>
+        <span class="serif">Please enter your new password</span>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <div class="alert alert-info">
+            <div class="alert-body">
+                <h3 class="alert-heading">Passwords must:</h3>
+            </div>
+            <ul class="checklist" id="validation_list">
+                <li data-validator="length">Be at least 8 characters</li>
+                <li data-validator="uppercase">Have at least 1 uppercase
+                    character</li>
+                <li data-validator="numerical">Have at least 1 numerical
+                    character</li>
+                <li>Another requirement</li>
+            </ul>
+        </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/password-reset-form"></iframe>
+        <label for="password">New password</label>
+        <input id="password" name="password" type="password" aria-describedby="validation_list" data-validate-length=".{8,}" data-validate-uppercase="[A-Z]" data-validate-numerical="\d" data-validation-element="#validation_list" />
+
+        <label for="confirmPassword">Confirm password</label>
+        <input id="confirmPassword" name="confirmPassword" type="password" />
+        <p class="form-note">
+            <a href="javascript:void(0);" class="show_multipassword" aria-controls="password-reset confirmPassword">Show my
+                typing</a>
+        </p>
+
+        <input type="submit" value="Reset password" />
+    </fieldset>
+</form>
 </div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-password-reset-form">Kode</button>
@@ -2110,15 +2207,31 @@
   
     <p class="font-lead">A template for signing a user into a website or app</p>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-sign-in-form" aria-label="">
+    <form class="form">
+    <fieldset>
+        <legend class="drop_text">Sign in</legend>
+        <span>or <a href="javascript:void(0);">create an account</a></span>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <label for="username">Username or email address</label>
+        <input id="username" name="username" type="text" autocapitalize="off" autocorrect="off" />
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/sign-in-form"></iframe>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+        <p class="form-note">
+            <a title="Show password" href="javascript:void(0);" class="show_password" aria-controls="password-sign-in">Show
+                password</a>
+        </p>
+
+        <input type="submit" value="Sign in" />
+        <p><a href="javascript:void(0);" title="Forgot username">
+                Forgot username?</a></p>
+        <p><a href="javascript:void(0);" title="Forgot password">
+                Forgot password?</a></p>
+    </fieldset>
+</form>
 </div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-sign-in-form">Kode</button>
@@ -2213,6 +2326,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

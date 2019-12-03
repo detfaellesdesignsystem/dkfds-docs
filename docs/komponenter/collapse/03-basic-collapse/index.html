@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,19 @@
           <h1 id="generel-skjul-og-vis-indhold-funktionalitet">Generel skjul og vis indhold funktionalitet</h1>
           
 
-          
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/basic-collapse"></iframe>
+          <div class="component-preview  component-preview-basic-collapse" aria-label="Eksempel på skjul/visning af indhold ved brug af knap">
+    <div class="container">
+    <button class="button button-secondary js-collapse" data-js-target="#collapse1" aria-controls="collapse1" aria-expanded="false">Vis indhold</button>
+    <div id="collapse1" aria-hidden="true" class="box-border-l mt-4 collapsed">
+        <div class="py-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-basic-collapse">Kode</button>
@@ -1500,6 +1508,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

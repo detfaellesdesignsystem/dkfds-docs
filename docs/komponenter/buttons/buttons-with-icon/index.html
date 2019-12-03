@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1384,15 +1388,16 @@
           <h1 id="knap-med-ikon">Knap med ikon</h1>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-buttons-with-icon" aria-label="Eksempel på knap med ikon">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-primary">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#refresh"></use></svg>
+        Refresh </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-with-icon"></iframe>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-with-icon">Kode</button>
@@ -1439,6 +1444,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

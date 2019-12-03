@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1386,14 +1390,44 @@
 
           <p class="font-lead">Brødtekst er standardformateringen for tekst i designsystemet og bliver i særdeleshed brugt til afsnit af tekst.</p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/inlinetext"></iframe>
+<div class="component-preview  component-preview-inlinetext" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>Brødtekst</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.6rem<br />line-height:2.4rem<br />margin:1.6rem 0 1.6rem 0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><small>Dette er lille brødtekst (small-tag)</small></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.4rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="small-text">Dette er lille brødtekst (.small-text)
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.4rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><strong>Dette er fed brødtekst</strong></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-inlinetext">Kode</button>
@@ -1499,6 +1533,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

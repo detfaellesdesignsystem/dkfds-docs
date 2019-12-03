@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1389,15 +1393,31 @@
             <p class="font-lead">A template for signing a user into a website or app</p>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-sign-in-form" aria-label="">
+    <form class="form">
+    <fieldset>
+        <legend class="drop_text">Sign in</legend>
+        <span>or <a href="javascript:void(0);">create an account</a></span>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <label for="username">Username or email address</label>
+        <input id="username" name="username" type="text" autocapitalize="off" autocorrect="off" />
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/sign-in-form"></iframe>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+        <p class="form-note">
+            <a title="Show password" href="javascript:void(0);" class="show_password" aria-controls="password-sign-in">Show
+                password</a>
+        </p>
+
+        <input type="submit" value="Sign in" />
+        <p><a href="javascript:void(0);" title="Forgot username">
+                Forgot username?</a></p>
+        <p><a href="javascript:void(0);" title="Forgot password">
+                Forgot password?</a></p>
+    </fieldset>
+</form>
 </div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-sign-in-form">Kode</button>
@@ -1490,6 +1510,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

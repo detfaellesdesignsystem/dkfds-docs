@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1923,15 +1927,51 @@
 <section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-standard">
   <h2 id="standard">Standard</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-alerts" aria-label="Eksempel på besked">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="alert alert-info " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading ">Informativ besked</p>
+            <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.</p>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/alerts"></iframe>
+        </div>
+    </div>
+
+    <div class="alert alert-success " role="alert" aria-label="Beskedbox der viser succes">
+        <div class="alert-body">
+            <p class="alert-heading ">Succesmeddelelse</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-warning " role="alert" aria-label="Beskedbox der viser en advarsel">
+        <div class="alert-body">
+            <p class="alert-heading ">Advarsel</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-error " role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+        <div class="alert-body">
+            <p class="alert-heading ">Fejlbesked</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-alerts">Kode</button>
@@ -1996,15 +2036,48 @@
 <section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-icons">
   <h2 id="beskeder-med-ikon">Beskeder med ikon</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-alerts-icons" aria-label="Eksempel på besked med ikon">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="alert alert-info alert--show-icon " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading ">Informativ besked - med ikon</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/alerts-icons"></iframe>
+        </div>
+    </div>
+
+    <div class="alert alert-success alert--show-icon " role="alert" aria-label="Beskedbox der viser succes">
+        <div class="alert-body">
+            <p class="alert-heading ">Succesmeddelelse - med ikon</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-warning alert--show-icon " role="alert" aria-label="Beskedbox der viser en advarsel">
+        <div class="alert-body">
+            <p class="alert-heading ">Advarsel - med ikon</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-error alert--show-icon " role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+        <div class="alert-body">
+            <p class="alert-heading ">Fejlbesked - med ikon</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-alerts-icons">Kode</button>
@@ -2066,15 +2139,44 @@
 <section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-texts">
   <h2 id="forskellige-teksteksempler">Forskellige teksteksempler</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-alerts-texts" aria-label="Eksempel på besked i forskellige formater">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="alert alert-info alert--show-icon " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading ">Informativ besked - kun overskrift
+            </p>
+            <p class="alert-text"></p>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/alerts-texts"></iframe>
+        </div>
+    </div>
+
+    <div class="alert alert-info " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-info alert--paragraph " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading ">Informativ besked - tekstafsnit</p>
+            <p class="alert-text">Multi line. Sed ut perspiciatis unde
+                omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui atione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui doloremipsa quae ab
+                illo inventore veritatis et quasi architecto beatae vitae
+                dicta sunt explicabo.</p>
+
+        </div>
+    </div>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-alerts-texts">Kode</button>
@@ -2131,15 +2233,51 @@
 <section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-close">
   <h2 id="beskeder-med-lukknap">Beskeder med lukknap</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-alerts-close" aria-label="Eksempel på besked med luk-knap">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="alert alert-info  has-close" role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading  pr-7">Informativ besked</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
+            <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.</p>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/alerts-close"></iframe>
+        </div>
+    </div>
+
+    <div class="alert alert-success  has-close" role="alert" aria-label="Beskedbox der viser succes">
+        <div class="alert-body">
+            <p class="alert-heading  pr-7">Succesmeddelelse</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-warning  has-close" role="alert" aria-label="Beskedbox der viser en advarsel">
+        <div class="alert-body">
+            <p class="alert-heading  pr-7">Advarsel</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-error  has-close" role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+        <div class="alert-body">
+            <p class="alert-heading  pr-7">Fejlbesked</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-alerts-close">Kode</button>
@@ -2235,6 +2373,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->

@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1388,14 +1392,19 @@
 
 <p>Du kan give teksten extra fokus ved at give den klassen <code>.font-lead</code>.</p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/lead_paragraph"></iframe>
+<div class="component-preview  component-preview-lead-paragraph" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="font-lead">Manchettekst (.font-lead)</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:2rem<br />line-height:3.2rem<br />margin:2.4rem 0 1.6rem 0</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-lead_paragraph">Kode</button>
@@ -1458,6 +1467,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

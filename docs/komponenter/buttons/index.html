@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -2012,15 +2016,22 @@
 <section class="styleguide-child-container content" id="section-/komponenter/buttons/buttons-primary">
   <h2 id="primærknap">Primærknap</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-primary" aria-label="Eksempel på primærknap">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-primary"> Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-primary"></iframe>
+    <button class="button button-primary button-hover"> Hover </button>
+
+    <button class="button button-primary button-active"> Active </button>
+
+    <button class="button button-primary focus"> Focus </button>
+
+    <button class="button button-primary" disabled=""> Disabled </button>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-primary">Kode</button>
@@ -2052,15 +2063,22 @@
 <section class="styleguide-child-container content" id="section-/komponenter/buttons/buttons-secondary">
   <h2 id="sekundærknapper">Sekundærknapper</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-secondary" aria-label="Eksempel på sekundær knap">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-secondary"> Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-secondary"></iframe>
+    <button class="button button-secondary button-hover"> Hover </button>
+
+    <button class="button button-secondary button-active"> Active </button>
+
+    <button class="button button-secondary focus"> Focus </button>
+
+    <button class="button button-secondary" disabled=""> Disabled </button>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-secondary">Kode</button>
@@ -2092,15 +2110,22 @@
 <section class="styleguide-child-container content" id="section-/komponenter/buttons/buttons-tertiary">
   <h2 id="tertiærknapper">Tertiærknapper</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-tertiary" aria-label="Eksempel på tertiær knap">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-tertiary"> Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-tertiary"></iframe>
+    <button class="button button-tertiary button-hover"> Hover </button>
+
+    <button class="button button-tertiary button-active"> Active </button>
+
+    <button class="button button-tertiary focus"> Focus </button>
+
+    <button class="button button-tertiary" disabled=""> Disabled </button>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-tertiary">Kode</button>
@@ -2132,15 +2157,32 @@
 <section class="styleguide-child-container content" id="section-/komponenter/buttons/buttons-back">
   <h2 id="tilbage-knap">Tilbage-knap</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-back" aria-label="Eksempel på tilbageknap">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-quaternary">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-back"></iframe>
+    <button class="button button-quaternary button-hover">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Hover </button>
+
+    <button class="button button-quaternary button-active">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Active </button>
+
+    <button class="button button-quaternary focus">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Focus </button>
+
+    <button class="button button-quaternary" disabled="">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Disabled </button>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-back">Kode</button>
@@ -2192,15 +2234,16 @@
 <section class="styleguide-child-container content" id="section-/komponenter/buttons/buttons-with-icon">
   <h2 id="knap-med-ikon">Knap med ikon</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-with-icon" aria-label="Eksempel på knap med ikon">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-primary">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#refresh"></use></svg>
+        Refresh </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-with-icon"></iframe>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-with-icon">Kode</button>
@@ -2226,15 +2269,16 @@
 <section class="styleguide-child-container content" id="section-/komponenter/buttons/buttons-only-icon">
   <h2 id="ikon-som-knap">Ikon som knap</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-only-icon" aria-label="Eksempel på knap som ikon">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-unstyled">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+        <span class="sr-only">Slet</span></button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-only-icon"></iframe>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-only-icon">Kode</button>
@@ -2268,15 +2312,16 @@
 <section class="styleguide-child-container content" id="section-/komponenter/buttons/buttons-fileupload">
   <h2 id="vedhæft-fil">Vedhæft fil</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-fileupload" aria-label="Eksempel på vedhæft fil">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-fileupload"></iframe>
+    <div class="form-group">
+        <label class="form-label" for="fileinput1">Vælg fil</label>
+        <input type="file" id="fileinput1" name="file" />
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-buttons-fileupload">Kode</button>
@@ -2333,6 +2378,13 @@
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 <!-- begin usabilla live embed code -->
