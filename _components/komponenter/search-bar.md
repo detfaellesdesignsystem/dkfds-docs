@@ -8,7 +8,7 @@ subcategory: Komponenter
 lead: Et søgefelt udstiller brugerne muligheden for brugerne for at søge efter bestemt indhold på siden eller i løsningen.
 ---
 
-{% include code/preview.html component="search" classes="preview-search-bar" %}
+{% include code/preview.html component="search" classes="preview-search-bar" title="Eksempel på søgefelt" %}
 {% include code/accordion.html component="search" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

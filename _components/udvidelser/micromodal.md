@@ -7,6 +7,7 @@ type: component
 title: Modalvinduer (MicroModal)
 category: Udvidelser_category
 subcategory: Udvidelser
+micromodal: true
 description: Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen.
 alerts:
 - type: warning

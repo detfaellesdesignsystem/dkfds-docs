@@ -4,6 +4,7 @@ redirect_from:
 - /datatables/
 layout: styleguide
 type: component
+datatables: true
 title: Avancerede tabeller
 category: Udvidelser_category
 subcategory: Udvidelser

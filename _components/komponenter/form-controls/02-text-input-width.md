@@ -5,7 +5,7 @@ order: 02
 lead: 
 ---
 
-{% include code/preview.html component="text-input-width" %}
+{% include code/preview.html component="text-input-width" title="Eksempel på feltbredder" %}
 {% include code/accordion.html component="text-input-width" %}
 <div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"

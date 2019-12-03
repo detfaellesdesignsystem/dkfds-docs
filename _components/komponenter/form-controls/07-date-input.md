@@ -5,7 +5,7 @@ order: 07
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
 ---
 
-{% include code/preview.html component="date-input" %}
+{% include code/preview.html component="date-input"  title="Eksempel på datoangivelse" %}
 {% include code/accordion.html component="date-input" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

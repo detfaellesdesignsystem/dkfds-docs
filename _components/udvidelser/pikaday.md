@@ -5,6 +5,7 @@ type: component
 title: Datovælger (datepicker)
 category: Udvidelser_category
 subcategory: Udvidelser
+pikaday: true
 lead: Gør det muligt for brugeren, at vælge en dato ved klik på knap.
 alerts:
 - type: warning

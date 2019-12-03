@@ -4,7 +4,7 @@ parent: Formcontrols
 order: 07
 ---
 
-{% include code/preview.html component="file-input" %}
+{% include code/preview.html component="file-input" title="Eksempel på vedhæft fil" %}
 {% include code/accordion.html component="file-input" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

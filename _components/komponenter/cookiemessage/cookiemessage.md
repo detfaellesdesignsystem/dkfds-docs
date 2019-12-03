@@ -14,7 +14,7 @@ lead: Cookiemeddelelsen vises i bunden af siden, og følger med, når man scroll
         </p>
     </div>
 </div>
-{% include code/preview.html component="cookie-message" %}
+{% include code/preview-iframe.html component="cookie-message" %}
 {% include code/accordion.html component="cookie-message" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

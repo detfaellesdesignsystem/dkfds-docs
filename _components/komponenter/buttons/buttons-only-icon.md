@@ -4,7 +4,7 @@ parent: Buttons
 order: 06
 lead: 
 ---
-{% include code/preview.html component="buttons-only-icon" %}
+{% include code/preview.html component="buttons-only-icon"  title="Eksempel på knap som ikon" %}
 {% include code/accordion.html component="buttons-only-icon" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

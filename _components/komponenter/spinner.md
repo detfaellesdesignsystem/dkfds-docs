@@ -8,7 +8,7 @@ subcategory: Komponenter
 lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 ---
 
-{% include code/preview.html component="spinner" %}
+{% include code/preview.html component="spinner"  title="Eksempel på spinner komponent" %}
 {% include code/accordion.html component="spinner" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

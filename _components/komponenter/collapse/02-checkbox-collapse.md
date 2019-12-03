@@ -5,7 +5,7 @@ order: 02
 lead: 
 ---
 
-{% include code/preview.html component="checkbox-toggle-content" %}
+{% include code/preview.html component="checkbox-toggle-content" title="Eksempel på skjul/vis med tjekbokse" %}
 {% include code/accordion.html component="checkbox-toggle-content" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

@@ -46,7 +46,7 @@ subnav:
 </section>
 
 <h2 id="nyhedsbadges">Nyhedsbadges</h2>
-{% include code/preview.html component="badges" %}
+{% include code/preview.html component="badges" title="Eksempel på badges" %}
 {% include code/accordion.html component="badges" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

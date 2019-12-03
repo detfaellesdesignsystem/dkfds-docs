@@ -7,7 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 lead: "Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere ser de skjulte sektioner, når du anvender faneblade."
 ---
-{% include code/preview.html component="tabnav" %}
+{% include code/preview.html component="tabnav" title="Eksempel på faneblad" %}
 {% include code/accordion.html component="tabnav" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

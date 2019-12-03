@@ -42,7 +42,7 @@ subnav:
   </ul>
 </section>
 <h2 id="standard">Standard</h2>
-{% include code/preview.html component="accordion" %}
+{% include code/preview.html component="accordion" title="Eksempel på accordion" %}
 {% include code/accordion.html component="accordion" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
@@ -63,7 +63,7 @@ subnav:
 </div>
 
 <h2 id="tilfoej-ramme">Tilføj ramme</h2>
-{% include code/preview.html component="accordion-border" %}
+{% include code/preview.html component="accordion-border" title="Eksempel på accordion med ramme" %}
 {% include code/accordion.html component="accordion-border" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
@@ -76,7 +76,7 @@ subnav:
 </div>
 
 <h2 id="tillad-mere-end-en-aaben-accordion">Tillad mere end én åben accordion</h2>
-{% include code/preview.html component="accordion-multi" %}
+{% include code/preview.html component="accordion-multi" title="Eksempel på accordion, hvor flere kan være åbne på samme tid" %}
 {% include code/accordion.html component="accordion-multi" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

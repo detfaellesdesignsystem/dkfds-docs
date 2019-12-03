@@ -6,7 +6,7 @@ lead:
 ---
 
 
-{% include code/preview.html component="select" classes="preview-dropdown" %}
+{% include code/preview.html component="select" classes="preview-dropdown" title="Eksempel på dropdown-menu" %}
 {% include code/accordion.html component="select" %}
 <div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"

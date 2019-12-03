@@ -4,6 +4,7 @@ layout: styleguide
 type: component
 title: Multiselect dropdown
 category: Udvidelser_category
+select2: true
 subcategory: Udvidelser
 lead: Gør det muligt for brugeren at vælge flere elementer fra en liste.
 alerts:

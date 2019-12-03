@@ -7,7 +7,7 @@ category: Komponenter_category
 lead: Tilbage link bruges til at linke tilbage til forrige side i en løsning.
 subcategory: Komponenter
 ---
-{% include code/preview.html component="back-link" %}
+{% include code/preview.html component="back-link" title="Eksempel på tilbage link" %}
 {% include code/accordion.html component="back-link" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

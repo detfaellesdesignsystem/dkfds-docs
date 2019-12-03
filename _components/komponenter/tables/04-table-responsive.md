@@ -5,7 +5,7 @@ order: 04
 lead: 
 ---
 
-{% include code/preview.html component="table--responsive" %}
+{% include code/preview.html component="table--responsive" title="Eksempel på responsiv tabel" %}
 {% include code/accordion.html component="table--responsive" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

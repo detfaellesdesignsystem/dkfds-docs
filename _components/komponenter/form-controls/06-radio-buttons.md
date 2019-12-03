@@ -5,7 +5,7 @@ order: 06
 lead: 
 ---
 
-{% include code/preview.html component="radiobutton" %}
+{% include code/preview.html component="radiobutton"  title="Eksempel på radioknapper" %}
 {% include code/accordion.html component="radiobutton" %}
 <div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"

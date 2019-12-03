@@ -4,7 +4,7 @@ parent: Buttons
 order: 04
 lead: 
 ---
-{% include code/preview.html component="buttons-back" %}
+{% include code/preview.html component="buttons-back" title="Eksempel på tilbageknap"  %}
 {% include code/accordion.html component="buttons-back" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

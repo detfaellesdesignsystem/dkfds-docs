@@ -6,7 +6,7 @@ lead:
 ---
 
 
-{% include code/preview.html component="checkbox" %}
+{% include code/preview.html component="checkbox"  title="Eksempel på tjekbokse" %}
 {% include code/accordion.html component="checkbox" %}
 <div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"

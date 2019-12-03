@@ -10,9 +10,9 @@ lead: Brug <code>fieldset</code> til at strukturere indholdet i mindre grupperin
 </section>
 
 <h3>Simpel formularstruktur</h3>
-{% include code/preview.html component="fieldset" %}
+{% include code/preview.html component="fieldset" title="Eksempel på formularstruktur"  %}
 {% include code/accordion.html component="fieldset" %}
 
 <h3>Kompleks formularstruktur</h3>
-{% include code/preview.html component="fieldset-complex" %}
+{% include code/preview.html component="fieldset-complex"  title="Eksempel på kompleks formularstruktur" %}
 {% include code/accordion.html component="fieldset-complex" %}
