@@ -9,8 +9,8 @@ title: Cookie-message.html
             <div class="card-text pt-6 pl-6 pr-6 pb-0">
                 <p class="mt-0 mb-0">
                     Vi indsamler statistik ved hjælp af cookies. Alle
-                    indsamlede data anonymiseres. Ved at fortsætte
-                    accepterer du <a href="#">vores brug af cookies</a>.
+                    indsamlede data anonymiseres. Læs mere om <a
+                        href="#">vores brug af cookies</a>.
                 </p>
             </div>
             <div class="card-action pb-6 pl-6 pr-6">
