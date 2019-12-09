@@ -19,7 +19,7 @@ description: Information om Det Fælles Designsystem, der retter sig mod designe
 </div>
 <p>
     <span class="bold">Figma</span><br />
-    <a href="https://www.figma.com/file/ULyQcXMQFHgGyoiAOcBQJn/FDS-UI-komponenter?node-id=48%3A3" class="icon-link">Se designet på Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+    <a href="https://www.figma.com/file/ULyQcXMQFHgGyoiAOcBQJn/FDS-UI-komponenter?node-id=48%3A3" class="icon-link">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 </p>
 <p>
     <span class="bold">Sketch</span><br />
