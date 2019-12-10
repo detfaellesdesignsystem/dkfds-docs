@@ -60,4 +60,3 @@ description: "Det Fælles Designsystem (FDS) er bygget op omkring en agil govern
 <p>Teamet afrapporterer desuden løbende om fremdrift og status på udviklingen af designsystemet til styregruppen.</p>
 <h3 class="h5">Teamets sammensætning</h3>
 <p>FDS-teamet består af medarbejdere, fra hhv. Digitaliseringsstyrelsen/borger.dk og Erhvervsstyrelsen/Virk, der dedikerer en vis mængde tid til support, drift, videreudvikling og sekretariatsbetjening i FDS regi ugentligt. Teamet er udgjort af user experience designere og sekretariatsmedarbejdere, samt en product owner. Derudover er der tilknyttet en fast frontend-udvikler, der står for fejlrettelser og optimering af koden, udvikling af nye komponenter og dokumentationssiden samt teknisk support.</p>
-
