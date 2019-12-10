@@ -3,8 +3,10 @@ permalink: /komponenter/
 layout: styleguide
 title: Komponenter
 category: Komponenter_category
-lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjeningsløsninger. Designsystemet gør det let og hurtigt at bygge løsninger, som er konsistente og logiske for brugeren. 
 ---
+<p class="font-lead">Komponenterne i designsystemet er genanvendelige enheder, der kan sættes sammen på mange forskellige måder, i forskellige mønstre, for at bygge den selvbetjeningsløsninger, dine brugere har brug for.</p>
+<p class="font-lead">Ved at anvende komponenterne bliver det let og hurtigt at bygge løsninger, som er konsistente og logiske for brugeren på tværs af borger.dk og Virk.</p>
+
 <ul class="d-md-none">
     <li><a href="/komponenter/accordions/" class="bold-link">Accordions</a></li>
     <li><a href="/komponenter/badges/" class="bold-link">Badges</a></li>
