@@ -15,7 +15,6 @@ subcategory: Komponenter
     Implementering
   </button>
   <div id="documentation-backlink" class="accordion-content">
-    <p>Linket placeres øverst på siden, over <code>h1</code>.</p>
-    <p>Se eksempel på implementering på vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a></p>   
+    <p>Linket i headeren, se eksempel på implementering i vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a></p>   
   </div>
 </div>
