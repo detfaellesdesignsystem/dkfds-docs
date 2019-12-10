@@ -15,6 +15,7 @@ subcategory: Komponenter
     Implementering
   </button>
   <div id="documentation-backlink" class="accordion-content">
-    <p>Linket placeres i headeren, se eksempel på implementering i vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a></p>   
+    <p>Linket placeres i headeren, se eksempel på implementering i vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a></p>
+    <p>Bemærk, at tilbage linket stadig skal være synligt ved mobilvisning.</p>   
   </div>
 </div>
