@@ -30,7 +30,7 @@ lead: "Vi tager gerne i mod rettelser og tilføjelser til beskrivelserne på den
 </pre>
     <h3>Implementer JavaScript</h3>
     <p>Javascript kan implementeres på mange måder, og meget afhænger af projektets opbygning, og hvor komponenterne er placeret.</p>
-    <p>Man kan vælge at initere alle typer af komponenter på én gang med <code>DKFDS.init()</code>, eller man kan vælge at initere en komponent enkeltvis fx <code>new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code></p>
+    <p>Man kan vælge at initiere alle typer af komponenter på én gang med <code>DKFDS.init()</code>, eller man kan vælge at initere en komponent enkeltvis fx <code>new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code></p>
     <p>Eksempel på implementering i AppComponent:</p>
 <pre>
 import {Component, OnInit} from '@angular/core';
