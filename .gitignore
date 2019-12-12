@@ -11,11 +11,6 @@ npm-debug.log
 .idea/
 # Preview components are fetched and generated from components repository
 _preview-components
-
-# Assets are generated during building process
-assets
-!docs/assets
-
 pdf
 docs/puppeteer.js
 

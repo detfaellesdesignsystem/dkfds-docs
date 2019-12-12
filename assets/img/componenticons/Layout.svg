@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="140px" viewBox="0 0 152 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Layout-with-dropshadow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer_Ver02" transform="translate(-876.000000, -462.000000)" fill-rule="nonzero">
+            <g id="Layout" transform="translate(876.000000, 462.000000)">
+                <rect id="Rectangle-6" fill="#FFFFFF" x="0" y="0" width="152" height="140"></rect>
+                <rect id="Rectangle-6" fill="#1A1A1A" x="0" y="0" width="152" height="16"></rect>
+                <rect id="Rectangle-6" fill="#DCDCDC" x="12" y="28" width="128" height="36"></rect>
+                <polygon id="Rectangle-6" fill="#DCDCDC" points="12 72 72 72 72 96 12 96"></polygon>
+                <polygon id="Rectangle-6" fill="#DCDCDC" points="80 72 140 72 140 96 80 96"></polygon>
+                <polygon id="Rectangle-6" fill="#DCDCDC" points="12 104 72 104 72 128 12 128"></polygon>
+                <polygon id="Rectangle-6" fill="#DCDCDC" points="80 104 140 104 140 128 80 128"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

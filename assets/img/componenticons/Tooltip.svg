@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="64px" viewBox="0 0 152 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Tooltip-with-dropshadow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer_Ver02" transform="translate(-876.000000, -2679.000000)" fill-rule="nonzero">
+            <g id="Tooltip" transform="translate(876.000000, 2679.000000)">
+                <path d="M6,4.54747351e-13 L146,4.54747351e-13 C149.313708,4.54138633e-13 152,2.6862915 152,6 L152,50 C152,53.3137085 149.313708,56 146,56 L25.4086914,56 L18.9221191,63.3205566 L12.5532227,56 L6,56 C2.6862915,56 1.11428115e-13,53.3137085 1.11022302e-13,50 L0,6 C-4.05812251e-16,2.6862915 2.6862915,4.55356069e-13 6,4.54747351e-13 Z" id="Rectangle-23" fill="#FFFFFF"></path>
+                <rect id="Rectangle-10" fill="#DCDCDC" x="16" y="32" width="80" height="8"></rect>
+                <rect id="Rectangle-10" fill="#DCDCDC" x="16" y="16" width="120" height="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
