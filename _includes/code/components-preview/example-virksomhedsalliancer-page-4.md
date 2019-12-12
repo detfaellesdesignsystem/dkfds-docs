@@ -87,7 +87,7 @@ title: Example-virksomhedsalliancer-page-4.html
                 <button class="button-overflow-menu js-dropdown "
                     data-js-target="#overflow4" aria-haspopup="true"
                     aria-expanded="false">
-                    Trin 4 af 6
+                    Trin 4 af 5
                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
@@ -134,12 +134,6 @@ title: Example-virksomhedsalliancer-page-4.html
                             <a href="javascript:void(0)" tabindex="-1"
                                 aria-disabled="true">
                                 5. Opsummering
-                            </a>
-                        </li>
-                        <li class="disabled">
-                            <a href="javascript:void(0)" tabindex="-1"
-                                aria-disabled="true">
-                                6. Kvittering
                             </a>
                         </li>
                     </ul>
