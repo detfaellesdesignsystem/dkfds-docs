@@ -7,7 +7,7 @@ jobs:
     - checkout
     - run: npm install
     - run: bundle install
-    - run: bundle exec jekyll build
+    - run: bundle exec jekyll build && gulp publish
     - deploy:
         name: Deploy Release to GitHub
         command: |
