@@ -19,7 +19,7 @@ subnav:
   href: "#tillad-mere-end-en-aaben-accordion"
 
 ---
-<h2 class="h3">Retningslinjer davs</h2>
+<h2 class="h3">Retningslinjer dssssavs</h2>
 <section>
 <h3 class="h4">Tilgængelighed</h3>
 <ul>
