@@ -1,27 +1,30 @@
 ---
-permalink: /komponenter/accordions/
+permalink: "/komponenter/accordions/"
 layout: styleguide
 type: component
 title: Accordions
 category: Komponenter_category
 subcategory: Komponenter
-lead: En accordion er et grafisk element, som du kan bruge til vise indhold med. Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.
+lead: En accordion er et grafisk element, som du kan bruge til vise indhold med. Accordions
+  bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion
+  folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen
+  igen.
 anchor: true
 subnav:
 - text: Standard
-  href: '#standard'
+  href: "#standard"
 - text: Tilføj ramme
-  href: '#tilfoej-ramme'
+  href: "#tilfoej-ramme"
 - text: Tillad mere end én åben accordion
-  href: '#tillad-mere-end-en-aaben-accordion' 
----
+  href: "#tillad-mere-end-en-aaben-accordion"
 
+---
 <h2 class="h3">Retningslinjer</h2>
 <section>
   <h3 class="h4">Tilgængelighed</h3>
   <ul>
       <li>Accordions bliver automatisk fremhævet, når brugere ved hjælp af tabulatortasten navigerer sig frem til dem.</li>
-      <li>Accordions er en del af den anbefalede løsning, men vi anbefaler, at du anvender dem i begrænset omfang. En stor del af brugerne ser kun overskrift på accordion (aktive tekst) og opdager ikke det underliggende indhold.</li>
+      <li>Accordions er en del af den anbefalede løsning, men vi anbefaler, at du anvender dem i begrænset omfang. En stor del af brugerne ser kun overskrift på accordion (aktive tekst) og opdager ikke det underliggende indholdssssss.</li>
   </ul>
 </section>
 <section>
