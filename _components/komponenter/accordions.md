@@ -24,7 +24,7 @@ subnav:
   <h3 class="h4">Tilgængelighed</h3>
   <ul>
       <li>Accordions bliver automatisk fremhævet, når brugere ved hjælp af tabulatortasten navigerer sig frem til dem.</li>
-      <li>Accordions er en del af den anbefalede løsning, men vi anbefaler, at du anvender dem i begrænset omfang. En stor del af brugerne ser kun overskrift på accordion (aktive tekst) og opdager ikke det underliggende indholdssssss.</li>
+      <li>Accordions er en del af den anbefalede løsning, men vi anbefaler, at du anvender dem i begrænset omfang. En stor del af brugerne ser kun overskrift på accordion (aktive tekst) og opdager ikke det underliggende indholdsssss.</li>
   </ul>
 </section>
 <section>
