@@ -14,8 +14,8 @@ subnav:
   href: '#beskeder-med-ikon'
 - text: Forskellige teksteksempler
   href: '#forskellige-teksteksempler'
-- text: Beskeder med lukknap
-  href: '#beskeder-med-lukknap'
+- text: Beskeder med luk knap
+  href: '#beskeder-med-luk-knap'
 ---
 <h2 class="h3">Retningslinjer</h2>
 <section>
@@ -35,7 +35,7 @@ subnav:
     <h3 class="h5">Anvendes ikke til</h3>
         <ul>
             <li>Brug ikke beskeder til at markere fejlindtastning i et specifikt felt.</li>
-            <li>Brug modaldialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.</li>
+            <li>Brug modal dialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.</li>
         </ul>
     <h3 class="h5">Vejledning</h3>
     <ul>

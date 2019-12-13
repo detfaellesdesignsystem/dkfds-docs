@@ -12,14 +12,14 @@ subcategory: Kom i gang
             <li>Stræb efter at lave en tydelig og korrekt kode</li>
             <li>Sørg for at brugeren kan navigere på siden inklusive eventuelle modalvinduer via tab-tasten.</li>
             <li>Brug <a href="https://www.w3.org/WAI/standards-guidelines/aria/" class="icon-link">ARIA<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor det giver mening og øget tilgængelighed.</li>
-            <li>Designsystemets farvekombinationer sikrer, at kontrastforholdet efterlever WCAG 2.1 (2019). Dobbelttjek andre farver med WebAIM’s <a href="https://webaim.org/resources/contrastchecker/" class="icon-link">contrast checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+            <li>Designsystemets farvekombinationer sikrer, at kontrastforholdet efterlever WCAG 2.1 (2019). Dobbelttjek andre farver med WebAIMs <a href="https://webaim.org/resources/contrastchecker/" class="icon-link">contrast checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
             <li>Anvend skip-links på elementer, der gentages fra side til side (header, topmenu, footer).</li>
             <li>Angiv meningsgivende overskrifter, labels, alternativ tekst, summary, title og description på alle elementer, der har det som mulighed.</li>
             <li>Anmod om dokumentation for behovet for en foreslået kompleks løsning, og tilbyd altid brugeren et alternativ til indhold, du ikke umiddelbart kan gøre tilgængeligt.</li>
             <li>En selvbetjeningsløsning er ikke tilgængelig bare fordi den er responsiv og mobile-first. Løsningen skal også fungere ensartet og tilbyde samme indhold på tværs af platforme.</li>
         </ul>
         <p class="mt-6"><a href="https://www.socialdigital.dk/wp-content/uploads/Tilg%C3%A6ngeligt-digitalt-design-Social-Digital.pdf" class="icon-link">Tjek også denne do's & don'ts liste ud (åbner som pdf)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
-        <p>Har du andre tilgængelighedsressourcer du synes vi bør dele i fællesskabet så skriv til os via github eller på mail.</p>        
+        <p>Har du andre tilgængelighedsværktøj man kan bruge ved udvikling, som du synes vi bør dele i fællesskabet så skriv til os via Github eller på mail.</p>        
         <h3>Hvorfor tilgængelighed?</h3>
         <p>Selvbetjeningsløsninger og alle andre offentlige hjemmesider skal overholde den danske lovgivning omkring tilgængelighed på WCAG 2.1 (2019) niveau AA. Du skal teste alle løsninger og deres funktioner op imod disse krav, som ikke blot øger tilgængeligheden for brugere med særlige behov, men for alle brugere.</p>
         <p>Alt det, du udvikler i og til Det Fælles Designsystem, skal således leve op til lovkravene om at understøtte WCAG 2.1 (2019) på AA niveau.</p>

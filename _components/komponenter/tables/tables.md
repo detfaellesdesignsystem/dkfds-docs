@@ -14,7 +14,7 @@ subnav:
   href: '#standard'
 - text: Uden ramme
   href: '#uden-ramme'
-- text: Zebralinier
+- text: Zebralinjer
   href: '#zebralinier'
 - text: Responsiv
   href: '#responsiv'

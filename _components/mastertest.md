@@ -226,7 +226,7 @@ title: Test
   {% include code/preview.html component="table" %}
   <h3>Uden ramme</h3>
   {% include code/preview.html component="table--borderless" %}
-  <h3>Zebralinier</h3>
+  <h3>Zebralinjer</h3>
   {% include code/preview.html component="table--bordered-zebra" %}
   <h3>Responsiv</h3>
   {% include code/preview.html component="table--responsive" %}

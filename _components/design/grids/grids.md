@@ -27,7 +27,7 @@ subnav:
 ---
 <section class="section">
     <h2 id="thegridsystem">Introduktion</h2>
-    <p>Gridsystemet bruger containere, rækker og kolonner til at opbygge sider. Gridsystemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af gridsystemet.</p>
+    <p>Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-systemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af grid-systemet.</p>
     {% include code/preview-iframe.html component="grid--how-it-works" %}
     {% include code/accordion.html component="grid--how-it-works" %}
     <p>Eksemplet ovenfor viser tre kolonner som har samme bredde på både mobil, tablet og desktop.</p>
@@ -140,7 +140,7 @@ subnav:
 
 <section class="section">
     <h2 id="reordering">Rækkefølge</h2>
-    <h3>Order-klasser</h3>
+    <h3>Klasser (classes)</h3>
     <p>Brug klasserne <code>.order-</code> til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx <code>.order-1.order-md-2</code>).</p>
 
     {% include code/preview.html component="grid--ordering-visual" %}

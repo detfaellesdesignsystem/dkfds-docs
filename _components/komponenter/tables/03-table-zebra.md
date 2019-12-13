@@ -1,5 +1,5 @@
 ---
-title: Zebralinier
+title: Zebralinjer
 parent: Tables
 order: 03
 lead: 

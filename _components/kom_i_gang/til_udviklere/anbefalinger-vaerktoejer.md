@@ -88,7 +88,7 @@ subnav:
     <li>Forkort den kritiske vej for browseren, når den skal indlæse en løsning.</li>
     <li>Sørg for, at der er så få forespørgsler fra browseren til serveren, som muligt.</li>
     <li>Minimér antallet af kritiske ressourcer og indlæs kun en udvidelse på de sider, den vedrører.</li>
-    <li>Anvend asynkron og prioriteret indlæsning af ressourcer og forbered browserens indlæsning, hvor det er muligt, fx ved hjælp af preconnect og preload.</li>
+    <li>Anvend asynkron og prioriteret indlæsning af ressourcer og forbered browserens indlæsning, hvor det er muligt, fx ved hjælp af <code>preconnect</code> og <code>preload</code>.</li>
     <li>Indlæs data/kode i baggrunden, hvis det kan forudses, hvilken side brugeren skal besøge ved næste klik.</li>
     <li>Pak al kode, så det fylder minimalt på alle niveauer af løsningen. </li>
     <li>Minimér brugen af CSS og JS, så browsere kun indlæser det, der er absolut nødvendigt.</li>
@@ -227,12 +227,12 @@ subnav:
     <li><a href="https://www.sitepoint.com/how-and-why-you-should-inline-your-critical-css/" class="icon-link">How and why you should inline your critical css<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 <h3>Preload af ressourcer</h3>
-<p>Du kan forberede browseren på at indlæse og beregne din selvbetjeningsløsning ved at anvende preconnect og preload i <code>head</code>.</p>
+<p>Du kan forberede browseren på at indlæse og beregne din selvbetjeningsløsning ved at anvende <code>preconnect</code> og <code>preload</code> i <code>head</code>.</p>
 <p>Når browseren først åbner forbindelse til en given server og derefter laver en tidlig indlæsning af en ressource, kan den senere hurtigt beregne eksempelvis layout. Bemærk, at browseren ikke anvender ressourcerne, når den åbner dem, men kun gør dem klar. Det kaldes også ”lazy load”.</p>
 <p>Lazy load egner sig i særdeleshed til CSS og JS-filer, men du kan også det til andre ressourcer, fx en grafik, der er vigtig for anvendelsen af løsningen. Lazy load fungerer således:</p>
 <ul>
-    <li><strong>Preconnect</strong> kontakter den server, der forventes at skulle levere en given ressource. Det kunne være en CDN (Content Delivery Network). Dermed er forbindelsen åben.</li>
-    <li><strong>Preload</strong> beder browseren indlæse en ressource asynkront (lazy loading), så den er klar til brug, men uden at anvende den, før det er påkrævet.</li>
+    <li><code>Preconnect</code> kontakter den server, der forventes at skulle levere en given ressource. Det kunne være en CDN (Content Delivery Network). Dermed er forbindelsen åben.</li>
+    <li><code>Preload</code> beder browseren indlæse en ressource asynkront (lazy loading), så den er klar til brug, men uden at anvende den, før det er påkrævet.</li>
 </ul>
 <h4 class="h5">Læs mere om preload her</h4>
 <ul>

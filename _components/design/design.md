@@ -4,9 +4,9 @@ layout: styleguide
 title: Design
 category: Design_category
 ---
-<p class="font-lead">Designet er målrettet selvbetjeningsløsninger der skal på borger.dk og Virk. Det visuelle udtryk, stylingen, skal understøtte brugervenlighed i selvbetjeningsløsninger.</p>
+<p class="font-lead">Designet er målrettet selvbetjeningsløsninger der skal på borger.dk og Virk. Det visuelle udtryk skal understøtte brugervenlighed i selvbetjeningsløsninger.</p>
 <p class="font-lead">Hvis du anvender designsystemets kode følger designets styling automatisk med.</p>
-<p class="font-lead">Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbetjeningsløsning imiterer stylingen, så din selvbetjeningsløsning passer til borger.dk og Virk.</p>
+<p class="font-lead">Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbetjeningsløsning imiterer designet, så din selvbetjeningsløsning passer til borger.dk og Virk.</p>
 <ul class="d-md-none">
     <li><a href="/design/farver/" class="bold-link">Farver</a></li>
     <li><a href="/design/typography/" class="bold-link">Fonte og Typografi</a></li>

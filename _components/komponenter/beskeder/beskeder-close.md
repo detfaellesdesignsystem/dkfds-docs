@@ -1,5 +1,5 @@
 ---
-title: Beskeder med lukknap
+title: Beskeder med luk knap
 parent: Beskeder
 order: 04
 lead: 

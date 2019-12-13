@@ -17,7 +17,6 @@ lead:
         <h3 class="h4">Tilgængelighed</h3>
         <ul>
             <li>Indsæt altid to eller flere radioknapper i et fieldset inklusive legend.</li>
-            <li>Tilknyt label til hver radioknap. Erstat eventuelt label med title-attributten.</li>
             <li>Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.</li>
             <li>Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</li>
             <li>Radioknappernes er gjort tilgængelige for skærmlæsere, på trods af deres visuelle design, ved at selve checkbox tagget er placeret uden for det synlige skærmområde.</li>

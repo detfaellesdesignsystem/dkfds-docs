@@ -161,7 +161,7 @@ subnav:
     <li>Fjernet farve på small-text mixin.</li>
     <li>Tilpasset positionering af ikon på knapper.</li>
     <li>Fikset fejl i input felter, hvor specialtegn (Å, Ö, Ä etc.) ikke blev vist korrekt.</li>
-    <li>Tilføjet eksempel på lukknap i <a href="/komponenter/beskeder/#beskeder-med-lukknap">Beskeder</a>.</li>
+    <li>Tilføjet eksempel på luk knap i <a href="/komponenter/beskeder/#beskeder-med-luk-knap">Beskeder</a>.</li>
     <li><label class="color-info badge badge-small mr-3">Change</label>Tilføjet mulighed for at <a href="/komponenter/cards/#cards-med-samme-højde">positionere action knapper i cards</a> i bunden.</li>
     <li>Fikset fejl ved print af eksempelløsninger i Firefox - tilføjet yderligere print CSS.</li>
 </ul>
@@ -178,7 +178,7 @@ subnav:
 <p class="small-text mt-0">24-05-2019</p>
 <ul>
     <li>Fjernet primærfarven på tekst i aktivt menupunkt i header.</li>
-    <li>Tilføjet klassen inline-svg, som kan bruges på ikoner, der skal fremgå i tekst, således at de matcher teksthøjden.</li>
+    <li>Tilføjet klassen <code>inline-svg</code>, som kan bruges på ikoner, der skal fremgå i tekst, således at de matcher teksthøjden.</li>
     <li>Ændret afstand fra label til read-only felt.</li>
     <li>Ændret JavaScript, der håndterer regex maske på dato felt, således at man nu kan bruge copy/paste igen.
         <ul>    
@@ -345,7 +345,7 @@ subnav:
     </li>
     <li class="mt-4">
       Ny max-width styling
-      <p class="form-hint mt-0">Klassen '.content' er fjernet. Max-width stylingen er nu kodet direkte til p, font-lead etc.</p>
+      <p class="form-hint mt-0">Klassen '.content' er fjernet. Max-width style er nu kodet direkte til p, font-lead etc.</p>
     </li>
     <li class="mt-4">
       Sidenavigation i bunden af eksempelsiderne:

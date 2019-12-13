@@ -94,7 +94,7 @@ $icons-folder-path: '~dkfds/src/img/svg-icons';
 
 
 <h4>Fix for bug i Microsoft Edge og Internet Explorer</h4>
-<p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje stylingen direkte i <code>head</code> sektionen.</p>
+<p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i <code>head</code> sektionen.</p>
 ```shell
   <style>
     /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. */   
