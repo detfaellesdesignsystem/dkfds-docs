@@ -9,7 +9,7 @@ rm -R _site/
 rm -R node_modules
 
 git add -fA
-git commit --allow-empty -m "$(git log -1 --pretty=%B)"
+git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 git push origin master
 
 echo "deployed successfully"
