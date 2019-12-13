@@ -30,9 +30,23 @@ document.addEventListener("DOMContentLoaded", function(){
         // handle theme selector on demo pages
         initDemoThemeSelector();
 
-
         setScreenshots();
+
+        setHomepageIllustration();
 });
+
+let setHomepageIllustration = function(){
+    let illustration = document.getElementById('designsystem-illustration');
+    if(illustration !== null){
+        if(getThemeCookie() === "virk"){
+            illustration.setAttribute('src', "/img/descriptionimages/Forside_illu_virk.svg");
+        } else if(getThemeCookie() === "borgerdk"){
+            illustration.setAttribute('src', "/img/descriptionimages/Forside_illu_borger.svg");
+        }else{
+            illustration.parentNode.removeChild(illustration);
+        }
+    }
+};
 
 let isThemeSetInUrl = function(){
     let parameters = window.location.search.substr(1);

@@ -4,7 +4,7 @@ layout: landing
 title: Forside
 description: Vær med til at bygge simple og effektive selvbetjeningsløsninger fra et solidt grundlag, der lader dig fokusere på brugervenlighed og brugerinddragelse frem for at diskutere nyt design igen og igen.
 ---
-<div class="bg-turquoise py-9">
+<div class="bg-alternative py-9">
     <div class="container">
         <div class="row">
           <div class="col-12 col-lg-7">
@@ -22,7 +22,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             </ul>
           </div>
           <div class="col-12 col-lg-5 align-text-center">
-            <img src="{{ site.baseurl }}/img/descriptionimages/Main_Illustration.svg" alt="" class="d-none d-lg-inline-block">
+            <img id="designsystem-illustration" src="{{ site.baseurl }}/img/descriptionimages/Forside_illu_virk.svg" alt="" class="d-none d-lg-inline-block">
           </div>
         </div>
     </div>
