@@ -7,11 +7,11 @@ jobs:
     - checkout
     - run: npm install
     - run: bundle install
-    - run: npm run netlify
+    - run: npm run deploy
     - deploy:
         name: Deploy Release to GitHub
         command: |
-            bash .circleci/setup-github.sh
+          bash .circleci/setup-github.sh
 workflows:
   version: 2
   build:
