@@ -2,7 +2,6 @@
 title: Forskellige teksteksempler 
 parent: Beskeder
 order: 03
-lead: 
+component: alerts-texts
+componentTitle: "Eksempel på besked i forskellige formater"
 ---
-{% include code/preview.html component="alerts-texts"  title="Eksempel på besked i forskellige formater" %}
-{% include code/accordion.html component="alerts-texts" %}

@@ -2,7 +2,6 @@
 title: Beskeder med luk knap
 parent: Beskeder
 order: 04
-lead: 
+component: alerts-close
+componentTitle: "Eksempel på besked med luk-knap"
 ---
-{% include code/preview.html component="alerts-close"  title="Eksempel på besked med luk-knap" %}
-{% include code/accordion.html component="alerts-close" %}

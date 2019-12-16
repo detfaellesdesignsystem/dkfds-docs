@@ -2,10 +2,9 @@
 title: Vedhæft fil
 parent: Buttons
 order: 07
-lead: 
+component: buttons-fileupload
+componentTitle: "Eksempel på vedhæft fil"
 ---
-{% include code/preview.html component="buttons-fileupload" title="Eksempel på vedhæft fil"  %}
-{% include code/accordion.html component="buttons-fileupload" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tech-filebutton">
     Implementering

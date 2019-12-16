@@ -47,4 +47,4 @@ subnav:
     </ul>
 </section>
 
-{% include child-sections.html parent='Beskeder' %}
+{% include child-components.html parent='Beskeder' %}

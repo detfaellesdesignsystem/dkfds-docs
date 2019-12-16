@@ -2,10 +2,9 @@
 title: Ikon som knap
 parent: Buttons
 order: 06
-lead: 
+component: buttons-only-icon
+componentTitle: "Eksempel på knap som ikon"
 ---
-{% include code/preview.html component="buttons-only-icon"  title="Eksempel på knap som ikon" %}
-{% include code/accordion.html component="buttons-only-icon" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="tech-only-icon">

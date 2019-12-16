@@ -77,6 +77,10 @@ exclude:
   - manifest.yml
   - node_modules
   - package.json
+  - example-dumps.js
+  - puppeteer.js
+  - postcss.config.js
+  - package-lock.json
   - gulpfile.js
   - circle.yml
   - javascript #dont watch for changes in javascript folder and scss, webpack handles this...

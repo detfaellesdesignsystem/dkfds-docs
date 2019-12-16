@@ -5,6 +5,10 @@
   {% if child.lead != null %}
     <p class="font-lead">{{ child.lead }}</p>
   {% endif %}
+  {% if child.component %}
+  {% include code/preview.html component=child.component title=child.componentTitle %}
+  {% include code/accordion.html component=child.component %}
+  {% endif %}
   {{ child.content }}
 </section>
 {% endfor %}
