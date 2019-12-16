@@ -2955,7 +2955,6 @@
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
               <li>Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.</li>
-              <li>Tilknyt label til hver tjekboks. Erstat eventuelt label med title-attributten.</li>
               <li>Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.</li>
               <li>Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</li>
               <li>Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.</li>
@@ -3415,6 +3414,82 @@
 
 </section>
 
+<section class="styleguide-child-container content" id="section-/komponenter/form-controls/08-file-input">
+  <h2 id="vedhæft-fil">Vedhæft fil</h2>
+  
+  <div class="component-preview  component-preview-file-input" aria-label="Eksempel på vedhæft fil">
+    <div class="container">
+    <form class="form">
+        <div class="form-group file-input">
+            <label class="form-label" for="fileinput">Vedhæft fil</label>
+            <input type="file" id="fileinput" name="file" />
+        </div>
+    </form>
+</div>
+</div>
+
+<div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-file-input">Kode</button>
+  <div id="code-file-input" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group file-input"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"fileinput"</span><span class="nt">&gt;</span>Vedhæft fil<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"fileinput"</span> <span class="na">name=</span><span class="s">"file"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="file-input-tech">
+    Implementering
+  </button>
+  <div id="file-input-tech" aria-hidden="true" class="accordion-content">
+    <p>Vi anbefaler at bruge det indbyggede input felt til filer <code>type="file"</code> frem for en skræddersyet løsning.</p>
+    <p>Årsagen til dette er:</p>
+      <ul class="content-list">
+      <li>at feltet får fokus, når man tabulerer gennem siden</li>
+      <li>at feltet fungerer ved brug af tastatur</li>
+      <li>at feltet fungerer ved brug af hjælpemidler</li>
+      <li>at feltet fungerer, selv når JavaScript er utilgængeligt.</li>
+    </ul>
+    <p>Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.</p>
+  </div>
+</div>
+
+<div class="accordion accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="file-input-docs">
+    Retningslinjer
+  </button>
+  <div id="file-input-docs" aria-hidden="false" class="accordion-content">
+      <section>
+          <h3 class="h4">Tilgængelighed</h3>
+          <p>Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.</p>
+      </section>
+      <section>
+          <h3 class="h4">Brugervenlighed</h3>
+          <h4 class="h5">Anvendes til</h4>
+          <p>Brug det til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.</p>
+          <h4 class="h5">Vejledning</h4>
+          <ul>
+              <li>Sørg for at brugeren får en positiv respons, når filen er overført.</li>
+              <li>Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil blive accepteret.</li>
+              <li>Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.</li>
+          </ul>
+      </section>
+</div>
+</div>
+
+</section>
+
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/07-date-input">
   <h2 id="datoangivelse">Datoangivelse</h2>
   
@@ -3638,82 +3713,6 @@
       </ul>
       </section>
   </div>
-</div>
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/form-controls/08-file-input">
-  <h2 id="vedhæft-fil">Vedhæft fil</h2>
-  
-  <div class="component-preview  component-preview-file-input" aria-label="Eksempel på vedhæft fil">
-    <div class="container">
-    <form class="form">
-        <div class="form-group file-input">
-            <label class="form-label" for="fileinput">Vedhæft fil</label>
-            <input type="file" id="fileinput" name="file" />
-        </div>
-    </form>
-</div>
-</div>
-
-<div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-file-input">Kode</button>
-  <div id="code-file-input" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group file-input"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"fileinput"</span><span class="nt">&gt;</span>Vedhæft fil<span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"fileinput"</span> <span class="na">name=</span><span class="s">"file"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/form&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="file-input-tech">
-    Implementering
-  </button>
-  <div id="file-input-tech" aria-hidden="true" class="accordion-content">
-    <p>Vi anbefaler at bruge det indbyggede input felt til filer <code>type="file"</code> frem for en skræddersyet løsning.</p>
-    <p>Årsagen til dette er:</p>
-      <ul class="content-list">
-      <li>at feltet får fokus, når man tabulerer gennem siden</li>
-      <li>at feltet fungerer ved brug af tastatur</li>
-      <li>at feltet fungerer ved brug af hjælpemidler</li>
-      <li>at feltet fungerer, selv når JavaScript er utilgængeligt.</li>
-    </ul>
-    <p>Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.</p>
-  </div>
-</div>
-
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="file-input-docs">
-    Retningslinjer
-  </button>
-  <div id="file-input-docs" aria-hidden="false" class="accordion-content">
-      <section>
-          <h3 class="h4">Tilgængelighed</h3>
-          <p>Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.</p>
-      </section>
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <p>Brug det til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.</p>
-          <h4 class="h5">Vejledning</h4>
-          <ul>
-              <li>Sørg for at brugeren får en positiv respons, når filen er overført.</li>
-              <li>Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil blive accepteret.</li>
-              <li>Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.</li>
-          </ul>
-      </section>
-</div>
 </div>
 
 </section>
