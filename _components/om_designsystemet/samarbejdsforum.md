@@ -15,4 +15,4 @@ subcategory: Om designsystemet
 <p><a href="mailto:FDS@erst.dk?subject=Tilmelding%20til%20samarbejdsforum" class="icon-link">Tilmeld/frameld dig og dine kollegaer via mail</a></p>
 </div></div>
 
-<p class="mt-6"><a href="/omdesignsystemet/governance/">Læs om samarbejdsforum</a></p>  </section> </article>
+<p class="mt-6"><a href="/omdesignsystemet/governance/">Læs om Samarbejdsforum</a></p>  </section> </article>
