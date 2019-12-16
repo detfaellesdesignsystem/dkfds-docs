@@ -11,8 +11,8 @@ subnav:
 - text: Standard
   href: "#standard"
 - text: Tilføj ramme
-  href: "#tilfoej-ramme"
+  href: "#tilføj-ramme"
 - text: Tillad mere end én åben accordion
-  href: "#tillad-mere-end-en-aaben-accordion"
+  href: "#tillad-mere-end-én-åben-accordion"
 ---
 {% include child-components.html parent='Accordions' %}
