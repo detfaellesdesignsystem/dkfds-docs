@@ -7,11 +7,11 @@ subcategory: Om designsystemet
 description: Release notes for dkfds
 anchor: true
 subnav:
+- text: Version 5.3.0
+  href: '#version-530'
 - text: Version 5.2.0
   href: '#version-520'
 - text: Version 5.1.0
-  href: '#version-510'
-- text: Version 5.1.1
   href: '#version-510'
 - text: Version 5.0.0
   href: '#version-500'
@@ -43,9 +43,37 @@ subnav:
 <h3 class="h4">Release proces</h3>
 <p>Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens. </p>
 
-<!--<h3 class="h4">Udvikling og test </h3>
-<p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
-
+<h2 class="mb-0" id="version-530">Version 5.3.0</h2>
+<p class="small-text mt-0">16-12-2019</p>
+<ul>
+    <li>
+        <a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.
+    </li>
+    <li>
+        Mere padding i toppen af <a href="/komponenter/headers/#header-medium">navbar indeholdende funktionslink og overflow menu i header</a>.
+    </li>
+    <li>
+        Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.
+    </li>
+    <li>
+        <a href="/design/typography/#lister">Lister</a> har fået nyt udtryk.
+    </li>
+    <li>
+        Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/headers/">header</a> samt <a href="/komponenter/sidenav/">sidenavigationen</a>.
+    </li>
+    <li>
+        Tilføjet mulighed for <a href="/komponenter/form-controls/#radioknap">hjælpetekst på radioknap</a>.
+    </li>
+    <li>
+        Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.
+    </li>
+    <li>
+        Tilpasset retningslinjer for <a href="/komponenter/collapse/#radioknap-skjul-og-vis-indhold">Skjul/vis med radiobuttons</a>.
+    </li>
+    <li>
+        Opdateret <a href="/komigang/tildesignere/">SVG filer</a>, samt tilføjet link til <a href="/komigang/tildesignere/">Figma komponent bibliotek</a>.
+    </li>
+</ul>
 <h2 class="mb-0" id="version-520">Version 5.2.0</h2>
 <p class="small-text mt-0">27-11-2019</p>
 <ul>
