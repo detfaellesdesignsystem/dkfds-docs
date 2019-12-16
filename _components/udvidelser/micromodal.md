@@ -29,7 +29,7 @@ alerts:
     <p>Bemærk, at Micromodal.js fejler i Internet Explorer. For at løse dette skal man inkludere et polyfill - fx <a href="https://www.npmjs.com/package/@babel/polyfill" class="icon-link">@babel/polyfill<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</p>
     <p>Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a></p>
     <p>Stien til filen du skal inkludere for MicroModal er henholdsvis [path-to-plugins-project]/dist/css/dkfds-micromodal-theme.standalone.min.css for CSS filen og ~dkfds-plugins/dist/scss/dkfds-micromodal-theme for SCSS filen.</p>
-    <p>En modal kan åbens ved at sætte følgende attribut på fx en knap: <code>data-micromodal-trigger="modal-id"</code>. Dette vil åbne modalen som har id'et 'modal-id'</p>
+    <p>En modal kan åbnes ved at sætte følgende attribut på fx en knap: <code>data-micromodal-trigger="modal-id"</code>. Dette vil åbne modalen som har id'et 'modal-id'</p>
     <p>En modal kan lukkes ved at sætte følgende attribut på en knap inde i modalen: <code>data-micromodal-close</code>.</p>
     <p>Det er også muligt at åbne og lukke modalen programmatisk via javascript: <code>MicroModal.show('modal-id');</code> og <code>MicroModal.close('modal-id');</code></p>
     <p class="h5">Html struktur af en modal</p>

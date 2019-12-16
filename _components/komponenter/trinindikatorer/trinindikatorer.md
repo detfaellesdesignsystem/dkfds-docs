@@ -67,7 +67,7 @@ subnav:
         </ul>
         <h2 class="h5">Trinindikatoren kan indlejres i en dropdown. Der er her to valgmuligheder:</h2>
         <ul>
-          <li>På alle skærmstørrelser er trinindikatoren indlejret i dropdownen. Dette kræver blot at trinindikatoren er placeret inde i <code>.overflow-menu-inner</code> containeren. Dette er vist i eksemplet "Trinindikator i overflow-menu".</li>
+          <li>På alle skærmstørrelser er trinindikatoren indlejret i <a href="/komponenter/overflowmenu/">overflow menuen</a>. Dette kræver blot at trinindikatoren er placeret inde i <code>.overflow-menu-inner</code> containeren. Dette er vist i eksemplet "Trinindikator i overflow-menu".</li>
           <li>Hvis man ønsker at få vist trinindikatoren på større skærme, men at den bliver vist i en dropdown på mindre skærme, skal <code>.overflow-menu </code> have klassen <code>.overflow-menu--md-no-responsive</code>. Dette er vist i eksemplet "Trinindikator - responsivt i overflow-menu".</li>
         </ul>
     </section>

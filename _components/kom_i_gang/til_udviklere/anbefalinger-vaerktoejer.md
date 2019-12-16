@@ -36,7 +36,7 @@ subnav:
     <li>Tænk modulært, dvs. lav en struktur af de elementer, du har brug for, og brug kun dem.</li>
     <li>Gennemgå altid koden med en kollega for at sikre, at din kode er brugbar.</li>
     <li>Brug formaliserede testmetoder, så du tester koden metodisk og i samme omfang hver gang.</li>
-    <li>Anvend WhatWG til HTML reference og W3C til CSS reference og til at sikre kodens validitet gennem <a href="https://checker.html5.org" class="icon-link">Nu Html Checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://jigsaw.w3.org/css-validator/" class="icon-link">CSS Validation Service<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+    <li>Anvend WHATWG til HTML reference og W3C til CSS reference og til at sikre kodens validitet gennem <a href="https://checker.html5.org" class="icon-link">Nu Html Checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://jigsaw.w3.org/css-validator/" class="icon-link">CSS Validation Service<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
     <li>Undgå unødigt kompliceret funktionalitet.</li>
     <li>Indlæs kun biblioteker (fx jQuery), hvis du skal bruge dem.</li>
     <li>Anvend eksempelkoden i designsystemet som reference for den aktuelle løsning.</li>
@@ -45,11 +45,11 @@ subnav:
 </ul>
 <h2 id="koden">Frontend-kode</h2>
 <h3>HTML og CSS</h3>
-<p>Du skal altid kode selvbetjeningsløsningens brugergrænseflade i valid HTML5, som det er defineret i <a href="https://whatwg.org/" class="icon-link">WhatWG<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+<p>Du skal altid kode selvbetjeningsløsningens brugergrænseflade i valid HTML5, som det er defineret i <a href="https://whatwg.org/" class="icon-link">WHATWG<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 <p>Du skal huske på, at HTML5 er et format i udvikling, og at browseren ikke har ensartet understøttelse. Det er vigtigt, at du tjekker løsningens integritet og browserunderstøttelse i forhold til din målgruppe. Du kan fx anvende <a href="https://caniuse.com/" class="icon-link">Can I use<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> til at kontrollere understøttelsen af det enkelte tag.</p>
 <h4>Læs mere om HTML og CSS</h4>
 <ul class="nobullet-list">
-    <li><a href=" https://whatwg.org/" class="icon-link">WhatWG<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href=" https://whatwg.org/" class="icon-link">WHATWG<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="https://caniuse.com/" class="icon-link">Can I Use<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="http://html5doctor.com/" class="icon-link">HTML5 Doctor<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
     <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="icon-link">A Guide to flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
