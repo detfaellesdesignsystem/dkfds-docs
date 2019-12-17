@@ -333,7 +333,8 @@ var CookiePrompter = (function () {
             html.push('<li class="d-md-inline-block ml-md-4"><a href="#" id="declineCookieButton" class="button button-tertiary">' + config.textNoThanks + '</a></li></ul>');
         }
         if(config.explicitAccept){
-            html.push('<a href="#" class="acceptCookieButton">'+config.textAccept+'</a><a href="#" class="cpDontAcceptBtn">'+config.textDontAccept+'</a>');
+            html.push('<ul class="unstyled-list mt-4"><li class="d-md-inline-block mb-4 mb-md-0"><a href="#" class="button button-secondary acceptCookieButton" id="acceptCookieButton">'+config.textOKbutton+'</a></li>');
+            html.push('<li class="d-md-inline-block ml-md-4"><a href="#" id="declineCookieButton" class="button button-tertiary cpDontAcceptBtn">' + config.textNoThanks + '</a></li></ul>');
         }
         html.push('</div></div></div>');
         var body = document.getElementsByTagName('body')[0];

@@ -43,7 +43,7 @@ title: Example-praktikplads-page-4.html
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
@@ -158,7 +158,8 @@ title: Example-praktikplads-page-4.html
         <div class="mt-6">
 
             <div class="form-group">
-                <label class="form-label " for="id-search-keyword">Søg via
+                <label class="form-label " for="id-search-keyword"
+                    id="form-label-id-search-keyword">Søg via
                     nøgleord</label>
 
                 <input class="form-input  input-width-m " placeholder=""
@@ -190,7 +191,8 @@ title: Example-praktikplads-page-4.html
                         <input id="id-view1" type="radio"
                             name="Vælg visning" value="Elevpoint"
                             class="form-radio   " />
-                        <label for="id-view1" class="">Elevpoint </label>
+                        <label for="id-view1" id="form-label-id-view1"
+                            class="">Elevpoint </label>
 
                     </li>
                     <li>
@@ -198,8 +200,8 @@ title: Example-praktikplads-page-4.html
                         <input id="id-view2" type="radio"
                             name="Vælg visning" value="Aftaleperiode"
                             class="form-radio   " checked />
-                        <label for="id-view2" class="">Aftaleperiode
-                        </label>
+                        <label for="id-view2" id="form-label-id-view2"
+                            class="">Aftaleperiode </label>
 
                     </li>
                 </ul>

@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 const themeAlertId = 'themeAlert';
 const cookieName = 'theme';
 const themes = ['virk', 'borgerdk'];
@@ -14,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function(){
         // show theme alert on pages
         themeAlertMessage();
 
+        // set theme if ?theme=virk|borgerdk
+        isThemeSetInUrl();
+
         // set cookie if missing
         setCookieIfMissing();
 
@@ -24,7 +29,41 @@ document.addEventListener("DOMContentLoaded", function(){
 
         // handle theme selector on demo pages
         initDemoThemeSelector();
+
+        setScreenshots();
+
+        setHomepageIllustration();
 });
+
+let setHomepageIllustration = function(){
+    let illustration = document.getElementById('designsystem-illustration');
+    if(illustration !== null){
+        if(getThemeCookie() === "virk"){
+            illustration.setAttribute('src', "/img/descriptionimages/Forside_illu_virk.svg");
+        } else if(getThemeCookie() === "borgerdk"){
+            illustration.setAttribute('src', "/img/descriptionimages/Forside_illu_borger.svg");
+        }else{
+            illustration.parentNode.removeChild(illustration);
+        }
+    }
+};
+
+let isThemeSetInUrl = function(){
+    let parameters = window.location.search.substr(1);
+    if(parameters === ""){
+        return;
+    }
+    parameters = parameters.split('&');
+    for (let i = 0; i < parameters.length; i++){
+        let split = parameters[i].split('=');
+        let key = split[0];
+        let value = split[1];
+        if(key === "theme" && themes.indexOf(value) >= 0){
+            setThemeCookie(value);
+            return;
+        }
+    }
+}
 
 let setCookieIfMissing = function (){
     if(!isCookieSet()){
@@ -221,5 +260,24 @@ let toggleTheme = function(){
 let debug = function(title, value){
     if(isDebugging){
         console.log(title, value);
+    }
+};
+
+
+let setScreenshots = function(){
+    if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
+        let screenshots = document.getElementsByClassName('screenshot');
+        for(let i = 0; i < screenshots.length; i++){
+            let url = screenshots[i].getAttribute('href').split('/');
+            let filename = getThemeCookie()+'-'+url[url.length-2]+'.PNG';
+            let image = '<img src="/img/examples_pages/'+url[url.length-3]+'/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="w-percent-100 d-block" />';
+            screenshots[i].innerHTML = image;
+        }
+        let galleries = document.getElementsByClassName('screenshot-gallery');
+        if(galleries.length !== 0 ) {
+            for (let g = 0; g < galleries.length; g++) {
+                galleries[g].classList.remove('d-none');
+            }
+        }
     }
 };

@@ -43,7 +43,7 @@ title: Example-virksomhedsalliancer-page-4.html
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
@@ -166,8 +166,8 @@ title: Example-virksomhedsalliancer-page-4.html
             <div class="mt-6">
 
                 <div class="form-group">
-                    <label class="form-label "
-                        for="id-companyalliance">Navn på
+                    <label class="form-label " for="id-companyalliance"
+                        id="form-label-id-companyalliance">Navn på
                         virksomhedsalliance</label>
 
                     <input class="form-input  input-width-m "
@@ -193,6 +193,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                 aria-controls='collapse-radio'
                                 aria-expanded='false' />
                             <label for="id-state-yes"
+                                id="form-label-id-state-yes"
                                 class="radio-large">Ja </label>
 
                             <div id="collapse-radio" aria-hidden="true"
@@ -282,6 +283,7 @@ title: Example-virksomhedsalliancer-page-4.html
                                 name="minimis" value="Nej"
                                 class="form-radio  radio-large " />
                             <label for="id-state-no"
+                                id="form-label-id-state-no"
                                 class="radio-large">Nej </label>
 
                         </li>

@@ -11,4 +11,4 @@ subnav:
 
 ## Installation
 
-En guide til setup af projektet for udvikelre kan findes på [github](https://github.com/FSGpilot/dkfds-docs-components)
+En guide til setup af projektet for udvikelre kan findes på [Github](https://github.com/FSGpilot/dkfds-docs-components)

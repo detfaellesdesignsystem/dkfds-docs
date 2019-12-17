@@ -2,7 +2,6 @@
 title: Standard
 parent: Beskeder
 order: 01
-lead: 
+component: alerts
+componentTitle: "Eksempel på beskeder"
 ---
-{% include code/preview.html component="alerts" %}
-{% include code/accordion.html component="alerts" %}

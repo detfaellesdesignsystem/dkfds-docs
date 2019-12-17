@@ -45,7 +45,7 @@ title: Example-aes-page-2.html
             <div class="solution-info d-print-none">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
                             href="javascript:void(0);"
@@ -165,7 +165,8 @@ title: Example-aes-page-2.html
     <h1>Hvis AES har spørgsmål til sagen</h1>
 
     <div class="form-group">
-        <label class="form-label " for="id-company-contact">Virksomhedens
+        <label class="form-label " for="id-company-contact"
+            id="form-label-id-company-contact">Virksomhedens
             kontaktperson</label>
 
         <input class="form-input  input-width-m "
@@ -180,8 +181,8 @@ title: Example-aes-page-2.html
     <div class="mt-5">
 
         <div class="form-group">
-            <label class="form-label "
-                for="id-company-number">Telefonnummer til
+            <label class="form-label " for="id-company-number"
+                id="form-label-id-company-number">Telefonnummer til
                 kontaktperson</label>
 
             <input class="form-input  input-width-xs " placeholder=""

@@ -2,10 +2,9 @@
 title: Tilbage-knap
 parent: Buttons
 order: 04
-lead: 
+component: buttons-back
+componentTitle: "Eksempel på tilbageknap"
 ---
-{% include code/preview.html component="buttons-back" %}
-{% include code/accordion.html component="buttons-back" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="code-documentation">

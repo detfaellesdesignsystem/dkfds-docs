@@ -1,7 +1,7 @@
 {% assign children = site.components | where: 'parent', include.parent | sort: 'order' %}
 {% for child in children %}
 <section class="styleguide-child-container content" id="section-{{ child.id }}">
-  <h2 id="{{ child.title | slugify }}">{{ child.title }}</h2>
+  <h2 id="{{ child.title | slugify }}" {% if child.headingClass %}class="{{ child.headingClass }}"{% endif %}>{{ child.title }}</h2>
   {% if child.lead != null %}
     <p class="font-lead">{{ child.lead }}</p>
   {% endif %}

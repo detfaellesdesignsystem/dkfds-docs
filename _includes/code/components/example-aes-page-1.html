@@ -40,7 +40,7 @@
             <div class="solution-info d-print-none">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
                             href="javascript:void(0);"
@@ -158,7 +158,8 @@
     <h1>Oplysninger om afsender</h1>
 
     <div class="form-group">
-        <label class="form-label " for="virksomhed">Virksomhed</label>
+        <label class="form-label " for="virksomhed"
+            id="form-label-virksomhed">Virksomhed</label>
 
         <input class="form-input  input-width-m " placeholder=""
             id="virksomhed" value="Forsikringens Forsikringsfirma"
@@ -173,35 +174,41 @@
                     <input id="id-afsender1" type="radio" name="afsender"
                         value="Advokat for forsikringsselskab"
                         class="form-radio  radio-large " />
-                    <label for="id-afsender1" class="radio-large">Advokat
-                        for forsikringsselskab </label>
+                    <label for="id-afsender1" id="form-label-id-afsender1"
+                        class="radio-large">Advokat for forsikringsselskab
+                    </label>
+
                 </li>
                 <li>
                     <input id="id-afsender2" type="radio" name="afsender"
                         value="Advokat for skadelidte"
                         class="form-radio  radio-large " />
-                    <label for="id-afsender2" class="radio-large">Advokat
-                        for skadelidte </label>
+                    <label for="id-afsender2" id="form-label-id-afsender2"
+                        class="radio-large">Advokat for skadelidte </label>
+
                 </li>
                 <li>
                     <input id="id-afsender3" type="radio" name="afsender"
                         value="Forsikringsselskab"
                         class="form-radio  radio-large " />
-                    <label for="id-afsender3"
+                    <label for="id-afsender3" id="form-label-id-afsender3"
                         class="radio-large">Forsikringsselskab </label>
+
                 </li>
                 <li>
                     <input id="id-afsender4" type="radio" name="afsender"
                         value="Erstatningsnævnet"
                         class="form-radio  radio-large " />
-                    <label for="id-afsender4"
+                    <label for="id-afsender4" id="form-label-id-afsender4"
                         class="radio-large">Erstatningsnævnet </label>
+
                 </li>
                 <li>
                     <input id="id-afsender5" type="radio" name="afsender"
                         value="Anden" class="form-radio  radio-large " />
-                    <label for="id-afsender5" class="radio-large">Anden
-                    </label>
+                    <label for="id-afsender5" id="form-label-id-afsender5"
+                        class="radio-large">Anden </label>
+
                 </li>
             </ul>
         </fieldset>

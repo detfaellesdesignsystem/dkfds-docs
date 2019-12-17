@@ -41,7 +41,7 @@ title: Header-full.html
             <!--2B: Solution header: Authority name + text-->
             <div class="solution-info">
                 <!-- nav-secondary -->
-                <h6 class="h5 authority-name">Myndighedsnavn</h6>
+                <p class="h5 authority-name">Myndighedsnavn</p>
                 <p>Support: 12 34 56 78 <span class="d-print-none">· <a
                             href="javascript:void(0);"
                             data-micromodal-trigger="modal-contact"
@@ -220,7 +220,7 @@ title: Header-full.html
         </div>
 
         <div class="solution-info-mobile">
-            <h6 class="h5 authority-name">Myndighedsnavn</h6>
+            <p class="h5 authority-name">Myndighedsnavn</p>
             <p>Support: 12 34 56 78 · <a href="javascript:void(0);"
                     data-micromodal-trigger="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>

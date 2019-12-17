@@ -48,6 +48,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -100,7 +104,7 @@
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
@@ -135,7 +139,7 @@
         <aside class="col-12 col-lg-3 sidebar-col">
             <div class="overflow-menu  overflow-menu--open-right overflow-menu--lg-no-responsive">
                 <button class="button-overflow-menu js-dropdown " data-js-target="#overflow4" aria-haspopup="true" aria-expanded="false">
-                    Trin 4 af 6
+                    Trin 4 af 5
                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
@@ -175,11 +179,6 @@
                                 5. Opsummering
                             </a>
                         </li>
-                        <li class="disabled">
-                            <a href="javascript:void(0)" tabindex="-1" aria-disabled="true">
-                                6. Kvittering
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -203,7 +202,7 @@
             <div class="mt-6">
 
                 <div class="form-group">
-                    <label class="form-label " for="id-companyalliance">Navn på
+                    <label class="form-label " for="id-companyalliance" id="form-label-id-companyalliance">Navn på
                         virksomhedsalliance</label>
 
                     <input class="form-input  input-width-m " placeholder="" id="id-companyalliance" value="" name="Input til navn på virksomhedsalliance" type="text" />
@@ -220,7 +219,7 @@
                         <li>
 
                             <input id="id-state-yes" type="radio" name="minimis" value="Ja" class="form-radio  radio-large " data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false" />
-                            <label for="id-state-yes" class="radio-large">Ja </label>
+                            <label for="id-state-yes" id="form-label-id-state-yes" class="radio-large">Ja </label>
 
                             <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
                                 <div class="py-4">
@@ -285,7 +284,7 @@
                         <li>
 
                             <input id="id-state-no" type="radio" name="minimis" value="Nej" class="form-radio  radio-large " />
-                            <label for="id-state-no" class="radio-large">Nej </label>
+                            <label for="id-state-no" id="form-label-id-state-no" class="radio-large">Nej </label>
 
                         </li>
                     </ul>

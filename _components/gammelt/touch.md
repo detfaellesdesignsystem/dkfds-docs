@@ -124,7 +124,7 @@ En veldesignet touch-oplevelse er afbalanceret i størrelse, mellemrum og visuel
             Sequential tasks, such as multi-delete, require additional space for precision.
         </li>-->
         <li>
-            Gridsystemet sikrer tilstrækelig afstand mellem de forskellige elementer.
+            Grid-systemet sikrer tilstrækelig afstand mellem de forskellige elementer.
         </li>
     </ul>
   </div>

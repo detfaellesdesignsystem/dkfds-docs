@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Header-with-dropshadow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer_Ver02" transform="translate(-536.000000, -1744.000000)" fill-rule="nonzero">
+            <g id="Header" transform="translate(536.000000, 1744.000000)">
+                <rect id="Rectangle-6" fill="#FFFFFF" x="0" y="0" width="128" height="128"></rect>
+                <rect id="Rectangle-6" fill="#1A1A1A" x="12" y="12" width="104" height="24"></rect>
+                <rect id="Rectangle-6" fill="#DCDCDC" x="12" y="44" width="104" height="32"></rect>
+                <rect id="Rectangle-6" fill="#DCDCDC" x="12" y="84" width="104" height="32"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

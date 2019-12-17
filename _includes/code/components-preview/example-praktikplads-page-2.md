@@ -43,7 +43,7 @@ title: Example-praktikplads-page-2.html
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"

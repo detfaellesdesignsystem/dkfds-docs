@@ -5,7 +5,7 @@ order: 03
 lead: 
 ---
 
-{% include code/preview.html component="basic-collapse" %}
+{% include code/preview.html component="basic-collapse" title="Eksempel på skjul/visning af indhold ved brug af knap" %}
 {% include code/accordion.html component="basic-collapse" %}
 <div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"

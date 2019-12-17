@@ -36,7 +36,7 @@ subnav:
 <ul>
     <li>Portal-logoet går til portalens forside</li>
     <li>Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.</li>
-    <li>Portalens logo er kun at finde i portal-headeren</li>
+    <li>Portalens logo er kun at finde i headeren</li>
     <li>Venstrestil altid logoet i headeren</li>
 </ul>
 <h3>Links</h3>

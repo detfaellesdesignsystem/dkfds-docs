@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1196,14 +1200,14 @@
     
       
 
-<li class="has-anchor-links">
+<li class="">
 
 
   
 
 <a href="/omdesignsystemet/samarbejdsforum/"
   class="nav-link">
-  Samarbejdsforum
+  Næste samarbejdsforum
 </a>
 
 </li>
@@ -1237,9 +1241,9 @@
 
   
 
-<a href="/omdesignsystemet/styregruppe/"
+<a href="/omdesignsystemet/kontakt-support/"
   class="nav-link">
-  Styregruppe
+  Kontakt og support
 </a>
 
 </li>
@@ -1255,9 +1259,9 @@
 
   
 
-<a href="/omdesignsystemet/fds-teamet/"
+<a href="/omdesignsystemet/governance/"
   class="nav-link">
-  FDS-teamet
+  Governance
 </a>
 
 </li>
@@ -1309,9 +1313,9 @@
 
   
 
-<a href="/omdesignsystemet/releases/"
+<a href="/omdesignsystemet/privatlivspolitik-cookies/"
   class="nav-link">
-  Release notes
+  Privatlivspolitik og cookies
 </a>
 
 </li>
@@ -1327,9 +1331,9 @@
 
   
 
-<a href="/omdesignsystemet/privatlivspolitik-cookies/"
+<a href="/omdesignsystemet/releases/"
   class="nav-link">
-  Privatlivspolitik og cookies
+  Release notes
 </a>
 
 </li>
@@ -1384,15 +1388,69 @@
           <h1 id="streger">Streger</h1>
           
 
-          
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/borders"></iframe>
+          <div class="component-preview  component-preview-borders" aria-label="">
+      <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Ydre-streger</h3>
+              <p class="form-hint">Bruges til de yderste streger i et
+                  element, se fx tabeller.</p>
+              <div class="outer-border-example"></div>
+          </div>
+          <div class="col-12 col-md-6">
+              <pre>border: 1px solid #747474</pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Indre-streger</h3>
+              <p class="form-hint">Bruges til indre streger i et element,
+                  se fx tabeller.</p>
+              <div class="inner-border-example"></div>
+          </div>
+          <div class="col-12 col-md-6">
+              <pre>border: 1px solid #BFBFBF</pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Indre-indre-streger</h3>
+              <p class="form-hint">Bruges til indre streger i et element,
+                  som allerede er omkranset af indre steger, se fx
+                  sidenavigation.</p>
+              <div class="inner-inner-border-example"></div>
+          </div>
+          <div class="col-12 col-md-6">
+              <pre>border: 1px solid #DCDCDC</pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Knap-streger</h3>
+              <p class="form-hint">Specifik streg til knapper.</p>
+              <div class="button-border-example"></div>
+          </div>
+          <div class="col-12 col-md-6 mt-4">
+              <h4 class="h6 mb-0 mt-0">Virk tema:</h4>
+              <pre class="mt-0">border: 2px solid #004993</pre>
+              <h4 class="h6 mb-0 mt-0">Borger.dk tema:</h4>
+              <pre class="mt-0">border: 2px solid #3C5C22</pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h3 class="h5">Horisontal ruler</h3>
+              <p class="form-hint"><code>hr</code> elementet har samme
+                  farve som den Indre streg</p>
+              <hr />
+          </div>
+          <div class="col-12 col-md-6">
+              <pre>border-top: 1px solid #BFBFBF</pre>
+          </div>
+      </div>
+  </div>
 </div>
+
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="borders-docs">
     Implementering
@@ -1439,23 +1497,30 @@
 
 
 <footer>
-  <div class="footer">
-    <div class="container">
-        <ul class="unstyled-list inline-list">
-          <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-          <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-          <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-          <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
-        </ul>
-    </div>
-  </div>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
 </footer>
 
 
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

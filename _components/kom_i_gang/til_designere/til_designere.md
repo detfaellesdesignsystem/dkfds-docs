@@ -18,14 +18,18 @@ description: Information om Det Fælles Designsystem, der retter sig mod designe
     </div>
 </div>
 <p>
-    <strong>Sketch</strong><br />
+    <span class="bold">Figma</span><br />
+    <a href="https://www.figma.com/file/ULyQcXMQFHgGyoiAOcBQJn/FDS-UI-komponenter?node-id=48%3A3" class="icon-link">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+</p>
+<p>
+    <span class="bold">Sketch</span><br />
     <a href="/downloads/Det_Faelles_Designsystem (Version 3.0.3).sketch">Download sketch-fil (version 3.0.3)</a>
 </p>
 <p>
-    <strong>SVG</strong><br />
-    <a href="/downloads/FDS v303 SVG.zip">Download svg-filer (version 3.0.3)</a>
+    <span class="bold">SVG</span><br />
+    <a href="/downloads/FDS-Komponenter-SVG-Version-440.zip">Download svg-filer (version 4.4.0)</a>
 </p>
-<p>Svg-filerne kan importeres i de fleste design/prototype programmer m.fl. og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).</p>
+<p>Svg-filerne kan importeres i de fleste design/prototype programmer og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).</p>
 <p>For at gøre det nemmere at komme i gang stiller vi ovenstående filer til rådighed, men “source of truth”, vores fælles referencepunkt, er dokumentationssiden her og ikke filerne. </p>
 
 <h2>Dit ansvar som designer</h2>

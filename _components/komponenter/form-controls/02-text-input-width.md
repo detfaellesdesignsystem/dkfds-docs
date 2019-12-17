@@ -5,7 +5,7 @@ order: 02
 lead: 
 ---
 
-{% include code/preview.html component="text-input-width" %}
+{% include code/preview.html component="text-input-width" title="Eksempel på feltbredder" %}
 {% include code/accordion.html component="text-input-width" %}
 <div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
@@ -68,7 +68,7 @@ lead:
           <h4 class="h5">Anvendes ikke til</h4>
           <p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
           <h4 class="h5">Vejledning</h4>
-          <p>Tilføj feltbreddeværdier svarende til den mængde information, du forventer, at brugeren indtaster. På den måde får brugeren overblik over sin indtastning.</p>
+          <p>Sæt bredden på feltet, så det svarer til den mængde information, du forventer, at brugeren indtaster. På den måde får brugeren overblik over sin indtastning.</p>
       </section>
   </div>
 </div>

@@ -2,7 +2,6 @@
 title: Beskeder med ikon
 parent: Beskeder
 order: 02
-lead: 
+component: alerts-icons
+componentTitle: "Eksempel på besked med ikon"
 ---
-{% include code/preview.html component="alerts-icons" %}
-{% include code/accordion.html component="alerts-icons" %}

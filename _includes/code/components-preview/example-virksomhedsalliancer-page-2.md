@@ -43,7 +43,7 @@ title: Example-virksomhedsalliancer-page-2.html
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
@@ -159,8 +159,9 @@ title: Example-virksomhedsalliancer-page-2.html
                 <a href="#" class="5">Se eksempel</a>
 
                 <div class="form-group">
-                    <label class="form-label " for="id-employees">Antal
-                        ansatte i seneste regnskabsår</label>
+                    <label class="form-label " for="id-employees"
+                        id="form-label-id-employees">Antal ansatte i
+                        seneste regnskabsår</label>
 
                     <input class="form-input  input-width-m "
                         placeholder="" id="id-employees" value=""
@@ -169,8 +170,9 @@ title: Example-virksomhedsalliancer-page-2.html
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label " for="id-sales">Omsætning i
-                        DKK i seneste regnskabsår</label>
+                    <label class="form-label " for="id-sales"
+                        id="form-label-id-sales">Omsætning i DKK i seneste
+                        regnskabsår</label>
                     <span class="form-hint"
                         id="input-hint-message-id-sales">Angives i helt
                         tal, fx. 11.650.334</span>
@@ -178,7 +180,8 @@ title: Example-virksomhedsalliancer-page-2.html
                     <input class="form-input  input-width-m "
                         placeholder="" id="id-sales" value=""
                         name="Input til omsætning i DKK i seneste regnskabsår"
-                        type="text">
+                        type="text"
+                        aria-labelledby="form-label-id-sales input-hint-message-id-sales">
                 </div>
 
                 <nav class="page-navigation d-print-none">

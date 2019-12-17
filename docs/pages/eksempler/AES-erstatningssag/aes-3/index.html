@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -105,7 +109,7 @@
             <div class="solution-info d-print-none">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
@@ -235,7 +239,8 @@
     </div>
 
     <div class="form-group">
-        <label class="form-label " for="navn">Navn</label>
+        <label class="form-label " for="navn"
+            id="form-label-navn">Navn</label>
 
         <input class="form-input  input-width-m " placeholder="" id="navn"
             value="Susanne Maria Zaggariasen" name="navn" type="text"

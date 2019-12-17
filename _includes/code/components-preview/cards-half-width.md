@@ -59,58 +59,53 @@ title: Cards-half-width.html
                             <div class="col-12">
                                 <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
                                 <div class="row bg-violet p-6">
-                                    <div
-                                        class="col-12 col-lg-6 mb-6 mb-sm-0 align-text-left d-sm-none d-lg-block">
-                                        <img src="{{ site.baseurl }}/img/cards/card-illustration-talebobler.svg" alt="" aria-hidden="true" class="w-percent-100" /></div>
-                                        <div
-                                            class="col-12 col-lg-6 align-text-left">
-                                            <h2 class="h3 mb-0">3 ofte
-                                                stillede spørgsmål</h2>
-                                            <ul class="mt-0 noindent-list">
-                                                <li>In viverra faucibus
-                                                    lorem?</li>
-                                                <li>Phasellus posuere
-                                                    neque?</li>
-                                                <li>Nullam quis nunc dui?
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div class="col-12 align-text-left">
+                                        <h2 class="h3 mb-0">3 ofte stillede
+                                            spørgsmål</h2>
+                                        <ul class="mt-0 noindent-list">
+                                            <li>In viverra faucibus lorem?
+                                            </li>
+                                            <li>Phasellus posuere neque?
+                                            </li>
+                                            <li>Nullam quis nunc dui?</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="card-header">
-                        <p class="h5 header-title">Header</p>
-                        <p class="sub-header">Understøttende tekst</p>
+                <div class="card-header">
+                    <p class="h5 header-title">Header</p>
+                    <p class="sub-header">Understøttende tekst</p>
+                </div>
+
+                <div class="card-action">
+                    <div class="action-content">
+
                     </div>
-
-                    <div class="card-action">
-                        <div class="action-content">
-
-                        </div>
-                        <div class="action-buttons">
-                            <button
-                                class="button button-secondary">Sekundærknap</button><button
-                                class="button button-tertiary">Tertiærknap</button>
-                        </div>
-                        <div class="action-links">
-                            <ul class="nobullet-list">
-                                <li><a href="javascript:void(0);"
-                                        class="default link state">Et link
-                                        til et sted i løsningen</a></li>
-                                <li><a href="javascript:void(0);"
-                                        class="icon-link">Et link til et
-                                        sted uden for
-                                        løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="action-buttons">
+                        <button
+                            class="button button-secondary">Sekundærknap</button><button
+                            class="button button-tertiary">Tertiærknap</button>
                     </div>
-
+                    <div class="action-links">
+                        <ul class="nobullet-list">
+                            <li><a href="javascript:void(0);"
+                                    class="default link state">Et link til
+                                    et sted i løsningen</a></li>
+                            <li><a href="javascript:void(0);"
+                                    class="icon-link">Et link til et sted
+                                    uden for
+                                    løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
+
         </div>
     </div>
+</div>

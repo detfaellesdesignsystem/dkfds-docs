@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1199,14 +1203,14 @@
     
       
 
-<li class="has-anchor-links">
+<li class="">
 
 
   
 
 <a href="/omdesignsystemet/samarbejdsforum/"
   class="nav-link">
-  Samarbejdsforum
+  Næste samarbejdsforum
 </a>
 
 </li>
@@ -1240,9 +1244,9 @@
 
   
 
-<a href="/omdesignsystemet/styregruppe/"
+<a href="/omdesignsystemet/kontakt-support/"
   class="nav-link">
-  Styregruppe
+  Kontakt og support
 </a>
 
 </li>
@@ -1258,9 +1262,9 @@
 
   
 
-<a href="/omdesignsystemet/fds-teamet/"
+<a href="/omdesignsystemet/governance/"
   class="nav-link">
-  FDS-teamet
+  Governance
 </a>
 
 </li>
@@ -1312,9 +1316,9 @@
 
   
 
-<a href="/omdesignsystemet/releases/"
+<a href="/omdesignsystemet/privatlivspolitik-cookies/"
   class="nav-link">
-  Release notes
+  Privatlivspolitik og cookies
 </a>
 
 </li>
@@ -1330,9 +1334,9 @@
 
   
 
-<a href="/omdesignsystemet/privatlivspolitik-cookies/"
+<a href="/omdesignsystemet/releases/"
   class="nav-link">
-  Privatlivspolitik og cookies
+  Release notes
 </a>
 
 </li>
@@ -1395,15 +1399,41 @@
 </section>
 
 <h3>Simpel formularstruktur</h3>
+<div class="component-preview  component-preview-fieldset" aria-label="Eksempel på formularstruktur">
+    <div class="container">
+    <h1 class="h2">Dine kontaktoplysninger</h1>
+    <form>
 
-<div class="component-preview ">
+        <div class="form-group">
+            <label class="form-label " for="fnavn" id="form-label-fnavn">Fornavn</label>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <input class="form-input   " placeholder="" id="fnavn" value="" name="fnavn" type="text" />
+        </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/fieldset"></iframe>
+        <div class="form-group">
+            <label class="form-label " for="enavn" id="form-label-enavn">Efternavn</label>
+
+            <input class="form-input   " placeholder="" id="enavn" value="" name="enavn" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="email" id="form-label-email">E-mail adresse</label>
+
+            <input class="form-input   " placeholder="" id="email" value="" name="email" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="telefon" id="form-label-telefon">Telefonnr.</label>
+
+            <input class="form-input   " placeholder="" id="telefon" value="" name="telefon" type="text" />
+        </div>
+
+        <button class="button button-primary mt-9"> Gem oplysninger
+        </button>
+    </form>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-fieldset">Kode</button>
@@ -1414,28 +1444,32 @@
     <span class="nt">&lt;form&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span>
+                <span class="na">id=</span><span class="s">"form-label-fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"fnavn"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"fnavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span>
+                <span class="na">id=</span><span class="s">"form-label-enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"enavn"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"enavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>E-mail adresse<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span>
+                <span class="na">id=</span><span class="s">"form-label-email"</span><span class="nt">&gt;</span>E-mail adresse<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"email"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span>
+                <span class="na">id=</span><span class="s">"form-label-telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"telefon"</span>
                 <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"telefon"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
@@ -1453,15 +1487,146 @@
 </div>
 
 <h3>Kompleks formularstruktur</h3>
+<div class="component-preview  component-preview-fieldset-complex" aria-label="Eksempel på kompleks formularstruktur">
+    <div class="container">
+    <h1 class="h2">Dine kontaktoplysninger</h1>
+    <form>
 
-<div class="component-preview ">
+        <div class="form-group">
+            <label class="form-label " for="fnavn" id="form-label-fnavn">Fornavn</label>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <input class="form-input   " placeholder="" id="fnavn" value="" name="fnavn" type="text" />
+        </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/fieldset-complex"></iframe>
+        <div class="form-group">
+            <label class="form-label " for="enavn" id="form-label-enavn">Efternavn</label>
+
+            <input class="form-input   " placeholder="" id="enavn" value="" name="enavn" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="email" id="form-label-email">E-mail adresse</label>
+
+            <input class="form-input   " placeholder="" id="email" value="" name="email" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="telefon" id="form-label-telefon">Telefonnr.</label>
+
+            <input class="form-input   " placeholder="" id="telefon" value="" name="telefon" type="text" />
+        </div>
+
+        <div class="form-group">
+            <fieldset>
+                <legend class="h4">Hvordan vil du helst kontaktes?</legend>
+                <ul class="nobullet-list">
+                    <li>
+
+                        <input id="kontakt-telefon" type="radio" name="kontakt" value="kontakt-telefon" class="form-radio  radio-large " />
+                        <label for="kontakt-telefon" id="form-label-kontakt-telefon" class="">Pr.
+                            telefon </label>
+
+                    </li>
+                    <li>
+
+                        <input id="kontakt-email" type="radio" name="kontakt" value="kontakt-email" class="form-radio  radio-large " />
+                        <label for="kontakt-email" id="form-label-kontakt-email" class="">Pr.
+                            e-mail </label>
+
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend class="h4">Hvornår på dagen vil det passe bedst, at
+                    vi kontakter dig?</legend>
+                <ul class="nobullet-list">
+                    <li>
+
+                        <input id="morgen" type="checkbox" name="tidspunkt[]" value="morgen" class="form-checkbox  checkbox-large " />
+                        <label for="morgen" class="">Om morgenen</label>
+
+                    </li>
+                    <li>
+
+                        <input id="middag" type="checkbox" name="tidspunkt[]" value="middag" class="form-checkbox  checkbox-large " />
+                        <label for="middag" class="">Ved middagstid</label>
+
+                    </li>
+                    <li>
+
+                        <input id="eftermiddag" type="checkbox" name="tidspunkt[]" value="eftermiddag" class="form-checkbox  checkbox-large " />
+                        <label for="eftermiddag" class="">Om
+                            eftermiddagen</label>
+
+                    </li>
+                    <li>
+
+                        <input id="aften" type="checkbox" name="tidspunkt[]" value="aften" class="form-checkbox  checkbox-large " />
+                        <label for="aften" class="">Om aftenen</label>
+
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend class="h4">Personlige oplysninger</legend>
+
+                <div class="form-group  mt-0">
+                    <fieldset>
+                        <legend><label class="form-label">Indsendelsesfrist</label>
+                            <span class="form-hint">For eksempel: 05 12
+                                2018</span></legend>
+                        <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
+                        <div class="date-group js-calendar-group mt-3">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="date-day">Dag</label>
+                                <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="date-month">Måned</label>
+                                <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                            </div>
+                            <div class="form-group form-group-year ">
+                                <label class="form-label" for="date-year">År</label>
+                                <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="h5">Bor du i Odense?</legend>
+                        <ul class="nobullet-list">
+                            <li>
+
+                                <input id="odense-ja" type="radio" name="odense" value="odense-ja" class="form-radio  radio-large " />
+                                <label for="odense-ja" id="form-label-odense-ja" class="">Ja
+                                </label>
+
+                            </li>
+                            <li>
+
+                                <input id="odense-nej" type="radio" name="odense" value="odense-nej" class="form-radio  radio-large " />
+                                <label for="odense-nej" id="form-label-odense-nej" class="">Nej
+                                </label>
+
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </div>
+        <button class="button button-primary mt-9"> Gem oplysninger
+        </button>
+    </form>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-fieldset-complex">Kode</button>
@@ -1472,28 +1637,32 @@
     <span class="nt">&lt;form&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span>
+                <span class="na">id=</span><span class="s">"form-label-fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"fnavn"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"fnavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span>
+                <span class="na">id=</span><span class="s">"form-label-enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"enavn"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"enavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>E-mail adresse<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span>
+                <span class="na">id=</span><span class="s">"form-label-email"</span><span class="nt">&gt;</span>E-mail adresse<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"email"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span>
+                <span class="na">id=</span><span class="s">"form-label-telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"telefon"</span>
                 <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"telefon"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
@@ -1508,8 +1677,9 @@
                         <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"kontakt-telefon"</span> <span class="na">type=</span><span class="s">"radio"</span>
                             <span class="na">name=</span><span class="s">"kontakt"</span> <span class="na">value=</span><span class="s">"kontakt-telefon"</span>
                             <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-telefon"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr. telefon
-                        <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-telefon"</span>
+                            <span class="na">id=</span><span class="s">"form-label-kontakt-telefon"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr.
+                            telefon <span class="nt">&lt;/label&gt;</span>
 
                     <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;li&gt;</span>
@@ -1517,8 +1687,9 @@
                         <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"kontakt-email"</span> <span class="na">type=</span><span class="s">"radio"</span>
                             <span class="na">name=</span><span class="s">"kontakt"</span> <span class="na">value=</span><span class="s">"kontakt-email"</span>
                             <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-email"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr. e-mail
-                        <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-email"</span>
+                            <span class="na">id=</span><span class="s">"form-label-kontakt-email"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr.
+                            e-mail <span class="nt">&lt;/label&gt;</span>
 
                     <span class="nt">&lt;/li&gt;</span>
                 <span class="nt">&lt;/ul&gt;</span>
@@ -1626,7 +1797,9 @@
                                 <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"odense-ja"</span> <span class="na">type=</span><span class="s">"radio"</span>
                                     <span class="na">name=</span><span class="s">"odense"</span> <span class="na">value=</span><span class="s">"odense-ja"</span>
                                     <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-ja"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ja <span class="nt">&lt;/label&gt;</span>
+                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-ja"</span>
+                                    <span class="na">id=</span><span class="s">"form-label-odense-ja"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ja
+                                <span class="nt">&lt;/label&gt;</span>
 
                             <span class="nt">&lt;/li&gt;</span>
                             <span class="nt">&lt;li&gt;</span>
@@ -1634,7 +1807,8 @@
                                 <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"odense-nej"</span> <span class="na">type=</span><span class="s">"radio"</span>
                                     <span class="na">name=</span><span class="s">"odense"</span> <span class="na">value=</span><span class="s">"odense-nej"</span>
                                     <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-nej"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Nej
+                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-nej"</span>
+                                    <span class="na">id=</span><span class="s">"form-label-odense-nej"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Nej
                                 <span class="nt">&lt;/label&gt;</span>
 
                             <span class="nt">&lt;/li&gt;</span>
@@ -1664,23 +1838,30 @@
 
 
 <footer>
-  <div class="footer">
-    <div class="container">
-        <ul class="unstyled-list inline-list">
-          <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-          <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-          <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-          <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
-        </ul>
-    </div>
-  </div>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
 </footer>
 
 
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

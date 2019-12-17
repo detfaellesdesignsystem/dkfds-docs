@@ -161,5 +161,5 @@ subnav:
 
 <p>Footeren indeholder altid ansvarlig myndighed, tilgængelighedserklæring og cookieoplysning. Det er op til den enkelte myndighed at vælge en footer, som passer til den mængde indhold, der er rigtig for den konkrete selvbetjeningsløsning.</p>
 
-<p><a href="/komponenter/footers/">Se footer-komponenten</a></p>
+<p><a href="/komponenter/footers/">Se footer komponenten</a></p>
 

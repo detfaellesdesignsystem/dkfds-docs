@@ -43,7 +43,7 @@ title: Example-boernetilskud-oversigt.html
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p>Tlf.: 33 28 38 38</p>
 

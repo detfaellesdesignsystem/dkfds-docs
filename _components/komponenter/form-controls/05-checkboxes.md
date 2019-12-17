@@ -6,7 +6,7 @@ lead:
 ---
 
 
-{% include code/preview.html component="checkbox" %}
+{% include code/preview.html component="checkbox"  title="Eksempel på tjekbokse" %}
 {% include code/accordion.html component="checkbox" %}
 <div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
@@ -18,7 +18,6 @@ lead:
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
               <li>Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.</li>
-              <li>Tilknyt label til hver tjekboks. Erstat eventuelt label med title-attributten.</li>
               <li>Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.</li>
               <li>Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</li>
               <li>Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.</li>

@@ -43,7 +43,7 @@ title: Example-virksomhedsalliancer-page-3.html
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
@@ -163,8 +163,9 @@ title: Example-virksomhedsalliancer-page-3.html
             <div class="mt-6">
 
                 <div class="form-group">
-                    <label class="form-label " for="id-state">Statsstøtte
-                        (EU de-minimis) i DKK</label>
+                    <label class="form-label " for="id-state"
+                        id="form-label-id-state">Statsstøtte (EU
+                        de-minimis) i DKK</label>
                     <span class="form-hint"
                         id="input-hint-message-id-state">Modtaget fra dags
                         dato og de tre seneste løbende år ekskl. det
@@ -173,7 +174,8 @@ title: Example-virksomhedsalliancer-page-3.html
                     <input class="form-input  input-width-m "
                         placeholder="" id="id-state" value=""
                         name="Input til statsstøtte (EU de-minimis) i DKK"
-                        type="text">
+                        type="text"
+                        aria-labelledby="form-label-id-state input-hint-message-id-state">
                 </div>
 
             </div>
@@ -192,7 +194,9 @@ title: Example-virksomhedsalliancer-page-3.html
                                 data-js-target="#collapse-radio"
                                 aria-controls="collapse-radio"
                                 aria-expanded="false" />
-                            <label for="id-state-yes" class="radio-large"
+                            <label for="id-state-yes"
+                                id="form-label-id-state-yes"
+                                class="radio-large"
                                 data-js-target="#collapse-radio"
                                 aria-controls="collapse-radio"
                                 aria-expanded="false">Ja </label>
@@ -203,7 +207,8 @@ title: Example-virksomhedsalliancer-page-3.html
 
                                     <div class="form-group">
                                         <label class="form-label "
-                                            for="id-minimis-name">Ordningens
+                                            for="id-minimis-name"
+                                            id="form-label-id-minimis-name">Ordningens
                                             navn</label>
 
                                         <input
@@ -283,8 +288,9 @@ title: Example-virksomhedsalliancer-page-3.html
 
                                     <div class="form-group">
                                         <label class="form-label "
-                                            for="id-amount">Beløb i
-                                            DKK</label>
+                                            for="id-amount"
+                                            id="form-label-id-amount">Beløb
+                                            i DKK</label>
 
                                         <input
                                             class="form-input  input-width-xs "
@@ -296,7 +302,8 @@ title: Example-virksomhedsalliancer-page-3.html
 
                                     <div class="form-group">
                                         <label class="form-label "
-                                            for="id-reference">Henvisning
+                                            for="id-reference"
+                                            id="form-label-id-reference">Henvisning
                                             til yderligere information om
                                             ordningen</label>
                                         <span class="form-hint"
@@ -308,7 +315,8 @@ title: Example-virksomhedsalliancer-page-3.html
                                             placeholder=""
                                             id="id-reference" value=""
                                             name="Input til henvisning til yderligere information om ordningen"
-                                            type="text">
+                                            type="text"
+                                            aria-labelledby="form-label-id-reference input-hint-message-id-reference">
                                     </div>
 
                                 </div>
@@ -320,6 +328,7 @@ title: Example-virksomhedsalliancer-page-3.html
                                 name="minimis" value="Nej"
                                 class="form-radio  radio-large " />
                             <label for="id-state-no"
+                                id="form-label-id-state-no"
                                 class="radio-large">Nej </label>
 
                         </li>

@@ -5,7 +5,7 @@ order: 01
 lead: 
 ---
 
-{% include code/preview.html component="text-input" %}
+{% include code/preview.html component="text-input" title="Eksempel på tekst felter" %}
 {% include code/accordion.html component="text-input" %}
 <div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"

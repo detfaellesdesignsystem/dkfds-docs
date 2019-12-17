@@ -43,7 +43,7 @@ title: Example-virksomhedsalliancer-page-1.html
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p><a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
@@ -139,8 +139,8 @@ title: Example-virksomhedsalliancer-page-1.html
                 <h1 id="stamdata">Stamdata</h1>
 
                 <div class="form-group">
-                    <label class="form-label " for="id-cvr-number">CVR
-                        nummer</label>
+                    <label class="form-label " for="id-cvr-number"
+                        id="form-label-id-cvr-number">CVR nummer</label>
 
                     <input class="form-input  input-char-8 " placeholder=""
                         id="id-cvr-number" value=""
@@ -148,7 +148,8 @@ title: Example-virksomhedsalliancer-page-1.html
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label " for="id-companyname">Navn på
+                    <label class="form-label " for="id-companyname"
+                        id="form-label-id-companyname">Navn på
                         virksomhed</label>
 
                     <input class="form-input  input-width-m "
@@ -157,8 +158,8 @@ title: Example-virksomhedsalliancer-page-1.html
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label "
-                        for="id-companyaddress">Adresse</label>
+                    <label class="form-label " for="id-companyaddress"
+                        id="form-label-id-companyaddress">Adresse</label>
 
                     <input class="form-input  input-width-m "
                         placeholder="" id="id-companyaddress" value=""
@@ -166,8 +167,8 @@ title: Example-virksomhedsalliancer-page-1.html
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label "
-                        for="id-zipcode">Postnr.</label>
+                    <label class="form-label " for="id-zipcode"
+                        id="form-label-id-zipcode">Postnr.</label>
 
                     <input class="form-input  input-char-4 " placeholder=""
                         id="id-zipcode" value=""
@@ -175,8 +176,8 @@ title: Example-virksomhedsalliancer-page-1.html
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label "
-                        for="id-companycity">By</label>
+                    <label class="form-label " for="id-companycity"
+                        id="form-label-id-companycity">By</label>
 
                     <input class="form-input  input-width-m "
                         placeholder="" id="id-companycity" value=""
@@ -184,8 +185,8 @@ title: Example-virksomhedsalliancer-page-1.html
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label "
-                        for="id-companyphone">Telefonnr.</label>
+                    <label class="form-label " for="id-companyphone"
+                        id="form-label-id-companyphone">Telefonnr.</label>
 
                     <input class="form-input  input-char-8 " placeholder=""
                         id="id-companyphone" value=""
@@ -193,8 +194,8 @@ title: Example-virksomhedsalliancer-page-1.html
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label "
-                        for="id-companywebsite">Website<span
+                    <label class="form-label " for="id-companywebsite"
+                        id="form-label-id-companywebsite">Website<span
                             class="weight-normal">
                             (frivilligt)</span></label>
 
@@ -205,7 +206,8 @@ title: Example-virksomhedsalliancer-page-1.html
 
                 <div class="form-group">
                     <label class="form-label "
-                        for="id-company-contactperson">Kontaktperson.</label>
+                        for="id-company-contactperson"
+                        id="form-label-id-company-contactperson">Kontaktperson.</label>
 
                     <input class="form-input  input-width-m "
                         placeholder="" id="id-company-contactperson"
@@ -214,20 +216,21 @@ title: Example-virksomhedsalliancer-page-1.html
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label "
-                        for="id-companyemail">E-mail</label>
+                    <label class="form-label " for="id-companyemail"
+                        id="form-label-id-companyemail">E-mail</label>
                     <span class="form-hint"
                         id="input-hint-message-id-companyemail">Kvittering
                         bliver sendt til denne e-mailadresse</span>
 
                     <input class="form-input  input-width-m "
                         placeholder="" id="id-companyemail" value=""
-                        name="Input til email" type="text">
+                        name="Input til email" type="text"
+                        aria-labelledby="form-label-id-companyemail input-hint-message-id-companyemail">
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label "
-                        for="id-launchyear">Etableringsår</label>
+                    <label class="form-label " for="id-launchyear"
+                        id="form-label-id-launchyear">Etableringsår</label>
 
                     <input class="form-input  input-char-4 " placeholder=""
                         id="id-launchyear" value=""

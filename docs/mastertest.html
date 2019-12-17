@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -64,308 +68,889 @@
     <h1>Test</h1>
     <h2>Fonte og typografi</h2>
     <h3>Overskrifter</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/headings"></iframe>
+    <div class="component-preview  component-preview-headings" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h1>Overskrift 1</h1>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:700;<br />font-size:4rem;<br />color:#1a1a1a;<br />line-height:4.8rem;<br />margin:0 0 1.6rem 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2>Overskrift 2</h2>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:3rem;<br />color:#1a1a1a;<br />line-height:4rem;<br />margin:4rem 0 1.6rem 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3>Overskrift 3</h3>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:2.4rem;<br />color:#1a1a1a;<br />line-height:3.2rem;<br />margin:4rem 0 1.6rem 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h4>Overskrift 4</h4>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:2rem;<br />color:#1a1a1a;<br />line-height:3.2rem;<br />margin:2.4rem 0 1.6rem 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h5>Overskrift 5</h5>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:1.6rem;<br />color:#1a1a1a;<br />line-height:2.4rem;<br />margin:2.4rem 0 0 0;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h6>Overskrift 6</h6>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:1.3rem;<br />text-transform: uppercase;<br />color:#1a1a1a;<br />line-height:2.4rem;<br />margin:2.4rem 0 0 0;</pre>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Felt- og tabeloverskrifter (label og th)</h3>
-    
+    <div class="component-preview  component-preview-labels" aria-label="">
+    <div class="container">
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/labels"></iframe>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <label class="form-label">Dette er en feltoverskrift</label>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:600<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <table class="table table--borderless">
+                <thead>
+                    <tr style="border-bottom:0;">
+                        <th style="border-bottom:0;">Dette er en
+                            kolonneoverskrift i en tabel</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:600<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Manchettekst (lead paragraph)</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/lead_paragraph"></iframe>
+    <div class="component-preview  component-preview-lead-paragraph" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="font-lead">Manchettekst (.font-lead)</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:2rem<br />line-height:3.2rem<br />margin:2.4rem 0 1.6rem 0</pre>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Brødtekst (body copy)</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/inlinetext"></iframe>
+    <div class="component-preview  component-preview-inlinetext" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>Brødtekst</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.6rem<br />line-height:2.4rem<br />margin:1.6rem 0 1.6rem 0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><small>Dette er lille brødtekst (small-tag)</small></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.4rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="small-text">Dette er lille brødtekst (.small-text)
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:400<br />font-size:1.4rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><strong>Dette er fed brødtekst</strong></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:1.6rem<br />line-height:2.4rem</pre>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Links</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/links"></iframe>
+    <div class="component-preview  component-preview-links" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="">Standard link</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #004D99</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="link-hover">Standard
+                    link, hover</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #000040</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="link-active">Standard
+                    link, active</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #004D99</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="link-visited">Standard
+                    link, visited</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #800080</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>
+                <a href="javascript:void(0);" class="link-focus">Standard
+                    link, focus</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color: #004D99;outline: 4px solid #747474;</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>Dette er et
+                <a href="javascript:void(0);" class="bold-link">fremhævet
+                    link</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-weight: 700;</pre>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Skip link</h3>
-    
+    <div class="component-preview  component-preview-skiplink" aria-label="">
+    <div class="container">
+    <p>For at se skip link, klik på denne tekst og tryk derefter på
+        tab-tasten.</p>
 
-<div class="component-preview ">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/skiplink"></iframe>
 </div>
+</div>
+
     <h3>Stor tekst (display text)</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/displaytext"></iframe>
+    <div class="component-preview  component-preview-displaytext" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-1">Display, text 1</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:4.8rem<br />line-height:5.6rem<br />color:#1a1a1a<br />margin-bottom:0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-2">Display, text 2</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family: "IBMPlexSans","system"<br />font-weight:700<br />font-size:3.2rem<br />line-height:4rem<br />margin:1.6rem 0 0 0</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-1 text-positive">Display, positive</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color:#358000</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="displayheading-2 text-negative">Display, negative</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>color:#CC0000</pre>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Lister</h3>
-    
+    <div class="component-preview preview-lists component-preview-lists" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="h4">Unordered list</p>
+            <ul>
 
-<div class="component-preview preview-lists">
+                <li>Unordered list</li>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <li>Unordered list</li>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/lists"></iframe>
+                <li>Unordered list</li>
+
+                <li>Unordered list<ul class="sub_list">
+
+                        <li>Unordered list</li>
+
+                        <li>Unordered list</li>
+
+                        <li>Unordered list<ul class="sub_list">
+
+                                <li>Unordered list</li>
+
+                                <li>Unordered list</li>
+
+                                <li>Unordered list</li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <p class="h4">Ordered list</p>
+            <ol>
+                <li>Ordered list</li>
+                <li>Ordered list</li>
+                <li>Ordered list</li>
+                <li>Ordered list<ol class="sub_list" type="a">
+                        <li>Ordered list</li>
+                        <li>Ordered list</li>
+                        <li>Ordered list<ol class="sub_list" type="i">
+                                <li>Ordered list</li>
+                                <li>Ordered list</li>
+                                <li>Ordered list</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Hjælpetekst og fejlbeskeder</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/helptext"></iframe>
+    <div class="component-preview  component-preview-helptext" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><span class="form-hint" id="input-hint-message-form-error">Hjælpetekst, der
+                    forklarer, hvad du skal gøre</span></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family:"IBMPlexSans","system"<br />font-weight:400<br />font-size:1.6rem<br />line-height:2.4rem<br />color:#747474</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="color-gray-pale my-4 p-4">
+                <p class="m-0"><span class="form-hint" id="input-hint-message-form-error">Hjælpetekst i
+                        active state</span></p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family:"IBMPlexSans","system"<br />font-weight:400<br />font-size:1.6rem<br />line-height:2.4rem<br />color:#747474</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p><span class="form-error-message" id="form-error-message-form-error" role="alert">Fejlbesked, der hjælper brugeren
+                    videre</span></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>font-family:"IBMPlexSans","system"<br />font-weight: 600<br />font-size: 1.6rem<br />line-height: 2.4rem<br />color: #CC0000<br />margin-top: 4px</pre>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Linjelængde</h3>
-    
+    <div class="component-preview  component-preview-line-length" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="h5">Linjelængde for brødtekst (p) - Desktop</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="demo-typesetting">Svarer til ca 75 tegn på desktop.
+            </p>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/line_length"></iframe>
+            <p class="h5">Linjelængde for manchettekst (font-lead)-
+                Desktop</p>
+            <p class="font-lead">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
+            <p class="font-lead demo-typesetting">Svarer til ca 75 tegn på
+                desktop.</p>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Linjeafstand</h3>
-    
+    <div class="component-preview  component-preview-line-spacing" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="h1">Sidetitel</p>
+            <p class="font-lead">Lead tekst Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
 
-<div class="component-preview ">
+            <h2>Sektionsoverskrift</h2>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <h3>Underoverskrift</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/line_spacing"></iframe>
+            <h4>Underoverskrift</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. </p>
+
+            <h5>Under-underoverskrift</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </div>
 </div>
+</div>
+
 </div>
 <div class="container">
     <h2>Grid</h2>
     <h3>Introduktion</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--how-it-works"></iframe>
+    <div class="component-preview  component-preview-grid-how-it-works" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                .col
+            </div>
+            <div class="col">
+                .col
+            </div>
+            <div class="col">
+                .col
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Responsive klasser - Klasser som rammer alle breakpoints</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--all-breakpoints"></iframe>
+    <div class="component-preview  component-preview-grid-all-breakpoints" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2 grid-example-measure-row">
+            <div class="col-1">
+                <div class="align-text-center px-2">1</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">2</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">3</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">4</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">5</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">6</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">7</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">8</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">9</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">10</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">11</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">12</div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row">
+            <div class="col-8">col-8</div>
+            <div class="col-4">col-4</div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Responsive klasser - Fra stablede kolonner til kolonner på række</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--stacked-horizontal"></iframe>
+    <div class="component-preview  component-preview-grid-stacked-horizontal" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-8">col-md-8</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md">col-md</div>
+            <div class="col-md">col-md</div>
+            <div class="col-md">col-md</div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Responsive klasser - Brug af forskellige kolonne-klasser</h3>
-    
+    <div class="component-preview  component-preview-grid-mix-match" aria-label="">
+    <div class="grid-example">
+    <div class="container w-percent-100">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row mb-2">
+            <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
 
-<div class="component-preview ">
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row mb-2">
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--mix-match"></iframe>
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Responsive klasser - Kolonneombrydning</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--column-wrapping"></iframe>
+    <div class="component-preview  component-preview-grid-column-wrapping" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col-9">.col-9</div>
+            <div class="col-4">
+                .col-4<br />9 + 4 = 13 &gt; 12, det betyder at denne 4-kolonne div bliver vist på en nye linie</div>
+                <div class="col-6">
+                    .col-6<br />Efterfølgende kolonner fortsætter på denne nye linie</div>
+                </div>
+            </div>
+        </div>
 </div>
+
     <h3>Indlejre</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--nesting"></iframe>
+    <div class="component-preview  component-preview-grid-nesting" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                Level 1: .col-sm-9
+                <div class="row">
+                    <div class="col-8 col-sm-6">
+                        Level 2: .col-8 .col-sm-6
+                    </div>
+                    <div class="col-4 col-sm-6">
+                        Level 2: .col-4 .col-sm-6
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Ingen afstand mellem kolonner (ingen gutter)</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--no-gutters"></iframe>
+    <div class="component-preview  component-preview-grid-no-gutters" aria-label="">
+    <div class="grid-example container">
+    <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8
+        </div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
 </div>
+</div>
+
     <h3>'Auto' og 'Fill' kolonner - Specifik bredde på kun én kolonne</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--one-column-width"></iframe>
+    <div class="component-preview  component-preview-grid-one-column-width" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-6">
+                2 of 3 (.col-6)
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-5">
+                2 of 3 (.col-5)
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>'Auto' og 'Fill' kolonner - Individuel kolonnebredde efter indhold</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--variable-width-content"></iframe>
+    <div class="component-preview  component-preview-grid-variable-width-content" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row justify-content-md-center mb-2">
+            <div class="col col-md-2">
+                1 of 3
+            </div>
+            <div class="col-md-auto">
+                Kolonne med variabel bredde
+            </div>
+            <div class="col col-md-2">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-md-auto">
+                Kolonne med variabel bredde
+            </div>
+            <div class="col col-md-2">
+                3 of 3
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Rækkefølge - Order-klasser</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--ordering-visual"></iframe>
+    <div class="component-preview  component-preview-grid-ordering-visual" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Første kolonne, men ingen order-klasse
+            </div>
+            <div class="col order-12">
+                Anden kolonne, men vises som sidste kolonne
+            </div>
+            <div class="col order-1">
+                Tredje kolonne, men vises som anden kolonne
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Rækkefølge - Forskyd kolonner</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--offsets"></iframe>
+    <div class="component-preview  component-preview-grid-offsets" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2 grid-example-measure-row">
+            <div class="col-1">
+                <div class="align-text-center px-2">1</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">2</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">3</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">4</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">5</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">6</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">7</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">8</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">9</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">10</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">11</div>
+            </div>
+            <div class="col-1 ">
+                <div class="align-text-center px-2">12</div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        </div>
+    </div>
 </div>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--offsets-reset"></iframe>
 </div>
+
+    <div class="component-preview  component-preview-grid-offsets-reset" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                .col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-5 col-lg-6">
+                .col.col-sm-6.col-md-5.col-lg-6</div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                .col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
     <h3>Hjælpeklasser</h3>
     <h4>Hjælpeklasser: Flexbox - Vertikal</h4>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--util-flex-vertical-align-01"></iframe>
+    <div class="component-preview  component-preview-grid-util-flex-vertical-align-01" aria-label="">
+    <div class="grid-example v-align">
+    <div class="container">
+        <div class="row align-items-start mb-2 grid-example-row-flex">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row align-items-center mb-2 grid-example-row-flex">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row align-items-end grid-example-row-flex">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h4>Hjælpeklasser: Flexbox - Horisontal</h4>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--util-flex-horizontal-align"></iframe>
+    <div class="component-preview  component-preview-grid-util-flex-horizontal-align" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row justify-content-start mb-2">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-center mb-2">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-end mb-2">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-around mb-2">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
     <h4>Hjælpeklasser: Margin</h4>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--util-margin"></iframe>
+    <div class="component-preview  component-preview-grid-util-margin" aria-label="">
+    <div class="grid-example">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+        </div>
+        <div class="row">
+            <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+            <div class="col-auto">.col-auto</div>
+        </div>
+    </div>
 </div>
+</div>
+
 </div>
 <div class="container">
     <h2>Hjørner, streger, skygger</h2>
     <h3>Hjørner</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/border-radius"></iframe>
+    <div class="component-preview  component-preview-border-radius" aria-label="">
+    <div class="container">
+    <h3 class="h5">Firkantede hjørner (0px)</h3>
+    <p class="form-hint">Bruges til elementer, som man ikke kan interagere
+        med.</p>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="static-border-radius-example"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <pre>border-radius: 0;</pre>
+        </div>
+    </div>
+    <h3 class="h5">Runde hjørner (4px)</h3>
+    <p class="form-hint">Bruges til interaktive elementer, fx input-felter
+        og knapper.</p>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="interactive-border-radius-example"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+            <pre>border-radius: 4px</pre>
+        </div>
+    </div>
 </div>
+</div>
+
     <h3>Streger</h3>
         <div class="component-preview ">
             <div class="container">
@@ -391,141 +976,922 @@
             </div>
         </div>
     <h3>Skygger</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/shadows"></iframe>
+    <div class="component-preview  component-preview-shadows" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Modalvindue</h3>
+            <p class="form-hint">Skygge, der bruges på modalvinduer.</p>
+            <div class="heavy-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 8px 16px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Overflow menu</h3>
+            <p class="form-hint">Skygge, der bruges på overflow menuer</p>
+            <div class="moderately-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 4px 8px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Cards</h3>
+            <p class="form-hint">Skygge, der bruges på cards</p>
+            <div class="slightly-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 2px 4px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
 </div>
+</div>
+
 </div>
 <div class="container">
     <h2>Accordion</h2>
-    
+    <div class="component-preview  component-preview-accordion" aria-label="">
+    <div class="container">
 
-<div class="component-preview ">
+    <ul class="accordion ">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="a1">
+                Lorem ipsum dolor sit amet
+                <span class="accordion-icon ">
+                    <span class="icon_text">Information</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
+                </span>
+            </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/accordion"></iframe>
+            <div id="a1" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button  accordion-error " aria-expanded="true" aria-describedby="a2" aria-controls="a2">
+                Consectetur adipiscing elit
+                <span class="accordion-icon ">
+                    <span class="icon_text">Fejl</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="a2" aria-hidden="false" class="accordion-content">
+
+                <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
+                    <div class="alert-body">
+                        <p class="alert-text">Sed ut perspiciatis unde
+                            omnis iste natus
+                            error sit voluptatem accusantium doloremque
+                            laudantium.</p>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="a3">
+                Sed do eiusmod tempor
+                <span class="accordion-icon ">
+                    <span class="icon_text">Advarsel</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="a3" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="a4">
+                Labore et dolore magna
+                <span class="accordion-icon ">
+                    <span class="icon_text">Success</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="a4" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="a5">
+                Ut enim ad minim veniam</button>
+
+            <div id="a5" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+    </ul>
+
 </div>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/accordion-border"></iframe>
 </div>
-    
 
-<div class="component-preview ">
+    <div class="component-preview  component-preview-accordion-border" aria-label="">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <ul class="accordion accordion-bordered">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/accordion-multi"></iframe>
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="b-a1">
+                Lorem ipsum dolor sit amet
+                <span class="accordion-icon ">
+                    <span class="icon_text">Information</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
+                </span>
+            </button>
+
+            <div id="b-a1" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button  accordion-error " aria-expanded="true" aria-describedby="b-a2" aria-controls="b-a2">
+                Consectetur adipiscing elit
+                <span class="accordion-icon ">
+                    <span class="icon_text">Fejl</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="b-a2" aria-hidden="false" class="accordion-content">
+
+                <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
+                    <div class="alert-body">
+                        <p class="alert-text">Sed ut perspiciatis unde
+                            omnis iste natus
+                            error sit voluptatem accusantium doloremque
+                            laudantium.</p>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="b-a3">
+                Sed do eiusmod tempor
+                <span class="accordion-icon ">
+                    <span class="icon_text">Advarsel</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="b-a3" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="b-a4">
+                Labore et dolore magna
+                <span class="accordion-icon ">
+                    <span class="icon_text">Success</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="b-a4" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="b-a5">
+                Ut enim ad minim veniam</button>
+
+            <div id="b-a5" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+    </ul>
+
 </div>
+</div>
+
+    <div class="component-preview  component-preview-accordion-multi" aria-label="">
+    <div class="container">
+
+    <ul class="accordion  accordion-multiselectable">
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="m-a1">
+                Lorem ipsum dolor sit amet
+                <span class="accordion-icon ">
+                    <span class="icon_text">Information</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
+                </span>
+            </button>
+
+            <div id="m-a1" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button  accordion-error " aria-expanded="true" aria-describedby="m-a2" aria-controls="m-a2">
+                Consectetur adipiscing elit
+                <span class="accordion-icon ">
+                    <span class="icon_text">Fejl</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="m-a2" aria-hidden="false" class="accordion-content">
+
+                <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
+                    <div class="alert-body">
+                        <p class="alert-text">Sed ut perspiciatis unde
+                            omnis iste natus
+                            error sit voluptatem accusantium doloremque
+                            laudantium.</p>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="m-a3">
+                Sed do eiusmod tempor
+                <span class="accordion-icon ">
+                    <span class="icon_text">Advarsel</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="m-a3" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="m-a4">
+                Labore et dolore magna
+                <span class="accordion-icon ">
+                    <span class="icon_text">Success</span>
+                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
+                </span>
+            </button>
+
+            <div id="m-a4" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+        <li>
+            <button class="accordion-button " aria-expanded="false" aria-controls="m-a5">
+                Ut enim ad minim veniam</button>
+
+            <div id="m-a5" aria-hidden="true" class="accordion-content">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+
+    </ul>
+
+</div>
+</div>
+
 </div>
 <div class="container">
     <h2>Badges</h2>
-    
+    <div class="component-preview  component-preview-badges" aria-label="">
+    <div class="container pb-5">
+    <h3 class="h5">Stort badge</h3>
+    <label class="badge badge-large">Nyhed</label>
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/badges"></iframe>
+    <h3 class="h5">Lille badge</h3>
+    <label class="badge badge-small">Lille nyhed</label>
 </div>
+</div>
+
 </div>
 <div class="container">
     <h2>Beskeder</h2>
-    
+    <div class="component-preview  component-preview-alerts" aria-label="">
+    <div class="container">
 
-<div class="component-preview ">
+    <div class="alert alert-info " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading ">Informativ besked</p>
+            <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.</p>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        </div>
+    </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/alerts"></iframe>
+    <div class="alert alert-success " role="alert" aria-label="Beskedbox der viser succes">
+        <div class="alert-body">
+            <p class="alert-heading ">Succesmeddelelse</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-warning " role="alert" aria-label="Beskedbox der viser en advarsel">
+        <div class="alert-body">
+            <p class="alert-heading ">Advarsel</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-error " role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+        <div class="alert-body">
+            <p class="alert-heading ">Fejlbesked</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
 </div>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/alerts-icons"></iframe>
 </div>
-    
 
-<div class="component-preview ">
+    <div class="component-preview  component-preview-alerts-icons" aria-label="">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="alert alert-info alert--show-icon " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading ">Informativ besked - med ikon</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/alerts-texts"></iframe>
+        </div>
+    </div>
+
+    <div class="alert alert-success alert--show-icon " role="alert" aria-label="Beskedbox der viser succes">
+        <div class="alert-body">
+            <p class="alert-heading ">Succesmeddelelse - med ikon</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-warning alert--show-icon " role="alert" aria-label="Beskedbox der viser en advarsel">
+        <div class="alert-body">
+            <p class="alert-heading ">Advarsel - med ikon</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-error alert--show-icon " role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+        <div class="alert-body">
+            <p class="alert-heading ">Fejlbesked - med ikon</p>
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
 </div>
+</div>
+
+    <div class="component-preview  component-preview-alerts-texts" aria-label="">
+    <div class="container">
+
+    <div class="alert alert-info alert--show-icon " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading ">Informativ besked - kun overskrift
+            </p>
+            <p class="alert-text"></p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-info " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium.</p>
+
+        </div>
+    </div>
+
+    <div class="alert alert-info alert--paragraph " role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <p class="alert-heading ">Informativ besked - tekstafsnit</p>
+            <p class="alert-text">Multi line. Sed ut perspiciatis unde
+                omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui atione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui doloremipsa quae ab
+                illo inventore veritatis et quasi architecto beatae vitae
+                dicta sunt explicabo.</p>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
 </div>
 <div class="container">
     <h2>Cards</h2>
-    
+    <div class="component-preview  component-preview-cards-full-width" aria-label="">
+    <div class="container pb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card ">
 
-<div class="component-preview ">
+                <div class="card-header">
+                    <p class="h5 header-title">Header</p>
+                    <p class="sub-header">Understøttende tekst</p>
+                </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <div class="card-text">
+                    <p class="text">Dette er et <em>tekstområde</em>, hvor
+                        du kan skrive hvad du har lyst til.</p>
+                </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/cards-full-width"></iframe>
+                <div class="card-content">
+                    <div class="content-text">
+                        <p></p>
+                    </div>
+                    <div class="content">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
+                                <div class="row bg-teal p-6">
+                                    <div class="col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0">
+                                        <h2>Aliquam aliquet niboh faucibus
+                                            varius</h2>
+                                        <p>Aenean euismod vestibulum
+                                            lacinia. Pellentesque nec nisi
+                                            diam. Pellentesque nec urna vel
+                                            ante ultrices facilisis sed in
+                                            dolor. Curabitur eu leo semper,
+                                            gravida justo at, euismod ex.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-7 align-text-right">
+                                        <img src="/img/cards/Card-illustration-graf.svg" alt="Graf, der viser udviklingen fra 2015 til 2019" class="w-percent-100 w-percent-lg-80" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="action-content">
+
+                        </div>
+                        <div class="action-buttons">
+                            <button class="button button-secondary">Sekundærknap</button><button class="button button-tertiary">Tertiærknap</button>
+                        </div>
+                        <div class="action-links">
+                            <ul class="nobullet-list">
+                                <li><a href="javascript:void(0);" class="default link state">Et link
+                                        til et sted i løsningen</a></li>
+                                <li><a href="javascript:void(0);" class="icon-link">Et link til et
+                                        sted uden for
+                                        løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
-    
 
-<div class="component-preview ">
+    <div class="component-preview  component-preview-cards-half-width" aria-label="">
+    <div class="container pb-5">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="card ">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <div class="card-header">
+                    <p class="h5 header-title">Header</p>
+                    <p class="sub-header">Understøttende tekst</p>
+                </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/cards-half-width"></iframe>
+                <div class="card-content">
+                    <div class="content-text">
+                        <p></p>
+                    </div>
+                    <div class="content">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
+                                <div class="row bg-magenta p-6">
+                                    <div class="col-12 col-sm-6 mb-6 mb-sm-0">
+                                        <h2 class="h5">2018</h2><img src="/img/cards/card-illustration-22procent.svg" alt="22%" class="w-percent-60 w-percent-sm-40 w-percent-md-60" />
+                                        <p class="mt-0">Lorem ipsum dolor
+                                            sit amet</p>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h2 class="h5">2019</h2><img src="/img/cards/card-illustration-41procent.svg" alt="41%" class="w-percent-60 w-percent-sm-40 w-percent-md-60" />
+                                        <p class="mt-0">Etiam aliquet at
+                                            felis vel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-text">
+                    <p class="text">Dette er et <em>tekstområde</em>, hvor
+                        du kan skrive hvad du har lyst til.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0">
+            <div class="card ">
+
+                <div class="card-content">
+                    <div class="content-text">
+                        <p></p>
+                    </div>
+                    <div class="content">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
+                                <div class="row bg-violet p-6">
+                                    <div class="col-12 align-text-left">
+                                        <h2 class="h3 mb-0">3 ofte stillede
+                                            spørgsmål</h2>
+                                        <ul class="mt-0 noindent-list">
+                                            <li>In viverra faucibus lorem?
+                                            </li>
+                                            <li>Phasellus posuere neque?
+                                            </li>
+                                            <li>Nullam quis nunc dui?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-header">
+                    <p class="h5 header-title">Header</p>
+                    <p class="sub-header">Understøttende tekst</p>
+                </div>
+
+                <div class="card-action">
+                    <div class="action-content">
+
+                    </div>
+                    <div class="action-buttons">
+                        <button class="button button-secondary">Sekundærknap</button><button class="button button-tertiary">Tertiærknap</button>
+                    </div>
+                    <div class="action-links">
+                        <ul class="nobullet-list">
+                            <li><a href="javascript:void(0);" class="default link state">Et link til
+                                    et sted i løsningen</a></li>
+                            <li><a href="javascript:void(0);" class="icon-link">Et link til et sted
+                                    uden for
+                                    løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </div>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/cards-third-width"></iframe>
 </div>
+
+    <div class="component-preview  component-preview-cards-third-width" aria-label="">
+    <div class="container pb-5">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="card ">
+
+                <div class="card-header">
+                    <p class="h5 header-title">Header</p>
+                    <p class="sub-header">Understøttende tekst</p>
+                </div>
+
+                <div class="card-text">
+                    <p class="text">Dette er et <em>tekstområde</em>, hvor
+                        du kan skrive hvad du har lyst til.</p>
+                </div>
+
+                <div class="card-action">
+                    <div class="action-content">
+
+                    </div>
+                    <div class="action-buttons">
+                        <button class="button button-secondary">Sekundærknap</button><button class="button button-tertiary">Tertiærknap</button>
+                    </div>
+                    <div class="action-links">
+                        <ul class="nobullet-list">
+                            <li><a href="javascript:void(0);" class="default link state">Et link til
+                                    et sted i løsningen</a></li>
+                            <li><a href="javascript:void(0);" class="icon-link">Et link til et sted
+                                    uden for
+                                    løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
+            <div class="card ">
+
+                <div class="card-header">
+                    <p class="h5 header-title">Header</p>
+                    <p class="sub-header">Understøttende tekst</p>
+                </div>
+
+                <div class="card-content">
+                    <div class="content-text">
+                        <p></p>
+                    </div>
+                    <div class="content">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
+                                <div class="bg-turquoise p-6">
+                                    <h2 class="h5 mb-5">Lorem ipsum
+                                        fordeling</h2>
+                                    <div class="mt-3 row">
+                                        <div class="col-6">
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-label="80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#56d4d6" /></svg>
+                                            <p class="small-text mt-2">
+                                                <strong>København</strong>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-label="36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#56d4d6" /></svg>
+                                            <p class="small-text mt-2">
+                                                <strong>Hele landet</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
+            <div class="card ">
+
+                <div class="card-header">
+                    <p class="h5 header-title">Header</p>
+                    <p class="sub-header">Understøttende tekst</p>
+                </div>
+
+                <div class="card-text">
+                    <p class="text">Dette er et <em>tekstområde</em>, hvor
+                        du kan skrive hvad du har lyst til.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
 </div>
 <div class="container">
     <h2>Faneblade</h2>
-    
+    <div class="component-preview  component-preview-tabnav" aria-label="">
+    <div class="container pt-3 pt-md-0">
 
-<div class="component-preview ">
+    <ul class="tabnav">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <li class="">
+            <a href="#tab1" class="tabnav-item" aria-expanded="false">
+                <span>Fane 1</span>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tabnav"></iframe>
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab1">
+                <h2>Indhold 1</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="active">
+            <a href="#tab2" class="tabnav-item" aria-expanded="true">
+                <span>Fane 2</span>
+                <span class="sr-only">(valgt)</span>
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="false" id="tab2">
+                <h2>Indhold 2</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="">
+            <a href="#tab3" class="tabnav-item" aria-expanded="false">
+                <span>Fane 3</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab3">
+                <h2>Indhold 3</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="">
+            <a href="#tab4" class="tabnav-item" aria-expanded="false">
+                <span>Fane 4</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab4">
+                <h2>Indhold 4</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="">
+            <a href="#tab5" class="tabnav-item" aria-expanded="false">
+                <span>Fane 5</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab5">
+                <h2>Indhold 5</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+        <li class="">
+            <a href="#tab6" class="tabnav-item" aria-expanded="false">
+                <span>Fane 6</span>
+
+            </a>
+
+            <section class="tabnav-panel" aria-hidden="true" id="tab6">
+                <h2>Indhold 6</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus
+                    hendrerit augue, ac lacinia nisl dolor et augue. Ut
+                    lorem massa, consequat ut orci sit amet, maximus dictum
+                    orci. Mauris pharetra nunc sed augue bibendum semper.
+                    Donec in cursus orci. Ut sed posuere elit, quis semper
+                    turpis. Curabitur malesuada nisi nec nisl facilisis
+                    ornare. Praesent vestibulum, velit id sollicitudin
+                    auctor, ipsum lacus auctor nisl, in lacinia sem massa
+                    eget urna.</p>
+            </section>
+        </li>
+
+    </ul>
+
 </div>
+</div>
+
 </div>
 <article>
 <section>
@@ -960,104 +2326,604 @@
 <div class="container">
     <h2>Formular-elementer</h2>
     <h3>Felter</h3>
-    
+    <div class="component-preview  component-preview-text-input" aria-label="">
+    <div class="container">
 
-<div class="component-preview ">
+    <div class="form-group">
+        <label class="form-label " for="input-type-text" id="form-label-input-type-text">Inputfelt med label</label>
+        <span class="form-hint" id="input-hint-message-input-type-text">Fx
+            12345678</span>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <input class="form-input   " placeholder="" id="input-type-text" value="" name="input-type-text" type="text" aria-labelledby="form-label-input-type-text input-hint-message-input-type-text" />
+    </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/text-input"></iframe>
+    <div class="form-group">
+        <label class="form-label " for="input-focus" id="form-label-input-focus">Inputfelt i fokus</label>
+
+        <input class="form-input  focus " placeholder="" id="input-focus" value="" name="input-focus" type="text" />
+    </div>
+
+    <div class="form-group form-error">
+        <label class="form-label " for="form-error" id="form-label-form-error">Inputfelt med fejl</label>
+        <span class="form-hint" id="input-hint-message-form-error">Fx
+            12345678</span>
+        <span class="form-error-message" id="form-error-message-form-error" role="alert">Hjælpsom fejlbesked</span>
+        <input class="form-input   " placeholder="" id="form-error" value="" name="form-error" type="text" aria-describedby="form-error-message-form-error" aria-labelledby="form-label-form-error input-hint-message-form-error" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-disabled" id="form-label-input-disabled">Inputfelt som er låst</label>
+
+        <input class="form-input   " placeholder="" id="input-disabled" value="" name="input-disabled" type="text" disabled="disabled" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-optional" id="form-label-input-optional">Inputfelt som er valgfrit<span class="weight-normal"> (frivilligt)</span></label>
+
+        <input class="form-input   " placeholder="" id="input-optional" value="" name="input-optional" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-readonly" id="form-label-input-readonly">Inputfelt som er
+            readonly</label>
+
+        <input class="form-input   " placeholder="" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
+    </div>
+
 </div>
+</div>
+
     <h3>Feltbredde</h3>
-    
+    <div class="component-preview  component-preview-text-input-width" aria-label="">
+    <div class="container">
+    <h1 class="h4">Input bredde med rem</h1>
 
-<div class="component-preview ">
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-xxs">Inputfelt med
+            klassen input-width-xxs (8rem)</label>
+        <input class="form-input input-width-xxs" id="input-type-text-xxs" name="input-type-text-xxs" type="text" />
+    </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-xs">Inputfelt med
+            klassen input-width-xs (16rem)</label>
+        <input class="form-input input-width-xs" id="input-type-text-xs" name="input-type-text-xs" type="text" />
+    </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/text-input-width"></iframe>
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-s">Inputfelt med
+            klassen input-width-s (24rem)</label>
+        <input class="form-input input-width-s" id="input-type-text-s" name="input-type-text-s" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-m">Inputfelt med
+            klassen input-width-m (32rem)</label>
+        <input class="form-input input-width-m" id="input-type-text-m" name="input-type-text-m" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-l">Inputfelt med
+            klassen input-width-l (40rem)</label>
+        <input class="form-input input-width-l" id="input-type-text-l" name="input-type-text-l" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-xl">Inputfelt med
+            klassen input-width-xl (48rem)</label>
+        <input class="form-input input-width-xl" id="input-type-text-xl" name="input-type-text-xl" type="text" />
+    </div>
+
 </div>
+
+<div class="container">
+    <h1 class="h4 mt-7">Input bredde med tegn</h1>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-char-4">Inputfelt
+            med klassen input-char-4 (4 tegn)</label>
+        <input class="form-input input-char-4" id="input-type-text-char-4" name="input-type-text-char-4" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-char-8">Inputfelt
+            med klassen input-char-8 (8 tegn)</label>
+        <input class="form-input input-char-8" id="input-type-text-char-8" name="input-type-text-char-8" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-char-11">Inputfelt
+            med klassen input-char-11 (11 tegn)</label>
+        <input class="form-input input-char-11" id="input-type-text-char-11" name="input-type-text-char-11" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-char-27">Inputfelt
+            med klassen input-char-27 (27 tegn)</label>
+        <input class="form-input input-char-27" id="input-type-text-char-27" name="input-type-text-char-27" type="text" />
+    </div>
+
+</div>
+</div>
+
     <h3>Textområde</h3>
-    
+    <div class="component-preview  component-preview-text-area" aria-label="">
+    <div class="container">
 
-<div class="component-preview ">
+    <div class="form-group">
+        <label class="form-label " for="input-area">Tekstområde med
+            label</label>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <textarea class="form-input " rows="5" placeholder="" id="input-area" name="input-area"></textarea>
+    </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/text-area"></iframe>
+    <div class="form-group form-error">
+        <label class="form-label " for="input-error">Tekstområde med
+            fejlbesked</label>
+
+        <span class="form-error-message" id="form-error-message-input-error" role="alert">Hjælpsom
+            fejlbesked</span>
+        <textarea class="form-input " rows="5" placeholder="" id="input-error" name="input-error" aria-describedby="form-error-message-input-error"></textarea>
+    </div>
+
 </div>
+</div>
+
     <h3>Dropdown-menu</h3>
-    
+    <div class="component-preview preview-dropdown component-preview-select" aria-label="">
+    <div class="container">
+    <form class="form mb-7 input-width-m">
 
-<div class="component-preview preview-dropdown">
+        <div class="form-group ">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <label class="form-label " for="options">Dropdown label
+                (select)</label>
+            <select class=" form-select" name="options" id="options">
+                <option value="">Vælg</option>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/select"></iframe>
+                <option value="option1">Mulighed 1</option>
+
+                <option value="option2">Mulighed 2</option>
+
+                <option value="option3">Mulighed 3</option>
+
+            </select>
+        </div>
+
+    </form>
 </div>
+</div>
+
     <h3>Tjekboks</h3>
-    
+    <div class="component-preview  component-preview-checkbox" aria-label="">
+    <div class="container">
 
-<div class="component-preview ">
+    <!-- Example of small checkbox -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Lille tjekboks</legend>
+            <ul class="nobullet-list">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <li>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/checkbox"></iframe>
+                    <input id="Unchecked" type="checkbox" name="unchecked" value="unchecked" class="form-checkbox   " />
+                    <label for="Unchecked" class="">Ikke-udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked" type="checkbox" name="checked" value="checked" class="form-checkbox   " checked="" />
+                    <label for="Checked" class="">Udfyldt tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled" type="checkbox" name="disabled" value="disabled" class="form-checkbox   " disabled="" />
+                    <label for="disabled" class="">Inaktiv ikke-udfyldt
+                        tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-checked" type="checkbox" name="disabled-checked" value="disabled-checked" class="form-checkbox   " disabled="" checked="" />
+                    <label for="disabled-checked" class="">Inaktiv udfyldt
+                        tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="fokus" type="checkbox" name="Focus" value="fokus" class="form-checkbox focus  " />
+                    <label for="fokus" class="">Ikke-udfyldt tjekboks i
+                        fokus</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example of large checkbox (recommended) -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Stor tjekboks (anbefalet)</legend>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="Unchecked-large" type="checkbox" name="unchecked-large" value="unchecked-large" class="form-checkbox  checkbox-large " />
+                    <label for="Unchecked-large" class="">Stor ikke-udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked-large" type="checkbox" name="checked-large" value="checked-large" class="form-checkbox  checkbox-large " checked="" />
+                    <label for="Checked-large" class="">Stor udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-large" type="checkbox" name="disabled-large" value="disabled-large" class="form-checkbox  checkbox-large " disabled="" />
+                    <label for="disabled-large" class="">Stor inaktiv
+                        ikke-udfyldt tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-checked-large" type="checkbox" name="disabled-checked-large" value="disabled-checked-large" class="form-checkbox  checkbox-large " disabled="" checked="" />
+                    <label for="disabled-checked-large" class="">Stor
+                        inaktiv udfyldt tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="fokus-large" type="checkbox" name="fokus-large" value="fokus-large" class="form-checkbox focus checkbox-large " />
+                    <label for="fokus-large" class="">Stor ikke-udfyldt
+                        tjekboks i fokus</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with error message -->
+    <div class="form-group form-error">
+        <fieldset>
+            <legend class="h5">Tjekboks med fejl</legend>
+            <span class="form-error-message" role="alert">Hjælpsom
+                fejlbesked</span>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="car" type="checkbox" name="transport[]" value="car" class="form-checkbox  checkbox-large " />
+                    <label for="car" class="">Bil</label>
+
+                </li>
+
+                <li>
+
+                    <input id="bus" type="checkbox" name="transport[]" value="bus" class="form-checkbox  checkbox-large " />
+                    <label for="bus" class="">Bus</label>
+
+                </li>
+
+                <li>
+
+                    <input id="train" type="checkbox" name="transport[]" value="train" class="form-checkbox  checkbox-large " />
+                    <label for="train" class="">Tog</label>
+
+                </li>
+
+                <li>
+
+                    <input id="plane" type="checkbox" name="transport[]" value="plane" class="form-checkbox  checkbox-large " />
+                    <label for="plane" class="">Fly</label>
+
+                </li>
+
+                <li>
+
+                    <input id="ferry" type="checkbox" name="transport[]" value="ferry" class="form-checkbox  checkbox-large " />
+                    <label for="ferry" class="">Færge</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
 </div>
+</div>
+
     <h3>Radioknap</h3>
-    
+    <div class="component-preview  component-preview-radiobutton" aria-label="">
+    <div class="container">
+    <!-- Example with small radiobuttons -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Lille radioknap</legend>
+            <ul class="nobullet-list">
 
-<div class="component-preview ">
+                <li>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    <input id="unchecked" type="radio" name="unchecked" value="truth" class="form-radio   " />
+                    <label for="unchecked" id="form-label-unchecked" class="">Ikke-udfyldt radioknap </label>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/radiobutton"></iframe>
+                </li>
+
+                <li>
+
+                    <input id="Checked" type="radio" name="Checked" value="Checked" class="form-radio   " checked="" />
+                    <label for="Checked" id="form-label-Checked" class="">Udfyldt radioknap </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Disabled" type="radio" name="Disabled" value="Disabled" class="form-radio   " disabled="" />
+                    <label for="Disabled" id="form-label-Disabled" class="">Inaktiv ikke-udfyldt radioknap (disabled)
+                    </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Disabled-checked" type="radio" name="Disabled-checked" value="Disabled-checked" class="form-radio   " disabled="" checked="" />
+                    <label for="Disabled-checked" id="form-label-Disabled-checked" class="">Inaktiv
+                        udfyldt radioknap (disabled) </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Focus" type="radio" name="Focus" value="Focus" class="form-radio focus  " />
+                    <label for="Focus" id="form-label-Focus" class="">Ikke-udfyldt radioknap i fokus </label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with large radiobuttons (recommended) -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Stor radioknap (anbefalet)</legend>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="Unchecked-large" type="radio" name="Unchecked-large" value="Unchecked-large" class="form-radio  radio-large " />
+                    <label for="Unchecked-large" id="form-label-Unchecked-large" class="">Stor
+                        ikke-udfyldt radioknap </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked-large" type="radio" name="Checked-large" value="Checked-large" class="form-radio  radio-large " checked="" />
+                    <label for="Checked-large" id="form-label-Checked-large" class="">Stor udfyldt
+                        radioknap </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Disabled-large" type="radio" name="Disabled-large" value="Disabled-large" class="form-radio  radio-large " disabled="" />
+                    <label for="Disabled-large" id="form-label-Disabled-large" class="">Stor
+                        inaktiv ikke-udfyldt radioknap (disabled) </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Disabled-checked-large" type="radio" name="Disabled-checked-large" value="Disabled-checked-large" class="form-radio  radio-large " disabled="" checked="" />
+                    <label for="Disabled-checked-large" id="form-label-Disabled-checked-large" class="">Stor inaktiv udfyldt radioknap (disabled)
+                    </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Focus-large" type="radio" name="Focus-large" value="Focus-large" class="form-radio focus radio-large " />
+                    <label for="Focus-large" id="form-label-Focus-large" class="">Stor ikke-udfyldt radioknap i fokus
+                    </label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with error message -->
+    <div class="form-group form-error">
+        <fieldset>
+            <legend class="h5">Radioknap med fejl</legend>
+            <span class="form-error-message" role="alert">Hjælpsom
+                fejlbesked</span>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="weekly" type="radio" name="often-pay" value="weekly" class="form-radio  radio-large " />
+                    <label for="weekly" id="form-label-weekly" class="">Ugentligt </label>
+
+                </li>
+
+                <li>
+
+                    <input id="fortnightly" type="radio" name="often-pay" value="fortnightly" class="form-radio  radio-large " />
+                    <label for="fortnightly" id="form-label-fortnightly" class="">Hver fjortende dag </label>
+
+                </li>
+
+                <li>
+
+                    <input id="monthly" type="radio" name="often-pay" value="monthly" class="form-radio  radio-large " />
+                    <label for="monthly" id="form-label-monthly" class="">Månedligt </label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with help text -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Radioknap med hjælpetekst</legend>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="radio-helptext-1" type="radio" name="radio-helptext" value="v1" aria-labelledby="form-label-radio-helptext-1 helptext-radio-helptext-1" class="form-radio  radio-large " />
+                    <label for="radio-helptext-1" id="form-label-radio-helptext-1" class="">Valg 1
+                    </label>
+                    <span class="form-hint" id="helptext-radio-helptext-1">Dette er en
+                        hjælpetekst</span>
+
+                </li>
+
+                <li>
+
+                    <input id="radio-helptext-2" type="radio" name="radio-helptext" value="v2" aria-labelledby="form-label-radio-helptext-2 helptext-radio-helptext-2" class="form-radio  radio-large " />
+                    <label for="radio-helptext-2" id="form-label-radio-helptext-2" class="">Valg 2
+                    </label>
+                    <span class="form-hint" id="helptext-radio-helptext-2">Dette er en
+                        hjælpetekst</span>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
 </div>
+</div>
+
     <h3>Datofelt</h3>
-    
+    <div class="component-preview  component-preview-date-input" aria-label="">
+    <div class="container">
 
-<div class="component-preview ">
+    <!-- Start code: Indsendelsesfrist -->
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="form-group  ">
+        <fieldset>
+            <legend><label class="form-label">Indsendelsesfrist</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
+            <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
+            <div class="date-group js-calendar-group mt-3">
+                <div class="form-group form-group-day">
+                    <label class="form-label" for="date-day">Dag</label>
+                    <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="date-month">Måned</label>
+                    <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                </div>
+                <div class="form-group form-group-year ">
+                    <label class="form-label" for="date-year">År</label>
+                    <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/date-input"></iframe>
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- End code: Indsendelsesfrist -->
+
+    <!-- Start code: Datoangivelse med fejl -->
+
+    <div class="form-group  form-error  ">
+        <fieldset>
+            <legend><label class="form-label">Datoangivelse med
+                    fejl</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
+            <span class="form-error-message " id="form-error-message-input-error2" role="alert">Skriv en
+                kort fejlmeddelelse, der hjælper brugeren videre</span>
+            <div class="date-group js-calendar-group mt-3">
+                <div class="form-group form-group-day">
+                    <label class="form-label" for="date-day2">Dag</label>
+                    <input class="form-input js-calendar-day-input" id="date-day2" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="date-month2">Måned</label>
+                    <input class="form-input js-calendar-month-input" id="date-month2" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                </div>
+                <div class="form-group form-group-year ">
+                    <label class="form-label" for="date-year2">År</label>
+                    <input class="form-input js-calendar-year-input" id="date-year2" value="2030" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                </div>
+
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- End code: Datoangivelse med fejl -->
+
 </div>
+</div>
+
     <h3>Vedhæft fil</h3>
-    
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/file-input"></iframe>
+    <div class="component-preview  component-preview-file-input" aria-label="">
+    <div class="container">
+    <form class="form">
+        <div class="form-group file-input">
+            <label class="form-label" for="fileinput">Vedhæft fil</label>
+            <input type="file" id="fileinput" name="file" />
+        </div>
+    </form>
 </div>
+</div>
+
     <h3>Fieldset</h3>
-    
+    <div class="component-preview  component-preview-fieldset" aria-label="">
+    <div class="container">
+    <h1 class="h2">Dine kontaktoplysninger</h1>
+    <form>
 
-<div class="component-preview ">
+        <div class="form-group">
+            <label class="form-label " for="fnavn" id="form-label-fnavn">Fornavn</label>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <input class="form-input   " placeholder="" id="fnavn" value="" name="fnavn" type="text" />
+        </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/fieldset"></iframe>
+        <div class="form-group">
+            <label class="form-label " for="enavn" id="form-label-enavn">Efternavn</label>
+
+            <input class="form-input   " placeholder="" id="enavn" value="" name="enavn" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="email" id="form-label-email">E-mail adresse</label>
+
+            <input class="form-input   " placeholder="" id="email" value="" name="email" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="telefon" id="form-label-telefon">Telefonnr.</label>
+
+            <input class="form-input   " placeholder="" id="telefon" value="" name="telefon" type="text" />
+        </div>
+
+        <button class="button button-primary mt-9"> Gem oplysninger
+        </button>
+    </form>
 </div>
+</div>
+
 </div>
 <section>
     <div class="container">
@@ -1100,7 +2966,7 @@
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Myndighedsnavn</h6>
+                <p class="h5 authority-name"> Myndighedsnavn</p>
 
                 <p>Support: 12 34 56 78</p>
 
@@ -1160,7 +3026,7 @@
             <!--2B: Solution header: Authority name + text-->
             <div class="solution-info">
                 <!-- nav-secondary -->
-                <h6 class="h5 authority-name">Myndighedsnavn</h6>
+                <p class="h5 authority-name">Myndighedsnavn</p>
                 <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></span>
                 </p>
             </div>
@@ -1219,7 +3085,7 @@
         </div>
 
         <div class="solution-info-mobile">
-            <h6 class="h5 authority-name">Myndighedsnavn</h6>
+            <p class="h5 authority-name">Myndighedsnavn</p>
             <p>Support: 12 34 56 78 · <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a>
             </p>
         </div>
@@ -1260,7 +3126,7 @@
             <!--2B: Solution header: Authority name + text-->
             <div class="solution-info">
                 <!-- nav-secondary -->
-                <h6 class="h5 authority-name">Myndighedsnavn</h6>
+                <p class="h5 authority-name">Myndighedsnavn</p>
                 <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
             </div>
@@ -1410,7 +3276,7 @@
         </div>
 
         <div class="solution-info-mobile">
-            <h6 class="h5 authority-name">Myndighedsnavn</h6>
+            <p class="h5 authority-name">Myndighedsnavn</p>
             <p>Support: 12 34 56 78 · <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
@@ -1467,477 +3333,2243 @@
 </section>
 <div class="container">
   <h2>Knapper</h2>
-  
+  <div class="component-preview  component-preview-buttons-primary" aria-label="">
+    <div class="container py-8">
 
-<div class="component-preview ">
+    <button class="button button-primary"> Default </button>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-primary button-hover"> Hover </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-primary"></iframe>
+    <button class="button button-primary button-active"> Active </button>
+
+    <button class="button button-primary focus"> Focus </button>
+
+    <button class="button button-primary" disabled=""> Disabled </button>
+
 </div>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-secondary"></iframe>
 </div>
-  
 
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-secondary" aria-label="">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-secondary"> Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-secondary"></iframe>
+    <button class="button button-secondary button-hover"> Hover </button>
+
+    <button class="button button-secondary button-active"> Active </button>
+
+    <button class="button button-secondary focus"> Focus </button>
+
+    <button class="button button-secondary" disabled=""> Disabled </button>
+
 </div>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-back"></iframe>
 </div>
-  
 
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-secondary" aria-label="">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-secondary"> Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-only-icon"></iframe>
+    <button class="button button-secondary button-hover"> Hover </button>
+
+    <button class="button button-secondary button-active"> Active </button>
+
+    <button class="button button-secondary focus"> Focus </button>
+
+    <button class="button button-secondary" disabled=""> Disabled </button>
+
 </div>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-with-icon"></iframe>
 </div>
-  
 
-<div class="component-preview ">
+  <div class="component-preview  component-preview-buttons-back" aria-label="">
+    <div class="container py-8">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <button class="button button-quaternary">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Default </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/buttons-fileupload"></iframe>
+    <button class="button button-quaternary button-hover">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Hover </button>
+
+    <button class="button button-quaternary button-active">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Active </button>
+
+    <button class="button button-quaternary focus">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Focus </button>
+
+    <button class="button button-quaternary" disabled="">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+        Disabled </button>
+
 </div>
+</div>
+
+  <div class="component-preview  component-preview-buttons-only-icon" aria-label="">
+    <div class="container py-8">
+
+    <button class="button button-unstyled">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+        <span class="sr-only">Slet</span></button>
+
+</div>
+</div>
+
+  <div class="component-preview  component-preview-buttons-with-icon" aria-label="">
+    <div class="container py-8">
+
+    <button class="button button-primary">
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#refresh"></use></svg>
+        Refresh </button>
+
+</div>
+</div>
+
+  <div class="component-preview  component-preview-buttons-fileupload" aria-label="">
+    <div class="container py-8">
+
+    <div class="form-group">
+        <label class="form-label" for="fileinput1">Vælg fil</label>
+        <input type="file" id="fileinput1" name="file" />
+    </div>
+</div>
+</div>
+
 </div>
 <div class="container">
   <h2>Modalvinduer</h2>
-  
+  <div class="component-preview  component-preview-modal" aria-label="">
+    <div class="modal" id="[object Object]" aria-hidden="true">
+    <div class="modal__overlay bg-modal" tabindex="-1" data-micromodal-close="">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-id-1-title">
+            <div class="modal__header">
+                <h1 class="modal__title h2" id="modal-id-1-title">
+                    Modal title
+                </h1>
+            </div>
+            <div class="modal__content">
 
-<div class="component-preview ">
+            </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/modal"></iframe>
+            <button class="modal__close button button-secondary" aria-label="Close modal" data-micromodal-close="">Luk</button>
+        </div>
+    </div>
 </div>
+</div>
+
 </div>
 <div class="container">
   <h2>Overflow menu</h2>
   
-  
+  <div class="component-preview  component-preview-overflow-menu" aria-label="">
+    <div class="container pt-6">
 
-<div class="component-preview ">
+    <div class="overflow-menu  overflow-menu--open-right ">
+        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow1" aria-haspopup="true" aria-expanded="false">
+            Overflow menu
+            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#dots-vertical"></use></svg>
+            <span class="sr-only">Åbner overflow menu</span>
+        </button>
+        <div class="overflow-menu-inner" id="overflow1" aria-hidden="true">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <ul class="overflow-list">
+                <li><button>Option 1</button></li>
+                <li><button>Option 2</button></li>
+                <li><a href="#">Option 3 as link</a></li>
+                <li><button>Option 4 is longer text</button></li>
+            </ul>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/overflow-menu"></iframe>
+        </div>
+    </div>
+
 </div>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/overflow-menu-left"></iframe>
 </div>
+
+  <div class="component-preview  component-preview-overflow-menu-left" aria-label="">
+    <div class="container pt-6 align-text-right">
+
+    <div class="overflow-menu  overflow-menu--open-left ">
+        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow2" aria-haspopup="true" aria-expanded="false">
+            Overflow menu
+            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#dots-vertical"></use></svg>
+            <span class="sr-only">Åbner overflow menu</span>
+        </button>
+        <div class="overflow-menu-inner" id="overflow2" aria-hidden="true">
+
+            <ul class="overflow-list">
+                <li><button>Option 1</button></li>
+                <li><button>Option 2</button></li>
+                <li><a href="#">Option 3 as link</a></li>
+                <li><button>Option 4 is longer text</button></li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
 </div>
 <div class="container">
     <h2>Sidenavigation</h2>
     <h3>Ét niveau</h3>
-    
+    <div class="component-preview  component-preview-sidenav-normal-level1" aria-label="">
+    <div class="container mt-6 mb-6">
+    <nav>
+        <ul class="sidenav-list">
 
-<div class="component-preview ">
+            <li class="   ">
+                <a href="">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    Hovedside
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/sidenav-normal-level1"></iframe>
+                </a>
+
+            </li>
+
+            <li class="current active  ">
+                <a href="">
+
+                    Hovedside
+
+                </a>
+
+            </li>
+
+            <li class="   ">
+                <a href="">
+
+                    Hovedside
+
+                </a>
+
+            </li>
+
+        </ul>
+    </nav>
 </div>
+</div>
+
     <h3>2 niveauer</h3>
-    
+    <div class="component-preview  component-preview-sidenav-normal-level2" aria-label="">
+    <div class="container mt-6 mb-6">
+    <nav>
+        <ul class="sidenav-list">
 
-<div class="component-preview ">
+            <li class="   ">
+                <a href="">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    Hovedside
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/sidenav-normal-level2"></iframe>
+                </a>
+
+            </li>
+
+            <li class="current   ">
+                <a href="">
+
+                    Hovedside
+
+                </a>
+
+                <ul class="sidenav-sub_list">
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class=" active  ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="   ">
+                <a href="">
+
+                    Hovedside
+
+                </a>
+
+            </li>
+
+        </ul>
+    </nav>
 </div>
+</div>
+
     <h3>3 niveauer</h3>
-    
+    <div class="component-preview  component-preview-sidenav-normal-level3" aria-label="">
+    <div class="container mt-6 mb-6">
+    <nav>
+        <ul class="sidenav-list">
 
-<div class="component-preview ">
+            <li class="   ">
+                <a href="">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    Hovedside
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/sidenav-normal-level3"></iframe>
+                </a>
+
+            </li>
+
+            <li class="current   ">
+                <a href="">
+
+                    Hovedside
+
+                </a>
+
+                <ul class="sidenav-sub_list">
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="current   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                        <ul class="sidenav-sub_list">
+
+                            <li class="   ">
+                                <a href="">
+
+                                    Underside
+
+                                </a>
+
+                            </li>
+
+                            <li class="   ">
+                                <a href="">
+
+                                    Underside
+
+                                </a>
+
+                            </li>
+
+                            <li class=" active  ">
+                                <a href="">
+
+                                    Underside
+
+                                </a>
+
+                            </li>
+
+                            <li class="   ">
+                                <a href="">
+
+                                    Underside
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="   ">
+                <a href="">
+
+                    Hovedside
+
+                </a>
+
+            </li>
+
+        </ul>
+    </nav>
 </div>
+</div>
+
     <h3>Ét niveau</h3>
-    
+    <div class="component-preview  component-preview-sidenav-information-level1" aria-label="">
+    <div class="container mt-6 mb-6">
+    <nav>
+        <ul class="sidenav-list">
 
-<div class="component-preview ">
+            <li class="   ">
+                <a href="">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    Hovedside
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/sidenav-information-level1"></iframe>
+                    <span class="sidenav-information">Informationstekst for
+                        parent link</span>
+
+                </a>
+
+            </li>
+
+            <li class="current active  ">
+                <a href="">
+
+                    Hovedside
+
+                    <span class="sidenav-information">Informationstekst for
+                        current link</span>
+
+                </a>
+
+            </li>
+
+            <li class="   ">
+                <a href="">
+
+                    Hovedside
+
+                    <span class="sidenav-information">Informationstekst for
+                        another link</span>
+
+                </a>
+
+            </li>
+
+        </ul>
+    </nav>
 </div>
+</div>
+
     <h3>2 niveauer</h3>
-    
+    <div class="component-preview  component-preview-sidenav-information-level2" aria-label="">
+    <div class="container mt-6 mb-6">
+    <nav>
+        <ul class="sidenav-list">
 
-<div class="component-preview ">
+            <li class="   ">
+                <a href="">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    Hovedside
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/sidenav-information-level2"></iframe>
+                    <span class="sidenav-information">Informationstekst for
+                        parent link</span>
+
+                </a>
+
+            </li>
+
+            <li class="current   ">
+                <a href="">
+
+                    Hovedside
+
+                    <span class="sidenav-information">Informationstekst for
+                        current link</span>
+
+                </a>
+
+                <ul class="sidenav-sub_list">
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class=" active  ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="   ">
+                <a href="">
+
+                    Hovedside
+
+                    <span class="sidenav-information">Informationstekst for
+                        another link</span>
+
+                </a>
+
+            </li>
+
+        </ul>
+    </nav>
 </div>
+</div>
+
     <h3>3 niveauer</h3>
-    
+    <div class="component-preview  component-preview-sidenav-information-level3" aria-label="">
+    <div class="container mt-6 mb-6">
+    <nav>
+        <ul class="sidenav-list">
 
-<div class="component-preview ">
+            <li class="   ">
+                <a href="">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    Hovedside
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/sidenav-information-level3"></iframe>
+                    <span class="sidenav-information">Informationstekst for
+                        parent link</span>
+
+                </a>
+
+            </li>
+
+            <li class="current   ">
+                <a href="">
+
+                    Hovedside
+
+                    <span class="sidenav-information">Informationstekst for
+                        current link</span>
+
+                </a>
+
+                <ul class="sidenav-sub_list">
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="current   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                        <ul class="sidenav-sub_list">
+
+                            <li class="   ">
+                                <a href="">
+
+                                    Underside
+
+                                </a>
+
+                            </li>
+
+                            <li class="   ">
+                                <a href="">
+
+                                    Underside
+
+                                </a>
+
+                            </li>
+
+                            <li class=" active  ">
+                                <a href="">
+
+                                    Underside
+
+                                </a>
+
+                            </li>
+
+                            <li class="   ">
+                                <a href="">
+
+                                    Underside
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                    <li class="   ">
+                        <a href="">
+
+                            Underside
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="   ">
+                <a href="">
+
+                    Hovedside
+
+                    <span class="sidenav-information">Informationstekst for
+                        another link</span>
+
+                </a>
+
+            </li>
+
+        </ul>
+    </nav>
 </div>
+</div>
+
 </div>
 <div class="container">
   <h2>Skjul og vis (Collapse)</h2>
   <h3>Radioknap - skjul og vis indhold</h3>
-  
+  <div class="component-preview  component-preview-radio-toggle-content" aria-label="">
+    <div class="container js-radio-toggle-group">
+    <fieldset>
+        <legend class="h4">Vælg en radioknap</legend>
+        <ul class="nobullet-list">
+            <li>
 
-<div class="component-preview ">
+                <input id="id-radio1" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " checked="" data-js-target="#collapse-radio1" aria-controls="collapse-radio1" aria-expanded="false" />
+                <label for="id-radio1" id="form-label-id-radio1" class="">Radioknap viser indhold <span class="sr-only">Udfyld informationer
+                        herunder</span></label>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <div id="collapse-radio1" aria-hidden="true" class="box-border-l collapsed">
+                    <div class="py-4">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/radio-toggle-content"></iframe>
+                        <div class="form-group">
+                            <label class="form-label " for="textinput1" id="form-label-textinput1">Inputfelt med
+                                label</label>
+
+                            <input class="form-input  input-width-m " placeholder="" id="textinput1" value="" name="text1" type="text" />
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+
+                <input id="id-radio2" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " data-js-target="#collapse-radio2" />
+                <label for="id-radio2" id="form-label-id-radio2" class="">Radioknap viser indhold med fejl <span class="sr-only">Udfyld informationer
+                        herunder</span></label>
+
+                <div id="collapse-radio2" aria-hidden="true" class="box-border-l collapsed">
+                    <div class="py-4">
+
+                        <div class="form-group form-error">
+                            <label class="form-label " for="textinput2" id="form-label-textinput2">Inputfelt med
+                                label</label>
+
+                            <span class="form-error-message" id="form-error-message-textinput2" role="alert">Hjælpsom fejlbesked</span>
+                            <input class="form-input  input-width-m " placeholder="" id="textinput2" value="" name="text2" type="text" aria-describedby="form-error-message-textinput2" />
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </fieldset>
 </div>
+</div>
+
   <h3>Checkbox - skjul og vis indhold</h3>
-  
+  <div class="component-preview  component-preview-checkbox-toggle-content" aria-label="">
+    <div class="container">
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Vælg fra listen</legend>
+            <ul class="nobullet-list">
+                <li>
 
-<div class="component-preview ">
+                    <input id="id-checkbox1" type="checkbox" name="checkbox1" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check1" aria-controls="collapse-check1" aria-expanded="false" />
+                    <label for="id-checkbox1" class="">Tjekboks viser
+                        indhold</label>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <p>Dette indhold bliver vist når tjekboksen er
+                                valgt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/checkbox-toggle-content"></iframe>
+                    <input id="id-checkbox2" type="checkbox" name="checkbox2" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" checked="" data-js-target="#collapse-check2" aria-controls="collapse-check2" aria-expanded="false" />
+                    <label for="id-checkbox2" class="">Tjekboks viser
+                        indhold</label>
+
+                    <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <p>Dette indhold bliver vist når tjekboksen er
+                                valgt.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
 </div>
+</div>
+
   <h3>Generel skjul og vis indhold funktionalitet</h3>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/basic-collapse"></iframe>
+  <div class="component-preview  component-preview-basic-collapse" aria-label="">
+    <div class="container">
+    <button class="button button-secondary js-collapse" data-js-target="#collapse1" aria-controls="collapse1" aria-expanded="false">Vis indhold</button>
+    <div id="collapse1" aria-hidden="true" class="box-border-l mt-4 collapsed">
+        <div class="py-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+        </div>
+    </div>
 </div>
+</div>
+
 </div>
 <div class="container">
   <h2>Spinner</h2>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/spinner"></iframe>
+  <div class="component-preview  component-preview-spinner" aria-label="">
+    <div class="spinner"></div>
 </div>
+
 </div>
 <div class="container">
   <h2>Søgefelt</h2>
-  
+  <div class="component-preview preview-search-bar component-preview-search" aria-label="">
+    <div class="container">
+    <div class="form-group search">
+        <label for="input-type-text" class="sr-only">Søg efter
+            indhold</label>
+        <input class="form-input input-char-27" id="input-type-text" name="search-button" title="Search" type="search" />
+        <button class="button button-search">Søg</button>
+    </div>
 
-<div class="component-preview preview-search-bar">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/search"></iframe>
+    <div class="form-group search">
+        <label for="input-type-text-icon" class="sr-only">Søg efter
+            indhold</label>
+        <input class="form-input input-width-xs" id="input-type-text-icon" name="search-icon" title="Search" type="search" />
+        <button class="button button-search"><svg class="icon-svg m-0" focusable="false" aria-hidden="true"><use xlink:href="#magnify"></use></svg><span class="sr-only">Søg</span></button>
+    </div>
 </div>
+</div>
+
 </div>
 <div class="container">
   <h2>Tabeller</h2>
   <h3>Standard</h3>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/table"></iframe>
+  <div class="component-preview  component-preview-table" aria-label="">
+    <div class="container">
+    <div class="table--responsive-scroll">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Affaldstype</th>
+                    <th>Farvekode</th>
+                    <th>Beskrivelse</th>
+                    <th>Hvor ender det?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dagrenovation</td>
+                    <td>Grøn</td>
+                    <td>Madaffald, samt papir, pap eller plastik der ikke
+                        kan genanvendes, fordi der er madrester eller andet
+                        snask på.</td>
+                    <td>Alt det affald, du smider ud i din primære
+                        skraldespand, som er dagrenovationen, bliver hentet
+                        og kørt på forbrændingen. </td>
+                </tr>
+                <tr>
+                    <td>Bioaffald og kompost</td>
+                    <td>Beige</td>
+                    <td>Alt madaffald uden fødevareemballage.</td>
+                    <td>Bioaffaldet kommes i bionedbrydelige poser, som
+                        bliver komposteret til muld.</td>
+                </tr>
+                <tr>
+                    <td>Glas</td>
+                    <td>Hvid</td>
+                    <td>Alle typer glas og flasker.</td>
+                    <td>De hele vinflasker rengøres og genbruges af
+                        vinhuse, mens glasskårene bliver smeltet om til nyt
+                        glas.</td>
+                </tr>
+                <tr>
+                    <td>Elektronik</td>
+                    <td>Orange</td>
+                    <td>Genstande der har brugt strøm.</td>
+                    <td>Det elektroniske affald bliver typisk kørt til et
+                        demonteringsanlæg, hvor det bliver skilt ad, så de
+                        forskellige dele kan genanvendes separat.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+</div>
+
   <h3>Uden ramme</h3>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/table--borderless"></iframe>
+  <div class="component-preview  component-preview-table-borderless" aria-label="">
+    <div class="container">
+    <div class="table--responsive-scroll">
+        <table class="table table--borderless">
+            <thead>
+                <tr>
+                    <th>Affaldstype</th>
+                    <th>Farvekode</th>
+                    <th>Beskrivelse</th>
+                    <th>Hvor ender det?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dagrenovation</td>
+                    <td>Grøn</td>
+                    <td>Madaffald, samt papir, pap eller plastik der ikke
+                        kan genanvendes, fordi der er madrester eller andet
+                        snask på.</td>
+                    <td>Alt det affald, du smider ud i din primære
+                        skraldespand, som er dagrenovationen, bliver hentet
+                        og kørt på forbrændingen. </td>
+                </tr>
+                <tr>
+                    <td>Bioaffald og kompost</td>
+                    <td>Beige</td>
+                    <td>Alt madaffald uden fødevareemballage.</td>
+                    <td>Bioaffaldet kommes i bionedbrydelige poser, som
+                        bliver komposteret til muld.</td>
+                </tr>
+                <tr>
+                    <td>Glas</td>
+                    <td>Hvid</td>
+                    <td>Alle typer glas og flasker.</td>
+                    <td>De hele vinflasker rengøres og genbruges af
+                        vinhuse, mens glasskårene bliver smeltet om til nyt
+                        glas.</td>
+                </tr>
+                <tr>
+                    <td>Elektronik</td>
+                    <td>Orange</td>
+                    <td>Genstande der har brugt strøm.</td>
+                    <td>Det elektroniske affald bliver typisk kørt til et
+                        demonteringsanlæg, hvor det bliver skilt ad, så de
+                        forskellige dele kan genanvendes separat.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-  <h3>Zebralinier</h3>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/table--bordered-zebra"></iframe>
 </div>
+
+  <h3>Zebralinjer</h3>
+  <div class="component-preview  component-preview-table-bordered-zebra" aria-label="">
+    <div class="container">
+    <div class="table--responsive-scroll">
+        <table class="table table--zebra">
+            <thead>
+                <tr>
+                    <th>Affaldstype</th>
+                    <th>Farvekode</th>
+                    <th>Beskrivelse</th>
+                    <th>Hvor ender det?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dagrenovation</td>
+                    <td>Grøn</td>
+                    <td>Madaffald, samt papir, pap eller plastik der ikke
+                        kan genanvendes, fordi der er madrester eller andet
+                        snask på.</td>
+                    <td>Alt det affald, du smider ud i din primære
+                        skraldespand, som er dagrenovationen, bliver hentet
+                        og kørt på forbrændingen. </td>
+                </tr>
+                <tr>
+                    <td>Bioaffald og kompost</td>
+                    <td>Beige</td>
+                    <td>Alt madaffald uden fødevareemballage.</td>
+                    <td>Bioaffaldet kommes i bionedbrydelige poser, som
+                        bliver komposteret til muld.</td>
+                </tr>
+                <tr>
+                    <td>Glas</td>
+                    <td>Hvid</td>
+                    <td>Alle typer glas og flasker.</td>
+                    <td>De hele vinflasker rengøres og genbruges af
+                        vinhuse, mens glasskårene bliver smeltet om til nyt
+                        glas.</td>
+                </tr>
+                <tr>
+                    <td>Elektronik</td>
+                    <td>Orange</td>
+                    <td>Genstande der har brugt strøm.</td>
+                    <td>Det elektroniske affald bliver typisk kørt til et
+                        demonteringsanlæg, hvor det bliver skilt ad, så de
+                        forskellige dele kan genanvendes separat.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
   <h3>Responsiv</h3>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/table--responsive"></iframe>
+  <div class="component-preview  component-preview-table-responsive" aria-label="">
+    <div class="container">
+    <p class="h5">Overflow scroll</p>
+    <p>Wrap table in .table--responsive-scroll</p>
+    <div class="table--responsive-scroll">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Affaldstype</th>
+                    <th>Farvekode</th>
+                    <th>Beskrivelse</th>
+                    <th>Hvor ender det?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dagrenovation</td>
+                    <td>Grøn</td>
+                    <td>Madaffald, samt papir, pap eller plastik der ikke
+                        kan genanvendes, fordi der er madrester eller andet
+                        snask på.</td>
+                    <td>Alt det affald, du smider ud i din primære
+                        skraldespand, som er dagrenovationen, bliver hentet
+                        og kørt på forbrændingen. </td>
+                </tr>
+                <tr>
+                    <td>Bioaffald og kompost</td>
+                    <td>Beige</td>
+                    <td>Alt madaffald uden fødevareemballage.</td>
+                    <td>Bioaffaldet kommes i bionedbrydelige poser, som
+                        bliver komposteret til muld.</td>
+                </tr>
+                <tr>
+                    <td>Glas</td>
+                    <td>Hvid</td>
+                    <td>Alle typer glas og flasker.</td>
+                    <td>De hele vinflasker rengøres og genbruges af
+                        vinhuse, mens glasskårene bliver smeltet om til nyt
+                        glas.</td>
+                </tr>
+                <tr>
+                    <td>Elektronik</td>
+                    <td>Orange</td>
+                    <td>Genstande der har brugt strøm.</td>
+                    <td>Det elektroniske affald bliver typisk kørt til et
+                        demonteringsanlæg, hvor det bliver skilt ad, så de
+                        forskellige dele kan genanvendes separat.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+
+<div class="container pt-6">
+    <p class="h5">Responsive headers</p>
+    <p>Add .table--responsive-headers class to table</p>
+    <table class="table table--borderless table--responsive-headers">
+        <thead>
+            <tr>
+                <th>Affaldstype</th>
+                <th>Farvekode</th>
+                <th>Beskrivelse</th>
+                <th>Hvor ender det?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dagrenovation</td>
+                <td>Grøn</td>
+                <td>Madaffald, samt papir, pap eller plastik der ikke kan
+                    genanvendes, fordi der er madrester eller andet snask
+                    på.</td>
+                <td>Alt det affald, du smider ud i din primære
+                    skraldespand, som er dagrenovationen, bliver hentet og
+                    kørt på forbrændingen. </td>
+            </tr>
+            <tr>
+                <td>Bioaffald og kompost</td>
+                <td>Beige</td>
+                <td>Alt madaffald uden fødevareemballage.</td>
+                <td>Bioaffaldet kommes i bionedbrydelige poser, som bliver
+                    komposteret til muld.</td>
+            </tr>
+            <tr>
+                <td>Glas</td>
+                <td>Hvid</td>
+                <td>Alle typer glas og flasker.</td>
+                <td>De hele vinflasker rengøres og genbruges af vinhuse,
+                    mens glasskårene bliver smeltet om til nyt glas.</td>
+            </tr>
+            <tr>
+                <td>Elektronik</td>
+                <td>Orange</td>
+                <td>Genstande der har brugt strøm.</td>
+                <td>Det elektroniske affald bliver typisk kørt til et
+                    demonteringsanlæg, hvor det bliver skilt ad, så de
+                    forskellige dele kan genanvendes separat.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
   <h3>Forskellig linjehøjde</h3>
-  
+  <div class="component-preview  component-preview-table-lineheight" aria-label="">
+    <div class="container">
+    <p class="h5">Normal</p>
+    <div class="table--responsive-scroll">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Affaldstype</th>
+                    <th>Farvekode</th>
+                    <th>Beskrivelse</th>
+                    <th>Hvor ender det?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dagrenovation</td>
+                    <td>Grøn</td>
+                    <td>Madaffald, samt papir.</td>
+                    <td>Alt det affald, du smider ud i din. </td>
+                </tr>
+                <tr>
+                    <td>Bioaffald og kompost</td>
+                    <td>Beige</td>
+                    <td>Alt madaffald.</td>
+                    <td>Bioaffaldet kommes i bionedbrydelige.</td>
+                </tr>
+                <tr>
+                    <td>Glas</td>
+                    <td>Hvid</td>
+                    <td>Alle typer glas.</td>
+                    <td>De hele vinflasker.</td>
+                </tr>
+                <tr>
+                    <td>Elektronik</td>
+                    <td>Orange</td>
+                    <td>Genstande.</td>
+                    <td>Det elektroniske affald.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<div class="component-preview ">
+    <p class="h5">Klasse: compact</p>
+    <div class="table--responsive-scroll">
+        <table class="table table--compact">
+            <thead>
+                <tr>
+                    <th>Affaldstype</th>
+                    <th>Farvekode</th>
+                    <th>Beskrivelse</th>
+                    <th>Hvor ender det?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dagrenovation</td>
+                    <td>Grøn</td>
+                    <td>Madaffald, samt papir.</td>
+                    <td>Alt det affald, du smider ud i din. </td>
+                </tr>
+                <tr>
+                    <td>Bioaffald og kompost</td>
+                    <td>Beige</td>
+                    <td>Alt madaffald.</td>
+                    <td>Bioaffaldet kommes i bionedbrydelige.</td>
+                </tr>
+                <tr>
+                    <td>Glas</td>
+                    <td>Hvid</td>
+                    <td>Alle typer glas.</td>
+                    <td>De hele vinflasker.</td>
+                </tr>
+                <tr>
+                    <td>Elektronik</td>
+                    <td>Orange</td>
+                    <td>Genstande.</td>
+                    <td>Det elektroniske affald.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/table--lineheight"></iframe>
+    <p class="h5">Klasse: extracompact</p>
+    <div class="table--responsive-scroll">
+        <table class="table table--extracompact">
+            <thead>
+                <tr>
+                    <th>Affaldstype</th>
+                    <th>Farvekode</th>
+                    <th>Beskrivelse</th>
+                    <th>Hvor ender det?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dagrenovation</td>
+                    <td>Grøn</td>
+                    <td>Madaffald, samt papir.</td>
+                    <td>Alt det affald, du smider ud i din. </td>
+                </tr>
+                <tr>
+                    <td>Bioaffald og kompost</td>
+                    <td>Beige</td>
+                    <td>Alt madaffald.</td>
+                    <td>Bioaffaldet kommes i bionedbrydelige.</td>
+                </tr>
+                <tr>
+                    <td>Glas</td>
+                    <td>Hvid</td>
+                    <td>Alle typer glas.</td>
+                    <td>De hele vinflasker.</td>
+                </tr>
+                <tr>
+                    <td>Elektronik</td>
+                    <td>Orange</td>
+                    <td>Genstande.</td>
+                    <td>Det elektroniske affald.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+</div>
+
   <h3>Med titel i venstre kolonne</h3>
-  
+  <div class="component-preview  component-preview-table-body-headers" aria-label="">
+    <div class="container">
+    <div class="table--responsive-scroll">
+        <table class="table table--borderless table--compact">
+            <tbody>
+                <tr>
+                    <th class="w-percent-md-30">Virksomhedens navn</th>
+                    <td>Forsikringens forsikring (enhed)</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="w-percent-md-30">Kontaktperson</th>
+                    <td>John Doe<br />privatskade@ff.dk<br />+45 1234 5678</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-2/">Rediger</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="w-percent-md-30">Afsender er</th>
+                    <td>Forsikringens forsikring (enhed)</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<div class="component-preview ">
+    <div class="table--responsive-scroll mt-7">
+        <table class="table table--compact">
+            <tbody>
+                <tr>
+                    <th class="w-percent-md-30">Virksomhedens navn</th>
+                    <td>Forsikringens forsikring (enhed)</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="w-percent-md-30">Kontaktperson</th>
+                    <td>John Doe<br />privatskade@ff.dk<br />+45 1234 5678</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-2/">Rediger</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="w-percent-md-30">Afsender er</th>
+                    <td>Forsikringens forsikring (enhed)</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/table--body-headers"></iframe>
+    <div class="table--responsive-scroll mt-7">
+        <table class="table table--zebra table--compact">
+            <tbody>
+                <tr>
+                    <th class="w-percent-md-30">Virksomhedens navn</th>
+                    <td>Forsikringens forsikring (enhed)</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="w-percent-md-30">Kontaktperson</th>
+                    <td>John Doe<br />privatskade@ff.dk<br />+45 1234 5678</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-2/">Rediger</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="w-percent-md-30">Afsender er</th>
+                    <td>Forsikringens forsikring (enhed)</td>
+                    <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+</div>
+
 </div>
 <div class="container">
   <h2>Tags</h2>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tags"></iframe>
+  <div class="component-preview  component-preview-tags" aria-label="">
+    <div class="container py-8">
+    <button class="tag ">Default </button><button class="tag tag-hover">Hover </button><button class="tag tag-active">Active </button><button class="tag focus">Focus </button>
 </div>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tags-icon"></iframe>
 </div>
+
+  <div class="component-preview  component-preview-tags-icon" aria-label="">
+    <div class="container py-8">
+    <button class="tag tag-icon">Default
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg>
+    </button><button class="tag tag-icon tag-hover">Hover
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg>
+    </button><button class="tag tag-icon tag-active">Active
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg>
+    </button><button class="tag tag-icon focus">Focus
+        <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg>
+    </button>
+</div>
+</div>
+
 </div>
 <div class="container">
   <h2>Tooltip og popover</h2>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tooltip-button"></iframe>
+  <div class="component-preview  component-preview-tooltip-button" aria-label="">
+    <div class="container py-8">
+    <button class="button button-primary js-tooltip" data-tooltip="Dette er et tooltip">
+        Knap med tooltip
+    </button>
 </div>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tooltip-icon"></iframe>
 </div>
-  
 
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/popover-icon"></iframe>
+  <div class="component-preview  component-preview-tooltip-icon" aria-label="">
+    <div class="container py-8">
+    <a href="javascript:void(0)" class="js-tooltip" data-tooltip="Dette er en hjælpetekst i en popover"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg></a>
 </div>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tooltip-position"></iframe>
 </div>
+
+  <div class="component-preview  component-preview-popover-icon" aria-label="">
+    <div class="container py-8">
+    <a href="javascript:void(0)" class="popover js-tooltip" data-tooltip-trigger="click" data-tooltip-position="top" aria-label="Klik på ikon for tooltip" data-tooltip="Dette er en hjælpetekst i en popover"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg></a>
+</div>
+</div>
+
+  <div class="component-preview  component-preview-tooltip-position" aria-label="">
+    <div class="container py-8">
+    <!-- Placering: top -->
+    <button class="button button-primary js-tooltip" data-tooltip-position="top" data-tooltip="Top tooltip">Top</button>
+
+    <!-- Placering: bund -->
+    <button class="button button-primary js-tooltip" data-tooltip-position="bottom" data-tooltip="Bund tooltip">Bund</button>
+</div>
+</div>
+
 </div>
 <div class="container">
   <h2>Trinindikatorer</h2>
   <h3>Trinindikator i overflow-menu</h3>
-  
+  <div class="component-preview  component-preview-tringuide-overflowmenu" aria-label="">
+    <div class="container pt-5">
+    <div class="row">
+        <div class="col-12 col-lg-3 sidebar-col">
 
-<div class="component-preview ">
+            <div class="overflow-menu  overflow-menu--open-right ">
+                <button class="button-overflow-menu js-dropdown " data-js-target="#overflow5" aria-haspopup="true" aria-expanded="false">
+                    Trin 3 af 5
+                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#menu-down"></use></svg>
+                    <span class="sr-only">Åbner overflow menu</span>
+                </button>
+                <div class="overflow-menu-inner" id="overflow5" aria-hidden="true">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    <ul class="sidenav-list">
+                        <li>
+                            <a href="#">
+                                1. Trin 1
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                2. Trin 2
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="active current">
+                            <a href="#">
+                                3. Trin 3 (valgt)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                4. Trin 4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                5. Trin 5
+                            </a>
+                        </li>
+                    </ul>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tringuide-overflowmenu"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
+</div>
+
   <h3>Trinindikator - responsivt i overflow-menu</h3>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tringuide-responsive-overflowmenu"></iframe>
+  <div class="component-preview  component-preview-tringuide-responsive-overflowmenu" aria-label="">
+    <div class="container pt-5">
+    <div class="row">
+        <div class="col-12 col-lg-3 sidebar-col">
+            <div class="overflow-menu  overflow-menu--open-right overflow-menu--md-no-responsive">
+                <button class="button-overflow-menu js-dropdown " data-js-target="#overflow4" aria-haspopup="true" aria-expanded="false">
+                    Trin 3 af 5
+                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-down"></use></svg>
+                    <span class="sr-only">Åbner overflow menu</span>
+                </button>
+                <div class="overflow-menu-inner" id="overflow4" aria-hidden="true">
+                    <ul class="sidenav-list">
+                        <li>
+                            <a href="#">
+                                1. Trin 1
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                2. Trin 2
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#check"></use></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="active current">
+                            <a href="#">
+                                3. Trin 3 (valgt)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                4. Trin 4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                5. Trin 5
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
   <h3>Klikbar trinindikator</h3>
-  
+  <div class="component-preview  component-preview-tringuide-clickable" aria-label="">
+    <div class="container pt-5">
+    <div class="row">
+        <div class="col-12 col-lg-3 sidebar-col">
 
-<div class="component-preview ">
+            <ul class="sidenav-list">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <li class=" ">
+                    <a href="">
+                        1. Trin 1
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tringuide-clickable"></iframe>
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class=" ">
+                    <a href="">
+                        2. Trin 2
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class=" active current">
+                    <a href="">
+                        3. Trin 3 (valgt)
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class=" ">
+                    <a href="">
+                        4. Trin 4
+
+                    </a>
+                </li>
+
+                <li class=" ">
+                    <a href="">
+                        5. Trin 5
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
 </div>
+</div>
+
   <h3>Låst trinindikator</h3>
-  
+  <div class="component-preview  component-preview-tringuide-locked" aria-label="">
+    <div class="container pt-5">
+    <div class="row">
+        <div class="col-12 col-lg-3 sidebar-col">
 
-<div class="component-preview ">
+            <ul class="sidenav-list sidenav-list-locked">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
+                        1. Trin 1
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tringuide-locked"></iframe>
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
+                        2. Trin 2
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class="disabled active current ">
+                    <a tabindex="-1" aria-disabled="true">
+                        3. Trin 3 (valgt)
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
+                        4. Trin 4
+
+                    </a>
+                </li>
+
+                <li class="disabled  ">
+                    <a tabindex="-1" aria-disabled="true">
+                        5. Trin 5
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
 </div>
+</div>
+
   <h3>Trinindikator med information</h3>
-  
+  <div class="component-preview  component-preview-tringuide-information" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-3 sidebar-col">
 
-<div class="component-preview ">
+            <ul class="sidenav-list">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <li class=" ">
+                    <a href="">
+                        <div class="d-inline-block">
+                            1. Trin 1
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/tringuide-information"></iframe>
+                            <p class="sidenav-information">
+                                Informationstekst for trin 1</p>
+
+                        </div>
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class=" ">
+                    <a href="">
+                        <div class="d-inline-block">
+                            2. Trin 2
+
+                            <p class="sidenav-information">
+                                Informationstekst for trin 2</p>
+
+                        </div>
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class=" active current">
+                    <a href="">
+                        <div class="d-inline-block">
+                            3. Trin 3 (valgt)
+
+                            <p class="sidenav-information">
+                                Informationstekst for trin 3</p>
+
+                        </div>
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class=" ">
+                    <a href="">
+                        <div class="d-inline-block">
+                            4. Trin 4
+
+                            <p class="sidenav-information">
+                                Informationstekst for trin 4</p>
+
+                        </div>
+
+                    </a>
+                </li>
+
+                <li class=" ">
+                    <a href="">
+                        <div class="d-inline-block">
+                            5. Trin 5
+
+                            <p class="sidenav-information">
+                                Informationstekst for trin 5</p>
+
+                        </div>
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
 </div>
+</div>
+
   <h3></h3>
 </div>
 <div class="container">
   <h2>Datatables</h2>
-  
-
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/datatables"></iframe>
+  <div class="component-preview  component-preview-datatables" aria-label="">
+    <div class="container">
+    <p class="form-label">Basic Datatable</p>
+    <table id="js-datatable-example-basic" class="table w-percent-100">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012/12/02</td>
+                <td>$372,000</td>
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>2012/08/06</td>
+                <td>$137,500</td>
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>2010/10/14</td>
+                <td>$327,900</td>
+            </tr>
+            <tr>
+                <td>Colleen Hurst</td>
+                <td>Javascript Developer</td>
+                <td>San Francisco</td>
+                <td>39</td>
+                <td>2009/09/15</td>
+                <td>$205,500</td>
+            </tr>
+            <tr>
+                <td>Sonya Frost</td>
+                <td>Software Engineer</td>
+                <td>Edinburgh</td>
+                <td>23</td>
+                <td>2008/12/13</td>
+                <td>$103,600</td>
+            </tr>
+            <tr>
+                <td>Jena Gaines</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>30</td>
+                <td>2008/12/19</td>
+                <td>$90,560</td>
+            </tr>
+            <tr>
+                <td>Quinn Flynn</td>
+                <td>Support Lead</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2013/03/03</td>
+                <td>$342,000</td>
+            </tr>
+            <tr>
+                <td>Charde Marshall</td>
+                <td>Regional Director</td>
+                <td>San Francisco</td>
+                <td>36</td>
+                <td>2008/10/16</td>
+                <td>$470,600</td>
+            </tr>
+            <tr>
+                <td>Haley Kennedy</td>
+                <td>Senior Marketing Designer</td>
+                <td>London</td>
+                <td>43</td>
+                <td>2012/12/18</td>
+                <td>$313,500</td>
+            </tr>
+            <tr>
+                <td>Tatyana Fitzpatrick</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>19</td>
+                <td>2010/03/17</td>
+                <td>$385,750</td>
+            </tr>
+            <tr>
+                <td>Michael Silva</td>
+                <td>Marketing Designer</td>
+                <td>London</td>
+                <td>66</td>
+                <td>2012/11/27</td>
+                <td>$198,500</td>
+            </tr>
+            <tr>
+                <td>Paul Byrd</td>
+                <td>Chief Financial Officer (CFO)</td>
+                <td>New York</td>
+                <td>64</td>
+                <td>2010/06/09</td>
+                <td>$725,000</td>
+            </tr>
+            <tr>
+                <td>Gloria Little</td>
+                <td>Systems Administrator</td>
+                <td>New York</td>
+                <td>59</td>
+                <td>2009/04/10</td>
+                <td>$237,500</td>
+            </tr>
+            <tr>
+                <td>Bradley Greer</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>41</td>
+                <td>2012/10/13</td>
+                <td>$132,000</td>
+            </tr>
+            <tr>
+                <td>Dai Rios</td>
+                <td>Personnel Lead</td>
+                <td>Edinburgh</td>
+                <td>35</td>
+                <td>2012/09/26</td>
+                <td>$217,500</td>
+            </tr>
+            <tr>
+                <td>Jenette Caldwell</td>
+                <td>Development Lead</td>
+                <td>New York</td>
+                <td>30</td>
+                <td>2011/09/03</td>
+                <td>$345,000</td>
+            </tr>
+            <tr>
+                <td>Yuri Berry</td>
+                <td>Chief Marketing Officer (CMO)</td>
+                <td>New York</td>
+                <td>40</td>
+                <td>2009/06/25</td>
+                <td>$675,000</td>
+            </tr>
+            <tr>
+                <td>Caesar Vance</td>
+                <td>Pre-Sales Support</td>
+                <td>New York</td>
+                <td>21</td>
+                <td>2011/12/12</td>
+                <td>$106,450</td>
+            </tr>
+            <tr>
+                <td>Doris Wilder</td>
+                <td>Sales Assistant</td>
+                <td>Sidney</td>
+                <td>23</td>
+                <td>2010/09/20</td>
+                <td>$85,600</td>
+            </tr>
+            <tr>
+                <td>Angelica Ramos</td>
+                <td>Chief Executive Officer (CEO)</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+            </tr>
+            <tr>
+                <td>Gavin Joyce</td>
+                <td>Developer</td>
+                <td>Edinburgh</td>
+                <td>42</td>
+                <td>2010/12/22</td>
+                <td>$92,575</td>
+            </tr>
+            <tr>
+                <td>Jennifer Chang</td>
+                <td>Regional Director</td>
+                <td>Singapore</td>
+                <td>28</td>
+                <td>2010/11/14</td>
+                <td>$357,650</td>
+            </tr>
+            <tr>
+                <td>Brenden Wagner</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>28</td>
+                <td>2011/06/07</td>
+                <td>$206,850</td>
+            </tr>
+            <tr>
+                <td>Fiona Green</td>
+                <td>Chief Operating Officer (COO)</td>
+                <td>San Francisco</td>
+                <td>48</td>
+                <td>2010/03/11</td>
+                <td>$850,000</td>
+            </tr>
+            <tr>
+                <td>Shou Itou</td>
+                <td>Regional Marketing</td>
+                <td>Tokyo</td>
+                <td>20</td>
+                <td>2011/08/14</td>
+                <td>$163,000</td>
+            </tr>
+            <tr>
+                <td>Michelle House</td>
+                <td>Integration Specialist</td>
+                <td>Sidney</td>
+                <td>37</td>
+                <td>2011/06/02</td>
+                <td>$95,400</td>
+            </tr>
+            <tr>
+                <td>Suki Burks</td>
+                <td>Developer</td>
+                <td>London</td>
+                <td>53</td>
+                <td>2009/10/22</td>
+                <td>$114,500</td>
+            </tr>
+            <tr>
+                <td>Prescott Bartlett</td>
+                <td>Technical Author</td>
+                <td>London</td>
+                <td>27</td>
+                <td>2011/05/07</td>
+                <td>$145,000</td>
+            </tr>
+            <tr>
+                <td>Gavin Cortez</td>
+                <td>Team Leader</td>
+                <td>San Francisco</td>
+                <td>22</td>
+                <td>2008/10/26</td>
+                <td>$235,500</td>
+            </tr>
+            <tr>
+                <td>Martena Mccray</td>
+                <td>Post-Sales support</td>
+                <td>Edinburgh</td>
+                <td>46</td>
+                <td>2011/03/09</td>
+                <td>$324,050</td>
+            </tr>
+            <tr>
+                <td>Unity Butler</td>
+                <td>Marketing Designer</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>2009/12/09</td>
+                <td>$85,675</td>
+            </tr>
+            <tr>
+                <td>Howard Hatfield</td>
+                <td>Office Manager</td>
+                <td>San Francisco</td>
+                <td>51</td>
+                <td>2008/12/16</td>
+                <td>$164,500</td>
+            </tr>
+            <tr>
+                <td>Hope Fuentes</td>
+                <td>Secretary</td>
+                <td>San Francisco</td>
+                <td>41</td>
+                <td>2010/02/12</td>
+                <td>$109,850</td>
+            </tr>
+            <tr>
+                <td>Vivian Harrell</td>
+                <td>Financial Controller</td>
+                <td>San Francisco</td>
+                <td>62</td>
+                <td>2009/02/14</td>
+                <td>$452,500</td>
+            </tr>
+            <tr>
+                <td>Timothy Mooney</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>37</td>
+                <td>2008/12/11</td>
+                <td>$136,200</td>
+            </tr>
+            <tr>
+                <td>Jackson Bradshaw</td>
+                <td>Director</td>
+                <td>New York</td>
+                <td>65</td>
+                <td>2008/09/26</td>
+                <td>$645,750</td>
+            </tr>
+            <tr>
+                <td>Olivia Liang</td>
+                <td>Support Engineer</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>2011/02/03</td>
+                <td>$234,500</td>
+            </tr>
+            <tr>
+                <td>Bruno Nash</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>38</td>
+                <td>2011/05/03</td>
+                <td>$163,500</td>
+            </tr>
+            <tr>
+                <td>Sakura Yamamoto</td>
+                <td>Support Engineer</td>
+                <td>Tokyo</td>
+                <td>37</td>
+                <td>2009/08/19</td>
+                <td>$139,575</td>
+            </tr>
+            <tr>
+                <td>Thor Walton</td>
+                <td>Developer</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2013/08/11</td>
+                <td>$98,540</td>
+            </tr>
+            <tr>
+                <td>Finn Camacho</td>
+                <td>Support Engineer</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>2009/07/07</td>
+                <td>$87,500</td>
+            </tr>
+            <tr>
+                <td>Serge Baldwin</td>
+                <td>Data Coordinator</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>2012/04/09</td>
+                <td>$138,575</td>
+            </tr>
+            <tr>
+                <td>Zenaida Frank</td>
+                <td>Software Engineer</td>
+                <td>New York</td>
+                <td>63</td>
+                <td>2010/01/04</td>
+                <td>$125,250</td>
+            </tr>
+            <tr>
+                <td>Zorita Serrano</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>56</td>
+                <td>2012/06/01</td>
+                <td>$115,000</td>
+            </tr>
+            <tr>
+                <td>Jennifer Acosta</td>
+                <td>Junior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>43</td>
+                <td>2013/02/01</td>
+                <td>$75,650</td>
+            </tr>
+            <tr>
+                <td>Cara Stevens</td>
+                <td>Sales Assistant</td>
+                <td>New York</td>
+                <td>46</td>
+                <td>2011/12/06</td>
+                <td>$145,600</td>
+            </tr>
+            <tr>
+                <td>Hermione Butler</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2011/03/21</td>
+                <td>$356,250</td>
+            </tr>
+            <tr>
+                <td>Lael Greer</td>
+                <td>Systems Administrator</td>
+                <td>London</td>
+                <td>21</td>
+                <td>2009/02/27</td>
+                <td>$103,500</td>
+            </tr>
+            <tr>
+                <td>Jonas Alexander</td>
+                <td>Developer</td>
+                <td>San Francisco</td>
+                <td>30</td>
+                <td>2010/07/14</td>
+                <td>$86,500</td>
+            </tr>
+            <tr>
+                <td>Shad Decker</td>
+                <td>Regional Director</td>
+                <td>Edinburgh</td>
+                <td>51</td>
+                <td>2008/11/13</td>
+                <td>$183,000</td>
+            </tr>
+            <tr>
+                <td>Michael Bruce</td>
+                <td>Javascript Developer</td>
+                <td>Singapore</td>
+                <td>29</td>
+                <td>2011/06/27</td>
+                <td>$183,000</td>
+            </tr>
+            <tr>
+                <td>Donna Snider</td>
+                <td>Customer Support</td>
+                <td>New York</td>
+                <td>27</td>
+                <td>2011/01/25</td>
+                <td>$112,000</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+</div>
+
 </div>
 <div class="container">
   <h2>Multiselect</h2>
-  
+  <div class="component-preview  component-preview-selectwoo-multiselect" aria-label="">
+    <div class="container">
+    <form class="form mb-6">
 
-<div class="component-preview ">
+        <div class="form-group">
+            <label class="form-label" for="js-selectwoo-example1">Vælg
+                flere muligheder</label>
+            <select name="SelectWooExample" id="js-selectwoo-example1" class="d-none" multiple="">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            </select>
+        </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/selectwoo-multiselect"></iframe>
+    </form>
 </div>
+</div>
+
 </div>
 <div class="container">
   <h2>Pikaday</h2>
-  
+  <div class="component-preview  component-preview-date-input-datepicker" aria-label="">
+    <div class="container">
 
-<div class="component-preview ">
+    <div class="form-group  ">
+        <fieldset>
+            <legend><label class="form-label">Indsendelsesfrist</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
+            <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
+            <div class="date-group js-calendar-group mt-3">
+                <div class="form-group form-group-day">
+                    <label class="form-label" for="date-day">Dag</label>
+                    <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="date-month">Måned</label>
+                    <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                </div>
+                <div class="form-group form-group-year ">
+                    <label class="form-label" for="date-year">År</label>
+                    <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                </div>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <button class="button-unstyled button-open-calendar js-calendar-datepicker">
+                    <span class="sr-only">Åben kalenderen</span>
+                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#calendar"></use></svg>
+                </button>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/date-input-datepicker"></iframe>
+            </div>
+        </fieldset>
+    </div>
+
 </div>
+</div>
+
 </div>
 
 <div class="container">

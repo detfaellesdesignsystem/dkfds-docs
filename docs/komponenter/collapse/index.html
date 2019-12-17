@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1245,14 +1249,14 @@
     
       
 
-<li class="has-anchor-links">
+<li class="">
 
 
   
 
 <a href="/omdesignsystemet/samarbejdsforum/"
   class="nav-link">
-  Samarbejdsforum
+  Næste samarbejdsforum
 </a>
 
 </li>
@@ -1286,9 +1290,9 @@
 
   
 
-<a href="/omdesignsystemet/styregruppe/"
+<a href="/omdesignsystemet/kontakt-support/"
   class="nav-link">
-  Styregruppe
+  Kontakt og support
 </a>
 
 </li>
@@ -1304,9 +1308,9 @@
 
   
 
-<a href="/omdesignsystemet/fds-teamet/"
+<a href="/omdesignsystemet/governance/"
   class="nav-link">
-  FDS-teamet
+  Governance
 </a>
 
 </li>
@@ -1358,9 +1362,9 @@
 
   
 
-<a href="/omdesignsystemet/releases/"
+<a href="/omdesignsystemet/privatlivspolitik-cookies/"
   class="nav-link">
-  Release notes
+  Privatlivspolitik og cookies
 </a>
 
 </li>
@@ -1376,9 +1380,9 @@
 
   
 
-<a href="/omdesignsystemet/privatlivspolitik-cookies/"
+<a href="/omdesignsystemet/releases/"
   class="nav-link">
-  Privatlivspolitik og cookies
+  Release notes
 </a>
 
 </li>
@@ -1870,15 +1874,55 @@
 <section class="styleguide-child-container content" id="section-/komponenter/collapse/01-radio-collapse">
   <h2 id="radioknap-skjul-og-vis-indhold">Radioknap - skjul og vis indhold</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-radio-toggle-content" aria-label="Eksempel på skjul/vis med radioknapper">
+    <div class="container js-radio-toggle-group">
+    <fieldset>
+        <legend class="h4">Vælg en radioknap</legend>
+        <ul class="nobullet-list">
+            <li>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <input id="id-radio1" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " checked="" data-js-target="#collapse-radio1" aria-controls="collapse-radio1" aria-expanded="false" />
+                <label for="id-radio1" id="form-label-id-radio1" class="">Radioknap viser indhold <span class="sr-only">Udfyld informationer
+                        herunder</span></label>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/radio-toggle-content"></iframe>
+                <div id="collapse-radio1" aria-hidden="true" class="box-border-l collapsed">
+                    <div class="py-4">
+
+                        <div class="form-group">
+                            <label class="form-label " for="textinput1" id="form-label-textinput1">Inputfelt med
+                                label</label>
+
+                            <input class="form-input  input-width-m " placeholder="" id="textinput1" value="" name="text1" type="text" />
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+
+                <input id="id-radio2" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " data-js-target="#collapse-radio2" />
+                <label for="id-radio2" id="form-label-id-radio2" class="">Radioknap viser indhold med fejl <span class="sr-only">Udfyld informationer
+                        herunder</span></label>
+
+                <div id="collapse-radio2" aria-hidden="true" class="box-border-l collapsed">
+                    <div class="py-4">
+
+                        <div class="form-group form-error">
+                            <label class="form-label " for="textinput2" id="form-label-textinput2">Inputfelt med
+                                label</label>
+
+                            <span class="form-error-message" id="form-error-message-textinput2" role="alert">Hjælpsom fejlbesked</span>
+                            <input class="form-input  input-width-m " placeholder="" id="textinput2" value="" name="text2" type="text" aria-describedby="form-error-message-textinput2" />
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </fieldset>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-radio-toggle-content">Kode</button>
@@ -1895,8 +1939,9 @@
                     <span class="na">data-js-target=</span><span class="s">'#collapse-radio1'</span>
                     <span class="na">aria-controls=</span><span class="s">'collapse-radio1'</span>
                     <span class="na">aria-expanded=</span><span class="s">'false'</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio1"</span> <span class="na">id=</span><span class="s">"form-label-id-radio1"</span>
+                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold <span class="nt">&lt;span</span>
+                        <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
                         herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
                 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
@@ -1904,8 +1949,8 @@
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
 
                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span>
-                                <span class="na">for=</span><span class="s">"textinput1"</span><span class="nt">&gt;</span>Inputfelt med
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"textinput1"</span>
+                                <span class="na">id=</span><span class="s">"form-label-textinput1"</span><span class="nt">&gt;</span>Inputfelt med
                                 label<span class="nt">&lt;/label&gt;</span>
 
                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
@@ -1921,8 +1966,9 @@
                 <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
                     <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span>
                     <span class="na">data-js-target=</span><span class="s">'#collapse-radio2'</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold med
-                    fejl <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">id=</span><span class="s">"form-label-id-radio2"</span>
+                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold med fejl <span class="nt">&lt;span</span>
+                        <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
                         herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
                 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
@@ -1930,8 +1976,8 @@
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
 
                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span>
-                                <span class="na">for=</span><span class="s">"textinput2"</span><span class="nt">&gt;</span>Inputfelt med
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"textinput2"</span>
+                                <span class="na">id=</span><span class="s">"form-label-textinput2"</span><span class="nt">&gt;</span>Inputfelt med
                                 label<span class="nt">&lt;/label&gt;</span>
 
                             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
@@ -1940,8 +1986,7 @@
                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
                                 <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"textinput2"</span> <span class="na">value=</span><span class="s">""</span>
                                 <span class="na">name=</span><span class="s">"text2"</span> <span class="na">type=</span><span class="s">"text"</span>
-                                <span class="na">aria-describedby=</span><span class="s">"form-error-message-textinput2"</span>
-                                <span class="na">aria-describedby=</span><span class="s">"input-hint-message-textinput2"</span><span class="nt">&gt;</span>
+                                <span class="na">aria-describedby=</span><span class="s">"form-error-message-textinput2"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;/div&gt;</span>
 
                     <span class="nt">&lt;/div&gt;</span>
@@ -1964,7 +2009,7 @@
   <div id="radio-toggle-content-tech" aria-hidden="true" class="accordion-content">
         <p>For at initialisere collapse funktionaliteten på en radioknap skal <code>input[type=radio]</code> have følgende:</p>
         <ul>
-          <li>Attributten <code>name</code>: alle radioknapper I en gruppe skal have samme værdi i 'name'-attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
+          <li>Attributten <code>name</code>: alle radioknapper I en gruppe skal have samme værdi i <code>name</code> attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
           <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id'et på det element som skal vises når radioknappen er aktiveret. </li>
           <li>Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
           <li><code>aria-controls="id-of-target-to-collapse" </code></li>
@@ -1997,14 +2042,19 @@
               <li>Radioknapperne skal kunne aktiveres og håndteres fra tastatur.</li>
               <li>Skjul ikke meningsbærende indhold som fx beskrivelser/labels med denne funktionalitet.</li>
               <li>Vis kun de ekstra muligheder, når brugeren har foretaget et valg.</li>
+              <li>Da der er nogle begrænsninger, vil det være en god idé at teste med en skærmlæser (Fx NVDA) om alt indhold kan navigeres til med tastatur samt læses op.</li>
           </ul>
       </section>
       <section>
           <h3 class="h4">Brugervenlighed</h3>
           <h4 class="h5">Anvendes til</h4>
-          <p>Vise yderligere information eller en ekstra funktion relevant til brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes per email.</p>
+          <ul>
+              <li>at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</li>
+          </ul>
           <h4 class="h5">Anvendes ikke til</h4>
-          <p>Anvend ikke denne mulighed til inline-placerede radioknapper. </p>
+          <ul>
+            <li>at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.</li>
+          </ul>
           <h4 class="h5">Vejledning</h4>                
           <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
       </section>
@@ -2016,15 +2066,44 @@
 <section class="styleguide-child-container content" id="section-/komponenter/collapse/02-checkbox-collapse">
   <h2 id="checkbox-skjul-og-vis-indhold">Checkbox - skjul og vis indhold</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-checkbox-toggle-content" aria-label="Eksempel på skjul/vis med tjekbokse">
+    <div class="container">
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Vælg fra listen</legend>
+            <ul class="nobullet-list">
+                <li>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                    <input id="id-checkbox1" type="checkbox" name="checkbox1" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check1" aria-controls="collapse-check1" aria-expanded="false" />
+                    <label for="id-checkbox1" class="">Tjekboks viser
+                        indhold</label>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/checkbox-toggle-content"></iframe>
+                    <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <p>Dette indhold bliver vist når tjekboksen er
+                                valgt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+
+                    <input id="id-checkbox2" type="checkbox" name="checkbox2" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" checked="" data-js-target="#collapse-check2" aria-controls="collapse-check2" aria-expanded="false" />
+                    <label for="id-checkbox2" class="">Tjekboks viser
+                        indhold</label>
+
+                    <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <p>Dette indhold bliver vist når tjekboksen er
+                                valgt.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-checkbox-toggle-content">Kode</button>
@@ -2117,15 +2196,19 @@
 <section class="styleguide-child-container content" id="section-/komponenter/collapse/03-basic-collapse">
   <h2 id="generel-skjul-og-vis-indhold-funktionalitet">Generel skjul og vis indhold funktionalitet</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/basic-collapse"></iframe>
+  <div class="component-preview  component-preview-basic-collapse" aria-label="Eksempel på skjul/visning af indhold ved brug af knap">
+    <div class="container">
+    <button class="button button-secondary js-collapse" data-js-target="#collapse1" aria-controls="collapse1" aria-expanded="false">Vis indhold</button>
+    <div id="collapse1" aria-hidden="true" class="box-border-l mt-4 collapsed">
+        <div class="py-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+        </div>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-basic-collapse">Kode</button>
@@ -2218,17 +2301,17 @@
 
 
 <footer>
-  <div class="footer">
-    <div class="container">
-        <ul class="unstyled-list inline-list">
-          <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-          <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-          <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-          <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
-        </ul>
-    </div>
-  </div>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
 </footer>
 
 
@@ -2237,8 +2320,15 @@
 <script src="/assets/js/styleguide.js"></script>
 
 
+
+
+
+
+
+
+
 <!-- begin usabilla live embed code -->
-<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+<script>/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
 if(window.innerWidth >= 992) {
     window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/375846218de8.js");
 } else {

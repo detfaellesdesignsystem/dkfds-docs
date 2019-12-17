@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1196,14 +1200,14 @@
     
       
 
-<li class="has-anchor-links">
+<li class="">
 
 
   
 
 <a href="/omdesignsystemet/samarbejdsforum/"
   class="nav-link">
-  Samarbejdsforum
+  Næste samarbejdsforum
 </a>
 
 </li>
@@ -1237,9 +1241,9 @@
 
   
 
-<a href="/omdesignsystemet/styregruppe/"
+<a href="/omdesignsystemet/kontakt-support/"
   class="nav-link">
-  Styregruppe
+  Kontakt og support
 </a>
 
 </li>
@@ -1255,9 +1259,9 @@
 
   
 
-<a href="/omdesignsystemet/fds-teamet/"
+<a href="/omdesignsystemet/governance/"
   class="nav-link">
-  FDS-teamet
+  Governance
 </a>
 
 </li>
@@ -1309,9 +1313,9 @@
 
   
 
-<a href="/omdesignsystemet/releases/"
+<a href="/omdesignsystemet/privatlivspolitik-cookies/"
   class="nav-link">
-  Release notes
+  Privatlivspolitik og cookies
 </a>
 
 </li>
@@ -1327,9 +1331,9 @@
 
   
 
-<a href="/omdesignsystemet/privatlivspolitik-cookies/"
+<a href="/omdesignsystemet/releases/"
   class="nav-link">
-  Privatlivspolitik og cookies
+  Release notes
 </a>
 
 </li>
@@ -1386,14 +1390,69 @@
 
           <p class="font-lead">A standard template for entering a U.S. mailing or shipping address</p>
 
-<div class="component-preview ">
+<div class="component-preview  component-preview-address-form" aria-label="">
+    <form class="form-large">
+    <fieldset>
+        <legend>Adresse</legend>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <div class="input-grid input-grid-small">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/address-form"></iframe>
+            <div class="form-group">
+                <label class="form-label " for="input-text-postnummer" id="form-label-input-text-postnummer">Postnummer</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-postnummer" value="" name="input-text-postnummer" type="text" />
+            </div>
+
+        </div>
+
+        <div class="input-grid input-grid-medium">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-by" id="form-label-input-text-by">By</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-by" value="" name="input-text-by" type="text" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="input-text-gade" id="form-label-input-text-gade">Gade</label>
+
+            <input class="form-input  false " placeholder="" id="input-text-gade" value="" name="input-text-gade" type="text" />
+        </div>
+
+        <div class="input-grid input-grid-small">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-husnummer" id="form-label-input-text-husnummer">Husnummer</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-husnummer" value="" name="input-text-husnummer" type="text" />
+            </div>
+
+        </div>
+        <div class="input-grid input-grid-small">
+
+            <div class="form-group">
+                <label class="form-label " for="input-text-dør" id="form-label-input-text-dør">Dør</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-dør" value="" name="input-text-dør" type="text" />
+            </div>
+
+        </div>
+        <div class="input-grid input-grid-large">
+
+            <div class="form-group">
+                <label class="form-label input-optional" for="input-text-coadresse" id="form-label-input-text-coadresse">C/O-adresse</label>
+
+                <input class="form-input  false " placeholder="" id="input-text-coadresse" value="" name="input-text-coadresse" type="text" />
+            </div>
+
+        </div>
+
+    </fieldset>
+</form>
 </div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-address-form">Kode</button>
@@ -1406,8 +1465,8 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span>
-                    <span class="na">for=</span><span class="s">"input-text-postnummer"</span><span class="nt">&gt;</span>Postnummer<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-text-postnummer"</span>
+                    <span class="na">id=</span><span class="s">"form-label-input-text-postnummer"</span><span class="nt">&gt;</span>Postnummer<span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  false "</span> <span class="na">placeholder=</span><span class="s">""</span>
                     <span class="na">id=</span><span class="s">"input-text-postnummer"</span> <span class="na">value=</span><span class="s">""</span>
@@ -1419,7 +1478,8 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-medium"</span><span class="nt">&gt;</span>
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-text-by"</span><span class="nt">&gt;</span>By<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-text-by"</span>
+                    <span class="na">id=</span><span class="s">"form-label-input-text-by"</span><span class="nt">&gt;</span>By<span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  false "</span> <span class="na">placeholder=</span><span class="s">""</span>
                     <span class="na">id=</span><span class="s">"input-text-by"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-text-by"</span>
@@ -1429,7 +1489,8 @@
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-text-gade"</span><span class="nt">&gt;</span>Gade<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-text-gade"</span>
+                <span class="na">id=</span><span class="s">"form-label-input-text-gade"</span><span class="nt">&gt;</span>Gade<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  false "</span> <span class="na">placeholder=</span><span class="s">""</span>
                 <span class="na">id=</span><span class="s">"input-text-gade"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-text-gade"</span>
@@ -1439,8 +1500,8 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span>
-                    <span class="na">for=</span><span class="s">"input-text-husnummer"</span><span class="nt">&gt;</span>Husnummer<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-text-husnummer"</span>
+                    <span class="na">id=</span><span class="s">"form-label-input-text-husnummer"</span><span class="nt">&gt;</span>Husnummer<span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  false "</span> <span class="na">placeholder=</span><span class="s">""</span>
                     <span class="na">id=</span><span class="s">"input-text-husnummer"</span> <span class="na">value=</span><span class="s">""</span>
@@ -1451,7 +1512,8 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-text-dør"</span><span class="nt">&gt;</span>Dør<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-text-dør"</span>
+                    <span class="na">id=</span><span class="s">"form-label-input-text-dør"</span><span class="nt">&gt;</span>Dør<span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  false "</span> <span class="na">placeholder=</span><span class="s">""</span>
                     <span class="na">id=</span><span class="s">"input-text-dør"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-text-dør"</span>
@@ -1463,7 +1525,8 @@
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label input-optional"</span>
-                    <span class="na">for=</span><span class="s">"input-text-coadresse"</span><span class="nt">&gt;</span>C/O-adresse<span class="nt">&lt;/label&gt;</span>
+                    <span class="na">for=</span><span class="s">"input-text-coadresse"</span>
+                    <span class="na">id=</span><span class="s">"form-label-input-text-coadresse"</span><span class="nt">&gt;</span>C/O-adresse<span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  false "</span> <span class="na">placeholder=</span><span class="s">""</span>
                     <span class="na">id=</span><span class="s">"input-text-coadresse"</span> <span class="na">value=</span><span class="s">""</span>
@@ -1527,23 +1590,30 @@
 
 
 <footer>
-  <div class="footer">
-    <div class="container">
-        <ul class="unstyled-list inline-list">
-          <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-          <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-          <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-          <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
-        </ul>
-    </div>
-  </div>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
 </footer>
 
 
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

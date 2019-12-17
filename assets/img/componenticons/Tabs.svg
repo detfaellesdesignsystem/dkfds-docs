@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="232px" height="48px" viewBox="0 0 232 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Tabs-with-dropshadow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Illustrationer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer_Ver02" transform="translate(-484.000000, -1483.000000)" fill-rule="nonzero">
+            <g id="Tabs" transform="translate(484.000000, 1483.000000)">
+                <rect id="Rectangle-19" fill="#FFFFFF" x="0" y="0" width="232" height="48"></rect>
+                <rect id="Rectangle-20" fill="#DCDCDC" x="16" y="18" width="38" height="12"></rect>
+                <rect id="Rectangle-20" fill="#999999" x="70" y="18" width="38" height="12"></rect>
+                <rect id="Rectangle-20" fill="#1A1A1A" x="70" y="34" width="38" height="4"></rect>
+                <rect id="Rectangle-20" fill="#DCDCDC" x="124" y="18" width="38" height="12"></rect>
+                <rect id="Rectangle-20" fill="#DCDCDC" x="178" y="18" width="38" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,7 +5,7 @@ order: 03
 lead: 
 ---
 
-{% include code/preview.html component="text-area" %}
+{% include code/preview.html component="text-area" title="Eksempel på tekstområde"  %}
 {% include code/accordion.html component="text-area" %}
 <div class="accordion accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="text-area-tech">

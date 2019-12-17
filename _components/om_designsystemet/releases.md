@@ -7,11 +7,11 @@ subcategory: Om designsystemet
 description: Release notes for dkfds
 anchor: true
 subnav:
+- text: Version 5.3.0
+  href: '#version-530'
 - text: Version 5.2.0
   href: '#version-520'
 - text: Version 5.1.0
-  href: '#version-510'
-- text: Version 5.1.1
   href: '#version-510'
 - text: Version 5.0.0
   href: '#version-500'
@@ -31,7 +31,7 @@ subnav:
   href: '#tidligere-versioner'
 ---
 <p class="font-lead">Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.</p>
-<p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
+<p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
 <h2 class="h3">Versionering</h2>
 <p>Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.</p>
 <p>Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR (y), PATCH (z)</p>
@@ -43,9 +43,37 @@ subnav:
 <h3 class="h4">Release proces</h3>
 <p>Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens. </p>
 
-<!--<h3 class="h4">Udvikling og test </h3>
-<p>Vi udvikler og tester på en tro kopi af FDS kaldet DKFDSdevelop. Her kan vi rive og flå i kode og design og sikre os at det virker, inden vi opdaterer til en ny version på FDS. Det er også her vi tjekker at komponenterne virker i alle tilstande, er tilgængelige og performer ordentligt.</p>-->
-
+<h2 class="mb-0" id="version-530">Version 5.3.0</h2>
+<p class="small-text mt-0">16-12-2019</p>
+<ul>
+    <li>
+        <a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.
+    </li>
+    <li>
+        Mere padding i toppen af <a href="/komponenter/headers/#header-medium">navbar indeholdende funktionslink og overflow menu i header</a>.
+    </li>
+    <li>
+        Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.
+    </li>
+    <li>
+        <a href="/design/typography/#lister">Lister</a> har fået nyt udtryk.
+    </li>
+    <li>
+        Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/headers/">header</a> samt <a href="/komponenter/sidenav/">sidenavigationen</a>.
+    </li>
+    <li>
+        Tilføjet mulighed for <a href="/komponenter/form-controls/#radioknap">hjælpetekst på radioknap</a>.
+    </li>
+    <li>
+        Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.
+    </li>
+    <li>
+        Tilpasset retningslinjer for <a href="/komponenter/collapse/#radioknap-skjul-og-vis-indhold">Skjul/vis med radiobuttons</a>.
+    </li>
+    <li>
+        Opdateret <a href="/komigang/tildesignere/">SVG filer</a>, samt tilføjet link til <a href="/komigang/tildesignere/">Figma komponent bibliotek</a>.
+    </li>
+</ul>
 <h2 class="mb-0" id="version-520">Version 5.2.0</h2>
 <p class="small-text mt-0">27-11-2019</p>
 <ul>
@@ -161,7 +189,7 @@ subnav:
     <li>Fjernet farve på small-text mixin.</li>
     <li>Tilpasset positionering af ikon på knapper.</li>
     <li>Fikset fejl i input felter, hvor specialtegn (Å, Ö, Ä etc.) ikke blev vist korrekt.</li>
-    <li>Tilføjet eksempel på lukknap i <a href="/komponenter/beskeder/#beskeder-med-lukknap">Beskeder</a>.</li>
+    <li>Tilføjet eksempel på luk knap i <a href="/komponenter/beskeder/#beskeder-med-luk-knap">Beskeder</a>.</li>
     <li><label class="color-info badge badge-small mr-3">Change</label>Tilføjet mulighed for at <a href="/komponenter/cards/#cards-med-samme-højde">positionere action knapper i cards</a> i bunden.</li>
     <li>Fikset fejl ved print af eksempelløsninger i Firefox - tilføjet yderligere print CSS.</li>
 </ul>
@@ -178,7 +206,7 @@ subnav:
 <p class="small-text mt-0">24-05-2019</p>
 <ul>
     <li>Fjernet primærfarven på tekst i aktivt menupunkt i header.</li>
-    <li>Tilføjet klassen inline-svg, som kan bruges på ikoner, der skal fremgå i tekst, således at de matcher teksthøjden.</li>
+    <li>Tilføjet klassen <code>inline-svg</code>, som kan bruges på ikoner, der skal fremgå i tekst, således at de matcher teksthøjden.</li>
     <li>Ændret afstand fra label til read-only felt.</li>
     <li>Ændret JavaScript, der håndterer regex maske på dato felt, således at man nu kan bruge copy/paste igen.
         <ul>    
@@ -195,7 +223,7 @@ subnav:
     <li>Fjernet tekstmarkøren på et read only felt i Internet Explorer</li>
     <li>Tilføjet eksempler på advarsel, når man forlader siden i eksempelløsningerne</li>
     <li>Tilføjet afstand af tags, når de fylder flere linjer</li>
-    <li>Fjernet primærfarve på teksten i fanebladmenu ved hover</li>
+    <li>Fjernet primærfarve på teksten i faneblad ved hover</li>
     <li>Fikset fokusramme på faneblad</li>
     <li>Fikset fejl i modalvindue, hvor overskriften blev overlappet af luk knappen</li>
     <li><label class="color-info badge badge-small mr-3">Change</label>Log ud skal nu hedde Log af</li>
@@ -345,11 +373,11 @@ subnav:
     </li>
     <li class="mt-4">
       Ny max-width styling
-      <p class="form-hint mt-0">Klassen '.content' er fjernet. Max-width stylingen er nu kodet direkte til p, font-lead etc.</p>
+      <p class="form-hint mt-0">Klassen '.content' er fjernet. Max-width style er nu kodet direkte til p, font-lead etc.</p>
     </li>
     <li class="mt-4">
       Sidenavigation i bunden af eksempelsiderne:
-      <p class="form-hint mt-0">"Breadcrumb" er omdøbt til "page-navigation". 	Html'en er nu således ud:</p>
+      <p class="form-hint mt-0">"Breadcrumb" er omdøbt til "page-navigation". HTML ser nu således ud:</p>
       <div class="code-highlight">
         <code>
           &lt;nav class="page-navigation"&gt; <br>

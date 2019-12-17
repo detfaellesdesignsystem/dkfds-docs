@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1196,14 +1200,14 @@
     
       
 
-<li class="has-anchor-links">
+<li class="">
 
 
   
 
 <a href="/omdesignsystemet/samarbejdsforum/"
   class="nav-link">
-  Samarbejdsforum
+  Næste samarbejdsforum
 </a>
 
 </li>
@@ -1237,9 +1241,9 @@
 
   
 
-<a href="/omdesignsystemet/styregruppe/"
+<a href="/omdesignsystemet/kontakt-support/"
   class="nav-link">
-  Styregruppe
+  Kontakt og support
 </a>
 
 </li>
@@ -1255,9 +1259,9 @@
 
   
 
-<a href="/omdesignsystemet/fds-teamet/"
+<a href="/omdesignsystemet/governance/"
   class="nav-link">
-  FDS-teamet
+  Governance
 </a>
 
 </li>
@@ -1309,9 +1313,9 @@
 
   
 
-<a href="/omdesignsystemet/releases/"
+<a href="/omdesignsystemet/privatlivspolitik-cookies/"
   class="nav-link">
-  Release notes
+  Privatlivspolitik og cookies
 </a>
 
 </li>
@@ -1327,9 +1331,9 @@
 
   
 
-<a href="/omdesignsystemet/privatlivspolitik-cookies/"
+<a href="/omdesignsystemet/releases/"
   class="nav-link">
-  Privatlivspolitik og cookies
+  Release notes
 </a>
 
 </li>
@@ -1384,15 +1388,157 @@
           <h1 id="tjekboks">Tjekboks</h1>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-checkbox" aria-label="Eksempel på tjekbokse">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <!-- Example of small checkbox -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Lille tjekboks</legend>
+            <ul class="nobullet-list">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/checkbox"></iframe>
+                <li>
+
+                    <input id="Unchecked" type="checkbox" name="unchecked" value="unchecked" class="form-checkbox   " />
+                    <label for="Unchecked" class="">Ikke-udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked" type="checkbox" name="checked" value="checked" class="form-checkbox   " checked="" />
+                    <label for="Checked" class="">Udfyldt tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled" type="checkbox" name="disabled" value="disabled" class="form-checkbox   " disabled="" />
+                    <label for="disabled" class="">Inaktiv ikke-udfyldt
+                        tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-checked" type="checkbox" name="disabled-checked" value="disabled-checked" class="form-checkbox   " disabled="" checked="" />
+                    <label for="disabled-checked" class="">Inaktiv udfyldt
+                        tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="fokus" type="checkbox" name="Focus" value="fokus" class="form-checkbox focus  " />
+                    <label for="fokus" class="">Ikke-udfyldt tjekboks i
+                        fokus</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example of large checkbox (recommended) -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Stor tjekboks (anbefalet)</legend>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="Unchecked-large" type="checkbox" name="unchecked-large" value="unchecked-large" class="form-checkbox  checkbox-large " />
+                    <label for="Unchecked-large" class="">Stor ikke-udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked-large" type="checkbox" name="checked-large" value="checked-large" class="form-checkbox  checkbox-large " checked="" />
+                    <label for="Checked-large" class="">Stor udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-large" type="checkbox" name="disabled-large" value="disabled-large" class="form-checkbox  checkbox-large " disabled="" />
+                    <label for="disabled-large" class="">Stor inaktiv
+                        ikke-udfyldt tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-checked-large" type="checkbox" name="disabled-checked-large" value="disabled-checked-large" class="form-checkbox  checkbox-large " disabled="" checked="" />
+                    <label for="disabled-checked-large" class="">Stor
+                        inaktiv udfyldt tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="fokus-large" type="checkbox" name="fokus-large" value="fokus-large" class="form-checkbox focus checkbox-large " />
+                    <label for="fokus-large" class="">Stor ikke-udfyldt
+                        tjekboks i fokus</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with error message -->
+    <div class="form-group form-error">
+        <fieldset>
+            <legend class="h5">Tjekboks med fejl</legend>
+            <span class="form-error-message" role="alert">Hjælpsom
+                fejlbesked</span>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="car" type="checkbox" name="transport[]" value="car" class="form-checkbox  checkbox-large " />
+                    <label for="car" class="">Bil</label>
+
+                </li>
+
+                <li>
+
+                    <input id="bus" type="checkbox" name="transport[]" value="bus" class="form-checkbox  checkbox-large " />
+                    <label for="bus" class="">Bus</label>
+
+                </li>
+
+                <li>
+
+                    <input id="train" type="checkbox" name="transport[]" value="train" class="form-checkbox  checkbox-large " />
+                    <label for="train" class="">Tog</label>
+
+                </li>
+
+                <li>
+
+                    <input id="plane" type="checkbox" name="transport[]" value="plane" class="form-checkbox  checkbox-large " />
+                    <label for="plane" class="">Fly</label>
+
+                </li>
+
+                <li>
+
+                    <input id="ferry" type="checkbox" name="transport[]" value="ferry" class="form-checkbox  checkbox-large " />
+                    <label for="ferry" class="">Færge</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-checkbox">Kode</button>
@@ -1591,7 +1737,6 @@
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
               <li>Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.</li>
-              <li>Tilknyt label til hver tjekboks. Erstat eventuelt label med title-attributten.</li>
               <li>Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.</li>
               <li>Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</li>
               <li>Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.</li>
@@ -1631,23 +1776,30 @@
 
 
 <footer>
-  <div class="footer">
-    <div class="container">
-        <ul class="unstyled-list inline-list">
-          <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-          <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-          <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-          <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
-        </ul>
-    </div>
-  </div>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
 </footer>
 
 
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

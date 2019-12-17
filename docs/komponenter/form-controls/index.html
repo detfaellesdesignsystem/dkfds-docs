@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1314,14 +1318,14 @@
     
       
 
-<li class="has-anchor-links">
+<li class="">
 
 
   
 
 <a href="/omdesignsystemet/samarbejdsforum/"
   class="nav-link">
-  Samarbejdsforum
+  Næste samarbejdsforum
 </a>
 
 </li>
@@ -1355,9 +1359,9 @@
 
   
 
-<a href="/omdesignsystemet/styregruppe/"
+<a href="/omdesignsystemet/kontakt-support/"
   class="nav-link">
-  Styregruppe
+  Kontakt og support
 </a>
 
 </li>
@@ -1373,9 +1377,9 @@
 
   
 
-<a href="/omdesignsystemet/fds-teamet/"
+<a href="/omdesignsystemet/governance/"
   class="nav-link">
-  FDS-teamet
+  Governance
 </a>
 
 </li>
@@ -1427,9 +1431,9 @@
 
   
 
-<a href="/omdesignsystemet/releases/"
+<a href="/omdesignsystemet/privatlivspolitik-cookies/"
   class="nav-link">
-  Release notes
+  Privatlivspolitik og cookies
 </a>
 
 </li>
@@ -1445,9 +1449,9 @@
 
   
 
-<a href="/omdesignsystemet/privatlivspolitik-cookies/"
+<a href="/omdesignsystemet/releases/"
   class="nav-link">
-  Privatlivspolitik og cookies
+  Release notes
 </a>
 
 </li>
@@ -2018,15 +2022,53 @@
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/01-text-input">
   <h2 id="felter">Felter</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-text-input" aria-label="Eksempel på tekst felter">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="form-group">
+        <label class="form-label " for="input-type-text" id="form-label-input-type-text">Inputfelt med label</label>
+        <span class="form-hint" id="input-hint-message-input-type-text">Fx
+            12345678</span>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/text-input"></iframe>
+        <input class="form-input   " placeholder="" id="input-type-text" value="" name="input-type-text" type="text" aria-labelledby="form-label-input-type-text input-hint-message-input-type-text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-focus" id="form-label-input-focus">Inputfelt i fokus</label>
+
+        <input class="form-input  focus " placeholder="" id="input-focus" value="" name="input-focus" type="text" />
+    </div>
+
+    <div class="form-group form-error">
+        <label class="form-label " for="form-error" id="form-label-form-error">Inputfelt med fejl</label>
+        <span class="form-hint" id="input-hint-message-form-error">Fx
+            12345678</span>
+        <span class="form-error-message" id="form-error-message-form-error" role="alert">Hjælpsom fejlbesked</span>
+        <input class="form-input   " placeholder="" id="form-error" value="" name="form-error" type="text" aria-describedby="form-error-message-form-error" aria-labelledby="form-label-form-error input-hint-message-form-error" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-disabled" id="form-label-input-disabled">Inputfelt som er låst</label>
+
+        <input class="form-input   " placeholder="" id="input-disabled" value="" name="input-disabled" type="text" disabled="disabled" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-optional" id="form-label-input-optional">Inputfelt som er valgfrit<span class="weight-normal"> (frivilligt)</span></label>
+
+        <input class="form-input   " placeholder="" id="input-optional" value="" name="input-optional" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-readonly" id="form-label-input-readonly">Inputfelt som er
+            readonly</label>
+
+        <input class="form-input   " placeholder="" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
+    </div>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-text-input">Kode</button>
@@ -2035,26 +2077,27 @@
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text"</span><span class="nt">&gt;</span>Inputfelt med
-            label<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-type-text"</span><span class="nt">&gt;</span>Inputfelt med label<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-type-text"</span><span class="nt">&gt;</span>Fx
             12345678<span class="nt">&lt;/span&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span>
-            <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+            <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span>
+            <span class="na">aria-labelledby=</span><span class="s">"form-label-input-type-text input-hint-message-input-type-text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-focus"</span><span class="nt">&gt;</span>Inputfelt i
-            fokus<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-focus"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-focus"</span><span class="nt">&gt;</span>Inputfelt i fokus<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  focus "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-focus"</span>
             <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-focus"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"form-error"</span><span class="nt">&gt;</span>Inputfelt med
-            fejl<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"form-error"</span>
+            <span class="na">id=</span><span class="s">"form-label-form-error"</span><span class="nt">&gt;</span>Inputfelt med fejl<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-form-error"</span><span class="nt">&gt;</span>Fx
             12345678<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"form-error-message-form-error"</span>
@@ -2062,28 +2105,29 @@
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"form-error"</span>
             <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"form-error"</span> <span class="na">type=</span><span class="s">"text"</span>
             <span class="na">aria-describedby=</span><span class="s">"form-error-message-form-error"</span>
-            <span class="na">aria-describedby=</span><span class="s">"input-hint-message-form-error"</span><span class="nt">&gt;</span>
+            <span class="na">aria-labelledby=</span><span class="s">"form-label-form-error input-hint-message-form-error"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-disabled"</span><span class="nt">&gt;</span>Inputfelt som er
-            låst<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-disabled"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-disabled"</span><span class="nt">&gt;</span>Inputfelt som er låst<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-disabled"</span>
             <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-disabled"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-optional"</span><span class="nt">&gt;</span>Inputfelt som er
-            valgfrit<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"weight-normal"</span><span class="nt">&gt;</span>
-                (frivilligt)<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-optional"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-optional"</span><span class="nt">&gt;</span>Inputfelt som er valgfrit<span class="nt">&lt;span</span>
+                <span class="na">class=</span><span class="s">"weight-normal"</span><span class="nt">&gt;</span> (frivilligt)<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-optional"</span>
             <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-optional"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-readonly"</span><span class="nt">&gt;</span>Inputfelt som er
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-readonly"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-readonly"</span><span class="nt">&gt;</span>Inputfelt som er
             readonly<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-readonly"</span>
@@ -2135,15 +2179,78 @@
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/02-text-input-width">
   <h2 id="feltbredde">Feltbredde</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-text-input-width" aria-label="Eksempel på feltbredder">
+    <div class="container">
+    <h1 class="h4">Input bredde med rem</h1>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-xxs">Inputfelt med
+            klassen input-width-xxs (8rem)</label>
+        <input class="form-input input-width-xxs" id="input-type-text-xxs" name="input-type-text-xxs" type="text" />
+    </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/text-input-width"></iframe>
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-xs">Inputfelt med
+            klassen input-width-xs (16rem)</label>
+        <input class="form-input input-width-xs" id="input-type-text-xs" name="input-type-text-xs" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-s">Inputfelt med
+            klassen input-width-s (24rem)</label>
+        <input class="form-input input-width-s" id="input-type-text-s" name="input-type-text-s" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-m">Inputfelt med
+            klassen input-width-m (32rem)</label>
+        <input class="form-input input-width-m" id="input-type-text-m" name="input-type-text-m" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-l">Inputfelt med
+            klassen input-width-l (40rem)</label>
+        <input class="form-input input-width-l" id="input-type-text-l" name="input-type-text-l" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-xl">Inputfelt med
+            klassen input-width-xl (48rem)</label>
+        <input class="form-input input-width-xl" id="input-type-text-xl" name="input-type-text-xl" type="text" />
+    </div>
+
 </div>
+
+<div class="container">
+    <h1 class="h4 mt-7">Input bredde med tegn</h1>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-char-4">Inputfelt
+            med klassen input-char-4 (4 tegn)</label>
+        <input class="form-input input-char-4" id="input-type-text-char-4" name="input-type-text-char-4" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-char-8">Inputfelt
+            med klassen input-char-8 (8 tegn)</label>
+        <input class="form-input input-char-8" id="input-type-text-char-8" name="input-type-text-char-8" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-char-11">Inputfelt
+            med klassen input-char-11 (11 tegn)</label>
+        <input class="form-input input-char-11" id="input-type-text-char-11" name="input-type-text-char-11" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-type-text-char-27">Inputfelt
+            med klassen input-char-27 (27 tegn)</label>
+        <input class="form-input input-char-27" id="input-type-text-char-27" name="input-type-text-char-27" type="text" />
+    </div>
+
+</div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-text-input-width">Kode</button>
@@ -2296,7 +2403,7 @@
           <h4 class="h5">Anvendes ikke til</h4>
           <p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
           <h4 class="h5">Vejledning</h4>
-          <p>Tilføj feltbreddeværdier svarende til den mængde information, du forventer, at brugeren indtaster. På den måde får brugeren overblik over sin indtastning.</p>
+          <p>Sæt bredden på feltet, så det svarer til den mængde information, du forventer, at brugeren indtaster. På den måde får brugeren overblik over sin indtastning.</p>
       </section>
   </div>
 </div>
@@ -2306,15 +2413,28 @@
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/03-text-area">
   <h2 id="textarea">Textarea</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-text-area" aria-label="Eksempel på tekstområde">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="form-group">
+        <label class="form-label " for="input-area">Tekstområde med
+            label</label>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/text-area"></iframe>
+        <textarea class="form-input " rows="5" placeholder="" id="input-area" name="input-area"></textarea>
+    </div>
+
+    <div class="form-group form-error">
+        <label class="form-label " for="input-error">Tekstområde med
+            fejlbesked</label>
+
+        <span class="form-error-message" id="form-error-message-input-error" role="alert">Hjælpsom
+            fejlbesked</span>
+        <textarea class="form-input " rows="5" placeholder="" id="input-error" name="input-error" aria-describedby="form-error-message-input-error"></textarea>
+    </div>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-text-area">Kode</button>
@@ -2391,15 +2511,30 @@
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/04-dropdown">
   <h2 id="dropdown-menu">Dropdown-menu</h2>
   
-  
-<div class="component-preview preview-dropdown">
+  <div class="component-preview preview-dropdown component-preview-select" aria-label="Eksempel på dropdown-menu">
+    <div class="container">
+    <form class="form mb-7 input-width-m">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+        <div class="form-group ">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/select"></iframe>
+            <label class="form-label " for="options">Dropdown label
+                (select)</label>
+            <select class=" form-select" name="options" id="options">
+                <option value="">Vælg</option>
+
+                <option value="option1">Mulighed 1</option>
+
+                <option value="option2">Mulighed 2</option>
+
+                <option value="option3">Mulighed 3</option>
+
+            </select>
+        </div>
+
+    </form>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-select">Kode</button>
@@ -2471,15 +2606,157 @@
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/05-checkboxes">
   <h2 id="tjekboks">Tjekboks</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-checkbox" aria-label="Eksempel på tjekbokse">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <!-- Example of small checkbox -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Lille tjekboks</legend>
+            <ul class="nobullet-list">
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/checkbox"></iframe>
+                <li>
+
+                    <input id="Unchecked" type="checkbox" name="unchecked" value="unchecked" class="form-checkbox   " />
+                    <label for="Unchecked" class="">Ikke-udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked" type="checkbox" name="checked" value="checked" class="form-checkbox   " checked="" />
+                    <label for="Checked" class="">Udfyldt tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled" type="checkbox" name="disabled" value="disabled" class="form-checkbox   " disabled="" />
+                    <label for="disabled" class="">Inaktiv ikke-udfyldt
+                        tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-checked" type="checkbox" name="disabled-checked" value="disabled-checked" class="form-checkbox   " disabled="" checked="" />
+                    <label for="disabled-checked" class="">Inaktiv udfyldt
+                        tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="fokus" type="checkbox" name="Focus" value="fokus" class="form-checkbox focus  " />
+                    <label for="fokus" class="">Ikke-udfyldt tjekboks i
+                        fokus</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example of large checkbox (recommended) -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Stor tjekboks (anbefalet)</legend>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="Unchecked-large" type="checkbox" name="unchecked-large" value="unchecked-large" class="form-checkbox  checkbox-large " />
+                    <label for="Unchecked-large" class="">Stor ikke-udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked-large" type="checkbox" name="checked-large" value="checked-large" class="form-checkbox  checkbox-large " checked="" />
+                    <label for="Checked-large" class="">Stor udfyldt
+                        tjekboks</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-large" type="checkbox" name="disabled-large" value="disabled-large" class="form-checkbox  checkbox-large " disabled="" />
+                    <label for="disabled-large" class="">Stor inaktiv
+                        ikke-udfyldt tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="disabled-checked-large" type="checkbox" name="disabled-checked-large" value="disabled-checked-large" class="form-checkbox  checkbox-large " disabled="" checked="" />
+                    <label for="disabled-checked-large" class="">Stor
+                        inaktiv udfyldt tjekboks (disabled)</label>
+
+                </li>
+
+                <li>
+
+                    <input id="fokus-large" type="checkbox" name="fokus-large" value="fokus-large" class="form-checkbox focus checkbox-large " />
+                    <label for="fokus-large" class="">Stor ikke-udfyldt
+                        tjekboks i fokus</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with error message -->
+    <div class="form-group form-error">
+        <fieldset>
+            <legend class="h5">Tjekboks med fejl</legend>
+            <span class="form-error-message" role="alert">Hjælpsom
+                fejlbesked</span>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="car" type="checkbox" name="transport[]" value="car" class="form-checkbox  checkbox-large " />
+                    <label for="car" class="">Bil</label>
+
+                </li>
+
+                <li>
+
+                    <input id="bus" type="checkbox" name="transport[]" value="bus" class="form-checkbox  checkbox-large " />
+                    <label for="bus" class="">Bus</label>
+
+                </li>
+
+                <li>
+
+                    <input id="train" type="checkbox" name="transport[]" value="train" class="form-checkbox  checkbox-large " />
+                    <label for="train" class="">Tog</label>
+
+                </li>
+
+                <li>
+
+                    <input id="plane" type="checkbox" name="transport[]" value="plane" class="form-checkbox  checkbox-large " />
+                    <label for="plane" class="">Fly</label>
+
+                </li>
+
+                <li>
+
+                    <input id="ferry" type="checkbox" name="transport[]" value="ferry" class="form-checkbox  checkbox-large " />
+                    <label for="ferry" class="">Færge</label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-checkbox">Kode</button>
@@ -2678,7 +2955,6 @@
           <h3 class="h4">Tilgængelighed</h3>
           <ul>
               <li>Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.</li>
-              <li>Tilknyt label til hver tjekboks. Erstat eventuelt label med title-attributten.</li>
               <li>Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.</li>
               <li>Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</li>
               <li>Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.</li>
@@ -2714,15 +2990,170 @@
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/06-radio-buttons">
   <h2 id="radioknap">Radioknap</h2>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-radiobutton" aria-label="Eksempel på radioknapper">
+    <div class="container">
+    <!-- Example with small radiobuttons -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Lille radioknap</legend>
+            <ul class="nobullet-list">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+                <li>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/radiobutton"></iframe>
+                    <input id="unchecked" type="radio" name="unchecked" value="truth" class="form-radio   " />
+                    <label for="unchecked" id="form-label-unchecked" class="">Ikke-udfyldt radioknap </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked" type="radio" name="Checked" value="Checked" class="form-radio   " checked="" />
+                    <label for="Checked" id="form-label-Checked" class="">Udfyldt radioknap </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Disabled" type="radio" name="Disabled" value="Disabled" class="form-radio   " disabled="" />
+                    <label for="Disabled" id="form-label-Disabled" class="">Inaktiv ikke-udfyldt radioknap (disabled)
+                    </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Disabled-checked" type="radio" name="Disabled-checked" value="Disabled-checked" class="form-radio   " disabled="" checked="" />
+                    <label for="Disabled-checked" id="form-label-Disabled-checked" class="">Inaktiv
+                        udfyldt radioknap (disabled) </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Focus" type="radio" name="Focus" value="Focus" class="form-radio focus  " />
+                    <label for="Focus" id="form-label-Focus" class="">Ikke-udfyldt radioknap i fokus </label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with large radiobuttons (recommended) -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Stor radioknap (anbefalet)</legend>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="Unchecked-large" type="radio" name="Unchecked-large" value="Unchecked-large" class="form-radio  radio-large " />
+                    <label for="Unchecked-large" id="form-label-Unchecked-large" class="">Stor
+                        ikke-udfyldt radioknap </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Checked-large" type="radio" name="Checked-large" value="Checked-large" class="form-radio  radio-large " checked="" />
+                    <label for="Checked-large" id="form-label-Checked-large" class="">Stor udfyldt
+                        radioknap </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Disabled-large" type="radio" name="Disabled-large" value="Disabled-large" class="form-radio  radio-large " disabled="" />
+                    <label for="Disabled-large" id="form-label-Disabled-large" class="">Stor
+                        inaktiv ikke-udfyldt radioknap (disabled) </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Disabled-checked-large" type="radio" name="Disabled-checked-large" value="Disabled-checked-large" class="form-radio  radio-large " disabled="" checked="" />
+                    <label for="Disabled-checked-large" id="form-label-Disabled-checked-large" class="">Stor inaktiv udfyldt radioknap (disabled)
+                    </label>
+
+                </li>
+
+                <li>
+
+                    <input id="Focus-large" type="radio" name="Focus-large" value="Focus-large" class="form-radio focus radio-large " />
+                    <label for="Focus-large" id="form-label-Focus-large" class="">Stor ikke-udfyldt radioknap i fokus
+                    </label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with error message -->
+    <div class="form-group form-error">
+        <fieldset>
+            <legend class="h5">Radioknap med fejl</legend>
+            <span class="form-error-message" role="alert">Hjælpsom
+                fejlbesked</span>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="weekly" type="radio" name="often-pay" value="weekly" class="form-radio  radio-large " />
+                    <label for="weekly" id="form-label-weekly" class="">Ugentligt </label>
+
+                </li>
+
+                <li>
+
+                    <input id="fortnightly" type="radio" name="often-pay" value="fortnightly" class="form-radio  radio-large " />
+                    <label for="fortnightly" id="form-label-fortnightly" class="">Hver fjortende dag </label>
+
+                </li>
+
+                <li>
+
+                    <input id="monthly" type="radio" name="often-pay" value="monthly" class="form-radio  radio-large " />
+                    <label for="monthly" id="form-label-monthly" class="">Månedligt </label>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+    <!-- Example with help text -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h5">Radioknap med hjælpetekst</legend>
+            <ul class="nobullet-list">
+
+                <li>
+
+                    <input id="radio-helptext-1" type="radio" name="radio-helptext" value="v1" aria-labelledby="form-label-radio-helptext-1 helptext-radio-helptext-1" class="form-radio  radio-large " />
+                    <label for="radio-helptext-1" id="form-label-radio-helptext-1" class="">Valg 1
+                    </label>
+                    <span class="form-hint" id="helptext-radio-helptext-1">Dette er en
+                        hjælpetekst</span>
+
+                </li>
+
+                <li>
+
+                    <input id="radio-helptext-2" type="radio" name="radio-helptext" value="v2" aria-labelledby="form-label-radio-helptext-2 helptext-radio-helptext-2" class="form-radio  radio-large " />
+                    <label for="radio-helptext-2" id="form-label-radio-helptext-2" class="">Valg 2
+                    </label>
+                    <span class="form-hint" id="helptext-radio-helptext-2">Dette er en
+                        hjælpetekst</span>
+
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-radiobutton">Kode</button>
@@ -2739,8 +3170,8 @@
 
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"unchecked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"unchecked"</span>
                         <span class="na">value=</span><span class="s">"truth"</span> <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"unchecked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ikke-udfyldt radioknap
-                    <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"unchecked"</span> <span class="na">id=</span><span class="s">"form-label-unchecked"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ikke-udfyldt radioknap <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2748,8 +3179,8 @@
 
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Checked"</span>
                         <span class="na">value=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Udfyldt radioknap
-                    <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked"</span> <span class="na">id=</span><span class="s">"form-label-Checked"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Udfyldt radioknap <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2757,8 +3188,9 @@
 
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Disabled"</span>
                         <span class="na">value=</span><span class="s">"Disabled"</span> <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Inaktiv ikke-udfyldt
-                        radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled"</span> <span class="na">id=</span><span class="s">"form-label-Disabled"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Inaktiv ikke-udfyldt radioknap (disabled)
+                    <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2767,8 +3199,9 @@
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled-checked"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Disabled-checked"</span> <span class="na">value=</span><span class="s">"Disabled-checked"</span>
                         <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="na">disabled</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Inaktiv udfyldt
-                        radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-checked"</span>
+                        <span class="na">id=</span><span class="s">"form-label-Disabled-checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Inaktiv
+                        udfyldt radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2776,8 +3209,8 @@
 
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Focus"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Focus"</span>
                         <span class="na">value=</span><span class="s">"Focus"</span> <span class="na">class=</span><span class="s">"form-radio focus  "</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Focus"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ikke-udfyldt radioknap i
-                        fokus <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Focus"</span> <span class="na">id=</span><span class="s">"form-label-Focus"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ikke-udfyldt radioknap i fokus <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2796,8 +3229,9 @@
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Unchecked-large"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Unchecked-large"</span> <span class="na">value=</span><span class="s">"Unchecked-large"</span>
                         <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Unchecked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor ikke-udfyldt
-                        radioknap <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Unchecked-large"</span>
+                        <span class="na">id=</span><span class="s">"form-label-Unchecked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor
+                        ikke-udfyldt radioknap <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2806,7 +3240,8 @@
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked-large"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Checked-large"</span> <span class="na">value=</span><span class="s">"Checked-large"</span>
                         <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor udfyldt
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked-large"</span>
+                        <span class="na">id=</span><span class="s">"form-label-Checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor udfyldt
                         radioknap <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
@@ -2816,8 +3251,9 @@
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled-large"</span> <span class="na">type=</span><span class="s">"radio"</span>
                         <span class="na">name=</span><span class="s">"Disabled-large"</span> <span class="na">value=</span><span class="s">"Disabled-large"</span>
                         <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor inaktiv
-                        ikke-udfyldt radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-large"</span>
+                        <span class="na">id=</span><span class="s">"form-label-Disabled-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor
+                        inaktiv ikke-udfyldt radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2828,8 +3264,10 @@
                         <span class="na">value=</span><span class="s">"Disabled-checked-large"</span>
                         <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">disabled</span>
                         <span class="na">checked</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor
-                        inaktiv udfyldt radioknap (disabled) <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-checked-large"</span>
+                        <span class="na">id=</span><span class="s">"form-label-Disabled-checked-large"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor inaktiv udfyldt radioknap (disabled)
+                    <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2838,8 +3276,9 @@
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Focus-large"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Focus-large"</span>
                         <span class="na">value=</span><span class="s">"Focus-large"</span>
                         <span class="na">class=</span><span class="s">"form-radio focus radio-large "</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Focus-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor ikke-udfyldt
-                        radioknap i fokus <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Focus-large"</span> <span class="na">id=</span><span class="s">"form-label-Focus-large"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Stor ikke-udfyldt radioknap i fokus
+                    <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2859,7 +3298,8 @@
 
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"weekly"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"often-pay"</span>
                         <span class="na">value=</span><span class="s">"weekly"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"weekly"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ugentligt <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"weekly"</span> <span class="na">id=</span><span class="s">"form-label-weekly"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ugentligt <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2868,8 +3308,8 @@
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"fortnightly"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"often-pay"</span>
                         <span class="na">value=</span><span class="s">"fortnightly"</span>
                         <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fortnightly"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Hver fjortende dag
-                    <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fortnightly"</span> <span class="na">id=</span><span class="s">"form-label-fortnightly"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Hver fjortende dag <span class="nt">&lt;/label&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2877,7 +3317,48 @@
 
                     <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"monthly"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"often-pay"</span>
                         <span class="na">value=</span><span class="s">"monthly"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"monthly"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Månedligt <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"monthly"</span> <span class="na">id=</span><span class="s">"form-label-monthly"</span>
+                        <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Månedligt <span class="nt">&lt;/label&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="c">&lt;!-- Example with help text --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Radioknap med hjælpetekst<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-helptext-1"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                        <span class="na">name=</span><span class="s">"radio-helptext"</span> <span class="na">value=</span><span class="s">"v1"</span>
+                        <span class="na">aria-labelledby=</span><span class="s">"form-label-radio-helptext-1 helptext-radio-helptext-1"</span>
+                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-helptext-1"</span>
+                        <span class="na">id=</span><span class="s">"form-label-radio-helptext-1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Valg 1
+                    <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span>
+                        <span class="na">id=</span><span class="s">"helptext-radio-helptext-1"</span><span class="nt">&gt;</span>Dette er en
+                        hjælpetekst<span class="nt">&lt;/span&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-helptext-2"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                        <span class="na">name=</span><span class="s">"radio-helptext"</span> <span class="na">value=</span><span class="s">"v2"</span>
+                        <span class="na">aria-labelledby=</span><span class="s">"form-label-radio-helptext-2 helptext-radio-helptext-2"</span>
+                        <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-helptext-2"</span>
+                        <span class="na">id=</span><span class="s">"form-label-radio-helptext-2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Valg 2
+                    <span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span>
+                        <span class="na">id=</span><span class="s">"helptext-radio-helptext-2"</span><span class="nt">&gt;</span>Dette er en
+                        hjælpetekst<span class="nt">&lt;/span&gt;</span>
 
                 <span class="nt">&lt;/li&gt;</span>
 
@@ -2901,7 +3382,6 @@
         <h3 class="h4">Tilgængelighed</h3>
         <ul>
             <li>Indsæt altid to eller flere radioknapper i et fieldset inklusive legend.</li>
-            <li>Tilknyt label til hver radioknap. Erstat eventuelt label med title-attributten.</li>
             <li>Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.</li>
             <li>Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</li>
             <li>Radioknappernes er gjort tilgængelige for skærmlæsere, på trods af deres visuelle design, ved at selve checkbox tagget er placeret uden for det synlige skærmområde.</li>
@@ -2937,15 +3417,17 @@
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/08-file-input">
   <h2 id="vedhæft-fil">Vedhæft fil</h2>
   
-  
-<div class="component-preview ">
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/file-input"></iframe>
+  <div class="component-preview  component-preview-file-input" aria-label="Eksempel på vedhæft fil">
+    <div class="container">
+    <form class="form">
+        <div class="form-group file-input">
+            <label class="form-label" for="fileinput">Vedhæft fil</label>
+            <input type="file" id="fileinput" name="file" />
+        </div>
+    </form>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-file-input">Kode</button>
@@ -3013,15 +3495,70 @@
   
     <p class="font-lead">Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.</p>
   
-  
-<div class="component-preview ">
+  <div class="component-preview  component-preview-date-input" aria-label="Eksempel på datoangivelse">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <!-- Start code: Indsendelsesfrist -->
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/date-input"></iframe>
+    <div class="form-group  ">
+        <fieldset>
+            <legend><label class="form-label">Indsendelsesfrist</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
+            <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
+            <div class="date-group js-calendar-group mt-3">
+                <div class="form-group form-group-day">
+                    <label class="form-label" for="date-day">Dag</label>
+                    <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="date-month">Måned</label>
+                    <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                </div>
+                <div class="form-group form-group-year ">
+                    <label class="form-label" for="date-year">År</label>
+                    <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                </div>
+
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- End code: Indsendelsesfrist -->
+
+    <!-- Start code: Datoangivelse med fejl -->
+
+    <div class="form-group  form-error  ">
+        <fieldset>
+            <legend><label class="form-label">Datoangivelse med
+                    fejl</label>
+                <span class="form-hint">For eksempel: 05 12 2018</span>
+            </legend>
+            <span class="form-error-message " id="form-error-message-input-error2" role="alert">Skriv en
+                kort fejlmeddelelse, der hjælper brugeren videre</span>
+            <div class="date-group js-calendar-group mt-3">
+                <div class="form-group form-group-day">
+                    <label class="form-label" for="date-day2">Dag</label>
+                    <input class="form-input js-calendar-day-input" id="date-day2" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="date-month2">Måned</label>
+                    <input class="form-input js-calendar-month-input" id="date-month2" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                </div>
+                <div class="form-group form-group-year ">
+                    <label class="form-label" for="date-year2">År</label>
+                    <input class="form-input js-calendar-year-input" id="date-year2" value="2030" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                </div>
+
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- End code: Datoangivelse med fejl -->
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-date-input">Kode</button>
@@ -3191,15 +3728,41 @@
 </section>
 
 <h3>Simpel formularstruktur</h3>
+<div class="component-preview  component-preview-fieldset" aria-label="Eksempel på formularstruktur">
+    <div class="container">
+    <h1 class="h2">Dine kontaktoplysninger</h1>
+    <form>
 
-<div class="component-preview ">
+        <div class="form-group">
+            <label class="form-label " for="fnavn" id="form-label-fnavn">Fornavn</label>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <input class="form-input   " placeholder="" id="fnavn" value="" name="fnavn" type="text" />
+        </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/fieldset"></iframe>
+        <div class="form-group">
+            <label class="form-label " for="enavn" id="form-label-enavn">Efternavn</label>
+
+            <input class="form-input   " placeholder="" id="enavn" value="" name="enavn" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="email" id="form-label-email">E-mail adresse</label>
+
+            <input class="form-input   " placeholder="" id="email" value="" name="email" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="telefon" id="form-label-telefon">Telefonnr.</label>
+
+            <input class="form-input   " placeholder="" id="telefon" value="" name="telefon" type="text" />
+        </div>
+
+        <button class="button button-primary mt-9"> Gem oplysninger
+        </button>
+    </form>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-fieldset">Kode</button>
@@ -3210,28 +3773,32 @@
     <span class="nt">&lt;form&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span>
+                <span class="na">id=</span><span class="s">"form-label-fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"fnavn"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"fnavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span>
+                <span class="na">id=</span><span class="s">"form-label-enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"enavn"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"enavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>E-mail adresse<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span>
+                <span class="na">id=</span><span class="s">"form-label-email"</span><span class="nt">&gt;</span>E-mail adresse<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"email"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span>
+                <span class="na">id=</span><span class="s">"form-label-telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"telefon"</span>
                 <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"telefon"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
@@ -3249,15 +3816,146 @@
 </div>
 
 <h3>Kompleks formularstruktur</h3>
+<div class="component-preview  component-preview-fieldset-complex" aria-label="Eksempel på kompleks formularstruktur">
+    <div class="container">
+    <h1 class="h2">Dine kontaktoplysninger</h1>
+    <form>
 
-<div class="component-preview ">
+        <div class="form-group">
+            <label class="form-label " for="fnavn" id="form-label-fnavn">Fornavn</label>
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+            <input class="form-input   " placeholder="" id="fnavn" value="" name="fnavn" type="text" />
+        </div>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/fieldset-complex"></iframe>
+        <div class="form-group">
+            <label class="form-label " for="enavn" id="form-label-enavn">Efternavn</label>
+
+            <input class="form-input   " placeholder="" id="enavn" value="" name="enavn" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="email" id="form-label-email">E-mail adresse</label>
+
+            <input class="form-input   " placeholder="" id="email" value="" name="email" type="text" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label " for="telefon" id="form-label-telefon">Telefonnr.</label>
+
+            <input class="form-input   " placeholder="" id="telefon" value="" name="telefon" type="text" />
+        </div>
+
+        <div class="form-group">
+            <fieldset>
+                <legend class="h4">Hvordan vil du helst kontaktes?</legend>
+                <ul class="nobullet-list">
+                    <li>
+
+                        <input id="kontakt-telefon" type="radio" name="kontakt" value="kontakt-telefon" class="form-radio  radio-large " />
+                        <label for="kontakt-telefon" id="form-label-kontakt-telefon" class="">Pr.
+                            telefon </label>
+
+                    </li>
+                    <li>
+
+                        <input id="kontakt-email" type="radio" name="kontakt" value="kontakt-email" class="form-radio  radio-large " />
+                        <label for="kontakt-email" id="form-label-kontakt-email" class="">Pr.
+                            e-mail </label>
+
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend class="h4">Hvornår på dagen vil det passe bedst, at
+                    vi kontakter dig?</legend>
+                <ul class="nobullet-list">
+                    <li>
+
+                        <input id="morgen" type="checkbox" name="tidspunkt[]" value="morgen" class="form-checkbox  checkbox-large " />
+                        <label for="morgen" class="">Om morgenen</label>
+
+                    </li>
+                    <li>
+
+                        <input id="middag" type="checkbox" name="tidspunkt[]" value="middag" class="form-checkbox  checkbox-large " />
+                        <label for="middag" class="">Ved middagstid</label>
+
+                    </li>
+                    <li>
+
+                        <input id="eftermiddag" type="checkbox" name="tidspunkt[]" value="eftermiddag" class="form-checkbox  checkbox-large " />
+                        <label for="eftermiddag" class="">Om
+                            eftermiddagen</label>
+
+                    </li>
+                    <li>
+
+                        <input id="aften" type="checkbox" name="tidspunkt[]" value="aften" class="form-checkbox  checkbox-large " />
+                        <label for="aften" class="">Om aftenen</label>
+
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend class="h4">Personlige oplysninger</legend>
+
+                <div class="form-group  mt-0">
+                    <fieldset>
+                        <legend><label class="form-label">Indsendelsesfrist</label>
+                            <span class="form-hint">For eksempel: 05 12
+                                2018</span></legend>
+                        <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
+                        <div class="date-group js-calendar-group mt-3">
+                            <div class="form-group form-group-day">
+                                <label class="form-label" for="date-day">Dag</label>
+                                <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label class="form-label" for="date-month">Måned</label>
+                                <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                            </div>
+                            <div class="form-group form-group-year ">
+                                <label class="form-label" for="date-year">År</label>
+                                <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend class="h5">Bor du i Odense?</legend>
+                        <ul class="nobullet-list">
+                            <li>
+
+                                <input id="odense-ja" type="radio" name="odense" value="odense-ja" class="form-radio  radio-large " />
+                                <label for="odense-ja" id="form-label-odense-ja" class="">Ja
+                                </label>
+
+                            </li>
+                            <li>
+
+                                <input id="odense-nej" type="radio" name="odense" value="odense-nej" class="form-radio  radio-large " />
+                                <label for="odense-nej" id="form-label-odense-nej" class="">Nej
+                                </label>
+
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </div>
+        <button class="button button-primary mt-9"> Gem oplysninger
+        </button>
+    </form>
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-fieldset-complex">Kode</button>
@@ -3268,28 +3966,32 @@
     <span class="nt">&lt;form&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fnavn"</span>
+                <span class="na">id=</span><span class="s">"form-label-fnavn"</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"fnavn"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"fnavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"enavn"</span>
+                <span class="na">id=</span><span class="s">"form-label-enavn"</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"enavn"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"enavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>E-mail adresse<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"email"</span>
+                <span class="na">id=</span><span class="s">"form-label-email"</span><span class="nt">&gt;</span>E-mail adresse<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">""</span>
                 <span class="na">name=</span><span class="s">"email"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"telefon"</span>
+                <span class="na">id=</span><span class="s">"form-label-telefon"</span><span class="nt">&gt;</span>Telefonnr.<span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"telefon"</span>
                 <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"telefon"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
@@ -3304,8 +4006,9 @@
                         <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"kontakt-telefon"</span> <span class="na">type=</span><span class="s">"radio"</span>
                             <span class="na">name=</span><span class="s">"kontakt"</span> <span class="na">value=</span><span class="s">"kontakt-telefon"</span>
                             <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-telefon"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr. telefon
-                        <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-telefon"</span>
+                            <span class="na">id=</span><span class="s">"form-label-kontakt-telefon"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr.
+                            telefon <span class="nt">&lt;/label&gt;</span>
 
                     <span class="nt">&lt;/li&gt;</span>
                     <span class="nt">&lt;li&gt;</span>
@@ -3313,8 +4016,9 @@
                         <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"kontakt-email"</span> <span class="na">type=</span><span class="s">"radio"</span>
                             <span class="na">name=</span><span class="s">"kontakt"</span> <span class="na">value=</span><span class="s">"kontakt-email"</span>
                             <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-email"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr. e-mail
-                        <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"kontakt-email"</span>
+                            <span class="na">id=</span><span class="s">"form-label-kontakt-email"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Pr.
+                            e-mail <span class="nt">&lt;/label&gt;</span>
 
                     <span class="nt">&lt;/li&gt;</span>
                 <span class="nt">&lt;/ul&gt;</span>
@@ -3422,7 +4126,9 @@
                                 <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"odense-ja"</span> <span class="na">type=</span><span class="s">"radio"</span>
                                     <span class="na">name=</span><span class="s">"odense"</span> <span class="na">value=</span><span class="s">"odense-ja"</span>
                                     <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-ja"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ja <span class="nt">&lt;/label&gt;</span>
+                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-ja"</span>
+                                    <span class="na">id=</span><span class="s">"form-label-odense-ja"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ja
+                                <span class="nt">&lt;/label&gt;</span>
 
                             <span class="nt">&lt;/li&gt;</span>
                             <span class="nt">&lt;li&gt;</span>
@@ -3430,7 +4136,8 @@
                                 <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"odense-nej"</span> <span class="na">type=</span><span class="s">"radio"</span>
                                     <span class="na">name=</span><span class="s">"odense"</span> <span class="na">value=</span><span class="s">"odense-nej"</span>
                                     <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-nej"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Nej
+                                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"odense-nej"</span>
+                                    <span class="na">id=</span><span class="s">"form-label-odense-nej"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Nej
                                 <span class="nt">&lt;/label&gt;</span>
 
                             <span class="nt">&lt;/li&gt;</span>
@@ -3462,17 +4169,17 @@
 
 
 <footer>
-  <div class="footer">
-    <div class="container">
-        <ul class="unstyled-list inline-list">
-          <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-          <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-          <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-          <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
-        </ul>
-    </div>
-  </div>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
 </footer>
 
 
@@ -3481,8 +4188,15 @@
 <script src="/assets/js/styleguide.js"></script>
 
 
+
+
+
+
+
+
+
 <!-- begin usabilla live embed code -->
-<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+<script>/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
 if(window.innerWidth >= 992) {
     window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/375846218de8.js");
 } else {

@@ -614,15 +614,16 @@ code {
     }
   }
 }
+.page-selvbetjeningsløsninger .page-container{overflow:hidden;}
 .page-tringuide-overflowmenu-html .container,
 .page-tringuide-responsive-overflowmenu-html .container{
   min-height: 400px;
 }
-.page-basic-collapse-html, .page-modal-html, .page-text-input-html, .page-tags-html, .page-search-html  .container{
+.component-preview-basic-collapse, .component-preview-modal, .component-preview-text-input, .component-preview-tags, .component-preview-search  .container{
   padding-top: 4px;
   padding-bottom: 4px;
 }
-.page-overflow-menu-html .container, .page-overflow-menu-left-html .container{
+.component-preview-overflow-menu .container, .component-preview-overflow-menu-left .container{
   min-height: 400px;
 }
 .page-cookie-message-html > .container{
@@ -632,35 +633,38 @@ code {
     min-height: 250px;
   }
 }
-.page-text-input-html .container, .page-text-input-width-html .container{ //quick fix for iframe resize
+.component-preview-text-input .container, .component-preview-text-input-width .container{ //quick fix for iframe resize
   padding-bottom: 4px;
 }
-.page-accordion-html, .page-accordion-border-html, .page-accordion-multi-html{
+.component-preview-accordion, .component-preview-accordion-border, .component-preview-accordion-multi{
   .container {
     padding-top: 8px;
   }
 }
-.page-file-input-html .container{
+.component-preview-file-input .container{
   min-height: 100px;
 }
-.page-basic-collapse-html .container{
+.component-preview-basic-collapse .container{
   min-height: 150px;
   padding-top: 8px;
 }
-.page-skiplink-html .container{
-  min-height: 150px;
+.component-preview-skiplink {
+  overflow: hidden;
+  .container{
+    min-height: 150px;
+  }
 }
-.page-date-input-html{
+.component-preview-date-input{
   & .container{
     min-height: 200px; //so that datepicker is visible
   }
 }
-.page-tabnav-html{
+.component-preview-tabnav{
   & .container{
     min-height: 300px;
   }
 }
-.page-date-input-datepicker-html{
+.component-preview-date-input-datepicker{
   .container{
     min-height: 500px; //so that datepicker is visible
   }
@@ -668,7 +672,7 @@ code {
 .styleguide-spacer-modals{
   height: 400px;
 }
-.page-selectwoo-multiselect-html, .page-selectwoo-multiselect-ajax-html, .page-selectwoo-multiselect-groups-html{
+.component-preview-selectwoo-multiselect, .component-preview-selectwoo-multiselect-ajax, .component-preview-selectwoo-multiselect-groups{
   padding-top: 4px;
   padding-bottom: 4px;
   .container{
@@ -677,10 +681,10 @@ code {
 }
 
 
-.page-tooltip-html .container{
+.component-preview-tooltip .container{
   min-height: 350px;
 }
-.page-pikaday-html .container{
+.component-preview-pikaday .container{
   min-height: 350px;
 }
 // Example images on headers and page templates pages -------------- //
@@ -806,6 +810,10 @@ code {
 .demo-footer-title {
   color: $color-white;
   display: inline-block;
+}
+
+.youtube-video{
+  border: $outer-border;
 }
 
 
@@ -1030,6 +1038,9 @@ code {
 /* HOME */
 .bg-turquoise{
   background-color: $color-data-turquoise-medium-opacity;
+}
+.bg-alternative{
+  background-color: $background-alternative;
 }
 .bg-turquoise-dark{
   background-color: $color-data-turquoise;

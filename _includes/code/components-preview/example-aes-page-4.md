@@ -45,7 +45,7 @@ title: Example-aes-page-4.html
             <div class="solution-info d-print-none">
                 <!-- nav-secondary -->
 
-                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
+                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
                 <p>Support: 72 20 60 00 · <a href="javascript:void(0);"
                         data-micromodal-trigger="modal-contact"
@@ -178,7 +178,7 @@ title: Example-aes-page-4.html
                         name="Sagen handler om"
                         value="Ulykkesforsikring (ASL §81)"
                         class="form-radio  radio-large " />
-                    <label for="id-case1"
+                    <label for="id-case1" id="form-label-id-case1"
                         class="radio-large">Ulykkesforsikring (ASL §81)
                     </label>
 
@@ -189,7 +189,7 @@ title: Example-aes-page-4.html
                         name="Sagen handler om"
                         value="Erstatningsansvar (ASL §10)"
                         class="form-radio  radio-large " />
-                    <label for="id-case2"
+                    <label for="id-case2" id="form-label-id-case2"
                         class="radio-large">Erstatningsansvar (ASL §10)
                     </label>
 
@@ -200,7 +200,7 @@ title: Example-aes-page-4.html
                         name="Sagen handler om"
                         value="Patientskade (ASL §10)"
                         class="form-radio  radio-large " />
-                    <label for="id-case3"
+                    <label for="id-case3" id="form-label-id-case3"
                         class="radio-large">Forsikringsselskab (ASL §10)
                     </label>
 
@@ -218,8 +218,8 @@ title: Example-aes-page-4.html
                     <input id="id-aes1" type="radio"
                         name="AES skal vurdere" value="Mén (6.220 kr.)"
                         class="form-radio  radio-large " />
-                    <label for="id-aes1" class="radio-large">Mén (6.220
-                        kr.) </label>
+                    <label for="id-aes1" id="form-label-id-aes1"
+                        class="radio-large">Mén (6.220 kr.) </label>
 
                 </li>
                 <li>
@@ -228,8 +228,9 @@ title: Example-aes-page-4.html
                         name="AES skal vurdere"
                         value="Tab af erhvervsevne (22.280 kr.)"
                         class="form-radio  radio-large " />
-                    <label for="id-aes2" class="radio-large">Tab af
-                        erhvervsevne (22.280 kr.) </label>
+                    <label for="id-aes2" id="form-label-id-aes2"
+                        class="radio-large">Tab af erhvervsevne (22.280
+                        kr.) </label>
 
                 </li>
                 <li>
@@ -238,8 +239,9 @@ title: Example-aes-page-4.html
                         name="AES skal vurdere"
                         value="Mén + tab af erhvervsevne (22.280 kr.)"
                         class="form-radio  radio-large " />
-                    <label for="id-aes3" class="radio-large">Mén + tab af
-                        erhvervsevne (22.280 kr.) </label>
+                    <label for="id-aes3" id="form-label-id-aes3"
+                        class="radio-large">Mén + tab af erhvervsevne
+                        (22.280 kr.) </label>
 
                 </li>
             </ul>

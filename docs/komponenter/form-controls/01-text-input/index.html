@@ -43,6 +43,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1196,14 +1200,14 @@
     
       
 
-<li class="has-anchor-links">
+<li class="">
 
 
   
 
 <a href="/omdesignsystemet/samarbejdsforum/"
   class="nav-link">
-  Samarbejdsforum
+  Næste samarbejdsforum
 </a>
 
 </li>
@@ -1237,9 +1241,9 @@
 
   
 
-<a href="/omdesignsystemet/styregruppe/"
+<a href="/omdesignsystemet/kontakt-support/"
   class="nav-link">
-  Styregruppe
+  Kontakt og support
 </a>
 
 </li>
@@ -1255,9 +1259,9 @@
 
   
 
-<a href="/omdesignsystemet/fds-teamet/"
+<a href="/omdesignsystemet/governance/"
   class="nav-link">
-  FDS-teamet
+  Governance
 </a>
 
 </li>
@@ -1309,9 +1313,9 @@
 
   
 
-<a href="/omdesignsystemet/releases/"
+<a href="/omdesignsystemet/privatlivspolitik-cookies/"
   class="nav-link">
-  Release notes
+  Privatlivspolitik og cookies
 </a>
 
 </li>
@@ -1327,9 +1331,9 @@
 
   
 
-<a href="/omdesignsystemet/privatlivspolitik-cookies/"
+<a href="/omdesignsystemet/releases/"
   class="nav-link">
-  Privatlivspolitik og cookies
+  Release notes
 </a>
 
 </li>
@@ -1384,15 +1388,53 @@
           <h1 id="felter">Felter</h1>
           
 
-          
-<div class="component-preview ">
+          <div class="component-preview  component-preview-text-input" aria-label="Eksempel på tekst felter">
+    <div class="container">
 
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+    <div class="form-group">
+        <label class="form-label " for="input-type-text" id="form-label-input-type-text">Inputfelt med label</label>
+        <span class="form-hint" id="input-hint-message-input-type-text">Fx
+            12345678</span>
 
-    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/text-input"></iframe>
+        <input class="form-input   " placeholder="" id="input-type-text" value="" name="input-type-text" type="text" aria-labelledby="form-label-input-type-text input-hint-message-input-type-text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-focus" id="form-label-input-focus">Inputfelt i fokus</label>
+
+        <input class="form-input  focus " placeholder="" id="input-focus" value="" name="input-focus" type="text" />
+    </div>
+
+    <div class="form-group form-error">
+        <label class="form-label " for="form-error" id="form-label-form-error">Inputfelt med fejl</label>
+        <span class="form-hint" id="input-hint-message-form-error">Fx
+            12345678</span>
+        <span class="form-error-message" id="form-error-message-form-error" role="alert">Hjælpsom fejlbesked</span>
+        <input class="form-input   " placeholder="" id="form-error" value="" name="form-error" type="text" aria-describedby="form-error-message-form-error" aria-labelledby="form-label-form-error input-hint-message-form-error" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-disabled" id="form-label-input-disabled">Inputfelt som er låst</label>
+
+        <input class="form-input   " placeholder="" id="input-disabled" value="" name="input-disabled" type="text" disabled="disabled" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-optional" id="form-label-input-optional">Inputfelt som er valgfrit<span class="weight-normal"> (frivilligt)</span></label>
+
+        <input class="form-input   " placeholder="" id="input-optional" value="" name="input-optional" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label " for="input-readonly" id="form-label-input-readonly">Inputfelt som er
+            readonly</label>
+
+        <input class="form-input   " placeholder="" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
+    </div>
+
 </div>
+</div>
+
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-text-input">Kode</button>
@@ -1401,26 +1443,27 @@
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text"</span><span class="nt">&gt;</span>Inputfelt med
-            label<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-type-text"</span><span class="nt">&gt;</span>Inputfelt med label<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-type-text"</span><span class="nt">&gt;</span>Fx
             12345678<span class="nt">&lt;/span&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span>
-            <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+            <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span>
+            <span class="na">aria-labelledby=</span><span class="s">"form-label-input-type-text input-hint-message-input-type-text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-focus"</span><span class="nt">&gt;</span>Inputfelt i
-            fokus<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-focus"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-focus"</span><span class="nt">&gt;</span>Inputfelt i fokus<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  focus "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-focus"</span>
             <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-focus"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"form-error"</span><span class="nt">&gt;</span>Inputfelt med
-            fejl<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"form-error"</span>
+            <span class="na">id=</span><span class="s">"form-label-form-error"</span><span class="nt">&gt;</span>Inputfelt med fejl<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-form-error"</span><span class="nt">&gt;</span>Fx
             12345678<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"form-error-message-form-error"</span>
@@ -1428,28 +1471,29 @@
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"form-error"</span>
             <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"form-error"</span> <span class="na">type=</span><span class="s">"text"</span>
             <span class="na">aria-describedby=</span><span class="s">"form-error-message-form-error"</span>
-            <span class="na">aria-describedby=</span><span class="s">"input-hint-message-form-error"</span><span class="nt">&gt;</span>
+            <span class="na">aria-labelledby=</span><span class="s">"form-label-form-error input-hint-message-form-error"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-disabled"</span><span class="nt">&gt;</span>Inputfelt som er
-            låst<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-disabled"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-disabled"</span><span class="nt">&gt;</span>Inputfelt som er låst<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-disabled"</span>
             <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-disabled"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-optional"</span><span class="nt">&gt;</span>Inputfelt som er
-            valgfrit<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"weight-normal"</span><span class="nt">&gt;</span>
-                (frivilligt)<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-optional"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-optional"</span><span class="nt">&gt;</span>Inputfelt som er valgfrit<span class="nt">&lt;span</span>
+                <span class="na">class=</span><span class="s">"weight-normal"</span><span class="nt">&gt;</span> (frivilligt)<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-optional"</span>
             <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-optional"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-readonly"</span><span class="nt">&gt;</span>Inputfelt som er
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-readonly"</span>
+            <span class="na">id=</span><span class="s">"form-label-input-readonly"</span><span class="nt">&gt;</span>Inputfelt som er
             readonly<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-readonly"</span>
@@ -1505,23 +1549,30 @@
 
 
 <footer>
-  <div class="footer">
-    <div class="container">
-        <ul class="unstyled-list inline-list">
-          <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-          <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-          <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-          <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
-        </ul>
-    </div>
-  </div>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
 </footer>
 
 
     
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+
+
 
 
 

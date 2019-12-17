@@ -46,6 +46,10 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
 
+
+
+
+
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -1270,14 +1274,14 @@
     
       
 
-<li class="has-anchor-links">
+<li class="">
 
 
   
 
 <a href="/omdesignsystemet/samarbejdsforum/"
   class="nav-link">
-  Samarbejdsforum
+  Næste samarbejdsforum
 </a>
 
 </li>
@@ -1311,9 +1315,9 @@
 
   
 
-<a href="/omdesignsystemet/styregruppe/"
+<a href="/omdesignsystemet/kontakt-support/"
   class="nav-link">
-  Styregruppe
+  Kontakt og support
 </a>
 
 </li>
@@ -1329,9 +1333,9 @@
 
   
 
-<a href="/omdesignsystemet/fds-teamet/"
+<a href="/omdesignsystemet/governance/"
   class="nav-link">
-  FDS-teamet
+  Governance
 </a>
 
 </li>
@@ -1383,9 +1387,9 @@
 
   
 
-<a href="/omdesignsystemet/releases/"
+<a href="/omdesignsystemet/privatlivspolitik-cookies/"
   class="nav-link">
-  Release notes
+  Privatlivspolitik og cookies
 </a>
 
 </li>
@@ -1401,9 +1405,9 @@
 
   
 
-<a href="/omdesignsystemet/privatlivspolitik-cookies/"
+<a href="/omdesignsystemet/releases/"
   class="nav-link">
-  Privatlivspolitik og cookies
+  Release notes
 </a>
 
 </li>
@@ -1916,56 +1920,46 @@
 
           <h2 class="h3">Retningslinjer</h2>
 <section>
-    <h2 class="h4">Tilgængelighed</h2>
-    <p>Tringuides skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tab-tasten til navigation.</p>
-    <p>Tringuides kan have et højt kognitivt niveau. Før du vælger at anvende en tringuide, bør du teste en prototype med en alternativ løsning for at se, om det overhovedet er nødvendigt med en tringuide. </p>    
+<h2 class="h4">Tilgængelighed</h2>
+<p>Tringuides skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tab-tasten til navigation.</p>
+<p>Tringuides kan have et højt kognitivt niveau. Før du vælger at anvende en tringuide, bør du teste en prototype med en alternativ løsning for at se, om det overhovedet er nødvendigt med en tringuide. </p>  
 </section>
 <section>
-    <h2 class="h4">Brugervenlighed</h2>
-    <h3 class="h5">Anvendes til</h3>
-    <p>Tringuides anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.</p>
-    <h3 class="h5">Anvendes ikke til</h3>
-    <p>Tringuides skal ikke anvendes som primær eller sekundær navigationselement.</p>
-    <h3 class="h5">Vejledning</h3>                
-    <ul>
-        <li>Forsøg med ændret opsætning af dit indhold, type og antallet af spørgsmål før du vælger en tringuide til din løsning.</li>
-        <li>Vælg den tringuide-model, der passer til dine brugeres behov.</li>
-        <li>Undgå at lave en horisontal tringuide.</li>
-        <li>Anvend trin der virker naturlige og logiske for brugerne</li>
-        <li>Gør det synligt hvilket trin brugeren er kommet til.</li>
-        <li>Giv hvert trin et nummer</li>
-        <li>Det sidste trin bør være "kvittering"</li>
-        <li>Tilstræb så få trin som muligt</li>
-    </ul>
-</section>
+<h2 class="h4">Brugervenlighed</h2>
+<h3 class="h5">Anvendes til</h3>
+<p>Tringuides anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.</p>
+<h3 class="h5">Anvendes ikke til</h3>
+<p>Tringuides skal ikke anvendes som primær eller sekundær navigationselement.</p>
+<h3 class="h5">Vejledning</h3>  
+<ul> <li>Forsøg med ændret opsætning af dit indhold, type og antallet af spørgsmål før du vælger en tringuide til din løsning.</li> <li>Vælg den tringuide-model, der passer til dine brugeres behov.</li> <li>Undgå at lave en horisontal tringuide.</li> <li>Anvend trin der virker naturlige og logiske for brugerne</li> <li>Gør det synligt hvilket trin brugeren er kommet til.</li> <li>Det sidste trin skal være "Opsummering" eller "Tjek dine svar".</li> <li>Tilstræb så få trin som muligt</li> <li>Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ikke vises i trinindikatoren.</li> </ul> </section>
 
 <div class="accordion accordion-bordered mt-7">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="trin-code-documentation">
-    Implementering
-  </button>
-  <div id="trin-code-documentation" class="accordion-content">
-    <section>
-        <ul class="content-list">
-          <li>For en klikbar trinindikator bruges <code>.sidenav-list</code> klassen på ul elementet.</li>
-          <li>For en tvunget trinindikator bruges <code>.sidenav-list-locked</code> klassen på ul elementet.</li>
-        </ul>
-        <h2 class="h5">Aktivt og overstået trin i trinindikator</h2>
-        <ul class="content-list">
-          <li>Teksten i det aktive menupunkt bliver styret af primærfarven, som sættes med variablen <code>$color-primary</code></li>
-          <li>Det aktive menupunkt skal have klassen <code>.active</code>.</li>
-          <li>For at indikere et overstået trin, kan der indsættes et ikon med klassen <code>.sidenav-icon</code>. Dette ikon er sat til højre i trinet.</li>
-        </ul>
-        <h2 class="h5">Tilføj information i tringuide</h2>
-        <ul class="content-list">
-          <li>For at tilføje information til et trin bruges klassen <code>.sidenav-information</code>.</li>
-        </ul>
-        <h2 class="h5">Trinindikatoren kan indlejres i en dropdown. Der er her to valgmuligheder:</h2>
-        <ul>
-          <li>På alle skærmstørrelser er trinindikatoren indlejret i dropdownen. Dette kræver blot at trinindikatoren er placeret inde i <code>.overflow-menu-inner</code> containeren. Dette er vist i eksemplet "Trinindikator i overflow-menu".</li>
-          <li>Hvis man ønsker at få vist trinindikatoren på større skærme, men at den bliver vist i en dropdown på mindre skærme, skal <code>.overflow-menu </code> have klassen <code>.overflow-menu--md-no-responsive</code>. Dette er vist i eksemplet "Trinindikator - responsivt i overflow-menu".</li>
-        </ul>
-    </section>
-  </div>
+<button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="trin-code-documentation">
+Implementering
+</button>
+<div id="trin-code-documentation" class="accordion-content">
+<section>
+<ul class="content-list">
+<li>For en klikbar trinindikator bruges <code>.sidenav-list</code> klassen på ul elementet.</li>
+<li>For en tvunget trinindikator bruges <code>.sidenav-list-locked</code> klassen på ul elementet.</li>
+</ul>
+<h2 class="h5">Aktivt og overstået trin i trinindikator</h2>
+<ul class="content-list">
+<li>Teksten i det aktive menupunkt bliver styret af primærfarven, som sættes med variablen <code>$color-primary</code></li>
+<li>Det aktive menupunkt skal have klassen <code>.active</code>.</li>
+<li>For at indikere et overstået trin, kan der indsættes et ikon med klassen <code>.sidenav-icon</code>. Dette ikon er sat til højre i trinet.</li>
+</ul>
+<h2 class="h5">Tilføj information i tringuide</h2>
+<ul class="content-list">
+<li>For at tilføje information til et trin bruges klassen <code>.sidenav-information</code>.</li>
+</ul>
+<h2 class="h5">Trinindikatoren kan indlejres i en dropdown. Der er her to valgmuligheder:</h2>
+<ul>
+<li>På alle skærmstørrelser er trinindikatoren indlejret i <a href="/komponenter/overflowmenu/">overflow menuen</a>. Dette kræver blot at trinindikatoren er placeret inde i <code>.overflow-menu-inner</code> containeren. Dette er vist i eksemplet "Trinindikator i overflow-menu".</li>
+<li>Hvis man ønsker at få vist trinindikatoren på større skærme, men at den bliver vist i en dropdown på mindre skærme, skal <code>.overflow-menu </code> have klassen <code>.overflow-menu--md-no-responsive</code>. Dette er vist i eksemplet "Trinindikator - responsivt i overflow-menu".</li>
+</ul>
+</section>
+</div>
 </div>
 
 <section class="styleguide-child-container content" id="section-/komponenter/trinindikatorer/tringuide-overflowmenu">
@@ -2435,17 +2429,17 @@
 
 
 <footer>
-  <div class="footer">
-    <div class="container">
-        <ul class="unstyled-list inline-list">
-          <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-          <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-          <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-          <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
-        </ul>
-    </div>
-  </div>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
 </footer>
 
 
@@ -2454,8 +2448,15 @@
 <script src="/assets/js/styleguide.js"></script>
 
 
+
+
+
+
+
+
+
 <!-- begin usabilla live embed code -->
-<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+<script>/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
 if(window.innerWidth >= 992) {
     window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/375846218de8.js");
 } else {
