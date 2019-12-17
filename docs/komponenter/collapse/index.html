@@ -19,6 +19,9 @@
 <meta property="og:title" content="Skjul og vis (Collapse) | Det Fælles Designsystem">
 
 
+<meta name="description" content="Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.">
+<meta property="og:description" content="Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.">
+
 
 
 
@@ -222,6 +225,15 @@
 
 
           </ul>
+          <div id="search-form">
+            <form method="get" action="/search/">
+              <div class="form-group search">
+                <label for="search-input" class="sr-only">Søg efter indhold</label>
+                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search">
+                <button class="button button-search" type="submit" id="searchbtn">Søg</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <!-- 3: Main navigation end-->
@@ -1869,7 +1881,7 @@
           <h1 id="skjul-og-vis-collapse">Skjul og vis (Collapse)</h1>
           
 
-          <p>Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.</p>
+          <p class="font-lead">Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.</p>
 
 <section class="styleguide-child-container content" id="section-/komponenter/collapse/01-radio-collapse">
   <h2 id="radioknap-skjul-og-vis-indhold">Radioknap - skjul og vis indhold</h2>
@@ -2316,6 +2328,7 @@
 
 
     
+
     <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
 
