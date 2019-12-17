@@ -94,6 +94,11 @@ var exampleUrls = [
                 buttons[i].setAttribute('aria-expanded', false);
                 document.getElementById(buttons[i].getAttribute('aria-controls')).setAttribute("aria-hidden", true);
             }
+
+            let cookieMessage = document.getElementById('cookieMessage');
+            if (cookieMessage !== null) {
+                cookieMessage.style.display = 'none';
+            }
         });
 
         if(pdfUrls[i] != "") {
@@ -133,6 +138,11 @@ var exampleUrls = [
             for(var i = 0; i < buttons.length; i++){
                 buttons[i].setAttribute('aria-expanded', false);
                 document.getElementById(buttons[i].getAttribute('aria-controls')).setAttribute("aria-hidden", true);
+            }
+
+            let cookieMessage = document.getElementById('cookieMessage');
+            if (cookieMessage !== null) {
+                cookieMessage.style.display = 'none';
             }
         });
 
