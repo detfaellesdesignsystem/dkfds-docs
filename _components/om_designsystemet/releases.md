@@ -4,7 +4,7 @@ layout: styleguide
 title: Release notes
 category: Om_designsystemet_category
 subcategory: Om designsystemet
-description: Release notes for dkfds
+description: Release notes for DKFDS
 anchor: true
 subnav:
 - text: Version 5.3.0
@@ -137,7 +137,7 @@ subnav:
 <ul>
     <li>
         <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen <code>DKFDS.init()</code> på hver side.
-        <p class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/komigang/tiludviklere/">implementering af dkfds til udviklere</a>.</p>
+        <p class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/komigang/tiludviklere/">implementering af DKFDS til udviklere</a>.</p>
     </li>
     <li>
         <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.

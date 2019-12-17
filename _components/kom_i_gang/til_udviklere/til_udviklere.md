@@ -17,27 +17,27 @@ description: Til udviklere, der skal gøre brug af Det Fælles Designsystem.
 
 <h2>Installation</h2>
 <p>DKFDS kan installeres ved brug af <a href="https://www.npmjs.com/package/dkfds" class="icon-link">npm pakken<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller du kan <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">download seneste version via Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
-<h3 class="h4">Hent dkfds (NPM)</h3>
+<h3 class="h4">Hent DKFDS (NPM)</h3>
 <p>Navigér til roden af dit projekt i en kommando prompt.</p>
-<p>Installer dkfds med følgende kommando:</p>
+<p>Installer DKFDS med følgende kommando:</p>
 <pre>npm install --save dkfds</pre>
 <p>Modulet 'dkfds' er nu installeret i 'node_modules' mappen.</p>
-<h3 class="h4">Hent dkfds (zip)</h3>
+<h3 class="h4">Hent DKFDS (zip)</h3>
 <p>Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">version som zipfil på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, og pak indholdet ud i dit projekt.</p>
 <h3 class="h4">Inkludér tema</h3>
 <h4 class="h5">Virk tema:</h4>
-<pre>&lt;link type="text/css" rel="stylesheet" href="[sti til dkfds mappen]/dist/css/dkfds-virkdk.css" /&gt;</pre>
+<pre>&lt;link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-virkdk.css" /&gt;</pre>
 <h4 class="h5">Borger.dk tema:</h4>
-<pre>&lt;link type="text/css" rel="stylesheet" href="[sti til dkfds mappen]/dist/css/dkfds-borgerdk.css" /&gt;</pre>
-<p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser dkfds til dit eget tema</a>.</p>
+<pre>&lt;link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css" /&gt;</pre>
+<p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.</p>
 <h4 class="h5">Inkludér JavaScript</h4>
 <p>JavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.</p>
 <h5 class="h6">Script tag</h5>
-<pre>&lt;script src='[sti til dkfds mappen]/dist/js/dkfds.js'&gt;&lt;/script&gt;</pre>
+<pre>&lt;script src='[sti til DKFDS mappen]/dist/js/dkfds.js'&gt;&lt;/script&gt;</pre>
 <h5 class="h6">Importer modulet i en .js fil</h5>
 <pre>import * as DKFDS from "dkfds";</pre>
 <h5 class="h6">Init</h5>
-<p>Når dkfds er inkluderet skal du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
+<p>Når DKFDS er inkluderet skal du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
 <p class="mb-2">Eksempel:</p>
 <pre>
 document.addEventListener("DOMContentLoaded", function(){
@@ -128,7 +128,7 @@ npm install dkfds-plugins --save
 &lt;link rel="stylesheet" href="[path-to-plugins-project]/dist/css/dkfds-datatables-theme.standalone.min.css"&gt;
 </pre>
 
-<p>Eller inkluder temaerne i SCSS (Bemærk, at du først skal importere dkfds):</p>
+<p>Eller inkluder temaerne i SCSS (Bemærk, at du først skal importere DKFDS):</p>
 
 <pre>
 @import "~dkfds-plugins/dist/scss/dkfds-datatables-theme";
