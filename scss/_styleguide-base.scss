@@ -247,7 +247,7 @@
 
 .color-container-large {
   height: 108px;
-  border: solid 1px #e1e1e1;
+  border: $outer-border;
 
   //Colors
   &.color-white {
@@ -325,7 +325,7 @@
 }
 .color-container-medium {
   height: 64px;
-  border: solid 1px #e1e1e1;
+  border: $outer-border;
 
   &.color-data-turquoise {
     background-color: $color-data-turquoise;
@@ -411,19 +411,10 @@
   height: 40px;
   margin-bottom: 0.8rem;
   margin-top: 0.8rem;
-
-  &.bordered {
-    border: dotted 1px $color-gray-light;
-
-    .color-text-container {
-      padding: 7px 15px 7px 15px;
-      margin-bottom: 0rem;
-      margin-top: 0rem;
-    }
-  }
+  border: $outer-border;
 
   .color-text-container {
-    padding: 8px 16px 8px 16px;
+    padding: 7px 15px 7px 15px;
     margin-bottom: 0rem;
     margin-top: 0rem;
 
@@ -444,7 +435,7 @@
     .text-positive {
       color:$color-positive;
     }
-}
+  }
 
   &.color-black {
     background-color: $color-black;
