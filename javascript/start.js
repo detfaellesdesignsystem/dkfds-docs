@@ -18,6 +18,19 @@ document.addEventListener("DOMContentLoaded", function(){
         new TestFDS(DKFDS);
     }
 
+    let searchForm = document.getElementById('search-form');
+    if(searchForm !== null){
+        let form = searchForm.getElementsByTagName('form')[0];
+        form.addEventListener('submit', function(e){
+            if(document.getElementById('search-input').value === ""){
+                e.preventDefault();
+                return false;
+            } else {
+                return true;
+            }
+        }, false);
+    }
+
 });
 
 $(document).ready(function () {

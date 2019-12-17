@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<main class="container page-container" id="main-content">
+  {% include theme-alert.html %}
+  <div class="row">
+    <div class="col-12 styleguide-content content">
+      <section id="section-{{page.id}}">
+        <header>
+
+          {% if page.subcategory %}
+          <p>
+            {{ page.subcategory }}
+          </p>
+          {% endif %}
+          <h1 id="{{ page.title | slugify }}" class="mb-0">{{ page.title }}</h1>
+        </header>
+        {% if page.lead != null %}
+          <p class="font-lead">{{ page.lead }}</p>
+        {% endif %}
+      {{ content }}
+      </section>
+    </div>
+
+  </div>
+</main>

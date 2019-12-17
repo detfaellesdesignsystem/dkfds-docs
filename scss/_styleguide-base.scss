@@ -28,6 +28,21 @@
     margin-top: 0;
   }
 }
+// Search
+#search-form{
+  align-self: center;
+}
+.page-result a{
+  &:visited, &:link, &:hover, &:active {
+    text-decoration: none;
+    .h4 {
+      color: $color-link;
+    }
+  }
+  &:hover .h4{
+    text-decoration: underline;
+  }
+}
 
 // Icon examples --------------
 

@@ -1,0 +1,31 @@
+{% if page.search %}
+<script>
+let searchIndex = [
+{% for navs in site.data.nav offset:1 %}
+{% for nav in navs %}
+{% for link in nav %}
+{% if link.href %}
+{% assign _page = link.href | resolve_permalink %}
+{% unless _page.exclude_search %}
+{
+"url": "{{ link.href }}",
+"title": "{{ _page.title }}",
+"category": "{{ _page.category }}",
+"subcategory": "{{ _page.subcategory }}",
+"lead": "{{ _page.lead }}",
+"tags": "{{ _page.tags }}",
+"layout": "{{ _page.layout }}",
+"content" : "{{ _page.content | strip_html | strip_newlines | escape }}",
+"description" : "{{ _page.description }}",
+"subnav": [{% for subnav in _page.subnav %}"{{ subnav.text }}",{% endfor %}""]
+},
+{% endunless %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{}];
+searchIndex.pop();
+</script>
+<script src="{{ site.baseurl }}/assets/js/search.js"></script>
+{% endif %}

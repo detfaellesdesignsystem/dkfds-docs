@@ -15,7 +15,8 @@ module.exports = function (outputPath, prod) {
       "dkfds-pikaday-example": ["./examples/plugins/pikaday/js/dkfds-pikaday-example.js"],
       "dkfds-micromodal-example": ["./examples/plugins/micromodal/js/dkfds-micromodal-example.js"],
       "dkfds-tippy-example": ["./examples/plugins/tippy/js/dkfds-tippy-example.js"],
-      "requirements-tool": ["./javascript/requirements-tool.js"]
+      "requirements-tool": ["./javascript/requirements-tool.js"],
+      "search": ["./javascript/search.js"]
     },
     module: {
       rules: [
