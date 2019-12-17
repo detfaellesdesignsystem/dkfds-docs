@@ -47,12 +47,14 @@ function populateSearch (results, query, start){
             }
             let page = results[r];
             html += '<div class="page-result">';
-            html += '<a href="' + page.url + '"><h2 class="h4 mb-0 d-inline-block page-title">' + page.title + '</h2><br/>';
-            html += '<p class="page-url d-inline-block text-positive mt-0 mb-0" aria-label="'+page.url+'">'+formatUrl(page.url)+'</p></a>';
+            html += '<h2 class="h4 mb-0 page-title"><a href="' + page.url + '">' + page.title + '</a></h2>';
+            if(page.subcategory !== "") {
+                html += '<p class="page-url mt-0 mb-0 h6 weight-semibold">' + page.subcategory + '</p>';
+            }
             if(page.description.length > 0) {
                 let description = formatDescription(truncateString(page.description, 180, '...'), query);
 
-                html += '<p class="form-hint mt-0 mb-0 page-description">' + description + '</p>';
+                html += '<p class="form-hint mt-0 mb-0 page-description small-text">' + description + '</p>';
             }
             html += '</div>';
         }
@@ -78,25 +80,6 @@ function formatDescription(description, query){
 
 }
 
-function getWordAt (str, pos) {
-
-    // Perform type conversions.
-    str = String(str);
-    pos = Number(pos) >>> 0;
-
-    // Search for the word's beginning and end.
-    var left = str.slice(0, pos + 1).search(/\S+$/),
-        right = str.slice(pos).search(/\s/);
-
-    // The last word in the string is a special case.
-    if (right < 0) {
-        return str.slice(left);
-    }
-
-    // Return the word, using the located bounds to extract it from the string.
-    return str.slice(left, right + pos);
-
-}
 
 function truncateString(str, len, append)
 {
@@ -124,20 +107,6 @@ function truncateString(str, len, append)
         return str;
     }
 };
-
-function formatUrl(url){
-    let aUrl = url.split('/');
-    let html = [];
-    for (let a in aUrl){
-        let part = aUrl[a];
-        if(part !== "" && part !== "pages"){
-            html.push(part);
-        }
-    }
-
-    return html.join(' › ');
-
-}
 
 function search(query){
     let result = [];
