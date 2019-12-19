@@ -1880,11 +1880,13 @@
           </p>
           <h1 id="skjul-og-vis-collapse">Skjul og vis (Collapse)</h1>
           
+            <p class="font-lead">Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.</p>
+          
 
-          <p class="font-lead">Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.</p>
-
+          
 <section class="styleguide-child-container content" id="section-/komponenter/collapse/01-radio-collapse">
   <h2 id="radioknap-skjul-og-vis-indhold">Radioknap - skjul og vis indhold</h2>
+  
   
   <div class="component-preview  component-preview-radio-toggle-content" aria-label="Eksempel på skjul/vis med radioknapper">
     <div class="container js-radio-toggle-group">
@@ -1935,7 +1937,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-radio-toggle-content">Kode</button>
   <div id="code-radio-toggle-content" class="accordion-content">
@@ -2014,69 +2016,79 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="radio-toggle-content-tech">
-    Implementering
-  </button>
-  <div id="radio-toggle-content-tech" aria-hidden="true" class="accordion-content">
-        <p>For at initialisere collapse funktionaliteten på en radioknap skal <code>input[type=radio]</code> have følgende:</p>
-        <ul>
-          <li>Attributten <code>name</code>: alle radioknapper I en gruppe skal have samme værdi i <code>name</code> attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
-          <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id'et på det element som skal vises når radioknappen er aktiveret. </li>
-          <li>Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
-          <li><code>aria-controls="id-of-target-to-collapse" </code></li>
-        </ul>
-        <p>Alle radioknapperne i en gruppe skal placeres i en container som har klassen <code>js-radio-toggle-group</code>.</p>
-        <p>Det element som skal collapses/expandes skal have følgende:</p>
-        <ul>
-          <li><code>id=”id-of-target-to-collapse”</code></li>
-          <li><code>aria-hidden="true/false"</code></li>
-        </ul>
-        <h2 class="h5">JavaScript</h2>
-        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
-        <pre>new DKFDS.RadioToggleGroup(document.getElementByID('DIV-CONTAINER-ID'));</pre>
-        <p>Sæt et <code>id</code> på det element, som har klassen <code>js-radio-toggle-group</code></p>
-        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-        <h3 class="h5">Events</h3>
-        <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-        <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-  </div>
+  
+  <h3 id="implementering">Implementering</h3>
+
+<p>For at initialisere collapse funktionaliteten på en radioknap skal <code class="highlighter-rouge">input[type=radio]</code> have følgende:</p>
+
+<ul>
+  <li>Attributten <code class="highlighter-rouge">name</code>: alle radioknapper I en gruppe skal have samme værdi i <code class="highlighter-rouge">name</code> attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
+  <li>Attributten <code class="highlighter-rouge">data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises når radioknappen er aktiveret.</li>
+  <li>Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten <code class="highlighter-rouge">'checked'</code>.</li>
+  <li><code class="highlighter-rouge">aria-controls="id-of-target-to-collapse"</code></li>
+</ul>
+
+<p>Alle radioknapperne i en gruppe skal placeres i en container som har klassen <code class="highlighter-rouge">js-radio-toggle-group</code>.</p>
+
+<p>Det element som skal collapses/expandes skal have følgende:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">id=”id-of-target-to-collapse”</code></li>
+  <li><code class="highlighter-rouge">aria-hidden="true/false"</code></li>
+</ul>
+
+<h2 class="h5">JavaScript</h2>
+
+<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+
+<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>new DKFDS.RadioToggleGroup(document.getElementByID('DIV-CONTAINER-ID'));
+</code></pre>
 </div>
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="checkbox-toggle-content-docs">
-    Retningslinjer
-  </button>
-  <div id="checkbox-toggle-content-docs" class="accordion-content">
-      <section>
-          <h3 class="h4">Tilgængelighed</h3>
-          <ul>
-              <li>Radioknapperne skal kunne aktiveres og håndteres fra tastatur.</li>
-              <li>Skjul ikke meningsbærende indhold som fx beskrivelser/labels med denne funktionalitet.</li>
-              <li>Vis kun de ekstra muligheder, når brugeren har foretaget et valg.</li>
-              <li>Da der er nogle begrænsninger, vil det være en god idé at teste med en skærmlæser (Fx NVDA) om alt indhold kan navigeres til med tastatur samt læses op.</li>
-          </ul>
-      </section>
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <ul>
-              <li>at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</li>
-          </ul>
-          <h4 class="h5">Anvendes ikke til</h4>
-          <ul>
-            <li>at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.</li>
-          </ul>
-          <h4 class="h5">Vejledning</h4>                
-          <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
-      </section>
-  </div>
-</div>
+
+<p>Sæt et <code>id</code> på det element, som har klassen <code class="highlighter-rouge">js-radio-toggle-group</code>.</p>
+
+<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
+
+<h3 class="h5">Events</h3>
+
+<p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code class="highlighter-rouge">fds.collapse.open</code> udløst på <code class="highlighter-rouge">input</code> elementet, som man kan koble sig på med en eventlistener.</p>
+
+<p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code class="highlighter-rouge">fds.collapse.close</code> udløst på <code class="highlighter-rouge">input</code> elementet, som man kan koble sig på med en eventlistener.</p>
+
+<h3 id="retningslinjer">Retningslinjer</h3>
+<h3 class="h4">Tilgængelighed</h3>
+
+<ul>
+  <li>Radioknapperne skal kunne aktiveres og håndteres fra tastatur.</li>
+  <li>Skjul ikke meningsbærende indhold som fx beskrivelser/labels med denne funktionalitet.</li>
+  <li>Vis kun de ekstra muligheder, når brugeren har foretaget et valg.</li>
+  <li>Da der er nogle begrænsninger, vil det være en god idé at teste med en skærmlæser (Fx NVDA) om alt indhold kan navigeres til med tastatur samt læses op.</li>
+</ul>
+
+<h3 class="h4">Brugervenlighed</h3>
+<h4 class="h5">Anvendes til</h4>
+
+<ul>
+  <li>at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</li>
+</ul>
+
+<h4 class="h5">Anvendes ikke til</h4>
+
+<ul>
+  <li>at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.</li>
+</ul>
+
+<h4 class="h5">Vejledning</h4>
+
+<p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/collapse/02-checkbox-collapse">
   <h2 id="checkbox-skjul-og-vis-indhold">Checkbox - skjul og vis indhold</h2>
+  
   
   <div class="component-preview  component-preview-checkbox-toggle-content" aria-label="Eksempel på skjul/vis med tjekbokse">
     <div class="container">
@@ -2116,7 +2128,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-checkbox-toggle-content">Kode</button>
   <div id="code-checkbox-toggle-content" class="accordion-content">
@@ -2175,38 +2187,47 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="checkbox-toggle-content-tech">
-    Implementering
-  </button>
-  <div id="checkbox-toggle-content-tech" aria-hidden="true" class="accordion-content">
-        <p>For at initialisere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
-        <ul>
-          <li>Klassen <code>'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret. </li>
-          <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id'et på det element som skal vises på tjekboksen er aktiveret. </li>
-          <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
-          <li><code>aria-controls="id-of-target-to-collapse" </code></li>
-        </ul>
-        <p>Det element som skal collapses/expandes skal have følgende:</p>
-        <ul>
-          <li><code>id=”id-of-target-to-collapse”</code></li>
-          <li><code>aria-hidden="true/false"</code></li>
-        </ul>
-        <h2 class="h5">JavaScript</h2>
-        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
-        <pre>new DKFDS.CheckboxToggleContent(document.getElementByID('CHECKBOX-INPUT-ID'));</pre>
-        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-        <h3 class="h5">Events</h3>
-        <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-        <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-  </div>
+  
+  <h3 id="implementering">Implementering</h3>
+<p>For at initialisere collapse funktionaliteten på en checkbox skal <code class="highlighter-rouge">input[type=checkbox]</code> have følgende:</p>
+
+<ul>
+  <li>Klassen <code class="highlighter-rouge">'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret.</li>
+  <li>Attributten <code class="highlighter-rouge">data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises på tjekboksen er aktiveret.</li>
+  <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code class="highlighter-rouge">'checked'</code>.</li>
+  <li><code class="highlighter-rouge">aria-controls="id-of-target-to-collapse" </code></li>
+</ul>
+
+<p>Det element som skal collapses/expandes skal have følgende:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">id=”id-of-target-to-collapse”</code></li>
+  <li><code class="highlighter-rouge">aria-hidden="true/false"</code></li>
+</ul>
+
+<h2 class="h5">JavaScript</h2>
+
+<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+
+<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>new DKFDS.CheckboxToggleContent(document.getElementByID('CHECKBOX-INPUT-ID'));
+</code></pre>
 </div>
+
+<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
+
+<h3 class="h5">Events</h3>
+
+<p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code class="highlighter-rouge">fds.collapse.open</code> udløst på <code class="highlighter-rouge">input</code> elementet, som man kan koble sig på med en eventlistener.</p>
+
+<p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code class="highlighter-rouge">fds.collapse.close</code> udløst på <code class="highlighter-rouge">input</code> elementet, som man kan koble sig på med en eventlistener.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/collapse/03-basic-collapse">
   <h2 id="generel-skjul-og-vis-indhold-funktionalitet">Generel skjul og vis indhold funktionalitet</h2>
+  
   
   <div class="component-preview  component-preview-basic-collapse" aria-label="Eksempel på skjul/visning af indhold ved brug af knap">
     <div class="container">
@@ -2221,7 +2242,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-basic-collapse">Kode</button>
   <div id="code-basic-collapse" class="accordion-content">
@@ -2246,61 +2267,70 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="collapse-tech">
-    Implementering
-  </button>
-  <div id="collapse-tech" aria-hidden="true" class="accordion-content">
-        <p>For at initialisere collapse funktionaliteten skal et HTML-element have klassen <code>.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
-        <p>Dette HTML-element skal yderligere have følgende attributter:</p>
-        <ul>
-          <li><code>data-js-target="#id-of-target-to-collapse"</code>. Der henføres her til det element som skal collapses/expandes. </li>
-          <li><code>aria-expanded="true/false". </code></li>
-          <li><code>aria-controls="id-of-target-to-collapse" </code></li>
-        </ul>
-        <p>Det element som skal collapses/expanded skal have følgende:</p>
-        <ul>
-          <li><code>id=”id-of-target-to-collapse”</code></li>
-          <li><code>aria-hidden="true/false"</code></li>
-        </ul>
-        <h2 class="h5">JavaScript</h2>
-        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
-        <pre>new DKFDS.Collapse(document.getElementByID('COLLAPSE-BUTTON-ID'));</pre>
-        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-        <h3 class="h5">Events</h3>
-        <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
-        <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
-  </div>
+  
+  <h3 id="implementering">Implementering</h3>
+
+<p>For at initialisere collapse funktionaliteten skal et HTML-element have klassen <code class="highlighter-rouge">.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
+
+<p>Dette HTML-element skal yderligere have følgende attributter:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">data-js-target="#id-of-target-to-collapse"</code>. Der henføres her til det element som skal collapses/expandes.</li>
+  <li><code class="highlighter-rouge">aria-expanded="true/false". </code></li>
+  <li><code class="highlighter-rouge">aria-controls="id-of-target-to-collapse"</code></li>
+</ul>
+
+<p>Det element som skal collapses/expanded skal have følgende:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">id=”id-of-target-to-collapse”</code></li>
+  <li><code class="highlighter-rouge">aria-hidden="true/false"</code></li>
+</ul>
+
+<h4 id="javascript">JavaScript</h4>
+
+<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+
+<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>new DKFDS.Collapse(document.getElementByID('COLLAPSE-BUTTON-ID'));
+</code></pre>
 </div>
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="collapse-docs">
-    Retningslinjer
-  </button>
-  <div id="collapse-docs" class="accordion-content">
-      <section>
-          <h3 class="h4">Tilgængelighed</h3>
-          <ul>
-              <li>Skjul ikke meningsbærende indhold med denne funktionalitet.</li>
-              <li>Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.</li>
-          </ul>  
-      </section>
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <p>Vise yderligere information eller en ekstra funktion relevant til brugerens valg.</p>
-          <h5>Anvendes ikke til</h5>
-          <ul>
-              <li>Anvendes ikke som erstatning for accordions.</li>
-              <li>Anvendes ikke til meningsbærende indhold som fx sidens brødtekst.</li>
-          </ul>
-          <h4 class="h5">Vejledning</h4>                
-          <ul>
-              <li>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje, at fordele det ud over flere sider i stedet.</li>
-          </ul>
-      </section>
-  </div>
-</div>
+
+<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
+
+<h5 id="events">Events</h5>
+
+<p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code class="highlighter-rouge">fds.collapse.open</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
+
+<p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code class="highlighter-rouge">fds.collapse.close</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
+
+<h3 id="retningslinjer">Retningslinjer</h3>
+
+<h4 id="tilgængelighed">Tilgængelighed</h4>
+
+<ul>
+  <li>Skjul ikke meningsbærende indhold med denne funktionalitet.</li>
+  <li>Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.</li>
+</ul>
+
+<h4 id="brugervenlighed">Brugervenlighed</h4>
+<h5 id="anvendes-til">Anvendes til</h5>
+
+<p>Vise yderligere information eller en ekstra funktion relevant til brugerens valg.</p>
+
+<h5 id="anvendes-ikke-til">Anvendes ikke til</h5>
+
+<ul>
+  <li>Anvendes ikke som erstatning for accordions.</li>
+  <li>Anvendes ikke til meningsbærende indhold som fx sidens brødtekst.</li>
+</ul>
+
+<h5 id="vejledning">Vejledning</h5>
+
+<ul>
+  <li>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje, at fordele det ud over flere sider i stedet.</li>
+</ul>
 
 </section>
 

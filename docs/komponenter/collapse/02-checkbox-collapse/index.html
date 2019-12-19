@@ -1397,130 +1397,40 @@
           <h1 id="checkbox-skjul-og-vis-indhold">Checkbox - skjul og vis indhold</h1>
           
 
-          <div class="component-preview  component-preview-checkbox-toggle-content" aria-label="Eksempel på skjul/vis med tjekbokse">
-    <div class="container">
-    <div class="form-group">
-        <fieldset>
-            <legend class="h4">Vælg fra listen</legend>
-            <ul class="nobullet-list">
-                <li>
+          <h3 id="implementering">Implementering</h3>
+<p>For at initialisere collapse funktionaliteten på en checkbox skal <code class="highlighter-rouge">input[type=checkbox]</code> have følgende:</p>
 
-                    <input id="id-checkbox1" type="checkbox" name="checkbox1" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check1" aria-controls="collapse-check1" aria-expanded="false" />
-                    <label for="id-checkbox1" class="">Tjekboks viser
-                        indhold</label>
+<ul>
+  <li>Klassen <code class="highlighter-rouge">'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret.</li>
+  <li>Attributten <code class="highlighter-rouge">data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises på tjekboksen er aktiveret.</li>
+  <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code class="highlighter-rouge">'checked'</code>.</li>
+  <li><code class="highlighter-rouge">aria-controls="id-of-target-to-collapse" </code></li>
+</ul>
 
-                    <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
-                        <div class="py-4">
-                            <p>Dette indhold bliver vist når tjekboksen er
-                                valgt.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
+<p>Det element som skal collapses/expandes skal have følgende:</p>
 
-                    <input id="id-checkbox2" type="checkbox" name="checkbox2" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" checked="" data-js-target="#collapse-check2" aria-controls="collapse-check2" aria-expanded="false" />
-                    <label for="id-checkbox2" class="">Tjekboks viser
-                        indhold</label>
+<ul>
+  <li><code class="highlighter-rouge">id=”id-of-target-to-collapse”</code></li>
+  <li><code class="highlighter-rouge">aria-hidden="true/false"</code></li>
+</ul>
 
-                    <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
-                        <div class="py-4">
-                            <p>Dette indhold bliver vist når tjekboksen er
-                                valgt.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </fieldset>
-    </div>
-</div>
-</div>
+<h2 class="h5">JavaScript</h2>
 
-<div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-checkbox-toggle-content">Kode</button>
-  <div id="code-checkbox-toggle-content" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;fieldset&gt;</span>
-            <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg fra listen<span class="nt">&lt;/legend&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li&gt;</span>
+<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
 
-                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox1"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                        <span class="na">name=</span><span class="s">"checkbox1"</span> <span class="na">value=</span><span class="s">"1"</span>
-                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large js-checkbox-toggle-content"</span>
-                        <span class="na">data-js-target=</span><span class="s">'#collapse-check1'</span>
-                        <span class="na">aria-controls=</span><span class="s">'collapse-check1'</span>
-                        <span class="na">aria-expanded=</span><span class="s">'false'</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-checkbox1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Tjekboks viser
-                        indhold<span class="nt">&lt;/label&gt;</span>
+<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
 
-                    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-                        <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når tjekboksen er
-                                valgt.<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;</span>
-
-                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox2"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                        <span class="na">name=</span><span class="s">"checkbox2"</span> <span class="na">value=</span><span class="s">"1"</span>
-                        <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large js-checkbox-toggle-content"</span>
-                        <span class="na">checked</span> <span class="na">data-js-target=</span><span class="s">'#collapse-check2'</span>
-                        <span class="na">aria-controls=</span><span class="s">'collapse-check2'</span>
-                        <span class="na">aria-expanded=</span><span class="s">'false'</span> <span class="nt">/&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-checkbox2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Tjekboks viser
-                        indhold<span class="nt">&lt;/label&gt;</span>
-
-                    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-                        <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når tjekboksen er
-                                valgt.<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ul&gt;</span>
-        <span class="nt">&lt;/fieldset&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<div class="highlighter-rouge"><pre class="highlight"><code>new DKFDS.CheckboxToggleContent(document.getElementByID('CHECKBOX-INPUT-ID'));
 </code></pre>
 </div>
 
+<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
 
-  </div>
-</div>
+<h3 class="h5">Events</h3>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="checkbox-toggle-content-tech">
-    Implementering
-  </button>
-  <div id="checkbox-toggle-content-tech" aria-hidden="true" class="accordion-content">
-        <p>For at initialisere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
-        <ul>
-          <li>Klassen <code>'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret. </li>
-          <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id'et på det element som skal vises på tjekboksen er aktiveret. </li>
-          <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
-          <li><code>aria-controls="id-of-target-to-collapse" </code></li>
-        </ul>
-        <p>Det element som skal collapses/expandes skal have følgende:</p>
-        <ul>
-          <li><code>id=”id-of-target-to-collapse”</code></li>
-          <li><code>aria-hidden="true/false"</code></li>
-        </ul>
-        <h2 class="h5">JavaScript</h2>
-        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
-        <pre>new DKFDS.CheckboxToggleContent(document.getElementByID('CHECKBOX-INPUT-ID'));</pre>
-        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-        <h3 class="h5">Events</h3>
-        <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-        <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-  </div>
-</div>
+<p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code class="highlighter-rouge">fds.collapse.open</code> udløst på <code class="highlighter-rouge">input</code> elementet, som man kan koble sig på med en eventlistener.</p>
+
+<p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code class="highlighter-rouge">fds.collapse.close</code> udløst på <code class="highlighter-rouge">input</code> elementet, som man kan koble sig på med en eventlistener.</p>
 
 
       </section>
