@@ -36,7 +36,7 @@ Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anv
 Vedhæft fil er et `input` felt. For mere information se under <a href="/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.
 
 ### Implementering
-Knap styling kan både sættes på &lt;button&gt; og &lt;a&gt; tags ved at tilføje følgende klasser:
+Knap styling kan både sættes på `<button>` og `<a>` tags ved at tilføje følgende klasser:
 - `button button-primary`
 - `button button-secondary`
 - `button button-tertiary`

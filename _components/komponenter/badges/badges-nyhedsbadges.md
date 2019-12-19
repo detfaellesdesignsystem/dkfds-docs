@@ -7,7 +7,7 @@ componentTitle: "Eksempel på badges"
 ---
 ### Implementering
 
-Alle badges skal have en `.badge` class på `&lt;label&gt;&lt;/label&gt;` elementet.
+Alle badges skal have en `.badge` class på `<label></label>` elementet.
 
 Badges findes i to størrelser, store og små:
 
