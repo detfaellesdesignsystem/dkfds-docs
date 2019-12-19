@@ -1811,11 +1811,16 @@
             <p class="font-lead">En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket.</p>
           
 
-          <div class="component-preview  component-preview-spinner" aria-label="Eksempel på spinner komponent">
+          
+<section class="styleguide-child-container content" id="section-/komponenter/spinner/spinner-example">
+  <h2></h2>
+  
+  
+  <div class="component-preview  component-preview-spinner" aria-label="Eksempel på spinner komponent">
     <div class="spinner"></div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-spinner">Kode</button>
   <div id="code-spinner" class="accordion-content">
@@ -1828,41 +1833,50 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="code-spinner-docs">
-    Implementering
-  </button>
-  <div id="code-spinner-docs" aria-hidden="true" class="accordion-content">
-    <p>For at implementere en spinner tilføjes en <code>.spinner</code> class på en lukket div.</p>
-    <p>Eksempel: <code>&lt;div class="spinner"&gt;&lt;/div&gt;</code></p>
-    <p>For at ændre spinnerens størrelse kan <code>font-size</code> gøres større eller mindre.</p>
-  </div>
-</div>
+  
+  
 
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="spinner-docs">
-    Retningslinjer
-  </button>
-  <div id="spinner-docs" class="accordion-content">
-    <section>
-        <h2 class="h4">Tilgængelighed</h2>
-        <p>Anvend ARIA attributten <code>aria-busy="true"</code> på elementet, der er igang med at blive opdateret til at markere for skærmlæsere, at der er en live region i gang med indlæsning og sæt værdien til <code>false</code>, når den er indlæst.</p>
-    </section>
-    <section>
-        <h2 class="h4">Brugervenlighed</h2>
-        <h3 class="h4">Anvendes til</h3>
-        <p>En spinner anvendes til at signalere en forsinket indlæsning af en side eller del-funktion ved at give brugeren en synlig respons.</p>
-        <h3 class="h4">Anvendes ikke til</h3>
-        <p>Spinner skal ikke anvendes som en standard komponent på alle løsninger, da det må forventes at langt størstedelen vil kunne indlæse inden for 3 sekunder.</p>
-        <h3 class="h4">Vejledning</h3>                
-        <ul>
-            <li>Anvend kun spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid.</li>
-            <li>En spinner skal ikke anvendes til kompensation for en permanent langsom performance.</li>
-            <li>En spinner bør ikke køre mere end 5-10 sekunder før brugeren gøres opmærksom på, at der må forventes lidt ventetid. </li>
-        </ul>
-    </section>
-  </div>
-</div>
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/spinner/spinner-implementering">
+  <h2 id="implementering" class="h3">Implementering</h2>
+  
+  
+  <p>For at implementere en spinner tilføjes en <code class="highlighter-rouge">.spinner</code> class på en lukket div.</p>
+
+<p>Eksempel: <code class="highlighter-rouge">&lt;div class="spinner"&gt;&lt;/div&gt;</code></p>
+
+<p>For at ændre spinnerens størrelse kan <code class="highlighter-rouge">font-size</code> gøres større eller mindre.</p>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/spinner/spinner-retningslinjer">
+  <h2 id="retningslinjer" class="h3">Retningslinjer</h2>
+  
+  
+  <h2 class="h4">Tilgængelighed</h2>
+
+<p>Anvend ARIA attributten <code class="highlighter-rouge">aria-busy="true"</code> på elementet, der er igang med at blive opdateret til at markere for skærmlæsere, at der er en live region i gang med indlæsning og sæt værdien til <code class="highlighter-rouge">false</code>, når den er indlæst.</p>
+
+<h2 class="h4">Brugervenlighed</h2>
+<h3 class="h4">Anvendes til</h3>
+
+<p>En spinner anvendes til at signalere en forsinket indlæsning af en side eller del-funktion ved at give brugeren en synlig respons.</p>
+
+<h3 class="h4">Anvendes ikke til</h3>
+
+<p>Spinner skal ikke anvendes som en standard komponent på alle løsninger, da det må forventes at langt størstedelen vil kunne indlæse inden for 3 sekunder.</p>
+
+<h3 class="h4">Vejledning</h3>
+
+<ul>
+  <li>Anvend kun spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid.</li>
+  <li>En spinner skal ikke anvendes til kompensation for en permanent langsom performance.</li>
+  <li>En spinner bør ikke køre mere end 5-10 sekunder før brugeren gøres opmærksom på, at der må forventes lidt ventetid.</li>
+</ul>
+
+</section>
+
 
       </section>
     </main>
