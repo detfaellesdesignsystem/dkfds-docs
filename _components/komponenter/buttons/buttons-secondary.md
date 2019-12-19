@@ -1,7 +1,7 @@
 ---
 title: Sekundærknapper
 parent: Buttons
-order: 02
+order: 30
 component: buttons-secondary
 componentTitle: "Eksempel på sekundær knap"
 ---

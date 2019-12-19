@@ -14,7 +14,7 @@ subnav:
   href: '#checkbox-skjul-og-vis-indhold'
 - text: Generel Skjul/vis funktionalitet
   href: '#generel-skjul-og-vis-indhold-funktionalitet'
+lead: 'Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.'
 ---
-<p class="font-lead">Du kan bruge ”Skjul og vis”-komponenter (formet som fx knapper eller tjekbokse) til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at indtaste information.</p>
 
-{% include child-sections.html parent='Collapse' %}
+{% include child-components.html parent='Collapse' %}

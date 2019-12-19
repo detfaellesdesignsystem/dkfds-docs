@@ -1,15 +1,10 @@
 ---
 title: Vedhæft fil
 parent: Buttons
-order: 07
+order: 80
 component: buttons-fileupload
 componentTitle: "Eksempel på vedhæft fil"
 ---
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tech-filebutton">
-    Implementering
-  </button>
-  <div id="tech-filebutton" class="accordion-content">
-      <p>Vedhæft fil er et <code>input</code>felt. For mere information se under <a href="/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.</p>
-  </div>
-</div>
+### Implementering
+
+Vedhæft fil er et `input` felt. For mere information se under <a href="/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.

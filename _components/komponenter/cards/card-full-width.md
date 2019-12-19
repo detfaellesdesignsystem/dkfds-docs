@@ -1,8 +1,7 @@
 ---
 title: Card med fuld bredde
 parent: Cards
-order: 01
-lead: 
+order: 20
+component: cards-full-width
+componentTitle: "Eksempel på card"
 ---
-{% include code/preview.html component="cards-full-width" title="Eksempel på card" %}
-{% include code/accordion.html component="cards-full-width" %}

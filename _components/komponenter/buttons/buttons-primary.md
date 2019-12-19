@@ -1,7 +1,7 @@
 ---
 title: Primærknap
 parent: Buttons
-order: 01
+order: 20
 component: buttons-primary
 componentTitle: "Eksempel på primærknap"
 ---
