@@ -1397,192 +1397,72 @@
           <h1 id="radioknap-skjul-og-vis-indhold">Radioknap - skjul og vis indhold</h1>
           
 
-          <div class="component-preview  component-preview-radio-toggle-content" aria-label="Eksempel på skjul/vis med radioknapper">
-    <div class="container js-radio-toggle-group">
-    <fieldset>
-        <legend class="h4">Vælg en radioknap</legend>
-        <ul class="nobullet-list">
-            <li>
+          <h3 id="implementering">Implementering</h3>
 
-                <input id="id-radio1" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " checked="" data-js-target="#collapse-radio1" aria-controls="collapse-radio1" aria-expanded="false" />
-                <label for="id-radio1" id="form-label-id-radio1" class="">Radioknap viser indhold <span class="sr-only">Udfyld informationer
-                        herunder</span></label>
+<p>For at initialisere collapse funktionaliteten på en radioknap skal <code class="highlighter-rouge">input[type=radio]</code> have følgende:</p>
 
-                <div id="collapse-radio1" aria-hidden="true" class="box-border-l collapsed">
-                    <div class="py-4">
+<ul>
+  <li>Attributten <code class="highlighter-rouge">name</code>: alle radioknapper I en gruppe skal have samme værdi i <code class="highlighter-rouge">name</code> attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
+  <li>Attributten <code class="highlighter-rouge">data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises når radioknappen er aktiveret.</li>
+  <li>Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten <code class="highlighter-rouge">'checked'</code>.</li>
+  <li><code class="highlighter-rouge">aria-controls="id-of-target-to-collapse"</code></li>
+</ul>
 
-                        <div class="form-group">
-                            <label class="form-label " for="textinput1" id="form-label-textinput1">Inputfelt med
-                                label</label>
+<p>Alle radioknapperne i en gruppe skal placeres i en container som har klassen <code class="highlighter-rouge">js-radio-toggle-group</code>.</p>
 
-                            <input class="form-input  input-width-m " placeholder="" id="textinput1" value="" name="text1" type="text" />
-                        </div>
+<p>Det element som skal collapses/expandes skal have følgende:</p>
 
-                    </div>
-                </div>
-            </li>
-            <li>
+<ul>
+  <li><code class="highlighter-rouge">id=”id-of-target-to-collapse”</code></li>
+  <li><code class="highlighter-rouge">aria-hidden="true/false"</code></li>
+</ul>
 
-                <input id="id-radio2" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " data-js-target="#collapse-radio2" />
-                <label for="id-radio2" id="form-label-id-radio2" class="">Radioknap viser indhold med fejl <span class="sr-only">Udfyld informationer
-                        herunder</span></label>
+<h2 class="h5">JavaScript</h2>
 
-                <div id="collapse-radio2" aria-hidden="true" class="box-border-l collapsed">
-                    <div class="py-4">
+<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
 
-                        <div class="form-group form-error">
-                            <label class="form-label " for="textinput2" id="form-label-textinput2">Inputfelt med
-                                label</label>
+<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
 
-                            <span class="form-error-message" id="form-error-message-textinput2" role="alert">Hjælpsom fejlbesked</span>
-                            <input class="form-input  input-width-m " placeholder="" id="textinput2" value="" name="text2" type="text" aria-describedby="form-error-message-textinput2" />
-                        </div>
-
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </fieldset>
-</div>
-</div>
-
-<div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-radio-toggle-content">Kode</button>
-  <div id="code-radio-toggle-content" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container js-radio-toggle-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg en radioknap<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;</span>
-
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio1"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
-                    <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">checked</span>
-                    <span class="na">data-js-target=</span><span class="s">'#collapse-radio1'</span>
-                    <span class="na">aria-controls=</span><span class="s">'collapse-radio1'</span>
-                    <span class="na">aria-expanded=</span><span class="s">'false'</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio1"</span> <span class="na">id=</span><span class="s">"form-label-id-radio1"</span>
-                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold <span class="nt">&lt;span</span>
-                        <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
-                        herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
-
-                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-                    <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"textinput1"</span>
-                                <span class="na">id=</span><span class="s">"form-label-textinput1"</span><span class="nt">&gt;</span>Inputfelt med
-                                label<span class="nt">&lt;/label&gt;</span>
-
-                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
-                                <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"textinput1"</span> <span class="na">value=</span><span class="s">""</span>
-                                <span class="na">name=</span><span class="s">"text1"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;/div&gt;</span>
-
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;</span>
-
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
-                    <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span>
-                    <span class="na">data-js-target=</span><span class="s">'#collapse-radio2'</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">id=</span><span class="s">"form-label-id-radio2"</span>
-                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold med fejl <span class="nt">&lt;span</span>
-                        <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
-                        herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
-
-                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-                    <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"textinput2"</span>
-                                <span class="na">id=</span><span class="s">"form-label-textinput2"</span><span class="nt">&gt;</span>Inputfelt med
-                                label<span class="nt">&lt;/label&gt;</span>
-
-                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
-                                <span class="na">id=</span><span class="s">"form-error-message-textinput2"</span>
-                                <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Hjælpsom fejlbesked<span class="nt">&lt;/span&gt;</span>
-                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
-                                <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"textinput2"</span> <span class="na">value=</span><span class="s">""</span>
-                                <span class="na">name=</span><span class="s">"text2"</span> <span class="na">type=</span><span class="s">"text"</span>
-                                <span class="na">aria-describedby=</span><span class="s">"form-error-message-textinput2"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;/div&gt;</span>
-
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/fieldset&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<div class="highlighter-rouge"><pre class="highlight"><code>new DKFDS.RadioToggleGroup(document.getElementByID('DIV-CONTAINER-ID'));
 </code></pre>
 </div>
 
+<p>Sæt et <code>id</code> på det element, som har klassen <code class="highlighter-rouge">js-radio-toggle-group</code>.</p>
 
-  </div>
-</div>
+<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="radio-toggle-content-tech">
-    Implementering
-  </button>
-  <div id="radio-toggle-content-tech" aria-hidden="true" class="accordion-content">
-        <p>For at initialisere collapse funktionaliteten på en radioknap skal <code>input[type=radio]</code> have følgende:</p>
-        <ul>
-          <li>Attributten <code>name</code>: alle radioknapper I en gruppe skal have samme værdi i <code>name</code> attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
-          <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id'et på det element som skal vises når radioknappen er aktiveret. </li>
-          <li>Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
-          <li><code>aria-controls="id-of-target-to-collapse" </code></li>
-        </ul>
-        <p>Alle radioknapperne i en gruppe skal placeres i en container som har klassen <code>js-radio-toggle-group</code>.</p>
-        <p>Det element som skal collapses/expandes skal have følgende:</p>
-        <ul>
-          <li><code>id=”id-of-target-to-collapse”</code></li>
-          <li><code>aria-hidden="true/false"</code></li>
-        </ul>
-        <h2 class="h5">JavaScript</h2>
-        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
-        <pre>new DKFDS.RadioToggleGroup(document.getElementByID('DIV-CONTAINER-ID'));</pre>
-        <p>Sæt et <code>id</code> på det element, som har klassen <code>js-radio-toggle-group</code></p>
-        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-        <h3 class="h5">Events</h3>
-        <p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code>fds.collapse.open</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-        <p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code>fds.collapse.close</code> udløst på <code>input</code> elementet, som man kan koble sig på med en eventlistener.</p>
-  </div>
-</div>
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="checkbox-toggle-content-docs">
-    Retningslinjer
-  </button>
-  <div id="checkbox-toggle-content-docs" class="accordion-content">
-      <section>
-          <h3 class="h4">Tilgængelighed</h3>
-          <ul>
-              <li>Radioknapperne skal kunne aktiveres og håndteres fra tastatur.</li>
-              <li>Skjul ikke meningsbærende indhold som fx beskrivelser/labels med denne funktionalitet.</li>
-              <li>Vis kun de ekstra muligheder, når brugeren har foretaget et valg.</li>
-              <li>Da der er nogle begrænsninger, vil det være en god idé at teste med en skærmlæser (Fx NVDA) om alt indhold kan navigeres til med tastatur samt læses op.</li>
-          </ul>
-      </section>
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <ul>
-              <li>at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</li>
-          </ul>
-          <h4 class="h5">Anvendes ikke til</h4>
-          <ul>
-            <li>at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.</li>
-          </ul>
-          <h4 class="h5">Vejledning</h4>                
-          <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
-      </section>
-  </div>
-</div>
+<h3 class="h5">Events</h3>
+
+<p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code class="highlighter-rouge">fds.collapse.open</code> udløst på <code class="highlighter-rouge">input</code> elementet, som man kan koble sig på med en eventlistener.</p>
+
+<p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code class="highlighter-rouge">fds.collapse.close</code> udløst på <code class="highlighter-rouge">input</code> elementet, som man kan koble sig på med en eventlistener.</p>
+
+<h3 id="retningslinjer">Retningslinjer</h3>
+<h3 class="h4">Tilgængelighed</h3>
+
+<ul>
+  <li>Radioknapperne skal kunne aktiveres og håndteres fra tastatur.</li>
+  <li>Skjul ikke meningsbærende indhold som fx beskrivelser/labels med denne funktionalitet.</li>
+  <li>Vis kun de ekstra muligheder, når brugeren har foretaget et valg.</li>
+  <li>Da der er nogle begrænsninger, vil det være en god idé at teste med en skærmlæser (Fx NVDA) om alt indhold kan navigeres til med tastatur samt læses op.</li>
+</ul>
+
+<h3 class="h4">Brugervenlighed</h3>
+<h4 class="h5">Anvendes til</h4>
+
+<ul>
+  <li>at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</li>
+</ul>
+
+<h4 class="h5">Anvendes ikke til</h4>
+
+<ul>
+  <li>at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.</li>
+</ul>
+
+<h4 class="h5">Vejledning</h4>
+
+<p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
 
 
       </section>
