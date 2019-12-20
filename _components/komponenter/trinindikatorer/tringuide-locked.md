@@ -1,8 +1,7 @@
 ---
 title: Låst trinindikator
 parent: Tringuide
-order: 04
-lead: 
+order: 60
+component: tringuide-locked
+componentTitle: "Eksempel på trinindikator med låste trin"
 ---
-{% include code/preview-iframe.html component="tringuide-locked" %}
-{% include code/accordion.html component="tringuide-locked" %}

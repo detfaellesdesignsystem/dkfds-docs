@@ -1,9 +1,7 @@
 ---
 title: Trinindikator med information
 parent: Tringuide
-order: 05
-lead: 
+order: 70
+component: tringuide-information
+componentTitle: "Eksempel på trinindikator med information"
 ---
-<p>Du skal gøre browservinduet mindre for at se ændringen.</p>
-{% include code/preview-iframe.html component="tringuide-information" %}
-{% include code/accordion.html component="tringuide-information" %}

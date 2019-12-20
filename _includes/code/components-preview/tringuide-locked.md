@@ -3,61 +3,57 @@ permalink: /preview-components/tringuide-locked.html
 layout: iframed 
 title: Tringuide-locked.html
 ---
-<div class="container pt-5">
-    <div class="row">
-        <div class="col-12 col-lg-3 sidebar-col">
+<div class="container mt-6 mb-6">
 
-            <ul class="sidenav-list sidenav-list-locked">
+    <ul class="sidenav-list sidenav-list-locked">
 
-                <li class="disabled  ">
-                    <a tabindex="-1" aria-disabled="true">
-                        1. Trin 1
+        <li class="disabled  ">
+            <a tabindex="-1" aria-disabled="true">
+                1. Trin 1
 
-                        <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
-                        </span>
+                <span class="sidenav-icon">
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                </span>
 
-                    </a>
-                </li>
+            </a>
+        </li>
 
-                <li class="disabled  ">
-                    <a tabindex="-1" aria-disabled="true">
-                        2. Trin 2
+        <li class="disabled  ">
+            <a tabindex="-1" aria-disabled="true">
+                2. Trin 2
 
-                        <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
-                        </span>
+                <span class="sidenav-icon">
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                </span>
 
-                    </a>
-                </li>
+            </a>
+        </li>
 
-                <li class="disabled active current ">
-                    <a tabindex="-1" aria-disabled="true">
-                        3. Trin 3 (valgt)
+        <li class="disabled active current ">
+            <a tabindex="-1" aria-disabled="true">
+                3. Trin 3 (valgt)
 
-                        <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
-                        </span>
+                <span class="sidenav-icon">
+                    <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                </span>
 
-                    </a>
-                </li>
+            </a>
+        </li>
 
-                <li class="disabled  ">
-                    <a tabindex="-1" aria-disabled="true">
-                        4. Trin 4
+        <li class="disabled  ">
+            <a tabindex="-1" aria-disabled="true">
+                4. Trin 4
 
-                    </a>
-                </li>
+            </a>
+        </li>
 
-                <li class="disabled  ">
-                    <a tabindex="-1" aria-disabled="true">
-                        5. Trin 5
+        <li class="disabled  ">
+            <a tabindex="-1" aria-disabled="true">
+                5. Trin 5
 
-                    </a>
-                </li>
+            </a>
+        </li>
 
-            </ul>
+    </ul>
 
-        </div>
-    </div>
 </div>

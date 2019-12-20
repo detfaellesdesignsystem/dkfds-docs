@@ -1,8 +1,7 @@
 ---
 title: Klikbar trinindikator
 parent: Tringuide
-order: 03
-lead: 
+order: 50
+component: tringuide-clickable
+componentTitle: "Eksempel på klikbar trinindikator" 
 ---
-{% include code/preview-iframe.html component="tringuide-clickable" %}
-{% include code/accordion.html component="tringuide-clickable" %}

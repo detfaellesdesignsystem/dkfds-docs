@@ -1,8 +1,7 @@
 ---
 title: Trinindikator i overflow-menu
 parent: Tringuide
-order: 01
-lead: 
+order: 30
+component: tringuide-overflowmenu
+componentTitle: "Eksempel på trinindikator i overflow menu"
 ---
-{% include code/preview-iframe.html component="tringuide-overflowmenu" %}
-{% include code/accordion.html component="tringuide-overflowmenu" %}

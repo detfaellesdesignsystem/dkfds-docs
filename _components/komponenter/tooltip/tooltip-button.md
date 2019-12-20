@@ -1,8 +1,7 @@
 ---
 title: Tooltip (kommer frem ved mouse-over)
 parent: Tooltip
-order: 01
-lead: 
+order: 10
+component: tooltip-button
+componentTitle: "Eksempel på tooltip"
 ---
-{% include code/preview.html component="tooltip-button" title="Eksempel på tooltip" %}
-{% include code/accordion.html component="tooltip-button" %}
