@@ -1949,8 +1949,12 @@
             <p class="font-lead">Tabeller er en systematisk opstilling af data og viser data i kolonner og rækker.</p>
           
 
-          <h2 class="h3">Retningslinjer</h2>
-<h3 class="h4">Tilgængelighed</h3>
+          
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-retningslinjer">
+  <h2 id="retningslinjer" class="h3">Retningslinjer</h2>
+  
+  
+  <h3 class="h4">Tilgængelighed</h3>
 <ul>
     <li>Tabeller i Det Fælles Designsystem overholder HTML standarden, men du skal selv tilføje <code>scope=col</code> eller <code>scope=row</code> til hver header celle <code>th</code></li>
     <li>Hvis du konstruerer en såkaldt kompleks tabel – en tabel med flere header-niveauer -  skal hver header have tilføjet et unikt id (fx <code>id=header-eksempel</code>) og hver celle tilføjes en header-attribut med den relevante og tilknyttede tabel header’s <code>id</code> angivet (fx <code>header=header-eksempel</code>).</li>
@@ -1971,8 +1975,11 @@
     <li>Såfremt der er tale om meget <a href="/udvidelser/datatables/">avancerede tabeller</a>, kan der bruges en udvidelse</li>
 </ul>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tables/01-basic-table">
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-standard">
   <h2 id="standard">Standard</h2>
+  
   
   <div class="component-preview  component-preview-table" aria-label="Eksempel på tabel">
     <div class="container">
@@ -2026,7 +2033,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-table">Kode</button>
   <div id="code-table" class="accordion-content">
@@ -2087,11 +2094,14 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tables/02-table-borderless">
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-borderless">
   <h2 id="uden-ramme">Uden ramme</h2>
+  
   
   <div class="component-preview  component-preview-table-borderless" aria-label="Eksempel på tabel uden ramme">
     <div class="container">
@@ -2145,7 +2155,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-table--borderless">Kode</button>
   <div id="code-table--borderless" class="accordion-content">
@@ -2206,11 +2216,14 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tables/03-table-zebra">
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-zebra">
   <h2 id="zebralinjer">Zebralinjer</h2>
+  
   
   <div class="component-preview  component-preview-table-bordered-zebra" aria-label="Eksempel på tabel med zebra striber">
     <div class="container">
@@ -2264,7 +2277,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-table--bordered-zebra">Kode</button>
   <div id="code-table--bordered-zebra" class="accordion-content">
@@ -2325,11 +2338,14 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tables/04-table-responsive">
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-responsive">
   <h2 id="responsiv">Responsiv</h2>
+  
   
   <div class="component-preview  component-preview-table-responsive" aria-label="Eksempel på responsiv tabel">
     <div class="container">
@@ -2434,7 +2450,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-table--responsive">Kode</button>
   <div id="code-table--responsive" class="accordion-content">
@@ -2546,37 +2562,40 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tech-responsive-docs">
-    Implementering
-  </button>
-  <div id="tech-responsive-docs" aria-hidden="true" class="accordion-content">
-      <section>
-        <h3 class="h4">Responsive headers</h3>
-         <p><code>data-title</code> attribut bør tilføjes til hver <code>td</code>, således at en label bliver tilføjet for hver celle på mindre skærme.</p>
-         <p>Bemærk, at <code>data-title</code> automatisk bliver tilføjet til hver <code>td</code>, hvis man har DKFDS javascript filen inkluderet i sit projekt.</p>
-         <h4 class="h5">Eksempel</h4>
-         <pre>
-&lt;tr&gt;
+  
+  <h3 id="implementering">Implementering</h3>
+
+<p><code class="highlighter-rouge">data-title</code> attribut bør tilføjes til hver <code class="highlighter-rouge">td</code>, således at en label bliver tilføjet for hver celle på mindre skærme.</p>
+
+<p>Bemærk, at <code class="highlighter-rouge">data-title</code> automatisk bliver tilføjet til hver <code class="highlighter-rouge">td</code>, hvis man har DKFDS javascript filen inkluderet i sit projekt.</p>
+
+<h4 id="eksempel">Eksempel</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;tr&gt;
     &lt;td data-title="Affaldstype"&gt;Dagrenovation&lt;/td&gt;
     &lt;td data-title="Farvekode"&gt;Grøn&lt;/td&gt;
     &lt;td data-title="Beskrivelse"&gt;Madaffald, samt papir, pap eller plastik der ikke kan genanvendes, fordi der er madrester eller andet snask på.&lt;/td&gt;
-    &lt;td data-title="Hvor ender det?"&gt;Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen. &lt;/td&gt;
+    &lt;td data-title="Hvor ender det?"&gt;Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen.&lt;/td&gt;
 &lt;/tr&gt;
-         </pre>
-        <h2 class="h5">JavaScript</h2>
-        <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-        <p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
-        <pre>new DKFDS.ResponsiveTable(document.getElementByID('TABLE-ID'));</pre>
-        <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-      </section>
-  </div>
+</code></pre>
 </div>
+
+<h4 id="javascript">JavaScript</h4>
+
+<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
+
+<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>new DKFDS.ResponsiveTable(document.getElementByID('TABLE-ID'));
+</code></pre>
+</div>
+
+<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tables/05-table-lineheight">
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-lineheight">
   <h2 id="forskellig-linjehøjde">Forskellig linjehøjde</h2>
+  
   
   <div class="component-preview  component-preview-table-lineheight" aria-label="Eksempler på tabeller med forskellig afstand mellem rækkerne">
     <div class="container">
@@ -2702,7 +2721,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-table--lineheight">Kode</button>
   <div id="code-table--lineheight" class="accordion-content">
@@ -2835,11 +2854,14 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tables/06-table-bodyheaders">
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-bodyheaders">
   <h2 id="med-titel-i-venstre-kolonne">Med titel i venstre kolonne</h2>
+  
   
   <div class="component-preview  component-preview-table-body-headers" aria-label="Eksempel på tabel med titel i venstre kolonne">
     <div class="container">
@@ -2920,7 +2942,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-table--body-headers">Kode</button>
   <div id="code-table--body-headers" class="accordion-content">
@@ -3017,6 +3039,8 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 

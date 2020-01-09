@@ -1811,65 +1811,81 @@
             <p class="font-lead">Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller fører musen hen over for at få en kort forklaring på indhold, ord eller begreber.</p>
           
 
-          <section>
-    <h2 class="h3">Retningslinjer</h2>
-    <h3 class="h4">Tilgængelighed</h3>
-    <ul>
-        <li>Tooltip og popovers skal kunne lukkes med escape tasten på tastaturet.</li>
-        <li>Fokus skal blive på det element, der aktiverede tooltip eller popover.</li>
-        <li>Brug aria-describedby på elementet der udløser tooltip eller popover.</li>
-        <li>Tooltips skal både vises, ved markering med mus og keyboard.</li>
-    </ul>
-    <h3 class="h4">Brugervenlighed</h3>
-    <h4 class="h5">Anvendes til</h4>
-    <ul>
-        <li>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen.</li>
-        <li>Brug popover til at knytte relaterede informationer, der uddyber/forklarer et element eller en funktion i brugergrænsefladen.</li>
-    </ul>
-    <h4 class="h5">Anvendes ikke til</h4>
-    <p>Informationer der er essentielle for at brugeren kan gennemføre løsningen, hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst.</p>
-    <h4 class="h5">Vejledning</h4>
-    <ul>
-        <li>Gør indholdet i tooltips og popovers så kort og koncist som muligt.</li>
-        <li>Vær konsistent i brugen af tooltips og popovers, så brugeren ikke skal gætte sig til om der er tooltips/popovers eller ej.</li>
-        <li>Gør det let at se, hvilket element tooltip/popover hører til.</li>
-        <li>Brug altid tooltips til funktionsikoner (klikbare ikoner) uden label.</li>
-        <li>Sørg for at tooltips og popovers er tydelige at se og læse.</li>
-        <li>Placer tooltips og popovers så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert kan brugeren blive nødt til at lukke og åbne tooltip/popover igen for at forstå sammenhængen.</li>
-        <li>Sættes der tooltip/popover på et ord i en tekst, markeres ordet med en stiplet linje under. Brug det i begrænset omfang, da det let virker forstyrrende.</li>
-    </ul>
-    <h3 class="h5">Links</h3>
-    <ul class="nobullet-list">
-        <li><a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    </ul>
+          
+<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-retningslinjer">
+  <h2 id="retningslinjer" class="h3">Retningslinjer</h2>
+  
+  
+  <h3 class="h4">Tilgængelighed</h3>
+
+<ul>
+  <li>Tooltip og popovers skal kunne lukkes med escape tasten på tastaturet.</li>
+  <li>Fokus skal blive på det element, der aktiverede tooltip eller popover.</li>
+  <li>Brug aria-describedby på elementet der udløser tooltip eller popover.</li>
+  <li>Tooltips skal både vises, ved markering med mus og keyboard.</li>
+</ul>
+
+<h3 class="h4">Brugervenlighed</h3>
+<h4 class="h5">Anvendes til</h4>
+
+<ul>
+  <li>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen.</li>
+  <li>Brug popover til at knytte relaterede informationer, der uddyber/forklarer et element eller en funktion i brugergrænsefladen.</li>
+</ul>
+
+<h4 class="h5">Anvendes ikke til</h4>
+
+<ul>
+  <li>Informationer der er essentielle for at brugeren kan gennemføre løsningen, hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst.</li>
+</ul>
+
+<h4 class="h5">Vejledning</h4>
+
+<ul>
+  <li>Gør indholdet i tooltips og popovers så kort og koncist som muligt.</li>
+  <li>Vær konsistent i brugen af tooltips og popovers, så brugeren ikke skal gætte sig til om der er tooltips/popovers eller ej.</li>
+  <li>Gør det let at se, hvilket element tooltip/popover hører til.</li>
+  <li>Brug altid tooltips til funktionsikoner (klikbare ikoner) uden label.</li>
+  <li>Sørg for at tooltips og popovers er tydelige at se og læse.</li>
+  <li>Placer tooltips og popovers så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert kan brugeren blive nødt til at lukke og åbne tooltip/popover igen for at forstå sammenhængen.</li>
+  <li>Sættes der tooltip/popover på et ord i en tekst, markeres ordet med en stiplet linje under. Brug det i begrænset omfang, da det let virker forstyrrende.</li>
+</ul>
+
+<h3 class="h5">Links</h3>
+<ul class="nobullet-list">
+    <li><a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
 </section>
 
-<div class="accordion accordion-bordered mt-7">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tooltip-code-doc">
-    Implementering
-  </button>
-  <div id="tooltip-code-doc" class="accordion-content">
-       <p>Tooltips og popovers bygger på <a href="https://atomiks.github.io/tippyjs/" class="icon-link">tippy.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
-       <p>For at initialisere et tooltip eller en popover skal et HTML-element have klassen <code>'.js-tooltip'</code> og en <code>'title'</code>-attribut:</p>
-       <div class="code-highlight">
-         <code>
-           &lt;button class="button button-primary js-tooltip" title="Dette er et tooltip"&gt;Knap med tooltip&lt;/button&gt;	
-         </code> 
-       </div>
-       <p>Vi definerer et tooltip som en hjælpetekst som vises ved mouseover, og en popover som hjælpetekst der vises ved et klik. For at lave et tooltip om til en popover skal der tilføjes følgende attribut: <code>data-tippy-trigger="click"</code></p>
-       <p>Tippy.js har mange konfigurationsmuligheder, og den fulde liste kan ses på <a href="https://atomiks.github.io/tippyjs/" class="icon-link">deres hjemmeside<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
-       <p>I følgende eksempel er tooltip konfigureret til at vises til venstre: </p>
-       <div class="code-highlight">
-         <code>
-           &lt;button class="button button-primary js-tooltip" data-tippy-placement="left" title="Tooltip til venstre"&gt;Knap med tooltip til venstre&lt;/button&gt;
-         </code>
-       </div>
-  </div>
-</div>
+<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-implementering">
+  <h2 id="implementering" class="h3">Implementering</h2>
+  
+  
+  <p>Du bør opdatere følgende attributter til din løsning ved almindeligt tooltip:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">data-tooltip</code>: Din tooltip-tekst</li>
+</ul>
+
+<p>Yderligere indstillinger:</p>
+<ul>
+  <li><code class="highlighter-rouge">data-tooltip-position</code>: Du kan enten vælge top (<code class="highlighter-rouge">top</code>) eller bund (<code class="highlighter-rouge">bottom</code>).</li>
+</ul>
+
+<p>Ved brug at popover skal du yderligere tilføje følgende:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">data-tooltip-trigger</code>: Hvis dit tooltip skal reagere kun ved klik, så skal denne sættes til <code class="highlighter-rouge">click</code></li>
+  <li><code class="highlighter-rouge">aria-label</code>: For at forklare, at brugeren skal aktivere knappen, for at få teksten</li>
+</ul>
+
+</section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-button">
   <h2 id="tooltip-kommer-frem-ved-mouse-over">Tooltip (kommer frem ved mouse-over)</h2>
+  
   
   <div class="component-preview  component-preview-tooltip-button" aria-label="Eksempel på tooltip">
     <div class="container py-8">
@@ -1879,7 +1895,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tooltip-button">Kode</button>
   <div id="code-tooltip-button" class="accordion-content">
@@ -1897,11 +1913,14 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tooltip/popover-icon">
+<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-popover">
   <h2 id="ikon-med-popover-kræver-tryk">Ikon med popover (kræver tryk)</h2>
+  
   
   <div class="component-preview  component-preview-popover-icon" aria-label="Eksempel på popover ikon">
     <div class="container py-8">
@@ -1909,7 +1928,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-popover-icon">Kode</button>
   <div id="code-popover-icon" class="accordion-content">
@@ -1927,11 +1946,14 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-icon">
   <h2 id="ikon-med-tooltip">Ikon med tooltip</h2>
+  
   
   <div class="component-preview  component-preview-tooltip-icon" aria-label="Eksempel på ikon med tooltip">
     <div class="container py-8">
@@ -1939,7 +1961,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tooltip-icon">Kode</button>
   <div id="code-tooltip-icon" class="accordion-content">
@@ -1955,11 +1977,14 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-position">
   <h2 id="placering-af-tooltip">Placering af tooltip</h2>
+  
   
   <div class="component-preview  component-preview-tooltip-position" aria-label="Eksempel på placering af tooltip">
     <div class="container py-8">
@@ -1971,7 +1996,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-tooltip-position">Kode</button>
   <div id="code-tooltip-position" class="accordion-content">
@@ -1993,6 +2018,8 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
