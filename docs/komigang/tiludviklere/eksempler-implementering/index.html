@@ -1674,29 +1674,39 @@
             <p class="font-lead">Vi tager gerne i mod rettelser og tilføjelser til beskrivelserne på denne side, da brugerne gerne selv er </p>
           
 
-          <section>
-    <h2>Angular</h2>
-    <p>For at bruge DKFDS med Angular CLI gøres følgende:</p>
-    <p>I package.json tiløjes DKFDS og evt. også DKFDS­-plugins ind under dependencies.</p>
-<pre>
-"dependencies": {
+          <h2 id="angular">Angular</h2>
+
+<p>For at bruge DKFDS med Angular CLI gøres følgende:</p>
+
+<p>I package.json tiløjes DKFDS og evt. også DKFDS­-plugins ind under dependencies.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>"dependencies": {
     "dkfds": "^5.0.0",
     "dkfds-plugins": "^5.0.0"
-</pre>
-    <p>Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre brug af <a href="/udvidelser/">udvidelserne</a>.</p>
-    <h3>Implementer CSS</h3>
-    <p>I angular.json udpeges styling alt efter hvilket tema der skal benyttes, og hvilke udvidelser man gør brug af:</p>
-<pre>
-"styles": [
+</code></pre>
+</div>
+
+<p>Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre brug af <a href="/udvidelser/">udvidelserne</a>.</p>
+
+<h3 id="implementer-css">Implementer CSS</h3>
+
+<p>I angular.json udpeges styling alt efter hvilket tema der skal benyttes, og hvilke udvidelser man gør brug af:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>"styles": [
     "node_modules/dkfds/dist/css/dkfds-­virkdk.css",
     "node_modules/dkfds-­plugins/dist/css/dkfds­-datatables­-theme.min.css"
-</pre>
-    <h3>Implementer JavaScript</h3>
-    <p>Javascript kan implementeres på mange måder, og meget afhænger af projektets opbygning, og hvor komponenterne er placeret.</p>
-    <p>Man kan vælge at initiere alle typer af komponenter på én gang med <code>DKFDS.init()</code>, eller man kan vælge at initiere en komponent enkeltvis fx <code>new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code></p>
-    <p>Eksempel på implementering i AppComponent:</p>
-<pre>
-import {Component, OnInit} from '@angular/core';
+</code></pre>
+</div>
+
+<h3 id="implementer-javascript">Implementer JavaScript</h3>
+
+<p>Javascript kan implementeres på mange måder, og meget afhænger af projektets opbygning, og hvor komponenterne er placeret.</p>
+
+<p>Man kan vælge at initiere alle typer af komponenter på én gang med <code class="highlighter-rouge">DKFDS.init()</code>, eller man kan vælge at initiere en komponent enkeltvis fx <code class="highlighter-rouge">new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code>.</p>
+
+<p>Eksempel på implementering i AppComponent:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import {Component, OnInit} from '@angular/core';
 import * as DKFDS from 'dkfds'
 @Component({
     selector: 'app-root',
@@ -1712,10 +1722,12 @@ export class AppComponent implements OnInit{
         DKFDS.init();
     }
 }
-</pre>
-    <p>Samme implementering kan bruges i underliggende components. Men bemærk at den kun vil dække komponenter, som eksisterer på det tidspunkt. Det vil sige, at hvis andre components bliver loaded efterfølgende, vil disse ikke være dækket, og man skal derfor håndtere dette efterfølgende.</p>
-    <p>I performance sammenhæng kan det også give mening, hvis man ikke gør brug af så mange javascript afhængige komponenter, at man initierer hver komponent enkeltvis fx <code>new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code> - fremfor brug af <code>DKFS.init()</code></p>
-</section>
+</code></pre>
+</div>
+
+<p>Samme implementering kan bruges i underliggende components. Men bemærk at den kun vil dække komponenter, som eksisterer på det tidspunkt. Det vil sige, at hvis andre components bliver loaded efterfølgende, vil disse ikke være dækket, og man skal derfor håndtere dette efterfølgende.</p>
+
+<p>I performance sammenhæng kan det også give mening, hvis man ikke gør brug af så mange javascript afhængige komponenter, at man initierer hver komponent enkeltvis fx <code class="highlighter-rouge">new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code> - fremfor brug af <code class="highlighter-rouge">DKFS.init()</code></p>
 
       </section>
     </main>
