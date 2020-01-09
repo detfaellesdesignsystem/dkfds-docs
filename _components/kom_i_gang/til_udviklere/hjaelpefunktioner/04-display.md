@@ -4,30 +4,29 @@ parent: Hjælpefunktioner
 order: 04
 ---
 
-<p>Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i <code>$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
-Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code>
+Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+
+Format: `d-{display}` og `d-{breakpoint}-{display}`
 
 <h3 class="h5 mb-0">Display</h3>
-<ul>
-    <li><code>none</code></li>
-    <li><code>inline-block</code></li>
-    <li><code>block</code></li>
-    <li><code>flex</code></li>
-    <li><code>inline-flex</code></li>
-</ul>
+
+- `none`
+- `inline-block`
+- `block`
+- `flex`
+- `inline-flex`
 
 <h3 class="h5 mb-0">Print display</h3>
-<ul>
-    <li><code>print-none</code></li>
-    <li><code>print-inline</code></li>
-    <li><code>print-inline-block</code></li>
-    <li><code>print-block</code></li>
-    <li><code>print-table</code></li>
-    <li><code>print-table-row</code></li>
-    <li><code>print-table-cell</code></li>
-    <li><code>print-flex</code></li>
-    <li><code>print-inline-flex</code></li>
-</ul>
+
+- `print-none`
+- `print-inline`
+- `print-inline-block`
+- `print-block`
+- `print-table`
+- `print-table-row`
+- `print-table-cell`
+- `print-flex`
+- `print-inline-flex`
 
 <h3 class="h5 mb-0">Eksempel med grid breakpoints</h3>
 
@@ -41,51 +40,51 @@ Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code>
   <tbody>
     <tr>
       <td>Skjul på alle</td>
-      <td><code>d-none</code></td>
+      <td>`d-none`</td>
     </tr>
     <tr>
       <td>Skjul kun på xs</td>
-      <td><code>d-none d-sm-block</code></td>
+      <td>`d-none d-sm-block`</td>
     </tr>
     <tr>
       <td>Skjul kun på sm</td>
-      <td><code>d-sm-none d-md-block</code></td>
+      <td>`d-sm-none d-md-block`</td>
     </tr>
     <tr>
       <td>Skjul kun på md</td>
-      <td><code>d-md-none d-lg-block</code></td>
+      <td>`d-md-none d-lg-block`</td>
     </tr>
     <tr>
       <td>Skjul kun på lg</td>
-      <td><code>d-lg-none d-xl-block</code></td>
+      <td>`d-lg-none d-xl-block`</td>
     </tr>
     <tr>
       <td>Skjul kun på xl</td>
-      <td><code>d-xl-none</code></td>
+      <td>`d-xl-none`</td>
     </tr>
     <tr>
       <td>Synlig på alle</td>
-      <td><code>d-block</code></td>
+      <td>`d-block`</td>
     </tr>
     <tr>
       <td>Synlig kun på xs</td>
-      <td><code>d-block d-sm-none</code></td>
+      <td>`d-block d-sm-none`</td>
     </tr>
     <tr>
       <td>Synlig kun på sm</td>
-      <td><code>d-none d-sm-block d-md-none</code></td>
+      <td>`d-none d-sm-block d-md-none`</td>
     </tr>
     <tr>
       <td>Synlig kun på md</td>
-      <td><code>d-none d-md-block d-lg-none</code></td>
+      <td>`d-none d-md-block d-lg-none`</td>
     </tr>
     <tr>
       <td>Synlig kun på lg</td>
-      <td><code>d-none d-lg-block d-xl-none</code></td>
+      <td>`d-none d-lg-block d-xl-none`</td>
     </tr>
     <tr>
       <td>Synlig kun på xl</td>
-      <td><code>d-none d-xl-block</code></td>
+      <td>`d-none d-xl-block`</td>
     </tr>
   </tbody>
 </table>
@@ -102,39 +101,39 @@ Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code>
   <tbody>
     <tr>
       <td>Skjul ved print</td>
-      <td><code>d-print-none</code></td>
+      <td>`d-print-none`</td>
     </tr>
     <tr>
       <td>Vis element med inline display ved print</td>
-      <td><code>d-print-inline</code></td>
+      <td>`d-print-inline`</td>
     </tr>
     <tr>
       <td>Vis element med inline-block display ved print</td>
-      <td><code>d-print-inline-block</code></td>
+      <td>`d-print-inline-block`</td>
     </tr>
     <tr>
       <td>Vis element med block display ved print</td>
-      <td><code>d-print-block</code></td>
+      <td>`d-print-block`</td>
     </tr>
     <tr>
       <td>Vis element som tabel display ved print</td>
-      <td><code>d-print-table</code></td>
+      <td>`d-print-table`</td>
     </tr>
     <tr>
       <td>Vis element som en tabel række display ved print</td>
-      <td><code>d-print-table-row</code></td>
+      <td>`d-print-table-row`</td>
     </tr>
     <tr>
       <td>Vis element med tabel celle display ved print</td>
-      <td><code>d-print-table-cell</code></td>
+      <td>`d-print-table-cell`</td>
     </tr>
     <tr>
       <td>Vis element med flex display ved print</td>
-      <td><code>d-print-flex</code></td>
+      <td>`d-print-flex`</td>
     </tr>
     <tr>
       <td>Vis element med inline-flex display ved print</td>
-      <td><code>d-print-inline-flex</code></td>
+      <td>`d-print-inline-flex`</td>
     </tr>
   </tbody>
 </table>

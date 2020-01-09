@@ -3,10 +3,9 @@ title: Tilgængelighed
 parent: Hjælpefunktioner
 order: 07
 ---
-<p>Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.</p>
-<ul>
-  <li><code>aria-hidden="true"</code> og <code>aria-hidden="false"</code> bruges til at skjule og vise elementer for skærmlæsere.</li>
-  <li><code>.sr-only</code> klassen og mixin <code>@mixin sr-only()</code> bruges når elementer kun skal vises for skærmlæsere.</li>
-  <li><code>aria-expanded="true"</code> og <code>aria-expanded="false"</code> bruges til elementer som toggler mellem at være åbne og lukket.</li>
-  <li><code>aria-label=""</code> skal beskrive hvad funktionen af et element gør.</li>
-</ul> 
+Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.
+
+- `aria-hidden="true"` og `aria-hidden="false"` bruges til at skjule og vise elementer for skærmlæsere.
+- `.sr-only` klassen og mixin `@mixin sr-only()` bruges når elementer kun skal vises for skærmlæsere.
+- `aria-expanded="true"` og `aria-expanded="false"` bruges til elementer som toggler mellem at være åbne og lukket.
+- `aria-label=""` skal beskrive hvad funktionen af et element gør.
