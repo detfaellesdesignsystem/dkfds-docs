@@ -37,4 +37,4 @@ subnav:
   href: '#linjeafstand'
 ---
 
-{% include child-sections.html parent='typography' %}
+{% include child-components.html parent='typography' %}
