@@ -1877,83 +1877,48 @@
 <section class="styleguide-child-container content" id="section-/design/typography/100-typefaces">
   <h2 id="fonte">Fonte</h2>
   
+  
   <p>Hvis din selvbetjeningsløsning skal integreres på borger.dk og Virk, skal du benytte fonten “IBM Plex Sans”. Fonten er valgt, fordi alle browsere præsenterer den flot og den  er nem at arbejde med. Samtidig bygger den visuelt bro mellem de fonte, der for tiden bliver anvendt på borger.dk og Virk.</p>
 
 <h3 class="h5">IBM Plex Sans</h3>
-<p>Det Fælles Designsystem benytter fonten "IBM Plex Sans" til al tekst. Fonten er “open source” og kan derfor frit benyttes af alle løsninger under <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL_web" class="icon-link">"Open Font License" betingelser<svg class="icon-svg" focusable="false" aria-hidden="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+
+<p>Det Fælles Designsystem benytter fonten “IBM Plex Sans” til al tekst. Fonten er “open source” og kan derfor frit benyttes af alle løsninger under <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=OFL_web" class="icon-link">“Open Font License” betingelser<svg class="icon-svg" focusable="false" aria-hidden="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+
 <p>IBM Plex Sans er valgt som font, da det er en æstetisk og læsbar open source font, der kan anvendes gratis under SIL Open Font License. Det er en alsidig sans serif font, der egner sig godt til brugergrænseflader. Fonten har de karakteristika, som designsystemet promoverer. Den er simpel og neutral i sit udtryk og yderst skalerbar grundet de mange variationer (typer, vægte, sprog, m.m.), som fonten understøtter.</p>
 
 <h3 class="h5">Fallback font "system"</h3>
+
 <p>En fallback font, er den font som vises, når browseren ikke kan indlæse den angivne font.</p>
-<p>Det Fælles Designsystem gør brug af "system", hvilket vil sige at fallback fonten er op til styresystemet på den enhed der benyttes. Dette gør ydeevnen (performance) bedre, da browseren ikke skal hente andre fonte, men i stedet bruger en den har i forvejen.</p>
+
+<p>Det Fælles Designsystem gør brug af “system”, hvilket vil sige at fallback fonten er op til styresystemet på den enhed der benyttes. Dette gør ydeevnen (performance) bedre, da browseren ikke skal hente andre fonte, men i stedet bruger en den har i forvejen.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/200-headings">
   <h2 id="overskrifter">Overskrifter</h2>
   
-  <p class="font-lead">Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning.</p>
-<p>Overskriftstyperne h1-h6 har to formål:</p>
+    <p class="font-lead">Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning.</p>
+  
+  
+  <p>Overskriftstyperne h1-h6 har to formål:</p>
+
 <ul>
   <li>De er sidens indholdsfortegnelse for skærmlæsere.</li>
   <li>De skaber et visuelt hierarki og gør siden overskuelig ved at inddele den i afsnit og underafsnit.</li>
 </ul>
-<h3>Brug den overskrift som ser bedst ud uden at ødelægge oplevelsen for brugere, der anvender skærmlæsere</h3>
-<p>Alle HTML-overskrifter h1 til h6 er stylet; dvs. de er tildelt en størrelse, farve og vægt. Du kan overskrive styles, så den bliver visuelt ændret, og samtidig holde en semantisk korrekt opbygning til skærmlæseren. Det kan fx være relevant, hvis det ser bedre ud, at en overskrift h3 ligner en overskrift h5. Du kan ændre styling på en heading ved at bruge denne struktur: <code>&lt;h3 class="h5"&gt;</code>. Det vil fortsat være brugervenligt for brugere, der anvender skærmlæsere.</p>
 
-<div class="component-preview  component-preview-headings" aria-label="">
-    <div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h1>Overskrift 1</h1>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system";<br />font-weight:700;<br />font-size:4rem;<br />color:#1a1a1a;<br />line-height:4.8rem;<br />margin:0 0 1.6rem 0;</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h2>Overskrift 2</h2>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:3rem;<br />color:#1a1a1a;<br />line-height:4rem;<br />margin:4rem 0 1.6rem 0;</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h3>Overskrift 3</h3>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:2.4rem;<br />color:#1a1a1a;<br />line-height:3.2rem;<br />margin:4rem 0 1.6rem 0;</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h4>Overskrift 4</h4>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:2rem;<br />color:#1a1a1a;<br />line-height:3.2rem;<br />margin:2.4rem 0 1.6rem 0;</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h5>Overskrift 5</h5>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:1.6rem;<br />color:#1a1a1a;<br />line-height:2.4rem;<br />margin:2.4rem 0 0 0;</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h6>Overskrift 6</h6>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>font-family: "IBMPlexSans","system";<br />font-weight:600;<br />font-size:1.3rem;<br />text-transform: uppercase;<br />color:#1a1a1a;<br />line-height:2.4rem;<br />margin:2.4rem 0 0 0;</pre>
-        </div>
-    </div>
-</div>
-</div>
+<p class="bold">Brug den overskrift som ser bedst ud uden at ødelægge oplevelsen for brugere, der anvender skærmlæsere.</p>
 
+<p>Alle HTML-overskrifter h1 til h6 er stylet; dvs. de er tildelt en størrelse, farve og vægt. Du kan overskrive styles, så den bliver visuelt ændret, og samtidig holde en semantisk korrekt opbygning til skærmlæseren. Det kan fx være relevant, hvis det ser bedre ud, at en overskrift h3 ligner en overskrift h5. Du kan ændre styling på en heading ved at bruge denne struktur: <code class="highlighter-rouge">&lt;h3 class="h5"&gt;</code>. Det vil fortsat være brugervenligt for brugere, der anvender skærmlæsere.</p>
+
+<div class="component-preview ">
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/headings"></iframe>
+</div>
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-headings">Kode</button>
@@ -2016,45 +1981,37 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="headings-docs-tech">
-    Implementering
-  </button>
-  <div id="headings-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings <code>font-family</code>, <code>font-size</code>, <code>line-height</code>, <code>font-weight</code> og <code>color</code>.</p>
-      <div class="code-highlight">
-        <code>
-          @mixin h1{ <br />
-          &nbsp;&nbsp;&nbsp;font-family: $font-name; <br />
-          &nbsp;&nbsp;&nbsp;font-size: $h1-font-size; <br />
-          &nbsp;&nbsp;&nbsp;line-height: $h1-line-height; <br />
-          &nbsp;&nbsp;&nbsp;font-weight: $font-weight-bold; <br />
-          &nbsp;&nbsp;&nbsp;color: $color-black;<br />
-        }
-        </code>
-      </div>
-      <div class="code-highlight">
-        <code>
-          h1, .h1 {<br />
-          &nbsp;&nbsp;&nbsp;@include h1;<br />
-          }
-        </code>
-      </div>
-      <p>Hver heading har sin klasse, som arver styling fra heading mixins. Ønsker du en <code>h1</code> med styling fra <code>h2</code>, skal du blot indsætte klassen <code>h2</code> på <code>&lt;h1 class="h2"&gt;</code>.</p>
-  </div>
+<h3 id="implementering">Implementering</h3>
+
+<p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings <code class="highlighter-rouge">font-family</code>, <code class="highlighter-rouge">font-size</code>, <code class="highlighter-rouge">line-height</code>, <code class="highlighter-rouge">font-weight</code> og <code class="highlighter-rouge">color</code>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@mixin h1{ 
+    font-family: $font-name;
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    font-weight: $font-weight-bold;
+    color: $color-black;
+}
+</code></pre>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typoheadings-docs">
-    Retningslinjer
-  </button>
-  <div id="typoheadings-docs" aria-hidden="false" class="accordion-content">
-      <p>Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.</p>
-      <section>
-          <h4>Tilgængelighed</h4>
-          <p>Du kan bruge H-tagget i koden til at strukturere sidens logik for skærmlæsere: H-tags tegner indholdsfortegnelsen op som vist nedenfor.</p>
-<pre>
-  Sidetitel (h1)                1
+<div class="highlighter-rouge"><pre class="highlight"><code>  h1, .h1 
+  @include h1;
+  }
+</code></pre>
+</div>
+
+<p>Hver heading har sin klasse, som arver styling fra heading mixins. Ønsker du en <code class="highlighter-rouge">h1</code> med styling fra <code class="highlighter-rouge">h2</code>, skal du blot indsætte klassen <code class="highlighter-rouge">h2</code> på <code class="highlighter-rouge">&lt;h1 class="h2"&gt;</code>.</p>
+
+<h3 id="retningslinjer">Retningslinjer</h3>
+
+<p>Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.</p>
+
+<h4 id="tilgængelighed">Tilgængelighed</h4>
+
+<p>Du kan bruge H-tagget i koden til at strukturere sidens logik for skærmlæsere: H-tags tegner indholdsfortegnelsen op som vist nedenfor.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  Sidetitel (h1)                1
     Afsnit (h2)                 1.1
       Underafsnit (h3)          1.1.1
     Afsnit (h2)                 1.2
@@ -2065,40 +2022,45 @@
         Under-underafsnit (h4)  1.3.1.2
     Afsnit (h2)                 1.4
     Afsnit (h2)                 1.5
-</pre>
-          <p>Skærmlæseren læser dette op for brugere, der orienterer sig via skærmlæser. Det er derfor vigtigt, at du anvender strukturen, så brugere med skærmlæsere nemt kan hoppe mellem afsnit og underafsnit. </p>
-          <p>Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig ændre på overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.</p>
-          <h5>Hvornår skal du bruge overskrifter?</h5>
-          <ul>
-            <li>Du skal bruge overskrifter til at skabe struktur på din side og gruppere dit indhold i logiske og overskuelige bidder, både for skærmlæsere og visuelt orienterede brugere.</li>
-          </ul>
-          <h5>Hvornår skal du overveje anden formatering end overskrifter?</h5>
-          <ul>
-            <li>Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx beskedboksen til information, fremhæv særlige punkter med punktopstilling eller anvend stor tekst (display) til at markere udvalgte dele af teksten.</li>
-          </ul>
-          <h5>Vejledning</h5>                
-          <ul>
-              <li>Hold en stram overskriftsstruktur i koden. En h3 altid er under en h2, en h4 under en h3 osv. h1 er altid øverst i hierarkiet.</li>  
-              <li>Du bør ikke springe overskriftsled over og fx gå direkte fra en h2 til en h4.</li>
-              <li>Hvis du visuelt vil have et andet udtryk, så brug en <code>class="hX"</code> til at style overskriften om. Dermed bryder du ikke logikken for skærmlæsere, men får et andet visuelt udtryk på dine overskrifter.</li>
-          </ul>
-          <h5>Hvis du vil vide mere</h5>
-          <ul>
-            <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" class="icon-link">H42: Using h1-h6 to identify headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-          </ul>
-      </section>
-  </div>
+</code></pre>
 </div>
+
+<p>Skærmlæseren læser dette op for brugere, der orienterer sig via skærmlæser. Det er derfor vigtigt, at du anvender strukturen, så brugere med skærmlæsere nemt kan hoppe mellem afsnit og underafsnit.</p>
+
+<p>Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig ændre på overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.</p>
+
+<h5 id="hvornår-skal-du-bruge-overskrifter">Hvornår skal du bruge overskrifter?</h5>
+
+<p>Du skal bruge overskrifter til at skabe struktur på din side og gruppere dit indhold i logiske og overskuelige bidder, både for skærmlæsere og visuelt orienterede brugere.</p>
+
+<h5 id="hvornår-skal-du-overveje-anden-formatering-end-overskrifter">Hvornår skal du overveje anden formatering end overskrifter?</h5>
+
+<p>Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx beskedboksen til information, fremhæv særlige punkter med punktopstilling eller anvend stor tekst (display) til at markere udvalgte dele af teksten.</p>
+
+<h4 id="vejledning">Vejledning</h4>
+
+<ul>
+  <li>Hold en stram overskriftsstruktur i koden. En h3 altid er under en h2, en h4 under en h3 osv. h1 er altid øverst i hierarkiet.</li>
+  <li>Du bør ikke springe overskriftsled over og fx gå direkte fra en h2 til en h4.</li>
+  <li>Hvis du visuelt vil have et andet udtryk, så brug en <code class="highlighter-rouge">class="hX"</code> til at style overskriften om. Dermed bryder du ikke logikken for skærmlæsere, men får et andet visuelt udtryk på dine overskrifter.</li>
+</ul>
+
+<h4 id="hvis-du-vil-vide-mere">Hvis du vil vide mere</h4>
+
+<ul class="nobullet-list">
+    <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" class="icon-link">H42: Using h1-h6 to identify headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/300-label">
   <h2 id="felt-og-tabeloverskrifter-label-og-th">Felt- og tabeloverskrifter (label og th)</h2>
   
-  <p class="font-lead">I eksemplet nedenfor viser vi, hvordan overskrifter til felter og overskrifter i tabeller ser ud. Overskrifter til felter og tabeller er ens, men der er forskel i koden.</p>
-
-<div class="component-preview  component-preview-labels" aria-label="">
+    <p class="font-lead">I eksemplet nedenfor viser vi, hvordan overskrifter til felter og overskrifter i tabeller ser ud. Overskrifter til felter og tabeller er ens, men der er forskel i koden.</p>
+  
+  
+  <div class="component-preview  component-preview-labels" aria-label="">
     <div class="container">
 
     <div class="row">
@@ -2165,47 +2127,42 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="labels-docs-tech">
-    Implementering
-  </button>
-  <div id="labels-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>Du kan indsættes feltoverskrifter med et label-tag <code>&lt;label&gt;&lt;/label&gt;</code> og med label klassen <code>.form-label</code></p>
-    <p>Du kan bruge kolonneoverskrifter i tabeller ved at indsætte dem som <code>&lt;th&gt;&lt;/th&gt;</code> i en thead. Kolonneoverskrifter skal hverken have label-tag eller label-klasse.</p>
-  </div>
-</div>
+<h3 id="implementering">Implementering</h3>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typolabels-docs">
-    Retningslinjer
-  </button>
-  <div id="typolabels-docs" aria-hidden="false" class="accordion-content">
-      <section>
-          <h3 class="h4">Feltoverskrift (label)</h3>
-          <p>Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er dit spørgsmål til brugeren og feltet, som brugerne kan skrive i, er svaret de giver dig.</p>              
-          <ul>
-            <li>Feltoverskrifter er dine spørgsmål til brugeren.</li>  
-            <li>Sørg for at brugeren kan forstå, hvad du beder om svar på.</li>
-            <li>Undgå lange og komplekse feltoverskrifter.</li>
-            <li>Stil kun ét spørgsmål i en feltoverskrift.</li>
-            <li>Feltoverskrifter placeres altid over feltet, som anvist under formularelementer.</li>
-            <li>Alle felter eller sammenhængende gruppe af felter (fx datovalg) skal have en feltoverskrift.</li>
-          </ul>
-          <h3 class="h4">Tabeloverskrift (th)</h3>
-          <p>Tabeloverskrifter er visuelt ens med feltoverskrifter. Du kan bruge dem til at skabe overblik over rækker eller kolonner af data i tabeller og lister.</p>
-          <p>Tabeloverskrifter beskriver, hvad indholdet i en række eller kolonne angiver.</p>
-      </section>
-  </div>
-</div>
+<p>Du kan indsættes feltoverskrifter med et label-tag <code class="highlighter-rouge">&lt;label&gt;&lt;/label&gt;</code> og med label klassen <code class="highlighter-rouge">.form-label</code>.</p>
+
+<p>Du kan bruge kolonneoverskrifter i tabeller ved at indsætte dem som <code class="highlighter-rouge">&lt;th&gt;&lt;/th&gt;</code> i en thead. Kolonneoverskrifter skal hverken have label-tag eller label-klasse.</p>
+
+<h3 id="retningslinjer">Retningslinjer</h3>
+
+<h4 id="feltoverskrift-label">Feltoverskrift (label)</h4>
+
+<p>Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er dit spørgsmål til brugeren og feltet, som brugerne kan skrive i, er svaret de giver dig.</p>
+
+<ul>
+  <li>Feltoverskrifter er dine spørgsmål til brugeren.</li>
+  <li>Sørg for at brugeren kan forstå, hvad du beder om svar på.</li>
+  <li>Undgå lange og komplekse feltoverskrifter.</li>
+  <li>Stil kun ét spørgsmål i en feltoverskrift.</li>
+  <li>Feltoverskrifter placeres altid over feltet, som anvist under formularelementer.</li>
+  <li>Alle felter eller sammenhængende gruppe af felter (fx datovalg) skal have en feltoverskrift.</li>
+</ul>
+
+<h4 id="tabeloverskrift-th">Tabeloverskrift (th)</h4>
+
+<p>Tabeloverskrifter er visuelt ens med feltoverskrifter. Du kan bruge dem til at skabe overblik over rækker eller kolonner af data i tabeller og lister.</p>
+
+<p>Tabeloverskrifter beskriver, hvad indholdet i en række eller kolonne angiver.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/400-lead-paragraph">
   <h2 id="manchettekst-lead-paragraph">Manchettekst (lead paragraph)</h2>
   
-  <p class="font-lead">Du kan bruge manchettekst til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.</p>
-
-<p>Du kan give teksten extra fokus ved at give den klassen <code>.font-lead</code>.</p>
+    <p class="font-lead">Du kan bruge manchettekst til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.</p>
+  
+  
+  <p>Du kan give teksten extra fokus ved at give den klassen <code class="highlighter-rouge">.font-lead</code>.</p>
 
 <div class="component-preview  component-preview-lead-paragraph" aria-label="">
     <div class="container">
@@ -2242,28 +2199,24 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typolead-docs">
-    Retningslinjer
-  </button>
-  <div id="typolead-docs" aria-hidden="false" class="accordion-content">
-          <ul>
-            <li>Hold manchetteksten kort og præcis, gerne max tre linjer.</li>  
-            <li>Manchetteksten er kun til korte introduktionstekster og ikke til lange informationstekster. Brug brødtekst og lister til yderligere informationstekster.</li>
-            <li>Brug kun manchettekst, når og hvor det er nødvendigt. Brug fx ikke manchettekst, hvis brugeren selv kan afkode siden og begynde at indtaste med det samme.</li>
-            <li>Typisk starter indtastningsflowet eller en sektion lige under manchetteksten. Hvis det understøtter brugerens gennemførelse af løsningen, kan du godt indsætte brødtekst, lister, links, o.l. efter manchetteksten.</li>
-          </ul>
-  </div>
-</div>
+<h3 id="retningslinjer">Retningslinjer</h3>
+
+<ul>
+  <li>Hold manchetteksten kort og præcis, gerne max tre linjer.</li>
+  <li>Manchetteksten er kun til korte introduktionstekster og ikke til lange informationstekster. Brug brødtekst og lister til yderligere informationstekster.</li>
+  <li>Brug kun manchettekst, når og hvor det er nødvendigt. Brug fx ikke manchettekst, hvis brugeren selv kan afkode siden og begynde at indtaste med det samme.</li>
+  <li>Typisk starter indtastningsflowet eller en sektion lige under manchetteksten. Hvis det understøtter brugerens gennemførelse af løsningen, kan du godt indsætte brødtekst, lister, links, o.l. efter manchetteksten.</li>
+</ul>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/500-body-copy">
   <h2 id="brødtekst-body-copy">Brødtekst (body copy)</h2>
   
-  <p class="font-lead">Brødtekst er standardformateringen for tekst i designsystemet og bliver i særdeleshed brugt til afsnit af tekst.</p>
-
-<div class="component-preview  component-preview-inlinetext" aria-label="">
+    <p class="font-lead">Brødtekst er standardformateringen for tekst i designsystemet og bliver i særdeleshed brugt til afsnit af tekst.</p>
+  
+  
+  <div class="component-preview  component-preview-inlinetext" aria-label="">
     <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
@@ -2348,45 +2301,38 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="bodycopy-docs-tech">
-    Implementering
-  </button>
-  <div id="bodycopy-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>Fontstørrelsen for brødtekst er som udgangspunkt <strong>16px</strong>, og har en linjehøjde som svarer til 24px.</p>
-    <p>Alle fontstørrelser er angivet i rem-værdier og forholder sig derfor til fontstørrelsen, som den er angivet i <code>&lt;html&gt;</code>-tagget.</p>
-    <p>HTML-taggets fontstørrelse er angivet i procent. Dvs. fontstørrelsen er relativ til browserens brugervalgte fontstørrelse. De fleste brugere har en standardindstilling på 16px, 62.5% af dette er 10px og en fontstørrelse på 1.6 rem giver derfor en fontstørrelse på 16px. Hvis brugeren vælger at indstille sin fontstørrelse til en standard, som er større end 16px, vil hele sitet afspejle brugerens ønske.</p>
-    <div class="code-highlight">
-        <code>        
-            html { font-size: 62.5%; } <br />
-            p &nbsp;&nbsp;&nbsp;{ font-size: 1.6rem; } /* =16px */ <br />
-        </code>
-    </div>
-  </div>
+<h3 id="implementering">Implementering</h3>
+
+<p>Fontstørrelsen for brødtekst er som udgangspunkt <strong>16px</strong>, og har en linjehøjde som svarer til 24px.</p>
+
+<p>Alle fontstørrelser er angivet i rem-værdier og forholder sig derfor til fontstørrelsen, som den er angivet i <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>-tagget.</p>
+
+<p>HTML-taggets fontstørrelse er angivet i procent. Dvs. fontstørrelsen er relativ til browserens brugervalgte fontstørrelse. De fleste brugere har en standardindstilling på 16px, 62.5% af dette er 10px og en fontstørrelse på 1.6 rem giver derfor en fontstørrelse på 16px. Hvis brugeren vælger at indstille sin fontstørrelse til en standard, som er større end 16px, vil hele sitet afspejle brugerens ønske.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>html { font-size: 62.5%; }
+p { font-size: 1.6rem; } /* =16px */
+</code></pre>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typobody-docs">
-    Retningslinjer
-  </button>
-  <div id="typobody-docs" aria-hidden="false" class="accordion-content">
-          <ul>
-            <li>Undgå "mure af tekst" i din selvbetjeningsløsning: Bruge white space / mellemrum til at skabe luft mellem tekster og øge læsbarheden.</li>
-            <li>Brug kun fed tekst i meget begrænset omfang: Fx inde i sætninger til at fremhæve særligt centrale tal eller pointer.</li>
-            <li>Brug ikke fed tekst som overskrift.</li>
-            <li>Brug ikke understreget tekst, da det ligner links.</li>
-            <li>Brug ikke kursiv tekst, da det nedsætter læsbarheden.</li>
-          </ul>
-  </div>
-</div>
+<h3 id="retningslinjer">Retningslinjer</h3>
+
+<ul>
+  <li>Undgå “mure af tekst” i din selvbetjeningsløsning: Bruge white space / mellemrum til at skabe luft mellem tekster og øge læsbarheden.</li>
+  <li>Brug kun fed tekst i meget begrænset omfang: Fx inde i sætninger til at fremhæve særligt centrale tal eller pointer.</li>
+  <li>Brug ikke fed tekst som overskrift.</li>
+  <li>Brug ikke understreget tekst, da det ligner links.</li>
+  <li>Brug ikke kursiv tekst, da det nedsætter læsbarheden.</li>
+</ul>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/600-links">
   <h2 id="links">Links</h2>
   
-  <p class="font-lead">Links anvendes til at linke rundt i løsningen og til at linke ud af løsningen til eksterne sites.</p>
-<p>Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.</p>
+    <p class="font-lead">Links anvendes til at linke rundt i løsningen og til at linke ud af løsningen til eksterne sites.</p>
+  
+  
+  <p>Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.</p>
 <p>Se også vores <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.</p>
 
 <div class="component-preview  component-preview-links" aria-label="">
@@ -2538,41 +2484,40 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typolinks-docs">
-    Retningslinjer
-  </button>
-  <div id="typolinks-docs" aria-hidden="false" class="accordion-content">
-      <section>
-        <h3 class="h4">Tilgængelighed</h3>
-          <ul>
-              <li>Linkteksten skal give mening for brugeren og angive, hvad linket fører hen til.</li>
-              <li>Links skal enten være understreget eller markeret på anden vis. Et link må ikke kun være angivet med en farve.</li>
-              <li>Brugerne skal kunne tabulere mellem links og aktivere dem via enter på tastaturet.</li>
-              <li>Links skal have en defineret <code>href</code> attribut i koden.</li>
-              <li>Har linket en “hover” skal denne kunne aktiveres både med keyboard og mus.</li>
-          </ul>
-      </section>
-      <section>
-        <h3 class="h4">Anvendes til</h3>
-        <ul>
-            <li>Brug links til at lade brugeren navigere til andre sider i din løsning.</li>
-            <li>Brug links til at linke til sider uden for din løsning. Husk at markere dette med et ikon som beskrevet under implementeringsafsnittet under <a href="#eksternt-link">eksternt link</a>.</li>
-        </ul>
-        <h3 class="h4">Brugervenlighed</h3>
-        <p>Hvis et link fører væk fra den aktuelle side og brugeren kan miste data eller risikere at skulle udfylde samme del igen ved at følge linket, så advisér brugeren om dette i et modalvindue. Bed også brugeren om at be- eller afkræfte ønsket om at forlade siden.</p>
-        <p>Brug links med omtanke i en selvbetjeningsløsning. Linker du for meget ud til eksterne websites, kan det virke forstyrrende for flowet og få brugeren ud af kontekst. Omvendt kan det give stor værdi for brugeren, hvis du linker ud til relevante informationer. Fx informationer, som understøtter brugerens vej gennem selvbetjeningsløsningen og/eller giver væsentlige input til, hvad brugeren skal indtaste i løsningen.</p>
-        <p>Gør gerne brugeren opmærksom på, hvor det eksterne link fører hen, fx i en parentes som en del af linket, hvis det ikke fremgår af linkteksten.</p>
-      </section>
-  </div>
-</div>
+<h3 id="retningslinjer">Retningslinjer</h3>
+
+<h4 id="tilgængelighed">Tilgængelighed</h4>
+
+<ul>
+  <li>Linkteksten skal give mening for brugeren og angive, hvad linket fører hen til.</li>
+  <li>Links skal enten være understreget eller markeret på anden vis. Et link må ikke kun være angivet med en farve.</li>
+  <li>Brugerne skal kunne tabulere mellem links og aktivere dem via enter på tastaturet.</li>
+  <li>Links skal have en defineret <code class="highlighter-rouge">href</code> attribut i koden.</li>
+  <li>Har linket en “hover” skal denne kunne aktiveres både med keyboard og mus.</li>
+</ul>
+
+<h4 id="anvendes-til">Anvendes til</h4>
+
+<ul>
+  <li>Brug links til at lade brugeren navigere til andre sider i din løsning.</li>
+  <li>Brug links til at linke til sider uden for din løsning. Husk at markere dette med et ikon som beskrevet under implementeringsafsnittet under <a href="#eksternt-link">eksternt link</a>.</li>
+</ul>
+
+<h4 id="brugervenlighed">Brugervenlighed</h4>
+
+<p>Hvis et link fører væk fra den aktuelle side og brugeren kan miste data eller risikere at skulle udfylde samme del igen ved at følge linket, så advisér brugeren om dette i et modalvindue. Bed også brugeren om at be- eller afkræfte ønsket om at forlade siden.</p>
+
+<p>Brug links med omtanke i en selvbetjeningsløsning. Linker du for meget ud til eksterne websites, kan det virke forstyrrende for flowet og få brugeren ud af kontekst. Omvendt kan det give stor værdi for brugeren, hvis du linker ud til relevante informationer. Fx informationer, som understøtter brugerens vej gennem selvbetjeningsløsningen og/eller giver væsentlige input til, hvad brugeren skal indtaste i løsningen.</p>
+
+<p>Gør gerne brugeren opmærksom på, hvor det eksterne link fører hen, fx i en parentes som en del af linket, hvis det ikke fremgår af linkteksten.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/620-external-link">
   <h2 id="eksternt-link">Eksternt link</h2>
   
-  <div class="component-preview  component-preview-external-link" aria-label="">
+  
+  <div class="component-preview  component-preview-external-link" aria-label="Eksempel på eksternt link">
     <div class="container">
     <div class="row">
         <div class="col-12">
@@ -2584,7 +2529,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-external-link">Kode</button>
   <div id="code-external-link" class="accordion-content">
@@ -2605,22 +2550,20 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="external-links-docs-tech">
-    Implementering
-  </button>
-  <div id="external-links-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>Du kan definere et eksternt link i koden ved at sætte klassen <code>icon-link</code> på <code>a</code> elementet. Derudover skal du tilføje SVG ikonet inline: <code>&lt;svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"&gt;&lt;use xlink:href="#open-in-new"&gt;&lt;/use&gt;&lt;/svg&gt;</code>.</p>
-    <p>For at kunne bruge denne metode, husk da at inkludere SVG ikon samlingen i toppen af hver side under <code>&lt;body&gt;</code>.</p>
-  </div>
-</div>
+  
+  <h3 id="implementering">Implementering</h3>
+
+<p>Du kan definere et eksternt link i koden ved at sætte klassen <code class="highlighter-rouge">icon-link</code> på <code class="highlighter-rouge">a</code> elementet. Derudover skal du tilføje SVG ikonet inline: <code class="highlighter-rouge">&lt;svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"&gt;&lt;use xlink:href="#open-in-new"&gt;&lt;/use&gt;&lt;/svg&gt;</code>.</p>
+
+<p>For at kunne bruge denne metode, husk da at inkludere SVG ikon samlingen i toppen af hver side under <code class="highlighter-rouge">&lt;body&gt;</code>.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/630-footer-links">
   <h2 id="footer-links">Footer links</h2>
   
-  <div class="component-preview  component-preview-footer-links" aria-label="">
+  
+  <div class="component-preview  component-preview-footer-links" aria-label="Eksempel på footer links">
     <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
@@ -2636,7 +2579,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-footer-links">Kode</button>
   <div id="code-footer-links" class="accordion-content">
@@ -2661,15 +2604,18 @@
   </div>
 </div>
 
+  
+  
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/640-skip-link">
   <h2 id="skip-link">Skip link</h2>
   
-  <p class="font-lead">Et "skip link" er et skjult link, lavet til brugere, der anvender keyboard til at navigere med. Skip linket gør det muligt, at springe menuer over og hoppe direkte til indholdet på siden.</p>
-<p>Et skip link bør være det første element på siden som rammes af tabulatoren. Ved aktivering af skip linket flyttes fokus til indholdet på siden.</p>
-<div class="component-preview  component-preview-skiplink" aria-label="">
+    <p class="font-lead">Et "skip link" er et skjult link, lavet til brugere, der anvender keyboard til at navigere med. Skip linket gør det muligt, at springe menuer over og hoppe direkte til indholdet på siden.</p>
+  
+  
+  <div class="component-preview  component-preview-skiplink" aria-label="Eksempel på Skip link">
     <div class="container">
     <p>For at se skip link, klik på denne tekst og tryk derefter på
         tab-tasten.</p>
@@ -2679,7 +2625,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-skiplink">Kode</button>
   <div id="code-skiplink" class="accordion-content">
@@ -2698,24 +2644,22 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="skipnav-docs-tech">
-    Implementering
-  </button>
-  <div id="skipnav-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>Skip link <code>a</code> elementet indsættes umiddelbart lige efter <code>&lt;body&gt;</code>. Elementet skal være det første element, der kommer i fokus på siden ved brug af tabulator.</p>
-    <p>Skip link gør brug af anchor link <code>#main-content</code>, man skal derfor huske at sætte <code>id="main-content"</code> på det element, der omkranser indholdet på siden.</p>
-  </div>
-</div>
+  
+  <h3 id="implementering">Implementering</h3>
+
+<p>Skip link <code class="highlighter-rouge">a</code> elementet indsættes umiddelbart lige efter <code class="highlighter-rouge">&lt;body&gt;</code>. Elementet skal være det første element, der kommer i fokus på siden ved brug af tabulator.</p>
+
+<p>Skip link gør brug af anchor link <code class="highlighter-rouge">#main-content</code>, man skal derfor huske at sætte <code class="highlighter-rouge">id="main-content"</code> på det element, der omkranser indholdet på siden.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/700-lists">
   <h2 id="lister">Lister</h2>
   
-  <p class="font-lead">Lister bruges til at organisere information, så det giver brugeren overblik.</p>
-
-<div class="component-preview preview-lists component-preview-lists" aria-label="">
+    <p class="font-lead">Lister bruges til at organisere information, så det giver brugeren overblik.</p>
+  
+  
+  <div class="component-preview  component-preview-lists" aria-label="Eksempel på lister">
     <div class="container">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -2773,7 +2717,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-lists">Kode</button>
   <div id="code-lists" class="accordion-content">
@@ -2840,50 +2784,47 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="lists-docs-tech">
-    Implementering
-  </button>
-  <div id="lists-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>For at lave en liste uden styling kan du enten benytte klassen <code>unstyled-list</code> eller et mixin <code>@include unstyled-list;</code>.</p>
-    <p>For at lave en liste uden bullets, hvor man bibeholder afstanden, kan du enten benytte klassen <code>nobullet-list</code> eller et mixin <code>@include nobullet-list;</code>.</p>
-  </div>
-</div>
+  
+  <h3 id="implementering">Implementering</h3>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typolists-docs">
-    Retningslinjer
-  </button>
-  <div id="typolists-docs" aria-hidden="false" class="accordion-content">
-      <section>   
-        <h3 class="h4">Anvendes til</h3>
-        <ul>
-            <li>Brug lister, når du skal liste ord eller sætninger op.</li>
-            <li>Brug lister til at give brugeren et hurtigt overblik.</li>
-        </ul>
-        <h3 class="h4">Anvendes ikke til</h3>
-        <ul>
-            <li>Lister af lange afsnit med forklarende tekst. Brug mellemrum i stedet.</li>
-        </ul>
-        <h3 class="h4">Vejledning</h3>
-        <ul>
-            <li>Hold listerne så korte og faktuelle som muligt.</li>
-            <li>Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
-            <li>Ved brug af tal, hold da listen til så få niveauer som muligt - og hvis muligt under 3 niveauer.</li>
-            <li>Brug punkter, når der ikke er et hierarki i informationerne.</li>
-        </ul>
-      </section>
-  </div>
-</div>
+<p>For at lave en liste uden styling kan du enten benytte klassen <code class="highlighter-rouge">unstyled-list</code> eller et mixin <code class="highlighter-rouge">@include unstyled-list;</code>.</p>
+
+<p>For at lave en liste uden bullets, hvor man bibeholder afstanden, kan du enten benytte klassen <code class="highlighter-rouge">nobullet-list</code> eller et mixin <code class="highlighter-rouge">@include nobullet-list;</code>.</p>
+
+<h3 id="retningslinjer">Retningslinjer</h3>
+
+<h4 id="anvendes-til">Anvendes til</h4>
+
+<ul>
+  <li>Brug lister, når du skal liste ord eller sætninger op.</li>
+  <li>Brug lister til at give brugeren et hurtigt overblik.</li>
+</ul>
+
+<h4 id="anvendes-ikke-til">Anvendes ikke til</h4>
+
+<ul>
+  <li>Lister af lange afsnit med forklarende tekst. Brug mellemrum i stedet.</li>
+</ul>
+
+<h4 id="vejledning">Vejledning</h4>
+
+<ul>
+  <li>Hold listerne så korte og faktuelle som muligt.</li>
+  <li>Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
+  <li>Ved brug af tal, hold da listen til så få niveauer som muligt - og hvis muligt under 3 niveauer.</li>
+  <li>Brug punkter, når der ikke er et hierarki i informationerne.</li>
+</ul>
+
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/800-displaytext">
   <h2 id="stor-tekst-display-text">Stor tekst (display text)</h2>
   
-  <p class="font-lead">Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord. </p>
-
-<div class="component-preview  component-preview-displaytext" aria-label="">
+    <p class="font-lead">Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord.</p>
+  
+  
+  <div class="component-preview  component-preview-displaytext" aria-label="">
     <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
@@ -2920,7 +2861,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-displaytext">Kode</button>
   <div id="code-displaytext" class="accordion-content">
@@ -2966,36 +2907,34 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typodisplay-docs">
-    Retningslinjer
-  </button>
-  <div id="typodisplay-docs" aria-hidden="false" class="accordion-content">
-      <section>   
-        <h3 class="h4">Anvendes til</h3>
-        <ul>
-            <li>At fremhæve tal eller ord i særlig grad.</li>
-        </ul>
-        <h3 class="h4">Anvendes ikke til</h3>
-        <ul>
-            <li>Afsnit af tekst</li>
-            <li>Alle tal i en beregning</li>
-            <li>Overskrifter</li>
-        </ul>
-        <h3 class="h4">Vejledning</h3>
-        <p>Brug kun stor tekst i meget begrænset omfang og til nøje udvalgte kommunikative formål.</p>
-      </section>
-  </div>
-</div>
+  
+  <h3 id="retningslinjer">Retningslinjer</h3>
+
+<h4 id="anvendes-til">Anvendes til</h4>
+
+<p>At fremhæve tal eller ord i særlig grad.</p>
+
+<h4 id="anvendes-ikke-til">Anvendes ikke til</h4>
+
+<ul>
+  <li>Afsnit af tekst</li>
+  <li>Alle tal i en beregning</li>
+  <li>Overskrifter</li>
+</ul>
+
+<h4 id="vejledning">Vejledning</h4>
+
+<p>Brug kun stor tekst i meget begrænset omfang og til nøje udvalgte kommunikative formål.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/1000-helptext">
   <h2 id="hjælpetekst-og-fejlbeskeder">Hjælpetekst og fejlbeskeder</h2>
   
-  <p class="font-lead">Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlbeskeder.</p>
-
-<div class="component-preview  component-preview-helptext" aria-label="">
+    <p class="font-lead">Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlbeskeder.</p>
+  
+  
+  <div class="component-preview  component-preview-helptext" aria-label="">
     <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
@@ -3029,7 +2968,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-helptext">Kode</button>
   <div id="code-helptext" class="accordion-content">
@@ -3076,36 +3015,39 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="helptext-docs-tech">
-    Retningslinjer
-  </button>
-  <div id="helptext-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>Hjælpetekst og fejltekst knytter sig i udpræget grad til formularer. Du kan også anvende dem, hvor der er behov for at hjælpe brugeren med forklaring af et element eller at give feedback på et element.</p>
-    <h2 class="h4">Hjælpetekst</h2>
-    <p>Nogle gange er det nødvendigt at forklare eller eksemplificere en feltoverskrift. Her kan du anvende hjælpetekst. Du kan også bruge hjælpetekst til at forklare, hvorfor du efterspørger særligt følsomme oplysninger. Fx hvis det kan være en barriere for at få et svar fra brugeren.</p>
-    <ul><li>Brug hjælpetekst til at give uddybende forklaring (fx til at understøtte feltoverskrifter).</li></ul>
-    <h2 class="h4">Fejlbesked</h2>
-    <p>Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder særligt, når noget fejler og fejltekst er et helt centralt element for formularer. Sørg derfor for, at de er knivskarpe og præcist kommunikerer, hvad fejlen består i, og hvad brugeren skal gøre for at komme videre. Skriv så vidt muligt fejlbesked og vejledning i én og samme sætning.</p>
-    <ul>
-        <li>Skriv klar og præcis fejltekst i et sprog, som brugeren forstår.</li>
-        <li>Vær høflig (“Indtast venligst din adresse”) og vær ikke anklagende (“Du mangler at indtaste din adresse”). Hjælp brugeren med at løse fejlen.</li>
-        <li>Skriv ikke tekniske eller fagligt tunge fejltekster og brug ikke “jargon”.</li>
-        <li>Placer fejlteksten dér, hvor fejlen forekommer.</li>
-        <li>Fejltekst er som udgangspunkt rød. I formulerer skal du indikere fejltekst med en rød streg. Andre steder end i formularer skal du indikere fejltekst med et fejlikon.</li>
-    </ul>
-    <p><a href="https://www.nngroup.com/articles/errors-forms-design-guidelines/" class="icon-link">Ti gode råd vedrørende fejlbeskeder i formularer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
-  </div>
-</div>
+  
+  <h3 id="retningslinjer">Retningslinjer</h3>
+
+<p>Hjælpetekst og fejltekst knytter sig i udpræget grad til formularer. Du kan også anvende dem, hvor der er behov for at hjælpe brugeren med forklaring af et element eller at give feedback på et element.</p>
+
+<h4 id="hjælpetekst">Hjælpetekst</h4>
+<p>Nogle gange er det nødvendigt at forklare eller eksemplificere en feltoverskrift. Her kan du anvende hjælpetekst. Du kan også bruge hjælpetekst til at forklare, hvorfor du efterspørger særligt følsomme oplysninger. Fx hvis det kan være en barriere for at få et svar fra brugeren.&lt;/p&gt;</p>
+
+<p>Brug hjælpetekst til at give uddybende forklaring (fx til at understøtte feltoverskrifter).</p>
+
+<h4 id="fejlbesked">Fejlbesked</h4>
+
+<p>Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder særligt, når noget fejler og fejltekst er et helt centralt element for formularer. Sørg derfor for, at de er knivskarpe og præcist kommunikerer, hvad fejlen består i, og hvad brugeren skal gøre for at komme videre. Skriv så vidt muligt fejlbesked og vejledning i én og samme sætning.</p>
+
+<ul>
+  <li>Skriv klar og præcis fejltekst i et sprog, som brugeren forstår.</li>
+  <li>Vær høflig (“Indtast venligst din adresse”) og vær ikke anklagende (“Du mangler at indtaste din adresse”). Hjælp brugeren med at løse fejlen.</li>
+  <li>Skriv ikke tekniske eller fagligt tunge fejltekster og brug ikke “jargon”.</li>
+  <li>Placer fejlteksten dér, hvor fejlen forekommer.</li>
+  <li>Fejltekst er som udgangspunkt rød. I formulerer skal du indikere fejltekst med en rød streg. Andre steder end i formularer skal du indikere fejltekst med et fejlikon.</li>
+</ul>
+
+<p><a href="https://www.nngroup.com/articles/errors-forms-design-guidelines/" class="icon-link">Ti gode råd vedrørende fejlbeskeder i formularer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/1100-line-length">
   <h2 id="linjelængde">Linjelængde</h2>
   
-  <p class="font-lead">For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.</p>
-
-<div class="component-preview  component-preview-line-length" aria-label="">
+    <p class="font-lead">For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.</p>
+  
+  
+  <div class="component-preview  component-preview-line-length" aria-label="">
     <div class="container">
     <div class="row">
         <div class="col-12">
@@ -3132,7 +3074,7 @@
 </div>
 </div>
 
-<div class="accordion accordion-bordered code-sample">
+  <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-line_length">Kode</button>
   <div id="code-line_length" class="accordion-content">
@@ -3168,62 +3110,30 @@
   </div>
 </div>
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="linelength-docs-tech">
-    Implementering
-  </button>
-  <div id="linelength-docs-tech" aria-hidden="true" class="accordion-content">
-   <p>Alle tekstelementer her automatisk en max-bredde på 75 karakterer.</p>
-   <p>Bredden er styret af variablen <code>$text-max-width</code> i <code>src/stylesheets/core/_variables.scss</code>.</p>
-  </div>
-</div>
+  
+  <h3 id="implementering">Implementering</h3>
+
+<p>Alle tekstelementer her automatisk en max-bredde på 75 karakterer.</p>
+
+<p>Bredden er styret af variablen <code class="highlighter-rouge">$text-max-width</code> i <code class="highlighter-rouge">src/stylesheets/core/_variables.scss</code>.</p>
 
 </section>
 
 <section class="styleguide-child-container content" id="section-/design/typography/1200-line-spacing">
   <h2 id="linjeafstand">Linjeafstand</h2>
   
-  <p class="font-lead">Linjeafstanden er baseret på teksttypernes linjehøjde.</p>
+    <p class="font-lead">Linjeafstanden er baseret på teksttypernes linjehøjde.</p>
+  
+  
+  
+<div class="component-preview ">
 
-<div class="component-preview  component-preview-line-spacing" aria-label="">
-    <div class="container">
-    <div class="row">
-        <div class="col-12">
-            <p class="h1">Sidetitel</p>
-            <p class="font-lead">Lead tekst Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
 
-            <h2>Sektionsoverskrift</h2>
-
-            <h3>Underoverskrift</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. </p>
-
-            <h4>Underoverskrift</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. </p>
-
-            <h5>Under-underoverskrift</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-        </div>
-    </div>
+    <iframe class="preview-iframe" title="Eksempel" src="/preview-components/line_spacing"></iframe>
 </div>
-</div>
-
 <div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-line_spacing">Kode</button>

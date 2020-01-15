@@ -19,6 +19,9 @@
 <meta property="og:title" content="Lister | Det Fælles Designsystem">
 
 
+<meta name="description" content="Lister bruges til at organisere information, så det giver brugeren overblik.">
+<meta property="og:description" content="Lister bruges til at organisere information, så det giver brugeren overblik.">
+
 
 
 
@@ -1396,169 +1399,39 @@
           </p>
           <h1 id="lister">Lister</h1>
           
+            <p class="font-lead">Lister bruges til at organisere information, så det giver brugeren overblik.</p>
+          
 
-          <p class="font-lead">Lister bruges til at organisere information, så det giver brugeren overblik.</p>
+          <h3 id="implementering">Implementering</h3>
 
-<div class="component-preview preview-lists component-preview-lists" aria-label="">
-    <div class="container">
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-            <p class="h4">Unordered list</p>
-            <ul>
+<p>For at lave en liste uden styling kan du enten benytte klassen <code class="highlighter-rouge">unstyled-list</code> eller et mixin <code class="highlighter-rouge">@include unstyled-list;</code>.</p>
 
-                <li>Unordered list</li>
+<p>For at lave en liste uden bullets, hvor man bibeholder afstanden, kan du enten benytte klassen <code class="highlighter-rouge">nobullet-list</code> eller et mixin <code class="highlighter-rouge">@include nobullet-list;</code>.</p>
 
-                <li>Unordered list</li>
+<h3 id="retningslinjer">Retningslinjer</h3>
 
-                <li>Unordered list</li>
+<h4 id="anvendes-til">Anvendes til</h4>
 
-                <li>Unordered list<ul class="sub_list">
+<ul>
+  <li>Brug lister, når du skal liste ord eller sætninger op.</li>
+  <li>Brug lister til at give brugeren et hurtigt overblik.</li>
+</ul>
 
-                        <li>Unordered list</li>
+<h4 id="anvendes-ikke-til">Anvendes ikke til</h4>
 
-                        <li>Unordered list</li>
+<ul>
+  <li>Lister af lange afsnit med forklarende tekst. Brug mellemrum i stedet.</li>
+</ul>
 
-                        <li>Unordered list<ul class="sub_list">
+<h4 id="vejledning">Vejledning</h4>
 
-                                <li>Unordered list</li>
+<ul>
+  <li>Hold listerne så korte og faktuelle som muligt.</li>
+  <li>Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
+  <li>Ved brug af tal, hold da listen til så få niveauer som muligt - og hvis muligt under 3 niveauer.</li>
+  <li>Brug punkter, når der ikke er et hierarki i informationerne.</li>
+</ul>
 
-                                <li>Unordered list</li>
-
-                                <li>Unordered list</li>
-
-                            </ul>
-                        </li>
-
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-            <p class="h4">Ordered list</p>
-            <ol>
-                <li>Ordered list</li>
-                <li>Ordered list</li>
-                <li>Ordered list</li>
-                <li>Ordered list<ol class="sub_list" type="a">
-                        <li>Ordered list</li>
-                        <li>Ordered list</li>
-                        <li>Ordered list<ol class="sub_list" type="i">
-                                <li>Ordered list</li>
-                                <li>Ordered list</li>
-                                <li>Ordered list</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </li>
-            </ol>
-        </div>
-    </div>
-</div>
-</div>
-
-<div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-lists">Kode</button>
-  <div id="code-lists" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Unordered list<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;ul&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sub_list"</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;/li&gt;</span>
-
-                        <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;/li&gt;</span>
-
-                        <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sub_list"</span><span class="nt">&gt;</span>
-
-                                <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;/li&gt;</span>
-
-                                <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;/li&gt;</span>
-
-                                <span class="nt">&lt;li&gt;</span>Unordered list<span class="nt">&lt;/li&gt;</span>
-
-                            <span class="nt">&lt;/ul&gt;</span>
-                        <span class="nt">&lt;/li&gt;</span>
-
-                    <span class="nt">&lt;/ul&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;/ul&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Ordered list<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;ol&gt;</span>
-                <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"sub_list"</span> <span class="na">type=</span><span class="s">"a"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;/li&gt;</span>
-                        <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;/li&gt;</span>
-                        <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"sub_list"</span> <span class="na">type=</span><span class="s">"i"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;/li&gt;</span>
-                                <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;/li&gt;</span>
-                                <span class="nt">&lt;li&gt;</span>Ordered list<span class="nt">&lt;/li&gt;</span>
-                            <span class="nt">&lt;/ol&gt;</span>
-                        <span class="nt">&lt;/li&gt;</span>
-                    <span class="nt">&lt;/ol&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;/ol&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="lists-docs-tech">
-    Implementering
-  </button>
-  <div id="lists-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>For at lave en liste uden styling kan du enten benytte klassen <code>unstyled-list</code> eller et mixin <code>@include unstyled-list;</code>.</p>
-    <p>For at lave en liste uden bullets, hvor man bibeholder afstanden, kan du enten benytte klassen <code>nobullet-list</code> eller et mixin <code>@include nobullet-list;</code>.</p>
-  </div>
-</div>
-
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typolists-docs">
-    Retningslinjer
-  </button>
-  <div id="typolists-docs" aria-hidden="false" class="accordion-content">
-      <section>   
-        <h3 class="h4">Anvendes til</h3>
-        <ul>
-            <li>Brug lister, når du skal liste ord eller sætninger op.</li>
-            <li>Brug lister til at give brugeren et hurtigt overblik.</li>
-        </ul>
-        <h3 class="h4">Anvendes ikke til</h3>
-        <ul>
-            <li>Lister af lange afsnit med forklarende tekst. Brug mellemrum i stedet.</li>
-        </ul>
-        <h3 class="h4">Vejledning</h3>
-        <ul>
-            <li>Hold listerne så korte og faktuelle som muligt.</li>
-            <li>Brug tal i listerne, når der er et hierarki i det, du præsenterer.</li>
-            <li>Ved brug af tal, hold da listen til så få niveauer som muligt - og hvis muligt under 3 niveauer.</li>
-            <li>Brug punkter, når der ikke er et hierarki i informationerne.</li>
-        </ul>
-      </section>
-  </div>
-</div>
 
 
       </section>
