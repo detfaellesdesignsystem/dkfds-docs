@@ -19,6 +19,9 @@
 <meta property="og:title" content="Linjelængde | Det Fælles Designsystem">
 
 
+<meta name="description" content="For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.">
+<meta property="og:description" content="For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.">
+
 
 
 
@@ -1396,81 +1399,14 @@
           </p>
           <h1 id="linjelængde">Linjelængde</h1>
           
+            <p class="font-lead">For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.</p>
+          
 
-          <p class="font-lead">For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.</p>
+          <h3 id="implementering">Implementering</h3>
 
-<div class="component-preview  component-preview-line-length" aria-label="">
-    <div class="container">
-    <div class="row">
-        <div class="col-12">
-            <p class="h5">Linjelængde for brødtekst (p) - Desktop</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p class="demo-typesetting">Svarer til ca 75 tegn på desktop.
-            </p>
+<p>Alle tekstelementer her automatisk en max-bredde på 75 karakterer.</p>
 
-            <p class="h5">Linjelængde for manchettekst (font-lead)-
-                Desktop</p>
-            <p class="font-lead">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. </p>
-            <p class="font-lead demo-typesetting">Svarer til ca 75 tegn på
-                desktop.</p>
-        </div>
-    </div>
-</div>
-</div>
-
-<div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-line_length">Kode</button>
-  <div id="code-line_length" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Linjelængde for brødtekst (p) - Desktop<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            <span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"demo-typesetting"</span><span class="nt">&gt;</span>Svarer til ca 75 tegn på desktop.
-            <span class="nt">&lt;/p&gt;</span>
-
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Linjelængde for manchettekst (font-lead)-
-                Desktop<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. <span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead demo-typesetting"</span><span class="nt">&gt;</span>Svarer til ca 75 tegn på
-                desktop.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="linelength-docs-tech">
-    Implementering
-  </button>
-  <div id="linelength-docs-tech" aria-hidden="true" class="accordion-content">
-   <p>Alle tekstelementer her automatisk en max-bredde på 75 karakterer.</p>
-   <p>Bredden er styret af variablen <code>$text-max-width</code> i <code>src/stylesheets/core/_variables.scss</code>.</p>
-  </div>
-</div>
+<p>Bredden er styret af variablen <code class="highlighter-rouge">$text-max-width</code> i <code class="highlighter-rouge">src/stylesheets/core/_variables.scss</code>.</p>
 
 
       </section>
