@@ -1397,234 +1397,75 @@
           <h1 id="feltbredde">Feltbredde</h1>
           
 
-          <div class="component-preview  component-preview-text-input-width" aria-label="Eksempel på feltbredder">
-    <div class="container">
-    <h1 class="h4">Input bredde med rem</h1>
+          <h3 id="implementering">Implementering</h3>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-xxs">Inputfelt med
-            klassen input-width-xxs (8rem)</label>
-        <input class="form-input input-width-xxs" id="input-type-text-xxs" name="input-type-text-xxs" type="text" />
-    </div>
+<h4 id="inputfelt-bredde-med-rem">Inputfelt: Bredde med rem</h4>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-xs">Inputfelt med
-            klassen input-width-xs (16rem)</label>
-        <input class="form-input input-width-xs" id="input-type-text-xs" name="input-type-text-xs" type="text" />
-    </div>
+<p>Inputfelter har en standard bredde på 32rem, for at ændre bredden på inputfelter bruges nedenstående klasser:</p>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-s">Inputfelt med
-            klassen input-width-s (24rem)</label>
-        <input class="form-input input-width-s" id="input-type-text-s" name="input-type-text-s" type="text" />
-    </div>
+<ul>
+  <li><code class="highlighter-rouge">.input-width-xxs</code> har en bredde på 8rem</li>
+  <li><code class="highlighter-rouge">.input-width-xs</code> har en bredde på 16rem</li>
+  <li><code class="highlighter-rouge">.input-width-s</code> har en bredde på 24rem</li>
+  <li><code class="highlighter-rouge">.input-width-m</code> har en bredde på 32rem</li>
+  <li><code class="highlighter-rouge">.input-width-l</code> har en bredde på 40rem</li>
+  <li><code class="highlighter-rouge">.input-width-xl</code> har en bredde på 48rem</li>
+</ul>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-m">Inputfelt med
-            klassen input-width-m (32rem)</label>
-        <input class="form-input input-width-m" id="input-type-text-m" name="input-type-text-m" type="text" />
-    </div>
+<h4 id="inputfelt-bredde-med-tegn">Inputfelt: Bredde med tegn</h4>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-l">Inputfelt med
-            klassen input-width-l (40rem)</label>
-        <input class="form-input input-width-l" id="input-type-text-l" name="input-type-text-l" type="text" />
-    </div>
+<p>For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:</p>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-xl">Inputfelt med
-            klassen input-width-xl (48rem)</label>
-        <input class="form-input input-width-xl" id="input-type-text-xl" name="input-type-text-xl" type="text" />
-    </div>
+<ul>
+  <li><code class="highlighter-rouge">.input-char-4</code> har en bredde der passer til 4 tegn</li>
+  <li><code class="highlighter-rouge">.input-char-8</code> har en bredde der passer til 8 tegn</li>
+  <li><code class="highlighter-rouge">.input-char-11</code> har en bredde der passer til 11 tegn</li>
+  <li><code class="highlighter-rouge">.input-char-27</code> har en bredde der passer til 27 tegn</li>
+</ul>
 
-</div>
+<p>For at tilføje flere input bredder, der er styret af tegn, skal der tilføjes en ny klasse, hvor det nye tal skal erstattes med X.</p>
 
-<div class="container">
-    <h1 class="h4 mt-7">Input bredde med tegn</h1>
+<ul>
+  <li><code class="highlighter-rouge">.input-char-X { max-width: calc(2px + 16px + 16px + Xch); }</code></li>
+</ul>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-char-4">Inputfelt
-            med klassen input-char-4 (4 tegn)</label>
-        <input class="form-input input-char-4" id="input-type-text-char-4" name="input-type-text-char-4" type="text" />
-    </div>
+<h4 id="validering">Validering</h4>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-char-8">Inputfelt
-            med klassen input-char-8 (8 tegn)</label>
-        <input class="form-input input-char-8" id="input-type-text-char-8" name="input-type-text-char-8" type="text" />
-    </div>
+<p>Vi anbefaler at der laves validering på inputfelter. Nedenfor ses et eksempel på validering af en e-mail, samt validering af et felt der kun må indeholde tal.</p>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-char-11">Inputfelt
-            med klassen input-char-11 (11 tegn)</label>
-        <input class="form-input input-char-11" id="input-type-text-char-11" name="input-type-text-char-11" type="text" />
-    </div>
+<h5 id="felt-med-email-validering">Felt med email validering</h5>
 
-    <div class="form-group">
-        <label class="form-label " for="input-type-text-char-27">Inputfelt
-            med klassen input-char-27 (27 tegn)</label>
-        <input class="form-input input-char-27" id="input-type-text-char-27" name="input-type-text-char-27" type="text" />
-    </div>
+<ul>
+  <li><code class="highlighter-rouge">&amp;lt;input type="email" pattern="/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/"&amp;gt;</code></li>
+</ul>
 
-</div>
-</div>
+<h5 id="felt-med-kun-tal-validering">Felt med kun tal validering</h5>
 
-<div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-text-input-width">Kode</button>
-  <div id="code-text-input-width" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Input bredde med rem<span class="nt">&lt;/h1&gt;</span>
+<ul>
+  <li><code class="highlighter-rouge">&amp;lt;input type="number" pattern="[0-9]"&amp;gt;</code></li>
+</ul>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-xxs"</span><span class="nt">&gt;</span>Inputfelt med
-            klassen input-width-xxs (8rem)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xxs"</span> <span class="na">id=</span><span class="s">"input-type-text-xxs"</span>
-            <span class="na">name=</span><span class="s">"input-type-text-xxs"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<h3 id="retningslinjer">Retningslinjer</h3>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-xs"</span><span class="nt">&gt;</span>Inputfelt med
-            klassen input-width-xs (16rem)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xs"</span> <span class="na">id=</span><span class="s">"input-type-text-xs"</span>
-            <span class="na">name=</span><span class="s">"input-type-text-xs"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<h4 id="tilgængelighed">Tilgængelighed</h4>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-s"</span><span class="nt">&gt;</span>Inputfelt med
-            klassen input-width-s (24rem)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-s"</span> <span class="na">id=</span><span class="s">"input-type-text-s"</span>
-            <span class="na">name=</span><span class="s">"input-type-text-s"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<p>Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.</p>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-m"</span><span class="nt">&gt;</span>Inputfelt med
-            klassen input-width-m (32rem)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"input-type-text-m"</span>
-            <span class="na">name=</span><span class="s">"input-type-text-m"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<h4 id="brugervenlighed">Brugervenlighed</h4>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-l"</span><span class="nt">&gt;</span>Inputfelt med
-            klassen input-width-l (40rem)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-l"</span> <span class="na">id=</span><span class="s">"input-type-text-l"</span>
-            <span class="na">name=</span><span class="s">"input-type-text-l"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<h5 id="anvendes-til">Anvendes til</h5>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-xl"</span><span class="nt">&gt;</span>Inputfelt med
-            klassen input-width-xl (48rem)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xl"</span> <span class="na">id=</span><span class="s">"input-type-text-xl"</span>
-            <span class="na">name=</span><span class="s">"input-type-text-xl"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<p>Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på 27 tegn.</p>
 
-<span class="nt">&lt;/div&gt;</span>
+<p>Brug feltbredden til at begrænse antallet af tegn i et felt.</p>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h4 mt-7"</span><span class="nt">&gt;</span>Input bredde med tegn<span class="nt">&lt;/h1&gt;</span>
+<h5 id="anvendes-ikke-til">Anvendes ikke til</h5>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-char-4"</span><span class="nt">&gt;</span>Inputfelt
-            med klassen input-char-4 (4 tegn)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-char-4"</span> <span class="na">id=</span><span class="s">"input-type-text-char-4"</span>
-            <span class="na">name=</span><span class="s">"input-type-text-char-4"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-char-8"</span><span class="nt">&gt;</span>Inputfelt
-            med klassen input-char-8 (8 tegn)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-char-8"</span> <span class="na">id=</span><span class="s">"input-type-text-char-8"</span>
-            <span class="na">name=</span><span class="s">"input-type-text-char-8"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<h5 id="vejledning">Vejledning</h5>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-char-11"</span><span class="nt">&gt;</span>Inputfelt
-            med klassen input-char-11 (11 tegn)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-char-11"</span>
-            <span class="na">id=</span><span class="s">"input-type-text-char-11"</span> <span class="na">name=</span><span class="s">"input-type-text-char-11"</span>
-            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-char-27"</span><span class="nt">&gt;</span>Inputfelt
-            med klassen input-char-27 (27 tegn)<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-char-27"</span>
-            <span class="na">id=</span><span class="s">"input-type-text-char-27"</span> <span class="na">name=</span><span class="s">"input-type-text-char-27"</span>
-            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="text-input-width">
-    Implementering
-  </button>
-  <div id="text-input-width" aria-hidden="true" class="accordion-content">
-        <section>
-            <h3 class="h4">Inputfelt: Bredde med rem</h3>   
-            <p>Inputfelter har en standard bredde på 32rem, for at ændre bredden på inputfelter bruges nedenstående klasser:</p>
-            <ul>
-              <li><code>.input-width-xxs</code> har en bredde på 8rem</li>
-              <li><code>.input-width-xs</code> har en bredde på 16rem</li>
-              <li><code>.input-width-s</code> har en bredde på 24rem</li>
-              <li><code>.input-width-m</code> har en bredde på 32rem</li>
-              <li><code>.input-width-l</code> har en bredde på 40rem</li>
-              <li><code>.input-width-xl</code> har en bredde på 48rem</li>
-            </ul>
-            <h3 class="h4">Inputfelt: Bredde med tegn</h3>
-            <p>For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:</p>
-            <ul>
-              <li><code>.input-char-4</code> har en bredde der passer til 4 tegn</li>
-              <li><code>.input-char-8</code> har en bredde der passer til 8 tegn</li>
-              <li><code>.input-char-11</code> har en bredde der passer til 11 tegn</li>
-              <li><code>.input-char-27</code> har en bredde der passer til 27 tegn</li>
-            </ul>
-              <p>For at tilføje flere input bredder, der er styret af tegn, skal der tilføjes en ny klasse, hvor det nye tal skal erstattes med X.</p>
-              <ul>
-                <li><code>.input-char-X { max-width: calc(2px + 16px + 16px + Xch); }</code></li>
-              </ul>
-            <h3 class="h4">Validering</h3>
-            <p>Vi anbefaler at der laves validering på inputfelter. Nedenfor ses et eksempel på validering af en e-mail, samt validering af et felt der kun må indeholde tal.</p>
-            <p class="h5">Felt med email validering</p>
-            <ul>
-              <li><code>&lt;input type="email" pattern="/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/"&gt;</code></li>
-            </ul>
-            <p class="h5">Felt med kun tal validering</p>
-            <ul>
-              <li><code>&lt;input type="number" pattern="[0-9]"&gt;</code></li>
-            </ul>
-        </section>
-  </div>
-</div>
-
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="text-input-width-docs">
-    Retningslinjer
-  </button>
-  <div id="text-input-width-docs" aria-hidden="false" class="accordion-content">
-      <section>
-          <h3 class="h4">Tilgængelighed</h3>
-          <p>Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.</p>
-      </section>
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <p>Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på 27 tegn.</p>
-          <p>Brug feltbredden til at begrænse antallet af tegn i et felt.</p>
-          <h4 class="h5">Anvendes ikke til</h4>
-          <p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
-          <h4 class="h5">Vejledning</h4>
-          <p>Sæt bredden på feltet, så det svarer til den mængde information, du forventer, at brugeren indtaster. På den måde får brugeren overblik over sin indtastning.</p>
-      </section>
-  </div>
-</div>
+<p>Sæt bredden på feltet, så det svarer til den mængde information, du forventer, at brugeren indtaster. På den måde får brugeren overblik over sin indtastning.</p>
 
 
       </section>
