@@ -21,7 +21,7 @@ headingClass: mb-0
 - Accordion
 <span class="form-hint mt-0">Accordions plus og minus ikon er flyttet til starten af accordion-knappen</span>
 - Fokus farve
-<span class="form-hint mt-0">Fokus farven er ændret fra den gule farve (#febb30) til en grå farve (#747474). Farven er blevet ændret fordi den gule farve ikke overholder WCAG 2.1. Hvis man ønsker en anden fokus farve kan variablen <code>$color-focus</code> overskrives.</span>
+<span class="form-hint mt-0">Fokus farven er ændret fra den gule farve (#febb30) til en grå farve (#747474). Farven er blevet ændret fordi den gule farve ikke overholder WCAG 2.1. Hvis man ønsker en anden fokus farve kan variablen `$color-focus` overskrives.</span>
 - Radioknapper og checkbokse
     - Styling af radio knapper kræver nu denne klasse på selve `input[type=radio]`: "form-radio".
     - Styling af tjekbokse kræver nu denne klasse på selve `input[type=checkbox]`: "form-check".

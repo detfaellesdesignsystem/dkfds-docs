@@ -13,10 +13,10 @@ subnav:
 - text: Sidenavigation med information
   href: '#sidenavigation-med-information'
 ---
-<p>Sidenavigation giver brugerne overblik over struktur og indhold, så de kan finde vej til det indhold, de leder efter. Navigationen kan være med eller uden information: </p>
-<ul>
-    <li>Normal sidenavigation indeholder kun en beskrivelse i overskrift af hvert niveau i hierarkiet.</li>
-    <li>Sidenavigation med information uddyber i en kort tekst, hvilket indhold brugerne kan finde på det enkelte niveau.</li>
-</ul>
+
+Sidenavigation giver brugerne overblik over struktur og indhold, så de kan finde vej til det indhold, de leder efter. Navigationen kan være med eller uden information:
+
+- Normal sidenavigation indeholder kun en beskrivelse i overskrift af hvert niveau i hierarkiet.
+- Sidenavigation med information uddyber i en kort tekst, hvilket indhold brugerne kan finde på det enkelte niveau.
 
 {% include child-components.html parent='Sidenav' %}

@@ -18,5 +18,5 @@ subnav:
   href: '#skygger'
 ---
 
-{% include child-sections.html parent='borders-shadows' %}
+{% include child-components.html parent='borders-shadows' %}
 

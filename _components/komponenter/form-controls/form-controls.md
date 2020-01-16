@@ -43,4 +43,4 @@ subnav:
     <li>Tillad copy/paste i formularelementer, hvor brugeren selv skal indtaste oplysninger.</li>
 </ul>
 
-{% include child-sections.html parent='Formcontrols' %}
+{% include child-components.html parent='Formcontrols' %}

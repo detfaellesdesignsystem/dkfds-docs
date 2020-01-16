@@ -36,26 +36,32 @@ subnav:
       </p>
   </div>
 </div>
-<ul>
-    <li>Datatables anvender bl.a. ARIA til at øge tilgængeligheden. Du skal imidlertid være opmærksom på, at en kompliceret tabel med mange rækker, kolonner og muligheder øger det kognitive load og dermed sænker den reelle tilgængelighed.</li>
-    <li>Du skal bruger- og performanceteste prototyper med Datatables med entydigt positive resultat ift din målgruppe, hvis du ønsker at anvende den.</li>
-</ul>
+
+- Datatables anvender bl.a. ARIA til at øge tilgængeligheden. Du skal imidlertid være opmærksom på, at en kompliceret tabel med mange rækker, kolonner og muligheder øger det kognitive load og dermed sænker den reelle tilgængelighed.
+- Du skal bruger- og performanceteste prototyper med Datatables med entydigt positive resultat ift din målgruppe, hvis du ønsker at anvende den.
 
 <h2 class="h4">Brugervenlighed</h2>
 <h3 class="h5">Anvendes til</h3>
-<p>Avancerede tabeller med behov for at tilknytte udvidet interaktion som fx søgning og editering af felt-indhold.</p>
+
+Avancerede tabeller med behov for at tilknytte udvidet interaktion som fx søgning og editering af felt-indhold.
+
 <h3 class="h5">Anvendes ikke til</h3>
-<p>Simple søgeresultater eller oversigter.</p>
+
+Simple søgeresultater eller oversigter.
+
 <h3 class="h5">Vejledning</h3>                
-<ul>
-    <li>Datatables er en stor og kompleks funktion, der kun bør anvendes til afgrænsede og klart definerede målgrupper og kun i begrænset omfang. </li>
-    <li>Før du implementerer Datatables bør du overveje, om den ekstra funktionalitet er nødvendig eller blot en nice-to-have. </li>
-    <li>Overvej om behovet kan løses ved enten en anden præsentation af data eller funktion.</li>
-    <li>Datatables er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.</li>
-</ul>
+
+- Datatables er en stor og kompleks funktion, der kun bør anvendes til afgrænsede og klart definerede målgrupper og kun i begrænset omfang.
+- Før du implementerer Datatables bør du overveje, om den ekstra funktionalitet er nødvendig eller blot en nice-to-have.
+- Overvej om behovet kan løses ved enten en anden præsentation af data eller funktion.
+- Datatables er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.
 
 <h2 class="h4">Implementering</h2>
-<p>Datatables fejler på tilgængelig, når det kommer til disabled pagineringsknapper. For at gøre paginering tilgængeligt skal der tilføjes attributten <code>aria-disabled="true"</code> på knapper, som er disabled.</p>
-<p>Se evt. hvordan vi har gjort det i vores eksempler i JavaScript filen <code>assets/js/dkfds-datatables-example.js</code>.</p>
-<p>Se hvordan vi har implementeret Datatables i JavaScript her: <a href="https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/datatables/js/dkfds-datatables-example.js" class="icon-link">https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/datatables/js/dkfds-datatables-example.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
+
+Datatables fejler på tilgængelig, når det kommer til disabled pagineringsknapper. For at gøre paginering tilgængeligt skal der tilføjes attributten `aria-disabled="true"` på knapper, som er disabled.
+
+Se evt. hvordan vi har gjort det i vores eksempler i JavaScript filen `assets/js/dkfds-datatables-example.js`.
+
+Se hvordan vi har implementeret Datatables i JavaScript her: <a href="https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/datatables/js/dkfds-datatables-example.js" class="icon-link">https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/datatables/js/dkfds-datatables-example.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+
 {% include child-sections.html parent='Datatables' %}

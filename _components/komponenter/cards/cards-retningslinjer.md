@@ -31,7 +31,7 @@ Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens 
 
 ## Implementering
 
-Alle cards har en <code>card</code> class.
+Alle cards har en `card` class.
 
 Sæt card til fuld højde ved at tilføje klassen `card-align-height`.
         
@@ -41,27 +41,27 @@ Hvert område er beskrevet nedenfor.
 
 <h3 class="h4">Header</h3>
 
-Headeren har en <code>.card-header</code> class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.
+Headeren har en `.card-header` class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.
 
 - `.header-titel`
 - `.subheader`
 
 <h3 class="h4">Tekstområde</h3>
 
-Tekstområdet har en <code>.card-text</code> class, og indeholder brødtekst, som har en class.
+Tekstområdet har en `.card-text` class, og indeholder brødtekst, som har en class.
 
 - `.text`
 
 <h3 class="h4">Indholdsområde</h3>
 
-Indholdsområdet har en <code>card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class. .card-content har en stribet baggrundsfarve. Denne baggrundsfarve er midlertidig og bliver kun vist for at indikere indholdsområdet. Du kan se, hvilke andre baggrundsfarver der kan bruges, under "Baggrundsfarver" og "Hjælpefunktioner" i sidenavigationen. Det er også muligt at tilføje andre farver.
+Indholdsområdet har en `card-content` class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class. .card-content har en stribet baggrundsfarve. Denne baggrundsfarve er midlertidig og bliver kun vist for at indikere indholdsområdet. Du kan se, hvilke andre baggrundsfarver der kan bruges, under "Baggrundsfarver" og "Hjælpefunktioner" i sidenavigationen. Det er også muligt at tilføje andre farver.
  
 - `.content-text`
 - `.content`
 
 <h3 class="h4">Aktionsområde</h3>
 
-Aktionsområdet har en <code>card-action</code> class og kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.
+Aktionsområdet har en `card-action` class og kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.
 
 - `.action-content`
 - `.action-buttons`

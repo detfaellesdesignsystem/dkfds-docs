@@ -40,7 +40,7 @@ Ved at bruge disse enkle principper for kode skaber du det bedste resultat for b
 - Tænk modulært, dvs. lav en struktur af de elementer, du har brug for, og brug kun dem.
 - Gennemgå altid koden med en kollega for at sikre, at din kode er brugbar.
 - Brug formaliserede testmetoder, så du tester koden metodisk og i samme omfang hver gang.
-- Anvend WHATWG til HTML reference og W3C til CSS reference og til at sikre kodens validitet gennem <a href="https://checker.html5.org" class="icon-link">Nu Html Checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://jigsaw.w3.org/css-validator/" class="icon-link">CSS Validation Service<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+- Anvend WHATWG til HTML reference og W3C til CSS reference og til at sikre kodens validitet gennem <a href="https://validator.w3.org/" class="icon-link">W3Cs Markup Validation Service<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://jigsaw.w3.org/css-validator/" class="icon-link">CSS Validation Service<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 - Undgå unødigt kompliceret funktionalitet.
 - Indlæs kun biblioteker (fx jQuery), hvis du skal bruge dem.
 - Anvend eksempelkoden i designsystemet som reference for den aktuelle løsning.

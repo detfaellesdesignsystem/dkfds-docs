@@ -68,7 +68,7 @@ import * as DKFDS from "dkfds";
 
 <h5 class="h6">Init</h5>
 
-Når DKFDS er inkluderet skal du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.
+Når DKFDS er inkluderet skal du køre funktionen `DKFDS.init();` ved dom ready, eller hvornår det nu end passer i dit projekt.
 
 <p class="mb-2">Eksempel:</p>
 
@@ -138,7 +138,7 @@ Disse browsers bør defineres i autoprefixer:
 
 #### Fix for bug i Microsoft Edge og Internet Explorer
 
-En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i <code>head</code> sektionen.
+En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i `head` sektionen.
 
 ```shell
   <style>

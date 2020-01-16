@@ -2,46 +2,35 @@
 title: Textarea
 parent: Formcontrols
 order: 03
-lead: 
+component: text-area
+componentTitle: Eksempel på tekstområde
 ---
+### Implementering
+  
+Sæt højden på et textarea ved brug af `rows` attributten.
 
-{% include code/preview.html component="text-area" title="Eksempel på tekstområde"  %}
-{% include code/accordion.html component="text-area" %}
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="text-area-tech">
-    Implementering
-  </button>
-  <div id="text-area-tech" aria-hidden="true" class="accordion-content">
-    <p>Sæt højden på et textarea ved brug af <code>rows</code> attributten.</p>
-  </div>
-</div><div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="text-area-docs">
-    Retningslinjer
-  </button>
-  <div id="text-area-docs" aria-hidden="false" class="accordion-content">
-      <section>
-          <h3 class="h4">Tilgængelighed</h3>
-          <p>Tekstområdet bliver automatisk fremhævet, når brugeren navigerer sig hen til det ved hjælp af tabulator-tasten.</p>
-      </section>
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <ul>
-              <li>Brug tekstområder til sammenhængende (mere end 2 linjer) men ustruktureret tekst og sætninger, der har karakter af prosa. Fx en baggrundsfortælling.</li>
-              <li>Når der er behov for yderligere sammenhængende information, hvis karakter brugeren ikke kan vælge ud fra et prædefineret sæt værdier.</li>
-              <li>Når løsningen stiller et spørgsmål, der ikke kan besvares i et felt.</li>
-          </ul>
-          <h4 class="h5">Anvendes ikke til</h4>
-          <p>Brug ikke tekstområder til struktureret information, hvor datakonsistens har betydning.</p>
-          <h4 class="h5">Vejledning</h4>
-          <ul>
-              <li>Angiv tekstområdets højde, så det modsvarer den tekstmængde, du forventer, at brugeren skal indtaste.</li>
-              <li>Overvej at begrænse antallet af tegn, hvis det giver mening.</li>
-              <li>Vis kun fejlbeskeder, når brugeren har indtastet en ugyldig værdi.</li>
-              <li>Fejlbeskeder skal være meningsfulde og hjælpsomme. </li>
-              <li>Placér fejlbeskeder mellem label og felt, og markér feltet med rødt.</li>
-          </ul>
-      </section>
-  </div>
-</div>
+### Retningslinjer
+
+#### Tilgængelighed
+
+Tekstområdet bliver automatisk fremhævet, når brugeren navigerer sig hen til det ved hjælp af tabulator-tasten.
+
+#### Brugervenlighed
+
+##### Anvendes til
+
+- Brug tekstområder til sammenhængende (mere end 2 linjer) men ustruktureret tekst og sætninger, der har karakter af prosa. Fx en baggrundsfortælling.
+- Når der er behov for yderligere sammenhængende information, hvis karakter brugeren ikke kan vælge ud fra et prædefineret sæt værdier.
+- Når løsningen stiller et spørgsmål, der ikke kan besvares i et felt.
+
+##### Anvendes ikke til
+
+Brug ikke tekstområder til struktureret information, hvor datakonsistens har betydning.
+
+##### Vejledning
+
+- Angiv tekstområdets højde, så det modsvarer den tekstmængde, du forventer, at brugeren skal indtaste.
+- Overvej at begrænse antallet af tegn, hvis det giver mening.
+- Vis kun fejlbeskeder, når brugeren har indtastet en ugyldig værdi.
+- Fejlbeskeder skal være meningsfulde og hjælpsomme. 
+- Placér fejlbeskeder mellem label og felt, og markér feltet med rødt.

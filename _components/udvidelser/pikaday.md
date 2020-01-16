@@ -14,34 +14,25 @@ alerts:
 - type: error
   header: Pikaday er på nuværende tidspunkt ikke tilgængelig
   content: Pikaday er på nuværende tidspunkt ikke tilgængelig, når man har en skærmlæser kørende. Vi har oprettet en sag hos tredjepart og afventer løsning.
+component: date-input-datepicker
 ---
 
-{% include code/preview.html component="date-input-datepicker" %}
-{% include code/accordion.html component="date-input-datepicker" %}
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button"
-    aria-expanded="false" aria-controls="tech-docs">
-    Implementering
-  </button>
-  <div id="tech-docs" class="accordion-content">
-    <p>Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a></p>
-    <p>Stien til filen du skal inkludere for Pikaday er henholdsvis <code>[path-to-plugins-project]/dist/css/dkfds-pikaday-theme.standalone.min.css</code> for CSS filen og <code>~dkfds-plugins/dist/scss/dkfds-pikaday-theme</code> for SCSS filen.</p>
-    <p>Man skal dog stadig inkludere Pikadays egen CSS og JavaScript. Følg <a href="https://github.com/Pikaday/Pikaday" class="icon-link">Pikadays egen dokumentation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> for implementering af pluginnet i dit projekt.</p> 
-  </div>
-</div>
+### Implementering
 
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="guideline-docs">
-    Retningslinjer
-  </button>
-  <div id="guideline-docs" class="accordion-content">
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.</p>
-          <h4 class="h5">Anvendes ikke til</h4>
-          <p>Tidsangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/form-controls/#datoangivelse" title="">datoangivelse</a></p>
-      </section>
-  </div>
-</div>
+Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a>
+
+Stien til filen du skal inkludere for Pikaday er henholdsvis `[path-to-plugins-project]/dist/css/dkfds-pikaday-theme.standalone.min.css` for CSS filen og `~dkfds-plugins/dist/scss/dkfds-pikaday-theme` for SCSS filen.
+
+Man skal dog stadig inkludere Pikadays egen CSS og JavaScript. Følg <a href="https://github.com/Pikaday/Pikaday" class="icon-link">Pikadays egen dokumentation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> for implementering af pluginnet i dit projekt.
+ 
+### Retningslinjer
+
+#### Brugervenlighed
+
+##### Anvendes til
+
+Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.
+
+##### Anvendes ikke til
+
+Tidsangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/form-controls/#datoangivelse" title="">datoangivelse</a>

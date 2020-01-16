@@ -21,39 +21,38 @@ subnav:
   href: '#gruppering'
 ---
 <h2 class="h4">Tilgængelighed</h2>
-<ul>
-    <li>Bemærk: Multiselect dropdown-funktionen (SelectWoo) er gennemtestet af Det Fælles Designsystem og opfylder ikke alle krav til en anbefalet udvidelse. Det er dog den bedste, vi har kunnet finde indtil videre. Du skal bruger- og performanceteste prototyper med SelectWoo med entydigt positive resultat i forhold til din målgruppe, hvis du ønsker at anvende den. Det anbefales generelt, at du overvejer en anden løsning end en multiselect i din løsning.</li>
-    <li>Multiselect dropdown anvender bl.a. ARIA til at øge den umiddelbare tilgængelighed. Du skal imidlertid være opmærksom på, at en lang valgliste øger den kognitive belastning og dermed sænker den reelle tilgængelighed.</li>
-</ul>
+
+- Bemærk: Multiselect dropdown-funktionen (SelectWoo) er gennemtestet af Det Fælles Designsystem og opfylder ikke alle krav til en anbefalet udvidelse. Det er dog den bedste, vi har kunnet finde indtil videre. Du skal bruger- og performanceteste prototyper med SelectWoo med entydigt positive resultat i forhold til din målgruppe, hvis du ønsker at anvende den. Det anbefales generelt, at du overvejer en anden løsning end en multiselect i din løsning.
+- Multiselect dropdown anvender bl.a. ARIA til at øge den umiddelbare tilgængelighed. Du skal imidlertid være opmærksom på, at en lang valgliste øger den kognitive belastning og dermed sænker den reelle tilgængelighed.
+
 <h2 class="h4">Brugervenlighed</h2>
 <h3 class="h5">Anvendes til</h3>
-<p>Multiselect dropdown anvendes til at give brugeren mulighed for at fortage mere end ét valg fra en prædefineret liste.</p>
-<h3 class="h5">Anvendes ikke til</h3>
-<ul>
-    <li>Multiselect dropdown egner sig ikke til valg i lister med længere værdier.</li>
-    <li>Multiselect dropdown egner sig ikke til mobile løsninger.</li>
-</ul>
-<h3 class="h5">Vejledning</h3>                
-<ul>
-    <li>En multiselect dropdown er en avanceret funktion, der bør anvendes i meget begrænset omfang.</li>
-    <li>Overvej om du kan tilbyde en bedre og mere overskuelig løsning fx tjekbokse.</li>
-    <li>På trods af de udvidede muligheder i Select2-udvidelsen bør implementeringen holdes så enkel som muligt. </li>
-    <li>Var varsom med at ændre indholdet af næste multiselect i forhold til det forrige valg.</li>
-    <li>Begræns antallet af valgmuligheder i listen, så brugeren ikke mister overblik over sit valg.</li>
-    <li>SelectWoo er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.</li>
-    <li><a href="https://medium.com/@kollinz/dropdown-alternatives-for-better-mobile-forms-53e40d641b53" class="icon-link">Du kan læse mere om alternativer til multiselects her<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
 
-<div class="accordion accordion-bordered mt-7">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="code-documentation">
-    Implementering
-  </button>
-  <div id="code-documentation" class="accordion-content">
-   <p>Multiselect funktionaliteten bygger på biblioteket <a href="https://github.com/woocommerce/selectWoo" class="icon-link">SelectWoo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, som er en tilgængelig implementering af det populære bibliotek <a href="https://select2.org/" class="icon-link">Select2<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
-   <p>Det må antages at det er et begrænset antal selvbetjeningsløsninger som har brug for denne funktionalitet, derfor er dette bibliotek ikke inkluderet i standard javascript filen <code>dkfds.js</code>. En udvikler skal derfor selv inkludere de nødvendige filer for at få SelectWoo til at virke. Select2's <a href="https://select2.org/getting-started/installation" class="icon-link">guide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> kan bruges til opsætningen, dog skal SelectWoos javascript filer bruges i stedet for. Det er vigtigt at både javascript filer, og styling filer bliver inkluderet.</p>
-   <p>På dette designsystem.dk er multiselect funktionaliteten en del af javascript filen <code>dkfds-selectwoo-example.js</code>, denne fil har kun til formål at vise funktionaliteten på dette designsystem.dk, og skal ikke inkluderes i selve selvbetjeningsløsningen.</p>
-   <p>Eksemplet på denne side er implementeret her: <a href="https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/selectwoo/js/dkfds-selectwoo-example.js" class="icon-link">https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/selectwoo/js/dkfds-selectwoo-example.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
-  </div>
-</div>
+Multiselect dropdown anvendes til at give brugeren mulighed for at fortage mere end ét valg fra en prædefineret liste.
+
+<h3 class="h5">Anvendes ikke til</h3>
+
+- Multiselect dropdown egner sig ikke til valg i lister med længere værdier.
+- Multiselect dropdown egner sig ikke til mobile løsninger.
+
+<h3 class="h5">Vejledning</h3>
+
+- En multiselect dropdown er en avanceret funktion, der bør anvendes i meget begrænset omfang.
+- Overvej om du kan tilbyde en bedre og mere overskuelig løsning fx tjekbokse.
+- På trods af de udvidede muligheder i Select2-udvidelsen bør implementeringen holdes så enkel som muligt.
+- Var varsom med at ændre indholdet af næste multiselect i forhold til det forrige valg.
+- Begræns antallet af valgmuligheder i listen, så brugeren ikke mister overblik over sit valg.
+- SelectWoo er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.
+- <a href="https://medium.com/@kollinz/dropdown-alternatives-for-better-mobile-forms-53e40d641b53" class="icon-link">Du kan læse mere om alternativer til multiselects her<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+
+### Implementering
+
+Multiselect funktionaliteten bygger på biblioteket <a href="https://github.com/woocommerce/selectWoo" class="icon-link">SelectWoo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, som er en tilgængelig implementering af det populære bibliotek <a href="https://select2.org/" class="icon-link">Select2<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+
+Det må antages at det er et begrænset antal selvbetjeningsløsninger som har brug for denne funktionalitet, derfor er dette bibliotek ikke inkluderet i standard javascript filen `dkfds.js`. En udvikler skal derfor selv inkludere de nødvendige filer for at få SelectWoo til at virke. Select2's <a href="https://select2.org/getting-started/installation" class="icon-link">guide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> kan bruges til opsætningen, dog skal SelectWoos javascript filer bruges i stedet for. Det er vigtigt at både javascript filer, og styling filer bliver inkluderet.
+
+På dette designsystem.dk er multiselect funktionaliteten en del af javascript filen `dkfds-selectwoo-example.js`, denne fil har kun til formål at vise funktionaliteten på dette designsystem.dk, og skal ikke inkluderes i selve selvbetjeningsløsningen.
+
+Eksemplet på denne side er implementeret her: <a href="https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/selectwoo/js/dkfds-selectwoo-example.js" class="icon-link">https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/selectwoo/js/dkfds-selectwoo-example.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 
 {% include child-sections.html parent='selectwoo-multiselect' %}

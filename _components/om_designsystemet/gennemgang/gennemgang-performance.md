@@ -13,7 +13,7 @@ Dog skal du altid sikre bredest mulig understøttelse. Fravalg eller manglende u
 
 Preload indlæser en ressource asynkront, så browseren ikke skal vente på, at CSS eksempelvis skal indlæses, før den kan rendere siden.
 
-Det Fælles Designsystem anvender <code>preconnect</code> og <code>preload</code> i head-delen til preload af CSS og til fonte.
+Det Fælles Designsystem anvender `preconnect` og `preload` i head-delen til preload af CSS og til fonte.
 
 Når browseren først åbner forbindelse til en given server, og derefter laver en tidlig indlæsning af en ressource, kan den senere hurtigt beregne eksempelvis layout. Bemærk, at browseren ikke anvender ressourcerne på dette tidspunkt, men kun gør dem klar. Det kaldes også ”lazy load”.
 
@@ -25,13 +25,13 @@ Når browseren først åbner forbindelse til en given server, og derefter laver 
 
 ### Fonte
 
-Indlæsning og beregning af web-fonte kontra system-fonte kan potentielt være omkostningstungt for både leverandør og bruger. Ved at anvende <code>preconnect</code>, <code>preload</code> samt <code>font-display:swap</code> understøtter designsystemet brugerens behov for hurtig adgang til løsningens indhold.
+Indlæsning og beregning af web-fonte kontra system-fonte kan potentielt være omkostningstungt for både leverandør og bruger. Ved at anvende `preconnect`, `preload` samt `font-display:swap` understøtter designsystemet brugerens behov for hurtig adgang til løsningens indhold.
 
 IBMPlexSans-Regular er en del af den primære Font Stack, der anvendes i designsystemet. Den Fallback Font Stack, der indlæses, hvis den primære er utilgængelig, er "System". ”System” refererer til fonte fra de respektive styresystemer og anvendes af browseren indtil den primære Font Stack er indlæst.
 
-Deklarationen <code>font-display:swap</code> får browseren til at anvende en system-font -  hvis den ikke får fat i IBM Plex Sans indenfor 1/100 sekund - svarende til, at IBM Plex Sans ligger i brugerens cache. Når IBM Plex Sans er indlæst, skifter browseren sin fallback-font ud med den korrekte.
+Deklarationen `font-display:swap` får browseren til at anvende en system-font -  hvis den ikke får fat i IBM Plex Sans indenfor 1/100 sekund - svarende til, at IBM Plex Sans ligger i brugerens cache. Når IBM Plex Sans er indlæst, skifter browseren sin fallback-font ud med den korrekte.
 
-Det tager maksimalt ~3 sekunder for browseren at loade IBM Plex Sans og genberegne siden. Browserens brug af <code>font-display:swap</code> og fallback font kan dog afføde et lille blink (også kaldet FOUT), når den første side genberegnes med IBMPlexSans – derefter ligger fonten i browserens cache. Dette vurderes at være et mindre problem. Det er forventeligt, at mange brugere allerede har IBM Plex Sans liggende i deres cache, da fonten hurtigt bliver udbredt på grund af dens anvendelse på tværs af mange offentlige selvbetjeningsløsninger.
+Det tager maksimalt ~3 sekunder for browseren at loade IBM Plex Sans og genberegne siden. Browserens brug af `font-display:swap` og fallback font kan dog afføde et lille blink (også kaldet FOUT), når den første side genberegnes med IBMPlexSans – derefter ligger fonten i browserens cache. Dette vurderes at være et mindre problem. Det er forventeligt, at mange brugere allerede har IBM Plex Sans liggende i deres cache, da fonten hurtigt bliver udbredt på grund af dens anvendelse på tværs af mange offentlige selvbetjeningsløsninger.
 
 #### Bemærk
 

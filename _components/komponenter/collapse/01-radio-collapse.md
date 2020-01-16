@@ -31,7 +31,7 @@ Hvis man står i denne situation kan man definere denne komponent i JavaScript s
 new DKFDS.RadioToggleGroup(document.getElementByID('DIV-CONTAINER-ID'));
 ```
 
-Sæt et <code>id</code> på det element, som har klassen `js-radio-toggle-group`.
+Sæt et `id` på det element, som har klassen `js-radio-toggle-group`.
 
 Bemærk, at dette kun gælder fra version 5.0.0.
 

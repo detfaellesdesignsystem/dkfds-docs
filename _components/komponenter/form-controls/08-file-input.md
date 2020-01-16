@@ -2,47 +2,36 @@
 title: Vedhæft fil
 parent: Formcontrols
 order: 07
+component: file-input
+componentTitle: Eksempel på vedhæft fil
 ---
+### Implementering
 
-{% include code/preview.html component="file-input" title="Eksempel på vedhæft fil" %}
-{% include code/accordion.html component="file-input" %}
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button"
-      aria-expanded="false" aria-controls="file-input-tech">
-    Implementering
-  </button>
-  <div id="file-input-tech" aria-hidden="true" class="accordion-content">
-    <p>Vi anbefaler at bruge det indbyggede input felt til filer <code>type="file"</code> frem for en skræddersyet løsning.</p>
-    <p>Årsagen til dette er:</p>
-      <ul class="content-list">
-      <li>at feltet får fokus, når man tabulerer gennem siden</li>
-      <li>at feltet fungerer ved brug af tastatur</li>
-      <li>at feltet fungerer ved brug af hjælpemidler</li>
-      <li>at feltet fungerer, selv når JavaScript er utilgængeligt.</li>
-    </ul>
-    <p>Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.</p>
-  </div>
-</div>
+Vi anbefaler at bruge det indbyggede input felt til filer `type="file"` frem for en skræddersyet løsning.
 
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="file-input-docs">
-    Retningslinjer
-  </button>
-  <div id="file-input-docs" aria-hidden="false" class="accordion-content">
-      <section>
-          <h3 class="h4">Tilgængelighed</h3>
-          <p>Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.</p>
-      </section>
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <p>Brug det til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.</p>
-          <h4 class="h5">Vejledning</h4>
-          <ul>
-              <li>Sørg for at brugeren får en positiv respons, når filen er overført.</li>
-              <li>Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil blive accepteret.</li>
-              <li>Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.</li>
-          </ul>
-      </section>
-</div>
+Årsagen til dette er:
+
+- at feltet får fokus, når man tabulerer gennem siden
+- at feltet fungerer ved brug af tastatur
+- at feltet fungerer ved brug af hjælpemidler
+- at feltet fungerer, selv når JavaScript er utilgængeligt.
+
+Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.
+
+### Retningslinjer
+
+#### Tilgængelighed
+
+Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.
+
+#### Brugervenlighed
+
+##### Anvendes til
+
+Brug det til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.
+
+##### Vejledning
+
+- Sørg for at brugeren får en positiv respons, når filen er overført.
+- Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil blive accepteret.
+- Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.

@@ -6,8 +6,9 @@ order: 600
 lead: Links anvendes til at linke rundt i løsningen og til at linke ud af løsningen til eksterne sites.
 ---
 
-<p>Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.</p>
-<p>Se også vores <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.</p>
+Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.
+
+Se også vores <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.
 
 {% include code/preview.html component="links" %}
 {% include code/accordion.html component="links" %}

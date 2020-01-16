@@ -7,7 +7,7 @@ headingClass: mb-0
 <p class="small-text mt-0">24-05-2019</p>
 
 - Fjernet primærfarven på tekst i aktivt menupunkt i header.</li>
-- Tilføjet klassen <code>inline-svg</code>, som kan bruges på ikoner, der skal fremgå i tekst, således at de matcher teksthøjden.</li>
+- Tilføjet klassen `inline-svg`, som kan bruges på ikoner, der skal fremgå i tekst, således at de matcher teksthøjden.</li>
 - Ændret afstand fra label til read-only felt.</li>
 - Ændret JavaScript, der håndterer regex maske på dato felt, således at man nu kan bruge copy/paste igen.
     - Fejlhåndtering omkring ikke gyldige karakterer indsat i feltet med copy/paste bør håndteres i projektet selv.
