@@ -4,9 +4,6 @@ parent: Beskeder
 order: 10
 headingClass: h3
 ---
-<h3 class="h4">Tilgængelighed</h3>
-
-- Anvend ARIA `role="alert"` til at øge tilgængeligheden ved at markere beskeden som en ikke-interaktiv del af sidens indhold. Mærk beskeden med `role="alertdialog"`, hvis den indeholder interaktivitet for brugeren.
 
 <h3 class="h4">Brugervenlighed</h3>
 <h4 class="h5">Anvendes til</h4>

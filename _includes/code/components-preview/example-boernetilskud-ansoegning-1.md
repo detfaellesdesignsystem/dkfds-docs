@@ -56,7 +56,7 @@ title: Example-boernetilskud-ansoegning-1.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
@@ -190,17 +190,16 @@ title: Example-boernetilskud-ansoegning-1.html
                             <ul class="nobullet-list">
                                 <li>
 
-                                    <div class="alert alert-warning "
-                                        role="alert" aria-label="">
+                                    <div class="alert alert-warning"
+                                        role="alert">
                                         <div class="alert-body">
-                                            <p class="alert-heading ">
+                                            <p class="alert-heading">
                                                 Allerede registreret</p>
                                             <p class="alert-text">Sed ut
                                                 perspiciatis unde omnis
                                                 iste natus error sit
                                                 voluptatem accusantium
                                                 doloremque laudantium.</p>
-
                                         </div>
                                     </div>
 
@@ -216,17 +215,16 @@ title: Example-boernetilskud-ansoegning-1.html
                                 </li>
                                 <li>
 
-                                    <div class="alert alert-warning "
-                                        role="alert" aria-label="">
+                                    <div class="alert alert-warning"
+                                        role="alert">
                                         <div class="alert-body">
-                                            <p class="alert-heading ">
+                                            <p class="alert-heading">
                                                 Allerede registreret</p>
                                             <p class="alert-text">Sed ut
                                                 perspiciatis unde omnis
                                                 iste natus error sit
                                                 voluptatem accusantium
                                                 doloremque laudantium.</p>
-
                                         </div>
                                     </div>
 
@@ -257,7 +255,7 @@ title: Example-boernetilskud-ansoegning-1.html
                     </div>
                     <div class="form-group">
                         <button
-                            class="button button-secondary mt-4"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#add"></use></svg>
+                            class="button button-secondary mt-4"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add"></use></svg>
                             Tilføj barn</button>
                     </div>
                 </form>

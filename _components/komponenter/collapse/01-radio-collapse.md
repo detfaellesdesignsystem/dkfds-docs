@@ -4,6 +4,7 @@ parent: Collapse
 order: 10
 component: radio-toggle-content
 componentTitle: "Eksempel på skjul/vis med radioknapper"
+componentHideCode: true
 ---
 ### Implementering
 

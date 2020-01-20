@@ -26,9 +26,10 @@ Navigér til roden af dit projekt i en kommando prompt.
 
 Installer DKFDS med følgende kommando:
 
-```
+
+{% highlight console %}
 npm install --save dkfds
-```
+{% endhighlight %}
 
 Modulet 'dkfds' er nu installeret i 'node_modules' mappen.
 
@@ -37,15 +38,16 @@ Modulet 'dkfds' er nu installeret i 'node_modules' mappen.
 Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">version som zipfil på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, og pak indholdet ud i dit projekt.
 <h3 class="h4">Inkludér tema</h3>
 <h4 class="h5">Virk tema:</h4>
-```
+
+{% highlight html %}
 <link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-virkdk.css" />
-```
+{% endhighlight %}
 
 <h4 class="h5">Borger.dk tema:</h4>
 
-```
+{% highlight html %}
 <link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css" />
-```
+{% endhighlight %}
 
 
 Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.
@@ -56,15 +58,15 @@ JavaScript kan inkluderes med et script tag eller importeres ind i en eksisteren
 
 <h5 class="h6">Script tag</h5>
 
-```
+{% highlight html %}
 <script src='[sti til DKFDS mappen]/dist/js/dkfds.js'></script>
-```
+{% endhighlight %}
 
 <h5 class="h6">Importer modulet i en .js fil</h5>
 
-```
+{% highlight javascript %}
 import * as DKFDS from "dkfds";
-```
+{% endhighlight %}
 
 <h5 class="h6">Init</h5>
 
@@ -72,12 +74,12 @@ Når DKFDS er inkluderet skal du køre funktionen `DKFDS.init();` ved dom ready,
 
 <p class="mb-2">Eksempel:</p>
 
-```
+{% highlight javascript %}
 document.addEventListener("DOMContentLoaded", function(){
   // Handler when the DOM is fully loaded
   DKFDS.init();
 });
-```
+{% endhighlight %}
 
 For yderligere JavaScript funktioner, se under hver <a href="/komponenter/">komponent</a>.
 
@@ -89,7 +91,7 @@ Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de t
 
 <p class="mb-2">Tema eksempel – borger.dk (scss):</p>
 
-```
+{% highlight scss %}
 // These variables overwrite the default values, giving the style the borger.dk theme
 $color-primary:               #44831E;
 $color-primary-medium:        #3C5C22;
@@ -110,7 +112,7 @@ $image-path:        '~dkfds/src/img';
 $site-image-path:   '~dkfds/src/img';
 $icons-folder-path: '~dkfds/src/img/svg-icons';
 @import '~dkfds/src/stylesheets/dkfds';
-```
+{% endhighlight %}
 
 ##### Browserspecifik styling tilføjes i projektet
 ###### Webpack

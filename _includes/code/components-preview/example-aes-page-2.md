@@ -62,7 +62,7 @@ title: Example-aes-page-2.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><span class="weight-semibold">Christian Emil
@@ -85,7 +85,7 @@ title: Example-aes-page-2.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#save"></use></svg>Gem
+                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#save"></use></svg>Gem
                         kladde</a>
                 </div>
             </div>
@@ -176,7 +176,7 @@ title: Example-aes-page-2.html
     </div>
 
     <button
-        class="button button-secondary mt-4 d-print-none"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#add"></use></svg>
+        class="button button-secondary mt-4 d-print-none"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add"></use></svg>
         Vælg en anden kontaktperson</button>
     <div class="mt-5">
 

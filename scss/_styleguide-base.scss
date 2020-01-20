@@ -552,8 +552,27 @@ code,
 pre {
   background-color: $color-gray-pale;
   font-family: monospace;
-  //font-size: 1.3rem;
   line-height: 1.4em;
+
+  span.nt{
+    color: #800080;
+  }
+  span.na{
+    color: #FF6A38;
+  }
+  span.s, span.s1{
+    color: #004D99;
+  }
+  span.k{
+    color: #FF6A38;
+  }
+  span.nx, span.nb{
+    color: #8F2B8F;
+  }
+  span.c{
+    color: #358000;
+  }
+
 }
 
 pre {

@@ -1,0 +1,13 @@
+--- 
+permalink: /preview-components/alert-close.html
+layout: iframed 
+title: Alert-close.html
+---
+<div class="alert alert-info has-close">
+    <div class="alert-body">
+        <p class="alert-heading pr-7">Besked med luk</p>
+        <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.</p><a href="javascript:void(0);"
+            class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</a>
+    </div>
+</div>

@@ -4,6 +4,7 @@ parent: Collapse
 order: 20
 component: checkbox-toggle-content
 componentTitle: "Eksempel på skjul/vis med tjekbokse"
+componentHideCode: true
 ---
 
 ### Implementering

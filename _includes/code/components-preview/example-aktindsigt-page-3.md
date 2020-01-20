@@ -60,7 +60,7 @@ title: Example-aktindsigt-page-3.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user bold">Christian Emil Vestergaard Christiansen
@@ -82,13 +82,12 @@ title: Example-aktindsigt-page-3.html
 
 <main class="container page-container">
 
-    <div class="alert alert alert-success alert--show-icon " role="alert"
+    <div class="alert alert alert-success alert--show-icon" role="alert"
         aria-label="success">
         <div class="alert-body">
-            <p class="alert-heading ">Success</p>
+            <p class="alert-heading">Success</p>
             <p class="alert-text">Vi har modtaget dine oplysninger og vil
                 behandle ansøgningen hurtigst muligt</p>
-
         </div>
     </div>
 
@@ -110,10 +109,10 @@ title: Example-aktindsigt-page-3.html
     </div>
 
     <button
-        class="button button-secondary mt-7 d-print-none"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#download"></use></svg>
+        class="button button-secondary mt-7 d-print-none"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#download"></use></svg>
         Gem som pdf</button> <br>
     <button
-        class="button button-secondary mt-3 d-print-none"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>
+        class="button button-secondary mt-3 d-print-none"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#printer"></use></svg>
         Print</button>
 
 </main>

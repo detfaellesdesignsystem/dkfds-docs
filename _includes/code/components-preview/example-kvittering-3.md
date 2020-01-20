@@ -59,7 +59,7 @@ title: Example-kvittering-3.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user bold">Navn</p>
@@ -82,13 +82,12 @@ title: Example-kvittering-3.html
 <div class="container page-container">
     <main id="main-content">
 
-        <div class="alert alert alert-success alert--show-icon "
+        <div class="alert alert alert-success alert--show-icon"
             role="alert" aria-label="success">
             <div class="alert-body">
-                <p class="alert-heading ">Kvittering</p>
+                <p class="alert-heading">Kvittering</p>
                 <p class="alert-text">Din virksomhedsregistrering er
                     modtaget</p>
-
             </div>
         </div>
 
@@ -96,7 +95,7 @@ title: Example-kvittering-3.html
         <p class="font-lead">Nedenfor finder du dine indtastninger fra de
             foregående sider.</p>
         <button
-            class="button button-secondary d-print-none"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>
+            class="button button-secondary d-print-none"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#printer"></use></svg>
             Udskriv kvittering</button>
         <h2>Dine oplysninger</h2>
         <table

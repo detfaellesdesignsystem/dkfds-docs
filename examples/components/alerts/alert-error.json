@@ -1,0 +1,9 @@
+{
+  "alert_example": {
+        "name": "error",
+        "classes": "alert-error",
+        "title": "Fejl",
+        "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.",
+        "role": "alert"
+      }
+}

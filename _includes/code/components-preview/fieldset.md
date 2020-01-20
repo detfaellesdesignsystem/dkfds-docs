@@ -39,7 +39,8 @@ title: Fieldset.html
                 value="" name="telefon" type="text">
         </div>
 
-        <button class="button button-primary mt-9"> Gem oplysninger
+        <button class="button button-primary mt-9">
+            Gem oplysninger
         </button>
     </form>
 </div>

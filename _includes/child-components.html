@@ -7,9 +7,6 @@
   {% endif %}
   {% if child.component %}
   {% include code/preview.html component=child.component title=child.componentTitle %}
-  {% if child.componentHideCode != true %}
-  {% include code/accordion.html component=child.component %}
-  {% endif %}
   {% endif %}
   {{ child.content }}
 </section>

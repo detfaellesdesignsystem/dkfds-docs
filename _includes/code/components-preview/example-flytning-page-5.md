@@ -59,7 +59,7 @@ title: Example-flytning-page-5.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user bold">Navn</p>
@@ -81,10 +81,10 @@ title: Example-flytning-page-5.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#"></use></svg>Om
+                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#"></use></svg>Om
                         digital flytning</a>
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#language"></use></svg>Sprog</a>
+                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>Sprog</a>
                 </div>
             </div>
         </div>
@@ -94,17 +94,16 @@ title: Example-flytning-page-5.html
 
 <main class="container page-container">
 
-    <div class="alert alert alert-error alert--show-icon " role="alert"
+    <div class="alert alert alert-error alert--show-icon" role="alert"
         aria-label="error">
         <div class="alert-body">
-            <p class="alert-heading ">Der er sket en fejl</p>
+            <p class="alert-heading">Der er sket en fejl</p>
             <p class="alert-text">Der er sket en fejl hos KRAK. Afstanden
                 til din nuværende læge kan ikke beregnes i øjeblikket.
                 Beregningen er vigtig for at dit lægevalg kan blive
                 registreret korrekt. Fejlen er blevet registreret og vil
                 blive rettet hurtigst muligt. Prøv at registrere din
                 flytning senere.</p>
-
         </div>
     </div>
 
@@ -165,15 +164,14 @@ title: Example-flytning-page-5.html
     <h1>Lægevalg</h1>
     <div class="mt-0">
 
-        <div class="alert alert alert-info alert--paragraph " role="alert"
+        <div class="alert alert alert-info alert--paragraph" role="alert"
             aria-label="warning">
             <div class="alert-body">
-                <p class="alert-heading ">Når du anmelder flytning skal du
+                <p class="alert-heading">Når du anmelder flytning skal du
                     altid vælge læge også selv om det er tidligere læge du
                     ønsker.</p>
                 <p class="alert-text">
                     <br>Du kan kontakte Folkeregisteret, på telefonnr. 3366 3366, såfremt der er lukket for tilgang til læger inden for en radius af 5 km.<br><br>Flytter du inden for Københavns kommune, men uden for lægens 5 km grænse, kan du beholde lægen. Du skal acceptere ikke at kunne få sygebesøg af lægen.<br><br>Flytter du tik Københavns kommune uden for lægens km grænse, kan du kun beholde din læge, hvis du opfylder betingelserne og accepterer ikke at kunne få sygebesøg af lægen.<br><br>Betingelserne i § 1 stk 9, i Bekendtgørelsen om valg og skift af alment praktiserende læge og om behandling hos læge i praksissektoren for at kunne beholde lægen.<br><br>Du vil modtage dit nye sundhedskort i løbet af 2-3 uger. Hvis du ikke modtager dit nye sundhedskort, skal du kontakte kommunen inden 60 dage fra din flyttedato. Ellers kommer du til at betale for dit nye kort.</p>
-
             </div>
         </div>
 

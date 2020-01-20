@@ -119,7 +119,7 @@ title: Tringuide.html
                         1. Trin 1
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -130,7 +130,7 @@ title: Tringuide.html
                         2. Trin 2
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -141,7 +141,7 @@ title: Tringuide.html
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -176,7 +176,7 @@ title: Tringuide.html
                         1. Trin 1
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -187,7 +187,7 @@ title: Tringuide.html
                         2. Trin 2
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -198,7 +198,7 @@ title: Tringuide.html
                         3. Trin 3 (valgt)
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -237,7 +237,7 @@ title: Tringuide.html
                         </div>
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -254,7 +254,7 @@ title: Tringuide.html
                         </div>
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>
@@ -271,7 +271,7 @@ title: Tringuide.html
                         </div>
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#check"></use></svg>
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
                         </span>
 
                     </a>

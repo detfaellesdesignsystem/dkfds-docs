@@ -1,7 +1,5 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
-<div class="container">
-  {% for item in alert_example.items -%}
-    {{ alert(item.classes, item.role, item.title, item.content, item.aria, true) }}
-  {%- endfor %}
-</div>
+{% for item in alert_example.items -%}
+{{ alert(item.classes, item.role, item.title, item.content, item.aria, true) }}
+{%- endfor %}

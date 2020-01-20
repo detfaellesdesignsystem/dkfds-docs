@@ -3,6 +3,7 @@ primary:
   - href: /komigang/
   - href: /design/
   - href: /komponenter/
+  - href: /kode/
   - href: /udvidelser/
   - href: /eksempler/
   - href: /omdesignsystemet/
@@ -15,6 +16,8 @@ mobile:
     categorynav: 'Design_category'
   - href: /komponenter/
     categorynav: 'Komponenter_category'
+  - href: /kode/
+    categorynav: 'Kode_category'
   - href: /udvidelser/
     categorynav: 'Udvidelser_category'
   - href: /eksempler/
@@ -86,6 +89,32 @@ Komponenter_category:
   - href: /komponenter/tags/
   - href: /komponenter/tooltip/
   - href: /komponenter/trinindikatorer/
+
+
+#Left menu for komponent-category
+Kode_category:
+- href: /kode/accordions/
+- href: /kode/badges/
+- href: /kode/beskeder/
+- href: /kode/cards/
+#- href: /kode/cookiemeddelelse/
+#- href: /kode/tabnav/
+#- href: /kode/footers/
+#- href: /kode/form-controls/
+#- href: /kode/funktionslink/
+#- href: /kode/headers/
+- href: /kode/buttons/
+#- href: /kode/overflowmenu/
+#- href: /kode/sidenav/
+- href: /kode/collapse/
+#- href: /kode/spinner/
+#- href: /kode/search/
+- href: /kode/tilbage-link/
+#- href: /kode/tables/
+#- href: /kode/tags/
+#- href: /kode/tooltip/
+#- href: /kode/trinindikatorer/
+
 
 #Left menu for udvidelser-category
 Udvidelser_category:

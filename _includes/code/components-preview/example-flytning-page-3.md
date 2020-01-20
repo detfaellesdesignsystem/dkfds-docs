@@ -59,7 +59,7 @@ title: Example-flytning-page-3.html
         <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user bold">Navn</p>
@@ -81,10 +81,10 @@ title: Example-flytning-page-3.html
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#"></use></svg>Om
+                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#"></use></svg>Om
                         digital flytning</a>
                     <a href=""
-                        class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#language"></use></svg>Sprog</a>
+                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>Sprog</a>
                 </div>
             </div>
         </div>
@@ -144,15 +144,14 @@ title: Example-flytning-page-3.html
 
     <h1>Adresse</h1>
 
-    <div class="alert alert alert-warning " role="alert"
+    <div class="alert alert alert-warning" role="alert"
         aria-label="warning">
         <div class="alert-body">
-            <p class="alert-heading ">Ikke alle adresser er registreret i
+            <p class="alert-heading">Ikke alle adresser er registreret i
                 dette register</p>
             <p class="alert-text">Kan du ikke finde din
                 tilflytningsadresse, bedes du kontakte din
                 tilflytningskommune.</p>
-
         </div>
     </div>
 
