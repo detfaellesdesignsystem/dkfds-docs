@@ -1397,73 +1397,35 @@
           <h1 id="skygger">Skygger</h1>
           
 
-          <div class="component-preview  component-preview-shadows" aria-label="">
-    <div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h3 class="h5">Modalvindue</h3>
-            <p class="form-hint">Skygge, der bruges på modalvinduer.</p>
-            <div class="heavy-shadow-example"></div>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>box-shadow: 0 8px 16px 0 rgba(#000, 0.3);</pre>
-        </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-12 col-md-6">
-            <h3 class="h5">Overflow menu</h3>
-            <p class="form-hint">Skygge, der bruges på overflow menuer</p>
-            <div class="moderately-shadow-example"></div>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>box-shadow: 0 4px 8px 0 rgba(#000, 0.3);</pre>
-        </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-12 col-md-6">
-            <h3 class="h5">Cards</h3>
-            <p class="form-hint">Skygge, der bruges på cards</p>
-            <div class="slightly-shadow-example"></div>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>box-shadow: 0 2px 4px 0 rgba(#000, 0.3);</pre>
-        </div>
-    </div>
-</div>
+          <h3 id="implementering">Implementering</h3>
+<h4 id="modalvindue">Modalvindue</h4>
+
+<p>Modalvinduer har en sort skygge på 0 8px 16px 0 og har variablen <code class="highlighter-rouge">$box-shadow-heavy</code></p>
+
+<h5 id="eksempel">Eksempel</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>box-shadow: $box-shadow-heavy;
+</code></pre>
 </div>
 
-<div class="accordion-bordered">
-    <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="shadows-docs">
-        Implementering
-    </button>
-    <div id="shadows-docs" class="accordion-content">
-        <section>
-            <h3 class="h4">Modalvindue</h3>
-            <ul>
-                <li><p>Modalvinduer har en sort skygge på 0 8px 16px 0 og har variablen <code>$box-shadow-heavy</code></p></li>
-            </ul>
-            <p class="h5 mb-3">Eksempel:</p>
-            <div class="code-highlight">
-                <code> box-shadow: $box-shadow-heavy;</code>
-            </div>
-            <h3 class="h4">Overflow menu</h3>
-            <ul>
-                <li><p>Overflow menu har en sort skygge på 0 4px 16px 0 og har variablen <code>$box-shadow-moderately</code></p></li>
-            </ul>
-            <p class="h5 mb-3">Eksempel:</p>
-            <div class="code-highlight">
-                <code>box-shadow: $box-shadow-moderately;</code>
-            </div>
-            <h3 class="h4">Cards</h3>
-            <ul>
-                <li><p>Cards har en sort skygge på 0 2px 16px 0 og har variablen <code>$box-shadow-slightly</code></p></li>
-            </ul>
-            <p class="h5 mb-3">Eksempel:</p>
-            <div class="code-highlight">
-                <code>box-shadow: $box-shadow-slightly;</code>
-            </div>
-        </section>
-    </div>
+<h4 id="overflow-menu">Overflow menu</h4>
+
+<p>Overflow menu har en sort skygge på 0 4px 16px 0 og har variablen <code class="highlighter-rouge">$box-shadow-moderately</code></p>
+
+<h5 id="eksempel-1">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>box-shadow: $box-shadow-moderately;
+</code></pre>
+</div>
+
+<h4 id="cards">Cards</h4>
+
+<p>Cards har en sort skygge på 0 2px 16px 0 og har variablen <code class="highlighter-rouge">$box-shadow-slightly</code></p>
+
+<h5 id="eksempel-2">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>box-shadow: $box-shadow-slightly;
+</code></pre>
 </div>
 
 

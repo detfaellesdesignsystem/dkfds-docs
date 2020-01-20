@@ -1549,126 +1549,25 @@
             <p class="font-lead">Gør det muligt for brugeren, at vælge en dato ved klik på knap.</p>
           
 
-          <div class="component-preview  component-preview-date-input-datepicker" aria-label="">
-    <div class="container">
+          <h3 id="implementering">Implementering</h3>
 
-    <div class="form-group  ">
-        <fieldset>
-            <legend><label class="form-label">Indsendelsesfrist</label>
-                <span class="form-hint">For eksempel: 05 12 2018</span>
-            </legend>
-            <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
-            <div class="date-group js-calendar-group mt-3">
-                <div class="form-group form-group-day">
-                    <label class="form-label" for="date-day">Dag</label>
-                    <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
-                </div>
-                <div class="form-group form-group-month">
-                    <label class="form-label" for="date-month">Måned</label>
-                    <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
-                </div>
-                <div class="form-group form-group-year ">
-                    <label class="form-label" for="date-year">År</label>
-                    <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
-                </div>
+<p>Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a></p>
 
-                <button class="button-unstyled button-open-calendar js-calendar-datepicker">
-                    <span class="sr-only">Åben kalenderen</span>
-                    <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#calendar"></use></svg>
-                </button>
+<p>Stien til filen du skal inkludere for Pikaday er henholdsvis <code class="highlighter-rouge">[path-to-plugins-project]/dist/css/dkfds-pikaday-theme.standalone.min.css</code> for CSS filen og <code class="highlighter-rouge">~dkfds-plugins/dist/scss/dkfds-pikaday-theme</code> for SCSS filen.</p>
 
-            </div>
-        </fieldset>
-    </div>
+<p>Man skal dog stadig inkludere Pikadays egen CSS og JavaScript. Følg <a href="https://github.com/Pikaday/Pikaday" class="icon-link">Pikadays egen dokumentation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> for implementering af pluginnet i dit projekt.</p>
 
-</div>
-</div>
+<h3 id="retningslinjer">Retningslinjer</h3>
 
-<div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-date-input-datepicker">Kode</button>
-  <div id="code-date-input-datepicker" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<h4 id="brugervenlighed">Brugervenlighed</h4>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group  "</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;fieldset&gt;</span>
-            <span class="nt">&lt;legend&gt;&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Indsendelsesfrist<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>For eksempel: 05 12 2018<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/legend&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message  d-none"</span>
-                <span class="na">id=</span><span class="s">"form-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;/span&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group mt-3"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-day"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span>
-                        <span class="na">id=</span><span class="s">"date-day"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1"</span>
-                        <span class="na">data-max=</span><span class="s">"31"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
-                        <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv dag på måneden som tal"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
-                        <span class="na">for=</span><span class="s">"date-month"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-month-input"</span>
-                        <span class="na">id=</span><span class="s">"date-month"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1"</span>
-                        <span class="na">data-max=</span><span class="s">"12"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
-                        <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-year"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
-                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
-                        <span class="na">id=</span><span class="s">"date-year"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1900"</span>
-                        <span class="na">data-max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span>
-                        <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
-                        <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
-                        <span class="na">title=</span><span class="s">"Indskriv årstal"</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
+<h5 id="anvendes-til">Anvendes til</h5>
 
-                <span class="nt">&lt;button</span>
-                    <span class="na">class=</span><span class="s">"button-unstyled button-open-calendar js-calendar-datepicker"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Åben kalenderen<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/button&gt;</span>
+<p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.</p>
 
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/fieldset&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<h5 id="anvendes-ikke-til">Anvendes ikke til</h5>
 
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-<div class="accordion accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="tech-docs">
-    Implementering
-  </button>
-  <div id="tech-docs" class="accordion-content">
-    <p>Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a></p>
-    <p>Stien til filen du skal inkludere for Pikaday er henholdsvis <code>[path-to-plugins-project]/dist/css/dkfds-pikaday-theme.standalone.min.css</code> for CSS filen og <code>~dkfds-plugins/dist/scss/dkfds-pikaday-theme</code> for SCSS filen.</p>
-    <p>Man skal dog stadig inkludere Pikadays egen CSS og JavaScript. Følg <a href="https://github.com/Pikaday/Pikaday" class="icon-link">Pikadays egen dokumentation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> for implementering af pluginnet i dit projekt.</p> 
-  </div>
-</div>
-
-<div class="accordion accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="guideline-docs">
-    Retningslinjer
-  </button>
-  <div id="guideline-docs" class="accordion-content">
-      <section>
-          <h3 class="h4">Brugervenlighed</h3>
-          <h4 class="h5">Anvendes til</h4>
-          <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.</p>
-          <h4 class="h5">Anvendes ikke til</h4>
-          <p>Tidsangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/form-controls/#datoangivelse" title="">datoangivelse</a></p>
-      </section>
-  </div>
-</div>
+<p>Tidsangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/form-controls/#datoangivelse" title="">datoangivelse</a></p>
 
       </section>
     </main>

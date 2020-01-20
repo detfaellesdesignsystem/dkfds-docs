@@ -1397,104 +1397,43 @@
           <h1 id="streger">Streger</h1>
           
 
-          <div class="component-preview  component-preview-borders" aria-label="">
-      <div class="container">
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Ydre-streger</h3>
-              <p class="form-hint">Bruges til de yderste streger i et
-                  element, se fx tabeller.</p>
-              <div class="outer-border-example"></div>
-          </div>
-          <div class="col-12 col-md-6">
-              <pre>border: 1px solid #747474</pre>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Indre-streger</h3>
-              <p class="form-hint">Bruges til indre streger i et element,
-                  se fx tabeller.</p>
-              <div class="inner-border-example"></div>
-          </div>
-          <div class="col-12 col-md-6">
-              <pre>border: 1px solid #BFBFBF</pre>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Indre-indre-streger</h3>
-              <p class="form-hint">Bruges til indre streger i et element,
-                  som allerede er omkranset af indre steger, se fx
-                  sidenavigation.</p>
-              <div class="inner-inner-border-example"></div>
-          </div>
-          <div class="col-12 col-md-6">
-              <pre>border: 1px solid #DCDCDC</pre>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Knap-streger</h3>
-              <p class="form-hint">Specifik streg til knapper.</p>
-              <div class="button-border-example"></div>
-          </div>
-          <div class="col-12 col-md-6 mt-4">
-              <h4 class="h6 mb-0 mt-0">Virk tema:</h4>
-              <pre class="mt-0">border: 2px solid #004993</pre>
-              <h4 class="h6 mb-0 mt-0">Borger.dk tema:</h4>
-              <pre class="mt-0">border: 2px solid #3C5C22</pre>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Horisontal ruler</h3>
-              <p class="form-hint"><code>hr</code> elementet har samme
-                  farve som den Indre streg</p>
-              <hr />
-          </div>
-          <div class="col-12 col-md-6">
-              <pre>border-top: 1px solid #BFBFBF</pre>
-          </div>
-      </div>
-  </div>
+          <h3 id="implementering">Implementering</h3>
+<h4 id="ydre-streger">Ydre streger</h4>
+
+<ul>
+  <li>Ydre streger er 1px bredde og er mørkegrå. Brug variablen $outer-border for at opsætte ydre kanter.</li>
+  <li>Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.</li>
+</ul>
+
+<h5 id="eksempel">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border: $outer-border;
+</code></pre>
 </div>
 
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="borders-docs">
-    Implementering
-  </button>
-  <div id="borders-docs" class="accordion-content">
-    <section>
-        <h3 class="h4">Ydre streger</h3>
-        <ul>
-            <li>Ydre streger er 1px bredde og er mørkegrå. Brug variablen $outer-border for at opsætte ydre kanter.</li>
-            <li>Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.</li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border: $outer-border;</code>
-        </div>
-        <h3 class="h4">Indre streger</h3>
-        <ul>
-            <li><p>Indre streger er 1px bredde og er lysegrå. For at bruge indre borders bruges variablen <code>$inner-border</code></p></li>
-            <li><p>Anvendes som indvendige streger i komponenter, der kræver separering af elementer.</p></li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border: $inner-border;</code>
-        </div>
-        <h3 class="h4">Knap borders</h3>
-        <ul>
-            <li><p>Borders på knapper er 2px bredde og farven afhænger af elementet. For at bruge borders til knapper bruges variablen <code>$button-border</code></p></li>
-            <li><p>Har ekstra border bredde, som bruges på knapper</p></li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border: $button-border;</code>
-        </div>
-    </section>
-  </div>
+<h4 id="indre-streger">Indre streger</h4>
+
+<ul>
+  <li>Indre streger er 1px bredde og er lysegrå. For at bruge indre borders bruges variablen <code class="highlighter-rouge">$inner-border</code></li>
+  <li>Anvendes som indvendige streger i komponenter, der kræver separering af elementer.</li>
+</ul>
+
+<h5 id="eksempel-1">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border: $inner-border;
+</code></pre>
+</div>
+
+<h4 id="knap-borders">Knap borders</h4>
+<ul>
+  <li>Borders på knapper er 2px bredde og farven afhænger af elementet. For at bruge borders til knapper bruges variablen <code class="highlighter-rouge">$button-border</code></li>
+  <li>Har ekstra border bredde, som bruges på knapper</li>
+</ul>
+
+<h5 id="eksempel-2">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border: $button-border;
+</code></pre>
 </div>
 
 

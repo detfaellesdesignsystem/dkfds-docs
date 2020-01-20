@@ -1633,6 +1633,7 @@
 <section class="styleguide-child-container content" id="section-/design/borders-shadows/01-border-radius">
   <h2 id="hjørner">Hjørner</h2>
   
+  
   <div class="component-preview  component-preview-border-radius" aria-label="">
     <div class="container">
     <h3 class="h5">Firkantede hjørner (0px)</h3>
@@ -1660,33 +1661,34 @@
 </div>
 </div>
 
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="border-radius-docs">
-    Implementering
-  </button>
-  <div id="border-radius-docs" class="accordion-content">
-    <section>
-        <h3 class="h4">Statiske hjørner</h3>
-        <ul>
-            <li>Statiske hjørner er lige og har en <code>border-radius: 0px;</code></li>
-            <li>For at få lige hjørner skal du bruge variablen <code>$static-border-radius</code></li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border-radius: $static-border-radius;</code>
-        </div>
-        <h3 class="h4">Interaktive hjørner</h3>
-        <ul>
-            <li>Interaktive hjørner er runde og har en <code>border-radius: 4px;</code></li>
-            <li>For at få runde hjørner skal du bruge variablen <code>$interactive-border-radius</code></li>
-            <li>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border-radius: $interactive-border-radius;</code>
-        </div>
-    </section>
-  </div>
+  
+  
+  <h3 id="implementering">Implementering</h3>
+
+<h4 id="statiske-hjørner">Statiske hjørner</h4>
+
+<ul>
+  <li>Statiske hjørner er lige og har en <code class="highlighter-rouge">border-radius: 0px;</code></li>
+  <li>For at få lige hjørner skal du bruge variablen <code class="highlighter-rouge">$static-border-radius</code></li>
+</ul>
+
+<h5 id="eksempel">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border-radius: $static-border-radius;
+</code></pre>
+</div>
+<h4 id="interaktive-hjørner">Interaktive hjørner</h4>
+
+<ul>
+  <li>Interaktive hjørner er runde og har en <code class="highlighter-rouge">border-radius: 4px;</code></li>
+  <li>For at få runde hjørner skal du bruge variablen <code class="highlighter-rouge">$interactive-border-radius</code></li>
+  <li>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</li>
+</ul>
+
+<h5 id="eksempel-1">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border-radius: $interactive-border-radius;
+</code></pre>
 </div>
 
 </section>
@@ -1694,110 +1696,6 @@
 <section class="styleguide-child-container content" id="section-/design/borders-shadows/02-borders">
   <h2 id="streger">Streger</h2>
   
-  <div class="component-preview  component-preview-borders" aria-label="">
-      <div class="container">
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Ydre-streger</h3>
-              <p class="form-hint">Bruges til de yderste streger i et
-                  element, se fx tabeller.</p>
-              <div class="outer-border-example"></div>
-          </div>
-          <div class="col-12 col-md-6">
-              <pre>border: 1px solid #747474</pre>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Indre-streger</h3>
-              <p class="form-hint">Bruges til indre streger i et element,
-                  se fx tabeller.</p>
-              <div class="inner-border-example"></div>
-          </div>
-          <div class="col-12 col-md-6">
-              <pre>border: 1px solid #BFBFBF</pre>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Indre-indre-streger</h3>
-              <p class="form-hint">Bruges til indre streger i et element,
-                  som allerede er omkranset af indre steger, se fx
-                  sidenavigation.</p>
-              <div class="inner-inner-border-example"></div>
-          </div>
-          <div class="col-12 col-md-6">
-              <pre>border: 1px solid #DCDCDC</pre>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Knap-streger</h3>
-              <p class="form-hint">Specifik streg til knapper.</p>
-              <div class="button-border-example"></div>
-          </div>
-          <div class="col-12 col-md-6 mt-4">
-              <h4 class="h6 mb-0 mt-0">Virk tema:</h4>
-              <pre class="mt-0">border: 2px solid #004993</pre>
-              <h4 class="h6 mb-0 mt-0">Borger.dk tema:</h4>
-              <pre class="mt-0">border: 2px solid #3C5C22</pre>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 col-md-6">
-              <h3 class="h5">Horisontal ruler</h3>
-              <p class="form-hint"><code>hr</code> elementet har samme
-                  farve som den Indre streg</p>
-              <hr />
-          </div>
-          <div class="col-12 col-md-6">
-              <pre>border-top: 1px solid #BFBFBF</pre>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="borders-docs">
-    Implementering
-  </button>
-  <div id="borders-docs" class="accordion-content">
-    <section>
-        <h3 class="h4">Ydre streger</h3>
-        <ul>
-            <li>Ydre streger er 1px bredde og er mørkegrå. Brug variablen $outer-border for at opsætte ydre kanter.</li>
-            <li>Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.</li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border: $outer-border;</code>
-        </div>
-        <h3 class="h4">Indre streger</h3>
-        <ul>
-            <li><p>Indre streger er 1px bredde og er lysegrå. For at bruge indre borders bruges variablen <code>$inner-border</code></p></li>
-            <li><p>Anvendes som indvendige streger i komponenter, der kræver separering af elementer.</p></li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border: $inner-border;</code>
-        </div>
-        <h3 class="h4">Knap borders</h3>
-        <ul>
-            <li><p>Borders på knapper er 2px bredde og farven afhænger af elementet. For at bruge borders til knapper bruges variablen <code>$button-border</code></p></li>
-            <li><p>Har ekstra border bredde, som bruges på knapper</p></li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border: $button-border;</code>
-        </div>
-    </section>
-  </div>
-</div>
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/design/borders-shadows/03-shadows">
-  <h2 id="skygger">Skygger</h2>
   
   <div class="component-preview  component-preview-shadows" aria-label="">
     <div class="container">
@@ -1834,38 +1732,164 @@
 </div>
 </div>
 
-<div class="accordion-bordered">
-    <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="shadows-docs">
-        Implementering
-    </button>
-    <div id="shadows-docs" class="accordion-content">
-        <section>
-            <h3 class="h4">Modalvindue</h3>
-            <ul>
-                <li><p>Modalvinduer har en sort skygge på 0 8px 16px 0 og har variablen <code>$box-shadow-heavy</code></p></li>
-            </ul>
-            <p class="h5 mb-3">Eksempel:</p>
-            <div class="code-highlight">
-                <code> box-shadow: $box-shadow-heavy;</code>
-            </div>
-            <h3 class="h4">Overflow menu</h3>
-            <ul>
-                <li><p>Overflow menu har en sort skygge på 0 4px 16px 0 og har variablen <code>$box-shadow-moderately</code></p></li>
-            </ul>
-            <p class="h5 mb-3">Eksempel:</p>
-            <div class="code-highlight">
-                <code>box-shadow: $box-shadow-moderately;</code>
-            </div>
-            <h3 class="h4">Cards</h3>
-            <ul>
-                <li><p>Cards har en sort skygge på 0 2px 16px 0 og har variablen <code>$box-shadow-slightly</code></p></li>
-            </ul>
-            <p class="h5 mb-3">Eksempel:</p>
-            <div class="code-highlight">
-                <code>box-shadow: $box-shadow-slightly;</code>
-            </div>
-        </section>
+  
+  <div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-shadows">Kode</button>
+  <div id="code-shadows" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Modalvindue<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>Skygge, der bruges på modalvinduer.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"heavy-shadow-example"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;pre&gt;</span>box-shadow: 0 8px 16px 0 rgba(#000, 0.3);<span class="nt">&lt;/pre&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-5"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Overflow menu<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>Skygge, der bruges på overflow menuer<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"moderately-shadow-example"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;pre&gt;</span>box-shadow: 0 4px 8px 0 rgba(#000, 0.3);<span class="nt">&lt;/pre&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-5"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Cards<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>Skygge, der bruges på cards<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slightly-shadow-example"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;pre&gt;</span>box-shadow: 0 2px 4px 0 rgba(#000, 0.3);<span class="nt">&lt;/pre&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+  
+  
+  <h3 id="implementering">Implementering</h3>
+<h4 id="ydre-streger">Ydre streger</h4>
+
+<ul>
+  <li>Ydre streger er 1px bredde og er mørkegrå. Brug variablen $outer-border for at opsætte ydre kanter.</li>
+  <li>Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.</li>
+</ul>
+
+<h5 id="eksempel">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border: $outer-border;
+</code></pre>
+</div>
+
+<h4 id="indre-streger">Indre streger</h4>
+
+<ul>
+  <li>Indre streger er 1px bredde og er lysegrå. For at bruge indre borders bruges variablen <code class="highlighter-rouge">$inner-border</code></li>
+  <li>Anvendes som indvendige streger i komponenter, der kræver separering af elementer.</li>
+</ul>
+
+<h5 id="eksempel-1">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border: $inner-border;
+</code></pre>
+</div>
+
+<h4 id="knap-borders">Knap borders</h4>
+<ul>
+  <li>Borders på knapper er 2px bredde og farven afhænger af elementet. For at bruge borders til knapper bruges variablen <code class="highlighter-rouge">$button-border</code></li>
+  <li>Har ekstra border bredde, som bruges på knapper</li>
+</ul>
+
+<h5 id="eksempel-2">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border: $button-border;
+</code></pre>
+</div>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/design/borders-shadows/03-shadows">
+  <h2 id="skygger">Skygger</h2>
+  
+  
+  <div class="component-preview  component-preview-shadows" aria-label="">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Modalvindue</h3>
+            <p class="form-hint">Skygge, der bruges på modalvinduer.</p>
+            <div class="heavy-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 8px 16px 0 rgba(#000, 0.3);</pre>
+        </div>
     </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Overflow menu</h3>
+            <p class="form-hint">Skygge, der bruges på overflow menuer</p>
+            <div class="moderately-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 4px 8px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h3 class="h5">Cards</h3>
+            <p class="form-hint">Skygge, der bruges på cards</p>
+            <div class="slightly-shadow-example"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre>box-shadow: 0 2px 4px 0 rgba(#000, 0.3);</pre>
+        </div>
+    </div>
+</div>
+</div>
+
+  
+  
+  <h3 id="implementering">Implementering</h3>
+<h4 id="modalvindue">Modalvindue</h4>
+
+<p>Modalvinduer har en sort skygge på 0 8px 16px 0 og har variablen <code class="highlighter-rouge">$box-shadow-heavy</code></p>
+
+<h5 id="eksempel">Eksempel</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>box-shadow: $box-shadow-heavy;
+</code></pre>
+</div>
+
+<h4 id="overflow-menu">Overflow menu</h4>
+
+<p>Overflow menu har en sort skygge på 0 4px 16px 0 og har variablen <code class="highlighter-rouge">$box-shadow-moderately</code></p>
+
+<h5 id="eksempel-1">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>box-shadow: $box-shadow-moderately;
+</code></pre>
+</div>
+
+<h4 id="cards">Cards</h4>
+
+<p>Cards har en sort skygge på 0 2px 16px 0 og har variablen <code class="highlighter-rouge">$box-shadow-slightly</code></p>
+
+<h5 id="eksempel-2">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>box-shadow: $box-shadow-slightly;
+</code></pre>
 </div>
 
 </section>

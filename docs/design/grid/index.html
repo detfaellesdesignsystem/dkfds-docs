@@ -476,7 +476,7 @@
 
 
 <li class=" ">
-<a href="#thegridsystem">Introduktion</a>
+<a href="#introduktion">Introduktion</a>
 </li>
 
     
@@ -487,7 +487,7 @@
 
 
 <li class=" ">
-<a href="#grid-settings">Indstillinger</a>
+<a href="#indstillinger">Indstillinger</a>
 </li>
 
     
@@ -498,7 +498,7 @@
 
 
 <li class=" ">
-<a href="#responsive-classes">Responsive klasser</a>
+<a href="#responsive-klasser">Responsive klasser</a>
 </li>
 
     
@@ -509,7 +509,7 @@
 
 
 <li class=" ">
-<a href="#auto-fill-layout-columns">Auto og Fill kolonner</a>
+<a href="#auto-og-fill-kolonner">Auto og Fill kolonner</a>
 </li>
 
     
@@ -520,7 +520,7 @@
 
 
 <li class=" ">
-<a href="#reordering">Rækkefølge</a>
+<a href="#rækkefølge">Rækkefølge</a>
 </li>
 
     
@@ -531,7 +531,7 @@
 
 
 <li class=" ">
-<a href="#utility">Hjælpeklasser</a>
+<a href="#hjælpeklasser">Hjælpeklasser</a>
 </li>
 
     
@@ -542,7 +542,7 @@
 
 
 <li class=" ">
-<a href="#variables">Variable</a>
+<a href="#sass-variabler-i-designsystemet">SASS variabler</a>
 </li>
 
     
@@ -1541,7 +1541,7 @@
 
 
 <li class=" ">
-<a href="#thegridsystem">Introduktion</a>
+<a href="#introduktion">Introduktion</a>
 </li>
 
     
@@ -1552,7 +1552,7 @@
 
 
 <li class=" ">
-<a href="#grid-settings">Indstillinger</a>
+<a href="#indstillinger">Indstillinger</a>
 </li>
 
     
@@ -1563,7 +1563,7 @@
 
 
 <li class=" ">
-<a href="#responsive-classes">Responsive klasser</a>
+<a href="#responsive-klasser">Responsive klasser</a>
 </li>
 
     
@@ -1574,7 +1574,7 @@
 
 
 <li class=" ">
-<a href="#auto-fill-layout-columns">Auto og Fill kolonner</a>
+<a href="#auto-og-fill-kolonner">Auto og Fill kolonner</a>
 </li>
 
     
@@ -1585,7 +1585,7 @@
 
 
 <li class=" ">
-<a href="#reordering">Rækkefølge</a>
+<a href="#rækkefølge">Rækkefølge</a>
 </li>
 
     
@@ -1596,7 +1596,7 @@
 
 
 <li class=" ">
-<a href="#utility">Hjælpeklasser</a>
+<a href="#hjælpeklasser">Hjælpeklasser</a>
 </li>
 
     
@@ -1607,7 +1607,7 @@
 
 
 <li class=" ">
-<a href="#variables">Variable</a>
+<a href="#sass-variabler-i-designsystemet">SASS variabler</a>
 </li>
 
     
@@ -1719,10 +1719,12 @@
             <p class="font-lead">Det fælles designsystem benytter et simpelt mobile-first flexbox grid til opbygning af sider. Grid-systemet er et standard 12-kolonne system med fem responsive breakpoints.</p>
           
 
-          <section class="section">
-    <h2 id="thegridsystem">Introduktion</h2>
-    <p>Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-systemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af grid-systemet.</p>
-    
+          
+<section class="styleguide-child-container content" id="section-/design/grids/grids-introduktion">
+  <h2 id="introduktion">Introduktion</h2>
+  
+  
+  <p>Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-systemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af grid-systemet.</p>
 
 <div class="component-preview ">
 
@@ -1732,7 +1734,7 @@
 
     <iframe class="preview-iframe" title="Eksempel" src="/preview-components/grid--how-it-works"></iframe>
 </div>
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--how-it-works">Kode</button>
   <div id="code-grid--how-it-works" class="accordion-content">
@@ -1759,68 +1761,76 @@
   </div>
 </div>
 
-    <p>Eksemplet ovenfor viser tre kolonner som har samme bredde på både mobil, tablet og desktop.</p>
+<p>Eksemplet ovenfor viser tre kolonner som har samme bredde på både mobil, tablet og desktop.</p>
+
 </section>
 
-<section class="section">
-    <h2 id="grid-settings">Indstillinger</h2>
-    <p>Grid systemet har følgende standardindstillinger:</p>
-    <table class="table">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Ekstra lille<br /><small>&lt;576px</small></th>
-                <th>Lille<br /><small>&ge;576px</small></th>
-                <th>Mellem<br /><small>&ge;768px</small></th>
-                <th>Stor<br /><small>&ge;992px</small></th>
-                <th>Ekstra stor<br /><small>&ge;1200px</small></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Max. container bredde</th>
-                <td>None (auto)</td>
-                <td>None (auto)</td>
-                <td>None (auto)</td>
-                <td>None (auto)</td>
-                <td>1200px</td>
-            </tr>
-            <tr>
-                <th>Klasser</th>
-                <td><code>.col-</code></td>
-                <td><code>.col-sm-</code></td>
-                <td><code>.col-md-</code></td>
-                <td><code>.col-lg-</code></td>
-                <td><code>.col-xl-</code></td>
-            </tr>
-            <tr>
-                <th>Antal kolonner</th>
-                <td colspan="5">12</td>
-            </tr>
-            <tr>
-                <th>Afstand mellem kolonner (Gutter)</th>
-                <td colspan="5">32px (16px på hver side af en kolonne)</td>
-            </tr>
-            <tr>
-                <th>Kan indlejres</th>
-                <td colspan="5">Ja - man kan godt have rækker inde i en kolonne</td>
-            </tr>
-            <tr>
-                <th>Ændre kolonners rækkefølge</th>
-                <td colspan="5">Ja</td>
-            </tr>
-        </tbody>
-    </table>
+<section class="styleguide-child-container content" id="section-/design/grids/grids-indstillinger">
+  <h2 id="indstillinger">Indstillinger</h2>
+  
+  
+  <p>Grid systemet har følgende standardindstillinger:</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Ekstra lille<br /><small>&lt;576px</small></th>
+            <th>Lille<br /><small>&ge;576px</small></th>
+            <th>Mellem<br /><small>&ge;768px</small></th>
+            <th>Stor<br /><small>&ge;992px</small></th>
+            <th>Ekstra stor<br /><small>&ge;1200px</small></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Max. container bredde</th>
+            <td>None (auto)</td>
+            <td>None (auto)</td>
+            <td>None (auto)</td>
+            <td>None (auto)</td>
+            <td>1200px</td>
+        </tr>
+        <tr>
+            <th>Klasser</th>
+            <td><code>.col-</code></td>
+            <td><code>.col-sm-</code></td>
+            <td><code>.col-md-</code></td>
+            <td><code>.col-lg-</code></td>
+            <td><code>.col-xl-</code></td>
+        </tr>
+        <tr>
+            <th>Antal kolonner</th>
+            <td colspan="5">12</td>
+        </tr>
+        <tr>
+            <th>Afstand mellem kolonner (Gutter)</th>
+            <td colspan="5">32px (16px på hver side af en kolonne)</td>
+        </tr>
+        <tr>
+            <th>Kan indlejres</th>
+            <td colspan="5">Ja - man kan godt have rækker inde i en kolonne</td>
+        </tr>
+        <tr>
+            <th>Ændre kolonners rækkefølge</th>
+            <td colspan="5">Ja</td>
+        </tr>
+    </tbody>
+</table>
+
 </section>
 
-<section class="section">
-    <h2 id="responsive-classes">Responsive klasser</h2>
-    <p>Som udgangspunkt findes der 5 breakpoints: extra small, small, medium, large, or extra large.</p>
+<section class="styleguide-child-container content" id="section-/design/grids/grids-responsive-klasser">
+  <h2 id="responsive-klasser">Responsive klasser</h2>
+  
+  
+  <p>Som udgangspunkt findes der 5 breakpoints: extra small, small, medium, large, or extra large.</p>
 
-    <h3>Klasser som rammer alle breakpoints</h3>
-    <p>Brug klassen <code>.col</code> eller <code>.col-*</code> uden responsivt prefix (fx. md).</p>
+<h3 id="klasser-som-rammer-alle-breakpoints">Klasser som rammer alle breakpoints</h3>
 
-    <div class="component-preview  component-preview-grid-all-breakpoints" aria-label="">
+<p>Brug klassen <code class="highlighter-rouge">.col</code> eller <code class="highlighter-rouge">.col-*</code> uden responsivt prefix (fx. md).</p>
+
+<div class="component-preview  component-preview-grid-all-breakpoints" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row mb-2 grid-example-measure-row">
@@ -1875,7 +1885,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--all-breakpoints">Kode</button>
   <div id="code-grid--all-breakpoints" class="accordion-content">
@@ -1939,10 +1949,11 @@
   </div>
 </div>
 
+<h3 id="fra-stablede-kolonner-til-kolonner-på-række">Fra stablede kolonner til kolonner på række</h3>
 
-    <h3>Fra stablede kolonner til kolonner på række</h3>
-    <p>Ved at bruge fx <code>.col-md-*</code> klassen vil kolonnerne til at begynde med være placeret lodret over hinanden på mobile enheder. Fra medium-skærme vil de være vist vandret på en række.</p>
-    <div class="component-preview  component-preview-grid-stacked-horizontal" aria-label="">
+<p>Ved at bruge fx <code class="highlighter-rouge">.col-md-*</code> klassen vil kolonnerne til at begynde med være placeret lodret over hinanden på mobile enheder. Fra medium-skærme vil de være vist vandret på en række.</p>
+
+<div class="component-preview  component-preview-grid-stacked-horizontal" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row mb-2">
@@ -1958,7 +1969,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--stacked-horizontal">Kode</button>
   <div id="code-grid--stacked-horizontal" class="accordion-content">
@@ -1983,11 +1994,11 @@
   </div>
 </div>
 
+<h3 id="brug-af-forskellige-kolonne-klasser">Brug af forskellige kolonne-klasser</h3>
 
-    <h3>Brug af forskellige kolonne-klasser</h3>
-    <p>Du kan mikse forskellige kolonne-klasser.</p>
+<p>Du kan mikse forskellige kolonne-klasser.</p>
 
-    <div class="component-preview  component-preview-grid-mix-match" aria-label="">
+<div class="component-preview  component-preview-grid-mix-match" aria-label="">
     <div class="grid-example">
     <div class="container w-percent-100">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
@@ -2012,7 +2023,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--mix-match">Kode</button>
   <div id="code-grid--mix-match" class="accordion-content">
@@ -2046,11 +2057,11 @@
   </div>
 </div>
 
+<h3 id="kolonneombrydning">Kolonneombrydning</h3>
 
-    <h3>Kolonneombrydning</h3>
-    <p>Hvis der er mere end 12 kolonner på en række, vil ekstra kolonner blive vist på en ny linje under de første 12.</p>
+<p>Hvis der er mere end 12 kolonner på en række, vil ekstra kolonner blive vist på en ny linje under de første 12.</p>
 
-    <div class="component-preview  component-preview-grid-column-wrapping" aria-label="">
+<div class="component-preview  component-preview-grid-column-wrapping" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row">
@@ -2064,7 +2075,7 @@
         </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--column-wrapping">Kode</button>
   <div id="code-grid--column-wrapping" class="accordion-content">
@@ -2087,11 +2098,11 @@
   </div>
 </div>
 
+<h3 id="indlejre">Indlejre</h3>
 
-    <h3>Indlejre</h3>
-    <p>Du kan indlejre flere rækker med tilhørende kolonner i hinanden.</p>
+<p>Du kan indlejre flere rækker med tilhørende kolonner i hinanden.</p>
 
-    <div class="component-preview  component-preview-grid-nesting" aria-label="">
+<div class="component-preview  component-preview-grid-nesting" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row">
@@ -2111,7 +2122,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--nesting">Kode</button>
   <div id="code-grid--nesting" class="accordion-content">
@@ -2140,10 +2151,11 @@
   </div>
 </div>
 
+<h3 id="ingen-afstand-mellem-kolonner-ingen-gutter">Ingen afstand mellem kolonner (ingen gutter)</h3>
 
-    <h3>Ingen afstand mellem kolonner (ingen gutter)</h3>
-    <p>Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen <code>no-gutters</code> til rækken.</p>
-    <div class="component-preview  component-preview-grid-no-gutters" aria-label="">
+<p>Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen <code class="highlighter-rouge">no-gutters</code> til rækken.</p>
+
+<div class="component-preview  component-preview-grid-no-gutters" aria-label="">
     <div class="grid-example container">
     <div class="row no-gutters">
         <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8
@@ -2153,7 +2165,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--no-gutters">Kode</button>
   <div id="code-grid--no-gutters" class="accordion-content">
@@ -2172,15 +2184,20 @@
   </div>
 </div>
 
+
 </section>
 
-<section class="section">
-    <h2 id="auto-fill-layout-columns">'Auto' og 'Fill' kolonner</h2>
-    <p>Du kan specificere bredden på en kolonne uden at angive en eksplicit nummer-klasse som fx <code>col-sm-6</code>.</p>
-    
-    <h3>Specifik bredde på kun én kolonne</h3>
-    <p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (.col-6). De øvrige kolonner tilpasser sig automatisk samme bredde. </p>
-    <div class="component-preview  component-preview-grid-one-column-width" aria-label="">
+<section class="styleguide-child-container content" id="section-/design/grids/grids-auto-fill-kolonner">
+  <h2 id="auto-og-fill-kolonner">'Auto' og 'Fill' kolonner</h2>
+  
+  
+  <p>Du kan specificere bredden på en kolonne uden at angive en eksplicit nummer-klasse som fx <code class="highlighter-rouge">col-sm-6</code>.</p>
+
+<h3 id="specifik-bredde-på-kun-én-kolonne">Specifik bredde på kun én kolonne</h3>
+
+<p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (.col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.</p>
+
+<div class="component-preview  component-preview-grid-one-column-width" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row">
@@ -2209,7 +2226,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--one-column-width">Kode</button>
   <div id="code-grid--one-column-width" class="accordion-content">
@@ -2247,10 +2264,11 @@
   </div>
 </div>
 
+<h3 id="individuel-kolonnebredde-efter-indhold">Individuel kolonnebredde efter indhold</h3>
 
-    <h3>Individuel kolonnebredde efter indhold</h3>
-    <p>Ved at brug <code>col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
-    <div class="component-preview  component-preview-grid-variable-width-content" aria-label="">
+<p>Ved at brug <code class="highlighter-rouge">col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
+
+<div class="component-preview  component-preview-grid-variable-width-content" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row justify-content-md-center mb-2">
@@ -2279,7 +2297,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--variable-width-content">Kode</button>
   <div id="code-grid--variable-width-content" class="accordion-content">
@@ -2317,14 +2335,18 @@
   </div>
 </div>
 
+
 </section>
 
-<section class="section">
-    <h2 id="reordering">Rækkefølge</h2>
-    <h3>Klasser (classes)</h3>
-    <p>Brug klasserne <code>.order-</code> til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx <code>.order-1.order-md-2</code>).</p>
+<section class="styleguide-child-container content" id="section-/design/grids/grids-raekkefoelge">
+  <h2 id="rækkefølge">Rækkefølge</h2>
+  
+  
+  <h3 id="klasser-classes">Klasser (classes)</h3>
 
-    <div class="component-preview  component-preview-grid-ordering-visual" aria-label="">
+<p>Brug klasserne <code class="highlighter-rouge">.order-</code> til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx <code class="highlighter-rouge">.order-1.order-md-2</code>).</p>
+
+<div class="component-preview  component-preview-grid-ordering-visual" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row">
@@ -2342,7 +2364,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--ordering-visual">Kode</button>
   <div id="code-grid--ordering-visual" class="accordion-content">
@@ -2369,11 +2391,11 @@
   </div>
 </div>
 
+<h3 id="forskyd-kolonner">Forskyd kolonner</h3>
 
-    <h3>Forskyd kolonner</h3>
-    <p>Brug klasserne <code>.offset-</code> til at forskyde kolonner, fx forskyder <code>.offset-md-4</code> 4 kolonner til højre.</p>
+<p>Brug klasserne <code class="highlighter-rouge">.offset-</code> til at forskyde kolonner, fx forskyder <code class="highlighter-rouge">.offset-md-4</code> 4 kolonner til højre.</p>
 
-    <div class="component-preview  component-preview-grid-offsets" aria-label="">
+<div class="component-preview  component-preview-grid-offsets" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row mb-2 grid-example-measure-row">
@@ -2429,7 +2451,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--offsets">Kode</button>
   <div id="code-grid--offsets" class="accordion-content">
@@ -2494,10 +2516,9 @@
   </div>
 </div>
 
+<p>Du kan nulstille forskydning ved fx at bruge klassen <code class="highlighter-rouge">offset-md-0</code>.</p>
 
-    <p>Du kan nulstille forskydning ved fx at bruge klassen <code>offset-md-0</code></p>
-
-    <div class="component-preview  component-preview-grid-offsets-reset" aria-label="">
+<div class="component-preview  component-preview-grid-offsets-reset" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row mb-2">
@@ -2517,7 +2538,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--offsets-reset">Kode</button>
   <div id="code-grid--offsets-reset" class="accordion-content">
@@ -2547,18 +2568,22 @@
   </div>
 </div>
 
-  
+
 </section>
 
-<section class="section">
-    <h2 id="utility">Hjælpeklasser</h2>
-    <p>Designsystemet kommer med forskellige hjælpeklasser, fx. flex, margin og bredde. Du kan kombinere disse hjælpeklasser med grid-systemet.</p>
-    <h3>Hjælpeklasser: Flexbox</h3>
-    <p>Brug designsystemets flexbox hjælpeklasser til at ændre på placeringen af kolonnerne og placeringen af indholdet i kolonnerne.</p>
+<section class="styleguide-child-container content" id="section-/design/grids/grids-hjaelpeklasser">
+  <h2 id="hjælpeklasser">Hjælpeklasser</h2>
+  
+  
+  <p>Designsystemet kommer med forskellige hjælpeklasser, fx. flex, margin og bredde. Du kan kombinere disse hjælpeklasser med grid-systemet.</p>
 
-    <h4>Vertikal alignment</h4>
+<h3 id="hjælpeklasser-flexbox">Hjælpeklasser: Flexbox</h3>
 
-    <div class="component-preview  component-preview-grid-util-flex-vertical-align-01" aria-label="">
+<p>Brug designsystemets flexbox hjælpeklasser til at ændre på placeringen af kolonnerne og placeringen af indholdet i kolonnerne.</p>
+
+<h4 id="vertikal-alignment">Vertikal alignment</h4>
+
+<div class="component-preview  component-preview-grid-util-flex-vertical-align-01" aria-label="">
     <div class="grid-example v-align">
     <div class="container">
         <div class="row align-items-start mb-2 grid-example-row-flex">
@@ -2598,7 +2623,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--util-flex-vertical-align-01">Kode</button>
   <div id="code-grid--util-flex-vertical-align-01" class="accordion-content">
@@ -2647,9 +2672,8 @@
   </div>
 </div>
 
-
-    <br />
-    <div class="component-preview  component-preview-grid-util-flex-vertical-align-02" aria-label="">
+<p><br /></p>
+<div class="component-preview  component-preview-grid-util-flex-vertical-align-02" aria-label="">
     <div class="grid-example v-align">
     <div class="container">
         <div class="row mb-2 grid-example-row-flex">
@@ -2667,7 +2691,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--util-flex-vertical-align-02">Kode</button>
   <div id="code-grid--util-flex-vertical-align-02" class="accordion-content">
@@ -2694,10 +2718,9 @@
   </div>
 </div>
 
+<h4 id="horisontal-alignment">Horisontal alignment</h4>
 
-    <h4>Horisontal alignment</h4>
-
-    <div class="component-preview  component-preview-grid-util-flex-horizontal-align" aria-label="">
+<div class="component-preview  component-preview-grid-util-flex-horizontal-align" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row justify-content-start mb-2">
@@ -2744,7 +2767,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--util-flex-horizontal-align">Kode</button>
   <div id="code-grid--util-flex-horizontal-align" class="accordion-content">
@@ -2800,11 +2823,11 @@
   </div>
 </div>
 
+<h3 id="hjælpeklasser-margin">Hjælpeklasser: Margin</h3>
 
-    <h3>Hjælpeklasser: Margin</h3>
-    <p>Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx <code>mr-auto</code>.</p>
+<p>Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx <code class="highlighter-rouge">mr-auto</code>.</p>
 
-    <div class="component-preview  component-preview-grid-util-margin" aria-label="">
+<div class="component-preview  component-preview-grid-util-margin" aria-label="">
     <div class="grid-example">
     <div class="container">
         <div class="row mb-2">
@@ -2823,7 +2846,7 @@
 </div>
 </div>
 
-    <div class="accordion accordion-bordered code-sample">
+<div class="accordion accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-grid--util-margin">Kode</button>
   <div id="code-grid--util-margin" class="accordion-content">
@@ -2851,38 +2874,43 @@
   </div>
 </div>
 
+<h3 id="hjælpeklasser-bredde">Hjælpeklasser: Bredde</h3>
 
-    <h3>Hjælpeklasser: Bredde</h3>
-    <p>Vil du have rækker og kolonner som går fra kant til kant, skal du undlade .container eller tilføje klassen <code>w-percent-100</code>.</p>
+<p>Vil du have rækker og kolonner som går fra kant til kant, skal du undlade .container eller tilføje klassen <code class="highlighter-rouge">w-percent-100</code>.</p>
+
 </section>
 
-<section class="section">
-    <h2 id="variables">Sass variabler i designsystemet</h2>
-    <pre>
-    <code class="lang-scss">$grid-columns:      12;
-    $grid-gutter-width: 30px;
+<section class="styleguide-child-container content" id="section-/design/grids/grids-sass-variabler">
+  <h2 id="sass-variabler-i-designsystemet">Sass variabler i designsystemet</h2>
+  
+  
+  <div class="highlighter-rouge"><pre class="highlight"><code>$grid-columns:      12;
+$grid-gutter-width: 30px;
 
-    $grid-breakpoints: (
-        // Extra small screen / phone
-        xs: 0,
-        // Small screen / phone
-        sm: 576px,
-        // Medium screen / tablet
-        md: 768px,
-        // Large screen / desktop
-        lg: 992px,
-        // Extra large screen / wide desktop
-        xl: 1200px
-    );
+$grid-breakpoints: (
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 768px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px
+);
 
-    $container-max-widths: (
-        sm: 100%,
-        md: 100%,
-        lg: 100%,
-        xl: 1200px
-    );</code>
-    </pre>
+$container-max-widths: (
+    sm: 100%,
+    md: 100%,
+    lg: 100%,
+    xl: 1200px
+);
+</code></pre>
+</div>
+
 </section>
+
 
       </section>
     </main>

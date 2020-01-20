@@ -1397,60 +1397,32 @@
           <h1 id="hjørner">Hjørner</h1>
           
 
-          <div class="component-preview  component-preview-border-radius" aria-label="">
-    <div class="container">
-    <h3 class="h5">Firkantede hjørner (0px)</h3>
-    <p class="form-hint">Bruges til elementer, som man ikke kan interagere
-        med.</p>
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6">
-            <div class="static-border-radius-example"></div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6">
-            <pre>border-radius: 0;</pre>
-        </div>
-    </div>
-    <h3 class="h5">Runde hjørner (4px)</h3>
-    <p class="form-hint">Bruges til interaktive elementer, fx input-felter
-        og knapper.</p>
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6">
-            <div class="interactive-border-radius-example"></div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6">
-            <pre>border-radius: 4px</pre>
-        </div>
-    </div>
-</div>
-</div>
+          <h3 id="implementering">Implementering</h3>
 
-<div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="border-radius-docs">
-    Implementering
-  </button>
-  <div id="border-radius-docs" class="accordion-content">
-    <section>
-        <h3 class="h4">Statiske hjørner</h3>
-        <ul>
-            <li>Statiske hjørner er lige og har en <code>border-radius: 0px;</code></li>
-            <li>For at få lige hjørner skal du bruge variablen <code>$static-border-radius</code></li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border-radius: $static-border-radius;</code>
-        </div>
-        <h3 class="h4">Interaktive hjørner</h3>
-        <ul>
-            <li>Interaktive hjørner er runde og har en <code>border-radius: 4px;</code></li>
-            <li>For at få runde hjørner skal du bruge variablen <code>$interactive-border-radius</code></li>
-            <li>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</li>
-        </ul>
-        <p class="h5 mb-3">Eksempel:</p>
-        <div class="code-highlight">
-            <code>border-radius: $interactive-border-radius;</code>
-        </div>
-    </section>
-  </div>
+<h4 id="statiske-hjørner">Statiske hjørner</h4>
+
+<ul>
+  <li>Statiske hjørner er lige og har en <code class="highlighter-rouge">border-radius: 0px;</code></li>
+  <li>For at få lige hjørner skal du bruge variablen <code class="highlighter-rouge">$static-border-radius</code></li>
+</ul>
+
+<h5 id="eksempel">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border-radius: $static-border-radius;
+</code></pre>
+</div>
+<h4 id="interaktive-hjørner">Interaktive hjørner</h4>
+
+<ul>
+  <li>Interaktive hjørner er runde og har en <code class="highlighter-rouge">border-radius: 4px;</code></li>
+  <li>For at få runde hjørner skal du bruge variablen <code class="highlighter-rouge">$interactive-border-radius</code></li>
+  <li>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</li>
+</ul>
+
+<h5 id="eksempel-1">Eksempel:</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>border-radius: $interactive-border-radius;
+</code></pre>
 </div>
 
 
