@@ -1490,7 +1490,7 @@
     
       
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -1670,7 +1670,7 @@
     
       
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -2473,6 +2473,41 @@
           
 
           
+<section class="styleguide-child-container content" id="section-/komponenter/tjekboks/tjekboks-example">
+  
+  
+  
+  <div class="component-preview  component-preview-checkbox-large p-4" aria-label="Eksempel på tjekbokse">
+    <div class="form-group">
+    <fieldset>
+        <legend class="h5">Stor tjekboks (anbefalet)</legend>
+        <ul class="nobullet-list">
+            <li>
+                <input id="large1" type="checkbox" name="checkbox-large[]" value="1" class="form-checkbox  checkbox-large " />
+                <label for="large1" class="">Tjekboks 1</label>
+            </li>
+            <li>
+                <input id="large2" type="checkbox" name="checkbox-large[]" value="2" class="form-checkbox  checkbox-large " />
+                <label for="large2" class="">Tjekboks 2</label>
+            </li>
+            <li>
+                <input id="large3" type="checkbox" name="checkbox-large[]" value="3" class="form-checkbox  checkbox-large " />
+                <label for="large3" class="">Tjekboks 3</label>
+            </li>
+            <li>
+                <input id="large4" type="checkbox" name="checkbox-large[]" value="4" class="form-checkbox  checkbox-large " disabled="" />
+                <label for="large4" class="">Tjekboks 4</label>
+            </li>
+        </ul>
+    </fieldset>
+</div>
+</div>
+
+  
+  
+
+</section>
+
 <section class="styleguide-child-container content" id="section-/komponenter/tjekboks/tjekboks-retningslinjer">
   <h2 id="retningslinjer">Retningslinjer</h2>
   
@@ -2504,168 +2539,90 @@
   <li>Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er brugbar på touchskærme.</li>
 </ul>
 
-<h2 id="implementering">Implementering</h2>
+</section>
 
-<ul>
-  <li>Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.</li>
-  <li>Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.</li>
-  <li>Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</li>
-  <li>Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.</li>
-</ul>
+<section class="styleguide-child-container content" id="section-/komponenter/tjekboks/tjekboks-fejl">
+  <h2 id="tjekboks-med-fejl">Tjekboks med fejl</h2>
+  
+  
+  <div class="component-preview  component-preview-checkbox-error p-4" aria-label="Eksempel på tjekbokse med fejl">
+    <div class="form-group form-error">
+    <fieldset>
+        <legend class="h5">Tjekboks med fejl</legend>
+        <span class="form-error-message" role="alert">Hjælpsom
+            fejlbesked</span>
+        <ul class="nobullet-list">
+            <li>
+                <input id="checkboxerror1" type="checkbox" name="checkboxerror" value="1" class="form-checkbox  checkbox-large " />
+                <label for="checkboxerror1" class="">Tjekboks 1</label>
+            </li>
+            <li>
+                <input id="checkboxerror2" type="checkbox" name="checkboxerror[]" value="2" class="form-checkbox  checkbox-large " />
+                <label for="checkboxerror2" class="">Tjekboks 2</label>
+            </li>
+            <li>
+                <input id="checkboxerror3" type="checkbox" name="checkboxerror[]" value="3" class="form-checkbox  checkbox-large " />
+                <label for="checkboxerror3" class="">Tjekboks 3</label>
+            </li>
+        </ul>
+    </fieldset>
+</div>
+</div>
+
+  
+  
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tjekboks/tjekboks-example">
+<section class="styleguide-child-container content" id="section-/komponenter/tjekboks/tjekboks-small">
+  <h2 id="lille-tjekboks">Lille tjekboks</h2>
   
   
-  
-  <div class="component-preview  component-preview-checkbox p-4" aria-label="Eksempel på tjekbokse">
-    <div class="container">
-
-    <!-- Example of small checkbox -->
+  <div class="component-preview  component-preview-checkbox-small p-4" aria-label="Eksempel på små tjekbokse">
     <div class="form-group">
-        <fieldset>
-            <legend class="h5">Lille tjekboks</legend>
-            <ul class="nobullet-list">
+    <fieldset>
+        <legend class="h5">Lille tjekboks</legend>
+        <ul class="nobullet-list">
+            <li>
+                <input id="small1" type="checkbox" name="checkbox-small[]" value="1" class="form-checkbox   " />
+                <label for="small1" class="">Tjekboks 1</label>
+            </li>
+            <li>
+                <input id="small2" type="checkbox" name="checkbox-small[]" value="2" class="form-checkbox   " />
+                <label for="small2" class="">Tjekboks 2</label>
+            </li>
+            <li>
+                <input id="small3" type="checkbox" name="checkbox-small[]" value="3" class="form-checkbox   " />
+                <label for="small3" class="">Tjekboks 3</label>
+            </li>
+            <li>
+                <input id="small4" type="checkbox" name="checkbox-small[]" value="4" class="form-checkbox   " disabled="" />
+                <label for="small4" class="">Tjekboks 4</label>
+            </li>
+        </ul>
+    </fieldset>
+</div>
+</div>
 
-                <li>
+  
+  
 
-                    <input id="Unchecked" type="checkbox" name="unchecked" value="unchecked" class="form-checkbox   " />
-                    <label for="Unchecked" class="">Ikke-udfyldt
-                        tjekboks</label>
+</section>
 
-                </li>
-
-                <li>
-
-                    <input id="Checked" type="checkbox" name="checked" value="checked" class="form-checkbox   " checked="" />
-                    <label for="Checked" class="">Udfyldt tjekboks</label>
-
-                </li>
-
-                <li>
-
-                    <input id="disabled" type="checkbox" name="disabled" value="disabled" class="form-checkbox   " disabled="" />
-                    <label for="disabled" class="">Inaktiv ikke-udfyldt
-                        tjekboks (disabled)</label>
-
-                </li>
-
-                <li>
-
-                    <input id="disabled-checked" type="checkbox" name="disabled-checked" value="disabled-checked" class="form-checkbox   " disabled="" checked="" />
-                    <label for="disabled-checked" class="">Inaktiv udfyldt
-                        tjekboks (disabled)</label>
-
-                </li>
-
-                <li>
-
-                    <input id="fokus" type="checkbox" name="Focus" value="fokus" class="form-checkbox focus  " />
-                    <label for="fokus" class="">Ikke-udfyldt tjekboks i
-                        fokus</label>
-
-                </li>
-
-            </ul>
-        </fieldset>
-    </div>
-
-    <!-- Example of large checkbox (recommended) -->
+<section class="styleguide-child-container content" id="section-/komponenter/tjekboks/tjekboks-collapse">
+  <h2 id="tjekbokse-med-skjult-indhold">Tjekbokse med skjult indhold</h2>
+  
+  
+  <div class="component-preview  component-preview-checkbox-collapse p-4" aria-label="Eksempel på tjekboks med skjult indhold">
     <div class="form-group">
-        <fieldset>
-            <legend class="h5">Stor tjekboks (anbefalet)</legend>
-            <ul class="nobullet-list">
 
-                <li>
+    <input id="id-checkbox1" type="checkbox" name="checkbox1" value="1" class="form-checkbox  checkbox-large js-checkbox-toggle-content" data-js-target="#collapse-check1" aria-controls="collapse-check1" aria-expanded="false" />
+    <label for="id-checkbox1" class="">Tjekboks viser indhold</label>
 
-                    <input id="Unchecked-large" type="checkbox" name="unchecked-large" value="unchecked-large" class="form-checkbox  checkbox-large " />
-                    <label for="Unchecked-large" class="">Stor ikke-udfyldt
-                        tjekboks</label>
-
-                </li>
-
-                <li>
-
-                    <input id="Checked-large" type="checkbox" name="checked-large" value="checked-large" class="form-checkbox  checkbox-large " checked="" />
-                    <label for="Checked-large" class="">Stor udfyldt
-                        tjekboks</label>
-
-                </li>
-
-                <li>
-
-                    <input id="disabled-large" type="checkbox" name="disabled-large" value="disabled-large" class="form-checkbox  checkbox-large " disabled="" />
-                    <label for="disabled-large" class="">Stor inaktiv
-                        ikke-udfyldt tjekboks (disabled)</label>
-
-                </li>
-
-                <li>
-
-                    <input id="disabled-checked-large" type="checkbox" name="disabled-checked-large" value="disabled-checked-large" class="form-checkbox  checkbox-large " disabled="" checked="" />
-                    <label for="disabled-checked-large" class="">Stor
-                        inaktiv udfyldt tjekboks (disabled)</label>
-
-                </li>
-
-                <li>
-
-                    <input id="fokus-large" type="checkbox" name="fokus-large" value="fokus-large" class="form-checkbox focus checkbox-large " />
-                    <label for="fokus-large" class="">Stor ikke-udfyldt
-                        tjekboks i fokus</label>
-
-                </li>
-
-            </ul>
-        </fieldset>
-    </div>
-
-    <!-- Example with error message -->
-    <div class="form-group form-error">
-        <fieldset>
-            <legend class="h5">Tjekboks med fejl</legend>
-            <span class="form-error-message" role="alert">Hjælpsom
-                fejlbesked</span>
-            <ul class="nobullet-list">
-
-                <li>
-
-                    <input id="car" type="checkbox" name="transport[]" value="car" class="form-checkbox  checkbox-large " />
-                    <label for="car" class="">Bil</label>
-
-                </li>
-
-                <li>
-
-                    <input id="bus" type="checkbox" name="transport[]" value="bus" class="form-checkbox  checkbox-large " />
-                    <label for="bus" class="">Bus</label>
-
-                </li>
-
-                <li>
-
-                    <input id="train" type="checkbox" name="transport[]" value="train" class="form-checkbox  checkbox-large " />
-                    <label for="train" class="">Tog</label>
-
-                </li>
-
-                <li>
-
-                    <input id="plane" type="checkbox" name="transport[]" value="plane" class="form-checkbox  checkbox-large " />
-                    <label for="plane" class="">Fly</label>
-
-                </li>
-
-                <li>
-
-                    <input id="ferry" type="checkbox" name="transport[]" value="ferry" class="form-checkbox  checkbox-large " />
-                    <label for="ferry" class="">Færge</label>
-
-                </li>
-
-            </ul>
-        </fieldset>
+    <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
+        <div class="py-4">
+            <p>Dette indhold bliver vist når tjekboksen er valgt.</p>
+        </div>
     </div>
 </div>
 </div>
