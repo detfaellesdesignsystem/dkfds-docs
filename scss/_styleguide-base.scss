@@ -550,7 +550,7 @@
 //------------ Code
 
 figure.highlight{
-  border: $outer-border;
+  border: $inner-border;
 }
 
 code{
@@ -859,12 +859,12 @@ code {
 /////////////////// component preview //////////////////////
 
 .component-preview {
-  border: $outer-border;
+  border: $inner-border;
   position: relative;
   margin-bottom: 8px;
 
   .component-link{
-    border-bottom: $inner-border;
+    border-bottom: $inner-inner-border;
   }
 
   figure.highlight{

@@ -5,22 +5,18 @@
     <fieldset>
         <legend class="h4">Vælg en radioknap</legend>
         <ul class="nobullet-list">
-            <li>
-                {{radiobutton("id-radio1", "radio-group1", "Value", false, true, "Radioknap viser indhold", "", false, true, "", "", "data-js-target='#collapse-radio1' aria-controls='collapse-radio1' aria-expanded='false'", "", "Udfyld informationer herunder") }}
+            <li>{{radiobutton("id-radio1", "radio-group1", "Value", false, true, "Radioknap viser indhold", "", false, true, "", "", "data-js-target='#collapse-radio1' aria-controls='collapse-radio1' aria-expanded='false'", "", "Udfyld informationer herunder") }}
                 <div id="collapse-radio1" aria-hidden="true" class="box-border-l collapsed">
                     <div class="py-4">
                       {{textinput("textinput1", "Inputfelt med label", "", "input-width-m", "", "text1", "", false, "", "", "", "", "", "")}}
                     </div>
-                </div>
-            </li>
-            <li>
-                {{radiobutton("id-radio2", "radio-group1", "Value", false, false, "Radioknap viser indhold med fejl", "", false, true, "", "", "data-js-target='#collapse-radio2'", "", "Udfyld informationer herunder")}}
+                </div></li>
+            <li>{{radiobutton("id-radio2", "radio-group1", "Value", false, false, "Radioknap viser andet indhold", "", false, true, "", "", "data-js-target='#collapse-radio2'", "", "Udfyld informationer herunder")}}
                 <div id="collapse-radio2" aria-hidden="true" class="box-border-l collapsed">
                     <div class="py-4">
-                    {{textinput("textinput2", "Inputfelt med label", "", "input-width-m", "Hjælpsom fejlbesked", "text2", "", false, "", "", "", "", "", "")}}
+                    {{textinput("textinput2", "Inputfelt med anden label", "", "input-width-m", "", "text2", "", false, "", "", "", "", "", "")}}
                     </div>
-                </div>
-            </li>
+                </div></li>
         </ul>
     </fieldset>
 </div>

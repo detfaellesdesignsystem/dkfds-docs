@@ -1,3 +1,8 @@
+--- 
+permalink: /preview-components/radio-collapse.html
+layout: example-contained 
+title: Radio-collapse.html
+---
 <div class="js-radio-toggle-group">
     <fieldset>
         <legend class="h4">Vælg en radioknap</legend>

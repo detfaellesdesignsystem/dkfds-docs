@@ -1,7 +1,7 @@
 ---
 title: ""
 parent: Checkbox
-order: 20
-component: checkbox
+order: 10
+component: checkbox-large
 componentTitle: Eksempel på tjekbokse
 ---

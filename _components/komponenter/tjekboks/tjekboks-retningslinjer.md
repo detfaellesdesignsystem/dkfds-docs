@@ -1,9 +1,8 @@
 ---
 title: Retningslinjer
 parent: Checkbox
-order: 10
+order: 20
 ---
-
 
 ### Brugervenlighed
 
@@ -25,10 +24,3 @@ order: 10
 - Du bør opstille lister med tjekbokse i lodret linje af hensyn til brugerens læseretning.
 - Anvend et positivt sprog til værdierne. I stedet for fx ”Jeg vil ikke modtage bekræftelse på email” bør du skrive ”Jeg vil gerne modtage bekræftelse på email”.
 - Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er brugbar på touchskærme.
-
-## Implementering
-
-- Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.
-- Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.
-- Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
-- Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.
