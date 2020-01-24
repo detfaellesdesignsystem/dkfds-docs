@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-aes-page-5.html
-layout: iframed 
+layout: example-contained 
 title: Example-aes-page-5.html
 ---
 <header class="header">
@@ -214,15 +214,15 @@ title: Example-aes-page-5.html
 
     <div class="form-group">
         <label class="form-label " for="id-skadenummer"
-            id="form-label-id-skadenummer">Jeres sags-/skadenummer<a
-                href="javascript:void(0)" class="js-tooltip"
-                data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a></label>
+            id="form-label-id-skadenummer">
+            Jeres sags-/skadenummer<a href="javascript:void(0)"
+                class="js-tooltip"
+                data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a>
+        </label>
 
-        <input class="form-input  input-width-m " placeholder=""
-            id="id-skadenummer" value=""
-            name="Input til Jeres sags-/skadenummer" type="text">
+        <input class="form-input  input-width-m " id="id-skadenummer"
+            value="" name="Input til Jeres sags-/skadenummer" type="text">
     </div>
-
     <div class="form-group">
 
         <input id="id-retssag" type="checkbox"

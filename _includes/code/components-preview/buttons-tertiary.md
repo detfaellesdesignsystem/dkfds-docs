@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/buttons-tertiary.html
-layout: iframed 
+layout: example-contained 
 title: Buttons-tertiary.html
 ---
 <button class="button button-tertiary">

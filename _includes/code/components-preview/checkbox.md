@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/checkbox.html
-layout: iframed 
+layout: example-contained 
 title: Checkbox.html
 ---
 <div class="container">

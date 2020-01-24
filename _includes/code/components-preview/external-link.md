@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/external-link.html
-layout: iframed 
+layout: example-contained 
 title: External-link.html
 ---
 <div class="container">

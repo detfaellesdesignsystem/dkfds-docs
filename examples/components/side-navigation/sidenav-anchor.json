@@ -8,46 +8,18 @@
       {
         "text": "Hovedside",
         "current": true,
+        "active": true,
+        "isAnchorLinks": true,
         "links": [
           {
-            "text": "Underside"
+            "text": "Anchor link",
+            "href" : "#"
           },
           {
-            "text": "Underside",
-            "active": true,
-            "isAnchorLinks": true,
-            "links": [
-              {
-                "text": "Anchor link",
-                "href" : "#"
-              },
-              {
-                "text": "Anchor link",
-                "href" : "#"
-              },
-              {
-                "text": "Anchor link",
-                "href" : "#"
-              },
-              {
-                "text": "Anchor link",
-                "href" : "#"
-              }
-            ]
-          },
-          {
-            "text": "Underside"
-          },
-          {
-            "text": "Underside"
-          },
-          {
-            "text": "Underside"
+            "text": "Anchor link",
+            "href" : "#"
           }
         ]
-      },
-      {
-        "text": "Hovedside"
       }
     ]
   }

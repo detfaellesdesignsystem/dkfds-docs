@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alert-warning.html
-layout: iframed 
+layout: example-contained 
 title: Alert-warning.html
 ---
 <div class="alert alert-warning" role="alert">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-aes-page-3.html
-layout: iframed 
+layout: example-contained 
 title: Example-aes-page-3.html
 ---
 <header class="header">
@@ -173,16 +173,15 @@ title: Example-aes-page-3.html
             class="button button-search"><svg class="icon-svg m-0" focusable="false" aria-hidden="true"><use xlink:href="#magnify"></use></svg><span
                 class="sr-only">Søg</span></button>
     </div>
-
     <div class="form-group">
-        <label class="form-label " for="navn"
-            id="form-label-navn">Navn</label>
+        <label class="form-label " for="navn" id="form-label-navn">
+            Navn
+        </label>
 
-        <input class="form-input  input-width-m " placeholder="" id="navn"
+        <input class="form-input  input-width-m " id="navn"
             value="Susanne Maria Zaggariasen" name="navn" type="text"
             readonly>
     </div>
-
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/AES-erstatningssag/aes-4"
             class="button button-primary">Næste</a>

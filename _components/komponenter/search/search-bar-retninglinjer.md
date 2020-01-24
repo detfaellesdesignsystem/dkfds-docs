@@ -4,12 +4,6 @@ parent: Search-bar
 order: 30
 headingClass: h3
 ---
-<h2 class="h4">Tilgængelighed</h2>
-
-- Søgefeltet skal overholde samme krav til tilgængelighed som andre formularelementer. 
-- Ordet ”Søg” skal altid fremgå af søgeknappen. Hvis der anvendes et lup-ikon, skal ”søg” fremgå i en aria-label, så skærmlæsere kan se funktionen.
-- Formularens felt skal have et skjult label af hensyn til skærmlæsere.
-
 <h2 class="h4">Brugervenlighed</h2>
 <h3 class="h5">Anvendes til</h3>
 

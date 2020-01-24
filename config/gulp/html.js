@@ -40,17 +40,17 @@ function getPath (dirname){
 function createMarkdown(content, path, file) {
     var fileName = path.split("\\").pop();
     var header = ``;
-    if(!path.includes('plugins')) {
+    if(path.includes('footer') || path.includes('cookie-message') || path.includes('header')) {
         header = `--- 
 permalink: /preview-components/` + fileName + `
-layout: iframed 
+layout: example 
 title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
 ---
 `
     } else{
         header = `--- 
 permalink: /preview-components/` + fileName + `
-layout: iframed-plugins 
+layout: example-contained 
 title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
 ---
 `

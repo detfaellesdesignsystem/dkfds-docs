@@ -1,39 +1,30 @@
 --- 
 permalink: /preview-components/sidenav-normal-level1.html
-layout: iframed 
+layout: example-contained 
 title: Sidenav-normal-level1.html
 ---
-<div class="container mt-6 mb-6">
-    <nav>
-        <ul class="sidenav-list">
+<nav>
+    <ul class="sidenav-list" role="menu">
 
-            <li class="   ">
-                <a href="">
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
 
-                    Hovedside
+        </li>
+        <li class="current  active " role="none">
+            <a href="" role="menuitem" aria-current="true"
+                aria-current="page">
+                Hovedside
+            </a>
 
-                </a>
+        </li>
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
 
-            </li>
+        </li>
 
-            <li class="current active  ">
-                <a href="">
-
-                    Hovedside
-
-                </a>
-
-            </li>
-
-            <li class="   ">
-                <a href="">
-
-                    Hovedside
-
-                </a>
-
-            </li>
-
-        </ul>
-    </nav>
-</div>
+    </ul>
+</nav>

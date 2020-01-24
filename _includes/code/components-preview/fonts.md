@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/fonts.html
-layout: iframed 
+layout: example-contained 
 title: Fonts.html
 ---
 <section id="IBMPlexSans">

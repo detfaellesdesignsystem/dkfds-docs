@@ -1,132 +1,87 @@
 --- 
 permalink: /preview-components/sidenav.html
-layout: iframed 
+layout: example-contained 
 title: Sidenav.html
 ---
-<div class="container">
-    <div class="row">
-        <div class="col-12 sidebar-col">
-            <nav>
-                <ul class="sidenav-list">
+<nav>
+    <ul class="sidenav-list">
 
-                    <li class="   ">
-                        <a href="">
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
 
-                            Hovedside
+        </li>
+        <li class="current  " role="none">
+            <a href="" role="menuitem" aria-current="true">
+                Underside
+            </a>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
 
-                        </a>
+                </li>
+                <li class="current  " role="none">
+                    <a href="" role="menuitem" aria-current="true">
+                        Underside
+                    </a>
+                    <ul class="sidenav-sub_list" role="menu">
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
 
-                    </li>
+                        </li>
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
 
-                    <li class="current   ">
-                        <a href="">
+                        </li>
+                        <li class=" active " role="none">
+                            <a href="" role="menuitem" aria-current="page">
+                                Underside
+                            </a>
 
-                            Underside
+                        </li>
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
 
-                        </a>
+                        </li>
+                    </ul>
 
-                        <ul class="sidenav-sub_list">
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
 
-                            <li class="   ">
-                                <a href="">
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
 
-                                    Underside
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
 
-                                </a>
+                </li>
+            </ul>
 
-                            </li>
+        </li>
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
 
-                            <li class="current   ">
-                                <a href="">
+        </li>
 
-                                    Underside
-
-                                </a>
-
-                                <ul class="sidenav-sub_list">
-
-                                    <li class="   ">
-                                        <a href="">
-
-                                            Underside
-
-                                        </a>
-
-                                    </li>
-
-                                    <li class="   ">
-                                        <a href="">
-
-                                            Underside
-
-                                        </a>
-
-                                    </li>
-
-                                    <li class=" active  ">
-                                        <a href="">
-
-                                            Underside
-
-                                        </a>
-
-                                    </li>
-
-                                    <li class="   ">
-                                        <a href="">
-
-                                            Underside
-
-                                        </a>
-
-                                    </li>
-
-                                </ul>
-
-                            </li>
-
-                            <li class="   ">
-                                <a href="">
-
-                                    Underside
-
-                                </a>
-
-                            </li>
-
-                            <li class="   ">
-                                <a href="">
-
-                                    Underside
-
-                                </a>
-
-                            </li>
-
-                            <li class="   ">
-                                <a href="">
-
-                                    Underside
-
-                                </a>
-
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li class="   ">
-                        <a href="">
-
-                            Hovedside
-
-                        </a>
-
-                    </li>
-
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
+    </ul>
+</nav>

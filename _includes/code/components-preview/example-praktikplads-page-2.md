@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-praktikplads-page-2.html
-layout: iframed 
+layout: example-contained 
 title: Example-praktikplads-page-2.html
 ---
 <header class="header">

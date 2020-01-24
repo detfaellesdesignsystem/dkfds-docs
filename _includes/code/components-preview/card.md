@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/card.html
-layout: iframed 
+layout: example-contained 
 title: Card.html
 ---
 <div class="card">

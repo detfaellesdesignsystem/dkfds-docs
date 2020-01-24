@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/inlinetext.html
-layout: iframed 
+layout: example-contained 
 title: Inlinetext.html
 ---
 <div class="container">

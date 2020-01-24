@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/table--body-headers.html
-layout: iframed 
+layout: example 
 title: Table--body-headers.html
 ---
 <div class="container">

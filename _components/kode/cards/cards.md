@@ -7,17 +7,17 @@ category: Kode_category
 subcategory: Kode
 ---
 
-## Komponent
-<div>
-{% include code/components/card.html %}
-</div>
+{% include code/preview-box.html component="card" title="Eksempel på card komponent" %}
 
-<ul class="nobullet-list mt-7">
+## Eksempler og dokumentation
+<ul class="nobullet-list">
     <li><a href="/komponenter/buttons/#retningslinjer">Retningslinjer</a></li>
     <li><a href="/komponenter/buttons/">Eksempler</a></li>
 </ul>
 
-## Implementering
+## Installation
+
+### HTML Struktur
 
 {% include code/syntax.html component="card" %}
 

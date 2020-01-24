@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/accordion-border.html
-layout: iframed 
+layout: example-contained 
 title: Accordion-border.html
 ---
 <ul class="accordion accordion-bordered">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--offsets-reset.html
-layout: iframed 
+layout: example-contained 
 title: Grid--offsets-reset.html
 ---
 <div class="grid-example">

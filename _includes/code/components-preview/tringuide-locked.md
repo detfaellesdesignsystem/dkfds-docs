@@ -1,59 +1,33 @@
 --- 
 permalink: /preview-components/tringuide-locked.html
-layout: iframed 
+layout: example-contained 
 title: Tringuide-locked.html
 ---
-<div class="container mt-6 mb-6">
+<ul class="sidenav-list sidenav-list-locked">
+    <li>
+        <a tabindex="-1" aria-disabled="true">
+            1. Trin 1
 
-    <ul class="sidenav-list sidenav-list-locked">
+            <span class="sidenav-icon">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+            </span>
 
-        <li class="disabled  ">
-            <a tabindex="-1" aria-disabled="true">
-                1. Trin 1
+        </a>
+    </li>
+    <li class="disabled active current">
+        <a tabindex="-1" aria-disabled="true">
+            2. Trin 2 (valgt)
 
-                <span class="sidenav-icon">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
-                </span>
+            <span class="sidenav-icon">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+            </span>
 
-            </a>
-        </li>
+        </a>
+    </li>
+    <li>
+        <a tabindex="-1" aria-disabled="true">
+            3. Trin 3
 
-        <li class="disabled  ">
-            <a tabindex="-1" aria-disabled="true">
-                2. Trin 2
-
-                <span class="sidenav-icon">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
-                </span>
-
-            </a>
-        </li>
-
-        <li class="disabled active current ">
-            <a tabindex="-1" aria-disabled="true">
-                3. Trin 3 (valgt)
-
-                <span class="sidenav-icon">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
-                </span>
-
-            </a>
-        </li>
-
-        <li class="disabled  ">
-            <a tabindex="-1" aria-disabled="true">
-                4. Trin 4
-
-            </a>
-        </li>
-
-        <li class="disabled  ">
-            <a tabindex="-1" aria-disabled="true">
-                5. Trin 5
-
-            </a>
-        </li>
-
-    </ul>
-
-</div>
+        </a>
+    </li>
+</ul>

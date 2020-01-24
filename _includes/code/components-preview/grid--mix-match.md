@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--mix-match.html
-layout: iframed 
+layout: example-contained 
 title: Grid--mix-match.html
 ---
 <div class="grid-example">

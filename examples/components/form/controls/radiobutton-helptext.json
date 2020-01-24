@@ -1,0 +1,26 @@
+{
+  "radiobuttons_example_helptext": {
+    "items": [
+      {
+        "id": "radio-helptext-1",
+        "name": "radio-helptext",
+        "value": "v1",
+        "text": "Valg 1",
+        "checked": false,
+        "disabled": false,
+        "large": true,
+        "helptext": "Dette er en hjælpetekst"
+      },
+      {
+        "id": "radio-helptext-2",
+        "name": "radio-helptext",
+        "value": "v2",
+        "text": "Valg 2",
+        "checked": false,
+        "disabled": false,
+        "large": true,
+        "helptext": "Dette er en hjælpetekst"
+      }
+    ]
+  }
+}

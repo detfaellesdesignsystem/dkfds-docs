@@ -1,0 +1,26 @@
+{
+  "sidenavsNormal":
+  {
+    "links": [
+      {
+        "text": "Hovedside"
+      },
+      {
+        "text": "Hovedside",
+        "current": true,
+        "links": [
+          {
+            "text": "Underside"
+          },
+          {
+            "text": "Underside",
+            "active": true
+          }
+        ]
+      },
+      {
+        "text": "Hovedside"
+      }
+    ]
+  }
+}

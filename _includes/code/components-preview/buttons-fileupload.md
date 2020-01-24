@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/buttons-fileupload.html
-layout: iframed 
+layout: example-contained 
 title: Buttons-fileupload.html
 ---
 <div class="container py-8">

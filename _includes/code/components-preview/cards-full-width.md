@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/cards-full-width.html
-layout: iframed 
+layout: example-contained 
 title: Cards-full-width.html
 ---
 <div class="container pb-5">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/tippy-popover-icon.html
-layout: iframed 
+layout: example-contained 
 title: Tippy-popover-icon.html
 ---
 <div class="container py-8">

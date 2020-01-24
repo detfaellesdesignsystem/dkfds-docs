@@ -1,152 +1,23 @@
 {
-  "radiobuttons_example_small": {
-    "items": [
-      {
-        "id": "unchecked",
-        "name": "unchecked",
-        "value": "truth",
-        "text": "Ikke-udfyldt radioknap",
-        "checked": false,
-        "disabled": false
-      },
-      {
-        "id": "Checked",
-        "name": "Checked",
-        "value": "Checked",
-        "text": "Udfyldt radioknap",
-        "checked": true,
-        "disabled": false
-      },
-      {
-        "id": "Disabled",
-        "name": "Disabled",
-        "value": "Disabled",
-        "text": "Inaktiv ikke-udfyldt radioknap (disabled)",
-        "checked": false,
-        "disabled": true
-      },
-      {
-        "id": "Disabled-checked",
-        "name": "Disabled-checked",
-        "value": "Disabled-checked",
-        "text": "Inaktiv udfyldt radioknap (disabled)",
-        "checked": true,
-        "disabled": true
-      },
-      {
-        "id": "Focus",
-        "name": "Focus",
-        "value": "Focus",
-        "text": "Ikke-udfyldt radioknap i fokus",
-        "checked": false,
-        "disabled": false,
-        "focus": true
-      }
-    ]
-  },
-  "radiobuttons_example_large": {
-    "items": [
-      {
-        "id": "Unchecked-large",
-        "name": "Unchecked-large",
-        "value": "Unchecked-large",
-        "text": "Stor ikke-udfyldt radioknap",
-        "checked": false,
-        "disabled": false,
-        "large": true
-      },
-      {
-        "id": "Checked-large",
-        "name": "Checked-large",
-        "value": "Checked-large",
-        "text": "Stor udfyldt radioknap",
-        "checked": true,
-        "disabled": false,
-        "large": true
-      },
-      {
-        "id": "Disabled-large",
-        "name": "Disabled-large",
-        "value": "Disabled-large",
-        "text": "Stor inaktiv ikke-udfyldt radioknap (disabled)",
-        "checked": false,
-        "disabled": true,
-        "large": true
-      },
-      {
-        "id": "Disabled-checked-large",
-        "name": "Disabled-checked-large",
-        "value": "Disabled-checked-large",
-        "text": "Stor inaktiv udfyldt radioknap (disabled)",
-        "checked": true,
-        "disabled": true,
-        "large": true
-      },
-      {
-        "id": "Focus-large",
-        "name": "Focus-large",
-        "value": "Focus-large",
-        "text": "Stor ikke-udfyldt radioknap i fokus",
-        "checked": false,
-        "disabled": false,
-        "large": true,
-        "focus": true
-      }
-    ]
-  },
-  "radiobuttons_error_example": {
-    "items": [
-      {
-        "id": "weekly",
-        "name": "often-pay",
-        "value": "weekly",
-        "text": "Ugentligt",
-        "checked": false,
-        "disabled": false,
-        "large": true
-
-      },
-      {
-        "id": "fortnightly",
-        "name": "often-pay",
-        "value": "fortnightly",
-        "text": "Hver fjortende dag",
-        "checked": false,
-        "disabled": false,
-        "large": true
-      },
-      {
-        "id": "monthly",
-        "name": "often-pay",
-        "value": "monthly",
-        "text": "Månedligt",
-        "checked": false,
-        "disabled": false,
-        "large": true
-      }
-    ]
-  },
   "radiobuttons_example_helptext": {
     "items": [
       {
-        "id": "radio-helptext-1",
-        "name": "radio-helptext",
+        "id": "radio-1",
+        "name": "radio",
         "value": "v1",
         "text": "Valg 1",
         "checked": false,
         "disabled": false,
-        "large": true,
-        "helptext": "Dette er en hjælpetekst"
+        "large": true
       },
       {
-        "id": "radio-helptext-2",
-        "name": "radio-helptext",
+        "id": "radio-2",
+        "name": "radio",
         "value": "v2",
         "text": "Valg 2",
         "checked": false,
         "disabled": false,
-        "large": true,
-        "helptext": "Dette er en hjælpetekst"
+        "large": true
       }
     ]
   }

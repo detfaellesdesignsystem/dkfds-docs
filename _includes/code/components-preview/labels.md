@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/labels.html
-layout: iframed 
+layout: example-contained 
 title: Labels.html
 ---
 <div class="container">

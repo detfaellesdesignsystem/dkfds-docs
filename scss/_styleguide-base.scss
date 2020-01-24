@@ -548,12 +548,21 @@
 }
 
 //------------ Code
+
+figure.highlight{
+  border: $outer-border;
+}
+
+code{
+  background-color: $color-gray-pale;
+}
 code,
 pre {
-  background-color: $color-gray-pale;
   font-family: monospace;
   line-height: 1.4em;
-
+  code{
+    background-color: transparent;
+  }
   span.nt{
     color: #800080;
   }
@@ -578,6 +587,7 @@ pre {
 pre {
   padding: 1.6rem;
   white-space: pre-wrap;
+  margin: 0;
   code {
     padding: 0;
 
@@ -852,9 +862,21 @@ code {
   border: $outer-border;
   position: relative;
   margin-bottom: 8px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+
+  .component-link{
+    border-bottom: $inner-border;
+  }
+
+  figure.highlight{
+    border: 0;
+  }
+
 }
+
+.component-preview-tabnav .component-example{
+  min-height: 330px;
+}
+
 
 .preview-buttons {
   position: absolute;

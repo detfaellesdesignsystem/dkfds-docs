@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--stacked-horizontal.html
-layout: iframed 
+layout: example-contained 
 title: Grid--stacked-horizontal.html
 ---
 <div class="grid-example">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-virksomhedsalliancer-page-4.html
-layout: iframed 
+layout: example-contained 
 title: Example-virksomhedsalliancer-page-4.html
 ---
 <header class="header">
@@ -158,18 +158,17 @@ title: Example-virksomhedsalliancer-page-4.html
 
             </div>
             <div class="mt-6">
-
                 <div class="form-group">
                     <label class="form-label " for="id-companyalliance"
-                        id="form-label-id-companyalliance">Navn på
-                        virksomhedsalliance</label>
+                        id="form-label-id-companyalliance">
+                        Navn på virksomhedsalliance
+                    </label>
 
                     <input class="form-input  input-width-m "
-                        placeholder="" id="id-companyalliance" value=""
+                        id="id-companyalliance" value=""
                         name="Input til navn på virksomhedsalliance"
                         type="text">
                 </div>
-
             </div>
             <h2 class="mt-6 mb-3">Bilag og bemærkninger</h2>
             <div class="form-group">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--util-margin.html
-layout: iframed 
+layout: example-contained 
 title: Grid--util-margin.html
 ---
 <div class="grid-example">

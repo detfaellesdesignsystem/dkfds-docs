@@ -1,212 +1,26 @@
 --- 
 permalink: /preview-components/radiobutton.html
-layout: iframed 
+layout: example-contained 
 title: Radiobutton.html
 ---
-<div class="container">
-    <!-- Example with small radiobuttons -->
-    <div class="form-group">
-        <fieldset>
-            <legend class="h5">Lille radioknap</legend>
-            <ul class="nobullet-list">
+<div class="form-group">
+    <fieldset>
+        <legend class="h5">Liste med radioknapper</legend>
+        <ul class="nobullet-list">
+            <li>
+                <input id="radio-1" type="radio" name="radio" value="v1"
+                    class="form-radio  radio-large " />
+                <label for="radio-1" id="form-label-radio-1" class="">Valg
+                    1 </label>
 
-                <li>
+            </li>
+            <li>
+                <input id="radio-2" type="radio" name="radio" value="v2"
+                    class="form-radio  radio-large " />
+                <label for="radio-2" id="form-label-radio-2" class="">Valg
+                    2 </label>
 
-                    <input id="unchecked" type="radio" name="unchecked"
-                        value="truth" class="form-radio   " />
-                    <label for="unchecked" id="form-label-unchecked"
-                        class="">Ikke-udfyldt radioknap </label>
-
-                </li>
-
-                <li>
-
-                    <input id="Checked" type="radio" name="Checked"
-                        value="Checked" class="form-radio   " checked />
-                    <label for="Checked" id="form-label-Checked"
-                        class="">Udfyldt radioknap </label>
-
-                </li>
-
-                <li>
-
-                    <input id="Disabled" type="radio" name="Disabled"
-                        value="Disabled" class="form-radio   " disabled />
-                    <label for="Disabled" id="form-label-Disabled"
-                        class="">Inaktiv ikke-udfyldt radioknap (disabled)
-                    </label>
-
-                </li>
-
-                <li>
-
-                    <input id="Disabled-checked" type="radio"
-                        name="Disabled-checked" value="Disabled-checked"
-                        class="form-radio   " disabled checked />
-                    <label for="Disabled-checked"
-                        id="form-label-Disabled-checked" class="">Inaktiv
-                        udfyldt radioknap (disabled) </label>
-
-                </li>
-
-                <li>
-
-                    <input id="Focus" type="radio" name="Focus"
-                        value="Focus" class="form-radio focus  " />
-                    <label for="Focus" id="form-label-Focus"
-                        class="">Ikke-udfyldt radioknap i fokus </label>
-
-                </li>
-
-            </ul>
-        </fieldset>
-    </div>
-
-    <!-- Example with large radiobuttons (recommended) -->
-    <div class="form-group">
-        <fieldset>
-            <legend class="h5">Stor radioknap (anbefalet)</legend>
-            <ul class="nobullet-list">
-
-                <li>
-
-                    <input id="Unchecked-large" type="radio"
-                        name="Unchecked-large" value="Unchecked-large"
-                        class="form-radio  radio-large " />
-                    <label for="Unchecked-large"
-                        id="form-label-Unchecked-large" class="">Stor
-                        ikke-udfyldt radioknap </label>
-
-                </li>
-
-                <li>
-
-                    <input id="Checked-large" type="radio"
-                        name="Checked-large" value="Checked-large"
-                        class="form-radio  radio-large " checked />
-                    <label for="Checked-large"
-                        id="form-label-Checked-large" class="">Stor udfyldt
-                        radioknap </label>
-
-                </li>
-
-                <li>
-
-                    <input id="Disabled-large" type="radio"
-                        name="Disabled-large" value="Disabled-large"
-                        class="form-radio  radio-large " disabled />
-                    <label for="Disabled-large"
-                        id="form-label-Disabled-large" class="">Stor
-                        inaktiv ikke-udfyldt radioknap (disabled) </label>
-
-                </li>
-
-                <li>
-
-                    <input id="Disabled-checked-large" type="radio"
-                        name="Disabled-checked-large"
-                        value="Disabled-checked-large"
-                        class="form-radio  radio-large " disabled
-                        checked />
-                    <label for="Disabled-checked-large"
-                        id="form-label-Disabled-checked-large"
-                        class="">Stor inaktiv udfyldt radioknap (disabled)
-                    </label>
-
-                </li>
-
-                <li>
-
-                    <input id="Focus-large" type="radio" name="Focus-large"
-                        value="Focus-large"
-                        class="form-radio focus radio-large " />
-                    <label for="Focus-large" id="form-label-Focus-large"
-                        class="">Stor ikke-udfyldt radioknap i fokus
-                    </label>
-
-                </li>
-
-            </ul>
-        </fieldset>
-    </div>
-
-    <!-- Example with error message -->
-    <div class="form-group form-error">
-        <fieldset>
-            <legend class="h5">Radioknap med fejl</legend>
-            <span class="form-error-message" role="alert">Hjælpsom
-                fejlbesked</span>
-            <ul class="nobullet-list">
-
-                <li>
-
-                    <input id="weekly" type="radio" name="often-pay"
-                        value="weekly" class="form-radio  radio-large " />
-                    <label for="weekly" id="form-label-weekly"
-                        class="">Ugentligt </label>
-
-                </li>
-
-                <li>
-
-                    <input id="fortnightly" type="radio" name="often-pay"
-                        value="fortnightly"
-                        class="form-radio  radio-large " />
-                    <label for="fortnightly" id="form-label-fortnightly"
-                        class="">Hver fjortende dag </label>
-
-                </li>
-
-                <li>
-
-                    <input id="monthly" type="radio" name="often-pay"
-                        value="monthly" class="form-radio  radio-large " />
-                    <label for="monthly" id="form-label-monthly"
-                        class="">Månedligt </label>
-
-                </li>
-
-            </ul>
-        </fieldset>
-    </div>
-
-    <!-- Example with help text -->
-    <div class="form-group">
-        <fieldset>
-            <legend class="h5">Radioknap med hjælpetekst</legend>
-            <ul class="nobullet-list">
-
-                <li>
-
-                    <input id="radio-helptext-1" type="radio"
-                        name="radio-helptext" value="v1"
-                        aria-labelledby="form-label-radio-helptext-1 helptext-radio-helptext-1"
-                        class="form-radio  radio-large " />
-                    <label for="radio-helptext-1"
-                        id="form-label-radio-helptext-1" class="">Valg 1
-                    </label>
-                    <span class="form-hint"
-                        id="helptext-radio-helptext-1">Dette er en
-                        hjælpetekst</span>
-
-                </li>
-
-                <li>
-
-                    <input id="radio-helptext-2" type="radio"
-                        name="radio-helptext" value="v2"
-                        aria-labelledby="form-label-radio-helptext-2 helptext-radio-helptext-2"
-                        class="form-radio  radio-large " />
-                    <label for="radio-helptext-2"
-                        id="form-label-radio-helptext-2" class="">Valg 2
-                    </label>
-                    <span class="form-hint"
-                        id="helptext-radio-helptext-2">Dette er en
-                        hjælpetekst</span>
-
-                </li>
-
-            </ul>
-        </fieldset>
-    </div>
+            </li>
+        </ul>
+    </fieldset>
 </div>

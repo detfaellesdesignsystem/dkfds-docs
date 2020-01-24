@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alert-paragraph.html
-layout: iframed 
+layout: example-contained 
 title: Alert-paragraph.html
 ---
 <div class="alert alert-info alert--paragraph">

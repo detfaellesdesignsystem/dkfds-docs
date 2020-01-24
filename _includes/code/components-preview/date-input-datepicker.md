@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/date-input-datepicker.html
-layout: iframed 
+layout: example-contained 
 title: Date-input-datepicker.html
 ---
 <div class="form-group  ">

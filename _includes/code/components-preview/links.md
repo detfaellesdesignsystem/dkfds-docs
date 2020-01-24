@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/links.html
-layout: iframed 
+layout: example-contained 
 title: Links.html
 ---
 <div class="container">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/line_length.html
-layout: iframed 
+layout: example-contained 
 title: Line_length.html
 ---
 <div class="container">

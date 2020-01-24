@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-opsummering.html
-layout: iframed 
+layout: example-contained 
 title: Example-opsummering.html
 ---
 <header class="header">

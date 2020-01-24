@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--util-flex-vertical-align-01.html
-layout: iframed 
+layout: example-contained 
 title: Grid--util-flex-vertical-align-01.html
 ---
 <div class="grid-example v-align">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/tabnav.html
-layout: iframed 
+layout: example-contained 
 title: Tabnav.html
 ---
 <ul class="tabnav">

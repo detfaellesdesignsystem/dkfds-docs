@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-flytning-page-3.html
-layout: iframed 
+layout: example-contained 
 title: Example-flytning-page-3.html
 ---
 <header class="header">
@@ -256,20 +256,19 @@ title: Example-flytning-page-3.html
 
     </div>
     <div class="mt-6">
-
         <div class="form-group">
-            <label class="form-label " for="id-co"
-                id="form-label-id-co">C/O navn<span class="weight-normal">
-                    (frivilligt)</span></label>
-            <span class="form-hint" id="input-hint-message-id-co">C/O navn
-                skal kun udfyldes, hvis du skal bo til leje hos de
-                nuværende beboere.</span>
+            <label class="form-label " for="id-co" id="form-label-id-co">
+                C/O navn<span class="weight-normal"> (frivilligt)</span>
+            </label>
+            <span class="form-hint" id="input-hint-message-id-co">
+                C/O navn skal kun udfyldes, hvis du skal bo til leje hos de
+                nuværende beboere.
+            </span>
 
-            <input class="form-input  input-width-m " placeholder=""
-                id="id-co" value="" name="Input til C/O navn" type="text"
+            <input class="form-input  input-width-m " id="id-co" value=""
+                name="Input til C/O navn" type="text"
                 aria-labelledby="form-label-id-co input-hint-message-id-co">
         </div>
-
     </div>
 
     <nav class="page-navigation d-print-none">

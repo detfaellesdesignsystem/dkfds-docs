@@ -5,12 +5,6 @@ order: 10
 headingClass: h3
 ---
 
-<h3 class="h4">Tilgængelighed</h3>
-
-- Tags markeres tydeligt med en fokus tilstand, når brugere ved hjælp af tab-tasten navigerer sig frem til dem.
-- Undgå at anvende `div` eller `img` tags til at konstruere et tag, da skærmlæsere ikke automatisk kan afkode funktionaliteten i så fald.
-- Tags med et indlejret svg-ikon som fx (X) for ”Slet” eller ”Fjern” skal være klikbare på hele tag’et og ikke kun ikonet.
-
 <h3 class="h4">Brugervenlighed</h3>
 <h4 class="h5">Anvendes til</h4>
 

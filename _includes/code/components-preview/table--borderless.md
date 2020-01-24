@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/table--borderless.html
-layout: iframed 
+layout: example-contained 
 title: Table--borderless.html
 ---
 <div class="container">

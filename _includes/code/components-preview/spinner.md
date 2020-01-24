@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/spinner.html
-layout: iframed 
+layout: example-contained 
 title: Spinner.html
 ---
 <div class="spinner"></div>

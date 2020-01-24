@@ -1,5 +1,14 @@
+<div class="component-preview component-preview-code {{ include.classes }} component-code-{{ include.component | slugify }}" aria-label="{{ include.title }}">
+    {% if include.link %}
+    <div class="component-link px-4 py-4">
+        <a href="/preview-components/{{ include.component }}.html" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+    </div>
+    {% endif %}
+    <div class="component-code" aria-label="Kodeeksempel">
 {% capture _syntax %}
 {% highlight html %}
 {% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
 {% endhighlight %}
 {% endcapture %}{{ _syntax | markdownify }}
+    </div>
+</div>

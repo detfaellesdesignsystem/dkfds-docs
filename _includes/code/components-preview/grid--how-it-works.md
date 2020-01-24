@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--how-it-works.html
-layout: iframed 
+layout: example-contained 
 title: Grid--how-it-works.html
 ---
 <div class="grid-example">

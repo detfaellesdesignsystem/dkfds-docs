@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/headings.html
-layout: iframed 
+layout: example-contained 
 title: Headings.html
 ---
 <div class="container">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/basic-collapse.html
-layout: iframed 
+layout: example-contained 
 title: Basic-collapse.html
 ---
 <button class="button button-secondary js-collapse"

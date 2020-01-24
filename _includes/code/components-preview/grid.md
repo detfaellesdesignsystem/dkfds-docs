@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid.html
-layout: iframed 
+layout: example-contained 
 title: Grid.html
 ---
 <div class="grid-example">

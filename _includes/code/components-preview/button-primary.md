@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/button-primary.html
-layout: iframed 
+layout: example-contained 
 title: Button-primary.html
 ---
 <button class="button button-primary">

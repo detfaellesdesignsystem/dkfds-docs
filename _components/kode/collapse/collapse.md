@@ -1,29 +1,29 @@
 ---
 permalink: /kode/collapse/
+title: Skjul og vis (Collapse)
 layout: styleguide
 type: component
-title: Skjul og vis (Collapse)
 category: Kode_category
 subcategory: Kode
 ---
 
-## Komponent
-<div>
-{% include code/components/basic-collapse.html %}
-</div>
+{% include code/preview-box.html component="basic-collapse" title="Eksempel på Skjul og vis komponent" %}
 
-<ul class="nobullet-list mt-7">
-    <li><a href="/komponenter/buttons/#retningslinjer">Retningslinjer</a></li>
+## Eksempler og dokumentation
+<ul class="nobullet-list">
+    <li><a href="/komponenter/buttons/#retningslinjer">Dokumentation</a></li>
     <li><a href="/komponenter/buttons/">Eksempler</a></li>
 </ul>
 
-## Implementering
+## Installation
+
+### HTML Struktur
 
 {% include code/syntax.html component="basic-collapse" %}
 
 Kopiér ovenstående kode, og ret id-attributtens værdi, så det matcher din løsning. Sørg for at rette alle referencer til elementet.
 
-## JavaScript
+### JavaScript
 
 Collapse komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
@@ -31,7 +31,7 @@ Collapse komponenten kræver JavaScript for at fungere. Man kan enten gøre brug
 new DKFDS.Collapse(document.getElementByID('COLLAPSE-BUTTON-ID'));
 {% endhighlight %}
 
-### Events
+#### Events
 
 {:.table}
 | Event key          | Element              | Beskrivelse                                                                                         |

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/overflow-menu-left.html
-layout: iframed 
+layout: example-contained 
 title: Overflow-menu-left.html
 ---
 <div class="container pt-6 align-text-right">

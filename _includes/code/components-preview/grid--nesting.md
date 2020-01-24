@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--nesting.html
-layout: iframed 
+layout: example-contained 
 title: Grid--nesting.html
 ---
 <div class="grid-example">

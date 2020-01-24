@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/text-input-width.html
-layout: iframed 
+layout: example-contained 
 title: Text-input-width.html
 ---
 <div class="container">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-virksomhedsalliancer-page-1.html
-layout: iframed 
+layout: example-contained 
 title: Example-virksomhedsalliancer-page-1.html
 ---
 <header class="header">
@@ -131,106 +131,113 @@ title: Example-virksomhedsalliancer-page-1.html
         <main class="col-12 col-lg-9" id="main-content">
             <div role="group" aria-describedby="stamdata">
                 <h1 id="stamdata">Stamdata</h1>
-
                 <div class="form-group">
                     <label class="form-label " for="id-cvr-number"
-                        id="form-label-id-cvr-number">CVR nummer</label>
+                        id="form-label-id-cvr-number">
+                        CVR nummer
+                    </label>
 
-                    <input class="form-input  input-char-8 " placeholder=""
+                    <input class="form-input  input-char-8 "
                         id="id-cvr-number" value=""
                         name="Input til cvr nummer" type="text">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label " for="id-companyname"
-                        id="form-label-id-companyname">Navn på
-                        virksomhed</label>
+                        id="form-label-id-companyname">
+                        Navn på virksomhed
+                    </label>
 
                     <input class="form-input  input-width-m "
-                        placeholder="" id="id-companyname" value=""
+                        id="id-companyname" value=""
                         name="Input til navn på virksomhed" type="text">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label " for="id-companyaddress"
-                        id="form-label-id-companyaddress">Adresse</label>
+                        id="form-label-id-companyaddress">
+                        Adresse
+                    </label>
 
                     <input class="form-input  input-width-m "
-                        placeholder="" id="id-companyaddress" value=""
+                        id="id-companyaddress" value=""
                         name="Input til virksomhedsadresse" type="text">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label " for="id-zipcode"
-                        id="form-label-id-zipcode">Postnr.</label>
+                        id="form-label-id-zipcode">
+                        Postnr.
+                    </label>
 
-                    <input class="form-input  input-char-4 " placeholder=""
+                    <input class="form-input  input-char-4 "
                         id="id-zipcode" value=""
                         name="Input til postnummer" type="text">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label " for="id-companycity"
-                        id="form-label-id-companycity">By</label>
+                        id="form-label-id-companycity">
+                        By
+                    </label>
 
                     <input class="form-input  input-width-m "
-                        placeholder="" id="id-companycity" value=""
-                        name="Input til by" type="text">
+                        id="id-companycity" value="" name="Input til by"
+                        type="text">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label " for="id-companyphone"
-                        id="form-label-id-companyphone">Telefonnr.</label>
+                        id="form-label-id-companyphone">
+                        Telefonnr.
+                    </label>
 
-                    <input class="form-input  input-char-8 " placeholder=""
+                    <input class="form-input  input-char-8 "
                         id="id-companyphone" value=""
                         name="Input til telefonnummer" type="text">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label " for="id-companywebsite"
-                        id="form-label-id-companywebsite">Website<span
-                            class="weight-normal">
-                            (frivilligt)</span></label>
+                        id="form-label-id-companywebsite">
+                        Website<span class="weight-normal">
+                            (frivilligt)</span>
+                    </label>
 
                     <input class="form-input  input-width-m "
-                        placeholder="" id="id-companywebsite" value=""
+                        id="id-companywebsite" value=""
                         name="Input til website" type="text">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label "
                         for="id-company-contactperson"
-                        id="form-label-id-company-contactperson">Kontaktperson.</label>
+                        id="form-label-id-company-contactperson">
+                        Kontaktperson.
+                    </label>
 
                     <input class="form-input  input-width-m "
-                        placeholder="" id="id-company-contactperson"
-                        value="" name="Input til kontaktperson"
-                        type="text">
+                        id="id-company-contactperson" value=""
+                        name="Input til kontaktperson" type="text">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label " for="id-companyemail"
-                        id="form-label-id-companyemail">E-mail</label>
+                        id="form-label-id-companyemail">
+                        E-mail
+                    </label>
                     <span class="form-hint"
-                        id="input-hint-message-id-companyemail">Kvittering
-                        bliver sendt til denne e-mailadresse</span>
+                        id="input-hint-message-id-companyemail">
+                        Kvittering bliver sendt til denne e-mailadresse
+                    </span>
 
                     <input class="form-input  input-width-m "
-                        placeholder="" id="id-companyemail" value=""
+                        id="id-companyemail" value=""
                         name="Input til email" type="text"
                         aria-labelledby="form-label-id-companyemail input-hint-message-id-companyemail">
                 </div>
-
                 <div class="form-group">
                     <label class="form-label " for="id-launchyear"
-                        id="form-label-id-launchyear">Etableringsår</label>
+                        id="form-label-id-launchyear">
+                        Etableringsår
+                    </label>
 
-                    <input class="form-input  input-char-4 " placeholder=""
+                    <input class="form-input  input-char-4 "
                         id="id-launchyear" value=""
                         name="Input til etableringsår" type="text">
                 </div>
-
             </div>
             <nav class="page-navigation d-print-none">
                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/"

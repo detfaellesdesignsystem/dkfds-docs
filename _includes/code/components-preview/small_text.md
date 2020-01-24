@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/small_text.html
-layout: iframed 
+layout: example-contained 
 title: Small_text.html
 ---
 <div class="container">

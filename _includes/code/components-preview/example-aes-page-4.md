@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-aes-page-4.html
-layout: iframed 
+layout: example-contained 
 title: Example-aes-page-4.html
 ---
 <header class="header">

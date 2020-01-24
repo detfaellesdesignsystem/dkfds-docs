@@ -1,26 +1,7 @@
 {
-  "tag_examples": {
-    "items": [
-      {
-        "text": "Default",
-        "class": "tag-icon",
-        "icon": "close-circle"
-      },
-      {
-        "text": "Hover",
-        "class": "tag-icon tag-hover",
-        "icon": "close-circle"
-      },
-      {
-        "text": "Active",
-        "class": "tag-icon tag-active",
-        "icon": "close-circle"
-      },
-      {
-        "text": "Focus",
-        "class": "tag-icon focus",
-        "icon": "close-circle"
-      }
-    ]
+  "tag_example": {
+    "text": "Default",
+    "class": "tag-icon",
+    "icon": "close-circle"
   }
 }

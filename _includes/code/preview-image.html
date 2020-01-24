@@ -1,0 +1,8 @@
+<div class="component-preview {{ include.classes }} component-preview-{{ include.component | slugify }}" aria-label="{{ include.title }}">
+    <div class="component-link px-4 py-4">
+        <a href="/preview-components/{{ include.component }}.html" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <img src="/assets/img/examples/virk-{{ include.component }}.png" alt="{{ include.alt }}"/>
+    </div>
+</div>

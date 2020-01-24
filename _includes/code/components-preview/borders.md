@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/borders.html
-layout: iframed 
+layout: example-contained 
 title: Borders.html
 ---
   <div class="container">

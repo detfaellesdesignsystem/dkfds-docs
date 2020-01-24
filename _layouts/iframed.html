@@ -11,7 +11,9 @@
   </head>
   <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
+    <div class="container py-4">
     {{ content }}
+    </div>
 
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>

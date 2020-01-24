@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/selectwoo-multiselect.html
-layout: iframed 
+layout: example-contained 
 title: Selectwoo-multiselect.html
 ---
 <div class="container">

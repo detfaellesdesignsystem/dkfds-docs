@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-aes-page-6.html
-layout: iframed 
+layout: example-contained 
 title: Example-aes-page-6.html
 ---
 <header class="header">
@@ -215,19 +215,18 @@ title: Example-aes-page-6.html
                     </div>
                 </td>
                 <td class="mt-4 mt-lg-0">
-
                     <div class="form-group">
                         <label class="form-label sr-only"
                             for="id-pagenumber"
-                            id="form-label-id-pagenumber">Angiv
-                            sidetal<span class="weight-normal">
-                                (frivilligt)</span></label>
+                            id="form-label-id-pagenumber">
+                            Angiv sidetal<span class="weight-normal">
+                                (frivilligt)</span>
+                        </label>
 
                         <input class="form-input  input-width-xs "
-                            placeholder="" id="id-pagenumber" value=""
-                            name="Sidetal" type="text">
+                            id="id-pagenumber" value="" name="Sidetal"
+                            type="text">
                     </div>
-
                 </td>
                 <td class="align-text-md-right mt-4 mt-lg-0">
                     <button class="button button-unstyled">

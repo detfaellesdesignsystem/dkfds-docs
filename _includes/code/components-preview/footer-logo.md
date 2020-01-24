@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/footer-logo.html
-layout: iframed 
+layout: example 
 title: Footer-logo.html
 ---
 <footer>

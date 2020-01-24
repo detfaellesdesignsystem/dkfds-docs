@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alerts-texts.html
-layout: iframed 
+layout: example-contained 
 title: Alerts-texts.html
 ---
 <div class="alert alert-info alert--show-icon" role="alert"

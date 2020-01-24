@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/bodycopy.html
-layout: iframed 
+layout: example-contained 
 title: Bodycopy.html
 ---
 <div class="container">

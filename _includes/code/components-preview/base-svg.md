@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/base-svg.html
-layout: iframed 
+layout: example-contained 
 title: Base-svg.html
 ---
 <div class="hide-base-svg">

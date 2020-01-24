@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/table--bordered-zebra.html
-layout: iframed 
+layout: example-contained 
 title: Table--bordered-zebra.html
 ---
 <div class="container">

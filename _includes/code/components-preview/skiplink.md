@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/skiplink.html
-layout: iframed 
+layout: example-contained 
 title: Skiplink.html
 ---
 <p>For at se skip link, klik på denne tekst og tryk derefter på tab-tasten.

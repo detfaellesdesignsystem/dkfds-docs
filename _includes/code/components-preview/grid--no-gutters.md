@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--no-gutters.html
-layout: iframed 
+layout: example-contained 
 title: Grid--no-gutters.html
 ---
 <div class="grid-example container">

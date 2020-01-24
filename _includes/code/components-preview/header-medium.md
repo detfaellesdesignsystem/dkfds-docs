@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/header-medium.html
-layout: iframed 
+layout: example 
 title: Header-medium.html
 ---
 <header class="header">

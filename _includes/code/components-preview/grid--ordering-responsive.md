@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--ordering-responsive.html
-layout: iframed 
+layout: example-contained 
 title: Grid--ordering-responsive.html
 ---
 <div class="grid-example">

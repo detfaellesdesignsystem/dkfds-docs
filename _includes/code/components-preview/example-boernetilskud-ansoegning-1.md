@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-boernetilskud-ansoegning-1.html
-layout: iframed 
+layout: example-contained 
 title: Example-boernetilskud-ansoegning-1.html
 ---
 <header class="header">

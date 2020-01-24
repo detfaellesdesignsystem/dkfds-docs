@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/accordion-multi.html
-layout: iframed 
+layout: example-contained 
 title: Accordion-multi.html
 ---
 <ul class="accordion accordion-multiselectable">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--equal-width.html
-layout: iframed 
+layout: example-contained 
 title: Grid--equal-width.html
 ---
 <div class="grid-example">

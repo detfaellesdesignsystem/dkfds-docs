@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-kvittering-2.html
-layout: iframed 
+layout: example-contained 
 title: Example-kvittering-2.html
 ---
 <header class="header">

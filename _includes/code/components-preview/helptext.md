@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/helptext.html
-layout: iframed 
+layout: example-contained 
 title: Helptext.html
 ---
 <div class="container">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/selectwoo-multiselect--groups.html
-layout: iframed 
+layout: example-contained 
 title: Selectwoo-multiselect--groups.html
 ---
 <div class="container">

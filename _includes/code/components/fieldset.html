@@ -1,41 +1,48 @@
-<div class="container">
-    <h1 class="h2">Dine kontaktoplysninger</h1>
-    <form>
+<h1 class="h2">Dine kontaktoplysninger</h1>
+<form>
+    <!-- Felt start: Fornavn -->
+    <div class="form-group">
+        <label class="form-label " for="fnavn" id="form-label-fnavn">
+            Fornavn
+        </label>
 
-        <div class="form-group">
-            <label class="form-label " for="fnavn"
-                id="form-label-fnavn">Fornavn</label>
+        <input class="form-input   " id="fnavn" value="" name="fnavn"
+            type="text">
+    </div>
+    <!-- Felt slut: Fornavn -->
+    <!-- Felt start: Efternavn -->
+    <div class="form-group">
+        <label class="form-label " for="enavn" id="form-label-enavn">
+            Efternavn
+        </label>
 
-            <input class="form-input   " placeholder="" id="fnavn" value=""
-                name="fnavn" type="text">
-        </div>
+        <input class="form-input   " id="enavn" value="" name="enavn"
+            type="text">
+    </div>
+    <!-- Felt slut: Efternavn -->
+    <!-- Felt start: E-mail adresse -->
+    <div class="form-group">
+        <label class="form-label " for="email" id="form-label-email">
+            E-mail adresse
+        </label>
 
-        <div class="form-group">
-            <label class="form-label " for="enavn"
-                id="form-label-enavn">Efternavn</label>
+        <input class="form-input   " id="email" value="" name="email"
+            type="text">
+    </div>
+    <!-- Felt slut: E-mail adresse -->
+    <!-- Felt: Telefonnr -->
+    <div class="form-group">
+        <label class="form-label " for="telefon" id="form-label-telefon">
+            Telefonnr.
+        </label>
 
-            <input class="form-input   " placeholder="" id="enavn" value=""
-                name="enavn" type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="email"
-                id="form-label-email">E-mail adresse</label>
-
-            <input class="form-input   " placeholder="" id="email" value=""
-                name="email" type="text">
-        </div>
-
-        <div class="form-group">
-            <label class="form-label " for="telefon"
-                id="form-label-telefon">Telefonnr.</label>
-
-            <input class="form-input   " placeholder="" id="telefon"
-                value="" name="telefon" type="text">
-        </div>
-
-        <button class="button button-primary mt-9">
-            Gem oplysninger
-        </button>
-    </form>
-</div>
+        <input class="form-input   " id="telefon" value="" name="telefon"
+            type="text">
+    </div>
+    <!-- Felt: Telefonnr -->
+    <!-- Knap start -->
+    <button class="button button-primary mt-9">
+        Gem oplysninger
+    </button>
+    <!-- Knap slut -->
+</form>

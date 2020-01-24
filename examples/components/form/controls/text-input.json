@@ -1,44 +1,8 @@
 {
   "textinput_example":{
-    "items": [
-      {
-        "id": "input-type-text",
-        "label": "Inputfelt med label",
-        "name": "input-type-text",
-        "hint": "Fx 12345678"
-      },
-      {
-        "id": "input-focus",
-        "label": "Inputfelt i fokus",
-        "name": "input-focus",
-        "class": "focus"
-      },
-      {
-        "id": "form-error",
-        "label": "Inputfelt med fejl",
-        "name": "form-error",
-        "hint": "Fx 12345678",
-        "error": "Hjælpsom fejlbesked"
-      },
-      {
-        "id": "input-disabled",
-        "name": "input-disabled",
-        "label": "Inputfelt som er låst",
-        "disabled": true
-      },
-      {
-        "id": "input-optional",
-        "name": "input-optional",
-        "label": "Inputfelt som er valgfrit",
-        "optionallabel": "(frivilligt)"
-      },
-      {
-        "id": "input-readonly",
-        "name": "input-readonly",
-        "label": "Inputfelt som er readonly",
-        "value": "012345-6789",
-        "readonly": true
-      }
-    ]
+    "id": "input-type-text",
+    "label": "Inputfelt med label",
+    "name": "input-type-text",
+    "hint": "Fx 12345678"
   }
 }

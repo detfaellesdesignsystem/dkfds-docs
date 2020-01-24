@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/cards-half-width.html
-layout: iframed 
+layout: example-contained 
 title: Cards-half-width.html
 ---
 <div class="container pb-5">

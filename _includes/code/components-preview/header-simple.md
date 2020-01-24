@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/header-simple.html
-layout: iframed 
+layout: example 
 title: Header-simple.html
 ---
 <header class="header">

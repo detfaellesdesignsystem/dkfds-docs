@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/table.html
-layout: iframed 
+layout: example-contained 
 title: Table.html
 ---
 <div class="container">

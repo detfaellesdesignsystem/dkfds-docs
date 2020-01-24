@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alerts-close.html
-layout: iframed 
+layout: example-contained 
 title: Alerts-close.html
 ---
 <div class="alert alert-info has-close" role="alert"

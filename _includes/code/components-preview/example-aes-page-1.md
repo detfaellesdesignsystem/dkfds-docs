@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-aes-page-1.html
-layout: iframed 
+layout: example-contained 
 title: Example-aes-page-1.html
 ---
 <header class="header">
@@ -161,16 +161,16 @@ title: Example-aes-page-1.html
     </div>
 
     <h1>Oplysninger om afsender</h1>
-
     <div class="form-group">
         <label class="form-label " for="virksomhed"
-            id="form-label-virksomhed">Virksomhed</label>
+            id="form-label-virksomhed">
+            Virksomhed
+        </label>
 
-        <input class="form-input  input-width-m " placeholder=""
-            id="virksomhed" value="Forsikringens Forsikringsfirma"
-            name="virksomhed" type="text" readonly>
+        <input class="form-input  input-width-m " id="virksomhed"
+            value="Forsikringens Forsikringsfirma" name="virksomhed"
+            type="text" readonly>
     </div>
-
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Afsender er</legend>

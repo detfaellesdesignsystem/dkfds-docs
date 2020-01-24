@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/border-radius.html
-layout: iframed 
+layout: example-contained 
 title: Border-radius.html
 ---
 <div class="container">

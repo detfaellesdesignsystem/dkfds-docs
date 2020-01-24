@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/pikaday.html
-layout: iframed 
+layout: example-contained 
 title: Pikaday.html
 ---
 <div class="container">

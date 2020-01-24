@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/badges-status.html
-layout: iframed 
+layout: example-contained 
 title: Badges-status.html
 ---
 <h3 class="h5">Positiv status</h3>

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/buttons-only-icon.html
-layout: iframed 
+layout: example-contained 
 title: Buttons-only-icon.html
 ---
 <button class="button button-unstyled">

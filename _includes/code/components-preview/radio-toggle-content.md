@@ -1,9 +1,9 @@
 --- 
 permalink: /preview-components/radio-toggle-content.html
-layout: iframed 
+layout: example-contained 
 title: Radio-toggle-content.html
 ---
-<div class="container js-radio-toggle-group">
+<div class="js-radio-toggle-group">
     <fieldset>
         <legend class="h4">Vælg en radioknap</legend>
         <ul class="nobullet-list">
@@ -22,17 +22,16 @@ title: Radio-toggle-content.html
                 <div id="collapse-radio1" aria-hidden="true"
                     class="box-border-l collapsed">
                     <div class="py-4">
-
                         <div class="form-group">
                             <label class="form-label " for="textinput1"
-                                id="form-label-textinput1">Inputfelt med
-                                label</label>
+                                id="form-label-textinput1">
+                                Inputfelt med label
+                            </label>
 
                             <input class="form-input  input-width-m "
-                                placeholder="" id="textinput1" value=""
-                                name="text1" type="text">
+                                id="textinput1" value="" name="text1"
+                                type="text">
                         </div>
-
                     </div>
                 </div>
             </li>
@@ -49,21 +48,22 @@ title: Radio-toggle-content.html
                 <div id="collapse-radio2" aria-hidden="true"
                     class="box-border-l collapsed">
                     <div class="py-4">
-
                         <div class="form-group form-error">
                             <label class="form-label " for="textinput2"
-                                id="form-label-textinput2">Inputfelt med
-                                label</label>
+                                id="form-label-textinput2">
+                                Inputfelt med label
+                            </label>
 
                             <span class="form-error-message"
                                 id="form-error-message-textinput2"
-                                role="alert">Hjælpsom fejlbesked</span>
+                                role="alert">
+                                Hjælpsom fejlbesked
+                            </span>
                             <input class="form-input  input-width-m "
-                                placeholder="" id="textinput2" value=""
-                                name="text2" type="text"
+                                id="textinput2" value="" name="text2"
+                                type="text" aria-invalid="true"
                                 aria-describedby="form-error-message-textinput2">
                         </div>
-
                     </div>
                 </div>
             </li>

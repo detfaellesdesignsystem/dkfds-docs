@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/footer-three-columns.html
-layout: iframed 
+layout: example 
 title: Footer-three-columns.html
 ---
 <footer>

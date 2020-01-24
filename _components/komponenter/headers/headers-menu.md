@@ -10,4 +10,3 @@ order: 40
   </a>
   <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/medium/">Demo standard header med topmenu</a>
 </div>
-{% include code/accordion.html component="header-medium" %}

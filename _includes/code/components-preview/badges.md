@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/badges.html
-layout: iframed 
+layout: example-contained 
 title: Badges.html
 ---
 <h3 class="h5">Stort badge</h3>

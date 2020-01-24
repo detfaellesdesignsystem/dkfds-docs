@@ -1,13 +1,21 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
-<div class="container">
-    <h1 class="h2">Dine kontaktoplysninger</h1>
-    <form>
-        {{textinput("fnavn", "Fornavn", false, "", false, "fnavn", "", false, false)}}
-        {{textinput("enavn", "Efternavn", false, "", false, "enavn", "", false, false)}}
-        {{textinput("email", "E-mail adresse", false, "", false, "email", "", false, false)}}
-        {{textinput("telefon", "Telefonnr.", false, "", false, "telefon", "", false, false)}}
-        {{ button("Gem oplysninger", "primary mt-9") }}
-  </form>
-</div>
+<h1 class="h2">Dine kontaktoplysninger</h1>
+<form>
+    <!-- Felt start: Fornavn -->
+    {{textinput("fnavn", "Fornavn", false, "", false, "fnavn", "", false, false)}}
+    <!-- Felt slut: Fornavn -->
+    <!-- Felt start: Efternavn -->
+    {{textinput("enavn", "Efternavn", false, "", false, "enavn", "", false, false)}}
+    <!-- Felt slut: Efternavn -->
+    <!-- Felt start: E-mail adresse -->
+    {{textinput("email", "E-mail adresse", false, "", false, "email", "", false, false)}}
+    <!-- Felt slut: E-mail adresse -->
+    <!-- Felt: Telefonnr -->
+    {{textinput("telefon", "Telefonnr.", false, "", false, "telefon", "", false, false)}}
+    <!-- Felt: Telefonnr -->
+    <!-- Knap start -->
+    {{ button("Gem oplysninger", "primary mt-9") }}
+    <!-- Knap slut -->
+</form>

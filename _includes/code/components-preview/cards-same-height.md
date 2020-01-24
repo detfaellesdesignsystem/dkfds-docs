@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/cards-same-height.html
-layout: iframed 
+layout: example-contained 
 title: Cards-same-height.html
 ---
 <div class="container pb-5">

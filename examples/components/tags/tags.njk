@@ -1,6 +1,4 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/tags/tags.njk" import tag as tag %}
 
-<div class="container py-8">
-{% for tags in tag_examples.items %}{{ tag(tags.text, tags.class, tags.attribute, tags.icon) }}{% endfor %}
-</div>
+{{ tag(tag_example.text, tag_example.class, tag_example.attribute, tag_example.icon) }}

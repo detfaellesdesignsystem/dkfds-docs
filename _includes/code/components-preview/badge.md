@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/badge.html
-layout: iframed 
+layout: example-contained 
 title: Badge.html
 ---
 <label class="badge badge-large">Nyhed</label>

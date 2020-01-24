@@ -5,10 +5,6 @@ order: 30
 headingClass: h3
 ---
 
-<h3 class="h4">Tilgængelighed</h3>
-
-Sidenavigationen skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tab-tasten til navigation.
-
 <h3 class="h4">Brugervenlighed</h3>
 <h4 class="h5">Anvendes til</h4>
 

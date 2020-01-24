@@ -1,0 +1,42 @@
+{
+  "checkbox_example_large": {
+    "items": [
+      {
+        "id": "large1",
+        "name": "checkbox-large[]",
+        "value": "1",
+        "checked": false,
+        "disabled": false,
+        "text": "Tjekboks 1",
+        "large": true
+      },
+      {
+        "id": "large2",
+        "name": "checkbox-large[]",
+        "value": "2",
+        "checked": false,
+        "disabled": false,
+        "text": "Tjekboks 2",
+        "large": true
+      },
+      {
+        "id": "large3",
+        "name": "checkbox-large[]",
+        "value": "3",
+        "checked": false,
+        "disabled": false,
+        "text": "Tjekboks 3",
+        "large": true
+      },
+      {
+        "id": "large4",
+        "name": "checkbox-large[]",
+        "value": "4",
+        "checked": false,
+        "disabled": true,
+        "text": "Tjekboks 4",
+        "large": true
+      }
+    ]
+  }
+}

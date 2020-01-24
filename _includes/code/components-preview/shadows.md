@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/shadows.html
-layout: iframed 
+layout: example-contained 
 title: Shadows.html
 ---
 <div class="container">

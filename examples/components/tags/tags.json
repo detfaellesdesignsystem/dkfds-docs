@@ -1,23 +1,6 @@
 {
-  "tag_examples":
-  {
-    "items": [
-      {
-        "text": "Default",
-        "class": ""
-      },
-      {
-        "text": "Hover",
-        "class": "tag-hover"
-      },
-      {
-        "text": "Active",
-        "class": "tag-active"
-      },
-      {
-        "text": "Focus",
-        "class": "focus"
-      }
-    ]
+  "tag_example": {
+    "text": "Default",
+    "class": ""
   }
 }

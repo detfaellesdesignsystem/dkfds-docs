@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--column-wrapping.html
-layout: iframed 
+layout: example-contained 
 title: Grid--column-wrapping.html
 ---
 <div class="grid-example">

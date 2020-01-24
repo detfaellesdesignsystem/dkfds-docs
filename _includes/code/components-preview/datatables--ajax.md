@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/datatables--ajax.html
-layout: iframed 
+layout: example-contained 
 title: Datatables--ajax.html
 ---
 <div class="container">

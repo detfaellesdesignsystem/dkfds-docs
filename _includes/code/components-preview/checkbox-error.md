@@ -1,63 +1,32 @@
 --- 
 permalink: /preview-components/checkbox-error.html
-layout: iframed 
+layout: example-contained 
 title: Checkbox-error.html
 ---
-<div class="container">
-    <div class="form-group form-error">
-        <fieldset>
-            <legend class="h5">Hvilken type af transport gør du brug af
-                regelmæssigt?</legend>
-            <span class="form-error-message" role="alert">Hjælpsom
-                fejlbesked</span>
-            <ul class="nobullet-list">
-
-                <li>
-
-                    <input id="car" type="checkbox" name="transport[]"
-                        value="car"
-                        class="form-checkbox  checkbox-large " />
-                    <label for="car" class="">Bil</label>
-
-                </li>
-
-                <li>
-
-                    <input id="bus" type="checkbox" name="transport[]"
-                        value="bus"
-                        class="form-checkbox  checkbox-large " />
-                    <label for="bus" class="">Bus</label>
-
-                </li>
-
-                <li>
-
-                    <input id="train" type="checkbox" name="transport[]"
-                        value="train"
-                        class="form-checkbox  checkbox-large " />
-                    <label for="train" class="">Tog</label>
-
-                </li>
-
-                <li>
-
-                    <input id="plane" type="checkbox" name="transport[]"
-                        value="plane"
-                        class="form-checkbox  checkbox-large " />
-                    <label for="plane" class="">Fly</label>
-
-                </li>
-
-                <li>
-
-                    <input id="ferry" type="checkbox" name="transport[]"
-                        value="ferry"
-                        class="form-checkbox  checkbox-large " />
-                    <label for="ferry" class="">Færge</label>
-
-                </li>
-
-            </ul>
-        </fieldset>
-    </div>
+<div class="form-group form-error">
+    <fieldset>
+        <legend class="h5">Tjekboks med fejl</legend>
+        <span class="form-error-message" role="alert">Hjælpsom
+            fejlbesked</span>
+        <ul class="nobullet-list">
+            <li>
+                <input id="checkboxerror1" type="checkbox"
+                    name="checkboxerror" value="1"
+                    class="form-checkbox  checkbox-large " />
+                <label for="checkboxerror1" class="">Tjekboks 1</label>
+            </li>
+            <li>
+                <input id="checkboxerror2" type="checkbox"
+                    name="checkboxerror[]" value="2"
+                    class="form-checkbox  checkbox-large " />
+                <label for="checkboxerror2" class="">Tjekboks 2</label>
+            </li>
+            <li>
+                <input id="checkboxerror3" type="checkbox"
+                    name="checkboxerror[]" value="3"
+                    class="form-checkbox  checkbox-large " />
+                <label for="checkboxerror3" class="">Tjekboks 3</label>
+            </li>
+        </ul>
+    </fieldset>
 </div>

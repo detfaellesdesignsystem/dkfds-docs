@@ -1,11 +1,6 @@
 --- 
 permalink: /preview-components/tags.html
-layout: iframed 
+layout: example-contained 
 title: Tags.html
 ---
-<div class="container py-8">
-    <button class="tag ">Default </button><button
-        class="tag tag-hover">Hover </button><button
-        class="tag tag-active">Active </button><button
-        class="tag focus">Focus </button>
-</div>
+<button class="tag ">Default </button>

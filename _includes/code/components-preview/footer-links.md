@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/footer-links.html
-layout: iframed 
+layout: example 
 title: Footer-links.html
 ---
 <div class="container">

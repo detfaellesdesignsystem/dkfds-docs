@@ -8,5 +8,5 @@
 {% endif %}
 {% assign _text_key = include.text_key | default: 'text' %}
 <li class="{% if _href == page.permalink or _href == page.url %}current{% endif %} {%  if _anchor -%}has-anchor-links{% endif %}">
-<a href="{{ _href }}">{{ link[_text_key] | smartify }}</a>
+<a href="{{ _href }}" {% if _href == page.permalink or _href == page.url %}aria-current="true"{% endif %} role="menuitem">{{ link[_text_key] | smartify }}</a>
 </li>

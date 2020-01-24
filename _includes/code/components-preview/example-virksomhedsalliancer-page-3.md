@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-virksomhedsalliancer-page-3.html
-layout: iframed 
+layout: example-contained 
 title: Example-virksomhedsalliancer-page-3.html
 ---
 <header class="header">
@@ -151,23 +151,24 @@ title: Example-virksomhedsalliancer-page-3.html
                         </div>
 
                         <div class="mt-6">
-
                             <div class="form-group">
                                 <label class="form-label " for="id-state"
-                                    id="form-label-id-state">Statsstøtte
-                                    (EU de-minimis) i DKK</label>
+                                    id="form-label-id-state">
+                                    Statsstøtte (EU de-minimis) i DKK
+                                </label>
                                 <span class="form-hint"
-                                    id="input-hint-message-id-state">Modtaget
-                                    fra dags dato og de tre seneste løbende
-                                    år ekskl. det aktuelle projekt.</span>
+                                    id="input-hint-message-id-state">
+                                    Modtaget fra dags dato og de tre
+                                    seneste løbende år ekskl. det aktuelle
+                                    projekt.
+                                </span>
 
                                 <input class="form-input  input-width-m "
-                                    placeholder="" id="id-state" value=""
+                                    id="id-state" value=""
                                     name="Input til statsstøtte (EU de-minimis) i DKK"
                                     type="text"
                                     aria-labelledby="form-label-id-state input-hint-message-id-state">
                             </div>
-
                         </div>
 
                         <div class="form-group">
@@ -198,17 +199,16 @@ title: Example-virksomhedsalliancer-page-3.html
                                             aria-hidden="true"
                                             class="box-border-l collapsed">
                                             <div class="py-4">
-
                                                 <div class="form-group">
                                                     <label
                                                         class="form-label "
                                                         for="id-minimis-name"
-                                                        id="form-label-id-minimis-name">Ordningens
-                                                        navn</label>
+                                                        id="form-label-id-minimis-name">
+                                                        Ordningens navn
+                                                    </label>
 
                                                     <input
                                                         class="form-input  input-width-m "
-                                                        placeholder=""
                                                         id="id-minimis-name"
                                                         value=""
                                                         name="Input til ordningens navn"
@@ -292,41 +292,40 @@ title: Example-virksomhedsalliancer-page-3.html
                                                     <label
                                                         class="form-label "
                                                         for="id-amount"
-                                                        id="form-label-id-amount">Beløb
-                                                        i DKK</label>
+                                                        id="form-label-id-amount">
+                                                        Beløb i DKK
+                                                    </label>
 
                                                     <input
                                                         class="form-input  input-width-xs "
-                                                        placeholder=""
                                                         id="id-amount"
                                                         value=""
                                                         name="Input til beløb i DKK"
                                                         type="text">
                                                 </div>
-
                                                 <div class="form-group">
                                                     <label
                                                         class="form-label "
                                                         for="id-reference"
-                                                        id="form-label-id-reference">Henvisning
-                                                        til yderligere
+                                                        id="form-label-id-reference">
+                                                        Henvisning til
+                                                        yderligere
                                                         information om
-                                                        ordningen</label>
+                                                        ordningen
+                                                    </label>
                                                     <span class="form-hint"
-                                                        id="input-hint-message-id-reference">Fx.
-                                                        et link
-                                                        (url)</span>
+                                                        id="input-hint-message-id-reference">
+                                                        Fx. et link (url)
+                                                    </span>
 
                                                     <input
                                                         class="form-input  input-width-m "
-                                                        placeholder=""
                                                         id="id-reference"
                                                         value=""
                                                         name="Input til henvisning til yderligere information om ordningen"
                                                         type="text"
                                                         aria-labelledby="form-label-id-reference input-hint-message-id-reference">
                                                 </div>
-
                                             </div>
                                         </div>
                                     </li>

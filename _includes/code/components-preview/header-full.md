@@ -1,46 +1,47 @@
 --- 
 permalink: /preview-components/header-full.html
-layout: iframed 
+layout: example 
 title: Header-full.html
 ---
 <header class="header">
 
-    <!--1A: Portal header -->
+    <!-- Start: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="#" title="Home" aria-label="Home"
-                class="logo alert-leave"><span
+            <!-- Start: Portallogo -->
+            <a href="#" class="log"><span
                     class="d-none d-print-block">Portalnavn</span></a>
+            <!-- Slut: Portallogo -->
+
             <button
                 class="button button-tertiary button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
-            <!-- 1B: Portal header: info + actions-->
+            <!-- Start: Persondetaljer -->
             <div class="portal-info">
                 <p class="user"><span class="weight-semibold">Christian
                         Emil Vestergaard
                         Christensen</span><br />Københavns Urmager og Værksted v/Martin Elsig</p>
                     <a href="#"
-                        class="button button-secondary alert-leave d-print-none"
+                        class="button button-secondary d-print-none"
                         role="button">
                         Log af
                     </a>
             </div>
+            <!-- Slut: Persondetaljer -->
         </div>
     </div>
+    <!-- Slut: Portal header -->
 
-    <!--2A: Solution header -->
+    <!-- Start: Løsningsheader -->
     <div class="solution-header">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Home" aria-label="Home"
-                    class="alert-leave2">En langt langt længere
-                    løsningstitel</a>
+                <a href="#">En langt langt længere løsningstitel</a>
             </div>
 
-            <!--2B: Solution header: Authority name + text-->
+            <!--2B: Solution header: Authority name + text -->
             <div class="solution-info">
-                <!-- nav-secondary -->
                 <p class="h5 authority-name">Myndighedsnavn</p>
                 <p>Support: 12 34 56 78 <span class="d-print-none">· <a
                             href="javascript:void(0);"
@@ -50,16 +51,17 @@ title: Header-full.html
             </div>
         </div>
     </div>
+    <!-- Slut: Løsningsheader -->
 
+    <!-- Start: Navigation -->
     <div class="overlay"></div>
     <nav class=" nav">
-        <!-- collapsible-->
         <button
             class="button button-secondary button-menu-close js-menu-close"
             title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-        <!-- 3: Main navigation-->
+
+        <!-- Start: Hovedmenu -->
         <div class="navbar navbar-primary">
-            <!--3A: Main navigation-->
             <div class="navbar-inner container">
                 <ul class="nav-primary">
                     <li>
@@ -116,7 +118,7 @@ title: Header-full.html
                     </li>
                 </ul>
 
-                <!-- 3B: Main navigation - secondary menu-->
+                <!-- Start: Overflow menu i navigation -->
                 <ul class="unstyled-list nav-actions">
                     <li>
                         <div
@@ -140,9 +142,10 @@ title: Header-full.html
                         </div>
                     </li>
                 </ul>
+                <!-- Slut: Overflow menu i navigation -->
             </div>
         </div>
-        <!-- 3: Main navigation end-->
+        <!-- Slut: Hovedmenu -->
 
         <!-- 4: Secondary navigation-->
         <div class="navbar">
@@ -227,7 +230,8 @@ title: Header-full.html
             </p>
         </div>
 
-    </nav> <!-- collapsible nav end-->
+    </nav>
+    <!-- Slut: Navigation -->
 </header>
 
 <div class="modal" id="modal-contact" aria-hidden="true">

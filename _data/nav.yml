@@ -3,9 +3,8 @@ primary:
   - href: /komigang/
   - href: /design/
   - href: /komponenter/
-  - href: /kode/
-  - href: /udvidelser/
   - href: /eksempler/
+  - href: /kode/
   - href: /omdesignsystemet/
 
 #Primary menu on mobile:
@@ -16,12 +15,10 @@ mobile:
     categorynav: 'Design_category'
   - href: /komponenter/
     categorynav: 'Komponenter_category'
-  - href: /kode/
-    categorynav: 'Kode_category'
-  - href: /udvidelser/
-    categorynav: 'Udvidelser_category'
   - href: /eksempler/
     categorynav: 'Eksempler_category'
+  - href: /kode/
+    categorynav: 'Kode_category'
   - href: /omdesignsystemet/
     categorynav: 'Om_designsystemet_category'
 
@@ -73,13 +70,17 @@ Komponenter_category:
   - href: /komponenter/beskeder/
   - href: /komponenter/cards/
   - href: /komponenter/cookiemeddelelse/
-  - href: /komponenter/tabnav/
+  - href: /komponenter/dato-felt/
+  - href: /komponenter/drop-down/
+  - href: /komponenter/faneblad/
+  - href: /komponenter/fil-upload/
   - href: /komponenter/footers/
-  - href: /komponenter/form-controls/
+  - href: /komponenter/formular/
   - href: /komponenter/funktionslink/
   - href: /komponenter/headers/
   - href: /komponenter/buttons/
   - href: /komponenter/overflowmenu/
+  - href: /komponenter/radiobutton/
   - href: /komponenter/sidenav/
   - href: /komponenter/collapse/
   - href: /komponenter/spinner/
@@ -87,6 +88,9 @@ Komponenter_category:
   - href: /komponenter/tilbage-link/
   - href: /komponenter/tables/
   - href: /komponenter/tags/
+  - href: /komponenter/tekstfelt/
+  - href: /komponenter/textarea/
+  - href: /komponenter/tjekboks/
   - href: /komponenter/tooltip/
   - href: /komponenter/trinindikatorer/
 
@@ -97,23 +101,30 @@ Kode_category:
 - href: /kode/badges/
 - href: /kode/beskeder/
 - href: /kode/cards/
-#- href: /kode/cookiemeddelelse/
-#- href: /kode/tabnav/
-#- href: /kode/footers/
-#- href: /kode/form-controls/
-#- href: /kode/funktionslink/
-#- href: /kode/headers/
+- href: /kode/cookiemeddelelse/
+- href: /kode/dato-felt/
+- href: /kode/drop-down/
+- href: /kode/faneblad/
+- href: /kode/fil-upload/
+- href: /kode/footers/
+- href: /kode/formular/
+- href: /kode/funktionslink/
+- href: /kode/headers/
 - href: /kode/buttons/
-#- href: /kode/overflowmenu/
-#- href: /kode/sidenav/
+- href: /kode/overflowmenu/
+- href: /kode/radiobutton/
+- href: /kode/sidenav/
 - href: /kode/collapse/
-#- href: /kode/spinner/
-#- href: /kode/search/
+- href: /kode/spinner/
+- href: /kode/search/
 - href: /kode/tilbage-link/
-#- href: /kode/tables/
-#- href: /kode/tags/
-#- href: /kode/tooltip/
-#- href: /kode/trinindikatorer/
+- href: /kode/tables/
+- href: /kode/tags/
+- href: /kode/tekstfelt/
+- href: /kode/textarea/
+- href: /kode/tjekboks/
+- href: /kode/tooltip/
+- href: /kode/trinindikatorer/
 
 
 #Left menu for udvidelser-category

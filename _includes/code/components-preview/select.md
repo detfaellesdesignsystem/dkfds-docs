@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/select.html
-layout: iframed 
+layout: example-contained 
 title: Select.html
 ---
 <div class="container">

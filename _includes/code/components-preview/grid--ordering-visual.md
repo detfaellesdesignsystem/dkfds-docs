@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--ordering-visual.html
-layout: iframed 
+layout: example-contained 
 title: Grid--ordering-visual.html
 ---
 <div class="grid-example">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/table--lineheight.html
-layout: iframed 
+layout: example-contained 
 title: Table--lineheight.html
 ---
 <div class="container">

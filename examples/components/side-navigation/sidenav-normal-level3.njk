@@ -1,9 +1,7 @@
 {% from "components/side-navigation/sidenav.njk" import nav_list as nav_list %}
 
-<div class="container mt-6 mb-6">
 <nav>
-  <ul class="sidenav-list">
-    {{ nav_list(sidenavsNormal.links, 'sidenav-sub_list') }}
-  </ul>
+    <ul class="sidenav-list" role="menu">
+        {{ nav_list(sidenavsNormal.links, 'sidenav-sub_list') }}
+    </ul>
 </nav>
-</div>

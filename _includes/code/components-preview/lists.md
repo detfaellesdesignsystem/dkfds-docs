@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/lists.html
-layout: iframed 
+layout: example-contained 
 title: Lists.html
 ---
 <div class="container">

@@ -1,0 +1,16 @@
+{
+  "portal_header_data": {
+    "user": {
+      "name": "Lone Hansen"
+    },
+    "logolink": {
+      "title": "Hjem",
+      "href": "javascript:void(0);"
+    },
+    "link": {
+      "href": "#",
+      "class": "button-secondary",
+      "text": "Log af"
+    }
+  }
+}

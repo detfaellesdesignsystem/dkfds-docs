@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-praktikplads-page-4.html
-layout: iframed 
+layout: example-contained 
 title: Example-praktikplads-page-4.html
 ---
 <header class="header">
@@ -156,17 +156,16 @@ title: Example-praktikplads-page-4.html
     </header>
     <section class="page-content">
         <div class="mt-6">
-
             <div class="form-group">
                 <label class="form-label " for="id-search-keyword"
-                    id="form-label-id-search-keyword">Søg via
-                    nøgleord</label>
+                    id="form-label-id-search-keyword">
+                    Søg via nøgleord
+                </label>
 
-                <input class="form-input  input-width-m " placeholder=""
+                <input class="form-input  input-width-m "
                     id="id-search-keyword" value=""
                     name="Input til søg via nøgleord" type="text">
             </div>
-
         </div>
         <div class="mt-5">
 

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--all-breakpoints.html
-layout: iframed 
+layout: example-contained 
 title: Grid--all-breakpoints.html
 ---
 <div class="grid-example">

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/line_spacing.html
-layout: iframed 
+layout: example-contained 
 title: Line_spacing.html
 ---
 <div class="container">

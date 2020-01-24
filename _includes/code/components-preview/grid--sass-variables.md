@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--sass-variables.html
-layout: iframed 
+layout: example-contained 
 title: Grid--sass-variables.html
 ---
 <pre>

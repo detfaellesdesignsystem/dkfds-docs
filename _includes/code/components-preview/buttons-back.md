@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/buttons-back.html
-layout: iframed 
+layout: example-contained 
 title: Buttons-back.html
 ---
 <button class="button button-quaternary">

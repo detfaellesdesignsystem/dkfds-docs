@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/fil-liste-error.html
-layout: iframed 
+layout: example-contained 
 title: Fil-liste-error.html
 ---
 <header class="header">

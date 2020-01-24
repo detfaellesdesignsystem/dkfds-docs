@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/cards-third-width.html
-layout: iframed 
+layout: example-contained 
 title: Cards-third-width.html
 ---
 <div class="container pb-5">

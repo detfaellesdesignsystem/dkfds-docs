@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/icons.html
-layout: iframed 
+layout: example-contained 
 title: Icons.html
 ---
 <div class="container">

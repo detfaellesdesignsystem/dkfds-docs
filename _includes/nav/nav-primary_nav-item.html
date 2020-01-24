@@ -13,10 +13,10 @@
 {% if include.is_sidenav and include.text %}
   {% assign titletext = include.text %}
 {% endif %}
-<li class="{% if is_active -%}current {% endif %}">
+<li class="{% if is_active -%}current{% endif %}" role="none">
 {% if include.flat -%}
   <!-- Do not render subnavs-->
-  <a href="{{ include.page.url | relative_url }}"
+  <a href="{{ include.page.url | relative_url }}" role="menuitem" {% if is_active -%}aria-current="page"{% endif %}
     class="nav-link">
     <span>{{ titletext | smartify }}</span>
   </a>

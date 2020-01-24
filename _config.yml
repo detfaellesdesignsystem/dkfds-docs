@@ -88,3 +88,7 @@ exclude:
   - webpack.config.js
   - postcss.config.json
   - examples
+  - img
+  - helper_scripts
+  - gen-images.js
+  - pdf

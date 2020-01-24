@@ -1,128 +1,49 @@
 --- 
 permalink: /preview-components/sidenav-anchor.html
-layout: iframed 
+layout: example-contained 
 title: Sidenav-anchor.html
 ---
-<div class="container mt-6 mb-6">
-    <nav>
-        <ul class="sidenav-list">
+<nav>
+    <ul class="sidenav-list">
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
 
-            <li class="   ">
-                <a href="">
+        </li>
+        <li class="current  active  has-anchor-links" role="none">
+            <a href="" role="menuitem" aria-current="true"
+                aria-current="page">
+                Hovedside
+            </a>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        Anchor link
+                    </a>
 
-                    Hovedside
+                </li>
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        Anchor link
+                    </a>
 
-                </a>
+                </li>
+            </ul>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        Anchor link
+                    </a>
 
-            </li>
+                </li>
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        Anchor link
+                    </a>
 
-            <li class="current   ">
-                <a href="">
-
-                    Hovedside
-
-                </a>
-
-                <ul class="sidenav-sub_list">
-
-                    <li class="   ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                    </li>
-
-                    <li class=" active has-anchor-links ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                        <ul class="sidenav-sub_list">
-
-                            <li class="   ">
-                                <a href="#">
-
-                                    Anchor link
-
-                                </a>
-
-                            </li>
-
-                            <li class="   ">
-                                <a href="#">
-
-                                    Anchor link
-
-                                </a>
-
-                            </li>
-
-                            <li class="   ">
-                                <a href="#">
-
-                                    Anchor link
-
-                                </a>
-
-                            </li>
-
-                            <li class="   ">
-                                <a href="#">
-
-                                    Anchor link
-
-                                </a>
-
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li class="   ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                    </li>
-
-                    <li class="   ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                    </li>
-
-                    <li class="   ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </li>
-
-            <li class="   ">
-                <a href="">
-
-                    Hovedside
-
-                </a>
-
-            </li>
-
-        </ul>
-    </nav>
-</div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

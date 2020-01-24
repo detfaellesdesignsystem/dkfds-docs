@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/displaytext.html
-layout: iframed 
+layout: example-contained 
 title: Displaytext.html
 ---
 <div class="container">

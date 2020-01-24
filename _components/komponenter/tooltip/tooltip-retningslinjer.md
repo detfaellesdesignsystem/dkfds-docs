@@ -1,7 +1,7 @@
 ---
 title: Retningslinjer
 parent: Tooltip
-order: 3
+order: 20
 headingClass: h3
 ---
 

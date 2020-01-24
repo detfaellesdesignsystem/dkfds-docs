@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alerts-icons.html
-layout: iframed 
+layout: example-contained 
 title: Alerts-icons.html
 ---
 <div class="alert alert-info alert--show-icon" role="alert"

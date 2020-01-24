@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/micromodal.html
-layout: iframed 
+layout: example-contained 
 title: Micromodal.html
 ---
 <div class="container">

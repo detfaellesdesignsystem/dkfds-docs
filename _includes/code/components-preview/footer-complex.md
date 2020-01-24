@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/footer-complex.html
-layout: iframed 
+layout: example 
 title: Footer-complex.html
 ---
 <footer>

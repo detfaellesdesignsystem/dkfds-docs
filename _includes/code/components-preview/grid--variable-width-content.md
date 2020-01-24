@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--variable-width-content.html
-layout: iframed 
+layout: example-contained 
 title: Grid--variable-width-content.html
 ---
 <div class="grid-example">

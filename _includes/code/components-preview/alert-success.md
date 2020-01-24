@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alert-success.html
-layout: iframed 
+layout: example-contained 
 title: Alert-success.html
 ---
 <div class="alert alert-success">

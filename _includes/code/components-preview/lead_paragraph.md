@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/lead_paragraph.html
-layout: iframed 
+layout: example-contained 
 title: Lead_paragraph.html
 ---
 <div class="container">

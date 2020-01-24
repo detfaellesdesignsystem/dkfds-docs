@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/cookie-message.html
-layout: iframed 
+layout: example 
 title: Cookie-message.html
 ---
 <div class="cookie-message" id="cookieMessage">

@@ -1,0 +1,8 @@
+{
+  "textinput_example":{
+    "id": "input-optional",
+    "name": "input-optional",
+    "label": "Inputfelt som er valgfrit",
+    "optionallabel": "(frivilligt)"
+  }
+}

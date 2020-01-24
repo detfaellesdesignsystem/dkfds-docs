@@ -10,12 +10,12 @@ subnav:
 - text: Simpel
   href: '#simple'
 - text: Tre kolonner
-  href: '#three-columns'
+  href: '#tre-kolonner'
 - text: Fire kolonner
-  href: '#four-columns'
+  href: '#fire-kolonner'
 - text: Kompleks
-  href: '#complex'
+  href: '#kompleks'
 - text: Footer med logo
-  href: '#footer-logo'
+  href: '#footer-med-logo'
 ---
 {% include child-components.html parent='Footers' %}

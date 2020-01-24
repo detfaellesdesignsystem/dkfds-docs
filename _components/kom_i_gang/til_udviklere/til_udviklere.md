@@ -27,7 +27,7 @@ Navigér til roden af dit projekt i en kommando prompt.
 Installer DKFDS med følgende kommando:
 
 
-{% highlight console %}
+{% highlight shell %}
 npm install --save dkfds
 {% endhighlight %}
 

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/modal.html
-layout: iframed 
+layout: example-contained 
 title: Modal.html
 ---
 <div class="modal" id="[object Object]" aria-hidden="true">

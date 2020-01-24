@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/tippy-tooltip-button.html
-layout: iframed 
+layout: example-contained 
 title: Tippy-tooltip-button.html
 ---
 <div class="container py-8">

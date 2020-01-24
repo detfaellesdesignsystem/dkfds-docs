@@ -5,10 +5,6 @@ order: 30
 headingClass: h3
 ---
 
-<h2 class="h4">Tilgængelighed</h2>
-
-Anvend ARIA attributten `aria-busy="true"` på elementet, der er igang med at blive opdateret til at markere for skærmlæsere, at der er en live region i gang med indlæsning og sæt værdien til `false`, når den er indlæst.
-
 <h2 class="h4">Brugervenlighed</h2>
 <h3 class="h4">Anvendes til</h3>
 

@@ -1,137 +1,93 @@
 --- 
 permalink: /preview-components/sidenav-information-level3.html
-layout: iframed 
+layout: example-contained 
 title: Sidenav-information-level3.html
 ---
-<div class="container mt-6 mb-6">
-    <nav>
-        <ul class="sidenav-list">
+<nav>
+    <ul class="sidenav-list" role="menu">
 
-            <li class="   ">
-                <a href="">
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside<span
+                    class="sidenav-information">Informationstekst for
+                    parent link</span>
+            </a>
 
-                    Hovedside
+        </li>
+        <li class="current  " role="none">
+            <a href="" role="menuitem" aria-current="true">
+                Hovedside<span
+                    class="sidenav-information">Informationstekst for
+                    current link</span>
+            </a>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
 
-                    <span class="sidenav-information">Informationstekst for
-                        parent link</span>
+                </li>
+                <li class="current  " role="none">
+                    <a href="" role="menuitem" aria-current="true">
+                        Underside
+                    </a>
+                    <ul class="sidenav-sub_list" role="menu">
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
 
-                </a>
+                        </li>
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
 
-            </li>
+                        </li>
+                        <li class=" active " role="none">
+                            <a href="" role="menuitem" aria-current="page">
+                                Underside
+                            </a>
 
-            <li class="current   ">
-                <a href="">
+                        </li>
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
 
-                    Hovedside
+                        </li>
+                    </ul>
 
-                    <span class="sidenav-information">Informationstekst for
-                        current link</span>
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
 
-                </a>
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
 
-                <ul class="sidenav-sub_list">
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
 
-                    <li class="   ">
-                        <a href="">
+                </li>
+            </ul>
 
-                            Underside
+        </li>
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside<span
+                    class="sidenav-information">Informationstekst for
+                    another link</span>
+            </a>
 
-                        </a>
+        </li>
 
-                    </li>
-
-                    <li class="current   ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                        <ul class="sidenav-sub_list">
-
-                            <li class="   ">
-                                <a href="">
-
-                                    Underside
-
-                                </a>
-
-                            </li>
-
-                            <li class="   ">
-                                <a href="">
-
-                                    Underside
-
-                                </a>
-
-                            </li>
-
-                            <li class=" active  ">
-                                <a href="">
-
-                                    Underside
-
-                                </a>
-
-                            </li>
-
-                            <li class="   ">
-                                <a href="">
-
-                                    Underside
-
-                                </a>
-
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li class="   ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                    </li>
-
-                    <li class="   ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                    </li>
-
-                    <li class="   ">
-                        <a href="">
-
-                            Underside
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </li>
-
-            <li class="   ">
-                <a href="">
-
-                    Hovedside
-
-                    <span class="sidenav-information">Informationstekst for
-                        another link</span>
-
-                </a>
-
-            </li>
-
-        </ul>
-    </nav>
-</div>
+    </ul>
+</nav>

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/example-flytning-page-4.html
-layout: iframed 
+layout: example-contained 
 title: Example-flytning-page-4.html
 ---
 <header class="header">

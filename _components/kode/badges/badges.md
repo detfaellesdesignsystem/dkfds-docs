@@ -7,15 +7,17 @@ category: Kode_category
 subcategory: Kode 
 ---
 
-## Komponent
-{% include code/components/badge.html %}
+{% include code/preview-box.html component="badge" title="Eksempel på badge komponent" %}
 
-<ul class="nobullet-list mt-7">
+## Eksempler og dokumentation
+<ul class="nobullet-list">
     <li><a href="/komponenter/beskeder/#retningslinjer">Retningslinjer</a></li>
     <li><a href="/komponenter/beskeder/">Eksempler</a></li>
 </ul>
 
-## Implementering
+## Installation
+
+### HTML Struktur
 
 {% include code/syntax.html component="badge" %}
 

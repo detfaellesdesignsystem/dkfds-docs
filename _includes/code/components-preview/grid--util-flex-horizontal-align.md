@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--util-flex-horizontal-align.html
-layout: iframed 
+layout: example-contained 
 title: Grid--util-flex-horizontal-align.html
 ---
 <div class="grid-example">

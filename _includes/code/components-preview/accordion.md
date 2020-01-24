@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/accordion.html
-layout: iframed 
+layout: example-contained 
 title: Accordion.html
 ---
 <ul class="accordion">

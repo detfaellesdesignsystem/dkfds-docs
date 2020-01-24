@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--one-column-width.html
-layout: iframed 
+layout: example-contained 
 title: Grid--one-column-width.html
 ---
 <div class="grid-example">
