@@ -168,6 +168,28 @@
 <li class="">
 
   <!-- Do not render subnavs-->
+  <a href="/kode/"
+    class="nav-link">
+    <span>Kode</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<li class="">
+
+  <!-- Do not render subnavs-->
   <a href="/udvidelser/"
     class="nav-link">
     <span>Udvidelser</span>
@@ -981,9 +1003,173 @@
   
     <div class="overflow-menu">
       <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="false"  >
-        <span>Udvidelser</span>
+        <span>Kode</span>
       </button>
       <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/accordions/"
+  class="nav-link">
+  Accordions
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/badges/"
+  class="nav-link">
+  Badges
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/beskeder/"
+  class="nav-link">
+  Beskeder (Alerts)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/cards/"
+  class="nav-link">
+  Cards
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/buttons/"
+  class="nav-link">
+  Knapper
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/collapse/"
+  class="nav-link">
+  Skjul og vis (Collapse)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/tilbage-link/"
+  class="nav-link">
+  Tilbage link
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<li class="">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+        <span>Udvidelser</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1108,10 +1294,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1200,10 +1386,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow7" aria-haspopup="true" aria-expanded="false"  >
         <span>Om designsystemet</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow7" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1397,11 +1583,7 @@
           <h1 id="retningslinjer">Retningslinjer</h1>
           
 
-          <h3 class="h4">Tilgængelighed</h3>
-
-<p>Cards skal overholde html outline, så browser og eventuelle skærmlæsere kan afkode det korrekt. Dvs. overskriften på dit cards skal være en heading 4, hvis det foregående afsnit er en heading 3.</p>
-
-<h3 class="h4">Brugervenlighed</h3>
+          <h3 class="h4">Brugervenlighed</h3>
 <h4 class="h5">Anvendes til</h4>
 
 <p>Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Det kan fx være en afledt, men ikke direkte koblet ekstra funktion ift. sidens sammenhæng.</p>
@@ -1423,52 +1605,6 @@
   <li>Du kan godt indsætte flere cards på en side, men sørg for at de fremtræder roligt i sidens layout og ikke bryder brugerens naturlige aflæsning af siden.</li>
   <li>Undgå lange tekster i cards.</li>
   <li>Skriv kort og præcist i hvert card.</li>
-</ul>
-
-<h2 id="implementering">Implementering</h2>
-
-<p>Alle cards har en <code class="highlighter-rouge">card</code> class.</p>
-
-<p>Sæt card til fuld højde ved at tilføje klassen <code class="highlighter-rouge">card-align-height</code>.</p>
-
-<p>Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde. Du kan frit sammensætte rækkefølge og størrelser af alle områder efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.</p>
-
-<p>Hvert område er beskrevet nedenfor.</p>
-
-<h3 class="h4">Header</h3>
-
-<p>Headeren har en <code class="highlighter-rouge">.card-header</code> class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.</p>
-
-<ul>
-  <li><code class="highlighter-rouge">.header-titel</code></li>
-  <li><code class="highlighter-rouge">.subheader</code></li>
-</ul>
-
-<h3 class="h4">Tekstområde</h3>
-
-<p>Tekstområdet har en <code class="highlighter-rouge">.card-text</code> class, og indeholder brødtekst, som har en class.</p>
-
-<ul>
-  <li><code class="highlighter-rouge">.text</code></li>
-</ul>
-
-<h3 class="h4">Indholdsområde</h3>
-
-<p>Indholdsområdet har en <code class="highlighter-rouge">card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class. .card-content har en stribet baggrundsfarve. Denne baggrundsfarve er midlertidig og bliver kun vist for at indikere indholdsområdet. Du kan se, hvilke andre baggrundsfarver der kan bruges, under “Baggrundsfarver” og “Hjælpefunktioner” i sidenavigationen. Det er også muligt at tilføje andre farver.</p>
-
-<ul>
-  <li><code class="highlighter-rouge">.content-text</code></li>
-  <li><code class="highlighter-rouge">.content</code></li>
-</ul>
-
-<h3 class="h4">Aktionsområde</h3>
-
-<p>Aktionsområdet har en <code class="highlighter-rouge">card-action</code> class og kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.</p>
-
-<ul>
-  <li><code class="highlighter-rouge">.action-content</code></li>
-  <li><code class="highlighter-rouge">.action-buttons</code></li>
-  <li><code class="highlighter-rouge">.action-links</code></li>
 </ul>
 
 

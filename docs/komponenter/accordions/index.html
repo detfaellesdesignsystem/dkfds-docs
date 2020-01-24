@@ -171,6 +171,28 @@
 <li class="">
 
   <!-- Do not render subnavs-->
+  <a href="/kode/"
+    class="nav-link">
+    <span>Kode</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<li class="">
+
+  <!-- Do not render subnavs-->
   <a href="/udvidelser/"
     class="nav-link">
     <span>Udvidelser</span>
@@ -1033,9 +1055,173 @@
   
     <div class="overflow-menu">
       <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="false"  >
-        <span>Udvidelser</span>
+        <span>Kode</span>
       </button>
       <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/accordions/"
+  class="nav-link">
+  Accordions
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/badges/"
+  class="nav-link">
+  Badges
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/beskeder/"
+  class="nav-link">
+  Beskeder (Alerts)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/cards/"
+  class="nav-link">
+  Cards
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/buttons/"
+  class="nav-link">
+  Knapper
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/collapse/"
+  class="nav-link">
+  Skjul og vis (Collapse)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/tilbage-link/"
+  class="nav-link">
+  Tilbage link
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<li class="">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+        <span>Udvidelser</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1160,10 +1346,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1252,10 +1438,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow7" aria-haspopup="true" aria-expanded="false"  >
         <span>Om designsystemet</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow7" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1922,264 +2108,96 @@
   <h2 id="standard">Standard</h2>
   
   
-  <div class="component-preview  component-preview-accordion" aria-label="Eksempel på accordion">
-    <div class="container">
+  <div class="component-preview  component-preview-accordion px-4" aria-label="Eksempel på accordion">
+    <ul class="accordion">
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="a1">
+            Lorem ipsum dolor sit amet
+            <span class="accordion-icon">
+                <span class="icon_text">Information</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
+            </span>
+        </button>
+        <div id="a1" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button accordion-error " aria-expanded="true" aria-describedby="a2" aria-controls="a2">
+            Consectetur adipiscing elit
+            <span class="accordion-icon">
+                <span class="icon_text">Fejl</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
+            </span>
+        </button>
 
-    <ul class="accordion ">
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="a1">
-                Lorem ipsum dolor sit amet
-                <span class="accordion-icon ">
-                    <span class="icon_text">Information</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
-                </span>
-            </button>
-
-            <div id="a1" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button  accordion-error " aria-expanded="true" aria-describedby="a2" aria-controls="a2">
-                Consectetur adipiscing elit
-                <span class="accordion-icon ">
-                    <span class="icon_text">Fejl</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="a2" aria-hidden="false" class="accordion-content">
-
-                <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
-                    <div class="alert-body">
-                        <p class="alert-text">Sed ut perspiciatis unde
-                            omnis iste natus
-                            error sit voluptatem accusantium doloremque
-                            laudantium.</p>
-                    </div>
+        <div id="a2" aria-hidden="false" class="accordion-content">
+            <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
+                <div class="alert-body">
+                    <p class="alert-text">Sed ut perspiciatis unde omnis
+                        iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
                 </div>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
             </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="a3">
-                Sed do eiusmod tempor
-                <span class="accordion-icon ">
-                    <span class="icon_text">Advarsel</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="a3" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="a4">
-                Labore et dolore magna
-                <span class="accordion-icon ">
-                    <span class="icon_text">Success</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="a4" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="a5">
-                Ut enim ad minim veniam</button>
-
-            <div id="a5" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-    </ul>
-
-</div>
-</div>
-
-  
-  <div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-accordion">Kode</button>
-  <div id="code-accordion" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"accordion "</span><span class="nt">&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"a1"</span><span class="nt">&gt;</span>
-                Lorem ipsum dolor sit amet
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#info"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"a1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button  accordion-error "</span>
-                <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-describedby=</span><span class="s">"a2"</span>
-                <span class="na">aria-controls=</span><span class="s">"a2"</span><span class="nt">&gt;</span>
-                Consectetur adipiscing elit
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Fejl<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#close-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"a2"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error"</span> <span class="na">role=</span><span class="s">"alert"</span>
-                    <span class="na">aria-label=</span><span class="s">"Fejlbesked i accordion"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde
-                            omnis iste natus
-                            error sit voluptatem accusantium doloremque
-                            laudantium.<span class="nt">&lt;/p&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"a3"</span><span class="nt">&gt;</span>
-                Sed do eiusmod tempor
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#alert-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"a3"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"a4"</span><span class="nt">&gt;</span>
-                Labore et dolore magna
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#acheck-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"a4"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"a5"</span><span class="nt">&gt;</span>
-                Ut enim ad minim veniam<span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"a5"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-    <span class="nt">&lt;/ul&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="a3">
+            Sed do eiusmod tempor
+            <span class="accordion-icon">
+                <span class="icon_text">Advarsel</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
+            </span>
+        </button>
+        <div id="a3" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="a4">
+            Labore et dolore magna
+            <span class="accordion-icon">
+                <span class="icon_text">Success</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
+            </span>
+        </button>
+        <div id="a4" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="a5">
+            Ut enim ad minim veniam</button>
+        <div id="a5" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+</ul>
 </div>
 
   
   
-  <h3 id="implementering">Implementering</h3>
-
-<p>Man kan undlade at sætte <code class="highlighter-rouge">aria-hidden</code> attribut på <code class="highlighter-rouge">accordion-content</code>, hvis man har implementeret dkfds.js i sit projekt. <code class="highlighter-rouge">aria-hidden</code> vil da blive tilføjet automatisk via javascript.</p>
-
-<h4 id="javascript">JavaScript</h4>
-
-<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-
-<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));
-</code></pre>
-</div>
-
-<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-
-<h5 id="events">Events</h5>
-
-<p>Når en accordion bliver foldet ud, bliver eventet <code class="highlighter-rouge">fds.accordion.open</code> udløst på accordion knappen, som man kan koble sig på med en eventlistener.</p>
-
-<p>Når en accordion bliver foldet ind, bliver eventet <code class="highlighter-rouge">fds.accordion.close</code> udløst på accordion knappen, som man kan koble sig på med en eventlistener.</p>
 
 </section>
 
@@ -2187,246 +2205,96 @@
   <h2 id="tilføj-ramme">Tilføj ramme</h2>
   
   
-  <div class="component-preview  component-preview-accordion-border" aria-label="Eksempel på accordion  med ramme">
-    <div class="container">
-
+  <div class="component-preview  component-preview-accordion-border px-4" aria-label="Eksempel på accordion  med ramme">
     <ul class="accordion accordion-bordered">
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="b-a1">
+            Lorem ipsum dolor sit amet
+            <span class="accordion-icon">
+                <span class="icon_text">Information</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
+            </span>
+        </button>
+        <div id="b-a1" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button accordion-error " aria-expanded="true" aria-describedby="b-a2" aria-controls="b-a2">
+            Consectetur adipiscing elit
+            <span class="accordion-icon">
+                <span class="icon_text">Fejl</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
+            </span>
+        </button>
 
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="b-a1">
-                Lorem ipsum dolor sit amet
-                <span class="accordion-icon ">
-                    <span class="icon_text">Information</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
-                </span>
-            </button>
-
-            <div id="b-a1" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button  accordion-error " aria-expanded="true" aria-describedby="b-a2" aria-controls="b-a2">
-                Consectetur adipiscing elit
-                <span class="accordion-icon ">
-                    <span class="icon_text">Fejl</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="b-a2" aria-hidden="false" class="accordion-content">
-
-                <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
-                    <div class="alert-body">
-                        <p class="alert-text">Sed ut perspiciatis unde
-                            omnis iste natus
-                            error sit voluptatem accusantium doloremque
-                            laudantium.</p>
-                    </div>
+        <div id="b-a2" aria-hidden="false" class="accordion-content">
+            <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
+                <div class="alert-body">
+                    <p class="alert-text">Sed ut perspiciatis unde omnis
+                        iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
                 </div>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
             </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="b-a3">
-                Sed do eiusmod tempor
-                <span class="accordion-icon ">
-                    <span class="icon_text">Advarsel</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="b-a3" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="b-a4">
-                Labore et dolore magna
-                <span class="accordion-icon ">
-                    <span class="icon_text">Success</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="b-a4" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="b-a5">
-                Ut enim ad minim veniam</button>
-
-            <div id="b-a5" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-    </ul>
-
-</div>
-</div>
-
-  
-  <div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-accordion-border">Kode</button>
-  <div id="code-accordion-border" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"accordion accordion-bordered"</span><span class="nt">&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"b-a1"</span><span class="nt">&gt;</span>
-                Lorem ipsum dolor sit amet
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#info"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"b-a1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button  accordion-error "</span>
-                <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-describedby=</span><span class="s">"b-a2"</span>
-                <span class="na">aria-controls=</span><span class="s">"b-a2"</span><span class="nt">&gt;</span>
-                Consectetur adipiscing elit
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Fejl<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#close-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"b-a2"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error"</span> <span class="na">role=</span><span class="s">"alert"</span>
-                    <span class="na">aria-label=</span><span class="s">"Fejlbesked i accordion"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde
-                            omnis iste natus
-                            error sit voluptatem accusantium doloremque
-                            laudantium.<span class="nt">&lt;/p&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"b-a3"</span><span class="nt">&gt;</span>
-                Sed do eiusmod tempor
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#alert-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"b-a3"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"b-a4"</span><span class="nt">&gt;</span>
-                Labore et dolore magna
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#acheck-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"b-a4"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"b-a5"</span><span class="nt">&gt;</span>
-                Ut enim ad minim veniam<span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"b-a5"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-    <span class="nt">&lt;/ul&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="b-a3">
+            Sed do eiusmod tempor
+            <span class="accordion-icon">
+                <span class="icon_text">Advarsel</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
+            </span>
+        </button>
+        <div id="b-a3" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="b-a4">
+            Labore et dolore magna
+            <span class="accordion-icon">
+                <span class="icon_text">Success</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
+            </span>
+        </button>
+        <div id="b-a4" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="b-a5">
+            Ut enim ad minim veniam</button>
+        <div id="b-a5" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+</ul>
 </div>
 
   
   
-  <h3 id="implementering">Implementering</h3>
-
-<p>Tilføj klassen <code class="highlighter-rouge">accordion-bordered</code> til  <code class="highlighter-rouge">.accordion</code> for at tilføje en synlig ramme.</p>
 
 </section>
 
@@ -2434,246 +2302,96 @@
   <h2 id="tillad-mere-end-én-åben-accordion">Tillad mere end én åben accordion</h2>
   
   
-  <div class="component-preview  component-preview-accordion-multi" aria-label="Eksempel på accordion, hvor flere kan være åbne på samme tid">
-    <div class="container">
+  <div class="component-preview  component-preview-accordion-multi px-4" aria-label="Eksempel på accordion, hvor flere kan være åbne på samme tid">
+    <ul class="accordion accordion-multiselectable">
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="m-a1">
+            Lorem ipsum dolor sit amet
+            <span class="accordion-icon">
+                <span class="icon_text">Information</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
+            </span>
+        </button>
+        <div id="m-a1" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button accordion-error " aria-expanded="true" aria-describedby="m-a2" aria-controls="m-a2">
+            Consectetur adipiscing elit
+            <span class="accordion-icon">
+                <span class="icon_text">Fejl</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
+            </span>
+        </button>
 
-    <ul class="accordion  accordion-multiselectable">
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="m-a1">
-                Lorem ipsum dolor sit amet
-                <span class="accordion-icon ">
-                    <span class="icon_text">Information</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
-                </span>
-            </button>
-
-            <div id="m-a1" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button  accordion-error " aria-expanded="true" aria-describedby="m-a2" aria-controls="m-a2">
-                Consectetur adipiscing elit
-                <span class="accordion-icon ">
-                    <span class="icon_text">Fejl</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="m-a2" aria-hidden="false" class="accordion-content">
-
-                <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
-                    <div class="alert-body">
-                        <p class="alert-text">Sed ut perspiciatis unde
-                            omnis iste natus
-                            error sit voluptatem accusantium doloremque
-                            laudantium.</p>
-                    </div>
+        <div id="m-a2" aria-hidden="false" class="accordion-content">
+            <div class="alert alert-error" role="alert" aria-label="Fejlbesked i accordion">
+                <div class="alert-body">
+                    <p class="alert-text">Sed ut perspiciatis unde omnis
+                        iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
                 </div>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
             </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="m-a3">
-                Sed do eiusmod tempor
-                <span class="accordion-icon ">
-                    <span class="icon_text">Advarsel</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="m-a3" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="m-a4">
-                Labore et dolore magna
-                <span class="accordion-icon ">
-                    <span class="icon_text">Success</span>
-                    <svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
-                </span>
-            </button>
-
-            <div id="m-a4" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-        <li>
-            <button class="accordion-button " aria-expanded="false" aria-controls="m-a5">
-                Ut enim ad minim veniam</button>
-
-            <div id="m-a5" aria-hidden="true" class="accordion-content">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-
-    </ul>
-
-</div>
-</div>
-
-  
-  <div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-accordion-multi">Kode</button>
-  <div id="code-accordion-multi" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"accordion  accordion-multiselectable"</span><span class="nt">&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"m-a1"</span><span class="nt">&gt;</span>
-                Lorem ipsum dolor sit amet
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#info"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"m-a1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button  accordion-error "</span>
-                <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-describedby=</span><span class="s">"m-a2"</span>
-                <span class="na">aria-controls=</span><span class="s">"m-a2"</span><span class="nt">&gt;</span>
-                Consectetur adipiscing elit
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Fejl<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#close-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"m-a2"</span> <span class="na">aria-hidden=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error"</span> <span class="na">role=</span><span class="s">"alert"</span>
-                    <span class="na">aria-label=</span><span class="s">"Fejlbesked i accordion"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde
-                            omnis iste natus
-                            error sit voluptatem accusantium doloremque
-                            laudantium.<span class="nt">&lt;/p&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"m-a3"</span><span class="nt">&gt;</span>
-                Sed do eiusmod tempor
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#alert-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"m-a3"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"m-a4"</span><span class="nt">&gt;</span>
-                Labore et dolore magna
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"accordion-icon "</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon_text"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
-                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span>  <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#acheck-circle-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"m-a4"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;li&gt;</span>
-            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"accordion-button "</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                <span class="na">aria-controls=</span><span class="s">"m-a5"</span><span class="nt">&gt;</span>
-                Ut enim ad minim veniam<span class="nt">&lt;/button&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"m-a5"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-
-    <span class="nt">&lt;/ul&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="m-a3">
+            Sed do eiusmod tempor
+            <span class="accordion-icon">
+                <span class="icon_text">Advarsel</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
+            </span>
+        </button>
+        <div id="m-a3" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="m-a4">
+            Labore et dolore magna
+            <span class="accordion-icon">
+                <span class="icon_text">Success</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#acheck-circle-outline"></use></svg>
+            </span>
+        </button>
+        <div id="m-a4" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="m-a5">
+            Ut enim ad minim veniam</button>
+        <div id="m-a5" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+</ul>
 </div>
 
   
   
-  <h3 id="implementering">Implementering</h3>
-
-<p>Man kan også tillade at flere kan være åbne på samme tid. Dette gøres ved at tilføje klassen <code class="highlighter-rouge">accordion-multiselectable</code> til <code class="highlighter-rouge">.accordion</code>.</p>
 
 </section>
 

@@ -168,6 +168,28 @@
 <li class="">
 
   <!-- Do not render subnavs-->
+  <a href="/kode/"
+    class="nav-link">
+    <span>Kode</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<li class="">
+
+  <!-- Do not render subnavs-->
   <a href="/udvidelser/"
     class="nav-link">
     <span>Udvidelser</span>
@@ -981,9 +1003,173 @@
   
     <div class="overflow-menu">
       <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="false"  >
-        <span>Udvidelser</span>
+        <span>Kode</span>
       </button>
       <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/accordions/"
+  class="nav-link">
+  Accordions
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/badges/"
+  class="nav-link">
+  Badges
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/beskeder/"
+  class="nav-link">
+  Beskeder (Alerts)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/cards/"
+  class="nav-link">
+  Cards
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/buttons/"
+  class="nav-link">
+  Knapper
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/collapse/"
+  class="nav-link">
+  Skjul og vis (Collapse)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/tilbage-link/"
+  class="nav-link">
+  Tilbage link
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<li class="">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+        <span>Udvidelser</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1108,10 +1294,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1200,10 +1386,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow7" aria-haspopup="true" aria-expanded="false"  >
         <span>Om designsystemet</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow7" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1397,51 +1583,7 @@
           <h1 id="generel-skjul-og-vis-indhold-funktionalitet">Generel skjul og vis indhold funktionalitet</h1>
           
 
-          <h3 id="implementering">Implementering</h3>
-
-<p>For at initialisere collapse funktionaliteten skal et HTML-element have klassen <code class="highlighter-rouge">.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
-
-<p>Dette HTML-element skal yderligere have følgende attributter:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">data-js-target="#id-of-target-to-collapse"</code>. Der henføres her til det element som skal collapses/expandes.</li>
-  <li><code class="highlighter-rouge">aria-expanded="true/false". </code></li>
-  <li><code class="highlighter-rouge">aria-controls="id-of-target-to-collapse"</code></li>
-</ul>
-
-<p>Det element som skal collapses/expanded skal have følgende:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">id=”id-of-target-to-collapse”</code></li>
-  <li><code class="highlighter-rouge">aria-hidden="true/false"</code></li>
-</ul>
-
-<h4 id="javascript">JavaScript</h4>
-
-<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-
-<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>new DKFDS.Collapse(document.getElementByID('COLLAPSE-BUTTON-ID'));
-</code></pre>
-</div>
-
-<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-
-<h5 id="events">Events</h5>
-
-<p>Når en skjul/vis komponent bliver foldet ud, bliver eventet <code class="highlighter-rouge">fds.collapse.open</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
-
-<p>Når en skjul/vis komponent bliver foldet ind, bliver eventet <code class="highlighter-rouge">fds.collapse.close</code> udløst på knappen, som man kan koble sig på med en eventlistener.</p>
-
-<h3 id="retningslinjer">Retningslinjer</h3>
-
-<h4 id="tilgængelighed">Tilgængelighed</h4>
-
-<ul>
-  <li>Skjul ikke meningsbærende indhold med denne funktionalitet.</li>
-  <li>Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.</li>
-</ul>
+          <h3 id="retningslinjer">Retningslinjer</h3>
 
 <h4 id="brugervenlighed">Brugervenlighed</h4>
 <h5 id="anvendes-til">Anvendes til</h5>
@@ -1459,6 +1601,8 @@
 
 <ul>
   <li>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje, at fordele det ud over flere sider i stedet.</li>
+  <li>Skjul ikke meningsbærende indhold med denne funktionalitet.</li>
+  <li>Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.</li>
 </ul>
 
 

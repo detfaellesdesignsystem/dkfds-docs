@@ -171,6 +171,28 @@
 <li class="">
 
   <!-- Do not render subnavs-->
+  <a href="/kode/"
+    class="nav-link">
+    <span>Kode</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<li class="">
+
+  <!-- Do not render subnavs-->
   <a href="/udvidelser/"
     class="nav-link">
     <span>Udvidelser</span>
@@ -1044,9 +1066,173 @@
   
     <div class="overflow-menu">
       <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="false"  >
-        <span>Udvidelser</span>
+        <span>Kode</span>
       </button>
       <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/accordions/"
+  class="nav-link">
+  Accordions
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/badges/"
+  class="nav-link">
+  Badges
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/beskeder/"
+  class="nav-link">
+  Beskeder (Alerts)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/cards/"
+  class="nav-link">
+  Cards
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/buttons/"
+  class="nav-link">
+  Knapper
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/collapse/"
+  class="nav-link">
+  Skjul og vis (Collapse)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="">
+
+
+  
+
+<a href="/kode/tilbage-link/"
+  class="nav-link">
+  Tilbage link
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<li class="">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+        <span>Udvidelser</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1171,10 +1357,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1263,10 +1449,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow7" aria-haspopup="true" aria-expanded="false"  >
         <span>Om designsystemet</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow7" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -1908,13 +2094,7 @@
   <h2 id="retningslinjer" class="h3">Retningslinjer</h2>
   
   
-  <h3 class="h4">Tilgængelighed</h3>
-
-<ul>
-  <li>Anvend ARIA <code class="highlighter-rouge">role="alert"</code> til at øge tilgængeligheden ved at markere beskeden som en ikke-interaktiv del af sidens indhold. Mærk beskeden med <code class="highlighter-rouge">role="alertdialog"</code>, hvis den indeholder interaktivitet for brugeren.</li>
-</ul>
-
-<h3 class="h4">Brugervenlighed</h3>
+  <h3 class="h4">Brugervenlighed</h3>
 <h4 class="h5">Anvendes til</h4>
 
 <ul>
@@ -1945,111 +2125,42 @@
   <h2 id="standard">Standard</h2>
   
   
-  <div class="component-preview  component-preview-alerts" aria-label="Eksempel på beskeder">
-    <div class="container">
-
-    <div class="alert alert-info " role="alert" aria-label="Beskedbox der viser information">
-        <div class="alert-body">
-            <p class="alert-heading ">Informativ besked</p>
-            <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.</p>
-
-        </div>
+  <div class="component-preview  component-preview-alerts px-4" aria-label="Eksempel på beskeder">
+    <div class="alert alert-info" role="alert" aria-label="Beskedbox der viser information">
+    <div class="alert-body">
+        <p class="alert-heading">Informativ besked</p>
+        <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod.</p>
     </div>
+</div>
 
-    <div class="alert alert-success " role="alert" aria-label="Beskedbox der viser succes">
-        <div class="alert-body">
-            <p class="alert-heading ">Succesmeddelelse</p>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-success" role="alert" aria-label="Beskedbox der viser succes">
+    <div class="alert-body">
+        <p class="alert-heading">Succesmeddelelse</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p>
     </div>
+</div>
 
-    <div class="alert alert-warning " role="alert" aria-label="Beskedbox der viser en advarsel">
-        <div class="alert-body">
-            <p class="alert-heading ">Advarsel</p>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
+    <div class="alert-body">
+        <p class="alert-heading">Advarsel</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p>
     </div>
+</div>
 
-    <div class="alert alert-error " role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
-        <div class="alert-body">
-            <p class="alert-heading ">Fejlbesked</p>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-error" role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+    <div class="alert-body">
+        <p class="alert-heading">Fejlbesked</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p>
     </div>
-
 </div>
 </div>
 
-  
-  <div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-alerts">Kode</button>
-  <div id="code-alerts" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser information"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Informativ besked<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser succes"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Succesmeddelelse<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en advarsel"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en fejlmeddelelse"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Fejlbesked<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-  
   
   
 
@@ -2059,105 +2170,40 @@
   <h2 id="beskeder-med-ikon">Beskeder med ikon</h2>
   
   
-  <div class="component-preview  component-preview-alerts-icons" aria-label="Eksempel på besked med ikon">
-    <div class="container">
-
-    <div class="alert alert-info alert--show-icon " role="alert" aria-label="Beskedbox der viser information">
-        <div class="alert-body">
-            <p class="alert-heading ">Informativ besked - med ikon</p>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+  <div class="component-preview  component-preview-alerts-icons px-4" aria-label="Eksempel på besked med ikon">
+    <div class="alert alert-info alert--show-icon" role="alert" aria-label="Beskedbox der viser information">
+    <div class="alert-body">
+        <p class="alert-heading">Informativ besked - med ikon</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p>
     </div>
+</div>
 
-    <div class="alert alert-success alert--show-icon " role="alert" aria-label="Beskedbox der viser succes">
-        <div class="alert-body">
-            <p class="alert-heading ">Succesmeddelelse - med ikon</p>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-success alert--show-icon" role="alert" aria-label="Beskedbox der viser succes">
+    <div class="alert-body">
+        <p class="alert-heading">Succesmeddelelse - med ikon</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p>
     </div>
+</div>
 
-    <div class="alert alert-warning alert--show-icon " role="alert" aria-label="Beskedbox der viser en advarsel">
-        <div class="alert-body">
-            <p class="alert-heading ">Advarsel - med ikon</p>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-warning alert--show-icon" role="alert" aria-label="Beskedbox der viser en advarsel">
+    <div class="alert-body">
+        <p class="alert-heading">Advarsel - med ikon</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p>
     </div>
+</div>
 
-    <div class="alert alert-error alert--show-icon " role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
-        <div class="alert-body">
-            <p class="alert-heading ">Fejlbesked - med ikon</p>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-error alert--show-icon" role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+    <div class="alert-body">
+        <p class="alert-heading">Fejlbesked - med ikon</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p>
     </div>
-
 </div>
 </div>
 
-  
-  <div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-alerts-icons">Kode</button>
-  <div id="code-alerts-icons" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info alert--show-icon "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser information"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Informativ besked - med ikon<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success alert--show-icon "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser succes"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Succesmeddelelse - med ikon<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning alert--show-icon "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en advarsel"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Advarsel - med ikon<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error alert--show-icon "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en fejlmeddelelse"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Fejlbesked - med ikon<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-  
   
   
 
@@ -2167,96 +2213,35 @@
   <h2 id="forskellige-teksteksempler">Forskellige teksteksempler</h2>
   
   
-  <div class="component-preview  component-preview-alerts-texts" aria-label="Eksempel på besked i forskellige formater">
-    <div class="container">
-
-    <div class="alert alert-info alert--show-icon " role="alert" aria-label="Beskedbox der viser information">
-        <div class="alert-body">
-            <p class="alert-heading ">Informativ besked - kun overskrift
-            </p>
-            <p class="alert-text"></p>
-
-        </div>
+  <div class="component-preview  component-preview-alerts-texts px-4" aria-label="Eksempel på besked i forskellige formater">
+    <div class="alert alert-info alert--show-icon" role="alert" aria-label="Beskedbox der viser information">
+    <div class="alert-body">
+        <p class="alert-heading">Informativ besked - kun overskrift</p>
+        <p class="alert-text"></p>
     </div>
+</div>
 
-    <div class="alert alert-info " role="alert" aria-label="Beskedbox der viser information">
-        <div class="alert-body">
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-info" role="alert" aria-label="Beskedbox der viser information">
+    <div class="alert-body">
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p>
     </div>
+</div>
 
-    <div class="alert alert-info alert--paragraph " role="alert" aria-label="Beskedbox der viser information">
-        <div class="alert-body">
-            <p class="alert-heading ">Informativ besked - tekstafsnit</p>
-            <p class="alert-text">Multi line. Sed ut perspiciatis unde
-                omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui atione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui doloremipsa quae ab
-                illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo.</p>
-
-        </div>
+<div class="alert alert-info alert--paragraph" role="alert" aria-label="Beskedbox der viser information">
+    <div class="alert-body">
+        <p class="alert-heading">Informativ besked - tekstafsnit</p>
+        <p class="alert-text">Multi line. Sed ut perspiciatis unde omnis
+            iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem Nemo enim ipsam voluptatem quia voluptas
+            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui atione voluptatem sequi nesciunt. Neque porro
+            quisquam est, qui doloremipsa quae ab illo inventore veritatis
+            et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
-
 </div>
 </div>
 
-  
-  <div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-alerts-texts">Kode</button>
-  <div id="code-alerts-texts" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info alert--show-icon "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser information"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Informativ besked - kun overskrift
-            <span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser information"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info alert--paragraph "</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser information"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading "</span><span class="nt">&gt;</span>Informativ besked - tekstafsnit<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Multi line. Sed ut perspiciatis unde
-                omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui atione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui doloremipsa quae ab
-                illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-  
   
   
 
@@ -2266,119 +2251,42 @@
   <h2 id="beskeder-med-luk-knap">Beskeder med luk knap</h2>
   
   
-  <div class="component-preview  component-preview-alerts-close" aria-label="Eksempel på besked med luk-knap">
-    <div class="container">
-
-    <div class="alert alert-info  has-close" role="alert" aria-label="Beskedbox der viser information">
-        <div class="alert-body">
-            <p class="alert-heading  pr-7">Informativ besked</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
-            <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.</p>
-
-        </div>
+  <div class="component-preview  component-preview-alerts-close px-4" aria-label="Eksempel på besked med luk-knap">
+    <div class="alert alert-info has-close" role="alert" aria-label="Beskedbox der viser information">
+    <div class="alert-body">
+        <p class="alert-heading pr-7">Informativ besked</p>
+        <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod.</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</a>
     </div>
+</div>
 
-    <div class="alert alert-success  has-close" role="alert" aria-label="Beskedbox der viser succes">
-        <div class="alert-body">
-            <p class="alert-heading  pr-7">Succesmeddelelse</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-success has-close" role="alert" aria-label="Beskedbox der viser succes">
+    <div class="alert-body">
+        <p class="alert-heading pr-7">Succesmeddelelse</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</a>
     </div>
+</div>
 
-    <div class="alert alert-warning  has-close" role="alert" aria-label="Beskedbox der viser en advarsel">
-        <div class="alert-body">
-            <p class="alert-heading  pr-7">Advarsel</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-warning has-close" role="alert" aria-label="Beskedbox der viser en advarsel">
+    <div class="alert-body">
+        <p class="alert-heading pr-7">Advarsel</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</a>
     </div>
+</div>
 
-    <div class="alert alert-error  has-close" role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
-        <div class="alert-body">
-            <p class="alert-heading  pr-7">Fejlbesked</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
-            <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.</p>
-
-        </div>
+<div class="alert alert-error has-close" role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+    <div class="alert-body">
+        <p class="alert-heading pr-7">Fejlbesked</p>
+        <p class="alert-text">Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</a>
     </div>
-
 </div>
 </div>
 
-  
-  <div class="accordion accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-alerts-close">Kode</button>
-  <div id="code-alerts-close" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info  has-close"</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser information"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading  pr-7"</span><span class="nt">&gt;</span>Informativ besked<span class="nt">&lt;/p&gt;&lt;a</span>
-                <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                <span class="na">class=</span><span class="s">"alert-close"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#close"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Luk<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success  has-close"</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser succes"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading  pr-7"</span><span class="nt">&gt;</span>Succesmeddelelse<span class="nt">&lt;/p&gt;&lt;a</span>
-                <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                <span class="na">class=</span><span class="s">"alert-close"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#close"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Luk<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning  has-close"</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en advarsel"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading  pr-7"</span><span class="nt">&gt;</span>Advarsel<span class="nt">&lt;/p&gt;&lt;a</span>
-                <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                <span class="na">class=</span><span class="s">"alert-close"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#close"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Luk<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error  has-close"</span> <span class="na">role=</span><span class="s">"alert"</span>
-        <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en fejlmeddelelse"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading  pr-7"</span><span class="nt">&gt;</span>Fejlbesked<span class="nt">&lt;/p&gt;&lt;a</span>
-                <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-                <span class="na">class=</span><span class="s">"alert-close"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#close"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>Luk<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-  
   
   
 
