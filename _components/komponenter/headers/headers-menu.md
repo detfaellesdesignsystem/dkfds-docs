@@ -1,5 +1,5 @@
 ---
-title: Standard header med topmenu
+title: Navigation
 parent: Headers
 order: 40
 ---

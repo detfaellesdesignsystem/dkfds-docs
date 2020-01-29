@@ -1,8 +1,7 @@
 ---
 title: Primærknap
 parent: Buttons
-order: 20
+order: 25
 component: buttons-primary
 componentTitle: "Eksempel på primærknap"
-componentHideKode: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Forskellige teksteksempler 
+title: Teksteksempler 
 parent: Beskeder
 order: 30
 component: alerts-texts

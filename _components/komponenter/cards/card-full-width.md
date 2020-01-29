@@ -1,8 +1,7 @@
 ---
-title: Card med fuld bredde
+title: ""
 parent: Cards
-order: 20
+order: 10
 component: cards-full-width
 componentTitle: "Eksempel på card"
-componentHideKode: true
 ---

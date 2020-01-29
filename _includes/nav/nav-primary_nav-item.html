@@ -1,5 +1,5 @@
-{% assign item_url = include.page.url %}
-{% assign current_url = page.url %}
+{% assign item_url = include.page.url | remove: "/" %}
+{% assign current_url = page.url | remove_first: "/" | remove_last: "/" | split: "/" | first  %}
 {% assign is_active = false %}
 {% if current_url contains item_url %}
   {% assign is_active = true %}

@@ -1,5 +1,5 @@
 ---
-title: "Tjekbokse med skjult indhold"
+title: "Skjult indhold (Collapse)"
 parent: Checkbox
 order: 50
 component: checkbox-collapse

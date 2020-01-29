@@ -20,7 +20,5 @@ subnav:
   href: '#knap-med-ikon'
 - text: Ikon som knap
   href: '#ikon-som-knap'
-- text: Vedhæft fil
-  href: '#vedhæft-fil'
 ---
 {% include child-components.html parent='Buttons' %}

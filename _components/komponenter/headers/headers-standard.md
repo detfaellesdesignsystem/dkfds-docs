@@ -1,7 +1,7 @@
 ---
-title: Standard header
+title: ""
 parent: Headers
-order: 30
+order: 10
 ---
 <div class="preview">
   <a class="media_link" href="{{ site.baseurl }}/components/headers/simple/">

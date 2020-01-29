@@ -1,5 +1,5 @@
 ---
-title: Radioknap med hjælpetekst
+title: Hjælpetekst
 parent: Radiobutton
 order: 40
 component: radiobutton-helptext

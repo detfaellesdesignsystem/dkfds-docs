@@ -1,5 +1,5 @@
 ---
-title: Trinindikator med information
+title: Ekstra information
 parent: Tringuide
 order: 70
 component: tringuide-information

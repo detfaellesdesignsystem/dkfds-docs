@@ -1,7 +1,7 @@
 ---
 title: ""
 parent: Textarea
-order: 20
+order: 10
 component: text-area
 componentTitle: Eksempel på tekstområde
 ---

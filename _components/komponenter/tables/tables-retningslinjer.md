@@ -1,10 +1,11 @@
 ---
 title: Retningslinjer
 parent: Tables
-order: 10
+order: 20
 headingClass: h3
 ---
-<h3 class="h4">Tilgængelighed</h3>
+{:.h4}
+### Tilgængelighed
 
 Tabeller i Det Fælles Designsystem overholder HTML standarden, men du skal selv tilføje `scope=col` eller `scope=row` til hver header celle `th`
 
@@ -12,17 +13,22 @@ Hvis du konstruerer en såkaldt kompleks tabel – en tabel med flere header-niv
 
 Når du tilføjer en titel til en tabel, skal du skrive den i `caption` indenfor table-elementet.
 
-<h3 class="h4">Brugervenlighed</h3>
-<h4 class="h5">Anvendes til</h4>
+{:.h4}
+### Brugervenlighed
+
+{:.h5}
+#### Anvendes til
 
 - Tabeller anvendes til at præsentere brugeren for tabulær data som fx statistik opstillet i rækker og kolonner.
 
-<h4 class="h5">Anvendes ikke til</h4>
+{:.h5}
+#### Anvendes ikke til
 
 - Tabeller anvendes ikke til at opsætte en sides eller en komponents indhold udover tabulær data.
 - Overvej at anvende en liste (en unordered eller definition list), hvis det giver brugeren et bedre overblik.
 
-<h4 class="h5">Vejledning</h4>                
+{:.h5}
+#### Vejledning
 
 Tabeller er en kompleks størrelse og når du bruger tabeller, skal du sikre dig, at din opmærkning overholder tilgængelighedskravene.  
 

@@ -1,10 +1,12 @@
 ---
 title: Retningslinjer
 parent: Buttons
-order: 10
+order: 20
 headingClass: h3
 ---
-<h2 class="h4">Tilgængelighed</h2>
+
+{:.h4}
+### Tilgængelighed
 
 - Knapper markeres tydeligt med en fokus tilstand, når brugere ved hjælp af tab-tasten navigerer sig frem til dem.
 - Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.
@@ -12,16 +14,21 @@ headingClass: h3
     - Et link aktiveres ved at trykke ”Enter”.
     - En knap aktiveres ved at trykke ”Space”.
 
-<h2 class="h4">Brugervenlighed</h2>
-<h3 class="h5">Anvendes til</h3>
+{:.h4}
+### Brugervenlighed
+
+{:.h5}
+#### Anvendes til
 
 Du kan bruge knapper til at anvise centrale funktioner til brugerne som fx ”Gem”, ”Hent”, ”Log ind” og ”Log af”.
 
-<h3 class="h5">Anvendes ikke til</h3>
+{:.h5}
+#### Anvendes ikke til
 
 Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anvende link.
 
-<h3 class="h5">Vejledning</h3>
+{:.h5}
+#### Vejledning
 
 - Generelt skal du anvende primære knapper til handlinger, der bringer brugeren videre i sit forløb og sekundære knapper til handlinger, der foregår indenfor den aktuelle sidevisning.
 - Der er kun en primærknap pr side.
@@ -31,14 +38,3 @@ Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anv
 - Skriv i aktiv form: I stedet for at skrive ”Fejlindmelding” bør du skrive ”Indmeld en fejl”.
 - I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i knappen for at signalere bestemte handlinger som fx ”Gem”.
 - Funktioner af mindre vigtighed bør du style som link.
-
-<h2 class="h4">Retningslinjer for vedhæft fil</h2>
-Vedhæft fil er et `input` felt. For mere information se under <a href="/komponenter/form-controls/#vedhæft-fil">Formular-elementer</a>.
-
-### Implementering
-Knap styling kan både sættes på `<button>` og `<a>` tags ved at tilføje følgende klasser:
-- `button button-primary`
-- `button button-secondary`
-- `button button-tertiary`
-- `button button-quaternary`
-- `button button-unstyled`

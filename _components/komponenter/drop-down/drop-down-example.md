@@ -1,7 +1,7 @@
 ---
 title: ""
 parent: Drop-down
-order: 20
+order: 10
 component: select
 componentTitle: Eksempel på dropdown-menu
 ---

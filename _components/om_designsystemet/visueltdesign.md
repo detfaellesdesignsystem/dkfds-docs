@@ -44,7 +44,7 @@ Alle andre komponenter er helt ens på tværs af de to portaler.
 
 <h3 class="h5">Header-temaer</h3>
 
-<figure><img src="{{ site.baseurl }}/img/descriptionimages/header-temaer.png" alt="Temahåndtering i header" class="description-image"></figure>
+<figure><img src="{{ site.baseurl }}/assets/img/descriptionimages/header-temaer.png" alt="Temahåndtering i header" class="description-image"></figure>
 
 <a href="/komponenter/headers/">Gå til header komponenten</a>
 
@@ -52,7 +52,7 @@ Alle andre komponenter er helt ens på tværs af de to portaler.
 
 <h3 class="h5">Venstremenu/tringuide-temaer</h3>
 
-<figure><img src="{{ site.baseurl }}/img/descriptionimages/venstremenu-tringuide.png" alt="Temahåndtering i venstremenu" class="description-image"></figure>
+<figure><img src="{{ site.baseurl }}/assets/img/descriptionimages/venstremenu-tringuide.png" alt="Temahåndtering i venstremenu" class="description-image"></figure>
 
 <a href="/komponenter/sidenav/">Gå til Sidenavigation komponenten</a>
 
@@ -60,7 +60,7 @@ Alle andre komponenter er helt ens på tværs af de to portaler.
 
 <h3 class="h5">Primærknap-temaer</h3>
 
-<figure><img src="{{ site.baseurl }}/img/descriptionimages/Primaerknapper.png" alt="Temahåndtering og knapper" class="description-image"></figure>
+<figure><img src="{{ site.baseurl }}/assets/img/descriptionimages/Primaerknapper.png" alt="Temahåndtering og knapper" class="description-image"></figure>
 
 <a href="/komponenter/buttons/">Læs om knapper</a>
 
@@ -116,18 +116,18 @@ Det har været svært at præge indholdet i de eksisterende manualer. Det Fælle
 <div class="row">
 <div class="col-12 col-md-6">
 <h4 class="h5">HTML-guiden</h4>
-<img src="{{ site.baseurl }}/img/descriptionimages/HTML-guiden.png" alt="Skærmbillede af HTML-guiden" class="description-image">
+<img src="{{ site.baseurl }}/assets/img/descriptionimages/HTML-guiden.png" alt="Skærmbillede af HTML-guiden" class="description-image">
 </div>
 <div class="col-12 col-md-6">
 <h4 class="h5">Virks Designmanual</h4>
-<img src="{{ site.baseurl }}/img/descriptionimages/Virks-designmanual.png" alt="Skærmbillede af Virks designmanual" class="description-image">
+<img src="{{ site.baseurl }}/assets/img/descriptionimages/Virks-designmanual.png" alt="Skærmbillede af Virks designmanual" class="description-image">
 </div>
 </div>
 <h3>Det Fælles Designsystem</h3>
 <div class="row">
 <div class="col-12 col-md-6">
 <h4 class="h5">Det Fælles Designsystem</h4>
-<img src="{{ site.baseurl }}/img/descriptionimages/Det-faellles-designsystem.jpg" alt="Skærmbillede af Det Fælles Designsystem" class="description-image">
+<img src="{{ site.baseurl }}/assets/img/descriptionimages/Det-faellles-designsystem.jpg" alt="Skærmbillede af Det Fælles Designsystem" class="description-image">
 </div>
 </div>
 
@@ -138,10 +138,10 @@ Borger.dk er et brand under Digitaliseringsstyrelsen, som henvender sig til og s
 <div class="row">
 <div class="col-12 col-md-6">
 <h3 class="h5 mb-0">Borger.dk</h3>
-<img src="{{ site.baseurl }}/img/descriptionimages/borger.dk.jpg" alt="Skærmbillede af Borger.dk">
+<img src="{{ site.baseurl }}/assets/img/descriptionimages/borger.dk.jpg" alt="Skærmbillede af Borger.dk">
 </div>
 <div class="col-12 col-md-6">
 <h3 class="h5 mb-0">Virk</h3>
-<img src="{{ site.baseurl }}/img/descriptionimages/virk.png" alt="Skærmbillede af Virk">
+<img src="{{ site.baseurl }}/assets/img/descriptionimages/virk.png" alt="Skærmbillede af Virk">
 </div>
 </div>

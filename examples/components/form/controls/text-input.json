@@ -2,7 +2,6 @@
   "textinput_example":{
     "id": "input-type-text",
     "label": "Inputfelt med label",
-    "name": "input-type-text",
-    "hint": "Fx 12345678"
+    "name": "input-type-text"
   }
 }

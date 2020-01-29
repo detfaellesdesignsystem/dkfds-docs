@@ -28,11 +28,11 @@ Sidens break points – de værdier, hvorefter siden automatisk tilpasser sig ar
 Du kan kombinere de 12 kolonner og flette dem sammen, så du ender med layout varianter, der fx består af 3/9, 4/8, 4/4/4 osv. Alle sider bygger på den måde på det samme fundament, som bidrager til at skabe ro og overblik.
 
 <figure>
-    <img src="{{ site.baseurl }}/img/descriptionimages/grid-inddelinger.jpg" class="w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
-    <img src="{{ site.baseurl }}/img/descriptionimages/grid-inddelinger-artikel.jpg" class="w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
-    <img src="{{ site.baseurl }}/img/descriptionimages/grid-inddelinger-nav1.jpg" class="w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
-    <img src="{{ site.baseurl }}/img/descriptionimages/grid-inddelinger-nav2.jpg" class="mt-4 w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
-    <img src="{{ site.baseurl }}/img/descriptionimages/grid-inddelinger-search.jpg" class="mt-4 w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
+    <img src="{{ site.baseurl }}/assets/img/descriptionimages/grid-inddelinger.jpg" class="w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
+    <img src="{{ site.baseurl }}/assets/img/descriptionimages/grid-inddelinger-artikel.jpg" class="w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
+    <img src="{{ site.baseurl }}/assets/img/descriptionimages/grid-inddelinger-nav1.jpg" class="w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
+    <img src="{{ site.baseurl }}/assets/img/descriptionimages/grid-inddelinger-nav2.jpg" class="mt-4 w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
+    <img src="{{ site.baseurl }}/assets/img/descriptionimages/grid-inddelinger-search.jpg" class="mt-4 w-percent-30" alt="Grafik der viser Det Fælles Designsystems grid-inddelinger" title="">
     <figcaption>Ovenstående er eksempler på mulige kombinationer af kolonner inden for Det Fælles Designsystems 12-grid layout.</figcaption>
 </figure>
 

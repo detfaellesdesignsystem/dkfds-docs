@@ -1,8 +1,7 @@
 ---
-title: Standard
+title: ""
 parent: Accordions
-order: 20
+order: 10
 component: accordion
 componentTitle: "Eksempel på accordion"
-componentHideKode: true
 ---

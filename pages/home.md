@@ -25,7 +25,7 @@ Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk 
 </ul>
 </div>
 <div class="col-12 col-lg-5 align-text-center">
-<img id="designsystem-illustration" src="{{ site.baseurl }}/img/descriptionimages/Forside_illu_virk.svg" alt="" class="d-none d-lg-inline-block">
+<img id="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/Forside_illu_virk.svg" alt="" class="d-none d-lg-inline-block">
 </div>
 </div>
 </div>

@@ -1,15 +1,19 @@
 ---
 title: Retningslinjer
 parent: Drop-down
-order: 10
+order: 20
+headingClass: h3
 ---
 
+{:.h4}
 ### Brugervenlighed
 
+{:.h5}
 #### Anvendes til
 
 Anvend kun dropdown menuer, når det er absolut nødvendigt og kun i tilfælde, hvor brugeren skal vælge mellem 7 og 15 værdier på en begrænset plads.
 
+{:.h5}
 #### Anvendes ikke til
 
 - Lister med færre værdier end 7.
@@ -17,7 +21,8 @@ Anvend kun dropdown menuer, når det er absolut nødvendigt og kun i tilfælde, 
 - Brug tjekbokse fremfor dropdown menu, hvis brugeren skal vælge mere end 1 værdi.
 - Brug ikke dropdown-menu til navigation, som den ikke er velegnet til.
 
-### Vejledning
+{:.h5}
+#### Vejledning
 
 - Dropdown menuer kræver ekstra aftestning på målgruppen pga. de kognitive udfordringer, de kan afføde.
 - Undgå at lade brugerens valg i én dropdown menu påvirke indholdet i en anden. Det forvirrer mange brugere.

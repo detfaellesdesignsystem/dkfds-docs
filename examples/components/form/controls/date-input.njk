@@ -1,5 +1,3 @@
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
 
-{% for item in datoinput_example.items %}
 {{datoinput(item.label, item.hint, item.day, item.month, item.year, item.tooltip, item.tooltipTitle, item.datepicker, item.error, item.dayValue, item.monthValue, item.yearValue, item.id)}}
-{% endfor %}

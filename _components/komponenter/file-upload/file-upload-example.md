@@ -1,7 +1,7 @@
 ---
 title: ""
 parent: file-upload
-order: 20
+order: 10
 component: file-input
 componentTitle: Eksempel på vedhæft fil
 ---

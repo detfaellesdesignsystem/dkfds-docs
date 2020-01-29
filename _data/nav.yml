@@ -42,7 +42,6 @@ Krav_category:
 
 #Left menu for til udviklere-category
 Til_udviklere_category:
-- href: /komigang/tiludviklere/utilities/
 - href: /komigang/tiludviklere/eksempler-implementering/
 - href: /komigang/tiludviklere/anbefalinger-vaerktoejer/
 
@@ -61,7 +60,6 @@ Design_category:
 - href: /design/borders/
 - href: /design/ikoner/
 - href: /design/logoer/
-- href: /design/print/
 
 #Left menu for komponent-category
 Komponenter_category:
@@ -94,38 +92,44 @@ Komponenter_category:
   - href: /komponenter/tooltip/
   - href: /komponenter/trinindikatorer/
 
+Kode_category:
+- href: /kode/utilities/
+- href: /kode/komponenter/
+  categorynav: 'Kode_Komponenter_category'
+- href: /kode/print/
+- href: /kode/eksempler-implementering/
+- href: /kode/anbefalinger-vaerktoejer/
 
 #Left menu for komponent-category
-Kode_category:
-- href: /kode/accordions/
-- href: /kode/badges/
-- href: /kode/beskeder/
-- href: /kode/cards/
-- href: /kode/cookiemeddelelse/
-- href: /kode/dato-felt/
-- href: /kode/drop-down/
-- href: /kode/faneblad/
-- href: /kode/fil-upload/
-- href: /kode/footers/
-- href: /kode/formular/
-- href: /kode/funktionslink/
-- href: /kode/headers/
-- href: /kode/buttons/
-- href: /kode/overflowmenu/
-- href: /kode/radiobutton/
-- href: /kode/sidenav/
-- href: /kode/collapse/
-- href: /kode/spinner/
-- href: /kode/search/
-- href: /kode/tilbage-link/
-- href: /kode/tables/
-- href: /kode/tags/
-- href: /kode/tekstfelt/
-- href: /kode/textarea/
-- href: /kode/tjekboks/
-- href: /kode/tooltip/
-- href: /kode/trinindikatorer/
-
+Kode_Komponenter_category:
+- href: /kode/komponenter/accordions/
+- href: /kode/komponenter/badges/
+- href: /kode/komponenter/beskeder/
+- href: /kode/komponenter/cards/
+- href: /kode/komponenter/cookiemeddelelse/
+- href: /kode/komponenter/dato-felt/
+- href: /kode/komponenter/drop-down/
+- href: /kode/komponenter/faneblad/
+- href: /kode/komponenter/fil-upload/
+- href: /kode/komponenter/footers/
+- href: /kode/komponenter/formular/
+- href: /kode/komponenter/funktionslink/
+- href: /kode/komponenter/headers/
+- href: /kode/komponenter/buttons/
+- href: /kode/komponenter/overflowmenu/
+- href: /kode/komponenter/radiobutton/
+- href: /kode/komponenter/sidenav/
+- href: /kode/komponenter/collapse/
+- href: /kode/komponenter/spinner/
+- href: /kode/komponenter/search/
+- href: /kode/komponenter/tilbage-link/
+- href: /kode/komponenter/tables/
+- href: /kode/komponenter/tags/
+- href: /kode/komponenter/tekstfelt/
+- href: /kode/komponenter/textarea/
+- href: /kode/komponenter/tjekboks/
+- href: /kode/komponenter/tooltip/
+- href: /kode/komponenter/trinindikatorer/
 
 #Left menu for udvidelser-category
 Udvidelser_category:

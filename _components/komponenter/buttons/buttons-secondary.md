@@ -4,5 +4,4 @@ parent: Buttons
 order: 30
 component: buttons-secondary
 componentTitle: "Eksempel på sekundær knap"
-componentHideKode: true
 ---

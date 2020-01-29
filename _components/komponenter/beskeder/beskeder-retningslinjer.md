@@ -1,22 +1,27 @@
 ---
 title: Retningslinjer
 parent: Beskeder
-order: 10
+order: 20
 headingClass: h3
 ---
 
-<h3 class="h4">Brugervenlighed</h3>
-<h4 class="h5">Anvendes til</h4>
+{:.h4}
+### Brugervenlighed
+
+{:.h5}
+#### Anvendes til
 
 - Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, fejl og opmærksomhedspunkter fx om opdateringer, o.l.
 - Anvend beskeder til at bekræfte en handling eller give besked om behov for handling.
 
-<h4 class="h5">Anvendes ikke til</h4>
+{:.h5}
+#### Anvendes ikke til
 
 - Brug ikke beskeder til at markere fejlindtastning i et specifikt felt.
 - Brug modal dialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
 
-<h4 class="h5">Vejledning</h4>
+{:.h5}
+#### Vejledning
 
 - Brug kun beskeder, når det er reelt nødvendigt og meningsfuldt.
 - Gør informationen aktiv og handlingsanvisende, så brugeren forstår, hvad der er behov for eller hvad den aktuelle status er.

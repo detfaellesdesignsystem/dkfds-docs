@@ -1,5 +1,5 @@
 ---
-title: Simpel
+title: ""
 parent: formular
 order: 10
 component: fieldset

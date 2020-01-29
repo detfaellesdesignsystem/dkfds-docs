@@ -1,7 +1,7 @@
 ---
-title: Standard
+title: ""
 parent: Tables
-order: 20
+order: 10
 component: table
 componentTitle: "Eksempel på tabel"
 ---

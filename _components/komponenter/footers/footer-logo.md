@@ -1,5 +1,5 @@
 ---
-title: Footer med logo
+title: Logo
 parent: Footers
 order: 60
 ---
@@ -10,5 +10,3 @@ order: 60
   </a>
   <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-logo/">Demo footer med logo</a>
 </div>
-{% include code/accordion.html component="footer-logo" %}
-

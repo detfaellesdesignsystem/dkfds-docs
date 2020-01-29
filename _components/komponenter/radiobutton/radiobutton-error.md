@@ -1,5 +1,5 @@
 ---
-title: Radioknap med fejl
+title: Fejlbesked
 parent: Radiobutton
 order: 50
 component: radiobutton-error

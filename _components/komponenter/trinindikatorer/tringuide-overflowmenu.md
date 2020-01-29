@@ -1,7 +1,7 @@
 ---
-title: Trinindikator i overflow-menu
+title: ""
 parent: Tringuide
-order: 30
+order: 10
 component: tringuide-overflowmenu
 componentTitle: "Eksempel på trinindikator i overflow menu"
 ---

@@ -1,9 +1,7 @@
 ---
-title: Nyhedsbadges
+title: ""
 parent: Badges
-order: 20
+order: 10
 component: badges
 componentTitle: "Eksempel på badges"
 ---
-### Implementering
-

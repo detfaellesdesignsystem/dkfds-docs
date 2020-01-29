@@ -59,7 +59,6 @@ keep_files:
   - _includes/code/components
   - assets/img
   - assets/fonts
-  - img
 
 exclude:
   - ".ruby-version"

@@ -1,7 +1,7 @@
 ---
-title: Standard
+title: ""
 parent: Beskeder
-order: 15
+order: 10
 component: alerts
 componentTitle: "Eksempel på beskeder"
 ---

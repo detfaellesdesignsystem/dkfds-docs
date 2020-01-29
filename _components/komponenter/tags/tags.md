@@ -9,8 +9,6 @@ description: Et tag er en sekundær funktionalitet, der typisk anvendes til meta
 lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation om indhold, der kan kategoriseres, filtreres eller på anden beskrives med nøgleord. Tags forekommer med og uden ikon.
 anchor: true
 subnav:
-- text: Standard
-  href: '#standard'
 - text: Tags med ikon
   href: '#tags-med-ikon'
 ---

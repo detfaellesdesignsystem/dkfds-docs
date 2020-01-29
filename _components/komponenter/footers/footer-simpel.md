@@ -1,5 +1,5 @@
 ---
-title: Simpel
+title: ""
 parent: Footers
 order: 20
 ---
@@ -9,4 +9,3 @@ order: 20
   </a>
   <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-simple/">Demo af simpel footer</a>
 </div>
-{% include code/accordion.html component="footer-simple" %}

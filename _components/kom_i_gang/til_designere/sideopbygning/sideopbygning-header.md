@@ -25,7 +25,7 @@ Brug derfor kun række 3 til 5, knapper, links og ekstra navigation, når det er
 
 Brug kun rækker 3,4,5, samt knapper, links og ekstra navigation, når det er nødvendigt.
 
-<div><img src="{{ site.baseurl }}/img/descriptionimages/header-opbygning.png" alt="Viser opbygningen af designsystemets header" /></div>
+<div><img src="{{ site.baseurl }}/assets/img/descriptionimages/header-opbygning.png" alt="Viser opbygningen af designsystemets header" /></div>
 
 <h3 class="h5">Række 1 (obligatorisk)</h3>
 
@@ -48,4 +48,8 @@ Flere sorteringsmuligheder, eventuelt ekstramenu, eventuelt knapper.
 Funktionslinks (igangsætter system- eller OS-funktionalitet, fx gem, print osv.)
 
 En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servicere både simple og komplekse løsninger. Den er også kompleks at anvende for brugerne. Du bør derfor udgangspunkt anvende færre end fem rækker i din header.
+
+{:.h5}
+### Links
+<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Tilgængelighed: sidestruktur og header<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 

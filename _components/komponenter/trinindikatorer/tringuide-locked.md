@@ -1,5 +1,5 @@
 ---
-title: Låst trinindikator
+title: Låst
 parent: Tringuide
 order: 60
 component: tringuide-locked

@@ -1,5 +1,5 @@
 ---
-title: Kompleks header
+title: Kompleks
 parent: Headers
 order: 50
 ---

@@ -9,4 +9,3 @@ order: 30
   </a>
   <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-three-columns/">Demo af footer med tre kolonner</a>
 </div>
-{% include code/accordion.html component="footer-three-columns" %}

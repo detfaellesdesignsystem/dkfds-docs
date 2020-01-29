@@ -1,5 +1,5 @@
 ---
-title: Klikbar trinindikator
+title: Klikbar
 parent: Tringuide
 order: 50
 component: tringuide-clickable
