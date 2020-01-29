@@ -18,7 +18,7 @@ Designsystemet giver mulighed for forskellige typer <a href="/komponenter/footer
 
 <h3 class="h4">Footer i 4 blokke af 3 kolonner</h3>
 
-<div><img src="{{ site.baseurl }}/assets/mg/descriptionimages/footer-i-4-blokke-af-3-kolonner.png" alt="Footer i 4 kolonner"></div>
+<div><img src="{{ site.baseurl }}/assets/img/descriptionimages/footer-i-4-blokke-af-3-kolonner.png" alt="Footer i 4 kolonner"></div>
 
 Linjen skærer hele skærmens bredde og er af typen "ydre streg". Footeren placerer sig enten i bunden af browservinduet eller 64px fra sidste element på siden ned til linjen.
 
