@@ -77,6 +77,7 @@ Komponenter_category:
   - href: /komponenter/funktionslink/
   - href: /komponenter/headers/
   - href: /komponenter/buttons/
+  - href: /komponenter/modal/
   - href: /komponenter/overflowmenu/
   - href: /komponenter/radiobutton/
   - href: /komponenter/sidenav/
@@ -93,12 +94,12 @@ Komponenter_category:
   - href: /komponenter/trinindikatorer/
 
 Kode_category:
+- href: /kode/anbefalinger-vaerktoejer/
+- href: /kode/eksempler-implementering/
 - href: /kode/utilities/
 - href: /kode/komponenter/
   categorynav: 'Kode_Komponenter_category'
 - href: /kode/print/
-- href: /kode/eksempler-implementering/
-- href: /kode/anbefalinger-vaerktoejer/
 
 #Left menu for komponent-category
 Kode_Komponenter_category:

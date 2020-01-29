@@ -1,7 +1,7 @@
 ---
 title: Ikon med popover (kræver tryk)
 parent: Tippy
-order: 02
+order: 40
 lead: 
 ---
 {% include code/preview.html component="tippy-popover-icon" %}

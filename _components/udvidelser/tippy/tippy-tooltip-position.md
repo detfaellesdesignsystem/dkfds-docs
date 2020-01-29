@@ -1,7 +1,7 @@
 ---
 title: Placering af tooltip
 parent: Tippy
-order: 04
+order: 30
 lead: 
 ---
 {% include code/preview.html component="tippy-tooltip-position" %}

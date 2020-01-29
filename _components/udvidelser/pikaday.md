@@ -17,6 +17,9 @@ alerts:
 component: date-input-datepicker
 ---
 
+{% include code/preview.html component="date-input-datepicker" %}
+{% include code/accordion.html component="date-input-datepicker" %}
+
 ### Implementering
 
 Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a>

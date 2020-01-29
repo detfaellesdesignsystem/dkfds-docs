@@ -7,6 +7,7 @@ type: component
 title: Tabeller
 category: Komponenter_category
 subcategory: Komponenter
+datatables: true
 lead: Tabeller er en systematisk opstilling af data og viser data i kolonner og rækker.
 anchor: true
 subnav:
@@ -20,6 +21,8 @@ subnav:
   href: '#forskellig-linjehøjde'
 - text: Med titel i venstre kolonne
   href: '#med-titel-i-venstre-kolonne'
+- text: Avancerede tabeller
+  href: '#avancerede-tabeller'
 ---
 
 {% include child-components.html parent='Tables' %}

@@ -439,48 +439,7 @@ class datatablesExamples {
         MicroModal.show('modal-delete');
     });
 
-    /////////////////////////////////
-    //Give dummy buttons to top bar (all datatables)
-    /////////////////////////////////
-    var downloadButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Download som PDF'><svg class='icon-svg m-0' aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href='#download'></use></svg></button>";
-    var settingsButton = "<button class='button button-unstyled mr-4' tabindex='0' aria-label='Rediger egenskaber'><svg class='icon-svg m-0' aria-hidden=\"true\" tabindex=\"-1\" focusable=\"false\"><use xlink:href='#settings'></use></button>";
-    $('.dataTables_filter').prepend(downloadButton).prepend(settingsButton);
 
-    /////////////////////////////////
-    //PRAKTIKPLADS DATATABLE
-    /////////////////////////////////
-    var table_praktikplads = $(jsSelectorDatatable_Example_praktikplads).DataTable( {
-        language: languageConfig,
-        ajax: {
-            "url": "https://api.myjson.com/bins/1adkvm",
-            "dataSrc": ""
-        },
-        rowId: "id",
-        columns: [
-            { "data": "student", "width": "20%" },
-            { "data": "birthday" },
-            { "data": "education" },
-            { "data": "education2" },
-            { "data": "education3" },
-            { "data": "education4" }
-        ],
-        order: [[1, 'asc']],
-        paging:   false,
-        searching: false,
-        info:     false,
-        'responsive': true,
-        'createdRow': function( row, data, dataIndex ) {
-            $(row).find('td').each(function( index, elm ) {
-                if(!$(elm).hasClass('row-control')){
-                    $(elm).attr('tabindex', 0); //Accessibility fix: make td's focusable by tab
-                }
-            });
-        },
-        "fnDrawCallback": function( oSettings ) {
-            $('.dataTables_paginate a[aria-disabled=true]').removeAttr("aria-disabled");
-            $('.dataTables_paginate .disabled').attr("aria-disabled", "true");
-        }
-    } );
 
   }
 }
