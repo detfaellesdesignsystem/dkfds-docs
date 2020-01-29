@@ -3,7 +3,7 @@ permalink: /komigang/krav/
 redirect_from:
 - /krav/
 layout: styleguide
-title: Krav til selvbetjeningsløsninger
+title: Krav
 category: Kom_i_gang_category
 subcategory: Kom i gang
 description: Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler, skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem og integrationsproces.

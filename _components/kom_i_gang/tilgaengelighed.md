@@ -1,7 +1,7 @@
 ---
 permalink: /komigang/tilgaengelighed/
 layout: styleguide
-title: Tilgængelighed
+title: Tilgængelighed (WCAG 2.1)
 category: Kom_i_gang_category
 subcategory: Kom i gang
 ---

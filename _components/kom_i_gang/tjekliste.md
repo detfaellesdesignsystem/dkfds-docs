@@ -1,10 +1,11 @@
 ---
-permalink: /komigang/tildesignere/designtjekliste/
+permalink: /komigang/tjekliste/
+redirect_from:
+- /komigang/tildesignere/designtjekliste/
 layout: styleguide
-title: Designtjekliste
+title: "Tjekliste: Lev op til FDS"
 category: Kom_i_gang_category
 subcategory: Kom i gang
-parentlink: /komigang/tildesignere/
 ---
 <h2 class="h5">1. Headeren skal indeholde de obligatoriske linjer og følge layoutreglerne</h2>
 

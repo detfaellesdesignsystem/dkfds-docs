@@ -1,9 +1,10 @@
 ---
-permalink: /komigang/tildesignere/design-selvbetjeningsloesninger/
+permalink: /komigang/12-punkter-til-designeren/
+redirect_from:
+- /komigang/tildesignere/design-selvbetjeningsloesninger/
 layout: styleguide
-title: Kort guide til design af selvbetjeningsløsninger
+title: 12 punkter til designeren
 category: Kom_i_gang_category
-parentlink: /komigang/tildesignere/
 subcategory: Kom i gang
 ---
 Når du som designer skal sætte en selvbetjeningsløsning op, skal du være opmærksom på følgende:

@@ -1,12 +1,12 @@
 ---
-permalink: /komigang/tildesignere/sideopbygning/
+permalink: /komigang/regler-principper-layout/
 redirect_from:
 - /design/sideopbygning/
+- /komigang/tildesignere/sideopbygning/
 layout: styleguide
-title: Sideopbygning (layout)
+title: Regler og principper for layout
 category: Kom_i_gang_category
 subcategory: Kom i gang
-parentlink: /komigang/tildesignere/
 lead: Dette afsnit beskriver regler og principper for struktur og placering af komponenter i en selvbetjeningsløsning. Et godt layout er harmonisk, ensartet, logisk opbygget, og understøtter brugerens handlinger. Det er således både behageligt for øjet og let for brugeren at anvende.
 anchor: true
 subnav:
