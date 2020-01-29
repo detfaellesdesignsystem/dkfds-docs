@@ -842,6 +842,24 @@
 
   
 
+<a href="/komponenter/modal/" role="menuitem" 
+  class="nav-link">
+  Modalvindue
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
 <a href="/komponenter/overflowmenu/" role="menuitem" 
   class="nav-link">
   Overflow menu
@@ -1224,6 +1242,42 @@
 
   
 
+<a href="/kode/anbefalinger-vaerktoejer/" role="menuitem" 
+  class="nav-link">
+  Anbefalinger og værktøjer
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/eksempler-implementering/" role="menuitem" 
+  class="nav-link">
+  Eksempler på implementering
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
 <a href="/kode/utilities/" role="menuitem" 
   class="nav-link">
   Hjælpeklasser (Utilities)
@@ -1263,42 +1317,6 @@
 <a href="/kode/print/" role="menuitem" 
   class="nav-link">
   Print
-</a>
-
-</li>
-
-    
-
-  
-    
-      
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/eksempler-implementering/" role="menuitem" 
-  class="nav-link">
-  Eksempler på implementering
-</a>
-
-</li>
-
-    
-
-  
-    
-      
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" role="menuitem" 
-  class="nav-link">
-  Anbefalinger og værktøjer
 </a>
 
 </li>
@@ -1803,6 +1821,24 @@
 
   
 
+<a href="/komponenter/modal/" role="menuitem" 
+  class="nav-link">
+  Modalvindue
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
 <a href="/komponenter/overflowmenu/" role="menuitem" 
   class="nav-link">
   Overflow menu
@@ -2174,6 +2210,48 @@
 
 </section>
 
+<section class="styleguide-child-container content" id="section-/komponenter/dato/dato-datepicker">
+  <h2 id="datovælger">Datovælger</h2>
+  
+  
+  <div class="component-preview  component-preview-date-input-datepicker p-4" aria-label="Eksempel på datoangivelse med datovægler">
+    <div class="form-group  ">
+    <fieldset>
+        <legend><label class="form-label">Indsendelsesfrist</label>
+            <span class="form-hint">For eksempel: 05 12 2018</span>
+        </legend>
+        <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
+        <div class="date-group js-calendar-group mt-3">
+            <div class="form-group form-group-day">
+                <label class="form-label" for="date-day">Dag</label>
+                <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="date-month">Måned</label>
+                <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+            </div>
+            <div class="form-group form-group-year ">
+                <label class="form-label" for="date-year">År</label>
+                <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+            </div>
+
+            <button class="button-unstyled button-open-calendar js-calendar-datepicker">
+                <span class="sr-only">Åben kalenderen</span>
+                <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#calendar"></use></svg>
+            </button>
+
+        </div>
+    </fieldset>
+</div>
+</div>
+
+  
+  <p>Ønsker man at tilføje en datovælger til datofeltet, kan man bruge <a href="https://pikaday.com/" class="icon-link">Pikaday<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, som er et tredjeparts bibliotek, hvortil vi leverer et tema, så det følger det visuelle udtryk i Det Fælles Designsystem.</p>
+
+<p><a href="/udvidelser/pikaday/">Læs mere om brug af Pikaday med FDS</a>.</p>
+
+</section>
+
 
       </section>
     </main>
@@ -2206,6 +2284,8 @@
 
 
 
+
+<script src="/assets/js/dkfds-pikaday-example.js"></script>
 
 
 
