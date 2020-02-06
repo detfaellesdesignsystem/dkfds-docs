@@ -9,14 +9,14 @@ title: Radiobutton-large.html
         <ul class="nobullet-list">
             <li>
                 <input id="largeradio1" type="radio" name="largeradio"
-                    value="1" class="form-radio   " />
+                    value="1" class="form-radio  radio-large " />
                 <label for="largeradio1" id="form-label-largeradio1"
                     class="">Valg 1 </label>
 
             </li>
             <li>
                 <input id="largeradio2" type="radio" name="largeradio"
-                    value="0" class="form-radio   " />
+                    value="0" class="form-radio  radio-large " />
                 <label for="largeradio2" id="form-label-largeradio2"
                     class="">Valg 2 </label>
 

@@ -26,6 +26,7 @@
               flat=true
             %}
           </ul>
+          {% unless page.search %}
           <div id="search-form">
             <form method="get" action="/search/">
               <div class="form-group search">
@@ -35,6 +36,7 @@
               </div>
             </form>
           </div>
+          {% endunless %}
         </div>
       </div>
       <!-- 3: Main navigation end-->

@@ -34,12 +34,24 @@
 }
 .page-result {
   .h4 a {
-    &:visited, &:link, &:hover, &:active {
+    &:link {
       text-decoration: none;
       color: $color-link;
     }
+    &:visited{
+      color: $color-link-visited;
+      text-decoration: none;
+    }
     &:hover {
       text-decoration: underline;
+      color: $color-link-hover;
+    }
+    &:active{
+      color: $color-link;
+      text-decoration: underline;
+    }
+    .page-category{
+      text-transform: uppercase;
     }
   }
   .form-hint.small-text{

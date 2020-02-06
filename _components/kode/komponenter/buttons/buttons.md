@@ -7,6 +7,7 @@ title: Knapper
 category: Kode_category
 subcategory: Kode
 anchor: true
+tags: "primærknap,sekundærknap,tertiærknap"
 subnav:
 - text: Primærknap
   href: '#primærknap'
