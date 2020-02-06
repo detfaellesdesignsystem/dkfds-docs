@@ -11,6 +11,7 @@ let synonyms = [
     ["primærknap", "primær knap", "primary", "primær"],
     ["sekundærknap", "sekundærknap", "secondary", "sekundær"],
     ["trinindikator", "tringuide"],
+    ["avancerede tabeller", "datatables"]
 ];
 
 let excludeWords = ["Når", "i", "I", "er", "det", "der", "dem", "den", "et", "hvad", "hvor", "hvem", "på", "og"];
@@ -34,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
         if(query !== null && query !== "") {
-            console.log(query);
             let results = search(query);
             populateSearch(results, decodeURIComponent(query), start);
         } else{
@@ -76,7 +76,7 @@ function populateSearch (results, query, start){
             html += '</a></h2>';
 
             if(page.description.length > 0) {
-                let description = formatDescription(truncateString(page.description, 180, '...'), query);
+                let description = formatDescription(truncateString(page.description, 170, '...'), query);
 
                 html += '<p class="mt-0 mb-0 page-description">' + description + '</p>';
             }
@@ -95,13 +95,8 @@ function formatDescription(description, query){
     if(index === -1){
         return description;
     }
-    text += description.substr(0, index);
-    let otherHalf = description.substr(index, description.length - index);
-    let word = otherHalf.split(/[\s, "”\)\(]+/)[0];
-    let startPoint = index+word.length;
-    text += '<span class="weight-semibold">'+word+'</span>'+formatDescription(description.substr(startPoint, description.length-startPoint), query);
-    return text;
 
+    return description.replace(query, '<span class="weight-semibold">'+query+'</span>');
 }
 
 
@@ -190,118 +185,164 @@ function search(query){
         }
     });
     let sortedResult = sort(result, query);
-    console.log('sorted', sortedResult);
     let endResult = [];
     sortedResult.forEach(function(page){
-      if(page.score > 60){
+      if(page.score >= 50){
           endResult.push(page);
       }
     });
     return endResult;
 }
 
-function setScoreOnWord(page, query){
-    let score = 0;
-    let word = query;
-    if(excludeWords.includes(query)){
-        return 0;
+function matchForString(haystack, needle){
+    if((Array.isArray(haystack)) && haystack.indexOf(needle.toLowerCase()) >= 0) {
+        return true;
+    } else if ((!Array.isArray(haystack)) && haystack.toLowerCase().indexOf(needle.toLowerCase()) >= 0) {
+        return true;
     }
-    // priority title
-    if (page.title.toLowerCase().indexOf(word.toLowerCase()) >= 0) {
-        score = score+60;
-
-    }
-    if(page.phrasesMatched && score === 0){
-        for (let pm = 0; pm < page.phrasesMatched.length; pm++){
-            if(page.title.toLowerCase().indexOf(page.phrasesMatched[pm].toLowerCase()) >= 0){
-                if(page.phrasesMatched[pm].length > 3) {
-                    score = score + 60;
-                }
-            }
-        }
-    }
-    // priority lead
-    if (page.lead.toLowerCase().indexOf(word.toLowerCase()) >= 0) {
-        score = score+35;
-    }
-
-    /*
-    // priority tags
-     */
-    if (page.tags.toLowerCase().indexOf(word.toLowerCase()) >= 0 ) {
-        score = score+44;
-    }
-
-    // priority subnav
-    for(let subnav in page.subnav){
-        if(page.subnav[subnav].toLowerCase().indexOf(word.toLowerCase()) >= 0){
-            score = score+1;
-        }
-    }
-
-
-
-    // priority matching instances in content
-    var regex = new RegExp(word,"g");
-    let instances = page.content.match(regex);
-    if(instances !== null){
-        let countOfInstances = (instances).length;
-        let scoreOfInstances = countOfInstances / 10;
-        score = score+scoreOfInstances;
-    }
-
-    console.log('--');
-    console.log('word', word);
-    console.log('score', score);
-    console.log('--');
-    return score;
+    return false;
 }
 
 function sort(result, query){
+    let syns = searchWords(query);
     result.forEach(function (page) {
         let score = 0;
+        let matched = {};
 
-        let splitSentence = query.split(" ");
-
-        // is sentence
-        if(splitSentence.length > 1){
-
-            score = score + setScoreOnWord(page, query);
-            if(page.content.toLowerCase().indexOf(query.toLowerCase()) >= 0) {
-                score = score + 50;
-            }
-
-        } else{
-            let syns = searchWords(query);
-            for(let s in syns){
-                let scoreWord = setScoreOnWord(page, syns[s]);
-                score = score + scoreWord;
+        // match title
+        matched.title = false;
+        if(matchForString(page.title, query)) {
+            matched.title = true;
+            matched.titleString = true;
+        } else {
+            for (let s in syns) {
+                if (matchForString(page.title, syns[s])) {
+                    matched.title = true;
+                }
             }
         }
+
+        // match tags
+        matched.tags = false;
+        if (matchForString(page.tags.split(","), query)) {
+            matched.tags = true;
+        } else{
+            for (let s in syns) {
+                if (matchForString(page.tags.split(","), syns[s])) {
+                    matched.tags = true;
+                }
+            }
+        }
+
+        // match tags
+        matched.description = false;
+        if (matchForString(page.description, query)) {
+            matched.description = true;
+            matched.descriptionString = true;
+        } else{
+            for (let s in syns) {
+                if (matchForString(page.description, syns[s])) {
+                    matched.description = true;
+                }
+            }
+        }
+
+        // match subnav
+        matched.subnav = false;
+        if (matchForString(page.subnav, query)) {
+            matched.subnav = true;
+        } else{
+            for (let s in syns) {
+                if (matchForString(page.subnav, syns[s])) {
+                    matched.subnav = true;
+                }
+            }
+        }
+
+        // match content
+        matched.content = false;
+
+        if (matchForString(page.content, query)) {
+            matched.content = true;
+            matched.contentString = true;
+        } else {
+            for (let s in syns) {
+                if (matchForString(page.subnav, syns[s])) {
+                    matched.subnav = true;
+                }
+            }
+        }
+
+        // match category
+        matched.category = 0;
 
         // priority category
         switch (page.category) {
             case "Komponenter_category":
-                score = score+15;
+                matched.category = 1;
                 break;
             case "Kode_category":
-                score = score+13;
+                matched.category = 2;
                 break;
             case "Design_category":
-                score = score+8;
+                matched.category = 3;
                 break;
             case "Kom_i_gang_category":
-                score = score+6;
+                matched.category = 4;
                 break;
             case "Om_designsystemet_category":
-                score = score+5;
+                matched.category = 5;
                 break;
         }
 
+        matched.demo = false;
         if(page.layout === "demo"){
-            score = score+30;
+            matched.demo = true;
         }
 
+        // Set scores
+        if(matched.title){
+            score = score + 60;
+        }
+
+        if(matched.tags){
+            score = score + 44;
+        }
+        if(matched.description){
+            score = score + 35;
+        }
+        if(matched.subnav){
+            score = score + 20;
+        }
+        if(matched.content){
+            score = score + 30;
+            if(query.indexOf(" ") >= 0){
+                score = score + 20;
+            }
+        }
+
+        switch (matched.category) {
+            case 1:
+                score = score + 15;
+                break;
+            case 2:
+                score = score + 13;
+                break;
+            case 3:
+                score = score + 8;
+                break;
+            case 4:
+                score = score + 6;
+                break;
+            case 5:
+                score = score + 5;
+                break;
+        }
+
+        if(matched.demo){
+            score = score + 25;
+        }
+        page.matched = matched;
         page.score = score;
     });
 
