@@ -22,7 +22,7 @@ Alle HTML-overskrifter h1 til h6 er stylet; dvs. de er tildelt en størrelse, fa
 
 Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings `font-family`, `font-size`, `line-height`, `font-weight` og `color`.
 
-```
+{% highlight scss %}
 @mixin h1{ 
     font-family: $font-name;
     font-size: $h1-font-size;
@@ -30,13 +30,13 @@ Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings `font
     font-weight: $font-weight-bold;
     color: $color-black;
 }
-```
+{% endhighlight %}
 
-```
+{% highlight scss %}
   h1, .h1 
   @include h1;
   }
-```
+{% endhighlight %}
 
 Hver heading har sin klasse, som arver styling fra heading mixins. Ønsker du en `h1` med styling fra `h2`, skal du blot indsætte klassen `h2` på `<h1 class="h2">`.
 

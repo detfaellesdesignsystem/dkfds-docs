@@ -16,9 +16,10 @@ componentHideCode: true
 
 ##### Eksempel:
 
-```
+{% highlight scss %}
 border-radius: $static-border-radius;
-```
+{% endhighlight %}
+
 #### Interaktive hjørner
 
 - Interaktive hjørner er runde og har en `border-radius: 4px;`
@@ -27,6 +28,7 @@ border-radius: $static-border-radius;
 
 ##### Eksempel:
 
-```
+
+{% highlight scss %}
 border-radius: $interactive-border-radius;
-```
+{% endhighlight %}

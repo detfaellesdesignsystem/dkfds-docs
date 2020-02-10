@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/grid--how-it-works.html
+permalink: /preview-components/grid-simple.html
 layout: example-contained 
-title: Grid--how-it-works.html
+title: Grid-simple.html
 ---
 <div class="row">
     <div class="col">

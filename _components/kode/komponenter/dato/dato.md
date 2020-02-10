@@ -42,4 +42,4 @@ Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere
 
 {:#fejlbesked}
 ### Fejlbesked
-{% include code/syntax.html component="date-input-error" %}
+{% include code/syntax.html component="date-input-error" link="true" %}

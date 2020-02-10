@@ -5,7 +5,7 @@ parent: Grid
 order: 70
 ---
 
-```
+{% highlight scss %}
 $grid-columns:      12;
 $grid-gutter-width: 30px;
 
@@ -28,4 +28,4 @@ $container-max-widths: (
     lg: 100%,
     xl: 1200px
 );
-```
+{% endhighlight %}

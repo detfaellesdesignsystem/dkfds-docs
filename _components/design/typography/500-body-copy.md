@@ -17,10 +17,10 @@ Alle fontstørrelser er angivet i rem-værdier og forholder sig derfor til fonts
 
 HTML-taggets fontstørrelse er angivet i procent. Dvs. fontstørrelsen er relativ til browserens brugervalgte fontstørrelse. De fleste brugere har en standardindstilling på 16px, 62.5% af dette er 10px og en fontstørrelse på 1.6 rem giver derfor en fontstørrelse på 16px. Hvis brugeren vælger at indstille sin fontstørrelse til en standard, som er større end 16px, vil hele sitet afspejle brugerens ønske.
 
-```     
+{% highlight scss %}
 html { font-size: 62.5%; }
 p { font-size: 1.6rem; } /* =16px */
-```
+{% endhighlight %}
 
 ### Retningslinjer
 

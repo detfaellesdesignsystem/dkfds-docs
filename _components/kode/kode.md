@@ -127,7 +127,8 @@ Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke br
 For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.
 
 Disse browsers bør defineres i autoprefixer:
-```
+
+{% highlight json %}
 [
   '> 1%',
   'Last 2 versions',
@@ -135,20 +136,20 @@ Disse browsers bør defineres i autoprefixer:
   'IE 10',
   'IE 9',
 ]
-``` 
+{% endhighlight %} 
 
 #### Fix for bug i Microsoft Edge og Internet Explorer
 
 En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i `head` sektionen.
 
-```shell
+{% highlight html %}
   <style>
     /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. */   
     ul {
       list-style-type: none;
     }
   </style>
-```
+{% endhighlight %}
 
 ## DKFDS Plugins
 
@@ -166,20 +167,20 @@ Der er i øjeblikket lavet temaer til følgende:
 
 dkfds-plugins projektet er tilgængeligt via npm og du kan installere det ved at skrive følgende i en kommando-prompt:
 
-```shell
+{% highlight console %}
 npm install dkfds-plugins --save
-```
+{% endhighlight %}
 
 Modulet 'dkfds-plugins' er nu installeret i 'node_modules' mappen.
 
 Inkluder derefter temaerne enten som css direkte:
 
-```
+{% highlight html %}
 <link rel="stylesheet" href="[path-to-plugins-project]/dist/css/dkfds-datatables-theme.standalone.min.css">
-```
+{% endhighlight %}
 
 Eller inkluder temaerne i SCSS (Bemærk, at du først skal importere DKFDS):
 
-```
+{% highlight js %}
 @import "~dkfds-plugins/dist/scss/dkfds-datatables-theme";
-```
+{% endhighlight %}

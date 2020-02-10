@@ -23,7 +23,7 @@ Format: `w-percent-{bredde}` og `w-percent-{breakpoint}-{bredde}`
 
 <h3 class="h5">Eksempel:</h3>
 
-```
+{% highlight html %}
 <h1 class="w-percent-100"> Dette element har en bredde på 100% </h1>
 <h1 class="w-percent-md-30"> Dette element har en bredde på 30% på skærme over 768px </h1>
-```
+{% endhighlight %}

@@ -20,11 +20,11 @@ For at bruge DKFDS med Angular CLI gøres følgende:
 
 I package.json tiløjes DKFDS og evt. også DKFDS­-plugins ind under dependencies.
 
-```
+{% highlight json %}
 "dependencies": {
     "dkfds": "^5.0.0",
     "dkfds-plugins": "^5.0.0"
-```
+{% endhighlight %}
 
 Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre brug af <a href="/udvidelser/">udvidelserne</a>.
 
@@ -32,11 +32,12 @@ Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre bru
 
 I angular.json udpeges styling alt efter hvilket tema der skal benyttes, og hvilke udvidelser man gør brug af:
 
-```
+
+{% highlight json %}
 "styles": [
     "node_modules/dkfds/dist/css/dkfds-­virkdk.css",
     "node_modules/dkfds-­plugins/dist/css/dkfds­-datatables­-theme.min.css"
-```
+{% endhighlight %}
 
 ### Implementer JavaScript
 
@@ -46,7 +47,7 @@ Man kan vælge at initiere alle typer af komponenter på én gang med `DKFDS.ini
 
 Eksempel på implementering i AppComponent:
 
-```
+{% highlight typescript %}
 import {Component, OnInit} from '@angular/core';
 import * as DKFDS from 'dkfds'
 @Component({
@@ -63,7 +64,7 @@ export class AppComponent implements OnInit{
         DKFDS.init();
     }
 }
-```
+{% endhighlight %}
 
 Samme implementering kan bruges i underliggende components. Men bemærk at den kun vil dække komponenter, som eksisterer på det tidspunkt. Det vil sige, at hvis andre components bliver loaded efterfølgende, vil disse ikke være dækket, og man skal derfor håndtere dette efterfølgende.
 

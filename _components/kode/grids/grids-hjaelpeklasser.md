@@ -13,23 +13,19 @@ Brug designsystemets flexbox hjælpeklasser til at ændre på placeringen af kol
 
 #### Vertikal alignment
 
-{% include code/preview.html component="grid--util-flex-vertical-align-01" %}
-{% include code/accordion.html component="grid--util-flex-vertical-align-01" %}
+{% include code/preview.html component="grid--util-flex-vertical-align-01" classes="px-4" %}
 <br />
-{% include code/preview.html component="grid--util-flex-vertical-align-02" %}
-{% include code/accordion.html component="grid--util-flex-vertical-align-02" %}
+{% include code/preview.html component="grid--util-flex-vertical-align-02" classes="px-4" %}
 
 #### Horisontal alignment
 
-{% include code/preview.html component="grid--util-flex-horizontal-align" %}
-{% include code/accordion.html component="grid--util-flex-horizontal-align" %}
+{% include code/preview.html component="grid--util-flex-horizontal-align" classes="px-4" %}
 
 ### Hjælpeklasser: Margin
 
 Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx `mr-auto`.
 
-{% include code/preview.html component="grid--util-margin" %}
-{% include code/accordion.html component="grid--util-margin" %}
+{% include code/preview.html component="grid--util-margin" classes="px-4" %}
 
 ### Hjælpeklasser: Bredde
 

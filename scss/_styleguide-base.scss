@@ -564,7 +564,9 @@
 }
 
 //------------ Code
-
+.component-preview figure.highlight{
+  margin: 0px;
+}
 figure.highlight{
   border: $inner-border;
 }
@@ -572,6 +574,7 @@ figure.highlight{
 code{
   background-color: $color-gray-pale;
 }
+
 code,
 pre {
   font-family: monospace;
@@ -579,25 +582,6 @@ pre {
   code{
     background-color: transparent;
   }
-  span.nt{
-    color: #800080;
-  }
-  span.na{
-    color: #FF6A38;
-  }
-  span.s, span.s1{
-    color: #004D99;
-  }
-  span.k{
-    color: #FF6A38;
-  }
-  span.nx, span.nb{
-    color: #8F2B8F;
-  }
-  span.c{
-    color: #358000;
-  }
-
 }
 
 pre {
@@ -980,34 +964,31 @@ code {
 }
 
 //----- grid example
+body[class*="page-grid"][class*="-html"], div.component-preview[class*="-grid"] {
 
-.grid-example {
-  margin-bottom: 1em;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.grid-example .row>.col,
-.grid-example .row>[class^=col-] {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: $color-info-light;
-  border: $outer-border;
-}
 
-.grid-example-row-flex{
-  min-height: 10rem;
-  background-color: $color-data-orange-low-opacity;
-}
-
-.grid-example .grid-example-measure-row >[class^=col-]{
-  background-color: transparent;
-  border: none;
-  border-left: 1px solid grey;
-  &:last-child{
-    border-right: 1px solid grey;
+  .row > .col,
+  .row > [class^=col-] {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $color-info-light;
+    border: $outer-border;
   }
-}
 
+  .grid-example-row-flex {
+    min-height: 10rem;
+    background-color: $color-data-orange-low-opacity;
+  }
+  &.component-preview-grid-all-breakpoints .row:first-of-type > [class^=col-] {
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid grey;
+    &:last-child {
+      border-right: 1px solid grey;
+    }
+  }
+
+}
 
 //ICONS
 .icon-box {

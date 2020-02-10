@@ -15,7 +15,7 @@ Format: `align-text-{retning}` og `align-text-{breakpoint}-{retning}`
 - Højre: `text-align: right`
 
 <h3 class="h5 mb-0">Eksempel:</h3>
-```
+{% highlight html %}
 <h1 class="align-text-right">Tekst til højre</h1>
 <h1 class="align-text-md-left">Tekst til højre på skærme over 768px</h1>;
-```
+{% endhighlight %}

@@ -15,9 +15,9 @@ componentHideCode: borders
 
 ##### Eksempel:
 
-```
+{% highlight scss %}
 border: $outer-border;
-```
+{% endhighlight %}
 
 #### Indre streger
 
@@ -26,9 +26,9 @@ border: $outer-border;
 
 ##### Eksempel:
 
-```
+{% highlight scss %}
 border: $inner-border;
-```
+{% endhighlight %}
 
 #### Knap borders
 - Borders på knapper er 2px bredde og farven afhænger af elementet. For at bruge borders til knapper bruges variablen `$button-border`
@@ -36,6 +36,6 @@ border: $inner-border;
 
 ##### Eksempel:
 
-```
+{% highlight scss %}
 border: $button-border;
-```
+{% endhighlight %}

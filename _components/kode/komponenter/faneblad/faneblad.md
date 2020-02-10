@@ -28,9 +28,9 @@ Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der 
 
 Hvis man står i denne situation kan man definere denne komponent i JavaScript således:
 
-```
+{% highlight js %}
 new DKFDS.Tabnav(document.getElementByID('TABNAV-ID'));
-```
+{% endhighlight %}
 
 Bemærk, at dette kun gælder fra version 5.0.0.
 

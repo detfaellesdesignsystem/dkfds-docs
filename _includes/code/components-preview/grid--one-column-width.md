@@ -3,29 +3,27 @@ permalink: /preview-components/grid--one-column-width.html
 layout: example-contained 
 title: Grid--one-column-width.html
 ---
-<div class="grid-example">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-6">
-                2 of 3 (.col-6)
-            </div>
-            <div class="col">
-                3 of 3
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            1 of 3
         </div>
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-5">
-                2 of 3 (.col-5)
-            </div>
-            <div class="col">
-                3 of 3
-            </div>
+        <div class="col-6">
+            2 of 3 (.col-6)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-5">
+            2 of 3 (.col-5)
+        </div>
+        <div class="col">
+            3 of 3
         </div>
     </div>
 </div>

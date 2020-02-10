@@ -11,12 +11,10 @@ Du kan specificere bredden på en kolonne uden at angive en eksplicit nummer-kla
 
 Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (.col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.
 
-{% include code/preview.html component="grid--one-column-width" %}
-{% include code/accordion.html component="grid--one-column-width" %}
+{% include code/preview.html component="grid--one-column-width" classes="px-4" %}
 
 ### Individuel kolonnebredde efter indhold
 
 Ved at brug `col-{breakpoint}-auto` kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.
 
-{% include code/preview.html component="grid--variable-width-content" %}
-{% include code/accordion.html component="grid--variable-width-content" %}
+{% include code/preview.html component="grid--variable-width-content" classes="px-4" %}

@@ -96,6 +96,8 @@ Kode_category:
   href: /kode/
 - href: /kode/komponenter/
   categorynav: 'Kode_Komponenter_category'
+- href: /kode/grid/
+- href: /kode/ikoner/
 - href: /kode/utilities/
 - href: /kode/eksempler-implementering/
 - href: /kode/print/

@@ -16,8 +16,8 @@ Format: `bg-{baggrund}`
 
 <h3 class="h5">Eksempel:</h3>
 
-```
+{% highlight html %}
 <div class="bg-normal"> Dette element har hvid baggrund </div> <br>
 <div class="bg-alternative"> Dette element har lysegrå baggrund </div><br>
 <div class="bg-modal"> Dette element har en sort baggrund med opacity på 0.75 </div>
-```
+{% endhighlight %}
