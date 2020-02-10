@@ -447,7 +447,7 @@
     
       
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
 
   
@@ -1263,6 +1263,42 @@
 
   
 
+<a href="/kode/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
 <a href="/kode/utilities/" role="menuitem" 
   class="nav-link">
   Hjælpeklasser (Utilities)
@@ -1594,6 +1630,42 @@
 
   
 
+<a href="/kode/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
 <a href="/kode/utilities/" role="menuitem" 
   class="nav-link">
   Hjælpeklasser (Utilities)
@@ -1785,28 +1857,25 @@
 <p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p>
 
 <p>Disse browsers bør defineres i autoprefixer:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>[
-  '&gt; 1%',
-  'Last 2 versions',
-  'IE 11',
-  'IE 10',
-  'IE 9',
-]
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">[</span><span class="w">
+  </span><span class="err">'&gt;</span><span class="w"> </span><span class="mi">1</span><span class="err">%'</span><span class="p">,</span><span class="w">
+  </span><span class="err">'Last</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="err">versions'</span><span class="p">,</span><span class="w">
+  </span><span class="err">'IE</span><span class="w"> </span><span class="mi">11</span><span class="err">'</span><span class="p">,</span><span class="w">
+  </span><span class="err">'IE</span><span class="w"> </span><span class="mi">10</span><span class="err">'</span><span class="p">,</span><span class="w">
+  </span><span class="err">'IE</span><span class="w"> </span><span class="mi">9</span><span class="err">'</span><span class="p">,</span><span class="w">
+</span><span class="p">]</span></code></pre></figure>
 
 <h4 id="fix-for-bug-i-microsoft-edge-og-internet-explorer">Fix for bug i Microsoft Edge og Internet Explorer</h4>
 
 <p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i <code class="highlighter-rouge">head</code> sektionen.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>  &lt;style&gt;
-    /<span class="k">*</span> Fixes Edge bug, where list-style-type:none is ignored <span class="k">if </span>it<span class="s1">'s set after li has been hidden. */   
-    ul {
-      list-style-type: none;
-    }
-  &lt;/style&gt;
-</span></code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;style&gt;</span>
+    <span class="c">/* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. */</span>   
+    <span class="nt">ul</span> <span class="p">{</span>
+      <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span></code></pre></figure>
 
 <h2 id="dkfds-plugins">DKFDS Plugins</h2>
 
@@ -1824,23 +1893,18 @@
 
 <p>dkfds-plugins projektet er tilgængeligt via npm og du kan installere det ved at skrive følgende i en kommando-prompt:</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>npm install dkfds-plugins --save
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-console" data-lang="console">npm install dkfds-plugins --save</code></pre></figure>
 
 <p>Modulet ‘dkfds-plugins’ er nu installeret i ‘node_modules’ mappen.</p>
 
 <p>Inkluder derefter temaerne enten som css direkte:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;link rel="stylesheet" href="[path-to-plugins-project]/dist/css/dkfds-datatables-theme.standalone.min.css"&gt;
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"[path-to-plugins-project]/dist/css/dkfds-datatables-theme.standalone.min.css"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <p>Eller inkluder temaerne i SCSS (Bemærk, at du først skal importere DKFDS):</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>@import "~dkfds-plugins/dist/scss/dkfds-datatables-theme";
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="err">@</span><span class="kr">import</span> <span class="s2">"~dkfds-plugins/dist/scss/dkfds-datatables-theme"</span><span class="p">;</span></code></pre></figure>
+
 
       </section>
     </main>

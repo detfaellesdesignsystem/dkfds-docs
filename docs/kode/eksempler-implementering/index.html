@@ -450,7 +450,7 @@
     
       
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
 
   
@@ -1253,6 +1253,42 @@
 
   
 
+<a href="/kode/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
 <a href="/kode/utilities/" role="menuitem" 
   class="nav-link">
   Hjælpeklasser (Utilities)
@@ -1584,6 +1620,42 @@
 
   
 
+<a href="/kode/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
 <a href="/kode/utilities/" role="menuitem" 
   class="nav-link">
   Hjælpeklasser (Utilities)
@@ -1704,11 +1776,9 @@
 
 <p>I package.json tiløjes DKFDS og evt. også DKFDS­-plugins ind under dependencies.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>"dependencies": {
-    "dkfds": "^5.0.0",
-    "dkfds-plugins": "^5.0.0"
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"dependencies"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"dkfds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^5.0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"dkfds-plugins"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^5.0.0"</span></code></pre></figure>
 
 <p>Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre brug af <a href="/udvidelser/">udvidelserne</a>.</p>
 
@@ -1716,11 +1786,9 @@
 
 <p>I angular.json udpeges styling alt efter hvilket tema der skal benyttes, og hvilke udvidelser man gør brug af:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>"styles": [
-    "node_modules/dkfds/dist/css/dkfds-­virkdk.css",
-    "node_modules/dkfds-­plugins/dist/css/dkfds­-datatables­-theme.min.css"
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"styles"</span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"node_modules/dkfds/dist/css/dkfds-­virkdk.css"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"node_modules/dkfds-­plugins/dist/css/dkfds­-datatables­-theme.min.css"</span></code></pre></figure>
 
 <h3 id="implementer-javascript">Implementer JavaScript</h3>
 
@@ -1730,7 +1798,7 @@
 
 <p>Eksempel på implementering i AppComponent:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>import {Component, OnInit} from '@angular/core';
+<figure class="highlight"><pre><code class="language-typescript" data-lang="typescript">import {Component, OnInit} from '@angular/core';
 import * as DKFDS from 'dkfds'
 @Component({
     selector: 'app-root',
@@ -1745,9 +1813,7 @@ export class AppComponent implements OnInit{
     ngOnInit() {
         DKFDS.init();
     }
-}
-</code></pre>
-</div>
+}</code></pre></figure>
 
 <p>Samme implementering kan bruges i underliggende components. Men bemærk at den kun vil dække komponenter, som eksisterer på det tidspunkt. Det vil sige, at hvis andre components bliver loaded efterfølgende, vil disse ikke være dækket, og man skal derfor håndtere dette efterfølgende.</p>
 

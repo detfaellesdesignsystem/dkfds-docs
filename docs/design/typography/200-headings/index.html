@@ -450,7 +450,7 @@
     
       
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
 
   
@@ -1253,6 +1253,42 @@
 
   
 
+<a href="/kode/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
 <a href="/kode/utilities/" role="menuitem" 
   class="nav-link">
   Hjælpeklasser (Utilities)
@@ -1637,21 +1673,17 @@
 
 <p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings <code class="highlighter-rouge">font-family</code>, <code class="highlighter-rouge">font-size</code>, <code class="highlighter-rouge">line-height</code>, <code class="highlighter-rouge">font-weight</code> og <code class="highlighter-rouge">color</code>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>@mixin h1{ 
-    font-family: $font-name;
-    font-size: $h1-font-size;
-    line-height: $h1-line-height;
-    font-weight: $font-weight-bold;
-    color: $color-black;
-}
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">h1</span><span class="p">{</span> 
+    <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$font-name</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$h1-font-size</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="nv">$h1-line-height</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nv">$font-weight-bold</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$color-black</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>  h1, .h1 
-  @include h1;
-  }
-</code></pre>
-</div>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">  <span class="nt">h1</span><span class="o">,</span> <span class="nc">.h1</span> 
+  <span class="o">@</span><span class="nt">include</span> <span class="nt">h1</span><span class="p">;</span>
+  <span class="p">}</span></code></pre></figure>
 
 <p>Hver heading har sin klasse, som arver styling fra heading mixins. Ønsker du en <code class="highlighter-rouge">h1</code> med styling fra <code class="highlighter-rouge">h2</code>, skal du blot indsætte klassen <code class="highlighter-rouge">h2</code> på <code class="highlighter-rouge">&lt;h1 class="h2"&gt;</code>.</p>
 
