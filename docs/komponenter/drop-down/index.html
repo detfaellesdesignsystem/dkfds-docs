@@ -79,10 +79,10 @@
 
       
       <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-        <form method="get" action="/search/">
+        <form method="get" action="/search/" id="mobileSearchForm">
           <div class="form-group search">
             <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search">
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -237,11 +237,11 @@
 
           </ul>
           
-          <div id="search-form">
-            <form method="get" action="/search/">
+          <div class="search-form">
+            <form method="get" action="/search/" id="menuSearchForm">
               <div class="form-group search">
                 <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search">
+                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
