@@ -5,11 +5,11 @@ search: true
 title: Søgeresultater
 ---
 
-<div id="search-form">
-    <form method="get" action="/search/">
+<div id="search-form" class="search-form">
+    <form method="get" action="/search/" id="searchForm">
       <div class="form-group search">
         <label for="search-input" class="sr-only">Søg efter indhold</label>
-        <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search">
+        <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required>
         <button class="button button-search" type="submit" id="searchbtn">Søg</button>
       </div>
     </form>

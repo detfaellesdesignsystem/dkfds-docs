@@ -19,6 +19,8 @@ let excludeWords = ["Når", "i", "I", "er", "det", "der", "dem", "den", "et", "h
 
 const limit = 1000;
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     let url_queries = window.location.search.substr(1).split('&');
     if(url_queries.length !== 0) {
@@ -42,7 +44,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    if(document.getElementById('menuSearchForm') != null){
+        document.getElementById('menuSearchForm').addEventListener("submit", onSearchSubmit);
+    }
+    if(document.getElementById('mobileSearchForm') != null){
+        document.getElementById('mobileSearchForm').addEventListener("submit", onSearchSubmit);
+    }
+    if(document.getElementById('searchForm') != null){
+        document.getElementById('searchForm').addEventListener("submit", onSearchSubmit);
+    }
+
 });
+
+function onSearchSubmit (e){
+    console.log(this);
+}
 
 function populateSearch (results, query, start){
     document.getElementById('search-input').value = query;
