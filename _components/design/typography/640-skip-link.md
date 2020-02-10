@@ -3,10 +3,12 @@ type: component
 title: Skip link
 parent: typography
 order: 640
-lead: Et "skip link" er et skjult link, lavet til brugere, der anvender keyboard til at navigere med. Skip linket gør det muligt, at springe menuer over og hoppe direkte til indholdet på siden.
+lead: Skip links anvendes til at give brugere, der navigerer med tastatur en bedre oplevelse.
 component: skiplink
 componentTitle: "Eksempel på Skip link"
 ---
+
+Et skip link er et skjult link, der kun vises, når en bruger anvender tastaturets tabulator-tast til at navigere ind på siden. Når brugeren trykker på linket (med tastatur eller mus) sættes fokus på første indholdselement på den aktuelle side. Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan undgå at få læst alle menupunkter op før de får adgang til selve indholdet. 
 
 ### Implementering
 

@@ -11,7 +11,7 @@ headingClass: h3
 - Tooltip og popovers skal kunne lukkes med escape tasten på tastaturet.
 - Fokus skal blive på det element, der aktiverede tooltip eller popover.
 - Brug aria-describedby på elementet der udløser tooltip eller popover.
-- Tooltips skal både vises, ved markering med mus og keyboard.
+- Tooltips skal både vises, ved markering med mus og tastatur.
 
 {:.h4}
 ### Brugervenlighed

@@ -21,7 +21,7 @@ Se også vores <a href="/komponenter/funktionslink/">Funktionslink</a> og <a hre
 - Links skal enten være understreget eller markeret på anden vis. Et link må ikke kun være angivet med en farve.
 - Brugerne skal kunne tabulere mellem links og aktivere dem via enter på tastaturet.
 - Links skal have en defineret `href` attribut i koden.
-- Har linket en “hover” skal denne kunne aktiveres både med keyboard og mus.
+- Har linket en “hover” skal denne kunne aktiveres både med tastatur og mus.
 
 #### Anvendes til
 
