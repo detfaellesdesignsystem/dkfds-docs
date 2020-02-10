@@ -9,6 +9,7 @@ title: Søgeresultater
     <form method="get" action="/search/" id="searchForm">
       <div class="form-group search">
         <label for="search-input" class="sr-only">Søg efter indhold</label>
+        <span class="form-error-message d-none" id="search-form-error" role="alert"></span>
         <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required>
         <button class="button button-search" type="submit" id="searchbtn">Søg</button>
       </div>

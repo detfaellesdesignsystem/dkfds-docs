@@ -44,22 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    if(document.getElementById('menuSearchForm') != null){
-        document.getElementById('menuSearchForm').addEventListener("submit", onSearchSubmit);
-    }
-    if(document.getElementById('mobileSearchForm') != null){
-        document.getElementById('mobileSearchForm').addEventListener("submit", onSearchSubmit);
-    }
-    if(document.getElementById('searchForm') != null){
-        document.getElementById('searchForm').addEventListener("submit", onSearchSubmit);
-    }
-
 });
-
-function onSearchSubmit (e){
-    console.log(this);
-}
-
 function populateSearch (results, query, start){
     document.getElementById('search-input').value = query;
     document.getElementById('results-count').innerText = results.length;
