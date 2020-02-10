@@ -29,13 +29,23 @@
   }
 }
 // Search
-#search-form{
+header #search-form{
   align-self: center;
 
   #search-input{
       width: 27ch;
   }
 }
+
+header #search-form-mobile{
+  border-top: $inner-border;
+
+  #search-input-mobile{
+    width: 100%;
+    max-width: none;
+  }
+}
+
 .page-result {
   .h4 a {
     &:link {

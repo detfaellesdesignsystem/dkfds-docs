@@ -3,8 +3,7 @@ type: component
 title: Streger
 parent: borders-shadows
 order: 02
-component: shadows
-componentHideCode: borders
+component: borders
 ---
 
 ### Implementering
