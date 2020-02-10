@@ -2672,7 +2672,7 @@
   <li>Links skal enten være understreget eller markeret på anden vis. Et link må ikke kun være angivet med en farve.</li>
   <li>Brugerne skal kunne tabulere mellem links og aktivere dem via enter på tastaturet.</li>
   <li>Links skal have en defineret <code class="highlighter-rouge">href</code> attribut i koden.</li>
-  <li>Har linket en “hover” skal denne kunne aktiveres både med keyboard og mus.</li>
+  <li>Har linket en “hover” skal denne kunne aktiveres både med tastatur og mus.</li>
 </ul>
 
 <h4 id="anvendes-til">Anvendes til</h4>
@@ -2745,7 +2745,7 @@
 <section class="styleguide-child-container content" id="section-/design/typography/640-skip-link">
   <h2 id="skip-link">Skip link</h2>
   
-    <p class="font-lead">Et "skip link" er et skjult link, lavet til brugere, der anvender keyboard til at navigere med. Skip linket gør det muligt, at springe menuer over og hoppe direkte til indholdet på siden.</p>
+    <p class="font-lead">Skip links anvendes til at give brugere, der navigerer med tastatur en bedre oplevelse.</p>
   
   
   <div class="component-preview  component-preview-skiplink p-4" aria-label="Eksempel på Skip link">
@@ -2756,7 +2756,9 @@
 </div>
 
   
-  <h3 id="implementering">Implementering</h3>
+  <p>Et skip link er et skjult link, der kun vises, når en bruger anvender tastaturets tabulator-tast til at navigere ind på siden. Når brugeren trykker på linket (med tastatur eller mus) sættes fokus på første indholdselement på den aktuelle side. Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan undgå at få læst alle menupunkter op før de får adgang til selve indholdet.</p>
+
+<h3 id="implementering">Implementering</h3>
 
 <p>Skip link <code class="highlighter-rouge">a</code> elementet indsættes umiddelbart lige efter <code class="highlighter-rouge">&lt;body&gt;</code>. Elementet skal være det første element, der kommer i fokus på siden ved brug af tabulator.</p>
 
