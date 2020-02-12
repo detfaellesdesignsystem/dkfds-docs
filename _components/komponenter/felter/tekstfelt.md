@@ -1,26 +1,29 @@
 ---
-permalink: /komponenter/felter/
+permalink: "/komponenter/felter/"
 layout: styleguide
 type: component
 title: Felter
-tags: "tekstfelt, input"
+tags:
+- tekstfelt
+- input
 category: Komponenter_category
-description: "Felt til indtastning af information i form af bogstaver, tal og en kombination af begge."
+description: Felt til indtastning af information i form af bogstaver, tal og en kombination
+  af begge.
 subcategory: Komponenter
 anchor: true
 subnav:
 - text: Fejlbesked
-  href: '#fejlbesked'
+  href: "#fejlbesked"
 - text: Frivilligt felt
-  href: '#frivilligt-felt'
+  href: "#frivilligt-felt"
 - text: Hjælpetekst
-  href: '#hjælpetekst'
+  href: "#hjælpetekst"
 - text: Feltbredde
-  href: '#feltbredde'
+  href: "#feltbredde"
 - text: Deaktiveret
-  href: '#deaktiveret'
+  href: "#deaktiveret"
 - text: Readonly
-  href: '#readonly'
----
+  href: "#readonly"
 
+---
 {% include child-components.html parent='Text-field' %}
