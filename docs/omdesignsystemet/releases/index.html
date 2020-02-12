@@ -19,8 +19,8 @@
 <meta property="og:title" content="Release notes | Det Fælles Designsystem">
 
 
-<meta name="description" content="Release notes for DKFDS">
-<meta property="og:description" content="Release notes for DKFDS">
+<meta name="description" content="Release notes for Det Fælles Designsystem">
+<meta property="og:description" content="Release notes for Det Fælles Designsystem">
 
 
 
@@ -114,6 +114,7 @@
 
 
 
+
 <li class="" role="none">
 
   <!-- Do not render subnavs-->
@@ -136,10 +137,11 @@
 
 
 
-<li class="current" role="none">
+
+<li class="" role="none">
 
   <!-- Do not render subnavs-->
-  <a href="/design/" role="menuitem" aria-current="page"
+  <a href="/design/" role="menuitem" 
     class="nav-link">
     <span>Design</span>
   </a>
@@ -150,6 +152,7 @@
   
   
     
+
 
 
 
@@ -180,6 +183,7 @@
 
 
 
+
 <li class="" role="none">
 
   <!-- Do not render subnavs-->
@@ -202,6 +206,7 @@
 
 
 
+
 <li class="" role="none">
 
   <!-- Do not render subnavs-->
@@ -216,6 +221,7 @@
   
   
     
+
 
 
 
@@ -268,6 +274,7 @@
   
   
     
+
 
 
 
@@ -404,7 +411,8 @@
 
 
 
-<li class="current" role="none">
+
+<li class="" role="none">
 
   <!--Do render subnavs-->
 
@@ -417,10 +425,10 @@
 
   
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="true"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="false"  >
         <span>Design</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="false">
+      <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
         <ul class="overflow-list">
   
     
@@ -542,6 +550,7 @@
   
   
     
+
 
 
 
@@ -706,6 +715,24 @@
 <a href="/komponenter/faneblad/" role="menuitem" 
   class="nav-link">
   Faneblade
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/felter/" role="menuitem" 
+  class="nav-link">
+  Felter
 </a>
 
 </li>
@@ -1004,24 +1031,6 @@
     
       
 
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/komponenter/tekstfelt/" role="menuitem" 
-  class="nav-link">
-  Tekstfelt
-</a>
-
-</li>
-
-    
-
-  
-    
-      
-
 <li class="  " role="none">
 
 
@@ -1102,6 +1111,7 @@
   
   
     
+
 
 
 
@@ -1202,6 +1212,7 @@
 
 
 
+
 <li class="" role="none">
 
   <!--Do render subnavs-->
@@ -1229,7 +1240,7 @@
 
   
 
-<a href="/kode/" role="menuitem" 
+<a href="/kode/implementering/" role="menuitem" 
   class="nav-link">
   Implementering af DKFDS
 </a>
@@ -1364,6 +1375,24 @@
 
     
 
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/" role="menuitem" 
+  class="nav-link">
+  Plugins
+</a>
+
+</li>
+
+    
+
 
         </ul>
       </div>
@@ -1376,6 +1405,7 @@
   
   
     
+
 
 
 
@@ -2071,7 +2101,7 @@
   <li>Tilføjet mere afstand mellem links i footer</li>
   <li>Overskriftstørrelser på mobil er blevet opdateret</li>
   <li>Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/sidenav/#sidenavigation-med-information">sidenavigation</a> og <a href="/komponenter/trinindikatorer/#trinindikator-med-information">trinindikator</a></li>
-  <li>Tilføjet eksempel på <a href="/udvidelser/datatables/#expandable-table">tabel i Datatable</a>
+  <li>Tilføjet eksempel på <a href="/kode/plugins/datatables/#expandable-table">tabel i Datatable</a>
 <span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span></li>
   <li>Opdateret <a href="/komigang/tiludviklere/eksempler-implementering/">Eksempel på implementering i Angular</a></li>
 </ul>
@@ -2113,9 +2143,9 @@
 <span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/sidenav/">komponenten</a>.</span></li>
   <li><label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/komponenter/tabnav/">Faneblads-komponenten</a> er blevet redefineret.
 <span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/tabnav/">komponenten</a>.</span></li>
-  <li><label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/udvidelser/tippy/">Den gamle tooltip (tippy) komponent</a> er blevet flyttet til udvidelser.
+  <li><label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/kode/plugins/tippy/">Den gamle tooltip (tippy) komponent</a> er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span></li>
-  <li><label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/udvidelser/micromodal/">Modalvinduer-komponenten</a> er blevet flyttet til udvidelser.
+  <li><label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/kode/plugins/micromodal/">Modalvinduer-komponenten</a> er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span></li>
   <li>Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.</li>
   <li>Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>.</li>
