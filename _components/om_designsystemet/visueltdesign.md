@@ -49,7 +49,7 @@ Alle andre komponenter er helt ens på tværs af de to portaler.
 
 <a href="/komponenter/headers/">Gå til header komponenten</a>
 
-<a href="/design/sideopbygning/#header">Læs om layout til headeren</a>
+<a href="/komigang/regler-principper-layout/#header">Læs om layout til headeren</a>
 
 <h3 class="h5">Venstremenu/tringuide-temaer</h3>
 

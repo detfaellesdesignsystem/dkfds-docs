@@ -6,7 +6,7 @@ headingClass: h3
 ---
 
 
-<a href="/komigang/tildesignere/sideopbygning/#header">Om headerens opbygning og struktur</a>
+<a href="/komigang/regler-principper-layout/#header">Om headerens opbygning og struktur</a>
 
 {:.h4}
 ### Vejledning
