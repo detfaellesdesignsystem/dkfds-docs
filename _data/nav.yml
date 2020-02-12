@@ -93,9 +93,9 @@ Kode_category:
 - href: /kode/utilities/
 - href: /kode/eksempler-implementering/
 - href: /kode/print/
-- href: /kode/anbefalinger-vaerktoejer/
 - href: /kode/plugins/
   categorynav: 'Plugins_category'
+- href: /kode/anbefalinger-vaerktoejer/
 
 #Left menu for komponent-category
 Kode_Komponenter_category:

@@ -3,7 +3,7 @@ permalink: /kode/plugins/
 redirect_from:
 - /udvidelser/
 layout: styleguide
-title: Plugins
+title: Plug-ins
 category: Kode_category
 type: component
 subcategory: Kode
