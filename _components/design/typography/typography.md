@@ -24,8 +24,6 @@ subnav:
   href: '#eksternt-link'
 - text: Footer link
   href: '#footer-links'
-- text: Skip link
-  href: '#skip-link'
 - text: Lister
   href: '#lister'
 - text: Stor tekst (display text)

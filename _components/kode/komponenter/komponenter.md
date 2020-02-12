@@ -31,6 +31,7 @@ Support kan findes via <a href="https://github.com/detfaellesdesignsystem/dkfds-
     <li><a href="/kode/komponenter/overflowmenu/" class="bold-link">Overflow menu</a></li>
     <li><a href="/kode/komponenter/radiobutton/" class="bold-link">Radioknap</a></li>
     <li><a href="/kode/komponenter/sidenav/" class="bold-link">Sidenavigation</a></li>
+    <li><a href="/kode/komponenter/skip-link/" class="bold-link">Skip-link</a></li>
     <li><a href="/kode/komponenter/collapse/" class="bold-link">Skjul og vis (Collapse)</a></li>
     <li><a href="/kode/komponenter/spinner/" class="bold-link">Spinner</a></li>
     <li><a href="/kode/komponenter/search/" class="bold-link">Søgefelt</a></li>

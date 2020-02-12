@@ -11,7 +11,8 @@ let synonyms = [
     ["primærknap", "primær knap", "primary", "primær"],
     ["sekundærknap", "sekundærknap", "secondary", "sekundær"],
     ["trinindikator", "tringuide"],
-    ["avancerede tabeller", "datatables"]
+    ["avancerede tabeller", "datatables"],
+    ["skip-link", "skip link"]
 ];
 
 let excludeWords = ["Når", "i", "I", "er", "det", "der", "dem", "den", "et", "hvad", "hvor", "hvem", "på", "og"];

@@ -699,9 +699,9 @@ code {
   padding-top: 8px;
 }
 .component-preview-skiplink {
-  overflow: hidden;
-  .container{
-    min-height: 150px;
+  .component-example{
+    overflow: hidden;
+    position: relative;
   }
 }
 .component-preview-date-input{

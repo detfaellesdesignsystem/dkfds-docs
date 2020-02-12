@@ -24,6 +24,7 @@ category: Komponenter_category
     <li><a href="/komponenter/overflowmenu/" class="bold-link">Overflow menu</a></li>
     <li><a href="/komponenter/radiobutton/" class="bold-link">Radioknap</a></li>
     <li><a href="/komponenter/sidenav/" class="bold-link">Sidenavigation</a></li>
+    <li><a href="/komponenter/skip-link/" class="bold-link">Skip-link</a></li>
     <li><a href="/komponenter/collapse/" class="bold-link">Skjul og vis (Collapse)</a></li>
     <li><a href="/komponenter/spinner/" class="bold-link">Spinner</a></li>
     <li><a href="/komponenter/search/" class="bold-link">Søgefelt</a></li>

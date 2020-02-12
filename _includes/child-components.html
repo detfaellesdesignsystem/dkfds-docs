@@ -6,7 +6,7 @@
     <p class="font-lead">{{ child.lead }}</p>
   {% endif %}
   {% if child.component %}
-  {% include code/preview.html component=child.component title=child.componentTitle %}
+  {% include code/preview-box.html component=child.component title=child.componentTitle link=child.componentLink %}
   {% endif %}
   {{ child.content }}
 </section>
