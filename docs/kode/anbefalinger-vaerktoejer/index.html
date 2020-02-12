@@ -114,6 +114,7 @@
 
 
 
+
 <li class="" role="none">
 
   <!-- Do not render subnavs-->
@@ -128,6 +129,7 @@
   
   
     
+
 
 
 
@@ -158,6 +160,7 @@
 
 
 
+
 <li class="" role="none">
 
   <!-- Do not render subnavs-->
@@ -172,6 +175,7 @@
   
   
     
+
 
 
 
@@ -202,6 +206,7 @@
 
 
 
+
 <li class="current" role="none">
 
   <!-- Do not render subnavs-->
@@ -216,6 +221,7 @@
   
   
     
+
 
 
 
@@ -268,6 +274,7 @@
   
   
     
+
 
 
 
@@ -396,6 +403,7 @@
   
   
     
+
 
 
 
@@ -542,6 +550,7 @@
   
   
     
+
 
 
 
@@ -706,6 +715,24 @@
 <a href="/komponenter/faneblad/" role="menuitem" 
   class="nav-link">
   Faneblade
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/felter/" role="menuitem" 
+  class="nav-link">
+  Felter
 </a>
 
 </li>
@@ -1004,24 +1031,6 @@
     
       
 
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/komponenter/tekstfelt/" role="menuitem" 
-  class="nav-link">
-  Tekstfelt
-</a>
-
-</li>
-
-    
-
-  
-    
-      
-
 <li class="  " role="none">
 
 
@@ -1102,6 +1111,7 @@
   
   
     
+
 
 
 
@@ -1202,6 +1212,7 @@
 
 
 
+
 <li class="current" role="none">
 
   <!--Do render subnavs-->
@@ -1224,28 +1235,15 @@
     
       
 
-<li class="current  " role="none">
+<li class="  " role="none">
 
 
   
 
-<a href="/kode/" role="menuitem" aria-current="true"
+<a href="/kode/implementering/" role="menuitem" 
   class="nav-link">
   Implementering af DKFDS
 </a>
-
-  
-    
-    
-    
-    <!-- Uses page.subnav as navmenu-->
-    
-    
-
-    
-
-    
-  
 
 </li>
 
@@ -1437,6 +1435,24 @@
 
     
 
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/" role="menuitem" 
+  class="nav-link">
+  Plugins
+</a>
+
+</li>
+
+    
+
 
         </ul>
       </div>
@@ -1449,6 +1465,7 @@
   
   
     
+
 
 
 
@@ -1651,28 +1668,15 @@
     
       
 
-<li class="current  " role="none">
+<li class="  " role="none">
 
 
   
 
-<a href="/kode/" role="menuitem" aria-current="true"
+<a href="/kode/implementering/" role="menuitem" 
   class="nav-link">
   Implementering af DKFDS
 </a>
-
-  
-    
-    
-    
-    <!-- Uses page.subnav as navmenu-->
-    
-    
-
-    
-
-    
-  
 
 </li>
 
@@ -1864,6 +1868,24 @@
 
     
 
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/" role="menuitem" 
+  class="nav-link">
+  Plugins
+</a>
+
+</li>
+
+    
+
 
         </ul>
         
@@ -1941,7 +1963,7 @@
 
 <p>Det Fælles Designsystem anvender ”Vanilla JavaScript” (”Vanilla JS” eller ”Plain JS”) og ikke et JavaScript bibliotek som fx jQuery, der skaber afhængighed til tredjeparts leverandører. På den måde anvender designsystemet optimerede løsninger og undgår afhængighed af tredjepartsleverandører og deres eventuelle tekniske gæld.</p>
 
-<p>Du kan altså godt anvende en tredjeparts løsning (se listen over anbefalede udvidelser). Men ønsker du at udvikle en funktionskomponent, og at den skal kunne inkluderes i designsystemets kerne, så skal du udvikle den i Vanilla JS.</p>
+<p>Du kan altså godt anvende en tredjeparts løsning (se listen over anbefalede plugins). Men ønsker du at udvikle en funktionskomponent, og at den skal kunne inkluderes i designsystemets kerne, så skal du udvikle den i Vanilla JS.</p>
 
 <h4 id="læs-mere-om-javascript">Læs mere om Javascript</h4>
 <ul class="nobullet-list">
@@ -2035,7 +2057,7 @@ Painting can take up more time than any other rendering activity. Watch out for 
 
 <p>Det skal på den anden side vejes op i mod de krav og forventninger brugerne har til en given løsning.</p>
 
-<p>Det Fælles Designsystem bestræber sig på at understøtte dette ved at alle udvidelser til designsystemets funktioner er tilvalg, som udvikleren skal foretage sig. Det giver dig mulighed for at vurdere den optimale sammenhæng mellem brugernes ønsker og krav, brug af ressourcer og sidens måde at præstere på.</p>
+<p>Det Fælles Designsystem bestræber sig på at understøtte dette ved at alle plugins til designsystemets funktioner er tilvalg, som udvikleren skal foretage sig. Det giver dig mulighed for at vurdere den optimale sammenhæng mellem brugernes ønsker og krav, brug af ressourcer og sidens måde at præstere på.</p>
 
 <h3 id="baseline-for-indlæsningshastighed">Baseline for indlæsningshastighed</h3>
 
@@ -2149,8 +2171,8 @@ Painting can take up more time than any other rendering activity. Watch out for 
 <p><span class="bold">Sørg for, at ressourcerne bliver indlæst i en rækkefølge med de væsentlige processer først.</span>
 Begræns omfanget af CSS og JS, da de forhindrer browseren i at indlæse de næste trin af sidens kode (“render blocking”). Browseren skal læse og udføre (layoute) den komplette CSS og JS, før den kan frigøre ressourcer til at begynde at beregne selve siden. Alle andre processer står derfor stille, indtil browseren har udført CSS og JS.</p>
 
-<p><span class="bold">Design siden, så det vigtigste indhold for brugeren bliver fremvist øverst.&lt;/bold&gt;
-Designet af siden har stor betydning. Det skal sikre, at det vigtigste indhold for brugerens videre færd bliver fremvist øverst på siden. Du bør derfor så vidt muligt placere alt andet, end det vigtigste indhold ”under folden”, så det bliver indlæst senere. Fx ved asynkron eller lazy indlæsning.</span></p>
+<p><span class="bold">Design siden, så det vigtigste indhold for brugeren bliver fremvist øverst.</span>
+Designet af siden har stor betydning. Det skal sikre, at det vigtigste indhold for brugerens videre færd bliver fremvist øverst på siden. Du bør derfor så vidt muligt placere alt andet, end det vigtigste indhold ”under folden”, så det bliver indlæst senere. Fx ved asynkron eller lazy indlæsning.</p>
 
 <p><span class="bold">Serveren og browserens kommunikation:</span>
 En server sender ~14kb data (10 TCP pakker) ved første forespørgsel fra og skal derefter vente på brugeren, før den sender mere. Kan du holde det vigtigste indhold – det som bekræfter brugerens første valg – på omkring 14kb, forbedrer du altså brugeroplevelsen markant. Det er ikke sikkert, det kan lade sig gøre i praksis at holde første visning nede på 14kb. (Den mindste udgave af designsystemet fylder mere end 100 kb). Men har du en selvbetjeningsløsning med høj forretningskritikalitet, periodevis højt pres, mange samtidige eller et højt antal daglige brugere, kan det give mening at superoptimere den kritiske vej.</p>
