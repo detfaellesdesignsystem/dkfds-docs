@@ -6,6 +6,7 @@ title: Radioknap
 category: Komponenter_category
 subcategory: Komponenter
 anchor: true
+description: "Radioknapper giver brugeren mulighed for at vælge en enkelt værdi ud fra en synlig liste."
 subnav:
 - text: Hjælpetekst
   href: '#hjælpetekst'

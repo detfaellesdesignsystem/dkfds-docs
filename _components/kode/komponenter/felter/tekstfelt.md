@@ -1,11 +1,13 @@
 ---
-permalink: /kode/komponenter/tekstfelt/
+permalink: /kode/komponenter/felter/
 parentlink: /kode/komponenter/
-title: Tekstfelt
+title: Felter
 layout: styleguide
 type: component
 category: Kode_category
+tags: ""
 subcategory: Kode
+description: "Dokumentation på implementering af felter."
 anchor: true
 subnav:
 - text: Fejlbesked

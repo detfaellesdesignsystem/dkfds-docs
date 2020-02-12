@@ -5,7 +5,7 @@ type: component
 title: Sidenavigation
 category: Komponenter_category
 subcategory: Komponenter
-description: "Sidenavigation anvendes til at afspejle et navigations-hierarki i op til tre niveauer i venstre side af siden."
+description: "Sidenavigation giver brugerne overblik over struktur og indhold, så de kan finde vej til det indhold, de leder efter."
 lead: "Sidenavigation giver brugerne overblik over struktur og indhold, så de kan finde vej til det indhold, de leder efter."
 anchor: true
 subnav:

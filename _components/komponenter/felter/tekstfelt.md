@@ -1,9 +1,11 @@
 ---
-permalink: /komponenter/tekstfelt/
+permalink: /komponenter/felter/
 layout: styleguide
 type: component
-title: Tekstfelt
+title: Felter
+tags: "tekstfelt, input"
 category: Komponenter_category
+description: "Felt til indtastning af information i form af bogstaver, tal og en kombination af begge."
 subcategory: Komponenter
 anchor: true
 subnav:

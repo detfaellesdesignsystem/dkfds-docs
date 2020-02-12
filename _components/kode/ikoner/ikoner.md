@@ -6,6 +6,7 @@ type: component
 category: Kode_category
 subcategory: Kode
 order: 25
+description: "Sådan bruger du ikoner med FDS."
 ---
 
 {% include code/preview-box.html component="icon" title="Eksempel på ikon" %}

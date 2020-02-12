@@ -5,6 +5,7 @@ title: Spinner
 layout: styleguide
 type: component
 category: Kode_category
+description: "Dokumentation på implementering af spinner."
 subcategory: Kode
 ---
 

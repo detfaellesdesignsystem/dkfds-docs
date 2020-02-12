@@ -34,4 +34,4 @@ Tabeller er en kompleks størrelse og når du bruger tabeller, skal du sikre dig
 
 Vær meget opmærksom på typen af data, din tabel skal præsentere brugeren for.
 
-Såfremt der er tale om meget <a href="/udvidelser/datatables/">avancerede tabeller</a>, kan der bruges en udvidelse
+Såfremt der er tale om meget <a href="/plugins/datatables/">avancerede tabeller</a>, kan der bruges et plugin

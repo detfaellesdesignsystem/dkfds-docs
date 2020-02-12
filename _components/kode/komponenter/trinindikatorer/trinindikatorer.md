@@ -5,6 +5,7 @@ parentlink: /kode/komponenter/
 layout: styleguide
 type: component
 category: Kode_category
+description: "Dokumentation på implementering af trinindikatorer."
 subcategory: Kode
 anchor: true
 subnav:

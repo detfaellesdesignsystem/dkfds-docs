@@ -15,7 +15,7 @@ Det Fælles designsystem er kodet i HTML5/CSS3 og det er tilstræbt, at al kode 
 
 ### Vanilla JS
 
-For at øge ydeevnen gennem færre forespørgsler, der skal behandles, overhead og - ikke mindst - mindske afhængigheden til tredjepartsleverandører og deres potentielle tekniske gæld, er det besluttet, at designsystemet anvender Vanilla JS (Plain JS). Det vil sige, at designsystemet og de integrerede udvidelser ikke anvender framework som fx jQuery eller andet.
+For at øge ydeevnen gennem færre forespørgsler, der skal behandles, overhead og - ikke mindst - mindske afhængigheden til tredjepartsleverandører og deres potentielle tekniske gæld, er det besluttet, at designsystemet anvender Vanilla JS (Plain JS). Det vil sige, at designsystemet ikke anvender framework som fx jQuery eller andet. Vi bestræber os yderligere på at plugins ikke anvender lignende frameworks.
 
 <h4 class="h5">Læs mere om Vanilla JS her</h4>
 <ul class="nobullet-list">

@@ -5,6 +5,7 @@ title: Headers
 layout: styleguide
 type: component
 category: Kode_category
+description: "Dokumentation på implementering af header."
 subcategory: Kode
 anchor: true
 subnav:
@@ -47,7 +48,7 @@ Hovedmenuen indeholder selve løsningens navigation.
 {:#ekstra-rækker}
 ##### Ekstra rækker
 
-Ekstra navigationsrækker kan indeholde alt lige fra <a href="/komponenter/buttons/">knapper</a>, links til <a href="/udvidelser/micromodal/">modalvinduer</a>, <a href="/komponenter/overflowmenu/">overflow menuer</a> og sidst <a href="/komponenter/funktionslink/">funktionslink</a>.
+Ekstra navigationsrækker kan indeholde alt lige fra <a href="/komponenter/buttons/">knapper</a>, links til <a href="/kode/plugins/micromodal/">modalvinduer</a>, <a href="/komponenter/overflowmenu/">overflow menuer</a> og sidst <a href="/komponenter/funktionslink/">funktionslink</a>.
 
 Hvis man laver en header med lidt indhold, er det anbefalet at man indstiller `$nav-responsive-breakpoint` til at have en lavere værdi, fx. 768px.
 

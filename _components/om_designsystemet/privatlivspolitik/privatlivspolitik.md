@@ -7,7 +7,7 @@ category: Om_designsystemet_category
 subcategory: Om designsystemet
 layout: styleguide
 title: Privatlivspolitik og cookies
-description: Privatlivspolitik og cookie information
+description: Erhvervsstyrelsen behandler de oplysninger, du giver os eller vi indsamler om dig, i overensstemmelse med gældende regler.
 anchor: true
 subnav:
 - text: Privatlivspolitik

@@ -1,14 +1,16 @@
 ---
-permalink: /udvidelser/datatables/
+permalink: /kode/plugins/datatables/
 redirect_from:
 - /datatables/
-layout: styleguide
+- /udvidelser/datatables/
+parentlink: /kode/plugins/
 type: component
+category: Kode_category
+subcategory: Kode
 datatables: true
-title: Avancerede tabeller
-category: Udvidelser_category
-subcategory: Udvidelser
-lead: Avancerede tabeller er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.
+title: "Datatables"
+description: Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.
+lead: Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.
 alerts:
 - type: warning
   header: Denne komponent er ikke en del af kernen af Det Fælles Designsystem

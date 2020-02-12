@@ -5,6 +5,7 @@ title: Footers
 layout: styleguide
 type: component
 category: Kode_category
+description: "Dokumentation på implementering af footer."
 subcategory: Kode
 anchor: true
 subnav:

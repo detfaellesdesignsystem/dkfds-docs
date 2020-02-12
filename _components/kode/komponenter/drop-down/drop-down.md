@@ -5,6 +5,7 @@ layout: styleguide
 type: component
 title: Dropdown-menu
 category: Kode_category
+description: "Dokumentation på implementering af dropdown-menu."
 subcategory: Kode
 ---
 

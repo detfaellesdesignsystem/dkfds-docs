@@ -1,14 +1,15 @@
 ---
-permalink: /udvidelser/micromodal/
+permalink: /kode/plugins/micromodal/
 redirect_from:
 - /komponenter/modals/
-layout: styleguide
+- /udvidelser/micromodal/
+parentlink: /kode/plugins/
 type: component
-title: Modalvinduer (MicroModal)
-category: Udvidelser_category
-subcategory: Udvidelser
+category: Kode_category
+subcategory: Kode
+title: "MicroModal.js"
 micromodal: true
-description: Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen.
+description: "Micromodal.js er et eksternt plugin, som kan anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen."
 alerts:
 - type: warning
   header: Denne komponent er ikke en del af kernen af Det Fælles Designsystem
@@ -46,7 +47,7 @@ Html struktur af en modal:
 
 <h3 class="h4">Tilgængelighed</h3>
 
-- Den anbefalede udvidelse, MicroModal, følger WAI-anbefalingerne for tilgængelighed.
+- Det anbefalede plugin, MicroModal, følger WAI-anbefalingerne for tilgængelighed.
 - Du skal fortsat sikre, at der sættes focus på første element fx brødtekst i dit modalvindue, da indholdet ellers ikke læses op af skærmlæsere.
 
 <h3 class="h4">Brugervenlighed</h3>

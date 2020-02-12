@@ -3,7 +3,7 @@ permalink: /omdesignsystemet/
 layout: styleguide
 title: Om designsystemet
 category: Om_designsystemet_category
-description: Det Fælles Designsystem er inspireret af og bygger på et fundament af international best practice.
+description: Det Fælles Designsystem er inspireret af og bygger på et fundament af international best practices.
 ---
 <p class="font-lead">Det Fælles Designsystem er til alle der skal have selvbetjeningsløsninger på borger.dk og Virk.</p>
 <p class="font-lead">Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde omkring kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.</p>

@@ -11,7 +11,9 @@ title: Shadows.html
             <div class="heavy-shadow-example"></div>
         </div>
         <div class="col-12 col-md-6">
-            <pre>box-shadow: 0 8px 16px 0 rgba(#000, 0.3);</pre>
+            <figure class="highlight">
+                <pre><code class="language-scss" data-lang="scss">box-shadow: 0 8px 16px 0 rgba(#000, 0.3);</code></pre>
+            </figure>
         </div>
     </div>
     <div class="row mt-5">
@@ -21,7 +23,9 @@ title: Shadows.html
             <div class="moderately-shadow-example"></div>
         </div>
         <div class="col-12 col-md-6">
-            <pre>box-shadow: 0 4px 8px 0 rgba(#000, 0.3);</pre>
+            <figure class="highlight">
+                <pre><code class="language-scss" data-lang="scss">box-shadow: 0 4px 8px 0 rgba(#000, 0.3);</code></pre>
+            </figure>
         </div>
     </div>
     <div class="row mt-5">
@@ -31,7 +35,9 @@ title: Shadows.html
             <div class="slightly-shadow-example"></div>
         </div>
         <div class="col-12 col-md-6">
-            <pre>box-shadow: 0 2px 4px 0 rgba(#000, 0.3);</pre>
+            <figure class="highlight">
+                <pre><code class="language-scss" data-lang="scss">box-shadow: 0 2px 4px 0 rgba(#000, 0.3);</code></pre>
+            </figure>
         </div>
     </div>
 </div>

@@ -1,11 +1,14 @@
 ---
-permalink: /udvidelser/selectwoo-multiselect/
-layout: styleguide
+permalink: /kode/plugins/selectwoo-multiselect/
+redirect_from:
+- /udvidelser/selectwoo-multiselect/
+parentlink: /kode/plugins/
 type: component
-title: Multiselect dropdown
-category: Udvidelser_category
+category: Kode_category
+subcategory: Kode
+title: "selectWoo"
 select2: true
-subcategory: Udvidelser
+description: "selectWoo er et eksternt plugin, hvormed man kan gøre det muligt for brugeren at vælge flere elementer fra en lang liste."
 lead: Gør det muligt for brugeren at vælge flere elementer fra en liste.
 alerts:
 - type: warning
@@ -22,7 +25,7 @@ subnav:
 ---
 <h2 class="h4">Tilgængelighed</h2>
 
-- Bemærk: Multiselect dropdown-funktionen (SelectWoo) er gennemtestet af Det Fælles Designsystem og opfylder ikke alle krav til en anbefalet udvidelse. Det er dog den bedste, vi har kunnet finde indtil videre. Du skal bruger- og performanceteste prototyper med SelectWoo med entydigt positive resultat i forhold til din målgruppe, hvis du ønsker at anvende den. Det anbefales generelt, at du overvejer en anden løsning end en multiselect i din løsning.
+- Bemærk: Multiselect dropdown-funktionen (SelectWoo) er gennemtestet af Det Fælles Designsystem og opfylder ikke alle krav til en anbefalet plugin. Det er dog den bedste, vi har kunnet finde indtil videre. Du skal bruger- og performanceteste prototyper med SelectWoo med entydigt positive resultat i forhold til din målgruppe, hvis du ønsker at anvende den. Det anbefales generelt, at du overvejer en anden løsning end en multiselect i din løsning.
 - Multiselect dropdown anvender bl.a. ARIA til at øge den umiddelbare tilgængelighed. Du skal imidlertid være opmærksom på, at en lang valgliste øger den kognitive belastning og dermed sænker den reelle tilgængelighed.
 
 <h2 class="h4">Brugervenlighed</h2>
@@ -39,7 +42,7 @@ Multiselect dropdown anvendes til at give brugeren mulighed for at fortage mere 
 
 - En multiselect dropdown er en avanceret funktion, der bør anvendes i meget begrænset omfang.
 - Overvej om du kan tilbyde en bedre og mere overskuelig løsning fx tjekbokse.
-- På trods af de udvidede muligheder i Select2-udvidelsen bør implementeringen holdes så enkel som muligt.
+- På trods af de udvidede muligheder i Select2-pluginet bør implementeringen holdes så enkel som muligt.
 - Var varsom med at ændre indholdet af næste multiselect i forhold til det forrige valg.
 - Begræns antallet af valgmuligheder i listen, så brugeren ikke mister overblik over sit valg.
 - SelectWoo er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.

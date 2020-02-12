@@ -5,6 +5,7 @@ title: Overflow menu
 layout: styleguide
 type: component
 category: Kode_category
+description: "Dokumentation på implementering af overflow menu."
 subcategory: Kode
 ---
 

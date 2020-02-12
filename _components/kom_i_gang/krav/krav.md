@@ -6,7 +6,7 @@ layout: styleguide
 title: Krav
 category: Kom_i_gang_category
 subcategory: Kom i gang
-description: Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler, skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem og integrationsproces.
+description: "Hvad er krav og hvad er anbefaling? Få et indblik i, hvilke krav din løsning skal efterleve."
 lead: Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler, skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem og integrationsproces.
 ---
 

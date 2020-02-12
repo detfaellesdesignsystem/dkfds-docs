@@ -186,6 +186,7 @@ function search(query){
         }
     });
     let sortedResult = sort(result, query);
+    console.log("sortedResult", sortedResult);
     let endResult = [];
     sortedResult.forEach(function(page){
       if(page.score >= 50){

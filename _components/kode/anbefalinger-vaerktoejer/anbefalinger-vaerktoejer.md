@@ -70,7 +70,7 @@ Du skal huske på, at HTML5 er et format i udvikling, og at browseren ikke har e
 
 Det Fælles Designsystem anvender ”Vanilla JavaScript” (”Vanilla JS” eller ”Plain JS”) og ikke et JavaScript bibliotek som fx jQuery, der skaber afhængighed til tredjeparts leverandører. På den måde anvender designsystemet optimerede løsninger og undgår afhængighed af tredjepartsleverandører og deres eventuelle tekniske gæld.
 
-Du kan altså godt anvende en tredjeparts løsning (se listen over anbefalede udvidelser). Men ønsker du at udvikle en funktionskomponent, og at den skal kunne inkluderes i designsystemets kerne, så skal du udvikle den i Vanilla JS.
+Du kan altså godt anvende en tredjeparts løsning (se listen over anbefalede plugins). Men ønsker du at udvikle en funktionskomponent, og at den skal kunne inkluderes i designsystemets kerne, så skal du udvikle den i Vanilla JS.
 
 #### Læs mere om Javascript
 <ul class="nobullet-list">
@@ -158,7 +158,7 @@ Det er derfor et centralt princip i forhold til sidens præstation at hente så 
 
 Det skal på den anden side vejes op i mod de krav og forventninger brugerne har til en given løsning.
 
-Det Fælles Designsystem bestræber sig på at understøtte dette ved at alle udvidelser til designsystemets funktioner er tilvalg, som udvikleren skal foretage sig. Det giver dig mulighed for at vurdere den optimale sammenhæng mellem brugernes ønsker og krav, brug af ressourcer og sidens måde at præstere på.
+Det Fælles Designsystem bestræber sig på at understøtte dette ved at alle plugins til designsystemets funktioner er tilvalg, som udvikleren skal foretage sig. Det giver dig mulighed for at vurdere den optimale sammenhæng mellem brugernes ønsker og krav, brug af ressourcer og sidens måde at præstere på.
 
 ### Baseline for indlæsningshastighed
 
@@ -266,7 +266,7 @@ Du kan blandt andet arbejde med disse ting:
 <span class="bold">Sørg for, at ressourcerne bliver indlæst i en rækkefølge med de væsentlige processer først.</span>
 Begræns omfanget af CSS og JS, da de forhindrer browseren i at indlæse de næste trin af sidens kode (“render blocking”). Browseren skal læse og udføre (layoute) den komplette CSS og JS, før den kan frigøre ressourcer til at begynde at beregne selve siden. Alle andre processer står derfor stille, indtil browseren har udført CSS og JS.
 
-<span class="bold">Design siden, så det vigtigste indhold for brugeren bliver fremvist øverst.</bold>
+<span class="bold">Design siden, så det vigtigste indhold for brugeren bliver fremvist øverst.</span>
 Designet af siden har stor betydning. Det skal sikre, at det vigtigste indhold for brugerens videre færd bliver fremvist øverst på siden. Du bør derfor så vidt muligt placere alt andet, end det vigtigste indhold ”under folden”, så det bliver indlæst senere. Fx ved asynkron eller lazy indlæsning.
 
 <span class="bold">Serveren og browserens kommunikation:</span>

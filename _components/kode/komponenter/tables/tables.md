@@ -6,6 +6,7 @@ layout: styleguide
 type: component
 category: Kode_category
 subcategory: Kode
+description: "Dokumentation på implementering af tabeller."
 anchor: true
 subnav:
 - text: Uden ramme

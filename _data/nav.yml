@@ -69,6 +69,7 @@ Komponenter_category:
   - href: /komponenter/dato-felt/
   - href: /komponenter/drop-down/
   - href: /komponenter/faneblad/
+  - href: /komponenter/felter/
   - href: /komponenter/fil-upload/
   - href: /komponenter/footers/
   - href: /komponenter/formular/
@@ -85,15 +86,13 @@ Komponenter_category:
   - href: /komponenter/tilbage-link/
   - href: /komponenter/tables/
   - href: /komponenter/tags/
-  - href: /komponenter/tekstfelt/
   - href: /komponenter/textarea/
   - href: /komponenter/tjekboks/
   - href: /komponenter/tooltip/
   - href: /komponenter/trinindikatorer/
 
 Kode_category:
-- alternative_text: Implementering af DKFDS
-  href: /kode/
+- href: /kode/implementering/
 - href: /kode/komponenter/
   categorynav: 'Kode_Komponenter_category'
 - href: /kode/grid/
@@ -102,6 +101,8 @@ Kode_category:
 - href: /kode/eksempler-implementering/
 - href: /kode/print/
 - href: /kode/anbefalinger-vaerktoejer/
+- href: /kode/plugins/
+  categorynav: 'Plugins_category'
 
 #Left menu for komponent-category
 Kode_Komponenter_category:
@@ -113,6 +114,7 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/dato-felt/
 - href: /kode/komponenter/drop-down/
 - href: /kode/komponenter/faneblad/
+- href: /kode/komponenter/felter/
 - href: /kode/komponenter/fil-upload/
 - href: /kode/komponenter/footers/
 - href: /kode/komponenter/formular/
@@ -128,19 +130,18 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/tilbage-link/
 - href: /kode/komponenter/tables/
 - href: /kode/komponenter/tags/
-- href: /kode/komponenter/tekstfelt/
 - href: /kode/komponenter/textarea/
 - href: /kode/komponenter/tjekboks/
 - href: /kode/komponenter/tooltip/
 - href: /kode/komponenter/trinindikatorer/
 
 #Left menu for udvidelser-category
-Udvidelser_category:
-  - href: /udvidelser/datatables/
-  - href: /udvidelser/pikaday/
-  - href: /udvidelser/micromodal/
-  - href: /udvidelser/selectwoo-multiselect/
-  - href: /udvidelser/tippy/
+Plugins_category:
+  - href: /kode/plugins/datatables/
+  - href: /kode/plugins/pikaday/
+  - href: /kode/plugins/micromodal/
+  - href: /kode/plugins/selectwoo-multiselect/
+  - href: /kode/plugins/tippy/
 
 Eksempler_category:
   - href: /eksempler/selvbetjeningsloesninger/

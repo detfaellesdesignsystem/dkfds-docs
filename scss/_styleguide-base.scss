@@ -577,6 +577,7 @@ header #search-form-mobile{
 .component-preview figure.highlight{
   margin: 0px;
 }
+
 figure.highlight{
   border: $inner-border;
 }
@@ -876,17 +877,17 @@ code {
   .component-link{
     border-bottom: $inner-inner-border;
   }
+}
 
+.component-preview-code{
   figure.highlight{
     border: 0;
   }
-
 }
 
 .component-preview-tabnav .component-example{
   min-height: 330px;
 }
-
 
 .preview-buttons {
   position: absolute;

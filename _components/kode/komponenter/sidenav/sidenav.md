@@ -4,6 +4,7 @@ parentlink: /kode/komponenter/
 title: Sidenavigation
 layout: styleguide
 type: component
+description: "Dokumentation på implementering af sidenavigation."
 category: Kode_category
 subcategory: Kode
 ---

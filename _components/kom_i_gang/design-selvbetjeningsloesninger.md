@@ -5,6 +5,7 @@ redirect_from:
 layout: styleguide
 title: 12 punkter til designeren
 category: Kom_i_gang_category
+description: "Når du som designer skal sætte en selvbetjeningsløsning op, skal du være opmærksom på disse 12 punkter."
 subcategory: Kom i gang
 ---
 Når du som designer skal sætte en selvbetjeningsløsning op, skal du være opmærksom på følgende:

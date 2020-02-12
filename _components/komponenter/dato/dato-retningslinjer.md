@@ -15,7 +15,7 @@ Sætter brugeren i stand til at tilføje struktureret datoinformation.
 {:.h5}
 #### Anvendes ikke til
 
-Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/udvidelser/pikaday/">datepicker udvidelsen</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.
+Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/kode/plugins/pikaday/">datepicker pluginet</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.
 
 {:.h5}
 #### Vejledning

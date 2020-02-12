@@ -4,7 +4,8 @@ layout: styleguide
 title: Footers
 category: Komponenter_category
 subcategory: Komponenter
-lead: Du kan bruge en footer til at guide brugere videre, som når til sidens bund uden at finde det, de søgte.
+description: "Du kan bruge en footer til at guide brugere, som når til sidens bund videre."
+lead: Du kan bruge en footer til at guide brugere, som når til sidens bund videre.
 anchor: true
 subnav:
 - text: Tre kolonner

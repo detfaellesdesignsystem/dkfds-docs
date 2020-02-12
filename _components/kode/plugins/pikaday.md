@@ -1,11 +1,16 @@
 ---
-permalink: /udvidelser/pikaday/
+permalink: /kode/plugins/pikaday/
+redirect_from:
+- /udvidelser/pikaday/
 layout: styleguide
 type: component
-title: Datovælger (datepicker)
-category: Udvidelser_category
-subcategory: Udvidelser
+title: "Pikaday"
+parentlink: /kode/plugins/
+type: component
+category: Kode_category
+subcategory: Kode
 pikaday: true
+description: "Pikaday.js er et eksternt plugin, som leverer en datovælger eller datepicker, som gør det nemt at vælge en dato." 
 lead: Gør det muligt for brugeren, at vælge en dato ved klik på knap.
 alerts:
 - type: warning

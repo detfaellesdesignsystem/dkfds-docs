@@ -4,6 +4,7 @@ layout: styleguide
 title: Fonte og typografi
 category: Design_category
 subcategory: Design
+description: "Fonte og typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter."
 lead: "Fonte og typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter."
 anchor: true
 subnav:

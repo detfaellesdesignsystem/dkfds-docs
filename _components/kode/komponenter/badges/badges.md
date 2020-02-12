@@ -6,6 +6,7 @@ type: component
 title: Badges
 category: Kode_category
 subcategory: Kode 
+description: "Dokumentation på implementering af badge."
 anchor: true
 subnav:
 - text: Statusbadges

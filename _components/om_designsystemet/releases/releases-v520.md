@@ -12,6 +12,6 @@ headingClass: mb-0
 - Tilføjet mere afstand mellem links i footer
 - Overskriftstørrelser på mobil er blevet opdateret
 - Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/sidenav/#sidenavigation-med-information">sidenavigation</a> og <a href="/komponenter/trinindikatorer/#trinindikator-med-information">trinindikator</a>
-- Tilføjet eksempel på <a href="/udvidelser/datatables/#expandable-table">tabel i Datatable</a>
+- Tilføjet eksempel på <a href="/kode/plugins/datatables/#expandable-table">tabel i Datatable</a>
 <span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
 - Opdateret <a href="/komigang/tiludviklere/eksempler-implementering/">Eksempel på implementering i Angular</a>

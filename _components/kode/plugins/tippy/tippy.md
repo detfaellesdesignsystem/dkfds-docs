@@ -1,12 +1,14 @@
 ---
-permalink: /udvidelser/tippy/
-layout: styleguide
+permalink: /kode/plugins/tippy/
+redirect_from:
+- /udvidelser/tippy/
+title: "Tippy.js"
+parentlink: /kode/plugins/
 type: component
-title: Tippy (tooltip)
-category: Udvidelser_category
-subcategory: Udvidelser
+category: Kode_category
+subcategory: Kode
 tippy: true
-description: Tooltip bruges til at forklare en tekst yderligere eller give mere information, som ikke umiddelbart er nødvendig.
+description: "Tippy.js er et eksternt plugin, som bruges til at forklare en tekst yderligere eller give mere information, som ikke umiddelbart er nødvendig."
 lead: Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller fører musen hen over for at få en kort forklaring på indhold, ord eller begreber.
 alerts:
 - type: warning

@@ -1,7 +1,8 @@
-{% assign item_url = include.page.url | remove: "/" %}
-{% assign current_url = page.url | remove_first: "/" | remove_last: "/" | split: "/" | first  %}
+{% assign item_url = include.page.url %}
+{% assign item_url_size = item_url | size %}
+{% assign current_url =  page.url | slice: 0,item_url_size %}
 {% assign is_active = false %}
-{% if current_url contains item_url %}
+{% if item_url == current_url %}
   {% assign is_active = true %}
 {% endif %}
 

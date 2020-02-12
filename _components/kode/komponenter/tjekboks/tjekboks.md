@@ -6,6 +6,7 @@ layout: styleguide
 type: component
 category: Kode_category
 subcategory: Kode
+description: "Dokumentation på implementering af tjekbokse."
 anchor: true
 subnav:
 - text: Fejlbesked

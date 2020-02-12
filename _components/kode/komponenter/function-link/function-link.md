@@ -5,6 +5,7 @@ title: Funktionslink
 layout: styleguide
 type: component
 category: Kode_category
+description: "Dokumentation på implementering af funktions link."
 subcategory: Kode
 ---
 

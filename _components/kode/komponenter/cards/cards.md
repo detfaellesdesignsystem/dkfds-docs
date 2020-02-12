@@ -4,6 +4,7 @@ parentlink: /kode/komponenter/
 layout: styleguide
 type: component
 title: Cards
+description: "Dokumentation på implementering af cards."
 category: Kode_category
 subcategory: Kode
 anchor: true

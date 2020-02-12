@@ -5,6 +5,7 @@ title: Skjul og vis (Collapse)
 layout: styleguide
 type: component
 category: Kode_category
+description: "Dokumentation på implementering af Skjul og vis komponenten."
 subcategory: Kode
 ---
 

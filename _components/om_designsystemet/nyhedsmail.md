@@ -4,6 +4,7 @@ layout: styleguide
 title: Nyhedsmail
 category: Om_designsystemet_category
 subcategory: Om designsystemet
+description: "Tilmeld dig nyheder fra Det Fælles Designsystem"
 ---
    
 <div class="alert alert-success d-none" id="newsletter-message" role="alert">

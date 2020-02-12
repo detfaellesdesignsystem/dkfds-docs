@@ -12,7 +12,9 @@ title: Borders.html
               <div class="outer-border-example"></div>
           </div>
           <div class="col-12 col-md-6">
-              <pre>border: 1px solid #747474</pre>
+              <figure class="highlight">
+                  <pre><code class="language-scss" data-lang="scss">border: 1px solid #747474;</code></pre>
+              </figure>
           </div>
       </div>
       <div class="row">
@@ -23,7 +25,9 @@ title: Borders.html
               <div class="inner-border-example"></div>
           </div>
           <div class="col-12 col-md-6">
-              <pre>border: 1px solid #BFBFBF</pre>
+              <figure class="highlight">
+                  <pre><code class="language-scss" data-lang="scss">border: 1px solid #BFBFBF</code></pre>
+              </figure>
           </div>
       </div>
       <div class="row">
@@ -35,7 +39,9 @@ title: Borders.html
               <div class="inner-inner-border-example"></div>
           </div>
           <div class="col-12 col-md-6">
-              <pre>border: 1px solid #DCDCDC</pre>
+              <figure class="highlight">
+                  <pre><code class="language-scss" data-lang="scss">border: 1px solid #DCDCDC</code></pre>
+              </figure>
           </div>
       </div>
       <div class="row">
@@ -46,12 +52,16 @@ title: Borders.html
           </div>
           <div class="col-12 col-md-6 mt-4">
               <h4 class="h6 mb-0 mt-0">Virk tema:</h4>
-              <pre class="mt-0">border: 2px solid #004993</pre>
-              <h4 class="h6 mb-0 mt-0">Borger.dk tema:</h4>
-              <pre class="mt-0">border: 2px solid #3C5C22</pre>
+              <figure class="highlight">
+                  <pre><code class="language-scss" data-lang="scss">border: 2px solid #004993</code></pre>
+              </figure>
+              <h4 class="h6 mb-0 mt-2">Borger.dk tema:</h4>
+              <figure class="highlight">
+                  <pre><code class="language-scss" data-lang="scss">border: 2px solid #3C5C22</code></pre>
+              </figure>
           </div>
       </div>
-      <div class="row">
+      <div class="row mt-8">
           <div class="col-12 col-md-6">
               <h3 class="h5">Horisontal ruler</h3>
               <p class="form-hint"><code>hr</code> elementet har samme
@@ -59,7 +69,9 @@ title: Borders.html
               <hr />
           </div>
           <div class="col-12 col-md-6">
-              <pre>border-top: 1px solid #BFBFBF</pre>
+              <figure class="highlight">
+                  <pre><code class="language-scss" data-lang="scss">border-top: 1px solid #BFBFBF</code></pre>
+              </figure>
           </div>
       </div>
   </div>

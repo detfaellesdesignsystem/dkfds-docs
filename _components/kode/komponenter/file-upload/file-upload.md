@@ -6,6 +6,7 @@ layout: styleguide
 type: component
 category: Kode_category
 subcategory: Kode
+description: "Dokumentation på implementering af fil upload felt."
 ---
 
 {% include code/preview-box.html component="file-input" title="Eksempel på fil upload" %}

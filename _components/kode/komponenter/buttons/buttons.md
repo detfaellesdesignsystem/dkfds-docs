@@ -6,6 +6,7 @@ type: component
 title: Knapper
 category: Kode_category
 subcategory: Kode
+description: "Dokumentation på implementering af knapper."
 anchor: true
 tags: "primærknap,sekundærknap,tertiærknap"
 subnav:

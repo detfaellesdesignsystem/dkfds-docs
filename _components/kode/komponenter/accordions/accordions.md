@@ -6,6 +6,7 @@ type: component
 title: Accordions
 category: Kode_category
 subcategory: Kode
+description: "Dokumentation på implementering af accordions."
 anchor: true
 subnav:
 - text: Tilføj ramme

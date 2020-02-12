@@ -5,6 +5,7 @@ layout: styleguide
 type: component
 title: Cookiemeddelelse
 category: Kode_category
+description: "Dokumentation på implementering af cookiemeddelelse."
 subcategory: Kode
 
 ---

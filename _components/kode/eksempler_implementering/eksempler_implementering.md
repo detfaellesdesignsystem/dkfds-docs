@@ -26,11 +26,11 @@ I package.json tiløjes DKFDS og evt. også DKFDS­-plugins ind under dependenci
     "dkfds-plugins": "^5.0.0"
 {% endhighlight %}
 
-Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre brug af <a href="/udvidelser/">udvidelserne</a>.
+Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre brug af <a href="/kode/plugins/">plugins</a>.
 
 ### Implementer CSS
 
-I angular.json udpeges styling alt efter hvilket tema der skal benyttes, og hvilke udvidelser man gør brug af:
+I angular.json udpeges styling alt efter hvilket tema der skal benyttes, og hvilke plugins man gør brug af:
 
 
 {% highlight json %}

@@ -4,6 +4,7 @@ parentlink: /kode/komponenter/
 layout: styleguide
 type: element
 title: Tilbage link
+description: "Dokumentation på implementering af tilbage link."
 category: Kode_category
 subcategory: Kode
 ---

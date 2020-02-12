@@ -4,6 +4,7 @@ layout: styleguide
 title: Headers
 category: Komponenter_category
 subcategory: Komponenter
+description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
 lead: En header skal være identitetsgivende og sigende for siden og dens indhold. Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej.
 anchor: true
 subnav:

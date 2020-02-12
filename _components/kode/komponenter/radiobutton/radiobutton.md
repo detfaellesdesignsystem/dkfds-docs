@@ -5,6 +5,7 @@ title: Radioknap
 layout: styleguide
 type: component
 category: Kode_category
+description: "Dokumentation på implementering af radioknapper."
 subcategory: Kode
 anchor: true
 subnav:

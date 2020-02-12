@@ -4,6 +4,7 @@ redirect_from:
 - /komigang/tildesignere/designtjekliste/
 layout: styleguide
 title: "Tjekliste: Lev op til FDS"
+description: "En tjekliste med 10 punkter, der kan hjælpe dig med at leve op til FDS retningslinjer."
 category: Kom_i_gang_category
 subcategory: Kom i gang
 ---
@@ -39,9 +40,9 @@ Grid-systemet i det Fælles Designsystem er et 12 kolonne grid (desktop), præci
 
 For at sikre en konsistent oplevelse på tværs af løsninger og portaler, er det vigtigt at de enkelte komponenter opfører sig ens, således at brugeren ikke skal være nervøs for om en ellers velkendt komponent pludselig opfører sig helt anderledes og dermed skaber utryghed. <a href="/komponenter/">Reglerne for de enkelte komponenter er beskrevet i afsnittet komponenter</a>.
 
-<h2 class="h5">9. Udvidelser skal passe visuelt ind i designet</h2>
+<h2 class="h5">9. Plugins skal passe visuelt ind i designet</h2>
 
-Bruger du en tredjeparts udvidelse, skal du sikre at de visuelt passer ind i designsystemet. Det vil sige at du skal gøre brug af eksisterende grafiske regler og anvende former og farver som angivet i designsystemet. <a href="/udvidelser/">Vi peger på en række udvidelser og hvordan disse kan styles så de passer ind</a>.
+Bruger du en tredjeparts plugin, skal du sikre at de visuelt passer ind i designsystemet. Det vil sige at du skal gøre brug af eksisterende grafiske regler og anvende former og farver som angivet i designsystemet. <a href="/plugins/">Vi peger på en række plugins og hvordan disse kan styles så de passer ind</a>.
 
 <h2 class="h5">10. Brug et af de anviste layouts til din footer</h2>
 

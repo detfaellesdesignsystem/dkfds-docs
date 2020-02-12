@@ -4,6 +4,7 @@ title: Tooltip og popover
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
+description: "Dokumentation på implementering af tooltip."
 category: Kode_category
 subcategory: Kode
 anchor: true

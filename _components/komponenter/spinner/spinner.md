@@ -5,6 +5,7 @@ type: element
 title: Spinner
 category: Komponenter_category
 subcategory: Komponenter
+description: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 ---
 
