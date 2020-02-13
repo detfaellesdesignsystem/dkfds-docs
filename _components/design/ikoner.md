@@ -13,7 +13,7 @@ Nedenfor vises de ikoner som er inkluderet i designsystemet. Ikonerne er reserve
 
 <div class="alert alert-info alert--paragraph">
   <div class="alert-body">
-    <p class="alert-text">Bruges eller skabes andre ikoner end de viste skal de <a class="icon-link" href="https://material.io/design/iconography/system-icons.html#grid-keyline-shapes">passe ind visuelt<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og de må ikke ligne eller kunne forvirres med designsystemets andre ikoner.</p>
+    <p class="alert-text">Bruges eller skabes andre ikoner end de viste skal de <a class="icon-link" href="https://material.io/design/iconography/system-icons.html#grid-keyline-shapes">passe ind visuelt<svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og de må ikke ligne eller kunne forvirres med designsystemets andre ikoner.</p>
   </div>
 </div>
 

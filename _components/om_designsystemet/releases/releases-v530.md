@@ -9,7 +9,7 @@ headingClass: mb-0
 - <a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.
 - Mere padding i toppen af <a href="/komponenter/headers/#header-medium">navbar indeholdende funktionslink og overflow menu i header</a>.
 - Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.
-- <a href="/design/typography/#lister">Lister</a> har fået nyt udtryk.
+- <a href="/design/typografi/lister/">Lister</a> har fået nyt udtryk.
 - Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/headers/">header</a> samt <a href="/komponenter/sidenav/">sidenavigationen</a>.
 - Tilføjet mulighed for <a href="/komponenter/form-controls/#radioknap">hjælpetekst på radioknap</a>.
 - Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.

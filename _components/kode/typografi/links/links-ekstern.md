@@ -1,13 +1,16 @@
 ---
 type: component
-title: Eksternt link
-parent: typography
-order: 620
+title: "Eksternt link"
+parent: Links-kode
+order: 20
 component: external-link
 componentTitle: "Eksempel på eksternt link"
 ---
 
-### Implementering
+{:.h4}
+### HTML Struktur
+
+{% include code/syntax.html component="external-link" %}
 
 Du kan definere et eksternt link i koden ved at sætte klassen `icon-link` på `a` elementet. Derudover skal du tilføje SVG ikonet inline: `<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>`.
 

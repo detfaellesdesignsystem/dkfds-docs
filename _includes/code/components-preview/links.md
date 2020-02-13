@@ -3,70 +3,18 @@ permalink: /preview-components/links.html
 layout: example-contained 
 title: Links.html
 ---
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>
-                <a href="javascript:void(0);" class="">Standard link</a>
-            </p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #004D99</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>
-                <a href="javascript:void(0);" class="link-hover">Standard
-                    link, hover</a>
-            </p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #000040</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>
-                <a href="javascript:void(0);" class="link-active">Standard
-                    link, active</a>
-            </p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #004D99</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>
-                <a href="javascript:void(0);" class="link-visited">Standard
-                    link, visited</a>
-            </p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #800080</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>
-                <a href="javascript:void(0);" class="link-focus">Standard
-                    link, focus</a>
-            </p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #004D99;outline: 4px solid #747474;</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>Dette er et
-                <a href="javascript:void(0);" class="bold-link">fremhævet
-                    link</a>
-            </p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>font-weight: 700;</pre>
-        </div>
-    </div>
-</div>
+<p>
+    <a href="javascript:void(0);" class="">Standard link</a>
+</p>
+<p>
+    <a href="javascript:void(0);" class="link-hover">Standard link,
+        hover</a>
+</p>
+<p>
+    <a href="javascript:void(0);" class="link-visited">Standard link,
+        besøgt</a>
+</p>
+<p>
+    <a href="javascript:void(0);" class="link-focus">Standard link,
+        fokus</a>
+</p>

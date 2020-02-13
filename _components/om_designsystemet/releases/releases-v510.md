@@ -10,7 +10,7 @@ headingClass: mb-0
 - <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse komponent</a> er tilføjet i kernen.
 - <a href="/komponenter/tilbage-link/">Tilbage link</a> er tilføjet i kernen.
 <span class="form-hint mt-0">Bemærk, at <a href="/komponenter/tilbage-link/">Tilbage link</a> anbefales frem for <a href="/komponenter/buttons/#tilbage-knap">Tilbage knap</a>.</span>
-- Fokuskant tilføjet på #main-content ved fokus fra <a href="/design/typography/#skip-link">Skip link</a>.
+- Fokuskant tilføjet på #main-content ved fokus fra <a href="/komponenter/skip-link/">Skip link</a>.
 - <a href="/komponenter/badges/#statusbadges">Statusbadges</a> er tilføjet i kernen.
 - Fejl i overflow menu brugt i header fikset.
 <span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>

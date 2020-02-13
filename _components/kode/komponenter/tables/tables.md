@@ -54,7 +54,7 @@ For at fjerne den yderste ramme tilføj klassen `table--borderless` til `<table>
 
 {:#zebralinjer}
 ### Zebralinjer
-Man kan sætte zebralinjer på en tabel med klassen `table--zebra` på `<table`.
+Man kan sætte zebralinjer på en tabel med klassen `table--zebra` på `<table>`.
 
 
 {:#responsiv}

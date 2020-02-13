@@ -29,5 +29,3 @@ title: Cookie-message.html
         </div>
     </div>
 </div>
-
-<div class="container"></div>

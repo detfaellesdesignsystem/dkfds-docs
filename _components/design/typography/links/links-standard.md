@@ -1,17 +1,21 @@
 ---
 type: component
-title: Links
-parent: typography
-order: 600
-lead: Links anvendes til at linke rundt i løsningen og til at linke ud af løsningen til eksterne sites.
+title: ""
+parent: Links
+order: 10
+component: links
 ---
 
-Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.
+{:.h3}
+## Design
 
-Se også vores <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.
-
-{% include code/preview.html component="links" %}
-{% include code/accordion.html component="links" %}
+{:.table .table--borderless .table--responsive-headers}
+| Tekst                 | Tekstfarve | Understreget | Ramme                           |
+|-----------------------|------------|--------------|---------------------------------|
+| Standard link         | #004D99    | Ja           |                                 |
+| Standard link, hover  | #000040    | Ja           |                                 |
+| Standard link, besøgt | #800080    | Ja           |                                 |
+| Standard link, fokus  | #004D99    | Ja           | Tykkelse: 4px<br>Farve: #747474 |
 
 ### Retningslinjer
 
@@ -35,3 +39,6 @@ Hvis et link fører væk fra den aktuelle side og brugeren kan miste data eller 
 Brug links med omtanke i en selvbetjeningsløsning. Linker du for meget ud til eksterne websites, kan det virke forstyrrende for flowet og få brugeren ud af kontekst. Omvendt kan det give stor værdi for brugeren, hvis du linker ud til relevante informationer. Fx informationer, som understøtter brugerens vej gennem selvbetjeningsløsningen og/eller giver væsentlige input til, hvad brugeren skal indtaste i løsningen.
 
 Gør gerne brugeren opmærksom på, hvor det eksterne link fører hen, fx i en parentes som en del af linket, hvis det ikke fremgår af linkteksten.
+
+Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.
+

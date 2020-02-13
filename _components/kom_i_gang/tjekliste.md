@@ -14,11 +14,11 @@ Headerens to obligatoriske linjer - med portallogo, NemLog-inoplysninger, løsni
 
 <h2 class="h5">2. Fonten skal anvendes</h2>
 
-Den <a href="/design/typography/#fonte">angivne font</a> skal anvendes.
+Den <a href="/design/typografi/">angivne font</a> skal anvendes.
 
 <h2 class="h5">3. De typografiske regler skal følges</h2>
 
-Overskrifter, manchettekst, brødtekst, links, lister, linjelængde, linjehøjde og fremhævet tekst, skal følge de regler som er <a href="/design/typography">beskrevet i afsnittet om typografi</a>.
+Overskrifter, manchettekst, brødtekst, links, lister, linjelængde, linjehøjde og fremhævet tekst, skal følge de regler som er <a href="/design/typografi">beskrevet i afsnittet om typografi</a>.
 
 <h2 class="h5">4. De specificerede farver skal anvendes</h2>
 

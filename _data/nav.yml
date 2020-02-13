@@ -46,11 +46,24 @@ Til_udviklere_category:
 #Left menu for design-category
 Design_category:
 - href: /design/farver/
-- href: /design/typography/
+- href: /design/typografi/
+  categorynav: 'Typografi_category'
 - href: /design/grid/
 - href: /design/borders/
 - href: /design/ikoner/
 - href: /design/logoer/
+
+Typografi_category:
+  - href: /design/typografi/overskrifter/
+  - href: /design/typografi/tekst/
+  - href: /design/typografi/links/
+  - href: /design/typografi/lister/
+
+Kode_Typografi_category:
+- href: /kode/typografi/overskrifter/
+- href: /kode/typografi/tekst/
+- href: /kode/typografi/links/
+- href: /kode/typografi/lister/
 
 #Left menu for komponent-category
 Komponenter_category:
@@ -90,6 +103,8 @@ Kode_category:
 - href: /kode/komponenter/
   categorynav: 'Kode_Komponenter_category'
 - href: /kode/grid/
+- href: /kode/typografi/
+  categorynav: 'Kode_Typografi_category'
 - href: /kode/ikoner/
 - href: /kode/utilities/
 - href: /kode/eksempler-implementering/

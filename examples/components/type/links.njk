@@ -1,54 +1,7 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/type/links.njk" import link as link %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>{{ link('javascript:void(0);', '', 'Standard link','') }}</p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #004D99</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>{{ link('javascript:void(0);', 'link-hover', 'Standard link, hover','') }}</p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #000040</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>{{ link('javascript:void(0);', 'link-active', 'Standard link, active','') }}</p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #004D99</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>{{ link('javascript:void(0);', 'link-visited', 'Standard link, visited','') }}</p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #800080</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>{{ link('javascript:void(0);', 'link-focus', 'Standard link, focus','') }}</p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>color: #004D99;outline: 4px solid #747474;</pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>Dette er et {{ link('javascript:void(0);', 'bold-link', 'fremhævet link','') }}</p>
-        </div>
-        <div class="col-12 col-md-6">
-            <pre>font-weight: 700;</pre>
-        </div>
-    </div>
-</div>
-
+<p>{{ link('javascript:void(0);', '', 'Standard link','') }}</p>
+<p>{{ link('javascript:void(0);', 'link-hover', 'Standard link, hover','') }}</p>
+<p>{{ link('javascript:void(0);', 'link-visited', 'Standard link, besøgt','') }}</p>
+<p>{{ link('javascript:void(0);', 'link-focus', 'Standard link, fokus','') }}</p>
