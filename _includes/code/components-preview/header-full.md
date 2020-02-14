@@ -9,7 +9,7 @@ title: Header-full.html
     <div class="portal-header">
         <div class="container portal-header-inner">
             <!-- Start: Portallogo -->
-            <a href="#" class="log"><span
+            <a href="#" class="logo"><span
                     class="d-none d-print-block">Portalnavn</span></a>
             <!-- Slut: Portallogo -->
 

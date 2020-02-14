@@ -280,4 +280,16 @@ let setScreenshots = function(){
             }
         }
     }
+
+    if(document.getElementsByTagName('body')[0].classList.contains('page-footers') || document.getElementsByTagName('body')[0].classList.contains('page-headers') || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
+        let screenshots = document.querySelectorAll('.component-example .screenshot');
+        for(let i = 0; i < screenshots.length; i++){
+            let url = screenshots[i].getAttribute('href').split('/');
+            console.log('url', url);
+            let componentName = url[url.length-1].replace('.html', '');
+            let filename = getThemeCookie()+'-'+componentName+'.PNG';
+            let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';
+            screenshots[i].innerHTML = image;
+        }
+    }
 };

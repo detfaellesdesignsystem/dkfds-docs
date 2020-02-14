@@ -1,5 +1,5 @@
 ---
-permalink: /kode/komponenter/radiobutton/
+permalink: /kode/komponenter/radioknap/
 parentlink: /kode/komponenter/
 title: Radioknap
 layout: styleguide
@@ -23,8 +23,8 @@ subnav:
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/radiobutton/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/radiobutton/">Eksempler</a></li>
+    <li><a href="/komponenter/radioknap/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/radioknap/">Eksempler</a></li>
 </ul>
 
 ## Installation

@@ -877,6 +877,9 @@ code {
   .component-link{
     border-bottom: $inner-inner-border;
   }
+  .component-code-link{
+    border-top: $inner-inner-border;
+  }
 }
 
 .component-preview-code{

@@ -81,10 +81,10 @@ Komponenter_category:
   - href: /komponenter/formular/
   - href: /komponenter/funktionslink/
   - href: /komponenter/headers/
-  - href: /komponenter/buttons/
+  - href: /komponenter/knapper/
   - href: /komponenter/modal/
   - href: /komponenter/overflowmenu/
-  - href: /komponenter/radiobutton/
+  - href: /komponenter/radioknap/
   - href: /komponenter/sidenav/
   - href: /komponenter/skip-link/
   - href: /komponenter/collapse/
@@ -129,9 +129,9 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/formular/
 - href: /kode/komponenter/funktionslink/
 - href: /kode/komponenter/headers/
-- href: /kode/komponenter/buttons/
+- href: /kode/komponenter/knapper/
 - href: /kode/komponenter/overflowmenu/
-- href: /kode/komponenter/radiobutton/
+- href: /kode/komponenter/radioknap/
 - href: /kode/komponenter/sidenav/
 - href: /kode/komponenter/skip-link/
 - href: /kode/komponenter/collapse/

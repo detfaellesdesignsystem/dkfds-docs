@@ -7,10 +7,16 @@ var themes = ["virk", "borgerdk"];
 
 var exampleUrls = [
     {"url": "/preview-components/header.html", "filename": "header.png", "width": 992, "height": 322 },
-    {"url": "/preview-components/footer-simple.html", "filename": "footer-simple.png", "width": 1017, "height": 164 },
+    {"url": "/preview-components/header-simple.html", "filename": "header-simple.png", "width": 992, "height": 158 },
+    {"url": "/preview-components/header-medium.html", "filename": "header-medium.png", "width": 992, "height": 262 },
+    {"url": "/preview-components/header-full.html", "filename": "header-full.png", "width": 992, "height": 322 },
+    {"url": "/preview-components/footer-simple.html", "filename": "footer-simple.png", "width": 1017, "height": 184 },
+    {"url": "/preview-components/footer-three-columns.html", "filename": "footer-three-columns.png", "width": 1017, "height": 448 },
+    {"url": "/preview-components/footer-four-columns.html", "filename": "footer-four-columns.png", "width": 1017, "height": 352 },
+    {"url": "/preview-components/footer-complex.html", "filename": "footer-complex.png", "width": 1017, "height": 376 },
+    {"url": "/preview-components/footer-logo.html", "filename": "footer-logo.png", "width": 1017, "height": 352 },
     {"url": "/preview-components/cookie-message.html", "filename": "cookie-message.png", "width": 771, "height": 294 }
 ];
-
 
 (async () => {
 

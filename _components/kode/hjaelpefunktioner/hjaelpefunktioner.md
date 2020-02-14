@@ -9,6 +9,10 @@ type: component
 category: Kode_category
 subcategory: Kode
 description: Du kan bruge hjælpeklasser til at skræddersy dit indhold i forhold til placering, afstande, farver, bredde og visning
+tags:
+- text-align
+- center
+- text-align:center
 anchor: true 
 subnav:
 - text: Responsive hjælpeklasser

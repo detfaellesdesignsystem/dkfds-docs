@@ -43,7 +43,7 @@ Overskriftstyperne har to formål:
 | Overskrift 5 | IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
 | Overskrift 6 | IBM Plex Sans | 13px            | 500                          | #1a1a1a    |
 
-{:.h3 #retningslinjer}
+{:#felt--og-tabeloverskrifter-label-og-th}
 ## Retningslinjer
 
 Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.
@@ -66,6 +66,7 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
     <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
+{:.h3 #retningslinjer}
 ## Felt- og tabeloverskrifter (label og th)
 
 {:.font-lead}

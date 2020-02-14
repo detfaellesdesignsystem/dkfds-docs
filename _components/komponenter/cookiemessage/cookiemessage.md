@@ -9,4 +9,4 @@ description: "Cookiemeddelelsen vises midt på siden, og blokerer indhold indtil
 lead: "Cookiemeddelelsen vises midt på siden, og blokerer indhold indtil man har taget stilling til brug af cookies."
 ---
 
-{% include code/preview-iframe.html component="cookie-message" %}
+{% include code/preview-image.html component="cookie-message" code="/kode/komponenter/cookiemeddelelse/" %}

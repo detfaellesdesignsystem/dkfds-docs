@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/radiobutton/
+permalink: /komponenter/radioknap/
+redirect_from:
+- /komponenter/radiobutton/
 layout: styleguide
 type: component
 title: Radioknap

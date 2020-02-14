@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/buttons/
+permalink: /komponenter/knapper/
+redirect_from:
+- /komponenter/buttons/
 layout: styleguide
 type: element
 title: Knapper

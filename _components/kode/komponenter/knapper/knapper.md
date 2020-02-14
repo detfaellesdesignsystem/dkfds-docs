@@ -1,5 +1,5 @@
 ---
-permalink: /kode/komponenter/buttons/
+permalink: /kode/komponenter/knapper/
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
@@ -28,8 +28,8 @@ subnav:
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/buttons/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/buttons/">Eksempler</a></li>
+    <li><a href="/komponenter/knapper/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/knapper/">Eksempler</a></li>
 </ul>
 
 ## Installation
