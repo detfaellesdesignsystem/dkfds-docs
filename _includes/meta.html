@@ -1,6 +1,10 @@
 {% assign title = site.title %}
 {% if page.title and page.title != title -%}
+  {% if page.url contains "/kode/komponenter/" or page.url contains "/kode/grid/" or page.url contains "/kode/typografi/" or page.url contains "/kode/ikoner/" or page.url contains "/kode/ikoner/" %}
+  {% assign title = page.title | append: ' (Kode)' | append: ' | ' | append: title %}
+  {% else %}
   {% assign title = page.title | append: ' | ' | append: title %}
+  {% endif %}
 {% endif %}
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title | xml_escape }}">
