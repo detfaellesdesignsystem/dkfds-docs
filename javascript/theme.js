@@ -286,7 +286,7 @@ let setScreenshots = function(){
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('/');
             let componentName = url[url.length-1].replace('.html', '');
-            let filename = getThemeCookie()+'-'+componentName+'.PNG';
+            let filename = getThemeCookie()+'-'+componentName+'.png';
             let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';
             screenshots[i].innerHTML = image;
         }
