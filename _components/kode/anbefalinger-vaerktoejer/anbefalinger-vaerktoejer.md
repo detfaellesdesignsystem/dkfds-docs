@@ -275,7 +275,7 @@ En server sender ~14kb data (10 TCP pakker) ved første forespørgsel fra og ska
 <span class="bold">Det kan du gøre:</span>
 - Du kan fx placere den vigtigste CSS inline i head og de mindre vigtige deklarationer som linket ressource sammen med JS før `</body>`. Vigtige grafikker ”over folden” kan være base64 og andre inline .svg. 
 
-I Det Fælles Designsystem har vi udvalgt ikoner fra Material Design i .svg (Scalable Vector Graphic) format. De ligger som en samlet “pakke” af symbolefter body. På denne måde sparer vi et større antal forespørgsler for den enkelte side. Koden for ikoner fylder dermed ganske lidt.
+I Det Fælles Designsystem har vi udvalgt ikoner fra Material Design i .svg (Scalable Vector Graphic) format. De ligger som en samlet “pakke” af symbol efter body. På denne måde sparer vi et større antal forespørgsler for den enkelte side. Koden for ikoner fylder dermed ganske lidt.
 
 Da inline CSS ikke caches af browseren, er det en balanceakt at placere tilstrækkeligt CSS inline til, at det gør en forskel og samtidig ikke så meget, at brugeren skal hente den samme store pakke på hver eneste side.
 
