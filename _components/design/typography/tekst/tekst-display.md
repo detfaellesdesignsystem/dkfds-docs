@@ -3,12 +3,11 @@ type: component
 title: "Stor tekst"
 parent: Tekst
 order: 40
-component: displaytext
 lead: Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord.
+component: displaytext
 componentLink: false
+componentCode: "/kode/typografi/tekst/#stor-tekst"
 ---
-
-<a href="/kode/typografi/tekst/#stor-tekst"><svg class="icon-svg inline-svg mr-2" focusable="false" aria-hidden="true"><use xlink:href="#code-tags"></use></svg>Se dokumentationen til udviklere</a>
 
 ### Design
 

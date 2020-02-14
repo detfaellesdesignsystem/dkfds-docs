@@ -6,9 +6,8 @@ order: 30
 lead: Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlbeskeder.
 component: helptext
 componentLink: false
+componentCode: "/kode/typografi/tekst/#hjælpetekst-og-fejlbeskeder"
 ---
-
-<a href="/kode/typografi/tekst/#hjælpetekst-og-fejlbeskeder"><svg class="icon-svg inline-svg mr-2" focusable="false" aria-hidden="true"><use xlink:href="#code-tags"></use></svg>Se dokumentationen til udviklere</a>
 
 ### Design
 

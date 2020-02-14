@@ -26,9 +26,7 @@ Overskriftstyperne har to formål:
 - De er sidens indholdsfortegnelse for skærmlæsere.
 - De skaber et visuelt hierarki og gør siden overskuelig ved at inddele den i afsnit og underafsnit.
 
-{% include code/preview-iframe.html component="headings" %}
-
-<a href="/kode/typografi/overskrifter/"><svg class="icon-svg inline-svg mr-2" focusable="false" aria-hidden="true"><use xlink:href="#code-tags"></use></svg>Se dokumentationen til udviklere</a>
+{% include code/preview-iframe.html component="headings" code="/kode/typografi/overskrifter/" %}
 
 {:.h3}
 ## Design
@@ -43,7 +41,7 @@ Overskriftstyperne har to formål:
 | Overskrift 5 | IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
 | Overskrift 6 | IBM Plex Sans | 13px            | 500                          | #1a1a1a    |
 
-{:#felt--og-tabeloverskrifter-label-og-th}
+{:#retningslinjer}
 ## Retningslinjer
 
 Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.
@@ -66,7 +64,7 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
     <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-{:.h3 #retningslinjer}
+{:.h3 #felt--og-tabeloverskrifter-label-og-th}
 ## Felt- og tabeloverskrifter (label og th)
 
 {:.font-lead}
@@ -75,8 +73,8 @@ I eksemplet nedenfor viser vi, hvordan overskrifter til felter og overskrifter i
 {% include code/preview.html component="labels" %}
 
 {:.nobullet-list}
-- <a href="/komponenter/felter/"><svg class="icon-svg inline-svg mr-2" focusable="false" aria-hidden="true"><use xlink:href="#code-tags"></use></svg>Se dokumentationen om felter til udviklere</a>
-- <a href="/komponenter/tables/"><svg class="icon-svg inline-svg mr-2" focusable="false" aria-hidden="true"><use xlink:href="#code-tags"></use></svg>Se dokumentationen om tabeller til udviklere</a>
+- <a href="/komponenter/felter/">Se dokumentationen om felter til udviklere</a>
+- <a href="/komponenter/tables/">Se dokumentationen om tabeller til udviklere</a>
 
 {:.h4}
 ### Design

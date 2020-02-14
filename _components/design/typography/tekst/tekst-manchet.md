@@ -6,9 +6,8 @@ order: 10
 lead: "Du kan bruge manchettekst til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne."
 component: lead_paragraph
 componentLink: false
+componentCode: "/kode/typografi/tekst/#manchet-tekst"
 ---
-
-<a href="/kode/typografi/tekst/#manchet-tekst"><svg class="icon-svg inline-svg mr-2" focusable="false" aria-hidden="true"><use xlink:href="#code-tags"></use></svg>Se dokumentationen til udviklere</a>
 
 ### Design
 
