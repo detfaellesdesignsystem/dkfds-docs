@@ -10,7 +10,7 @@ description: "Hvad er krav og hvad er anbefaling? Få et indblik i, hvilke krav 
 lead: Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler, skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem og integrationsproces.
 ---
 
-<a href="/komigang/krav/borgerdk-virk">Når du skal på borger.dk og Virk - integrationsproces og designkrav</a>
+<a href="/komigang/krav/borgerdk-virk/">Når du skal på borger.dk og Virk - integrationsproces og designkrav</a>
 
 Kravet om anvendelse af det Fælles Designsystem gælder for obligatorisk digitale (borgerrettede) selvbetjeningsløsninger, der skal på borger.dk og alle virksomhedsrettede selvbetjeningsløsninger, der skal på Virk.
 

@@ -16,5 +16,5 @@ headingClass: mb-0
 <span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Fikset print af modal fra iPhone.
 <span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/67" class="icon-link">Github issue #67<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Opdateret beskrivelse af implementering af DKFDS under <a href="/komigang/tiludviklere/">Til udviklere</a>.
-<span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/komigang/tiludviklere/#temahaandtering">temahåndtering</a>.</span>
+- Opdateret beskrivelse af implementering af DKFDS under <a href="/kode/implementering/">Til udviklere</a>.
+<span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/kode/implementering/#temahaandtering">temahåndtering</a>.</span>

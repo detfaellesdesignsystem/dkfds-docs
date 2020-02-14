@@ -12,7 +12,7 @@ headingClass: h3
 
 Tippy.js er et tredjeparts bibliotek, som du selv skal hente ind i dit projekt. Vi har lavet et tema i dkfds-plugins pakken, som kan lægges ind over således at pluginnet følger det visuelle udtryk i Det Fælles Designsystem.
 
-Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a>.
+Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se siden <a href="/kode/implementering/">Implementering af DKFDS</a>.
 
 Stien til tema-filen du skal inkludere for Tippy.js er henholdsvis `[path-to-plugins-project]/dist/css/dkfds-tippy-theme.standalone.min.css` for CSS filen og `~dkfds-plugins/dist/scss/dkfds-tippy-theme` for SCSS filen.
 

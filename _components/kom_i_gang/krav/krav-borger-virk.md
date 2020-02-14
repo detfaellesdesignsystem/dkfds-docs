@@ -24,7 +24,7 @@ Brug eller imiter det Fælles Designsystem.
 
 - Løsningen skal <a href="/omdesignsystemet/visuelledesign/">tematiseres</a>, så den passer visuelt ind på portalen den skal vises på
 - Der skal være en <a href="/komponenter/headers/">header</a>, der er bygget op som anvist i designsystemet
-- Du skal anvende/efterligne <a href="/komigang/tiludviklere/">stylesheetet</a> som anvist i designsystemet
+- Du skal anvende/efterligne <a href="/kode/implementering/">stylesheetet</a> som anvist i designsystemet
 - <a href="/komponenter/">Komponenter</a> og <a href="/kode/plugins/">plugins</a> skal være anvendt som anvist i designsystemet
 
 Det anbefales desuden, at løsningen har en <a href="/komponenter/footers/">footer</a>, der er bygget som anvist i designsystemet.

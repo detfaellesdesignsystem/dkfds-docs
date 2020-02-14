@@ -18,11 +18,11 @@ Den <a href="/design/typografi/">angivne font</a> skal anvendes.
 
 <h2 class="h5">3. De typografiske regler skal følges</h2>
 
-Overskrifter, manchettekst, brødtekst, links, lister, linjelængde, linjehøjde og fremhævet tekst, skal følge de regler som er <a href="/design/typografi">beskrevet i afsnittet om typografi</a>.
+Overskrifter, manchettekst, brødtekst, links, lister, linjelængde, linjehøjde og fremhævet tekst, skal følge de regler som er <a href="/design/typografi/">beskrevet i afsnittet om typografi</a>.
 
 <h2 class="h5">4. De specificerede farver skal anvendes</h2>
 
-Alt efter om din selvbetjeningsløsning skal på borger.dk eller Virk, skal din løsning bruge borger.dks eller Virks primærfarve. Der skal bruges hvid som generel baggrundsfarve. Derudover skal din løsning <a href="/design/farver">bruge farverne som anvist</a> på de forskellige komponenter.
+Alt efter om din selvbetjeningsløsning skal på borger.dk eller Virk, skal din løsning bruge borger.dks eller Virks primærfarve. Der skal bruges hvid som generel baggrundsfarve. Derudover skal din løsning <a href="/design/farver/">bruge farverne som anvist</a> på de forskellige komponenter.
 
 <h2 class="h5">5. Hjørner, streger og skygger skal følge retningslinjerne</h2>
 

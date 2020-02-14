@@ -5,7 +5,7 @@ parent: colors
 order: 10
 ---
 
-Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af <a href="/komigang/tiludviklere#temahaandtering">temahåndtering i koden</a>.
+Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af <a href="/kode/implementering/#temahaandtering">temahåndtering i koden</a>.
 
 <!-- new setup start -->
 <h3 class="h4">Primærfarver for borger.dk</h3>

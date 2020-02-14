@@ -27,7 +27,7 @@ component: date-input-datepicker
 
 ### Implementering
 
-Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se under siden <a href="/omdesignsystemet/tiludviklere/">Til udviklere</a>
+Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se <a href="/kode/implementering/">implementeringaf DKFDS</a>.
 
 Stien til filen du skal inkludere for Pikaday er henholdsvis `[path-to-plugins-project]/dist/css/dkfds-pikaday-theme.standalone.min.css` for CSS filen og `~dkfds-plugins/dist/scss/dkfds-pikaday-theme` for SCSS filen.
 

@@ -107,7 +107,8 @@ title: Example-flytning-page-4.html
 
             <ul class='sidenav-list'>
                 <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-1'>
+                    <a
+                        href='/pages/eksempler/digital-flytning/flytning-1/'>
                         1. Oversigt
                         <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
@@ -115,7 +116,8 @@ title: Example-flytning-page-4.html
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-2'>
+                    <a
+                        href='/pages/eksempler/digital-flytning/flytning-2/'>
                         2. Personer
                         <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
@@ -123,7 +125,8 @@ title: Example-flytning-page-4.html
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-3'>
+                    <a
+                        href='/pages/eksempler/digital-flytning/flytning-3/'>
                         3. Adresse
                         <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
@@ -131,12 +134,14 @@ title: Example-flytning-page-4.html
                     </a>
                 </li>
                 <li class='active current'>
-                    <a href='/pages/eksempler/digital-flytning/flytning-4'>
+                    <a
+                        href='/pages/eksempler/digital-flytning/flytning-4/'>
                         4. Særlig flytning
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-5'>
+                    <a
+                        href='/pages/eksempler/digital-flytning/flytning-5/'>
                         5. Lægevalg
                     </a>
                 </li>

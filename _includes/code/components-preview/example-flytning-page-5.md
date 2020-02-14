@@ -144,7 +144,8 @@ title: Example-flytning-page-5.html
                     </a>
                 </li>
                 <li>
-                    <a href='/pages/eksempler/digital-flytning/flytning-4'>
+                    <a
+                        href='/pages/eksempler/digital-flytning/flytning-4/'>
                         4. Særlig flytning
                         <span class='sidenav-icon' aria-label='Gennemført'>
                             <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#check'></use></svg>
@@ -152,7 +153,8 @@ title: Example-flytning-page-5.html
                     </a>
                 </li>
                 <li class='active current'>
-                    <a href='/pages/eksempler/digital-flytning/flytning-5'>
+                    <a
+                        href='/pages/eksempler/digital-flytning/flytning-5/'>
                         5. Lægevalg
                     </a>
                 </li>
@@ -205,7 +207,7 @@ title: Example-flytning-page-5.html
 
     <nav class="page-navigation d-print-none">
         <a href="#" class="button button-primary">Næste</a>
-        <a href='/pages/eksempler/digital-flytning/flytning-4'
+        <a href='/pages/eksempler/digital-flytning/flytning-4/'
             class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>

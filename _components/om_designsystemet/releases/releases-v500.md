@@ -7,7 +7,7 @@ headingClass: mb-0
 <p class="small-text mt-0">22-10-2019</p>
 
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen `DKFDS.init()` på hver side.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/komigang/tiludviklere/">implementering af DKFDS til udviklere</a>.</span>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/kode/implementering/">implementering af DKFDS til udviklere</a>.</span>
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/komponenter/sidenav/">Sidenavigationen</a> har fået nyt design.
