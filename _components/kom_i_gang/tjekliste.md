@@ -42,7 +42,7 @@ For at sikre en konsistent oplevelse på tværs af løsninger og portaler, er de
 
 <h2 class="h5">9. Plugins skal passe visuelt ind i designet</h2>
 
-Bruger du en tredjeparts plugin, skal du sikre at de visuelt passer ind i designsystemet. Det vil sige at du skal gøre brug af eksisterende grafiske regler og anvende former og farver som angivet i designsystemet. <a href="/plugins/">Vi peger på en række plugins og hvordan disse kan styles så de passer ind</a>.
+Bruger du en tredjeparts plugin, skal du sikre at de visuelt passer ind i designsystemet. Det vil sige at du skal gøre brug af eksisterende grafiske regler og anvende former og farver som angivet i designsystemet. <a href="/kode/plugins/">Vi peger på en række plugins og hvordan disse kan styles så de passer ind</a>.
 
 <h2 class="h5">10. Brug et af de anviste layouts til din footer</h2>
 

@@ -21,15 +21,15 @@ Support kan findes via <a href="https://github.com/detfaellesdesignsystem/dkfds-
     <li><a href="/kode/komponenter/cookiemeddelelse/" class="bold-link">Cookiemeddelelse</a></li>
     <li><a href="/kode/komponenter/dato-felt/" class="bold-link">Datoangivelse</a></li>
     <li><a href="/kode/komponenter/drop-down/" class="bold-link">Dropdown-menu</a></li>
-    <li><a href="/kode/komponenter/tabnav/" class="bold-link">Faneblade</a></li>
+    <li><a href="/kode/komponenter/faneblad/" class="bold-link">Faneblade</a></li>
     <li><a href="/kode/komponenter/fil-upload//" class="bold-link">Fil upload</a></li>
     <li><a href="/kode/komponenter/footers/" class="bold-link">Footers</a></li>
     <li><a href="/kode/komponenter/formular/" class="bold-link">Formular</a></li>
     <li><a href="/kode/komponenter/funktionslink/" class="bold-link">Funktionslink</a></li>
     <li><a href="/kode/komponenter/headers/" class="bold-link">Headers</a></li>
-    <li><a href="/kode/komponenter/buttons/" class="bold-link">Knapper</a></li>
+    <li><a href="/kode/komponenter/knapper/" class="bold-link">Knapper</a></li>
     <li><a href="/kode/komponenter/overflowmenu/" class="bold-link">Overflow menu</a></li>
-    <li><a href="/kode/komponenter/radiobutton/" class="bold-link">Radioknap</a></li>
+    <li><a href="/kode/komponenter/radioknap/" class="bold-link">Radioknap</a></li>
     <li><a href="/kode/komponenter/sidenav/" class="bold-link">Sidenavigation</a></li>
     <li><a href="/kode/komponenter/skip-link/" class="bold-link">Skip-link</a></li>
     <li><a href="/kode/komponenter/collapse/" class="bold-link">Skjul og vis (Collapse)</a></li>
