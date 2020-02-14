@@ -7,6 +7,7 @@ subcategory: Design
 type: component
 layout: styleguide
 anchor: true
+description: ""
 subnav:
 - text: Manchet tekst
   href: "#manchet-tekst"

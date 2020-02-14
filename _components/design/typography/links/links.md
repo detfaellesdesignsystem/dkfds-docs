@@ -1,6 +1,7 @@
 ---
 permalink: /design/typografi/links/
 title: Links
+description: ""
 parentlink: /design/typografi/
 category: Design_category
 subcategory: Design

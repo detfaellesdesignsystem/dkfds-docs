@@ -7,3 +7,5 @@ subcategory: Kode
 type: component
 layout: styleguide
 ---
+
+{% include child-components.html parent='Lister-kode' %}

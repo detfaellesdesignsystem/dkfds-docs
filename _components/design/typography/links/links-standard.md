@@ -4,6 +4,7 @@ title: ""
 parent: Links
 order: 10
 component: links
+componentLink: false
 ---
 
 {:.h3}
