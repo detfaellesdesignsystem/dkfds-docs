@@ -47,7 +47,7 @@ subnav:
 
 {% include code/syntax.html component="checkbox-small" link="true" %}
 
-Vær opmærksom på, at vi anbefaler, at man bruger den store tjekbox.
+Vær opmærksom på, at vi anbefaler, at man bruger den store tjekboks.
 
 {:#skjult-indhold-collapse}
 ### Skjult indhold (Collapse)
