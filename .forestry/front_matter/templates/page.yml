@@ -33,3 +33,5 @@ fields:
   type: tag_list
   default: []
   label: tags
+pages:
+- _components/design/typography/typography.md

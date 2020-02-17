@@ -1,15 +1,18 @@
 ---
-permalink: /design/typografi/
+permalink: "/design/typografi/"
 redirect_from:
-- /design/typography/
+- "/design/typography/"
 layout: styleguide
 title: Typografi
 category: Design_category
 subcategory: Design
 type: component
-description: "Typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter."
+description: Typografi omhandler de valgte fonte, samt formatering og brug af tekst
+  og overskrifter.
 tags:
-lead: "Typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter."
+- IBM
+lead: Typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter.
+
 ---
 ## Fonte
 
