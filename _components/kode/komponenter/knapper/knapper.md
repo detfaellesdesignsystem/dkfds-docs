@@ -8,7 +8,10 @@ category: Kode_category
 subcategory: Kode
 description: "Dokumentation på implementering af knapper."
 anchor: true
-tags: "primærknap,sekundærknap,tertiærknap"
+tags:
+- "primærknap"
+- "sekundærknap"
+- "tertiærknap"
 subnav:
 - text: Primærknap
   href: '#primærknap'

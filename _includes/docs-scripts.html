@@ -13,7 +13,7 @@ let searchIndex = [
 "category": "{{ _page.category }}",
 "subcategory": "{{ _page.subcategory }}",
 "lead": "{{ _page.lead }}",
-"tags": "{{ _page.tags }}",
+"tags": [{{ _page.tags | join: "','" | prepend: "'" | append: "'"}}],
 "layout": "{{ _page.layout }}",
 "content" : "{{ _page.content | strip_html | strip_newlines | escape }}",
 "description" : "{{ _page.description }}",

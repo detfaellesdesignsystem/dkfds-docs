@@ -12,6 +12,8 @@ subnav:
   href: "#eksternt-link"
 - text: Footer link
   href: "#footer-link"
+description: ""
+tags:
 ---
 
 {% include child-components.html parent='Links-kode' %}

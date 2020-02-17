@@ -4,7 +4,9 @@ redirect_from:
 - /komigang/tiludviklere/
 layout: styleguide
 title: Implementering af DKFDS
-tags: "installation,implementering"
+tags: 
+- "installation"
+- "implementering"
 category: Kode_category
 subcategory: Kode
 description: "Sådan kommer du i gang med FDS i dit projekt. Værd at læse for alle udviklere."

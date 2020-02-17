@@ -5,12 +5,12 @@ parentlink: /design/typografi/
 description: "Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning."
 lead: "Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning."
 tags:
-- h1
-- h2
-- h3
-- h4
-- h5
-- h6
+- "h1"
+- "h2"
+- "h3"
+- "h4"
+- "h5"
+- "h6"
 category: Design_category
 type: component
 subcategory: Design

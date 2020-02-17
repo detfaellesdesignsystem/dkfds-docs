@@ -151,7 +151,8 @@ function matchSearch(page, query){
     let syns = searchWords(query);
     for(let w in syns) {
         let word = syns[w];
-        if (page.title.toLowerCase().indexOf(word.toLowerCase()) >= 0 || page.lead.toLowerCase().indexOf(word.toLowerCase()) >= 0 || page.tags.toLowerCase().indexOf(word.toLowerCase()) >= 0 || page.content.toLowerCase().indexOf(word.toLowerCase()) >= 0) {
+        let tags = page.tags.join(',').toLowerCase().split(',');
+        if (page.title.toLowerCase().indexOf(word.toLowerCase()) >= 0 || page.lead.toLowerCase().indexOf(word.toLowerCase()) >= 0 || tags.indexOf(word.toLowerCase()) >= 0 || page.content.toLowerCase().indexOf(word.toLowerCase()) >= 0) {
             matched = true;
         } else {
             let phrasesMatched = [];
@@ -227,11 +228,11 @@ function sort(result, query){
 
         // match tags
         matched.tags = false;
-        if (matchForString(page.tags.split(","), query)) {
+        if (matchForString(page.tags, query)) {
             matched.tags = true;
         } else{
             for (let s in syns) {
-                if (matchForString(page.tags.split(","), syns[s])) {
+                if (matchForString(page.tags, syns[s])) {
                     matched.tags = true;
                 }
             }

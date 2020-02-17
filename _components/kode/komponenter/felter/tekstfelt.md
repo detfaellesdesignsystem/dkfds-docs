@@ -5,7 +5,7 @@ title: Felter
 layout: styleguide
 type: component
 category: Kode_category
-tags: ""
+tags:
 subcategory: Kode
 description: "Dokumentation på implementering af felter."
 anchor: true

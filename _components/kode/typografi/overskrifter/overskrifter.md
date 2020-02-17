@@ -6,6 +6,14 @@ category: Kode_category
 subcategory: Kode
 type: component
 layout: styleguide
+tags:
+- "h1"
+- "h2"
+- "h3"
+- "h4"
+- "h5"
+- "h6"
+description: ""
 ---
 
 {% include code/preview-box.html component="headings" title="Eksempel på overskrifter" %}

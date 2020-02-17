@@ -8,7 +8,10 @@ title: Knapper
 category: Komponenter_category
 subcategory: Komponenter
 description: "Knapper er grafiske elementer, som brugerne kan trykke eller klikke på og dermed udløse en funktion eller handling."
-tags: "primærknap,sekundærknap,tertiærknap"
+tags: 
+- "primærknap"
+- "sekundærknap"
+- "tertiærknap"
 anchor: true
 subnav:
 - text: Primærknap
