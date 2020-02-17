@@ -3,6 +3,7 @@ permalink: /design/typografi/overskrifter/
 title: Overskrifter
 parentlink: /design/typografi/
 description: "Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning."
+tags:
 lead: "Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning."
 tags:
 - "h1"

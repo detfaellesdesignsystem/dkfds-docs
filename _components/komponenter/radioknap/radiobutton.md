@@ -9,6 +9,7 @@ category: Komponenter_category
 subcategory: Komponenter
 anchor: true
 description: "Radioknapper giver brugeren mulighed for at vælge en enkelt værdi ud fra en synlig liste."
+tags:
 subnav:
 - text: Hjælpetekst
   href: '#hjælpetekst'

@@ -9,6 +9,7 @@ category: Kode_category
 subcategory: Kode
 lead: Sider kan struktureres, så de også fungerer godt ved print.
 description: "FDS giver nogle værktøjer til at strukturere dine sider, så de også fungerer godt ved print."
+tags:
 ---
 
 DKFDS giver nogle værktøjer, så man nemt kan tilpasse sider til print. Ved at tilføje visse klasser kan du vise, skjule eller ændre udseende på elementer ved print.

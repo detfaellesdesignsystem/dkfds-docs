@@ -5,6 +5,7 @@ title: Release notes
 category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for Det Fælles Designsystem
+tags:
 anchor: true
 subnav:
 - text: Version 5.3.0

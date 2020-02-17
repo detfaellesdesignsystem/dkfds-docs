@@ -6,6 +6,7 @@ layout: styleguide
 type: component
 category: Kode_category
 description: "Dokumentation på implementering af søgefelt."
+tags:
 subcategory: Kode
 ---
 

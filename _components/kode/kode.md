@@ -4,6 +4,7 @@ layout: styleguide
 title: Kode
 category: Kode_category
 description: "I denne sektion findes dokumentationen henvendt til udvikling specifikt."
+tags:
 ---
 
 I denne sektion findes alt dokumentation henvendt til udvikling specifikt.

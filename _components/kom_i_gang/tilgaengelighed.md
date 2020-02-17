@@ -5,6 +5,7 @@ title: Tilgængelighed (WCAG 2.1)
 category: Kom_i_gang_category
 subcategory: Kom i gang
 description: "Hjælp og værktøjer til at efterleve tilgængelighedskrav WCAG 2.1 level AA."
+tags:
 ---
 
 - Overhold <a href="https://digst.dk/digital-service/webtilgaengelighed" class="icon-link">den danske lovgivning<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og krav til tilgængelighed af løsninger for alle brugere.

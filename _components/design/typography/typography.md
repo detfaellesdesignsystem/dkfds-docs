@@ -8,6 +8,7 @@ category: Design_category
 subcategory: Design
 type: component
 description: "Typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter."
+tags:
 lead: "Typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter."
 ---
 ## Fonte

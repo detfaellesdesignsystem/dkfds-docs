@@ -6,6 +6,7 @@ title: Sidenavigation
 category: Komponenter_category
 subcategory: Komponenter
 description: "Sidenavigation giver brugerne overblik over struktur og indhold, så de kan finde vej til det indhold, de leder efter."
+tags:
 lead: "Sidenavigation giver brugerne overblik over struktur og indhold, så de kan finde vej til det indhold, de leder efter."
 anchor: true
 subnav:

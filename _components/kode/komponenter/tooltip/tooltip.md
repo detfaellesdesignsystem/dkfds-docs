@@ -5,6 +5,7 @@ parentlink: /kode/komponenter/
 layout: styleguide
 type: component
 description: "Dokumentation på implementering af tooltip."
+tags:
 category: Kode_category
 subcategory: Kode
 anchor: true

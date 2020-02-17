@@ -7,10 +7,8 @@ layout: styleguide
 title: Governance
 category: Om_designsystemet_category
 subcategory: Om designsystemet
-description: Det Fælles Designsystem (FDS) er bygget op omkring en agil governancemodel,
-  som løbende bliver evalueret og tilpasset efter behov og ønsker fra de samarbejdende
-  myndigheder og styregruppen for FDS.
-
+description: "Det Fælles Designsystem (FDS) er bygget op omkring en agil governancemodel, som løbende bliver evalueret og tilpasset efter behov og ønsker fra de samarbejdende myndigheder og styregruppen for FDS."
+tags:
 ---
 Governancemodellen skal sikre, at styringen af samarbejdet og arbejdsgangene omkring designsystemet fungerer optimalt. Det skal blandt andet ske ved at:
 

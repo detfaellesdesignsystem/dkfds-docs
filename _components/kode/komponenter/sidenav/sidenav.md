@@ -5,6 +5,7 @@ title: Sidenavigation
 layout: styleguide
 type: component
 description: "Dokumentation på implementering af sidenavigation."
+tags:
 category: Kode_category
 subcategory: Kode
 ---

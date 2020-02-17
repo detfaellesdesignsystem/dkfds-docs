@@ -7,6 +7,7 @@ title: Accordions
 category: Kode_category
 subcategory: Kode
 description: "Dokumentation på implementering af accordions."
+tags: 
 anchor: true
 subnav:
 - text: Tilføj ramme

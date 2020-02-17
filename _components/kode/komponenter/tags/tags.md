@@ -7,6 +7,7 @@ type: component
 category: Kode_category
 subcategory: Kode
 description: "Dokumentation på implementering af tags."
+tags:
 anchor: true
 subnav:
 - text: Tags med ikon

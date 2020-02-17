@@ -7,6 +7,7 @@ description: "Din selvbetjeningsløsning er del af en større helhed på borger.
 lead: Din selvbetjeningsløsning er del af en større helhed på borger.dk og Virk, dette kommunikeres bl.a. via portalens logo i headeren.
 subcategory: Design
 anchor: true
+tags: 
 subnav:
 - text: Retningslinjer for logo i headeren
   href: '#retningslinjer-for-logo-i-headeren'

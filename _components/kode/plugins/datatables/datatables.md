@@ -10,6 +10,7 @@ subcategory: Kode
 datatables: true
 title: "Datatables"
 description: Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.
+tags:
 lead: Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.
 alerts:
 - type: warning

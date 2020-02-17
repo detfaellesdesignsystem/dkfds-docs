@@ -6,6 +6,7 @@ title: Cards
 category: Komponenter_category
 subcategory: Komponenter
 description: "Brug cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold"
+tags:
 anchor: true
 subnav:
 - text: Card med halv bredde

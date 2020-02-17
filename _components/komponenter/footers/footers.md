@@ -5,6 +5,7 @@ title: Footers
 category: Komponenter_category
 subcategory: Komponenter
 description: "Du kan bruge en footer til at guide brugere, som når til sidens bund videre."
+tags: 
 lead: Du kan bruge en footer til at guide brugere, som når til sidens bund videre.
 anchor: true
 subnav:

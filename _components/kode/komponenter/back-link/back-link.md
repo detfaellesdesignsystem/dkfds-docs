@@ -5,6 +5,7 @@ layout: styleguide
 type: element
 title: Tilbage link
 description: "Dokumentation på implementering af tilbage link."
+tags:
 category: Kode_category
 subcategory: Kode
 ---

@@ -7,6 +7,7 @@ title: Beskeder (Alerts)
 category: Kode_category
 subcategory: Kode
 description: "Dokumentation på implementering af besked."
+tags:
 anchor: true
 subnav:
 - text: Farver

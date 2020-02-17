@@ -8,6 +8,7 @@ category: Kode_category
 type: component
 subcategory: Kode
 description: Plugins er komponenter som er for store og specialiserede til, at de kan være en del af kernen. Det er valgfrit om selvbetjeningsløsninger vil inkludere plugins.
+tags:
 lead: Plugins er komponenter som er for store og specialiserede til, at de kan være en del af kernen. Det er valgfrit om selvbetjeningsløsninger vil inkludere plugins.
 alerts:
 - type: warning

@@ -8,6 +8,7 @@ title: Tabeller
 category: Komponenter_category
 subcategory: Komponenter
 description: "Tabeller er en systematisk opstilling af data. Data vises i kolonner og rækker."
+tags: 
 datatables: true
 lead: Tabeller er en systematisk opstilling af data og viser data i kolonner og rækker.
 anchor: true

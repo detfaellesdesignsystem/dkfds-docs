@@ -7,6 +7,7 @@ title: Det visuelle design
 category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: "Gennemgang af det visuelle design i FDS."
+tags:
 anchor: true
 subnav:
 - text: Visuel integration på portalerne

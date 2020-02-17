@@ -6,6 +6,7 @@ title: Afmeld nyhedsmail
 category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: "Afmeld nyhedsmails fra Det Fælles Designsystem"
+tags:
 ---
    
 <div class="alert alert-success d-none" id="newsletter-message" role="alert">

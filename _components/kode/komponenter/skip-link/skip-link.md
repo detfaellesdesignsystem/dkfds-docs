@@ -5,6 +5,7 @@ title: Skip-link
 layout: styleguide
 type: component
 description: "Dokumentation på implementering af skip-link."
+tags: 
 category: Kode_category
 subcategory: Kode
 ---

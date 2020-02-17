@@ -9,6 +9,7 @@ subcategory: Kode
 title: "selectWoo"
 select2: true
 description: "selectWoo er et eksternt plugin, hvormed man kan gøre det muligt for brugeren at vælge flere elementer fra en lang liste."
+tags:
 lead: Gør det muligt for brugeren at vælge flere elementer fra en liste.
 alerts:
 - type: warning

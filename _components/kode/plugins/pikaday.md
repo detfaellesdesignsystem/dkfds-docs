@@ -11,6 +11,7 @@ category: Kode_category
 subcategory: Kode
 pikaday: true
 description: "Pikaday.js er et eksternt plugin, som leverer en datovælger eller datepicker, som gør det nemt at vælge en dato." 
+tags:
 lead: Gør det muligt for brugeren, at vælge en dato ved klik på knap.
 alerts:
 - type: warning
@@ -19,7 +20,6 @@ alerts:
 - type: error
   header: Pikaday er på nuværende tidspunkt ikke tilgængelig
   content: Pikaday er på nuværende tidspunkt ikke tilgængelig, når man har en skærmlæser kørende. Vi har oprettet en sag hos tredjepart og afventer løsning.
-component: date-input-datepicker
 ---
 
 {% include code/preview.html component="date-input-datepicker" %}

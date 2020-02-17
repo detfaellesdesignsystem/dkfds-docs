@@ -8,6 +8,7 @@ title: Formular
 category: Komponenter_category
 subcategory: Komponenter
 description: "Se eksempler på opsætning af en formular med forskellige felttyper."
+tags: 
 anchor: true
 subnav:
 - text: Kompleks

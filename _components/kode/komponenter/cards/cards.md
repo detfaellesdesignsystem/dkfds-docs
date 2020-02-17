@@ -5,6 +5,7 @@ layout: styleguide
 type: component
 title: Cards
 description: "Dokumentation på implementering af cards."
+tags:
 category: Kode_category
 subcategory: Kode
 anchor: true

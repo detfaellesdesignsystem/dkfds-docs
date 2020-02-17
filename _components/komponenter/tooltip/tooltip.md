@@ -7,6 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 tippy: true
 description: Tooltip bruges til at forklare en tekst yderligere eller give mere information, som ikke umiddelbart er nødvendig.
+tags:
 lead: "" 
 anchor: true
 subnav:

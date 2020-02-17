@@ -5,6 +5,7 @@ title: Kom i gang
 category: Kom_i_gang_category
 description: Information på hvordan man kommer igang med at bruge Det Fælles Designsystem
 lead: "Det Fælles Designsystem er udviklet for at sikre en ensartet funktionalitet og design i selvbetjeningsløsninger på tværs af myndigheder. Det skaber genkendelse for brugerne af løsningerne og gør det nemmere for dem at foretage selvbetjening."
+tags:
 ---
 
 Det Fælles Designsystem understøtter udvikling af selvbetjeningsløsninger, der er simple, brugervenlige og tilgængelige.

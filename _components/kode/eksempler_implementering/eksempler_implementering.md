@@ -7,6 +7,7 @@ layout: styleguide
 title: Eksempler på implementering
 category: Kode_category
 description: Eksempler på implementering af DKFDS i forskellige typer af projekter
+tags: 
 subcategory: Kode
 alerts:
 - type: warning

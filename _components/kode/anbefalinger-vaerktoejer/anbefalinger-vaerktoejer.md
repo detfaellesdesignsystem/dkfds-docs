@@ -10,6 +10,7 @@ category: Kode_category
 subcategory: Kode
 parentlink: /kode/
 description: Anbefalinger for kode og kvalitet, performance, tilgængelighed og yderligere anvisninger til dig, der skal udvikle til eller i Det Fælles Designsystem
+tags: 
 anchor: true
 subnav:
 - text: Anbefalinger om kode og kodekvalitet

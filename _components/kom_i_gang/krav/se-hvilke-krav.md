@@ -7,6 +7,7 @@ title: Se hvilke krav din løsning skal efterleve
 category: Kom_i_gang_category
 subcategory: Kom i gang
 description: Information om eksterne krav, fælles aftalte krav og krav til digitale løsninger der skal på borger.dk og Virk.
+tags:
 parentlink: /komigang/krav/
 lead: "Du skal maksimalt svare på 7 spørgsmål"
 ---

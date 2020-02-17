@@ -6,6 +6,7 @@ title: Tjekboks
 category: Komponenter_category
 subcategory: Komponenter
 description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste."
+tags:
 anchor: true
 subnav:
 - text: Fejlbesked

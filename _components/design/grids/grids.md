@@ -6,6 +6,7 @@ layout: styleguide
 type: component
 title: Grid
 category: Design_category
+tags: 
 subcategory: Design
 description: "Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige brede kolonner."
 lead: "Det Fælles Designsystem ønsker at hjælpe dig med at skabe en god oplevelse for dine brugere: Når de bruger din selvbetjeningsløsning skal de opleve et visuelt og funktionelt design og layout, der er neutralt, simpelt og fleksibelt."

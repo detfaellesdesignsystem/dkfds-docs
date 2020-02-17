@@ -6,6 +6,7 @@ title: Datoangivelse
 category: Komponenter_category
 subcategory: Komponenter
 description: "Brug dette datofelt til datoangivelse i en formular."
+tags:
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
 pikaday: true
 anchor: true
