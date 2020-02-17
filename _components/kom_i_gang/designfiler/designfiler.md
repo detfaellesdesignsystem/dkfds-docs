@@ -2,6 +2,7 @@
 permalink: /komigang/designfiler/
 redirect_from:
 - /komigang/tildesignere/
+- /komigang/tildesignere/design-selvbetjeningsloesninger/
 layout: styleguide
 title: Designfiler
 category: Kom_i_gang_category
@@ -45,8 +46,6 @@ Følg allerede etablerede standarder og konventioner for placering og gruppering
 <a href="/komigang/regler-principper-layout/">Regler og principper for layout</a>
 
 Hav forståelse for dit ansvar for sammenhængen i mellem og på tværs af de mange tusinde selvbetjeningsløsninger, der kan tilgås fra borger.dk og Virk. Ved at tage ansvar, er du med til at gøre brugerne mere effektive, så de ikke skal genlære alle offentlige brugergrænseflader forfra hver gang.
-
-<a href="/komigang/tildesignere/design-selvbetjeningsloesninger/">Kort guide til design af selvbetjeningsløsninger</a>
 
 ## 12 punkter til designeren
 
