@@ -33,7 +33,7 @@ subnav:
 
 {% include code/syntax.html component="tringuide-overflowmenu" %}
 
-Hvis man gør brug af en trinindikator i forbindelse med en <a href="/komponenter/overflowmenu/">overflow menu komponent</a>, så se venligst <a href="/kode/overflowmenu/">dokumentationen for implementering for overflow menu</a>.
+Hvis man gør brug af en trinindikator i forbindelse med en <a href="/komponenter/overflowmenu/">overflow menu komponent</a>, så se venligst <a href="/kode/komponenter/overflowmenu/">dokumentationen for implementering for overflow menu</a>.
 
 #### Aktivt og overstået trin i trinindikator
 
