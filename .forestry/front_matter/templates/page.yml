@@ -27,8 +27,9 @@ fields:
   name: description
   label: description
 - type: text
-  name: tags
-  label: tags
-- type: text
   name: lead
   label: lead
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
