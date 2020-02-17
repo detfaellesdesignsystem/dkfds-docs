@@ -228,11 +228,13 @@ function sort(result, query){
 
         // match tags
         matched.tags = false;
-        if (matchForString(page.tags, query)) {
+
+        let tags = page.tags.join(',').toLowerCase().split(',');
+        if (matchForString(tags, query)) {
             matched.tags = true;
         } else{
             for (let s in syns) {
-                if (matchForString(page.tags, syns[s])) {
+                if (matchForString(tags, syns[s])) {
                     matched.tags = true;
                 }
             }
