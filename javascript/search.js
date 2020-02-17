@@ -159,7 +159,7 @@ function matchSearch(page, query){
             for (let phrase in phrases) {
                 let currentPhrase = phrases[phrase].toLowerCase();
                 if (currentPhrase.length > 2) {
-                    if (!matched && (page.title.toLowerCase().indexOf(currentPhrase) >= 0 || page.lead.toLowerCase().indexOf(currentPhrase) >= 0 || page.tags.toLowerCase().indexOf(currentPhrase) >= 0 || page.content.toLowerCase().indexOf(currentPhrase) >= 0)) {
+                    if (!matched && (page.title.toLowerCase().indexOf(currentPhrase) >= 0 || page.lead.toLowerCase().indexOf(currentPhrase) >= 0 || tags.indexOf(currentPhrase) >= 0 || page.content.toLowerCase().indexOf(currentPhrase) >= 0)) {
                         matched = true;
                         phrasesMatched.push(currentPhrase);
                     }

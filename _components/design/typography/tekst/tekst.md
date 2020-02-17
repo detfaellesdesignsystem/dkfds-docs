@@ -8,6 +8,13 @@ type: component
 layout: styleguide
 anchor: true
 description: ""
+tags:
+- "stor tekst"
+- "manchet"
+- "manchet tekst"
+- "brødtekst"
+- "hjælpetekst"
+- "fejlbesked"
 subnav:
 - text: Manchet tekst
   href: "#manchet-tekst"

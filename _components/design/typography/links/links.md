@@ -8,6 +8,11 @@ subcategory: Design
 type: component
 layout: styleguide
 anchor: true
+tags:
+- "ekstern"
+- "ekstern link"
+- "footer link"
+- "footerlink"
 subnav:
 - text: Eksternt link
   href: "#eksternt-link"

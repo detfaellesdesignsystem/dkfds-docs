@@ -6,6 +6,14 @@ category: Kode_category
 subcategory: Kode
 type: component
 layout: styleguide
+description: ""
+tags:
+- "stor tekst"
+- "manchet"
+- "manchet tekst"
+- "brødtekst"
+- "hjælpetekst"
+- "fejlbesked"
 anchor: true
 subnav:
 - text: Manchet tekst

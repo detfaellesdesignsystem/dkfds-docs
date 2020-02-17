@@ -14,6 +14,10 @@ subnav:
   href: "#footer-link"
 description: ""
 tags:
+- "ekstern"
+- "ekstern link"
+- "footer link"
+- "footerlink"
 ---
 
 {% include child-components.html parent='Links-kode' %}
