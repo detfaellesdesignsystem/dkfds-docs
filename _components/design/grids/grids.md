@@ -9,6 +9,9 @@ category: Design_category
 tags:
 - grid
 - grids
+- kolonner
+- opdeling
+- spalter
 subcategory: Design
 description: Det Fælles Designsystem baserer sit responsive layout på en opdeling
   af siden i 12 lige brede kolonner.
