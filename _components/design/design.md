@@ -3,8 +3,7 @@ permalink: "/design/"
 layout: styleguide
 title: Design
 category: Design_category
-tags:
-- typography
+tags: []
 description: ''
 redirect_from: []
 lead: ''
