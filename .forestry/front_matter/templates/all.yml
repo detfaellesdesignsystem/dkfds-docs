@@ -32,6 +32,10 @@ fields:
     schema:
       format: markdown
   label: description
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
 - type: text
   name: category
   label: category
@@ -51,10 +55,6 @@ fields:
   - type: text
     name: href
     label: href
-- name: tags
-  type: tag_list
-  default: []
-  label: tags
 pages:
 - _components/design/borders-shadows/border-shadows.md
 - _components/design/colors/colors.md
