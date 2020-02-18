@@ -11,6 +11,7 @@ description: Typografi omhandler de valgte fonte, samt formatering og brug af te
   og overskrifter.
 tags:
 - IBM
+- typography
 lead: Typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter.
 
 ---

@@ -1,10 +1,16 @@
 ---
-permalink: /design/
+permalink: "/design/"
 layout: styleguide
 title: Design
 category: Design_category
-tags: 
-description: ""
+tags: []
+description: ''
+redirect_from: []
+lead: ''
+subcategory: ''
+anchor: false
+subnav: []
+
 ---
 <p class="font-lead">Designet er målrettet selvbetjeningsløsninger der skal på borger.dk og Virk. Det visuelle udtryk skal understøtte brugervenlighed i selvbetjeningsløsninger.</p>
 <p class="font-lead">Hvis du anvender designsystemets kode følger designets styling automatisk med.</p>

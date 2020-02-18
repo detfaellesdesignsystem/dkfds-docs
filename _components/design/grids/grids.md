@@ -1,17 +1,27 @@
 ---
-permalink: /design/grid/
+permalink: "/design/grid/"
 redirect_from:
-- /grid/
+- "/grid/"
 layout: styleguide
 type: component
 title: Grid
 category: Design_category
-tags: 
+tags:
+- grid
+- grids
+- kolonner
+- opdeling
+- spalter
 subcategory: Design
-description: "Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige brede kolonner."
-lead: "Det Fælles Designsystem ønsker at hjælpe dig med at skabe en god oplevelse for dine brugere: Når de bruger din selvbetjeningsløsning skal de opleve et visuelt og funktionelt design og layout, der er neutralt, simpelt og fleksibelt."
----
+description: Det Fælles Designsystem baserer sit responsive layout på en opdeling
+  af siden i 12 lige brede kolonner.
+lead: 'Det Fælles Designsystem ønsker at hjælpe dig med at skabe en god oplevelse
+  for dine brugere: Når de bruger din selvbetjeningsløsning skal de opleve et visuelt
+  og funktionelt design og layout, der er neutralt, simpelt og fleksibelt.'
+anchor: false
+subnav: []
 
+---
 ### 12 kolonner (horisontalt)
 
 Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige brede kolonner med 32px afstand mellem hver kolonne (16 px på hver side af en kolonne). Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.
