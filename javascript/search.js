@@ -12,7 +12,8 @@ let synonyms = [
     ["sekundærknap", "sekundærknap", "secondary", "sekundær"],
     ["trinindikator", "tringuide"],
     ["avancerede tabeller", "datatables"],
-    ["skip-link", "skip link"]
+    ["skip-link", "skip link"],
+    ["plug-in", "plug-ins", "plugin", "plugins", "udvidelse", "udvidelser"]
 ];
 
 let excludeWords = ["Når", "i", "I", "er", "det", "der", "dem", "den", "et", "hvad", "hvor", "hvem", "på", "og"];
@@ -38,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
         if(query !== null && query !== "") {
-            let results = search(query);
+            let results = search(query.toLowerCase());
             populateSearch(results, decodeURIComponent(query), start);
         } else{
             populateSearch([], decodeURIComponent(query), start);
@@ -146,33 +147,36 @@ function searchWords(query){
 function matchSearch(page, query){
 
     let matched = false;
-
-    let phrases = query.split(" ");
-    let syns = searchWords(query);
-    for(let w in syns) {
-        let word = syns[w];
-        let tags = page.tags.join(',').toLowerCase().split(',');
-        if (page.title.toLowerCase().indexOf(word.toLowerCase()) >= 0 || page.lead.toLowerCase().indexOf(word.toLowerCase()) >= 0 || tags.indexOf(word.toLowerCase()) >= 0 || page.content.toLowerCase().indexOf(word.toLowerCase()) >= 0) {
-            matched = true;
-        } else {
-            let phrasesMatched = [];
-            for (let phrase in phrases) {
-                let currentPhrase = phrases[phrase].toLowerCase();
-                if (currentPhrase.length > 2) {
-                    if (!matched && (page.title.toLowerCase().indexOf(currentPhrase) >= 0 || page.lead.toLowerCase().indexOf(currentPhrase) >= 0 || tags.indexOf(currentPhrase) >= 0 || page.content.toLowerCase().indexOf(currentPhrase) >= 0)) {
-                        matched = true;
-                        phrasesMatched.push(currentPhrase);
+    if(query.length > 1) {
+        let phrases = query.split(" ");
+        let syns = searchWords(query);
+        for (let w in syns) {
+            let word = syns[w];
+            let tags = page.tags.join(',').toLowerCase().split(',');
+            if (page.title.toLowerCase().indexOf(word.toLowerCase()) >= 0 || page.lead.toLowerCase().indexOf(word.toLowerCase()) >= 0 || tags.indexOf(word.toLowerCase()) >= 0 || page.content.toLowerCase().indexOf(word.toLowerCase()) >= 0) {
+                matched = true;
+            } else {
+                let phrasesMatched = [];
+                for (let phrase in phrases) {
+                    let currentPhrase = phrases[phrase].toLowerCase();
+                    if (currentPhrase.length > 2) {
+                        if (!matched && (page.title.toLowerCase().indexOf(currentPhrase) >= 0 || page.lead.toLowerCase().indexOf(currentPhrase) >= 0 || tags.indexOf(currentPhrase) >= 0 || page.content.toLowerCase().indexOf(currentPhrase) >= 0)) {
+                            matched = true;
+                            phrasesMatched.push(currentPhrase);
+                        }
                     }
+                }
+                if (matched) {
+                    page.phrasesMatched = phrasesMatched;
                 }
             }
             if (matched) {
-                page.phrasesMatched = phrasesMatched;
+                page.matched = true;
+                break;
             }
         }
-        if (matched) {
-            page.matched = true;
-            break;
-        }
+    } else if(page.title.toLowerCase().startsWith(query)){
+        page.matched = true;
     }
     return page;
 }
@@ -208,156 +212,173 @@ function matchForString(haystack, needle){
 }
 
 function sort(result, query){
-    let syns = searchWords(query);
-    result.forEach(function (page) {
-        let score = 0;
-        let matched = {};
+    if(query.length > 1){
+        let syns = searchWords(query);
+        result.forEach(function (page) {
+            let score = 0;
+            let matched = {};
 
-        // match title
-        matched.title = false;
-        if(matchForString(page.title, query)) {
-            matched.title = true;
-            matched.titleString = true;
-        } else {
-            for (let s in syns) {
-                if (matchForString(page.title, syns[s])) {
-                    matched.title = true;
+            // match title
+            matched.title = false;
+            if(matchForString(page.title, query)) {
+                matched.title = true;
+                matched.titleString = true;
+            } else {
+                for (let s in syns) {
+                    if (matchForString(page.title, syns[s])) {
+                        matched.title = true;
+                    }
                 }
             }
-        }
 
-        // match tags
-        matched.tags = false;
+            // match tags
+            matched.tags = false;
 
-        let tags = page.tags.join(',').toLowerCase().split(',');
-        if (matchForString(tags, query)) {
-            matched.tags = true;
-        } else{
-            for (let s in syns) {
-                if (matchForString(tags, syns[s])) {
-                    matched.tags = true;
+            let tags = page.tags.join(',').toLowerCase().split(',');
+            if (matchForString(tags, query)) {
+                matched.tags = true;
+            } else{
+                for (let s in syns) {
+                    if (matchForString(tags, syns[s])) {
+                        matched.tags = true;
+                    }
                 }
             }
-        }
 
-        // match tags
-        matched.description = false;
-        if (matchForString(page.description, query)) {
-            matched.description = true;
-            matched.descriptionString = true;
-        } else{
-            for (let s in syns) {
-                if (matchForString(page.description, syns[s])) {
-                    matched.description = true;
+            // match tags
+            matched.description = false;
+            if (matchForString(page.description, query)) {
+                matched.description = true;
+                matched.descriptionString = true;
+            } else{
+                for (let s in syns) {
+                    if (matchForString(page.description, syns[s])) {
+                        matched.description = true;
+                    }
                 }
             }
-        }
 
-        // match subnav
-        matched.subnav = false;
-        if (matchForString(page.subnav, query)) {
-            matched.subnav = true;
-        } else{
-            for (let s in syns) {
-                if (matchForString(page.subnav, syns[s])) {
-                    matched.subnav = true;
+            // match subnav
+            matched.subnav = false;
+            if (matchForString(page.subnav, query)) {
+                matched.subnav = true;
+            } else{
+                for (let s in syns) {
+                    if (matchForString(page.subnav, syns[s])) {
+                        matched.subnav = true;
+                    }
                 }
             }
-        }
 
-        // match content
-        matched.content = false;
-
-        if (matchForString(page.content, query)) {
-            matched.content = true;
-            matched.contentString = true;
-        } else {
-            for (let s in syns) {
-                if (matchForString(page.subnav, syns[s])) {
-                    matched.subnav = true;
+            // match content
+            matched.content = false;
+            if(page.layout !== "demo" && query.length > 4) {
+                if (matchForString(page.content, query)) {
+                    matched.content = true;
+                    matched.contentString = true;
+                } else {
+                    for (let s in syns) {
+                        if (matchForString(page.subnav, syns[s])) {
+                            matched.subnav = true;
+                        }
+                    }
                 }
             }
-        }
 
-        // match category
-        matched.category = 0;
+            // match category
+            matched.category = 0;
 
-        // priority category
-        switch (page.category) {
-            case "Komponenter_category":
-                matched.category = 1;
-                break;
-            case "Kode_category":
-                matched.category = 2;
-                break;
-            case "Design_category":
-                matched.category = 3;
-                break;
-            case "Kom_i_gang_category":
-                matched.category = 4;
-                break;
-            case "Om_designsystemet_category":
-                matched.category = 5;
-                break;
-        }
+            // priority category
+            switch (page.category) {
+                case "Komponenter_category":
+                    matched.category = 1;
+                    break;
+                case "Kode_category":
+                    matched.category = 2;
+                    break;
+                case "Design_category":
+                    matched.category = 3;
+                    break;
+                case "Kom_i_gang_category":
+                    matched.category = 4;
+                    break;
+                case "Om_designsystemet_category":
+                    matched.category = 5;
+                    break;
+            }
 
-        matched.demo = false;
-        if(page.layout === "demo"){
-            matched.demo = true;
-        }
+            matched.demo = false;
+            if(page.layout === "demo"){
+                matched.demo = true;
+            }
 
-        // Set scores
-        if(matched.title){
-            score = score + 60;
-        }
+            // Set scores
+            if(matched.title){
+                score = score + 60;
+                if(page.title.toLowerCase().startsWith(query)){
+                    score = score + 20;
+                }
+            }
 
-        if(matched.tags){
-            score = score + 44;
-        }
-        if(matched.description){
-            score = score + 35;
-        }
-        if(matched.subnav){
-            score = score + 20;
-        }
-        if(matched.content){
-            score = score + 30;
-            if(query.indexOf(" ") >= 0){
+            if(matched.tags){
+                score = score + 44;
+            }
+            if(matched.description){
+                score = score + 35;
+            }
+            if(matched.subnav){
                 score = score + 20;
             }
-        }
+            if(matched.content){
+                score = score + 30;
+                if(query.indexOf(" ") >= 0){
+                    score = score + 20;
+                }
+            }
 
-        switch (matched.category) {
-            case 1:
-                score = score + 15;
-                break;
-            case 2:
-                score = score + 13;
-                break;
-            case 3:
-                score = score + 8;
-                break;
-            case 4:
-                score = score + 6;
-                break;
-            case 5:
-                score = score + 5;
-                break;
-        }
+            switch (matched.category) {
+                case 1:
+                    score = score + 15;
+                    break;
+                case 2:
+                    score = score + 13;
+                    break;
+                case 3:
+                    score = score + 8;
+                    break;
+                case 4:
+                    score = score + 6;
+                    break;
+                case 5:
+                    score = score + 5;
+                    break;
+            }
 
-        if(matched.demo){
-            score = score + 25;
-        }
-        page.matched = matched;
-        page.score = score;
-    });
+            if(matched.demo){
+                score = score + 25;
+            }
+            page.matched = matched;
+            page.score = score;
+        });
 
-    return result.sort( function(a, b) {
-        if(a.score > b.score){
-            return -1;
-        } else if(a.score < b.score){
-            return 1;
-        }
-        return 0;
-    });
+        return result.sort( function(a, b) {
+            if(a.score > b.score){
+                return -1;
+            } else if(a.score < b.score){
+                return 1;
+            }
+            return 0;
+        });
+    } else{
+
+        result.forEach(function (page) {
+            page.score = 60;
+            page.matched.title = true;
+        });
+        return result.sort( function(a, b) {
+            if(a.title < b.title) { return -1; }
+            if(a.title > b.title) { return 1; }
+            return 0;
+        });
+    }
 }
