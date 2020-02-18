@@ -6,7 +6,7 @@ layout: styleguide
 title: Farver
 category: Design_category
 subcategory: Design
-tags: ''
+tags: color
 description: 'Overbliksside over alle farver i FDS: Portalfarver, Gråtoner, Besked-farver,
   Link-farver, Fokusfarve, Baggrundsfarver, Positiv og negativ farver, Datavisualiseringsfarver'
 lead: Da designsystemet er fælles for både borger.dk og Virk er der farver til hver
