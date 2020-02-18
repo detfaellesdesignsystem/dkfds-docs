@@ -46,3 +46,4 @@ fields:
     label: href
 pages:
 - _components/design/borders-shadows/border-shadows.md
+- _components/design/colors/colors.md
