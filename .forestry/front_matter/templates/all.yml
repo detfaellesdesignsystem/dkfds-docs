@@ -14,18 +14,23 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: category
-  label: category
-- type: text
-  name: subcategory
-  label: subcategory
+- name: lead
+  type: text
+  config:
+    required: false
+  label: lead
 - type: text
   name: description
   label: description
 - type: text
   name: tags
   label: tags
+- type: text
+  name: category
+  label: category
+- type: text
+  name: subcategory
+  label: subcategory
 - type: boolean
   name: anchor
   label: anchor
