@@ -1,7 +1,7 @@
 ---
 title: "Skjult indhold (Collapse)"
 parent: Radiobutton
-order: 60
+order: 70
 component: radio-collapse
 componentTitle: Eksempel på radioknapper med skjult indhold
 ---
