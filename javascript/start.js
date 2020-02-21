@@ -7,7 +7,6 @@ import {CookiePrompter, NetMinersTracker, CookieMgr } from "./vendor/CookiePromp
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
-require('./theme');
 require('./newsletter');
 document.addEventListener("DOMContentLoaded", function(){
     // Handler when the DOM is fully loaded

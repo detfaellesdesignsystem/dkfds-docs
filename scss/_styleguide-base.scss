@@ -709,11 +709,7 @@ code {
     min-height: 200px; //so that datepicker is visible
   }
 }
-.component-preview-tabnav{
-  & .container{
-    min-height: 300px;
-  }
-}
+
 .component-preview-date-input-datepicker{
   .container{
     min-height: 500px; //so that datepicker is visible
@@ -886,10 +882,6 @@ code {
   figure.highlight{
     border: 0;
   }
-}
-
-.component-preview-tabnav .component-example{
-  min-height: 330px;
 }
 
 .preview-buttons {

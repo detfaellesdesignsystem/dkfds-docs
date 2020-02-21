@@ -7,6 +7,7 @@ const path = require('path');
 module.exports = function (outputPath, prod) {
   return {
     entry: {
+      "theme": ["./javascript/theme.js"],
       styleguide: ["./javascript/start.js", "./scss/styleguide.scss"],
       styleguide_borgerdk: ["./scss/styleguide-borgerdk.scss"],
       styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
