@@ -1,14 +1,17 @@
 ---
-permalink: /kode/
+permalink: "/kode/"
 layout: styleguide
 title: Kode
 category: Kode_category
-description: "I denne sektion findes dokumentationen henvendt til udvikling specifikt."
-tags:
+description: I denne sektion findes dokumentationen henvendt til udvikling specifikt.
+tags: []
+lead: I denne sektion findes alt dokumentation henvendt til udvikling specifikt.
+redirect_from: []
+subcategory: ''
+anchor: false
+subnav: []
+
 ---
-
-I denne sektion findes alt dokumentation henvendt til udvikling specifikt.
-
 {:.h3}
 ## Kodefrihed under ansvar
 
