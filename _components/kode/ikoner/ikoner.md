@@ -22,7 +22,7 @@ Ovenstående kode refererer til en ikonsamling. For at få ikonet vist, skal man
 
 #### Implementering af ikonsamlingen
 
-{% include code/syntax.html component="simple-base-svg" link="true" url="example-base-svg" %}
+{% include code/syntax.html component="simple-base-svg" link="true" url="ikon-samling" %}
 
 Bemærk, at ovenstående kodeeksempel ikke er den fulde ikonsamling. Hele ikonsamlingen er dog vist, hvis du åbner eksemplet i et nyt vindue.
 
