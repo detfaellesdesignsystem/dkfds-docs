@@ -5,11 +5,11 @@ layout: styleguide
 type: component
 category: Kode_category
 subcategory: Kode
-order: 25
-description: "Sådan bruger du ikoner med FDS."
+order: "25"
+description: Sådan bruger du ikoner med FDS.
 tags: 
----
 
+---
 {% include code/preview-box.html component="icon" title="Eksempel på ikon" %}
 
 ## Installation
@@ -18,7 +18,7 @@ tags:
 
 {% include code/syntax.html component="icon" %}
 
-Ovenstående kode refererer til en ikonsamling. For at få ikonet vist, skal man derfor huske at implementere ikomsamlingen på hver side.
+Ovenstående kode refererer til en ikonsamling. For at få ikonet vist, skal man derfor huske at implementere ikonsamlingen på hver side.
 
 #### Implementering af ikonsamlingen
 
