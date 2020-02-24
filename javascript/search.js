@@ -321,7 +321,7 @@ function sort(result, query){
             }
 
             if(matched.tags){
-                score = score + 44;
+                score = score + 55;
             }
             if(matched.description){
                 score = score + 35;
