@@ -1,17 +1,18 @@
 ---
-permalink: /design/typografi/overskrifter/
+permalink: "/design/typografi/overskrifter/"
 title: Overskrifter
-parentlink: /design/typografi/
-description: "Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning."
+parentlink: "/design/typografi/"
+description: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og
+  skærmlæseren til at kunne overskue sidens logik og opbygning.
+lead: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren
+  til at kunne overskue sidens logik og opbygning.
 tags:
-lead: "Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren til at kunne overskue sidens logik og opbygning."
-tags:
-- "h1"
-- "h2"
-- "h3"
-- "h4"
-- "h5"
-- "h6"
+- h1
+- h2
+- h3
+- h4
+- h5
+- h6
 category: Design_category
 type: component
 subcategory: Design
@@ -20,8 +21,8 @@ anchor: true
 subnav:
 - text: Felt- og tabeloverskrifter
   href: "#felt--og-tabeloverskrifter-label-og-th"
----
 
+---
 Overskriftstyperne har to formål:
 
 - De er sidens indholdsfortegnelse for skærmlæsere.
@@ -33,7 +34,7 @@ Overskriftstyperne har to formål:
 ## Design
 
 {:.table .table--borderless .table--responsive-headers}
-| Tekst        | Skriftype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
+| Tekst        | Skrifttype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
 |--------------|---------------|-----------------|------------------------------|------------|
 | Overskrift 1 | IBM Plex Sans | 40px            | 700                          | #1a1a1a    |
 | Overskrift 2 | IBM Plex Sans | 30px            | 600                          | #1a1a1a    |
