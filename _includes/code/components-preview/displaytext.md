@@ -1,9 +1,0 @@
---- 
-permalink: /preview-components/displaytext.html
-layout: example-contained 
-title: Displaytext.html
----
-<p class="displayheading-1">Stor tekst nr. 1</p>
-<p class="displayheading-2">Stor tekst nr. 2</p>
-<p class="displayheading-2 text-positive">Stor positiv tekst</p>
-<p class="displayheading-2 text-negative">Stor negativ tekst</p>

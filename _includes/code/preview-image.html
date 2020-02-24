@@ -1,9 +1,9 @@
 <div class="component-preview {{ include.classes }} component-preview-{{ include.component | slugify }}" aria-label="{{ include.title }}">
     <div class="component-link px-4 py-4">
-        <a href="/preview-components/{{ include.component }}.html" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/{{ include.component }}/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
     </div>
     <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <a href="/preview-components/{{ include.component }}.html" class="screenshot" title="{{ include.alt }}" target="_blank"></a>
+        <a href="/eksempel/{{ include.component }}/" class="screenshot" title="{{ include.alt }}" target="_blank"></a>
     </div>
     {% if include.code %}
     <div class="component-code-link px-4 py-4">

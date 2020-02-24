@@ -1,8 +1,0 @@
---- 
-permalink: /preview-components/external-link.html
-layout: example-contained 
-title: External-link.html
----
-<p>Link som åbner et <a href="" class="icon-link">eksternt
-        website<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-</p>

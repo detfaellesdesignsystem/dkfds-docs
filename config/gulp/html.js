@@ -6,6 +6,7 @@ var task = 'html';
 
 var remoteSrc = require('gulp-remote-src');
 var rename = require("gulp-rename");
+var gulpif = require("gulp-if");
 var modifyFile = require('gulp-modify-file');
 var prettify = require('gulp-jsbeautifier');
 var plumber = require('gulp-plumber');
@@ -16,7 +17,6 @@ var path = require('path');
 var flatten = require('gulp-flatten');
 
 var distComponentCode = '_includes/code/components';
-var distComponentPreview = '_includes/code/components-preview';
 var distJekyllComponentPreview = '_preview-components';
 
 function getPath (dirname){
@@ -36,20 +36,26 @@ function getPath (dirname){
     return path.join("/");
 }
 
+function isThisAComponentExample(file){
+    if (file.path.toString().indexOf('\\example-') !== -1){
+        return false;
+    }
+    return true;
+}
 
 function createMarkdown(content, path, file) {
-    var fileName = path.split("\\").pop();
+    var fileName = path.split("\\").pop().replace('.html', '');
     var header = ``;
     if(path.includes('footer') || path.includes('cookie-message') || path.includes('header')) {
         header = `--- 
-permalink: /preview-components/` + fileName + `
+permalink: /eksempel/` + fileName + `/
 layout: example 
 title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
 ---
 `
     } else{
         header = `--- 
-permalink: /preview-components/` + fileName + `
+permalink: /eksempel/` + fileName + `/
 layout: example-contained 
 title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
 ---
@@ -106,8 +112,7 @@ gulp.task('nunjucks', function () {
         .pipe(rename(function(path){
             path.extname = ".md";
         }))
-        .pipe(gulp.dest(distComponentPreview))
-        .pipe(gulp.dest(distJekyllComponentPreview));
+        .pipe(gulpif(isThisAComponentExample, gulp.dest(distJekyllComponentPreview)));
 });
 
 

@@ -1,17 +1,16 @@
 {% from "components/form/controls/text-input-width.njk" import textinputwidth as textinputwidth %}
 {% from "components/form/controls/text-input-width.njk" import textinputchar as textinputchar %}
 
-<div class="container">
-  <h1 class="h4">Input bredde med rem</h1>
+<fieldset>
+  <legend class="h4">Input bredde med rem</legend>
   {% for item in textinputwidth_example.items %}
     {{textinputwidth(item.id, item.label, item.optionallabel, item.class, item.name, item.classLabel)}}
   {% endfor %}
-</div>
+</fieldset>
 
-<div class="container">
-  <h1 class="h4 mt-7">Input bredde med tegn</h1>
+<fieldset>
+  <legend class="h4 mt-7">Input bredde med tegn</legend>
   {% for item in textinputchar_example.items %}
     {{textinputchar(item.id, item.label, item.optionallabel, item.class, item.name, item.classLabel)}}
   {% endfor %}
-</div>
-
+</fieldset>

@@ -1,9 +1,0 @@
---- 
-permalink: /preview-components/buttons-with-icon.html
-layout: example-contained 
-title: Buttons-with-icon.html
----
-<button class="button button-primary">
-    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#refresh"></use></svg>
-    Refresh
-</button>
