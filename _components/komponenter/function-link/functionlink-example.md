@@ -7,6 +7,7 @@ componentTitle: Eksempel på funktions link
 componentCode: "/kode/komponenter/funktionslink/"
 
 ---
+
 {:.h3}
 ## Anvendes til
 
