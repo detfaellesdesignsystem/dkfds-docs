@@ -1,5 +1,6 @@
 ---
 title: "Tooltip (Placer musen over ikonet)"
+headingClass: h5
 parent: Tooltip
 order: 10
 component: tooltip-icon

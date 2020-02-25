@@ -18,5 +18,38 @@ subnav:
   href: "#låst"
 - text: Ekstra information
   href: "#ekstra-information"
+component: tringuide-overflowmenu
+componentTitle: "Eksempel på trinindikator i overflow menu"
+componentCode: "/kode/komponenter/trinindikatorer/"
 ---
+
+{:.h3 #retningslinjer}
+## Anvendes til
+
+Tringuides anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.
+
+{:.h3}
+## Anvendes ikke til
+
+Tringuides skal ikke anvendes som primær eller sekundær navigationselement.
+
+{:.h3}
+## Vejledning
+
+Forsøg med ændret opsætning af dit indhold, type og antallet af spørgsmål før du vælger en tringuide til din løsning.
+
+Vælg den tringuide-model, der passer til dine brugeres behov.
+
+Undgå at lave en horisontal tringuide.
+
+Anvend trin der virker naturlige og logiske for brugerne.
+
+Gør det synligt hvilket trin brugeren er kommet til.
+
+Det sidste trin skal være "Opsummering" eller "Tjek dine svar".
+
+Tilstræb så få trin som muligt.
+
+Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ikke vises i trinindikatoren.
+
 {% include child-components.html parent='Tringuide' %}

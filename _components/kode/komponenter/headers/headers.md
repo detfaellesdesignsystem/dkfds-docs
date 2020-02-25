@@ -12,7 +12,7 @@ subnav:
 - text: Navigation
   href: '#navigation'
 - text: Ekstra rækker
-  href: '#ekstra-rækker'
+  href: '#ekstra-raekker'
 ---
 {% include code/preview-image.html component="header" alt="Billedet viser header komponent" title="Eksempel på header komponent" %}
 
@@ -45,7 +45,7 @@ Alt indhold i `<nav>` elementet vil på små skærme bliver vist i en skjult men
 
 Hovedmenuen indeholder selve løsningens navigation.
 
-{:#ekstra-rækker}
+{:#ekstra-raekker}
 ##### Ekstra rækker
 
 Ekstra navigationsrækker kan indeholde alt lige fra <a href="/komponenter/buttons/">knapper</a>, links til <a href="/kode/plugins/micromodal/">modalvinduer</a>, <a href="/komponenter/overflowmenu/">overflow menuer</a> og sidst <a href="/komponenter/funktionslink/">funktionslink</a>.

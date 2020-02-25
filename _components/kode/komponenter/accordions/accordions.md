@@ -11,9 +11,9 @@ tags:
 anchor: true
 subnav:
 - text: Tilføj ramme
-  href: "#tilføj-ramme"
+  href: "#tilfoej-ramme"
 - text: Tillad flere åbne accordions
-  href: "#tillad-flere-åbne-accordions"
+  href: "#tillad-flere-aabne-accordions"
 ---
 
 {% include code/preview-box.html component="accordion-simple" title="Eksempel på accordion komponent" %}
@@ -53,10 +53,12 @@ Attributten `aria-hidden` tilføjes automatisk i JavaScript, hvis man har undlad
 
 ## Varianter
 
+{:#tilfoej-ramme}
 ### Tilføj ramme
 
 Tilføj klassen `accordion-bordered` til elementet med klassen `accordion` for at tilføje en synlig ramme.
 
+{:#tillad-flere-aabne-accordions}
 ### Tillad flere åbne accordions
 
 For at tillade at flere accordions kan være åbne på samme tid, kan man tilføje klassen `accordion-multiselectable` til elementet med klassen `accordion`.

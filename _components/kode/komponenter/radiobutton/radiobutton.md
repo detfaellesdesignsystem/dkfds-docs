@@ -11,7 +11,7 @@ subcategory: Kode
 anchor: true
 subnav:
 - text: Hjælpetekst
-  href: '#hjælpetekst'
+  href: '#hjaelpetekst'
 - text: Fejlbesked
   href: '#fejlbesked'
 - text: Lille radioknap
@@ -34,13 +34,15 @@ subnav:
 
 {% include code/syntax.html component="radiobutton" %}
 
-- Indsæt altid to eller flere radioknapper i et fieldset inklusive legend.
-- Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.
-- Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
+Indsæt altid to eller flere radioknapper i et fieldset inklusive legend.
+
+Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.
+
+Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
 
 ## Varianter
 
-{:#hjælpetekst}
+{:#hjaelpetekst}
 ### Hjælpetekst
 {% include code/syntax.html component="radiobutton-helptext" link="true" %}
 
@@ -48,6 +50,7 @@ subnav:
 ### Radioknap med fejl
 {% include code/syntax.html component="radiobutton-error" link="true" %}
 
+{:#lille-radioknap}
 ### Lille radioknap
 
 {% include code/syntax.html component="radiobutton-small" link="true" %}

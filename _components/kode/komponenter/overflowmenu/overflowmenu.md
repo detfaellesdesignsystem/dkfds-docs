@@ -23,7 +23,16 @@ subcategory: Kode
 
 {% include code/syntax.html component="overflow-menu" %}
 
-<h3 class="h4">Klasser</h3>
+#### Tilgængelighed
+
+Overflow menu skal kunne aktiveres og håndteres fra tastatur.
+
+Overflow menu skjuler indhold for brugeren og bør anvendes i begrænset omfang. 
+
+Overflow menu skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tab-tasten til navigation. 
+
+{:.h4}
+### Klasser
 
 Følgende aria tags styrer hvorvidt menuen er foldet ud:
 
@@ -37,7 +46,8 @@ Følgende klasser styrer i hvilken retning menuen skal folde ud:
 
 Der er lavet et specifikt liste element til overflow-menuen (se `.overflow-list`) som kan indeholde links eller buttons. Det er dog ikke nødvendigt at benytte denne liste. Overflow-menuen er bare en container hvor man kan placere det indhold man nu har lyst til.
 
-<h3 class="h4">Skjul/vis</h3>
+{:.h4}
+### Skjul/vis
 
 Initialiser collapse/expand javascript med at placere følgende på button elementet: `class="js-dropdown" data-js-target="#overflow1"`
 
@@ -58,3 +68,4 @@ new DKFDS.Dropdown(document.getElementByID('OVERFLOW-BUTTON-ID'));
 |--------------------|----------------------|----------------------------------------------------------------------------------------------|
 | fds.dropdown.open  | `button.js-dropdown` | Når en overflow menu bliver foldet ud, bliver eventet `fds.dropdown.open` udløst på knappen  |
 | fds.dropdown.close | `button.js-dropdown` | Når en overflow menu bliver foldet ind, bliver eventet `fds.dropdown.close` udløst på knappe |
+

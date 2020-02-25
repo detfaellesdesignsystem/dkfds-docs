@@ -13,6 +13,9 @@ anchor: true
 subnav:
 - text: Kompleks
   href: '#kompleks'
+component: fieldset
+componentTitle: Eksempel på formularstruktur
+componentCode: "/kode/komponenter/formular/"
 ---
 
 {% include child-components.html parent='formular' %}

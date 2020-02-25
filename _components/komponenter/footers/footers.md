@@ -18,4 +18,7 @@ subnav:
 - text: Logo
   href: '#logo'
 ---
+
+{% include code/preview-image.html component="footer-simple" code="/kode/komponenter/footers/" %}
+
 {% include child-components.html parent='Footers' %}

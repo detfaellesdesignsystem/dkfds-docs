@@ -11,9 +11,7 @@ subnav:
 - text: Frontend arkitektur
   href: '#frontend-arkitektur'
 - text: Tilgængelighed
-  href: '#Tilgængelighed'
-- text: Layout
-  href: '#layout'
+  href: '#tilgængelighed'
 - text: Font
   href: '#font'
 - text: Udvidelser

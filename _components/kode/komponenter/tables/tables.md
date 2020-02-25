@@ -18,7 +18,7 @@ subnav:
 - text: Scroll
   href: '#scroll'
 - text: Linjehøjde
-  href: '#linjehøjde'
+  href: '#linjehoejde'
 ---
 
 {% include code/preview-box.html component="table" title="Eksempel på tabel" %}
@@ -36,6 +36,14 @@ subnav:
 {% include code/syntax.html component="table" %}
 
 Man kan gøre brug af <a href="/kode/utilities/#bredde-i-procent">hjælpeklasser</a> til at definere bredde på kolonner.
+
+### Tilgængelighed
+
+Tabeller i Det Fælles Designsystem overholder HTML standarden, men du skal selv tilføje `scope=col` eller `scope=row` til hver header celle `th`
+
+Hvis du konstruerer en såkaldt kompleks tabel – en tabel med flere header-niveauer -  skal hver header have tilføjet et unikt id (fx `id=header-eksempel`) og hver celle tilføjes en header-attribut med den relevante og tilknyttede tabel header’s `id` angivet (fx `header=header-eksempel`).
+
+Når du tilføjer en titel til en tabel, skal du skrive den i `caption` indenfor table-elementet.
 
 {:#javascript}
 ### Javascript
@@ -79,11 +87,11 @@ En tabel er som udgangspunkt ikke responsiv, men man kan gøre den responsiv til
 
 Sæt `<table>` elementet i en `<div>`, som har klassen `table--responsive-scroll`.
 
-{:#linjehøjde}
+{:#linjehoejde}
 ### Linjehøjde
 
-### Kompakt
+#### Kompakt
 Tilføj klassen `table--compact` på `<table>`
 
-### Ekstra kompakt
+#### Ekstra kompakt
 Tilføj klassen `table--extracompact` på `<table>`

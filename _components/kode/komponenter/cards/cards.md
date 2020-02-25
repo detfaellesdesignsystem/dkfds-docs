@@ -11,7 +11,7 @@ subcategory: Kode
 anchor: true
 subnav:
 - text: Samme højde
-  href: '#samme-højde'
+  href: '#samme-hoejde'
 ---
 
 {% include code/preview-box.html component="card" title="Eksempel på card komponent" %}
@@ -67,6 +67,7 @@ Footer defineres med klassen `card-footer`.
 
 ## Varianter
 
+{:#samme-hoejde}
 ### Samme højde
 
 {% include code/syntax.html component="cards-same-height" link="true" %}

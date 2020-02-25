@@ -30,6 +30,13 @@ subnav:
 
 Alle badges skal have en `badge` class på `<label></label>` elementet.
 
+
+## Tilgængelighed
+
+Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tabulatortasten navigerer sig frem til dem.
+
+Du skal anvende ARIA live regions til at gøre skærmlæsere på opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.
+
 ## Varianter
 
 ### Stort badge
@@ -38,6 +45,7 @@ For et stort badge skal der tilføjes en `badge-large` class.
 ### Lille badge
 For et lille badge skal der tilføjes en `badge-small` class.
 
+{:#statusbadges}
 ### Statusbadges
 
 Statusbadges har 4 forskellige farver og formål:

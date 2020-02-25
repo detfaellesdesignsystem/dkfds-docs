@@ -12,6 +12,12 @@ subcategory: Kode
 
 {% include code/preview-box.html component="back-link" title="Eksempel på tilbage-link komponent" %}
 
+## Eksempler og retningslinjer
+
+{:.nobullet-list}
+- <a href="/komponenter/tilbage-link/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/tilbage-link/">Eksempler</a>
+
 ## Installation
 
 ### HTML Struktur

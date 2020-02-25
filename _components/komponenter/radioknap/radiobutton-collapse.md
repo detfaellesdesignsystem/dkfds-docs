@@ -6,6 +6,7 @@ component: radio-collapse
 componentTitle: Eksempel på radioknapper med skjult indhold
 ---
 
+{:#collapse-retningslinjer}
 ### Anvendes til
 
 Anvendes til at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.

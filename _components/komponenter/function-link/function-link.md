@@ -11,7 +11,7 @@ componentTitle: "Eksempel på funktions link"
 componentCode: "/kode/komponenter/funktionslink/"
 ---
 
-{:.h3}
+{:.h3 #retningslinjer}
 ## Anvendes til
 
 Brug funktionsikoner til at tilbyde brugeren systemfunktionalitet, som fx: print, pdf, indstillinger, etc. Funktionalitet, der ikke er essentiel for brugerens umiddelbare gennemførsel af løsningen.

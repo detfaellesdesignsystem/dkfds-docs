@@ -23,10 +23,9 @@ subnav:
 {% include code/preview-image.html component="footer-simple" alt="Billedet viser en simpel footer komponent på én række" title="Eksempel på footer komponent" %}
 
 ## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/footers/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/footers/">Eksempler</a></li>
-</ul>
+
+<a href="/komponenter/footers/">Eksempler</a>
+
 ## Installation
 
 ### HTML Struktur
@@ -56,15 +55,19 @@ Yderligere bør brugeren oplyses om, at de nu forlader løsningen, og at eventue
 
 ## Varianter
 
+{:#tre-kolonner}
 ### Tre kolonner
 
 {% include code/syntax.html component="footer-three-columns" link="true" %}
 
+{:#fire-kolonner}
 ### Fire kolonner
 {% include code/syntax.html component="footer-four-columns" link="true" %}
 
+{:#kompleks}
 ### Kompleks
 {% include code/syntax.html component="footer-complex" link="true" %}
 
+{:#logo}
 ### Logo
 {% include code/syntax.html component="footer-logo" link="true" %}

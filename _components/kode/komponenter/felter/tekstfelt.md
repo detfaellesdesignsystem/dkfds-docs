@@ -15,7 +15,7 @@ subnav:
 - text: Frivilligt felt
   href: '#frivilligt-felt'
 - text: Hjælpetekst
-  href: '#hjælpetekst'
+  href: '#hjaelpetekst'
 - text: Feltbredde
   href: '#feltbredde'
 - text: Deaktiveret
@@ -28,8 +28,8 @@ subnav:
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/tekstfelt/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tekstfelt/">Eksempler</a></li>
+    <li><a href="/komponenter/felter/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/felter/">Eksempler</a></li>
 </ul>
 
 ## Installation
@@ -60,7 +60,7 @@ Sørg for at rette i de nødvendige attributter, så værdierne er unikke og ref
 
 De fleste felter i en selvbetjeningsløsning er påkrævet, så for at undgå mange af de standard røde stjerner ved hvert felt har vi i stedet valgt at skrive (frivilligt) ved de felter, som ikke er påkrævede.
 
-{:#hjælpetekst}
+{:#hjaelpetekst}
 ### Hjælpetekst
 
 {% include code/syntax.html component="text-input-helptext" link="true" %}

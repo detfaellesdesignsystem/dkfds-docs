@@ -13,9 +13,10 @@ subcategory: Kode
 {% include code/preview-box.html component="skiplink" title="Eksempel på skiplink" %}
 
 ## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/skip-link/">Eksempler</a></li>
-</ul>
+
+{:.nobullet-list}
+- <a href="/komponenter/skip-link/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/skip-link/">Eksempler</a>
 
 ## Installation
 
