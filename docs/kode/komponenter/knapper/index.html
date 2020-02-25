@@ -1581,7 +1581,7 @@
 
 
 <li class=" " role="none">
-<a href="#primærknap"  role="menuitem">Primærknap</a>
+<a href="#primaerknap"  role="menuitem">Primærknap</a>
 </li>
 
     
@@ -1592,7 +1592,7 @@
 
 
 <li class=" " role="none">
-<a href="#sekundærknapper"  role="menuitem">Sekundærknapper</a>
+<a href="#sekundaerknapper"  role="menuitem">Sekundærknapper</a>
 </li>
 
     
@@ -1603,7 +1603,7 @@
 
 
 <li class=" " role="none">
-<a href="#tertiærknapper"  role="menuitem">Tertiærknapper</a>
+<a href="#tertiaerknapper"  role="menuitem">Tertiærknapper</a>
 </li>
 
     
@@ -2592,7 +2592,7 @@
 
 
 <li class=" " role="none">
-<a href="#primærknap"  role="menuitem">Primærknap</a>
+<a href="#primaerknap"  role="menuitem">Primærknap</a>
 </li>
 
     
@@ -2603,7 +2603,7 @@
 
 
 <li class=" " role="none">
-<a href="#sekundærknapper"  role="menuitem">Sekundærknapper</a>
+<a href="#sekundaerknapper"  role="menuitem">Sekundærknapper</a>
 </li>
 
     
@@ -2614,7 +2614,7 @@
 
 
 <li class=" " role="none">
-<a href="#tertiærknapper"  role="menuitem">Tertiærknapper</a>
+<a href="#tertiaerknapper"  role="menuitem">Tertiærknapper</a>
 </li>
 
     
@@ -3127,18 +3127,29 @@
     </div>
 </div>
 
+<ul>
+  <li>Knapper markeres tydeligt med en fokus tilstand, når brugere ved hjælp af tab-tasten navigerer sig frem til dem.</li>
+  <li>Undgå at anvende <code class="highlighter-rouge">div</code> eller <code class="highlighter-rouge">img</code> tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.</li>
+  <li>Styler du et link, så det ligner en knap, skal du være opmærksom på, at skærmlæsere håndterer et link og en knap forskelligt:
+    <ul>
+      <li>Et link aktiveres ved at trykke ”Enter”.</li>
+      <li>En knap aktiveres ved at trykke ”Space”.</li>
+    </ul>
+  </li>
+</ul>
+
 <h2>Varianter</h2>
 
-<h3>Primær</h3>
+<h3 id="primaerknap">Primær</h3>
 
 <p>Defineres med klassen <code class="highlighter-rouge">button-primary</code>.</p>
 
 <p>Bemærk særlige <a href="/komponenter/buttons/#retningslinjer">retningslinjer</a> for primær knap.</p>
 
-<h3>Sekundær</h3>
+<h3 id="sekundaerknap">Sekundær</h3>
 <p>Defineres med klassen <code class="highlighter-rouge">button-secondary</code>.</p>
 
-<h3>Tertiær</h3>
+<h3 id="tertiaerknap">Tertiær</h3>
 
 <p>Defineres med klassen <code class="highlighter-rouge">button-tertiary</code>.</p>
 

@@ -708,6 +708,17 @@
 
     
 
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#datovælger"  role="menuitem">Datovælger</a>
+</li>
+
+    
+
 </ul>
     
   
@@ -1798,6 +1809,17 @@
 
     
 
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#datovælger"  role="menuitem">Datovælger</a>
+</li>
+
+    
+
 </ul>
     
   
@@ -2266,13 +2288,7 @@
           
 
           
-
-          
-<section class="styleguide-child-container content" id="section-/komponenter/dato/dato-eksempel">
-  
-  
-  
-  <div class="component-preview  component-preview-date-input" aria-label="Eksempel på datoangivelse">
+          <div class="component-preview  component-preview-date-input" aria-label="Eksempel på datoangivelse">
     
     <div class="component-link px-4 py-4">
         <a href="/eksempel/date-input/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
@@ -2284,19 +2300,32 @@
         <legend><label class="form-label">Indsendelsesfrist</label>
             <span class="form-hint">For eksempel: 05 12 2018</span>
         </legend>
-        <span class="form-error-message  d-none" id="form-error-message-input-error" role="alert"></span>
+        <span class="form-error-message  d-none"
+            id="form-error-message-input-error" role="alert"></span>
         <div class="date-group js-calendar-group mt-3">
             <div class="form-group form-group-day">
                 <label class="form-label" for="date-day">Dag</label>
-                <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                <input class="form-input js-calendar-day-input"
+                    id="date-day" value="" type="tel" data-min="1"
+                    data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                    data-input-regex="^[0-9]{0,2}$"
+                    title="Indskriv dag på måneden som tal" />
             </div>
             <div class="form-group form-group-month">
                 <label class="form-label" for="date-month">Måned</label>
-                <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                <input class="form-input js-calendar-month-input"
+                    id="date-month" value="" type="tel" data-min="1"
+                    data-max="12" maxlength="2" pattern="^[0-9]{0,2}$"
+                    data-input-regex="^[0-9]{0,2}$"
+                    title="Indskriv månedens nummer" />
             </div>
             <div class="form-group form-group-year ">
                 <label class="form-label" for="date-year">År</label>
-                <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                <input class="form-input js-calendar-year-input"
+                    id="date-year" value="" type="tel" data-min="1900"
+                    data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
+                    data-input-regex="^[0-9]{0,4}$"
+                    title="Indskriv årstal" />
             </div>
 
         </div>
@@ -2310,39 +2339,28 @@
     
 </div>
 
-  
-  
+          
 
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/dato/dato-retningslinjer">
-  <h2 id="retningslinjer" class="h3">Retningslinjer</h2>
-  
-  
-  <h3 class="h4">Brugervenlighed</h3>
-
-<h4 class="h5">Anvendes til</h4>
+          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
 
 <p>Sætter brugeren i stand til at tilføje struktureret datoinformation.</p>
 
-<h4 class="h5">Anvendes ikke til</h4>
+<h2 class="h3">Anvendes ikke til</h2>
 
 <p>Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/kode/plugins/pikaday/">datepicker pluginet</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.</p>
 
-<h4 class="h5">Vejledning</h4>
+<h2 class="h3">Vejledning</h2>
 
 <p>Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, dvs. dag, måned og år. Felternes labels skal også afspejle det.</p>
 
-<h4 class="h5">Links</h4>
+<h2 class="h3">Links</h2>
 
 <ul class="nobullet-list">
-    <li><a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://design-system.service.gov.uk/patterns/dates/" class="icon-link">GovUK om at spørge brugeren om datoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" class="icon-link">USWDS om datovælgeren<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link">GovUK om fejlmeddelelser generelt<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://design-system.service.gov.uk/patterns/dates/" class="icon-link">GovUK om at spørge brugeren om datoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" class="icon-link">USWDS om datovælgeren<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link">GovUK om fejlmeddelelser generelt<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
-
-</section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/dato/dato-fejl">
   <h2 id="fejlbesked">Fejlbesked</h2>

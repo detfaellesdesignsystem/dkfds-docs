@@ -2374,13 +2374,7 @@
           
 
           
-
-          
-<section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-eksempel">
-  
-  
-  
-  <div class="component-preview  component-preview-text-input" aria-label="Eksempel på tekst felter">
+          <div class="component-preview  component-preview-text-input" aria-label="Eksempel på tekst felter">
     
     <div class="component-link px-4 py-4">
         <a href="/eksempel/text-input/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
@@ -2388,11 +2382,13 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         <div class="form-group">
-    <label class="form-label " for="input-type-text" id="form-label-input-type-text">
+    <label class="form-label " for="input-type-text"
+        id="form-label-input-type-text">
         Inputfelt med label
     </label>
 
-    <input class="form-input   " required="" id="input-type-text" value="" name="input-type-text" type="text" />
+    <input class="form-input   " required id="input-type-text" value=""
+        name="input-type-text" type="text">
 </div>
     </div>
     
@@ -2402,47 +2398,39 @@
     
 </div>
 
-  
-  
+          
 
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-retningslinjer">
-  <h2 id="retningslinjer">Retningslinjer</h2>
-  
-  
-  <h3 class="h4">Tilgængelighed</h3>
-
-<p>Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.</p>
-
-<h3 class="h4">Brugervenlighed</h3>
-
-<h4 class="h5">Anvendes til</h4>
+          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
 
 <ul>
   <li>Bruger-input af information i form af bogstaver, tal og en kombination af begge.</li>
-  <li>Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.</li>
   <li>Når det er nemmere for brugeren at skrive information end at vælge den gennem en kompliceret proces. Ofte kan et datofelt til indtastning være nemmere at anvende - og gøre tilgængeligt - end en date picker funktion.</li>
   <li>Når brugeren skal kunne copy/paste information ind i en formular.</li>
-  <li>Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på 27 tegn.</li>
-  <li>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</li>
 </ul>
 
-<h4 class="h5">Anvendes ikke til</h4>
+<p>Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på 27 tegn.</p>
+
+<p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
 
 <p>Når brugeren skal vælge ud fra et prædefineret sæt af værdier, og der er behov for datakonsistens.</p>
 
-<h4 class="h5">Vejledning</h4>
+<h2 class="h3">Vejledning</h2>
 
-<ul>
-  <li>Vis kun fejlbeskeder, når brugeren har indtastet en ugyldig værdi.</li>
-  <li>Fejlbeskeder skal være meningsfulde og hjælpsomme.</li>
-  <li>Placér fejlbeskeder mellem label og feltet, som bliver markeret med rødt.</li>
-  <li>Felter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.</li>
-  <li>Brug feltbredden til at begrænse antallet af tegn i et felt.</li>
-</ul>
+<p>Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.</p>
 
-</section>
+<p>Vis kun fejlbeskeder, når brugeren har indtastet en ugyldig værdi.</p>
+
+<p>Fejlbeskeder skal være meningsfulde og hjælpsomme.</p>
+
+<p>Placér fejlbeskeder mellem label og feltet, som bliver markeret med rødt.</p>
+
+<p>Felter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.</p>
+
+<p>Brug feltbredden til at begrænse antallet af tegn i et felt.</p>
+
+<p>Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.</p>
 
 <section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-fejl">
   <h2 id="fejlbesked">Fejlbesked</h2>
