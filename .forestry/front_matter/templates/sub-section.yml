@@ -1,4 +1,32 @@
 ---
 label: Sub Section
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: order
+  type: number
+  label: Order
+  description: ''
+  default: '10'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+- name: parent
+  type: text
+  config:
+    required: true
+  label: Page Collection Name
+- name: headingClass
+  type: text
+  config:
+    required: false
+    min: '2'
+    max: '2'
+  label: Heading Class
