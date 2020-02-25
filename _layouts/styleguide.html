@@ -46,7 +46,7 @@ layout: default
           {% endif %}
 
           {% if page.component %}
-          {% include code/preview-box.html component=page.component title=page.componentTitle link=page.componentLink code=page.componentCode %}
+          {% include code/preview-box.html component=page.component title=page.componentTitle link=page.componentLink code=page.componentCode url=page.componentUrl %}
           {% endif %}
 
           {{ content }}
