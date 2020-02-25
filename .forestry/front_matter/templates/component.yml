@@ -1,0 +1,19 @@
+---
+label: Component
+hide_body: true
+fields:
+- name: component
+  type: text
+  config:
+    required: false
+  label: Component
+- name: componentTitle
+  type: text
+  config:
+    required: false
+  label: Component description
+- name: componentCode
+  type: text
+  config:
+    required: false
+  label: Link to code page

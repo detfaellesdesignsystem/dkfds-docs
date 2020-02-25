@@ -30,3 +30,8 @@ fields:
     min: '2'
     max: '2'
   label: Heading Class
+- name: component_example
+  type: include
+  config: {}
+  template: component
+  label: Component example
