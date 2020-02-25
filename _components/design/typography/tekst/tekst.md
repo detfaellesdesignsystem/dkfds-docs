@@ -1,20 +1,26 @@
 ---
-permalink: /design/typografi/tekst/
+permalink: "/design/typografi/tekst/"
 title: Tekst
-parentlink: /design/typografi/
+parentlink: "/design/typografi/"
 category: Design_category
 subcategory: Design
 type: component
 layout: styleguide
 anchor: true
-description: ""
+description: ''
 tags:
-- "stor tekst"
-- "manchet"
-- "manchet tekst"
-- "brødtekst"
-- "hjælpetekst"
-- "fejlbesked"
+- stor tekst
+- manchet
+- manchet tekst
+- brødtekst
+- hjælpetekst
+- fejlbesked
+- Linje
+- længde
+- Linjelængde
+- Linjeafstand
+- afstand
+- linjehøjde
 subnav:
 - text: Manchet tekst
   href: "#manchet-tekst"
@@ -28,6 +34,6 @@ subnav:
   href: "#linjelængde"
 - text: Linjeafstand
   href: "#linjeafstand"
----
 
+---
 {% include child-components.html parent='Tekst' %}
