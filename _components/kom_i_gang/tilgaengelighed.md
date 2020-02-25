@@ -19,9 +19,6 @@ tags:
 - Anmod om dokumentation for behovet for en foreslået kompleks løsning, og tilbyd altid brugeren et alternativ til indhold, du ikke umiddelbart kan gøre tilgængeligt.
 - En selvbetjeningsløsning er ikke tilgængelig bare fordi den er responsiv og mobile-first. Løsningen skal også fungere ensartet og tilbyde samme indhold på tværs af platforme.
 
-
-<p class="mt-6"><a href="https://www.socialdigital.dk/wp-content/uploads/Tilg%C3%A6ngeligt-digitalt-design-Social-Digital.pdf" class="icon-link">Tjek også denne do's & don'ts liste ud (åbner som pdf)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
-
 Har du andre tilgængelighedsværktøj man kan bruge ved udvikling, som du synes vi bør dele i fællesskabet så skriv til os via Github eller på mail.
 
 ### Hvorfor tilgængelighed?
@@ -53,9 +50,7 @@ WebAIM stiller funktionen Wave gratis til rådighed. Wave giver med det samme en
 
 ##### Læs mere om WebAIM
 
-<ul class="nobullet-list">
-<li><a href="https://webaim.org/resources/" class="icon-link">WebAIM<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>   
+<a href="https://webaim.org/resources/" class="icon-link">WebAIM<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
 #### Oplæsning
 
