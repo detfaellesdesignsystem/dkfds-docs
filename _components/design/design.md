@@ -17,6 +17,8 @@ Hvis du anvender designsystemets kode følger designets styling automatisk med.
 
 Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbetjeningsløsning imiterer designet, så din selvbetjeningsløsning passer til borger.dk og Virk.
 
+<iframe title="YouTube video om Det Fælles Designsystem til designere og UX'ere" class="youtube-video mt-4" width="560" height="315" src="https://www.youtube-nocookie.com/embed/j8s4YPAua6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
 {:.d-md-none}
 - <a href="/design/farver/" class="bold-link">Farver</a>
 - <a href="/design/typografi/" class="bold-link">Typografi</a>
