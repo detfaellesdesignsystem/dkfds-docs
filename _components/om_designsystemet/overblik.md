@@ -16,6 +16,9 @@ subnav: []
 
 Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde omkring kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.
 
-<div class="video-container">
-    <iframe title="YouTube video om Det Fælles Designsystem" class="youtube-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sFRv0SrC9Rw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="video-paragraph">
+    <div class="video-container">
+        <iframe title="YouTube video om Det Fælles Designsystem" class="youtube-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sFRv0SrC9Rw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </div>

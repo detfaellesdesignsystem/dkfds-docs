@@ -858,6 +858,9 @@ code {
   display: inline-block;
 }
 
+.video-paragraph{
+  max-width: $text-max-width;
+}
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
