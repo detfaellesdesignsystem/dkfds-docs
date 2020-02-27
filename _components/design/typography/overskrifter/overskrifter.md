@@ -66,7 +66,7 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
     <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-{:.h3 #felt--og-tabeloverskrifter-label-og-th}
+{:#felt--og-tabeloverskrifter-label-og-th}
 ## Felt- og tabeloverskrifter (label og th)
 
 {:.font-lead}
@@ -78,7 +78,6 @@ I eksemplet nedenfor viser vi, hvordan overskrifter til felter og overskrifter i
 - <a href="/komponenter/felter/">Se dokumentationen om felter til udviklere</a>
 - <a href="/komponenter/tables/">Se dokumentationen om tabeller til udviklere</a>
 
-{:.h4}
 ### Design
 
 {:.table .table--borderless .table--responsive-headers}
