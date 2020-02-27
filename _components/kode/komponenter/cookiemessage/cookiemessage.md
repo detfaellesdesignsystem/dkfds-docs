@@ -16,6 +16,9 @@ subcategory: Kode
 
 ### HTML Struktur
 
+
+{% include code/syntax.html component="cookie-message" %}
+
 Koden indsættes under body og før header. Gør man brug af <a href="/komponenter/skip-link/">skip link</a>, skal koden indsættes herefter.
 
 Bemærk at DKFDS på nuværende tidspunkt kun leverer HTML og CSS til denne komponent. Funktionaliteten skal man derfor selv håndtere.

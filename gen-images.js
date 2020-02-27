@@ -6,16 +6,16 @@ var targetRootDir = "img/examples/";
 var themes = ["virk", "borgerdk"];
 
 var exampleUrls = [
-    {"url": "/eksempel/header.html", "filename": "header.png", "width": 992, "height": 322 },
-    {"url": "/eksempel/header-simple.html", "filename": "header-simple.png", "width": 992, "height": 158 },
-    {"url": "/eksempel/header-medium.html", "filename": "header-medium.png", "width": 992, "height": 262 },
-    {"url": "/eksempel/header-full.html", "filename": "header-full.png", "width": 992, "height": 322 },
-    {"url": "/eksempel/footer-simple.html", "filename": "footer-simple.png", "width": 1017, "height": 184 },
-    {"url": "/eksempel/footer-three-columns.html", "filename": "footer-three-columns.png", "width": 1017, "height": 448 },
-    {"url": "/eksempel/footer-four-columns.html", "filename": "footer-four-columns.png", "width": 1017, "height": 352 },
-    {"url": "/eksempel/footer-complex.html", "filename": "footer-complex.png", "width": 1017, "height": 376 },
-    {"url": "/eksempel/footer-logo.html", "filename": "footer-logo.png", "width": 1017, "height": 352 },
-    {"url": "/eksempel/cookie-message.html", "filename": "cookie-message.png", "width": 771, "height": 294 }
+    {"url": "/eksempel/header/", "filename": "header.png", "width": 992, "height": 322 },
+    {"url": "/eksempel/header-simple/", "filename": "header-simple.png", "width": 992, "height": 158 },
+    {"url": "/eksempel/header-medium/", "filename": "header-medium.png", "width": 992, "height": 262 },
+    {"url": "/eksempel/header-full/", "filename": "header-full.png", "width": 992, "height": 322 },
+    {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 184 },
+    {"url": "/eksempel/footer-three-columns/", "filename": "footer-three-columns.png", "width": 1017, "height": 448 },
+    {"url": "/eksempel/footer-four-columns/", "filename": "footer-four-columns.png", "width": 1017, "height": 352 },
+    {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
+    {"url": "/eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
+    {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 294 }
 ];
 
 (async () => {
@@ -35,7 +35,7 @@ var exampleUrls = [
 
             if (exampleUrls[i].filename !== "cookie-message.png"){
                 await page.evaluate(() => {
-                    let cookieMessage = document.getElementById('cookieMessage');
+                    let cookieMessage = document.getElementById('cookiePrompt').parentNode;
                     if (cookieMessage !== null) {
                         cookieMessage.style.display = 'none';
                     }

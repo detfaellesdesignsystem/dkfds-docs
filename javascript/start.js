@@ -3,7 +3,7 @@ import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
 var iFrameResize = require('./vendor/iframeResizer');
 const TestFDS = require('./test');
-import {CookiePrompter, NetMinersTracker, CookieMgr } from "./vendor/CookiePrompter";
+import {CookiePrompter, PiwikProTracker, CookieMgr } from "./vendor/CookiePrompter";
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
@@ -34,27 +34,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
 $(document).ready(function () {
 
-    if (document.getElementsByClassName('page-cookie-message-html').length === 0) {
+    if (document.getElementsByClassName('page-cookie-message').length === 0) {
         let cookiePrompt = CookiePrompter.init({
             trackers: [{
-                name: NetMinersTracker,
+                name: PiwikProTracker,
                 config: {
-                    scriptLocation: 'https://es.netminers.dk/script/383053B8-D66E-4E78-8B58-63F6A2DC54EE/',
-                    netminersAccount: "es"
+                    account: 'e1985634-0fc1-4992-baf6-59088ee23b2a',
+                    piwikProPath: 'erst.containers.piwik.pro'
                 }
             }],
             readMoreUrl: '/privatlivspolitik',
-            showOKbutton: false,
-            textOKbutton: 'Accepter cookies',
-            textAccept: 'Accepter cookies',
-            textDontAccept: 'Nej tak til cookies',
             enableLog: false,
             explicitAccept: true,
-            textHeader: '',
-            textblock1: 'Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres. Læs mere om ',
-            textNoThanks: 'Nej tak til cookies',
-            textblock2: '.',
-            textReadMore: 'vores brug af cookies',
+            textHeader: 'Cookies',
+            textblock1: 'Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres.',
+            textblock2: '',
+            textReadMore: 'Læs mere om vores brug af cookies',
+            textDontAccept: 'Nej tak til cookies',
+            textAccept: 'Accepter cookies',
             onReady: function () {
                 if ($('#cookieMessage').length !== 0) {
                     $('body').addClass('cookie-message-active');
@@ -65,6 +62,7 @@ $(document).ready(function () {
             },
             onOptOut: function () {
                 $('body').removeClass('cookie-message-active');
+
             }
         });
     }
