@@ -1,7 +1,11 @@
 ---
 title: Privatlivspolitik
 parent: Privatlivspolitik-Cookies
-order: "10"
+order: 10
+headingClass: ''
+component: ''
+componentTitle: ''
+componentCode: ''
 
 ---
 På denne side kan du læse om vores behandling af dine personoplysninger og dine rettigheder.
