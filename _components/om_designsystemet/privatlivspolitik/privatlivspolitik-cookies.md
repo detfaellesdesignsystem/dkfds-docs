@@ -1,9 +1,9 @@
 ---
 title: Brug af cookies på Det Fælles Designsystem (FDS)
 parent: Privatlivspolitik-Cookies
-order: 20
----
+order: "20"
 
+---
 <h3 class="h4">Hvad er en cookie?</h3>
 
 En cookie er et lille stykke kode, der bliver gemt på din computer, telefon eller hvad du bruger til at surfe på internettet med. Cookies har mange anvendelsesmuligheder. 
@@ -19,7 +19,7 @@ Hvis du helt vil undgå cookies, kan du sætte din browser op til ikke at accept
 
 <h3>Cookies til statistik</h3>
 
-Vi samler anonymiseret statistik ved hjælp af statistikprogrammet Netminers. Vi bruger statistikkerne til at finde uhensigtsmæssigheder på websitet, så vi kan forbedre din oplevelse af FDS.
+Vi samler anonymiseret statistik ved hjælp af statistikprogrammet Piwik PRO. Vi bruger statistikkerne til at finde uhensigtsmæssigheder på websitet, så vi kan forbedre din oplevelse af FDS.
 
 Første gang du lander på FDS, ser du et banner med information om cookies til statistik. Hvis du klikker på linket "Nej tak til cookies til statistik", sættes der ingen cookies til statistik, og banneret forsvinder. Derimod sættes en cookie, som husker, at du ikke ønsker, at vi indsamler statistik.
 
@@ -29,7 +29,7 @@ Hvis du klikker dig videre til endnu en side, uden at vælge "Nej tak ...", sæt
 
 Ønsker du ikke længere, at vi samler statistik om din brug af FDS, så kan du vælge "nej" til at vi indsamler statistik nedenfor. Så vil dine besøg på FDS ikke blive registreret til forbedring af brugeroplevelsen. Vi bruger en cookie for at huske dit "nej" til statistik.
 
-Når du klikker på "nej", bliver der ikke sat cookies fra Netminers.
+Når du klikker på "nej", bliver der ikke sat cookies fra Piwik PRO.
 
 <form id="cookieForm" method="post" action="/">
     <div class="form-group">
