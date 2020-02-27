@@ -1,5 +1,4 @@
-
-
+{% if include.component and include.component != '' %}
 <div class="component-preview {{ include.classes }}">
     <!--<div class="loader-container">
         <div class="loader"></div>
@@ -19,3 +18,4 @@
     </div>
     {% endif %}
 </div>
+{% endif %}

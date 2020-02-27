@@ -1,3 +1,4 @@
+{% if include.component and include.component != '' %}
 <div class="component-preview {{ include.classes }} component-preview-{{ include.component | slugify }}" aria-label="{{ include.title }}">
     {% if include.link != false %}
     <div class="component-link px-4 py-4">
@@ -17,3 +18,4 @@
     </div>
     {% endif %}
 </div>
+{% endif %}
