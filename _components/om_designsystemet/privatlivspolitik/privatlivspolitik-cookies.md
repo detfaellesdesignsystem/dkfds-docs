@@ -1,7 +1,11 @@
 ---
 title: Brug af cookies på Det Fælles Designsystem (FDS)
 parent: Privatlivspolitik-Cookies
-order: "20"
+order: 20
+headingClass: ''
+component: ''
+componentTitle: ''
+componentCode: ''
 
 ---
 <h3 class="h4">Hvad er en cookie?</h3>
