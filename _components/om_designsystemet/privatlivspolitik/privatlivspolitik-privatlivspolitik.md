@@ -1,7 +1,8 @@
 ---
 title: Privatlivspolitik
 parent: Privatlivspolitik-Cookies
-order: 10
+order: "10"
+
 ---
 På denne side kan du læse om vores behandling af dine personoplysninger og dine rettigheder.
 
@@ -28,7 +29,7 @@ Når du anvender FDS, vil vi i forbindelse med indsamling af brugsstatistik regi
 
 <h3 class="h4">Hvor behandles dine personoplysninger?</h3>
 
-IP-adressen gemmes hos Netminers.
+IP-adressen gemmes hos Piwik PRO.
 
 <h3 class="h4">Hvem har adgang til dine oplysninger?</h3>
 
@@ -36,7 +37,7 @@ Dine personoplysninger bliver videregivet til følgende modtagere:
 
 Medarbejderne i Erhvervsstyrelsen har adgang til dine personoplysninger i det omfang, det er nødvendigt for at forbedre produktet.
 
-Netminers er databehandlere for hovedparten af FDS-behandlinger af personoplysninger. De har adgang efter instruks fra FDS-teamet i det omfang, det er nødvendigt for at kunne foretage driften af IT-systemerne.
+Piwik PRO er databehandlere for hovedparten af FDS-behandlinger af personoplysninger. De har adgang efter instruks fra FDS-teamet i det omfang, det er nødvendigt for at kunne foretage driften af IT-systemerne.
 
 <h3 class="h4">Opbevaring af dine personoplysninger</h3>
 
