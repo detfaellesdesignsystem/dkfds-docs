@@ -21,6 +21,8 @@ anchor: true
 subnav:
 - text: Overskrift som link
   href: "#overskrift-som-link"
+- text: Overskrift i søgeresultat
+  href: overskrift-i-soegeresultat
 
 ---
 Overskriftstyperne har to formål:
@@ -61,10 +63,9 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
 {:.h4}
 ### Hvis du vil vide mere
 
-<ul class="nobullet-list">
-    <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" class="icon-link">H42: Using h1-h6 to identify headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
+{:.nobullet-list}
+- <a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" class="icon-link">H42: Using h1-h6 to identify headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
 {:#overskrift-som-link}
 ## Overskrift som link
@@ -100,4 +101,3 @@ Må ikke anvendes til at fremhæve links i tekst eller som erstatning for <a hre
 ### Vejledning
 
 Et godt eksempel på brugen af søgeresultatlinks er googles søgeresultatside.
-
