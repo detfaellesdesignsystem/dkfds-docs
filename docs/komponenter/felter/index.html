@@ -2390,8 +2390,9 @@
         Inputfelt med label
     </label>
 
-    <input class="form-input   " required id="input-type-text" value=""
-        name="input-type-text" type="text">
+    <input class="form-input " required id="input-type-text" value=""
+        name="input-type-text" type="text"
+        aria-describedby="input-hint-message-input-type-text ">
 </div>
     </div>
     
@@ -2457,10 +2458,13 @@
     <span class="form-hint" id="input-hint-message-form-error">
         Fx 12345678
     </span>
-    <span class="form-error-message" id="form-error-message-form-error" role="alert">
+    <span class="form-error-message" id="form-error-message-form-error">
         Hjælpsom fejlbesked
     </span>
-    <input class="form-input   " required="" id="form-error" value="" name="form-error" type="text" aria-invalid="true" aria-describedby="form-error-message-form-error" aria-labelledby="form-label-form-error input-hint-message-form-error" />
+    &lt;input class="form-input " required id="form-error" value=""
+        name="form-error" type="text"
+        aria-describedby="input-hint-message-form-error form-error-message-form-error"" aria-labelledby="
+        form-label-form-error " aria-invalid=" true"&gt;
 </div>
     </div>
     
@@ -2494,7 +2498,7 @@
         Fx 12345678
     </span>
 
-    <input class="form-input   " required="" id="input-type-text" value="" name="input-type-text" type="text" aria-labelledby="form-label-input-type-text input-hint-message-input-type-text" />
+    <input class="form-input " required="" id="input-type-text" value="" name="input-type-text" type="text" aria-describedby="input-hint-message-input-type-text " aria-labelledby="form-label-input-type-text " />
 </div>
     </div>
     
@@ -2526,7 +2530,7 @@
             (frivilligt)</span>
     </label>
 
-    <input class="form-input   " id="input-optional" value="" name="input-optional" type="text" />
+    <input class="form-input " id="input-optional" value="" name="input-optional" type="text" aria-describedby="input-hint-message-input-optional " />
 </div>
     </div>
     
@@ -2650,7 +2654,7 @@
         Inputfelt som er låst
     </label>
 
-    <input class="form-input   " required="" id="input-disabled" value="" name="input-disabled" type="text" disabled="disabled" />
+    <input class="form-input " required="" id="input-disabled" value="" name="input-disabled" type="text" disabled="disabled" aria-describedby="input-hint-message-input-disabled " />
 </div>
     </div>
     
@@ -2681,7 +2685,7 @@
         Inputfelt som er readonly
     </label>
 
-    <input class="form-input   " required="" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
+    <input class="form-input " required="" id="input-readonly" value="012345-6789" name="input-readonly" type="text" aria-describedby="input-hint-message-input-readonly " readonly="" />
 </div>
     </div>
     
