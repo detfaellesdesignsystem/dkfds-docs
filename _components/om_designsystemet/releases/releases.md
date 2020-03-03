@@ -6,24 +6,6 @@ category: Om_designsystemet_category
 subcategory: Om designsystemet
 description: Release notes for Det Fælles Designsystem
 tags:
-- 5.3.0
-- 5.2.0
-- 5.1.0
-- 5.0.0
-- 4.4.0
-- 4.3.0
-- 4.2.0
-- 4.1.1
-- 4.1.0
-- 4.0.1
-- '4.4'
-- '4.0'
-- '5.0'
-- '5.2'
-- '5.1'
-- '4.3'
-- '4.1'
-- 4.0.0
 - '1'
 - '2'
 - '3'
