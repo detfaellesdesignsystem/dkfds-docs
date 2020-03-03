@@ -19,8 +19,8 @@ subcategory: Design
 layout: styleguide
 anchor: true
 subnav:
-- text: Felt- og tabeloverskrifter
-  href: "#felt--og-tabeloverskrifter-label-og-th"
+- text: Overskrift som link
+  href: "#overskrift-som-link"
 
 ---
 Overskriftstyperne har to formål:
@@ -66,46 +66,38 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
     <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-{:#felt--og-tabeloverskrifter-label-og-th}
-## Felt- og tabeloverskrifter (label og th)
+{:#overskrift-som-link}
+## Overskrift som link
 
-{:.font-lead}
-I eksemplet nedenfor viser vi, hvordan overskrifter til felter og overskrifter i tabeller ser ud. Overskrifter til felter og tabeller er ens, men der er forskel i koden.
+{% include code/preview.html component="heading-link" %}
 
-{% include code/preview.html component="labels" %}
+### Anvendes til
 
-{:.nobullet-list}
-- <a href="/komponenter/felter/">Se dokumentationen om felter til udviklere</a>
-- <a href="/komponenter/tables/">Se dokumentationen om tabeller til udviklere</a>
+Overblikslinks kan anvendes på overblikssider, hvor brugeren kan navigere til forskellige indberetninger i samme selvbetjeningsløsning. Overblikslinks kan også anvendes til at navigere til forskellige sektioner i en løsning.
 
-### Design
+### Anvendes ikke til
 
-{:.table .table--borderless .table--responsive-headers}
-| Tekst                  | Skriftype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
-|------------------------|---------------|-----------------|------------------------------|------------|
-| Feltoverskrift (label) | IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
-| Kolonneoverskrift (th) | IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
+Må ikke bruges til at fremhæve links eller som erstatning for <a href="/design/typografi/links/">standard links</a> i selvbetjeningsløsninger.
 
-{:#label-retningslinjer}
-### Retningslinjer
+### Vejledning
 
-#### Feltoverskrift (label)
+Et godt eksempel på brugen af overblikslinks er fx <a href="https://www.gov.uk/" class="icon-link">forsiden af gov.uk<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, hvor de anvendes sammen med tekst til at give brugeren en generel ide om omfanget af indholdet i løsningen.
 
-Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er dit spørgsmål til brugeren og feltet, som brugerne kan skrive i, er svaret de giver dig.              
 
-- Feltoverskrifter er dine spørgsmål til brugeren.  
-- Sørg for at brugeren kan forstå, hvad du beder om svar på.
-- Undgå lange og komplekse feltoverskrifter.
-- Stil kun ét spørgsmål i en feltoverskrift.
-- Feltoverskrifter placeres altid over feltet, som anvist under formularelementer.
-- Alle felter skal have en feltoverskrift.
+{:#overskrift-i-soegeresultat}
+## Overskrift i søgeresultat
 
-<a href="/komponenter/felter/">Se eksempel på brug af feltoverskrift (label)</a>
+{% include code/preview.html component="search-link" %}
 
-#### Tabeloverskrift (th)
+### Anvendes til
 
-Tabeloverskrifter er visuelt ens med feltoverskrifter. Du kan bruge dem til at skabe overblik over rækker eller kolonner af data i tabeller og lister.
+Søgeresultatlinks bruges til at skabe en overskuelig struktur i søgeresultater. 
 
-Tabeloverskrifter beskriver, hvad indholdet i en række eller kolonne angiver.
+### Anvendes ikke til
 
-<a href="/komponenter/tables/">Se eksempel på brug af tabeloverskrift (th)</a>
+Må ikke anvendes til at fremhæve links i tekst eller som erstatning for <a href="/design/typografi/links/">standard links</a>.
+
+### Vejledning
+
+Et godt eksempel på brugen af søgeresultatlinks er googles søgeresultatside.
+

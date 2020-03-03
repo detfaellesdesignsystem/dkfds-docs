@@ -69,7 +69,7 @@ function populateSearch (results, query, start){
             }
             let page = results[r];
             html += '<div class="page-result">';
-            html += '<h2 class="h4 mb-0 page-title"><a href="' + page.url + '">' + page.title;
+            html += '<h2 class="h4 mb-0 page-title"><a href="' + page.url + '" class="search-link">' + page.title;
             if(page.subcategory === "Kode") {
                 html += '&nbsp;<span class="page-category weight-normal small-text">[' + page.subcategory + ']</span>';
             }

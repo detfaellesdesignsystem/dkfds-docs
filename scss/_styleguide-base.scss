@@ -29,6 +29,13 @@
   }
 }
 // Search
+
+a.search-link{
+  &.link-hover{
+    text-decoration: underline;
+  }
+}
+
 header .navbar .search-form{
   align-self: center;
 
@@ -47,23 +54,7 @@ header #search-form-mobile{
 }
 
 .page-result {
-  .h4 a {
-    &:link {
-      text-decoration: none;
-      color: $color-link;
-    }
-    &:visited{
-      color: $color-link-visited;
-      text-decoration: none;
-    }
-    &:hover {
-      text-decoration: underline;
-      color: $color-link-hover;
-    }
-    &:active{
-      color: $color-link;
-      text-decoration: underline;
-    }
+  .h4 a.search-link {
     .page-category{
       text-transform: uppercase;
     }
