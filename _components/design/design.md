@@ -19,7 +19,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
 
 <div class="video-paragraph">
     <div class="video-container mt-4">
-        <iframe title="YouTube video om Det Fælles Designsystem til designere og UX'ere" class="youtube-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/j8s4YPAua6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        <iframe title="YouTube video om Det Fælles Designsystem til designere og UX'ere" class="youtube-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dvXn9a0_8tQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
     </div>
 </div>
 
