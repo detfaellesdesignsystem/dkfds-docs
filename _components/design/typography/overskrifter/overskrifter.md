@@ -22,7 +22,7 @@ subnav:
 - text: Overskrift som link
   href: "#overskrift-som-link"
 - text: Overskrift i søgeresultat
-  href: overskrift-i-soegeresultat
+  href: "#overskrift-i-soegeresultat"
 
 ---
 Overskriftstyperne har to formål:
