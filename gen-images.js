@@ -15,7 +15,7 @@ var exampleUrls = [
     {"url": "/eksempel/footer-four-columns/", "filename": "footer-four-columns.png", "width": 1017, "height": 352 },
     {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
     {"url": "/eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
-    {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 294 }
+    {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 270 }
 ];
 
 (async () => {
@@ -42,8 +42,11 @@ var exampleUrls = [
 
                     window.scrollTo(0, 0);
                 });
+            } else{
+                await page.evaluate(() => {
+                    document.getElementsByClassName('cookie-container')[0].classList.add('m-5');
+                });
             }
-
 
             var pdfFileName = targetRootDir + '/' + themes[t] + '-' + exampleUrls[i].filename;
 

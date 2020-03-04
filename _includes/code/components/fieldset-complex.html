@@ -6,8 +6,8 @@
             Fornavn
         </label>
 
-        <input class="form-input " id="fnavn" value="" name="fnavn"
-            type="text" aria-describedby="input-hint-message-fnavn ">
+        <input class="form-input   " id="fnavn" value="" name="fnavn"
+            type="text">
     </div>
     <!-- Felt slut: Fornavn -->
     <!-- Felt start: Efternavn -->
@@ -16,8 +16,8 @@
             Efternavn
         </label>
 
-        <input class="form-input " id="enavn" value="" name="enavn"
-            type="text" aria-describedby="input-hint-message-enavn ">
+        <input class="form-input   " id="enavn" value="" name="enavn"
+            type="text">
     </div>
     <!-- Felt slut: Efternavn -->
     <!-- Felt start: E-mail adresse -->
@@ -26,8 +26,8 @@
             E-mail adresse
         </label>
 
-        <input class="form-input " id="email" value="" name="email"
-            type="text" aria-describedby="input-hint-message-email ">
+        <input class="form-input   " id="email" value="" name="email"
+            type="text">
     </div>
     <!-- Felt slut: E-mail adresse -->
     <!-- Felt start: Telefonnr -->
@@ -36,8 +36,8 @@
             Telefonnr.
         </label>
 
-        <input class="form-input " id="telefon" value="" name="telefon"
-            type="text" aria-describedby="input-hint-message-telefon ">
+        <input class="form-input   " id="telefon" value="" name="telefon"
+            type="text">
     </div>
     <!-- Felt slut: Telefonnr -->
 
@@ -47,15 +47,21 @@
             <legend class="h4">Hvordan vil du helst kontaktes?</legend>
             <ul class="nobullet-list">
                 <li>
-                    <input id="" type="radio" name="" value=""
-                        class="form-radio   " />
-                    <label for="" id="form-label-" class=""> </label>
+                    <input id="kontakt-telefon" type="radio" name="kontakt"
+                        value="kontakt-telefon"
+                        class="form-radio  radio-large " />
+                    <label for="kontakt-telefon"
+                        id="form-label-kontakt-telefon" class="">Pr.
+                        telefon </label>
 
                 </li>
                 <li>
-                    <input id="" type="radio" name="" value=""
-                        class="form-radio   " />
-                    <label for="" id="form-label-" class=""> </label>
+                    <input id="kontakt-email" type="radio" name="kontakt"
+                        value="kontakt-email"
+                        class="form-radio  radio-large " />
+                    <label for="kontakt-email"
+                        id="form-label-kontakt-email" class="">Pr. e-mail
+                    </label>
 
                 </li>
             </ul>
@@ -111,7 +117,8 @@
                         <span class="form-hint">For eksempel: 05 12
                             1987</span></legend>
                     <span class="form-error-message  d-none"
-                        id="form-error-message-input-error"></span>
+                        id="form-error-message-input-error"
+                        role="alert"></span>
                     <div class="date-group js-calendar-group mt-3">
                         <div class="form-group form-group-day">
                             <label class="form-label"
@@ -158,16 +165,20 @@
                     <legend class="h5">Bor du i Odense?</legend>
                     <ul class="nobullet-list">
                         <li>
-                            <input id="" type="radio" name="" value=""
-                                class="form-radio   " />
-                            <label for="" id="form-label-" class="">
+                            <input id="odense-ja" type="radio"
+                                name="odense" value="odense-ja"
+                                class="form-radio  radio-large " />
+                            <label for="odense-ja"
+                                id="form-label-odense-ja" class="">Ja
                             </label>
 
                         </li>
                         <li>
-                            <input id="" type="radio" name="" value=""
-                                class="form-radio   " />
-                            <label for="" id="form-label-" class="">
+                            <input id="odense-nej" type="radio"
+                                name="odense" value="odense-nej"
+                                class="form-radio  radio-large " />
+                            <label for="odense-nej"
+                                id="form-label-odense-nej" class="">Nej
                             </label>
 
                         </li>

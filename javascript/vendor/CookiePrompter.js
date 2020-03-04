@@ -583,8 +583,8 @@ var CookiePrompter = (function () {
         var html = [];
         html.push('<div class="cookie-message" id="cookiePrompt" role="alertdialog" aria-labelledby="cookieMessageTitle">');
         html.push('<div class="cookie-text">');
-        html.push('<h2 class="h5 mt-0" id="cookieMessageTitle">' + config.textHeader + '</h2>');
-        html.push('<p>' + config.textblock1);
+        html.push('<h2 class="h4 mt-0 mb-2" id="cookieMessageTitle">' + config.textHeader + '</h2>');
+        html.push('<p class="mt-0">' + config.textblock1);
         html.push(config.textblock2);
 
         if (config.readMoreUrl && document.location.hash !== '#cookieprompt') {

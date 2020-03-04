@@ -3106,7 +3106,7 @@
         Inputfelt med label
     </label>
 
-    <input class="form-input " required="" id="input-type-text" value="" name="input-type-text" type="text" aria-describedby="input-hint-message-input-type-text " />
+    <input class="form-input   " required="" id="input-type-text" value="" name="input-type-text" type="text" />
 </div>
     </div>
     
@@ -3132,9 +3132,8 @@
         Inputfelt med label
     <span class="nt">&lt;/label&gt;</span>
 
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">value=</span><span class="s">""</span>
-        <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span>
-        <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-type-text "</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">value=</span><span class="s">""</span>
+        <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
@@ -3162,13 +3161,14 @@
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-form-error"</span><span class="nt">&gt;</span>
         Fx 12345678
     <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"form-error-message-form-error"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"form-error-message-form-error"</span>
+        <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
         Hjælpsom fejlbesked
     <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"form-error"</span> <span class="na">value=</span><span class="s">""</span>
-        <span class="na">name=</span><span class="s">"form-error"</span> <span class="na">type=</span><span class="s">"text"</span>
-        <span class="na">aria-describedby=</span><span class="s">"input-hint-message-form-error form-error-message-form-error"</span><span class="err">"</span> <span class="na">aria-labelledby=</span><span class="s">"
-        form-label-form-error "</span> <span class="na">aria-invalid=</span><span class="s">" true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"form-error"</span> <span class="na">value=</span><span class="s">""</span>
+        <span class="na">name=</span><span class="s">"form-error"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
+        <span class="na">aria-describedby=</span><span class="s">"form-error-message-form-error"</span>
+        <span class="na">aria-labelledby=</span><span class="s">"form-label-form-error input-hint-message-form-error"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
@@ -3204,9 +3204,8 @@
             (frivilligt)<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/label&gt;</span>
 
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">id=</span><span class="s">"input-optional"</span> <span class="na">value=</span><span class="s">""</span>
-        <span class="na">name=</span><span class="s">"input-optional"</span> <span class="na">type=</span><span class="s">"text"</span>
-        <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-optional "</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">id=</span><span class="s">"input-optional"</span> <span class="na">value=</span><span class="s">""</span>
+        <span class="na">name=</span><span class="s">"input-optional"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
@@ -3236,10 +3235,9 @@
         Fx 12345678
     <span class="nt">&lt;/span&gt;</span>
 
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">value=</span><span class="s">""</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">value=</span><span class="s">""</span>
         <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span>
-        <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-type-text "</span>
-        <span class="na">aria-labelledby=</span><span class="s">"form-label-input-type-text "</span><span class="nt">&gt;</span>
+        <span class="na">aria-labelledby=</span><span class="s">"form-label-input-type-text input-hint-message-input-type-text"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
@@ -3290,9 +3288,8 @@
         Inputfelt som er låst
     <span class="nt">&lt;/label&gt;</span>
 
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-disabled"</span> <span class="na">value=</span><span class="s">""</span>
-        <span class="na">name=</span><span class="s">"input-disabled"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">disabled=</span><span class="s">"disabled"</span>
-        <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-disabled "</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-disabled"</span> <span class="na">value=</span><span class="s">""</span>
+        <span class="na">name=</span><span class="s">"input-disabled"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
@@ -3317,9 +3314,8 @@
         Inputfelt som er readonly
     <span class="nt">&lt;/label&gt;</span>
 
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-readonly"</span>
-        <span class="na">value=</span><span class="s">"012345-6789"</span> <span class="na">name=</span><span class="s">"input-readonly"</span> <span class="na">type=</span><span class="s">"text"</span>
-        <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-readonly "</span> <span class="na">readonly</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input   "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-readonly"</span>
+        <span class="na">value=</span><span class="s">"012345-6789"</span> <span class="na">name=</span><span class="s">"input-readonly"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">readonly</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 

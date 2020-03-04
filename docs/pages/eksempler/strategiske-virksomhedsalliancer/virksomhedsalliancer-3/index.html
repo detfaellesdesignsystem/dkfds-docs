@@ -232,12 +232,11 @@
                         ekskl. det aktuelle projekt.
                     </span>
 
-                    <input class="form-input input-width-m" id="id-state"
+                    <input class="form-input  input-width-m " id="id-state"
                         value=""
                         name="Input til statsstøtte (EU de-minimis) i DKK"
                         type="text"
-                        aria-describedby="input-hint-message-id-state "
-                        aria-labelledby="form-label-id-state ">
+                        aria-labelledby="form-label-id-state input-hint-message-id-state">
                 </div>
             </div>
 
@@ -249,10 +248,18 @@
                     <ul class="nobullet-list">
                         <li>
 
-                            <input id="" type="radio" name="" value=""
-                                class="form-radio   " />
-                            <label for="" id="form-label-" class="">
-                            </label>
+                            <input id="id-state-yes" type="radio"
+                                name="minimis" value="Ja"
+                                class="form-radio  radio-large "
+                                data-js-target="#collapse-radio"
+                                aria-controls="collapse-radio"
+                                aria-expanded="false" />
+                            <label for="id-state-yes"
+                                id="form-label-id-state-yes"
+                                class="radio-large"
+                                data-js-target="#collapse-radio"
+                                aria-controls="collapse-radio"
+                                aria-expanded="false">Ja </label>
 
                             <div id="collapse-radio" aria-hidden="true"
                                 class="box-border-l collapsed">
@@ -265,11 +272,10 @@
                                         </label>
 
                                         <input
-                                            class="form-input input-width-m"
+                                            class="form-input  input-width-m "
                                             id="id-minimis-name" value=""
                                             name="Input til ordningens navn"
-                                            type="text"
-                                            aria-describedby="input-hint-message-id-minimis-name ">
+                                            type="text">
                                     </div>
 
                                     <div class="form-group  ">
@@ -282,7 +288,8 @@
                                             </legend>
                                             <span
                                                 class="form-error-message  d-none"
-                                                id="form-error-message-input-error"></span>
+                                                id="form-error-message-input-error"
+                                                role="alert"></span>
                                             <div
                                                 class="date-group js-calendar-group mt-3">
                                                 <div
@@ -346,11 +353,10 @@
                                         </label>
 
                                         <input
-                                            class="form-input input-width-xs"
+                                            class="form-input  input-width-xs "
                                             id="id-amount" value=""
                                             name="Input til beløb i DKK"
-                                            type="text"
-                                            aria-describedby="input-hint-message-id-amount ">
+                                            type="text">
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label "
@@ -365,22 +371,23 @@
                                         </span>
 
                                         <input
-                                            class="form-input input-width-m"
+                                            class="form-input  input-width-m "
                                             id="id-reference" value=""
                                             name="Input til henvisning til yderligere information om ordningen"
                                             type="text"
-                                            aria-describedby="input-hint-message-id-reference "
-                                            aria-labelledby="form-label-id-reference ">
+                                            aria-labelledby="form-label-id-reference input-hint-message-id-reference">
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li>
 
-                            <input id="" type="radio" name="" value=""
-                                class="form-radio   " />
-                            <label for="" id="form-label-" class="">
-                            </label>
+                            <input id="id-state-no" type="radio"
+                                name="minimis" value="Nej"
+                                class="form-radio  radio-large " />
+                            <label for="id-state-no"
+                                id="form-label-id-state-no"
+                                class="radio-large">Nej </label>
 
                         </li>
                     </ul>

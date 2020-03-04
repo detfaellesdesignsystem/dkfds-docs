@@ -46,7 +46,7 @@ $(document).ready(function () {
             readMoreUrl: '/privatlivspolitik',
             enableLog: false,
             explicitAccept: true,
-            textHeader: 'Cookies',
+            textHeader: 'Fortæl os om du accepterer cookies',
             textblock1: 'Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres.',
             textblock2: '',
             textReadMore: 'Læs mere om vores brug af cookies',
