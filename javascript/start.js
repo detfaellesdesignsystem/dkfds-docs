@@ -43,7 +43,7 @@ $(document).ready(function () {
                     piwikProPath: 'erst.containers.piwik.pro'
                 }
             }],
-            readMoreUrl: '/privatlivspolitik',
+            readMoreUrl: '/omdesignsystemet/privatlivspolitik-cookies/',
             enableLog: false,
             explicitAccept: true,
             textHeader: 'Fortæl os om du accepterer cookies',
