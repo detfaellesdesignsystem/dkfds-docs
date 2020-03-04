@@ -10,10 +10,22 @@ subcategory: Komponenter
 description: "Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner af indhold og kun få vist en sektion af gangen."
 tags:
 lead: "Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere ser de skjulte sektioner, når du anvender faneblade."
-component: tabnav
-componentTitle: "Eksempel på faneblad"
-componentCode: "/kode/komponenter/faneblad/"
 ---
+
+<div class="alert alert-warning">
+    <div class="alert-body">
+        <p class="alert-heading">Eksperimentel</p>
+        <p>Denne komponent er for nuværende eksperimentel, da der afventes yderligere undersøgelser.</p>
+        <p>Komponenten lægger sig op af <a href="https://design-system.service.gov.uk/components/tabs/" class="icon-link">GOV.UK Design Systems tab komponent<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-2/tabs.html" class="icon-link">W3s practice eksempler<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, hvor der afventes yderligere info.</p>
+        <p>Brugerundersøgelser er efterspurgt for at bekræfte:</p>
+        <ul>
+            <li>at denne tilgang til faneblade er den bedste løsning for skærmlæsere og brugere af tastatur</li>
+            <li>hvordan denne komponent skal opføre sig på små skærme</li>
+        </ul>
+    </div>
+</div>
+
+{% include code/preview-box.html component="tabnav" title="Eksempel på faneblad" link="true" code="/kode/komponenter/faneblad/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
