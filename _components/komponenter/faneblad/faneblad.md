@@ -1,17 +1,20 @@
 ---
-permalink: /komponenter/faneblad/
+permalink: "/komponenter/faneblad/"
 redirect_from:
-- /komponenter/tabnav/
+- "/komponenter/tabnav/"
 layout: styleguide
 type: component
 title: Faneblade
 category: Komponenter_category
 subcategory: Komponenter
-description: "Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner af indhold og kun få vist en sektion af gangen."
-tags:
-lead: "Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere ser de skjulte sektioner, når du anvender faneblade."
----
+description: Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner
+  af indhold og kun få vist en sektion af gangen.
+tags: 
+lead: Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner
+  af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere
+  ser de skjulte sektioner, når du anvender faneblade.
 
+---
 <div class="alert alert-warning">
     <div class="alert-body">
         <p class="alert-heading">Eksperimentel</p>
@@ -47,5 +50,3 @@ Faneblade anvendes ikke til at opdele et logisk flow eller en sekvens af handlin
 Vi anbefaler ikke, at du anvender faneblade i en generel løsning, da en stor del af brugerne ikke opdager indholdet på fanerne udover den aktive.
 
 Hvis du ønsker at anvende faner, bør det testes på din målgruppe før din løsning går i produktion.
-
-Faneblade er tilgængelige i den anbefalede løsning, men vi anbefaler generelt ikke, at du anvender faneblade, da en stor del af brugerne ikke opdager indholdet på fanerne udover den aktive.
