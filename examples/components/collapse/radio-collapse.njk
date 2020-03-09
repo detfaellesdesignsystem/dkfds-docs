@@ -4,18 +4,17 @@
 <div class="js-radio-toggle-group">
     <fieldset>
         <legend class="h4">Vælg en radioknap</legend>
-        <ul class="nobullet-list" role="tree">
-            <li role="treeitem" aria-expanded="true">{{ radiobutton(radio1) }}
-                <div id="collapse-radio1" aria-hidden="true" class="radio-collapse-content box-border-l">
+        <ul class="nobullet-list">
+            <li>{{radiobutton("id-radio1", "radio-group1", "Value", false, true, "Radioknap viser indhold", "", false, true, "", "", "data-js-target='#collapse-radio1' aria-controls='collapse-radio1' aria-expanded='false'", "", "Udfyld informationer herunder") }}
+                <div id="collapse-radio1" aria-hidden="true" class="box-border-l collapsed">
                     <div class="py-4">
                       {{textinput("textinput1", "Inputfelt med label", "", "input-width-m", "", "text1", "", false, "", "", "", "", "", "")}}
                     </div>
                 </div></li>
-            <li role="treeitem" aria-expanded="false">
-                {{radiobutton(radio2)}}
-                <div id="collapse-radio2" class="radio-collapse-content box-border-l">
+            <li>{{radiobutton("id-radio2", "radio-group1", "Value", false, false, "Radioknap viser andet indhold", "", false, true, "", "", "data-js-target='#collapse-radio2'", "", "Udfyld informationer herunder")}}
+                <div id="collapse-radio2" aria-hidden="true" class="box-border-l collapsed">
                     <div class="py-4">
-                    {{textinput("textinput2", "Inputfelt med anden label", "", "input-width-m", "Fejlbesked", "text2", "", false, "", "", "", "", "", "")}}
+                    {{textinput("textinput2", "Inputfelt med anden label", "", "input-width-m", "", "text2", "", false, "", "", "", "", "", "")}}
                     </div>
                 </div></li>
         </ul>

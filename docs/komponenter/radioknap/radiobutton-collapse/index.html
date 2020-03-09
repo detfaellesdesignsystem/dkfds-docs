@@ -695,6 +695,24 @@
 
   
 
+<a href="/komponenter/detaljer/" role="menuitem" 
+  class="nav-link">
+  Detaljer
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
 <a href="/komponenter/drop-down/" role="menuitem" 
   class="nav-link">
   Dropdown-menu
@@ -932,24 +950,6 @@
 <a href="/komponenter/skip-link/" role="menuitem" 
   class="nav-link">
   Skip-link
-</a>
-
-</li>
-
-    
-
-  
-    
-      
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/komponenter/collapse/" role="menuitem" 
-  class="nav-link">
-  Skjul og vis (Collapse)
 </a>
 
 </li>
@@ -1675,15 +1675,20 @@
         <div class="js-radio-toggle-group">
     <fieldset>
         <legend class="h4">Vælg en radioknap</legend>
-        <ul class="nobullet-list" role="tree">
-            <li role="treeitem" aria-expanded="true">
-                <input id="[object Object]" type="radio" name="" value=""
-                    class="form-radio   " />
-                <label for="[object Object]"
-                    id="form-label-[object Object]" class=""> </label>
+        <ul class="nobullet-list">
+            <li>
+                <input id="id-radio1" type="radio" name="radio-group1"
+                    value="Value" class="form-radio  radio-large " checked
+                    data-js-target='#collapse-radio1'
+                    aria-controls='collapse-radio1'
+                    aria-expanded='false' />
+                <label for="id-radio1" id="form-label-id-radio1"
+                    class="">Radioknap viser indhold <span
+                        class="sr-only">Udfyld informationer
+                        herunder</span></label>
 
                 <div id="collapse-radio1" aria-hidden="true"
-                    class="radio-collapse-content box-border-l">
+                    class="box-border-l collapsed">
                     <div class="py-4">
                         <div class="form-group">
                             <label class="form-label " for="textinput1"
@@ -1698,31 +1703,27 @@
                     </div>
                 </div>
             </li>
-            <li role="treeitem" aria-expanded="false">
+            <li>
+                <input id="id-radio2" type="radio" name="radio-group1"
+                    value="Value" class="form-radio  radio-large "
+                    data-js-target='#collapse-radio2' />
+                <label for="id-radio2" id="form-label-id-radio2"
+                    class="">Radioknap viser andet indhold <span
+                        class="sr-only">Udfyld informationer
+                        herunder</span></label>
 
-                <input id="[object Object]" type="radio" name="" value=""
-                    class="form-radio   " />
-                <label for="[object Object]"
-                    id="form-label-[object Object]" class=""> </label>
-
-                <div id="collapse-radio2"
-                    class="radio-collapse-content box-border-l">
+                <div id="collapse-radio2" aria-hidden="true"
+                    class="box-border-l collapsed">
                     <div class="py-4">
-                        <div class="form-group form-error">
+                        <div class="form-group">
                             <label class="form-label " for="textinput2"
                                 id="form-label-textinput2">
                                 Inputfelt med anden label
                             </label>
 
-                            <span class="form-error-message"
-                                id="form-error-message-textinput2"
-                                role="alert">
-                                Fejlbesked
-                            </span>
                             <input class="form-input  input-width-m "
                                 id="textinput2" value="" name="text2"
-                                type="text" aria-invalid="true"
-                                aria-describedby="form-error-message-textinput2">
+                                type="text">
                         </div>
                     </div>
                 </div>

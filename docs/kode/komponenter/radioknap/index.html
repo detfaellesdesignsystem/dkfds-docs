@@ -698,6 +698,24 @@
 
   
 
+<a href="/komponenter/detaljer/" role="menuitem" 
+  class="nav-link">
+  Detaljer
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
 <a href="/komponenter/drop-down/" role="menuitem" 
   class="nav-link">
   Dropdown-menu
@@ -935,24 +953,6 @@
 <a href="/komponenter/skip-link/" role="menuitem" 
   class="nav-link">
   Skip-link
-</a>
-
-</li>
-
-    
-
-  
-    
-      
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/komponenter/collapse/" role="menuitem" 
-  class="nav-link">
-  Skjul og vis (Collapse)
 </a>
 
 </li>
@@ -1414,6 +1414,24 @@
 
   
 
+<a href="/kode/komponenter/detaljer/" role="menuitem" 
+  class="nav-link">
+  Detaljer
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
 <a href="/kode/komponenter/drop-down/" role="menuitem" 
   class="nav-link">
   Dropdown-menu
@@ -1693,24 +1711,6 @@
 <a href="/kode/komponenter/skip-link/" role="menuitem" 
   class="nav-link">
   Skip-link
-</a>
-
-</li>
-
-    
-
-  
-    
-      
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/collapse/" role="menuitem" 
-  class="nav-link">
-  Skjul og vis (Collapse)
 </a>
 
 </li>
@@ -2403,6 +2403,24 @@
 
   
 
+<a href="/kode/komponenter/detaljer/" role="menuitem" 
+  class="nav-link">
+  Detaljer
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
 <a href="/kode/komponenter/drop-down/" role="menuitem" 
   class="nav-link">
   Dropdown-menu
@@ -2682,24 +2700,6 @@
 <a href="/kode/komponenter/skip-link/" role="menuitem" 
   class="nav-link">
   Skip-link
-</a>
-
-</li>
-
-    
-
-  
-    
-      
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/collapse/" role="menuitem" 
-  class="nav-link">
-  Skjul og vis (Collapse)
 </a>
 
 </li>
@@ -3264,15 +3264,20 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"js-radio-toggle-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;fieldset&gt;</span>
         <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Vælg en radioknap<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span> <span class="na">role=</span><span class="s">"tree"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"treeitem"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"[object Object]"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span>
-                    <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"[object Object]"</span>
-                    <span class="na">id=</span><span class="s">"form-label-[object Object]"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span> <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio1"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
+                    <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="na">checked</span>
+                    <span class="na">data-js-target=</span><span class="s">'#collapse-radio1'</span>
+                    <span class="na">aria-controls=</span><span class="s">'collapse-radio1'</span>
+                    <span class="na">aria-expanded=</span><span class="s">'false'</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio1"</span> <span class="na">id=</span><span class="s">"form-label-id-radio1"</span>
+                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold <span class="nt">&lt;span</span>
+                        <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
+                        herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
                 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
-                    <span class="na">class=</span><span class="s">"radio-collapse-content box-border-l"</span><span class="nt">&gt;</span>
+                    <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                             <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"textinput1"</span>
@@ -3287,31 +3292,27 @@
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"treeitem"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span>
+                    <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span>
+                    <span class="na">data-js-target=</span><span class="s">'#collapse-radio2'</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">id=</span><span class="s">"form-label-id-radio2"</span>
+                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser andet indhold <span class="nt">&lt;span</span>
+                        <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Udfyld informationer
+                        herunder<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
 
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"[object Object]"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span>
-                    <span class="na">class=</span><span class="s">"form-radio   "</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"[object Object]"</span>
-                    <span class="na">id=</span><span class="s">"form-label-[object Object]"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span> <span class="nt">&lt;/label&gt;</span>
-
-                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio2"</span>
-                    <span class="na">class=</span><span class="s">"radio-collapse-content box-border-l"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span>
+                    <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
                             <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"textinput2"</span>
                                 <span class="na">id=</span><span class="s">"form-label-textinput2"</span><span class="nt">&gt;</span>
                                 Inputfelt med anden label
                             <span class="nt">&lt;/label&gt;</span>
 
-                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
-                                <span class="na">id=</span><span class="s">"form-error-message-textinput2"</span>
-                                <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
-                                Fejlbesked
-                            <span class="nt">&lt;/span&gt;</span>
                             <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  input-width-m "</span>
                                 <span class="na">id=</span><span class="s">"textinput2"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"text2"</span>
-                                <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
-                                <span class="na">aria-describedby=</span><span class="s">"form-error-message-textinput2"</span><span class="nt">&gt;</span>
+                                <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;/div&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
