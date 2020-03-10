@@ -33,6 +33,8 @@ tags:
 - 2.1.2
 anchor: true
 subnav:
+- text: Version 6.0.0
+  href: "#version-6-0-0"
 - text: Version 5.3.0
   href: "#version-5-3-0"
 - text: Version 5.2.0
@@ -51,8 +53,6 @@ subnav:
   href: "#version-4-1-1"
 - text: Version 4.1.0
   href: "#version-4-1-0"
-- text: Version 4.0.1
-  href: "#version-4-0-1"
 - text: Tidligere versioner
   href: "#tidligere-versioner"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og

@@ -4,7 +4,7 @@ parent: Releases
 order: 200
 headingClass: mb-0
 ---
-<p class="small-text mt-0" id="tidligere-versioner">01-04-2019</p>
+<p class="small-text mt-0">01-04-2019</p>
 
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>Fjernet højde på cards
 - Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.
