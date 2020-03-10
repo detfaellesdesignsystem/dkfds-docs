@@ -39,9 +39,9 @@ let setHomepageIllustration = function(){
     let illustration = document.getElementById('designsystem-illustration');
     if(illustration !== null){
         if(getThemeCookie() === "virk"){
-            illustration.setAttribute('src', "/img/descriptionimages/Forside_illu_virk.svg");
+            illustration.setAttribute('src', "/assets/img/descriptionimages/Forside_illu_virk.svg");
         } else if(getThemeCookie() === "borgerdk"){
-            illustration.setAttribute('src', "/img/descriptionimages/Forside_illu_borger.svg");
+            illustration.setAttribute('src', "/assets/img/descriptionimages/Forside_illu_borger.svg");
         }else{
             illustration.parentNode.removeChild(illustration);
         }
@@ -270,7 +270,7 @@ let setScreenshots = function(){
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('/');
             let filename = getThemeCookie()+'-'+url[url.length-2]+'.PNG';
-            let image = '<img src="/img/examples_pages/'+url[url.length-3]+'/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="w-percent-100 d-block" />';
+            let image = '<img src="/assets/img/examples_pages/'+url[url.length-3]+'/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="w-percent-100 d-block" />';
             screenshots[i].innerHTML = image;
         }
         let galleries = document.getElementsByClassName('screenshot-gallery');
@@ -278,6 +278,17 @@ let setScreenshots = function(){
             for (let g = 0; g < galleries.length; g++) {
                 galleries[g].classList.remove('d-none');
             }
+        }
+    }
+
+    if(document.getElementsByTagName('body')[0].classList.contains('page-footers') || document.getElementsByTagName('body')[0].classList.contains('page-headers') || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
+        let screenshots = document.querySelectorAll('.component-example .screenshot');
+        for(let i = 0; i < screenshots.length; i++){
+            let url = screenshots[i].getAttribute('href').split('/');
+            let componentName = url[url.length-2];
+            let filename = getThemeCookie()+'-'+componentName+'.png';
+            let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';
+            screenshots[i].innerHTML = image;
         }
     }
 };

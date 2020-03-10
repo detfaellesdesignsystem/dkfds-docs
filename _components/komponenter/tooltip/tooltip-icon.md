@@ -1,8 +1,10 @@
 ---
-title: Ikon med tooltip
+title: "Tooltip (Placer musen over ikonet)"
+headingClass: h5
 parent: Tooltip
-order: 03
-lead: 
+order: 10
+component: tooltip-icon
+componentTitle: "Eksempel på ikon med tooltip"
+componentCode: "/kode/komponenter/tooltip/"
 ---
-{% include code/preview.html component="tooltip-icon" title="Eksempel på ikon med tooltip" %}
-{% include code/accordion.html component="tooltip-icon" %}
+En tooltip kommer frem, når musen er over det element det er sat på, fx et spørgsmålstegn, og forsvinder igen når musen fjernes.

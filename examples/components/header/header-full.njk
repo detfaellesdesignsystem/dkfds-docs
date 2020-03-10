@@ -3,43 +3,50 @@
 
 <header class="header">
 
-    <!--1A: Portal header -->
+    <!-- Start: Portal header -->
     <div class="portal-header">
       <div class="container portal-header-inner">
-        <a href="#" title="Home" aria-label="Home" class="logo alert-leave"><span class="d-none d-print-block">Portalnavn</span></a>
+        <!-- Start: Portallogo -->
+        <a href="#" class="logo"><span class="d-none d-print-block">Portalnavn</span></a>
+        <!-- Slut: Portallogo -->
+
         <button class="button button-tertiary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
-        <!-- 1B: Portal header: info + actions-->
+        <!-- Start: Persondetaljer -->
         <div class="portal-info">
           <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christensen</span><br />Københavns Urmager og Værksted v/Martin Elsig</p>
-          <a href="#" class="button button-secondary alert-leave d-print-none" role="button">
+          <a href="#" class="button button-secondary d-print-none" role="button">
             Log af
           </a>
         </div>
+        <!-- Slut: Persondetaljer -->
       </div>
     </div>
+    <!-- Slut: Portal header -->
 
-     <!--2A: Solution header -->
+    <!-- Start: Løsningsheader -->
     <div class="solution-header">
         <div class="container solution-header-inner">
           <div class="solution-heading">
-            <a href="#" title="Home" aria-label="Home" class="alert-leave2">En langt langt længere løsningstitel</a>
+            <a href="#">En langt langt længere løsningstitel</a>
           </div>
 
-          <!--2B: Solution header: Authority name + text-->
-          <div class="solution-info"> <!-- nav-secondary -->
+          <!--2B: Solution header: Authority name + text -->
+          <div class="solution-info">
               <p class="h5 authority-name">Myndighedsnavn</p>
               <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span></p>
           </div>
         </div>
     </div>
+    <!-- Slut: Løsningsheader -->
 
+    <!-- Start: Navigation -->
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
+    <nav class=" nav">
       <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
-      <!-- 3: Main navigation-->
+
+      <!-- Start: Hovedmenu -->
       <div class="navbar navbar-primary">
-        <!--3A: Main navigation-->
         <div class="navbar-inner container">
           <ul class="nav-primary">
             <li>
@@ -87,7 +94,7 @@
             </li>
           </ul>
 
-          <!-- 3B: Main navigation - secondary menu-->
+          <!-- Start: Overflow menu i navigation -->
           <ul class="unstyled-list nav-actions">
             <li>
               <div class="overflow-menu overflow-menu--open-left">
@@ -105,9 +112,10 @@
               </div>
             </li>
           </ul>
+          <!-- Slut: Overflow menu i navigation -->
         </div>
       </div>
-      <!-- 3: Main navigation end-->
+      <!-- Slut: Hovedmenu -->
 
       <!-- 4: Secondary navigation-->
       <div class="navbar">
@@ -172,7 +180,8 @@
         <p>Support: 12 34 56 78 · <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
 
-    </nav> <!-- collapsible nav end-->
+    </nav>
+    <!-- Slut: Navigation -->
 </header>
 
 {{ modal('modal-contact', modal_contact_data) }}

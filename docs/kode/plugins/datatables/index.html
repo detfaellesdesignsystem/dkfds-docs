@@ -1,0 +1,4754 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Datatables | Det Fælles Designsystem</title>
+<meta property="og:title" content="Datatables | Det Fælles Designsystem">
+
+
+<meta name="description" content="Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.">
+<meta property="og:description" content="Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.">
+
+
+
+
+
+
+
+
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-erst.png">
+
+<!-- CSS
+================================================== -->
+
+<!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Medium.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Bold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style" />
+<link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style" />
+<link rel="preload" href="/assets/js/theme.js" as="script" />
+
+
+
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css" />
+
+
+
+<style>
+  body {
+    opacity: 0; /*hide page until theme is downloaded by js.*/
+  }
+
+  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
+  ul {
+    list-style-type: none;
+  }
+</style>
+
+
+  </head>
+  <body class="page-datatables layout-component">
+    <div class="hide-base-svg">
+    <svg xmlns="http://www.w3.org/2000/svg"><symbol id="add" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></symbol><symbol id="alert-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="angle-arrow-down-white" viewBox="0 0 24 24"><path fill="#fff" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-down" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-up" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></symbol><symbol id="arrow-left" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></symbol><symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></symbol><symbol id="book-open" viewBox="0 0 24 24"><path d="M13 12h7v1.5h-7m0-4h7V11h-7m0 3.5h7V16h-7m8-12H3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 15h-9V6h9"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5z"/></symbol><symbol id="card-text-outline" viewBox="0 0 24 24"><path d="M20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M4,6V18H20V6H4M6,9H18V11H6V9M6,13H16V15H6V13Z" /></symbol><symbol id="cash-multiple" viewBox="0 0 24 24"><path d="M5 6h18v12H5V6m9 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3M9 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2H9m-8 2h2v10h16v2H1V10z"/></symbol><symbol id="check-box-checked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#1A1A1A" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm12.293 4.293l-6.921 6.921-3.665-3.664-1.414 1.414 5.079 5.079 8.335-8.336-1.414-1.414z"/></g></symbol><symbol id="check-box-disabled" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect width="16" height="16" x="4" y="4" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2" rx="2"/></g></symbol><symbol id="check-box-focus" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#FEBB30" d="M0 0h24v24H0V0z"/><rect width="16" height="16" x="4" y="4" fill="#FFF" stroke="#1A1A1A" stroke-width="2" rx="2"/></g></symbol><symbol id="check-box-unchecked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect width="16" height="16" x="4" y="4" fill="#FFF" stroke="#1A1A1A" stroke-width="2" rx="2"/></g></symbol><symbol id="check-circle-outline" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></symbol><symbol id="checkbox-blank-outline" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5h14z"/></symbol><symbol id="checkbox-marked" viewBox="0 0 24 24"><path d="M10 17l-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m0-5H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></symbol><symbol id="chevron-left" viewBox="0 0 24 24"><path d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.42z"/></symbol><symbol id="chevron-right" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></symbol><symbol id="close-circle-outline" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="close-circle" viewBox="0 0 24 24"><path d="M13.414 12l2.314-2.314-1.414-1.414L12 10.586 9.686 8.272 8.272 9.686 10.586 12l-2.31 2.31 1.413 1.415L12 13.415l2.31 2.31 1.415-1.414L13.415 12zM12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></symbol><symbol id="close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></symbol><symbol id="content-save" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4z"/></symbol><symbol id="delete-outline" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"/><path fill="none" d="M0 0h24v24H0V0z"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"/></symbol><symbol id="dots-vertical" viewBox="0 0 24 24"><path d="M12 16a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z"/></symbol><symbol id="download" viewBox="0 0 24 24"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/><path fill="none" d="M0 0h24v24H0z"/></symbol><symbol id="error" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="email" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></symbol><symbol id="file-document-box" viewBox="0 0 24 24"><path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2H5m0 2h14v14H5V5m2 2v2h10V7H7m0 4v2h10v-2H7m0 4v2h7v-2H7z"/></symbol><symbol id="file-pdf-outline" viewBox="0 0 24 24"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18M10.92,12.31C10.68,11.54 10.15,9.08 11.55,9.04C12.95,9 12.03,12.16 12.03,12.16C12.42,13.65 14.05,14.72 14.05,14.72C14.55,14.57 17.4,14.24 17,15.72C16.57,17.2 13.5,15.81 13.5,15.81C11.55,15.95 10.09,16.47 10.09,16.47C8.96,18.58 7.64,19.5 7.1,18.61C6.43,17.5 9.23,16.07 9.23,16.07C10.68,13.72 10.9,12.35 10.92,12.31M11.57,13.15C11.17,14.45 10.37,15.84 10.37,15.84C11.22,15.5 13.08,15.11 13.08,15.11C11.94,14.11 11.59,13.16 11.57,13.15M14.71,15.32C14.71,15.32 16.46,15.97 16.5,15.71C16.57,15.44 15.17,15.2 14.71,15.32M9.05,16.81C8.28,17.11 7.54,18.39 7.72,18.39C7.9,18.4 8.63,17.79 9.05,16.81M11.57,11.26C11.57,11.21 12,9.58 11.57,9.53C11.27,9.5 11.56,11.22 11.57,11.26Z"></path></symbol><symbol id="file" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><g><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></g></symbol><symbol id="folder-multiple" viewBox="0 0 24 24"><path d="M22 4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h6l2 2h8M2 6v14h18v2H2a2 2 0 0 1-2-2V6h2m4 0v10h16V6H6z"/></symbol><symbol id="help" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></symbol><symbol id="help-circle-outline" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></symbol><symbol id="info" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M11 7h2v2h-2zM11 11h2v6h-2z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></symbol><symbol id="language" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></symbol><symbol id="magnify" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></symbol><symbol id="menu-down" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></symbol><symbol id="menu-left" viewBox="0 0 24 24"><path d="M14 7l-5 5 5 5V7z"/></symbol><symbol id="menu-right" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5v10z"/></symbol><symbol id="menu-up" viewBox="0 0 24 24"><path d="M7 15l5-5 5 5H7z"/></symbol><symbol id="message" viewBox="0 0 24 24"><path d="M20 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h16M4 4v13.17L5.17 16H20V4H4m2 3h12v2H6V7m0 4h9v2H6v-2z"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></symbol><symbol id="open-in-new" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></symbol><symbol id="palette" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6h-1.77c-.28 0-.5.22-.5.5 0 .12.05.23.13.33.41.47.64 1.06.64 1.67 0 1.38-1.12 2.5-2.5 2.5zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5 0-.16-.08-.28-.14-.35-.41-.46-.63-1.05-.63-1.65 0-1.38 1.12-2.5 2.5-2.5H16c2.21 0 4-1.79 4-4 0-3.86-3.59-7-8-7z"/><circle cx="6.5" cy="11.5" r="1.5"/><circle cx="9.5" cy="7.5" r="1.5"/><circle cx="14.5" cy="7.5" r="1.5"/><circle cx="17.5" cy="11.5" r="1.5"/></symbol><symbol id="pencil" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol><symbol id="printer" viewBox="0 0 24 24"><path d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3z"/></symbol><symbol id="radio-disabled" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2"/></g></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></symbol><symbol id="save" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></symbol><symbol id="settings" viewBox="0 0 24 24"><path d="M19.43 12.97l2.11 1.66c.19.15.24.42.12.64l-2 3.46c-.12.22-.39.3-.61.22l-2.49-1.01c-.52.4-1.06.73-1.69.99l-.37 2.65c-.04.24-.25.42-.5.42h-4c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.12.22.07.49-.12.64L19.43 11l.07 1-.07.97M6.5 12c0 .58.09 1.13.25 1.66l-2.07 1.7.75 1.3 2.52-.94c.74.81 1.73 1.4 2.85 1.65l.44 2.63h1.5l.44-2.63c1.12-.24 2.12-.83 2.87-1.64l2.51.94.75-1.3-2.07-1.7c.17-.53.26-1.09.26-1.67 0-.57-.09-1.13-.25-1.65l2.06-1.69-.75-1.3-2.5.93a5.526 5.526 0 0 0-2.87-1.66L12.75 4h-1.5l-.44 2.63c-1.12.25-2.12.84-2.87 1.66l-2.5-.94-.75 1.3 2.06 1.7c-.16.52-.25 1.08-.25 1.65M12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5m0 2a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5z"/></symbol><symbol id="sort-acending" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#1A1A1A" d="M6 13l6 6 6-6z"/><path stroke="#1A1A1A" d="M16.793 10.5L12 5.707 7.207 10.5h9.586z"/></g></symbol><symbol id="sort-descending" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path stroke="#1A1A1A" d="M7.207 13.5L12 18.293l4.793-4.793H7.207z"/><path fill="#1A1A1A" d="M18 11l-6-6-6 6z"/></g></symbol><symbol id="sort-none" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M7.207 13.5L12 18.293l4.793-4.793H7.207zm9.586-3L12 5.707 7.207 10.5h9.586z" stroke="#1A1A1A"/></g></symbol><symbol id="success" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="code-tags" viewBox="0 0 24 24"><path xmlns="http://www.w3.org/2000/svg" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"/></symbol></svg>
+</div>
+    <header class="header">
+  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+     <!--2A: Solutiuon header -->
+    <div class="solution-header">
+      <div class="solution-header-inner container">
+        <div class="solution-heading d-flex align-items-center">
+            <a href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a>
+        </div>
+        <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+      </div>
+
+      
+      <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
+        <form method="get" action="/search/" id="mobileSearchForm">
+          <div class="form-group search">
+            <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+
+    <div class="overlay"></div>
+    <!-- Desktop main menu-->
+    <nav class="nav d-none d-lg-block" aria-label="Hovedmenu">
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+      <!-- 3: Main navigation-->
+      <div class="navbar navbar-primary">
+        <!--3A: Main navigation-->
+
+        <div class="navbar-inner container">
+          <ul class="nav-primary" role="menu">
+            
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!-- Do not render subnavs-->
+  <a href="/komigang/" role="menuitem" 
+    class="nav-link">
+    <span>Kom i gang</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!-- Do not render subnavs-->
+  <a href="/design/" role="menuitem" 
+    class="nav-link">
+    <span>Design</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!-- Do not render subnavs-->
+  <a href="/komponenter/" role="menuitem" 
+    class="nav-link">
+    <span>Komponenter</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!-- Do not render subnavs-->
+  <a href="/eksempler/" role="menuitem" 
+    class="nav-link">
+    <span>Eksempler</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="current" role="none">
+
+  <!-- Do not render subnavs-->
+  <a href="/kode/" role="menuitem" aria-current="page"
+    class="nav-link">
+    <span>Kode</span>
+  </a>
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!-- Do not render subnavs-->
+  <a href="/omdesignsystemet/" role="menuitem" 
+    class="nav-link">
+    <span>Om designsystemet</span>
+  </a>
+
+</li>
+
+
+
+          </ul>
+          
+          <div class="search-form">
+            <form method="get" action="/search/" id="menuSearchForm">
+              <div class="form-group search">
+                <label for="search-input" class="sr-only">Søg efter indhold</label>
+                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <button class="button button-search" type="submit" id="searchbtn">Søg</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+      <!-- 3: Main navigation end-->
+    </nav>
+    <!-- collapsible nav end-->
+
+    <!-- Mobile main menu-->
+    <nav class="nav d-lg-none" aria-label="Mobil hovedmenu">
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+      <!-- 3: Main navigation-->
+      <div class="navbar navbar-primary">
+        <!--3A: Main navigation-->
+
+        <div class="navbar-inner container">
+          <ul class="nav-primary" role="menu">
+            
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="false"  >
+        <span>Kom i gang</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komigang/krav/" role="menuitem" 
+  class="nav-link">
+  Krav
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komigang/tjekliste/" role="menuitem" 
+  class="nav-link">
+  Tjekliste til FDS
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komigang/regler-principper-layout/" role="menuitem" 
+  class="nav-link">
+  Regler og principper for layout
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komigang/designfiler/" role="menuitem" 
+  class="nav-link">
+  Designfiler
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komigang/tilgaengelighed/" role="menuitem" 
+  class="nav-link">
+  Tilgængelighed (WCAG 2.1)
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="false"  >
+        <span>Design</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/design/farver/" role="menuitem" 
+  class="nav-link">
+  Farver
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/design/typografi/" role="menuitem" 
+  class="nav-link">
+  Typografi
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/design/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/design/borders/" role="menuitem" 
+  class="nav-link">
+  Hjørner, streger, skygger
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/design/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/design/logoer/" role="menuitem" 
+  class="nav-link">
+  Logoer
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow3" aria-haspopup="true" aria-expanded="false"  >
+        <span>Komponenter</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow3" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/accordions/" role="menuitem" 
+  class="nav-link">
+  Accordions
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/badges/" role="menuitem" 
+  class="nav-link">
+  Badges
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/beskeder/" role="menuitem" 
+  class="nav-link">
+  Beskeder (Alerts)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/cards/" role="menuitem" 
+  class="nav-link">
+  Cards
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/cookiemeddelelse/" role="menuitem" 
+  class="nav-link">
+  Cookiemeddelelse
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/dato-felt/" role="menuitem" 
+  class="nav-link">
+  Datoangivelse
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/detaljer/" role="menuitem" 
+  class="nav-link">
+  Detaljer
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/drop-down/" role="menuitem" 
+  class="nav-link">
+  Dropdown-menu
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/faneblad/" role="menuitem" 
+  class="nav-link">
+  Faneblade
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/felter/" role="menuitem" 
+  class="nav-link">
+  Felter
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/fil-upload/" role="menuitem" 
+  class="nav-link">
+  Fil upload
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/footers/" role="menuitem" 
+  class="nav-link">
+  Footers
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/formular/" role="menuitem" 
+  class="nav-link">
+  Formular
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/funktionslink/" role="menuitem" 
+  class="nav-link">
+  Funktionslink
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/headers/" role="menuitem" 
+  class="nav-link">
+  Headers
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/knapper/" role="menuitem" 
+  class="nav-link">
+  Knapper
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/modal/" role="menuitem" 
+  class="nav-link">
+  Modalvindue
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/overflowmenu/" role="menuitem" 
+  class="nav-link">
+  Overflow menu
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/radioknap/" role="menuitem" 
+  class="nav-link">
+  Radioknap
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/sidenav/" role="menuitem" 
+  class="nav-link">
+  Sidenavigation
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/skip-link/" role="menuitem" 
+  class="nav-link">
+  Skip-link
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/spinner/" role="menuitem" 
+  class="nav-link">
+  Spinner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/search/" role="menuitem" 
+  class="nav-link">
+  Søgefelt
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/tilbage-link/" role="menuitem" 
+  class="nav-link">
+  Tilbage link
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tables/" role="menuitem" 
+  class="nav-link">
+  Tabeller
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tags/" role="menuitem" 
+  class="nav-link">
+  Tags
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/textarea/" role="menuitem" 
+  class="nav-link">
+  Tekstområde
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tjekboks/" role="menuitem" 
+  class="nav-link">
+  Tjekboks
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tooltip/" role="menuitem" 
+  class="nav-link">
+  Tooltip og popover
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/trinindikatorer/" role="menuitem" 
+  class="nav-link">
+  Trinindikatorer
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="false"  >
+        <span>Eksempler</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/eksempler/selvbetjeningsloesninger/" role="menuitem" 
+  class="nav-link">
+  Selvbetjeningsløsninger
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/eksempler/opsummeringsside/" role="menuitem" 
+  class="nav-link">
+  Opsummeringsside
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/eksempler/kvittering/" role="menuitem" 
+  class="nav-link">
+  Kvittering
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="current" role="none">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="true"  >
+        <span>Kode</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="false">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/implementering/" role="menuitem" 
+  class="nav-link">
+  Implementering af DKFDS
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/komponenter/" role="menuitem" 
+  class="nav-link">
+  Komponenter
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/typografi/" role="menuitem" 
+  class="nav-link">
+  Typografi
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/utilities/" role="menuitem" 
+  class="nav-link">
+  Hjælpeklasser (Utilities)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/eksempler-implementering/" role="menuitem" 
+  class="nav-link">
+  Eksempler på implementering
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/print/" role="menuitem" 
+  class="nav-link">
+  Print
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="current  " role="none">
+
+
+  
+
+<a href="/kode/plugins/" role="menuitem" aria-current="true"
+  class="nav-link">
+  Plug-ins
+</a>
+
+  
+    
+    
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+    
+
+    
+
+    
+    <ul class="overflow-list" role="menu">
+  
+    
+      
+
+<li class="current active has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/plugins/datatables/" role="menuitem" aria-current="page"
+  class="nav-link">
+  Datatables
+</a>
+
+  
+    
+    
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+    <ul class="sidenav-sub_list" role="menu">
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#datatables"  role="menuitem">Datatable</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#ajax-data"  role="menuitem">Ajax data</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#expandable-table"  role="menuitem">Expandable row</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#selectable-row"  role="menuitem">Selectable row</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#edit-and-delete-row"  role="menuitem">Edit and delete</a>
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/pikaday/" role="menuitem" 
+  class="nav-link">
+  Pikaday
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/micromodal/" role="menuitem" 
+  class="nav-link">
+  MicroModal.js
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/plugins/selectwoo-multiselect/" role="menuitem" 
+  class="nav-link">
+  selectWoo
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/tippy/" role="menuitem" 
+  class="nav-link">
+  Tippy.js
+</a>
+
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/anbefalinger-vaerktoejer/" role="menuitem" 
+  class="nav-link">
+  Anbefalinger og værktøjer
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+  
+  
+    
+
+
+
+
+
+
+
+
+
+<li class="" role="none">
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
+        <span>Om designsystemet</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
+        <ul class="overflow-list">
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/omdesignsystemet/samarbejdsforum/" role="menuitem" 
+  class="nav-link">
+  Næste samarbejdsforum
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/omdesignsystemet/nyhedsmail/" role="menuitem" 
+  class="nav-link">
+  Nyhedsmail
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/omdesignsystemet/kontakt-support/" role="menuitem" 
+  class="nav-link">
+  Kontakt og support
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/omdesignsystemet/governance/" role="menuitem" 
+  class="nav-link">
+  Governance
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/omdesignsystemet/gennemgang/" role="menuitem" 
+  class="nav-link">
+  Gennemgang af designsystemet
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/omdesignsystemet/visuelledesign/" role="menuitem" 
+  class="nav-link">
+  Det visuelle design
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/omdesignsystemet/privatlivspolitik-cookies/" role="menuitem" 
+  class="nav-link">
+  Privatlivspolitik og cookies
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/omdesignsystemet/releases/" role="menuitem" 
+  class="nav-link">
+  Release notes
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+</li>
+
+
+
+          </ul>
+        </div>
+      </div>
+      <!-- 3: Main navigation end-->
+    </nav>
+   <!-- collapsible nav end-->
+</header>
+
+
+<div class="container page-container">
+  <div class="row">
+
+    <aside class="col-12 col-lg-3 sidebar-col">
+      <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
+        
+        
+        <ul class="sidenav-list" role="menu">
+          
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/implementering/" role="menuitem" 
+  class="nav-link">
+  Implementering af DKFDS
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/komponenter/" role="menuitem" 
+  class="nav-link">
+  Komponenter
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/typografi/" role="menuitem" 
+  class="nav-link">
+  Typografi
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/utilities/" role="menuitem" 
+  class="nav-link">
+  Hjælpeklasser (Utilities)
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/eksempler-implementering/" role="menuitem" 
+  class="nav-link">
+  Eksempler på implementering
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/print/" role="menuitem" 
+  class="nav-link">
+  Print
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="current  " role="none">
+
+
+  
+
+<a href="/kode/plugins/" role="menuitem" aria-current="true"
+  class="nav-link">
+  Plug-ins
+</a>
+
+  
+    
+    
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+    
+
+    
+
+    
+    <ul class="sidenav-sub_list" role="menu">
+  
+    
+      
+
+<li class="current active has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/plugins/datatables/" role="menuitem" aria-current="page"
+  class="nav-link">
+  Datatables
+</a>
+
+  
+    
+    
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+    <ul class="sidenav-sub_list" role="menu">
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#datatables"  role="menuitem">Datatable</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#ajax-data"  role="menuitem">Ajax data</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#expandable-table"  role="menuitem">Expandable row</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#selectable-row"  role="menuitem">Selectable row</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#edit-and-delete-row"  role="menuitem">Edit and delete</a>
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/pikaday/" role="menuitem" 
+  class="nav-link">
+  Pikaday
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/micromodal/" role="menuitem" 
+  class="nav-link">
+  MicroModal.js
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/plugins/selectwoo-multiselect/" role="menuitem" 
+  class="nav-link">
+  selectWoo
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/tippy/" role="menuitem" 
+  class="nav-link">
+  Tippy.js
+</a>
+
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/anbefalinger-vaerktoejer/" role="menuitem" 
+  class="nav-link">
+  Anbefalinger og værktøjer
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+        
+      </nav>
+    </aside>
+
+    <main class="col-12 col-lg-9" id="main-content">
+          <div aria-label="Vælg et tema" role="alert" class="alert alert-warning has-close d-none mt-4" id="themeAlert">
+        <div class="alert-body">
+            <p class="alert-heading pr-7">Vælg et tema</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
+            <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
+            <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
+            <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
+        </div>
+    </div>
+
+      <section id="section-/kode/plugins/datatables">
+          
+          <div class="alert alert-warning " role="alert">
+              <div class="alert-body">
+                  
+                  <h3 class="alert-heading">Denne komponent er ikke en del af kernen af Det Fælles Designsystem</h3>
+                  
+                  
+                  <p class="alert-text">
+                    Datatables er et eksternt bibliotek (<a href="https://datatables.net/" class="icon-link">datatables.net<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>), som ikke er inkluderet i Det Fælles Designsystem.<br>I <a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">DKFDS-plugins<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> projektet kan man finde et tema til Datatables (dkfds-datatables-theme.css). <br>JavaScript i DKFDS-plugins projektet kan bruges som inspiration til, hvordan datatables kan inkluderes og bruges i et projekt.
+                  </p>
+                  
+              </div>
+          </div>
+          
+
+          <p class="h6 m-0">
+            Kode
+          </p>
+          <h1 id="datatables">Datatables</h1>
+          
+            <p class="font-lead">Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.</p>
+          
+
+          
+
+          <h2 class="h4">Tilgængelighed</h2>
+<div class="alert alert-warning alert--show-icon" role="alert">
+  <div class="alert-body">
+      <h3 class="alert-heading">Paginering i Datatables</h3>
+      <p class="alert-text">
+        Projekter skal selv håndtere ekstra kode, for at gøre paginering i Datatables tilgængeligt.<br /> Se under Implementering for mere info.
+      </p>
+  </div>
+</div>
+
+<ul>
+  <li>Datatables anvender bl.a. ARIA til at øge tilgængeligheden. Du skal imidlertid være opmærksom på, at en kompliceret tabel med mange rækker, kolonner og muligheder øger det kognitive load og dermed sænker den reelle tilgængelighed.</li>
+  <li>Du skal bruger- og performanceteste prototyper med Datatables med entydigt positive resultat ift din målgruppe, hvis du ønsker at anvende den.</li>
+</ul>
+
+<h2 class="h4">Brugervenlighed</h2>
+<h3 class="h5">Anvendes til</h3>
+
+<p>Avancerede tabeller med behov for at tilknytte udvidet interaktion som fx søgning og editering af felt-indhold.</p>
+
+<h3 class="h5">Anvendes ikke til</h3>
+
+<p>Simple søgeresultater eller oversigter.</p>
+
+<h3 class="h5">Vejledning</h3>
+
+<ul>
+  <li>Datatables er en stor og kompleks funktion, der kun bør anvendes til afgrænsede og klart definerede målgrupper og kun i begrænset omfang.</li>
+  <li>Før du implementerer Datatables bør du overveje, om den ekstra funktionalitet er nødvendig eller blot en nice-to-have.</li>
+  <li>Overvej om behovet kan løses ved enten en anden præsentation af data eller funktion.</li>
+  <li>Datatables er afhængig af jQuery og dermed kræver den et ekstra request og ekstra kode i indlæsningen – dette kan nedsætte funktionens performance.</li>
+</ul>
+
+<h2 class="h4">Implementering</h2>
+
+<p>Datatables fejler på tilgængelig, når det kommer til disabled pagineringsknapper. For at gøre paginering tilgængeligt skal der tilføjes attributten <code class="highlighter-rouge">aria-disabled="true"</code> på knapper, som er disabled.</p>
+
+<p>Se evt. hvordan vi har gjort det i vores eksempler i JavaScript filen <code class="highlighter-rouge">assets/js/dkfds-datatables-example.js</code>.</p>
+
+<p>Se hvordan vi har implementeret Datatables i JavaScript her: <a href="https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/datatables/js/dkfds-datatables-example.js" class="icon-link">https://github.com/detfaellesdesignsystem/dkfds-docs/blob/master/examples/plugins/datatables/js/dkfds-datatables-example.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+
+<section class="styleguide-child-container content" id="section-/kode/plugins/datatables/01-datatable">
+  <h2 id="datatables">Datatables</h2>
+  
+  <div class="component-preview  component-preview-datatables p-4" aria-label="">
+    <table id="js-datatable-example-basic" class="table w-percent-100">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Ashton Cox</td>
+            <td>Junior Technical Author</td>
+            <td>San Francisco</td>
+            <td>66</td>
+            <td>2009/01/12</td>
+            <td>$86,000</td>
+        </tr>
+        <tr>
+            <td>Cedric Kelly</td>
+            <td>Senior Javascript Developer</td>
+            <td>Edinburgh</td>
+            <td>22</td>
+            <td>2012/03/29</td>
+            <td>$433,060</td>
+        </tr>
+        <tr>
+            <td>Airi Satou</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>33</td>
+            <td>2008/11/28</td>
+            <td>$162,700</td>
+        </tr>
+        <tr>
+            <td>Brielle Williamson</td>
+            <td>Integration Specialist</td>
+            <td>New York</td>
+            <td>61</td>
+            <td>2012/12/02</td>
+            <td>$372,000</td>
+        </tr>
+        <tr>
+            <td>Herrod Chandler</td>
+            <td>Sales Assistant</td>
+            <td>San Francisco</td>
+            <td>59</td>
+            <td>2012/08/06</td>
+            <td>$137,500</td>
+        </tr>
+        <tr>
+            <td>Rhona Davidson</td>
+            <td>Integration Specialist</td>
+            <td>Tokyo</td>
+            <td>55</td>
+            <td>2010/10/14</td>
+            <td>$327,900</td>
+        </tr>
+        <tr>
+            <td>Colleen Hurst</td>
+            <td>Javascript Developer</td>
+            <td>San Francisco</td>
+            <td>39</td>
+            <td>2009/09/15</td>
+            <td>$205,500</td>
+        </tr>
+        <tr>
+            <td>Sonya Frost</td>
+            <td>Software Engineer</td>
+            <td>Edinburgh</td>
+            <td>23</td>
+            <td>2008/12/13</td>
+            <td>$103,600</td>
+        </tr>
+        <tr>
+            <td>Jena Gaines</td>
+            <td>Office Manager</td>
+            <td>London</td>
+            <td>30</td>
+            <td>2008/12/19</td>
+            <td>$90,560</td>
+        </tr>
+        <tr>
+            <td>Quinn Flynn</td>
+            <td>Support Lead</td>
+            <td>Edinburgh</td>
+            <td>22</td>
+            <td>2013/03/03</td>
+            <td>$342,000</td>
+        </tr>
+        <tr>
+            <td>Charde Marshall</td>
+            <td>Regional Director</td>
+            <td>San Francisco</td>
+            <td>36</td>
+            <td>2008/10/16</td>
+            <td>$470,600</td>
+        </tr>
+        <tr>
+            <td>Haley Kennedy</td>
+            <td>Senior Marketing Designer</td>
+            <td>London</td>
+            <td>43</td>
+            <td>2012/12/18</td>
+            <td>$313,500</td>
+        </tr>
+        <tr>
+            <td>Tatyana Fitzpatrick</td>
+            <td>Regional Director</td>
+            <td>London</td>
+            <td>19</td>
+            <td>2010/03/17</td>
+            <td>$385,750</td>
+        </tr>
+        <tr>
+            <td>Michael Silva</td>
+            <td>Marketing Designer</td>
+            <td>London</td>
+            <td>66</td>
+            <td>2012/11/27</td>
+            <td>$198,500</td>
+        </tr>
+        <tr>
+            <td>Paul Byrd</td>
+            <td>Chief Financial Officer (CFO)</td>
+            <td>New York</td>
+            <td>64</td>
+            <td>2010/06/09</td>
+            <td>$725,000</td>
+        </tr>
+        <tr>
+            <td>Gloria Little</td>
+            <td>Systems Administrator</td>
+            <td>New York</td>
+            <td>59</td>
+            <td>2009/04/10</td>
+            <td>$237,500</td>
+        </tr>
+        <tr>
+            <td>Bradley Greer</td>
+            <td>Software Engineer</td>
+            <td>London</td>
+            <td>41</td>
+            <td>2012/10/13</td>
+            <td>$132,000</td>
+        </tr>
+        <tr>
+            <td>Dai Rios</td>
+            <td>Personnel Lead</td>
+            <td>Edinburgh</td>
+            <td>35</td>
+            <td>2012/09/26</td>
+            <td>$217,500</td>
+        </tr>
+        <tr>
+            <td>Jenette Caldwell</td>
+            <td>Development Lead</td>
+            <td>New York</td>
+            <td>30</td>
+            <td>2011/09/03</td>
+            <td>$345,000</td>
+        </tr>
+        <tr>
+            <td>Yuri Berry</td>
+            <td>Chief Marketing Officer (CMO)</td>
+            <td>New York</td>
+            <td>40</td>
+            <td>2009/06/25</td>
+            <td>$675,000</td>
+        </tr>
+        <tr>
+            <td>Caesar Vance</td>
+            <td>Pre-Sales Support</td>
+            <td>New York</td>
+            <td>21</td>
+            <td>2011/12/12</td>
+            <td>$106,450</td>
+        </tr>
+        <tr>
+            <td>Doris Wilder</td>
+            <td>Sales Assistant</td>
+            <td>Sidney</td>
+            <td>23</td>
+            <td>2010/09/20</td>
+            <td>$85,600</td>
+        </tr>
+        <tr>
+            <td>Angelica Ramos</td>
+            <td>Chief Executive Officer (CEO)</td>
+            <td>London</td>
+            <td>47</td>
+            <td>2009/10/09</td>
+            <td>$1,200,000</td>
+        </tr>
+        <tr>
+            <td>Gavin Joyce</td>
+            <td>Developer</td>
+            <td>Edinburgh</td>
+            <td>42</td>
+            <td>2010/12/22</td>
+            <td>$92,575</td>
+        </tr>
+        <tr>
+            <td>Jennifer Chang</td>
+            <td>Regional Director</td>
+            <td>Singapore</td>
+            <td>28</td>
+            <td>2010/11/14</td>
+            <td>$357,650</td>
+        </tr>
+        <tr>
+            <td>Brenden Wagner</td>
+            <td>Software Engineer</td>
+            <td>San Francisco</td>
+            <td>28</td>
+            <td>2011/06/07</td>
+            <td>$206,850</td>
+        </tr>
+        <tr>
+            <td>Fiona Green</td>
+            <td>Chief Operating Officer (COO)</td>
+            <td>San Francisco</td>
+            <td>48</td>
+            <td>2010/03/11</td>
+            <td>$850,000</td>
+        </tr>
+        <tr>
+            <td>Shou Itou</td>
+            <td>Regional Marketing</td>
+            <td>Tokyo</td>
+            <td>20</td>
+            <td>2011/08/14</td>
+            <td>$163,000</td>
+        </tr>
+        <tr>
+            <td>Michelle House</td>
+            <td>Integration Specialist</td>
+            <td>Sidney</td>
+            <td>37</td>
+            <td>2011/06/02</td>
+            <td>$95,400</td>
+        </tr>
+        <tr>
+            <td>Suki Burks</td>
+            <td>Developer</td>
+            <td>London</td>
+            <td>53</td>
+            <td>2009/10/22</td>
+            <td>$114,500</td>
+        </tr>
+        <tr>
+            <td>Prescott Bartlett</td>
+            <td>Technical Author</td>
+            <td>London</td>
+            <td>27</td>
+            <td>2011/05/07</td>
+            <td>$145,000</td>
+        </tr>
+        <tr>
+            <td>Gavin Cortez</td>
+            <td>Team Leader</td>
+            <td>San Francisco</td>
+            <td>22</td>
+            <td>2008/10/26</td>
+            <td>$235,500</td>
+        </tr>
+        <tr>
+            <td>Martena Mccray</td>
+            <td>Post-Sales support</td>
+            <td>Edinburgh</td>
+            <td>46</td>
+            <td>2011/03/09</td>
+            <td>$324,050</td>
+        </tr>
+        <tr>
+            <td>Unity Butler</td>
+            <td>Marketing Designer</td>
+            <td>San Francisco</td>
+            <td>47</td>
+            <td>2009/12/09</td>
+            <td>$85,675</td>
+        </tr>
+        <tr>
+            <td>Howard Hatfield</td>
+            <td>Office Manager</td>
+            <td>San Francisco</td>
+            <td>51</td>
+            <td>2008/12/16</td>
+            <td>$164,500</td>
+        </tr>
+        <tr>
+            <td>Hope Fuentes</td>
+            <td>Secretary</td>
+            <td>San Francisco</td>
+            <td>41</td>
+            <td>2010/02/12</td>
+            <td>$109,850</td>
+        </tr>
+        <tr>
+            <td>Vivian Harrell</td>
+            <td>Financial Controller</td>
+            <td>San Francisco</td>
+            <td>62</td>
+            <td>2009/02/14</td>
+            <td>$452,500</td>
+        </tr>
+        <tr>
+            <td>Timothy Mooney</td>
+            <td>Office Manager</td>
+            <td>London</td>
+            <td>37</td>
+            <td>2008/12/11</td>
+            <td>$136,200</td>
+        </tr>
+        <tr>
+            <td>Jackson Bradshaw</td>
+            <td>Director</td>
+            <td>New York</td>
+            <td>65</td>
+            <td>2008/09/26</td>
+            <td>$645,750</td>
+        </tr>
+        <tr>
+            <td>Olivia Liang</td>
+            <td>Support Engineer</td>
+            <td>Singapore</td>
+            <td>64</td>
+            <td>2011/02/03</td>
+            <td>$234,500</td>
+        </tr>
+        <tr>
+            <td>Bruno Nash</td>
+            <td>Software Engineer</td>
+            <td>London</td>
+            <td>38</td>
+            <td>2011/05/03</td>
+            <td>$163,500</td>
+        </tr>
+        <tr>
+            <td>Sakura Yamamoto</td>
+            <td>Support Engineer</td>
+            <td>Tokyo</td>
+            <td>37</td>
+            <td>2009/08/19</td>
+            <td>$139,575</td>
+        </tr>
+        <tr>
+            <td>Thor Walton</td>
+            <td>Developer</td>
+            <td>New York</td>
+            <td>61</td>
+            <td>2013/08/11</td>
+            <td>$98,540</td>
+        </tr>
+        <tr>
+            <td>Finn Camacho</td>
+            <td>Support Engineer</td>
+            <td>San Francisco</td>
+            <td>47</td>
+            <td>2009/07/07</td>
+            <td>$87,500</td>
+        </tr>
+        <tr>
+            <td>Serge Baldwin</td>
+            <td>Data Coordinator</td>
+            <td>Singapore</td>
+            <td>64</td>
+            <td>2012/04/09</td>
+            <td>$138,575</td>
+        </tr>
+        <tr>
+            <td>Zenaida Frank</td>
+            <td>Software Engineer</td>
+            <td>New York</td>
+            <td>63</td>
+            <td>2010/01/04</td>
+            <td>$125,250</td>
+        </tr>
+        <tr>
+            <td>Zorita Serrano</td>
+            <td>Software Engineer</td>
+            <td>San Francisco</td>
+            <td>56</td>
+            <td>2012/06/01</td>
+            <td>$115,000</td>
+        </tr>
+        <tr>
+            <td>Jennifer Acosta</td>
+            <td>Junior Javascript Developer</td>
+            <td>Edinburgh</td>
+            <td>43</td>
+            <td>2013/02/01</td>
+            <td>$75,650</td>
+        </tr>
+        <tr>
+            <td>Cara Stevens</td>
+            <td>Sales Assistant</td>
+            <td>New York</td>
+            <td>46</td>
+            <td>2011/12/06</td>
+            <td>$145,600</td>
+        </tr>
+        <tr>
+            <td>Hermione Butler</td>
+            <td>Regional Director</td>
+            <td>London</td>
+            <td>47</td>
+            <td>2011/03/21</td>
+            <td>$356,250</td>
+        </tr>
+        <tr>
+            <td>Lael Greer</td>
+            <td>Systems Administrator</td>
+            <td>London</td>
+            <td>21</td>
+            <td>2009/02/27</td>
+            <td>$103,500</td>
+        </tr>
+        <tr>
+            <td>Jonas Alexander</td>
+            <td>Developer</td>
+            <td>San Francisco</td>
+            <td>30</td>
+            <td>2010/07/14</td>
+            <td>$86,500</td>
+        </tr>
+        <tr>
+            <td>Shad Decker</td>
+            <td>Regional Director</td>
+            <td>Edinburgh</td>
+            <td>51</td>
+            <td>2008/11/13</td>
+            <td>$183,000</td>
+        </tr>
+        <tr>
+            <td>Michael Bruce</td>
+            <td>Javascript Developer</td>
+            <td>Singapore</td>
+            <td>29</td>
+            <td>2011/06/27</td>
+            <td>$183,000</td>
+        </tr>
+        <tr>
+            <td>Donna Snider</td>
+            <td>Customer Support</td>
+            <td>New York</td>
+            <td>27</td>
+            <td>2011/01/25</td>
+            <td>$112,000</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-datatables">Kode</button>
+  <div id="code-datatables" class="accordion-content">
+    
+<div class="component-preview component-preview-code  component-code-datatables" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"js-datatable-example-basic"</span> <span class="na">class=</span><span class="s">"table w-percent-100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Name<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Position<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Office<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Age<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Start date<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Salary<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tiger Nixon<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>System Architect<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>61<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/04/25<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$320,800<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Garrett Winters<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Accountant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>63<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/07/25<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$170,750<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Ashton Cox<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Junior Technical Author<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>66<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/01/12<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$86,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Cedric Kelly<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Senior Javascript Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/03/29<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$433,060<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Airi Satou<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Accountant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>33<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/11/28<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$162,700<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Brielle Williamson<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Integration Specialist<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>61<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/12/02<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$372,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Herrod Chandler<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sales Assistant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>59<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/08/06<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$137,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Rhona Davidson<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Integration Specialist<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>55<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/10/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$327,900<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Colleen Hurst<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Javascript Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>39<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/09/15<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$205,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sonya Frost<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>23<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/12/13<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$103,600<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jena Gaines<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Office Manager<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>30<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/12/19<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$90,560<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Quinn Flynn<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Support Lead<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2013/03/03<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$342,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Charde Marshall<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>36<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/10/16<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$470,600<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Haley Kennedy<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Senior Marketing Designer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>43<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/12/18<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$313,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tatyana Fitzpatrick<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>19<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/03/17<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$385,750<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Michael Silva<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Marketing Designer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>66<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/11/27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$198,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Paul Byrd<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Chief Financial Officer (CFO)<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>64<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/06/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$725,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Gloria Little<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Systems Administrator<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>59<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/04/10<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$237,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Bradley Greer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>41<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/10/13<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$132,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Dai Rios<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Personnel Lead<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>35<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/09/26<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$217,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jenette Caldwell<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Development Lead<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>30<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/09/03<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$345,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Yuri Berry<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Chief Marketing Officer (CMO)<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>40<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/06/25<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$675,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Caesar Vance<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Pre-Sales Support<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>21<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/12/12<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$106,450<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Doris Wilder<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sales Assistant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sidney<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>23<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/09/20<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$85,600<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Angelica Ramos<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Chief Executive Officer (CEO)<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/10/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$1,200,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Gavin Joyce<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>42<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/12/22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$92,575<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jennifer Chang<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Singapore<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>28<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/11/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$357,650<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Brenden Wagner<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>28<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/06/07<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$206,850<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Fiona Green<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Chief Operating Officer (COO)<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>48<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/03/11<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$850,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Shou Itou<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Marketing<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>20<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/08/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$163,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Michelle House<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Integration Specialist<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sidney<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>37<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/06/02<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$95,400<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Suki Burks<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>53<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/10/22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$114,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Prescott Bartlett<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Technical Author<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/05/07<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$145,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Gavin Cortez<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Team Leader<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/10/26<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$235,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Martena Mccray<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Post-Sales support<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>46<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/03/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$324,050<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Unity Butler<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Marketing Designer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/12/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$85,675<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Howard Hatfield<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Office Manager<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>51<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/12/16<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$164,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Hope Fuentes<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Secretary<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>41<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/02/12<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$109,850<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Vivian Harrell<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Financial Controller<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>62<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/02/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$452,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Timothy Mooney<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Office Manager<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>37<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/12/11<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$136,200<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jackson Bradshaw<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/09/26<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$645,750<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Olivia Liang<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Support Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Singapore<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>64<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/02/03<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$234,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Bruno Nash<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/05/03<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$163,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sakura Yamamoto<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Support Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>37<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/08/19<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$139,575<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Thor Walton<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>61<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2013/08/11<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$98,540<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Finn Camacho<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Support Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/07/07<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$87,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Serge Baldwin<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Data Coordinator<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Singapore<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>64<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/04/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$138,575<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Zenaida Frank<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>63<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/01/04<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$125,250<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Zorita Serrano<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>56<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/06/01<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$115,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jennifer Acosta<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Junior Javascript Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>43<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2013/02/01<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$75,650<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Cara Stevens<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sales Assistant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>46<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/12/06<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$145,600<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Hermione Butler<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/03/21<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$356,250<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Lael Greer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Systems Administrator<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>21<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/02/27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$103,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jonas Alexander<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>30<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/07/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$86,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Shad Decker<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>51<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/11/13<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$183,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Michael Bruce<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Javascript Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Singapore<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>29<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/06/27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$183,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Donna Snider<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Customer Support<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/01/25<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$112,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/plugins/datatables/02-ajax-data">
+  <h2 id="ajax-data">Ajax data</h2>
+  
+    <p class="font-lead">Data from an ajax service.</p>
+  
+  <div class="component-preview  component-preview-datatables-ajax p-4" aria-label="">
+    <table id="js-datatable-example-ajax" class="table w-percent-100">
+    <thead>
+        <tr>
+            <th>Navn</th>
+            <th>Email</th>
+            <th>Vej</th>
+            <th>By</th>
+            <th>Telefon</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Filled in by js-->
+    </tbody>
+</table>
+</div>
+
+<div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-datatables--ajax">Kode</button>
+  <div id="code-datatables--ajax" class="accordion-content">
+    
+<div class="component-preview component-preview-code  component-code-datatables-ajax" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"js-datatable-example-ajax"</span> <span class="na">class=</span><span class="s">"table w-percent-100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Navn<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Email<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Vej<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>By<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Telefon<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="c">&lt;!--Filled in by js--&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/plugins/datatables/03-expandable-row">
+  <h2 id="expandable-table">Expandable table</h2>
+  
+    <p class="font-lead">An expandable table allows the user to show and hide content of a row.</p>
+  
+  <div class="component-preview  component-preview-datatables-expandable-row p-4" aria-label="">
+    <table id="js-datatable-example-detailsrow" class="table table--lines w-percent-100">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Navn</th>
+            <!--<th>Email</th>-->
+            <th>Vej</th>
+            <th>By</th>
+            <th>Telefon</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Filled in by js-->
+    </tbody>
+</table>
+</div>
+
+<div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-datatables--expandable-row">Kode</button>
+  <div id="code-datatables--expandable-row" class="accordion-content">
+    
+<div class="component-preview component-preview-code  component-code-datatables-expandable-row" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"js-datatable-example-detailsrow"</span>
+    <span class="na">class=</span><span class="s">"table table--lines w-percent-100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Navn<span class="nt">&lt;/th&gt;</span>
+            <span class="c">&lt;!--&lt;th&gt;Email&lt;/th&gt;--&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Vej<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>By<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Telefon<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="c">&lt;!--Filled in by js--&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/plugins/datatables/05-selectable-row">
+  <h2 id="selectable-row">Selectable row</h2>
+  
+  <div class="component-preview  component-preview-datatables-selectable p-4" aria-label="">
+    <table id="js-datatable-example-selectable" class="table table--zebra w-percent-100">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Navn</th>
+            <th>Email</th>
+            <th>Vej</th>
+            <th>By</th>
+            <th>Telefon</th>
+            <th>Firmanavn</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td>Tiger Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Ashton Cox</td>
+            <td>Junior Technical Author</td>
+            <td>San Francisco</td>
+            <td>66</td>
+            <td>2009/01/12</td>
+            <td>$86,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Cedric Kelly</td>
+            <td>Senior Javascript Developer</td>
+            <td>Edinburgh</td>
+            <td>22</td>
+            <td>2012/03/29</td>
+            <td>$433,060</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Airi Satou</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>33</td>
+            <td>2008/11/28</td>
+            <td>$162,700</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Brielle Williamson</td>
+            <td>Integration Specialist</td>
+            <td>New York</td>
+            <td>61</td>
+            <td>2012/12/02</td>
+            <td>$372,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Herrod Chandler</td>
+            <td>Sales Assistant</td>
+            <td>San Francisco</td>
+            <td>59</td>
+            <td>2012/08/06</td>
+            <td>$137,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Rhona Davidson</td>
+            <td>Integration Specialist</td>
+            <td>Tokyo</td>
+            <td>55</td>
+            <td>2010/10/14</td>
+            <td>$327,900</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Colleen Hurst</td>
+            <td>Javascript Developer</td>
+            <td>San Francisco</td>
+            <td>39</td>
+            <td>2009/09/15</td>
+            <td>$205,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Sonya Frost</td>
+            <td>Software Engineer</td>
+            <td>Edinburgh</td>
+            <td>23</td>
+            <td>2008/12/13</td>
+            <td>$103,600</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Jena Gaines</td>
+            <td>Office Manager</td>
+            <td>London</td>
+            <td>30</td>
+            <td>2008/12/19</td>
+            <td>$90,560</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quinn Flynn</td>
+            <td>Support Lead</td>
+            <td>Edinburgh</td>
+            <td>22</td>
+            <td>2013/03/03</td>
+            <td>$342,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Charde Marshall</td>
+            <td>Regional Director</td>
+            <td>San Francisco</td>
+            <td>36</td>
+            <td>2008/10/16</td>
+            <td>$470,600</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Haley Kennedy</td>
+            <td>Senior Marketing Designer</td>
+            <td>London</td>
+            <td>43</td>
+            <td>2012/12/18</td>
+            <td>$313,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Tatyana Fitzpatrick</td>
+            <td>Regional Director</td>
+            <td>London</td>
+            <td>19</td>
+            <td>2010/03/17</td>
+            <td>$385,750</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Michael Silva</td>
+            <td>Marketing Designer</td>
+            <td>London</td>
+            <td>66</td>
+            <td>2012/11/27</td>
+            <td>$198,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Paul Byrd</td>
+            <td>Chief Financial Officer (CFO)</td>
+            <td>New York</td>
+            <td>64</td>
+            <td>2010/06/09</td>
+            <td>$725,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Gloria Little</td>
+            <td>Systems Administrator</td>
+            <td>New York</td>
+            <td>59</td>
+            <td>2009/04/10</td>
+            <td>$237,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Bradley Greer</td>
+            <td>Software Engineer</td>
+            <td>London</td>
+            <td>41</td>
+            <td>2012/10/13</td>
+            <td>$132,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Dai Rios</td>
+            <td>Personnel Lead</td>
+            <td>Edinburgh</td>
+            <td>35</td>
+            <td>2012/09/26</td>
+            <td>$217,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Jenette Caldwell</td>
+            <td>Development Lead</td>
+            <td>New York</td>
+            <td>30</td>
+            <td>2011/09/03</td>
+            <td>$345,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Yuri Berry</td>
+            <td>Chief Marketing Officer (CMO)</td>
+            <td>New York</td>
+            <td>40</td>
+            <td>2009/06/25</td>
+            <td>$675,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Caesar Vance</td>
+            <td>Pre-Sales Support</td>
+            <td>New York</td>
+            <td>21</td>
+            <td>2011/12/12</td>
+            <td>$106,450</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Doris Wilder</td>
+            <td>Sales Assistant</td>
+            <td>Sidney</td>
+            <td>23</td>
+            <td>2010/09/20</td>
+            <td>$85,600</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Angelica Ramos</td>
+            <td>Chief Executive Officer (CEO)</td>
+            <td>London</td>
+            <td>47</td>
+            <td>2009/10/09</td>
+            <td>$1,200,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Gavin Joyce</td>
+            <td>Developer</td>
+            <td>Edinburgh</td>
+            <td>42</td>
+            <td>2010/12/22</td>
+            <td>$92,575</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Jennifer Chang</td>
+            <td>Regional Director</td>
+            <td>Singapore</td>
+            <td>28</td>
+            <td>2010/11/14</td>
+            <td>$357,650</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Brenden Wagner</td>
+            <td>Software Engineer</td>
+            <td>San Francisco</td>
+            <td>28</td>
+            <td>2011/06/07</td>
+            <td>$206,850</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Fiona Green</td>
+            <td>Chief Operating Officer (COO)</td>
+            <td>San Francisco</td>
+            <td>48</td>
+            <td>2010/03/11</td>
+            <td>$850,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Shou Itou</td>
+            <td>Regional Marketing</td>
+            <td>Tokyo</td>
+            <td>20</td>
+            <td>2011/08/14</td>
+            <td>$163,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Michelle House</td>
+            <td>Integration Specialist</td>
+            <td>Sidney</td>
+            <td>37</td>
+            <td>2011/06/02</td>
+            <td>$95,400</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Suki Burks</td>
+            <td>Developer</td>
+            <td>London</td>
+            <td>53</td>
+            <td>2009/10/22</td>
+            <td>$114,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Prescott Bartlett</td>
+            <td>Technical Author</td>
+            <td>London</td>
+            <td>27</td>
+            <td>2011/05/07</td>
+            <td>$145,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Gavin Cortez</td>
+            <td>Team Leader</td>
+            <td>San Francisco</td>
+            <td>22</td>
+            <td>2008/10/26</td>
+            <td>$235,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Martena Mccray</td>
+            <td>Post-Sales support</td>
+            <td>Edinburgh</td>
+            <td>46</td>
+            <td>2011/03/09</td>
+            <td>$324,050</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Unity Butler</td>
+            <td>Marketing Designer</td>
+            <td>San Francisco</td>
+            <td>47</td>
+            <td>2009/12/09</td>
+            <td>$85,675</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Howard Hatfield</td>
+            <td>Office Manager</td>
+            <td>San Francisco</td>
+            <td>51</td>
+            <td>2008/12/16</td>
+            <td>$164,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Hope Fuentes</td>
+            <td>Secretary</td>
+            <td>San Francisco</td>
+            <td>41</td>
+            <td>2010/02/12</td>
+            <td>$109,850</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Vivian Harrell</td>
+            <td>Financial Controller</td>
+            <td>San Francisco</td>
+            <td>62</td>
+            <td>2009/02/14</td>
+            <td>$452,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Timothy Mooney</td>
+            <td>Office Manager</td>
+            <td>London</td>
+            <td>37</td>
+            <td>2008/12/11</td>
+            <td>$136,200</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Jackson Bradshaw</td>
+            <td>Director</td>
+            <td>New York</td>
+            <td>65</td>
+            <td>2008/09/26</td>
+            <td>$645,750</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Olivia Liang</td>
+            <td>Support Engineer</td>
+            <td>Singapore</td>
+            <td>64</td>
+            <td>2011/02/03</td>
+            <td>$234,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Bruno Nash</td>
+            <td>Software Engineer</td>
+            <td>London</td>
+            <td>38</td>
+            <td>2011/05/03</td>
+            <td>$163,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Sakura Yamamoto</td>
+            <td>Support Engineer</td>
+            <td>Tokyo</td>
+            <td>37</td>
+            <td>2009/08/19</td>
+            <td>$139,575</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Thor Walton</td>
+            <td>Developer</td>
+            <td>New York</td>
+            <td>61</td>
+            <td>2013/08/11</td>
+            <td>$98,540</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Finn Camacho</td>
+            <td>Support Engineer</td>
+            <td>San Francisco</td>
+            <td>47</td>
+            <td>2009/07/07</td>
+            <td>$87,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Serge Baldwin</td>
+            <td>Data Coordinator</td>
+            <td>Singapore</td>
+            <td>64</td>
+            <td>2012/04/09</td>
+            <td>$138,575</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Zenaida Frank</td>
+            <td>Software Engineer</td>
+            <td>New York</td>
+            <td>63</td>
+            <td>2010/01/04</td>
+            <td>$125,250</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Zorita Serrano</td>
+            <td>Software Engineer</td>
+            <td>San Francisco</td>
+            <td>56</td>
+            <td>2012/06/01</td>
+            <td>$115,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Jennifer Acosta</td>
+            <td>Junior Javascript Developer</td>
+            <td>Edinburgh</td>
+            <td>43</td>
+            <td>2013/02/01</td>
+            <td>$75,650</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Cara Stevens</td>
+            <td>Sales Assistant</td>
+            <td>New York</td>
+            <td>46</td>
+            <td>2011/12/06</td>
+            <td>$145,600</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Hermione Butler</td>
+            <td>Regional Director</td>
+            <td>London</td>
+            <td>47</td>
+            <td>2011/03/21</td>
+            <td>$356,250</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lael Greer</td>
+            <td>Systems Administrator</td>
+            <td>London</td>
+            <td>21</td>
+            <td>2009/02/27</td>
+            <td>$103,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Jonas Alexander</td>
+            <td>Developer</td>
+            <td>San Francisco</td>
+            <td>30</td>
+            <td>2010/07/14</td>
+            <td>$86,500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Shad Decker</td>
+            <td>Regional Director</td>
+            <td>Edinburgh</td>
+            <td>51</td>
+            <td>2008/11/13</td>
+            <td>$183,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Michael Bruce</td>
+            <td>Javascript Developer</td>
+            <td>Singapore</td>
+            <td>29</td>
+            <td>2011/06/27</td>
+            <td>$183,000</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Donna Snider</td>
+            <td>Customer Support</td>
+            <td>New York</td>
+            <td>27</td>
+            <td>2011/01/25</td>
+            <td>$112,000</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-datatables--selectable">Kode</button>
+  <div id="code-datatables--selectable" class="accordion-content">
+    
+<div class="component-preview component-preview-code  component-code-datatables-selectable" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"js-datatable-example-selectable"</span>
+    <span class="na">class=</span><span class="s">"table table--zebra w-percent-100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Navn<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Email<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Vej<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>By<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Telefon<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Firmanavn<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tiger Nixon<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>System Architect<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>61<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/04/25<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$320,800<span class="nt">&lt;/td&gt;</span>
+
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Garrett Winters<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Accountant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>63<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/07/25<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$170,750<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Ashton Cox<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Junior Technical Author<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>66<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/01/12<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$86,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Cedric Kelly<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Senior Javascript Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/03/29<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$433,060<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Airi Satou<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Accountant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>33<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/11/28<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$162,700<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Brielle Williamson<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Integration Specialist<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>61<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/12/02<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$372,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Herrod Chandler<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sales Assistant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>59<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/08/06<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$137,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Rhona Davidson<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Integration Specialist<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>55<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/10/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$327,900<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Colleen Hurst<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Javascript Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>39<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/09/15<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$205,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sonya Frost<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>23<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/12/13<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$103,600<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jena Gaines<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Office Manager<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>30<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/12/19<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$90,560<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Quinn Flynn<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Support Lead<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2013/03/03<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$342,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Charde Marshall<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>36<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/10/16<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$470,600<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Haley Kennedy<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Senior Marketing Designer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>43<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/12/18<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$313,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tatyana Fitzpatrick<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>19<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/03/17<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$385,750<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Michael Silva<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Marketing Designer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>66<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/11/27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$198,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Paul Byrd<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Chief Financial Officer (CFO)<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>64<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/06/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$725,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Gloria Little<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Systems Administrator<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>59<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/04/10<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$237,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Bradley Greer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>41<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/10/13<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$132,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Dai Rios<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Personnel Lead<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>35<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/09/26<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$217,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jenette Caldwell<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Development Lead<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>30<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/09/03<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$345,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Yuri Berry<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Chief Marketing Officer (CMO)<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>40<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/06/25<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$675,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Caesar Vance<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Pre-Sales Support<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>21<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/12/12<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$106,450<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Doris Wilder<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sales Assistant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sidney<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>23<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/09/20<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$85,600<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Angelica Ramos<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Chief Executive Officer (CEO)<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/10/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$1,200,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Gavin Joyce<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>42<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/12/22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$92,575<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jennifer Chang<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Singapore<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>28<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/11/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$357,650<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Brenden Wagner<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>28<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/06/07<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$206,850<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Fiona Green<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Chief Operating Officer (COO)<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>48<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/03/11<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$850,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Shou Itou<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Marketing<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>20<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/08/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$163,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Michelle House<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Integration Specialist<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sidney<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>37<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/06/02<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$95,400<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Suki Burks<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>53<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/10/22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$114,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Prescott Bartlett<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Technical Author<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/05/07<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$145,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Gavin Cortez<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Team Leader<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>22<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/10/26<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$235,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Martena Mccray<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Post-Sales support<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>46<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/03/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$324,050<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Unity Butler<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Marketing Designer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/12/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$85,675<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Howard Hatfield<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Office Manager<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>51<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/12/16<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$164,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Hope Fuentes<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Secretary<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>41<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/02/12<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$109,850<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Vivian Harrell<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Financial Controller<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>62<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/02/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$452,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Timothy Mooney<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Office Manager<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>37<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/12/11<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$136,200<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jackson Bradshaw<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>65<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/09/26<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$645,750<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Olivia Liang<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Support Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Singapore<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>64<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/02/03<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$234,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Bruno Nash<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>38<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/05/03<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$163,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sakura Yamamoto<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Support Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Tokyo<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>37<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/08/19<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$139,575<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Thor Walton<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>61<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2013/08/11<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$98,540<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Finn Camacho<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Support Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/07/07<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$87,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Serge Baldwin<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Data Coordinator<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Singapore<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>64<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/04/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$138,575<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Zenaida Frank<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>63<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/01/04<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$125,250<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Zorita Serrano<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Software Engineer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>56<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2012/06/01<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$115,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jennifer Acosta<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Junior Javascript Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>43<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2013/02/01<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$75,650<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Cara Stevens<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Sales Assistant<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>46<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/12/06<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$145,600<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Hermione Butler<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>47<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/03/21<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$356,250<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Lael Greer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Systems Administrator<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>London<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>21<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2009/02/27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$103,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Jonas Alexander<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>San Francisco<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>30<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2010/07/14<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$86,500<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Shad Decker<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Regional Director<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Edinburgh<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>51<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2008/11/13<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$183,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Michael Bruce<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Javascript Developer<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Singapore<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>29<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/06/27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$183,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;td&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Donna Snider<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>Customer Support<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>New York<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>27<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>2011/01/25<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;td&gt;</span>$112,000<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/plugins/datatables/06-edit">
+  <h2 id="edit-and-delete-row">Edit and delete row</h2>
+  
+    <p class="font-lead">Overflow menu with edit and delete functionality</p>
+  
+  <div class="component-preview  component-preview-datatables-edit p-4" aria-label="">
+    <p class="form-label">Funktionalitet i overflow-menu</p>
+<table id="js-datatable-example-edit" class="table table--zebra table--lines w-percent-100">
+    <thead>
+        <tr>
+            <th>Navn</th>
+            <th>Vej</th>
+            <th>By</th>
+            <th>Firmanavn</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- filled in by js-->
+    </tbody>
+</table>
+
+<p class="form-label">Funktionalitet uden overflow-menu</p>
+<table id="js-datatable-example-edit2" class="table table--zebra table--lines w-percent-100">
+    <thead>
+        <tr>
+            <th>Navn</th>
+            <th>Vej</th>
+            <th>By</th>
+            <th>Firmanavn</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- filled in by js-->
+    </tbody>
+</table>
+
+<!-- MODAL EDIT START -->
+<div class="modal" id="modal-edit" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-edit-title">
+            <div class="modal__header">
+                <h1 class="modal__title h2" id="modal-edit-title">
+                    Datatable details row edit
+                </h1>
+            </div>
+            <div class="modal__content" id="modal-edit-content">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-error alert--show-icon" role="alert" aria-label="Beskedbox der viser en fejlmeddelelse">
+                            <div class="alert-body">
+                                <h3 class="alert-heading">Error alert -
+                                    with icon</h3>
+                                <p class="alert-text">Sed ut perspiciatis
+                                    unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque
+                                    laudantium.</p>
+                            </div>
+                        </div>
+                        <input id="edit-row-id" name="edit-row-id" type="hidden" />
+                        <div class="form-group">
+                            <label class="form-label" for="edit-navn">Navn:</label>
+                            <input class="form-input" id="edit-navn" name="edit-navn" type="text" />
+                        </div>
+                        <div class="form-group form-error">
+                            <label class="form-label " for="edit-vejnavn">Vejnavn</label>
+                            <span class="form-hint" id="input-hint-message-input-error">For
+                                example, lærkevej</span>
+                            <span class="input-error-message" id="input-error-message-input-error" role="alert">Fejl i vejnavn</span>
+                            <input class="form-input" id="edit-vejnavn" name="edit-vejnavn" type="text" aria-describedby="input-error-message-input-error" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="edit-by">By:</label>
+                            <input class="form-input" id="edit-by" name="edit-by" type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="edit-firmanavn">Firmanavn:</label>
+                            <input class="form-input" id="edit-firmanavn" name="edit-firmanavn" type="text" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="button button-primary js-edit-save-trigger" aria-label="Save changes to the row">Gem</button>
+                <button class="button button-secondary" data-micromodal-close="" aria-label="Close this dialog window, no changes saved">Annuller</button>
+                <!--<button class="button button-primary">En knap</button>
+                <button class="button button-secondary" data-micromodal-close aria-label="Close this dialog window">Knap som lukker modal</button>-->
+            </div>
+            <button class="modal__close button button-secondary" aria-label="Close modal" data-micromodal-close="">Luk</button>
+        </div>
+    </div>
+</div>
+<!-- MODAL EDIT END -->
+
+<!-- MODAL DELETE START -->
+<div class="modal" id="modal-delete" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-delete-title">
+            <div class="modal__header">
+                <h1 class="modal__title h2" id="modal-delete-title">
+                    Godkend slet
+                </h1>
+            </div>
+            <div class="modal__content" id="modal-delete-content">
+                <p>Er du sikker på at du gerne vil slette rækken?</p>
+            </div>
+            <div class="modal__footer">
+                <button class="button button-primary js-delete-trigger">Ja</button>
+                <button class="button button-secondary" data-micromodal-close="" aria-label="Close this dialog window">Nej</button>
+            </div>
+            <button class="modal__close button button-secondary" aria-label="Close modal" data-micromodal-close="">Luk</button>
+        </div>
+    </div>
+</div>
+<!-- MODAL DELETE END -->
+</div>
+
+<div class="accordion accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-datatables--edit">Kode</button>
+  <div id="code-datatables--edit" class="accordion-content">
+    
+<div class="component-preview component-preview-code  component-code-datatables-edit" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Funktionalitet i overflow-menu<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"js-datatable-example-edit"</span>
+    <span class="na">class=</span><span class="s">"table table--zebra table--lines w-percent-100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Navn<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Vej<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>By<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Firmanavn<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="c">&lt;!-- filled in by js--&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Funktionalitet uden overflow-menu<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"js-datatable-example-edit2"</span>
+    <span class="na">class=</span><span class="s">"table table--zebra table--lines w-percent-100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Navn<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Vej<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>By<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Firmanavn<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+        <span class="c">&lt;!-- filled in by js--&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="c">&lt;!-- MODAL EDIT START --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"modal-edit"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__overlay"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__container"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-modal=</span><span class="s">"true"</span>
+            <span class="na">aria-labelledby=</span><span class="s">"modal-edit-title"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"modal__title h2"</span> <span class="na">id=</span><span class="s">"modal-edit-title"</span><span class="nt">&gt;</span>
+                    Datatable details row edit
+                <span class="nt">&lt;/h1&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__content"</span> <span class="na">id=</span><span class="s">"modal-edit-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error alert--show-icon"</span>
+                            <span class="na">role=</span><span class="s">"alert"</span>
+                            <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en fejlmeddelelse"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Error alert -
+                                    with icon<span class="nt">&lt;/h3&gt;</span>
+                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis
+                                    unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque
+                                    laudantium.<span class="nt">&lt;/p&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"edit-row-id"</span> <span class="na">name=</span><span class="s">"edit-row-id"</span>
+                            <span class="na">type=</span><span class="s">"hidden"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
+                                <span class="na">for=</span><span class="s">"edit-navn"</span><span class="nt">&gt;</span>Navn:<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-navn"</span>
+                                <span class="na">name=</span><span class="s">"edit-navn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span>
+                                <span class="na">for=</span><span class="s">"edit-vejnavn"</span><span class="nt">&gt;</span>Vejnavn<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span>
+                                <span class="na">id=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>For
+                                example, lærkevej<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span>
+                                <span class="na">id=</span><span class="s">"input-error-message-input-error"</span>
+                                <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Fejl i vejnavn<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-vejnavn"</span>
+                                <span class="na">name=</span><span class="s">"edit-vejnavn"</span> <span class="na">type=</span><span class="s">"text"</span>
+                                <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-error"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
+                                <span class="na">for=</span><span class="s">"edit-by"</span><span class="nt">&gt;</span>By:<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-by"</span>
+                                <span class="na">name=</span><span class="s">"edit-by"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
+                                <span class="na">for=</span><span class="s">"edit-firmanavn"</span><span class="nt">&gt;</span>Firmanavn:<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-firmanavn"</span>
+                                <span class="na">name=</span><span class="s">"edit-firmanavn"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-edit-save-trigger"</span>
+                    <span class="na">aria-label=</span><span class="s">"Save changes to the row"</span><span class="nt">&gt;</span>Gem<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary"</span>
+                    <span class="na">data-micromodal-close</span>
+                    <span class="na">aria-label=</span><span class="s">"Close this dialog window, no changes saved"</span><span class="nt">&gt;</span>Annuller<span class="nt">&lt;/button&gt;</span>
+                <span class="c">&lt;!--&lt;button class="button button-primary"&gt;En knap&lt;/button&gt;
+                &lt;button class="button button-secondary" data-micromodal-close aria-label="Close this dialog window"&gt;Knap som lukker modal&lt;/button&gt;--&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-secondary"</span>
+                <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- MODAL EDIT END --&gt;</span>
+
+<span class="c">&lt;!-- MODAL DELETE START --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"modal-delete"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__overlay"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__container"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-modal=</span><span class="s">"true"</span>
+            <span class="na">aria-labelledby=</span><span class="s">"modal-delete-title"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"modal__title h2"</span> <span class="na">id=</span><span class="s">"modal-delete-title"</span><span class="nt">&gt;</span>
+                    Godkend slet
+                <span class="nt">&lt;/h1&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__content"</span> <span class="na">id=</span><span class="s">"modal-delete-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Er du sikker på at du gerne vil slette rækken?<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span>
+                    <span class="na">class=</span><span class="s">"button button-primary js-delete-trigger"</span><span class="nt">&gt;</span>Ja<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary"</span>
+                    <span class="na">data-micromodal-close</span>
+                    <span class="na">aria-label=</span><span class="s">"Close this dialog window"</span><span class="nt">&gt;</span>Nej<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-secondary"</span>
+                <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- MODAL DELETE END --&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+
+
+
+      </section>
+    </main>
+
+  </div>
+</div>
+
+
+<footer>
+<div class="footer">
+<div class="container">
+<ul class="unstyled-list inline-list">
+<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
+<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
+<li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+    
+
+    <script src="/assets/js/theme.js"></script>
+<script src="/assets/js/vendor.js"></script>
+<script src="/assets/js/styleguide.js"></script>
+
+
+
+
+
+<script src="/assets/js/dkfds-datatables-example.js"></script>
+
+
+
+
+  </body>
+</html>

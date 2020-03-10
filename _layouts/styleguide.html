@@ -9,7 +9,7 @@ layout: default
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         {% assign sidenavFromNavData = site.data.nav[page.category] %}
         {% if sidenavFromNavData %}
-        <ul class="sidenav-list">
+        <ul class="sidenav-list" role="menu">
           {% include nav/list.html
             links=sidenavFromNavData
             use_alt_text=true
@@ -43,6 +43,10 @@ layout: default
           <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
           {% if page.lead != null and page.lead != "" %}
             <p class="font-lead">{{ page.lead }}</p>
+          {% endif %}
+
+          {% if page.component %}
+          {% include code/preview-box.html component=page.component title=page.componentTitle link=page.componentLink code=page.componentCode url=page.componentUrl %}
           {% endif %}
 
           {{ content }}

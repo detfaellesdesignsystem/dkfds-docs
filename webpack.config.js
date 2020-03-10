@@ -7,6 +7,7 @@ const path = require('path');
 module.exports = function (outputPath, prod) {
   return {
     entry: {
+      "theme": ["./javascript/theme.js"],
       styleguide: ["./javascript/start.js", "./scss/styleguide.scss"],
       styleguide_borgerdk: ["./scss/styleguide-borgerdk.scss"],
       styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
@@ -15,7 +16,8 @@ module.exports = function (outputPath, prod) {
       "dkfds-pikaday-example": ["./examples/plugins/pikaday/js/dkfds-pikaday-example.js"],
       "dkfds-micromodal-example": ["./examples/plugins/micromodal/js/dkfds-micromodal-example.js"],
       "dkfds-tippy-example": ["./examples/plugins/tippy/js/dkfds-tippy-example.js"],
-      "requirements-tool": ["./javascript/requirements-tool.js"]
+      "requirements-tool": ["./javascript/requirements-tool.js"],
+      "search": ["./javascript/search.js"]
     },
     module: {
       rules: [

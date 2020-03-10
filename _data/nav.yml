@@ -3,8 +3,8 @@ primary:
   - href: /komigang/
   - href: /design/
   - href: /komponenter/
-  - href: /udvidelser/
   - href: /eksempler/
+  - href: /kode/
   - href: /omdesignsystemet/
 
 #Primary menu on mobile:
@@ -15,10 +15,10 @@ mobile:
     categorynav: 'Design_category'
   - href: /komponenter/
     categorynav: 'Komponenter_category'
-  - href: /udvidelser/
-    categorynav: 'Udvidelser_category'
   - href: /eksempler/
     categorynav: 'Eksempler_category'
+  - href: /kode/
+    categorynav: 'Kode_category'
   - href: /omdesignsystemet/
     categorynav: 'Om_designsystemet_category'
 
@@ -26,11 +26,9 @@ mobile:
 Kom_i_gang_category:
 - href: /komigang/krav/
   categorynav: 'Krav_category'
-- href: /komigang/tiludviklere/
-  categorynav: 'Til_udviklere_category'
-- href: /komigang/tildesignere/
-  categorynav: 'Til_designere_category'
-- href: /komigang/tilprojekteledere/
+- href: /komigang/tjekliste/
+- href: /komigang/regler-principper-layout/
+- href: /komigang/designfiler/
 - href: /komigang/tilgaengelighed/
 #- href: /komigang/uxprincipper/
 
@@ -42,26 +40,31 @@ Krav_category:
 
 #Left menu for til udviklere-category
 Til_udviklere_category:
-- href: /komigang/tiludviklere/utilities/
 - href: /komigang/tiludviklere/eksempler-implementering/
 - href: /komigang/tiludviklere/anbefalinger-vaerktoejer/
 
-#Left menu for til designere-category
-Til_designere_category:
-- href: /komigang/tildesignere/design-selvbetjeningsloesninger/
-- href: /komigang/tildesignere/sideopbygning/
-- href: /komigang/tildesignere/designtjekliste/
-
 #Left menu for design-category
 Design_category:
-#  - href: /design/accessibility/
 - href: /design/farver/
-- href: /design/typography/
+- href: /design/typografi/
+  categorynav: 'Typografi_category'
 - href: /design/grid/
 - href: /design/borders/
 - href: /design/ikoner/
 - href: /design/logoer/
-- href: /design/print/
+
+Typografi_category:
+  - href: /design/typografi/overskrifter/
+  - href: /design/typografi/felt-tabel-overskrifter/
+  - href: /design/typografi/tekst/
+  - href: /design/typografi/links/
+  - href: /design/typografi/lister/
+
+Kode_Typografi_category:
+- href: /kode/typografi/overskrifter/
+- href: /kode/typografi/tekst/
+- href: /kode/typografi/links/
+- href: /kode/typografi/lister/
 
 #Left menu for komponent-category
 Komponenter_category:
@@ -70,30 +73,86 @@ Komponenter_category:
   - href: /komponenter/beskeder/
   - href: /komponenter/cards/
   - href: /komponenter/cookiemeddelelse/
-  - href: /komponenter/tabnav/
+  - href: /komponenter/dato-felt/
+  - href: /komponenter/detaljer/
+  - href: /komponenter/drop-down/
+  - href: /komponenter/faneblad/
+  - href: /komponenter/felter/
+  - href: /komponenter/fil-upload/
   - href: /komponenter/footers/
-  - href: /komponenter/form-controls/
+  - href: /komponenter/formular/
   - href: /komponenter/funktionslink/
   - href: /komponenter/headers/
-  - href: /komponenter/buttons/
+  - href: /komponenter/knapper/
+  - href: /komponenter/modal/
   - href: /komponenter/overflowmenu/
+  - href: /komponenter/radioknap/
   - href: /komponenter/sidenav/
-  - href: /komponenter/collapse/
+  - href: /komponenter/skip-link/
   - href: /komponenter/spinner/
   - href: /komponenter/search/
   - href: /komponenter/tilbage-link/
   - href: /komponenter/tables/
   - href: /komponenter/tags/
+  - href: /komponenter/textarea/
+  - href: /komponenter/tjekboks/
   - href: /komponenter/tooltip/
   - href: /komponenter/trinindikatorer/
 
+Kode_category:
+- href: /kode/implementering/
+- href: /kode/komponenter/
+  categorynav: 'Kode_Komponenter_category'
+- href: /kode/grid/
+- href: /kode/typografi/
+  categorynav: 'Kode_Typografi_category'
+- href: /kode/ikoner/
+- href: /kode/utilities/
+- href: /kode/eksempler-implementering/
+- href: /kode/print/
+- href: /kode/plugins/
+  categorynav: 'Plugins_category'
+- href: /kode/anbefalinger-vaerktoejer/
+
+#Left menu for komponent-category
+Kode_Komponenter_category:
+- href: /kode/komponenter/accordions/
+- href: /kode/komponenter/badges/
+- href: /kode/komponenter/beskeder/
+- href: /kode/komponenter/cards/
+- href: /kode/komponenter/cookiemeddelelse/
+- href: /kode/komponenter/dato-felt/
+- href: /kode/komponenter/detaljer/
+- href: /kode/komponenter/drop-down/
+- href: /kode/komponenter/faneblad/
+- href: /kode/komponenter/felter/
+- href: /kode/komponenter/fil-upload/
+- href: /kode/komponenter/footers/
+- href: /kode/komponenter/formular/
+- href: /kode/komponenter/funktionslink/
+- href: /kode/komponenter/headers/
+- href: /kode/komponenter/knapper/
+- href: /kode/komponenter/overflowmenu/
+- href: /kode/komponenter/radioknap/
+- href: /kode/komponenter/sidenav/
+- href: /kode/komponenter/skip-link/
+- href: /kode/komponenter/spinner/
+- href: /kode/komponenter/search/
+- href: /kode/komponenter/tilbage-link/
+- href: /kode/komponenter/tables/
+- href: /kode/komponenter/tags/
+- href: /kode/komponenter/textarea/
+- href: /kode/komponenter/tjekboks/
+- href: /kode/komponenter/tooltip/
+- href: /kode/komponenter/trinindikatorer/
+
 #Left menu for udvidelser-category
-Udvidelser_category:
-  - href: /udvidelser/datatables/
-  - href: /udvidelser/pikaday/
-  - href: /udvidelser/micromodal/
-  - href: /udvidelser/selectwoo-multiselect/
-  - href: /udvidelser/tippy/
+Plugins_category:
+  - href: /kode/plugins/datatables/
+  - href: /kode/plugins/pikaday/
+  - href: /kode/plugins/micromodal/
+  - href: /kode/plugins/selectwoo-multiselect/
+  - href: /kode/plugins/tippy/
 
 Eksempler_category:
   - href: /eksempler/selvbetjeningsloesninger/
@@ -109,3 +168,37 @@ Om_designsystemet_category:
   - href: /omdesignsystemet/visuelledesign/
   - href: /omdesignsystemet/privatlivspolitik-cookies/
   - href: /omdesignsystemet/releases/
+
+Eksempelloesninger_category:
+- href: /pages/eksempler/aktindsigt/aktindsigt-1/
+- href: /pages/eksempler/aktindsigt/aktindsigt-2/
+- href: /pages/eksempler/aktindsigt/aktindsigt-3/
+- href: /pages/eksempler/boernetilskud/boernetilskud-oversigt-2/
+- href: /pages/eksempler/boernetilskud/boernetilskud-oversigt/
+- href: /pages/eksempler/boernetilskud/boernetilskud-1/
+- href: /pages/eksempler/boernetilskud/boernetilskud-2/
+- href: /pages/eksempler/AES-erstatningssag/aes-1/
+- href: /pages/eksempler/AES-erstatningssag/aes-2/
+- href: /pages/eksempler/AES-erstatningssag/aes-3/
+- href: /pages/eksempler/AES-erstatningssag/aes-4/
+- href: /pages/eksempler/AES-erstatningssag/aes-5/
+- href: /pages/eksempler/AES-erstatningssag/aes-6/
+- href: /pages/eksempler/AES-erstatningssag/aes-7/
+- href: /pages/eksempler/AES-erstatningssag/aes-8/
+- href: /pages/eksempler/AES-erstatningssag/aes-9/
+- href: /pages/eksempler/AES-erstatningssag/aes-10/
+- href: /pages/eksempler/digital-flytning/flytning-1/
+- href: /pages/eksempler/digital-flytning/flytning-2/
+- href: /pages/eksempler/digital-flytning/flytning-3/
+- href: /pages/eksempler/digital-flytning/flytning-4/
+- href: /pages/eksempler/digital-flytning/flytning-5/
+- href: /pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/
+- href: /pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/
+- href: /pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/
+- href: /pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/
+- href: /pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/
+- href: /pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-6/
+- href: /pages/eksempler/vedhaeft-fil/fil-1/
+- href: /pages/eksempler/opsummering/opsummering-1/
+- href: /pages/eksempler/kvittering/kvittering-1/
+- href: /pages/eksempler/kvittering/kvittering-2/

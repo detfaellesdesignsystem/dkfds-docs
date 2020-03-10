@@ -1,8 +1,0 @@
-{% from "components/labels/labels.njk" import label as label %}
-
-<ul class="unstyled-list">
-  {% for labels in label_example.items %}
-    <li><h4>{{labels.label}}</h4></li>
-    <li>{{ label(labels.classes, labels.label) }}</li>
-  {% endfor %}
-</ul>

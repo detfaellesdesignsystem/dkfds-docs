@@ -1,5 +1,20 @@
+{% if include.component and include.component != '' %}
+<div class="component-preview component-preview-code {{ include.classes }} component-code-{{ include.component | slugify }}" aria-label="{{ include.title }}">
+    {% if include.link %}
+    <div class="component-link px-4 py-4">
+        {% if include.url %}
+        <a href="/eksempel/{{ include.url }}/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        {% else %}
+        <a href="/eksempel/{{ include.component }}/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        {% endif %}
+    </div>
+    {% endif %}
+    <div class="component-code" aria-label="Kodeeksempel">
 {% capture _syntax %}
-```{{ include.language | default: 'html' }}
+{% highlight html %}
 {% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
-```
+{% endhighlight %}
 {% endcapture %}{{ _syntax | markdownify }}
+    </div>
+</div>
+{% endif %}

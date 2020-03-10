@@ -1,8 +1,7 @@
 ---
-title: Cards med samme højde
+title: Samme højde
 parent: Cards
-order: 04
-lead: 
+order: 50
+component: cards-same-height
+componentTitle: "Eksempel på cards med samme højde"
 ---
-{% include code/preview.html component="cards-same-height" title="Eksempel på cards med samme højde" %}
-{% include code/accordion.html component="cards-same-height" %}

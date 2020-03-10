@@ -1,18 +1,30 @@
 ---
-permalink: /komigang/
+permalink: "/komigang/"
 layout: styleguide
 title: Kom i gang
 category: Kom_i_gang_category
 description: Information på hvordan man kommer igang med at bruge Det Fælles Designsystem
----
-<p class="font-lead">Det Fælles designsystem er en samling af kode og designretningslinjer, der hjælper dig med at bygge selvbetjeningsløsninger.</p>
-<p class="font-lead">Vi har taget hånd om det praktiske så du kan koncentrere dig om dine brugeres rejse og oplevelse.</p>
-<p class="font-lead">De underliggende sider indeholder grundlæggende informationer som du som udvikler, designer eller projektleder med fordel kan tage afsæt i.</p>
+lead: Det Fælles Designsystem er udviklet for at sikre en ensartet funktionalitet
+  og design i selvbetjeningsløsninger på tværs af myndigheder. Det skaber genkendelse
+  for brugerne af løsningerne og gør det nemmere for dem at foretage selvbetjening.
+tags: 
 
-<ul class="d-md-none">
-    <li><a href="/komigang/krav/" class="bold-link">Krav</a></li>
-    <li><a href="/komigang/tiludviklere/" class="bold-link">Til udviklere</a></li>
-    <li><a href="/komigang/tildesignere/" class="bold-link">Til designere</a></li>
-    <li><a href="/komigang/tilprojekteledere/" class="bold-link">Til projektledere</a></li>
-    <li><a href="/komigang/tilgaengelighed/" class="bold-link">Tilgængelighed</a></li>
-</ul>
+---
+Det Fælles Designsystem understøtter udvikling af selvbetjeningsløsninger, der er simple, brugervenlige og tilgængelige.
+
+Fordele ved at anvende designsystemet:
+
+- Du følger internationalt anerkendte bedste praksisser.
+- Du sparer tid og ressourcer, og leveringstiden for løsningen bliver hurtigere.
+
+{:.h3}
+## Se hvornår skal du anvende Det Fælles Designsystem
+
+Du skal anvende Det Fælles Designsystem til at udvikle selvbetjeningsløsninger, hvis det er et lovkrav at løsningen skal være obligatorisk digital eller den er rettet mod virksomheder.
+
+{:.d-md-none}
+- <a href="/komigang/krav/" class="bold-link">Krav</a>
+- <a href="/komigang/tjekliste/" class="bold-link">Tjekliste til FDS</a>
+- <a href="/komigang/regler-principper-layout/" class="bold-link">Regler og principper for layout</a>
+- <a href="/komigang/designfiler/" class="bold-link">Designfiler</a>
+- <a href="/komigang/tilgaengelighed/" class="bold-link">Tilgængelighed (WCAG 2.1)</a>

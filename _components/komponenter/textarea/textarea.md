@@ -1,0 +1,40 @@
+---
+permalink: /komponenter/textarea/
+layout: styleguide
+type: component
+title: Tekstområde
+category: Komponenter_category
+subcategory: Komponenter
+description: "Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge."
+tags:
+component: text-area
+componentTitle: Eksempel på tekstområde
+componentCode: "/kode/komponenter/textarea/"
+---
+
+{:.h3 #retningslinjer}
+## Anvendes til
+
+Brug tekstområder til sammenhængende (mere end 2 linjer) men ustruktureret tekst og sætninger, der har karakter af prosa. Fx en baggrundsfortælling.
+
+Anvendes når der er behov for yderligere sammenhængende information, hvis karakter brugeren ikke kan vælge ud fra et prædefineret sæt værdier.
+
+Anvendes når løsningen stiller et spørgsmål, der ikke kan besvares i et felt.
+
+{:.h3}
+## Anvendes ikke til
+
+Brug ikke tekstområder til struktureret information, hvor datakonsistens har betydning.
+
+{:.h3}
+## Vejledning
+
+Angiv tekstområdets højde, så det modsvarer den tekstmængde, du forventer, at brugeren skal indtaste.
+
+Overvej at begrænse antallet af tegn, hvis det giver mening.
+
+Vis kun fejlbeskeder, når brugeren har indtastet en ugyldig værdi.
+
+Fejlbeskeder skal være meningsfulde og hjælpsomme. 
+
+Placér fejlbeskeder mellem label og felt, og markér feltet med rødt.

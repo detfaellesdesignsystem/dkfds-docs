@@ -1,0 +1,68 @@
+---
+label: All fields template
+hide_body: false
+fields:
+- type: text
+  name: permalink
+  label: permalink
+- type: list
+  name: redirect_from
+  label: redirect_from
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- name: lead
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: lead
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: description
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- type: text
+  name: category
+  label: category
+- type: text
+  name: subcategory
+  label: subcategory
+- type: boolean
+  name: anchor
+  label: anchor
+- type: field_group_list
+  name: subnav
+  label: subnav
+  fields:
+  - type: text
+    name: text
+    label: text
+  - type: text
+    name: href
+    label: href
+pages:
+- _components/design/borders-shadows/border-shadows.md
+- _components/design/colors/colors.md
+- _components/design/design.md
+- _components/design/grids/grids.md
+- _components/design/ikoner.md
+- _components/design/logo/logo.md
+- _components/kode/kode.md
+- _components/om_designsystemet/overblik.md
+- _components/om_designsystemet/releases/releases.md
+- pages/eksempler/eksempler.md

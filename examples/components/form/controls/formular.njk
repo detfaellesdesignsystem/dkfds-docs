@@ -1,0 +1,28 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
+
+<h1 class="h2">Dine kontaktoplysninger</h1>
+<form>
+    <!-- Felt start: Navn -->
+    {{textinput("navn", "Navn", false, "", false, "navn", "", false, false)}}
+    <!-- Felt slut: Navn -->
+
+    <!-- Felt start: Kørekort -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Har du kørekort?</legend>
+            <ul class="nobullet-list">
+              <li>{{ radiobutton("kort-ja", "kontakt", "kort-ja", false, false, "Ja", "", "", true) }}</li>
+              <li>{{ radiobutton("kort-nej", "kontakt", "kort-nej", false, false, "Nej", "", "", true) }}</li>
+            </ul>
+        </fieldset>
+    </div>
+    <!-- Felt slut: Kørekort -->
+
+    <!-- Knap start -->
+    {{ button("Gem oplysninger", "primary mt-9") }}
+    <!-- Knap slut -->
+</form>

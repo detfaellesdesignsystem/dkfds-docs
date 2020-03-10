@@ -1,18 +1,13 @@
 {
- "datoinput_example":
-   {
-     "items": [
-      {
-        "label": "Datoangivelse med fejl",
-        "hint": "For eksempel: 05 12 2018",
-        "day": "Dag",
-        "month": "Måned",
-        "year": "År",
-        "error": "Skriv en kort fejlmeddelelse, der hjælper brugeren videre",
-        "dayValue": "01",
-        "monthValue": "12",
-        "yearValue": "2030"
-      }
-     ]
-   }
+  "item": {
+    "label": "Datoangivelse med fejl",
+    "hint": "For eksempel: 05 12 2018",
+    "day": "Dag",
+    "month": "Måned",
+    "year": "År",
+    "error": "Skriv en kort fejlmeddelelse, der hjælper brugeren videre",
+    "dayValue": "01",
+    "monthValue": "12",
+    "yearValue": "2030"
+  }
 }

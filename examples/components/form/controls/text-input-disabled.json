@@ -1,0 +1,8 @@
+{
+  "textinput_example":{
+    "id": "input-disabled",
+    "name": "input-disabled",
+    "label": "Inputfelt som er låst",
+    "disabled": true
+  }
+}

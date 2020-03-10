@@ -28,6 +28,42 @@
     margin-top: 0;
   }
 }
+// Search
+
+a.search-link{
+  &.link-hover{
+    text-decoration: underline;
+  }
+}
+
+header .navbar .search-form{
+  align-self: center;
+
+  #search-input{
+      width: 27ch;
+  }
+}
+
+header #search-form-mobile{
+  border-top: $inner-border;
+
+  #search-input-mobile{
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.page-result {
+  .h4 a.search-link {
+    .page-category{
+      text-transform: uppercase;
+    }
+  }
+  .form-hint.small-text{
+    font-size: $small-text;
+    line-height: $small-text-line-height;
+  }
+}
 
 // Icon examples --------------
 
@@ -232,7 +268,7 @@
 
 .color-container-large {
   height: 108px;
-  border: solid 1px #e1e1e1;
+  border: $outer-border;
 
   //Colors
   &.color-white {
@@ -310,7 +346,7 @@
 }
 .color-container-medium {
   height: 64px;
-  border: solid 1px #e1e1e1;
+  border: $outer-border;
 
   &.color-data-turquoise {
     background-color: $color-data-turquoise;
@@ -396,19 +432,10 @@
   height: 40px;
   margin-bottom: 0.8rem;
   margin-top: 0.8rem;
-
-  &.bordered {
-    border: dotted 1px $color-gray-light;
-
-    .color-text-container {
-      padding: 7px 15px 7px 15px;
-      margin-bottom: 0rem;
-      margin-top: 0rem;
-    }
-  }
+  border: $outer-border;
 
   .color-text-container {
-    padding: 8px 16px 8px 16px;
+    padding: 7px 15px 7px 15px;
     margin-bottom: 0rem;
     margin-top: 0rem;
 
@@ -429,7 +456,7 @@
     .text-positive {
       color:$color-positive;
     }
-}
+  }
 
   &.color-black {
     background-color: $color-black;
@@ -538,17 +565,31 @@
 }
 
 //------------ Code
+.component-preview figure.highlight{
+  margin: 0px;
+}
+
+figure.highlight{
+  border: $inner-border;
+}
+
+code{
+  background-color: $color-gray-pale;
+}
+
 code,
 pre {
-  background-color: $color-gray-pale;
   font-family: monospace;
-  //font-size: 1.3rem;
   line-height: 1.4em;
+  code{
+    background-color: transparent;
+  }
 }
 
 pre {
   padding: 1.6rem;
-
+  white-space: pre-wrap;
+  margin: 0;
   code {
     padding: 0;
 
@@ -649,9 +690,9 @@ code {
   padding-top: 8px;
 }
 .component-preview-skiplink {
-  overflow: hidden;
-  .container{
-    min-height: 150px;
+  .component-example{
+    overflow: hidden;
+    position: relative;
   }
 }
 .component-preview-date-input{
@@ -659,11 +700,7 @@ code {
     min-height: 200px; //so that datepicker is visible
   }
 }
-.component-preview-tabnav{
-  & .container{
-    min-height: 300px;
-  }
-}
+
 .component-preview-date-input-datepicker{
   .container{
     min-height: 500px; //so that datepicker is visible
@@ -812,19 +849,46 @@ code {
   display: inline-block;
 }
 
-.youtube-video{
+.video-paragraph{
+  max-width: $text-max-width;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
   border: $outer-border;
+
+  .youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 
 /////////////////// component preview //////////////////////
 
 .component-preview {
-  border: $outer-border;
+  border: $inner-border;
   position: relative;
   margin-bottom: 8px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+
+  .component-link{
+    border-bottom: $inner-inner-border;
+  }
+  .component-code-link{
+    border-top: $inner-inner-border;
+  }
+}
+
+.component-preview-code{
+  figure.highlight{
+    border: 0;
+  }
 }
 
 .preview-buttons {
@@ -913,34 +977,31 @@ code {
 }
 
 //----- grid example
+body[class*="page-grid"][class*="-html"], div.component-preview[class*="-grid"] {
 
-.grid-example {
-  margin-bottom: 1em;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.grid-example .row>.col,
-.grid-example .row>[class^=col-] {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: $color-info-light;
-  border: $outer-border;
-}
 
-.grid-example-row-flex{
-  min-height: 10rem;
-  background-color: $color-data-orange-low-opacity;
-}
-
-.grid-example .grid-example-measure-row >[class^=col-]{
-  background-color: transparent;
-  border: none;
-  border-left: 1px solid grey;
-  &:last-child{
-    border-right: 1px solid grey;
+  .row > .col,
+  .row > [class^=col-] {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $color-info-light;
+    border: $outer-border;
   }
-}
 
+  .grid-example-row-flex {
+    min-height: 10rem;
+    background-color: $color-data-orange-low-opacity;
+  }
+  &.component-preview-grid-all-breakpoints .row:first-of-type > [class^=col-] {
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid grey;
+    &:last-child {
+      border-right: 1px solid grey;
+    }
+  }
+
+}
 
 //ICONS
 .icon-box {

@@ -1,8 +1,7 @@
 ---
 title: Card med tredjedel bredde
 parent: Cards
-order: 03
-lead: 
+order: 40
+component: cards-third-width
+componentTitle: "Eksempel på cards i tre kolonner"
 ---
-{% include code/preview.html component="cards-third-width"  title="Eksempel på cards i tre kolonner" %}
-{% include code/accordion.html component="cards-third-width" %}

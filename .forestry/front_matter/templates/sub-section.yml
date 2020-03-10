@@ -1,0 +1,40 @@
+---
+label: Sub Section
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: order
+  type: number
+  label: Order
+  description: ''
+  default: '10'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+- name: parent
+  type: text
+  config:
+    required: true
+  label: Page Collection Name
+- name: headingClass
+  type: text
+  config:
+    required: false
+    min: ''
+    max: '2'
+  label: Heading Class
+- name: component_example
+  type: include
+  config: {}
+  template: component
+  label: Component example
+pages:
+- _components/om_designsystemet/privatlivspolitik/privatlivspolitik-cookies.md
+- _components/om_designsystemet/privatlivspolitik/privatlivspolitik-privatlivspolitik.md

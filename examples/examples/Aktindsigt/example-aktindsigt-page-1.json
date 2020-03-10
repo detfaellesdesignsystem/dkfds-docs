@@ -39,5 +39,27 @@
       {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
       {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
     ]
+  },
+  "aktindsigtradio1":{
+    "id": "id-aktindsigt-ja",
+    "name": "aktindsigt",
+    "value": "Ja",
+    "disabled": false,
+    "checked": false,
+    "text": "Ja",
+    "class": "",
+    "focus": false,
+    "large": true
+  },
+  "aktindsigtradio2":{
+    "id": "id-aktindsigt-nej",
+    "name": "aktindsigt",
+    "value": "Nej",
+    "disabled": false,
+    "checked": false,
+    "text": "Nej",
+    "class": "",
+    "focus": false,
+    "large": true
   }
 }

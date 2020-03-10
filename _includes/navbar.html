@@ -8,6 +8,18 @@
         </div>
         <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
       </div>
+
+      {% unless page.search %}
+      <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
+        <form method="get" action="/search/" id="mobileSearchForm">
+          <div class="form-group search">
+            <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
+          </div>
+        </form>
+      </div>
+      {% endunless %}
     </div>
 
     <div class="overlay"></div>
@@ -19,13 +31,24 @@
         <!--3A: Main navigation-->
 
         <div class="navbar-inner container">
-          <ul class="nav-primary">
+          <ul class="nav-primary" role="menu">
             {%
               include nav/nav-primary.html
               links=site.data.nav.primary
               flat=true
             %}
           </ul>
+          {% unless page.search %}
+          <div class="search-form">
+            <form method="get" action="/search/" id="menuSearchForm">
+              <div class="form-group search">
+                <label for="search-input" class="sr-only">Søg efter indhold</label>
+                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <button class="button button-search" type="submit" id="searchbtn">Søg</button>
+              </div>
+            </form>
+          </div>
+          {% endunless %}
         </div>
       </div>
       <!-- 3: Main navigation end-->
@@ -40,7 +63,7 @@
         <!--3A: Main navigation-->
 
         <div class="navbar-inner container">
-          <ul class="nav-primary">
+          <ul class="nav-primary" role="menu">
             {%
               include nav/nav-primary.html
               links=site.data.nav.mobile
@@ -50,5 +73,5 @@
       </div>
       <!-- 3: Main navigation end-->
     </nav>
-    <!-- collapsible nav end-->
+   <!-- collapsible nav end-->
 </header>

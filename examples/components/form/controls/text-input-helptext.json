@@ -1,0 +1,8 @@
+{
+  "textinput_example":{
+    "id": "input-type-text",
+    "label": "Inputfelt med label og hjælpetekst",
+    "name": "input-type-text",
+    "hint": "Fx 12345678"
+  }
+}

@@ -1,0 +1,13 @@
+{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
+
+<div class="form-group">
+    {{ checkbox("id-checkbox1", "checkbox1", "1", false, false, "Tjekboks viser indhold", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'") }}
+    <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
+        <div class="py-4">
+        <p>Dette indhold bliver vist når tjekboksen er valgt.</p>
+        </div>
+    </div>
+</div>
+
+
+

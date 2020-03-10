@@ -1,8 +1,7 @@
 ---
 title: Tags med ikon
 parent: Tags
-order: 02
-lead: 
+order: 40
+component: tags-icon
+componentTitle: "Eksempel på tags med ikon"
 ---
-{% include code/preview.html component="tags-icon" title="Eksempel på tags med ikon" %}
-{% include code/accordion.html component="tags-icon" %}

@@ -1,7 +1,7 @@
 ---
-title: Beskeder med luk knap
+title: Besked med luk knap
 parent: Beskeder
-order: 04
-component: alerts-close
+order: 40
+component: alert-close
 componentTitle: "Eksempel på besked med luk-knap"
 ---

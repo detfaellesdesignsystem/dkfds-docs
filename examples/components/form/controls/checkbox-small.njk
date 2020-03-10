@@ -1,0 +1,9 @@
+{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
+<div class="form-group">
+    <fieldset>
+        <legend class="h5">Lille tjekboks</legend>
+        <ul class="nobullet-list">
+        {% for item in checkbox_example_small.items %}<li>{{ checkbox(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large) }}</li>{% endfor %}
+        </ul>
+    </fieldset>
+</div>

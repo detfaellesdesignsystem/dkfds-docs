@@ -1,0 +1,46 @@
+{
+  "list_ol": {
+    "items": [
+      {
+        "text": "Lorem"
+      },
+      {
+        "text": "Ipsum"
+      },
+      {
+        "text": "Dolor"
+      },
+      {
+        "text": "Sit",
+        "list_ol": {
+          "type": "a",
+          "items": [
+            {
+              "text": "Amet"
+            },
+            {
+              "text": "Consectetur"
+            },
+            {
+              "text": "Adipiscing",
+              "list_ol": {
+                "type": "i",
+                "items": [
+                  {
+                    "text": "Elit"
+                  },
+                  {
+                    "text": "Nam"
+                  },
+                  {
+                    "text": "Nisl"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -7,24 +7,15 @@
         "icon": "check"
       },
       {
-        "text": "Trin 2",
+        "text": "Trin 2 (valgt)",
         "information": "Informationstekst for trin 2",
-        "icon": "check"
-      },
-      {
-        "text": "Trin 3 (valgt)",
-        "information": "Informationstekst for trin 3",
         "icon": "check",
         "active": true,
         "current": true
       },
       {
         "text": "Trin 4",
-        "information": "Informationstekst for trin 4"
-      },
-      {
-        "text": "Trin 5",
-        "information": "Informationstekst for trin 5"
+        "information": "Informationstekst for trin 3"
       }
     ]
   }

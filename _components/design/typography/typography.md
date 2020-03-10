@@ -1,40 +1,36 @@
 ---
-permalink: /design/typography/
+permalink: "/design/typografi/"
+redirect_from:
+- "/design/typography/"
 layout: styleguide
-title: Fonte og typografi
+title: Typografi
 category: Design_category
 subcategory: Design
-lead: "Fonte og typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter."
-anchor: true
-subnav:
-- text: Fonte
-  href: '#fonte'
-- text: Overskrifter
-  href: '#overskrifter'
-- text: Felt- og tabeloverskrifter
-  href: '#felt-og-tabeloverskrifter-label-og-th'
-- text: Manchettekst
-  href: '#manchettekst-lead-paragraph'
-- text: Brødtekst
-  href: '#brødtekst-body-copy'
-- text: Links
-  href: '#links'
-- text: Eksternt link
-  href: '#eksternt-link'
-- text: Footer link
-  href: '#footer-links'
-- text: Skip link
-  href: '#skip-link'
-- text: Lister
-  href: '#lister'
-- text: Stor tekst (display text)
-  href: '#stor-tekst-display-text'
-- text: Hjælpetekst og fejlbeskeder
-  href: '#hjælpetekst-og-fejlbeskeder'
-- text: Linjelængde
-  href: '#linjelængde'
-- text: Linjeafstand
-  href: '#linjeafstand'
----
+type: component
+description: Typografi omhandler de valgte fonte, samt formatering og brug af tekst
+  og overskrifter.
+tags:
+- IBM
+- typography
+- font
+- fonte
+lead: Typografi omhandler de valgte fonte, samt formatering og brug af tekst og overskrifter.
 
-{% include child-sections.html parent='typography' %}
+---
+## Fonte
+
+Hvis din selvbetjeningsløsning skal integreres på borger.dk og Virk, skal du benytte fonten “IBM Plex Sans”. Fonten er valgt, fordi alle browsere præsenterer den flot og den  er nem at arbejde med. Samtidig bygger den visuelt bro mellem de fonte, der for tiden bliver anvendt på borger.dk og Virk.
+
+{:.h5}
+### IBM Plex Sans
+
+Det Fælles Designsystem benytter fonten "IBM Plex Sans" til al tekst. Fonten er “open source” og kan derfor frit benyttes af alle løsninger under <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web" class="icon-link">"Open Font License" betingelser<svg class="icon-svg" focusable="false" aria-hidden="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+
+IBM Plex Sans er valgt som font, da det er en æstetisk og læsbar open source font, der kan anvendes gratis under SIL Open Font License. Det er en alsidig sans serif font, der egner sig godt til brugergrænseflader. Fonten har de karakteristika, som designsystemet promoverer. Den er simpel og neutral i sit udtryk og yderst skalerbar grundet de mange variationer (typer, vægte, sprog, m.m.), som fonten understøtter.
+
+{:.h5}
+### Fallback font "system"
+
+En fallback font, er den font som vises, når browseren ikke kan indlæse den angivne font.
+
+Det Fælles Designsystem gør brug af "system", hvilket vil sige at fallback fonten er op til styresystemet på den enhed der benyttes. Dette gør ydeevnen (performance) bedre, da browseren ikke skal hente andre fonte, men i stedet bruger en den har i forvejen.
