@@ -12,7 +12,7 @@ componentCode: "/kode/typografi/tekst/#manchet-tekst"
 ### Design
 
 {:.table .table--borderless .table--responsive-headers}
-| Skriftype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
+| Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
 |---------------|-----------------|------------------------------|------------|
 | IBM Plex Sans | 20px            | 400                          | #1a1a1a    |
 

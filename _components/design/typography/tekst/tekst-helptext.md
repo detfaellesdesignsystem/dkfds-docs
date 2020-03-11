@@ -12,7 +12,7 @@ componentCode: "/kode/typografi/tekst/#hjælpetekst-og-fejlbeskeder"
 ### Design
 
 {:.table .table--borderless .table--responsive-headers}
-| Tekst            | Skriftype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
+| Tekst            | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
 |------------------|---------------|-----------------|------------------------------|------------|
 | Hjælpetekst      | IBM Plex Sans | 16px            | 400                          | #747474    |
 | Fejlbesked       | IBM Plex Sans | 16px            | 600                          | #CC0000    |

@@ -8,6 +8,8 @@ function isValidEmailAddress(emailAddress) {
 $( document ).ready(function( $ ) {
 
     if ( $('.newsletter-container').length ) {
+
+        // get maillists
         $.ajax({
             url: "https://w2l.dk/pls/wopdprod/aboutils.nyhedsbrev2_drupal_xml?aboid=278&aboid=279&aboid=280",
             async: false,
@@ -54,13 +56,11 @@ $( document ).ready(function( $ ) {
                     if (!isValidEmailAddress($("#i_newsform_email").val())) {
                         $('#i_newsform_email').parent('.form-group').addClass('form-error');
                         $('#i_newsform_email').parent('.form-group').find('.form-error-message')[0].innerHTML = "E-mailadresse er ikke gyldig.";
-                        $('#i_newsform_email').parent('.form-group').find('.form-error-message').removeClass('d-none');
                         $("#i_newsform_email").focus();
                         error = true;
                     } else{
                         $('#i_newsform_email').parent('.form-group').removeClass('form-error');
                         $('#i_newsform_email').parent('.form-group').find('.form-error-message')[0].innerHTML = "";
-                        $('#i_newsform_email').parent('.form-group').find('.form-error-message').addClass('d-none');
                     }
 
                     var segmentid = [];
@@ -71,7 +71,6 @@ $( document ).ready(function( $ ) {
                     if ( segmentid.length == 0 ) {
                         $($('#subscriptions').parents('.form-group')[0]).addClass('form-error');
                         $($('#subscriptions').parents('.form-group')[0]).find('.form-error-message')[0].innerHTML = "Der skal vælges minimum et nyhedsbrev.";
-                        $($('#subscriptions').parents('.form-group')[0]).find('.form-error-message').removeClass('d-none');
                         if(error !== true) {
                             $("#newsform [type='checkbox']:first").focus();
                         }
@@ -79,7 +78,18 @@ $( document ).ready(function( $ ) {
                     } else{
                         $($('#subscriptions').parents('.form-group')[0]).removeClass('form-error');
                         $($('#subscriptions').parents('.form-group')[0]).find('.form-error-message')[0].innerHTML = "";
-                        $($('#subscriptions').parents('.form-group')[0]).find('.form-error-message').addClass('d-none');
+                    }
+                    console.log('check', $("#samtykke-check").prop('checked'));
+                    if(!$("#samtykke-check").prop('checked')){
+                        error = true;
+                        console.log('hej');
+
+                        $('#samtykke-group').addClass('form-error');
+                        document.querySelector('#samtykke-group .form-error-message').innerHTML = "Giv os venligst samtykke, så vi må opbevare din mailadresse. Uden dit samtykke kan vi ikke sende dig nyhedsmails.";
+                    } else{
+
+                        $('#samtykke-group').removeClass('form-error');
+                        $('#samtykke-group .form-error-message').innerHTML = "";
                     }
 
                     if(error === true) {
