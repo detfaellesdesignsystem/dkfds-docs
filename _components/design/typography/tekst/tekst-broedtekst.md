@@ -11,7 +11,7 @@ componentCode: "/kode/typografi/tekst/#brødtekst"
 ### Design
 
 {:.table .table--borderless .table--responsive-headers}
-| Tekst           | Skriftype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
+| Tekst           | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
 |-----------------|---------------|-----------------|------------------------------|------------|
 | Brødtekst       | IBM Plex Sans | 16px            | 400                          | #1a1a1a    |
 | Lille brødtekst | IBM Plex Sans | 14px            | 400                          | #1a1a1a    |

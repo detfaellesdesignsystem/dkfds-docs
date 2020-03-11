@@ -32,7 +32,7 @@ subnav:
 
 Kopiér ovenstående kode for at indsætte én accordion. Ønsker du flere kan du duplikere `<li>` elementet.
 
-Husk at tilpasse koden, således at ikke kun indholdet passer, men også attributerne. Herunder er særligt `aria-controls` og `id` vigtige, da disse skal være unikke. 
+Husk at tilpasse koden, således at ikke kun indholdet passer, men også attributterne. Herunder er særligt `aria-controls` og `id` vigtige, da disse skal være unikke. 
 
 ### Javascript
 Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:

@@ -28,7 +28,7 @@ subnav:
 ### Design
 
 {:.table .table--borderless .table--responsive-headers}
-| Skriftype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
+| Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
 |---------------|-----------------|------------------------------|------------|
 | IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
 
@@ -57,7 +57,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 ### Design
 
 {:.table .table--borderless .table--responsive-headers}
-| Skriftype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
+| Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
 |---------------|-----------------|------------------------------|------------|
 | IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
 

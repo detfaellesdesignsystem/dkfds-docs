@@ -12,7 +12,7 @@ componentCode: "/kode/typografi/tekst/#stor-tekst"
 ### Design
 
 {:.table .table--borderless .table--responsive-headers}
-| Tekst                  | Skriftype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
+| Tekst                  | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
 |------------------------|---------------|-----------------|------------------------------|------------|
 | Stor tekst nr. 1       | IBM Plex Sans | 48px            | 700                          | #1a1a1a    |
 | Stor tekst nr. 2       | IBM Plex Sans | 32px            | 700                          | #1a1a1a    |
