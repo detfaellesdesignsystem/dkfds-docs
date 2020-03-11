@@ -1,5 +1,5 @@
 ---
-title: Version 3.0.3
+title: Version 3.0.2
 parent: Releases
 order: 220
 headingClass: mb-0
