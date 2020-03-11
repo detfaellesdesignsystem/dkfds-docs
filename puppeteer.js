@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer');
-const merge = require('easy-pdf-merge');
 
-var path = 'pdf/'
+var path = 'pdf/';
 var root = "https://designsystem.dk/";
 var targetRootDir = "pdf/";
 var pdfUrls = ["",
@@ -97,7 +96,6 @@ var pdfUrls = ["",
     "kode/utilities/",
     "kode/eksempler-implementering/",
     "kode/print/",
-    "kode/plugins/",
     "kode/plugins/datatables/",
     "kode/plugins/pikaday/",
     "kode/plugins/micromodal/",
@@ -121,7 +119,6 @@ var exampleUrls = [
     {"url": "pages/eksempler/kvittering/kvittering-2/", "filename": "kvittering2"}
 ];
 
-
 (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -131,7 +128,7 @@ var exampleUrls = [
     var resHeight = 1000;
 
     for(var i=0; i<pdfUrls.length; i++){
-        await page.goto(root + pdfUrls[i], {waitUntil: 'networkidle2'});
+        await page.goto(root + pdfUrls[i], {waitUntil: 'load'});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.emulateMedia('screen')
         await page.evaluate(() => {
@@ -147,9 +144,9 @@ var exampleUrls = [
                 document.getElementById(buttons[i].getAttribute('aria-controls')).setAttribute("aria-hidden", true);
             }
 
-            let cookieMessage = document.getElementById('cookieMessage');
+            let cookieMessage = document.getElementById('cookiePrompt');
             if (cookieMessage !== null) {
-                cookieMessage.style.display = 'none';
+                cookieMessage.parentNode.style.display = 'none';
             }
         });
 
@@ -166,7 +163,7 @@ var exampleUrls = [
     }
 
     for(var i=0; i<exampleUrls.length; i++){
-        await page.goto(root + exampleUrls[i].url, {waitUntil: 'networkidle2'});
+        await page.goto(root + exampleUrls[i].url, {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.emulateMedia('screen');
 
@@ -176,7 +173,7 @@ var exampleUrls = [
     }
 
     for(var i=0; i<pdfUrls.length; i++){
-        await page.goto(root + pdfUrls[i], {waitUntil: 'networkidle2'});
+        await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.emulateMedia('screen');
         await page.evaluate(() => {
@@ -192,9 +189,9 @@ var exampleUrls = [
                 document.getElementById(buttons[i].getAttribute('aria-controls')).setAttribute("aria-hidden", true);
             }
 
-            let cookieMessage = document.getElementById('cookieMessage');
+            let cookieMessage = document.getElementById('cookiePrompt');
             if (cookieMessage !== null) {
-                cookieMessage.style.display = 'none';
+                cookieMessage.parentNode.style.display = 'none';
             }
         });
 
@@ -212,20 +209,4 @@ var exampleUrls = [
 
     await browser.close();
 
-    //await mergeMultiplePDF(pdfFiles);
 })();
-
-const mergeMultiplePDF = (pdfFiles) => {
-    return new Promise((resolve, reject) => {
-        merge(pdfFiles,'pdf/dkfds-docs.pdf',function(err){
-
-            if(err){
-                console.log(err);
-                reject(err)
-            }
-
-            console.log('Success');
-            resolve()
-        });
-    });
-};
