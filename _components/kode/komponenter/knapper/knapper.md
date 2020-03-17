@@ -54,7 +54,7 @@ subnav:
 
 Defineres med klassen `button-primary`.
 
-Bemærk særlige <a href="/komponenter/buttons/#retningslinjer">retningslinjer</a> for primær knap.
+Bemærk særlige <a href="/komponenter/knapper/#retningslinjer">retningslinjer</a> for primær knap.
 
 {:#sekundaerknap}
 ### Sekundær

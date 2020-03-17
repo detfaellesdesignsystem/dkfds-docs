@@ -73,3 +73,5 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 ## Links
 
 <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link">Læs mere om hvornår du skal bruge en knap eller et link<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+{% include child-components.html parent='Buttons' %}
