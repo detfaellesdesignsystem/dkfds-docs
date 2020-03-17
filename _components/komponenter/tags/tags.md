@@ -14,7 +14,7 @@ lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation o
 anchor: true
 subnav:
 - text: Tags med luk-ikon
-  href: "#tags-med-ikon"
+  href: "#tags-med-luk-ikon"
 component: tags
 componentTitle: Eksempel på tags
 componentCode: "/kode/komponenter/tags/"
