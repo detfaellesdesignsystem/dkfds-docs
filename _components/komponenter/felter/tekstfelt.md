@@ -6,6 +6,17 @@ title: Felter
 tags:
 - tekstfelt
 - input
+- fejlbesked
+- fejl på felt
+- hjælpetekst
+- hjælp på felt
+- felt
+- felter
+- længde på felter
+- deaktiveret felt
+- read-only
+- feltbredde
+- låst felt
 category: Komponenter_category
 description: Felt til indtastning af information i form af bogstaver, tal og en kombination
   af begge.
@@ -27,8 +38,8 @@ subnav:
 component: text-input
 componentTitle: Eksempel på tekst felter
 componentCode: "/kode/komponenter/felter/"
----
 
+---
 {:.h3 #retningslinjer}
 ## Anvendes til
 
