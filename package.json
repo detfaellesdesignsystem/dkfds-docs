@@ -28,7 +28,7 @@
     "pikaday": "^1.8.0",
     "puppeteer": "^1.12.2",
     "select-woo": "^1.0.1",
-    "tippy.js": "^4.3.4"
+    "tippy.js": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",
