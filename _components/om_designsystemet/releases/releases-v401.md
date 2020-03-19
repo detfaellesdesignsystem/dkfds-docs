@@ -4,7 +4,7 @@ parent: Releases
 order: 190
 headingClass: mb-0
 ---
-<p class="small-text mt-0" id="tidligere-versioner">08-04-2019</p>
+<p class="small-text mt-0">08-04-2019</p>
 
 - Opdateret skip link udseende
 - Ændret styling, så a-element i solution-header nu kan være et h1-element
