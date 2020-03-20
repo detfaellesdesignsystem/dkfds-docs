@@ -1,3 +1,5 @@
+
+import "@babel/polyfill/noConflict";
 import tippy from 'tippy.js';
 
 var initTippy = function (){
