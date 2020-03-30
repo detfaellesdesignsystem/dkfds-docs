@@ -4,7 +4,6 @@ layout: requirements-tool
 title: Skal din løsning anvendes af virksomheder?
 description: 
 ---
-<a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
 <h1>Skal din løsning anvendes af virksomheder?</h1>
 <form method="post" action="." id="form-Q100">
     <div class="form-group">

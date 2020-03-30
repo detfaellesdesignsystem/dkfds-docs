@@ -79,6 +79,7 @@ krav[13] = {"title": "Krav til løsninger, der skal på borger.dk og Virk", "kra
     ]};
 
 
+
 document.addEventListener("DOMContentLoaded", function(){
 
     tippy('.js-tippy', {
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let backlink = document.getElementById('back-link');
     if(backlink !== null){
-        backlink.addEventListener('click', goBack);
+        backlink.addEventListener('click', goOneQuestionBack);
     }
 
     questionnaire = getQuestionnaire();
@@ -271,6 +272,7 @@ let getQuestionnaire = function(){
     return JSON.parse(reqTool);
 };
 
+
 /**
  * Save questionnaire to localstorage
  */
@@ -307,12 +309,22 @@ let goTo = function(url){
     window.location.href =  root + url;
 };
 
-/**
- * Go back to previous page
- */
-let goBack = function(){
-    window.history.back();
+
+let goOneQuestionBack = function(){
+    let current = getCurrentFormId();
+    let nextQuestion = getPreviousActiveQuestion(current);
+    goTo(nextQuestion.path);
 };
+
+let getPreviousActiveQuestion = function(current){
+    let getIndexOfCurrent = getIndexOfQuestion(current);
+    let prevIndex = getIndexOfCurrent-1;
+    if(questions[prevIndex].status === true){
+        return questions[prevIndex];
+    }
+
+    return getPreviousActiveQuestion(questions[prevIndex]);
+}
 
 /**
  * Set correct chosen values on results page. Hide Questions not answered.
