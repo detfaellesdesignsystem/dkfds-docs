@@ -16,7 +16,7 @@ tags:
 {:.h4}
 ## Se hvilke krav din selvbetjeningsløsning skal overholde
 
-<a href="/krav-vaerktoej/anvendes-af-virksomheder/" id="start-reqtool" class="button button-primary mt-3 mb-4">Start værktøj til identifikation af krav</a>
+<a href="/krav-vaerktoej/anvendes-af-virksomheder/" id="start-reqtool" class="button button-primary mt-3 mb-4">Start fælles krav værktøj</a>
 
 <h3 class="h5">Kort om kravet om at anvende Det Fælles Designsystem</h3>
 

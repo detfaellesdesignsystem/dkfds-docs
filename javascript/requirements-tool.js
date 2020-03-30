@@ -9,6 +9,7 @@ require('./theme');
 let questionnaire = {};
 const storageKey = "reqTool";
 const root = window.location.origin + "/krav-vaerktoej";
+const restart = window.location.origin + '/komigang/krav/';
 
 let questions = [
     {'id': "Q100", "path": "/anvendes-af-virksomheder/", "status": true},
@@ -133,10 +134,9 @@ document.addEventListener("DOMContentLoaded", function(){
             showPopup = false;
         } else {
             let activeElement = document.activeElement;
-            if(activeElement.href !== undefined && (activeElement.innerText === "Redigér" || activeElement.innerText === "Tilbage")){
+            if(activeElement.href !== undefined && (activeElement.innerText === "Redigér" || activeElement.innerText === "Tilbage" || activeElement.getAttribute('href').indexOf('mailto:') !== -1)){
                 showPopup = false;
             }
-
         }
 
         if(showPopup) {
@@ -423,5 +423,11 @@ let startOver = function(){
 };
 let closeTool = function(){
     localStorage.removeItem(storageKey);
-    goTo('');
+
+    toolIsProcessing = true;
+    if(window.location.href.indexOf('krav-vaerktoej/resultat/') === -1){
+        toolIsProcessing = false;
+
+    }
+    window.location.href = window.location.origin + '/komigang/krav/';
 };
