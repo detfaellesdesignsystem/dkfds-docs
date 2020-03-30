@@ -319,11 +319,12 @@ let goOneQuestionBack = function(){
 let getPreviousActiveQuestion = function(current){
     let getIndexOfCurrent = getIndexOfQuestion(current);
     let prevIndex = getIndexOfCurrent-1;
-    if(questions[prevIndex].status === true){
-        return questions[prevIndex];
+    let nextQuestion = questions[prevIndex];
+    if(nextQuestion.status === true){
+        return nextQuestion;
     }
 
-    return getPreviousActiveQuestion(questions[prevIndex]);
+    return getPreviousActiveQuestion(nextQuestion.id);
 }
 
 /**
@@ -424,8 +425,7 @@ let getCurrentFormId = function(){
  */
 let checkTotalMeltdown = function(){
   if (getCurrentFormId() !== false && questions[getIndexOfQuestion(getCurrentFormId())].status === false){
-      localStorage.removeItem(storageKey);
-      goTo('');
+      closeTool();
   }
 };
 
