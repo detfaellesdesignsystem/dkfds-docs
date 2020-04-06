@@ -325,48 +325,71 @@ let getPreviousActiveQuestion = function(current){
     }
 
     return getPreviousActiveQuestion(nextQuestion.id);
-}
+};
+
+let validateAllQuestions = function (){
+    let error = false;
+    let errorQuestions = [];
+    questions.forEach(question => {
+        if(question.status === true && question.id !== 'Q000'){
+            if(questionnaire[question.id] === undefined){
+                error = true;
+                errorQuestions.push(question);
+            }
+        }
+    });
+
+    return errorQuestions;
+};
 
 /**
  * Set correct chosen values on results page. Hide Questions not answered.
  */
 let generateResult = function () {
-    if(document.querySelector('body.page-resultat') !== null){
-        if(Object.getOwnPropertyNames(getQuestionnaire()).length === 0){
-         goTo('');
-         return;
-        }
+    let errorQuestions = validateAllQuestions();
+    if(errorQuestions.length === 0){
+        if(document.querySelector('body.page-resultat') !== null){
+            if(Object.getOwnPropertyNames(getQuestionnaire()).length === 0){
+             goTo('');
+             return;
+            }
 
-        let summaryTable = document.getElementById('summary');
-        let rows = summaryTable.getElementsByTagName('tr');
-        for(let i = 0; i < rows.length; i++){
-            let id = rows[i].id;
-            let value = questionnaire[id];
-            if(value === undefined){
-                rows[i].classList.add('d-none');
-                continue;
+            let summaryTable = document.getElementById('summary');
+            let rows = summaryTable.getElementsByTagName('tr');
+            for(let i = 0; i < rows.length; i++){
+                let id = rows[i].id;
+                let value = questionnaire[id];
+                if(value === undefined){
+                    rows[i].classList.add('d-none');
+                    continue;
+                }
+                if(value === true){
+                    rows[i].querySelector('.value').innerText = "Ja";
+                } else {
+                    rows[i].querySelector('.value').innerText = "Nej";
+                }
+                rows[i].classList.remove('d-none');
             }
-            if(value === true){
-                rows[i].querySelector('.value').innerText = "Ja";
-            } else {
-                rows[i].querySelector('.value').innerText = "Nej";
-            }
-            rows[i].classList.remove('d-none');
-        }
 
-        let resultTable = document.getElementById('resultat');
-        let resultRows = resultTable.getElementsByTagName('tr');
-        for (let v = 0; v < resultRows.length; v++){
-            let kravNo = v+1;
-            let badge = resultRows[v].getElementsByTagName('label')[0];
-            if(isThisAKrav(kravNo)){
-                badge.innerText = "Krav";
-                badge.classList.add('badge-warning');
-            } else{
-                badge.innerText = "Anbefaling";
-                badge.classList.add('badge-info');
+            let resultTable = document.getElementById('resultat');
+            let resultRows = resultTable.getElementsByTagName('tr');
+            for (let v = 0; v < resultRows.length; v++){
+                let kravNo = v+1;
+                let badge = resultRows[v].getElementsByTagName('label')[0];
+                if(isThisAKrav(kravNo)){
+                    badge.innerText = "Krav";
+                    badge.classList.add('badge-warning');
+                } else{
+                    badge.innerText = "Anbefaling";
+                    badge.classList.add('badge-info');
+                }
             }
+            document.getElementById('result-container').classList.remove('d-none');
         }
+    } else if(document.getElementById('error-container') !== null){
+        toolIsProcessing = true;
+        document.getElementById('continue-questionnaire-link').setAttribute('href', root + errorQuestions[0].path)
+        document.getElementById('error-container').classList.remove('d-none');
     }
 };
 
