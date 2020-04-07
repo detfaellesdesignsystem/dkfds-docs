@@ -96,6 +96,28 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 
+    if(document.getElementsByTagName('body')[0].classList.contains('page-resultat')) {
+        let elemToObserve = document.getElementById('modal-print');
+        let stateToObserve = document.getElementById('modal-print').classList.contains('is-open');
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                if (mutation.attributeName == "class") {
+                    let newStateToObserve = mutation.target.classList.contains('is-open');
+                    if (stateToObserve === true && newStateToObserve === false) {
+                        stateToObserve = newStateToObserve;
+                        if (document.getElementById('print-title').getAttribute('data-print') === "true") {
+                            document.getElementById('print-title').setAttribute('data-print', "false");
+                            window.print();
+                        }
+                    } else {
+                        stateToObserve = newStateToObserve;
+                    }
+                }
+            });
+        });
+        observer.observe(elemToObserve, {attributes: true});
+    }
+
     let backlink = document.getElementById('back-link');
     if(backlink !== null){
         backlink.addEventListener('click', goOneQuestionBack);
@@ -121,12 +143,12 @@ document.addEventListener("DOMContentLoaded", function(){
         closeClass[0].addEventListener('click', closeTool);
     }
 
-    let printBtn = document.getElementsByClassName('print-btn');
+    /*let printBtn = document.getElementsByClassName('print-btn');
     if(printBtn.length !== 0){
         printBtn[0].addEventListener('click', function(){
             window.print();
         });
-    }
+    }*/
 
     // alert upon closing page
     window.onbeforeunload = function (e) {
@@ -159,13 +181,29 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 let printResultHandler = function(){
-    let printButton = document.getElementById('print-btn');
+    let printButton = document.getElementById('print-result-solution');
     if(printButton !== null){
         printButton.addEventListener('click', function(){
-            window.print();
+            let value = document.getElementById('solution-name-input').value;
+            if(value !== "") {
+                document.getElementById('print-title').innerText = 'Fælles krav som "' + value + '" skal overholde';
+                document.getElementById('print-title').setAttribute('data-print', "true");
+                document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
+                document.getElementById('solution-name-error').classList.add('d-none');
+                document.getElementById('solution-name-input').removeAttribute('aria-describedby');
+                document.getElementById('result-container').getElementsByTagName('h1')[0].classList.add('d-print-none');
+                document.getElementById('print-title').classList.add('d-print-block');
+                MicroModal.close('modal-print');
+            } else{
+                // error
+                document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.add('form-error');
+                document.getElementById('solution-name-error').classList.remove('d-none');
+                document.getElementById('solution-name-input').setAttribute('aria-describedby', document.getElementById('solution-name-error').getAttribute('id'))
+            }
         });
     }
 };
+
 let startOverButtonHandler = function(){
     let button = document.getElementById('start-over');
     if(button !== null){
