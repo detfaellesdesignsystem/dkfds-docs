@@ -85,7 +85,7 @@ print: true
         <li><a href="https://arkitektur.digst.dk/webtilgaengelighed-eksterne-kilder" class="icon-link" target="_blank" aria-label="Læs mere om eksterne krav omkring webtilgængelighed">Webtilgængelighed<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
     </ul>
     
-    <button class="button button-tertiary d-print-none mt-5" id="print-btn">
+    <button class="button button-tertiary d-print-none mt-5" data-micromodal-trigger="modal-print">
         <svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>
         Print resultat
     </button>

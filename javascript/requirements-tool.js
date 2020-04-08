@@ -1,6 +1,6 @@
 'use strict';
-import tippy from 'tippy.js';
 import "@babel/polyfill";
+import tippy from 'tippy.js';
 import MicroModal from 'micromodal';
 let toolIsProcessing = false;
 require('./theme');
@@ -100,9 +100,9 @@ document.addEventListener("DOMContentLoaded", function(){
         let elemToObserve = document.getElementById('modal-print');
         let stateToObserve = document.getElementById('modal-print').classList.contains('is-open');
         var observer = new MutationObserver(function (mutations) {
-            mutations.forEach(function (mutation) {
-                if (mutation.attributeName == "class") {
-                    let newStateToObserve = mutation.target.classList.contains('is-open');
+            for(let mutation in mutations) {
+                if (mutations[mutation].attributeName == "class") {
+                    let newStateToObserve = mutations[mutation].target.classList.contains('is-open');
                     if (stateToObserve === true && newStateToObserve === false) {
                         stateToObserve = newStateToObserve;
                         if (document.getElementById('print-title').getAttribute('data-print') === "true") {
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function(){
                         stateToObserve = newStateToObserve;
                     }
                 }
-            });
+            }
         });
         observer.observe(elemToObserve, {attributes: true});
     }
@@ -142,13 +142,6 @@ document.addEventListener("DOMContentLoaded", function(){
     if(closeClass.length !== 0){
         closeClass[0].addEventListener('click', closeTool);
     }
-
-    /*let printBtn = document.getElementsByClassName('print-btn');
-    if(printBtn.length !== 0){
-        printBtn[0].addEventListener('click', function(){
-            window.print();
-        });
-    }*/
 
     // alert upon closing page
     window.onbeforeunload = function (e) {
