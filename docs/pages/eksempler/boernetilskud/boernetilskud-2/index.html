@@ -254,7 +254,7 @@
     <section class="page-content">
         <h1>Hvornår blev du eller bliver du enlig?</h1>
 
-        <div class="alert alert-info alert--paragraph" role="alert"
+        <div class="alert alert-info alert--paragraph"
             aria-label="Adresse info">
             <div class="alert-body">
                 <p class="alert-heading">For at du kan modtage børnetilskud
@@ -270,13 +270,14 @@
         <div class="mt-7">
 
             <div class="form-group  ">
-                <fieldset>
-                    <legend><label class="form-label">Jeg blev eller bliver
-                            enlig:</label>
-                        <span class="form-hint"></span></legend>
+                <fieldset aria-dsecribedby="example-date-field-hint ">
+                    <legend class="form-label">Jeg blev eller bliver enlig:
+                    </legend>
+                    <span class="form-hint"
+                        id="example-date-field-hint"></span>
                     <span class="form-error-message  d-none"
-                        id="form-error-message-input-error"
-                        role="alert"></span>
+                        id="example-date-field-error"><span
+                            class="sr-only">Fejl:</span> </span>
                     <div class="date-group js-calendar-group mt-3">
                         <div class="form-group form-group-day">
                             <label class="form-label"

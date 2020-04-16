@@ -244,13 +244,16 @@
     <h1>Oplysninger om sagen</h1>
 
     <div class="form-group  ">
-        <fieldset>
-            <legend><label class="form-label">Skadedato<a
-                        href="javascript:void(0)" class="js-tooltip"
-                        data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a></label>
-                <span class="form-hint">Fx. 28 04 1996</span></legend>
+        <fieldset aria-dsecribedby="example-date-field-hint ">
+            <legend class="form-label">Skadedato<a
+                    href="javascript:void(0)" class="js-tooltip"
+                    data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a>
+            </legend>
+            <span class="form-hint" id="example-date-field-hint">Fx. 28 04
+                1996</span>
             <span class="form-error-message  d-none"
-                id="form-error-message-input-error" role="alert"></span>
+                id="example-date-field-error"><span
+                    class="sr-only">Fejl:</span> </span>
             <div class="date-group js-calendar-group mt-3">
                 <div class="form-group form-group-day">
                     <label class="form-label" for="date-day">Dato</label>
@@ -284,14 +287,13 @@
     </div>
 
     <div class="form-group">
-        <label class="form-label " for="id-skadenummer"
-            id="form-label-id-skadenummer">
+        <label class="form-label " for="id-skadenummer">
             Jeres sags-/skadenummer<a href="javascript:void(0)"
                 class="js-tooltip"
                 data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a>
         </label>
 
-        <input class="form-input  input-width-m " id="id-skadenummer"
+        <input class="form-input input-width-m" id="id-skadenummer"
             value="" name="Input til Jeres sags-/skadenummer" type="text">
     </div>
     <div class="form-group">
@@ -308,14 +310,14 @@
             <div class="py-4">
 
                 <div class="form-group  ">
-                    <fieldset>
-                        <legend><label
-                                class="form-label">Berammelsesdato</label>
-                            <span class="form-hint">Fx. 28 04 1996</span>
-                        </legend>
+                    <fieldset aria-dsecribedby="example-date-field-hint ">
+                        <legend class="form-label">Berammelsesdato</legend>
+                        <span class="form-hint"
+                            id="example-date-field-hint">Fx. 28 04
+                            1996</span>
                         <span class="form-error-message  d-none"
-                            id="form-error-message-input-error"
-                            role="alert"></span>
+                            id="example-date-field-error"><span
+                                class="sr-only">Fejl:</span> </span>
                         <div class="date-group js-calendar-group mt-3">
                             <div class="form-group form-group-day">
                                 <label class="form-label"
