@@ -3,8 +3,8 @@ permalink: /krav-vaerktoej/bestaaet-faellesoffentlige-brugertest/
 layout: requirements-tool
 title: Har samme løsning allerede bestået den fællesoffentlige brugertest?
 description: 
+backlink: true
 ---
-<a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
 <h1>Har samme løsning allerede bestået den fællesoffentlige brugertest?</h1>
 <p>Eksempelvis i en anden kommune eller hos en anden myndighed.</p>
 <form method="post" action="." id="form-Q600">

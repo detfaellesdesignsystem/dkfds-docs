@@ -2,9 +2,9 @@
 permalink: /krav-vaerktoej/anvendes-af-borgere/
 layout: requirements-tool
 title: Skal din løsning anvendes af borgere?
-description: 
+description:
+backlink: true 
 ---
-<a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
 <h1>Skal din løsning anvendes af borgere?</h1>
 <form method="post" action="." id="form-Q200">
     <div class="form-group">

@@ -3,8 +3,8 @@ permalink: /krav-vaerktoej/en-eller-flere-loesninger-brugertest/
 layout: requirements-tool
 title: Har en eller flere lignende løsninger bestået den fællesoffentlige brugertest?
 description: 
+backlink: true
 ---
-<a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
 <h1>Har en eller flere lignende løsninger bestået den fællesoffentlige brugertest?</h1>
 <p>Lignende løsninger kan eksempelvis være blanketter, som er blevet digitaliseret inden for samme ydelsesområde og som henvender sig til samme målgruppe.</p>
 <form method="post" action="/" id="form-Q500">
