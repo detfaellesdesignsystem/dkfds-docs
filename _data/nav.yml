@@ -77,6 +77,8 @@ Komponenter_category:
   - href: /komponenter/detaljer/
   - href: /komponenter/drop-down/
   - href: /komponenter/faneblad/
+  - href: /komponenter/fejlbeskeder/
+  - href: /komponenter/fejlopsummering/
   - href: /komponenter/felter/
   - href: /komponenter/fil-upload/
   - href: /komponenter/footers/
@@ -125,6 +127,8 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/detaljer/
 - href: /kode/komponenter/drop-down/
 - href: /kode/komponenter/faneblad/
+- href: /kode/komponenter/fejlbeskeder/
+- href: /kode/komponenter/fejlopsummering/
 - href: /kode/komponenter/felter/
 - href: /kode/komponenter/fil-upload/
 - href: /kode/komponenter/footers/

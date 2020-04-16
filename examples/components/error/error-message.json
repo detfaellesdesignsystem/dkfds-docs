@@ -1,0 +1,9 @@
+{
+  "textinput_example":{
+    "id": "error-example-field",
+    "label": "Inputfelt med fejl",
+    "name": "error-example-field",
+    "hint": "Fx 12345678",
+    "error": "Hjælpsom fejlbesked"
+  }
+}

@@ -1,8 +1,8 @@
 {% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
 <div class="form-group form-error">
-    <fieldset>
+    <fieldset aria-describedby="example-checkbox-error">
       <legend class="h5">Tjekboks med fejl</legend>
-        <span class="form-error-message" role="alert">Hjælpsom fejlbesked</span>
+        <span class="form-error-message" id="example-checkbox-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlbesked</span>
          <ul class="nobullet-list">
             {% for item in checkbox_error_examples.items %}<li>{{ checkbox(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.attr, item.inputClasses, item.inputAttrs, item.formClasses) }}</li>{% endfor %}
           </ul>

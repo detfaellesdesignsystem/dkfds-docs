@@ -13,10 +13,10 @@ subcategory: Kode
 {% include code/preview-box.html component="select" title="Eksempel på drop-down" %}
 
 ## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/drop-down/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/drop-down/">Eksempler</a></li>
-</ul>
+
+{:.nobullet-list}
+- <a href="/komponenter/drop-down/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/drop-down/">Eksempler</a>
 
 ## Installation
 

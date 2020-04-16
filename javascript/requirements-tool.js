@@ -381,8 +381,8 @@ let generateResult = function () {
     if(errorQuestions.length === 0){
         if(document.querySelector('body.page-resultat') !== null){
             if(Object.getOwnPropertyNames(getQuestionnaire()).length === 0){
-             goTo('');
-             return;
+                window.location.href = restart;
+                return;
             }
 
             let summaryTable = document.getElementById('summary');
@@ -495,5 +495,5 @@ let closeTool = function(){
         toolIsProcessing = false;
 
     }
-    window.location.href = window.location.origin + '/komigang/krav/';
+    window.location.href = restart;
 };

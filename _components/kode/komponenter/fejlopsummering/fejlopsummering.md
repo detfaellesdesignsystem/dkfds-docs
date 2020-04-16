@@ -1,0 +1,28 @@
+---
+permalink: "/kode/komponenter/fejlopsummering/"
+parentlink: "/kode/komponenter/"
+layout: styleguide
+type: component
+title: Fejlopsummering
+category: Kode_category
+description: Dokumentation på implementering af fejlopsummering.
+subcategory: Kode
+---
+
+{% include code/preview-box.html component="error-summary" title="Eksempel på fejlopssumering" %}
+
+## Eksempler og retningslinjer
+
+{:.nobullet-list}
+- <a href="/komponenter/fejlopsummering/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/fejlopsummering/">Eksempler</a>
+
+## Installation
+
+### HTML Struktur
+
+{% include code/syntax.html component="error-summary" %}
+
+Indsættes over formularen, men under `h1` overskriften.
+
+Hver fejl tilføjes til `<ul>` listen med et anchor link til feltet der er omtalt således at fokus flyttes til pågældende felt.
