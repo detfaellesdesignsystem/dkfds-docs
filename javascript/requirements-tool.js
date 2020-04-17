@@ -93,6 +93,10 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         onClose: function(){
             document.getElementsByTagName('body')[0].classList.remove('modal-active');
+
+            document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
+            document.getElementById('solution-name-error').classList.add('d-none');
+            document.getElementById('solution-name-input').removeAttribute('aria-describedby')
         }
     });
 
@@ -183,7 +187,7 @@ let printResultHandler = function(){
         printButton.addEventListener('click', function(){
             let value = document.getElementById('solution-name-input').value;
             if(value !== "") {
-                document.getElementById('print-title').innerText = 'Fælles krav som "' + value + '" skal overholde';
+                document.getElementById('print-title').innerText = 'Fælles aftalte krav som "' + value + '" skal efterleve';
                 document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
                 document.getElementById('solution-name-error').classList.add('d-none');

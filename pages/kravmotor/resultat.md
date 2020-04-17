@@ -148,13 +148,13 @@ print: true
             </div>
             <div class="modal__content">
                 <div class="form-group">
-                    <label class="form-label " for="solution-name-input"
+                    <label class="form-label sr-only" for="solution-name-input"
                         id="form-label-solution-name">
                         Løsningens navn
                     </label>
                      <span class="form-error-message d-none" id="solution-name-error"
                             role="alert">
-                            Du mangler at indtaste din løsnings navn
+                            Indtast løsningens navn
                         </span>
                     <input class="form-input" required id="solution-name-input" value=""
                         name="solution-name-input" type="text">
