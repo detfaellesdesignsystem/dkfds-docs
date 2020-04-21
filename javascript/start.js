@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 $(document).ready(function () {
-
     if (document.getElementsByClassName('page-cookie-message').length === 0) {
         let cookiePrompt = CookiePrompter.init({
             trackers: [{
@@ -66,7 +65,6 @@ $(document).ready(function () {
             }
         });
     }
-
     $('#start-reqtool').click(function(e){
         e.preventDefault();
         localStorage.removeItem("reqTool");

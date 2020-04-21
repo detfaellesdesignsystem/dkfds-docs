@@ -10,7 +10,23 @@
    border-color: #004993;
  }
 
+.fds-title {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: $font-weight-semibold;
+  color: $color-black;
+  text-decoration: none;
+  display: inline-block;
 
+  @include media-breakpoint-down(sm) {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  &:visited, &:hover, &:active{
+    color: $color-black;
+  }
+}
 // Preview box (e.g. used by header and footer documentation) -------- //
 .preview {
   margin-bottom: 2em;

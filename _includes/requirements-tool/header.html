@@ -1,14 +1,17 @@
 <header class="header d-print-none">
 
-    <div class="solution-header ">
-        <div class="container solution-header-inner">
-            <div class="solution-heading">
-                <a href="/" title="Det Fælles Designsystem">
-                    Det Fælles Designsystem
-                </a>
-            </div>
+    <!-- Start: Portal header -->
+    <div class="portal-header">
+        <div class="container portal-header-inner">
+            <!-- Start: Portallogo -->
+            <a class="fds-title" href="/" title="Det Fælles Designsystem">
+                Det Fælles Designsystem</a>
+            <!-- Slut: Portallogo -->
+
+            <button class="button button-tertiary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
         </div>
     </div>
+    <!-- Slut: Portal header -->
 
     <div class="solution-header ">
         <div class="container solution-header-inner">
@@ -30,26 +33,26 @@
         <button
                 class="button button-tertiary button-menu-close js-menu-close"
                 title="Luk mobil menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
-
+        <div class="portal-info-mobile">
+        </div>
 
         <div class="solution-info-mobile">
             <p><b>Digitaliseringsstyrelsen</b></p>
             <p>Support: 12 34 56 78</p>
         </div>
-
-    </nav>
-    <div class="navbar d-print-none">
-        <div class="navbar-inner navbar-context-actions container">
-            {% if include.backlink == true %}
-            <div class="nav-secondary d-none d-md-block">
+        <div class="navbar">
+            <div class="navbar-inner navbar-context-actions container">
+                {% if include.backlink == true %}
+                <div class="nav-secondary d-none d-md-block">
+                    <div class="nav-actions">
+                        <a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
+                    </div>
+                </div>
+                {% endif %}
                 <div class="nav-actions">
-                    <a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
+                    <a href="javascript:void(0)" class="function-link close-tool"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk værktøjet</a>
                 </div>
             </div>
-            {% endif %}
-            <div class="nav-actions">
-                <a href="javascript:void(0)" class="function-link close-tool"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk værktøjet</a>
-            </div>
         </div>
-    </div>
+    </nav>
 </header>

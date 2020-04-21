@@ -3,7 +3,8 @@ import "@babel/polyfill";
 import tippy from 'tippy.js';
 import MicroModal from 'micromodal';
 let toolIsProcessing = false;
-require('./theme');
+
+import * as DKFDS from 'dkfds';
 
 
 let questionnaire = {};
@@ -82,6 +83,8 @@ krav[13] = {"title": "Krav til løsninger, der skal på borger.dk og Virk", "kra
 
 document.addEventListener("DOMContentLoaded", function(){
 
+    new DKFDS.Navigation();
+    
     tippy('.js-tippy', {
         duration: 0,
         arrow: true
