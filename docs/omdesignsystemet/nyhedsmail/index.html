@@ -1871,6 +1871,15 @@
 
       <section id="section-/omdesignsystemet/nyhedsmail">
           
+          
+          <div class="alert alert-error d-none" role="alert" id="mail-error-summary">
+              <div class="alert-body">
+                  <p class="alert-heading">Hov, der er problemer</p>
+                  <ul class="alert-text nobullet-list">
+                  </ul>
+              </div>
+          </div>
+          
 
           <p class="h6 m-0">
             Om designsystemet
@@ -1880,23 +1889,18 @@
 
           
 
-          <div class="alert alert-success d-none" id="newsletter-message" role="alert">
-    <div class="alert-body">
-        <p class="alert-text"></p>
-    </div>
-</div>
-<div class="newsletter-container">
+          <div class="newsletter-container">
     <form method="post" action="." id="newsform">
         <div class="form-group">
             <label for="i_newsform_email" class="form-label">E-mailadresse</label>
-            <span class="form-error-message" aria-atomic="true" role="alert"></span>
+            <span class="form-error-message mb-3"></span>
             <input type="text" class="form-input" id="i_newsform_email" name="i_email" value="" required="" />
             <input type="hidden" id="i_newsform_navn" name="i_navn" value="" />
         </div>
         <div class="form-group">
             <fieldset>
                 <legend class="h4 mb-0">Vælg mails</legend>
-                <span class="form-error-message" aria-atomic="true" role="alert"></span>
+                <span class="form-error-message mb-3"></span>
                 <ul class="nobullet-list" id="subscriptions">
                 </ul>
             </fieldset>
@@ -1904,7 +1908,7 @@
         <div class="form-group" id="samtykke-group">
             <fieldset>
                 <legend class="h5">Samtykke</legend>
-                <span class="form-error-message" aria-atomic="true" role="alert"></span>
+                <span class="form-error-message"></span>
                 <input id="samtykke-check" type="checkbox" name="samtykke-check" value="1" class="form-checkbox  checkbox-large" required="" />
                 <label for="samtykke-check">Jeg giver hermed samtykke til at Erhvervsstyrelsen må opbevare min mailadresse, indtil jeg selv afmelder mig det/de valgte nyhedsmails (abonnementer).</label>
                 <p><a href="https://nyeforretningsmodeller.dk/vores-behandling-af-dine-personoplysninger-og-dine-rettigheder" target="_blank" class="icon-link">Læs om Erhvervsstyrelsens behandling af dine personoplysninger og dine rettigheder<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>

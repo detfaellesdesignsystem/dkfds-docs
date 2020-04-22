@@ -157,19 +157,29 @@
 <main class="container page-container">
     <a href="javascript:void(0);" class="back-link d-md-none">Tilbage</a>
 
-    <div class="alert alert-error" role="alert">
+    <div class="alert alert-error mt-0 mb-8" role="alert">
         <div class="alert-body">
-            <p class="alert-heading">Der er fejl på siden</p>
-            <p class="alert-text">
-                <ul class="nobullet-list">
-                    <li><a href="#options2">Angiv navn på dokumentet
-                            "Fuldmagt_88.pdf"</a></li>
-                </ul>
-            </p>
+            <p class="alert-heading">Hov, der er problemer</p>
+            <ul class="alert-text nobullet-list mb-3">
+                <li><a href="#fileinput">Dokumentet er større end 10 MB, og
+                        kan derfor ikke tilføjes. Opdel dokumentet og
+                        tilføj som flere dokumenter.</a></li>
+                <li><a href="#options2">Vælg et navn til dokumentet
+                        Fuldmagt_88.pdf</a></li>
+            </ul>
         </div>
     </div>
 
     <h1>Dokumenter til sagen <span class="weight-normal">(frivilligt)</span></h1>
+
+    <div class="form-group file-input mb-5 form-error">
+        <label class="form-label" for="fileinput">Vedhæft fil</label>
+        <span class="form-error-message mb-3" id="fileinput-error"><span class="sr-only">Fejl:</span> Dokumentet er større end 10
+            MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som
+            flere dokumenter.</span>
+        <input type="file" id="fileinput" name="file" aria-describedby="fileinput-error" />
+    </div>
+
     <table class="table table--borderless table--responsive-headers d-print-table">
         <thead>
             <tr>
@@ -213,8 +223,8 @@
                 </td>
                 <td>
                     <div class="form-group form-error">
-                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Angiv navn på
-                            dokumentet &quot;Fuldmagt_88.pdf&quot;</span>
+                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Vælg et navn
+                            til dokumentet Fuldmagt_88.pdf</span>
                         <label class="form-label sr-only" for="options2">Navngiv dokument</label>
                         <select class=" form-select" name="options2" id="options2">
                             <option value="">Vælg</option>
@@ -230,55 +240,6 @@
                             </option>
 
                         </select>
-                    </div>
-                </td>
-                <td><button class="button button-unstyled">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-
-                        <span class="sr-only">Slet</span>
-                    </button></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Dokumentet er
-                            større end 10 MB, og kan derfor ikke tilføjes.
-                            Opdel dokumentet og tilføj som flere
-                            dokumenter.</span>
-                        <a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_tilskadekomne.pdf</a>
-                    </div>
-                </td>
-                <td><button class="button button-unstyled">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-
-                        <span class="sr-only">Slet</span>
-                    </button></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Dokumentet er
-                            ikke en gyldig filtype, og kan derfor ikke
-                            tilføjes. Filen skal være af typen PDF, DOCX,
-                            DOC, BMP, GIF, HTM, HTML, JPEG, JPG, PNG, RTF,
-                            TIF eller TXT.</span>
-                        <a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_arbejdsgiver.indd</a>
-                    </div>
-                </td>
-                <td><button class="button button-unstyled">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-
-                        <span class="sr-only">Slet</span>
-                    </button></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Dokumentet
-                            blev ikke tilføjet, da der er sket en teknisk
-                            fejl. Forsøg at tilføje dokumentet i gen. Sker
-                            samme fejl igen, kan du kontakte FDS.</span>
-                        <a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf-outline"></use></svg>Journal.pdf</a>
                     </div>
                 </td>
                 <td><button class="button button-unstyled">

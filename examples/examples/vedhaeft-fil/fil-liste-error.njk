@@ -49,9 +49,16 @@
 <main class="container page-container">
     <a href="javascript:void(0);" class="back-link d-md-none">Tilbage</a>
 
-    {{ alert(error_summary.classes, error_summary.role, error_summary.title, error_summary.content, error_summary.aria ) }}
+    {{ alert(error_summary.classes, error_summary.role, error_summary.title, error_summary.content, error_summary.aria, "", error_summary.contentContainer ) }}
 
     <h1>Dokumenter til sagen <span class="weight-normal">(frivilligt)</span></h1>
+
+    <div class="form-group file-input mb-5 form-error">
+        <label class="form-label" for="fileinput">Vedhæft fil</label>
+        <span class="form-error-message mb-3" id="fileinput-error"><span class="sr-only">Fejl:</span> Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</span>
+        <input type="file" id="fileinput" name="file" aria-describedby="fileinput-error" />
+    </div>
+
     <table class="table table--borderless table--responsive-headers d-print-table">
         <thead>
             <tr>
@@ -69,33 +76,6 @@
              <tr>
                 <td><a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Fuldmagt_88.pdf</a></td>
                 <td> {{select(select_example2.name, select_example2.id, select_example2.label, select_example2.class, select_example2.optiontitle, select_example2.options, select_example2.disabled, select_example2.classLabel, select_example2.formError)}}</td>
-                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
-             </tr>
-             <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</span>
-                        <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Spørgeskema_tilskadekomne.pdf</a>
-                    </div>
-                </td>
-                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
-             </tr>
-             <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Dokumentet er ikke en gyldig filtype, og kan derfor ikke tilføjes. Filen skal være af typen PDF, DOCX, DOC, BMP, GIF, HTM, HTML, JPEG, JPG, PNG, RTF, TIF eller TXT.</span>
-                        <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Spørgeskema_arbejdsgiver.indd</a>
-                    </div>
-                </td>
-                <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
-             </tr>
-             <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Dokumentet blev ikke tilføjet, da der er sket en teknisk fejl. Forsøg at tilføje dokumentet i gen. Sker samme fejl igen, kan du kontakte FDS.</span>
-                        <a href="#" class="function-link">{{ icon_svg('file-pdf-outline')}}Journal.pdf</a>
-                    </div>
-                </td>
                 <td>{{ button('', 'unstyled', '', 'delete-outline', 'Slet') }}</td>
              </tr>
         </tbody>

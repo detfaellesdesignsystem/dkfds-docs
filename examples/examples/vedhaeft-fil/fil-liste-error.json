@@ -69,7 +69,7 @@
   "id": "options2",
   "label": "Navngiv dokument",
   "classLabel": "sr-only",
-  "formError": "Angiv navn på dokumentet \"Fuldmagt_88.pdf\"",
+  "formError": "Vælg et navn til dokumentet Fuldmagt_88.pdf",
   "options": [
     {
       "value": "Lægeerklæring",
@@ -90,9 +90,10 @@
   },
   "error_summary": {
     "name": "error",
-    "classes": "alert-error",
-    "title": "Der er fejl på siden",
-    "content": "<ul class=\"nobullet-list\"><li><a href=\"#options2\">Angiv navn på dokumentet \"Fuldmagt_88.pdf\"</a></li></ul>",
+    "classes": "alert-error mt-0 mb-8",
+    "title": "Hov, der er problemer",
+    "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a href=\"#fileinput\">Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</a></li><li><a href=\"#options2\">Vælg et navn til dokumentet Fuldmagt_88.pdf</a></li></ul>",
+    "contentContainer": false,
     "role": "alert"
   }
 }
