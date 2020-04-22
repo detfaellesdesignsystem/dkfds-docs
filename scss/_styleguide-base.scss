@@ -993,7 +993,7 @@ code {
 }
 
 //----- grid example
-body[class*="page-grid"][class*="-html"], div.component-preview[class*="-grid"] {
+body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="page-grid"], div.component-preview[class*="-grid"] {
 
 
   .row > .col,
