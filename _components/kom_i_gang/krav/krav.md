@@ -2,6 +2,7 @@
 permalink: /komigang/krav/
 redirect_from:
 - /krav/
+- /krav-vaerktoej/
 layout: styleguide
 title: Krav til selvbetjeningsløsninger
 category: Kom_i_gang_category
