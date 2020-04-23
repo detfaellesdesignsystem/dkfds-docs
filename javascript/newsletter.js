@@ -66,7 +66,7 @@ $( document ).ready(function( $ ) {
 
                     if (!isValidEmailAddress($("#i_newsform_email").val())) {
                         $('#i_newsform_email').parent('.form-group').addClass('form-error');
-                        $('#mail-error-summary .nobullet-list').append('<li><a href="#i_newsform_email">Indtast en gyldig e-mailadresse.</a></li>');
+                        $('#mail-error-summary .nobullet-list').append('<li><a class="function-link" href="#i_newsform_email">Indtast en gyldig e-mailadresse.</a></li>');
                         $('#i_newsform_email').parent('.form-group').find('.form-error-message')[0].innerHTML = "Indtast en gyldig e-mailadresse.";
                         $("#i_newsform_email").focus();
                         error = true;
@@ -82,7 +82,7 @@ $( document ).ready(function( $ ) {
 
                     if ( segmentid.length == 0 ) {
                         $($('#subscriptions').parents('.form-group')[0]).addClass('form-error');
-                        $('#mail-error-summary .nobullet-list').append('<li><a href="#'+$($('#subscriptions input')[0]).attr('id')+'">Der skal vælges minimum et nyhedsbrev.</a></li>');
+                        $('#mail-error-summary .nobullet-list').append('<li><a class="function-link" href="#'+$($('#subscriptions input')[0]).attr('id')+'">Der skal vælges minimum et nyhedsbrev.</a></li>');
                         $($('#subscriptions').parents('.form-group')[0]).find('.form-error-message')[0].innerHTML = "Der skal vælges minimum et nyhedsbrev.";
                         if(error !== true) {
                             $("#newsform [type='checkbox']:first").focus();
@@ -95,7 +95,7 @@ $( document ).ready(function( $ ) {
                     if(!$("#samtykke-check").prop('checked')){
                         error = true;
                         $('#samtykke-group').addClass('form-error');
-                        $('#mail-error-summary .nobullet-list').append('<li><a href="#samtykke-check">Giv os venligst samtykke, så vi må opbevare din mailadresse. Uden dit samtykke kan vi ikke sende dig nyhedsmails.</a></li>');
+                        $('#mail-error-summary .nobullet-list').append('<li><a class="function-link" href="#samtykke-check">Giv os venligst samtykke, så vi må opbevare din mailadresse. Uden dit samtykke kan vi ikke sende dig nyhedsmails.</a></li>');
                         document.querySelector('#samtykke-group .form-error-message').innerHTML = "Giv os venligst samtykke, så vi må opbevare din mailadresse. Uden dit samtykke kan vi ikke sende dig nyhedsmails.";
                     } else{
 

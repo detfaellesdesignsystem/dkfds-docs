@@ -55,7 +55,7 @@ var exampleUrls = [
             await page.emulateMedia('screen');
 
             await page.evaluate(() => {
-                let cookieMessage = document.getElementById('cookieMessage');
+                let cookieMessage = document.getElementById('cookiePrompt');
                 if (cookieMessage !== null) {
                     cookieMessage.style.display = 'none';
                 }
