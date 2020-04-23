@@ -8,7 +8,7 @@ subcategory: Om designsystemet
 description: "Tilmelding til nyhedsmail fra Det Fælles Designsystem"
 tags:
 ---
-<div class="alert alert-success d-none" id="newsletter-message" role="alert">
+<div class="alert alert-success d-none mb-8" id="newsletter-message" role="alert">
     <div class="alert-body">
         <p class="alert-text"></p>
     </div>
