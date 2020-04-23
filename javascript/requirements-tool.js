@@ -84,7 +84,7 @@ krav[13] = {"title": "Krav til løsninger, der skal på borger.dk og Virk", "kra
 document.addEventListener("DOMContentLoaded", function(){
 
     new DKFDS.Navigation();
-    
+
     tippy('.js-tippy', {
         duration: 0,
         arrow: true
@@ -94,12 +94,13 @@ document.addEventListener("DOMContentLoaded", function(){
         onShow: function(){
             document.getElementsByTagName('body')[0].classList.add('modal-active');
         },
-        onClose: function(){
+        onClose: function(modal){
             document.getElementsByTagName('body')[0].classList.remove('modal-active');
-
-            document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
-            document.getElementById('solution-name-error').classList.add('d-none');
-            document.getElementById('solution-name-input').removeAttribute('aria-describedby')
+            if(modal.getAttribute('id') == "modal-print") {
+                document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
+                document.getElementById('solution-name-error').classList.add('d-none');
+                document.getElementById('solution-name-input').removeAttribute('aria-describedby')
+            }
         }
     });
 
