@@ -13,3 +13,5 @@ tags:
         <p class="alert-text"></p>
     </div>
 </div>
+
+<a href="/omdesignsystemet/nyhedsmail/">Tilmeld endnu en mailadresse</a>
