@@ -83,8 +83,8 @@ Generelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening ude af kon
 Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud som fx:
 
 * "Skriv adressen korrekt"
-* "du har lavet en fejl"
-* "ikke godkendt"
+* "Du har lavet en fejl"
+* "Ikke godkendt"
 
 Forskellige fejl har brug for forskellige fejlmeddelelser. Fx kan der opstå forskellige fejl på tekstfelter, felter kan være:
 
