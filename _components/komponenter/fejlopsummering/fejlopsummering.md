@@ -42,4 +42,4 @@ For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste
 
 ### Placering af fejlopsummeringen
 
-Sæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumme eller et tilbage-link, skal du placere den under disse, men over titlen på siden/den øverste overskrift <h1> på siden.
+Sæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumme eller et tilbage-link, skal du placere den under disse, men over titlen (den øverste overskrift) på siden.
