@@ -40,7 +40,7 @@ Når en bruger skal indtaste svar i flere felter, fx dag-, måned- og årsfelter
 
 Hvis du ikke ved, hvilket felt der indeholder en fejl, skal du linke til det første felt i gruppen af felter.
 
-For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste ved hjælp af en radioknap eller en tjekboks, skal du linke til den første radio eller tjekboks på listen.
+For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste ved hjælp af en radioknap eller en tjekboks, skal du linke til den første radioknap eller tjekboks på listen.
 
 {:.h4}
 
