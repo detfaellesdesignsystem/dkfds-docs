@@ -10,9 +10,9 @@ tags:
 lead: 
 
 ---
-Brug fejlopsummeringen øverst på siden til at opsummere eventuelle fejl som brugeren skal rette inden denne kan komme videre.
+Brug komponenten til at opsummere eventuelle fejl, som brugeren skal rette inden denne kan komme videre, øverst på siden.
 
-Når en bruger laver en fejl eller mangler at udfylde noget, skal du vise både en fejlopsummering og en <a href="/komponenter/fejlbesked/">fejlmeddelelse</a> ud for de .
+Når en bruger laver en fejl eller mangler at udfylde noget, skal du vise både en fejlopsummering øverst på siden, der opsummerer de <a href="/komponenter/fejlbesked/">fejlmeddelelser</a>, de måtte være på siden.
 
 {% include code/preview-box.html component="error-summary" title="Eksempel på fejlopsummering" link="true" code="/kode/komponenter/fejlopsummering/" %}
 
