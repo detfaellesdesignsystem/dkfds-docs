@@ -2,12 +2,12 @@
 permalink: "/komponenter/fejlbeskeder/"
 layout: styleguide
 type: component
-title: Fejlbeskeder
+title: Fejlmeddelelser
 category: Komponenter_category
 subcategory: Komponenter
-description:
+description: 
 tags: 
-lead:
+lead: 
 anchor: true
 subnav:
 - text: Tjekboks
@@ -16,63 +16,78 @@ subnav:
   href: "#radioknap"
 - text: Datoangivelse
   href: "#datoangivelse"
----
 
+---
 {% include code/preview-box.html component="error-message" title="Eksempel på fejlbesked" link="true" code="/kode/komponenter/fejlbeskeder/" %}
 
 {:.h3 #retningslinjer}
-## Anvendes til
 
-Vis en fejlbesked ved feltet der er fejl i samt i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>, når der valideringsfejl.
+## Anvendes til 
+
+Brug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsningen. Fortæl brugeren, hvad der skal til for at rette problemet og komme videre i et simpelt og venligt sprog.
+
+Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så brugeren ikke skal lede, ved at sætte fejlmeddelelsen umiddelbart over det, der skal rettes eller mangler.
 
 {:.h3}
+
 ## Anvendes ikke til
 
-Brug ikke fejlbeskeder til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.
+Brug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.
+
+Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en <a href="/komponenter/beskeder/">besked</a>. 
 
 {:.h3}
+
 ## Vejledning
 
-- Vis fejlbeskeden i rød efter spørgsmålet og hjælpeteksten.
-- Vis en rød streg i venstre side af området til felt der er fejl i - dette er for at vise der er sammenhæng.
-- Vis en rød streg om de felter der er fejl i.
-- For at hjælpe skærmlæsere tilføjes en skjult tekst "Fejl:" foran fejlbeskeden. Brugere af skærmlæser vil da høre "Fejl: Datoen for udløb af dit pas bør være i fortiden."
+* Fejlmeddelelsen vises også som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen også give mening, når den læses for sig selv og væk fra stedet, hvor fejlen er (ude af kontekst).
+* Vis fejlmeddelelsen i rød umiddelbart over feltet, der er fejl i.
+* Vis en rød streg i venstre side af området, hvor fejlen er for at fremhæve fejlen.
+* Marker også de felter der er fejl i med rødt.
+* For at hjælpe skærmlæsere tilføjes en skjult tekst "Fejl:" foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre "Fejl: Dette er ikke en gyldig mailadresse."
 
 {:.h4}
+
 ### Vær konsekvent
-Brug den samme fejlbesked ved feltet og i fejlopsummeringen så de:
-- ser ud, lyder og betyder det samme
-- giver meningen ud af kontekst
-- reducer den kognitive indsats, der er nødvendig for at forstå, hvad der er sket
-Brug spørgsmålet til feltet til at give kontekst. For eksempel, hvis man har et felt med label 'Hvor mange timer arbejder du en uge?', så kan fejlbeskeden fx være "Indtast hvor mange timer du arbejder en uge".
+
+Brug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de:
+
+* Ser en ud, lyder ens, og betyder det samme.
+* Giver meningen ud af kontekst.
+* Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står 'Hvor mange timer arbejder du om ugen?', så kan fejlmeddelelsen være "Indtast hvor mange timer du arbejder om ugen". Undgå generiske og upræcise fejlmeddelelser, som fx "Ret fejlen" eller "Fejl i indtastning". Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud fx: "Skriv adressen korrekt","du har lavet en fejl" eller "ikke et godkendt format".
 
 {:.h4}
+
 ### Vær præcis
-Generelle fejl er ikke hjælpsomme. De giver ikke mening ud af kontekst, så ungå fejl som:
 
-- "En fejl opstod"
-- "Svar på spørgsmålet"
-- "Vælg et et svar fra listen"
-- "Udfyld feltet"
-- "Dette felt er påkrævet"
+Generelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening ude af kontekst. Undgå derfor fejlmeddelelser som:
 
-Forskellige fejl har brug for forskellige fejlbeskeder. Fx kan tekstfelter have fejl som:
+* "En fejl opstod"
+* "Svar på spørgsmålet"
+* "Vælg et et svar fra listen"
+* "Udfyld feltet"
+* "Dette felt er påkrævet"
 
-- Tomt felt
-- For langt
-- For kort
-- Ugyldige tegn
-- Forkert format
+Forskellige fejl har brug for forskellige fejlmeddelelser. Fx kan der opstå forskellige fejl på tekstfelter, felter kan være:
 
-En fejl, der forklarer den specifikke situation er mere hjælpsom. Det vil fortælle brugeren, hvad der er sket og hvordan de løser det.
+* Tomme
+* For lange
+* For korte
+* Indeholde ugyldige tegn
+* I et forkert format
+
+En fejl, der forklarer den specifikke situation er mere hjælpsom end den generiske. Den gode fejlmeddelelse vil fortælle brugeren, hvad der er sket og hvordan det løses.
 
 {:.h4}
+
 ### Brug instruktioner og beskrivelser
-Visse fejlbeskeder fungerer bedre end andre som instruktioner og andre som beskrivelser. Fx:
 
-- "Indtast dit fornavn" er tydeligere og mere direkte end "Fornavn bør være udfyldt"
-- "Indtast et fornavn der er 35 karakterer eller færre" er mere komplekst og mindre direkte end "Fornavn være være 35 karakterer eller færre".
+Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. Fx:
 
-Brug både instruktioner og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør være 35 karaktere eller færre" til felter som er for lange.
+* "Indtast dit fornavn" er tydeligere og mere direkte end "Fornavn skal være udfyldt"
+* "Indtast et fornavn, der indeholder 35 bogstaver eller færre" bruger flere ord og er  mindre direkte og naturligt end "Fornavnet må højst være på 35 bogstaver".
+* "Indtast en dato efter den 31. august 2020, der viser hvornår du startede på det pågældende kursus" bruger flere ord og er mindre direkte og naturligt end "Startdatoen for det valgte kursus skal være efter den 31. august 2020". 
+
+Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør højst være 35 bogstaver" til felter som er for lange.
 
 {% include child-components.html parent='Fejlbeskeder' %}
