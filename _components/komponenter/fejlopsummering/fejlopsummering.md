@@ -10,7 +10,7 @@ tags:
 lead: 
 
 ---
-<P class="font-lead">Brug komponenten øverst på siden til at opsummere eventuelle fejl, som brugeren skal rette inden denne kan komme videre.</p>
+<p class="font-lead">Brug komponenten øverst på siden til at opsummere eventuelle fejl, som brugeren skal rette inden denne kan komme videre.</p>
 
 Når en bruger laver en fejl eller mangler at udfylde noget, skal du vise både en fejlopsummering øverst på siden, der opsummerer de <a href="/komponenter/fejlbesked/">fejlmeddelelser</a>, de måtte være på siden.
 
@@ -20,7 +20,7 @@ Når en bruger laver en fejl eller mangler at udfylde noget, skal du vise både 
 
 ## Anvendes til
 
-Vis altid en fejlopsummering, når der er en valideringsfejl i forhold til noget af det brugeren har indtastet - også hvis der kun er én fejl på siden.
+Vis en fejlopsummering når der er fejl i noget af det brugeren har indtastet, også hvis der kun er én fejl på siden.
 
 {:.h3}
 
