@@ -110,6 +110,6 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 {:.h4}
 
-## Eksempler
+## Eksempler på fejlmeddelelser
 
 {% include child-components.html parent='Fejlbeskeder' %}
