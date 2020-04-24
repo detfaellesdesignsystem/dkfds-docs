@@ -40,21 +40,33 @@ Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har me
 
 ## Vejledning
 
-* Fejlmeddelelsen vises også som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen også give mening, når den læses for sig selv og væk fra stedet, hvor fejlen er (ude af kontekst).
-* Vis fejlmeddelelsen i rød umiddelbart over feltet, der er fejl i.
-* Vis en rød streg i venstre side af området, hvor fejlen er for at fremhæve fejlen.
-* Marker også de felter der er fejl i med rødt.
-* For at hjælpe skærmlæsere tilføjes en skjult tekst "Fejl:" foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre "Fejl: Dette er ikke en gyldig mailadresse."
+For alle fejl gælder, at:
+
+* Fejlmeddelelsen vises også som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen også give mening, når den læses for sig selv i fejlopsummeringen, der kan være "langt" fra fejlen.
+* Vis fejlmeddelelsen i rød umiddelbart over, der hvor fejlen er.
+* Vis en rød streg i venstre side af området, ud for fejlen for at fremhæve fejlen.
+* Marker også selve feltet, der er fejl i med rødt.
+* For at hjælpe skærmlæsere tilføjes en skjult tekst med ordet "Fejl:" foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre "Fejl: Dette er ikke en gyldig mailadresse."
 
 {:.h4}
 
-### Vær konsekvent
+### Skriv klart og præcist
+
+Beskriv for brugeren, hvad der er sket og hvordan det kan rettes. 
+
+Meddelelsen skal være skrevet i lægmandssprog, være imødekommende og så kortfattet som muligt.
+
+Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står "ddmmååå-nnnn" eller "22091908-1856" som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.
+
+{:.h4}
+
+### Vær konsistent
 
 Brug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de:
 
-* Ser en ud, lyder ens, og betyder det samme.
-* Giver meningen ud af kontekst.
-* Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står 'Hvor mange timer arbejder du om ugen?', så kan fejlmeddelelsen være "Indtast hvor mange timer du arbejder om ugen". Undgå generiske og upræcise fejlmeddelelser, som fx "Ret fejlen" eller "Fejl i indtastning". Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud fx: "Skriv adressen korrekt","du har lavet en fejl" eller "ikke et godkendt format".
+* Ser ens ud, lyder ens, og betyder det samme.
+* Giver meningen ude af kontekst.
+* Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står 'Hvor mange timer arbejder du om ugen?', så kan fejlmeddelelsen være "Indtast hvor mange timer du arbejder om ugen". 
 
 {:.h4}
 
@@ -67,6 +79,12 @@ Generelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening ude af kon
 * "Vælg et et svar fra listen"
 * "Udfyld feltet"
 * "Dette felt er påkrævet"
+
+Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud som fx:
+
+* "Skriv adressen korrekt"
+* "du har lavet en fejl"
+* "ikke godkendt"
 
 Forskellige fejl har brug for forskellige fejlmeddelelser. Fx kan der opstå forskellige fejl på tekstfelter, felter kan være:
 
