@@ -10,11 +10,7 @@ tags:
 lead: 
 
 ---
-{:.font-lead}
-
-Brug komponenten til at opsummere eventuelle fejl, som brugeren skal rette inden denne kan komme videre, øverst på siden.
-
-{:.p}
+<P class="font-lead">Brug komponenten øverst på siden til at opsummere eventuelle fejl, som brugeren skal rette inden denne kan komme videre.</p>
 
 Når en bruger laver en fejl eller mangler at udfylde noget, skal du vise både en fejlopsummering øverst på siden, der opsummerer de <a href="/komponenter/fejlbesked/">fejlmeddelelser</a>, de måtte være på siden.
 
