@@ -108,4 +108,8 @@ Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. F
 
 Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør højst være 35 bogstaver" til felter som er for lange.
 
+{:.h4}
+
+## Eksempler
+
 {% include child-components.html parent='Fejlbeskeder' %}
