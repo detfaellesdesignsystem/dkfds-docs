@@ -22,7 +22,7 @@ subnav:
 
 {:.h3 #retningslinjer}
 
-## Anvendes til 
+## Anvendes til
 
 Brug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsningen. Fortæl brugeren, hvad der skal til for at rette problemet og komme videre i et simpelt og venligt sprog.
 
@@ -34,7 +34,7 @@ Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så bruger
 
 Brug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.
 
-Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en <a href="/komponenter/beskeder/">besked</a>. 
+Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en <a href="/komponenter/beskeder/">besked</a>.
 
 {:.h3}
 
@@ -42,17 +42,17 @@ Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har me
 
 For alle fejl gælder, at:
 
-* Fejlmeddelelsen vises også som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen også give mening, når den læses for sig selv i fejlopsummeringen, der kan være "langt" fra fejlen.
+* Fejlmeddelelsen vises også som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen også give mening, når den læses for sig selv i fejlopsummeringen.
 * Vis fejlmeddelelsen i rød umiddelbart over, der hvor fejlen er.
 * Vis en rød streg i venstre side af området, ud for fejlen for at fremhæve fejlen.
-* Marker også selve feltet, der er fejl i med rødt.
+* Marker også selve feltet der er fejl i med rødt.
 * For at hjælpe skærmlæsere tilføjes en skjult tekst med ordet "Fejl:" foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre "Fejl: Dette er ikke en gyldig mailadresse."
 
 {:.h4}
 
 ### Skriv klart og præcist
 
-Beskriv for brugeren, hvad der er sket og hvordan det kan rettes. 
+Beskriv for brugeren, hvad der er sket og hvordan det kan rettes.
 
 Meddelelsen skal være skrevet i lægmandssprog, være imødekommende og så kortfattet som muligt.
 
@@ -66,7 +66,7 @@ Brug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de:
 
 * Ser ens ud, lyder ens, og betyder det samme.
 * Giver meningen ude af kontekst.
-* Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står 'Hvor mange timer arbejder du om ugen?', så kan fejlmeddelelsen være "Indtast hvor mange timer du arbejder om ugen". 
+* Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står 'Hvor mange timer arbejder du om ugen?', så kan fejlmeddelelsen være "Indtast hvor mange timer du arbejder om ugen".
 
 {:.h4}
 
@@ -104,7 +104,7 @@ Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. F
 
 * "Indtast dit fornavn" er tydeligere og mere direkte end "Fornavn skal være udfyldt"
 * "Indtast et fornavn, der indeholder 35 bogstaver eller færre" bruger flere ord og er  mindre direkte og naturligt end "Fornavnet må højst være på 35 bogstaver".
-* "Indtast en dato efter den 31. august 2020, der viser hvornår du startede på det pågældende kursus" bruger flere ord og er mindre direkte og naturligt end "Startdatoen for det valgte kursus skal være efter den 31. august 2020". 
+* "Indtast en dato efter den 31. august 2020, der viser hvornår du startede på det pågældende kursus" bruger flere ord og er mindre direkte og naturligt end "Startdatoen for det valgte kursus skal være efter den 31. august 2020".
 
 Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør højst være 35 bogstaver" til felter som er for lange.
 
