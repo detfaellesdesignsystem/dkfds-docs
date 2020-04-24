@@ -7,7 +7,7 @@ print: true
 ---
 
 <div id="error-container" class="d-none">
-<h1>Hov, vi mangler nogle flere svar fra dig</h1>
+<h1>Fælles aftalte krav som din løsning skal efterleve</h1>
 <div class="alert alert-error">
     <div class="alert-body">
         <p class="alert-heading">Hov, vi mangler nogle svar, før vi kan give dig et resultat</p>
