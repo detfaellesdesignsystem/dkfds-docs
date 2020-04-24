@@ -10,8 +10,8 @@ print: true
 <h1>Hov, vi mangler nogle flere svar fra dig</h1>
 <div class="alert alert-error">
     <div class="alert-body">
-        <p class="alert-heading">Vi mangler nogle svar fra dig</p>
-        <p class="alert-text"><a id="continue-questionnaire-link">Fortsæt spørgeskemaet</a></p>
+        <p class="alert-heading">Hov, vi mangler nogle svar, før vi kan give dig et resultat</p>
+        <p class="alert-text"><a id="continue-questionnaire-link">Gå til spørgeskemaet</a></p>
     </div>
 </div>
 </div>
