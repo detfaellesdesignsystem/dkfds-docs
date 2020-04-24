@@ -3,8 +3,6 @@
 <!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
 <head>
   {% include head.html %}
-
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style/styleguide_virkdk.css" />
 </head>
 <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
 <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
@@ -19,6 +17,7 @@
 </main>
 
 {% include requirements-tool/footer.html %}
+<script src="{{ site.baseurl }}/assets/js/theme.js"></script>
 <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
 <script src="{{ site.baseurl }}/assets/js/requirements-tool~styleguide.js"></script>
 <script src="{{ site.baseurl }}/assets/js/requirements-tool.js"></script>

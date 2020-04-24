@@ -992,6 +992,14 @@ code {
   }
 }
 
+body.layout-requirements-tool{
+  .header {
+    .portal-header{
+      background-color: transparent;
+    }
+  }
+}
+
 //----- grid example
 body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="page-grid"], div.component-preview[class*="-grid"] {
 
