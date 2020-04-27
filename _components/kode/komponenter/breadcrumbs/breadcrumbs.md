@@ -22,6 +22,6 @@ tags:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="breadcrumbs" 
+{% include code/syntax.html component="breadcrumbs" %}
 
 Koden placeres i headeren - på samme måde som <a href="/kode/komponenter/tilbage-link/">tilbage-link</a>.
