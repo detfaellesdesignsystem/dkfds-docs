@@ -1,0 +1,119 @@
+<main class="col-12 col-lg-9" id="main-content">
+
+    <div class="alert alert-error" role="alert">
+        <div class="alert-body">
+            <p class="alert-heading">Hov, der er problemer</p>
+            <ul class="alert-text nobullet-list">
+                <li><a class="function-link" href="#fornavn">Indtast
+                        fornavn</a></li>
+                <li><a class="function-link" href="#efternavn">Indtast
+                        efternavn</a></li>
+                <li><a class="function-link" href="#gade-vej">Indtast
+                        gade/vej</a></li>
+                <li><a class="function-link" href="#husnummer">Indtast
+                        husnummer</a></li>
+                <li><a class="function-link" href="#postnummer">Indtast
+                        postnummer</a></li>
+                <li><a class="function-link" href="#by">Indtast bynavn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
+    <form>
+        <div class="form-group form-error">
+            <label class="form-label " for="fornavn">
+                Fornavn
+            </label>
+
+            <span class="form-error-message" id="fornavn-error">
+                <span class="sr-only">Fejl:</span> Indtast fornavn
+            </span>
+            <input class="form-input input-width-m" id="fornavn" value=""
+                name="Input til fornavn" type="text" aria-invalid="true"
+                aria-describedby=" fornavn-error">
+        </div>
+        <div class="form-group form-error">
+            <label class="form-label " for="efternavn">
+                Efternavn
+            </label>
+
+            <span class="form-error-message" id="efternavn-error">
+                <span class="sr-only">Fejl:</span> Indtast efternavn
+            </span>
+            <input class="form-input input-width-m" id="efternavn" value=""
+                name="Input til efternavn" type="text" aria-invalid="true"
+                aria-describedby=" efternavn-error">
+        </div>
+        <div class="form-group form-error">
+            <label class="form-label " for="gade-vej">
+                Gade/vej
+            </label>
+
+            <span class="form-error-message" id="gade-vej-error">
+                <span class="sr-only">Fejl:</span> Indtast gade/vej
+            </span>
+            <input class="form-input input-width-m" id="gade-vej" value=""
+                name="Input til gade/vej" type="text" aria-invalid="true"
+                aria-describedby=" gade-vej-error">
+        </div>
+        <div class="form-group form-error">
+            <label class="form-label " for="husnummer">
+                Husnummer
+            </label>
+
+            <span class="form-error-message" id="husnummer-error">
+                <span class="sr-only">Fejl:</span> Indtast husnummer
+            </span>
+            <input class="form-input input-width-xxs" id="husnummer"
+                value="" name="Input til husnummer" type="text"
+                aria-invalid="true" aria-describedby=" husnummer-error">
+        </div>
+        <div class="form-group">
+            <label class="form-label " for="etage">
+                Etage<span class="weight-normal"> (frivilligt)</span>
+            </label>
+
+            <input class="form-input input-width-xxs" id="etage" value=""
+                name="Input til etage" type="text">
+        </div>
+        <div class="form-group">
+            <label class="form-label " for="side">
+                Side<span class="weight-normal"> (frivilligt)</span>
+            </label>
+            <span class="form-hint" id="side-hint">
+                Fx: TV, 2. dør
+            </span>
+
+            <input class="form-input input-width-xs" id="side" value=""
+                name="Input til side" type="text"
+                aria-describedby="side-hint ">
+        </div>
+        <div class="form-group form-error">
+            <label class="form-label " for="postnummer">
+                Postnummer
+            </label>
+
+            <span class="form-error-message" id="postnummer-error">
+                <span class="sr-only">Fejl:</span> Indtast postnummer - fx
+                4000
+            </span>
+            <input class="form-input input-width-xxs" id="postnummer"
+                value="" name="Input til postnummer" type="text"
+                aria-invalid="true" aria-describedby=" postnummer-error">
+        </div>
+        <div class="form-group form-error">
+            <label class="form-label " for="by">
+                By
+            </label>
+
+            <span class="form-error-message" id="by-error">
+                <span class="sr-only">Fejl:</span> Indtast bynavn
+            </span>
+            <input class="form-input input-width-m" id="by" value=""
+                name="Input til by" type="text" aria-invalid="true"
+                aria-describedby=" by-error">
+        </div>
+    </form>
+</main>

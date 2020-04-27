@@ -7,6 +7,10 @@ title: Fejlopsummering
 category: Kode_category
 description: Dokumentation på implementering af fejlopsummering.
 subcategory: Kode
+anchor: true
+subnav:
+- text: Placering
+  href: '#placering'
 ---
 
 {% include code/preview-box.html component="error-summary" title="Eksempel på fejlopssumering" %}
@@ -26,3 +30,8 @@ subcategory: Kode
 Indsættes over formularen, men under `h1` overskriften.
 
 Hver fejl tilføjes til `<ul>` listen med et anchor link til feltet der er omtalt således at fokus flyttes til pågældende felt.
+
+{:#placering}
+#### Placering
+
+{% include code/syntax.html component="error-summary-page" link="true" %}

@@ -1,0 +1,16 @@
+{% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+<main class="col-12 col-lg-9" id="main-content">
+    {{ alert(alert_example.classes, alert_example.role, alert_example.title, alert_example.content, alert_example.aria, alert_example.close, alert_example.contentContainer ) }}
+    <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
+    <form>
+        {{textinput("fornavn", "Fornavn", "", "input-width-m", "Indtast fornavn", "Input til fornavn", "", false, "")}}
+        {{textinput("efternavn", "Efternavn", "", "input-width-m", "Indtast efternavn", "Input til efternavn", "", false, "")}}
+        {{textinput("gade-vej", "Gade/vej", "", "input-width-m", "Indtast gade/vej", "Input til gade/vej", "", false, "")}}
+        {{textinput("husnummer", "Husnummer", "", "input-width-xxs", "Indtast husnummer", "Input til husnummer", "", false, "")}}
+        {{textinput("etage", "Etage", "(frivilligt)", "input-width-xxs", "", "Input til etage", "", false, "")}}
+        {{textinput("side", "Side", "(frivilligt)", "input-width-xs", "", "Input til side", "", false, false, "Fx: TV, 2. dør")}}
+        {{textinput("postnummer", "Postnummer", "", "input-width-xxs", "Indtast postnummer - fx 4000", "Input til postnummer", "", false, "")}}
+        {{textinput("by", "By", "", "input-width-m", "Indtast bynavn", "Input til by", "", false, "")}}
+    </form>
+</main>
