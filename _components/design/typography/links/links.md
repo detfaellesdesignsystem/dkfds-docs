@@ -16,8 +16,8 @@ tags:
 subnav:
 - text: Eksternt link
   href: "#eksternt-link"
-- text: Footer link
-  href: "#footer-link"
+- text: Sekundære link
+  href: "#sekundære-links"
 ---
 
 Se også vores <a href="/komponenter/skip-link/">Skip-link</a>, <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.

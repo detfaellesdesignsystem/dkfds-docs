@@ -1,5 +1,5 @@
 ---
-permalink: "/komponenter/fejlbeskeder/"
+permalink: "/komponenter/fejlmeddelelser/"
 layout: styleguide
 type: component
 title: Fejlmeddelelser
@@ -7,6 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: 
 tags: 
+- "fejlbesked"
 lead: 
 anchor: true
 subnav:
@@ -18,7 +19,7 @@ subnav:
   href: "#datoangivelse"
 
 ---
-{% include code/preview-box.html component="error-message" title="Eksempel på fejlbesked" link="true" code="/kode/komponenter/fejlbeskeder/" %}
+{% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" link="true" code="/kode/komponenter/fejlmeddelelser/" %}
 
 {:.h3 #retningslinjer}
 
@@ -110,4 +111,4 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 ## Eksempler på fejlmeddelelser
 
-{% include child-components.html parent='Fejlbeskeder' %}
+{% include child-components.html parent='Fejlmeddelelser' %}

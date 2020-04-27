@@ -26,6 +26,8 @@ Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om 
 
 Anvend beskeder til at bekræfte en handling eller give besked om behov for handling.
 
+Brug strukturen i <a href="/komponenter/fejlopsummering/">fejlopsummering</a> til at opremse <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i formularen.
+
 {:.h3}
 ## Anvendes ikke til
 

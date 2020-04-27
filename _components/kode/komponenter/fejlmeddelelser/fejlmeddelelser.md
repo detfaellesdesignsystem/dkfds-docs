@@ -1,11 +1,11 @@
 ---
-permalink: "/kode/komponenter/fejlbeskeder/"
+permalink: "/kode/komponenter/fejlmeddelelser/"
 parentlink: "/kode/komponenter/"
 layout: styleguide
 type: component
-title: Fejlbeskeder
+title: Fejlmeddelelser
 category: Kode_category
-description: Dokumentation på implementering af fejlbeskeder.
+description: Dokumentation på implementering af fejlmeddelelser.
 subcategory: Kode
 anchor: true
 subnav:
@@ -17,13 +17,13 @@ subnav:
   href: "#datoangivelse"
 ---
 
-{% include code/preview-box.html component="error-message" title="Eksempel på fejlbesked" %}
+{% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelser" %}
 
 ## Eksempler og retningslinjer
 
 {:.nobullet-list}
-- <a href="/komponenter/fejlbeskeder/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/fejlbeskeder/">Eksempler</a>
+- <a href="/komponenter/fejlmeddelelser/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/fejlmeddelelser/">Eksempler</a>
 
 ## Installation
 
@@ -31,10 +31,10 @@ subnav:
 
 {% include code/syntax.html component="error-message" %}
 
-For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlbeskeden. Brugere af skærmlæser vil da høre “Fejl: Datoen for udløb af dit pas bør være i fortiden.”
+For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da høre “Fejl: Datoen for udløb af dit pas bør være i fortiden.”
 Teksten er skjult i et `<span>` element med klassen `sr-only`.
 
-Fejbeskeden vises også i <a href="kode/komponenter/fejlopsummering/">fejlopsummeringen</a> øverst på siden.
+Fejlmeddelelsen vises også i <a href="kode/komponenter/fejlopsummering/">fejlopsummeringen</a> øverst på siden.
 
 ## Varianter
 
