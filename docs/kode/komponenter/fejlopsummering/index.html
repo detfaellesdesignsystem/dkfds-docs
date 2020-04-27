@@ -788,7 +788,7 @@
     
       
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -1558,7 +1558,7 @@
     
       
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
 
   
@@ -1578,6 +1578,20 @@
 
     
 
+    
+    <ul class="sidenav-sub_list" role="menu">
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#placering"  role="menuitem">Placering</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -2554,7 +2568,7 @@
     
       
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
 
   
@@ -2574,6 +2588,20 @@
 
     
 
+    
+    <ul class="sidenav-sub_list" role="menu">
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#placering"  role="menuitem">Placering</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -3180,6 +3208,143 @@
 <p>Indsættes over formularen, men under <code class="highlighter-rouge">h1</code> overskriften.</p>
 
 <p>Hver fejl tilføjes til <code class="highlighter-rouge">&lt;ul&gt;</code> listen med et anchor link til feltet der er omtalt således at fokus flyttes til pågældende felt.</p>
+
+<h4 id="placering">Placering</h4>
+
+<div class="component-preview component-preview-code  component-code-error-summary-page" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-summary-page/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"col-12 col-lg-9"</span> <span class="na">id=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Hov, der er problemer<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"alert-text nobullet-list"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#fornavn"</span><span class="nt">&gt;</span>Indtast
+                        fornavn<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#efternavn"</span><span class="nt">&gt;</span>Indtast
+                        efternavn<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#gade-vej"</span><span class="nt">&gt;</span>Indtast
+                        gade/vej<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#husnummer"</span><span class="nt">&gt;</span>Indtast
+                        husnummer<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#postnummer"</span><span class="nt">&gt;</span>Indtast
+                        postnummer<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#by"</span><span class="nt">&gt;</span>Indtast bynavn<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"oplysninger-om-dig"</span><span class="nt">&gt;</span>Oplysninger om dig<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;form&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fornavn"</span><span class="nt">&gt;</span>
+                Fornavn
+            <span class="nt">&lt;/label&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"fornavn-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast fornavn
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"fornavn"</span> <span class="na">value=</span><span class="s">""</span>
+                <span class="na">name=</span><span class="s">"Input til fornavn"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
+                <span class="na">aria-describedby=</span><span class="s">" fornavn-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"efternavn"</span><span class="nt">&gt;</span>
+                Efternavn
+            <span class="nt">&lt;/label&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"efternavn-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast efternavn
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"efternavn"</span> <span class="na">value=</span><span class="s">""</span>
+                <span class="na">name=</span><span class="s">"Input til efternavn"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
+                <span class="na">aria-describedby=</span><span class="s">" efternavn-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"gade-vej"</span><span class="nt">&gt;</span>
+                Gade/vej
+            <span class="nt">&lt;/label&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"gade-vej-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast gade/vej
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"gade-vej"</span> <span class="na">value=</span><span class="s">""</span>
+                <span class="na">name=</span><span class="s">"Input til gade/vej"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
+                <span class="na">aria-describedby=</span><span class="s">" gade-vej-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"husnummer"</span><span class="nt">&gt;</span>
+                Husnummer
+            <span class="nt">&lt;/label&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"husnummer-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast husnummer
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xxs"</span> <span class="na">id=</span><span class="s">"husnummer"</span>
+                <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"Input til husnummer"</span> <span class="na">type=</span><span class="s">"text"</span>
+                <span class="na">aria-invalid=</span><span class="s">"true"</span> <span class="na">aria-describedby=</span><span class="s">" husnummer-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"etage"</span><span class="nt">&gt;</span>
+                Etage<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"weight-normal"</span><span class="nt">&gt;</span> (frivilligt)<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xxs"</span> <span class="na">id=</span><span class="s">"etage"</span> <span class="na">value=</span><span class="s">""</span>
+                <span class="na">name=</span><span class="s">"Input til etage"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"side"</span><span class="nt">&gt;</span>
+                Side<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"weight-normal"</span><span class="nt">&gt;</span> (frivilligt)<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"side-hint"</span><span class="nt">&gt;</span>
+                Fx: TV, 2. dør
+            <span class="nt">&lt;/span&gt;</span>
+
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xs"</span> <span class="na">id=</span><span class="s">"side"</span> <span class="na">value=</span><span class="s">""</span>
+                <span class="na">name=</span><span class="s">"Input til side"</span> <span class="na">type=</span><span class="s">"text"</span>
+                <span class="na">aria-describedby=</span><span class="s">"side-hint "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"postnummer"</span><span class="nt">&gt;</span>
+                Postnummer
+            <span class="nt">&lt;/label&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"postnummer-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast postnummer - fx
+                4000
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xxs"</span> <span class="na">id=</span><span class="s">"postnummer"</span>
+                <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"Input til postnummer"</span> <span class="na">type=</span><span class="s">"text"</span>
+                <span class="na">aria-invalid=</span><span class="s">"true"</span> <span class="na">aria-describedby=</span><span class="s">" postnummer-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"by"</span><span class="nt">&gt;</span>
+                By
+            <span class="nt">&lt;/label&gt;</span>
+
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"by-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast bynavn
+            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"by"</span> <span class="na">value=</span><span class="s">""</span>
+                <span class="na">name=</span><span class="s">"Input til by"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
+                <span class="na">aria-describedby=</span><span class="s">" by-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/main&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
 
       </section>
     </main>
