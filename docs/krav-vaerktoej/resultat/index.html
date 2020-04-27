@@ -91,7 +91,7 @@
     </div>
     <!-- Slut: Portal header -->
 
-    <div class="solution-header ">
+    <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
                 <a href="/komigang/krav/" title="Gå tilbage til start">
@@ -132,6 +132,13 @@
 
 <main class="page-container container" id="main-content">
   
+  <div class="alert alert-error d-none" id="error-summary" role="alert">
+    <div class="alert-body">
+      <p class="alert-heading">Hov, der er problemer</p>
+      <ul class="alert-text nobullet-list">
+      </ul>
+    </div>
+  </div>
   <div id="error-container" class="d-none">
 <h1>Fælles aftalte krav som din løsning skal efterleve</h1>
 <div class="alert alert-error">
@@ -270,11 +277,19 @@
                 </h1>
             </div>
             <div class="modal__content">
+                <div class="alert alert-error d-none" id="modal-print-error-summary" role="alert">
+                    <div class="alert-body">
+                        <p class="alert-heading">Hov, der er problemer</p>
+                        <ul class="alert-text nobullet-list">
+                            <li><a class="function-link" href="#solution-name-input">Indtast løsningens navn</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="form-group">
                     <label class="form-label sr-only" for="solution-name-input" id="form-label-solution-name">
                         Løsningens navn
                     </label>
-                     <span class="form-error-message d-none" id="solution-name-error" role="alert">
+                     <span class="form-error-message d-none" id="solution-name-error">
                             Indtast løsningens navn
                         </span>
                     <input class="form-input" required="" id="solution-name-input" value="" name="solution-name-input" type="text" />
