@@ -99,7 +99,8 @@ document.addEventListener("DOMContentLoaded", function(){
             if(modal.getAttribute('id') == "modal-print") {
                 document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
                 document.getElementById('solution-name-error').classList.add('d-none');
-                document.getElementById('solution-name-input').removeAttribute('aria-describedby')
+                document.getElementById('solution-name-input').removeAttribute('aria-describedby');
+                document.getElementById('modal-print-error-summary').classList.add('d-none')
             }
         }
     });
@@ -194,7 +195,8 @@ let printResultHandler = function(){
                 document.getElementById('print-title').innerText = 'Fælles aftalte krav som "' + value + '" skal efterleve';
                 document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
-                document.getElementById('solution-name-error').classList.add('d-none');
+                document.getElementById('solution-name-error').classList.add('d-none')
+                document.getElementById('modal-print-error-summary').classList.add('d-none');
                 document.getElementById('solution-name-input').removeAttribute('aria-describedby');
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.add('d-print-none');
                 document.getElementById('print-title').classList.add('d-print-block');
@@ -203,6 +205,7 @@ let printResultHandler = function(){
                 // error
                 document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.add('form-error');
                 document.getElementById('solution-name-error').classList.remove('d-none');
+                document.getElementById('modal-print-error-summary').classList.remove('d-none');
                 document.getElementById('solution-name-input').setAttribute('aria-describedby', document.getElementById('solution-name-error').getAttribute('id'))
             }
         });
@@ -331,15 +334,20 @@ let saveQuestionnaire = function(){
 let validate = function(){
     let radio = document.querySelector('input[name="radio"]:checked');
     if(radio === null){
+        let errorText = "Vælg venligst Ja eller Nej";
         document.getElementsByClassName('form-group')[0].classList.add('form-error');
-        document.getElementById('error-message').innerText = "Vælg venligst Ja eller Nej";
+        document.getElementById('error-message').innerText = errorText;
         document.getElementById('error-message').classList.remove('d-none');
+        document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = '<li><a href="#radio-yes">'+errorText+'</a></li>';
+        document.getElementById('error-summary').classList.remove('d-none');
         return false;
     }
 
     document.getElementsByClassName('form-group')[0].classList.remove('form-error');
     document.getElementById('error-message').classList.add('d-none');
     document.getElementById('error-message').innerText = "";
+    document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = "";
+    document.getElementById('error-summary').classList.add('d-none');
     return true;
 };
 

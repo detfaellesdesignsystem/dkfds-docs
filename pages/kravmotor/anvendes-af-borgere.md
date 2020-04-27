@@ -9,7 +9,7 @@ backlink: true
 <form method="post" action="." id="form-Q200">
     <div class="form-group">
         <fieldset>
-            <span class="form-error-message d-none" id="error-message" role="alert"></span>
+            <span class="form-error-message d-none" id="error-message"></span>
             <ul class="nobullet-list">
                 <li>
                     <input id="radio-yes" type="radio" name="radio" value="1" class="form-radio radio-large" />

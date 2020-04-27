@@ -3,7 +3,8 @@
         "name": "error",
         "classes": "alert-error",
         "title": "Hov, der er problemer",
-        "content": "<ul class=\"nobullet-list\"><li><a class=\"function-link\" href=\"#date-field-year\">Datoen for udløbsdato på dit pas bør inkludere årstal</a></li><li><a class=\"function-link\" href=\"#zipcode-field\">Indtast postnummer - fx 4000</a></li></ul>",
-        "role": "alert"
+        "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#date-field-year\">Datoen for udløbsdato på dit pas bør inkludere årstal</a></li><li><a class=\"function-link\" href=\"#zipcode-field\">Indtast postnummer - fx 4000</a></li></ul>",
+        "role": "alert",
+        "contentContainer": false
       }
 }
