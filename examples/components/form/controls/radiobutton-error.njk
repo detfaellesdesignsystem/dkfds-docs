@@ -2,7 +2,7 @@
 <div class="form-group form-error">
     <fieldset aria-describedby="example-radiobutton-error">
         <legend class="h5">Radioknap med fejl</legend>
-        <span class="form-error-message" id="example-radiobutton-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlbesked</span>
+        <span class="form-error-message" id="example-radiobutton-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlmeddelelse</span>
         <ul class="nobullet-list">
             {% for item in radiobuttons_error_example.items %}<li>{{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.attr, item.inputClasses, item.inputAttrs, item.formClasses, item.srOnly) }}</li>{% endfor %}
         </ul>

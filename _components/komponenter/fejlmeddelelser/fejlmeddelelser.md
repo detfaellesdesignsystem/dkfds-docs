@@ -8,6 +8,7 @@ subcategory: Komponenter
 description: 
 tags: 
 - "fejlbesked"
+- "fejlmeddelelse"
 lead: 
 anchor: true
 subnav:

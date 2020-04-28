@@ -1,5 +1,5 @@
 ---
-title: "Fejlbesked"
+title: "Fejlmeddelelse"
 parent: Checkbox
 order: 30
 component: checkbox-error

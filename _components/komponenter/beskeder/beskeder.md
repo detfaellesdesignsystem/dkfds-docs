@@ -17,6 +17,8 @@ subnav:
 component: alerts
 componentTitle: "Eksempel på beskeder"
 componentCode: "/kode/komponenter/beskeder/"
+tags:
+- "fejlbesked"
 ---
 
 {:.h3 #retningslinjer}

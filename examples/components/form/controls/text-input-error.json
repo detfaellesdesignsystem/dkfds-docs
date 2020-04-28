@@ -4,6 +4,6 @@
     "label": "Inputfelt med fejl",
     "name": "form-error",
     "hint": "Fx 12345678",
-    "error": "Hjælpsom fejlbesked"
+    "error": "Hjælpsom fejlmeddelelse"
   }
 }

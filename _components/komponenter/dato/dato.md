@@ -11,8 +11,8 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
 pikaday: true
 anchor: true
 subnav:
-- text: Fejlbesked
-  href: '#fejlbesked'
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
 - text: Datovælger
   href: '#datovælger'
 component: date-input

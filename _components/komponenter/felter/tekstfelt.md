@@ -7,6 +7,7 @@ tags:
 - tekstfelt
 - input
 - fejlbesked
+- fejlmeddelelse
 - fejl på felt
 - hjælpetekst
 - hjælp på felt
@@ -61,11 +62,11 @@ Når brugeren skal vælge ud fra et prædefineret sæt af værdier, og der er be
 
 Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.
 
-Vis kun fejlbeskeder, når brugeren har indtastet en ugyldig værdi.
+Vis kun fejlmeddelelser, når brugeren har indtastet en ugyldig værdi.
 
-Fejlbeskeder skal være meningsfulde og hjælpsomme. 
+Fejlmeddelelser skal være meningsfulde og hjælpsomme. 
 
-Placér fejlbeskeder mellem label og feltet, som bliver markeret med rødt.
+Placér fejlmeddelelser mellem label og feltet, som bliver markeret med rødt.
 
 Felter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.
 
