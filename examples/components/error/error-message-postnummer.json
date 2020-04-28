@@ -1,0 +1,8 @@
+{
+  "textinput_example":{
+    "id": "example-zipcode",
+    "label": "Postnummer",
+    "name": "form-error",
+    "error": "Indtast et postnummer med fire tal"
+  }
+}

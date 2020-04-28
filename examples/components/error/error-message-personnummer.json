@@ -1,0 +1,9 @@
+{
+  "textinput_example":{
+    "id": "example-cpr",
+    "label": "Personnummer",
+    "name": "form-error",
+    "hint": "Fx: 22091908-1654 (ddmmåååå-nnnn)",
+    "error": "Indtast dit personummer i det korrekte format"
+  }
+}

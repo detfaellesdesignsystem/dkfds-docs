@@ -1,9 +1,9 @@
 {
   "textinput_example":{
-    "id": "error-example-field",
-    "label": "Inputfelt med fejl",
-    "name": "error-example-field",
-    "hint": "Fx 12345678",
-    "error": "Hjælpsom fejlmeddelelse"
+    "id": "form-error",
+    "label": "Hvad hedder dit kursus?",
+    "name": "form-error",
+    "hint": "Fx: Skriv godt",
+    "error": "Giv dit kursus et navn"
   }
 }

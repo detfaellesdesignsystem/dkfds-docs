@@ -1,0 +1,8 @@
+{
+  "textinput_example":{
+    "id": "example-name",
+    "label": "Hvad er dit fulde navn?",
+    "name": "form-error",
+    "error": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Christian Emil Vestergaard Christiansen"
+  }
+}

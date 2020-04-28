@@ -1,5 +1,7 @@
 ---
 title: Tjekboks
+headingLevel: h3
+headingClass: h4
 parent: Fejlmeddelelser
 order: 10
 component: checkbox-error

@@ -1,7 +1,7 @@
 ---
 permalink: /kode/komponenter/fil-upload/
 parentlink: /kode/komponenter/
-title: Fil upload
+title: Vedhæft fil (Upload)
 layout: styleguide
 type: component
 category: Kode_category
