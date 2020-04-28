@@ -1604,7 +1604,7 @@
 
 
 <li class=" " role="none">
-<a href="#fejlbesked"  role="menuitem">Fejlbesked</a>
+<a href="#felt-med-fejlmeddelelse"  role="menuitem">Felt med fejlmeddelelse</a>
 </li>
 
     
@@ -1615,7 +1615,7 @@
 
 
 <li class=" " role="none">
-<a href="#frivilligt-felt"  role="menuitem">Frivilligt felt</a>
+<a href="#felt-med-frivillig-indtastning"  role="menuitem">Felt med frivillig indtastning</a>
 </li>
 
     
@@ -1626,7 +1626,29 @@
 
 
 <li class=" " role="none">
-<a href="#hjaelpetekst"  role="menuitem">Hjælpetekst</a>
+<a href="#felt-med-hjaelpetekst"  role="menuitem">Felt med hjælpetekst</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#felt-der-er-deaktiveret"  role="menuitem">Felt, der er deaktiveret</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#read-only-felt"  role="menuitem">Read-only felt</a>
 </li>
 
     
@@ -1638,28 +1660,6 @@
 
 <li class=" " role="none">
 <a href="#feltbredde"  role="menuitem">Feltbredde</a>
-</li>
-
-    
-
-  
-    
-      
-
-
-<li class=" " role="none">
-<a href="#deaktiveret"  role="menuitem">Deaktiveret</a>
-</li>
-
-    
-
-  
-    
-      
-
-
-<li class=" " role="none">
-<a href="#readonly"  role="menuitem">Readonly</a>
 </li>
 
     
@@ -2669,7 +2669,7 @@
 
 
 <li class=" " role="none">
-<a href="#fejlbesked"  role="menuitem">Fejlbesked</a>
+<a href="#felt-med-fejlmeddelelse"  role="menuitem">Felt med fejlmeddelelse</a>
 </li>
 
     
@@ -2680,7 +2680,7 @@
 
 
 <li class=" " role="none">
-<a href="#frivilligt-felt"  role="menuitem">Frivilligt felt</a>
+<a href="#felt-med-frivillig-indtastning"  role="menuitem">Felt med frivillig indtastning</a>
 </li>
 
     
@@ -2691,7 +2691,29 @@
 
 
 <li class=" " role="none">
-<a href="#hjaelpetekst"  role="menuitem">Hjælpetekst</a>
+<a href="#felt-med-hjaelpetekst"  role="menuitem">Felt med hjælpetekst</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#felt-der-er-deaktiveret"  role="menuitem">Felt, der er deaktiveret</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#read-only-felt"  role="menuitem">Read-only felt</a>
 </li>
 
     
@@ -2703,28 +2725,6 @@
 
 <li class=" " role="none">
 <a href="#feltbredde"  role="menuitem">Feltbredde</a>
-</li>
-
-    
-
-  
-    
-      
-
-
-<li class=" " role="none">
-<a href="#deaktiveret"  role="menuitem">Deaktiveret</a>
-</li>
-
-    
-
-  
-    
-      
-
-
-<li class=" " role="none">
-<a href="#readonly"  role="menuitem">Readonly</a>
 </li>
 
     
@@ -3309,7 +3309,7 @@
 
 <h2>Varianter</h2>
 
-<h3 id="fejlbesked">Fejlbesked</h3>
+<h3 id="felt-med-fejlmeddelelse">Felt med fejlmeddelelse</h3>
 
 <div class="component-preview component-preview-code  component-code-text-input-error" aria-label="">
     
@@ -3350,7 +3350,7 @@
   <li><code class="highlighter-rouge">aria-describedby</code></li>
 </ul>
 
-<h3 id="frivilligt-felt">Frivilligt felt</h3>
+<h3 id="felt-med-frivillig-indtastning">Felt med frivillig indtastning</h3>
 
 <div class="component-preview component-preview-code  component-code-text-input-optional" aria-label="">
     
@@ -3378,7 +3378,7 @@
 
 <p>De fleste felter i en selvbetjeningsløsning er påkrævet, så for at undgå mange af de standard røde stjerner ved hvert felt har vi i stedet valgt at skrive (frivilligt) ved de felter, som ikke er påkrævede.</p>
 
-<h3 id="hjaelpetekst">Hjælpetekst</h3>
+<h3 id="felt-med-hjaelpetekst">Felt med hjælpetekst</h3>
 
 <div class="component-preview component-preview-code  component-code-text-input-helptext" aria-label="">
     
@@ -3401,6 +3401,56 @@
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">value=</span><span class="s">""</span>
         <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span>
         <span class="na">aria-describedby=</span><span class="s">"input-type-text-hint "</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="felt-der-er-deaktiveret">Felt, der er deaktiveret</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-disabled" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-disabled/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-disabled"</span><span class="nt">&gt;</span>
+        Inputfelt som er låst
+    <span class="nt">&lt;/label&gt;</span>
+
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-disabled"</span> <span class="na">value=</span><span class="s">""</span>
+        <span class="na">name=</span><span class="s">"input-disabled"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="read-only-felt">Read-only felt</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-readonly" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-readonly/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-readonly"</span><span class="nt">&gt;</span>
+        Inputfelt som er readonly
+    <span class="nt">&lt;/label&gt;</span>
+
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-readonly"</span>
+        <span class="na">value=</span><span class="s">"012345-6789"</span> <span class="na">name=</span><span class="s">"input-readonly"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">readonly</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
@@ -3432,57 +3482,6 @@
 </ul>
 
 <p>For at tilføje flere input bredder, der er styret af tegn, skal der tilføjes klassen <code class="highlighter-rouge">input-char-X</code>, hvor det nye tal skal erstattes med X.</p>
-
-<h3 id="deaktiveret">Deaktiveret</h3>
-
-<div class="component-preview component-preview-code  component-code-text-input-disabled" aria-label="">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-input-disabled/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-disabled"</span><span class="nt">&gt;</span>
-        Inputfelt som er låst
-    <span class="nt">&lt;/label&gt;</span>
-
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-disabled"</span> <span class="na">value=</span><span class="s">""</span>
-        <span class="na">name=</span><span class="s">"input-disabled"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-
-    </div>
-</div>
-
-<h3 id="readonly">Readonly</h3>
-
-<div class="component-preview component-preview-code  component-code-text-input-readonly" aria-label="">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-input-readonly/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-readonly"</span><span class="nt">&gt;</span>
-        Inputfelt som er readonly
-    <span class="nt">&lt;/label&gt;</span>
-
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"input-readonly"</span>
-        <span class="na">value=</span><span class="s">"012345-6789"</span> <span class="na">name=</span><span class="s">"input-readonly"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">readonly</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-
-    </div>
-</div>
-
 
       </section>
     </main>

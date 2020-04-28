@@ -834,7 +834,7 @@
 
 
 <li class=" " role="none">
-<a href="#fejlbesked"  role="menuitem">Fejlbesked</a>
+<a href="#felt-med-fejlmeddelelse"  role="menuitem">Felt med fejlmeddelelse</a>
 </li>
 
     
@@ -845,7 +845,7 @@
 
 
 <li class=" " role="none">
-<a href="#frivilligt-felt"  role="menuitem">Frivilligt felt</a>
+<a href="#felt-med-frivillig-indtastning"  role="menuitem">Felt med frivillig indtastning</a>
 </li>
 
     
@@ -856,7 +856,29 @@
 
 
 <li class=" " role="none">
-<a href="#hjælpetekst"  role="menuitem">Hjælpetekst</a>
+<a href="#felt-med-hjælpetekst"  role="menuitem">Felt med hjælpetekst</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#felt-der-er-deaktiveret"  role="menuitem">Felt, der er deaktiveret</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#read-only-felt"  role="menuitem">Read-only felt</a>
 </li>
 
     
@@ -868,28 +890,6 @@
 
 <li class=" " role="none">
 <a href="#feltbredde"  role="menuitem">Feltbredde</a>
-</li>
-
-    
-
-  
-    
-      
-
-
-<li class=" " role="none">
-<a href="#deaktiveret"  role="menuitem">Deaktiveret</a>
-</li>
-
-    
-
-  
-    
-      
-
-
-<li class=" " role="none">
-<a href="#readonly"  role="menuitem">Readonly</a>
 </li>
 
     
@@ -2033,7 +2033,7 @@
 
 
 <li class=" " role="none">
-<a href="#fejlbesked"  role="menuitem">Fejlbesked</a>
+<a href="#felt-med-fejlmeddelelse"  role="menuitem">Felt med fejlmeddelelse</a>
 </li>
 
     
@@ -2044,7 +2044,7 @@
 
 
 <li class=" " role="none">
-<a href="#frivilligt-felt"  role="menuitem">Frivilligt felt</a>
+<a href="#felt-med-frivillig-indtastning"  role="menuitem">Felt med frivillig indtastning</a>
 </li>
 
     
@@ -2055,7 +2055,29 @@
 
 
 <li class=" " role="none">
-<a href="#hjælpetekst"  role="menuitem">Hjælpetekst</a>
+<a href="#felt-med-hjælpetekst"  role="menuitem">Felt med hjælpetekst</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#felt-der-er-deaktiveret"  role="menuitem">Felt, der er deaktiveret</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#read-only-felt"  role="menuitem">Read-only felt</a>
 </li>
 
     
@@ -2067,28 +2089,6 @@
 
 <li class=" " role="none">
 <a href="#feltbredde"  role="menuitem">Feltbredde</a>
-</li>
-
-    
-
-  
-    
-      
-
-
-<li class=" " role="none">
-<a href="#deaktiveret"  role="menuitem">Deaktiveret</a>
-</li>
-
-    
-
-  
-    
-      
-
-
-<li class=" " role="none">
-<a href="#readonly"  role="menuitem">Readonly</a>
 </li>
 
     
@@ -2550,7 +2550,7 @@
 <p>Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.</p>
 
 <section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-fejl">
-  <h2 id="fejlbesked">Fejlbesked</h2>
+  <h2 id="felt-med-fejlmeddelelse">Felt med fejlmeddelelse</h2>
   
   
   
@@ -2586,7 +2586,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-helptext">
-  <h2 id="hjælpetekst">Hjælpetekst</h2>
+  <h2 id="felt-med-hjælpetekst">Felt med hjælpetekst</h2>
   
   
   
@@ -2620,7 +2620,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-frivilligt">
-  <h2 id="frivilligt-felt">Frivilligt felt</h2>
+  <h2 id="felt-med-frivillig-indtastning">Felt med frivillig indtastning</h2>
   
   
   
@@ -2640,6 +2640,68 @@
     </label>
 
     <input class="form-input " id="input-optional" value="" name="input-optional" type="text" />
+</div>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-disabled">
+  <h2 id="felt-der-er-deaktiveret">Felt, der er deaktiveret</h2>
+  
+  
+  
+<div class="component-preview  component-preview-text-input-disabled" aria-label="Eksempel på låst tekstfelt">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-disabled/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="form-group">
+    <label class="form-label " for="input-disabled">
+        Inputfelt som er låst
+    </label>
+
+    <input class="form-input " required="" id="input-disabled" value="" name="input-disabled" type="text" disabled="disabled" />
+</div>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-readonly">
+  <h2 id="read-only-felt">Read-only felt</h2>
+  
+  
+  
+<div class="component-preview  component-preview-text-input-readonly" aria-label="Eksempel på readonly tekstfelt">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-readonly/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="form-group">
+    <label class="form-label " for="input-readonly">
+        Inputfelt som er readonly
+    </label>
+
+    <input class="form-input " required="" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
 </div>
     </div>
     
@@ -2734,68 +2796,6 @@
     </div>
 
 </fieldset>
-    </div>
-    
-</div>
-
-
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-disabled">
-  <h2 id="deaktiveret">Deaktiveret</h2>
-  
-  
-  
-<div class="component-preview  component-preview-text-input-disabled" aria-label="Eksempel på låst tekstfelt">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-input-disabled/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <div class="form-group">
-    <label class="form-label " for="input-disabled">
-        Inputfelt som er låst
-    </label>
-
-    <input class="form-input " required="" id="input-disabled" value="" name="input-disabled" type="text" disabled="disabled" />
-</div>
-    </div>
-    
-</div>
-
-
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/felter/tekstfelt-readonly">
-  <h2 id="readonly">Readonly</h2>
-  
-  
-  
-<div class="component-preview  component-preview-text-input-readonly" aria-label="Eksempel på readonly tekstfelt">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-input-readonly/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <div class="form-group">
-    <label class="form-label " for="input-readonly">
-        Inputfelt som er readonly
-    </label>
-
-    <input class="form-input " required="" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
-</div>
     </div>
     
 </div>
