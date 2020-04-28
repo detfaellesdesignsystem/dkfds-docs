@@ -10,18 +10,18 @@ subcategory: Kode
 description: "Dokumentation på implementering af felter."
 anchor: true
 subnav:
-- text: Fejlbesked
-  href: '#fejlbesked'
-- text: Frivilligt felt
-  href: '#frivilligt-felt'
-- text: Hjælpetekst
-  href: '#hjaelpetekst'
+- text: Felt med fejlmeddelelse
+  href: "#felt-med-fejlmeddelelse"
+- text: Felt med frivillig indtastning
+  href: "#felt-med-frivillig-indtastning"
+- text: Felt med hjælpetekst
+  href: "#felt-med-hjaelpetekst"
+- text: Felt, der er deaktiveret
+  href: "#felt-der-er-deaktiveret"
+- text: Read-only felt
+  href: "#read-only-felt"
 - text: Feltbredde
-  href: '#feltbredde'
-- text: Deaktiveret
-  href: '#deaktiveret'
-- text: Readonly
-  href: '#readonly'
+  href: "#feltbredde"
 ---
 
 {% include code/preview-box.html component="text-input" title="Eksempel på tekstfelt" %}
@@ -40,8 +40,8 @@ subnav:
 
 ## Varianter
 
-{:#fejlbesked}
-### Fejlbesked
+{:#felt-med-fejlmeddelelse}
+### Felt med fejlmeddelelse
 
 {% include code/syntax.html component="text-input-error" link="true" %}
 
@@ -53,17 +53,27 @@ Sørg for at rette i de nødvendige attributter, så værdierne er unikke og ref
 - `aria-labelledby`
 - `aria-describedby`
 
-{:#frivilligt-felt}
-### Frivilligt felt
+{:#felt-med-frivillig-indtastning}
+### Felt med frivillig indtastning
 
 {% include code/syntax.html component="text-input-optional" link="true" %}
 
 De fleste felter i en selvbetjeningsløsning er påkrævet, så for at undgå mange af de standard røde stjerner ved hvert felt har vi i stedet valgt at skrive (frivilligt) ved de felter, som ikke er påkrævede.
 
-{:#hjaelpetekst}
-### Hjælpetekst
+{:#felt-med-hjaelpetekst}
+### Felt med hjælpetekst
 
 {% include code/syntax.html component="text-input-helptext" link="true" %}
+
+{:#felt-der-er-deaktiveret}
+### Felt, der er deaktiveret
+
+{% include code/syntax.html component="text-input-disabled" link="true" %}
+
+{:#read-only-felt}
+### Read-only felt
+
+{% include code/syntax.html component="text-input-readonly" link="true" %}
 
 {:#feltbredde}
 ### Feltbredde
@@ -87,13 +97,3 @@ For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedens
 - `input-char-27` har en bredde der passer til 27 tegn
 
 For at tilføje flere input bredder, der er styret af tegn, skal der tilføjes klassen `input-char-X`, hvor det nye tal skal erstattes med X.
-
-{:#deaktiveret}
-### Deaktiveret
-
-{% include code/syntax.html component="text-input-disabled" link="true" %}
-
-{:#readonly}
-### Readonly
-
-{% include code/syntax.html component="text-input-readonly" link="true" %}

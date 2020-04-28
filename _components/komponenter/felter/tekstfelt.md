@@ -23,18 +23,18 @@ description: Felt til indtastning af information i form af bogstaver, tal og en 
 subcategory: Komponenter
 anchor: true
 subnav:
-- text: Fejlbesked
-  href: "#fejlbesked"
-- text: Frivilligt felt
-  href: "#frivilligt-felt"
-- text: Hjælpetekst
-  href: "#hjælpetekst"
+- text: Felt med fejlmeddelelse
+  href: "#felt-med-fejlmeddelelse"
+- text: Felt med frivillig indtastning
+  href: "#felt-med-frivillig-indtastning"
+- text: Felt med hjælpetekst
+  href: "#felt-med-hjælpetekst"
+- text: Felt, der er deaktiveret
+  href: "#felt-der-er-deaktiveret"
+- text: Read-only felt
+  href: "#read-only-felt"
 - text: Feltbredde
   href: "#feltbredde"
-- text: Deaktiveret
-  href: "#deaktiveret"
-- text: Readonly
-  href: "#readonly"
 component: text-input
 componentTitle: Eksempel på tekst felter
 componentCode: "/kode/komponenter/felter/"
