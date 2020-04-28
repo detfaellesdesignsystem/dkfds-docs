@@ -11,20 +11,23 @@ lead:
 anchor: true
 subnav:
 - text: Placering
-  href: '#placering'
----
-<p class="font-lead">Brug komponenten øverst på siden til at opsummere eventuelle fejl, som brugeren skal rette inden denne kan komme videre.</p>
+  href: "#placering"
 
-Når en bruger laver en fejl eller mangler at udfylde noget, skal du vise både en fejlopsummering øverst på siden, der opsummerer de <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>, de måtte være på siden.
+---
+<p class="font-lead">Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.</p>
+
+Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.
 
 {% include code/preview-box.html component="error-summary" title="Eksempel på fejlopsummering" link="true" code="/kode/komponenter/fejlopsummering/" %}
 
 {:.h3 #retningslinjer}
+
 ## Anvendes til
 
 Vis en fejlopsummering når der er fejl i noget af det brugeren har indtastet, også hvis der kun er én fejl på siden.
 
 {:.h3}
+
 ## Vejledning
 
 Der skal være links fra fejlene i filopsummeringen til det sted på siden, hvor fejlen er. Når der trykkes på linket i opsummering, skal fokus flyttes til det felt fejlmeddelelsen knytter sig til.
@@ -40,7 +43,9 @@ Hvis du ikke ved, hvilket felt der indeholder en fejl, skal du linke til det fø
 For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste ved hjælp af en radioknap eller en tjekboks, skal du linke til den første radioknap eller tjekboks på listen.
 
 {:#placering}
+
 ## Placering
+
 Sæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumme eller et tilbage-link, skal du placere den under disse, men over titlen (den øverste overskrift) på siden.
 
 {% include code/preview-box.html component="error-summary-page" title="Eksempel på fejlopsummering" link="true" %}
