@@ -4,6 +4,6 @@
     "label": "Personnummer",
     "name": "form-error",
     "hint": "Fx: 22091908-1654 (ddmmåååå-nnnn)",
-    "error": "Indtast dit personummer i det korrekte format"
+    "error": "Indtast dit personnummer i det korrekte format"
   }
 }
