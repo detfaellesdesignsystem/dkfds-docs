@@ -30,8 +30,8 @@ subnav:
   href: "#felt-med-frivillig-indtastning"
 - text: Felt med hjælpetekst
   href: "#felt-med-hjælpetekst"
-- text: Felt, der er deaktiveret
-  href: "#felt-der-er-deaktiveret"
+- text: Deaktiveret felt
+  href: "#deaktiveret-felt"
 - text: Read-only felt
   href: "#read-only-felt"
 - text: Feltbredde

@@ -1,5 +1,5 @@
 ---
-title: Felt, der er deaktiveret
+title: Deaktiveret felt
 parent: Text-field
 order: 60
 component: text-input-disabled

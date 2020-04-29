@@ -16,8 +16,8 @@ subnav:
   href: "#felt-med-frivillig-indtastning"
 - text: Felt med hjælpetekst
   href: "#felt-med-hjaelpetekst"
-- text: Felt, der er deaktiveret
-  href: "#felt-der-er-deaktiveret"
+- text: Deaktiveret felt
+  href: "#deaktiveret-felt"
 - text: Read-only felt
   href: "#read-only-felt"
 - text: Feltbredde
@@ -65,8 +65,8 @@ De fleste felter i en selvbetjeningsløsning er påkrævet, så for at undgå ma
 
 {% include code/syntax.html component="text-input-helptext" link="true" %}
 
-{:#felt-der-er-deaktiveret}
-### Felt, der er deaktiveret
+{:#deaktiveret-felt}
+### Deaktiveret felt
 
 {% include code/syntax.html component="text-input-disabled" link="true" %}
 
