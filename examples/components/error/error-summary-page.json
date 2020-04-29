@@ -1,7 +1,7 @@
 {
   "alert_example": {
         "name": "error",
-        "classes": "alert-error",
+        "classes": "alert-error mt-0 mb-8",
         "title": "Der er problemer",
         "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#fornavn\">Indtast fornavn</a></li><li><a class=\"function-link\" href=\"#efternavn\">Indtast efternavn</a></li><li><a class=\"function-link\" href=\"#gade-vej\">Indtast gade/vej</a></li><li><a class=\"function-link\" href=\"#husnummer\">Indtast husnummer</a></li><li><a class=\"function-link\" href=\"#postnummer\">Indtast postnummer</a></li><li><a class=\"function-link\" href=\"#by\">Indtast bynavn</a></li></ul>",
         "role": "alert",

@@ -338,7 +338,7 @@ let validate = function(){
         document.getElementsByClassName('form-group')[0].classList.add('form-error');
         document.getElementById('error-message').innerText = errorText;
         document.getElementById('error-message').classList.remove('d-none');
-        document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = '<li><a href="#radio-yes">'+errorText+'</a></li>';
+        document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = '<li><a href="#radio-yes" class="function-link">'+errorText+'</a></li>';
         document.getElementById('error-summary').classList.remove('d-none');
         return false;
     }
