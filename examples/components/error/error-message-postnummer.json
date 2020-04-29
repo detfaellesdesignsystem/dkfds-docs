@@ -3,6 +3,8 @@
     "id": "example-zipcode",
     "label": "Postnummer",
     "name": "form-error",
+    "class": "input-char-4",
+    "value": "RRYY",
     "error": "Indtast et postnummer med fire tal"
   }
 }
