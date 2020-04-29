@@ -17,7 +17,7 @@ subnav:
   href: "#datoangivelse"
 ---
 
-{% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelser" %}
+{% include code/preview-box.html component="error-message-name" title="Eksempel på fejlmeddelelser" %}
 
 ## Eksempler og retningslinjer
 
@@ -40,13 +40,15 @@ Fejlmeddelelsen vises også i <a href="kode/komponenter/fejlopsummering/">fejlop
 
 {:#tjekboks}
 ### Tjekboks
-{% include code/syntax.html component="checkbox-error" link="true" %}
+
+{% include code/syntax.html component="error-message-checkbox" link="true" %}
 
 {:#radioknap}
 ### Radioknap
-{% include code/syntax.html component="radiobutton-error" link="true" %}
+
+{% include code/syntax.html component="error-message-radio" link="true" %}
 
 {:#datoangivelse}
 ### Datoangivelse
 
-{% include code/syntax.html component="date-input-error" link="true" %}
+{% include code/syntax.html component="error-message-date" link="true" %}
