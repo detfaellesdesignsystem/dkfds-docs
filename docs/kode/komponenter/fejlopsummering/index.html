@@ -3227,117 +3227,112 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Der er problemer<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"alert-text nobullet-list"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#fornavn"</span><span class="nt">&gt;</span>Indtast
-                        fornavn<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#efternavn"</span><span class="nt">&gt;</span>Indtast
-                        efternavn<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#gade-vej"</span><span class="nt">&gt;</span>Indtast
-                        gade/vej<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#husnummer"</span><span class="nt">&gt;</span>Indtast
-                        husnummer<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#postnummer"</span><span class="nt">&gt;</span>Indtast
-                        postnummer<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#by"</span><span class="nt">&gt;</span>Indtast bynavn<span class="nt">&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#example-name"</span><span class="nt">&gt;</span>Hvad er
+                        dit fulde navn?<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#nationalitet1"</span><span class="nt">&gt;</span>Hvad er
+                        din nationalitet?<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"function-link"</span> <span class="na">href=</span><span class="s">"#date-day"</span><span class="nt">&gt;</span>ornår blev
+                        dit pas udstedt?<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
             <span class="nt">&lt;/ul&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"oplysninger-om-dig"</span><span class="nt">&gt;</span>Oplysninger om dig<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;form&gt;</span>
+
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"fornavn"</span><span class="nt">&gt;</span>
-                Fornavn
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"example-name"</span><span class="nt">&gt;</span>
+                Hvad er dit fulde navn?
             <span class="nt">&lt;/label&gt;</span>
 
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"fornavn-error"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast fornavn
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"example-name-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Skriv dit fulde navn, og
+                adskil for- og efternavne med mellemrum, fx Christian Emil
+                Vestergaard Christiansen
             <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"fornavn"</span> <span class="na">value=</span><span class="s">""</span>
-                <span class="na">name=</span><span class="s">"Input til fornavn"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
-                <span class="na">aria-describedby=</span><span class="s">" fornavn-error"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"example-name"</span> <span class="na">value=</span><span class="s">""</span>
+                <span class="na">name=</span><span class="s">"form-error"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
+                <span class="na">aria-describedby=</span><span class="s">" example-name-error"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
+
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"efternavn"</span><span class="nt">&gt;</span>
-                Efternavn
-            <span class="nt">&lt;/label&gt;</span>
-
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"efternavn-error"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast efternavn
-            <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"efternavn"</span> <span class="na">value=</span><span class="s">""</span>
-                <span class="na">name=</span><span class="s">"Input til efternavn"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
-                <span class="na">aria-describedby=</span><span class="s">" efternavn-error"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;fieldset</span> <span class="na">aria-describedby=</span><span class="s">"example-nationalitet-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Hvad er din nationalitet?<span class="nt">&lt;/legend&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
+                    <span class="na">id=</span><span class="s">"example-nationalitet-error"</span><span class="nt">&gt;&lt;span</span>
+                        <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Angiv om du er dansk,
+                    svensk eller anden nationalitet<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"nationalitet1"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                            <span class="na">name=</span><span class="s">"nationalitet"</span> <span class="na">value=</span><span class="s">"dansk"</span>
+                            <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"nationalitet1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Dansk<span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"nationalitet2"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                            <span class="na">name=</span><span class="s">"nationalitet[]"</span> <span class="na">value=</span><span class="s">"svensk"</span>
+                            <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"nationalitet2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Svensk<span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"nationalitet3"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                            <span class="na">name=</span><span class="s">"nationalitet[]"</span> <span class="na">value=</span><span class="s">"anden"</span>
+                            <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"nationalitet3"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Anden
+                            nationalitet<span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/fieldset&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"gade-vej"</span><span class="nt">&gt;</span>
-                Gade/vej
-            <span class="nt">&lt;/label&gt;</span>
 
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"gade-vej-error"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast gade/vej
-            <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"gade-vej"</span> <span class="na">value=</span><span class="s">""</span>
-                <span class="na">name=</span><span class="s">"Input til gade/vej"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
-                <span class="na">aria-describedby=</span><span class="s">" gade-vej-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"husnummer"</span><span class="nt">&gt;</span>
-                Husnummer
-            <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group  form-error  "</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;fieldset</span>
+                <span class="na">aria-dsecribedby=</span><span class="s">"example-date-field-hint example-date-field-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Hvornår blev dit pas udstedt?
+                <span class="nt">&lt;/legend&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"example-date-field-hint"</span><span class="nt">&gt;</span>Fx: 05
+                    12 2018<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message "</span>
+                    <span class="na">id=</span><span class="s">"example-date-field-error"</span><span class="nt">&gt;&lt;span</span>
+                        <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Datoen kan ikke være i
+                    fremtiden<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group mt-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
+                            <span class="na">for=</span><span class="s">"date-day"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span>
+                            <span class="na">id=</span><span class="s">"date-day"</span> <span class="na">value=</span><span class="s">"01"</span> <span class="na">type=</span><span class="s">"tel"</span>
+                            <span class="na">data-min=</span><span class="s">"1"</span> <span class="na">data-max=</span><span class="s">"31"</span> <span class="na">maxlength=</span><span class="s">"2"</span>
+                            <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
+                            <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
+                            <span class="na">title=</span><span class="s">"Indskriv dag på måneden som tal"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
+                            <span class="na">for=</span><span class="s">"date-month"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-month-input"</span>
+                            <span class="na">id=</span><span class="s">"date-month"</span> <span class="na">value=</span><span class="s">"12"</span> <span class="na">type=</span><span class="s">"tel"</span>
+                            <span class="na">data-min=</span><span class="s">"1"</span> <span class="na">data-max=</span><span class="s">"12"</span> <span class="na">maxlength=</span><span class="s">"2"</span>
+                            <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
+                            <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
+                            <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span>
+                            <span class="na">for=</span><span class="s">"date-year"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
+                            <span class="na">id=</span><span class="s">"date-year"</span> <span class="na">value=</span><span class="s">"2076"</span> <span class="na">type=</span><span class="s">"tel"</span>
+                            <span class="na">data-min=</span><span class="s">"1900"</span> <span class="na">data-max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span>
+                            <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
+                            <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
+                            <span class="na">title=</span><span class="s">"Indskriv årstal"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"husnummer-error"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast husnummer
-            <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xxs"</span> <span class="na">id=</span><span class="s">"husnummer"</span>
-                <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"Input til husnummer"</span> <span class="na">type=</span><span class="s">"text"</span>
-                <span class="na">aria-invalid=</span><span class="s">"true"</span> <span class="na">aria-describedby=</span><span class="s">" husnummer-error"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/fieldset&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"etage"</span><span class="nt">&gt;</span>
-                Etage<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"weight-normal"</span><span class="nt">&gt;</span> (frivilligt)<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/label&gt;</span>
 
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xxs"</span> <span class="na">id=</span><span class="s">"etage"</span> <span class="na">value=</span><span class="s">""</span>
-                <span class="na">name=</span><span class="s">"Input til etage"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"side"</span><span class="nt">&gt;</span>
-                Side<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"weight-normal"</span><span class="nt">&gt;</span> (frivilligt)<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"side-hint"</span><span class="nt">&gt;</span>
-                Fx: TV, 2. dør
-            <span class="nt">&lt;/span&gt;</span>
-
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xs"</span> <span class="na">id=</span><span class="s">"side"</span> <span class="na">value=</span><span class="s">""</span>
-                <span class="na">name=</span><span class="s">"Input til side"</span> <span class="na">type=</span><span class="s">"text"</span>
-                <span class="na">aria-describedby=</span><span class="s">"side-hint "</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"postnummer"</span><span class="nt">&gt;</span>
-                Postnummer
-            <span class="nt">&lt;/label&gt;</span>
-
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"postnummer-error"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast postnummer - fx
-                4000
-            <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-xxs"</span> <span class="na">id=</span><span class="s">"postnummer"</span>
-                <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"Input til postnummer"</span> <span class="na">type=</span><span class="s">"text"</span>
-                <span class="na">aria-invalid=</span><span class="s">"true"</span> <span class="na">aria-describedby=</span><span class="s">" postnummer-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"by"</span><span class="nt">&gt;</span>
-                By
-            <span class="nt">&lt;/label&gt;</span>
-
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"by-error"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Indtast bynavn
-            <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-m"</span> <span class="na">id=</span><span class="s">"by"</span> <span class="na">value=</span><span class="s">""</span>
-                <span class="na">name=</span><span class="s">"Input til by"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-invalid=</span><span class="s">"true"</span>
-                <span class="na">aria-describedby=</span><span class="s">" by-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/form&gt;</span>
 <span class="nt">&lt;/main&gt;</span></code></pre></figure>
 
