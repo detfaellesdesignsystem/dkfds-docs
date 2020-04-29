@@ -3194,26 +3194,26 @@
           
 
           
-<div class="component-preview  component-preview-error-message" aria-label="Eksempel på fejlmeddelelser">
+<div class="component-preview  component-preview-error-message-name" aria-label="Eksempel på fejlmeddelelser">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/error-message/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/error-message-name/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         <div class="form-group form-error">
-    <label class="form-label " for="form-error">
-        Hvad hedder dit kursus?
+    <label class="form-label " for="example-name">
+        Hvad er dit fulde navn?
     </label>
-    <span class="form-hint" id="form-error-hint">
-        Fx: Skriv godt
+
+    <span class="form-error-message" id="example-name-error">
+        <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
+        for- og efternavne med mellemrum, fx Christian Emil Vestergaard
+        Christiansen
     </span>
-    <span class="form-error-message" id="form-error-error">
-        <span class="sr-only">Fejl:</span> Giv dit kursus et navn
-    </span>
-    <input class="form-input " required="" id="form-error" value="" name="form-error" type="text" aria-invalid="true" aria-describedby="form-error-hint form-error-error" />
+    <input class="form-input " required="" id="example-name" value="" name="form-error" type="text" aria-invalid="true" aria-describedby=" example-name-error" />
 </div>
     </div>
     
@@ -3262,39 +3262,42 @@ Teksten er skjult i et <code class="highlighter-rouge">&lt;span&gt;</code> eleme
 
 <h3 id="tjekboks">Tjekboks</h3>
 
-<div class="component-preview component-preview-code  component-code-checkbox-error" aria-label="">
+<div class="component-preview component-preview-code  component-code-error-message-checkbox" aria-label="">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/checkbox-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/error-message-checkbox/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
         
     </div>
     
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;fieldset</span> <span class="na">aria-describedby=</span><span class="s">"example-checkbox-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Tjekboks med fejl<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span> <span class="na">id=</span><span class="s">"example-checkbox-error"</span><span class="nt">&gt;&lt;span</span>
-                <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Hjælpsom fejlmeddelelse<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">aria-describedby=</span><span class="s">"example-nationalitet-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Hvad er din nationalitet?<span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
+            <span class="na">id=</span><span class="s">"example-nationalitet-error"</span><span class="nt">&gt;&lt;span</span>
+                <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Angiv om du er dansk, svensk
+            eller anden nationalitet<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"checkboxerror1"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                    <span class="na">name=</span><span class="s">"checkboxerror"</span> <span class="na">value=</span><span class="s">"1"</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"nationalitet1"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                    <span class="na">name=</span><span class="s">"nationalitet"</span> <span class="na">value=</span><span class="s">"dansk"</span>
                     <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkboxerror1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Tjekboks 1<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"nationalitet1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Dansk<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"checkboxerror2"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                    <span class="na">name=</span><span class="s">"checkboxerror[]"</span> <span class="na">value=</span><span class="s">"2"</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"nationalitet2"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                    <span class="na">name=</span><span class="s">"nationalitet[]"</span> <span class="na">value=</span><span class="s">"svensk"</span>
                     <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkboxerror2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Tjekboks 2<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"nationalitet2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Svensk<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"checkboxerror3"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
-                    <span class="na">name=</span><span class="s">"checkboxerror[]"</span> <span class="na">value=</span><span class="s">"3"</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"nationalitet3"</span> <span class="na">type=</span><span class="s">"checkbox"</span>
+                    <span class="na">name=</span><span class="s">"nationalitet[]"</span> <span class="na">value=</span><span class="s">"anden"</span>
                     <span class="na">class=</span><span class="s">"form-checkbox  checkbox-large "</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkboxerror3"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Tjekboks 3<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"nationalitet3"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Anden
+                    nationalitet<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
@@ -3306,11 +3309,11 @@ Teksten er skjult i et <code class="highlighter-rouge">&lt;span&gt;</code> eleme
 
 <h3 id="radioknap">Radioknap</h3>
 
-<div class="component-preview component-preview-code  component-code-radiobutton-error" aria-label="">
+<div class="component-preview component-preview-code  component-code-error-message-radio" aria-label="">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/radiobutton-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/error-message-radio/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
         
     </div>
     
@@ -3318,30 +3321,37 @@ Teksten er skjult i et <code class="highlighter-rouge">&lt;span&gt;</code> eleme
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-error"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;fieldset</span> <span class="na">aria-describedby=</span><span class="s">"example-radiobutton-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Radioknap med fejl<span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Sagen handler om<span class="nt">&lt;/legend&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message"</span>
             <span class="na">id=</span><span class="s">"example-radiobutton-error"</span><span class="nt">&gt;&lt;span</span>
-                <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Hjælpsom fejlmeddelelse<span class="nt">&lt;/span&gt;</span>
+                <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Vælg hvad sagen handler
+            om<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nobullet-list"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"weekly"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"often-pay"</span>
-                    <span class="na">value=</span><span class="s">"weekly"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"weekly"</span> <span class="na">id=</span><span class="s">"form-label-weekly"</span>
-                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ugentligt <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"sagen-omhandler-ulykkesforsikring"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                    <span class="na">name=</span><span class="s">"sagen-omhandler"</span> <span class="na">value=</span><span class="s">"ulykkesforsikring"</span>
+                    <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"sagen-omhandler-ulykkesforsikring"</span>
+                    <span class="na">id=</span><span class="s">"form-label-sagen-omhandler-ulykkesforsikring"</span>
+                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Ulykkesforsikring (ASL §81) <span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"fortnightly"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"often-pay"</span>
-                    <span class="na">value=</span><span class="s">"fortnightly"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fortnightly"</span> <span class="na">id=</span><span class="s">"form-label-fortnightly"</span>
-                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Hver fjortende dag <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"sagen-omhandler-erstatningsansvar"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                    <span class="na">name=</span><span class="s">"sagen-omhandler"</span> <span class="na">value=</span><span class="s">"erstatningsansvar"</span>
+                    <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"sagen-omhandler-erstatningsansvar"</span>
+                    <span class="na">id=</span><span class="s">"form-label-sagen-omhandler-erstatningsansvar"</span>
+                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Erstatningsansvar (ASL §10) <span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"monthly"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"often-pay"</span>
-                    <span class="na">value=</span><span class="s">"monthly"</span> <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"monthly"</span> <span class="na">id=</span><span class="s">"form-label-monthly"</span>
-                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Månedligt <span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"sagen-omhandler-forsikringsselskab"</span> <span class="na">type=</span><span class="s">"radio"</span>
+                    <span class="na">name=</span><span class="s">"sagen-omhandler"</span> <span class="na">value=</span><span class="s">"forsikringsselskab"</span>
+                    <span class="na">class=</span><span class="s">"form-radio  radio-large "</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"sagen-omhandler-forsikringsselskab"</span>
+                    <span class="na">id=</span><span class="s">"form-label-sagen-omhandler-forsikringsselskab"</span>
+                    <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Forsikringsselskab (ASL §10) <span class="nt">&lt;/label&gt;</span>
 
             <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
@@ -3354,11 +3364,11 @@ Teksten er skjult i et <code class="highlighter-rouge">&lt;span&gt;</code> eleme
 
 <h3 id="datoangivelse">Datoangivelse</h3>
 
-<div class="component-preview component-preview-code  component-code-date-input-error" aria-label="">
+<div class="component-preview component-preview-code  component-code-error-message-date" aria-label="">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/date-input-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/error-message-date/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
         
     </div>
     
@@ -3367,13 +3377,13 @@ Teksten er skjult i et <code class="highlighter-rouge">&lt;span&gt;</code> eleme
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group  form-error  "</span><span class="nt">&gt;</span>
     <span class="nt">&lt;fieldset</span>
         <span class="na">aria-dsecribedby=</span><span class="s">"example-date-field-hint example-date-field-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Datoangivelse med fejl<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"example-date-field-hint"</span><span class="nt">&gt;</span>For eksempel:
-            05 12 2018<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Hvornår blev dit pas udstedt?<span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"example-date-field-hint"</span><span class="nt">&gt;</span>Fx: 05 12
+            2018<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message "</span>
             <span class="na">id=</span><span class="s">"example-date-field-error"</span><span class="nt">&gt;&lt;span</span>
-                <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Skriv en kort fejlmeddelelse,
-            der hjælper brugeren videre<span class="nt">&lt;/span&gt;</span>
+                <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Datoen kan ikke være i
+            fremtiden<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group mt-3"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-day"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
@@ -3394,7 +3404,7 @@ Teksten er skjult i et <code class="highlighter-rouge">&lt;span&gt;</code> eleme
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-year"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
                 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
-                    <span class="na">id=</span><span class="s">"date-year"</span> <span class="na">value=</span><span class="s">"2030"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1900"</span>
+                    <span class="na">id=</span><span class="s">"date-year"</span> <span class="na">value=</span><span class="s">"2076"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1900"</span>
                     <span class="na">data-max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
                     <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
                     <span class="na">title=</span><span class="s">"Indskriv årstal"</span> <span class="nt">/&gt;</span>
