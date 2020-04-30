@@ -49,7 +49,7 @@ Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har me
 
 ## Vejledning
 
-Fejlmeddelelsen skal også vises som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen give mening for btugeren, når den læses for sig selv i fejlopsummeringen.
+Fejlmeddelelsen skal også vises som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.
 
 Vis fejlmeddelelsen i rød umiddelbart over, der hvor fejlen er.
 
@@ -95,11 +95,11 @@ Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud som f
 * "Du har lavet en fejl"
 * "Ikke godkendt"
 
-Forskellige fejl har brug for forskellige fejlmeddelelser. 
+Forskellige fejl har brug for forskellige fejlmeddelelser.
 
 Fx kan der opstå forskellige fejl på tekstfelter, felter kan være: tomme, for lange, for korte, indeholde ugyldige tegn, være i et forkert format, m.fl.
 
-En fejlmeddelelse, der forklarer den specifikke situation er mere hjælpsom end den generiske fejlmeddelelse. 
+En fejlmeddelelse, der forklarer den specifikke situation er mere hjælpsom end den generiske fejlmeddelelse.
 
 Den gode fejlmeddelelse vil fortælle brugeren, hvad der er sket og hvordan det kan løses.
 
