@@ -27,25 +27,24 @@ subnav:
   href: "#knap-med-ikon"
 - text: Ikon som knap
   href: "#ikon-som-knap"
+- text: Lille knap
+  href: "#lille-knap"
 component: button-primary
 componentTitle: Eksempel på primærknap
 componentCode: "/kode/komponenter/knapper/"
 
 ---
 {:.h3 #retningslinjer}
-
 ## Anvendes til
 
 Du kan bruge de forskellige typer af knapper til at kommunikere centrale og vigtige funktioner til brugerne, såsom "næste" trin i en selvbetjeningsløsning, eller ”Gem”, ”Rediger”, ”Log ind”, ”Log af” m.fl.
 
 {:.h3}
-
 ## Anvendes ikke til
 
 Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anvende link.
 
 {:.h3}
-
 ## Vejledning
 
 Der er kun én primærknap pr. side.
@@ -67,7 +66,6 @@ Skriv i aktiv form: I stedet for at skrive ”Fejlindmelding” bør du skrive �
 I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i knappen for at signalere bestemte handlinger.
 
 {:.h4}
-
 ### Disabled tilstand
 
 Brug helst ikke "disabled" state på knapper eller i det hele taget, da ikke alle brugere forstår, at det som er "disabled" ikke kan anvendes.
@@ -77,7 +75,6 @@ Brug ikke "disabled" tilstand på "næste" knapper (knapper der bringer brugeren
 Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disabled" tilstanden, men så skal det være en aktiv del af en umiddelbar og kontekstuel kommunikation på siden; fx ved at en knap først bliver aktiv, når brugeren har godkendt nogle betingelser ved fx at sætte et flueben. I sådanne tilfælde er det vigtigt at knap og betingelse, står i umiddelbar nærhed, så brugerene bliver opmærksomme på forskellen, og så brugere der anvender zoom også kan se ændringen ske inden for deres zoom.
 
 {:.h3}
-
 ## Links
 
 <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link">Hvornår skal du bruge en knap eller et link<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
