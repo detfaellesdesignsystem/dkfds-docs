@@ -8,7 +8,7 @@ var themes = ["virk", "borgerdk"];
 var exampleUrls = [
     {"url": "/eksempel/header/", "filename": "header.png", "width": 992, "height": 322 },
     {"url": "/eksempel/header-simple/", "filename": "header-simple.png", "width": 992, "height": 158 },
-    {"url": "/eksempel/header-compact/", "filename": "header-compact.png", "width": 992, "height": 158 },
+    {"url": "/eksempel/header-compact/", "filename": "header-compact.png", "width": 992, "height": 322 },
     {"url": "/eksempel/header-medium/", "filename": "header-medium.png", "width": 992, "height": 262 },
     {"url": "/eksempel/header-full/", "filename": "header-full.png", "width": 992, "height": 322 },
     {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 184 },
