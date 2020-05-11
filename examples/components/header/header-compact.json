@@ -1,0 +1,28 @@
+{
+  "portal_header_data": {
+    "compact": true,
+    "user": {
+      "name": "Lone Hansen"
+    },
+    "logolink": {
+      "title": "Hjem",
+      "href": "javascript:void(0);"
+    },
+    "link": {
+      "href": "#",
+      "class": "button-secondary",
+      "text": "Log af"
+    }
+  },
+  "solution_header_data": {
+    "title": {
+      "href": "#",
+      "title": "Hjem",
+      "text": "Løsningstitel"
+    },
+    "authority": {
+      "name": "Myndighedsnavn",
+      "text": "Support: 12 34 56 78"
+    }
+  }
+}

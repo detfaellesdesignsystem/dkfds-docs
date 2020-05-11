@@ -11,6 +11,8 @@ anchor: true
 subnav:
 - text: Navigation
   href: '#navigation'
+- text: Kompakt
+  href: '#kompakt'
 - text: Kompleks
   href: '#kompleks'
 ---
