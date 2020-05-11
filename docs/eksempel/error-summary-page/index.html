@@ -84,106 +84,88 @@
     <h1 id="error-summary-page" class="sr-only">Error-summary-page</h1>
     <main class="col-12 col-lg-9" id="main-content">
 
-    <div class="alert alert-error" role="alert">
+    <div class="alert alert-error mt-0 mb-8" role="alert">
         <div class="alert-body">
             <p class="alert-heading">Der er problemer</p>
             <ul class="alert-text nobullet-list">
-                <li><a class="function-link" href="#fornavn">Indtast
-                        fornavn</a></li>
-                <li><a class="function-link" href="#efternavn">Indtast
-                        efternavn</a></li>
-                <li><a class="function-link" href="#gade-vej">Indtast
-                        gade/vej</a></li>
-                <li><a class="function-link" href="#husnummer">Indtast
-                        husnummer</a></li>
-                <li><a class="function-link" href="#postnummer">Indtast
-                        postnummer</a></li>
-                <li><a class="function-link" href="#by">Indtast bynavn</a>
+                <li><a class="function-link" href="#example-name">Skriv dit
+                        fulde navn, og adskil for- og efternavne med
+                        mellemrum, fx Christian Emil Vestergaard
+                        Christiansen</a></li>
+                <li><a class="function-link" href="#nationalitet1">Angiv om
+                        du er dansk, svensk eller anden nationalitet</a>
                 </li>
+                <li><a class="function-link" href="#date-day">Datoen kan
+                        ikke være i fremtiden</a></li>
             </ul>
         </div>
     </div>
 
     <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
     <form>
+
         <div class="form-group form-error">
-            <label class="form-label " for="fornavn">
-                Fornavn
+            <label class="form-label " for="example-name">
+                Hvad er dit fulde navn?
             </label>
 
-            <span class="form-error-message" id="fornavn-error">
-                <span class="sr-only">Fejl:</span> Indtast fornavn
+            <span class="form-error-message" id="example-name-error">
+                <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og
+                adskil for- og efternavne med mellemrum, fx Christian Emil
+                Vestergaard Christiansen
             </span>
-            <input class="form-input input-width-m" id="fornavn" value="" name="Input til fornavn" type="text" aria-invalid="true" aria-describedby=" fornavn-error" />
+            <input class="form-input " required="" id="example-name" value="" name="form-error" type="text" aria-invalid="true" aria-describedby=" example-name-error" />
         </div>
+
         <div class="form-group form-error">
-            <label class="form-label " for="efternavn">
-                Efternavn
-            </label>
-
-            <span class="form-error-message" id="efternavn-error">
-                <span class="sr-only">Fejl:</span> Indtast efternavn
-            </span>
-            <input class="form-input input-width-m" id="efternavn" value="" name="Input til efternavn" type="text" aria-invalid="true" aria-describedby=" efternavn-error" />
+            <fieldset aria-describedby="example-nationalitet-error">
+                <legend class="h5">Hvad er din nationalitet?</legend>
+                <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk,
+                    svensk eller anden nationalitet</span>
+                <ul class="nobullet-list">
+                    <li>
+                        <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox  checkbox-large " />
+                        <label for="nationalitet1" class="">Dansk</label>
+                    </li>
+                    <li>
+                        <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox  checkbox-large " />
+                        <label for="nationalitet2" class="">Svensk</label>
+                    </li>
+                    <li>
+                        <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox  checkbox-large " />
+                        <label for="nationalitet3" class="">Anden
+                            nationalitet</label>
+                    </li>
+                </ul>
+            </fieldset>
         </div>
-        <div class="form-group form-error">
-            <label class="form-label " for="gade-vej">
-                Gade/vej
-            </label>
 
-            <span class="form-error-message" id="gade-vej-error">
-                <span class="sr-only">Fejl:</span> Indtast gade/vej
-            </span>
-            <input class="form-input input-width-m" id="gade-vej" value="" name="Input til gade/vej" type="text" aria-invalid="true" aria-describedby=" gade-vej-error" />
-        </div>
-        <div class="form-group form-error">
-            <label class="form-label " for="husnummer">
-                Husnummer
-            </label>
+        <div class="form-group  form-error  ">
+            <fieldset aria-dsecribedby="example-date-field-hint example-date-field-error">
+                <legend class="form-label">Hvornår blev dit pas udstedt?
+                </legend>
+                <span class="form-hint" id="example-date-field-hint">Fx: 05
+                    12 2018</span>
+                <span class="form-error-message " id="example-date-field-error"><span class="sr-only">Fejl:</span> Datoen kan ikke være i
+                    fremtiden</span>
+                <div class="date-group js-calendar-group mt-3">
+                    <div class="form-group form-group-day">
+                        <label class="form-label" for="date-day">Dag</label>
+                        <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                    </div>
+                    <div class="form-group form-group-month">
+                        <label class="form-label" for="date-month">Måned</label>
+                        <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                    </div>
+                    <div class="form-group form-group-year ">
+                        <label class="form-label" for="date-year">År</label>
+                        <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                    </div>
 
-            <span class="form-error-message" id="husnummer-error">
-                <span class="sr-only">Fejl:</span> Indtast husnummer
-            </span>
-            <input class="form-input input-width-xxs" id="husnummer" value="" name="Input til husnummer" type="text" aria-invalid="true" aria-describedby=" husnummer-error" />
+                </div>
+            </fieldset>
         </div>
-        <div class="form-group">
-            <label class="form-label " for="etage">
-                Etage<span class="weight-normal"> (frivilligt)</span>
-            </label>
 
-            <input class="form-input input-width-xxs" id="etage" value="" name="Input til etage" type="text" />
-        </div>
-        <div class="form-group">
-            <label class="form-label " for="side">
-                Side<span class="weight-normal"> (frivilligt)</span>
-            </label>
-            <span class="form-hint" id="side-hint">
-                Fx: TV, 2. dør
-            </span>
-
-            <input class="form-input input-width-xs" id="side" value="" name="Input til side" type="text" aria-describedby="side-hint " />
-        </div>
-        <div class="form-group form-error">
-            <label class="form-label " for="postnummer">
-                Postnummer
-            </label>
-
-            <span class="form-error-message" id="postnummer-error">
-                <span class="sr-only">Fejl:</span> Indtast postnummer - fx
-                4000
-            </span>
-            <input class="form-input input-width-xxs" id="postnummer" value="" name="Input til postnummer" type="text" aria-invalid="true" aria-describedby=" postnummer-error" />
-        </div>
-        <div class="form-group form-error">
-            <label class="form-label " for="by">
-                By
-            </label>
-
-            <span class="form-error-message" id="by-error">
-                <span class="sr-only">Fejl:</span> Indtast bynavn
-            </span>
-            <input class="form-input input-width-m" id="by" value="" name="Input til by" type="text" aria-invalid="true" aria-describedby=" by-error" />
-        </div>
     </form>
 </main>
 
