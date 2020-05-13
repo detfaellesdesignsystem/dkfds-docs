@@ -1,7 +1,7 @@
 ---
-title: Navigation
+title: Standard header med navigation
 parent: Headers
-order: 40
+order: 20
 ---
 
 {% include code/preview-image.html component="header-medium" %}

@@ -27,6 +27,9 @@
     color: $color-black;
   }
 }
+img.inner-border-box{
+  border: $inner-border;
+}
 // Preview box (e.g. used by header and footer documentation) -------- //
 .preview {
   margin-bottom: 2em;
