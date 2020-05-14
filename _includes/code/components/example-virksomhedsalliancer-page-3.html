@@ -1,7 +1,7 @@
 <header class="header">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header ">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
@@ -13,14 +13,14 @@
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><span class="username bold">Christian Emil
+                <p class="user"><span
+                        class="username weight-semibold">Christian Emil
                         Vestergaard Christiansen</span> </p>
 
-                <a href="#"
-                    class="button button-secondary alert-leave d-print-none"
-                    role="button">
+                <button
+                    class="button button-secondary  alert-leave d-print-none">
                     Log af
-                </a>
+                </button>
             </div>
         </div>
     </div>
@@ -149,21 +149,18 @@
 
             <div class="mt-6">
                 <div class="form-group">
-                    <label class="form-label " for="id-state"
-                        id="form-label-id-state">
+                    <label class="form-label " for="id-state">
                         Statsstøtte (EU de-minimis) i DKK
                     </label>
-                    <span class="form-hint"
-                        id="input-hint-message-id-state">
+                    <span class="form-hint" id="id-state-hint">
                         Modtaget fra dags dato og de tre seneste løbende år
                         ekskl. det aktuelle projekt.
                     </span>
 
-                    <input class="form-input  input-width-m " id="id-state"
+                    <input class="form-input input-width-m" id="id-state"
                         value=""
                         name="Input til statsstøtte (EU de-minimis) i DKK"
-                        type="text"
-                        aria-labelledby="form-label-id-state input-hint-message-id-state">
+                        type="text" aria-describedby="id-state-hint ">
                 </div>
             </div>
 
@@ -193,30 +190,30 @@
                                 <div class="py-4">
                                     <div class="form-group">
                                         <label class="form-label "
-                                            for="id-minimis-name"
-                                            id="form-label-id-minimis-name">
+                                            for="id-minimis-name">
                                             Ordningens navn
                                         </label>
 
                                         <input
-                                            class="form-input  input-width-m "
+                                            class="form-input input-width-m"
                                             id="id-minimis-name" value=""
                                             name="Input til ordningens navn"
                                             type="text">
                                     </div>
 
                                     <div class="form-group  ">
-                                        <fieldset>
-                                            <legend><label
-                                                    class="form-label">Dato
-                                                    for modtagelse</label>
-                                                <span class="form-hint">Fx.
-                                                    28 04 1996</span>
-                                            </legend>
+                                        <fieldset
+                                            aria-dsecribedby="example-date-field-hint ">
+                                            <legend class="form-label">Dato
+                                                for modtagelse</legend>
+                                            <span class="form-hint"
+                                                id="example-date-field-hint">Fx.
+                                                28 04 1996</span>
                                             <span
                                                 class="form-error-message  d-none"
-                                                id="form-error-message-input-error"
-                                                role="alert"></span>
+                                                id="example-date-field-error"><span
+                                                    class="sr-only">Fejl:</span>
+                                            </span>
                                             <div
                                                 class="date-group js-calendar-group mt-3">
                                                 <div
@@ -274,35 +271,33 @@
 
                                     <div class="form-group">
                                         <label class="form-label "
-                                            for="id-amount"
-                                            id="form-label-id-amount">
+                                            for="id-amount">
                                             Beløb i DKK
                                         </label>
 
                                         <input
-                                            class="form-input  input-width-xs "
+                                            class="form-input input-width-xs"
                                             id="id-amount" value=""
                                             name="Input til beløb i DKK"
                                             type="text">
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label "
-                                            for="id-reference"
-                                            id="form-label-id-reference">
+                                            for="id-reference">
                                             Henvisning til yderligere
                                             information om ordningen
                                         </label>
                                         <span class="form-hint"
-                                            id="input-hint-message-id-reference">
+                                            id="id-reference-hint">
                                             Fx. et link (url)
                                         </span>
 
                                         <input
-                                            class="form-input  input-width-m "
+                                            class="form-input input-width-m"
                                             id="id-reference" value=""
                                             name="Input til henvisning til yderligere information om ordningen"
                                             type="text"
-                                            aria-labelledby="form-label-id-reference input-hint-message-id-reference">
+                                            aria-describedby="id-reference-hint ">
                                     </div>
                                 </div>
                             </div>

@@ -1,7 +1,7 @@
 <header class="header">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header ">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
@@ -13,14 +13,14 @@
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><span class="username bold">Christian Emil
+                <p class="user"><span
+                        class="username weight-semibold">Christian Emil
                         Vestergaard Christiansen</span> </p>
 
-                <a href="#"
-                    class="button button-secondary alert-leave d-print-none"
-                    role="button">
+                <button
+                    class="button button-secondary  alert-leave d-print-none">
                     Log af
-                </a>
+                </button>
             </div>
         </div>
     </div>
@@ -158,12 +158,13 @@
     <div class="mt-6">
 
         <div class="form-group  ">
-            <fieldset>
-                <legend><label class="form-label">Dato for flytning</label>
-                    <span class="form-hint">Fx. 28 04 1996</span></legend>
+            <fieldset aria-dsecribedby="example-date-field-hint ">
+                <legend class="form-label">Dato for flytning</legend>
+                <span class="form-hint" id="example-date-field-hint">Fx. 28
+                    04 1996</span>
                 <span class="form-error-message  d-none"
-                    id="form-error-message-input-error"
-                    role="alert"></span>
+                    id="example-date-field-error"><span
+                        class="sr-only">Fejl:</span> </span>
                 <div class="date-group js-calendar-group mt-3">
                     <div class="form-group form-group-day">
                         <label class="form-label"
@@ -257,17 +258,17 @@
     </div>
     <div class="mt-6">
         <div class="form-group">
-            <label class="form-label " for="id-co" id="form-label-id-co">
+            <label class="form-label " for="id-co">
                 C/O navn<span class="weight-normal"> (frivilligt)</span>
             </label>
-            <span class="form-hint" id="input-hint-message-id-co">
+            <span class="form-hint" id="id-co-hint">
                 C/O navn skal kun udfyldes, hvis du skal bo til leje hos de
                 nuværende beboere.
             </span>
 
-            <input class="form-input  input-width-m " id="id-co" value=""
+            <input class="form-input input-width-m" id="id-co" value=""
                 name="Input til C/O navn" type="text"
-                aria-labelledby="form-label-id-co input-hint-message-id-co">
+                aria-describedby="id-co-hint ">
         </div>
     </div>
 
