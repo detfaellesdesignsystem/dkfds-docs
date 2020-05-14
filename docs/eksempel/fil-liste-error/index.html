@@ -17,7 +17,7 @@
 ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -83,19 +83,19 @@
     <header class="header">
 
     <!--1A: Portal header -->
-    <div class="portal-header ">
+    <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn" class="logo alert-leave">
             </a>
-            <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+            <button class="button button-secondary button-small button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><span class="username weight-semibold">Christian Emil
+                <p class="user"><span class="username">Christian Emil
                         Vestergaard Christiansen</span> </p>
 
-                <button class="button button-secondary  alert-leave d-print-none">
+                <button class="button button-secondary button-small  alert-leave d-print-none">
                     Log af
                 </button>
             </div>
@@ -156,7 +156,31 @@
 
 <main class="container page-container">
     <a href="javascript:void(0);" class="back-link d-md-none">Tilbage</a>
+
+    <div class="alert alert-error mt-0 mb-8" role="alert">
+        <div class="alert-body">
+            <p class="alert-heading">Der er problemer</p>
+            <ul class="alert-text nobullet-list mb-3">
+                <li><a class="function-link" href="#fileinput">Dokumentet
+                        er større end 10 MB, og kan derfor ikke tilføjes.
+                        Opdel dokumentet og tilføj som flere
+                        dokumenter.</a></li>
+                <li><a class="function-link" href="#options2">Vælg et navn
+                        til dokumentet Fuldmagt_88.pdf</a></li>
+            </ul>
+        </div>
+    </div>
+
     <h1>Dokumenter til sagen <span class="weight-normal">(frivilligt)</span></h1>
+
+    <div class="form-group file-input mb-5 form-error">
+        <label class="form-label" for="fileinput">Vedhæft fil</label>
+        <span class="form-error-message mb-3" id="fileinput-error"><span class="sr-only">Fejl:</span> Dokumentet er større end 10
+            MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som
+            flere dokumenter.</span>
+        <input type="file" id="fileinput" name="file" aria-describedby="fileinput-error" />
+    </div>
+
     <table class="table table--borderless table--responsive-headers d-print-table">
         <thead>
             <tr>
@@ -200,8 +224,8 @@
                 </td>
                 <td>
                     <div class="form-group form-error">
-                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Angiv navn på
-                            dokument</span>
+                        <span class="form-error-message"><span class="sr-only">Fejl:</span> Vælg et navn
+                            til dokumentet Fuldmagt_88.pdf</span>
                         <label class="form-label sr-only" for="options2">Navngiv dokument</label>
                         <select class=" form-select" name="options2" id="options2">
                             <option value="">Vælg</option>
@@ -217,54 +241,6 @@
                             </option>
 
                         </select>
-                    </div>
-                </td>
-                <td><button class="button button-unstyled">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-
-                        <span class="sr-only">Slet</span>
-                    </button></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message" role="alert">Dokumentet er større end 10 MB, og
-                            kan derfor ikke tilføjes. Opdel dokumentet og
-                            tilføj som flere dokumenter.</span>
-                        <a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_tilskadekomne.pdf</a>
-                    </div>
-                </td>
-                <td><button class="button button-unstyled">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-
-                        <span class="sr-only">Slet</span>
-                    </button></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message" role="alert">Dokumentet er ikke en gyldig
-                            filtype, og kan derfor ikke tilføjes. Filen
-                            skal være af typen PDF, DOCX, DOC, BMP, GIF,
-                            HTM, HTML, JPEG, JPG, PNG, RTF, TIF eller
-                            TXT.</span>
-                        <a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf-outline"></use></svg>Spørgeskema_arbejdsgiver.indd</a>
-                    </div>
-                </td>
-                <td><button class="button button-unstyled">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
-
-                        <span class="sr-only">Slet</span>
-                    </button></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="form-group form-error">
-                        <span class="form-error-message" role="alert">Dokumentet blev ikke tilføjet, da
-                            der er sket en teknisk fejl. Forsøg at tilføje
-                            dokumentet i gen. Sker samme fejl igen, kan du
-                            kontakte FDS.</span>
-                        <a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf-outline"></use></svg>Journal.pdf</a>
                     </div>
                 </td>
                 <td><button class="button button-unstyled">
@@ -349,6 +325,7 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
+    <script src="/assets/js/requirements-tool~styleguide.js"></script>
     <script src="/assets/js/dkfds-micromodal-example.js"></script>
     <script src="/assets/js/dkfds-datatables-example.js"></script>
     <script src="/assets/js/dkfds-selectwoo-example.js"></script>

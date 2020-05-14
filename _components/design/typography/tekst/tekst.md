@@ -15,6 +15,7 @@ tags:
 - brødtekst
 - hjælpetekst
 - fejlbesked
+- fejlmeddelelse
 - Linje
 - længde
 - Linjelængde
@@ -26,8 +27,8 @@ subnav:
   href: "#manchet-tekst"
 - text: Brødtekst
   href: "#brødtekst"
-- text: Hjælpetekst og fejlbeskeder
-  href: "#hjælpetekst-og-fejlbeskeder"
+- text: Hjælpetekst og fejlmeddelelser
+  href: "#hjælpetekst-og-fejlmeddelelser"
 - text: Stor tekst
   href: "#stor-tekst"
 - text: Linjelængde

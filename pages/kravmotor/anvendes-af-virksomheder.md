@@ -4,12 +4,11 @@ layout: requirements-tool
 title: Skal din løsning anvendes af virksomheder?
 description: 
 ---
-<a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
 <h1>Skal din løsning anvendes af virksomheder?</h1>
 <form method="post" action="." id="form-Q100">
     <div class="form-group">
         <fieldset>
-            <span class="form-error-message d-none" id="error-message" role="alert"></span>
+            <span class="form-error-message d-none" id="error-message"></span>
             <ul class="nobullet-list">
                 <li>
                     <input id="radio-yes" type="radio" name="radio" value="1" class="form-radio radio-large" />

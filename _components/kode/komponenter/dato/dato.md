@@ -9,8 +9,8 @@ subcategory: Kode
 anchor: true
 description: "Dokumentation på implementering af datofelt."
 subnav:
-- text: Fejlbesked
-  href: '#fejlbesked'
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
 ---
 
 {% include code/preview-box.html component="date-input" title="Eksempel på dato felt" %}
@@ -36,11 +36,11 @@ Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere
     - Måned input: `.js-calendar-month-input`
     - År input: `.js-calendar-year-input`
 - Hvis du vil koble en datovælger på dit datofelt, kan du bruge plugins <a href="/kode/plugins/pikaday/">Pikaday</a>.
-- Ved fejl, tilføj da en hjælpsom fejlbesked over felterne i elementet `<span class="form-error-message" id="form-error-message-input-error" role="alert">`. 
-- Tilføj klassen `form-error` på `form-group` `div` elementet, når der vises en fejlbesked.
+- Ved fejl, tilføj da en hjælpsom fejlmeddelelse over felterne i elementet `<span class="form-error-message" id="form-error-message-input-error" role="alert">`. 
+- Tilføj klassen `form-error` på `form-group` `div` elementet, når der vises en fejlmeddelelse.
 
 ## Varianter
 
-{:#fejlbesked}
-### Fejlbesked
+{:#fejlmeddelelse}
+### Fejlmeddelelse
 {% include code/syntax.html component="date-input-error" link="true" %}

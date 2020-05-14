@@ -10,7 +10,26 @@
    border-color: #004993;
  }
 
+.fds-title {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: $font-weight-semibold;
+  color: $color-black;
+  text-decoration: none;
+  display: inline-block;
 
+  @include media-breakpoint-down(sm) {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  &:visited, &:hover, &:active{
+    color: $color-black;
+  }
+}
+img.inner-border-box{
+  border: $inner-border;
+}
 // Preview box (e.g. used by header and footer documentation) -------- //
 .preview {
   margin-bottom: 2em;
@@ -976,8 +995,16 @@ code {
   }
 }
 
+body.layout-requirements-tool{
+  .header {
+    .portal-header{
+      background-color: transparent;
+    }
+  }
+}
+
 //----- grid example
-body[class*="page-grid"][class*="-html"], div.component-preview[class*="-grid"] {
+body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="page-grid"], div.component-preview[class*="-grid"] {
 
 
   .row > .col,

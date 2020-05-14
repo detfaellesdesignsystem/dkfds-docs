@@ -1,0 +1,17 @@
+{ "params": {
+    "items": [
+      {
+        "text": "Forside",
+        "href": "#"
+      },
+      {
+        "text": "Komponenter",
+        "href": "#"
+      },
+      {
+        "text": "Brødkrumme"
+      }
+    ]
+  }
+}
+

@@ -10,8 +10,8 @@ anchor: true
 subnav:
 - text: Eksternt link
   href: "#eksternt-link"
-- text: Footer link
-  href: "#footer-link"
+- text: Sekundære links
+  href: "#sekundære-links"
 description: ""
 tags:
 - "ekstern"

@@ -1,5 +1,5 @@
 ---
-title: Fejlbesked
+title: Fejlmeddelelse
 parent: Date
 order: 30
 component: date-input-error

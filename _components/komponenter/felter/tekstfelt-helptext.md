@@ -1,5 +1,5 @@
 ---
-title: Hjælpetekst
+title: Felt med hjælpetekst
 parent: Text-field
 order: 40
 component: text-input-helptext

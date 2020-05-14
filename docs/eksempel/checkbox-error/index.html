@@ -17,7 +17,7 @@
 ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -81,10 +81,9 @@
     <main class="container page-container">
     <h1 id="checkbox-error" class="sr-only">Checkbox-error</h1>
     <div class="form-group form-error">
-    <fieldset>
+    <fieldset aria-describedby="example-checkbox-error">
         <legend class="h5">Tjekboks med fejl</legend>
-        <span class="form-error-message" role="alert">Hjælpsom
-            fejlbesked</span>
+        <span class="form-error-message" id="example-checkbox-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlmeddelelse</span>
         <ul class="nobullet-list">
             <li>
                 <input id="checkboxerror1" type="checkbox" name="checkboxerror" value="1" class="form-checkbox  checkbox-large " />
@@ -106,6 +105,7 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
+    <script src="/assets/js/requirements-tool~styleguide.js"></script>
     <script src="/assets/js/dkfds-micromodal-example.js"></script>
     <script src="/assets/js/dkfds-datatables-example.js"></script>
     <script src="/assets/js/dkfds-selectwoo-example.js"></script>

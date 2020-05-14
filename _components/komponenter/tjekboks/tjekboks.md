@@ -9,8 +9,8 @@ description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere væ
 tags:
 anchor: true
 subnav:
-- text: Fejlbesked
-  href: '#fejlbesked'
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
 - text: Lille tjekboks
   href: '#lille-tjekboks'
 - text: Skjult indhold (Collapse)
