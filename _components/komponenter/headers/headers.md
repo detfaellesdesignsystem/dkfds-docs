@@ -9,12 +9,14 @@ tags:
 lead: Headeren identificerer portalen, den ansvarlig myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
 anchor: true
 subnav:
-- text: Navigation
-  href: '#navigation'
-- text: Kompakt
-  href: '#kompakt'
-- text: Kompleks
-  href: '#kompleks'
+- text: Standard header
+  href: '#standard-header'
+- text: Standard header med navigation
+  href: '#standard-header-med-navigation'
+- text: Kompleks header med alle rækker
+  href: '#kompleks-header-med-alle-rækker'
+- text: Header med større logo, knap og brugeroplysninger
+  href: '#header-med-større-logo-knap-og-brugeroplysninger'
 ---
 
 {% include code/preview-image.html component="header-simple" code="/kode/komponenter/headers/" %}

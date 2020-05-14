@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function(){
             showPopup = false;
         } else {
             let activeElement = document.activeElement;
-            if(activeElement.href !== undefined && (activeElement.innerText === "Redigér" || activeElement.innerText === "Tilbage" || activeElement.getAttribute('href').indexOf('mailto:') !== -1)){
+            if(activeElement.href !== undefined && (activeElement.innerText === "Redigér" || activeElement.innerText === "Tilbage" || activeElement.getAttribute('href') === "https://github.com/detfaellesdesignsystem/dkfds-components/issues/108" || activeElement.getAttribute('href').indexOf('mailto:') !== -1)){
                 showPopup = false;
             }
         }
