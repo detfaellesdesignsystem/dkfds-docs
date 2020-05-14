@@ -1,0 +1,33 @@
+{
+  "checkbox_error_examples": {
+    "items": [
+      {
+        "id": "nationalitet1",
+        "name": "nationalitet",
+        "value": "dansk",
+        "checked": false,
+        "disabled": false,
+        "text": "Dansk",
+        "large": true
+      },
+      {
+        "id": "nationalitet2",
+        "name": "nationalitet[]",
+        "value": "svensk",
+        "checked": false,
+        "disabled": false,
+        "text": "Svensk",
+        "large": true
+      },
+      {
+        "id": "nationalitet3",
+        "name": "nationalitet[]",
+        "value": "anden",
+        "checked": false,
+        "disabled": false,
+        "text": "Anden nationalitet",
+        "large": true
+      }
+    ]
+  }
+}

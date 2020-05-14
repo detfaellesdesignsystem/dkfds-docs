@@ -10,8 +10,8 @@ description: "Dokumentation på implementering af tjekbokse."
 tags:
 anchor: true
 subnav:
-- text: Fejlbesked
-  href: '#fejlbesked'
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
 - text: Lille tjekboks
   href: '#lille-tjekboks'
 - text: Skjult indhold (Collapse)
@@ -39,8 +39,8 @@ subnav:
 
 ## Varianter
 
-{:fejlbesked}
-### Fejlbesked
+{:#fejlmeddelelser}
+### Fejlmeddelelse
 {% include code/syntax.html component="checkbox-error" link="true" %}
 
 {:#lille-tjekboks}

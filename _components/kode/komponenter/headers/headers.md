@@ -28,6 +28,8 @@ Portal header indeholder portalens logo samt info om hvem, der er logget ind.
 
 Denne del bør altid indgå i en header.
 
+<a href="/komponenter/headers/#kompakt" title="Gå til eksempel på kompakt portal header">Portal headeren kan gøres kompakt</a> med klassen `portal-header-compact` samt klassen `button-small` på eventuelle knapper. 
+
 #### Løsningsheader
 
 Løsningsheaderen indeholder løsningens titel samt info om, hvilken myndighed, der står bag løsningen.

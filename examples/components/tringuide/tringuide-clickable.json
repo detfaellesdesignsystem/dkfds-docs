@@ -9,7 +9,6 @@
       {
         "text": "Trin 2",
         "information": "Informationstekst for trin 2",
-        "icon": "check",
         "current": true,
         "active": true
       },

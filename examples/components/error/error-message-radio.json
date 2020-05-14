@@ -1,0 +1,34 @@
+{
+  "radiobuttons_error_example": {
+    "items": [
+      {
+        "id": "sagen-omhandler-ulykkesforsikring",
+        "name": "sagen-omhandler",
+        "value": "ulykkesforsikring",
+        "text": "Ulykkesforsikring (ASL §81)",
+        "checked": false,
+        "disabled": false,
+        "large": true
+
+      },
+      {
+        "id": "sagen-omhandler-erstatningsansvar",
+        "name": "sagen-omhandler",
+        "value": "erstatningsansvar",
+        "text": "Erstatningsansvar (ASL §10)",
+        "checked": false,
+        "disabled": false,
+        "large": true
+      },
+      {
+        "id": "sagen-omhandler-forsikringsselskab",
+        "name": "sagen-omhandler",
+        "value": "forsikringsselskab",
+        "text": "Forsikringsselskab (ASL §10)",
+        "checked": false,
+        "disabled": false,
+        "large": true
+      }
+    ]
+  }
+}

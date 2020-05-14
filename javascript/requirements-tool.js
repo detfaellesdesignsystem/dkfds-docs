@@ -1,14 +1,16 @@
 'use strict';
-import tippy from 'tippy.js';
 import "@babel/polyfill";
+import tippy from 'tippy.js';
 import MicroModal from 'micromodal';
 let toolIsProcessing = false;
-require('./theme');
+
+import * as DKFDS from 'dkfds';
 
 
 let questionnaire = {};
 const storageKey = "reqTool";
 const root = window.location.origin + "/krav-vaerktoej";
+const restart = window.location.origin + '/komigang/krav/';
 
 let questions = [
     {'id': "Q100", "path": "/anvendes-af-virksomheder/", "status": true},
@@ -78,7 +80,10 @@ krav[13] = {"title": "Krav til løsninger, der skal på borger.dk og Virk", "kra
     ]};
 
 
+
 document.addEventListener("DOMContentLoaded", function(){
+
+    new DKFDS.Navigation();
 
     tippy('.js-tippy', {
         duration: 0,
@@ -89,14 +94,46 @@ document.addEventListener("DOMContentLoaded", function(){
         onShow: function(){
             document.getElementsByTagName('body')[0].classList.add('modal-active');
         },
-        onClose: function(){
+        onClose: function(modal){
             document.getElementsByTagName('body')[0].classList.remove('modal-active');
+            if(modal.getAttribute('id') == "modal-print") {
+                document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
+                document.getElementById('solution-name-error').classList.add('d-none');
+                document.getElementById('solution-name-input').removeAttribute('aria-describedby');
+                document.getElementById('modal-print-error-summary').classList.add('d-none')
+            }
         }
     });
 
+    if(document.getElementsByTagName('body')[0].classList.contains('page-resultat')) {
+        let elemToObserve = document.getElementById('modal-print');
+        let stateToObserve = document.getElementById('modal-print').classList.contains('is-open');
+        var observer = new MutationObserver(function (mutations) {
+            for(let mutation in mutations) {
+                if (mutations[mutation].attributeName == "class") {
+                    let newStateToObserve = mutations[mutation].target.classList.contains('is-open');
+                    if (stateToObserve === true && newStateToObserve === false) {
+                        stateToObserve = newStateToObserve;
+                        if (document.getElementById('print-title').getAttribute('data-print') === "true") {
+                            document.getElementById('print-title').setAttribute('data-print', "false");
+                            window.print();
+                        }
+                    } else {
+                        stateToObserve = newStateToObserve;
+                    }
+                }
+            }
+        });
+        observer.observe(elemToObserve, {attributes: true});
+    }
+
     let backlink = document.getElementById('back-link');
     if(backlink !== null){
-        backlink.addEventListener('click', goBack);
+        backlink.addEventListener('click', goOneQuestionBack);
+    }
+    let backlinkMobile = document.getElementById('back-link-mobile');
+    if(backlinkMobile !== null){
+        backlinkMobile.addEventListener('click', goOneQuestionBack);
     }
 
     questionnaire = getQuestionnaire();
@@ -119,13 +156,6 @@ document.addEventListener("DOMContentLoaded", function(){
         closeClass[0].addEventListener('click', closeTool);
     }
 
-    let printBtn = document.getElementsByClassName('print-btn');
-    if(printBtn.length !== 0){
-        printBtn[0].addEventListener('click', function(){
-            window.print();
-        });
-    }
-
     // alert upon closing page
     window.onbeforeunload = function (e) {
         let showPopup = true;
@@ -133,10 +163,9 @@ document.addEventListener("DOMContentLoaded", function(){
             showPopup = false;
         } else {
             let activeElement = document.activeElement;
-            if(activeElement.href !== undefined && (activeElement.innerText === "Redigér" || activeElement.innerText === "Tilbage")){
+            if(activeElement.href !== undefined && (activeElement.innerText === "Redigér" || activeElement.innerText === "Tilbage" || activeElement.getAttribute('href') === "https://github.com/detfaellesdesignsystem/dkfds-components/issues/108" || activeElement.getAttribute('href').indexOf('mailto:') !== -1)){
                 showPopup = false;
             }
-
         }
 
         if(showPopup) {
@@ -158,13 +187,26 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 let printResultHandler = function(){
-    let printButton = document.getElementById('print-btn');
+    let printButton = document.getElementById('print-result-solution');
     if(printButton !== null){
         printButton.addEventListener('click', function(){
-            window.print();
+            let value = document.getElementById('solution-name-input').value;
+            if(value !== "") {
+                document.getElementById('print-title').innerText = 'Fælles aftalte krav som "' + value + '" skal efterleve';
+                document.getElementById('print-title').setAttribute('data-print', "true");
+                document.getElementById('result-container').getElementsByTagName('h1')[0].classList.add('d-print-none');
+                document.getElementById('print-title').classList.add('d-print-block');
+                MicroModal.close('modal-print');
+            } else{
+                document.getElementById('print-title').setAttribute('data-print', "false");
+                document.getElementById('result-container').getElementsByTagName('h1')[0].classList.remove('d-print-none');
+                document.getElementById('print-title').classList.remove('d-print-block');
+                MicroModal.close('modal-print');
+            }
         });
     }
 };
+
 let startOverButtonHandler = function(){
     let button = document.getElementById('start-over');
     if(button !== null){
@@ -271,6 +313,7 @@ let getQuestionnaire = function(){
     return JSON.parse(reqTool);
 };
 
+
 /**
  * Save questionnaire to localstorage
  */
@@ -286,15 +329,20 @@ let saveQuestionnaire = function(){
 let validate = function(){
     let radio = document.querySelector('input[name="radio"]:checked');
     if(radio === null){
+        let errorText = "Vælg venligst Ja eller Nej";
         document.getElementsByClassName('form-group')[0].classList.add('form-error');
-        document.getElementById('error-message').innerText = "Vælg venligst Ja eller Nej";
+        document.getElementById('error-message').innerText = errorText;
         document.getElementById('error-message').classList.remove('d-none');
+        document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = '<li><a href="#radio-yes" class="function-link">'+errorText+'</a></li>';
+        document.getElementById('error-summary').classList.remove('d-none');
         return false;
     }
 
     document.getElementsByClassName('form-group')[0].classList.remove('form-error');
     document.getElementById('error-message').classList.add('d-none');
     document.getElementById('error-message').innerText = "";
+    document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = "";
+    document.getElementById('error-summary').classList.add('d-none');
     return true;
 };
 
@@ -307,53 +355,87 @@ let goTo = function(url){
     window.location.href =  root + url;
 };
 
-/**
- * Go back to previous page
- */
-let goBack = function(){
-    window.history.back();
+
+let goOneQuestionBack = function(){
+    let current = getCurrentFormId();
+    let nextQuestion = getPreviousActiveQuestion(current);
+    goTo(nextQuestion.path);
+};
+
+let getPreviousActiveQuestion = function(current){
+    let getIndexOfCurrent = getIndexOfQuestion(current);
+    let prevIndex = getIndexOfCurrent-1;
+    let nextQuestion = questions[prevIndex];
+    if(nextQuestion.status === true){
+        return nextQuestion;
+    }
+
+    return getPreviousActiveQuestion(nextQuestion.id);
+};
+
+let validateAllQuestions = function (){
+    let error = false;
+    let errorQuestions = [];
+    questions.forEach(question => {
+        if(question.status === true && question.id !== 'Q000'){
+            if(questionnaire[question.id] === undefined){
+                error = true;
+                errorQuestions.push(question);
+            }
+        }
+    });
+
+    return errorQuestions;
 };
 
 /**
  * Set correct chosen values on results page. Hide Questions not answered.
  */
 let generateResult = function () {
-    if(document.querySelector('body.page-resultat') !== null){
-        if(Object.getOwnPropertyNames(getQuestionnaire()).length === 0){
-         goTo('');
-         return;
-        }
+    let errorQuestions = validateAllQuestions();
+    if(errorQuestions.length === 0){
+        if(document.querySelector('body.page-resultat') !== null){
+            if(Object.getOwnPropertyNames(getQuestionnaire()).length === 0){
+                window.location.href = restart;
+                return;
+            }
 
-        let summaryTable = document.getElementById('summary');
-        let rows = summaryTable.getElementsByTagName('tr');
-        for(let i = 0; i < rows.length; i++){
-            let id = rows[i].id;
-            let value = questionnaire[id];
-            if(value === undefined){
-                rows[i].classList.add('d-none');
-                continue;
+            let summaryTable = document.getElementById('summary');
+            let rows = summaryTable.getElementsByTagName('tr');
+            for(let i = 0; i < rows.length; i++){
+                let id = rows[i].id;
+                let value = questionnaire[id];
+                if(value === undefined){
+                    rows[i].classList.add('d-none');
+                    continue;
+                }
+                if(value === true){
+                    rows[i].querySelector('.value').innerText = "Ja";
+                } else {
+                    rows[i].querySelector('.value').innerText = "Nej";
+                }
+                rows[i].classList.remove('d-none');
             }
-            if(value === true){
-                rows[i].querySelector('.value').innerText = "Ja";
-            } else {
-                rows[i].querySelector('.value').innerText = "Nej";
-            }
-            rows[i].classList.remove('d-none');
-        }
 
-        let resultTable = document.getElementById('resultat');
-        let resultRows = resultTable.getElementsByTagName('tr');
-        for (let v = 0; v < resultRows.length; v++){
-            let kravNo = v+1;
-            let badge = resultRows[v].getElementsByTagName('label')[0];
-            if(isThisAKrav(kravNo)){
-                badge.innerText = "Krav";
-                badge.classList.add('badge-warning');
-            } else{
-                badge.innerText = "Anbefaling";
-                badge.classList.add('badge-info');
+            let resultTable = document.getElementById('resultat');
+            let resultRows = resultTable.getElementsByTagName('tr');
+            for (let v = 0; v < resultRows.length; v++){
+                let kravNo = v+1;
+                let badge = resultRows[v].getElementsByTagName('label')[0];
+                if(isThisAKrav(kravNo)){
+                    badge.innerText = "Krav";
+                    badge.classList.add('badge-warning');
+                } else{
+                    badge.innerText = "Anbefaling";
+                    badge.classList.add('badge-info');
+                }
             }
+            document.getElementById('result-container').classList.remove('d-none');
         }
+    } else if(document.getElementById('error-container') !== null){
+        toolIsProcessing = true;
+        document.getElementById('continue-questionnaire-link').setAttribute('href', root + errorQuestions[0].path)
+        document.getElementById('error-container').classList.remove('d-none');
     }
 };
 
@@ -412,8 +494,7 @@ let getCurrentFormId = function(){
  */
 let checkTotalMeltdown = function(){
   if (getCurrentFormId() !== false && questions[getIndexOfQuestion(getCurrentFormId())].status === false){
-      localStorage.removeItem(storageKey);
-      goTo('');
+      closeTool();
   }
 };
 
@@ -423,5 +504,11 @@ let startOver = function(){
 };
 let closeTool = function(){
     localStorage.removeItem(storageKey);
-    goTo('');
+
+    toolIsProcessing = true;
+    if(window.location.href.indexOf('krav-vaerktoej/resultat/') === -1){
+        toolIsProcessing = false;
+
+    }
+    window.location.href = restart;
 };

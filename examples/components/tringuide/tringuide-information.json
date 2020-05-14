@@ -9,7 +9,6 @@
       {
         "text": "Trin 2 (valgt)",
         "information": "Informationstekst for trin 2",
-        "icon": "check",
         "active": true,
         "current": true
       },

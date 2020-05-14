@@ -1,0 +1,59 @@
+{
+  "alert_example": {
+    "name": "error",
+    "classes": "alert-error mt-0 mb-8",
+    "title": "Der er problemer",
+    "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#example-name\">Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Christian Emil Vestergaard Christiansen</a></li><li><a class=\"function-link\" href=\"#nationalitet1\">Angiv om du er dansk, svensk eller anden nationalitet</a></li><li><a class=\"function-link\" href=\"#date-day\">Datoen kan ikke være i fremtiden</a></li></ul>",
+    "role": "alert",
+    "contentContainer": false
+  },
+  "dateObject": {
+    "label": "Hvornår blev dit pas udstedt?",
+    "hint": "Fx: 05 12 2018",
+    "day": "Dag",
+    "month": "Måned",
+    "year": "År",
+    "error": "Datoen kan ikke være i fremtiden",
+    "dayValue": "01",
+    "monthValue": "12",
+    "yearValue": "2076",
+    "id": "example-date"
+  },
+  "textinput_example": {
+    "id": "example-name",
+    "label": "Hvad er dit fulde navn?",
+    "name": "form-error",
+    "error": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Christian Emil Vestergaard Christiansen"
+  },
+  "checkbox_error_examples": {
+    "items": [
+      {
+        "id": "nationalitet1",
+        "name": "nationalitet",
+        "value": "dansk",
+        "checked": false,
+        "disabled": false,
+        "text": "Dansk",
+        "large": true
+      },
+      {
+        "id": "nationalitet2",
+        "name": "nationalitet[]",
+        "value": "svensk",
+        "checked": false,
+        "disabled": false,
+        "text": "Svensk",
+        "large": true
+      },
+      {
+        "id": "nationalitet3",
+        "name": "nationalitet[]",
+        "value": "anden",
+        "checked": false,
+        "disabled": false,
+        "text": "Anden nationalitet",
+        "large": true
+      }
+    ]
+  }
+}

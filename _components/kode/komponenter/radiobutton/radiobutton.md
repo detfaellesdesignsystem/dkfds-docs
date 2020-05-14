@@ -12,8 +12,8 @@ anchor: true
 subnav:
 - text: Hjælpetekst
   href: '#hjaelpetekst'
-- text: Fejlbesked
-  href: '#fejlbesked'
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
 - text: Lille radioknap
   href: '#lille-radioknap'
 - text: Skjult indhold (Collapse)
@@ -46,8 +46,8 @@ Radioknappernes design er ændret i forhold til standardvisningen for at gøre d
 ### Hjælpetekst
 {% include code/syntax.html component="radiobutton-helptext" link="true" %}
 
-{:#fejlbesked}
-### Radioknap med fejl
+{:#fejlmeddelelse}
+### Radioknap med fejlmeddelelse
 {% include code/syntax.html component="radiobutton-error" link="true" %}
 
 {:#lille-radioknap}

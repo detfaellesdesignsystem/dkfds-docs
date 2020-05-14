@@ -9,9 +9,10 @@
     "build-html": "gulp html",
     "postinstall": "bundle",
     "prestart": "npm run build",
-    "start": "bundle exec jekyll serve",
-    "publish": "npm run build && bundle exec jekyll build && gulp publish",
-    "deploy": "bundle exec jekyll build && gulp publish"
+    "start": "bundle exec jekyll serve --config _config.yml,_config.dev.yml",
+    "publish": "npm run build && bundle exec jekyll build --config _config.yml && gulp publish",
+    "publish-dev": "npm run build && bundle exec jekyll build --config _config.yml,_config.dev.yml && gulp publish",
+    "deploy": "bundle exec jekyll build --config _config.yml,_config.dev.yml && gulp publish"
   },
   "dependencies": {
     "@babel/polyfill": "^7.6.0",

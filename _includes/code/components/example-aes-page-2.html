@@ -1,28 +1,26 @@
 <header class="header">
 
     <!--1A: Portal header -->
-    <div class="portal-header">
+    <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn"
                 class="logo alert-leave">
             </a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
+                class="button button-secondary button-small button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><span class="username bold">Christian Emil
-                        Vestergaard Christiansen<br><span
-                            class="weight-normal">Forsikringens
-                            Forsikringsfirma</span></span> </p>
+                <p class="user"><span class="username">Christian Emil
+                        Vestergaard Christiansen, Forsikringens
+                        Forsikringsfirma</span> </p>
 
-                <a href="#"
-                    class="button button-secondary alert-leave d-print-none"
-                    role="button">
+                <button
+                    class="button button-secondary button-small  alert-leave d-print-none">
                     Log af
-                </a>
+                </button>
             </div>
         </div>
     </div>
@@ -63,9 +61,9 @@
             <p class="user"><span class="weight-semibold">Christian Emil
                     Vestergaard
                     Christiansen</span><br />Forsikringens Forsikringsfirma</p>
-                <a href="#" class="button button-secondary button-signout">
-                    Log af
-                </a>
+            <a href="#" class="button button-secondary button-signout">
+                Log af
+            </a>
         </div>
 
         <div class="solution-info-mobile">
@@ -159,12 +157,11 @@
 
     <h1>Hvis AES har spørgsmål til sagen</h1>
     <div class="form-group">
-        <label class="form-label " for="id-company-contact"
-            id="form-label-id-company-contact">
+        <label class="form-label " for="id-company-contact">
             Virksomhedens kontaktperson
         </label>
 
-        <input class="form-input  input-width-m "
+        <input class="form-input input-width-m"
             placeholder="Svend Pedersen" id="id-company-contact" value=""
             name="Input til virksomhedens kontaktperson" type="text"
             readonly>
@@ -174,14 +171,13 @@
         Vælg en anden kontaktperson</button>
     <div class="mt-5">
         <div class="form-group">
-            <label class="form-label " for="id-company-number"
-                id="form-label-id-company-number">
+            <label class="form-label " for="id-company-number">
                 Telefonnummer til kontaktperson
             </label>
 
-            <input class="form-input  input-width-xs "
-                id="id-company-number" value=""
-                name="Telefonnummer til kontaktperson" type="text">
+            <input class="form-input input-width-xs" id="id-company-number"
+                value="" name="Telefonnummer til kontaktperson"
+                type="text">
         </div>
     </div>
     <nav class="page-navigation d-print-none">

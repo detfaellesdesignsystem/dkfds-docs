@@ -14,14 +14,15 @@ tags:
 - "brødtekst"
 - "hjælpetekst"
 - "fejlbesked"
+- "fejlmeddelelser"
 anchor: true
 subnav:
 - text: Manchet tekst
   href: "#manchet-tekst"
 - text: Brødtekst
   href: "#brødtekst"
-- text: Hjælpetekst og fejlbeskeder
-  href: "#hjælpetekst-og-fejlbeskeder"
+- text: Hjælpetekst og fejlmeddelelser
+  href: "#hjælpetekst-og-fejlmeddelelser"
 - text: Stor tekst
   href: "#stor-tekst"
 ---

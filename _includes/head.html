@@ -6,7 +6,9 @@
 ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-
+  {% if site.environment == "development" %}
+  <meta name="robots" content="noindex" />
+  {% endif %}
 <!-- Title and meta description
 ================================================== -->
   {% include meta.html %}
@@ -33,7 +35,7 @@
 <link rel="preload" href="{{ site.baseurl }}/assets/style/styleguide_virkdk.css" as="style" />
 <link rel="preload" href="{{ site.baseurl }}/assets/js/theme.js" as="script" />
 
-{% if page.tippy %}
+{% if page.tippy or page.layout == 'requirements-tool' %}
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/dist/tippy.css" />
 {% endif %}
 

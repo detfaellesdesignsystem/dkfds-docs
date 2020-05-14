@@ -33,8 +33,8 @@ Angiv tekstområdets højde, så det modsvarer den tekstmængde, du forventer, a
 
 Overvej at begrænse antallet af tegn, hvis det giver mening.
 
-Vis kun fejlbeskeder, når brugeren har indtastet en ugyldig værdi.
+Vis kun fejlmeddelelser, når brugeren har indtastet en ugyldig værdi.
 
-Fejlbeskeder skal være meningsfulde og hjælpsomme. 
+Fejlmeddelelser skal være meningsfulde og hjælpsomme. 
 
-Placér fejlbeskeder mellem label og felt, og markér feltet med rødt.
+Placér fejlmeddelelser mellem label og felt, og markér feltet med rødt.

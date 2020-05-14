@@ -6,6 +6,15 @@ function isValidEmailAddress(emailAddress) {
 };
 
 $( document ).ready(function( $ ) {
+    if($('body').hasClass('page-tilmelding-til-nyhedsmail')){
+        let urlparams = window.location.search.substr(1).split('&');
+        let response = urlparams[0].split('=');
+        if (response[0] == 'response'){
+            let message = decodeURI(response[1]);
+            $('#newsletter-message .alert-text').html(message);
+            $('#newsletter-message').removeClass('d-none');
+        }
+    }
 
     if ( $('.newsletter-container').length ) {
 
@@ -51,11 +60,14 @@ $( document ).ready(function( $ ) {
                     e.preventDefault();
 
                     var tilmeld = 'Tilmeld';
-                    let error = false;
+                    let error = false
+
+                    $('#mail-error-summary .nobullet-list').html('');
 
                     if (!isValidEmailAddress($("#i_newsform_email").val())) {
                         $('#i_newsform_email').parent('.form-group').addClass('form-error');
-                        $('#i_newsform_email').parent('.form-group').find('.form-error-message')[0].innerHTML = "E-mailadresse er ikke gyldig.";
+                        $('#mail-error-summary .nobullet-list').append('<li><a class="function-link" href="#i_newsform_email">Indtast en gyldig e-mailadresse.</a></li>');
+                        $('#i_newsform_email').parent('.form-group').find('.form-error-message')[0].innerHTML = "Indtast en gyldig e-mailadresse.";
                         $("#i_newsform_email").focus();
                         error = true;
                     } else{
@@ -70,6 +82,7 @@ $( document ).ready(function( $ ) {
 
                     if ( segmentid.length == 0 ) {
                         $($('#subscriptions').parents('.form-group')[0]).addClass('form-error');
+                        $('#mail-error-summary .nobullet-list').append('<li><a class="function-link" href="#'+$($('#subscriptions input')[0]).attr('id')+'">Der skal vælges minimum et nyhedsbrev.</a></li>');
                         $($('#subscriptions').parents('.form-group')[0]).find('.form-error-message')[0].innerHTML = "Der skal vælges minimum et nyhedsbrev.";
                         if(error !== true) {
                             $("#newsform [type='checkbox']:first").focus();
@@ -79,12 +92,10 @@ $( document ).ready(function( $ ) {
                         $($('#subscriptions').parents('.form-group')[0]).removeClass('form-error');
                         $($('#subscriptions').parents('.form-group')[0]).find('.form-error-message')[0].innerHTML = "";
                     }
-                    console.log('check', $("#samtykke-check").prop('checked'));
                     if(!$("#samtykke-check").prop('checked')){
                         error = true;
-                        console.log('hej');
-
                         $('#samtykke-group').addClass('form-error');
+                        $('#mail-error-summary .nobullet-list').append('<li><a class="function-link" href="#samtykke-check">Giv os venligst samtykke, så vi må opbevare din mailadresse. Uden dit samtykke kan vi ikke sende dig nyhedsmails.</a></li>');
                         document.querySelector('#samtykke-group .form-error-message').innerHTML = "Giv os venligst samtykke, så vi må opbevare din mailadresse. Uden dit samtykke kan vi ikke sende dig nyhedsmails.";
                     } else{
 
@@ -93,8 +104,11 @@ $( document ).ready(function( $ ) {
                     }
 
                     if(error === true) {
+                        $('#mail-error-summary').removeClass('d-none');
                         return false;
                     }
+
+                    $('#mail-error-summary').addClass('d-none');
                     $.ajax({
                         url: 'https://w2l.dk/pls/wopdprod/aboutils.abo_submit_drupal',
                         type: "POST",
@@ -110,10 +124,9 @@ $( document ).ready(function( $ ) {
                             frameld: ''
                         },
                         success: function( xmlResponse ) {
-                            $('#newsletter-message .alert-text').html($(xmlResponse).text());
-                            $('#newsletter-message').removeClass('d-none');
-                            $('.newsletter-container .form-error-message').addClass('d-none');
-                            $('.newsletter-container .form-error').removeClass('form-error');
+                            let url = window.location.origin + '/omdesignsystemet/nyhedsmail/tilmeldt?';
+                            url += 'response='+encodeURI($(xmlResponse).text());
+                            window.location.href = url;
                         }
                     });
 
@@ -131,7 +144,6 @@ $( document ).ready(function( $ ) {
                         $('#i_newsform_email').parent('.form-group').addClass('form-error');
                         $('#i_newsform_email').parent('.form-group').find('.form-error-message')[0].innerHTML = "E-mailadresse er ikke gyldig.";
                         $('#i_newsform_email').parent('.form-group').find('.form-error-message').removeClass('d-none');
-                        $("#i_newsform_email").focus();
                         error = true;
                     } else{
                         $('#i_newsform_email').parent('.form-group').removeClass('form-error');

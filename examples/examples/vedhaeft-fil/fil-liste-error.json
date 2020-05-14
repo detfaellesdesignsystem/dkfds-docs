@@ -1,4 +1,5 @@
 {"portal_header_data": {
+  "compact": true,
     "user": {
       "name": "Christian Emil Vestergaard Christiansen"
     },
@@ -69,7 +70,7 @@
   "id": "options2",
   "label": "Navngiv dokument",
   "classLabel": "sr-only",
-  "formError": "Angiv navn på dokument",
+  "formError": "Vælg et navn til dokumentet Fuldmagt_88.pdf",
   "options": [
     {
       "value": "Lægeerklæring",
@@ -86,8 +87,15 @@
     {
       "value": "Spørgeskema",
       "text": "Spørgeskema"
-    }
-  ]
-}
+    }]
+  },
+  "error_summary": {
+    "name": "error",
+    "classes": "alert-error mt-0 mb-8",
+    "title": "Der er problemer",
+    "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a class=\"function-link\" href=\"#fileinput\">Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</a></li><li><a class=\"function-link\" href=\"#options2\">Vælg et navn til dokumentet Fuldmagt_88.pdf</a></li></ul>",
+    "contentContainer": false,
+    "role": "alert"
+  }
 }
 

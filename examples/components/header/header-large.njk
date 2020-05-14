@@ -1,0 +1,26 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+
+<header class="header">
+  {{ portal_header(portal_header_data) }}
+  {{ solution_header(solution_header_data) }}
+
+  <div class="overlay"></div>
+  <nav class=" nav"> <!-- collapsible-->
+    <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+
+    <div class="portal-info-mobile">
+      <p class="user bold">Lone Hansen</p>
+      <a href="#" class="button button-secondary button-signout">
+        Log af
+      </a>
+    </div>
+
+    <div class="solution-info-mobile">
+      <p class="bold">Myndighedsnavn</p>
+      <p>Support: 12 34 56 78</p>
+    </div>
+
+  </nav> <!-- collapsible nav end-->
+</header>

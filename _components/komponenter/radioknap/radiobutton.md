@@ -13,8 +13,8 @@ tags:
 subnav:
 - text: Hjælpetekst
   href: '#hjælpetekst'
-- text: Fejlbesked
-  href: '#fejlbesked'
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
 - text: Lille radioknap
   href: '#lille-radioknap'
 - text: Skjult indhold (Collapse)

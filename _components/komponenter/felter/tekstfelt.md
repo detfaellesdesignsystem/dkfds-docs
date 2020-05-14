@@ -6,29 +6,41 @@ title: Felter
 tags:
 - tekstfelt
 - input
+- fejlbesked
+- fejlmeddelelse
+- fejl på felt
+- hjælpetekst
+- hjælp på felt
+- felt
+- felter
+- længde på felter
+- deaktiveret felt
+- read-only
+- feltbredde
+- låst felt
 category: Komponenter_category
 description: Felt til indtastning af information i form af bogstaver, tal og en kombination
   af begge.
 subcategory: Komponenter
 anchor: true
 subnav:
-- text: Fejlbesked
-  href: "#fejlbesked"
-- text: Frivilligt felt
-  href: "#frivilligt-felt"
-- text: Hjælpetekst
-  href: "#hjælpetekst"
+- text: Felt med fejlmeddelelse
+  href: "#felt-med-fejlmeddelelse"
+- text: Felt med frivillig indtastning
+  href: "#felt-med-frivillig-indtastning"
+- text: Felt med hjælpetekst
+  href: "#felt-med-hjælpetekst"
+- text: Deaktiveret felt
+  href: "#deaktiveret-felt"
+- text: Read-only felt
+  href: "#read-only-felt"
 - text: Feltbredde
   href: "#feltbredde"
-- text: Deaktiveret
-  href: "#deaktiveret"
-- text: Readonly
-  href: "#readonly"
 component: text-input
 componentTitle: Eksempel på tekst felter
 componentCode: "/kode/komponenter/felter/"
----
 
+---
 {:.h3 #retningslinjer}
 ## Anvendes til
 
@@ -50,11 +62,11 @@ Når brugeren skal vælge ud fra et prædefineret sæt af værdier, og der er be
 
 Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.
 
-Vis kun fejlbeskeder, når brugeren har indtastet en ugyldig værdi.
+Vis kun fejlmeddelelser, når brugeren har indtastet en ugyldig værdi.
 
-Fejlbeskeder skal være meningsfulde og hjælpsomme. 
+Fejlmeddelelser skal være meningsfulde og hjælpsomme. 
 
-Placér fejlbeskeder mellem label og feltet, som bliver markeret med rødt.
+Placér fejlmeddelelser mellem label og feltet, som bliver markeret med rødt.
 
 Felter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.
 

@@ -1,5 +1,5 @@
 ---
-title: Frivilligt felt
+title: Felt med frivillig indtastning
 parent: Text-field
 order: 50
 component: text-input-optional
