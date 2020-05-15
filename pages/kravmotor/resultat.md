@@ -135,7 +135,6 @@ print: true
     <div><button class="button button-primary d-print-none mt-9" id="close-tool">Luk krav-værktøjet</button></div>
 </div>
 
-
 <div class="modal d-print-none" id="modal-print" aria-hidden="true">
     <div class="modal__overlay bg-modal" tabindex="-1"
         data-micromodal-close>
@@ -147,11 +146,22 @@ print: true
                 </h1>
             </div>
             <div class="modal__content">
+                <div class="alert alert-error d-none" id="modal-print-error-summary" role="alert">
+                    <div class="alert-body">
+                        <p class="alert-heading">Hov, der er problemer</p>
+                        <ul class="alert-text nobullet-list">
+                            <li><a class="function-link" href="#solution-name-input">Indtast løsningens navn</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="form-group">
                     <label class="form-label sr-only" for="solution-name-input"
                         id="form-label-solution-name">
                         Løsningens navn
                     </label>
+                     <span class="form-error-message d-none" id="solution-name-error">
+                            Indtast løsningens navn
+                        </span>
                     <input class="form-input" required id="solution-name-input" value=""
                         name="solution-name-input" type="text">
                 </div>

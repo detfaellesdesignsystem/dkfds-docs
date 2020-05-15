@@ -276,10 +276,21 @@
                 </h1>
             </div>
             <div class="modal__content">
+                <div class="alert alert-error d-none" id="modal-print-error-summary" role="alert">
+                    <div class="alert-body">
+                        <p class="alert-heading">Hov, der er problemer</p>
+                        <ul class="alert-text nobullet-list">
+                            <li><a class="function-link" href="#solution-name-input">Indtast løsningens navn</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="form-group">
                     <label class="form-label sr-only" for="solution-name-input" id="form-label-solution-name">
                         Løsningens navn
                     </label>
+                     <span class="form-error-message d-none" id="solution-name-error">
+                            Indtast løsningens navn
+                        </span>
                     <input class="form-input" required="" id="solution-name-input" value="" name="solution-name-input" type="text" />
                 </div>
             </div>

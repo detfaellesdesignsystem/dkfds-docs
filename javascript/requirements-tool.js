@@ -185,7 +185,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 });
-
 let printResultHandler = function(){
     let printButton = document.getElementById('print-result-solution');
     if(printButton !== null){
@@ -194,14 +193,19 @@ let printResultHandler = function(){
             if(value !== "") {
                 document.getElementById('print-title').innerText = 'Fælles aftalte krav som "' + value + '" skal efterleve';
                 document.getElementById('print-title').setAttribute('data-print', "true");
+                document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
+                document.getElementById('solution-name-error').classList.add('d-none')
+                document.getElementById('modal-print-error-summary').classList.add('d-none');
+                document.getElementById('solution-name-input').removeAttribute('aria-describedby');
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.add('d-print-none');
                 document.getElementById('print-title').classList.add('d-print-block');
                 MicroModal.close('modal-print');
             } else{
-                document.getElementById('print-title').setAttribute('data-print', "false");
-                document.getElementById('result-container').getElementsByTagName('h1')[0].classList.remove('d-print-none');
-                document.getElementById('print-title').classList.remove('d-print-block');
-                MicroModal.close('modal-print');
+                // error
+                document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.add('form-error');
+                document.getElementById('solution-name-error').classList.remove('d-none');
+                document.getElementById('modal-print-error-summary').classList.remove('d-none');
+                document.getElementById('solution-name-input').setAttribute('aria-describedby', document.getElementById('solution-name-error').getAttribute('id'))
             }
         });
     }
