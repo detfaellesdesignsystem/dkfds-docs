@@ -1,9 +1,11 @@
 ---
-permalink: /komigang/tilgaengelighed/
+permalink: /krav/tilgaengelighed/
+redirect_from:
+- /komigang/tilgaengelighed/
 layout: styleguide
 title: Tilgængelighed (WCAG 2.1)
-category: Kom_i_gang_category
-subcategory: Kom i gang
+category: Krav_category
+subcategory: Krav
 description: "Hjælp og værktøjer til at efterleve tilgængelighedskrav WCAG 2.1 level AA."
 tags:
 ---

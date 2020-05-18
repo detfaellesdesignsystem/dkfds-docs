@@ -1,12 +1,13 @@
 ---
-permalink: /komigang/designfiler/
+permalink: /design/designressourcer/
 redirect_from:
 - /komigang/tildesignere/
+- /komigang/designfiler/
 - /komigang/tildesignere/design-selvbetjeningsloesninger/
 layout: styleguide
-title: Designfiler
-category: Kom_i_gang_category
-subcategory: Kom i gang
+title: Designressourcer
+category: Design_category
+subcategory: Design
 description: Information om Det Fælles Designsystem, der retter sig mod designere
 lead: Ved at følge designsystemet er du med til at skabe sammenhæng i og mellem de mange offentlige selvbetjeningsløsninger du ikke selv designer, til gavn for alle brugere.
 tags:

@@ -1,9 +1,9 @@
 ---
-permalink: /komigang/krav/om-kravene/
+permalink: /krav/om-kravene/
 layout: styleguide
-title: Om kravene
-category: Kom_i_gang_category
-subcategory: Kom i gang
+title: Om kravene til selvbetjeningsløsninger
+category: Krav_category
+subcategory: Krav
 description: Information om eksterne krav, fælles aftalte krav og krav til digitale løsninger der skal på borger.dk og Virk.
 parentlink: /komigang/krav/
 ---

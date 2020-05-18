@@ -96,12 +96,6 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         onClose: function(modal){
             document.getElementsByTagName('body')[0].classList.remove('modal-active');
-            if(modal.getAttribute('id') == "modal-print") {
-                document.getElementById('modal-print').getElementsByClassName('form-group')[0].classList.remove('form-error');
-                document.getElementById('solution-name-error').classList.add('d-none');
-                document.getElementById('solution-name-input').removeAttribute('aria-describedby');
-                document.getElementById('modal-print-error-summary').classList.add('d-none')
-            }
         }
     });
 
@@ -198,7 +192,7 @@ let printResultHandler = function(){
                 document.getElementById('print-title').classList.add('d-print-block');
                 MicroModal.close('modal-print');
             } else{
-                document.getElementById('print-title').setAttribute('data-print', "false");
+                document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.remove('d-print-none');
                 document.getElementById('print-title').classList.remove('d-print-block');
                 MicroModal.close('modal-print');

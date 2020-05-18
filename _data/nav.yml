@@ -1,16 +1,14 @@
 #Primary menu on desktop:
 primary:
-  - href: /komigang/
   - href: /design/
   - href: /komponenter/
   - href: /eksempler/
   - href: /kode/
+  - href: /krav/
   - href: /omdesignsystemet/
 
 #Primary menu on mobile:
 mobile:
-  - href: /komigang/
-    categorynav: 'Kom_i_gang_category'
   - href: /design/
     categorynav: 'Design_category'
   - href: /komponenter/
@@ -19,6 +17,8 @@ mobile:
     categorynav: 'Eksempler_category'
   - href: /kode/
     categorynav: 'Kode_category'
+  - href: /krav/
+    categorynav: 'Krav_category'
   - href: /omdesignsystemet/
     categorynav: 'Om_designsystemet_category'
 
@@ -26,17 +26,19 @@ mobile:
 Kom_i_gang_category:
 - href: /komigang/krav/
   categorynav: 'Krav_category'
-- href: /komigang/tjekliste/
 - href: /komigang/regler-principper-layout/
-- href: /komigang/designfiler/
-- href: /komigang/tilgaengelighed/
-#- href: /komigang/uxprincipper/
 
+#Left menu for krav-category
+Krav_category:
+- href: /krav/borgerdk-virk/
+- href: /krav/om-kravene/
+- href: /krav/designtjek/
+- href: /krav/tilgaengelighed/
 
 #Left menu for kom igang-category
-Krav_category:
-- href: /komigang/krav/borgerdk-virk/
-- href: /komigang/krav/om-kravene/
+Krav_selvbetjening_category:
+- href: /krav/selvbetjening/borgerdk-virk/
+- href: /krav/selvbetjening/om-kravene/
 
 #Left menu for til udviklere-category
 Til_udviklere_category:
@@ -48,12 +50,18 @@ Design_category:
 - href: /design/farver/
 - href: /design/typografi/
   categorynav: 'Typografi_category'
-- href: /design/grid/
 - href: /design/borders/
 - href: /design/ikoner/
 - href: /design/logoer/
+- href: /design/layout/
+  categorynav: 'Layout_category'
+- href: /design/designressourcer/
+
+Layout_category:
+  - href: /design/layout/grid/
 
 Typografi_category:
+  - href: /design/typografi/fonte/
   - href: /design/typografi/overskrifter/
   - href: /design/typografi/felt-tabel-overskrifter/
   - href: /design/typografi/tekst/
