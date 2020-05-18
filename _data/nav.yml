@@ -22,12 +22,6 @@ mobile:
   - href: /omdesignsystemet/
     categorynav: 'Om_designsystemet_category'
 
-#Left menu for kom igang-category
-Kom_i_gang_category:
-- href: /komigang/krav/
-  categorynav: 'Krav_category'
-- href: /komigang/regler-principper-layout/
-
 #Left menu for krav-category
 Krav_category:
 - href: /krav/borgerdk-virk/
