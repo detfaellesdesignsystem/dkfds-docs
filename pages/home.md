@@ -7,27 +7,9 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
   frem for at diskutere nyt design igen og igen.
 
 ---
-<div class="bg-alternative py-9">
-<div class="container">
-<div class="row">
-<div class="col-12 col-lg-7">
-<h1>Design brugervenlige selvbetjeningsløsninger</h1>
-<p class="font-lead">
-Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk og Virk. Lad os om det trivielle og sæt fokus på at inddrage dine brugere.
-</p>
-<ul class="nobullet-list">
-<li>
-<a href="/komigang/" class="bold-link">Kom godt igang</a>
-</li>
-<li>
-<a href="https://github.com/detfaellesdesignsystem/dkfds-components/" class="icon-link bold-link">Se koden på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-</li>
-</ul>
+<div class="bg-alternative py-9"> <div class="container"> <div class="row"> <div class="col-12 col-lg-7"> <h1>Design brugervenlige selvbetjeningsløsninger</h1> <p class="font-lead"> Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk og Virk. Lad os om det trivielle og sæt fokus på at inddrage dine brugere. </p> <ul class="nobullet-list"> <li> <a href="/krav/" class="bold-link">Krav</a> </li> <li> <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" class="icon-link bold-link">Se koden på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> </li> </ul> </div> <div class="col-12 col-lg-5 align-text-center"> <img id="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/Forside_illu_virk.svg" alt="" class="d-none d-lg-inline-bl_ck">_
 </div>
-<div class="col-12 col-lg-5 align-text-center">
-<img id="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/Forside_illu_virk.svg" alt="" class="d-none d-lg-inline-block">
-</div>
-</div>
+<_div>_
 </div>
 </div>
 
