@@ -22,7 +22,7 @@ Fordele ved at anvende designsystemet:
 * Du følger internationalt anerkendte bedste praksisser.
 * Du sparer tid og ressourcer, og leveringstiden for løsningen bliver hurtigere.
 
-<div class="video-paragraph">
+<div class="video-paragraph my-7">
 <div class="video-container">
 <iframe title="YouTube video om Det Fælles Designsystem" class="youtube-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sFRv0SrC9Rw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
