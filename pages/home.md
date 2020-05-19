@@ -17,9 +17,6 @@ Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk 
 </p>
 <ul class="nobullet-list">
 <li>
-<a href="/komigang/" class="bold-link">Kom godt igang</a>
-</li>
-<li>
 <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" class="icon-link bold-link">Se koden på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 </li>
 </ul>
