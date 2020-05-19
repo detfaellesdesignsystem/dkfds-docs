@@ -15,7 +15,7 @@ parentlink: "/komigang/krav/"
 * Fælles aftalte krav: krav, som de statslige myndigheder, KL og Danske Regioner har udarbejdet i fællesskab.
 * Krav til digitale løsninger, der skal på borger.dk og Virk: krav, som alene omfatter digitale selvbetjeningsløsninger, der skal udstilles på portalerne Virk og borger.dk.
 
-<a href="/krav/">Se hvilke krav og anbefalinger, der gælder din løsning<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+<a href="/krav/">Se hvilke krav og anbefalinger, der gælder din løsning</a>
 
 <h2 class="h4">Eksterne krav</h2>
 
