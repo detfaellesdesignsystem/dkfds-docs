@@ -1,5 +1,5 @@
 ---
-title: Header med større logo, knap og brugeroplysninger
+title: Header med større logo og brugeroplysninger
 parent: Headers
 order: 40
 ---
