@@ -7,15 +7,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
   frem for at diskutere nyt design igen og igen.
 
 ---
----
-permalink: "/"
-layout: landing
-title: Forside
-description: Vær med til at bygge simple og effektive selvbetjeningsløsninger fra
-  et solidt grundlag, der lader dig fokusere på brugervenlighed og brugerinddragelse
-  frem for at diskutere nyt design igen og igen.
 
----
 <div class="bg-alternative py-9">
 <div class="container">
 <div class="row">
