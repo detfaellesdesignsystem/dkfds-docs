@@ -7,7 +7,6 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
   frem for at diskutere nyt design igen og igen.
 
 ---
-
 <div class="bg-alternative py-9">
 <div class="container">
 <div class="row">
@@ -59,7 +58,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
     <hr />
     <div class="py-9">
         <h2 class="mt-0">Support</h2>
-        <p>Se hvilke krav som gælder for din løsning. Har du spørgsmål, så kontakt os på mail, så skal vi hjælpe dig så godt vi kan, men brug GitHub til support og teknik.</p>
+        <p>Har du spørgsmål, så kontakt os på mail, så skal vi hjælpe dig så godt vi kan, men brug GitHub til support og teknik.</p>
         <ul class="nobullet-list">
             <li><a href="/krav/">Se hvilke krav, som gælder for din løsning</a></li>
             <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link"> Meld fejl og mangler ind via GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
