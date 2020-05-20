@@ -10,7 +10,7 @@ import * as DKFDS from 'dkfds';
 let questionnaire = {};
 const storageKey = "reqTool";
 const root = window.location.origin + "/krav-vaerktoej";
-const restart = window.location.origin + '/komigang/krav/';
+const restart = window.location.origin + '/krav/';
 
 let questions = [
     {'id': "Q100", "path": "/anvendes-af-virksomheder/", "status": true},
