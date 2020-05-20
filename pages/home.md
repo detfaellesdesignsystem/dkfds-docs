@@ -14,7 +14,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
 <div class="col-12 col-lg-7">
 <h1>Design brugervenlige selvbetjeningsløsninger</h1>
 <p class="font-lead">
-Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk og Virk. Lad os om det trivielle og sæt fokus på at inddrage dine brugere.
+    Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk og Virk. Lad os om det trivielle og sæt fokus på at inddrage dine brugere.
 </p>
 <ul class="nobullet-list">
 <li>
@@ -33,7 +33,7 @@ Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk 
     <div class="row py-9">
         <div class="col-12 col-lg-4">
             <h2 class="mt-0">Design</h2>
-            <p>Disse grundlæggende designbeslutninger danner fundament for hele systemet af komponenter, eksempler og systemet selv.</p
+            <p>Disse grundlæggende designbeslutninger danner fundament for hele systemet af komponenter, eksempler og systemet selv.</p>
             <p><a href="/design/" class="bold-link">Følg designet</a></p>
         </div>
         <div class="col-12 col-lg-4">

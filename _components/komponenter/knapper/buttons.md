@@ -27,8 +27,6 @@ subnav:
   href: "#knap-med-ikon"
 - text: Ikon som knap
   href: "#ikon-som-knap"
-- text: Lille knap
-  href: "#lille-knap"
 component: button-primary
 componentTitle: Eksempel på primærknap
 componentCode: "/kode/komponenter/knapper/"

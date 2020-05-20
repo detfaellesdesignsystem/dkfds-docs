@@ -15,8 +15,8 @@ subnav:
   href: '#standard-header-med-navigation'
 - text: Kompleks header med alle rækker
   href: '#kompleks-header-med-alle-rækker'
-- text: Header med større logo, knap og brugeroplysninger
-  href: '#header-med-større-logo-knap-og-brugeroplysninger'
+- text: Header med større logo og brugeroplysninger
+  href: '#header-med-større-logo-og-brugeroplysninger'
 ---
 
 {% include code/preview-image.html component="header-simple" code="/kode/komponenter/headers/" %}
