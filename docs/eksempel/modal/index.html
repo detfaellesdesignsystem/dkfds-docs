@@ -82,12 +82,14 @@
 </div>
     <main class="container page-container">
     <h1 id="modal" class="sr-only">Modal</h1>
-    <div class="modal" id="modal-example" aria-hidden="true">
+    <div class="fds-modal" id="modal-example" aria-hidden="true">
+    <div tabindex="0"></div>
     <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-example">
         <div class="modal-header">
-            <h1 class="modal-title h2" id="modal-example">
+            <h2 class="modal-title" id="modal-example">
                 Lorem ipsum
-            </h1>
+            </h2>
+            <button class="modal-close button button-unstyled" aria-label="Luk" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
         </div>
         <div class="modal-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -108,10 +110,9 @@
         </div>
 
         <div class="modal-footer">
-            <button class="button button-primary" aria-label="Fx bekræft handling">Primærknap</button><button class="button button-secondary" data-micromodal-close="" aria-label="Fx lukker modal vinduet">Sekundærknap</button>
+            <button class="button button-primary">Primærknap</button><button class="button button-secondary" data-modal-close="">Luk</button>
         </div>
 
-        <button class="modal-close button button-secondary" aria-label="Close modal" data-modal-close="">Luk</button>
     </div>
 </div>
 
@@ -124,7 +125,6 @@
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
     <script src="/assets/js/requirements-tool~styleguide.js"></script>
-    <script src="/assets/js/dkfds-micromodal-example.js"></script>
     <script src="/assets/js/dkfds-datatables-example.js"></script>
     <script src="/assets/js/dkfds-selectwoo-example.js"></script>
     <script src="/assets/js/dkfds-pikaday-example.js"></script>
