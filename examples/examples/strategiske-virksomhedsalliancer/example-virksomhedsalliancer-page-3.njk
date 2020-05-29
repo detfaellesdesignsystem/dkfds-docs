@@ -31,7 +31,7 @@
 
       <div class="solution-info-mobile">
         <p class="bold">Erhvervsministeriet</p>
-        <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+        <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
     </nav> <!-- collapsible nav end-->
   </header>
@@ -132,4 +132,4 @@
   {{ footer_simple(footer_data) }}
 {% endblock %}
 
-{{ modal('modal-contact', modal_contact_data) }}
+{{ modal(modal_data) }}

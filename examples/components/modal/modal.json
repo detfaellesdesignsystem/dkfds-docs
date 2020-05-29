@@ -1,0 +1,14 @@
+{
+  "modal_data": {
+    "id": "modal-example",
+    "title_id": "modal-example",
+    "title": "Lorem ipsum",
+    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales turpis nec tincidunt dictum. Aliquam hendrerit nunc nec arcu lobortis fringilla. Sed nulla lectus, mollis eget rhoncus sed, porta eu ipsum. Cras eleifend elementum finibus. Mauris ac magna quis orci dapibus suscipit. Vestibulum accumsan turpis diam, ut pretium quam sollicitudin sed. Pellentesque posuere eget tortor quis imperdiet. Pellentesque gravida, enim vel porttitor sagittis, libero neque efficitur justo, nec gravida orci risus consequat lacus. Morbi condimentum tristique sapien, et fringilla ante consectetur at. Nulla vehicula imperdiet augue id cursus. Sed auctor finibus risus, sed consectetur augue sagittis eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas auctor a urna eget ultricies.</p>",
+    "actions": "<button class=\"button button-primary\">Primærknap</button><button class=\"button button-secondary\" data-modal-close>Luk</button>"
+  },
+  "button_example": {
+    "text": "Gem",
+    "class": "primary",
+    "attribute": "data-module=\"modal\" data-target=\"modal-example\""
+  }
+}

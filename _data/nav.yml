@@ -140,6 +140,7 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/funktionslink/
 - href: /kode/komponenter/headers/
 - href: /kode/komponenter/knapper/
+- href: /kode/komponenter/modal/
 - href: /kode/komponenter/overflowmenu/
 - href: /kode/komponenter/radioknap/
 - href: /kode/komponenter/sidenav/
@@ -158,7 +159,6 @@ Kode_Komponenter_category:
 Plugins_category:
   - href: /kode/plugins/datatables/
   - href: /kode/plugins/pikaday/
-  - href: /kode/plugins/micromodal/
   - href: /kode/plugins/selectwoo-multiselect/
   - href: /kode/plugins/tippy/
 
