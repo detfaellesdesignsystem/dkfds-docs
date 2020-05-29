@@ -2350,13 +2350,95 @@
           
 
           
+          
+<div class="component-preview  component-preview-modal" aria-label="Eksempel på modal">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/modal/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="fds-modal" id="modal-example" aria-hidden="true">
+    <div tabindex="0"></div>
+    <div class="modal-content" role="dialog" aria-modal="true"
+        aria-labelledby="modal-example">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-example">
+                Lorem ipsum
+            </h2>
+            <button class="modal-close button button-unstyled"
+                aria-label="Luk"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent sodales turpis nec tincidunt dictum. Aliquam
+                hendrerit nunc nec arcu lobortis fringilla. Sed nulla
+                lectus, mollis eget rhoncus sed, porta eu ipsum. Cras
+                eleifend elementum finibus. Mauris ac magna quis orci
+                dapibus suscipit. Vestibulum accumsan turpis diam, ut
+                pretium quam sollicitudin sed. Pellentesque posuere eget
+                tortor quis imperdiet. Pellentesque gravida, enim vel
+                porttitor sagittis, libero neque efficitur justo, nec
+                gravida orci risus consequat lacus. Morbi condimentum
+                tristique sapien, et fringilla ante consectetur at. Nulla
+                vehicula imperdiet augue id cursus. Sed auctor finibus
+                risus, sed consectetur augue sagittis eget. Orci varius
+                natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. Maecenas auctor a urna eget ultricies.</p>
+        </div>
 
-          <div class="alert alert-info">
-    <div class="alert-body">
-        <p class="alert-text">Modalvindue-komponenten er på vej, men indtil da kan tredjeparts biblioteket <a href="https://micromodal.now.sh/" class="icon-link">Micromodal.js<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> bruges.</p>
-        <p class="alert-text mt-4"><a href="/kode/plugins/micromodal/">Læs mere om brug af Micromodal.js med FDS i kode afsnittet</a></p>
+        <div class="modal-footer">
+            <button
+                class="button button-primary">Primærknap</button><button
+                class="button button-secondary"
+                data-modal-close>Luk</button>
+        </div>
+
     </div>
 </div>
+
+<button class="button button-primary" data-module="modal"
+    data-target="modal-example">
+    Gem
+</button>
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/modal/" class="small-text">Gå til kodeafsnit</a>
+    </div>
+    
+</div>
+
+
+          
+
+          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<ul>
+  <li>Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen. Det kunne fx være en godkendelse af en handling, behov for bekræftelse eller overførsel af rettigheder, som løsningen skal kunne udføre for at kunne fuldføre sin dialog med brugeren.</li>
+  <li>Brug modalvinduer, når du vil være sikker på, at brugeren ser en bestemt dialog og forholder sig til dens indhold.</li>
+</ul>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<ul>
+  <li>Modalvinduer kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.</li>
+  <li>Modalvinduer anvendes ikke til længere, sammenhængende indhold.</li>
+  <li>Modalvinduer anvendes i begrænset omfang, da de kan øge løsningens kognitive load pga brugerens fokus flyttes.</li>
+  <li>Undgå modalvinduer på mobile løsninger og visninger, da de ikke fungerer godt for brugeren.</li>
+</ul>
+
+<h2 class="h3">Vejledning</h2>
+
+<ul>
+  <li>Modalvinduet skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.</li>
+  <li>Knapper i modalvinduet skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige anbefalinger for knapper.</li>
+  <li>Vær sikker på at modalvinduet kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.</li>
+  <li>Brugeren skal selv aktivere modalvinduet. Det må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt.</li>
+</ul>
 
       </section>
     </main>
@@ -2388,9 +2470,6 @@
 <script src="/assets/js/styleguide.js"></script>
 
 
-
-
-<script src="/assets/js/dkfds-micromodal-example.js"></script>
 
 
 

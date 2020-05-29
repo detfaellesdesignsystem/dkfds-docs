@@ -117,8 +117,8 @@
 
                 <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
-                <p><a href="javascript:void(0);"
-                        data-micromodal-trigger="modal-contact"
+                <p><a href="javascript:void(0);" data-module="modal"
+                        data-target="modal-contact"
                         class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
                 </p>
 
@@ -143,8 +143,8 @@
 
         <div class="solution-info-mobile">
             <p class="bold">Erhvervsministeriet</p>
-            <p><a href="javascript:void(0);"
-                    data-micromodal-trigger="modal-contact"
+            <p><a href="javascript:void(0);" data-module="modal"
+                    data-target="modal-contact"
                     class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
@@ -309,51 +309,54 @@
     </div>
 </footer>
 
-<div class="modal" id="modal-contact" aria-hidden="true">
-    <div class="modal__overlay bg-modal" tabindex="-1"
-        data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true"
-            aria-labelledby="modal-contact-1">
-            <div class="modal__header">
-                <h1 class="modal__title h2" id="modal-contact-1">
-                    Kontakt
-                </h1>
-            </div>
-            <div class="modal__content">
-                <div class="alert alert-warning" role="alert">
-                    <div class="alert-body">
-                        <h3 class="alert-heading">Vi har noget information
-                            af advarende karakter</h3>
-                        <p class="alert-text">Noget tekst, der forklarer
-                            det af advarende karakter, som brugeren bør
-                            vide inden denne ringer eller skriver. Noget
-                            tekst, der forklarer det af advarende karakter,
-                            som brugeren bør vide inden denne ringer eller
-                            skriver.</p>
-                    </div>
-                </div>
-                <h3>En form for support</h3>
-                <p>Hvis du har spørgsmål om:</p>
-                <ul>
-                    <li>En ting som denne</li>
-                    <li>Et andet emne som dette</li>
-                </ul>
-                <p>Kan du ringe direkte til: 12 34 56 78</p>
-                <p>Telefonen er åben:</p>
-                <p class="m-0">
-                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    kl. 9-17</p>
-                <p class="m-0">
-                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    kl. 9-17</p>
-                <p class="m-0">
-                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    kl. kl. 9-14</p>
-            </div>
-
-            <button class="modal__close button button-secondary"
-                aria-label="Close modal" data-micromodal-close>Luk</button>
+<div class="fds-modal" id="modal-contact" aria-hidden="true">
+    <div tabindex="0"></div>
+    <div class="modal-content" role="dialog" aria-modal="true"
+        aria-labelledby="modal-contact-title">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-contact-title">
+                Kontakt
+            </h2>
+            <button class="modal-close button button-unstyled"
+                aria-label="Luk"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
         </div>
+        <div class="modal-body">
+            <div class="alert alert-warning" role="alert">
+                <div class="alert-body">
+                    <h3 class="alert-heading">Vi har noget information af
+                        advarende karakter</h3>
+                    <p class="alert-text">Noget tekst, der forklarer det af
+                        advarende karakter, som brugeren bør vide inden
+                        denne ringer eller skriver. Noget tekst, der
+                        forklarer det af advarende karakter, som brugeren
+                        bør vide inden denne ringer eller skriver.</p>
+                </div>
+            </div>
+            <h3>En form for support</h3>
+            <p>Hvis du har spørgsmål om:</p>
+            <ul>
+                <li>En ting som denne</li>
+                <li>Et andet emne som dette</li>
+            </ul>
+            <p>Kan du ringe direkte til: 12 34 56 78</p>
+            <p>Telefonen er åben:</p>
+            <p class="m-0">
+                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                kl. 9-17</p>
+            <p class="m-0">
+                Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl.
+                9-17</p>
+            <p class="m-0">
+                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                kl. kl. 9-14</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="button button-secondary"
+                data-modal-close>Luk</button>
+        </div>
+
     </div>
 </div>
 
@@ -374,6 +377,5 @@
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/requirements-tool~styleguide.js"></script>
 <script src="/assets/js/theme.js"></script>
-<script src="/assets/js/dkfds-micromodal-example.js"></script>
 </body>
 </html>
