@@ -3162,16 +3162,15 @@
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/modal/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/modal/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: modal</span></a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <div class="fds-modal" id="modal-example" aria-hidden="true">
-    <div tabindex="0"></div>
-    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-example">
+        <div class="fds-modal" id="modal-example" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-title">
+    <div class="modal-content">
         <div class="modal-header">
-            <h2 class="modal-title" id="modal-example">
+            <h2 class="modal-title" id="modal-example-title">
                 Lorem ipsum
             </h2>
             <button class="modal-close button button-unstyled" aria-label="Luk" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
@@ -3222,12 +3221,11 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fds-modal"</span> <span class="na">id=</span><span class="s">"modal-example"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-modal=</span><span class="s">"true"</span>
-        <span class="na">aria-labelledby=</span><span class="s">"modal-example"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fds-modal"</span> <span class="na">id=</span><span class="s">"modal-example"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"dialog"</span>
+    <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-example-title"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"modal-example"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"modal-example-title"</span><span class="nt">&gt;</span>
                 Lorem ipsum
             <span class="nt">&lt;/h2&gt;</span>
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal-close button button-unstyled"</span>
