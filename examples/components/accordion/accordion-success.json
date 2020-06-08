@@ -1,33 +1,34 @@
 {
-  "accordion_example3": {
-    "id_prefix": "m-",
-    "multiselectable": true,
+  "accordion_example": {
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",
-        "id": "a1",
-        "expanded": true,
+        "id": "success-a1",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "title": "Consectetur adipiscing elit",
-        "id": "a2",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        "title": "Sed do eiusmod tempor",
-        "id": "a3",
+        "id": "success-a2",
         "expanded": true,
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
+        "title": "Sed do eiusmod tempor",
+        "id": "success-a3",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
         "title": "Labore et dolore magna",
-        "id": "a4",
+        "id": "success-a4",
+        "icon": "check-circle-outline",
+        "icontext": "Success",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "title": "Ut enim ad minim veniam",
-        "id": "a5",
+        "id": "success-a5",
+        "icon": "",
+        "icontext": "",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       }
     ]
