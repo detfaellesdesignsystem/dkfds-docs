@@ -16,7 +16,6 @@ tags:
 - Sørg for at brugeren kan navigere på siden inklusive eventuelle modalvinduer via tastaturet.
 - Brug <a href="https://www.w3.org/WAI/standards-guidelines/aria/" class="icon-link">ARIA<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor det giver mening og øget tilgængelighed.
 - Designsystemets farvekombinationer sikrer, at kontrastforholdet efterlever <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Dobbelttjek andre farver med WebAIMs <a href="https://webaim.org/resources/contrastchecker/" class="icon-link">contrast checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
-- Anvend skip-links på elementer, der gentages fra side til side (header, topmenu, footer).
 - Angiv meningsgivende overskrifter, labels, alternativ tekst, summary, title og description på alle elementer, der har det som mulighed.
 - Anmod om dokumentation for behovet for en foreslået kompleks løsning, og tilbyd altid brugeren et alternativ til indhold, du ikke umiddelbart kan gøre tilgængeligt.
 - En selvbetjeningsløsning er ikke tilgængelig bare fordi den er responsiv og mobile-first. Løsningen skal også fungere ensartet og tilbyde samme indhold på tværs af platforme.
