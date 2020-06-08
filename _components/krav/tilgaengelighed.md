@@ -11,11 +11,11 @@ tags:
 ---
 
 - Overhold <a href="https://digst.dk/digital-service/webtilgaengelighed" class="icon-link">den danske lovgivning<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og krav til tilgængelighed af løsninger for alle brugere.
-- Følg anvisningerne i WCAG 2.1 (2019),  brug evt. <a href="https://webaim.org/" class="icon-link">WebAIM<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> som reference og test med <a href="http://wave.webaim.org/" class="icon-link" lang="en">Wave (Web Accessibilty Evaluation Tool)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- Følg anvisningerne i <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>,  brug evt. <a href="https://webaim.org/" class="icon-link">WebAIM<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> som reference og test med <a href="http://wave.webaim.org/" class="icon-link" lang="en">Wave (Web Accessibilty Evaluation Tool)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - Stræb efter at lave en tydelig og korrekt kode
 - Sørg for at brugeren kan navigere på siden inklusive eventuelle modalvinduer via tab-tasten.
 - Brug <a href="https://www.w3.org/WAI/standards-guidelines/aria/" class="icon-link">ARIA<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor det giver mening og øget tilgængelighed.
-- Designsystemets farvekombinationer sikrer, at kontrastforholdet efterlever WCAG 2.1 (2019). Dobbelttjek andre farver med WebAIMs <a href="https://webaim.org/resources/contrastchecker/" class="icon-link">contrast checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+- Designsystemets farvekombinationer sikrer, at kontrastforholdet efterlever <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Dobbelttjek andre farver med WebAIMs <a href="https://webaim.org/resources/contrastchecker/" class="icon-link">contrast checker<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 - Anvend skip-links på elementer, der gentages fra side til side (header, topmenu, footer).
 - Angiv meningsgivende overskrifter, labels, alternativ tekst, summary, title og description på alle elementer, der har det som mulighed.
 - Anmod om dokumentation for behovet for en foreslået kompleks løsning, og tilbyd altid brugeren et alternativ til indhold, du ikke umiddelbart kan gøre tilgængeligt.
@@ -25,9 +25,9 @@ Har du andre tilgængelighedsværktøj man kan bruge ved udvikling, som du synes
 
 ### Hvorfor tilgængelighed?
 
-Selvbetjeningsløsninger og alle andre offentlige hjemmesider skal overholde den danske lovgivning omkring tilgængelighed på WCAG 2.1 (2019) niveau AA. Du skal teste alle løsninger og deres funktioner op imod disse krav, som ikke blot øger tilgængeligheden for brugere med særlige behov, men for alle brugere.
+Selvbetjeningsløsninger og alle andre offentlige hjemmesider skal overholde den danske lovgivning omkring tilgængelighed på <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> niveau AA. Du skal teste alle løsninger og deres funktioner op imod disse krav, som ikke blot øger tilgængeligheden for brugere med særlige behov, men for alle brugere.
 
-Alt det, du udvikler i og til Det Fælles Designsystem, skal således leve op til lovkravene om at understøtte WCAG 2.1 (2019) på AA niveau.
+Alt det, du udvikler i og til Det Fælles Designsystem, skal således leve op til lovkravene om at understøtte <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> på AA niveau.
 
 Du bør derfor altid overveje følgende spørgsmål, før du udvikler nye funktioner:
 
@@ -60,7 +60,7 @@ En af de store udfordringer i tilgængeligt design er at teste oplæsningen af s
 
 Brug derfor disse tommelfingerregler i forhold til oplæsning:
 
-- Er din kode valid HTML, og opfylder du kravene fra WCAG 2.1 (2019), forhindrer din løsning ikke oplæsning af indholdet.
+- Er din kode valid HTML, og opfylder du kravene fra <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, forhindrer din løsning ikke oplæsning af indholdet.
 - Følg vejledningen fra WebAIM omkring aftestning med Voice Over (Mac) og Oplæser på Windows 10.
 
 ##### Læs mere om oplæsning
