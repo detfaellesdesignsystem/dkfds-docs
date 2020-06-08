@@ -35,6 +35,8 @@ Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger o
 
 Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, dvs. dag, måned og år. Felternes labels skal også afspejle det.
 
+Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.
+
 {:.h3}
 ## Links
 

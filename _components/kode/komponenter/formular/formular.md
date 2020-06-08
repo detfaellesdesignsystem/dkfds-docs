@@ -35,7 +35,7 @@ Overhold derfor sammenhængen mellem den viste rækkefølge af formularelementer
 
 Gruppér sammenhængende formularelementer ved hjælp af fieldset og brug et enkelt legend for hvert fieldset, hvor det giver mening.
 
-Tilføj label til alle formularelementer udover fieldset.
+Tilføj label med korrekt `for` attribut, hvor værdien er ID'et på formularelementet det tilhører.
 
 Sørg for at labels til formularelementer er meningsfulde og præcise.
 
