@@ -30,7 +30,7 @@ Overflow menu bør ikke have mindre end 3 punkter og mere end 7-10 punkter.
 {:.h3}
 ## Vejledning                
 
-Indholdet af en dropdown menu bør være handlingsanvisende i et klart sprog.
+Indholdet af en overflow menu bør være handlingsanvisende i et klart sprog.
 
 Brugerspecifikke handlinger som fx ”Slet” bør placeres til sidst i menuen for at undgå utilsigtede valg.
 

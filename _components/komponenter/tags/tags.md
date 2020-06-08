@@ -6,10 +6,10 @@ title: Tags
 category: Komponenter_category
 subcategory: Komponenter
 description: Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information
-  om indhold, der kan kategoriseres, filtreres eller på anden beskrives med nøgleord.
+  om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
 tags: 
 lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation om
-  indhold, der kan kategoriseres, filtreres eller på anden beskrives med nøgleord.
+  indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
   Tags forekommer med og uden ikon.
 anchor: true
 subnav:
@@ -23,7 +23,7 @@ componentCode: "/kode/komponenter/tags/"
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information om indhold, der kan kategoriseres, filtreres eller på anden beskrives med nøgleord.
+Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
 
 {:.h3}
 ## Anvendes ikke til
