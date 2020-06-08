@@ -14,6 +14,10 @@ subnav:
   href: "#tilføj-ramme"
 - text: Tillad flere åbne accordions
   href: "#tillad-flere-åbne-accordions"
+- text: Med fejl
+  href: "#med-fejl"
+- text: Med succesbeskeder
+  href: "#med-succesbeskeder"
 component: accordion
 componentTitle: "Eksempel på accordion"
 componentCode: "/kode/komponenter/accordions/"

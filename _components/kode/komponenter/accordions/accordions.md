@@ -14,6 +14,10 @@ subnav:
   href: "#tilfoej-ramme"
 - text: Tillad flere åbne accordions
   href: "#tillad-flere-aabne-accordions"
+- text: Med fejl
+  href: "#med-fejl"
+- text: Med succesbeskeder
+  href: "#med-succesbeskeder"
 ---
 
 {% include code/preview-box.html component="accordion-simple" title="Eksempel på accordion komponent" %}
@@ -62,3 +66,11 @@ Tilføj klassen `accordion-bordered` til elementet med klassen `accordion` for a
 ### Tillad flere åbne accordions
 
 For at tillade at flere accordions kan være åbne på samme tid, kan man tilføje klassen `accordion-multiselectable` til elementet med klassen `accordion`.
+
+{:#med-fejl}
+### Med fejl
+{% include code/syntax.html component="accordion-error" %}
+
+{:#med-succesbeskeder}
+### Med succesbeskeder
+{% include code/syntax.html component="accordion-success" %}
