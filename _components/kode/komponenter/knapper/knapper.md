@@ -41,7 +41,7 @@ subnav:
 
 {% include code/syntax.html component="button-primary" %}
 
-- Knapper markeres tydeligt med en fokus tilstand, når brugere ved hjælp af tab-tasten navigerer sig frem til dem.
+- Knapper markeres tydeligt med en fokus tilstand, når brugere ved hjælp af tastaturet navigerer sig frem til dem.
 - Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.
 - Styler du et link, så det ligner en knap, skal du være opmærksom på, at skærmlæsere håndterer et link og en knap forskelligt:
     - Et link aktiveres ved at trykke ”Enter”.

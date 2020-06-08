@@ -24,7 +24,7 @@ componentLink: false
 
 - Linkteksten skal give mening for brugeren og angive, hvad linket fører hen til.
 - Links skal enten være understreget eller markeret på anden vis. Et link må ikke kun være angivet med en farve.
-- Brugerne skal kunne tabulere mellem links og aktivere dem via enter på tastaturet.
+- Brugerne skal kunne sætte fokus på links og aktivere dem ved brug af tastaturet.
 - Links skal have en defineret `href` attribut i koden.
 - Har linket en “hover” skal denne kunne aktiveres både med tastatur og mus.
 

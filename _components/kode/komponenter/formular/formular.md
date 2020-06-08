@@ -43,7 +43,7 @@ Undgå placeholder-tekst. Browserne kan ikke garantere tilstrækkeligt kontrastn
 
 Tillad copy/paste i formularelementer, hvor brugeren selv skal indtaste oplysninger.
 
-Formularelementer skal automatisk fremhæves, når brugeren navigerer til dem ved hjælp af tabulator-tasten.
+Formularelementer skal automatisk fremhæves, når brugeren navigerer til dem ved hjælp af tastaturet.
 
 Sørg for at alle elementer står i register, dvs. at de står på linje og i et naturligt lodret læse-flow fra top til bund.
 

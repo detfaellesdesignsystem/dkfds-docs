@@ -33,12 +33,12 @@ componentCode: "/kode/komponenter/tables/"
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Tabeller anvendes til at præsentere brugeren for tabulær data som fx statistik opstillet i rækker og kolonner.
+Tabeller anvendes til at præsentere brugeren for data som fx statistik opstillet i rækker og kolonner.
 
 {:.h3}
 ## Anvendes ikke til
 
-Tabeller anvendes ikke til at opsætte en sides eller en komponents indhold udover tabulær data.
+Tabeller anvendes ikke til at opsætte en sides eller en komponents indhold udover data.
 
 Overvej at anvende en liste (en unordered eller definition list), hvis det giver brugeren et bedre overblik.
 

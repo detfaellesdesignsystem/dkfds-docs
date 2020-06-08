@@ -29,7 +29,7 @@ Overflow menu skal kunne aktiveres og håndteres fra tastatur.
 
 Overflow menu skjuler indhold for brugeren og bør anvendes i begrænset omfang. 
 
-Overflow menu skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tab-tasten til navigation. 
+Overflow menu skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tastaturet til navigation. 
 
 {:.h4}
 ### Klasser

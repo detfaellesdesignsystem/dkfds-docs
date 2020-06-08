@@ -30,7 +30,7 @@ Andre former for navigation.
 {:.h3}
 ## Vejledning
 
-Et skip link er et skjult link, der kun vises, når en bruger anvender tastaturets tabulator-tast til at navigere ind på siden.
+Et skip link er et skjult link, der kun vises, når en bruger navigerer på siden ved at bruge tastaturet.
 
 Når brugeren trykker på linket (med tastatur eller mus) sættes fokus på første indholdselement på den aktuelle side.
 

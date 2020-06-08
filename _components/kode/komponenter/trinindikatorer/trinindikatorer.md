@@ -38,7 +38,7 @@ Hvis man gør brug af en trinindikator i forbindelse med en <a href="/komponente
 
 ### Tilgængelighed
 
-Tringuides skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tab-tasten til navigation.
+Tringuides skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tastaturet til navigation.
 
 Tringuides kan have et højt kognitivt niveau. Før du vælger at anvende en tringuide, bør du teste en prototype med en alternativ løsning for at se, om det overhovedet er nødvendigt med en tringuide.
 
