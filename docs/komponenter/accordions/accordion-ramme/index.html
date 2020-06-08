@@ -29,6 +29,8 @@
 
 
   
+  <link rel="canonical" href="http://localhost:4000/komponenter/accordions/accordion-ramme/">
+  
 
 <!-- Favicons
 ================================================== -->
@@ -1734,15 +1736,11 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         <ul class="accordion accordion-bordered">
     <li>
-        <button class="accordion-button" aria-expanded="false"
+        <button class="accordion-button" aria-expanded="true"
             aria-controls="b-a1">
-            Lorem ipsum dolor sit amet
-            <span class="accordion-icon">
-                <span class="icon_text">Information</span>
-                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
-            </span>
-        </button>
-        <div id="b-a1" aria-hidden="true" class="accordion-content">
+            Lorem ipsum dolor sit amet</button>
+
+        <div id="b-a1" aria-hidden="false" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -1751,25 +1749,10 @@
         </div>
     </li>
     <li>
-        <button class="accordion-button accordion-error "
-            aria-expanded="true" aria-describedby="b-a2"
+        <button class="accordion-button" aria-expanded="false"
             aria-controls="b-a2">
-            Consectetur adipiscing elit
-            <span class="accordion-icon">
-                <span class="icon_text">Fejl</span>
-                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
-            </span>
-        </button>
-
-        <div id="b-a2" aria-hidden="false" class="accordion-content">
-            <div class="alert alert-error" role="alert"
-                aria-label="Fejlbesked i accordion">
-                <div class="alert-body">
-                    <p class="alert-text">Sed ut perspiciatis unde omnis
-                        iste natus error sit voluptatem accusantium
-                        doloremque laudantium.</p>
-                </div>
-            </div>
+            Consectetur adipiscing elit</button>
+        <div id="b-a2" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -1780,12 +1763,7 @@
     <li>
         <button class="accordion-button" aria-expanded="false"
             aria-controls="b-a3">
-            Sed do eiusmod tempor
-            <span class="accordion-icon">
-                <span class="icon_text">Advarsel</span>
-                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
-            </span>
-        </button>
+            Sed do eiusmod tempor</button>
         <div id="b-a3" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna
@@ -1797,12 +1775,7 @@
     <li>
         <button class="accordion-button" aria-expanded="false"
             aria-controls="b-a4">
-            Labore et dolore magna
-            <span class="accordion-icon">
-                <span class="icon_text">Success</span>
-                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg>
-            </span>
-        </button>
+            Labore et dolore magna</button>
         <div id="b-a4" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna
