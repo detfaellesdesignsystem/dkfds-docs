@@ -39,7 +39,7 @@ Du bør derfor altid overveje følgende spørgsmål, før du udvikler nye funkti
 
 Første skridt på vejen til en tilgængelig løsning er at sikre, at koden i din løsnings brugergrænseflade er valid og følger anbefalingerne fra WHATWG og W3C.
 
-Vær opmærksom på, at tilgængelighed som udgangspunkt er slået fra i Safari. Husk derfor at slå den til under ”Avancerede indstillinger”, før du tester.
+Vær opmærksom på, at synlig fokus på elementer er slået fra i Safari som udgangspunkt. Husk derfor at slå den til under ”Avancerede indstillinger”, før du tester.
 
 Når du skal teste for tilgængelighed, anbefaler Det Fælles Designsystem, at du som minimum anvender analyseværktøjer, som fx:
 
