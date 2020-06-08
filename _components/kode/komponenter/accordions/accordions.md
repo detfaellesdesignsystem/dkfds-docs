@@ -69,8 +69,8 @@ For at tillade at flere accordions kan være åbne på samme tid, kan man tilfø
 
 {:#med-fejl}
 ### Med fejl
-{% include code/syntax.html component="accordion-error" %}
+{% include code/syntax.html component="accordion-error" link="true" %}
 
 {:#med-succesbeskeder}
 ### Med succesbeskeder
-{% include code/syntax.html component="accordion-success" %}
+{% include code/syntax.html component="accordion-success" link="true" %}
