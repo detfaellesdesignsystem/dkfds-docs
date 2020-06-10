@@ -118,6 +118,8 @@ let setStylesheet = function(){
     lnk.href= '/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
 
     document.getElementsByTagName('head')[0].appendChild(lnk);
+    let defaultCSS = document.getElementById('default-css');
+    defaultCSS.parentNode.removeChild(defaultCSS);
 };
 
 let hideThemeAlert = function(){
