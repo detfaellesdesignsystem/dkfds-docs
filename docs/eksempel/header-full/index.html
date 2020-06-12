@@ -119,7 +119,7 @@
             <!--2B: Solution header: Authority name + text -->
             <div class="solution-info">
                 <p class="h5 authority-name">Myndighedsnavn</p>
-                <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
+                <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
             </div>
         </div>
@@ -271,7 +271,7 @@
 
         <div class="solution-info-mobile">
             <p class="h5 authority-name">Myndighedsnavn</p>
-            <p>Support: 12 34 56 78 · <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+            <p>Support: 12 34 56 78 · <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
         </div>
 
@@ -279,16 +279,35 @@
     <!-- Slut: Navigation -->
 </header>
 
-<div class="fds-modal" id="modal-id-1" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-id-1-title">
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-title">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="modal-title" id="modal-id-1-title">
-                Modal title
+            <h2 class="modal-title" id="modal-example-title">
+                Kontakt
             </h2>
             <button class="modal-close button button-unstyled" aria-label="Luk" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
         </div>
         <div class="modal-body">
+            <p>Hvis du har spørgsmål om:</p>
+            <ul>
+                <li>En ting som denne</li>
+                <li>Et andet emne som dette</li>
+            </ul>
+            <p>Kan du ringe direkte til: 12 34 56 78</p>
+            <p>Telefonen er åben:</p>
+            <p class="m-0">
+                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                kl. 9-17</p>
+            <p class="m-0">
+                Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl.
+                9-17</p>
+            <p class="m-0">
+                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                kl. kl. 9-14</p>
+        </div>
 
+        <div class="modal-footer">
+            <button class="button button-secondary" data-modal-close="">Luk</button>
         </div>
 
     </div>
