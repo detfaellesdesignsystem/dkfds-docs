@@ -27,7 +27,7 @@ Du behøver ikke vise en cookiemeddelelse, hvis din løsning kun sætter teknisk
 {:.h3}
 ## Vejledning
 
-Det Fælles Designsystem anviser kun stylingen for cookiemeddelelsen, ikke den tekniske implementering af cookiemeddelelsen.
+Det Fælles Designsystem anviser kun styling for cookiemeddelelsen, ikke den tekniske implementering af cookiemeddelelsen.
 
 Du skal selv tilpasse indholdet i meddelelsen, så den overholder gældende lovgivning og stemmer overens med din løsnings specifikke anvendelse af cookies.
 

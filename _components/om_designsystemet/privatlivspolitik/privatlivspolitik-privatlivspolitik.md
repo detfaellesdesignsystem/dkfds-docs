@@ -51,7 +51,7 @@ Vi arbejder kontinuerligt for at beskytte fortroligheden af de oplysninger, vi b
 
 Oplysninger om dig gemmes så længe, det er nødvendigt for at kunne opfylde vore forpligtelser som offentlig myndighed og for at kunne overholde gældende lovgivning, herunder arkivloven.
 
-Oplysningerne i forbindelse med din tilmelding til at modtage nyhedbrev vil blive opbevaret, indtil du afmelder dit nyhedsabonnement.
+Oplysningerne i forbindelse med din tilmelding til at modtage nyhedsmail vil blive opbevaret, indtil du afmelder dit nyhedsabonnement.
 
 {:.h4}
 ### Retten til at trække samtykke tilbage
