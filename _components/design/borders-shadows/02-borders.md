@@ -2,8 +2,9 @@
 type: component
 title: Streger
 parent: borders-shadows
-order: 2
+order: "2"
 component: borders
+
 ---
 ### Implementering
 
@@ -21,7 +22,7 @@ Anvendes som indvendige streger i komponenter, der kræver separering af element
 
 #### Indre-indre streger
 
-Indre streger er 1px bredde og er lysere grå `#DCDCDC`.
+Indre-indre streger er 1px bredde og er lysere grå `#DCDCDC`.
 
 Anvendes som indvendige streger i komponenter, der kræver yderligere separering af elementer.
 
