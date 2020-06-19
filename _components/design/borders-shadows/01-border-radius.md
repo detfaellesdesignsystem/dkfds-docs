@@ -2,7 +2,7 @@
 type: component
 title: Hjørner
 parent: borders-shadows
-order: 01
+order: 1
 component: border-radius
 componentHideCode: true
 ---

@@ -2,9 +2,8 @@
 type: component
 title: Streger
 parent: borders-shadows
-order: "2"
+order: 2
 component: borders
-
 ---
 ### Implementering
 
