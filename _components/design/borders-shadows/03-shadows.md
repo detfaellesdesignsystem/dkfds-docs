@@ -2,7 +2,7 @@
 type: component
 title: Skygger
 parent: borders-shadows
-order: 3
+order: "3"
 component: shadows
 componentHideCode: true
 ---
