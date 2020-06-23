@@ -30,6 +30,9 @@
 img.inner-border-box{
   border: $inner-border;
 }
+img.outer-border-box{
+  border: $outer-border;
+}
 // Preview box (e.g. used by header and footer documentation) -------- //
 .preview {
   margin-bottom: 2em;
