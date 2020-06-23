@@ -80,7 +80,6 @@ krav[13] = {"title": "Krav til løsninger, der skal på borger.dk og Virk", "kra
 
 document.addEventListener("DOMContentLoaded", function(){
 
-    console.log('dkfds', DKFDS);
     new DKFDS.Navigation();
 
     let contactModal = new DKFDS.Modal(document.getElementById('modal-contact'));
