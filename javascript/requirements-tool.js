@@ -1,7 +1,4 @@
 'use strict';
-import "@babel/polyfill";
-import tippy from 'tippy.js';
-import MicroModal from 'micromodal';
 let toolIsProcessing = false;
 
 import * as DKFDS from 'dkfds';
@@ -83,21 +80,22 @@ krav[13] = {"title": "Krav til løsninger, der skal på borger.dk og Virk", "kra
 
 document.addEventListener("DOMContentLoaded", function(){
 
+    console.log('dkfds', DKFDS);
     new DKFDS.Navigation();
 
-    tippy('.js-tippy', {
-        duration: 0,
-        arrow: true
-    });
+    let contactModal = new DKFDS.Modal(document.getElementById('modal-contact'));
+    contactModal.init();
 
-    MicroModal.init({
-        onShow: function(){
-            document.getElementsByTagName('body')[0].classList.add('modal-active');
-        },
-        onClose: function(modal){
-            document.getElementsByTagName('body')[0].classList.remove('modal-active');
-        }
-    });
+    let printModalElement = document.getElementById('modal-print');
+    if(printModalElement !== null) {
+        let printModal = new DKFDS.Modal(printModalElement);
+        printModal.init();
+    }
+
+    const jsSelectorTooltip = document.getElementsByClassName('js-tooltip');
+    for(let c = 0; c < jsSelectorTooltip.length; c++){
+        new DKFDS.Tooltip(jsSelectorTooltip[ c ]);
+    }
 
     if(document.getElementsByTagName('body')[0].classList.contains('page-resultat')) {
         let elemToObserve = document.getElementById('modal-print');
@@ -190,12 +188,12 @@ let printResultHandler = function(){
                 document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.add('d-print-none');
                 document.getElementById('print-title').classList.add('d-print-block');
-                MicroModal.close('modal-print');
+                printModal.hide();
             } else{
                 document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.remove('d-print-none');
                 document.getElementById('print-title').classList.remove('d-print-block');
-                MicroModal.close('modal-print');
+                printModal.hide();
             }
         });
     }

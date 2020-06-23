@@ -39,22 +39,6 @@
 <link rel="preload" href="{{ site.baseurl }}/assets/style/styleguide_virkdk.css" as="style" />
 <link rel="preload" href="{{ site.baseurl }}/assets/js/theme.js" as="script" />
 
-{% if page.tippy or page.layout == 'requirements-tool' %}
-<link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/dist/tippy.css" />
-{% endif %}
-
-
-{% if page.select2 %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css" />
-{% endif %}
-
-{% if page.datatables %}
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" />
-<link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css" />
-{% endif %}
-
-
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -65,4 +49,3 @@
     list-style-type: none;
   }
 </style>
-

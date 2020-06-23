@@ -18,6 +18,5 @@ alerts:
 <ul class="d-md-none">
     <li><a href="/kode/plugins/datatables/" class="bold-link">Avancerede tabeller</a></li>
     <li><a href="/kode/plugins/selectwoo-multiselect/" class="bold-link">Multiselect dropdown</a></li>
-    <li><a href="/kode/plugins/pikaday/" class="bold-link">Datovælger (datepicker)</a></li>
     <li><a href="/kode/plugins/tippy/" class="bold-link">Tooltip og popover</a></li>
 </ul>

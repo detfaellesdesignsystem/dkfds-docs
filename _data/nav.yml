@@ -116,7 +116,6 @@ Kode_category:
 - href: /kode/eksempler-implementering/
 - href: /kode/print/
 - href: /kode/plugins/
-  categorynav: 'Plugins_category'
 - href: /kode/anbefalinger-vaerktoejer/
 
 #Left menu for komponent-category
@@ -154,13 +153,6 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/tjekboks/
 - href: /kode/komponenter/tooltip/
 - href: /kode/komponenter/trinindikatorer/
-
-#Left menu for udvidelser-category
-Plugins_category:
-  - href: /kode/plugins/datatables/
-  - href: /kode/plugins/pikaday/
-  - href: /kode/plugins/selectwoo-multiselect/
-  - href: /kode/plugins/tippy/
 
 Eksempler_category:
   - href: /eksempler/selvbetjeningsloesninger/

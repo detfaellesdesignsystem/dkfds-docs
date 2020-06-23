@@ -55,14 +55,6 @@
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style" />
 <link rel="preload" href="/assets/js/theme.js" as="script" />
 
-
-
-
-
-
-
-
-
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -73,7 +65,6 @@
     list-style-type: none;
   }
 </style>
-
 
   </head>
   <body class="page-implementering-af-dkfds layout-styleguide">
@@ -1941,18 +1932,9 @@
 
           
 
-          <p>FDS er opdelt i to projekter:</p>
+          <p>DKFDS kan installeres ved brug af <a href="https://www.npmjs.com/package/dkfds" class="icon-link">npm pakken<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller du kan <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">download seneste version via Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 
-<ul class="nobullet-list">
-    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components" class="icon-link">DKFDS Components (kernen som indeholder komponenterne)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/detfaellesdesignsystem/dkfds-plugins" class="icon-link">DKFDS Plugins<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-<h2>Installation</h2>
-
-<p>DKFDS kan installeres ved brug af <a href="https://www.npmjs.com/package/dkfds" class="icon-link">npm pakken<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller du kan <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">download seneste version via Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</p>
-
-<h3 class="h4">Hent DKFDS (NPM)</h3>
+<h2>Hent DKFDS (NPM)</h2>
 
 <p>Navigér til roden af dit projekt i en kommando prompt.</p>
 
@@ -1962,46 +1944,49 @@
 
 <p>Modulet ‘dkfds’ er nu installeret i ‘node_modules’ mappen.</p>
 
-<h3 class="h4">Hent DKFDS (zip)</h3>
+<h2>Hent DKFDS (zip)</h2>
 
 <p>Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">version som zipfil på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, og pak indholdet ud i dit projekt.</p>
-<h3 class="h4">Inkludér tema</h3>
-<h4 class="h5">Virk tema:</h4>
+
+<h2>Inkludér  CSS</h2>
+
+<h3>Virk tema</h3>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"[sti til DKFDS mappen]/dist/css/dkfds-virkdk.css"</span> <span class="nt">/&gt;</span></code></pre></figure>
 
-<h4 class="h5">Borger.dk tema:</h4>
+<h3>Borger.dk tema</h3>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css"</span> <span class="nt">/&gt;</span></code></pre></figure>
 
 <p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.</p>
 
-<h4 class="h5">Inkludér JavaScript</h4>
+<h2>Inkludér JavaScript</h2>
 
 <p>JavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.</p>
 
-<h5 class="h6">Script tag</h5>
+<h2><code class="highlighter-rouge">&lt;script&gt;</code> tag</h2>
+<p>Indsæt følgende script tag før<code class="highlighter-rouge">&lt;/body&gt;</code></p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">'[sti til DKFDS mappen]/dist/js/dkfds.js'</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
-<h5 class="h6">Importer modulet i en .js fil</h5>
+<h3>Importer modulet i en .js fil</h3>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">DKFDS</span> <span class="nx">from</span> <span class="s2">"dkfds"</span><span class="p">;</span></code></pre></figure>
 
-<h5 class="h6">Init</h5>
+<h3>Init</h3>
 
-<p>Når DKFDS er inkluderet skal du køre funktionen <code class="highlighter-rouge">DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
+<p>Når DKFDS er inkluderet kan du køre funktionen <code class="highlighter-rouge">DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
 
-<p class="mb-2">Eksempel:</p>
+<p><code class="highlighter-rouge">DKFDS.init();</code> aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent. Information omkring javscript for hver komponent finder du i <a href="/kode/komponenter/">kode sektionen for den specifikke komponent</a>.</p>
+
+<p class="mb-2">Eksempel på init:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"DOMContentLoaded"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
   <span class="c1">// Handler when the DOM is fully loaded</span>
   <span class="nx">DKFDS</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
 <span class="p">});</span></code></pre></figure>
 
-<p>For yderligere JavaScript funktioner, se under hver <a href="/komponenter/">komponent</a>.</p>
-
-<h4 id="temahaandtering">Temahåndtering</h4>
+<h2>Temahåndtering</h2>
 
 <p>Designsystemet er udviklet med 2 forskellige temaer. Standard temaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.</p>
 
@@ -2030,14 +2015,14 @@
 <span class="nv">$icons-folder-path</span><span class="p">:</span> <span class="s1">'~dkfds/src/img/svg-icons'</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s1">'~dkfds/src/stylesheets/dkfds'</span><span class="p">;</span></code></pre></figure>
 
-<h5>Browserspecifik styling tilføjes i projektet</h5>
-<h6>Webpack</h6>
+<h2>Browserspecifik styling tilføjes i projektet</h2>
+<h3>Webpack</h3>
 
 <p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>
 
 <p>For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.</p>
 
-<h6>Gulp</h6>
+<h3>Gulp</h3>
 
 <p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>
 
@@ -2053,7 +2038,7 @@
   </span><span class="err">'IE</span><span class="w"> </span><span class="mi">9</span><span class="err">'</span><span class="p">,</span><span class="w">
 </span><span class="p">]</span></code></pre></figure>
 
-<h4>Fix for bug i Microsoft Edge og Internet Explorer</h4>
+<h3>Fix for bug i Microsoft Edge og Internet Explorer</h3>
 
 <p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i <code class="highlighter-rouge">head</code> sektionen.</p>
 
@@ -2063,34 +2048,6 @@
       <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
     <span class="p">}</span>
   <span class="nt">&lt;/style&gt;</span></code></pre></figure>
-
-<h2>DKFDS Plugins</h2>
-
-<p>Du skal kun inkludere styling (CSS eller SCSS) fra dkfds-plugins projektet.</p>
-
-<p>Der er i øjeblikket lavet temaer til følgende:</p>
-
-<ul class="nobullet-list">
-    <li><a href="https://datatables.net/" class="icon-link">Datatables<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/woocommerce/selectWoo" class="icon-link">SelectWoo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://github.com/Pikaday/Pikaday" class="icon-link">Pikaday<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://micromodal.now.sh/" class="icon-link">Micromodal.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://atomiks.github.io/tippyjs/" class="icon-link">Tippy.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-<p>dkfds-plugins projektet er tilgængeligt via npm og du kan installere det ved at skrive følgende i en kommando-prompt:</p>
-
-<figure class="highlight"><pre><code class="language-console" data-lang="console">npm install dkfds-plugins --save</code></pre></figure>
-
-<p>Modulet ‘dkfds-plugins’ er nu installeret i ‘node_modules’ mappen.</p>
-
-<p>Inkluder derefter temaerne enten som css direkte:</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"[path-to-plugins-project]/dist/css/dkfds-datatables-theme.standalone.min.css"</span><span class="nt">&gt;</span></code></pre></figure>
-
-<p>Eller inkluder temaerne i SCSS (Bemærk, at du først skal importere DKFDS):</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="err">@</span><span class="kr">import</span> <span class="s2">"~dkfds-plugins/dist/scss/dkfds-datatables-theme"</span><span class="p">;</span></code></pre></figure>
 
 
       </section>
@@ -2121,12 +2078,6 @@
 <script src="/assets/js/requirements-tool~styleguide.js"></script>
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
-
-
-
-
-
-
 
   </body>
 </html>
