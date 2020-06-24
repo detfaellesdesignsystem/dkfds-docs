@@ -167,11 +167,9 @@ print: true
                         name="solution-name-input" type="text">
                 </div>
         </div>
-
         <div class="modal-footer">
                 <button class="button button-primary" id="print-result-solution"
                     aria-label="Fx bekræft handling">Print resultat</button>
-            </div>
             <button class="button button-secondary" data-modal-close>Luk</button>
         </div>
     </div>
