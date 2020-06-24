@@ -7,9 +7,7 @@ title: Plugins
 category: Kode_category
 type: component
 subcategory: Kode
-description: Plugins er komponenter som er for store og specialiserede til, at de
-  kan være en del af kernen. Det er valgfrit om selvbetjeningsløsninger vil inkludere
-  plugins.
+description: 'Plugins er komponenter som er lavet af en tredjepart. De er for store og specialiserede til, at de kan blive en del af designsystemet. Det er op til dig om du vil bruge plugins i din selvbetjeningsløsning.'
 tags: 
 lead: 'Plugins er komponenter som er lavet af en tredjepart. De er for store og specialiserede
   til, at de kan blive en del af designsystemet. Det er op til dig om du vil bruge

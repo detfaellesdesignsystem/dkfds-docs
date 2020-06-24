@@ -1364,7 +1364,7 @@
 
 <a href="/kode/plugins/" role="menuitem" 
   class="nav-link">
-  Plug-ins
+  Plugins
 </a>
 
 </li>
@@ -1879,7 +1879,7 @@
 
 <a href="/kode/plugins/" role="menuitem" 
   class="nav-link">
-  Plug-ins
+  Plugins
 </a>
 
 </li>
@@ -1927,7 +1927,7 @@
                   
                   
                   <p class="alert-text">
-                    Eksemplerne på implementering af DKFDS og dkfds-plugins på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
+                    Eksemplerne på implementering af DKFDS på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
                   </p>
                   
               </div>
@@ -1949,21 +1949,17 @@
 
 <p>For at bruge DKFDS med Angular CLI gøres følgende:</p>
 
-<p>I package.json tiløjes DKFDS og evt. også DKFDS­-plugins ind under dependencies.</p>
+<p>I package.json tilføjes DKFDS.</p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"dependencies"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"dkfds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^5.0.0"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"dkfds-plugins"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^5.0.0"</span></code></pre></figure>
-
-<p>Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre brug af <a href="/kode/plugins/">plugins</a>.</p>
+    </span><span class="nt">"dkfds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^5.0.0"</span></code></pre></figure>
 
 <h3>Implementer CSS</h3>
 
-<p>I angular.json udpeges styling alt efter hvilket tema der skal benyttes, og hvilke plugins man gør brug af:</p>
+<p>I angular.json udpeges styling alt efter, hvilket tema der skal benyttes.</p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"styles"</span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"node_modules/dkfds/dist/css/dkfds-­virkdk.css"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"node_modules/dkfds-­plugins/dist/css/dkfds­-datatables­-theme.min.css"</span></code></pre></figure>
+    </span><span class="s2">"node_modules/dkfds/dist/css/dkfds-­virkdk.css"</span></code></pre></figure>
 
 <h3>Implementer JavaScript</h3>
 

@@ -13,7 +13,7 @@ headingClass: mb-0
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>Nyt gridsystem
 <span class="form-hint mt-0"> USDW's gamle float-grid (NEAT) og Bootstraps grid er fjernet. I stedet for er USWDs nye grid inkluderet. Der er lavet tilpasninger af dette grid så det køre på de samme variable og klassenavne som i den forrige version af FDS. Der skal derfor ikke laves nogen tilpasninger for at få dette grid inkluderet.</span>
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>Plugins project
-<span class="form-hint mt-0"> Datatables og SelectWoo er ikke længere en del af komponent-biblioteket. Der er derimod oprettet et nyt projekt (dkfds-plugins) hvor disse nu lever.</span>
+<span class="form-hint mt-0">Datatables og SelectWoo er ikke længere en del af komponent-biblioteket. Der er derimod oprettet et nyt projekt (dkfds-plugins) hvor disse nu lever.</span>
 - Nye klasser
 <span class="form-hint mt-0"> De følgende klasser er blev omdøbt:</span>
     - `input-success` er omdøbt til `form-success`

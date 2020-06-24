@@ -8,7 +8,6 @@ type: element
 title: Modalvindue
 category: Komponenter_category
 subcategory: Komponenter
-micromodal: true
 description: "Modalvinduer er separate vinduer, som popper-up på siden, når du aktiverer dem."
 component: modal
 componentTitle: "Eksempel på modal"

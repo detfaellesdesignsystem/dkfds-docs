@@ -9,7 +9,6 @@ category: Komponenter_category
 subcategory: Komponenter
 description: "Tabeller er en systematisk opstilling af data. Data vises i kolonner og rækker."
 tags: 
-datatables: true
 lead: Tabeller er en systematisk opstilling af data og viser data i kolonner og rækker.
 anchor: true
 subnav:
@@ -49,6 +48,6 @@ Tabeller er en kompleks størrelse og når du bruger tabeller, skal du sikre dig
 
 Vær meget opmærksom på typen af data, din tabel skal præsentere brugeren for.
 
-Såfremt der er tale om meget <a href="/kode/plugins/datatables/">avancerede tabeller</a>, kan der bruges et plugin
+Såfremt der er tale om meget <a href="/komponenter/tables/#avancerede-tabeller">avancerede tabeller</a>, kan der bruges en tredjepartsløsning.
 
 {% include child-components.html parent='Tables' %}

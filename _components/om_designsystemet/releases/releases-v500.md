@@ -14,9 +14,9 @@ headingClass: mb-0
 <span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/sidenav/">komponenten</a>.</span>
 - <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/komponenter/tabnav/">Faneblads-komponenten</a> er blevet redefineret.
 <span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/tabnav/">komponenten</a>.</span>
-- <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/kode/plugins/tippy/">Den gamle tooltip (tippy) komponent</a> er blevet flyttet til plugins.
+- <label class="color-warning badge badge-small mr-3">Breaking change</label>Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>
-- <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/kode/plugins/micromodal/">Modalvinduer-komponenten</a> er blevet flyttet til plugins.
+- <label class="color-warning badge badge-small mr-3">Breaking change</label>Modalvinduer-komponenten er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span>
 - Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>. 

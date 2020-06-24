@@ -11,7 +11,7 @@ tags:
 subcategory: Kode
 alerts:
 - type: warning
-  content: Eksemplerne på implementering af DKFDS og dkfds-plugins på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
+  content: Eksemplerne på implementering af DKFDS på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
 lead: "Vi tager gerne i mod rettelser og tilføjelser til beskrivelserne på denne side, da brugerne gerne selv er "
 ---
 
@@ -19,25 +19,21 @@ lead: "Vi tager gerne i mod rettelser og tilføjelser til beskrivelserne på den
 
 For at bruge DKFDS med Angular CLI gøres følgende:
 
-I package.json tiløjes DKFDS og evt. også DKFDS­-plugins ind under dependencies.
+I package.json tilføjes DKFDS.
 
 {% highlight json %}
 "dependencies": {
-    "dkfds": "^5.0.0",
-    "dkfds-plugins": "^5.0.0"
+    "dkfds": "^5.0.0"
 {% endhighlight %}
 
-Bemærk, at dkfds-plugins ikke er en nødvendighed, med mindre man vil gøre brug af <a href="/kode/plugins/">plugins</a>.
 
 ### Implementer CSS
 
-I angular.json udpeges styling alt efter hvilket tema der skal benyttes, og hvilke plugins man gør brug af:
-
+I angular.json udpeges styling alt efter, hvilket tema der skal benyttes.
 
 {% highlight json %}
 "styles": [
-    "node_modules/dkfds/dist/css/dkfds-­virkdk.css",
-    "node_modules/dkfds-­plugins/dist/css/dkfds­-datatables­-theme.min.css"
+    "node_modules/dkfds/dist/css/dkfds-­virkdk.css"
 {% endhighlight %}
 
 ### Implementer JavaScript
