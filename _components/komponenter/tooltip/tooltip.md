@@ -13,8 +13,6 @@ anchor: true
 subnav:
 - text: Placering
   href: "#placering-af-tooltip"
-- text: "Tippy.js"
-  href: "#tippy-js"
 ---
 
 {% include child-components.html parent='Tooltip' %}
