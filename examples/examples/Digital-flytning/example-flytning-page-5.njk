@@ -34,6 +34,11 @@
 
       <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
+            <div class="nav-secondary d-none d-md-block">
+                <div class="nav-actions">
+                    <a href="/pages/eksempler/digital-flytning/flytning-4/" class="back-link">Tilbage</a>
+                </div>
+            </div>
           <div class="nav-actions">
             <a href="#" class="function-link">{{icon_svg("")}}Om digital flytning</a>
             <a href="" class="function-link">{{icon_svg("language")}}Sprog</a>
@@ -47,6 +52,7 @@
 
 {% block body %}
 <main class="container page-container">
+    <div><a href="/pages/eksempler/digital-flytning/flytning-4/" class="back-link d-lg-none">Tilbage</a></div>
   {{ alert("alert alert-error alert--show-icon", "alert", "Der er sket en fejl", "Der er sket en fejl hos KRAK. Afstanden til din nuværende læge kan ikke beregnes i øjeblikket. Beregningen er vigtig for at dit lægevalg kan blive registreret korrekt. Fejlen er blevet registreret og vil blive rettet hurtigst muligt. Prøv at registrere din flytning senere.", "error" ) }}
 
   {{overflowmenu("Trin 5 af 5","overflow_steps", true, false, "menu-down" ,"
@@ -121,7 +127,6 @@
 
   <nav class="page-navigation d-print-none">
     <a href="#" class="button button-primary">Næste</a>
-    <a href='/pages/eksempler/digital-flytning/flytning-4/' class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
   </nav>
 </main>
 {% endblock %}
