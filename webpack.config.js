@@ -9,6 +9,7 @@ module.exports = function (outputPath, prod) {
     entry: {
       "theme": ["./javascript/theme.js"],
       styleguide: ["./javascript/start.js", "./scss/styleguide.scss"],
+      display: ["./scss/display.scss"],
       styleguide_borgerdk: ["./scss/styleguide-borgerdk.scss"],
       styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
       "requirements-tool": ["./javascript/requirements-tool.js"],
