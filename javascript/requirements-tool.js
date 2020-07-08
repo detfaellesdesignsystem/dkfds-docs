@@ -123,10 +123,6 @@ document.addEventListener("DOMContentLoaded", function(){
     if(backlink !== null){
         backlink.addEventListener('click', goOneQuestionBack);
     }
-    let backlinkMobile = document.getElementById('back-link-mobile');
-    if(backlinkMobile !== null){
-        backlinkMobile.addEventListener('click', goOneQuestionBack);
-    }
 
     questionnaire = getQuestionnaire();
     manageFlow();

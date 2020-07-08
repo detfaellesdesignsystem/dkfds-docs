@@ -31,23 +31,14 @@
         <p class="bold">Erhvervsministeriet</p>
         <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
-        <div class="navbar">
-            <div class="navbar-inner navbar-context-actions container">
-                <div class="nav-secondary d-none d-md-block">
-                    <div class="nav-actions">
-                        <a href="#" class="back-link">Tilbage</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </nav> <!-- collapsible nav end-->
   </header>
 {% endblock %}
 
 
 {% block body %}
-<main class="container page-container">
-    <a href="javascript:void(0);" class="back-link d-md-none">Tilbage</a>
+<main class="container page-container pt-4 pt-lg-6">
+    <a href="javascript:void(0);" class="back-link">Tilbage</a>
 
     {{ alert(error_summary.classes, error_summary.role, error_summary.title, error_summary.content, error_summary.aria, "", error_summary.contentContainer ) }}
 
