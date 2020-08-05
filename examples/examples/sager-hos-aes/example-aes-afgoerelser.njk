@@ -1,0 +1,161 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer-three-columns.njk" import footer_columns as footer_columns %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
+
+{% block header %}
+  <header class="header">
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+
+    <div class="overlay"></div>
+    <nav class=" nav"> <!-- collapsible-->
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+
+      <div class="portal-info-mobile">
+        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
+        <a href="#" class="button button-secondary button-signout">
+          Log af
+        </a>
+      </div>
+
+      <div class="solution-info-mobile">
+        <p class="bold">Arbejdsmarkedets Erhvervssikring</p>
+        <p>Support: <a href='tel:+4572206000' class='function-link'>72 20 60 00</a></p>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar-inner navbar-context-actions container">
+              <div class="nav-actions">
+                <a href="#" class="function-link">{{icon_svg("account-circle")}}Min profil</a>
+              </div>
+        </div>
+      </div>
+
+    </nav> <!-- collapsible nav end-->
+  </header>
+{% endblock %}
+
+{{ breadcrumbs(breadcrumbs_data) }}
+
+{% block body %}
+<main class="container page-container pt-4 pt-lg-0">
+    <h1>Afgørelser</h1>
+    <p>Du kan her se sagens afgørelser. Der findes enkelte afgørelsestyper som ikke kan vises nedenfor, men for de fleste sager vil alle sagens afgørelser være listet nedenfor.</p>
+    <p><span class="bold">Sagen forventes afsluttet:</span> ​​​​​​​Maj 2021</p>
+
+    <h2>Anerkendelse</h2>
+    <div class="d-flex mb-4"><div class="mr-3"><span class="bold">Status:</span></div><div>Afsluttet</div></div>
+    <ul class="accordion accordion-bordered accordion-multiselectable">
+        <li>
+            <button class="accordion-button" aria-expanded="true" aria-controls="anerkendelse-afgoerelse">
+                Afgørelse
+            </button>
+            <div id="anerkendelse-afgoerelse" aria-hidden="false" class="accordion-content">
+                <p>Resultat: Anerkendt<br />
+                Dato for afgørelse: 01-01-2019<br />
+                Dokument med afgørelse: Afgørelse for anerkendelse</p>
+            </div>
+        </li>
+        <li>
+            <button class="accordion-button" aria-expanded="false" aria-controls="anerkendelse-vurdering">
+                Læs om vurdering af Anerkendelse
+            </button>
+            <div id="anerkendelse-vurdering" aria-hidden="true" class="accordion-content">
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, odio ac posuere vehicula, arcu sapien porta erat, a euismod orci orci eget magna. Suspendisse tempor erat nec eros laoreet tincidunt. Vivamus sed felis non erat pharetra volutpat. Maecenas interdum nunc sed sodales blandit. Morbi porta, lacus ac auctor semper, ipsum mauris porta sapien, ut volutpat urna tellus nec tellus. Sed elit velit, luctus eu tincidunt et, gravida sed nunc. Cras volutpat pharetra maximus. Phasellus nisi orci, pellentesque nec mi ac, bibendum ornare enim. Curabitur vestibulum odio neque, ac scelerisque dui rutrum vitae.
+               </p>
+            </div>
+        </li>
+    </ul>
+    <h2>Mén</h2>
+    <div class="d-flex mb-4"><div class="mr-3"><span class="bold">Status:</span></div><div>Sendt til Ankestyrelsen</div></div>
+    <ul class="accordion accordion-bordered accordion-multiselectable">
+        <li>
+            <button class="accordion-button" aria-expanded="true" aria-controls="men-afgoerelse">
+                Afgørelse
+            </button>
+            <div id="men-afgoerelse" aria-hidden="false" class="accordion-content">
+                <p>Resultat: 10%<br />
+                Dato for afgørelse: 01-01-2019<br />
+                Dokument med afgørelse: <a href="#">Afgørelse for mén</a></p>
+            </div>
+        </li>
+        <li>
+            <button class="accordion-button" aria-expanded="false" aria-controls="men-vurdering">
+                Læs om vurdering af Mén
+            </button>
+            <div id="men-vurdering" aria-hidden="true" class="accordion-content">
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, odio ac posuere vehicula, arcu sapien porta erat, a euismod orci orci eget magna. Suspendisse tempor erat nec eros laoreet tincidunt. Vivamus sed felis non erat pharetra volutpat. Maecenas interdum nunc sed sodales blandit. Morbi porta, lacus ac auctor semper, ipsum mauris porta sapien, ut volutpat urna tellus nec tellus. Sed elit velit, luctus eu tincidunt et, gravida sed nunc. Cras volutpat pharetra maximus. Phasellus nisi orci, pellentesque nec mi ac, bibendum ornare enim. Curabitur vestibulum odio neque, ac scelerisque dui rutrum vitae.
+               </p>
+            </div>
+        </li>
+    </ul>
+    <h2>Erhvervsevnetab</h2>
+    <div class="d-flex mb-4"><div class="mr-3"><span class="bold">Status:</span></div><div>Påklaget af forsikringsselskab Tryg<br />Påklaget af tilskadekomne Lone Hansen</div></div>
+    <ul class="accordion accordion-bordered accordion-multiselectable">
+        <li>
+            <button class="accordion-button" aria-expanded="true" aria-controls="erhvervsevnetab-afgoerelse">
+                Afgørelse
+            </button>
+            <div id="erhvervsevnetab-afgoerelse" aria-hidden="false" class="accordion-content">
+                <p>Resultat: 20%<br />
+                Dato for afgørelse: 17-05-2019<br />
+                Dokument med afgørelse: <a href="#">Afgørelse for erhvervsevnetab</a></p>
+
+                <p>Resultat: Under 15%<br />
+                Dato for afgørelse: 01-01-2019<br />
+                Dokument med afgørelse: <a href="#">Afgørelse for erhvervsevnetab</a></p>
+            </div>
+        </li>
+        <li>
+            <button class="accordion-button" aria-expanded="false" aria-controls="erhvervsevnetab-vurdering">
+                Læs om vurdering af Erhvervseventab
+            </button>
+            <div id="erhvervsevnetab-vurdering" aria-hidden="true" class="accordion-content">
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, odio ac posuere vehicula, arcu sapien porta erat, a euismod orci orci eget magna. Suspendisse tempor erat nec eros laoreet tincidunt. Vivamus sed felis non erat pharetra volutpat. Maecenas interdum nunc sed sodales blandit. Morbi porta, lacus ac auctor semper, ipsum mauris porta sapien, ut volutpat urna tellus nec tellus. Sed elit velit, luctus eu tincidunt et, gravida sed nunc. Cras volutpat pharetra maximus. Phasellus nisi orci, pellentesque nec mi ac, bibendum ornare enim. Curabitur vestibulum odio neque, ac scelerisque dui rutrum vitae.
+               </p>
+            </div>
+        </li>
+    </ul>
+    <h2>Behandlingsudgifter, under sagen, hjælpemidler</h2>
+    <div class="d-flex mb-4"><div class="mr-3"><span class="bold">Status:</span></div><div>Ikke afgjort</div></div>
+    <ul class="accordion accordion-bordered accordion-multiselectable">
+        <li>
+            <button class="accordion-button" aria-expanded="true" aria-controls="behandlingsudgifter-afgoerelse">
+                Afgørelse
+            </button>
+            <div id="behandlingsudgifter-afgoerelse" aria-hidden="false" class="accordion-content">
+                <p>Ingen afgørelse endnu</p>
+            </div>
+        </li>
+        <li>
+            <button class="accordion-button" aria-expanded="false" aria-controls="behandlingsudgifter-vurdering">
+                Læs om vurdering af Behandlingsudgifter, under sagen, hjælpemidler
+            </button>
+            <div id="behandlingsudgifter-vurdering" aria-hidden="true" class="accordion-content">
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, odio ac posuere vehicula, arcu sapien porta erat, a euismod orci orci eget magna. Suspendisse tempor erat nec eros laoreet tincidunt. Vivamus sed felis non erat pharetra volutpat. Maecenas interdum nunc sed sodales blandit. Morbi porta, lacus ac auctor semper, ipsum mauris porta sapien, ut volutpat urna tellus nec tellus. Sed elit velit, luctus eu tincidunt et, gravida sed nunc. Cras volutpat pharetra maximus. Phasellus nisi orci, pellentesque nec mi ac, bibendum ornare enim. Curabitur vestibulum odio neque, ac scelerisque dui rutrum vitae.
+               </p>
+            </div>
+        </li>
+    </ul>
+</main>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer_columns(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

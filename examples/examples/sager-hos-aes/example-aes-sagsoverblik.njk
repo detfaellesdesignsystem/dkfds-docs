@@ -1,0 +1,169 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer-three-columns.njk" import footer_columns as footer_columns %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
+
+{% block header %}
+  <header class="header">
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+
+    <div class="overlay"></div>
+    <nav class=" nav"> <!-- collapsible-->
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+
+      <div class="portal-info-mobile">
+        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
+        <a href="#" class="button button-secondary button-signout">
+          Log af
+        </a>
+      </div>
+
+      <div class="solution-info-mobile">
+        <p class="bold">Arbejdsmarkedets Erhvervssikring</p>
+        <p>Support: <a href='tel:+4572206000' class='function-link'>72 20 60 00</a></p>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar-inner navbar-context-actions container">
+              <div class="nav-actions">
+                <a href="#" class="function-link">{{icon_svg("account-circle")}}Min profil</a>
+              </div>
+        </div>
+      </div>
+
+    </nav> <!-- collapsible nav end-->
+  </header>
+{% endblock %}
+
+{{ breadcrumbs(breadcrumbs_data) }}
+
+{% block body %}
+<main class="container page-container pt-4 pt-lg-0">
+    <h1>Sag 2020-0000015</h1>
+    <div class="row">
+        <div class="col-12 col-md-4">
+             <div class="card card-align-height">
+                <div class="card-header">
+                    <h2 class="header-title">Detaljer</h2>
+                </div>
+                <div class="card-text">
+                    <div class="row nogutter mb-3">
+                        <div class="col-5"><span class="form-label">Status</span></div>
+                        <div class="col-7">Under behandling</div>
+                    </div>
+                    <div class="row nogutter mb-3">
+                        <div class="col-5"><span class="form-label">Navn</span></div>
+                        <div class="col-7">Lone Hansen</div>
+                    </div>
+                    <div class="row nogutter mb-3">
+                        <div class="col-5"><span class="form-label">Skadedato</span></div>
+                        <div class="col-7">04-01-2019</div>
+                    </div>
+                    <div class="row nogutter mb-3">
+                        <div class="col-5"><span class="form-label">Anmeldedato</span></div>
+                        <div class="col-7">10-01-2019</div>
+                    </div>
+                    <div class="row nogutter mb-3">
+                        <div class="col-5"><span class="form-label">Sagstype</span></div>
+                        <div class="col-7">Arbejdsulykke</div>
+                    </div>
+                    <div class="row nogutter">
+                        <div class="col-5"><span class="form-label">Vedrørende</span></div>
+                        <div class="col-7">Arm, herunder albue</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8">
+             <div class="card card-align-height">
+                <div class="card-header">
+                    <h2 class="header-title">Sagsindhold</h2>
+                </div>
+                <div class="card-text">
+                  <p>Se afgørelser og status på afgørelser i sagen under:<br/>
+                  <a href="/pages/eksempler/aes/sagsoverblik/afgoerelser/">Afgørelser</a></p>
+
+                  <p>Se en oversigt over alle sagens dokumenter under:<br/>
+                  <a href="#">Dokumenter</a></p>
+
+                  <p>Se hvem som er involveret i sagen og hvad deres rolle er under:<br/>
+                  <a href="#">Involverede</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Henvend dig til AES om sagen</h2>
+    <div class="row">
+        <div class="col-12 col-md-4">
+             <div class="card card-align-height">
+                <div class="card-header">
+                    <h3 class="header-title">Skriv til AES</h3>
+                </div>
+                <div class="card-text">
+                    <p>Hvis du har kommentarer til sagen eller nye relevante oplysninger, så kan du skrive til AES. Det kan fx være sagsoplysninger du ikke mener er korrekte eller oplysninger om operationer som er relevant for sagen.</p>
+                </div>
+                <div class="card-footer card-action">
+                    <div class="action-links">
+                        <button class="button button-tertiary w-percent-100">Skriv til AES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+             <div class="card card-align-height">
+                <div class="card-header">
+                    <h3 class="header-title">Opdater eget sagsnr.</h3>
+                </div>
+                <div class="card-text">
+                <p>Hvis jeres sagsnr. er blevet noteret forkert, så kan det ændres her.</p>
+                <p>Det nuværende sagsnr. er:<br />
+                   098324-234-KT</p>
+                </div>
+                <div class="card-footer card-action">
+                    <div class="action-links">
+                        <button class="button button-tertiary w-percent-100">Opdater eget sagsnr.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+             <div class="card card-align-height">
+                <div class="card-header">
+                    <h3 class="header-title">Blanketter</h3>
+                </div>
+                <div class="card-text">
+                <p>Her kan du finde blanketter du kan bruge til at henvende dig til AES, hvis du vil:</p>
+                <ul>
+                    <li>Klage over en afgørelse</li>
+                    <li>Bede om at en sag ikke behandles</li>
+                    <li>Genoptagelse af en afgørelse</li>
+                    <li>Udbetaling som engangsbeløb</li>
+                </ul>
+                </div>
+                <div class="card-footer card-action">
+                    <div class="action-links">
+                        <a href="#">Gå til blanketter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer_columns(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

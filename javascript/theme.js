@@ -270,7 +270,7 @@ let setScreenshots = function(){
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('/');
             let filename = getThemeCookie()+'-'+url[url.length-2]+'.PNG';
-            let image = '<img src="/assets/img/examples_pages/'+url[url.length-3]+'/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="w-percent-100 d-block" />';
+            let image = '<img src="/assets/img/examples_pages/'+url[3]+'/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="w-percent-100 d-block" />';
             screenshots[i].innerHTML = image;
         }
         let galleries = document.getElementsByClassName('screenshot-gallery');
