@@ -24,4 +24,4 @@ tags:
 
 {% include code/syntax.html component="breadcrumbs" %}
 
-Koden placeres i headeren - på samme måde som <a href="/kode/komponenter/tilbage-link/">tilbage-link</a>.
+Brødkrummen placeres mellem `<header>` og `<main>`. Eksempel på placering kan ses i <a href="/eksempler/selvbetjeningsloesninger/#solution-7">eksempelløsningen "Sager hos AES"</a>.
