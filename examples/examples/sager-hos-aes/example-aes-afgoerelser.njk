@@ -46,81 +46,131 @@
 
 {% block body %}
 <main class="container page-container pt-4 pt-lg-0">
-    <h1>Afgørelser</h1>
+    <h1 class="mb-2">Afgørelser</h1>
+    <p class="form-hint mt-0">For sagsnr. 2020-0000015</p>
     <p>Du kan her se sagens afgørelser. Der findes enkelte afgørelsestyper som ikke kan vises nedenfor, men for de fleste sager vil alle sagens afgørelser være listet nedenfor.</p>
-    <p><span class="bold">Sagen forventes afsluttet:</span> ​​​​​​​Maj 2021</p>
 
-    <div class="card">
-        <div class="card-header">
-            <h2>Anerkendelse</h2>
-        </div>
-        <div class="card-text">
-                <div class="d-flex mb-4"><div class="mr-3"><span class="bold">Status:</span></div><div>Afsluttet</div></div>
-                <h3>Afgørelse</h3>
-                <p>Resultat: Anerkendt<br />
-                Dato for afgørelse: 01-01-2019<br />
-                Dokument med afgørelse: Afgørelse for anerkendelse</p>
+    <h2 class="h5">Sagen forventes afsluttet</h2>
+    <p>Maj 2021</p>
 
-                <h3 class="mt-4">Vurdering af anerkendelse</h3>
-                <p>
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, odio ac posuere vehicula, arcu sapien porta erat, a euismod orci orci eget magna. Suspendisse tempor erat nec eros laoreet tincidunt. Vivamus sed felis non erat pharetra volutpat. Maecenas interdum nunc sed sodales blandit. Morbi porta, lacus ac auctor semper, ipsum mauris porta sapien, ut volutpat urna tellus nec tellus. Sed elit velit, luctus eu tincidunt et, gravida sed nunc. Cras volutpat pharetra maximus. Phasellus nisi orci, pellentesque nec mi ac, bibendum ornare enim. Curabitur vestibulum odio neque, ac scelerisque dui rutrum vitae.
+    <hr />
+
+    <h2>Anerkendelse</h2>
+
+    <h3 class="h5">Status</h3>
+    <p>Afsluttet</p>
+
+    <h3 class="h4 mb-2">Afgørelse</h3>
+    <h4 class="h5 mt-0">Resultat</h4>
+    <p>Anerkendt</p>
+    <h4 class="h5 mt-0">Dato for afgørelse</h4>
+    <p>01-01-2019</p>
+    <h4 class="h5 mt-0">Dokument med afgørelse</h4>
+    <p><a href="#">Afgørelse for anerkendelse (PDF)</a></p>
+
+    <ul class="accordion accordion-bordered mt-8 mb-8">
+        <li>
+            <button class="accordion-button" aria-expanded="false" aria-controls="anerkendelse-vurdering">
+                Læs om vurdering af anerkendelse
+            </button>
+            <div id="anerkendelse-vurdering" aria-hidden="true" class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-           </div>
-       </div>
+            </div>
+        </li>
+    </ul>
 
-    <div class="card mt-6">
-        <div class="card-header">
-            <h2>Mén</h2>
-        </div>
-        <div class="card-text">
-            <div class="d-flex mb-4"><div class="mr-3"><span class="bold">Status:</span></div><div>Sendt til Ankestyrelsen</div></div>
-            <h3>Afgørelse</h3>
-            <p>Resultat: 10%<br />
-            Dato for afgørelse: 01-01-2019<br />
-            Dokument med afgørelse: <a href="#">Afgørelse for mén</a></p>
-           <h3 class="mt-4">Vurdering af mén</h3>
-           <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, odio ac posuere vehicula, arcu sapien porta erat, a euismod orci orci eget magna. Suspendisse tempor erat nec eros laoreet tincidunt. Vivamus sed felis non erat pharetra volutpat. Maecenas interdum nunc sed sodales blandit. Morbi porta, lacus ac auctor semper, ipsum mauris porta sapien, ut volutpat urna tellus nec tellus. Sed elit velit, luctus eu tincidunt et, gravida sed nunc. Cras volutpat pharetra maximus. Phasellus nisi orci, pellentesque nec mi ac, bibendum ornare enim. Curabitur vestibulum odio neque, ac scelerisque dui rutrum vitae.
-           </p>
-       </div>
-    </div>
-    <div class="card mt-6">
-        <div class="card-header">
-            <h2>Erhvervsevnetab</h2>
-        </div>
-        <div class="card-text">
-            <div class="d-flex mb-4"><div class="mr-3"><span class="bold">Status:</span></div><div>Påklaget af forsikringsselskab Tryg<br />Påklaget af tilskadekomne Lone Hansen</div></div>
-            <h3>Afgørelse fra d. 17-05-2019</h3>
-            <p>Resultat: 20%<br />
-            Dato for afgørelse: 17-05-2019<br />
-            Dokument med afgørelse: <a href="#">Afgørelse for erhvervsevnetab</a></p>
+    <hr />
 
-            <h3 class="mt-4">Afgørelse fra d. 01-01-2019</h3>
-            <p>Resultat: Under 15%<br />
-            Dato for afgørelse: 01-01-2019<br />
-            Dokument med afgørelse: <a href="#">Afgørelse for erhvervsevnetab</a></p>
+    <h2>Mén</h2>
 
-            <h3 class="mt-4">Vurdering af erhvervsevnetab</h3>
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, odio ac posuere vehicula, arcu sapien porta erat, a euismod orci orci eget magna. Suspendisse tempor erat nec eros laoreet tincidunt. Vivamus sed felis non erat pharetra volutpat. Maecenas interdum nunc sed sodales blandit. Morbi porta, lacus ac auctor semper, ipsum mauris porta sapien, ut volutpat urna tellus nec tellus. Sed elit velit, luctus eu tincidunt et, gravida sed nunc. Cras volutpat pharetra maximus. Phasellus nisi orci, pellentesque nec mi ac, bibendum ornare enim. Curabitur vestibulum odio neque, ac scelerisque dui rutrum vitae.
-            </p>
-       </div>
-    </div>
-    <div class="card mt-6">
-        <div class="card-header">
-            <h2>Behandlingsudgifter, under sagen, hjælpemidler</h2>
-        </div>
-        <div class="card-text">
-            <div class="d-flex mb-4"><div class="mr-3"><span class="bold">Status:</span></div><div>Ikke afgjort</div></div>
-            <h3>Afgørelse<h3>
-            <p>Ingen afgørelse endnu</p>
+    <h3 class="h5">Status</h3>
+    <p>Sendt til Ankestyrelsen<p>
 
-            <h3 class="mt-4">Vurdering af behandlingsudgifter, under sagen, hjælpemidler</h3>
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, odio ac posuere vehicula, arcu sapien porta erat, a euismod orci orci eget magna. Suspendisse tempor erat nec eros laoreet tincidunt. Vivamus sed felis non erat pharetra volutpat. Maecenas interdum nunc sed sodales blandit. Morbi porta, lacus ac auctor semper, ipsum mauris porta sapien, ut volutpat urna tellus nec tellus. Sed elit velit, luctus eu tincidunt et, gravida sed nunc. Cras volutpat pharetra maximus. Phasellus nisi orci, pellentesque nec mi ac, bibendum ornare enim. Curabitur vestibulum odio neque, ac scelerisque dui rutrum vitae.
-            </p>
-       </div>
-    </div>
+    <h3 class="h4 mb-2">Afgørelse</h3>
+    <h4 class="h5 mt-0">Resultat</h4>
+    <p>10%</p>
+    <h4 class="h5 mt-0">Dato for afgørelse</h4>
+    <p>01-01-2019</p>
+    <h4 class="h5 mt-0">Dokument med afgørelse</h4>
+    <p><a href="#">Afgørelse for mén (PDF)</a></p>
+
+
+    <ul class="accordion accordion-bordered mt-8 mb-8">
+        <li>
+            <button class="accordion-button" aria-expanded="false" aria-controls="men-vurdering">
+                Læs om vurdering af mén
+            </button>
+            <div id="men-vurdering" aria-hidden="true" class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </li>
+    </ul>
+
+    <hr />
+    <h2>Erhvervsevnetab</h2>
+    <h3 class="h5">Status</h3>
+    <p>Påklaget af forsikringsselskab Tryg<br />Påklaget af tilskadekomne Lone Hansen</p>
+    <h3 class="h4 mb-2">Afgørelse</h3>
+    <h4 class="h5 mt-0">Resultat</h4>
+    <p>20%</p>
+    <h4 class="h5 mt-0">Dato for afgørelse</h4>
+    <p>17-05-2019</p>
+    <h4 class="h5 mt-0">Dokument med afgørelse</h4>
+    <p><a href="#">Afgørelse for erhvervsevnetab (PDF)</a></p>
+
+    <h3 class="h4 mb-2">Afgørelse</h3>
+    <h4 class="h5 mt-0">Resultat</h4>
+    <p>Under 15%</p>
+    <h4 class="h5 mt-0">Dato for afgørelse</h4>
+    <p>01-01-2019</p>
+    <h4 class="h5 mt-0">Dokument med afgørelse</h4>
+    <p><a href="#">Afgørelse for erhvervsevnetab (PDF)</a></p>
+
+    <ul class="accordion accordion-bordered mt-8 mb-8">
+        <li>
+            <button class="accordion-button" aria-expanded="false" aria-controls="erhvervsevnetab-vurdering">
+                Læs om vurdering af erhvervsevnetab
+            </button>
+            <div id="erhvervsevnetab-vurdering" aria-hidden="true" class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </li>
+    </ul>
+
+    <hr />
+    <h2>Behandlingsudgifter, under sagen, hjælpemidler</h2>
+    <h3 class="h5">Status</h3>
+    <p>Ikke afgjort</p>
+    <h3 class="h4 mb-2">Afgørelse</h3>
+    <p class="mt-0">Ingen afgørelse endnu</p>
+
+
+    <ul class="accordion accordion-bordered mt-8 mb-0">
+        <li>
+            <button class="accordion-button" aria-expanded="false" aria-controls="behandlingsudgifter-vurdering">
+                Læs om vurdering af behandlingsudgifter, under sagen, hjælpemidler
+            </button>
+            <div id="behandlingsudgifter-vurdering" aria-hidden="true" class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </li>
+    </ul>
 </main>
 {% endblock %}
 

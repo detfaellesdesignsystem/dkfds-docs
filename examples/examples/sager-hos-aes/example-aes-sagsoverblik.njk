@@ -46,115 +46,60 @@
 
 {% block body %}
 <main class="container page-container pt-4 pt-lg-0">
-    <h1>Sag 2020-0000015</h1>
-    <div class="row">
-        <div class="col-12 col-md-4">
-             <div class="card card-align-height">
-                <div class="card-header">
-                    <h2 class="header-title">Detaljer</h2>
-                </div>
-                <div class="card-text">
-                    <div class="row nogutter mb-3">
-                        <div class="col-5"><span class="form-label">Status</span></div>
-                        <div class="col-7">Under behandling</div>
-                    </div>
-                    <div class="row nogutter mb-3">
-                        <div class="col-5"><span class="form-label">Navn</span></div>
-                        <div class="col-7">Lone Hansen</div>
-                    </div>
-                    <div class="row nogutter mb-3">
-                        <div class="col-5"><span class="form-label">Skadedato</span></div>
-                        <div class="col-7">04-01-2019</div>
-                    </div>
-                    <div class="row nogutter mb-3">
-                        <div class="col-5"><span class="form-label">Anmeldedato</span></div>
-                        <div class="col-7">10-01-2019</div>
-                    </div>
-                    <div class="row nogutter mb-3">
-                        <div class="col-5"><span class="form-label">Sagstype</span></div>
-                        <div class="col-7">Arbejdsulykke</div>
-                    </div>
-                    <div class="row nogutter">
-                        <div class="col-5"><span class="form-label">Vedrørende</span></div>
-                        <div class="col-7">Arm, herunder albue</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-8">
-             <div class="card card-align-height">
-                <div class="card-header">
-                    <h2 class="header-title">Sagsindhold</h2>
-                </div>
-                <div class="card-text">
-                  <p>Se afgørelser og status på afgørelser i sagen under:<br/>
-                  <a href="/pages/eksempler/aes/sagsoverblik/afgoerelser/">Afgørelser</a></p>
-
-                  <p>Se en oversigt over alle sagens dokumenter under:<br/>
-                  <a href="#">Dokumenter</a></p>
-
-                  <p>Se hvem som er involveret i sagen og hvad deres rolle er under:<br/>
-                  <a href="#">Involverede</a></p>
-                </div>
-            </div>
-        </div>
+    <h1>Sagsnr. 2020-0000015</h1>
+    <div class="form-group">
+        <label class="form-label" for="input-status">Status</label>
+        <input class="form-input" required="" id="input-status" value="Under behandling" name="input-readonly" type="text" readonly="">
     </div>
-    <h2>Henvend dig til AES om sagen</h2>
-    <div class="row">
-        <div class="col-12 col-md-4">
-             <div class="card card-align-height">
-                <div class="card-header">
-                    <h3 class="header-title">Skriv til AES</h3>
-                </div>
-                <div class="card-text">
-                    <p>Hvis du har kommentarer til sagen eller nye relevante oplysninger, så kan du skrive til AES. Det kan fx være sagsoplysninger du ikke mener er korrekte eller oplysninger om operationer som er relevant for sagen.</p>
-                </div>
-                <div class="card-footer card-action">
-                    <div class="action-links">
-                        <button class="button button-tertiary w-percent-100">Skriv til AES</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-             <div class="card card-align-height">
-                <div class="card-header">
-                    <h3 class="header-title">Opdater eget sagsnr.</h3>
-                </div>
-                <div class="card-text">
-                <p>Hvis jeres sagsnr. er blevet noteret forkert, så kan det ændres her.</p>
-                <p>Det nuværende sagsnr. er:<br />
-                   098324-234-KT</p>
-                </div>
-                <div class="card-footer card-action">
-                    <div class="action-links">
-                        <button class="button button-tertiary w-percent-100">Opdater eget sagsnr.</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-             <div class="card card-align-height">
-                <div class="card-header">
-                    <h3 class="header-title">Blanketter</h3>
-                </div>
-                <div class="card-text">
-                <p>Her kan du finde blanketter du kan bruge til at henvende dig til AES, hvis du vil:</p>
-                <ul>
-                    <li>Klage over en afgørelse</li>
-                    <li>Bede om at en sag ikke behandles</li>
-                    <li>Genoptagelse af en afgørelse</li>
-                    <li>Udbetaling som engangsbeløb</li>
-                </ul>
-                </div>
-                <div class="card-footer card-action">
-                    <div class="action-links">
-                        <a href="#">Gå til blanketter</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="form-group">
+        <label class="form-label" for="input-navn">Navn</label>
+        <input class="form-input" required="" id="input-navn" value="Lone Hansen" name="input-readonly" type="text" readonly="">
     </div>
+    <div class="form-group">
+        <label class="form-label" for="input-skadedato">Skadedato</label>
+        <input class="form-input" required="" id="input-skadedato" value="04-01-2019" name="input-readonly" type="text" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-anmeldedato">Anmeldedato</label>
+        <input class="form-input" required="" id="input-anmeldedato" value="10-01-2019" name="input-readonly" type="text" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-sagstype">Sagstype</label>
+        <input class="form-input" required="" id="input-sagstype" value="Arbejdsulykke" name="input-readonly" type="text" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-vedroerende">Vedrørende</label>
+        <input class="form-input" required="" id="input-vedroerende" value="Arm, herunder albue" name="input-readonly" type="text" readonly="">
+    </div>
+    <h2 class="h3">Sagsindhold</h2>
+    <ul class="nobullet-list">
+    <li><a href="/pages/eksempler/aes/sagsoverblik/afgoerelser/">Se sagens afgørelser og status</a></li>
+    <li><a href="#">Se sagens dokumenter</a></li>
+    <li><a href="#">Se sagens involverede</a></li>
+    </ul>
+
+    <h2 class="h3">Henvend dig til AES om sagen</h2>
+    <h3 class="h4">Skriv til AES</h3>
+    <p>Hvis du har kommentarer til sagen eller nye relevante oplysninger, så kan du skrive til AES. Det kan fx være sagsoplysninger du ikke mener er korrekte eller oplysninger om operationer som er relevant for sagen.</p>
+    <button class="button button-tertiary">Skriv til AES</button>
+
+    <h3 class="h4">Giv adgang til sag</h3>
+    <p>Du kan give en anden person eller organisation adgang til at se oplysninger i din sag, ved at de får adgang til sagen i Se Sag.</p>
+    <button class="button button-tertiary">Giv adgang</button>
+
+    <h3 class="h4">Giv fuldmagt til sag</h3>
+    <p>Du kan give en anden person eller organisation adgang til at se oplysninger i din sag, ved at de får adgang til sagen i Se Sag.</p>
+    <button class="button button-tertiary">Giv adgang</button>
+
+    <h3 class="h4">Blanketter</h3>
+    <p>Her kan du finde blanketter du kan bruge til at henvende dig til AES, hvis du vil:</p>
+    <ul>
+        <li>Klage over en afgørelse</li>
+        <li>Bede om at en sag ikke behandles</li>
+        <li>Genoptagelse af en afgørelse</li>
+        <li>Udbetaling som engangsbeløb</li>
+    </ul>
+    <a href="#">Gå til blanketter</a>
 
 </main>
 {% endblock %}

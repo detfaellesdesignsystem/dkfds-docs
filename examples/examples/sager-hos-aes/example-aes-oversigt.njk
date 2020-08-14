@@ -42,9 +42,7 @@
 
 {% block body %}
 <main class="container page-container pt-4 pt-lg-0">
-    <h1>Oversigt</h1>
-    <h2 id="searchlabel">Find sag</h2>
-
+    <h1 id="searchlabel">Find sag</h1>
     <span class="form-hint" id="search-hint">
         Søg på CPR-nr. eller sagsnr.
     </span>
@@ -129,35 +127,24 @@
     </div>
 </details>
 
-    <h2 class="mt-9">Anmod om adgang</h2>
+    <h2 class="mt-9 h3">Anmod om adgang</h2>
+    <p>Du kan anmode om at få adgang til en andens sag, så du kan se sagens oplysninger i Se Sag.</p>
+    <p><button class="button button-secondary">Anmod om adgang</button></p>
+
+    <h3 class="h4 mt-8">Anmodninger, der afventer svar</h3>
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card card-align-height">
                 <div class="card-header">
-                    <h3 class="header-title">Afventer anmodning om adgang</h3>
+                    <h3 class="header-title">Jørgen Hansen</h3>
                 </div>
                 <div class="card-text">
-                    <p>Du har anmodet Jørgen Hansen om en adgang til sagsnr. 20200000012.</p>
-                    <p>Der afventes en accept fra Jørgen Hansen.</p>
+                    <p>Adgang til sagsnr. 20200000012.</p>
+                    <p><span class="badge badge-small badge-info">Afventer accept</span></p>
                 </div>
                 <div class="card-footer card-action">
                     <div class="action-links">
                         <button class="button button-tertiary w-percent-100">Fjern anmodning</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-align-height">
-                <div class="card-header">
-                    <h3 class="header-title">Anmod om adgang til en sag</h3>
-                </div>
-                <div class="card-text">
-                    <p>Du kan anmode om at få adgang til en andens sag, så du kan se sagens oplysninger i Se Sag.</p>
-                </div>
-                <div class="card-footer card-action">
-                    <div class="action-links">
-                        <button class="button button-tertiary w-percent-100">Anmod om adgang</button>
                     </div>
                 </div>
             </div>
