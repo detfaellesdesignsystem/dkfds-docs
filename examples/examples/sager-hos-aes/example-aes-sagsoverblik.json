@@ -29,11 +29,23 @@
       "text": "Support: <a href='tel:+4572206000' class='function-link'>72 20 60 00</a>"
     }
   },
-  "breadcrumbs_data": {
-    "classes": "container",
+  "breadcrumbs_data_desktop": {
+    "classes": "",
     "items": [
       {
-        "text": "Oversigt",
+        "text": "Find sag",
+        "href": "/pages/eksempler/aes/oversigt/"
+      },
+      {
+        "text": "Sagsnr. 2020-0000015"
+      }
+    ]
+  },
+  "breadcrumbs_data_mobile": {
+    "classes": "container d-lg-none mt-3",
+    "items": [
+      {
+        "text": "Find sag",
         "href": "/pages/eksempler/aes/oversigt/"
       },
       {

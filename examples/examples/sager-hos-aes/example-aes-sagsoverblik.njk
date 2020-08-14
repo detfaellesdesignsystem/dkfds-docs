@@ -32,9 +32,12 @@
 
       <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
-              <div class="nav-actions">
-                <a href="#" class="function-link">{{icon_svg("account-circle")}}Min profil</a>
-              </div>
+          <div class="nav-secondary d-none d-lg-block">
+          {{ breadcrumbs(breadcrumbs_data_desktop) }}
+          </div>
+          <div class="nav-actions">
+            <a href="#" class="function-link">{{icon_svg("account-circle")}}Min profil</a>
+          </div>
         </div>
       </div>
 
@@ -42,10 +45,11 @@
   </header>
 {% endblock %}
 
-{{ breadcrumbs(breadcrumbs_data) }}
+
+{{ breadcrumbs(breadcrumbs_data_mobile) }}
 
 {% block body %}
-<main class="container page-container pt-4 pt-lg-0">
+<main class="container page-container">
     <h1>Sagsnr. 2020-0000015</h1>
     <div class="form-group">
         <label class="form-label" for="input-status">Status</label>
