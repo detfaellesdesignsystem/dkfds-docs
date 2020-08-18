@@ -8,7 +8,6 @@ subcategory: Komponenter
 description: "Brug dette datofelt til datoangivelse i en formular."
 tags:
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
-pikaday: true
 anchor: true
 subnav:
 - text: Fejlmeddelelse
@@ -28,12 +27,14 @@ Sætter brugeren i stand til at tilføje struktureret datoinformation.
 {:.h3}
 ## Anvendes ikke til
 
-Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer. Der bør du i stedet overveje at anvende <a href="/kode/plugins/pikaday/">datepicker pluginet</a> eller på anden vis indikere de præcise datoer, der er ledige for brugeren.
+Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer.
 
 {:.h3}
 ## Vejledning
 
 Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, dvs. dag, måned og år. Felternes labels skal også afspejle det.
+
+Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.
 
 {:.h3}
 ## Links

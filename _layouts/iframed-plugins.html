@@ -2,15 +2,8 @@
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
   <head>
-    <!-- Vendor stylesheets-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/dist/tippy.css" />
-
+    <meta name="robots" content="noindex" />
     {% include head.html %}
-
   </head>
   <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
@@ -20,12 +13,5 @@
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
     <script src="{{ site.baseurl }}/assets/js/requirements-tool~styleguide.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/dkfds-micromodal-example.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/dkfds-datatables-example.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/dkfds-selectwoo-example.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/dkfds-pikaday-example.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/dkfds-tippy-example.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.3/iframeResizer.contentWindow.min.js" defer></script>
-    <div data-iframe-height></div>
   </body>
 </html>

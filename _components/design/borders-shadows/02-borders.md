@@ -2,39 +2,29 @@
 type: component
 title: Streger
 parent: borders-shadows
-order: 02
+order: "2"
 component: borders
 ---
-
 ### Implementering
+
 #### Ydre streger
 
-- Ydre streger er 1px bredde og er mørkegrå. Brug variablen $outer-border for at opsætte ydre kanter.
-- Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.
+Ydre streger er 1px bredde og er mørk grå `#747474`.
 
-##### Eksempel:
-
-{% highlight scss %}
-border: $outer-border;
-{% endhighlight %}
+Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.
 
 #### Indre streger
 
-- Indre streger er 1px bredde og er lysegrå. For at bruge indre borders bruges variablen `$inner-border`
-- Anvendes som indvendige streger i komponenter, der kræver separering af elementer.
+Indre streger er 1px bredde og er lys grå `#BFBFBF`.
 
-##### Eksempel:
+Anvendes som indvendige streger i komponenter, der kræver separering af elementer.
 
-{% highlight scss %}
-border: $inner-border;
-{% endhighlight %}
+#### Indre-indre streger
 
-#### Knap borders
-- Borders på knapper er 2px bredde og farven afhænger af elementet. For at bruge borders til knapper bruges variablen `$button-border`
-- Har ekstra border bredde, som bruges på knapper
+Indre-indre streger er 1px bredde og er lysere grå `#DCDCDC`.
 
-##### Eksempel:
+Anvendes som indvendige streger i komponenter, der kræver yderligere separering af elementer.
 
-{% highlight scss %}
-border: $button-border;
-{% endhighlight %}
+#### Knap-kant-streger
+
+Stregen rundt om knapper (Borders) er 2px bredde og farven afhænger af temaet: For borger.dk er det farven `#3C5C22` og for Virk er det farven `#004993`.

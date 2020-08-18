@@ -23,9 +23,9 @@ CVR-nr. 10150817<br />
 Telefon: 35 29 10 00<br />
 Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a>
 
-<h3 class="h4">Formålene med behandlingen af dine personoplysninger</h3>
+<h3 class="h4">Formålene med og retsgrundlaget for behandlingen af dine personoplysninger</h3>
 
-Vi anvender data til at forbedre Det Fælles Designsystem og give dig/myndigheden et bedre produkt.
+Vi anvender data til at forbedre Det Fælles Designsystem og give dig/myndigheden et bedre produkt. Vi indsamler desuden oplysninger til en anonymiseret statistik over hvor mange brugere, der åbner deres mails.
 
 <h3 class="h4">Kategorier af personoplysninger</h3>
 
@@ -50,6 +50,16 @@ Dine personoplysninger opbevares sikkert og fortroligt i IT-systemer med kontrol
 Vi arbejder kontinuerligt for at beskytte fortroligheden af de oplysninger, vi behandler og på at sikre oplysningerne mod uautoriseret adgang, ændring, offentliggørelse eller destruktion.
 
 Oplysninger om dig gemmes så længe, det er nødvendigt for at kunne opfylde vore forpligtelser som offentlig myndighed og for at kunne overholde gældende lovgivning, herunder arkivloven.
+
+Oplysningerne i forbindelse med din tilmelding til at modtage nyhedsmail vil blive opbevaret, indtil du afmelder dit nyhedsabonnement.
+
+{:.h4}
+### Retten til at trække samtykke tilbage
+Du har til enhver tid ret til at trække dit samtykke tilbage, konsekvensen heraf vil være at du ikke længere kan modtage nyhedsbrev fra Det Fælles Designsystem.
+
+Ønsker du således at afmelde et eller flere af dine nyhedsabonnementer, kan du framelde dig/opdatere dine abonnementer via linket nederst på <a href="/omdesignsystemet/nyhedsmail/">tilmeldingssiden</a>. Du vil derefter ikke modtage nyheder fra det pågældende abonnement.
+
+Hvis du vælger at trække dit samtykke tilbage, påvirker det ikke lovligheden af vores behandling af dine personoplysninger på baggrund af dit tidligere meddelte samtykke og op til tidspunktet for tilbagetrækningen. Hvis du tilbagetrækker dit samtykke, har det derfor først virkning fra dette tidspunkt.
 
 <h3 class="h4">Dine rettigheder</h3>
 

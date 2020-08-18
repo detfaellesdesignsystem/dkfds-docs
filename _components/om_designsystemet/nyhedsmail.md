@@ -29,7 +29,7 @@ mailalert: true
                 <span class="form-error-message"></span>
                 <input id="samtykke-check" type="checkbox" name="samtykke-check" value="1" class="form-checkbox  checkbox-large" required />
                 <label for="samtykke-check">Jeg giver hermed samtykke til at Erhvervsstyrelsen må opbevare min mailadresse, indtil jeg selv afmelder mig det/de valgte nyhedsmails (abonnementer).</label>
-                <p><a href="https://nyeforretningsmodeller.dk/vores-behandling-af-dine-personoplysninger-og-dine-rettigheder" target="_blank" class="icon-link">Læs om Erhvervsstyrelsens behandling af dine personoplysninger og dine rettigheder<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+                <p><a href="/omdesignsystemet/privatlivspolitik-cookies/" target="_blank" class="icon-link">Læs om vores behandling af dine personoplysninger og dine rettigheder<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
             </fieldset>
         </div>
         <button id="Tilmeld" class="button button-primary mt-8" type="button" name="Tilmeld" title="Tilmeld" value="Tilmeld">Tilmeld</button>

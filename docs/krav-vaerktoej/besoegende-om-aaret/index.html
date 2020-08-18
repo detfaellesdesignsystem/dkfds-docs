@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -26,8 +28,6 @@
 
 
 
-  
-
 <!-- Favicons
 ================================================== -->
   <!-- 128x128 -->
@@ -38,23 +38,17 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Medium-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Medium.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Bold-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Bold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Regular-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style" />
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style" />
 <link rel="preload" href="/assets/js/theme.js" as="script" />
-
-
-<link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/dist/tippy.css" />
-
-
-
-
-
-
-
 
 <style>
   body {
@@ -67,6 +61,7 @@
   }
 </style>
 
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css">
 
 </head>
 <body class="page-har-løsningen-flere-end-1000-besøgende-om-året layout-requirements-tool">
@@ -92,14 +87,14 @@
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading d-flex align-items-center">
-                <a href="/komigang/krav/" title="Gå tilbage til start">
+                <a href="/krav/" title="Gå tilbage til start">
                     Fælles krav værktøj
                 </a><span class="badge badge-small ml-3">Beta</span>
             </div>
 
             <div class="solution-info ">
                 <p class="h5 authority-name">Digitaliseringsstyrelsen</p>
-                <p class="d-print-none"><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+                <p class="d-print-none"><a href="javascript:void(0);"  data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
             </div>
         </div>
     </div>
@@ -114,17 +109,10 @@
 
         <div class="solution-info-mobile">
             <p class="h5 authority-name">Digitaliseringsstyrelsen</p>
-            <p class="d-print-none"><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+            <p class="d-print-none"><a href="javascript:void(0);"  data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
         </div>
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
-                
-                <div class="nav-secondary d-none d-md-block">
-                    <div class="nav-actions">
-                        <a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a>
-                    </div>
-                </div>
-                
                 <div class="nav-actions">
                     <a href="javascript:void(0)" class="function-link close-tool"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk værktøjet</a>
                     <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/108" target="_blank" class="function-link"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>Feedback</a>
@@ -135,9 +123,9 @@
 </header>
 
 
-<main class="page-container container" id="main-content">
+<main class="page-container container pt-4 pt-lg-0" id="main-content">
   
-  <div><a href="javascript:void(0);" class="back-link d-md-none" id="back-link-mobile">Tilbage</a></div>
+  <div><a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a></div>
   
   <div class="alert alert-error mt-0 mb-8 d-none" id="error-summary" role="alert">
     <div class="alert-body">
@@ -182,23 +170,26 @@
         </div>
     </div>
 </footer>
-
-<div class="modal" id="modal-contact" aria-hidden="true">
-    <div class="modal__overlay bg-modal" tabindex="-1"
-         data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true"
-             aria-labelledby="modal-title-2">
-            <div class="modal__header">
-                <h1 class="modal__title h2" id="modal-title-2">
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
+     aria-modal="true" aria-labelledby="modal-contact-title">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-contact-title">
                     Kontakt
-                </h1>
-            </div>
-            <div class="modal__content">
-                <p>Du er meget velkommen til at kontakte os, hvis du har forslag eller spørgsmål til den fællesoffentlige digitale arkitektur eller hjemmesiden.</p>
-                <p>Du kan kontakte sekretariatet og redaktionen ved at skrive til <a href="mailto:arkitektur@digst.dk" class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#email"></use></svg>arkitektur@digst.dk</a>.</p>
-            </div>
+            </h2>
+            <button class="modal-close button button-unstyled"
+                    aria-label="Luk"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
+        </div>
+        <div class="modal-body">
+            <p>Du er meget velkommen til at kontakte os, hvis du har forslag eller spørgsmål til den fællesoffentlige digitale arkitektur eller hjemmesiden.</p>
+            <p>Du kan kontakte sekretariatet og redaktionen ved at skrive til <a href="mailto:arkitektur@digst.dk" class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#email"></use></svg>arkitektur@digst.dk</a>.</p>
+        </div>
 
-            <button class="modal__close button button-secondary" data-micromodal-close>Luk</button>
+        <div class="modal-footer">
+            <button
+                class="button button-secondary"
+                data-modal-close>Luk</button>
         </div>
     </div>
 </div>

@@ -2,10 +2,11 @@
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
 <head>
+    <meta name="robots" content="noindex" />
     {% include head.html %}
 </head>
 <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
-{% include code/components/base-svg.html %}
+{% include code/components/fds-base-svg.html %}
 {{ content }}
 {% include demo-footer.html %}
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
@@ -13,6 +14,5 @@
 <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
 <script src="{{ site.baseurl }}/assets/js/requirements-tool~styleguide.js"></script>
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-<script src="{{ site.baseurl }}/assets/js/dkfds-micromodal-example.js"></script>
 </body>
 </html>

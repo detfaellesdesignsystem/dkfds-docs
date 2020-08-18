@@ -1,7 +1,4 @@
 'use strict';
-import "@babel/polyfill";
-import tippy from 'tippy.js';
-import MicroModal from 'micromodal';
 let toolIsProcessing = false;
 
 import * as DKFDS from 'dkfds';
@@ -85,28 +82,29 @@ document.addEventListener("DOMContentLoaded", function(){
 
     new DKFDS.Navigation();
 
-    tippy('.js-tippy', {
-        duration: 0,
-        arrow: true
-    });
+    let contactModal = new DKFDS.Modal(document.getElementById('modal-contact'));
+    contactModal.init();
 
-    MicroModal.init({
-        onShow: function(){
-            document.getElementsByTagName('body')[0].classList.add('modal-active');
-        },
-        onClose: function(modal){
-            document.getElementsByTagName('body')[0].classList.remove('modal-active');
-        }
-    });
+    let printModalElement = document.getElementById('modal-print');
+    if(printModalElement !== null) {
+        let printModal = new DKFDS.Modal(printModalElement);
+        printModal.init();
+    }
+
+    const jsSelectorTooltip = document.getElementsByClassName('js-tooltip');
+    for(let c = 0; c < jsSelectorTooltip.length; c++){
+        new DKFDS.Tooltip(jsSelectorTooltip[ c ]);
+    }
 
     if(document.getElementsByTagName('body')[0].classList.contains('page-resultat')) {
         let elemToObserve = document.getElementById('modal-print');
-        let stateToObserve = document.getElementById('modal-print').classList.contains('is-open');
+        let stateToObserve = document.getElementById('modal-print').getAttribute('aria-hidden');
+
         var observer = new MutationObserver(function (mutations) {
             for(let mutation in mutations) {
-                if (mutations[mutation].attributeName == "class") {
-                    let newStateToObserve = mutations[mutation].target.classList.contains('is-open');
-                    if (stateToObserve === true && newStateToObserve === false) {
+                if (mutations[mutation].attributeName == "aria-hidden") {
+                    let newStateToObserve = mutations[mutation].target.getAttribute('aria-hidden');
+                    if (stateToObserve === "false" && newStateToObserve === "true") {
                         stateToObserve = newStateToObserve;
                         if (document.getElementById('print-title').getAttribute('data-print') === "true") {
                             document.getElementById('print-title').setAttribute('data-print', "false");
@@ -124,10 +122,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let backlink = document.getElementById('back-link');
     if(backlink !== null){
         backlink.addEventListener('click', goOneQuestionBack);
-    }
-    let backlinkMobile = document.getElementById('back-link-mobile');
-    if(backlinkMobile !== null){
-        backlinkMobile.addEventListener('click', goOneQuestionBack);
     }
 
     questionnaire = getQuestionnaire();
@@ -190,12 +184,12 @@ let printResultHandler = function(){
                 document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.add('d-print-none');
                 document.getElementById('print-title').classList.add('d-print-block');
-                MicroModal.close('modal-print');
+                new DKFDS.Modal(document.getElementById('modal-print')).hide();
             } else{
                 document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.remove('d-print-none');
                 document.getElementById('print-title').classList.remove('d-print-block');
-                MicroModal.close('modal-print');
+                new DKFDS.Modal(document.getElementById('modal-print')).hide();
             }
         });
     }

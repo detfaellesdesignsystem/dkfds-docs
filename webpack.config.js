@@ -9,13 +9,9 @@ module.exports = function (outputPath, prod) {
     entry: {
       "theme": ["./javascript/theme.js"],
       styleguide: ["./javascript/start.js", "./scss/styleguide.scss"],
+      styleguide_display: ["./scss/styleguide-display.scss"],
       styleguide_borgerdk: ["./scss/styleguide-borgerdk.scss"],
       styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
-      "dkfds-datatables-example": ["./examples/plugins/datatables/js/dkfds-datatables-example.js"],
-      "dkfds-selectwoo-example": ["./examples/plugins/selectwoo/js/dkfds-selectwoo-example.js"],
-      "dkfds-pikaday-example": ["./examples/plugins/pikaday/js/dkfds-pikaday-example.js"],
-      "dkfds-micromodal-example": ["./examples/plugins/micromodal/js/dkfds-micromodal-example.js"],
-      "dkfds-tippy-example": ["./examples/plugins/tippy/js/dkfds-tippy-example.js"],
       "requirements-tool": ["./javascript/requirements-tool.js"],
       "search": ["./javascript/search.js"]
     },

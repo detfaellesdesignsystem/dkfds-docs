@@ -1,10 +1,9 @@
 ---
-title: Multiselect
+title: Multiselect og søgning
 parent: Drop-down
 order: 60
-component: selectwoo-multiselect
-componentTitle: Eksempel på multiselect dropdown-menu
 ---
-Ønsker man at vælge flere værdier i en drop down, kan man vælge at bruge <a href="https://github.com/woocommerce/selectWoo" class="icon-link">selectWoo<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, som er et tredjeparts bibliotek hvortil vi leverer et tema, så det følger det visuelle udtryk i Det Fælles Designsystem.
 
-<a href="/kode/plugins/selectwoo-multiselect/">Læs mere om brug af selectWoo med FDS i kode afsnittet</a>.
+Vi tilbyder på nuværende tidspunkt ikke en multiselect drop-down komponent med søgefunktion, men hvis man finder eller laver en selv kan det se ud som på billedet nedenfor.
+
+<div><img src="{{ site.baseurl }}/assets/img/components/multiselect.png" class="outer-border-box" alt="Eksempel på, hvordan en multiselect dropdown kan se ud" /></div>

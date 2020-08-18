@@ -1,0 +1,118 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer-three-columns.njk" import footer_columns as footer_columns %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
+
+{% block header %}
+  <header class="header">
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+
+    <div class="overlay"></div>
+    <nav class=" nav"> <!-- collapsible-->
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+
+      <div class="portal-info-mobile">
+        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
+        <a href="#" class="button button-secondary button-signout">
+          Log af
+        </a>
+      </div>
+
+      <div class="solution-info-mobile">
+        <p class="bold">Arbejdsmarkedets Erhvervssikring</p>
+        <p>Support: <a href='tel:+4572206000' class='function-link'>72 20 60 00</a></p>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar-inner navbar-context-actions container">
+          <div class="nav-secondary d-none d-lg-block">
+          {{ breadcrumbs(breadcrumbs_data_desktop) }}
+          </div>
+          <div class="nav-actions">
+            <a href="#" class="function-link">{{icon_svg("account-circle")}}Min profil</a>
+          </div>
+        </div>
+      </div>
+
+    </nav> <!-- collapsible nav end-->
+  </header>
+{% endblock %}
+
+
+{{ breadcrumbs(breadcrumbs_data_mobile) }}
+
+{% block body %}
+<main class="container page-container">
+    <h1>Sagsnr. 2020-0000015</h1>
+    <div class="form-group">
+        <label class="form-label" for="input-status">Status</label>
+        <input class="form-input" required="" id="input-status" value="Under behandling" name="input-readonly" type="text" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-navn">Navn</label>
+        <input class="form-input" required="" id="input-navn" value="Lone Hansen" name="input-readonly" type="text" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-skadedato">Skadedato</label>
+        <input class="form-input" required="" id="input-skadedato" value="04-01-2019" name="input-readonly" type="text" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-anmeldedato">Anmeldedato</label>
+        <input class="form-input" required="" id="input-anmeldedato" value="10-01-2019" name="input-readonly" type="text" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-sagstype">Sagstype</label>
+        <input class="form-input" required="" id="input-sagstype" value="Arbejdsulykke" name="input-readonly" type="text" readonly="">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-vedroerende">Vedrørende</label>
+        <input class="form-input" required="" id="input-vedroerende" value="Arm, herunder albue" name="input-readonly" type="text" readonly="">
+    </div>
+    <h2 class="h3">Sagsindhold</h2>
+    <ul class="nobullet-list">
+    <li><a href="/pages/eksempler/aes/sagsoverblik/afgoerelser/">Se sagens afgørelser og status</a></li>
+    <li><a href="#">Se sagens dokumenter</a></li>
+    <li><a href="#">Se sagens involverede</a></li>
+    </ul>
+
+    <h2 class="h3 mt-9">Henvend dig til AES om sagen</h2>
+    <h3 class="h4">Skriv til AES</h3>
+    <p>Hvis du har kommentarer til sagen eller nye relevante oplysninger, så kan du skrive til AES. Det kan fx være sagsoplysninger du ikke mener er korrekte eller oplysninger om operationer som er relevant for sagen.</p>
+    <button class="button button-tertiary">Skriv til AES</button>
+
+    <h3 class="h4 mt-7">Giv adgang til sag</h3>
+    <p>Du kan give en anden person eller organisation adgang til at se oplysninger i din sag, ved at de får adgang til sagen i Se Sag.</p>
+    <button class="button button-tertiary">Giv adgang</button>
+
+    <h3 class="h4 mt-7">Giv fuldmagt til sag</h3>
+    <p>Du kan give en anden person eller organisation adgang til at se oplysninger i din sag, ved at de får adgang til sagen i Se Sag.</p>
+    <button class="button button-tertiary">Giv fuldmagt</button>
+
+    <h3 class="h4 mt-7">Blanketter</h3>
+    <p>Her kan du finde blanketter du kan bruge til at henvende dig til AES, hvis du vil:</p>
+    <ul>
+        <li>Klage over en afgørelse</li>
+        <li>Bede om at en sag ikke behandles</li>
+        <li>Genoptagelse af en afgørelse</li>
+        <li>Udbetaling som engangsbeløb</li>
+    </ul>
+    <a href="#">Gå til blanketter</a>
+
+</main>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer_columns(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

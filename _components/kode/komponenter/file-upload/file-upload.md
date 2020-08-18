@@ -28,7 +28,7 @@ Vi anbefaler at bruge det indbyggede input felt til filer `type="file"` frem for
 
 Årsagen til dette er:
 
-- at feltet får fokus, når man tabulerer gennem siden
+- at feltet får fokus, når man navigerer ved brug af tastaturet
 - at feltet fungerer ved brug af tastatur
 - at feltet fungerer ved brug af hjælpemidler
 - at feltet fungerer, selv når JavaScript er utilgængeligt.

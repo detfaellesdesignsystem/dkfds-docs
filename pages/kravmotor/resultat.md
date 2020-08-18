@@ -85,7 +85,7 @@ print: true
         <li>Webtilgængelighed <span class="d-print-none">(<a href="https://arkitektur.digst.dk/webtilgaengelighed-eksterne-kilder" class="icon-link" target="_blank" aria-label="Læs mere om eksterne krav omkring webtilgængelighed">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span></li>
     </ul>
     
-    <button class="button button-tertiary d-print-none mt-5" data-micromodal-trigger="modal-print">
+    <button class="button button-tertiary d-print-none mt-5" data-module="modal" data-target="modal-print">
         <svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#printer"></use></svg>
         Print resultat
     </button>
@@ -135,17 +135,18 @@ print: true
     <div><button class="button button-primary d-print-none mt-9" id="close-tool">Luk krav-værktøjet</button></div>
 </div>
 
-<div class="modal d-print-none" id="modal-print" aria-hidden="true">
-    <div class="modal__overlay bg-modal" tabindex="-1"
-        data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true"
-            aria-labelledby="modal-title-1">
-            <div class="modal__header">
-                <h1 class="modal__title h2" id="modal-title-1">
+<div class="fds-modal d-print-none" id="modal-print" aria-hidden="true" role="dialog"
+    aria-modal="true" aria-labelledby="modal-print-title">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-print-title">
                     Hvad er navnet på din løsning?
-                </h1>
-            </div>
-            <div class="modal__content">
+            </h2>
+            <button class="modal-close button button-unstyled"
+                aria-label="Luk"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
+        </div>
+        <div class="modal-body">
                 <div class="alert alert-error d-none" id="modal-print-error-summary" role="alert">
                     <div class="alert-body">
                         <p class="alert-heading">Hov, der er problemer</p>
@@ -165,13 +166,11 @@ print: true
                     <input class="form-input" required id="solution-name-input" value=""
                         name="solution-name-input" type="text">
                 </div>
-            </div>
-            <div class="modal__footer">
+        </div>
+        <div class="modal-footer">
                 <button class="button button-primary" id="print-result-solution"
                     aria-label="Fx bekræft handling">Print resultat</button>
-            </div>
-            <button class="modal__close button button-secondary"
-                aria-label="Close modal" data-micromodal-close>Luk</button>
+            <button class="button button-secondary" data-modal-close>Luk</button>
         </div>
     </div>
 </div>

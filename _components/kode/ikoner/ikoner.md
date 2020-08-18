@@ -36,7 +36,7 @@ I tilfælde, hvor ikonet ikke skal læses op, tilføj da attributten `aria-hidde
 
 Dekorative ikoner bør undgås, men hvis de bruges, skal de ikke beskrives eller have beskrivende attributter, da de ikke bærer nogen betydning eller er vigtige for brugeren.
 
-Da Internet Explorer sætter fokus på svg elementer bør `focusable="false"` tilføjes, således at der ikke længeres sættes fokus på ikonet med tab-tasten.
+Da Internet Explorer sætter fokus på svg elementer bør `focusable="false"` tilføjes, således at der ikke længeres sættes fokus på ikonet med tastaturet.
 
 ## Varianter
 

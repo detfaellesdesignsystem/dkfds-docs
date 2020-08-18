@@ -16,7 +16,7 @@ componentCode: "/kode/komponenter/drop-down/"
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Anvend kun dropdown menuer, når det er absolut nødvendigt og kun i tilfælde, hvor brugeren skal vælge mellem 7 og 15 værdier på en begrænset plads.
+Anvend kun dropdown menuer, når det er absolut nødvendigt og kun i tilfælde, hvor brugeren skal vælge mellem 7 til 15 værdier på en begrænset plads.
 
 {:.h3}
 ## Anvendes ikke til

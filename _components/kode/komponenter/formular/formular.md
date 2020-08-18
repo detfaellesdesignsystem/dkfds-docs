@@ -35,7 +35,7 @@ Overhold derfor sammenhængen mellem den viste rækkefølge af formularelementer
 
 Gruppér sammenhængende formularelementer ved hjælp af fieldset og brug et enkelt legend for hvert fieldset, hvor det giver mening.
 
-Tilføj label til alle formularelementer udover fieldset.
+Tilføj label med korrekt `for` attribut, hvor værdien er ID'et på formularelementet det tilhører.
 
 Sørg for at labels til formularelementer er meningsfulde og præcise.
 
@@ -43,7 +43,7 @@ Undgå placeholder-tekst. Browserne kan ikke garantere tilstrækkeligt kontrastn
 
 Tillad copy/paste i formularelementer, hvor brugeren selv skal indtaste oplysninger.
 
-Formularelementer skal automatisk fremhæves, når brugeren navigerer til dem ved hjælp af tabulator-tasten.
+Formularelementer skal automatisk fremhæves, når brugeren navigerer til dem ved hjælp af tastaturet.
 
 Sørg for at alle elementer står i register, dvs. at de står på linje og i et naturligt lodret læse-flow fra top til bund.
 

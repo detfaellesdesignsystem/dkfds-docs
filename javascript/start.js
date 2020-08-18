@@ -1,7 +1,6 @@
 'use strict';
 import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
-var iFrameResize = require('./vendor/iframeResizer');
 const TestFDS = require('./test');
 import {CookiePrompter, PiwikProTracker, CookieMgr } from "./vendor/CookiePrompter";
 import * as DKFDS from "dkfds";
@@ -119,17 +118,7 @@ $(document).ready(function () {
         });
     }
 
-    iFrameResize({ log: false, heightCalculationMethod: 'taggedElement', resizeFrom: 'child' }, '.preview-iframe');
 
-    //quick fix to trigger iframeresizer.
-    setTimeout(function () {
-        var iframes = $('.preview-iframe');
-        iframes.each(function(index) {
-            if($(this)[0].iFrameResizer !== undefined){
-                $(this)[0].iFrameResizer.resize();
-            }
-        });
-    }, 2000);
 
     var inFormOrLink = false;
     $('.layout-demo a, .layout-demo button').click(function(e){

@@ -13,10 +13,6 @@
 ================================================== -->
   {% include meta.html %}
 
-  {% if site.url %}
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  {% endif %}
-
 <!-- Favicons
 ================================================== -->
   <!-- 128x128 -->
@@ -27,29 +23,17 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Medium-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Medium.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Bold-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Bold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Regular-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="{{ site.baseurl }}/assets/style/styleguide_borgerdk.css" as="style" />
 <link rel="preload" href="{{ site.baseurl }}/assets/style/styleguide_virkdk.css" as="style" />
 <link rel="preload" href="{{ site.baseurl }}/assets/js/theme.js" as="script" />
-
-{% if page.tippy or page.layout == 'requirements-tool' %}
-<link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/dist/tippy.css" />
-{% endif %}
-
-
-{% if page.select2 %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css" />
-{% endif %}
-
-{% if page.datatables %}
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" />
-<link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css" />
-{% endif %}
-
 
 <style>
   body {
@@ -62,3 +46,4 @@
   }
 </style>
 
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css">

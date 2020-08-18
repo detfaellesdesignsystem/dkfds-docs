@@ -36,13 +36,6 @@ subnav:
 
 Hvis man gør brug af en trinindikator i forbindelse med en <a href="/komponenter/overflowmenu/">overflow menu komponent</a>, så se venligst <a href="/kode/komponenter/overflowmenu/">dokumentationen for implementering for overflow menu</a>.
 
-### Tilgængelighed
-
-Tringuides skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tab-tasten til navigation.
-
-Tringuides kan have et højt kognitivt niveau. Før du vælger at anvende en tringuide, bør du teste en prototype med en alternativ løsning for at se, om det overhovedet er nødvendigt med en tringuide.
-
-
 #### Aktivt og overstået trin i trinindikator
 
 - Det aktive menupunkt skal have klassen `active` og `current`.

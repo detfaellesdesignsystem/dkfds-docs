@@ -53,7 +53,7 @@ Hav forståelse for dit ansvar for sammenhængen i mellem og på tværs af de ma
 
 Når du som designer skal sætte en selvbetjeningsløsning op, skal du være opmærksom på følgende:
 
-1. Designet (kontrastforhold mm.) skal være tilgængeligt på WCAG 2.1 AA niveau. Brug plugins til dit designprogram, for at efterleve WCAG 2.1 AA eller brug online værktøjerne fra WebAIM.
+1. Designet (kontrastforhold mm.) skal være tilgængeligt på WCAG 2.1 AA niveau. Brug plugins til dit designprogram, for at efterleve <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> AA eller brug online værktøjerne fra WebAIM.
 1. Anvend gerne et 12-grid layout, evt. med følgende breakpoints: 480px, 768px, 991px og 1200px.
 1. Anvend gerne et 8pt baseline grid.
 1. Layoutet er inddelt i en header, et indholdsområde og en footer på alle sider.

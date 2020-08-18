@@ -28,7 +28,7 @@
 
       <div class="solution-info-mobile">
         <p class="bold">Erhvervsministeriet</p>
-        <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+        <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
 
       <div class="navbar">
@@ -45,7 +45,8 @@
 {% endblock %}
 
 {% block body %}
-<main class="container page-container">
+<main class="container page-container pt-4 pt-lg-0">
+<div><a href="/pages/eksempler/digital-flytning/flytning-3" class="back-link">Tilbage</a></div>
   {{overflowmenu("Trin 4 af 5","overflow_steps", true, false, "menu-down" ,"
       <ul class='sidenav-list'>
           <li>
@@ -93,7 +94,6 @@
     </div>
     <nav class="page-navigation d-print-none">
       <a href="/pages/eksempler/digital-flytning/flytning-5" class="button button-primary">Næste</a>
-      <a href="/pages/eksempler/digital-flytning/flytning-3" class="button button-quaternary"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
 </main>
 {% endblock %}
@@ -105,4 +105,4 @@
   {{ footer_simple(footer_data) }}
 {% endblock %}
 
-{{ modal('modal-contact', modal_contact_data) }}
+{{ modal(modal_data) }}

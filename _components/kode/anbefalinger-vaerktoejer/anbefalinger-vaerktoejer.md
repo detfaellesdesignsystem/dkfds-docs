@@ -71,7 +71,7 @@ Du skal huske på, at HTML5 er et format i udvikling, og at browseren ikke har e
 
 Det Fælles Designsystem anvender ”Vanilla JavaScript” (”Vanilla JS” eller ”Plain JS”) og ikke et JavaScript bibliotek som fx jQuery, der skaber afhængighed til tredjeparts leverandører. På den måde anvender designsystemet optimerede løsninger og undgår afhængighed af tredjepartsleverandører og deres eventuelle tekniske gæld.
 
-Du kan altså godt anvende en tredjeparts løsning (se listen over anbefalede plugins). Men ønsker du at udvikle en funktionskomponent, og at den skal kunne inkluderes i designsystemets kerne, så skal du udvikle den i Vanilla JS.
+Du kan altså godt anvende en tredjeparts løsning. Men ønsker du at udvikle en funktionskomponent, og at den skal kunne inkluderes i designsystemets kerne, så skal du udvikle den i Vanilla JS.
 
 #### Læs mere om Javascript
 <ul class="nobullet-list">
@@ -158,8 +158,6 @@ Jo flere ressourcer en selvbetjeningsløsning skal hente, før brugeren kan anve
 Det er derfor et centralt princip i forhold til sidens præstation at hente så få og så små ressourcer som muligt. 
 
 Det skal på den anden side vejes op i mod de krav og forventninger brugerne har til en given løsning.
-
-Det Fælles Designsystem bestræber sig på at understøtte dette ved at alle plugins til designsystemets funktioner er tilvalg, som udvikleren skal foretage sig. Det giver dig mulighed for at vurdere den optimale sammenhæng mellem brugernes ønsker og krav, brug af ressourcer og sidens måde at præstere på.
 
 ### Baseline for indlæsningshastighed
 

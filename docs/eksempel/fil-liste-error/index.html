@@ -2,13 +2,7 @@
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
   <head>
-    <!-- Vendor stylesheets-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/dist/tippy.css" />
-
+    <meta name="robots" content="noindex" />
     <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
@@ -17,6 +11,8 @@
 ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
+  
+  <meta name="robots" content="noindex" />
   
 <!-- Title and meta description
 ================================================== -->
@@ -33,8 +29,6 @@
 
 
 
-  
-
 <!-- Favicons
 ================================================== -->
   <!-- 128x128 -->
@@ -45,21 +39,17 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Medium-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Medium.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Bold-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Bold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Regular-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold-Latin1.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style" />
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style" />
 <link rel="preload" href="/assets/js/theme.js" as="script" />
-
-
-
-
-
-
-
-
 
 <style>
   body {
@@ -72,6 +62,7 @@
   }
 </style>
 
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css">
 
   </head>
   <body class="page-fil-liste-error layout-example-contained">
@@ -117,7 +108,7 @@
 
                 <p class="h5 authority-name"> Styrelsen for Eksempler</p>
 
-                <p>Support: 72 20 60 00 <span class="d-print-none">· <a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
+                <p>Support: 72 20 60 00 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
@@ -139,23 +130,14 @@
 
         <div class="solution-info-mobile">
             <p class="bold">Erhvervsministeriet</p>
-            <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
+            <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a>
             </p>
-        </div>
-        <div class="navbar">
-            <div class="navbar-inner navbar-context-actions container">
-                <div class="nav-secondary d-none d-md-block">
-                    <div class="nav-actions">
-                        <a href="/pages/eksempler/aktindsigt/aktindsigt-1/" class="back-link">Tilbage</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </nav> <!-- collapsible nav end-->
 </header>
 
-<main class="container page-container">
-    <a href="javascript:void(0);" class="back-link d-md-none">Tilbage</a>
+<main class="container page-container pt-4 pt-lg-6">
+    <a href="javascript:void(0);" class="back-link">Tilbage</a>
 
     <div class="alert alert-error mt-0 mb-8" role="alert">
         <div class="alert-body">
@@ -276,48 +258,49 @@
     </div>
 </footer>
 
-<div class="modal" id="modal-contact" aria-hidden="true">
-    <div class="modal__overlay bg-modal" tabindex="-1" data-micromodal-close="">
-        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-contact-1">
-            <div class="modal__header">
-                <h1 class="modal__title h2" id="modal-contact-1">
-                    Kontakt
-                </h1>
-            </div>
-            <div class="modal__content">
-                <div class="alert alert-warning" role="alert">
-                    <div class="alert-body">
-                        <h3 class="alert-heading">Vi har noget information
-                            af advarende karakter</h3>
-                        <p class="alert-text">Noget tekst, der forklarer
-                            det af advarende karakter, som brugeren bør
-                            vide inden denne ringer eller skriver. Noget
-                            tekst, der forklarer det af advarende karakter,
-                            som brugeren bør vide inden denne ringer eller
-                            skriver.</p>
-                    </div>
-                </div>
-                <h3>En form for support</h3>
-                <p>Hvis du har spørgsmål om:</p>
-                <ul>
-                    <li>En ting som denne</li>
-                    <li>Et andet emne som dette</li>
-                </ul>
-                <p>Kan du ringe direkte til: 12 34 56 78</p>
-                <p>Telefonen er åben:</p>
-                <p class="m-0">
-                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    kl. 9-17</p>
-                <p class="m-0">
-                    Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    kl. 9-17</p>
-                <p class="m-0">
-                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    kl. kl. 9-14</p>
-            </div>
-
-            <button class="modal__close button button-secondary" aria-label="Close modal" data-micromodal-close="">Luk</button>
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-contact-title">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-contact-title">
+                Kontakt
+            </h2>
+            <button class="modal-close button button-unstyled" aria-label="Luk" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
         </div>
+        <div class="modal-body">
+            <div class="alert alert-warning" role="alert">
+                <div class="alert-body">
+                    <h3 class="alert-heading">Vi har noget information af
+                        advarende karakter</h3>
+                    <p class="alert-text">Noget tekst, der forklarer det af
+                        advarende karakter, som brugeren bør vide inden
+                        denne ringer eller skriver. Noget tekst, der
+                        forklarer det af advarende karakter, som brugeren
+                        bør vide inden denne ringer eller skriver.</p>
+                </div>
+            </div>
+            <h3>En form for support</h3>
+            <p>Hvis du har spørgsmål om:</p>
+            <ul>
+                <li>En ting som denne</li>
+                <li>Et andet emne som dette</li>
+            </ul>
+            <p>Kan du ringe direkte til: 12 34 56 78</p>
+            <p>Telefonen er åben:</p>
+            <p class="m-0">
+                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                kl. 9-17</p>
+            <p class="m-0">
+                Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl.
+                9-17</p>
+            <p class="m-0">
+                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                kl. kl. 9-14</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="button button-secondary" data-modal-close="">Luk</button>
+        </div>
+
     </div>
 </div>
 
@@ -326,12 +309,5 @@
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
     <script src="/assets/js/requirements-tool~styleguide.js"></script>
-    <script src="/assets/js/dkfds-micromodal-example.js"></script>
-    <script src="/assets/js/dkfds-datatables-example.js"></script>
-    <script src="/assets/js/dkfds-selectwoo-example.js"></script>
-    <script src="/assets/js/dkfds-pikaday-example.js"></script>
-    <script src="/assets/js/dkfds-tippy-example.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.3/iframeResizer.contentWindow.min.js" defer></script>
-    <div data-iframe-height></div>
   </body>
 </html>

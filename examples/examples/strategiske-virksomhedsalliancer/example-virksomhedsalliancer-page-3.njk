@@ -31,14 +31,15 @@
 
       <div class="solution-info-mobile">
         <p class="bold">Erhvervsministeriet</p>
-        <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+        <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
     </nav> <!-- collapsible nav end-->
   </header>
 {% endblock %}
 
 {% block body %}
-<div class="container page-container">
+<div class="container page-container pt-4 pt-lg-6">
+    <div><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/" class="back-link d-lg-none">Tilbage</a></div>
     <div class="row">
         <aside class="col-12 col-lg-3 sidebar-col">
             <div class="overflow-menu  overflow-menu--open-right overflow-menu--lg-no-responsive">
@@ -85,7 +86,7 @@
             </div>
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-
+            <div><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/" class="back-link d-none d-lg-inline-block">Tilbage</a></div>
     <h1>Statsstøtte</h1>
     {{ alert("alert alert-info alert--paragraph", "", "", "Virksomheder må ikke modtage statsstøtte, også kaldet EU de-minimums-støtte, der overstiger grænsen på de EUR 200.000 over de seneste 3 år. Tidligere tilskud givet fra Eksportrådet er omfattet af de-minimis-reglerne og de skal nævnes nedenfor.<br><br>Hvis virksomheden juridisk er en del af en koncernstruktur (indenlandsk som udenlandsk), som tilsammen hæfter for de-minimis-støtte, oplyses det fulde beløb for hele koncernen. Se Statsstøttehåndbogen side 65-86, hvis du er i tvivl om, hvor meget af koncernen, der er omfattet.<br><br>Støtte fra eksportrådet i form af tilskud ydes i henhold til EU-reglerne for de-minimis-støtte, jf. Kommissionernes forordning (EU) nr. 1407/2013 af 18. december 2013.", "warning" ) }}
 
@@ -118,7 +119,6 @@
 
     <nav class="page-navigation d-print-none">
         <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/" class="button button-primary">Næste</a>
-        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/" class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
     </nav>
         </main>
     </div>
@@ -132,4 +132,4 @@
   {{ footer_simple(footer_data) }}
 {% endblock %}
 
-{{ modal('modal-contact', modal_contact_data) }}
+{{ modal(modal_data) }}

@@ -26,14 +26,15 @@
 
       <div class="solution-info-mobile">
         <p class="">Erhvervsministeriet</p>
-        <p><a href="javascript:void(0);" data-micromodal-trigger="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
+        <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text-outline"></use></svg>Kontakt</a></p>
       </div>
     </nav> <!-- collapsible nav end-->
   </header>
 {% endblock %}
 
 {% block body %}
-<div class="container page-container">
+<div class="container page-container pt-4 pt-lg-6">
+    <div><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/" class="back-link d-lg-none">Tilbage</a></div>
     <div class="row">
         <aside class="col-12 col-lg-3 sidebar-col">
             <div class="overflow-menu  overflow-menu--open-right overflow-menu--lg-no-responsive">
@@ -77,6 +78,7 @@
             </div>
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
+            <div><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/" class="back-link d-none d-lg-inline-block">Tilbage</a></div>
             <h1>SMV-kriterier</h1>
             <p class="font-lead">Ved tildeling af støtte SMV'er defineres som SMV som værende en virksomhed</p>
             <ul>
@@ -90,7 +92,6 @@
 
             <nav class="page-navigation d-print-none">
               <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/" class="button button-primary">Næste</a>
-              <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/" class="button button-quaternary"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-left"></use></svg>Tilbage</a>
             </nav>
         </main>
     </div>
@@ -104,4 +105,4 @@
   {{ footer_simple(footer_data) }}
 {% endblock %}
 
-{{ modal('modal-contact', modal_contact_data) }}
+{{ modal(modal_data) }}

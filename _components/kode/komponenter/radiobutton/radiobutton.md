@@ -38,6 +38,8 @@ Indsæt altid to eller flere radioknapper i et fieldset inklusive legend.
 
 Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.
 
+`name` atributten bør have samme værdi for alle radioknapper i en liste.
+
 Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
 
 ## Varianter

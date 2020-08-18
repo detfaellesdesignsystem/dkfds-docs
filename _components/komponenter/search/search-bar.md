@@ -7,7 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: "Et søgefelt udstiller brugeren muligheden for at søge efter bestemt indhold på siden eller i løsningen."
 tags:
-lead: Et søgefelt udstiller brugerne muligheden for brugerne for at søge efter bestemt indhold på siden eller i løsningen.
+lead: Et søgefelt udstiller brugerne muligheden at søge efter bestemt indhold på siden eller i løsningen.
 component: search
 componentTitle: "Eksempel på søgefelt"
 componentCode: "/kode/komponenter/search/"

@@ -1,0 +1,162 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer-three-columns.njk" import footer_columns as footer_columns %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+{% block header %}
+  <header class="header">
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+
+    <div class="overlay"></div>
+    <nav class=" nav"> <!-- collapsible-->
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+
+      <div class="portal-info-mobile">
+        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
+        <a href="#" class="button button-secondary button-signout">
+          Log af
+        </a>
+      </div>
+
+      <div class="solution-info-mobile">
+        <p class="bold">Arbejdsmarkedets Erhvervssikring</p>
+        <p>Support: <a href='tel:+4572206000' class='function-link'>72 20 60 00</a></p>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar-inner navbar-context-actions container">
+              <div class="nav-actions">
+                <a href="#" class="function-link">{{icon_svg("account-circle")}}Min profil</a>
+              </div>
+        </div>
+      </div>
+
+    </nav> <!-- collapsible nav end-->
+  </header>
+{% endblock %}
+
+{% block body %}
+<main class="container page-container pt-4 pt-lg-0">
+    <h1 id="searchlabel">Find sag</h1>
+    <span class="form-hint" id="search-hint">
+        Søg på CPR-nr. eller sagsnr.
+    </span>
+    <div class="form-group search mt-3">
+        <input class="form-input input-char-27" id="search-input"
+            name="search" aria-describedby="search-hint" value="311270-1234" aria-labelledby="searchlabel" type="search">
+
+        <button class="button button-search">Søg</button>
+    </div>
+    <h3 class="h5 mb-2">Navn: Lone Hansen</h3>
+    <table class="table table--zebra table--responsive-headers">
+      <thead>
+          <tr>
+              <th>Sagsnr.</th>
+              <th>Skadedato</th>
+              <th>Anmeldedato</th>
+              <th>Sagstype</th>
+              <th>Vedrørende</th>
+              <th>Anerkendelse</th>
+              <th>Mén</th>
+              <th>Erhvervsevnetab</th>
+              <th>Status</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><a href="/pages/eksempler/aes/sagsoverblik/">2020-0000015</a></td>
+              <td>-</td>
+              <td>01-02-2020</td>
+              <td>Erhvervssygdom</td>
+              <td>Hudsygdom</td>
+              <td>Ingen afgørelse endnu</td>
+              <td>Ingen afgørelse endnu</td>
+              <td>Ingen afgørelse endnu</td>
+              <td>Under behandling</td>
+          </tr>
+          <tr>
+            <td><a href="/pages/eksempler/aes/sagsoverblik/">20200000010 / 311270-1234/04</a></td>
+            <td>17-01-2019</td>
+            <td>​​​​​​​20-01-2019</td>
+            <td>Arbejdsulykke</td>
+            <td>Arm, herunder albue</td>
+            <td>Anerkendt</td>
+            <td>15%</td>
+            <td>Genoptaget af tilskadekomne Lone Hansen</td>
+            <td>Under behandling</td>
+          </tr>
+          <tr>
+            <td><a href="/pages/eksempler/aes/sagsoverblik/">20200000008 / 311270-1234/03</a></td>
+            <td>04-07-2018</td>
+            <td>16-12-2018</td>
+            <td>Privat erstatning</td>
+            <td>Hals, herunder nakke og halshvivel</td>
+            <td>-</td>
+            <td>10%</td>
+            <td>-</td>
+            <td>Afsluttet</td>
+          </tr>
+      </tbody>
+    </table>
+
+<details class="details js-details mt-4">
+    <summary class="details-summary">
+        <span class="details-summary-text">
+            Der er en sag hos AES jeg ikke kan finde
+        </span>
+    </summary>
+    <div class="details-text">
+        <ul class="mt-0">
+            <li class="mt-0">Der kan gå op til en uge fra AES modtager en sag, til den er tilgængelig her.</li>
+            <li>Det er kun sager, som forsikringsselskabet har sendt til AES, der vil blive vist her. ​​​​​​</li>
+            <li>Tilskadekomnes egne sager fjernes et år efter sagen er afsluttet.</li>
+            <li>Har du haft fuldmagt eller adgang til en andens sag, så bliver fuldmagten automatisk fjernet 15 uger efter sagen er afsluttet. Ved henlæggelser fjernes fuldmagten med det samme. Dermed vil der ikke være adgang til sagen i Se Sag længere.</li>
+        </ul>
+        <div class="alert alert-info alert--show-icon">
+            <div class="alert-body">
+                <p class="alert-heading">Nyt Se Sag</p>
+                <p class="alert-text">Du befinder dig lige nu i det nye Se Sag. Har du adgang til en anden persons verserende sag, som du ikke kan finde i det nye Se Sag, så er det måske fordi sagen stadig befinder sig i det gamle Se Sag. Du kan forsøge at finde sagen ved at gå til: ​​​​​​​​​​​​​<a href="#" class="icon-link">'Adgange' i det gamle Se Sag<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+            </div>
+        </div>
+    </div>
+</details>
+
+    <h2 class="mt-9 h3">Anmod om adgang</h2>
+    <p>Du kan anmode om at få adgang til en andens sag, så du kan se sagens oplysninger i Se Sag.</p>
+    <p><button class="button button-secondary">Anmod om adgang</button></p>
+
+    <h3 class="h4 mt-8">Anmodninger, der afventer svar</h3>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-align-height">
+                <div class="card-header">
+                    <h3 class="header-title">Jørgen Hansen</h3>
+                </div>
+                <div class="card-text">
+                    <p>Adgang til sagsnr. 20200000012.</p>
+                    <p><span class="badge badge-small badge-info">Afventer accept</span></p>
+                </div>
+                <div class="card-footer card-action">
+                    <div class="action-links">
+                        <button class="button button-tertiary w-percent-100">Fjern anmodning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer_columns(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

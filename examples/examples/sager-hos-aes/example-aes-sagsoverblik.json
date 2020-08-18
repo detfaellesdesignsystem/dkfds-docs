@@ -1,0 +1,92 @@
+{
+  "portal_header_data": {
+    "compact": true,
+    "user": {
+      "name": "Christian Emil Vestergaard Christiansen, Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+      "label": "Portalnavn",
+      "href" : "javascript:void(0);"
+    },
+    "link": {
+      "href": "#",
+      "class": "button-secondary",
+      "text": "Log af"
+    }
+  },
+  "solution_header_data": {
+    "class": "header-end",
+    "title": {
+      "href": "#",
+      "title": "Hjem",
+      "text": "Sager hos AES"
+    },
+    "solutionInfo": {
+      "hideOnPrint": true
+    },
+    "authority": {
+      "name": "Arbejdsmarkedets Erhvervssikring",
+      "text": "Support: <a href='tel:+4572206000' class='function-link'>72 20 60 00</a>"
+    }
+  },
+  "breadcrumbs_data_desktop": {
+    "classes": "",
+    "items": [
+      {
+        "text": "Find sag",
+        "href": "/pages/eksempler/aes/oversigt/"
+      },
+      {
+        "text": "Sagsnr. 2020-0000015"
+      }
+    ]
+  },
+  "breadcrumbs_data_mobile": {
+    "classes": "container d-lg-none mt-3",
+    "items": [
+      {
+        "text": "Find sag",
+        "href": "/pages/eksempler/aes/oversigt/"
+      },
+      {
+        "text": "Sagsnr. 2020-0000015"
+      }
+    ]
+  },
+  "footer_data":{
+    "cols": [
+      {
+        "col_size_desktop": 3,
+        "text_align_right": false,
+        "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Arbejdsmarkedets Erhvervssikring<br/>Kongens Vænge 8<br/>3400 Hillerød</p>"
+      },
+      {
+        "col_size_desktop": 3,
+        "text_align_right": false,
+        "content": "<h2 class=\"h5 mb-4\">Teknisk support</h2><p><a href=\"tel:+4572206112\" class=\"function-link\">(+45) 72 20 61 12</a></p><p>Mandag til torsdag 08-16<br />Fredag 08-15<br />Weekend og helligdage lukket</p>"
+      },
+      {
+        "col_size_desktop": 3,
+        "class": "d-print-none",
+        "text_align_right": false,
+        "content": "<h2 class=\"h5 mb-4\">Spørgsmål til en sag</h2><p>Skriv til <a href=\"mailto:aes@atp.dk\" class=\"function-link\">aes@atp.dk</a></p>"
+      },
+      {
+        "col_size_desktop": 3,
+        "class": "d-print-none",
+        "text_align_right": false,
+        "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
+        "lists": [
+          {
+            "inline_list": false,
+            "listclass": "mt-0 nobullet-list",
+            "listitems": [
+              {"content": "<a href=\"#\" target=\"_blank\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"},
+              {"content": "<a class=\"function-link\" href=\"#\">Privatlivspolitik og cookies</a>"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

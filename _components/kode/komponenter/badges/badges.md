@@ -33,9 +33,9 @@ Alle badges skal have en `badge` class på `<label></label>` elementet.
 
 ## Tilgængelighed
 
-Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tabulatortasten navigerer sig frem til dem.
+Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tastaturet navigerer sig frem til dem.
 
-Du skal anvende ARIA live regions til at gøre skærmlæsere på opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.
+Du skal anvende ARIA live regions til at gøre skærmlæsere opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.
 
 ## Varianter
 

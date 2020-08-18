@@ -67,6 +67,7 @@ Man kan sætte zebralinjer på en tabel med klassen `table--zebra` på `<table>`
 
 {:#responsiv}
 ### Responsiv tabel
+Tilføj klassen `table--responsive-headers` på `<table>`.
 
 Attributten `data-title` bør tilføjes til hver `<td>`, således at en label bliver tilføjet for hver celle på mindre skærme.
 

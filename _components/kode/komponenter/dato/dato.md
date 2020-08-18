@@ -35,7 +35,6 @@ Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere
     - Dag input: `.js-calendar-day-input`
     - Måned input: `.js-calendar-month-input`
     - År input: `.js-calendar-year-input`
-- Hvis du vil koble en datovælger på dit datofelt, kan du bruge plugins <a href="/kode/plugins/pikaday/">Pikaday</a>.
 - Ved fejl, tilføj da en hjælpsom fejlmeddelelse over felterne i elementet `<span class="form-error-message" id="form-error-message-input-error" role="alert">`. 
 - Tilføj klassen `form-error` på `form-group` `div` elementet, når der vises en fejlmeddelelse.
 

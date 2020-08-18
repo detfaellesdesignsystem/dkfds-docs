@@ -34,6 +34,8 @@ subnav:
 ### HTML Struktur
 {% include code/syntax.html component="alert" %}
 
+Anvend ARIA `role="alert"` til at øge tilgængeligheden ved at markere beskeden som noget der skal annonceres gennem eventuelle hjælpeteknologier. Mærk beskeden med `role="alertdialog"`, hvis den indeholder interaktivitet for brugeren.
+
 ## Varianter
 
 {:#farver}

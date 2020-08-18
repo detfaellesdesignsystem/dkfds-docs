@@ -26,7 +26,7 @@
 
       <div class="solution-info-mobile">
         <p class="bold">Erhvervsministeriet</p>
-        <p><button class="button-unstyled button-contact" data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-right"></use></svg></button></p>
+        <p><button class="button-unstyled button-contact" data-module="modal" data-target="modal-contact">Kontakt<svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#menu-right"></use></svg></button></p>
       </div>
 
     </nav> <!-- collapsible nav end-->
@@ -67,4 +67,4 @@
   {{ footer_simple(footer_data) }}
 {% endblock %}
 
-{{ modal('modal-contact', modal_contact_data) }}
+{{ modal(modal_data) }}
