@@ -89,7 +89,7 @@
             "inline_list": false,
             "listclass": "mt-0 nobullet-list",
             "listitems": [
-              {"content": "<a href=\"#\" target=\"_blank\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"},
+              {"content": "<a href=\"#\" target=\"_blank\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"},
               {"content": "<a class=\"function-link\" href=\"#\">Privatlivspolitik og cookies</a>"}
             ]
           }
