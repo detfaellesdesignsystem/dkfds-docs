@@ -165,13 +165,13 @@ subnav:
 <h2 id="solution-7">Løsning 7: Sager hos AES</h2>
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aes/oversigt/" title="Dokumenter til sagen" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/aes/oversigt/" title="Sager hos AES: Find sag" class="screenshot d-block"></a>
   </div>
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aes/sagsoverblik/" title="Dokumenter til sagen" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/aes/sagsoverblik/" title="Sager hos AES: Sagsoverblik" class="screenshot d-block"></a>
   </div>
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aes/sagsoverblik/afgoerelser/" title="Dokumenter til sagen" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/aes/sagsoverblik/afgoerelser/" title="Sager hos AES: Afgørelser" class="screenshot d-block"></a>
   </div>
 </div>
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/aes/oversigt/">Demo Sager hos AES</a>
