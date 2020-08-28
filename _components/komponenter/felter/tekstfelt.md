@@ -42,35 +42,38 @@ componentCode: "/kode/komponenter/felter/"
 
 ---
 {:.h3 #retningslinjer}
+
 ## Anvendes til
 
-- Bruger-input af information i form af bogstaver, tal og en kombination af begge.
-- Når det er nemmere for brugeren at skrive information end at vælge den gennem en kompliceret proces. Ofte kan et datofelt til indtastning være nemmere at anvende - og gøre tilgængeligt - end en date picker funktion.
-- Når brugeren skal kunne copy/paste information ind i en formular.
+Brug til input af information i form af bogstaver og tal eller en kombination af begge.
 
-Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på 27 tegn.
+Brug felter når det er nemmere for brugeren at skrive information end at vælge den på anden vis. 
 
-Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.
+Brug når brugeren skal kunne copy paste information ind i en formular.
 
 {:.h3}
+
 ## Anvendes ikke til
 
-Når brugeren skal vælge ud fra et prædefineret sæt af værdier, og der er behov for datakonsistens.
+Når brugeren skal vælge ud fra et prædefineret sæt af værdier (fx nogle få bestemte datoer) eller hvis der er strenge krav til datakonsistens, oftest i en løsning uden klientside validering (hvis brugerens input-format kan skabe fejl på serversiden).
 
 {:.h3}
+
 ## Vejledning
 
 Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.
 
 Vis kun fejlmeddelelser, når brugeren har indtastet en ugyldig værdi.
 
-Fejlmeddelelser skal være meningsfulde og hjælpsomme. 
+Fejlmeddelelser skal være meningsfulde og hjælpsomme.
 
 Placér fejlmeddelelser mellem label og feltet, som bliver markeret med rødt.
 
 Felter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.
 
-Brug feltbredden til at begrænse antallet af tegn i et felt.
+Brug feltbredden til at begrænse antallet af tegn i et felt. Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på minimum 27 tegn.
+
+Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.
 
 Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.
 
