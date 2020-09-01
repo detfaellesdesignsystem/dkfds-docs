@@ -12,6 +12,8 @@ var exampleUrls = [
     {"url": "/eksempel/header-medium/", "filename": "header-medium.png", "width": 992, "height": 262 },
     {"url": "/eksempel/header-full/", "filename": "header-full.png", "width": 992, "height": 322 },
     {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 184 },
+    {"url": "/eksempel/footer-simple-language/", "filename": "footer-simple-language.png", "width": 1017, "height": 229 },
+    {"url": "/eksempel/footer-simple-language-tooltip/", "filename": "footer-simple-language-tooltip.png", "width": 1017, "height": 229 },
     {"url": "/eksempel/footer-three-columns/", "filename": "footer-three-columns.png", "width": 1017, "height": 448 },
     {"url": "/eksempel/footer-four-columns/", "filename": "footer-four-columns.png", "width": 1017, "height": 352 },
     {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
