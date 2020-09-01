@@ -901,6 +901,24 @@
     
       
 
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/sprogvaegler/" role="menuitem" 
+  class="nav-link">
+  Sprogvælger
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
 <li class="  " role="none">
 
 
@@ -2832,6 +2850,24 @@ let searchIndex = [
 
 
 {
+"url": "/komponenter/sprogvaegler/",
+"title": "Sprogvælger",
+"category": "Komponenter_category",
+"subcategory": "Komponenter",
+"lead": "En sprogvælger bruges hvis løsningen udbydes på mere end et sprog. Den giver brugeren mulighed for at vælge et andet sprog end løsningens standardsprog.",
+"tags": [''],
+"layout": "styleguide",
+"content" : "            Åbn dette eksempel i et nyt vindue: footer-simple-language                                    Gå til kodeafsnit: footer-simple-language        Sprogvælgeren placeres altid nederst i footeren. Denne placering giver fleksibilitet og understøtter brugen af alle headertyper. Samtidig sikrer det en ensartet brugeroplevelse på tværs af løsninger så brugerne fremadrettet altid ved hvor de kan finde sprog i selvbetjeningsløsninger.Anvendes tilBrug en sprogvælger når du gerne vil vise en løsning i flere sprog.Anvendes ikke tilBrug ikke sprogvælger, hvis løsningen kun findes i ét sprog.VejledningSprogvælgeren indeholder en liste af sprog skrevet på original sproget. Sprogvælgeren fungerer således, at det valgte sprog bliver markeret med fed tekst og står altid som det første sprog i listen.Når brugeren vælger et andet sprog, vil det blive markeret som fed i stedet. Det valgte sprog skifter placering til at være det første sprog i listen.Husk at skrive sproget ud på det sprog det har. Eksempelvis “English” for engelsk og “Kalaallisut” for Grønlandsk. På denne måde, kan brugerne stadig finde frem til deres fortrukne sprog, trods resten af indholdet vises i et sprog de ikke forstår.Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert sprog, således at brugere, der gør brug af hjælpeteknologier (fx skærmlæser) kan forstå komponenten på det valgte sprog.  Sprogvælger med tooltip                  Åbn dette eksempel i et nyt vindue: footer-simple-language-tooltip                        ",
+"description" : "",
+"subnav": ["Tooltip",""]
+},
+
+
+
+
+
+
+{
 "url": "/komponenter/search/",
 "title": "Søgefelt",
 "category": "Komponenter_category",
@@ -3614,6 +3650,24 @@ let searchIndex = [
 "content" : "                        Åbn dette eksempel i et nyt vindue: spinner                                    Eksempler og retningslinjer    Retningslinjer    EksemplerInstallationHTML Struktur        &amp;lt;div class=&quot;spinner&quot;&amp;gt;&amp;lt;/div&amp;gt;    For at ændre spinnerens størrelse kan font-size gøres større eller mindre.Anvend ARIA attributten aria-busy=&quot;true&quot; på elementet, der er igang med at blive opdateret til at markere for skærmlæsere, at der er en live region i gang med indlæsning og sæt værdien til false, når den er indlæst.",
 "description" : "Dokumentation på implementering af spinner.",
 "subnav": [""]
+},
+
+
+
+
+
+
+{
+"url": "/kode/komponenter/sprogvaegler/",
+"title": "Sprogvælger",
+"category": "Kode_category",
+"subcategory": "Kode",
+"lead": "",
+"tags": [''],
+"layout": "styleguide",
+"content" : "            Åbn dette eksempel i et nyt vindue: footer-simple-language                        Eksempler og retningslinjer    Retningslinjer    EksemplerInstallationHTML Struktur        &amp;lt;footer&amp;gt;    &amp;lt;div class=&quot;footer&quot;&amp;gt;        &amp;lt;div class=&quot;container&quot;&amp;gt;            &amp;lt;div class=&quot;align-text-left&quot;&amp;gt;                &amp;lt;ul class=&quot;unstyled-list inline-list&quot;&amp;gt;                    &amp;lt;li class=&quot;&quot;&amp;gt;&amp;lt;span                            class=&quot;h5 weight-semibold&quot;&amp;gt;Digitaliseringsstyrelsen&amp;lt;/span&amp;gt;                    &amp;lt;/li&amp;gt;                    &amp;lt;li class=&quot;&quot;&amp;gt;&amp;lt;a href=&quot;mailto:support@myndighed.dk&quot;                            class=&quot;function-link&quot;                            title=&quot;Skriv til Digitaliseringsstyrelsen&quot;&amp;gt;support@myndighed.dk&amp;lt;/a&amp;gt;                    &amp;lt;/li&amp;gt;                    &amp;lt;li class=&quot;&quot;&amp;gt;&amp;lt;a href=&quot;tel:+4512345678&quot;                            class=&quot;function-link&quot;                            title=&quot;Ring til Digitaliseringsstyrelsen&quot;&amp;gt;(+45)                            12 34 56 78&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                    &amp;lt;li class=&quot;d-print-none&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;                            class=&quot;function-link icon-link&quot;&amp;gt;Tilgængelighedserklæring&amp;lt;svg class=&quot;icon-svg&quot; focusable=&quot;&amp;gt;false&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/a&amp;gt;                    &amp;lt;/li&amp;gt;                    &amp;lt;li class=&quot;d-print-none&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;                            class=&quot;function-link&quot;&amp;gt;Privatlivspolitik                            (cookies)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                &amp;lt;/ul&amp;gt;            &amp;lt;/div&amp;gt;        &amp;lt;/div&amp;gt;    &amp;lt;/div&amp;gt;    &amp;lt;div class=&quot;language-switcher&quot;&amp;gt;        &amp;lt;div class=&quot;container&quot;&amp;gt;            &amp;lt;ul aria-label=&quot;Vælg sprog &quot;&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;da&quot;                        aria-label=&quot;Valgt sprog: Dansk&quot;&amp;gt;&amp;lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#check&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;Dansk&amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;en-GB&quot;&amp;gt;English&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;de&quot;&amp;gt;Deutsch&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;kl&quot;&amp;gt;Kalaallisut&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;pl&quot;&amp;gt;Polszczyzna&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;            &amp;lt;/ul&amp;gt;        &amp;lt;/div&amp;gt;    &amp;lt;/div&amp;gt;&amp;lt;/footer&amp;gt;    Hvert sprog tilføjes i listen på original sproget og med den tilsvarende landekode i lang attributten.Bemærk aria-labels i koden, hvor der vil være tekst og formuleringer der skal tilpasses for hvert sprog man kan vælge.VarianterSprogvælger med tooltip                        Vis dette eksempel i et nyt vindue                    &amp;lt;footer&amp;gt;    &amp;lt;div class=&quot;footer&quot;&amp;gt;        &amp;lt;div class=&quot;container&quot;&amp;gt;            &amp;lt;div class=&quot;align-text-left&quot;&amp;gt;                &amp;lt;ul class=&quot;unstyled-list inline-list&quot;&amp;gt;                    &amp;lt;li class=&quot;&quot;&amp;gt;&amp;lt;span                            class=&quot;h5 weight-semibold&quot;&amp;gt;Digitaliseringsstyrelsen&amp;lt;/span&amp;gt;                    &amp;lt;/li&amp;gt;                    &amp;lt;li class=&quot;&quot;&amp;gt;&amp;lt;a href=&quot;mailto:support@myndighed.dk&quot;                            class=&quot;function-link&quot;                            title=&quot;Skriv til Digitaliseringsstyrelsen&quot;&amp;gt;support@myndighed.dk&amp;lt;/a&amp;gt;                    &amp;lt;/li&amp;gt;                    &amp;lt;li class=&quot;&quot;&amp;gt;&amp;lt;a href=&quot;tel:+4512345678&quot;                            class=&quot;function-link&quot;                            title=&quot;Ring til Digitaliseringsstyrelsen&quot;&amp;gt;(+45)                            12 34 56 78&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                    &amp;lt;li class=&quot;d-print-none&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;                            class=&quot;function-link icon-link&quot;&amp;gt;Tilgængelighedserklæring&amp;lt;svg class=&quot;icon-svg&quot; focusable=&quot;&amp;gt;false&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/a&amp;gt;                    &amp;lt;/li&amp;gt;                    &amp;lt;li class=&quot;d-print-none&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;                            class=&quot;function-link&quot;&amp;gt;Privatlivspolitik                            (cookies)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                &amp;lt;/ul&amp;gt;            &amp;lt;/div&amp;gt;        &amp;lt;/div&amp;gt;    &amp;lt;/div&amp;gt;    &amp;lt;div class=&quot;language-switcher&quot;&amp;gt;        &amp;lt;div class=&quot;container&quot;&amp;gt;            &amp;lt;ul aria-label=&quot;Vælg sprog &quot;&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;da&quot;                        aria-label=&quot;Valgt sprog: Dansk&quot;&amp;gt;&amp;lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#check&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;Dansk&amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;en-GB&quot; class=&quot;js-tooltip&quot;                        data-tooltip=&quot;Engelsk&quot;&amp;gt;English&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;de&quot; class=&quot;js-tooltip&quot;                        data-tooltip=&quot;Tysk&quot;&amp;gt;Deutsch&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;kl&quot; class=&quot;js-tooltip&quot;                        data-tooltip=&quot;Grøndlandsk&quot;&amp;gt;Kalaallisut&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot; lang=&quot;pl&quot; class=&quot;js-tooltip&quot;                        data-tooltip=&quot;Polsk&quot;&amp;gt;Polszczyzna&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;            &amp;lt;/ul&amp;gt;        &amp;lt;/div&amp;gt;    &amp;lt;/div&amp;gt;&amp;lt;/footer&amp;gt;    For mere info om implementering se tooltip komponenten",
+"description" : "Dokumentation på implementering af sprogvælger.",
+"subnav": ["Tooltip",""]
 },
 
 
