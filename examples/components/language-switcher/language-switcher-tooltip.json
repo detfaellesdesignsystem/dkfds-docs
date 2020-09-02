@@ -1,0 +1,13 @@
+{"data": {
+      "aria_label": "Vælg sprog fra listen",
+      "first_aria_label": "Valgt sprog: Dansk",
+      "languages": [
+        {"code": "da", "name": "Dansk"},
+        {"code": "en-GB", "name": "English", "tooltip": "Engelsk"},
+        {"code": "de", "name": "Deutsch", "tooltip": "Tysk"},
+        {"code": "kl", "name": "Kalaallisut", "tooltip": "Grønlandsk"},
+        {"code": "pl", "name": "Polszczyzna", "tooltip": "Polsk"}
+      ]
+  }
+}
+

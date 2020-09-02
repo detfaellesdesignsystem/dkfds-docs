@@ -14,9 +14,7 @@ subnav:
   href: '#sprogvælger-med-tooltip'
 ---
 
-{% include code/preview-image.html component="footer-simple-language" alt="Eksempel på sprogvælger i simpel footer" code="/kode/komponenter/sprogvaegler/" %}
-
-Sprogvælgeren placeres altid nederst i footeren. Denne placering giver fleksibilitet og understøtter brugen af alle headertyper. Samtidig sikrer det en ensartet brugeroplevelse på tværs af løsninger så brugerne fremadrettet altid ved hvor de kan finde sprog i selvbetjeningsløsninger.
+{% include code/preview-image.html component="language-switcher" alt="Eksempel på sprogvælger" code="/kode/komponenter/sprogvaegler/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -30,6 +28,8 @@ Brug ikke sprogvælger, hvis løsningen kun findes i ét sprog.
 
 {:.h3}
 ## Vejledning
+
+Sprogvælgeren placeres altid nederst i footeren (<a href="/eksempler/selvbetjeningsloesninger/#solution-7">se eksempelløsningen "Sager hos AES"</a>). Denne placering giver fleksibilitet og understøtter brugen af alle headertyper. Samtidig sikrer det en ensartet brugeroplevelse på tværs af løsninger så brugerne fremadrettet altid ved hvor de kan finde sprog i selvbetjeningsløsninger.
 
 Sprogvælgeren indeholder en liste af sprog skrevet på original sproget. Sprogvælgeren fungerer således, at det valgte sprog bliver markeret med fed tekst og står altid som det første sprog i listen. 
 
