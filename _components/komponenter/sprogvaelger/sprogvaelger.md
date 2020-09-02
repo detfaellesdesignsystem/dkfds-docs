@@ -43,8 +43,8 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 ## Links
  
 {:.nobullet-list}
-- <a href="https://uxdesign.cc/my-take-on-language-selectors-945caceb58f7" class="icon-link">Top 10 Best Practices for Multilingual Websites<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> 
-- <a href="https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/" class="icon-link">My take on language selectors<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/" class="icon-link">Top 10 Best Practices for Multilingual Websites<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> 
+- <a href="https://uxdesign.cc/my-take-on-language-selectors-945caceb58f7" class="icon-link">My take on language selectors<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://usersnap.com/blog/design-language-switch/" class="icon-link">Designing a language switch: Examples and best practices<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 
