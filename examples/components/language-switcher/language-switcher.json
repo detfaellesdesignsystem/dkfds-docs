@@ -2,11 +2,10 @@
       "aria_label": "Vælg sprog fra listen",
       "first_aria_label": "Valgt sprog: Dansk",
       "languages": [
-        {"code": "da", "name": "Dansk"},
-        {"code": "en-GB", "name": "English"},
-        {"code": "de", "name": "Deutsch"},
-        {"code": "kl", "name": "Kalaallisut"},
-        {"code": "pl", "name": "Polszczyzna"}
+        {"code": "da", "name": "Dansk", "href": "?lang=da"},
+        {"code": "en-GB", "name": "English", "href": "?lang=en-GB"},
+        {"code": "de", "name": "Deutsch", "href": "?lang=de"},
+        {"code": "pl", "name": "Polszczyzna", "href": "?lang=pl"}
       ]
   }
 }
