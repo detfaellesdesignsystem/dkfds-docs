@@ -28,6 +28,12 @@ subnav:
 
 {% include code/syntax.html component="language-switcher" %}
 
+<div class="alert alert-warning">
+    <div class="alert-body">
+        <p class="alert-text">Bemærk, at man i løsningen selv står for funktionaliteten i denne komponent.</p>
+    </div>
+</div>
+
 Sprogvælgeren indsættes nederst i footeren. <a href="/eksempler/selvbetjeningsloesninger/#solution-7">Se eksempel på implementering i eksempelløsningen “Sager hos AES”</a>
 
 Hvert sprog tilføjes i listen på original sproget og med den tilsvarende landekode i `lang` attributten.
