@@ -62,37 +62,44 @@ function languageSwitcher(){
                     case "en-GB":
                         ul.setAttribute('aria-label', "Choose language");
                         chosenLang.setAttribute('aria-label', "Current language: English");
-                        ul.querySelector('a[lang="en-GB"]').removeAttribute('data-tooltip');
-                        ul.querySelector('a[lang="en-GB"]').classList.remove('js-tooltip');
-                        ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
-                        ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Danish");
-                        ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "English");
-                        ul.querySelector('a[lang="de"]').setAttribute('data-tooltip', "German");
-                        ul.querySelector('a[lang="pl"]').setAttribute('data-tooltip', "Polish");
+
+                        if(document.getElementsByTagName('body').classList.contains('page-language-switcher-tooltip')) {
+                            ul.querySelector('a[lang="en-GB"]').removeAttribute('data-tooltip');
+                            ul.querySelector('a[lang="en-GB"]').classList.remove('js-tooltip');
+                            ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
+                            ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Danish");
+                            ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "English");
+                            ul.querySelector('a[lang="de"]').setAttribute('data-tooltip', "German");
+                            ul.querySelector('a[lang="pl"]').setAttribute('data-tooltip', "Polish");
+                        }
 
                         break;
                     case "de":
                         ul.setAttribute('aria-label', "Sprache wählen");
                         chosenLang.setAttribute('aria-label', "Aktuelle Sprache: Deutsch");
 
-                        ul.querySelector('a[lang="de"]').removeAttribute('data-tooltip');
-                        ul.querySelector('a[lang="de"]').classList.remove('js-tooltip');
-                        ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
-                        ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Dänisch");
-                        ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "Englisch");
-                        ul.querySelector('a[lang="pl"]').setAttribute('data-tooltip', "Polieren");
+                        if(document.getElementsByTagName('body').classList.contains('page-language-switcher-tooltip')) {
+                            ul.querySelector('a[lang="de"]').removeAttribute('data-tooltip');
+                            ul.querySelector('a[lang="de"]').classList.remove('js-tooltip');
+                            ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
+                            ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Dänisch");
+                            ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "Englisch");
+                            ul.querySelector('a[lang="pl"]').setAttribute('data-tooltip', "Polieren");
+                        }
 
                         break;
                     case "pl":
                         ul.setAttribute('aria-label', "Wybierz język");
-                        chosenLang.setAttribute('aria-label', "Aktualny język: niemiecki\n");
+                        chosenLang.setAttribute('aria-label', "Aktualny język: niemiecki");
+                        if(document.getElementsByTagName('body').classList.contains('page-language-switcher-tooltip')){
+                            ul.querySelector('a[lang="pl"]').removeAttribute('data-tooltip');
+                            ul.querySelector('a[lang="pl"]').classList.remove('js-tooltip');
+                            ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
+                            ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Duński");
+                            ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "Język angielski");
+                            ul.querySelector('a[lang="de"]').setAttribute('data-tooltip', "Niemiecki");
+                        }
 
-                        ul.querySelector('a[lang="pl"]').removeAttribute('data-tooltip');
-                        ul.querySelector('a[lang="pl"]').classList.remove('js-tooltip');
-                        ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
-                        ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Duński");
-                        ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "Język angielski");
-                        ul.querySelector('a[lang="de"]').setAttribute('data-tooltip', "Niemiecki");
                         break;
                 }
             }
