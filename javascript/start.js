@@ -63,7 +63,7 @@ function languageSwitcher(){
                         ul.setAttribute('aria-label', "Choose language");
                         chosenLang.setAttribute('aria-label', "Current language: English");
 
-                        if(document.getElementsByTagName('body').classList.contains('page-language-switcher-tooltip')) {
+                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
                             ul.querySelector('a[lang="en-GB"]').removeAttribute('data-tooltip');
                             ul.querySelector('a[lang="en-GB"]').classList.remove('js-tooltip');
                             ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
@@ -78,7 +78,7 @@ function languageSwitcher(){
                         ul.setAttribute('aria-label', "Sprache wählen");
                         chosenLang.setAttribute('aria-label', "Aktuelle Sprache: Deutsch");
 
-                        if(document.getElementsByTagName('body').classList.contains('page-language-switcher-tooltip')) {
+                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
                             ul.querySelector('a[lang="de"]').removeAttribute('data-tooltip');
                             ul.querySelector('a[lang="de"]').classList.remove('js-tooltip');
                             ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
@@ -91,7 +91,7 @@ function languageSwitcher(){
                     case "pl":
                         ul.setAttribute('aria-label', "Wybierz język");
                         chosenLang.setAttribute('aria-label', "Aktualny język: niemiecki");
-                        if(document.getElementsByTagName('body').classList.contains('page-language-switcher-tooltip')){
+                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')){
                             ul.querySelector('a[lang="pl"]').removeAttribute('data-tooltip');
                             ul.querySelector('a[lang="pl"]').classList.remove('js-tooltip');
                             ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
