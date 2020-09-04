@@ -5,7 +5,7 @@
         {"code": "da", "name": "Dansk", "href": "?lang=da"},
         {"code": "en-GB", "name": "English", "tooltip": "Engelsk", "href": "?lang=en-GB"},
         {"code": "de", "name": "Deutsch", "tooltip": "Tysk", "href": "?lang=de"},
-        {"code": "pl", "name": "Polszczyzna", "tooltip": "Polsk", "href": "?lang=pl"}
+        {"code": "pl", "name": "Polski", "tooltip": "Polsk", "href": "?lang=pl"}
       ]
   }
 }
