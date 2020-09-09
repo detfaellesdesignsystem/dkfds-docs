@@ -21,6 +21,8 @@ subnav:
 
 Brug en sprogvælger når du gerne vil vise en løsning i flere sprog.
 
+Placeres nederst i footeren
+
 {:.h3}
 ## Anvendes ikke til
 
