@@ -12,11 +12,12 @@ var exampleUrls = [
     {"url": "/eksempel/header-medium/", "filename": "header-medium.png", "width": 992, "height": 262 },
     {"url": "/eksempel/header-full/", "filename": "header-full.png", "width": 992, "height": 322 },
     {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 184 },
+    {"url": "/eksempel/footer-simple-language/", "filename": "footer-simple-language.png", "width": 1017, "height": 213 },
     {"url": "/eksempel/language-switcher/", "filename": "language-switcher.png", "width": 1017, "height": 117 },
     {"url": "/eksempel/language-switcher-tooltip/", "filename": "language-switcher-tooltip.png", "width": 1017, "height": 117 },
     {"url": "/eksempel/footer-three-columns/", "filename": "footer-three-columns.png", "width": 1017, "height": 448 },
     {"url": "/eksempel/footer-four-columns/", "filename": "footer-four-columns.png", "width": 1017, "height": 352 },
-    {"url": "/eksempel/footer-four-columns-language/", "filename": "footer-four-columns-language.png", "width": 1017, "height": 452 },
+    {"url": "/eksempel/footer-four-columns-language/", "filename": "footer-four-columns-language.png", "width": 1017, "height": 381 },
     {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
     {"url": "/eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
     {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 270 }

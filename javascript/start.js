@@ -37,7 +37,7 @@ function languageSwitcher(){
 
     if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher') || document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')){
         let queryString = window.location.search;
-        if(queryString !== ""){
+        if(queryString !== "" && queryString.indexOf("lang=") !== -1){
             let lang = queryString.replace('?lang=', '');
             if(lang !== "da") {
                 let element = document.getElementsByClassName('language-switcher')[0];

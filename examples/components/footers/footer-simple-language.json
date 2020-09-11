@@ -1,0 +1,21 @@
+{"footer_simple_data":
+      {
+        "language_switcher": {
+          "aria_label": "Vælg sprog fra listen",
+          "first_aria_label": "Valgt sprog: Dansk",
+          "languages": [
+            {"code": "da", "name": "Dansk", "href": "?lang=da"},
+            {"code": "en-GB", "name": "English", "href": "?lang=en-GB"},
+            {"code": "de", "name": "Deutsch", "href": "?lang=de"},
+            {"code": "pl", "name": "Polski", "href": "?lang=pl"}
+          ]
+        },
+        "listitems": [
+          {"content": "<span class=\"h5 weight-semibold\">Digitaliseringsstyrelsen</span>"},
+          {"content": "<a href=\"mailto:support@myndighed.dk\" class=\"function-link\" title=\"Skriv til Digitaliseringsstyrelsen\">support@myndighed.dk</a>"},
+          {"content": "<a href=\"tel:+4512345678\" class=\"function-link\" title=\"Ring til Digitaliseringsstyrelsen\">(+45) 12 34 56 78</a>"},
+          {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
+          {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
+        ]
+      }
+}

@@ -43,6 +43,16 @@ Husk at skrive sproget ud på det sprog det har. Eksempelvis "English" for engel
 
 Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert sprog, således at brugere, der gør brug af hjælpeteknologier (fx skærmlæser) kan forstå komponenten på det valgte sprog.
 
+{:.h4}
+### Sprogvælger i en simpel footer
+
+<a href="/eksempel/footer-simple-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en simpel footer" target="_blank"></a>
+
+{:.h4}
+### Sprogvælger i en kompleks footer
+
+<a href="/eksempel/footer-four-columns-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en kompleks footer" target="_blank"></a>
+
 {:.h3}
 ## Links
  

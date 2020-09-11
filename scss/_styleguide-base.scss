@@ -1091,6 +1091,9 @@ body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="
 .outer-border-example {
   border-top: $outer-border;
 }
+.outer-border{
+  border: $outer-border;
+}
 
 .inner-border-example {
   border-top: $inner-border;
