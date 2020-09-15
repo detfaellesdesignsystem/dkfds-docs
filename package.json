@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "core-js": "^3.3.2",
-    "dkfds": "^5.0.0",
+    "dkfds": "^7.0.0",
     "easy-pdf-merge": "^0.2.0",
     "gulp-flatten": "^0.4.0",
     "jquery": "^3.3.1",

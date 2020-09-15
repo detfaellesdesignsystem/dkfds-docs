@@ -46,7 +46,7 @@ function isThisAComponentExample(file){
 function createMarkdown(content, path, file) {
     var fileName = path.split("\\").pop().replace('.html', '');
     var header = ``;
-    if(path.includes('footer') || path.includes('cookie-message') || path.includes('header')) {
+    if(path.includes('language-switcher') || path.includes('footer') || path.includes('cookie-message') || path.includes('header')) {
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: example 

@@ -281,8 +281,8 @@ let setScreenshots = function(){
         }
     }
 
-    if(document.getElementsByTagName('body')[0].classList.contains('page-footers') || document.getElementsByTagName('body')[0].classList.contains('page-headers') || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
-        let screenshots = document.querySelectorAll('.component-example .screenshot');
+    if(document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger') || document.getElementsByTagName('body')[0].classList.contains('page-footers') || document.getElementsByTagName('body')[0].classList.contains('page-headers') || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
+        let screenshots = document.querySelectorAll('.screenshot');
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('/');
             let componentName = url[url.length-2];

@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -994,6 +996,24 @@
 <a href="/komponenter/spinner/" role="menuitem" 
   class="nav-link">
   Spinner
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/sprogvaegler/" role="menuitem" 
+  class="nav-link">
+  Sprogvælger
 </a>
 
 </li>
@@ -2314,6 +2334,24 @@
     
       
 
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/sprogvaegler/" role="menuitem" 
+  class="nav-link">
+  Sprogvælger
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
 <li class="  " role="none">
 
 
@@ -2510,21 +2548,18 @@
 
           
 
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+          
+<h2>Anvendes til</h2>
 
-<ul>
-  <li>Bruger-input af information i form af bogstaver, tal og en kombination af begge.</li>
-  <li>Når det er nemmere for brugeren at skrive information end at vælge den gennem en kompliceret proces. Ofte kan et datofelt til indtastning være nemmere at anvende - og gøre tilgængeligt - end en date picker funktion.</li>
-  <li>Når brugeren skal kunne copy/paste information ind i en formular.</li>
-</ul>
+<p>Brug til input af information i form af bogstaver og tal eller en kombination af begge.</p>
 
-<p>Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på 27 tegn.</p>
+<p>Brug felter når det er nemmere for brugeren at skrive information end at vælge den på anden vis.</p>
 
-<p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
+<p>Brug når brugeren skal kunne copy paste information ind i en formular.</p>
 
 <h2 class="h3">Anvendes ikke til</h2>
 
-<p>Når brugeren skal vælge ud fra et prædefineret sæt af værdier, og der er behov for datakonsistens.</p>
+<p>Når brugeren skal vælge ud fra et prædefineret sæt af værdier (fx nogle få bestemte datoer) eller hvis der er strenge krav til datakonsistens, oftest i en løsning uden klientside validering (hvis brugerens input-format kan skabe fejl på serversiden).</p>
 
 <h2 class="h3">Vejledning</h2>
 
@@ -2538,7 +2573,9 @@
 
 <p>Felter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.</p>
 
-<p>Brug feltbredden til at begrænse antallet af tegn i et felt.</p>
+<p>Brug feltbredden til at begrænse antallet af tegn i et felt. Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på minimum 27 tegn.</p>
+
+<p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
 
 <p>Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.</p>
 
