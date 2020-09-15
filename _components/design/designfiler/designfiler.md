@@ -35,7 +35,7 @@ Du er velkommen til at bidrage med flere designressourcer eller med opdateringer
 
 <h3 class="h4">SVG</h3>
 
-<a href="/downloads/FDS-Komponenter-SVG-Version-440.zip">Download svg-filer (version 4.4.0)</a>
+<a href="/downloads/FDS-Komponenter-SVG-Version-700.zip">Download svg-filer (version 7.0.0)</a>
 
 Svg-filerne kan importeres i de fleste design/prototype programmer og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).
 

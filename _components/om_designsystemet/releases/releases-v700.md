@@ -4,7 +4,7 @@ parent: Releases
 order: 95
 headingClass: mb-0
 ---
-<p class="small-text mt-0">17-08-2020</p>
+<p class="small-text mt-0">18-08-2020</p>
 
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>Opdateret fonten IBM Plex Sans til version 5.0.0
 <span class="form-hint mt-0">Hvis man preloader fonten - hvilket anbefales - så bør man tjekke om stien til fonten skal ændres, da mappestrukturen under fonts er ændret i dkfds</span>
