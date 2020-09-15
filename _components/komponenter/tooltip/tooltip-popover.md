@@ -38,7 +38,7 @@ Placer tooltips og popovers så de ikke skygger for det indhold på siden som de
 Sættes der tooltip/popover på et ord i en tekst, markeres ordet med en stiplet linje under. Brug det i begrænset omfang, da det let virker forstyrrende.
 
 {:.h3}
-### Links
+## Links
 
 {:.nobullet-list}
 - <a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

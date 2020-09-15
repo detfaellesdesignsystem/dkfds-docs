@@ -83,8 +83,8 @@ Funktionslinks (igangsætter system- eller OS-funktionalitet, fx gem, print osv.
 
 En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servicere både simple og komplekse løsninger. Den er også kompleks at anvende for brugerne. Du bør derfor udgangspunkt anvende færre end fem rækker i din header.
 
-{:.h4}
-### Links
+{:.h3}
+## Links
 <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 {% include child-components.html parent='Headers' %}
