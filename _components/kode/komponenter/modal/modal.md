@@ -28,13 +28,24 @@ tags:
 Modal komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.Modal(document.getElementByID('MODAL-ID'));
+let modal = new DKFDS.Modal(document.getElementByID('MODAL-ID'));
+modal.init();
 {% endhighlight %}
+
+
+#### Funktioner
+
+{:.table}
+| Funktion     | Beskrivelse      |
+|--------------|------------------|
+| modal.show() | Viser en modal   |
+| modal.hide() | Skjuler en modal |
+
 
 #### Events
 
 {:.table}
-| Event key           | Element                   | Beskrivelse                                                                                          |
-|---------------------|---------------------------|------------------------------------------------------------------------------------------------------|
-| fds.accordion.open  | `button.accordion-button` | Når en accordion bliver foldet ud, bliver eventet `fds.accordion.open` udløst på accordion knappen   |
-| fds.accordion.close | `button.accordion-button` | Når en accordion bliver foldet ind, bliver eventet `fds.accordion.close` udløst på accordion knappen |
+| Event key           | Element       | Beskrivelse                                                                       |
+|---------------------|---------------|-----------------------------------------------------------------------------------|
+| fds.modal.hidden    | Modal element | Når en modal skjules, bliver eventet `fds.modal.hidden` udløst på modal elementet |
+| fds.modal.shown     | Modal element | Når en modal vises, bliver eventet `fds.modal.shown` udløst på modal elementet    |
