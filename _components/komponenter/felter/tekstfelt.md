@@ -42,7 +42,6 @@ componentCode: "/kode/komponenter/felter/"
 
 ---
 {:.h3 #retningslinjer}
-
 ## Anvendes til
 
 Brug til input af information i form af bogstaver og tal eller en kombination af begge.
@@ -52,13 +51,11 @@ Brug felter når det er nemmere for brugeren at skrive information end at vælge
 Brug når brugeren skal kunne copy paste information ind i en formular.
 
 {:.h3}
-
 ## Anvendes ikke til
 
 Når brugeren skal vælge ud fra et prædefineret sæt af værdier (fx nogle få bestemte datoer) eller hvis der er strenge krav til datakonsistens, oftest i en løsning uden klientside validering (hvis brugerens input-format kan skabe fejl på serversiden).
 
 {:.h3}
-
 ## Vejledning
 
 Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.

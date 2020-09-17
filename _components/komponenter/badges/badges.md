@@ -20,13 +20,11 @@ componentCode: "/kode/komponenter/badges/"
 
 ---
 {:.h3 #retningslinjer}
-
 ## Anvendes til
 
 Brug badges til at gøre opmærksom på ændringer, nyt eller vigtigt indhold.
 
 {:.h3}
-
 ## Anvendes ikke til
 
 Brug ikke badge, hvis placeringen af det får brugeren til at tro, det er en knap. Test altid for dette, når du vil anvende badges.
@@ -34,7 +32,6 @@ Brug ikke badge, hvis placeringen af det får brugeren til at tro, det er en kna
 Brug ikke badges på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyhedssider, hvor brugeren nemt kan se, hvad der er det nyeste indhold, når det blot står øverst.
 
 {:.h3}
-
 ## Vejledning
 
 Brug ord og begreber, som brugeren kan genkendes fra løsningen.

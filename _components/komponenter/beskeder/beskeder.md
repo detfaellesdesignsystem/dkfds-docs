@@ -24,7 +24,6 @@ tags:
 
 ---
 {:.h3 #retningslinjer}
-
 ## Anvendes til
 
 Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, generelle fejl, til <a href="/komponenter/fejlopsummering/">fejlopsummeringer</a>, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.
@@ -32,7 +31,6 @@ Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om 
 Anvend succes- og advarselsbeskeder til at bekræfte en handling eller give besked om behov for handling.
 
 {:.h3}
-
 ## Anvendes ikke til
 
 Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
@@ -40,7 +38,6 @@ Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Brug da <
 Brug modal dialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
 
 {:.h3}
-
 ## Vejledning
 
 Brug kun beskeder, når det er nødvendigt og hjælper brugeren med at forstå hvad denne skal, hvad der sker eller hvorfor. Brug ikke beskeder som farvelade for at "peppe" løsningen op.
