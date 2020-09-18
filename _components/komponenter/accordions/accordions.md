@@ -24,7 +24,6 @@ subnav:
 component: accordion
 componentTitle: Eksempel på accordion
 componentCode: "/kode/komponenter/accordions/"
-
 ---
 {:.h3 #retningslinjer}
 
