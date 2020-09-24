@@ -1,25 +1,25 @@
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
-{{overflowmenu("Trin 3 af 5","overflow5", true, false, "menu-down" ,"
-    <ul class='sidenav-list'>
-        <li>
-            <a href='#'>
+{{overflowmenu("Trin 2 af 3","overflow5", true, false, "menu-down" ,"
+   <nav><ul class='sidenav-list' role='menu'>
+        <li role='none'>
+            <a href='#' role='menuitem'>
                 1. Trin 1
                 <span class='sidenav-icon'>
                     <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                 </span>
             </a>
         </li>
-        <li class='active current'>
-            <a href='#'>
+        <li role='none' class='active current'>
+            <a href='#' role='menuitem' aria-current='page'>
                 2. Trin 2 (valgt)
             </a>
         </li>
-        <li>
-            <a href='#'>
+        <li role='none'>
+            <a href='#' role='menuitem'>
                 3. Trin 3
             </a>
         </li>
-    </ul>
+    </ul></nav>
     "
 ) }}
