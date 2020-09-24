@@ -4,17 +4,20 @@
       {
         "text": "Trin 1",
         "information": "Informationstekst for trin 1",
-        "icon": "check"
+        "icon": "check",
+        "disabled": true
       },
       {
         "text": "Trin 2 (valgt)",
         "information": "Informationstekst for trin 2",
         "active": true,
-        "current": true
+        "current": true,
+        "disabled": true
       },
       {
         "text": "Trin 3",
-        "information": "Informationstekst for trin 3"
+        "information": "Informationstekst for trin 3",
+        "disabled": true
       }
     ]
   }
