@@ -3312,32 +3312,33 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         <div class="overflow-menu  overflow-menu--open-right ">
     <button class="button-overflow-menu js-dropdown " data-js-target="overflow5" aria-haspopup="true" aria-expanded="false">
-        Trin 3 af 5
+        Trin 2 af 3
         <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#menu-down"></use></svg>
-        <span class="sr-only">Åbner overflow menu</span>
     </button>
     <div class="overflow-menu-inner" id="overflow5" aria-hidden="true">
 
-        <ul class="sidenav-list">
-            <li>
-                <a href="#">
-                    1. Trin 1
-                    <span class="sidenav-icon">
-                        <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li class="active current">
-                <a href="#">
-                    2. Trin 2 (valgt)
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    3. Trin 3
-                </a>
-            </li>
-        </ul>
+        <nav>
+            <ul class="sidenav-list" role="menu">
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        1. Trin 1
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#check"></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li role="none" class="active current">
+                    <a href="#" role="menuitem" aria-current="page">
+                        2. Trin 2 (valgt)
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        3. Trin 3
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
     </div>
 </div>
@@ -3363,32 +3364,33 @@
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-overflow-menu js-dropdown "</span>
         <span class="na">data-js-target=</span><span class="s">"overflow5"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span>
         <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-        Trin 3 af 5
+        Trin 2 af 3
         <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#menu-down"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Åbner overflow menu<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-inner"</span> <span class="na">id=</span><span class="s">"overflow5"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
 
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">'sidenav-list'</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>
-                    1. Trin 1
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sidenav-icon'</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">'icon-svg'</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">focusable=</span><span class="s">'false'</span> <span class="na">tabindex=</span><span class="s">'-1'</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">'#check'</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                    <span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">'active current'</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>
-                    2. Trin 2 (valgt)
-                <span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>
-                    3. Trin 3
-                <span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;nav&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">'sidenav-list'</span> <span class="na">role=</span><span class="s">'menu'</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">'none'</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span> <span class="na">role=</span><span class="s">'menuitem'</span><span class="nt">&gt;</span>
+                        1. Trin 1
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sidenav-icon'</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">'icon-svg'</span> <span class="na">aria-hidden=</span><span class="s">'true'</span> <span class="na">focusable=</span><span class="s">'false'</span> <span class="na">tabindex=</span><span class="s">'-1'</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">'#check'</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">'none'</span> <span class="na">class=</span><span class="s">'active current'</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span> <span class="na">role=</span><span class="s">'menuitem'</span> <span class="na">aria-current=</span><span class="s">'page'</span><span class="nt">&gt;</span>
+                        2. Trin 2 (valgt)
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">'none'</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span> <span class="na">role=</span><span class="s">'menuitem'</span><span class="nt">&gt;</span>
+                        3. Trin 3
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/nav&gt;</span>
 
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -3427,31 +3429,32 @@
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-overflow-menu js-dropdown"</span>
         <span class="na">data-js-target=</span><span class="s">"overflow4"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span>
         <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-        Trin 3 af 5
+        Trin 2 af 3
         <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#menu-down"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Åbner overflow menu<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-inner"</span> <span class="na">id=</span><span class="s">"overflow4"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-                    1. Trin 1
-                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-                    <span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active current"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-                    2. Trin 2 (valgt)
-                <span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;</span>
-                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-                    3. Trin 3
-                <span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;nav&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>
+                        1. Trin 1
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">focusable=</span><span class="s">"false"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active current"</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+                        2. Trin 2 (valgt)
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>
+                        3. Trin 3
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/nav&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
@@ -3471,30 +3474,32 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-            1. Trin 1
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>
+                1. Trin 1
 
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                <span class="nt">&lt;/span&gt;</span>
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">" active current"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-            2. Trin 2
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">" active current"</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+                2. Trin 2
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-            3. Trin 3
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>
+                3. Trin 3
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
 
     </div>
@@ -3512,30 +3517,33 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list sidenav-list-locked"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-            1. Trin 1
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list sidenav-list-locked"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>
+                1. Trin 1
 
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                <span class="nt">&lt;/span&gt;</span>
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled active current"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-            2. Trin 2 (valgt)
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled active current"</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"menuitem"</span>
+                <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+                2. Trin 2 (valgt)
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-            3. Trin 3
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>
+                3. Trin 3
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
 
     </div>
@@ -3553,48 +3561,50 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block"</span><span class="nt">&gt;</span>
-                1. Trin 1
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block"</span><span class="nt">&gt;</span>
+                    1. Trin 1
 
-                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for trin 1
-                <span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for
+                        trin 1<span class="nt">&lt;/p&gt;</span>
 
-            <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span> <span class="na">focusable=</span><span class="s">"false"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                <span class="nt">&lt;/span&gt;</span>
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">" active current"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block"</span><span class="nt">&gt;</span>
-                2. Trin 2 (valgt)
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">" active current"</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">role=</span><span class="s">"menuitem"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block"</span><span class="nt">&gt;</span>
+                    2. Trin 2 (valgt)
 
-                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for trin 2
-                <span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for
+                        trin 2<span class="nt">&lt;/p&gt;</span>
 
-            <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block"</span><span class="nt">&gt;</span>
-                3. Trin 4
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block"</span><span class="nt">&gt;</span>
+                    3. Trin 3
 
-                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for trin 3
-                <span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for
+                        trin 3<span class="nt">&lt;/p&gt;</span>
 
-            <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
 
-        <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
 
     </div>

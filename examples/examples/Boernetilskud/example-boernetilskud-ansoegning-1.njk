@@ -94,19 +94,19 @@
 {% block body %}
   <main class="container page-container">
     <section class="page-content">
-        {{overflowmenu("Trin 1 af 6","overflow_steps", true, false, "menu-down" ,"
-              <ul class='sidenav-list'>
-                  <li class='active current'>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-1'>
+        {{overflowmenu("Trin 1 af 2","overflow_steps", true, false, "menu-down" ,"
+              <nav><ul class='sidenav-list' role='menu'>
+                  <li class='active current' role='none'>
+                      <a href='/pages/eksempler/boernetilskud/boernetilskud-1' role='menuitem' aria-current='page'>
                           1. Hvilke børn søger du tilskud til?
                       </a>
                   </li>
-                  <li>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-2'>
+                  <li role='none'>
+                      <a href='/pages/eksempler/boernetilskud/boernetilskud-2' role='menuitem'>
                           2. Hvornår blev du eller bliver du enlig?
                       </a>
                   </li>
-              </ul>
+              </ul></nav>
               "
           ) }}
         <h1>{{title}}</h1>
