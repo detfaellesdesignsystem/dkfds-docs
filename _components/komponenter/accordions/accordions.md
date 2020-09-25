@@ -26,14 +26,14 @@ componentTitle: Eksempel på accordion
 componentCode: "/kode/komponenter/accordions/"
 
 ---
-
 ## Anvendes til
+
 {:.h3 #retningslinjer}
 
-Accordions er interaktive overskrifter, der anvendes til at skjule og vise det relaterede indhold.s
-
+Accordions er interaktive overskrifter, der anvendes til at skjule og vise det relaterede indhold.
 
 ## Anvendes ikke til
+
 {:.h3}
 
 Accordions erstatter ikke individuelle trin i en selvbetjeningsløsning eller sider på en hjemmeside.
@@ -44,8 +44,8 @@ Brug ikke accordions til at kollapse indhold i fx søgeresultater eller andre l�
 
 Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger. Der bør du eventuelt i stedet anvende en tringuide.
 
-
 ## Vejledning
+
 {:.h3}
 
 Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.
