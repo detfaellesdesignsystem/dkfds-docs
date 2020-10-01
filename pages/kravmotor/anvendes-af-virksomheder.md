@@ -4,10 +4,10 @@ layout: requirements-tool
 title: Skal din løsning anvendes af virksomheder?
 description: 
 ---
-<h1>Skal din løsning anvendes af virksomheder?</h1>
+<h1 id="page-legend">Skal din løsning anvendes af virksomheder?</h1>
 <form method="post" action="." id="form-Q100">
     <div class="form-group">
-        <fieldset>
+        <fieldset aria-labelledby="page-legend">
             <span class="form-error-message d-none" id="error-message"></span>
             <ul class="nobullet-list">
                 <li>
