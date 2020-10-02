@@ -110,6 +110,9 @@ let onBorgerdkThemeSelected = function(){
 let setStylesheet = function(){
     let themeChosen = getThemeCookie();
     debug('stylesheet:', themeChosen);
+    if(themeChosen === null){
+        themeChosen = "virk";
+    }
     const indexOfTheme = themes.indexOf(themeChosen);
 
     var lnk = document.createElement('link');
