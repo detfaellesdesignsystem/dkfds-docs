@@ -8,6 +8,8 @@ const isDebugging = true;
 const demoSelectorId = 'themeSelector';
 
 document.addEventListener("DOMContentLoaded", function(){
+        debug("test", "test");
+        
         debug('cookie', getThemeCookie());
 
         // verify cookie contains correct value
