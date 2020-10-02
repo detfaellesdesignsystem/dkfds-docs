@@ -4,7 +4,7 @@ const themeAlertId = 'themeAlert';
 const cookieName = 'theme';
 const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
-const isDebugging = false;
+const isDebugging = true;
 const demoSelectorId = 'themeSelector';
 
 document.addEventListener("DOMContentLoaded", function(){
