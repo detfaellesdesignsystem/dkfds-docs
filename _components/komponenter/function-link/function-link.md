@@ -1,16 +1,17 @@
 ---
-permalink: /komponenter/funktionslink/
+permalink: "/komponenter/funktionslink/"
 layout: styleguide
 type: component
 title: Funktionslink
 category: Komponenter_category
 subcategory: Komponenter
-description: "Et link, der udfører en handling på siden - så som print. Der er gerne tilføjet et ikon, som underbygger handlingen."
-component: "function-link"
-componentTitle: "Eksempel på funktions link"
+description: Et link, der udfører en handling på siden - så som print. Der er gerne
+  tilføjet et ikon, som underbygger handlingen.
+component: function-link
+componentTitle: Eksempel på funktions link
 componentCode: "/kode/komponenter/funktionslink/"
----
 
+---
 {:.h3 #retningslinjer}
 ## Anvendes til
 
@@ -21,13 +22,14 @@ Brug funktionsikoner til at tilbyde brugeren systemfunktionalitet, som fx: print
 
 Brug ikke funktionsikoner til generel navigation mellem sider eller til næste trin. Brug da standard links og primærknap i stedet. Anvend ikke funktionslinks til navigation til forrige side, anvend da tilbage-linket.
 
+Brug sprogvælgeren til valg af sprog.
+
 {:.h3}
 ## Vejledning
 
 Systemfunktionalitet er fx:
 
 - at aktivere browserens printfunktionalitet
-- at ændre sprog i løsningen
 - at vælge en dato i en popover kalender
 - at generere en pdf
 - at ændre indstillinger i løsningen

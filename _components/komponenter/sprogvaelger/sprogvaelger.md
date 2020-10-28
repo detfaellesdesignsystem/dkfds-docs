@@ -34,7 +34,7 @@ Brug ikke sprogvælger, hvis løsningen kun findes i ét sprog.
 {:.h3}
 ## Vejledning
 
-Sprogvælgeren placeres altid nederst i footeren. Denne placering giver fleksibilitet og understøtter brugen af alle headertyper. Samtidig sikrer det en ensartet brugeroplevelse på tværs af løsninger så brugerne fremadrettet altid ved hvor de kan finde sprog i selvbetjeningsløsninger.
+Sprogvælgeren placeres altid nederst i footeren. Denne placering giver fleksibilitet og understøtter brugen af alle headertyper. 
 
 Sprogvælgeren indeholder en liste af sprog skrevet på original sproget. Sprogvælgeren fungerer således, at det valgte sprog bliver markeret med fed tekst og står altid som det første sprog i listen.
 
