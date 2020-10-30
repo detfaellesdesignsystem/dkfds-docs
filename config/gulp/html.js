@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var dutil = require('./doc-util');
-var runSequence = require('run-sequence').use(gulp);
+var runSequence = require('gulp4-run-sequence').use(gulp);
 var runCmd = require('gulp-run-command').default;
 var task = 'html';
 
@@ -65,7 +65,7 @@ title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
     return header + content;
 }
 
-gulp.task('nunjucks', function () {
+gulp.task('nunjucks', done => {
     return gulp.src(['examples/**/**/*.njk', 'examples/**/**/**/*.njk'],
         {base: 'examples/'})
         .pipe(data(function(file) {
@@ -116,7 +116,7 @@ gulp.task('nunjucks', function () {
 });
 
 
-gulp.task(task, function (done) {
+gulp.task(task, done => {
 
     runSequence(
         'nunjucks',
