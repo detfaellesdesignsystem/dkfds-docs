@@ -25,7 +25,7 @@
                 <ul class="nav-primary">
                     <li>
               <div class="overflow-menu">
-                <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
                   <span>Oversigt</span>
                 </button>
                 <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
@@ -94,19 +94,19 @@
 {% block body %}
   <main class="container page-container">
     <section class="page-content">
-        {{overflowmenu("Trin 1 af 6","overflow_steps", true, false, "menu-down" ,"
-              <ul class='sidenav-list'>
-                  <li class='active current'>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-1'>
+        {{overflowmenu("Trin 1 af 2","overflow_steps", true, false, "menu-down" ,"
+              <nav><ul class='sidenav-list' role='menu'>
+                  <li class='active current' role='none'>
+                      <a href='/pages/eksempler/boernetilskud/boernetilskud-1' role='menuitem' aria-current='page'>
                           1. Hvilke børn søger du tilskud til?
                       </a>
                   </li>
-                  <li>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-2'>
+                  <li role='none'>
+                      <a href='/pages/eksempler/boernetilskud/boernetilskud-2' role='menuitem'>
                           2. Hvornår blev du eller bliver du enlig?
                       </a>
                   </li>
-              </ul>
+              </ul></nav>
               "
           ) }}
         <h1>{{title}}</h1>

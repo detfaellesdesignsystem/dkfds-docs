@@ -31,6 +31,7 @@
   },
   "breadcrumbs_data_desktop": {
     "classes": "",
+    "aria-label": "Brødkrumme",
     "items": [
       {
         "text": "Find sag",
@@ -43,6 +44,7 @@
   },
   "breadcrumbs_data_mobile": {
     "classes": "container d-lg-none mt-3",
+    "aria-label": "Brødkrummer",
     "items": [
       {
         "text": "Find sag",

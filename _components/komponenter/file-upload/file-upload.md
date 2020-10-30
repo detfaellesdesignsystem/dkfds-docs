@@ -27,3 +27,6 @@ Sørg for at brugeren får en positiv respons, når filen er overført.
 Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil blive accepteret.
 
 Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
+
+## Fejlbesked
+{% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}

@@ -5,10 +5,10 @@ title: Skal din løsning anvendes af borgere?
 description:
 backlink: true 
 ---
-<h1>Skal din løsning anvendes af borgere?</h1>
+<h1 id="page-legend">Skal din løsning anvendes af borgere?</h1>
 <form method="post" action="." id="form-Q200">
     <div class="form-group">
-        <fieldset>
+        <fieldset aria-labelledby="page-legend">
             <span class="form-error-message d-none" id="error-message"></span>
             <ul class="nobullet-list">
                 <li>

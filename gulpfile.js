@@ -7,7 +7,7 @@ require( './config/gulp/publish' );
 var gulp  = require( 'gulp' );
 var dutil = require( './config/gulp/doc-util' );
 
-gulp.task( 'default', function ( done ) {
+gulp.task( 'default',done => {
 
   dutil.logIntroduction();
 

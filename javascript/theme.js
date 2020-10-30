@@ -8,6 +8,8 @@ const isDebugging = false;
 const demoSelectorId = 'themeSelector';
 
 document.addEventListener("DOMContentLoaded", function(){
+        debug("test", "test");
+
         debug('cookie', getThemeCookie());
 
         // verify cookie contains correct value
@@ -110,6 +112,9 @@ let onBorgerdkThemeSelected = function(){
 let setStylesheet = function(){
     let themeChosen = getThemeCookie();
     debug('stylesheet:', themeChosen);
+    if(themeChosen === null){
+        themeChosen = "virk";
+    }
     const indexOfTheme = themes.indexOf(themeChosen);
 
     var lnk = document.createElement('link');

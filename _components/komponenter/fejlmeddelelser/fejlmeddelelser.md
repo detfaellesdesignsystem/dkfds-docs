@@ -30,7 +30,6 @@ subnav:
 {% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" link="true" code="/kode/komponenter/fejlmeddelelser/" %}
 
 {:.h3 #retningslinjer}
-
 ## Anvendes til
 
 Brug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsningen. Fortæl brugeren, hvad der skal til for at rette problemet og komme videre i et simpelt og venligt sprog.
@@ -38,7 +37,6 @@ Brug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsn
 Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så brugeren ikke skal lede, ved at sætte fejlmeddelelsen umiddelbart over det, der skal rettes eller mangler.
 
 {:.h3}
-
 ## Anvendes ikke til
 
 Brug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.
@@ -46,7 +44,6 @@ Brug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede e
 Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en <a href="/komponenter/beskeder/">besked</a>.
 
 {:.h3}
-
 ## Vejledning
 
 Fejlmeddelelsen skal også vises som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.
@@ -60,7 +57,6 @@ Marker også selve feltet der er fejl i med rødt.
 For at hjælpe skærmlæsere tilføjes en skjult tekst med ordet "Fejl:" foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre "Fejl: Dette er ikke en gyldig mailadresse."
 
 {:.h4}
-
 ### Skriv klart og præcist
 
 Beskriv for brugeren, hvad der er sket og hvordan det kan rettes.
@@ -70,7 +66,6 @@ Meddelelsen skal være skrevet i lægmandssprog, være imødekommende og så kor
 Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står "ddmmååå-nnnn" eller "22091908-1856" som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.
 
 {:.h4}
-
 ### Vær konsistent
 
 Brug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de ser ens ud, lyder ens, og betyder det samme, og så de giver mening ude af kontekst.
@@ -78,7 +73,6 @@ Brug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de ser ens u
 Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står "Hvor mange timer arbejder du om ugen?", så kan fejlmeddelelsen være "Indtast hvor mange timer du arbejder om ugen".
 
 {:.h4}
-
 ### Vær præcis
 
 Generelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening uden for kontekst. Undgå derfor fejlmeddelelser som:
@@ -104,7 +98,6 @@ En fejlmeddelelse, der forklarer den specifikke situation er mere hjælpsom end 
 Den gode fejlmeddelelse vil fortælle brugeren, hvad der er sket og hvordan det kan løses.
 
 {:.h4}
-
 ### Brug instruktioner og beskrivelser
 
 Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. Fx:
@@ -116,47 +109,39 @@ Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. F
 Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør højst være 35 bogstaver" til felter som er for lange.
 
 {:#eksempler}
-
 ## Eksempler på fejlmeddelelser
 
 {:.h4}
-
 ### Navn
 
 {% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" link="true" %}
 
 {:.h4}
-
 ### Personnummer
 
 {% include code/preview-box.html component="error-message-personnummer" title="Eksempel på tekstfelt med tal og fejlmeddelelse" link="true" %}
 
 {:.h4}
-
 ### Postnummer
 
 {% include code/preview-box.html component="error-message-postnummer" title="Eksempel på talfelt med fejlmeddelelse" link="true" %}
 
 {:.h4}
-
 ### Tjekbokse
 
 {% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" link="true" %}
 
 {:.h4}
-
 ### Radioknapper
 
 {% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link="true" %}
 
 {:.h4}
-
 ### Dato
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datoangivelse med fejlmeddelelse" link="true" %}
 
 {:.h4}
-
 ### Vedhæft fil
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}

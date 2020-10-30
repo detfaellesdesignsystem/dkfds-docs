@@ -10,10 +10,10 @@ var task = 'publish';
 var sourceFolder = '_site'; //the folder that your local jekyll-instance deploys the site to
 var distFolder = 'docs'; //the folder that github pages will deploy from when pushed to master.
 
-gulp.task(task, function () {
-    dutil.logMessage(task, 'Copying compiled site from '+sourceFolder+' to '+distFolder);         
+gulp.task(task, done => {
+    dutil.logMessage(task, 'Copying compiled site from '+sourceFolder+' to '+distFolder);
     return gulp.src(sourceFolder+'/**/*', {base:sourceFolder, cwd:'.'})
     .pipe(gulp.dest(distFolder))
     .pipe(count('Copied ## objects'));
-    dutil.logMessage(task, 'Copying complete. Now push the docs folder to the master branch to deploy the site on github-pages');    
+    dutil.logMessage(task, 'Copying complete. Now push the docs folder to the master branch to deploy the site on github-pages');
 });

@@ -16,7 +16,6 @@ componentCode: "/kode/komponenter/modal/"
 
 ---
 {:.h3 #retningslinjer}
-
 ## Anvendes til
 
 Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen. Det kunne fx være en godkendelse af en handling, behov for bekræftelse eller overførsel af rettigheder, som løsningen skal kunne udføre for at kunne fuldføre sin dialog med brugeren.
@@ -24,7 +23,6 @@ Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset
 Brug modalvinduer, når du vil være sikker på, at brugeren ser en bestemt dialog og forholder sig til dens indhold.
 
 {:.h3}
-
 ## Anvendes ikke til
 
 Modalvinduer kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.
@@ -36,7 +34,6 @@ Modalvinduer anvendes i begrænset omfang, da de kan øge løsningens kognitive 
 Undgå modalvinduer på mobile løsninger og visninger, da de ikke fungerer godt for brugeren.
 
 {:.h3}
-
 ## Vejledning
 
 Modalvinduet skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.

@@ -26,7 +26,7 @@
                 <ul class="nav-primary">
                     <li>
                         <div class="overflow-menu">
-                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
                             <span>Oversigt</span>
                             </button>
                             <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
@@ -95,22 +95,22 @@
   <main class="container page-container pt-4 pt-lg-6">
        <div><a href="/pages/eksempler/boernetilskud/boernetilskud-1" class="back-link">Tilbage</a></div>
 
-        {{overflowmenu("Trin 2 af 6","overflow_steps", true, false, "menu-down" ,"
-              <ul class='sidenav-list'>
-                  <li>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-1/'>
+        {{overflowmenu("Trin 2 af 2","overflow_steps", true, false, "menu-down" ,"
+              <nav><ul class='sidenav-list' role='menu'>
+                  <li role='none'>
+                      <a href='/pages/eksempler/boernetilskud/boernetilskud-1/' role='menuitem'>
                             1. Hvilke børn søger du tilskud til?
                             <span class='sidenav-icon' aria-label='Gennemført'>
                                 <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#check'></use></svg>
                             </span>
                       </a>
                   </li>
-                  <li class='active current'>
-                      <a href='#'>
+                  <li class='active current' role='none'>
+                      <a href='#' role='menuitem' aria-current='page'>
                           2. Hvornår blev du eller bliver du enlig?
                       </a>
                   </li>
-              </ul>
+              </ul></nav>
               "
           ) }}
     <section class="page-content">
