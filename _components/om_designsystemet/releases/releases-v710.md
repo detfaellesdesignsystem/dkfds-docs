@@ -5,6 +5,6 @@ order: 94
 headingClass: mb-0
 ---
 
-<p class="small-text mt-0">11-09-2020</p>
+<p class="small-text mt-0">15-09-2020</p>
 
 - Ny komponent: <a href="/komponenter/sprogvaegler/">Sprogvælger</a>
