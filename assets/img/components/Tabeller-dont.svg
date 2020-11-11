@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Tabeller-don't</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tabeller-don't" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(30.000000, 46.000000)">
+            <rect id="Rectangle-Copy-4" stroke="#474E95" fill="#C8CADF" x="-0.5" y="25.5" width="301" height="35"></rect>
+            <text id="Indhold" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#474E95">
+                <tspan x="11" y="49">Indhold</tspan>
+            </text>
+            <rect id="Rectangle-Copy-5" stroke="#474E95" fill="#C8CADF" x="-0.5" y="59.5" width="301" height="35"></rect>
+            <rect id="Rectangle-Copy-6" stroke="#474E95" fill="#C8CADF" x="-0.5" y="93.5" width="301" height="35"></rect>
+            <rect id="Rectangle-Copy-7" stroke="#474E95" fill="#C8CADF" x="-0.5" y="127.5" width="301" height="35"></rect>
+            <text id="Indhold" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#474E95">
+                <tspan x="11" y="83">Indhold</tspan>
+            </text>
+            <text id="Indhold" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#474E95">
+                <tspan x="11" y="116">Indhold</tspan>
+            </text>
+            <text id="Indhold" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#474E95">
+                <tspan x="11" y="151">Indhold</tspan>
+            </text>
+            <rect id="Rectangle-Copy-8" stroke="#474E95" fill="#9195BF" x="-0.5" y="-0.5" width="301" height="28"></rect>
+            <text id="Titel" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#474E95">
+                <tspan x="11" y="20">Titel</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

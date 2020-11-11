@@ -10,7 +10,7 @@ tags:
 lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links eller knapper. Når brugeren klikker på menulinjen, folder listen sig ud.
 component: overflow-menu
 componentTitle: "Eksempel på overflow menu"
-componentCode: "/kode/komponenter/overflowmenu/" 
+componentCode: "/kode/komponenter/overflowmenu/"
 ---
 
 {:.h3 #retningslinjer}
@@ -28,10 +28,12 @@ Overflow menu anvendes ikke til primær navigation.
 Overflow menu bør ikke have mindre end 3 punkter og mere end 7-10 punkter.
 
 {:.h3}
-## Vejledning                
+## Vejledning
 
 Indholdet af en overflow menu bør være handlingsanvisende i et klart sprog.
 
 Brugerspecifikke handlinger som fx ”Slet” bør placeres til sidst i menuen for at undgå utilsigtede valg.
 
 Overvej om det er nødvendigt med dette ekstra navigationselement.
+
+{% include child-components.html parent='Overflowmenu' %}

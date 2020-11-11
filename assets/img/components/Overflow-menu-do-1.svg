@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Overflow-menu-do-01</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Overflow-menu-do-01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 23.000000)">
+            <rect id="Rectangle-Copy-4" stroke="#747474" fill="#DCDCDC" x="171.5" y="-0.5" width="123" height="51"></rect>
+            <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="293.5" y="-0.5" width="26" height="51"></rect>
+            <path d="M298.675063,61.5 L307,42.7688928 L315.324937,61.5 L360.5,61.5 L360.5,206.5 L109.5,206.5 L109.5,61.5 L298.675063,61.5 Z" id="Combined-Shape" stroke="#474E95" fill="#C8CADF"></path>
+            <text id="Valgmulighed-1-Valgm" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" line-spacing="35" fill="#474E95">
+                <tspan x="214" y="81">Valgmulighed 1</tspan>
+                <tspan x="214" y="116">Valgmulighed 2</tspan>
+                <tspan x="214" y="151">Valgmulighed 3</tspan>
+                <tspan x="214" y="186">Valgmulighed 4</tspan>
+            </text>
+            <g id="Group" transform="translate(304.000000, 16.000000)" fill="#474E95">
+                <rect id="Rectangle" x="0" y="0" width="5" height="5" rx="2.5"></rect>
+                <rect id="Rectangle-Copy" x="0" y="7" width="5" height="5" rx="2.5"></rect>
+                <rect id="Rectangle-Copy-2" x="0" y="14" width="5" height="5" rx="2.5"></rect>
+            </g>
+            <rect id="Rectangle-Copy-5" stroke="#747474" fill="#DCDCDC" x="48.5" y="-0.5" width="123" height="51"></rect>
+            <rect id="Rectangle-Copy-6" stroke="#747474" fill="#DCDCDC" x="-0.5" y="-0.5" width="49" height="51"></rect>
+            <text id="Menupunkt" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#1A1A1A">
+                <tspan x="186" y="32">Menupunkt</tspan>
+            </text>
+            <text id="Menupunkt-Copy" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#1A1A1A">
+                <tspan x="63" y="32">Menupunkt</tspan>
+            </text>
+            <text id="unkt" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#1A1A1A">
+                <tspan x="0" y="32">unkt</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,7 +1,7 @@
 ---
 title: Popover (tryk på ikonet)
 parent: Tooltip
-order: 20
+order: 30
 headingClass: h5
 component: popover-icon
 componentTitle: Eksempel på popover ikon

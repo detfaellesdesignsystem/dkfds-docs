@@ -1,7 +1,7 @@
 ---
 title: Statusbadges
 parent: Badges
-order: 30
+order: 40
 component: badges-status
 componentTitle: "Eksempel på statusbadges"
 ---

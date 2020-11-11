@@ -9,7 +9,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: "Skjul og vis yderligere information eller en ekstra funktion relevant for brugerens valg."
 lead: 'Du kan bruge Detalje komponenten til at holde indhold skjult, indtil brugeren vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig ud, eller brugeren får fx mulighed for at læse teksten.'
-tags: 
+tags:
 component: details
 componentTitle: "Eksempel på skjul og vis af indhold"
 componentCode: "/kode/komponenter/detaljer/"
@@ -37,3 +37,5 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 Skjul ikke meningsbærende indhold med denne funktionalitet.
 
 Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.
+
+{% include child-components.html parent='Detaljer' %}

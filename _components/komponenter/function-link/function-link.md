@@ -42,3 +42,5 @@ Funktionsikoner bør akkompagneres af et ord, der beskriver funktionaliteten. Fo
 Enkelte ikoner kan stå alene, hvis der fx skal spares på pladsen i en tabel. Det drejer sig fx om: slet, rediger, print, pdf og gem, der er relativt konventionelle ikoner.
 
 Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennemføre løsningen uden brug af funktionaliteten, bør man vælge at lave en tertiærknap med et ikon i, i stedet for et funktionslink.
+
+{% include child-components.html parent='Funktionslink' %}

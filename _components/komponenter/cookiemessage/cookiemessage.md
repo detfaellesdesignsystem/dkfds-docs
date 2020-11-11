@@ -7,7 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: Cookiemeddelelsen vises midt på siden, og blokerer indhold indtil man
   har taget stilling til brug af cookies.
-tags: 
+tags:
 lead: Anvender din selvbetjeningsløsning cookies til andet end teknisk nødvendige
   formål, skal brugeren vises en cookiemeddelelse.
 
@@ -30,6 +30,8 @@ Du behøver ikke vise en cookiemeddelelse, hvis din løsning kun sætter teknisk
 Det Fælles Designsystem anviser kun styling for cookiemeddelelsen, ikke den tekniske implementering af cookiemeddelelsen.
 
 Du skal selv tilpasse indholdet i meddelelsen, så den overholder gældende lovgivning og stemmer overens med din løsnings specifikke anvendelse af cookies.
+
+{% include child-components.html parent='Cookiemeddelelse' %}
 
 {:.h3}
 ## Links

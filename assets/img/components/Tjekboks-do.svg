@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Tjekboks-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tjekboks-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -1.000000)">
+            <rect id="Rectangle" fill="#F5F5F5" x="0" y="0" width="360" height="361"></rect>
+            <rect id="Rectangle" stroke="#474E95" x="18.5" y="61.5" width="19" height="19"></rect>
+            <text id="Sække-m.-genbrug" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#474E95">
+                <tspan x="47" y="77">Sække m. genbrug</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#474E95" x="18.5" y="91.5" width="19" height="19"></rect>
+            <polyline id="Path" stroke="#474E95" stroke-width="3" points="23 102.082196 26.0877193 107 34 94"></polyline>
+            <text id="Møbler" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#474E95">
+                <tspan x="47" y="107">Møbler</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#979797" x="18.5" y="121.5" width="19" height="19"></rect>
+            <text id="Stor-elektronik" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#000000">
+                <tspan x="47" y="137">Stor elektronik</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#474E95" x="18.5" y="151.5" width="19" height="19"></rect>
+            <text id="Hårde-hvidevarer" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#474E95">
+                <tspan x="47" y="167">Hårde hvidevarer</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#979797" x="18.5" y="180.5" width="19" height="19"></rect>
+            <text id="Andet-storskrald" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" fill="#000000">
+                <tspan x="47" y="196">Andet storskrald</tspan>
+            </text>
+            <polyline id="Path" stroke="#474E95" stroke-width="3" points="23 72.0821961 26.0877193 77 34 64"></polyline>
+            <polyline id="Path" stroke="#474E95" stroke-width="3" points="23 162.082196 26.0877193 167 34 154"></polyline>
+            <rect id="Rectangle-Copy-6" stroke="#747474" fill="#BFBFBF" x="18.5" y="23.5" width="321" height="26"></rect>
+        </g>
+    </g>
+</svg>

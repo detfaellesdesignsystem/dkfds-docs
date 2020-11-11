@@ -30,7 +30,7 @@ På meget små løsninger eller løsninger, der kun består af en enkelt side, b
 
 Det er vigtigt for brugerne, at kunne se de indtastede søgeord. En god tommelfingerregel er at søgefeltet er 27 karakterer (27ch) langt som minimum.
 
-Sørg for at søgefeltet ligner et søgefelt. 
+Sørg for at søgefeltet ligner et søgefelt.
 
 Hvis der anvendes et lup-ikon, skal ”Søg” fremgå i koden, så skærmlæsere kan se funktionen.
 
@@ -41,6 +41,8 @@ Vis fortsat søgefeltet – også på søgeresultatet, der viser søgeordene.
 Brug kun avanceret søgning som valgmulighed. Den primære søgning skal være en standardsøgning for at undgå forvirring omkring dens anvendelse.
 
 Søgeknappen skal være en submit-knap.
+
+{% include child-components.html parent='Search' %}
 
 {:.h3}
 ## Links

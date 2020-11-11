@@ -35,6 +35,8 @@ Overvej at begrænse antallet af tegn, hvis det giver mening.
 
 Vis kun fejlmeddelelser, når brugeren har indtastet en ugyldig værdi.
 
-Fejlmeddelelser skal være meningsfulde og hjælpsomme. 
+Fejlmeddelelser skal være meningsfulde og hjælpsomme.
 
 Placér fejlmeddelelser mellem label og felt, og markér feltet med rødt.
+
+{% include child-components.html parent='Textarea' %}

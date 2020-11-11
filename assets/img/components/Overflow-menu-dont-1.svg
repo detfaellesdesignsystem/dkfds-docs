@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Overflow-menu-don't-01</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Overflow-menu-don't-01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-4" stroke="#747474" fill="#DCDCDC" x="171.5" y="18.5" width="123" height="51"></rect>
+        <rect id="Rectangle-Copy-5" stroke="#747474" fill="#DCDCDC" x="48.5" y="18.5" width="123" height="51"></rect>
+        <rect id="Rectangle-Copy-6" stroke="#747474" fill="#DCDCDC" x="-0.5" y="18.5" width="49" height="51"></rect>
+        <text id="Menupunkt" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#1A1A1A">
+            <tspan x="186" y="51">Menupunkt</tspan>
+        </text>
+        <text id="Menupunkt-Copy" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#1A1A1A">
+            <tspan x="63" y="51">Menupunkt</tspan>
+        </text>
+        <text id="unkt" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#1A1A1A">
+            <tspan x="0" y="51">unkt</tspan>
+        </text>
+        <g transform="translate(110.000000, 19.000000)">
+            <rect id="Rectangle-Copy-3" stroke="#474E95" fill="#C8CADF" x="183.5" y="-0.5" width="26" height="51"></rect>
+            <g id="Group-Copy" transform="translate(194.000000, 16.000000)" fill="#474E95">
+                <rect id="Rectangle" x="0" y="0" width="5" height="5" rx="2.5"></rect>
+                <rect id="Rectangle-Copy" x="0" y="7" width="5" height="5" rx="2.5"></rect>
+                <rect id="Rectangle-Copy-2" x="0" y="14" width="5" height="5" rx="2.5"></rect>
+            </g>
+            <path d="M188.675063,61.5 L197,42.7688928 L205.324937,61.5 L250.5,61.5 L250.5,206.5 L-0.5,206.5 L-0.5,61.5 L188.675063,61.5 Z" id="Combined-Shape-Copy" stroke="#474E95" fill="#C8CADF"></path>
+            <text id="Næste-Tilbage-til-fo" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" line-spacing="35" fill="#474E95">
+                <tspan x="176.954" y="90">Næste</tspan>
+                <tspan x="80.51" y="125">Tilbage til forsiden</tspan>
+                <tspan x="176.666" y="160">Log ud</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
