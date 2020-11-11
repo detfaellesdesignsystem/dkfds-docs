@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Radioknap-don't</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Radioknap-don't" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -1.000000)">
+            <rect id="Rectangle" fill="#F5F5F5" x="0" y="0" width="360" height="361"></rect>
+            <rect id="Rectangle" fill="#474E95" x="29" y="102" width="10" height="10" rx="5"></rect>
+            <rect id="Rectangle" fill="#474E95" x="29" y="168" width="10" height="10" rx="5"></rect>
+            <rect id="Rectangle" stroke="#474E95" x="24.5" y="64.5" width="19" height="19" rx="9"></rect>
+            <text id="Valgmulighed-1" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#474E95">
+                <tspan x="53" y="80">Valgmulighed 1</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#474E95" x="24.5" y="97.5" width="19" height="19" rx="9"></rect>
+            <text id="Valgmulighed-2" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#474E95">
+                <tspan x="53" y="113">Valgmulighed 2</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#747474" x="24.5" y="130.5" width="19" height="19" rx="9"></rect>
+            <text id="Valgmulighed-3" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#1A1A1A">
+                <tspan x="53" y="146">Valgmulighed 3</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#474E95" x="24.5" y="163.5" width="19" height="19" rx="9"></rect>
+            <text id="Valgmulighed-4" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#474E95">
+                <tspan x="53" y="179">Valgmulighed 4</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#747474" x="24.5" y="196.5" width="19" height="19" rx="9"></rect>
+            <text id="Valgmulighed-5" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#1A1A1A">
+                <tspan x="53" y="212">Valgmulighed 5</tspan>
+            </text>
+            <rect id="Rectangle" fill="#474E95" x="29" y="69" width="10" height="10" rx="5"></rect>
+            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="24.5" y="20.5" width="281" height="26"></rect>
+        </g>
+    </g>
+</svg>

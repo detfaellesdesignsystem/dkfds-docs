@@ -32,3 +32,5 @@ Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen
 Sørg for, at tilbage-linket fører brugerne til den forrige side, de var på, i den tilstand, de sidst så trinnet/siden.
 
 Hvor det er muligt, skal du sikre dig, at tilbage-linket fungerer, selvom JavaScript er slået fra. Hvis dette ikke er muligt, skal du skjule tilbage-linket.
+
+{% include child-components.html parent='Backlink' %}

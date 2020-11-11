@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Sidenavigation, 1-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Sidenavigation,-1-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(31.000000, 0.000000)">
+            <path d="M0.5,0.5 L0.5,359.5 L267.5,359.5 L267.5,0.5 L0.5,0.5 Z" id="Combined-Shape" stroke="#747474" fill="#D8D8D8"></path>
+            <text id="Menupunkt-Menupunkt" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" line-spacing="35" fill="#474E95">
+                <tspan x="23" y="34">Menupunkt</tspan>
+                <tspan x="23" y="69">Menupunkt</tspan>
+                <tspan x="23" y="104" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-weight="bold">Menupunkt </tspan>
+            </text>
+            <text id="Menupunkt-Menupunkt-Copy" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" line-spacing="35" fill="#474E95">
+                <tspan x="23" y="263">Menupunkt</tspan>
+                <tspan x="23" y="298">Menupunkt</tspan>
+                <tspan x="23" y="333">Menupunkt 	  	</tspan>
+            </text>
+            <text id="Undermenupunkt-Under" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" line-spacing="35">
+                <tspan x="45" y="149" fill="#474E95">Undermenupunkt</tspan>
+                <tspan x="45" y="184" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-weight="bold" fill="#454545">Undermenupunkt</tspan>
+                <tspan x="193.716" y="184" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-weight="bold" fill="#747474"></tspan>
+                <tspan x="45" y="219" fill="#474E95">Undermenupunkt</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

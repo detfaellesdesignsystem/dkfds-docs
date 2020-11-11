@@ -30,4 +30,6 @@ Anvend kun spinners i særdeles begrænset omfang og kun på løsninger, hvor de
 
 En spinner skal ikke anvendes til kompensation for en permanent langsom performance.
 
-En spinner bør ikke køre mere end 5-10 sekunder før brugeren gøres opmærksom på, at der må forventes lidt ventetid. 
+En spinner bør ikke køre mere end 5-10 sekunder før brugeren gøres opmærksom på, at der må forventes lidt ventetid.
+
+{% include child-components.html parent='Spinner' %}

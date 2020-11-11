@@ -28,5 +28,7 @@ Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil b
 
 Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
+{% include child-components.html parent='Filinput' %}
+
 ## Fejlbesked
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}

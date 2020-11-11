@@ -5,7 +5,7 @@ type: component
 title: Fejlmeddelelser
 category: Komponenter_category
 subcategory: Komponenter
-description: 
+description:
 tags:
 - fejlbesked
 - fejlmeddelelse
@@ -20,7 +20,7 @@ tags:
 - fejlmedelelser
 - fejlmeddellelser
 - fejlmedellelser
-lead: 
+lead:
 anchor: true
 subnav:
 - text: Eksempler på fejlmeddelelser
@@ -107,6 +107,8 @@ Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. F
 * "Indtast en dato efter den 31. august 2020, der viser hvornår du startede på det pågældende kursus" bruger flere ord og er mindre direkte og naturligt end "Startdatoen for det valgte kursus skal være efter den 31. august 2020".
 
 Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør højst være 35 bogstaver" til felter som er for lange.
+
+{% include child-components.html parent='Fejlmeddeleser' %}
 
 {:#eksempler}
 ## Eksempler på fejlmeddelelser

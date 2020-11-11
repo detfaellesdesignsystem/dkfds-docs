@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Tekstområde-don't</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tekstområde-don't" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" fill="#F5F5F5" x="0" y="0" width="360" height="361"></rect>
+            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="9.5" y="73.5" width="172" height="19"></rect>
+            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="9.5" y="48.5" width="301" height="21"></rect>
+            <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="10.5" y="102.5" width="219" height="199"></rect>
+            <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="229.5" y="102.5" width="15" height="199"></rect>
+            <rect id="Rectangle-Copy-13" fill="#9195BF" x="17" y="103" width="205" height="9"></rect>
+            <rect id="Rectangle-Copy-21" fill="#9195BF" x="17" y="222" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-17" fill="#9195BF" x="17" y="162" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-22" fill="#9195BF" x="17" y="282" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-24" fill="#9195BF" x="18" y="296" width="205" height="5"></rect>
+            <rect id="Rectangle-Copy-14" fill="#9195BF" x="17" y="117" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-23" fill="#9195BF" x="17" y="237" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-18" fill="#9195BF" x="17" y="177" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-15" fill="#9195BF" x="17" y="132" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-25" fill="#9195BF" x="17" y="252" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-19" fill="#9195BF" x="17" y="192" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-16" fill="#9195BF" x="17" y="147" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-27" fill="#9195BF" x="17" y="267" width="205" height="10"></rect>
+            <rect id="Rectangle-Copy-20" fill="#9195BF" x="17" y="207" width="205" height="10"></rect>
+            <rect id="Rectangle" fill="#474E95" x="232" y="172" width="10" height="100" rx="5"></rect>
+            <rect id="Rectangle" fill="#747474" x="10" y="307" width="86" height="25"></rect>
+            <text id="Send-Copy" font-family="IBMPlexSans-Medium, IBM Plex Sans" font-size="16" font-weight="400" fill="#FFFFFF">
+                <tspan x="32" y="326">Send</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

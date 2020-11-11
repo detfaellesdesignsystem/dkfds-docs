@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Søgfelt, 1-don't</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Søgfelt,-1-don't" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Søg-do-02" transform="translate(0.000000, 51.000000)" fill="#DCDCDC">
+            <rect id="Rectangle" x="0" y="0" width="360" height="309"></rect>
+        </g>
+        <rect id="Rectangle-Copy-4" fill="#BFBFBF" x="0" y="122" width="350" height="169"></rect>
+        <rect id="Rectangle-Copy-5" fill="#BFBFBF" x="66" y="301" width="284" height="59"></rect>
+        <rect id="Rectangle-Copy-6" fill="#BFBFBF" x="0" y="301" width="56" height="59"></rect>
+        <g id="Søgfelt,-1-do" transform="translate(149.000000, 67.000000)">
+            <rect id="Rectangle" fill="#474E95" x="149" y="0" width="52" height="35"></rect>
+            <path d="M171,5 C175.970563,5 180,9.02943725 180,14 C180,18.9705627 175.970563,23 171,23 C166.029437,23 162,18.9705627 162,14 C162,9.02943725 166.029437,5 171,5 Z M177.478693,20.4786931 L188,31 L177.478693,20.4786931 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="3"></path>
+            <rect id="Rectangle-Copy" stroke="#474E95" fill="#C8CADF" x="0.5" y="0.5" width="149" height="34"></rect>
+        </g>
+    </g>
+</svg>

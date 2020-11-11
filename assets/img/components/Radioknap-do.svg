@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Radioknap-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Radioknap-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -1.000000)">
+            <rect id="Rectangle" fill="#F5F5F5" x="0" y="0" width="360" height="361"></rect>
+            <rect id="Rectangle" stroke="#747474" x="25" y="65" width="18" height="18" rx="9"></rect>
+            <text id="Valgmulighed-1" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#1A1A1A">
+                <tspan x="53" y="80">Valgmulighed 1</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#53599B" x="25" y="98" width="18" height="18" rx="9"></rect>
+            <text id="Valgmulighed-2" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#474E95">
+                <tspan x="53" y="113">Valgmulighed 2</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#747474" x="25" y="131" width="18" height="18" rx="9"></rect>
+            <text id="Valgmulighed-3" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#1A1A1A">
+                <tspan x="53" y="146">Valgmulighed 3</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#747474" x="25" y="164" width="18" height="18" rx="9"></rect>
+            <text id="Valgmulighed-4" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#1A1A1A">
+                <tspan x="53" y="179">Valgmulighed 4</tspan>
+            </text>
+            <rect id="Rectangle" fill="#53599B" x="29" y="102" width="10" height="10" rx="5"></rect>
+            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="24.5" y="20.5" width="281" height="26"></rect>
+        </g>
+    </g>
+</svg>

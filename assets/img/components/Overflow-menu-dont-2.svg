@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Overflow-menu-don't-02</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Overflow-menu-don't-02" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Søg-do-02">
+            <rect id="Rectangle" fill="#DCDCDC" x="0" y="0" width="360" height="314"></rect>
+            <rect id="Rectangle-Copy-7" fill="#FFFFFF" x="0" y="58" width="344" height="194"></rect>
+            <rect id="Rectangle-Copy-8" fill="#BFBFBF" x="0" y="262" width="344" height="52"></rect>
+            <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="314.5" y="67.5" width="20" height="37"></rect>
+            <g id="Group" transform="translate(323.000000, 78.000000)" fill="#474E95">
+                <rect id="Rectangle" x="0" y="0" width="5" height="4.63636364" rx="2.31818182"></rect>
+                <rect id="Rectangle-Copy" x="0" y="6.18181818" width="5" height="4.63636364" rx="2.31818182"></rect>
+                <rect id="Rectangle-Copy-2" x="0" y="12.3636364" width="5" height="4.63636364" rx="2.31818182"></rect>
+            </g>
+            <rect id="Rectangle" fill="#999999" x="297" y="12" width="47" height="36"></rect>
+            <rect id="Rectangle-Copy" fill="#BFBFBF" x="132" y="12" width="165" height="36"></rect>
+        </g>
+    </g>
+</svg>

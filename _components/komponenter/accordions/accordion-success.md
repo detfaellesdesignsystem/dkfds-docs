@@ -1,7 +1,7 @@
 ---
 title: Med succesbeskeder
 parent: Accordions
-order: 60
+order: 70
 component: accordion-success
 componentTitle: "Eksempel på accordion med succesbesked"
 ---
