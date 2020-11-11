@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Trinindikatorer-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Trinindikatorer-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(55.000000, 28.000000)">
+            <path d="M-0.5,-0.5 L110.5,-0.5 L110.5,50.5 L-0.5,50.5 L-0.5,-0.5 Z" id="Rectangle-Copy-3" stroke="#474E95" fill="#C8CADF"></path>
+            <path d="M99,19.881966 L104.809017,31.5 L93.190983,31.5 L99,19.881966 Z" id="Triangle" stroke="#44479B" fill="#454A99" transform="translate(99.000000, 26.000000) scale(1, -1) translate(-99.000000, -26.000000) "></path>
+            <text id="Trin-3-af-5" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#474E95">
+                <tspan x="6" y="32">Trin 3 af 5</tspan>
+            </text>
+            <path d="M18.6750635,61.5 L27,42.7688928 L35.3249365,61.5 L200.5,61.5 L200.5,248.5 L-0.5,248.5 L-0.5,61.5 L18.6750635,61.5 Z" id="Combined-Shape-Copy" stroke="#474E95" fill="#C8CADF"></path>
+            <rect id="Rectangle" stroke="#474E95" x="-0.5" y="143.5" width="201" height="37"></rect>
+            <text id="Trin-1-Trin-2-Trin-3" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" line-spacing="35" fill="#474E95">
+                <tspan x="6" y="91">Trin 1</tspan>
+                <tspan x="6" y="126">Trin 2</tspan>
+                <tspan x="6" y="161" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-weight="bold">Trin 3</tspan>
+                <tspan x="6" y="196">Trin 4</tspan>
+                <tspan x="6" y="231">Trin 5</tspan>
+            </text>
+            <path d="M10,109 L190,109" id="Line-4" stroke="#9195BF" stroke-linecap="square"></path>
+            <path d="M9,214 L189,214" id="Line-4-Copy-3" stroke="#9195BF" stroke-linecap="square"></path>
+            <polyline id="Path-2" stroke="#454A99" stroke-width="3" points="162 90.1372549 170.357709 97 186 83"></polyline>
+            <polyline id="Path-2-Copy" stroke="#454A99" stroke-width="3" points="162 125.137255 170.357709 132 186 118"></polyline>
+        </g>
+    </g>
+</svg>

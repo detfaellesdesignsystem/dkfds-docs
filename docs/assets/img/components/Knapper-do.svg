@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Knapper-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Knapper-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="360" height="360"></rect>
+        <g transform="translate(20.000000, 17.000000)">
+            <rect id="Rectangle-Copy" stroke="#747474" fill="#DCDCDC" x="-0.5" y="91.5" width="321" height="37"></rect>
+            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="-0.5" y="68.5" width="120.124088" height="19"></rect>
+            <rect id="Rectangle-Copy" stroke="#747474" fill="#DCDCDC" x="-0.5" y="22.5" width="321" height="37"></rect>
+            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="-0.5" y="-0.5" width="120.124088" height="19"></rect>
+            <rect id="Rectangle" fill="#474E95" x="0" y="138" width="85" height="35"></rect>
+            <text id="Send" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="16" font-weight="500" fill="#F5F5F5">
+                <tspan x="24" y="162">Send</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

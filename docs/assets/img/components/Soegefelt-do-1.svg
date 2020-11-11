@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Søgfelt, 1-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Søgfelt,-1-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Søg-do-02" transform="translate(0.000000, 51.000000)" fill="#DCDCDC">
+            <rect id="Rectangle" x="0" y="0" width="360" height="309"></rect>
+        </g>
+        <g transform="translate(0.000000, 87.000000)">
+            <rect id="Rectangle" fill="#BFBFBF" x="0" y="35" width="350" height="169"></rect>
+            <rect id="Rectangle-Copy-2" fill="#BFBFBF" x="66" y="214" width="284" height="59"></rect>
+            <rect id="Rectangle-Copy-3" fill="#BFBFBF" x="0" y="214" width="56" height="59"></rect>
+            <rect id="Rectangle" fill="#474E95" x="267" y="-20" width="83" height="35"></rect>
+            <text id="Søg" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="20" font-weight="500" fill="#F5F5F5">
+                <tspan x="291" y="5">Søg</tspan>
+            </text>
+            <rect id="Rectangle-Copy" stroke="#474E95" fill="#C8CADF" x="57.5" y="-19.5" width="209" height="34"></rect>
+        </g>
+    </g>
+</svg>

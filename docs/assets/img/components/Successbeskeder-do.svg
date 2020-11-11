@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Success-meddelelser-do Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Success-meddelelser-do-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Success-meddeleser-do" transform="translate(0.000000, 51.000000)">
+            <g id="Søg-do-02">
+                <rect id="Rectangle" fill="#DCDCDC" x="0" y="0" width="360" height="244.004065"></rect>
+                <rect id="Rectangle" stroke="#BFBFBF" fill="#BFBFBF" x="9.5" y="98.5" width="341" height="141"></rect>
+            </g>
+            <g transform="translate(10.000000, 42.000000)">
+                <rect id="Rectangle" stroke="#358000" fill="#EEFFE2" x="-0.5" y="-0.5" width="341" height="46.1801075"></rect>
+                <rect id="Rectangle" fill="#358000" x="0" y="0" width="2" height="45.1801075"></rect>
+                <text id="Tak" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" fill="#358000">
+                    <tspan x="42" y="30.6279122">Tak</tspan>
+                </text>
+                <g id="tick" transform="translate(6.000000, 12.908602)" fill="#358000" fill-rule="nonzero">
+                    <path d="M24.7183827,0.3330947 C24.3429418,-0.111031567 23.7341015,-0.111031567 23.3585629,0.3330947 L7.77207626,18.7687241 L1.64143708,11.5173954 C1.26599616,11.0732114 0.657155887,11.0732114 0.281617311,11.5173954 C-0.093872437,11.9615217 -0.093872437,12.6815953 0.281617311,13.1257793 L7.09223962,21.1813288 C7.46758288,21.6252819 8.07661846,21.6253974 8.45205938,21.1813288 L24.7183827,1.94147863 C25.0938724,1.49729461 25.0938724,0.777220968 24.7183827,0.3330947 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

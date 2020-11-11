@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Datoangivelse-don't</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Datoangivelse-don't" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M-0.5,-0.5 L360.5,-0.5 L360.5,305.5 L-0.5,305.5 L-0.5,-0.5 Z" id="Rectangle" stroke="#F9F9F9" fill="#BFBFBF"></path>
+            <g id="calendar-top" transform="translate(10.000000, 11.000000)">
+                <rect id="Rectangle" fill="#BFBFBF" x="0" y="-6.03961325e-14" width="339" height="50"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="87.483871" y="11.9565217" width="82.016129" height="26.0869565"></rect>
+                <polygon id="Triangle" stroke="#979797" fill="#979797" transform="translate(155.283871, 25.000000) scale(1, -1) translate(-155.283871, -25.000000) " points="155.283871 19.5652174 160.751613 30.4347826 149.816129 30.4347826"></polygon>
+                <text id="Sep" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" fill="#000000">
+                    <tspan x="98.4193548" y="31.0869565">Sep</tspan>
+                </text>
+                <rect id="Rectangle" fill="#FFFFFF" x="169.5" y="11.9565217" width="82.016129" height="26.0869565"></rect>
+                <polygon id="Triangle" stroke="#979797" fill="#979797" transform="translate(238.393548, 26.086957) scale(1, -1) translate(-238.393548, -26.086957) " points="238.393548 20.6521739 243.86129 31.5217391 232.925806 31.5217391"></polygon>
+                <text id="2023" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" fill="#000000">
+                    <tspan x="180.435484" y="30">2023</tspan>
+                </text>
+            </g>
+            <g id="calendar-dates" transform="translate(10.000000, 77.000000)">
+                <rect id="Rectangle-Copy-7" fill="#FFFFFF" x="147.629032" y="131.076923" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy" fill="#FFFFFF" x="0" y="174.769231" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="49.2096774" y="174.769231" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-3" fill="#FFFFFF" x="98.4193548" y="174.769231" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-8" fill="#FFFFFF" x="147.629032" y="174.769231" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-4" fill="#FFFFFF" x="196.83871" y="174.769231" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-5" fill="#FFFFFF" x="246.048387" y="174.769231" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-5" fill="#FFFFFF" x="246.048387" y="131.076923" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="147.629032" y="87.3846154" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-7" fill="#FFFFFF" x="196.83871" y="131.076923" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="196.83871" y="87.3846154" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="246.048387" y="0" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="295.258065" y="0" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="246.048387" y="87.3846154" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="295.258065" y="87.3846154" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-7" fill="#FFFFFF" x="0" y="131.076923" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-5" fill="#FFFFFF" x="98.4193548" y="131.076923" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="87.3846154" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-7" fill="#FFFFFF" x="49.2096774" y="131.076923" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="49.2096774" y="87.3846154" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="98.4193548" y="87.3846154" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="147.629032" y="43.6923077" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="196.83871" y="43.6923077" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="246.048387" y="43.6923077" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="295.258065" y="43.6923077" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="43.6923077" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="49.2096774" y="43.6923077" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="98.4193548" y="43.6923077" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-6" fill="#FFFFFF" x="295.258065" y="131.076923" width="43.7419355" height="38.2307692"></rect>
+                <rect id="Rectangle-Copy-6" fill="#FFFFFF" x="295.258065" y="174.769231" width="43.7419355" height="38.2307692"></rect>
+            </g>
+            <path d="M182.5,23.54 L182.5,49.46" id="Line" stroke="#BFBFBF" stroke-linecap="square"></path>
+            <g id="calendar" transform="translate(10.000000, 10.000000)"></g>
+        </g>
+    </g>
+</svg>
