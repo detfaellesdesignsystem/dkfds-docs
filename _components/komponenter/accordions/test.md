@@ -13,9 +13,9 @@ do_s_and_don_ts:
     svg_alt_text: do svg alt
     content: do content
   don_t:
-    svg_filename: ''
-    svg_alt_text: ''
-    content: ''
+    svg_filename: dont filename
+    svg_alt_text: dont svg alt
+    content: dont content
 order: '10'
 
 ---
