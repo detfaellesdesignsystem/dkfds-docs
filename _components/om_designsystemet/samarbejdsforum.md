@@ -7,6 +7,10 @@ subcategory: Om designsystemet
 description: "Se hvor og hvornår næste samarbejdsforum holdes."
 tags:
 ---
-Næste samarbejdsforum er ikke planlagt endnu.
-
+<div class="alert alert-warning mb-6">
+<div class="alert-body">
+<p class="alert-heading">Tirsdag d. 1. december 2020, kl. 14.00 - 15.30</p>
+<p class="alert-text">Samarbejdsforum afholdes som videomøde på grund af den nuværende COVID-19-situation. Vi sender mail med link til videomødet til alle tilmeldte deltagere, når tilmeldingsfristen er udløbet.</p>
+<p><a href="https://digst.dk/digital-service/brugeroplevelse/samarbejdsforum-for-det-faelles-designsystem-2/" class="icon-link">Tilmeld/frameld dig og dine kollegaer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+</div></div>
 <a href="/omdesignsystemet/governance/">Læs om Samarbejdsforum</a>
