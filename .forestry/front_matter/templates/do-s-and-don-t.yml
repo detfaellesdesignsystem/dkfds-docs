@@ -50,3 +50,5 @@ fields:
         format: markdown
     label: Content
   label: Don't
+pages:
+- _components/komponenter/accordions/test.md
