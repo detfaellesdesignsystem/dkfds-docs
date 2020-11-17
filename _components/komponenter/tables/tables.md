@@ -50,4 +50,11 @@ Vær meget opmærksom på typen af data, din tabel skal præsentere brugeren for
 
 Såfremt der er tale om meget <a href="/komponenter/tables/#avancerede-tabeller">avancerede tabeller</a>, kan der bruges en tredjepartsløsning.
 
+{% include dos-donts-box.html component="table-dos-donts" title="Tabeller do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+<a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Tables' %}

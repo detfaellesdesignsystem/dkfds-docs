@@ -31,12 +31,12 @@ Det Fælles Designsystem anviser kun styling for cookiemeddelelsen, ikke den tek
 
 Du skal selv tilpasse indholdet i meddelelsen, så den overholder gældende lovgivning og stemmer overens med din løsnings specifikke anvendelse af cookies.
 
-{% include child-components.html parent='Cookiemeddelelse' %}
+{% include dos-donts-box.html component="cookie-message-dos-donts" title="Cookiemeddelelser do's and don'ts" %}
 
-{:.h3}
-## Links
-
-{:.nobullet-list}
+{:.h4}
+### Referencer
+- <a href="https://www.smashingmagazine.com/2019/04/privacy-ux-better-cookie-consent-experiences/" class="icon-link">Vitaly Friedman: Privacy UX: Better Cookie Consent Experiences (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/modal-nonmodal-dialog/" class="icon-link">Therese Fessenden: Modal & Nonmodal Dialogs: When (& When Not) to Use Them (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://erhvervsstyrelsen.dk/cookieregler" class="icon-link">Læs om cookies på Erhvervsstyrelsens hjemmeside<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://erhvervsstyrelsen.dk/vejledning-cookiebekendtgoerelse" class="icon-link">Vejledning til "cookiebekendtgørelsen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.retsinformation.dk/forms/r0710.aspx?id=139279" class="icon-link">Cookiebekendtgørelsen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

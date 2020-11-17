@@ -49,4 +49,15 @@ Undgå lange tekster i cards.
 
 Skriv kort og præcist i hvert card.
 
+
+{% include dos-donts-box.html component="cards-dos-donts" title="Cards do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- <a href="https://www.nngroup.com/articles/cards-component/" class="icon-link">Page Laubheimer: Cards: UI-Component Definition (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" class="icon-link">Muneo Kitajima, Marilyn H Blackmon & Peter G Polson: A Comprehension-based Model of Web Navigation and Its Application to Web Usability Analysis (2000)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+
 {% include child-components.html parent='Cards' %}

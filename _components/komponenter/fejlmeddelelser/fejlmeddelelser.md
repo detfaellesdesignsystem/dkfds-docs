@@ -108,7 +108,14 @@ Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. F
 
 Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør højst være 35 bogstaver" til felter som er for lange.
 
-{% include child-components.html parent='Fejlmeddeleser' %}
+
+{% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser do's and don'ts" %}
+
+### Referencer
+
+{:.nobullet-list}
+- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
+- Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 
 {:#eksempler}
 ## Eksempler på fejlmeddelelser

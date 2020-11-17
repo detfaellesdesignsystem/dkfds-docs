@@ -49,4 +49,13 @@ Anvend et positivt sprog til værdierne. I stedet for fx ”Jeg vil ikke modtage
 
 Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er brugbar på touchskærme.
 
+{% include dos-donts-box.html component="checkbox-dos-donts" title="Tjekboks do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- ISO 9241-143: Forms (2012)
+- <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Checkbox' %}

@@ -39,4 +39,11 @@ Fejlmeddelelser skal være meningsfulde og hjælpsomme.
 
 Placér fejlmeddelelser mellem label og felt, og markér feltet med rødt.
 
+{% include dos-donts-box.html component="textarea-dos-donts" title="Tekstområde do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+ISO 9241-143: Forms (2012)
+
 {% include child-components.html parent='Textarea' %}

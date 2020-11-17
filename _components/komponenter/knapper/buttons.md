@@ -63,6 +63,15 @@ Skriv i aktiv form: I stedet for at skrive ”Fejlindmelding” bør du skrive �
 
 I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i knappen for at signalere bestemte handlinger.
 
+{% include dos-donts-box.html component="buttons-dos-donts" title="Knapper do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
+- Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
+
 {:.h4}
 ### Disabled tilstand
 
@@ -76,5 +85,6 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 ## Links
 
 <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link">Hvornår skal du bruge en knap eller et link<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 
 {% include child-components.html parent='Buttons' %}

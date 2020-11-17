@@ -51,4 +51,14 @@ Overvej at lade den accordion, som har det vigtigste indhold, være foldet ud, n
 
 Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere spiselig. Overvej om det er nødvendigt at kollapse indhold og hvorfor, det er det. Hvis indholdet er unødigt langt eller uoverskueligt, bør du i stedet omformulere teksten og eventuelt fordele den på flere sider.
 
+
+{% include dos-donts-box.html component="accordion-dos-donts" title="Accordion do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Accordions' %}

@@ -43,4 +43,13 @@ Enkelte ikoner kan stå alene, hvis der fx skal spares på pladsen i en tabel. D
 
 Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennemføre løsningen uden brug af funktionaliteten, bør man vælge at lave en tertiærknap med et ikon i, i stedet for et funktionslink.
 
+{% include dos-donts-box.html component="function-link-dos-donts" title="Funktionslink do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- <a href="https://slate.com/technology/2013/06/how-people-read-online-why-you-wont-finish-this-article.html" class="icon-link">Farhad Manjoo: You Won’t Finish This Article (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/utility-navigation/" class="icon-link">Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Funktionslink' %}

@@ -40,6 +40,15 @@ Hvis du ikke ved, hvilket felt der indeholder en fejl, skal du linke til det fø
 
 For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste ved hjælp af en radioknap eller en tjekboks, skal du linke til den første radioknap eller tjekboks på listen.
 
+{% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser og fejlopsummering do's and don'ts" %}
+
+### Referencer
+
+{:.nobullet-list}
+- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
+- Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
+
+
 {:#placering}
 ## Placering
 

@@ -51,4 +51,14 @@ Vi anbefaler ikke, at du anvender faneblade i en generel løsning, da en stor de
 
 Hvis du ønsker at anvende faner, bør det testes på din målgruppe før din løsning går i produktion.
 
+
+{% include dos-donts-box.html component="faneblad-dos-donts" title="Faneblade do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- <a href="https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/" class="icon-link">Jacob Gube: Module Tabs in Web Design: Best Practices and Solutions (2009)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/tabs-used-right/" class="icon-link">Jakob Nielsen: Tabs, Used Right (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Faneblade' %}

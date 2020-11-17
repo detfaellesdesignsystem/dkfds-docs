@@ -55,4 +55,14 @@ Vær forsigtig med at angive et standard valg, da det kan have en modsatrettet e
 
 Der bør være en overordnet label for hele listen af radioknapper
 
+{% include dos-donts-box.html component="radiobutton-dos-donts" title="Radioknapper do's and don'ts" %}
+
+{:.nobullet-list}
+### Referencer
+
+{:.nobullet-list}
+- ISO 9241-143: Forms (2012)
+- <a href="https://www.nngroup.com/articles/radio-buttons-default-selection/" class="icon-link">Kara Pernice: Radio Buttons: Select One by Default or Leave All Unselected? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Radiobutton' %}

@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -73,48 +75,50 @@
 </div>
     <main class="container page-container">
     <h1 id="tringuide-information" class="sr-only">Tringuide-information</h1>
-    <ul class="sidenav-list">
-    <li>
-        <a href="">
-            <div class="d-inline-block">
-                1. Trin 1
+    <nav>
+    <ul class="sidenav-list" role="menu">
+        <li role="none">
+            <a href="" role="menuitem">
+                <div class="d-inline-block">
+                    1. Trin 1
 
-                <p class="sidenav-information">Informationstekst for trin 1
-                </p>
+                    <p class="sidenav-information">Informationstekst for
+                        trin 1</p>
 
-            </div>
+                </div>
 
-            <span class="sidenav-icon">
-                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
-            </span>
+                <span class="sidenav-icon">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check"></use></svg>
+                </span>
 
-        </a>
-    </li>
-    <li class=" active current">
-        <a href="">
-            <div class="d-inline-block">
-                2. Trin 2 (valgt)
+            </a>
+        </li>
+        <li class=" active current" role="none">
+            <a href="" role="menuitem" aria-current="page">
+                <div class="d-inline-block">
+                    2. Trin 2 (valgt)
 
-                <p class="sidenav-information">Informationstekst for trin 2
-                </p>
+                    <p class="sidenav-information">Informationstekst for
+                        trin 2</p>
 
-            </div>
+                </div>
 
-        </a>
-    </li>
-    <li>
-        <a href="">
-            <div class="d-inline-block">
-                3. Trin 4
+            </a>
+        </li>
+        <li role="none">
+            <a href="" role="menuitem">
+                <div class="d-inline-block">
+                    3. Trin 3
 
-                <p class="sidenav-information">Informationstekst for trin 3
-                </p>
+                    <p class="sidenav-information">Informationstekst for
+                        trin 3</p>
 
-            </div>
+                </div>
 
-        </a>
-    </li>
-</ul>
+            </a>
+        </li>
+    </ul>
+</nav>
 
     </main>
     <script src="/assets/js/theme.js"></script>

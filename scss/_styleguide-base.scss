@@ -50,6 +50,41 @@ img.outer-border-box{
     margin-top: 0;
   }
 }
+
+// Do's and Don'ts
+.do-dont-container{
+
+  img{
+    padding: map-get($spacers, 2);
+    border: $outer-border;
+    width: 100%;
+    height: auto;
+  }
+
+  .separator{
+    margin-top: map-get($spacers, 3);
+    display: flex;
+    div{
+      height: map-get($spacers, 4);
+      margin-top: map-get($spacers, 2);
+      width: calc(100% - 28px);
+      margin-left: map-get($spacers, 2);
+    }
+  }
+  > div:first-of-type .separator {
+    svg{fill: $color-positive; }
+    div{
+      background-color: $color-positive;
+    }
+  }
+  > div:last-of-type .separator{
+    svg{fill: $color-negative;}
+    div{
+      background-color: $color-negative;
+    }
+  }
+}
+
 // Search
 
 a.search-link{

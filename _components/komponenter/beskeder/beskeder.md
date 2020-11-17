@@ -50,4 +50,11 @@ Skriv kort og præcist og undgå tekniske beskeder, der kan forvirre brugeren.
 
 Brug beskeder til at øge brugerens forståelse for løsningen.
 
+
+{% include dos-donts-box.html component="alerts-dos-donts" title="Beskeder do's and don'ts" %}
+
+{:.h4}
+### Referencer
+Linda Newman Lior: Writing for Interaction (2013)
+
 {% include child-components.html parent='Beskeder' %}
