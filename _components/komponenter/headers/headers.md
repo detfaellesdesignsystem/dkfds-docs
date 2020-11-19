@@ -51,24 +51,10 @@ Når du laver en header, bør du følge disse principper:
 - Brug kun række 3, 4, 5, med knapper, links og ekstra navigation, når det er absolut nødvendigt.
 - Hold altid rækkefølgen, uanset kombinationen
 
-{% include dos-donts-box.html component="header-dos-donts" title="Headers do's and don'ts" %}
-
-{:.h4}
-### Referencer
-
-{:.nobullet-list}
-- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
-- Luke Wroblewski: Visible Narratives: Understanding Visual Organization (2003)
-- Louise Downe: Good services are verbs, bad services are nouns (2015)
-- Linda Newman Lior: Writing for Interaction (2013)
-- <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+<div><img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" /></div>
 
 {:.h3}
 ## Headerens rækker forklaret
-
-<div><img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" /></div>
-
 
 {:.h4}
 ### Række 1 (obligatorisk)
@@ -97,5 +83,8 @@ Funktionslinks (igangsætter system- eller OS-funktionalitet, fx gem, print osv.
 
 En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servicere både simple og komplekse løsninger. Den er også kompleks at anvende for brugerne. Du bør derfor udgangspunkt anvende færre end fem rækker i din header.
 
+{:.h3}
+## Links
+<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 {% include child-components.html parent='Headers' %}
