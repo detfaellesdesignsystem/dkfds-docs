@@ -81,7 +81,7 @@ Det element som skal collapses/expandes skal have følgende:
 Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.RadioToggleGroup(document.getElementByID('DIV-CONTAINER-ID'));
+new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID'));
 {% endhighlight %}
 
 ### Events

@@ -39,6 +39,13 @@ Du bør opdatere følgende attributter til din løsning ved almindeligt tooltip:
 - Brug aria-describedby på elementet der udløser tooltip eller popover.
 - Tooltips skal både vises, ved markering med mus og tastatur.
 
+### Javascript
+Tooltip komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.Tooltip(document.getElementById('Tooltip-ID'));
+{% endhighlight %}
+
 ## Varianter
 
 {:#placering-af-tooltip}
