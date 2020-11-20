@@ -3,9 +3,7 @@ permalink: /privatlivspolitik-cookies/
 redirect_from:
 - /omdesignsystemet/privatlivspolitik-cookies/
 - /privatlivspolitik/
-category: Faellesskab_category
-subcategory: Fællesskab
-layout: styleguide
+layout: styleguide-nosidebar
 title: Privatlivspolitik og cookies
 description: Erhvervsstyrelsen behandler de oplysninger, du giver os eller vi indsamler om dig, i overensstemmelse med gældende regler.
 tags:
