@@ -1,12 +1,14 @@
 ---
-permalink: "/omdesignsystemet/governance/"
+permalink: "/faellesskab/samarbejdsforum/governance/"
+parentlink: "/faellesskab/samarbejdsforum/"
 redirect_from:
 - "/omdesignsystemet/fds-teamet/"
 - "/omdesignsystemet/styregruppe/"
+- "/omdesignsystemet/governance/"
 layout: styleguide
 title: Governance
-category: Om_designsystemet_category
-subcategory: Om designsystemet
+category: Faellesskab_category
+subcategory: Fællesskab
 description: "Det Fælles Designsystem (FDS) er bygget op omkring en agil governancemodel, som løbende bliver evalueret og tilpasset efter behov og ønsker fra de samarbejdende myndigheder og styregruppen for FDS."
 tags:
 ---

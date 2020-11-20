@@ -1,10 +1,12 @@
 ---
-permalink: /omdesignsystemet/nyhedsmail/afmeld/
+permalink: /faellesskab/nyhedsmail/afmeld/
 parentlink: /omdesignsystemet/nyhedsmail/
+redirect_from:
+- /omdesignsystemet/nyhedsmail/afmeld/
 layout: styleguide
 title: Afmeld nyhedsmail
-category: Om_designsystemet_category
-subcategory: Om designsystemet
+category: Faellesskab_category
+subcategory: Fællesskab
 description: "Afmeld nyhedsmails fra Det Fælles Designsystem"
 tags:
 ---
@@ -25,7 +27,7 @@ tags:
         </div>
         <button id="Frameld" class="button button-primary mt-9" type="button" name="Tilmeld" title="Tilmeld" value="Tilmeld">Afmeld</button>
         <p class="mt-7 pt-0">
-        <a href="/omdesignsystemet/nyhedsmail/">Tilmeld</a>
+        <a href="/faellesskab/nyhedsmail/">Tilmeld</a>
         </p>
     </form>
 </div>

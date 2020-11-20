@@ -57,7 +57,7 @@ Oplysningerne i forbindelse med din tilmelding til at modtage nyhedsmail vil bli
 ### Retten til at trække samtykke tilbage
 Du har til enhver tid ret til at trække dit samtykke tilbage, konsekvensen heraf vil være at du ikke længere kan modtage nyhedsbrev fra Det Fælles Designsystem.
 
-Ønsker du således at afmelde et eller flere af dine nyhedsabonnementer, kan du framelde dig/opdatere dine abonnementer via linket nederst på <a href="/omdesignsystemet/nyhedsmail/">tilmeldingssiden</a>. Du vil derefter ikke modtage nyheder fra det pågældende abonnement.
+Ønsker du således at afmelde et eller flere af dine nyhedsabonnementer, kan du framelde dig/opdatere dine abonnementer via linket nederst på <a href="/faellesskab/nyhedsmail/">tilmeldingssiden</a>. Du vil derefter ikke modtage nyheder fra det pågældende abonnement.
 
 Hvis du vælger at trække dit samtykke tilbage, påvirker det ikke lovligheden af vores behandling af dine personoplysninger på baggrund af dit tidligere meddelte samtykke og op til tidspunktet for tilbagetrækningen. Hvis du tilbagetrækker dit samtykke, har det derfor først virkning fra dette tidspunkt.
 

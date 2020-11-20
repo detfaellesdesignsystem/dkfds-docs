@@ -1,10 +1,10 @@
 ---
-permalink: /omdesignsystemet/nyhedsmail/tilmeldt/
-parentlink: /omdesignsystemet/nyhedsmail/
+permalink: /faellesskab/nyhedsmail/tilmeldt/
+parentlink: /faellesskab/nyhedsmail/
 layout: styleguide
 title: Tilmelding til nyhedsmail
-category: Om_designsystemet_category
-subcategory: Om designsystemet
+category: Faellesskab_category
+subcategory: Fællesskab
 description: "Tilmelding til nyhedsmail fra Det Fælles Designsystem"
 tags:
 ---
@@ -14,4 +14,4 @@ tags:
     </div>
 </div>
 
-<a href="/omdesignsystemet/nyhedsmail/">Tilmeld endnu en mailadresse</a>
+<a href="/faellesskab/nyhedsmail/">Tilmeld endnu en mailadresse</a>

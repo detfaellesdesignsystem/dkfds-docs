@@ -1,10 +1,10 @@
 ---
-permalink: /omdesignsystemet/privatlivspolitik-cookies/
+permalink: /privatlivspolitik-cookies/
 redirect_from:
+- /omdesignsystemet/privatlivspolitik-cookies/
 - /privatlivspolitik/
-- /privatlivspolitik-cookies/
-category: Om_designsystemet_category
-subcategory: Om designsystemet
+category: Faellesskab_category
+subcategory: Fællesskab
 layout: styleguide
 title: Privatlivspolitik og cookies
 description: Erhvervsstyrelsen behandler de oplysninger, du giver os eller vi indsamler om dig, i overensstemmelse med gældende regler.

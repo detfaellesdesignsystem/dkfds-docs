@@ -1,9 +1,11 @@
 ---
-permalink: /omdesignsystemet/kontakt-support/
+permalink: /faellesskab/kontakt-support/
+redirect_from:
+- /omdesignsystemet/kontakt-support/
 layout: styleguide
 title: Kontakt og support
-category: Om_designsystemet_category
-subcategory: Om designsystemet
+category: Faellesskab_category
+subcategory: Fællesskab
 description: "Kontakt os via Github eller på mail."
 tags:
 ---   

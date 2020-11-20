@@ -1,15 +1,17 @@
 ---
-permalink: "/omdesignsystemet/"
+permalink: "/faellesskab/"
+redirect_from:
+- /omdesignsystemet/
+- /omdesignsystemet/gennemgang/
 layout: styleguide
-title: Om designsystemet
-category: Om_designsystemet_category
+title: Fællesskab
+category: Faellesskab_category
 description: Det Fælles Designsystem er inspireret af og bygger på et fundament af
   international best practices.
 tags: []
 lead: Det Fælles Designsystem er udviklet for at sikre en ensartet funktionalitet
   og design i selvbetjeningsløsninger på tværs af myndigheder. Det skaber genkendelse
   for brugerne af løsningerne og gør det nemmere for dem at foretage selvbetjening.
-redirect_from: []
 subcategory: ''
 anchor: false
 subnav: []

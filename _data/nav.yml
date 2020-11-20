@@ -5,7 +5,7 @@ primary:
   - href: /eksempler/
   - href: /kode/
   - href: /krav/
-  - href: /omdesignsystemet/
+  - href: /faellesskab/
 
 #Primary menu on mobile:
 mobile:
@@ -19,8 +19,8 @@ mobile:
     categorynav: 'Kode_category'
   - href: /krav/
     categorynav: 'Krav_category'
-  - href: /omdesignsystemet/
-    categorynav: 'Om_designsystemet_category'
+  - href: /faellesskab/
+    categorynav: 'Faellesskab_category'
 
 #Left menu for krav-category
 Krav_category:
@@ -161,15 +161,15 @@ Eksempler_category:
   - href: /eksempler/opsummeringsside/
   - href: /eksempler/kvittering/
 
-Om_designsystemet_category:
-  - href: /omdesignsystemet/samarbejdsforum/
-  - href: /omdesignsystemet/nyhedsmail/
-  - href: /omdesignsystemet/kontakt-support/
-  - href: /omdesignsystemet/governance/
-  - href: /omdesignsystemet/gennemgang/
-  - href: /omdesignsystemet/visuelledesign/
-  - href: /omdesignsystemet/privatlivspolitik-cookies/
-  - href: /omdesignsystemet/releases/
+Faellesskab_category:
+  - href: /faellesskab/samarbejdsforum/
+    categorynav: 'Samarbejdsforum_category'
+  - href: /faellesskab/nyhedsmail/
+  - href: /faellesskab/kontakt-support/
+  - href: /faellesskab/releases/
+
+Samarbejdsforum_category:
+  - href: /faellesskab/samarbejdsforum/governance/
 
 Eksempelloesninger_category:
 - href: /pages/eksempler/aktindsigt/aktindsigt-1/

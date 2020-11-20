@@ -1,9 +1,11 @@
 ---
-permalink: "/omdesignsystemet/releases/"
+permalink: "/faellesskab/releases/"
+redirect_from:
+- "/omdesignsystemet/releases/"
 layout: styleguide
 title: Release notes
-category: Om_designsystemet_category
-subcategory: Om designsystemet
+category: Faellesskab_category
+subcategory: Fællesskab
 description: Release notes for Det Fælles Designsystem
 tags:
 - '1'
