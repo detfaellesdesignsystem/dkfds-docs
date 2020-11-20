@@ -83,7 +83,6 @@ Komponenter_category:
   - href: /komponenter/fejlmeddelelser/
   - href: /komponenter/fejlopsummering/
   - href: /komponenter/felter/
-  - href: /komponenter/fil-upload/
   - href: /komponenter/footers/
   - href: /komponenter/formular/
   - href: /komponenter/funktionslink/
@@ -104,6 +103,7 @@ Komponenter_category:
   - href: /komponenter/tjekboks/
   - href: /komponenter/tooltip/
   - href: /komponenter/trinindikatorer/
+  - href: /komponenter/fil-upload/
 
 Kode_category:
 - href: /kode/implementering/
@@ -134,7 +134,6 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/fejlmeddelelser/
 - href: /kode/komponenter/fejlopsummering/
 - href: /kode/komponenter/felter/
-- href: /kode/komponenter/fil-upload/
 - href: /kode/komponenter/footers/
 - href: /kode/komponenter/formular/
 - href: /kode/komponenter/funktionslink/
@@ -155,6 +154,7 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/tjekboks/
 - href: /kode/komponenter/tooltip/
 - href: /kode/komponenter/trinindikatorer/
+- href: /kode/komponenter/fil-upload/
 
 Eksempler_category:
   - href: /eksempler/selvbetjeningsloesninger/
