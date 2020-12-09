@@ -586,6 +586,24 @@
 
   
 
+<a href="/komponenter/datovaelger/" role="menuitem" 
+  class="nav-link">
+  Datovælger
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
 <a href="/komponenter/detaljer/" role="menuitem" 
   class="nav-link">
   Detaljer
@@ -2458,6 +2476,24 @@ let searchIndex = [
 
 
 {
+"url": "/komponenter/datovaelger/",
+"title": "Datovælger",
+"category": "Komponenter_category",
+"subcategory": "Komponenter",
+"lead": "Ét felt med knap, hvor man kan vælge en dato",
+"tags": [''],
+"layout": "styleguide",
+"content" : "Anvendes tilNår der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.Anvendes ikke tilDatoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten datoangivelse  Interval      Definér et interval af datoer det er mulighed at vælge fra.                              Åbn dette eksempel i et nyt vindue: date-picker-interval                                        Dato for aftale                      Fast værdi      Definér et en dato som udgangspunkt. Hvis datoen ikke defineres vil udgangspunktet være dags dato.                              Åbn dette eksempel i et nyt vindue: date-picker-default-date                                        Dato for aftale                    ",
+"description" : "Brug denne datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid",
+"subnav": [""]
+},
+
+
+
+
+
+
+{
 "url": "/komponenter/detaljer/",
 "title": "Detaljer",
 "category": "Komponenter_category",
@@ -3258,6 +3294,24 @@ let searchIndex = [
 "content" : "                        Åbn dette eksempel i et nyt vindue: date-input                                        Indsendelsesfrist        For eksempel:            05 12 2018        Fejl:                                     Dag                                                        Måned                                                        År                                                Eksempler og retningslinjer    Retningslinjer    EksemplerInstallationHTML Struktur        &amp;lt;div class=&quot;form-group  &quot;&amp;gt;    &amp;lt;fieldset aria-dsecribedby=&quot;example-date-field-hint &quot;&amp;gt;        &amp;lt;legend class=&quot;form-label&quot;&amp;gt;Indsendelsesfrist&amp;lt;/legend&amp;gt;        &amp;lt;span class=&quot;form-hint&quot; id=&quot;example-date-field-hint&quot;&amp;gt;For eksempel:            05 12 2018&amp;lt;/span&amp;gt;        &amp;lt;span class=&quot;form-error-message  d-none&quot;            id=&quot;example-date-field-error&quot;&amp;gt;&amp;lt;span                class=&quot;sr-only&quot;&amp;gt;Fejl:&amp;lt;/span&amp;gt; &amp;lt;/span&amp;gt;        &amp;lt;div class=&quot;date-group js-calendar-group mt-3&quot;&amp;gt;            &amp;lt;div class=&quot;form-group form-group-day&quot;&amp;gt;                &amp;lt;label class=&quot;form-label&quot; for=&quot;date-day&quot;&amp;gt;Dag&amp;lt;/label&amp;gt;                &amp;lt;input class=&quot;form-input js-calendar-day-input&quot;                    id=&quot;date-day&quot; value=&quot;&quot; type=&quot;tel&quot; data-min=&quot;1&quot;                    data-max=&quot;31&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;                    data-input-regex=&quot;^[0-9]{0,2}$&quot;                    title=&quot;Indskriv dag på måneden som tal&quot; /&amp;gt;            &amp;lt;/div&amp;gt;            &amp;lt;div class=&quot;form-group form-group-month&quot;&amp;gt;                &amp;lt;label class=&quot;form-label&quot; for=&quot;date-month&quot;&amp;gt;Måned&amp;lt;/label&amp;gt;                &amp;lt;input class=&quot;form-input js-calendar-month-input&quot;                    id=&quot;date-month&quot; value=&quot;&quot; type=&quot;tel&quot; data-min=&quot;1&quot;                    data-max=&quot;12&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;                    data-input-regex=&quot;^[0-9]{0,2}$&quot;                    title=&quot;Indskriv månedens nummer&quot; /&amp;gt;            &amp;lt;/div&amp;gt;            &amp;lt;div class=&quot;form-group form-group-year &quot;&amp;gt;                &amp;lt;label class=&quot;form-label&quot; for=&quot;date-year&quot;&amp;gt;År&amp;lt;/label&amp;gt;                &amp;lt;input class=&quot;form-input js-calendar-year-input&quot;                    id=&quot;date-year&quot; value=&quot;&quot; type=&quot;tel&quot; data-min=&quot;1900&quot;                    data-max=&quot;3000&quot; maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;                    data-input-regex=&quot;^[0-9]{0,4}$&quot;                    title=&quot;Indskriv årstal&quot; /&amp;gt;            &amp;lt;/div&amp;gt;        &amp;lt;/div&amp;gt;    &amp;lt;/fieldset&amp;gt;&amp;lt;/div&amp;gt;      Anvend ikke JavaScript til automatisk at flytte fokus fra felt til felt, da det gør det svært for tastatur-brugere at navigere i formularen.  Dato-komponenten består af 2 dele: 3 input-felter og en datepicker.  Attributten data-input-regex håndteres af JavaScript via dkfds.js filen, som derfor bør importeres i projektet.Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere end 2 tal for dag og måned, og 4 tal i år-inputtet derudover  Eksempel for dag og måned: ` data-input-regex=”^[0-9]{0,2}$”`  For at initialisere dato-komponenten skal .date-group-elementet have klassen .js-calendar-group. Derudover skal de tre inputfelter have følgende klasser:          Dag input: .js-calendar-day-input      Måned input: .js-calendar-month-input      År input: .js-calendar-year-input        Ved fejl, tilføj da en hjælpsom fejlmeddelelse over felterne i elementet &amp;lt;span class=&quot;form-error-message&quot; id=&quot;form-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;.  Tilføj klassen form-error på form-group div elementet, når der vises en fejlmeddelelse.VarianterFejlmeddelelse                        Vis dette eksempel i et nyt vindue                    &amp;lt;div class=&quot;form-group  form-error  &quot;&amp;gt;    &amp;lt;fieldset        aria-dsecribedby=&quot;example-date-field-hint example-date-field-error&quot;&amp;gt;        &amp;lt;legend class=&quot;form-label&quot;&amp;gt;Datoangivelse med fejl&amp;lt;/legend&amp;gt;        &amp;lt;span class=&quot;form-hint&quot; id=&quot;example-date-field-hint&quot;&amp;gt;For eksempel:            05 12 2018&amp;lt;/span&amp;gt;        &amp;lt;span class=&quot;form-error-message &quot;            id=&quot;example-date-field-error&quot;&amp;gt;&amp;lt;span                class=&quot;sr-only&quot;&amp;gt;Fejl:&amp;lt;/span&amp;gt; Skriv en kort fejlmeddelelse,            der hjælper brugeren videre&amp;lt;/span&amp;gt;        &amp;lt;div class=&quot;date-group js-calendar-group mt-3&quot;&amp;gt;            &amp;lt;div class=&quot;form-group form-group-day&quot;&amp;gt;                &amp;lt;label class=&quot;form-label&quot; for=&quot;date-day&quot;&amp;gt;Dag&amp;lt;/label&amp;gt;                &amp;lt;input class=&quot;form-input js-calendar-day-input&quot;                    id=&quot;date-day&quot; value=&quot;01&quot; type=&quot;tel&quot; data-min=&quot;1&quot;                    data-max=&quot;31&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;                    data-input-regex=&quot;^[0-9]{0,2}$&quot;                    title=&quot;Indskriv dag på måneden som tal&quot; /&amp;gt;            &amp;lt;/div&amp;gt;            &amp;lt;div class=&quot;form-group form-group-month&quot;&amp;gt;                &amp;lt;label class=&quot;form-label&quot; for=&quot;date-month&quot;&amp;gt;Måned&amp;lt;/label&amp;gt;                &amp;lt;input class=&quot;form-input js-calendar-month-input&quot;                    id=&quot;date-month&quot; value=&quot;12&quot; type=&quot;tel&quot; data-min=&quot;1&quot;                    data-max=&quot;12&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;                    data-input-regex=&quot;^[0-9]{0,2}$&quot;                    title=&quot;Indskriv månedens nummer&quot; /&amp;gt;            &amp;lt;/div&amp;gt;            &amp;lt;div class=&quot;form-group form-group-year &quot;&amp;gt;                &amp;lt;label class=&quot;form-label&quot; for=&quot;date-year&quot;&amp;gt;År&amp;lt;/label&amp;gt;                &amp;lt;input class=&quot;form-input js-calendar-year-input&quot;                    id=&quot;date-year&quot; value=&quot;2030&quot; type=&quot;tel&quot; data-min=&quot;1900&quot;                    data-max=&quot;3000&quot; maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;                    data-input-regex=&quot;^[0-9]{0,4}$&quot;                    title=&quot;Indskriv årstal&quot; /&amp;gt;            &amp;lt;/div&amp;gt;        &amp;lt;/div&amp;gt;    &amp;lt;/fieldset&amp;gt;&amp;lt;/div&amp;gt;    ",
 "description" : "Dokumentation på implementering af datofelt.",
 "subnav": ["Fejlmeddelelse",""]
+},
+
+
+
+
+
+
+{
+"url": "/kode/komponenter/datovaelger/",
+"title": "Datovælger",
+"category": "Kode_category",
+"subcategory": "Kode",
+"lead": "",
+"tags": [''],
+"layout": "styleguide",
+"content" : "                        Åbn dette eksempel i et nyt vindue: date-picker                                        Dato for aftale                Eksempler og retningslinjer    Retningslinjer    EksemplerInstallationHTML Struktur        &amp;lt;div class=&quot;form-group&quot;&amp;gt;    &amp;lt;label class=&quot;form-label &quot; for=&quot;datepicker-example1&quot;&amp;gt;        Dato for aftale    &amp;lt;/label&amp;gt;    &amp;lt;div class=&quot;date-picker&quot;&amp;gt;&amp;lt;input class=&quot;form-input &quot; required            id=&quot;datepicker-example1&quot; value=&quot;&quot; name=&quot;appointment-date&quot;            type=&quot;text&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;    JavascriptAccordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af DKFDS.init() eller initiere komponenten manuelt med nedenstående:new DKFDS.Datepicker(document.getElementById(&#39;Datepicker-ID&#39;));Events            Event key      Element      Beskrivelse                  fds.accordion.open      button.accordion-button      Når en accordion bliver foldet ud, bliver eventet fds.accordion.open udløst på accordion knappen              fds.accordion.close      button.accordion-button      Når en accordion bliver foldet ind, bliver eventet fds.accordion.close udløst på accordion knappen      VarianterInterval                        Vis dette eksempel i et nyt vindue                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;    &amp;lt;label class=&quot;form-label &quot; for=&quot;datepicker-example2&quot;&amp;gt;        Dato for aftale    &amp;lt;/label&amp;gt;    &amp;lt;div class=&quot;date-picker&quot; data-min-date=&quot;2020-12-01&quot;        data-max-date=&quot;2020-12-31&quot;&amp;gt;&amp;lt;input class=&quot;form-input &quot; required            id=&quot;datepicker-example2&quot; value=&quot;&quot; name=&quot;appointment-date&quot;            type=&quot;text&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;    Fast værdi                        Vis dette eksempel i et nyt vindue                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;    &amp;lt;label class=&quot;form-label &quot; for=&quot;datepicker-example3&quot;&amp;gt;        Dato for aftale    &amp;lt;/label&amp;gt;    &amp;lt;div class=&quot;date-picker&quot; data-default-date=&quot;2020-12-01&quot;&amp;gt;&amp;lt;input            class=&quot;form-input &quot; required id=&quot;datepicker-example3&quot; value=&quot;&quot;            name=&quot;appointment-date&quot; type=&quot;text&quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;    ",
+"description" : "Dokumentation på implementering af datofelt.",
+"subnav": ["Interval",""]
 },
 
 

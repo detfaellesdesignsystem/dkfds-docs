@@ -609,6 +609,24 @@
 
   
 
+<a href="/komponenter/datovaelger/" role="menuitem" 
+  class="nav-link">
+  Datovælger
+</a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="  " role="none">
+
+
+  
+
 <a href="/komponenter/detaljer/" role="menuitem" 
   class="nav-link">
   Detaljer
@@ -1383,6 +1401,51 @@
   class="nav-link">
   Datoangivelse
 </a>
+
+</li>
+
+    
+
+  
+    
+      
+
+<li class="current active has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/komponenter/datovaelger/" role="menuitem" aria-current="page"
+  class="nav-link">
+  Datovælger
+</a>
+
+  
+    
+    
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+    <ul class="sidenav-sub_list" role="menu">
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#interval"  role="menuitem">Interval</a>
+</li>
+
+    
+
+</ul>
+    
+  
 
 </li>
 
@@ -2450,6 +2513,51 @@
     
       
 
+<li class="current active has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/komponenter/datovaelger/" role="menuitem" aria-current="page"
+  class="nav-link">
+  Datovælger
+</a>
+
+  
+    
+    
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+    <ul class="sidenav-sub_list" role="menu">
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#interval"  role="menuitem">Interval</a>
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+  
+    
+      
+
 <li class="  " role="none">
 
 
@@ -3135,128 +3243,110 @@
 
 <h2>Eksempler og retningslinjer</h2>
 <ul class="nobullet-list">
-    <li><a href="/komponenter/dato-felt/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/dato-felt/">Eksempler</a></li>
+    <li><a href="/komponenter/datovaelger/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/datovaelger/">Eksempler</a></li>
 </ul>
 
 <h2>Installation</h2>
 
 <h3>HTML Struktur</h3>
 
-<div class="component-preview component-preview-code  component-code-date-input" aria-label="">
+<div class="component-preview component-preview-code  component-code-date-picker" aria-label="">
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group  "</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;fieldset</span> <span class="na">aria-dsecribedby=</span><span class="s">"example-date-field-hint "</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Indsendelsesfrist<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"example-date-field-hint"</span><span class="nt">&gt;</span>For eksempel:
-            05 12 2018<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message  d-none"</span>
-            <span class="na">id=</span><span class="s">"example-date-field-error"</span><span class="nt">&gt;&lt;span</span>
-                <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group mt-3"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-day"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span>
-                    <span class="na">id=</span><span class="s">"date-day"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1"</span>
-                    <span class="na">data-max=</span><span class="s">"31"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
-                    <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                    <span class="na">title=</span><span class="s">"Indskriv dag på måneden som tal"</span> <span class="nt">/&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-month"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-month-input"</span>
-                    <span class="na">id=</span><span class="s">"date-month"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1"</span>
-                    <span class="na">data-max=</span><span class="s">"12"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
-                    <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                    <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span> <span class="nt">/&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-year"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
-                    <span class="na">id=</span><span class="s">"date-year"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1900"</span>
-                    <span class="na">data-max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
-                    <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
-                    <span class="na">title=</span><span class="s">"Indskriv årstal"</span> <span class="nt">/&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"datepicker-example1"</span><span class="nt">&gt;</span>
+        Dato for aftale
+    <span class="nt">&lt;/label&gt;</span>
 
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-picker"</span><span class="nt">&gt;&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span>
+            <span class="na">id=</span><span class="s">"datepicker-example1"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"appointment-date"</span>
+            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
     </div>
 </div>
 
-<ul>
-  <li>Anvend ikke JavaScript til automatisk at flytte fokus fra felt til felt, da det gør det svært for tastatur-brugere at navigere i formularen.</li>
-  <li>Dato-komponenten består af 2 dele: 3 input-felter og en datepicker.</li>
-  <li>Attributten <code class="highlighter-rouge">data-input-regex</code> håndteres af JavaScript via dkfds.js filen, som derfor bør importeres i projektet.
-Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere end 2 tal for dag og måned, og 4 tal i år-inputtet derudover  Eksempel for dag og måned: ` data-input-regex=”^[0-9]{0,2}$”`</li>
-  <li>For at initialisere dato-komponenten skal <code class="highlighter-rouge">.date-group</code>-elementet have klassen <code class="highlighter-rouge">.js-calendar-group</code>. Derudover skal de tre inputfelter have følgende klasser:
-    <ul>
-      <li>Dag input: <code class="highlighter-rouge">.js-calendar-day-input</code></li>
-      <li>Måned input: <code class="highlighter-rouge">.js-calendar-month-input</code></li>
-      <li>År input: <code class="highlighter-rouge">.js-calendar-year-input</code></li>
-    </ul>
-  </li>
-  <li>Ved fejl, tilføj da en hjælpsom fejlmeddelelse over felterne i elementet <code class="highlighter-rouge">&lt;span class="form-error-message" id="form-error-message-input-error" role="alert"&gt;</code>.</li>
-  <li>Tilføj klassen <code class="highlighter-rouge">form-error</code> på <code class="highlighter-rouge">form-group</code> <code class="highlighter-rouge">div</code> elementet, når der vises en fejlmeddelelse.</li>
-</ul>
+<h3>Javascript</h3>
+<p>Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code class="highlighter-rouge">DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="k">new</span> <span class="nx">DKFDS</span><span class="p">.</span><span class="nx">Datepicker</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'Datepicker-ID'</span><span class="p">));</span></code></pre></figure>
+
+<h4>Events</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Event key</th>
+      <th>Element</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fds.accordion.open</td>
+      <td><code class="highlighter-rouge">button.accordion-button</code></td>
+      <td>Når en accordion bliver foldet ud, bliver eventet <code class="highlighter-rouge">fds.accordion.open</code> udløst på accordion knappen</td>
+    </tr>
+    <tr>
+      <td>fds.accordion.close</td>
+      <td><code class="highlighter-rouge">button.accordion-button</code></td>
+      <td>Når en accordion bliver foldet ind, bliver eventet <code class="highlighter-rouge">fds.accordion.close</code> udløst på accordion knappen</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Varianter</h2>
 
-<h3 id="fejlmeddelelse">Fejlmeddelelse</h3>
+<h3 id="interval">Interval</h3>
 
-<div class="component-preview component-preview-code  component-code-date-input-error" aria-label="">
+<div class="component-preview component-preview-code  component-code-date-picker-interval" aria-label="">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/date-input-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/date-picker-interval/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
         
     </div>
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group  form-error  "</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;fieldset</span>
-        <span class="na">aria-dsecribedby=</span><span class="s">"example-date-field-hint example-date-field-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Datoangivelse med fejl<span class="nt">&lt;/legend&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"example-date-field-hint"</span><span class="nt">&gt;</span>For eksempel:
-            05 12 2018<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-error-message "</span>
-            <span class="na">id=</span><span class="s">"example-date-field-error"</span><span class="nt">&gt;&lt;span</span>
-                <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Fejl:<span class="nt">&lt;/span&gt;</span> Skriv en kort fejlmeddelelse,
-            der hjælper brugeren videre<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group mt-3"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-day"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span>
-                    <span class="na">id=</span><span class="s">"date-day"</span> <span class="na">value=</span><span class="s">"01"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1"</span>
-                    <span class="na">data-max=</span><span class="s">"31"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
-                    <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                    <span class="na">title=</span><span class="s">"Indskriv dag på måneden som tal"</span> <span class="nt">/&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-month"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-month-input"</span>
-                    <span class="na">id=</span><span class="s">"date-month"</span> <span class="na">value=</span><span class="s">"12"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1"</span>
-                    <span class="na">data-max=</span><span class="s">"12"</span> <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span>
-                    <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
-                    <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span> <span class="nt">/&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date-year"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
-                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span>
-                    <span class="na">id=</span><span class="s">"date-year"</span> <span class="na">value=</span><span class="s">"2030"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">data-min=</span><span class="s">"1900"</span>
-                    <span class="na">data-max=</span><span class="s">"3000"</span> <span class="na">maxlength=</span><span class="s">"4"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span>
-                    <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
-                    <span class="na">title=</span><span class="s">"Indskriv årstal"</span> <span class="nt">/&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"datepicker-example2"</span><span class="nt">&gt;</span>
+        Dato for aftale
+    <span class="nt">&lt;/label&gt;</span>
 
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-picker"</span> <span class="na">data-min-date=</span><span class="s">"2020-12-01"</span>
+        <span class="na">data-max-date=</span><span class="s">"2020-12-31"</span><span class="nt">&gt;&lt;input</span> <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span>
+            <span class="na">id=</span><span class="s">"datepicker-example2"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"appointment-date"</span>
+            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3>Fast værdi</h3>
+
+<div class="component-preview component-preview-code  component-code-date-picker-default-date" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/date-picker-default-date/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"datepicker-example3"</span><span class="nt">&gt;</span>
+        Dato for aftale
+    <span class="nt">&lt;/label&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-picker"</span> <span class="na">data-default-date=</span><span class="s">"2020-12-01"</span><span class="nt">&gt;&lt;input</span>
+            <span class="na">class=</span><span class="s">"form-input "</span> <span class="na">required</span> <span class="na">id=</span><span class="s">"datepicker-example3"</span> <span class="na">value=</span><span class="s">""</span>
+            <span class="na">name=</span><span class="s">"appointment-date"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
