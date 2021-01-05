@@ -1,0 +1,58 @@
+I"<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Brug funktionsikoner til at tilbyde brugeren systemfunktionalitet, som fx: print, pdf, indstillinger, etc. Funktionalitet, der ikke er essentiel for brugerens umiddelbare gennemførsel af løsningen.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Brug ikke funktionsikoner til generel navigation mellem sider eller til næste trin. Brug da standard links og primærknap i stedet. Anvend ikke funktionslinks til navigation til forrige side, anvend da tilbage-linket.</p>
+
+<p>Brug sprogvælgeren til valg af sprog.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Systemfunktionalitet er fx:</p>
+
+<ul>
+  <li>at aktivere browserens printfunktionalitet</li>
+  <li>at vælge en dato i en popover kalender</li>
+  <li>at generere en pdf</li>
+  <li>at ændre indstillinger i løsningen</li>
+  <li>at åbne operativsystemets mailklient</li>
+  <li>at gemme en kladde i løsningen</li>
+  <li>m.fl…</li>
+</ul>
+
+<p>Funktionsikoner bør akkompagneres af et ord, der beskriver funktionaliteten. For næsten alle ikoner gælder det, at betydningen af disse ikke er entydigt givet og skal du vælge i mellem kun et ikon eller kun et ord, vil ordet altid være det bedste og sikreste valg.</p>
+
+<p>Enkelte ikoner kan stå alene, hvis der fx skal spares på pladsen i en tabel. Det drejer sig fx om: slet, rediger, print, pdf og gem, der er relativt konventionelle ikoner.</p>
+
+<p>Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennemføre løsningen uden brug af funktionaliteten, bør man vælge at lave en tertiærknap med et ikon i, i stedet for et funktionslink.</p>
+
+<div class=" component-preview-function-link-dos-donts" aria-label="Funktionslink do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Funktionslinks-do.svg" alt="Eksempel på, hvordan funktionslinks kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Placér funktionslinks så som ”Print”, ”Del”, ”Åbn som pdf” mv. øverst på websiden, hvor brugerne kan se dem, før de begynder at interagere med indholdet. Brugerne har ikke behov for at printe en side, når de har læst den. Undersøgelser viser også, at brugerne ofte deler sider, inden de læser dem (Manjoo, 2013).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Funktionslinks-dont.svg" alt="Eksempel på, hvordan funktionslinks ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undlad at placere funktionslinks i bunden af sider. Undgå også ukonventionelle placeringer, hvor det måske slet ikke falder brugerne ind at kigge efter funktionslinkene (Farrell, 2015).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li><a href="https://slate.com/technology/2013/06/how-people-read-online-why-you-wont-finish-this-article.html" class="icon-link">Farhad Manjoo: You Won’t Finish This Article (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.nngroup.com/articles/utility-navigation/" class="icon-link">Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+:ET

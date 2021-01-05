@@ -1,0 +1,30 @@
+I"Ú
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;fieldset aria-describedby=&quot;example-checkbox-error&quot;&gt;
+        &lt;legend class=&quot;h5&quot;&gt;Tjekboks med fejl&lt;/legend&gt;
+        &lt;span class=&quot;form-error-message&quot; id=&quot;example-checkbox-error&quot;&gt;&lt;span
+                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; HjÃ¦lpsom fejlmeddelelse&lt;/span&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;checkboxerror1&quot; type=&quot;checkbox&quot;
+                    name=&quot;checkboxerror&quot; value=&quot;1&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;checkboxerror1&quot; class=&quot;&quot;&gt;Tjekboks 1&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;checkboxerror2&quot; type=&quot;checkbox&quot;
+                    name=&quot;checkboxerror[]&quot; value=&quot;2&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;checkboxerror2&quot; class=&quot;&quot;&gt;Tjekboks 2&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;checkboxerror3&quot; type=&quot;checkbox&quot;
+                    name=&quot;checkboxerror[]&quot; value=&quot;3&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;checkboxerror3&quot; class=&quot;&quot;&gt;Tjekboks 3&lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

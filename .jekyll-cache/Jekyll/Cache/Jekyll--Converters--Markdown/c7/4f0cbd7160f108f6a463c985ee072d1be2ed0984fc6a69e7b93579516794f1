@@ -1,0 +1,53 @@
+I"V	<p>Headeren identificerer portal, ansvarlig myndighed og den bruger, der er logget ind med NemLog-in. Headeren fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.</p>
+
+<p>Headeren er ens på tværs af trin og undersider i en given selvbetjeningsløsning. Den er således et “ankerpunkt”, som brugeren altid kan vende tilbage til og orientere sig ved.</p>
+
+<p><a href="/komponenter/headers/">Se header-komponenten</a></p>
+
+<p>En header består af et antal rækker, som vist nedenfor.</p>
+
+<ul>
+  <li>Række 1 og 2 er obligatoriske</li>
+  <li>Række 3 til 5 er valgfri</li>
+</ul>
+
+<p>Når du laver en header, bør du følge disse principper:</p>
+
+<ul>
+  <li>Brug kun de nødvendige rækker</li>
+  <li>Hold altid rækkefølgen, uanset kombinationen</li>
+</ul>
+
+<p>OBS: Jo enklere navigationen er, desto bedre for brugeren.
+Brug derfor kun række 3 til 5, knapper, links og ekstra navigation, når det er absolut nødvendigt.</p>
+
+<p>Brug kun rækker 3,4,5, samt knapper, links og ekstra navigation, når det er nødvendigt.</p>
+
+<div><img src="/assets/img/descriptionimages/header-opbygning.png" alt="Viser opbygningen af designsystemets header" /></div>
+
+<h3 class="h5">Række 1 (obligatorisk)</h3>
+
+<p>Portal-logo, NemLog-in-oplysninger og ”Log af” knap.</p>
+
+<h3 class="h5">Række 2 (obligatorisk)</h3>
+
+<p>Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt support/kontakt oplysninger.</p>
+
+<h3 class="h5">Række 3 (frivillig)</h3>
+
+<p>Sidenavigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.</p>
+
+<h3 class="h5">Række 4 (frivillig)</h3>
+
+<p>Flere sorteringsmuligheder, eventuelt ekstramenu, eventuelt knapper.</p>
+
+<h3 class="h5">Række 5 (frivillig)</h3>
+
+<p>Funktionslinks (igangsætter system- eller OS-funktionalitet, fx gem, print osv.)</p>
+
+<p>En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servicere både simple og komplekse løsninger. Den er også kompleks at anvende for brugerne. Du bør derfor udgangspunkt anvende færre end fem rækker i din header.</p>
+
+<h3 class="h5">Links</h3>
+<p><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Tilgængelighed: sidestruktur og header<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+
+:ET

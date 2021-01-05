@@ -1,0 +1,31 @@
+I"å
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend class=&quot;h5&quot;&gt;Stor tjekboks (anbefalet)&lt;/legend&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;large1&quot; type=&quot;checkbox&quot; name=&quot;checkbox-large[]&quot;
+                    value=&quot;1&quot; class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;large1&quot; class=&quot;&quot;&gt;Tjekboks 1&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;large2&quot; type=&quot;checkbox&quot; name=&quot;checkbox-large[]&quot;
+                    value=&quot;2&quot; class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;large2&quot; class=&quot;&quot;&gt;Tjekboks 2&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;large3&quot; type=&quot;checkbox&quot; name=&quot;checkbox-large[]&quot;
+                    value=&quot;3&quot; class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;large3&quot; class=&quot;&quot;&gt;Tjekboks 3&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;large4&quot; type=&quot;checkbox&quot; name=&quot;checkbox-large[]&quot;
+                    value=&quot;4&quot; class=&quot;form-checkbox  checkbox-large &quot;
+                    disabled /&gt;
+                &lt;label for=&quot;large4&quot; class=&quot;&quot;&gt;Tjekboks 4&lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

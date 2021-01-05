@@ -1,0 +1,10 @@
+I"§
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Informativ besked&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

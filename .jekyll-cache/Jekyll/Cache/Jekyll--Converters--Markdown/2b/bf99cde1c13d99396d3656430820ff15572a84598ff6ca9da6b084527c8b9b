@@ -1,0 +1,30 @@
+I"E<h3>Design</h3>
+
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Skrifttype</th>
+      <th>Skriftstørrelse</th>
+      <th>Tekst tykkelse (font-weight)</th>
+      <th>Tekstfarve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IBM Plex Sans</td>
+      <td>20px</td>
+      <td>400</td>
+      <td>#1a1a1a</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="manchet-tekst-retningslinjer">Retningslinjer</h3>
+
+<ul>
+  <li>Hold manchetteksten kort og præcis, gerne max tre linjer.</li>
+  <li>Manchetteksten er kun til korte introduktionstekster og ikke til lange informationstekster. Brug brødtekst og lister til yderligere informationstekster.</li>
+  <li>Brug kun manchettekst, når og hvor det er nødvendigt. Brug fx ikke manchettekst, hvis brugeren selv kan afkode siden og begynde at indtaste med det samme.</li>
+  <li>Typisk starter indtastningsflowet eller en sektion lige under manchetteksten. Hvis det understøtter brugerens gennemførelse af løsningen, kan du godt indsætte brødtekst, lister, links, o.l. efter manchetteksten.</li>
+</ul>
+:ET

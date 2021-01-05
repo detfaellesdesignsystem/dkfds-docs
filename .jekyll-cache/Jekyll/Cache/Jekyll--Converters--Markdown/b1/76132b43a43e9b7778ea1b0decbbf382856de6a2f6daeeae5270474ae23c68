@@ -1,0 +1,23 @@
+I"<p>Det Fælles Designsystem understøtter udvikling af selvbetjeningsløsninger, der er simple, brugervenlige og tilgængelige.</p>
+
+<p>Fordele ved at anvende designsystemet:</p>
+
+<ul>
+  <li>Du følger internationalt anerkendte bedste praksisser.</li>
+  <li>Du sparer tid og ressourcer, og leveringstiden for løsningen bliver hurtigere.</li>
+</ul>
+
+<div class="video-paragraph my-7">
+<div class="video-container">
+<iframe title="YouTube video om Det Fælles Designsystem" class="youtube-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sFRv0SrC9Rw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<p>Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde omkring kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.</p>
+
+<h2 class="h3">Designsystemet er til selvbetjeningsløsninger</h2>
+
+<p>Du skal anvende Det Fælles Designsystem til at udvikle selvbetjeningsløsninger, hvis det er et lovkrav at løsningen skal være obligatorisk digital eller den er rettet mod virksomheder.</p>
+
+<p><a href="/krav/borgerdk-virk/">Læs om kravene og se om du skal anvende designsystemet</a></p>
+:ET

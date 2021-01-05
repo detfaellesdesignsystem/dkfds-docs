@@ -1,0 +1,63 @@
+I"�<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Anvend kun dropdown menuer, når det er absolut nødvendigt og kun i tilfælde, hvor brugeren skal vælge mellem 7 til 15 værdier på en begrænset plads.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<ul>
+  <li>Lister med færre værdier end 7.</li>
+  <li>Lister med flere værdier end 15. I så tilfælde bør du tilbyde brugeren et felt med auto-forslag, når brugeren begynder at indtaste.</li>
+</ul>
+
+<p>Brug tjekbokse fremfor dropdown menu, hvis brugeren skal vælge mere end 1 værdi.</p>
+
+<p>Brug ikke dropdown-menu til navigation, som den ikke er velegnet til.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Dropdown menuer kræver ekstra aftestning på målgruppen pga. de kognitive udfordringer, de kan afføde.</p>
+
+<p>Undgå at lade brugerens valg i én dropdown menu påvirke indholdet i en anden. Det forvirrer mange brugere.</p>
+
+<p>Hvis du ved, at mange brugere vil vælge den samme værdi i en dropdown menu, så marker den med <code>&lt;option selected="selected"&gt;Default&lt;/option&gt;</code>. Dermed slipper brugerne for at bruge tid på at gennemsøge listen.</p>
+
+<p>Anvend ikke JavaScript til automatisk at sende den valgte værdi, men sørg for at der er en submit-knap til at sende formularen med.</p>
+
+<div class=" component-preview-dropdown-dos-donts" aria-label="Dropdown-menu do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Dropdown-menu-do.svg" alt="Eksempel på, hvordan en dropdown-menu kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Brug en dropdown-menu, når brugerne skal vælge 1 svar blandt mindst 5 gensidigt udelukkende valgmuligheder (ISO, 2012, afsnit 8.11). Formulér valgmulighederne så kort og konsistent som muligt.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Dropdown-menu-dont.svg" alt="Eksempel på, hvordan en dropdown-menu ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Skjul ikke valgmuligheder i en dropdown-menu, når der kun er nogle få, eller når der er plads til at vise valgmulighederne som radioknapper eller tjekbokse. Dropdown-menuer bør kun bruges, når der ikke er andre muligheder (Wroblewski, 2015) – fx af pladshensyn. Dropdown-menuer er ergonomisk svære at bruge og skjuler brugernes valgmuligheder.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li>ISO 9241-143: Forms (2012)</li>
+  <li><a href="https://www.lukew.com/ff/entry.asp?1950" class="icon-link">Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<section class="styleguide-child-container content" id="section-/komponenter/drop-down/drop-down-multiselect">
+  <h2 id="multiselect-og-søgning">Multiselect og søgning</h2>
+  
+  
+  <p>Vi tilbyder på nuværende tidspunkt ikke en multiselect drop-down komponent med søgefunktion, men hvis man finder eller laver en selv kan det se ud som på billedet nedenfor.</p>
+
+<div><img src="/assets/img/components/multiselect.png" class="outer-border-box" alt="Eksempel på, hvordan en multiselect dropdown kan se ud" /></div>
+
+</section>
+
+:ET

@@ -1,0 +1,305 @@
+I":<
+<div class="component-preview  component-preview-card" aria-label="Eksempel på card komponent">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/card/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: card</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="card">
+    <div class="card-header">
+        <h3 class="header-title">Eksempel på card-komponenten</h3>
+    </div>
+    <div class="card-text">
+        <p>Du kan bruge cards til at gruppere funktionalitet, der adskiller
+            sig fra sidens øvrige indhold. Cards kan placeres i et <a href="/design/grid/">grid</a>, således at de står side om
+            side.</p>
+    </div>
+
+    <div class="card-footer card-action">
+
+        <div class="action-links">
+            <a href="/komponenter/cards/">Gå til komponent</a>
+        </div>
+    </div>
+</div>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/cards/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/cards/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-card" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;
+        &lt;h3 class=&quot;header-title&quot;&gt;Eksempel på card-komponenten&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-text&quot;&gt;
+        &lt;p&gt;Du kan bruge cards til at gruppere funktionalitet, der adskiller
+            sig fra sidens øvrige indhold. Cards kan placeres i et &lt;a
+                href=&quot;/design/grid/&quot;&gt;grid&lt;/a&gt;, således at de står side om
+            side.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card-footer card-action&quot;&gt;
+
+        &lt;div class=&quot;action-links&quot;&gt;
+            &lt;a href=&quot;/komponenter/cards/&quot;&gt;Gå til komponent&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde, som i øvrigt kan ligge i en footer. Du kan frit sammensætte cards efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.</p>
+
+<p>Sæt card til fuld højde ved at tilføje klassen <code>card-align-height</code> til elementet med klassen <code>card</code>.</p>
+
+<h3>Områder</h3>
+
+<h4>Header</h4>
+
+<p>Headeren defineres med klassen <code>card-header</code>, og indeholder en titel og en understøttende tekst.</p>
+
+<p>Husk, at cards er en del af sidestrukturen, hvorfor overskrifter fortsat skal være semantisk korrekt. Hvis overskriften før cards er en h2, så bør <code>header-title</code> være h3.</p>
+
+<ul>
+  <li><code>header-titel</code> defineres som en semantisk korrekt overskrift.</li>
+  <li><code>subheader</code></li>
+</ul>
+
+<h4>Tekstområde</h4>
+
+<p>Tekstområdet defineres med klassen <code>card-text</code>, og indeholder brødtekst, som er defineret som et <code>&lt;p&gt;</code> element.</p>
+
+<h4>Indholdsområde</h4>
+
+<p>Indholdsområdet er defineret med klassen <code>card-content</code>, og kan indeholde både brødtekst og illustrationer, som har hver deres <code>&lt;div&gt;</code> med hver deres class.</p>
+<ul>
+  <li><code>content-text</code> indeholder brødtekst.</li>
+  <li><code>content</code> kan indeholde lige det du ønsker - fx illustrationer som billeder eller SVG.</li>
+</ul>
+
+<h4>Aktionsområde</h4>
+
+<p>Aktionsområdet er defineret med klassen <code>card-action</code> og kan indeholde knapper og links som har hver deres <code>&lt;div&gt;</code> med hver deres klasse.</p>
+
+<ul>
+  <li><code>action-buttons</code> kan indeholde knapper, og vil vise knapperne sidestillet.</li>
+  <li><code>action-links</code> kan indeholde en liste af links.</li>
+</ul>
+
+<h4>Footer</h4>
+<p>Footer bruges gerne i forbindelse med flere cards, som skal have samme højde, og hvor man har knapper eller links, der gerne skal flugte på tværs af cards.</p>
+
+<p>Footer defineres med klassen <code>card-footer</code>.</p>
+
+<h2>Varianter</h2>
+
+<h3 id="samme-hoejde">Samme højde</h3>
+
+<div class="component-preview component-preview-code  component-code-cards-same-height" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/cards-same-height/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container pb-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
+            &lt;div class=&quot;card card-align-height&quot;&gt;
+
+                &lt;div class=&quot;card-content&quot;&gt;
+
+                    &lt;div class=&quot;content&quot;&gt;
+                        &lt;div class=&quot;row justify-content-center&quot;&gt;
+                            &lt;div class=&quot;col-12&quot;&gt;
+                                &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
+                                &lt;div class=&#39;bg-turquoise p-6&#39;&gt;
+                                    &lt;h2 class=&#39;h5 mb-5&#39;&gt;Lorem ipsum
+                                        fordeling&lt;/h2&gt;
+                                    &lt;div class=&#39;mt-3 row&#39;&gt;
+                                        &lt;div class=&#39;col-6&#39;&gt;
+                                            &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;80%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;20&#39; width=&#39;50&#39; height=&#39;80&#39; fill=&#39;#56d4d6&#39;/&gt;&lt;/svg&gt;
+                                            &lt;p class=&#39;small-text mt-2&#39;&gt;
+                                                &lt;strong&gt;København&lt;/strong&gt;
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&#39;col-6&#39;&gt;
+                                            &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;36%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;64&#39; width=&#39;50&#39; height=&#39;36&#39; fill=&#39;#56d4d6&#39;/&gt;&lt;/svg&gt;
+                                            &lt;p class=&#39;small-text mt-2&#39;&gt;
+                                                &lt;strong&gt;Hele landet&lt;/strong&gt;
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h2 class=&quot;h5 header-title&quot;&gt;Header&lt;/h2&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-text&quot;&gt;
+                    &lt;p class=&quot;text&quot;&gt;In sollicitudin, nulla sit amet
+                        facilisis euismod, ex ex hendrerit eros, et egestas
+                        purus lectus vitae tortor.&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-footer&quot;&gt;
+
+                    &lt;div class=&quot;card-action&quot;&gt;
+                        &lt;div class=&quot;action-buttons&quot;&gt;
+                            &lt;button
+                                class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
+            &lt;div class=&quot;card card-align-height&quot;&gt;
+
+                &lt;div class=&quot;card-content&quot;&gt;
+
+                    &lt;div class=&quot;content&quot;&gt;
+                        &lt;div class=&quot;row justify-content-center&quot;&gt;
+                            &lt;div class=&quot;col-12&quot;&gt;
+                                &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
+                                &lt;div class=&#39;bg-turquoise p-6&#39;&gt;
+                                    &lt;h2 class=&#39;h5 mb-5&#39;&gt;Lorem ipsum
+                                        fordeling&lt;/h2&gt;
+                                    &lt;div class=&#39;mt-3 row&#39;&gt;
+                                        &lt;div class=&#39;col-6&#39;&gt;
+                                            &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;80%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;20&#39; width=&#39;50&#39; height=&#39;80&#39; fill=&#39;#56d4d6&#39;/&gt;&lt;/svg&gt;
+                                            &lt;p class=&#39;small-text mt-2&#39;&gt;
+                                                &lt;strong&gt;København&lt;/strong&gt;
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&#39;col-6&#39;&gt;
+                                            &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;36%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;64&#39; width=&#39;50&#39; height=&#39;36&#39; fill=&#39;#56d4d6&#39;/&gt;&lt;/svg&gt;
+                                            &lt;p class=&#39;small-text mt-2&#39;&gt;
+                                                &lt;strong&gt;Hele landet&lt;/strong&gt;
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h2 class=&quot;h5 header-title&quot;&gt;Header&lt;/h2&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-text&quot;&gt;
+                    &lt;p class=&quot;text&quot;&gt;Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-footer&quot;&gt;
+
+                    &lt;div class=&quot;card-action&quot;&gt;
+                        &lt;div class=&quot;action-buttons&quot;&gt;
+                            &lt;button
+                                class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
+            &lt;div class=&quot;card card-align-height&quot;&gt;
+
+                &lt;div class=&quot;card-content&quot;&gt;
+
+                    &lt;div class=&quot;content&quot;&gt;
+                        &lt;div class=&quot;row justify-content-center&quot;&gt;
+                            &lt;div class=&quot;col-12&quot;&gt;
+                                &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
+                                &lt;div class=&#39;bg-turquoise p-6&#39;&gt;
+                                    &lt;h2 class=&#39;h5 mb-5&#39;&gt;Lorem ipsum
+                                        fordeling&lt;/h2&gt;
+                                    &lt;div class=&#39;mt-3 row&#39;&gt;
+                                        &lt;div class=&#39;col-6&#39;&gt;
+                                            &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;80%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;20&#39; width=&#39;50&#39; height=&#39;80&#39; fill=&#39;#56d4d6&#39;/&gt;&lt;/svg&gt;
+                                            &lt;p class=&#39;small-text mt-2&#39;&gt;
+                                                &lt;strong&gt;København&lt;/strong&gt;
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&#39;col-6&#39;&gt;
+                                            &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;36%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;64&#39; width=&#39;50&#39; height=&#39;36&#39; fill=&#39;#56d4d6&#39;/&gt;&lt;/svg&gt;
+                                            &lt;p class=&#39;small-text mt-2&#39;&gt;
+                                                &lt;strong&gt;Hele landet&lt;/strong&gt;
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h2 class=&quot;h5 header-title&quot;&gt;Header&lt;/h2&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-text&quot;&gt;
+                    &lt;p class=&quot;text&quot;&gt;Sed tincidunt, risus vitae rutrum
+                        accumsan, urna leo fermentum dui, ac suscipit ante
+                        nulla sit amet magna.&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-footer&quot;&gt;
+
+                    &lt;div class=&quot;card-action&quot;&gt;
+                        &lt;div class=&quot;action-buttons&quot;&gt;
+                            &lt;button
+                                class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

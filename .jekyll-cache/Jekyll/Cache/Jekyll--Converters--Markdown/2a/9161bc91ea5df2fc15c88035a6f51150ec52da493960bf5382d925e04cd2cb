@@ -1,0 +1,42 @@
+I"�
+<div class="component-preview  component-preview-back-link" aria-label="Eksempel på tilbage-link komponent">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/back-link/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: back-link</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="javascript:void(0);" class="back-link">Tilbage</a>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="/komponenter/tilbage-link/#retningslinjer">Retningslinjer</a></li>
+  <li><a href="/komponenter/tilbage-link/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-back-link" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;a href=&quot;javascript:void(0);&quot; class=&quot;back-link&quot;&gt;Tilbage&lt;/a&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Linket placeres så vidt muligt i headeren, se eksempel på implementering i vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a></p>
+
+<p>Bemærk, at tilbage linket stadig skal være synligt ved mobilvisning.</p>
+
+<p>Selve funktionaliteten står man selv for i ens løsning.</p>
+:ET

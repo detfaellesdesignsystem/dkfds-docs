@@ -1,0 +1,19 @@
+I"¯
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ol&gt;
+    &lt;li&gt;Lorem&lt;/li&gt;
+    &lt;li&gt;Ipsum&lt;/li&gt;
+    &lt;li&gt;Dolor&lt;/li&gt;
+    &lt;li&gt;Sit&lt;ol class=&quot;sub_list&quot; type=&quot;a&quot;&gt;
+            &lt;li&gt;Amet&lt;/li&gt;
+            &lt;li&gt;Consectetur&lt;/li&gt;
+            &lt;li&gt;Adipiscing&lt;ol class=&quot;sub_list&quot; type=&quot;i&quot;&gt;
+                    &lt;li&gt;Elit&lt;/li&gt;
+                    &lt;li&gt;Nam&lt;/li&gt;
+                    &lt;li&gt;Nisl&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;</code></pre></figure>
+
+:ET

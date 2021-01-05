@@ -1,0 +1,401 @@
+I"�I<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Accordions er interaktive overskrifter, der anvendes til at skjule og vise det relaterede indhold.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Accordions erstatter ikke individuelle trin i en selvbetjeningsløsning eller sider på en hjemmeside.</p>
+
+<p>Brug ikke accordions til små mængder indhold, der i stedet kunne stå synligt på siden.</p>
+
+<p>Brug ikke accordions til at kollapse indhold i fx søgeresultater eller andre længere oversigter.</p>
+
+<p>Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger. Der bør du eventuelt i stedet anvende en tringuide.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.</p>
+
+<p>Overvej at lade den accordion, som har det vigtigste indhold, være foldet ud, når brugerne kommer ind på siden. Så er du sikker på, at dine brugere læser den.</p>
+
+<p>Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere spiselig. Overvej om det er nødvendigt at kollapse indhold og hvorfor, det er det. Hvis indholdet er unødigt langt eller uoverskueligt, bør du i stedet omformulere teksten og eventuelt fordele den på flere sider.</p>
+
+<div class=" component-preview-accordion-dos-donts" aria-label="Accordion do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="do-dont-container row" aria-label="Eksempel på korrekt placering af åben/lukket ikoner">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Akkordeoner-do-1.svg" alt="Eksempel på korrekt placering af ikoner i en accordion (placeret i venstre side)" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Brug plus-ikoner til at indikere, at accordions (akkordeonbjælker) kan åbnes. Brug minus-ikoner til at indikere, at accordions er åbne og kan lukkes. En undersøgelse viser, at brugerne klikker mere på plus-ikoner end på pileikoner (Thomas, 2006).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Akkordeoner-dont-1.svg" alt="Eksempel på ukorrekt placering af ikoner i en accordion (placeret i højre side)" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undgå at bruge pile som ikoner i accordions (akkordeonbjælker). De er mindre entydige end plusser og kan få nogle brugere til at tro, at den enkelte accordion er et link til en ny side. Undgå at placere ikoner til højre, hvor de er svære at få øje på. Mange brugere tror, at de skal klikke på ikonet for at åbne en accordion (Thomas, 2006).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li><a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<section class="styleguide-child-container content" id="section-/komponenter/accordions/accordion-ramme">
+  <h2 id="tilføj-ramme">Tilføj ramme</h2>
+  
+  
+  
+<div class="component-preview  component-preview-accordion-border" aria-label="Eksempel på accordion  med ramme">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/accordion-border/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: accordion-border</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <ul class="accordion accordion-bordered">
+    <li>
+        <button class="accordion-button" aria-expanded="true" aria-controls="b-a1">
+            Lorem ipsum dolor sit amet</button>
+
+        <div id="b-a1" aria-hidden="false" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="b-a2">
+            Consectetur adipiscing elit</button>
+        <div id="b-a2" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="b-a3">
+            Sed do eiusmod tempor</button>
+        <div id="b-a3" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="b-a4">
+            Labore et dolore magna</button>
+        <div id="b-a4" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="b-a5">
+            Ut enim ad minim veniam</button>
+        <div id="b-a5" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/accordions/accordion-flere-aabne">
+  <h2 id="tillad-flere-åbne-accordions">Tillad flere åbne accordions</h2>
+  
+  
+  
+<div class="component-preview  component-preview-accordion-multi" aria-label="Eksempel på accordion, hvor flere kan være åbne på samme tid">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/accordion-multi/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: accordion-multi</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <ul class="accordion accordion-multiselectable">
+    <li>
+        <button class="accordion-button" aria-expanded="true" aria-controls="m-a1">
+            Lorem ipsum dolor sit amet</button>
+
+        <div id="m-a1" aria-hidden="false" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="m-a2">
+            Consectetur adipiscing elit</button>
+        <div id="m-a2" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="true" aria-controls="m-a3">
+            Sed do eiusmod tempor</button>
+
+        <div id="m-a3" aria-hidden="false" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="m-a4">
+            Labore et dolore magna</button>
+        <div id="m-a4" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="m-a5">
+            Ut enim ad minim veniam</button>
+        <div id="m-a5" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/accordions/accordion-fejl">
+  <h2 id="med-fejl">Med fejl</h2>
+  
+  
+  
+<div class="component-preview  component-preview-accordion-error" aria-label="Eksempel på accordion med fejl">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/accordion-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: accordion-error</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <ul class="accordion">
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="error-a1">
+            Lorem ipsum dolor sit amet</button>
+        <div id="error-a1" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button accordion-error " aria-expanded="true" aria-describedby="error-a2" aria-controls="error-a2">
+            Consectetur adipiscing elit
+            <span class="accordion-icon">
+                <span class="icon_text">Fejl</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle-outline"></use></svg>
+            </span>
+        </button>
+
+        <div id="error-a2" aria-hidden="false" class="accordion-content">
+            <div class="alert alert-error" role="alert" aria-atomic="true" aria-label="Fejlbesked i accordion">
+                <div class="alert-body">
+                    <p class="alert-text">Sed ut perspiciatis unde omnis
+                        iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="error-a3">
+            Sed do eiusmod tempor
+            <span class="accordion-icon">
+                <span class="icon_text">Advarsel</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#alert-outline"></use></svg>
+            </span>
+        </button>
+        <div id="error-a3" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="error-a4">
+            Labore et dolore magna</button>
+        <div id="error-a4" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="error-a5">
+            Ut enim ad minim veniam</button>
+        <div id="error-a5" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/accordions/accordion-success">
+  <h2 id="med-succesbeskeder">Med succesbeskeder</h2>
+  
+  
+  
+<div class="component-preview  component-preview-accordion-success" aria-label="Eksempel på accordion med succesbesked">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/accordion-success/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: accordion-success</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <ul class="accordion">
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="success-a1">
+            Lorem ipsum dolor sit amet</button>
+        <div id="success-a1" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="true" aria-controls="success-a2">
+            Consectetur adipiscing elit</button>
+
+        <div id="success-a2" aria-hidden="false" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="success-a3">
+            Sed do eiusmod tempor</button>
+        <div id="success-a3" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="success-a4">
+            Labore et dolore magna
+            <span class="accordion-icon">
+                <span class="icon_text">Success</span>
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg>
+            </span>
+        </button>
+        <div id="success-a4" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+    <li>
+        <button class="accordion-button" aria-expanded="false" aria-controls="success-a5">
+            Ut enim ad minim veniam</button>
+        <div id="success-a5" aria-hidden="true" class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </li>
+</ul>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+:ET
