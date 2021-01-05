@@ -1903,7 +1903,7 @@
           
           
 
-          <p class="h6 m-0">
+          <p class="subheading">
             Kode
           </p>
           <h1 id="eksempler-på-implementering">Eksempler på implementering</h1>
@@ -1933,7 +1933,7 @@
 
 <p>Javascript kan implementeres på mange måder, og meget afhænger af projektets opbygning, og hvor komponenterne er placeret.</p>
 
-<p>Man kan vælge at initiere alle typer af komponenter på én gang med <code class="highlighter-rouge">DKFDS.init()</code>, eller man kan vælge at initiere en komponent enkeltvis fx <code class="highlighter-rouge">new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code>.</p>
+<p>Man kan vælge at initiere alle typer af komponenter på én gang med <code>DKFDS.init()</code>, eller man kan vælge at initiere en komponent enkeltvis fx <code>new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code>.</p>
 
 <p>Eksempel på implementering i AppComponent:</p>
 
@@ -1956,7 +1956,7 @@ export class AppComponent implements OnInit{
 
 <p>Samme implementering kan bruges i underliggende components. Men bemærk at den kun vil dække komponenter, som eksisterer på det tidspunkt. Det vil sige, at hvis andre components bliver loaded efterfølgende, vil disse ikke være dækket, og man skal derfor håndtere dette efterfølgende.</p>
 
-<p>I performance sammenhæng kan det også give mening, hvis man ikke gør brug af så mange javascript afhængige komponenter, at man initierer hver komponent enkeltvis fx <code class="highlighter-rouge">new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code> - fremfor brug af <code class="highlighter-rouge">DKFS.init()</code></p>
+<p>I performance sammenhæng kan det også give mening, hvis man ikke gør brug af så mange javascript afhængige komponenter, at man initierer hver komponent enkeltvis fx <code>new DKFDS.Accordion(document.getElementByID('ACCORDION-ID'));</code> - fremfor brug af <code>DKFS.init()</code></p>
 
       </section>
     </main>

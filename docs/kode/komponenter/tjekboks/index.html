@@ -3256,7 +3256,7 @@
           
           
 
-          <p class="h6 m-0">
+          <p class="subheading">
             Kode
           </p>
           <h1 id="tjekboks">Tjekboks</h1>
@@ -3480,24 +3480,24 @@
 
 <p><a href="/komponenter/tjekboks/#retningslinjer">Retningslinjer</a></p>
 
-<p>For at initialisere collapse funktionaliteten på en checkbox skal <code class="highlighter-rouge">input[type=checkbox]</code> have følgende:</p>
+<p>For at initialisere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
 
 <ul>
-  <li>Klassen <code class="highlighter-rouge">'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret.</li>
-  <li>Attributten <code class="highlighter-rouge">data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises på tjekboksen er aktiveret.</li>
-  <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code class="highlighter-rouge">'checked'</code>.</li>
-  <li><code class="highlighter-rouge">aria-controls="id-of-target-to-collapse" </code></li>
+  <li>Klassen <code>'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret.</li>
+  <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises på tjekboksen er aktiveret.</li>
+  <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
+  <li><code>aria-controls="id-of-target-to-collapse" </code></li>
 </ul>
 
 <p>Det element som skal collapses/expandes skal have følgende:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">id="id-of-target-to-collapse"</code></li>
-  <li><code class="highlighter-rouge">aria-hidden="true/false"</code></li>
+  <li><code>id="id-of-target-to-collapse"</code></li>
+  <li><code>aria-hidden="true/false"</code></li>
 </ul>
 
 <h2>JavaScript</h2>
-<p>Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code class="highlighter-rouge">DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+<p>Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="k">new</span> <span class="nx">DKFDS</span><span class="p">.</span><span class="nx">CheckboxToggleContent</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'CHECKBOX-INPUT-ID'</span><span class="p">));</span></code></pre></figure>
 
@@ -3514,12 +3514,12 @@
   <tbody>
     <tr>
       <td>fds.collapse.open</td>
-      <td><code class="highlighter-rouge">input.js-checkbox-toggle-content</code></td>
+      <td><code>input.js-checkbox-toggle-content</code></td>
       <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet</td>
     </tr>
     <tr>
       <td>fds.collapse.close</td>
-      <td><code class="highlighter-rouge">input.js-checkbox-toggle-content</code></td>
+      <td><code>input.js-checkbox-toggle-content</code></td>
       <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet</td>
     </tr>
   </tbody>

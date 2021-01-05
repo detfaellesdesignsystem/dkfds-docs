@@ -419,6 +419,28 @@
 
     
 
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#loesnings-titel"  role="menuitem">Løsningstitel i header</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#subheading"  role="menuitem">Subheading</a>
+</li>
+
+    
+
 </ul>
     
   
@@ -1938,6 +1960,28 @@
 
     
 
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#loesnings-titel"  role="menuitem">Løsningstitel i header</a>
+</li>
+
+    
+
+  
+    
+      
+
+
+<li class=" " role="none">
+<a href="#subheading"  role="menuitem">Subheading</a>
+</li>
+
+    
+
 </ul>
     
   
@@ -2136,7 +2180,7 @@
           
           
 
-          <p class="h6 m-0">
+          <p class="subheading">
             Design
           </p>
           <h1 id="overskrifter">Overskrifter</h1>
@@ -2153,18 +2197,21 @@
   <li>De skaber et visuelt hierarki og gør siden overskuelig ved at inddele den i afsnit og underafsnit.</li>
 </ul>
 
-<div class="component-preview ">
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
+<div class="component-preview  component-preview-headings" aria-label="Oversigt over overskriftshierarki">
     
     <div class="component-link px-4 py-4">
+        
         <a href="/eksempel/headings/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: headings</span></a>
+        
     </div>
     
-
     <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <iframe class="preview-iframe" title="Eksempel" src="/eksempel/headings/"></iframe>
+        <h1>Overskrift 1</h1>
+<h2>Overskrift 2</h2>
+<h3>Overskrift 3</h3>
+<h4>Overskrift 4</h4>
+<h5>Overskrift 5</h5>
+<h6>Overskrift 6</h6>
     </div>
     
     <div class="component-code-link px-4 py-4">
@@ -2181,31 +2228,35 @@
       <th>Tekst</th>
       <th>Skrifttype</th>
       <th>Skriftstørrelse</th>
-      <th>Tekst tykkelse (font-weight)</th>
+      <th>Tekst tykkelse</th>
       <th>Tekstfarve</th>
+      <th>Afstand mellem bogstaver</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Overskrift 1</td>
       <td>IBM Plex Sans</td>
-      <td>40px</td>
+      <td>48px</td>
       <td>700</td>
       <td>#1a1a1a</td>
+      <td>-0.5px</td>
     </tr>
     <tr>
       <td>Overskrift 2</td>
       <td>IBM Plex Sans</td>
-      <td>30px</td>
+      <td>31px</td>
       <td>600</td>
       <td>#1a1a1a</td>
+      <td>-0.4px</td>
     </tr>
     <tr>
       <td>Overskrift 3</td>
       <td>IBM Plex Sans</td>
-      <td>24px</td>
+      <td>25px</td>
       <td>600</td>
       <td>#1a1a1a</td>
+      <td>-0.3px</td>
     </tr>
     <tr>
       <td>Overskrift 4</td>
@@ -2213,6 +2264,7 @@
       <td>20px</td>
       <td>600</td>
       <td>#1a1a1a</td>
+      <td>-0.2px</td>
     </tr>
     <tr>
       <td>Overskrift 5</td>
@@ -2220,6 +2272,7 @@
       <td>16px</td>
       <td>600</td>
       <td>#1a1a1a</td>
+      <td> </td>
     </tr>
     <tr>
       <td>Overskrift 6</td>
@@ -2227,6 +2280,7 @@
       <td>13px</td>
       <td>500</td>
       <td>#1a1a1a</td>
+      <td>-0.25px</td>
     </tr>
   </tbody>
 </table>
@@ -2299,6 +2353,42 @@
 <h3>Vejledning</h3>
 
 <p>Et godt eksempel på brugen af søgeresultatlinks er googles søgeresultatside.</p>
+
+<h2 id="loesnings-titel">Løsningstitel i header</h2>
+
+<div class="component-preview  component-preview-solutionheading p-4" aria-label="">
+    <header class="header">
+    <div class="solution-header">
+        <div class="container solution-header-inner">
+            <!-- Start: Løsningstitel -->
+            <div class="solution-heading">
+                <a href="#">En langt langt længere løsningstitel</a>
+            </div>
+        </div>
+    </div>
+</header>
+</div>
+
+<h3>Anvendes til</h3>
+
+<p>Anvendes i header som titel på hele løsningen. Titlen bør derved være den samme på hver side.</p>
+
+<h3>Anvendes ikke til</h3>
+<p>Anvendes ikke andre steder end i headeren.</p>
+
+<h2 id="subheading">Subheading</h2>
+
+<div class="component-preview  component-preview-subheading p-4" aria-label="">
+    <p class="subheading">Dette er en subheading</p>
+</div>
+
+<h3>Anvendes til</h3>
+
+<p>Anvendes til at tilføje sekundær tekst til en overskrift.</p>
+
+<h3>Anvendes ikke til</h3>
+
+<p>Må ikke anvendes som en enkeltstående overskrift.</p>
 
       </section>
     </main>
