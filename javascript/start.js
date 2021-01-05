@@ -8,7 +8,6 @@ import * as DKFDS from "dkfds";
 require('./sidenav');
 require('./newsletter');
 document.addEventListener("DOMContentLoaded", function() {
-    console.log(DKFDS);
     languageSwitcher();
 // Handler when the DOM is fully loaded
     DKFDS.init();

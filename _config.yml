@@ -29,6 +29,7 @@ defaults:
       layout: post
 
 # Build settings
+highlighter: none
 markdown: kramdown
 kramdown:
   auto_ids: false
@@ -55,6 +56,7 @@ exclude:
   - ".sass-cache"
   - ".github"
   - ".vscode"
+  - .idea
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
