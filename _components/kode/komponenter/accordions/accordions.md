@@ -68,7 +68,7 @@ Tilføj klassen `accordion-bordered` til elementet med klassen `accordion` for a
 For at tillade at flere accordions kan være åbne på samme tid, kan man tilføje klassen `accordion-multiselectable` til elementet med klassen `accordion`.
 
 {:#med-fejl}
-### Med fejl
+### Med fejls
 {% include code/syntax.html component="accordion-error" link="true" %}
 
 {:#med-succesbeskeder}

@@ -23,27 +23,30 @@ subnav:
   href: "#overskrift-som-link"
 - text: Overskrift i søgeresultat
   href: "#overskrift-i-soegeresultat"
-
+- text: Løsningstitel i header
+  href: "#loesnings-titel"
+- text: Subheading
+  href: "#subheading"
 ---
 Overskriftstyperne har to formål:
 
 - De er sidens indholdsfortegnelse for skærmlæsere.
 - De skaber et visuelt hierarki og gør siden overskuelig ved at inddele den i afsnit og underafsnit.
 
-{% include code/preview-iframe.html component="headings" code="/kode/typografi/overskrifter/" %}
+{% include code/preview-box.html component="headings" code="/kode/typografi/overskrifter/" title="Oversigt over overskriftshierarki" %}
 
 {:.h3}
 ## Design
 
 {:.table .table--borderless .table--responsive-headers}
-| Tekst        | Skrifttype     | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
-|--------------|---------------|-----------------|------------------------------|------------|
-| Overskrift 1 | IBM Plex Sans | 40px            | 700                          | #1a1a1a    |
-| Overskrift 2 | IBM Plex Sans | 30px            | 600                          | #1a1a1a    |
-| Overskrift 3 | IBM Plex Sans | 24px            | 600                          | #1a1a1a    |
-| Overskrift 4 | IBM Plex Sans | 20px            | 600                          | #1a1a1a    |
-| Overskrift 5 | IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
-| Overskrift 6 | IBM Plex Sans | 13px            | 500                          | #1a1a1a    |
+| Tekst        | Skrifttype     | Skriftstørrelse | Tekst tykkelse | Tekstfarve | Afstand mellem bogstaver |
+|--------------|---------------|-----------------|-----------------|------------|---------------------------|
+| Overskrift 1 | IBM Plex Sans | 48px            | 700             | #1a1a1a    | -0.5px                    |
+| Overskrift 2 | IBM Plex Sans | 31px            | 600             | #1a1a1a    | -0.4px                    |
+| Overskrift 3 | IBM Plex Sans | 25px            | 600             | #1a1a1a    | -0.3px                    |
+| Overskrift 4 | IBM Plex Sans | 20px            | 600             | #1a1a1a    | -0.2px                    |
+| Overskrift 5 | IBM Plex Sans | 16px            | 600             | #1a1a1a    |                           |
+| Overskrift 6 | IBM Plex Sans | 13px            | 500             | #1a1a1a    | -0.25px                   |
 
 {:#retningslinjer}
 ## Retningslinjer
@@ -101,3 +104,29 @@ Må ikke anvendes til at fremhæve links i tekst eller som erstatning for <a hre
 ### Vejledning
 
 Et godt eksempel på brugen af søgeresultatlinks er googles søgeresultatside.
+
+
+{:#loesnings-titel}
+## Løsningstitel i header
+
+{% include code/preview.html component="solutionheading" %}
+
+### Anvendes til
+
+Anvendes i header som titel på hele løsningen. Titlen bør derved være den samme på hver side.
+
+### Anvendes ikke til
+Anvendes ikke andre steder end i headeren.
+
+{:#subheading}
+## Subheading
+
+{% include code/preview.html component="subheading" %}
+
+### Anvendes til
+
+Anvendes til at tilføje sekundær tekst til en overskrift.
+
+### Anvendes ikke til
+
+Må ikke anvendes som en enkeltstående overskrift.
