@@ -3278,7 +3278,7 @@
           
           
 
-          <p class="h6 m-0">
+          <p class="subheading">
             Kode
           </p>
           <h1 id="radioknap">Radioknap</h1>
@@ -3363,7 +3363,7 @@
 
 <p>Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.</p>
 
-<p><code class="highlighter-rouge">name</code> atributten bør have samme værdi for alle radioknapper i en liste.</p>
+<p><code>name</code> atributten bør have samme værdi for alle radioknapper i en liste.</p>
 
 <p>Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</p>
 
@@ -3581,24 +3581,24 @@
     <li><a href="/komponenter/radiobutton/#retningslinjer">Retningslinjer</a></li>
 </ul>
 
-<p>For at initialisere collapse funktionaliteten på en checkbox skal <code class="highlighter-rouge">input[type=checkbox]</code> have følgende:</p>
+<p>For at initialisere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
 
 <ul>
-  <li>Klassen <code class="highlighter-rouge">'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret.</li>
-  <li>Attributten <code class="highlighter-rouge">data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises på tjekboksen er aktiveret.</li>
-  <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code class="highlighter-rouge">'checked'</code>.</li>
-  <li><code class="highlighter-rouge">aria-controls="id-of-target-to-collapse" </code></li>
+  <li>Klassen <code>'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret.</li>
+  <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises på tjekboksen er aktiveret.</li>
+  <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
+  <li><code>aria-controls="id-of-target-to-collapse" </code></li>
 </ul>
 
 <p>Det element som skal collapses/expandes skal have følgende:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">id=”id-of-target-to-collapse”</code></li>
-  <li><code class="highlighter-rouge">aria-hidden="true/false"</code></li>
+  <li><code>id=”id-of-target-to-collapse”</code></li>
+  <li><code>aria-hidden="true/false"</code></li>
 </ul>
 
 <h2>JavaScript</h2>
-<p>Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code class="highlighter-rouge">DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+<p>Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="k">new</span> <span class="nx">DKFDS</span><span class="p">.</span><span class="nx">RadioToggleGroup</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'DIV-CONTAINER-ID'</span><span class="p">));</span></code></pre></figure>
 
@@ -3615,12 +3615,12 @@
   <tbody>
     <tr>
       <td>fds.collapse.open</td>
-      <td><code class="highlighter-rouge">input.js-radio-toggle-group</code></td>
+      <td><code>input.js-radio-toggle-group</code></td>
       <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet.</td>
     </tr>
     <tr>
       <td>fds.collapse.close</td>
-      <td><code class="highlighter-rouge">input.js-radio-toggle-group</code></td>
+      <td><code>input.js-radio-toggle-group</code></td>
       <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet.</td>
     </tr>
   </tbody>

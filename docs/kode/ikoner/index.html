@@ -1892,7 +1892,7 @@
           
           
 
-          <p class="h6 m-0">
+          <p class="subheading">
             Kode
           </p>
           <h1 id="ikoner">Ikoner</h1>
@@ -1971,29 +1971,29 @@
 
 <p>Bemærk, at ovenstående kodeeksempel ikke er den fulde ikonsamling. Hele ikonsamlingen er dog vist, hvis du åbner eksemplet i et nyt vindue.</p>
 
-<p>Ikonsamlingen placeres i toppen af <code class="highlighter-rouge">&lt;body&gt;</code> i et område, der er skjult.</p>
+<p>Ikonsamlingen placeres i toppen af <code>&lt;body&gt;</code> i et område, der er skjult.</p>
 
 <h3>Tilgængelighed</h3>
 
-<p>Ikoner bør tilføjes en <code class="highlighter-rouge">aria-label</code> tekst til elementet, der beskriver ikonet, så skærmlæsere kan læse ikonet op, såfremt ikonet har betydning for forståelsen.</p>
+<p>Ikoner bør tilføjes en <code>aria-label</code> tekst til elementet, der beskriver ikonet, så skærmlæsere kan læse ikonet op, såfremt ikonet har betydning for forståelsen.</p>
 
-<p>I tilfælde, hvor ikonet ikke skal læses op, tilføj da attributten <code class="highlighter-rouge">aria-hidden="true"</code>. Denne attribut vil gøre ikonet usynligt for skærmlæsere.</p>
+<p>I tilfælde, hvor ikonet ikke skal læses op, tilføj da attributten <code>aria-hidden="true"</code>. Denne attribut vil gøre ikonet usynligt for skærmlæsere.</p>
 
 <p>Dekorative ikoner bør undgås, men hvis de bruges, skal de ikke beskrives eller have beskrivende attributter, da de ikke bærer nogen betydning eller er vigtige for brugeren.</p>
 
-<p>Da Internet Explorer sætter fokus på svg elementer bør <code class="highlighter-rouge">focusable="false"</code> tilføjes, således at der ikke længeres sættes fokus på ikonet med tastaturet.</p>
+<p>Da Internet Explorer sætter fokus på svg elementer bør <code>focusable="false"</code> tilføjes, således at der ikke længeres sættes fokus på ikonet med tastaturet.</p>
 
 <h2>Varianter</h2>
 
 <h3>Ikoner indsat med klasser</h3>
 
-<p>Ikoner der indsættes inline med i-tagget får på den måde samme skriftstørrelse. Følgende kode indsætter et ‘alert’-ikon: <code class="highlighter-rouge">&lt;i class="icon icon-alert-outline"&gt;&lt;/i&gt;</code></p>
+<p>Ikoner der indsættes inline med i-tagget får på den måde samme skriftstørrelse. Følgende kode indsætter et ‘alert’-ikon: <code>&lt;i class="icon icon-alert-outline"&gt;&lt;/i&gt;</code></p>
 
 <p>Denne metode har nogle begrænsninger, hvorfor vi anbefaler, at man benytter den anden metode.</p>
 
 <h3>Tilpasning af ikonet til teksten</h3>
 
-<p>Tilføj klassen <code class="highlighter-rouge">inline-svg</code> på ikoner, som skal fremgå i en tekst. Ikonet vil da tilpasse sig linjehøjden. Se eksemplet herunder:</p>
+<p>Tilføj klassen <code>inline-svg</code> på ikoner, som skal fremgå i en tekst. Ikonet vil da tilpasse sig linjehøjden. Se eksemplet herunder:</p>
 
 <p>Lorem ipsum <svg class="icon-svg inline-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg> dolor sit amet.</p>
 

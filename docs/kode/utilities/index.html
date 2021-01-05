@@ -2052,7 +2052,7 @@
           
           
 
-          <p class="h6 m-0">
+          <p class="subheading">
             Kode
           </p>
           <h1 id="hjælpeklasser-utilities">Hjælpeklasser (Utilities)</h1>
@@ -2064,7 +2064,7 @@
 <section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/01-responsive">
   <h2 id="responsive-hjælpeklasser">Responsive hjælpeklasser</h2>
   
-  <p>Alle de klasser som bliver genereret af hjælpefunktionerne findes både i en version som virker i alle browserstørrelser og i responsive versioner som genereres på baggrund af de breakpoints som er defineret i scss-variablen <code class="highlighter-rouge">$grid-breakpoints</code>:</p>
+  <p>Alle de klasser som bliver genereret af hjælpefunktionerne findes både i en version som virker i alle browserstørrelser og i responsive versioner som genereres på baggrund af de breakpoints som er defineret i scss-variablen <code>$grid-breakpoints</code>:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$grid-breakpoints</span><span class="p">:</span> <span class="p">(</span> 
     <span class="n">xs</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span>
@@ -2080,16 +2080,16 @@
 <section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/02-text-align">
   <h2 id="text-align">Text-align</h2>
   
-  <p>Der er opsat en hjælpefunktion som automatisk genererer klasser til <code class="highlighter-rouge">text-align</code> baseret på de definerede breakpoints i $grid-breakpoints.</p>
+  <p>Der er opsat en hjælpefunktion som automatisk genererer klasser til <code>text-align</code> baseret på de definerede breakpoints i $grid-breakpoints.</p>
 
-<p>Format: <code class="highlighter-rouge">align-text-{retning}</code> og <code class="highlighter-rouge">align-text-{breakpoint}-{retning}</code></p>
+<p>Format: <code>align-text-{retning}</code> og <code>align-text-{breakpoint}-{retning}</code></p>
 
 <h3 class="h5 mb-0">Retning:</h3>
 
 <ul>
-  <li>Venstre: <code class="highlighter-rouge">text-align: left</code></li>
-  <li>Midten: <code class="highlighter-rouge">text-align: center</code></li>
-  <li>Højre: <code class="highlighter-rouge">text-align: right</code></li>
+  <li>Venstre: <code>text-align: left</code></li>
+  <li>Midten: <code>text-align: center</code></li>
+  <li>Højre: <code>text-align: right</code></li>
 </ul>
 
 <h3 class="h5 mb-0">Eksempel:</h3>
@@ -2105,61 +2105,61 @@
   
   <p>Der er opsat hjælpefunktioner som genererer klasser til margin og padding. Disse hjælpefunktioner er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/" class="icon-link">Bootstraps Spacing Utilities<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 
-<p>Format: <code class="highlighter-rouge"><span class="p">{</span><span class="err">css-egenskab</span><span class="p">}{</span><span class="err">retning</span><span class="p">}</span><span class="err">-</span><span class="p">{</span><span class="err">størrelse</span><span class="p">}</span></code> og <code class="highlighter-rouge"><span class="p">{</span><span class="err">css-egenskab</span><span class="p">}{</span><span class="err">retning</span><span class="p">}</span><span class="err">-</span><span class="p">{</span><span class="err">breakpoint</span><span class="p">}</span><span class="err">-</span><span class="p">{</span><span class="err">størrelse</span><span class="p">}</span></code>.</p>
+<p>Format: <code>{css-egenskab}{retning}-{størrelse}</code> og <code>{css-egenskab}{retning}-{breakpoint}-{størrelse}</code>.</p>
 
 <h3 class="h5 mb-0">CSS egenskab:</h3>
 
 <ul>
-  <li><span class="bold">m</span> – for klasser som sætter <code class="highlighter-rouge">margin</code></li>
-  <li><span class="bold">p</span> - for klasser som sætter <code class="highlighter-rouge">padding</code></li>
+  <li><span class="bold">m</span> – for klasser som sætter <code>margin</code></li>
+  <li><span class="bold">p</span> - for klasser som sætter <code>padding</code></li>
 </ul>
 
 <h3 class="h5 mb-0">Retning:</h3>
 
 <ul>
-  <li><span class="bold">t</span> – for klasser som sætter <code class="highlighter-rouge">margin-top</code> eller <code class="highlighter-rouge">padding-top</code></li>
-  <li><span class="bold">b</span> – for klasser som sætter <code class="highlighter-rouge">margin-bottom</code> eller <code class="highlighter-rouge">padding-bottom</code></li>
-  <li><span class="bold">l</span> – for klasser som sætter <code class="highlighter-rouge">margin-left</code> eller <code class="highlighter-rouge">padding-left</code></li>
-  <li><span class="bold">r</span> – for klasser som sætter <code class="highlighter-rouge">margin-right</code> eller <code class="highlighter-rouge">padding-right</code></li>
-  <li><span class="bold">x</span> – for klasser som sætter både<code class="highlighter-rouge">*-left</code> og <code class="highlighter-rouge">*-right</code></li>
-  <li><span class="bold">y</span> – for klasser som sætter både<code class="highlighter-rouge">*-top</code> og <code class="highlighter-rouge">*-bottom</code></li>
+  <li><span class="bold">t</span> – for klasser som sætter <code>margin-top</code> eller <code>padding-top</code></li>
+  <li><span class="bold">b</span> – for klasser som sætter <code>margin-bottom</code> eller <code>padding-bottom</code></li>
+  <li><span class="bold">l</span> – for klasser som sætter <code>margin-left</code> eller <code>padding-left</code></li>
+  <li><span class="bold">r</span> – for klasser som sætter <code>margin-right</code> eller <code>padding-right</code></li>
+  <li><span class="bold">x</span> – for klasser som sætter både<code>*-left</code> og <code>*-right</code></li>
+  <li><span class="bold">y</span> – for klasser som sætter både<code>*-top</code> og <code>*-bottom</code></li>
   <li>blank – for klasser som sætter margin eller padding på alle 4 sider af elementet.</li>
 </ul>
 
 <h3 class="h5 mb-0">Størrelse:</h3>
 
 <ul>
-  <li><span class="bold">0</span> – for klasser som fjerner alt <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code></li>
-  <li><span class="bold">1</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 0.25</code></li>
-  <li><span class="bold">2</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 0.5</code></li>
-  <li><span class="bold">3</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer</code></li>
-  <li><span class="bold">305</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 1.5</code></li>
-  <li><span class="bold">4</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 2</code></li>
-  <li><span class="bold">405</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 2.5</code></li>
-  <li><span class="bold">5</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 3</code></li>
-  <li><span class="bold">505</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 3.5</code></li>
-  <li><span class="bold">6</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 4</code></li>
-  <li><span class="bold">605</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 4.5</code></li>
-  <li><span class="bold">7</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 5</code></li>
-  <li><span class="bold">705</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 5.5</code></li>
-  <li><span class="bold">8</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 6</code></li>
-  <li><span class="bold">805</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 6.5</code></li>
-  <li><span class="bold">9</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 7</code></li>
-  <li><span class="bold">905</span> – for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> til <code class="highlighter-rouge">$spacer * 7.5</code></li>
+  <li><span class="bold">0</span> – for klasser som fjerner alt <code>margin</code> eller <code>padding</code></li>
+  <li><span class="bold">1</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 0.25</code></li>
+  <li><span class="bold">2</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 0.5</code></li>
+  <li><span class="bold">3</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer</code></li>
+  <li><span class="bold">305</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 1.5</code></li>
+  <li><span class="bold">4</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 2</code></li>
+  <li><span class="bold">405</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 2.5</code></li>
+  <li><span class="bold">5</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 3</code></li>
+  <li><span class="bold">505</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 3.5</code></li>
+  <li><span class="bold">6</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 4</code></li>
+  <li><span class="bold">605</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 4.5</code></li>
+  <li><span class="bold">7</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 5</code></li>
+  <li><span class="bold">705</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 5.5</code></li>
+  <li><span class="bold">8</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 6</code></li>
+  <li><span class="bold">805</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 6.5</code></li>
+  <li><span class="bold">9</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 7</code></li>
+  <li><span class="bold">905</span> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 7.5</code></li>
 </ul>
 
-<p><code class="highlighter-rouge">$spacer</code> er sat til <code class="highlighter-rouge">8px.</code></p>
+<p><code>$spacer</code> er sat til <code>8px.</code></p>
 
-<p>Du kan selv tilføje flere muligheder ved at tilføje dem til <code class="highlighter-rouge">$spacers</code> variablen.</p>
+<p>Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</code> variablen.</p>
 
 <h3 class="h5 mb-0">Breakpoint:</h3>
 
 <ul>
-  <li>blank - for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> for alle browserstørrelser.</li>
-  <li><span class="bold">sm</span> - for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> for browserstørrelser over 576px;</li>
-  <li><span class="bold">md</span> - for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> for browserstørrelser over 768px;</li>
-  <li><span class="bold">lg</span> - for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> for browserstørrelser over 992px;</li>
-  <li><span class="bold">xl</span> - for klasser som sætter <code class="highlighter-rouge">margin</code> eller <code class="highlighter-rouge">padding</code> for browserstørrelser over 1200px;</li>
+  <li>blank - for klasser som sætter <code>margin</code> eller <code>padding</code> for alle browserstørrelser.</li>
+  <li><span class="bold">sm</span> - for klasser som sætter <code>margin</code> eller <code>padding</code> for browserstørrelser over 576px;</li>
+  <li><span class="bold">md</span> - for klasser som sætter <code>margin</code> eller <code>padding</code> for browserstørrelser over 768px;</li>
+  <li><span class="bold">lg</span> - for klasser som sætter <code>margin</code> eller <code>padding</code> for browserstørrelser over 992px;</li>
+  <li><span class="bold">xl</span> - for klasser som sætter <code>margin</code> eller <code>padding</code> for browserstørrelser over 1200px;</li>
 </ul>
 
 </section>
@@ -2167,32 +2167,32 @@
 <section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/04-display">
   <h2 id="display">Display</h2>
   
-  <p>Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i <code class="highlighter-rouge">$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.&lt;/p&gt;</p>
+  <p>Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i <code>$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.&lt;/p&gt;</p>
 
-<p>Format: <code class="highlighter-rouge">d-{display}</code> og <code class="highlighter-rouge">d-{breakpoint}-{display}</code></p>
+<p>Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code></p>
 
 <h3 class="h5 mb-0">Display</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">none</code></li>
-  <li><code class="highlighter-rouge">inline-block</code></li>
-  <li><code class="highlighter-rouge">block</code></li>
-  <li><code class="highlighter-rouge">flex</code></li>
-  <li><code class="highlighter-rouge">inline-flex</code></li>
+  <li><code>none</code></li>
+  <li><code>inline-block</code></li>
+  <li><code>block</code></li>
+  <li><code>flex</code></li>
+  <li><code>inline-flex</code></li>
 </ul>
 
 <h3 class="h5 mb-0">Print display</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">print-none</code></li>
-  <li><code class="highlighter-rouge">print-inline</code></li>
-  <li><code class="highlighter-rouge">print-inline-block</code></li>
-  <li><code class="highlighter-rouge">print-block</code></li>
-  <li><code class="highlighter-rouge">print-table</code></li>
-  <li><code class="highlighter-rouge">print-table-row</code></li>
-  <li><code class="highlighter-rouge">print-table-cell</code></li>
-  <li><code class="highlighter-rouge">print-flex</code></li>
-  <li><code class="highlighter-rouge">print-inline-flex</code></li>
+  <li><code>print-none</code></li>
+  <li><code>print-inline</code></li>
+  <li><code>print-inline-block</code></li>
+  <li><code>print-block</code></li>
+  <li><code>print-table</code></li>
+  <li><code>print-table-row</code></li>
+  <li><code>print-table-cell</code></li>
+  <li><code>print-flex</code></li>
+  <li><code>print-inline-flex</code></li>
 </ul>
 
 <h3 class="h5 mb-0">Eksempel med grid breakpoints</h3>
@@ -2310,23 +2310,23 @@
 <section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/05-width">
   <h2 id="bredde-i-procent">Bredde i procent</h2>
   
-  <p>Der er opsat en hjælpefunktion som automatisk generere klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i <code class="highlighter-rouge">$grid-breakpoints</code>.</p>
+  <p>Der er opsat en hjælpefunktion som automatisk generere klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i <code>$grid-breakpoints</code>.</p>
 
-<p>Format: <code class="highlighter-rouge">w-percent-{bredde}</code> og <code class="highlighter-rouge">w-percent-{breakpoint}-{bredde}</code></p>
+<p>Format: <code>w-percent-{bredde}</code> og <code>w-percent-{breakpoint}-{bredde}</code></p>
 
 <h3 class="h5 mb-0">Bredde</h3>
 
 <ul>
-  <li>10: <code class="highlighter-rouge">10%</code></li>
-  <li>20: <code class="highlighter-rouge">20%</code></li>
-  <li>30: <code class="highlighter-rouge">30%</code></li>
-  <li>40: <code class="highlighter-rouge">40%</code></li>
-  <li>50: <code class="highlighter-rouge">50%</code></li>
-  <li>60: <code class="highlighter-rouge">60%</code></li>
-  <li>70: <code class="highlighter-rouge">70%</code></li>
-  <li>80: <code class="highlighter-rouge">80%</code></li>
-  <li>90: <code class="highlighter-rouge">90%</code></li>
-  <li>100: <code class="highlighter-rouge">100%</code></li>
+  <li>10: <code>10%</code></li>
+  <li>20: <code>20%</code></li>
+  <li>30: <code>30%</code></li>
+  <li>40: <code>40%</code></li>
+  <li>50: <code>50%</code></li>
+  <li>60: <code>60%</code></li>
+  <li>70: <code>70%</code></li>
+  <li>80: <code>80%</code></li>
+  <li>90: <code>90%</code></li>
+  <li>100: <code>100%</code></li>
 </ul>
 
 <h3 class="h5">Eksempel:</h3>
@@ -2342,14 +2342,14 @@
   
   <p>Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer baggrundsfarver.</p>
 
-<p>Format: <code class="highlighter-rouge">bg-{baggrund}</code></p>
+<p>Format: <code>bg-{baggrund}</code></p>
 
 <h3 class="h5 mb-0">Baggrundsfarver</h3>
 
 <ul>
-  <li>Normal: <code class="highlighter-rouge">$background-normal</code></li>
-  <li>Alternativ: <code class="highlighter-rouge">$background-alternative</code></li>
-  <li>Modal: <code class="highlighter-rouge">$background-modal</code></li>
+  <li>Normal: <code>$background-normal</code></li>
+  <li>Alternativ: <code>$background-alternative</code></li>
+  <li>Modal: <code>$background-modal</code></li>
 </ul>
 
 <h3 class="h5">Eksempel:</h3>
@@ -2367,10 +2367,10 @@
   <p>Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.</p>
 
 <ul>
-  <li><code class="highlighter-rouge">aria-hidden="true"</code> og <code class="highlighter-rouge">aria-hidden="false"</code> bruges til at skjule og vise elementer for skærmlæsere.</li>
-  <li><code class="highlighter-rouge">.sr-only</code> klassen og mixin <code class="highlighter-rouge">@mixin sr-only()</code> bruges når elementer kun skal vises for skærmlæsere.</li>
-  <li><code class="highlighter-rouge">aria-expanded="true"</code> og <code class="highlighter-rouge">aria-expanded="false"</code> bruges til elementer som toggler mellem at være åbne og lukket.</li>
-  <li><code class="highlighter-rouge">aria-label=""</code> skal beskrive hvad funktionen af et element gør.</li>
+  <li><code>aria-hidden="true"</code> og <code>aria-hidden="false"</code> bruges til at skjule og vise elementer for skærmlæsere.</li>
+  <li><code>.sr-only</code> klassen og mixin <code>@mixin sr-only()</code> bruges når elementer kun skal vises for skærmlæsere.</li>
+  <li><code>aria-expanded="true"</code> og <code>aria-expanded="false"</code> bruges til elementer som toggler mellem at være åbne og lukket.</li>
+  <li><code>aria-label=""</code> skal beskrive hvad funktionen af et element gør.</li>
 </ul>
 
 </section>

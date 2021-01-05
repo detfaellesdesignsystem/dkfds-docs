@@ -1892,7 +1892,7 @@
           
           
 
-          <p class="h6 m-0">
+          <p class="subheading">
             Kode
           </p>
           <h1 id="implementering-af-dkfds">Implementering af DKFDS</h1>
@@ -1932,8 +1932,8 @@
 
 <p>JavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.</p>
 
-<h2><code class="highlighter-rouge">&lt;script&gt;</code> tag</h2>
-<p>Indsæt følgende script tag før<code class="highlighter-rouge">&lt;/body&gt;</code></p>
+<h2><code>&lt;script&gt;</code> tag</h2>
+<p>Indsæt følgende script tag før<code>&lt;/body&gt;</code></p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">'[sti til DKFDS mappen]/dist/js/dkfds.js'</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
@@ -1943,9 +1943,9 @@
 
 <h3>Init</h3>
 
-<p>Når DKFDS er inkluderet kan du køre funktionen <code class="highlighter-rouge">DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
+<p>Når DKFDS er inkluderet kan du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
 
-<p><code class="highlighter-rouge">DKFDS.init();</code> aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent. Information omkring javscript for hver komponent finder du i <a href="/kode/komponenter/">kode sektionen for den specifikke komponent</a>.</p>
+<p><code>DKFDS.init();</code> aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent. Information omkring javscript for hver komponent finder du i <a href="/kode/komponenter/">kode sektionen for den specifikke komponent</a>.</p>
 
 <p class="mb-2">Eksempel på init:</p>
 
@@ -2008,7 +2008,7 @@
 
 <h3>Fix for bug i Microsoft Edge og Internet Explorer</h3>
 
-<p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i <code class="highlighter-rouge">head</code> sektionen.</p>
+<p>En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i <code>head</code> sektionen.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;style&gt;</span>
     <span class="c">/* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. */</span>   
