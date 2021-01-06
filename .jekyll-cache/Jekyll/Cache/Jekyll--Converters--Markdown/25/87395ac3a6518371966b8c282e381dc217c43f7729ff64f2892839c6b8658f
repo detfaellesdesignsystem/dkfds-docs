@@ -1,0 +1,186 @@
+I"<
+<section class="styleguide-child-container content" id="section-/kode/typografi/tekst/tekst-manchet">
+  <h2 id="manchet-tekst">Manchet tekst</h2>
+  
+    <p class="font-lead"></p>
+  
+  
+  
+<div class="component-preview  component-preview-lead-paragraph" aria-label="Eksempel på manchet tekst">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <p class="font-lead">Dette er en manchet tekst</p>
+    </div>
+    
+</div>
+
+
+  
+  <p><a href="/design/typografi/tekst/#manchet-tekst-retningslinjer">Læs retningslinjerne for manchet tekst</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-lead-paragraph" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class=&quot;font-lead&quot;&gt;Dette er en manchet tekst&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/typografi/tekst/tekst-broedtekst">
+  <h2 id="brødtekst">Brødtekst</h2>
+  
+    <p class="font-lead"></p>
+  
+  
+  
+<div class="component-preview  component-preview-inlinetext" aria-label="Eksempel på brødtekst">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <p>Brødtekst</p>
+<p class="small-text">Dette er lille brødtekst</p>
+<p class="bold">Dette er fed brødtekst</p>
+    </div>
+    
+</div>
+
+
+  
+  <p><a href="/design/typografi/tekst/#broedtekst-retningslinjer">Læs retningslinjerne for brødtekst</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-inlinetext" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Brødtekst&lt;/p&gt;
+&lt;p class=&quot;small-text&quot;&gt;Dette er lille brødtekst&lt;/p&gt;
+&lt;p class=&quot;bold&quot;&gt;Dette er fed brødtekst&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/typografi/tekst/tekst-helptext">
+  <h2 id="hjælpetekst-og-fejlmeddelelser">Hjælpetekst og fejlmeddelelser</h2>
+  
+    <p class="font-lead"></p>
+  
+  
+  
+<div class="component-preview  component-preview-helptext" aria-label="Eksempel på hjælpetekst og fejlmeddelelse">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <p class="form-hint">Hjælpetekst, der forklarer, hvad du skal gøre</p>
+<p class="form-error-message">Fejlmeddelelse, der hjælper brugeren videre
+</p>
+    </div>
+    
+</div>
+
+
+  
+  <p><a href="/design/typografi/tekst/#hjaelpetekst-retningslinjer">Læs retningslinjer for hjælpetekst og fejlmeddelelser</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-helptext" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class=&quot;form-hint&quot;&gt;Hjælpetekst, der forklarer, hvad du skal gøre&lt;/p&gt;
+&lt;p class=&quot;form-error-message&quot;&gt;Fejlmeddelelse, der hjælper brugeren videre
+&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/typografi/tekst/tekst-caption">
+  <h2 id="billedetekst">Billedetekst</h2>
+  
+    <p class="font-lead"></p>
+  
+  
+  
+<div class="component-preview  component-preview-caption" aria-label="Eksempel på billedetekst">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="figcaption">Dette er en billedetekst</div>
+    </div>
+    
+</div>
+
+
+  
+  <p><a href="/design/typografi/tekst/#billedetekst-retningslinjer">Læs retningslinjer for billedetekst</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-caption" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;figcaption&quot;&gt;Dette er en billedetekst&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/typografi/tekst/tekst-display">
+  <h2 id="stor-tekst">Stor tekst</h2>
+  
+    <p class="font-lead"></p>
+  
+  
+  
+<div class="component-preview  component-preview-displaytext" aria-label="Eksempel på stor tekst">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <p class="displayheading-1">Stor tekst nr. 1</p>
+<p class="displayheading-2">Stor tekst nr. 2</p>
+<p class="displayheading-2 text-positive">Stor positiv tekst</p>
+<p class="displayheading-2 text-negative">Stor negativ tekst</p>
+    </div>
+    
+</div>
+
+
+  
+  <p><a href="/design/typografi/tekst/#display-retningslinjer">Læs retningslinjerne for stor tekst</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-displaytext" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class=&quot;displayheading-1&quot;&gt;Stor tekst nr. 1&lt;/p&gt;
+&lt;p class=&quot;displayheading-2&quot;&gt;Stor tekst nr. 2&lt;/p&gt;
+&lt;p class=&quot;displayheading-2 text-positive&quot;&gt;Stor positiv tekst&lt;/p&gt;
+&lt;p class=&quot;displayheading-2 text-negative&quot;&gt;Stor negativ tekst&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+
+</section>
+
+:ET

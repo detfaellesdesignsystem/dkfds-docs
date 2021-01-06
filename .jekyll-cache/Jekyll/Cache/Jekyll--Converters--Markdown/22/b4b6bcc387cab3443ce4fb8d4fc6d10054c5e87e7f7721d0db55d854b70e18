@@ -1,0 +1,16 @@
+I"�<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-external-link" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Link som åbner et &lt;a href=&quot;&quot; class=&quot;icon-link&quot;&gt;eksternt
+        website&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Ekternt link gør brug af ikoner. <a href="/kode/ikoner/">Se dokumentationen for implementering af ikoner</a>.</p>
+:ET

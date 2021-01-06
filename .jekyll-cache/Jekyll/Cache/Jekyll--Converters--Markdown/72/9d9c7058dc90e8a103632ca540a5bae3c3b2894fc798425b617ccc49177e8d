@@ -1,0 +1,22 @@
+I"
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;footer&gt;
+
+    &lt;div class=&quot;language-switcher&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;ul aria-label=&quot;Vælg sprog fra listen &quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=da&quot; lang=&quot;da&quot;
+                        aria-label=&quot;Valgt sprog: Dansk&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#check&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Dansk&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=en-GB&quot; lang=&quot;en-GB&quot; class=&quot;js-tooltip&quot;
+                        data-tooltip=&quot;Engelsk&quot;&gt;English&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=de&quot; lang=&quot;de&quot; class=&quot;js-tooltip&quot;
+                        data-tooltip=&quot;Tysk&quot;&gt;Deutsch&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=pl&quot; lang=&quot;pl&quot; class=&quot;js-tooltip&quot;
+                        data-tooltip=&quot;Polsk&quot;&gt;Polski&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/footer&gt;</code></pre></figure>
+
+:ET

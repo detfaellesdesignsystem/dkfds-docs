@@ -1,0 +1,24 @@
+I"5<h3>Implementering</h3>
+
+<h4>Ydre streger</h4>
+
+<p>Ydre streger er 1px bredde og er mørk grå <code>#747474</code>.</p>
+
+<p>Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.</p>
+
+<h4>Indre streger</h4>
+
+<p>Indre streger er 1px bredde og er lys grå <code>#BFBFBF</code>.</p>
+
+<p>Anvendes som indvendige streger i komponenter, der kræver separering af elementer.</p>
+
+<h4>Indre-indre streger</h4>
+
+<p>Indre-indre streger er 1px bredde og er lysere grå <code>#DCDCDC</code>.</p>
+
+<p>Anvendes som indvendige streger i komponenter, der kræver yderligere separering af elementer.</p>
+
+<h4>Knap-kant-streger</h4>
+
+<p>Stregen rundt om knapper (Borders) er 2px bredde og farven afhænger af temaet: For borger.dk er det farven <code>#3C5C22</code> og for Virk er det farven <code>#004993</code>.</p>
+:ET

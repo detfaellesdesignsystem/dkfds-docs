@@ -1,0 +1,17 @@
+I"S<p><a href="/design/typografi/tekst/#broedtekst-retningslinjer">Læs retningslinjerne for brødtekst</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-inlinetext" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Brødtekst&lt;/p&gt;
+&lt;p class=&quot;small-text&quot;&gt;Dette er lille brødtekst&lt;/p&gt;
+&lt;p class=&quot;bold&quot;&gt;Dette er fed brødtekst&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

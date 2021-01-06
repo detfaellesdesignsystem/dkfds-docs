@@ -1,0 +1,15 @@
+I"k<p class="small-text mt-0">01-04-2019</p>
+
+<ul>
+  <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Fjernet højde på cards</li>
+  <li>Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.</li>
+  <li>Fikset fokus border på faneblad</li>
+</ul>
+
+<div class="alert alert-info" role="alert" aria-label="Der vises fremhævet information">
+    <div class="alert-body">
+        <p class="alert-heading">Semantisk versionering</p>
+        <p class="alert-text">Fra denne release 4.0.0 og fremover vil FDS gøre brug af semantisk versionering.</p>
+    </div>
+</div>
+:ET

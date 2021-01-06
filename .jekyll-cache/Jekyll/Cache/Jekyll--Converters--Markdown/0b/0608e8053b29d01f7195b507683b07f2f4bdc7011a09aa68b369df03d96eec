@@ -1,0 +1,39 @@
+I"r
+<div class="component-preview  component-preview-spinner" aria-label="Eksempel på spinner">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/spinner/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: spinner</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="spinner"></div>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/spinner/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/spinner/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-spinner" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>For at ændre spinnerens størrelse kan <code>font-size</code> gøres større eller mindre.</p>
+
+<p>Anvend ARIA attributten <code>aria-busy="true"</code> på elementet, der er igang med at blive opdateret til at markere for skærmlæsere, at der er en live region i gang med indlæsning og sæt værdien til <code>false</code>, når den er indlæst.</p>
+:ET

@@ -1,0 +1,14 @@
+I"ù
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;!-- Placering: top --&gt;
+&lt;button class=&quot;button button-primary js-tooltip&quot;
+    data-tooltip-position=&quot;top&quot; data-tooltip=&quot;Top tooltip&quot;&gt;
+    Top
+&lt;/button&gt;
+
+&lt;!-- Placering: bund --&gt;
+&lt;button class=&quot;button button-primary js-tooltip&quot;
+    data-tooltip-position=&quot;bottom&quot; data-tooltip=&quot;Bund tooltip&quot;&gt;
+    Bund
+&lt;/button&gt;</code></pre></figure>
+
+:ET

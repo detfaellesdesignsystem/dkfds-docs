@@ -1,0 +1,261 @@
+I"�.
+<div class="component-preview  component-preview-checkbox-large" aria-label="Eksempel på tjekboks">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/checkbox-large/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: checkbox-large</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="form-group">
+    <fieldset>
+        <legend class="h5">Stor tjekboks (anbefalet)</legend>
+        <ul class="nobullet-list">
+            <li>
+                <input id="large1" type="checkbox" name="checkbox-large[]" value="1" class="form-checkbox  checkbox-large " />
+                <label for="large1" class="">Tjekboks 1</label>
+            </li>
+            <li>
+                <input id="large2" type="checkbox" name="checkbox-large[]" value="2" class="form-checkbox  checkbox-large " />
+                <label for="large2" class="">Tjekboks 2</label>
+            </li>
+            <li>
+                <input id="large3" type="checkbox" name="checkbox-large[]" value="3" class="form-checkbox  checkbox-large " />
+                <label for="large3" class="">Tjekboks 3</label>
+            </li>
+            <li>
+                <input id="large4" type="checkbox" name="checkbox-large[]" value="4" class="form-checkbox  checkbox-large " disabled="" />
+                <label for="large4" class="">Tjekboks 4</label>
+            </li>
+        </ul>
+    </fieldset>
+</div>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/tjekboks/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/tjekboks/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-checkbox-large" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend class=&quot;h5&quot;&gt;Stor tjekboks (anbefalet)&lt;/legend&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;large1&quot; type=&quot;checkbox&quot; name=&quot;checkbox-large[]&quot;
+                    value=&quot;1&quot; class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;large1&quot; class=&quot;&quot;&gt;Tjekboks 1&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;large2&quot; type=&quot;checkbox&quot; name=&quot;checkbox-large[]&quot;
+                    value=&quot;2&quot; class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;large2&quot; class=&quot;&quot;&gt;Tjekboks 2&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;large3&quot; type=&quot;checkbox&quot; name=&quot;checkbox-large[]&quot;
+                    value=&quot;3&quot; class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;large3&quot; class=&quot;&quot;&gt;Tjekboks 3&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;large4&quot; type=&quot;checkbox&quot; name=&quot;checkbox-large[]&quot;
+                    value=&quot;4&quot; class=&quot;form-checkbox  checkbox-large &quot;
+                    disabled /&gt;
+                &lt;label for=&quot;large4&quot; class=&quot;&quot;&gt;Tjekboks 4&lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<ul>
+  <li>Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.</li>
+  <li>Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.</li>
+  <li>Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</li>
+  <li>Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.</li>
+</ul>
+
+<h2>Varianter</h2>
+
+<h3 id="fejlmeddelelser">Fejlmeddelelse</h3>
+
+<div class="component-preview component-preview-code  component-code-checkbox-error" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/checkbox-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;fieldset aria-describedby=&quot;example-checkbox-error&quot;&gt;
+        &lt;legend class=&quot;h5&quot;&gt;Tjekboks med fejl&lt;/legend&gt;
+        &lt;span class=&quot;form-error-message&quot; id=&quot;example-checkbox-error&quot;&gt;&lt;span
+                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Hjælpsom fejlmeddelelse&lt;/span&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;checkboxerror1&quot; type=&quot;checkbox&quot;
+                    name=&quot;checkboxerror&quot; value=&quot;1&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;checkboxerror1&quot; class=&quot;&quot;&gt;Tjekboks 1&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;checkboxerror2&quot; type=&quot;checkbox&quot;
+                    name=&quot;checkboxerror[]&quot; value=&quot;2&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;checkboxerror2&quot; class=&quot;&quot;&gt;Tjekboks 2&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;checkboxerror3&quot; type=&quot;checkbox&quot;
+                    name=&quot;checkboxerror[]&quot; value=&quot;3&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;checkboxerror3&quot; class=&quot;&quot;&gt;Tjekboks 3&lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="lille-tjekboks">Lille tjekboks</h3>
+
+<div class="component-preview component-preview-code  component-code-checkbox-small" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/checkbox-small/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend class=&quot;h5&quot;&gt;Lille tjekboks&lt;/legend&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;small1&quot; type=&quot;checkbox&quot; name=&quot;checkbox-small[]&quot;
+                    value=&quot;1&quot; class=&quot;form-checkbox   &quot; /&gt;
+                &lt;label for=&quot;small1&quot; class=&quot;&quot;&gt;Tjekboks 1&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;small2&quot; type=&quot;checkbox&quot; name=&quot;checkbox-small[]&quot;
+                    value=&quot;2&quot; class=&quot;form-checkbox   &quot; /&gt;
+                &lt;label for=&quot;small2&quot; class=&quot;&quot;&gt;Tjekboks 2&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;small3&quot; type=&quot;checkbox&quot; name=&quot;checkbox-small[]&quot;
+                    value=&quot;3&quot; class=&quot;form-checkbox   &quot; /&gt;
+                &lt;label for=&quot;small3&quot; class=&quot;&quot;&gt;Tjekboks 3&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;small4&quot; type=&quot;checkbox&quot; name=&quot;checkbox-small[]&quot;
+                    value=&quot;4&quot; class=&quot;form-checkbox   &quot; disabled /&gt;
+                &lt;label for=&quot;small4&quot; class=&quot;&quot;&gt;Tjekboks 4&lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Vær opmærksom på, at vi anbefaler, at man bruger den store tjekboks.</p>
+
+<h3 id="skjult-indhold-collapse">Skjult indhold (Collapse)</h3>
+
+<div class="component-preview component-preview-code  component-code-checkbox-collapse" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/checkbox-collapse/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+
+    &lt;input id=&quot;id-checkbox1&quot; type=&quot;checkbox&quot; name=&quot;checkbox1&quot; value=&quot;1&quot;
+        class=&quot;form-checkbox  checkbox-large js-checkbox-toggle-content&quot;
+        data-aria-controls=&#39;collapse-check1&#39; data-aria-expanded=&#39;false&#39; /&gt;
+    &lt;label for=&quot;id-checkbox1&quot; class=&quot;&quot;&gt;Tjekboks viser indhold&lt;/label&gt;
+
+    &lt;div id=&quot;collapse-check1&quot; aria-hidden=&quot;true&quot;
+        class=&quot;box-border-l collapsed&quot;&gt;
+        &lt;div class=&quot;py-4&quot;&gt;
+            &lt;p&gt;Dette indhold bliver vist når tjekboksen er valgt.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p><a href="/komponenter/tjekboks/#retningslinjer">Retningslinjer</a></p>
+
+<p>For at initialisere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
+
+<ul>
+  <li>Klassen <code>'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initialiseret.</li>
+  <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id’et på det element som skal vises på tjekboksen er aktiveret.</li>
+  <li>Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
+  <li><code>aria-controls="id-of-target-to-collapse" </code></li>
+</ul>
+
+<p>Det element som skal collapses/expandes skal have følgende:</p>
+
+<ul>
+  <li><code>id="id-of-target-to-collapse"</code></li>
+  <li><code>aria-hidden="true/false"</code></li>
+</ul>
+
+<h2>JavaScript</h2>
+<p>Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CheckboxToggleContent(document.getElementById(&#39;CHECKBOX-INPUT-ID&#39;));</code></pre></figure>
+
+<h4>Events</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Event key</th>
+      <th>Element</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fds.collapse.open</td>
+      <td><code>input.js-checkbox-toggle-content</code></td>
+      <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet</td>
+    </tr>
+    <tr>
+      <td>fds.collapse.close</td>
+      <td><code>input.js-checkbox-toggle-content</code></td>
+      <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet</td>
+    </tr>
+  </tbody>
+</table>
+:ET

@@ -1,0 +1,62 @@
+I"�
+<div class="component-preview  component-preview-headings" aria-label="Eksempel på overskrifter">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/headings/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: headings</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <h1>Overskrift 1</h1>
+<h2>Overskrift 2</h2>
+<h3>Overskrift 3</h3>
+<h4>Overskrift 4</h4>
+<h5>Overskrift 5</h5>
+<h6>Overskrift 6</h6>
+    </div>
+    
+</div>
+
+<p><a href="/design/typografi/overskrifter/#retningslinjer">Læs retningslinjerne for overskrifter</a></p>
+
+<h2 class="h4">HTML Struktur</h2>
+
+<div class="component-preview component-preview-code  component-code-headings" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1&gt;Overskrift 1&lt;/h1&gt;
+&lt;h2&gt;Overskrift 2&lt;/h2&gt;
+&lt;h3&gt;Overskrift 3&lt;/h3&gt;
+&lt;h4&gt;Overskrift 4&lt;/h4&gt;
+&lt;h5&gt;Overskrift 5&lt;/h5&gt;
+&lt;h6&gt;Overskrift 6&lt;/h6&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Hold en stram overskriftsstruktur i koden. En <code>&lt;h3&gt;</code> altid er under en <code>&lt;h2&gt;</code>, en <code>&lt;h4&gt;</code> under en <code>&lt;h3&gt;</code> osv. <code>&lt;h1&gt;</code> er altid øverst i hierarkiet.</p>
+
+<p>Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet udtryk, så brug en klasse til at style overskriften til at ligne et andet niveau.</p>
+
+<h2 class="h4">Eksempel på en overskrift, der ligner et andet niveau</h2>
+
+<div class="component-preview component-preview-code  component-code-heading" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/heading/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h2 class=&quot;h3&quot;&gt;Dette er en h2 overskrift, som ligner en h3&lt;/h2&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

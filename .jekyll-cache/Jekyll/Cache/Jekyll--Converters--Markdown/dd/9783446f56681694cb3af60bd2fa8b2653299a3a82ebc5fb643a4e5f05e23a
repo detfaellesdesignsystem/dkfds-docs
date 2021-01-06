@@ -1,0 +1,34 @@
+I")
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;fieldset aria-describedby=&quot;example-radiobutton-error&quot;&gt;
+        &lt;legend class=&quot;h5&quot;&gt;Radioknap med fejl&lt;/legend&gt;
+        &lt;span class=&quot;form-error-message&quot;
+            id=&quot;example-radiobutton-error&quot;&gt;&lt;span
+                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Hjælpsom fejlmeddelelse&lt;/span&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;weekly&quot; type=&quot;radio&quot; name=&quot;often-pay&quot;
+                    value=&quot;weekly&quot; class=&quot;form-radio  radio-large &quot; /&gt;
+                &lt;label for=&quot;weekly&quot; id=&quot;form-label-weekly&quot;
+                    class=&quot;&quot;&gt;Ugentligt &lt;/label&gt;
+
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;fortnightly&quot; type=&quot;radio&quot; name=&quot;often-pay&quot;
+                    value=&quot;fortnightly&quot; class=&quot;form-radio  radio-large &quot; /&gt;
+                &lt;label for=&quot;fortnightly&quot; id=&quot;form-label-fortnightly&quot;
+                    class=&quot;&quot;&gt;Hver fjortende dag &lt;/label&gt;
+
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;monthly&quot; type=&quot;radio&quot; name=&quot;often-pay&quot;
+                    value=&quot;monthly&quot; class=&quot;form-radio  radio-large &quot; /&gt;
+                &lt;label for=&quot;monthly&quot; id=&quot;form-label-monthly&quot;
+                    class=&quot;&quot;&gt;Månedligt &lt;/label&gt;
+
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

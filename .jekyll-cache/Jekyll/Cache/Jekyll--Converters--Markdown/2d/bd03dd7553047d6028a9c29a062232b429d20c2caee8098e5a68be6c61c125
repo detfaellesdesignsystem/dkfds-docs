@@ -1,0 +1,19 @@
+I"�
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group search&quot;&gt;
+    &lt;label for=&quot;input-type-text&quot; class=&quot;sr-only&quot;&gt;Søg efter indhold&lt;/label&gt;
+    &lt;input class=&quot;form-input input-char-27&quot; id=&quot;input-type-text&quot;
+        name=&quot;search-button&quot; title=&quot;Search&quot; type=&quot;search&quot;&gt;
+    &lt;button class=&quot;button button-search&quot;&gt;Søg&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group search&quot;&gt;
+    &lt;label for=&quot;input-type-text-icon&quot; class=&quot;sr-only&quot;&gt;Søg efter
+        indhold&lt;/label&gt;
+    &lt;input class=&quot;form-input input-width-xs&quot; id=&quot;input-type-text-icon&quot;
+        name=&quot;search-icon&quot; title=&quot;Search&quot; type=&quot;search&quot;&gt;
+    &lt;button
+        class=&quot;button button-search&quot;&gt;&lt;svg class=&quot;icon-svg m-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#magnify&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+            class=&quot;sr-only&quot;&gt;Søg&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

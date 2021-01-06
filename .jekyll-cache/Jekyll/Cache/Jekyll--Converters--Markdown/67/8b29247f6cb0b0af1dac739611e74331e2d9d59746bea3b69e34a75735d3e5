@@ -1,0 +1,11 @@
+I"Û
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-readonly&quot;&gt;
+        Inputfelt som er readonly
+    &lt;/label&gt;
+
+    &lt;input class=&quot;form-input &quot; required id=&quot;input-readonly&quot;
+        value=&quot;012345-6789&quot; name=&quot;input-readonly&quot; type=&quot;text&quot; readonly&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET
