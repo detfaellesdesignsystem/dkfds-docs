@@ -1141,6 +1141,19 @@ body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="
   border-top: $button-border;
 }
 
+.form-error-border-example{
+  border-top: 4px solid $color-error;
+}
+.details-border-example{
+  border-top: 4px solid $color-gray-light;
+}
+.sidenav-border-example{
+  border-top: $sidenav-active-border-width solid $color-primary;
+}
+.navigation-border-example{
+  border-top: 7px solid $color-primary;
+}
+
 //SHADOWS
 .heavy-shadow-example {
   width: 144px;

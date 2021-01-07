@@ -1,9 +1,0 @@
-I"π
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-area&quot;&gt;Tekstomr√•de med
-        label&lt;/label&gt;
-
-    &lt;textarea class=&quot;form-input &quot; rows=&quot;5&quot; placeholder=&quot;&quot; id=&quot;input-area&quot; name=&quot;input-area&quot; &gt;&lt;/textarea&gt;
-&lt;/div&gt;</code></pre></figure>
-
-:ET
