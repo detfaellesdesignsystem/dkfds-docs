@@ -1,0 +1,259 @@
+I"�(
+<div class="component-preview  component-preview-alert" aria-label="Eksempel på besked komponent">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/alert/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: alert</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="alert alert-info">
+    <div class="alert-body">
+        <p class="alert-heading">Informativ besked</p>
+        <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.</p>
+    </div>
+</div>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/beskeder/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/beskeder/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-alert" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Informativ besked&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Anvend ARIA <code>role="alert"</code> til at øge tilgængeligheden ved at markere beskeden som noget der skal annonceres gennem eventuelle hjælpeteknologier. Mærk beskeden med <code>role="alertdialog"</code>, hvis den indeholder interaktivitet for brugeren.</p>
+
+<h2>Varianter</h2>
+
+<h3 id="farver">Farver</h3>
+
+<h4>Informativ</h4>
+<p>Informativ er blå, og defineres med klassen <code>alert-info</code>.</p>
+
+<div class="component-preview component-preview-code  component-code-alert" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/alert/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Informativ besked&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4>Succes</h4>
+<p>Succesbesked er grøn, og defineres med klassen <code>alert-success</code>.</p>
+
+<div class="component-preview component-preview-code  component-code-alert-success" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/alert-success/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-success&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Succesbesked&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4>Advarsel</h4>
+<p>Besked med advarsel er orange, og defineres med klassen <code>alert-warning</code>.</p>
+
+<p>Bemærk, at attributten <code>role="alert"</code> bør tilføjes i dette tilfælde for at øge tilgængeligheden. Uanset, hvor fokus er på siden, vil beskeden da blive læst op med det samme.</p>
+
+<div class="component-preview component-preview-code  component-code-alert-warning" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/alert-warning/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Advarsel&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4>Fejl</h4>
+<p>Besked med fejl er rød, og defineres med klassen <code>alert-error</code>.</p>
+
+<p>Bemærk, at attributten <code>role="alert"</code> bør tilføjes i dette tilfælde for at øge tilgængeligheden. Uanset, hvor fokus er på siden, vil beskeden da blive læst op med det samme.</p>
+
+<div class="component-preview component-preview-code  component-code-alert-error" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/alert-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Fejl&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="beskeder-med-ikon">Ikon</h3>
+
+<div class="component-preview component-preview-code  component-code-alerts-icons" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/alerts-icons/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info alert--show-icon&quot; role=&quot;alert&quot;
+    aria-atomic=&quot;true&quot; aria-label=&quot;Beskedbox der viser information&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Informativ besked - med ikon&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-success alert--show-icon&quot; role=&quot;alert&quot;
+    aria-atomic=&quot;true&quot; aria-label=&quot;Beskedbox der viser succes&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Succesmeddelelse - med ikon&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-warning alert--show-icon&quot; role=&quot;alert&quot;
+    aria-atomic=&quot;true&quot; aria-label=&quot;Beskedbox der viser en advarsel&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Advarsel - med ikon&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-error alert--show-icon&quot; role=&quot;alert&quot;
+    aria-atomic=&quot;true&quot; aria-label=&quot;Beskedbox der viser en fejlmeddelelse&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Fejlbesked - med ikon&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis iste natus
+            error sit voluptatem accusantium doloremque laudantium.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="paragrafbredde">Paragrafbredde</h3>
+
+<div class="component-preview component-preview-code  component-code-alert-paragraph" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/alert-paragraph/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info alert--paragraph&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Besked med mindre bredde&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="luk-knap">Luk knap</h3>
+
+<div class="component-preview component-preview-code  component-code-alert-close" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/alert-close/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info has-close&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading pr-7&quot;&gt;Besked med luk&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;&lt;a href=&quot;javascript:void(0);&quot;
+            class=&quot;alert-close&quot;&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

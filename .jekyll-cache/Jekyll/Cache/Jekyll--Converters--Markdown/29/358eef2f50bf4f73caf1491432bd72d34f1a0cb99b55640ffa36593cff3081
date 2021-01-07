@@ -1,0 +1,15 @@
+I"å<p><a href="/design/typografi/overskrift/#subheading">LÃ¦s retningslinjer for subheadings</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-subheading" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class=&quot;subheading&quot;&gt;Dette er en subheading&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

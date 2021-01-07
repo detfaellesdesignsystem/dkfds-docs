@@ -1,0 +1,59 @@
+I"�
+<h3>Design</h3>
+
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Tekst</th>
+      <th>Skrifttype</th>
+      <th>Skriftstørrelse</th>
+      <th>Tekst tykkelse (font-weight)</th>
+      <th>Tekstfarve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hjælpetekst</td>
+      <td>IBM Plex Sans</td>
+      <td>16px</td>
+      <td>400</td>
+      <td>#747474</td>
+    </tr>
+    <tr>
+      <td>Fejlmeddelelse</td>
+      <td>IBM Plex Sans</td>
+      <td>16px</td>
+      <td>600</td>
+      <td>#CC0000</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="hjaelpetekst-retningslinjer">Retningslinjer</h3>
+
+<p>Hjælpetekst og fejltekst knytter sig i udpræget grad til formularer. Du kan også anvende dem, hvor der er behov for at hjælpe brugeren med forklaring af et element eller at give feedback på et element.</p>
+
+<h4>Hjælpetekst</h4>
+<p>Nogle gange er det nødvendigt at forklare eller eksemplificere en feltoverskrift. Her kan du anvende hjælpetekst. Du kan også bruge hjælpetekst til at forklare, hvorfor du efterspørger særligt følsomme oplysninger. Fx hvis det kan være en barriere for at få et svar fra brugeren.</p>
+
+<p>Brug hjælpetekst til at give uddybende forklaring (fx til at understøtte feltoverskrifter).</p>
+
+<p><a href="/komponenter/felter/#hjælpetekst">Se eksempel på brug af hjælpetekst</a></p>
+
+<h4>Fejlmeddelelse</h4>
+
+<p>Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder særligt, når noget fejler og fejltekst er et helt centralt element for formularer. Sørg derfor for, at de er knivskarpe og præcist kommunikerer, hvad fejlen består i, og hvad brugeren skal gøre for at komme videre. Skriv så vidt muligt fejlmeddelelse og vejledning i én og samme sætning.</p>
+
+<ul>
+  <li>Skriv klar og præcis fejltekst i et sprog, som brugeren forstår.</li>
+  <li>Vær høflig (“Indtast venligst din adresse”) og vær ikke anklagende (“Du mangler at indtaste din adresse”). Hjælp brugeren med at løse fejlen.</li>
+  <li>Skriv ikke tekniske eller fagligt tunge fejltekster og brug ikke “jargon”.</li>
+  <li>Placer fejlteksten dér, hvor fejlen forekommer.</li>
+  <li>Fejltekst er som udgangspunkt rød. I formulerer skal du indikere fejltekst med en rød streg. Andre steder end i formularer skal du indikere fejltekst med et fejlikon.</li>
+</ul>
+
+<ul class="nobullet-list">
+  <li><a href="/komponenter/felter/#fejlmeddelelse">Se eksempel på brug af fejlmeddelelse</a></li>
+  <li><a href="https://www.nngroup.com/articles/errors-forms-design-guidelines/" class="icon-link">Ti gode råd vedrørende fejlmeddelelser i formularer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+:ET

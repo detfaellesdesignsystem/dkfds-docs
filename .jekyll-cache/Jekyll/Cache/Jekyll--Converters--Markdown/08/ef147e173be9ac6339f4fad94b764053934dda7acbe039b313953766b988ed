@@ -1,0 +1,17 @@
+I"G
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+
+    &lt;input id=&quot;id-checkbox1&quot; type=&quot;checkbox&quot; name=&quot;checkbox1&quot; value=&quot;1&quot;
+        class=&quot;form-checkbox  checkbox-large js-checkbox-toggle-content&quot;
+        data-aria-controls=&#39;collapse-check1&#39; data-aria-expanded=&#39;false&#39; /&gt;
+    &lt;label for=&quot;id-checkbox1&quot; class=&quot;&quot;&gt;Tjekboks viser indhold&lt;/label&gt;
+
+    &lt;div id=&quot;collapse-check1&quot; aria-hidden=&quot;true&quot;
+        class=&quot;box-border-l collapsed&quot;&gt;
+        &lt;div class=&quot;py-4&quot;&gt;
+            &lt;p&gt;Dette indhold bliver vist når tjekboksen er valgt.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

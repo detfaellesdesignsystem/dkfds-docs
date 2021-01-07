@@ -1,0 +1,27 @@
+I"�<h3>Design</h3>
+
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Skrifttype</th>
+      <th>Skriftstørrelse</th>
+      <th>Tekst tykkelse (font-weight)</th>
+      <th>Tekstfarve</th>
+      <th>Afstand mellem bogstaver</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IBM Plex Sans</td>
+      <td>13px</td>
+      <td>400</td>
+      <td>#1A1A1A</td>
+      <td>0.4 px</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="billedetekst-retningslinjer">Retningslinjer</h3>
+
+<p>Billedetekst vises under et billede, således at det synligt bemærkes at teksten og billedet hører sammen, samt at teksten ikke nødvendigvis er en del af den øvrige brødtekst.</p>
+:ET

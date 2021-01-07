@@ -1,0 +1,14 @@
+I"�<p>Som beskrevet i <a href="/design/typografi/">Typografi afsnittet under design</a> gør vi brug af fonten IBM Plex Sans i Det Fælles Designsystem. Da det er en ekstern font, skal den loades i hver løsning. Fonten leveres samlet med DKFDS pakken.</p>
+
+<h2>Preload</h2>
+
+<p>Man kan vælge at gøre brug af preload, således at fonten loades tidligere og giver derfor en bedre oplevelse af løsningen.</p>
+
+<p>Nedenstående kode opdateres, så stien matcher løsningen, og koden indsættes i <code>&lt;head&gt;</code>-sektionen.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;!-- Preload fonts --&gt;
+&lt;link rel=&quot;preload&quot; href=&quot;/dkfds/dist/fonts/IBMPlexSans-Medium.woff&quot; as=&quot;font&quot; crossorigin=&quot;&quot;&gt;
+&lt;link rel=&quot;preload&quot; href=&quot;/dkfds/dist/fonts/IBMPlexSans-Bold.woff&quot; as=&quot;font&quot; crossorigin=&quot;&quot;&gt;
+&lt;link rel=&quot;preload&quot; href=&quot;/dkfds/dist/fonts/IBMPlexSans-Regular.woff&quot; as=&quot;font&quot; crossorigin=&quot;&quot;&gt;
+&lt;link rel=&quot;preload&quot; href=&quot;/dkfds/dist/fonts/IBMPlexSans-SemiBold.woff&quot; as=&quot;font&quot; crossorigin=&quot;&quot;&gt;</code></pre></figure>
+:ET

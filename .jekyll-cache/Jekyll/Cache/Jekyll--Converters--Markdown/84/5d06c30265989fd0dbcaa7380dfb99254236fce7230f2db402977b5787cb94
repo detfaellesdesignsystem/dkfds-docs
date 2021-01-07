@@ -1,0 +1,47 @@
+I"�<h3>Design</h3>
+
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Tekst</th>
+      <th>Skrifttype</th>
+      <th>Skriftstørrelse</th>
+      <th>Tekst tykkelse (font-weight)</th>
+      <th>Tekstfarve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brødtekst</td>
+      <td>IBM Plex Sans</td>
+      <td>16px</td>
+      <td>400</td>
+      <td>#1a1a1a</td>
+    </tr>
+    <tr>
+      <td>Lille brødtekst</td>
+      <td>IBM Plex Sans</td>
+      <td>14px</td>
+      <td>400</td>
+      <td>#1a1a1a</td>
+    </tr>
+    <tr>
+      <td>Fed brødtekst</td>
+      <td>IBM Plex Sans</td>
+      <td>16px</td>
+      <td>700</td>
+      <td>#1a1a1a</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="broedtekst-retningslinjer">Retningslinjer</h3>
+
+<ul>
+  <li>Undgå “mure af tekst” i din selvbetjeningsløsning: Bruge white space / mellemrum til at skabe luft mellem tekster og øge læsbarheden.</li>
+  <li>Brug kun fed tekst i meget begrænset omfang: Fx inde i sætninger til at fremhæve særligt centrale tal eller pointer.</li>
+  <li>Brug ikke fed tekst som overskrift.</li>
+  <li>Brug ikke understreget tekst, da det ligner links.</li>
+  <li>Brug ikke kursiv tekst, da det nedsætter læsbarheden.</li>
+</ul>
+:ET

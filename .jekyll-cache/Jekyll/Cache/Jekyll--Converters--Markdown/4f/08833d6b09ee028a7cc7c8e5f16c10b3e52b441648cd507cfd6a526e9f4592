@@ -1,0 +1,225 @@
+I"
+!
+<div class="component-preview  component-preview-text-input" aria-label="Eksempel på tekstfelt">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="form-group">
+    <label class="form-label " for="input-type-text">
+        Inputfelt med label
+    </label>
+
+    <input class="form-input " required="" id="input-type-text" value="" name="input-type-text" type="text" />
+</div>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/felter/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/felter/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-type-text&quot;&gt;
+        Inputfelt med label
+    &lt;/label&gt;
+
+    &lt;input class=&quot;form-input &quot; required id=&quot;input-type-text&quot; value=&quot;&quot;
+        name=&quot;input-type-text&quot; type=&quot;text&quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h2>Varianter</h2>
+
+<h3 id="felt-med-fejlmeddelelse">Felt med fejlmeddelelse</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-error" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;form-error&quot;&gt;
+        Inputfelt med fejl
+    &lt;/label&gt;
+    &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;
+        Fx 12345678
+    &lt;/span&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Hjælpsom fejlbesked
+    &lt;/span&gt;
+    &lt;input class=&quot;form-input &quot; required id=&quot;form-error&quot; value=&quot;&quot;
+        name=&quot;form-error&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
+        aria-describedby=&quot;form-error-hint form-error-error&quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Sørg for at rette i de nødvendige attributter, så værdierne er unikke og refererer til de rette elementer:</p>
+
+<ul>
+  <li><code>for</code></li>
+  <li><code>id</code></li>
+  <li><code>name</code></li>
+  <li><code>aria-labelledby</code></li>
+  <li><code>aria-describedby</code></li>
+</ul>
+
+<h3 id="felt-med-frivillig-indtastning">Felt med frivillig indtastning</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-optional" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-optional/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-optional&quot;&gt;
+        Inputfelt som er valgfrit&lt;span class=&quot;weight-normal&quot;&gt;
+            (frivilligt)&lt;/span&gt;
+    &lt;/label&gt;
+
+    &lt;input class=&quot;form-input &quot; id=&quot;input-optional&quot; value=&quot;&quot;
+        name=&quot;input-optional&quot; type=&quot;text&quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>De fleste felter i en selvbetjeningsløsning er påkrævet, så for at undgå mange af de standard røde stjerner ved hvert felt har vi i stedet valgt at skrive (frivilligt) ved de felter, som ikke er påkrævede.</p>
+
+<h3 id="felt-med-hjaelpetekst">Felt med hjælpetekst</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-helptext" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-helptext/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-type-text&quot;&gt;
+        Inputfelt med label og hjælpetekst
+    &lt;/label&gt;
+    &lt;span class=&quot;form-hint&quot; id=&quot;input-type-text-hint&quot;&gt;
+        Fx 12345678
+    &lt;/span&gt;
+
+    &lt;input class=&quot;form-input &quot; required id=&quot;input-type-text&quot; value=&quot;&quot;
+        name=&quot;input-type-text&quot; type=&quot;text&quot;
+        aria-describedby=&quot;input-type-text-hint &quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="deaktiveret-felt">Deaktiveret felt</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-disabled" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-disabled/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-disabled&quot;&gt;
+        Inputfelt som er låst
+    &lt;/label&gt;
+
+    &lt;input class=&quot;form-input &quot; required id=&quot;input-disabled&quot; value=&quot;&quot;
+        name=&quot;input-disabled&quot; type=&quot;text&quot; disabled=&quot;disabled&quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="read-only-felt">Read-only felt</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-readonly" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-readonly/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-readonly&quot;&gt;
+        Inputfelt som er readonly
+    &lt;/label&gt;
+
+    &lt;input class=&quot;form-input &quot; required id=&quot;input-readonly&quot;
+        value=&quot;012345-6789&quot; name=&quot;input-readonly&quot; type=&quot;text&quot; readonly&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="feltbredde">Feltbredde</h3>
+
+<p>Inputfelter har en standard bredde på 32rem, for at ændre bredden på inputfelter bruges nedenstående klasser:</p>
+
+<ul>
+  <li><code>input-width-xxs</code> har en bredde på 8rem</li>
+  <li><code>input-width-xs</code> har en bredde på 16rem</li>
+  <li><code>input-width-s</code> har en bredde på 24rem</li>
+  <li><code>input-width-m</code> har en bredde på 32rem</li>
+  <li><code>input-width-l</code> har en bredde på 40rem</li>
+  <li><code>input-width-xl</code> har en bredde på 48rem</li>
+</ul>
+
+<h4>Bredde med tegn</h4>
+
+<p>For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:</p>
+
+<ul>
+  <li><code>input-char-4</code> har en bredde der passer til 4 tegn</li>
+  <li><code>input-char-8</code> har en bredde der passer til 8 tegn</li>
+  <li><code>input-char-11</code> har en bredde der passer til 11 tegn</li>
+  <li><code>input-char-27</code> har en bredde der passer til 27 tegn</li>
+</ul>
+
+<p>For at tilføje flere input bredder, der er styret af tegn, skal der tilføjes klassen <code>input-char-X</code>, hvor det nye tal skal erstattes med X.</p>
+:ET
