@@ -11,7 +11,7 @@ headingClass: mb-0
 - Teksten i <a href="/komponenter/cards/#cards-med-samme-højde">cards med samme højde</a> placeres nu korrekt
 - Tilføjet mere afstand mellem links i footer
 - Overskriftstørrelser på mobil er blevet opdateret
-- Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/sidenav/#sidenavigation-med-information">sidenavigation</a> og <a href="/komponenter/trinindikatorer/#trinindikator-med-information">trinindikator</a>
+- Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/sidenav/#ekstra-information">sidenavigation med ekstra infomation</a> og <a href="/komponenter/trinindikatorer/#ekstra-information">trinindikator med ekstra information</a>
 - Tilføjet eksempel på tabel i Datatable
 <span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
 - Opdateret <a href="/kode/eksempler-implementering/">Eksempel på implementering i Angular</a>
