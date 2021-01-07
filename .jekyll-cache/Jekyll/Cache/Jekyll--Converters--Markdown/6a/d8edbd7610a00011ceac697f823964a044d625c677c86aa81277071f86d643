@@ -1,0 +1,46 @@
+I"�
+<div class="component-preview  component-preview-skiplink" aria-label="Eksempel på skiplink">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/skiplink/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: skiplink</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <p>For at se skip link, klik på denne tekst og tryk derefter på tab-tasten.
+</p>
+
+<a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="/komponenter/skip-link/#retningslinjer">Retningslinjer</a></li>
+  <li><a href="/komponenter/skip-link/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-skiplink" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;For at se skip link, klik på denne tekst og tryk derefter på tab-tasten.
+&lt;/p&gt;
+
+&lt;a href=&quot;#main-content&quot; class=&quot;skipnav&quot;&gt;Gå til sidens indhold&lt;/a&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Skip link <code>&lt;a&gt;</code> elementet indsættes umiddelbart lige efter <code>&lt;body&gt;</code>. Elementet skal være det første element, der kommer i fokus på siden ved brug af tastaturet.</p>
+
+<p>Skip link gør brug af anchor link <code>#main-content</code>, man skal derfor huske at sætte <code>id="main-content"</code> på det element, der omkranser indholdet på siden.</p>
+:ET

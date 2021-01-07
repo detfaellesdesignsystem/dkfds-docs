@@ -1,0 +1,9 @@
+I"6
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;a href=&quot;javascript:void(0)&quot; class=&quot;popover js-tooltip&quot;
+    data-tooltip-trigger=&quot;click&quot; data-tooltip-position=&quot;top&quot;
+    aria-label=&quot;Klik på ikon for tooltip&quot;
+    data-tooltip=&quot;Dette er en hjælpetekst i en popover&quot;&gt;
+    &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help-circle&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/a&gt;</code></pre></figure>
+
+:ET

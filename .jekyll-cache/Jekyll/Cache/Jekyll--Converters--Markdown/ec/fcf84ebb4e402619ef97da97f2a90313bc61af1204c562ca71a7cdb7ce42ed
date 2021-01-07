@@ -1,0 +1,17 @@
+I"�<p><a href="/design/typografi/tekst/#hjaelpetekst-retningslinjer">Læs retningslinjer for hjælpetekst og fejlmeddelelser</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-helptext" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class=&quot;form-hint&quot;&gt;Hjælpetekst, der forklarer, hvad du skal gøre&lt;/p&gt;
+&lt;p class=&quot;form-error-message&quot;&gt;Fejlmeddelelse, der hjælper brugeren videre
+&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

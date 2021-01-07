@@ -1,0 +1,11 @@
+I"r<p>Du bør bestræbe dig på at følge standarderne for opsummerings- og kvitteringssider, så disse bliver konsistente på tværs af selvbetjeningsløsninger.</p>
+
+<h2>Designsystemet er bygget med sig selv</h2>
+<p>Du kan bruge designssystem.dk som eksempel, da det er bygget med sig selv og overholder sine egne regler.</p>
+
+<ul class="d-md-none">
+  <li><a href="/eksempler/selvbetjeningsloesninger/" class="bold-link">Selvbetjeningsløsninger</a></li>
+  <li><a href="/eksempler/opsummeringsside/" class="bold-link">Opsummeringsside</a></li>
+  <li><a href="/eksempler/kvittering/" class="bold-link">Kvittering</a></li>
+</ul>
+:ET

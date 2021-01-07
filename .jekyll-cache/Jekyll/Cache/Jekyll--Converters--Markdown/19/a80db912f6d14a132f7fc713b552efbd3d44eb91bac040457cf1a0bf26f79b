@@ -1,0 +1,11 @@
+I"�<p class="small-text mt-0">04-07-2019</p>
+
+<ul>
+  <li>Fjernet farve på small-text mixin.</li>
+  <li>Tilpasset positionering af ikon på knapper.</li>
+  <li>Fikset fejl i input felter, hvor specialtegn (Å, Ö, Ä etc.) ikke blev vist korrekt.</li>
+  <li>Tilføjet eksempel på luk knap i <a href="/komponenter/beskeder/#beskeder-med-luk-knap">Beskeder</a>.</li>
+  <li><label class="color-info badge badge-small mr-3">Change</label>Tilføjet mulighed for at <a href="/komponenter/cards/#cards-med-samme-højde">positionere action knapper i cards</a> i bunden.</li>
+  <li>Fikset fejl ved print af eksempelløsninger i Firefox - tilføjet yderligere print CSS.</li>
+</ul>
+:ET

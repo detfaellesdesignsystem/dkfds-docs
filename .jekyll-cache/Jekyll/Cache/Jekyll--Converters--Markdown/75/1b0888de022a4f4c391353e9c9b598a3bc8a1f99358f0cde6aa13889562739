@@ -1,0 +1,350 @@
+I"�?
+<div class="component-preview  component-preview-formular" aria-label="Eksempel på formular">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/formular/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: formular</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <h1 class="h2">Dine kontaktoplysninger</h1>
+<form>
+    <!-- Felt start: Navn -->
+    <div class="form-group">
+        <label class="form-label " for="navn">
+            Navn
+        </label>
+
+        <input class="form-input " id="navn" value="" name="navn" type="text" />
+    </div>
+    <!-- Felt slut: Navn -->
+
+    <!-- Felt start: Kørekort -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Har du kørekort?</legend>
+            <ul class="nobullet-list">
+                <li>
+                    <input id="kort-ja" type="radio" name="kontakt" value="kort-ja" class="form-radio  radio-large " />
+                    <label for="kort-ja" id="form-label-kort-ja" class="">Ja </label>
+
+                </li>
+                <li>
+                    <input id="kort-nej" type="radio" name="kontakt" value="kort-nej" class="form-radio  radio-large " />
+                    <label for="kort-nej" id="form-label-kort-nej" class="">Nej </label>
+
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+    <!-- Felt slut: Kørekort -->
+
+    <!-- Knap start -->
+    <button class="button button-primary mt-9">
+        Gem oplysninger
+    </button>
+    <!-- Knap slut -->
+</form>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/formular/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-formular" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1 class=&quot;h2&quot;&gt;Dine kontaktoplysninger&lt;/h1&gt;
+&lt;form&gt;
+    &lt;!-- Felt start: Navn --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label &quot; for=&quot;navn&quot;&gt;
+            Navn
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input &quot; id=&quot;navn&quot; value=&quot;&quot; name=&quot;navn&quot;
+            type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Navn --&gt;
+
+    &lt;!-- Felt start: Kørekort --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;h4&quot;&gt;Har du kørekort?&lt;/legend&gt;
+            &lt;ul class=&quot;nobullet-list&quot;&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;kort-ja&quot; type=&quot;radio&quot; name=&quot;kontakt&quot;
+                        value=&quot;kort-ja&quot; class=&quot;form-radio  radio-large &quot; /&gt;
+                    &lt;label for=&quot;kort-ja&quot; id=&quot;form-label-kort-ja&quot;
+                        class=&quot;&quot;&gt;Ja &lt;/label&gt;
+
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;kort-nej&quot; type=&quot;radio&quot; name=&quot;kontakt&quot;
+                        value=&quot;kort-nej&quot;
+                        class=&quot;form-radio  radio-large &quot; /&gt;
+                    &lt;label for=&quot;kort-nej&quot; id=&quot;form-label-kort-nej&quot;
+                        class=&quot;&quot;&gt;Nej &lt;/label&gt;
+
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Kørekort --&gt;
+
+    &lt;!-- Knap start --&gt;
+    &lt;button class=&quot;button button-primary mt-9&quot;&gt;
+        Gem oplysninger
+    &lt;/button&gt;
+    &lt;!-- Knap slut --&gt;
+&lt;/form&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Gør brug af <code>&lt;div class="form-group"&gt;</code>, fieldset og overskrifter til at strukturere din formular.</p>
+
+<p>Skærmlæsere følger rækkefølgen af formularelementerne, som de er angivet i koden.</p>
+
+<p>Overhold derfor sammenhængen mellem den viste rækkefølge af formularelementer på skærmen og deres rækkefølge i koden og brug ikke CSS til at ændre på rækkefølgen af formularelementerne.</p>
+
+<p>Gruppér sammenhængende formularelementer ved hjælp af fieldset og brug et enkelt legend for hvert fieldset, hvor det giver mening.</p>
+
+<p>Tilføj label med korrekt <code>for</code> attribut, hvor værdien er ID’et på formularelementet det tilhører.</p>
+
+<p>Sørg for at labels til formularelementer er meningsfulde og præcise.</p>
+
+<p>Undgå placeholder-tekst. Browserne kan ikke garantere tilstrækkeligt kontrastniveau og teksten kan desuden forvirre brugerne. Placeholder-tekst forsvinder, når brugeren klikker i feltet, og dermed forsvinder information, som kunne gavne brugeren.</p>
+
+<p>Tillad copy/paste i formularelementer, hvor brugeren selv skal indtaste oplysninger.</p>
+
+<p>Formularelementer skal automatisk fremhæves, når brugeren navigerer til dem ved hjælp af tastaturet.</p>
+
+<p>Sørg for at alle elementer står i register, dvs. at de står på linje og i et naturligt lodret læse-flow fra top til bund.</p>
+
+<h4 id="kompleks">Kompleks eksempel</h4>
+
+<div class="component-preview component-preview-code  component-code-fieldset-complex" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/fieldset-complex/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1 class=&quot;h2&quot;&gt;Dine kontaktoplysninger&lt;/h1&gt;
+&lt;form&gt;
+    &lt;!-- Felt start: Fornavn --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label &quot; for=&quot;fnavn&quot;&gt;
+            Fornavn
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input &quot; id=&quot;fnavn&quot; value=&quot;&quot; name=&quot;fnavn&quot;
+            type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Fornavn --&gt;
+    &lt;!-- Felt start: Efternavn --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label &quot; for=&quot;enavn&quot;&gt;
+            Efternavn
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input &quot; id=&quot;enavn&quot; value=&quot;&quot; name=&quot;enavn&quot;
+            type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Efternavn --&gt;
+    &lt;!-- Felt start: E-mail adresse --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label &quot; for=&quot;email&quot;&gt;
+            E-mail adresse
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input &quot; id=&quot;email&quot; value=&quot;&quot; name=&quot;email&quot;
+            type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: E-mail adresse --&gt;
+    &lt;!-- Felt start: Telefonnr --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label &quot; for=&quot;telefon&quot;&gt;
+            Telefonnr.
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input &quot; id=&quot;telefon&quot; value=&quot;&quot; name=&quot;telefon&quot;
+            type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Telefonnr --&gt;
+
+    &lt;!-- Felt start: Kontaktmetode --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;h4&quot;&gt;Hvordan vil du helst kontaktes?&lt;/legend&gt;
+            &lt;ul class=&quot;nobullet-list&quot;&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;kontakt-telefon&quot; type=&quot;radio&quot; name=&quot;kontakt&quot;
+                        value=&quot;kontakt-telefon&quot;
+                        class=&quot;form-radio  radio-large &quot; /&gt;
+                    &lt;label for=&quot;kontakt-telefon&quot;
+                        id=&quot;form-label-kontakt-telefon&quot; class=&quot;&quot;&gt;Pr.
+                        telefon &lt;/label&gt;
+
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;kontakt-email&quot; type=&quot;radio&quot; name=&quot;kontakt&quot;
+                        value=&quot;kontakt-email&quot;
+                        class=&quot;form-radio  radio-large &quot; /&gt;
+                    &lt;label for=&quot;kontakt-email&quot;
+                        id=&quot;form-label-kontakt-email&quot; class=&quot;&quot;&gt;Pr. e-mail
+                    &lt;/label&gt;
+
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Kontaktmetode --&gt;
+
+    &lt;!-- Felt start: Tid på dagen --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;h4&quot;&gt;Hvornår på dagen vil det passe bedst, at vi
+                kontakter dig?&lt;/legend&gt;
+            &lt;ul class=&quot;nobullet-list&quot;&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;morgen&quot; type=&quot;checkbox&quot; name=&quot;tidspunkt[]&quot;
+                        value=&quot;morgen&quot;
+                        class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;morgen&quot; class=&quot;&quot;&gt;Om morgenen&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;middag&quot; type=&quot;checkbox&quot; name=&quot;tidspunkt[]&quot;
+                        value=&quot;middag&quot;
+                        class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;middag&quot; class=&quot;&quot;&gt;Ved middagstid&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;eftermiddag&quot; type=&quot;checkbox&quot;
+                        name=&quot;tidspunkt[]&quot; value=&quot;eftermiddag&quot;
+                        class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;eftermiddag&quot; class=&quot;&quot;&gt;Om
+                        eftermiddagen&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;aften&quot; type=&quot;checkbox&quot; name=&quot;tidspunkt[]&quot;
+                        value=&quot;aften&quot;
+                        class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;aften&quot; class=&quot;&quot;&gt;Om aftenen&lt;/label&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Tid på dagen --&gt;
+    &lt;!-- Felt start: Personlige oplysninger --&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;h4&quot;&gt;Personlige oplysninger&lt;/legend&gt;
+
+            &lt;!-- Felt start: Fødselsdato --&gt;
+
+            &lt;div class=&quot;form-group  mt-0&quot;&gt;
+                &lt;fieldset aria-dsecribedby=&quot;example-date-field-hint &quot;&gt;
+                    &lt;legend class=&quot;form-label&quot;&gt;Fødselsdato&lt;/legend&gt;
+                    &lt;span class=&quot;form-hint&quot;
+                        id=&quot;example-date-field-hint&quot;&gt;For eksempel: 05 12
+                        1987&lt;/span&gt;
+                    &lt;span class=&quot;form-error-message  d-none&quot;
+                        id=&quot;example-date-field-error&quot;&gt;&lt;span
+                            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; &lt;/span&gt;
+                    &lt;div class=&quot;date-group js-calendar-group mt-3&quot;&gt;
+                        &lt;div class=&quot;form-group form-group-day&quot;&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-day&quot;&gt;Dag&lt;/label&gt;
+                            &lt;input class=&quot;form-input js-calendar-day-input&quot;
+                                id=&quot;date-day&quot; value=&quot;&quot; type=&quot;tel&quot;
+                                data-min=&quot;1&quot; data-max=&quot;31&quot; maxlength=&quot;2&quot;
+                                pattern=&quot;^[0-9]{0,2}$&quot;
+                                data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                                title=&quot;Indskriv dag på måneden som tal&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group form-group-month&quot;&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-month&quot;&gt;Måned&lt;/label&gt;
+                            &lt;input
+                                class=&quot;form-input js-calendar-month-input&quot;
+                                id=&quot;date-month&quot; value=&quot;&quot; type=&quot;tel&quot;
+                                data-min=&quot;1&quot; data-max=&quot;12&quot; maxlength=&quot;2&quot;
+                                pattern=&quot;^[0-9]{0,2}$&quot;
+                                data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                                title=&quot;Indskriv månedens nummer&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group form-group-year &quot;&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-year&quot;&gt;År&lt;/label&gt;
+                            &lt;input
+                                class=&quot;form-input js-calendar-year-input&quot;
+                                id=&quot;date-year&quot; value=&quot;&quot; type=&quot;tel&quot;
+                                data-min=&quot;1900&quot; data-max=&quot;3000&quot;
+                                maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;
+                                data-input-regex=&quot;^[0-9]{0,4}$&quot;
+                                title=&quot;Indskriv årstal&quot; /&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/fieldset&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Felt slut: Fødselsdato --&gt;
+
+            &lt;!-- Felt start: Odense --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;fieldset&gt;
+                    &lt;legend class=&quot;h5&quot;&gt;Bor du i Odense?&lt;/legend&gt;
+                    &lt;ul class=&quot;nobullet-list&quot;&gt;
+                        &lt;li&gt;
+                            &lt;input id=&quot;odense-ja&quot; type=&quot;radio&quot;
+                                name=&quot;odense&quot; value=&quot;odense-ja&quot;
+                                class=&quot;form-radio  radio-large &quot; /&gt;
+                            &lt;label for=&quot;odense-ja&quot;
+                                id=&quot;form-label-odense-ja&quot; class=&quot;&quot;&gt;Ja
+                            &lt;/label&gt;
+
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;input id=&quot;odense-nej&quot; type=&quot;radio&quot;
+                                name=&quot;odense&quot; value=&quot;odense-nej&quot;
+                                class=&quot;form-radio  radio-large &quot; /&gt;
+                            &lt;label for=&quot;odense-nej&quot;
+                                id=&quot;form-label-odense-nej&quot; class=&quot;&quot;&gt;Nej
+                            &lt;/label&gt;
+
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/fieldset&gt;
+            &lt;/div&gt;
+            &lt;!-- Felt slut: Odense --&gt;
+        &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Personlige oplysninger --&gt;
+    &lt;!-- Knap start --&gt;
+    &lt;button class=&quot;button button-primary mt-9&quot;&gt;
+        Gem oplysninger
+    &lt;/button&gt;
+    &lt;!-- Knap slut --&gt;
+&lt;/form&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

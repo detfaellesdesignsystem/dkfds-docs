@@ -1,0 +1,148 @@
+I"�
+<div class="component-preview  component-preview-header-simple" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/header-simple/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-simple</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/header-simple/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/headers/" class="small-text">Gå til kodeafsnit<span class="sr-only">: header-simple</span></a>
+    </div>
+    
+</div>
+
+<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Brug headeren til at give brugen et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen.</p>
+
+<p>Brug headeren til at kommmunikere portal, NemLog-in-oplysninger, ansvarlig myndighed, evt. med kontaktoplysninger.</p>
+
+<p>En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Anvend ikke headeren andre steder i løsningen end i toppen af siden.</p>
+
+<p>Brug ikke topnavigationen som faneblad, anvend da <a href="/komponenter/faneblad/">fanebladskomponenten</a>.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>En header består af et antal rækker med forskelligt indhold. Jo flere rækker jo mere kompleks en header. Designsystemet giver mulighed for op til 5 rækker og minimum 2 rækker.</p>
+
+<ul>
+  <li>Række 1 og 2 er obligatoriske</li>
+  <li>Række 3 til 5 er valgfri</li>
+</ul>
+
+<p>Når du laver en header, bør du følge disse principper:</p>
+
+<ul>
+  <li>Jo enklere navigationen er, desto bedre for brugeren.</li>
+  <li>Brug kun række 3, 4, 5, med knapper, links og ekstra navigation, når det er absolut nødvendigt.</li>
+  <li>Hold altid rækkefølgen, uanset kombinationen</li>
+</ul>
+
+<div><img src="/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" /></div>
+
+<h2 class="h3">Headerens rækker forklaret</h2>
+
+<h3 class="h4">Række 1 (obligatorisk)</h3>
+
+<p>Portal-logo, NemLog-in-oplysninger og ”Log af” knap.</p>
+
+<h3 class="h4">Række 2 (obligatorisk)</h3>
+
+<p>Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt support/kontakt oplysninger.</p>
+
+<h3 class="h4">Række 3 (frivillig)</h3>
+
+<p>Sidenavigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.</p>
+
+<h3 class="h4">Række 4 (frivillig)</h3>
+
+<p>Flere sorteringsmuligheder, eventuelt ekstramenu, eventuelt knapper.</p>
+
+<h3 class="h4">Række 5 (frivillig)</h3>
+
+<p>Funktionslinks (igangsætter system- eller OS-funktionalitet, fx gem, print osv.)</p>
+
+<p>En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servicere både simple og komplekse løsninger. Den er også kompleks at anvende for brugerne. Du bør derfor udgangspunkt anvende færre end fem rækker i din header.</p>
+
+<h2 class="h3">Links</h2>
+<p><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+
+<section class="styleguide-child-container content" id="section-/komponenter/headers/headers-standard">
+  <h2 id="standard-header">Standard header</h2>
+  
+  
+  
+<div class="component-preview  component-preview-header-simple" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/header-simple/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-simple</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/header-simple/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/headers/headers-menu">
+  <h2 id="standard-header-med-navigation">Standard header med navigation</h2>
+  
+  
+  
+<div class="component-preview  component-preview-header-medium" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/header-medium/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-medium</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/header-medium/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/headers/headers-kompleks">
+  <h2 id="kompleks-header-med-alle-rækker">Kompleks header med alle rækker</h2>
+  
+  
+  
+<div class="component-preview  component-preview-header-full" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/header-full/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-full</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/header-full/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/headers/headers-stort">
+  <h2 id="header-med-større-logo-og-brugeroplysninger">Header med større logo og brugeroplysninger</h2>
+  
+  
+  
+<div class="component-preview  component-preview-header-large" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/header-large/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-large</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/header-large/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+</div>
+
+
+</section>
+
+:ET

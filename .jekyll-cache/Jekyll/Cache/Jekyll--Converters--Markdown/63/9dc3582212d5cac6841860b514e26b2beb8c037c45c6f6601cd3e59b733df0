@@ -1,0 +1,78 @@
+I"�	
+<div class="component-preview  component-preview-select" aria-label="Eksempel på drop-down">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/select/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: select</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <form class="form mb-7 input-width-m">
+
+    <div class="form-group ">
+
+        <label class="form-label " for="options">Dropdown label
+            (select)</label>
+        <select class=" form-select" name="options" id="options">
+            <option value="">Vælg</option>
+
+            <option value="option1">Mulighed 1</option>
+
+            <option value="option2">Mulighed 2</option>
+
+            <option value="option3">Mulighed 3</option>
+
+        </select>
+    </div>
+
+</form>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="/komponenter/drop-down/#retningslinjer">Retningslinjer</a></li>
+  <li><a href="/komponenter/drop-down/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-select" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;form class=&quot;form mb-7 input-width-m&quot;&gt;
+
+    &lt;div class=&quot;form-group &quot;&gt;
+
+        &lt;label class=&quot;form-label &quot; for=&quot;options&quot;&gt;Dropdown label
+            (select)&lt;/label&gt;
+        &lt;select class=&quot; form-select&quot; name=&quot;options&quot; id=&quot;options&quot;&gt;
+            &lt;option value&gt;Vælg&lt;/option&gt;
+
+            &lt;option value=&quot;option1&quot;&gt;Mulighed 1&lt;/option&gt;
+
+            &lt;option value=&quot;option2&quot;&gt;Mulighed 2&lt;/option&gt;
+
+            &lt;option value=&quot;option3&quot;&gt;Mulighed 3&lt;/option&gt;
+
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+&lt;/form&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Dropdown menu skal have et label tilknyttet.</p>
+
+<p>Anvend ikke JavaScript til automatisk at sende den valgte værdi, da en skærmlæser vælger hver option i takt med, at den læser dem op.</p>
+
+<p>Brug dropdown menu i begrænset omfang. Værdierne i en dropdown menu er ikke umiddelbart synlige for brugerne, og det øger sidens kompleksitet for dem.</p>
+:ET

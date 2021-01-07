@@ -1,0 +1,109 @@
+I"Û
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tabnav&quot; role=&quot;tablist&quot;&gt;
+
+    &lt;button aria-controls=&quot;tabpanel1&quot; id=&quot;tab1&quot; class=&quot;tabnav-item&quot;
+        role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;
+        &lt;span&gt;Fane 1&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot;
+        tabindex=&quot;0&quot; id=&quot;tabpanel1&quot; aria-labelledby=&quot;tab1&quot;&gt;
+        &lt;h2&gt;Indhold 1&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;button aria-controls=&quot;tabpanel2&quot; id=&quot;tab2&quot; class=&quot;tabnav-item&quot;
+        role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;
+        &lt;span&gt;Fane 2&lt;/span&gt;
+    &lt;/button&gt;
+
+    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;false&quot; role=&quot;tabpanel&quot;
+        tabindex=&quot;0&quot; id=&quot;tabpanel2&quot; aria-labelledby=&quot;tab2&quot;&gt;
+        &lt;h2&gt;Indhold 2&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;button aria-controls=&quot;tabpanel3&quot; id=&quot;tab3&quot; class=&quot;tabnav-item&quot;
+        role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;
+        &lt;span&gt;Fane 3&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot;
+        tabindex=&quot;0&quot; id=&quot;tabpanel3&quot; aria-labelledby=&quot;tab3&quot;&gt;
+        &lt;h2&gt;Indhold 3&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;button aria-controls=&quot;tabpanel4&quot; id=&quot;tab4&quot; class=&quot;tabnav-item&quot;
+        role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;
+        &lt;span&gt;Fane 4&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot;
+        tabindex=&quot;0&quot; id=&quot;tabpanel4&quot; aria-labelledby=&quot;tab4&quot;&gt;
+        &lt;h2&gt;Indhold 4&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;button aria-controls=&quot;tabpanel5&quot; id=&quot;tab5&quot; class=&quot;tabnav-item&quot;
+        role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;
+        &lt;span&gt;Fane 5&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot;
+        tabindex=&quot;0&quot; id=&quot;tabpanel5&quot; aria-labelledby=&quot;tab5&quot;&gt;
+        &lt;h2&gt;Indhold 5&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;button aria-controls=&quot;tabpanel6&quot; id=&quot;tab6&quot; class=&quot;tabnav-item&quot;
+        role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;
+        &lt;span&gt;Fane 6&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot;
+        tabindex=&quot;0&quot; id=&quot;tabpanel6&quot; aria-labelledby=&quot;tab6&quot;&gt;
+        &lt;h2&gt;Indhold 6&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+
+&lt;/div&gt;</code></pre></figure>
+
+:ET

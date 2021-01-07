@@ -1,0 +1,11 @@
+I"¸
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info has-close&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading pr-7&quot;&gt;Besked med luk&lt;/p&gt;
+        &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
+            sit amet.&lt;/p&gt;&lt;a href=&quot;javascript:void(0);&quot;
+            class=&quot;alert-close&quot;&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

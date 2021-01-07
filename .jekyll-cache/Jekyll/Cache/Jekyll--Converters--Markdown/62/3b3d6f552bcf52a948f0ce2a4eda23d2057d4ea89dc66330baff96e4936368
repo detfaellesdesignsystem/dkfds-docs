@@ -1,0 +1,13 @@
+I"�<p class="small-text mt-0">08-04-2019</p>
+
+<ul>
+  <li>Opdateret skip link udseende</li>
+  <li>Ændret styling, så a-element i solution-header nu kan være et h1-element</li>
+  <li>Fikset readonly fejl i Internet Explorer</li>
+  <li>Tilpasset footer margin og padding</li>
+  <li>Tilføjet print display css klasser (Fx d-print-none)</li>
+  <li>Tilføjet logo definition</li>
+  <li>Tooltip skriftstørrelse ændret fra 13 til 16px</li>
+  <li>Fikset hover farve på icon knap (button-unstyled)</li>
+</ul>
+:ET

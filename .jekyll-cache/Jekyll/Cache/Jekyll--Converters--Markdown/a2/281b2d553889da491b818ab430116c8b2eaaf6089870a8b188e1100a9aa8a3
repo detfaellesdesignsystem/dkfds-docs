@@ -1,0 +1,302 @@
+I"c)<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Du kan bruge de forskellige typer af knapper til at kommunikere centrale og vigtige funktioner til brugerne, såsom “næste” trin i en selvbetjeningsløsning, eller ”Gem”, ”Rediger”, ”Log ind”, ”Log af” m.fl.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anvende link.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Der er kun én primærknap pr. side.</p>
+
+<p>Generelt skal du anvende primære knapper til handlinger, der bringer brugeren videre i sin udfyldelse/indberetning i selvbetjeningsløsningen. Sekundære og tertiære knapper bruges til handlinger, der foregår på det aktuelle trin.</p>
+
+<p>Brug også sekundære og tertiære knapper til at vægte vigtigheden af andre tilbudte funktioner.</p>
+
+<p>Undgå for mange knapbaserede funktioner på samme side.</p>
+
+<p>Funktioner af mindre vigtighed bør du style som et <a href="/komponenter/funktionslink/">funktionslink</a>.</p>
+
+<p>Brug stort forbogstav og små bogstaver for resten af teksten på knappen.</p>
+
+<p>Skriv kort og præcist.</p>
+
+<p>Skriv i aktiv form: I stedet for at skrive ”Fejlindmelding” bør du skrive ”Indmeld en fejl”.</p>
+
+<p>I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i knappen for at signalere bestemte handlinger.</p>
+
+<div class=" component-preview-buttons-dos-donts" aria-label="Knapper do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Knapper-do.svg" alt="Eksempel på, hvordan knapper kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Placér knapper i venstre side under formularens felter. Øjet følger som oftest en ”skannelinje” til venstre i formularer (Wroblewski, 2008, s. 93-97). Når alle elementer står på én linje, skal brugerne kun bevæge øjet vertikalt – ikke både vertikalt og horisontalt.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Knapper-dont.svg" alt="Eksempel på, hvordan knapper ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undlad at placere den afsluttende knap i formularer til højre. Brugerne kan let overse højrestillede knapper, da øjet mest fokuserer til venstre, og kun kan se skarpt i en diameter på 2-4 cm ved en computerskærm (Johnson, 2014, s. 54).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
+  <li>Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)</li>
+</ul>
+
+<h3 class="h4">Disabled tilstand</h3>
+
+<p>Brug helst ikke “disabled” state på knapper eller i det hele taget, da ikke alle brugere forstår, at det som er “disabled” ikke kan anvendes.</p>
+
+<p>Brug ikke “disabled” tilstand på “næste” knapper (knapper der bringer brugeren videre i løsningen), da brugeren ved tryk på sådanne knapper skal have at vide, hvor i formularen, der mangler udfyldelse og dermed hjælpes til gennemførelse af selvbetjeningsløsningen.</p>
+
+<p>Der kan være tilfælde, hvor det giver mening for brugeren at du anvender “disabled” tilstanden, men så skal det være en aktiv del af en umiddelbar og kontekstuel kommunikation på siden; fx ved at en knap først bliver aktiv, når brugeren har godkendt nogle betingelser ved fx at sætte et flueben. I sådanne tilfælde er det vigtigt at knap og betingelse, står i umiddelbar nærhed, så brugerene bliver opmærksomme på forskellen, og så brugere der anvender zoom også kan se ændringen ske inden for deres zoom.</p>
+
+<h2 class="h3">Links</h2>
+
+<p><a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link">Hvornår skal du bruge en knap eller et link<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+
+<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-primary">
+  <h2 id="primærknap">Primærknap</h2>
+  
+  
+  
+<div class="component-preview  component-preview-buttons-primary" aria-label="Eksempel på primærknap">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-primary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-primary</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <button class="button button-primary">
+    Default
+</button>
+
+<button class="button button-primary button-hover">
+    Hover
+</button>
+
+<button class="button button-primary button-active">
+    Active
+</button>
+
+<button class="button button-primary focus">
+    Focus
+</button>
+
+<button class="button button-primary" disabled="">
+    Disabled
+</button>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-secondary">
+  <h2 id="sekundærknapper">Sekundærknapper</h2>
+  
+  
+  
+<div class="component-preview  component-preview-buttons-secondary" aria-label="Eksempel på sekundær knap">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-secondary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-secondary</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <button class="button button-secondary">
+    Default
+</button>
+
+<button class="button button-secondary button-hover">
+    Hover
+</button>
+
+<button class="button button-secondary button-active">
+    Active
+</button>
+
+<button class="button button-secondary focus">
+    Focus
+</button>
+
+<button class="button button-secondary" disabled="">
+    Disabled
+</button>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-tertiary">
+  <h2 id="tertiærknapper">Tertiærknapper</h2>
+  
+  
+  
+<div class="component-preview  component-preview-buttons-tertiary" aria-label="Eksempel på tertiær knap">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-tertiary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-tertiary</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <button class="button button-tertiary">
+    Default
+</button>
+
+<button class="button button-tertiary button-hover">
+    Hover
+</button>
+
+<button class="button button-tertiary button-active">
+    Active
+</button>
+
+<button class="button button-tertiary focus">
+    Focus
+</button>
+
+<button class="button button-tertiary" disabled="">
+    Disabled
+</button>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-back">
+  <h2 id="tilbage-knap">Tilbage-knap</h2>
+  
+  
+  
+<div class="component-preview  component-preview-buttons-back" aria-label="Eksempel på tilbageknap">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-back/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-back</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <button class="button button-quaternary">
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+    Default
+</button>
+
+<button class="button button-quaternary button-hover">
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+    Hover
+</button>
+
+<button class="button button-quaternary button-active">
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+    Active
+</button>
+
+<button class="button button-quaternary focus">
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+    Focus
+</button>
+
+<button class="button button-quaternary" disabled="">
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu-left"></use></svg>
+    Disabled
+</button>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-with-icon">
+  <h2 id="knap-med-ikon">Knap med ikon</h2>
+  
+  
+  
+<div class="component-preview  component-preview-buttons-with-icon" aria-label="Eksempel på knap med ikon">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-with-icon/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-with-icon</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <button class="button button-primary">
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#refresh"></use></svg>
+    Refresh
+</button>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-only-icon">
+  <h2 id="ikon-som-knap">Ikon som knap</h2>
+  
+  
+  
+<div class="component-preview  component-preview-buttons-only-icon" aria-label="Eksempel på knap som ikon">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-only-icon/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-only-icon</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <button class="button button-unstyled">
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete-outline"></use></svg>
+
+    <span class="sr-only">Slet</span>
+</button>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+:ET
