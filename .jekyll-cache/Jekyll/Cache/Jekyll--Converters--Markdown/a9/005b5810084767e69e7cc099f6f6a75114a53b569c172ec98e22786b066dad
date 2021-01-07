@@ -1,0 +1,14 @@
+I"$
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/p&gt;
+        &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-field-year&quot;&gt;Datoen for
+                    udløbsdato på dit pas bør inkludere årstal&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#zipcode-field&quot;&gt;Indtast
+                    postnummer - fx 4000&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

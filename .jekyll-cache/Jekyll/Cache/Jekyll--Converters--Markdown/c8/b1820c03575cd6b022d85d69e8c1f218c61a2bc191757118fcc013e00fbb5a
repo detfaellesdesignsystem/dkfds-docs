@@ -1,0 +1,11 @@
+I"‚
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-disabled&quot;&gt;
+        Inputfelt som er l√•st
+    &lt;/label&gt;
+
+    &lt;input class=&quot;form-input &quot; required id=&quot;input-disabled&quot; value=&quot;&quot;
+        name=&quot;input-disabled&quot; type=&quot;text&quot; disabled=&quot;disabled&quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

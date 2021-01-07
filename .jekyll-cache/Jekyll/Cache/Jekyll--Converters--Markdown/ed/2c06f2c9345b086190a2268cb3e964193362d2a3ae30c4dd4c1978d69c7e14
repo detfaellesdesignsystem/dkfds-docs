@@ -1,0 +1,117 @@
+I"O
+<div class="component-preview  component-preview-footer-simple" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/footer-simple/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: footer-simple</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/footer-simple/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/footers/" class="small-text">Gå til kodeafsnit<span class="sr-only">: footer-simple</span></a>
+    </div>
+    
+</div>
+
+<h2 class="h3">Vejledning</h2>
+
+<div class=" component-preview-footer-dos-donts" aria-label="Footers do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Footers-do.svg" alt="Eksempel på, hvordan footers kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Brug <em>footers</em> til indhold, som brugerne forventer at finde dér. Det er fx kontaktoplysninger, webstedets privatlivspolitik og links til sociale medier (Fessenden, 2019). Footeren kan også med fordel anvendes til et mini-sitemap (Esser, 2018).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Footers-dont.svg" alt="Eksempel på, hvordan footers ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Brug ikke <em>footers</em> til indhold, som brugerne ikke vil lede efter dér. Brugerne vil fx nok ikke opdage nyheder eller hjælpetekster, hvis de er placeret helt i bunden af en webside.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.nngroup.com/articles/footers/" class="icon-link">Therese Fessenden: Footers 101: Design Patterns and When to Use Each (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.interaction-design.org/literature/article/how-to-implement-sitemap-footers-to-keep-users-going" class="icon-link">Priscilla Esser: How to Implement Sitemap Footers to Keep Users Going (2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<section class="styleguide-child-container content" id="section-/komponenter/footers/footer-three-columns">
+  <h2 id="tre-kolonner">Tre kolonner</h2>
+  
+  
+  
+<div class="component-preview  component-preview-footer-three-columns" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/footer-three-columns/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: footer-three-columns</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/footer-three-columns/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/footers/footer-four-columns">
+  <h2 id="fire-kolonner">Fire kolonner</h2>
+  
+  
+  
+<div class="component-preview  component-preview-footer-four-columns" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/footer-four-columns/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: footer-four-columns</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/footer-four-columns/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/footers/footer-complex">
+  <h2 id="kompleks">Kompleks</h2>
+  
+  
+  
+<div class="component-preview  component-preview-footer-complex" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/footer-complex/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: footer-complex</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/footer-complex/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+</div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/footers/footer-logo">
+  <h2 id="logo">Logo</h2>
+  
+  
+  
+<div class="component-preview  component-preview-footer-logo" aria-label="">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/footer-logo/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: footer-logo</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/footer-logo/" class="screenshot" title="" target="_blank"></a>
+    </div>
+    
+</div>
+
+
+</section>
+
+:ET

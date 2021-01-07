@@ -1,0 +1,98 @@
+I"�
+<div class="component-preview  component-preview-language-switcher" aria-label="Eksempel på sprogvælger">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/language-switcher/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: language-switcher</span></a>
+    </div>
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <a href="/eksempel/language-switcher/" class="screenshot" title="Billedet viser en sprogvælger" target="_blank"></a>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/sprogvaegler/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/sprogvaegler/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-language-switcher" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;footer&gt;
+
+    &lt;div class=&quot;language-switcher&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;ul aria-label=&quot;Vælg sprog fra listen &quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=da&quot; lang=&quot;da&quot;
+                        aria-label=&quot;Valgt sprog: Dansk&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#check&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Dansk&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=en-GB&quot; lang=&quot;en-GB&quot;&gt;English&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=de&quot; lang=&quot;de&quot;&gt;Deutsch&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=pl&quot; lang=&quot;pl&quot;&gt;Polski&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/footer&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<div class="alert alert-warning">
+    <div class="alert-body">
+        <p class="alert-text">Bemærk, at man i løsningen selv står for funktionaliteten i denne komponent.</p>
+    </div>
+</div>
+
+<p>Sprogvælgeren indsættes nederst i footeren. <a href="/eksempler/selvbetjeningsloesninger/#solution-7">Se eksempel på implementering i eksempelløsningen “Sager hos AES”</a></p>
+
+<p>Hvert sprog tilføjes i listen på original sproget og med den tilsvarende landekode i <code>lang</code> attributten.</p>
+
+<p>Bemærk aria-labels i koden, hvor der vil være tekst og formuleringer der skal tilpasses for hvert sprog man kan vælge.</p>
+
+<h2>Varianter</h2>
+
+<h3>Sprogvælger med tooltip</h3>
+
+<div class="component-preview component-preview-code  component-code-language-switcher-tooltip" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/language-switcher-tooltip/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;footer&gt;
+
+    &lt;div class=&quot;language-switcher&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;ul aria-label=&quot;Vælg sprog fra listen &quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=da&quot; lang=&quot;da&quot;
+                        aria-label=&quot;Valgt sprog: Dansk&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#check&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Dansk&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=en-GB&quot; lang=&quot;en-GB&quot; class=&quot;js-tooltip&quot;
+                        data-tooltip=&quot;Engelsk&quot;&gt;English&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=de&quot; lang=&quot;de&quot; class=&quot;js-tooltip&quot;
+                        data-tooltip=&quot;Tysk&quot;&gt;Deutsch&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;?lang=pl&quot; lang=&quot;pl&quot; class=&quot;js-tooltip&quot;
+                        data-tooltip=&quot;Polsk&quot;&gt;Polski&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/footer&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p><a href="/kode/komponenter/tooltip/">For mere info om implementering se tooltip komponenten</a></p>
+:ET

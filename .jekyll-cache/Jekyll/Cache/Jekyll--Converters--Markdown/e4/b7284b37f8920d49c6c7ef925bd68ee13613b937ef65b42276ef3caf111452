@@ -1,0 +1,18 @@
+I"�<p class="small-text mt-0">19-02-2019</p>
+
+<ul>
+  <li>Tilføjet info om fiks af Microsoft Edge bug i navigation, hvor bullets blev vist trods styling</li>
+  <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Defineret tilbage-knap</li>
+  <li>Tilføjet readonly eksempel i input felter</li>
+  <li>Ændret Skjul/Vis eksempel ved brug af radio knap for at løse tilgængelighedsproblemer</li>
+  <li>Fikset fejl på dropdown-menu i Internet Explorer, hvor pilen blev vist to gange</li>
+  <li>Nederste border i header ændret til <code>$outer-border</code></li>
+  <li>Tilføjet klassen .nobullet-list, som kan bruges ved liste af links</li>
+  <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Flyttet Pikaday datovælger plugin til Plugins-projektet</li>
+  <li>Tilføjet .break-word klasse til brug i tabeller, hvor man bruger lange filnavne i kolonnerne</li>
+  <li>Ændret disabled link farve</li>
+  <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Fjernet $color-link-active farven, da den ikke længere bliver brugt</li>
+  <li>Opdateret styling og definition af eksterne links</li>
+  <li>Ændret skrifttype tykkelse på søgefelts knappen</li>
+</ul>
+:ET

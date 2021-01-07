@@ -1,0 +1,10 @@
+I"�<p class="small-text mt-0">20-06-2019</p>
+
+<ul>
+  <li>Fjernet margin-top på h1.</li>
+  <li><label class="color-info badge badge-small mr-3">Change</label>Fjernet form-group div fra li i radioknap og tjekboks liste (Løser udfordringen med at JAWS skærmlæseren læser skrivebeskyttet ved hver tjekboks eller radioknap).</li>
+  <li>Fikset styling i niveau 4 i sidemenuen på mobil.</li>
+  <li>Fikset tilgængelighed på responsiv tringuide - aria-hidden opdateres nu automatisk alt efter status på komponenten.</li>
+  <li>Responsiv tabel er  nu sat til display:block på små skærme således at skærmlæsere ikke tror det er en tom tabel.</li>
+</ul>
+:ET

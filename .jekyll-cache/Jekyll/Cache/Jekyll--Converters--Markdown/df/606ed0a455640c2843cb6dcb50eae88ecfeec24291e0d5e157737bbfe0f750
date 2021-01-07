@@ -1,0 +1,114 @@
+I"3
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;footer&gt;
+    &lt;div class=&quot;footer&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-12 col-sm-12 col-md-3 footer-col &quot;&gt;
+                    &lt;section&gt;
+                        &lt;div class=&quot; align-text-left &quot;&gt;
+                            &lt;h1 class=&quot;h5 mb-4&quot; title=&quot;Ansvarlig myndighed&quot;
+                                aria-label=&quot;Ansvarlig myndighed&quot;&gt;Ansvarlig
+                                myndighed&lt;/h1&gt;
+
+                            &lt;ul class=&quot; unstyled-list&quot;&gt;
+
+                                &lt;li class=&quot;&quot;&gt;
+                                    &lt;p&gt;Digitaliseringsstyrelsen&lt;/p&gt;
+                                &lt;/li&gt;
+
+                                &lt;li class=&quot;&quot;&gt;
+                                    &lt;p&gt;Landgreven 4&lt;/p&gt;
+                                &lt;/li&gt;
+
+                                &lt;li class=&quot;&quot;&gt;
+                                    &lt;p&gt;1413 København K&lt;/p&gt;
+                                &lt;/li&gt;
+
+                            &lt;/ul&gt;
+
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+                &lt;div
+                    class=&quot;col-12 col-sm-12 col-md-3 footer-col d-print-none&quot;&gt;
+                    &lt;section&gt;
+                        &lt;div class=&quot; align-text-left &quot;&gt;
+
+                            &lt;ul class=&quot; unstyled-list&quot;&gt;
+
+                                &lt;li class=&quot;&quot;&gt;&lt;/li&gt;
+
+                            &lt;/ul&gt;
+
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-12 col-sm-12 col-md-3 footer-col &quot;&gt;
+                    &lt;section&gt;
+                        &lt;div class=&quot; align-text-left &quot;&gt;
+                            &lt;h1 class=&quot;h5 mb-4&quot; title=&quot;Kontakt&quot;
+                                aria-label=&quot;Kontakt&quot;&gt;Kontakt&lt;/h1&gt;
+
+                            &lt;ul class=&quot; mt-0 nobullet-list&quot;&gt;
+
+                                &lt;li class=&quot;&quot;&gt;
+                                    &lt;p class=&quot;mb-3&quot;&gt;&lt;a
+                                            class=&quot;function-link&quot;
+                                            href=&quot;tel:004512345678&quot;&gt;(+45)
+                                            12 34 56 78&lt;/a&gt;&lt;/p&gt;
+                                &lt;/li&gt;
+
+                                &lt;li class=&quot;&quot;&gt;Hverdage 10-17&lt;/li&gt;
+
+                                &lt;li class=&quot;&quot;&gt;Lørdag 10-14&lt;/li&gt;
+
+                                &lt;li class=&quot;&quot;&gt;Søndag og helligdage lukket.
+                                &lt;/li&gt;
+
+                                &lt;li class=&quot;&quot;&gt;
+                                    &lt;p class=&quot;mt-3 mb-3&quot;&gt;&lt;a
+                                            class=&quot;function-link&quot;
+                                            href=&quot;mailto:support@myndighed.dk&quot;&gt;support@myndighed.dk&lt;/a&gt;
+                                    &lt;/p&gt;
+                                &lt;/li&gt;
+
+                                &lt;li class=&quot;&quot;&gt;Vi besvarer e-mails så hurtigt
+                                    vi kan, indenfor telefonisk åbningstid.
+                                &lt;/li&gt;
+
+                            &lt;/ul&gt;
+
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+                &lt;div
+                    class=&quot;col-12 col-sm-12 col-md-3 footer-col d-print-none&quot;&gt;
+                    &lt;section&gt;
+                        &lt;div class=&quot; align-text-left &quot;&gt;
+                            &lt;h1 class=&quot;h5 mb-4&quot;
+                                title=&quot;Webtilgængelighed og cookies&quot;
+                                aria-label=&quot;Webtilgængelighed og cookies&quot;&gt;
+                                Webtilgængelighed og cookies&lt;/h1&gt;
+
+                            &lt;ul class=&quot; mt-0 nobullet-list&quot;&gt;
+
+                                &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;#&quot;
+                                        class=&quot;function-link icon-link&quot;&gt;Tilgængelighedserklæring&lt;svg class=&quot;icon-svg&quot; focusable=&quot;&gt;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                                &lt;/li&gt;
+
+                                &lt;li class=&quot;&quot;&gt;&lt;a class=&quot;function-link&quot;
+                                        href=&quot;#&quot;&gt;Privatlivspolitik
+                                        (cookies)&lt;/a&gt;&lt;/li&gt;
+
+                            &lt;/ul&gt;
+
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/footer&gt;</code></pre></figure>
+
+:ET

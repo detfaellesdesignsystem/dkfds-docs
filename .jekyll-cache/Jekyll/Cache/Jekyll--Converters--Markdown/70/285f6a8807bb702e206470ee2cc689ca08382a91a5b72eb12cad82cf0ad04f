@@ -1,0 +1,57 @@
+I"ü
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav&gt;
+    &lt;ul class=&quot;sidenav-list&quot; role=&quot;menu&quot;&gt;
+        &lt;li role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                Hovedside
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+        &lt;li class=&quot;current  &quot; role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;true&quot;&gt;
+                Hovedside
+            &lt;/a&gt;
+            &lt;ul class=&quot;sidenav-sub_list&quot; role=&quot;menu&quot;&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li class=&quot; active &quot; role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+        &lt;/li&gt;
+        &lt;li role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                Hovedside
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+:ET
