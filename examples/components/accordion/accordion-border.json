@@ -3,6 +3,7 @@
     "label": "bordered",
     "id_prefix": "b-",
     "variant": "bordered",
+    "multiselectable": true,
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",

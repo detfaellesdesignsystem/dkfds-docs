@@ -5,9 +5,9 @@
     "day": "Dag",
     "month": "Måned",
     "year": "År",
-    "error": "Skriv en kort fejlmeddelelse, der hjælper brugeren videre",
+    "error": "Indtast en måned i tal mellem 1 og 12",
     "dayValue": "01",
-    "monthValue": "12",
+    "monthValue": "20",
     "yearValue": "2030"
   }
 }

@@ -4,6 +4,8 @@
 _site/
 .sass-cache/
 node_modules/
+.jekyll-cache/
+.vscode/
 npm-debug.log
 .bundle/
 .jekyll_get_cache/
