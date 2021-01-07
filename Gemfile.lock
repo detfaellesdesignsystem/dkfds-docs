@@ -9,8 +9,8 @@ GEM
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.7)
-    ffi (1.14.2)
+    eventmachine (1.2.7-x64-mingw32)
+    ffi (1.14.2-x64-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (1.8.7)
@@ -70,16 +70,17 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (2.4.0)
+    sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     scss_lint (0.59.0)
       sass (~> 3.5, >= 3.5.5)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
+    wdm (0.1.1)
 
 PLATFORMS
-  ruby
+  x64-mingw32
 
 DEPENDENCIES
   jekyll
@@ -93,6 +94,7 @@ DEPENDENCIES
   rspec-core
   rspec-expectations
   scss_lint
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
-   1.17.2
+   2.2.4

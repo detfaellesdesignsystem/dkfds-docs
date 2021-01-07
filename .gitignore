@@ -17,6 +17,5 @@ docs/package-lock.json
 _preview-components
 pdf
 docs/puppeteer.js
-Gemfile.lock
 
 docs/CNAME
