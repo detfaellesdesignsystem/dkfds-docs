@@ -1,0 +1,15 @@
+I"�<p class="small-text mt-0">27-03-2019</p>
+
+<ul>
+  <li>Fjernet eksempler fra projekt</li>
+  <li><label class="color-warning badge badge-small mr-3">Breaking change</label>Ændret macros, så de er mere dynamiske, så flere projekter kan gøre brug af dem</li>
+  <li>Fikset fejl med fokus på overflow menu i Firefox</li>
+  <li>Fikset fejl med ol liste i flere niveauer</li>
+  <li>Fjernet gammel JavaScript, som var årsag til fejl ved loading af javascript filen</li>
+  <li>Ændret HR kant farve</li>
+  <li>Ændret kant farve på tertiær knap</li>
+  <li>Tilføjet afstand på tags og knapper på lille skærm</li>
+  <li>Opdateret footers</li>
+  <li>Tilføjet JavaScript der håndterer lukning af overflow menuer, når man åbner en ny</li>
+</ul>
+:ET

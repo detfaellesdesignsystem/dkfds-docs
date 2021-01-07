@@ -1,0 +1,60 @@
+I"â
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;js-radio-toggle-group&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend class=&quot;h4&quot;&gt;VÃ¦lg en radioknap&lt;/legend&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;id-radio1&quot; type=&quot;radio&quot; name=&quot;radio-group1&quot;
+                    value=&quot;Value&quot; class=&quot;form-radio  radio-large &quot; checked
+                    data-js-target=&#39;#collapse-radio1&#39;
+                    aria-controls=&#39;collapse-radio1&#39;
+                    aria-expanded=&#39;false&#39; /&gt;
+                &lt;label for=&quot;id-radio1&quot; id=&quot;form-label-id-radio1&quot;
+                    class=&quot;&quot;&gt;Radioknap viser indhold &lt;span
+                        class=&quot;sr-only&quot;&gt;Udfyld informationer
+                        herunder&lt;/span&gt;&lt;/label&gt;
+
+                &lt;div id=&quot;collapse-radio1&quot; aria-hidden=&quot;true&quot;
+                    class=&quot;box-border-l collapsed&quot;&gt;
+                    &lt;div class=&quot;py-4&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label class=&quot;form-label &quot; for=&quot;textinput1&quot;&gt;
+                                Inputfelt med label
+                            &lt;/label&gt;
+
+                            &lt;input class=&quot;form-input input-width-m&quot;
+                                id=&quot;textinput1&quot; value=&quot;&quot; name=&quot;text1&quot;
+                                type=&quot;text&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;id-radio2&quot; type=&quot;radio&quot; name=&quot;radio-group1&quot;
+                    value=&quot;Value&quot; class=&quot;form-radio  radio-large &quot;
+                    data-js-target=&#39;#collapse-radio2&#39; /&gt;
+                &lt;label for=&quot;id-radio2&quot; id=&quot;form-label-id-radio2&quot;
+                    class=&quot;&quot;&gt;Radioknap viser andet indhold &lt;span
+                        class=&quot;sr-only&quot;&gt;Udfyld informationer
+                        herunder&lt;/span&gt;&lt;/label&gt;
+
+                &lt;div id=&quot;collapse-radio2&quot; aria-hidden=&quot;true&quot;
+                    class=&quot;box-border-l collapsed&quot;&gt;
+                    &lt;div class=&quot;py-4&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label class=&quot;form-label &quot; for=&quot;textinput2&quot;&gt;
+                                Inputfelt med anden label
+                            &lt;/label&gt;
+
+                            &lt;input class=&quot;form-input input-width-m&quot;
+                                id=&quot;textinput2&quot; value=&quot;&quot; name=&quot;text2&quot;
+                                type=&quot;text&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

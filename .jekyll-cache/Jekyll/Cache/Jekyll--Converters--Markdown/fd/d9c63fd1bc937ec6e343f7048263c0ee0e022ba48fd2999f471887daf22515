@@ -1,0 +1,37 @@
+I"@
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu  overflow-menu--open-right &quot;&gt;
+    &lt;button class=&quot;button-overflow-menu js-dropdown &quot;
+        data-js-target=&quot;overflow5&quot; aria-haspopup=&quot;true&quot;
+        aria-expanded=&quot;false&quot;&gt;
+        Trin 2 af 3
+        &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#menu-down&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;overflow-menu-inner&quot; id=&quot;overflow5&quot; aria-hidden=&quot;true&quot;&gt;
+
+        &lt;nav&gt;
+            &lt;ul class=&#39;sidenav-list&#39; role=&#39;menu&#39;&gt;
+                &lt;li role=&#39;none&#39;&gt;
+                    &lt;a href=&#39;#&#39; role=&#39;menuitem&#39;&gt;
+                        1. Trin 1
+                        &lt;span class=&#39;sidenav-icon&#39;&gt;
+                            &lt;svg class=&#39;icon-svg&#39; aria-hidden=&#39;true&#39; focusable=&#39;false&#39; tabindex=&#39;-1&#39;&gt;&lt;use xlink:href=&#39;#check&#39;&gt;&lt;/use&gt;&lt;/svg&gt;
+                        &lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li role=&#39;none&#39; class=&#39;active current&#39;&gt;
+                    &lt;a href=&#39;#&#39; role=&#39;menuitem&#39; aria-current=&#39;page&#39;&gt;
+                        2. Trin 2 (valgt)
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li role=&#39;none&#39;&gt;
+                    &lt;a href=&#39;#&#39; role=&#39;menuitem&#39;&gt;
+                        3. Trin 3
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

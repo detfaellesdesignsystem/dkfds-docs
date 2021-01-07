@@ -1,0 +1,43 @@
+I"�
+<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Brug tilbage-link-komponenten i selvbetjeningsløsninger med flere trin, hvor brugeren skal kunne navigere tilbage.</p>
+
+<p>Du kan også bruge tilbage-link-komponenten i løsninger med flere sammenhængende sider, hvis det giver mening at gøre det.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Brug aldrig tilbage-link-komponenten sammen med brødkrummer. Vælg enten tilbage-linket eller brødkrummen alt efter, hvad der fungerer bedst for brugeren i en given kontekst.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen) på trinnet/siden. Bruges tilbage-linket i selvbetjeningsløsninger, der har en synlig tringuide eller en venstremenu, placeres tilbage-linket øverst venstrestillet over indholdet.</p>
+
+<p>Sørg for, at tilbage-linket fører brugerne til den forrige side, de var på, i den tilstand, de sidst så trinnet/siden.</p>
+
+<p>Hvor det er muligt, skal du sikre dig, at tilbage-linket fungerer, selvom JavaScript er slået fra. Hvis dette ikke er muligt, skal du skjule tilbage-linket.</p>
+
+<div class=" component-preview-back-link-dos-donts" aria-label="Tilbage-link do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Tilbage-link-do.svg" alt="Eksempel på, hvordan et tilbage-link kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Brug tilbage-links i formularer, der er inddelt på flere sider. Linket muliggør, at brugerne kan rette tidligere indtastninger. Tilbage-linket bør placeres i øverste venstre side, ikke under formularen (Silver, 2018, s. 119-120).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Tilbage-link-dont.svg" alt="Eksempel på, hvordan et tilbage-link ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Brug ikke tilbage-link, når du ikke ved, om brugerne er kommet ind på en side via en søgemaskine eller et link. I sådanne tilfælde skaber ordet ”tilbage” en forkert forventning. Brug heller ikke tilbage-link sammen med brødkrumme.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+<p>Adam Silver: Form Design Patterns (2018)</p>
+
+:ET

@@ -1,0 +1,89 @@
+I"r<p>Du kan placere dit myndighedslogo i footeren, hvis du har behov for det.</p>
+
+<section class="styleguide-child-container content" id="section-/design/logo/logo-svg">
+  <h2 id="svg-filer-til-download">SVG-filer til download</h2>
+  
+  
+  <p><img src="/assets/svg/logo-borgerdk.svg" height="48" alt="Logo til borger.dk selvbetjeningsløsninger" /></p>
+
+<p>Skal din løsning på borger.dk skal der være et borger.dk logo i headeren.</p>
+
+<p><a href="/assets/svg/logo-borgerdk.svg" download="logo-borgerdk">Download borger.dks logo (svg-fil)</a></p>
+
+<p><img src="/assets/svg/logo_virk.svg" height="48" alt="Logo til Virk selvbetjeningsløsninger" /></p>
+
+<p>Skal din løsning på Virk skal der være et Virk logo i headeren.</p>
+
+<p><a href="/assets/svg/logo_virk.svg" download="logo_virk">Download Virks logo (svg-fil)</a></p>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/design/logo/logo-header">
+  <h2 id="retningslinjer-for-logo-i-headeren">Retningslinjer for logo i headeren</h2>
+  
+  
+  <h3>Begrænsninger</h3>
+
+<ul>
+  <li>Format: SVG</li>
+  <li>Højde: max 4.8rem (48px)</li>
+  <li>Bredde: max 4 kolonner</li>
+</ul>
+
+<h3>Tilgængelighed</h3>
+
+<ul>
+  <li>Giv logoet en alt-tekst, der beskriver at brugeren går til forsiden af borger.dk eller Virk: “[Indsæt portal] forside”.</li>
+</ul>
+
+<h3>Brugervenlighed</h3>
+
+<ul>
+  <li>Portal-logoet går til portalens forside</li>
+  <li>Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.</li>
+  <li>Portalens logo er kun at finde i headeren</li>
+  <li>Venstrestil altid logoet i headeren</li>
+</ul>
+
+<h3>Links</h3>
+
+<ul class="nobullet-list">
+    <li><a href="http://uxmovement.com/navigation/why-you-should-never-center-or-right-align-your-logo/?ref=webdesignernews.com" class="icon-link">Why You Should Never Center or Right Align Your Logo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://www.nngroup.com/articles/centered-logos/" class="icon-link">Centered Logos Hurt Website Navigation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://www.nngroup.com/articles/logo-placement-brand-recall/" class="icon-link">Website Logo Placement for Maximum Brand Recall<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://www.nngroup.com/videos/logo-placement/" class="icon-link">Logo Placement Affects Web Navigation and Brand Recall<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li><a href="https://www.nngroup.com/articles/homepage-links/" class="icon-link">Homepage Links Remain a Necessity<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/design/logo/logo-footer">
+  <h2 id="retningslinjer-for-logo-i-footeren">Retningslinjer for logo i footeren</h2>
+  
+  
+  <p>Gør kun brug af muligheden for at placere et myndighedslogo i footeren, hvis det understøtter brugerens gennemførelse af selvbetjeningsløsningen</p>
+
+<h3>Størrelse</h3>
+
+<ul>
+  <li>Format: SVG</li>
+  <li>Højde: max 3.2rem (32px)</li>
+  <li>Bredde: max 4 kolonner</li>
+</ul>
+
+<h3>Tilgængelighed</h3>
+
+<p>Giv logoet en alt-tekst, der beskriver at brugeren åbner myndighedens forside: “[Indsæt myndighed] forside”.</p>
+
+<h3>Brugervenlighed</h3>
+
+<ul>
+  <li>Logoet i <a href="/komponenter/footers/#footer-logo">footeren</a> går til myndighedens forside</li>
+  <li>Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.</li>
+  <li>Myndighedens logo er kun at finde i footeren og der er kun et logo</li>
+  <li>Venstrestil altid logoet i footeren</li>
+</ul>
+
+</section>
+
+:ET

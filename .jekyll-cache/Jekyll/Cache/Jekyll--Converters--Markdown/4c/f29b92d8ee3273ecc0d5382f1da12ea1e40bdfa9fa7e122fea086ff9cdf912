@@ -1,0 +1,349 @@
+I"�*<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Sidenavigation anvendes til at afspejle et navigations-hierarki i op til tre niveauer.</p>
+
+<p>Sidenavigation anvendes til den sekundære navigation/undermenu på en side i en større løsning.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Sidenavigation bør ikke anvendes på mindre løsninger (mindre end 5 sider).</p>
+
+<p>Hvis din løsning allerede har topmenu og evt. tilknyttet dropdown menu, bør du overveje at forenkle din navigation før du vælger en sidenavigation.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Marker det aktive punkt (”der hvor brugeren er”) i sidenavigationen.</p>
+
+<p>Brug korte og præcise ord og begreber. De må eksempelvis gerne være kortere varianter af selve sidernes indholdstitler.</p>
+
+<p>Undgå at lave for mange punkter.</p>
+
+<p>Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.</p>
+
+<div class=" component-preview-sidenav-dos-donts" aria-label="Sidenavigation do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Sidenavigation-do.svg" alt="Eksempel på, hvordan en sidenavigation kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Sørg for, at navigationsmenuer tydeligt viser brugerne, hvor de er på sitet, hvor de kan gå hen, og hvor de har været. Det indebærer, at et menupunkt kan have tre stadier: (1) Ikke fremhævet, men klikbart, (2) fremhævet, men ikke klikbart samt (3) fremhævet og klikbart (Powazek, 2006).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Sidenavigation-dont.svg" alt="Eksempel på, hvordan en sidenavigation ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Lad ikke brugerne være forvirrede over, hvor de er i webstedets hierarki.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<p><a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+
+<section class="styleguide-child-container content" id="section-/komponenter/sidenav/sidenav-2level">
+  <h2 id="2-niveauer">2 niveauer</h2>
+  
+  
+  
+<div class="component-preview  component-preview-sidenav-normal-level2" aria-label="Eksempel på sidenavigation med to niveauer">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-normal-level2/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: sidenav-normal-level2</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <nav>
+    <ul class="sidenav-list" role="menu">
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
+
+        </li>
+        <li class="current  " role="none">
+            <a href="" role="menuitem" aria-current="true">
+                Hovedside
+            </a>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li class=" active " role="none">
+                    <a href="" role="menuitem" aria-current="page">
+                        Underside
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+            </ul>
+
+        </li>
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
+
+        </li>
+    </ul>
+</nav>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/sidenav/sidenav-3level">
+  <h2 id="3-niveauer">3 niveauer</h2>
+  
+  
+  
+<div class="component-preview  component-preview-sidenav-normal-level3" aria-label="Eksempel på sidenavigation med tre niveauer">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-normal-level3/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: sidenav-normal-level3</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <nav>
+    <ul class="sidenav-list" role="menu">
+
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
+
+        </li>
+        <li class="current  " role="none">
+            <a href="" role="menuitem" aria-current="true">
+                Hovedside
+            </a>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li class="current  " role="none">
+                    <a href="" role="menuitem" aria-current="true">
+                        Underside
+                    </a>
+                    <ul class="sidenav-sub_list" role="menu">
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
+
+                        </li>
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
+
+                        </li>
+                        <li class=" active " role="none">
+                            <a href="" role="menuitem" aria-current="page">
+                                Underside
+                            </a>
+
+                        </li>
+                        <li role="none">
+                            <a href="" role="menuitem">
+                                Underside
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+            </ul>
+
+        </li>
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
+
+        </li>
+
+    </ul>
+</nav>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/sidenav/sidenav-anchor">
+  <h2 id="aktivt-link-med-anchor-links">Aktivt link med anchor links</h2>
+  
+  
+  
+<div class="component-preview  component-preview-sidenav-anchor" aria-label="Eksempel på sidenavigation med anchor links">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-anchor/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: sidenav-anchor</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <nav>
+    <ul class="sidenav-list">
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
+
+        </li>
+        <li class="current  active  has-anchor-links" role="none">
+            <a href="" role="menuitem" aria-current="page">
+                Hovedside
+            </a>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        Anchor link
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        Anchor link
+                    </a>
+
+                </li>
+            </ul>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        Anchor link
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="#" role="menuitem">
+                        Anchor link
+                    </a>
+
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/sidenav/sidenav-information">
+  <h2 id="ekstra-information">Ekstra information</h2>
+  
+  
+  
+<div class="component-preview  component-preview-sidenav-information-level1" aria-label="Eksempel på sidenavigation med hjælpetekst på ét niveau">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-information-level1/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: sidenav-information-level1</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <nav>
+    <ul class="sidenav-list" role="menu">
+
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside<span class="sidenav-information">Informationstekst for
+                    parent link</span>
+            </a>
+
+        </li>
+        <li class="current  active " role="none">
+            <a href="" role="menuitem" aria-current="page">
+                Hovedside<span class="sidenav-information">Informationstekst for
+                    current link</span>
+            </a>
+
+        </li>
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside<span class="sidenav-information">Informationstekst for
+                    another link</span>
+            </a>
+
+        </li>
+
+    </ul>
+</nav>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+:ET

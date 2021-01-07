@@ -1,0 +1,196 @@
+I"�'
+<div class="component-preview  component-preview-error-summary" aria-label="Eksempel på fejlopssumering">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-summary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-summary</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="alert alert-error mt-0 mb-8" role="alert" aria-atomic="true">
+    <div class="alert-body">
+        <p class="alert-heading">Der er problemer</p>
+        <ul class="alert-text nobullet-list">
+            <li><a class="function-link" href="#date-field-year">Datoen for
+                    udløbsdato på dit pas bør inkludere årstal</a></li>
+            <li><a class="function-link" href="#zipcode-field">Indtast
+                    postnummer - fx 4000</a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="/komponenter/fejlopsummering/#retningslinjer">Retningslinjer</a></li>
+  <li><a href="/komponenter/fejlopsummering/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-error-summary" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+    &lt;div class=&quot;alert-body&quot;&gt;
+        &lt;p class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/p&gt;
+        &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-field-year&quot;&gt;Datoen for
+                    udløbsdato på dit pas bør inkludere årstal&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#zipcode-field&quot;&gt;Indtast
+                    postnummer - fx 4000&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Indsættes over formularen, men under <code>h1</code> overskriften.</p>
+
+<p>Hver fejl tilføjes til <code>&lt;ul&gt;</code> listen med et anchor link til feltet der er omtalt således at fokus flyttes til pågældende felt.</p>
+
+<h4 id="placering">Placering</h4>
+
+<div class="component-preview component-preview-code  component-code-error-summary-page" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-summary-page/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;main class=&quot;col-12 col-lg-9&quot; id=&quot;main-content&quot;&gt;
+
+    &lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot;
+        aria-atomic=&quot;true&quot;&gt;
+        &lt;div class=&quot;alert-body&quot;&gt;
+            &lt;p class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/p&gt;
+            &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
+                &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#example-name&quot;&gt;Skriv dit
+                        fulde navn, og adskil for- og efternavne med
+                        mellemrum, fx Christian Emil Vestergaard
+                        Christiansen&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#nationalitet1&quot;&gt;Angiv om
+                        du er dansk, svensk eller anden nationalitet&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-day&quot;&gt;Datoen kan
+                        ikke være i fremtiden&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h1 id=&quot;oplysninger-om-dig&quot;&gt;Oplysninger om dig&lt;/h1&gt;
+    &lt;form&gt;
+
+        &lt;div class=&quot;form-group form-error&quot;&gt;
+            &lt;label class=&quot;form-label &quot; for=&quot;example-name&quot;&gt;
+                Hvad er dit fulde navn?
+            &lt;/label&gt;
+
+            &lt;span class=&quot;form-error-message&quot; id=&quot;example-name-error&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Skriv dit fulde navn, og
+                adskil for- og efternavne med mellemrum, fx Christian Emil
+                Vestergaard Christiansen
+            &lt;/span&gt;
+            &lt;input class=&quot;form-input &quot; required id=&quot;example-name&quot; value=&quot;&quot;
+                name=&quot;form-error&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
+                aria-describedby=&quot; example-name-error&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group form-error&quot;&gt;
+            &lt;fieldset aria-describedby=&quot;example-nationalitet-error&quot;&gt;
+                &lt;legend class=&quot;h5&quot;&gt;Hvad er din nationalitet?&lt;/legend&gt;
+                &lt;span class=&quot;form-error-message&quot;
+                    id=&quot;example-nationalitet-error&quot;&gt;&lt;span
+                        class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv om du er dansk,
+                    svensk eller anden nationalitet&lt;/span&gt;
+                &lt;ul class=&quot;nobullet-list&quot;&gt;
+                    &lt;li&gt;
+                        &lt;input id=&quot;nationalitet1&quot; type=&quot;checkbox&quot;
+                            name=&quot;nationalitet&quot; value=&quot;dansk&quot;
+                            class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                        &lt;label for=&quot;nationalitet1&quot; class=&quot;&quot;&gt;Dansk&lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;input id=&quot;nationalitet2&quot; type=&quot;checkbox&quot;
+                            name=&quot;nationalitet[]&quot; value=&quot;svensk&quot;
+                            class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                        &lt;label for=&quot;nationalitet2&quot; class=&quot;&quot;&gt;Svensk&lt;/label&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;input id=&quot;nationalitet3&quot; type=&quot;checkbox&quot;
+                            name=&quot;nationalitet[]&quot; value=&quot;anden&quot;
+                            class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                        &lt;label for=&quot;nationalitet3&quot; class=&quot;&quot;&gt;Anden
+                            nationalitet&lt;/label&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/fieldset&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group  form-error  &quot;&gt;
+            &lt;fieldset
+                aria-dsecribedby=&quot;example-date-field-hint example-date-field-error&quot;&gt;
+                &lt;legend class=&quot;form-label&quot;&gt;Hvornår blev dit pas udstedt?
+                &lt;/legend&gt;
+                &lt;span class=&quot;form-hint&quot; id=&quot;example-date-field-hint&quot;&gt;Fx: 05
+                    12 2018&lt;/span&gt;
+                &lt;span class=&quot;form-error-message &quot;
+                    id=&quot;example-date-field-error&quot;&gt;&lt;span
+                        class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Datoen kan ikke være i
+                    fremtiden&lt;/span&gt;
+                &lt;div class=&quot;date-group js-calendar-group mt-3&quot;&gt;
+                    &lt;div class=&quot;form-group form-group-day&quot;&gt;
+                        &lt;label class=&quot;form-label&quot;
+                            for=&quot;date-day&quot;&gt;Dag&lt;/label&gt;
+                        &lt;input class=&quot;form-input js-calendar-day-input&quot;
+                            id=&quot;date-day&quot; value=&quot;01&quot; type=&quot;tel&quot;
+                            data-min=&quot;1&quot; data-max=&quot;31&quot; maxlength=&quot;2&quot;
+                            pattern=&quot;^[0-9]{0,2}$&quot;
+                            data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                            title=&quot;Indskriv dag på måneden som tal&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group form-group-month&quot;&gt;
+                        &lt;label class=&quot;form-label&quot;
+                            for=&quot;date-month&quot;&gt;Måned&lt;/label&gt;
+                        &lt;input class=&quot;form-input js-calendar-month-input&quot;
+                            id=&quot;date-month&quot; value=&quot;12&quot; type=&quot;tel&quot;
+                            data-min=&quot;1&quot; data-max=&quot;12&quot; maxlength=&quot;2&quot;
+                            pattern=&quot;^[0-9]{0,2}$&quot;
+                            data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                            title=&quot;Indskriv månedens nummer&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group form-group-year &quot;&gt;
+                        &lt;label class=&quot;form-label&quot;
+                            for=&quot;date-year&quot;&gt;År&lt;/label&gt;
+                        &lt;input class=&quot;form-input js-calendar-year-input&quot;
+                            id=&quot;date-year&quot; value=&quot;2076&quot; type=&quot;tel&quot;
+                            data-min=&quot;1900&quot; data-max=&quot;3000&quot; maxlength=&quot;4&quot;
+                            pattern=&quot;^[0-9]{0,4}$&quot;
+                            data-input-regex=&quot;^[0-9]{0,4}$&quot;
+                            title=&quot;Indskriv årstal&quot; /&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
+        &lt;/div&gt;
+
+    &lt;/form&gt;
+&lt;/main&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

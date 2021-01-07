@@ -1,0 +1,94 @@
+I"
+<div class="component-preview  component-preview-text-area" aria-label="Eksempel på tekstområde">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-area/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-area</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="form-group">
+    <label class="form-label " for="input-area">Tekstområde med
+        label</label>
+
+    <textarea class="form-input " rows="5" placeholder="" id="input-area" name="input-area"></textarea>
+</div>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/textarea/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/textarea/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-text-area" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-area&quot;&gt;Tekstområde med
+        label&lt;/label&gt;
+
+    &lt;textarea class=&quot;form-input &quot; rows=&quot;5&quot; placeholder=&quot;&quot; id=&quot;input-area&quot; name=&quot;input-area&quot; &gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:</p>
+
+<ul>
+  <li><code>for</code></li>
+  <li><code>id</code></li>
+  <li><code>name</code></li>
+  <li><code>rows</code></li>
+</ul>
+
+<p>Sæt højden på et textarea ved brug af <code>rows</code> attributten. Sæt højden, så det svarer til den mængde tekst, der forventes indtastet.</p>
+
+<h2>Varianter</h2>
+
+<h2>Fejl</h2>
+
+<div class="component-preview component-preview-code  component-code-text-area-error" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-area-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&gt;Tekstområde med
+        fejlmeddelelse&lt;/label&gt;
+
+    &lt;span class=&quot;form-error-message&quot;
+        id=&quot;form-error-message-input-error&quot;&gt;&lt;span
+            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Hjælpsom fejlmeddelelse&lt;/span&gt;
+    &lt;textarea class=&quot;form-input &quot; rows=&quot;5&quot; placeholder=&quot;&quot; id=&quot;input-error&quot; name=&quot;input-error&quot; aria-describedby=&quot;form-error-message-input-error&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:</p>
+
+<ul>
+  <li><code>for</code></li>
+  <li><code>id</code></li>
+  <li><code>name</code></li>
+  <li><code>aria-describedby</code></li>
+  <li><code>name</code></li>
+</ul>
+:ET

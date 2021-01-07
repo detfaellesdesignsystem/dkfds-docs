@@ -1,0 +1,219 @@
+I"�
+<div class="component-preview  component-preview-sidenav-normal-level2" aria-label="Eksempel på søgefelt">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-normal-level2/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: sidenav-normal-level2</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <nav>
+    <ul class="sidenav-list" role="menu">
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
+
+        </li>
+        <li class="current  " role="none">
+            <a href="" role="menuitem" aria-current="true">
+                Hovedside
+            </a>
+            <ul class="sidenav-sub_list" role="menu">
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li class=" active " role="none">
+                    <a href="" role="menuitem" aria-current="page">
+                        Underside
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+                <li role="none">
+                    <a href="" role="menuitem">
+                        Underside
+                    </a>
+
+                </li>
+            </ul>
+
+        </li>
+        <li role="none">
+            <a href="" role="menuitem">
+                Hovedside
+            </a>
+
+        </li>
+    </ul>
+</nav>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/sidenav/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/sidenav/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-sidenav-normal-level2" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav&gt;
+    &lt;ul class=&quot;sidenav-list&quot; role=&quot;menu&quot;&gt;
+        &lt;li role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                Hovedside
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+        &lt;li class=&quot;current  &quot; role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;true&quot;&gt;
+                Hovedside
+            &lt;/a&gt;
+            &lt;ul class=&quot;sidenav-sub_list&quot; role=&quot;menu&quot;&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li class=&quot; active &quot; role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        Underside
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+        &lt;/li&gt;
+        &lt;li role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                Hovedside
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4>Aktive menupunkter</h4>
+
+<ul>
+  <li>Aktive menupunkter skal have klassen <code>current</code>.</li>
+  <li>Kun det sidste aktive menupunkt skal have klassen <code>active</code>.</li>
+  <li>Hvis der kun er ét aktivt niveau sættes begge klasser.</li>
+</ul>
+
+<h4>Anchor links</h4>
+<p>Hvis en undermenu består af links til områder på den aktuelle side tilføjes klassen <code>has-anchor-links</code> på <code>&lt;ul&gt;</code> elementet.</p>
+
+<div class="component-preview component-preview-code  component-code-sidenav-anchor" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-anchor/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav&gt;
+    &lt;ul class=&quot;sidenav-list&quot;&gt;
+        &lt;li role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                Hovedside
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+        &lt;li class=&quot;current  active  has-anchor-links&quot; role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;true&quot;
+                aria-current=&quot;page&quot;&gt;
+                Hovedside
+            &lt;/a&gt;
+            &lt;ul class=&quot;sidenav-sub_list&quot; role=&quot;menu&quot;&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;#&quot; role=&quot;menuitem&quot;&gt;
+                        Anchor link
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;#&quot; role=&quot;menuitem&quot;&gt;
+                        Anchor link
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;ul class=&quot;sidenav-sub_list&quot; role=&quot;menu&quot;&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;#&quot; role=&quot;menuitem&quot;&gt;
+                        Anchor link
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;#&quot; role=&quot;menuitem&quot;&gt;
+                        Anchor link
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4>Tilføj ikon og information i sidenavigation</h4>
+
+<ul>
+  <li>For at tilføje et ikon til et punkt i sidenavigationen bruges klassen <code>sidenav-icon-before</code>.</li>
+  <li>For at tilføje information til et punkt i sidenavigationen bruges klassen <code>sidenav-information</code>.</li>
+  <li>Ikoner og informationer kan også sammensættes i én sidenavigation.</li>
+</ul>
+:ET

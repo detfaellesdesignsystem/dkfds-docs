@@ -1,0 +1,31 @@
+I"J
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;footer&gt;
+    &lt;div class=&quot;footer&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;align-text-left&quot;&gt;
+                &lt;ul class=&quot;unstyled-list inline-list&quot;&gt;
+                    &lt;li class=&quot;&quot;&gt;&lt;span
+                            class=&quot;h5 weight-semibold&quot;&gt;Digitaliseringsstyrelsen&lt;/span&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;mailto:support@myndighed.dk&quot;
+                            class=&quot;function-link&quot;
+                            title=&quot;Skriv til Digitaliseringsstyrelsen&quot;&gt;support@myndighed.dk&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;tel:+4512345678&quot;
+                            class=&quot;function-link&quot;
+                            title=&quot;Ring til Digitaliseringsstyrelsen&quot;&gt;(+45)
+                            12 34 56 78&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;d-print-none&quot;&gt;&lt;a href=&quot;#&quot;
+                            class=&quot;function-link icon-link&quot;&gt;Tilgængelighedserklæring&lt;svg class=&quot;icon-svg&quot; focusable=&quot;&gt;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;d-print-none&quot;&gt;&lt;a href=&quot;#&quot;
+                            class=&quot;function-link&quot;&gt;Privatlivspolitik
+                            (cookies)&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/footer&gt;</code></pre></figure>
+
+:ET

@@ -1,0 +1,17 @@
+I"D<p class="small-text mt-0">18-01-2019</p>
+<h3 class="h4">Smårettelser til CSS og ikoner</h3>
+
+<ul>
+  <li><code>small-text</code> og <code>small-tag</code> klasserne fik ændret font-size fra 13px til 14px</li>
+  <li>Ændrede level 2 og 3 i sidenavigation på mobil</li>
+  <li>Rettede ikonerne help og <code>close-circle</code></li>
+</ul>
+
+<h3 class="h4">Smårettelser til eksempler</h3>
+
+<ul>
+  <li>Typesetting blev delt i to: Linjeafstand og Linjelængde.</li>
+  <li>Fejl i Popover-eksemplet blev rettet.</li>
+  <li>Neutralt logo til header-eksempler blev opdateret.</li>
+</ul>
+:ET

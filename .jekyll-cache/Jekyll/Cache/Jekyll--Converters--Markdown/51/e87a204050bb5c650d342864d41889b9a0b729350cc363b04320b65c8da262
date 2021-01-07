@@ -1,0 +1,69 @@
+I"
+<div class="component-preview  component-preview-search" aria-label="Eksempel på søgefelt">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/search/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: search</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="form-group search">
+    <label for="input-type-text" class="sr-only">Søg efter indhold</label>
+    <input class="form-input input-char-27" id="input-type-text" name="search-button" title="Search" type="search" />
+    <button class="button button-search">Søg</button>
+</div>
+
+<div class="form-group search">
+    <label for="input-type-text-icon" class="sr-only">Søg efter
+        indhold</label>
+    <input class="form-input input-width-xs" id="input-type-text-icon" name="search-icon" title="Search" type="search" />
+    <button class="button button-search"><svg class="icon-svg m-0" focusable="false" aria-hidden="true"><use xlink:href="#magnify"></use></svg><span class="sr-only">Søg</span></button>
+</div>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/search/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/search/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-search" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group search&quot;&gt;
+    &lt;label for=&quot;input-type-text&quot; class=&quot;sr-only&quot;&gt;Søg efter indhold&lt;/label&gt;
+    &lt;input class=&quot;form-input input-char-27&quot; id=&quot;input-type-text&quot;
+        name=&quot;search-button&quot; title=&quot;Search&quot; type=&quot;search&quot;&gt;
+    &lt;button class=&quot;button button-search&quot;&gt;Søg&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group search&quot;&gt;
+    &lt;label for=&quot;input-type-text-icon&quot; class=&quot;sr-only&quot;&gt;Søg efter
+        indhold&lt;/label&gt;
+    &lt;input class=&quot;form-input input-width-xs&quot; id=&quot;input-type-text-icon&quot;
+        name=&quot;search-icon&quot; title=&quot;Search&quot; type=&quot;search&quot;&gt;
+    &lt;button
+        class=&quot;button button-search&quot;&gt;&lt;svg class=&quot;icon-svg m-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#magnify&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+            class=&quot;sr-only&quot;&gt;Søg&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Du kan styre søgefeltets bredde via <code>input-width-</code> og <code>input-char-</code> se mere under punktet formular elementer og input bredde og validering.</p>
+
+<p>Du bør som oftest implementere auto-suggest på søgefelter, så brugeren foreslås relevante søge ord/sætninger.</p>
+
+<p>Ordet ”Søg” skal altid fremgå af søgeknappen. Hvis der anvendes et lup-ikon, skal ”søg” fremgå i en aria-label, så skærmlæsere kan se funktionen.</p>
+
+<p>Formularens felt skal have et skjult label af hensyn til skærmlæsere.</p>
+:ET

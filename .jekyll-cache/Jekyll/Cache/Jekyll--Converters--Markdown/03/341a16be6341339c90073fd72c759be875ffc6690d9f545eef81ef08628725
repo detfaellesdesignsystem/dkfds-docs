@@ -1,0 +1,24 @@
+I"W
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend class=&quot;h5&quot;&gt;Liste med radioknapper&lt;/legend&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;radio-1&quot; type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;v1&quot;
+                    class=&quot;form-radio  radio-large &quot; /&gt;
+                &lt;label for=&quot;radio-1&quot; id=&quot;form-label-radio-1&quot; class=&quot;&quot;&gt;Valg
+                    1 &lt;/label&gt;
+
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;radio-2&quot; type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;v2&quot;
+                    class=&quot;form-radio  radio-large &quot; /&gt;
+                &lt;label for=&quot;radio-2&quot; id=&quot;form-label-radio-2&quot; class=&quot;&quot;&gt;Valg
+                    2 &lt;/label&gt;
+
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

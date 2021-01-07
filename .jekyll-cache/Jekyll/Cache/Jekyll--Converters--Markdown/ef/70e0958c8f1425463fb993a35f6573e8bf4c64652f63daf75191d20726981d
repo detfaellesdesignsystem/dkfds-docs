@@ -1,0 +1,170 @@
+I"&<div class="alert alert-warning">
+    <div class="alert-body">
+        <p class="alert-heading">Eksperimentel</p>
+        <p>Denne komponent er for nuværende eksperimentel, da der afventes yderligere undersøgelser.</p>
+        <p>Komponenten lægger sig op af <a href="https://design-system.service.gov.uk/components/tabs/" class="icon-link">GOV.UK Design Systems tab komponent<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-2/tabs.html" class="icon-link">W3s practice eksempler<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, hvor der afventes yderligere info.</p>
+        <p>Brugerundersøgelser er efterspurgt for at bekræfte:</p>
+        <ul>
+            <li>at denne tilgang til faneblade er den bedste løsning for skærmlæsere og brugere af tastatur</li>
+            <li>hvordan denne komponent skal opføre sig på små skærme</li>
+        </ul>
+    </div>
+</div>
+
+<div class="component-preview  component-preview-tabnav" aria-label="Eksempel på faneblad">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tabnav/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tabnav</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel1" id="tab1" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Fane 1</span>
+    </button>
+    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel1" aria-labelledby="tab1">
+        <h2>Indhold 1</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.</p>
+    </section>
+
+    <button aria-controls="tabpanel2" id="tab2" class="tabnav-item" role="tab" aria-selected="true">
+        <span>Fane 2</span>
+    </button>
+
+    <section class="tabnav-panel" aria-hidden="false" role="tabpanel" tabindex="0" id="tabpanel2" aria-labelledby="tab2">
+        <h2>Indhold 2</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.</p>
+    </section>
+
+    <button aria-controls="tabpanel3" id="tab3" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Fane 3</span>
+    </button>
+    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel3" aria-labelledby="tab3">
+        <h2>Indhold 3</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.</p>
+    </section>
+
+    <button aria-controls="tabpanel4" id="tab4" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Fane 4</span>
+    </button>
+    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel4" aria-labelledby="tab4">
+        <h2>Indhold 4</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.</p>
+    </section>
+
+    <button aria-controls="tabpanel5" id="tab5" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Fane 5</span>
+    </button>
+    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel5" aria-labelledby="tab5">
+        <h2>Indhold 5</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.</p>
+    </section>
+
+    <button aria-controls="tabpanel6" id="tab6" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Fane 6</span>
+    </button>
+    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel6" aria-labelledby="tab6">
+        <h2>Indhold 6</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit
+            augue, ac lacinia nisl dolor et augue. Ut lorem massa,
+            consequat ut orci sit amet, maximus dictum orci. Mauris
+            pharetra nunc sed augue bibendum semper. Donec in cursus orci.
+            Ut sed posuere elit, quis semper turpis. Curabitur malesuada
+            nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+            sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem
+            massa eget urna.</p>
+    </section>
+
+</div>
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/faneblad/" class="small-text">Gå til kodeafsnit<span class="sr-only">: tabnav</span></a>
+    </div>
+    
+</div>
+
+<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Faneblade anvendes til at skifte mellem forskellige visninger af indhold indenfor samme kontekst.</p>
+
+<p>Faneblade egner sig bedst som en avanceret funktionalitet for afgrænsede målgrupper.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Faneblade kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.</p>
+
+<p>Faneblade anvendes ikke til at opdele et logisk flow eller en sekvens af handlinger.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Vi anbefaler ikke, at du anvender faneblade i en generel løsning, da en stor del af brugerne ikke opdager indholdet på fanerne udover den aktive.</p>
+
+<p>Hvis du ønsker at anvende faner, bør det testes på din målgruppe før din løsning går i produktion.</p>
+
+<div class=" component-preview-faneblad-dos-donts" aria-label="Faneblade do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Faneblade-do.svg" alt="Eksempel på, hvordan faneblade kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Brug kun faneblade til kort, koncist, ordknapt indhold som lister, data og andre typer af oversigter (Gube, 2009). Kategorierne, som fanebladene repræsenterer, skal have en stærk parallelitet og have et ensartet abstraktionsniveau (Nielsen, 2016) – altså forskellige aspekter af samme emne.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Faneblade-dont.svg" alt="Eksempel på, hvordan faneblade ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undgå at bruge faneblade som navigation mellem forskellige sider eller en sekvens af handlinger i en selvbetjeningsløsning. Faneblade er til parallelt (Nielsen, 2016), ikke sekventielt indhold.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/" class="icon-link">Jacob Gube: Module Tabs in Web Design: Best Practices and Solutions (2009)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.nngroup.com/articles/tabs-used-right/" class="icon-link">Jakob Nielsen: Tabs, Used Right (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+:ET

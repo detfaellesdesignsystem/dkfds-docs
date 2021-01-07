@@ -1,0 +1,36 @@
+I"�<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Brug det til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.</p>
+
+<p>Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Sørg for at brugeren får en positiv respons, når filen er overført.</p>
+
+<p>Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil blive accepteret.</p>
+
+<p>Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.</p>
+
+<h2>Fejlbesked</h2>
+
+<div class="component-preview  component-preview-error-message-file-input" aria-label="Eksempel på felt til vedhæftning af fil med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-message-file-input/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-file-input</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="form-group file-input form-error">
+    <label class="form-label" for="fileinput">Vedhæft fil</label>
+    <span class="form-error-message mb-3" id="fileinput-error"><span class="sr-only">Fejl:</span> Filens størrelse bør være under
+        2MB</span>
+    <input type="file" id="fileinput" name="file" />
+</div>
+    </div>
+    
+</div>
+
+:ET

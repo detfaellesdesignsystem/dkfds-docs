@@ -1,0 +1,72 @@
+I"�
+<div class="component-preview  component-preview-details" aria-label="Eksempel på detaljer komponent">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/details/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: details</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <details class="details js-details">
+    <summary class="details-summary">
+        <span class="details-summary-text">
+            Mere information
+        </span>
+    </summary>
+    <div class="details-text">
+        <p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at
+            libero. Integer euismod augue leo. </p>
+        <p>Morbi faucibus nunc tortor, condimentum vulputate urna
+            sollicitudin non. Nam commodo nulla metus. Phasellus varius eu
+            dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Mauris ac leo finibus, blandit velit nec,
+            consequat est. Nulla facilisi.</p>
+    </div>
+</details>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/detaljer/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/detaljer/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-details" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;details class=&quot;details js-details&quot;&gt;
+    &lt;summary class=&quot;details-summary&quot;&gt;
+        &lt;span class=&quot;details-summary-text&quot;&gt;
+            Mere information
+        &lt;/span&gt;
+    &lt;/summary&gt;
+    &lt;div class=&quot;details-text&quot;&gt;
+        &lt;p&gt;Pellentesque nulla mi, pulvinar id blandit eu, volutpat at
+            libero. Integer euismod augue leo. &lt;/p&gt;
+        &lt;p&gt;Morbi faucibus nunc tortor, condimentum vulputate urna
+            sollicitudin non. Nam commodo nulla metus. Phasellus varius eu
+            dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Mauris ac leo finibus, blandit velit nec,
+            consequat est. Nulla facilisi.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/details&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3>Javascript</h3>
+<p>Detaljer komponenten kræver JavaScript for at fungere i alle browsers. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Details(document.getElementById(&#39;DETAILS-ID&#39;));</code></pre></figure>
+
+<p>Attributterne <code>aria-expanded</code> og <code>aria-hidden</code> tilføjes automatisk i JavaScript i de browsers, hvor det er nødvendigt.</p>
+:ET
