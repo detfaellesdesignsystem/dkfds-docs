@@ -6,6 +6,8 @@ git pull origin master
 
 mv _site/* /docs
 rm -R _site/
+rm -R .jekyll-cache/
+rm -R Gemfile.lock
 rm -R node_modules
 
 git add -fA

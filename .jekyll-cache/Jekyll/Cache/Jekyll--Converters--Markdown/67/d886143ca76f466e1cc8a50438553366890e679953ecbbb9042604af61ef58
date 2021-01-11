@@ -1,7 +1,0 @@
-I"®
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;a href=&quot;javascript:void(0)&quot; class=&quot;js-tooltip&quot;
-    data-tooltip=&quot;Dette er en hj√¶lpetekst i en popover&quot;&gt;
-    &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help-circle&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-&lt;/a&gt;</code></pre></figure>
-
-:ET
