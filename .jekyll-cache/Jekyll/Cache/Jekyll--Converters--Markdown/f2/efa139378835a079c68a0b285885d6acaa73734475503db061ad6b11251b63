@@ -1,0 +1,65 @@
+I"$
+
+<div class="component-preview  component-preview-badge" aria-label="Eksempel på badge komponent">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/badge/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: badge</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <label class="badge badge-large">Nyhed</label>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/badges/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/badges/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-badge" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;label class=&quot;badge badge-large&quot;&gt;Nyhed&lt;/label&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Alle badges skal have en <code>badge</code> class på <code>&lt;label&gt;&lt;/label&gt;</code> elementet.</p>
+
+<h2>Tilgængelighed</h2>
+
+<p>Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tastaturet navigerer sig frem til dem.</p>
+
+<p>Du skal anvende ARIA live regions til at gøre skærmlæsere opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.</p>
+
+<h2>Varianter</h2>
+
+<h3>Stort badge</h3>
+<p>For et stort badge skal der tilføjes en <code>badge-large</code> class.</p>
+
+<h3>Lille badge</h3>
+<p>For et lille badge skal der tilføjes en <code>badge-small</code> class.</p>
+
+<h3 id="statusbadges">Statusbadges</h3>
+
+<p>Statusbadges har 4 forskellige farver og formål:</p>
+
+<ul>
+  <li><label class="badge badge-small badge-success">Grøn</label>, som er succesfarven og implementeres med klassen <code>badge-success</code>.</li>
+  <li><label class="badge badge-small badge-info">Blå</label>, som er informationsfarven og implementeres med klassen <code>badge-info</code>.</li>
+  <li><label class="badge badge-small badge-warning">Gul</label>, som er advarselsfarven og implementeres med klassen <code>badge-warning</code>.</li>
+  <li><label class="badge badge-small badge-error">Rød</label>, som er fejlfarven og implementeres med klassen <code>badge-error</code>.</li>
+</ul>
+
+<p>Se eksempel på anvendelse af statusbadges i vores <a href="/faellesskab/releases/">release notes</a>.</p>
+:ET

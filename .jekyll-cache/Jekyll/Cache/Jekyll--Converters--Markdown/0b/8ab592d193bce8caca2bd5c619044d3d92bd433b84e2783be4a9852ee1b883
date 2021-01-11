@@ -1,0 +1,200 @@
+I"U<p>Overskriftstyperne har to formål:</p>
+
+<ul>
+  <li>De er sidens indholdsfortegnelse for skærmlæsere.</li>
+  <li>De skaber et visuelt hierarki og gør siden overskuelig ved at inddele den i afsnit og underafsnit.</li>
+</ul>
+
+<div class="component-preview  component-preview-headings" aria-label="Oversigt over overskriftshierarki">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/headings/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: headings</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <h1>Overskrift 1</h1>
+<h2>Overskrift 2</h2>
+<h3>Overskrift 3</h3>
+<h4>Overskrift 4</h4>
+<h5>Overskrift 5</h5>
+<h6>Overskrift 6</h6>
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/typografi/overskrifter/" class="small-text">Gå til kodeafsnit<span class="sr-only">: headings</span></a>
+    </div>
+    
+</div>
+
+<h2 class="h3">Design</h2>
+
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Tekst</th>
+      <th>Skrifttype</th>
+      <th>Skriftstørrelse</th>
+      <th>Tekst tykkelse</th>
+      <th>Tekstfarve</th>
+      <th>Afstand mellem bogstaver</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overskrift 1</td>
+      <td>IBM Plex Sans</td>
+      <td>48px</td>
+      <td>700</td>
+      <td>#1a1a1a</td>
+      <td>-0.5px</td>
+    </tr>
+    <tr>
+      <td>Overskrift 2</td>
+      <td>IBM Plex Sans</td>
+      <td>31px</td>
+      <td>600</td>
+      <td>#1a1a1a</td>
+      <td>-0.4px</td>
+    </tr>
+    <tr>
+      <td>Overskrift 3</td>
+      <td>IBM Plex Sans</td>
+      <td>25px</td>
+      <td>600</td>
+      <td>#1a1a1a</td>
+      <td>-0.3px</td>
+    </tr>
+    <tr>
+      <td>Overskrift 4</td>
+      <td>IBM Plex Sans</td>
+      <td>20px</td>
+      <td>600</td>
+      <td>#1a1a1a</td>
+      <td>-0.2px</td>
+    </tr>
+    <tr>
+      <td>Overskrift 5</td>
+      <td>IBM Plex Sans</td>
+      <td>16px</td>
+      <td>600</td>
+      <td>#1a1a1a</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Overskrift 6</td>
+      <td>IBM Plex Sans</td>
+      <td>13px</td>
+      <td>500</td>
+      <td>#1a1a1a</td>
+      <td>-0.25px</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="retningslinjer">Retningslinjer</h2>
+
+<p>Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.</p>
+
+<h3 class="h4">Hvornår skal du bruge overskrifter?</h3>
+
+<p>Du skal bruge overskrifter til at skabe struktur på din side og gruppere dit indhold i logiske og overskuelige bidder, både for skærmlæsere og visuelt orienterede brugere.</p>
+
+<h3 class="h4">Hvornår skal du overveje anden formatering end overskrifter?</h3>
+
+<p>Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx <a href="/komponenter/beskeder/">beskeder til information</a>, <a href="/design/typografi/lister/">fremhæv særlige punkter med punktopstilling</a> eller anvend <a href="/design/typografi/tekst/#stor-tekst">stor tekst</a> til at markere udvalgte dele af teksten.</p>
+
+<h3 class="h4">Hvis du vil vide mere</h3>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" class="icon-link">H42: Using h1-h6 to identify headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" class="icon-link">Page-structure - headings<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<h2 id="overskrift-som-link">Overskrift som link</h2>
+
+<div class="component-preview  component-preview-heading-link p-4" aria-label="">
+    <h3><a href="javascript:void(0);">Dette er en overskrift, der vises som et
+        link</a></h3>
+<h3><a href="javascript:void(0);" class="link-hover">Dette er en
+        overskrift, der vises som et link (hover)</a></h3>
+<h3><a href="javascript:void(0);" class="link-visited">Dette er en
+        overskrift, der vises som et link (besøgt)</a></h3>
+<h3><a href="javascript:void(0);" class="link-focus">Dette er en
+        overskrift, der vises som et link (fokus)</a></h3>
+</div>
+
+<h3>Anvendes til</h3>
+
+<p>Overblikslinks kan anvendes på overblikssider, hvor brugeren kan navigere til forskellige indberetninger i samme selvbetjeningsløsning. Overblikslinks kan også anvendes til at navigere til forskellige sektioner i en løsning.</p>
+
+<h3>Anvendes ikke til</h3>
+
+<p>Må ikke bruges til at fremhæve links eller som erstatning for <a href="/design/typografi/links/">standard links</a> i selvbetjeningsløsninger.</p>
+
+<h3>Vejledning</h3>
+
+<p>Et godt eksempel på brugen af overblikslinks er fx <a href="https://www.gov.uk/" class="icon-link">forsiden af gov.uk<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, hvor de anvendes sammen med tekst til at give brugeren en generel ide om omfanget af indholdet i løsningen.</p>
+
+<h2 id="overskrift-i-soegeresultat">Overskrift i søgeresultat</h2>
+
+<div class="component-preview  component-preview-search-link p-4" aria-label="">
+    <h3><a href="javascript:void(0);" class="search-link">Dette er en
+        overskrift, der vises som et link</a></h3>
+<h3><a href="javascript:void(0);" class="search-link link-hover">Dette er
+        en overskrift, der vises som et link (hover)</a></h3>
+<h3><a href="javascript:void(0);" class="search-link link-visited">Dette er
+        en overskrift, der vises som et link (besøgt)</a></h3>
+<h3><a href="javascript:void(0);" class="search-link link-focus">Dette er
+        en overskrift, der vises som et link (fokus)</a></h3>
+</div>
+
+<h3>Anvendes til</h3>
+
+<p>Søgeresultatlinks bruges til at skabe en overskuelig struktur i søgeresultater.</p>
+
+<h3>Anvendes ikke til</h3>
+
+<p>Må ikke anvendes til at fremhæve links i tekst eller som erstatning for <a href="/design/typografi/links/">standard links</a>.</p>
+
+<h3>Vejledning</h3>
+
+<p>Et godt eksempel på brugen af søgeresultatlinks er googles søgeresultatside.</p>
+
+<h2 id="loesnings-titel">Løsningstitel i header</h2>
+
+<div class="component-preview  component-preview-solutionheading p-4" aria-label="">
+    <header class="header">
+    <div class="solution-header">
+        <div class="container solution-header-inner">
+            <!-- Start: Løsningstitel -->
+            <div class="solution-heading">
+                <a href="#">En langt langt længere løsningstitel</a>
+            </div>
+        </div>
+    </div>
+</header>
+</div>
+
+<h3>Anvendes til</h3>
+
+<p>Anvendes i header som titel på hele løsningen. Titlen bør derved være den samme på hver side.</p>
+
+<h3>Anvendes ikke til</h3>
+<p>Anvendes ikke andre steder end i headeren.</p>
+
+<h2 id="subheading">Subheading</h2>
+
+<div class="component-preview  component-preview-subheading p-4" aria-label="">
+    <p class="subheading">Dette er en subheading</p>
+</div>
+
+<h3>Anvendes til</h3>
+
+<p>Anvendes til at tilføje sekundær tekst til en overskrift.</p>
+
+<h3>Anvendes ikke til</h3>
+
+<p>Må ikke anvendes som en enkeltstående overskrift.</p>
+:ET

@@ -1,0 +1,70 @@
+I"X
+<h2 class="h3">Design</h2>
+
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Tekst</th>
+      <th>Tekstfarve</th>
+      <th>Understreget</th>
+      <th>Ramme</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Standard link</td>
+      <td>#004D99</td>
+      <td>Ja</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Standard link, hover</td>
+      <td>#000040</td>
+      <td>Ja</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Standard link, besøgt</td>
+      <td>#800080</td>
+      <td>Ja</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Standard link, fokus</td>
+      <td>#004D99</td>
+      <td>Ja</td>
+      <td>Tykkelse: 4px<br />Farve: #747474</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Retningslinjer</h3>
+
+<h4>Tilgængelighed</h4>
+
+<ul>
+  <li>Linkteksten skal give mening for brugeren og angive, hvad linket fører hen til.</li>
+  <li>Links skal enten være understreget eller markeret på anden vis. Et link må ikke kun være angivet med en farve.</li>
+  <li>Brugerne skal kunne sætte fokus på links og aktivere dem ved brug af tastaturet.</li>
+  <li>Links skal have en defineret <code>href</code> attribut i koden.</li>
+  <li>Har linket en “hover” skal denne kunne aktiveres både med tastatur og mus.</li>
+</ul>
+
+<h4>Anvendes til</h4>
+
+<ul>
+  <li>Brug links til at lade brugeren navigere til andre sider i din løsning.</li>
+  <li>Brug links til at linke til sider uden for din løsning. Husk at markere dette med et ikon som beskrevet under implementeringsafsnittet under <a href="#eksternt-link">eksternt link</a>.</li>
+</ul>
+
+<h4>Brugervenlighed</h4>
+
+<p>Hvis et link fører væk fra den aktuelle side og brugeren kan miste data eller risikere at skulle udfylde samme del igen ved at følge linket, så advisér brugeren om dette i et modalvindue. Bed også brugeren om at be- eller afkræfte ønsket om at forlade siden.</p>
+
+<p>Brug links med omtanke i en selvbetjeningsløsning. Linker du for meget ud til eksterne websites, kan det virke forstyrrende for flowet og få brugeren ud af kontekst. Omvendt kan det give stor værdi for brugeren, hvis du linker ud til relevante informationer. Fx informationer, som understøtter brugerens vej gennem selvbetjeningsløsningen og/eller giver væsentlige input til, hvad brugeren skal indtaste i løsningen.</p>
+
+<p>Gør gerne brugeren opmærksom på, hvor det eksterne link fører hen, fx i en parentes som en del af linket, hvis det ikke fremgår af linkteksten.</p>
+
+<p>Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.</p>
+
+:ET

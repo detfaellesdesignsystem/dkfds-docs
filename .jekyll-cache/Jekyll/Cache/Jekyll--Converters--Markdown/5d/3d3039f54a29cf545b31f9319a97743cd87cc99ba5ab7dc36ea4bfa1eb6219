@@ -1,0 +1,246 @@
+I"_3<h2 class="h3">Vejledning</h2>
+
+<div class=" component-preview-formular-dos-donts" aria-label="Formular do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Formular-do.svg" alt="Eksempel på, hvordan formular-struktur kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Opdel komplicerede formularer i små bidder, og placér hvert element på en side for sig (Silver, 2018, s. 68-73). Princippet hedder '<em>One thing per page</em>' (én ting pr. side) og har vist sig at fungere godt på mobile enheder og være bedre i forbindelse med fx fejlhåndtering (Paul, 2015). Konceptet er også fordelagtigt for ældre brugere med nedsatte kognitive evner (Johnson &amp; Finn, 2017, s. 99) og nye computerbrugere (Long, 2017).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Formular-dont.svg" alt="Eksempel på, hvordan formular-struktur ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Del ikke tæt relaterede felter op på flere sider (Silver, 2018, s. 71). Felter for postnummer og by bør fx stå på samme side (Jarret &amp; Gaffney, 2010, s. 102). Det samme gælder felter til fornavn og efternavn samt datoer og tidspunkter (Wroblewski, 2008, s. 84).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<div class=" component-preview-overskrifter-dos-donts" aria-label="Overskrifter do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Overskrifter-do-1.svg" alt="Eksempel på, hvordan headers kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Giv formularen en overskrift, der gør det klart, hvad den gør (Wroblewski, 2008, s. 40). Giv overskrifter prominens (fx vha. størrelse eller farve) i formularens visuelle hierarki (Wroblewski, 2003). Brug verber i stedet for navneord i overskriften (Downe, 2015), fx ”Skriv dit barn op til pasning”.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Overskrifter-dont-1.svg" alt="Eksempel på, hvordan headers ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undgå at formulere titler som navneord. Især navneord, der taler om systemet (fx ”Digital pladsanvisning”) frem for brugernes ærinder. Brugerne er muligvis ikke bekendte med de navne, som myndighederne har givet selvbetjeningsløsningerne for at kunne identificere dem (Downe, 2015). </p>
+    </div>
+</div>
+<div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Overskrifter-do-2.svg" alt="Eksempel på, hvordan headers kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle-outline"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Lad formålet med den enkelte side fremgå af overskriften under løsningstitlen, når formularen har flere sider (Lior, 2013, s. 205). </p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Overskrifter-dont-2.svg" alt="Eksempel på, hvordan headers ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close-circle"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Risikér ikke, at brugerne mister fornemmelsen af, hvilken formular de er ved at udfylde eller hvad de er ved at udfylde på den pågældende side, hvis formularen har flere sider.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li>Adam Silver: Form Design Patterns (2018)</li>
+  <li><a href="https://designnotes.blog.gov.uk/2015/07/03/one-thing-per-page/" class="icon-link">Tim Paul: One thing per page (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li>Jeff Johnson &amp; Kate Finn: Designing User Interfaces for an Aging Population (2017)</li>
+  <li><a href="https://youtu.be/IjjHTa0YEg4" class="icon-link">Ally Long: Field-tested interfaces for the next billion (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li>Caroline Jarrett &amp; Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)</li>
+  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
+  <li>Luke Wroblewski: Visible Narratives: Understanding Visual Organization (2003)</li>
+  <li>Louise Downe: Good services are verbs, bad services are nouns (2015)</li>
+  <li>Linda Newman Lior: Writing for Interaction (2013)</li>
+</ul>
+
+<section class="styleguide-child-container content" id="section-/komponenter/formular/formular-kompleks">
+  <h2 id="kompleks">Kompleks</h2>
+  
+  
+  
+<div class="component-preview  component-preview-fieldset-complex" aria-label="Eksempel på kompleksformularstruktur">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/fieldset-complex/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: fieldset-complex</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <h1 class="h2">Dine kontaktoplysninger</h1>
+<form>
+    <!-- Felt start: Fornavn -->
+    <div class="form-group">
+        <label class="form-label " for="fnavn">
+            Fornavn
+        </label>
+
+        <input class="form-input " id="fnavn" value="" name="fnavn" type="text" />
+    </div>
+    <!-- Felt slut: Fornavn -->
+    <!-- Felt start: Efternavn -->
+    <div class="form-group">
+        <label class="form-label " for="enavn">
+            Efternavn
+        </label>
+
+        <input class="form-input " id="enavn" value="" name="enavn" type="text" />
+    </div>
+    <!-- Felt slut: Efternavn -->
+    <!-- Felt start: E-mail adresse -->
+    <div class="form-group">
+        <label class="form-label " for="email">
+            E-mail adresse
+        </label>
+
+        <input class="form-input " id="email" value="" name="email" type="text" />
+    </div>
+    <!-- Felt slut: E-mail adresse -->
+    <!-- Felt start: Telefonnr -->
+    <div class="form-group">
+        <label class="form-label " for="telefon">
+            Telefonnr.
+        </label>
+
+        <input class="form-input " id="telefon" value="" name="telefon" type="text" />
+    </div>
+    <!-- Felt slut: Telefonnr -->
+
+    <!-- Felt start: Kontaktmetode -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Hvordan vil du helst kontaktes?</legend>
+            <ul class="nobullet-list">
+                <li>
+                    <input id="kontakt-telefon" type="radio" name="kontakt" value="kontakt-telefon" class="form-radio  radio-large " />
+                    <label for="kontakt-telefon" id="form-label-kontakt-telefon" class="">Pr.
+                        telefon </label>
+
+                </li>
+                <li>
+                    <input id="kontakt-email" type="radio" name="kontakt" value="kontakt-email" class="form-radio  radio-large " />
+                    <label for="kontakt-email" id="form-label-kontakt-email" class="">Pr. e-mail
+                    </label>
+
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+    <!-- Felt slut: Kontaktmetode -->
+
+    <!-- Felt start: Tid på dagen -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Hvornår på dagen vil det passe bedst, at vi
+                kontakter dig?</legend>
+            <ul class="nobullet-list">
+                <li>
+                    <input id="morgen" type="checkbox" name="tidspunkt[]" value="morgen" class="form-checkbox  checkbox-large " />
+                    <label for="morgen" class="">Om morgenen</label>
+                </li>
+                <li>
+                    <input id="middag" type="checkbox" name="tidspunkt[]" value="middag" class="form-checkbox  checkbox-large " />
+                    <label for="middag" class="">Ved middagstid</label>
+                </li>
+                <li>
+                    <input id="eftermiddag" type="checkbox" name="tidspunkt[]" value="eftermiddag" class="form-checkbox  checkbox-large " />
+                    <label for="eftermiddag" class="">Om
+                        eftermiddagen</label>
+                </li>
+                <li>
+                    <input id="aften" type="checkbox" name="tidspunkt[]" value="aften" class="form-checkbox  checkbox-large " />
+                    <label for="aften" class="">Om aftenen</label>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+    <!-- Felt slut: Tid på dagen -->
+    <!-- Felt start: Personlige oplysninger -->
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Personlige oplysninger</legend>
+
+            <!-- Felt start: Fødselsdato -->
+
+            <div class="form-group  mt-0">
+                <fieldset aria-dsecribedby="example-date-field-hint ">
+                    <legend class="form-label">Fødselsdato</legend>
+                    <span class="form-hint" id="example-date-field-hint">For eksempel: 05 12
+                        1987</span>
+                    <span class="form-error-message  d-none" id="example-date-field-error"><span class="sr-only">Fejl:</span> </span>
+                    <div class="date-group js-calendar-group mt-3">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-day">Dag</label>
+                            <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" />
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-month">Måned</label>
+                            <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                        </div>
+                        <div class="form-group form-group-year ">
+                            <label class="form-label" for="date-year">År</label>
+                            <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Felt slut: Fødselsdato -->
+
+            <!-- Felt start: Odense -->
+            <div class="form-group">
+                <fieldset>
+                    <legend class="h5">Bor du i Odense?</legend>
+                    <ul class="nobullet-list">
+                        <li>
+                            <input id="odense-ja" type="radio" name="odense" value="odense-ja" class="form-radio  radio-large " />
+                            <label for="odense-ja" id="form-label-odense-ja" class="">Ja
+                            </label>
+
+                        </li>
+                        <li>
+                            <input id="odense-nej" type="radio" name="odense" value="odense-nej" class="form-radio  radio-large " />
+                            <label for="odense-nej" id="form-label-odense-nej" class="">Nej
+                            </label>
+
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <!-- Felt slut: Odense -->
+        </fieldset>
+    </div>
+    <!-- Felt slut: Personlige oplysninger -->
+    <!-- Knap start -->
+    <button class="button button-primary mt-9">
+        Gem oplysninger
+    </button>
+    <!-- Knap slut -->
+</form>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+:ET

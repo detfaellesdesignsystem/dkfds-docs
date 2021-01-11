@@ -1,0 +1,18 @@
+I"ã<p><a href="/design/typografi/tekst/#display-retningslinjer">LÃ¦s retningslinjerne for stor tekst</a></p>
+
+<h3 class="h4">HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-displaytext" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class=&quot;displayheading-1&quot;&gt;Stor tekst nr. 1&lt;/p&gt;
+&lt;p class=&quot;displayheading-2&quot;&gt;Stor tekst nr. 2&lt;/p&gt;
+&lt;p class=&quot;displayheading-2 text-positive&quot;&gt;Stor positiv tekst&lt;/p&gt;
+&lt;p class=&quot;displayheading-2 text-negative&quot;&gt;Stor negativ tekst&lt;/p&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+:ET

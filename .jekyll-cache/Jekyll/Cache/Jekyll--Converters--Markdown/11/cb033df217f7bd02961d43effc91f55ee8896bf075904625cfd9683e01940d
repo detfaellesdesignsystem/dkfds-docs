@@ -1,0 +1,17 @@
+I"\
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;label class=&quot;form-label &quot; for=&quot;form-error&quot;&gt;
+        Hvad hedder dit kursus?
+    &lt;/label&gt;
+    &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;
+        Fx: Skriv godt
+    &lt;/span&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Giv dit kursus et navn
+    &lt;/span&gt;
+    &lt;input class=&quot;form-input &quot; required id=&quot;form-error&quot; value=&quot;&quot;
+        name=&quot;form-error&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
+        aria-describedby=&quot;form-error-hint form-error-error&quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET

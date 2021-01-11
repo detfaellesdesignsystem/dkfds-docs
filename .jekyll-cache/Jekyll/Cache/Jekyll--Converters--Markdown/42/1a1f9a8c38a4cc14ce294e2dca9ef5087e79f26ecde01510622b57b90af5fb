@@ -1,0 +1,96 @@
+I"m
+<div class="component-preview  component-preview-button-primary" aria-label="Eksempel på knap">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/button-primary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: button-primary</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <button class="button button-primary">
+    Gem
+</button>
+    </div>
+    
+</div>
+
+<h2>Eksempler og retningslinjer</h2>
+<ul class="nobullet-list">
+    <li><a href="/komponenter/knapper/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/knapper/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
+<div class="component-preview component-preview-code  component-code-button-primary" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-primary&quot;&gt;
+    Gem
+&lt;/button&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<ul>
+  <li>Undgå at anvende <code>div</code> eller <code>img</code> tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.</li>
+  <li>Styler du et link, så det ligner en knap, skal du være opmærksom på, at der skal tilføjes atrributten <code>role="button"</code></li>
+</ul>
+
+<h2>Varianter</h2>
+
+<h3 id="primaerknap">Primær</h3>
+
+<p>Defineres med klassen <code>button-primary</code>.</p>
+
+<p>Bemærk særlige <a href="/komponenter/knapper/#retningslinjer">retningslinjer</a> for primær knap.</p>
+
+<h3 id="sekundaerknap">Sekundær</h3>
+<p>Defineres med klassen <code>button-secondary</code>.</p>
+
+<h3 id="tertiaerknap">Tertiær</h3>
+
+<p>Defineres med klassen <code>button-tertiary</code>.</p>
+
+<h3 id="tilbage-knap">Tilbage-knap</h3>
+
+<p>Defineres med klassen <code>button-quaternary</code>.</p>
+
+<h3 id="knap-med-ikon">Knap med ikon</h3>
+
+<div class="component-preview component-preview-code  component-code-buttons-with-icon" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-primary&quot;&gt;
+    &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#refresh&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    Refresh
+&lt;/button&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="ikon-som-knap">Ikon som knap</h3>
+
+<div class="component-preview component-preview-code  component-code-buttons-only-icon" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-unstyled&quot;&gt;
+    &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#delete-outline&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+
+    &lt;span class=&quot;sr-only&quot;&gt;Slet&lt;/span&gt;
+&lt;/button&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p><code>button-unstyled</code> bruges i de tilfælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx <code>&lt;span class="sr-only"&gt;Slet&lt;/span&gt;</code>.</p>
+:ET

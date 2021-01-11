@@ -1,0 +1,33 @@
+I"6
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;fieldset aria-describedby=&quot;example-nationalitet-error&quot;&gt;
+        &lt;legend class=&quot;h5&quot;&gt;Hvad er din nationalitet?&lt;/legend&gt;
+        &lt;span class=&quot;form-error-message&quot;
+            id=&quot;example-nationalitet-error&quot;&gt;&lt;span
+                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv om du er dansk, svensk
+            eller anden nationalitet&lt;/span&gt;
+        &lt;ul class=&quot;nobullet-list&quot;&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;nationalitet1&quot; type=&quot;checkbox&quot;
+                    name=&quot;nationalitet&quot; value=&quot;dansk&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;nationalitet1&quot; class=&quot;&quot;&gt;Dansk&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;nationalitet2&quot; type=&quot;checkbox&quot;
+                    name=&quot;nationalitet[]&quot; value=&quot;svensk&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;nationalitet2&quot; class=&quot;&quot;&gt;Svensk&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;input id=&quot;nationalitet3&quot; type=&quot;checkbox&quot;
+                    name=&quot;nationalitet[]&quot; value=&quot;anden&quot;
+                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                &lt;label for=&quot;nationalitet3&quot; class=&quot;&quot;&gt;Anden
+                    nationalitet&lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+:ET
