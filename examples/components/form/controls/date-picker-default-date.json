@@ -2,7 +2,7 @@
   "parameters": {
     "id": "datepicker-example3",
     "label": "Dato for aftale",
-    "name": "appointment-date",
+    "name": "appointment-date3",
     "default_date": "2020-12-01"
   }
 }

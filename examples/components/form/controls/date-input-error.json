@@ -8,6 +8,11 @@
     "error": "Indtast en måned i tal mellem 1 og 12",
     "dayValue": "01",
     "monthValue": "20",
-    "yearValue": "2030"
+    "yearValue": "2030",
+    "id": {
+      "day": "date-day2",
+      "month": "date-month2",
+      "year": "date-year2"
+    }
   }
 }
