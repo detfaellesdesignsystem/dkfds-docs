@@ -10,7 +10,7 @@ componentCode: "/kode/typografi/links/#sekundaere-links"
 lead: Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.
 ---
 
-### Design
+### Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
 | Tekstfarve | Understreget |

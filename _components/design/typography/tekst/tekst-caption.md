@@ -9,7 +9,7 @@ componentLink: false
 componentCode: "/kode/typografi/tekst/#billedetekst"
 ---
 
-### Design
+### Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
 | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve | Afstand mellem bogstaver |

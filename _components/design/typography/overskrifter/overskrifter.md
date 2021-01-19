@@ -36,7 +36,7 @@ Overskriftstyperne har to formål:
 {% include code/preview-box.html component="headings" code="/kode/typografi/overskrifter/" title="Oversigt over overskriftshierarki" %}
 
 {:.h3}
-## Design
+## Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
 | Tekst        | Skrifttype     | Skriftstørrelse | Tekst tykkelse | Tekstfarve | Afstand mellem bogstaver |

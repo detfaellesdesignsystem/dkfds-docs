@@ -25,7 +25,7 @@ subnav:
 {:.nobullet-list}
 - <a href="/kode/komponenter/felter/">Se dokumentationen om felter til udviklere</a>
 
-### Design
+### Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
 | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
@@ -54,7 +54,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 {:.nobullet-list}
 - <a href="/kode/komponenter/tables/">Se dokumentationen om tabeller til udviklere</a>
 
-### Design
+### Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
 | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |

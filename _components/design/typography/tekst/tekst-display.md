@@ -9,7 +9,7 @@ componentLink: false
 componentCode: "/kode/typografi/tekst/#stor-tekst"
 ---
 
-### Design
+### Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
 | Tekst                  | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
