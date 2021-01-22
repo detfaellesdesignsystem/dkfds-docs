@@ -56,6 +56,10 @@ Attributten `aria-hidden` tilføjes automatisk i JavaScript, hvis man har undlad
 ## Varianter
 
 {:#med-fejl}
+### Åbn/luk alle
+{% include code/syntax.html component="accordion-bulk-open" link="true" %}
+
+{:#med-fejl}
 ### Med fejl
 {% include code/syntax.html component="accordion-error" link="true" %}
 
