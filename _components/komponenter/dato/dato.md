@@ -12,8 +12,6 @@ anchor: true
 subnav:
 - text: Fejlmeddelelse
   href: "#fejlmeddelelse"
-- text: Datovælger
-  href: "#datovælger"
 component: date-input
 componentTitle: Eksempel på datoangivelse
 componentCode: "/kode/komponenter/dato-felt/"

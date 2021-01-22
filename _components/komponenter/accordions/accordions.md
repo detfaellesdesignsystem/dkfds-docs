@@ -13,6 +13,8 @@ lead: En accordion er et grafisk element, som du kan bruge til at skjule og vise
   brugerne, end det som er umiddelbart synligt på siden.
 anchor: true
 subnav:
+- text: Åbn/luk alle
+  href: "#åbn-luk-alle"
 - text: Med fejl
   href: "#med-fejl"
 - text: Med succesbeskeder
