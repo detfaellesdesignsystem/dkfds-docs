@@ -10,6 +10,8 @@ description: "Dokumentation på implementering af accordions."
 tags: 
 anchor: true
 subnav:
+- text: Åbn/luk alle
+  href: "#aabn-luk-alle"
 - text: Med fejl
   href: "#med-fejl"
 - text: Med succesbeskeder
@@ -55,7 +57,7 @@ Attributten `aria-hidden` tilføjes automatisk i JavaScript, hvis man har undlad
 
 ## Varianter
 
-{:#med-fejl}
+{:#aabn-luk-alle}
 ### Åbn/luk alle
 {% include code/syntax.html component="accordion-bulk-open" link="true" %}
 
