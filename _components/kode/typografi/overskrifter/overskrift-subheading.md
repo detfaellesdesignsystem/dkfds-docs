@@ -9,7 +9,7 @@ componentTitle: Eksempel på subheading
 componentLink: false
 ---
 
-<a href="/design/typografi/overskrift/#subheading">Læs retningslinjer for subheadings</a>
+<a href="/design/typografi/overskrifter/#subheading">Læs retningslinjer for subheadings</a>
 
 {:.h4}
 ### HTML Struktur
