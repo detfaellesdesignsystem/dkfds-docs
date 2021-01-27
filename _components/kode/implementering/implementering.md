@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 {% endhighlight %}
 
-
+{:#temahaandtering}
 ## Temahåndtering
 
 Designsystemet er udviklet med 2 forskellige temaer. Standard temaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.
