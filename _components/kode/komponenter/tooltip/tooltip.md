@@ -13,7 +13,7 @@ subnav:
 - text: Placering
   href: '#placering-af-tooltip' 
 - text: Ikon med popover
-  href: '#ikon-med-popover-kræver-tryk' 
+  href: '#ikon-med-popover' 
 ---
 
 {% include code/preview-box.html component="tooltip-icon" title="Eksempel på tooltip" %}
@@ -52,7 +52,7 @@ new DKFDS.Tooltip(document.getElementById('Tooltip-ID'));
 ### Placering af tooltip
 {% include code/syntax.html component="tooltip-position" link="true" %}
 
-{:ikon-med-popover-kræver-tryk}
+{:ikon-med-popover}
 ### Ikon med popover (kræver tryk)
 {% include code/syntax.html component="popover-icon" link="true" %}
 
