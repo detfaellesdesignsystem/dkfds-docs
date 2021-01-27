@@ -52,7 +52,7 @@ new DKFDS.Tooltip(document.getElementById('Tooltip-ID'));
 ### Placering af tooltip
 {% include code/syntax.html component="tooltip-position" link="true" %}
 
-{:ikon-med-popover}
+{:#ikon-med-popover}
 ### Ikon med popover (kræver tryk)
 {% include code/syntax.html component="popover-icon" link="true" %}
 
