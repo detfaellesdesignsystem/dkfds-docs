@@ -39,7 +39,7 @@ subnav:
 
 ## Varianter
 
-{:#fejlmeddelelser}
+{:#fejlmeddelelse}
 ### Fejlmeddelelse
 {% include code/syntax.html component="checkbox-error" link="true" %}
 
