@@ -12,7 +12,8 @@
     "id": {
       "day": "date-day2",
       "month": "date-month2",
-      "year": "date-year2"
+      "year": "date-year2",
+      "hint": "example-date-field-hint2"
     }
   }
 }
