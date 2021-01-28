@@ -11,9 +11,9 @@ headingClass: mb-0
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/komponenter/sidenav/">Sidenavigationen</a> har fået nyt design.
-<span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/sidenav/">komponenten</a>.</span>
+<span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/sidenav/">sidenavigations-komponenten</a>.</span>
 - <label class="color-warning badge badge-small mr-3">Breaking change</label><a href="/komponenter/tabnav/">Faneblads-komponenten</a> er blevet redefineret.
-<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/tabnav/">komponenten</a>.</span>
+<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/tabnav/">faneblads-komponenten</a>.</span>
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>
 - <label class="color-warning badge badge-small mr-3">Breaking change</label>Modalvinduer-komponenten er blevet flyttet til plugins.

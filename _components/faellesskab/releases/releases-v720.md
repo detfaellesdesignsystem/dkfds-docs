@@ -13,4 +13,6 @@ headingClass: mb-0
 - Tilføjet brugervenlige JS fejl, når en komponent ikke er tilføjet korrekt
 - Opdateret typografi
 - Tilføjet styling af billedetekst (figcaption)
+- Åbn/luk alle accordions function
+
 
