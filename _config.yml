@@ -36,6 +36,11 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
 
+
+
+incremental_regeneration_fixer:
+  interdependent_files:
+    
 #redcarpet:
 #  extensions:
 #    - smart
