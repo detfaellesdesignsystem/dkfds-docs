@@ -67,7 +67,7 @@ import * as DKFDS from "dkfds";
 
 Når DKFDS er inkluderet kan du køre funktionen `DKFDS.init();` ved dom ready, eller hvornår det nu end passer i dit projekt.
 
-`DKFDS.init();` aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent. Information omkring javscript for hver komponent finder du i <a href="/kode/komponenter/">kode sektionen for den specifikke komponent</a>.
+`DKFDS.init();` aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent. Information omkring javascript for hver komponent finder du i <a href="/kode/komponenter/">kode sektionen for den specifikke komponent</a>.
 
 <p class="mb-2">Eksempel på init:</p>
 
