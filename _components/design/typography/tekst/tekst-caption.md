@@ -1,12 +1,12 @@
 ---
 type: component
-title: "Billedetekst"
+title: "Billedtekst"
 parent: Tekst
 order: 35
 lead: Forklarende eller beskrivende tekst tilhørende et billede.
 component: caption
 componentLink: false
-componentCode: "/kode/typografi/tekst/#billedetekst"
+componentCode: "/kode/typografi/tekst/#billedtekst"
 ---
 
 ### Designværdier
@@ -16,7 +16,7 @@ componentCode: "/kode/typografi/tekst/#billedetekst"
 |---------------|-----------------|------------------------------|------------|--------------------------|
 | IBM Plex Sans | 13px            | 400                          | #1A1A1A    | 0.4 px                   |
 
-{:#billedetekst-retningslinjer}
+{:#billedtekst-retningslinjer}
 ### Retningslinjer
 
-Billedetekst vises under et billede, således at det synligt bemærkes at teksten og billedet hører sammen, samt at teksten ikke nødvendigvis er en del af den øvrige brødtekst.
+Billedtekst vises under et billede, således at det synligt bemærkes at teksten og billedet hører sammen, samt at teksten ikke nødvendigvis er en del af den øvrige brødtekst.

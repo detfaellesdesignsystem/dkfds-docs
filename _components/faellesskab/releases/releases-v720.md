@@ -14,7 +14,7 @@ headingClass: mb-0
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/120" class="icon-link">issue #120 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet brugervenlige JS fejl, når en komponent ikke er tilføjet korrekt
 - Opdateret <a href="/design/typografi/">typografi</a>
-- Tilføjet styling af <a href="/design/typografi/tekst/#billedetekst">billedetekst (figcaption)</a>
+- Tilføjet styling af <a href="/design/typografi/tekst/#billedtekst">billedtekst (figcaption)</a>
 - <a href="/komponenter/accordions/#åbn-luk-alle">Åbn/luk alle accordions function</a>
 - <a href="/komponenter/accordions/">Accordion</a> knapper kan nu være i en overskrift
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/88" class="icon-link">issue #88 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>

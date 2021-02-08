@@ -29,8 +29,8 @@ subnav:
   href: "#brødtekst"
 - text: Hjælpetekst og fejlmeddelelser
   href: "#hjælpetekst-og-fejlmeddelelser"
-- text: Billedetekst
-  href: "#billedetekst"
+- text: Billedtekst
+  href: "#billedtekst"
 - text: Stor tekst
   href: "#stor-tekst"
 - text: Linjelængde
