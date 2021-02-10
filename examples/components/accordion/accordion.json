@@ -7,7 +7,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "id": "a1",
         "expanded": true,
-        "content": "<ol><li>Ordered list</li><li>Ordered list</li><li>Ordered list</li><li>Ordered list<ol class=\"sub_list\" type=\"a\"><li>Ordered list</li><li>Ordered list</li><li>Ordered list<ol class=\"sub_list\" type=\"i\"><li>Ordered list</li><li>Ordered list</li><li>Ordered list</li></ol></li></ol></li></ol><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
       },
       {
         "title": "Consectetur adipiscing elit",
