@@ -16,9 +16,9 @@ subnav:
 - text: Primærknap
   href: '#primaerknap'
 - text: Sekundærknapper
-  href: '#sekundaerknapper'
+  href: '#sekundaerknap'
 - text: Tertiærknapper
-  href: '#tertiaerknapper'
+  href: '#tertiaerknap'
 - text: Tilbage-knap
   href: '#tilbage-knap'
 - text: Knap med ikon

@@ -12,13 +12,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
 
 <title>Digital flytning: trin 3 | Det Fælles Designsystem</title>
 <meta property="og:title" content="Digital flytning: trin 3 | Det Fælles Designsystem">
-
 
 <meta name="description" content="Side 3 af eksempel af selvbetjeningsløsning, hvor man kan indtaste oplysninger om flytning.">
 <meta property="og:description" content="Side 3 af eksempel af selvbetjeningsløsning, hvor man kan indtaste oplysninger om flytning.">
@@ -237,7 +238,7 @@
     <div class="mt-6">
 
         <div class="form-group  ">
-            <fieldset aria-dsecribedby="example-date-field-hint ">
+            <fieldset aria-describedby="example-date-field-hint ">
                 <legend class="form-label">Dato for flytning</legend>
                 <span class="form-hint" id="example-date-field-hint">Fx. 28
                     04 1996</span>
@@ -253,7 +254,8 @@
                             data-max="31" maxlength="2"
                             pattern="^[0-9]{0,2}$"
                             data-input-regex="^[0-9]{0,2}$"
-                            title="Indskriv dag på måneden som tal" />
+                            title="Indskriv dag på måneden som tal"
+                            aria-describedby="example-date-field-hint" />
                     </div>
                     <div class="form-group form-group-month">
                         <label class="form-label"
@@ -263,7 +265,8 @@
                             data-min="1" data-max="12" maxlength="2"
                             pattern="^[0-9]{0,2}$"
                             data-input-regex="^[0-9]{0,2}$"
-                            title="Indskriv månedens nummer" />
+                            title="Indskriv månedens nummer"
+                            aria-describedby="example-date-field-hint" />
                     </div>
                     <div class="form-group form-group-year ">
                         <label class="form-label"
@@ -273,7 +276,8 @@
                             data-min="1900" data-max="3000" maxlength="4"
                             pattern="^[0-9]{0,4}$"
                             data-input-regex="^[0-9]{0,4}$"
-                            title="Indskriv årstal" />
+                            title="Indskriv årstal"
+                            aria-describedby="example-date-field-hint" />
                     </div>
 
                 </div>

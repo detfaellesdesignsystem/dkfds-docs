@@ -29,10 +29,18 @@ defaults:
       layout: post
 
 # Build settings
+highlighter: none
 markdown: kramdown
 kramdown:
   auto_ids: false
+  syntax_highlighter_opts:
+    disable: true
 
+
+
+incremental_regeneration_fixer:
+  interdependent_files:
+    
 #redcarpet:
 #  extensions:
 #    - smart
@@ -53,6 +61,7 @@ exclude:
   - ".sass-cache"
   - ".github"
   - ".vscode"
+  - .idea
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock

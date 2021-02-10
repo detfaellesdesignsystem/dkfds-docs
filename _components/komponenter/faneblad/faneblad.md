@@ -9,7 +9,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen.
-tags: 
+tags:
 lead: Faneblade gør det muligt for brugerne at bladre i mellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere
   ser de skjulte sektioner, når du anvender faneblade.
@@ -33,7 +33,7 @@ lead: Faneblade gør det muligt for brugerne at bladre i mellem relaterede sekti
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Faneblade anvendes til at skifte mellem forskellige visninger af indhold indenfor samme kontekst. 
+Faneblade anvendes til at skifte mellem forskellige visninger af indhold indenfor samme kontekst.
 
 Faneblade egner sig bedst som en avanceret funktionalitet for afgrænsede målgrupper.
 
@@ -45,8 +45,20 @@ Faneblade kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller
 Faneblade anvendes ikke til at opdele et logisk flow eller en sekvens af handlinger.
 
 {:.h3}
-## Vejledning          
+## Vejledning
 
 Vi anbefaler ikke, at du anvender faneblade i en generel løsning, da en stor del af brugerne ikke opdager indholdet på fanerne udover den aktive.
 
 Hvis du ønsker at anvende faner, bør det testes på din målgruppe før din løsning går i produktion.
+
+
+{% include dos-donts-box.html component="faneblad-dos-donts" title="Faneblade do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- <a href="https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/" class="icon-link">Jacob Gube: Module Tabs in Web Design: Best Practices and Solutions (2009)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/tabs-used-right/" class="icon-link">Jakob Nielsen: Tabs, Used Right (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+{% include child-components.html parent='Faneblade' %}

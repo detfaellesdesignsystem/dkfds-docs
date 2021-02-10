@@ -1,0 +1,62 @@
+---
+label: Do's and Don't
+hide_body: true
+fields:
+- name: do_s_and_don_ts
+  type: field_group_list
+  fields:
+  - name: do
+    type: field_group
+    config: {}
+    fields:
+    - name: svg_filename
+      type: text
+      config:
+        required: false
+      label: SVG filename
+    - name: svg_alt_text
+      type: text
+      config:
+        required: false
+      label: SVG alt text
+    - name: content
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Content
+    label: Do
+  - name: don_t
+    type: field_group
+    config: {}
+    fields:
+    - name: svg_filename
+      type: text
+      config:
+        required: false
+      label: SVG filename
+    - name: svg_alt_text
+      type: text
+      config:
+        required: false
+      label: SVG alt text
+    - name: content
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Content
+    label: Don't
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Do's & Don'ts
+pages:
+- _components/komponenter/accordions/test.md

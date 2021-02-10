@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="314px" viewBox="0 0 360 314" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Overflow-menu-do-02</title>
+    <g id="Overflow-menu-do-02">
+        <g>
+            <rect id="Rectangle" x="289.5" y="0.5" width="26" height="51" fill="#c8cadf" stroke="#474e95"/>
+            <path id="Combined-Shape" d="M294.68,60.5,303,41.77l8.32,18.73H356.5v145h-251V60.5Z" fill="#c8cadf" stroke="#474e95" fill-rule="evenodd"/>
+            <g id="Valgmulighed-1-Valgm" style="isolation: isolate">
+                <text transform="translate(210 80)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate"><tspan letter-spacing="-0.07em">V</tspan><tspan x="10.67" y="0">algmulighed 1</tspan></text>
+                <text transform="translate(332.75 80)" font-size="18" fill="#474e95" font-family="ArialMT, Arial"> </text>
+                <text transform="translate(210 115)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate"><tspan letter-spacing="-0.07em">V</tspan><tspan x="10.67" y="0">algmulighed 2</tspan></text>
+                <text transform="translate(332.75 115)" font-size="18" fill="#474e95" font-family="ArialMT, Arial"> </text>
+                <text transform="translate(210 150)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate"><tspan letter-spacing="-0.07em">V</tspan><tspan x="10.67" y="0">algmulighed 3</tspan></text>
+                <text transform="translate(332.75 150)" font-size="18" fill="#474e95" font-family="ArialMT, Arial"> </text>
+                <text transform="translate(210 185)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate"><tspan letter-spacing="-0.07em">V</tspan><tspan x="10.67" y="0">algmulighed 4</tspan></text>
+            </g>
+            <g id="Group">
+                <path id="Rectangle-2" data-name="Rectangle" d="M302.5,17h0a2.5,2.5,0,0,1,2.5,2.5h0a2.5,2.5,0,0,1-2.5,2.5h0a2.5,2.5,0,0,1-2.5-2.5h0A2.5,2.5,0,0,1,302.5,17Z" fill="#474e95" fill-rule="evenodd"/>
+                <path id="Rectangle-Copy" d="M302.5,24h0a2.5,2.5,0,0,1,2.5,2.5h0a2.5,2.5,0,0,1-2.5,2.5h0a2.5,2.5,0,0,1-2.5-2.5h0A2.5,2.5,0,0,1,302.5,24Z" fill="#474e95" fill-rule="evenodd"/>
+                <path id="Rectangle-Copy-2" d="M302.5,31h0a2.5,2.5,0,0,1,2.5,2.5h0a2.5,2.5,0,0,1-2.5,2.5h0a2.5,2.5,0,0,1-2.5-2.5h0A2.5,2.5,0,0,1,302.5,31Z" fill="#474e95" fill-rule="evenodd"/>
+            </g>
+        </g>
+        <rect id="Rectangle-Copy-4" x="167.5" y="0.5" width="123" height="51" fill="#c8cadf" stroke="#474e95"/>
+        <rect id="Rectangle-Copy-5" x="44.5" y="0.5" width="123" height="51" fill="#c8cadf" stroke="#474e95"/>
+        <rect id="Rectangle-Copy-6" x="-78.5" y="0.5" width="123" height="51" fill="#c8cadf" stroke="#474e95"/>
+        <g id="Menupunkt" style="isolation: isolate">
+            <text transform="translate(182 33)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
+        </g>
+        <g id="Menupunkt-Copy" style="isolation: isolate">
+            <text transform="translate(59 33)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
+        </g>
+        <g id="Menupunkt-Copy-2" style="isolation: isolate">
+            <text transform="translate(-64 33)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
+        </g>
+    </g>
+</svg>

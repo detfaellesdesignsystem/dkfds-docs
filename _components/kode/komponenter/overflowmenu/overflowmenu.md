@@ -58,7 +58,7 @@ Elementet som skal collapses/expandes skal have et matchende id `id="overflow1"`
 Collapse komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.Dropdown(document.getElementByID('OVERFLOW-BUTTON-ID'));
+new DKFDS.Dropdown(document.getElementById('OVERFLOW-BUTTON-ID'));
 {% endhighlight %}
 
 #### Events

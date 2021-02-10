@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Footers-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Footers-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#C8CADF" x="0" y="249" width="360" height="111"></rect>
+        <text id="Kontakt" font-family="IBMPlexSans-SemiBold, IBM Plex Sans, Helvetica" font-size="10" font-weight="500" fill="#474E95">
+            <tspan x="10" y="269">Kontakt</tspan>
+        </text>
+        <text id="Privatlivspolitik" font-family="IBMPlexSans-SemiBold, IBM Plex Sans, Helvetica" font-size="10" font-weight="500" fill="#474E95">
+            <tspan x="145" y="269">Privatlivspolitik</tspan>
+        </text>
+        <text id="Følg-os" font-family="IBMPlexSans-SemiBold, IBM Plex Sans, Helvetica" font-size="10" font-weight="500" fill="#474E95">
+            <tspan x="273" y="269">Følg os</tspan>
+        </text>
+        <rect id="Rectangle-Copy-7" fill="#9195BF" x="10" y="276" width="87" height="5"></rect>
+        <rect id="Rectangle-Copy-11" fill="#9195BF" x="145" y="276" width="70" height="5"></rect>
+        <rect id="Rectangle-Copy-16" fill="#9195BF" x="273" y="276" width="67" height="5"></rect>
+        <rect id="Rectangle-Copy-8" fill="#9195BF" x="10" y="284" width="78" height="5"></rect>
+        <rect id="Rectangle-Copy-12" fill="#9195BF" x="145" y="284" width="66" height="5"></rect>
+        <rect id="Rectangle-Copy-17" fill="#9195BF" x="273" y="284" width="67" height="5"></rect>
+        <rect id="Rectangle-Copy-9" fill="#9195BF" x="10" y="292" width="40" height="5"></rect>
+        <rect id="Rectangle-Copy-13" fill="#9195BF" x="145" y="292" width="55" height="5"></rect>
+        <rect id="Rectangle-Copy-10" fill="#9195BF" x="10" y="300" width="54" height="5"></rect>
+        <rect id="Rectangle-Copy-14" fill="#9195BF" x="145" y="300" width="71" height="5"></rect>
+        <rect id="Rectangle-Copy-15" fill="#9195BF" x="145" y="308" width="60" height="5"></rect>
+        <rect id="Rectangle" fill="#DCDCDC" x="0" y="0" width="360" height="249"></rect>
+        <rect id="Rectangle" fill="#BFBFBF" x="7" y="129" width="118" height="110"></rect>
+        <rect id="Rectangle-Copy-3" fill="#BFBFBF" x="7" y="0" width="353" height="115"></rect>
+        <rect id="Rectangle-Copy" fill="#BFBFBF" x="135" y="129" width="118" height="110"></rect>
+        <rect id="Rectangle-Copy-2" fill="#BFBFBF" x="263" y="129" width="97" height="110"></rect>
+    </g>
+</svg>

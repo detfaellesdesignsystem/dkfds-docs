@@ -28,7 +28,7 @@ tags:
 Modal komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-let modal = new DKFDS.Modal(document.getElementByID('MODAL-ID'));
+let modal = new DKFDS.Modal(document.getElementById('MODAL-ID'));
 modal.init();
 {% endhighlight %}
 

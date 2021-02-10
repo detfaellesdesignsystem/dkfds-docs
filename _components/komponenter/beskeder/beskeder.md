@@ -42,12 +42,17 @@ Brug modal dialog – ikke beskeder – til at give brugerne information om en p
 
 Brug kun beskeder, når det er nødvendigt og hjælper brugeren med at forstå hvad denne skal, hvad der sker eller hvorfor. Brug ikke beskeder som farvelade for at "peppe" løsningen op.
 
-Gør informationen i beskederne aktiv og handlingsanvisende, så brugeren forstår, hvad der er behov for eller hvad den aktuelle status er.
-
 Brug ord og begreber, som brugeren kan genkende fra løsningen.
 
 Skriv kort og præcist og undgå tekniske beskeder, der kan forvirre brugeren.
 
 Brug beskeder til at øge brugerens forståelse for løsningen.
+
+
+{% include dos-donts-box.html component="alerts-dos-donts" title="Beskeder do's and don'ts" %}
+
+{:.h4}
+### Referencer
+Linda Newman Lior: Writing for Interaction (2013)
 
 {% include child-components.html parent='Beskeder' %}

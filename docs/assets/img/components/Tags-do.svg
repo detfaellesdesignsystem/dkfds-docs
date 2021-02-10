@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="75px" viewBox="0 0 360 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Tags-do</title>
+    <g id="Tags-do">
+        <g>
+            <rect id="Rectangle" width="30" height="35" fill="#474e95"/>
+            <rect id="Rectangle-Copy" x="35" width="99" height="35" fill="#474e95"/>
+            <rect id="Rectangle-Copy-2" x="139" width="53" height="35" fill="#474e95"/>
+            <g id="Ny" style="isolation: isolate">
+                <text transform="translate(5 24)" font-size="16" fill="#f5f5f5" font-family="ArialMT, Arial" style="isolation: isolate">Ny</text>
+            </g>
+            <g id="Børnevenlig" style="isolation: isolate">
+                <text transform="translate(40 24)" font-size="16" fill="#f5f5f5" font-family="ArialMT, Arial" style="isolation: isolate">Børnevenlig</text>
+            </g>
+            <g id="Video" style="isolation: isolate">
+                <text transform="translate(144 24)" font-size="16" fill="#f5f5f5" font-family="ArialMT, Arial" style="isolation: isolate"><tspan letter-spacing="-0.02em">V</tspan><tspan x="10.38" y="0">ideo</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

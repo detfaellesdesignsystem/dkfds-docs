@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="351px" height="250px" viewBox="0 0 351 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Trinindikatorer-do</title>
+    <g id="Trinindikatorer-do">
+        <g>
+            <path id="Rectangle-Copy-3" d="M54.5,27.5h111v51H54.5Z" transform="translate(-54 -27)" fill="#c8cadf" stroke="#474e95" fill-rule="evenodd"/>
+            <path id="Triangle" d="M154,60.12l5.81-11.62H148.19Z" transform="translate(-54 -27)" fill="#454a99" stroke="#44479b" fill-rule="evenodd"/>
+            <g id="Trin-3-af-5" style="isolation: isolate">
+                <text transform="translate(7 33)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate"><tspan letter-spacing="-0.04em">T</tspan><tspan x="10.33" y="0">rin 3 af 5</tspan></text>
+            </g>
+            <path id="Combined-Shape-Copy" d="M73.68,89.5,82,70.77,90.32,89.5H255.5v187H54.5V89.5Z" transform="translate(-54 -27)" fill="#c8cadf" stroke="#474e95" fill-rule="evenodd"/>
+            <rect id="Rectangle" x="0.5" y="136.5" width="201" height="37" fill="none" stroke="#474e95"/>
+            <g id="Trin-1-Trin-2-Trin-3" style="isolation: isolate">
+                <text transform="translate(7 92)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate"><tspan letter-spacing="-0.04em">T</tspan><tspan x="10.33" y="0">rin 1</tspan></text>
+                <text transform="translate(52.34 92)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial"> </text>
+                <text transform="translate(7 127)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate"><tspan letter-spacing="-0.04em">T</tspan><tspan x="10.33" y="0">rin 2</tspan></text>
+                <text transform="translate(52.34 127)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial"> </text>
+                <text transform="translate(7 162)" font-size="18" fill="#474e95" font-family="Arial-BoldMT, Arial" font-weight="700" style="isolation: isolate"><tspan letter-spacing="-0.06em">T</tspan><tspan x="10" y="0">rin 3</tspan></text>
+                <text transform="translate(55.01 162)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial"> </text>
+                <text transform="translate(7 197)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate"><tspan letter-spacing="-0.04em">T</tspan><tspan x="10.33" y="0">rin 4</tspan></text>
+                <text transform="translate(52.34 197)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial"> </text>
+                <text transform="translate(7 232)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate"><tspan letter-spacing="-0.04em">T</tspan><tspan x="10.33" y="0">rin 5</tspan></text>
+            </g>
+            <path id="Line-4" d="M65,130H245" transform="translate(-54 -27)" fill="none" stroke="#9195bf" stroke-linecap="square"/>
+            <path id="Line-4-Copy-3" d="M64,236H244" transform="translate(-54 -27)" fill="none" stroke="#9195bf" stroke-linecap="square"/>
+            <polyline id="Path-2" points="163 86.14 171.36 93 187 79" fill="none" stroke="#454a99" stroke-width="3"/>
+            <polyline id="Path-2-Copy" points="163 121.14 171.36 128 187 114" fill="none" stroke="#454a99" stroke-width="3"/>
+        </g>
+    </g>
+</svg>

@@ -20,7 +20,8 @@ var exampleUrls = [
     {"url": "/eksempel/footer-four-columns-language/", "filename": "footer-four-columns-language.png", "width": 1017, "height": 381 },
     {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
     {"url": "/eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
-    {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 270 }
+    {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 270 },
+    {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 }
 ];
 
 (async () => {

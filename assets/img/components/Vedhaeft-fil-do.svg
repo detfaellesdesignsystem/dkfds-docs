@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Vedhæft-fil-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Vedhæft-fil-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="360" height="360"></rect>
+        <g transform="translate(20.000000, 20.000000)">
+            <rect id="Rectangle" stroke="#747474" fill="#D8D8D8" x="-0.5" y="169.5" width="265" height="21"></rect>
+            <text id="Vedhæft-fil:" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="18" font-weight="normal" fill="#1A1A1A">
+                <tspan x="0" y="160">Vedhæft fil:</tspan>
+            </text>
+            <rect id="Rectangle" fill="#474E95" x="174" y="170" width="90" height="20"></rect>
+            <text id="Gennemse…" font-family="IBMPlexSans-SemiBold, IBM Plex Sans, Helvetica" font-size="14" font-weight="500" fill="#FFFFFF">
+                <tspan x="178" y="185">Gennemse…</tspan>
+            </text>
+            <rect id="Rectangle-Copy" stroke="#747474" fill="#DCDCDC" x="-0.5" y="95.5" width="300" height="41"></rect>
+            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="-0.5" y="72.5" width="121" height="19"></rect>
+            <rect id="Rectangle-Copy" stroke="#747474" fill="#DCDCDC" x="-0.5" y="22.5" width="300" height="41"></rect>
+            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="-0.5" y="-0.5" width="121" height="19"></rect>
+        </g>
+        <rect id="Rectangle" stroke="#514E4E" fill="#747474" x="19.5" y="224.5" width="86" height="36"></rect>
+        <text id="Send" font-family="IBMPlexSans-SemiBold, IBM Plex Sans, Helvetica" font-size="16" font-weight="500" fill="#F5F5F5">
+            <tspan x="44" y="249">Send</tspan>
+        </text>
+    </g>
+</svg>

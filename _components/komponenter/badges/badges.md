@@ -44,4 +44,13 @@ Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer
 
 Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor det virkelig er meningsfuldt.
 
+
+{% include dos-donts-box.html component="badges-dos-donts" title="Badges do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+<a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" class="icon-link">Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+
 {% include child-components.html parent='Badges' %}

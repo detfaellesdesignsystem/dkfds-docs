@@ -29,10 +29,6 @@ Du er velkommen til at bidrage med flere designressourcer eller med opdateringer
 
 <a href="https://www.figma.com/file/ULyQcXMQFHgGyoiAOcBQJn/FDS-UI-komponenter?node-id=48%3A3" class="icon-link">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-<h3 class="h4">Sketch</h3>
-
-<a href="/downloads/Det_Faelles_Designsystem (Version 3.0.3).sketch">Download sketch-fil (version 3.0.3)</a>
-
 <h3 class="h4">SVG</h3>
 
 <a href="/downloads/FDS-Komponenter-SVG-Version-700.zip">Download svg-filer (version 7.0.0)</a>

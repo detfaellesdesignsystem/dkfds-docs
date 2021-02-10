@@ -2,7 +2,7 @@ version: 2
 jobs:
   deploy:
     docker:
-    - image: circleci/ruby:2.4.3-node-browsers
+    - image: circleci/ruby:3.0.0-node-browsers
     steps:
     - checkout
     - run: npm install

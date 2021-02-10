@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Spinner-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Spinner-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(60.000000, 19.000000)">
+            <g id="Spinner" transform="translate(26.000000, 36.000000)">
+                <g id="Group-5" transform="translate(0.466095, 84.233868)">
+                    <rect id="Rectangle" fill="#C8CADF" opacity="0.699242001" x="120" y="0" width="59" height="12" rx="6"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#9195BF" x="0" y="0" width="59" height="12" rx="6"></rect>
+                </g>
+                <g id="Group" transform="translate(89.966095, 90.233868) rotate(90.000000) translate(-89.966095, -90.233868) translate(0.466095, 84.233868)" fill="#C8CADF">
+                    <rect id="Rectangle-Copy" x="120.069959" y="-2.84217094e-14" width="58.9300412" height="12" rx="6"></rect>
+                    <rect id="Rectangle-Copy-3" opacity="0.5" x="0" y="0" width="58.9300412" height="12" rx="6"></rect>
+                </g>
+                <g id="Group-Copy" transform="translate(89.700703, 90.069182) rotate(121.000000) translate(-89.700703, -90.069182) translate(-0.299297, 84.069182)">
+                    <g id="Group-4" transform="translate(0.000000, -0.000000)">
+                        <rect id="Rectangle-Copy" fill="#9195BF" opacity="0.804594494" x="120.245902" y="7.36388728e-12" width="59.0163934" height="11.8032787" rx="5.90163934"></rect>
+                        <rect id="Rectangle-Copy-3" fill="#C8CADF" opacity="0.501441592" x="7.10542736e-14" y="8.61533067e-14" width="59.0163934" height="11.8032787" rx="5.90163934"></rect>
+                    </g>
+                </g>
+                <g id="Group-Copy-2" transform="translate(89.603133, 89.889992) rotate(152.000000) translate(-89.603133, -89.889992) translate(-0.396867, 83.889992)">
+                    <rect id="Rectangle-Copy" fill="#9195BF" x="120.245902" y="0" width="59.0163934" height="11.8032787" rx="5.90163934"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#C8CADF" opacity="0.60093471" x="-1.8189894e-12" y="0" width="59.0163934" height="11.8032787" rx="5.90163934"></rect>
+                </g>
+                <g id="Group-Copy-3" transform="translate(89.723943, 89.632587) rotate(61.000000) translate(-89.723943, -89.632587) translate(-0.276057, 83.632587)" fill="#C8CADF">
+                    <rect id="Rectangle-Copy" x="120.245902" y="-4.54747351e-12" width="59.0163934" height="11.8032787" rx="5.90163934"></rect>
+                    <rect id="Rectangle-Copy-3" opacity="0.401064918" x="-3.63797881e-12" y="-2.72848411e-12" width="59.0163934" height="11.8032787" rx="5.90163934"></rect>
+                </g>
+                <g id="Group-Copy-4" transform="translate(90.240497, 90.077958) rotate(31.000000) translate(-90.240497, -90.077958) translate(0.240497, 84.077958)">
+                    <rect id="Rectangle-Copy" fill="#C8CADF" x="120.245902" y="0" width="59.0163934" height="11.8032787" rx="5.90163934"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#9195BF" x="-9.09494702e-13" y="0" width="59.0163934" height="11.8032787" rx="5.90163934"></rect>
+                </g>
+            </g>
+            <text id="35%" font-family="IBMPlexSans-Bold, IBM Plex Sans, Helvetica" font-size="20" font-weight="bold" fill="#474E95">
+                <tspan x="94" y="133.5">35%</tspan>
+            </text>
+            <text id="Dette-kan-tage-flere" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="18" font-weight="normal" fill="#474E95">
+                <tspan x="0" y="253">Dette kan tage flere minutter</tspan>
+            </text>
+            <rect id="Rectangle" fill="#9195BF" x="0" y="0" width="233" height="18"></rect>
+        </g>
+    </g>
+</svg>

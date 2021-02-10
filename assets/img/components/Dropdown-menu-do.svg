@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Dropdown-menu-do</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Dropdown-menu-do" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(20.000000, 28.000000)">
+            <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="-0.5" y="145" width="251" height="32"></rect>
+            <text id="Valgmulighed-1-Valgm" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="18" font-weight="normal" line-spacing="35">
+                <tspan x="10" y="97" fill="#1A1A1A">Valgmulighed 1</tspan>
+                <tspan x="10" y="132" fill="#1A1A1A">Valgmulighed 2</tspan>
+                <tspan x="134.866" y="132" fill="#000000"></tspan>
+                <tspan x="10" y="167" fill="#474E95">Valgmulighed 3</tspan>
+                <tspan x="10" y="202" fill="#1A1A1A">Valgmulighed 4</tspan>
+                <tspan x="10" y="237" fill="#1A1A1A">Valgmulighed 5</tspan>
+                <tspan x="10" y="272" fill="#1A1A1A">Valgmulighed 6</tspan>
+            </text>
+            <text id="Valgmulighed-3" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="18" font-weight="normal" fill="#1A1A1A">
+                <tspan x="10" y="62">Valgmulighed 3</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#747474" x="-0.5" y="39.5" width="251" height="31"></rect>
+            <rect id="Rectangle" stroke="#747474" x="-0.5" y="70.5" width="251" height="221"></rect>
+            <rect id="Rectangle-Copy-7" stroke="#747474" fill="#BFBFBF" x="0" y="0" width="320" height="25"></rect>
+            <path d="M231.185815,55.4282831 L236.903034,60.8228567 C237.153902,61.0590478 237.560348,61.0590478 237.811849,60.8228567 C238.062717,60.5866657 238.062717,60.2030296 237.811849,59.9668386 L232.548113,55.000299 L237.811216,50.0337594 C238.062083,49.7975683 238.062083,49.4139323 237.811216,49.1771433 C237.560348,48.9409522 237.153268,48.9409522 236.902401,49.1771433 L231.185181,54.571667 C230.938167,54.8054164 230.938167,55.1950818 231.185815,55.4282831 Z" id="Chevron_Right" fill="#747474" fill-rule="nonzero" transform="translate(234.500000, 55.000000) scale(-1, -1) rotate(90.000000) translate(-234.500000, -55.000000) "></path>
+        </g>
+    </g>
+</svg>

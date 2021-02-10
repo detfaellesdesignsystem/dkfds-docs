@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "id": "datepicker-example2",
+    "label": "Dato for aftale",
+    "name": "appointment-date2",
+    "min_date": "2020-12-04",
+    "max_date": "2020-12-24"
+  }
+}

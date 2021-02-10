@@ -50,6 +50,41 @@ img.outer-border-box{
     margin-top: 0;
   }
 }
+
+// Do's and Don'ts
+.do-dont-container{
+
+  img{
+    padding: map-get($spacers, 2);
+    border: $outer-border;
+    width: 100%;
+    height: auto;
+  }
+
+  .separator{
+    margin-top: map-get($spacers, 3);
+    display: flex;
+    div{
+      height: map-get($spacers, 4);
+      margin-top: map-get($spacers, 2);
+      width: calc(100% - 28px);
+      margin-left: map-get($spacers, 2);
+    }
+  }
+  > div:first-of-type .separator {
+    svg{fill: $color-positive; }
+    div{
+      background-color: $color-positive;
+    }
+  }
+  > div:last-of-type .separator{
+    svg{fill: $color-negative;}
+    div{
+      background-color: $color-negative;
+    }
+  }
+}
+
 // Search
 
 a.search-link{
@@ -1104,6 +1139,19 @@ body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="
 
 .button-border-example {
   border-top: $button-border;
+}
+
+.form-error-border-example{
+  border-top: 4px solid $color-error;
+}
+.details-border-example{
+  border-top: 4px solid $color-gray-light;
+}
+.sidenav-border-example{
+  border-top: $sidenav-active-border-width solid $color-primary;
+}
+.navigation-border-example{
+  border-top: 7px solid $color-primary;
 }
 
 //SHADOWS

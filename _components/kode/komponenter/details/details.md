@@ -30,7 +30,7 @@ subcategory: Kode
 Detaljer komponenten kræver JavaScript for at fungere i alle browsers. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.Details(document.getElementByID('DETAILS-ID'));
+new DKFDS.Details(document.getElementById('DETAILS-ID'));
 {% endhighlight %}
 
 Attributterne `aria-expanded` og `aria-hidden` tilføjes automatisk i JavaScript i de browsers, hvor det er nødvendigt.

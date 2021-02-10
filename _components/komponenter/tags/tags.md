@@ -47,5 +47,6 @@ Brug stort forbogstav og små bogstaver for resten.
 
 Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden at løsningens anvendelse forringes. 
 
+{% include dos-donts-box.html component="tags-dos-donts" title="Tags do's and don'ts" %}
 
 {% include child-components.html parent='Tags' %}

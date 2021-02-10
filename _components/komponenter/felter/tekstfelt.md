@@ -74,4 +74,18 @@ Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til in
 
 Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.
 
+{% include dos-donts-box.html component="text-input-dos-donts" title="Felter do's and don'ts" %}
+
+{% include dos-donts-box.html component="text-input-labels-dos-donts" title="Felt labels do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- ISO 9241-143: Forms (2012)
+- Adam Silver: Form Design Patterns (2018)
+- <a href="https://www.nngroup.com/articles/form-design-white-space/" class="icon-link">Marieke McCloskey: Form Design Quick Fix: Group Form Elements Effectively Using White Space (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php" class="icon-link">Caroline Jarrett: Don’t Put Labels Inside Text Boxes (Unless You’re Luke W) (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/form-design-placeholders/" class="icon-link">Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Text-field' %}

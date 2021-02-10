@@ -11,7 +11,7 @@ tags:
 anchor: true
 subnav:
 - text: Tooltip
-  href: '#sprogvælger-med-tooltip'
+  href: '#sprogvaelger-med-tooltip'
 ---
 
 {% include code/preview-image.html component="language-switcher" alt="Billedet viser en sprogvælger" title="Eksempel på sprogvælger" %}
@@ -42,6 +42,7 @@ Bemærk aria-labels i koden, hvor der vil være tekst og formuleringer der skal 
 
 ## Varianter
 
+{:#sprogvaelger-med-tooltip}
 ### Sprogvælger med tooltip
 
 {% include code/syntax.html component="language-switcher-tooltip" link="true" %}

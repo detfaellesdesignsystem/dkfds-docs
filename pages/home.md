@@ -51,8 +51,8 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <h2 class="mt-0">Samarbejde</h2>
         <p>Det Fælles Designsystem bliver løbende opdateret og vedligeholdt. For at sikre transparens, er systemet åbent for alle. Alle myndigheder med en interesse i at præge udviklingen og få indflydelse på designsystemets indhold er velkomne. </p>
         <ul class="nobullet-list">
-            <li><a href="/omdesignsystemet/samarbejdsforum/">Deltag i Samarbejdsforum</a></li>
-            <li><a href="/omdesignsystemet/nyhedsmail">Tilmeld nyhedsmail</a></li>
+            <li><a href="/faellesskab/samarbejdsforum/">Deltag i Samarbejdsforum</a></li>
+            <li><a href="/faellesskab/nyhedsmail">Tilmeld nyhedsmail</a></li>
         </ul>
     </div>
     <hr />
@@ -62,7 +62,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <ul class="nobullet-list">
             <li><a href="/krav/">Se hvilke krav, som gælder for din løsning</a></li>
             <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link"> Meld fejl og mangler ind via GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="/omdesignsystemet/kontakt-support/">Kontakt os</a></li>
+            <li><a href="/faellesskab/kontakt-support/">Kontakt os</a></li>
         </ul>
     </div>
     <hr />
@@ -70,7 +70,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <h2 class="mt-0">Opdateringer</h2>
         <p>Hold dig opdateret på de seneste opdateringer. Vi releaser jævnligt.</p>
         <ul class="nobullet-list">
-            <li><a href="/omdesignsystemet/releases/">Følg med i hvad der bliver lavet (Release notes)</a></li>
+            <li><a href="/faellesskab/releases/">Følg med i hvad der bliver lavet (Release notes)</a></li>
         </ul>
     </div> 
 </div>

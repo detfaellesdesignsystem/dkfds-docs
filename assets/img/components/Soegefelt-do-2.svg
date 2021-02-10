@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="247px" viewBox="0 0 360 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Søgfelt, 2-do</title>
+    <g id="Søgfelt_-2-do" data-name="Søgfelt,-2-do">
+        <g id="Søgfelt_-2-do-02-Copy" data-name="Søgfelt,-2-do-02-Copy">
+            <rect id="Rectangle" width="360" height="247" fill="#dcdcdc"/>
+            <rect id="Rectangle-2" data-name="Rectangle" x="5" y="37" width="281" height="200" fill="#bfbfbf"/>
+            <rect id="Rectangle-Copy-2" x="291" y="37" width="64" height="200" fill="#bfbfbf"/>
+            <rect id="Rectangle-3" data-name="Rectangle" x="327" y="14" width="28" height="14" fill="#474e95"/>
+            <rect id="Rectangle-Copy" x="233.5" y="14.5" width="94" height="13" fill="#c8cadf" stroke="#474e95"/>
+            <path id="Rectangle-4" data-name="Rectangle" d="M20,103h0a11,11,0,0,1,11,11h0a11,11,0,0,1-11,11h0A11,11,0,0,1,9,114H9A11,11,0,0,1,20,103Z" transform="translate(0 -94)" fill="#bfbfbf" fill-rule="evenodd"/>
+        </g>
+    </g>
+</svg>

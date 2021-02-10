@@ -8,7 +8,7 @@ componentLink: false
 componentCode: "/kode/typografi/tekst/#brødtekst"
 ---
 
-### Design
+### Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
 | Tekst           | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |

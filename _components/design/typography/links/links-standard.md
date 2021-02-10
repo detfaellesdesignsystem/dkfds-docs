@@ -8,7 +8,7 @@ componentLink: false
 ---
 
 {:.h3}
-## Design
+## Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
 | Tekst                 | Tekstfarve | Understreget | Ramme                           |

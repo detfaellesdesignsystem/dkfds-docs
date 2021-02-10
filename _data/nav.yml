@@ -5,7 +5,7 @@ primary:
   - href: /eksempler/
   - href: /kode/
   - href: /krav/
-  - href: /omdesignsystemet/
+  - href: /faellesskab/
 
 #Primary menu on mobile:
 mobile:
@@ -19,8 +19,8 @@ mobile:
     categorynav: 'Kode_category'
   - href: /krav/
     categorynav: 'Krav_category'
-  - href: /omdesignsystemet/
-    categorynav: 'Om_designsystemet_category'
+  - href: /faellesskab/
+    categorynav: 'Faellesskab_category'
 
 #Left menu for krav-category
 Krav_category:
@@ -77,13 +77,13 @@ Komponenter_category:
   - href: /komponenter/cards/
   - href: /komponenter/cookiemeddelelse/
   - href: /komponenter/dato-felt/
+  - href: /komponenter/datovaelger/
   - href: /komponenter/detaljer/
   - href: /komponenter/drop-down/
   - href: /komponenter/faneblad/
   - href: /komponenter/fejlmeddelelser/
   - href: /komponenter/fejlopsummering/
   - href: /komponenter/felter/
-  - href: /komponenter/fil-upload/
   - href: /komponenter/footers/
   - href: /komponenter/formular/
   - href: /komponenter/funktionslink/
@@ -104,6 +104,7 @@ Komponenter_category:
   - href: /komponenter/tjekboks/
   - href: /komponenter/tooltip/
   - href: /komponenter/trinindikatorer/
+  - href: /komponenter/fil-upload/
 
 Kode_category:
 - href: /kode/implementering/
@@ -128,13 +129,13 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/cards/
 - href: /kode/komponenter/cookiemeddelelse/
 - href: /kode/komponenter/dato-felt/
+- href: /kode/komponenter/datovaelger/
 - href: /kode/komponenter/detaljer/
 - href: /kode/komponenter/drop-down/
 - href: /kode/komponenter/faneblad/
 - href: /kode/komponenter/fejlmeddelelser/
 - href: /kode/komponenter/fejlopsummering/
 - href: /kode/komponenter/felter/
-- href: /kode/komponenter/fil-upload/
 - href: /kode/komponenter/footers/
 - href: /kode/komponenter/formular/
 - href: /kode/komponenter/funktionslink/
@@ -155,21 +156,22 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/tjekboks/
 - href: /kode/komponenter/tooltip/
 - href: /kode/komponenter/trinindikatorer/
+- href: /kode/komponenter/fil-upload/
 
 Eksempler_category:
   - href: /eksempler/selvbetjeningsloesninger/
   - href: /eksempler/opsummeringsside/
   - href: /eksempler/kvittering/
 
-Om_designsystemet_category:
-  - href: /omdesignsystemet/samarbejdsforum/
-  - href: /omdesignsystemet/nyhedsmail/
-  - href: /omdesignsystemet/kontakt-support/
-  - href: /omdesignsystemet/governance/
-  - href: /omdesignsystemet/gennemgang/
-  - href: /omdesignsystemet/visuelledesign/
-  - href: /omdesignsystemet/privatlivspolitik-cookies/
-  - href: /omdesignsystemet/releases/
+Faellesskab_category:
+  - href: /faellesskab/samarbejdsforum/
+    categorynav: 'Samarbejdsforum_category'
+  - href: /faellesskab/nyhedsmail/
+  - href: /faellesskab/kontakt-support/
+  - href: /faellesskab/releases/
+
+Samarbejdsforum_category:
+  - href: /faellesskab/samarbejdsforum/governance/
 
 Eksempelloesninger_category:
 - href: /pages/eksempler/aktindsigt/aktindsigt-1/

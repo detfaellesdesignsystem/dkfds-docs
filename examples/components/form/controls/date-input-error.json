@@ -5,9 +5,15 @@
     "day": "Dag",
     "month": "Måned",
     "year": "År",
-    "error": "Skriv en kort fejlmeddelelse, der hjælper brugeren videre",
+    "error": "Indtast en måned i tal mellem 1 og 12",
     "dayValue": "01",
-    "monthValue": "12",
-    "yearValue": "2030"
+    "monthValue": "20",
+    "yearValue": "2030",
+    "id": {
+      "day": "date-day2",
+      "month": "date-month2",
+      "year": "date-year2",
+      "hint": "example-date-field-hint2"
+    }
   }
 }

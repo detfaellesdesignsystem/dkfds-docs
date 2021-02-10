@@ -13,7 +13,7 @@ subnav:
 - text: Placering
   href: '#placering-af-tooltip' 
 - text: Ikon med popover
-  href: '#ikon-med-popover-kræver-tryk' 
+  href: '#ikon-med-popover' 
 ---
 
 {% include code/preview-box.html component="tooltip-icon" title="Eksempel på tooltip" %}
@@ -39,13 +39,20 @@ Du bør opdatere følgende attributter til din løsning ved almindeligt tooltip:
 - Brug aria-describedby på elementet der udløser tooltip eller popover.
 - Tooltips skal både vises, ved markering med mus og tastatur.
 
+### Javascript
+Tooltip komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.Tooltip(document.getElementById('Tooltip-ID'));
+{% endhighlight %}
+
 ## Varianter
 
 {:#placering-af-tooltip}
 ### Placering af tooltip
 {% include code/syntax.html component="tooltip-position" link="true" %}
 
-{:ikon-med-popover-kræver-tryk}
+{:#ikon-med-popover}
 ### Ikon med popover (kræver tryk)
 {% include code/syntax.html component="popover-icon" link="true" %}
 

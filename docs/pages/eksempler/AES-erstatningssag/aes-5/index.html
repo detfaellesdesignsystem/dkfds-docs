@@ -12,13 +12,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
 
 <title>AES Erstatningssag: trin 5 | Det Fælles Designsystem</title>
 <meta property="og:title" content="AES Erstatningssag: trin 5 | Det Fælles Designsystem">
-
 
 <meta name="description" content="Side 5 af eksempel af selvbetjeningsløsning, der viser en erstatningssag.">
 <meta property="og:description" content="Side 5 af eksempel af selvbetjeningsløsning, der viser en erstatningssag.">
@@ -258,15 +259,15 @@
     <h1>Oplysninger om sagen</h1>
 
     <div class="form-group  ">
-        <fieldset aria-dsecribedby="example-date-field-hint ">
-            <legend class="form-label">Skadedato<a
-                    href="javascript:void(0)" class="js-tooltip"
-                    data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a>
+        <fieldset aria-describedby="example-date-field-hint1 ">
+            <legend class="form-label">Skadedato<button
+                    class="js-tooltip button-unstyled"
+                    data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle"></use></svg></button>
             </legend>
-            <span class="form-hint" id="example-date-field-hint">Fx. 28 04
+            <span class="form-hint" id="example-date-field-hint1">Fx. 28 04
                 1996</span>
             <span class="form-error-message  d-none"
-                id="example-date-field-error"><span
+                id="example-date-field-error1"><span
                     class="sr-only">Fejl:</span> </span>
             <div class="date-group js-calendar-group mt-3">
                 <div class="form-group form-group-day">
@@ -275,7 +276,8 @@
                         id="date-day" value="" type="tel" data-min="1"
                         data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
-                        title="Indskriv dag på måneden som tal" />
+                        title="Indskriv dag på måneden som tal"
+                        aria-describedby="example-date-field-hint1" />
                 </div>
                 <div class="form-group form-group-month">
                     <label class="form-label"
@@ -284,7 +286,8 @@
                         id="date-month" value="" type="tel" data-min="1"
                         data-max="12" maxlength="2" pattern="^[0-9]{0,2}$"
                         data-input-regex="^[0-9]{0,2}$"
-                        title="Indskriv månedens nummer" />
+                        title="Indskriv månedens nummer"
+                        aria-describedby="example-date-field-hint1" />
                 </div>
                 <div class="form-group form-group-year ">
                     <label class="form-label" for="date-year">År</label>
@@ -293,7 +296,8 @@
                         data-max="3000" maxlength="4"
                         pattern="^[0-9]{0,4}$"
                         data-input-regex="^[0-9]{0,4}$"
-                        title="Indskriv årstal" />
+                        title="Indskriv årstal"
+                        aria-describedby="example-date-field-hint1" />
                 </div>
 
             </div>
@@ -304,7 +308,7 @@
         <label class="form-label " for="id-skadenummer">
             Jeres sags-/skadenummer<a href="javascript:void(0)"
                 class="js-tooltip"
-                data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle-outline"></use></svg></a>
+                data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help-circle"></use></svg></a>
         </label>
 
         <input class="form-input input-width-m" id="id-skadenummer"
@@ -315,8 +319,8 @@
         <input id="id-retssag" type="checkbox"
             value="Der verserer en retssag"
             class="form-checkbox  checkbox-large js-checkbox-toggle-content printIfChecked"
-            data-js-target='#collapse-check' aria-controls='collapse-check'
-            aria-expanded='false' />
+            data-aria-controls='collapse-check'
+            data-aria-expanded='false' />
         <label for="id-retssag" class="">Der verserer en retssag</label>
 
         <div id="collapse-check" aria-hidden="true"
@@ -324,7 +328,7 @@
             <div class="py-4">
 
                 <div class="form-group  ">
-                    <fieldset aria-dsecribedby="example-date-field-hint ">
+                    <fieldset aria-describedby="example-date-field-hint ">
                         <legend class="form-label">Berammelsesdato</legend>
                         <span class="form-hint"
                             id="example-date-field-hint">Fx. 28 04
@@ -342,7 +346,8 @@
                                     data-min="1" data-max="31"
                                     maxlength="2" pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
-                                    title="Indskriv dag på måneden som tal" />
+                                    title="Indskriv dag på måneden som tal"
+                                    aria-describedby="example-date-field-hint" />
                             </div>
                             <div class="form-group form-group-month">
                                 <label class="form-label"
@@ -353,7 +358,8 @@
                                     data-min="1" data-max="12"
                                     maxlength="2" pattern="^[0-9]{0,2}$"
                                     data-input-regex="^[0-9]{0,2}$"
-                                    title="Indskriv månedens nummer" />
+                                    title="Indskriv månedens nummer"
+                                    aria-describedby="example-date-field-hint" />
                             </div>
                             <div class="form-group form-group-year ">
                                 <label class="form-label"
@@ -364,7 +370,8 @@
                                     data-min="1900" data-max="3000"
                                     maxlength="4" pattern="^[0-9]{0,4}$"
                                     data-input-regex="^[0-9]{0,4}$"
-                                    title="Indskriv årstal" />
+                                    title="Indskriv årstal"
+                                    aria-describedby="example-date-field-hint" />
                             </div>
 
                         </div>

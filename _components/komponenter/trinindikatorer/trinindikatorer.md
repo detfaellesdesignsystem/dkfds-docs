@@ -52,4 +52,15 @@ Tilstræb så få trin som muligt.
 
 Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ikke vises i trinindikatoren.
 
+{% include dos-donts-box.html component="tringuide-dos-donts" title="Trinindikator do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)
+- Adam Silver: Form Design Patterns (2018)
+- Jessica Enders: Designing UX: Forms (2016)
+- <a href="https://www.effortmark.co.uk/design-patterns-government-2016/" class="icon-link">Caroline Jarrett: Design patterns in government (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Tringuide' %}

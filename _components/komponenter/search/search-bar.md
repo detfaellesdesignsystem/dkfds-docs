@@ -30,7 +30,7 @@ På meget små løsninger eller løsninger, der kun består af en enkelt side, b
 
 Det er vigtigt for brugerne, at kunne se de indtastede søgeord. En god tommelfingerregel er at søgefeltet er 27 karakterer (27ch) langt som minimum.
 
-Sørg for at søgefeltet ligner et søgefelt. 
+Sørg for at søgefeltet ligner et søgefelt.
 
 Hvis der anvendes et lup-ikon, skal ”Søg” fremgå i koden, så skærmlæsere kan se funktionen.
 
@@ -42,12 +42,17 @@ Brug kun avanceret søgning som valgmulighed. Den primære søgning skal være e
 
 Søgeknappen skal være en submit-knap.
 
-{:.h3}
-## Links
+{% include dos-donts-box.html component="search-dos-donts" title="Søgefelt do's and don'ts" %}
+
+{:.h4}
+### Referencer
 
 {:.nobullet-list}
+- <a href="https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/" class="icon-link">Jakob Nielsen: Top 10 Guidelines for Homepage Usability (2002)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/search-visible-and-simple/" class="icon-link">Jakob Nielsen: Search: Visible and Simple (2001)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- Adam Silver: Form Design Patterns (2018)
+- <a href="https://uxmag.com/articles/usability-tip-dont-make-me-search-for-search" class="icon-link">Tammy Guy: Usability Tip: Don’t Make Me Search for Search (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/#6-the-ideal-search-box-is-27-characters-wide" class="icon-link">The ideal search box is 27 characters wide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://uxplanet.org/design-a-perfect-search-box-b6baaf9599c" class="icon-link">Design a perfect search box<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://uxplanet.org/best-practices-for-search-results-1bbed9d7a311" class="icon-link">Best practises for search results<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/magnifying-glass-icon/" class="icon-link">The Magnifying-Glass Icon in Search Design: Pros and Cons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-

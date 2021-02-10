@@ -39,4 +39,14 @@ Hvis du ved, at mange brugere vil vælge den samme værdi i en dropdown menu, s�
 
 Anvend ikke JavaScript til automatisk at sende den valgte værdi, men sørg for at der er en submit-knap til at sende formularen med.
 
+{% include dos-donts-box.html component="dropdown-dos-donts" title="Dropdown-menu do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- ISO 9241-143: Forms (2012)
+- <a href="https://www.lukew.com/ff/entry.asp?1950" class="icon-link">Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+
 {% include child-components.html parent='Drop-down' %}

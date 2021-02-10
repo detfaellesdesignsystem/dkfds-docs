@@ -51,7 +51,7 @@ Når du tilføjer en titel til en tabel, skal du skrive den i `caption` indenfor
 Man kan sætte de korrekte attributter automatisk, hvis man ønsker en responsiv tabel. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.ResponsiveTable(document.getElementByID('TABLE-ID'));
+new DKFDS.ResponsiveTable(document.getElementById('TABLE-ID'));
 {% endhighlight %}
 
 ## Varianter

@@ -14,6 +14,10 @@ tags:
 - "h5"
 - "h6"
 description: ""
+anchor: true
+subnav:
+- text: Subheading
+  href: "#subheading"
 ---
 
 {% include code/preview-box.html component="headings" title="Eksempel på overskrifter" %}
@@ -29,7 +33,10 @@ Hold en stram overskriftsstruktur i koden. En `<h3>` altid er under en `<h2>`, e
 
 Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet udtryk, så brug en klasse til at style overskriften til at ligne et andet niveau.
 
-{:.h4}
-## Eksempel på en overskrift, der ligner et andet niveau
+{:.h5}
+### Eksempel på en overskrift, der ligner et andet niveau
 
 {% include code/syntax.html component="heading" link="true" %}
+
+
+{% include child-components.html parent='Overskrift-kode' %}

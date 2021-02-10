@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="314px" viewBox="0 0 360 314" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Overflow-menu-don't-02</title>
+    <g id="Overflow-menu-don_t-02" data-name="Overflow-menu-don&apos;t-02">
+        <g id="Søg-do-02">
+            <rect id="Rectangle" width="360" height="314" fill="#dcdcdc"/>
+            <rect id="Rectangle-Copy-7" y="58" width="344" height="194" fill="#fff"/>
+            <rect id="Rectangle-Copy-8" y="262" width="344" height="52" fill="#bfbfbf"/>
+            <rect id="Rectangle-2" data-name="Rectangle" x="314.5" y="67.5" width="20" height="37" fill="#c8cadf" stroke="#474e95"/>
+            <g id="Group">
+                <path id="Rectangle-3" data-name="Rectangle" d="M325.32,78h.36A2.32,2.32,0,0,1,328,80.32h0a2.32,2.32,0,0,1-2.32,2.32h-.36A2.32,2.32,0,0,1,323,80.32h0A2.32,2.32,0,0,1,325.32,78Z" transform="translate(0 0)" fill="#474e95" fill-rule="evenodd"/>
+                <path id="Rectangle-Copy" d="M325.32,84.18h.36A2.32,2.32,0,0,1,328,86.5h0a2.32,2.32,0,0,1-2.32,2.32h-.36A2.32,2.32,0,0,1,323,86.5h0A2.32,2.32,0,0,1,325.32,84.18Z" transform="translate(0 0)" fill="#474e95" fill-rule="evenodd"/>
+                <path id="Rectangle-Copy-2" d="M325.32,90.36h.36A2.32,2.32,0,0,1,328,92.68h0A2.32,2.32,0,0,1,325.68,95h-.36A2.32,2.32,0,0,1,323,92.68h0A2.32,2.32,0,0,1,325.32,90.36Z" transform="translate(0 0)" fill="#474e95" fill-rule="evenodd"/>
+            </g>
+            <rect id="Rectangle-4" data-name="Rectangle" x="297" y="12" width="47" height="36" fill="#999"/>
+            <rect id="Rectangle-Copy-2-2" data-name="Rectangle-Copy" x="132" y="12" width="165" height="36" fill="#bfbfbf"/>
+        </g>
+    </g>
+</svg>

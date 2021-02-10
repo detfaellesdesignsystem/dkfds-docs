@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="309px" viewBox="0 0 360 309" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Søgfelt, 1-don't</title>
+    <g id="Søgfelt_-1-don_t" data-name="Søgfelt,-1-don&apos;t">
+        <g id="Søg-do-02">
+            <rect id="Rectangle" width="360" height="309" fill="#dcdcdc"/>
+        </g>
+        <rect id="Rectangle-Copy-4" y="71" width="350" height="169" fill="#bfbfbf"/>
+        <rect id="Rectangle-Copy-5" x="66" y="250" width="284" height="59" fill="#bfbfbf"/>
+        <rect id="Rectangle-Copy-6" y="250" width="56" height="59" fill="#bfbfbf"/>
+        <g id="Søgfelt_-1-do" data-name="Søgfelt,-1-do">
+            <rect id="Rectangle-2" data-name="Rectangle" x="298" y="16" width="52" height="35" fill="#474e95"/>
+            <path id="Combined-Shape" d="M320,72a9,9,0,1,1-9,9A9,9,0,0,1,320,72Zm6.48,15.48L337,98Z" transform="translate(0 -51)" fill="none" stroke="#fff" stroke-width="3"/>
+            <rect id="Rectangle-Copy" x="149.5" y="16.5" width="149" height="34" fill="#c8cadf" stroke="#474e95"/>
+        </g>
+    </g>
+</svg>

@@ -48,4 +48,11 @@ Undgå at lave for mange punkter.
 
 Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 
+{% include dos-donts-box.html component="sidenav-dos-donts" title="Sidenavigation do's and don'ts" %}
+
+{:.h4}
+### Referencer
+
+<a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {% include child-components.html parent='Sidenav' %}

@@ -39,7 +39,7 @@ subnav:
 
 ## Varianter
 
-{:#fejlmeddelelser}
+{:#fejlmeddelelse}
 ### Fejlmeddelelse
 {% include code/syntax.html component="checkbox-error" link="true" %}
 
@@ -73,7 +73,7 @@ Det element som skal collapses/expandes skal have følgende:
 Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.CheckboxToggleContent(document.getElementByID('CHECKBOX-INPUT-ID'));
+new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID'));
 {% endhighlight %}
 
 #### Events
