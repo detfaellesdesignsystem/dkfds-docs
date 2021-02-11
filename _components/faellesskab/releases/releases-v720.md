@@ -5,7 +5,7 @@ order: 92
 headingClass: mb-0
 ---
 
-<p class="small-text mt-0">04-02-2021</p>
+<p class="small-text mt-0">11-02-2021</p>
 
 - Ændret font i drop down for at fikse bug i firefox
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/102" class="icon-link">issue #102 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
