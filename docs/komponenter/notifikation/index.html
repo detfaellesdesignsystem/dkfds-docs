@@ -20,6 +20,8 @@
 <title>Notifikation | Det Fælles Designsystem</title>
 <meta property="og:title" content="Notifikation | Det Fælles Designsystem">
 
+<meta name="description" content="Notifkationer bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.">
+<meta property="og:description" content="Notifkationer bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.">
 
 
 
@@ -759,7 +761,7 @@
 
     
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
 
   
@@ -776,6 +778,44 @@
 
     
 
+    <ul class="overflow-list" role="menu">
+    
+
+
+<li class=" " role="none">
+<a href="#succes"  role="menuitem">Succes</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#advarsel"  role="menuitem">Advarsel</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#fejl"  role="menuitem">Fejl</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#information"  role="menuitem">Information</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -1849,7 +1889,7 @@
 
     
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
 
   
@@ -1866,6 +1906,44 @@
 
     
 
+    <ul class="sidenav-sub_list" role="menu">
+    
+
+
+<li class=" " role="none">
+<a href="#succes"  role="menuitem">Succes</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#advarsel"  role="menuitem">Advarsel</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#fejl"  role="menuitem">Fejl</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#information"  role="menuitem">Information</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -2138,65 +2216,34 @@
           </p>
           <h1 id="notifikation">Notifikation</h1>
           
+            <p class="font-lead">Notifkationer bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.</p>
+          
 
           
           
-<div class="component-preview  component-preview-modal" aria-label="Eksempel på notifikation">
+<div class="component-preview  component-preview-notification-info" aria-label="Eksempel på notifikation">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/modal/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: modal</span></a>
+        <a href="/eksempel/notification-info/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: notification-info</span></a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <div class="fds-modal" id="modal-example" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-example-title">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2 class="modal-title" id="modal-example-title">
-                Lorem ipsum
-            </h2>
-            <button class="modal-close button button-unstyled"
-                aria-label="Luk"
-                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
-        </div>
-        <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sodales turpis nec tincidunt dictum. Aliquam
-                hendrerit nunc nec arcu lobortis fringilla. Sed nulla
-                lectus, mollis eget rhoncus sed, porta eu ipsum. Cras
-                eleifend elementum finibus. Mauris ac magna quis orci
-                dapibus suscipit. Vestibulum accumsan turpis diam, ut
-                pretium quam sollicitudin sed. Pellentesque posuere eget
-                tortor quis imperdiet. Pellentesque gravida, enim vel
-                porttitor sagittis, libero neque efficitur justo, nec
-                gravida orci risus consequat lacus. Morbi condimentum
-                tristique sapien, et fringilla ante consectetur at. Nulla
-                vehicula imperdiet augue id cursus. Sed auctor finibus
-                risus, sed consectetur augue sagittis eget. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Maecenas auctor a urna eget ultricies.</p>
-        </div>
-
-        <div class="modal-footer">
-            <button
-                class="button button-primary">Primærknap</button><button
-                class="button button-secondary"
-                data-modal-close>Luk</button>
-        </div>
-
+        <div class="notification notification-info" id="notification-info"
+    role="status">
+    <div class="notification-icon"></div>
+    <div class="notification-message">
+        <p class="bold">Din ansøgning er afsendt</p>
+        <button class="notification-close">Luk</button>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium.</p>
     </div>
 </div>
-
-<button class="button button-primary" data-module="modal"
-    data-target="modal-example">
-    Gem
-</button>
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/kode/komponenter/notifikation/" class="small-text">Gå til kodeafsnit<span class="sr-only">: modal</span></a>
+        <a href="/kode/komponenter/notifikation/" class="small-text">Gå til kodeafsnit<span class="sr-only">: notification-info</span></a>
     </div>
     
 </div>
@@ -2204,31 +2251,166 @@
 
           
 
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+          <p>Til forskel fra <a href="/komponenter/beskeder/">Beskeder (alerts)</a> som er placeret som en del af sideindholdet, placeres notifikationer ovenpå selve siden.
+Vær opmærksom på at notifikationer hurtigt kan gå fra at opfattes som nyttige til at opfattes som anmassende og påtrængende, så overvej nøje om det er denne komponent, der er det rigtige valg.</p>
 
-<p>Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen. Det kunne fx være en godkendelse af en handling, behov for bekræftelse eller overførsel af rettigheder, som løsningen skal kunne udføre for at kunne fuldføre sin dialog med brugeren.</p>
-
-<p>Brug modalvinduer, når du vil være sikker på, at brugeren ser en bestemt dialog og forholder sig til dens indhold.</p>
+<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<p>At gøre brugeren opmærksom på vigtige oplysninger, ofte relateret til brugerens aktuelle aktivitet.</p>
 
 <h2 class="h3">Anvendes ikke til</h2>
+<p>Brug <a href="/komponenter/beskeder/">Beskeder (alerts)</a>, hvis en besked skal placeres, som en del af indholdet på siden.</p>
 
-<p>Modalvinduer kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.</p>
+<p>Brug ikke notifikationer til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.</p>
 
-<p>Modalvinduer anvendes ikke til længere, sammenhængende indhold.</p>
+<p>Brug modal dialog – ikke notifikationer – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.</p>
 
-<p>Modalvinduer anvendes i begrænset omfang, da de kan øge løsningens kognitive load pga brugerens fokus flyttes.</p>
-
-<p>Undgå modalvinduer på mobile løsninger og visninger, da de ikke fungerer godt for brugeren.</p>
+<p>Kritiske beskeder eller lange beskeder, hvis notifikationen er tidsindstillet og forsvinder automatisk. Det gør det vanskeligt for brugere, som fx gør brug af hjælpeteknologier, at læse meddelelsen før den forsvinder.</p>
 
 <h2 class="h3">Vejledning</h2>
+<p>Gør informationen i notifikationen aktiv og handlingsanvisende, så brugeren forstår, hvad der er behov for eller hvad den aktuelle status er.</p>
 
-<p>Modalvinduet skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.</p>
+<p>Brug ord og begreber, som brugeren kan genkende fra løsningen.</p>
 
-<p>Knapper i modalvinduet skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige anbefalinger for knapper.</p>
+<p>Skriv kort og præcist og undgå tekniske beskeder, der kan forvirre brugeren.</p>
 
-<p>Vær sikker på at modalvinduet kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.</p>
+<p>Brug beskeder til at øge brugerens forståelse for løsningen.</p>
 
-<p>Brugeren skal selv aktivere modalvinduet. Det må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt.</p>
+<p>Tilføj ikke interaktivt indhold som links ol. på notifikationer, da der kan opstå udfordringer i forbindelse med tilgængelighed.</p>
+
+<p>Når notifikationen vises, kan man lade den forsvinde igen, men vær opmærksom på at <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" class="icon-link">WCAG succes kriteriet 2.2.1: Timing Adjustable<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> bør efterleves.</p>
+
+<section class="styleguide-child-container content" id="section-/komponenter/notifikation/notifikation-succes">
+  <h2 id="succes">Succes</h2>
+  
+  
+  
+<div class="component-preview  component-preview-notification-success" aria-label="Eksempel på notifikation med success farver">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/notification-success/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: notification-success</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="notification notification-success" id="notification-success" role="status">
+    <div class="notification-icon"></div>
+    <div class="notification-message">
+        <p class="bold">Din ansøgning er afsendt</p>
+        <button class="notification-close">Luk</button>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium.</p>
+    </div>
+</div>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/notifikation/notifikation-advarsel">
+  <h2 id="advarsel">Advarsel</h2>
+  
+  
+  
+<div class="component-preview  component-preview-notification-warning" aria-label="Eksempel på notifikation med advarselsfarver">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/notification-warning/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: notification-warning</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="notification notification-warning" id="notification-warning" role="status">
+    <div class="notification-icon"></div>
+    <div class="notification-message">
+        <p class="bold">Din ansøgning er afsendt</p>
+        <button class="notification-close">Luk</button>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium.</p>
+    </div>
+</div>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/notifikation/notifikation-fejl">
+  <h2 id="fejl">Fejl</h2>
+  
+  
+  
+<div class="component-preview  component-preview-notification-error" aria-label="Eksempel på notifikation med fejlfarver">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/notification-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: notification-error</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="notification notification-error" id="notification-error" role="status">
+    <div class="notification-icon"></div>
+    <div class="notification-message">
+        <p class="bold">Din ansøgning er afsendt</p>
+        <button class="notification-close">Luk</button>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium.</p>
+    </div>
+</div>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/notifikation/notifikation-info">
+  <h2 id="information">Information</h2>
+  
+  
+  
+<div class="component-preview  component-preview-notification-info" aria-label="Eksempel på notifikation med infofarver">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/notification-info/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: notification-info</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="notification notification-info" id="notification-info" role="status">
+    <div class="notification-icon"></div>
+    <div class="notification-message">
+        <p class="bold">Din ansøgning er afsendt</p>
+        <button class="notification-close">Luk</button>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium.</p>
+    </div>
+</div>
+    </div>
+    
+</div>
+
+
+  
+  
+
+</section>
+
 
       </section>
     </main>

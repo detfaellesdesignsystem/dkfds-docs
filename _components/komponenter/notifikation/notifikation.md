@@ -6,10 +6,20 @@ title: Notifikation
 category: Komponenter_category
 subcategory: Komponenter
 description: 
-component: modal
 lead: Notifkationer bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l. 
+component: notification-info
 componentTitle: Eksempel på notifikation
 componentCode: "/kode/komponenter/notifikation/"
+anchor: true
+subnav:
+- text: Succes
+  href: "#succes"
+- text: Advarsel
+  href: "#advarsel"
+- text: Fejl
+  href: "#fejl"
+- text: Information
+  href: "#information"
 ---
 
 Til forskel fra <a href="/komponenter/beskeder/">Beskeder (alerts)</a> som er placeret som en del af sideindholdet, placeres notifikationer ovenpå selve siden.
@@ -21,13 +31,13 @@ At gøre brugeren opmærksom på vigtige oplysninger, ofte relateret til brugere
 
 {:.h3}
 ## Anvendes ikke til
-Kritiske beskeder eller lange beskeder, hvis notifikationen er tidsindstillet og forsvinder automatisk. Det gør det vanskeligt for mennesker med forskellige handicap at nå at læse meddelelsen.
-
 Brug <a href="/komponenter/beskeder/">Beskeder (alerts)</a>, hvis en besked skal placeres, som en del af indholdet på siden.
 
 Brug ikke notifikationer til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
 
 Brug modal dialog – ikke notifikationer – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
+
+Kritiske beskeder eller lange beskeder, hvis notifikationen er tidsindstillet og forsvinder automatisk. Det gør det vanskeligt for brugere, som fx gør brug af hjælpeteknologier, at læse meddelelsen før den forsvinder.
 
 {:.h3}
 ## Vejledning
@@ -40,3 +50,7 @@ Skriv kort og præcist og undgå tekniske beskeder, der kan forvirre brugeren.
 Brug beskeder til at øge brugerens forståelse for løsningen.
 
 Tilføj ikke interaktivt indhold som links ol. på notifikationer, da der kan opstå udfordringer i forbindelse med tilgængelighed.
+
+Når notifikationen vises, kan man lade den forsvinde igen, men vær opmærksom på at <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" class="icon-link">WCAG succes kriteriet 2.2.1: Timing Adjustable<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> bør efterleves.
+
+{% include child-components.html parent='Notification' %}
