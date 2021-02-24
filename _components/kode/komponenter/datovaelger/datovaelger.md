@@ -31,17 +31,8 @@ subnav:
 Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.Datepicker(document.getElementById('Datepicker-ID'));
+DKFDS.datePicker.on(document.body);
 {% endhighlight %}
-
-
-#### Events
-
-{:.table}
-| Event key           | Element                   | Beskrivelse                                                                                          |
-|---------------------|---------------------------|------------------------------------------------------------------------------------------------------|
-| fds.accordion.open  | `button.accordion-button` | Når en accordion bliver foldet ud, bliver eventet `fds.accordion.open` udløst på accordion knappen   |
-| fds.accordion.close | `button.accordion-button` | Når en accordion bliver foldet ind, bliver eventet `fds.accordion.close` udløst på accordion knappen |
 
 ## Varianter
 
