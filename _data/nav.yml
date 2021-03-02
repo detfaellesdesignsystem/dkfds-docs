@@ -46,10 +46,14 @@ Design_category:
   categorynav: 'Typografi_category'
 - href: /design/borders/
 - href: /design/ikoner/
+  categorynav: 'Icon_category'
 - href: /design/logoer/
 - href: /design/layout/
   categorynav: 'Layout_category'
 - href: /design/designressourcer/
+
+Icon_category:
+  - href: /design/ikoner/ikoner-og-deres-betydning/
 
 Layout_category:
   - href: /design/layout/grid/
