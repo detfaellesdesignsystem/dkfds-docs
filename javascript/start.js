@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
         new TestFDS(DKFDS);
     }
 
+    let icons = document.getElementsByClassName('icon-box');
+    if(icons.length !== 0){
+        for(let i = 0; i < icons.length; i++){
+            new DKFDS.Tooltip(icons[i].getElementsByTagName('p')[0]);
+        }
+    }
+
     let searchForm = document.getElementById('search-form');
     if(searchForm !== null){
         let form = searchForm.getElementsByTagName('form')[0];
@@ -29,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, false);
     }
-
 });
 
 function languageSwitcher(){
@@ -52,7 +58,7 @@ function languageSwitcher(){
                 svg.setAttribute('focusable', 'false');
                 svg.setAttribute('aria-hidden', 'true');
                 let use = document.createElementNS(svgns, "use");
-                use.setAttributeNS(xlinkns, "href", "#check");
+                use.setAttributeNS(xlinkns, "href", "#done");
                 svg.appendChild(use);
                 chosenLang.prepend(svg);
                 ul.prepend(chosenLang.parentNode);

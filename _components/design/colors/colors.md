@@ -55,8 +55,6 @@ subnav:
   href: "#tekst-på-baggrundsfarver"
 - text: Tekst på datavisualiseringsfarver
   href: "#tekst-på-datavisualiseringsfarver"
-
 ---
-<a href="/design/visueltdesign/">Om det visuelle design (look and feel)</a>
 
 {% include child-sections.html parent='colors' %}

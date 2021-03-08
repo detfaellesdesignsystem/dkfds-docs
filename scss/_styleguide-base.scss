@@ -122,28 +122,6 @@ header #search-form-mobile{
   }
 }
 
-// Icon examples --------------
-
-.icon-box {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.icon-box .icon-svg {
-  margin-bottom: 5px;
-  height:4.4rem;
-  width:4.4rem;
-}
-
-.icon-box .icon-name {
-  white-space: nowrap;
-  font-size:1.3rem;
-}
-
 // Typography --------------
 .demo-typesetting{
   border-top: 2px solid $color-data-violet;
@@ -698,6 +676,62 @@ code {
   }
 }
 
+//----------------  Icon page styles
+.simple-icon-list{
+  flex-wrap: wrap;
+  svg{
+    width: 80px;
+    height: auto;
+    max-width: 100%;
+  }
+}
+.icon-list{
+  .icon-container{
+    margin-top:-1px;
+    .icon-box{
+      padding: map-get($spacers, 505) map-get($spacers, 3) map-get($spacers, 3);
+      border: $inner-border;
+      border-left-width: 0px;
+      border-top-width: 0px;
+      text-align: center;
+      height: 100%;
+
+      svg{
+        width: 48px;
+        height: 48px;
+        max-width: 100%;
+        cursor: pointer;
+      }
+      p{
+        margin-bottom: map-get($spacers, 405);
+        margin-top: map-get($spacers, 405);
+        word-wrap: break-word;
+      }
+    }
+    
+    @include media-breakpoint-down(sm) {
+      &:nth-child(odd) .icon-box{
+        border-left-width: 1px;
+      }
+      &:nth-child(-n+2) .icon-box{
+        border-top-width: 1px;
+      }
+    }
+    
+    @include media-breakpoint-up(md) {
+      &:nth-child(4n-7) .icon-box{      
+          border-left-width: 1px;
+      }
+
+      &:nth-child(-n+4) .icon-box{
+        border-top-width: 1px;
+      }
+     
+    }
+    
+  }
+ 
+}
 
 //----------------  Page styles
 
@@ -726,6 +760,7 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
   padding-top: 4px;
   padding-bottom: 4px;
 }
+
 .component-preview-overflow-menu .container, .component-preview-overflow-menu-left .container{
   min-height: 400px;
 }
@@ -1070,36 +1105,6 @@ body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="
 
 }
 
-//ICONS
-.icon-box {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  .icon-svg {
-    margin-bottom: 5px;
-    height:4.4rem;
-    width:4.4rem;
-  }
-  .icon-name {
-    white-space: pre-line;
-    word-wrap: break-word;
-    text-align: center;
-    line-height: 1.5rem;
-    font-size:1.3rem;
-  }
-  .icon-code-name {
-    font-family: monospace;
-    font-size: 1.3rem;
-    font-weight: $font-weight-normal;
-    line-height: 1.5rem;
-    text-align: center;
-    margin-top: 4px;
-  }
-}
 
 
 

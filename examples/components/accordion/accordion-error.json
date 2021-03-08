@@ -12,7 +12,7 @@
       {
         "title": "Consectetur adipiscing elit",
         "id": "error-a2",
-        "icon": "close-circle-outline",
+        "icon": "highlight-off",
         "icontext": "Fejl",
         "error_message": true,
         "expanded": true,
@@ -21,7 +21,7 @@
       {
         "title": "Sed do eiusmod tempor",
         "id": "error-a3",
-        "icon": "alert-outline",
+        "icon": "report-problem",
         "icontext": "Advarsel",
         "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
       },
