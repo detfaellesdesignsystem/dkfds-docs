@@ -18,6 +18,23 @@ subnav: []
 
 ---
 
+<details class="details js-details">
+    <summary class="details-summary">
+        <span class="details-summary-text">
+            Se her hvis det ikon du leder efter ikke er på listen nedenfor
+        </span>
+    </summary>
+    <div class="details-text">
+        <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
+        <ul>
+          <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+          <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+        </ul>
+        <p>Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes på listen.</p>
+        <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+    </div>
+</details>
+
 <div class="search-container form-group">
     <label class="form-label " for="icon-search-input">
         Find dit ikon
@@ -27,28 +44,72 @@ subnav: []
     </span>
     <input class="form-input" required name="icon-search-input" type="text" aria-describedby="icon-search-input-hint" id="icon-search-input" />
 </div>
+<details class="details js-details  mt-4">
+    <summary class="details-summary">
+        <span class="details-summary-text" id="checkbox-list-label">
+            Filtrer på kategori
+        </span>
+    </summary>
+    <div class="details-text">
+        <fieldset aria-labelledby="checkbox-list-label">
+          <ul class="nobullet-list" id="category-list">
+            <li>
+              <input id="cat-konventionelle" type="checkbox" name="checkbox-category[]" value="konventionelle" class="form-checkbox" checked/>
+              <label for="cat-konventionelle">Konventionelle ikoner</label>
+            </li>
+            <li>
+              <input id="cat-beskeder" type="checkbox" name="checkbox-category[]" value="beskeder" class="form-checkbox"  checked/>
+              <label for="cat-beskeder">Beskeder (feedback)</label>
+            </li>
+            <li>
+              <input id="cat-navigation" type="checkbox" name="checkbox-category[]" value="navigation" class="form-checkbox"  checked/>
+              <label for="cat-navigation">Navigation</label>
+            </li>
+            <li>
+              <input id="cat-tilstande" type="checkbox" name="checkbox-category[]" value="tilstande" class="form-checkbox"  checked/>
+              <label for="cat-tilstande">Tilstande</label>
+            </li>
+            <li>
+              <input id="cat-filtyper" type="checkbox" name="checkbox-category[]" value="filtyper" class="form-checkbox"  checked/>
+              <label for="cat-filtyper">Filtyper</label>
+            </li>
+            <li>
+              <input id="cat-funktionalitet" type="checkbox" name="checkbox-category[]" value="funktionalitet" class="form-checkbox"  checked/>
+              <label for="cat-funktionalitet">Funktionalitet</label>
+            </li>
+            <li>
+              <input id="cat-illustrative" type="checkbox" name="checkbox-category[]" value="illustrative" class="form-checkbox"  checked/>
+              <label for="cat-illustrative">Illustrative</label>
+            </li>
+            <li>
+              <input id="cat-tekstredigering" type="checkbox" name="checkbox-category[]" value="tekstredigering" class="form-checkbox"  checked/>
+              <label for="cat-tekstredigering">Tekstredigering</label>
+            </li>
+          </ul>
+        </fieldset>
+    </div>
+</details>
 
 <div aria-live="polite">
-<section class="icon-section">
+<section class="icon-section" id="icon-section-konventionelle">
   <h2 class="h5">Konventionelle ikoner</h2>
   <p>Må ikke bruges til andre formål end de specificerede.</p>
   
   <div class="container">
-    <div class="icon-list row">
+    <div class="icon-list row" id="icon-list-konventionelle">
           {% include icon.html icon="open-in-new" keywords="open in new, new window, external, ekstern, eksternt link" label="Eksternt link (åbner ny side/fane)" %}
           {% include icon.html icon="home" keywords="hus, hjem, home, forside, house, home" label="Forside (Hjem)" %}
           {% include icon.html icon="save" keywords="save, gem, disc, diskette" label="Gem" %}
           {% include icon.html icon="print" keywords="print, printer, udskriv" label="Print (udskriv)" %}
           {% include icon.html icon="delete" keywords="skraldespand, bin, trash, delete, slet, fjern" label="Slet" %}
-          {% include icon.html icon="search" keywords="lup, search, søg" label="Søg" %}
-    </div>
+          {% include icon.html icon="search" keywords="lup, search, søg" label="Søg" %}</div>
   </div>
 </section>
 
-<section class="icon-section">
+<section class="icon-section" id="icon-section-beskeder">
   <h2 class="h5 mb-4">Beskeder (feedback)</h2>
   <div class="container">
-    <div class="icon-list row">
+    <div class="icon-list row" id="icon-list-beskeder">
           {% include icon.html icon="report-problem" keywords="warning, advarsel, report, problem, report problem" label="Advarsel" %}
           {% include icon.html icon="highlight-off" keywords="error, fejl" label="Fejl" %}
           {% include icon.html icon="info" keywords="information, info" label="Hjælp" %}
@@ -58,11 +119,10 @@ subnav: []
   </div>
 </section>
 
-<section class="icon-section">
+<section class="icon-section" id="icon-section-navigation">
   <h2 class="h5 mb-4">Navigation</h2>
   <div class="container">
-    <div class="icon-list row">
-          {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
+    <div class="icon-list row" id="icon-list-navigation"> {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
           {% include icon.html icon="arrow-right" keywords="right, højre, frem, pil, arrow" label="Frem (højre)" %}
           {% include icon.html icon="menu" keywords="hamburger, menu" label="Menu" %}
           {% include icon.html icon="more-vert" keywords="" label="Overflowmenu (vertikalt)" %}
@@ -81,11 +141,11 @@ subnav: []
   </div>
 </section>
 
-<section class="icon-section">
+<section class="icon-section" id="icon-section-tilstande">
   <h2 class="h5 mb-4">Tilstande</h2>
   <div class="container">
-    <div class="icon-list row">
-          {% include icon.html icon="arrow-right" keywords="pil, højre, lukket, luk, detalje" label="Detalje lukket" %}
+    <div class="icon-list row" id="icon-list-tilstande">
+     {% include icon.html icon="arrow-right" keywords="pil, højre, lukket, luk, detalje" label="Detalje lukket" %}
           {% include icon.html icon="arrow-drop-down" keywords="pil, ned, detalje, åben" label="Detalje åben / Fold dropdown/overflow ud" %}
           {% include icon.html icon="arrow-drop-up" keywords="" label="Fold dropdown/overflow ind" %}
           {% include icon.html icon="zoom-out" keywords="" label="Formindsk" %}
@@ -98,8 +158,6 @@ subnav: []
           {% include icon.html icon="lock" keywords="" label="Log på (lukket hængelås)" %}
           {% include icon.html icon="visibility-off" keywords="" label="Skjul" %}
           {% include icon.html icon="sort-by-alpha" keywords="" label="Sortér alfabetisk" %}
-          {% include icon.html icon="sort-descending" keywords="" label="Sortér faldende" %}
-          {% include icon.html icon="sort-ascending" keywords="" label="Sortér stigende" %}
           {% include icon.html icon="expand-more" keywords="" label="Udvid (chevron)" %}
           {% include icon.html icon="expand-less" keywords="" label="Indskrænk (chevron)" %}
           {% include icon.html icon="visibility" keywords="" label="Vis" %}
@@ -107,21 +165,21 @@ subnav: []
     </div>
   </div>
 </section>
-<section class="icon-section">
+<section class="icon-section" id="icon-section-filtyper">
   <h2 class="h5 mb-4">Filtyper</h2>
   <div class="container">
-    <div class="icon-list row">
-          {% include icon.html icon="file-image" keywords="" label="Billede" %}
+    <div class="icon-list row" id="icon-list-filtyper">
+     {% include icon.html icon="file-image" keywords="" label="Billede" %}
           {% include icon.html icon="file-excel" keywords="" label="Excel" %}
           {% include icon.html icon="file-pdf" keywords="" label="PDF" %}
           {% include icon.html icon="file-word" keywords="" label="Word" %}
     </div>
   </div>
 </section>
-<section class="icon-section">
+<section class="icon-section" id="icon-section-funktionalitet">
   <h2 class="h5 mb-4">Funktionalitet</h2>
   <div class="container">
-    <div class="icon-list row">
+    <div class="icon-list row" id="icon-list-funktionalitet">
           {% include icon.html icon="close" keywords="" label="Annuller (luk)" %}
           {% include icon.html icon="hourglass-empty" keywords="" label="Afventer" %}
           {% include icon.html icon="calculator" keywords="" label="Beregner (lommeregner)" %}
@@ -173,10 +231,10 @@ subnav: []
   </div>
 </section>
 
-<section class="icon-section">
+<section class="icon-section" id="icon-section-illustrative">
   <h2 class="h5 mb-4">Illustrative</h2>
   <div class="container">
-    <div class="icon-list row">
+    <div class="icon-list row" id="icon-list-illustrative">
           {% include icon.html icon="coronavirus" keywords="" label="Corona (Covid-19)" %}
           {% include icon.html icon="list-alt" keywords="" label="Opgørelse / Resumé / Opsummering" %}
           {% include icon.html icon="assignment" keywords="" label="Opgave" %}
@@ -220,10 +278,10 @@ subnav: []
   </div>
 </section>
 
-<section class="icon-section">
+<section class="icon-section" id="icon-section-tekstredigering">
   <h2 class="h5 mb-4">Tekstredigering</h2>
   <div class="container">
-    <div class="icon-list row">
+    <div class="icon-list row" id="icon-list-tekstredigering">
           {% include icon.html icon="text-format" keywords="" label="Formater tekst" %}
           {% include icon.html icon="format-size" keywords="" label="Tekststørrelse" %}
           {% include icon.html icon="format-bold" keywords="" label="Fed" %}
@@ -243,6 +301,16 @@ subnav: []
     </div>
   </div>
 </section>
+<div class="alert alert-info d-none mt-4" id="no-results-message">
+    <div class="alert-body">
+        <p class="alert-heading">Der er desværre intet ikon der matcher</p>
+        <p class="alert-text">Prøv evt. at søge hos:</p>
+        <ul class="nobullet-list">
+          <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+          <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+        </ul>
+    </div>
+</div>
 </div>
 
 
@@ -251,65 +319,97 @@ subnav: []
 <script>
     let searchTerm, selectedIcon
     const searchInput = document.getElementById("icon-search-input");
-
-    const searchableItems = []
-    let currentItems = []
-
-    function initSearch() {
-      var icons = document.getElementsByClassName("icon-box");
-      for (var i = 0; i < icons.length; i++) {
-        const itemName = icons[i].dataset.iconName.toLowerCase();
-        let itemKeywords = icons[i].dataset.iconKeywords.toLowerCase().trim();
-        searchableItems[itemName] = itemKeywords;
-      }
+    let searchableItems = [];
+    let icons = document.getElementsByClassName('icon-box');
+    for(let i = 0; i < icons.length; i++){
+      const itemName = icons[i].dataset.iconName.toLowerCase();
+      const itemKeywords = icons[i].dataset.iconKeywords.toLowerCase().trim();
+      const itemLabel = icons[i].getElementsByTagName('p')[0].innerText;
+      const category = icons[i].parentNode.parentNode.getAttribute('id').replace('icon-list-', '');
+      searchableItems.push({"name": itemName, "keywords": itemKeywords, "label": itemLabel, "category": category});
     }
-
-    initSearch();
     searchInput.addEventListener("keyup" , handleInput);
     
+     let categories = document.getElementById('category-list').getElementsByTagName('input');
+      for(let i = 0; i < categories.length; i++){
+        categories[i].addEventListener('change', function(){
+          let section = document.getElementById('icon-section-'+this.value);
+          if(this.checked && section.getElementsByClassName('icon-container').length !== 0){
+            section.classList.remove('d-none');
+          } else{
+            section.classList.add('d-none');
+          }
+
+          let sections = document.getElementsByClassName('icon-section');
+          let visibleResults = false;
+          for(let a = 0; a < sections.length; a++){
+            if(!sections[a].classList.contains('d-none')){
+              visibleResults = true;
+            }
+          }
+          if(visibleResults){
+            document.getElementById('no-results-message').classList.add('d-none');
+          } else{
+            document.getElementById('no-results-message').classList.remove('d-none');
+          }
+        });
+      }
+
 
     function handleInput(e) {
       let searchTerm = searchInput.value.toLowerCase();
-
-      for (i in searchableItems) {
-        var icon = searchableItems[i];
-        let iconsFound = document.querySelectorAll('.icon-box[data-icon-name='+i+']');
-        console.log(iconsFound);
-        if(i.includes(searchTerm) || icon.includes(searchTerm)){
-          for(let iF = 0; iF < iconsFound.length; iF++){
-              iconsFound[iF].parentNode.classList.remove('d-none');
-          }
-        } else{
-          for(let iF = 0; iF < iconsFound.length; iF++){
-              iconsFound[iF].parentNode.classList.add('d-none');
-          }
-        } 
+      let lists = document.getElementsByClassName('icon-list');
+      for(let i = 0; i < lists.length; i++){
+        lists[i].innerHTML = "";
       }
+      
+      for (i in searchableItems) {
+        let icon = searchableItems[i];
+        if((icon.name.toLowerCase().indexOf(searchTerm) !== -1 || icon.keywords.toLowerCase().indexOf(searchTerm) !== -1 || icon.label.toLowerCase().indexOf(searchTerm) !== -1)){
+          let iconContainer = document.createElement('div');
+          let iconBox = document.createElement('div');
+          let iconText = document.createElement('p');
+          let svgns = "http://www.w3.org/2000/svg";
+          let xlinkns = "http://www.w3.org/1999/xlink";
+          let svg = document.createElementNS(svgns, 'svg');
+          svg.classList.add('icon-svg');
+          svg.setAttribute('focusable', 'false');
+          svg.setAttribute('aria-hidden', 'true');
+          let use = document.createElementNS(svgns, "use");
+          use.setAttributeNS(xlinkns, "href", "#"+icon.name);
+          svg.appendChild(use);
+          
 
-      let iconLists = document.getElementsByClassName('icon-section');
-      for(let iL = 0; iL < iconLists.length; iL++){
-        let totalNumberOfIcons = iconLists[iL].getElementsByClassName('icon-container');
-        let totalNumberOfIconsHidden = iconLists[iL].querySelectorAll('.icon-container.d-none');
-        if(totalNumberOfIcons.length === totalNumberOfIconsHidden.length){
-          iconLists[iL].classList.add('d-none');
-        } else{
-          iconLists[iL].classList.remove('d-none');
+          iconContainer.classList.add('col-6', 'col-md-3', 'icon-container', 'p-0');
+          iconBox.classList.add('icon-box');
+          iconText.innerText = icon.label;
+          iconBox.appendChild(svg);
+          iconBox.appendChild(iconText);
+          iconContainer.appendChild(iconBox);
+          document.getElementById('icon-list-'+icon.category).appendChild(iconContainer);
         }
       }
 
-    }
-
-   /* document.addEventListener('mousedown', function (event) {
-      if (!event.target.matches('.icon-container')) return;
-      selectedIcon = event.target.dataset.name.toLowerCase();
-      
-      let allElements = Array.from(document.querySelectorAll('.icon-box'))
-      for (let element of allElements) {
-        element.classList.remove('active')
+     
+      let hasResults = false;
+      // Show or hide sections/categories depending on if they have results
+      let sections = document.getElementsByClassName('icon-section');
+      for(let i = 0; i < sections.length; i++){
+        let sectionCategoryName = sections[i].id.replace('icon-section-', '');
+        if(sections[i].getElementsByClassName('icon-container').length === 0 || document.getElementById('cat-'+sectionCategoryName).checked === false){
+          sections[i].classList.add('d-none');
+        } else{
+          hasResults = true;
+          sections[i].classList.remove('d-none');
+        }
       }
 
-      event.target.classList.add('active');
-      
-      console.log(selectedIcon)
-    }, false);*/
+      // Show or hide no results message
+      let messageElement = document.getElementById('no-results-message');
+      if(hasResults){
+        messageElement.classList.add('d-none');
+      } else{
+        messageElement.classList.remove('d-none');
+      }
+    }
 </script>

@@ -2,6 +2,6 @@
   "tag_example": {
     "text": "Default",
     "class": "tag-icon",
-    "icon": "close-circle"
+    "icon": "highlight-off"
   }
 }

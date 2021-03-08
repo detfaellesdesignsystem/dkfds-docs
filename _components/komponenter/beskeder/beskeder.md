@@ -21,8 +21,8 @@ componentTitle: Eksempel på beskeder
 componentCode: "/kode/komponenter/beskeder/"
 tags:
 - fejlbesked
-
 ---
+
 {:.h3 #retningslinjer}
 ## Anvendes til
 
@@ -47,7 +47,6 @@ Brug ord og begreber, som brugeren kan genkende fra løsningen.
 Skriv kort og præcist og undgå tekniske beskeder, der kan forvirre brugeren.
 
 Brug beskeder til at øge brugerens forståelse for løsningen.
-
 
 {% include dos-donts-box.html component="alerts-dos-donts" title="Beskeder do's and don'ts" %}
 

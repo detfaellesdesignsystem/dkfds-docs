@@ -677,26 +677,58 @@ code {
 }
 
 //----------------  Icon page styles
+.simple-icon-list{
+  flex-wrap: wrap;
+  svg{
+    width: 80px;
+    height: auto;
+    max-width: 100%;
+  }
+}
 .icon-list{
   .icon-container{
     margin-top:-1px;
-  }
-  .icon-box{
-    padding: map-get($spacers, 505) map-get($spacers, 3) map-get($spacers, 3);
-    border: $inner-border;
-    margin-left: -1px;
-    text-align: center;
-    height: 100%;
+    .icon-box{
+      padding: map-get($spacers, 505) map-get($spacers, 3) map-get($spacers, 3);
+      border: $inner-border;
+      border-left-width: 0px;
+      border-top-width: 0px;
+      text-align: center;
+      height: 100%;
 
-    svg{
-      width: 48px;
-      height: 48px;
+      svg{
+        width: 48px;
+        height: 48px;
+        max-width: 100%;
+        cursor: pointer;
+      }
+      p{
+        margin-bottom: map-get($spacers, 405);
+        margin-top: map-get($spacers, 405);
+        word-wrap: break-word;
+      }
     }
-    p{
-      margin-bottom: 0px;
-      margin-top: map-get($spacers, 405);
-      height: 52px;
+    
+    @include media-breakpoint-down(sm) {
+      &:nth-child(odd) .icon-box{
+        border-left-width: 1px;
+      }
+      &:nth-child(-n+2) .icon-box{
+        border-top-width: 1px;
+      }
     }
+    
+    @include media-breakpoint-up(md) {
+      &:nth-child(4n-7) .icon-box{      
+          border-left-width: 1px;
+      }
+
+      &:nth-child(-n+4) .icon-box{
+        border-top-width: 1px;
+      }
+     
+    }
+    
   }
  
 }

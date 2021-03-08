@@ -1,14 +1,8 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-
-<div class="container">
-  <div class="icon-list row">
-    {% for icons in icons_example.items %}
-      <div class="col-md-2">
-        <div class="icon-box">
-          <div>{{ icon_svg(icons, "")}}</div>
-          <span class="icon-name"><span class="sr-only">Example of </span>{{ icons }}</span>
-        </div>
+<div class="d-flex simple-icon-list">
+  {% for icons in icons_example.items %}
+    <div class="w-percent-50 w-percent-md-20 align-text-center">
+        {{ icon_svg(icons, "")}}
       </div>
-    {% endfor %}
-  </div>
+  {% endfor %}
 </div>

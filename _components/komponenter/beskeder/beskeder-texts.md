@@ -6,7 +6,6 @@ component: alerts-texts
 componentTitle: "Eksempel på besked i forskellige formater"
 ---
 
-
 {% include dos-donts-box.html component="alerts-success-dos-donts" title="Successbeskeder do's and don'ts" %}
 
 {:.h4}
