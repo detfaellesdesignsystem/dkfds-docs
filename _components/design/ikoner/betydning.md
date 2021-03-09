@@ -110,11 +110,11 @@ subnav: []
   <h2 class="h5 mb-4">Beskeder (feedback)</h2>
   <div class="container">
     <div class="icon-list row" id="icon-list-beskeder">
-          {% include icon.html icon="report-problem" keywords="warning, advarsel, report, problem, report problem" label="Advarsel" %}
-          {% include icon.html icon="highlight-off" keywords="error, fejl" label="Fejl" %}
-          {% include icon.html icon="info" keywords="information, info" label="Hjælp" %}
-          {% include icon.html icon="help" keywords="help, hjælp" label="Information" %}
-          {% include icon.html icon="check-circle" keywords="flueben, check, success, succes, done" label="Succes" %}
+          {% include icon.html icon="report-problem" keywords="besked, alert, message, warning, advarsel, report, problem, report problem" label="Advarsel" %}
+          {% include icon.html icon="highlight-off" keywords="besked, alert, message, error, fejl" label="Fejl" %}
+          {% include icon.html icon="info" keywords="besked, alert, message, information, info" label="Hjælp" %}
+          {% include icon.html icon="help" keywords="besked, alert, message, help, hjælp" label="Information" %}
+          {% include icon.html icon="check-circle" keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark" label="Succes" %}
     </div>
   </div>
 </section>
@@ -124,8 +124,8 @@ subnav: []
   <div class="container">
     <div class="icon-list row" id="icon-list-navigation"> {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
           {% include icon.html icon="arrow-right" keywords="right, højre, frem, pil, arrow" label="Frem (højre)" %}
-          {% include icon.html icon="menu" keywords="hamburger, menu" label="Menu" %}
-          {% include icon.html icon="more-vert" keywords="" label="Overflowmenu (vertikalt)" %}
+          {% include icon.html icon="menu" keywords="hamburger, menu, burger, burgermenu, burger menu" label="Menu" %}
+          {% include icon.html icon="more-vert" keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical" label="Overflowmenu (vertikalt)" %}
           {% include icon.html icon="chevron-left" keywords="næste, next, side" label="Paginering forrige" %}
           {% include icon.html icon="first-page" keywords="start, første, side" label="Paginering første" %}
           {% include icon.html icon="chevron-right" keywords="forrige, previous, prev, side" label="Paginering næste" %}
@@ -135,8 +135,8 @@ subnav: []
           {% include icon.html icon="arrow-upward" keywords="pil, op, arrow" label="Pil op" %}
           {% include icon.html icon="arrow-back" keywords="pil, arrow, tilbage, back" label="Pil tilbage (venstre)" %}
           {% include icon.html icon="arrow-left" keywords="pil, arrow, back, tilbage" label="Tilbage (venstre)" %}
-          {% include icon.html icon="subdirectory-arrow-right" keywords="højre" label="Undermenu højre" %}
-          {% include icon.html icon="subdirectory-arrow-left" keywords="venstre" label="Undermenu venstre" %}
+          {% include icon.html icon="subdirectory-arrow-right" keywords="højre, knækpil, pil, arrow" label="Undermenu højre" %}
+          {% include icon.html icon="subdirectory-arrow-left" keywords="venstre, knækpil, pil, arrow" label="Undermenu venstre" %}
     </div>
   </div>
 </section>
@@ -146,22 +146,22 @@ subnav: []
   <div class="container">
     <div class="icon-list row" id="icon-list-tilstande">
      {% include icon.html icon="arrow-right" keywords="pil, højre, lukket, luk, detalje" label="Detalje lukket" %}
-          {% include icon.html icon="arrow-drop-down" keywords="pil, ned, detalje, åben" label="Detalje åben / Fold dropdown/overflow ud" %}
-          {% include icon.html icon="arrow-drop-up" keywords="" label="Fold dropdown/overflow ind" %}
-          {% include icon.html icon="zoom-out" keywords="" label="Formindsk" %}
-          {% include icon.html icon="zoom-in" keywords="" label="Forstør" %}
-          {% include icon.html icon="fullscreen" keywords="" label="Fuld skærm" %}
-          {% include icon.html icon="remove" keywords="" label="Luk accordion (minus)" %}
-          {% include icon.html icon="fullscreen-exit" keywords="" label="Luk fuld skærm" %}
-          {% include icon.html icon="sort" keywords="" label="Ikke sorteret" %}
-          {% include icon.html icon="lock-open" keywords="" label="Log af (åben hængelås)" %}
-          {% include icon.html icon="lock" keywords="" label="Log på (lukket hængelås)" %}
-          {% include icon.html icon="visibility-off" keywords="" label="Skjul" %}
-          {% include icon.html icon="sort-by-alpha" keywords="" label="Sortér alfabetisk" %}
-          {% include icon.html icon="expand-more" keywords="" label="Udvid (chevron)" %}
-          {% include icon.html icon="expand-less" keywords="" label="Indskrænk (chevron)" %}
-          {% include icon.html icon="visibility" keywords="" label="Vis" %}
-          {% include icon.html icon="add" keywords="" label="Åbn accordion (plus)" %}
+          {% include icon.html icon="arrow-drop-down" keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud" label="Detalje åben / Fold dropdown/overflow ud" %}
+          {% include icon.html icon="arrow-drop-up" keywords="pil, op, up, arrow, dropdown, fold ind, luk" label="Fold dropdown/overflow ind" %}
+          {% include icon.html icon="zoom-out" keywords="lup, zoom, zoom ud, ud" label="Formindsk" %}
+          {% include icon.html icon="zoom-in" keywords="lup, zoom, zoom ind, ind" label="Forstør" %}
+          {% include icon.html icon="fullscreen" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm" label="Fuld skærm" %}
+          {% include icon.html icon="remove" keywords="-, minus, luk, accordion, close, collapse" label="Luk accordion (minus)" %}
+          {% include icon.html icon="fullscreen-exit" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit" label="Luk fuld skærm" %}
+          {% include icon.html icon="sort" keywords="sortering, sort, unsorted" label="Ikke sorteret" %}
+          {% include icon.html icon="lock-open" keywords="log off, log af, log ud, log, off, af, ud, exit, lås, lock, hængelås, åben, open" label="Log af (åben hængelås)" %}
+          {% include icon.html icon="lock" keywords="log in, login, log på, log ind, log, in, på, ind, lås, lock, hængelås, låst" label="Log på (lukket hængelås)" %}
+          {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Skjul" %}
+          {% include icon.html icon="sort-by-alpha" keywords="sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
+          {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Udvid (chevron)" %}
+          {% include icon.html icon="expand-less" keywords="collapse, pil, arrow" label="Indskrænk (chevron)" %}
+          {% include icon.html icon="visibility" keywords="øje, eye, se, see, vis, blind" label="Vis" %}
+          {% include icon.html icon="add" keywords="+, plus, add, tilføj, accordion, fold ud, expand" label="Åbn accordion (plus)" %}
     </div>
   </div>
 </section>
@@ -169,10 +169,10 @@ subnav: []
   <h2 class="h5 mb-4">Filtyper</h2>
   <div class="container">
     <div class="icon-list row" id="icon-list-filtyper">
-     {% include icon.html icon="file-image" keywords="" label="Billede" %}
-          {% include icon.html icon="file-excel" keywords="" label="Excel" %}
-          {% include icon.html icon="file-pdf" keywords="" label="PDF" %}
-          {% include icon.html icon="file-word" keywords="" label="Word" %}
+     {% include icon.html icon="file-image" keywords="billede, picture, fotografi, fil, file" label="Billede" %}
+          {% include icon.html icon="file-excel" keywords="excel, ark, regneark, fil" label="Excel" %}
+          {% include icon.html icon="file-pdf" keywords="PDF, dokument, document, fil" label="PDF" %}
+          {% include icon.html icon="file-word" keywords="word, dokument, fil, document" label="Word" %}
     </div>
   </div>
 </section>
@@ -180,53 +180,53 @@ subnav: []
   <h2 class="h5 mb-4">Funktionalitet</h2>
   <div class="container">
     <div class="icon-list row" id="icon-list-funktionalitet">
-          {% include icon.html icon="close" keywords="" label="Annuller (luk)" %}
-          {% include icon.html icon="hourglass-empty" keywords="" label="Afventer" %}
-          {% include icon.html icon="calculator" keywords="" label="Beregner (lommeregner)" %}
-          {% include icon.html icon="reply" keywords="" label="Besvar" %}
-          {% include icon.html icon="chat" keywords="" label="Chat" %}
-          {% include icon.html icon="insert-invitation" keywords="" label="Dato / kalender" %}
-          {% include icon.html icon="share" keywords="" label="Del" %}
-          {% include icon.html icon="file-download" keywords="" label="Download" %}
-          {% include icon.html icon="download-done" keywords="" label="Download afsluttet" %}
-          {% include icon.html icon="email" keywords="" label="Email" %}
-          {% include icon.html icon="feedback" keywords="" label="Feedback" %}
-          {% include icon.html icon="person-remove" keywords="" label="Fjern person/bruger" %}
-          {% include icon.html icon="flag" keywords="" label="Flag fyldt" %}
-          {% include icon.html icon="outline-flag" keywords="" label="Flag tomt" %}
-          {% include icon.html icon="open-with" keywords="" label="Flyt" %}
-          {% include icon.html icon="credit-card" keywords="" label="Indbetaling (kreditkort)" %}
-          {% include icon.html icon="settings" keywords="" label="Indstillinger" %}
-          {% include icon.html icon="photo-camera" keywords="" label="Kamera (tag billede)" %}
-          {% include icon.html icon="card-text" keywords="" label="Kontaktoplysninger" %}
-          {% include icon.html icon="content-copy" keywords="" label="Kopi" %}
-          {% include icon.html icon="playlist-add-check" keywords="" label="Liste gennemført" %}
-          {% include icon.html icon="folder" keywords="" label="Mappe" %}
-          {% include icon.html icon="notifications" keywords="" label="Notifikation/besked" %}
-          {% include icon.html icon="refresh" keywords="" label="Opdater (genindlæs)" %}
-          {% include icon.html icon="create-new-folder" keywords="" label="Opret mappe" %}
-          {% include icon.html icon="apps" keywords="" label="Oversigt (overblik)" %}
-          {% include icon.html icon="location-on" keywords="" label="Placering (adresse)" %}
-          {% include icon.html icon="mode" keywords="" label="Rediger" %}
-          {% include icon.html icon="send" keywords="" label="Send" %}
-          {% include icon.html icon="language" keywords="" label="Sprog (globe)" %}
-          {% include icon.html icon="grade" keywords="" label="Stjerne fyldt (markeret)" %}
-          {% include icon.html icon="grade-outline" keywords="" label="Stjerne tom (ikke-markeret)" %}
-          {% include icon.html icon="contact-support" keywords="" label="Support" %}
-          {% include icon.html icon="cached" keywords="" label="Synkroniser (refresh)" %}
-          {% include icon.html icon="query-builder" keywords="" label="Tid (tidsinterval)" %}
-          {% include icon.html icon="add-a-photo" keywords="" label="Tilføj billede" %}
-          {% include icon.html icon="note-add" keywords="" label="Tilføj dokument" %}
-          {% include icon.html icon="playlist-add" keywords="" label="Tilføj til liste" %}
-          {% include icon.html icon="person-add-alt-1" keywords="" label="Tilføj person/bruger" %}
-          {% include icon.html icon="done" keywords="" label="Udført (korrekt, gennemført)" %}
-          {% include icon.html icon="upload" keywords="" label="Upload (eksporter)" %}
-          {% include icon.html icon="attach-file" keywords="" label="Vedhæft (bilag)" %}
-          {% include icon.html icon="forward" keywords="" label="Videresend" %}
-          {% include icon.html icon="view-headline" keywords="" label="Vis i liste form" %}
-          {% include icon.html icon="vertical-split" keywords="" label="Vis i liste form og vindue" %}
-          {% include icon.html icon="palette" keywords="" label="Vælg tema (palette)" %}
-          {% include icon.html icon="folder-open" keywords="" label="Åben mappe" %}
+          {% include icon.html icon="close" keywords="anuller, annullér, luk, cancel, discard, fortryd" label="Annuller (luk)" %}
+          {% include icon.html icon="hourglass-empty" keywords="waiting, hourglass, timeglas, vente, ventetid, tid" label="Afventer" %}
+          {% include icon.html icon="calculator" keywords="calculator, lommeregner, beregning, beregner" label="Beregner (lommeregner)" %}
+          {% include icon.html icon="reply" keywords="besvar, mail, email" label="Besvar" %}
+          {% include icon.html icon="chat" keywords="chat, kontakt, kommunikation, communication" label="Chat" %}
+          {% include icon.html icon="insert-invitation" keywords="date, calendar, kalender, dato, invitation, aftale, møde" label="Dato / kalender" %}
+          {% include icon.html icon="share" keywords="share, del" label="Del" %}
+          {% include icon.html icon="file-download" keywords="download" label="Download" %}
+          {% include icon.html icon="download-done" keywords="færdig, gennemført, download" label="Download afsluttet" %}
+          {% include icon.html icon="email" keywords="email, mail, e-mail, e-mailadresse, adresse, adress" label="Email" %}
+          {% include icon.html icon="feedback" keywords="feedback, respons, response, besvarelse" label="Feedback" %}
+          {% include icon.html icon="person-remove" keywords="bruger, person, user, remove" label="Fjern person/bruger" %}
+          {% include icon.html icon="flag" keywords="flag, filled, udfyldt" label="Flag fyldt" %}
+          {% include icon.html icon="outline-flag" keywords="flag, tomt" label="Flag tomt" %}
+          {% include icon.html icon="open-with" keywords="flyt, move, drag, drop" label="Flyt" %}
+          {% include icon.html icon="credit-card" keywords="kreditkort, creditcard, credit, money, payment, betal, betaling, pay" label="Indbetaling (kreditkort)" %}
+          {% include icon.html icon="settings" keywords="settings, indstillinger" label="Indstillinger" %}
+          {% include icon.html icon="photo-camera" keywords="kamera, video, picture, billede" label="Kamera (tag billede)" %}
+          {% include icon.html icon="card-text" keywords="card, text, tekst, kort, oplysninger, kontakt, contact" label="Kontaktoplysninger" %}
+          {% include icon.html icon="content-copy" keywords="copy, paste, kopi, indsæt, sæt ind" label="Kopi" %}
+          {% include icon.html icon="playlist-add-check" keywords="liste, list, done, check, flueben, completed, gennemført" label="Liste gennemført" %}
+          {% include icon.html icon="folder" keywords="mappe, folder" label="Mappe" %}
+          {% include icon.html icon="notifications" keywords="notifikation, besked, toast, notification, bell, klokke, alarm, ringe" label="Notifikation/besked" %}
+          {% include icon.html icon="refresh" keywords="update, refresh, opdater, genindlæs, pil, cirkel" label="Opdater (genindlæs)" %}
+          {% include icon.html icon="create-new-folder" keywords="folder, mappe, opret, ny, add, new, create" label="Opret mappe" %}
+          {% include icon.html icon="apps" keywords="apps, applikation, oversigt, overblik, kasser" label="Oversigt (overblik)" %}
+          {% include icon.html icon="location-on" keywords="position, maps, adresse, lokation, location" label="Placering (adresse)" %}
+          {% include icon.html icon="mode" keywords="redigér, edit, rediger, ændre, change" label="Rediger" %}
+          {% include icon.html icon="send" keywords="send" label="Send" %}
+          {% include icon.html icon="language" keywords="sprog, language, globe, earch, jorden, lande, countries" label="Sprog (globe)" %}
+          {% include icon.html icon="grade" keywords="star, stjerne, bedømmelse, rating" label="Stjerne fyldt (markeret)" %}
+          {% include icon.html icon="grade-outline" keywords="star, stjerne, bedømmelse, rating" label="Stjerne tom (ikke-markeret)" %}
+          {% include icon.html icon="contact-support" keywords="support, kontakt, contact, kommunikation, communication, bubble, help, question" label="Support" %}
+          {% include icon.html icon="cached" keywords="synkroniser, refresh, genindlæs, update, opdater" label="Synkroniser (refresh)" %}
+          {% include icon.html icon="query-builder" keywords="ur, tid, time, clock, klokke" label="Tid (tidsinterval)" %}
+          {% include icon.html icon="add-a-photo" keywords="kamera, camera, picture, add, tilføj, billede, ny, create" label="Tilføj billede" %}
+          {% include icon.html icon="note-add" keywords="add, document, dokument, tilføj, new, nyt, ny, opret, create" label="Tilføj dokument" %}
+          {% include icon.html icon="playlist-add" keywords="add, list, tilføj, ny, opret" label="Tilføj til liste" %}
+          {% include icon.html icon="person-add-alt-1" keywords="add, tilføj, ny, create, opret, bruger, user, person" label="Tilføj person/bruger" %}
+          {% include icon.html icon="done" keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt" label="Udført (korrekt, gennemført)" %}
+          {% include icon.html icon="upload" keywords="Upload, eksporter, export" label="Upload (eksporter)" %}
+          {% include icon.html icon="attach-file" keywords="Vedhæft, attachment, bilag" label="Vedhæft (bilag)" %}
+          {% include icon.html icon="forward" keywords="videresend" label="Videresend" %}
+          {% include icon.html icon="view-headline" keywords="Liste, justify" label="Vis i liste form" %}
+          {% include icon.html icon="vertical-split" keywords="liste, kasse, billede, layout, vindue" label="Vis i liste form og vindue" %}
+          {% include icon.html icon="palette" keywords="tema, theme, palette, color, colours, painting, paint" label="Vælg tema (palette)" %}
+          {% include icon.html icon="folder-open" keywords="open, folder, åben, åbn, mappe" label="Åben mappe" %}
     </div>
   </div>
 </section>
@@ -235,25 +235,25 @@ subnav: []
   <h2 class="h5 mb-4">Illustrative</h2>
   <div class="container">
     <div class="icon-list row" id="icon-list-illustrative">
-          {% include icon.html icon="coronavirus" keywords="" label="Corona (Covid-19)" %}
+          {% include icon.html icon="coronavirus" keywords="virus, corona, coronavirus, covid, 19, covid19, covid-19, pandemi, epidemi" label="Corona (Covid-19)" %}
           {% include icon.html icon="list-alt" keywords="" label="Opgørelse / Resumé / Opsummering" %}
-          {% include icon.html icon="assignment" keywords="" label="Opgave" %}
-          {% include icon.html icon="payments" keywords="" label="Penge/Betaling/Opkrævning" %}
+          {% include icon.html icon="assignment" keywords="assignment" label="Opgave" %}
+          {% include icon.html icon="payments" keywords="money, payment" label="Penge/Betaling/Opkrævning" %}
           {% include icon.html icon="database" keywords="" label="Data" %}
           {% include icon.html icon="assessment" keywords="" label="Analyse" %}
           {% include icon.html icon="map" keywords="" label="Kort" %}
           {% include icon.html icon="link" keywords="" label="Links" %}
           {% include icon.html icon="person" keywords="" label="Person (bruger)" %}
-          {% include icon.html icon="shopping-cart" keywords="" label="Kurv (afventer køb)" %}
-          {% include icon.html icon="videocam" keywords="" label="Videokamera" %}
-          {% include icon.html icon="headphones" keywords="" label="Headset" %}
-          {% include icon.html icon="desktop-windows" keywords="" label="Desktop" %}
-          {% include icon.html icon="laptop" keywords="" label="Labtop" %}
-          {% include icon.html icon="phone-iphone" keywords="" label="Mobiltelefon" %}
+          {% include icon.html icon="shopping-cart" keywords="shopping, buy, cart, payment, checkout" label="Kurv (afventer køb)" %}
+          {% include icon.html icon="videocam" keywords="video, kamera" label="Videokamera" %}
+          {% include icon.html icon="headphones" keywords="headset, sound, lyd, høretelefoner" label="Headset" %}
+          {% include icon.html icon="desktop-windows" keywords="skærm, screen, computer" label="Desktop" %}
+          {% include icon.html icon="laptop" keywords="bærbar, computer" label="Labtop" %}
+          {% include icon.html icon="phone-iphone" keywords="telefon, smartphone" label="Mobiltelefon" %}
           {% include icon.html icon="mouse" keywords="" label="Mus" %}
-          {% include icon.html icon="accessibility-new" keywords="" label="Tilgængelighed" %}
+          {% include icon.html icon="accessibility-new" keywords="man, mand" label="Tilgængelighed" %}
           {% include icon.html icon="format-list-bulleted" keywords="" label="Liste" %}
-          {% include icon.html icon="format-list-checks" keywords="" label="Tjekliste" %}
+          {% include icon.html icon="format-list-checks" keywords="punktopstilling, liste" label="Tjekliste" %}
           {% include icon.html icon="bookmark-border" keywords="" label="Bogmærke" %}
           {% include icon.html icon="bookmarks" keywords="" label="Bogmærker" %}
           {% include icon.html icon="card-account-details" keywords="" label="Kontaktoplysninger" %}

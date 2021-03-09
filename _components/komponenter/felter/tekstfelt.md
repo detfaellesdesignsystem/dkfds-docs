@@ -6,6 +6,10 @@ title: Felter
 tags:
 - tekstfelt
 - input
+- frivilligt
+- påkrævet
+- påkrævede
+- required
 - fejlbesked
 - fejlmeddelelse
 - fejl på felt
