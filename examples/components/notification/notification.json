@@ -1,0 +1,8 @@
+{
+  "button_example": {
+      "text": "Tilføj notifikation",
+      "class": "primary",
+      "attribute": "id=\"notification-example-button\""
+
+  }
+}
