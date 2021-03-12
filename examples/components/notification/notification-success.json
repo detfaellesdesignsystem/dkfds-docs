@@ -3,6 +3,7 @@
     "id": "notification-success",
     "type": "success",
     "heading": "Din ansøgning er afsendt",
-    "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    "show": true
   }
 }
