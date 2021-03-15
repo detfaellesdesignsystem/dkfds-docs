@@ -23,13 +23,13 @@ Sagerne kan være:
 {:.table .table--zebra}
 | Sag        | Status  |
 |--------------|---------:|
-| Toggle komponent | Planlagt |
-| Notifikation (Toast) komponent | I gang |
-| Facit-streger | Planlagt |
+| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Toggle komponent<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | Planlagt |
+| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Notifikation (Toast) komponent<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | I gang |
+| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Facit-streger<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | Planlagt |
 | Eksempelløsning: Køb af fisketegn | Planlagt |
 | Eksempelløsning: Appel til skattedomstol | Planlagt |
 | Eksempelløsning: Opgaveliste | Planlagt |
-| Strukturerede lister | Planlagt |
-| Tiles | Planlagt |
+| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Strukturerede lister<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | Planlagt |
+| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Tiles<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | Planlagt |
 | Eksempel på Internationale adresser og postnumre | Planlagt |
 | Eksempel på internationalt telefonnummer | Planlagt |
