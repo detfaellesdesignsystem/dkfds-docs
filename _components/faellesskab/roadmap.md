@@ -16,20 +16,60 @@ Her er en liste over komponenter, mønstre og opdateringer, der aktuelt findes i
 
 Sagerne kan være:
 
-- Foreslået - nogen har foreslået en ny komponent eller et nyt mønster
-- Planlagt - den foreslåede komponent eller det foreslåede mønster er planlagt
-- I gang - nogen arbejder aktivt på komponenten eller mønsteret
+- <span class="small-text uppercase weight-semibold">Foreslået</span>
+- <span class="badge badge-small badge-info">Planlagt</span>
+- <span class="badge badge-small badge-warning">I gang</span>
+- <span class="badge badge-small badge-success">Gennemført</span>
+- <span class="badge badge-small badge-error">Annulleret/afvist</span>
 
-{:.table .table--zebra}
-| Sag        | Status  |
-|--------------|---------:|
-| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Toggle komponent<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | Planlagt |
-| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Notifikation (Toast) komponent<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | I gang |
-| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Facit-streger<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | Planlagt |
-| Eksempelløsning: Køb af fisketegn | Planlagt |
-| Eksempelløsning: Appel til skattedomstol | Planlagt |
-| Eksempelløsning: Opgaveliste | Planlagt |
-| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Strukturerede lister<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | Planlagt |
-| <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Tiles<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> | Planlagt |
-| Eksempel på Internationale adresser og postnumre | Planlagt |
-| Eksempel på internationalt telefonnummer | Planlagt |
+{:.h3 .mb-md-0}
+## Nye komponenter
+<table class="table table--borderless table--compact table-sm-responsive-headers">
+    <thead>
+    <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
+    </thead>
+    <tbody>
+        {% include roadmap.html title="Toggle" status="Planlagt" %}
+        {% include roadmap.html title="Notifikation (Toast)" status="I gang" %}
+        {% include roadmap.html title="Facit-streger" status="I gang" %}
+        {% include roadmap.html title="Strukturerede lister" status="Planlagt" %}
+        {% include roadmap.html title="Tiles" status="Planlagt" %}
+    </tbody>
+</table>
+
+{:.h3 .mb-md-0}
+## Eksempelløsninger
+<table class="table table--borderless table--compact table-sm-responsive-headers">
+    <thead>
+    <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
+    </thead>
+    <tbody>
+        {% include roadmap.html title="Køb af fisketegn" status="Planlagt" %}
+        {% include roadmap.html title="Appel til skattedomstol" status="Planlagt" %}
+        {% include roadmap.html title="Opgaveliste" status="Planlagt" %}
+    </tbody>
+</table>
+
+{:.h3 .mb-md-0}
+## Mønstre
+<table class="table table--borderless table--compact table-sm-responsive-headers">
+    <thead>
+    <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
+    </thead>
+    <tbody>
+        {% include roadmap.html title="Internationale adresser og postnumre" status="Planlagt" %}
+        {% include roadmap.html title="Internationalt telefonnummer" status="Planlagt" %}
+    </tbody>
+</table>
+
+{:.h3 .mb-md-0}
+## Andet
+<table class="table table--borderless table--compact table-sm-responsive-headers">
+    <thead>
+    <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
+    </thead>
+    <tbody>
+        {% include roadmap.html title="Opdatering af Figma til v7.2.0" status="Planlagt" %}
+        {% include roadmap.html title="Udvidelse af table--responsive-headers" link="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" status="I gang" %}
+    </tbody>
+</table>
