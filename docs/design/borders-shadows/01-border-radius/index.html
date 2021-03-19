@@ -8,7 +8,7 @@
 
 <!-- Mobile Specific Metas
 ================================================== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
   <meta name="format-detection" content="telephone=no">
   
   <meta name="robots" content="noindex" />
@@ -1727,8 +1727,8 @@
 </p>
 <div class="static-border-radius-example"></div>
 <h3 class="h5">Runde hjørner (4px)</h3>
-<p class="form-hint">Bruges til interaktive elementer, fx input-felter og
-    knapper.</p>
+<p class="form-hint">Bruges kun til håndtering af interaktive elementer, da
+    det er meningen at differentiere indhold fra aktion.</p>
 <div class="interactive-border-radius-example"></div>
     </div>
     
@@ -1737,20 +1737,26 @@
 
           
 
-          <h3>Implementering</h3>
+          <h3>Designværdier</h3>
 
-<h4>Statiske hjørner</h4>
-
-<ul>
-  <li>Statiske hjørner er lige og har en border radius på 0px.</li>
-</ul>
-
-<h4>Interaktive hjørner</h4>
-
-<ul>
-  <li>Interaktive hjørner er runde og har en border radius på 4px.</li>
-  <li>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</li>
-</ul>
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Navn</th>
+      <th>Border radius</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Statiske hjørner</td>
+      <td>0px</td>
+    </tr>
+    <tr>
+      <td>Interaktive hjørner</td>
+      <td>4px</td>
+    </tr>
+  </tbody>
+</table>
 
 
       </section>

@@ -8,7 +8,7 @@
 
 <!-- Mobile Specific Metas
 ================================================== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
   <meta name="format-detection" content="telephone=no">
   
   <meta name="robots" content="noindex" />
@@ -1930,8 +1930,8 @@
 </p>
 <div class="static-border-radius-example"></div>
 <h3 class="h5">Runde hjørner (4px)</h3>
-<p class="form-hint">Bruges til interaktive elementer, fx input-felter og
-    knapper.</p>
+<p class="form-hint">Bruges kun til håndtering af interaktive elementer, da
+    det er meningen at differentiere indhold fra aktion.</p>
 <div class="interactive-border-radius-example"></div>
     </div>
     
@@ -1939,20 +1939,26 @@
 
 
   
-  <h3>Implementering</h3>
+  <h3>Designværdier</h3>
 
-<h4>Statiske hjørner</h4>
-
-<ul>
-  <li>Statiske hjørner er lige og har en border radius på 0px.</li>
-</ul>
-
-<h4>Interaktive hjørner</h4>
-
-<ul>
-  <li>Interaktive hjørner er runde og har en border radius på 4px.</li>
-  <li>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</li>
-</ul>
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Navn</th>
+      <th>Border radius</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Statiske hjørner</td>
+      <td>0px</td>
+    </tr>
+    <tr>
+      <td>Interaktive hjørner</td>
+      <td>4px</td>
+    </tr>
+  </tbody>
+</table>
 
 </section>
 
@@ -2005,35 +2011,89 @@
 <p class="form-hint">Bruges under et aktivt menupunkt i navigationen i
     headeren.</p>
 <div class="navigation-border-example"></div>
+<h3 class="h5">Facit streg</h3>
+<p class="form-hint">Bruges under et tal for at indikere et resultat.</p>
+<span class="facit">10.884,50</span>
     </div>
     
 </div>
 
 
   
-  <h3>Implementering</h3>
+  <h3>Designværdier</h3>
 
-<h4>Ydre streger</h4>
-
-<p>Ydre streger er 1px bredde og er mørk grå <code>#747474</code>.</p>
-
-<p>Bruges som ydre streger på komponenter, til at adskille dem fra hinanden.</p>
-
-<h4>Indre streger</h4>
-
-<p>Indre streger er 1px bredde og er lys grå <code>#BFBFBF</code>.</p>
-
-<p>Anvendes som indvendige streger i komponenter, der kræver separering af elementer.</p>
-
-<h4>Indre-indre streger</h4>
-
-<p>Indre-indre streger er 1px bredde og er lysere grå <code>#DCDCDC</code>.</p>
-
-<p>Anvendes som indvendige streger i komponenter, der kræver yderligere separering af elementer.</p>
-
-<h4>Knap-kant-streger</h4>
-
-<p>Stregen rundt om knapper (Borders) er 2px bredde og farven afhænger af temaet: For borger.dk er det farven <code>#3C5C22</code> og for Virk er det farven <code>#004993</code>.</p>
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Navn</th>
+      <th>Farve</th>
+      <th>Tykkelse</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ydre streger</td>
+      <td>#747474</td>
+      <td>1px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Indre streger</td>
+      <td>#BFBFBF</td>
+      <td>1px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Indre-indre streger</td>
+      <td>#DCDCDC</td>
+      <td>1px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Knap kant streger</td>
+      <td>#3C5C22 (Borger.dk)<br />#004993 (Virk)</td>
+      <td>2px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Horisontal ruler</td>
+      <td>#BFBFBF</td>
+      <td>1px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Fejl ved felt</td>
+      <td>#CC0000</td>
+      <td>4px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Streg ved åben detalje-komponent</td>
+      <td>#BFBFBF</td>
+      <td>4px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Streg ved aktivt menupunkt i sidenavigation</td>
+      <td>#44831E (Borger.dk)<br />#0059B3 (Virk)</td>
+      <td>4px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Streg ved aktivt menupunkt i sidenavigation</td>
+      <td>#44831E (Borger.dk)<br />#0059B3 (Virk)</td>
+      <td>7px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
+      <td>Facit streg</td>
+      <td>#747474</td>
+      <td>4px</td>
+      <td>double</td>
+    </tr>
+  </tbody>
+</table>
 
 </section>
 
@@ -2066,18 +2126,38 @@
 
 
   
-  <h3>Implementering</h3>
-<h4>Modalvindue</h4>
+  <h3>Designværdier</h3>
 
-<p>Modalvinduer har en sort skygge på 0 8px 16px 0.</p>
-
-<h4>Overflow menu</h4>
-
-<p>Overflow menu har en sort skygge på 0 4px 16px 0.</p>
-
-<h4>Cards</h4>
-
-<p>Cards har en sort skygge på 0 2px 16px 0.</p>
+<table class="table table--borderless table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Navn</th>
+      <th>Skygge</th>
+      <th>Skyggefarve</th>
+      <th>Gennemsigtighed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Modalvindue</td>
+      <td>0 8px 16px 0</td>
+      <td>#000000</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>Overflow menu</td>
+      <td>0 4px 16px 0</td>
+      <td>#000000</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>Cards</td>
+      <td>0 2px 16px 0</td>
+      <td>#000000</td>
+      <td>30%</td>
+    </tr>
+  </tbody>
+</table>
 
 </section>
 

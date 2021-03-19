@@ -7,13 +7,10 @@ component: border-radius
 componentHideCode: true
 ---
 
-### Implementering
+### Designværdier
 
-#### Statiske hjørner
-
-- Statiske hjørner er lige og har en border radius på 0px.
-
-#### Interaktive hjørner
-
-- Interaktive hjørner er runde og har en border radius på 4px.
-- Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.
+{:.table .table--borderless .table--responsive-headers}
+| Navn                | Border radius     |
+|---------------------|-------------------|
+| Statiske hjørner    | 0px               |
+| Interaktive hjørner | 4px               |
