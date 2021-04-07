@@ -29,9 +29,9 @@ Sagerne kan være:
     <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
     </thead>
     <tbody>
-        {% include roadmap.html title="Toggle" status="Planlagt" %}
-        {% include roadmap.html title="Notifikation (Toast)" status="I gang" %}
-        {% include roadmap.html title="Facit-streger" status="I gang" %}
+        {% include roadmap.html title="Toggle" status="I gang" %}
+        {% include roadmap.html title="Notifikation (Toast)" status="Gennemført" %}
+        {% include roadmap.html title="Facit-streger" status="Gennemført" %}
         {% include roadmap.html title="Strukturerede lister" status="Planlagt" %}
         {% include roadmap.html title="Tiles" status="Planlagt" %}
     </tbody>
@@ -70,6 +70,7 @@ Sagerne kan være:
     </thead>
     <tbody>
         {% include roadmap.html title="Opdatering af Figma til v7.2.0" status="Planlagt" %}
-        {% include roadmap.html title="Udvidelse af table--responsive-headers" link="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" status="I gang" %}
+        {% include roadmap.html title="Udvidelse af table--responsive-headers" link="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" status="Gennemført" %}
+        {% include roadmap.html title="Ikontaksonomi" link="/design/ikoner/ikoner-og-deres-betydning/" status="Gennemført" %}
     </tbody>
 </table>

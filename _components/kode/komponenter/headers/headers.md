@@ -14,13 +14,13 @@ subnav:
 - text: Ekstra rækker
   href: '#ekstra-raekker'
 ---
-{% include code/preview-image.html component="header" alt="Billedet viser header komponent" title="Eksempel på header komponent" %}
+{% include code/preview-image.html component="header-simple" alt="Billedet viser header komponent" title="Eksempel på header komponent" %}
 
 ## Installation
 
 ### HTML Struktur
 
-{% include code/syntax.html component="header" %}
+{% include code/syntax.html component="header-simple" %}
 
 #### Portal header
 
