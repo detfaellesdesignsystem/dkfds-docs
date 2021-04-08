@@ -3145,31 +3145,7 @@
 <h3>Javascript</h3>
 <p>Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Datepicker(document.getElementById(&#39;Datepicker-ID&#39;));</code></pre></figure>
-
-<h4>Events</h4>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Event key</th>
-      <th>Element</th>
-      <th>Beskrivelse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fds.accordion.open</td>
-      <td><code>button.accordion-button</code></td>
-      <td>Når en accordion bliver foldet ud, bliver eventet <code>fds.accordion.open</code> udløst på accordion knappen</td>
-    </tr>
-    <tr>
-      <td>fds.accordion.close</td>
-      <td><code>button.accordion-button</code></td>
-      <td>Når en accordion bliver foldet ind, bliver eventet <code>fds.accordion.close</code> udløst på accordion knappen</td>
-    </tr>
-  </tbody>
-</table>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">DKFDS.datePicker.on(document.body);</code></pre></figure>
 
 <h2>Varianter</h2>
 
