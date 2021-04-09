@@ -43,6 +43,11 @@ Bemærk at ovenstående har class `show` som default. Der følger en animation m
 
 Ved at bruge nedenstående javascript vil dette komme ud af boksen. Men bemærk at en notifikation bør have class `hide` fra start.
 
+#### Placering
+Notifikationer placeres i en div med class `toast-container`. Denne div placeres efter body.
+
+<a href="/eksempel/notification/" target="_blank">Se fungerende eksempel på implementering af notifikation i et nyt vindue</a>
+
 ### Javascript
 Der medfølger Javascript til komponenten, som man kan vælge at bruge. 
 
