@@ -3,7 +3,7 @@ permalink: "/kode/komponenter/notifikation/"
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
-title: Notifikation
+title: Notifikation (Toast)
 category: Kode_category
 subcategory: Kode
 description: "Dokumentation på implementering af notifikation."
