@@ -37,9 +37,9 @@ subnav:
 Kopiér ovenstående kode for at indsætte én notifikation.
 
 Bemærk at ovenstående har class `show` som default. Der følger en animation med når en notifikation vises, som kommer ved at man ændrer klasserne  i følgende flow:
-- `hide`
-- `showing`
-- `show`
+1. `hide`
+2. `showing`
+3. `show`
 
 Ved at bruge nedenstående javascript vil dette komme ud af boksen. Men bemærk at en notifikation bør have class `hide` fra start.
 
