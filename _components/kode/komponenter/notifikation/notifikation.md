@@ -37,7 +37,19 @@ subnav:
 Kopiér ovenstående kode for at indsætte én notifikation. 
 
 ### Javascript
-Der medfølger ikke javascript for denne komponent, da komponenten gerne tilføjes af løsningernes egen kode. Husk at tilføje håndtering af luk knappen, når komponenten tilføjes på siden.
+Der medfølger Javascript til komponenten, som man kan vælge at bruge. 
+
+#### Vis
+{% highlight javascript %}
+let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
+toast.show();
+{% endhighlight %}
+
+### Skjul
+{% highlight javascript %}
+let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
+toast.hide();
+{% endhighlight %}
 
 ## Varianter
 

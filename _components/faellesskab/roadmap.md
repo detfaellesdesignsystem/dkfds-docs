@@ -10,7 +10,7 @@ description: ""
 
 Det Fælles Designsystem er bygget på forskning og erfaring fra FDS-teamet, andre designsystemer (<a href="https://designsystem.digital.gov/" class="icon-link">US Web Design System<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://design-system.service.gov.uk/" class="icon-link">Gov.UK Design System<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>) samt input fra anvendere af FDS.
 
-Enhver kan <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" title="Opret et issue i Github eller lav en pull request, hvis du vil bidrage med kode">foreslå, udvikle eller bidrage<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> til nye mønstre og komponenter eller forbedringer af eksisterende.
+Mangler der noget på listen? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" >Opret et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
 
 Her er en liste over komponenter, mønstre og opdateringer, der aktuelt findes i Det Fælles Designsystems backlog.
 
