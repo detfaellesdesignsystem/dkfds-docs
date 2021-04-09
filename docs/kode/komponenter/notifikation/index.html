@@ -3200,15 +3200,26 @@
 
 <p>Kopiér ovenstående kode for at indsætte én notifikation.</p>
 
+<p>Bemærk at ovenstående har class <code>show</code> som default. Der følger en animation med når en notifikation vises, som kommer ved at man ændrer klasserne  i følgende flow:</p>
+<ul>
+  <li><code>hide</code></li>
+  <li><code>showing</code></li>
+  <li><code>show</code></li>
+</ul>
+
+<p>Ved at bruge nedenstående javascript vil dette komme ud af boksen. Men bemærk at en notifikation bør have class <code>hide</code> fra start.</p>
+
 <h3>Javascript</h3>
 <p>Der medfølger Javascript til komponenten, som man kan vælge at bruge.</p>
 
 <h4>Vis</h4>
+<p>Når en notifikation vises ændres class fra <code>hide</code> til <code>showing</code> og til sidst <code>show</code>.</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let toast = new DKFDS.Toast(document.getElementById(&#39;TOAST-ID&#39;));
 toast.show();</code></pre></figure>
 
 <h3>Skjul</h3>
+<p>Når en notifikation skjules ændre <code>show</code> til <code>hide</code>.</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let toast = new DKFDS.Toast(document.getElementById(&#39;TOAST-ID&#39;));
 toast.hide();</code></pre></figure>

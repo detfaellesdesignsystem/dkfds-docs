@@ -34,18 +34,29 @@ subnav:
 
 {% include code/syntax.html component="notification-info" %}
 
-Kopiér ovenstående kode for at indsætte én notifikation. 
+Kopiér ovenstående kode for at indsætte én notifikation.
+
+Bemærk at ovenstående har class `show` som default. Der følger en animation med når en notifikation vises, som kommer ved at man ændrer klasserne  i følgende flow:
+- `hide`
+- `showing`
+- `show`
+
+Ved at bruge nedenstående javascript vil dette komme ud af boksen. Men bemærk at en notifikation bør have class `hide` fra start.
 
 ### Javascript
 Der medfølger Javascript til komponenten, som man kan vælge at bruge. 
 
 #### Vis
+Når en notifikation vises ændres class fra `hide` til `showing` og til sidst `show`.
+
 {% highlight javascript %}
 let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
 toast.show();
 {% endhighlight %}
 
 ### Skjul
+Når en notifikation skjules ændre `show` til `hide`.
+
 {% highlight javascript %}
 let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
 toast.hide();
