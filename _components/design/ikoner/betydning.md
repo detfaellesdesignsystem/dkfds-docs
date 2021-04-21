@@ -294,7 +294,7 @@ subnav: []
           {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling nummerisk" %}
           {% include icon.html icon="format-indent-increase" keywords="" label="Indryk højre" %}
           {% include icon.html icon="format-indent-decrease" keywords="" label="Indryk venstre" %}
-          {% include icon.html icon="format-align-left" keywords="" label="Vensrestil tekst" %}
+          {% include icon.html icon="format-align-left" keywords="" label="Venstrestil tekst" %}
           {% include icon.html icon="format-align-center" keywords="" label="Centreret tekst" %}
           {% include icon.html icon="format-align-right" keywords="" label="Højrestillet tekst" %}
           {% include icon.html icon="format-align-justify" keywords="" label="Lige marginer" %}

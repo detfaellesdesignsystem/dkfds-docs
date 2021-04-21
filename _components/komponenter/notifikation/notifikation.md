@@ -6,7 +6,7 @@ title: Notifikation (Toast)
 category: Komponenter_category
 subcategory: Komponenter
 description: 
-lead: Notifkationer bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l. 
+lead: Notifikationer bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l. 
 component: notification
 componentTitle: Eksempel på notifikation
 componentCode: "/kode/komponenter/notifikation/"
