@@ -46,10 +46,14 @@ Design_category:
   categorynav: 'Typografi_category'
 - href: /design/borders/
 - href: /design/ikoner/
+  categorynav: 'Icon_category'
 - href: /design/logoer/
 - href: /design/layout/
   categorynav: 'Layout_category'
 - href: /design/designressourcer/
+
+Icon_category:
+  - href: /design/ikoner/ikoner-og-deres-betydning/
 
 Layout_category:
   - href: /design/layout/grid/
@@ -90,6 +94,7 @@ Komponenter_category:
   - href: /komponenter/headers/
   - href: /komponenter/knapper/
   - href: /komponenter/modal/
+  - href: /komponenter/notifikation/
   - href: /komponenter/overflowmenu/
   - href: /komponenter/radioknap/
   - href: /komponenter/sidenav/
@@ -142,6 +147,7 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/headers/
 - href: /kode/komponenter/knapper/
 - href: /kode/komponenter/modal/
+- href: /kode/komponenter/notifikation/
 - href: /kode/komponenter/overflowmenu/
 - href: /kode/komponenter/radioknap/
 - href: /kode/komponenter/sidenav/
@@ -168,6 +174,7 @@ Faellesskab_category:
     categorynav: 'Samarbejdsforum_category'
   - href: /faellesskab/nyhedsmail/
   - href: /faellesskab/kontakt-support/
+  - href: /faellesskab/roadmap/
   - href: /faellesskab/releases/
 
 Samarbejdsforum_category:

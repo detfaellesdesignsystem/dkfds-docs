@@ -11,10 +11,19 @@ document.addEventListener("DOMContentLoaded", function() {
     languageSwitcher();
 // Handler when the DOM is fully loaded
     DKFDS.init();
+    
 
     let path = window.location.pathname.split('/');
     if(path.indexOf('mastertest') !== -1){
         new TestFDS(DKFDS);
+    }
+    toastExample();
+    
+    let icons = document.getElementsByClassName('icon-box');
+    if(icons.length !== 0){
+        for(let i = 0; i < icons.length; i++){
+            new DKFDS.Tooltip(icons[i].getElementsByTagName('p')[0]);
+        }
     }
 
     let searchForm = document.getElementById('search-form');
@@ -29,8 +38,50 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, false);
     }
-
 });
+
+function toastExample(){
+    let button = document.getElementById('toast-example-button');
+    if(button !== null){
+        let toastContainer = document.createElement('div');
+        toastContainer.classList.add('toast-container');
+        document.body.appendChild(toastContainer);
+
+        button.addEventListener('click', function(){
+            let type = ["info", "warning", "error", "success"];
+            let headings = ["Du har fået en besked", "Dette er en advarsel", "Der opstod en fejl", "Din ansøgning er afsendt"];
+            let randomType = Math.floor(Math.random() * type.length);
+            let toastContainerEl = document.getElementsByClassName('toast-container')[0];
+            let toastEl = document.createElement('div');
+            toastEl.classList.add('toast', 'toast-'+type[randomType], 'hide');
+            toastEl.setAttribute('role', "status");
+            let icon = document.createElement('div');
+            icon.classList.add('toast-icon');
+            toastEl.appendChild(icon);
+            let message = document.createElement('div');
+            message.classList.add('toast-message');
+            let heading = document.createElement('p');
+            heading.classList.add('bold');
+            heading.innerText = headings[randomType];
+            message.appendChild(heading);
+            let close = document.createElement('button');
+            close.classList.add('toast-close');
+            close.innerText = "Luk";
+            message.appendChild(close);
+            let content = document.createElement('p');
+            content.innerText = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.";
+            message.appendChild(content);
+            toastEl.appendChild(message);
+            toastContainerEl.appendChild(toastEl);
+            requestAnimationFrame(showtoast);
+        });
+    }
+}
+
+function showtoast(){
+    new DKFDS.Toast(document.getElementsByClassName('toast-container')[0].getElementsByClassName('hide')[0]).show();
+}
+
 
 function languageSwitcher(){
 
@@ -52,7 +103,7 @@ function languageSwitcher(){
                 svg.setAttribute('focusable', 'false');
                 svg.setAttribute('aria-hidden', 'true');
                 let use = document.createElementNS(svgns, "use");
-                use.setAttributeNS(xlinkns, "href", "#check");
+                use.setAttributeNS(xlinkns, "href", "#done");
                 svg.appendChild(use);
                 chosenLang.prepend(svg);
                 ul.prepend(chosenLang.parentNode);

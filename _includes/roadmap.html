@@ -1,0 +1,18 @@
+<tr>
+    <td>
+        {% if include.link %}<a href="{{ include.link }}" class="icon-link">{% endif %}{{ include.title }}{% if include.link %}{% if include.link contains "http" %}<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>{% endif %}</a>{% endif %}
+    </td>
+    <td class="align-text-md-right">
+        {% if include.status == "Foreslået" %}
+        <span class="small-text uppercase weight-semibold">Foreslået</span>
+        {% elsif include.status == "Planlagt" %}
+        <span class="badge badge-small badge-info">Planlagt</span>
+        {% elsif include.status == "I gang" %}
+        <span class="badge badge-small badge-warning">I gang</span>
+        {% elsif include.status == "Gennemført"%}
+        <span class="badge badge-small badge-success">Gennemført</span>
+        {% elsif include.status == "Annulleret"%}
+        <span class="badge badge-small badge-error">Annulleret/afvist</span>
+        {% endif %}
+    </td>
+</tr>

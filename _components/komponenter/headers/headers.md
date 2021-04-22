@@ -26,7 +26,7 @@ subnav:
 
 Brug headeren til at give brugen et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen. 
 
-Brug headeren til at kommmunikere portal, NemLog-in-oplysninger, ansvarlig myndighed, evt. med kontaktoplysninger.
+Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed, evt. med kontaktoplysninger.
 
 En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.
 

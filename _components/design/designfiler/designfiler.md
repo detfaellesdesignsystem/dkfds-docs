@@ -15,7 +15,7 @@ tags:
 
 Dit fokus, som designer af en selvbetjeningsløsning, bør være på brugervenlighed og brugernes effektivitet igennem selvbetjeningsløsningen, ikke på personligt at “shine” ved brug af “krom” og tidens trends.
 
-## Figma, Sketch og SVG
+## Figma og SVG
 
 Du er velkommen til at bidrage med flere designressourcer eller med opdateringer af eksisterende filer.
 

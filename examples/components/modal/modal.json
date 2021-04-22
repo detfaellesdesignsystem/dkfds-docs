@@ -7,7 +7,7 @@
     "actions": "<button class=\"button button-primary\">Primærknap</button><button class=\"button button-secondary\" data-modal-close>Luk</button>"
   },
   "button_example": {
-    "text": "Gem",
+    "text": "Åbn modal",
     "class": "primary",
     "attribute": "data-module=\"modal\" data-target=\"modal-example\""
   }

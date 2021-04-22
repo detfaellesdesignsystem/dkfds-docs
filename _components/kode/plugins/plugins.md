@@ -19,7 +19,6 @@ eventuelle afhængigheder, der følger med pluginnet.
 Bruger du et plugin skal de styles, så de visuelt passer ind i designsystemet. Der er 
 stylingeksempler under Komponenter: 
 
-- <a href="/komponenter/dato-felt/#datovælger">Datovælger</a>
 - <a href="/komponenter/drop-down/#multiselect-og-søgning">Drop down med multiselect og søgefunktion</a>
 - <a href="/komponenter/tables/#avancerede-tabeller">Avancerede tabeller</a>
 

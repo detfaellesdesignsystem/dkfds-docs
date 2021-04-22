@@ -103,10 +103,10 @@ module.exports = function (outputPath, prod) {
     plugins: [
       new CopyWebpackPlugin(
           [
-              {//copies all content from /img to /assets/img
-                  from: "./img/**/*",
-                  to: "" // i assets
-              }
+            {//copies all content from /img to /assets/img
+                from: "./img/**/*",
+                to: "" // i assets
+            }
           ]),
       new MiniCssExtractPlugin(
         {

@@ -33,8 +33,12 @@ Modalvinduer anvendes i begrænset omfang, da de kan øge løsningens kognitive 
 
 Undgå modalvinduer på mobile løsninger og visninger, da de ikke fungerer godt for brugeren.
 
+Undgå at have formularer inde i en modal. Særligt hvis det er en formular med mere end ét felt. I sådan et tilfælde bør man overveje at dele siden op, så indholdet strækker sig over flere sider.
+
 {:.h3}
 ## Vejledning
+
+Undgå at have flere åbne modaler på siden - det giver en dårligere brugeroplevelse og kan resultere i at brugeren mister fornemmelsen af, hvor de er på siden.
 
 Modalvinduet skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
