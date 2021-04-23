@@ -51,18 +51,6 @@ Sagerne kan være:
 </table>
 
 {:.h3 .mb-md-0}
-## Mønstre
-<table class="table table--borderless table--compact table-sm-responsive-headers">
-    <thead>
-    <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
-    </thead>
-    <tbody>
-        {% include roadmap.html title="Internationale adresser og postnumre" status="Planlagt" %}
-        {% include roadmap.html title="Internationalt telefonnummer" status="Planlagt" %}
-    </tbody>
-</table>
-
-{:.h3 .mb-md-0}
 ## Andet
 <table class="table table--borderless table--compact table-sm-responsive-headers">
     <thead>
