@@ -1,0 +1,23 @@
+{
+    "data": {
+        "id": "toggle-example",
+        "value": 1,
+        "name": "toggle-example",
+        "text": "Dette er en toggle"
+    },
+    "data2": {
+        "id": "toggle-example2",
+        "value": 1,
+        "name": "toggle-example2",
+        "text": "Dette er en disabled toggle",
+        "disabled": true
+    },
+    "data3": {
+        "id": "toggle-example3",
+        "value": 1,
+        "name": "toggle-example3",
+        "text": "Dette er en disabled toggle der er aktiveret",
+        "disabled": true,
+        "checked": true
+    }
+}

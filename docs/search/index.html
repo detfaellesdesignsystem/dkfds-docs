@@ -1099,6 +1099,22 @@
 
     
 
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/toggle/" role="menuitem" 
+  class="nav-link">
+  Toggle switch
+</a>
+
+</li>
+
+    
+
+    
+
 <li class="  has-anchor-links" role="none">
 
 
@@ -1711,7 +1727,7 @@
 <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
 <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
 <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-<li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText"></span></a></li>
+<li><button class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift tema</span></button></li>
 </ul>
 </div>
 </div>
@@ -2984,6 +3000,24 @@ let searchIndex = [
 "content" : "Anvendes tilTjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste.Når brugeren skal have overblik over sine mulige valg.Når brugeren skal be- eller afkræfte et valg, fx ”Ja/Nej” (i det tilfælde en enkelt tjekboks), eller slå noget til eller fra (toggle).Når listen over mulige valg kan være på en mobilvisning.Anvendes ikke tilNår der er for mange valg til at give mening på en mobilvisning.Når brugeren kun kan vælge én værdi. Her skal du i stedet anvende radioknapper.VejledningBrugeren skal kunne tappe eller klikke på tjekboksen eller dens label for at vælge eller fravælge dens værdi.Du bør opstille lister med tjekbokse i lodret linje af hensyn til brugerens læseretning.Anvend et positivt sprog til værdierne. I stedet for fx ”Jeg vil ikke modtage bekræftelse på email” bør du skrive ”Jeg vil gerne modtage bekræftelse på email”.Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er brugbar på touchskærme.                        Sådan (do)                        Sådan: Brug tjekbokse, når der kan vælges flere svar i samme liste (ISO, 2012, afsnit 8.11).                Ikke sådan (don&#39;t)                        Ikke sådan: Brug ikke tjekbokse, når der kun kan vælges 1 svar blandt gensidigt udelukkende svarmuligheder. Undgå at bryde konventioner og visuelle standardvisninger (Nielsen, 2004).        Referencer  ISO 9241-143: Forms (2012)  Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)  Fejlmeddelelse                              Åbn dette eksempel i et nyt vindue: checkbox-error                                        Tjekboks med fejl        Fejl: Hjælpsom fejlmeddelelse                                                    Tjekboks 1                                                        Tjekboks 2                                                        Tjekboks 3                                      Lille tjekboks                              Åbn dette eksempel i et nyt vindue: checkbox-small                                        Lille tjekboks                                                    Tjekboks 1                                                        Tjekboks 2                                                        Tjekboks 3                                                        Tjekboks 4                                      Skjult indhold (Collapse)                              Åbn dette eksempel i et nyt vindue: checkbox-collapse                                    Tjekboks viser indhold                        Dette indhold bliver vist når tjekboksen er valgt.                        ",
 "description" : "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste.",
 "subnav": ["Fejlmeddelelse","Lille tjekboks","Skjult indhold (Collapse)",""]
+},
+
+
+
+
+
+
+{
+"url": "/komponenter/toggle/",
+"title": "Toggle switch",
+"category": "Komponenter_category",
+"subcategory": "Komponenter",
+"lead": "",
+"tags": ['switch'],
+"layout": "styleguide",
+"content" : "En toggle switch er en digital tænd/sluk-knap. Til forskel fra en radioknap eller tjekboks træder valget i kraft i det øjeblik brugerne interagerer med komponenten.Anvendes tilEn toggle switch bruges hvis der kan vælges mellem to modsatrettede tilstande.Det forventes af denne type komponent at brugernes skiftevalg træder i kraft med det samme.Anvendes ikke tilHvis der er flere valgmuligheder og multiple valgmuligheder, eller hvis valget først træder i kraft efter klik på en gem-knap, skal du vælge radioknapper eller tjekbokse.VejledningFor at gøre komponenten mere tilgængelig anbefaler vi, at du ud over en sigende label også har en etiket på selve switchen.Interaktion med en toggle switch skal have øjeblikkelig virkning og må IKKE først opnåes efter klik på fx “Gem-knap”.Sørg for at brugen af toggle switch implementeres konsekvent i en løsning.",
+"description" : "",
+"subnav": [""]
 },
 
 
