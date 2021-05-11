@@ -3,7 +3,7 @@
     {
       "col_size_desktop": 3,
       "text_align_right": false,
-      "content": "<h1 class=\"h5 mb-4\">Ansvarlig myndighed</h1>",
+      "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2>",
       "lists": [
         {
           "inline_list": false,
@@ -18,7 +18,7 @@
     {
       "col_size_desktop": 3,
       "text_align_right": false,
-      "content": "<h1 class=\"h5 mb-4\">Kontakt</h1>",
+      "content": "<h2 class=\"h5 mb-4\">Kontakt</h2>",
       "lists": [
         {
           "inline_list": false,
@@ -34,7 +34,7 @@
       "col_size_desktop": 3,
       "class": "d-print-none",
       "text_align_right": false,
-      "content": "<h1 class=\"h5 mb-4\">Links</h1>",
+      "content": "<h2 class=\"h5 mb-4\">Links</h2>",
       "lists": [
         {
           "inline_list": false,
