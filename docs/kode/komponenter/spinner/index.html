@@ -3098,6 +3098,7 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         <div class="spinner"></div>
+<div class="spinner-status" role="status">Arbejder</div>
     </div>
     
 </div>
@@ -3116,7 +3117,8 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;spinner-status&quot; role=&quot;status&quot;&gt;Arbejder&lt;/div&gt;</code></pre></figure>
 
 
     </div>
@@ -3124,7 +3126,12 @@
 
 <p>For at ændre spinnerens størrelse kan <code>font-size</code> gøres større eller mindre.</p>
 
+<p>Hvis dele af siden ændres, når spinneren er færdig, tilføj da de korrekte attributter til området, så brugere af hjælpeteknologier får besked om ændringen. Undersøg de korrekte værdier, der passer til løsningen for attributterne <code>aria-live</code> og <code>aria-atomic</code>.</p>
+
 <p>Anvend ARIA attributten <code>aria-busy="true"</code> på elementet, der er igang med at blive opdateret til at markere for skærmlæsere, at der er en live region i gang med indlæsning og sæt værdien til <code>false</code>, når den er indlæst.</p>
+
+<h3>Javascript</h3>
+<p>Der medfølger ikke funktionalitet med denne komponent. Man skal derfor selv i løsningen implementere opdateringen af statusmeddelelsen som ventetiden forlænges.</p>
 
       </section>
     </main>
@@ -3156,7 +3163,7 @@
                 <div class="col-12 col-sm-12 col-md-6 footer-col ">
                     <section>
                         <h2 class="h5 mb-4">Mangler vi noget?</h2>
-                        <p>Hjælp os med at gøre Det Fælles Designsystem endnu bedre ved at gøre os opmærksom på dine udfordringer og ønsker.<a href="/faellesskab/samarbejdsforum/" class="function-link">Læs mere om, hvordan du kan bidrage</a></p>
+                        <p>Hjælp os med at gøre Det Fælles Designsystem endnu bedre ved at gøre os opmærksom på dine udfordringer og ønsker.</p>
                         <ul class="mt-4 nobullet-list">
                             <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" class="function-link icon-link">Opret et “issue” (en sag) på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
                             <li><a  href="mailto:FDS@erst.dk" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>Send en mail til FDS-teamet</a></li>

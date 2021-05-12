@@ -2355,6 +2355,7 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         <div class="spinner"></div>
+<div class="spinner-status" role="status">Arbejder</div>
     </div>
     
     <div class="component-code-link px-4 py-4">
@@ -2380,7 +2381,29 @@
 
 <p>En spinner skal ikke anvendes til kompensation for en permanent langsom performance.</p>
 
-<p>En spinner bør ikke køre mere end 5-10 sekunder før brugeren gøres opmærksom på, at der må forventes lidt ventetid.</p>
+<h3>Eksempler på beskeder</h3>
+
+<p>Nedenstående tider og beskeder er vejledende og kan tilpasses så det passer bedre til løsningen. Det samme gælder time-out, der skal sættes så den afspejler løsningen.</p>
+
+<h4 class="h5">Beskeder på spinner med kort svartid</h4>
+<ul>
+  <li>0 sekunder: “Arbejder”</li>
+  <li>5 sekunder: “Arbejder stadig”</li>
+  <li>11 sekunder: “Det tager længere end forventet, beklager”</li>
+  <li>18 sekunder: “Vi er stadig i gang, undskyld ventetiden”</li>
+  <li>Efter 25 sekunder bør løsningen time-out og sende brugeren videre til en undskyldende fejlside - denne bør vi også have et eksempel på - i eksemplet på komponentsiden skal dette dog ikke ske, her skal spinneren starte forfra.</li>
+</ul>
+
+<h3 class="h5">Beskeder på spinner med forventet lang svartid</h3>
+<p>Er der tale om en service, hvor man fra start af ved at det tager flere minutter skal den første besked afspejle det, her illustreret ved en løsning der tager 3-5 minutter:</p>
+
+<ul>
+  <li>0 sekunder: “Det tager 3-5 minutter, hav tålmodighed”</li>
+  <li>5 minutter: “Nu burde der ikke gå meget længere”</li>
+  <li>5:30 minutter: “Det tager længere end forventet, beklager”</li>
+  <li>6 minutter: “Vi er stadig i gang, undskyld ventetiden”</li>
+  <li>6:30 minutter: time-out og send til undskyldende fejlside</li>
+</ul>
 
       </section>
     </main>
@@ -2412,7 +2435,7 @@
                 <div class="col-12 col-sm-12 col-md-6 footer-col ">
                     <section>
                         <h2 class="h5 mb-4">Mangler vi noget?</h2>
-                        <p>Hjælp os med at gøre Det Fælles Designsystem endnu bedre ved at gøre os opmærksom på dine udfordringer og ønsker.<a href="/faellesskab/samarbejdsforum/" class="function-link">Læs mere om, hvordan du kan bidrage</a></p>
+                        <p>Hjælp os med at gøre Det Fælles Designsystem endnu bedre ved at gøre os opmærksom på dine udfordringer og ønsker.</p>
                         <ul class="mt-4 nobullet-list">
                             <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" class="function-link icon-link">Opret et “issue” (en sag) på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
                             <li><a  href="mailto:FDS@erst.dk" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>Send en mail til FDS-teamet</a></li>
