@@ -1,6 +1,6 @@
 ---
 permalink: /kode/komponenter/tooltip/
-title: Tooltip og popover
+title: Tooltip
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
@@ -10,10 +10,14 @@ category: Kode_category
 subcategory: Kode
 anchor: true
 subnav:
+- text: Sletknap
+  href: "#sletknap-med-tooltip"
+- text: Tekst
+  href: "#tekst-med-tooltip"
+- text: Knap med tooltip
+  href: "#knap-med-tooltip"
 - text: Placering
-  href: '#placering-af-tooltip' 
-- text: Ikon med popover
-  href: '#ikon-med-popover' 
+  href: "#placering-af-tooltip"
 ---
 
 {% include code/preview-box.html component="tooltip-icon" title="Eksempel på tooltip" %}
@@ -30,15 +34,6 @@ subnav:
 
 {% include code/syntax.html component="tooltip-icon" %}
 
-Du bør opdatere følgende attributter til din løsning ved almindeligt tooltip:
-
-- `data-tooltip`: Din tooltip-tekst
-
-- Tooltip og popovers skal kunne lukkes med escape tasten på tastaturet.
-- Fokus skal blive på det element, der aktiverede tooltip eller popover.
-- Brug aria-describedby på elementet der udløser tooltip eller popover.
-- Tooltips skal både vises, ved markering med mus og tastatur.
-
 ### Javascript
 Tooltip komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
@@ -48,16 +43,30 @@ new DKFDS.Tooltip(document.getElementById('Tooltip-ID'));
 
 ## Varianter
 
+{:#infoknap-med-tooltip}
+### Infoknap med tooltip
+{% include code/syntax.html component="tooltip-icon" link="true" %}
+
+Tooltip på infoknappen aktiveres ved hover, fokus af knappen eller klik.
+
+{:#sletknap-med-tooltip}
+### Sletknap med tooltip
+{% include code/syntax.html component="tooltip-delete" link="true" %}
+
+Tooltip på sletknappen aktiveres ved hover eller fokus af knappen. Tooltip kan ikke aktiveres ved klik på knappen, da den allerede har anden funktion.
+
+{:#tekst-med-tooltip}
+### Tekst med tooltip
+{% include code/syntax.html component="tooltip-text" link="true" %}
+
+Tooltip i teksten aktiveres ved hover, fokus af knappen eller klik.
+
+{:#knap-med-tooltip}
+### knap med tooltip
+{% include code/syntax.html component="tooltip-button" link="true" %}
+
+Tooltip i teksten aktiveres ved hover og fokus af knappen.
+
 {:#placering-af-tooltip}
 ### Placering af tooltip
 {% include code/syntax.html component="tooltip-position" link="true" %}
-
-{:#ikon-med-popover}
-### Ikon med popover (kræver tryk)
-{% include code/syntax.html component="popover-icon" link="true" %}
-
-Du bør opdatere følgende attributter til din løsning ved almindeligt tooltip:
-
-- `data-tooltip`: Din tooltip-tekst
-- `data-tooltip-trigger`: Hvis dit tooltip skal reagere kun ved klik, så skal denne sættes til `click`
-- `aria-label`: For at forklare, at brugeren skal aktivere knappen, for at få teksten
