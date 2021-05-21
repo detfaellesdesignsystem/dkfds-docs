@@ -181,7 +181,7 @@ subnav:
 
 
 <!-- Løsning 8: Opgaveliste -->
-<h2 id="solution-7">Løsning 8: Opgaveliste</h2>
+<h2 id="solution-8">Løsning 8: Opgaveliste</h2>
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
     <a href="{{ site.baseurl }}/pages/eksempler/opgaveliste/" title="Opgaveliste" class="screenshot d-block"></a>

@@ -1,0 +1,126 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+
+
+{% block header %}
+  <header class="header">
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+    <div class="overlay"></div>
+    <nav class=" nav"> <!-- collapsible-->
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+
+      <div class="portal-info-mobile">
+        <p class="user bold">Navn</p>
+        {# <p class="mt-0">Københavns Urmager Værksted v/Martin Elsig</p> #}
+        <a href="#" class="button button-secondary button-signout">
+          Log af
+        </a>
+      </div>
+
+      <div class="solution-info-mobile">
+        <p class="bold">Erhvervsministeriet</p>
+        <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+      </div>
+
+    </nav> <!-- collapsible nav end-->
+  </header>
+{% endblock %}
+
+
+{% block body %}
+<main class="container page-container">
+    
+    <h1>Opgaveliste</h1>  
+
+    <h2 class="h3 mb-md-0">1. Check før du starter</h2>
+    <table class="table table--borderless table--compact table-sm-responsive-headers w-percent-60">
+        <thead>
+            <tr>
+                <th><span class="sr-only">Opgave</span></th>
+                <th><span class="sr-only">Status</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="#">Check berettigelse</a>
+                </td>
+                <td class="align-text-md-right">
+                    <span class="badge badge-small">Fuldført</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Læs deklarationen</a>
+                </td>
+                <td class="align-text-md-right">
+                    <span class="badge badge-small">Fuldført</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2 class="h3 mb-md-0">2. Forbered ansøgning</h2>
+    <table class="table table--borderless table--compact table-sm-responsive-headers w-percent-60">
+        <thead>
+            <tr>
+                <th><span class="sr-only">Opgave</span></th>
+                <th><span class="sr-only">Status</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="#">Virksomhedsoplysninger</a>
+                </td>
+                <td class="align-text-md-right">
+                    <span class="badge badge-small">Fuldført</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Kontaktoplysninger</a>
+                </td>
+                <td class="align-text-md-right">
+                    <span class="badge badge-small">Fuldført</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Liste over domfældelser</a>
+                </td>
+                <td class="align-text-md-right">
+                    <span class="badge badge-small">ikke fuldført</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Fremsæt finansielle beviser</a>
+                </td>
+                <td class="align-text-md-right">
+                    <span class="badge badge-small">Ikke fuldført</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Giv medicinoplysninger</a>
+                </td>
+                <td class="align-text-md-right">
+                    <span class="badge badge-small">Fuldført</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+{% endblock %}
+
+{% block footer -%}
+  {{ footer_simple(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}
