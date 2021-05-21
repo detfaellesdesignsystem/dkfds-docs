@@ -14,7 +14,7 @@ subnav:
   href: "#ikon-med-tooltip"
 - text: Tekst
   href: "#tekst-med-tooltip"
-- text: Knap med tooltip
+- text: Knap
   href: "#knap-med-tooltip"
 - text: Placering
   href: "#placering-af-tooltip"
