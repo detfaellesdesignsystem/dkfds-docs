@@ -10,8 +10,8 @@ category: Kode_category
 subcategory: Kode
 anchor: true
 subnav:
-- text: Sletknap
-  href: "#sletknap-med-tooltip"
+- text: Ikon
+  href: "#ikon-med-tooltip"
 - text: Tekst
   href: "#tekst-med-tooltip"
 - text: Knap med tooltip
@@ -43,17 +43,14 @@ new DKFDS.Tooltip(document.getElementById('Tooltip-ID'));
 
 ## Varianter
 
-{:#infoknap-med-tooltip}
-### Infoknap med tooltip
-{% include code/syntax.html component="tooltip-icon" link="true" %}
-
-Tooltip på infoknappen aktiveres ved hover, fokus af knappen eller klik.
-
-{:#sletknap-med-tooltip}
-### Sletknap med tooltip
+{:#ikon-med-tooltip}
+### Ikon med tooltip
 {% include code/syntax.html component="tooltip-delete" link="true" %}
 
-Tooltip på sletknappen aktiveres ved hover eller fokus af knappen. Tooltip kan ikke aktiveres ved klik på knappen, da den allerede har anden funktion.
+Tooltip på knappen aktiveres ved hover eller fokus af knappen. Ikonet kan ændres så det svarer til knappens funktion.
+
+Tooltip aktiveres som standard med hover og fokus på knappen, men i visse situationer (fx hvor ikonets motiv er et spørgsmål og hvor der ikke er anden funktion på knappen) kan man sætte tooltip til også at aktivere ved klik.
+Tilføj attributten `data-tooltip-trigger="click"` på knappen for at tilføje visning af tooltip ved klik. 
 
 {:#tekst-med-tooltip}
 ### Tekst med tooltip
@@ -62,7 +59,7 @@ Tooltip på sletknappen aktiveres ved hover eller fokus af knappen. Tooltip kan 
 Tooltip i teksten aktiveres ved hover, fokus af knappen eller klik.
 
 {:#knap-med-tooltip}
-### knap med tooltip
+### Knap med tooltip
 {% include code/syntax.html component="tooltip-button" link="true" %}
 
 Tooltip i teksten aktiveres ved hover og fokus af knappen.

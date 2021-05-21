@@ -11,8 +11,8 @@ lead: Et tooltip kommer frem, når musen er over det element tooltippet henviser
 tags: 
 anchor: true
 subnav:
-- text: Sletknap
-  href: "#sletknap-med-tooltip"
+- text: Ikon
+  href: "#ikon-med-tooltip"
 - text: Tekst
   href: "#tekst-med-tooltip"
 - text: Knap med tooltip

@@ -21,6 +21,8 @@ subnav:
   href: '#solution-6'
 - text: 'Løsning 7: Sager hos AES'
   href: '#solution-7'
+- text: 'Løsning 8: Opgaveliste'
+  href: '#solution-8'
 ---
 
 <!-- Løsning 1: Aktindsigt -->
@@ -175,5 +177,16 @@ subnav:
   </div>
 </div>
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/aes/oversigt/">Demo Sager hos AES</a>
+
+
+
+<!-- Løsning 8: Opgaveliste -->
+<h2 id="solution-7">Løsning 8: Opgaveliste</h2>
+<div class="row screenshot-gallery d-none">
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
+    <a href="{{ site.baseurl }}/pages/eksempler/opgaveliste/" title="Opgaveliste" class="screenshot d-block"></a>
+  </div>
+</div>
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/opgaveliste/">Demo Opgaveliste</a>
 
 
