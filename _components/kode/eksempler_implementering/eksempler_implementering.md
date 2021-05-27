@@ -20,7 +20,7 @@ Nedenstående eksempler på implementering er indsendt af løsninger, som har im
 ## Mangler der et framework?
 FDS er bygget efter et vanilla-princip, som betyder at koden i FDS er så simpel og standard som overhovedet muligt. Det betyder yderligere at FDS ikke stiller krav til løsningers framework og giver derved kodefrihed. Mangler der et eksempel på implementering af dit framework betyder det derfor blot, at vi ikke har modtaget et eksempel på implementering af FDS i lige det framework. Vi efterspørger hele tiden eksempler på implementering så vi kan få udvidet listen over eksempler og derved hjælpe nye løsninger hurtigere igang.
 
-Nye eksempler på implementering af FDS i andre frameworks kan sendes til FDS-teamet ved at <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" class="icon-link">oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> eller <a href="mailto:fds@erst.dk">sende en mail til FDS@erst.dk</a>
+Nye eksempler på implementering af FDS i andre frameworks kan sendes til FDS-teamet ved at <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" class="icon-link">oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> eller <a href="mailto:fds@erst.dk">via mail til FDS@erst.dk</a>
 
 {:.h4}
 ## Har du ændringer?
