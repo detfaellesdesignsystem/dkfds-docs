@@ -20,7 +20,7 @@
       "lists": [
         {
           "inline_list": false,
-          "listclass": "mt-0 nobullet-list",
+          "listclass": "mt-0 nobullet-list mb-0",
           "listitems": [
             {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"},
             {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"}
@@ -36,7 +36,7 @@
       "lists": [
         {
           "inline_list": false,
-          "listclass": "mt-0 nobullet-list",
+          "listclass": "mt-0 nobullet-list mb-0",
           "listitems": [
             {"content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"},
             {"content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"}
