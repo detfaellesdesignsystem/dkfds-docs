@@ -1,7 +1,7 @@
 ---
-title: Ikon med tooltip
+title: Klikbart ikon med tooltip
 parent: Tooltip
 order: 10
 component: tooltip-delete
-componentTitle: "Eksempel på ikon med tooltip"
+componentTitle: "Eksempel på klikbart ikon med tooltip"
 ---

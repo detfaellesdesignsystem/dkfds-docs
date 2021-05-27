@@ -10,8 +10,8 @@ category: Kode_category
 subcategory: Kode
 anchor: true
 subnav:
-- text: Ikon
-  href: "#ikon-med-tooltip"
+- text: Klikbart ikon
+  href: "#klikbart-ikon-med-tooltip"
 - text: Tekst
   href: "#tekst-med-tooltip"
 - text: Knap
@@ -43,8 +43,8 @@ new DKFDS.Tooltip(document.getElementById('Tooltip-ID'));
 
 ## Varianter
 
-{:#ikon-med-tooltip}
-### Ikon med tooltip
+{:#klikbart-ikon-med-tooltip}
+### Klikbart ikon med tooltip
 {% include code/syntax.html component="tooltip-delete" link="true" %}
 
 Tooltip på knappen aktiveres ved hover eller fokus af knappen. Ikonet kan ændres så det svarer til knappens funktion.
