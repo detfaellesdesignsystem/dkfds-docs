@@ -12,8 +12,19 @@ subcategory: Kode
 alerts:
 - type: warning
   content: Eksemplerne på implementering af DKFDS på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
-lead: "Vi tager gerne i mod rettelser og tilføjelser til beskrivelserne på denne side, da brugerne gerne selv er "
 ---
+
+Nedenstående eksempler på implementering er indsendt af løsninger, som har implementeret FDS i deres framework. Vi gør opmærksom på, at FDS-teamet kan ikke tilbyde support af nedenstående frameworks.
+
+{:.h4}
+## Mangler der et framework?
+FDS er bygget efter et vanilla-princip, som betyder at koden i FDS er så simpel og standard som overhovedet muligt. Det betyder yderligere at FDS ikke stiller krav til løsningers framework og giver derved kodefrihed. Mangler der et eksempel på implementering af dit framework betyder det derfor blot, at vi ikke har modtaget et eksempel på implementering af FDS i lige det framework. Vi efterspørger hele tiden eksempler på implementering så vi kan få udvidet listen over eksempler og derved hjælpe nye løsninger hurtigere igang.
+
+Nye eksempler på implementering af FDS i andre frameworks kan sendes til FDS-teamet ved at <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" class="icon-link">oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> eller <a href="mailto:fds@erst.dk">sende en mail til FDS@erst.dk</a>
+
+{:.h4}
+## Har du ændringer?
+Har du tilføjelser eller ændringer til eksisterende eksempler på implementering er du mere end velkommen til at kontakte os ved at <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" class="icon-link">oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> eller <a href="mailto:fds@erst.dk">sende en mail til FDS@erst.dk</a>
 
 ## Angular
 
