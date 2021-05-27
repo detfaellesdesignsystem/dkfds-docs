@@ -23,8 +23,8 @@ subnav:
   href: '#tilbage-knap'
 - text: Knap med ikon
   href: '#knap-med-ikon'
-- text: Ikon som knap
-  href: '#ikon-som-knap'
+- text: Klikbart ikon
+  href: '#klikbart-ikon'
 ---
 
 {% include code/preview-box.html component="button-primary" title="Eksempel på knap" %}
@@ -71,8 +71,8 @@ Defineres med klassen `button-quaternary`.
 ### Knap med ikon
 {% include code/syntax.html component="buttons-with-icon" %}
 
-{:#ikon-som-knap}
-### Ikon som knap
+{:#klikbart-ikon}
+### Klikbart ikon
 {% include code/syntax.html component="buttons-only-icon" %}
 
 `button-unstyled` bruges i de tilfælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx `<span class="sr-only">Slet</span>`.

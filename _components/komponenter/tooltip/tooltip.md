@@ -43,7 +43,7 @@ Vær konsistent i brugen af tooltips, så brugeren ikke skal gætte sig til, om 
 
 Gør det let at se, hvilket element tooltippet hører til.
 
-Brug altid tooltips til funktionsikoner (klikbare ikoner) uden label.
+Brug altid tooltips til <a href="/komponenter/knapper/#klikbart-ikon">klikbare ikoner</a> uden label.
 
 Sørg for at tooltips er tydelige at se og læse.
 
@@ -53,7 +53,7 @@ Sættes der tooltip på et ord i en tekst, markeres ordet med en stiplet linje u
 
 Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.
 
-Vær opmærksom på, at tooltips på klikbare elementer, fx klikbare ikoner, ikke bliver vist på mobile løsninger. Tooltips på andre elementer, fx deciderede hjælpeikoner eller markerede ord i tekststykker, vises på mobil ved klik.
+Vær opmærksom på, at tooltips på klikbare elementer med anden funktion ved klik ikke bliver vist på mobile løsninger. Tooltips på andre elementer, fx deciderede hjælpeikoner eller markerede ord i tekststykker, vises på mobil ved klik.
 
 Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).
 

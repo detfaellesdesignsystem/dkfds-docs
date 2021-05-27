@@ -1,5 +1,5 @@
 ---
-title: Ikon som knap
+title: Klikbart ikon
 parent: Buttons
 order: 70
 component: buttons-only-icon
