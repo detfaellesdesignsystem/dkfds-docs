@@ -5,8 +5,8 @@
       "work": "Forsikringens Forsikringsfirma"
     },
     "logolink": {
-      "title": "Hjem",
-      "href": "javascript:void(0);"
+      "sronly": "Portalnavn",
+      "href": "#"
     },
     "link": {
       "href": "#",
@@ -17,7 +17,6 @@
   "solution_header_data": {
     "title": {
       "href": "#",
-      "title": "Hjem",
       "text": "Løsningstitel"
     },
     "authority": {
