@@ -3,9 +3,9 @@
     {% if include.link %}
     <div class="component-link px-4 py-4">
         {% if include.url %}
-        <a href="/eksempel/{{ include.url }}/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/{{ include.url }}/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: {{ include.component }}</span></a>
         {% else %}
-        <a href="/eksempel/{{ include.component }}/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue</a>
+        <a href="/eksempel/{{ include.component }}/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: {{ include.component }}</span></a>
         {% endif %}
     </div>
     {% endif %}
