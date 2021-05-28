@@ -32,7 +32,7 @@ Hvis der er flere valgmuligheder og multiple valgmuligheder, eller hvis valget f
 
 For at gøre komponenten mere tilgængelig anbefaler vi, at du ud over en sigende label også har en etiket på selve switchen.
 
-Interaktion med en toggle switch skal have øjeblikkelig virkning og må IKKE først opnåes efter klik på fx “Gem-knap”. 
+Interaktion med en toggle switch skal have øjeblikkelig virkning og IKKE først efter klik på fx “Gem-knap”. 
 
 Sørg for at brugen af toggle switch implementeres konsekvent i en løsning.
 
