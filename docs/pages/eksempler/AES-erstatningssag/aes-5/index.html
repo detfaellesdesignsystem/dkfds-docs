@@ -414,7 +414,9 @@
         <fieldset aria-describedby="example-date-field-hint1 ">
             <legend class="form-label">Skadedato<button
                     class="js-tooltip button-unstyled"
-                    data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg></button>
+                    data-tooltip="Her står relevant uddybbende hjælpetekst."
+                    data-tooltip-trigger="click"><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg><span
+                        class="sr-only">Hvad betyder det?</span></button>
             </legend>
             <span class="form-hint" id="example-date-field-hint1">Fx. 28 04
                 1996</span>
@@ -458,9 +460,11 @@
 
     <div class="form-group">
         <label class="form-label " for="id-skadenummer">
-            Jeres sags-/skadenummer<a href="javascript:void(0)"
-                class="js-tooltip"
-                data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg></a>
+            Jeres sags-/skadenummer<button
+                class="button-unstyled js-tooltip"
+                data-tooltip="Her står relevant uddybbende hjælpetekst."
+                data-tooltip-trigger="click"><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg><span
+                    class="sr-only">Hvad betyder det?</span></button>
         </label>
 
         <input class="form-input input-width-m" id="id-skadenummer"
