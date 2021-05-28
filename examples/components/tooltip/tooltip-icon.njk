@@ -2,5 +2,5 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 
 <button class="js-tooltip button-unstyled" data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
-    {{ icon_svg('help')}}
+    {{ icon_svg('help')}}<span class="sr-only">Hvad betyder det?</span>
 </button>
