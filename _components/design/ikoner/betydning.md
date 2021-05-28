@@ -12,10 +12,6 @@ tags:
 - svg
 - svg use
 - inline svg
-redirect_from: []
-anchor: false
-subnav: []
-
 ---
 
 <details class="details js-details">
