@@ -6,7 +6,7 @@
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer-three-columns.njk" import footer_columns as footer_columns %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-
+<a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 {% block header %}
   <header class="header">
     {{ portal_header(portal_header_data) }}
@@ -41,7 +41,7 @@
 {% endblock %}
 
 {% block body %}
-<main class="container page-container pt-4 pt-lg-0">
+<main class="container page-container pt-4 pt-lg-0" id="main-content">
     <h1 id="searchlabel">Find sag</h1>
     <span class="form-hint" id="search-hint">
         Søg på CPR-nr. eller sagsnr.
@@ -52,7 +52,7 @@
 
         <button class="button button-search">Søg</button>
     </div>
-    <h3 class="h5 mb-2">Navn: Lone Hansen</h3>
+    <h2 class="h5 mb-2">Navn: Lone Hansen</h3>
     <table class="table table--zebra table--responsive-headers">
       <thead>
           <tr>

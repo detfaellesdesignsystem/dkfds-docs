@@ -1,3 +1,5 @@
+<a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+
 <header class="header">
 
     <!--1A: Portal header -->
@@ -84,7 +86,7 @@
     </nav> <!-- collapsible nav end-->
 </header>
 
-<main class="container page-container pt-4 pt-lg-0">
+<main class="container page-container pt-4 pt-lg-0" id="main-content">
     <h1 id="searchlabel">Find sag</h1>
     <span class="form-hint" id="search-hint">
         Søg på CPR-nr. eller sagsnr.
@@ -97,126 +99,128 @@
 
         <button class="button button-search">Søg</button>
     </div>
-    <h3 class="h5 mb-2">Navn: Lone Hansen</h3>
-    <table class="table table--zebra table--responsive-headers">
-        <thead>
-            <tr>
-                <th>Sagsnr.</th>
-                <th>Skadedato</th>
-                <th>Anmeldedato</th>
-                <th>Sagstype</th>
-                <th>Vedrørende</th>
-                <th>Anerkendelse</th>
-                <th>Mén</th>
-                <th>Erhvervsevnetab</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a
-                        href="/pages/eksempler/aes/sagsoverblik/">2020-0000015</a>
-                </td>
-                <td>-</td>
-                <td>01-02-2020</td>
-                <td>Erhvervssygdom</td>
-                <td>Hudsygdom</td>
-                <td>Ingen afgørelse endnu</td>
-                <td>Ingen afgørelse endnu</td>
-                <td>Ingen afgørelse endnu</td>
-                <td>Under behandling</td>
-            </tr>
-            <tr>
-                <td><a href="/pages/eksempler/aes/sagsoverblik/">20200000010
-                        / 311270-1234/04</a></td>
-                <td>17-01-2019</td>
-                <td>​​​​​​​20-01-2019</td>
-                <td>Arbejdsulykke</td>
-                <td>Arm, herunder albue</td>
-                <td>Anerkendt</td>
-                <td>15%</td>
-                <td>Genoptaget af tilskadekomne Lone Hansen</td>
-                <td>Under behandling</td>
-            </tr>
-            <tr>
-                <td><a href="/pages/eksempler/aes/sagsoverblik/">20200000008
-                        / 311270-1234/03</a></td>
-                <td>04-07-2018</td>
-                <td>16-12-2018</td>
-                <td>Privat erstatning</td>
-                <td>Hals, herunder nakke og halshvirvel</td>
-                <td>-</td>
-                <td>10%</td>
-                <td>-</td>
-                <td>Afsluttet</td>
-            </tr>
-        </tbody>
-    </table>
+    <h2 class="h5 mb-2">Navn: Lone Hansen</h3>
+        <table class="table table--zebra table--responsive-headers">
+            <thead>
+                <tr>
+                    <th>Sagsnr.</th>
+                    <th>Skadedato</th>
+                    <th>Anmeldedato</th>
+                    <th>Sagstype</th>
+                    <th>Vedrørende</th>
+                    <th>Anerkendelse</th>
+                    <th>Mén</th>
+                    <th>Erhvervsevnetab</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a
+                            href="/pages/eksempler/aes/sagsoverblik/">2020-0000015</a>
+                    </td>
+                    <td>-</td>
+                    <td>01-02-2020</td>
+                    <td>Erhvervssygdom</td>
+                    <td>Hudsygdom</td>
+                    <td>Ingen afgørelse endnu</td>
+                    <td>Ingen afgørelse endnu</td>
+                    <td>Ingen afgørelse endnu</td>
+                    <td>Under behandling</td>
+                </tr>
+                <tr>
+                    <td><a href="/pages/eksempler/aes/sagsoverblik/">20200000010
+                            / 311270-1234/04</a></td>
+                    <td>17-01-2019</td>
+                    <td>​​​​​​​20-01-2019</td>
+                    <td>Arbejdsulykke</td>
+                    <td>Arm, herunder albue</td>
+                    <td>Anerkendt</td>
+                    <td>15%</td>
+                    <td>Genoptaget af tilskadekomne Lone Hansen</td>
+                    <td>Under behandling</td>
+                </tr>
+                <tr>
+                    <td><a href="/pages/eksempler/aes/sagsoverblik/">20200000008
+                            / 311270-1234/03</a></td>
+                    <td>04-07-2018</td>
+                    <td>16-12-2018</td>
+                    <td>Privat erstatning</td>
+                    <td>Hals, herunder nakke og halshvirvel</td>
+                    <td>-</td>
+                    <td>10%</td>
+                    <td>-</td>
+                    <td>Afsluttet</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <details class="details js-details mt-4">
-        <summary class="details-summary">
-            <span class="details-summary-text">
-                Der er en sag hos AES jeg ikke kan finde
-            </span>
-        </summary>
-        <div class="details-text">
-            <ul class="mt-0">
-                <li class="mt-0">Der kan gå op til en uge fra AES modtager
-                    en sag, til den er tilgængelig her.</li>
-                <li>Det er kun sager, som forsikringsselskabet har sendt
-                    til AES, der vil blive vist her. ​​​​​​</li>
-                <li>Tilskadekomnes egne sager fjernes et år efter sagen er
-                    afsluttet.</li>
-                <li>Har du haft fuldmagt eller adgang til en andens sag, så
-                    bliver fuldmagten automatisk fjernet 15 uger efter
-                    sagen er afsluttet. Ved henlæggelser fjernes fuldmagten
-                    med det samme. Dermed vil der ikke være adgang til
-                    sagen i Se Sag længere.</li>
-            </ul>
-            <div class="alert alert-info alert--show-icon">
-                <div class="alert-body">
-                    <p class="alert-heading">Nyt Se Sag</p>
-                    <p class="alert-text">Du befinder dig lige nu i det nye
-                        Se Sag. Har du adgang til en anden persons
-                        verserende sag, som du ikke kan finde i det nye Se
-                        Sag, så er det måske fordi sagen stadig befinder
-                        sig i det gamle Se Sag. Du kan forsøge at finde
-                        sagen ved at gå til: ​​​​​​​​​​​​​<a href="#"
-                            class="icon-link">'Adgange' i det gamle Se
-                            Sag<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-                    </p>
+        <details class="details js-details mt-4">
+            <summary class="details-summary">
+                <span class="details-summary-text">
+                    Der er en sag hos AES jeg ikke kan finde
+                </span>
+            </summary>
+            <div class="details-text">
+                <ul class="mt-0">
+                    <li class="mt-0">Der kan gå op til en uge fra AES
+                        modtager en sag, til den er tilgængelig her.</li>
+                    <li>Det er kun sager, som forsikringsselskabet har
+                        sendt til AES, der vil blive vist her. ​​​​​​</li>
+                    <li>Tilskadekomnes egne sager fjernes et år efter sagen
+                        er afsluttet.</li>
+                    <li>Har du haft fuldmagt eller adgang til en andens
+                        sag, så bliver fuldmagten automatisk fjernet 15
+                        uger efter sagen er afsluttet. Ved henlæggelser
+                        fjernes fuldmagten med det samme. Dermed vil der
+                        ikke være adgang til sagen i Se Sag længere.</li>
+                </ul>
+                <div class="alert alert-info alert--show-icon">
+                    <div class="alert-body">
+                        <p class="alert-heading">Nyt Se Sag</p>
+                        <p class="alert-text">Du befinder dig lige nu i det
+                            nye Se Sag. Har du adgang til en anden persons
+                            verserende sag, som du ikke kan finde i det nye
+                            Se Sag, så er det måske fordi sagen stadig
+                            befinder sig i det gamle Se Sag. Du kan forsøge
+                            at finde sagen ved at gå til: ​​​​​​​​​​​​​<a
+                                href="#" class="icon-link">'Adgange' i det
+                                gamle Se
+                                Sag<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </details>
+        </details>
 
-    <h2 class="mt-9 h3">Anmod om adgang</h2>
-    <p>Du kan anmode om at få adgang til en andens sag, så du kan se sagens
-        oplysninger i Se Sag.</p>
-    <p><button class="button button-secondary">Anmod om adgang</button></p>
+        <h2 class="mt-9 h3">Anmod om adgang</h2>
+        <p>Du kan anmode om at få adgang til en andens sag, så du kan se
+            sagens oplysninger i Se Sag.</p>
+        <p><button class="button button-secondary">Anmod om adgang</button>
+        </p>
 
-    <h3 class="h4 mt-8">Anmodninger, der afventer svar</h3>
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-align-height">
-                <div class="card-header">
-                    <h3 class="header-title">Jørgen Hansen</h3>
-                </div>
-                <div class="card-text">
-                    <p>Adgang til sagsnr. 20200000012.</p>
-                    <p><span class="badge badge-small badge-info">Afventer
-                            accept</span></p>
-                </div>
-                <div class="card-footer card-action">
-                    <div class="action-links">
-                        <button
-                            class="button button-tertiary w-percent-100">Fjern
-                            anmodning</button>
+        <h3 class="h4 mt-8">Anmodninger, der afventer svar</h3>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-align-height">
+                    <div class="card-header">
+                        <h3 class="header-title">Jørgen Hansen</h3>
+                    </div>
+                    <div class="card-text">
+                        <p>Adgang til sagsnr. 20200000012.</p>
+                        <p><span class="badge badge-small badge-info">Afventer
+                                accept</span></p>
+                    </div>
+                    <div class="card-footer card-action">
+                        <div class="action-links">
+                            <button
+                                class="button button-tertiary w-percent-100">Fjern
+                                anmodning</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </main>
 
 <footer>
