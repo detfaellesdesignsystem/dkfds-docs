@@ -6,7 +6,7 @@
     },
     "logolink": {
       "label": "Portalnavn",
-      "href" : "javascript:void(0);"
+      "href" : "#"
     },
     "link": {
       "href": "#",
@@ -15,10 +15,9 @@
     }
   },
   "solution_header_data": {
-    "class": "header-end",
+    "class": "",
     "title": {
       "href": "#",
-      "title": "Hjem",
       "text": "Familieydelser - børnetilskud"
     },
     "authority": {
