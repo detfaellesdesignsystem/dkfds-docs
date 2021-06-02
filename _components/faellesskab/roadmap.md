@@ -46,11 +46,7 @@ Sagerne kan være:
     <tbody>
         {% include roadmap.html title="Køb af fisketegn" status="Planlagt" %}
         {% include roadmap.html title="Appel til skattedomstol" status="Planlagt" %}
-<<<<<<< HEAD
         {% include roadmap.html title="Opgaveliste" status="Gennemført" %}
-=======
-        {% include roadmap.html title="Opgaveliste" status="Planlagt" %}
->>>>>>> 5d65c63de687b5b9e850bb28b919ffc3c1136bc4
     </tbody>
 </table>
 
