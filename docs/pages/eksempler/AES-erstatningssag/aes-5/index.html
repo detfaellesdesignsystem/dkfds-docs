@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -50,11 +52,6 @@
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
-
-  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
-  ul {
-    list-style-type: none;
   }
 </style>
 
@@ -230,8 +227,8 @@
     <!--1A: Portal header -->
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" aria-label="Portalnavn"
-                class="logo alert-leave">
+            <a href="javascript:void(0);" class="logo alert-leave">
+                <span class="sr-only">Portalnavn</span>
             </a>
             <button
                 class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
@@ -412,7 +409,9 @@
         <fieldset aria-describedby="example-date-field-hint1 ">
             <legend class="form-label">Skadedato<button
                     class="js-tooltip button-unstyled"
-                    data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg></button>
+                    data-tooltip="Her står relevant uddybbende hjælpetekst."
+                    data-tooltip-trigger="click"><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg><span
+                        class="sr-only">Hvad betyder det?</span></button>
             </legend>
             <span class="form-hint" id="example-date-field-hint1">Fx. 28 04
                 1996</span>
@@ -456,9 +455,11 @@
 
     <div class="form-group">
         <label class="form-label " for="id-skadenummer">
-            Jeres sags-/skadenummer<a href="javascript:void(0)"
-                class="js-tooltip"
-                data-tooltip="Her står relevant uddybbende hjælpetekst."><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg></a>
+            Jeres sags-/skadenummer<button
+                class="button-unstyled js-tooltip"
+                data-tooltip="Her står relevant uddybbende hjælpetekst."
+                data-tooltip-trigger="click"><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg><span
+                    class="sr-only">Hvad betyder det?</span></button>
         </label>
 
         <input class="form-input input-width-m" id="id-skadenummer"

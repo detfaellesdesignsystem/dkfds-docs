@@ -29,7 +29,7 @@ Sagerne kan være:
     <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
     </thead>
     <tbody>
-        {% include roadmap.html title="Toggle" status="I gang" %}
+        {% include roadmap.html title="Toggle" status="Gennemført" %}
         {% include roadmap.html title="Notifikation (Toast)" status="Gennemført" %}
         {% include roadmap.html title="Facit-streger" status="Gennemført" %}
         {% include roadmap.html title="Strukturerede lister" status="Planlagt" %}
@@ -46,7 +46,11 @@ Sagerne kan være:
     <tbody>
         {% include roadmap.html title="Køb af fisketegn" status="Planlagt" %}
         {% include roadmap.html title="Appel til skattedomstol" status="Planlagt" %}
+<<<<<<< HEAD
+        {% include roadmap.html title="Opgaveliste" status="Gennemført" %}
+=======
         {% include roadmap.html title="Opgaveliste" status="Planlagt" %}
+>>>>>>> 5d65c63de687b5b9e850bb28b919ffc3c1136bc4
     </tbody>
 </table>
 
@@ -57,7 +61,8 @@ Sagerne kan være:
     <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
     </thead>
     <tbody>
-        {% include roadmap.html title="Opdatering af Figma til v7.2.0" status="Planlagt" %}
+        {% include roadmap.html title="Opdatering af Figma til v7.4.0" status="Planlagt" %}
+        {% include roadmap.html title="Opdatering af Figma til v7.3.0" status="Gennemført" %}
         {% include roadmap.html title="Udvidelse af table--responsive-headers" link="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" status="Gennemført" %}
         {% include roadmap.html title="Ikontaksonomi" link="/design/ikoner/ikoner-og-deres-betydning/" status="Gennemført" %}
     </tbody>

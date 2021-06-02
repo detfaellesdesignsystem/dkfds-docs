@@ -44,6 +44,7 @@ $( document ).ready(function( $ ) {
                 }
 
                 $('#subscriptions').append(res);
+                $('#subscriptions').removeClass('d-none');
 
                 $( "#newsform" ).submit(function( event ) {
                     event.preventDefault();

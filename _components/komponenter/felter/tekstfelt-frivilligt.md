@@ -6,8 +6,6 @@ component: text-input-optional
 componentTitle: Eksempel på tekstfelt som er frivilligt
 ---
 
-{% include dos-donts-box.html component="text-input-optional-dos-donts" title="Felt med hjælpetekst do's and don'ts" %}
-
 {:.h4}
 ### Referencer
 

@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -48,11 +50,6 @@
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
-
-  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
-  ul {
-    list-style-type: none;
   }
 </style>
 
@@ -230,7 +227,7 @@
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
             <!-- Start: Portallogo -->
-            <a href="#" class="logo"><span class="d-none d-print-block">Portalnavn</span></a>
+            <a href="#" aria-label="Portalnavn" class="logo"><span class="d-none d-print-block">Portalnavn</span></a>
             <!-- Slut: Portallogo -->
 
             <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>

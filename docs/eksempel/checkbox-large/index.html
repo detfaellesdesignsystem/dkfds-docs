@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -48,11 +50,6 @@
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
-
-  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
-  ul {
-    list-style-type: none;
   }
 </style>
 
@@ -227,7 +224,7 @@
     <h1 id="example-heading-checkbox-large" class="sr-only">Checkbox-large</h1>
     <div class="form-group">
     <fieldset>
-        <legend class="h5">Stor tjekboks (anbefalet)</legend>
+        <legend class="form-label">Stor tjekboks (anbefalet)</legend>
         <ul class="nobullet-list">
             <li>
                 <input id="large1" type="checkbox" name="checkbox-large[]" value="1" class="form-checkbox  checkbox-large " />

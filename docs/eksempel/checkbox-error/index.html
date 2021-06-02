@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -48,11 +50,6 @@
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
-
-  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
-  ul {
-    list-style-type: none;
   }
 </style>
 
@@ -227,7 +224,7 @@
     <h1 id="example-heading-checkbox-error" class="sr-only">Checkbox-error</h1>
     <div class="form-group form-error">
     <fieldset aria-describedby="example-checkbox-error">
-        <legend class="h5">Tjekboks med fejl</legend>
+        <legend class="form-label">Tjekboks med fejl</legend>
         <span class="form-error-message" id="example-checkbox-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlmeddelelse</span>
         <ul class="nobullet-list">
             <li>

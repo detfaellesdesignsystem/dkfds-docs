@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -48,11 +50,6 @@
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
-
-  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
-  ul {
-    list-style-type: none;
   }
 </style>
 
@@ -258,7 +255,7 @@
 
     <div class="form-group form-error">
         <fieldset aria-describedby="example-nationalitet-error">
-            <legend class="h5">Hvad er din nationalitet?</legend>
+            <legend class="form-label">Hvad er din nationalitet?</legend>
             <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk,
                 svensk eller anden nationalitet</span>
             <ul class="nobullet-list">

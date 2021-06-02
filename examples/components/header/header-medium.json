@@ -5,7 +5,7 @@
       "name": "Christian Emil Vestergaard Christiansen, Forsikringens Forsikringsfirma"
     },
     "logolink": {
-      "title": "Hjem",
+      "sronly": "Portalnavn",
       "href": "javascript:void(0);"
     },
     "link": {
@@ -17,7 +17,6 @@
   "solution_header_data": {
     "title": {
       "href": "#",
-      "title": "Hjem",
       "text": "Løsningstitel"
     },
     "authority": {

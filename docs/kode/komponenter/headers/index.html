@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -49,11 +51,6 @@
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
-
-  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
-  ul {
-    list-style-type: none;
   }
 </style>
 
@@ -230,7 +227,7 @@
     <div class="solution-header">
       <div class="solution-header-inner container">
         <div class="solution-heading d-flex align-items-center">
-            <a href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a>
+            <a href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a><span class="badge badge-error ml-4">Develop</span>
         </div>
         <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
       </div>
@@ -1119,6 +1116,22 @@
 
     
 
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/toggle/" role="menuitem" 
+  class="nav-link">
+  Toggle switch
+</a>
+
+</li>
+
+    
+
+    
+
 <li class="  has-anchor-links" role="none">
 
 
@@ -1126,7 +1139,7 @@
 
 <a href="/komponenter/tooltip/" role="menuitem" 
   class="nav-link">
-  Tooltip og popover
+  Tooltip
 </a>
 
 </li>
@@ -1886,7 +1899,7 @@
 
 <a href="/kode/komponenter/tooltip/" role="menuitem" 
   class="nav-link">
-  Tooltip og popover
+  Tooltip
 </a>
 
 </li>
@@ -2906,7 +2919,7 @@
 
 <a href="/kode/komponenter/tooltip/" role="menuitem" 
   class="nav-link">
-  Tooltip og popover
+  Tooltip
 </a>
 
 </li>
@@ -3110,12 +3123,12 @@
           
 
           
-<div class="component-preview  component-preview-header-simple" aria-label="Eksempel på header komponent">
+<div class="component-preview  component-preview-header-full" aria-label="Eksempel på header komponent">
     <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-simple/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-simple</span></a>
+        <a href="/eksempel/header-full/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-full</span></a>
     </div>
     <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <a href="/eksempel/header-simple/" class="screenshot" title="Åbn dette eksempel i et nyt vindue: header-simple" target="_blank"></a>
+        <a href="/eksempel/header-full/" class="screenshot" title="Åbn dette eksempel i et nyt vindue: header-full" target="_blank"></a>
     </div>
     
 </div>
@@ -3124,119 +3137,380 @@
 
 <h3>HTML Struktur</h3>
 
-<div class="component-preview component-preview-code  component-code-header-simple" aria-label="">
+<div class="component-preview component-preview-code  component-code-header-wrapper" aria-label="">
     
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;header class=&quot;header&quot;&gt;
-
-    &lt;!--1A: Portal header --&gt;
-    &lt;div class=&quot;portal-header portal-header-compact&quot;&gt;
-        &lt;div class=&quot;container portal-header-inner&quot;&gt;
-            &lt;a href=&quot;javascript:void(0);&quot; title=&quot;Hjem&quot;
-                class=&quot;logo alert-leave&quot;&gt;
-            &lt;/a&gt;
-            &lt;button
-                class=&quot;button button-secondary button-menu-open js-menu-open ml-auto d-print-none&quot;
-                aria-haspopup=&quot;menu&quot; title=&quot;Åben mobil menu&quot;&gt;Menu&lt;/button&gt;
-
-            &lt;!-- 1B: Portal header: info + actions--&gt;
-            &lt;div class=&quot;portal-info&quot;&gt;
-
-                &lt;p class=&quot;user&quot;&gt;&lt;span class=&quot;username&quot;&gt;Christian Emil
-                        Vestergaard Christiansen, Forsikringens
-                        Forsikringsfirma&lt;/span&gt; &lt;/p&gt;
-
-                &lt;button
-                    class=&quot;button button-secondary alert-leave d-print-none&quot;&gt;
-                    Log af
-                &lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;!--2A: Solution header --&gt;
-    &lt;div class=&quot;solution-header &quot;&gt;
-        &lt;div class=&quot;container solution-header-inner&quot;&gt;
-            &lt;div class=&quot;solution-heading&quot;&gt;
-                &lt;a href=&quot;#&quot; title=&quot;Hjem&quot; class=&quot;alert-leave2&quot;&gt;
-                    Løsningstitel
-                &lt;/a&gt;
-            &lt;/div&gt;
-
-            &lt;!--2B: Solution header: Authority name + text--&gt;
-            &lt;div class=&quot;solution-info &quot;&gt;
-                &lt;!-- nav-secondary --&gt;
-
-                &lt;p class=&quot;h5 authority-name&quot;&gt; Myndighedsnavn&lt;/p&gt;
-
-                &lt;p&gt;Support: 12 34 56 78&lt;/p&gt;
-
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
-    &lt;nav class=&quot; nav&quot;&gt;
-        &lt;!-- collapsible--&gt;
-        &lt;button
-            class=&quot;button button-tertiary button-menu-close js-menu-close&quot;
-            title=&quot;Luk mobil menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
-
-        &lt;div class=&quot;portal-info-mobile&quot;&gt;
-            &lt;p class=&quot;user bold&quot;&gt;Lone Hansen&lt;/p&gt;
-            &lt;a href=&quot;#&quot; class=&quot;button button-secondary button-signout&quot;&gt;
-                Log af
-            &lt;/a&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&quot;solution-info-mobile&quot;&gt;
-            &lt;p class=&quot;bold&quot;&gt;Myndighedsnavn&lt;/p&gt;
-            &lt;p&gt;Support: 12 34 56 78&lt;/p&gt;
-        &lt;/div&gt;
-
-    &lt;/nav&gt; &lt;!-- collapsible nav end--&gt;
-&lt;/header&gt;</code></pre></figure>
+    &lt;/div&gt;</code></pre></figure>
 
 
     </div>
 </div>
 
-<h4>Portal header</h4>
+<p>Nedenstående dele indsættes i et <code>header</code> element under <code>body</code>.</p>
+
+<h4>Portal (Obligatorisk)</h4>
 
 <p>Portal header indeholder portalens logo samt info om hvem, der er logget ind.</p>
 
 <p>Denne del bør altid indgå i en header.</p>
 
-<p><a href="/komponenter/headers/#kompakt" title="Gå til eksempel på kompakt portal header">Portal headeren kan gøres kompakt</a> med klassen <code>portal-header-compact</code>.</p>
+<div class="component-preview component-preview-code  component-code-header-portal" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
 
-<h4>Løsningsheader</h4>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;portal-header portal-header-compact&quot;&gt;
+    &lt;div class=&quot;container portal-header-inner&quot;&gt;
+        &lt;a href=&quot;#&quot; aria-label=&quot;Portalnavn&quot; class=&quot;logo&quot;&gt;&lt;span
+                class=&quot;d-none d-print-block&quot;&gt;Portalnavn&lt;/span&gt;&lt;/a&gt;
+        &lt;button
+            class=&quot;button button-secondary button-menu-open js-menu-open ml-auto d-print-none&quot;
+            aria-haspopup=&quot;menu&quot; title=&quot;Åben mobil menu&quot;&gt;Menu&lt;/button&gt;
+
+        &lt;div class=&quot;portal-info&quot;&gt;
+            &lt;p class=&quot;user&quot;&gt;Christian Emil Vestergaard Christiansen,
+                Forsikringens Forsikringsfirma&lt;/p&gt;
+            &lt;button
+                class=&quot;button button-secondary alert-leave d-print-none&quot;&gt;
+                Log af
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Hvis man har en header uden navigation skal man stadig <a href="#navigation-mobil">tilføje en mobilmenu</a>, da den viser data fra headeren, som normalt skjules i mobilvisning.</p>
+
+<h4>Løsning (Obligatorisk)</h4>
 
 <p>Løsningsheaderen indeholder løsningens titel samt info om, hvilken myndighed, der står bag løsningen.</p>
 
 <p>Denne del bør altid indgå i en header.</p>
 
-<h4 id="navigation">Navigation</h4>
+<div class="component-preview component-preview-code  component-code-header-solution" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;solution-header&quot;&gt;
+    &lt;div class=&quot;container solution-header-inner&quot;&gt;
+        &lt;div class=&quot;solution-heading&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;alert-leave2&quot;&gt;En længere løsningstitel&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;solution-info&quot;&gt;
+            &lt;p class=&quot;h5 authority-name&quot;&gt;Myndighedsnavn&lt;/p&gt;
+            &lt;p&gt;Support: 12 34 56 78 &lt;span class=&quot;d-print-none&quot;&gt;· &lt;a
+                        href=&quot;#&quot;
+                        class=&quot;icon-link function-link alert-leave&quot;&gt;Kontakt&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4 id="navigation">Navigation (Obligatorisk)</h4>
 
 <p>Navigationsområdet kan indeholde flere rækker med forskellige former for navigation.</p>
 
 <p>Alt indhold i <code>&lt;nav&gt;</code> elementet vil på små skærme bliver vist i en skjult menu, som vises ved tryk på menu-knappen. Som standard vises denne menu, når skærmen er mindre end 992px bred. Man kan indstille hvornår, der skal bruges denne menu via variablen <code>$nav-responsive-breakpoint</code>.</p>
 
-<h5>Hovedmenu</h5>
+<h5 id="navigation-mobil">Navigation kun til mobil</h5>
+<p>Hvis man har en header uden navigation skal nedenstående stadig tilføjes, da det er en menu der kan åbnes på mobil som viser information fra headeren som ellers bliver skjult.</p>
 
-<p>Hovedmenuen indeholder selve løsningens navigation.</p>
+<div class="component-preview component-preview-code  component-code-header-navigation-mobil" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
 
-<h5 id="ekstra-raekker">Ekstra rækker</h5>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+&lt;nav class=&quot;nav&quot;&gt;
+    &lt;button class=&quot;button button-tertiary button-menu-close js-menu-close&quot;
+        title=&quot;Luk mobil menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
 
+    &lt;div class=&quot;portal-info-mobile&quot;&gt;
+        &lt;p class=&quot;user bold&quot;&gt;Lone Hansen&lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button button-secondary button-signout&quot;&gt;
+            Log af
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;solution-info-mobile&quot;&gt;
+        &lt;p class=&quot;bold&quot;&gt;Myndighedsnavn&lt;/p&gt;
+        &lt;p&gt;Support: 12 34 56 78&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Hvis man har en navigation i headeren skal man bruge en af de andre herunder.</p>
+
+<h5>Hovednavigation</h5>
+
+<div class="component-preview component-preview-code  component-code-header-navigation" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+&lt;nav class=&quot; nav&quot;&gt;
+    &lt;button class=&quot;button button-secondary button-menu-close js-menu-close&quot;
+        title=&quot;Luk mobil menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
+    &lt;!-- 3: Main navigation--&gt;
+    &lt;div class=&quot;navbar navbar-primary&quot;&gt;
+        &lt;!--3A: Main navigation--&gt;
+        &lt;div class=&quot;navbar-inner container&quot;&gt;
+            &lt;ul class=&quot;nav-primary&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; title=&quot;Designsystem&quot;&gt;
+                        &lt;span&gt;Første menupunkt&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;current&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; title=&quot;Eksempler&quot;&gt;
+                        &lt;span&gt;Andet menupunkt&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; title=&quot;Kom godt i gang&quot;&gt;
+                        &lt;span&gt;Tredje menupunkt&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;
+                        title=&quot;Fællesoffentlige krav&quot;&gt;
+                        &lt;span&gt;Fjerde menupunkt&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- 3: Main navigation end--&gt;
+
+    &lt;!-- 5: Contextual actions--&gt;
+    &lt;div class=&quot;navbar&quot;&gt;
+        &lt;div class=&quot;navbar-inner navbar-context-actions container&quot;&gt;
+            &lt;div class=&quot;nav-actions&quot;&gt;
+                &lt;a href=&quot;#&quot;
+                    class=&quot;function-link&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#print&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Funktionsikon&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- 5: Contextual actions end--&gt;
+
+    &lt;div class=&quot;portal-info-mobile&quot;&gt;
+        &lt;p class=&quot;user bold&quot;&gt;Ida Ester Petersen&lt;/p&gt;
+        &lt;a href=&quot;#&quot;
+            class=&quot;button button-secondary button-signout alert-leave&quot;&gt;
+            Log af
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;solution-info-mobile&quot;&gt;
+        &lt;p class=&quot;h5 authority-name&quot;&gt;Myndighedsnavn&lt;/p&gt;
+        &lt;p&gt;Support: 12 34 56 78 · &lt;a href=&quot;#&quot;
+                class=&quot;icon-link function-link alert-leave&quot;&gt;Kontakt&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h5>Hovednavigation med ekstra navigationsrækker</h5>
 <p>Ekstra navigationsrækker kan indeholde alt lige fra <a href="/komponenter/buttons/">knapper</a>, links til <a href="/komponenter/modal/">modalvinduer</a>, <a href="/komponenter/overflowmenu/">overflow menuer</a> og sidst <a href="/komponenter/funktionslink/">funktionslink</a>.</p>
 
 <p>Hvis man laver en header med lidt indhold, er det anbefalet at man indstiller <code>$nav-responsive-breakpoint</code> til at have en lavere værdi, fx. 768px.</p>
+
+<div class="component-preview component-preview-code  component-code-header-navigation-complex" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+&lt;nav class=&quot; nav&quot;&gt;
+    &lt;button class=&quot;button button-secondary button-menu-close js-menu-close&quot;
+        title=&quot;Luk mobil menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
+
+    &lt;!-- Start: Hovedmenu --&gt;
+    &lt;div class=&quot;navbar navbar-primary&quot;&gt;
+        &lt;div class=&quot;navbar-inner container&quot;&gt;
+            &lt;ul class=&quot;nav-primary&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; title=&quot;Designsystem&quot;&gt;
+                        &lt;span&gt;Første menupunkt&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; title=&quot;Eksempler&quot;&gt;
+                        &lt;span&gt;Andet menupunkt&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; title=&quot;Kom godt i gang&quot;&gt;
+                        &lt;span&gt;Tredje menupunkt&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;
+                        title=&quot;Fællesoffentlige krav&quot;&gt;
+                        &lt;span&gt;Fjerde menupunkt&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;current&quot;&gt;
+                    &lt;div class=&quot;overflow-menu&quot;&gt;
+                        &lt;button
+                            class=&quot;button-overflow-menu js-dropdown js-dropdown--responsive-collapse&quot;
+                            data-js-target=&quot;headeroverflow1&quot;
+                            aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                            &lt;span&gt;Femte menupunkt&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;div class=&quot;overflow-menu-inner&quot;
+                            id=&quot;headeroverflow1&quot; aria-hidden=&quot;true&quot;&gt;
+                            &lt;ul class=&quot;overflow-list&quot;&gt;
+                                &lt;li class=&quot;active&quot;&gt;
+                                    &lt;a href=&quot;#&quot;&gt;Subsektion med en meget
+                                        lang titel som går i flere
+                                        linier&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href=&quot;#&quot;&gt;Subsektion title&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href=&quot;#&quot;&gt;Subsektion title&lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                    &lt;a href=&quot;#&quot;&gt;Subsektion title som også
+                                        er forholdsvis lang&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;!-- Start: Overflow menu i navigation --&gt;
+            &lt;ul class=&quot;unstyled-list nav-actions&quot;&gt;
+                &lt;li&gt;
+                    &lt;div class=&quot;overflow-menu overflow-menu--open-left&quot;&gt;
+                        &lt;button
+                            class=&quot;button-overflow-menu js-dropdown js-dropdown--responsive-collapse&quot;
+                            data-js-target=&quot;headeroverflow2&quot;
+                            aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                            Overflow menu
+                            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#arrow-drop-down&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                        &lt;/button&gt;
+                        &lt;div class=&quot;overflow-menu-inner&quot;
+                            id=&quot;headeroverflow2&quot; aria-hidden=&quot;true&quot;&gt;
+                            &lt;ul class=&quot;overflow-list&quot;&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menupunkt 1&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Et menupunkt 2&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tredje menupunkt 3&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!-- Slut: Overflow menu i navigation --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Slut: Hovedmenu --&gt;
+
+    &lt;!-- 4: Secondary navigation--&gt;
+    &lt;div class=&quot;navbar&quot;&gt;
+        &lt;div class=&quot;navbar-inner container&quot;&gt;
+            &lt;div class=&quot;nav-secondary&quot;&gt;
+                &lt;p class=&quot;h4 nav-secondary-heading&quot;&gt;Ekstra menu- og
+                    funktionslinje&lt;/p&gt;
+                &lt;ul class=&quot;unstyled-list nav-actions&quot;&gt;
+                    &lt;li&gt;
+                        &lt;div
+                            class=&quot;overflow-menu overflow-menu--open-right&quot;&gt;
+                            &lt;button
+                                class=&quot;button-overflow-menu js-dropdown js-dropdown--responsive-collapse&quot;
+                                data-js-target=&quot;headeroverflow3&quot;
+                                aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                Overflow menu
+                                &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#arrow-drop-down&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;/button&gt;
+                            &lt;div class=&quot;overflow-menu-inner&quot;
+                                id=&quot;headeroverflow3&quot; aria-hidden=&quot;true&quot;&gt;
+                                &lt;ul class=&quot;overflow-list&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menupunkt 1&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Et menupunkt 2&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tredje menupunkt 3&lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;ul class=&quot;unstyled-list nav-actions&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;
+                        class=&quot;button button-tertiary&quot;&gt;Tertiærknap&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;
+                        class=&quot;button button-tertiary&quot;&gt;Tertiærknap&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;
+                        class=&quot;button button-tertiary&quot;&gt;Tertiærknap&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- 4: Secondary header end--&gt;
+
+    &lt;!-- 5: Contextual actions--&gt;
+    &lt;div class=&quot;navbar&quot;&gt;
+        &lt;div class=&quot;navbar-inner navbar-context-actions container&quot;&gt;
+            &lt;div class=&quot;nav-actions&quot;&gt;
+                &lt;a href=&quot;&quot;
+                    class=&quot;function-link&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#print&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Funktionsikon&lt;/a&gt;
+                &lt;a href=&quot;&quot;
+                    class=&quot;function-link&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#save&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Funktionsikon&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- 5: Contextual actions end--&gt;
+
+    &lt;div class=&quot;portal-info-mobile&quot;&gt;
+        &lt;p class=&quot;user&quot;&gt;Christian Emil Vestergaard Christensen&lt;/p&gt;
+        &lt;p&gt;Københavns Urmager og Værksted v/Martin Elsig&lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button button-secondary alert-leave&quot;
+            role=&quot;button&quot;&gt;
+            Log af
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;solution-info-mobile&quot;&gt;
+        &lt;p class=&quot;h5 authority-name&quot;&gt;Myndighedsnavn&lt;/p&gt;
+        &lt;p&gt;Support: 12 34 56 78 · &lt;a href=&quot;#&quot;
+                class=&quot;function-link d-inline-block&quot;&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#card-text&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Kontakt&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+</div>
 
 <h3>JavaScript</h3>
 <p>Mobil menuen kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Navigation();</code></pre></figure>
-
 
       </section>
     </main>
@@ -3246,17 +3520,38 @@
 
 
 <footer>
-<div class="footer">
-<div class="container">
-<ul class="unstyled-list inline-list">
-<li><span class="h5 weight-semibold">Digitaliseringsstyrelsen & Erhvervsstyrelsen</span></li>
-<li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-<li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
-<li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-<li><button class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift tema</span></button></li>
-</ul>
-</div>
-</div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3 footer-col ">
+                    <section>
+                        <h2 class="h5 mb-4">Digitaliseringsstyrelsen & Erhvervsstyrelsen</h2>
+                        <p><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem">FDS@erst.dk</a></p>
+                    </section>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 footer-col ">
+                    <section>
+                        <h2 class="h5 mb-4">Webtilgængelighed og cookies</h2>
+                        <ul class="nobullet-list mb-0">
+                            <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+                            <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+                            <li><button class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift tema</span></button></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 footer-col ">
+                    <section>
+                        <h2 class="h5 mb-4">Mangler vi noget?</h2>
+                        <p>Hjælp os med at gøre Det Fælles Designsystem endnu bedre ved at gøre os opmærksom på dine udfordringer og ønsker.</p>
+                        <ul class="mt-4 nobullet-list mb-0">
+                            <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" class="function-link icon-link">Opret et “issue” (en sag) på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+                            <li><a  href="mailto:FDS@erst.dk" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>Send en mail til FDS-teamet</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 
@@ -3266,6 +3561,8 @@
 <script src="/assets/js/requirements-tool~styleguide.js"></script>
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+
+
 
   </body>
 </html>

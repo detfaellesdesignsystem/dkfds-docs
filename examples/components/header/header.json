@@ -4,8 +4,8 @@
       "name": "Lone Hansen"
     },
     "logolink": {
-      "title": "Hjem",
-      "href": "javascript:void(0);"
+      "sronly": "Portalnavn",
+      "href": "#"
     },
     "link": {
       "href": "#",

@@ -134,16 +134,3 @@ Disse browsers bør defineres i autoprefixer:
   'IE 9',
 ]
 {% endhighlight %} 
-
-### Fix for bug i Microsoft Edge og Internet Explorer
-
-En bug i Edge og Internet Explorer gør at list-style-type:none bliver ignoreret, hvis den bliver sat mens en liste er skjult. Du kan undgå dette ved at tilføje css direkte i `head` sektionen.
-
-{% highlight html %}
-  <style>
-    /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. */   
-    ul {
-      list-style-type: none;
-    }
-  </style>
-{% endhighlight %}

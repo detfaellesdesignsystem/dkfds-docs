@@ -40,7 +40,8 @@ var exampleUrls = [
     {"url": "pages/eksempler/vedhaeft-fil/fil-1/", "folder": "vedhaeft-fil", "filename": "fil-1.PNG"},
     {"url": "pages/eksempler/aes/oversigt/", "folder": "aes", "filename": "oversigt.PNG"},
     {"url": "pages/eksempler/aes/sagsoverblik/", "folder": "aes", "filename": "sagsoverblik.PNG"},
-    {"url": "pages/eksempler/aes/sagsoverblik/afgoerelser/", "folder": "aes", "filename": "afgoerelser.PNG"}
+    {"url": "pages/eksempler/aes/sagsoverblik/afgoerelser/", "folder": "aes", "filename": "afgoerelser.PNG"},
+    {"url": "pages/eksempler/opgaveliste/", "folder": "opgaveliste", "filename": "opgaveliste.PNG"}
 ];
 
 

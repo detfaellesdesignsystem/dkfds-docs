@@ -11,16 +11,11 @@ tags:
 - svg
 - svg use
 - inline svg
-redirect_from: []
-anchor: false
-subnav: []
-
 ---
 <a href="/design/ikoner/ikoner-og-deres-betydning/">Designsystemets ikontaksonomi beskriver udvalgte ikoner og deres betydning</a>
 
 
 {% include code/preview.html component="icons--svg" %}
-
 
 
 ## Anvendes til  

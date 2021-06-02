@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -48,11 +50,6 @@
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
-
-  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
-  ul {
-    list-style-type: none;
   }
 </style>
 
@@ -240,7 +237,7 @@
     <!-- Felt start: Kørekort -->
     <div class="form-group">
         <fieldset>
-            <legend class="h4">Har du kørekort?</legend>
+            <legend class="form-label">Har du kørekort?</legend>
             <ul class="nobullet-list">
                 <li>
                     <input id="kort-ja" type="radio" name="kontakt" value="kort-ja" class="form-radio  radio-large " />

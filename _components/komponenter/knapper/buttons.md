@@ -25,8 +25,8 @@ subnav:
   href: "#tilbage-knap"
 - text: Knap med ikon
   href: "#knap-med-ikon"
-- text: Ikon som knap
-  href: "#ikon-som-knap"
+- text: Klikbart ikon
+  href: "#klikbart-ikon"
 component: button-primary
 componentTitle: Eksempel på primærknap
 componentCode: "/kode/komponenter/knapper/"

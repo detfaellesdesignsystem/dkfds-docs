@@ -21,7 +21,7 @@ mailalert: true
             <fieldset>
                 <legend class="h4 mb-0">Vælg mails</legend>
                 <span class="form-error-message mb-3"></span>
-                <ul class="nobullet-list" id="subscriptions">
+                <ul class="nobullet-list d-none" id="subscriptions">
                 </ul>
             </fieldset>
         </div>

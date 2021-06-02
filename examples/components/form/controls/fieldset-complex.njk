@@ -16,7 +16,7 @@
     {{textinput("fieldset-email", "E-mail adresse", false, "", false, "email", "", false, false)}}
     <!-- Felt slut: E-mail adresse -->
     <!-- Felt start: Telefonnr -->
-    {{textinput("telefon", "Telefonnr.", false, "", false, "telefon", "", false, false)}}
+    {{textinput("telefon", "Telefonnr.", false, "input-char-8", false, "telefon", "", false, false)}}
     <!-- Felt slut: Telefonnr -->
 
     <!-- Felt start: Kontaktmetode -->
@@ -34,7 +34,7 @@
     <!-- Felt start: Tid på dagen -->
     <div class="form-group">
         <fieldset>
-            <legend class="h4">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</legend>
+            <legend class="form-label">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</legend>
             <ul class="nobullet-list">
               <li>{{ checkbox("morgen", "tidspunkt[]", "morgen", false, false, "Om morgenen", "", "", true, "", "", "", "", "false") }}</li>
               <li>{{ checkbox("middag", "tidspunkt[]", "middag", false, false, "Ved middagstid", "", "", true, "", "", "", "", "false") }}</li>

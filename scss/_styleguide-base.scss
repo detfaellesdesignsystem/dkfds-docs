@@ -760,6 +760,10 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
   padding-top: 4px;
   padding-bottom: 4px;
 }
+.component-preview-toggle .component-example{
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
 
 .component-preview-overflow-menu .container, .component-preview-overflow-menu-left .container{
   min-height: 400px;

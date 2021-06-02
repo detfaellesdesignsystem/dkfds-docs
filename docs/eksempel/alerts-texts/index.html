@@ -12,6 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -48,11 +50,6 @@
 <style>
   body {
     opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
-
-  /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
-  ul {
-    list-style-type: none;
   }
 </style>
 
@@ -244,11 +241,12 @@
         <p class="alert-heading">Informativ besked - tekstafsnit</p>
         <p class="alert-text">Multi line. Sed ut perspiciatis unde omnis
             iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem Nemo enim ipsam voluptatem quia voluptas
-            sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui atione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui doloremipsa quae ab illo inventore veritatis
-            et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            laudantium, <a href="#">totam rem Nemo enim</a> ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+            quia consequuntur magni dolores eos qui atione voluptatem sequi
+            nesciunt. Neque porro quisquam est, qui doloremipsa quae ab
+            illo inventore veritatis et quasi architecto beatae vitae dicta
+            sunt explicabo.</p>
     </div>
 </div>
 

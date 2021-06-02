@@ -30,4 +30,24 @@ Anvend kun spinners i særdeles begrænset omfang og kun på løsninger, hvor de
 
 En spinner skal ikke anvendes til kompensation for en permanent langsom performance.
 
-En spinner bør ikke køre mere end 5-10 sekunder før brugeren gøres opmærksom på, at der må forventes lidt ventetid.
+### Eksempler på beskeder
+
+Nedenstående tider og beskeder er vejledende og kan tilpasses så det passer bedre til løsningen. Det samme gælder time-out, der skal sættes så den afspejler løsningen.
+
+{:.h5}
+#### Beskeder på spinner med kort svartid
+- 0 sekunder: "Arbejder"
+- 5 sekunder: "Arbejder stadig"
+- 11 sekunder: "Det tager længere end forventet, beklager"
+- 18 sekunder: "Vi er stadig i gang, undskyld ventetiden"
+- Efter 25 sekunder bør løsningen time-out og sende brugeren videre til en undskyldende fejlside - denne bør vi også have et eksempel på - i eksemplet på komponentsiden skal dette dog ikke ske, her skal spinneren starte forfra.
+
+{:.h5}
+### Beskeder på spinner med forventet lang svartid
+Er der tale om en service, hvor man fra start af ved at det tager flere minutter skal den første besked afspejle det, her illustreret ved en løsning der tager 3-5 minutter:
+
+- 0 sekunder: "Det tager 3-5 minutter, hav tålmodighed"
+- 5 minutter: "Nu burde der ikke gå meget længere"
+- 5:30 minutter: "Det tager længere end forventet, beklager" 
+- 6 minutter: "Vi er stadig i gang, undskyld ventetiden"
+- 6:30 minutter: time-out og send til undskyldende fejlside

@@ -7,6 +7,7 @@ import * as DKFDS from "dkfds";
 
 require('./sidenav');
 require('./newsletter');
+require('./spinner');
 document.addEventListener("DOMContentLoaded", function() {
     languageSwitcher();
 // Handler when the DOM is fully loaded
