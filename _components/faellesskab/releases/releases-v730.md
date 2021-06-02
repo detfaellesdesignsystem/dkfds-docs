@@ -5,7 +5,7 @@ order: 91
 headingClass: mb-0
 ---
 
-<p class="small-text mt-0">08-04-2021</p>
+<p class="small-text mt-0">23-04-2021</p>
 
 - <a href="/design/ikoner/ikoner-og-deres-betydning/">Ikontaksonomi</a>
 - Ny komponent: <a href="/komponenter/notifikation/">Notifikation (Toast) komponent</a>
