@@ -5,7 +5,7 @@ order: 90
 headingClass: mb-0
 ---
 
-<p class="small-text mt-0">31-05-2021</p>
+<p class="small-text mt-0">02-06-2021</p>
 
 - Ændringer i <a href="/komponenter/tooltip/">tooltip komponenten</a> - der er tilføjet delay og pil på tooltip
 - Links får nu automatisk sort farve i <a href="/komponenter/beskeder/">beskeder</a>
