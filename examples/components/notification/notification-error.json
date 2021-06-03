@@ -2,7 +2,7 @@
   "notification_data": {
     "id": "notification-error",
     "type": "error",
-    "heading": "Din ansøgning er afsendt",
+    "heading": "Der opstod en fejl",
     "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
     "show": true
   }
