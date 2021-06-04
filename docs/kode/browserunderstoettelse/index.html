@@ -17,9 +17,11 @@
 ================================================== -->
   
 
-<title>Streger | Det Fælles Designsystem</title>
-<meta property="og:title" content="Streger | Det Fælles Designsystem">
+<title>Browserunderstøttelse | Det Fælles Designsystem</title>
+<meta property="og:title" content="Browserunderstøttelse | Det Fælles Designsystem">
 
+<meta name="description" content="Liste med browsers, som FDS understøtter">
+<meta property="og:description" content="Liste med browsers, som FDS understøtter">
 
 
 
@@ -59,7 +61,7 @@
 </noscript>
 
   </head>
-  <body class="page-streger layout-component">
+  <body class="page-browserunderstøttelse layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -266,9 +268,9 @@
 
 
 
-<li class="current" role="none">
+<li class="" role="none">
 <!-- Do not render subnavs-->
-  <a href="/design/" role="menuitem" aria-current="page"
+  <a href="/design/" role="menuitem" 
     class="nav-link">
     <span>Design</span>
   </a>
@@ -329,9 +331,9 @@
 
 
 
-<li class="" role="none">
+<li class="current" role="none">
 <!-- Do not render subnavs-->
-  <a href="/kode/" role="menuitem" 
+  <a href="/kode/" role="menuitem" aria-current="page"
     class="nav-link">
     <span>Kode</span>
   </a>
@@ -422,7 +424,7 @@
 
 
 
-<li class="current" role="none">
+<li class="" role="none">
 <!--Do render subnavs-->
 
   
@@ -432,10 +434,10 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="true"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="false"  >
         <span>Design</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="false">
+      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
         <ul class="overflow-list">
     
 
@@ -1279,7 +1281,7 @@
 
 
 
-<li class="" role="none">
+<li class="current" role="none">
 <!--Do render subnavs-->
 
   
@@ -1289,10 +1291,10 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="true"  >
         <span>Kode</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="false">
         <ul class="overflow-list">
     
 
@@ -1328,15 +1330,25 @@
 
     
 
-<li class="  " role="none">
+<li class="current active " role="none">
 
 
   
 
-<a href="/kode/browserunderstoettelse/" role="menuitem" 
+<a href="/kode/browserunderstoettelse/" role="menuitem" aria-current="page"
   class="nav-link">
   Browserunderstøttelse
 </a>
+
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+  
 
 </li>
 
@@ -1710,6 +1722,197 @@
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         
         
+        <ul class="sidenav-list" role="menu">
+          
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/implementering/" role="menuitem" 
+  class="nav-link">
+  Implementering af DKFDS
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/komponenter/" role="menuitem" 
+  class="nav-link">
+  Komponenter
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="current active " role="none">
+
+
+  
+
+<a href="/kode/browserunderstoettelse/" role="menuitem" aria-current="page"
+  class="nav-link">
+  Browserunderstøttelse
+</a>
+
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+  
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/grid/" role="menuitem" 
+  class="nav-link">
+  Grid
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/typografi/" role="menuitem" 
+  class="nav-link">
+  Typografi
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/ikoner/" role="menuitem" 
+  class="nav-link">
+  Ikoner
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/utilities/" role="menuitem" 
+  class="nav-link">
+  Hjælpeklasser (Utilities)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/eksempler-implementering/" role="menuitem" 
+  class="nav-link">
+  Eksempler på implementering
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/print/" role="menuitem" 
+  class="nav-link">
+  Print
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/plugins/" role="menuitem" 
+  class="nav-link">
+  Plugins
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/anbefalinger-vaerktoejer/" role="menuitem" 
+  class="nav-link">
+  Anbefalinger og værktøjer
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+        
       </nav>
     </aside>
 
@@ -1723,147 +1926,52 @@
         </div>
     </div>
 
-      <section id="section-/design/borders-shadows/02-borders">
+      <section id="section-/kode/browserunderstoettelse">
           
           
 
           <p class="subheading">
-            
+            Kode
           </p>
-          <h1 id="streger">Streger</h1>
+          <h1 id="browserunderstøttelse">Browserunderstøttelse</h1>
           
 
           
-          
-<div class="component-preview  component-preview-borders" aria-label="">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/borders/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: borders</span></a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <h3 class="h5">Ydre-streger</h3>
-<p class="form-hint">Bruges til de yderste streger i et element, se fx
-    tabeller.</p>
-<div class="outer-border-example"></div>
-<h3 class="h5">Indre-streger</h3>
-<p class="form-hint">Bruges til indre streger i et element, se fx tabeller.
-</p>
-<div class="inner-border-example"></div>
-<h3 class="h5">Indre-indre-streger</h3>
-<p class="form-hint">Bruges til indre streger i et element, som allerede er
-    omkranset af indre steger, se fx sidenavigation.</p>
-<div class="inner-inner-border-example"></div>
-<h3 class="h5">Knap-streger</h3>
-<p class="form-hint">Specifik streg til knapper.</p>
-<div class="button-border-example"></div>
-<h3 class="h5">Horisontal ruler</h3>
-<p class="form-hint"><code>hr</code> elementet har samme farve som den
-    Indre streg.</p>
-<hr />
-<h3 class="h5">Fejl ved felt</h3>
-<p class="form-hint">Bruges i venstre side af et felt, når der er fejl i
-    feltet.</p>
-<div class="form-error-border-example"></div>
-<h3 class="h5">Streg ved åben detalje-komponent</h3>
-<p class="form-hint">Bruges i venstre side af en åben detalje-komponent.
-</p>
-<div class="details-border-example"></div>
-<h3 class="h5">Streg ved aktivt menupunkt i sidenavigation</h3>
-<p class="form-hint">Bruges i venstre side af en et aktivt menupunkt i
-    sidenavigationen.</p>
-<div class="sidenav-border-example"></div>
-<h3 class="h5">Streg under aktivt menupunkt i header navigation</h3>
-<p class="form-hint">Bruges under et aktivt menupunkt i navigationen i
-    headeren.</p>
-<div class="navigation-border-example"></div>
-<h3 class="h5">Facit streg</h3>
-<p class="form-hint">Bruges under et tal for at indikere et resultat.</p>
-<span class="facit">10.884,50</span>
-    </div>
-    
-</div>
 
+          <p>Bemærk at nedenstående liste ikke er krav fra Det Fælles Designsystem, men blot oplysning til anvendere af designsystemet. Listen over styresystemer og browsers, som den enkelte løsning skal understøtte kan derfor afvige fra nedenstående liste.</p>
 
-          
+<h2 class="h4">Windows</h2>
+<ul>
+  <li>Chrome</li>
+  <li>Edge</li>
+  <li>Firefox</li>
+</ul>
 
-          <h3>Designværdier</h3>
+<h2 class="h4">Mac</h2>
+<ul>
+  <li>Chrome</li>
+  <li>Safari</li>
+  <li>Firefox</li>
+</ul>
 
-<table class="table table--borderless table--responsive-headers">
-  <thead>
-    <tr>
-      <th>Navn</th>
-      <th>Farve</th>
-      <th>Tykkelse</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Ydre streger</td>
-      <td>#747474</td>
-      <td>1px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Indre streger</td>
-      <td>#BFBFBF</td>
-      <td>1px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Indre-indre streger</td>
-      <td>#DCDCDC</td>
-      <td>1px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Knap kant streger</td>
-      <td>#3C5C22 (Borger.dk)<br />#004993 (Virk)</td>
-      <td>2px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Horisontal ruler</td>
-      <td>#BFBFBF</td>
-      <td>1px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Fejl ved felt</td>
-      <td>#CC0000</td>
-      <td>4px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Streg ved åben detalje-komponent</td>
-      <td>#BFBFBF</td>
-      <td>4px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Streg ved aktivt menupunkt i sidenavigation</td>
-      <td>#44831E (Borger.dk)<br />#0059B3 (Virk)</td>
-      <td>4px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Streg ved aktivt menupunkt i sidenavigation</td>
-      <td>#44831E (Borger.dk)<br />#0059B3 (Virk)</td>
-      <td>7px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Facit streg</td>
-      <td>#747474</td>
-      <td>4px</td>
-      <td>double</td>
-    </tr>
-  </tbody>
-</table>
+<h2 class="h4">iOS</h2>
+<ul>
+  <li>Safari</li>
+  <li>Chrome</li>
+</ul>
 
+<h2 class="h4">Android</h2>
+<ul>
+  <li>Chrome</li>
+  <li>Samsung browser</li>
+</ul>
+
+<h2 class="h3">Kilder til information om krav til styresystemer og browsers</h2>
+
+<ul>
+  <li><a href="https://arkitektur.digst.dk/rammearkitektur/faelles-krav-til-gode-brugeroplevelser" class="icon-link">Krav 06. Understøttelse af styresystemer og browsere i Fælles krav til gode brugeroplevelser<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://myndighedsnet.virk.dk/virk-viden/integration-og-krav/krav-til-loesninger-paa-virk/browsere" class="icon-link">Krav til løsninger på Virk<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
 
       </section>
     </main>

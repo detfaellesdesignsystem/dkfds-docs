@@ -116,6 +116,7 @@ Kode_category:
 - href: /kode/implementering/
 - href: /kode/komponenter/
   categorynav: 'Kode_Komponenter_category'
+- href: /kode/browserunderstoettelse/
 - href: /kode/grid/
 - href: /kode/typografi/
   categorynav: 'Kode_Typografi_category'
