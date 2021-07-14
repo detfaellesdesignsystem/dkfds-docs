@@ -203,16 +203,16 @@ header #search-form-mobile{
 
 // Functional theme colors
 .color-primary {
-  background-color: $color-primary;
+  background-color: color('primary');
 }
 .color-primary-darker {
-  background-color: $color-primary-darker;
+  background-color: color('primary-darker');
 }
 .color-primary-darkest {
-  background-color: $color-primary-darkest;
+  background-color: color('primary-darkest');
 }
 .color-primary-lightest {
-  background-color: $color-primary-lightest;
+  background-color: color('primary-lightest');
 }
 .color-background {
   background-color: $color-background;
