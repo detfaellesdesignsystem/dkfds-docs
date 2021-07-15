@@ -63,4 +63,10 @@ Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ik
 - Jessica Enders: Designing UX: Forms (2016)
 - <a href="https://www.effortmark.co.uk/design-patterns-government-2016/" class="icon-link">Caroline Jarrett: Design patterns in government (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
+
 {% include child-components.html parent='Tringuide' %}

@@ -13,11 +13,8 @@ anchor: true
 subnav:
 - text: Tooltip
   href: "#sprogvælger-med-tooltip"
-
 ---
 {% include code/preview-image.html component="language-switcher" alt="Eksempel på sprogvælger" code="/kode/komponenter/sprogvaegler/" %}
-
-<p class="mt-6"><a href="/eksempler/selvbetjeningsloesninger/#solution-7">Se en eksempelløsning med sprogvælger</a></p>
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -55,11 +52,18 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 <a href="/eksempel/footer-four-columns-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en kompleks footer" target="_blank"></a>
 
 {:.h3}
-## Links
+## Referencer
 
 {:.nobullet-list}
 - <a href="https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/" class="icon-link">Top 10 Best Practices for Multilingual Websites<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://uxdesign.cc/my-take-on-language-selectors-945caceb58f7" class="icon-link">My take on language selectors<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://usersnap.com/blog/design-language-switch/" class="icon-link">Designing a language switch: Examples and best practices<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/digital-flytning/flytning-1/" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
+- <a href="/pages/eksempler/aes/oversigt/" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
 
 {% include child-components.html parent='sprogvaegler' %}

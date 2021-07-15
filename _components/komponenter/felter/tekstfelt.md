@@ -92,4 +92,13 @@ Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så b
 - <a href="https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php" class="icon-link">Caroline Jarrett: Don’t Put Labels Inside Text Boxes (Unless You’re Luke W) (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/form-design-placeholders/" class="icon-link">Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
+
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/aktindsigt/aktindsigt-1/" target="_blank" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
+- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
+
+
 {% include child-components.html parent='Text-field' %}

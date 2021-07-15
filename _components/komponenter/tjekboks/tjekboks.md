@@ -58,4 +58,10 @@ Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er
 - ISO 9241-143: Forms (2012)
 - <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/digital-flytning/flytning-4/" target="_blank" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
+
 {% include child-components.html parent='Checkbox' %}

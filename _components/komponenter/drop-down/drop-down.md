@@ -49,4 +49,10 @@ Anvend ikke JavaScript til automatisk at sende den valgte værdi, men sørg for 
 - <a href="https://www.lukew.com/ff/entry.asp?1950" class="icon-link">Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>
+
 {% include child-components.html parent='Drop-down' %}

@@ -117,6 +117,12 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>
+
 {:#eksempler}
 ## Eksempler på fejlmeddelelser
 

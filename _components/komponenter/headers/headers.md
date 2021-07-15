@@ -40,6 +40,8 @@ Brug ikke topnavigationen som faneblad, anvend da <a href="/komponenter/faneblad
 {:.h3}
 ## Vejledning
 
+Tag et kig på <a href="/eksempler/selvbetjeningsloesninger/">eksempelløsningerne</a>, for at se hvordan komponenten passer ind i en komplet løsning.
+
 En header består af et antal rækker med forskelligt indhold. Jo flere rækker jo mere kompleks en header. Designsystemet giver mulighed for op til 5 rækker og minimum 2 rækker.
 
 - Række 1 og 2 er obligatoriske

@@ -57,4 +57,13 @@ Såfremt der er tale om meget <a href="/komponenter/tables/#avancerede-tabeller"
 
 <a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
+
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>
+- <a href="/pages/eksempler/aes/oversigt/" target="_blank" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
+
 {% include child-components.html parent='Tables' %}

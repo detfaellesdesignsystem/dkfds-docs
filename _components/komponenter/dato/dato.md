@@ -50,4 +50,13 @@ Ofte kan et datofelter til indtastning være nemmere at anvende - og gøre tilg�
 - <a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" class="icon-link">USWDS om datovælgeren<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link">GovUK om fejlmeddelelser generelt<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
+
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/boernetilskud/boernetilskud-2/" target="_blank" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
+- <a href="/pages/eksempler/AES-erstatningssag/aes-5/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/digital-flytning/flytning-3/" target="_blank" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
+
 {% include child-components.html parent='Date' %}

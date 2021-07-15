@@ -67,4 +67,12 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 - <a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
+
+{:.h3}
+## Eksempler på brug i løsning
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/AES-erstatningssag/aes-5/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+
+
 {% include child-components.html parent='Tooltip' %}
