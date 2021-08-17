@@ -17,9 +17,11 @@
 ================================================== -->
   
 
-<title>Klikbart ikon med tooltip | Det Fælles Designsystem</title>
-<meta property="og:title" content="Klikbart ikon med tooltip | Det Fælles Designsystem">
+<title>Sortering | Det Fælles Designsystem</title>
+<meta property="og:title" content="Sortering | Det Fælles Designsystem">
 
+<meta name="description" content="Ved sortering har brugeren indflydelse på den rækkefølge, forskelligt indhold vises i, så det bliver lettere at navigere i.">
+<meta property="og:description" content="Ved sortering har brugeren indflydelse på den rækkefølge, forskelligt indhold vises i, så det bliver lettere at navigere i.">
 
 
 
@@ -59,7 +61,7 @@
 </noscript>
 
   </head>
-  <body class="page-klikbart-ikon-med-tooltip layout-component">
+  <body class="page-sortering layout-component">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -1727,31 +1729,51 @@
         </div>
     </div>
 
-      <section id="section-/komponenter/tooltip/tooltip-icon">
+      <section id="section-/komponenter/overflowmenu/overflowmenu-sortering">
           
           
 
           <p class="subheading">
             
           </p>
-          <h1 id="klikbart-ikon-med-tooltip">Klikbart ikon med tooltip</h1>
+          <h1 id="sortering">Sortering</h1>
+          
+            <p class="font-lead">Ved sortering har brugeren indflydelse på den rækkefølge, forskelligt indhold vises i, så det bliver lettere at navigere i.</p>
           
 
           
           
-<div class="component-preview  component-preview-tooltip-delete" aria-label="Eksempel på klikbart ikon med tooltip">
+<div class="component-preview  component-preview-sort" aria-label="Eksempel på sorteringsfunktion med overflow menu">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tooltip-delete/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-delete</span></a>
+        <a href="/eksempel/sort/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: sort</span></a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <button class="js-tooltip button-unstyled" data-tooltip="Slet element">
-    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete"></use></svg><span
-        class="sr-only">Slet</span>
-</button>
+        <div class="overflow-menu overflow-menu--sort overflow-menu--open-right"
+    id="trash-sorting-overflowmenu">
+    <button class="button-overflow-menu"
+        data-js-target="trash-sorting-overflowmenu-panel"
+        aria-haspopup="true" aria-expanded="false">
+        <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#sort-default"></use></svg>Sortér:<span
+            class="selected-value"></span>
+    </button>
+    <div class="overflow-menu-inner" id="trash-sorting-overflowmenu-panel"
+        aria-hidden="true">
+        <ul class='overflow-list' role="menu">
+            <li role="menuitem" aria-selected="true"><button
+                    id="newfirst">Nyeste først</button></li>
+            <li role="menuitem"><button id="oldfirst">Ældste først</button>
+            </li>
+            <li role="menuitem"><button id="affaldstype-asc">Affaldstype
+                    (A-Å)</button></li>
+            <li role="menuitem"><button id="affaldstype-desc">Affaldstype
+                    (Å-A)</button></li>
+        </ul>
+    </div>
+</div>
     </div>
     
 </div>
@@ -1759,7 +1781,45 @@
 
           
 
-          
+          <h2 class="h3">Anvendes til</h2>
+
+<p>Sortering med overflow menu anvendes til at sortere indhold af forskellig karakter.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Sortering med overflow menu anbefales ikke til tabeller med mange sorterbare kolonner. Her foretrækkes i stedet sorteringsikoner i tabellens kolonner som vist på siden Tabeller.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Indhold kan sorteres alfabetisk, efter tal eller efter dato.</p>
+
+<p>Ved sorteringsparametre med alfabetisk sortering, angiv (A-Å) eller (Å-A) i parantes fx:</p>
+<ul>
+  <li>Affaldssortering (A-Å)</li>
+  <li>Affaldssortering (Å-A)</li>
+</ul>
+
+<p>Ved sortering efter tal, angiv (stigende) eller (faldende) i parantes, fx:</p>
+<ul>
+  <li>Antal (stigende)</li>
+  <li>Antal (faldende)</li>
+</ul>
+
+<p>Ved sortering efter forskellige datoparametre, angiv (nyeste først) eller (ældste først) i parantes efter datoens titel, fx:</p>
+<ul>
+  <li>Udløbsdato (nyeste først)</li>
+  <li>Udløbsdato (ældste først)</li>
+</ul>
+
+<p>Hvis der blot er én overordnet dato, der kan sorteres efter, kan sorteringsparametrets titel holdes simpelt:</p>
+<ul>
+  <li>Nyeste først</li>
+  <li>Ældste først</li>
+</ul>
+
+<p>I overflowmenuen bør sorteringsparametrene vises i alfabetisk rækkefølge A-Å. Den aktuelle sortering markeres med et flueben.</p>
+
+<p>Sorteringsmenuen vises venstrestillet lige over det indhold, der sorteres.</p>
 
 
       </section>
