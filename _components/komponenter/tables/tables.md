@@ -22,6 +22,10 @@ subnav:
   href: '#forskellig-linjehøjde'
 - text: Med titel i venstre kolonne
   href: '#med-titel-i-venstre-kolonne'
+- text: Sortering i tabeller
+  href: '#sortering-i-tabeller'
+- text: Søgning i tabeller
+  href: '#søgning-i-tabeller'
 - text: Avancerede tabeller
   href: '#avancerede-tabeller'
 component: table
@@ -50,13 +54,16 @@ Vær meget opmærksom på typen af data, din tabel skal præsentere brugeren for
 
 Såfremt der er tale om meget <a href="/komponenter/tables/#avancerede-tabeller">avancerede tabeller</a>, kan der bruges en tredjepartsløsning.
 
+Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tale om en numerisk størrelse som f.eks. antal eller pengebeløb. Dette gør det lettere for brugeren at skimme og sammenligne numerisk data (Rutter, 2017). Tal, der ikke angiver en numerisk størrelse og dermed ikke indebærer et behov for sammenligning, skal ikke højrestilles. Det kan f.eks. være et ID-nummer.
+
 {% include dos-donts-box.html component="table-dos-donts" title="Tabeller do's and don'ts" %}
 
 {:.h4}
 ### Referencer
 
-<a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:.nobullet-liat}
+- <a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://alistapart.com/article/web-typography-tables/" class="icon-link">Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 {:.h3}
 ## Eksempler på brug i løsning

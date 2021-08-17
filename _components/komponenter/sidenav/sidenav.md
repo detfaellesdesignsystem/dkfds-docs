@@ -56,10 +56,4 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 <a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 
-{:.h3}
-## Eksempler på brug i løsning
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
-
 {% include child-components.html parent='Sidenav' %}
