@@ -112,6 +112,7 @@
 <symbol id="sort-table-descending" viewBox="0 0 24 24"><path fill="#1A1A1A" d="M6.1,13.5l5.9,5.9l5.9-5.9H6.1z"/></symbol>
 <symbol id="sort-table-ascending" viewBox="0 0 24 24"><path fill="#1A1A1A" d="M17.9,10.5L12,4.6l-5.9,5.9H17.9z"/></symbol>
 <symbol id="sort-table-none" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" fill="#1A1A1A" d="M17.9,10.5L12,4.6l-5.9,5.9H17.9z M12,6.7L14.3,9H9.7L12,6.7z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#1A1A1A" d="M6.1,13.5l5.9,5.9l5.9-5.9H6.1z M12,17.3L9.7,15h4.7L12,17.3z"/></symbol>
+<symbol id="sort-default" viewBox="0 0 24 24"><path d="M13 18H17V16H13V18ZM13 6V8H23V6H13ZM13 13H20V11H13V13Z" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M2 6L6 2L10 6L7 6L7 18L10 18L7 21L6 22L5 21L2 18L5 18L5 6L2 6Z" fill="black"/></symbol>
 
 <symbol id="file-excel" viewBox="0 0 24 24"><path d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M12.9 14.5L15.8 19H14L12 15.6L10 19H8.2L11.1 14.5L8.2 10H10L12 13.4L14 10H15.8L12.9 14.5Z" /></symbol>
 <symbol id="file-image" viewBox="0 0 24 24"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18M17,13V19H7L12,14L14,16M10,10.5A1.5,1.5 0 0,1 8.5,12A1.5,1.5 0 0,1 7,10.5A1.5,1.5 0 0,1 8.5,9A1.5,1.5 0 0,1 10,10.5Z" /></symbol>
@@ -965,7 +966,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -1936,11 +1937,7 @@
           
 
           <details class="details js-details">
-    <summary class="details-summary">
-        <span class="details-summary-text">
-            Se her hvis det ikon du leder efter ikke er på listen nedenfor
-        </span>
-    </summary>
+    <summary class="details-summary"><span class="details-summary-text">Se her hvis det ikon du leder efter ikke er på listen nedenfor</span></summary>
     <div class="details-text">
         <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
         <ul>
@@ -1962,11 +1959,7 @@
     <input class="form-input" required="" name="icon-search-input" type="text" aria-describedby="icon-search-input-hint" id="icon-search-input" />
 </div>
 <details class="details js-details  mt-4">
-    <summary class="details-summary">
-        <span class="details-summary-text" id="checkbox-list-label">
-            Filtrer på kategori
-        </span>
-    </summary>
+    <summary class="details-summary"><span class="details-summary-text" id="checkbox-list-label">Filtrer på kategori</span></summary>
     <div class="details-text">
         <fieldset aria-labelledby="checkbox-list-label">
           <ul class="nobullet-list" id="category-list">
@@ -2389,6 +2382,15 @@
 
           
 <div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort-by-alpha" data-icon-keywords="sort, sorting, sorter, sortér, alfabetisk">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-by-alpha"></use></svg>
+        <p data-tooltip="sort-by-alpha">Sortér alfabetisk</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="expand-more" data-icon-keywords="udvid, expand, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#expand-more"></use></svg>
         <p data-tooltip="expand-more">Udvid (chevron)</p>
@@ -2418,7 +2420,7 @@
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-descending" data-icon-keywords="tabel, table, sort, sortering, kolonne, descending">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-descending"></use></svg>
-        <p data-tooltip="sort-table-descending"></p>
+        <p data-tooltip="sort-table-descending">Sortér tabel (faldende)</p>
     </div>
   </div>
 
@@ -2427,7 +2429,7 @@
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-ascending" data-icon-keywords="tabel, table, sort, sortering, kolonne, ascending">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-ascending"></use></svg>
-        <p data-tooltip="sort-table-ascending"></p>
+        <p data-tooltip="sort-table-ascending">Sortér tabel (stigende)</p>
     </div>
   </div>
 
@@ -2436,7 +2438,7 @@
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-none" data-icon-keywords="tabel, table, sort, sortering, kolonne">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-none"></use></svg>
-        <p data-tooltip="sort-table-none"></p>
+        <p data-tooltip="sort-table-none">Sortér tabel</p>
     </div>
   </div>
 
