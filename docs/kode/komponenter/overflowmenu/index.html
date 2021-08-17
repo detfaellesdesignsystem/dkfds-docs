@@ -1674,7 +1674,7 @@
 
     
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
 
   
@@ -1691,6 +1691,17 @@
 
     
 
+    <ul class="sidenav-sub_list" role="menu">
+    
+
+
+<li class=" " role="none">
+<a href="#sortering"  role="menuitem">Sortering</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -2690,7 +2701,7 @@
 
     
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
 
   
@@ -2707,6 +2718,17 @@
 
     
 
+    <ul class="sidenav-sub_list" role="menu">
+    
+
+
+<li class=" " role="none">
+<a href="#sortering"  role="menuitem">Sortering</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -3247,6 +3269,81 @@
   </tbody>
 </table>
 
+<h2>Varianter</h2>
+
+<h3 id="sortering">Sortering</h3>
+
+<div class="component-preview component-preview-code  component-code-sort" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sort/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: sort</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu overflow-menu--sort overflow-menu--open-right&quot;
+    id=&quot;trash-sorting-overflowmenu&quot;&gt;
+    &lt;button class=&quot;button-overflow-menu&quot;
+        data-js-target=&quot;trash-sorting-overflowmenu-panel&quot;
+        aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+        &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#sort-default&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Sortér:&lt;span
+            class=&quot;selected-value&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;overflow-menu-inner&quot; id=&quot;trash-sorting-overflowmenu-panel&quot;
+        aria-hidden=&quot;true&quot;&gt;
+        &lt;ul class=&#39;overflow-list&#39; role=&quot;menu&quot;&gt;
+            &lt;li role=&quot;menuitem&quot; aria-selected=&quot;true&quot;&gt;&lt;button
+                    id=&quot;newfirst&quot;&gt;Nyeste først&lt;/button&gt;&lt;/li&gt;
+            &lt;li role=&quot;menuitem&quot;&gt;&lt;button id=&quot;oldfirst&quot;&gt;Ældste først&lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li role=&quot;menuitem&quot;&gt;&lt;button id=&quot;affaldstype-asc&quot;&gt;Affaldstype
+                    (A-Å)&lt;/button&gt;&lt;/li&gt;
+            &lt;li role=&quot;menuitem&quot;&gt;&lt;button id=&quot;affaldstype-desc&quot;&gt;Affaldstype
+                    (Å-A)&lt;/button&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4>JavaScript</h4>
+
+<p>Overflow menu med sorteringsfunktion kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.DropdownSort(document.getElementById(&#39;OVERFLOW-BUTTON-ID&#39;));</code></pre></figure>
+
+<h4>Events</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Event key</th>
+      <th>Element</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fds.dropdown.open</td>
+      <td><code>button.js-dropdown</code></td>
+      <td>Når en overflow menu bliver foldet ud, bliver eventet <code>fds.dropdown.open</code> udløst på knappen</td>
+    </tr>
+    <tr>
+      <td>fds.dropdown.close</td>
+      <td><code>button.js-dropdown</code></td>
+      <td>Når en overflow menu bliver foldet ind, bliver eventet <code>fds.dropdown.close</code> udløst på knappe</td>
+    </tr>
+    <tr>
+      <td>fds.dropdown.selected</td>
+      <td><code>button.js-dropdown</code></td>
+      <td>Når en værdi bliver valgt</td>
+    </tr>
+  </tbody>
+</table>
 
       </section>
     </main>

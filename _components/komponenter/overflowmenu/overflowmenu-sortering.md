@@ -7,18 +7,18 @@ componentTitle: Eksempel på sorteringsfunktion med overflow menu
 lead: Ved sortering har brugeren indflydelse på den rækkefølge, forskelligt indhold vises i, så det bliver lettere at navigere i.
 ---
 
-{:.h3}
-## Anvendes til
+{:.h4}
+### Anvendes til
 
 Sortering med overflow menu anvendes til at sortere indhold af forskellig karakter.
 
-{:.h3}
-## Anvendes ikke til
+{:.h4}
+### Anvendes ikke til
 
 Sortering med overflow menu anbefales ikke til tabeller med mange sorterbare kolonner. Her foretrækkes i stedet sorteringsikoner i tabellens kolonner som vist på siden Tabeller.
 
-{:.h3}
-## Vejledning
+{:.h4}
+### Vejledning
 
 Indhold kan sorteres alfabetisk, efter tal eller efter dato.
 
