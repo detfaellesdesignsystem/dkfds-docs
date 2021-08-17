@@ -8,6 +8,10 @@ subcategory: Komponenter
 description: "Du kan bruge overflow menuer til at vise eller skjule en liste af links."
 tags:
 lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links eller knapper. Når brugeren klikker på menulinjen, folder listen sig ud.
+anchor: true
+subnav:
+- text: Sortering
+  href: '#sortering'
 component: overflow-menu
 componentTitle: "Eksempel på overflow menu"
 componentCode: "/kode/komponenter/overflowmenu/"

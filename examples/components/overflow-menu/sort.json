@@ -1,0 +1,26 @@
+{
+  "data": {
+    "label": "Sortér:",
+    "id": "trash-sorting-overflowmenu",
+    "icon": "sort-default",
+    "items": [
+      {
+        "text": "Nyeste først",
+        "id": "newfirst",
+        "selected": true
+      },
+      {
+        "text": "Ældste først",
+        "id": "oldfirst"
+      },
+      {
+        "text": "Affaldstype (A-Å)",
+        "id": "affaldstype-asc"
+      },
+      {
+        "text": "Affaldstype (Å-A)",
+        "id": "affaldstype-desc"
+      }
+    ]
+  }
+}

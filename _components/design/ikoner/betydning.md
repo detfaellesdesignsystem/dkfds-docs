@@ -15,11 +15,7 @@ tags:
 ---
 
 <details class="details js-details">
-    <summary class="details-summary">
-        <span class="details-summary-text">
-            Se her hvis det ikon du leder efter ikke er på listen nedenfor
-        </span>
-    </summary>
+    <summary class="details-summary"><span class="details-summary-text">Se her hvis det ikon du leder efter ikke er på listen nedenfor</span></summary>
     <div class="details-text">
         <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
         <ul>
@@ -41,11 +37,7 @@ tags:
     <input class="form-input" required name="icon-search-input" type="text" aria-describedby="icon-search-input-hint" id="icon-search-input" />
 </div>
 <details class="details js-details  mt-4">
-    <summary class="details-summary">
-        <span class="details-summary-text" id="checkbox-list-label">
-            Filtrer på kategori
-        </span>
-    </summary>
+    <summary class="details-summary"><span class="details-summary-text" id="checkbox-list-label">Filtrer på kategori</span></summary>
     <div class="details-text">
         <fieldset aria-labelledby="checkbox-list-label">
           <ul class="nobullet-list" id="category-list">
@@ -154,10 +146,13 @@ tags:
           {% include icon.html icon="lock" keywords="log in, login, log på, log ind, log, in, på, ind, lås, lock, hængelås, låst" label="Log på (lukket hængelås)" %}
           {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Skjul" %}
           {% include icon.html icon="sort-by-alpha" keywords="sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
+          {% include icon.html icon="sort-by-alpha" keywords="sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
           {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Udvid (chevron)" %}
           {% include icon.html icon="expand-less" keywords="collapse, pil, arrow" label="Indskrænk (chevron)" %}
           {% include icon.html icon="visibility" keywords="øje, eye, se, see, vis, blind" label="Vis" %}
-          {% include icon.html icon="add" keywords="+, plus, add, tilføj, accordion, fold ud, expand" label="Åbn accordion (plus)" %}
+          {% include icon.html icon="sort-table-descending" keywords="tabel, table, sort, sortering, kolonne, descending" label="Sortér tabel (faldende)"  %}
+          {% include icon.html icon="sort-table-ascending" keywords="tabel, table, sort, sortering, kolonne, ascending" label="Sortér tabel (stigende)" %}
+          {% include icon.html icon="sort-table-none" keywords="tabel, table, sort, sortering, kolonne" label="Sortér tabel" %}
     </div>
   </div>
 </section>
