@@ -38,6 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
             sortTable('farvekode', newSorting);
         });
     }
+
+    if(document.getElementById('btnSearchTable') !== null){
+        document.getElementById('formSearchTable').addEventListener('submit', function(event){
+            event.preventDefault();
+            let query = document.getElementById('inputSearchTable').value;
+            console.log('query', query);
+            searchTable(query);
+        });
+    }
 });
 
 function setSortingIcon(button, sorting){
@@ -100,6 +109,41 @@ function sortTable(column, order){
         tr.appendChild(tdBeskrivelse);
         tr.appendChild(tdHvorenderdet);
         tbody.appendChild(tr);
+    }
+    
+    tbody.removeAttribute("aria-busy");
+}
+function searchTable(query){
+    let table = document.getElementById("searchTable");
+    let tbody = table.getElementsByTagName('tbody')[0];
+    tbody.setAttribute("aria-busy", "true");
+    tbody.innerHTML = "";
+
+    for(let r in data){
+        let row = data[r];
+        if(query === "" || (row.affaldstype.toLowerCase().includes(query) || row.farvekode.toLowerCase().includes(query) || row.beskrivelse.toLowerCase().includes(query) || row.hvorenderdet.toLowerCase().includes(query))){
+            let tr = document.createElement('tr');
+            let tdAffaldstype = document.createElement('td');
+            tdAffaldstype.setAttribute('data-title', "Affaldstype");
+            tdAffaldstype.innerText = data[r].affaldstype;
+            let tdFarvekode = document.createElement('td');
+            tdFarvekode.setAttribute('data-title', "Farvekode");
+            tdFarvekode.innerText = data[r].farvekode;
+
+            let tdBeskrivelse = document.createElement('td');
+            tdBeskrivelse.setAttribute('data-title', "Beskrivelse");
+            tdBeskrivelse.innerText = data[r].beskrivelse;
+            
+            let tdHvorenderdet = document.createElement('td');
+            tdHvorenderdet.setAttribute('data-title', "Hvor ender det?");
+            tdHvorenderdet.innerText = data[r].hvorenderdet;
+            
+            tr.appendChild(tdAffaldstype);
+            tr.appendChild(tdFarvekode);
+            tr.appendChild(tdBeskrivelse);
+            tr.appendChild(tdHvorenderdet);
+            tbody.appendChild(tr);
+        }
     }
     
     tbody.removeAttribute("aria-busy");

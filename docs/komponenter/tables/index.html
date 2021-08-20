@@ -2621,7 +2621,7 @@
   <li><a href="https://alistapart.com/article/web-typography-tables/" class="icon-link">Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-<h2 class="h3">Eksempler på brug i løsning</h2>
+<h2 class="h3">Se komponenten i eksempelløsninger</h2>
 
 <ul class="nobullet-list">
   <li><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a></li>
@@ -3098,10 +3098,10 @@
     <thead>
         <tr>
             <th aria-sort="none" class="table-header-no-wrap">
-                Affaldstype<button id="btn-sort-by-affaldstype" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-none"></use></svg><span class="sr-only">Sortér efter
+                Affaldstype<button id="btn-sort-by-affaldstype" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-none"></use></svg><span class="sr-only">Sortér efter
                         affaldstype</span></button></th>
             <th aria-sort="none" class="table-header-no-wrap">
-                Farvekode<button id="btn-sort-by-farvekode" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-none"></use></svg><span class="sr-only">Sortér efter
+                Farvekode<button id="btn-sort-by-farvekode" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-none"></use></svg><span class="sr-only">Sortér efter
                         farvekode</span></button></th>
             <th aria-sort="none">Beskrivelse</th>
             <th aria-sort="none">Hvor ender det?</th>
@@ -3158,9 +3158,9 @@
 
 <p>Tabeller med sortering skal altid have en aktiv sortering; sorteringen kan ikke deaktiveres. Defaultsortering vælges ud fra, hvilken kolonne brugerne som regel vil forvente er sorteret. Dette vil ofte være den første kolonne eller en dato.</p>
 
-<p>Hvis kun få kolonner i en tabel kan sorteres, kan komponenten Sortering med overflow menu anvendes i stedet.</p>
+<p>Hvis kun få kolonner i en tabel kan sorteres, kan komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a> anvendes i stedet.</p>
 
-<p>Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten Sortering med overflow menu.</p>
+<p>Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a>.</p>
 
 </section>
 
@@ -3178,12 +3178,13 @@
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <form method="get" action="/">
+        <form method="get" action="" id="formSearchTable">
     <div class="form-group search">
-        <label for="input-type-text" class="sr-only">Søg efter
+        <label for="inputSearchTable" class="sr-only">Søg efter
             indhold</label>
-        <input class="form-input input-char-27" id="input-type-text" name="search-button" type="search" />
-        <button class="button button-search">Søg i tabellen</button>
+        <input class="form-input input-char-27" id="inputSearchTable" name="searchtable" type="search" />
+        <button class="button button-search" id="btnSearchTable">Søg i
+            tabellen</button>
     </div>
 </form>
 

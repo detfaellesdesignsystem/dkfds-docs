@@ -1,15 +1,16 @@
-<form method="get" action="/">
+<form method="get" action="" id="formSearchTable">
     <div class="form-group search">
-        <label for="input-type-text" class="sr-only">Søg efter
+        <label for="inputSearchTable" class="sr-only">Søg efter
             indhold</label>
-        <input class="form-input input-char-27" id="input-type-text"
-            name="search-button" type="search">
-        <button class="button button-search">Søg i tabellen</button>
+        <input class="form-input input-char-27" id="inputSearchTable"
+            name="searchtable" type="search">
+        <button class="button button-search" id="btnSearchTable">Søg i
+            tabellen</button>
     </div>
 </form>
 
 <div class="table--responsive-scroll mt-6">
-    <table class="table" aria-live="polite">
+    <table class="table" aria-live="polite" id="searchTable">
         <thead>
             <tr>
                 <th>Affaldstype</th>
