@@ -40,7 +40,7 @@ Hvor det er muligt, skal du sikre dig, at tilbage-linket fungerer, selvom JavaSc
 Adam Silver: Form Design Patterns (2018)
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/aktindsigt/aktindsigt-2/" target="_blank" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>

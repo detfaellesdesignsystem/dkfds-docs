@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
             if(currentSorting == "ascending"){
                 newSorting = "descending";
             }
+            setSortingIcon(this, newSorting);
             btnFarvekode.parentNode.setAttribute('aria-sort', "none");
+            setSortingIcon(btnFarvekode, 'none');
             this.parentNode.setAttribute('aria-sort', newSorting);
             sortTable('affaldstype', newSorting);
         });
@@ -29,12 +31,26 @@ document.addEventListener("DOMContentLoaded", function() {
             if(currentSorting == "ascending"){
                 newSorting = "descending";
             }
+            setSortingIcon(this, newSorting);
             btnAffaldstype.parentNode.setAttribute('aria-sort', "none");
+            setSortingIcon(btnAffaldstype, 'none');
             this.parentNode.setAttribute('aria-sort', newSorting);
             sortTable('farvekode', newSorting);
         });
     }
 });
+
+function setSortingIcon(button, sorting){
+    let icon = "sort-table-none";
+    if(sorting === "ascending"){
+        icon = "sort-table-ascending";
+    } else if(sorting === "descending"){
+        icon = "sort-table-descending";
+    }
+
+    button.getElementsByTagName('svg')[0].getElementsByTagName('use')[0].setAttribute('href', '#'+icon);
+}
+
 function compareStrings(a, b, order) {
     // Assuming you want case-insensitive comparison
     a = a.toLowerCase();

@@ -67,9 +67,10 @@ Der bør være en overordnet label for hele listen af radioknapper
 
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
+- <a href="/pages/eksempler/AES-erstatningssag/aes-1/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
 
 {% include child-components.html parent='Radiobutton' %}

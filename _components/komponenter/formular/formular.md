@@ -40,7 +40,7 @@ componentCode: "/kode/komponenter/formular/"
 - Linda Newman Lior: Writing for Interaction (2013)
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/aktindsigt/aktindsigt-1/" target="_blank" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>

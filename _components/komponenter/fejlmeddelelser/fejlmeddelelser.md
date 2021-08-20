@@ -118,7 +118,7 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>

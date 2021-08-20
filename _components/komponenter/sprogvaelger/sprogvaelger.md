@@ -60,10 +60,10 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 - <a href="https://usersnap.com/blog/design-language-switch/" class="icon-link">Designing a language switch: Examples and best practices<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/digital-flytning/flytning-1/" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
-- <a href="/pages/eksempler/aes/oversigt/" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
+- <a href="/pages/eksempler/digital-flytning/flytning-1/" title="Eksempelløsning Digital flytning åbnes i nyt vindue" target="_blank">Digital flytning</a>
+- <a href="/pages/eksempler/aes/oversigt/" title="Eksempelløsning Sager hos AES åbnes i nyt vindue" target="_blank">Sager hos AES</a>
 
 {% include child-components.html parent='sprogvaegler' %}

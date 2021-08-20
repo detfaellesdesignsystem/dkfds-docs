@@ -55,6 +55,12 @@ Når du laver en header, bør du følge disse principper:
 
 <div><img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" /></div>
 
+
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>
+
 {:.h3}
 ## Headerens rækker forklaret
 

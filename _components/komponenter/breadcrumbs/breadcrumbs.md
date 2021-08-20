@@ -55,7 +55,7 @@ På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses 
 - <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" class="icon-link">When You Should Use a Breadcrumb Navigation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/aes/sagsoverblik/" target="_blank" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>

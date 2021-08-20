@@ -48,7 +48,7 @@ ISO 9241-143: Forms (2012)
 
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>

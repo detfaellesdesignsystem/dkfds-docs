@@ -53,7 +53,7 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 - <a href="https://www.nngroup.com/articles/utility-navigation/" class="icon-link">Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/AES-erstatningssag/aes-5/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>

@@ -12,6 +12,6 @@ Når sortering vælges, sorteres per default stigende. Klikkes der på et aktivt
 
 Tabeller med sortering skal altid have en aktiv sortering; sorteringen kan ikke deaktiveres. Defaultsortering vælges ud fra, hvilken kolonne brugerne som regel vil forvente er sorteret. Dette vil ofte være den første kolonne eller en dato.
 
-Hvis kun få kolonner i en tabel kan sorteres, kan komponenten Sortering med overflow menu anvendes i stedet.
+Hvis kun få kolonner i en tabel kan sorteres, kan komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a> anvendes i stedet.
 
-Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten Sortering med overflow menu.
+Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a>.

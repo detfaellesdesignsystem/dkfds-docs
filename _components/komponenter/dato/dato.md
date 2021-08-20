@@ -52,7 +52,7 @@ Ofte kan et datofelter til indtastning være nemmere at anvende - og gøre tilg�
 
 
 {:.h3}
-## Eksempler på brug i løsning
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/boernetilskud/boernetilskud-2/" target="_blank" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
