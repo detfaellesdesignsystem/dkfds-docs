@@ -26,16 +26,20 @@ tags:
         <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
     </div>
 </details>
-
+<form method="get" action="" id="search-icons-form">
 <div class="search-container form-group">
-    <label class="form-label " for="icon-search-input">
+    <label class="form-label" for="icon-search-input">
         Find dit ikon
     </label>
     <span class="form-hint" id="icon-search-input-hint">
         Skriv navnet på ikonet du leder efter  i feltet, så ændres listen
     </span>
-    <input class="form-input" required name="icon-search-input" type="text" aria-describedby="icon-search-input-hint" id="icon-search-input" />
+    <div class="mt-3 search">
+      <input class="form-input input-width-s" aria-describedby="icon-search-input-hint" id="icon-search-input" name="s" title="Search" type="search">
+      <button type="submit" class="button button-search">Søg ikoner</button>
+    </div>
 </div>
+</form>
 <details class="details js-details  mt-4">
     <summary class="details-summary"><span class="details-summary-text" id="checkbox-list-label">Filtrer på kategori</span></summary>
     <div class="details-text">
@@ -312,6 +316,10 @@ tags:
 <script>
     let searchTerm, selectedIcon
     const searchInput = document.getElementById("icon-search-input");
+    const searchForm = document.getElementById("search-icons-form");
+    
+    let queryParams = new URLSearchParams(window.location.search);
+    searchInput.value = queryParams.get('s');
     let searchableItems = [];
     let icons = document.getElementsByClassName('icon-box');
     for(let i = 0; i < icons.length; i++){
@@ -321,7 +329,7 @@ tags:
       const category = icons[i].parentNode.parentNode.getAttribute('id').replace('icon-list-', '');
       searchableItems.push({"name": itemName, "keywords": itemKeywords, "label": itemLabel, "category": category});
     }
-    searchInput.addEventListener("keyup" , handleInput);
+    searchForm.addEventListener("submit" , handleInput);
     
      let categories = document.getElementById('category-list').getElementsByTagName('input');
       for(let i = 0; i < categories.length; i++){
@@ -350,7 +358,15 @@ tags:
 
 
     function handleInput(e) {
+      e.preventDefault();
       let searchTerm = searchInput.value.toLowerCase();
+      let queryParams = new URLSearchParams(window.location.search);
+      if(searchTerm !== ""){
+        queryParams.set('s', searchInput.value);
+      } else{
+        queryParams.delete('s');
+      }
+      history.replaceState(null, null, "?" + queryParams.toString());
       let lists = document.getElementsByClassName('icon-list');
       for(let i = 0; i < lists.length; i++){
         lists[i].innerHTML = "";
