@@ -146,13 +146,15 @@ tags:
           {% include icon.html icon="lock" keywords="log in, login, log på, log ind, log, in, på, ind, lås, lock, hængelås, låst" label="Log på (lukket hængelås)" %}
           {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Skjul" %}
           {% include icon.html icon="sort-by-alpha" keywords="sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
-          {% include icon.html icon="sort-by-alpha" keywords="sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
           {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Udvid (chevron)" %}
           {% include icon.html icon="expand-less" keywords="collapse, pil, arrow" label="Indskrænk (chevron)" %}
           {% include icon.html icon="visibility" keywords="øje, eye, se, see, vis, blind" label="Vis" %}
           {% include icon.html icon="sort-table-descending" keywords="tabel, table, sort, sortering, kolonne, descending" label="Sortér tabel (faldende)"  %}
           {% include icon.html icon="sort-table-ascending" keywords="tabel, table, sort, sortering, kolonne, ascending" label="Sortér tabel (stigende)" %}
           {% include icon.html icon="sort-table-none" keywords="tabel, table, sort, sortering, kolonne" label="Sortér tabel" %}
+          {% include icon.html icon="sort-default" keywords="sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér" %}
+          {% include icon.html icon="sort-ascending" keywords="stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (stigende)" %}
+          {% include icon.html icon="sort-descending" keywords="faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (faldende)" %}
     </div>
   </div>
 </section>
