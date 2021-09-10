@@ -1,5 +1,4 @@
 {% from "components/form/controls/input.njk" import textinput as textinput %}
-
-{%- for input in example_inputs -%}
+{%- for input in textinput_examples -%}
     {{textinput(input)}}
 {% endfor -%}

@@ -17,8 +17,8 @@
 ================================================== -->
   
 
-<title>Obligatoriske og frivillige felter | Det Fælles Designsystem</title>
-<meta property="og:title" content="Obligatoriske og frivillige felter | Det Fælles Designsystem">
+<title>Prefix og suffix | Det Fælles Designsystem</title>
+<meta property="og:title" content="Prefix og suffix | Det Fælles Designsystem">
 
 
 
@@ -59,7 +59,7 @@
 </noscript>
 
   </head>
-  <body class="page-obligatoriske-og-frivillige-felter layout-component">
+  <body class="page-prefix-og-suffix layout-component">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -1729,126 +1729,82 @@
         </div>
     </div>
 
-      <section id="section-/komponenter/felter/tekstfelt-frivilligt">
+      <section id="section-/komponenter/felter/tekstfelt-prefix-suffix">
           
           
 
           <p class="subheading">
             
           </p>
-          <h1 id="obligatoriske-og-frivillige-felter">Obligatoriske og frivillige felter</h1>
+          <h1 id="prefix-og-suffix">Prefix og suffix</h1>
           
 
           
 
-          <p>Undgå frivillige felter så vidt muligt. Hvis et felt er frivilligt, så overvej altid, om det er nødvendigt at have med i formularen.</p>
+          <p>Prefix og suffix kan bruges til at tydeliggøre, hvordan brugeren skal angive bestemte data såsom beløb, antal m.m.</p>
 
-<p>Hvis en formular indeholder frivillige felter, som vil have en betydelig positiv effekt for brugeren, kan dette forklares i en hjælpetekst. Det kan f.eks. være tilfældet med felter, der forkorter tiden for en sagsbehandling betragteligt, hvis de bliver udfyldt.</p>
+<p>Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyldes, eftersom det ikke læses højt af skærmlæsere. Feltets label eller en hjælpetekst kan bruges til også at indikere dette.</p>
 
-<h3>Når der er flest obligatoriske felter</h3>
-
-<p>I de fleste tilfælde bør der være flere obligatoriske end frivillige felter. Marker da de frivillige felter i formularen.</p>
-
-<div class="component-preview  component-preview-text-input-mandatory" aria-label="Eksempel på formular med flest obligatoriske felter">
+<div class="component-preview  component-preview-text-input-prefix-suffix" aria-label="Eksempel på felter med prefix og suffix">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/text-input-mandatory/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input-mandatory</span></a>
+        <a href="/eksempel/text-input-prefix-suffix/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input-prefix-suffix</span></a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         <div class="form-group">
-    <label class="form-label " for="input-mandatory1">
-        Label
+    <label class="form-label " for="input-antal">
+        Antal
     </label>
 
-    <input class="form-input " required="" id="input-mandatory1" value="" name="input-mandatory1" type="text" />
+    <div class="form-input-wrapper form-input-wrapper--suffix">
 
+        <input class="form-input input-char-8" required="" id="input-antal" value="56" name="input-antal" type="number" />
+        <div class="form-input-suffix" aria-hidden="true">stk.</div>
+    </div>
 </div>
 <div class="form-group">
-    <label class="form-label " for="input-optional">
-        Label<span class="weight-normal"> (frivilligt)</span>
+    <label class="form-label " for="input-pris">
+        Pris i 1000 kr.
     </label>
 
-    <input class="form-input " id="input-optional" value="" name="input-optional" type="text" />
+    <div class="form-input-wrapper form-input-wrapper--suffix">
 
+        <input class="form-input input-char-11" required="" id="input-pris" value="123" name="input-pris" type="number" />
+        <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
+    </div>
 </div>
 <div class="form-group">
-    <label class="form-label " for="input-mandatory2">
-        Label
+    <label class="form-label " for="input-beloeb">
+        Beløb i €
     </label>
 
-    <input class="form-input " required="" id="input-mandatory2" value="" name="input-mandatory2" type="text" />
+    <div class="form-input-wrapper form-input-wrapper--prefix">
+        <div class="form-input-prefix" aria-hidden="true">€</div>
+        <input class="form-input input-width-xs" required="" id="input-beloeb" value="1.234" name="input-beloeb" type="number" />
 
+    </div>
 </div>
-<div class="form-group">
-    <label class="form-label " for="input-mandatory3">
-        Label
+<div class="form-group form-error">
+    <label class="form-label " for="input-pris-error">
+        Pris i 1000 kr.
     </label>
 
-    <input class="form-input " required="" id="input-mandatory3" value="" name="input-mandatory3" type="text" />
+    <span class="form-error-message" id="input-pris-error-error">
+        <span class="sr-only">Fejl:</span> Angiv en pris
+    </span>
+    <div class="form-input-wrapper form-input-wrapper--suffix">
 
+        <input class="form-input input-char-11" required="" id="input-pris-error" value="" name="input-pris" type="number" aria-invalid="true" aria-describedby=" input-pris-error-error" />
+        <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
+    </div>
 </div>
     </div>
     
 </div>
 
-<h3>Når der er flest frivillige felter</h3>
-
-<p>Hvis en formular indeholder flere frivillige end obligatoriske felter, fremhæves de obligatoriske felter i stedet for de frivillige.</p>
-
-<div class="component-preview  component-preview-text-input-optional" aria-label="Eksempel på formular med flest frivillige felter">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-input-optional/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input-optional</span></a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <div class="form-group">
-    <label class="form-label " for="input-optional1">
-        Label
-    </label>
-
-    <input class="form-input " id="input-optional1" value="" name="input-optional1" type="text" />
-
-</div>
-<div class="form-group">
-    <label class="form-label " for="input-mandatory">
-        Label<span class="weight-normal"> (*skal udfyldes)</span>
-    </label>
-
-    <input class="form-input " required="" id="input-mandatory" value="" name="input-mandatory" type="text" />
-
-</div>
-<div class="form-group">
-    <label class="form-label " for="input-optional2">
-        Label
-    </label>
-
-    <input class="form-input " id="input-optional2" value="" name="input-optional2" type="text" />
-
-</div>
-<div class="form-group">
-    <label class="form-label " for="input-optional3">
-        Label
-    </label>
-
-    <input class="form-input " id="input-optional3" value="" name="input-optional3" type="text" />
-
-</div>
-    </div>
-    
-</div>
-
-<h3 class="h4">Referencer</h3>
-
-<ul class="nobullet-list">
-  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
-  <li>Caroline Jarrett &amp; Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)</li>
-</ul>
 
 
       </section>

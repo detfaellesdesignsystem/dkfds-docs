@@ -30,8 +30,8 @@ anchor: true
 subnav:
 - text: Felt med fejlmeddelelse
   href: "#felt-med-fejlmeddelelse"
-- text: Felt med frivillig indtastning
-  href: "#felt-med-frivillig-indtastning"
+- text: Obligatoriske og frivillige felter
+  href: "#obligatoriske-og-frivillige-felter"
 - text: Felt med hjælpetekst
   href: "#felt-med-hjælpetekst"
 - text: Deaktiveret felt
