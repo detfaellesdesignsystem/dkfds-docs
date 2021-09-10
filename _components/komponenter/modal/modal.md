@@ -48,6 +48,8 @@ Vær sikker på at modalvinduet kun akkurat passer til sit indhold og ikke dækk
 
 Brugeren skal selv aktivere modalvinduet. Det må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt.
 
+Hold teksten i modalvinduet så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalvinduet bliver så langt, at vinduet scroller. Overvej at bruge en individuel side i stedet for et modalvindue, hvis indholdet er meget langt.
+
 {:.h3}
 ## Se komponenten i eksempelløsninger
 

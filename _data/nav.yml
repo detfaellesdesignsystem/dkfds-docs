@@ -26,8 +26,6 @@ mobile:
 Krav_category:
 - href: /krav/borgerdk-virk/
 - href: /krav/om-kravene/
-- href: /krav/designtjek/
-- href: /krav/tilgaengelighed/
 
 #Left menu for kom igang-category
 Krav_selvbetjening_category:
@@ -51,6 +49,8 @@ Design_category:
 - href: /design/layout/
   categorynav: 'Layout_category'
 - href: /design/designressourcer/
+- href: /design/designtjek/
+- href: /design/tilgaengelighed/
 
 Icon_category:
   - href: /design/ikoner/ikoner-og-deres-betydning/

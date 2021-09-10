@@ -51,7 +51,6 @@
 
     <div class="overlay"></div>
     <nav class=" nav">
-        <!-- collapsible-->
         <button
             class="button button-tertiary button-menu-close js-menu-close"
             title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
@@ -199,7 +198,8 @@
                     value="Oplysninger om varigt mén"
                     class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                     data-js-target='#collapse-check'
-                    aria-controls='collapse-check' aria-expanded='false' />
+                    data-aria-controls='collapse-check'
+                    aria-expanded='false' />
                 <label for="id-documentation-1" class="">Oplysninger om
                     varigt mén</label>
 
@@ -331,7 +331,7 @@
                     value="Oplysninger om tabt erhvervsevne"
                     class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                     data-js-target='#collapse-check1'
-                    aria-controls='collapse-check1'
+                    data-aria-controls='collapse-check1'
                     aria-expanded='false' />
                 <label for="id-documentation-2" class="">Oplysninger om
                     tabt erhvervsevne</label>
@@ -464,7 +464,7 @@
                     value="Tilføj andre dokumenter"
                     class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                     data-js-target='#collapse-check2'
-                    aria-controls='collapse-check2'
+                    data-aria-controls='collapse-check2'
                     aria-expanded='false' />
                 <label for="id-documentation-3" class="">Tilføj andre
                     dokumenter</label>
@@ -631,9 +631,8 @@
             <h2 class="modal-title" id="modal-contact-title">
                 Kontakt
             </h2>
-            <button class="modal-close button button-unstyled"
-                aria-label="Luk"
-                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
+            <button class="modal-close function-link"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
             <div class="alert alert-warning" role="alert">

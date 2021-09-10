@@ -1,13 +1,14 @@
 ---
-permalink: /krav/designtjek/
+permalink: /design/designtjek/
 redirect_from:
 - /komigang/tildesignere/designtjekliste/
 - /komigang/tjekliste/
+- /krav/designtjek/
 layout: styleguide
 title: "Designtjek"
 description: "En tjekliste med 10 punkter, der kan hjælpe dig med at leve op til FDS retningslinjer."
-category: Krav_category
-subcategory: Krav
+category: Design_category
+subcategory: Design
 ---
 <h2 class="h5">1. Headeren skal indeholde de obligatoriske linjer og følge layoutreglerne</h2>
 

@@ -1,9 +1,9 @@
 <table class="table table--responsive-headers mt-6" id="sortingTable">
     <thead>
         <tr>
-            <th aria-sort="none" class="table-header-no-wrap">
+            <th aria-sort="ascending" class="table-header-no-wrap">
                 Affaldstype<button id="btn-sort-by-affaldstype"
-                    class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-none"></use></svg><span
+                    class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-ascending"></use></svg><span
                         class="sr-only">Sortér efter
                         affaldstype</span></button></th>
             <th aria-sort="none" class="table-header-no-wrap">
@@ -17,6 +17,15 @@
     </thead>
     <tbody aria-live="polite">
         <tr>
+            <td data-title="Affaldstype">Bioaffald og kompost</td>
+            <td data-title="Farvekode">Beige</td>
+            <td data-title="Beskrivelse">Alt madaffald uden
+                fødevareemballage.</td>
+            <td data-title="Hvor ender det?">Bioaffaldet kommes i
+                bionedbrydelige poser, som bliver komposteret til muld.
+            </td>
+        </tr>
+        <tr>
             <td data-title="Affaldstype">Dagrenovation</td>
             <td data-title="Farvekode">Grøn</td>
             <td data-title="Beskrivelse">Madaffald, samt papir, pap eller
@@ -27,13 +36,13 @@
                 hentet og kørt på forbrændingen. </td>
         </tr>
         <tr>
-            <td data-title="Affaldstype">Bioaffald og kompost</td>
-            <td data-title="Farvekode">Beige</td>
-            <td data-title="Beskrivelse">Alt madaffald uden
-                fødevareemballage.</td>
-            <td data-title="Hvor ender det?">Bioaffaldet kommes i
-                bionedbrydelige poser, som bliver komposteret til muld.
+            <td data-title="Affaldstype">Elektronik</td>
+            <td data-title="Farvekode">Orange</td>
+            <td data-title="Beskrivelse">Genstande der har brugt strøm.
             </td>
+            <td data-title="Hvor ender det?">Det elektroniske affald bliver
+                typisk kørt til et demonteringsanlæg, hvor det bliver skilt
+                ad, så de forskellige dele kan genanvendes separat.</td>
         </tr>
         <tr>
             <td data-title="Affaldstype">Glas</td>
@@ -42,15 +51,6 @@
             <td data-title="Hvor ender det?">De hele vinflasker rengøres og
                 genbruges af vinhuse, mens glasskårene bliver smeltet om
                 til nyt glas.</td>
-        </tr>
-        <tr>
-            <td data-title="Affaldstype">Elektronik</td>
-            <td data-title="Farvekode">Orange</td>
-            <td data-title="Beskrivelse">Genstande der har brugt strøm.
-            </td>
-            <td data-title="Hvor ender det?">Det elektroniske affald bliver
-                typisk kørt til et demonteringsanlæg, hvor det bliver skilt
-                ad, så de forskellige dele kan genanvendes separat.</td>
         </tr>
     </tbody>
 </table>
