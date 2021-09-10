@@ -6,15 +6,6 @@ body {
     opacity: 1 !important;
 }
 
-// sass-lint:disable-all
-// Imports
 @import 'variables';
-//@import 'vendor/dkfds/dkfds';
-//@import "~dkfds/src/stylesheets/dkfds"; //from node_modules
-
-$font-path:         '~dkfds/src/fonts/IBMPlexSans/';
-$image-path:        '~dkfds/src/img';
-$site-image-path:   '~dkfds/src/img';
-$icons-folder-path: '~dkfds/src/img/svg-icons';
 @import '../node_modules/dkfds/src/stylesheets/dkfds';
 @import 'styleguide-base';
