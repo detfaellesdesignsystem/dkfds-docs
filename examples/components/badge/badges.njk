@@ -1,10 +1,9 @@
 {% from "components/badge/badges.njk" import badge as badge %}
 
 {%- for badges in badge_example.items -%}
-{%- if badges.heading %}
-  <h3 class="h5">{{ badges.heading }}</h3>
-{% endif -%}
-{{ badge(badges.class, badges.label) }}
+<div class="mb-3">
+    {{ badge(badges.class, badges.label) }}
+</div>
 {% endfor -%}
 
 

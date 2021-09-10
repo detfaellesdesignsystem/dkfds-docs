@@ -3,23 +3,19 @@
     "items": [
       {
         "class": "badge-small badge-success",
-        "label": "Positiv tekst",
-        "title": "Positiv status"
+        "label": "Positiv status"
       },
       {
         "class": "badge-small badge-info",
-        "label": "Neutral tekst",
-        "title": "Neutral status"
+        "label": "Neutral status"
       },
       {
         "class": "badge-small badge-warning",
-        "label": "Advarende tekst",
-        "title": "Advarende status"
+        "label": "Advarende status"
       },
       {
         "class": "badge-small badge-error",
-        "label": "Negativ tekst",
-        "title": "Negativ status"
+        "label": "Negativ status"
       }
     ]
   }
