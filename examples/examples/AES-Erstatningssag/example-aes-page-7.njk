@@ -17,7 +17,7 @@
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
+    <nav class=" nav">
       <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
 
       <div class="portal-info-mobile">
@@ -120,7 +120,7 @@
             <h1 id="dokumentation-fra-sagen">Tilføj dokumentation fra sagen</h1>
             <ul class="nobullet-list">
                 <li>
-                    {{ checkbox("id-documentation-1", "Oplysninger om varigt mén", "Oplysninger om varigt mén", false, false, "Oplysninger om varigt mén", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check' aria-controls='collapse-check' aria-expanded='false'") }}
+                    {{ checkbox("id-documentation-1", "Oplysninger om varigt mén", "Oplysninger om varigt mén", false, false, "Oplysninger om varigt mén", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check' data-aria-controls='collapse-check' aria-expanded='false'") }}
                     <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
                         <div class="py-4">
                             <form class="form">
@@ -167,7 +167,7 @@
                     </div>
                 </li>
                 <li>
-                    {{ checkbox("id-documentation-2", "Oplysninger om tabt erhvervsevne", "Oplysninger om tabt erhvervsevne", false, false, "Oplysninger om tabt erhvervsevne", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'") }}
+                    {{ checkbox("id-documentation-2", "Oplysninger om tabt erhvervsevne", "Oplysninger om tabt erhvervsevne", false, false, "Oplysninger om tabt erhvervsevne", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check1' data-aria-controls='collapse-check1' aria-expanded='false'") }}
                     <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
                         <div class="py-4">
                             <form class="form">
@@ -214,7 +214,7 @@
                     </div>
                 </li>
                 <li>
-                    {{ checkbox("id-documentation-3", "Tilføj andre dokumenter", "Tilføj andre dokumenter", false, false, "Tilføj andre dokumenter", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check2' aria-controls='collapse-check2' aria-expanded='false'") }}
+                    {{ checkbox("id-documentation-3", "Tilføj andre dokumenter", "Tilføj andre dokumenter", false, false, "Tilføj andre dokumenter", "", false, true, "", "js-checkbox-toggle-content", "data-js-target='#collapse-check2' data-aria-controls='collapse-check2' aria-expanded='false'") }}
                     <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
                         <div class="py-4">
                             <form class="form">
