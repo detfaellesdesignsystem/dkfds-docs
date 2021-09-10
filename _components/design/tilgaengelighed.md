@@ -9,6 +9,12 @@ category: Design_category
 subcategory: Design
 description: "Hjælp og værktøjer til at efterleve tilgængelighedskrav WCAG 2.1 level AA."
 tags:
+- tilgængelighed
+- accessibility
+- aria
+- vcag
+- wcag
+- 2.1
 ---
 
 - Overhold <a href="https://digst.dk/digital-service/webtilgaengelighed" class="icon-link">den danske lovgivning<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og krav til tilgængelighed af løsninger for alle brugere.
