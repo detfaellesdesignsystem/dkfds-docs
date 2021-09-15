@@ -1899,6 +1899,15 @@
 
     
 
+    
+
+
+<li class=" " role="none">
+<a href="#valgbare-raekker"  role="menuitem">Valgbare rækker</a>
+</li>
+
+    
+
 </ul>
     
   
@@ -2930,6 +2939,15 @@
 
     
 
+    
+
+
+<li class=" " role="none">
+<a href="#valgbare-raekker"  role="menuitem">Valgbare rækker</a>
+</li>
+
+    
+
 </ul>
     
   
@@ -3397,6 +3415,304 @@
 
 <h4>Ekstra kompakt</h4>
 <p>Tilføj klassen <code>table--extracompact</code> på <code>&lt;table&gt;</code></p>
+
+<h3 id="valgbare-raekker">Valgbare rækker</h3>
+
+<div class="component-preview component-preview-code  component-code-table-selectable" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-selectable/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: table-selectable</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+    &lt;table class=&quot;table table--zebra table--selectable&quot;
+        id=&quot;selectable-table&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;
+                    &lt;input id=&quot;selectable-table-check-all&quot; type=&quot;checkbox&quot;
+                        class=&quot;form-checkbox&quot;
+                        aria-controls=&quot; selectable-table-check-1 selectable-table-check-2 selectable-table-check-3 selectable-table-check-4&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-all&quot;
+                        aria-label=&quot;Vælg alle rækker&quot;&gt;&lt;/label&gt;
+                &lt;/th&gt;
+                &lt;th&gt;Affaldstype&lt;/th&gt;
+
+                &lt;th&gt;Farvekode&lt;/th&gt;
+
+                &lt;th&gt;Beskrivelse&lt;/th&gt;
+
+                &lt;th&gt;Hvor ender det?&lt;/th&gt;
+
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+
+        &lt;tbody&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input id=&quot;selectable-table-check-1&quot; type=&quot;checkbox&quot;
+                        name=&quot;selectable-table-check[]&quot;
+                        class=&quot;form-checkbox&quot; value=&quot;Dagrenovation&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-1&quot;
+                        aria-label=&quot;Vælg række&quot;&gt;&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Dagrenovation&lt;/td&gt;
+
+                &lt;td&gt;Grøn&lt;/td&gt;
+
+                &lt;td&gt;Madaffald, samt papir, pap eller plastik der ikke kan
+                    genanvendes, fordi der er madrester eller andet snask
+                    på.&lt;/td&gt;
+
+                &lt;td&gt;Alt det affald, du smider ud i din primære
+                    skraldespand, som er dagrenovationen, bliver hentet og
+                    kørt på forbrændingen.&lt;/td&gt;
+
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input id=&quot;selectable-table-check-2&quot; type=&quot;checkbox&quot;
+                        name=&quot;selectable-table-check[]&quot;
+                        class=&quot;form-checkbox&quot;
+                        value=&quot;Bioaffald og kompost&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-2&quot;
+                        aria-label=&quot;Vælg række&quot;&gt;&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Bioaffald og kompost&lt;/td&gt;
+
+                &lt;td&gt;Beige&lt;/td&gt;
+
+                &lt;td&gt;Alt madaffald uden fødevareemballage.&lt;/td&gt;
+
+                &lt;td&gt;Bioaffaldet kommes i bionedbrydelige poser, som bliver
+                    komposteret til muld.&lt;/td&gt;
+
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input id=&quot;selectable-table-check-3&quot; type=&quot;checkbox&quot;
+                        name=&quot;selectable-table-check[]&quot;
+                        class=&quot;form-checkbox&quot; value=&quot;Glas&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-3&quot;
+                        aria-label=&quot;Vælg række&quot;&gt;&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Glas&lt;/td&gt;
+
+                &lt;td&gt;Hvid&lt;/td&gt;
+
+                &lt;td&gt;Alle typer glas og flasker.&lt;/td&gt;
+
+                &lt;td&gt;De hele vinflasker rengøres og genbruges af vinhuse,
+                    mens glasskårene bliver smeltet om til nyt glas.&lt;/td&gt;
+
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input id=&quot;selectable-table-check-4&quot; type=&quot;checkbox&quot;
+                        name=&quot;selectable-table-check[]&quot;
+                        class=&quot;form-checkbox&quot; value=&quot;Elektronik&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-4&quot;
+                        aria-label=&quot;Vælg række&quot;&gt;&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Elektronik&lt;/td&gt;
+
+                &lt;td&gt;Orange&lt;/td&gt;
+
+                &lt;td&gt;Genstande der har brugt strøm.&lt;/td&gt;
+
+                &lt;td&gt;Det elektroniske affald bliver typisk kørt til et
+                    demonteringsanlæg, hvor det bliver skilt ad, så de
+                    forskellige dele kan genanvendes separat.&lt;/td&gt;
+
+            &lt;/tr&gt;
+
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4>Valgbare rækker med funktionsknapper</h4>
+
+<div class="component-preview component-preview-code  component-code-table-selectable-functions" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-selectable-functions/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: table-selectable-functions</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+    &lt;table class=&quot;table table--zebra table--selectable&quot;
+        id=&quot;selectable-table&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;
+                    &lt;input id=&quot;selectable-table-check-all&quot; type=&quot;checkbox&quot;
+                        class=&quot;form-checkbox&quot;
+                        aria-controls=&quot; selectable-table-check-1 selectable-table-check-2 selectable-table-check-3 selectable-table-check-4&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-all&quot;
+                        aria-label=&quot;Vælg alle rækker&quot;&gt;&lt;/label&gt;
+                &lt;/th&gt;
+                &lt;th&gt;Affaldstype&lt;/th&gt;
+
+                &lt;th&gt;Farvekode&lt;/th&gt;
+
+                &lt;th&gt;Beskrivelse&lt;/th&gt;
+
+                &lt;th&gt;Hvor ender det?&lt;/th&gt;
+
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+
+        &lt;tbody&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input id=&quot;selectable-table-check-1&quot; type=&quot;checkbox&quot;
+                        name=&quot;selectable-table-check[]&quot;
+                        class=&quot;form-checkbox&quot; value=&quot;Dagrenovation&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-1&quot;
+                        aria-label=&quot;Vælg række&quot;&gt;&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Dagrenovation&lt;/td&gt;
+
+                &lt;td&gt;Grøn&lt;/td&gt;
+
+                &lt;td&gt;Madaffald, samt papir, pap eller plastik der ikke kan
+                    genanvendes, fordi der er madrester eller andet snask
+                    på.&lt;/td&gt;
+
+                &lt;td&gt;Alt det affald, du smider ud i din primære
+                    skraldespand, som er dagrenovationen, bliver hentet og
+                    kørt på forbrændingen.&lt;/td&gt;
+
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input id=&quot;selectable-table-check-2&quot; type=&quot;checkbox&quot;
+                        name=&quot;selectable-table-check[]&quot;
+                        class=&quot;form-checkbox&quot;
+                        value=&quot;Bioaffald og kompost&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-2&quot;
+                        aria-label=&quot;Vælg række&quot;&gt;&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Bioaffald og kompost&lt;/td&gt;
+
+                &lt;td&gt;Beige&lt;/td&gt;
+
+                &lt;td&gt;Alt madaffald uden fødevareemballage.&lt;/td&gt;
+
+                &lt;td&gt;Bioaffaldet kommes i bionedbrydelige poser, som bliver
+                    komposteret til muld.&lt;/td&gt;
+
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input id=&quot;selectable-table-check-3&quot; type=&quot;checkbox&quot;
+                        name=&quot;selectable-table-check[]&quot;
+                        class=&quot;form-checkbox&quot; value=&quot;Glas&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-3&quot;
+                        aria-label=&quot;Vælg række&quot;&gt;&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Glas&lt;/td&gt;
+
+                &lt;td&gt;Hvid&lt;/td&gt;
+
+                &lt;td&gt;Alle typer glas og flasker.&lt;/td&gt;
+
+                &lt;td&gt;De hele vinflasker rengøres og genbruges af vinhuse,
+                    mens glasskårene bliver smeltet om til nyt glas.&lt;/td&gt;
+
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input id=&quot;selectable-table-check-4&quot; type=&quot;checkbox&quot;
+                        name=&quot;selectable-table-check[]&quot;
+                        class=&quot;form-checkbox&quot; value=&quot;Elektronik&quot; /&gt;
+                    &lt;label for=&quot;selectable-table-check-4&quot;
+                        aria-label=&quot;Vælg række&quot;&gt;&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Elektronik&lt;/td&gt;
+
+                &lt;td&gt;Orange&lt;/td&gt;
+
+                &lt;td&gt;Genstande der har brugt strøm.&lt;/td&gt;
+
+                &lt;td&gt;Det elektroniske affald bliver typisk kørt til et
+                    demonteringsanlæg, hvor det bliver skilt ad, så de
+                    forskellige dele kan genanvendes separat.&lt;/td&gt;
+
+            &lt;/tr&gt;
+
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;div class=&quot;table-actions&quot;&gt;
+        &lt;p class=&quot;table-selected-number no-selected&quot;&gt;Vælg en eller flere
+            rækker for at udføre funktioner&lt;/p&gt;
+
+        &lt;button class=&quot;button button-primary&quot;&gt;
+            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#file-download&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            Download
+        &lt;/button&gt;
+
+        &lt;button class=&quot;button button-secondary&quot;&gt;
+            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#content-copy&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            Duplikér
+        &lt;/button&gt;
+
+        &lt;button class=&quot;button button-secondary&quot;&gt;
+            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#delete&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            Slet
+        &lt;/button&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h4>Javascript</h4>
+<p>Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.TableSelectableRows(document.getElementById(&#39;TABLE-ID&#39;)).init();</code></pre></figure>
+
+<h5>Events</h5>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Event key</th>
+      <th>Element</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fds.table.selectable.updated</td>
+      <td><code>&lt;table&gt;</code></td>
+      <td>Når en tjekbox ændrer tilstand i tabellen vil eventet <code>fds.table.selectable.updated</code> blive udløst på <code>&lt;table&gt;</code> elementet</td>
+    </tr>
+  </tbody>
+</table>
+
 
       </section>
     </main>
