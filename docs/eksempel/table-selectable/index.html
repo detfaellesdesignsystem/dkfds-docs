@@ -18,8 +18,8 @@
 ================================================== -->
   
 
-<title>Text-input-optional | Det Fælles Designsystem</title>
-<meta property="og:title" content="Text-input-optional | Det Fælles Designsystem">
+<title>Table-selectable | Det Fælles Designsystem</title>
+<meta property="og:title" content="Table-selectable | Det Fælles Designsystem">
 
 
 
@@ -60,7 +60,7 @@
 </noscript>
 
   </head>
-  <body class="page-text-input-optional layout-example-contained">
+  <body class="page-table-selectable layout-example-contained">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -227,34 +227,98 @@
 </svg>
 </div>
     <main class="container page-container">
-    <h1 id="example-heading-text-input-optional" class="sr-only">Text-input-optional</h1>
-    <div class="form-group">
-    <label class="form-label" for="input-optional1">
-        Label
-    </label>
+    <h1 id="example-heading-table-selectable" class="sr-only">Table-selectable</h1>
+    <div class="table--responsive-scroll">
+    <table class="table table--zebra table--selectable" id="selectable-table">
+        <thead>
+            <tr>
+                <th>
+                    <input id="selectable-table-check-all" type="checkbox" class="form-checkbox" aria-controls=" selectable-table-check-1 selectable-table-check-2 selectable-table-check-3 selectable-table-check-4" />
+                    <label for="selectable-table-check-all" aria-label="Vælg alle rækker"></label>
+                </th>
+                <th>Affaldstype</th>
 
-    <input class="form-input" id="input-optional1" name="input-optional1" type="text" />
-</div>
-<div class="form-group">
-    <label class="form-label" for="input-mandatory">
-        Label<span class="weight-normal"> (*skal udfyldes)</span>
-    </label>
+                <th>Farvekode</th>
 
-    <input class="form-input" id="input-mandatory" name="input-mandatory" type="text" required="" />
-</div>
-<div class="form-group">
-    <label class="form-label" for="input-optional2">
-        Label
-    </label>
+                <th>Beskrivelse</th>
 
-    <input class="form-input" id="input-optional2" name="input-optional2" type="text" />
-</div>
-<div class="form-group">
-    <label class="form-label" for="input-optional3">
-        Label
-    </label>
+                <th>Hvor ender det?</th>
 
-    <input class="form-input" id="input-optional3" name="input-optional3" type="text" />
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td data-title="">
+                    <input id="selectable-table-check-1" type="checkbox" name="selectable-table-check[]" class="form-checkbox" value="Dagrenovation" />
+                    <label for="selectable-table-check-1" aria-label="Vælg række"></label>
+                </td>
+                <td>Dagrenovation</td>
+
+                <td>Grøn</td>
+
+                <td>Madaffald, samt papir, pap eller plastik der ikke kan
+                    genanvendes, fordi der er madrester eller andet snask
+                    på.</td>
+
+                <td>Alt det affald, du smider ud i din primære
+                    skraldespand, som er dagrenovationen, bliver hentet og
+                    kørt på forbrændingen.</td>
+
+            </tr>
+
+            <tr>
+                <td data-title="">
+                    <input id="selectable-table-check-2" type="checkbox" name="selectable-table-check[]" class="form-checkbox" value="Bioaffald og kompost" />
+                    <label for="selectable-table-check-2" aria-label="Vælg række"></label>
+                </td>
+                <td>Bioaffald og kompost</td>
+
+                <td>Beige</td>
+
+                <td>Alt madaffald uden fødevareemballage.</td>
+
+                <td>Bioaffaldet kommes i bionedbrydelige poser, som bliver
+                    komposteret til muld.</td>
+
+            </tr>
+
+            <tr>
+                <td data-title="">
+                    <input id="selectable-table-check-3" type="checkbox" name="selectable-table-check[]" class="form-checkbox" value="Glas" />
+                    <label for="selectable-table-check-3" aria-label="Vælg række"></label>
+                </td>
+                <td>Glas</td>
+
+                <td>Hvid</td>
+
+                <td>Alle typer glas og flasker.</td>
+
+                <td>De hele vinflasker rengøres og genbruges af vinhuse,
+                    mens glasskårene bliver smeltet om til nyt glas.</td>
+
+            </tr>
+
+            <tr>
+                <td data-title="">
+                    <input id="selectable-table-check-4" type="checkbox" name="selectable-table-check[]" class="form-checkbox" value="Elektronik" />
+                    <label for="selectable-table-check-4" aria-label="Vælg række"></label>
+                </td>
+                <td>Elektronik</td>
+
+                <td>Orange</td>
+
+                <td>Genstande der har brugt strøm.</td>
+
+                <td>Det elektroniske affald bliver typisk kørt til et
+                    demonteringsanlæg, hvor det bliver skilt ad, så de
+                    forskellige dele kan genanvendes separat.</td>
+
+            </tr>
+
+        </tbody>
+    </table>
 </div>
 
     </main>

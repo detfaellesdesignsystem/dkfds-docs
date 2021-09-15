@@ -26,6 +26,8 @@ subnav:
   href: '#sortering-i-tabeller'
 - text: Søgning i tabeller
   href: '#søgning-i-tabeller'
+- text: Valgbare rækker
+  href: '#valgbare-rækker'
 - text: Avancerede tabeller
   href: '#avancerede-tabeller'
 component: table
@@ -64,6 +66,7 @@ Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tal
 {:.nobullet-liat}
 - <a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://alistapart.com/article/web-typography-tables/" class="icon-link">Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/mobile-tables/" class="icon-link">Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 {:.h3}
 ## Se komponenten i eksempelløsninger

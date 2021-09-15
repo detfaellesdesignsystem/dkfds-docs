@@ -229,49 +229,41 @@
     <main class="container page-container">
     <h1 id="example-heading-text-input-prefix-suffix" class="sr-only">Text-input-prefix-suffix</h1>
     <div class="form-group">
-    <label class="form-label " for="input-antal">
+    <label class="form-label" for="input-antal">
         Antal
     </label>
 
-    <div class="form-input-wrapper form-input-wrapper--suffix">
-
-        <input class="form-input input-char-8" required="" id="input-antal" value="56" name="input-antal" type="number" />
+    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-8" id="input-antal" value="56" name="input-antal" type="number" required="" />
         <div class="form-input-suffix" aria-hidden="true">stk.</div>
     </div>
 </div>
 <div class="form-group">
-    <label class="form-label " for="input-pris">
+    <label class="form-label" for="input-pris">
         Pris i 1000 kr.
     </label>
 
-    <div class="form-input-wrapper form-input-wrapper--suffix">
-
-        <input class="form-input input-char-11" required="" id="input-pris" value="123" name="input-pris" type="number" />
+    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-11" id="input-pris" value="123" name="input-pris" type="number" required="" />
         <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
     </div>
 </div>
 <div class="form-group">
-    <label class="form-label " for="input-beloeb">
+    <label class="form-label" for="input-beloeb">
         Beløb i €
     </label>
 
     <div class="form-input-wrapper form-input-wrapper--prefix">
-        <div class="form-input-prefix" aria-hidden="true">€</div>
-        <input class="form-input input-width-xs" required="" id="input-beloeb" value="1.234" name="input-beloeb" type="number" />
-
+        <div class="form-input-prefix" aria-hidden="true">€</div><input class="form-input input-width-xs" id="input-beloeb" value="1.234" name="input-beloeb" type="number" required="" />
     </div>
 </div>
 <div class="form-group form-error">
-    <label class="form-label " for="input-pris-error">
+    <label class="form-label" for="input-pris-error">
         Pris i 1000 kr.
     </label>
 
     <span class="form-error-message" id="input-pris-error-error">
         <span class="sr-only">Fejl:</span> Angiv en pris
     </span>
-    <div class="form-input-wrapper form-input-wrapper--suffix">
-
-        <input class="form-input input-char-11" required="" id="input-pris-error" value="" name="input-pris" type="number" aria-invalid="true" aria-describedby=" input-pris-error-error" />
+    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-11" id="input-pris-error" name="input-pris" type="number" aria-invalid="true" aria-describedby="input-pris-error-error" required="" />
         <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
     </div>
 </div>

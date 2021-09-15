@@ -7,6 +7,7 @@ let data = [
 
 
 document.addEventListener("DOMContentLoaded", function() {
+    selectableTable();
     if(document.getElementById("btn-sort-by-affaldstype") !== null){
 
         let btnAffaldstype = document.getElementById("btn-sort-by-affaldstype");
@@ -147,4 +148,30 @@ function searchTable(query){
     }
     
     tbody.removeAttribute("aria-busy");
+}
+function selectableTable(){
+    if(document.getElementsByClassName('table--selectable').length !== 0){
+        let tables = document.getElementsByClassName('table--selectable');
+
+        for(let t = 0; t < tables.length; t++){
+            let table = tables[t];
+            if(table.nextElementSibling.classList.contains('table-actions')){
+
+                table.addEventListener('fds.table.selectable.updated', function(e){
+                    let number = e.detail.checkedNumber;
+                    let numberElement = this.nextElementSibling.getElementsByClassName('table-selected-number')[0];
+                    if(number > 1){
+                        numberElement.innerHTML = number+ " rækker valgt";
+                        numberElement.classList.remove('no-selected');
+                    } else if (number === 1){
+                        numberElement.innerHTML = number+ " række valgt";
+                        numberElement.classList.remove('no-selected');
+                    } else{
+                        numberElement.innerHTML = "Vælg en eller flere rækker for at udføre funktioner.";
+                        numberElement.classList.add('no-selected');
+                    }
+                });
+            }
+        }
+    }
 }

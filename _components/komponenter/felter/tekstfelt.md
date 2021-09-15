@@ -38,6 +38,8 @@ subnav:
   href: "#deaktiveret-felt"
 - text: Read-only felt
   href: "#read-only-felt"
+- text: Prefix og suffix
+  href: "#prefix-og-suffix"
 - text: Feltbredde
   href: "#feltbredde"
 component: text-input

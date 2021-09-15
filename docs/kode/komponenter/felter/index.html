@@ -1647,6 +1647,15 @@
 
 
 <li class=" " role="none">
+<a href="#prefix-og-suffix"  role="menuitem">Prefix og suffix</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
 <a href="#feltbredde"  role="menuitem">Feltbredde</a>
 </li>
 
@@ -2687,6 +2696,15 @@
 
 
 <li class=" " role="none">
+<a href="#prefix-og-suffix"  role="menuitem">Prefix og suffix</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
 <a href="#feltbredde"  role="menuitem">Feltbredde</a>
 </li>
 
@@ -3336,40 +3354,36 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-optional1&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-optional1&quot;&gt;
         Label
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-input &quot; id=&quot;input-optional1&quot; value=&quot;&quot;
-        name=&quot;input-optional1&quot; type=&quot;text&quot;&gt;
-
+    &lt;input class=&quot;form-input&quot; id=&quot;input-optional1&quot; name=&quot;input-optional1&quot;
+        type=&quot;text&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-mandatory&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-mandatory&quot;&gt;
         Label&lt;span class=&quot;weight-normal&quot;&gt; (*skal udfyldes)&lt;/span&gt;
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-input &quot; required id=&quot;input-mandatory&quot; value=&quot;&quot;
-        name=&quot;input-mandatory&quot; type=&quot;text&quot;&gt;
-
+    &lt;input class=&quot;form-input&quot; id=&quot;input-mandatory&quot; name=&quot;input-mandatory&quot;
+        type=&quot;text&quot; required /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-optional2&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-optional2&quot;&gt;
         Label
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-input &quot; id=&quot;input-optional2&quot; value=&quot;&quot;
-        name=&quot;input-optional2&quot; type=&quot;text&quot;&gt;
-
+    &lt;input class=&quot;form-input&quot; id=&quot;input-optional2&quot; name=&quot;input-optional2&quot;
+        type=&quot;text&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-optional3&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-optional3&quot;&gt;
         Label
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-input &quot; id=&quot;input-optional3&quot; value=&quot;&quot;
-        name=&quot;input-optional3&quot; type=&quot;text&quot;&gt;
-
+    &lt;input class=&quot;form-input&quot; id=&quot;input-optional3&quot; name=&quot;input-optional3&quot;
+        type=&quot;text&quot; /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -3451,6 +3465,71 @@
 
     &lt;input class=&quot;form-input &quot; required id=&quot;input-readonly&quot;
         value=&quot;012345-6789&quot; name=&quot;input-readonly&quot; type=&quot;text&quot; readonly&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="prefix-og-suffix">Prefix og suffix</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-prefix-suffix" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-prefix-suffix/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-prefix-suffix</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-antal&quot;&gt;
+        Antal
+    &lt;/label&gt;
+
+    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input
+            class=&quot;form-input input-char-8&quot; id=&quot;input-antal&quot; value=&quot;56&quot;
+            name=&quot;input-antal&quot; type=&quot;number&quot; required /&gt;
+        &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;stk.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-pris&quot;&gt;
+        Pris i 1000 kr.
+    &lt;/label&gt;
+
+    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input
+            class=&quot;form-input input-char-11&quot; id=&quot;input-pris&quot; value=&quot;123&quot;
+            name=&quot;input-pris&quot; type=&quot;number&quot; required /&gt;
+        &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-beloeb&quot;&gt;
+        Beløb i €
+    &lt;/label&gt;
+
+    &lt;div class=&quot;form-input-wrapper form-input-wrapper--prefix&quot;&gt;
+        &lt;div class=&quot;form-input-prefix&quot; aria-hidden=&quot;true&quot;&gt;€&lt;/div&gt;&lt;input
+            class=&quot;form-input input-width-xs&quot; id=&quot;input-beloeb&quot;
+            value=&quot;1.234&quot; name=&quot;input-beloeb&quot; type=&quot;number&quot; required /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;
+        Pris i 1000 kr.
+    &lt;/label&gt;
+
+    &lt;span class=&quot;form-error-message&quot; id=&quot;input-pris-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv en pris
+    &lt;/span&gt;
+    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input
+            class=&quot;form-input input-char-11&quot; id=&quot;input-pris-error&quot;
+            name=&quot;input-pris&quot; type=&quot;number&quot; aria-invalid=&quot;true&quot;
+            aria-describedby=&quot;input-pris-error-error&quot; required /&gt;
+        &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
