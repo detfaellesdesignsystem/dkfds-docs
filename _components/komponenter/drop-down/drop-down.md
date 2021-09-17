@@ -53,6 +53,6 @@ Anvend ikke JavaScript til automatisk at sende den valgte værdi, men sørg for 
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>
+- <a href="/pages/eksempler/AES-erstatningssag/aes-6/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
 
 {% include child-components.html parent='Drop-down' %}

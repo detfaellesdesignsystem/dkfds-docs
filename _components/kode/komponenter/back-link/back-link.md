@@ -24,7 +24,7 @@ subcategory: Kode
 
 {% include code/syntax.html component="back-link" %}
 
-Linket placeres så vidt muligt i headeren, se eksempel på implementering i vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Dokumenter til sagen</a>
+Linket placeres så vidt muligt i headeren, se eksempel på implementering i vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/">Vedhæft filer</a>
 
 Bemærk, at tilbage linket stadig skal være synligt ved mobilvisning.
 

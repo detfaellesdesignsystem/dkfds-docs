@@ -73,7 +73,6 @@ Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tal
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>
 - <a href="/pages/eksempler/aes/oversigt/" target="_blank" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
 
 {% include child-components.html parent='Tables' %}

@@ -52,7 +52,7 @@ For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/" target="_blank" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
 
 
 {:#placering}

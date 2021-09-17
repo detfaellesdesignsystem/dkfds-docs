@@ -47,6 +47,6 @@ Adam Silver: Form Design Patterns (2018)
 - <a href="/pages/eksempler/AES-erstatningssag/aes-2/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
 - <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
 - <a href="/pages/eksempler/digital-flytning/flytning-2/" target="_blank" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
 
 {% include child-components.html parent='Backlink' %}

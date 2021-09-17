@@ -32,7 +32,7 @@ Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Dokumenter til sagen åbnes i nyt vindue">Dokumenter til sagen</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-1/" target="_blank" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
 
 ## Fejlbesked
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
