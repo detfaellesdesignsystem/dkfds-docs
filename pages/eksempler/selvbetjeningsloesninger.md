@@ -158,10 +158,14 @@ subnav:
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
     <a href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-1/" title="Dokumenter til sagen" class="screenshot d-block"></a>
   </div>
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
+    <a href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-2/" title="Dokumenter til sagen" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
+    <a href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-3/" title="Dokumenter til sagen" class="screenshot d-block"></a>
+  </div>
 </div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-1/">Demo Dokumenter til sagen</a>
-
-
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-1/">Demo Vedhæft filer</a>
 
 <!-- Løsning 7: Sager hos AES -->
 <h2 id="solution-7">Løsning 7: Sager hos AES</h2>

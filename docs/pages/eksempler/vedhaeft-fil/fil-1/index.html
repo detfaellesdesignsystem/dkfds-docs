@@ -21,8 +21,8 @@
 <title>Dokumenter til sagen | Det Fælles Designsystem</title>
 <meta property="og:title" content="Dokumenter til sagen | Det Fælles Designsystem">
 
-<meta name="description" content="Side 1 af eksempel af selvbetjeningsløsning, der viser en tabel med uploadede filer">
-<meta property="og:description" content="Side 1 af eksempel af selvbetjeningsløsning, der viser en tabel med uploadede filer">
+<meta name="description" content="Side 1 af eksempel af selvbetjeningsløsning, der viser side med vedhæft fil felt">
+<meta property="og:description" content="Side 1 af eksempel af selvbetjeningsløsning, der viser side med vedhæft fil felt">
 
 
 
@@ -260,7 +260,7 @@
         <div class="container solution-header-inner">
             <div class="solution-heading">
                 <a href="#" title="Hjem" class="alert-leave2">
-                    Eksempel på upload-fejl
+                    Simpelt eksempel på vedhæft fil
                 </a>
             </div>
 
@@ -308,110 +308,13 @@
 <main class="container page-container pt-4 pt-lg-6">
     <a href="javascript:void(0);" class="back-link">Tilbage</a>
 
-    <div class="alert alert-error mt-0 mb-8" role="alert"
-        aria-atomic="true">
-        <div class="alert-body">
-            <p class="alert-heading">Der er problemer</p>
-            <ul class="alert-text nobullet-list mb-3">
-                <li><a class="function-link" href="#fileinput">Dokumentet
-                        er større end 10 MB, og kan derfor ikke tilføjes.
-                        Opdel dokumentet og tilføj som flere
-                        dokumenter.</a></li>
-                <li><a class="function-link" href="#options2">Vælg et navn
-                        til dokumentet Fuldmagt_88.pdf</a></li>
-            </ul>
-        </div>
-    </div>
+    <h1>Dokumentation</h1>
 
-    <h1>Dokumenter til sagen <span
-            class="weight-normal">(frivilligt)</span></h1>
-
-    <div class="form-group file-input mb-5 form-error">
+    <div class="form-group file-input mb-5">
         <label class="form-label" for="fileinput">Vedhæft fil</label>
-        <span class="form-error-message mb-3" id="fileinput-error"><span
-                class="sr-only">Fejl:</span> Dokumentet er større end 10
-            MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som
-            flere dokumenter.</span>
-        <input type="file" id="fileinput" name="file"
-            aria-describedby="fileinput-error" />
+        <input type="file" id="fileinput" name="file" />
     </div>
 
-    <table
-        class="table table--borderless table--responsive-headers d-print-table">
-        <thead>
-            <tr>
-                <th>Filnavn</th>
-                <th>Navngiv dokument</th>
-                <th>Slet</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="#"
-                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>Lægeerklæring.pdf</a>
-                </td>
-                <td>
-                    <div class="form-group ">
-
-                        <label class="form-label sr-only"
-                            for="options">Navngiv dokument</label>
-                        <select class=" form-select" name="options"
-                            id="options">
-                            <option value>Vælg</option>
-
-                            <option value="Lægeerklæring" selected>
-                                Lægeerklæring</option>
-
-                            <option value="Fuldmagt">Fuldmagt</option>
-
-                            <option value="Journal">Journal</option>
-
-                            <option value="Spørgeskema">Spørgeskema
-                            </option>
-
-                        </select>
-                    </div>
-                </td>
-                <td><button class="button button-unstyled">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete"></use></svg>
-                        <span class="sr-only">Slet</span>
-                    </button></td>
-            </tr>
-            <tr>
-                <td><a href="#"
-                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>Fuldmagt_88.pdf</a>
-                </td>
-                <td>
-                    <div class="form-group form-error">
-                        <span class="form-error-message"><span
-                                class="sr-only">Fejl:</span> Vælg et navn
-                            til dokumentet Fuldmagt_88.pdf</span>
-                        <label class="form-label sr-only"
-                            for="options2">Navngiv dokument</label>
-                        <select class=" form-select" name="options2"
-                            id="options2">
-                            <option value>Vælg</option>
-
-                            <option value="Lægeerklæring">Lægeerklæring
-                            </option>
-
-                            <option value="Fuldmagt">Fuldmagt</option>
-
-                            <option value="Journal">Journal</option>
-
-                            <option value="Spørgeskema">Spørgeskema
-                            </option>
-
-                        </select>
-                    </div>
-                </td>
-                <td><button class="button button-unstyled">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete"></use></svg>
-                        <span class="sr-only">Slet</span>
-                    </button></td>
-            </tr>
-        </tbody>
-    </table>
     <nav class="page-navigation d-print-none">
         <button class="button button-primary">Næste</button>
     </nav>
