@@ -51,35 +51,36 @@
 {% block body %}
 <main class="container page-container">
     <h1>Sagsnr. 2020-0000015</h1>
-    <div class="form-group">
-        <label class="form-label" for="input-status">Status</label>
-        <input class="form-input" required="" id="input-status" value="Under behandling" name="input-readonly" type="text" readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="input-navn">Navn</label>
-        <input class="form-input" required="" id="input-navn" value="Lone Hansen" name="input-readonly" type="text" readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="input-skadedato">Skadedato</label>
-        <input class="form-input" required="" id="input-skadedato" value="04-01-2019" name="input-readonly" type="text" readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="input-anmeldedato">Anmeldedato</label>
-        <input class="form-input" required="" id="input-anmeldedato" value="10-01-2019" name="input-readonly" type="text" readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="input-sagstype">Sagstype</label>
-        <input class="form-input" required="" id="input-sagstype" value="Arbejdsulykke" name="input-readonly" type="text" readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="input-vedroerende">Vedrørende</label>
-        <input class="form-input" required="" id="input-vedroerende" value="Arm, herunder albue" name="input-readonly" type="text" readonly="">
-    </div>
+    <span class="badge badge-large badge-warning mb-7">Under behandling</span>
+    <table class="table table--borderless table-md-responsive-headers w-percent-sm-50 w-percent-md-30">
+      <tbody>
+        <tr>
+          <th>Navn</th>
+          <td>Lone Hansen</td>
+        </tr>
+        <tr>
+          <th>Skadedato</th>
+          <td>04-01-2019</td>
+        </tr>
+        <tr>
+          <th>Anmeldedato</th>
+          <td>10-01-2019</td>
+        </tr>
+        <tr>
+          <th>Sagstype</th>
+          <td>Arbejdsulykke</td>
+        </tr>
+        <tr>
+          <th>Vedrørende</th>
+          <td>Arm, herunder albue</td>
+        </tr>
+      </tbody>
+    </table>
     <h2 class="h3">Sagsindhold</h2>
     <ul class="nobullet-list">
-    <li><a href="/pages/eksempler/aes/sagsoverblik/afgoerelser/">Se sagens afgørelser og status</a></li>
-    <li><a href="#">Se sagens dokumenter</a></li>
-    <li><a href="#">Se sagens involverede</a></li>
+      <li><a href="/pages/eksempler/aes/sagsoverblik/afgoerelser/">Se sagens afgørelser og status</a></li>
+      <li><a href="#">Se sagens dokumenter</a></li>
+      <li><a href="#">Se sagens involverede</a></li>
     </ul>
 
     <h2 class="h3 mt-9">Henvend dig til AES om sagen</h2>
