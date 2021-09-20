@@ -370,124 +370,86 @@
 </header>
 
 <main class="container page-container">
-    <section class="page-content">
 
-        <div class="overflow-menu  overflow-menu--open-right ">
-            <button class="button-overflow-menu js-dropdown "
-                data-js-target="overflow_steps" aria-haspopup="true"
-                aria-expanded="false">
-                Trin 1 af 2
-                <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
-            </button>
-            <div class="overflow-menu-inner" id="overflow_steps"
-                aria-hidden="true">
+    <div class="overflow-menu  overflow-menu--open-right ">
+        <button class="button-overflow-menu js-dropdown "
+            data-js-target="overflow_steps" aria-haspopup="true"
+            aria-expanded="false">
+            Trin 1 af 2
+            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
+        </button>
+        <div class="overflow-menu-inner" id="overflow_steps"
+            aria-hidden="true">
 
-                <nav>
-                    <ul class='sidenav-list' role='menu'>
-                        <li class='active current' role='none'>
-                            <a href='/pages/eksempler/boernetilskud/boernetilskud-1'
-                                role='menuitem' aria-current='page'>
-                                1. Hvilke børn søger du tilskud til?
-                            </a>
-                        </li>
-                        <li role='none'>
-                            <a href='/pages/eksempler/boernetilskud/boernetilskud-2'
-                                role='menuitem'>
-                                2. Hvornår blev du eller bliver du enlig?
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav>
+                <ul class='sidenav-list' role='menu'>
+                    <li class='active current' role='none'>
+                        <a href='/pages/eksempler/boernetilskud/boernetilskud-1'
+                            role='menuitem' aria-current='page'>
+                            1. Hvilke børn søger du tilskud til?
+                        </a>
+                    </li>
+                    <li role='none'>
+                        <a href='/pages/eksempler/boernetilskud/boernetilskud-2'
+                            role='menuitem'>
+                            2. Hvornår blev du eller bliver du enlig?
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-            </div>
         </div>
+    </div>
 
-        <h1>Hvilke børn søger du tilskud til?</h1>
-        <div class="row">
-            <div class="col-12 col-md-8 col-lg-5">
-                <form class="form">
-                    <div class="form-group">
-                        <fieldset>
-                            <legend class="form-label">Jeg søger tilskud
-                                til:</legend>
-                            <ul class="nobullet-list">
-                                <li>
+    <h1>Hvilke børn søger du tilskud til?</h1>
+    <form action="/pages/eksempler/boernetilskud/boernetilskud-2">
+        <div class="form-group">
+            <fieldset>
+                <legend class="form-label">Jeg søger tilskud til</legend>
+                <ul class="nobullet-list">
+                    <li>
 
-                                    <div class="alert alert-warning">
-                                        <div class="alert-body">
-                                            <p class="alert-heading">
-                                                Allerede registreret</p>
-                                            <p class="alert-text">Sed ut
-                                                perspiciatis unde omnis
-                                                iste natus error sit
-                                                voluptatem accusantium
-                                                doloremque laudantium.</p>
-                                        </div>
-                                    </div>
+                        <input id="checkbox-id-3" type="checkbox"
+                            value="checkbox3_selected"
+                            class="form-checkbox  checkbox-large " />
+                        <label for="checkbox-id-3" class="">Ylmig
+                            Hedagaardsen<br />353535-3535<br>Fælles forældremyndighed</label>
 
-                                    <input id="checkbox-id-1"
-                                        type="checkbox"
-                                        value="checkbox1_selected"
-                                        class="form-checkbox  checkbox-large "
-                                        disabled />
-                                    <label for="checkbox-id-1"
-                                        class="">Keld Hedagaardsen <br> 353535-3535
-                                        <br> Fælles</label>
+                    </li>
 
-                                </li>
-                                <li>
-
-                                    <div class="alert alert-warning">
-                                        <div class="alert-body">
-                                            <p class="alert-heading">
-                                                Allerede registreret</p>
-                                            <p class="alert-text">Sed ut
-                                                perspiciatis unde omnis
-                                                iste natus error sit
-                                                voluptatem accusantium
-                                                doloremque laudantium.</p>
-                                        </div>
-                                    </div>
-
-                                    <input id="checkbox-id-2"
-                                        type="checkbox"
-                                        value="checkbox2_selected"
-                                        class="form-checkbox  checkbox-large "
-                                        disabled />
-                                    <label for="checkbox-id-2"
-                                        class="">Anita Hedagaardsen <br> 353535-3535
-                                        <br> Fælles</label>
-
-                                </li>
-                                <li>
-
-                                    <input id="checkbox-id-3"
-                                        type="checkbox"
-                                        value="checkbox3_selected"
-                                        class="form-checkbox  checkbox-large " />
-                                    <label for="checkbox-id-3"
-                                        class=""><span class="bold">Ylmig
-                                            Hedagaardsen</span> <br> 353535-3535
-                                        <br> Fælles</label>
-
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </div>
-                    <div class="form-group">
-                        <button
-                            class="button button-secondary mt-4"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add"></use></svg>
-                            Tilføj barn</button>
-                    </div>
-                </form>
+                </ul>
+            </fieldset>
+            <div class="mt-6">
+                Keld Hedagaardsen, 353535-3535, Fælles forældremyndighed<br/>
+                <span class="form-hint d-inline-block">Allerede
+                    registreret</span>
+                <button type="button" class="js-tooltip button-unstyled"
+                    data-tooltip="Nullam ultrices tincidunt felis non viverra. Aliquam dignissim turpis sit amet urna efficitur ultrices at vel enim. Ut ultrices, tortor eu suscipit posuere, tellus lacus posuere massa, sit amet rhoncus risus odio ut tellus."
+                    data-tooltip-trigger="click">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg><span
+                        class="sr-only">Hvad betyder det?</span>
+                </button>
             </div>
-        </div>
+            <div class="mt-6">
+                Anita Hedagaardsen, 353535-3040, Fælles
+                forældremyndighed<br/>
+                <span class="form-hint d-inline-block">Allerede
+                    registreret</span>
+                <button type="button" class="js-tooltip button-unstyled"
+                    data-tooltip="Nullam ultrices tincidunt felis non viverra. Aliquam dignissim turpis sit amet urna efficitur ultrices at vel enim. Ut ultrices, tortor eu suscipit posuere, tellus lacus posuere massa, sit amet rhoncus risus odio ut tellus."
+                    data-tooltip-trigger="click">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg><span
+                        class="sr-only">Hvad betyder det?</span>
+                </button>
+            </div>
 
-    </section>
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/boernetilskud/boernetilskud-2"
-            class="button button-primary">Næste</a>
-    </nav>
+            <button type="button"
+                class="button button-secondary mt-6"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add"></use></svg>
+                Tilføj barn</button>
+        </div>
+        <button type="submit"
+            class="button button-primary d-print-none mt-6">Næste</button>
+    </form>
 </main>
 
 <footer>
