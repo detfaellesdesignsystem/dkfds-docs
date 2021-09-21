@@ -28,6 +28,39 @@ Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil b
 
 Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
+### Fejlbeskeder
+
+#### Hvis ingen fil er valgt
+Skriv "Vælg en [hvad de nu end bør vælge]".<br />
+Fx "Vælg en lægeerklæring".
+
+#### Hvis den valgte fil er forkert filtype
+Skriv "Den valgte fil bør være af typen [liste af filtyper]".<br />
+Fx "Den valgte fil bør være af typen CSV or ODS" eller "Den valgte fil bør være af typen JPG, BMP, PNG, TIF eller PDF".
+
+#### Hvis filen er for stor
+Skriv "Den valgte fil bør være mindre end [største filstørrelse]".<br />
+Fx "Den valgte fil bør være mindre end 2MB".
+
+#### Hvis filen er tom
+Skriv "Den valgte fil er tom".
+
+#### Hvis filen indeholder en virus
+Skriv "Den valgte fil indeholder en virus".
+
+#### Hvis filen er beskyttet af en adgangskode
+Skriv "Den valgte fil er beskyttet af en adgangskode".
+
+#### Hvis der var en fejl, og filen ikke kunne uploades
+Skriv "Den valgte fil kunne ikke uploades - prøv venligst igen".
+
+#### Hvis der er en begrænsning på antal filer brugeren kan vælge
+Skriv "Du kan kun vælge op til [højeste antal filer] filer på samme tid".<br />
+Fx "Du kan kun vælge op til 10 filer på samme tid".
+
+#### Hvis der ikke er brugt den korrekte skabelon
+Skriv "Den valgte fil bør gøre brug af skabelonen".
+
 {:.h3}
 ## Se komponenten i eksempelløsninger
 
