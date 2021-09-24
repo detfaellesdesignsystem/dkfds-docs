@@ -2369,10 +2369,12 @@
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
         <div class="form-group file-input">
     <label class="form-label" for="form-fileinput">Vedhæft fil</label>
     <input type="file" id="form-fileinput" name="file">
 </div>
+        
     </div>
     
     <div class="component-code-link px-4 py-4">
@@ -2398,6 +2400,39 @@
 
 <p>Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.</p>
 
+<h3>Fejlbeskeder</h3>
+
+<h4>Hvis ingen fil er valgt</h4>
+<p>Skriv “Vælg en [hvad de nu end bør vælge]”.<br />
+Fx “Vælg en lægeerklæring”.</p>
+
+<h4>Hvis den valgte fil er forkert filtype</h4>
+<p>Skriv “Den valgte fil bør være af typen [liste af filtyper]”.<br />
+Fx “Den valgte fil bør være af typen CSV or ODS” eller “Den valgte fil bør være af typen JPG, BMP, PNG, TIF eller PDF”.</p>
+
+<h4>Hvis filen er for stor</h4>
+<p>Skriv “Den valgte fil bør være mindre end [største filstørrelse]”.<br />
+Fx “Den valgte fil bør være mindre end 2MB”.</p>
+
+<h4>Hvis filen er tom</h4>
+<p>Skriv “Den valgte fil er tom”.</p>
+
+<h4>Hvis filen indeholder en virus</h4>
+<p>Skriv “Den valgte fil indeholder en virus”.</p>
+
+<h4>Hvis filen er beskyttet af en adgangskode</h4>
+<p>Skriv “Den valgte fil er beskyttet af en adgangskode”.</p>
+
+<h4>Hvis der var en fejl, og filen ikke kunne uploades</h4>
+<p>Skriv “Den valgte fil kunne ikke uploades - prøv venligst igen”.</p>
+
+<h4>Hvis der er en begrænsning på antal filer brugeren kan vælge</h4>
+<p>Skriv “Du kan kun vælge op til [højeste antal filer] filer på samme tid”.<br />
+Fx “Du kan kun vælge op til 10 filer på samme tid”.</p>
+
+<h4>Hvis der ikke er brugt den korrekte skabelon</h4>
+<p>Skriv “Den valgte fil bør gøre brug af skabelonen”.</p>
+
 <h2 class="h3">Se komponenten i eksempelløsninger</h2>
 
 <ul class="nobullet-list">
@@ -2415,6 +2450,7 @@
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
         <div class="form-group file-input form-error">
     <label class="form-label" for="form-fileinput-error">Vedhæft
         fil</label>
@@ -2422,6 +2458,7 @@
         2MB</span>
     <input type="file" id="form-fileinput-error" name="file" aria-describedby="fileinput-error" />
 </div>
+        
     </div>
     
 </div>
