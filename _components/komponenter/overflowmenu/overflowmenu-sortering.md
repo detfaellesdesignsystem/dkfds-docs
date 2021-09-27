@@ -22,15 +22,15 @@ Sortering med overflow menu anbefales ikke til tabeller med mange sorterbare kol
 
 Indhold kan sorteres alfabetisk, efter tal eller efter dato.
 
-Ved sorteringsparametre med alfabetisk sortering, angiv (A-Å) eller (Å-A) i parantes fx:
+Ved sorteringsparametre med alfabetisk sortering, angiv (A-Å) eller (Å-A) i parentes fx:
  - Affaldssortering (A-Å)
  - Affaldssortering (Å-A)
 
-Ved sortering efter tal, angiv (stigende) eller (faldende) i parantes, fx:
+Ved sortering efter tal, angiv (stigende) eller (faldende) i parentes, fx:
 - Antal (stigende)
 - Antal (faldende)
 
-Ved sortering efter forskellige datoparametre, angiv (nyeste først) eller (ældste først) i parantes efter datoens titel, fx:
+Ved sortering efter forskellige datoparametre, angiv (nyeste først) eller (ældste først) i parentes efter datoens titel, fx:
 - Udløbsdato (nyeste først)
 - Udløbsdato (ældste først)
 
