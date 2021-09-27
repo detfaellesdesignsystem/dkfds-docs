@@ -288,7 +288,7 @@ tags:
           {% include icon.html icon="format-color-fill" keywords="" label="Baggrundsfarve" %}
           {% include icon.html icon="format-clear" keywords="" label="Ryd tekstformaterering" %}
           {% include icon.html icon="format-list-bulleted" keywords="" label="Punktopstilling" %}
-          {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling nummerisk" %}
+          {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling numerisk" %}
           {% include icon.html icon="format-indent-increase" keywords="" label="Indryk højre" %}
           {% include icon.html icon="format-indent-decrease" keywords="" label="Indryk venstre" %}
           {% include icon.html icon="format-align-left" keywords="" label="Venstrestil tekst" %}

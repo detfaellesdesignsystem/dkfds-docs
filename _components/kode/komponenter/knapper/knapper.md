@@ -42,7 +42,7 @@ subnav:
 {% include code/syntax.html component="button-primary" %}
 
 - Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.
-- Styler du et link, så det ligner en knap, skal du være opmærksom på, at der skal tilføjes atrributten `role="button"`
+- Styler du et link, så det ligner en knap, skal du være opmærksom på, at der skal tilføjes attributten `role="button"`
 
 ## Varianter
 
