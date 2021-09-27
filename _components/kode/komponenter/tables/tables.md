@@ -19,6 +19,8 @@ subnav:
   href: '#scroll'
 - text: Linjehøjde
   href: '#linjehoejde'
+- text: Sortering i tabel
+  href: '#sortering-i-tabel
 - text: Valgbare rækker
   href: '#valgbare-raekker'
 ---
@@ -104,6 +106,11 @@ Tilføj klassen `table--compact` på `<table>`
 
 #### Ekstra kompakt
 Tilføj klassen `table--extracompact` på `<table>`
+
+#### Sortering i tabel
+{% include code/syntax.html component="table-sort" link="true" %}
+
+Eksemplet er fuldt funktionelt, men funktionaliteten følger ikke med i FDS koden. Man skal derfor selv bygge sorteringsfunktionen ved tryk på diverse knapper. Eksemplet viser, hvordan HTML tilpasses ved ændring af sortering.
 
 {:#valgbare-raekker}
 ### Valgbare rækker

@@ -1903,7 +1903,7 @@
 
 
 <li class=" " role="none">
-<a href="#valgbare-raekker"  role="menuitem">Valgbare rækker</a>
+<a href="#sortering-i-tabel - text: Valgbare rækker href: "  role="menuitem">Sortering i tabel</a>
 </li>
 
     
@@ -2943,7 +2943,7 @@
 
 
 <li class=" " role="none">
-<a href="#valgbare-raekker"  role="menuitem">Valgbare rækker</a>
+<a href="#sortering-i-tabel - text: Valgbare rækker href: "  role="menuitem">Sortering i tabel</a>
 </li>
 
     
@@ -3415,6 +3415,81 @@
 
 <h4>Ekstra kompakt</h4>
 <p>Tilføj klassen <code>table--extracompact</code> på <code>&lt;table&gt;</code></p>
+
+<h4>Sortering i tabel</h4>
+
+<div class="component-preview component-preview-code  component-code-table-sort" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-sort/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: table-sort</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;table class=&quot;table table--responsive-headers mt-6&quot; id=&quot;sortingTable&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th aria-sort=&quot;ascending&quot; class=&quot;table-header-no-wrap&quot;&gt;
+                Affaldstype&lt;button id=&quot;btn-sort-by-affaldstype&quot;
+                    class=&quot;button button-unstyled ml-2&quot;&gt;&lt;svg class=&quot;icon-svg mr-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#sort-table-ascending&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+                        class=&quot;sr-only&quot;&gt;Sortér efter
+                        affaldstype&lt;/span&gt;&lt;/button&gt;&lt;/th&gt;
+            &lt;th aria-sort=&quot;none&quot; class=&quot;table-header-no-wrap&quot;&gt;
+                Farvekode&lt;button id=&quot;btn-sort-by-farvekode&quot;
+                    class=&quot;button button-unstyled ml-2&quot;&gt;&lt;svg class=&quot;icon-svg mr-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#sort-table-none&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+                        class=&quot;sr-only&quot;&gt;Sortér efter
+                        farvekode&lt;/span&gt;&lt;/button&gt;&lt;/th&gt;
+            &lt;th aria-sort=&quot;none&quot;&gt;Beskrivelse&lt;/th&gt;
+            &lt;th aria-sort=&quot;none&quot;&gt;Hvor ender det?&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody aria-live=&quot;polite&quot;&gt;
+        &lt;tr&gt;
+            &lt;td data-title=&quot;Affaldstype&quot;&gt;Bioaffald og kompost&lt;/td&gt;
+            &lt;td data-title=&quot;Farvekode&quot;&gt;Beige&lt;/td&gt;
+            &lt;td data-title=&quot;Beskrivelse&quot;&gt;Alt madaffald uden
+                fødevareemballage.&lt;/td&gt;
+            &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Bioaffaldet kommes i
+                bionedbrydelige poser, som bliver komposteret til muld.
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td data-title=&quot;Affaldstype&quot;&gt;Dagrenovation&lt;/td&gt;
+            &lt;td data-title=&quot;Farvekode&quot;&gt;Grøn&lt;/td&gt;
+            &lt;td data-title=&quot;Beskrivelse&quot;&gt;Madaffald, samt papir, pap eller
+                plastik der ikke kan genanvendes, fordi der er madrester
+                eller andet snask på.&lt;/td&gt;
+            &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Alt det affald, du smider ud i
+                din primære skraldespand, som er dagrenovationen, bliver
+                hentet og kørt på forbrændingen. &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td data-title=&quot;Affaldstype&quot;&gt;Elektronik&lt;/td&gt;
+            &lt;td data-title=&quot;Farvekode&quot;&gt;Orange&lt;/td&gt;
+            &lt;td data-title=&quot;Beskrivelse&quot;&gt;Genstande der har brugt strøm.
+            &lt;/td&gt;
+            &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Det elektroniske affald bliver
+                typisk kørt til et demonteringsanlæg, hvor det bliver skilt
+                ad, så de forskellige dele kan genanvendes separat.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td data-title=&quot;Affaldstype&quot;&gt;Glas&lt;/td&gt;
+            &lt;td data-title=&quot;Farvekode&quot;&gt;Hvid&lt;/td&gt;
+            &lt;td data-title=&quot;Beskrivelse&quot;&gt;Alle typer glas og flasker.&lt;/td&gt;
+            &lt;td data-title=&quot;Hvor ender det?&quot;&gt;De hele vinflasker rengøres og
+                genbruges af vinhuse, mens glasskårene bliver smeltet om
+                til nyt glas.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Eksemplet er fuldt funktionelt, men funktionaliteten følger ikke med i FDS koden. Man skal derfor selv bygge sorteringsfunktionen ved tryk på diverse knapper. Eksemplet viser, hvordan HTML tilpasses ved ændring af sortering.</p>
 
 <h3 id="valgbare-raekker">Valgbare rækker</h3>
 
