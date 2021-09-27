@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('formSearchTable').addEventListener('submit', function(event){
             event.preventDefault();
             let query = document.getElementById('inputSearchTable').value;
-            console.log('query', query);
             searchTable(query);
         });
     }
@@ -155,7 +154,7 @@ function selectableTable(){
 
         for(let t = 0; t < tables.length; t++){
             let table = tables[t];
-            if(table.nextElementSibling.classList.contains('table-actions')){
+            if((table.nextElementSibling !== null) && table.nextElementSibling.classList.contains('table-actions')){
 
                 table.addEventListener('fds.table.selectable.updated', function(e){
                     let number = e.detail.checkedNumber;
@@ -163,14 +162,33 @@ function selectableTable(){
                     if(number > 1){
                         numberElement.innerHTML = number+ " rækker valgt";
                         numberElement.classList.remove('no-selected');
+                        numberElement.classList.remove('form-error-message');
+                        numberElement.removeAttribute('role');
                     } else if (number === 1){
                         numberElement.innerHTML = number+ " række valgt";
+                        numberElement.classList.remove('form-error-message');
                         numberElement.classList.remove('no-selected');
+                        numberElement.removeAttribute('role');
                     } else{
                         numberElement.innerHTML = "Vælg en eller flere rækker for at udføre funktioner.";
                         numberElement.classList.add('no-selected');
+                        numberElement.classList.remove('form-error-message');
+                        numberElement.removeAttribute('role');
                     }
                 });
+
+                let buttons = table.nextElementSibling.getElementsByTagName('button');
+                for(let b = 0; b < buttons.length; b++){
+                    let button = buttons[b];
+                    button.addEventListener('click', function(e){
+                        let message = this.parentNode.getElementsByClassName('table-selected-number')[0];
+                        if(message.classList.contains('no-selected')){
+                            message.classList.add('form-error-message');
+                            message.classList.remove('no-selected');
+                            message.setAttribute('role', 'alert');
+                        }
+                    });            
+                }
             }
         }
     }
