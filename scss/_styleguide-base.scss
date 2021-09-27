@@ -756,6 +756,9 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
 .page-tringuide-responsive-overflowmenu-html .container{
   min-height: 400px;
 }
+.component-preview-labels-table .table.table--borderless thead th, .component-preview-labels-table .table.table--borderless tr:last-child{
+  border-bottom: 0px;
+}
 .component-preview-basic-collapse, .component-preview-modal, .component-preview-text-input, .component-preview-tags, .component-preview-search  .container{
   padding-top: 4px;
   padding-bottom: 4px;
