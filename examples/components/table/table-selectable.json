@@ -2,7 +2,7 @@
   "data":
   {
     "selectable": true,
-    "id": "selectable-table",
+    "id": "selectable-table1",
     "thead": [
       "Affaldstype",
       "Farvekode",
