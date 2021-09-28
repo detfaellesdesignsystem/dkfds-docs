@@ -32,7 +32,7 @@ Sagerne kan være:
         {% include roadmap.html title="Toggle" status="Gennemført" %}
         {% include roadmap.html title="Notifikation (Toast)" status="Gennemført" %}
         {% include roadmap.html title="Facit-streger" status="Gennemført" %}
-        {% include roadmap.html title="Strukturerede lister" status="Planlagt" %}
+        {% include roadmap.html title="Strukturerede lister" status="I gang" %}
         {% include roadmap.html title="Tiles" status="Planlagt" %}
         {% include roadmap.html title="Multiselect dropdown" status="Planlagt" %}
         {% include roadmap.html title="Valgbar rækker i tabeller" status="Gennemført" link="/komponenter/tables/#valgbare-rækker" %}
@@ -60,7 +60,7 @@ Sagerne kan være:
     <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
     </thead>
     <tbody>
-        {% include roadmap.html title="Vejledning til datavisualisering og infografik " status="Planlagt" %}
+        {% include roadmap.html title="Vejledning til datavisualisering og infografik" status="Planlagt" %}
         {% include roadmap.html title="Pattern til telefonnummer" status="Planlagt" %}
         {% include roadmap.html title="Opdatering af Figma til v7.4.0" status="Planlagt" %}
         {% include roadmap.html title="Opdatering af Figma til v7.3.0" status="Gennemført" %}
