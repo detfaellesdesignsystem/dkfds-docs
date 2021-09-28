@@ -61,9 +61,7 @@ Radioknappernes design er ændret i forhold til standardvisningen for at gøre d
 ### Skjult indhold (Collapse)
 {% include code/syntax.html component="radio-collapse" link="true" %}
 
-<ul class="nobullet-list">
-    <li><a href="/komponenter/radiobutton/#retningslinjer">Retningslinjer</a></li>
-</ul>
+<a href="/komponenter/radioknap/#collapse-retningslinjer">Retningslinjer for radioknap med skjult indhold</a>
 
 For at initialisere collapse funktionaliteten på en radioknap skal `input[type=radio]` have følgende:
 
