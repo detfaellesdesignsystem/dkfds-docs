@@ -60,7 +60,7 @@ Sagerne kan være:
     <tr><th><span class="sr-only">Navn</span></th><th class="align-text-sm-right">Status</th></tr>
     </thead>
     <tbody>
-        {% include roadmap.html title="Vejledning til datavisualisering og infografik" status="Planlagt" %}
+        {% include roadmap.html title="Vejledning til datavisualisering og infografik" status="I gang" %}
         {% include roadmap.html title="Pattern til telefonnummer" status="Planlagt" %}
         {% include roadmap.html title="Opdatering af Figma til v7.4.0" status="Planlagt" %}
         {% include roadmap.html title="Opdatering af Figma til v7.3.0" status="Gennemført" %}
