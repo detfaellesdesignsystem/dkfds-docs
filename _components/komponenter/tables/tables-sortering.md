@@ -10,7 +10,7 @@ Store tabeller med mange rækker bør kunne sorteres. Kolonner sorteres ved at k
 
 Når sortering vælges, sorteres per default stigende. Klikkes der på et aktivt sorteringsikon bliver der togglet mellem stigende (A-Å eller 0-9) og faldende (Å-A eller 9-0) sortering
 
-Tabeller med sortering skal altid have en aktiv sortering; sorteringen kan ikke deaktiveres. Defaultsortering vælges ud fra, hvilken kolonne brugerne som regel vil forvente er sorteret. Dette vil ofte være den første kolonne eller en dato.
+Tabeller med sortering skal altid have en aktiv sortering; sorteringen kan ikke deaktiveres. Standardsortering vælges ud fra, hvilken kolonne brugerne som regel vil forvente er sorteret. Dette vil ofte være den første kolonne eller en dato.
 
 Hvis kun få kolonner i en tabel kan sorteres, kan komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a> anvendes i stedet.
 
