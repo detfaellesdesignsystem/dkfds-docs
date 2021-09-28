@@ -76,7 +76,8 @@ Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gø
 new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID'));
 {% endhighlight %}
 
-#### Events
+{:.h4}
+### Events
 
 {:.table}
 | Event key           | Element                           | Beskrivelse                                                                                               |
