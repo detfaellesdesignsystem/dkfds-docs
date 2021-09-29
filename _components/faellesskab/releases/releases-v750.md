@@ -5,7 +5,7 @@ order: 89
 headingClass: mb-0
 ---
 
-<p class="small-text mt-0">28-09-2021</p>
+<p class="small-text mt-0">29-09-2021</p>
 
 - <a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a>
 - <a href="/komponenter/felter/#prefix-og-suffix">Prefix og suffix på felter</a>
