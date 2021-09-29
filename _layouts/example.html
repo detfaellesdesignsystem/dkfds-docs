@@ -14,7 +14,7 @@
     </div>
     {% else %}
     
-    {% if page.title contains "footer" or page.title contains "Footer" %}
+    {% if page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher"  %}
     <main class="container page-container" id="main-content">
     <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
     </main>
@@ -22,7 +22,7 @@
 
     {{ content }}
     {% endif %}
-    {% unless page.title contains "footer" or page.title contains "Footer" %}
+    {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" %}
     <main class="container page-container" id="main-content">
     <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
     </main>
