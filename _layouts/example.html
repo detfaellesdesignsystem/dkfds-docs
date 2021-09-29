@@ -13,11 +13,20 @@
     {{ content }}
     </div>
     {% else %}
-    {{ content }}
-    {% endif %}
+    
+    {% if page.title contains "footer" or page.title contains "Footer" %}
     <main class="container page-container" id="main-content">
     <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
     </main>
+    {% endif %}
+
+    {{ content }}
+    {% endif %}
+    {% unless page.title contains "footer" or page.title contains "Footer" %}
+    <main class="container page-container" id="main-content">
+    <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
+    </main>
+    {% endunless %}
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
