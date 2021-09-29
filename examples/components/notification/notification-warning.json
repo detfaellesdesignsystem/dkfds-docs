@@ -2,7 +2,7 @@
   "notification_data": {
     "id": "notification-warning",
     "type": "warning",
-    "heading": "Din ansøgning er afsendt",
+    "heading": "Dette er en advarsel",
     "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
     "show": true
   }

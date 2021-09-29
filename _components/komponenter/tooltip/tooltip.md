@@ -27,7 +27,7 @@ componentCode: "/kode/komponenter/tooltip/"
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen. Tooltips kan enten vises ved hover over deciderede hjælpeikoner eller ved andre elemener såsom ikoner, billeder, enkelte ord i tekststykker eller til tekst, som er forkortet i brugergrænsefladen. Tooltips bør altid bruges ved ikoner, som fremstår uden tekst.
+Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen. Tooltips kan enten vises ved hover over deciderede hjælpeikoner eller ved andre elementer såsom ikoner, billeder, enkelte ord i tekststykker eller til tekst, som er forkortet i brugergrænsefladen. Tooltips bør altid bruges ved ikoner, som fremstår uden tekst.
 
 {:.h3}
 ## Anvendes ikke til
@@ -66,5 +66,13 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 - <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Alita Joyce: Tooltip Guidelines (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/AES-erstatningssag/aes-5/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+
 
 {% include child-components.html parent='Tooltip' %}

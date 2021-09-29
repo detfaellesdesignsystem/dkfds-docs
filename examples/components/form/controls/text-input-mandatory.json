@@ -1,0 +1,26 @@
+{
+  "example_inputs": [
+    {
+      "id": "input-mandatory1",
+      "name": "input-mandatory1",
+      "label": "Label"
+    },
+    {
+      "id": "input-optional",
+      "name": "input-optional",
+      "label": "Label",
+      "optionallabel": "(frivilligt)",
+      "optional": true
+    },
+    {
+      "id": "input-mandatory2",
+      "name": "input-mandatory2",
+      "label": "Label"
+    },
+    {
+      "id": "input-mandatory3",
+      "name": "input-mandatory3",
+      "label": "Label"
+    }
+  ]
+}

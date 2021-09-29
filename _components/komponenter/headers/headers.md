@@ -40,6 +40,8 @@ Brug ikke topnavigationen som faneblad, anvend da <a href="/komponenter/faneblad
 {:.h3}
 ## Vejledning
 
+Tag et kig på <a href="/eksempler/selvbetjeningsloesninger/">eksempelløsningerne</a>, for at se hvordan komponenten passer ind i en komplet løsning.
+
 En header består af et antal rækker med forskelligt indhold. Jo flere rækker jo mere kompleks en header. Designsystemet giver mulighed for op til 5 rækker og minimum 2 rækker.
 
 - Række 1 og 2 er obligatoriske
@@ -52,6 +54,12 @@ Når du laver en header, bør du følge disse principper:
 - Hold altid rækkefølgen, uanset kombinationen
 
 <div><img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" /></div>
+
+
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>
 
 {:.h3}
 ## Headerens rækker forklaret

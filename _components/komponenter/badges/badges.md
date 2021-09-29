@@ -36,7 +36,7 @@ Brug ikke badges på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyh
 
 Brug ord og begreber, som brugeren kan genkendes fra løsningen.
 
-Skriv ord i badges normalt - fx <label class="badge badge-large" aria-label="Eksempel på badge med nyhed">Nyhed</label> skrives som "Nyhed". Det er vigtig at ord skrives på den rigtige måde, da ord med kun store bogstaver vil læst op bogstav for bogstav med en skærmlæser.
+Skriv ord i badges normalt - fx <label class="badge badge-large" aria-label="Eksempel på badge med nyhed">Nyhed</label> skrives som "Nyhed". Det er vigtig at ord skrives på den rigtige måde, da ord med kun store bogstaver vil blive læst op bogstav for bogstav med en skærmlæser.
 
 Brug ikke hover, focus eller active styling til et badge, som ikke er interaktivt (fx link).
 
@@ -52,5 +52,10 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 
 <a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" class="icon-link">Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/opgaveliste/" target="_blank" title="Eksempelløsning Opgaveliste åbnes i nyt vindue">Opgaveliste</a>
 
 {% include child-components.html parent='Badges' %}

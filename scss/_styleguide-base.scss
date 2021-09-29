@@ -203,16 +203,16 @@ header #search-form-mobile{
 
 // Functional theme colors
 .color-primary {
-  background-color: $color-primary;
+  background-color: color('primary');
 }
 .color-primary-darker {
-  background-color: $color-primary-darker;
+  background-color: color('primary-darker');
 }
 .color-primary-darkest {
-  background-color: $color-primary-darkest;
+  background-color: color('primary-darkest');
 }
 .color-primary-lightest {
-  background-color: $color-primary-lightest;
+  background-color: color('primary-lightest');
 }
 .color-background {
   background-color: $color-background;
@@ -755,6 +755,9 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
 .page-tringuide-overflowmenu-html .container,
 .page-tringuide-responsive-overflowmenu-html .container{
   min-height: 400px;
+}
+.component-preview-labels-table .table.table--borderless thead th, .component-preview-labels-table .table.table--borderless tr:last-child{
+  border-bottom: 0px;
 }
 .component-preview-basic-collapse, .component-preview-modal, .component-preview-text-input, .component-preview-tags, .component-preview-search  .container{
   padding-top: 4px;

@@ -87,7 +87,7 @@
     </nav> <!-- collapsible nav end-->
 </header>
 
-<main class="container page-container pt-4 pt-lg-0">
+<main class="container page-container pt-4 pt-lg-0" id="main-content">
     <div><a href="/pages/eksempler/AES-erstatningssag/aes-1/"
             class="back-link">Tilbage</a></div>
 
@@ -174,7 +174,7 @@
             Virksomhedens kontaktperson
         </label>
 
-        <input class="form-input input-width-m"
+        <input class="form-input input-width-m" required
             placeholder="Svend Pedersen" id="id-company-contact" value=""
             name="Input til virksomhedens kontaktperson" type="text"
             readonly>
@@ -188,9 +188,9 @@
                 Telefonnummer til kontaktperson
             </label>
 
-            <input class="form-input input-width-xs" id="id-company-number"
-                value="" name="Telefonnummer til kontaktperson"
-                type="text">
+            <input class="form-input input-width-xs" required
+                id="id-company-number" value=""
+                name="Telefonnummer til kontaktperson" type="text">
         </div>
     </div>
     <nav class="page-navigation d-print-none">
@@ -232,9 +232,8 @@
             <h2 class="modal-title" id="modal-contact-title">
                 Kontakt
             </h2>
-            <button class="modal-close button button-unstyled"
-                aria-label="Luk"
-                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
+            <button class="modal-close function-link"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
             <div class="alert alert-warning" role="alert">

@@ -61,21 +61,18 @@ Radioknappernes design er ændret i forhold til standardvisningen for at gøre d
 ### Skjult indhold (Collapse)
 {% include code/syntax.html component="radio-collapse" link="true" %}
 
-<ul class="nobullet-list">
-    <li><a href="/komponenter/radiobutton/#retningslinjer">Retningslinjer</a></li>
-</ul>
+<a href="/komponenter/radioknap/#collapse-retningslinjer">Retningslinjer for radioknap med skjult indhold</a>
 
-For at initialisere collapse funktionaliteten på en checkbox skal `input[type=checkbox]` have følgende:
+For at initialisere collapse funktionaliteten på en radioknap skal `input[type=radio]` have følgende:
 
-- Klassen `'js-checkbox-toggle-content'`. Denne klasse gør at funktionaliteten bliver initialiseret. 
-- Attributten `data-js-target="id-of-target-to-collapse"`: denne attribute skal have id'et på det element som skal vises på tjekboksen er aktiveret. 
-- Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten `'checked'`.
-- `aria-controls="id-of-target-to-collapse" `
+- Klassen `'js-radio-toggle-content'`. Denne klasse gør at funktionaliteten bliver initialiseret. 
+- Attributten `data-js-target="id-of-target-to-collapse"`: denne attribute skal have id'et på det element som skal vises på radioknappen er aktiveret. 
+- Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten `checked` samt `aria-expanded="true"`. Indholdselementet bør have attributten `aria-hidden="false"`
 
 Det element som skal collapses/expandes skal have følgende:
 
-- `id=”id-of-target-to-collapse”`
-- `aria-hidden="true/false"`
+- `id="id-of-target-to-collapse"`
+- `aria-hidden="false"` hvis indholdet vises og `aria-hidden="true"` hvis indholdet skjules
 
 ## JavaScript
 Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:

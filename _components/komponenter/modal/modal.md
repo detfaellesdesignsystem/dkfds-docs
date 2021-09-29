@@ -47,3 +47,11 @@ Knapper i modalvinduet skal være tydelige, meningsfulde og følge Det Fælles D
 Vær sikker på at modalvinduet kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 
 Brugeren skal selv aktivere modalvinduet. Det må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt.
+
+Hold teksten i modalvinduet så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalvinduet bliver så langt, at vinduet scroller. Overvej at bruge en individuel side i stedet for et modalvindue, hvis indholdet er meget langt.
+
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/AES-erstatningssag/aes-5/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>

@@ -116,7 +116,7 @@
                             <li class="active current" role="none">
                                 <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/"
                                     role="menuitem">
-                                    3. Statsstøtte (valgt)
+                                    3. Statsstøtte
                                 </a>
                             </li>
                             <li role="none">
@@ -166,14 +166,14 @@
                         ekskl. det aktuelle projekt.
                     </span>
 
-                    <input class="form-input input-width-m" id="id-state"
-                        value=""
+                    <input class="form-input input-width-m" required
+                        id="id-state" value=""
                         name="Input til statsstøtte (EU de-minimis) i DKK"
                         type="text" aria-describedby="id-state-hint ">
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group js-radio-toggle-group">
                 <fieldset>
                     <legend class="form-label">Har i modtaget støtte gennem
                         andre internationale de-minimis-ordninger (fx
@@ -184,15 +184,12 @@
                             <input id="id-state-yes" type="radio"
                                 name="minimis" value="Ja"
                                 class="form-radio  radio-large "
-                                data-js-target="collapse-radio"
+                                data-js-target="#collapse-radio"
                                 aria-controls="collapse-radio"
                                 aria-expanded="false" />
                             <label for="id-state-yes"
                                 id="form-label-id-state-yes"
-                                class="radio-large"
-                                data-js-target="collapse-radio"
-                                aria-controls="collapse-radio"
-                                aria-expanded="false">Ja </label>
+                                class="radio-large">Ja </label>
 
                             <div id="collapse-radio" aria-hidden="true"
                                 class="box-border-l collapsed">
@@ -205,7 +202,8 @@
 
                                         <input
                                             class="form-input input-width-m"
-                                            id="id-minimis-name" value=""
+                                            required id="id-minimis-name"
+                                            value=""
                                             name="Input til ordningens navn"
                                             type="text">
                                     </div>
@@ -289,7 +287,8 @@
 
                                         <input
                                             class="form-input input-width-xs"
-                                            id="id-amount" value=""
+                                            required id="id-amount"
+                                            value=""
                                             name="Input til beløb i DKK"
                                             type="text">
                                     </div>
@@ -306,7 +305,8 @@
 
                                         <input
                                             class="form-input input-width-m"
-                                            id="id-reference" value=""
+                                            required id="id-reference"
+                                            value=""
                                             name="Input til henvisning til yderligere information om ordningen"
                                             type="text"
                                             aria-describedby="id-reference-hint ">
@@ -369,9 +369,8 @@
             <h2 class="modal-title" id="modal-contact-title">
                 Kontakt
             </h2>
-            <button class="modal-close button button-unstyled"
-                aria-label="Luk"
-                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
+            <button class="modal-close function-link"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
             <h3>En form for support</h3>

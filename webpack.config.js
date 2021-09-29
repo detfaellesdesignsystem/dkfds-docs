@@ -64,7 +64,9 @@ module.exports = function (outputPath, prod) {
           loader: "file-loader",
           options: {
             name: "[name].[ext]",
-            outputPath: "fonts/"
+            outputPath: "fonts/",
+            useRelativePath: true,              
+            esModule: false,
           },
         },
         {
@@ -73,7 +75,9 @@ module.exports = function (outputPath, prod) {
             {
               loader: "file-loader",
               options: {
-                outputPath: "img/"
+                outputPath: "img/",
+                useRelativePath: true,              
+                esModule: false,
               }
             }
           ]
@@ -85,7 +89,9 @@ module.exports = function (outputPath, prod) {
               loader: "file-loader",
               options: {
                 name: "[name].[ext]",
-                outputPath: "svg/"
+                outputPath: "svg/",
+                useRelativePath: true,              
+                esModule: false,
               }
             }
           ]

@@ -17,7 +17,7 @@ subnav:
   href: '#solution-4'
 - text: 'Løsning 5: Strategiske virksomhedsalliancer'
   href: '#solution-5'
-- text: 'Løsning 6: Dokumenter til sagen'
+- text: 'Løsning 6: Vedhæft filer'
   href: '#solution-6'
 - text: 'Løsning 7: Sager hos AES'
   href: '#solution-7'
@@ -153,15 +153,22 @@ subnav:
 
 
 <!-- Løsning 5: Strategiske virksomhedsalliancer -->
-<h2 id="solution-6">Løsning 6: Dokumenter til sagen</h2>
+<h2 id="solution-6">Løsning 6: Vedhæft filer</h2>
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
+  <h3 class="h4">Vedhæft fil</h3>
     <a href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-1/" title="Dokumenter til sagen" class="screenshot d-block"></a>
   </div>
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
+    <h3 class="h4">Liste af vedhæftede filer</h3>
+    <a href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-2/" title="Dokumenter til sagen" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
+    <h3 class="h4">Fejl i vedhæftede filer</h3>
+    <a href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-3/" title="Dokumenter til sagen" class="screenshot d-block"></a>
+  </div>
 </div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-1/">Demo Dokumenter til sagen</a>
-
-
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/vedhaeft-fil/fil-1/">Demo Vedhæft filer</a>
 
 <!-- Løsning 7: Sager hos AES -->
 <h2 id="solution-7">Løsning 7: Sager hos AES</h2>

@@ -12,4 +12,4 @@ componentTitle: "Eksempel på eksternt link"
 
 {% include code/syntax.html component="external-link" %}
 
-Ekternt link gør brug af ikoner. <a href="/kode/ikoner/">Se dokumentationen for implementering af ikoner</a>.
+Eksternt link gør brug af ikoner. <a href="/kode/ikoner/">Se dokumentationen for implementering af ikoner</a>.

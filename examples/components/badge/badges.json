@@ -3,13 +3,11 @@
     "items": [
       {
         "class": "badge-large",
-        "label": "Nyhed",
-        "heading": "Stort badge"
+        "label": "Stort badge"
       },
       {
         "class": "badge-small",
-        "label": "Lille nyhed",
-        "heading": "Lille badge"
+        "label": "Lille badge"
       }
     ]
   }

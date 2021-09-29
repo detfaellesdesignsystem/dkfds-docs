@@ -1,8 +1,9 @@
 {% from "components/badge/badges.njk" import badge as badge %}
 
 {%- for badges in badge_example_small.items -%}
-<h3 class="h5">{{ badges.title }}</h3>
-{{ badge(badges.class, badges.label) }}
+<div class="mb-4">
+    {{ badge(badges.class, badges.label) }}
+</div>
 {% endfor -%}
 
 

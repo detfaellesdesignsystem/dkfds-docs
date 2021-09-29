@@ -59,5 +59,10 @@ Skriv kort og præcist i hvert card.
 - <a href="https://www.nngroup.com/articles/cards-component/" class="icon-link">Page Laubheimer: Cards: UI-Component Definition (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" class="icon-link">Muneo Kitajima, Marilyn H Blackmon & Peter G Polson: A Comprehension-based Model of Web Navigation and Its Application to Web Usability Analysis (2000)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/boernetilskud/boernetilskud-oversigt-2/" target="_blank" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
 
 {% include child-components.html parent='Cards' %}

@@ -40,6 +40,17 @@
       {"content": "<a class=\"function-link\" href=\"tel:12345678\">12 34 56 78</a>"},
       {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
       {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-    ]
+    ],
+    "language_switcher": {
+      "aria_label": "Vælg sprog fra listen",
+      "first_aria_label": "Valgt sprog: Dansk",
+      "languages": [
+        {"code": "da", "name": "Dansk"},
+        {"code": "en-GB", "name": "English"},
+        {"code": "de", "name": "Deutsch"},
+        {"code": "kl", "name": "Kalaallisut"},
+        {"code": "pl", "name": "Polski"}
+      ]
+    }
   }
 }

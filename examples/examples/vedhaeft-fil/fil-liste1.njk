@@ -1,0 +1,62 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/form/controls/select.njk" import select as select %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{% from "components/modal/modal.njk" import modal as modal %}
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+
+{% block header %}
+  <header class="header">
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+
+    <div class="overlay"></div>
+    <nav class=" nav"> <!-- collapsible-->
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+
+      <div class="portal-info-mobile">
+        <p class="user bold">Christian Emil Vestergaard Christiansen</p>
+        <a href="#" class="button button-secondary button-signout">
+          Log af
+        </a>
+      </div>
+
+      <div class="solution-info-mobile">
+        <p class="bold">Erhvervsministeriet</p>
+        <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+      </div>
+    </nav> <!-- collapsible nav end-->
+  </header>
+{% endblock %}
+
+
+{% block body %}
+<main class="container page-container pt-4 pt-lg-6" id="main-content">
+    <a href="javascript:void(0);" class="back-link">Tilbage</a>
+
+    <h1>Dokumentation</h1>
+
+    <div class="form-group file-input mb-5">
+        <label class="form-label" for="fileinput">Vedhæft fil</label>
+        <input type="file" id="fileinput" name="file" />
+    </div>
+
+    <nav class="page-navigation d-print-none">
+      <button class="button button-primary">Næste</button>
+    </nav>
+</main>
+{% endblock %}
+{% block footer -%}
+  {{ footer_simple(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}
+

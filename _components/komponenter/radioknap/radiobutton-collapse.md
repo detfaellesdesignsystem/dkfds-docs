@@ -23,4 +23,3 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 
 #### Referencer
 <a href="https://www.nngroup.com/articles/interaction-cost-definition/" class="icon-link">Raluca Budiu: Interaction Cost (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-

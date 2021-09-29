@@ -20,6 +20,8 @@ subnav:
   href: "#deaktiveret-felt"
 - text: Read-only felt
   href: "#read-only-felt"
+- text: Prefix og suffix
+  href: "#prefix-og-suffix"
 - text: Feltbredde
   href: "#feltbredde"
 ---
@@ -74,6 +76,12 @@ De fleste felter i en selvbetjeningsløsning er påkrævet, så for at undgå ma
 ### Read-only felt
 
 {% include code/syntax.html component="text-input-readonly" link="true" %}
+
+{:#prefix-og-suffix}
+### Prefix og suffix
+
+{% include code/syntax.html component="text-input-prefix-suffix" link="true" %}
+
 
 {:#feltbredde}
 ### Feltbredde

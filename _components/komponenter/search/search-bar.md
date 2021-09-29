@@ -56,3 +56,11 @@ Søgeknappen skal være en submit-knap.
 - <a href="https://uxplanet.org/design-a-perfect-search-box-b6baaf9599c" class="icon-link">Design a perfect search box<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://uxplanet.org/best-practices-for-search-results-1bbed9d7a311" class="icon-link">Best practises for search results<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/magnifying-glass-icon/" class="icon-link">The Magnifying-Glass Icon in Search Design: Pros and Cons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+
+
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/AES-erstatningssag/aes-3/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/aes/oversigt/" target="_blank" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>

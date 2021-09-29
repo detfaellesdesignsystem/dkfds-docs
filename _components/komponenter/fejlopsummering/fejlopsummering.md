@@ -48,6 +48,12 @@ For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/" target="_blank" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+
 
 {:#placering}
 ## Placering

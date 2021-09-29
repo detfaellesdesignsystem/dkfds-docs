@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   
+  <meta name="robots" content="noindex" />
+  
 <!-- Title and meta description
 ================================================== -->
   
@@ -107,6 +109,12 @@
 <symbol id="expand-more" viewBox="0 0 24 24"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></symbol>
 <symbol id="visibility" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 6c3.79 0 7.17 2.13 8.82 5.5C19.17 14.87 15.79 17 12 17s-7.17-2.13-8.82-5.5C4.83 8.13 8.21 6 12 6m0-2C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 5c1.38 0 2.5 1.12 2.5 2.5S13.38 14 12 14s-2.5-1.12-2.5-2.5S10.62 9 12 9m0-2c-2.48 0-4.5 2.02-4.5 4.5S9.52 16 12 16s4.5-2.02 4.5-4.5S14.48 7 12 7z" /></symbol>
 <symbol id="add" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol>
+<symbol id="sort-table-descending" viewBox="0 0 24 24"><path fill="#1A1A1A" d="M6.1,13.5l5.9,5.9l5.9-5.9H6.1z"/></symbol>
+<symbol id="sort-table-ascending" viewBox="0 0 24 24"><path fill="#1A1A1A" d="M17.9,10.5L12,4.6l-5.9,5.9H17.9z"/></symbol>
+<symbol id="sort-table-none" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" fill="#1A1A1A" d="M17.9,10.5L12,4.6l-5.9,5.9H17.9z M12,6.7L14.3,9H9.7L12,6.7z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#1A1A1A" d="M6.1,13.5l5.9,5.9l5.9-5.9H6.1z M12,17.3L9.7,15h4.7L12,17.3z"/></symbol>
+<symbol id="sort-default" viewBox="0 0 24 24"><path d="M13 18H17V16H13V18ZM13 6V8H23V6H13ZM13 13H20V11H13V13Z" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M2 6L6 2L10 6L7 6L7 18L10 18L7 21L6 22L5 21L2 18L5 18L5 6L2 6Z" fill="black"/></symbol>
+<symbol id="sort-ascending" viewBox="0 0 24 24"><path d="M13 18H17V16H13V18ZM13 6V8H23V6H13ZM13 13H20V11H13V13Z" fill="black"/><path d="M6 2L2 6L5 6L5 21L7 21L7 6L10 6L6 2Z" fill="black"/></symbol>
+<symbol id="sort-descending" viewBox="0 0 24 24"><path d="M13 18H17V16H13V18ZM13 6V8H23V6H13ZM13 13H20V11H13V13Z" fill="black"/><path d="M6 22L10 18L7 18L7 3L5 3L5 18L2 18L6 22Z" fill="black"/></symbol>
 
 <symbol id="file-excel" viewBox="0 0 24 24"><path d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M12.9 14.5L15.8 19H14L12 15.6L10 19H8.2L11.1 14.5L8.2 10H10L12 13.4L14 10H15.8L12.9 14.5Z" /></symbol>
 <symbol id="file-image" viewBox="0 0 24 24"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18M17,13V19H7L12,14L14,16M10,10.5A1.5,1.5 0 0,1 8.5,12A1.5,1.5 0 0,1 7,10.5A1.5,1.5 0 0,1 8.5,9A1.5,1.5 0 0,1 10,10.5Z" /></symbol>
@@ -225,7 +233,7 @@
     <div class="solution-header">
       <div class="solution-header-inner container">
         <div class="solution-heading d-flex align-items-center">
-            <a href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a>
+            <a href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a><span class="badge badge-error ml-4">Develop</span>
         </div>
         <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
       </div>
@@ -543,6 +551,38 @@
 <a href="/design/designressourcer/" role="menuitem" 
   class="nav-link">
   Designressourcer
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/design/designtjek/" role="menuitem" 
+  class="nav-link">
+  Designtjek
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/design/tilgaengelighed/" role="menuitem" 
+  class="nav-link">
+  Tilgængelighed
 </a>
 
 </li>
@@ -922,7 +962,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -1109,6 +1149,33 @@
 
 <li class=" " role="none">
 <a href="#med-titel-i-venstre-kolonne"  role="menuitem">Med titel i venstre kolonne</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#sortering-i-tabeller"  role="menuitem">Sortering i tabeller</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#søgning-i-tabeller"  role="menuitem">Søgning i tabeller</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#valgbare-rækker"  role="menuitem">Valgbare rækker</a>
 </li>
 
     
@@ -1394,6 +1461,22 @@
 
     
 
+<li class="  " role="none">
+
+
+  
+
+<a href="/kode/browserunderstoettelse/" role="menuitem" 
+  class="nav-link">
+  Browserunderstøttelse
+</a>
+
+</li>
+
+    
+
+    
+
 <li class="  has-anchor-links" role="none">
 
 
@@ -1581,38 +1664,6 @@
 <a href="/krav/om-kravene/" role="menuitem" 
   class="nav-link">
   Om kravene til selvbetjeningsløsninger
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/krav/designtjek/" role="menuitem" 
-  class="nav-link">
-  Designtjek
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/krav/tilgaengelighed/" role="menuitem" 
-  class="nav-link">
-  Tilgængelighed (WCAG 2.1)
 </a>
 
 </li>
@@ -2100,7 +2151,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -2295,6 +2346,33 @@
 
 
 <li class=" " role="none">
+<a href="#sortering-i-tabeller"  role="menuitem">Sortering i tabeller</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#søgning-i-tabeller"  role="menuitem">Søgning i tabeller</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#valgbare-rækker"  role="menuitem">Valgbare rækker</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
 <a href="#avancerede-tabeller"  role="menuitem">Avancerede tabeller</a>
 </li>
 
@@ -2429,7 +2507,7 @@
     <main class="col-12 col-lg-9" id="main-content">
           <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <div class="alert-body">
-            <p class="alert-heading pr-7">Vælg et tema</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</a>
+            <p class="alert-heading pr-7">Vælg et tema</p><button class="function-link alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
             <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
@@ -2534,6 +2612,8 @@
 
 <p>Såfremt der er tale om meget <a href="/komponenter/tables/#avancerede-tabeller">avancerede tabeller</a>, kan der bruges en tredjepartsløsning.</p>
 
+<p>Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tale om en numerisk størrelse som f.eks. antal eller pengebeløb. Dette gør det lettere for brugeren at skimme og sammenligne numerisk data (Rutter, 2017). Tal, der ikke angiver en numerisk størrelse og dermed ikke indebærer et behov for sammenligning, skal ikke højrestilles. Det kan f.eks. være et ID-nummer.</p>
+
 <div class=" component-preview-table-dos-donts" aria-label="Tabeller do's and don'ts">
     <div class="component-example" aria-label="Eksempel">
         <div class="row do-dont-container">
@@ -2556,7 +2636,18 @@
 
 <h3 class="h4">Referencer</h3>
 
-<p><a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+<ul class="nobullet-liat">
+  <li><a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://alistapart.com/article/web-typography-tables/" class="icon-link">Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.nngroup.com/articles/mobile-tables/" class="icon-link">Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<h2 class="h3">Se komponenten i eksempelløsninger</h2>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a></li>
+  <li><a href="/pages/eksempler/aes/oversigt/" target="_blank" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a></li>
+</ul>
 
 <section class="styleguide-child-container content" id="section-/komponenter/tables/tables-borderless">
   <h2 id="uden-ramme">Uden ramme</h2>
@@ -2694,7 +2785,8 @@
 
 
   
-  
+  <p>Zebralinjer anbefales kun til længere tabeller med mange rækker og kolonner, da brugeren kan tillægge få mørke rækker betydning, som om de var særligt markeret (Rost, 2019).</p>
+
 
 </section>
 
@@ -2762,7 +2854,7 @@
 
 
   
-  
+  <p>Bemærk, at mens horisontal scroll generelt set giver en dårlig brugeroplevelse på desktop, så kan det i nogle tilfælde være en bedre løsning på mobil at lade lange tabeller scrolle horisontalt frem for at anvende en responsiv tabel (Schade, 2017). Det kan fx være i tilfælde, hvor sammenligning af data fra forskellige rækker er vigtig. Udfør brugertests for at vurdere den bedste mobile tabelvisning for den enkelte løsning.</p>
 
 </section>
 
@@ -2929,20 +3021,18 @@
             <tr>
                 <th class="w-percent-md-30">Virksomhedens navn</th>
                 <td>Forsikringens forsikring (enhed)</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger<span class="sr-only"> virksomhedens navn</span></a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Kontaktperson</th>
                 <td>John Doe<br />privatskade@ff.dk<br />+45 1234 5678</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-2/">Rediger</a>
-                </td>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-2/">Rediger<span class="sr-only"> kontaktperson</span></a></td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Afsender er</th>
                 <td>Forsikringens forsikring (enhed)</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
-                </td>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger<span class="sr-only"> afsender</span></a></td>
             </tr>
         </tbody>
     </table>
@@ -2954,20 +3044,18 @@
             <tr>
                 <th class="w-percent-md-30">Virksomhedens navn</th>
                 <td>Forsikringens forsikring (enhed)</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger<span class="sr-only"> virksomhedens navn</span></a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Kontaktperson</th>
                 <td>John Doe<br />privatskade@ff.dk<br />+45 1234 5678</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
-                </td>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger<span class="sr-only"> kontaktperson</span></a></td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Afsender er</th>
                 <td>Forsikringens forsikring (enhed)</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
-                </td>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger<span class="sr-only"> afsender</span></a></td>
             </tr>
         </tbody>
     </table>
@@ -2979,20 +3067,18 @@
             <tr>
                 <th class="w-percent-md-30">Virksomhedens navn</th>
                 <td>Forsikringens forsikring (enhed)</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger<span class="sr-only"> virksomhedens navn</span></a>
                 </td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Kontaktperson</th>
                 <td>John Doe<br />privatskade@ff.dk<br />+45 1234 5678</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-2/">Rediger</a>
-                </td>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-2/">Rediger<span class="sr-only"> kontaktperson</span></a></td>
             </tr>
             <tr>
                 <th class="w-percent-md-30">Afsender er</th>
                 <td>Forsikringens forsikring (enhed)</td>
-                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger</a>
-                </td>
+                <td class="align-text-md-right"><a href="/pages/eksempler/AES-erstatningssag/aes-1/">Rediger<span class="sr-only"> afsender</span></a></td>
             </tr>
         </tbody>
     </table>
@@ -3007,6 +3093,416 @@
 
 </section>
 
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-sortering">
+  <h2 id="sortering-i-tabeller">Sortering i tabeller</h2>
+  
+  
+  
+<div class="component-preview  component-preview-table-sort" aria-label="Eksempel på sortering i tabel">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-sort/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: table-sort</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <table class="table table--responsive-headers mt-6" id="sortingTable">
+    <thead>
+        <tr>
+            <th aria-sort="ascending" class="table-header-no-wrap">
+                Affaldstype<button id="btn-sort-by-affaldstype" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-ascending"></use></svg><span class="sr-only">Sortér efter
+                        affaldstype</span></button></th>
+            <th aria-sort="none" class="table-header-no-wrap">
+                Farvekode<button id="btn-sort-by-farvekode" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-none"></use></svg><span class="sr-only">Sortér efter
+                        farvekode</span></button></th>
+            <th aria-sort="none">Beskrivelse</th>
+            <th aria-sort="none">Hvor ender det?</th>
+        </tr>
+    </thead>
+    <tbody aria-live="polite">
+        <tr>
+            <td data-title="Affaldstype">Bioaffald og kompost</td>
+            <td data-title="Farvekode">Beige</td>
+            <td data-title="Beskrivelse">Alt madaffald uden
+                fødevareemballage.</td>
+            <td data-title="Hvor ender det?">Bioaffaldet kommes i
+                bionedbrydelige poser, som bliver komposteret til muld.
+            </td>
+        </tr>
+        <tr>
+            <td data-title="Affaldstype">Dagrenovation</td>
+            <td data-title="Farvekode">Grøn</td>
+            <td data-title="Beskrivelse">Madaffald, samt papir, pap eller
+                plastik der ikke kan genanvendes, fordi der er madrester
+                eller andet snask på.</td>
+            <td data-title="Hvor ender det?">Alt det affald, du smider ud i
+                din primære skraldespand, som er dagrenovationen, bliver
+                hentet og kørt på forbrændingen. </td>
+        </tr>
+        <tr>
+            <td data-title="Affaldstype">Elektronik</td>
+            <td data-title="Farvekode">Orange</td>
+            <td data-title="Beskrivelse">Genstande der har brugt strøm.
+            </td>
+            <td data-title="Hvor ender det?">Det elektroniske affald bliver
+                typisk kørt til et demonteringsanlæg, hvor det bliver skilt
+                ad, så de forskellige dele kan genanvendes separat.</td>
+        </tr>
+        <tr>
+            <td data-title="Affaldstype">Glas</td>
+            <td data-title="Farvekode">Hvid</td>
+            <td data-title="Beskrivelse">Alle typer glas og flasker.</td>
+            <td data-title="Hvor ender det?">De hele vinflasker rengøres og
+                genbruges af vinhuse, mens glasskårene bliver smeltet om
+                til nyt glas.</td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+    
+</div>
+
+
+  
+  <p>Store tabeller med mange rækker bør kunne sorteres. Kolonner sorteres ved at klikke på kolonnens label eller sorteringsikonet.</p>
+
+<p>Når sortering vælges, sorteres per default stigende. Klikkes der på et aktivt sorteringsikon bliver der togglet mellem stigende (A-Å eller 0-9) og faldende (Å-A eller 9-0) sortering</p>
+
+<p>Tabeller med sortering skal altid have en aktiv sortering; sorteringen kan ikke deaktiveres. Standardsortering vælges ud fra, hvilken kolonne brugerne som regel vil forvente er sorteret. Dette vil ofte være den første kolonne eller en dato.</p>
+
+<p>Hvis kun få kolonner i en tabel kan sorteres, kan komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a> anvendes i stedet.</p>
+
+<p>Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a>.</p>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-soegning">
+  <h2 id="søgning-i-tabeller">Søgning i tabeller</h2>
+  
+  
+  
+<div class="component-preview  component-preview-table-search" aria-label="Eksempel på søgning i tabel">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-search/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: table-search</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <form method="get" action="" id="formSearchTable">
+    <div class="form-group search">
+        <label for="inputSearchTable" class="sr-only">Søg efter
+            indhold</label>
+        <input class="form-input input-char-27" id="inputSearchTable" name="searchtable" type="search" />
+        <button class="button button-search" id="btnSearchTable">Søg i
+            tabellen</button>
+    </div>
+</form>
+
+<div class="table--responsive-scroll mt-6">
+    <table class="table" aria-live="polite" id="searchTable">
+        <thead>
+            <tr>
+                <th>Affaldstype</th>
+                <th>Farvekode</th>
+                <th>Beskrivelse</th>
+                <th>Hvor ender det?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dagrenovation</td>
+                <td>Grøn</td>
+                <td>Madaffald, samt papir, pap eller plastik der ikke kan
+                    genanvendes, fordi der er madrester eller andet snask
+                    på.</td>
+                <td>Alt det affald, du smider ud i din primære
+                    skraldespand, som er dagrenovationen, bliver hentet og
+                    kørt på forbrændingen. </td>
+            </tr>
+            <tr>
+                <td>Bioaffald og kompost</td>
+                <td>Beige</td>
+                <td>Alt madaffald uden fødevareemballage.</td>
+                <td>Bioaffaldet kommes i bionedbrydelige poser, som bliver
+                    komposteret til muld.</td>
+            </tr>
+            <tr>
+                <td>Glas</td>
+                <td>Hvid</td>
+                <td>Alle typer glas og flasker.</td>
+                <td>De hele vinflasker rengøres og genbruges af vinhuse,
+                    mens glasskårene bliver smeltet om til nyt glas.</td>
+            </tr>
+            <tr>
+                <td>Elektronik</td>
+                <td>Orange</td>
+                <td>Genstande der har brugt strøm.</td>
+                <td>Det elektroniske affald bliver typisk kørt til et
+                    demonteringsanlæg, hvor det bliver skilt ad, så de
+                    forskellige dele kan genanvendes separat.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+    
+</div>
+
+
+  
+  <p>Søgefelt til tabeller kan anvendes til store tabeller, der har mange rækker og kolonner. Brug kun søgning i tabeller, hvis det hjælper brugeren med at navigere i tabellen. Søgning i tabeller bør ikke anvendes, hvis en simpel sortering er tilstrækkelig for, at brugerne kan navigere effektivt i tabellen.</p>
+
+<p>Tabeller kan søges med et søgefelt placeret over tabellen. Feltet søger som udgangspunkt alt data i tabellen. Tabellen opdateres ved klik på knappen “Søg i tabellen” eller ved tasten “Enter”.</p>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/tables/tables-valgbare">
+  <h2 id="valgbare-rækker">Valgbare rækker</h2>
+  
+  
+  
+<div class="component-preview  component-preview-table-selectable" aria-label="Eksempel på valgbare rækker i en tabel">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-selectable/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: table-selectable</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="table--responsive-scroll">
+    <table class="table table--selectable" id="selectable-table1">
+        <thead>
+            <tr>
+                <th>
+                    <input id="selectable-table1-check-32-all" type="checkbox" class="form-checkbox" aria-controls="selectable-table1-check-32-1 selectable-table1-check-32-2 selectable-table1-check-32-3 selectable-table1-check-32-4" />
+                    <label for="selectable-table1-check-32-all" aria-label="Vælg alle rækker"></label>
+                </th>
+                <th>Affaldstype</th>
+
+                <th>Farvekode</th>
+
+                <th>Beskrivelse</th>
+
+                <th>Hvor ender det?</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>
+                    <input id="selectable-table1-check-32-1" type="checkbox" name="selectable-table1-check[]" class="form-checkbox" value="Dagrenovation" />
+                    <label for="selectable-table1-check-32-1" aria-label="Vælg række"></label>
+                </td>
+                <td>Dagrenovation</td>
+
+                <td>Grøn</td>
+
+                <td>Madaffald, samt papir, pap eller plastik der ikke kan
+                    genanvendes, fordi der er madrester eller andet snask
+                    på.</td>
+
+                <td>Alt det affald, du smider ud i din primære
+                    skraldespand, som er dagrenovationen, bliver hentet og
+                    kørt på forbrændingen.</td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="selectable-table1-check-32-2" type="checkbox" name="selectable-table1-check[]" class="form-checkbox" value="Bioaffald og kompost" />
+                    <label for="selectable-table1-check-32-2" aria-label="Vælg række"></label>
+                </td>
+                <td>Bioaffald og kompost</td>
+
+                <td>Beige</td>
+
+                <td>Alt madaffald uden fødevareemballage.</td>
+
+                <td>Bioaffaldet kommes i bionedbrydelige poser, som bliver
+                    komposteret til muld.</td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="selectable-table1-check-32-3" type="checkbox" name="selectable-table1-check[]" class="form-checkbox" value="Glas" />
+                    <label for="selectable-table1-check-32-3" aria-label="Vælg række"></label>
+                </td>
+                <td>Glas</td>
+
+                <td>Hvid</td>
+
+                <td>Alle typer glas og flasker.</td>
+
+                <td>De hele vinflasker rengøres og genbruges af vinhuse,
+                    mens glasskårene bliver smeltet om til nyt glas.</td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="selectable-table1-check-32-4" type="checkbox" name="selectable-table1-check[]" class="form-checkbox" value="Elektronik" />
+                    <label for="selectable-table1-check-32-4" aria-label="Vælg række"></label>
+                </td>
+                <td>Elektronik</td>
+
+                <td>Orange</td>
+
+                <td>Genstande der har brugt strøm.</td>
+
+                <td>Det elektroniske affald bliver typisk kørt til et
+                    demonteringsanlæg, hvor det bliver skilt ad, så de
+                    forskellige dele kan genanvendes separat.</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+    </div>
+    
+</div>
+
+
+  
+  <h3>Valgbare rækker med funktionsknapper</h3>
+
+<div class="component-preview  component-preview-table-selectable-functions" aria-label="Eksempel på valgbare rækker i en tabel med funktionsknapper">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-selectable-functions/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: table-selectable-functions</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        <div class="table--responsive-scroll">
+    <table class="table table--selectable" id="selectable-table2">
+        <thead>
+            <tr>
+                <th>
+                    <input id="selectable-table2-check-44-all" type="checkbox" class="form-checkbox" aria-controls="selectable-table2-check-44-1 selectable-table2-check-44-2 selectable-table2-check-44-3 selectable-table2-check-44-4" />
+                    <label for="selectable-table2-check-44-all" aria-label="Vælg alle rækker"></label>
+                </th>
+                <th>Affaldstype</th>
+
+                <th>Farvekode</th>
+
+                <th>Beskrivelse</th>
+
+                <th>Hvor ender det?</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>
+                    <input id="selectable-table2-check-44-1" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="Dagrenovation" />
+                    <label for="selectable-table2-check-44-1" aria-label="Vælg række"></label>
+                </td>
+                <td>Dagrenovation</td>
+
+                <td>Grøn</td>
+
+                <td>Madaffald, samt papir, pap eller plastik der ikke kan
+                    genanvendes, fordi der er madrester eller andet snask
+                    på.</td>
+
+                <td>Alt det affald, du smider ud i din primære
+                    skraldespand, som er dagrenovationen, bliver hentet og
+                    kørt på forbrændingen.</td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="selectable-table2-check-44-2" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="Bioaffald og kompost" />
+                    <label for="selectable-table2-check-44-2" aria-label="Vælg række"></label>
+                </td>
+                <td>Bioaffald og kompost</td>
+
+                <td>Beige</td>
+
+                <td>Alt madaffald uden fødevareemballage.</td>
+
+                <td>Bioaffaldet kommes i bionedbrydelige poser, som bliver
+                    komposteret til muld.</td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="selectable-table2-check-44-3" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="Glas" />
+                    <label for="selectable-table2-check-44-3" aria-label="Vælg række"></label>
+                </td>
+                <td>Glas</td>
+
+                <td>Hvid</td>
+
+                <td>Alle typer glas og flasker.</td>
+
+                <td>De hele vinflasker rengøres og genbruges af vinhuse,
+                    mens glasskårene bliver smeltet om til nyt glas.</td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="selectable-table2-check-44-4" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="Elektronik" />
+                    <label for="selectable-table2-check-44-4" aria-label="Vælg række"></label>
+                </td>
+                <td>Elektronik</td>
+
+                <td>Orange</td>
+
+                <td>Genstande der har brugt strøm.</td>
+
+                <td>Det elektroniske affald bliver typisk kørt til et
+                    demonteringsanlæg, hvor det bliver skilt ad, så de
+                    forskellige dele kan genanvendes separat.</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div class="table-actions">
+        <p class="table-selected-number no-selected">Vælg en eller flere
+            rækker for at udføre funktioner</p>
+
+        <button class="button button-primary">
+            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
+            Download
+        </button>
+
+        <button class="button button-secondary">
+            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
+            Duplikér
+        </button>
+
+        <button class="button button-secondary">
+            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#delete"></use></svg>
+            Slet
+        </button>
+
+    </div>
+</div>
+    </div>
+    
+</div>
+
+<p>Hvis der kan udføres særlige funktioner for de valgte rækker, placeres funktionsknapper under tabellen. Brug ikke disabled knapper, når der ikke er nogen valgte rækker, da disabled knapper er svære at læse og forstå for nogle brugere. Vis i stedet en hjælpetekst under knapperne, hvis de bliver klikket, før der er valgt en eller flere rækker.</p>
+
+</section>
+
 <section class="styleguide-child-container content" id="section-/komponenter/tables/tables-advanced">
   <h2 id="avancerede-tabeller">Avancerede tabeller</h2>
   
@@ -3017,9 +3513,6 @@
 
 <h3 class="h4">Udfoldelig række</h3>
 <div><img src="/assets/img/components/advanced-table-expandable-row.png" class="outer-border-box p-4" alt="Eksempel på, hvordan en avanceret tabel med udfoldelige rækker kan se ud" /></div>
-
-<h3 class="h4">Valgbar række</h3>
-<div><img src="/assets/img/components/advanced-table-selected-row.png" class="outer-border-box p-4" alt="Eksempel på, hvordan en avanceret tabel med valgbar rækker kan se ud" /></div>
 
 <h3 class="h4">Rediger og slet en række</h3>
 

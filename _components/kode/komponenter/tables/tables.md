@@ -19,6 +19,10 @@ subnav:
   href: '#scroll'
 - text: Linjehøjde
   href: '#linjehoejde'
+- text: Sortering i tabel
+  href: '#sortering-i-tabel
+- text: Valgbare rækker
+  href: '#valgbare-raekker'
 ---
 
 {% include code/preview-box.html component="table" title="Eksempel på tabel" %}
@@ -102,3 +106,30 @@ Tilføj klassen `table--compact` på `<table>`
 
 #### Ekstra kompakt
 Tilføj klassen `table--extracompact` på `<table>`
+
+#### Sortering i tabel
+{% include code/syntax.html component="table-sort" link="true" %}
+
+Eksemplet er fuldt funktionelt, men funktionaliteten følger ikke med i FDS koden. Man skal derfor selv bygge sorteringsfunktionen ved tryk på diverse knapper. Eksemplet viser, hvordan HTML tilpasses ved ændring af sortering.
+
+{:#valgbare-raekker}
+### Valgbare rækker
+{% include code/syntax.html component="table-selectable" link="true" %}
+
+#### Valgbare rækker med funktionsknapper
+{% include code/syntax.html component="table-selectable-functions" link="true" %}
+
+#### Javascript
+Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID')).init();
+{% endhighlight %}
+
+##### Events
+
+{:.table}
+| Event key                      | Element       | Beskrivelse                                                                                                              |
+|--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------|
+| fds.table.selectable.updated   | `<table>`     | Når en tjekbox ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>` elementet |
+

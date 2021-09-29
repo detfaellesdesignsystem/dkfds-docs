@@ -30,14 +30,16 @@ anchor: true
 subnav:
 - text: Felt med fejlmeddelelse
   href: "#felt-med-fejlmeddelelse"
-- text: Felt med frivillig indtastning
-  href: "#felt-med-frivillig-indtastning"
+- text: Obligatoriske og frivillige felter
+  href: "#obligatoriske-og-frivillige-felter"
 - text: Felt med hjælpetekst
   href: "#felt-med-hjælpetekst"
 - text: Deaktiveret felt
   href: "#deaktiveret-felt"
 - text: Read-only felt
   href: "#read-only-felt"
+- text: Prefix og suffix
+  href: "#prefix-og-suffix"
 - text: Feltbredde
   href: "#feltbredde"
 component: text-input
@@ -91,5 +93,15 @@ Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så b
 - <a href="https://www.nngroup.com/articles/form-design-white-space/" class="icon-link">Marieke McCloskey: Form Design Quick Fix: Group Form Elements Effectively Using White Space (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php" class="icon-link">Caroline Jarrett: Don’t Put Labels Inside Text Boxes (Unless You’re Luke W) (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/form-design-placeholders/" class="icon-link">Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+
+{:.h3}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/AES-erstatningssag/aes-5/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/aktindsigt/aktindsigt-1/" target="_blank" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
+- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
+
 
 {% include child-components.html parent='Text-field' %}

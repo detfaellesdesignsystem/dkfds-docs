@@ -43,7 +43,7 @@
 {% endblock %}
 
 {% block body %}
-<main class="container page-container pt-4 pt-lg-0">
+<main class="container page-container pt-4 pt-lg-0" id="main-content">
     <div><a href="/pages/eksempler/AES-erstatningssag/aes-5/" class="back-link">Tilbage</a></div>
     {{overflowmenu("Trin 6 af 9","overflow_steps", true, false, "arrow-drop-down" ,"
         <nav><ul class='sidenav-list' role='menu'>
@@ -130,7 +130,7 @@
         </thead>
         <tbody>
             <tr>
-                <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file')}}prn1023152_journal.pdf</td>
+                <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file-pdf')}}prn1023152_journal.pdf</td>
                 <td class="mt-4 mt-lg-0">
                   {{select("Navngiv dokument", "select-dokumentationtype", "Vælg dokumentationstype", "", "Vælg type", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "sr-only")}}</td>
                 <td class="mt-4 mt-lg-0">

@@ -18,8 +18,6 @@ subcategory: Design
 description: Det Fælles Designsystem baserer sit responsive layout på en opdeling
   af siden i 12 lige brede kolonner.
 lead: 'Brug et grid til at placere komponenterne i dit layout horisontalt, og brug baseline grid til at skabe en vertikal rytme på siden.'
-anchor: false
-subnav: []
 ---
 
 De fleste selvbetjeningsløsninger kan med fordel nøjes med at venstrestille alt indhold og dermed kun anvende cirka halvdelen af en desktop sides bredde. I sådanne tilfælde bruges til horisontale grid primært til at definere enkelte komponenters bredde.
@@ -40,7 +38,7 @@ I tablet- og mobilvisninger folder layoutet sammen til 8- og 4-grid. På den må
 
 Det Fælles Designsystem er responsivt og tilpasser sig således automatisk det tilgængelige vinduesareal.
 
-Sidens breakpoints er de værdier, hvorefter siden automatisk tilpasser sig arealet. Du kan anvende nedenståene eller definere dine egne. Det Fælles Designsystem bruger følgende breakpoints:
+Sidens breakpoints er de værdier, hvorefter siden automatisk tilpasser sig arealet. Du kan anvende nedenstående eller definere dine egne. Det Fælles Designsystem bruger følgende breakpoints:
 
 - Desktop/stor skærm: 1200px
 - Desktop/middel skærm: 992px

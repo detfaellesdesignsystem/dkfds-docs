@@ -1,7 +1,7 @@
 {% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
 <div class="form-group">
     <fieldset>
-        <legend class="h5">Radioknap med hjælpetekst</legend>
+        <legend class="form-label">Radioknap med hjælpetekst</legend>
         <ul class="nobullet-list">
             {% for item in radiobuttons_example_helptext.items %}<li>{{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.attr, item.inputClasses, item.inputAttrs, item.formClasses, item.sr, item.helptext) }}</li>{% endfor %}
         </ul>

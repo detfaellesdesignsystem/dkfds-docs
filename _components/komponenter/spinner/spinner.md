@@ -40,7 +40,7 @@ Nedenstående tider og beskeder er vejledende og kan tilpasses så det passer be
 - 5 sekunder: "Arbejder stadig"
 - 11 sekunder: "Det tager længere end forventet, beklager"
 - 18 sekunder: "Vi er stadig i gang, undskyld ventetiden"
-- Efter 25 sekunder bør løsningen time-out og sende brugeren videre til en undskyldende fejlside - denne bør vi også have et eksempel på - i eksemplet på komponentsiden skal dette dog ikke ske, her skal spinneren starte forfra.
+- Efter 25 sekunder bør løsningen time-out og sende brugeren videre til en undskyldende fejlside
 
 {:.h5}
 ### Beskeder på spinner med forventet lang svartid
