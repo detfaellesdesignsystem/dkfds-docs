@@ -431,13 +431,15 @@
             <tr>
                 <th>Filnavn</th>
                 <th>Dokumentationstype</th>
-                <th>Sidetal (frivilligt)</th>
+                <th>Sidetal <span class="weight-normal">(frivilligt)</span>
+                </th>
                 <th class="align-text-right">Slet</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="mt-4 mt-lg-0 break-word w-percent-md-40">
+                <td
+                    class="mt-4 mt-lg-0 break-word w-percent-md-40 vertical-align-middle">
                     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>prn1023152_journal.pdf
                 </td>
                 <td class="mt-4 mt-lg-0">
@@ -466,7 +468,7 @@
                                 (frivilligt)</span>
                         </label>
 
-                        <input class="form-input input-width-xs"
+                        <input class="form-input input-char-4"
                             id="id-pagenumber" value="" name="Sidetal"
                             type="text">
                     </div>
@@ -564,11 +566,11 @@
 
 
 
-<footer class="demo-footer d-print-none">
+<footer class="demo-footer d-print-none" aria-label="Gå tilbage til oversigten eller skift tema">
   <div class="demo-footer-content d-flex align-items-center">
-    <a class="button" href="/eksempler/"><svg class="icon-svg " ><use xlink:href="#arrow-left"></use></svg>Til eksempelsiden</a>
-    <label class="sr-only" for="themeSelector">Eksempelvisning</label>
-    <select class="form-select style-switcher mt-0 ml-4" id="themeSelector" name="Style switcher" aria-label="Skift mellem temaer">
+    <a class="button" href="/eksempler/"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Til eksempelsiden</a>
+    <label class="sr-only" for="themeselector">Skift tema</label>
+    <select class="form-select style-switcher mt-0 ml-4" id="themeselector" name="themeselector">
       <option value="virk">Tema: Virk</option>
       <option value="borgerdk">Tema: Borger.dk</option>
     </select>

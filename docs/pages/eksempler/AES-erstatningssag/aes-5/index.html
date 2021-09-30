@@ -414,8 +414,8 @@
 
     <div class="form-group  ">
         <fieldset aria-describedby="example-date-field-hint1 ">
-            <legend class="form-label">Skadedato<button
-                    class="js-tooltip button-unstyled"
+            <legend class="form-label">Skadedato<button type="button"
+                    class="js-tooltip button-unstyled ml-3"
                     data-tooltip="Her står relevant uddybbende hjælpetekst."
                     data-tooltip-trigger="click"><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg><span
                         class="sr-only">Hvad betyder det?</span></button>
@@ -462,8 +462,8 @@
 
     <div class="form-group">
         <label class="form-label " for="id-skadenummer">
-            Jeres sags-/skadenummer<button
-                class="button-unstyled js-tooltip"
+            Jeres sags-/skadenummer<button type="button"
+                class="button-unstyled js-tooltip ml-3"
                 data-tooltip="Her står relevant uddybbende hjælpetekst."
                 data-tooltip-trigger="click"><svg class="icon-svg" focusable="false" aria-hidden="true" ><use xlink:href="#help"></use></svg><span
                     class="sr-only">Hvad betyder det?</span></button>
@@ -623,11 +623,11 @@
 
 
 
-<footer class="demo-footer d-print-none">
+<footer class="demo-footer d-print-none" aria-label="Gå tilbage til oversigten eller skift tema">
   <div class="demo-footer-content d-flex align-items-center">
-    <a class="button" href="/eksempler/"><svg class="icon-svg " ><use xlink:href="#arrow-left"></use></svg>Til eksempelsiden</a>
-    <label class="sr-only" for="themeSelector">Eksempelvisning</label>
-    <select class="form-select style-switcher mt-0 ml-4" id="themeSelector" name="Style switcher" aria-label="Skift mellem temaer">
+    <a class="button" href="/eksempler/"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Til eksempelsiden</a>
+    <label class="sr-only" for="themeselector">Skift tema</label>
+    <select class="form-select style-switcher mt-0 ml-4" id="themeselector" name="themeselector">
       <option value="virk">Tema: Virk</option>
       <option value="borgerdk">Tema: Borger.dk</option>
     </select>

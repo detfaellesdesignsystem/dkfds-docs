@@ -124,17 +124,17 @@
             <tr>
                 <th>Filnavn</th>
                 <th>Dokumentationstype</th>
-                <th>Sidetal (frivilligt)</th>
+                <th>Sidetal <span class="weight-normal">(frivilligt)</span></th>
                 <th class="align-text-right">Slet</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="mt-4 mt-lg-0 break-word w-percent-md-40">{{ icon_svg('file-pdf')}}prn1023152_journal.pdf</td>
+                <td class="mt-4 mt-lg-0 break-word w-percent-md-40 vertical-align-middle">{{ icon_svg('file-pdf')}}prn1023152_journal.pdf</td>
                 <td class="mt-4 mt-lg-0">
                   {{select("Navngiv dokument", "select-dokumentationtype", "Vælg dokumentationstype", "", "Vælg type", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "sr-only")}}</td>
                 <td class="mt-4 mt-lg-0">
-                {{textinput("id-pagenumber", "Angiv sidetal", "(frivilligt)", "input-width-xs", "", "Sidetal", "sr-only", false, "")}}
+                {{textinput("id-pagenumber", "Angiv sidetal", "(frivilligt)", "input-char-4", "", "Sidetal", "sr-only", false, "")}}
                 </td>
                 <td class="align-text-md-right mt-4 mt-lg-0">
                     <button class="button button-unstyled">

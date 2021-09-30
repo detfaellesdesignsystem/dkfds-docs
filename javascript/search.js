@@ -16,12 +16,7 @@ let synonyms = [
     ["plug-in", "plug-ins", "plugin", "plugins", "udvidelse", "udvidelser"]
 ];
 
-let excludeWords = ["Når", "i", "I", "er", "det", "der", "dem", "den", "et", "hvad", "hvor", "hvem", "på", "og"];
-
-
 const limit = 1000;
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     let url_queries = window.location.search.substr(1).split('&');
@@ -147,6 +142,8 @@ function searchWords(query){
 function matchSearch(page, query){
 
     let matched = false;
+    
+    let tags = page.tags.join(',').toLowerCase().split(',');
     if(query.length > 1) {
         let phrases = query.split(" ");
         let syns = searchWords(query);
@@ -175,7 +172,7 @@ function matchSearch(page, query){
                 break;
             }
         }
-    } else if(page.title.toLowerCase().startsWith(query)){
+        } else if(page.title.toLowerCase().startsWith(query) || tags.indexOf(query.toLowerCase()) >= 0 ){
         page.matched = true;
     }
     return page;
@@ -192,7 +189,6 @@ function search(query){
         }
     });
     let sortedResult = sort(result, query);
-    console.log("sortedResult", sortedResult);
     let endResult = [];
     sortedResult.forEach(function(page){
       if(page.score >= 50){

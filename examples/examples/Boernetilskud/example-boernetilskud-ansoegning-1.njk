@@ -7,7 +7,7 @@
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-
+{% import "components/buttons/buttons.njk" as button %}
 
 {% block header %}
   <header class="header">
@@ -136,12 +136,11 @@
                     </div>
                 </form>
             </div>
+            
+            <button type="button" class="button button-secondary mt-6">{{ icon_svg('add')}} Tilføj barn</button>
         </div>
-
-    </section>
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/boernetilskud/boernetilskud-2" class="button button-primary">Næste</a>
-    </nav>
+        <button type="submit" class="button button-primary d-print-none mt-6">Næste</button>
+    </form>
   </main>
 {% endblock %}
 

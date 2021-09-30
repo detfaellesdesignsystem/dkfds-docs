@@ -9,8 +9,12 @@
     {% include code/components/base-svg.html %}
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
     <main class="container page-container" id="main-content">
-    <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
+    <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
     {{ content }}
+    {% if page.title contains "tringuide" or page.title contains "Tringuide"  %}
+    </aside>
+    </div>
+    {% endif %}
     </main>
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>

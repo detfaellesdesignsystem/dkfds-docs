@@ -5,7 +5,7 @@ const cookieName = 'theme';
 const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
-const demoSelectorId = 'themeSelector';
+const demoSelectorId = 'themeselector';
 
 document.addEventListener("DOMContentLoaded", function(){
         debug("test", "test");

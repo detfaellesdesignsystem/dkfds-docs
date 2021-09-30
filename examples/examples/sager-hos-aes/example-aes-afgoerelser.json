@@ -106,6 +106,22 @@
       {"code": "kl", "name": "Kalaallisut"},
       {"code": "pl", "name": "Polski"}
     ]
-  }
+    }
+  },
+  "details_anerkendelse": {
+    "text": "Læs om vurdering af anerkendelse",
+    "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+  },
+  "details_men": {
+    "text": "Læs om vurdering af mén",
+    "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+  },
+  "details_erhvervsevne": {
+    "text": "Læs om vurdering af erhvervsevne",
+    "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+  },
+  "details_behandlingsudgifter": {
+    "text": "Læs om vurdering af behandlingsudgifter, under sagen, hjælpemidler",
+    "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
   }
 }
