@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Handler when the DOM is fully loaded
     DKFDS.init();
     
+    demoReturnToPreviousPage();
 
     let path = window.location.pathname.split('/');
     if(path.indexOf('mastertest') !== -1){
@@ -41,6 +42,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }, false);
     }
 });
+
+/**
+ * If demo page with demo footer handle link to previous page if defined
+ */
+function demoReturnToPreviousPage(){
+    if(document.getElementById('btn-demo-return') !== null){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        console.log(urlParams);
+        const returnUrl = urlParams.get('r').replace('%23', '#');
+        if (returnUrl !== null){
+            document.getElementById('btn-demo-return').setAttribute('href', returnUrl);
+        }
+    }
+}
 
 function toastExample(){
     let button = document.getElementById('toast-example-button');

@@ -52,10 +52,10 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 
 <a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" class="icon-link">Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/opgaveliste/" target="_blank" title="Eksempelløsning Opgaveliste åbnes i nyt vindue">Opgaveliste</a>
+- <a href="/pages/eksempler/opgaveliste/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Opgaveliste åbnes i nyt vindue">Opgaveliste</a>
 
 {% include child-components.html parent='Badges' %}

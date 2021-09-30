@@ -52,10 +52,10 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 - <a href="https://slate.com/technology/2013/06/how-people-read-online-why-you-wont-finish-this-article.html" class="icon-link">Farhad Manjoo: You Won’t Finish This Article (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/utility-navigation/" class="icon-link">Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/AES-erstatningssag/aes-5/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
 
 {% include child-components.html parent='Funktionslink' %}

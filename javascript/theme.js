@@ -273,7 +273,7 @@ let setScreenshots = function(){
     if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
         let screenshots = document.getElementsByClassName('screenshot');
         for(let i = 0; i < screenshots.length; i++){
-            let url = screenshots[i].getAttribute('href').split('/');
+            let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
             let filename = getThemeCookie()+'-'+url[url.length-2]+'.PNG';
             let image = '<img src="/assets/img/examples_pages/'+url[3]+'/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="w-percent-100 d-block" />';
             screenshots[i].innerHTML = image;
@@ -289,7 +289,7 @@ let setScreenshots = function(){
     if(document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') || document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger') ||  document.getElementsByTagName('body')[0].classList.contains('page-footers') || document.getElementsByTagName('body')[0].classList.contains('page-headers') || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
         let screenshots = document.querySelectorAll('.screenshot');
         for(let i = 0; i < screenshots.length; i++){
-            let url = screenshots[i].getAttribute('href').split('/');
+            let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
             let componentName = url[url.length-2];
             let filename = getThemeCookie()+'-'+componentName+'.png';
             let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';

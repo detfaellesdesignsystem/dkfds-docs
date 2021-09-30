@@ -6,7 +6,8 @@
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
 
-{% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
 
 {% block header %}
   <header class="header">
@@ -26,7 +27,7 @@
 
       <div class="solution-info-mobile">
         <p class="bold">Erhvervsministeriet</p>
-        <p><button class="function-link d-inline-block mt-0" data-module="modal" data-target="modal-contact"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#card-text"></use></svg>Kontakt</button></p>
+       <p><button class="function-link d-inline-block mt-0" data-module="modal" data-target="modal-contact"><svg class="icon-svg " aria-hidden='true' focusable='false'><use xlink:href="#card-text"></use></svg>Kontakt</button></p>
       </div>
 
     </nav> <!-- collapsible nav end-->
@@ -35,28 +36,35 @@
 
 {% block body %}
 <main class="container page-container" id="main-content">
-    {{ alert("alert alert-success alert--show-icon", "alert", "Vi har modtaget dine oplysninger og vil behandle ansøgningen hurtigst muligt", "", "success" ) }}
 
-    <h1 class="mt-5">Kvittering</h1>
-    <label class="form-label">Navn</label>
-    <p class="mt-0">Karen Jensen</p>
-    <div class="mt-5">
-      <label class="form-label">Adresse</label>
-      <p class="mt-0">Vængetstræde 77 <br>
-      0081 Købstad</p>
-    </div>
-    <div class="mt-5">
-      <label class="form-label">Alder</label>
-      <p class="mt-0">39</p>
-    </div>
-    <div class="mt-5">
-      <label class="form-label">Tidligere ansøgninger</label>
-      <p class="mt-0">Nej</p>
-    </div>
-
-    <button class="button button-secondary mt-7 d-print-none">{{ icon_svg('file-download')}} Gem som pdf</button> <br>
-    <button class="button button-secondary mt-3 d-print-none">{{ icon_svg('print')}} Print</button>
-
+    <form class="form" method="post" action="/pages/eksempler/aktindsigt/aktindsigt-2/">
+        <div role="group" aria-labelledby="oplysninger-om-dig">
+            <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
+            {{textinput("id-fornavn", "Fornavn", "", "input-width-m", "", "Input til fornavn", "", false, "")}}
+            {{textinput("id-efternavn", "Efternavn", "", "input-width-m", "", "Input til efternavn", "", false, "")}}
+            {{textinput("id-gade-vej", "Gade/vej", "", "input-width-m", "", "Input til gade/vej", "", false, "")}}
+            {{textinput("id-husnummer", "Husnummer", "", "input-width-xxs", "", "Input til husnummer", "", false, "")}}
+            {{textinput("id-etage", "Etage", "(frivilligt)", "input-width-xxs", "", "Input til etage", "", false, "")}}
+            {{textinput("id-side", "Side", "(frivilligt)", "input-width-xs", "", "Input til side", "", false, false, "Fx: TV, 2. dør")}}
+            {{textinput("id-postnummer", "Postnummer", "", "input-width-xxs", "", "Input til postnummer", "", false, "")}}
+            {{textinput("id-by", "By", "", "input-width-m", "", "Input til by", "", false, "")}}
+            {{textinput("id-co-adresse", "Evt. CO-adresse", "(frivilligt)", "input-width-m", "", "Input til CO-adresse", "", false, "")}}
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label">Er der tidligere søgt om aktindsigt?</legend>
+                    <ul class="nobullet-list">
+                        <li>
+                            {{radiobutton("id-aktindsigt-ja", "aktindsigt", "Ja", false, false, "Ja", "radio-large", false, "true")}}
+                        </li>
+                        <li>
+                            {{radiobutton("id-aktindsigt-nej", "aktindsigt", "Ja", false, false, "Nej", "radio-large", false, "true")}}
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+        <button type="submit" class="button button-primary d-print-none mt-7">Næste</button>
+    </form>
 </main>
 {% endblock %}
 

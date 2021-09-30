@@ -93,48 +93,46 @@
 
 {% block body %}
   <main class="container page-container" id="main-content">
-    <section class="page-content">
-        {{overflowmenu("Trin 1 af 2","overflow_steps", true, false, "arrow-drop-down" ,"
-              <nav><ul class='sidenav-list' role='menu'>
-                  <li class='active current' role='none'>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-1' role='menuitem' aria-current='page'>
-                          1. Hvilke børn søger du tilskud til?
-                      </a>
-                  </li>
-                  <li role='none'>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-2' role='menuitem'>
-                          2. Hvornår blev du eller bliver du enlig?
-                      </a>
-                  </li>
-              </ul></nav>
-              "
-          ) }}
-        <h1>{{title}}</h1>
-        <div class="row">
-            <div class="col-12 col-md-8 col-lg-5">
-                <form class="form">
-                    <div class="form-group">
-                        <fieldset>
-                            <legend class="form-label">Jeg søger tilskud til:</legend>
-                            <ul class="nobullet-list">
-                                <li>
-                                    {{ alert("alert-warning", "", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium." ) }}
-                                    {{ checkbox("checkbox-id-1", "", "checkbox1_selected", true, false, "Keld Hedagaardsen <br> 353535-3535 <br> Fælles", "", false, true) }}
-                                </li>
-                                <li>
-                                    {{ alert("alert-warning", "", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.") }}
-                                    {{ checkbox("checkbox-id-2", "", "checkbox2_selected", true, false, "Anita Hedagaardsen <br> 353535-3535 <br> Fælles", "", false, true) }}
-                                </li>
-                                <li>
-                                    {{ checkbox("checkbox-id-3", "", "checkbox3_selected", false, false, "<span class=\"bold\">Ylmig Hedagaardsen</span> <br> 353535-3535 <br> Fælles", "", false, true) }}
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </div>
-                    <div class="form-group">
-                        <button class="button button-secondary mt-4">{{ icon_svg('add')}} Tilføj barn</button>
-                    </div>
-                </form>
+    {{overflowmenu("Trin 1 af 2","overflow_steps", true, false, "arrow-drop-down" ,"
+            <nav><ul class='sidenav-list' role='menu'>
+                <li class='active current' role='none'>
+                    <a href='/pages/eksempler/boernetilskud/boernetilskud-1' role='menuitem' aria-current='page'>
+                        <span class='sidenav-number'>1.</span><span class='sidenav-title'>Hvilke børn søger du tilskud til?</span>
+                    </a>
+                </li>
+                <li role='none'>
+                    <a href='/pages/eksempler/boernetilskud/boernetilskud-2' role='menuitem'>
+                        <span class='sidenav-number'>2.</span><span class='sidenav-title'>Hvornår blev du eller bliver du enlig?</span>
+                    </a>
+                </li>
+            </ul></nav>
+            "
+        ) }}
+    <h1>{{title}}</h1>
+    <form action="/pages/eksempler/boernetilskud/boernetilskud-2">
+        <div class="form-group">
+            <fieldset>
+                <legend class="form-label">Jeg søger tilskud til</legend>
+                <ul class="nobullet-list">
+                    <li>
+                        {{ checkbox("checkbox-id-3", "", "checkbox3_selected", false, false, "Ylmig Hedagaardsen<br />353535-3535<br>Fælles forældremyndighed", "", false, true) }}
+                    </li>
+                    
+                </ul>
+            </fieldset>
+            <div class="mt-6">
+                Keld Hedagaardsen, 353535-3535, Fælles forældremyndighed<br/>
+                <span class="form-hint d-inline-block">Allerede registreret</span>
+                <button type="button" class="js-tooltip button-unstyled" data-tooltip="Nullam ultrices tincidunt felis non viverra. Aliquam dignissim turpis sit amet urna efficitur ultrices at vel enim. Ut ultrices, tortor eu suscipit posuere, tellus lacus posuere massa, sit amet rhoncus risus odio ut tellus." data-tooltip-trigger="click">
+                    {{ icon_svg('help')}}<span class="sr-only">Hvad betyder det?</span>
+                </button>
+            </div>
+            <div class="mt-6">
+                Anita Hedagaardsen, 353535-3040, Fælles forældremyndighed<br/>
+                <span class="form-hint d-inline-block">Allerede registreret</span>
+                <button type="button" class="js-tooltip button-unstyled" data-tooltip="Nullam ultrices tincidunt felis non viverra. Aliquam dignissim turpis sit amet urna efficitur ultrices at vel enim. Ut ultrices, tortor eu suscipit posuere, tellus lacus posuere massa, sit amet rhoncus risus odio ut tellus." data-tooltip-trigger="click">
+                    {{ icon_svg('help')}}<span class="sr-only">Hvad betyder det?</span>
+                </button>
             </div>
             
             <button type="button" class="button button-secondary mt-6">{{ icon_svg('add')}} Tilføj barn</button>
