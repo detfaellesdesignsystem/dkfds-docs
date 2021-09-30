@@ -107,12 +107,12 @@ Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagu
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
 
-
 {:#version-x-x-x .mb-0}
 ## Version X.X.X
 <p class="small-text mt-0">xx-xx-2021</p>
 
 - Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikatorer/">trinindikator</a>
+- Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
