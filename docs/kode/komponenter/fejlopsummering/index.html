@@ -3153,7 +3153,7 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="alert alert-error mt-0 mb-8" role="alert" aria-atomic="true">
+        <div class="alert alert-error mt-0 mb-8" role="alert" aria-atomic="true" data-module="error-summary">
     <div class="alert-body">
         <p class="alert-heading">Der er problemer</p>
         <ul class="alert-text nobullet-list">
@@ -3184,7 +3184,8 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;
+    data-module=&quot;error-summary&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
         &lt;p class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/p&gt;
         &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
@@ -3216,7 +3217,8 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;
+    data-module=&quot;error-summary&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
         &lt;p class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/p&gt;
         &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
@@ -3332,6 +3334,10 @@
     </div>
 </div>
 
+<h3>Javascript</h3>
+<p>Fejlopssumering kræver JavaScript for at fungere korrekt i alle browsers. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.ErrorSummary(document.getElementById(&#39;ALERT-ID&#39;)).init();</code></pre></figure>
 
       </section>
     </main>
