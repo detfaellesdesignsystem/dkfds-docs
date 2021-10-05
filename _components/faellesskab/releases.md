@@ -113,6 +113,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikatorer/">trinindikator</a>
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
+- Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
