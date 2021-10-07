@@ -43,7 +43,7 @@ Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af pers
 <a href="/design/datavisualisering-infografik/infografik/">Læs mere om infografik</a>
 
 <figure>
-    <img src="/assets/img/design/infografik/when-bike-tablet.svg" alt="Billedet viser procentfordelingen af, hvornår vi bruger cyklen til forskellige formål: fritid, ærinde, arbejde, uddannelse, erhverv" />
+    <img src="/assets/img/design/infografik/when-bike-tablet.svg" alt="Hvornår bruger vi cyklen? 32% fritid, 26% ærinde, 25% arbejde, 14% uddannelse, 2% erhverv" />
     <figcaption>
         <p>40% af cykelturene er ture til og fra arbejde og uddannelse. 26% er ærindeture, 32% af turene er fritidsture og blot 2% er erhvervsture.</p>
         <p>Kilde: Transportvaneundersøgelsen 2016-2019</p>
