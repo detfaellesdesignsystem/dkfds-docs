@@ -19,7 +19,7 @@ lead: Datavisualiseringer og infografikker kan formidle data eller informationer
 
 Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 
 
-Vær meget opmærksom på <a href="/design/datavisualisering-infografik/tilgaengelighed/">tilgængelighed i forbindelse med grafik og visualisering</a>.
+Vær meget opmærksom på <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">tilgængelighed i forbindelse med grafik og visualisering</a>.
 
 {:.h5}
 ## Datavisualisering
@@ -31,7 +31,7 @@ Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram
 <figure>
     <img src="/assets/img/design/datavisualisering/piechart.png" class="w-percent-50" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
     <figcaption>
-        <p>46% melder at de har haft en meget god oplevelse og 18% melder at de har haft en god oplevelse. 15% en dårlig oplevlse, 17% meget dårlig og 4% ved ikke.</p>
+        <p>46% melder at de har haft en meget god oplevelse og 18% melder at de har haft en god oplevelse. 15% en dårlig oplevelse, 17% meget dårlig og 4% ved ikke.</p>
     </figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ Brug ikke infografik og datavisualisering, hvis det bliver uoverskueligt eller p
 
 Overvej hvorvidt data eller information er for kompleks til en visuel præsentation. Det er vigtigt at datavisualiseringer og infografikker forbedrer formidlingen og ikke skaber mere forvirring.
 
-Overvej grundigt, hvordan infografikken og datavisualiseringen bygges, da der skal tages højde for brugere af hjælpeteknologier som skærmlæsere. Infografik og datavisualisering i HTML/CSS er at foretrække, da det gør grafikken tilgængelig for brugere med skærmlæsere og for navigation med keyboard. Det giver ydermere mulighed for bedre skalering på tværs af forskellige skærmstørrelser. Vær opmærksom på at bygge HTML/CSS, så det er læseligt for en skærmlæser. Det er ikke altid muligt at oprette infografik og datavisualisering som HTML/CSS og man vil istedet benytte en flad raster grafikfil (SVG, PNG, JPG, GIF). I sådanne tilfælde er et godt gennemtænkt tekstalternativ (se nedenfor) yderst vigtigt. 
+Overvej grundigt, hvordan infografikken og datavisualiseringen bygges, da der skal tages højde for brugere af hjælpeteknologier som skærmlæsere. Infografik og datavisualisering i HTML/CSS er at foretrække, da det gør grafikken tilgængelig for brugere med skærmlæsere og for navigation med keyboard. Det giver ydermere mulighed for bedre skalering på tværs af forskellige skærmstørrelser. Vær opmærksom på at bygge HTML/CSS, så det er læseligt for en skærmlæser. Det er ikke altid muligt at oprette infografik og datavisualisering som HTML/CSS og man vil i stedet benytte en flad raster grafikfil (SVG, PNG, JPG, GIF). I sådanne tilfælde er et godt gennemtænkt tekstalternativ (se nedenfor) yderst vigtigt. 
 
 <a href="https://www.w3.org/TR/WCAG21/#text-alternatives" class="icon-link">Inkludér altid tekstalternativer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> fx en beskrivende tekst, som placeres under infografik/datavisualisering. I nogle tilfælde kan en numerisk tabel sammen med grafikken, der også gengiver dataene, give yderligere tilgængelighed. Dette er især godt, når forskellen er marginal og præcise tal ikke kan passe ind i mindre dele af datavisualiseringen – når “kagestykkerne” fx bliver for små i et “kagediagram”.
 
