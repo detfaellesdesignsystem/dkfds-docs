@@ -11,7 +11,7 @@ require('./spinner');
 require('./examples');
 document.addEventListener("DOMContentLoaded", function() {
     languageSwitcher();
-// Handler when the DOM is fully loaded
+    
     DKFDS.init();
     
     demoReturnToPreviousPage();

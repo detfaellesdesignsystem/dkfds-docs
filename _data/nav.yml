@@ -46,6 +46,8 @@ Design_category:
 - href: /design/ikoner/
   categorynav: 'Icon_category'
 - href: /design/logoer/
+- href: /design/datavisualisering-infografik/
+  categorynav: 'Datavisualisering_category'
 - href: /design/layout/
   categorynav: 'Layout_category'
 - href: /design/designressourcer/
@@ -54,6 +56,12 @@ Design_category:
 
 Icon_category:
   - href: /design/ikoner/ikoner-og-deres-betydning/
+
+Datavisualisering_category:
+  - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
+  - href: /design/datavisualisering-infografik/datavisualisering/
+  - href: /design/datavisualisering-infografik/infografik/
+
 
 Layout_category:
   - href: /design/layout/grid/

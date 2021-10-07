@@ -11,7 +11,6 @@ lead: Designet er målrettet selvbetjeningsløsninger der skal på borger.dk og 
 subcategory: ''
 anchor: false
 subnav: []
-
 ---
 Hvis du anvender designsystemets kode følger designets styling automatisk med.
 
