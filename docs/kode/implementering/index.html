@@ -1988,7 +1988,7 @@
 
 <p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.</p>
 
-<h2>Inkludér JavaScript</h2>
+<h2 id="javascript">Inkludér JavaScript</h2>
 
 <p>JavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.</p>
 
@@ -2010,9 +2010,22 @@
 <p class="mb-2">Eksempel på init:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">document.addEventListener(&quot;DOMContentLoaded&quot;, function(){
-  // Handler when the DOM is fully loaded
   DKFDS.init();
 });</code></pre></figure>
+
+<h4>Initiér alle komponenter i et bestemt område</h4>
+<p>Det er muligt at bruge DKFDS.init() i bestemte områder af din side ved at medsende parameter.</p>
+
+<p>I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det vil sige navigation, alle overflow menuer samt eventuelle modaler i headeren. Komponenter uden for headeren vil ikke blive berørt.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let $header = document.getElementsByTagName(&#39;header&#39;)[0];
+DKFDS.init({&#39;scope&#39;: $header});</code></pre></figure>
+
+<h4>Initiér komponenter enkeltvis</h4>
+
+<p>Javascript for komponenter kan kaldes enkeltvis, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance kan dette være værd at undersøge.</p>
+
+<p>Javascript dokumentationen for hver komponent findes på de enkelte <a href="/kode/komponenter/">komponentsider under kodesektionen</a>.</p>
 
 <h2 id="temahaandtering">Temahåndtering</h2>
 

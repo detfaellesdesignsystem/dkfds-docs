@@ -46,6 +46,7 @@ Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/
 
 Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.
 
+{:#javascript}
 ## Inkludér JavaScript
 
 JavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.
@@ -73,10 +74,25 @@ Når DKFDS er inkluderet kan du køre funktionen `DKFDS.init();` ved dom ready, 
 
 {% highlight javascript %}
 document.addEventListener("DOMContentLoaded", function(){
-  // Handler when the DOM is fully loaded
   DKFDS.init();
 });
 {% endhighlight %}
+
+#### Initiér alle komponenter i et bestemt område
+Det er muligt at bruge DKFDS.init() i bestemte områder af din side ved at medsende parameter.
+
+I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det vil sige navigation, alle overflow menuer samt eventuelle modaler i headeren. Komponenter uden for headeren vil ikke blive berørt.
+
+{% highlight javascript %}
+let $header = document.getElementsByTagName('header')[0];
+DKFDS.init({'scope': $header});
+{% endhighlight %}
+
+#### Initiér komponenter enkeltvis
+
+Javascript for komponenter kan kaldes enkeltvis, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance kan dette være værd at undersøge.
+
+Javascript dokumentationen for hver komponent findes på de enkelte <a href="/kode/komponenter/">komponentsider under kodesektionen</a>.
 
 {:#temahaandtering}
 ## Temahåndtering
