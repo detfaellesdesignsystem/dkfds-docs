@@ -59,9 +59,7 @@ pages:
 - _components/design/borders-shadows/border-shadows.md
 - _components/design/colors/colors.md
 - _components/design/design.md
-- _components/design/ikoner.md
 - _components/design/logo/logo.md
-- _components/kode/kode.md
 - _components/faellesskab/faellesskab.md
-- _components/faellesskab/releases/releases.md
+- _components/kode/kode.md
 - pages/eksempler/eksempler.md
