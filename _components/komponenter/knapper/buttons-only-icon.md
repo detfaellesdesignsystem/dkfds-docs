@@ -6,4 +6,3 @@ component: buttons-only-icon
 componentTitle: Eksempel på knap som ikon
 
 ---
-njgjsfljfklajfkafjlækfsalæfjlæfjælafjæl
