@@ -389,7 +389,7 @@ let generateResult = function () {
             }
 
             let summaryTable = document.getElementById('summary');
-            let rows = summaryTable.getElementsByTagName('tr');
+            let rows = summaryTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
             for(let i = 0; i < rows.length; i++){
                 let id = rows[i].id;
                 let value = questionnaire[id];
@@ -406,10 +406,10 @@ let generateResult = function () {
             }
 
             let resultTable = document.getElementById('resultat');
-            let resultRows = resultTable.getElementsByTagName('tr');
+            let resultRows = resultTable.getElementsByClassName('row');
             for (let v = 0; v < resultRows.length; v++){
                 let kravNo = v+1;
-                let badge = resultRows[v].getElementsByTagName('label')[0];
+                let badge = resultRows[v].getElementsByClassName('badge')[0];
                 if(isThisAKrav(kravNo)){
                     badge.innerText = "Krav";
                     badge.classList.add('badge-warning');
