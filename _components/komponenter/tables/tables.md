@@ -20,8 +20,6 @@ subnav:
   href: '#responsiv'
 - text: Linjehøjde
   href: '#forskellig-linjehøjde'
-- text: Med titel i venstre kolonne
-  href: '#med-titel-i-venstre-kolonne'
 - text: Sortering i tabeller
   href: '#sortering-i-tabeller'
 - text: Søgning i tabeller

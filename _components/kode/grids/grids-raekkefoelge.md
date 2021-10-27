@@ -8,14 +8,14 @@ order: 50
 
 Brug klasserne `.order-` til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx `.order-1.order-md-2`).
 
-{% include code/preview.html component="grid--ordering-visual" classes="px-4" %}
+{% include code/preview-code-tab.html component="grid--ordering-visual" %}
 
 ### Forskyd kolonner
 
 Brug klasserne `.offset-` til at forskyde kolonner, fx forskyder `.offset-md-4` 4 kolonner til højre.
 
-{% include code/preview.html component="grid--offsets" classes="px-4" %}
+{% include code/preview-code-tab.html component="grid--offsets" %}
 
 Du kan nulstille forskydning ved fx at bruge klassen `offset-md-0`.
 
-{% include code/preview-iframe.html component="grid--offsets-reset" %}
+{% include code/preview-code-tab.html component="grid--offsets-reset" %}

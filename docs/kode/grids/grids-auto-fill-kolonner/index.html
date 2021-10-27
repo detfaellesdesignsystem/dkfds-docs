@@ -1761,66 +1761,149 @@
 
 <h3>Specifik bredde på kun én kolonne</h3>
 
-<p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (.col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.</p>
+<p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.</p>
 
-<div class="component-preview px-4 component-preview-grid-one-column-width p-4" aria-label="">
-    <div class="container">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--one-column-width" id="tabbutton-component-grid--one-column-width" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-one-column-width" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--one-column-width" aria-labelledby="tabbutton-component-grid--one-column-width">
+        
+        <div class="container">
     <div class="row">
         <div class="col">
-            1 of 3
+            <p>1 of 3</p>
         </div>
         <div class="col-6">
-            2 of 3 (.col-6)
+            <p>2 of 3 (col-6)</p>
         </div>
         <div class="col">
-            3 of 3
+            <p>3 of 3</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            1 of 3
+            <p>1 of 3</p>
         </div>
         <div class="col-5">
-            2 of 3 (.col-5)
+            <p>2 of 3 (col-5)</p>
         </div>
         <div class="col">
-            3 of 3
+            <p>3 of 3</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--one-column-width" id="tabbutton-code-grid--one-column-width" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--one-column-width" aria-labelledby="tabbutton-code-grid--one-column-width">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;1 of 3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;p&gt;2 of 3 (col-6)&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;3 of 3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;1 of 3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-5&quot;&gt;
+            &lt;p&gt;2 of 3 (col-5)&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;3 of 3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Individuel kolonnebredde efter indhold</h3>
 
 <p>Ved at brug <code>col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
 
-<div class="component-preview px-4 component-preview-grid-variable-width-content p-4" aria-label="">
-    <div class="container">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--variable-width-content" id="tabbutton-component-grid--variable-width-content" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-variable-width-content" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--variable-width-content" aria-labelledby="tabbutton-component-grid--variable-width-content">
+        
+        <div class="container">
     <div class="row justify-content-md-center mb-2">
         <div class="col col-md-2">
-            1 of 3
+            <p>1 of 3</p>
         </div>
         <div class="col-md-auto">
-            Kolonne med variabel bredde
+            <p>Kolonne med variabel bredde</p>
         </div>
         <div class="col col-md-2">
-            3 of 3
+            <p>3 of 3</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            1 of 3
+            <p>1 of 3</p>
         </div>
         <div class="col-md-auto">
-            Kolonne med variabel bredde
+            <p>Kolonne med variabel bredde</p>
         </div>
         <div class="col col-md-2">
-            3 of 3
+            <p>3 of 3</p>
         </div>
     </div>
 </div>
-</div>
+        
+    </section>
 
+    <button aria-controls="tabpanel-code-grid--variable-width-content" id="tabbutton-code-grid--variable-width-content" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--variable-width-content" aria-labelledby="tabbutton-code-grid--variable-width-content">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row justify-content-md-center mb-2&quot;&gt;
+        &lt;div class=&quot;col col-md-2&quot;&gt;
+            &lt;p&gt;1 of 3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-auto&quot;&gt;
+            &lt;p&gt;Kolonne med variabel bredde&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col col-md-2&quot;&gt;
+            &lt;p&gt;3 of 3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;1 of 3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-auto&quot;&gt;
+            &lt;p&gt;Kolonne med variabel bredde&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col col-md-2&quot;&gt;
+            &lt;p&gt;3 of 3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
+</div>
 
 
       </section>

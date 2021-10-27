@@ -115,6 +115,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
+- Tilføjet mulighed for <a href="/kode/grid/#rækker-med-border">border på rækkerne i et grid</a> til brug som erstatning for tabel, når der ingen horisontal header er.
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0

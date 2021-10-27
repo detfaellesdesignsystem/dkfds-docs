@@ -203,12 +203,13 @@
                     value="Faktuelle oplysninger"
                     class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                     data-js-target='#collapse-check'
-                    aria-controls='collapse-check' aria-expanded='false' />
+                    data-aria-controls='collapse-check'
+                    aria-expanded='false' />
                 <label for="id-comments-1" class="">Faktuelle
                     oplysninger</label>
 
                 <div id="collapse-check" aria-hidden="true"
-                    class="box-border-l collapsed">
+                    class="checkbox-content checkbox-content-large">
                     <div class="py-4">
 
                         <div class="form-group">
@@ -228,13 +229,13 @@
                         name="Spørgsmål til AES" value="Spørgsmål til AES"
                         class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                         data-js-target='#collapse-check1'
-                        aria-controls='collapse-check1'
+                        data-aria-controls='collapse-check1'
                         aria-expanded='false' />
                     <label for="id-comments-2" class="">Spørgsmål til
                         AES</label>
 
                     <div id="collapse-check1" aria-hidden="true"
-                        class="box-border-l collapsed">
+                        class="checkbox-content checkbox-content-large">
                         <div class="py-4">
 
                             <div class="form-group">
@@ -255,13 +256,13 @@
                         name="Instruks til AES" value="Instruks til AES"
                         class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                         data-js-target='#collapse-check2'
-                        aria-controls='collapse-check2'
+                        data-aria-controls='collapse-check2'
                         aria-expanded='false' />
                     <label for="id-comments-3" class="">Instruks til
                         AES</label>
 
                     <div id="collapse-check2" aria-hidden="true"
-                        class="box-border-l collapsed">
+                        class="checkbox-content checkbox-content-large">
                         <div class="py-4">
 
                             <div class="form-group">
@@ -283,13 +284,13 @@
                         value="Særlige forsikringsbetingelser"
                         class="form-checkbox  checkbox-large js-checkbox-toggle-content"
                         data-js-target='#collapse-check3'
-                        aria-controls='collapse-check3'
+                        data-aria-controls='collapse-check3'
                         aria-expanded='false' />
                     <label for="id-comments-4" class="">Særlige
                         forsikringsbetingelser</label>
 
                     <div id="collapse-check3" aria-hidden="true"
-                        class="box-border-l collapsed">
+                        class="checkbox-content checkbox-content-large">
                         <div class="py-4">
 
                             <div class="form-group">
@@ -305,10 +306,11 @@
             </li>
         </ul>
     </div>
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/AES-erstatningssag/aes-9"
-            class="button button-primary">Næste</a>
-    </nav>
+
+    <form method="get" action="/pages/eksempler/AES-erstatningssag/aes-9/">
+        <button
+            class="button button-primary mt-8 d-print-none">Næste</button>
+    </form>
 </main>
 
 <footer>

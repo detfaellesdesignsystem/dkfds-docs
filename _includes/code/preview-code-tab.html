@@ -1,0 +1,29 @@
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-{{include.component}}" id="tabbutton-component-{{include.component}}" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-{{ include.component | slugify }}" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-{{include.component}}" aria-labelledby="tabbutton-component-{{include.component}}">
+        {% if include.component contains "tringuide" %}
+        <div class="row mx-0">
+        <aside class="sidebar-col">
+        {% endif %}
+        {% include code/components/{{ include.component }}.html %}
+        {% if include.component contains "tringuide" %}
+        </aside>
+        </div>
+        {% endif %}
+    </section>
+
+    <button aria-controls="tabpanel-code-{{include.component}}" id="tabbutton-code-{{include.component}}"  class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-{{include.component}}" aria-labelledby="tabbutton-code-{{include.component}}">
+        {% capture _syntax %}
+        {% highlight html %}
+        {% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
+        {% endhighlight %}
+        {% endcapture %}{{ _syntax | markdownify }}
+    </section>
+</div>

@@ -1761,102 +1761,260 @@
 
 <p>Brug klasserne <code>.order-</code> til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx <code>.order-1.order-md-2</code>).</p>
 
-<div class="component-preview px-4 component-preview-grid-ordering-visual p-4" aria-label="">
-    <div class="grid-example">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                Første kolonne, men ingen order-klasse
-            </div>
-            <div class="col order-12">
-                Anden kolonne, men vises som sidste kolonne
-            </div>
-            <div class="col order-1">
-                Tredje kolonne, men vises som anden kolonne
-            </div>
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--ordering-visual" id="tabbutton-component-grid--ordering-visual" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-ordering-visual" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--ordering-visual" aria-labelledby="tabbutton-component-grid--ordering-visual">
+        
+        <div class="container">
+    <div class="row">
+        <div class="col">
+            <p>Første kolonne, men ingen order-klasse</p>
+        </div>
+        <div class="col order-12">
+            <p>Anden kolonne, men vises som sidste kolonne</p>
+        </div>
+        <div class="col order-1">
+            <p>Tredje kolonne, men vises som anden kolonne</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--ordering-visual" id="tabbutton-code-grid--ordering-visual" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--ordering-visual" aria-labelledby="tabbutton-code-grid--ordering-visual">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;Første kolonne, men ingen order-klasse&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col order-12&quot;&gt;
+            &lt;p&gt;Anden kolonne, men vises som sidste kolonne&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col order-1&quot;&gt;
+            &lt;p&gt;Tredje kolonne, men vises som anden kolonne&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Forskyd kolonner</h3>
 
 <p>Brug klasserne <code>.offset-</code> til at forskyde kolonner, fx forskyder <code>.offset-md-4</code> 4 kolonner til højre.</p>
 
-<div class="component-preview px-4 component-preview-grid-offsets p-4" aria-label="">
-    <div class="grid-example">
-    <div class="container">
-        <div class="row mb-2 grid-example-measure-row">
-            <div class="col-1">
-                <div class="align-text-center px-2">1</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">2</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">3</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">4</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">5</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">6</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">7</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">8</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">9</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">10</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">11</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">12</div>
-            </div>
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--offsets" id="tabbutton-component-grid--offsets" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-offsets" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--offsets" aria-labelledby="tabbutton-component-grid--offsets">
+        
+        <div class="container">
+    <div class="row mb-2 grid-example-measure-row">
+        <div class="col-1">
+            <p>1</p>
         </div>
-        <div class="row mb-2">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        <div class="col-1">
+            <p>2</p>
         </div>
-        <div class="row mb-2">
-            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
-            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        <div class="col-1">
+            <p>3</p>
         </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        <div class="col-1">
+            <p>4</p>
+        </div>
+        <div class="col-1">
+            <p>5</p>
+        </div>
+        <div class="col-1">
+            <p>6</p>
+        </div>
+        <div class="col-1">
+            <p>7</p>
+        </div>
+        <div class="col-1">
+            <p>8</p>
+        </div>
+        <div class="col-1">
+            <p>9</p>
+        </div>
+        <div class="col-1">
+            <p>10</p>
+        </div>
+        <div class="col-1">
+            <p>11</p>
+        </div>
+        <div class="col-1">
+            <p>12</p>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-4">
+            <p>col-md-4</p>
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <p>col-md-4 offset-md-4</p>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-3 offset-md-3">
+            <p>col-md-3 offset-md-3</p>
+        </div>
+        <div class="col-md-3 offset-md-3">
+            <p>col-md-3 offset-md-3</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <p>col-md-6 offset-md-3</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--offsets" id="tabbutton-code-grid--offsets" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--offsets" aria-labelledby="tabbutton-code-grid--offsets">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row mb-2 grid-example-measure-row&quot;&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;1&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;2&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;4&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;5&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;6&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;7&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;8&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;9&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;10&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;11&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;12&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;p&gt;col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4 offset-md-4&quot;&gt;
+            &lt;p&gt;col-md-4 offset-md-4&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-md-3 offset-md-3&quot;&gt;
+            &lt;p&gt;col-md-3 offset-md-3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3 offset-md-3&quot;&gt;
+            &lt;p&gt;col-md-3 offset-md-3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6 offset-md-3&quot;&gt;
+            &lt;p&gt;col-md-6 offset-md-3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <p>Du kan nulstille forskydning ved fx at bruge klassen <code>offset-md-0</code>.</p>
 
-<div class="component-preview ">
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-    
-    <div class="component-link px-4 py-4">
-        <a href="/eksempel/grid--offsets-reset/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: grid--offsets-reset</span></a>
-    </div>
-    
+<div class="tabnav" role="tablist">
 
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <iframe class="preview-iframe" title="Eksempel: grid--offsets-reset" src="/eksempel/grid--offsets-reset/"></iframe>
+    <button aria-controls="tabpanel-component-grid--offsets-reset" id="tabbutton-component-grid--offsets-reset" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-offsets-reset" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--offsets-reset" aria-labelledby="tabbutton-component-grid--offsets-reset">
+        
+        <div class="container">
+    <div class="row mb-2">
+        <div class="col-sm-5 col-md-6">
+            <p>col-sm-5 col-md-6</p>
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+            <p>col-sm-5 offset-sm-2 col-md-6 offset-md-0</p>
+        </div>
     </div>
-    
+
+    <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">
+            <p>col-sm-6col-md-5col-lg-6</p>
+        </div>
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+            <p>col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0</p>
+        </div>
+    </div>
 </div>
+        
+    </section>
 
+    <button aria-controls="tabpanel-code-grid--offsets-reset" id="tabbutton-code-grid--offsets-reset" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--offsets-reset" aria-labelledby="tabbutton-code-grid--offsets-reset">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-sm-5 col-md-6&quot;&gt;
+            &lt;p&gt;col-sm-5 col-md-6&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-5 offset-sm-2 col-md-6 offset-md-0&quot;&gt;
+            &lt;p&gt;col-sm-5 offset-sm-2 col-md-6 offset-md-0&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-6 col-md-5 col-lg-6&quot;&gt;
+            &lt;p&gt;col-sm-6col-md-5col-lg-6&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0&quot;&gt;
+            &lt;p&gt;col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
+</div>
 
 
       </section>

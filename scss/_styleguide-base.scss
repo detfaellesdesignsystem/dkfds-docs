@@ -604,7 +604,7 @@ header #search-form-mobile{
   margin: 0px;
 }
 
-figure.highlight{
+*:not(.tabnav-panel) > figure.highlight{
   border: $inner-border;
 }
 
@@ -973,7 +973,7 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
 
 /////////////////// component preview //////////////////////
 
-.component-preview {
+div.component-preview {
   border: $inner-border;
   position: relative;
   margin-bottom: 8px;
@@ -1086,29 +1086,65 @@ body.layout-requirements-tool{
 }
 
 //----- grid example
-body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="page-grid"], div.component-preview[class*="-grid"] {
+body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="page-grid"], div.component-preview[class*="-grid"]:not(.component-preview-grid-bordered), section.component-preview[class*="-grid"]:not(.component-preview-grid-bordered) {
 
 
-  .row > .col,
-  .row > [class^=col-] {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  .row{
+    margin-bottom: map-get($spacers, 2);
+    & > .col,
+    & > [class^=col-] {
+      margin-bottom: map-get($spacers, 2);
+      p {
+        text-align: center;
+        padding-top: map-get($spacers, 4);
+        padding-bottom: map-get($spacers, 4);
+        padding-left: map-get($spacers, 2);
+        padding-right: map-get($spacers, 2);
+        background-color: $color-info-light;
+        border: border(10);
+        margin: map-get($spacers, 0);
+      }
+      .grid-example-content{
+        background-color: $color-info-light;
+        border: border(10);
+        padding-top: map-get($spacers, 4);
+        padding-bottom: map-get($spacers, 4);
+        & > p{
+          border: 0;
+          background-color: transparent;
+        }
+        & > .row {
+          margin-top: map-get($spacers, 4);
+        }
+      }
+    }
+  }
+  .grid-example-content{
     background-color: $color-info-light;
-    border: $outer-border;
+    border: border(10);
+    padding-top: map-get($spacers, 4);
+    padding-bottom: map-get($spacers, 4);
+    & > p{
+      border: 0;
+      background-color: transparent;
+    }
+    & > .row {
+      margin-top: map-get($spacers, 4);
+    }
   }
 
   .grid-example-row-flex {
     min-height: 10rem;
     background-color: $color-data-orange-low-opacity;
   }
-  &.component-preview-grid-all-breakpoints .row:first-of-type > [class^=col-] {
+  /*&.component-preview-grid-all-breakpoints .row:first-of-type > [class^=col-] {
     background-color: transparent;
     border: none;
     border-left: 1px solid grey;
     &:last-child {
       border-right: 1px solid grey;
     }
-  }
+  }*/
 
 }
 

@@ -1458,6 +1458,24 @@
 
 
 <li class=" " role="none">
+<a href="#ingen-afstand-mellem-kolonner-ingen-gutter"  role="menuitem">Ingen afstand mellem kolonner</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#rækker-med-border"  role="menuitem">Rækker med border</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
 <a href="#hjælpeklasser"  role="menuitem">Hjælpeklasser</a>
 </li>
 
@@ -1910,6 +1928,24 @@
 
 
 <li class=" " role="none">
+<a href="#ingen-afstand-mellem-kolonner-ingen-gutter"  role="menuitem">Ingen afstand mellem kolonner</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#rækker-med-border"  role="menuitem">Rækker med border</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
 <a href="#hjælpeklasser"  role="menuitem">Hjælpeklasser</a>
 </li>
 
@@ -2074,47 +2110,57 @@
 
           
 
-          
-<div class="component-preview px-4">
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-    
-    <div class="component-link px-4 py-4">
-        <a href="/eksempel/grid-simple/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: grid-simple</span></a>
-    </div>
-    
-
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <iframe class="preview-iframe" title="Eksempel: grid-simple" src="/eksempel/grid-simple/"></iframe>
-    </div>
-    
-</div>
-
-<p>Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-systemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af grid-systemet.</p>
+          <p>Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-systemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link">flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af grid-systemet.</p>
 
 <h2>Installation</h2>
 
 <h3>HTML Struktur</h3>
 
-<div class="component-preview component-preview-code  component-code-grid-simple" aria-label="">
-    
-    <div class="component-code" aria-label="Kodeeksempel">
+<div class="tabnav" role="tablist">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col&quot;&gt;
-        .col
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-        .col
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-        .col
+    <button aria-controls="tabpanel-component-grid-simple" id="tabbutton-component-grid-simple" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-simple" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid-simple" aria-labelledby="tabbutton-component-grid-simple">
+        
+        <div class="container">
+    <div class="row">
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
+    </div>
+</div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid-simple" id="tabbutton-code-grid-simple" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid-simple" aria-labelledby="tabbutton-code-grid-simple">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
-    </div>
+    </section>
 </div>
 
 <section class="styleguide-child-container content" id="section-/kode/grids/grids-indstillinger">
@@ -2180,155 +2226,426 @@
 
 <h3>Klasser som rammer alle breakpoints</h3>
 
-<p>Brug klassen <code>.col</code> eller <code>.col-*</code> uden responsivt prefix (fx. md).</p>
+<p>Brug klassen <code>col</code> eller <code>col-*</code> uden responsivt prefix (fx md).</p>
 
-<div class="component-preview px-4 component-preview-grid-all-breakpoints p-4" aria-label="">
-    <div class="container">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--all-breakpoints" id="tabbutton-component-grid--all-breakpoints" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-all-breakpoints" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--all-breakpoints" aria-labelledby="tabbutton-component-grid--all-breakpoints">
+        
+        <div class="container">
     <div class="row mb-2">
         <div class="col-1">
-            <div class="align-text-center px-2">1</div>
+            <p>1</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">2</div>
+        <div class="col-1">
+            <p>2</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">3</div>
+        <div class="col-1">
+            <p>3</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">4</div>
+        <div class="col-1">
+            <p>4</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">5</div>
+        <div class="col-1">
+            <p>5</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">6</div>
+        <div class="col-1">
+            <p>6</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">7</div>
+        <div class="col-1">
+            <p>7</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">8</div>
+        <div class="col-1">
+            <p>8</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">9</div>
+        <div class="col-1">
+            <p>9</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">10</div>
+        <div class="col-1">
+            <p>10</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">11</div>
+        <div class="col-1">
+            <p>11</p>
         </div>
-        <div class="col-1 ">
-            <div class="align-text-center px-2">12</div>
+        <div class="col-1">
+            <p>12</p>
         </div>
     </div>
     <div class="row mb-2">
-        <div class="col">col</div>
-        <div class="col">col</div>
-        <div class="col">col</div>
-        <div class="col">col</div>
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
     </div>
     <div class="row">
-        <div class="col-8">col-8</div>
-        <div class="col-4">col-4</div>
+        <div class="col-8">
+            <p>col-8</p>
+        </div>
+        <div class="col-4">
+            <p>col-4</p>
+        </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--all-breakpoints" id="tabbutton-code-grid--all-breakpoints" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--all-breakpoints" aria-labelledby="tabbutton-code-grid--all-breakpoints">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;1&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;2&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;4&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;5&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;6&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;7&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;8&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;9&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;10&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;11&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;12&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-8&quot;&gt;
+            &lt;p&gt;col-8&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;col-4&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Fra stablede kolonner til kolonner på række</h3>
 
-<p>Ved at bruge fx <code>.col-md-*</code> klassen vil kolonnerne til at begynde med være placeret lodret over hinanden på mobile enheder. Fra medium-skærme vil de være vist vandret på en række.</p>
+<p>Ved at bruge fx <code>col-md-*</code> klassen vil kolonnerne til at begynde med være placeret lodret over hinanden på mobile enheder. Fra medium-skærme vil de være vist vandret på en række.</p>
 
-<div class="component-preview px-4 component-preview-grid-stacked-horizontal p-4" aria-label="">
-    <div class="container">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--stacked-horizontal" id="tabbutton-component-grid--stacked-horizontal" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-stacked-horizontal" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--stacked-horizontal" aria-labelledby="tabbutton-component-grid--stacked-horizontal">
+        
+        <div class="container">
     <div class="row mb-2">
-        <div class="col-md-8">col-md-8</div>
-        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-8">
+            <p>col-md-8</p>
+        </div>
+        <div class="col-md-4">
+            <p>col-md-4</p>
+        </div>
     </div>
     <div class="row">
-        <div class="col-md">col-md</div>
-        <div class="col-md">col-md</div>
-        <div class="col-md">col-md</div>
+        <div class="col-md">
+            <p>col-md</p>
+        </div>
+        <div class="col-md">
+            <p>col-md</p>
+        </div>
+        <div class="col-md">
+            <p>col-md</p>
+        </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--stacked-horizontal" id="tabbutton-code-grid--stacked-horizontal" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--stacked-horizontal" aria-labelledby="tabbutton-code-grid--stacked-horizontal">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;
+            &lt;p&gt;col-md-8&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;p&gt;col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md&quot;&gt;
+            &lt;p&gt;col-md&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md&quot;&gt;
+            &lt;p&gt;col-md&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md&quot;&gt;
+            &lt;p&gt;col-md&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Brug af forskellige kolonne-klasser</h3>
 
 <p>Du kan mikse forskellige kolonne-klasser.</p>
 
-<div class="component-preview px-4 component-preview-grid-mix-match p-4" aria-label="">
-    <div class="container w-percent-100">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--mix-match" id="tabbutton-component-grid--mix-match" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-mix-match" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--mix-match" aria-labelledby="tabbutton-component-grid--mix-match">
+        
+        <div class="container w-percent-100">
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
     <div class="row mb-2">
-        <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-12 col-md-8">
+            <p>col-12 col-md-8</p>
+        </div>
+        <div class="col-6 col-md-4">
+            <p>col-6 col-md-4</p>
+        </div>
     </div>
 
-    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <!-- Columns start at 50% wide on mobile and bump up to 333% wide on desktop -->
     <div class="row mb-2">
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">
+            <p>col-6 col-md-4</p>
+        </div>
+        <div class="col-6 col-md-4">
+            <p>col-6 col-md-4</p>
+        </div>
+        <div class="col-6 col-md-4">
+            <p>col-6 col-md-4</p>
+        </div>
     </div>
 
     <!-- Columns are always 50% wide, on mobile and desktop -->
     <div class="row">
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
+        <div class="col-6">
+            <p>col-6</p>
+        </div>
+        <div class="col-6">
+            <p>col-6</p>
+        </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--mix-match" id="tabbutton-code-grid--mix-match" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--mix-match" aria-labelledby="tabbutton-code-grid--mix-match">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container w-percent-100&quot;&gt;
+    &lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-8&quot;&gt;
+            &lt;p&gt;col-12 col-md-8&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6 col-md-4&quot;&gt;
+            &lt;p&gt;col-6 col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Columns start at 50% wide on mobile and bump up to 333% wide on desktop --&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-6 col-md-4&quot;&gt;
+            &lt;p&gt;col-6 col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6 col-md-4&quot;&gt;
+            &lt;p&gt;col-6 col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6 col-md-4&quot;&gt;
+            &lt;p&gt;col-6 col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;p&gt;col-6&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;p&gt;col-6&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Kolonneombrydning</h3>
 
 <p>Hvis der er mere end 12 kolonner på en række, vil ekstra kolonner blive vist på en ny linje under de første 12.</p>
 
-<div class="component-preview  component-preview-grid-column-wrapping p-4" aria-label="">
-    <div class="container">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--column-wrapping" id="tabbutton-component-grid--column-wrapping" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-column-wrapping" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--column-wrapping" aria-labelledby="tabbutton-component-grid--column-wrapping">
+        
+        <div class="container">
     <div class="row">
-        <div class="col-9">.col-9</div>
-        <div class="col-4">.col-4<br />9 + 4 = 13 &gt; 12, det betyder at denne 4-kolonne div bliver vist på en nye linie
+        <div class="col-9">
+            <p>col-9</p>
         </div>
-        <div class="col-6">.col-6<br />Efterfølgende kolonner fortsætter på denne nye linie
+        <div class="col-4">
+            <p>col-4<br />9 + 4 = 13 &gt; 12, det betyder at denne 4-kolonne div bliver vist på en nye linie
+            </p>
+        </div>
+        <div class="col-6">
+            <p>col-6<br />Efterfølgende kolonner fortsætter på denne nye linie
+            </p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--column-wrapping" id="tabbutton-code-grid--column-wrapping" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--column-wrapping" aria-labelledby="tabbutton-code-grid--column-wrapping">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-9&quot;&gt;
+            &lt;p&gt;col-9&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;col-4&lt;br&gt;9 + 4 = 13 &amp;gt; 12, det betyder at denne 4-kolonne div bliver vist på en nye linie
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;p&gt;col-6&lt;br&gt;Efterfølgende kolonner fortsætter på denne nye linie
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Indlejre</h3>
 
 <p>Du kan indlejre flere rækker med tilhørende kolonner i hinanden.</p>
 
-<div class="component-preview px-4 component-preview-grid-nesting p-4" aria-label="">
-    <div class="container">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--nesting" id="tabbutton-component-grid--nesting" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-nesting" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--nesting" aria-labelledby="tabbutton-component-grid--nesting">
+        
+        <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            Level 1: .col-sm-9
-            <div class="row">
-                <div class="col-8 col-sm-6">
-                    Level 2: .col-8 .col-sm-6
-                </div>
-                <div class="col-4 col-sm-6">
-                    Level 2: .col-4 .col-sm-6
+            <div class="grid-example-content">
+                <p>Level 1: col-sm-9</p>
+                <div class="row">
+                    <div class="col-8 col-sm-6">
+                        <p>Level 2: col-8 col-sm-6</p>
+                    </div>
+                    <div class="col-4 col-sm-6">
+                        <p>Level 2: col-4 col-sm-6</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--nesting" id="tabbutton-code-grid--nesting" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--nesting" aria-labelledby="tabbutton-code-grid--nesting">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-9&quot;&gt;
+            &lt;div class=&quot;grid-example-content&quot;&gt;
+                &lt;p&gt;Level 1: col-sm-9&lt;/p&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-8 col-sm-6&quot;&gt;
+                        &lt;p&gt;Level 2: col-8 col-sm-6&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-4 col-sm-6&quot;&gt;
+                        &lt;p&gt;Level 2: col-4 col-sm-6&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
-
-<h3>Ingen afstand mellem kolonner (ingen gutter)</h3>
-
-<p>Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen <code>no-gutters</code> til rækken.</p>
-
-<div class="component-preview  component-preview-grid-no-gutters p-4" aria-label="">
-    <div class="row no-gutters">
-    <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
-    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-</div>
-</div>
-
 
 </section>
 
@@ -2340,66 +2657,149 @@
 
 <h3>Specifik bredde på kun én kolonne</h3>
 
-<p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (.col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.</p>
+<p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.</p>
 
-<div class="component-preview px-4 component-preview-grid-one-column-width p-4" aria-label="">
-    <div class="container">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--one-column-width" id="tabbutton-component-grid--one-column-width" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-one-column-width" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--one-column-width" aria-labelledby="tabbutton-component-grid--one-column-width">
+        
+        <div class="container">
     <div class="row">
         <div class="col">
-            1 of 3
+            <p>1 of 3</p>
         </div>
         <div class="col-6">
-            2 of 3 (.col-6)
+            <p>2 of 3 (col-6)</p>
         </div>
         <div class="col">
-            3 of 3
+            <p>3 of 3</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            1 of 3
+            <p>1 of 3</p>
         </div>
         <div class="col-5">
-            2 of 3 (.col-5)
+            <p>2 of 3 (col-5)</p>
         </div>
         <div class="col">
-            3 of 3
+            <p>3 of 3</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--one-column-width" id="tabbutton-code-grid--one-column-width" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--one-column-width" aria-labelledby="tabbutton-code-grid--one-column-width">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;1 of 3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;p&gt;2 of 3 (col-6)&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;3 of 3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;1 of 3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-5&quot;&gt;
+            &lt;p&gt;2 of 3 (col-5)&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;3 of 3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Individuel kolonnebredde efter indhold</h3>
 
 <p>Ved at brug <code>col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
 
-<div class="component-preview px-4 component-preview-grid-variable-width-content p-4" aria-label="">
-    <div class="container">
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--variable-width-content" id="tabbutton-component-grid--variable-width-content" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-variable-width-content" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--variable-width-content" aria-labelledby="tabbutton-component-grid--variable-width-content">
+        
+        <div class="container">
     <div class="row justify-content-md-center mb-2">
         <div class="col col-md-2">
-            1 of 3
+            <p>1 of 3</p>
         </div>
         <div class="col-md-auto">
-            Kolonne med variabel bredde
+            <p>Kolonne med variabel bredde</p>
         </div>
         <div class="col col-md-2">
-            3 of 3
+            <p>3 of 3</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            1 of 3
+            <p>1 of 3</p>
         </div>
         <div class="col-md-auto">
-            Kolonne med variabel bredde
+            <p>Kolonne med variabel bredde</p>
         </div>
         <div class="col col-md-2">
-            3 of 3
+            <p>3 of 3</p>
         </div>
     </div>
 </div>
-</div>
+        
+    </section>
 
+    <button aria-controls="tabpanel-code-grid--variable-width-content" id="tabbutton-code-grid--variable-width-content" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--variable-width-content" aria-labelledby="tabbutton-code-grid--variable-width-content">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row justify-content-md-center mb-2&quot;&gt;
+        &lt;div class=&quot;col col-md-2&quot;&gt;
+            &lt;p&gt;1 of 3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-auto&quot;&gt;
+            &lt;p&gt;Kolonne med variabel bredde&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col col-md-2&quot;&gt;
+            &lt;p&gt;3 of 3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;1 of 3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-auto&quot;&gt;
+            &lt;p&gt;Kolonne med variabel bredde&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col col-md-2&quot;&gt;
+            &lt;p&gt;3 of 3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
+</div>
 
 </section>
 
@@ -2411,102 +2811,406 @@
 
 <p>Brug klasserne <code>.order-</code> til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx <code>.order-1.order-md-2</code>).</p>
 
-<div class="component-preview px-4 component-preview-grid-ordering-visual p-4" aria-label="">
-    <div class="grid-example">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                Første kolonne, men ingen order-klasse
-            </div>
-            <div class="col order-12">
-                Anden kolonne, men vises som sidste kolonne
-            </div>
-            <div class="col order-1">
-                Tredje kolonne, men vises som anden kolonne
-            </div>
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--ordering-visual" id="tabbutton-component-grid--ordering-visual" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-ordering-visual" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--ordering-visual" aria-labelledby="tabbutton-component-grid--ordering-visual">
+        
+        <div class="container">
+    <div class="row">
+        <div class="col">
+            <p>Første kolonne, men ingen order-klasse</p>
+        </div>
+        <div class="col order-12">
+            <p>Anden kolonne, men vises som sidste kolonne</p>
+        </div>
+        <div class="col order-1">
+            <p>Tredje kolonne, men vises som anden kolonne</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--ordering-visual" id="tabbutton-code-grid--ordering-visual" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--ordering-visual" aria-labelledby="tabbutton-code-grid--ordering-visual">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;Første kolonne, men ingen order-klasse&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col order-12&quot;&gt;
+            &lt;p&gt;Anden kolonne, men vises som sidste kolonne&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col order-1&quot;&gt;
+            &lt;p&gt;Tredje kolonne, men vises som anden kolonne&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Forskyd kolonner</h3>
 
 <p>Brug klasserne <code>.offset-</code> til at forskyde kolonner, fx forskyder <code>.offset-md-4</code> 4 kolonner til højre.</p>
 
-<div class="component-preview px-4 component-preview-grid-offsets p-4" aria-label="">
-    <div class="grid-example">
-    <div class="container">
-        <div class="row mb-2 grid-example-measure-row">
-            <div class="col-1">
-                <div class="align-text-center px-2">1</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">2</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">3</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">4</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">5</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">6</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">7</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">8</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">9</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">10</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">11</div>
-            </div>
-            <div class="col-1 ">
-                <div class="align-text-center px-2">12</div>
-            </div>
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--offsets" id="tabbutton-component-grid--offsets" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-offsets" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--offsets" aria-labelledby="tabbutton-component-grid--offsets">
+        
+        <div class="container">
+    <div class="row mb-2 grid-example-measure-row">
+        <div class="col-1">
+            <p>1</p>
         </div>
-        <div class="row mb-2">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        <div class="col-1">
+            <p>2</p>
         </div>
-        <div class="row mb-2">
-            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
-            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        <div class="col-1">
+            <p>3</p>
         </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        <div class="col-1">
+            <p>4</p>
+        </div>
+        <div class="col-1">
+            <p>5</p>
+        </div>
+        <div class="col-1">
+            <p>6</p>
+        </div>
+        <div class="col-1">
+            <p>7</p>
+        </div>
+        <div class="col-1">
+            <p>8</p>
+        </div>
+        <div class="col-1">
+            <p>9</p>
+        </div>
+        <div class="col-1">
+            <p>10</p>
+        </div>
+        <div class="col-1">
+            <p>11</p>
+        </div>
+        <div class="col-1">
+            <p>12</p>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-4">
+            <p>col-md-4</p>
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <p>col-md-4 offset-md-4</p>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-3 offset-md-3">
+            <p>col-md-3 offset-md-3</p>
+        </div>
+        <div class="col-md-3 offset-md-3">
+            <p>col-md-3 offset-md-3</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <p>col-md-6 offset-md-3</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--offsets" id="tabbutton-code-grid--offsets" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--offsets" aria-labelledby="tabbutton-code-grid--offsets">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row mb-2 grid-example-measure-row&quot;&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;1&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;2&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;4&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;5&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;6&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;7&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;8&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;9&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;10&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;11&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-1&quot;&gt;
+            &lt;p&gt;12&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;p&gt;col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4 offset-md-4&quot;&gt;
+            &lt;p&gt;col-md-4 offset-md-4&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-md-3 offset-md-3&quot;&gt;
+            &lt;p&gt;col-md-3 offset-md-3&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3 offset-md-3&quot;&gt;
+            &lt;p&gt;col-md-3 offset-md-3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6 offset-md-3&quot;&gt;
+            &lt;p&gt;col-md-6 offset-md-3&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <p>Du kan nulstille forskydning ved fx at bruge klassen <code>offset-md-0</code>.</p>
 
-<div class="component-preview ">
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-    
-    <div class="component-link px-4 py-4">
-        <a href="/eksempel/grid--offsets-reset/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: grid--offsets-reset</span></a>
-    </div>
-    
+<div class="tabnav" role="tablist">
 
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        <iframe class="preview-iframe" title="Eksempel: grid--offsets-reset" src="/eksempel/grid--offsets-reset/"></iframe>
+    <button aria-controls="tabpanel-component-grid--offsets-reset" id="tabbutton-component-grid--offsets-reset" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-offsets-reset" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--offsets-reset" aria-labelledby="tabbutton-component-grid--offsets-reset">
+        
+        <div class="container">
+    <div class="row mb-2">
+        <div class="col-sm-5 col-md-6">
+            <p>col-sm-5 col-md-6</p>
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+            <p>col-sm-5 offset-sm-2 col-md-6 offset-md-0</p>
+        </div>
     </div>
-    
+
+    <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">
+            <p>col-sm-6col-md-5col-lg-6</p>
+        </div>
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+            <p>col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0</p>
+        </div>
+    </div>
+</div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--offsets-reset" id="tabbutton-code-grid--offsets-reset" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--offsets-reset" aria-labelledby="tabbutton-code-grid--offsets-reset">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-sm-5 col-md-6&quot;&gt;
+            &lt;p&gt;col-sm-5 col-md-6&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-5 offset-sm-2 col-md-6 offset-md-0&quot;&gt;
+            &lt;p&gt;col-sm-5 offset-sm-2 col-md-6 offset-md-0&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-6 col-md-5 col-lg-6&quot;&gt;
+            &lt;p&gt;col-sm-6col-md-5col-lg-6&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0&quot;&gt;
+            &lt;p&gt;col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/grids/grids-ingen-afstand">
+  <h2 id="ingen-afstand-mellem-kolonner-ingen-gutter">Ingen afstand mellem kolonner (ingen gutter)</h2>
+  
+  
+  <p>Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen <code>no-gutters</code> til rækken.</p>
+
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--no-gutters" id="tabbutton-component-grid--no-gutters" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-no-gutters" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--no-gutters" aria-labelledby="tabbutton-component-grid--no-gutters">
+        
+        <div class="container">
+    <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-8">
+            <p>col-12 col-sm-6 col-md-8</p>
+        </div>
+        <div class="col-6 col-md-4">
+            <p>col-6 col-md-4</p>
+        </div>
+    </div>
+</div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--no-gutters" id="tabbutton-code-grid--no-gutters" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--no-gutters" aria-labelledby="tabbutton-code-grid--no-gutters">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row no-gutters&quot;&gt;
+        &lt;div class=&quot;col-12 col-sm-6 col-md-8&quot;&gt;
+            &lt;p&gt;col-12 col-sm-6 col-md-8&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6 col-md-4&quot;&gt;
+            &lt;p&gt;col-6 col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
+</div>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/grids/grids-raekker-med-border">
+  <h2 id="rækker-med-border">Rækker med border</h2>
+  
+  
+  <p>Tilføj klasserne <code>no-gutters</code> or <code>row-bordered</code> til row-elementet. Kan bruges i forbindelse med <a href="/eksempler/opsummeringsside/">opsummering</a> eller <a href="/eksempler/kvittering/">kvitteringssider</a> som alternativ til en tabel, hvis der ingen headers er.</p>
+
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid-bordered" id="tabbutton-component-grid-bordered" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-bordered" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid-bordered" aria-labelledby="tabbutton-component-grid-bordered">
+        
+        <div class="container">
+    <div class="row no-gutters row-bordered">
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
+    </div>
+    <div class="row no-gutters row-bordered">
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
+    </div>
+    <div class="row no-gutters row-bordered">
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
+    </div>
+    <div class="row no-gutters row-bordered">
+        <div class="col">
+            <p>col</p>
+        </div>
+        <div class="col">
+            <p>col</p>
+        </div>
+    </div>
+</div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid-bordered" id="tabbutton-code-grid-bordered" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid-bordered" aria-labelledby="tabbutton-code-grid-bordered">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row no-gutters row-bordered&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row no-gutters row-bordered&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row no-gutters row-bordered&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row no-gutters row-bordered&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;col&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
+</div>
 
 </section>
 
@@ -2522,140 +3226,331 @@
 
 <h4>Vertikal alignment</h4>
 
-<div class="component-preview px-4 component-preview-grid-util-flex-vertical-align-01 p-4" aria-label="">
-    <div class="grid-example v-align">
-    <div class="container">
-        <div class="row align-items-start mb-2 grid-example-row-flex">
-            <div class="col">
-                One of three columns
-            </div>
-            <div class="col">
-                One of three columns
-            </div>
-            <div class="col">
-                One of three columns
-            </div>
-        </div>
-        <div class="row align-items-center mb-2 grid-example-row-flex">
-            <div class="col">
-                One of three columns
-            </div>
-            <div class="col">
-                One of three columns
-            </div>
-            <div class="col">
-                One of three columns
-            </div>
-        </div>
-        <div class="row align-items-end grid-example-row-flex">
-            <div class="col">
-                One of three columns
-            </div>
-            <div class="col">
-                One of three columns
-            </div>
-            <div class="col">
-                One of three columns
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+<div class="tabnav" role="tablist">
 
-<p><br /></p>
-<div class="component-preview px-4 component-preview-grid-util-flex-vertical-align-02 p-4" aria-label="">
-    <div class="grid-example v-align">
-    <div class="container">
-        <div class="row mb-2 grid-example-row-flex">
-            <div class="col align-self-start">
-                One of three columns
-            </div>
-            <div class="col align-self-center">
-                One of three columns
-            </div>
-            <div class="col align-self-end">
-                One of three columns
-            </div>
+    <button aria-controls="tabpanel-component-grid--util-flex-vertical-align-01" id="tabbutton-component-grid--util-flex-vertical-align-01" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-util-flex-vertical-align-01" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--util-flex-vertical-align-01" aria-labelledby="tabbutton-component-grid--util-flex-vertical-align-01">
+        
+        <div class="container">
+    <div class="row align-items-start mb-2 grid-example-row-flex">
+        <div class="col">
+            <p>One of three columns</p>
+        </div>
+        <div class="col">
+            <p>One of three columns</p>
+        </div>
+        <div class="col">
+            <p>One of three columns</p>
+        </div>
+    </div>
+    <div class="row align-items-center mb-2 grid-example-row-flex">
+        <div class="col">
+            <p>One of three columns</p>
+        </div>
+        <div class="col">
+            <p>One of three columns</p>
+        </div>
+        <div class="col">
+            <p>One of three columns</p>
+        </div>
+    </div>
+    <div class="row align-items-end grid-example-row-flex">
+        <div class="col">
+            <p>One of three columns</p>
+        </div>
+        <div class="col">
+            <p>One of three columns</p>
+        </div>
+        <div class="col">
+            <p>One of three columns</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--util-flex-vertical-align-01" id="tabbutton-code-grid--util-flex-vertical-align-01" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--util-flex-vertical-align-01" aria-labelledby="tabbutton-code-grid--util-flex-vertical-align-01">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row align-items-start mb-2 grid-example-row-flex&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row align-items-center mb-2 grid-example-row-flex&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row align-items-end grid-example-row-flex&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
+</div>
+<p><br /></p>
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--util-flex-vertical-align-02" id="tabbutton-component-grid--util-flex-vertical-align-02" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-util-flex-vertical-align-02" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--util-flex-vertical-align-02" aria-labelledby="tabbutton-component-grid--util-flex-vertical-align-02">
+        
+        <div class="container">
+    <div class="row mb-2 grid-example-row-flex">
+        <div class="col align-self-start">
+            <p>One of three columns</p>
+        </div>
+        <div class="col align-self-center">
+            <p>One of three columns</p>
+        </div>
+        <div class="col align-self-end">
+            <p>One of three columns</p>
+        </div>
+    </div>
+</div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--util-flex-vertical-align-02" id="tabbutton-code-grid--util-flex-vertical-align-02" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--util-flex-vertical-align-02" aria-labelledby="tabbutton-code-grid--util-flex-vertical-align-02">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row mb-2 grid-example-row-flex&quot;&gt;
+        &lt;div class=&quot;col align-self-start&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col align-self-center&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col align-self-end&quot;&gt;
+            &lt;p&gt;One of three columns&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h4>Horisontal alignment</h4>
 
-<div class="component-preview px-4 component-preview-grid-util-flex-horizontal-align p-4" aria-label="">
-    <div class="grid-example">
-    <div class="container">
-        <div class="row justify-content-start mb-2">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--util-flex-horizontal-align" id="tabbutton-component-grid--util-flex-horizontal-align" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-util-flex-horizontal-align" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--util-flex-horizontal-align" aria-labelledby="tabbutton-component-grid--util-flex-horizontal-align">
+        
+        <div class="container">
+    <div class="row justify-content-start mb-2">
+        <div class="col-4">
+            <p>Én af to kolonner</p>
         </div>
-        <div class="row justify-content-center mb-2">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
+        <div class="col-4">
+            <p>Én af to kolonner</p>
         </div>
-        <div class="row justify-content-end mb-2">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <div class="col-4">
+            <p>Én af to kolonner</p>
         </div>
-        <div class="row justify-content-around mb-2">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
+        <div class="col-4">
+            <p>Én af to kolonner</p>
         </div>
-        <div class="row justify-content-between">
-            <div class="col-4">
-                One of two columns
-            </div>
-            <div class="col-4">
-                One of two columns
-            </div>
+    </div>
+    <div class="row justify-content-end mb-2">
+        <div class="col-4">
+            <p>Én af to kolonner</p>
+        </div>
+        <div class="col-4">
+            <p>Én af to kolonner</p>
+        </div>
+    </div>
+    <div class="row justify-content-around mb-2">
+        <div class="col-4">
+            <p>Én af to kolonner</p>
+        </div>
+        <div class="col-4">
+            <p>Én af to kolonner</p>
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <p>Én af to kolonner</p>
+        </div>
+        <div class="col-4">
+            <p>Én af to kolonner</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--util-flex-horizontal-align" id="tabbutton-code-grid--util-flex-horizontal-align" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--util-flex-horizontal-align" aria-labelledby="tabbutton-code-grid--util-flex-horizontal-align">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row justify-content-start mb-2&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row justify-content-center mb-2&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row justify-content-end mb-2&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row justify-content-around mb-2&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row justify-content-between&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;p&gt;Én af to kolonner&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Hjælpeklasser: Margin</h3>
 
 <p>Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx <code>mr-auto</code>.</p>
 
-<div class="component-preview px-4 component-preview-grid-util-margin p-4" aria-label="">
-    <div class="grid-example">
-    <div class="container">
-        <div class="row mb-2">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+<div class="tabnav" role="tablist">
+
+    <button aria-controls="tabpanel-component-grid--util-margin" id="tabbutton-component-grid--util-margin" class="tabnav-item" role="tab" aria-selected="false">
+        <span>Visning</span>
+    </button>
+    <section class="tabnav-panel px-0 component-preview component-preview-grid-util-margin" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--util-margin" aria-labelledby="tabbutton-component-grid--util-margin">
+        
+        <div class="container">
+    <div class="row mb-2">
+        <div class="col-md-4">
+            <p>col-md-4</p>
         </div>
-        <div class="row mb-2">
-            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
-            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+        <div class="col-md-4 ml-auto">
+            <p>col-md-4 ml-auto</p>
         </div>
-        <div class="row">
-            <div class="col-auto mr-auto">.col-auto .mr-auto</div>
-            <div class="col-auto">.col-auto</div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-3 ml-md-auto">
+            <p>col-md-3 ml-md-auto</p>
+        </div>
+        <div class="col-md-3 ml-md-auto">
+            <p>col-md-3 ml-md-auto</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-auto mr-auto">
+            <p>col-auto mr-auto</p>
+        </div>
+        <div class="col-auto">
+            <p>col-auto</p>
         </div>
     </div>
 </div>
+        
+    </section>
+
+    <button aria-controls="tabpanel-code-grid--util-margin" id="tabbutton-code-grid--util-margin" class="tabnav-item" role="tab" aria-selected="true">
+        <span>HTML</span>
+    </button>
+
+    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--util-margin" aria-labelledby="tabbutton-code-grid--util-margin">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;p&gt;col-md-4&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4 ml-auto&quot;&gt;
+            &lt;p&gt;col-md-4 ml-auto&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row mb-2&quot;&gt;
+        &lt;div class=&quot;col-md-3 ml-md-auto&quot;&gt;
+            &lt;p&gt;col-md-3 ml-md-auto&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3 ml-md-auto&quot;&gt;
+            &lt;p&gt;col-md-3 ml-md-auto&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-auto mr-auto&quot;&gt;
+            &lt;p&gt;col-auto mr-auto&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-auto&quot;&gt;
+            &lt;p&gt;col-auto&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </section>
 </div>
 
 <h3>Hjælpeklasser: Bredde</h3>
 
-<p>Vil du have rækker og kolonner som går fra kant til kant, skal du undlade .container eller tilføje klassen <code>w-percent-100</code>.</p>
+<p>Vil du have rækker og kolonner som går fra kant til kant, skal du undlade <code>container</code> eller tilføje klassen <code>w-percent-100</code>.</p>
 
 </section>
 
@@ -2664,6 +3559,28 @@
   
   
   
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 768px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px
+);
+
+$container-max-widths: (
+    sm: 100%,
+    md: 100%,
+    lg: 100%,s
+    xl: 1200px
+);</code></pre></figure>
 
 </section>
 
