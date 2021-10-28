@@ -2191,11 +2191,11 @@
         </tr>
         <tr>
             <th>Klasser</th>
-            <td><code>.col-</code></td>
-            <td><code>.col-sm-</code></td>
-            <td><code>.col-md-</code></td>
-            <td><code>.col-lg-</code></td>
-            <td><code>.col-xl-</code></td>
+            <td><code>col-</code></td>
+            <td><code>col-sm-</code></td>
+            <td><code>col-md-</code></td>
+            <td><code>col-lg-</code></td>
+            <td><code>col-xl-</code></td>
         </tr>
         <tr>
             <th>Antal kolonner</th>
@@ -3123,6 +3123,8 @@
   
   <p>Tilføj klasserne <code>no-gutters</code> or <code>row-bordered</code> til row-elementet. Kan bruges i forbindelse med <a href="/eksempler/opsummeringsside/">opsummering</a> eller <a href="/eksempler/kvittering/">kvitteringssider</a> som alternativ til en tabel, hvis der ingen headers er.</p>
 
+<p>Gør brug af <a href="/kode/utilities/#margin-og-padding">hjælpeklasser for at sætte padding</a> i rækkerne.</p>
+
 <div class="tabnav" role="tablist">
 
     <button aria-controls="tabpanel-component-grid-bordered" id="tabbutton-component-grid-bordered" class="tabnav-item" role="tab" aria-selected="false">
@@ -3131,37 +3133,24 @@
     <section class="tabnav-panel px-0 component-preview component-preview-grid-bordered" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid-bordered" aria-labelledby="tabbutton-component-grid-bordered">
         
         <div class="container">
-    <div class="row no-gutters row-bordered">
-        <div class="col">
-            <p>col</p>
+    <div class="row row-bordered no-gutters py-3">
+        <div class="col-md-4">
+            <h3 class="h5 m-0">Virksomhedens navn</h3>
         </div>
-        <div class="col">
-            <p>col</p>
+        <div class="col-md-8">Forsikringens forsikring (enhed)</div>
+    </div>
+    <div class="row row-bordered py-3 no-gutters">
+        <div class="col-md-4">
+            <h3 class="h5 m-0">Kontaktperson</h3>
+        </div>
+        <div class="col-md-8">John Doe<br />privatskade@ff.dk<br />+45 1234 5678
         </div>
     </div>
-    <div class="row no-gutters row-bordered">
-        <div class="col">
-            <p>col</p>
+    <div class="row row-bordered py-3 no-gutters">
+        <div class="col-md-4">
+            <h3 class="h5 m-0">Afsender er</h3>
         </div>
-        <div class="col">
-            <p>col</p>
-        </div>
-    </div>
-    <div class="row no-gutters row-bordered">
-        <div class="col">
-            <p>col</p>
-        </div>
-        <div class="col">
-            <p>col</p>
-        </div>
-    </div>
-    <div class="row no-gutters row-bordered">
-        <div class="col">
-            <p>col</p>
-        </div>
-        <div class="col">
-            <p>col</p>
-        </div>
+        <div class="col-md-8">Forsikringens forsikring (enhed)</div>
     </div>
 </div>
         
@@ -3174,37 +3163,24 @@
     <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid-bordered" aria-labelledby="tabbutton-code-grid-bordered">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row no-gutters row-bordered&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;col&lt;/p&gt;
+    &lt;div class=&quot;row row-bordered no-gutters py-3&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;h3 class=&quot;h5 m-0&quot;&gt;Virksomhedens navn&lt;/h3&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;col&lt;/p&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;Forsikringens forsikring (enhed)&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row row-bordered py-3 no-gutters&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;h3 class=&quot;h5 m-0&quot;&gt;Kontaktperson&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;John Doe&lt;br&gt;privatskade@ff.dk&lt;br&gt;+45 1234 5678
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;row no-gutters row-bordered&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;col&lt;/p&gt;
+    &lt;div class=&quot;row row-bordered py-3 no-gutters&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+            &lt;h3 class=&quot;h5 m-0&quot;&gt;Afsender er&lt;/h3&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;col&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row no-gutters row-bordered&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;col&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;col&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row no-gutters row-bordered&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;col&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;col&lt;/p&gt;
-        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;Forsikringens forsikring (enhed)&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
@@ -3218,7 +3194,7 @@
   <h2 id="hjælpeklasser">Hjælpeklasser</h2>
   
   
-  <p>Designsystemet kommer med forskellige hjælpeklasser, fx. flex, margin og bredde. Du kan kombinere disse hjælpeklasser med grid-systemet.</p>
+  <p>Designsystemet kommer med forskellige hjælpeklasser, fx flex, margin og bredde. Du kan kombinere disse hjælpeklasser med grid-systemet.</p>
 
 <h3>Hjælpeklasser: Flexbox</h3>
 
@@ -3554,36 +3530,31 @@
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/kode/grids/grids-sass-variabler">
-  <h2 id="sass-variabler-i-designsystemet">Sass variabler i designsystemet</h2>
-  
-  
-  
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">$grid-columns: 12;
-$grid-gutter-width: 30px;
+<h2 id="sass-variabler-i-designsystemet" tabindex="-1">Sass variabler i designsystemet</h2>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">$grid-sm: 576px;
+$grid-md: 768px;
+$grid-lg: 992px;
+$grid-xl: 1200px;
 
 $grid-breakpoints: (
-    // Extra small screen / phone
-    xs: 0,
-    // Small screen / phone
-    sm: 576px,
-    // Medium screen / tablet
-    md: 768px,
-    // Large screen / desktop
-    lg: 992px,
-    // Extra large screen / wide desktop
-    xl: 1200px
-);
+  xs: $grid-xs,
+  sm: $grid-sm,
+  md: $grid-md,
+  lg: $grid-lg,
+  xl: $grid-xl
+) ;
 
+// Define the maximum width of `.container` for different screen sizes.
 $container-max-widths: (
-    sm: 100%,
-    md: 100%,
-    lg: 100%,s
-    xl: 1200px
-);</code></pre></figure>
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 1200px
+) !default;
 
-</section>
-
+$grid-columns:                  12 !default;
+$grid-gutter-width:             32px !default; //16px on each side of the columns</code></pre></figure>
 
       </section>
     </main>

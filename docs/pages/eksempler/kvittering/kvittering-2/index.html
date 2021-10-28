@@ -324,97 +324,152 @@
         class="button button-secondary d-print-none"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#print"></use></svg>
         Udskriv kvittering</button>
     <h2>Dine oplysninger</h2>
-    <div class="w-percent-lg-70 my-4">
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h3 class="h5 m-0">Virksomhedens navn</h3>
+    <div class="w-percent-md-70 mt-6 mb-7">
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-virksomhedens-navn"
+                    class="form-label">Virksomhedens navn</label>
             </div>
-            <div class="col-md-8">Forsikringens forsikring (enhed)</div>
-        </div>
-        <div class="row row-bordered py-3 no-gutters">
-            <div class="col-md-4">
-                <h3 class="h5 m-0">Kontaktperson</h3>
-            </div>
-            <div class="col-md-8">John Doe<br>privatskade@ff.dk<br>+45 1234 5678
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input"
+                    id="input-virksomhedens-navn"
+                    value="Forsikringens forsikring (enhed)" readonly />
             </div>
         </div>
-        <div class="row row-bordered py-3 no-gutters">
-            <div class="col-md-4">
-                <h3 class="h5 m-0">Afsender er</h3>
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-virksomhedens-kontaktperson"
+                    class="form-label">Kontaktperson</label>
             </div>
-            <div class="col-md-8">Forsikringens forsikring (enhed)</div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input"
+                    id="input-virksomhedens-kontaktperson" value="John Doe"
+                    readonly />
+                <label
+                    for="input-virksomhedens-kontaktperson-telefonnummer"
+                    class="sr-only">Telefonnummer til kontaktperson</label>
+                <input type="text" class="form-input"
+                    id="input-virksomhedens-kontaktperson-telefonnummer"
+                    value="+45 1234 5678" readonly />
+            </div>
         </div>
-    </div>
-    <h3 class="h4 mt-8 mb-5">Oplysninger om skadelidte</h3>
-    <div class="w-percent-lg-70 my-4">
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Skadelidtes navn</h4>
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-afsender"
+                    class="form-label">Afsender</label>
             </div>
-            <div class="col-md-8">Susanne Maria Zaggariasen</div>
-        </div>
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Skadelidtes CPR</h4>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input" id="input-afsender"
+                    value="Forsikringens forsikring (enhed)" readonly />
             </div>
-            <div class="col-md-8">110687-1478</div>
-        </div>
-    </div>
-    <h3 class="h4 mt-8 mb-5">Oplysninger om sagen</h3>
-    <div class="w-percent-lg-70 my-4">
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Sagstype</h4>
-            </div>
-            <div class="col-md-8">Erstatningsansvarloven</div>
-        </div>
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Emne</h4>
-            </div>
-            <div class="col-md-8">Mén (6.220 kr.)</div>
-        </div>
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Skadedato</h4>
-            </div>
-            <div class="col-md-8">1/10-2017</div>
-        </div>
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Sagsnummer</h4>
-            </div>
-            <div class="col-md-8">prsk013456</div>
-        </div>
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Verserende retssag</h4>
-            </div>
-            <div class="col-md-8">Nej</div>
-        </div>
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Skadelidtes advokat</h4>
-            </div>
-            <div class="col-md-8">Nej</div>
         </div>
     </div>
-    <h3 class="h4 mt-8 mb-5">Yderligere oplysninger</h3>
-    <div class="w-percent-lg-70 my-4">
-        <div class="row row-bordered no-gutters py-3">
-            <div class="col-md-4">
-                <h4 class="h5 m-0">Faktuelle oplysninger</h4>
+    <h3 class="h4">Oplysninger om skadelidte</h3>
+    <div class="w-percent-md-70 mt-6 mb-7">
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-skadelidtes-navn"
+                    class="form-label">Skadelidtes navn</label>
             </div>
-            <div class="col-md-8">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Fusce quis lectus quis sem lacinia
-                nonummy. Proin mollis lorem non dolor. In hac habitasse
-                platea dictumst. Nulla ultrices odio. Donec augue.
-                Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin
-                vel seo est vitae eros pretium dignissim. Aliquam aliquam
-                sodales orci. Suspendisse potenti. Nunc adipiscing euismod
-                arcu. Quisque facilisis mattis lacus.</div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input"
+                    id="input-skadelidtes-navn"
+                    value="Susanne Maria Zaggariasen" readonly />
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-skadelidtes-cpr"
+                    class="form-label">Skadelidtes CPR</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input"
+                    id="input-skadelidtes-cpr" value="110687-1478"
+                    readonly />
+            </div>
         </div>
     </div>
+    <h3 class="h4">Oplysninger om sagen</h3>
+
+    <div class="w-percent-md-70 mt-6 mb-7">
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-sagstype"
+                    class="form-label">Sagstype</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input" id="input-sagstype"
+                    value="Erstatningsansvarloven" readonly />
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-emne" class="form-label">Emne</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input" id="input-emne"
+                    value="Mén (6.220 kr.)" readonly />
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-skadedato"
+                    class="form-label">Skadedato</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input" id="input-skadedato"
+                    value="1/10-2017" readonly />
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-sagsnummer"
+                    class="form-label">Sagsnummer</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input" id="input-sagsnummer"
+                    value="prsk013456" readonly />
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-verserende-retssag"
+                    class="form-label">Verserende retssag</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input"
+                    id="input-verserende-retssag" value="Nej" readonly />
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-skadelidtes-advokat"
+                    class="form-label">Skadelidtes advokat</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input type="text" class="form-input"
+                    id="input-skadelidtes-advokat" value="Nej" readonly />
+            </div>
+        </div>
+    </div>
+    <h3 class="h4">Yderligere oplysninger</h3>
+
+    <div class="w-percent-md-70 mt-6 mb-7">
+        <div class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-md-4 weight-semibold">
+                <label for="input-faktuelle-oplysninger"
+                    class="form-label">Faktuelle oplysninger</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <textarea class="form-input w-percent-100 input-width-xl no-resize mt-0" id="input-faktuelle-oplysninger" value="Erstatningsansvarloven" readonly rows="9">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy.
+Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio.
+Donec augue. Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.
+Aliquam aliquam sodales orci. Suspendisse potenti. Nunc adipiscing euismod arcu. Quisque facilisis mattis lacus.</textarea>
+            </div>
+        </div>
+    </div>
+
     <h2>Bilagsoversigt</h2>
     <h3 class="h4 mt-8 mb-5">Første undersøgelse af skade</h3>
     <table

@@ -405,7 +405,7 @@
                 </div>
             </div>
             <h2 class="mt-6 mb-3">Bilag og bemærkninger</h2>
-            <div class="form-group">
+            <div class="form-group js-radio-toggle-group">
                 <fieldset>
                     <legend class="form-label">Ønsker du at vedhæfte bilag
                         til ansøgningen (det er muligt at vedhæfte op til 3
@@ -417,14 +417,13 @@
                                 name="minimis" value="Ja"
                                 class="form-radio  radio-large "
                                 data-js-target='#collapse-radio'
-                                aria-controls='collapse-radio'
                                 aria-expanded='false' />
                             <label for="id-state-yes"
                                 id="form-label-id-state-yes"
                                 class="radio-large">Ja </label>
 
                             <div id="collapse-radio" aria-hidden="true"
-                                class="box-border-l collapsed">
+                                class="radio-content radio-content-large">
                                 <div class="py-4">
                                     <div class="row">
                                         <div
@@ -454,8 +453,8 @@
                                                 <tbody>
                                                     <tr>
                                                         <td
-                                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file"></use></svg>vedhæftfil-1.pdf
+                                                            class="mt-4 mt-lg-0 break-word w-percent-md-70">
+                                                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>vedhæftfil-1.pdf
                                                         </td>
                                                         <td
                                                             class="align-text-right mt-4 mt-lg-0">
@@ -463,14 +462,15 @@
                                                                 class="button button-unstyled">
                                                                 <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete"></use></svg>
                                                                 <span
-                                                                    class="sr-only">Slet</span>
+                                                                    class="sr-only">Slet
+                                                                    vedhæftfil-1.pdf</span>
                                                             </button>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td
-                                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file"></use></svg>vedhæftfil-2.pdf
+                                                            class="mt-4 mt-lg-0 break-word w-percent-md-70">
+                                                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>vedhæftfil-2.pdf
                                                         </td>
                                                         <td
                                                             class="align-text-right mt-4 mt-lg-0">
@@ -478,14 +478,15 @@
                                                                 class="button button-unstyled">
                                                                 <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete"></use></svg>
                                                                 <span
-                                                                    class="sr-only">Slet</span>
+                                                                    class="sr-only">Slet
+                                                                    vedhæftfil-2.pdf</span>
                                                             </button>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td
-                                                            class="mt-4 mt-lg-0 break-word w-percent-md-40">
-                                                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file"></use></svg>vedhæftfil-3.pdf
+                                                            class="mt-4 mt-lg-0 break-word w-percent-md-70">
+                                                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>vedhæftfil-3.pdf
                                                         </td>
                                                         <td
                                                             class="align-text-right mt-4 mt-lg-0">
@@ -493,7 +494,8 @@
                                                                 class="button button-unstyled">
                                                                 <svg class="icon-svg " aria-hidden="true" focusable="false"><use xlink:href="#delete"></use></svg>
                                                                 <span
-                                                                    class="sr-only">Slet</span>
+                                                                    class="sr-only">Slet
+                                                                    vedhæftfil-3.pdf</span>
                                                             </button>
                                                         </td>
                                                     </tr>
@@ -518,10 +520,11 @@
                 </fieldset>
             </div>
 
-            <nav class="page-navigation d-print-none">
-                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/"
-                    class="button button-primary">Næste</a>
-            </nav>
+            <form method="get"
+                action="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/">
+                <button
+                    class="button button-primary mt-8 d-print-none">Næste</button>
+            </form>
         </main>
     </div>
 </div>
