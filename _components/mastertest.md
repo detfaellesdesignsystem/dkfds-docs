@@ -1,5 +1,6 @@
 ---
-permalink: /mastertest
+permalink: "/mastertest"
 layout: demo
 title: Test
+
 ---

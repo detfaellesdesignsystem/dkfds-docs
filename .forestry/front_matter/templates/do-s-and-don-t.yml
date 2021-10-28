@@ -58,5 +58,3 @@ fields:
     max: 
     labelField: 
   label: Do's & Don'ts
-pages:
-- _components/komponenter/accordions/test.md
