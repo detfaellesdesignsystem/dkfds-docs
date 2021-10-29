@@ -93,7 +93,7 @@ tags:
           {% include icon.html icon="home" keywords="hus, hjem, home, forside, house, home" label="Forside (Hjem)" %}
           {% include icon.html icon="save" keywords="save, gem, disc, diskette" label="Gem" %}
           {% include icon.html icon="print" keywords="print, printer, udskriv" label="Print (udskriv)" %}
-          {% include icon.html icon="delete" keywords="skraldespand, bin, trash, delete, slet, fjern" label="Slet" %}
+          {% include icon.html icon="trash-can" keywords="skraldespand, bin, trash, trash can, can, delete, slet, fjern, rubbish" label="Slet" %}
           {% include icon.html icon="search" keywords="lup, search, søg" label="Søg" %}</div>
   </div>
 </section>

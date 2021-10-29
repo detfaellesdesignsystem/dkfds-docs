@@ -29,7 +29,7 @@
       {
         "text": "Slet",
         "class": "secondary",
-        "icon": "delete"
+        "icon": "trash-can"
       }
 
     ]
