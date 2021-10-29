@@ -119,6 +119,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fikset fejl med placering af årstal i <a href="/komponenter/datovaelger/">datovælger</a> i mobilvisning.
 - Rettet fejl i <a href="/komponenter/datovaelger/">datovælgeren</a>: Hvis første dag i måneden er en søndag, vises denne dag ikke.
 - Tillader nu dato i <a href="/komponenter/datovaelger/">datovælgeren</a> fra start.
+- Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">Slet ikonet</a>.
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
