@@ -131,13 +131,13 @@ $icons-folder-path: '~dkfds/src/img/svg-icons';
 
 Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.
 
-For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen. 
+For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer til webpack<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen. 
 
 ### Gulp
 
 Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.
 
-For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.
+For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer til gulp<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.
 
 Disse browsers bør defineres i autoprefixer:
 
@@ -147,6 +147,6 @@ Disse browsers bør defineres i autoprefixer:
   'Last 2 versions',
   'IE 11',
   'IE 10',
-  'IE 9',
+  'IE 9'
 ]
 {% endhighlight %} 
