@@ -1,5 +1,5 @@
 {
-  "accordion_example2": {
+  "accordion_example": {
     "label": "unbordered",
     "id_prefix": "nob-",
     "multiselectable": true,
