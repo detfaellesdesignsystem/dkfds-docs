@@ -4,6 +4,7 @@ title: Streger
 parent: borders-shadows
 order: "2"
 component: borders
+componentLink: false
 ---
 
 ### Designværdier

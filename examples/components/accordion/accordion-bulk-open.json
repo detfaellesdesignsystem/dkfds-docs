@@ -3,6 +3,7 @@
     "variant": "bordered",
     "multiselectable": true,
     "bulk_function": true,
+    "heading_level": false,
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",

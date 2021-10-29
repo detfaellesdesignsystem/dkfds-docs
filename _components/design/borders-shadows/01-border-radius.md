@@ -5,6 +5,7 @@ parent: borders-shadows
 order: "1"
 component: border-radius
 componentHideCode: true
+componentLink: false
 ---
 
 ### Designværdier

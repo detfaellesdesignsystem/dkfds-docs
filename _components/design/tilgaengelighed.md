@@ -29,7 +29,8 @@ tags:
 
 Har du andre tilgængelighedsværktøj man kan bruge ved udvikling, som du synes vi bør dele i fællesskabet så skriv til os via Github eller på mail.
 
-### Hvorfor tilgængelighed?
+{:.h3}
+## Hvorfor tilgængelighed?
 
 Selvbetjeningsløsninger og alle andre offentlige hjemmesider skal overholde den danske lovgivning omkring tilgængelighed på <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> niveau AA. Du skal teste alle løsninger og deres funktioner op imod disse krav, som ikke blot øger tilgængeligheden for brugere med særlige behov, men for alle brugere.
 
@@ -42,7 +43,8 @@ Du bør derfor altid overveje følgende spørgsmål, før du udvikler nye funkti
 - Kan vi gøre den tilgængelig uden funktionstab for brugerne?
 - Kan vi løse behovet med en mere simpel og gennemprøvet model?
 
-### Sådan tester du din løsnings tilgængelighed
+{:.h3}
+## Sådan tester du din løsnings tilgængelighed
 
 Første skridt på vejen til en tilgængelig løsning er at sikre, at koden i din løsnings brugergrænseflade er valid og følger anbefalingerne fra WHATWG og W3C.
 
@@ -50,17 +52,20 @@ Vær opmærksom på, at synlig fokus på elementer er slået fra i Safari som ud
 
 Når du skal teste for tilgængelighed, anbefaler Det Fælles Designsystem, at du som minimum anvender analyseværktøjer, som fx:
 
-#### WebAIM
+{:.h4}
+### WebAIM
 
 WebAIM er en hjemmeside, der er udviklet og drevet af Utah State University. Siden indeholder en række funktioner, der hjælper dig til at udvikle og teste for tilgængelighed. Deres anbefalinger er synkroniseret med krav og anbefalinger fra W3C.
 
 WebAIM stiller funktionen Wave gratis til rådighed. Wave giver med det samme en analyse og rapport på din løsnings tilgængelighed og udfordringer.
 
-##### Læs mere om WebAIM
+{:.h5}
+#### Læs mere om WebAIM
 
 <a href="https://webaim.org/resources/" class="icon-link">WebAIM<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
-#### Oplæsning
+{:.h4}
+### Oplæsning
 
 En af de store udfordringer i tilgængeligt design er at teste oplæsningen af sidens indhold, og der findes ikke en automatiseret måde at gøre det på. Browserproducenterne og de forskellige platforme har desuden meget forskellige tilgange til oplæsning. Alle har større eller mindre udfordringer - især med matematiske og fysiske særtegn.
 
@@ -69,7 +74,8 @@ Brug derfor disse tommelfingerregler i forhold til oplæsning:
 - Er din kode valid HTML, og opfylder du kravene fra <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, forhindrer din løsning ikke oplæsning af indholdet.
 - Følg vejledningen fra WebAIM omkring aftestning med Voice Over (Mac) og Oplæser på Windows 10.
 
-##### Læs mere om oplæsning
+{:.h5}
+#### Læs mere om oplæsning
 
 <ul class="nobullet-list">
 <li><a href="https://webaim.org/articles/voiceover/" class="icon-link">Voice over<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
@@ -77,6 +83,7 @@ Brug derfor disse tommelfingerregler i forhold til oplæsning:
 <li><a href="https://youtu.be/o_mvO6EQ0tM" class="icon-link">Introduction to Screen Readers<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>   
 
-#### Chrome Developer Tools
+{:.h4}
+### Chrome Developer Tools
 
 Google Chrome stiller en lang række værktøjer til rådighed for test og fejlsøgning i en løsning. Ved at trykke på F12, når du står i Chrome, åbner Developer Tools alt lige fra kodevisning til performance-måling. Du kan se en farves tilgængelighedsniveau ved at klikke på farven i ”Elements” visning. Her kan du også justere den. Du kan se resultatet direkte i den aktuelle sidevisning på samme måde som ved redigering af øvrige parametre i Chrome Developer Tools.

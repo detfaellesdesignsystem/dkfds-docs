@@ -2,6 +2,7 @@
   "accordion_example": {
     "variant": "bordered",
     "multiselectable": true,
+    "heading_level": false,
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",

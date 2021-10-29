@@ -4,6 +4,7 @@
     "id_prefix": "nob-",
     "multiselectable": true,
     "variant": "unbordered",
+    "heading_level": false,
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",
