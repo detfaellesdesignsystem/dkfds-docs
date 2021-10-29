@@ -118,6 +118,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet mulighed for <a href="/kode/grid/#rækker-med-border">border på rækkerne i et grid</a> til brug som erstatning for tabel, når der ingen horisontal header er.
 - Fikset fejl med placering af årstal i <a href="/komponenter/datovaelger/">datovælger</a> i mobilvisning.
 - Rettet fejl i <a href="/komponenter/datovaelger/">datovælgeren</a>: Hvis første dag i måneden er en søndag, vises denne dag ikke.
+- Tillader nu dato i <a href="/komponenter/datovaelger/">datovælgeren</a> fra start.
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
