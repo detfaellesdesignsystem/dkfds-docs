@@ -44,12 +44,6 @@ subnav:
 <h2 id="solution-2">Løsning 2: Børnetilskud</h2>
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt-2/?r=/eksempler/selvbetjeningsloesninger/%23solution-2" title="Børnetilskud, 1. side: Oversigt med cards" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt/?r=/eksempler/selvbetjeningsloesninger/%23solution-2" title="Børnetilskud, 2. side: Oversigt" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
     <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-1/?r=/eksempler/selvbetjeningsloesninger/%23solution-2" title="Børnetilskud, 3. side: Hvilke børn søger du tilskud til?" class="screenshot d-block"></a>
   </div>
 </div>

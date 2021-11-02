@@ -20,5 +20,7 @@ Du kan bruge designssystem.dk som eksempel, da det er bygget med sig selv og ove
 
 {:.d-md-none}
 - <a href="/eksempler/selvbetjeningsloesninger/" class="bold-link">Selvbetjeningsløsninger</a>
+- <a href="/eksempler/dashboard/" class="bold-link">Dashboard</a>
 - <a href="/eksempler/opsummeringsside/" class="bold-link">Opsummeringsside</a>
 - <a href="/eksempler/kvittering/" class="bold-link">Kvittering</a>
+- <a href="/eksempler/dashboard/" class="bold-link">Dashboard</a>
