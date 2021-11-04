@@ -27,10 +27,10 @@ Templates er best practice designløsninger til specifikke sidetyper.
 ## Dashboard
 <div class="row mt-5 screenshot-gallery d-none">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt-2/?r=/eksempler/dashboard/" title="Børnetilskud, 1. side: Oversigt med cards" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt-2/?r=/eksempler/templates/%23dashboard" title="Børnetilskud, 1. side: Oversigt med cards" class="screenshot d-block"></a>
   </div>
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt/?r=/eksempler/dashboard/" title="Børnetilskud, 2. side: Oversigt" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt/?r=/eksempler/templates/%23dashboard" title="Børnetilskud, 2. side: Oversigt" class="screenshot d-block"></a>
   </div>
 </div>
 
@@ -75,6 +75,6 @@ Templates er best practice designløsninger til specifikke sidetyper.
     <a href="/pages/eksempler/kvittering/kvittering-1/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering 1" class="screenshot d-block"></a>
   </div>
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="/pages/eksempler/kvittering/kvittering-2/?r=/eksempler/templates/%2323kvittering" title="Eksempelside: Kvittering 2" class="screenshot d-block">
+    <a href="/pages/eksempler/kvittering/kvittering-2/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering 2" class="screenshot d-block">
   </div>
 </div>
