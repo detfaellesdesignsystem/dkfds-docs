@@ -3,7 +3,7 @@
     <button aria-controls="tabpanel-component-{{include.component}}" id="tabbutton-component-{{include.component}}" class="tabnav-item" role="tab" aria-selected="false">
         <span>Visning</span>
     </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-{{ include.component | slugify }}" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-{{include.component}}" aria-labelledby="tabbutton-component-{{include.component}}">
+    <section class="tabnav-panel px-0 component-preview component-preview-{{ include.component | slugify }} {{include.previewclass}}" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-{{include.component}}" aria-labelledby="tabbutton-component-{{include.component}}">
         {% if include.component contains "tringuide" %}
         <div class="row mx-0">
         <aside class="sidebar-col">

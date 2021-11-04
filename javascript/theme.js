@@ -270,7 +270,7 @@ let debug = function(title, value){
 
 
 let setScreenshots = function(){
-    if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || document.getElementsByTagName('body')[0].classList.contains('page-dashboard') || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
+    if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || document.getElementsByTagName('body')[0].classList.contains('page-dashboard') || document.getElementsByTagName('body')[0].classList.contains('page-patterns') || document.getElementsByTagName('body')[0].classList.contains('page-templates') || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
         let screenshots = document.getElementsByClassName('screenshot');
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');

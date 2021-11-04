@@ -176,9 +176,12 @@ Kode_Komponenter_category:
 
 Eksempler_category:
   - href: /eksempler/selvbetjeningsloesninger/
-  - href: /eksempler/dashboard/
-  - href: /eksempler/opsummeringsside/
-  - href: /eksempler/kvittering/
+  - href: /eksempler/patterns/
+    categorynav: 'Patterns_category'
+  - href: /eksempler/templates/
+
+Patterns_category:
+  - href: /eksempler/patterns/angivelse-af-telefonnummer/
 
 Faellesskab_category:
   - href: /faellesskab/samarbejdsforum/

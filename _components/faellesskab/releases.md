@@ -117,7 +117,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
 - Tilføjet mulighed for <a href="/kode/grid/#rækker-med-border">border på rækkerne i et grid</a> til brug som erstatning for tabel, når der ingen horisontal header er.
 - Fikset fejl med placering af årstal i <a href="/komponenter/datovaelger/">datovælger</a> i mobilvisning.
-- Rettet fejl i <a href="/komponenter/datovaelger/">datovælgeren</a>: Hvis første dag i måneden er en søndag, vises denne dag ikke.
+- Rettet fejl i <a href="/komponenter/datovaelger/">datovælgeren</a> der gjorde, at den første dag i måneden ikke blev vist, når den var en søndag.
 - Tillader nu dato i <a href="/komponenter/datovaelger/">datovælgeren</a> fra start.
 - Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
 

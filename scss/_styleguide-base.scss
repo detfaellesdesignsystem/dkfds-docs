@@ -522,11 +522,16 @@ header #search-form-mobile{
 }
 
 //------------ Code
-.component-preview figure.highlight{
+.component-preview figure.highlight, .details-text figure.highlight {
   margin: 0px;
 }
+.component-preview-syntax{
+  border-right: border(20);
+  border-bottom: border(20);
+  border-left: border(20);
+}
 
-*:not(.tabnav-panel) > figure.highlight{
+*:not(.tabnav-panel):not(.details-text) > figure.highlight{
   border: border(20);
 }
 
@@ -544,8 +549,23 @@ pre {
   }
 }
 
-pre {
+*:not(.details-text) > figure.highlight > pre {
   padding: 1.6rem;
+  white-space: pre-wrap;
+  margin: 0;
+  code {
+    padding: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+.details-text > figure.highlight > pre {
+  padding: 0px;
   white-space: pre-wrap;
   margin: 0;
   code {

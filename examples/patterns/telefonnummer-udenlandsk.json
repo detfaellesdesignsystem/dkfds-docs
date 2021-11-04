@@ -1,0 +1,10 @@
+{
+    "textinput_example":{
+      "id": "input-phonenumber",
+      "label": "Telefonnummer",
+      "name": "input-phonenumber",
+      "required": true,
+      "hint": "Ved udenlandske numre inkluder landekode",
+      "class": "input-width-s"
+    }
+  }
