@@ -1,9 +1,11 @@
 {
     "textinput_example":{
       "id": "input-phonenumber",
+      "type": "tel",
       "label": "Telefonnummer",
       "name": "input-phonenumber",
       "required": true,
-      "class": "input-width-xs"
+      "class": "input-width-xs",
+      "autocomplete": "tel"
     }
   }
