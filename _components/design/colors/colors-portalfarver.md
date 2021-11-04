@@ -19,7 +19,7 @@ Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på prim
       <div class="color-container-large borger-primary"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#44831E</p>
-        <p class="code-color-variable">$color-primary-color</p>
+        <p class="code-color-variable">$color-primary</p>
       </div>
     </div>
     <!-- borger primary END -->
@@ -55,7 +55,7 @@ Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærkn
       <div class="color-container-large virk-primary"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#0059B3</p>
-        <p class="code-color-variable">$color-primary-color</p>
+        <p class="code-color-variable">$color-primary</p>
       </div>
     </div>
     <!--virk primary END -->

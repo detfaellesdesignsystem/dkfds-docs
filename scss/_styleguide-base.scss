@@ -28,17 +28,17 @@
   }
 }
 img.inner-border-box{
-  border: $inner-border;
+  border: border(20);
 }
 img.outer-border-box{
-  border: $outer-border;
+  border: border(10);
 }
 // Preview box (e.g. used by header and footer documentation) -------- //
 .preview {
   margin-bottom: 2em;
   background-color: $color-white;
-  padding: $site-margins;
-  border: $outer-border; // scss-lint:disable ColorVariable
+  padding: ($grid-gutter-width / 2);
+  border: border(10); // scss-lint:disable ColorVariable
 
   .background-dark {
     padding-left: 1em;
@@ -55,20 +55,20 @@ img.outer-border-box{
 .do-dont-container{
 
   img{
-    padding: map-get($spacers, 2);
-    border: $outer-border;
+    padding: units(2);
+    border: border(10);
     width: 100%;
     height: auto;
   }
 
   .separator{
-    margin-top: map-get($spacers, 3);
+    margin-top: units(3);
     display: flex;
     div{
-      height: map-get($spacers, 4);
-      margin-top: map-get($spacers, 2);
+      height: units(4);
+      margin-top: units(2);
       width: calc(100% - 28px);
-      margin-left: map-get($spacers, 2);
+      margin-left: units(2);
     }
   }
   > div:first-of-type .separator {
@@ -102,7 +102,7 @@ header .navbar .search-form{
 }
 
 header #search-form-mobile{
-  border-top: $inner-border;
+  border-top: border(20);
 
   #search-input-mobile{
     width: 100%;
@@ -170,7 +170,7 @@ header #search-form-mobile{
   background-color: $color-text-secondary;
 }
 .color-text-bright {
-  background-color: $color-text-bright;
+  background-color: $color-gray-006;
 }
 
 // Links color
@@ -181,41 +181,10 @@ header #search-form-mobile{
   background-color: $color-link-hover;
 }
 .color-focus {
-  background-color: $color-focus;
+  background-color: $theme-focus-color;
 }
 .color-visited {
   background-color: $color-link-visited;
-}
-
-// Neutral color
-.color-neutral {
-  background-color: $color-neutral;
-}
-.color-neutral-darker {
-  background-color: $color-neutral-darker;
-}
-.color-neutral-darkest {
-  background-color: $color-neutral-darkest;
-}
-.color-neutral {
-  background-color: $color-neutral-lightest;
-}
-
-// Functional theme colors
-.color-primary {
-  background-color: color('primary');
-}
-.color-primary-darker {
-  background-color: color('primary-darker');
-}
-.color-primary-darkest {
-  background-color: color('primary-darkest');
-}
-.color-primary-lightest {
-  background-color: color('primary-lightest');
-}
-.color-background {
-  background-color: $color-background;
 }
 
 .color-text-positive {
@@ -253,57 +222,10 @@ header #search-form-mobile{
   background-color: $color-info-light;
 }
 
-// Header, fotter & navigation colors
-.color-header-background {
-  background-color: $color-header-background;
-}
-.color-footer-background {
-  background-color: $color-footer-background;
-}
-.color-topmenu-background {
-  background-color: $color-topmenu-background;
-}
-.color-page {
-  background-color: $color-page;
-}
-
-// Colors for borders
-.color-border {
-  background-color: $color-border;
-}
-.color-border-light {
-  background-color: $color-border-light;
-}
-.color-border-bright {
-  background-color: $color-border-bright;
-}
-.color-border-focus {
-  background-color: $color-border-focus;
-}
-
-// Special colors
-.color-alt-background {
-  background-color: $color-alt-background;
-}
-.color-alt-background-hover {
-  background-color: $color-alt-background-hover;
-}
-.color-alt-table-header {
-  background-color: $color-alt-table-header;
-}
-.color-required {
-  background-color: $color-required;
-}
-.color-shadow {
-  background-color: $color-shadow;
-}
-.color-transparent {
-  background-color: $color-transparent;
-}
 
 .color-container-large {
   height: 108px;
-  border: $outer-border;
+  border: border(10);
 
   //Colors
   &.color-white {
@@ -381,7 +303,7 @@ header #search-form-mobile{
 }
 .color-container-medium {
   height: 64px;
-  border: $outer-border;
+  border: border(10);
 
   &.color-data-turquoise {
     background-color: $color-data-turquoise;
@@ -467,7 +389,7 @@ header #search-form-mobile{
   height: 40px;
   margin-bottom: 0.8rem;
   margin-top: 0.8rem;
-  border: $outer-border;
+  border: border(10);
 
   .color-text-container {
     padding: 7px 15px 7px 15px;
@@ -605,7 +527,7 @@ header #search-form-mobile{
 }
 
 *:not(.tabnav-panel) > figure.highlight{
-  border: $inner-border;
+  border: border(20);
 }
 
 code{
@@ -689,8 +611,8 @@ code {
   .icon-container{
     margin-top:-1px;
     .icon-box{
-      padding: map-get($spacers, 505) map-get($spacers, 3) map-get($spacers, 3);
-      border: $inner-border;
+      padding: units(505) units(3) units(3);
+      border: border(20);
       border-left-width: 0px;
       border-top-width: 0px;
       text-align: center;
@@ -703,8 +625,8 @@ code {
         cursor: pointer;
       }
       p{
-        margin-bottom: map-get($spacers, 405);
-        margin-top: map-get($spacers, 405);
+        margin-bottom: units(405);
+        margin-top: units(405);
         word-wrap: break-word;
       }
     }
@@ -735,20 +657,8 @@ code {
 
 //----------------  Page styles
 
-.styleguide-child-container + .styleguide-child-container{
-  margin-top: 40px;
-}
-
-.page-ui-components {
-
-  .font-lead {
-    &:first-of-type {
-      margin-top: 3.2rem;
-    }
-  }
-}
 body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.layout-example{
-  padding-top: map-get($spacers, 8);
+  padding-top: units(8);
 }
 
 .page-selvbetjeningsløsninger .page-container{overflow:hidden;}
@@ -810,29 +720,10 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
     min-height: 500px; //so that datepicker is visible
   }
 }
-.styleguide-spacer-modals{
-  height: 400px;
-}
-.component-preview-selectwoo-multiselect, .component-preview-selectwoo-multiselect-ajax, .component-preview-selectwoo-multiselect-groups{
-  padding-top: 4px;
-  padding-bottom: 4px;
-  .container{
-    min-height: 400px;
-  }
-}
 
 
 .component-preview-tooltip .container{
   min-height: 350px;
-}
-// Example images on headers and page templates pages -------------- //
-.page-headers,
-.page-page-templates {
-  .preview {
-    img {
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-    }
-  }
 }
 
 .demo-component-box{
@@ -844,12 +735,12 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
     }
     align-items: center;
     justify-content: center;
-    padding: map-get($spacers, 4);
+    padding: units(4);
     background-color: $color-gray-medium-dark;
     border-radius: 4px;
 
     &:focus{
-      outline: $focus-outline;
+      @include focus-outline();
     }
 
     img{
@@ -868,45 +759,8 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
 }
 
 .description-image{ //creates a border around an image.
-  border: $outer-border;
+  border: border(10);
   padding: 8px;
-}
-
-.demo-img-container{
-  height: 240px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: map-get($spacers, 5);
-  background-color: $background-alternative;
-  img{
-    height: 100%;
-  }
-  &--turquoise{
-    background-color: $color-data-turquoise-high-opacity;
-  }
-  &--teal{
-    background-color: $color-data-teal;
-  }
-  &--orange{
-    background-color: $color-data-orange;
-  }
-  &--magenta{
-    background-color: $color-data-magenta;
-  }
-  &--purple{
-    background-color: $color-data-purple;
-  }
-  &--violet{
-    background-color: $color-data-violet-high-opacity;
-  }
-}
-
-.demo-img-placeholder{
-  height: 150px;
-}
-.demo-img-placeholder-large{
-  height: 300px;
 }
 
 .layout-demo {
@@ -959,7 +813,7 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  border: $outer-border;
+  border: border(10);
 
   .youtube-video {
     position: absolute;
@@ -974,15 +828,15 @@ body.page-language-switcher.layout-example, body.page-language-switcher-tooltip.
 /////////////////// component preview //////////////////////
 
 div.component-preview {
-  border: $inner-border;
+  border: border(20);
   position: relative;
   margin-bottom: 8px;
 
   .component-link{
-    border-bottom: $inner-inner-border;
+    border-bottom: border(30);
   }
   .component-code-link{
-    border-top: $inner-inner-border;
+    border-top: border(30);
   }
 }
 
@@ -1048,34 +902,6 @@ div.component-preview {
   }
 }
 
-.components__description-header {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 24px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
-
-.components__edit {
-  opacity: .2;
-  text-decoration: none !important;
-
-  &:hover,
-  &:focus {
-    opacity: .8;
-
-    &:after {
-      content: 'edit text';
-    }
-  }
-
-  img {
-    height: 20px;
-    vertical-align: middle;
-    margin-bottom: 9px;
-  }
-}
 
 body.layout-requirements-tool{
   .header {
@@ -1086,35 +912,36 @@ body.layout-requirements-tool{
 }
 
 //----- grid example
-body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="page-grid"], div.component-preview[class*="-grid"]:not(.component-preview-grid-bordered), section.component-preview[class*="-grid"]:not(.component-preview-grid-bordered) {
-
-
+body[class*="page-grid"][class*="-html"]
+, body.layout-example-contained[class*="page-grid"]
+, div.component-preview[class*="-grid"]:not(.component-preview-grid-bordered)
+, section.component-preview[class*="-grid"]:not(.component-preview-grid-bordered) {
   .row{
-    margin-bottom: map-get($spacers, 2);
+    margin-bottom: units(2);
     & > .col,
     & > [class^=col-] {
-      margin-bottom: map-get($spacers, 2);
+      margin-bottom: units(2);
       p {
         text-align: center;
-        padding-top: map-get($spacers, 4);
-        padding-bottom: map-get($spacers, 4);
-        padding-left: map-get($spacers, 2);
-        padding-right: map-get($spacers, 2);
+        padding-top: units(4);
+        padding-bottom: units(4);
+        padding-left: units(2);
+        padding-right: units(2);
         background-color: $color-info-light;
         border: border(10);
-        margin: map-get($spacers, 0);
+        margin: units(0);
       }
       .grid-example-content{
         background-color: $color-info-light;
         border: border(10);
-        padding-top: map-get($spacers, 4);
-        padding-bottom: map-get($spacers, 4);
+        padding-top: units(4);
+        padding-bottom: units(4);
         & > p{
           border: 0;
           background-color: transparent;
         }
         & > .row {
-          margin-top: map-get($spacers, 4);
+          margin-top: units(4);
         }
       }
     }
@@ -1122,14 +949,14 @@ body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="
   .grid-example-content{
     background-color: $color-info-light;
     border: border(10);
-    padding-top: map-get($spacers, 4);
-    padding-bottom: map-get($spacers, 4);
+    padding-top: units(4);
+    padding-bottom: units(4);
     & > p{
       border: 0;
       background-color: transparent;
     }
     & > .row {
-      margin-top: map-get($spacers, 4);
+      margin-top: units(4);
     }
   }
 
@@ -1137,52 +964,40 @@ body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="
     min-height: 10rem;
     background-color: $color-data-orange-low-opacity;
   }
-  /*&.component-preview-grid-all-breakpoints .row:first-of-type > [class^=col-] {
-    background-color: transparent;
-    border: none;
-    border-left: 1px solid grey;
-    &:last-child {
-      border-right: 1px solid grey;
-    }
-  }*/
-
 }
-
-
-
 
 //BORDER RADIUS
 .static-border-radius-example {
-  border-top-left-radius:$static-border-radius; //  0
+  border-top-left-radius:0; //  0
   width: 144px;
   height: 120px;
   background-color: $color-gray-pale;
-  border-left: $outer-border;
-  border-top: $outer-border;
+  border-left: border(10);
+  border-top: border(10);
 }
 
 .interactive-border-radius-example {
-  border-top-left-radius: $interactive-border-radius;
+  border-top-left-radius: $button-border-radius;
   width: 144px;
   height: 120px;
   background-color: $color-gray-pale;
-  border-left: $outer-border;
-  border-top: $outer-border;
+  border-left: border(10);
+  border-top: border(10);
 }
 
 //BORDERS
 .outer-border-example {
-  border-top: $outer-border;
+  border-top: border(10);
 }
 .outer-border{
-  border: $outer-border;
+  border: border(10);
 }
 
 .inner-border-example {
-  border-top: $inner-border;
+  border-top: border(20);
 }
 .inner-inner-border-example {
-  border-top: $inner-inner-border;
+  border-top: border(30);
 }
 
 .button-border-example {
@@ -1206,37 +1021,35 @@ body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="
 .heavy-shadow-example {
   width: 144px;
   height: 104px;
-  box-shadow: $box-shadow-heavy;
+  box-shadow: shadow('heavy');
   background-color: $color-white;
-  border: $outer-border;
+  border: border(10);
 }
 
 .moderately-shadow-example {
   width: 144px;
   height: 104px;
-  box-shadow: $box-shadow-moderately;
+  box-shadow: shadow('medium');
   background-color: $color-white;
-  border: $outer-border;
+  border: border(10);
 }
 
 .slightly-shadow-example {
   width: 144px;
   height: 104px;
-  box-shadow: $box-shadow-slightly;
+  box-shadow: shadow('light');
   background-color: $color-white;
-  border: $outer-border;
+  border: border(10);
 }
 
 /* HOME */
 .bg-turquoise{
   background-color: $color-data-turquoise-medium-opacity;
 }
-.bg-alternative{
-  background-color: $background-alternative;
-}
 .bg-turquoise-dark{
   background-color: $color-data-turquoise;
 }
+
 /* sideopbygning */
 .bg-darkgrey{
   background-color: $color-gray-mediumpale;
@@ -1252,15 +1065,4 @@ body[class*="page-grid"][class*="-html"], body.layout-example-contained[class*="
 }
 .bg-violet{
   background-color: $color-data-violet-medium-opacity;
-}
-
-/* BADGE COLORS */
-
-.badge.color-warning {
-  background-color: $color-warning-light;
-  color: $color-black;
-}
-.badge.color-info {
-  background-color: $color-info-light;
-  color: $color-black;
 }
