@@ -2,7 +2,6 @@
   "parameters": {
     "id": "datepicker-example1",
     "label": "Dato for aftale",
-    "name": "appointment-date1",
-    "value": "01/12/2021"
+    "name": "appointment-date1"
   }
 }
