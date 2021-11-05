@@ -35,12 +35,12 @@ Skriv "Vælg en [dokumenttype]".<br />
 Fx "Vælg en lægeerklæring".
 
 #### Den valgte fil er forkert filtype
-Skriv "Den valgte fil bør være af typen [liste af filtyper]".<br />
-Fx "Den valgte fil bør være af typen CSV or ODS" eller "Den valgte fil bør være af typen JPG, BMP, PNG, TIF eller PDF".
+Skriv "Den valgte fil skal være af typen [liste af filtyper]".<br />
+Fx "Den valgte fil skal være af typen CSV eller ODS" eller "Den valgte fil skal være af typen JPG, BMP, PNG, TIF eller PDF".
 
 #### Filen er for stor
-Skriv "Den valgte fil bør være mindre end [største filstørrelse]".<br />
-Fx "Den valgte fil bør være mindre end 2MB".
+Skriv "Filens størrelse skal være under [største filstørrelse]".<br />
+Fx "Filens størrelse skal være under 2MB".
 
 #### Filen er tom
 Skriv "Den valgte fil er tom".
@@ -59,7 +59,7 @@ Skriv "Du kan kun vælge op til [højeste antal filer] filer på samme tid".<br 
 Fx "Du kan kun vælge op til 10 filer på samme tid".
 
 #### Der ikke er brugt den korrekte skabelon
-Skriv "Den valgte fil bør gøre brug af skabelonen".
+Skriv "Den valgte fil skal gøre brug af skabelonen".
 
 {:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
