@@ -601,9 +601,10 @@ code {
 //Variables for color page
 .code-color-variable {
   font-family: monospace;
-  font-size: 1.3rem;
+  font-size: $small-text;
   font-weight: $font-weight-normal;
-  line-height: 1.4em;
+  line-height: $small-text-line-height;
+  letter-spacing: $small-text-letter-spacing;
 }
 
 // Code snippet boxes
