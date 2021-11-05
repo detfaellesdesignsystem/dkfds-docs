@@ -11,8 +11,8 @@ order: 20
     <div class="col-md-3">
       <div class="color-container-large color-black"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#1A1A1A</p>
-        <p class="code-color-variable">$color-black</p>
+        <span class="code-color-hex">#1A1A1A</span>
+        <span class="code-color-variable">$color-black</span>
       </div>
     </div>
     <!-- color-black end -->
@@ -20,8 +20,8 @@ order: 20
     <div class="col-md-3 ">
       <div class="color-container-large color-gray-dark"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#454545</p>
-        <p class="code-color-variable">$color-gray-dark</p>
+        <span class="code-color-hex">#454545</span>
+        <span class="code-color-variable">$color-gray-dark</span>
       </div>
     </div>
     <!-- color-gray-dark end -->
@@ -29,8 +29,8 @@ order: 20
     <div class="col-md-3 ">
       <div class="color-container-large color-gray-medium-dark"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#747474</p>
-        <p class="code-color-variable">$color-gray-medium-dark</p>
+        <span class="code-color-hex">#747474</span>
+        <span class="code-color-variable">$color-gray-medium-dark</span>
       </div>
     </div>
     <!-- color-gray-medium-dark end -->
@@ -38,8 +38,8 @@ order: 20
     <div class="col-md-3 ">
       <div class="color-container-large color-gray-medium-light"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#999999</p>
-        <p class="code-color-variable">$color-gray-medium-light</p>
+        <span class="code-color-hex">#999999</span>
+        <span class="code-color-variable">$color-gray-medium-light</span>
       </div>
     </div>
     <!-- color-gray-medium-light end -->
@@ -47,8 +47,8 @@ order: 20
     <div class="col-md-3">
       <div class="color-container-large color-gray-light"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#BFBFBF</p>
-        <p class="code-color-variable">$color-gray-light</p>
+        <span class="code-color-hex">#BFBFBF</span>
+        <span class="code-color-variable">$color-gray-light</span>
       </div>
     </div>
     <!-- color-gray-light end -->
@@ -56,8 +56,8 @@ order: 20
     <div class="col-md-3">
       <div class="color-container-large color-gray-mediumpale"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#DCDCDC</p>
-        <p class="code-color-variable">$color-gray-mediumpale</p>
+        <span class="code-color-hex">#DCDCDC</span>
+        <span class="code-color-variable">$color-gray-mediumpale</span>
       </div>
     </div>
     <!-- color-gray-pale end -->
@@ -65,8 +65,8 @@ order: 20
     <div class="col-md-3">
       <div class="color-container-large color-gray-pale"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#F5F5F5</p>
-        <p class="code-color-variable">$color-gray-pale</p>
+        <span class="code-color-hex">#F5F5F5</span>
+        <span class="code-color-variable">$color-gray-pale</span>
       </div>
     </div>
     <!-- color-gray-pale end -->
@@ -74,8 +74,8 @@ order: 20
     <div class="col-md-3 ">
       <div class="color-container-large color-white"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FFFFFF</p>
-        <p class="code-color-variable">$color-white</p>
+        <span class="code-color-hex">#FFFFFF</span>
+        <span class="code-color-variable">$color-white</span>
       </div>
     </div>
     <!-- color-white end -->

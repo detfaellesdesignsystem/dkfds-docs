@@ -10,8 +10,8 @@ order: 70
     <div class="col-md-3">
       <div class="color-container-large color-positive"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#358000</p>
-        <p class="code-color-variable">$color-positive</p>
+        <span class="code-color-hex">#358000</span>
+        <span class="code-color-variable">$color-positive</span>
       </div>
     </div>
     <!-- color-positive END -->
@@ -19,8 +19,8 @@ order: 70
     <div class="col-md-3">
       <div class="color-container-large color-negative"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#CC0000</p>
-        <p class="code-color-variable">$color-negative</p>
+        <span class="code-color-hex">#CC0000</span>
+        <span class="code-color-variable">$color-negative</span>
       </div>
     </div>
     <!-- color-negative END -->

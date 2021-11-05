@@ -13,8 +13,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-turquoise"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#56D4D6</p>
-        <p class="code-color-variable">$color-data-turquoise</p>
+        <span class="code-color-hex">#56D4D6</span>
+        <span class="code-color-variable">$color-data-turquoise</span>
       </div>
     </div>
     <!-- color-data-turquoise END -->
@@ -22,8 +22,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-turquoise-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#9AE5E6</p>
-        <p class="code-color-variable">$color-data-turquoise-high-opacity</p>
+        <span class="code-color-hex">#9AE5E6</span>
+        <span class="code-color-variable">$color-data-turquoise-high-opacity</span>
       </div>
     </div>
     <!-- color-data-turquoise-high-opacity END -->
@@ -31,8 +31,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-turquoise-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#CCF2F3</p>
-        <p class="code-color-variable">$color-data-turquoise-medium-opacity</p>
+        <span class="code-color-hex">#CCF2F3</span>
+        <span class="code-color-variable">$color-data-turquoise-medium-opacity</span>
       </div>
     </div>
     <!-- color-data-turquoise-medium-opacity END -->
@@ -40,8 +40,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-turquoise-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#EEFAFA</p>
-        <p class="code-color-variable">$color-data-turquoise-low-opacity</p>
+        <span class="code-color-hex">#EEFAFA</span>
+        <span class="code-color-variable">$color-data-turquoise-low-opacity</span>
       </div>
     </div>
     <!-- color-data-turquoise-low-opacity END -->
@@ -49,8 +49,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-teal"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#15B094</p>
-        <p class="code-color-variable">$color-data-teal</p>
+        <span class="code-color-hex">#15B094</span>
+        <span class="code-color-variable">$color-data-teal</span>
       </div>
     </div>
     <!-- color-data-teal END -->
@@ -58,8 +58,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-teal-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#73D0BF</p>
-        <p class="code-color-variable">$color-data-teal-high-opacity</p>
+        <span class="code-color-hex">#73D0BF</span>
+        <span class="code-color-variable">$color-data-teal-high-opacity</span>
       </div>
     </div>
     <!-- color-data-teal-high-opacity END -->
@@ -67,8 +67,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-teal-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#B9E7DF</p>
-        <p class="code-color-variable">$color-data-teal-medium-opacity</p>
+        <span class="code-color-hex">#B9E7DF</span>
+        <span class="code-color-variable">$color-data-teal-medium-opacity</span>
       </div>
     </div>
     <!-- color-data-teal-medium-opacity END -->
@@ -76,8 +76,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-teal-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#E7F7F4</p>
-        <p class="code-color-variable">$color-data-teal-low-opacity</p>
+        <span class="code-color-hex">#E7F7F4</span>
+        <span class="code-color-variable">$color-data-teal-low-opacity</span>
       </div>
     </div>
     <!-- color-data-teal-low-opacity END -->
@@ -85,8 +85,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-orange"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FF6A38</p>
-        <p class="code-color-variable">$color-data-orange</p>
+        <span class="code-color-hex">#FF6A38</span>
+        <span class="code-color-variable">$color-data-orange</span>
       </div>
     </div>
     <!-- color-data-orange END -->
@@ -94,8 +94,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-orange-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FFA688</p>
-        <p class="code-color-variable">$color-data-orange-high-opacity</p>
+        <span class="code-color-hex">#FFA688</span>
+        <span class="code-color-variable">$color-data-orange-high-opacity</span>
       </div>
     </div>
     <!-- color-data-orange-high-opacity END -->
@@ -103,8 +103,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-orange-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FFD2C3</p>
-        <p class="code-color-variable">$color-data-orange-medium-opacity</p>
+        <span class="code-color-hex">#FFD2C3</span>
+        <span class="code-color-variable">$color-data-orange-medium-opacity</span>
       </div>
     </div>
     <!-- color-data-orange-medium-opacity END -->
@@ -112,8 +112,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-orange-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FFF0Eb</p>
-        <p class="code-color-variable">$color-data-orange-low-opacity</p>
+        <span class="code-color-hex">#FFF0Eb</span>
+        <span class="code-color-variable">$color-data-orange-low-opacity</span>
       </div>
     </div>
     <!-- color-data-orange-low-opacity END -->
@@ -121,8 +121,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-magenta"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#D81884</p>
-        <p class="code-color-variable">$color-data-magenta</p>
+        <span class="code-color-hex">#D81884</span>
+        <span class="code-color-variable">$color-data-magenta</span>
       </div>
     </div>
     <!-- color-data-magenta END -->
@@ -130,8 +130,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-magenta-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#E874B5</p>
-        <p class="code-color-variable">$color-data-magenta-high-opacity</p>
+        <span class="code-color-hex">#E874B5</span>
+        <span class="code-color-variable">$color-data-magenta-high-opacity</span>
       </div>
     </div>
     <!-- color-data-magenta-high-opacity END -->
@@ -139,8 +139,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-magenta-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#F3BADA</p>
-        <p class="code-color-variable">$color-data-magenta-medium-opacity</p>
+        <span class="code-color-hex">#F3BADA</span>
+        <span class="code-color-variable">$color-data-magenta-medium-opacity</span>
       </div>
     </div>
     <!-- color-data-magenta-medium-opacity END -->
@@ -148,8 +148,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-magenta-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FBE7F2</p>
-        <p class="code-color-variable">$color-data-magenta-low-opacity</p>
+        <span class="code-color-hex">#FBE7F2</span>
+        <span class="code-color-variable">$color-data-magenta-low-opacity</span>
       </div>
     </div>
     <!-- color-data-magenta-low-opacity END -->
@@ -157,8 +157,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-purple"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#8F2B8F</p>
-        <p class="code-color-variable">$color-data-purple</p>
+        <span class="code-color-hex">#8F2B8F</span>
+        <span class="code-color-variable">$color-data-purple</span>
       </div>
     </div>
     <!-- color-data-purple END -->
@@ -166,8 +166,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-purple-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#BC80BC</p>
-        <p class="code-color-variable">$color-data-purple-high-opacity</p>
+        <span class="code-color-hex">#BC80BC</span>
+        <span class="code-color-variable">$color-data-purple-high-opacity</span>
       </div>
     </div>
     <!-- color-data-purple-high-opacity END -->
@@ -175,8 +175,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-purple-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#DDBFDD</p>
-        <p class="code-color-variable">$color-data-purple-medium-opacity</p>
+        <span class="code-color-hex">#DDBFDD</span>
+        <span class="code-color-variable">$color-data-purple-medium-opacity</span>
       </div>
     </div>
     <!-- color-data-purple-medium-opacity END -->
@@ -184,8 +184,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-purple-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#F3E9F3</p>
-        <p class="code-color-variable">$color-data-purple-low-opacity</p>
+        <span class="code-color-hex">#F3E9F3</span>
+        <span class="code-color-variable">$color-data-purple-low-opacity</span>
       </div>
     </div>
     <!-- color-data-purple-low-opacity END -->
@@ -193,8 +193,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-violet"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#474E95</p>
-        <p class="code-color-variable">$color-data-violet</p>
+        <span class="code-color-hex">#474E95</span>
+        <span class="code-color-variable">$color-data-violet</span>
       </div>
     </div>
     <!-- color-data-violet END -->
@@ -202,8 +202,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-violet-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#9195BF</p>
-        <p class="code-color-variable">$color-data-violet-high-opacity</p>
+        <span class="code-color-hex">#9195BF</span>
+        <span class="code-color-variable">$color-data-violet-high-opacity</span>
       </div>
     </div>
     <!-- color-data-violet-high-opacity END -->
@@ -211,8 +211,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-violet-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#C8CADF</p>
-        <p class="code-color-variable">$color-data-violet-medium-opacity</p>
+        <span class="code-color-hex">#C8CADF</span>
+        <span class="code-color-variable">$color-data-violet-medium-opacity</span>
       </div>
     </div>
     <!-- color-data-violet-medium-opacity END -->
@@ -220,8 +220,8 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="col-md-3">
       <div class="color-container-medium color-data-violet-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#ECEDF4</p>
-        <p class="code-color-variable">$color-data-violet-low-opacity</p>
+        <span class="code-color-hex">#ECEDF4</span>
+        <span class="code-color-variable">$color-data-violet-low-opacity</span>
       </div>
     </div>
     <!-- color-data-violet-low-opacity END -->

@@ -109,7 +109,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 {:#version-x-x-x .mb-0}
 ## Version X.X.X
-<p class="small-text mt-0">xx-xx-2021</p>
+<div><span class="small-text mt-0 d-block">xx-xx-2021</span></div>
 
 - Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikatorer/">trinindikator</a>
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
@@ -124,7 +124,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
 
-<p class="small-text mt-0">28-09-2021</p>
+<div><span class="small-text mt-0 d-block">28-09-2021</span></div>
 
 - <a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a>
 - <a href="/komponenter/felter/#prefix-og-suffix">Prefix og suffix på felter</a>
@@ -142,7 +142,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-7-4-0 .mb-0}
 ## Version 7.4.0
 
-<p class="small-text mt-0">02-06-2021</p>
+<div><span class="small-text mt-0 d-block">02-06-2021</span></div>
 
 - Ændringer i <a href="/komponenter/tooltip/">tooltip komponenten</a> - der er tilføjet delay og pil på tooltip
 - Links får nu automatisk sort farve i <a href="/komponenter/beskeder/">beskeder</a>
@@ -152,7 +152,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-7-3-0 .mb-0}
 ## Version 7.3.0
 
-<p class="small-text mt-0">23-04-2021</p>
+<div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
 - <a href="/design/ikoner/ikoner-og-deres-betydning/">Ikontaksonomi</a>
 - Ny komponent: <a href="/komponenter/notifikation/">Notifikation (Toast) komponent</a>
@@ -169,7 +169,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-7-2-0 .mb-0}
 ## Version 7.2.0
 
-<p class="small-text mt-0">11-02-2021</p>
+<div><span class="small-text mt-0 d-block">11-02-2021</span></div>
 
 - Ændret font i drop down for at fikse bug i firefox
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/102" class="icon-link">issue #102 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
@@ -188,7 +188,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-7-1-1 .mb-0}
 ## Version 7.1.1
 
-<p class="small-text mt-0">28-10-2020</p>
+<div><span class="small-text mt-0 d-block">28-10-2020</span></div>
 
 - Fikset fejl, hvor border ved aktivt menupunkt i <a href="/komponenter/headers/">header</a> hopper ved hover.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
@@ -204,7 +204,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-7-0-0 .mb-0}
 ## Version 7.0.0
 
-<p class="small-text mt-0">18-08-2020</p>
+<div><span class="small-text mt-0 d-block">18-08-2020</span></div>
 
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Opdateret fonten IBM Plex Sans til version 5.0.0
 <span class="form-hint mt-0">Hvis man preloader fonten - hvilket anbefales - så bør man tjekke om stien til fonten skal ændres, da mappestrukturen under fonts er ændret i dkfds</span>
@@ -220,14 +220,14 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-6-1-1 .mb-0}
 ## Version 6.1.1
 
-<p class="small-text mt-0">19-05-2020</p>
+<div><span class="small-text mt-0 d-block">19-05-2020</span></div>
 
 - Ændret lille knap til normal knap i standard header grundet usability issues i mobilvisning
 
 {:#version-6-1-0 .mb-0}
 ## Version 6.1.0
 
-<p class="small-text mt-0">14-05-2020</p>
+<div><span class="small-text mt-0 d-block">14-05-2020</span></div>
 
 - Ny komponent: <a href="/komponenter/broedkrumme/">Brødkrumme</a>
 - Mulighed for en mere kompakt <a href="/komponenter/headers/">header</a> med brug af en <a href="/komponenter/knapper/#lille-knap">lille knap</a>
@@ -238,7 +238,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-6-0-1 .mb-0}
 ## Version 6.0.1
 
-<p class="small-text mt-0">19-03-2020</p>
+<div><span class="small-text mt-0 d-block">19-03-2020</span></div>
 
 - Fjernet inkludering af IBM Plex Sans definitionen i dkfds-tippy-theme.standalone.css.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/104" class="icon-link">issue #104 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
@@ -249,7 +249,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-6-0-0 .mb-0}
 ## Version 6.0.0
 
-<p class="small-text mt-0">10-03-2020</p>
+<div><span class="small-text mt-0 d-block">10-03-2020</span></div>
 
 - <a href="/komponenter/detaljer/">Detalje komponent</a> tilføjet.
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Skjul/vis indhold med knap er fjernet.
@@ -267,7 +267,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-5-3-0 .mb-0}
 ## Version 5.3.0
 
-<p class="small-text mt-0">16-12-2019</p>
+<div><span class="small-text mt-0 d-block">16-12-2019</span></div>
 
 - <a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.
 - Mere padding i toppen af <a href="/komponenter/headers/#header-medium">navbar indeholdende funktionslink og overflow menu i header</a>.
@@ -282,7 +282,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-5-2-0 .mb-0}
 ## Version 5.2.0
 
-<p class="small-text mt-0">27-11-2019</p>
+<div><span class="small-text mt-0 d-block">27-11-2019</span></div>
 
 - <label class="badge badge-info badge-small mr-3">Change</label>Ændret accordion aria-multiselectable så man i stedet kan bruge klassen accordion-multiselectable
 <span class="form-hint mt-0">Ændringen er fortsat bagudkompatibel, men den tidligere implementering anbefales ikke, da det ikke var valid HTML.</span>
@@ -297,7 +297,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-5-1-0 .mb-0}
 ## Version 5.1.0
 
-<p class="small-text mt-0">12-11-2019</p>
+<div><span class="small-text mt-0 d-block">12-11-2019</span></div>
 
 - <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse komponent</a> er tilføjet i kernen.
 - <a href="/komponenter/tilbage-link/">Tilbage link</a> er tilføjet i kernen.
@@ -314,7 +314,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-5-0-0 .mb-0}
 ## Version 5.0.0
 
-<p class="small-text mt-0">22-10-2019</p>
+<div><span class="small-text mt-0 d-block">22-10-2019</span></div>
 
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen `DKFDS.init()` på hver side.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/kode/implementering/">implementering af DKFDS til udviklere</a>.</span>
@@ -336,7 +336,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-4-4-0 .mb-0}
 ## Version 4.4.0
 
-<p class="small-text mt-0">20-08-2019</p>
+<div><span class="small-text mt-0 d-block">20-08-2019</span></div>
 
 - <label class="badge badge-info badge-small mr-3">Change</label>Tilpasset CSS til print
 - Farven på valgt menupunkt i sidenavigationen er ændret til #1A1A1A
@@ -348,7 +348,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-4-3-0 .mb-0}
 ## Version 4.3.0
 
-<p class="small-text mt-0">04-07-2019</p>
+<div><span class="small-text mt-0 d-block">04-07-2019</span></div>
 
 - Fjernet farve på small-text mixin.
 - Tilpasset positionering af ikon på knapper.
@@ -360,7 +360,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-4-2-0 .mb-0}
 ## Version 4.2.0
 
-<p class="small-text mt-0">20-06-2019</p>
+<div><span class="small-text mt-0 d-block">20-06-2019</span></div>
 
 - Fjernet margin-top på h1.
 - <label class="badge badge-info badge-small mr-3">Change</label>Fjernet form-group div fra li i radioknap og tjekboks liste (Løser udfordringen med at JAWS skærmlæseren læser skrivebeskyttet ved hver tjekboks eller radioknap).
@@ -371,7 +371,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-4-1-1 .mb-0}
 ## Version 4.1.1
 
-<p class="small-text mt-0">24-05-2019</p>
+<div><span class="small-text mt-0 d-block">24-05-2019</span></div>
 
 - Fjernet primærfarven på tekst i aktivt menupunkt i header.
 - Tilføjet klassen `inline-svg`, som kan bruges på ikoner, der skal fremgå i tekst, således at de matcher teksthøjden.
@@ -383,7 +383,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-4-1-0 .mb-0}
 ## Version 4.1.0
 
-<p class="small-text mt-0">26-04-2019</p>
+<div><span class="small-text mt-0 d-block">26-04-2019</span></div>
 
 - <span class="badge badge-info badge-small mr-3">Change</span>Fjernet fast højde på tekstområde (textarea) - man kan/bør nu sætte højden med rows attributten.
 - Fjernet tekstmarkøren på et read only felt i Internet Explorer.
@@ -397,7 +397,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-4-0-1 .mb-0}
 ## Version 4.0.1
 
-<p class="small-text mt-0">08-04-2019</p>
+<div><span class="small-text mt-0 d-block">08-04-2019</span></div>
 
 - Opdateret skip link udseende
 - Ændret styling, så a-element i solution-header nu kan være et h1-element
@@ -411,7 +411,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-4-0-0 .mb-0}
 ## Version 4.0.0
 
-<p class="small-text mt-0">01-04-2019</p>
+<div><span class="small-text mt-0 d-block">01-04-2019</span></div>
 
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Fjernet højde på cards
 - Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.
@@ -429,7 +429,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-3-0-3 .mb-0}
 ## Version 3.0.3
 
-<p class="small-text mt-0">27-03-2019</p>
+<div><span class="small-text mt-0 d-block">27-03-2019</span></div>
 
 - Fjernet eksempler fra projekt
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Ændret macros, så de er mere dynamiske, så flere projekter kan gøre brug af dem
@@ -445,7 +445,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-3-0-2 .mb-0}
 ## Version 3.0.2
 
-<p class="small-text mt-0">19-02-2019</p>
+<div><span class="small-text mt-0 d-block">19-02-2019</span></div>
 
 - Tilføjet info om fiks af Microsoft Edge bug i navigation, hvor bullets blev vist trods styling
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Defineret tilbage-knap
@@ -464,7 +464,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-3-0-1 .mb-0}
 ## Version 3.0.1
 
-<p class="small-text mt-0">18-01-2019</p>
+<div><span class="small-text mt-0 d-block">18-01-2019</span></div>
 <h3 class="h4">Smårettelser til CSS og ikoner</h3>
 
 - `small-text` og `small-tag` klasserne fik ændret font-size fra 13px til 14px
@@ -480,7 +480,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-3-0-0 .mb-0}
 ## Version 3.0.0
 
-<p class="small-text mt-0">14-01-2019</p>
+<div><span class="small-text mt-0 d-block">14-01-2019</span></div>
 
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Refaktoreret fra 'dkwds' til 'dkfds'
 <span class="form-hint mt-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds">'dkfds'</a> i stedet for 'dkwds'. </span>
@@ -505,7 +505,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-2-1-2 .mb-0}
 ## Version 2.1.2
 
-<p class="small-text mt-0">16-10-2018</p>
+<div><span class="small-text mt-0 d-block">16-10-2018</span></div>
 <ul>
 <li>
   Nye skriftstørrelser til H1-H6

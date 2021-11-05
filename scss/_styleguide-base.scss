@@ -595,7 +595,9 @@ code {
 .code-color-hex {
   font-family: monospace;
   font-size: 1.6rem;
+  line-height: $base-line-height;
   font-weight: $font-weight-bold;
+  display: block;
 }
 
 //Variables for color page
@@ -605,6 +607,7 @@ code {
   font-weight: $font-weight-normal;
   line-height: $small-text-line-height;
   letter-spacing: $small-text-letter-spacing;
+  display: block;
 }
 
 // Code snippet boxes

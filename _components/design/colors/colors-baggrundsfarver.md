@@ -10,8 +10,8 @@ order: 60
     <div class="col-md-3">
       <div class="color-container-large bg-normal"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FFFFFF</p>
-        <p class="code-color-variable">$background-normal</p>
+        <span class="code-color-hex">#FFFFFF</span>
+        <span class="code-color-variable">$background-normal</span>
       </div>
     </div>
   <!-- color-positive END -->
@@ -19,8 +19,8 @@ order: 60
     <div class="col-md-3">
       <div class="color-container-large bg-alternative"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#F5F5F5</p>
-        <p class="code-color-variable">$background-alternative</p>
+        <span class="code-color-hex">#F5F5F5</span>
+        <span class="code-color-variable">$background-alternative</span>
       </div>
     </div>
   <!-- color-negative END -->
@@ -28,8 +28,8 @@ order: 60
     <div class="col-md-3">
       <div class="color-container-large bg-modal"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">rgba(0, 0, 0, 0.75)</p>
-        <p class="code-color-variable">$background-modal</p>
+        <span class="code-color-hex">rgba(0, 0, 0, 0.75)</span>
+        <span class="code-color-variable">$background-modal</span>
       </div>
     </div>
   </div>

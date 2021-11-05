@@ -18,8 +18,8 @@ Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på prim
     <div class="col-md-3">
       <div class="color-container-large borger-primary"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#44831E</p>
-        <p class="code-color-variable">$color-primary</p>
+        <span class="code-color-hex">#44831E</span>
+        <span class="code-color-variable">$color-primary</span>
       </div>
     </div>
     <!-- borger primary END -->
@@ -27,8 +27,8 @@ Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på prim
     <div class="col-md-3">
       <div class="color-container-large borger-medium"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#3C5C22</p>
-        <p class="code-color-variable">$color-primary-medium</p>
+        <span class="code-color-hex">#3C5C22</span>
+        <span class="code-color-variable">$color-primary-medium</span>
       </div>
     </div>
     <!-- borger medium END -->
@@ -36,8 +36,8 @@ Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på prim
     <div class="col-md-3">
       <div class="color-container-large borger-dark"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#233614</p>
-        <p class="code-color-variable">$color-primary-dark</p>
+        <span class="code-color-hex">#233614</span>
+        <span class="code-color-variable">$color-primary-dark</span>
       </div>
     </div>
     <!-- borger dark END -->
@@ -54,8 +54,8 @@ Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærkn
     <div class="col-md-3">
       <div class="color-container-large virk-primary"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#0059B3</p>
-        <p class="code-color-variable">$color-primary</p>
+        <span class="code-color-hex">#0059B3</span>
+        <span class="code-color-variable">$color-primary</span>
       </div>
     </div>
     <!--virk primary END -->
@@ -63,8 +63,8 @@ Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærkn
     <div class="col-md-3">
       <div class="color-container-large virk-medium"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#004993</p>
-        <p class="code-color-variable">$color-primary-medium </p>
+        <span class="code-color-hex">#004993</span>
+        <span class="code-color-variable">$color-primary-medium </span>
       </div>
     </div>
     <!--virk medium END -->
@@ -72,8 +72,8 @@ Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærkn
     <div class="col-md-3">
       <div class="color-container-large virk-dark"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#003972</p>
-        <p class="code-color-variable">$color-primary-dark </p>
+        <span class="code-color-hex">#003972</span>
+        <span class="code-color-variable">$color-primary-dark </span>
       </div>
     </div>
     <!--virk dark END -->
