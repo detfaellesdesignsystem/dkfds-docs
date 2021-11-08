@@ -33,7 +33,7 @@ For at gøre datavisualiseringen endnu mere tilgængelig, kan en tabel med data 
 {:.h3 .mb-6}
 ### Andelen af ture på cykel i Danmark
 <figure class="w-percent-md-50 mb-6">
-    <img src="/assets/img/design/datavisualisering/piechart-transport.png" class="w-percent-100" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
+    <img src="/assets/img/design/datavisualisering/piechart-transport.svg" class="w-percent-100" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
     <figcaption>
         <table class="table table--borderless table--compact mt-4" id="bicycle-trips-denmark-table">
             <thead>
@@ -81,7 +81,7 @@ For at gøre datavisualiseringen mere tilgængelig, kan beskrivende tekst med en
 {:.h4}
 ### Cyklede kilometer fordelt på alder
 <figure>
-    <img src="/assets/img/design/datavisualisering/bar-chart.png" alt="Eksempel på søjlediagram, der viser cyklede kilometer pr. person pr. dag fordelt på alder" class="w-percent-md-70">
+    <img src="/assets/img/design/datavisualisering/bar-chart.svg" alt="Eksempel på søjlediagram, der viser cyklede kilometer pr. person pr. dag fordelt på alder" class="w-percent-md-70">
 <figcaption><p>Unge mennesker fra 18-34 år cykler mest. Ældre mennesker fra 67-84 år og børn fra 6-9 cykler mindst.</p><p>Kilde: Transportvaneundersøgelsen 2016-2019</p></figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ For at gøre datavisualiseringen mere tilgængelig, kan beskrivende tekst med en
 {:.h4}
 ### Mest cykling på ture under 5km (2014-17)
 <figure class="mb-6">
-    <img src="/assets/img/design/datavisualisering/graph-biking.png" class="w-percent-md-70" alt="Eksempel på graf der viser fordelingen af cykelture og cykelkm efter turens længde." />
+    <img src="/assets/img/design/datavisualisering/graph-biking.svg" class="w-percent-md-70" alt="Eksempel på graf der viser fordelingen af cykelture og cykelkm efter turens længde." />
     <figcaption>
         <p>Figuren viser fordelingen af cykelture og cykelkm efter turens længde. Det ses, at lige over halvdelen af alle cykelture er under 2km, men at disse ture kun udgør 23% af cykeltrafikarbejdet.</p>
         <p>Kilde: DTU</p>

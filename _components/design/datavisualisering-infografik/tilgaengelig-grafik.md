@@ -29,7 +29,7 @@ Målet er at nå ud til alle målgrupper ved at kommunikere med det klareste spr
 Datavisualiseringer og infografik bør kunne aflæses i sort/hvid for sikre at brugere med synshandicap som fx farveblindhed, også kan aflæse det.
 
 <figure class="mb-6">
-    <img src="/assets/img/design/datavisualisering/graph-figures.png" class="w-percent-70" alt="Eksempel på graf med forskellige figurer frem for farver" />
+    <img src="/assets/img/design/datavisualisering/graph-figures.svg" class="w-percent-70" alt="Eksempel på graf med forskellige figurer frem for farver" />
     <figcaption>
         <p>Grafen gør brug af både farver og figurer for at differentiere mellem værdierne, således at brugere med synshandicap som farveblindhed også kan læse grafen.</p>
         <p>Segment 1 vises med en stiplet linje med en rombe for hvert punkt. Segment 2 vises med en solid linje sammen med en stjerne for hvert punkt.</p>
@@ -39,13 +39,13 @@ Datavisualiseringer og infografik bør kunne aflæses i sort/hvid for sikre at b
 <section class="do-dont-container row" aria-label="Eksempel på korrekt søjlediagram">
     <div class="col-12 col-md-6">
         <h3 class="h4">Sådan (do)</h3>
-        <div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-do.png" alt="Eksempel på korrekt visning af søjlediagram med farver og mønstre" /></div>
+        <div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-do.svg" alt="Eksempel på korrekt visning af søjlediagram med farver og mønstre" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Betydning bør ikke kommunikeres af farve alene. Brug også mønstre, teksturer, figurer, linjetyper og andet for fx at adskille de forskellige udsnit (søjler, linjer, dele, mv.).</p>
     </div>
     <div class="col-12 col-md-6">
         <h3 class="h4">Ikke sådan (don't)</h3>
-        <div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-dont.png" alt="Eksempel på ukorrekt visning af søjlediagram med manglende farver og mønstre" /></div>
+        <div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-dont.svg" alt="Eksempel på ukorrekt visning af søjlediagram med manglende farver og mønstre" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong>Undgå farvekombinationerne grøn-rød, grøn-blå, grøn-brun, grøn-sort, grøn-grå, blå-grå, lys grøn-gul, blå-lilla.</p>
     </div>
@@ -66,7 +66,7 @@ Sørg for at etiketterne (de beskrivende tekster) til de forskellige elementer/s
 {:.h5}
 ### Mest cykling på ture under 5km (2014-17)
 <figure class="mb-6">
-    <img src="/assets/img/design/datavisualisering/graph-biking.png" class="w-percent-md-70" alt="Eksempel på graf der viser fordelingen af cykelture og cykelkm efter turens længde." />
+    <img src="/assets/img/design/datavisualisering/graph-biking.svg" class="w-percent-md-70" alt="Eksempel på graf der viser fordelingen af cykelture og cykelkm efter turens længde." />
     <figcaption>
         <p>Figuren viser fordelingen af cykelture og cykelkm efter turens længde. Det ses, at lige over halvdelen af alle cykelture er under 2km, men at disse ture kun udgør 23% af cykeltrafikarbejdet.</p>
         <p>Kilde: DTU</p>

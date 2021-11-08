@@ -29,7 +29,7 @@ Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram
 <a href="/design/datavisualisering-infografik/datavisualisering/">Læs mere om datavisualisering</a>
 
 <figure>
-    <img src="/assets/img/design/datavisualisering/piechart.png" class="w-percent-50" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
+    <img src="/assets/img/design/datavisualisering/piechart.svg" class="w-percent-50" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
     <figcaption>
         <p>46% melder at de har haft en meget god oplevelse og 18% melder at de har haft en god oplevelse. 15% en dårlig oplevelse, 17% meget dårlig og 4% ved ikke.</p>
     </figcaption>
