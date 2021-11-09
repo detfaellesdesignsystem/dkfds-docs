@@ -169,33 +169,33 @@
     </div>
 
     <h1>Hvis AES har spørgsmål til sagen</h1>
-    <div class="form-group">
-        <label class="form-label " for="id-company-contact">
-            Virksomhedens kontaktperson
-        </label>
-
-        <input class="form-input input-width-m" required
-            id="id-company-contact" value="Svend Pedersen"
-            name="Input til virksomhedens kontaktperson" type="text"
-            readonly>
-    </div>
-    <button
-        class="button button-secondary mt-4 d-print-none"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add"></use></svg>
-        Vælg en anden kontaktperson</button>
-    <div class="mt-5">
+    <form method="get" action="/pages/eksempler/AES-erstatningssag/aes-3/"
+        novalidate>
         <div class="form-group">
-            <label class="form-label " for="id-company-number">
-                Telefonnummer til kontaktperson
+            <label class="form-label " for="id-company-contact">
+                Virksomhedens kontaktperson
             </label>
 
-            <input class="form-input input-width-xs" required
-                id="id-company-number" value=""
-                name="Telefonnummer til kontaktperson" type="text">
+            <input class="form-input input-width-m" required
+                id="id-company-contact" value="Svend Pedersen"
+                name="Input til virksomhedens kontaktperson" type="text"
+                readonly>
         </div>
-    </div>
+        <button
+            class="button button-secondary mt-4 d-print-none"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add"></use></svg>
+            Vælg en anden kontaktperson</button>
+        <div class="mt-5">
+            <div class="form-group">
+                <label class="form-label " for="id-company-number">
+                    Telefonnummer
+                </label>
 
-    <form method="get"
-        action="/pages/eksempler/AES-erstatningssag/aes-32/">
+                <input class="form-input input-width-s" required
+                    id="id-company-number" value=""
+                    name="telefonnummer-kontaktperson" type="text">
+            </div>
+        </div>
+
         <button
             class="button button-primary mt-8 d-print-none">Næste</button>
     </form>
