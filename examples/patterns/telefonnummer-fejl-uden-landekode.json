@@ -1,6 +1,6 @@
 {
     "textinput_example":{
-      "id": "input-phonenumber",
+      "id": "input-phonenumber-no-countrycode",
       "type": "tel",
       "label": "Telefonnummer",
       "name": "input-phonenumber",
