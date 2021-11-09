@@ -9,7 +9,7 @@
         {% endif %}
     </div>
     {% endif %}
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
+    <div class="component-example {% if include.component contains 'grid-' %}{% else %}px-4{% endif %} py-4" aria-label="Eksempel">
         {% if include.component contains "tringuide" %}
         <div class="row mx-0">
         <aside class="sidebar-col">
@@ -31,7 +31,7 @@
     <div class="details-text">
         {% capture _syntax %}
         {% highlight html %}
-        {% include code/components/telefonnummer.html %}
+        {% include code/components/{{ include.component }}.html %}
         {% endhighlight %}
         {% endcapture %}{{ _syntax | markdownify }}
     </div>

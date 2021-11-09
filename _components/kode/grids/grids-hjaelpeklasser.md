@@ -13,19 +13,19 @@ Brug designsystemets flexbox hjælpeklasser til at ændre på placeringen af kol
 
 #### Vertikal alignment
 
-{% include code/preview-code-tab.html component="grid--util-flex-vertical-align-01" %}
+{% include code/preview-box-details.html component="grid--util-flex-vertical-align-01" title="Eksempel af grid med vertikal alignment af kolonner" link=false detaillabel="for eksempel af grid med vertikal alignment af kolonner" %}
 <br />
-{% include code/preview-code-tab.html component="grid--util-flex-vertical-align-02" %}
+{% include code/preview-box-details.html component="grid--util-flex-vertical-align-02" title="Eksempel af grid med vertikal alignment af kolonner på samme række" link=false detaillabel="for eksempel af grid med vertikal alignment af kolonner på samme række" %}
 
 #### Horisontal alignment
 
-{% include code/preview-code-tab.html component="grid--util-flex-horizontal-align" %}
+{% include code/preview-box-details.html component="grid--util-flex-horizontal-align" title="Eksempel af grid med horisontal alignment af kolonner" link=false detaillabel="for eksempel af grid med horisontal alignment af kolonner" %}
 
 ### Hjælpeklasser: Margin
 
 Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx `mr-auto`.
 
-{% include code/preview-code-tab.html component="grid--util-margin" %}
+{% include code/preview-box-details.html component="grid--util-margin" title="Eksempel af grid med indryk af kolonner" link=false detaillabel="for eksempel af grid med indryk af kolonner" %}
 
 ### Hjælpeklasser: Bredde
 

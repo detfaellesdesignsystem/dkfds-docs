@@ -1762,12 +1762,9 @@
 
 <p>Gør brug af <a href="/kode/utilities/#margin-og-padding">hjælpeklasser for at sætte padding</a> i rækkerne.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid-bordered" id="tabbutton-component-grid-bordered" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-bordered " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid-bordered" aria-labelledby="tabbutton-component-grid-bordered">
+<div class="component-preview  component-preview-grid-bordered" aria-label="Eksempel af grid med streg mellem rækkerne">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row row-bordered no-gutters py-3">
@@ -1791,13 +1788,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid-bordered" id="tabbutton-code-grid-bordered" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid-bordered" aria-labelledby="tabbutton-code-grid-bordered">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med streg mellem rækkerne</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row row-bordered no-gutters py-3&quot;&gt;
@@ -1822,8 +1818,9 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
+
 
 
       </section>

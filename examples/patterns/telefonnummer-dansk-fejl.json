@@ -2,7 +2,7 @@
     "textinput_example":{
       "id": "input-phonenumber-danish-e",
       "type": "tel",
-      "label": "Telefonnummer",
+      "label": "Dansk telefonnummer",
       "name": "input-phonenumber",
       "required": true,
       "error": "Indtast et dansk telefonnummer, fx 12345678 eller +45 12 34 56 78",

@@ -2117,12 +2117,9 @@
 
 <h3>HTML Struktur</h3>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid-simple" id="tabbutton-component-grid-simple" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-simple " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid-simple" aria-labelledby="tabbutton-component-grid-simple">
+<div class="component-preview  component-preview-grid-simple" aria-label="Eksempel af grid">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row">
@@ -2138,13 +2135,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid-simple" id="tabbutton-code-grid-simple" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid-simple" aria-labelledby="tabbutton-code-grid-simple">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid </span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -2161,8 +2157,8 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <section class="styleguide-child-container content" id="section-/kode/grids/grids-indstillinger">
   <h2 id="indstillinger">Indstillinger</h2>
@@ -2229,12 +2225,9 @@
 
 <p>Brug klassen <code>col</code> eller <code>col-*</code> uden responsivt prefix (fx md).</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--all-breakpoints" id="tabbutton-component-grid--all-breakpoints" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-all-breakpoints " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--all-breakpoints" aria-labelledby="tabbutton-component-grid--all-breakpoints">
+<div class="component-preview  component-preview-grid-all-breakpoints" aria-label="Eksempel af grid med alle breakpoints">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row mb-2">
@@ -2299,13 +2292,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--all-breakpoints" id="tabbutton-code-grid--all-breakpoints" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--all-breakpoints" aria-labelledby="tabbutton-code-grid--all-breakpoints">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med alle breakpoints</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row mb-2&quot;&gt;
@@ -2371,19 +2363,16 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h3>Fra stablede kolonner til kolonner på række</h3>
 
 <p>Ved at bruge fx <code>col-md-*</code> klassen vil kolonnerne til at begynde med være placeret lodret over hinanden på mobile enheder. Fra medium-skærme vil de være vist vandret på en række.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--stacked-horizontal" id="tabbutton-component-grid--stacked-horizontal" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-stacked-horizontal " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--stacked-horizontal" aria-labelledby="tabbutton-component-grid--stacked-horizontal">
+<div class="component-preview  component-preview-grid-stacked-horizontal" aria-label="Eksempel af grid med stablede kolonner til kolonner på række">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row mb-2">
@@ -2407,13 +2396,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--stacked-horizontal" id="tabbutton-code-grid--stacked-horizontal" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--stacked-horizontal" aria-labelledby="tabbutton-code-grid--stacked-horizontal">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med stablede kolonner til kolonner på række</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row mb-2&quot;&gt;
@@ -2438,19 +2426,16 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h3>Brug af forskellige kolonne-klasser</h3>
 
 <p>Du kan mikse forskellige kolonne-klasser.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--mix-match" id="tabbutton-component-grid--mix-match" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-mix-match " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--mix-match" aria-labelledby="tabbutton-component-grid--mix-match">
+<div class="component-preview  component-preview-grid-mix-match" aria-label="Eksempel af grid med forskellige kolonne-klasser">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container w-percent-100">
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
@@ -2487,13 +2472,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--mix-match" id="tabbutton-code-grid--mix-match" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--mix-match" aria-labelledby="tabbutton-code-grid--mix-match">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med forskellige kolonne-klasser</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container w-percent-100&quot;&gt;
     &lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
@@ -2531,19 +2515,16 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h3>Kolonneombrydning</h3>
 
 <p>Hvis der er mere end 12 kolonner på en række, vil ekstra kolonner blive vist på en ny linje under de første 12.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--column-wrapping" id="tabbutton-component-grid--column-wrapping" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-column-wrapping " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--column-wrapping" aria-labelledby="tabbutton-component-grid--column-wrapping">
+<div class="component-preview  component-preview-grid-column-wrapping" aria-label="Eksempel af grid med kolonneombrydning">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row">
@@ -2561,13 +2542,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--column-wrapping" id="tabbutton-code-grid--column-wrapping" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--column-wrapping" aria-labelledby="tabbutton-code-grid--column-wrapping">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med kolonneombrydning</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -2586,19 +2566,16 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h3>Indlejre</h3>
 
 <p>Du kan indlejre flere rækker med tilhørende kolonner i hinanden.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--nesting" id="tabbutton-component-grid--nesting" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-nesting " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--nesting" aria-labelledby="tabbutton-component-grid--nesting">
+<div class="component-preview  component-preview-grid-nesting" aria-label="Eksempel af grid med indlejring af rækker med kolonner">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row">
@@ -2618,13 +2595,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--nesting" id="tabbutton-code-grid--nesting" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--nesting" aria-labelledby="tabbutton-code-grid--nesting">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med indlejring af rækker med kolonner</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -2645,8 +2621,9 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
+
 
 </section>
 
@@ -2660,12 +2637,9 @@
 
 <p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--one-column-width" id="tabbutton-component-grid--one-column-width" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-one-column-width " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--one-column-width" aria-labelledby="tabbutton-component-grid--one-column-width">
+<div class="component-preview  component-preview-grid-one-column-width" aria-label="Eksempel af grid med fast bredde på én kolonne">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row">
@@ -2692,13 +2666,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--one-column-width" id="tabbutton-code-grid--one-column-width" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--one-column-width" aria-labelledby="tabbutton-code-grid--one-column-width">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med fast bredde på én kolonne</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -2726,29 +2699,26 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h3>Individuel kolonnebredde efter indhold</h3>
 
 <p>Ved at brug <code>col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--variable-width-content" id="tabbutton-component-grid--variable-width-content" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-variable-width-content " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--variable-width-content" aria-labelledby="tabbutton-component-grid--variable-width-content">
+<div class="component-preview  component-preview-grid-one-column-width" aria-label="Eksempel af grid med indholdsbestemt bredde på kolonner">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
-    <div class="row justify-content-md-center mb-2">
-        <div class="col col-md-2">
+    <div class="row">
+        <div class="col">
             <p>1 of 3</p>
         </div>
-        <div class="col-md-auto">
-            <p>Kolonne med variabel bredde</p>
+        <div class="col-6">
+            <p>2 of 3 (col-6)</p>
         </div>
-        <div class="col col-md-2">
+        <div class="col">
             <p>3 of 3</p>
         </div>
     </div>
@@ -2756,32 +2726,31 @@
         <div class="col">
             <p>1 of 3</p>
         </div>
-        <div class="col-md-auto">
-            <p>Kolonne med variabel bredde</p>
+        <div class="col-5">
+            <p>2 of 3 (col-5)</p>
         </div>
-        <div class="col col-md-2">
+        <div class="col">
             <p>3 of 3</p>
         </div>
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--variable-width-content" id="tabbutton-code-grid--variable-width-content" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--variable-width-content" aria-labelledby="tabbutton-code-grid--variable-width-content">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med indholdsbestemt bredde på kolonner</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row justify-content-md-center mb-2&quot;&gt;
-        &lt;div class=&quot;col col-md-2&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
             &lt;p&gt;1 of 3&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col-md-auto&quot;&gt;
-            &lt;p&gt;Kolonne med variabel bredde&lt;/p&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;p&gt;2 of 3 (col-6)&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col col-md-2&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
             &lt;p&gt;3 of 3&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -2789,18 +2758,19 @@
         &lt;div class=&quot;col&quot;&gt;
             &lt;p&gt;1 of 3&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col-md-auto&quot;&gt;
-            &lt;p&gt;Kolonne med variabel bredde&lt;/p&gt;
+        &lt;div class=&quot;col-5&quot;&gt;
+            &lt;p&gt;2 of 3 (col-5)&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;col col-md-2&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
             &lt;p&gt;3 of 3&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
+
 
 </section>
 
@@ -2812,12 +2782,9 @@
 
 <p>Brug klasserne <code>.order-</code> til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx <code>.order-1.order-md-2</code>).</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--ordering-visual" id="tabbutton-component-grid--ordering-visual" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-ordering-visual " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--ordering-visual" aria-labelledby="tabbutton-component-grid--ordering-visual">
+<div class="component-preview  component-preview-grid-ordering-visual" aria-label="Eksempel af grid med ændring af rækkefølgen på kolonner">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row">
@@ -2833,13 +2800,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--ordering-visual" id="tabbutton-code-grid--ordering-visual" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--ordering-visual" aria-labelledby="tabbutton-code-grid--ordering-visual">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med ændring af rækkefølgen på kolonner</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -2856,19 +2822,16 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h3>Forskyd kolonner</h3>
 
 <p>Brug klasserne <code>.offset-</code> til at forskyde kolonner, fx forskyder <code>.offset-md-4</code> 4 kolonner til højre.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--offsets" id="tabbutton-component-grid--offsets" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-offsets " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--offsets" aria-labelledby="tabbutton-component-grid--offsets">
+<div class="component-preview  component-preview-grid-offsets" aria-label="Eksempel af grid med forskydning af kolonner">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row mb-2 grid-example-measure-row">
@@ -2932,13 +2895,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--offsets" id="tabbutton-code-grid--offsets" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--offsets" aria-labelledby="tabbutton-code-grid--offsets">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med forskydning af kolonner</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row mb-2 grid-example-measure-row&quot;&gt;
@@ -3003,17 +2965,14 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <p>Du kan nulstille forskydning ved fx at bruge klassen <code>offset-md-0</code>.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--offsets-reset" id="tabbutton-component-grid--offsets-reset" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-offsets-reset " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--offsets-reset" aria-labelledby="tabbutton-component-grid--offsets-reset">
+<div class="component-preview  component-preview-grid-offsets-reset" aria-label="Eksempel af grid med nulstilling af forskydning af kolonne">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row mb-2">
@@ -3035,13 +2994,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--offsets-reset" id="tabbutton-code-grid--offsets-reset" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--offsets-reset" aria-labelledby="tabbutton-code-grid--offsets-reset">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med nulstilling af forskydning af kolonne</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row mb-2&quot;&gt;
@@ -3064,8 +3022,9 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
+
 
 </section>
 
@@ -3075,12 +3034,9 @@
   
   <p>Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen <code>no-gutters</code> til rækken.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--no-gutters" id="tabbutton-component-grid--no-gutters" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-no-gutters " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--no-gutters" aria-labelledby="tabbutton-component-grid--no-gutters">
+<div class="component-preview  component-preview-grid-no-gutters" aria-label="Eksempel af grid uden afstand mellem kolonner">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row no-gutters">
@@ -3093,13 +3049,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--no-gutters" id="tabbutton-code-grid--no-gutters" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--no-gutters" aria-labelledby="tabbutton-code-grid--no-gutters">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid uden afstand mellem kolonner</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row no-gutters&quot;&gt;
@@ -3113,8 +3068,9 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
+
 
 </section>
 
@@ -3126,12 +3082,9 @@
 
 <p>Gør brug af <a href="/kode/utilities/#margin-og-padding">hjælpeklasser for at sætte padding</a> i rækkerne.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid-bordered" id="tabbutton-component-grid-bordered" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-bordered " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid-bordered" aria-labelledby="tabbutton-component-grid-bordered">
+<div class="component-preview  component-preview-grid-bordered" aria-label="Eksempel af grid med streg mellem rækkerne">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row row-bordered no-gutters py-3">
@@ -3155,13 +3108,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid-bordered" id="tabbutton-code-grid-bordered" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid-bordered" aria-labelledby="tabbutton-code-grid-bordered">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med streg mellem rækkerne</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row row-bordered no-gutters py-3&quot;&gt;
@@ -3186,8 +3138,9 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
+
 
 </section>
 
@@ -3203,12 +3156,9 @@
 
 <h4>Vertikal alignment</h4>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--util-flex-vertical-align-01" id="tabbutton-component-grid--util-flex-vertical-align-01" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-util-flex-vertical-align-01 " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--util-flex-vertical-align-01" aria-labelledby="tabbutton-component-grid--util-flex-vertical-align-01">
+<div class="component-preview  component-preview-grid-util-flex-vertical-align-01" aria-label="Eksempel af grid med vertikal alignment af kolonner">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row align-items-start mb-2 grid-example-row-flex">
@@ -3246,13 +3196,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--util-flex-vertical-align-01" id="tabbutton-code-grid--util-flex-vertical-align-01" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--util-flex-vertical-align-01" aria-labelledby="tabbutton-code-grid--util-flex-vertical-align-01">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med vertikal alignment af kolonner</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row align-items-start mb-2 grid-example-row-flex&quot;&gt;
@@ -3291,15 +3240,14 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
-<p><br /></p>
-<div class="tabnav" role="tablist">
+    </div>
+</details>
 
-    <button aria-controls="tabpanel-component-grid--util-flex-vertical-align-02" id="tabbutton-component-grid--util-flex-vertical-align-02" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-util-flex-vertical-align-02 " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--util-flex-vertical-align-02" aria-labelledby="tabbutton-component-grid--util-flex-vertical-align-02">
+<p><br /></p>
+
+<div class="component-preview  component-preview-grid-util-flex-vertical-align-02" aria-label="Eksempel af grid med vertikal alignment af kolonner på samme række">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row mb-2 grid-example-row-flex">
@@ -3315,13 +3263,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--util-flex-vertical-align-02" id="tabbutton-code-grid--util-flex-vertical-align-02" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--util-flex-vertical-align-02" aria-labelledby="tabbutton-code-grid--util-flex-vertical-align-02">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med vertikal alignment af kolonner på samme række</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row mb-2 grid-example-row-flex&quot;&gt;
@@ -3338,17 +3285,14 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h4>Horisontal alignment</h4>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--util-flex-horizontal-align" id="tabbutton-component-grid--util-flex-horizontal-align" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-util-flex-horizontal-align " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--util-flex-horizontal-align" aria-labelledby="tabbutton-component-grid--util-flex-horizontal-align">
+<div class="component-preview  component-preview-grid-util-flex-horizontal-align" aria-label="Eksempel af grid med horisontal alignment af kolonner">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row justify-content-start mb-2">
@@ -3393,13 +3337,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--util-flex-horizontal-align" id="tabbutton-code-grid--util-flex-horizontal-align" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--util-flex-horizontal-align" aria-labelledby="tabbutton-code-grid--util-flex-horizontal-align">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med horisontal alignment af kolonner</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row justify-content-start mb-2&quot;&gt;
@@ -3445,19 +3388,16 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h3>Hjælpeklasser: Margin</h3>
 
 <p>Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx <code>mr-auto</code>.</p>
 
-<div class="tabnav" role="tablist">
-
-    <button aria-controls="tabpanel-component-grid--util-margin" id="tabbutton-component-grid--util-margin" class="tabnav-item" role="tab" aria-selected="false">
-        <span>Visning</span>
-    </button>
-    <section class="tabnav-panel px-0 component-preview component-preview-grid-util-margin " aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-grid--util-margin" aria-labelledby="tabbutton-component-grid--util-margin">
+<div class="component-preview  component-preview-grid-util-margin" aria-label="Eksempel af grid med indryk af kolonner">
+    
+    <div class="component-example  py-4" aria-label="Eksempel">
         
         <div class="container">
     <div class="row mb-2">
@@ -3486,13 +3426,12 @@
     </div>
 </div>
         
-    </section>
-
-    <button aria-controls="tabpanel-code-grid--util-margin" id="tabbutton-code-grid--util-margin" class="tabnav-item" role="tab" aria-selected="true">
-        <span>HTML</span>
-    </button>
-
-    <section class="tabnav-panel p-0" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-code-grid--util-margin" aria-labelledby="tabbutton-code-grid--util-margin">
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med indryk af kolonner</span></summary>
+    <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row mb-2&quot;&gt;
@@ -3522,8 +3461,8 @@
 &lt;/div&gt;</code></pre></figure>
 
 
-    </section>
-</div>
+    </div>
+</details>
 
 <h3>Hjælpeklasser: Bredde</h3>
 

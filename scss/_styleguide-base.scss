@@ -531,7 +531,7 @@ header #search-form-mobile{
   border-left: border(20);
 }
 
-*:not(.tabnav-panel):not(.details-text) > figure.highlight{
+*:not(.tabnav-panel):not(.details-text):not(.component-code) > figure.highlight{
   border: border(20);
 }
 

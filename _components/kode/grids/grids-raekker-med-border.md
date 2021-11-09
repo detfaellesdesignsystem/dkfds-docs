@@ -9,4 +9,4 @@ Tilføj klasserne `no-gutters` or `row-bordered` til row-elementet. Kan bruges i
 
 Gør brug af <a href="/kode/utilities/#margin-og-padding">hjælpeklasser for at sætte padding</a> i rækkerne.
 
-{% include code/preview-code-tab.html component="grid-bordered" %}
+{% include code/preview-box-details.html component="grid-bordered" title="Eksempel af grid med streg mellem rækkerne" link=false detaillabel="for eksempel af grid med streg mellem rækkerne" %}

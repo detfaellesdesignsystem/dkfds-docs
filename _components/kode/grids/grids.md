@@ -33,9 +33,7 @@ Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-
 ## Installation
 
 ### HTML Struktur
-
-{% include code/preview-code-tab.html component="grid-simple" classes="px-4" %}
-
+{% include code/preview-box-details.html component="grid-simple" title="Eksempel af grid" link=false detaillabel="for eksempel af grid " %}
 
 {% include child-components.html parent='Grid' %}
 
