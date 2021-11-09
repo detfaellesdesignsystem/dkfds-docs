@@ -42,8 +42,6 @@ subnav:
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
     <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-1/?r=/eksempler/selvbetjeningsloesninger/%23boernetilskud" title="Børnetilskud, 3. side: Hvilke børn søger du tilskud til?" class="screenshot d-block"></a>
   </div>
-</div>
-<div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
     <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-2/?r=/eksempler/selvbetjeningsloesninger/%23boernetilskud" title="Børnetilskud, 4. side: Hvornår blev du eller bliver du enlig?" class="screenshot d-block"></a>
   </div>
