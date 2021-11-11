@@ -600,10 +600,10 @@ var CookiePrompter = (function () {
 
         log('  creating and inserting html');
         var html = [];
-        html.push('<div class="cookie-message" id="cookiePrompt" role="complementary" aria-labelledby="cookieMessageTitle">');
+        html.push('<div class="cookie-message" id="cookiePrompt" role="complementary" aria-labelledby="cookie-message-title1" aria-describedby="cookie-message-content1">');
         html.push('<div class="cookie-text">');
-        html.push('<h2 class="h3 mt-0 mb-3" id="cookieMessageTitle">' + config.textHeader + '</h2>');
-        html.push('<p class="mt-0">' + config.textblock1);
+        html.push('<div class="h3 mt-0 mb-3" id="cookie-message-title1">' + config.textHeader + '</div>');
+        html.push('<p class="mt-0" id="cookie-message-content1">' + config.textblock1);
         html.push(config.textblock2);
 
         if (config.readMoreUrl && document.location.hash !== '#cookieprompt') {
