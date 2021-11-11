@@ -80,7 +80,7 @@ function toastExample(){
     if(button !== null){
         let toastContainer = document.createElement('div');
         toastContainer.classList.add('toast-container');
-        document.body.appendChild(toastContainer);
+        document.getElementById('main-content').prepend(toastContainer);
 
         button.addEventListener('click', function(){
             let type = ["info", "warning", "error", "success"];

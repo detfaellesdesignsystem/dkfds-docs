@@ -9,11 +9,18 @@
     {% include code/components/base-svg.html %}
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
     <main class="container page-container" id="main-content">
-    <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
-    {{ content }}
-    {% if page.title contains "tringuide" or page.title contains "Tringuide"  %}
-    </aside>
-    </div>
+    {% if page.title contains "Notification" %}
+      <div class="toast-container">
+        {{ content }}
+      </div>
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+    {% else %}
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+      {{ content }}
+      {% if page.title contains "tringuide" or page.title contains "Tringuide"  %}
+      </aside>
+      </div>
+      {% endif %}
     {% endif %}
     </main>
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>

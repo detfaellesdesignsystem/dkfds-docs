@@ -9,9 +9,10 @@
     {% include code/components/base-svg.html %}
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
     {% if page.title contains "Notification" %}
-    <div class="toast-container">
-    {{ content }}
-    </div>
+    <main class="container page-container" id="main-content">
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
+      {{ content }}
+    </main>
     {% else %}
     
     {% if page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher"  %}
@@ -22,7 +23,7 @@
 
     {{ content }}
     {% endif %}
-    {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" %}
+    {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" or  page.title contains "Notification" %}
     <main class="container page-container" id="main-content">
     <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
     </main>
