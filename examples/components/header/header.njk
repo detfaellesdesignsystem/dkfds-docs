@@ -1,8 +1,7 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-{% from "components/modal/modal.njk" import modal as modal %}
 
 <header class="header">
-
+  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
     <!-- Start: Portal header -->
     <div class="portal-header">
         <div class="container portal-header-inner">
@@ -39,9 +38,7 @@
                 <p>
                     Support: 12 34 56 78
                     <span class="d-print-none"> ·
-                        <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">
-                            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt
-                        </a>
+                        <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a>
                     </span>
                 </p>
             </div>

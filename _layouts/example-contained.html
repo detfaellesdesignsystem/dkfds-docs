@@ -7,6 +7,7 @@
   </head>
   <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
+    <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     <main class="container page-container" id="main-content">
     {% if page.title contains "Notification" %}
       <div class="toast-container">
