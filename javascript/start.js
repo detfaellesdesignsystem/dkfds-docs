@@ -53,7 +53,7 @@ function demoReturnToPreviousPage(){
         for(let l = 0; l < links.length; l++){
             let link = links[l]
             let href = link.getAttribute('href');
-            if(href !== "" && href !== "#" && href.indexOf("javascript") === -1 && href.length > 5 && window.location.href.indexOf('?r=/eksempler/selvbetjeningsloesninger/') !== -1){
+            if(href !== "" && !href.startsWith("#") && href.indexOf("javascript") === -1 && href.length > 5 && window.location.href.indexOf('?r=/eksempler/selvbetjeningsloesninger/') !== -1){
                 link.setAttribute('href', href + queryString);
             }
         }
