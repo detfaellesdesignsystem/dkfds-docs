@@ -78,9 +78,11 @@ function demoReturnToPreviousPage(){
 function toastExample(){
     let button = document.getElementById('toast-example-button');
     if(button !== null){
-        let toastContainer = document.createElement('div');
-        toastContainer.classList.add('toast-container');
-        document.getElementById('main-content').prepend(toastContainer);
+        if(document.getElementsByClassName('toast-container').length === 0){
+            let toastContainer = document.createElement('div');
+            toastContainer.classList.add('toast-container');
+            document.getElementById('main-content').prepend(toastContainer);
+        }
 
         button.addEventListener('click', function(){
             let type = ["info", "warning", "error", "success"];

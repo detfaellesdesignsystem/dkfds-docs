@@ -10,6 +10,7 @@
     {% if page.title contains "Notification" %}
     <main class="container page-container" id="main-content">
       <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+      <div class="toast-container"></div>
       <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
       {{ content }}
     </main>
