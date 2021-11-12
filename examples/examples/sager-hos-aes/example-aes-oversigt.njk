@@ -6,9 +6,9 @@
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer-three-columns.njk" import footer_columns as footer_columns %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-<a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 {% block header %}
   <header class="header">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 

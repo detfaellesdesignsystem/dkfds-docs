@@ -7,17 +7,18 @@
   </head>
   <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
-    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
     {% if page.title contains "Notification" %}
     <main class="container page-container" id="main-content">
-      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
+      <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
       {{ content }}
     </main>
     {% else %}
     
     {% if page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher"  %}
     <main class="container page-container" id="main-content">
-    <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
+      <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
     </main>
     {% endif %}
 
@@ -25,7 +26,8 @@
     {% endif %}
     {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" or  page.title contains "Notification" %}
     <main class="container page-container" id="main-content">
-    <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
+      <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
     </main>
     {% endunless %}
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
