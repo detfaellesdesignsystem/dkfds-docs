@@ -59,8 +59,8 @@ tags:
 - 7.5
 anchor: true
 subnav:
-- text: Version x.x.x
-  href: "#version-x-x-x"
+- text: Version 8.0.0
+  href: "#version-8-0-0"
 - text: Version 7.5.0
   href: "#version-7-5-0"
 - text: Version 7.4.0
@@ -107,8 +107,8 @@ Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagu
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
 
-{:#version-x-x-x .mb-0}
-## Version X.X.X
+{:#version-8-0-0 .mb-0}
+## Version 8.0.0
 <div><span class="small-text mt-0 d-block">xx-xx-2021</span></div>
 
 - Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikatorer/">trinindikator</a>
@@ -120,6 +120,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Rettet fejl i <a href="/komponenter/datovaelger/">datovælgeren</a> der gjorde, at den første dag i måneden ikke blev vist, når den var en søndag.
 - Tillader nu dato i <a href="/komponenter/datovaelger/">datovælgeren</a> fra start.
 - Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
+- Fikset fejl med placering af <a href="/komponenter/trinindikatorer/#ekstra-information">ekstra information i sidenavigation</a>.
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
