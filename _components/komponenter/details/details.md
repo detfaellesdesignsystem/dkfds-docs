@@ -24,7 +24,7 @@ Se også skjul og vis komponenterne med <a href="/komponenter/radiobutton/#skjul
 
 ## Anvendes til
 
-Anvendes til at vise yderligere information.
+Anvendes til at vise yderligere information, som brugeren i de fleste tilfælde ikke vil have brug for, og som ikke bør dominerer brugergrænsefladen. 
 
 {:.h3}
 
@@ -40,11 +40,9 @@ Anvendes ikke til meningsbærende indhold som fx sidens brødtekst.
 
 Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje, at fordele det ud over flere sider i stedet.
 
-Skjul ikke meningsbærende indhold med denne funktionalitet.
-
 Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.
 
-Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Hold strukturen simpel.
+Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Undgå generelt for mange niveauer i navigationen.
 
 {:.h3 #eksempelloesninger}
 
