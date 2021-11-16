@@ -44,7 +44,7 @@ Skjul ikke meningsbærende indhold med denne funktionalitet.
 
 Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.
 
-Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Holdt strukturen simpel.
+Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Hold strukturen simpel.
 
 {:.h3 #eksempelloesninger}
 
