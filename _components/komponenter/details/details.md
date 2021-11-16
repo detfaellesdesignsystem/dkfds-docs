@@ -24,7 +24,7 @@ Se også skjul og vis komponenterne med <a href="/komponenter/radiobutton/#skjul
 
 ## Anvendes til
 
-Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule yderligere information, som brugeren i de fleste tilfælde ikke vil have brug for, og som ikke bør dominere brugergrænsefladen. 
+Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule yderligere information, som brugeren i de fleste tilfælde ikke vil have brug for, og som derfor ikke bør dominere brugergrænsefladen. 
 
 {:.h3}
 
@@ -32,7 +32,7 @@ Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule yderlig
 
 Anvendes ikke som erstatning for accordions.
 
-Anvendes ikke til meningsbærende indhold som fx sidens brødtekst.
+Anvendes ikke til meningsbærende indhold som de fleste brugere behøver at læse såsom sidens brødtekst.
 
 {:.h3}
 
