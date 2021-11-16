@@ -24,7 +24,7 @@ Se også skjul og vis komponenterne med <a href="/komponenter/radiobutton/#skjul
 
 ## Anvendes til
 
-Anvendes til at vise yderligere information, som brugeren i de fleste tilfælde ikke vil have brug for, og som ikke bør dominerer brugergrænsefladen. 
+Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule yderligere information, som brugeren i de fleste tilfælde ikke vil have brug for, og som ikke bør dominere brugergrænsefladen. 
 
 {:.h3}
 
