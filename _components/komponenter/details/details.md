@@ -32,13 +32,13 @@ Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule yderlig
 
 Anvendes ikke som erstatning for accordions.
 
-Anvendes ikke til meningsbærende indhold som de fleste brugere behøver at læse såsom sidens brødtekst.
+Anvendes ikke til indhold, som de fleste brugere behøver at læse såsom sidens brødtekst.
 
 {:.h3}
 
 ## Vejledning
 
-Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje, at fordele det ud over flere sider i stedet.
+Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje at fordele det ud over flere sider i stedet.
 
 Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.
 
