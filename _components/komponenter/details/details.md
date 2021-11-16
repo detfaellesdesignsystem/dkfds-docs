@@ -42,7 +42,7 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 
 Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) og tilgængelighedskrav.
 
-Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Undgå generelt for mange niveauer i navigationen.
+Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Undgå generelt for mange interaktionsniveauer.
 
 {:.h3 #eksempelloesninger}
 
