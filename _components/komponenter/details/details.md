@@ -18,13 +18,12 @@ componentTitle: Eksempel på skjul og vis af indhold
 componentCode: "/kode/komponenter/detaljer/"
 
 ---
-Se også skjul og vis komponenterne med <a href="/komponenter/radiobutton/#skjult-indhold-collapse">radioknap</a> og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a>.
 
 {:.h3 #retningslinjer}
 
 ## Anvendes til
 
-Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule information, som de fleste brugere ikke vil have brug for, og som derfor ikke bør dominere brugergrænsefladen. 
+Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule information, som de fleste brugere ikke vil have brug for, og som derfor ikke bør dominere brugergrænsefladen.
 
 {:.h3}
 
@@ -33,6 +32,10 @@ Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule informa
 Anvendes ikke som erstatning for accordions.
 
 Anvendes ikke til indhold, som de fleste brugere behøver at læse såsom sidens brødtekst.
+
+Anvendes ikke til at skjule navigationselementer såsom accordions, faneblade eller flere detaljer.
+
+Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul og vis-komponenterne med <a href="/komponenter/radiobutton/#skjult-indhold-collapse">radioknap</a> og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a>.
 
 {:.h3}
 
