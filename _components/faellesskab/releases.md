@@ -116,11 +116,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
 - Tilføjet mulighed for <a href="/kode/grid/#rækker-med-border">border på rækkerne i et grid</a> til brug som erstatning for tabel, når der ingen horisontal header er.
-- Fikset fejl med placering af årstal i <a href="/komponenter/datovaelger/">datovælger</a> i mobilvisning.
-- Rettet fejl i <a href="/komponenter/datovaelger/">datovælgeren</a> der gjorde, at den første dag i måneden ikke blev vist, når den var en søndag.
-- Tillader nu dato i <a href="/komponenter/datovaelger/">datovælgeren</a> fra start.
 - Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
 - Fikset fejl med placering af <a href="/komponenter/trinindikatorer/#ekstra-information">ekstra information i sidenavigation</a>.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
