@@ -53,8 +53,6 @@ subnav:
   href: "#datavisualiseringsfarver"
 - text: Tekst på baggrundsfarver
   href: "#tekst-på-baggrundsfarver"
-- text: Tekst på datavisualiseringsfarver
-  href: "#tekst-på-datavisualiseringsfarver"
 ---
 
 {% include child-sections.html parent='colors' %}
