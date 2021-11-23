@@ -14,7 +14,7 @@ tags:
 - inline svg
 ---
 
-<details class="details js-details">
+<details class="details">
     <summary class="details-summary"><span class="details-summary-text">Se her hvis det ikon du leder efter ikke er på listen nedenfor</span></summary>
     <div class="details-text">
         <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
@@ -40,7 +40,7 @@ tags:
     </div>
 </div>
 </form>
-<details class="details js-details  mt-4">
+<details class="details mt-4">
     <summary class="details-summary"><span class="details-summary-text" id="checkbox-list-label">Filtrer på kategori</span></summary>
     <div class="details-text">
         <fieldset aria-labelledby="checkbox-list-label">

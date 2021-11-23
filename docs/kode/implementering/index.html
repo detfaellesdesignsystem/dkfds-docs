@@ -2036,25 +2036,26 @@ DKFDS.init({&#39;scope&#39;: $header});</code></pre></figure>
 
 <p class="mb-2">Tema eksempel – borger.dk (scss):</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">// These variables overwrite the default values, giving the style the borger.dk theme
-$color-primary:               #44831E;
-$color-primary-medium:        #3C5C22;
-$color-primary-dark:          #233614;
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">// These variables overwrite the default values
+$theme-colors: (
+    &quot;virk&quot;: (
+        100: #0059B3,
+        200: #004993,
+        300: #003972
+    )
+);
 
-.header {
-    .portal-header{
-        background-color: #f1f1f1;
-        .logo{
-            background-image: url($image-path + &#39;/logo-borgerdk.svg&#39;);
-            height: 4.8rem;
-        }
-    }
-}
+$theme-color-primary: &#39;virk-100&#39;;
+$theme-color-primary-dark: &#39;virk-200&#39;;
+$theme-color-primary-darker: &#39;virk-300&#39;;
+$header-portal-logo: &#39;logo_virk.svg&#39;;
+$header-portal-logo-height: 4.8rem;
+$header-portal-logo-width: 7.8rem;
+$header-portal-compact-logo-width: 3.8rem;
 
-$font-path:         &#39;~dkfds/src/fonts/IBMPlexSans/&#39;;
-$image-path:        &#39;~dkfds/src/img&#39;;
-$site-image-path:   &#39;~dkfds/src/img&#39;;
-$icons-folder-path: &#39;~dkfds/src/img/svg-icons&#39;;
+$font-path:         &#39;/assets/fonts/IBMPlexSans/&#39;;
+$image-path:        &#39;/assets/img&#39;;
+$icons-folder-path: &#39;/assets/svg&#39;;
 @import &#39;~dkfds/src/stylesheets/dkfds&#39;;</code></pre></figure>
 
 <h2>Browserspecifik styling tilføjes i projektet</h2>

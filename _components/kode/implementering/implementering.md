@@ -104,25 +104,26 @@ Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de t
 <p class="mb-2">Tema eksempel – borger.dk (scss):</p>
 
 {% highlight scss %}
-// These variables overwrite the default values, giving the style the borger.dk theme
-$color-primary:               #44831E;
-$color-primary-medium:        #3C5C22;
-$color-primary-dark:          #233614;
+// These variables overwrite the default values
+$theme-colors: (
+    "virk": (
+        100: #0059B3,
+        200: #004993,
+        300: #003972
+    )
+);
 
-.header {
-    .portal-header{
-        background-color: #f1f1f1;
-        .logo{
-            background-image: url($image-path + '/logo-borgerdk.svg');
-            height: 4.8rem;
-        }
-    }
-}
+$theme-color-primary: 'virk-100';
+$theme-color-primary-dark: 'virk-200';
+$theme-color-primary-darker: 'virk-300';
+$header-portal-logo: 'logo_virk.svg';
+$header-portal-logo-height: 4.8rem;
+$header-portal-logo-width: 7.8rem;
+$header-portal-compact-logo-width: 3.8rem;
 
-$font-path:         '~dkfds/src/fonts/IBMPlexSans/';
-$image-path:        '~dkfds/src/img';
-$site-image-path:   '~dkfds/src/img';
-$icons-folder-path: '~dkfds/src/img/svg-icons';
+$font-path:         '/assets/fonts/IBMPlexSans/';
+$image-path:        '/assets/img';
+$icons-folder-path: '/assets/svg';
 @import '~dkfds/src/stylesheets/dkfds';
 {% endhighlight %}
 
