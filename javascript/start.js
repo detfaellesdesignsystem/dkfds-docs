@@ -1,27 +1,14 @@
 'use strict';
 import $ from "jquery";
 var Cookies = require('./vendor/js-cookie');
-const TestFDS = require('./test');
 import {CookiePrompter, PiwikProTracker, CookieMgr } from "./vendor/CookiePrompter";
 import * as DKFDS from "dkfds";
 
 require('./sidenav');
-require('./newsletter');
-require('./spinner');
-require('./examples');
 document.addEventListener("DOMContentLoaded", function() {
-    languageSwitcher();
     
     DKFDS.init();
-    
-    demoReturnToPreviousPage();
-
-    let path = window.location.pathname.split('/');
-    if(path.indexOf('mastertest') !== -1){
-        new TestFDS(DKFDS);
-    }
-    toastExample();
-    
+   
     let icons = document.getElementsByClassName('icon-box');
     if(icons.length !== 0){
         for(let i = 0; i < icons.length; i++){
@@ -42,159 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }, false);
     }
 });
-
-/**
- * If demo page with demo footer handle link to previous page if defined
- */
-function demoReturnToPreviousPage(){
-    if(document.getElementById('btn-demo-return') !== null){
-        const queryString = window.location.search;
-        let links = document.getElementsByTagName('a');
-        for(let l = 0; l < links.length; l++){
-            let link = links[l]
-            let href = link.getAttribute('href');
-            if(href !== "" && !href.startsWith("#") && href.indexOf("javascript") === -1 && href.length > 5 && window.location.href.indexOf('?r=/eksempler/selvbetjeningsloesninger/') !== -1){
-                link.setAttribute('href', href + queryString);
-            }
-        }
-        
-        let forms = document.getElementsByTagName('form');
-        for(let f = 0; f < forms.length; f++){
-            let form = forms[f]
-            let action = form.getAttribute('action');
-            if(action !== null && (action !== "" && action !== "#" && action.length > 5 && window.location.href.indexOf('?r=/eksempler/selvbetjeningsloesninger/') !== -1)){
-                form.setAttribute('action', action + queryString);
-            }
-        }
-        
-        const urlParams = new URLSearchParams(queryString);
-        const returnUrl = urlParams.get('r');
-        if (returnUrl !== null){
-            document.getElementById('btn-demo-return').setAttribute('href', returnUrl.replace('%23', '#'));
-        }
-    }
-}
-
-function toastExample(){
-    let button = document.getElementById('toast-example-button');
-    if(button !== null){
-        if(document.getElementsByClassName('toast-container').length === 0){
-            let toastContainer = document.createElement('div');
-            toastContainer.classList.add('toast-container');
-            document.getElementById('main-content').prepend(toastContainer);
-        }
-
-        button.addEventListener('click', function(){
-            let type = ["info", "warning", "error", "success"];
-            let headings = ["Du har fået en besked", "Dette er en advarsel", "Der opstod en fejl", "Din ansøgning er afsendt"];
-            let randomType = Math.floor(Math.random() * type.length);
-            let toastContainerEl = document.getElementsByClassName('toast-container')[0];
-            let toastEl = document.createElement('div');
-            toastEl.classList.add('toast', 'toast-'+type[randomType], 'hide');
-            toastEl.setAttribute('role', "status");
-            let icon = document.createElement('div');
-            icon.classList.add('toast-icon');
-            toastEl.appendChild(icon);
-            let message = document.createElement('div');
-            message.classList.add('toast-message');
-            let heading = document.createElement('p');
-            heading.classList.add('bold');
-            heading.innerText = headings[randomType];
-            message.appendChild(heading);
-            let close = document.createElement('button');
-            close.classList.add('toast-close');
-            close.innerText = "Luk";
-            message.appendChild(close);
-            let content = document.createElement('p');
-            content.innerText = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.";
-            message.appendChild(content);
-            toastEl.appendChild(message);
-            toastContainerEl.appendChild(toastEl);
-            requestAnimationFrame(showtoast);
-        });
-    }
-}
-
-function showtoast(){
-    new DKFDS.Toast(document.getElementsByClassName('toast-container')[0].getElementsByClassName('hide')[0]).show();
-}
-
-
-function languageSwitcher(){
-
-    if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher') || document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')){
-        let queryString = window.location.search;
-        if(queryString !== "" && queryString.indexOf("lang=") !== -1){
-            let lang = queryString.replace('?lang=', '');
-            if(lang !== "da") {
-                let element = document.getElementsByClassName('language-switcher')[0];
-                let ul = element.getElementsByTagName('ul')[0];
-                let first = ul.querySelector('li:first-of-type a');
-                first.removeChild(first.getElementsByTagName('svg')[0]);
-                ul.querySelector('li:first-of-type a').removeAttribute('aria-label');
-                let chosenLang = ul.querySelector('a[lang="' + lang + '"]');
-                var svgns = "http://www.w3.org/2000/svg";
-                var xlinkns = "http://www.w3.org/1999/xlink";
-                let svg = document.createElementNS(svgns, 'svg');
-                svg.classList.add('icon-svg');
-                svg.setAttribute('focusable', 'false');
-                svg.setAttribute('aria-hidden', 'true');
-                let use = document.createElementNS(svgns, "use");
-                use.setAttributeNS(xlinkns, "href", "#done");
-                svg.appendChild(use);
-                chosenLang.prepend(svg);
-                ul.prepend(chosenLang.parentNode);
-
-                switch (lang) {
-                    case "en-GB":
-                        ul.setAttribute('aria-label', "Choose language");
-                        chosenLang.setAttribute('aria-label', "Current language: English");
-
-                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
-                            ul.querySelector('a[lang="en-GB"]').removeAttribute('data-tooltip');
-                            ul.querySelector('a[lang="en-GB"]').classList.remove('js-tooltip');
-                            ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
-                            ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Danish");
-                            ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "English");
-                            ul.querySelector('a[lang="de"]').setAttribute('data-tooltip', "German");
-                            ul.querySelector('a[lang="pl"]').setAttribute('data-tooltip', "Polish");
-                        }
-
-                        break;
-                    case "de":
-                        ul.setAttribute('aria-label', "Sprache wählen");
-                        chosenLang.setAttribute('aria-label', "Aktuelle Sprache: Deutsch");
-
-                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
-                            ul.querySelector('a[lang="de"]').removeAttribute('data-tooltip');
-                            ul.querySelector('a[lang="de"]').classList.remove('js-tooltip');
-                            ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
-                            ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Dänisch");
-                            ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "Englisch");
-                            ul.querySelector('a[lang="pl"]').setAttribute('data-tooltip', "Polieren");
-                        }
-
-                        break;
-                    case "pl":
-                        ul.setAttribute('aria-label', "Wybierz język");
-                        chosenLang.setAttribute('aria-label', "Aktualny język: polski");
-                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')){
-                            ul.querySelector('a[lang="pl"]').removeAttribute('data-tooltip');
-                            ul.querySelector('a[lang="pl"]').classList.remove('js-tooltip');
-                            ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
-                            ul.querySelector('a[lang="da"]').setAttribute('data-tooltip', "Duński");
-                            ul.querySelector('a[lang="en-GB"]').setAttribute('data-tooltip', "Angielski");
-                            ul.querySelector('a[lang="de"]').setAttribute('data-tooltip', "Niemiecki");
-                        }
-
-                        break;
-                }
-            }
-
-        }
-    }
-}
-
 
 $(document).ready(function () {
     if (document.getElementsByClassName('page-cookie-message').length === 0) {

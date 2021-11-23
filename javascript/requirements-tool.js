@@ -1,9 +1,7 @@
 'use strict';
+import {Modal, Navigation, Tooltip} from 'dkfds';
+
 let toolIsProcessing = false;
-
-import * as DKFDS from 'dkfds';
-
-
 let questionnaire = {};
 const storageKey = "reqTool";
 const root = window.location.origin + "/krav-vaerktoej";
@@ -80,20 +78,20 @@ krav[13] = {"title": "Krav til løsninger, der skal på borger.dk og Virk", "kra
 
 document.addEventListener("DOMContentLoaded", function(){
 
-    new DKFDS.Navigation();
+    new Navigation();
 
-    let contactModal = new DKFDS.Modal(document.getElementById('modal-contact'));
+    let contactModal = new Modal(document.getElementById('modal-contact'));
     contactModal.init();
 
     let printModalElement = document.getElementById('modal-print');
     if(printModalElement !== null) {
-        let printModal = new DKFDS.Modal(printModalElement);
+        let printModal = new Modal(printModalElement);
         printModal.init();
     }
 
     const jsSelectorTooltip = document.getElementsByClassName('js-tooltip');
     for(let c = 0; c < jsSelectorTooltip.length; c++){
-        new DKFDS.Tooltip(jsSelectorTooltip[ c ]);
+        new Tooltip(jsSelectorTooltip[ c ]);
     }
 
     if(document.getElementsByTagName('body')[0].classList.contains('page-resultat')) {
@@ -184,12 +182,12 @@ let printResultHandler = function(){
                 document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.add('d-print-none');
                 document.getElementById('print-title').classList.add('d-print-block');
-                new DKFDS.Modal(document.getElementById('modal-print')).hide();
+                new Modal(document.getElementById('modal-print')).hide();
             } else{
                 document.getElementById('print-title').setAttribute('data-print', "true");
                 document.getElementById('result-container').getElementsByTagName('h1')[0].classList.remove('d-print-none');
                 document.getElementById('print-title').classList.remove('d-print-block');
-                new DKFDS.Modal(document.getElementById('modal-print')).hide();
+                new Modal(document.getElementById('modal-print')).hide();
             }
         });
     }

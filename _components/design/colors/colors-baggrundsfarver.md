@@ -28,7 +28,7 @@ order: 60
     <div class="col-md-3">
       <div class="color-container-large bg-modal"></div>
       <div class="color-text-container">
-        <span class="code-color-hex">rgba(0, 0, 0, 0.75)</span>
+        <span class="code-color-hex">rgba(0, 0, 0, 0.5)</span>
         <span class="code-color-variable">$background-modal</span>
       </div>
     </div>

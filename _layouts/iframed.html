@@ -14,6 +14,17 @@
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/requirements-tool~styleguide.js"></script>
+    {% if page.url contains "spinner" %}
+    <script src="{{ site.baseurl }}/assets/js/spinner.js"></script>
+    {% endif %}
+    {% if page.url contains "table" %
+    <script src="{{ site.baseurl }}/assets/js/table.js"></script>
+    {% endif %}
+    {% if page.url contains "notifikation" %}
+    <script src="{{ site.baseurl }}/assets/js/toast.js"></script>
+    {% endif %}
+    {% if page.url contains "language-switcher" %}
+    <script src="{{ site.baseurl }}/assets/js/languageswitcher.js"></script>
+    {% endif %}
   </body>
 </html>
