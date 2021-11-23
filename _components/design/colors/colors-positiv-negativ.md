@@ -4,25 +4,14 @@ title: Positiv og negativ farver
 parent: colors
 order: 70
 ---
-<div class="color-row-container">
-  <div class="row color-row">
-    <!-- color-positive START -->
-    <div class="col-md-3">
-      <div class="color-container-large background-positive"></div>
-      <div class="color-text-container">
-        <span class="code-color-hex">#358000</span>
-        <span class="code-color-variable">positive</span>
-      </div>
-    </div>
-    <!-- color-positive END -->
-    <!-- color-negative START -->
-    <div class="col-md-3">
-      <div class="color-container-large background-negative"></div>
-      <div class="color-text-container">
-        <span class="code-color-hex">#CC0000</span>
-        <span class="code-color-variable">negative</span>
-      </div>
-    </div>
-    <!-- color-negative END -->
-  </div>
-</div>
+
+<ul class="color-scale mb-8">
+  <li>
+    <div class="color background-positive"></div>
+    <div class="color-text-label"><span class="color-hex">#358000</span><span>positive</span></div>
+  </li>
+  <li>
+    <div class="color background-negative"></div>
+    <div class="color-text-label"><span class="color-hex">#CC0000</span><span>negative</span></div>
+  </li>
+</ul>

@@ -507,7 +507,7 @@
   
   .color-text-container {
     margin-bottom: $spacing-medium;
-    margin-top: $spacing-small;
+    margin-top: units(3);
     p {
       margin: 0px;
     }
@@ -597,20 +597,14 @@
   
   //HEX colors for color page
   .code-color-hex {
-    font-family: monospace;
-    font-size: 1.6rem;
-    line-height: $base-line-height;
-    font-weight: $font-weight-bold;
+    @include small-text();
     display: block;
+    margin-bottom: units(2);
   }
   
   //Variables for color page
   .code-color-variable {
-    font-family: monospace;
-    font-size: $small-text-font-size;
-    font-weight: $font-weight-normal;
-    line-height: $small-text-line-height;
-    letter-spacing: $small-text-letter-spacing;
+    @include small-text();
     display: block;
   }
   
@@ -1195,14 +1189,11 @@ Color scale
     }
     .color-text-label{
       @include small-text();
-      @include media-breakpoint-up(md) { 
-        text-align: center;
-      }
     }
     @include media-breakpoint-up(md) { 
       & + li{
         .color{
-          border-left-color: transparent;
+          border-left: 0;
         }
       }
     }
