@@ -6,622 +6,642 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://designsystem.dk/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/eksempler/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/krav/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/farver/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/typografi/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/borders/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/ikoner/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/logoer/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/layout/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/designressourcer/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://designsystem.dk/design/designtjek/</loc>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://designsystem.dk/design/tilgaengelighed/</loc>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/accordions/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/badges/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/beskeder/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/broedkrumme/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/cards/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/cookiemeddelelse/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/dato-felt/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/datovaelger/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/detaljer/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/drop-down/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/faneblad/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/fejlmeddelelser/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/fejlopsummering/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/felter/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/footers/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/formular/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/funktionslink/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/headers/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/knapper/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/modal/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/notifikation/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/overflowmenu/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/radioknap/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/sidenav/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/skip-link/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/spinner/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/sprogvaegler/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/search/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/tilbage-link/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/tables/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/tags/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/textarea/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/tjekboks/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://designsystem.dk/komponenter/toggle/</loc>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/tooltip/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/trinindikatorer/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/komponenter/fil-upload/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/eksempler/selvbetjeningsloesninger/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/eksempler/opsummeringsside/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/eksempler/kvittering/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/implementering/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://designsystem.dk/kode/browserunderstoettelse/</loc>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/grid/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/typografi/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/ikoner/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/utilities/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/eksempler-implementering/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/print/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/plugins/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/anbefalinger-vaerktoejer/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/krav/borgerdk-virk/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/krav/om-kravene/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://designsystem.dk/krav/designtjek/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://designsystem.dk/krav/tilgaengelighed/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/samarbejdsforum/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/nyhedsmail/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/kontakt-support/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/roadmap/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/releases/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/privatlivspolitik-cookies/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/krav-vaerktoej/anvendes-af-virksomheder/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/typografi/fonte/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/typografi/overskrifter/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/typografi/felt-tabel-overskrifter/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/typografi/tekst/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/typografi/links/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/typografi/lister/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/ikoner/ikoner-og-deres-betydning/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/design/layout/grid/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/accordions/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/badges/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/beskeder/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/broedkrumme/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/cards/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/cookiemeddelelse/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/dato-felt/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/datovaelger/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/detaljer/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/drop-down/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/faneblad/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/fejlmeddelelser/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/fejlopsummering/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/felter/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/footers/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/formular/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/funktionslink/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/headers/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/knapper/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/modal/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/notifikation/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/overflowmenu/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/radioknap/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/sidenav/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/skip-link/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/spinner/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/sprogvaegler/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/search/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/tilbage-link/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/tables/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/tags/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/textarea/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/tjekboks/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://designsystem.dk/kode/komponenter/toggle/</loc>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/tooltip/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/trinindikatorer/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/komponenter/fil-upload/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/typografi/overskrifter/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/typografi/tekst/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/typografi/links/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/kode/typografi/lister/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/samarbejdsforum/governance/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/nyhedsmail/afmeld/</loc>
-  <lastmod>2021-04-22T11:34:47+00:00</lastmod>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://designsystem.dk/design/ikoner/ikoner-og-deres-betydning/?s=sorter</loc>
+  <lastmod>2021-11-25T11:08:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
