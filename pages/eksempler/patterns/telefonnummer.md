@@ -26,7 +26,7 @@ lead: Måden at håndtere angivelsen af telefonnummer på bør afhænge af selvb
 
 Når langt de fleste brugere forventes at have danske telefonnumre, vises et almindeligt telefonnummerfelt. Feltet skal være langt nok til, at eventuelle brugere med internationale telefonnumre kan angive disse med landekode. 
 
-Hvis et udenlandsk nummer er skrevet uden landekode, eller hvis formatet ikke svarer til et dansk nummer, vises en fejlmeddelse.
+Hvis et udenlandsk nummer er skrevet uden landekode, eller hvis formatet ikke svarer til et dansk nummer, vises en fejlmeddelelse.
 
 {% include code/preview-box-details.html component="telefonnummer-fejl-uden-landekode" title="Eksempel på angivelse af telefonnummer med udenlandsk nummer uden landekode" link=false detaillabel="for eksempel på angivelse af telefonnummer med udenlandsk nummer uden landekode" %}
 
@@ -37,7 +37,7 @@ Hvis et udenlandsk nummer er skrevet uden landekode, eller hvis formatet ikke sv
 
 Når mange brugere forventes at have internationale telefonnumre vises en hjælpetekst.
 
-Hvis et udenlandsk nummer skrives uden landekode, eller hvis formatet ikke svarer til et dansk nummer, vises en fejlmeddelse.
+Hvis et udenlandsk nummer skrives uden landekode, eller hvis formatet ikke svarer til et dansk nummer, vises en fejlmeddelelse.
 
 {% include code/preview-box-details.html component="telefonnummer-udenlandsk-ugyldigt" title="Eksempel på angivelse af ugyldigt telefonnummer" link=false detaillabel="for eksempel på angivelse af gyldigt telefonnummer" %}
 
