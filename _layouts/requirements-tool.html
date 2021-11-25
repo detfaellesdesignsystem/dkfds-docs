@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<head>
-  {% include head.html %}
-</head>
-<body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
-<a href="#main-content" class="skipnav">Gå til sidens indhold</a>
-{% include code/components/base-svg.html %}
-{% include requirements-tool/header.html backlink=page.backlink %}
+<html lang="da">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+  <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+  {% include code/components/base-svg.html %}
+  {% include requirements-tool/header.html backlink=page.backlink %}
 
-<main class="page-container container pt-4 pt-lg-0" id="main-content">
-  {% if page.backlink == true %}
-  <div><a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a></div>
-  {% endif %}
-  <div class="alert alert-error mt-0 mb-8 d-none" id="error-summary" role="alert">
-    <div class="alert-body">
-      <p class="alert-heading">Der er problemer</p>
-      <ul class="alert-text nobullet-list">
-      </ul>
+  <main class="page-container container pt-4 pt-lg-0" id="main-content">
+    {% if page.backlink == true %}
+    <div><a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a></div>
+    {% endif %}
+    <div class="alert alert-error mt-0 mb-8 d-none" id="error-summary" role="alert">
+      <div class="alert-body">
+        <p class="alert-heading">Der er problemer</p>
+        <ul class="alert-text nobullet-list">
+        </ul>
+      </div>
     </div>
-  </div>
-  {{ content }}
-</main>
+    {{ content }}
+  </main>
 
-{% include requirements-tool/footer.html %}
-<script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-<script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
-</body>
+  {% include requirements-tool/footer.html %}
+  <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
+  </body>
 </html>
