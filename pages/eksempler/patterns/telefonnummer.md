@@ -14,7 +14,7 @@ lead: Måden at håndtere angivelsen af telefonnummer på bør afhænge af selvb
 
 - Accepter altid internationale telefonnumre, når dette er teknisk muligt.
 - Danske numre skal kunne angives både med eller uden landekode.
-- Accepter altid enhver gængs formattering af telefonnumre såsom med eller uden mellemrum, bindestreger eller parenteser samt landekoder skrevet med enten + eller 00 (fx +45 eller 0045).
+- Accepter altid enhver gængs formatering af telefonnumre såsom med eller uden mellemrum, bindestreger eller parenteser samt landekoder skrevet med enten + eller 00 (fx +45 eller 0045).
 - Hvis der kun kan angives et mobilnummer, fx hvis der skal sendes sms-beskeder til det angivne nummer, brug da “Mobilnummer” som feltets label.
 - Brug ikke num pad til telefonnummerfeltet på mobil grundet problemer med tilgængelighed (Laakso, 2020)
 - Angiv altid autocomplete attributten i input feltet, så brugerne har mulighed for automatisk udfyldning af feltet (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link">WCAG 2.1 Success Criterion 1.3.5 Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)
