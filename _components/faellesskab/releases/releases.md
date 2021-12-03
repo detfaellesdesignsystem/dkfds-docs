@@ -40,8 +40,11 @@ tags:
 - 7.4.0
 - 7.5.0
 - 7.5.2
+- 7.5.3
 anchor: true
 subnav:
+- text: Version 7.5.3
+  href: "#version-7-5-3"
 - text: Version 7.5.2
   href: "#version-7-5-2"
 - text: Version 7.5.1
