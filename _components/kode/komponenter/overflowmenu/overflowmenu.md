@@ -62,7 +62,7 @@ Elementet som skal collapses/expandes skal have et matchende id `id="overflow1"`
 Collapse komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.Dropdown(document.getElementById('OVERFLOW-BUTTON-ID'));
+new DKFDS.Dropdown(document.getElementById('OVERFLOW-BUTTON-ID')).init();
 {% endhighlight %}
 
 #### Events
@@ -84,7 +84,7 @@ new DKFDS.Dropdown(document.getElementById('OVERFLOW-BUTTON-ID'));
 Overflow menu med sorteringsfunktion kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.DropdownSort(document.getElementById('OVERFLOW-BUTTON-ID'));
+new DKFDS.DropdownSort(document.getElementById('OVERFLOW-MENU-CONTAINER')).init();
 {% endhighlight %}
 
 #### Events

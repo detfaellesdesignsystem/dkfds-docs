@@ -1,0 +1,20 @@
+{
+    "radiobutton_kort_ja": {
+        "id": "kort-ja",
+        "name": "kontakt",
+        "value": "ja",
+        "disabled": false,
+        "checked": false,
+        "text": "Ja",
+        "large": true
+    },
+    "radiobutton_kort_nej": {
+        "id": "kort-nej",
+        "name": "kontakt",
+        "value": "nej",
+        "disabled": false,
+        "checked": false,
+        "text": "Nej",
+        "large": true
+    }
+}

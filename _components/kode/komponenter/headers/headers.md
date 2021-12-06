@@ -71,5 +71,5 @@ Hvis man laver en header med lidt indhold, er det anbefalet at man indstiller `$
 Mobil menuen kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight js %}
-new DKFDS.Navigation();
+new DKFDS.Navigation().init();
 {% endhighlight %}

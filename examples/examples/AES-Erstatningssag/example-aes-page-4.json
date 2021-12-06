@@ -44,5 +44,57 @@
       {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
       {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
     ]
+  },
+  "sagen_omhandler": [{
+    "id": "radio-case1",
+    "name": "sagen-omhandler",
+    "value": "Ulykkesforsikring (ASL §81)",
+    "disabled": false,
+    "checked": false,
+    "text": "Ulykkesforsikring (ASL §81)",
+    "large": true
+  },{
+    "id": "radio-case2",
+    "name": "sagen-omhandler",
+    "value": "Erstatningsansvar (ASL §10)",
+    "disabled": false,
+    "checked": false,
+    "text": "Erstatningsansvar (ASL §10)",
+    "large": true
+  },{
+    "id": "radio-case3",
+    "name": "sagen-omhandler",
+    "value": "Patientskade (ASL §10)",
+    "disabled": false,
+    "checked": false,
+    "text": "Patientskade (ASL §10)",
+    "large": true
   }
+  ],
+  "aes_skal_vurdere": [{
+    "id": "radio-aes1",
+    "name": "aes_skal_vurdere",
+    "value": "Mén (6.220 kr.)",
+    "disabled": false,
+    "checked": false,
+    "text": "Mén (6.220 kr.)",
+    "large": true
+  },{
+    "id": "radio-aes2",
+    "name": "aes_skal_vurdere",
+    "value": "Tab af erhvervsevne (22.280 kr.)",
+    "disabled": false,
+    "checked": false,
+    "text": "Tab af erhvervsevne (22.280 kr.)",
+    "large": true
+  },{
+    "id": "radio-aes3",
+    "name": "aes_skal_vurdere",
+    "value": "Mén + tab af erhvervsevne (22.280 kr.)",
+    "disabled": false,
+    "checked": false,
+    "text": "Mén + tab af erhvervsevne (22.280 kr.)",
+    "large": true
+  }
+  ]
 }

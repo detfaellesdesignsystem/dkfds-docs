@@ -42,7 +42,7 @@ Husk at tilpasse koden, således at ikke kun indholdet passer, men også attribu
 Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID'));
+new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID')).init();
 {% endhighlight %}
 
 Attributten `aria-hidden` tilføjes automatisk i JavaScript, hvis man har undladt at tilføje attributten.

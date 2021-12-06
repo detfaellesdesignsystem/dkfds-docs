@@ -1,0 +1,36 @@
+{
+    "radiobutton1_data": {
+        "id": "id-radio1",
+        "name": "radio-group1",
+        "value": "1",
+        "disabled": false,
+        "checked": true,
+        "text": "Radioknap viser indhold",
+        "class": "",
+        "focus": false,
+        "large": true,
+        "attr": "",
+        "inputClasses": "", 
+        "inputAttrs": "data-controls=\"#collapse-radio1\" data-expanded=\"false\"",
+        "formClasses": "", 
+        "srOnly": "Udfyld informationer herunder",
+        "helptext": ""   
+    },
+    "radiobutton2_data": {
+        "id": "id-radio2",
+        "name": "radio-group1",
+        "value": "2",
+        "disabled": false,
+        "checked": false,
+        "text": "Radioknap viser andet indhold",
+        "class": "",
+        "focus": false,
+        "large": true,
+        "attr": "",
+        "inputClasses": "", 
+        "inputAttrs": "data-controls=\"#collapse-radio2\" data-expanded=\"false\"",
+        "formClasses": "", 
+        "srOnly": "Udfyld informationer herunder",
+        "helptext": ""   
+    }
+}

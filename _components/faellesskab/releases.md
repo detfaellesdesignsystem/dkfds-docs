@@ -122,7 +122,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Erstattet brug af / ved dividering i scss med math.div
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer
-- Fjernet `user-select:none` så teksten i <a href="/komponenter/knapper/">knapper</a> kan markeres og læses op af hjælpeværktøjer.
+- Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a>
+- Ændret attributter for <a href="/kode/komponenter/radioknap/#skjult-indhold">radioknap med skjult indhold</a>
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0

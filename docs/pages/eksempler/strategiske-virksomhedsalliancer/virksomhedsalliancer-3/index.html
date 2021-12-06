@@ -412,14 +412,15 @@
                     <ul class="nobullet-list">
                         <li>
 
-                            <input id="id-state-yes" type="radio"
-                                name="minimis" value="Ja"
-                                class="form-radio  radio-large "
-                                data-js-target="#collapse-radio"
-                                aria-expanded="false" />
-                            <label for="id-state-yes"
-                                id="form-label-id-state-yes"
-                                class="radio-large">Ja </label>
+                            <input id="radio-state-ja" type="radio"
+                                name="radio-state" value="1"
+                                class="form-radio radio-large "
+                                data-controls="#collapse-radio"
+                                data-expanded="false" />
+                            <label for="radio-state-ja"
+                                id="form-label-radio-state-ja" class="">Ja
+                                <span class="sr-only">Udfyld informationer
+                                    herunder</span></label>
 
                             <div id="collapse-radio" aria-hidden="true"
                                 class="radio-content radio-content-large">
@@ -546,18 +547,17 @@
                         </li>
                         <li>
 
-                            <input id="id-state-no" type="radio"
-                                name="minimis" value="Nej"
-                                class="form-radio  radio-large " />
-                            <label for="id-state-no"
-                                id="form-label-id-state-no"
-                                class="radio-large">Nej </label>
+                            <input id="radio-state-nej" type="radio"
+                                name="radio-state" value="0"
+                                class="form-radio radio-large " />
+                            <label for="radio-state-nej"
+                                id="form-label-radio-state-nej"
+                                class="">Nej </label>
 
                         </li>
                     </ul>
                 </fieldset>
             </div>
-
             <form method="get"
                 action="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/">
                 <button

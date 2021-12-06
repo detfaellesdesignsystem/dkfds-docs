@@ -43,26 +43,21 @@
       {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
     ]
   },
-  "aktindsigtradio1":{
-    "id": "id-aktindsigt-ja",
+  "soegt_om_aktindsigt": [{
+    "id": "radio-aktindsigt-ja",
     "name": "aktindsigt",
-    "value": "Ja",
+    "value": "1",
     "disabled": false,
     "checked": false,
     "text": "Ja",
-    "class": "",
-    "focus": false,
     "large": true
-  },
-  "aktindsigtradio2":{
-    "id": "id-aktindsigt-nej",
+  },{
+    "id": "radio-aktindsigt-nej",
     "name": "aktindsigt",
-    "value": "Nej",
+    "value": "0",
     "disabled": false,
     "checked": false,
     "text": "Nej",
-    "class": "",
-    "focus": false,
     "large": true
-  }
+  }]
 }

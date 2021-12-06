@@ -40,5 +40,25 @@
       {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
       {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
     ]
+  },
+  "radio_state_ja": {
+    "id": "radio-state-ja",
+    "name": "radio-state",
+    "value": "1",
+    "disabled": false,
+    "checked": false,
+    "text": "Ja",
+    "large": true,
+    "inputAttrs": "data-controls=\"#collapse-radio\" data-expanded=\"false\"",
+    "srOnly": "Udfyld informationer herunder"
+  },
+  "radio_state_nej": {
+    "id": "radio-state-nej",
+    "name": "radio-state",
+    "value": "0",
+    "disabled": false,
+    "checked": false,
+    "text": "Nej",
+    "large": true
   }
 }

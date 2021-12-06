@@ -1,0 +1,38 @@
+{
+    "radiobutton_telefon": {
+        "id": "kontakt-telefon",
+        "name": "kontakt",
+        "value": "telefon",
+        "disabled": false,
+        "checked": false,
+        "text": "Pr. telefon",
+        "large": true
+    },
+    "radiobutton_email": {
+        "id": "kontakt-email",
+        "name": "kontakt",
+        "value": "email",
+        "disabled": false,
+        "checked": false,
+        "text": "Pr. e-mail",
+        "large": true
+    },
+    "radiobutton_odense_ja": {
+        "id": "odense-ja",
+        "name": "odense",
+        "value": "ja",
+        "disabled": false,
+        "checked": false,
+        "text": "Ja",
+        "large": true
+    },
+    "radiobutton_odense_nej": {
+        "id": "odense-nej",
+        "name": "odense",
+        "value": "nej",
+        "disabled": false,
+        "checked": false,
+        "text": "Nej",
+        "large": true
+    }
+}

@@ -44,5 +44,49 @@
       {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
       {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
     ]
+  },
+  "radiobutton_afsender": {
+    "items": [{
+      "id": "afsender1",
+      "name": "afsender",
+      "value": "Advokat for forsikringsselskab",
+      "disabled": false,
+      "checked": false,
+      "text": "Advokat for forsikringsselskab",
+      "large": true
+    },{
+      "id": "afsender2",
+      "name": "afsender",
+      "value": "Advokat for skadelidte",
+      "disabled": false,
+      "checked": false,
+      "text": "Advokat for skadelidte",
+      "large": true
+    },{
+      "id": "afsender3",
+      "name": "afsender",
+      "value": "Forsikringsselskab",
+      "disabled": false,
+      "checked": false,
+      "text": "Forsikringsselskab",
+      "large": true
+    },{
+      "id": "afsender4",
+      "name": "afsender",
+      "value": "Erstatningsnævnet",
+      "disabled": false,
+      "checked": false,
+      "text": "Erstatningsnævnet",
+      "large": true
+    },{
+      "id": "afsender5",
+      "name": "afsender",
+      "value": "Anden",
+      "disabled": false,
+      "checked": false,
+      "text": "Anden",
+      "large": true
+    }
+    ]
   }
 }

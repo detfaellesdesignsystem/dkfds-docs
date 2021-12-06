@@ -38,7 +38,7 @@ subnav:
 Tooltip komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.Tooltip(document.getElementById('Tooltip-ID'));
+new DKFDS.Tooltip(document.getElementById('Tooltip-ID')).init();
 {% endhighlight %}
 
 ## Varianter

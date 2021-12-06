@@ -103,11 +103,7 @@
         <fieldset>
             <legend class="form-label">Afsender er</legend>
             <ul class="nobullet-list">
-                <li>{{radiobutton("id-afsender1", "afsender", "Advokat for forsikringsselskab", false, false, "Advokat for forsikringsselskab", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                <li>{{radiobutton("id-afsender2", "afsender", "Advokat for skadelidte", false, false, "Advokat for skadelidte", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                <li>{{radiobutton("id-afsender3", "afsender", "Forsikringsselskab", false, false, "Forsikringsselskab", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                <li>{{radiobutton("id-afsender4", "afsender", "Erstatningsnævnet", false, false, "Erstatningsnævnet", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
-                <li>{{radiobutton("id-afsender5", "afsender", "Anden", false, false, "Anden", "radio-large", false, "true", "", "", "", "mt-3")}}</li>
+            {% for item in radiobutton_afsender.items %}<li>{{ radiobutton(item) }}</li>{% endfor %}
             </ul>
         </fieldset>
     </div>
