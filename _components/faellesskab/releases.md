@@ -124,6 +124,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer
 - Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a>
 - Ændret attributter for <a href="/kode/komponenter/radioknap/#skjult-indhold">radioknap med skjult indhold</a>
+- Fjernet gamle <a href="/design/ikoner/ikoner-og-deres-betydning/">ikoner</a>
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0

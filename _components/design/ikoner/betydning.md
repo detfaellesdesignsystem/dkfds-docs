@@ -190,7 +190,7 @@ tags:
           {% include icon.html icon="feedback" keywords="feedback, respons, response, besvarelse" label="Feedback" %}
           {% include icon.html icon="person-remove" keywords="bruger, person, user, remove" label="Fjern person/bruger" %}
           {% include icon.html icon="flag" keywords="flag, filled, udfyldt" label="Flag fyldt" %}
-          {% include icon.html icon="outline-flag" keywords="flag, tomt" label="Flag tomt" %}
+          {% include icon.html icon="outlined-flag" keywords="flag, tomt" label="Flag tomt" %}
           {% include icon.html icon="open-with" keywords="flyt, move, drag, drop" label="Flyt" %}
           {% include icon.html icon="credit-card" keywords="kreditkort, creditcard, credit, money, payment, betal, betaling, pay" label="Indbetaling (kreditkort)" %}
           {% include icon.html icon="settings" keywords="settings, indstillinger" label="Indstillinger" %}
@@ -261,7 +261,7 @@ tags:
           {% include icon.html icon="domain" keywords="" label="Virksomhed" %}
           {% include icon.html icon="face" keywords="" label="Elev" %}
           {% include icon.html icon="engineering" keywords="" label="Erhverv/Erhversuddannet" %}
-          {% include icon.html icon="acccount-circle" keywords="" label="Brugerprofil" %}
+          {% include icon.html icon="account-circle" keywords="" label="Brugerprofil" %}
           {% include icon.html icon="how-to-reg" keywords="" label="Fuldmagtsprofil (3. part)" %}
           {% include icon.html icon="support-agent" keywords="" label="Supporter (telefonrådgiver)" %}
           {% include icon.html icon="local-shipping" keywords="" label="Lastbil (transport)" %}
