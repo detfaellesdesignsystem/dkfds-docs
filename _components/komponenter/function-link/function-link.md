@@ -7,7 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: Et link, der udfører en handling på siden - så som print. Der er gerne
   tilføjet et ikon, som underbygger handlingen.
-component: function-link
+component: function-link-print
 componentTitle: Eksempel på funktions link
 componentCode: "/kode/komponenter/funktionslink/"
 
