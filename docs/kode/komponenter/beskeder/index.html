@@ -3193,7 +3193,7 @@
     <main class="col-12 col-lg-9" id="main-content">
           <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <div class="alert-body">
-            <p class="alert-heading pr-7">Vælg et tema</p><button class="function-link alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
+            <p class="alert-heading pr-7">Vælg et tema</p><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
             <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
@@ -3262,6 +3262,36 @@
 </div>
 
 <p>Anvend ARIA <code>role="alert"</code> til at øge tilgængeligheden ved at markere beskeden som noget der skal annonceres gennem eventuelle hjælpeteknologier. Mærk beskeden med <code>role="alertdialog"</code>, hvis den indeholder interaktivitet for brugeren.</p>
+
+<h3>Javascript</h3>
+<p>Man kan bruge nedenstående JavaScript for at sætte events på luk knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk knappen.
+Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Alert(document.getElementById(&#39;ALERT-ID&#39;)).init();</code></pre></figure>
+
+<h4>Events</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Event key</th>
+      <th>Element</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fds.alert.show</td>
+      <td><code>div.alert</code></td>
+      <td>Når en besked bliver vist med <code>DKFDS.Alert(document.getElementById('ALERT-ID')).show();</code> bliver <code>fds.alert.show</code> udløst på beskedelementet</td>
+    </tr>
+    <tr>
+      <td>fds.alert.hide</td>
+      <td><code>div.alert</code></td>
+      <td>Når en besked bliver skjult med <code>DKFDS.Alert(document.getElementById('ALERT-ID')).hide();</code> eller der trykkes på luk bliver <code>fds.alert.hide</code> udløst på beskedelementet</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Varianter</h2>
 
@@ -3463,8 +3493,8 @@
     &lt;div class=&quot;alert-body&quot;&gt;
         &lt;p class=&quot;alert-heading pr-7&quot;&gt;Besked med luk&lt;/p&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor
-            sit amet.&lt;/p&gt;&lt;a href=&quot;javascript:void(0);&quot;
-            class=&quot;alert-close&quot;&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/a&gt;
+            sit amet.&lt;/p&gt;&lt;button type=&quot;button&quot;
+            class=&quot;alert-close&quot;&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 

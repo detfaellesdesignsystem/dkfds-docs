@@ -36,6 +36,22 @@ subnav:
 
 Anvend ARIA `role="alert"` til at øge tilgængeligheden ved at markere beskeden som noget der skal annonceres gennem eventuelle hjælpeteknologier. Mærk beskeden med `role="alertdialog"`, hvis den indeholder interaktivitet for brugeren.
 
+### Javascript
+Man kan bruge nedenstående JavaScript for at sætte events på luk knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk knappen.
+Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.Alert(document.getElementById('ALERT-ID')).init();
+{% endhighlight %}
+
+#### Events
+
+{:.table}
+| Event key           | Element                   | Beskrivelse                                                                                                                                         |
+|---------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| fds.alert.show      | `div.alert`               | Når en besked bliver vist med `DKFDS.Alert(document.getElementById('ALERT-ID')).show();` bliver `fds.alert.show` udløst på beskedelementet                            |
+| fds.alert.hide      | `div.alert`               | Når en besked bliver skjult med `DKFDS.Alert(document.getElementById('ALERT-ID')).hide();` eller der trykkes på luk bliver `fds.alert.hide` udløst på beskedelementet |
+
 ## Varianter
 
 {:#farver}

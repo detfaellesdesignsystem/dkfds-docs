@@ -116,15 +116,17 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
 - Tilføjet mulighed for <a href="/kode/grid/#rækker-med-border">border på rækkerne i et grid</a> til brug som erstatning for tabel, når der ingen horisontal header er.
-- Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
+- <span class="badge badge-info badge-small mr-3">Change</span>Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
 - Fikset fejl med placering af <a href="/komponenter/trinindikatorer/#ekstra-information">ekstra information i sidenavigation</a>.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Omdøbt FDS <a href="/design/farver/">farver</a>
 - Erstattet brug af / ved dividering i scss med math.div
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer
-- Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a>
-- Ændret attributter for <a href="/kode/komponenter/radioknap/#skjult-indhold">radioknap med skjult indhold</a>
-- Fjernet gamle <a href="/design/ikoner/ikoner-og-deres-betydning/">ikoner</a>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret attributter for <a href="/kode/komponenter/radioknap/#skjult-indhold">radioknap med skjult indhold</a>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet gamle <a href="/design/ikoner/ikoner-og-deres-betydning/">ikoner</a>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet <a href="/kode/komponenter/beskeder/">JavaScript til lukknap i beskeder</a>
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0

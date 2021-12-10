@@ -1,5 +1,4 @@
-import $ from "jquery";
-
+import * as DKFDS from "dkfds";
 const themeAlertId = 'themeAlert';
 const cookieName = 'theme';
 const themes = ['virk', 'borgerdk'];
@@ -86,12 +85,6 @@ let themeAlertMessage = function(){
     let alert = document.getElementById(themeAlertId);
     if(!isCookieSet() && alert !== null) {
         showThemeAlert();
-        let closeButtons = alert.getElementsByClassName('alert-close');
-        for (let b = 0; b < closeButtons.length; b++) {
-            closeButtons[b].addEventListener('click', function () {
-                hideThemeAlert();
-            });
-        }
         document.getElementById('borgerdkThemeBtn').addEventListener('click', onBorgerdkThemeSelected);
         document.getElementById('virkThemeBtn').addEventListener('click', onVirkThemeSelected);
     }
@@ -99,12 +92,16 @@ let themeAlertMessage = function(){
 
 let onVirkThemeSelected = function(){
     setThemeCookie(themes[0]);
-    hideThemeAlert();
+    if(document.getElementById(themeAlertId) !== null){
+        new DKFDS.Alert(document.getElementById(themeAlertId)).hide();
+    }
     location.reload();
 };
 let onBorgerdkThemeSelected = function(){
     setThemeCookie(themes[1]);
-    hideThemeAlert();
+    if(document.getElementById(themeAlertId) !== null){
+        new DKFDS.Alert(document.getElementById(themeAlertId)).hide();
+    }
     location.reload();
 };
 
@@ -124,15 +121,10 @@ let setStylesheet = function(){
     document.getElementsByTagName('head')[0].appendChild(lnk);
 };
 
-let hideThemeAlert = function(){
-    if(document.getElementById(themeAlertId) !== null) {
-        document.getElementById(themeAlertId).classList.add('d-none');
-    }
-};
 
 let showThemeAlert = function(){
     if(document.getElementById(themeAlertId) !== null) {
-        document.getElementById(themeAlertId).classList.remove('d-none');
+        new DKFDS.Alert(document.getElementById(themeAlertId)).show();
     }
 };
 

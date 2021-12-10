@@ -26,6 +26,8 @@ subcategory: Kode
 
 Funktionslink kan teknisk defineres som `<a>` element eller `<button>` afhængigt af funktionen.
 
+Se <a href="https://develop.designsystem.dk/design/ikoner/ikoner-og-deres-betydning/">ikoner</a> for korrekt brug i specifikke situationer.
+
 ## Varianter
 
 {:.h4}
