@@ -18,6 +18,7 @@ module.exports = function (outputPath, prod) {
       "spinner": ["./javascript/components/spinner.js"],
       "table": ["./javascript/components/table.js"],
       "toast": ["./javascript/components/toast.js"],
+      "modal": ["./javascript/components/modal.js"],
       "languageswitcher": ["./javascript/components/languageswitcher.js"],
       "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
       "newsletter": ["./javascript/newsletter.js"]

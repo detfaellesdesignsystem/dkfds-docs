@@ -1,0 +1,5 @@
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{{modal(modal_data)}}
+
+{{ button(button_example.text, button_example.class, button_example.attribute, button_example.icon, button_example.sronly) }}

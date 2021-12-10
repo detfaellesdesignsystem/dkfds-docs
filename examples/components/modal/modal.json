@@ -8,7 +8,7 @@
   },
   "button_example": {
     "text": "Åbn modal",
-    "class": "primary",
+    "class": "tertiary",
     "attribute": "data-module=\"modal\" data-target=\"modal-example\""
   }
 }

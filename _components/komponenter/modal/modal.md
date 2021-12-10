@@ -13,6 +13,9 @@ description: Modalvinduer er separate vinduer, som popper-up på siden, når du 
 component: modal
 componentTitle: Eksempel på modal
 componentCode: "/kode/komponenter/modal/"
+subnav:
+- text: Dialog
+  href: "#dialog"
 
 ---
 {:.h3 #retningslinjer}
@@ -55,3 +58,8 @@ Hold teksten i modalvinduet så kort og koncis som muligt. Det anbefales ikke, a
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+
+{:#dialog}
+## Dialog
+
+ {% include code/preview-box.html component="modal-locked" title="Eksempel på låst modal" link="true" %}
