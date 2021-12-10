@@ -963,6 +963,17 @@
 
     
 
+    <ul class="overflow-list" role="menu">
+    
+
+
+<li class=" " role="none">
+<a href="#dialog"  role="menuitem">Dialog</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -2069,6 +2080,17 @@
 
     
 
+    <ul class="sidenav-sub_list" role="menu">
+    
+
+
+<li class=" " role="none">
+<a href="#dialog"  role="menuitem">Dialog</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -2393,7 +2415,8 @@
             <h2 class="modal-title" id="modal-example-title">
                 Lorem ipsum
             </h2>
-
+            <button class="modal-close function-link"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -2471,7 +2494,7 @@
   <li><a href="/pages/eksempler/AES-erstatningssag/aes-5/?r=/komponenter/modal/%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a></li>
 </ul>
 
-<h2>Dialog</h2>
+<h2 id="dialog">Dialog</h2>
 
 <div class="component-preview  component-preview-modal-locked" aria-label="Eksempel på låst modal">
     
@@ -2483,7 +2506,7 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="fds-modal" id="modal-example-locked" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-locked-title">
+        <div class="fds-modal" id="modal-example-locked" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-locked-title" data-modal-dialog="">
     <div class="modal-content">
         <div class="modal-header">
             <h2 class="modal-title" id="modal-example-locked-title">
@@ -2505,7 +2528,7 @@
         </div>
 
         <div class="modal-footer">
-            <button class="button button-primary">Ja</button><button class="button button-secondary">Nej</button>
+            <button class="button button-primary" id="button-modal-example-yes">Ja</button><button class="button button-secondary" id="button-modal-example-no">Nej</button>
         </div>
 
     </div>
