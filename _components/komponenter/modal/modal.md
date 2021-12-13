@@ -19,6 +19,7 @@ subnav:
 
 ---
 {:.h3 #retningslinjer}
+
 ## Anvendes til
 
 Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen. Det kunne fx være en godkendelse af en handling, behov for bekræftelse eller overførsel af rettigheder, som løsningen skal kunne udføre for at kunne fuldføre sin dialog med brugeren.
@@ -26,6 +27,7 @@ Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset
 Brug modalvinduer, når du vil være sikker på, at brugeren ser en bestemt dialog og forholder sig til dens indhold.
 
 {:.h3}
+
 ## Anvendes ikke til
 
 Modalvinduer kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.
@@ -39,6 +41,7 @@ Undgå modalvinduer på mobile løsninger og visninger, da de ikke fungerer godt
 Undgå at have formularer inde i en modal. Særligt hvis det er en formular med mere end ét felt. I sådan et tilfælde bør man overveje at dele siden op, så indholdet strækker sig over flere sider.
 
 {:.h3}
+
 ## Vejledning
 
 Undgå at have flere åbne modaler på siden - det giver en dårligere brugeroplevelse og kan resultere i at brugeren mister fornemmelsen af, hvor de er på siden.
@@ -54,12 +57,17 @@ Brugeren skal selv aktivere modalvinduet. Det må ikke aktiveres per automatik, 
 Hold teksten i modalvinduet så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalvinduet bliver så langt, at vinduet scroller. Overvej at bruge en individuel side i stedet for et modalvindue, hvis indholdet er meget langt.
 
 {:.h3 #eksempelloesninger}
+
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+
+* <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
 
 {:#dialog}
-## Dialog
 
- {% include code/preview-box.html component="modal-locked" title="Eksempel på låst modal" link="true" %}
+## Modal som kræver handling
+
+Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen uden at tage stilling til modalens indhold. 
+
+{% include code/preview-box.html component="modal-locked" title="Eksempel på låst modal" link="true" %}
