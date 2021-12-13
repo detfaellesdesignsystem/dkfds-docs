@@ -66,8 +66,8 @@ Hold teksten i modalvinduet så kort og koncis som muligt. Det anbefales ikke, a
 
 {:#dialog}
 
-## Modal som kræver handling
+## Modalvindue som kræver handling
 
-Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen uden at tage stilling til modalens indhold. 
+Anvend modalvindue som kræver handling, når brugeren ikke skal kunne lukke modalvinduet uden at tage stilling til dets indhold. 
 
 {% include code/preview-box.html component="modal-locked" title="Eksempel på låst modal" link="true" %}
