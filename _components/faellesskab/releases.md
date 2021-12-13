@@ -127,8 +127,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret attributter for <a href="/kode/komponenter/radioknap/#skjult-indhold">radioknap med skjult indhold</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet gamle <a href="/design/ikoner/ikoner-og-deres-betydning/">ikoner</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet <a href="/kode/komponenter/beskeder/">JavaScript til lukknap i beskeder</a>
-- Tilføjet mulighed for at <a href="/komponenter/modal/#dialog">fravælge lukfunktioner i modal</a>, så bruger bruger skal foretage valg
-- Ved luk af modal sættes fokus på element, som åbnede modalen
+- Tilføjet mulighed for at <a href="/komponenter/modal/#dialog">fravælge lukfunktioner i modal</a>, så bruger skal foretage valg
+- Ved luk af <a href="/komponenter/modal/">modal</a> sættes fokus på element, som åbnede modalen
 
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
