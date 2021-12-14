@@ -15,8 +15,8 @@ tags:
 - dialogue
 anchor: true
 subnav:
-- text: Dialog
-  href: "#dialog"
+- text: Kræver-handling
+  href: "#kraever-handling"
 ---
 
 {% include code/preview-box.html component="modal" title="Eksempel på modal komponent" %}
@@ -59,9 +59,9 @@ modal.init();
 
 ## Varianter
 
-{:#dialog}
-### Dialog
+{:#kraever-handling}
+### Modalvindue som kræver handling
 
-{% include code/syntax.html component="modal-locked" %}
+{% include code/syntax.html component="modal-forced-action" %}
 
-Tilføj attributten `data-modal-dialog` for at deaktivere luk funktioner som escape. Bemærk, at eksemplet også undlader lukknappen øverst i modalen. Man skal huske at tilføre luk funktionalitet i knapperne tilføjet i modalen.
+Tilføj attributten `data-modal-forced-action` for at deaktivere luk funktioner som escape. Bemærk, at eksemplet også undlader lukknappen øverst i modalen. Man skal huske at tilføre luk funktionalitet i knapperne tilføjet i modalen.
