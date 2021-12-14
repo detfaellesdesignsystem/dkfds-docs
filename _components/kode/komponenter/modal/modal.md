@@ -15,7 +15,7 @@ tags:
 - dialogue
 anchor: true
 subnav:
-- text: Kræver-handling
+- text: Kræver handling
   href: "#kraever-handling"
 ---
 
