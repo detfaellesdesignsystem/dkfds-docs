@@ -62,6 +62,6 @@ modal.init();
 {:#kraever-handling}
 ### Modalvindue som kræver handling
 
-{% include code/syntax.html component="modal-forced-action" %}
+{% include code/syntax.html component="modal-forced-action" link="true" %}
 
 Tilføj attributten `data-modal-forced-action` for at deaktivere luk funktioner som escape. Bemærk, at eksemplet også undlader lukknappen øverst i modalen. Man skal huske at tilføre luk funktionalitet i knapperne tilføjet i modalen.
