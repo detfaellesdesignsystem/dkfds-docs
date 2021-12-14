@@ -1,24 +1,24 @@
 ---
 permalink: "/kode/komponenter/modal/"
-parentlink: /kode/komponenter/
+parentlink: "/kode/komponenter/"
 layout: styleguide
 type: component
 title: Modalvindue
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af modal."
-tags: 
+description: Dokumentation på implementering af modal.
+tags:
 - modal
 - dialog
 - popup
-- "pop up"
+- pop up
 - dialogue
 anchor: true
 subnav:
-- text: Kræver handling
+- text: Modalvindue som kræver handling
   href: "#kraever-handling"
----
 
+---
 {% include code/preview-box.html component="modal" title="Eksempel på modal komponent" %}
 
 ## Eksempler og retningslinjer

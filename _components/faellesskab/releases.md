@@ -1,7 +1,6 @@
 ---
 permalink: "/faellesskab/releases/"
-redirect_from:
-- "/omdesignsystemet/releases/"
+redirect_from: []
 layout: styleguide
 title: Release notes
 category: Faellesskab_category
@@ -10,13 +9,13 @@ description: Release notes for Det Fælles Designsystem
 tags:
 - 2.1.2
 - 3
-- 3.0
+- 3
 - 3.0.0
 - 3.0.1
 - 3.0.2
 - 3.0.3
 - 4.0.0
-- 4.0
+- 4
 - 4
 - 4.0.1
 - 4.1.1
@@ -28,7 +27,7 @@ tags:
 - 4.4.0
 - 4.4
 - 5.0.0
-- 5.0
+- 5
 - 5
 - 5.1.0
 - 5.1
@@ -37,14 +36,14 @@ tags:
 - 5.3.0
 - 5.3
 - 6.0.0
-- 6.0
+- 6
 - 6
 - 6.0.1
 - 6.1.0
 - 6.1
 - 6.1.1
 - 7.0.0
-- 7.0
+- 7
 - 7
 - 7.1.0
 - 7.1
@@ -83,7 +82,7 @@ subnav:
   href: "#version-6-0-1"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
-redirect_from: []
+
 ---
 Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
@@ -127,8 +126,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret attributter for <a href="/kode/komponenter/radioknap/#skjult-indhold">radioknap med skjult indhold</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet gamle <a href="/design/ikoner/ikoner-og-deres-betydning/">ikoner</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet <a href="/kode/komponenter/beskeder/">JavaScript til lukknap i beskeder</a>
-- Tilføjet <a href="/komponenter/modal/">modalvindue</a> som kræver handling, så brugeren ikke kan lukke modalvinduet uden at tage stilling til dets indhold. 
-- Ved luk af <a href="/komponenter/modal/">modalvindue</a> sættes fokus på element, som åbnede modalvinduet
+- Tilføjet <a href="/komponenter/modal/#kraever-handling">modalvindue</a> som kræver handling, så brugeren ikke kan lukke modalvinduet uden at tage stilling til dets indhold. 
+- Ved luk af <a href="/komponenter/modal/#">modalvindue</a> sættes fokus på element, som åbnede modalvinduet
 - Luk modalvindue, hvis en ny <a href="/komponenter/modal/">modalvindue</a> åbnes.
 
 {:#version-7-5-0 .mb-0}
@@ -548,8 +547,3 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
   </div>
 </li>
 </ul>
-
-
-
-
-

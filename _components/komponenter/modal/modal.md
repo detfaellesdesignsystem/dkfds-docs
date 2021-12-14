@@ -14,8 +14,9 @@ component: modal
 componentTitle: Eksempel på modal
 componentCode: "/kode/komponenter/modal/"
 subnav:
-- text: Kræver handling
+- text: Modalvindue som kræver handling
   href: "#kraever-handling"
+
 ---
 {:.h3 #retningslinjer}
 ## Anvendes til
