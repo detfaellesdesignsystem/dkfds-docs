@@ -56,10 +56,22 @@ tags:
 - 7.4
 - 7.5.0
 - 7.5
+- 7.5.1
+- 7.5.2
+- 7.5.3
+- 8
+- 8.0
+- 8.0.0
 anchor: true
 subnav:
 - text: Version 8.0.0
   href: "#version-8-0-0"
+- text: Version 7.5.3
+  href: "#version-7-5-3"
+- text: Version 7.5.2
+  href: "#version-7-5-2"
+- text: Version 7.5.1
+  href: "#version-7-5-1"
 - text: Version 7.5.0
   href: "#version-7-5-0"
 - text: Version 7.4.0
@@ -72,14 +84,8 @@ subnav:
   href: "#version-7-1-1"
 - text: Version 7.1.0
   href: "#version-7-1-0"
-- text: Version 7.0.0
-  href: "#version-7-0-0"
-- text: Version 6.1.1
-  href: "#version-6-1-1"
-- text: Version 6.1.0
-  href: "#version-6-1-0"
 - text: Tidligere versioner
-  href: "#version-6-0-1"
+  href: "#version-7-0-0"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 
@@ -130,10 +136,36 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-info badge-small mr-3">Change</span> Ved luk af <a href="/komponenter/modal/#">modalvindue</a> sættes fokus på element, som åbnede modalvinduet
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Luk modalvindue, hvis en ny <a href="/komponenter/modal/">modalvindue</a> åbnes.
 
+
+
+{:#version-7-5-3 .mb-0}
+## Version 7.5.3
+
+<div><span class="small-text mt-0 d-block">03-12-2021</span></div>
+
+- Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, så skærmlæsere læser teksten frem for at stave
+
+{:#version-7-5-2 .mb-0}
+## Version 7.5.2
+
+<div><span class="small-text mt-0 d-block">25-11-2021</span></div>
+
+- Gjort det muligt at markere tekst i <a href="/komponenter/knapper/">knapper</a> for support af hjælpeværktøjer som Adgang for alle.
+
+
+{:#version-7-5-1 .mb-0}
+## Version 7.5.1
+
+<div><span class="small-text mt-0 d-block">18-11-2021</span></div>
+
+- Fikset fejl med placering af årstal i <a href="/komponenter/datovaelger/">datovælger</a> i mobilvisning.
+- Rettet fejl i <a href="/komponenter/datovaelger/">datovælgeren</a> der gjorde, at den første dag i måneden ikke blev vist, når den var en søndag.
+- Tillader nu dato i <a href="/komponenter/datovaelger/">datovælgeren</a> fra start.
+
 {:#version-7-5-0 .mb-0}
 ## Version 7.5.0
 
-<div><span class="small-text mt-0 d-block">28-09-2021</span></div>
+<div><span class="small-text mt-0 d-block">29-09-2021</span></div>
 
 - <a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a>
 - <a href="/komponenter/felter/#prefix-og-suffix">Prefix og suffix på felter</a>
@@ -147,7 +179,6 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet <a href="/design/ikoner/ikoner-og-deres-betydning/?s=sorter">ikoner til sortering i tabel</a>
 - Tilføjet variant til <a href="/komponenter/overflowmenu/#sortering">overflow menu til brug ved sortering</a>
 - Ændret ikon i <a href="/komponenter/detaljer/">detalje komponent</a>
-
 {:#version-7-4-0 .mb-0}
 ## Version 7.4.0
 
