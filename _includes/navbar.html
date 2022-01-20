@@ -6,7 +6,7 @@
         <div class="solution-heading d-flex align-items-center">
             <a href="/">Det Fælles Designsystem</a>{% if site.environment == "development" %}<span class="badge badge-error ml-4">Develop</span>{% endif %}
         </div>
-        <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
       </div>
 
       {% unless page.search %}
@@ -25,7 +25,7 @@
     <div class="overlay"></div>
     <!-- Desktop main menu-->
     <nav class="nav d-none d-lg-block" aria-label="Hovedmenu">
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
@@ -57,7 +57,7 @@
 
     <!-- Mobile main menu-->
     <nav class="nav d-lg-none" aria-label="Mobil hovedmenu">
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->

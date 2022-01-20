@@ -12,6 +12,3 @@ Patterns er best practice designløsninger til specifikke brugerfokuserede opgav
 Alle patterns i dette afsnit er understøttet af skriftlig vejledning og indeholder kodede eksempler, hvor det er muligt.
 
 Patterns bruger ofte en eller flere komponenter og forklarer, hvordan man tilpasser dem til konteksten.
-
-{:.d-md-none}
-- <a href="/eksempler/patterns/angivelse-af-telefonnummer/">Angivelse af telefonnummer</a>

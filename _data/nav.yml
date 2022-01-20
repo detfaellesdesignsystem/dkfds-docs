@@ -24,21 +24,15 @@ mobile:
 
 #Left menu for krav-category
 Krav_category:
+- href: /krav/
+  overblik: true
 - href: /krav/borgerdk-virk/
 - href: /krav/om-kravene/
 
-#Left menu for kom igang-category
-Krav_selvbetjening_category:
-- href: /krav/selvbetjening/borgerdk-virk/
-- href: /krav/selvbetjening/om-kravene/
-
-#Left menu for til udviklere-category
-Til_udviklere_category:
-- href: /komigang/tiludviklere/eksempler-implementering/
-- href: /komigang/tiludviklere/anbefalinger-vaerktoejer/
-
 #Left menu for design-category
 Design_category:
+- href: /design/
+  overblik: true
 - href: /design/farver/
 - href: /design/typografi/
   categorynav: 'Typografi_category'
@@ -82,6 +76,8 @@ Kode_Typografi_category:
 
 #Left menu for komponent-category
 Komponenter_category:
+  - href: /komponenter/
+    overblik: true
   - href: /komponenter/accordions/
   - href: /komponenter/badges/
   - href: /komponenter/beskeder/
@@ -121,6 +117,8 @@ Komponenter_category:
   - href: /komponenter/fil-upload/
 
 Kode_category:
+- href: /kode/
+  overblik: true
 - href: /kode/implementering/
 - href: /kode/komponenter/
   categorynav: 'Kode_Komponenter_category'
@@ -175,21 +173,25 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/fil-upload/
 
 Eksempler_category:
-  - href: /eksempler/selvbetjeningsloesninger/
-  - href: /eksempler/patterns/
-    categorynav: 'Patterns_category'
-  - href: /eksempler/templates/
+- href: /eksempler/
+  overblik: true
+- href: /eksempler/selvbetjeningsloesninger/
+- href: /eksempler/patterns/
+  categorynav: 'Patterns_category'
+- href: /eksempler/templates/
 
 Patterns_category:
-  - href: /eksempler/patterns/angivelse-af-telefonnummer/
+- href: /eksempler/patterns/angivelse-af-telefonnummer/
 
 Faellesskab_category:
-  - href: /faellesskab/samarbejdsforum/
-    categorynav: 'Samarbejdsforum_category'
-  - href: /faellesskab/nyhedsmail/
-  - href: /faellesskab/kontakt-support/
-  - href: /faellesskab/roadmap/
-  - href: /faellesskab/releases/
+- href: /faellesskab/
+  overblik: true
+- href: /faellesskab/samarbejdsforum/
+  categorynav: 'Samarbejdsforum_category'
+- href: /faellesskab/nyhedsmail/
+- href: /faellesskab/kontakt-support/
+- href: /faellesskab/roadmap/
+- href: /faellesskab/releases/
 
 Samarbejdsforum_category:
   - href: /faellesskab/samarbejdsforum/governance/

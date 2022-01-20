@@ -10,10 +10,7 @@ layout: default
         {% assign sidenavFromNavData = site.data.nav[page.category] %}
         {% if sidenavFromNavData %}
         <ul class="sidenav-list" role="menu">
-          {% include nav/list.html
-            links=sidenavFromNavData
-            use_alt_text=true
-          %}
+          {% include nav/list.html links=sidenavFromNavData use_alt_text=true sidenav=true %}
         </ul>
         {% endif %}
       </nav>
@@ -50,6 +47,16 @@ layout: default
             {{ page.subcategory }}
           </div>
           <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+
+          <!-- List of hash links/anchor links outputted for mobile overview and use -->
+          {% if page.subnav and page.anchor == true %}
+          <ul class="d-lg-none nobullet-list">
+          {% for subnavitem in page.subnav -%}
+          <li><a href="{{subnavitem.href}}">{{subnavitem.text}}</a></li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+
           {% if page.lead != null and page.lead != "" %}
             <p class="font-lead">{{ page.lead }}</p>
           {% endif %}
@@ -59,6 +66,53 @@ layout: default
           {% endif %}
 
           {{ content }}
+
+          {% if page.category %}
+            {% assign _links = site.data.nav[page.category] %}
+            {% assign _isCurrentInList = false %}
+
+            {%- for link in _links -%}
+            <!-- found in list level 1-->
+              {% if link.href == page.permalink %}
+                {% unless link.overblik %}
+                  {% if link.categorynav %}
+                    {% assign _links = site.data.nav[link.categorynav] %}
+                    {% break %}
+                  {% endif %}
+                  {% assign _isCurrentInList = true %}
+                  {% break %}
+                {% endunless %}
+              {% endif %}
+              <!-- not found in level 1 - check all categorynav -->
+              {% if link.categorynav %}
+              {% assign _links_level_3 = site.data.nav[link.categorynav] %}
+                {% for link_3 in _links_level_3 %}
+                  {% if link_3.href == page.permalink %}
+                    {% unless link.overblik %}
+                      {% if link_3.categorynav %}
+                        {% assign _links = site.data.nav[link_3.categorynav] %}
+                        {% break %}
+                      {% endif %}
+                    {% endunless %}
+                    {% assign _isCurrentInList = true %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {%- endfor -%}
+            {% if _links.size > 0 and _isCurrentInList == false %}
+            <h2 class="sr-only d-lg-none">Undersider</h2>
+
+            <ul class="d-lg-none nobullet-list">
+            {% for link in _links -%}
+            {% unless link.overblik %}
+              {%- assign _page = link.href | resolve_permalink -%}
+            <li><a href="{{link.href}}">{{_page.title}}</a></li>
+            {% endunless %}
+            {% endfor %}
+            </ul>
+            {% endif %}
+          {% endif %}
       </section>
     </main>
 
