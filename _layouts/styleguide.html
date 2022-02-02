@@ -10,7 +10,7 @@ layout: default
         {% assign sidenavFromNavData = site.data.nav[page.category] %}
         {% if sidenavFromNavData %}
         <ul class="sidenav-list" role="menu">
-          {% include nav/list.html links=sidenavFromNavData use_alt_text=true sidenav=true %}
+          {% include nav/sidenavigation/list.html links=sidenavFromNavData use_alt_text=true %}
         </ul>
         {% endif %}
       </nav>

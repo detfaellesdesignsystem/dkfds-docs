@@ -1,10 +1,10 @@
 ---
-permalink: "/faellesskab/samarbejdsforum/governance/"
-parentlink: "/faellesskab/samarbejdsforum/"
+permalink: "/faellesskab/governance/"
 redirect_from:
 - "/omdesignsystemet/fds-teamet/"
 - "/omdesignsystemet/styregruppe/"
 - "/omdesignsystemet/governance/"
+- "/faellesskab/samarbejdsforum/governance/"
 layout: styleguide
 title: Governance
 category: Faellesskab_category

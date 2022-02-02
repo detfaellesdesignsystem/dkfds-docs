@@ -415,7 +415,7 @@
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
 
-        <div class="navbar-inner container">
+        <div class="navbar-inner">
           <ul class="nav-primary" role="menu">
             
 
@@ -440,312 +440,537 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="true"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="true"  >
         <span>Design</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="false">
-        <ul class="overflow-list">
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-<!-- If menu is sidenavigation -->
-  
-
+      <div role="menu" aria-label="Design" class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="false">
+        <ul class="overflow-list" role="menu">
+          
 
 
 <li class="  " role="none">
 
   
 
-<a href="/design/" role="menuitem" 
-  class="nav-link">
-  Design<span class="helptext"> (overblik)</span>
-</a>
 
+  
+    
+    <a href="/design/" role="menuitem"  class="nav-link">
+        Design<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/design/farver/" role="menuitem" 
-  class="nav-link">
-  Farver
-</a>
 
+  
+    
+    <a href="/design/farver/" role="menuitem"  class="nav-link">
+        Farver
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/design/typografi/" role="menuitem" 
-  class="nav-link">
-  Typografi
-</a>
 
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="true"  >
+          <span>Typografi</span>
+        </button>
+        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/typografi/" role="menuitem"  class="nav-link">
+        Typografi<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
+            
+          
 
+
+
+
+  
     
 
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/typografi/fonte/" role="menuitem"  class="nav-link">
+        Fonte
+      </a>
+     
+    
+  
+</li>
     
 
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
+  
+    
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/design/borders/" role="menuitem" 
-  class="nav-link">
-  Hjørner, streger, skygger
-</a>
 
+  
+    
+    <a href="/design/typografi/overskrifter/" role="menuitem"  class="nav-link">
+        Overskrifter
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
 
 
+<li class="  has-anchor-links" role="none">
+
+  
 
 
+  
+    
+    <a href="/design/typografi/felt-tabel-overskrifter/" role="menuitem"  class="nav-link">
+        Felt- og tabeloverskrifter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
 
 
-<!-- If menuitem is overview page (defined in nav.yml)-->
+<li class="  has-anchor-links" role="none">
 
+  
+
+
+  
+    
+    <a href="/design/typografi/tekst/" role="menuitem"  class="nav-link">
+        Tekst
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/design/typografi/links/" role="menuitem"  class="nav-link">
+        Links
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/typografi/lister/" role="menuitem"  class="nav-link">
+        Lister
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/design/borders/" role="menuitem"  class="nav-link">
+        Hjørner, streger, skygger
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
 
 
 <li class="current active " role="none">
 
   
 
-<a href="/design/ikoner/" role="menuitem" aria-current="page"
-  class="nav-link">
-  Ikoner
-</a>
 
+  
+    
+    <a href="/design/ikoner/" role="menuitem" aria-current="page" class="nav-link">
+        Ikoner
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/design/logoer/" role="menuitem"  class="nav-link">
+        Logoer
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
     
     <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    
-    
+      
+      
 
-    
-
-    <ul class="overflow-list" role="menu">
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="true"  >
+          <span>Datavisualisering og infografik</span>
+        </button>
+        <div aria-label="Datavisualisering og infografik" class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
 
 
 <li class="  " role="none">
 
   
 
-<a href="/design/ikoner/ikoner-og-deres-betydning/" role="menuitem" 
-  class="nav-link">
-  Udvalgte ikoner og deres betydning
-</a>
 
-</li>
-
+  
     
-
-</ul>
+    <a href="/design/datavisualisering-infografik/" role="menuitem"  class="nav-link">
+        Datavisualisering og infografik<span class="helptext"> (overblik)</span>
+      </a>
+     
     
   
-
 </li>
+            
+          
 
+
+
+
+  
     
 
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/" role="menuitem"  class="nav-link">
+        Tilgængelig grafik
+      </a>
+     
+    
+  
+</li>
+    
+
+  
     
 
 
+<li class="  " role="none">
+
+  
 
 
+  
+    
+    <a href="/design/datavisualisering-infografik/datavisualisering/" role="menuitem"  class="nav-link">
+        Datavisualisering
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
 
 
-<!-- If menuitem is overview page (defined in nav.yml)-->
+<li class="  " role="none">
 
+  
+
+
+  
+    
+    <a href="/design/datavisualisering-infografik/infografik/" role="menuitem"  class="nav-link">
+        Infografik
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/design/logoer/" role="menuitem" 
-  class="nav-link">
-  Logoer
-</a>
-
-</li>
-
-    
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-
-
-<li class="  " role="none">
 
   
-
-<a href="/design/datavisualisering-infografik/" role="menuitem" 
-  class="nav-link">
-  Datavisualisering og infografik
-</a>
-
-</li>
-
     
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
 
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="true"  >
+          <span>Layout</span>
+        </button>
+        <div aria-label="Layout" class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/design/layout/" role="menuitem" 
-  class="nav-link">
-  Layout
-</a>
 
+  
+    
+    <a href="/design/layout/" role="menuitem"  class="nav-link">
+        Layout<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
+            
+          
 
+
+
+
+  
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/design/designressourcer/" role="menuitem" 
-  class="nav-link">
-  Designressourcer
-</a>
 
+  
+    
+    <a href="/design/layout/grid/" role="menuitem"  class="nav-link">
+        Grid og baseline grid
+      </a>
+     
+    
+  
 </li>
-
-    
-
     
 
 
+          </ul>
+        </div>
+      </div>  
 
+    
+  
+</li>
+    
 
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
+  
+    
 
 
 <li class="  " role="none">
 
   
 
-<a href="/design/designtjek/" role="menuitem" 
-  class="nav-link">
-  Designtjek
-</a>
 
+  
+    
+    <a href="/design/designressourcer/" role="menuitem"  class="nav-link">
+        Designressourcer
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/design/tilgaengelighed/" role="menuitem" 
-  class="nav-link">
-  Tilgængelighed
-</a>
 
+  
+    
+    <a href="/design/designtjek/" role="menuitem"  class="nav-link">
+        Designtjek
+      </a>
+     
+    
+  
 </li>
+    
 
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/tilgaengelighed/" role="menuitem"  class="nav-link">
+        Tilgængelighed
+      </a>
+     
+    
+  
+</li>
     
 
 
@@ -778,924 +1003,772 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-komponenter" aria-haspopup="true" aria-expanded="false"  >
         <span>Komponenter</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
-        <ul class="overflow-list">
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-<!-- If menu is sidenavigation -->
-  
-
+      <div role="menu" aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level1-komponenter" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/" role="menuitem" 
-  class="nav-link">
-  Komponenter<span class="helptext"> (overblik)</span>
-</a>
 
+  
+    
+    <a href="/komponenter/" role="menuitem"  class="nav-link">
+        Komponenter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/accordions/" role="menuitem" 
-  class="nav-link">
-  Accordions
-</a>
 
+  
+    
+    <a href="/komponenter/accordions/" role="menuitem"  class="nav-link">
+        Accordions
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/badges/" role="menuitem" 
-  class="nav-link">
-  Badges
-</a>
 
+  
+    
+    <a href="/komponenter/badges/" role="menuitem"  class="nav-link">
+        Badges
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/beskeder/" role="menuitem" 
-  class="nav-link">
-  Beskeder (Alerts)
-</a>
 
+  
+    
+    <a href="/komponenter/beskeder/" role="menuitem"  class="nav-link">
+        Beskeder (Alerts)
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/broedkrumme/" role="menuitem" 
-  class="nav-link">
-  Brødkrumme
-</a>
 
+  
+    
+    <a href="/komponenter/broedkrumme/" role="menuitem"  class="nav-link">
+        Brødkrumme
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/cards/" role="menuitem" 
-  class="nav-link">
-  Cards
-</a>
 
+  
+    
+    <a href="/komponenter/cards/" role="menuitem"  class="nav-link">
+        Cards
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/cookiemeddelelse/" role="menuitem" 
-  class="nav-link">
-  Cookiemeddelelse
-</a>
 
+  
+    
+    <a href="/komponenter/cookiemeddelelse/" role="menuitem"  class="nav-link">
+        Cookiemeddelelse
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/dato-felt/" role="menuitem" 
-  class="nav-link">
-  Datoangivelse
-</a>
 
+  
+    
+    <a href="/komponenter/dato-felt/" role="menuitem"  class="nav-link">
+        Datoangivelse
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/datovaelger/" role="menuitem" 
-  class="nav-link">
-  Datovælger
-</a>
 
+  
+    
+    <a href="/komponenter/datovaelger/" role="menuitem"  class="nav-link">
+        Datovælger
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/detaljer/" role="menuitem" 
-  class="nav-link">
-  Detaljer
-</a>
 
+  
+    
+    <a href="/komponenter/detaljer/" role="menuitem"  class="nav-link">
+        Detaljer
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/drop-down/" role="menuitem" 
-  class="nav-link">
-  Dropdown-menu
-</a>
 
+  
+    
+    <a href="/komponenter/drop-down/" role="menuitem"  class="nav-link">
+        Dropdown-menu
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/faneblad/" role="menuitem" 
-  class="nav-link">
-  Faneblade
-</a>
 
+  
+    
+    <a href="/komponenter/faneblad/" role="menuitem"  class="nav-link">
+        Faneblade
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/fejlmeddelelser/" role="menuitem" 
-  class="nav-link">
-  Fejlmeddelelser
-</a>
 
+  
+    
+    <a href="/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+        Fejlmeddelelser
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/fejlopsummering/" role="menuitem" 
-  class="nav-link">
-  Fejlopsummering
-</a>
 
+  
+    
+    <a href="/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+        Fejlopsummering
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/felter/" role="menuitem" 
-  class="nav-link">
-  Felter
-</a>
 
+  
+    
+    <a href="/komponenter/felter/" role="menuitem"  class="nav-link">
+        Felter
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/footers/" role="menuitem" 
-  class="nav-link">
-  Footers
-</a>
 
+  
+    
+    <a href="/komponenter/footers/" role="menuitem"  class="nav-link">
+        Footers
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/formular/" role="menuitem" 
-  class="nav-link">
-  Formular
-</a>
 
+  
+    
+    <a href="/komponenter/formular/" role="menuitem"  class="nav-link">
+        Formular
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/funktionslink/" role="menuitem" 
-  class="nav-link">
-  Funktionslink
-</a>
 
+  
+    
+    <a href="/komponenter/funktionslink/" role="menuitem"  class="nav-link">
+        Funktionslink
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/headers/" role="menuitem" 
-  class="nav-link">
-  Headers
-</a>
 
+  
+    
+    <a href="/komponenter/headers/" role="menuitem"  class="nav-link">
+        Headers
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/knapper/" role="menuitem" 
-  class="nav-link">
-  Knapper
-</a>
 
+  
+    
+    <a href="/komponenter/knapper/" role="menuitem"  class="nav-link">
+        Knapper
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/modal/" role="menuitem" 
-  class="nav-link">
-  Modalvindue
-</a>
 
+  
+    
+    <a href="/komponenter/modal/" role="menuitem"  class="nav-link">
+        Modalvindue
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/notifikation/" role="menuitem" 
-  class="nav-link">
-  Notifikation (Toast)
-</a>
 
+  
+    
+    <a href="/komponenter/notifikation/" role="menuitem"  class="nav-link">
+        Notifikation (Toast)
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/overflowmenu/" role="menuitem" 
-  class="nav-link">
-  Overflow menu
-</a>
 
+  
+    
+    <a href="/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
+        Overflow menu
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/radioknap/" role="menuitem" 
-  class="nav-link">
-  Radioknap
-</a>
 
+  
+    
+    <a href="/komponenter/radioknap/" role="menuitem"  class="nav-link">
+        Radioknap
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/sidenav/" role="menuitem" 
-  class="nav-link">
-  Sidenavigation
-</a>
 
+  
+    
+    <a href="/komponenter/sidenav/" role="menuitem"  class="nav-link">
+        Sidenavigation
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/skip-link/" role="menuitem" 
-  class="nav-link">
-  Skip-link
-</a>
 
+  
+    
+    <a href="/komponenter/skip-link/" role="menuitem"  class="nav-link">
+        Skip-link
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/spinner/" role="menuitem" 
-  class="nav-link">
-  Spinner
-</a>
 
+  
+    
+    <a href="/komponenter/spinner/" role="menuitem"  class="nav-link">
+        Spinner
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/sprogvaegler/" role="menuitem" 
-  class="nav-link">
-  Sprogvælger
-</a>
 
+  
+    
+    <a href="/komponenter/sprogvaegler/" role="menuitem"  class="nav-link">
+        Sprogvælger
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/search/" role="menuitem" 
-  class="nav-link">
-  Søgefelt
-</a>
 
+  
+    
+    <a href="/komponenter/search/" role="menuitem"  class="nav-link">
+        Søgefelt
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/tilbage-link/" role="menuitem" 
-  class="nav-link">
-  Tilbage link
-</a>
 
+  
+    
+    <a href="/komponenter/tilbage-link/" role="menuitem"  class="nav-link">
+        Tilbage link
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/tables/" role="menuitem" 
-  class="nav-link">
-  Tabeller
-</a>
 
+  
+    
+    <a href="/komponenter/tables/" role="menuitem"  class="nav-link">
+        Tabeller
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/tags/" role="menuitem" 
-  class="nav-link">
-  Tags
-</a>
 
+  
+    
+    <a href="/komponenter/tags/" role="menuitem"  class="nav-link">
+        Tags
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/textarea/" role="menuitem" 
-  class="nav-link">
-  Tekstområde
-</a>
 
+  
+    
+    <a href="/komponenter/textarea/" role="menuitem"  class="nav-link">
+        Tekstområde
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/tjekboks/" role="menuitem" 
-  class="nav-link">
-  Tjekboks
-</a>
 
+  
+    
+    <a href="/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+        Tjekboks
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/toggle/" role="menuitem" 
-  class="nav-link">
-  Toggle switch
-</a>
 
+  
+    
+    <a href="/komponenter/toggle/" role="menuitem"  class="nav-link">
+        Toggle switch
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/tooltip/" role="menuitem" 
-  class="nav-link">
-  Tooltip
-</a>
 
+  
+    
+    <a href="/komponenter/tooltip/" role="menuitem"  class="nav-link">
+        Tooltip
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/trinindikatorer/" role="menuitem" 
-  class="nav-link">
-  Trinindikatorer
-</a>
 
+  
+    
+    <a href="/komponenter/trinindikatorer/" role="menuitem"  class="nav-link">
+        Trinindikatorer
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/komponenter/fil-upload/" role="menuitem" 
-  class="nav-link">
-  Vedhæft fil (Upload)
-</a>
 
+  
+    
+    <a href="/komponenter/fil-upload/" role="menuitem"  class="nav-link">
+        Vedhæft fil (Upload)
+      </a>
+     
+    
+  
 </li>
-
     
 
 
@@ -1728,108 +1801,147 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow3" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow3" aria-hidden="true">
-        <ul class="overflow-list">
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-<!-- If menu is sidenavigation -->
-  
-
+      <div role="menu" aria-label="Eksempler" class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
 
 
 <li class="  " role="none">
 
   
 
-<a href="/eksempler/" role="menuitem" 
-  class="nav-link">
-  Eksempler<span class="helptext"> (overblik)</span>
-</a>
 
+  
+    
+    <a href="/eksempler/" role="menuitem"  class="nav-link">
+        Eksempler<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/eksempler/selvbetjeningsloesninger/" role="menuitem" 
-  class="nav-link">
-  Selvbetjeningsløsninger
-</a>
 
+  
+    
+    <a href="/eksempler/selvbetjeningsloesninger/" role="menuitem"  class="nav-link">
+        Selvbetjeningsløsninger
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/eksempler/patterns/" role="menuitem" 
-  class="nav-link">
-  Patterns
-</a>
 
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
+          <span>Patterns</span>
+        </button>
+        <div aria-label="Patterns" class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/" role="menuitem"  class="nav-link">
+        Patterns<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
+            
+          
 
+
+
+
+  
     
 
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/angivelse-af-telefonnummer/" role="menuitem"  class="nav-link">
+        Angivelse af telefonnummer
+      </a>
+     
+    
+  
+</li>
     
 
 
+          </ul>
+        </div>
+      </div>  
 
+    
+  
+</li>
+    
 
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
+  
+    
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/eksempler/templates/" role="menuitem" 
-  class="nav-link">
-  Templates
-</a>
 
+  
+    
+    <a href="/eksempler/templates/" role="menuitem"  class="nav-link">
+        Templates
+      </a>
+     
+    
+  
 </li>
-
     
 
 
@@ -1862,300 +1974,1122 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
         <span>Kode</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="true">
-        <ul class="overflow-list">
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-<!-- If menu is sidenavigation -->
-  
-
+      <div role="menu" aria-label="Kode" class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
 
 
 <li class="  " role="none">
 
   
 
-<a href="/kode/" role="menuitem" 
-  class="nav-link">
-  Kode<span class="helptext"> (overblik)</span>
-</a>
 
+  
+    
+    <a href="/kode/" role="menuitem"  class="nav-link">
+        Kode<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/kode/implementering/" role="menuitem" 
-  class="nav-link">
-  Implementering af DKFDS
-</a>
 
+  
+    
+    <a href="/kode/implementering/" role="menuitem"  class="nav-link">
+        Implementering af DKFDS
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/kode/komponenter/" role="menuitem" 
-  class="nav-link">
-  Komponenter
-</a>
 
-</li>
-
+  
     
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
 
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
+          <span>Komponenter</span>
+        </button>
+        <div aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
 
 
 <li class="  " role="none">
 
   
 
-<a href="/kode/browserunderstoettelse/" role="menuitem" 
-  class="nav-link">
-  Browserunderstøttelse
-</a>
 
+  
+    
+    <a href="/kode/komponenter/" role="menuitem"  class="nav-link">
+        Komponenter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
+            
+          
 
+
+
+
+  
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/kode/grid/" role="menuitem" 
-  class="nav-link">
-  Grid
-</a>
-
-</li>
-
-    
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-
-
-<li class="  " role="none">
 
   
-
-<a href="/kode/typografi/" role="menuitem" 
-  class="nav-link">
-  Typografi
-</a>
-
+    
+    <a href="/kode/komponenter/accordions/" role="menuitem"  class="nav-link">
+        Accordions
+      </a>
+     
+    
+  
 </li>
-
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-
-
-<li class="  " role="none">
 
   
-
-<a href="/kode/ikoner/" role="menuitem" 
-  class="nav-link">
-  Ikoner
-</a>
-
-</li>
-
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/kode/utilities/" role="menuitem" 
-  class="nav-link">
-  Hjælpeklasser (Utilities)
-</a>
-
-</li>
-
-    
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-
-
-<li class="  " role="none">
 
   
-
-<a href="/kode/eksempler-implementering/" role="menuitem" 
-  class="nav-link">
-  Eksempler på implementering
-</a>
-
+    
+    <a href="/kode/komponenter/badges/" role="menuitem"  class="nav-link">
+        Badges
+      </a>
+     
+    
+  
 </li>
-
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-
-
-<li class="  " role="none">
 
   
-
-<a href="/kode/print/" role="menuitem" 
-  class="nav-link">
-  Print
-</a>
-
-</li>
-
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-
-
-<li class="  " role="none">
-
-  
-
-<a href="/kode/plugins/" role="menuitem" 
-  class="nav-link">
-  Plugins
-</a>
-
-</li>
-
-    
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/kode/anbefalinger-vaerktoejer/" role="menuitem" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
 
+  
+    
+    <a href="/kode/komponenter/beskeder/" role="menuitem"  class="nav-link">
+        Beskeder (Alerts)
+      </a>
+     
+    
+  
 </li>
+    
 
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/broedkrumme/" role="menuitem"  class="nav-link">
+        Brødkrumme
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/cards/" role="menuitem"  class="nav-link">
+        Cards
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/cookiemeddelelse/" role="menuitem"  class="nav-link">
+        Cookiemeddelelse
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/dato-felt/" role="menuitem"  class="nav-link">
+        Datoangivelse
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/datovaelger/" role="menuitem"  class="nav-link">
+        Datovælger
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/detaljer/" role="menuitem"  class="nav-link">
+        Detaljer
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/drop-down/" role="menuitem"  class="nav-link">
+        Dropdown-menu
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/faneblad/" role="menuitem"  class="nav-link">
+        Faneblade
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+        Fejlmeddelelser
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+        Fejlopsummering
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/felter/" role="menuitem"  class="nav-link">
+        Felter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/footers/" role="menuitem"  class="nav-link">
+        Footers
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/formular/" role="menuitem"  class="nav-link">
+        Formular
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/funktionslink/" role="menuitem"  class="nav-link">
+        Funktionslink
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/headers/" role="menuitem"  class="nav-link">
+        Headers
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/knapper/" role="menuitem"  class="nav-link">
+        Knapper
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/modal/" role="menuitem"  class="nav-link">
+        Modalvindue
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/notifikation/" role="menuitem"  class="nav-link">
+        Notifikation (Toast)
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
+        Overflow menu
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/radioknap/" role="menuitem"  class="nav-link">
+        Radioknap
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/sidenav/" role="menuitem"  class="nav-link">
+        Sidenavigation
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/skip-link/" role="menuitem"  class="nav-link">
+        Skip-link
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/spinner/" role="menuitem"  class="nav-link">
+        Spinner
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/sprogvaegler/" role="menuitem"  class="nav-link">
+        Sprogvælger
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/search/" role="menuitem"  class="nav-link">
+        Søgefelt
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tilbage-link/" role="menuitem"  class="nav-link">
+        Tilbage link
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tables/" role="menuitem"  class="nav-link">
+        Tabeller
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tags/" role="menuitem"  class="nav-link">
+        Tags
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/textarea/" role="menuitem"  class="nav-link">
+        Tekstområde
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+        Tjekboks
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tooltip/" role="menuitem"  class="nav-link">
+        Tooltip
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/trinindikatorer/" role="menuitem"  class="nav-link">
+        Trinindikatorer
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/fil-upload/" role="menuitem"  class="nav-link">
+        Vedhæft fil (Upload)
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/browserunderstoettelse/" role="menuitem"  class="nav-link">
+        Browserunderstøttelse
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/grid/" role="menuitem"  class="nav-link">
+        Grid
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
+          <span>Typografi</span>
+        </button>
+        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/" role="menuitem"  class="nav-link">
+        Typografi<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/overskrifter/" role="menuitem"  class="nav-link">
+        Overskrifter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/tekst/" role="menuitem"  class="nav-link">
+        Tekst
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/links/" role="menuitem"  class="nav-link">
+        Links
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/lister/" role="menuitem"  class="nav-link">
+        Lister
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/ikoner/" role="menuitem"  class="nav-link">
+        Ikoner
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/utilities/" role="menuitem"  class="nav-link">
+        Hjælpeklasser (Utilities)
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/eksempler-implementering/" role="menuitem"  class="nav-link">
+        Eksempler på implementering
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/print/" role="menuitem"  class="nav-link">
+        Print
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/plugins/" role="menuitem"  class="nav-link">
+        Plugins
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/anbefalinger-vaerktoejer/" role="menuitem"  class="nav-link">
+        Anbefalinger og værktøjer
+      </a>
+     
+    
+  
+</li>
     
 
 
@@ -2188,84 +3122,72 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-krav" aria-haspopup="true" aria-expanded="false"  >
         <span>Krav</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
-        <ul class="overflow-list">
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-<!-- If menu is sidenavigation -->
-  
-
+      <div role="menu" aria-label="Krav" class="overflow-menu-inner" id="submenu-level1-krav" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
 
 
 <li class="  " role="none">
 
   
 
-<a href="/krav/" role="menuitem" 
-  class="nav-link">
-  Krav<span class="helptext"> (overblik)</span>
-</a>
 
+  
+    
+    <a href="/krav/" role="menuitem"  class="nav-link">
+        Krav<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/krav/borgerdk-virk/" role="menuitem" 
-  class="nav-link">
-  Når du skal på borger.dk og Virk
-</a>
 
+  
+    
+    <a href="/krav/borgerdk-virk/" role="menuitem"  class="nav-link">
+        Når du skal på borger.dk og Virk
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/krav/om-kravene/" role="menuitem" 
-  class="nav-link">
-  Om kravene til selvbetjeningsløsninger
-</a>
 
+  
+    
+    <a href="/krav/om-kravene/" role="menuitem"  class="nav-link">
+        Om kravene til selvbetjeningsløsninger
+      </a>
+     
+    
+  
 </li>
-
     
 
 
@@ -2298,156 +3220,152 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-fællesskab" aria-haspopup="true" aria-expanded="false"  >
         <span>Fællesskab</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
-        <ul class="overflow-list">
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-<!-- If menu is sidenavigation -->
-  
-
+      <div role="menu" aria-label="Fællesskab" class="overflow-menu-inner" id="submenu-level1-fællesskab" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
 
 
 <li class="  " role="none">
 
   
 
-<a href="/faellesskab/" role="menuitem" 
-  class="nav-link">
-  Fællesskab<span class="helptext"> (overblik)</span>
-</a>
 
+  
+    
+    <a href="/faellesskab/" role="menuitem"  class="nav-link">
+        Fællesskab<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
-
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/faellesskab/samarbejdsforum/" role="menuitem" 
-  class="nav-link">
-  Samarbejdsforum
-</a>
 
+  
+    
+    <a href="/faellesskab/samarbejdsforum/" role="menuitem"  class="nav-link">
+        Samarbejdsforum
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/faellesskab/nyhedsmail/" role="menuitem" 
-  class="nav-link">
-  Nyhedsmail
-</a>
 
+  
+    
+    <a href="/faellesskab/governance/" role="menuitem"  class="nav-link">
+        Governance
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/faellesskab/kontakt-support/" role="menuitem" 
-  class="nav-link">
-  Kontakt og support
-</a>
 
+  
+    
+    <a href="/faellesskab/nyhedsmail/" role="menuitem"  class="nav-link">
+        Nyhedsmail
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
 
 
 <li class="  " role="none">
 
   
 
-<a href="/faellesskab/roadmap/" role="menuitem" 
-  class="nav-link">
-  Roadmap
-</a>
 
+  
+    
+    <a href="/faellesskab/kontakt-support/" role="menuitem"  class="nav-link">
+        Kontakt og support
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
 
 
+<li class="  " role="none">
+
+  
 
 
+  
+    
+    <a href="/faellesskab/roadmap/" role="menuitem"  class="nav-link">
+        Roadmap
+      </a>
+     
+    
+  
+</li>
+    
 
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
+  
+    
 
 
 <li class="  has-anchor-links" role="none">
 
   
 
-<a href="/faellesskab/releases/" role="menuitem" 
-  class="nav-link">
-  Release notes
-</a>
 
+  
+    
+    <a href="/faellesskab/releases/" role="menuitem"  class="nav-link">
+        Release notes
+      </a>
+     
+    
+  
 </li>
-
     
 
 
@@ -2483,27 +3401,6 @@
 
 
 
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-<!-- If menu is sidenavigation -->
-  
-  <!-- Dont show overview menuitems in sidenavigation -->
-    
-  
-
-
-
-    
-
-    
-
-
-
-
-
-
 <!-- If menuitem is overview page (defined in nav.yml)-->
 
 
@@ -2522,8 +3419,6 @@
     
 
     
-
-
 
 
 
@@ -2550,8 +3445,6 @@
 
 
 
-
-
 <!-- If menuitem is overview page (defined in nav.yml)-->
 
 
@@ -2574,8 +3467,6 @@
 
 
 
-
-
 <!-- If menuitem is overview page (defined in nav.yml)-->
 
 
@@ -2590,38 +3481,12 @@
 </a>
 
     
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    <!-- Uses page.subnav as navmenu-->
     
     
 
     
 
-    <ul class="sidenav-sub_list" role="menu">
-    
-
-
-
-
-
-
-<!-- If menuitem is overview page (defined in nav.yml)-->
-
-
-
-<li class="  " role="none">
-
-  
-
-<a href="/design/ikoner/ikoner-og-deres-betydning/" role="menuitem" 
-  class="nav-link">
-  Udvalgte ikoner og deres betydning
-</a>
-
-</li>
-
-    
-
-</ul>
     
   
 
@@ -2630,8 +3495,6 @@
     
 
     
-
-
 
 
 
@@ -2658,8 +3521,6 @@
 
 
 
-
-
 <!-- If menuitem is overview page (defined in nav.yml)-->
 
 
@@ -2678,8 +3539,6 @@
     
 
     
-
-
 
 
 
@@ -2706,8 +3565,6 @@
 
 
 
-
-
 <!-- If menuitem is overview page (defined in nav.yml)-->
 
 
@@ -2730,8 +3587,6 @@
 
 
 
-
-
 <!-- If menuitem is overview page (defined in nav.yml)-->
 
 
@@ -2750,8 +3605,6 @@
     
 
     
-
-
 
 
 
@@ -2807,9 +3660,7 @@
 
           
 
-          <p><a href="/design/ikoner/ikoner-og-deres-betydning/">Designsystemets ikontaksonomi beskriver udvalgte ikoner og deres betydning</a></p>
-
-<div class="component-preview  component-preview-icons-svg p-4" aria-label="">
+          <div class="component-preview  component-preview-icons-svg p-4" aria-label="">
     <div class="d-flex simple-icon-list">
 
     <div class="w-percent-50 w-percent-md-20 align-text-center">
@@ -2841,7 +3692,7 @@
 
 <p>Følg gængse konventioner for brug af ikoner, hvis de findes. Fx Hus-ikonet anvendes til “hjem”, som går til en forside. Lup-ikonet, bruges til at indikere en søgemulighed, osv.</p>
 
-<p><a href="/design/ikoner/ikoner-og-deres-betydning/">Se flere betydninger i ikontaksonomien</a></p>
+<p><a href="/design/ikoner/#betydning">Se flere betydninger i ikontaksonomien</a></p>
 
 <h2 class="h3">Anvendes ikke til</h2>
 
@@ -2873,8 +3724,6 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
 
 <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
 
-<h3 class="h4">Referencer</h3>
-
 <h3 class="h4">Links</h3>
 
 <ul>
@@ -2882,6 +3731,1649 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   <li><a href="https://www.nngroup.com/articles/icon-testing/" class="icon-link">Usability Testing of Icons<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
   <li><a href="https://www.nngroup.com/articles/classifying-icons/" class="icon-link">Icon Classification: Resemblance, Reference, and Arbitrary Icons<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
+
+<h2 id="betydning">Udvalgte ikoner og deres betydning</h2>
+
+<details class="details">
+    <summary class="details-summary"><span class="details-summary-text">Se her hvis det ikon du leder efter ikke er på listen nedenfor</span></summary>
+    <div class="details-text">
+        <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
+        <ul>
+          <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+          <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+        </ul>
+        <p>Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes på listen.</p>
+        <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+    </div>
+</details>
+<form method="get" action="" id="search-icons-form">
+<div class="search-container form-group">
+    <label class="form-label" for="icon-search-input">
+        Find dit ikon
+    </label>
+    <span class="form-hint" id="icon-search-input-hint">
+        Skriv navnet på ikonet du leder efter  i feltet, så ændres listen
+    </span>
+    <div class="mt-3 search">
+      <input class="form-input input-width-s" aria-describedby="icon-search-input-hint" id="icon-search-input" name="s" title="Search" type="search" />
+      <button type="submit" class="button button-search">Søg ikoner</button>
+    </div>
+</div>
+</form>
+<details class="details mt-4">
+    <summary class="details-summary"><span class="details-summary-text" id="checkbox-list-label">Filtrer på kategori</span></summary>
+    <div class="details-text">
+        <fieldset aria-labelledby="checkbox-list-label">
+          <ul class="nobullet-list" id="category-list">
+            <li>
+              <input id="cat-konventionelle" type="checkbox" name="checkbox-category[]" value="konventionelle" class="form-checkbox" checked="" />
+              <label for="cat-konventionelle">Konventionelle ikoner</label>
+            </li>
+            <li>
+              <input id="cat-beskeder" type="checkbox" name="checkbox-category[]" value="beskeder" class="form-checkbox" checked="" />
+              <label for="cat-beskeder">Beskeder (feedback)</label>
+            </li>
+            <li>
+              <input id="cat-navigation" type="checkbox" name="checkbox-category[]" value="navigation" class="form-checkbox" checked="" />
+              <label for="cat-navigation">Navigation</label>
+            </li>
+            <li>
+              <input id="cat-tilstande" type="checkbox" name="checkbox-category[]" value="tilstande" class="form-checkbox" checked="" />
+              <label for="cat-tilstande">Tilstande</label>
+            </li>
+            <li>
+              <input id="cat-filtyper" type="checkbox" name="checkbox-category[]" value="filtyper" class="form-checkbox" checked="" />
+              <label for="cat-filtyper">Filtyper</label>
+            </li>
+            <li>
+              <input id="cat-funktionalitet" type="checkbox" name="checkbox-category[]" value="funktionalitet" class="form-checkbox" checked="" />
+              <label for="cat-funktionalitet">Funktionalitet</label>
+            </li>
+            <li>
+              <input id="cat-illustrative" type="checkbox" name="checkbox-category[]" value="illustrative" class="form-checkbox" checked="" />
+              <label for="cat-illustrative">Illustrative</label>
+            </li>
+            <li>
+              <input id="cat-tekstredigering" type="checkbox" name="checkbox-category[]" value="tekstredigering" class="form-checkbox" checked="" />
+              <label for="cat-tekstredigering">Tekstredigering</label>
+            </li>
+          </ul>
+        </fieldset>
+    </div>
+</details>
+
+<div aria-live="polite">
+<section class="icon-section" id="icon-section-konventionelle">
+  <h2 class="h5">Konventionelle ikoner</h2>
+  <p>Må ikke bruges til andre formål end de specificerede.</p>
+  
+  <div class="container">
+    <div class="icon-list row" id="icon-list-konventionelle">
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="open-in-new" data-icon-keywords="open in new, new window, external, ekstern, eksternt link">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>
+        <p data-tooltip="open-in-new">Eksternt link (åbner ny side/fane)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="home" data-icon-keywords="hus, hjem, home, forside, house, home">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#home"></use></svg>
+        <p data-tooltip="home">Forside (Hjem)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="save" data-icon-keywords="save, gem, disc, diskette">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#save"></use></svg>
+        <p data-tooltip="save">Gem</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="print" data-icon-keywords="print, printer, udskriv">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#print"></use></svg>
+        <p data-tooltip="print">Print (udskriv)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="trash-can" data-icon-keywords="skraldespand, bin, trash, trash can, can, delete, slet, fjern, rubbish">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
+        <p data-tooltip="trash-can">Slet</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="search" data-icon-keywords="lup, search, søg">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#search"></use></svg>
+        <p data-tooltip="search">Søg</p>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+
+<section class="icon-section" id="icon-section-beskeder">
+  <h2 class="h5 mb-4">Beskeder (feedback)</h2>
+  <div class="container">
+    <div class="icon-list row" id="icon-list-beskeder">
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="report-problem" data-icon-keywords="besked, alert, message, warning, advarsel, report, problem, report problem">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#report-problem"></use></svg>
+        <p data-tooltip="report-problem">Advarsel</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="highlight-off" data-icon-keywords="besked, alert, message, error, fejl">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg>
+        <p data-tooltip="highlight-off">Fejl</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="info" data-icon-keywords="besked, alert, message, information, info">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
+        <p data-tooltip="info">Information</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="help" data-icon-keywords="besked, alert, message, help, hjælp">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+        <p data-tooltip="help">Hjælp</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="check-circle" data-icon-keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg>
+        <p data-tooltip="check-circle">Succes</p>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="icon-section" id="icon-section-navigation">
+  <h2 class="h5 mb-4">Navigation</h2>
+  <div class="container">
+    <div class="icon-list row" id="icon-list-navigation"> 
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="more-horiz" data-icon-keywords="more, vertical, mere">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-horiz"></use></svg>
+        <p data-tooltip="more-horiz">Flere menupunkter (horisontalt)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-right" data-icon-keywords="right, højre, frem, pil, arrow">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+        <p data-tooltip="arrow-right">Frem (højre)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="menu" data-icon-keywords="hamburger, menu, burger, burgermenu, burger menu">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>
+        <p data-tooltip="menu">Menu</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="more-vert" data-icon-keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+        <p data-tooltip="more-vert">Overflowmenu (vertikalt)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="chevron-left" data-icon-keywords="næste, next, side">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg>
+        <p data-tooltip="chevron-left">Paginering forrige</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="first-page" data-icon-keywords="start, første, side">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg>
+        <p data-tooltip="first-page">Paginering første</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="chevron-right" data-icon-keywords="forrige, previous, prev, side">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+        <p data-tooltip="chevron-right">Paginering næste</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="last-page" data-icon-keywords="sidste, slut, side">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg>
+        <p data-tooltip="last-page">Paginering sidste</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-forward" data-icon-keywords="pil, højre, arrow, frem, forward">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-forward"></use></svg>
+        <p data-tooltip="arrow-forward">Pil frem (højre)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-downward" data-icon-keywords="pil, ned, arrow">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-downward"></use></svg>
+        <p data-tooltip="arrow-downward">Pil ned</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-upward" data-icon-keywords="pil, op, arrow">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+        <p data-tooltip="arrow-upward">Pil op</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-back" data-icon-keywords="pil, arrow, tilbage, back">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-back"></use></svg>
+        <p data-tooltip="arrow-back">Pil tilbage (venstre)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-left" data-icon-keywords="pil, arrow, back, tilbage">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>
+        <p data-tooltip="arrow-left">Tilbage (venstre)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="subdirectory-arrow-right" data-icon-keywords="højre, knækpil, pil, arrow">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#subdirectory-arrow-right"></use></svg>
+        <p data-tooltip="subdirectory-arrow-right">Undermenu højre</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="subdirectory-arrow-left" data-icon-keywords="venstre, knækpil, pil, arrow">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#subdirectory-arrow-left"></use></svg>
+        <p data-tooltip="subdirectory-arrow-left">Undermenu venstre</p>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="icon-section" id="icon-section-tilstande">
+  <h2 class="h5 mb-4">Tilstande</h2>
+  <div class="container">
+    <div class="icon-list row" id="icon-list-tilstande">
+     
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-right" data-icon-keywords="pil, højre, lukket, luk, detalje">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+        <p data-tooltip="arrow-right">Detalje lukket</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-drop-down" data-icon-keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
+        <p data-tooltip="arrow-drop-down">Detalje åben / Fold dropdown/overflow ud</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="arrow-drop-up" data-icon-keywords="pil, op, up, arrow, dropdown, fold ind, luk">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-up"></use></svg>
+        <p data-tooltip="arrow-drop-up">Fold dropdown/overflow ind</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="zoom-out" data-icon-keywords="lup, zoom, zoom ud, ud">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#zoom-out"></use></svg>
+        <p data-tooltip="zoom-out">Formindsk</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="zoom-in" data-icon-keywords="lup, zoom, zoom ind, ind">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#zoom-in"></use></svg>
+        <p data-tooltip="zoom-in">Forstør</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="fullscreen" data-icon-keywords="fullscreen, fuld skærm, stor skærm, fuldskærm">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#fullscreen"></use></svg>
+        <p data-tooltip="fullscreen">Fuld skærm</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="remove" data-icon-keywords="-, minus, luk, accordion, close, collapse">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#remove"></use></svg>
+        <p data-tooltip="remove">Luk accordion (minus)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="fullscreen-exit" data-icon-keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#fullscreen-exit"></use></svg>
+        <p data-tooltip="fullscreen-exit">Luk fuld skærm</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort" data-icon-keywords="sortering, sort, unsorted">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort"></use></svg>
+        <p data-tooltip="sort">Ikke sorteret</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="lock-open" data-icon-keywords="log off, log af, log ud, log, off, af, ud, exit, lås, lock, hængelås, åben, open">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock-open"></use></svg>
+        <p data-tooltip="lock-open">Log af (åben hængelås)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="lock" data-icon-keywords="log in, login, log på, log ind, log, in, på, ind, lås, lock, hængelås, låst">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>
+        <p data-tooltip="lock">Log på (lukket hængelås)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="visibility-off" data-icon-keywords="øje, eye, se, see, skjul, blind">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#visibility-off"></use></svg>
+        <p data-tooltip="visibility-off">Skjul</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort-by-alpha" data-icon-keywords="sort, sorting, sorter, sortér, alfabetisk">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-by-alpha"></use></svg>
+        <p data-tooltip="sort-by-alpha">Sortér alfabetisk</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="expand-more" data-icon-keywords="udvid, expand, pil, arrow">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#expand-more"></use></svg>
+        <p data-tooltip="expand-more">Udvid (chevron)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="expand-less" data-icon-keywords="collapse, pil, arrow">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#expand-less"></use></svg>
+        <p data-tooltip="expand-less">Indskrænk (chevron)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="visibility" data-icon-keywords="øje, eye, se, see, vis, blind">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#visibility"></use></svg>
+        <p data-tooltip="visibility">Vis</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort-table-descending" data-icon-keywords="tabel, table, sort, sortering, kolonne, descending">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-descending"></use></svg>
+        <p data-tooltip="sort-table-descending">Sortér tabel (faldende)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort-table-ascending" data-icon-keywords="tabel, table, sort, sortering, kolonne, ascending">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-ascending"></use></svg>
+        <p data-tooltip="sort-table-ascending">Sortér tabel (stigende)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort-table-none" data-icon-keywords="tabel, table, sort, sortering, kolonne">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-none"></use></svg>
+        <p data-tooltip="sort-table-none">Sortér tabel</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort-default" data-icon-keywords="sort, sortering, overflow, overflowmenu, overflow menu">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-default"></use></svg>
+        <p data-tooltip="sort-default">Sortér</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort-ascending" data-icon-keywords="stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-ascending"></use></svg>
+        <p data-tooltip="sort-ascending">Sortér (stigende)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="sort-descending" data-icon-keywords="faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-descending"></use></svg>
+        <p data-tooltip="sort-descending">Sortér (faldende)</p>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+<section class="icon-section" id="icon-section-filtyper">
+  <h2 class="h5 mb-4">Filtyper</h2>
+  <div class="container">
+    <div class="icon-list row" id="icon-list-filtyper">
+     
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="file-image" data-icon-keywords="billede, picture, fotografi, fil, file">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-image"></use></svg>
+        <p data-tooltip="file-image">Billede</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="file-excel" data-icon-keywords="excel, ark, regneark, fil">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-excel"></use></svg>
+        <p data-tooltip="file-excel">Excel</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="file-pdf" data-icon-keywords="PDF, dokument, document, fil">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>
+        <p data-tooltip="file-pdf">PDF</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="file-word" data-icon-keywords="word, dokument, fil, document">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-word"></use></svg>
+        <p data-tooltip="file-word">Word</p>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+<section class="icon-section" id="icon-section-funktionalitet">
+  <h2 class="h5 mb-4">Funktionalitet</h2>
+  <div class="container">
+    <div class="icon-list row" id="icon-list-funktionalitet">
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="close" data-icon-keywords="anuller, annullér, luk, cancel, discard, fortryd">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>
+        <p data-tooltip="close">Annuller (luk)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="hourglass-empty" data-icon-keywords="waiting, hourglass, timeglas, vente, ventetid, tid">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#hourglass-empty"></use></svg>
+        <p data-tooltip="hourglass-empty">Afventer</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="calculator" data-icon-keywords="calculator, lommeregner, beregning, beregner">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#calculator"></use></svg>
+        <p data-tooltip="calculator">Beregner (lommeregner)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="reply" data-icon-keywords="besvar, mail, email">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#reply"></use></svg>
+        <p data-tooltip="reply">Besvar</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="chat" data-icon-keywords="chat, kontakt, kommunikation, communication">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chat"></use></svg>
+        <p data-tooltip="chat">Chat</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="insert-invitation" data-icon-keywords="date, calendar, kalender, dato, invitation, aftale, møde">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#insert-invitation"></use></svg>
+        <p data-tooltip="insert-invitation">Dato / kalender</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="share" data-icon-keywords="share, del">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#share"></use></svg>
+        <p data-tooltip="share">Del</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="file-download" data-icon-keywords="download">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
+        <p data-tooltip="file-download">Download</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="download-done" data-icon-keywords="færdig, gennemført, download">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#download-done"></use></svg>
+        <p data-tooltip="download-done">Download afsluttet</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="email" data-icon-keywords="email, mail, e-mail, e-mailadresse, adresse, adress">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>
+        <p data-tooltip="email">Email</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="feedback" data-icon-keywords="feedback, respons, response, besvarelse">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>
+        <p data-tooltip="feedback">Feedback</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="person-remove" data-icon-keywords="bruger, person, user, remove">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person-remove"></use></svg>
+        <p data-tooltip="person-remove">Fjern person/bruger</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="flag" data-icon-keywords="flag, filled, udfyldt">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#flag"></use></svg>
+        <p data-tooltip="flag">Flag fyldt</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="outlined-flag" data-icon-keywords="flag, tomt">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#outlined-flag"></use></svg>
+        <p data-tooltip="outlined-flag">Flag tomt</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="open-with" data-icon-keywords="flyt, move, drag, drop">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-with"></use></svg>
+        <p data-tooltip="open-with">Flyt</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="credit-card" data-icon-keywords="kreditkort, creditcard, credit, money, payment, betal, betaling, pay">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#credit-card"></use></svg>
+        <p data-tooltip="credit-card">Indbetaling (kreditkort)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="settings" data-icon-keywords="settings, indstillinger">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#settings"></use></svg>
+        <p data-tooltip="settings">Indstillinger</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="photo-camera" data-icon-keywords="kamera, video, picture, billede">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#photo-camera"></use></svg>
+        <p data-tooltip="photo-camera">Kamera (tag billede)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="card-text" data-icon-keywords="card, text, tekst, kort, oplysninger, kontakt, contact">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>
+        <p data-tooltip="card-text">Kontaktoplysninger</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="content-copy" data-icon-keywords="copy, paste, kopi, indsæt, sæt ind">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
+        <p data-tooltip="content-copy">Kopi</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="playlist-add-check" data-icon-keywords="liste, list, done, check, flueben, completed, gennemført">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#playlist-add-check"></use></svg>
+        <p data-tooltip="playlist-add-check">Liste gennemført</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="folder" data-icon-keywords="mappe, folder">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#folder"></use></svg>
+        <p data-tooltip="folder">Mappe</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="notifications" data-icon-keywords="notifikation, besked, toast, notification, bell, klokke, alarm, ringe">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#notifications"></use></svg>
+        <p data-tooltip="notifications">Notifikation/besked</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="refresh" data-icon-keywords="update, refresh, opdater, genindlæs, pil, cirkel">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#refresh"></use></svg>
+        <p data-tooltip="refresh">Opdater (genindlæs)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="create-new-folder" data-icon-keywords="folder, mappe, opret, ny, add, new, create">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#create-new-folder"></use></svg>
+        <p data-tooltip="create-new-folder">Opret mappe</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="apps" data-icon-keywords="apps, applikation, oversigt, overblik, kasser">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#apps"></use></svg>
+        <p data-tooltip="apps">Oversigt (overblik)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="location-on" data-icon-keywords="position, maps, adresse, lokation, location">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#location-on"></use></svg>
+        <p data-tooltip="location-on">Placering (adresse)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="mode" data-icon-keywords="redigér, edit, rediger, ændre, change">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>
+        <p data-tooltip="mode">Rediger</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="send" data-icon-keywords="send">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#send"></use></svg>
+        <p data-tooltip="send">Send</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="language" data-icon-keywords="sprog, language, globe, earch, jorden, lande, countries">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>
+        <p data-tooltip="language">Sprog (globe)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="grade" data-icon-keywords="star, stjerne, bedømmelse, rating">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#grade"></use></svg>
+        <p data-tooltip="grade">Stjerne fyldt (markeret)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="grade-outline" data-icon-keywords="star, stjerne, bedømmelse, rating">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#grade-outline"></use></svg>
+        <p data-tooltip="grade-outline">Stjerne tom (ikke-markeret)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="contact-support" data-icon-keywords="support, kontakt, contact, kommunikation, communication, bubble, help, question">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#contact-support"></use></svg>
+        <p data-tooltip="contact-support">Support</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="cached" data-icon-keywords="synkroniser, refresh, genindlæs, update, opdater">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#cached"></use></svg>
+        <p data-tooltip="cached">Synkroniser (refresh)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="query-builder" data-icon-keywords="ur, tid, time, clock, klokke">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#query-builder"></use></svg>
+        <p data-tooltip="query-builder">Tid (tidsinterval)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="add-a-photo" data-icon-keywords="kamera, camera, picture, add, tilføj, billede, ny, create">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add-a-photo"></use></svg>
+        <p data-tooltip="add-a-photo">Tilføj billede</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="note-add" data-icon-keywords="add, document, dokument, tilføj, new, nyt, ny, opret, create">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#note-add"></use></svg>
+        <p data-tooltip="note-add">Tilføj dokument</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="playlist-add" data-icon-keywords="add, list, tilføj, ny, opret">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#playlist-add"></use></svg>
+        <p data-tooltip="playlist-add">Tilføj til liste</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="person-add-alt-1" data-icon-keywords="add, tilføj, ny, create, opret, bruger, user, person">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person-add-alt-1"></use></svg>
+        <p data-tooltip="person-add-alt-1">Tilføj person/bruger</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="done" data-icon-keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+        <p data-tooltip="done">Udført (korrekt, gennemført)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="upload" data-icon-keywords="Upload, eksporter, export">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#upload"></use></svg>
+        <p data-tooltip="upload">Upload (eksporter)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="attach-file" data-icon-keywords="Vedhæft, attachment, bilag">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#attach-file"></use></svg>
+        <p data-tooltip="attach-file">Vedhæft (bilag)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="forward" data-icon-keywords="videresend">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#forward"></use></svg>
+        <p data-tooltip="forward">Videresend</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="view-headline" data-icon-keywords="Liste, justify">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#view-headline"></use></svg>
+        <p data-tooltip="view-headline">Vis i liste form</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="vertical-split" data-icon-keywords="liste, kasse, billede, layout, vindue">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#vertical-split"></use></svg>
+        <p data-tooltip="vertical-split">Vis i liste form og vindue</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="palette" data-icon-keywords="tema, theme, palette, color, colours, painting, paint">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg>
+        <p data-tooltip="palette">Vælg tema (palette)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="folder-open" data-icon-keywords="open, folder, åben, åbn, mappe">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#folder-open"></use></svg>
+        <p data-tooltip="folder-open">Åben mappe</p>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="icon-section" id="icon-section-illustrative">
+  <h2 class="h5 mb-4">Illustrative</h2>
+  <div class="container">
+    <div class="icon-list row" id="icon-list-illustrative">
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="coronavirus" data-icon-keywords="virus, corona, coronavirus, covid, 19, covid19, covid-19, pandemi, epidemi">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#coronavirus"></use></svg>
+        <p data-tooltip="coronavirus">Corona (Covid-19)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="list-alt" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#list-alt"></use></svg>
+        <p data-tooltip="list-alt">Opgørelse / Resumé / Opsummering</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="assignment" data-icon-keywords="assignment">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#assignment"></use></svg>
+        <p data-tooltip="assignment">Opgave</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="payments" data-icon-keywords="money, payment">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#payments"></use></svg>
+        <p data-tooltip="payments">Penge/Betaling/Opkrævning</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="database" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#database"></use></svg>
+        <p data-tooltip="database">Data</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="assessment" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#assessment"></use></svg>
+        <p data-tooltip="assessment">Analyse</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="map" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#map"></use></svg>
+        <p data-tooltip="map">Kort</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="link" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#link"></use></svg>
+        <p data-tooltip="link">Links</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="person" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person"></use></svg>
+        <p data-tooltip="person">Person (bruger)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="shopping-cart" data-icon-keywords="shopping, buy, cart, payment, checkout">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#shopping-cart"></use></svg>
+        <p data-tooltip="shopping-cart">Kurv (afventer køb)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="videocam" data-icon-keywords="video, kamera">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#videocam"></use></svg>
+        <p data-tooltip="videocam">Videokamera</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="headphones" data-icon-keywords="headset, sound, lyd, høretelefoner">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#headphones"></use></svg>
+        <p data-tooltip="headphones">Headset</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="desktop-windows" data-icon-keywords="skærm, screen, computer">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#desktop-windows"></use></svg>
+        <p data-tooltip="desktop-windows">Desktop</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="laptop" data-icon-keywords="bærbar, computer">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#laptop"></use></svg>
+        <p data-tooltip="laptop">Labtop</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="phone-iphone" data-icon-keywords="telefon, smartphone">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#phone-iphone"></use></svg>
+        <p data-tooltip="phone-iphone">Mobiltelefon</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="mouse" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mouse"></use></svg>
+        <p data-tooltip="mouse">Mus</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="accessibility-new" data-icon-keywords="man, mand">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#accessibility-new"></use></svg>
+        <p data-tooltip="accessibility-new">Tilgængelighed</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-list-bulleted" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-bulleted"></use></svg>
+        <p data-tooltip="format-list-bulleted">Liste</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-list-checks" data-icon-keywords="punktopstilling, liste">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg>
+        <p data-tooltip="format-list-checks">Tjekliste</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="bookmark-border" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#bookmark-border"></use></svg>
+        <p data-tooltip="bookmark-border">Bogmærke</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="bookmarks" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#bookmarks"></use></svg>
+        <p data-tooltip="bookmarks">Bogmærker</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="card-account-details" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-account-details"></use></svg>
+        <p data-tooltip="card-account-details">Kontaktoplysninger</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="people-alt" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#people-alt"></use></svg>
+        <p data-tooltip="people-alt">Personer (brugere)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="groups" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#groups"></use></svg>
+        <p data-tooltip="groups">Gruppe (møde)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="forum" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#forum"></use></svg>
+        <p data-tooltip="forum">Forum</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="insert-drive-file" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#insert-drive-file"></use></svg>
+        <p data-tooltip="insert-drive-file">Dokument (sag)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="domain" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#domain"></use></svg>
+        <p data-tooltip="domain">Virksomhed</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="face" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#face"></use></svg>
+        <p data-tooltip="face">Elev</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="engineering" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#engineering"></use></svg>
+        <p data-tooltip="engineering">Erhverv/Erhversuddannet</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="account-circle" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#account-circle"></use></svg>
+        <p data-tooltip="account-circle">Brugerprofil</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="how-to-reg" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#how-to-reg"></use></svg>
+        <p data-tooltip="how-to-reg">Fuldmagtsprofil (3. part)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="support-agent" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#support-agent"></use></svg>
+        <p data-tooltip="support-agent">Supporter (telefonrådgiver)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="local-shipping" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#local-shipping"></use></svg>
+        <p data-tooltip="local-shipping">Lastbil (transport)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="agriculture" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#agriculture"></use></svg>
+        <p data-tooltip="agriculture">Traktor (landmand)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="school" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#school"></use></svg>
+        <p data-tooltip="school">Studerende (studie)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="construction" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg>
+        <p data-tooltip="construction">Håndværk (bygge- og anlægsarbejde)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="science" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#science"></use></svg>
+        <p data-tooltip="science">Videnskab (kemi)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="drive-eta" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#drive-eta"></use></svg>
+        <p data-tooltip="drive-eta">Bil (transport)</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="tune" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#tune"></use></svg>
+        <p data-tooltip="tune">Parameter (finjustering)</p>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="icon-section" id="icon-section-tekstredigering">
+  <h2 class="h5 mb-4">Tekstredigering</h2>
+  <div class="container">
+    <div class="icon-list row" id="icon-list-tekstredigering">
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="text-format" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#text-format"></use></svg>
+        <p data-tooltip="text-format">Formater tekst</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-size" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-size"></use></svg>
+        <p data-tooltip="format-size">Tekststørrelse</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-bold" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-bold"></use></svg>
+        <p data-tooltip="format-bold">Fed</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-italic" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-italic"></use></svg>
+        <p data-tooltip="format-italic">Kursiv</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-underlined" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-underlined"></use></svg>
+        <p data-tooltip="format-underlined">Understregning</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-color-text" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-color-text"></use></svg>
+        <p data-tooltip="format-color-text">Farve</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-color-fill" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-color-fill"></use></svg>
+        <p data-tooltip="format-color-fill">Baggrundsfarve</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-clear" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-clear"></use></svg>
+        <p data-tooltip="format-clear">Ryd tekstformaterering</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-list-bulleted" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-bulleted"></use></svg>
+        <p data-tooltip="format-list-bulleted">Punktopstilling</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-list-numbered" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-numbered"></use></svg>
+        <p data-tooltip="format-list-numbered">Punktopstilling numerisk</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-indent-increase" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-indent-increase"></use></svg>
+        <p data-tooltip="format-indent-increase">Indryk højre</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-indent-decrease" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-indent-decrease"></use></svg>
+        <p data-tooltip="format-indent-decrease">Indryk venstre</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-align-left" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-left"></use></svg>
+        <p data-tooltip="format-align-left">Venstrestil tekst</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-align-center" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-center"></use></svg>
+        <p data-tooltip="format-align-center">Centreret tekst</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-align-right" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-right"></use></svg>
+        <p data-tooltip="format-align-right">Højrestillet tekst</p>
+    </div>
+  </div>
+
+
+          
+<div class="col-6 col-md-3 icon-container p-0">
+    <div class="icon-box" data-icon-name="format-align-justify" data-icon-keywords="">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-justify"></use></svg>
+        <p data-tooltip="format-align-justify">Lige marginer</p>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+<div class="alert alert-info d-none mt-4" id="no-results-message">
+    <div class="alert-body">
+        <p class="alert-heading">Der er desværre intet ikon der matcher</p>
+        <p class="alert-text">Prøv evt. at søge hos:</p>
+        <ul class="nobullet-list">
+          <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+          <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<p><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Efterspørg eller giv feedback på et ikon på vores FDS GitHub side<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+
+<script>
+    let searchTerm, selectedIcon
+    const searchInput = document.getElementById("icon-search-input");
+    const searchForm = document.getElementById("search-icons-form");
+    
+    let queryParams = new URLSearchParams(window.location.search);
+    searchInput.value = queryParams.get('s');
+    let searchableItems = [];
+    let icons = document.getElementsByClassName('icon-box');
+    for(let i = 0; i < icons.length; i++){
+      const itemName = icons[i].dataset.iconName.toLowerCase();
+      const itemKeywords = icons[i].dataset.iconKeywords.toLowerCase().trim();
+      const itemLabel = icons[i].getElementsByTagName('p')[0].innerText;
+      const category = icons[i].parentNode.parentNode.getAttribute('id').replace('icon-list-', '');
+      searchableItems.push({"name": itemName, "keywords": itemKeywords, "label": itemLabel, "category": category});
+    }
+    searchForm.addEventListener("submit" , handleInput);
+    
+     let categories = document.getElementById('category-list').getElementsByTagName('input');
+      for(let i = 0; i < categories.length; i++){
+        categories[i].addEventListener('change', function(){
+          let section = document.getElementById('icon-section-'+this.value);
+          if(this.checked && section.getElementsByClassName('icon-container').length !== 0){
+            section.classList.remove('d-none');
+          } else{
+            section.classList.add('d-none');
+          }
+
+          let sections = document.getElementsByClassName('icon-section');
+          let visibleResults = false;
+          for(let a = 0; a < sections.length; a++){
+            if(!sections[a].classList.contains('d-none')){
+              visibleResults = true;
+            }
+          }
+          if(visibleResults){
+            document.getElementById('no-results-message').classList.add('d-none');
+          } else{
+            document.getElementById('no-results-message').classList.remove('d-none');
+          }
+        });
+      }
+
+
+    function handleInput(e) {
+      e.preventDefault();
+      let searchTerm = searchInput.value.toLowerCase();
+      let queryParams = new URLSearchParams(window.location.search);
+      if(searchTerm !== ""){
+        queryParams.set('s', searchInput.value);
+      } else{
+        queryParams.delete('s');
+      }
+      history.replaceState(null, null, "?" + queryParams.toString());
+      let lists = document.getElementsByClassName('icon-list');
+      for(let i = 0; i < lists.length; i++){
+        lists[i].innerHTML = "";
+      }
+      
+      for (i in searchableItems) {
+        let icon = searchableItems[i];
+        if((icon.name.toLowerCase().indexOf(searchTerm) !== -1 || icon.keywords.toLowerCase().indexOf(searchTerm) !== -1 || icon.label.toLowerCase().indexOf(searchTerm) !== -1)){
+          let iconContainer = document.createElement('div');
+          let iconBox = document.createElement('div');
+          let iconText = document.createElement('p');
+          let svgns = "http://www.w3.org/2000/svg";
+          let xlinkns = "http://www.w3.org/1999/xlink";
+          let svg = document.createElementNS(svgns, 'svg');
+          svg.classList.add('icon-svg');
+          svg.setAttribute('focusable', 'false');
+          svg.setAttribute('aria-hidden', 'true');
+          let use = document.createElementNS(svgns, "use");
+          use.setAttributeNS(xlinkns, "href", "#"+icon.name);
+          svg.appendChild(use);
+          
+
+          iconContainer.classList.add('col-6', 'col-md-3', 'icon-container', 'p-0');
+          iconBox.classList.add('icon-box');
+          iconText.innerText = icon.label;
+          iconBox.appendChild(svg);
+          iconBox.appendChild(iconText);
+          iconContainer.appendChild(iconBox);
+          document.getElementById('icon-list-'+icon.category).appendChild(iconContainer);
+        }
+      }
+
+     
+      let hasResults = false;
+      // Show or hide sections/categories depending on if they have results
+      let sections = document.getElementsByClassName('icon-section');
+      for(let i = 0; i < sections.length; i++){
+        let sectionCategoryName = sections[i].id.replace('icon-section-', '');
+        if(sections[i].getElementsByClassName('icon-container').length === 0 || document.getElementById('cat-'+sectionCategoryName).checked === false){
+          sections[i].classList.add('d-none');
+        } else{
+          hasResults = true;
+          sections[i].classList.remove('d-none');
+        }
+      }
+
+      // Show or hide no results message
+      let messageElement = document.getElementById('no-results-message');
+      if(hasResults){
+        messageElement.classList.add('d-none');
+      } else{
+        messageElement.classList.remove('d-none');
+      }
+    }
+</script>
+
 
 
           
@@ -2892,9 +5384,6 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
               <!-- found in list level 1-->
               
               <!-- not found in level 1 - check all categorynav -->
-              <!-- found in list level 1-->
-              
-              <!-- not found in level 1 - check all categorynav -->
               
               
                 
@@ -2917,16 +5406,8 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
               
                 
                   
-                    
-                    
-            <h2 class="sr-only d-lg-none">Undersider</h2>
-
-            <ul class="d-lg-none nobullet-list">
-            <li><a href="/design/ikoner/ikoner-og-deres-betydning/">Udvalgte ikoner og deres betydning</a></li>
-            
-            
-            </ul>
-            
+                  
+                  
           
       </section>
     </main>

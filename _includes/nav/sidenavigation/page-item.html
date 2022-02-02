@@ -1,0 +1,54 @@
+{% include nav/current.html page=include.page %}
+{% assign _show = true %}
+{% assign _overblik = include.overblik | default:false %}
+
+<!-- If menuitem is overview page (defined in nav.yml)-->
+{% if _overblik == true %}
+  <!-- Dont show overview menuitems in sidenavigation -->
+    {% assign _show = false %}
+{% endif %}
+
+{% if _show %}
+<li class="{% if _current -%}current{% endif %} {% if _active -%}active{% endif %} {% if _anchor -%}has-anchor-links{% endif %}" role="none">
+{% assign titletext = include.page.title %}
+  {%  assign _anchor = false %}
+{% if include.use_alt_text and include.alternative_text %}
+  {% assign titletext = include.alternative_text %}
+{% endif %}
+<a href="{{ include.page.url | relative_url }}" role="menuitem" {% if _current and _active == false %}aria-current="true"{% endif %}{%  if _active %}aria-current="page"{% endif %}
+  class="nav-link">
+  {{ titletext | smartify }}{% if _overblik == true %}<span class="helptext"> (overblik)</span>{% endif %}
+</a>
+{% if _current -%}
+  {% unless include.flat -%}
+    {% assign _href_key = include.href_key %}
+    {% assign _text_key = include.href_key %}
+    {% if include.categorynav -%}
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    {% assign _links = site.data.nav[include.categorynav] %}
+    {% else -%}
+    <!-- Uses page.subnav as navmenu-->
+    {% assign _links = include.links | default: include.page.subnav %}
+    {% endif %}
+
+    {% if _links.href -%}
+      {% assign _href_key = _links.href %}
+      {% assign _text_key = _links.text %}
+      {% assign _data_key = _links.data %}
+      {% assign _links = site.data[_data_key] %}
+    {% elsif _links.type %}
+      {% assign _links = nil %}
+    {% endif %}
+
+    {% if _links -%}
+    <ul class="{{ include.subnav_class | default: 'sidenav-sub_list' }}" role="menu">{%
+      include nav/list.html
+      links=_links
+      text_key=_text_key
+      href_key=_href_key
+    %}</ul>
+    {% endif %}
+  {% endunless %}
+{% endif %}
+</li>
+{% endif %}

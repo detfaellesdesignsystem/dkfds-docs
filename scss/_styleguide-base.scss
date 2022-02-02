@@ -119,8 +119,7 @@
       }
     }
     .form-hint.small-text{
-      font-size: $small-text-font-size;
-      line-height: $small-text-line-height;
+      @include small-text();
     }
   }
   

@@ -135,8 +135,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet <a href="/komponenter/modal/#kraever-handling">modalvindue</a> som kræver handling, så brugeren ikke kan lukke modalvinduet uden at tage stilling til dets indhold. 
 - <span class="badge badge-info badge-small mr-3">Change</span> Ved luk af <a href="/komponenter/modal/#">modalvindue</a> sættes fokus på element, som åbnede modalvinduet
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Luk modalvindue, hvis en ny <a href="/komponenter/modal/">modalvindue</a> åbnes.
-
-
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Forbedret <a href="/komponenter/headers/#standard-header-med-navigation">navigation i headeren</a> på mobil.
 
 {:#version-7-5-3 .mb-0}
 ## Version 7.5.3
