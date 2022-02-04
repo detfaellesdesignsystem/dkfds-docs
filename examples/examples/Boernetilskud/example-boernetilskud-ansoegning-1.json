@@ -27,12 +27,22 @@
   "title": "Hvilke børn søger du tilskud til?",
   "lead": "Brug en af de følgende funktioner, til at administrere børnetilskud:",
   "footer_data": {
-    "listitems": [
-      {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},
-      {"content": "<a class=\"function-link\" href=\"mailto:support@example.dk\">support@example.dk</a>"},
-      {"content": "<a class=\"function-link\" href=\"tel:12345678\">12 34 56 78</a>"},
-      {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
-      {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-    ]
+    "list": {
+      "items": [
+        {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},
+        {"content": "<a class=\"function-link\" href=\"mailto:support@example.dk\">support@example.dk</a>"},
+        {"content": "<a class=\"function-link\" href=\"tel:12345678\">12 34 56 78</a>"},
+        {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
+        {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
+      ]
+    }
+  },
+  "stepguide":{
+    "button": {
+      "text": "Trin 1 af 2",
+      "icon": "arrow-drop-down"
+      },
+    "id": "overflow_steps",
+    "content": "<nav><ul class='sidenav-list' role='menu'><li class='active current' role='none'><a href='/pages/eksempler/boernetilskud/boernetilskud-1' role='menuitem' aria-current='page'><span class='sidenav-number'>1.</span><span class='sidenav-title'>Hvilke børn søger du tilskud til?</span></a></li><li role='none'><a href='/pages/eksempler/boernetilskud/boernetilskud-2' role='menuitem'><span class='sidenav-number'>2.</span><span class='sidenav-title'>Hvornår blev du eller bliver du enlig?</span></a></li></ul></nav>"
   }
 }

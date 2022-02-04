@@ -7,7 +7,7 @@
         "value": "1",
         "checked": false,
         "disabled": false,
-        "text": "Tjekboks 1",
+        "label": "Tjekboks 1",
         "large": true
       },
       {
@@ -16,7 +16,7 @@
         "value": "2",
         "checked": false,
         "disabled": false,
-        "text": "Tjekboks 2",
+        "label": "Tjekboks 2",
         "large": true
       },
       {
@@ -25,7 +25,7 @@
         "value": "3",
         "checked": false,
         "disabled": false,
-        "text": "Tjekboks 3",
+        "label": "Tjekboks 3",
         "large": true
       },
       {
@@ -34,7 +34,7 @@
         "value": "4",
         "checked": false,
         "disabled": true,
-        "text": "Tjekboks 4",
+        "label": "Tjekboks 4",
         "large": true
       }
     ]

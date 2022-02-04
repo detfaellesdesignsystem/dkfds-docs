@@ -7,7 +7,7 @@
         "value": "dansk",
         "checked": false,
         "disabled": false,
-        "text": "Dansk",
+        "label": "Dansk",
         "large": true
       },
       {
@@ -16,7 +16,7 @@
         "value": "svensk",
         "checked": false,
         "disabled": false,
-        "text": "Svensk",
+        "label": "Svensk",
         "large": true
       },
       {
@@ -25,7 +25,7 @@
         "value": "anden",
         "checked": false,
         "disabled": false,
-        "text": "Anden nationalitet",
+        "label": "Anden nationalitet",
         "large": true
       }
     ]

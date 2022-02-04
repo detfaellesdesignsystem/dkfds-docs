@@ -1,7 +1,9 @@
 {
-  "textinput_example":{
+  "params":{
     "id": "input-type-help-text",
-    "label": "Inputfelt med label og hjælpetekst",
+    "label": {
+      "text": "Inputfelt med label og hjælpetekst"
+    },
     "name": "input-type-help-text",
     "hint": "Fx 12345678"
   }

@@ -5,7 +5,7 @@
         "value": "ja",
         "disabled": false,
         "checked": false,
-        "text": "Ja",
+        "label": "Ja",
         "large": true
     },
     "radiobutton_kort_nej": {
@@ -14,7 +14,7 @@
         "value": "nej",
         "disabled": false,
         "checked": false,
-        "text": "Nej",
+        "label": "Nej",
         "large": true
     }
 }

@@ -4,28 +4,28 @@
     "items": [
       {
         "text": "Default",
-        "class": "quaternary",
+        "classes": "quaternary",
         "icon": "arrow-left"
       },
       {
         "text": "Hover",
-        "class": "quaternary button-hover",
+        "classes": "quaternary button-hover",
         "icon": "arrow-left"
       },
       {
         "text": "Active",
-        "class": "quaternary button-active",
+        "classes": "quaternary button-active",
         "icon": "arrow-left"
       },
       {
         "text": "Focus",
-        "class": "quaternary focus",
+        "classes": "quaternary focus",
         "icon": "arrow-left"
       },
       {
         "text": "Disabled",
-        "class": "quaternary",
-        "attribute": "disabled",
+        "classes": "quaternary",
+        "attributes": "disabled",
         "icon": "arrow-left"
       }
     ]

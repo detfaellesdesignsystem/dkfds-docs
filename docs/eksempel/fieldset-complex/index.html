@@ -230,45 +230,40 @@
     
       <h1 id="example-heading-fieldset-complex" class="sr-only">Fieldset complex</h1>
       <h1 class="h2">Dine kontaktoplysninger</h1>
-<form>
-    <!-- Felt start: Fornavn -->
+<form novalidate="">
     <div class="form-group">
-        <label class="form-label " for="fnavn">
+
+        <label class="form-label" for="fnavn">
             Fornavn
         </label>
 
-        <input class="form-input " required="" id="fnavn" value="" name="fnavn" type="text" />
+        <input class="form-input" id="fnavn" name="fnavn" type="text" required="" />
     </div>
-    <!-- Felt slut: Fornavn -->
-    <!-- Felt start: Efternavn -->
     <div class="form-group">
-        <label class="form-label " for="enavn">
+
+        <label class="form-label" for="enavn">
             Efternavn
         </label>
 
-        <input class="form-input " required="" id="enavn" value="" name="enavn" type="text" />
+        <input class="form-input" id="enavn" name="enavn" type="text" required="" />
     </div>
-    <!-- Felt slut: Efternavn -->
-    <!-- Felt start: E-mail adresse -->
     <div class="form-group">
-        <label class="form-label " for="fieldset-email">
+
+        <label class="form-label" for="fieldset-email">
             E-mail adresse
         </label>
 
-        <input class="form-input " required="" id="fieldset-email" value="" name="email" type="text" />
+        <input class="form-input" id="fieldset-email" name="email" type="text" required="" />
     </div>
-    <!-- Felt slut: E-mail adresse -->
-    <!-- Felt start: Telefonnummer -->
     <div class="form-group">
-        <label class="form-label " for="telefon">
+
+        <label class="form-label" for="fieldset-telefon">
             Telefonnummer
         </label>
 
-        <input class="form-input input-width-s" required="" id="telefon" value="" name="telefon" type="text" />
+        <input class="form-input input-width-s" id="fieldset-telefon" name="telefon" type="text" required="" />
     </div>
-    <!-- Felt slut: Telefonnummer -->
 
-    <!-- Felt start: Kontaktmetode -->
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Hvordan vil du helst kontaktes?
@@ -289,36 +284,33 @@
             </ul>
         </fieldset>
     </div>
-    <!-- Felt slut: Kontaktmetode -->
-
-    <!-- Felt start: Tid på dagen -->
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Hvornår på dagen vil det passe
                 bedst, at vi kontakter dig?</legend>
             <ul class="nobullet-list">
                 <li>
-                    <input id="morgen" type="checkbox" name="tidspunkt[]" value="morgen" class="form-checkbox  checkbox-large " />
-                    <label for="morgen" class="">Om morgenen</label>
+                    <input id="checkbox-morgen" type="checkbox" name="tidspunkt[]" value="morgen" class="form-checkbox checkbox-large " />
+                    <label for="checkbox-morgen" class="">Om
+                        morgenen</label>
                 </li>
                 <li>
-                    <input id="middag" type="checkbox" name="tidspunkt[]" value="middag" class="form-checkbox  checkbox-large " />
-                    <label for="middag" class="">Ved middagstid</label>
+                    <input id="checkbox-middag" type="checkbox" name="tidspunkt[]" value="middag" class="form-checkbox checkbox-large " />
+                    <label for="checkbox-middag" class="">Ved
+                        middagstid</label>
                 </li>
                 <li>
-                    <input id="eftermiddag" type="checkbox" name="tidspunkt[]" value="eftermiddag" class="form-checkbox  checkbox-large " />
-                    <label for="eftermiddag" class="">Om
+                    <input id="checkbox-eftermiddag" type="checkbox" name="tidspunkt[]" value="eftermiddag" class="form-checkbox checkbox-large " />
+                    <label for="checkbox-eftermiddag" class="">Om
                         eftermiddagen</label>
                 </li>
                 <li>
-                    <input id="aften" type="checkbox" name="tidspunkt[]" value="aften" class="form-checkbox  checkbox-large " />
-                    <label for="aften" class="">Om aftenen</label>
+                    <input id="checkbox-aften" type="checkbox" name="tidspunkt[]" value="aften" class="form-checkbox checkbox-large " />
+                    <label for="checkbox-aften" class="">Om aftenen</label>
                 </li>
             </ul>
         </fieldset>
     </div>
-    <!-- Felt slut: Tid på dagen -->
-    <!-- Felt start: Personlige oplysninger -->
     <div class="form-group">
         <fieldset>
             <legend class="h4">Personlige oplysninger</legend>

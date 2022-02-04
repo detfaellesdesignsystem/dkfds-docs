@@ -1,10 +1,8 @@
 {
   "accordion_example": {
-    "label": "unbordered",
     "id_prefix": "nob-",
-    "multiselectable": true,
-    "variant": "unbordered",
-    "heading_level": false,
+    "borderless": "unbordered",
+    "headingLevel": false,
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",

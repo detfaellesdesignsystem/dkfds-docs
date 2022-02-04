@@ -4428,7 +4428,7 @@
         <div class="row mx-0">
         <aside class="sidebar-col">
         
-        <div class="overflow-menu  overflow-menu--open-right ">
+        <div class="overflow-menu  overflow-menu--open-right">
     <button class="button-overflow-menu js-dropdown " data-js-target="overflow5" aria-haspopup="true" aria-expanded="false">
         Trin 2 af 3
         <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
@@ -4483,7 +4483,7 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu  overflow-menu--open-right &quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu  overflow-menu--open-right&quot;&gt;
     &lt;button class=&quot;button-overflow-menu js-dropdown &quot;
         data-js-target=&quot;overflow5&quot; aria-haspopup=&quot;true&quot;
         aria-expanded=&quot;false&quot;&gt;
@@ -4564,7 +4564,8 @@
             &lt;ul class=&quot;sidenav-list&quot; role=&quot;menu&quot;&gt;
                 &lt;li role=&quot;none&quot;&gt;
                     &lt;a href=&quot;#&quot; role=&quot;menuitem&quot;&gt;
-                        1. Trin 1
+                        &lt;span class=&#39;sidenav-number&#39;&gt;1.&lt;/span&gt;&lt;span
+                            class=&#39;sidenav-title&#39;&gt;Trin 1&lt;/span&gt;
                         &lt;span class=&quot;sidenav-icon&quot;&gt;
                             &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                         &lt;/span&gt;
@@ -4572,12 +4573,14 @@
                 &lt;/li&gt;
                 &lt;li class=&quot;active current&quot; role=&quot;none&quot;&gt;
                     &lt;a href=&quot;#&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;&gt;
-                        2. Trin 2
+                        &lt;span class=&#39;sidenav-number&#39;&gt;2.&lt;/span&gt;&lt;span
+                            class=&#39;sidenav-title&#39;&gt;Trin 2&lt;/span&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li role=&quot;none&quot;&gt;
                     &lt;a href=&quot;#&quot; role=&quot;menuitem&quot;&gt;
-                        3. Trin 3
+                        &lt;span class=&#39;sidenav-number&#39;&gt;3.&lt;/span&gt;&lt;span
+                            class=&#39;sidenav-title&#39;&gt;Trin 3&lt;/span&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
@@ -4603,25 +4606,41 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav&gt;
     &lt;ul class=&quot;sidenav-list&quot; role=&quot;menu&quot;&gt;
+
         &lt;li role=&quot;none&quot;&gt;
             &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
-                1. Trin 1
+                &lt;span class=&quot;sidenav-number&quot;&gt;1.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 1&lt;/span&gt;
 
                 &lt;span class=&quot;sidenav-icon&quot;&gt;
-                    &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                    &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                 &lt;/span&gt;
 
-            &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot; active current&quot; role=&quot;none&quot;&gt;
-            &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;&gt;
-                2. Trin 2
+                &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
+                    trin 1&lt;/span&gt;
 
             &lt;/a&gt;
         &lt;/li&gt;
+
+        &lt;li class=&quot; active current&quot; role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;
+                aria-current=&quot;page&quot;&gt;
+                &lt;span class=&quot;sidenav-number&quot;&gt;2.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 2&lt;/span&gt;
+
+                &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
+                    trin 2&lt;/span&gt;
+
+            &lt;/a&gt;
+        &lt;/li&gt;
+
         &lt;li role=&quot;none&quot;&gt;
             &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
-                3. Trin 3
+                &lt;span class=&quot;sidenav-number&quot;&gt;3.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 3&lt;/span&gt;
+
+                &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
+                    trin 3&lt;/span&gt;
 
             &lt;/a&gt;
         &lt;/li&gt;
@@ -4645,27 +4664,41 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav&gt;
-    &lt;ul class=&quot;sidenav-list sidenav-list-locked&quot; role=&quot;menu&quot;&gt;
+    &lt;ul class=&quot;sidenav-list&quot; role=&quot;menu&quot;&gt;
+
         &lt;li class=&quot;disabled &quot; role=&quot;none&quot;&gt;
-            &lt;a tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; role=&quot;menuitem&quot;&gt;
-                1. Trin 1
+            &lt;a role=&quot;menuitem&quot;&gt;
+                &lt;span class=&quot;sidenav-number&quot;&gt;1.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 1&lt;/span&gt;
 
                 &lt;span class=&quot;sidenav-icon&quot;&gt;
-                    &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                    &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                 &lt;/span&gt;
 
-            &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;disabled active current&quot; role=&quot;none&quot;&gt;
-            &lt;a tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; role=&quot;menuitem&quot;
-                aria-current=&quot;page&quot;&gt;
-                2. Trin 2
+                &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
+                    trin 1&lt;/span&gt;
 
             &lt;/a&gt;
         &lt;/li&gt;
+
+        &lt;li class=&quot;disabled active current&quot; role=&quot;none&quot;&gt;
+            &lt;a role=&quot;menuitem&quot; aria-current=&quot;page&quot; aria-current=&quot;page&quot;&gt;
+                &lt;span class=&quot;sidenav-number&quot;&gt;2.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 2&lt;/span&gt;
+
+                &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
+                    trin 2&lt;/span&gt;
+
+            &lt;/a&gt;
+        &lt;/li&gt;
+
         &lt;li class=&quot;disabled &quot; role=&quot;none&quot;&gt;
-            &lt;a tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot; role=&quot;menuitem&quot;&gt;
-                3. Trin 3
+            &lt;a role=&quot;menuitem&quot;&gt;
+                &lt;span class=&quot;sidenav-number&quot;&gt;3.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 3&lt;/span&gt;
+
+                &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
+                    trin 3&lt;/span&gt;
 
             &lt;/a&gt;
         &lt;/li&gt;
@@ -4690,12 +4723,14 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav&gt;
     &lt;ul class=&quot;sidenav-list&quot; role=&quot;menu&quot;&gt;
+
         &lt;li role=&quot;none&quot;&gt;
             &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
-                1. Trin 1
+                &lt;span class=&quot;sidenav-number&quot;&gt;1.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 1&lt;/span&gt;
 
                 &lt;span class=&quot;sidenav-icon&quot;&gt;
-                    &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                    &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                 &lt;/span&gt;
 
                 &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
@@ -4703,18 +4738,23 @@
 
             &lt;/a&gt;
         &lt;/li&gt;
+
         &lt;li class=&quot; active current&quot; role=&quot;none&quot;&gt;
-            &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;&gt;
-                2. Trin 2
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;
+                aria-current=&quot;page&quot;&gt;
+                &lt;span class=&quot;sidenav-number&quot;&gt;2.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 2&lt;/span&gt;
 
                 &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
                     trin 2&lt;/span&gt;
 
             &lt;/a&gt;
         &lt;/li&gt;
+
         &lt;li role=&quot;none&quot;&gt;
             &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
-                3. Trin 3
+                &lt;span class=&quot;sidenav-number&quot;&gt;3.&lt;/span&gt; &lt;span
+                    class=&quot;sidenav-title&quot;&gt;Trin 3&lt;/span&gt;
 
                 &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for
                     trin 3&lt;/span&gt;

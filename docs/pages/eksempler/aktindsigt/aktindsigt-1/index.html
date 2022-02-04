@@ -234,7 +234,7 @@
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn"
-                class="logo alert-leave">
+                class="logo ">
 
             </a>
             <button
@@ -248,8 +248,7 @@
                 <p class="user"><span class="username">Christian Emil
                         Vestergaard Christiansen</span> </p>
 
-                <button
-                    class="button button-secondary alert-leave d-print-none">
+                <button class="button button-secondary d-print-none">
                     Log af
                 </button>
             </div>
@@ -257,10 +256,10 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header header-end">
+    <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" class="alert-leave2">
+                <a href="#" class="">
                     Ansøg om indsigt
                 </a>
             </div>
@@ -285,7 +284,7 @@
     <nav class=" nav">
         <!-- collapsible-->
         <button class="function-link button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user bold">Christian Emil Vestergaard Christiansen
@@ -308,91 +307,95 @@
 
 <main class="container page-container" id="main-content">
 
-    <form class="form" method="post"
+    <form novalidate class="form" method="post"
         action="/pages/eksempler/aktindsigt/aktindsigt-2/">
         <div role="group" aria-labelledby="oplysninger-om-dig">
             <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
             <div class="form-group">
-                <label class="form-label " for="id-fornavn">
+
+                <label class="form-label" for="id-fornavn">
                     Fornavn
                 </label>
 
-                <input class="form-input input-width-m" required
-                    id="id-fornavn" value="" name="Input til fornavn"
-                    type="text">
+                <input class="form-input input-width-m" id="id-fornavn"
+                    name="fornavn" type="text" required />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-efternavn">
+
+                <label class="form-label" for="id-efternavn">
                     Efternavn
                 </label>
 
-                <input class="form-input input-width-m" required
-                    id="id-efternavn" value="" name="Input til efternavn"
-                    type="text">
+                <input class="form-input input-width-m" id="id-efternavn"
+                    name="efternavn" type="text" required />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-gade-vej">
+
+                <label class="form-label" for="id-gade-vej">
                     Gade/vej
                 </label>
 
-                <input class="form-input input-width-m" required
-                    id="id-gade-vej" value="" name="Input til gade/vej"
-                    type="text">
+                <input class="form-input input-width-m" id="id-gade-vej"
+                    name="gade" type="text" required />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-husnummer">
+
+                <label class="form-label" for="id-husnummer">
                     Husnummer
                 </label>
 
-                <input class="form-input input-width-xxs" required
-                    id="id-husnummer" value="" name="Input til husnummer"
-                    type="text">
+                <input class="form-input input-width-xxs" id="id-husnummer"
+                    name="husnummer" type="text" required />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-etage">
+
+                <label class="form-label" for="id-etage">
                     Etage<span class="weight-normal"> (frivilligt)</span>
                 </label>
 
                 <input class="form-input input-width-xxs" id="id-etage"
-                    value="" name="Input til etage" type="text">
+                    name="etage" type="text" />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-side">
+
+                <label class="form-label" for="id-side">
                     Side<span class="weight-normal"> (frivilligt)</span>
                 </label>
                 <span class="form-hint" id="id-side-hint">
                     Fx: TV, 2. dør
                 </span>
-
                 <input class="form-input input-width-xs" id="id-side"
-                    value="" name="Input til side" type="text"
-                    aria-describedby="id-side-hint ">
+                    name="side" type="text"
+                    aria-describedby="id-side-hint" />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-postnummer">
+
+                <label class="form-label" for="id-postnummer">
                     Postnummer
                 </label>
 
-                <input class="form-input input-width-xxs" required
-                    id="id-postnummer" value="" name="Input til postnummer"
-                    type="text">
+                <input class="form-input input-width-xxs"
+                    id="id-postnummer" name="postnummer" type="text"
+                    required />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-by">
+
+                <label class="form-label" for="id-by">
                     By
                 </label>
 
-                <input class="form-input input-width-m" required id="id-by"
-                    value="" name="Input til by" type="text">
+                <input class="form-input input-width-m" id="id-by"
+                    name="by" type="text" required />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-co-adresse">
+
+                <label class="form-label" for="id-co-adresse">
                     Evt. CO-adresse<span class="weight-normal">
                         (frivilligt)</span>
                 </label>
 
                 <input class="form-input input-width-m" id="id-co-adresse"
-                    value="" name="Input til CO-adresse" type="text">
+                    name="co-adresse" type="text" />
             </div>
             <div class="form-group">
                 <fieldset>
@@ -429,31 +432,29 @@
 <footer>
     <div class="footer">
         <div class="container">
-            <div class="align-text-left">
-                <ul class="unstyled-list inline-list">
-                    <li class=""><span
-                            class="h5 weight-semibold">Eksempelstyrelsen</span>
-                    </li>
-                    <li class=""><a class="function-link"
-                            href="mailto:support@example.dk">support@example.dk</a>
-                    </li>
-                    <li class=""><a class="function-link"
-                            href="tel:12345678">12 34 56 78</a></li>
-                    <li class="d-print-none"><a href="#"
-                            class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-                    </li>
-                    <li class="d-print-none"><a href="#"
-                            class="function-link">Privatlivspolitik
-                            (cookies)</a></li>
-                </ul>
-            </div>
+            <ul class="align-text-left unstyled-list inline-list">
+                <li class=""><span
+                        class="h5 weight-semibold">Eksempelstyrelsen</span>
+                </li>
+                <li class=""><a class="function-link"
+                        href="mailto:support@example.dk">support@example.dk</a>
+                </li>
+                <li class=""><a class="function-link"
+                        href="tel:12345678">12 34 56 78</a></li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+                </li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link">Privatlivspolitik
+                        (cookies)</a></li>
+            </ul>
         </div>
     </div>
 
 </footer>
 
 <div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-contact-title">
+    aria-modal="true" aria-labelledby="modal-id-1-title">
     <div class="modal-content">
         <div class="modal-header">
             <h2 class="modal-title" id="modal-contact-title">

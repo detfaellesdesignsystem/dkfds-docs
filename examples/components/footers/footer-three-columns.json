@@ -1,27 +1,27 @@
 {"footer_data":{
-  "cols": [
+  "columns": [
     {
-      "col_size_desktop": 3,
-      "text_align_right": false,
+      "columnSize": 3,
+      "textAlignRight": false,
       "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2>",
       "lists": [
         {
-          "inline_list": false,
-          "listitems": [
+          "inline": false,
+          "items": [
             {"content": "<p>Digitaliseringsstyrelsen<br />Landgreven 4<br/>1413 København K</p>"}
           ]
         }
       ]
     },
     {
-      "col_size_desktop": 3,
-      "text_align_right": false,
+      "columnSize": 3,
+      "textAlignRight": false,
       "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
       "lists": [
         {
-          "inline_list": false,
-          "listclass": "mt-0 nobullet-list mb-0",
-          "listitems": [
+          "inline": false,
+          "classes": "mt-0 nobullet-list mb-0",
+          "items": [
             {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"},
             {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"}
           ]
@@ -29,15 +29,15 @@
       ]
     },
     {
-      "col_size_desktop": 6,
-      "class": "d-print-none",
-      "text_align_right": false,
+      "columnSize": 6,
+      "classes": "d-print-none",
+      "textAlignRight": false,
       "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus.</p>",
       "lists": [
         {
-          "inline_list": false,
-          "listclass": "mt-0 nobullet-list mb-0",
-          "listitems": [
+          "inline": false,
+          "classes": "mt-0 nobullet-list mb-0",
+          "items": [
             {"content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"},
             {"content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"}
           ]

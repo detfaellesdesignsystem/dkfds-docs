@@ -229,7 +229,7 @@
     <main class="container page-container" id="main-content">
     
       <h1 id="example-heading-error-summary-page" class="sr-only">Error summary page</h1>
-      <div class="alert alert-error mt-0 mb-8" role="alert" aria-atomic="true" data-module="error-summary">
+      <div class="alert alert-error mt-0 mb-8" role="alert" aria-atomic="true">
     <div class="alert-body">
         <p class="alert-heading">Der er problemer</p>
         <ul class="alert-text nobullet-list">
@@ -245,10 +245,11 @@
 </div>
 
 <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
-<form>
+<form novalidate="">
 
     <div class="form-group form-error">
-        <label class="form-label " for="example-name">
+
+        <label class="form-label" for="example-name">
             Hvad er dit fulde navn?
         </label>
 
@@ -256,8 +257,7 @@
             <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og
             adskil for- og efternavne med mellemrum, fx Christian Emil
             Vestergaard Christiansen
-        </span>
-        <input class="form-input " required="" id="example-name" value="" name="form-error" type="text" aria-invalid="true" aria-describedby=" example-name-error" />
+        </span><input class="form-input" id="example-name" name="form-error" type="text" required="" />
     </div>
 
     <div class="form-group form-error">
@@ -267,15 +267,15 @@
                 svensk eller anden nationalitet</span>
             <ul class="nobullet-list">
                 <li>
-                    <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox  checkbox-large " />
+                    <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox checkbox-large " />
                     <label for="nationalitet1" class="">Dansk</label>
                 </li>
                 <li>
-                    <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox  checkbox-large " />
+                    <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox checkbox-large " />
                     <label for="nationalitet2" class="">Svensk</label>
                 </li>
                 <li>
-                    <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox  checkbox-large " />
+                    <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox checkbox-large " />
                     <label for="nationalitet3" class="">Anden
                         nationalitet</label>
                 </li>
@@ -294,15 +294,15 @@
             <div class="date-group js-calendar-group mt-3">
                 <div class="form-group form-group-day">
                     <label class="form-label" for="date-day">Dag</label>
-                    <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+                    <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
                 </div>
                 <div class="form-group form-group-month">
                     <label class="form-label" for="date-month">Måned</label>
-                    <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+                    <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
                 </div>
                 <div class="form-group form-group-year ">
                     <label class="form-label" for="date-year">År</label>
-                    <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+                    <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
                 </div>
 
             </div>

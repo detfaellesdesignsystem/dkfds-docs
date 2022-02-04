@@ -3,6 +3,6 @@
         "id": "toggle-example",
         "value": 1,
         "name": "toggle-example",
-        "text": "Dette er en toggle"
+        "label": "Dette er en toggle"
     }
 }

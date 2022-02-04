@@ -2,36 +2,32 @@
   "alert_example": {
     "items": [
       {
-        "name": "info with icon",
-        "classes": "alert-info alert--show-icon",
+        "classes": "alert-info",
+        "icon": true,
         "role": "alert",
-        "title": "Informativ besked - med ikon",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser information"
+        "heading": "Informativ besked - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       },
       {
-        "name": "success with icon",
-        "classes": "alert-success alert--show-icon",
+        "classes": "alert-success",
+        "icon": true,
         "role": "alert",
-        "title": "Succesmeddelelse - med ikon",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser succes"
+        "heading": "Succesmeddelelse - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       },
       {
-        "name": "warning with icon",
-        "classes": "alert-warning alert--show-icon",
+        "classes": "alert-warning",
+        "icon": true,
         "role": "alert",
-        "title": "Advarsel - med ikon",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser en advarsel"
+        "heading": "Advarsel - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       },
       {
-        "name": "error with icon",
-        "classes": "alert-error alert--show-icon",
+        "classes": "alert-error",
+        "icon": true,
         "role": "alert",
-        "title": "Fejlbesked - med ikon",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser en fejlmeddelelse"
+        "heading": "Fejlbesked - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       }
     ]
   }

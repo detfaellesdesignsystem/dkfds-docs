@@ -1,9 +1,12 @@
 {
-  "textinput_example":{
+  "params":{
     "id": "input-readonly",
     "name": "input-readonly",
-    "label": "Inputfelt som er readonly",
+    "label": {
+      "text": "Inputfelt som er readonly"
+    },
     "value": "012345-6789",
-    "readonly": true
+    "readonly": true,
+    "required": false
   }
 }

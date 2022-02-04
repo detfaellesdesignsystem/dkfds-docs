@@ -147,7 +147,7 @@ var exampleUrls = [
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'load'});
         await page.setViewport({width: resWidth, height: resHeight});
-        await page.emulateMedia('screen')
+        await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
             var buttons = document.querySelectorAll('.accordion-button');
             for(var i = 0; i < buttons.length; i++){
@@ -182,7 +182,7 @@ var exampleUrls = [
     for(var i=0; i<exampleUrls.length; i++){
         await page.goto(root + exampleUrls[i].url, {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
-        await page.emulateMedia('screen');
+        await page.evaluate(() => matchMedia('screen').matches);
 
         var pdfFileName =  targetRootDir+'screenshots/'+(i+1)+'-'+exampleUrls[i].filename+'.png';
 
@@ -192,7 +192,7 @@ var exampleUrls = [
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
-        await page.emulateMedia('screen');
+        await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
             var buttons = document.querySelectorAll('.accordion-button');
             for(var i = 0; i < buttons.length; i++){

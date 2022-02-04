@@ -4,24 +4,24 @@
     "items": [
       {
         "text": "Default",
-        "class": "tertiary"
+        "classes": "tertiary"
       },
       {
         "text": "Hover",
-        "class": "tertiary button-hover"
+        "classes": "tertiary button-hover"
       },
       {
         "text": "Active",
-        "class": "tertiary button-active"
+        "classes": "tertiary button-active"
       },
       {
         "text": "Focus",
-        "class": "tertiary focus"
+        "classes": "tertiary focus"
       },
       {
         "text": "Disabled",
-        "class": "tertiary",
-        "attribute": "disabled"
+        "classes": "tertiary",
+        "attributes": "disabled"
       }
     ]
   }

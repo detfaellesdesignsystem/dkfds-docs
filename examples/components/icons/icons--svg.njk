@@ -2,7 +2,7 @@
 <div class="d-flex simple-icon-list">
   {% for icons in icons_example.items %}
     <div class="w-percent-50 w-percent-md-20 align-text-center">
-        {{ icon_svg(icons, "")}}
+        {{ icon_svg({"name": icons})}}
       </div>
   {% endfor %}
 </div>

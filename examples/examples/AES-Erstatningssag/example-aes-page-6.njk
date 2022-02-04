@@ -4,7 +4,7 @@
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/form/controls/select.njk" import select as select %}
@@ -17,7 +17,7 @@
 
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
@@ -34,7 +34,7 @@
       <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
           <div class="nav-actions">
-            <a href="" class="function-link">{{icon_svg("save")}}Gem kladde</a>
+            <a href="" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
           </div>
         </div>
       </div>
@@ -46,74 +46,10 @@
 {% block body %}
 <main class="container page-container pt-4 pt-lg-0" id="main-content">
     <div><a href="/pages/eksempler/AES-erstatningssag/aes-5/" class="back-link">Tilbage</a></div>
-    {{overflowmenu("Trin 6 af 9","overflow_steps", true, false, "arrow-drop-down" ,"
-        <nav><ul class='sidenav-list' role='menu'>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-1/' role='menuitem'>
-                    1. Oplysninger om afsender
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-2/' role='menuitem'>
-                    2. Hvis AES har spørgsmål til sagen
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-3/' role='menuitem'>
-                    3. Oplysninger om skadelidte
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-4/' role='menuitem'>
-                    4. Sagens natur
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-5/' role='menuitem'>
-                    5. Oplysninger om sagen
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li class='active current' role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-6/' role='menuitem' aria-current='page'>
-                    6. Tilføj dokumentation for første undersøgelse af skaden
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-7/' role='menuitem'>
-                    7. Tilføj dokumentation fra sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-8/' role='menuitem'>
-                    8. Tilføj kommentarer til sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-9/' role='menuitem'>
-                    9. Opsummering
-                </a>
-            </li>
-        </ul></nav>
-        "
-    ) }}
+    {{overflowmenu(stepguide) }}
     <div role="group" aria-labelledby="tilfoej-documentation">
     <h1 id="tilfoej-documentation">Tilføj dokumentation for første undersøgelse af skaden</h1>
-    <form class="form">
+    <form novalidate class="form">
         <div class="form-group file-input">
             <label class="form-label" for="input-file">Tilføj dokument</label>
             <input type="file" id="input-file" name="file">
@@ -131,11 +67,27 @@
         </thead>
         <tbody>
             <tr>
-                <td class="mt-4 mt-lg-0 break-word w-percent-md-40 vertical-align-middle">{{ icon_svg('file-pdf')}}prn1023152_journal.pdf</td>
+                <td class="mt-4 mt-lg-0 break-word w-percent-md-40 vertical-align-middle">{{ icon_svg({"name":'file-pdf'})}}prn1023152_journal.pdf</td>
                 <td class="mt-4 mt-lg-0">
-                  {{select("Navngiv dokument", "select-dokumentationtype", "Vælg dokumentationstype", "", "Vælg type", [{value: 'Lægeerklæring', text:'Lægeerklæring' }], "", "sr-only")}}</td>
+                  {{select({
+                      "name": "dokument-type",
+                      "id": "select-dokumentationtype",
+                      "label":{
+                          "text": "Vælg dokumentationstype",
+                          "classes": "sr-only"
+                          },
+                        "options": [{"text":"Vælg type", "value": ""},{value: "Lægeerklæring", text:"Lægeerklæring"}]}) }}</td>
                 <td class="mt-4 mt-lg-0">
-                {{textinput("id-pagenumber", "Angiv sidetal", "(frivilligt)", "input-char-4", "", "Sidetal", "sr-only", false, "")}}
+                {{textinput({
+                    "id":"id-pagenumber",
+                    "label":{
+                        "text": "Angiv sidetal",
+                        "optionalLabel": true,
+                        "classes": "sr-only"
+                        },
+                    "required": false,
+                    "classes": "input-char-4",
+                    "name": "sidetal"})}}
                 </td>
                 <td class="align-text-md-right mt-4 mt-lg-0">
                     <button class="button button-unstyled">
@@ -149,7 +101,7 @@
 
     
     
-        <form method="get" action="/pages/eksempler/AES-erstatningssag/aes-7/">
+        <form novalidate method="get" action="/pages/eksempler/AES-erstatningssag/aes-7/">
             <button class="button button-primary mt-8 d-print-none">Næste</button>
         </form>
 </main>
@@ -159,7 +111,7 @@
 {% endblock %}
 
 {% block footer -%}
-  {{ footer_simple(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

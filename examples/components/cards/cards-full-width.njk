@@ -1,11 +1,3 @@
-{% from "components/cards/cards.njk" import cards1 as cards1 %}
+{% from "components/cards/cards.njk" import card as card %}
 
-<div class="container pb-5">
-  <div class="row">
-    <div class="col-12">
-      {% for card1 in cards1_example.items -%}
-        {{ cards1(card1.name, card1.header, card1.subheader, card1.cardtext, card1.contenttext, card1.cardcontent, card1.actioncontent, card1.actionbuttons, card1.actionlinks ) }}
-      {%- endfor %}
-    </div>
-  </div>
-</div>
+{{ card(card_example) }}

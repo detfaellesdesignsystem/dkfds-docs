@@ -4,7 +4,7 @@
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
@@ -19,7 +19,7 @@
 
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
         <p class="user bold">Navn</p>
@@ -40,58 +40,56 @@
 {% block body %}
 <main class="container page-container" id="main-content">
     <div><a href="/pages/eksempler/digital-flytning/flytning-2/" class="back-link">Tilbage</a></div>
-  {{overflowmenu("Trin 3 af 5","overflow_steps", true, false, "arrow-drop-down" ,"
-      <nav><ul class='sidenav-list' role='menu'>
-          <li role='none'>
-              <a href='/pages/eksempler/digital-flytning/flytning-1/' role='menuitem'>
-                  1. Oversigt
-                  <span class='sidenav-icon' aria-label='Gennemført'>
-                      <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                  </span>
-              </a>
-          </li>
-          <li role='none'>
-              <a href='/pages/eksempler/digital-flytning/flytning-2/' role='menuitem'>
-                  2. Personer
-                  <span class='sidenav-icon' aria-label='Gennemført'>
-                      <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                  </span>
-              </a>
-          </li>
-          <li class='active current' role='none'>
-              <a href='/pages/eksempler/digital-flytning/flytning-3/' role='menuitem' aria-current='page'>
-                  3. Adresse
-              </a>
-          </li>
-          <li role='none'>
-              <a href='/pages/eksempler/digital-flytning/flytning-4/' role='menuitem'>
-                  4. Særlig flytning
-              </a>
-          </li>
-          <li role='none'>
-              <a href='/pages/eksempler/digital-flytning/flytning-5/' role='menuitem'>
-                  5. Lægevalg
-              </a>
-          </li>
-      </ul></nav>
-      "
-  ) }}
+  {{overflowmenu(stepguide) }}
   <h1>Adresse</h1>
-  {{ alert("alert alert-warning", "", "Ikke alle adresser er registreret i dette register", "Kan du ikke finde din tilflytningsadresse, bedes du kontakte din tilflytningskommune.", "warning" ) }}
+  {{ alert({
+    "classes": "alert-warning", 
+    "heading": "Ikke alle adresser er registreret i dette register", 
+    "content": "Kan du ikke finde din tilflytningsadresse, bedes du kontakte din tilflytningskommune."}) }}
   <div class="mt-6">
-    {{datoinput("Dato for flytning", "Fx. 28 04 1996", "Dato", "Måned", "År")}}
+    {{datoinput({"labels": {"legend": "Dato for flytning", "day":"Dag", "month": "Måned","year": "År"}, "helptext":  "Fx. 28 04 1996"})}}
   </div>
   <div class="mt-6">
-    {{select("Gade / vejnavn", "select-street", "Gade / vejnavn", "input-width-m", "Vælg fra listen", [{value: 'Byvej', text:'Byvej' }], false)}}
+    {{select({
+      "name": "gade-vej",
+      "id": "select-street",
+      "label":{
+        "text": "Gade / vejnavn"
+        },
+      "classes": "input-width-m",
+      "options": [{"text": "Vælg fra listen", "value": ""},{value: 'Byvej', text:'Byvej' }]}) }}
   </div>
   <div class="mt-6">
-    {{select("Husnr. / bogstav", "select-housenumber", "Husnr. / bogstav", "input-width-xs", "Vælg fra listen",  [{value: '1', text:'1'}, {value: '2', text:'2'}, {value: '3', text:'3'}], true)}}
+    {{select({
+    "name": "husnr",
+    "id": "select-housenumber",
+    "label": {
+      "text": "Husnr. / bogstav"
+    }, 
+    "classes": "input-width-xs",
+    "options": [{"text": "Vælg fra listen", "value": ""}, {value: '1', text:'1'}, {value: '2', text:'2'}, {value: '3', text:'3'}]})}}
   </div>
   <div class="mt-6">
-    {{select("Etage, side/dør", "select-door", "Etage, side/dør", "input-width-xs", "Vælg fra listen", [{value: '1', text:'1'}], true)}}
+    {{select({
+      "name": "etage",
+      "id": "select-door",
+      "label": {
+        "text": "Etage, side/dør"
+     },
+     "classes": "input-width-xs",
+     "options": [{"text": "Vælg fra listen", "value": ""}, {value: '1', text:'1'}]})}}
   </div>
   <div class="mt-6">
-    {{textinput("id-co", "C/O navn", "(frivilligt)", "input-width-m", false, "Input til C/O navn", "", false, false, "C/O navn skal kun udfyldes, hvis du skal bo til leje hos de nuværende beboere.", "")}}
+    {{textinput({
+      "id":"id-co",
+      "label": {
+        "text": "C/O navn",
+        "optionalLabel": true
+        },
+     "classes": "input-width-m",
+     "required": false,
+     "name": "co-navn",
+     "hint": "C/O navn skal kun udfyldes, hvis du skal bo til leje hos de nuværende beboere."})}}
   </div>
 
   <nav class="page-navigation d-print-none">
@@ -104,7 +102,7 @@
 {% endblock %}
 
 {% block footer -%}
-  {{ footer_simple(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

@@ -1,9 +1,9 @@
 {
   "card_example": {
-    "name": "card1",
-    "header": "Eksempel på card-komponenten",
-    "cardtext": "Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Cards kan placeres i et <a href=\"/design/grid/\">grid</a>, således at de står side om side.",
+    "heading": "Eksempel på card-komponenten",
+    "headingLevel": "h2",
+    "text": "Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Cards kan placeres i et <a href=\"/design/grid/\">grid</a>, således at de står side om side.",
     "actionlinks": "<a href=\"/komponenter/cards/\">Gå til komponent</a>",
-    "heading_level": "h2"
+    "order": ["header", "text", "content", "action"]
   }
 }

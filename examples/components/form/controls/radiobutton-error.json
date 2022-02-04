@@ -5,7 +5,7 @@
         "id": "weekly",
         "name": "often-pay",
         "value": "weekly",
-        "text": "Ugentligt",
+        "label": "Ugentligt",
         "checked": false,
         "disabled": false,
         "large": true
@@ -15,7 +15,7 @@
         "id": "fortnightly",
         "name": "often-pay",
         "value": "fortnightly",
-        "text": "Hver fjortende dag",
+        "label": "Hver fjortende dag",
         "checked": false,
         "disabled": false,
         "large": true
@@ -24,7 +24,7 @@
         "id": "monthly",
         "name": "often-pay",
         "value": "monthly",
-        "text": "Månedligt",
+        "label": "Månedligt",
         "checked": false,
         "disabled": false,
         "large": true

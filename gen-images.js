@@ -37,7 +37,7 @@ var exampleUrls = [
             console.log(root + exampleUrls[i].url+'?theme='+themes[t]);
             await page.goto(root + exampleUrls[i].url+'?theme='+themes[t], {waitUntil: 'networkidle2'});
             await page.setViewport({width: resWidth, height: resHeight});
-            await page.emulateMedia('screen');
+            await page.evaluate(() => matchMedia('screen').matches);
 
             if (exampleUrls[i].filename !== "cookie-message.png"){
                 await page.evaluate(() => {

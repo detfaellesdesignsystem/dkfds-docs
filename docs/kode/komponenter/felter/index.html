@@ -4429,11 +4429,12 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
-    <label class="form-label " for="input-type-text">
+
+    <label class="form-label" for="input-type-text">
         Inputfelt med label
     </label>
 
-    <input class="form-input " required="" id="input-type-text" value="" name="input-type-text" type="text" />
+    <input class="form-input" id="input-type-text" name="input-type-text" type="text" required="" />
 </div>
         
     </div>
@@ -4455,12 +4456,13 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-type-text&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-type-text&quot;&gt;
         Inputfelt med label
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-input &quot; required id=&quot;input-type-text&quot; value=&quot;&quot;
-        name=&quot;input-type-text&quot; type=&quot;text&quot;&gt;
+    &lt;input class=&quot;form-input&quot; id=&quot;input-type-text&quot; name=&quot;input-type-text&quot;
+        type=&quot;text&quot; required /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4482,7 +4484,8 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;form-error&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;form-error&quot;&gt;
         Inputfelt med fejl
     &lt;/label&gt;
     &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;
@@ -4490,10 +4493,8 @@
     &lt;/span&gt;
     &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;
         &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Hjælpsom fejlbesked
-    &lt;/span&gt;
-    &lt;input class=&quot;form-input &quot; required id=&quot;form-error&quot; value=&quot;&quot;
-        name=&quot;form-error&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;form-error-hint form-error-error&quot;&gt;
+    &lt;/span&gt;&lt;input class=&quot;form-input&quot; id=&quot;form-error&quot; name=&quot;form-error&quot;
+        type=&quot;text&quot; aria-describedby=&quot;form-error-hint&quot; required /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4523,6 +4524,7 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+
     &lt;label class=&quot;form-label&quot; for=&quot;input-optional1&quot;&gt;
         Label
     &lt;/label&gt;
@@ -4531,6 +4533,7 @@
         type=&quot;text&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
+
     &lt;label class=&quot;form-label&quot; for=&quot;input-mandatory&quot;&gt;
         Label&lt;span class=&quot;weight-normal&quot;&gt; (*skal udfyldes)&lt;/span&gt;
     &lt;/label&gt;
@@ -4539,6 +4542,7 @@
         type=&quot;text&quot; required /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
+
     &lt;label class=&quot;form-label&quot; for=&quot;input-optional2&quot;&gt;
         Label
     &lt;/label&gt;
@@ -4547,6 +4551,7 @@
         type=&quot;text&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
+
     &lt;label class=&quot;form-label&quot; for=&quot;input-optional3&quot;&gt;
         Label
     &lt;/label&gt;
@@ -4574,16 +4579,16 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-type-help-text&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-type-help-text&quot;&gt;
         Inputfelt med label og hjælpetekst
     &lt;/label&gt;
     &lt;span class=&quot;form-hint&quot; id=&quot;input-type-help-text-hint&quot;&gt;
         Fx 12345678
     &lt;/span&gt;
-
-    &lt;input class=&quot;form-input &quot; required id=&quot;input-type-help-text&quot; value=&quot;&quot;
+    &lt;input class=&quot;form-input&quot; id=&quot;input-type-help-text&quot;
         name=&quot;input-type-help-text&quot; type=&quot;text&quot;
-        aria-describedby=&quot;input-type-help-text-hint &quot;&gt;
+        aria-describedby=&quot;input-type-help-text-hint&quot; required /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4603,12 +4608,13 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-disabled&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-disabled&quot;&gt;
         Inputfelt som er låst
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-input &quot; required id=&quot;input-disabled&quot; value=&quot;&quot;
-        name=&quot;input-disabled&quot; type=&quot;text&quot; disabled=&quot;disabled&quot;&gt;
+    &lt;input class=&quot;form-input&quot; id=&quot;input-disabled&quot; name=&quot;input-disabled&quot;
+        type=&quot;text&quot; disabled=&quot;disabled&quot; /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4628,12 +4634,13 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;input-readonly&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-readonly&quot;&gt;
         Inputfelt som er readonly
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-input &quot; required id=&quot;input-readonly&quot;
-        value=&quot;012345-6789&quot; name=&quot;input-readonly&quot; type=&quot;text&quot; readonly&gt;
+    &lt;input class=&quot;form-input&quot; id=&quot;input-readonly&quot; value=&quot;012345-6789&quot;
+        name=&quot;input-readonly&quot; type=&quot;text&quot; readonly /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4653,6 +4660,7 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+
     &lt;label class=&quot;form-label&quot; for=&quot;input-antal&quot;&gt;
         Antal
     &lt;/label&gt;
@@ -4664,6 +4672,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
+
     &lt;label class=&quot;form-label&quot; for=&quot;input-pris&quot;&gt;
         Pris i 1000 kr.
     &lt;/label&gt;
@@ -4675,6 +4684,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
+
     &lt;label class=&quot;form-label&quot; for=&quot;input-beloeb&quot;&gt;
         Beløb i €
     &lt;/label&gt;
@@ -4686,6 +4696,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group form-error&quot;&gt;
+
     &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;
         Pris i 1000 kr.
     &lt;/label&gt;
@@ -4695,8 +4706,7 @@
     &lt;/span&gt;
     &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input
             class=&quot;form-input input-char-11&quot; id=&quot;input-pris-error&quot;
-            name=&quot;input-pris&quot; type=&quot;number&quot; aria-invalid=&quot;true&quot;
-            aria-describedby=&quot;input-pris-error-error&quot; required /&gt;
+            name=&quot;input-pris&quot; type=&quot;number&quot; required /&gt;
         &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>

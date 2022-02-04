@@ -4423,14 +4423,15 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <h1 class="h2">Dine kontaktoplysninger</h1>
-<form>
+<form novalidate="">
     <!-- Felt start: Navn -->
     <div class="form-group">
-        <label class="form-label " for="navn">
+
+        <label class="form-label" for="input-name">
             Navn
         </label>
 
-        <input class="form-input " required="" id="navn" value="" name="navn" type="text" />
+        <input class="form-input" id="input-name" name="name" type="text" required="" />
     </div>
     <!-- Felt slut: Navn -->
 
@@ -4479,15 +4480,16 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1 class=&quot;h2&quot;&gt;Dine kontaktoplysninger&lt;/h1&gt;
-&lt;form&gt;
+&lt;form novalidate&gt;
     &lt;!-- Felt start: Navn --&gt;
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label &quot; for=&quot;navn&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;input-name&quot;&gt;
             Navn
         &lt;/label&gt;
 
-        &lt;input class=&quot;form-input &quot; required id=&quot;navn&quot; value=&quot;&quot; name=&quot;navn&quot;
-            type=&quot;text&quot;&gt;
+        &lt;input class=&quot;form-input&quot; id=&quot;input-name&quot; name=&quot;name&quot; type=&quot;text&quot;
+            required /&gt;
     &lt;/div&gt;
     &lt;!-- Felt slut: Navn --&gt;
 
@@ -4559,49 +4561,44 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1 class=&quot;h2&quot;&gt;Dine kontaktoplysninger&lt;/h1&gt;
-&lt;form&gt;
-    &lt;!-- Felt start: Fornavn --&gt;
+&lt;form novalidate&gt;
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label &quot; for=&quot;fnavn&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;fnavn&quot;&gt;
             Fornavn
         &lt;/label&gt;
 
-        &lt;input class=&quot;form-input &quot; required id=&quot;fnavn&quot; value=&quot;&quot;
-            name=&quot;fnavn&quot; type=&quot;text&quot;&gt;
+        &lt;input class=&quot;form-input&quot; id=&quot;fnavn&quot; name=&quot;fnavn&quot; type=&quot;text&quot;
+            required /&gt;
     &lt;/div&gt;
-    &lt;!-- Felt slut: Fornavn --&gt;
-    &lt;!-- Felt start: Efternavn --&gt;
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label &quot; for=&quot;enavn&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;enavn&quot;&gt;
             Efternavn
         &lt;/label&gt;
 
-        &lt;input class=&quot;form-input &quot; required id=&quot;enavn&quot; value=&quot;&quot;
-            name=&quot;enavn&quot; type=&quot;text&quot;&gt;
+        &lt;input class=&quot;form-input&quot; id=&quot;enavn&quot; name=&quot;enavn&quot; type=&quot;text&quot;
+            required /&gt;
     &lt;/div&gt;
-    &lt;!-- Felt slut: Efternavn --&gt;
-    &lt;!-- Felt start: E-mail adresse --&gt;
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label &quot; for=&quot;fieldset-email&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;fieldset-email&quot;&gt;
             E-mail adresse
         &lt;/label&gt;
 
-        &lt;input class=&quot;form-input &quot; required id=&quot;fieldset-email&quot; value=&quot;&quot;
-            name=&quot;email&quot; type=&quot;text&quot;&gt;
+        &lt;input class=&quot;form-input&quot; id=&quot;fieldset-email&quot; name=&quot;email&quot;
+            type=&quot;text&quot; required /&gt;
     &lt;/div&gt;
-    &lt;!-- Felt slut: E-mail adresse --&gt;
-    &lt;!-- Felt start: Telefonnummer --&gt;
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label &quot; for=&quot;telefon&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;fieldset-telefon&quot;&gt;
             Telefonnummer
         &lt;/label&gt;
 
-        &lt;input class=&quot;form-input input-width-s&quot; required id=&quot;telefon&quot;
-            value=&quot;&quot; name=&quot;telefon&quot; type=&quot;text&quot;&gt;
+        &lt;input class=&quot;form-input input-width-s&quot; id=&quot;fieldset-telefon&quot;
+            name=&quot;telefon&quot; type=&quot;text&quot; required /&gt;
     &lt;/div&gt;
-    &lt;!-- Felt slut: Telefonnummer --&gt;
 
-    &lt;!-- Felt start: Kontaktmetode --&gt;
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;fieldset&gt;
             &lt;legend class=&quot;form-label&quot;&gt;Hvordan vil du helst kontaktes?
@@ -4626,44 +4623,41 @@
             &lt;/ul&gt;
         &lt;/fieldset&gt;
     &lt;/div&gt;
-    &lt;!-- Felt slut: Kontaktmetode --&gt;
-
-    &lt;!-- Felt start: Tid på dagen --&gt;
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;fieldset&gt;
             &lt;legend class=&quot;form-label&quot;&gt;Hvornår på dagen vil det passe
                 bedst, at vi kontakter dig?&lt;/legend&gt;
             &lt;ul class=&quot;nobullet-list&quot;&gt;
                 &lt;li&gt;
-                    &lt;input id=&quot;morgen&quot; type=&quot;checkbox&quot; name=&quot;tidspunkt[]&quot;
-                        value=&quot;morgen&quot;
-                        class=&quot;form-checkbox  checkbox-large &quot; /&gt;
-                    &lt;label for=&quot;morgen&quot; class=&quot;&quot;&gt;Om morgenen&lt;/label&gt;
+                    &lt;input id=&quot;checkbox-morgen&quot; type=&quot;checkbox&quot;
+                        name=&quot;tidspunkt[]&quot; value=&quot;morgen&quot;
+                        class=&quot;form-checkbox checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;checkbox-morgen&quot; class=&quot;&quot;&gt;Om
+                        morgenen&lt;/label&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                    &lt;input id=&quot;middag&quot; type=&quot;checkbox&quot; name=&quot;tidspunkt[]&quot;
-                        value=&quot;middag&quot;
-                        class=&quot;form-checkbox  checkbox-large &quot; /&gt;
-                    &lt;label for=&quot;middag&quot; class=&quot;&quot;&gt;Ved middagstid&lt;/label&gt;
+                    &lt;input id=&quot;checkbox-middag&quot; type=&quot;checkbox&quot;
+                        name=&quot;tidspunkt[]&quot; value=&quot;middag&quot;
+                        class=&quot;form-checkbox checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;checkbox-middag&quot; class=&quot;&quot;&gt;Ved
+                        middagstid&lt;/label&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                    &lt;input id=&quot;eftermiddag&quot; type=&quot;checkbox&quot;
+                    &lt;input id=&quot;checkbox-eftermiddag&quot; type=&quot;checkbox&quot;
                         name=&quot;tidspunkt[]&quot; value=&quot;eftermiddag&quot;
-                        class=&quot;form-checkbox  checkbox-large &quot; /&gt;
-                    &lt;label for=&quot;eftermiddag&quot; class=&quot;&quot;&gt;Om
+                        class=&quot;form-checkbox checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;checkbox-eftermiddag&quot; class=&quot;&quot;&gt;Om
                         eftermiddagen&lt;/label&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
-                    &lt;input id=&quot;aften&quot; type=&quot;checkbox&quot; name=&quot;tidspunkt[]&quot;
-                        value=&quot;aften&quot;
-                        class=&quot;form-checkbox  checkbox-large &quot; /&gt;
-                    &lt;label for=&quot;aften&quot; class=&quot;&quot;&gt;Om aftenen&lt;/label&gt;
+                    &lt;input id=&quot;checkbox-aften&quot; type=&quot;checkbox&quot;
+                        name=&quot;tidspunkt[]&quot; value=&quot;aften&quot;
+                        class=&quot;form-checkbox checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;checkbox-aften&quot; class=&quot;&quot;&gt;Om aftenen&lt;/label&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
         &lt;/fieldset&gt;
     &lt;/div&gt;
-    &lt;!-- Felt slut: Tid på dagen --&gt;
-    &lt;!-- Felt start: Personlige oplysninger --&gt;
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;fieldset&gt;
             &lt;legend class=&quot;h4&quot;&gt;Personlige oplysninger&lt;/legend&gt;

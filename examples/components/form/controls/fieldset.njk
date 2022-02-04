@@ -2,20 +2,33 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 
 <h1 class="h2">Dine kontaktoplysninger</h1>
-<form>
-    <!-- Felt start: Fornavn -->
-    {{textinput("simple-fnavn", "Fornavn", false, "", false, "fnavn", "", false, false)}}
-    <!-- Felt slut: Fornavn -->
-    <!-- Felt start: Efternavn -->
-    {{textinput("simple-enavn", "Efternavn", false, "", false, "enavn", "", false, false)}}
-    <!-- Felt slut: Efternavn -->
-    <!-- Felt start: E-mail adresse -->
-    {{textinput("simple-email", "E-mail adresse", false, "", false, "email", "", false, false)}}
-    <!-- Felt slut: E-mail adresse -->
-    <!-- Felt: Telefonnr -->
-    {{textinput("simple-telefon", "Telefonnummer", false, "input-width-s", false, "telefon", "", false, false)}}
-    <!-- Felt: Telefonnr -->
-    <!-- Knap start -->
-    {{ button("Gem oplysninger", "primary mt-9") }}
-    <!-- Knap slut -->
+<form novalidate>
+    {{textinput({
+        "id": "simple-fnavn",
+        "label": {
+            "text": "Fornavn"
+        },
+        "name": "fnavn"})}}
+    {{textinput({
+        "id": "simple-enavn", 
+        "label": {
+            "text": "Efternavn"
+        },
+        "name": "enavn"})}}
+    {{textinput({
+        "id": "simple-email", 
+        "label": {
+            "text": "E-mail adresse"
+            },
+        "name": "email"})}}
+    {{textinput({
+        "id": "simple-telefon",
+        "label": {
+            "text": "Telefonnummer"
+            },
+        "classes": "input-width-s",
+        "name": "telefon"})}}
+    {{ button({
+        "text":"Gem oplysninger", 
+        "classes":"primary mt-9"}) }}
 </form>

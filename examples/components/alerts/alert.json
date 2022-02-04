@@ -1,8 +1,7 @@
 {
   "alert_example": {
-        "name": "info",
         "classes": "alert-info",
-        "title": "Informativ besked",
+        "heading": "Informativ besked",
         "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet."
       }
 }

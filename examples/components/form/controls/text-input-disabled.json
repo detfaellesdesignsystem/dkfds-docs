@@ -1,8 +1,11 @@
 {
-  "textinput_example":{
+  "params":{
     "id": "input-disabled",
     "name": "input-disabled",
-    "label": "Inputfelt som er låst",
-    "disabled": true
+    "label": {
+      "text": "Inputfelt som er låst"
+    },
+    "disabled": true,
+    "required": false
   }
 }

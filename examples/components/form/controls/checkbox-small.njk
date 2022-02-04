@@ -3,7 +3,7 @@
     <fieldset>
         <legend class="form-label">Lille tjekboks</legend>
         <ul class="nobullet-list">
-        {% for item in checkbox_example_small.items %}<li>{{ checkbox(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large) }}</li>{% endfor %}
+        {% for item in checkbox_example_small.items %}<li>{{ checkbox(item) }}</li>{% endfor %}
         </ul>
     </fieldset>
 </div>

@@ -4,7 +4,7 @@
     "items": [
       {
         "text": "Refresh",
-        "class": "primary",
+        "classes": "primary",
         "icon": "refresh"
       }
     ]

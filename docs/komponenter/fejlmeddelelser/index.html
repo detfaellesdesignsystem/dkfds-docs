@@ -4283,7 +4283,8 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error">
-    <label class="form-label " for="form-error">
+
+    <label class="form-label" for="form-error">
         Hvad hedder dit kursus?
     </label>
     <span class="form-hint" id="form-error-hint">
@@ -4291,8 +4292,7 @@
     </span>
     <span class="form-error-message" id="form-error-error">
         <span class="sr-only">Fejl:</span> Giv dit kursus et navn
-    </span>
-    <input class="form-input " required="" id="form-error" value="" name="form-error" type="text" aria-invalid="true" aria-describedby="form-error-hint form-error-error" />
+    </span><input class="form-input" id="form-error" name="form-error" type="text" aria-describedby="form-error-hint" required="" />
 </div>
         
     </div>
@@ -4429,16 +4429,16 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error">
-    <label class="form-label " for="example-name">
+
+    <label class="form-label" for="fullname-error-example">
         Hvad er dit fulde navn?
     </label>
 
-    <span class="form-error-message" id="example-name-error">
+    <span class="form-error-message" id="fullname-error-example-error">
         <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
         for- og efternavne med mellemrum, fx Christian Emil Vestergaard
         Christiansen
-    </span>
-    <input class="form-input " required="" id="example-name" value="" name="form-error" type="text" aria-invalid="true" aria-describedby=" example-name-error" />
+    </span><input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" required="" />
 </div>
         
     </div>
@@ -4458,7 +4458,8 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error">
-    <label class="form-label " for="example-cpr">
+
+    <label class="form-label" for="example-cpr">
         Personnummer
     </label>
     <span class="form-hint" id="example-cpr-hint">
@@ -4467,8 +4468,7 @@
     <span class="form-error-message" id="example-cpr-error">
         <span class="sr-only">Fejl:</span> Indtast dit personnummer i det
         korrekte format
-    </span>
-    <input class="form-input input-char-11" required="" id="example-cpr" value="L-091908-PP65" name="form-error" type="text" aria-invalid="true" aria-describedby="example-cpr-hint example-cpr-error" />
+    </span><input class="form-input input-char-11" id="example-cpr" value="L-091908-PP65" name="form-error" type="text" aria-describedby="example-cpr-hint" required="" />
 </div>
         
     </div>
@@ -4488,15 +4488,15 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error">
-    <label class="form-label " for="example-zipcode">
+
+    <label class="form-label" for="example-zipcode">
         Postnummer
     </label>
 
     <span class="form-error-message" id="example-zipcode-error">
         <span class="sr-only">Fejl:</span> Indtast et postnummer med fire
         tal
-    </span>
-    <input class="form-input input-char-4" required="" id="example-zipcode" value="RRYY" name="form-error" type="text" aria-invalid="true" aria-describedby=" example-zipcode-error" />
+    </span><input class="form-input input-char-4" id="example-zipcode" value="RRYY" name="form-error" type="text" required="" />
 </div>
         
     </div>
@@ -4522,15 +4522,15 @@
             eller anden nationalitet</span>
         <ul class="nobullet-list">
             <li>
-                <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox  checkbox-large " />
+                <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox checkbox-large " />
                 <label for="nationalitet1" class="">Dansk</label>
             </li>
             <li>
-                <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox  checkbox-large " />
+                <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox checkbox-large " />
                 <label for="nationalitet2" class="">Svensk</label>
             </li>
             <li>
-                <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox  checkbox-large " />
+                <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox checkbox-large " />
                 <label for="nationalitet3" class="">Anden
                     nationalitet</label>
             </li>

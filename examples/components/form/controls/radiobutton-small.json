@@ -5,7 +5,7 @@
         "id": "smallradio1",
         "name": "smallradio",
         "value": "1",
-        "text": "Valg 1",
+        "label": "Valg 1",
         "checked": false,
         "disabled": false
       },
@@ -13,7 +13,7 @@
         "id": "smallradio2",
         "name": "smallradio",
         "value": "0",
-        "text": "Valg 2",
+        "label": "Valg 2",
         "checked": false,
         "disabled": false
       }

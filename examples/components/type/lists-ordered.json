@@ -1,5 +1,6 @@
 {
-  "list_ol": {
+  "list": {
+    "subclass": "sub_list",
     "items": [
       {
         "text": "Lorem"
@@ -12,7 +13,7 @@
       },
       {
         "text": "Sit",
-        "list_ol": {
+        "list": {
           "type": "a",
           "items": [
             {
@@ -23,7 +24,7 @@
             },
             {
               "text": "Adipiscing",
-              "list_ol": {
+              "list": {
                 "type": "i",
                 "items": [
                   {

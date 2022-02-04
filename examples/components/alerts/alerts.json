@@ -2,36 +2,28 @@
   "alert_example": {
     "items": [
       {
-        "name": "info",
         "classes": "alert-info",
         "role": "alert",
-        "title": "Informativ besked",
-        "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-        "aria": "Beskedbox der viser information"
+        "heading": "Informativ besked",
+        "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
       },
       {
-        "name": "success",
         "classes": "alert-success",
         "role": "alert",
-        "title": "Succesmeddelelse",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser succes"
+        "heading": "Succesmeddelelse",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       },
       {
-        "name": "warning",
         "classes": "alert-warning",
         "role": "alert",
-        "title": "Advarsel",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser en advarsel"
+        "heading": "Advarsel",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       },
       {
-        "name": "error",
         "classes": "alert-error",
         "role": "alert",
-        "title": "Fejlbesked",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser en fejlmeddelelse"
+        "heading": "Fejlbesked",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       }
     ]
   }

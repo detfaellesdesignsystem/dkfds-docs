@@ -1,6 +1,6 @@
 {
   "badge_example": {
-    "class": "badge-large",
-    "label": "Nyhed"
+    "classes": "badge-large",
+    "text": "Nyhed"
   }
 }

@@ -1,7 +1,9 @@
 {
   "parameters": {
     "id": "datepicker-example1",
-    "label": "Dato for aftale",
+    "label": {
+      "text": "Dato for aftale"
+    },
     "name": "appointment-date1"
   }
 }

@@ -27,12 +27,30 @@
   "title": "Hvornår blev du eller bliver du enlig?",
   "lead": "For at du kan modtage børnetilskud til enlige, skal du være enlig forsørger. Du er enlig forsørger, når du ikke får økonomisk og praktisk hjælp fra en anden person over 18 år, som du kan blive gift med.<br><a href='#'>Læs mere om, hvornår du er enlig forsøger på borger.dk/enlig</a>",
   "footer_data": {
-    "listitems": [
-    {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},
-    {"content": "<a class=\"function-link\" href=\"mailto:support@example.dk\">support@example.dk</a>"},
-    {"content": "<a class=\"function-link\" href=\"tel:12345678\">12 34 56 78</a>"},
-    {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
-    {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-    ]
+    "list": {
+      "items": [
+        {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},
+        {"content": "<a class=\"function-link\" href=\"mailto:support@example.dk\">support@example.dk</a>"},
+        {"content": "<a class=\"function-link\" href=\"tel:12345678\">12 34 56 78</a>"},
+        {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
+        {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
+      ]
+    }
+  },
+  "stepguide":{
+    "button": {
+      "text": "Trin 2 af 2",
+      "icon": "arrow-drop-down"
+      },
+    "id": "overflow_steps",
+    "content": "<nav><ul class='sidenav-list' role='menu'><li role='none'><a href='/pages/eksempler/boernetilskud/boernetilskud-1/' role='menuitem'><span class='sidenav-number'>1.</span><span class='sidenav-title'>Hvilke børn søger du tilskud til?</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg></span></a></li><li class='active current' role='none'><a href='#' role='menuitem' aria-current='page'><span class='sidenav-number'>2.</span><span class='sidenav-title'>Hvornår blev du eller bliver du enlig?</span></a></li></ul></nav>"
+  },
+  "datefields_single": {
+    "labels": {
+      "legend": "Jeg blev eller bliver enlig",
+      "day": "Dag",
+      "month": "Måned",
+      "year": "År"
+    }
   }
 }

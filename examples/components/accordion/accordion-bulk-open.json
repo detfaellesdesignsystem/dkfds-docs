@@ -1,9 +1,7 @@
 {
   "accordion_example": {
-    "variant": "bordered",
-    "multiselectable": true,
-    "bulk_function": true,
-    "heading_level": false,
+    "openCloseButton": true,
+    "headingLevel": false,
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",

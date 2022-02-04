@@ -1,6 +1,6 @@
 {
   "cookie_message_data": {
-    "title": "Fortæl os om du accepterer cookies",
+    "heading": "Fortæl os om du accepterer cookies",
     "message": "Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres. <a href=\"#\">Læs mere om vores brug af cookies.</a>",
     "accept": "Accepter cookies",
     "decline": "Nej tak til cookies"

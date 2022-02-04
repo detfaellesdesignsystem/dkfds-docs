@@ -1,13 +1,17 @@
 {
   "item": {
-    "label": "Hvornår blev dit pas udstedt?",
-    "hint": "Fx: 05 12 2018",
-    "day": "Dag",
-    "month": "Måned",
-    "year": "År",
-    "error": "Datoen kan ikke være i fremtiden",
-    "dayValue": "01",
-    "monthValue": "12",
-    "yearValue": "2076"
+    "helptext": "Fx: 05 12 2018",
+    "labels": {
+      "legend": "Hvornår blev dit pas udstedt?",
+      "day": "Dag",
+      "month": "Måned",
+      "year": "År"
+    },
+    "errorMessage": "Datoen kan ikke være i fremtiden",
+    "values":{
+      "day": "01",
+      "month": "12",
+      "year": "2076"
+    }
   }
 }

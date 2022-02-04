@@ -5,7 +5,7 @@
         "id": "largeradio1",
         "name": "largeradio",
         "value": "1",
-        "text": "Valg 1",
+        "label": "Valg 1",
         "checked": false,
         "disabled": false,
         "large": true
@@ -14,7 +14,7 @@
         "id": "largeradio2",
         "name": "largeradio",
         "value": "0",
-        "text": "Valg 2",
+        "label": "Valg 2",
         "checked": false,
         "disabled": false,
         "large": true

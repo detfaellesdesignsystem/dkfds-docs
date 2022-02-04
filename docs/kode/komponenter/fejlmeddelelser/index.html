@@ -4425,16 +4425,16 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error">
-    <label class="form-label " for="example-name">
+
+    <label class="form-label" for="fullname-error-example">
         Hvad er dit fulde navn?
     </label>
 
-    <span class="form-error-message" id="example-name-error">
+    <span class="form-error-message" id="fullname-error-example-error">
         <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
         for- og efternavne med mellemrum, fx Christian Emil Vestergaard
         Christiansen
-    </span>
-    <input class="form-input " required="" id="example-name" value="" name="form-error" type="text" aria-invalid="true" aria-describedby=" example-name-error" />
+    </span><input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" required="" />
 </div>
         
     </div>
@@ -4457,7 +4457,8 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;label class=&quot;form-label &quot; for=&quot;form-error&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;form-error&quot;&gt;
         Hvad hedder dit kursus?
     &lt;/label&gt;
     &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;
@@ -4465,10 +4466,8 @@
     &lt;/span&gt;
     &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;
         &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Giv dit kursus et navn
-    &lt;/span&gt;
-    &lt;input class=&quot;form-input &quot; required id=&quot;form-error&quot; value=&quot;&quot;
-        name=&quot;form-error&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;form-error-hint form-error-error&quot;&gt;
+    &lt;/span&gt;&lt;input class=&quot;form-input&quot; id=&quot;form-error&quot; name=&quot;form-error&quot;
+        type=&quot;text&quot; aria-describedby=&quot;form-error-hint&quot; required /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4505,19 +4504,19 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
             &lt;li&gt;
                 &lt;input id=&quot;nationalitet1&quot; type=&quot;checkbox&quot;
                     name=&quot;nationalitet&quot; value=&quot;dansk&quot;
-                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                    class=&quot;form-checkbox checkbox-large &quot; /&gt;
                 &lt;label for=&quot;nationalitet1&quot; class=&quot;&quot;&gt;Dansk&lt;/label&gt;
             &lt;/li&gt;
             &lt;li&gt;
                 &lt;input id=&quot;nationalitet2&quot; type=&quot;checkbox&quot;
                     name=&quot;nationalitet[]&quot; value=&quot;svensk&quot;
-                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                    class=&quot;form-checkbox checkbox-large &quot; /&gt;
                 &lt;label for=&quot;nationalitet2&quot; class=&quot;&quot;&gt;Svensk&lt;/label&gt;
             &lt;/li&gt;
             &lt;li&gt;
                 &lt;input id=&quot;nationalitet3&quot; type=&quot;checkbox&quot;
                     name=&quot;nationalitet[]&quot; value=&quot;anden&quot;
-                    class=&quot;form-checkbox  checkbox-large &quot; /&gt;
+                    class=&quot;form-checkbox checkbox-large &quot; /&gt;
                 &lt;label for=&quot;nationalitet3&quot; class=&quot;&quot;&gt;Anden
                     nationalitet&lt;/label&gt;
             &lt;/li&gt;

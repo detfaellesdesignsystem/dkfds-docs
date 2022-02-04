@@ -2,20 +2,20 @@
   "badge_example_small": {
     "items": [
       {
-        "class": "badge-small badge-success",
-        "label": "Positiv status"
+        "classes": "badge-small badge-success",
+        "text": "Positiv status"
       },
       {
-        "class": "badge-small badge-info",
-        "label": "Neutral status"
+        "classes": "badge-small badge-info",
+        "text": "Neutral status"
       },
       {
-        "class": "badge-small badge-warning",
-        "label": "Advarende status"
+        "classes": "badge-small badge-warning",
+        "text": "Advarende status"
       },
       {
-        "class": "badge-small badge-error",
-        "label": "Negativ status"
+        "classes": "badge-small badge-error",
+        "text": "Negativ status"
       }
     ]
   }

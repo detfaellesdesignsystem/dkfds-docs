@@ -1,7 +1,9 @@
 {
   "item": {
     "id": "input-area",
-    "label": "Tekstområde med label",
+    "label": {
+      "text": "Tekstområde med label"
+    },
     "name": "input-area",
     "rows": 5
   }

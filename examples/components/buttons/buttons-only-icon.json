@@ -4,9 +4,9 @@
     "items": [
       {
         "text": "",
-        "class": "unstyled",
+        "classes": "unstyled",
         "icon": "trash-can",
-        "sronly": "Slet"
+        "srOnly": "Slet"
       }
     ]
   }

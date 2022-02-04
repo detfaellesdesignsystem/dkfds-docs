@@ -4417,14 +4417,14 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <form class="form mb-7 input-width-m">
+        <form novalidate="" class="form mb-7 input-width-m">
 
     <div class="form-group ">
+        <label class="form-label" for="options">
+            Dropdown label (select)
+        </label>
 
-        <label class="form-label " for="options">Dropdown label
-            (select)</label>
         <select class=" form-select" name="options" id="options">
-            <option value="">Vælg</option>
 
             <option value="option1">Mulighed 1</option>
 
@@ -4456,14 +4456,14 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;form class=&quot;form mb-7 input-width-m&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;form novalidate class=&quot;form mb-7 input-width-m&quot;&gt;
 
     &lt;div class=&quot;form-group &quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;options&quot;&gt;
+            Dropdown label (select)
+        &lt;/label&gt;
 
-        &lt;label class=&quot;form-label &quot; for=&quot;options&quot;&gt;Dropdown label
-            (select)&lt;/label&gt;
         &lt;select class=&quot; form-select&quot; name=&quot;options&quot; id=&quot;options&quot;&gt;
-            &lt;option value&gt;Vælg&lt;/option&gt;
 
             &lt;option value=&quot;option1&quot;&gt;Mulighed 1&lt;/option&gt;
 

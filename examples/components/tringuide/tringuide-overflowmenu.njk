@@ -1,6 +1,12 @@
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
-{{overflowmenu("Trin 2 af 3","overflow5", true, false, "arrow-drop-down" ,"
+{{overflowmenu({
+    "button": {
+        "text": "Trin 2 af 3",
+        "icon":"arrow-drop-down"
+    },
+    "id": "overflow5",
+    "content": "
    <nav><ul class='sidenav-list' role='menu'>
         <li role='none'>
             <a href='#' role='menuitem'>
@@ -22,4 +28,4 @@
         </li>
     </ul></nav>
     "
-) }}
+}) }}

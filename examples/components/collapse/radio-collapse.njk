@@ -7,11 +7,23 @@
         <ul class="nobullet-list">
             <li>{{radiobutton(radiobutton1_data) }}
                 <div id="collapse-radio1" aria-hidden="true" class="radio-content radio-content-large">
-                    {{textinput("textinput1", "Inputfelt med label", "", "input-width-m", "", "text1", "", false, "", "", "", "", "", "")}}
+                    {{textinput({
+                        "id":"textinput1",
+                        "label":{
+                            "text":"Inputfelt med label"
+                            },
+                        "classes":"input-width-m",
+                        "name":"text1"})}}
                 </div></li>
             <li>{{radiobutton(radiobutton2_data)}}
                 <div id="collapse-radio2" aria-hidden="true" class="radio-content radio-content-large">
-                    {{textinput("textinput2", "Inputfelt med anden label", "", "input-width-m", "", "text2", "", false, "", "", "", "", "", "")}}
+                    {{textinput({
+                        "id":"textinput2",
+                        "label":{
+                            "text":"Inputfelt med anden label"
+                            },
+                        "classes":"input-width-m",
+                        "name":"text2"})}}
                 </div>
             </li>
         </ul>
