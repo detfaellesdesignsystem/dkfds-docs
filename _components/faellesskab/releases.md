@@ -137,6 +137,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Luk modalvindue, hvis en ny <a href="/komponenter/modal/">modalvindue</a> åbnes.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Forbedret <a href="/komponenter/headers/#standard-header-med-navigation">navigation i headeren</a> på mobil.
 - Vis <a href="/komponenter/tjekboks/">tjekbokse</a> og <a href="/komponenter/radioknap/">radioknapper</a> ved print.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.
+- Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/">datovælgeren</a>.
 
 {:#version-7-5-3 .mb-0}
 ## Version 7.5.3
