@@ -19,12 +19,9 @@ subnav:
   href: "#med-fejl"
 - text: Med succesbeskeder
   href: "#med-succesbeskeder"
-- text: Uden ramme
-  href: "#uden-ramme"
 component: accordion
 componentTitle: Eksempel på accordion
 componentCode: "/kode/komponenter/accordions/"
-
 ---
 ## Anvendes til  
 {: .h3 #retningslinjer}

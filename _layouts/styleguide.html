@@ -47,8 +47,7 @@ layout: default
             {{ page.subcategory }}
           </div>
           <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-
-          <!-- List of hash links/anchor links outputted for mobile overview and use -->
+          {% comment %}List of hash links/anchor links outputted for mobile overview and use{% endcomment %}
           {% if page.subnav and page.anchor == true %}
           <ul class="d-lg-none nobullet-list">
           {% for subnavitem in page.subnav -%}
@@ -72,7 +71,7 @@ layout: default
             {% assign _isCurrentInList = false %}
 
             {%- for link in _links -%}
-            <!-- found in list level 1-->
+            {% comment %}found in list level {% endcomment %}
               {% if link.href == page.permalink %}
                 {% unless link.overblik %}
                   {% if link.categorynav %}
@@ -83,7 +82,8 @@ layout: default
                   {% break %}
                 {% endunless %}
               {% endif %}
-              <!-- not found in level 1 - check all categorynav -->
+
+              {% comment %}not found in level 1 - check all categorynav {% endcomment %}
               {% if link.categorynav %}
               {% assign _links_level_3 = site.data.nav[link.categorynav] %}
                 {% for link_3 in _links_level_3 %}

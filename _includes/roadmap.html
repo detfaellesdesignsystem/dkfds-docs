@@ -1,8 +1,8 @@
-<tr>
-    <td>
+<div class="row row-bordered no-gutters py-3 w-percent-md-60">
+    <div class="col-md-8">
         {% if include.link %}<a href="{{ include.link }}" class="icon-link">{% endif %}{{ include.title }}{% if include.link %}{% if include.link contains "http" %}<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>{% endif %}</a>{% endif %}
-    </td>
-    <td class="align-text-md-right">
+    </div>
+    <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
         {% if include.status == "Foreslået" %}
         <span class="small-text uppercase weight-semibold">Foreslået</span>
         {% elsif include.status == "Planlagt" %}
@@ -14,5 +14,5 @@
         {% elsif include.status == "Annulleret"%}
         <span class="badge badge-small badge-error">Annulleret/afvist</span>
         {% endif %}
-    </td>
-</tr>
+    </div>
+</div>

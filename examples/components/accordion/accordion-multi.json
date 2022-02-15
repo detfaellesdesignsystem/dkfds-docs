@@ -1,6 +1,6 @@
 {
   "accordion_example3": {
-    "id_prefix": "m-",
+    "idPrefix": "m-",
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",
