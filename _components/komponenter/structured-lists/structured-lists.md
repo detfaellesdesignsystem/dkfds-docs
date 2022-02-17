@@ -53,6 +53,6 @@ Anvend ikke strukturede lister til komplekse og sammenlignelige datasæt, der er
 
 {:#med-rediger}
 
-## Struktureret liste med redigér
+## Struktureret liste med link
 
-{% include code/preview-box.html component="structured-list--edit" title="Eksempel på struktureret liste med redigér mulighed" %}
+{% include code/preview-box.html component="structured-list--edit" title="Eksempel på struktureret liste med redigérlink" %}
