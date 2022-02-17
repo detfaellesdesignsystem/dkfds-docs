@@ -28,7 +28,7 @@ Strukturede lister anvendes til at vise informationer, der er opstillet i et sim
 
 ## Anvendes ikke til
 
-Anvend ikke strukturede lister til komplekse og sammenlignelige datasæt, der er opsat i flere kolonner med kolonneoverskrifter. Anvend da i stedet <a href="/komponenter/tabeller/">tabeller</a>.
+Anvend ikke strukturede lister til komplekse og sammenlignelige datasæt, der er opsat i flere kolonner med kolonneoverskrifter. Anvend da i stedet <a href="/komponenter/tables/">tabeller</a>.
 
 {: .h3}
 
