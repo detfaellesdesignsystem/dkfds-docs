@@ -1,0 +1,23 @@
+{
+    "list":  [
+        {
+            "label": "Navn",
+            "value": "Kirsten Mønster Jensen"
+        },
+        {
+            "label": "Sagsnummer",
+            "value": "123.456"
+        },
+        {
+            "label": "Dato",
+            "value": "04/05/2011"
+        },
+        {
+            "label": "Beskrivelse",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        }
+    ],
+    "options":{
+        "rowPadding": "py-4"
+    }
+}

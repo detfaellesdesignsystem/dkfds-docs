@@ -116,11 +116,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 8.0.0
 <div><span class="small-text mt-0 d-block">xx-xx-2021</span></div>
 
+- Ny komponent: <a href="/komponenter/strukturerede-lister/">Strukturerede lister</a>
 - Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikatorer/">trinindikator</a>
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
-- Tilføjet mulighed for <a href="/kode/grid/#rækker-med-border">border på rækkerne i et grid</a> til brug som erstatning for tabel, når der ingen horisontal header er.
 - <span class="badge badge-info badge-small mr-3">Change</span>Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
 - Fikset fejl med placering af <a href="/komponenter/trinindikatorer/#ekstra-information">ekstra information i sidenavigation</a>.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
@@ -140,6 +140,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.
 - Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/">datovælgeren</a>.
 - Opdateret breakpoints i <a href="/komponenter/knapper/">knapper</a>, så knapperne ikke er helt så brede på mindre skærme.
+- <span class="badge badge-info badge-small mr-3">Change</span> Fjernet accordion uden ramme.
 
 {:#version-7-5-3 .mb-0}
 ## Version 7.5.3
@@ -251,7 +252,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Opdateret fonten IBM Plex Sans til version 5.0.0
 <span class="form-hint mt-0">Hvis man preloader fonten - hvilket anbefales - så bør man tjekke om stien til fonten skal ændres, da mappestrukturen under fonts er ændret i dkfds</span>
-- <label class=" badge badge-small mr-3">Breaking change</label>Ændret attributter på <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks med collapse funktion</a>, så HTML nu er valid.
+- <label class=" badge badge-small badge-warning mr-3">Breaking change</label>Ændret attributter på <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks med collapse funktion</a>, så HTML nu er valid.
 - Tilføjet ny <a href="/komponenter/modal/">modal komponent</a>
 - Fikset fejl med fokus i header i Firefox
 - Tilføjet maks. bredde på tooltip

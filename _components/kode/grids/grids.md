@@ -20,8 +20,6 @@ subnav:
   href: '#rækkefølge'
 - text: Ingen afstand mellem kolonner
   href: '#ingen-afstand-mellem-kolonner-ingen-gutter'
-- text: Rækker med border
-  href: '#rækker-med-border'
 - text: Hjælpeklasser
   href: '#hjælpeklasser'
 - text: SASS variabler
