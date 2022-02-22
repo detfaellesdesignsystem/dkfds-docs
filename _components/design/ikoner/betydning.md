@@ -104,8 +104,8 @@ tags:
     <div class="icon-list row" id="icon-list-beskeder">
           {% include icon.html icon="report-problem" keywords="besked, alert, message, warning, advarsel, report, problem, report problem" label="Advarsel" %}
           {% include icon.html icon="highlight-off" keywords="besked, alert, message, error, fejl" label="Fejl" %}
-          {% include icon.html icon="info" keywords="besked, alert, message, information, info" label="Hjælp" %}
-          {% include icon.html icon="help" keywords="besked, alert, message, help, hjælp" label="Information" %}
+          {% include icon.html icon="info" keywords="besked, alert, message, information, info" label="Information" %}
+          {% include icon.html icon="help" keywords="besked, alert, message, help, hjælp" label="Hjælp" %}
           {% include icon.html icon="check-circle" keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark" label="Succes" %}
     </div>
   </div>
@@ -245,7 +245,7 @@ tags:
           {% include icon.html icon="videocam" keywords="video, kamera" label="Videokamera" %}
           {% include icon.html icon="headphones" keywords="headset, sound, lyd, høretelefoner" label="Headset" %}
           {% include icon.html icon="desktop-windows" keywords="skærm, screen, computer" label="Desktop" %}
-          {% include icon.html icon="laptop" keywords="bærbar, computer" label="Labtop" %}
+          {% include icon.html icon="laptop" keywords="bærbar, computer" label="Laptop" %}
           {% include icon.html icon="phone-iphone" keywords="telefon, smartphone" label="Mobiltelefon" %}
           {% include icon.html icon="mouse" keywords="" label="Mus" %}
           {% include icon.html icon="accessibility-new" keywords="man, mand" label="Tilgængelighed" %}

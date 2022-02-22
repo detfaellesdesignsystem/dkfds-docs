@@ -41,7 +41,7 @@ Overskriftstyperne har to formål:
 {:.table .table--borderless .table--responsive-headers}
 | Tekst        | Skrifttype     | Skriftstørrelse | Tekst tykkelse | Tekstfarve | Afstand mellem bogstaver |
 |--------------|---------------|-----------------|-----------------|------------|---------------------------|
-| Overskrift 1 | IBM Plex Sans | 48px            | 700             | #1a1a1a    | -0.5px                    |
+| Overskrift 1 | IBM Plex Sans | 39px            | 700             | #1a1a1a    | -0.5px                    |
 | Overskrift 2 | IBM Plex Sans | 31px            | 600             | #1a1a1a    | -0.4px                    |
 | Overskrift 3 | IBM Plex Sans | 25px            | 600             | #1a1a1a    | -0.3px                    |
 | Overskrift 4 | IBM Plex Sans | 20px            | 600             | #1a1a1a    | -0.2px                    |
