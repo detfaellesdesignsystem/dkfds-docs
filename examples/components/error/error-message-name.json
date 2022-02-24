@@ -5,6 +5,6 @@
       "text":"Hvad er dit fulde navn?"
     },
     "name": "fullname-error-example",
-    "errorMessage": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Christian Emil Vestergaard Christiansen"
+    "errorMessage": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen"
   }
 }

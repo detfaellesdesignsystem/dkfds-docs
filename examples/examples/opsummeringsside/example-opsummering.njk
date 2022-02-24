@@ -16,7 +16,7 @@
       <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
-        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
+        <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
         <a href="#" class="button button-secondary button-signout">
           Log af
         </a>
@@ -42,86 +42,13 @@
 {% block body %}
 <main class="container page-container pt-4 pt-lg-0" id="main-content">
     <div><a href="javascript:void(0);" class="back-link">Tilbage</a></div>
-    {{overflowmenu("Trin 9 af 9","overflow_steps", true, false, "arrow-drop-down" ,"
-        <nav><ul class='sidenav-list' role='menu'>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-1/' role='menuitem'>
-                    1. Oplysninger om afsender
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-2/' role='menuitem'>
-                    2. Hvis AES har spørgsmål til sagen
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-3/' role='menuitem'>
-                    3. Oplysninger om skadelidte
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-4/' role='menuitem'>
-                    4. Sagens natur
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-5/' role='menuitem'>
-                    5. Oplysninger om sagen
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-6/' role='menuitem'>
-                    6. Tilføj dokumentation for første undersøgelse af skaden
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-7/' role='menuitem'>
-                    7. Tilføj dokumentation fra sagen
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-8/' role='menuitem'>
-                    8. Tilføj kommentarer til sagen
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li class='active current' role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-9/' role='menuitem' aria-current='page'>
-                    9. Opsummering
-                </a>
-            </li>
-        </ul></nav>
-        "
-    ) }}
+    {{overflowmenu(stepguide) }}
 
     <h1>Opsummering</h1>
     <p class="font-lead">Her kan du kontrollere, om oplysningerne er korrekte.</p>
     <h2>Dine oplysninger</h2>
     <div class="w-percent-md-70 mt-6 mb-7">
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-virksomhedens-navn" class="form-label">Virksomhedens navn</label>
             </div>
@@ -132,7 +59,7 @@
                 <a href="/pages/eksempler/AES-erstatningssag/aes-1">Redigér<span class="sr-only"> virksomhedens navn</span></a>
             </div>
         </div> 
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-virksomhedens-kontaktperson" class="form-label">Kontaktperson</label>
             </div>
@@ -145,7 +72,7 @@
                 <a href="/pages/eksempler/AES-erstatningssag/aes-2">Redigér<span class="sr-only"> virksomhedens kontaktperson</span></a>
             </div>
         </div> 
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-afsender" class="form-label">Afsender</label>
             </div>
@@ -159,7 +86,7 @@
     </div>
     <h3 class="h4">Oplysninger om skadelidte</h3>
     <div class="w-percent-md-70 mt-6 mb-7">
-      <div class="row no-gutters row-bordered py-3">
+      <div class="row no-gutters row-bordered">
         <div class="col-12 col-md-4 weight-semibold">
             <label for="input-skadelidtes-navn" class="form-label">Skadelidtes navn</label>
         </div>
@@ -170,7 +97,7 @@
             <a href="/pages/eksempler/AES-erstatningssag/aes-3">Redigér<span class="sr-only"> skadelidtes navn</span></a>
         </div>
       </div>
-      <div class="row no-gutters row-bordered py-3">
+      <div class="row no-gutters row-bordered">
         <div class="col-12 col-md-4 weight-semibold">
             <label for="input-skadelidtes-cpr" class="form-label">Skadelidtes CPR</label>
         </div>
@@ -185,7 +112,7 @@
     <h3 class="h4">Oplysninger om sagen</h3>
     
     <div class="w-percent-md-70 mt-6 mb-7">
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-sagstype" class="form-label">Sagstype</label>
             </div>
@@ -196,7 +123,7 @@
                 <a href="/pages/eksempler/AES-erstatningssag/aes-4">Redigér<span class="sr-only"> sagstype</span></a>
             </div>
         </div>
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-emne" class="form-label">Emne</label>
             </div>
@@ -207,7 +134,7 @@
                 <a href="/pages/eksempler/AES-erstatningssag/aes-4">Redigér<span class="sr-only"> emne</span></a>
             </div>
         </div>
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-skadedato" class="form-label">Skadedato</label>
             </div>
@@ -218,7 +145,7 @@
                 <a href="/pages/eksempler/AES-erstatningssag/aes-5">Redigér<span class="sr-only"> skadedato</span></a>
             </div>
         </div>
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-sagsnummer" class="form-label">Sagsnummer</label>
             </div>
@@ -229,7 +156,7 @@
                 <a href="/pages/eksempler/AES-erstatningssag/aes-5">Redigér<span class="sr-only"> sagsnummer</span></a>
             </div>
         </div>
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-verserende-retssag" class="form-label">Verserende retssag</label>
             </div>
@@ -240,7 +167,7 @@
                 <a href="/pages/eksempler/AES-erstatningssag/aes-5">Redigér<span class="sr-only"> verserende retssag</span></a>
             </div>
         </div>
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-skadelidtes-advokat" class="form-label">Skadelidtes advokat</label>
             </div>
@@ -255,7 +182,7 @@
     <h3 class="h4">Yderligere oplysninger</h3>
 
     <div class="w-percent-md-70 mt-6 mb-7">
-        <div class="row no-gutters row-bordered py-3">
+        <div class="row no-gutters row-bordered">
             <div class="col-12 col-md-4 weight-semibold">
                 <label for="input-faktuelle-oplysninger" class="form-label">Faktuelle oplysninger</label>
             </div>

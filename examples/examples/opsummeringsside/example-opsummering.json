@@ -2,7 +2,7 @@
   "portal_header_data": {
     "compact": true,
     "user": {
-      "name": "Christian Emil Vestergaard Christiansen, Forsikringens Forsikringsfirma"
+      "name": "Anders Andersen, Forsikringens Forsikringsfirma"
     },
     "logolink": {
       "label": "Portalnavn",
@@ -43,5 +43,13 @@
         {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
       ]
     }
+  },
+  "stepguide": {
+    "button": {
+      "text": "Trin 9 af 9",
+      "icon": "arrow-drop-down"
+    },
+    "content": "<nav><ul class='sidenav-list' role='menu'><li role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-1/' role='menuitem'><span class='sidenav-number'>1.</span><span class='sidenav-title'> Oplysninger om afsender</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg></span></a></li><li role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-2/' role='menuitem'><span class='sidenav-number'>2.</span><span class='sidenav-title'> Hvis AES har spørgsmål til sagen</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg></span></a></li><li role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-3/' role='menuitem'><span class='sidenav-number'>3.</span><span class='sidenav-title'> Oplysninger om skadelidte</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg></span></a></li><li role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-4/' role='menuitem'><span class='sidenav-number'>4.</span><span class='sidenav-title'> Sagens natur</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg></span></a></li><li role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-5/' role='menuitem'><span class='sidenav-number'>5.</span><span class='sidenav-title'> Oplysninger om sagen</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg></span></a></li><li role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-6/' role='menuitem'><span class='sidenav-number'>6.</span><span class='sidenav-title'> Tilføj dokumentation for første undersøgelse af skaden</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg></span></a></li><li role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-7/' role='menuitem'><span class='sidenav-number'>7.</span><span class='sidenav-title'> Tilføj dokumentation fra sagen</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg></span></a></li><li role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-8/' role='menuitem'><span class='sidenav-number'>8.</span><span class='sidenav-title'> Tilføj kommentarer til sagen</span><span class='sidenav-icon' aria-label='Gennemført'><svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg></span></a></li><li class='active current' role='none'><a href='/pages/eksempler/AES-erstatningssag/aes-9/' role='menuitem' aria-current='page'><span class='sidenav-number'>9.</span> <span class='sidenav-title'>Opsummering</span></a></li></ul></nav>",
+    "id": "overflow_steps"
   }
 }

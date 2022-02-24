@@ -12,9 +12,6 @@
             "label": "Telefonnummer",
             "value": "12 34 56 78"
         }
-    ],
-    "options":{
-        "rowPadding": "py-4"
-    }
+    ]
 
 }
