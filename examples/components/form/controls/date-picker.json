@@ -4,6 +4,7 @@
     "label": {
       "text": "Dato for aftale"
     },
-    "name": "appointment-date1"
+    "name": "appointment-date1",
+    "required": true
   }
 }
