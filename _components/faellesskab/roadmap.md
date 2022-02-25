@@ -16,7 +16,7 @@ Her er en liste over komponenter, mønstre og opdateringer, der aktuelt findes i
 
 Sagerne kan være:
 
-- <span class="small-text uppercase weight-semibold">Foreslået</span>
+- <span class="small-text weight-semibold">Foreslået</span>
 - <span class="badge badge-small badge-info">Planlagt</span>
 - <span class="badge badge-small badge-warning">I gang</span>
 - <span class="badge badge-small badge-success">Gennemført</span>
