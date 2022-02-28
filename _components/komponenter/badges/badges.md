@@ -36,8 +36,6 @@ Brug ikke badges på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyh
 
 Brug ord og begreber, som brugeren kan genkendes fra løsningen.
 
-Skriv ord i badges normalt - fx <label class="badge badge-large" aria-label="Eksempel på badge med nyhed">Nyhed</label> skrives som "Nyhed". Det er vigtig at ord skrives på den rigtige måde, da ord med kun store bogstaver vil blive læst op bogstav for bogstav med en skærmlæser.
-
 Brug ikke hover, focus eller active styling til et badge, som ikke er interaktivt (fx link).
 
 Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer ensartet opførsel af komponenterne inden for løsningen.
