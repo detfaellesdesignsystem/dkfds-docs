@@ -68,8 +68,8 @@
       "day": "date-day", 
       "month": "date-month", 
       "year": "date-year", 
-      "hint": "example-date-field-hint1", 
-      "error": "example-date-field-error1"
+      "helptext": "example-date-field-hint1", 
+      "errorMessage": "example-date-field-error1"
     }
   },
   "date_collapse": {
@@ -84,8 +84,8 @@
       "day": "date-day2", 
       "month": "date-month2", 
       "year": "date-year2", 
-      "hint": "example-date-field-hint2", 
-      "error": "example-date-field-error2"
+      "helptext": "example-date-field-hint2", 
+      "errorMessage": "example-date-field-error2"
     }
   }
 }
