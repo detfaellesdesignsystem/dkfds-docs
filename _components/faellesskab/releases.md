@@ -326,7 +326,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/headers/">header</a> samt <a href="/komponenter/sidenav/">sidenavigationen</a>.
 - Tilføjet mulighed for <a href="/komponenter/form-controls/#radioknap">hjælpetekst på radioknap</a>.
 - Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.
-- Tilpasset retningslinjer for <a href="/komponenter/collapse/#radioknap-skjul-og-vis-indhold">Skjul/vis med radiobuttons</a>.
+- Tilpasset retningslinjer for <a href="/komponenter/radioknap/#skjult-indhold-collapse">Skjul/vis med radioknapper</a>.
 - Opdateret <a href="/komigang/tildesignere/">SVG filer</a>, samt tilføjet link til <a href="/komigang/tildesignere/">Figma komponent bibliotek</a>.
 
 {:#version-5-2-0 .mb-0}
