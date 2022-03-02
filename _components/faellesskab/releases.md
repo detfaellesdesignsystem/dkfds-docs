@@ -129,7 +129,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a>
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret attributter for <a href="/kode/komponenter/radioknap/#skjult-indhold">radioknap med skjult indhold</a>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret attributter for <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet gamle <a href="/design/ikoner/ikoner-og-deres-betydning/">ikoner</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet <a href="/kode/komponenter/beskeder/">JavaScript til lukknap i beskeder</a>
 - Tilføjet <a href="/komponenter/modal/#kraever-handling">modalvindue</a> som kræver handling, så brugeren ikke kan lukke modalvinduet uden at tage stilling til dets indhold. 
@@ -141,6 +141,12 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/">datovælgeren</a>.
 - Opdateret breakpoints i <a href="/komponenter/knapper/">knapper</a>, så knapperne ikke er helt så brede på mindre skærme.
 - <span class="badge badge-info badge-small mr-3">Change</span> Fjernet accordion uden ramme.
+- Tilpasset afstande i <a href="/komponenter/modal/">modalvindue</a> på mindre skærme
+- Opdateret normalize.css til v8.0.1
+- Fjernet styling på <a href="/komponenter/badges/">badges</a>, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.
+- Grå baggrundsfarve på <a href="/komponenter/drop-down/">dropdown-menu</a> i firefox er ændret til hvid.
+- <a href="/komponenter/headers/">Header komponent</a>: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.
+- Lille fejl i border på <a href="/komponenter/tables/#zebralinjer">tabeller med zebralinjer</a> er fikset.
 
 {:#version-7-5-3 .mb-0}
 ## Version 7.5.3
