@@ -57,7 +57,7 @@
   },
   "date_skadedato": {
     "helptext":"Fx. 28 04 1996",
-    "tooltip": "Her står relevant uddybbende hjælpetekst.",
+    "tooltip": "Her står relevant uddybende hjælpetekst.",
     "labels": {
       "legend": "Skadedato",
       "day": "Dag",
