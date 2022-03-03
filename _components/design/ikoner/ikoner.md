@@ -172,7 +172,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
     <div class="icon-list row" id="icon-list-navigation"> {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
           {% include icon.html icon="arrow-right" keywords="right, højre, frem, pil, arrow" label="Frem (højre)" %}
           {% include icon.html icon="menu" keywords="hamburger, menu, burger, burgermenu, burger menu" label="Menu" %}
-          {% include icon.html icon="more-vert" keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical" label="Overflowmenu (vertikalt)" %}
+          {% include icon.html icon="more-vert" keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical" label="Overflow menu (vertikalt)" %}
           {% include icon.html icon="chevron-left" keywords="næste, next, side" label="Paginering forrige" %}
           {% include icon.html icon="first-page" keywords="start, første, side" label="Paginering første" %}
           {% include icon.html icon="chevron-right" keywords="forrige, previous, prev, side" label="Paginering næste" %}

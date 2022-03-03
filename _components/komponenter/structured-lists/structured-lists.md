@@ -21,12 +21,12 @@ subnav:
 {: .h3 #retningslinjer}
 ## Anvendes til
 
-Strukturede lister anvendes til at vise informationer, der er opstillet i et simpelt format med titler og dertilhørende information. Strukturerede lister anvendes blandt andet til opsummeringssider i formularer.
+Strukturerede lister anvendes til at vise informationer, der er opstillet i et simpelt format med titler og dertilhørende information. Strukturerede lister anvendes blandt andet til opsummeringssider i formularer.
 
 {: .h3}
 ## Anvendes ikke til
 
-Anvend ikke strukturede lister til komplekse og sammenlignelige datasæt, der er opsat i flere kolonner med kolonneoverskrifter. Anvend da i stedet <a href="/komponenter/tables/">tabeller</a>.
+Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der er opsat i flere kolonner med kolonneoverskrifter. Anvend da i stedet <a href="/komponenter/tables/">tabeller</a>.
 
 {: .h3}
 ## Vejledning
