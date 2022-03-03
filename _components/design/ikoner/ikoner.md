@@ -300,7 +300,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
           {% include icon.html icon="videocam" keywords="video, kamera" label="Videokamera" %}
           {% include icon.html icon="headphones" keywords="headset, sound, lyd, høretelefoner" label="Headset" %}
           {% include icon.html icon="desktop-windows" keywords="skærm, screen, computer" label="Desktop" %}
-          {% include icon.html icon="laptop" keywords="bærbar, computer" label="Labtop" %}
+          {% include icon.html icon="laptop" keywords="bærbar, computer" label="Laptop" %}
           {% include icon.html icon="phone-iphone" keywords="telefon, smartphone" label="Mobiltelefon" %}
           {% include icon.html icon="mouse" keywords="" label="Mus" %}
           {% include icon.html icon="accessibility-new" keywords="man, mand" label="Tilgængelighed" %}
@@ -315,7 +315,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
           {% include icon.html icon="insert-drive-file" keywords="" label="Dokument (sag)" %}
           {% include icon.html icon="domain" keywords="" label="Virksomhed" %}
           {% include icon.html icon="face" keywords="" label="Elev" %}
-          {% include icon.html icon="engineering" keywords="" label="Erhverv/Erhversuddannet" %}
+          {% include icon.html icon="engineering" keywords="" label="Erhverv/Erhvervsuddannet" %}
           {% include icon.html icon="account-circle" keywords="" label="Brugerprofil" %}
           {% include icon.html icon="how-to-reg" keywords="" label="Fuldmagtsprofil (3. part)" %}
           {% include icon.html icon="support-agent" keywords="" label="Supporter (telefonrådgiver)" %}
@@ -341,7 +341,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
           {% include icon.html icon="format-underlined" keywords="" label="Understregning" %}
           {% include icon.html icon="format-color-text" keywords="" label="Farve" %}
           {% include icon.html icon="format-color-fill" keywords="" label="Baggrundsfarve" %}
-          {% include icon.html icon="format-clear" keywords="" label="Ryd tekstformaterering" %}
+          {% include icon.html icon="format-clear" keywords="" label="Ryd tekstformatering" %}
           {% include icon.html icon="format-list-bulleted" keywords="" label="Punktopstilling" %}
           {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling numerisk" %}
           {% include icon.html icon="format-indent-increase" keywords="" label="Indryk højre" %}

@@ -60,7 +60,7 @@ Vær opmærksom på, at vi anbefaler, at man bruger den store tjekboks.
 For at initialisere collapse funktionaliteten på en checkbox skal `input[type=checkbox]` have følgende:
 
 - Klassen `'js-checkbox-toggle-content'`. Denne klasse gør at funktionaliteten bliver initialiseret. 
-- Attributten `data-js-target="id-of-target-to-collapse"`: denne attribute skal have id'et på det element som skal vises på tjekboksen er aktiveret. 
+- Attributten `data-js-target="id-of-target-to-collapse"`: denne attribute skal have samme værdi som i id attributten på det element som skal vises på tjekboksen er aktiveret. 
 - Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten `'checked'`.
 - `aria-controls="id-of-target-to-collapse" `
 

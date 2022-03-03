@@ -125,7 +125,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fikset fejl med placering af <a href="/komponenter/trinindikatorer/#ekstra-information">ekstra information i sidenavigation</a>.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Omdøbt FDS <a href="/design/farver/">farver</a>
-- Erstattet brug af / ved dividering i scss med math.div
+- Erstattet brug af / ved division i scss med math.div
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a>
@@ -144,7 +144,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilpasset afstande i <a href="/komponenter/modal/">modalvindue</a> på mindre skærme
 - Opdateret normalize.css til v8.0.1
 - Fjernet styling på <a href="/komponenter/badges/">badges</a>, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.
-- Grå baggrundsfarve på <a href="/komponenter/drop-down/">dropdown-menu</a> i firefox er ændret til hvid.
+- Grå baggrundsfarve på <a href="/komponenter/drop-down/">dropdown-menu</a> i Firefox er ændret til hvid.
 - <a href="/komponenter/headers/">Header komponent</a>: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.
 - Lille fejl i border på <a href="/komponenter/tables/#zebralinjer">tabeller med zebralinjer</a> er fikset.
 
@@ -537,7 +537,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Bourbon er fjernet
 <span class="form-hint mt-0">Biblioteket 'Bourbon' er ikke længere en del af designsystemet. Det vil derfor ikke længere være muligt at benytte sig af deres hjælpeklasser og funktioner. </span>
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Nyt gridsystem
-<span class="form-hint mt-0"> USDW's gamle float-grid (NEAT) og Bootstraps grid er fjernet. I stedet for er USWDs nye grid inkluderet. Der er lavet tilpasninger af dette grid så det køre på de samme variable og klassenavne som i den forrige version af FDS. Der skal derfor ikke laves nogen tilpasninger for at få dette grid inkluderet.</span>
+<span class="form-hint mt-0"> USWDS' gamle float-grid (NEAT) og Bootstraps grid er fjernet. I stedet for er USWDS' nye grid inkluderet. Der er lavet tilpasninger af dette grid så det køre på de samme variable og klassenavne som i den forrige version af FDS. Der skal derfor ikke laves nogen tilpasninger for at få dette grid inkluderet.</span>
 - <label class="badge badge-warning badge-small mr-3">Breaking change</label>Plugins project
 <span class="form-hint mt-0">Datatables og SelectWoo er ikke længere en del af komponent-biblioteket. Der er derimod oprettet et nyt projekt (dkfds-plugins) hvor disse nu lever.</span>
 - Nye klasser
