@@ -24,7 +24,7 @@ Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en 
 
 Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikatorer/">trinindikator</a>.
 
-Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbasserede løsninger og i løsninger med en flad struktur. 
+Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur. 
 
 {:.h3}
 ## Vejledning

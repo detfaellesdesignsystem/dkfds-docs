@@ -121,7 +121,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
-- <span class="badge badge-info badge-small mr-3">Change</span>Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
+- <span class="badge badge-info badge-small mr-3">Change</span> Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
 - Fikset fejl med placering af <a href="/komponenter/trinindikatorer/#ekstra-information">ekstra information i sidenavigation</a>.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Omdøbt FDS <a href="/design/farver/">farver</a>
@@ -256,9 +256,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">18-08-2020</span></div>
 
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Opdateret fonten IBM Plex Sans til version 5.0.0
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Opdateret fonten IBM Plex Sans til version 5.0.0
 <span class="form-hint mt-0">Hvis man preloader fonten - hvilket anbefales - så bør man tjekke om stien til fonten skal ændres, da mappestrukturen under fonts er ændret i dkfds</span>
-- <label class=" badge badge-small badge-warning mr-3">Breaking change</label>Ændret attributter på <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks med collapse funktion</a>, så HTML nu er valid.
+- <span class=" badge badge-small badge-warning mr-3">Breaking change</span> Ændret attributter på <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks med collapse funktion</a>, så HTML nu er valid.
 - Tilføjet ny <a href="/komponenter/modal/">modal komponent</a>
 - Fikset fejl med fokus i header i Firefox
 - Tilføjet maks. bredde på tooltip
@@ -302,15 +302,15 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">10-03-2020</span></div>
 
 - <a href="/komponenter/detaljer/">Detalje komponent</a> tilføjet.
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Skjul/vis indhold med knap er fjernet.
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label><a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse</a> opdateret i udseende og HTML.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Skjul/vis indhold med knap er fjernet.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse</a> opdateret i udseende og HTML.
 - Rettet fejl med border i tabel.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet mulighed for styling af <a href="/design/typografi/overskrifter/#overskrift-som-link">links i overskrifter</a>.
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label><a href="/komponenter/faneblad/" title="Læs mere om faneblads-komponenten">Fanebladskomponenten</a> er ændret i HTML og JavaScript.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblad/" title="Læs mere om faneblads-komponenten">Fanebladskomponenten</a> er ændret i HTML og JavaScript.
 - Ændret aktive farve på undermenupunkt i <a href="/komponenter/sidenav/">sidenavigation</a>
 - Tilføjet retningslinjer for <a href="/komponenter/funktionslink/">funktionslink</a>, <a href="/komponenter/tilbage-link/">tilbage-link</a> og <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a>.
-- <label class="badge badge-info badge-small mr-3">Change</label>Tilføjet korrekte ARIA attributer på <a href="/kode/komponenter/sidenav/" title="Se koden til sidenavigationen">sidenavigationen</a>, <a href="/kode/komponenter/headers/" title="Se koden til mobilmenu og headermenu">mobilmenu og headermenuen</a>.
+- <span class="badge badge-info badge-small mr-3">Change</span> Tilføjet korrekte ARIA attributer på <a href="/kode/komponenter/sidenav/" title="Se koden til sidenavigationen">sidenavigationen</a>, <a href="/kode/komponenter/headers/" title="Se koden til mobilmenu og headermenu">mobilmenu og headermenuen</a>.
 - Fikset fejl på <a href="/komponenter/trinindikatorer/#responsiv">responsiv trinindikator</a>.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
@@ -334,7 +334,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">27-11-2019</span></div>
 
-- <label class="badge badge-info badge-small mr-3">Change</label>Ændret accordion aria-multiselectable så man i stedet kan bruge klassen accordion-multiselectable
+- <span class="badge badge-info badge-small mr-3">Change</span> Ændret accordion aria-multiselectable så man i stedet kan bruge klassen accordion-multiselectable
 <span class="form-hint mt-0">Ændringen er fortsat bagudkompatibel, men den tidligere implementering anbefales ikke, da det ikke var valid HTML.</span>
 - Teksten i <a href="/komponenter/cards/#cards-med-samme-højde">cards med samme højde</a> placeres nu korrekt
 - Tilføjet mere afstand mellem links i footer
@@ -366,17 +366,17 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">22-10-2019</span></div>
 
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen `DKFDS.init()` på hver side.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen `DKFDS.init()` på hver side.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/kode/implementering/">implementering af DKFDS til udviklere</a>.</span>
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label><a href="/komponenter/sidenav/">Sidenavigationen</a> har fået nyt design.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/sidenav/">Sidenavigationen</a> har fået nyt design.
 <span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/sidenav/">sidenavigations-komponenten</a>.</span>
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label><a href="/komponenter/tabnav/">Faneblads-komponenten</a> er blevet redefineret.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/tabnav/">Faneblads-komponenten</a> er blevet redefineret.
 <span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/tabnav/">faneblads-komponenten</a>.</span>
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Modalvinduer-komponenten er blevet flyttet til plugins.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Modalvinduer-komponenten er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span>
 - Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>. 
@@ -388,7 +388,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">20-08-2019</span></div>
 
-- <label class="badge badge-info badge-small mr-3">Change</label>Tilpasset CSS til print
+- <span class="badge badge-info badge-small mr-3">Change</span> Tilpasset CSS til print
 - Farven på valgt menupunkt i sidenavigationen er ændret til #1A1A1A
 - Ændret udseende på tjekboks og radioknap ved print
 - Fikset fejl med border på den sidste række i en tabel
@@ -404,7 +404,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilpasset positionering af ikon på knapper.
 - Fikset fejl i input felter, hvor specialtegn (Å, Ö, Ä etc.) ikke blev vist korrekt.
 - Tilføjet eksempel på luk knap i <a href="/komponenter/beskeder/#beskeder-med-luk-knap">Beskeder</a>.
-- <label class="badge badge-info badge-small mr-3">Change</label>Tilføjet mulighed for at <a href="/komponenter/cards/#cards-med-samme-højde">positionere action knapper i cards</a> i bunden.
+- <span class="badge badge-info badge-small mr-3">Change</span> Tilføjet mulighed for at <a href="/komponenter/cards/#cards-med-samme-højde">positionere action knapper i cards</a> i bunden.
 - Fikset fejl ved print af eksempelløsninger i Firefox - tilføjet yderligere print CSS.
 
 {:#version-4-2-0 .mb-0}
@@ -413,7 +413,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">20-06-2019</span></div>
 
 - Fjernet margin-top på h1.
-- <label class="badge badge-info badge-small mr-3">Change</label>Fjernet form-group div fra li i radioknap og tjekboks liste (Løser udfordringen med at JAWS skærmlæseren læser skrivebeskyttet ved hver tjekboks eller radioknap).
+- <span class="badge badge-info badge-small mr-3">Change</span> Fjernet form-group div fra li i radioknap og tjekboks liste (Løser udfordringen med at JAWS skærmlæseren læser skrivebeskyttet ved hver tjekboks eller radioknap).
 - Fikset styling i niveau 4 i sidemenuen på mobil.
 - Fikset tilgængelighed på responsiv tringuide - aria-hidden opdateres nu automatisk alt efter status på komponenten.
 - Responsiv tabel er  nu sat til display:block på små skærme således at skærmlæsere ikke tror det er en tom tabel.
@@ -435,14 +435,14 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">26-04-2019</span></div>
 
-- <span class="badge badge-info badge-small mr-3">Change</span>Fjernet fast højde på tekstområde (textarea) - man kan/bør nu sætte højden med rows attributten.
+- <span class="badge badge-info badge-small mr-3">Change</span> Fjernet fast højde på tekstområde (textarea) - man kan/bør nu sætte højden med rows attributten.
 - Fjernet tekstmarkøren på et read only felt i Internet Explorer.
 - Tilføjet eksempler på advarsel, når man forlader siden i eksempelløsningerne.
 - Tilføjet afstand af tags, når de fylder flere linjer.
 - Fjernet primærfarve på teksten i faneblad ved hover.
 - Fikset fokusramme på faneblad.
 - Fikset fejl i modalvindue, hvor overskriften blev overlappet af luk knappen.
-- <span class="badge badge-info badge-small mr-3">Change</span>Log ud skal nu hedde Log af.
+- <span class="badge badge-info badge-small mr-3">Change</span> Log ud skal nu hedde Log af.
 
 {:#version-4-0-1 .mb-0}
 ## Version 4.0.1
@@ -463,7 +463,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">01-04-2019</span></div>
 
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Fjernet højde på cards
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet højde på cards
 - Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.
 - Fikset fokus border på faneblad
 
@@ -482,7 +482,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">27-03-2019</span></div>
 
 - Fjernet eksempler fra projekt
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Ændret macros, så de er mere dynamiske, så flere projekter kan gøre brug af dem
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret macros, så de er mere dynamiske, så flere projekter kan gøre brug af dem
 - Fikset fejl med fokus på overflow menu i Firefox
 - Fikset fejl med ol liste i flere niveauer
 - Fjernet gammel JavaScript, som var årsag til fejl ved loading af javascript filen
@@ -498,16 +498,16 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">19-02-2019</span></div>
 
 - Tilføjet info om fiks af Microsoft Edge bug i navigation, hvor bullets blev vist trods styling
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Defineret tilbage-knap
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Defineret tilbage-knap
 - Tilføjet readonly eksempel i input felter
 - Ændret Skjul/Vis eksempel ved brug af radio knap for at løse tilgængelighedsproblemer
 - Fikset fejl på dropdown-menu i Internet Explorer, hvor pilen blev vist to gange
 - Nederste border i header ændret til `$outer-border`
 - Tilføjet klassen .nobullet-list, som kan bruges ved liste af links
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Flyttet Pikaday datovælger plugin til Plugins-projektet
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Flyttet Pikaday datovælger plugin til Plugins-projektet
 - Tilføjet .break-word klasse til brug i tabeller, hvor man bruger lange filnavne i kolonnerne
 - Ændret disabled link farve
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Fjernet $color-link-active farven, da den ikke længere bliver brugt
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet $color-link-active farven, da den ikke længere bliver brugt
 - Opdateret styling og definition af eksterne links
 - Ændret skrifttype tykkelse på søgefelts knappen
 
@@ -532,13 +532,13 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">14-01-2019</span></div>
 
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Refaktoreret fra 'dkwds' til 'dkfds'
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Refaktoreret fra 'dkwds' til 'dkfds'
 <span class="form-hint mt-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds">'dkfds'</a> i stedet for 'dkwds'. </span>
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Bourbon er fjernet
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Bourbon er fjernet
 <span class="form-hint mt-0">Biblioteket 'Bourbon' er ikke længere en del af designsystemet. Det vil derfor ikke længere være muligt at benytte sig af deres hjælpeklasser og funktioner. </span>
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Nyt gridsystem
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Nyt gridsystem
 <span class="form-hint mt-0"> USWDS' gamle float-grid (NEAT) og Bootstraps grid er fjernet. I stedet for er USWDS' nye grid inkluderet. Der er lavet tilpasninger af dette grid så det køre på de samme variable og klassenavne som i den forrige version af FDS. Der skal derfor ikke laves nogen tilpasninger for at få dette grid inkluderet.</span>
-- <label class="badge badge-warning badge-small mr-3">Breaking change</label>Plugins project
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Plugins project
 <span class="form-hint mt-0">Datatables og SelectWoo er ikke længere en del af komponent-biblioteket. Der er derimod oprettet et nyt projekt (dkfds-plugins) hvor disse nu lever.</span>
 - Nye klasser
 <span class="form-hint mt-0"> De følgende klasser er blev omdøbt:</span>

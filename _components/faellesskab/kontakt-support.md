@@ -12,7 +12,7 @@ tags:
 {:.h5}
 ## Github
 
-GitHub er verdens største frontend-udvikler fællesskab, og et versionsstyrringsredskab til deling af kode og facilitering af open source samarbejde.
+GitHub er verdens største frontend-udvikler fællesskab, og et værktøj til versionsstyring, deling af kode og facilitering af open source samarbejde.
 
 Brug GitHub til:
 
