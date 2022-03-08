@@ -1,6 +1,7 @@
 {
   "card_example": {
         "heading": "Header",
+        "headingLevel": "h2",
         "subheading": "Understøttende tekst",
         "text": "Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til.",
         "content": "<!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --><div class='row background-data-green-blue-300 p-6'><div class='col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0'><h2>Aliquam aliquet niboh faucibus varius</h2><p>Aenean euismod vestibulum lacinia. Pellentesque nec nisi diam. Pellentesque nec urna vel ante ultrices facilisis sed in dolor. Curabitur eu leo semper, gravida justo at, euismod ex.</p></div><div class='col-12 col-md-6 col-lg-7 align-text-right'><img src='{{ site.baseurl }}/assets/img/cards/Card-illustration-graf.svg' alt='Graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100 mt-md-4' /></div></div>",
