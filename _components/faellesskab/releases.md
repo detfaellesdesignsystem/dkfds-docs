@@ -221,7 +221,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">11-02-2021</span></div>
 
-- Ændret font i drop down for at fikse bug i firefox
+- Ændret font i drop down for at fikse bug i Firefox
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/102" class="icon-link">issue #102 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <a href="/komponenter/datovaelger/">Ny komponent: Datovælger</a>
 - Fiks fejl, hvor ol liste bliver vist med bullets i <a href="/komponenter/accordions/">accordions</a>
