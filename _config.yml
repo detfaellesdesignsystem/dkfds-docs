@@ -47,7 +47,11 @@ incremental_regeneration_fixer:
 #    - tables
 #    - with_toc_data # automatic heading ids
 
-gems:
+
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
   - jekyll-redirect-from
 
 # The site maybe using some static files and they should be copied as-is while building the site. For example images folder. Jekyll has nothing to do with those images. Static files that do not need any Jekyll intervention can be kept as-is using these parameters in the configuration.

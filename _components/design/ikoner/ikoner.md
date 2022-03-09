@@ -1,7 +1,7 @@
 ---
-permalink: "/design/ikoner/"
+permalink: /design/ikoner/
 redirect_from:
-- /design/ikoner/ikoner-og-deres-betydning/
+- /design/ikoner/ikoner-og-deres-betydning
 layout: styleguide
 title: Ikoner
 category: Design_category
@@ -48,7 +48,7 @@ Ikoner der anvendes illustrativt må ikke ligne eller være de samme som anvende
 
 Vi bruger Material Designs ikoner som udgangspunkt. 
 
-Hvis du har brug for ikoner, der ikke findes i <a href="/design/ikoner/ikoner-og-deres-betydning/">ikontaksonomien</a> henviser vi til:
+Hvis du har brug for ikoner, der ikke findes i <a href="/design/ikoner/#betydning">ikontaksonomien</a> henviser vi til:
 
 {:nobullet-list}
 - <a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

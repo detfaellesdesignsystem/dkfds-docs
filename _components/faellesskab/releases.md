@@ -121,7 +121,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
-- <span class="badge badge-info badge-small mr-3">Change</span> Ændret <a href="/design/ikoner/ikoner-og-deres-betydning/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
+- <span class="badge badge-info badge-small mr-3">Change</span> Ændret <a href="/design/ikoner/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
 - Fikset fejl med placering af <a href="/komponenter/trinindikatorer/#ekstra-information">ekstra information i sidenavigation</a>.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Omdøbt FDS <a href="/design/farver/">farver</a>
@@ -130,7 +130,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret attributter for <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet gamle <a href="/design/ikoner/ikoner-og-deres-betydning/">ikoner</a>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet gamle <a href="/design/ikoner/">ikoner</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet <a href="/kode/komponenter/beskeder/">JavaScript til luk knap i beskeder</a>
 - Tilføjet <a href="/komponenter/modal/#kraever-handling">modalvindue</a> som kræver handling, så brugeren ikke kan lukke modalvinduet uden at tage stilling til dets indhold. 
 - <span class="badge badge-info badge-small mr-3">Change</span> Ved luk af <a href="/komponenter/modal/">modalvindue</a> sættes fokus på element, som åbnede modalvinduet
@@ -186,7 +186,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet eksempel og retningslinjer på <a href="/komponenter/tables/#søgning-i-tabeller">søgning i tabeller</a>
 - Tilføjet en tykkere border i bunden af <a href="/komponenter/knapper/">knapper</a>
 - Opdateret <a href="/komponenter/felter/#obligatoriske-og-frivillige-felter">retningslinjer for obligatoriske og frivillige felter</a>
-- Tilføjet <a href="/design/ikoner/ikoner-og-deres-betydning/?s=sorter">ikoner til sortering i tabel</a>
+- Tilføjet <a href="/design/ikoner/?s=sorter">ikoner til sortering i tabel</a>
 - Tilføjet variant til <a href="/komponenter/overflowmenu/#sortering">overflow menu til brug ved sortering</a>
 - Ændret ikon i <a href="/komponenter/detaljer/">detalje komponent</a>
 {:#version-7-4-0 .mb-0}
@@ -204,7 +204,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
-- <a href="/design/ikoner/ikoner-og-deres-betydning/">Ikontaksonomi</a>
+- <a href="/design/ikoner/">Ikontaksonomi</a>
 - Ny komponent: <a href="/komponenter/notifikation/">Notifikation (Toast) komponent</a>
 - Fjernet unødvendige kald til fontfiler
 - Timing issue på datovælger - sæt ikke knappen, hvis den allerede eksisterer
