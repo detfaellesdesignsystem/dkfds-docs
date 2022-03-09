@@ -340,7 +340,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
           {% include icon.html icon="format-underlined" keywords="" label="Understregning" %}
           {% include icon.html icon="format-color-text" keywords="" label="Farve" %}
           {% include icon.html icon="format-color-fill" keywords="" label="Baggrundsfarve" %}
-          {% include icon.html icon="format-clear" keywords="" label="Ryd tekstformatering" %}
+          {% include icon.html icon="format-clear" keywords="ryd, clear, tekst, formatering, clean" label="Ryd tekstformatering" %}
           {% include icon.html icon="format-list-bulleted" keywords="" label="Punktopstilling" %}
           {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling numerisk" %}
           {% include icon.html icon="format-indent-increase" keywords="" label="Indryk højre" %}
