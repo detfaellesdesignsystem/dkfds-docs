@@ -329,7 +329,6 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
     </div>
   </div>
 </section>
-
 <section class="icon-section" id="icon-section-tekstredigering">
   <h2 class="h5 mb-4">Tekstredigering</h2>
   <div class="container">
