@@ -272,7 +272,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
           {% include icon.html icon="playlist-add" keywords="add, list, tilføj, ny, opret" label="Tilføj til liste" %}
           {% include icon.html icon="person-add-alt-1" keywords="add, tilføj, ny, create, opret, bruger, user, person" label="Tilføj person/bruger" %}
           {% include icon.html icon="done" keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt" label="Udført (korrekt, gennemført)" %}
-          {% include icon.html icon="upload" keywords="Upload, eksporter, export" label="Upload (eksporter)" %}
+          {% include icon.html icon="file-upload" keywords="Upload, eksporter, export" label="Upload (eksportér)" %}
           {% include icon.html icon="attach-file" keywords="Vedhæft, attachment, bilag" label="Vedhæft (bilag)" %}
           {% include icon.html icon="forward" keywords="videresend" label="Videresend" %}
           {% include icon.html icon="view-headline" keywords="Liste, justify" label="Vis i liste form" %}
