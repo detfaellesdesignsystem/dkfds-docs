@@ -8,9 +8,11 @@
     },
     "helptext": "For eksempel: 05 12 2018",
     "errorMessage": "Indtast en måned i tal mellem 1 og 12",
-    "dayValue": "01",
-    "monthValue": "20",
-    "yearValue": "2030",
+    "values": {
+      "day": "01",
+      "month": "20",
+      "year": "2030"
+    },
     "id": {
       "day": "date-day2",
       "month": "date-month2",
