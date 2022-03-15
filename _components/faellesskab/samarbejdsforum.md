@@ -21,4 +21,4 @@ Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsysteme
 <p><a href="https://digst.dk/digital-service/brugeroplevelse/samarbejdsforum-for-det-faelles-designsystem/" class="icon-link">Tilmeld/frameld dig og dine kollegaer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
 </div></div>
 
-<a href="/faellesskab/samarbejdsforum/governance/">Læs om governance af FDS</a>
+<a href="/faellesskab/governance/">Læs om governance af FDS</a>
