@@ -12,7 +12,7 @@ subcategory: Design
 ---
 <h2 class="h5">1. Headeren skal indeholde de obligatoriske linjer og følge layoutreglerne</h2>
 
-Headerens to obligatoriske linjer - med portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt - skal altid være at finde i alle selvbetjeningsløsninger og <a href="/komigang/regler-principper-layout/#header">hele headeren skal følge retningslinjerne for layout</a>.
+Headerens to obligatoriske linjer - med portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt - skal altid være at finde i alle selvbetjeningsløsninger og <a href="/design/layout/#header">hele headeren skal følge retningslinjerne for layout</a>.
 
 <h2 class="h5">2. Fonten skal anvendes</h2>
 

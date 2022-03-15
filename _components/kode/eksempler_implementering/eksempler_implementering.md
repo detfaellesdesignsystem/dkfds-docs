@@ -1,6 +1,6 @@
 ---
 permalink: /kode/eksempler-implementering/
-parentlink: /komigang/tiludviklere/
+parentlink: /kode/
 redirect_from:
 - /komigang/tiludviklere/eksempler-implementering/
 layout: styleguide

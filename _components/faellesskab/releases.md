@@ -327,7 +327,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet mulighed for <a href="/komponenter/form-controls/#radioknap">hjælpetekst på radioknap</a>.
 - Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.
 - Tilpasset retningslinjer for <a href="/komponenter/radioknap/#skjult-indhold-collapse">Skjul/vis med radioknapper</a>.
-- Opdateret <a href="/komigang/tildesignere/">SVG filer</a>, samt tilføjet link til <a href="/komigang/tildesignere/">Figma komponent bibliotek</a>.
+- Opdateret <a href="/design/designressourcer/">SVG filer</a>, samt tilføjet link til <a href="/design/designressourcer/">Figma komponent bibliotek</a>.
 
 {:#version-5-2-0 .mb-0}
 ## Version 5.2.0
@@ -381,7 +381,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>. 
 - Information om <a href="/krav/">krav til selvbetjeningsløsninger</a> er nu tilføjet til designsystem.dk. 
-- Tabellerne følger nu <a href="/komigang/regler-principper-layout/#baseline-grid">8point grid</a>
+- Tabellerne følger nu <a href="/design/layout/grid/">8point grid</a>
 
 {:#version-4-4-0 .mb-0}
 ## Version 4.4.0

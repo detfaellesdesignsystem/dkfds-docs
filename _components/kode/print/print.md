@@ -81,7 +81,7 @@ Knapper har ingen funktion på print, hvorfor vi anbefaler at man skjuler knappe
 #### Eksempler
 
 <ul class="nobullet-list">
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1?r={{page.permalink}}%23knapper-eksempelloesninger" title="Aktindsigt, side 1">Aktindsigt, side 1</a></li>
+    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Aktindsigt, side 1">Aktindsigt, side 1</a></li>
     <li><a href="/pages/eksempler/AES-erstatningssag/aes-10/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Erstatningssag, side 10">Erstatningssag, side 10</a></li>
     <li><a href="/pages/eksempler/digital-flytning/flytning-2/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Digital flytning, side 2">Digital flytning, side 2</a></li>
 </ul>
@@ -116,7 +116,7 @@ Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysni
     <li><a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 4 kolonner">Footer med 4 kolonner</a></li>
     <li><a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Kompleks footer">Kompleks footer</a></li>
     <li><a href="/eksempel/footer-logo/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med logo">Footer med logo</a></li>
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1?r={{page.permalink}}%23footer-eksempelloesninger" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
+    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r={{page.permalink}}%23footer-eksempelloesninger" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
 </ul>
 
 <h3 class="h4">Responsiv tabel</h3>
