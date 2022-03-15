@@ -35,7 +35,7 @@ Anvendes ikke til indhold, som de fleste brugere behøver at læse såsom sidens
 
 Anvendes ikke til at skjule navigationselementer såsom accordions, faneblade eller flere detaljer.
 
-Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul og vis-komponenterne med <a href="/komponenter/radiobutton/#skjult-indhold-collapse">radioknap</a> og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a>.
+Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul og vis-komponenterne med <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap</a> og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a>.
 
 {:.h3}
 

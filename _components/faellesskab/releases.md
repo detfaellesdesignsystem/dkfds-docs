@@ -324,7 +324,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.
 - <a href="/design/typografi/lister/">Lister</a> har fået nyt udtryk.
 - Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/headers/">header</a> samt <a href="/komponenter/sidenav/">sidenavigationen</a>.
-- Tilføjet mulighed for <a href="/komponenter/form-controls/#radioknap">hjælpetekst på radioknap</a>.
+- Tilføjet mulighed for <a href="/komponenter/radioknap/#hjælpetekst">hjælpetekst på radioknap</a>.
 - Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.
 - Tilpasset retningslinjer for <a href="/komponenter/radioknap/#skjult-indhold-collapse">Skjul/vis med radioknapper</a>.
 - Opdateret <a href="/design/designressourcer/">SVG filer</a>, samt tilføjet link til <a href="/design/designressourcer/">Figma komponent bibliotek</a>.
@@ -351,7 +351,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse komponent</a> er tilføjet i kernen.
 - <a href="/komponenter/tilbage-link/">Tilbage link</a> er tilføjet i kernen.
-<span class="form-hint mt-0">Bemærk, at <a href="/komponenter/tilbage-link/">Tilbage link</a> anbefales frem for <a href="/komponenter/buttons/#tilbage-knap">Tilbage knap</a>.</span>
+<span class="form-hint mt-0">Bemærk, at <a href="/komponenter/tilbage-link/">Tilbage link</a> anbefales frem for <a href="/komponenter/knapper/#tilbage-knap">Tilbage knap</a>.</span>
 - Fokuskant tilføjet på #main-content ved fokus fra <a href="/komponenter/skip-link/">Skip link</a>.
 - <a href="/komponenter/badges/#statusbadges">Statusbadges</a> er tilføjet i kernen.
 - Fejl i overflow menu brugt i header fikset.
@@ -373,7 +373,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/sidenav/">Sidenavigationen</a> har fået nyt design.
 <span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/sidenav/">sidenavigations-komponenten</a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/tabnav/">Faneblads-komponenten</a> er blevet redefineret.
-<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/tabnav/">faneblads-komponenten</a>.</span>
+<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblad/">faneblads-komponenten</a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Modalvinduer-komponenten er blevet flyttet til plugins.
@@ -428,7 +428,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret afstand fra label til read-only felt.
 - Ændret JavaScript, der håndterer regex maske på dato felt, således at man nu kan bruge copy/paste igen.
     - Fejlhåndtering omkring ikke gyldige karakterer indsat i feltet med copy/paste bør håndteres i projektet selv.
-- Tilføjet sektion omkring <a href="/komponenter/form-controls/#struktur-fieldset">formularstruktur</a>.
+- Tilføjet sektion omkring <a href="/komponenter/formular/">formularstruktur</a>.
 
 {:#version-4-1-0 .mb-0}
 ## Version 4.1.0
