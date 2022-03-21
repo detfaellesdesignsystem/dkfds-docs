@@ -3,8 +3,6 @@
 <div class="form-group">
     <fieldset>
       <legend class="form-label">Liste med radioknapper</legend>
-        <ul class="nobullet-list">
-          {% for item in radiobuttons_example_helptext.items %}<li>{{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.attr, item.inputClasses, item.inputAttrs, item.formClasses, item.sr, item.helptext) }}</li>{% endfor %}
-        </ul>
+        {% for item in radiobuttons_example_helptext.items %}{{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.attr, item.inputClasses, item.inputAttrs, item.formClasses, item.sr, item.helptext) }}{% endfor %}
     </fieldset>
 </div>

@@ -2446,22 +2446,23 @@
         <div class="form-group">
     <fieldset>
         <legend class="form-label">Stor radioknap (anbefalet)</legend>
-        <ul class="nobullet-list">
-            <li>
-                <input id="largeradio1" type="radio" name="largeradio"
-                    value="1" class="form-radio  radio-large " />
-                <label for="largeradio1" id="form-label-largeradio1"
-                    class="">Valg 1 </label>
 
-            </li>
-            <li>
-                <input id="largeradio2" type="radio" name="largeradio"
-                    value="0" class="form-radio  radio-large " />
-                <label for="largeradio2" id="form-label-largeradio2"
-                    class="">Valg 2 </label>
+        <div class="form-group-radio">
+            <input id="largeradio1" type="radio" name="largeradio"
+                value="1" class="form-radio  radio-large " />
+            <label for="largeradio1" id="form-label-largeradio1"
+                class="">Valg 1 </label>
 
-            </li>
-        </ul>
+        </div>
+
+        <div class="form-group-radio">
+            <input id="largeradio2" type="radio" name="largeradio"
+                value="0" class="form-radio  radio-large " />
+            <label for="largeradio2" id="form-label-largeradio2"
+                class="">Valg 2 </label>
+
+        </div>
+
     </fieldset>
 </div>
     </div>
@@ -2555,22 +2556,21 @@
         <div class="form-group">
     <fieldset>
         <legend class="form-label">Radioknap med hjælpetekst</legend>
-        <ul class="nobullet-list">
-            <li>
-                <input id="radio-helptext-1" type="radio" name="radio-helptext" value="v1" aria-labelledby="form-label-radio-helptext-1 helptext-radio-helptext-1" class="form-radio  radio-large " />
-                <label for="radio-helptext-1" id="form-label-radio-helptext-1" class="">Valg 1
-                </label>
-                <span class="form-hint" id="helptext-radio-helptext-1">Dette er en
-                    hjælpetekst</span>
-            </li>
-            <li>
-                <input id="radio-helptext-2" type="radio" name="radio-helptext" value="v2" aria-labelledby="form-label-radio-helptext-2 helptext-radio-helptext-2" class="form-radio  radio-large " />
-                <label for="radio-helptext-2" id="form-label-radio-helptext-2" class="">Valg 2
-                </label>
-                <span class="form-hint" id="helptext-radio-helptext-2">Dette er en
-                    hjælpetekst</span>
-            </li>
-        </ul>
+
+        <div class="form-group-radio">
+            <input id="radio-helptext-1" type="radio" name="radio-helptext" value="v1" aria-labelledby="form-label-radio-helptext-1 helptext-radio-helptext-1" class="form-radio  radio-large " />
+            <label for="radio-helptext-1" id="form-label-radio-helptext-1" class="">Valg 1 </label>
+            <span class="form-hint" id="helptext-radio-helptext-1">Dette er
+                en hjælpetekst</span>
+        </div>
+
+        <div class="form-group-radio">
+            <input id="radio-helptext-2" type="radio" name="radio-helptext" value="v2" aria-labelledby="form-label-radio-helptext-2 helptext-radio-helptext-2" class="form-radio  radio-large " />
+            <label for="radio-helptext-2" id="form-label-radio-helptext-2" class="">Valg 2 </label>
+            <span class="form-hint" id="helptext-radio-helptext-2">Dette er
+                en hjælpetekst</span>
+        </div>
+
     </fieldset>
 </div>
     </div>
@@ -2601,23 +2601,27 @@
     <fieldset aria-describedby="example-radiobutton-error">
         <legend class="form-label">Radioknap med fejl</legend>
         <span class="form-error-message" id="example-radiobutton-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlmeddelelse</span>
-        <ul class="nobullet-list">
-            <li>
-                <input id="weekly" type="radio" name="often-pay" value="weekly" class="form-radio  radio-large " />
-                <label for="weekly" id="form-label-weekly" class="">Ugentligt </label>
 
-            </li>
-            <li>
-                <input id="fortnightly" type="radio" name="often-pay" value="fortnightly" class="form-radio  radio-large " />
-                <label for="fortnightly" id="form-label-fortnightly" class="">Hver fjortende dag </label>
+        <div class="form-group-radio">
+            <input id="weekly" type="radio" name="often-pay" value="weekly" class="form-radio  radio-large " />
+            <label for="weekly" id="form-label-weekly" class="">Ugentligt
+            </label>
 
-            </li>
-            <li>
-                <input id="monthly" type="radio" name="often-pay" value="monthly" class="form-radio  radio-large " />
-                <label for="monthly" id="form-label-monthly" class="">Månedligt </label>
+        </div>
 
-            </li>
-        </ul>
+        <div class="form-group-radio">
+            <input id="fortnightly" type="radio" name="often-pay" value="fortnightly" class="form-radio  radio-large " />
+            <label for="fortnightly" id="form-label-fortnightly" class="">Hver fjortende dag </label>
+
+        </div>
+
+        <div class="form-group-radio">
+            <input id="monthly" type="radio" name="often-pay" value="monthly" class="form-radio  radio-large " />
+            <label for="monthly" id="form-label-monthly" class="">Månedligt
+            </label>
+
+        </div>
+
     </fieldset>
 </div>
     </div>
@@ -2649,18 +2653,19 @@
         <div class="form-group">
     <fieldset>
         <legend class="form-label">Lille radioknap</legend>
-        <ul class="nobullet-list">
-            <li>
-                <input id="smallradio1" type="radio" name="smallradio" value="1" class="form-radio   " />
-                <label for="smallradio1" id="form-label-smallradio1" class="">Valg 1 </label>
 
-            </li>
-            <li>
-                <input id="smallradio2" type="radio" name="smallradio" value="0" class="form-radio   " />
-                <label for="smallradio2" id="form-label-smallradio2" class="">Valg 2 </label>
+        <div class="form-group-radio">
+            <input id="smallradio1" type="radio" name="smallradio" value="1" class="form-radio   " />
+            <label for="smallradio1" id="form-label-smallradio1" class="">Valg 1 </label>
 
-            </li>
-        </ul>
+        </div>
+
+        <div class="form-group-radio">
+            <input id="smallradio2" type="radio" name="smallradio" value="0" class="form-radio   " />
+            <label for="smallradio2" id="form-label-smallradio2" class="">Valg 2 </label>
+
+        </div>
+
     </fieldset>
 </div>
     </div>
@@ -2690,42 +2695,44 @@
         <div class="js-radio-toggle-group">
     <fieldset>
         <legend class="form-label">Vælg en radioknap</legend>
-        <ul class="nobullet-list">
-            <li>
-                <input id="id-radio1" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " checked="" data-js-target="#collapse-radio1" aria-controls="collapse-radio1" aria-expanded="false" />
-                <label for="id-radio1" id="form-label-id-radio1" class="">Radioknap viser indhold <span class="sr-only">Udfyld informationer
-                        herunder</span></label>
 
-                <div id="collapse-radio1" aria-hidden="true" class="box-border-l collapsed">
-                    <div class="py-4">
-                        <div class="form-group">
-                            <label class="form-label " for="textinput1">
-                                Inputfelt med label
-                            </label>
+        <div class="form-group-radio">
+            <input id="id-radio1" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " checked="" data-js-target="#collapse-radio1" aria-controls="collapse-radio1" aria-expanded="false" />
+            <label for="id-radio1" id="form-label-id-radio1" class="">Radioknap viser indhold <span class="sr-only">Udfyld informationer
+                    herunder</span></label>
 
-                            <input class="form-input input-width-m" required="" id="textinput1" value="" name="text1" type="text" />
-                        </div>
-                    </div>
+        </div>
+
+        <div id="collapse-radio1" aria-hidden="true" class="box-border-l collapsed">
+            <div class="py-4">
+                <div class="form-group">
+                    <label class="form-label " for="textinput1">
+                        Inputfelt med label
+                    </label>
+
+                    <input class="form-input input-width-m" required="" id="textinput1" value="" name="text1" type="text" />
                 </div>
-            </li>
-            <li>
-                <input id="id-radio2" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " data-js-target="#collapse-radio2" />
-                <label for="id-radio2" id="form-label-id-radio2" class="">Radioknap viser andet indhold <span class="sr-only">Udfyld informationer
-                        herunder</span></label>
+            </div>
+        </div>
 
-                <div id="collapse-radio2" aria-hidden="true" class="box-border-l collapsed">
-                    <div class="py-4">
-                        <div class="form-group">
-                            <label class="form-label " for="textinput2">
-                                Inputfelt med anden label
-                            </label>
+        <div class="form-group-radio">
+            <input id="id-radio2" type="radio" name="radio-group1" value="Value" class="form-radio  radio-large " data-js-target="#collapse-radio2" />
+            <label for="id-radio2" id="form-label-id-radio2" class="">Radioknap viser andet indhold <span class="sr-only">Udfyld informationer
+                    herunder</span></label>
 
-                            <input class="form-input input-width-m" required="" id="textinput2" value="" name="text2" type="text" />
-                        </div>
-                    </div>
+        </div>
+
+        <div id="collapse-radio2" aria-hidden="true" class="box-border-l collapsed">
+            <div class="py-4">
+                <div class="form-group">
+                    <label class="form-label " for="textinput2">
+                        Inputfelt med anden label
+                    </label>
+
+                    <input class="form-input input-width-m" required="" id="textinput2" value="" name="text2" type="text" />
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </fieldset>
 </div>
     </div>

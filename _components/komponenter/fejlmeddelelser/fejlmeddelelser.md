@@ -117,6 +117,7 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 
+
 {:.h3}
 ## Se komponenten i eksempelløsninger
 

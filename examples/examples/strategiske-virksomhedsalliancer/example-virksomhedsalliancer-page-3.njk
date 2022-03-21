@@ -97,22 +97,16 @@
     <div class="form-group js-radio-toggle-group">
         <fieldset>
             <legend class="form-label">Har i modtaget støtte gennem andre internationale de-minimis-ordninger (fx OECD)?</legend>
-            <ul class="nobullet-list">
-                <li>
-                    {{radiobutton("id-state-yes", "minimis", "Ja", false, false, "Ja", "radio-large", false, true, '', "", 'data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false"')}}
-                    <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
-                        <div class="py-4">
-                            {{textinput("id-minimis-name", "Ordningens navn", "", "input-width-m", "", "Input til ordningens navn", "", false, "")}}
-                            {{datoinput("Dato for modtagelse", "Fx. 28 04 1996", "Dato", "Måned", "År")}}
-                            {{textinput("id-amount", "Beløb i DKK", "", "input-width-xs", "", "Input til beløb i DKK", "", false, "")}}
-                            {{textinput("id-reference", "Henvisning til yderligere information om ordningen", "", "input-width-m", "", "Input til henvisning til yderligere information om ordningen", "", false, false, "Fx. et link (url)", "")}}
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    {{radiobutton("id-state-no", "minimis", "Nej", false, false, "Nej", "radio-large", false, true)}}
-                </li>
-            </ul>
+            {{radiobutton("id-state-yes", "minimis", "Ja", false, false, "Ja", "radio-large", false, true, '', "", 'data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false"')}}
+            <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
+                <div class="py-4">
+                    {{textinput("id-minimis-name", "Ordningens navn", "", "input-width-m", "", "Input til ordningens navn", "", false, "")}}
+                    {{datoinput("Dato for modtagelse", "Fx. 28 04 1996", "Dato", "Måned", "År")}}
+                    {{textinput("id-amount", "Beløb i DKK", "", "input-width-xs", "", "Input til beløb i DKK", "", false, "")}}
+                    {{textinput("id-reference", "Henvisning til yderligere information om ordningen", "", "input-width-m", "", "Input til henvisning til yderligere information om ordningen", "", false, false, "Fx. et link (url)", "")}}
+                </div>
+            </div>
+            {{radiobutton("id-state-no", "minimis", "Nej", false, false, "Nej", "radio-large", false, true)}}
         </fieldset>
     </div>
 

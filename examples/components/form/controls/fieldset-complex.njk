@@ -23,10 +23,8 @@
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Hvordan vil du helst kontaktes?</legend>
-            <ul class="nobullet-list">
-              <li>{{ radiobutton("kontakt-telefon", "kontakt", "kontakt-telefon", false, false, "Pr. telefon", "", "", true) }}</li>
-              <li>{{ radiobutton("kontakt-email", "kontakt", "kontakt-email", false, false, "Pr. e-mail", "", "", true) }}</li>
-            </ul>
+            {{ radiobutton("kontakt-telefon", "kontakt", "kontakt-telefon", false, false, "Pr. telefon", "", "", true) }}
+            {{ radiobutton("kontakt-email", "kontakt", "kontakt-email", false, false, "Pr. e-mail", "", "", true) }}
         </fieldset>
     </div>
     <!-- Felt slut: Kontaktmetode -->
@@ -57,10 +55,8 @@
             <div class="form-group">
                 <fieldset>
                     <legend class="h5">Bor du i Odense?</legend>
-                    <ul class="nobullet-list">
-                      <li>{{ radiobutton("odense-ja", "odense", "odense-ja", false, false, "Ja", "", "", true) }}</li>
-                      <li>{{ radiobutton("odense-nej", "odense", "odense-nej", false, false, "Nej", "", "", true) }}</li>
-                    </ul>
+                    {{ radiobutton("odense-ja", "odense", "odense-ja", false, false, "Ja", "", "", true) }}
+                    {{ radiobutton("odense-nej", "odense", "odense-nej", false, false, "Nej", "", "", true) }}
                 </fieldset>
             </div>
             <!-- Felt slut: Odense -->
