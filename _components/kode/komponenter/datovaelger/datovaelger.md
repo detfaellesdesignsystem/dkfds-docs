@@ -28,7 +28,7 @@ subnav:
 {% include code/syntax.html component="date-picker" %}
 
 ### Javascript
-Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+Datovælger komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
 DKFDS.datePicker.on(document.body);
