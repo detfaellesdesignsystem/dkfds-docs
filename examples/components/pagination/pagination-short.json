@@ -1,0 +1,22 @@
+{
+    "paginationExample": {
+        "items": [
+        {
+            "id": "pagination-ID-short-1",
+            "totalPages": 7,
+            "currentPage": 1
+        },
+        {
+            "id": "pagination-ID-short-2",
+            "totalPages": 7,
+            "currentPage": 4
+        },
+        {
+            "id": "pagination-ID-short-3",
+            "totalPages": 7,
+            "currentPage": 7
+        }
+      ]
+    }
+}
+  

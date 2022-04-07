@@ -89,6 +89,7 @@ Komponenter_category:
   - href: /komponenter/modal/
   - href: /komponenter/notifikation/
   - href: /komponenter/overflowmenu/
+  - href: /komponenter/paginering/
   - href: /komponenter/radioknap/
   - href: /komponenter/sidenav/
   - href: /komponenter/skip-link/
@@ -145,6 +146,7 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/modal/
 - href: /kode/komponenter/notifikation/
 - href: /kode/komponenter/overflowmenu/
+- href: /kode/komponenter/paginering/
 - href: /kode/komponenter/radioknap/
 - href: /kode/komponenter/sidenav/
 - href: /kode/komponenter/skip-link/

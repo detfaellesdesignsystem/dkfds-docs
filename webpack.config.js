@@ -21,7 +21,8 @@ module.exports = function (outputPath, prod) {
       "modal": ["./javascript/components/modal.js"],
       "languageswitcher": ["./javascript/components/languageswitcher.js"],
       "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
-      "newsletter": ["./javascript/newsletter.js"]
+      "newsletter": ["./javascript/newsletter.js"],
+      "pagination": ["./javascript/components/pagination.js"]
     },
     module: {
       rules: [

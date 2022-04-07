@@ -1,0 +1,42 @@
+{
+    "paginationExample": {
+        "items": [
+        {
+            "id": "pagination-ID-long-1",
+            "totalPages": 12,
+            "currentPage": 1
+        },
+        {
+            "id": "pagination-ID-long-2",
+            "totalPages": 12,
+            "currentPage": 2
+        },
+        {
+            "id": "pagination-ID-long-3",
+            "totalPages": 12,
+            "currentPage": 3
+        },
+        {
+            "id": "pagination-ID-long-4",
+            "totalPages": 12,
+            "currentPage": 4
+        },
+        {
+            "id": "pagination-ID-long-5",
+            "totalPages": 12,
+            "currentPage": 5
+        },
+        {
+            "id": "pagination-ID-long-6",
+            "totalPages": 12,
+            "currentPage": 8
+        },
+        {
+            "id": "pagination-ID-long-7",
+            "totalPages": 12,
+            "currentPage": 9
+        }
+      ]
+    }
+}
+  
