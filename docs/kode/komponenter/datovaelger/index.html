@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
   <head>
     <!-- Basic Page Needs
 ================================================== -->
@@ -254,7 +253,6 @@
     <div class="overlay"></div>
     <!-- Desktop main menu-->
     <nav class="nav d-none d-lg-block" aria-label="Hovedmenu">
-      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
@@ -4381,9 +4379,43 @@
 </div>
 
 <h3>Javascript</h3>
-<p>Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+<p>Datovælger komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">DKFDS.datePicker.on(document.body);</code></pre></figure>
+
+<h4>Funktioner</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Funktion</th>
+      <th>Element</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>DKFDS.datePicker.getDatePickerContext(ELEMENT)</code></td>
+      <td>Vilkårligt HTML element i datovælgeren</td>
+      <td>Få fat i datovælger json objekt inklusiv alle HTML elementer i komponenten.</td>
+    </tr>
+    <tr>
+      <td><code>DKFDS.datePicker.validateDateInput(ELEMENT)</code></td>
+      <td>Vilkårligt HTML element i datovælgeren</td>
+      <td>Valider værdien i feltet, således at det er et korrekt datoformat og datoen eksisterer. Brug checkValidity() på input elementet efterfølgende.</td>
+    </tr>
+    <tr>
+      <td><code>DKFDS.datePicker.disable(ELEMENT)</code></td>
+      <td>Vilkårligt HTML element i datovælgeren</td>
+      <td>Deaktiver felt og knap i datovælgeren.</td>
+    </tr>
+    <tr>
+      <td><code>DKFDS.datePicker.enable(ELEMENT)</code></td>
+      <td>Vilkårligt HTML element i datovælgeren</td>
+      <td>Aktiver felt og knap i datovælgeren.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Varianter</h2>
 

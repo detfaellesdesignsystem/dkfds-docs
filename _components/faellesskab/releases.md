@@ -147,6 +147,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Grå baggrundsfarve på <a href="/komponenter/drop-down/">dropdown-menu</a> i Firefox er ændret til hvid.
 - <a href="/komponenter/headers/">Header komponent</a>: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.
 - Lille fejl i border på <a href="/komponenter/tables/#zebralinjer">tabeller med zebralinjer</a> er fikset.
+- <span class="badge badge-info badge-small mr-3">Change</span> Bredde på overflow menu ændret til at fylde hele skærmens bredde på små skærme.
 
 {:#version-7-5-3 .mb-0}
 ## Version 7.5.3
@@ -372,7 +373,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/sidenav/">Sidenavigationen</a> har fået nyt design.
 <span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/sidenav/">sidenavigations-komponenten</a>.</span>
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/tabnav/">Faneblads-komponenten</a> er blevet redefineret.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblad/">Faneblads-komponenten</a> er blevet redefineret.
 <span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblad/">faneblads-komponenten</a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>

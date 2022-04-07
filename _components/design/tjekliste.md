@@ -36,7 +36,7 @@ Ikoner til beskeder skal fx altid være de samme alt efter typen af besked.<br /
 
 <h2 class="h5">7. Der skal bruges et responsivt grid</h2>
 
-Grid-systemet i det Fælles Designsystem er et 12 kolonne grid (desktop), præcist hvilket grid du anvender i teknisk forstand er ikke vigtig så længe det er responsivt og følger <a href="/design/grid/">reglerne for grid-systemet</a>.
+Grid-systemet i det Fælles Designsystem er et 12 kolonne grid (desktop), præcist hvilket grid du anvender i teknisk forstand er ikke vigtig så længe det er responsivt og følger <a href="/kode/grid/">reglerne for grid-systemet</a>.
 
 <h2 class="h5">8. De komponenter du bruger skal fungere som beskrevet</h2>
 

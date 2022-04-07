@@ -8,7 +8,7 @@ require('./sidenav');
 document.addEventListener("DOMContentLoaded", function() {
     
     DKFDS.init();
-   
+
     let icons = document.getElementsByClassName('icon-box');
     if(icons.length !== 0){
         for(let i = 0; i < icons.length; i++){

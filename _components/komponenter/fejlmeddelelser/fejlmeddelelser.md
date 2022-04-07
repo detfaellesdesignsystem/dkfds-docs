@@ -116,6 +116,8 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
+- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" class="icon-link">Understanding Success Criterion 3.3.1: Error Identification<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" class="icon-link">Understanding Success Criterion 3.3.3: Error Suggestion<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 {:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
