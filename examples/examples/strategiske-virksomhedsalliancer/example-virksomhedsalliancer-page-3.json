@@ -62,5 +62,18 @@
     "checked": false,
     "label": "Nej",
     "large": true
+  },
+  "dateInput":
+  {
+    "labels": {
+      "legend": "Dato for modtagelse",
+      "day": "Dag",
+      "month": "Måned",
+      "year": "År"
+    },
+    "helptext": "Fx. 28 04 1996",
+    "id": {
+      "error": "example-date-field-error2"
+    }
   }
 }

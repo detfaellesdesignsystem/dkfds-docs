@@ -4519,62 +4519,66 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;table class=&quot;table table--responsive-headers mt-6&quot; id=&quot;sortingTable&quot;&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th aria-sort=&quot;ascending&quot; class=&quot;table-header-no-wrap&quot;&gt;
-                Affaldstype&lt;button id=&quot;btn-sort-by-affaldstype&quot;
-                    class=&quot;button button-unstyled ml-2&quot;&gt;&lt;svg class=&quot;icon-svg mr-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#sort-table-ascending&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
-                        class=&quot;sr-only&quot;&gt;Sortér efter
-                        affaldstype&lt;/span&gt;&lt;/button&gt;&lt;/th&gt;
-            &lt;th aria-sort=&quot;none&quot; class=&quot;table-header-no-wrap&quot;&gt;
-                Farvekode&lt;button id=&quot;btn-sort-by-farvekode&quot;
-                    class=&quot;button button-unstyled ml-2&quot;&gt;&lt;svg class=&quot;icon-svg mr-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#sort-table-none&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
-                        class=&quot;sr-only&quot;&gt;Sortér efter
-                        farvekode&lt;/span&gt;&lt;/button&gt;&lt;/th&gt;
-            &lt;th aria-sort=&quot;none&quot;&gt;Beskrivelse&lt;/th&gt;
-            &lt;th aria-sort=&quot;none&quot;&gt;Hvor ender det?&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody aria-live=&quot;polite&quot;&gt;
-        &lt;tr&gt;
-            &lt;td data-title=&quot;Affaldstype&quot;&gt;Bioaffald og kompost&lt;/td&gt;
-            &lt;td data-title=&quot;Farvekode&quot;&gt;Beige&lt;/td&gt;
-            &lt;td data-title=&quot;Beskrivelse&quot;&gt;Alt madaffald uden
-                fødevareemballage.&lt;/td&gt;
-            &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Bioaffaldet kommes i
-                bionedbrydelige poser, som bliver komposteret til muld.
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td data-title=&quot;Affaldstype&quot;&gt;Dagrenovation&lt;/td&gt;
-            &lt;td data-title=&quot;Farvekode&quot;&gt;Grøn&lt;/td&gt;
-            &lt;td data-title=&quot;Beskrivelse&quot;&gt;Madaffald, samt papir, pap eller
-                plastik der ikke kan genanvendes, fordi der er madrester
-                eller andet snask på.&lt;/td&gt;
-            &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Alt det affald, du smider ud i
-                din primære skraldespand, som er dagrenovationen, bliver
-                hentet og kørt på forbrændingen. &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td data-title=&quot;Affaldstype&quot;&gt;Elektronik&lt;/td&gt;
-            &lt;td data-title=&quot;Farvekode&quot;&gt;Orange&lt;/td&gt;
-            &lt;td data-title=&quot;Beskrivelse&quot;&gt;Genstande der har brugt strøm.
-            &lt;/td&gt;
-            &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Det elektroniske affald bliver
-                typisk kørt til et demonteringsanlæg, hvor det bliver skilt
-                ad, så de forskellige dele kan genanvendes separat.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td data-title=&quot;Affaldstype&quot;&gt;Glas&lt;/td&gt;
-            &lt;td data-title=&quot;Farvekode&quot;&gt;Hvid&lt;/td&gt;
-            &lt;td data-title=&quot;Beskrivelse&quot;&gt;Alle typer glas og flasker.&lt;/td&gt;
-            &lt;td data-title=&quot;Hvor ender det?&quot;&gt;De hele vinflasker rengøres og
-                genbruges af vinhuse, mens glasskårene bliver smeltet om
-                til nyt glas.&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+    &lt;table class=&quot;table mt-6&quot; id=&quot;sortingTable&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th aria-sort=&quot;ascending&quot; class=&quot;table-header-no-wrap&quot;&gt;
+                    Affaldstype&lt;button id=&quot;btn-sort-by-affaldstype&quot;
+                        class=&quot;button button-unstyled ml-2&quot;&gt;&lt;svg class=&quot;icon-svg mr-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#sort-table-ascending&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+                            class=&quot;sr-only&quot;&gt;Sortér efter
+                            affaldstype&lt;/span&gt;&lt;/button&gt;&lt;/th&gt;
+                &lt;th aria-sort=&quot;none&quot; class=&quot;table-header-no-wrap&quot;&gt;
+                    Farvekode&lt;button id=&quot;btn-sort-by-farvekode&quot;
+                        class=&quot;button button-unstyled ml-2&quot;&gt;&lt;svg class=&quot;icon-svg mr-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#sort-table-none&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+                            class=&quot;sr-only&quot;&gt;Sortér efter
+                            farvekode&lt;/span&gt;&lt;/button&gt;&lt;/th&gt;
+                &lt;th aria-sort=&quot;none&quot;&gt;Beskrivelse&lt;/th&gt;
+                &lt;th aria-sort=&quot;none&quot;&gt;Hvor ender det?&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody aria-live=&quot;polite&quot;&gt;
+            &lt;tr&gt;
+                &lt;td data-title=&quot;Affaldstype&quot;&gt;Bioaffald og kompost&lt;/td&gt;
+                &lt;td data-title=&quot;Farvekode&quot;&gt;Beige&lt;/td&gt;
+                &lt;td data-title=&quot;Beskrivelse&quot;&gt;Alt madaffald uden
+                    fødevareemballage.&lt;/td&gt;
+                &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Bioaffaldet kommes i
+                    bionedbrydelige poser, som bliver komposteret til muld.
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td data-title=&quot;Affaldstype&quot;&gt;Dagrenovation&lt;/td&gt;
+                &lt;td data-title=&quot;Farvekode&quot;&gt;Grøn&lt;/td&gt;
+                &lt;td data-title=&quot;Beskrivelse&quot;&gt;Madaffald, samt papir, pap
+                    eller plastik der ikke kan genanvendes, fordi der er
+                    madrester eller andet snask på.&lt;/td&gt;
+                &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Alt det affald, du smider
+                    ud i din primære skraldespand, som er dagrenovationen,
+                    bliver hentet og kørt på forbrændingen. &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td data-title=&quot;Affaldstype&quot;&gt;Elektronik&lt;/td&gt;
+                &lt;td data-title=&quot;Farvekode&quot;&gt;Orange&lt;/td&gt;
+                &lt;td data-title=&quot;Beskrivelse&quot;&gt;Genstande der har brugt strøm.
+                &lt;/td&gt;
+                &lt;td data-title=&quot;Hvor ender det?&quot;&gt;Det elektroniske affald
+                    bliver typisk kørt til et demonteringsanlæg, hvor det
+                    bliver skilt ad, så de forskellige dele kan genanvendes
+                    separat.&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td data-title=&quot;Affaldstype&quot;&gt;Glas&lt;/td&gt;
+                &lt;td data-title=&quot;Farvekode&quot;&gt;Hvid&lt;/td&gt;
+                &lt;td data-title=&quot;Beskrivelse&quot;&gt;Alle typer glas og flasker.
+                &lt;/td&gt;
+                &lt;td data-title=&quot;Hvor ender det?&quot;&gt;De hele vinflasker
+                    rengøres og genbruges af vinhuse, mens glasskårene
+                    bliver smeltet om til nyt glas.&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code></pre></figure>
 
 
     </div>
@@ -4599,10 +4603,10 @@
         &lt;thead&gt;
             &lt;tr&gt;
                 &lt;th&gt;
-                    &lt;input id=&quot;selectable-table1-check-32-all&quot;
+                    &lt;input id=&quot;selectable-table1-check-13-all&quot;
                         type=&quot;checkbox&quot; class=&quot;form-checkbox&quot;
-                        aria-controls=&quot; selectable-table1-check-32-1 selectable-table1-check-32-2 selectable-table1-check-32-3 selectable-table1-check-32-4&quot;&gt;
-                    &lt;label for=&quot;selectable-table1-check-32-all&quot;
+                        aria-controls=&quot; selectable-table1-check-13-1 selectable-table1-check-13-2 selectable-table1-check-13-3 selectable-table1-check-13-4&quot;&gt;
+                    &lt;label for=&quot;selectable-table1-check-13-all&quot;
                         aria-label=&quot;Vælg alle rækker&quot;&gt;&lt;span
                             class=&quot;sr-only&quot;&gt;Vælg alle rækker&lt;/span&gt;&lt;/label&gt;
                 &lt;/th&gt;
@@ -4620,10 +4624,10 @@
         &lt;tbody&gt;
 
             &lt;tr&gt;
-                &lt;td&gt;&lt;input id=&quot;selectable-table1-check-32-1&quot;
+                &lt;td&gt;&lt;input id=&quot;selectable-table1-check-13-1&quot;
                         type=&quot;checkbox&quot; name=&quot;selectable-table1-check[]&quot;
                         class=&quot;form-checkbox&quot; value=&quot;Dagrenovation&quot;&gt;
-                    &lt;label for=&quot;selectable-table1-check-32-1&quot;
+                    &lt;label for=&quot;selectable-table1-check-13-1&quot;
                         aria-label=&quot;Vælg række&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
                             række&lt;/span&gt;&lt;/label&gt;
                 &lt;/td&gt;
@@ -4642,10 +4646,10 @@
             &lt;/tr&gt;
 
             &lt;tr&gt;
-                &lt;td&gt;&lt;input id=&quot;selectable-table1-check-32-2&quot;
+                &lt;td&gt;&lt;input id=&quot;selectable-table1-check-13-2&quot;
                         type=&quot;checkbox&quot; name=&quot;selectable-table1-check[]&quot;
                         class=&quot;form-checkbox&quot; value=&quot;Bioaffald og kompost&quot;&gt;
-                    &lt;label for=&quot;selectable-table1-check-32-2&quot;
+                    &lt;label for=&quot;selectable-table1-check-13-2&quot;
                         aria-label=&quot;Vælg række&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
                             række&lt;/span&gt;&lt;/label&gt;
                 &lt;/td&gt;
@@ -4661,10 +4665,10 @@
             &lt;/tr&gt;
 
             &lt;tr&gt;
-                &lt;td&gt;&lt;input id=&quot;selectable-table1-check-32-3&quot;
+                &lt;td&gt;&lt;input id=&quot;selectable-table1-check-13-3&quot;
                         type=&quot;checkbox&quot; name=&quot;selectable-table1-check[]&quot;
                         class=&quot;form-checkbox&quot; value=&quot;Glas&quot;&gt;
-                    &lt;label for=&quot;selectable-table1-check-32-3&quot;
+                    &lt;label for=&quot;selectable-table1-check-13-3&quot;
                         aria-label=&quot;Vælg række&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
                             række&lt;/span&gt;&lt;/label&gt;
                 &lt;/td&gt;
@@ -4680,10 +4684,10 @@
             &lt;/tr&gt;
 
             &lt;tr&gt;
-                &lt;td&gt;&lt;input id=&quot;selectable-table1-check-32-4&quot;
+                &lt;td&gt;&lt;input id=&quot;selectable-table1-check-13-4&quot;
                         type=&quot;checkbox&quot; name=&quot;selectable-table1-check[]&quot;
                         class=&quot;form-checkbox&quot; value=&quot;Elektronik&quot;&gt;
-                    &lt;label for=&quot;selectable-table1-check-32-4&quot;
+                    &lt;label for=&quot;selectable-table1-check-13-4&quot;
                         aria-label=&quot;Vælg række&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
                             række&lt;/span&gt;&lt;/label&gt;
                 &lt;/td&gt;
@@ -4724,10 +4728,10 @@
         &lt;thead&gt;
             &lt;tr&gt;
                 &lt;th&gt;
-                    &lt;input id=&quot;selectable-table2-check-45-all&quot;
+                    &lt;input id=&quot;selectable-table2-check-27-all&quot;
                         type=&quot;checkbox&quot; class=&quot;form-checkbox&quot;
-                        aria-controls=&quot; selectable-table2-check-45-1 selectable-table2-check-45-2 selectable-table2-check-45-3 selectable-table2-check-45-4&quot;&gt;
-                    &lt;label for=&quot;selectable-table2-check-45-all&quot;
+                        aria-controls=&quot; selectable-table2-check-27-1 selectable-table2-check-27-2 selectable-table2-check-27-3 selectable-table2-check-27-4&quot;&gt;
+                    &lt;label for=&quot;selectable-table2-check-27-all&quot;
                         aria-label=&quot;Vælg alle rækker&quot;&gt;&lt;span
                             class=&quot;sr-only&quot;&gt;Vælg alle rækker&lt;/span&gt;&lt;/label&gt;
                 &lt;/th&gt;
@@ -4745,10 +4749,10 @@
         &lt;tbody&gt;
 
             &lt;tr&gt;
-                &lt;td&gt;&lt;input id=&quot;selectable-table2-check-45-1&quot;
+                &lt;td&gt;&lt;input id=&quot;selectable-table2-check-27-1&quot;
                         type=&quot;checkbox&quot; name=&quot;selectable-table2-check[]&quot;
                         class=&quot;form-checkbox&quot; value=&quot;Dagrenovation&quot;&gt;
-                    &lt;label for=&quot;selectable-table2-check-45-1&quot;
+                    &lt;label for=&quot;selectable-table2-check-27-1&quot;
                         aria-label=&quot;Vælg række&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
                             række&lt;/span&gt;&lt;/label&gt;
                 &lt;/td&gt;
@@ -4767,10 +4771,10 @@
             &lt;/tr&gt;
 
             &lt;tr&gt;
-                &lt;td&gt;&lt;input id=&quot;selectable-table2-check-45-2&quot;
+                &lt;td&gt;&lt;input id=&quot;selectable-table2-check-27-2&quot;
                         type=&quot;checkbox&quot; name=&quot;selectable-table2-check[]&quot;
                         class=&quot;form-checkbox&quot; value=&quot;Bioaffald og kompost&quot;&gt;
-                    &lt;label for=&quot;selectable-table2-check-45-2&quot;
+                    &lt;label for=&quot;selectable-table2-check-27-2&quot;
                         aria-label=&quot;Vælg række&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
                             række&lt;/span&gt;&lt;/label&gt;
                 &lt;/td&gt;
@@ -4786,10 +4790,10 @@
             &lt;/tr&gt;
 
             &lt;tr&gt;
-                &lt;td&gt;&lt;input id=&quot;selectable-table2-check-45-3&quot;
+                &lt;td&gt;&lt;input id=&quot;selectable-table2-check-27-3&quot;
                         type=&quot;checkbox&quot; name=&quot;selectable-table2-check[]&quot;
                         class=&quot;form-checkbox&quot; value=&quot;Glas&quot;&gt;
-                    &lt;label for=&quot;selectable-table2-check-45-3&quot;
+                    &lt;label for=&quot;selectable-table2-check-27-3&quot;
                         aria-label=&quot;Vælg række&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
                             række&lt;/span&gt;&lt;/label&gt;
                 &lt;/td&gt;
@@ -4805,10 +4809,10 @@
             &lt;/tr&gt;
 
             &lt;tr&gt;
-                &lt;td&gt;&lt;input id=&quot;selectable-table2-check-45-4&quot;
+                &lt;td&gt;&lt;input id=&quot;selectable-table2-check-27-4&quot;
                         type=&quot;checkbox&quot; name=&quot;selectable-table2-check[]&quot;
                         class=&quot;form-checkbox&quot; value=&quot;Elektronik&quot;&gt;
-                    &lt;label for=&quot;selectable-table2-check-45-4&quot;
+                    &lt;label for=&quot;selectable-table2-check-27-4&quot;
                         aria-label=&quot;Vælg række&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
                             række&lt;/span&gt;&lt;/label&gt;
                 &lt;/td&gt;
