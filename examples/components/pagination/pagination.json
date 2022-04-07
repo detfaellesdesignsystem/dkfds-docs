@@ -1,0 +1,7 @@
+{
+  "paginationExample": {
+    "id": "pagination-ID",
+    "totalPages": 12,
+    "currentPage": 8
+  }
+}

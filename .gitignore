@@ -13,6 +13,7 @@ npm-debug.log
 /package-lock.json
 docs/package-lock.json
 .idea/
+Gemfile.lock
 # Preview components are fetched and generated from components repository
 _preview-components
 pdf

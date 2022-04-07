@@ -1,0 +1,5 @@
+{% from "components/pagination/pagination.njk" import pagination as pagination %}
+
+{% for item in paginationExample.items %}
+<div class="pagination-example my-8">{{ pagination(item) }}</div>
+{% endfor %}
