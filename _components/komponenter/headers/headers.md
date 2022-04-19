@@ -24,7 +24,7 @@ subnav:
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Brug headeren til at give brugen et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen. 
+Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen. 
 
 Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed, evt. med kontaktoplysninger.
 

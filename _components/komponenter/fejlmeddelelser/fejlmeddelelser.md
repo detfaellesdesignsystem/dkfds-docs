@@ -79,7 +79,7 @@ Generelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening uden for k
 
 * "En fejl opstod"
 * "Svar på spørgsmålet"
-* "Vælg et et svar fra listen"
+* "Vælg et svar fra listen"
 * "Udfyld feltet"
 * "Dette felt er påkrævet"
 

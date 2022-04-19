@@ -45,7 +45,7 @@ Undgå at have flere åbne modaler på siden - det giver en dårligere brugeropl
 
 Modalvinduet skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
-Knapper i modalvinduet skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige anbefalinger for knapper.
+<a href="/komponenter/knapper/">Knapper i modalvinduet skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/#retningslinjer">anbefalinger for knapper</a>.
 
 Vær sikker på at modalvinduet kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 

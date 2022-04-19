@@ -17,12 +17,12 @@ lead: Anvender din selvbetjeningsløsning cookies til andet end teknisk nødvend
 {:.h3}
 ## Anvendes til
 
-Brug cookiemeddelelsen til at få brugerens accept af de cookies du sætter i din løsning ud over de teknisk nødvendige.
+Brug cookiemeddelelsen til at få brugerens accept af de cookies du sætter i din løsning ud over de funktionelt nødvendige.
 
 {:.h3}
 ## Anvendes ikke til
 
-Du behøver ikke vise en cookiemeddelelse, hvis din løsning kun sætter teknisk nødvendige cookies.
+Du behøver ikke vise en cookiemeddelelse, hvis din løsning kun sætter funktionelt nødvendige cookies.
 
 {:.h3}
 ## Vejledning

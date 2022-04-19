@@ -11,13 +11,13 @@ var exampleUrls = [
     {"url": "/eksempel/header-large/", "filename": "header-large.png", "width": 992, "height": 158 },
     {"url": "/eksempel/header-medium/", "filename": "header-medium.png", "width": 992, "height": 262 },
     {"url": "/eksempel/header-full/", "filename": "header-full.png", "width": 992, "height": 322 },
-    {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 184 },
+    {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 114 },
     {"url": "/eksempel/footer-simple-language/", "filename": "footer-simple-language.png", "width": 1017, "height": 213 },
-    {"url": "/eksempel/language-switcher/", "filename": "language-switcher.png", "width": 1017, "height": 117 },
-    {"url": "/eksempel/language-switcher-tooltip/", "filename": "language-switcher-tooltip.png", "width": 1017, "height": 117 },
-    {"url": "/eksempel/footer-three-columns/", "filename": "footer-three-columns.png", "width": 1017, "height": 448 },
-    {"url": "/eksempel/footer-four-columns/", "filename": "footer-four-columns.png", "width": 1017, "height": 352 },
-    {"url": "/eksempel/footer-four-columns-language/", "filename": "footer-four-columns-language.png", "width": 1017, "height": 381 },
+    {"url": "/eksempel/language-switcher/", "filename": "language-switcher.png", "width": 1017, "height": 80 },
+    {"url": "/eksempel/language-switcher-tooltip/", "filename": "language-switcher-tooltip.png", "width": 1017, "height": 101 },
+    {"url": "/eksempel/footer-three-columns/", "filename": "footer-three-columns.png", "width": 1017, "height": 288 },
+    {"url": "/eksempel/footer-four-columns/", "filename": "footer-four-columns.png", "width": 1017, "height": 328 },
+    {"url": "/eksempel/footer-four-columns-language/", "filename": "footer-four-columns-language.png", "width": 1017, "height": 363 },
     {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
     {"url": "/eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
     {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 270 },
@@ -47,13 +47,15 @@ var exampleUrls = [
                     }
 
                     window.scrollTo(0, 0);
-
-
+                    if(document.getElementsByClassName('footer').length > 0){
+                        document.getElementsByClassName('footer')[0].style.marginTop = "0px";
+                    }
                     if(document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
-                        var eventClick = new Event('mouseover');
+                        var eventClick = new Event('mouseenter');
                         document.getElementsByClassName('js-tooltip')[0].dispatchEvent(eventClick);
                     }
                 });
+                await page.waitForTimeout(3000);
             } else{
                 await page.evaluate(() => {
                     document.getElementsByClassName('cookie-container')[0].classList.add('m-5');

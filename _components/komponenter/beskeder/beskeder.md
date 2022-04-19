@@ -33,7 +33,7 @@ Anvend succes- og advarselsbeskeder til at bekræfte en handling eller give besk
 {:.h3}
 ## Anvendes ikke til
 
-Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
+Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>.
 
 Brug modal dialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
 
