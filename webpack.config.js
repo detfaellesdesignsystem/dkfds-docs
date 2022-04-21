@@ -22,7 +22,8 @@ module.exports = function (outputPath, prod) {
       "languageswitcher": ["./javascript/components/languageswitcher.js"],
       "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
       "newsletter": ["./javascript/newsletter.js"],
-      "pagination": ["./javascript/components/pagination.js"]
+      "pagination": ["./javascript/components/pagination.js"],
+      "session-timeout": ["./javascript/components/session-timeout.js"]
     },
     module: {
       rules: [

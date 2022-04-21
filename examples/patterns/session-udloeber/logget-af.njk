@@ -1,0 +1,37 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/footers/footer.njk" import footer as footer %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+<header class="header">
+  <a class="skipnav" href="#main">Gå til sidens indhold</a>
+  {{ portal_header(portal_header_data) }}
+  {{ solution_header(solution_header_data) }}
+
+  <div class="overlay"></div>
+  <nav class=" nav"> <!-- collapsible-->
+    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+
+    <div class="portal-info-mobile">
+      <p class="user bold">Lone Hansen</p>
+      <a href="#" class="button button-secondary button-signout">
+        Log af
+      </a>
+    </div>
+
+    <div class="solution-info-mobile">
+      <p class="bold">Myndighedsnavn</p>
+      <p>Support: 12 34 56 78</p>
+    </div>
+
+  </nav> <!-- collapsible nav end-->
+</header>
+<main class="container page-container" id="main">
+  {{ alert(alert_example) }}
+  <h1>Du er logget af</h1>
+  <p>Dine indtastede data er gemt til næste gang, du logger på.</p>
+  <p>Du kan logge på igen på knappen herunder.</p>
+  <button class="button button-primary mt-5">Log på igen</button>
+</main>
+
+{{ footer(footer_data) }}

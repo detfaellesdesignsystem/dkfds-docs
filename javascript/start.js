@@ -28,6 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, false);
     }
+
+    if(document.getElementsByClassName('component-preview-error-summary-page').length > 0){
+        new DKFDS.ErrorSummary(document.getElementsByClassName('component-preview-error-summary-page')[0].querySelector('.alert[data-module="error-summary"]')).init();
+    }
+
 });
 
 $(document).ready(function () {

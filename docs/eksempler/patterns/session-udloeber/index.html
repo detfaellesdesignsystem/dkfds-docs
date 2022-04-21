@@ -16,9 +16,11 @@
 ================================================== -->
   
 
-<title>Besked-farver (alerts) | Det Fælles Designsystem</title>
-<meta property="og:title" content="Besked-farver (alerts) | Det Fælles Designsystem">
+<title>Session udløber | Det Fælles Designsystem</title>
+<meta property="og:title" content="Session udløber | Det Fælles Designsystem">
 
+<meta name="description" content="Visning af session udløb">
+<meta property="og:description" content="Visning af session udløb">
 
 
 
@@ -58,7 +60,7 @@
 </noscript>
 
   </head>
-  <body class="page-besked-farver-alerts layout-component">
+  <body class="page-session-udløber layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -270,9 +272,9 @@
 
 
 
-<li class="current" role="none">
+<li class="" role="none">
 <!-- Do not render subnavs-->
-  <a href="/design/" role="menuitem" aria-current="page"
+  <a href="/design/" role="menuitem" 
     class="nav-link">
     <span>Design</span>
   </a>
@@ -312,9 +314,9 @@
 
 
 
-<li class="" role="none">
+<li class="current" role="none">
 <!-- Do not render subnavs-->
-  <a href="/eksempler/" role="menuitem" 
+  <a href="/eksempler/" role="menuitem" aria-current="page"
     class="nav-link">
     <span>Eksempler</span>
   </a>
@@ -426,7 +428,7 @@
 
 
 
-<li class="current" role="none">
+<li class="" role="none">
 <!--Do render subnavs-->
 
   
@@ -436,10 +438,10 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="true"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="false"  >
         <span>Design</span>
       </button>
-      <div role="menu" aria-label="Design" class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="false">
+      <div role="menu" aria-label="Design" class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="true">
         <ul class="overflow-list" role="menu">
           
 
@@ -501,10 +503,10 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="true"  >
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="false"  >
           <span>Typografi</span>
         </button>
-        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="false">
+        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="true">
           <ul class="overflow-list" role="menu">
             
 
@@ -736,10 +738,10 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="true"  >
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="false"  >
           <span>Datavisualisering og infografik</span>
         </button>
-        <div aria-label="Datavisualisering og infografik" class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="false">
+        <div aria-label="Datavisualisering og infografik" class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="true">
           <ul class="overflow-list" role="menu">
             
 
@@ -851,10 +853,10 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="true"  >
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="false"  >
           <span>Layout</span>
         </button>
-        <div aria-label="Layout" class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="false">
+        <div aria-label="Layout" class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="true">
           <ul class="overflow-list" role="menu">
             
 
@@ -1827,7 +1829,7 @@
 
 
 
-<li class="" role="none">
+<li class="current" role="none">
 <!--Do render subnavs-->
 
   
@@ -1837,10 +1839,10 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="true"  >
         <span>Eksempler</span>
       </button>
-      <div role="menu" aria-label="Eksempler" class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
+      <div role="menu" aria-label="Eksempler" class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="false">
         <ul class="overflow-list" role="menu">
           
 
@@ -1889,7 +1891,7 @@
     
 
 
-<li class="  " role="none">
+<li class="current  " role="none">
 
   
 
@@ -1902,22 +1904,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="true"  >
           <span>Patterns</span>
         </button>
-        <div aria-label="Patterns" class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
+        <div aria-label="Patterns" class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="false">
           <ul class="overflow-list" role="menu">
             
 
 
-<li class="  " role="none">
+<li class="current  " role="none">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/" role="menuitem" aria-current="true" class="nav-link">
         Patterns<span class="helptext"> (overblik)</span>
       </a>
      
@@ -1943,6 +1945,26 @@
     
     <a href="/eksempler/patterns/angivelse-af-telefonnummer/" role="menuitem"  class="nav-link">
         Angivelse af telefonnummer
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="current active " role="none">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/session-udloeber/" role="menuitem" aria-current="page" class="nav-link">
+        Session udløber
       </a>
      
     
@@ -3470,6 +3492,113 @@
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         
         
+        <ul class="sidenav-list" role="menu">
+          
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/eksempler/selvbetjeningsloesninger/" role="menuitem" 
+  class="nav-link">
+  Selvbetjeningsløsninger
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="current  " role="none">
+
+
+  
+
+<a href="/eksempler/patterns/" role="menuitem" aria-current="true"
+  class="nav-link">
+  Patterns
+</a>
+
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+    
+
+    
+
+    <ul class="sidenav-sub_list" role="menu">
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/eksempler/patterns/angivelse-af-telefonnummer/" role="menuitem" 
+  class="nav-link">
+  Angivelse af telefonnummer
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="current active " role="none">
+
+
+  
+
+<a href="/eksempler/patterns/session-udloeber/" role="menuitem" aria-current="page"
+  class="nav-link">
+  Session udløber
+</a>
+
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+  
+
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/eksempler/templates/" role="menuitem" 
+  class="nav-link">
+  Templates
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+        
       </nav>
     </aside>
 
@@ -3483,74 +3612,309 @@
         </div>
     </div>
 
-      <section id="section-/design/colors/colors-beskedfarver">
+      <section id="section-">
           
           
 
           <div class="subheading">
-            
+            Eksempler
           </div>
-          <h1 id="besked-farver-alerts">Besked-farver (alerts)</h1>
+          <h1 id="session-udløber">Session udløber</h1>
           
+          
+
+          
+            <p class="font-lead">Session udløber vises, inden brugeren automatisk logges af en løsning. Dialogen giver brugeren mulighed for at tage stilling til, om de vil logge af eller forblive i løsningen.</p>
           
 
           
 
           
+<div class="component-preview  component-preview-session-udloeber" aria-label="Eksempel på session udløb">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="fds-modal" id="example-sesssion-udloeber" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-id-1-title" data-modal-forced-action="">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="example-sesssion-udloeber-heading">
+                Du er ved at blive logget af
+            </h2>
 
-          <div class="row">
-  <div class="col-12 col-md-6">
-    <ul class="color-scale mb-8">
-      <li>
-        <div class="color background-success-light"></div>
-        <div class="color-text-label"><span class="color-hex">#EEFFE2</span><span>success-light</span></div>
-      </li>
-       <li>
-        <div class="color background-success"></div>
-        <div class="color-text-label"><span class="color-hex">#358000</span><span>success</span></div>
-      </li>
-    </ul>
-  </div>
-  <div class="col-12 col-md-6">
-    <ul class="color-scale mb-8">
-      <li>
-        <div class="color background-warning-light"></div>
-        <div class="color-text-label"><span class="color-hex">#FFEECC</span><span>warning-light</span></div>
-      </li>
-      <li>
-        <div class="color background-warning"></div>
-        <div class="color-text-label"><span class="color-hex">#FEBB30</span><span>warning</span></div>
-      </li>
-    </ul>
-  </div>
-  <div class="col-12 col-md-6">
-    <ul class="color-scale mb-8">
-      <li>
-        <div class="color background-error-light"></div>
-        <div class="color-text-label"><span class="color-hex">#FFE0E0</span><span>error-light</span></div>
-      </li>
-      <li>
-        <div class="color background-error"></div>
-        <div class="color-text-label"><span class="color-hex">#CC0000</span><span>error</span></div>
-      </li>
-    </ul>
-  </div>
-  <div class="col-12 col-md-6">
-    <ul class="color-scale mb-8">
-      <li>
-        <div class="color background-info-light"></div>
-        <div class="color-text-label"><span class="color-hex">#E2F2FB</span><span>info-light</span></div>
-      </li>
-      <li>
-        <div class="color background-info"></div>
-        <div class="color-text-label"><span class="color-hex">#1B86C3</span><span>info</span></div>
-      </li>
-    </ul>
-  </div>
+        </div>
+        <div class="modal-body">
+            <p>Din session udløber snart. Du logges automatisk af om <span role="timer"><span class="bold session-timeout-countdown-minutes">5
+                        min.</span><span class="bold session-timeout-countdown-seconds"></span></span>
+            </p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="button button-primary" id="btn-stay-logged-in" data-modal-close="">Forbliv logget på</button><button class="button button-secondary" data-modal-close="" id="btn-log-out">Log af</button>
+        </div>
+
+    </div>
 </div>
 
+<button class="button button-tertiary" data-module="modal" data-target="example-sesssion-udloeber">
+    Åbn modal
+</button>
+        
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på udløb af session</span></summary>
+    <div class="details-text">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;fds-modal&quot; id=&quot;example-sesssion-udloeber&quot; aria-hidden=&quot;true&quot;
+    role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-id-1-title&quot;
+    data-modal-forced-action&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h2 class=&quot;modal-title&quot; id=&quot;example-sesssion-udloeber-heading&quot;&gt;
+                Du er ved at blive logget af
+            &lt;/h2&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;Din session udløber snart. Du logges automatisk af om &lt;span
+                    role=&quot;timer&quot;&gt;&lt;span
+                        class=&quot;bold session-timeout-countdown-minutes&quot;&gt;5
+                        min.&lt;/span&gt;&lt;span
+                        class=&quot;bold session-timeout-countdown-seconds&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button class=&quot;button button-primary&quot; id=&quot;btn-stay-logged-in&quot;
+                data-modal-close&gt;Forbliv logget på&lt;/button&gt;&lt;button
+                class=&quot;button button-secondary&quot; data-modal-close
+                id=&quot;btn-log-out&quot;&gt;Log af&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button class=&quot;button button-tertiary&quot; data-module=&quot;modal&quot;
+    data-target=&quot;example-sesssion-udloeber&quot;&gt;
+    Åbn modal
+&lt;/button&gt;</code></pre></figure>
 
 
+    </div>
+</details>
+
+<h2 class="h3">Anvendes til</h2>
+<p>Dialogen anvendes, når en bruger er ved at blive logget af en løsning automatisk, dvs. når deres session udløber.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+<p>Dialogen anvendes ikke, når en bruger selv har trykket på en log af-knap. Hvis brugeren er ved at logge af en løsning, hvor der er foretaget ændringer, som ikke er gemt, så anvend i stedet dialogen Er du sikker på, du vil forlade siden?</p>
+
+<h2 class="h3">Vejledning</h2>
+<ul>
+  <li>Til dette mønster anvendes komponenten <a href="/komponenter/modal/#kraever-handling">Modalvindue, som kræver handling</a>.</li>
+  <li>Dialogen vises ca. 5 minutter før, brugeren automatisk bliver logget af. Således kan brugeren nå at handle på informationen og fx vælge at forblive logget ind. En kortere tid for dialogen kan vælges af sikkerhedsmæssige årsager, dog må brugeren aldrig få mindre end 20 sekunders varsel af hensyn til tilgængelighed (Timing Adjustable: Understanding SC 2.2.1).</li>
+  <li>En nedtælling i dialogen kan hjælpe brugeren med at forstå, hvor lang tid de har til at reagere. Hvis dialogen “Session udløber” fx vises 5 minutter før, brugeren automatisk logges af, så tælles der ned fra 5 minutter.</li>
+  <li>Hvis sessionens udløb vil resultere i, at ændringer, som brugere har foretaget, vil gå tabt, bør dialogen gøre opmærksom på dette. Det kan fx være, hvis brugeren er i gang med at udfylde en formular.</li>
+  <li>Hvis brugeren har foretaget ændringer, og disse er gemt automatisk, bør dialogen gøre opmærksom på dette.</li>
+  <li>Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/">Se eksempel på, hvordan siden kan se ud med FDS</a>. Den kan ydermere informere brugeren om ekstra sikkerhed.</li>
+  <li>Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold. Hvis din løsning bruger NemLogin, kan du <a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">læse mere om kravene på digitaliser.dk<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+</ul>
+
+<h2 class="h3">Referencer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" class="icon-link">Timing Adjustable:
+Understanding SC 2.2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">Tekniske krav til tilslutning af it-system i NemLog-in<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<h2>Ændringer er ikke gemt</h2>
+
+<div class="component-preview  component-preview-session-udloeber-aendringer-ikke-gemt" aria-label="Eksempel på session udløb med ændringer der ikke er gemt">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="fds-modal" id="example-sesssion-udloeber-ikke-gemt" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-id-1-title" data-modal-forced-action="">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="example-sesssion-udloeber-ikke-gemt-heading">
+                Du er ved at blive logget af
+            </h2>
+
+        </div>
+        <div class="modal-body">
+            <p>Din session udløber snart. Du logges automatisk af om <span role="timer"><span class="bold session-timeout-countdown-minutes">5
+                        min.</span><span class="bold session-timeout-countdown-seconds"></span></span>
+            </p>
+            <p class="bold">Ændringer, der ikke er gemt, vil gå tabt.</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="button button-primary" id="btn-stay-logged-in" data-modal-close="">Forbliv logget på</button><button class="button button-secondary" data-modal-close="" id="btn-log-out">Log af</button>
+        </div>
+
+    </div>
+</div>
+
+<button class="button button-tertiary" data-module="modal" data-target="example-sesssion-udloeber-ikke-gemt">
+    Åbn modal
+</button>
+        
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på udløb af session med ændringer, der ikke er gemt</span></summary>
+    <div class="details-text">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;fds-modal&quot; id=&quot;example-sesssion-udloeber-ikke-gemt&quot;
+    aria-hidden=&quot;true&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;
+    aria-labelledby=&quot;modal-id-1-title&quot; data-modal-forced-action&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h2 class=&quot;modal-title&quot;
+                id=&quot;example-sesssion-udloeber-ikke-gemt-heading&quot;&gt;
+                Du er ved at blive logget af
+            &lt;/h2&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;Din session udløber snart. Du logges automatisk af om &lt;span
+                    role=&quot;timer&quot;&gt;&lt;span
+                        class=&quot;bold session-timeout-countdown-minutes&quot;&gt;5
+                        min.&lt;/span&gt;&lt;span
+                        class=&quot;bold session-timeout-countdown-seconds&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;/p&gt;
+            &lt;p class=&quot;bold&quot;&gt;Ændringer, der ikke er gemt, vil gå tabt.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button class=&quot;button button-primary&quot; id=&quot;btn-stay-logged-in&quot;
+                data-modal-close&gt;Forbliv logget på&lt;/button&gt;&lt;button
+                class=&quot;button button-secondary&quot; data-modal-close
+                id=&quot;btn-log-out&quot;&gt;Log af&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button class=&quot;button button-tertiary&quot; data-module=&quot;modal&quot;
+    data-target=&quot;example-sesssion-udloeber-ikke-gemt&quot;&gt;
+    Åbn modal
+&lt;/button&gt;</code></pre></figure>
+
+
+    </div>
+</details>
+
+<h2>Ændringer er gemt</h2>
+
+<div class="component-preview  component-preview-session-udloeber-aendringer-gemt" aria-label="Eksempel på session udløb med gemte ændringer">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="fds-modal" id="example-sesssion-udloeber-gemt" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-id-1-title" data-modal-forced-action="">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="example-sesssion-udloeber-gemt-heading">
+                Du er ved at blive logget af
+            </h2>
+
+        </div>
+        <div class="modal-body">
+            <p>Din session udløber snart. Du logges automatisk af om <span role="timer"><span class="bold session-timeout-countdown-minutes">5
+                        min.</span><span class="bold session-timeout-countdown-seconds"></span></span>
+            </p>
+            <p>Dine indtastede data er gemt.</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="button button-primary" id="btn-stay-logged-in" data-modal-close="">Forbliv logget på</button><button class="button button-secondary" data-modal-close="" id="btn-log-out">Log af</button>
+        </div>
+
+    </div>
+</div>
+
+<button class="button button-tertiary" data-module="modal" data-target="example-sesssion-udloeber-gemt">
+    Åbn modal
+</button>
+        
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på udløb af session med gemte ændringer</span></summary>
+    <div class="details-text">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;fds-modal&quot; id=&quot;example-sesssion-udloeber-gemt&quot;
+    aria-hidden=&quot;true&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;
+    aria-labelledby=&quot;modal-id-1-title&quot; data-modal-forced-action&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h2 class=&quot;modal-title&quot;
+                id=&quot;example-sesssion-udloeber-gemt-heading&quot;&gt;
+                Du er ved at blive logget af
+            &lt;/h2&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;Din session udløber snart. Du logges automatisk af om &lt;span
+                    role=&quot;timer&quot;&gt;&lt;span
+                        class=&quot;bold session-timeout-countdown-minutes&quot;&gt;5
+                        min.&lt;/span&gt;&lt;span
+                        class=&quot;bold session-timeout-countdown-seconds&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+            &lt;/p&gt;
+            &lt;p&gt;Dine indtastede data er gemt.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button class=&quot;button button-primary&quot; id=&quot;btn-stay-logged-in&quot;
+                data-modal-close&gt;Forbliv logget på&lt;/button&gt;&lt;button
+                class=&quot;button button-secondary&quot; data-modal-close
+                id=&quot;btn-log-out&quot;&gt;Log af&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button class=&quot;button button-tertiary&quot; data-module=&quot;modal&quot;
+    data-target=&quot;example-sesssion-udloeber-gemt&quot;&gt;
+    Åbn modal
+&lt;/button&gt;</code></pre></figure>
+
+
+    </div>
+</details>
+
+
+
+          
+            
+            
+              
+
+              
+              
+              
+
+              
+              
+              
+                
+                  
+                
+                  
+                    
+                      
+                    
+                    
+                    
+              
+              
+
+              
+              
           
       </section>
     </main>
@@ -3598,14 +3962,17 @@
     
 
     <script src="/assets/js/theme.js"></script>
-<script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+<script src="/assets/js/vendor.js"></script>
 
 
 
 
 
 
+
+
+<script src="/assets/js/session-timeout.js"></script>
 
   </body>
 </html>

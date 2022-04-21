@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
+<head>
     <meta name="robots" content="noindex" />
     <!-- Basic Page Needs
 ================================================== -->
@@ -17,9 +17,11 @@
 ================================================== -->
   
 
-<title>Modal | Det Fælles Designsystem</title>
-<meta property="og:title" content="Modal | Det Fælles Designsystem">
+<title>Du er logget af | Det Fælles Designsystem</title>
+<meta property="og:title" content="Du er logget af | Det Fælles Designsystem">
 
+<meta name="description" content="Template til logget af scenarie">
+<meta property="og:description" content="Template til logget af scenarie">
 
 
 
@@ -58,9 +60,9 @@
   <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css" />
 </noscript>
 
-  </head>
-  <body class="page-modal layout-example-contained">
-    <div class="hide-base-svg">
+</head>
+<body class="page-du-er-logget-af layout-demo">
+<div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
 <symbol id="home" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></symbol>
@@ -225,53 +227,137 @@
 <symbol id="format-align-justify" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 21h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18V7H3v2zm0-6v2h18V3H3z"/></symbol>
 </svg>
 </div>
-    <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
-    <main class="container page-container" id="main-content">
-    
-      <h1 id="example-heading-modal" class="sr-only">Modal</h1>
-      <div class="fds-modal" id="modal-example" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-id-1-title">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2 class="modal-title" id="modal-example-title">
-                Lorem ipsum
-            </h2>
-            <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-        </div>
-        <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sodales turpis nec tincidunt dictum. Aliquam
-                hendrerit nunc nec arcu lobortis fringilla. Sed nulla
-                lectus, mollis eget rhoncus sed, porta eu ipsum.</p>
-            <p>Cras eleifend elementum finibus. Mauris ac magna quis orci
-                dapibus suscipit. Vestibulum accumsan turpis diam, ut
-                pretium quam sollicitudin sed. Pellentesque posuere eget
-                tortor quis imperdiet. Pellentesque gravida, enim vel
-                porttitor sagittis, libero neque efficitur justo, nec
-                gravida orci risus consequat lacus.</p>
-        </div>
+<header class="header">
+    <a class="skipnav" href="#main">Gå til sidens indhold</a>
 
-        <div class="modal-footer">
-            <button class="button button-primary">Primær
-                knap</button><button class="button button-secondary">Sekundær knap</button>
-        </div>
+    <!--1A: Portal header -->
+    <div class="portal-header ">
+        <div class="container portal-header-inner">
+            <a href="#" class="logo ">
+                <span class="sr-only">Portalnavn</span>
+            </a>
+            <button
+                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="menu"
+                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
+            <!-- 1B: Portal header: info + actions-->
+            <div class="portal-info">
+
+                <button class="button button-secondary d-print-none">
+                    Log på
+                </button>
+            </div>
+        </div>
     </div>
-</div>
 
-<p><button class="button button-tertiary" data-module="modal" data-target="modal-example">
-    Åbn modal
-</button></p>
+    <!--2A: Solution header -->
+    <div class="solution-header ">
+        <div class="container solution-header-inner">
+            <div class="solution-heading">
+                <a href="#" class="">
+                    En langt længere løsningstitel
+                </a>
+            </div>
 
-      
-    
-    </main>
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/styleguide.js"></script>
-    <script src="/assets/js/vendor.js"></script>
-    
-    
-    
-    
-    
-  </body>
+            <!--2B: Solution header: Authority name + text-->
+            <div class="solution-info ">
+                <!-- nav-secondary -->
+
+                <p class="h5 authority-name"> Myndighedsnavn</p>
+
+                <p>Support: 12 34 56 78</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <nav class=" nav">
+        <!-- collapsible-->
+        <button class="function-link button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+
+        <div class="portal-info-mobile">
+            <p class="user bold">Lone Hansen</p>
+            <a href="#" class="button button-secondary button-signout">
+                Log af
+            </a>
+        </div>
+
+        <div class="solution-info-mobile">
+            <p class="bold">Myndighedsnavn</p>
+            <p>Support: 12 34 56 78</p>
+        </div>
+
+    </nav> <!-- collapsible nav end-->
+</header>
+<main class="container page-container" id="main">
+
+    <div class="alert alert-info alert--show-icon">
+        <div class="alert-body">
+            <p class="alert-heading">Hvis andre har adgang til denne
+                computer, smartphone eller tablet, skal du:</p>
+            <p class="alert-text">
+            <ul>
+                <li>lukke internetbrowseren helt ned - ikke kun fanebladet,
+                    eller</li>
+                <li>slette internetbrowserens midlertidige filer.</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <h1>Du er logget af</h1>
+    <p>Dine indtastede data er gemt til næste gang, du logger på.</p>
+    <p>Du kan logge på igen på knappen herunder.</p>
+    <button class="button button-primary mt-5">Log på igen</button>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <ul class="align-text-left unstyled-list inline-list">
+                <li class=""><span
+                        class="h5 weight-semibold">Digitaliseringsstyrelsen</span>
+                </li>
+                <li class=""><a href="mailto:support@myndighed.dk"
+                        class="function-link"
+                        title="Skriv til Digitaliseringsstyrelsen">support@myndighed.dk</a>
+                </li>
+                <li class=""><a href="tel:+4512345678"
+                        class="function-link"
+                        title="Ring til Digitaliseringsstyrelsen">(+45) 12
+                        34 56 78</a></li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+                </li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link">Privatlivspolitik
+                        (cookies)</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+
+
+<footer class="demo-footer d-print-none" aria-label="Gå tilbage til oversigten eller skift tema">
+  <div class="demo-footer-content d-flex align-items-center">
+    <a class="button" id="btn-demo-return" href="/eksempler/"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Tilbage<span class="sr-only"> til dokumentationssiden</span></a>
+    <label class="sr-only" for="themeselector">Skift tema</label>
+    <select class="form-select style-switcher mt-0 ml-4" id="themeselector" name="themeselector">
+      <option value="virk">Tema: Virk</option>
+      <option value="borgerdk">Tema: Borger.dk</option>
+    </select>
+  </div>
+</footer>
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/styleguide.js"></script>
+<script src="/assets/js/vendor.js"></script>
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/languageswitcher.js"></script>
+<script src="/assets/js/demo-return-to-prev-page.js"></script>
+</body>
 </html>

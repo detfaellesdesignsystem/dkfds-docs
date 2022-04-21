@@ -1,6 +1,6 @@
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-<script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
 <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
 {% if page.url contains "spinner" %}
 <script src="{{ site.baseurl }}/assets/js/spinner.js"></script>
 {% endif %}
@@ -21,4 +21,7 @@
 {% endif %}
 {% if page.url contains "paginering" %}
 <script src="{{ site.baseurl }}/assets/js/pagination.js"></script>
+{% endif %}
+{% if page.url contains "session-udloeber" %}
+<script src="{{ site.baseurl }}/assets/js/session-timeout.js"></script>
 {% endif %}
