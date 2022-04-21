@@ -181,6 +181,18 @@
   .color-link-hover {
     background-color: color($theme-color-link-hover);
   }
+  a.link-default, a.link-default:link, a.link-default:visited, a.link-default:hover, a.link-default:focus{
+    color: color($theme-color-link);
+  }
+  a.link-hover, a.link-hover:link, a.link-hover:visited, a.link-hover:hover, a.link-hover:focus{
+    color: color($theme-color-link-hover);
+  }
+  a.link-visited, a.link-visited:link, a.link-visited:visited, a.link-focus:visited, a.link-focus:visited{
+    color: color($theme-color-link-visited);
+  }
+  a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.link-focus:focus{
+    color: color($theme-color-link-focus);
+  }
   .color-focus {
     background-color: color($theme-focus-color);
   }
