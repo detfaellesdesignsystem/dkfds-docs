@@ -4,7 +4,7 @@
     "headingId": "example-sesssion-udloeber-gemt-heading",
     "heading": "Du er ved at blive logget af",
     "content": "<p>Din session udløber snart. Du logges automatisk af om <span role=\"timer\"><span class=\"bold session-timeout-countdown-minutes\">5 min.</span><span class=\"bold session-timeout-countdown-seconds\"></span></span></p><p>Dine indtastede data er gemt.</p>",
-    "actions": "<button class=\"button button-primary\" id=\"btn-stay-logged-in\" data-modal-close>Forbliv logget på</button><button class=\"button button-secondary\" data-modal-close id=\"btn-log-out\">Log af</button>",
+    "actions": "<button class=\"button button-primary\" data-modal-close>Forbliv logget på</button><button class=\"button button-secondary\" data-modal-close>Log af</button>",
     "forcedAction": true
   },
   "button_example": {
