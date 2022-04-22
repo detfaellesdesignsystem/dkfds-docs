@@ -50,7 +50,7 @@ Benyt Forrige og Næste links hhv. før første side og efter sidste side.
 Hvis brugeren står på første side vises "Forrige" ikke. Hvis brugeren står på sidste side vises "Næste" ikke.
 
 {:.h4}
-### Responsitivitet
+### Responsiv
 Hold paginering på en enkelt linje.
 
 På små skærme benyttes Forrige og Næste-links. De enkelte sider pakkes sammen i en drop down. Husk at fortælle
