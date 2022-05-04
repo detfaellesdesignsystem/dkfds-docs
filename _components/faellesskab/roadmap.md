@@ -26,7 +26,7 @@ Sagerne kan være:
 ## Nye komponenter
 <div class="mt-4">
 {% include roadmap.html title="Multiselect dropdown" status="Planlagt" %}
-{% include roadmap.html title="Paginering" status="Planlagt" %}
+{% include roadmap.html title="Paginering" status="Gennemført" %}
 {% include roadmap.html title="Tilbage til toppen" status="Planlagt" %}
 {% include roadmap.html title="Tiles" status="Planlagt" %}
 {% include roadmap.html title="Strukturerede lister" status="Gennemført" %}
