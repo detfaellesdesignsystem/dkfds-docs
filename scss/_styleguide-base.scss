@@ -13,16 +13,16 @@
    }
   
   .fds-title {
-    font-size: 2.8rem;
-    line-height: 3.2rem;
-    font-weight: $font-weight-semibold;
+    font-size: font-size('4xl');
+    line-height: units(6, 'rem');
+    font-weight: font-weight('semibold');
     color: color('black');
     text-decoration: none;
     display: inline-block;
   
     @include media-breakpoint-down(sm) {
-      font-size: 2.2rem;
-      line-height: 2.4rem;
+      font-size: font-size('2xl');
+      line-height: units(5, 'rem');
     }
   
     &:visited, &:hover, &:active{
@@ -41,12 +41,6 @@
     background-color: color('white');
     padding: math.div($grid-gutter-width, 2);
     border: border(10); // scss-lint:disable ColorVariable
-  
-    .background-dark {
-      padding-left: 1em;
-      padding-right: 1em;
-      display: inline-block;
-    }
   
     > *:first-child {
       margin-top: 0;
@@ -517,7 +511,7 @@
   }
   
   .color-text-container {
-    margin-bottom: $spacing-medium;
+    margin-bottom: units(5);
     margin-top: units(3);
     p {
       margin: 0px;
@@ -558,7 +552,7 @@
   code,
   pre {
     font-family: monospace;
-    line-height: 1.4em;
+    line-height: units(4, 'rem');
     code{
       background-color: transparent;
     }
@@ -602,7 +596,7 @@
     background-color: color('gray-100');
     padding: 16px;
     pre, code {
-      max-width: $text-max-width;
+      max-width: $typography-text-max-width;
     }
   }
   
@@ -624,8 +618,8 @@
     pre,
     code {
       background: none;
-      font-size: 1.3rem;
-      line-height: 1.4em;
+      font-size: font-size('2xs');
+      line-height: units(4, 'rem');
       margin-top: 0;
       padding: 0;
     }
@@ -835,7 +829,7 @@
   }
   
   .video-paragraph{
-    max-width: $text-max-width;
+    max-width: $typography-text-max-width;
   }
   .video-container {
     position: relative;
@@ -878,7 +872,7 @@
   
   .preview-buttons {
     position: absolute;
-    top: $spacing-small;
+    top: units(2);
     right: 0;
     display: none;
   }
@@ -894,15 +888,15 @@
   
   .component-preview-item {
     float: left;
-    height: $spacing-medium;
+    height: units(5);
   }
   
   .component-preview-button {
     background: color('gray-400');
     border: border(10);
     outline: none;
-    height: $spacing-medium;
-    width: $spacing-medium;
+    height: units(5);
+    width: units(5);
     padding: 1px;
     cursor: pointer;
     border-radius: 50%;
@@ -1188,26 +1182,6 @@ Color scale
       }
     }
   }
-  /*
-  &-spacing{
-    margin-left: -#{units(4)};
-    li{
-      padding-right: units(4);
-      padding-left: units(4);
-      &:last-of-type{
-        padding-right: 0;
-        padding-left: 0;
-      }
-      
-    @include media-breakpoint-up(md) { 
-      & + li{
-        .color{
-          border-left: border(10);
-        }
-      }
-    }
-    }
-  }*/
 }
 
 /*
@@ -1216,6 +1190,6 @@ Design
 ----------------------
 */
 .example-table-th{
-  font-weight: $table-head-font-weight;
-  font-size: $table-font-size;
+  font-weight: font-weight($table-head-font-weight);
+  font-size: font-size($table-font-size);
 }
