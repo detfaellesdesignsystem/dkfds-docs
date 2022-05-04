@@ -1,6 +1,7 @@
 {
   "paginationExample": {
     "id": "pagination-ID",
+    "ariaLabel": "Pagineringseksempel med 12 sider",
     "totalPages": 12,
     "currentPage": 8
   }

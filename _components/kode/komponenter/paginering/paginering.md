@@ -27,9 +27,14 @@ tags:
 
 {% include code/syntax.html component="pagination" %}
 
-Husk at inkludere både en `<select>` og `<ul>` der håndterer pagineringen for hhv. små og store skærmstørrelser. Anvend klasserne `class="pagination__dropdown"` og `class="pagination__items"` for automatisk at få vist den rigtige version af komponenten.
+Brug `class="hidden"` på Forrige-, Næste-, Første- og Sidste-knapperne, når de ikke skal vises.
 
-Brug `class="hidden"` på Forrige- og Næste-knapperne, når de ikke skal vises.
+## Tilgængelighed
+
+Lad knappen med tallet til sidste side indeholde en aria-label, der oplyser dette. Husk at lade den aktuelle side være markeret med `aria-current="page"`.
+
+Sørg for at alle Forrige-, Næste-, Første- og Sidste-knapper på mindre skærme har en skjult, tilknyttet tekst, så ikonerne kan læses højt af en skærmlæser.
+
 
 ### JavaScript
 Bemærk at DKFDS på nuværende tidspunkt kun leverer HTML og CSS til denne komponent. Funktionaliteten skal man derfor selv håndtere.

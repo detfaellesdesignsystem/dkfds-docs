@@ -17,8 +17,8 @@
 ================================================== -->
   
 
-<title>Table-selectable-functions | Det Fælles Designsystem</title>
-<meta property="og:title" content="Table-selectable-functions | Det Fælles Designsystem">
+<title>Text-area-character-limit | Det Fælles Designsystem</title>
+<meta property="og:title" content="Text-area-character-limit | Det Fælles Designsystem">
 
 
 
@@ -59,7 +59,7 @@
 </noscript>
 
   </head>
-  <body class="page-table-selectable-functions layout-example-contained">
+  <body class="page-text-area-character-limit layout-example-contained">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -228,119 +228,16 @@
     <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     <main class="container page-container" id="main-content">
     
-      <h1 id="example-heading-table-selectable-functions" class="sr-only">Table selectable functions</h1>
-      <div class="table--responsive-scroll">
-    <table class="table table--selectable" id="selectable-table2">
-        <thead>
-            <tr>
-                <th>
-                    <input id="selectable-table2-check-14-all" type="checkbox" class="form-checkbox" aria-controls=" selectable-table2-check-14-1 selectable-table2-check-14-2 selectable-table2-check-14-3 selectable-table2-check-14-4" />
-                    <label for="selectable-table2-check-14-all" aria-label="Vælg alle rækker"><span class="sr-only">Vælg alle rækker</span></label>
-                </th>
-                <th>Affaldstype</th>
+      <h1 id="example-heading-text-area-character-limit" class="sr-only">Text area character limit</h1>
+      <div class="form-group form-limit" data-maxlength="555">
+    <label class="form-label" for="input-area">
+        Tekstområde med label
+    </label>
 
-                <th>Farvekode</th>
+    <textarea class="form-input " rows="5" id="input-area" name="input-area" aria-describedby="  input-type-text-limit"></textarea>
 
-                <th>Beskrivelse</th>
+    <span id="input-type-text-limit" class="form-hint character-limit" aria-live="polite">Du har 555 tegn tilbage</span>
 
-                <th>Hvor ender det?</th>
-
-            </tr>
-        </thead>
-
-        <tbody>
-
-            <tr>
-                <td><input id="selectable-table2-check-14-1" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="Dagrenovation" />
-                    <label for="selectable-table2-check-14-1" aria-label="Vælg række"><span class="sr-only">Vælg
-                            række</span></label>
-                </td>
-                <td>Dagrenovation</td>
-
-                <td>Grøn</td>
-
-                <td>Madaffald, samt papir, pap eller plastik der ikke kan
-                    genanvendes, fordi der er madrester eller andet snask
-                    på.</td>
-
-                <td>Alt det affald, du smider ud i din primære
-                    skraldespand, som er dagrenovationen, bliver hentet og
-                    kørt på forbrændingen.</td>
-
-            </tr>
-
-            <tr>
-                <td><input id="selectable-table2-check-14-2" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="Bioaffald og kompost" />
-                    <label for="selectable-table2-check-14-2" aria-label="Vælg række"><span class="sr-only">Vælg
-                            række</span></label>
-                </td>
-                <td>Bioaffald og kompost</td>
-
-                <td>Beige</td>
-
-                <td>Alt madaffald uden fødevareemballage.</td>
-
-                <td>Bioaffaldet kommes i bionedbrydelige poser, som bliver
-                    komposteret til muld.</td>
-
-            </tr>
-
-            <tr>
-                <td><input id="selectable-table2-check-14-3" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="Glas" />
-                    <label for="selectable-table2-check-14-3" aria-label="Vælg række"><span class="sr-only">Vælg
-                            række</span></label>
-                </td>
-                <td>Glas</td>
-
-                <td>Hvid</td>
-
-                <td>Alle typer glas og flasker.</td>
-
-                <td>De hele vinflasker rengøres og genbruges af vinhuse,
-                    mens glasskårene bliver smeltet om til nyt glas.</td>
-
-            </tr>
-
-            <tr>
-                <td><input id="selectable-table2-check-14-4" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="Elektronik" />
-                    <label for="selectable-table2-check-14-4" aria-label="Vælg række"><span class="sr-only">Vælg
-                            række</span></label>
-                </td>
-                <td>Elektronik</td>
-
-                <td>Orange</td>
-
-                <td>Genstande der har brugt strøm.</td>
-
-                <td>Det elektroniske affald bliver typisk kørt til et
-                    demonteringsanlæg, hvor det bliver skilt ad, så de
-                    forskellige dele kan genanvendes separat.</td>
-
-            </tr>
-
-        </tbody>
-    </table>
-
-    <div class="table-actions">
-        <p class="table-selected-number no-selected">Vælg en eller flere
-            rækker for at udføre funktioner</p>
-
-        <button class="button button-primary">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
-            Download
-        </button>
-
-        <button class="button button-secondary">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
-            Duplikér
-        </button>
-
-        <button class="button button-secondary">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
-            Slet
-        </button>
-
-    </div>
 </div>
 
       
@@ -350,8 +247,6 @@
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
     
-    
-    <script src="/assets/js/table.js"></script>
     
     
     

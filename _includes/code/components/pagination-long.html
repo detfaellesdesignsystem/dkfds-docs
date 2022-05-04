@@ -1,36 +1,19 @@
 <div class="pagination-example my-8">
     <nav class="pagination" id="pagination-ID-long-1"
-        aria-label="Pagineringseksempel med 12 sider">
+        aria-label="Pagineringseksempel med 12 sider, side 1 valgt">
+        <a href="#"
+            class="button button-arrow button-first hidden"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span
+                class="sr-only">Første side</span></a>
         <a href="#" class="button button-arrow button-previous hidden"
             aria-label="Forrige side">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Forrige
+            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span
+                class="pagination-nav-link">Forrige</span>
         </a>
-        <div class="pagination__dropdown">
-            <label class="sr-only"
-                for='id="pagination-ID-long-1-options"'>Vælg en side og
-                skift til den med det samme.</label>
-            <select class="pagination-dropdown"
-                name='id="pagination-ID-long-1-options"'
-                id='id="pagination-ID-long-1-options"'>
-                <option value=page1 selected>1</option>
-                <option value=page2>2</option>
-                <option value=page3>3</option>
-                <option value=page4>4</option>
-                <option value=page5>5</option>
-                <option value=page6>6</option>
-                <option value=page7>7</option>
-                <option value=page8>8</option>
-                <option value=page9>9</option>
-                <option value=page10>10</option>
-                <option value=page11>11</option>
-                <option value=page12>12</option>
-            </select>
-            <span class="totalpages-text" aria-hidden="true">af 12</span>
-        </div>
+        <span class="pagination-mobile">Side 1 af 12</span>
         <ul class="pagination__items">
 
             <li class="pagination-item pagination-number">
-                <a href="#" class="current-page" aria-label='Side 1'
+                <a href="#" class="button current-page" aria-label='Side 1'
                     aria-current="page">1</a>
             </li>
 
@@ -65,256 +48,27 @@
         </ul>
         <a href="#" class="button button-arrow button-next"
             aria-label="Næste side">
-            Næste<svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            <span
+                class="pagination-nav-link">Næste</span><svg class="icon-svg" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
         </a>
-    </nav>
-</div>
-
-<div class="pagination-example my-8">
-    <nav class="pagination" id="pagination-ID-long-2"
-        aria-label="Pagineringseksempel med 12 sider">
-        <a href="#" class="button button-arrow button-previous"
-            aria-label="Forrige side">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Forrige
-        </a>
-        <div class="pagination__dropdown">
-            <label class="sr-only"
-                for='id="pagination-ID-long-2-options"'>Vælg en side og
-                skift til den med det samme.</label>
-            <select class="pagination-dropdown"
-                name='id="pagination-ID-long-2-options"'
-                id='id="pagination-ID-long-2-options"'>
-                <option value=page1>1</option>
-                <option value=page2 selected>2</option>
-                <option value=page3>3</option>
-                <option value=page4>4</option>
-                <option value=page5>5</option>
-                <option value=page6>6</option>
-                <option value=page7>7</option>
-                <option value=page8>8</option>
-                <option value=page9>9</option>
-                <option value=page10>10</option>
-                <option value=page11>11</option>
-                <option value=page12>12</option>
-            </select>
-            <span class="totalpages-text" aria-hidden="true">af 12</span>
-        </div>
-        <ul class="pagination__items">
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 1'>1</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="current-page" aria-label='Side 2'
-                    aria-current="page">2</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 3'>3</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 4'>4</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 5'>5</a>
-            </li>
-
-            <li class="pagination-item pagination-overflow"
-                role="presentation">
-                <span>...</span>
-            </li>
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Sidste side, side 12'>12</a>
-            </li>
-        </ul>
-        <a href="#" class="button button-arrow button-next"
-            aria-label="Næste side">
-            Næste<svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-        </a>
-    </nav>
-</div>
-
-<div class="pagination-example my-8">
-    <nav class="pagination" id="pagination-ID-long-3"
-        aria-label="Pagineringseksempel med 12 sider">
-        <a href="#" class="button button-arrow button-previous"
-            aria-label="Forrige side">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Forrige
-        </a>
-        <div class="pagination__dropdown">
-            <label class="sr-only"
-                for='id="pagination-ID-long-3-options"'>Vælg en side og
-                skift til den med det samme.</label>
-            <select class="pagination-dropdown"
-                name='id="pagination-ID-long-3-options"'
-                id='id="pagination-ID-long-3-options"'>
-                <option value=page1>1</option>
-                <option value=page2>2</option>
-                <option value=page3 selected>3</option>
-                <option value=page4>4</option>
-                <option value=page5>5</option>
-                <option value=page6>6</option>
-                <option value=page7>7</option>
-                <option value=page8>8</option>
-                <option value=page9>9</option>
-                <option value=page10>10</option>
-                <option value=page11>11</option>
-                <option value=page12>12</option>
-            </select>
-            <span class="totalpages-text" aria-hidden="true">af 12</span>
-        </div>
-        <ul class="pagination__items">
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 1'>1</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 2'>2</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="current-page" aria-label='Side 3'
-                    aria-current="page">3</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 4'>4</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 5'>5</a>
-            </li>
-
-            <li class="pagination-item pagination-overflow"
-                role="presentation">
-                <span>...</span>
-            </li>
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Sidste side, side 12'>12</a>
-            </li>
-        </ul>
-        <a href="#" class="button button-arrow button-next"
-            aria-label="Næste side">
-            Næste<svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-        </a>
-    </nav>
-</div>
-
-<div class="pagination-example my-8">
-    <nav class="pagination" id="pagination-ID-long-4"
-        aria-label="Pagineringseksempel med 12 sider">
-        <a href="#" class="button button-arrow button-previous"
-            aria-label="Forrige side">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Forrige
-        </a>
-        <div class="pagination__dropdown">
-            <label class="sr-only"
-                for='id="pagination-ID-long-4-options"'>Vælg en side og
-                skift til den med det samme.</label>
-            <select class="pagination-dropdown"
-                name='id="pagination-ID-long-4-options"'
-                id='id="pagination-ID-long-4-options"'>
-                <option value=page1>1</option>
-                <option value=page2>2</option>
-                <option value=page3>3</option>
-                <option value=page4 selected>4</option>
-                <option value=page5>5</option>
-                <option value=page6>6</option>
-                <option value=page7>7</option>
-                <option value=page8>8</option>
-                <option value=page9>9</option>
-                <option value=page10>10</option>
-                <option value=page11>11</option>
-                <option value=page12>12</option>
-            </select>
-            <span class="totalpages-text" aria-hidden="true">af 12</span>
-        </div>
-        <ul class="pagination__items">
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 1'>1</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 2'>2</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 3'>3</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="current-page" aria-label='Side 4'
-                    aria-current="page">4</a>
-            </li>
-
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 5'>5</a>
-            </li>
-
-            <li class="pagination-item pagination-overflow"
-                role="presentation">
-                <span>...</span>
-            </li>
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Sidste side, side 12'>12</a>
-            </li>
-        </ul>
-        <a href="#" class="button button-arrow button-next"
-            aria-label="Næste side">
-            Næste<svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-        </a>
+        <a href="#"
+            class="button button-arrow button-last"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span
+                class="sr-only">Sidste side</span></a>
     </nav>
 </div>
 
 <div class="pagination-example my-8">
     <nav class="pagination" id="pagination-ID-long-5"
-        aria-label="Pagineringseksempel med 12 sider">
+        aria-label="Pagineringseksempel med 12 sider, side 5 valgt">
+        <a href="#"
+            class="button button-arrow button-first"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span
+                class="sr-only">Første side</span></a>
         <a href="#" class="button button-arrow button-previous"
             aria-label="Forrige side">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Forrige
+            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span
+                class="pagination-nav-link">Forrige</span>
         </a>
-        <div class="pagination__dropdown">
-            <label class="sr-only"
-                for='id="pagination-ID-long-5-options"'>Vælg en side og
-                skift til den med det samme.</label>
-            <select class="pagination-dropdown"
-                name='id="pagination-ID-long-5-options"'
-                id='id="pagination-ID-long-5-options"'>
-                <option value=page1>1</option>
-                <option value=page2>2</option>
-                <option value=page3>3</option>
-                <option value=page4>4</option>
-                <option value=page5 selected>5</option>
-                <option value=page6>6</option>
-                <option value=page7>7</option>
-                <option value=page8>8</option>
-                <option value=page9>9</option>
-                <option value=page10>10</option>
-                <option value=page11>11</option>
-                <option value=page12>12</option>
-            </select>
-            <span class="totalpages-text" aria-hidden="true">af 12</span>
-        </div>
+        <span class="pagination-mobile">Side 5 af 12</span>
         <ul class="pagination__items">
             <li class="pagination-item pagination-number">
                 <a href="#" class="button button-secondary"
@@ -329,7 +83,7 @@
                     aria-label='Side 4'>4</a>
             </li>
             <li class="pagination-item pagination-number">
-                <a href="#" class="current-page" aria-label='Side 5'
+                <a href="#" class="button current-page" aria-label='Side 5'
                     aria-current="page">5</a>
             </li>
             <li class="pagination-item pagination-number">
@@ -347,106 +101,27 @@
         </ul>
         <a href="#" class="button button-arrow button-next"
             aria-label="Næste side">
-            Næste<svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            <span
+                class="pagination-nav-link">Næste</span><svg class="icon-svg" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
         </a>
+        <a href="#"
+            class="button button-arrow button-last"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span
+                class="sr-only">Sidste side</span></a>
     </nav>
 </div>
 
 <div class="pagination-example my-8">
-    <nav class="pagination" id="pagination-ID-long-6"
-        aria-label="Pagineringseksempel med 12 sider">
+    <nav class="pagination" id="pagination-ID-long-12"
+        aria-label="Pagineringseksempel med 12 sider, side 12 valgt">
+        <a href="#"
+            class="button button-arrow button-first"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span
+                class="sr-only">Første side</span></a>
         <a href="#" class="button button-arrow button-previous"
             aria-label="Forrige side">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Forrige
+            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span
+                class="pagination-nav-link">Forrige</span>
         </a>
-        <div class="pagination__dropdown">
-            <label class="sr-only"
-                for='id="pagination-ID-long-6-options"'>Vælg en side og
-                skift til den med det samme.</label>
-            <select class="pagination-dropdown"
-                name='id="pagination-ID-long-6-options"'
-                id='id="pagination-ID-long-6-options"'>
-                <option value=page1>1</option>
-                <option value=page2>2</option>
-                <option value=page3>3</option>
-                <option value=page4>4</option>
-                <option value=page5>5</option>
-                <option value=page6>6</option>
-                <option value=page7>7</option>
-                <option value=page8 selected>8</option>
-                <option value=page9>9</option>
-                <option value=page10>10</option>
-                <option value=page11>11</option>
-                <option value=page12>12</option>
-            </select>
-            <span class="totalpages-text" aria-hidden="true">af 12</span>
-        </div>
-        <ul class="pagination__items">
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 1'>1</a>
-            </li>
-            <li class="pagination-item pagination-overflow"
-                role="presentation">
-                <span>...</span>
-            </li>
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 7'>7</a>
-            </li>
-            <li class="pagination-item pagination-number">
-                <a href="#" class="current-page" aria-label='Side 8'
-                    aria-current="page">8</a>
-            </li>
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 9'>9</a>
-            </li>
-            <li class="pagination-item pagination-overflow"
-                role="presentation">
-                <span>...</span>
-            </li>
-            <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Sidste side, side 12'>12</a>
-            </li>
-        </ul>
-        <a href="#" class="button button-arrow button-next"
-            aria-label="Næste side">
-            Næste<svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-        </a>
-    </nav>
-</div>
-
-<div class="pagination-example my-8">
-    <nav class="pagination" id="pagination-ID-long-7"
-        aria-label="Pagineringseksempel med 12 sider">
-        <a href="#" class="button button-arrow button-previous"
-            aria-label="Forrige side">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Forrige
-        </a>
-        <div class="pagination__dropdown">
-            <label class="sr-only"
-                for='id="pagination-ID-long-7-options"'>Vælg en side og
-                skift til den med det samme.</label>
-            <select class="pagination-dropdown"
-                name='id="pagination-ID-long-7-options"'
-                id='id="pagination-ID-long-7-options"'>
-                <option value=page1>1</option>
-                <option value=page2>2</option>
-                <option value=page3>3</option>
-                <option value=page4>4</option>
-                <option value=page5>5</option>
-                <option value=page6>6</option>
-                <option value=page7>7</option>
-                <option value=page8>8</option>
-                <option value=page9 selected>9</option>
-                <option value=page10>10</option>
-                <option value=page11>11</option>
-                <option value=page12>12</option>
-            </select>
-            <span class="totalpages-text" aria-hidden="true">af 12</span>
-        </div>
+        <span class="pagination-mobile">Side 12 af 12</span>
         <ul class="pagination__items">
             <li class="pagination-item pagination-number">
                 <a href="#" class="button button-secondary"
@@ -463,8 +138,8 @@
             </li>
 
             <li class="pagination-item pagination-number">
-                <a href="#" class="current-page" aria-label='Side 9'
-                    aria-current="page">9</a>
+                <a href="#" class="button button-secondary"
+                    aria-label='Side 9'>9</a>
             </li>
 
             <li class="pagination-item pagination-number">
@@ -478,13 +153,18 @@
             </li>
 
             <li class="pagination-item pagination-number">
-                <a href="#" class="button button-secondary"
-                    aria-label='Side 12'>12</a>
+                <a href="#" class="button current-page"
+                    aria-label='Side 12' aria-current="page">12</a>
             </li>
+
         </ul>
-        <a href="#" class="button button-arrow button-next"
+        <a href="#" class="button button-arrow button-next hidden"
             aria-label="Næste side">
-            Næste<svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            <span
+                class="pagination-nav-link">Næste</span><svg class="icon-svg" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
         </a>
+        <a href="#"
+            class="button button-arrow button-last hidden"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span
+                class="sr-only">Sidste side</span></a>
     </nav>
 </div>

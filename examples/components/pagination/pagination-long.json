@@ -3,38 +3,21 @@
         "items": [
         {
             "id": "pagination-ID-long-1",
+            "ariaLabel": "Pagineringseksempel med 12 sider, side 1 valgt",
             "totalPages": 12,
             "currentPage": 1
         },
         {
-            "id": "pagination-ID-long-2",
-            "totalPages": 12,
-            "currentPage": 2
-        },
-        {
-            "id": "pagination-ID-long-3",
-            "totalPages": 12,
-            "currentPage": 3
-        },
-        {
-            "id": "pagination-ID-long-4",
-            "totalPages": 12,
-            "currentPage": 4
-        },
-        {
             "id": "pagination-ID-long-5",
+            "ariaLabel": "Pagineringseksempel med 12 sider, side 5 valgt",
             "totalPages": 12,
             "currentPage": 5
         },
         {
-            "id": "pagination-ID-long-6",
+            "id": "pagination-ID-long-12",
+            "ariaLabel": "Pagineringseksempel med 12 sider, side 12 valgt",
             "totalPages": 12,
-            "currentPage": 8
-        },
-        {
-            "id": "pagination-ID-long-7",
-            "totalPages": 12,
-            "currentPage": 9
+            "currentPage": 12
         }
       ]
     }

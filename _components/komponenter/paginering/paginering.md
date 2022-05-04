@@ -11,6 +11,9 @@ tags:
 - paginering
 - pagination
 - sidevælger
+subnav:
+- text: Eksempler på paginering
+  href: "#eksempler"
 ---
 {% include code/preview-box.html component="pagination" title="Eksempel på paginering" link=true code="/kode/komponenter/paginering/" %}
 
@@ -53,5 +56,17 @@ Hvis brugeren står på første side vises "Forrige" ikke. Hvis brugeren står p
 ### Responsiv
 Hold paginering på en enkelt linje.
 
-På små skærme benyttes Forrige og Næste-links. De enkelte sider pakkes sammen i en drop down. Husk at fortælle
-brugeren, hvor mange sider der er totalt.
+På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktuelle side og det samlede sideantal vises i midten.
+
+{:#eksempler}
+## Eksempler på paginering
+
+{:.h4}
+### 7 eller færre sider
+
+{% include code/preview-box.html component="pagination-short" title="Eksempel på paginering med 7 sider" link="true" %}
+
+{:.h4}
+### 8 eller flere sider
+
+{% include code/preview-box.html component="pagination-long" title="Eksempel på paginering med 12 sider" link="true" %}
