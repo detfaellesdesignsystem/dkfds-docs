@@ -58,6 +58,12 @@ Hold paginering på en enkelt linje.
 
 På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktuelle side og det samlede sideantal vises i midten.
 
+{:.h4}
+### Referencer
+
+{:.nobullet-list}
+- <a href="https://designsystem.digital.gov/components/pagination/" class="icon-link">USWDS om paginering<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
 {:#eksempler}
 ## Eksempler på paginering
 
