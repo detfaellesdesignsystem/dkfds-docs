@@ -146,7 +146,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fjernet styling på <a href="/komponenter/badges/">badges</a>, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.
 - Grå baggrundsfarve på <a href="/komponenter/drop-down/">dropdown-menu</a> i Firefox er ændret til hvid.
 - <a href="/komponenter/headers/">Header komponent</a>: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.
-- Lille fejl i border på <a href="/komponenter/tables/#zebralinjer">tabeller</a> er fikset.
+- Lille fejl i border på <a href="/komponenter/tables/">tabeller</a> er fikset.
 - <span class="badge badge-info badge-small mr-3">Change</span> Bredde på <a href="/komponenter/overflowmenu/">overflow menu</a> ændret til at fylde hele skærmens bredde på små skærme.
 
 {:#version-7-5-3 .mb-0}
