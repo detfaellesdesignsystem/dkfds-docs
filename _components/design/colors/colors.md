@@ -231,7 +231,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
   <div class="col col-12 col-md-3">
     <div class="color bg-modal"></div>
-    <div class="color-text-label"><span class="color-hex">rgba(0, 0, 0, 0.5</span><span>$background-modal</span></div>
+    <div class="color-text-label"><span class="color-hex">rgba(0, 0, 0, 0.5)</span><span>$background-modal</span></div>
   </div>
 </div>
 
