@@ -17,9 +17,9 @@
     "helptext": "Fx: 05 12 2018",
     "errorMessage": "Datoen kan ikke være i fremtiden",
     "values": {
-      "dayValue": "01",
-      "monthValue": "12",
-      "yearValue": "2076"
+      "day": "01",
+      "month": "12",
+      "year": "2076"
     }
   },
   "textinput_example": {

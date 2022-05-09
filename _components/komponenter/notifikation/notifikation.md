@@ -20,6 +20,8 @@ subnav:
   href: "#fejl"
 - text: Information
   href: "#information"
+- text: Uden brødtekst
+  href: "#uden-brødtekst"
 ---
 
 Til forskel fra <a href="/komponenter/beskeder/">Beskeder (alerts)</a> som er placeret som en del af sideindholdet, placeres notifikationer ovenpå selve siden.
