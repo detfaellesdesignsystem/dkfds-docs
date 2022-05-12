@@ -61,11 +61,11 @@
     "postcss-csso": "^5.0.0",
     "postcss-discard-comments": "^5.0.3",
     "postcss-loader": "^6.2.1",
-    "puppeteer": "^11.0.0",
+    "puppeteer": "^14.0.0",
     "sass": "^1.49.7",
     "sass-loader": "^12.6.0",
     "terser-webpack-plugin": "^5.3.1",
-    "webpack": "^5.69.0",
+    "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
   }
 }
