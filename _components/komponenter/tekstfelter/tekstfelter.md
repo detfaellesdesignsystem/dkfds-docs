@@ -1,8 +1,10 @@
 ---
-permalink: "/komponenter/felter/"
+permalink: "/komponenter/tekstfelter/"
+redirect_from:
+- /komponenter/felter/
 layout: styleguide
 type: component
-title: Felter
+title: Tekstfelter
 tags:
 - tekstfelt
 - input
@@ -23,7 +25,7 @@ tags:
 - feltbredde
 - låst felt
 category: Komponenter_category
-description: Felt til indtastning af information i form af bogstaver, tal og en kombination
+description: Tekstfelter til indtastning af information i form af bogstaver, tal og en kombination
   af begge.
 subcategory: Komponenter
 anchor: true
@@ -43,8 +45,8 @@ subnav:
 - text: Feltbredde
   href: "#feltbredde"
 component: text-input
-componentTitle: Eksempel på tekst felter
-componentCode: "/kode/komponenter/felter/"
+componentTitle: Eksempel på tekstfelter
+componentCode: "/kode/komponenter/tekstfelter/"
 
 ---
 {:.h3 #retningslinjer}
@@ -52,7 +54,7 @@ componentCode: "/kode/komponenter/felter/"
 
 Brug til input af information i form af bogstaver og tal eller en kombination af begge.
 
-Brug felter når det er nemmere for brugeren at skrive information end at vælge den på anden vis. 
+Brug tekstfelter når det er nemmere for brugeren at skrive information end at vælge den på anden vis. 
 
 Brug når brugeren skal kunne copy paste information ind i en formular.
 

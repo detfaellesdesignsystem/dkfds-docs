@@ -1,13 +1,15 @@
 ---
-permalink: /kode/komponenter/felter/
+permalink: /kode/komponenter/tekstfelter/
 parentlink: /kode/komponenter/
-title: Felter
+redirect_from:
+- /kode/komponenter/felter/
+title: Tekstfelter
 layout: styleguide
 type: component
 category: Kode_category
 tags:
 subcategory: Kode
-description: "Dokumentation på implementering af felter."
+description: "Dokumentation på implementering af tekstfelter."
 anchor: true
 subnav:
 - text: Felt med fejlmeddelelse
@@ -30,8 +32,8 @@ subnav:
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/felter/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/felter/">Eksempler</a></li>
+    <li><a href="/komponenter/tekstfelter/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/tekstfelter/">Eksempler</a></li>
 </ul>
 
 ## Installation

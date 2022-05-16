@@ -179,14 +179,14 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">29-09-2021</span></div>
 
 - <a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a>
-- <a href="/komponenter/felter/#prefix-og-suffix">Prefix og suffix på felter</a>
+- <a href="/komponenter/tekstfelter/#prefix-og-suffix">Prefix og suffix på tekstfelter</a>
 - Småtilpasninger i designet på <a href="/komponenter/modal/">modalvinduer</a>
 - Opdateret design på <a href="/komponenter/datovaelger/">datovælger</a>
 - Tilføjet 72px i bunden af <a href="/komponenter/footers/">footer</a>
 - Tilføjet styling og retningslinjer for <a href="/komponenter/tables/#sortering-i-tabeller">sortering i tabeller</a>
 - Tilføjet eksempel og retningslinjer på <a href="/komponenter/tables/#søgning-i-tabeller">søgning i tabeller</a>
 - Tilføjet en tykkere border i bunden af <a href="/komponenter/knapper/">knapper</a>
-- Opdateret <a href="/komponenter/felter/#obligatoriske-og-frivillige-felter">retningslinjer for obligatoriske og frivillige felter</a>
+- Opdateret <a href="/komponenter/tekstfelter/#obligatoriske-og-frivillige-felter">retningslinjer for obligatoriske og frivillige tekstfelter</a>
 - Tilføjet <a href="/design/ikoner/?s=sorter">ikoner til sortering i tabel</a>
 - Tilføjet variant til <a href="/komponenter/overflowmenu/#sortering">overflow menu til brug ved sortering</a>
 - Ændret ikon i <a href="/komponenter/detaljer/">detalje komponent</a>
@@ -243,7 +243,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Fikset fejl, hvor border ved aktivt menupunkt i <a href="/komponenter/headers/">header</a> hopper ved hover.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Fikset fejl i Internet Explorer, hvor <a href="/komponenter/felter/#feltbredde">feltbredde i tekstfelter</a> er defineret ved antal karakterer bliver ignoreret.
+- Fikset fejl i Internet Explorer, hvor <a href="/komponenter/tekstfelter/#feltbredde">feltbredde i tekstfelter</a> er defineret ved antal karakterer bliver ignoreret.
 - Luk <a href="/komponenter/overflowmenu/">overflow menu</a> i <a href="/komponenter/headers/">header</a> ved klik uden for menuen.
 - Tilføjet ARIA attributter i <a href="/komponenter/trinindikatorer/">trinindikator</a> for bedre tilgængelighed
 

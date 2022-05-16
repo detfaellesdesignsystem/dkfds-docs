@@ -80,7 +80,6 @@ Komponenter_category:
   - href: /komponenter/faneblad/
   - href: /komponenter/fejlmeddelelser/
   - href: /komponenter/fejlopsummering/
-  - href: /komponenter/felter/
   - href: /komponenter/footers/
   - href: /komponenter/formular/
   - href: /komponenter/funktionslink/
@@ -99,6 +98,7 @@ Komponenter_category:
   - href: /komponenter/tilbage-link/
   - href: /komponenter/tables/
   - href: /komponenter/tags/
+  - href: /komponenter/tekstfelter/
   - href: /komponenter/textarea/
   - href: /komponenter/tjekboks/
   - href: /komponenter/toggle/
@@ -137,7 +137,6 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/faneblad/
 - href: /kode/komponenter/fejlmeddelelser/
 - href: /kode/komponenter/fejlopsummering/
-- href: /kode/komponenter/felter/
 - href: /kode/komponenter/footers/
 - href: /kode/komponenter/formular/
 - href: /kode/komponenter/funktionslink/
@@ -156,6 +155,7 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/tilbage-link/
 - href: /kode/komponenter/tables/
 - href: /kode/komponenter/tags/
+- href: /kode/komponenter/tekstfelter/
 - href: /kode/komponenter/textarea/
 - href: /kode/komponenter/tjekboks/
 - href: /kode/komponenter/tooltip/
