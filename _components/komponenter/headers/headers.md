@@ -35,7 +35,7 @@ En eventuel overordnet navigation (topnavigation) skal også placeres i headeren
 
 Anvend ikke headeren andre steder i løsningen end i toppen af siden. 
 
-Brug ikke topnavigationen som faneblad, anvend da <a href="/komponenter/faneblad/">fanebladskomponenten</a>. 
+Brug ikke topnavigationen som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>. 
 
 {:.h3}
 ## Vejledning

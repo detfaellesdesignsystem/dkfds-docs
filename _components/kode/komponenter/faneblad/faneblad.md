@@ -1,7 +1,9 @@
 ---
-permalink: /kode/komponenter/faneblad/
+permalink: /kode/komponenter/faneblade/
 parentlink: /kode/komponenter/
-title: Faneblade
+redirect_from:
+- /kode/komponenter/faneblad/
+title: Faneblade (Tabs)
 layout: styleguide
 type: component
 category: Kode_category
@@ -14,8 +16,8 @@ subcategory: Kode
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/faneblad/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/faneblad/">Eksempler</a></li>
+    <li><a href="/komponenter/faneblade/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/faneblade/">Eksempler</a></li>
 </ul>
 
 ## Installation

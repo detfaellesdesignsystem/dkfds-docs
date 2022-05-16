@@ -1,7 +1,7 @@
 ---
 permalink: /kode/komponenter/textarea/
 parentlink: /kode/komponenter/
-title: Tekstområde
+title: Tekstområde (Textarea)
 layout: styleguide
 type: component
 category: Kode_category

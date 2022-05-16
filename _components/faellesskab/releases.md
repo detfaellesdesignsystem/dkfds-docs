@@ -295,7 +295,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/104" class="icon-link">issue #104 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Understøttelse af Tippy.js v6.1.0
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/105" class="icon-link">issue #105 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Tilpasset CSS til faneblad, så der ikke længere kommer fejl ved import af dkfds scss i angular.
+- Tilpasset CSS til faneblade, så der ikke længere kommer fejl ved import af dkfds scss i angular.
 
 {:#version-6-0-0 .mb-0}
 ## Version 6.0.0
@@ -308,7 +308,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Rettet fejl med border i tabel.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet mulighed for styling af <a href="/design/typografi/overskrifter/#overskrift-som-link">links i overskrifter</a>.
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblad/" title="Læs mere om faneblads-komponenten">Fanebladskomponenten</a> er ændret i HTML og JavaScript.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblade/" title="Læs mere om faneblade">Faneblade</a> er ændret i HTML og JavaScript.
 - Ændret aktive farve på undermenupunkt i <a href="/komponenter/venstremenu/">venstremenu</a>
 - Tilføjet retningslinjer for <a href="/komponenter/funktionslink/">funktionslink</a>, <a href="/komponenter/tilbage-link/">tilbage-link</a> og <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a>.
 - <span class="badge badge-info badge-small mr-3">Change</span> Tilføjet korrekte ARIA attributer på <a href="/kode/komponenter/venstremenu/" title="Se koden til venstremenuen">venstremenuen</a>, <a href="/kode/komponenter/headers/" title="Se koden til mobilmenu og headermenu">mobilmenu og headermenuen</a>.
@@ -373,8 +373,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/venstremenu/">Venstremenuen</a> har fået nyt design.
 <span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/venstremenu/">venstremenu-komponenten</a>.</span>
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblad/">Faneblads-komponenten</a> er blevet redefineret.
-<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblad/">faneblads-komponenten</a>.</span>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblade/">Faneblade</a> er blevet redefineret.
+<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblade/">faneblade</a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Modalvinduer-komponenten er blevet flyttet til plugins.
@@ -440,8 +440,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fjernet tekstmarkøren på et read only felt i Internet Explorer.
 - Tilføjet eksempler på advarsel, når man forlader siden i eksempelløsningerne.
 - Tilføjet afstand af tags, når de fylder flere linjer.
-- Fjernet primærfarve på teksten i faneblad ved hover.
-- Fikset fokusramme på faneblad.
+- Fjernet primærfarve på teksten i faneblade ved hover.
+- Fikset fokusramme på faneblade.
 - Fikset fejl i modalvindue, hvor overskriften blev overlappet af luk knappen.
 - <span class="badge badge-info badge-small mr-3">Change</span> Log ud skal nu hedde Log af.
 
@@ -466,7 +466,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet højde på cards
 - Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.
-- Fikset fokus border på faneblad
+- Fikset fokus border på faneblade
 
 <div class="alert alert-info" role="alert"
     aria-label="Der vises fremhævet information">
