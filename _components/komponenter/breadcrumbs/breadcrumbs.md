@@ -29,11 +29,11 @@ Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbag
 {:.h3}
 ## Vejledning
 
-Overvej nøje om du har brug for at anvende en brødkrumme, hvis du allerede bruger andre navigationskomponenter, der også indikerer, hvor i strukturen brugeren er, som fx sidenavigation (venstremenu).
+Overvej nøje om du har brug for at anvende en brødkrumme, hvis du allerede bruger andre navigationskomponenter, der også indikerer, hvor i strukturen brugeren er, som fx venstremenu.
 
 Overvej nøje om du skal bruge brødkrummer, hvis der er færre end to niveauer.
 
-Brødkrummer bør ikke erstatte top- eller sidenavigation.
+Brødkrummer bør ikke erstatte top- eller venstremenu.
 
 Brødkrummer skal vise den aktuelle placering i stedets hierarkiske struktur, ikke brugerens (tilfældige) færden rundt på webstedet. Hvis der er flere veje igennem din løsning til samme side, skal brødkrummen kun vise en enkelt vej (sti).
 

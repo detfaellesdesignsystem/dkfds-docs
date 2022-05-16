@@ -37,7 +37,7 @@ Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt su
 
 <h3 class="h5">Række 3 (frivillig)</h3>
 
-Sidenavigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
+Navigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
 
 <h3 class="h5">Række 4 (frivillig)</h3>
 

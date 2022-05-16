@@ -1,10 +1,12 @@
 ---
-permalink: /kode/komponenter/sidenav/
+permalink: /kode/komponenter/venstremenu/
 parentlink: /kode/komponenter/
-title: Sidenavigation
+redirect_from:
+- /kode/komponenter/sidenav/
+title: venstremenu
 layout: styleguide
 type: component
-description: "Dokumentation på implementering af sidenavigation."
+description: "Dokumentation på implementering af venstremenu."
 tags:
 category: Kode_category
 subcategory: Kode
@@ -14,8 +16,8 @@ subcategory: Kode
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/sidenav/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/sidenav/">Eksempler</a></li>
+    <li><a href="/komponenter/venstremenu/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/venstremenu/">Eksempler</a></li>
 </ul>
 
 ## Installation
@@ -35,8 +37,8 @@ Hvis en undermenu består af links til områder på den aktuelle side tilføjes 
 
 {% include code/syntax.html component="sidenav-anchor" link="true" %}
 
-#### Tilføj ikon og information i sidenavigation
+#### Tilføj ikon og information i venstremenu
 
-- For at tilføje et ikon til et punkt i sidenavigationen bruges klassen `sidenav-icon-before`.
-- For at tilføje information til et punkt i sidenavigationen bruges klassen `sidenav-information`.
-- Ikoner og informationer kan også sammensættes i én sidenavigation.
+- For at tilføje et ikon til et punkt i venstremenuen bruges klassen `sidenav-icon-before`.
+- For at tilføje information til et punkt i venstremenuen bruges klassen `sidenav-information`.
+- Ikoner og informationer kan også sammensættes i én venstremenu.

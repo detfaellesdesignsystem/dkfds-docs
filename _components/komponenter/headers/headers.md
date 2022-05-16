@@ -77,7 +77,7 @@ Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt su
 {:.h4}
 ### Række 3 (frivillig)
 
-Sidenavigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
+Navigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
 
 {:.h4}
 ### Række 4 (frivillig)

@@ -43,7 +43,7 @@ Hvis man gør brug af en trinindikator i forbindelse med en <a href="/komponente
 
 ## Varianter
 
-Nedenstående varianter implementeres i et grid på samme måde som <a href="/komponenter/sidenav/">sidenavigation</a>, således at komponenten vises i en kolonne til venstre for indholdet.
+Nedenstående varianter implementeres i et grid på samme måde som <a href="/komponenter/venstremenu/">venstremenu</a>, således at komponenten vises i en kolonne til venstre for indholdet.
 
 {:#responsiv}
 ### Responsiv
