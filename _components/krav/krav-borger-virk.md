@@ -28,7 +28,7 @@ Brug eller imiter det Fælles Designsystem.
 - Du skal anvende/efterligne <a href="/kode/implementering/">stylesheetet</a> som anvist i designsystemet
 - <a href="/komponenter/">Komponenter</a> og <a href="/kode/plugins/">plugins</a> skal være anvendt som anvist i designsystemet
 
-Det anbefales desuden, at løsningen har en <a href="/komponenter/footers/">footer</a>, der er bygget som anvist i designsystemet.
+Det anbefales desuden, at løsningen har en <a href="/komponenter/footer/">footer</a>, der er bygget som anvist i designsystemet.
 
 <a href="/design/designtjek/">Designtjekliste</a>
 

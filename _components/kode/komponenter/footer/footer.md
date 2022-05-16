@@ -1,7 +1,9 @@
 ---
-permalink: /kode/komponenter/footers/
+permalink: /kode/komponenter/footer/
+redirect_from:
+- /kode/komponenter/footers/
 parentlink: /kode/komponenter/
-title: Footers
+title: Footer
 layout: styleguide
 type: component
 category: Kode_category
@@ -24,7 +26,7 @@ subnav:
 
 ## Eksempler og retningslinjer
 
-<a href="/komponenter/footers/">Eksempler</a>
+<a href="/komponenter/footer/">Eksempler</a>
 
 ## Installation
 
@@ -43,7 +45,7 @@ Man kan indsætte en vandret liste, der er defineret med klasserne `unstyled-lis
 
 Man kan indsætte et <a href="/kode/grid/">grid</a> med 4 kolonner. Man behøver ikke indsætte indhold i alle kolonner.
 
-<a href="/komponenter/footers/#tre-kolonner">Se eksempler på forskellige sammensætninger</a>.
+<a href="/komponenter/footer/#tre-kolonner">Se eksempler på forskellige sammensætninger</a>.
 
 ### Links
 

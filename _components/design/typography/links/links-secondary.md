@@ -21,7 +21,7 @@ lead: Sekundære links bruges til at skabe en visuel forskel på links til funkt
 
 - <a href="/komponenter/funktionslink/">Funktionslink</a>
 - <a href="/komponenter/broedkrumme/">Brødkrumme</a>
-- <a href="/komponenter/footers/">Footer</a> links
+- <a href="/komponenter/footer/">Footer</a> links
 
 ### Anvendes ikke til
 

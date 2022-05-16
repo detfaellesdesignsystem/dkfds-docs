@@ -1,7 +1,9 @@
 ---
-permalink: /komponenter/footers/
+permalink: /komponenter/footer/
+redirect_from:
+- /kode/komponenter/footers/
 layout: styleguide
-title: Footers
+title: Footer
 category: Komponenter_category
 subcategory: Komponenter
 description: "Du kan bruge en footer til at guide brugere, som når til sidens bund videre."
@@ -19,7 +21,7 @@ subnav:
   href: '#logo'
 ---
 
-{% include code/preview-image.html component="footer-simple" code="/kode/komponenter/footers/" %}
+{% include code/preview-image.html component="footer-simple" code="/kode/komponenter/footer/" %}
 
 {:.h3}
 ## Vejledning
@@ -32,7 +34,7 @@ Tag et kig på <a href="/eksempler/selvbetjeningsloesninger/">eksempelløsninger
 ### Referencer
 
 {:.nobullet-list}
-- <a href="https://www.nngroup.com/articles/footers/" class="icon-link">Therese Fessenden: Footers 101: Design Patterns and When to Use Each (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/footer/" class="icon-link">Therese Fessenden: Footers 101: Design Patterns and When to Use Each (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.interaction-design.org/literature/article/how-to-implement-sitemap-footers-to-keep-users-going" class="icon-link">Priscilla Esser: How to Implement Sitemap Footers to Keep Users Going (2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 {:.h3 #eksempelloesninger}

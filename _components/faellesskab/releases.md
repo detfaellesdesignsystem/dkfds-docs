@@ -182,7 +182,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <a href="/komponenter/tekstfelter/#prefix-og-suffix">Prefix og suffix på tekstfelter</a>
 - Småtilpasninger i designet på <a href="/komponenter/modal/">modalvinduer</a>
 - Opdateret design på <a href="/komponenter/datovaelger/">datovælger</a>
-- Tilføjet 72px i bunden af <a href="/komponenter/footers/">footer</a>
+- Tilføjet 72px i bunden af <a href="/komponenter/footer/">footer</a>
 - Tilføjet styling og retningslinjer for <a href="/komponenter/tables/#sortering-i-tabeller">sortering i tabeller</a>
 - Tilføjet eksempel og retningslinjer på <a href="/komponenter/tables/#søgning-i-tabeller">søgning i tabeller</a>
 - Tilføjet en tykkere border i bunden af <a href="/komponenter/knapper/">knapper</a>
