@@ -16,11 +16,11 @@
 ================================================== -->
   
 
-<title>Overflow menu (Kode) | Det Fælles Designsystem</title>
-<meta property="og:title" content="Overflow menu (Kode) | Det Fælles Designsystem">
+<title>Formular | Det Fælles Designsystem</title>
+<meta property="og:title" content="Formular | Det Fælles Designsystem">
 
-<meta name="description" content="Dokumentation på implementering af overflow menu.">
-<meta property="og:description" content="Dokumentation på implementering af overflow menu.">
+<meta name="description" content="Se eksempler på opsætning af en formular med forskellige felttyper.">
+<meta property="og:description" content="Se eksempler på opsætning af en formular med forskellige felttyper.">
 
 
 
@@ -60,7 +60,7 @@
 </noscript>
 
   </head>
-  <body class="page-overflow-menu layout-styleguide">
+  <body class="page-formular layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -314,9 +314,9 @@
 
 
 
-<li class="" role="none">
+<li class="current" role="none">
 <!-- Do not render subnavs-->
-  <a href="/eksempler/" role="menuitem" 
+  <a href="/eksempler/" role="menuitem" aria-current="page"
     class="nav-link">
     <span>Eksempler</span>
   </a>
@@ -335,9 +335,9 @@
 
 
 
-<li class="current" role="none">
+<li class="" role="none">
 <!-- Do not render subnavs-->
-  <a href="/kode/" role="menuitem" aria-current="page"
+  <a href="/kode/" role="menuitem" 
     class="nav-link">
     <span>Kode</span>
   </a>
@@ -1809,7 +1809,7 @@
 
 
 
-<li class="" role="none">
+<li class="current" role="none">
 <!--Do render subnavs-->
 
   
@@ -1819,10 +1819,10 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="true"  >
         <span>Eksempler</span>
       </button>
-      <div role="menu" aria-label="Eksempler" class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
+      <div role="menu" aria-label="Eksempler" class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="false">
         <ul class="overflow-list" role="menu">
           
 
@@ -1871,7 +1871,7 @@
     
 
 
-<li class="  " role="none">
+<li class="current  " role="none">
 
   
 
@@ -1884,22 +1884,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="true"  >
           <span>Patterns</span>
         </button>
-        <div aria-label="Patterns" class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
+        <div aria-label="Patterns" class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="false">
           <ul class="overflow-list" role="menu">
             
 
 
-<li class="  " role="none">
+<li class="current  " role="none">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/" role="menuitem" aria-current="true" class="nav-link">
         Patterns<span class="helptext"> (overblik)</span>
       </a>
      
@@ -1956,14 +1956,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="current active has-anchor-links" role="none">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/formular/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/formular/" role="menuitem" aria-current="page" class="nav-link">
         Formular
       </a>
      
@@ -2042,7 +2042,7 @@
 
 
 
-<li class="current" role="none">
+<li class="" role="none">
 <!--Do render subnavs-->
 
   
@@ -2052,10 +2052,10 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="true"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
         <span>Kode</span>
       </button>
-      <div role="menu" aria-label="Kode" class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="false">
+      <div role="menu" aria-label="Kode" class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
         <ul class="overflow-list" role="menu">
           
 
@@ -2104,7 +2104,7 @@
     
 
 
-<li class="current  " role="none">
+<li class="  " role="none">
 
   
 
@@ -2117,22 +2117,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="true"  >
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
           <span>Komponenter</span>
         </button>
-        <div aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="false">
+        <div aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
           <ul class="overflow-list" role="menu">
             
 
 
-<li class="current  " role="none">
+<li class="  " role="none">
 
   
 
 
   
     
-    <a href="/kode/komponenter/" role="menuitem" aria-current="true" class="nav-link">
+    <a href="/kode/komponenter/" role="menuitem"  class="nav-link">
         Komponenter<span class="helptext"> (overblik)</span>
       </a>
      
@@ -2529,14 +2529,14 @@
     
 
 
-<li class="current active has-anchor-links" role="none">
+<li class="  has-anchor-links" role="none">
 
   
 
 
   
     
-    <a href="/kode/komponenter/overflowmenu/" role="menuitem" aria-current="page" class="nav-link">
+    <a href="/kode/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
         Overflow menu
       </a>
      
@@ -2952,10 +2952,10 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="true"  >
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
           <span>Typografi</span>
         </button>
-        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="false">
+        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
           <ul class="overflow-list" role="menu">
             
 
@@ -3496,14 +3496,14 @@
           
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
 
-<a href="/kode/implementering/" role="menuitem" 
+<a href="/eksempler/selvbetjeningsloesninger/" role="menuitem" 
   class="nav-link">
-  Implementering af DKFDS
+  Selvbetjeningsløsninger
 </a>
 
 </li>
@@ -3517,9 +3517,9 @@
 
   
 
-<a href="/kode/komponenter/" role="menuitem" aria-current="true"
+<a href="/eksempler/patterns/" role="menuitem" aria-current="true"
   class="nav-link">
-  Komponenter
+  Patterns
 </a>
 
     
@@ -3532,46 +3532,14 @@
     <ul class="sidenav-sub_list" role="menu">
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
 
   
 
-<a href="/kode/komponenter/accordions/" role="menuitem" 
+<a href="/eksempler/patterns/angivelse-af-telefonnummer/" role="menuitem" 
   class="nav-link">
-  Accordions
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/badges/" role="menuitem" 
-  class="nav-link">
-  Badges
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/beskeder/" role="menuitem" 
-  class="nav-link">
-  Beskeder (Alerts)
+  Angivelse af telefonnummer
 </a>
 
 </li>
@@ -3585,249 +3553,9 @@
 
   
 
-<a href="/kode/komponenter/broedkrumme/" role="menuitem" 
+<a href="/eksempler/patterns/forlad-siden/" role="menuitem" 
   class="nav-link">
-  Brødkrumme
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/cards/" role="menuitem" 
-  class="nav-link">
-  Cards
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/cookiemeddelelse/" role="menuitem" 
-  class="nav-link">
-  Cookiemeddelelse
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/dato-felt/" role="menuitem" 
-  class="nav-link">
-  Datoangivelse
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/datovaelger/" role="menuitem" 
-  class="nav-link">
-  Datovælger
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/detaljer/" role="menuitem" 
-  class="nav-link">
-  Detaljer
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/dropdown/" role="menuitem" 
-  class="nav-link">
-  Dropdown
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/faneblade/" role="menuitem" 
-  class="nav-link">
-  Faneblade (Tabs)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/fejlmeddelelser/" role="menuitem" 
-  class="nav-link">
-  Fejlmeddelelser
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/fejlopsummering/" role="menuitem" 
-  class="nav-link">
-  Fejlopsummering
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/footer/" role="menuitem" 
-  class="nav-link">
-  Footer
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/funktionslink/" role="menuitem" 
-  class="nav-link">
-  Funktionslink
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/headers/" role="menuitem" 
-  class="nav-link">
-  Headers
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/knapper/" role="menuitem" 
-  class="nav-link">
-  Knapper
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/modal/" role="menuitem" 
-  class="nav-link">
-  Modalvindue
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/notifikation/" role="menuitem" 
-  class="nav-link">
-  Notifikation (Toast)
+  Er du sikker på, du vil forlade siden?
 </a>
 
 </li>
@@ -3841,9 +3569,9 @@
 
   
 
-<a href="/kode/komponenter/overflowmenu/" role="menuitem" aria-current="page"
+<a href="/eksempler/patterns/formular/" role="menuitem" aria-current="page"
   class="nav-link">
-  Overflow menu
+  Formular
 </a>
 
     
@@ -3858,7 +3586,7 @@
 
 
 <li class=" " role="none">
-<a href="#sortering"  role="menuitem">Sortering</a>
+<a href="#kompleks"  role="menuitem">Kompleks formular</a>
 </li>
 
     
@@ -3878,265 +3606,9 @@
 
   
 
-<a href="/kode/komponenter/paginering/" role="menuitem" 
+<a href="/eksempler/patterns/session-udloeber/" role="menuitem" 
   class="nav-link">
-  Paginering
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/radioknap/" role="menuitem" 
-  class="nav-link">
-  Radioknap
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/skip-link/" role="menuitem" 
-  class="nav-link">
-  Skip-link
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/spinner/" role="menuitem" 
-  class="nav-link">
-  Spinner
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/sprogvaegler/" role="menuitem" 
-  class="nav-link">
-  Sprogvælger
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/strukturerede-lister/" role="menuitem" 
-  class="nav-link">
-  Strukturerede lister
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/search/" role="menuitem" 
-  class="nav-link">
-  Søgefelt
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/tilbage-link/" role="menuitem" 
-  class="nav-link">
-  Tilbage link
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/tables/" role="menuitem" 
-  class="nav-link">
-  Tabeller
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/tags/" role="menuitem" 
-  class="nav-link">
-  Tags
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/tekstfelter/" role="menuitem" 
-  class="nav-link">
-  Tekstfelter
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/textarea/" role="menuitem" 
-  class="nav-link">
-  Tekstområde (Textarea)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/tjekboks/" role="menuitem" 
-  class="nav-link">
-  Tjekboks
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/tooltip/" role="menuitem" 
-  class="nav-link">
-  Tooltip
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/trinindikatorer/" role="menuitem" 
-  class="nav-link">
-  Trinindikatorer
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/fil-upload/" role="menuitem" 
-  class="nav-link">
-  Vedhæft fil (Upload)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/komponenter/venstremenu/" role="menuitem" 
-  class="nav-link">
-  venstremenu
+  Session udløber
 </a>
 
 </li>
@@ -4153,142 +3625,14 @@
 
     
 
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/browserunderstoettelse/" role="menuitem" 
-  class="nav-link">
-  Browserunderstøttelse
-</a>
-
-</li>
-
-    
-
-    
-
 <li class="  has-anchor-links" role="none">
 
 
   
 
-<a href="/kode/grid/" role="menuitem" 
+<a href="/eksempler/templates/" role="menuitem" 
   class="nav-link">
-  Grid
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/typografi/" role="menuitem" 
-  class="nav-link">
-  Typografi
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/ikoner/" role="menuitem" 
-  class="nav-link">
-  Ikoner
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/utilities/" role="menuitem" 
-  class="nav-link">
-  Hjælpeklasser (Utilities)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/eksempler-implementering/" role="menuitem" 
-  class="nav-link">
-  Eksempler på implementering
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/print/" role="menuitem" 
-  class="nav-link">
-  Print
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/plugins/" role="menuitem" 
-  class="nav-link">
-  Plugins
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" role="menuitem" 
-  class="nav-link">
-  Anbefalinger og værktøjer
+  Templates
 </a>
 
 </li>
@@ -4311,18 +3655,18 @@
         </div>
     </div>
 
-      <section id="section-/kode/komponenter/overflowmenu">
+      <section id="section-">
           
           
 
           <div class="subheading">
-            Kode
+            Eksempler
           </div>
-          <h1 id="overflow-menu">Overflow menu</h1>
+          <h1 id="formular">Formular</h1>
           
           
           <ul class="d-lg-none nobullet-list">
-          <li><a href="#sortering">Sortering</a></li>
+          <li><a href="#kompleks">Kompleks formular</a></li>
           
           </ul>
           
@@ -4332,207 +3676,572 @@
           
 
           
-<div class="component-preview  component-preview-overflow-menu" aria-label="Eksempel på overflow menu komponent">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/overflow-menu/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: overflow-menu</span></a>
-        
-    </div>
+<div class="component-preview  component-preview-fieldset" aria-label="Eksempel på formularstruktur">
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="overflow-menu  overflow-menu--open-right">
-    <button class="button-overflow-menu js-dropdown " data-js-target="overflow1" aria-haspopup="true" aria-expanded="false">
-        Overflow menu
-        <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#more-vert"></use></svg>
+        <h1 class="h2">Dine kontaktoplysninger</h1>
+<form novalidate="">
+    <div class="form-group">
+
+        <label class="form-label" for="simple-fnavn">
+            Fornavn
+        </label>
+
+        <input class="form-input" id="simple-fnavn" name="fnavn" type="text" required="" />
+    </div>
+    <div class="form-group">
+
+        <label class="form-label" for="simple-enavn">
+            Efternavn
+        </label>
+
+        <input class="form-input" id="simple-enavn" name="enavn" type="text" required="" />
+    </div>
+    <div class="form-group">
+
+        <label class="form-label" for="simple-email">
+            E-mail adresse
+        </label>
+
+        <input class="form-input" id="simple-email" name="email" type="text" required="" />
+    </div>
+    <div class="form-group">
+
+        <label class="form-label" for="simple-telefon">
+            Telefonnummer
+        </label>
+
+        <input class="form-input input-width-s" id="simple-telefon" name="telefon" type="text" required="" />
+    </div>
+    <button class="button button-primary mt-9">
+        Gem oplysninger
     </button>
-    <div class="overflow-menu-inner" id="overflow1" aria-hidden="true">
-        <ul class="overflow-list">
-            <li><button>Option 1</button></li>
-            <li><button>Option 2</button></li>
-            <li><a href="#">Option 3 as link</a></li>
-            <li><button>Option 4 is longer text</button></li>
-        </ul>
-
-    </div>
-</div>
+</form>
         
     </div>
     
 </div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på formularstruktur</span></summary>
+    <div class="details-text">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1 class=&quot;h2&quot;&gt;Dine kontaktoplysninger&lt;/h1&gt;
+&lt;form novalidate&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
 
-<h2>Eksempler og retningslinjer</h2>
+        &lt;label class=&quot;form-label&quot; for=&quot;simple-fnavn&quot;&gt;
+            Fornavn
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input&quot; id=&quot;simple-fnavn&quot; name=&quot;fnavn&quot;
+            type=&quot;text&quot; required /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;simple-enavn&quot;&gt;
+            Efternavn
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input&quot; id=&quot;simple-enavn&quot; name=&quot;enavn&quot;
+            type=&quot;text&quot; required /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;simple-email&quot;&gt;
+            E-mail adresse
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input&quot; id=&quot;simple-email&quot; name=&quot;email&quot;
+            type=&quot;text&quot; required /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;simple-telefon&quot;&gt;
+            Telefonnummer
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input input-width-s&quot; id=&quot;simple-telefon&quot;
+            name=&quot;telefon&quot; type=&quot;text&quot; required /&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;button button-primary mt-9&quot;&gt;
+        Gem oplysninger
+    &lt;/button&gt;
+&lt;/form&gt;</code></pre></figure>
+
+
+    </div>
+</details>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Gør brug af <code>&lt;div class="form-group"&gt;</code>, fieldset og overskrifter til at strukturere din formular.</p>
+
+<p>Skærmlæsere følger rækkefølgen af formularelementerne, som de er angivet i koden.</p>
+
+<p>Overhold derfor sammenhængen mellem den viste rækkefølge af formularelementer på skærmen og deres rækkefølge i koden og brug ikke CSS til at ændre på rækkefølgen af formularelementerne.</p>
+
+<p>Gruppér sammenhængende formularelementer ved hjælp af fieldset og brug et enkelt legend for hvert fieldset, hvor det giver mening.</p>
+
+<p>Tilføj label med korrekt <code>for</code> attribut, hvor værdien er ens med værdien i id attributten på formularelementet det tilhører.</p>
+
+<p>Sørg for at labels til formularelementer er meningsfulde og præcise.</p>
+
+<p>Undgå placeholder-tekst. Browserne kan ikke garantere tilstrækkeligt kontrastniveau og teksten kan desuden forvirre brugerne. Placeholder-tekst forsvinder, når brugeren klikker i feltet, og dermed forsvinder information, som kunne gavne brugeren.</p>
+
+<p>Tillad copy/paste i formularelementer, hvor brugeren selv skal indtaste oplysninger.</p>
+
+<p>Formularelementer skal automatisk fremhæves, når brugeren navigerer til dem ved hjælp af tastaturet.</p>
+
+<p>Sørg for at alle elementer står i register, dvs. at de står på linje og i et naturligt lodret læse-flow fra top til bund.</p>
+
+<div class=" component-preview-formular-dos-donts" aria-label="Formular do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Formular-do.svg" alt="Eksempel på, hvordan formular-struktur kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Opdel komplicerede formularer i små bidder, og placér hvert element på en side for sig (Silver, 2018, s. 68-73). Princippet hedder '<em>One thing per page</em>' (én ting pr. side) og har vist sig at fungere godt på mobile enheder og være bedre i forbindelse med fx fejlhåndtering (Paul, 2015). Konceptet er også fordelagtigt for ældre brugere med nedsatte kognitive evner (Johnson &amp; Finn, 2017, s. 99) og nye computerbrugere (Long, 2017).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Formular-dont.svg" alt="Eksempel på, hvordan formular-struktur ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Del ikke tæt relaterede felter op på flere sider (Silver, 2018, s. 71). Felter for postnummer og by bør fx stå på samme side (Jarret &amp; Gaffney, 2010, s. 102). Det samme gælder felter til fornavn og efternavn samt datoer og tidspunkter (Wroblewski, 2008, s. 84).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<div class=" component-preview-overskrifter-dos-donts" aria-label="Overskrifter do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Overskrifter-do-1.svg" alt="Eksempel på, hvordan headers kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Giv formularen en overskrift, der gør det klart, hvad den gør (Wroblewski, 2008, s. 40). Giv overskrifter prominens (fx vha. størrelse eller farve) i formularens visuelle hierarki (Wroblewski, 2003). Brug verber i stedet for navneord i overskriften (Downe, 2015), fx ”Skriv dit barn op til pasning”.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Overskrifter-dont-1.svg" alt="Eksempel på, hvordan headers ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undgå at formulere titler som navneord. Især navneord, der taler om systemet (fx ”Digital pladsanvisning”) frem for brugernes ærinder. Brugerne er muligvis ikke bekendte med de navne, som myndighederne har givet selvbetjeningsløsningerne for at kunne identificere dem (Downe, 2015). </p>
+    </div>
+</div>
+<div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Overskrifter-do-2.svg" alt="Eksempel på, hvordan headers kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Lad formålet med den enkelte side fremgå af overskriften under løsningstitlen, når formularen har flere sider (Lior, 2013, s. 205). </p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Overskrifter-dont-2.svg" alt="Eksempel på, hvordan headers ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Risikér ikke, at brugerne mister fornemmelsen af, hvilken formular de er ved at udfylde eller hvad de er ved at udfylde på den pågældende side, hvis formularen har flere sider.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
 <ul class="nobullet-list">
-    <li><a href="/komponenter/overflowmenu/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/overflowmenu/">Eksempler</a></li>
+  <li>Adam Silver: Form Design Patterns (2018)</li>
+  <li><a href="https://designnotes.blog.gov.uk/2015/07/03/one-thing-per-page/" class="icon-link">Tim Paul: One thing per page (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li>Jeff Johnson &amp; Kate Finn: Designing User Interfaces for an Aging Population (2017)</li>
+  <li><a href="https://youtu.be/IjjHTa0YEg4" class="icon-link">Ally Long: Field-tested interfaces for the next billion (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li>Caroline Jarrett &amp; Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)</li>
+  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
+  <li>Luke Wroblewski: Visible Narratives: Understanding Visual Organization (2003)</li>
+  <li>Louise Downe: Good services are verbs, bad services are nouns (2015)</li>
+  <li>Linda Newman Lior: Writing for Interaction (2013)</li>
 </ul>
 
-<h2>Installation</h2>
+<h2 class="h3" id="eksempelloesninger">Se eksempelløsninger</h2>
 
-<h3>HTML Struktur</h3>
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a></li>
+  <li><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a></li>
+  <li><a href="/pages/eksempler/AES-erstatningssag/aes-5/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a></li>
+</ul>
 
-<div class="component-preview component-preview-code  component-code-overflow-menu" aria-label="">
+<h2 id="kompleks">Kompleks formular</h2>
+
+<div class="component-preview  component-preview-fieldset-complex" aria-label="Eksempel på kompleks formularstruktur">
     
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu  overflow-menu--open-right&quot;&gt;
-    &lt;button class=&quot;button-overflow-menu js-dropdown &quot;
-        data-js-target=&quot;overflow1&quot; aria-haspopup=&quot;true&quot;
-        aria-expanded=&quot;false&quot;&gt;
-        Overflow menu
-        &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#more-vert&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-    &lt;/button&gt;
-    &lt;div class=&quot;overflow-menu-inner&quot; id=&quot;overflow1&quot; aria-hidden=&quot;true&quot;&gt;
-        &lt;ul class=&#39;overflow-list&#39;&gt;
-            &lt;li&gt;&lt;button&gt;Option 1&lt;/button&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;button&gt;Option 2&lt;/button&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Option 3 as link&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;button&gt;Option 4 is longer text&lt;/button&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
-<h4>Tilgængelighed</h4>
-
-<p>Overflow menu skal kunne aktiveres og håndteres fra tastatur.</p>
-
-<p>Overflow menu skjuler indhold for brugeren og bør anvendes i begrænset omfang.</p>
-
-<p>Overflow menu skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tastaturet til navigation.</p>
-
-<h3 class="h4">Klasser</h3>
-
-<p>Følgende aria tags styrer hvorvidt menuen er foldet ud:</p>
-
-<ul>
-  <li>Button: <code>aria-expanded="false"</code></li>
-  <li>Overflow menu: <code>aria-hidden="true"</code></li>
-</ul>
-
-<p>Følgende klasser styrer i hvilken retning menuen skal folde ud:</p>
-
-<ul>
-  <li>Venstre: <code>.overflow-menu--open-left</code></li>
-  <li>Højre: <code>.overflow-menu--open-right</code></li>
-</ul>
-
-<p>Der er lavet et specifikt liste element til overflow-menuen (se <code>.overflow-list</code>) som kan indeholde links eller buttons. Det er dog ikke nødvendigt at benytte denne liste. Overflow-menuen er bare en container hvor man kan placere det indhold man nu har lyst til.</p>
-
-<h3 class="h4">Skjul/vis</h3>
-
-<p>Initialiser collapse/expand javascript med at placere følgende på button elementet: <code>class="js-dropdown" data-js-target="#overflow1"</code></p>
-
-<p>Elementet som skal collapses/expandes skal have et matchende id <code>id="overflow1"</code> (placeres på <code>.overflow-menu-inner</code>)</p>
-
-<h3>JavaScript</h3>
-
-<p>Collapse komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Dropdown(document.getElementById(&#39;OVERFLOW-BUTTON-ID&#39;)).init();</code></pre></figure>
-
-<h4>Events</h4>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Event key</th>
-      <th>Element</th>
-      <th>Beskrivelse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fds.dropdown.open</td>
-      <td><code>button.js-dropdown</code></td>
-      <td>Når en overflow menu bliver foldet ud, bliver eventet <code>fds.dropdown.open</code> udløst på knappen</td>
-    </tr>
-    <tr>
-      <td>fds.dropdown.close</td>
-      <td><code>button.js-dropdown</code></td>
-      <td>Når en overflow menu bliver foldet ind, bliver eventet <code>fds.dropdown.close</code> udløst på knappe</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>Varianter</h2>
-
-<h3 id="sortering">Sortering</h3>
-
-<div class="component-preview component-preview-code  component-code-sort" aria-label="">
-    
-    <div class="component-link px-4 py-4">
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <a href="/eksempel/sort/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: sort</span></a>
+        <h1 class="h2">Dine kontaktoplysninger</h1>
+<form novalidate="">
+    <div class="form-group">
+
+        <label class="form-label" for="fnavn">
+            Fornavn
+        </label>
+
+        <input class="form-input" id="fnavn" name="fnavn" type="text" required="" />
+    </div>
+    <div class="form-group">
+
+        <label class="form-label" for="enavn">
+            Efternavn
+        </label>
+
+        <input class="form-input" id="enavn" name="enavn" type="text" required="" />
+    </div>
+    <div class="form-group">
+
+        <label class="form-label" for="fieldset-email">
+            E-mail adresse
+        </label>
+
+        <input class="form-input" id="fieldset-email" name="email" type="text" required="" />
+    </div>
+    <div class="form-group">
+
+        <label class="form-label" for="fieldset-telefon">
+            Telefonnummer
+        </label>
+
+        <input class="form-input input-width-s" id="fieldset-telefon" name="telefon" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+        <fieldset>
+            <legend class="form-label">Hvordan vil du helst kontaktes?
+            </legend>
+            <ul class="nobullet-list">
+                <li>
+                    <div class="form-group-radio">
+                        <input id="kontakt-telefon" type="radio" name="kontakt" value="telefon" class="form-radio radio-large " />
+                        <label for="kontakt-telefon" id="form-label-kontakt-telefon" class="">Pr.
+                            telefon </label>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group-radio">
+                        <input id="kontakt-email" type="radio" name="kontakt" value="email" class="form-radio radio-large " />
+                        <label for="kontakt-email" id="form-label-kontakt-email" class="">Pr.
+                            e-mail </label>
+
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+    <div class="form-group">
+        <fieldset>
+            <legend class="form-label">Hvornår på dagen vil det passe
+                bedst, at vi kontakter dig?</legend>
+            <ul class="nobullet-list">
+                <li>
+                    <input id="checkbox-morgen" type="checkbox" name="tidspunkt[]" value="morgen" class="form-checkbox checkbox-large " />
+                    <label for="checkbox-morgen" class="">Om
+                        morgenen</label>
+                </li>
+                <li>
+                    <input id="checkbox-middag" type="checkbox" name="tidspunkt[]" value="middag" class="form-checkbox checkbox-large " />
+                    <label for="checkbox-middag" class="">Ved
+                        middagstid</label>
+                </li>
+                <li>
+                    <input id="checkbox-eftermiddag" type="checkbox" name="tidspunkt[]" value="eftermiddag" class="form-checkbox checkbox-large " />
+                    <label for="checkbox-eftermiddag" class="">Om
+                        eftermiddagen</label>
+                </li>
+                <li>
+                    <input id="checkbox-aften" type="checkbox" name="tidspunkt[]" value="aften" class="form-checkbox checkbox-large " />
+                    <label for="checkbox-aften" class="">Om aftenen</label>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+    <div class="form-group">
+        <fieldset>
+            <legend class="h4">Personlige oplysninger</legend>
+
+            <!-- Felt start: Fødselsdato -->
+
+            <div class="form-group  mt-0">
+                <fieldset aria-describedby="example-date-field-hint ">
+                    <legend class="form-label">Fødselsdato</legend>
+                    <span class="form-hint" id="example-date-field-hint">For eksempel: 05 12
+                        1987</span>
+
+                    <div class="date-group js-calendar-group mt-3">
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-day">Dag</label>
+                            <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+                        </div>
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-month">Måned</label>
+                            <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+                        </div>
+                        <div class="form-group form-group-year ">
+                            <label class="form-label" for="date-year">År</label>
+                            <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Felt slut: Fødselsdato -->
+
+            <!-- Felt start: Odense -->
+            <div class="form-group">
+                <fieldset>
+                    <legend class="h5">Bor du i Odense?</legend>
+                    <ul class="nobullet-list">
+                        <li>
+                            <div class="form-group-radio">
+                                <input id="odense-ja" type="radio" name="odense" value="ja" class="form-radio radio-large " />
+                                <label for="odense-ja" id="form-label-odense-ja" class="">Ja
+                                </label>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group-radio">
+                                <input id="odense-nej" type="radio" name="odense" value="nej" class="form-radio radio-large " />
+                                <label for="odense-nej" id="form-label-odense-nej" class="">Nej
+                                </label>
+
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <!-- Felt slut: Odense -->
+        </fieldset>
+    </div>
+    <!-- Felt slut: Personlige oplysninger -->
+    <!-- Knap start -->
+    <button class="button button-primary mt-9">
+        Gem oplysninger
+    </button>
+    <!-- Knap slut -->
+</form>
         
     </div>
     
-    <div class="component-code" aria-label="Kodeeksempel">
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på kompleks formularstruktur</span></summary>
+    <div class="details-text">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1 class=&quot;h2&quot;&gt;Dine kontaktoplysninger&lt;/h1&gt;
+&lt;form novalidate&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu overflow-menu--sort overflow-menu--open-right&quot;
-    id=&quot;&quot;&gt;
-    &lt;button class=&quot;button-overflow-menu&quot; data-js-target=&quot;-panel&quot;
-        aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
-        &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#sort-default&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Sortér:&lt;span
-            class=&quot;selected-value&quot;&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;div class=&quot;overflow-menu-inner&quot; id=&quot;-panel&quot; aria-hidden=&quot;true&quot;&gt;
-        &lt;ul class=&#39;overflow-list&#39; role=&quot;menu&quot;&gt;
-            &lt;li role=&quot;menuitem&quot; aria-selected=&quot;true&quot;&gt;&lt;button
-                    id=&quot;newfirst&quot;&gt;Nyeste først&lt;/button&gt;&lt;/li&gt;
-            &lt;li role=&quot;menuitem&quot;&gt;&lt;button id=&quot;oldfirst&quot;&gt;Ældste først&lt;/button&gt;
-            &lt;/li&gt;
-            &lt;li role=&quot;menuitem&quot;&gt;&lt;button id=&quot;affaldstype-asc&quot;&gt;Affaldstype
-                    (A-Å)&lt;/button&gt;&lt;/li&gt;
-            &lt;li role=&quot;menuitem&quot;&gt;&lt;button id=&quot;affaldstype-desc&quot;&gt;Affaldstype
-                    (Å-A)&lt;/button&gt;&lt;/li&gt;
-        &lt;/ul&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;fnavn&quot;&gt;
+            Fornavn
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input&quot; id=&quot;fnavn&quot; name=&quot;fnavn&quot; type=&quot;text&quot;
+            required /&gt;
     &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+    &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;enavn&quot;&gt;
+            Efternavn
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input&quot; id=&quot;enavn&quot; name=&quot;enavn&quot; type=&quot;text&quot;
+            required /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;fieldset-email&quot;&gt;
+            E-mail adresse
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input&quot; id=&quot;fieldset-email&quot; name=&quot;email&quot;
+            type=&quot;text&quot; required /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label class=&quot;form-label&quot; for=&quot;fieldset-telefon&quot;&gt;
+            Telefonnummer
+        &lt;/label&gt;
+
+        &lt;input class=&quot;form-input input-width-s&quot; id=&quot;fieldset-telefon&quot;
+            name=&quot;telefon&quot; type=&quot;text&quot; required /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;form-label&quot;&gt;Hvordan vil du helst kontaktes?
+            &lt;/legend&gt;
+            &lt;ul class=&quot;nobullet-list&quot;&gt;
+                &lt;li&gt;
+                    &lt;div class=&quot;form-group-radio&quot;&gt;
+                        &lt;input id=&quot;kontakt-telefon&quot; type=&quot;radio&quot;
+                            name=&quot;kontakt&quot; value=&quot;telefon&quot;
+                            class=&quot;form-radio radio-large &quot; /&gt;
+                        &lt;label for=&quot;kontakt-telefon&quot;
+                            id=&quot;form-label-kontakt-telefon&quot; class=&quot;&quot;&gt;Pr.
+                            telefon &lt;/label&gt;
+
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;div class=&quot;form-group-radio&quot;&gt;
+                        &lt;input id=&quot;kontakt-email&quot; type=&quot;radio&quot;
+                            name=&quot;kontakt&quot; value=&quot;email&quot;
+                            class=&quot;form-radio radio-large &quot; /&gt;
+                        &lt;label for=&quot;kontakt-email&quot;
+                            id=&quot;form-label-kontakt-email&quot; class=&quot;&quot;&gt;Pr.
+                            e-mail &lt;/label&gt;
+
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;form-label&quot;&gt;Hvornår på dagen vil det passe
+                bedst, at vi kontakter dig?&lt;/legend&gt;
+            &lt;ul class=&quot;nobullet-list&quot;&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;checkbox-morgen&quot; type=&quot;checkbox&quot;
+                        name=&quot;tidspunkt[]&quot; value=&quot;morgen&quot;
+                        class=&quot;form-checkbox checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;checkbox-morgen&quot; class=&quot;&quot;&gt;Om
+                        morgenen&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;checkbox-middag&quot; type=&quot;checkbox&quot;
+                        name=&quot;tidspunkt[]&quot; value=&quot;middag&quot;
+                        class=&quot;form-checkbox checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;checkbox-middag&quot; class=&quot;&quot;&gt;Ved
+                        middagstid&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;checkbox-eftermiddag&quot; type=&quot;checkbox&quot;
+                        name=&quot;tidspunkt[]&quot; value=&quot;eftermiddag&quot;
+                        class=&quot;form-checkbox checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;checkbox-eftermiddag&quot; class=&quot;&quot;&gt;Om
+                        eftermiddagen&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;input id=&quot;checkbox-aften&quot; type=&quot;checkbox&quot;
+                        name=&quot;tidspunkt[]&quot; value=&quot;aften&quot;
+                        class=&quot;form-checkbox checkbox-large &quot; /&gt;
+                    &lt;label for=&quot;checkbox-aften&quot; class=&quot;&quot;&gt;Om aftenen&lt;/label&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;h4&quot;&gt;Personlige oplysninger&lt;/legend&gt;
+
+            &lt;!-- Felt start: Fødselsdato --&gt;
+
+            &lt;div class=&quot;form-group  mt-0&quot;&gt;
+                &lt;fieldset aria-describedby=&quot;example-date-field-hint &quot;&gt;
+                    &lt;legend class=&quot;form-label&quot;&gt;Fødselsdato&lt;/legend&gt;
+                    &lt;span class=&quot;form-hint&quot;
+                        id=&quot;example-date-field-hint&quot;&gt;For eksempel: 05 12
+                        1987&lt;/span&gt;
+
+                    &lt;div class=&quot;date-group js-calendar-group mt-3&quot;&gt;
+                        &lt;div class=&quot;form-group form-group-day&quot;&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-day&quot;&gt;Dag&lt;/label&gt;
+                            &lt;input class=&quot;form-input js-calendar-day-input&quot;
+                                id=&quot;date-day&quot; value=&quot;&quot; type=&quot;tel&quot;
+                                data-min=&quot;1&quot; data-max=&quot;31&quot; maxlength=&quot;2&quot;
+                                pattern=&quot;^[0-9]{0,2}$&quot;
+                                data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                                title=&quot;Indskriv dag på måneden som tal&quot;
+                                aria-describedby=&quot;example-date-field-hint&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group form-group-month&quot;&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-month&quot;&gt;Måned&lt;/label&gt;
+                            &lt;input
+                                class=&quot;form-input js-calendar-month-input&quot;
+                                id=&quot;date-month&quot; value=&quot;&quot; type=&quot;tel&quot;
+                                data-min=&quot;1&quot; data-max=&quot;12&quot; maxlength=&quot;2&quot;
+                                pattern=&quot;^[0-9]{0,2}$&quot;
+                                data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                                title=&quot;Indskriv månedens nummer&quot;
+                                aria-describedby=&quot;example-date-field-hint&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group form-group-year &quot;&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-year&quot;&gt;År&lt;/label&gt;
+                            &lt;input
+                                class=&quot;form-input js-calendar-year-input&quot;
+                                id=&quot;date-year&quot; value=&quot;&quot; type=&quot;tel&quot;
+                                data-min=&quot;1900&quot; data-max=&quot;3000&quot;
+                                maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;
+                                data-input-regex=&quot;^[0-9]{0,4}$&quot;
+                                title=&quot;Indskriv årstal&quot;
+                                aria-describedby=&quot;example-date-field-hint&quot; /&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/fieldset&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Felt slut: Fødselsdato --&gt;
+
+            &lt;!-- Felt start: Odense --&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;fieldset&gt;
+                    &lt;legend class=&quot;h5&quot;&gt;Bor du i Odense?&lt;/legend&gt;
+                    &lt;ul class=&quot;nobullet-list&quot;&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;form-group-radio&quot;&gt;
+                                &lt;input id=&quot;odense-ja&quot; type=&quot;radio&quot;
+                                    name=&quot;odense&quot; value=&quot;ja&quot;
+                                    class=&quot;form-radio radio-large &quot; /&gt;
+                                &lt;label for=&quot;odense-ja&quot;
+                                    id=&quot;form-label-odense-ja&quot; class=&quot;&quot;&gt;Ja
+                                &lt;/label&gt;
+
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;form-group-radio&quot;&gt;
+                                &lt;input id=&quot;odense-nej&quot; type=&quot;radio&quot;
+                                    name=&quot;odense&quot; value=&quot;nej&quot;
+                                    class=&quot;form-radio radio-large &quot; /&gt;
+                                &lt;label for=&quot;odense-nej&quot;
+                                    id=&quot;form-label-odense-nej&quot; class=&quot;&quot;&gt;Nej
+                                &lt;/label&gt;
+
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/fieldset&gt;
+            &lt;/div&gt;
+            &lt;!-- Felt slut: Odense --&gt;
+        &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;!-- Felt slut: Personlige oplysninger --&gt;
+    &lt;!-- Knap start --&gt;
+    &lt;button class=&quot;button button-primary mt-9&quot;&gt;
+        Gem oplysninger
+    &lt;/button&gt;
+    &lt;!-- Knap slut --&gt;
+&lt;/form&gt;</code></pre></figure>
 
 
     </div>
-</div>
+</details>
 
-<h4>JavaScript</h4>
-
-<p>Overflow menu med sorteringsfunktion kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.DropdownSort(document.getElementById(&#39;OVERFLOW-MENU-CONTAINER&#39;)).init();</code></pre></figure>
-
-<h4>Events</h4>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Event key</th>
-      <th>Element</th>
-      <th>Beskrivelse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fds.dropdown.open</td>
-      <td><code>button.js-dropdown</code></td>
-      <td>Når en overflow menu bliver foldet ud, bliver eventet <code>fds.dropdown.open</code> udløst på knappen</td>
-    </tr>
-    <tr>
-      <td>fds.dropdown.close</td>
-      <td><code>button.js-dropdown</code></td>
-      <td>Når en overflow menu bliver foldet ind, bliver eventet <code>fds.dropdown.close</code> udløst på knappe</td>
-    </tr>
-    <tr>
-      <td>fds.dropdown.selected</td>
-      <td><code>button.js-dropdown</code></td>
-      <td>Når en værdi bliver valgt</td>
-    </tr>
-  </tbody>
-</table>
 
 
           
@@ -4547,40 +4256,6 @@
               
               
               
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
                 
                   
                 
@@ -4592,49 +4267,6 @@
                     
                     
                     
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-
-              
               
               
 
