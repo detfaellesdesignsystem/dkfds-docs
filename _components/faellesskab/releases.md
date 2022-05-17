@@ -114,7 +114,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 {:#version-8-0-0 .mb-0}
 ## Version 8.0.0
-<div><span class="small-text mt-0 d-block">xx-05-2022</span></div>
+<div><span class="small-text mt-0 d-block">17-05-2022</span></div>
 
 - Ny komponent: <a href="/komponenter/paginering/">Paginering</a>
 - Ny komponent: <a href="/komponenter/strukturerede-lister/">Strukturerede lister</a>
