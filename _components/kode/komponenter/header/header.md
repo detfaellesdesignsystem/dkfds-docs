@@ -1,5 +1,7 @@
 ---
-permalink: /kode/komponenter/headers/
+permalink: /kode/komponenter/header/
+redirect_from:
+- /kode/komponenter/headers/
 parentlink: /kode/komponenter/
 title: Headers
 layout: styleguide

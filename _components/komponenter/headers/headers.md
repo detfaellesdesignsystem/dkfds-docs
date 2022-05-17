@@ -1,7 +1,9 @@
 ---
-permalink: /komponenter/headers/
+permalink: /komponenter/header/
+redirect_from:
+- /komponenter/headers/
 layout: styleguide
-title: Headers
+title: Header
 category: Komponenter_category
 subcategory: Komponenter
 description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
@@ -19,7 +21,7 @@ subnav:
   href: '#header-med-større-logo-og-brugeroplysninger'
 ---
 
-{% include code/preview-image.html component="header-simple" code="/kode/komponenter/headers/" %}
+{% include code/preview-image.html component="header-simple" code="/kode/komponenter/header/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til

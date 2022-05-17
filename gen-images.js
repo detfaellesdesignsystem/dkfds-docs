@@ -41,16 +41,16 @@ var exampleUrls = [
 
             if (exampleUrls[i].filename !== "cookie-message.png"){
                 await page.evaluate(() => {
-                    let cookieMessage = document.getElementById('cookiePrompt').parentNode;
+                    let cookieMessage = document.getElementById('cookiePrompt');
                     if (cookieMessage !== null) {
-                        cookieMessage.style.display = 'none';
+                        cookieMessage.parentNode.style.display = 'none';
                     }
 
                     window.scrollTo(0, 0);
                     if(document.getElementsByClassName('footer').length > 0){
                         document.getElementsByClassName('footer')[0].style.marginTop = "0px";
                     }
-                    if(document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
+                    if(document.getElementsByTagName('body') !== null  && document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
                         var eventClick = new Event('mouseenter');
                         document.getElementsByClassName('js-tooltip')[0].dispatchEvent(eventClick);
                     }
