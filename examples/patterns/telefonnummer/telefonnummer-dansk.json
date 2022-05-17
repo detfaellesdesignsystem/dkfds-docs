@@ -1,0 +1,13 @@
+{
+    "textinput_example":{
+      "id": "input-phonenumber-danish",
+      "type": "tel",
+      "label": {
+        "text":"Dansk telefonnummer"
+      },
+      "name": "input-phonenumber",
+      "required": true,
+      "classes": "input-width-xs",
+      "autocomplete": "tel"
+    }
+  }

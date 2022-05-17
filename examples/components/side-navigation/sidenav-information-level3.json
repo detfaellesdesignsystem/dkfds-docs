@@ -2,6 +2,7 @@
 {
   "sidenavsInformation":
   {
+    "subclass": "sidenav-sub_list",
     "links": [
       {
         "text": "Hovedside",

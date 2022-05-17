@@ -17,8 +17,3 @@ Du bør bestræbe dig på at følge standarderne for opsummerings- og kvittering
 
 ## Designsystemet er bygget med sig selv
 Du kan bruge designssystem.dk som eksempel, da det er bygget med sig selv og overholder sine egne regler.
-
-{:.d-md-none}
-- <a href="/eksempler/selvbetjeningsloesninger/" class="bold-link">Selvbetjeningsløsninger</a>
-- <a href="/eksempler/opsummeringsside/" class="bold-link">Opsummeringsside</a>
-- <a href="/eksempler/kvittering/" class="bold-link">Kvittering</a>

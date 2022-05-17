@@ -4,22 +4,23 @@
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
 
 {% block header %}
   <header class="header">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
-        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
+        <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
 
         <a href="#" class="button button-secondary button-signout">
           Log af
@@ -34,7 +35,7 @@
       <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
           <div class="nav-actions">
-            <a href="" class="function-link">{{icon_svg("save")}}Gem kladde</a>
+            <a href="" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
           </div>
         </div>
       </div>
@@ -46,71 +47,29 @@
 
 {% block body %}
   <main class="container page-container" id="main-content">
-    {{overflowmenu("Trin 1 af 9","overflow_steps", true, false, "arrow-drop-down" ,"
-        <nav><ul class='sidenav-list' role='menu'>
-            <li class='active current' role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-1/' role='menuitem' aria-current='page'>
-                    1. Oplysninger om afsender
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-2/' role='menuitem'>
-                    2. Hvis AES har spørgsmål til sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-3/' role='menuitem'>
-                    3. Oplysninger om skadelidte
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-4/' role='menuitem'>
-                    4. Sagens natur
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-5/' role='menuitem'>
-                    5. Oplysninger om sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-6/' role='menuitem'>
-                    6. Tilføj dokumentation for første undersøgelse af skaden
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-7/' role='menuitem'>
-                    7. Tilføj dokumentation fra sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-8/' role='menuitem'>
-                    8. Tilføj kommentarer til sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-9/' role='menuitem'>
-                    9. Opsummering
-                </a>
-            </li>
-        </ul></nav>
-        "
-    ) }}
+    {{overflowmenu(stepguide) }}
     <h1>Oplysninger om afsender</h1>
-    {{textinput("virksomhed", "Virksomhed", "", "input-width-m", "", "virksomhed", "", false, "", "", "", "Forsikringens Forsikringsfirma", "", "", true)}}
+    {{textinput({
+        "name":"virksomhed",
+        "label": {
+            "text":"Virksomhed"
+            },
+        "classes":"input-width-m",
+        "id":"input-virksomhed",
+        "value":"Forsikringens Forsikringsfirma",
+        "readonly": true})}}
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Afsender er</legend>
-            {{radiobutton("id-afsender1", "afsender", "Advokat for forsikringsselskab", false, false, "Advokat for forsikringsselskab", "radio-large", false, "true", "", "", "", "mt-3")}}
-            {{radiobutton("id-afsender2", "afsender", "Advokat for skadelidte", false, false, "Advokat for skadelidte", "radio-large", false, "true", "", "", "", "mt-3")}}
-            {{radiobutton("id-afsender3", "afsender", "Forsikringsselskab", false, false, "Forsikringsselskab", "radio-large", false, "true", "", "", "", "mt-3")}}
-            {{radiobutton("id-afsender4", "afsender", "Erstatningsnævnet", false, false, "Erstatningsnævnet", "radio-large", false, "true", "", "", "", "mt-3")}}
-            {{radiobutton("id-afsender5", "afsender", "Anden", false, false, "Anden", "radio-large", false, "true", "", "", "", "mt-3")}}
+            <ul class="nobullet-list">
+            {% for item in radiobutton_afsender.items %}<li>{{ radiobutton(item) }}</li>{% endfor %}
+            </ul>
         </fieldset>
     </div>
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/AES-erstatningssag/aes-2" class="button button-primary">Næste</a>
-    </nav>
+    
+        <form novalidate method="get" action="/pages/eksempler/AES-erstatningssag/aes-2/">
+            <button class="button button-primary mt-8 d-print-none">Næste</button>
+        </form>
   </main>
 {% endblock %}
 
@@ -118,7 +77,7 @@
 {% endblock %}
 
 {% block footer -%}
-  {{ footer_simple(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

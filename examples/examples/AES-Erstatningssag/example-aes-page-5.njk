@@ -4,7 +4,7 @@
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
@@ -14,15 +14,16 @@
 
 {% block header %}
   <header class="header">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
-        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
+        <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
         <a href="#" class="button button-secondary button-signout">
           Log af
         </a>
@@ -36,7 +37,7 @@
       <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
           <div class="nav-actions">
-            <a href="" class="function-link">{{icon_svg("save")}}Gem kladde</a>
+            <a href="" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
           </div>
         </div>
       </div>
@@ -47,85 +48,38 @@
 
 {% block body %}
 <main class="container page-container pt-4 pt-lg-0" id="main-content">
-    <div><a href="/pages/eksempler/AES-erstatningssag/aes-4" class="back-link">Tilbage</a></div>
-    {{overflowmenu("Trin 5 af 9","overflow_steps", true, false, "arrow-drop-down" ,"
-        <nav><ul class='sidenav-list' role='menu'>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-1/' role='menuitem'>
-                    1. Oplysninger om afsender
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-2/' role='menuitem'>
-                    2. Hvis AES har spørgsmål til sagen
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-3/' role='menuitem'>
-                    3. Oplysninger om skadelidte
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-4/' role='menuitem'>
-                    4. Sagens natur
-                    <span class='sidenav-icon' aria-label='Gennemført'>
-                        <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg>
-                    </span>
-                </a>
-            </li>
-            <li class='active current' role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-5/' role='menuitem' aria-current='page'>
-                    5. Oplysninger om sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-6/' role='menuitem'>
-                    6. Tilføj dokumentation for første undersøgelse af skaden
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-7/' role='menuitem'>
-                    7. Tilføj dokumentation fra sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-8/' role='menuitem'>
-                    8. Tilføj kommentarer til sagen
-                </a>
-            </li>
-            <li role='none'>
-                <a href='/pages/eksempler/AES-erstatningssag/aes-9/' role='menuitem'>
-                    9. Opsummering
-                </a>
-            </li>
-        </ul></nav>
-        "
-    ) }}
+    <div><a href="/pages/eksempler/AES-erstatningssag/aes-4/" class="back-link">Tilbage</a></div>
+    {{overflowmenu(stepguide) }}
 
     <h1>Oplysninger om sagen</h1>
-    {{datoinput("Skadedato", "Fx. 28 04 1996", "Dato", "Måned", "År", true, "Her står relevant uddybbende hjælpetekst.", "", "", "", "", "", {day: 'date-day', month: 'date-month', year: 'date-year', 'hint': 'example-date-field-hint1', 'error': 'example-date-field-error1'})}}
-    {{textinput("id-skadenummer", "Jeres sags-/skadenummer", "", "input-width-m", false, "Input til Jeres sags-/skadenummer", "", false, false, "", "", "", true, "Her står relevant uddybbende hjælpetekst.")}}
+    {{datoinput(date_skadedato)}}
+    {{textinput({
+        "id":"id-skadenummer",
+        "label":{
+            "text": "Jeres sags-/skadenummer",
+            "tooltip": "Forklarende tekst omkring feltet"
+            },
+        "classes":"input-width-m",
+        "name": "skadenummer",
+        "hint": "Her står relevant uddybende hjælpetekst."})}}
     <div class="form-group">
-        {{ checkbox("id-retssag", "", "Der verserer en retssag", false, false, "Der verserer en retssag", "", false, true, "", "js-checkbox-toggle-content printIfChecked", " data-aria-controls='collapse-check' data-aria-expanded='false'") }}
-        <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
+        {{ checkbox({
+            "id": "checkbox-retssag", 
+            "label": "Der verserer en retssag",
+            "name": "retssag-verserer",
+            "large": true,
+            "classes": "js-checkbox-toggle-content printIfChecked",
+            "inputAttributes": " data-aria-controls='collapse-check' data-aria-expanded='false'"}) }}
+        <div id="collapse-check" aria-hidden="true" class="checkbox-content checkbox-content-large">
             <div class="py-4">
-                {{datoinput("Berammelsesdato", "Fx. 28 04 1996", "Dato", "Måned", "År", "", "", "", "", "", "", "", {day: 'date-day2', month: 'date-month2', year: 'date-year2'})}}
-
+                {{datoinput(date_collapse)}}
             </div>
         </div>
     </div>
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/AES-erstatningssag/aes-6" class="button button-primary">Næste</a>
-    </nav>
+    
+        <form novalidate method="get" action="/pages/eksempler/AES-erstatningssag/aes-6/">
+            <button class="button button-primary mt-8 d-print-none">Næste</button>
+        </form>
 </main>
 {% endblock %}
 
@@ -133,7 +87,7 @@
 {% endblock %}
 
 {% block footer -%}
-  {{ footer_simple(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

@@ -2,6 +2,8 @@
 <div class="form-group">
     <fieldset>
         <legend class="form-label">Stor radioknap (anbefalet)</legend>
-        {% for item in radiobuttons_example_large.items %}{{ radiobutton(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.sr) }}{% endfor %}
+        <ul class="nobullet-list">
+            {% for item in radiobuttons_example_large.items %}<li>{{ radiobutton(item) }}</li>{% endfor %}
+        </ul>
     </fieldset>
 </div>

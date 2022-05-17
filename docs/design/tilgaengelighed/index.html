@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
+<html lang="da">
   <head>
     <!-- Basic Page Needs
 ================================================== -->
@@ -10,6 +9,8 @@
 ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
+  
+  <meta name="robots" content="noindex" />
   
 <!-- Title and meta description
 ================================================== -->
@@ -67,6 +68,7 @@
 <symbol id="save" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm2 16H5V5h11.17L19 7.83V19zm-7-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zM6 6h9v4H6z"/></symbol>
 <symbol id="print" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 12v2H8v-4h8v2zm2-2v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4h-2z"/><circle cx="18" cy="11.5" r="1"/></symbol>
 <symbol id="delete" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></symbol>
+<symbol id="trash-can" viewBox="0 0 24 24"><path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" /></symbol>
 <symbol id="search" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></symbol>
 
 <symbol id="report-problem" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2zm1 14h-2v2h2v-2zm0-6h-2v4h2v-4z"/></symbol>
@@ -132,7 +134,7 @@
 <symbol id="feedback" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17l-.59.59-.58.58V4h16v12zm-9-4h2v2h-2zm0-6h2v4h-2z"/></symbol>
 <symbol id="person-remove" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M14,8c0-2.21-1.79-4-4-4C7.79,4,6,5.79,6,8c0,2.21,1.79,4,4,4C12.21,12,14,10.21,14,8z M12,8c0,1.1-0.9,2-2,2 c-1.1,0-2-0.9-2-2s0.9-2,2-2C11.1,6,12,6.9,12,8z"/><path d="M2,18v2h16v-2c0-2.66-5.33-4-8-4C7.33,14,2,15.34,2,18z M4,18c0.2-0.71,3.3-2,6-2c2.69,0,5.77,1.28,6,2H4z"/><rect height="2" width="6" x="17" y="10"/></g></g></symbol>
 <symbol id="flag" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></symbol>
-<symbol id="outline-flag" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M14 6l-1-2H5v17h2v-7h5l1 2h7V6h-6zm4 8h-4l-1-2H7V6h5l1 2h5v6z"/></symbol>
+<symbol id="outlined-flag" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M14 6l-1-2H5v17h2v-7h5l1 2h7V6h-6zm4 8h-4l-1-2H7V6h5l1 2h5v6z"/></symbol>
 <symbol id="open-with" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"/></symbol>
 <symbol id="credit-card" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></symbol>
 <symbol id="settings" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></symbol>
@@ -159,14 +161,13 @@
 <symbol id="playlist-add" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M14,10H3v2h11V10z M14,6H3v2h11V6z M18,14v-4h-2v4h-4v2h4v4h2v-4h4v-2H18z M3,16h7v-2H3V16z"/></g></symbol>
 <symbol id="person-add-alt-1" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M13,8c0-2.21-1.79-4-4-4S5,5.79,5,8s1.79,4,4,4S13,10.21,13,8z M11,8c0,1.1-0.9,2-2,2S7,9.1,7,8s0.9-2,2-2S11,6.9,11,8z M1,18v2h16v-2c0-2.66-5.33-4-8-4S1,15.34,1,18z M3,18c0.2-0.71,3.3-2,6-2c2.69,0,5.78,1.28,6,2H3z M20,15v-3h3v-2h-3V7h-2v3h-3v2 h3v3H20z"/></g></symbol>
 <symbol id="done" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></symbol>
-<symbol id="upload" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16h6v-6h4l-7-7-7 7h4v6zm3-10.17L14.17 8H13v6h-2V8H9.83L12 5.83zM5 18h14v2H5z"/></symbol>
+<symbol id="file-upload" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M18,15v3H6v-3H4v3c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2v-3H18z M7,9l1.41,1.41L11,7.83V16h2V7.83l2.59,2.58L17,9l-5-5L7,9z"/></g></symbol>
 <symbol id="attach-file" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"/></symbol>
 <symbol id="forward" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 8V4l8 8-8 8v-4H4V8z"/></symbol>
 <symbol id="view-headline" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/></symbol>
 <symbol id="vertical-split" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 13h8v2H3zm0 4h8v2H3zm0-8h8v2H3zm0-4h8v2H3zm16 2v10h-4V7h4m2-2h-8v14h8V5z"/></symbol>
 <symbol id="palette" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6h-1.77c-.28 0-.5.22-.5.5 0 .12.05.23.13.33.41.47.64 1.06.64 1.67 0 1.38-1.12 2.5-2.5 2.5zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5 0-.16-.08-.28-.14-.35-.41-.46-.63-1.05-.63-1.65 0-1.38 1.12-2.5 2.5-2.5H16c2.21 0 4-1.79 4-4 0-3.86-3.59-7-8-7z"/><circle cx="6.5" cy="11.5" r="1.5"/><circle cx="9.5" cy="7.5" r="1.5"/><circle cx="14.5" cy="7.5" r="1.5"/><circle cx="17.5" cy="11.5" r="1.5"/></symbol>
 <symbol id="folder-open" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/></symbol>
-
 
 <symbol id="coronavirus" viewBox="0 0 24 24"><rect fill="none" height="24" width="24"/><path d="M9.5,12c0,0.55-0.45,1-1,1s-1-0.45-1-1c0-0.55,0.45-1,1-1S9.5,11.45,9.5,12z M13.75,10c0.55,0,1-0.45,1-1s-0.45-1-1-1 s-1,0.45-1,1S13.2,10,13.75,10z M10.25,10c0.55,0,1-0.45,1-1s-0.45-1-1-1s-1,0.45-1,1S9.7,10,10.25,10z M10.25,14 c-0.55,0-1,0.45-1,1c0,0.55,0.45,1,1,1s1-0.45,1-1C11.25,14.45,10.8,14,10.25,14z M22,11.25v1.5c0,0.41-0.34,0.75-0.75,0.75 c-0.41,0-0.75-0.34-0.75-0.75h-1.54c-0.15,1.37-0.69,2.63-1.52,3.65l1.09,1.09l0.01-0.01c0.29-0.29,0.77-0.29,1.06,0 c0.29,0.29,0.29,0.77,0,1.06l-1.06,1.06c-0.29,0.29-0.77,0.29-1.06,0c-0.29-0.29-0.29-0.76-0.01-1.05l-1.09-1.09 c-1.02,0.82-2.27,1.36-3.64,1.51v1.54h0.01c0.41,0,0.75,0.34,0.75,0.75c0,0.41-0.34,0.75-0.75,0.75h-1.5 c-0.41,0-0.75-0.34-0.75-0.75c0-0.41,0.33-0.74,0.74-0.75v-1.55c-1.37-0.15-2.62-0.69-3.63-1.51l-1.09,1.09l0.01,0.01 c0.29,0.29,0.29,0.77,0,1.06c-0.29,0.29-0.77,0.29-1.06,0L4.4,18.54c-0.29-0.29-0.29-0.77,0-1.06c0.29-0.29,0.76-0.29,1.05-0.01 l1.09-1.09c-0.82-1.02-1.36-2.26-1.5-3.63H3.5c0,0.41-0.34,0.75-0.75,0.75C2.34,13.5,2,13.16,2,12.75v-1.5 c0-0.41,0.34-0.75,0.75-0.75c0.41,0,0.75,0.34,0.75,0.75h1.54c0.15-1.37,0.69-2.61,1.5-3.63L5.45,6.53C5.16,6.81,4.69,6.81,4.4,6.52 c-0.29-0.29-0.29-0.77,0-1.06L5.46,4.4c0.29-0.29,0.77-0.29,1.06,0c0.29,0.29,0.29,0.77,0,1.06L6.51,5.47L7.6,6.56 c1.02-0.82,2.26-1.36,3.63-1.51V3.5c-0.41-0.01-0.74-0.34-0.74-0.75C10.5,2.34,10.84,2,11.25,2h1.5c0.41,0,0.75,0.34,0.75,0.75 c0,0.41-0.34,0.75-0.75,0.75h-0.01v1.54c1.37,0.14,2.62,0.69,3.64,1.51l1.09-1.09c-0.29-0.29-0.28-0.76,0.01-1.05 c0.29-0.29,0.77-0.29,1.06,0l1.06,1.06c0.29,0.29,0.29,0.77,0,1.06s-0.77,0.29-1.06,0l-0.01-0.01L17.44,7.6 c0.82,1.02,1.37,2.27,1.52,3.65h1.54c0-0.41,0.34-0.75,0.75-0.75C21.66,10.5,22,10.84,22,11.25z M17,12c0-2.76-2.24-5-5-5 s-5,2.24-5,5s2.24,5,5,5S17,14.76,17,12z M12,11c-0.55,0-1,0.45-1,1c0,0.55,0.45,1,1,1s1-0.45,1-1C13,11.45,12.55,11,12,11z M15.5,11c-0.55,0-1,0.45-1,1c0,0.55,0.45,1,1,1s1-0.45,1-1C16.5,11.45,16.05,11,15.5,11z M13.75,14c-0.55,0-1,0.45-1,1 c0,0.55,0.45,1,1,1s1-0.45,1-1C14.75,14.45,14.3,14,13.75,14z"/></symbol>
 <symbol id="list-alt" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h6v2h-6zm0 4h6v2h-6zm0 4h6v2h-6zM7 7h2v2H7zm0 4h2v2H7zm0 4h2v2H7zM20.1 3H3.9c-.5 0-.9.4-.9.9v16.2c0 .4.4.9.9.9h16.2c.4 0 .9-.5.9-.9V3.9c0-.5-.5-.9-.9-.9zM19 19H5V5h14v14z"/></symbol>
@@ -196,7 +197,7 @@
 <symbol id="domain" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></symbol>
 <symbol id="face" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10.25 13c0 .69-.56 1.25-1.25 1.25S7.75 13.69 7.75 13s.56-1.25 1.25-1.25 1.25.56 1.25 1.25zM15 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm7 .25c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zM10.66 4.12C12.06 6.44 14.6 8 17.5 8c.46 0 .91-.05 1.34-.12C17.44 5.56 14.9 4 12 4c-.46 0-.91.05-1.34.12zM4.42 9.47c1.71-.97 3.03-2.55 3.66-4.44C6.37 6 5.05 7.58 4.42 9.47zM20 12c0-.78-.12-1.53-.33-2.24-.7.15-1.42.24-2.17.24-3.13 0-5.92-1.44-7.76-3.69C8.69 8.87 6.6 10.88 4 11.86c.01.04 0 .09 0 .14 0 4.41 3.59 8 8 8s8-3.59 8-8z"/></symbol>
 <symbol id="engineering" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M9,15c-2.67,0-8,1.34-8,4v2h16v-2C17,16.34,11.67,15,9,15z M3,19c0.22-0.72,3.31-2,6-2c2.7,0,5.8,1.29,6,2H3z"/><path d="M4.74,9H5c0,2.21,1.79,4,4,4s4-1.79,4-4h0.26c0.27,0,0.49-0.22,0.49-0.49V8.49c0-0.27-0.22-0.49-0.49-0.49H13 c0-1.48-0.81-2.75-2-3.45V5.5C11,5.78,10.78,6,10.5,6S10,5.78,10,5.5V4.14C9.68,4.06,9.35,4,9,4S8.32,4.06,8,4.14V5.5 C8,5.78,7.78,6,7.5,6S7,5.78,7,5.5V4.55C5.81,5.25,5,6.52,5,8H4.74C4.47,8,4.25,8.22,4.25,8.49v0.03C4.25,8.78,4.47,9,4.74,9z M11,9c0,1.1-0.9,2-2,2s-2-0.9-2-2H11z"/><path d="M21.98,6.23l0.93-0.83l-0.75-1.3l-1.19,0.39c-0.14-0.11-0.3-0.2-0.47-0.27L20.25,3h-1.5L18.5,4.22 c-0.17,0.07-0.33,0.16-0.48,0.27L16.84,4.1l-0.75,1.3l0.93,0.83C17,6.4,17,6.58,17.02,6.75L16.09,7.6l0.75,1.3l1.2-0.38 c0.13,0.1,0.28,0.18,0.43,0.25L18.75,10h1.5l0.27-1.22c0.16-0.07,0.3-0.15,0.44-0.25l1.19,0.38l0.75-1.3l-0.93-0.85 C22,6.57,21.99,6.4,21.98,6.23z M19.5,7.75c-0.69,0-1.25-0.56-1.25-1.25s0.56-1.25,1.25-1.25s1.25,0.56,1.25,1.25 S20.19,7.75,19.5,7.75z"/><path d="M19.4,10.79l-0.85,0.28c-0.1-0.08-0.21-0.14-0.33-0.19L18.04,10h-1.07l-0.18,0.87c-0.12,0.05-0.24,0.12-0.34,0.19 l-0.84-0.28l-0.54,0.93l0.66,0.59c-0.01,0.13-0.01,0.25,0,0.37l-0.66,0.61l0.54,0.93l0.86-0.27c0.1,0.07,0.2,0.13,0.31,0.18 L16.96,15h1.07l0.19-0.87c0.11-0.05,0.22-0.11,0.32-0.18l0.85,0.27l0.54-0.93l-0.66-0.61c0.01-0.13,0.01-0.25,0-0.37l0.66-0.59 L19.4,10.79z M17.5,13.39c-0.49,0-0.89-0.4-0.89-0.89c0-0.49,0.4-0.89,0.89-0.89s0.89,0.4,0.89,0.89 C18.39,12.99,17.99,13.39,17.5,13.39z"/></g></g></symbol>
-<symbol id="acccount-circle" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"/></symbol>
+<symbol id="account-circle" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"/></symbol>
 <symbol id="how-to-reg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zM5 18c.2-.63 2.57-1.68 4.96-1.94l2.04-2c-.39-.04-.68-.06-1-.06-2.67 0-8 1.34-8 4v2h9l-2-2H5zm15.6-5.5l-5.13 5.17-2.07-2.08L12 17l3.47 3.5L22 13.91z"/></symbol>
 <symbol id="support-agent" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M21,12.22C21,6.73,16.74,3,12,3c-4.69,0-9,3.65-9,9.28C2.4,12.62,2,13.26,2,14v2c0,1.1,0.9,2,2,2h1v-6.1 c0-3.87,3.13-7,7-7s7,3.13,7,7V19h-8v2h8c1.1,0,2-0.9,2-2v-1.22c0.59-0.31,1-0.92,1-1.64v-2.3C22,13.14,21.59,12.53,21,12.22z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M18,11.03C17.52,8.18,15.04,6,12.05,6c-3.03,0-6.29,2.51-6.03,6.45c2.47-1.01,4.33-3.21,4.86-5.89 C12.19,9.19,14.88,11,18,11.03z"/></g></g></symbol>
 <symbol id="local-shipping" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm2.22-3c-.55-.61-1.33-1-2.22-1s-1.67.39-2.22 1H3V6h12v9H8.22zM18 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></symbol>
@@ -231,9 +232,9 @@
     <div class="solution-header">
       <div class="solution-header-inner container">
         <div class="solution-heading d-flex align-items-center">
-            <a href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a>
+            <a href="/">Det Fælles Designsystem</a><span class="badge badge-error ml-4">Develop</span>
         </div>
-        <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
       </div>
 
       
@@ -252,7 +253,6 @@
     <div class="overlay"></div>
     <!-- Desktop main menu-->
     <nav class="nav d-none d-lg-block" aria-label="Hovedmenu">
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
@@ -408,12 +408,12 @@
 
     <!-- Mobile main menu-->
     <nav class="nav d-lg-none" aria-label="Mobil hovedmenu">
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
 
-        <div class="navbar-inner container">
+        <div class="navbar-inner">
           <ul class="nav-primary" role="menu">
             
 
@@ -438,163 +438,537 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="true"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="true"  >
         <span>Design</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="false">
-        <ul class="overflow-list">
-    
+      <div role="menu" aria-label="Design" class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="false">
+        <ul class="overflow-list" role="menu">
+          
 
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/design/farver/" role="menuitem" 
-  class="nav-link">
-  Farver
-</a>
-
-</li>
-
-    
-
-    
 
 <li class="  " role="none">
 
-
   
 
-<a href="/design/typografi/" role="menuitem" 
-  class="nav-link">
-  Typografi
-</a>
 
+  
+    
+    <a href="/design/" role="menuitem"  class="nav-link">
+        Design<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
 
-    
 
 <li class="  has-anchor-links" role="none">
 
-
   
 
-<a href="/design/borders/" role="menuitem" 
-  class="nav-link">
-  Hjørner, streger, skygger
-</a>
 
+  
+    
+    <a href="/design/farver/" role="menuitem"  class="nav-link">
+        Farver
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="true"  >
+          <span>Typografi</span>
+        </button>
+        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
 
   
 
-<a href="/design/ikoner/" role="menuitem" 
-  class="nav-link">
-  Ikoner
-</a>
 
+  
+    
+    <a href="/design/typografi/" role="menuitem"  class="nav-link">
+        Typografi<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
+            
+          
 
+
+
+
+  
     
 
+
+<li class="  " role="none">
+
+  
+
+
+  
     
+    <a href="/design/typografi/fonte/" role="menuitem"  class="nav-link">
+        Fonte
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
 
 <li class="  has-anchor-links" role="none">
 
-
   
 
-<a href="/design/logoer/" role="menuitem" 
-  class="nav-link">
-  Logoer
-</a>
 
+  
+    
+    <a href="/design/typografi/overskrifter/" role="menuitem"  class="nav-link">
+        Overskrifter
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  has-anchor-links" role="none">
 
+  
+
+
+  
+    
+    <a href="/design/typografi/felt-tabel-overskrifter/" role="menuitem"  class="nav-link">
+        Felt- og tabeloverskrifter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/design/layout/" role="menuitem" 
-  class="nav-link">
-  Layout
-</a>
 
+  
+    
+    <a href="/design/typografi/tekst/" role="menuitem"  class="nav-link">
+        Tekst
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/design/typografi/links/" role="menuitem"  class="nav-link">
+        Links
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <a href="/design/typografi/lister/" role="menuitem"  class="nav-link">
+        Lister
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/design/designressourcer/" role="menuitem" 
-  class="nav-link">
-  Designressourcer
-</a>
 
+  
+    
+    <a href="/design/borders/" role="menuitem"  class="nav-link">
+        Hjørner, streger, skygger
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <a href="/design/ikoner/" role="menuitem"  class="nav-link">
+        Ikoner
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/design/designtjek/" role="menuitem" 
-  class="nav-link">
-  Designtjek
-</a>
 
+  
+    
+    <a href="/design/logoer/" role="menuitem"  class="nav-link">
+        Logoer
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="true"  >
+          <span>Datavisualisering og infografik</span>
+        </button>
+        <div aria-label="Datavisualisering og infografik" class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/datavisualisering-infografik/" role="menuitem"  class="nav-link">
+        Datavisualisering og infografik<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/" role="menuitem"  class="nav-link">
+        Tilgængelig grafik
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/datavisualisering-infografik/datavisualisering/" role="menuitem"  class="nav-link">
+        Datavisualisering
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/datavisualisering-infografik/infografik/" role="menuitem"  class="nav-link">
+        Infografik
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="true"  >
+          <span>Layout</span>
+        </button>
+        <div aria-label="Layout" class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/design/layout/" role="menuitem"  class="nav-link">
+        Layout<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/layout/grid/" role="menuitem"  class="nav-link">
+        Grid og baseline grid
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/designressourcer/" role="menuitem"  class="nav-link">
+        Designressourcer
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/design/designtjek/" role="menuitem"  class="nav-link">
+        Designtjek
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
 
 <li class="current active " role="none">
 
-
   
 
-<a href="/design/tilgaengelighed/" role="menuitem" aria-current="page"
-  class="nav-link">
-  Tilgængelighed
-</a>
 
+  
     
-    <!-- Uses page.subnav as navmenu-->
-    
-    
-
-    
-
+    <a href="/design/tilgaengelighed/" role="menuitem" aria-current="page" class="nav-link">
+        Tilgængelighed
+      </a>
+     
     
   
-
 </li>
-
     
 
 
@@ -627,601 +1001,812 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-komponenter" aria-haspopup="true" aria-expanded="false"  >
         <span>Komponenter</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
-        <ul class="overflow-list">
-    
+      <div role="menu" aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level1-komponenter" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
 
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/komponenter/accordions/" role="menuitem" 
-  class="nav-link">
-  Accordions
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/komponenter/badges/" role="menuitem" 
-  class="nav-link">
-  Badges
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/komponenter/beskeder/" role="menuitem" 
-  class="nav-link">
-  Beskeder (Alerts)
-</a>
-
-</li>
-
-    
-
-    
 
 <li class="  " role="none">
 
-
   
 
-<a href="/komponenter/broedkrumme/" role="menuitem" 
-  class="nav-link">
-  Brødkrumme
-</a>
 
+  
+    
+    <a href="/komponenter/" role="menuitem"  class="nav-link">
+        Komponenter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
 
-    
 
 <li class="  has-anchor-links" role="none">
 
+  
+
+
+  
+    
+    <a href="/komponenter/accordions/" role="menuitem"  class="nav-link">
+        Accordions
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/cards/" role="menuitem" 
-  class="nav-link">
-  Cards
-</a>
 
+  
+    
+    <a href="/komponenter/badges/" role="menuitem"  class="nav-link">
+        Badges
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/beskeder/" role="menuitem"  class="nav-link">
+        Beskeder (Alerts)
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/komponenter/cookiemeddelelse/" role="menuitem" 
-  class="nav-link">
-  Cookiemeddelelse
-</a>
 
+  
+    
+    <a href="/komponenter/broedkrumme/" role="menuitem"  class="nav-link">
+        Brødkrumme
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  has-anchor-links" role="none">
 
-
   
 
-<a href="/komponenter/dato-felt/" role="menuitem" 
-  class="nav-link">
-  Datoangivelse
-</a>
 
+  
+    
+    <a href="/komponenter/cards/" role="menuitem"  class="nav-link">
+        Cards
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <a href="/komponenter/cookiemeddelelse/" role="menuitem"  class="nav-link">
+        Cookiemeddelelse
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/datovaelger/" role="menuitem" 
-  class="nav-link">
-  Datovælger
-</a>
 
+  
+    
+    <a href="/komponenter/dato-felt/" role="menuitem"  class="nav-link">
+        Datoangivelse
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/komponenter/detaljer/" role="menuitem" 
-  class="nav-link">
-  Detaljer
-</a>
 
+  
+    
+    <a href="/komponenter/datovaelger/" role="menuitem"  class="nav-link">
+        Datovælger
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/komponenter/drop-down/" role="menuitem" 
-  class="nav-link">
-  Dropdown-menu
-</a>
 
+  
+    
+    <a href="/komponenter/detaljer/" role="menuitem"  class="nav-link">
+        Detaljer
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
-
   
-
-<a href="/komponenter/faneblad/" role="menuitem" 
-  class="nav-link">
-  Faneblade
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
 
 
   
-
-<a href="/komponenter/fejlmeddelelser/" role="menuitem" 
-  class="nav-link">
-  Fejlmeddelelser
-</a>
-
+    
+    <a href="/komponenter/drop-down/" role="menuitem"  class="nav-link">
+        Dropdown-menu
+      </a>
+     
+    
+  
 </li>
-
     
-
-    
-
-<li class="  has-anchor-links" role="none">
-
 
   
-
-<a href="/komponenter/fejlopsummering/" role="menuitem" 
-  class="nav-link">
-  Fejlopsummering
-</a>
-
-</li>
-
     
 
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/komponenter/felter/" role="menuitem" 
-  class="nav-link">
-  Felter
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/komponenter/footers/" role="menuitem" 
-  class="nav-link">
-  Footers
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/komponenter/formular/" role="menuitem" 
-  class="nav-link">
-  Formular
-</a>
-
-</li>
-
-    
-
-    
 
 <li class="  " role="none">
 
-
   
 
-<a href="/komponenter/funktionslink/" role="menuitem" 
-  class="nav-link">
-  Funktionslink
-</a>
 
+  
+    
+    <a href="/komponenter/faneblad/" role="menuitem"  class="nav-link">
+        Faneblade
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  has-anchor-links" role="none">
 
-
   
 
-<a href="/komponenter/headers/" role="menuitem" 
-  class="nav-link">
-  Headers
-</a>
 
+  
+    
+    <a href="/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+        Fejlmeddelelser
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  has-anchor-links" role="none">
 
+  
+
+
+  
+    
+    <a href="/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+        Fejlopsummering
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/knapper/" role="menuitem" 
-  class="nav-link">
-  Knapper
-</a>
 
+  
+    
+    <a href="/komponenter/felter/" role="menuitem"  class="nav-link">
+        Felter
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/footers/" role="menuitem"  class="nav-link">
+        Footers
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/formular/" role="menuitem"  class="nav-link">
+        Formular
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/komponenter/modal/" role="menuitem" 
-  class="nav-link">
-  Modalvindue
-</a>
 
+  
+    
+    <a href="/komponenter/funktionslink/" role="menuitem"  class="nav-link">
+        Funktionslink
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  has-anchor-links" role="none">
 
-
   
 
-<a href="/komponenter/notifikation/" role="menuitem" 
-  class="nav-link">
-  Notifikation (Toast)
-</a>
 
+  
+    
+    <a href="/komponenter/headers/" role="menuitem"  class="nav-link">
+        Headers
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  has-anchor-links" role="none">
 
-
   
-
-<a href="/komponenter/overflowmenu/" role="menuitem" 
-  class="nav-link">
-  Overflow menu
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
 
 
   
-
-<a href="/komponenter/radioknap/" role="menuitem" 
-  class="nav-link">
-  Radioknap
-</a>
-
+    
+    <a href="/komponenter/knapper/" role="menuitem"  class="nav-link">
+        Knapper
+      </a>
+     
+    
+  
 </li>
-
     
-
-    
-
-<li class="  has-anchor-links" role="none">
-
 
   
-
-<a href="/komponenter/sidenav/" role="menuitem" 
-  class="nav-link">
-  Sidenavigation
-</a>
-
-</li>
-
     
 
-    
 
 <li class="  " role="none">
 
-
   
-
-<a href="/komponenter/skip-link/" role="menuitem" 
-  class="nav-link">
-  Skip-link
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
 
 
   
-
-<a href="/komponenter/spinner/" role="menuitem" 
-  class="nav-link">
-  Spinner
-</a>
-
+    
+    <a href="/komponenter/modal/" role="menuitem"  class="nav-link">
+        Modalvindue
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  has-anchor-links" role="none">
 
-
   
-
-<a href="/komponenter/sprogvaegler/" role="menuitem" 
-  class="nav-link">
-  Sprogvælger
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
 
 
   
-
-<a href="/komponenter/search/" role="menuitem" 
-  class="nav-link">
-  Søgefelt
-</a>
-
+    
+    <a href="/komponenter/notifikation/" role="menuitem"  class="nav-link">
+        Notifikation (Toast)
+      </a>
+     
+    
+  
 </li>
-
     
-
-    
-
-<li class="  " role="none">
-
 
   
-
-<a href="/komponenter/tilbage-link/" role="menuitem" 
-  class="nav-link">
-  Tilbage link
-</a>
-
-</li>
-
     
 
-    
 
 <li class="  has-anchor-links" role="none">
 
-
   
-
-<a href="/komponenter/tables/" role="menuitem" 
-  class="nav-link">
-  Tabeller
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
 
 
   
-
-<a href="/komponenter/tags/" role="menuitem" 
-  class="nav-link">
-  Tags
-</a>
-
+    
+    <a href="/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
+        Overflow menu
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/komponenter/textarea/" role="menuitem" 
-  class="nav-link">
-  Tekstområde
-</a>
 
+  
+    
+    <a href="/komponenter/paginering/" role="menuitem"  class="nav-link">
+        Paginering
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  has-anchor-links" role="none">
 
+  
+
+
+  
+    
+    <a href="/komponenter/radioknap/" role="menuitem"  class="nav-link">
+        Radioknap
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/tjekboks/" role="menuitem" 
-  class="nav-link">
-  Tjekboks
-</a>
 
+  
+    
+    <a href="/komponenter/sidenav/" role="menuitem"  class="nav-link">
+        Sidenavigation
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
-
   
-
-<a href="/komponenter/toggle/" role="menuitem" 
-  class="nav-link">
-  Toggle switch
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links" role="none">
 
 
   
-
-<a href="/komponenter/tooltip/" role="menuitem" 
-  class="nav-link">
-  Tooltip
-</a>
-
+    
+    <a href="/komponenter/skip-link/" role="menuitem"  class="nav-link">
+        Skip-link
+      </a>
+     
+    
+  
 </li>
-
     
-
-    
-
-<li class="  has-anchor-links" role="none">
-
 
   
-
-<a href="/komponenter/trinindikatorer/" role="menuitem" 
-  class="nav-link">
-  Trinindikatorer
-</a>
-
-</li>
-
     
 
-    
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <a href="/komponenter/spinner/" role="menuitem"  class="nav-link">
+        Spinner
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/komponenter/fil-upload/" role="menuitem" 
-  class="nav-link">
-  Vedhæft fil (Upload)
-</a>
 
+  
+    
+    <a href="/komponenter/sprogvaegler/" role="menuitem"  class="nav-link">
+        Sprogvælger
+      </a>
+     
+    
+  
 </li>
+    
 
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/strukturerede-lister/" role="menuitem"  class="nav-link">
+        Strukturerede lister
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/search/" role="menuitem"  class="nav-link">
+        Søgefelt
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tilbage-link/" role="menuitem"  class="nav-link">
+        Tilbage link
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tables/" role="menuitem"  class="nav-link">
+        Tabeller
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tags/" role="menuitem"  class="nav-link">
+        Tags
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/textarea/" role="menuitem"  class="nav-link">
+        Tekstområde
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+        Tjekboks
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/toggle/" role="menuitem"  class="nav-link">
+        Toggle switch
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tooltip/" role="menuitem"  class="nav-link">
+        Tooltip
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/trinindikatorer/" role="menuitem"  class="nav-link">
+        Trinindikatorer
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/fil-upload/" role="menuitem"  class="nav-link">
+        Vedhæft fil (Upload)
+      </a>
+     
+    
+  
+</li>
     
 
 
@@ -1254,57 +1839,187 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow3" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow3" aria-hidden="true">
-        <ul class="overflow-list">
+      <div role="menu" aria-label="Eksempler" class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
+
+
+<li class="  " role="none">
+
+  
+
+
+  
     
+    <a href="/eksempler/" role="menuitem"  class="nav-link">
+        Eksempler<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+
+          
+
+
+
+
+  
+    
+
 
 <li class="  has-anchor-links" role="none">
 
-
   
 
-<a href="/eksempler/selvbetjeningsloesninger/" role="menuitem" 
-  class="nav-link">
-  Selvbetjeningsløsninger
-</a>
 
+  
+    
+    <a href="/eksempler/selvbetjeningsloesninger/" role="menuitem"  class="nav-link">
+        Selvbetjeningsløsninger
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/eksempler/opsummeringsside/" role="menuitem" 
-  class="nav-link">
-  Opsummeringsside
-</a>
 
-</li>
-
+  
     
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
 
-    
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
+          <span>Patterns</span>
+        </button>
+        <div aria-label="Patterns" class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/" role="menuitem"  class="nav-link">
+        Patterns<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  " role="none">
 
   
 
-<a href="/eksempler/kvittering/" role="menuitem" 
-  class="nav-link">
-  Kvittering
-</a>
 
+  
+    
+    <a href="/eksempler/patterns/angivelse-af-telefonnummer/" role="menuitem"  class="nav-link">
+        Angivelse af telefonnummer
+      </a>
+     
+    
+  
 </li>
+    
 
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/forlad-siden/" role="menuitem"  class="nav-link">
+        Er du sikker på, du vil forlade siden?
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/session-udloeber/" role="menuitem"  class="nav-link">
+        Session udløber
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/eksempler/templates/" role="menuitem"  class="nav-link">
+        Templates
+      </a>
+     
+    
+  
+</li>
     
 
 
@@ -1337,185 +2052,1162 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow4" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
         <span>Kode</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow4" aria-hidden="true">
-        <ul class="overflow-list">
-    
+      <div role="menu" aria-label="Kode" class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/kode/implementering/" role="menuitem" 
-  class="nav-link">
-  Implementering af DKFDS
-</a>
 
+  
+    
+    <a href="/kode/" role="menuitem"  class="nav-link">
+        Kode<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
 
-    
 
 <li class="  " role="none">
 
-
   
 
-<a href="/kode/komponenter/" role="menuitem" 
-  class="nav-link">
-  Komponenter
-</a>
 
+  
+    
+    <a href="/kode/implementering/" role="menuitem"  class="nav-link">
+        Implementering af DKFDS
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
+          <span>Komponenter</span>
+        </button>
+        <div aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
 
   
 
-<a href="/kode/browserunderstoettelse/" role="menuitem" 
-  class="nav-link">
-  Browserunderstøttelse
-</a>
 
+  
+    
+    <a href="/kode/komponenter/" role="menuitem"  class="nav-link">
+        Komponenter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
+            
+          
 
+
+
+
+  
     
 
-    
 
 <li class="  has-anchor-links" role="none">
 
-
   
-
-<a href="/kode/grid/" role="menuitem" 
-  class="nav-link">
-  Grid
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
 
 
   
-
-<a href="/kode/typografi/" role="menuitem" 
-  class="nav-link">
-  Typografi
-</a>
-
+    
+    <a href="/kode/komponenter/accordions/" role="menuitem"  class="nav-link">
+        Accordions
+      </a>
+     
+    
+  
 </li>
-
     
-
-    
-
-<li class="  " role="none">
-
 
   
-
-<a href="/kode/ikoner/" role="menuitem" 
-  class="nav-link">
-  Ikoner
-</a>
-
-</li>
-
     
 
-    
 
 <li class="  has-anchor-links" role="none">
 
-
   
-
-<a href="/kode/utilities/" role="menuitem" 
-  class="nav-link">
-  Hjælpeklasser (Utilities)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
 
 
   
-
-<a href="/kode/eksempler-implementering/" role="menuitem" 
-  class="nav-link">
-  Eksempler på implementering
-</a>
-
+    
+    <a href="/kode/komponenter/badges/" role="menuitem"  class="nav-link">
+        Badges
+      </a>
+     
+    
+  
 </li>
-
     
-
-    
-
-<li class="  " role="none">
-
 
   
-
-<a href="/kode/print/" role="menuitem" 
-  class="nav-link">
-  Print
-</a>
-
-</li>
-
     
 
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/kode/plugins/" role="menuitem" 
-  class="nav-link">
-  Plugins
-</a>
-
-</li>
-
-    
-
-    
 
 <li class="  has-anchor-links" role="none">
 
+  
+
+
+  
+    
+    <a href="/kode/komponenter/beskeder/" role="menuitem"  class="nav-link">
+        Beskeder (Alerts)
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
 
   
 
-<a href="/kode/anbefalinger-vaerktoejer/" role="menuitem" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
 
+  
+    
+    <a href="/kode/komponenter/broedkrumme/" role="menuitem"  class="nav-link">
+        Brødkrumme
+      </a>
+     
+    
+  
 </li>
+    
 
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/cards/" role="menuitem"  class="nav-link">
+        Cards
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/cookiemeddelelse/" role="menuitem"  class="nav-link">
+        Cookiemeddelelse
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/dato-felt/" role="menuitem"  class="nav-link">
+        Datoangivelse
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/datovaelger/" role="menuitem"  class="nav-link">
+        Datovælger
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/detaljer/" role="menuitem"  class="nav-link">
+        Detaljer
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/drop-down/" role="menuitem"  class="nav-link">
+        Dropdown-menu
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/faneblad/" role="menuitem"  class="nav-link">
+        Faneblade
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+        Fejlmeddelelser
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+        Fejlopsummering
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/felter/" role="menuitem"  class="nav-link">
+        Felter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/footers/" role="menuitem"  class="nav-link">
+        Footers
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/formular/" role="menuitem"  class="nav-link">
+        Formular
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/funktionslink/" role="menuitem"  class="nav-link">
+        Funktionslink
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/headers/" role="menuitem"  class="nav-link">
+        Headers
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/knapper/" role="menuitem"  class="nav-link">
+        Knapper
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/modal/" role="menuitem"  class="nav-link">
+        Modalvindue
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/notifikation/" role="menuitem"  class="nav-link">
+        Notifikation (Toast)
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
+        Overflow menu
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/paginering/" role="menuitem"  class="nav-link">
+        Paginering
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/radioknap/" role="menuitem"  class="nav-link">
+        Radioknap
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/sidenav/" role="menuitem"  class="nav-link">
+        Sidenavigation
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/skip-link/" role="menuitem"  class="nav-link">
+        Skip-link
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/spinner/" role="menuitem"  class="nav-link">
+        Spinner
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/sprogvaegler/" role="menuitem"  class="nav-link">
+        Sprogvælger
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/strukturerede-lister/" role="menuitem"  class="nav-link">
+        Strukturerede lister
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/search/" role="menuitem"  class="nav-link">
+        Søgefelt
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tilbage-link/" role="menuitem"  class="nav-link">
+        Tilbage link
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tables/" role="menuitem"  class="nav-link">
+        Tabeller
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tags/" role="menuitem"  class="nav-link">
+        Tags
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/textarea/" role="menuitem"  class="nav-link">
+        Tekstområde
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+        Tjekboks
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tooltip/" role="menuitem"  class="nav-link">
+        Tooltip
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/trinindikatorer/" role="menuitem"  class="nav-link">
+        Trinindikatorer
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/fil-upload/" role="menuitem"  class="nav-link">
+        Vedhæft fil (Upload)
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/browserunderstoettelse/" role="menuitem"  class="nav-link">
+        Browserunderstøttelse
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/grid/" role="menuitem"  class="nav-link">
+        Grid
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
+          <span>Typografi</span>
+        </button>
+        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/" role="menuitem"  class="nav-link">
+        Typografi<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/overskrifter/" role="menuitem"  class="nav-link">
+        Overskrifter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/tekst/" role="menuitem"  class="nav-link">
+        Tekst
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/links/" role="menuitem"  class="nav-link">
+        Links
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/typografi/lister/" role="menuitem"  class="nav-link">
+        Lister
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/ikoner/" role="menuitem"  class="nav-link">
+        Ikoner
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/utilities/" role="menuitem"  class="nav-link">
+        Hjælpeklasser (Utilities)
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/eksempler-implementering/" role="menuitem"  class="nav-link">
+        Eksempler på implementering
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/print/" role="menuitem"  class="nav-link">
+        Print
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/plugins/" role="menuitem"  class="nav-link">
+        Plugins
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/anbefalinger-vaerktoejer/" role="menuitem"  class="nav-link">
+        Anbefalinger og værktøjer
+      </a>
+     
+    
+  
+</li>
     
 
 
@@ -1548,41 +3240,72 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow5" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-krav" aria-haspopup="true" aria-expanded="false"  >
         <span>Krav</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow5" aria-hidden="true">
-        <ul class="overflow-list">
-    
+      <div role="menu" aria-label="Krav" class="overflow-menu-inner" id="submenu-level1-krav" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
 
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/krav/borgerdk-virk/" role="menuitem" 
-  class="nav-link">
-  Når du skal på borger.dk og Virk
-</a>
-
-</li>
-
-    
-
-    
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <a href="/krav/" role="menuitem"  class="nav-link">
+        Krav<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+
+          
+
+
+
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
 
   
 
-<a href="/krav/om-kravene/" role="menuitem" 
-  class="nav-link">
-  Om kravene til selvbetjeningsløsninger
-</a>
 
+  
+    
+    <a href="/krav/borgerdk-virk/" role="menuitem"  class="nav-link">
+        Når du skal på borger.dk og Virk
+      </a>
+     
+    
+  
 </li>
+    
 
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/krav/om-kravene/" role="menuitem"  class="nav-link">
+        Om kravene til selvbetjeningsløsninger
+      </a>
+     
+    
+  
+</li>
     
 
 
@@ -1615,89 +3338,152 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow6" aria-haspopup="true" aria-expanded="false"  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-fællesskab" aria-haspopup="true" aria-expanded="false"  >
         <span>Fællesskab</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow6" aria-hidden="true">
-        <ul class="overflow-list">
-    
+      <div role="menu" aria-label="Fællesskab" class="overflow-menu-inner" id="submenu-level1-fællesskab" aria-hidden="true">
+        <ul class="overflow-list" role="menu">
+          
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/faellesskab/samarbejdsforum/" role="menuitem" 
-  class="nav-link">
-  Samarbejdsforum
-</a>
 
+  
+    
+    <a href="/faellesskab/" role="menuitem"  class="nav-link">
+        Fællesskab<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
 </li>
 
+          
+
+
+
+
+  
     
 
-    
 
 <li class="  " role="none">
 
-
   
 
-<a href="/faellesskab/nyhedsmail/" role="menuitem" 
-  class="nav-link">
-  Nyhedsmail
-</a>
 
+  
+    
+    <a href="/faellesskab/samarbejdsforum/" role="menuitem"  class="nav-link">
+        Samarbejdsforum
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
-
   
 
-<a href="/faellesskab/kontakt-support/" role="menuitem" 
-  class="nav-link">
-  Kontakt og support
-</a>
 
+  
+    
+    <a href="/faellesskab/governance/" role="menuitem"  class="nav-link">
+        Governance
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
 
 <li class="  " role="none">
 
+  
+
+
+  
+    
+    <a href="/faellesskab/nyhedsmail/" role="menuitem"  class="nav-link">
+        Nyhedsmail
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  " role="none">
 
   
 
-<a href="/faellesskab/roadmap/" role="menuitem" 
-  class="nav-link">
-  Roadmap
-</a>
 
+  
+    
+    <a href="/faellesskab/kontakt-support/" role="menuitem"  class="nav-link">
+        Kontakt og support
+      </a>
+     
+    
+  
 </li>
-
     
 
+  
     
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/faellesskab/roadmap/" role="menuitem"  class="nav-link">
+        Roadmap
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
 
 <li class="  has-anchor-links" role="none">
 
-
   
 
-<a href="/faellesskab/releases/" role="menuitem" 
-  class="nav-link">
-  Release notes
-</a>
 
+  
+    
+    <a href="/faellesskab/releases/" role="menuitem"  class="nav-link">
+        Release notes
+      </a>
+     
+    
+  
 </li>
-
     
 
 
@@ -1810,6 +3596,22 @@
 
     
 
+<li class="  " role="none">
+
+
+  
+
+<a href="/design/datavisualisering-infografik/" role="menuitem" 
+  class="nav-link">
+  Datavisualisering og infografik
+</a>
+
+</li>
+
+    
+
+    
+
 <li class="  has-anchor-links" role="none">
 
 
@@ -1891,7 +3693,7 @@
     <main class="col-12 col-lg-9" id="main-content">
           <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <div class="alert-body">
-            <p class="alert-heading pr-7">Vælg et tema</p><button class="function-link alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
+            <p class="alert-heading pr-7">Vælg et tema</p><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
             <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
@@ -1902,10 +3704,13 @@
           
           
 
-          <p class="subheading">
+          <div class="subheading">
             Design
-          </p>
+          </div>
           <h1 id="tilgængelighed">Tilgængelighed</h1>
+          
+          
+
           
 
           
@@ -1924,7 +3729,7 @@
 
 <p>Har du andre tilgængelighedsværktøj man kan bruge ved udvikling, som du synes vi bør dele i fællesskabet så skriv til os via Github eller på mail.</p>
 
-<h3>Hvorfor tilgængelighed?</h3>
+<h2 class="h3">Hvorfor tilgængelighed?</h2>
 
 <p>Selvbetjeningsløsninger og alle andre offentlige hjemmesider skal overholde den danske lovgivning omkring tilgængelighed på <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> niveau AA. Du skal teste alle løsninger og deres funktioner op imod disse krav, som ikke blot øger tilgængeligheden for brugere med særlige behov, men for alle brugere.</p>
 
@@ -1939,7 +3744,7 @@
   <li>Kan vi løse behovet med en mere simpel og gennemprøvet model?</li>
 </ul>
 
-<h3>Sådan tester du din løsnings tilgængelighed</h3>
+<h2 class="h3">Sådan tester du din løsnings tilgængelighed</h2>
 
 <p>Første skridt på vejen til en tilgængelig løsning er at sikre, at koden i din løsnings brugergrænseflade er valid og følger anbefalingerne fra WHATWG og W3C.</p>
 
@@ -1947,17 +3752,17 @@
 
 <p>Når du skal teste for tilgængelighed, anbefaler Det Fælles Designsystem, at du som minimum anvender analyseværktøjer, som fx:</p>
 
-<h4>WebAIM</h4>
+<h3 class="h4">WebAIM</h3>
 
 <p>WebAIM er en hjemmeside, der er udviklet og drevet af Utah State University. Siden indeholder en række funktioner, der hjælper dig til at udvikle og teste for tilgængelighed. Deres anbefalinger er synkroniseret med krav og anbefalinger fra W3C.</p>
 
 <p>WebAIM stiller funktionen Wave gratis til rådighed. Wave giver med det samme en analyse og rapport på din løsnings tilgængelighed og udfordringer.</p>
 
-<h5>Læs mere om WebAIM</h5>
+<h4 class="h5">Læs mere om WebAIM</h4>
 
 <p><a href="https://webaim.org/resources/" class="icon-link">WebAIM<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
 
-<h4>Oplæsning</h4>
+<h3 class="h4">Oplæsning</h3>
 
 <p>En af de store udfordringer i tilgængeligt design er at teste oplæsningen af sidens indhold, og der findes ikke en automatiseret måde at gøre det på. Browserproducenterne og de forskellige platforme har desuden meget forskellige tilgange til oplæsning. Alle har større eller mindre udfordringer - især med matematiske og fysiske særtegn.</p>
 
@@ -1968,7 +3773,7 @@
   <li>Følg vejledningen fra WebAIM omkring aftestning med Voice Over (Mac) og Oplæser på Windows 10.</li>
 </ul>
 
-<h5>Læs mere om oplæsning</h5>
+<h4 class="h5">Læs mere om oplæsning</h4>
 
 <ul class="nobullet-list">
 <li><a href="https://webaim.org/articles/voiceover/" class="icon-link">Voice over<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
@@ -1976,10 +3781,85 @@
 <li><a href="https://youtu.be/o_mvO6EQ0tM" class="icon-link">Introduction to Screen Readers<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-<h4>Chrome Developer Tools</h4>
+<h3 class="h4">Chrome Developer Tools</h3>
 
 <p>Google Chrome stiller en lang række værktøjer til rådighed for test og fejlsøgning i en løsning. Ved at trykke på F12, når du står i Chrome, åbner Developer Tools alt lige fra kodevisning til performance-måling. Du kan se en farves tilgængelighedsniveau ved at klikke på farven i ”Elements” visning. Her kan du også justere den. Du kan se resultatet direkte i den aktuelle sidevisning på samme måde som ved redigering af øvrige parametre i Chrome Developer Tools.</p>
 
+
+          
+            
+            
+              
+
+              
+              
+              
+
+              
+              
+              
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+                
+                  
+                
+                  
+                
+                  
+                
+              
+              
+
+              
+              
+              
+                
+                  
+                
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+                
+                  
+                  
+                  
+          
       </section>
     </main>
 
@@ -2026,8 +3906,15 @@
     
 
     <script src="/assets/js/theme.js"></script>
-<script src="/assets/js/requirements-tool~styleguide.js"></script>
-<script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/styleguide.js"></script>
+<script src="/assets/js/vendor.js"></script>
+
+
+
+
+
+
+
+
   </body>
 </html>

@@ -1,5 +1,6 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-<table class="table table--responsive-headers mt-6" id="sortingTable">
+<div class="table--responsive-scroll">
+<table class="table mt-6" id="sortingTable">
     <thead>
       <tr>
         <th aria-sort="ascending" class="table-header-no-wrap">Affaldstype<button id="btn-sort-by-affaldstype" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-ascending"></use></svg><span class="sr-only">Sortér efter affaldstype</span></button></th>
@@ -35,3 +36,4 @@
       </tr>
     </tbody>
   </table>
+  </div>

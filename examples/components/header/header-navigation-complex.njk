@@ -1,9 +1,8 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-{% from "components/modal/modal.njk" import modal as modal %}
 
     <div class="overlay"></div>
     <nav class=" nav">
-      <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <!-- Start: Hovedmenu -->
       <div class="navbar navbar-primary">
@@ -60,7 +59,7 @@
               <div class="overflow-menu overflow-menu--open-left">
                 <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow2" aria-haspopup="true" aria-expanded="false">
                   Overflow menu
-                  {{ icon_svg('arrow-drop-down') }}
+                  {{ icon_svg({"name": 'arrow-drop-down'}) }}
                 </button>
                 <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
                   <ul class="overflow-list">
@@ -81,13 +80,13 @@
       <div class="navbar">
         <div class="navbar-inner container">
           <div class="nav-secondary">
-            <p class="h4 nav-secondary-heading">Ekstra menu- og funktionslinje</p>
+            <p class="nav-secondary-heading">Ekstra menu- og funktionslinje</p>
             <ul class="unstyled-list nav-actions">
               <li>
                 <div class="overflow-menu overflow-menu--open-right">
                   <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow3" aria-haspopup="true" aria-expanded="false">
                     Overflow menu
-                    {{ icon_svg('arrow-drop-down') }}
+                    {{ icon_svg({"name":'arrow-drop-down'}) }}
                   </button>
                   <div class="overflow-menu-inner" id="headeroverflow3" aria-hidden="true">
                     <ul class="overflow-list">
@@ -120,8 +119,8 @@
       <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
           <div class="nav-actions">
-            <a href="" class="function-link">{{icon_svg("print", "", "", true)}}Funktionsikon</a>
-            <a href="" class="function-link">{{icon_svg("save", "", "", true)}}Funktionsikon</a>
+            <a href="" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
+            <a href="" class="function-link">{{icon_svg({"name": "save"})}}Funktionsikon</a>
           </div>
         </div>
       </div>

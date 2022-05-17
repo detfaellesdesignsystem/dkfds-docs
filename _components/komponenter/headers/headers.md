@@ -24,7 +24,7 @@ subnav:
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Brug headeren til at give brugen et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen. 
+Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen. 
 
 Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed, evt. med kontaktoplysninger.
 
@@ -56,7 +56,7 @@ Når du laver en header, bør du følge disse principper:
 <div><img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" /></div>
 
 
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 <a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>

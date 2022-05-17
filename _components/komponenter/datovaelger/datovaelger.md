@@ -10,7 +10,7 @@ tags:
 lead: Ét felt med knap, hvor man kan vælge en dato
 component: date-picker
 componentTitle: Eksempel på datovælger
-componentCode: "/kode/komponenter/datovaelger"
+componentCode: "/kode/komponenter/datovaelger/"
 ---
 
 {:.h3 #retningslinjer}

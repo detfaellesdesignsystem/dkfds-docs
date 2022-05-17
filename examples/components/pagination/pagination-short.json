@@ -1,0 +1,25 @@
+{
+    "paginationExample": {
+        "items": [
+        {
+            "id": "pagination-ID-short-1",
+            "ariaLabel": "Pagineringseksempel med 7 sider, side 1 valgt",
+            "totalPages": 7,
+            "currentPage": 1
+        },
+        {
+            "id": "pagination-ID-short-4",
+            "ariaLabel": "Pagineringseksempel med 7 sider, side 4 valgt",
+            "totalPages": 7,
+            "currentPage": 4
+        },
+        {
+            "id": "pagination-ID-short-7",
+            "ariaLabel": "Pagineringseksempel med 7 sider, side 7 valgt",
+            "totalPages": 7,
+            "currentPage": 7
+        }
+      ]
+    }
+}
+  

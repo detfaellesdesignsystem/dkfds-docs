@@ -7,22 +7,22 @@
 {% from "components/modal/modal.njk" import modal as modal %}
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/footers/footer.njk" import footer as footer %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
 {% block header %}
-  <header class="header">
+  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
-        <p class="user bold">Christian Emil Vestergaard Christiansen</p>
+        <p class="user bold">Anders Andersen</p>
         <a href="#" class="button button-secondary button-signout">
           Log af
         </a>
@@ -41,7 +41,7 @@
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
     <a href="javascript:void(0);" class="back-link">Tilbage</a>
 
-    {{ alert(error_summary.classes, error_summary.role, error_summary.title, error_summary.content, error_summary.aria, "", error_summary.contentContainer ) }}
+    {{ alert(error_summary) }}
 
     <h1>Dokumentation</h1>
 
@@ -53,15 +53,15 @@
 
     <h2 class="h5 mt-8">Vedhæftet</h2>
     <ul class="bordered-list w-percent-md-40 mt-3">
-      <li><div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg('file-pdf')}}Lægeerklæring.pdf</a><button class="function-link">{{ icon_svg('delete')}}Slet</button></div></li>
-      <li><div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg('file-pdf')}}Fuldmagt_88.pdf</a><button class="function-link">{{ icon_svg('delete')}}Slet</button></div></li>
+      <li><div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Lægeerklæring.pdf</a><button class="function-link">{{ icon_svg({"name": 'trash-can'})}}Slet</button></div></li>
+      <li><div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Fuldmagt_88.pdf</a><button class="function-link">{{ icon_svg({"name": 'trash-can'})}}Slet</button></div></li>
     </ul>
     
     <button class="button button-primary mt-8">Næste</button>
 </main>
 {% endblock %}
 {% block footer -%}
-  {{ footer_simple(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

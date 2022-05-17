@@ -1,10 +1,10 @@
 {
   "tringuiden": {
-    "trinlisten": [
+    "steps": [
       {
         "text": "Trin 1",
         "information": "Informationstekst for trin 1",
-        "icon": "done"
+        "icon": {"name":"done", "ariaLabel": "Gennemført"}
       },
       {
         "text": "Trin 2",

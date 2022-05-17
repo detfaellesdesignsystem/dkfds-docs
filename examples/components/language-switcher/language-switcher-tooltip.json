@@ -1,6 +1,6 @@
 {"data": {
-      "aria_label": "Vælg sprog fra listen",
-      "first_aria_label": "Valgt sprog: Dansk",
+      "ariaLabel": "Vælg sprog fra listen",
+      "firstAriaLabel": "Valgt sprog: Dansk",
       "languages": [
         {"code": "da", "name": "Dansk", "href": "?lang=da"},
         {"code": "en-GB", "name": "English", "tooltip": "Engelsk", "href": "?lang=en-GB"},

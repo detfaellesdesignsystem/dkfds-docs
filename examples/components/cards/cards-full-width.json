@@ -1,15 +1,11 @@
 {
-  "cards1_example": {
-    "items": [
-      {
-        "name": "card1",
-        "header": "Header",
-        "subheader": "Understøttende tekst",
-        "cardtext": "Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til.",
-        "cardcontent": "<!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --><div class='row bg-teal p-6'><div class='col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0'><h2>Aliquam aliquet niboh faucibus varius</h2><p>Aenean euismod vestibulum lacinia. Pellentesque nec nisi diam. Pellentesque nec urna vel ante ultrices facilisis sed in dolor. Curabitur eu leo semper, gravida justo at, euismod ex.</p></div><div class='col-12 col-md-6 col-lg-7 align-text-right'><img src='{{ site.baseurl }}/assets/img/cards/Card-illustration-graf.svg' alt='Graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100 w-percent-lg-80' /></div></div>",
-        "actionbuttons": "<button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button>",
-        "actionlinks": "<ul class=\"nobullet-list\"><li><a href=\"javascript:void(0);\" class=\"default link state\">Et link til et sted i løsningen</a></li><li><a href=\"javascript:void(0);\" class=\"icon-link\">Et link til et sted uden for løsningen<svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\" tabindex=\"-1\"><use xlink:href=\"#open-in-new\"></use></svg></a></li></ul>"
+  "card_example": {
+        "heading": "Header",
+        "headingLevel": "h2",
+        "subheading": "Understøttende tekst",
+        "text": "Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til.",
+        "content": "<!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --><div class='row background-data-green-blue-300 p-6'><div class='col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0'><h2>Aliquam aliquet niboh faucibus varius</h2><p>Aenean euismod vestibulum lacinia. Pellentesque nec nisi diam. Pellentesque nec urna vel ante ultrices facilisis sed in dolor. Curabitur eu leo semper, gravida justo at, euismod ex.</p></div><div class='col-12 col-md-6 col-lg-7 align-text-right'><img src='{{ site.baseurl }}/assets/img/cards/Card-illustration-graf.svg' alt='Graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100 mt-md-4' /></div></div>",
+        "actionButtons": "<button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button>",
+        "actionLinks": "<ul class=\"nobullet-list\"><li><a href=\"javascript:void(0);\" class=\"default link state\">Et link til et sted i løsningen</a></li><li><a href=\"javascript:void(0);\" class=\"icon-link\">Et link til et sted uden for løsningen<svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\" tabindex=\"-1\"><use xlink:href=\"#open-in-new\"></use></svg></a></li></ul>"
       }
-    ]
-  }
 }

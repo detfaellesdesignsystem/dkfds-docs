@@ -1,28 +1,37 @@
 {
-  "example_inputs": [
+  "params": [
     {
       "id": "input-optional1",
       "name": "input-optional1",
-      "label": "Label",
-      "optional": true
+      "label": {
+        "text": "Label"
+      },
+      "required": false
     },
     {
       "id": "input-mandatory",
       "name": "input-mandatory",
-      "label": "Label",
-      "mandatorylabel": "(*skal udfyldes)"
+      "label": {
+        "text": "Label",
+        "requiredLabel": true
+      },
+      "required": true
     },
     {
       "id": "input-optional2",
       "name": "input-optional2",
-      "label": "Label",
-      "optional": true
+      "label": {
+        "text": "Label"
+      },
+      "required": false
     },
     {
       "id": "input-optional3",
       "name": "input-optional3",
-      "label": "Label",
-      "optional": true
+      "label": {
+        "text": "Label"
+      },
+      "required": false
     }
   ]
 }

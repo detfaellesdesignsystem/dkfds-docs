@@ -21,8 +21,8 @@ componentTitle: Eksempel på beskeder
 componentCode: "/kode/komponenter/beskeder/"
 tags:
 - fejlbesked
----
 
+---
 {:.h3 #retningslinjer}
 ## Anvendes til
 
@@ -33,14 +33,16 @@ Anvend succes- og advarselsbeskeder til at bekræfte en handling eller give besk
 {:.h3}
 ## Anvendes ikke til
 
-Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
+Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>.
 
 Brug modal dialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
+
+Brug ikke beskeder som farvelade for at “peppe” løsningen op, når informationen er neutral og statisk. Anvend da i stedet almindelig brødtekst.
 
 {:.h3}
 ## Vejledning
 
-Brug kun beskeder, når det er nødvendigt og hjælper brugeren med at forstå hvad denne skal, hvad der sker eller hvorfor. Brug ikke beskeder som farvelade for at "peppe" løsningen op.
+Brug kun beskeder, når det er nødvendigt og hjælper brugeren med at forstå hvad denne skal, hvad der sker eller hvorfor. 
 
 Brug ord og begreber, som brugeren kan genkende fra løsningen.
 
@@ -48,19 +50,35 @@ Skriv kort og præcist og undgå tekniske beskeder, der kan forvirre brugeren.
 
 Brug beskeder til at øge brugerens forståelse for løsningen.
 
+{:.h4}
+### Informativ besked
+Anvend informative beskeder til at gøre brugeren opmærksom på, at der er sket noget i brugergrænsefladen, som kan have betydning for deres handlinger. Det kan fx være hvis visse felter er blevet automatisk udfyldt med data andetstedsfra, som brugeren bør kontrollere.
+ 
+{:.h4} 
+### Succesmeddelelse
+Anvend succesmeddelelser til at gøre brugeren opmærksom på, at en bestemt handling er gået korrekt igennem. Det kan fx være når en formular er blevet sendt af sted, eller hvis brugerens ændringer i en løsning er blevet gemt. 
+ 
+{:.h4} 
+### Advarsel
+Brug advarsler til information, som ikke er udtryk for fejl, men som med høj sandsynlighed kan lede til fejl eller problemer, hvis ikke brugeren er opmærksom på det. Det kan fx være for at gøre opmærksom på planlagt nedetid for en løsning, eller hvis behandlingstiden pga. aktuelle omstændigheder er forlænget i en sådan grad, at det kan have særlige konsekvenser for brugeren. 
+ 
+{:.h4} 
+### Fejlbesked
+Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering af fejl i brugerens egne indtastninger, eller hvis en handling ikke kunne gennemføres grundet tekniske fejl. 
+
 {% include dos-donts-box.html component="alerts-dos-donts" title="Beskeder do's and don'ts" %}
 
 {:.h4}
 ### Referencer
 Linda Newman Lior: Writing for Interaction (2013)
 
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/aktindsigt/aktindsigt-3/" target="_blank" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
-- <a href="/pages/eksempler/boernetilskud/boernetilskud-2/" target="_blank" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
-- <a href="/pages/eksempler/AES-erstatningssag/aes-10/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/" target="_blank" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+- <a href="/pages/eksempler/aktindsigt/aktindsigt-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
+- <a href="/pages/eksempler/boernetilskud/boernetilskud-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
+- <a href="/pages/eksempler/AES-erstatningssag/aes-10/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
 
 {% include child-components.html parent='Beskeder' %}

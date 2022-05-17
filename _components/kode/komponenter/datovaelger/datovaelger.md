@@ -28,11 +28,21 @@ subnav:
 {% include code/syntax.html component="date-picker" %}
 
 ### Javascript
-Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+Datovælger komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
 DKFDS.datePicker.on(document.body);
 {% endhighlight %}
+
+#### Funktioner
+
+{:.table}
+| Funktion                                        | Element                                 | Beskrivelse                                                                                          |
+|-------------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------|
+| <code>DKFDS.datePicker.getDatePickerContext(ELEMENT)</code>  | Vilkårligt HTML element i datovælgeren  | Få fat i datovælger json objekt inklusiv alle HTML elementer i komponenten.             |
+| <code>DKFDS.datePicker.validateDateInput(ELEMENT)</code>     | Vilkårligt HTML element i datovælgeren  | Valider værdien i feltet, således at det er et korrekt datoformat og datoen eksisterer. Brug checkValidity() på input elementet efterfølgende. |
+| <code>DKFDS.datePicker.disable(ELEMENT)</code>               | Vilkårligt HTML element i datovælgeren  | Deaktiver felt og knap i datovælgeren.                                                                |
+| <code>DKFDS.datePicker.enable(ELEMENT)</code>                | Vilkårligt HTML element i datovælgeren  | Aktiver felt og knap i datovælgeren.                                                                  |
 
 ## Varianter
 

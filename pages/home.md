@@ -52,7 +52,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <p>Det Fælles Designsystem bliver løbende opdateret og vedligeholdt. For at sikre transparens, er systemet åbent for alle. Alle myndigheder med en interesse i at præge udviklingen og få indflydelse på designsystemets indhold er velkomne. </p>
         <ul class="nobullet-list">
             <li><a href="/faellesskab/samarbejdsforum/">Deltag i Samarbejdsforum</a></li>
-            <li><a href="/faellesskab/nyhedsmail">Tilmeld nyhedsmail</a></li>
+            <li><a href="/faellesskab/nyhedsmail/">Tilmeld nyhedsmail</a></li>
         </ul>
     </div>
     <hr />

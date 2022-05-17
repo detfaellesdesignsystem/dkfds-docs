@@ -27,16 +27,6 @@ Krav_category:
 - href: /krav/borgerdk-virk/
 - href: /krav/om-kravene/
 
-#Left menu for kom igang-category
-Krav_selvbetjening_category:
-- href: /krav/selvbetjening/borgerdk-virk/
-- href: /krav/selvbetjening/om-kravene/
-
-#Left menu for til udviklere-category
-Til_udviklere_category:
-- href: /komigang/tiludviklere/eksempler-implementering/
-- href: /komigang/tiludviklere/anbefalinger-vaerktoejer/
-
 #Left menu for design-category
 Design_category:
 - href: /design/farver/
@@ -44,16 +34,19 @@ Design_category:
   categorynav: 'Typografi_category'
 - href: /design/borders/
 - href: /design/ikoner/
-  categorynav: 'Icon_category'
 - href: /design/logoer/
+- href: /design/datavisualisering-infografik/
+  categorynav: 'Datavisualisering_category'
 - href: /design/layout/
   categorynav: 'Layout_category'
 - href: /design/designressourcer/
 - href: /design/designtjek/
 - href: /design/tilgaengelighed/
 
-Icon_category:
-  - href: /design/ikoner/ikoner-og-deres-betydning/
+Datavisualisering_category:
+  - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
+  - href: /design/datavisualisering-infografik/datavisualisering/
+  - href: /design/datavisualisering-infografik/infografik/
 
 Layout_category:
   - href: /design/layout/grid/
@@ -96,11 +89,13 @@ Komponenter_category:
   - href: /komponenter/modal/
   - href: /komponenter/notifikation/
   - href: /komponenter/overflowmenu/
+  - href: /komponenter/paginering/
   - href: /komponenter/radioknap/
   - href: /komponenter/sidenav/
   - href: /komponenter/skip-link/
   - href: /komponenter/spinner/
   - href: /komponenter/sprogvaegler/
+  - href: /komponenter/strukturerede-lister/
   - href: /komponenter/search/
   - href: /komponenter/tilbage-link/
   - href: /komponenter/tables/
@@ -151,11 +146,13 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/modal/
 - href: /kode/komponenter/notifikation/
 - href: /kode/komponenter/overflowmenu/
+- href: /kode/komponenter/paginering/
 - href: /kode/komponenter/radioknap/
 - href: /kode/komponenter/sidenav/
 - href: /kode/komponenter/skip-link/
 - href: /kode/komponenter/spinner/
 - href: /kode/komponenter/sprogvaegler/
+- href: /kode/komponenter/strukturerede-lister/
 - href: /kode/komponenter/search/
 - href: /kode/komponenter/tilbage-link/
 - href: /kode/komponenter/tables/
@@ -167,20 +164,23 @@ Kode_Komponenter_category:
 - href: /kode/komponenter/fil-upload/
 
 Eksempler_category:
-  - href: /eksempler/selvbetjeningsloesninger/
-  - href: /eksempler/opsummeringsside/
-  - href: /eksempler/kvittering/
+- href: /eksempler/selvbetjeningsloesninger/
+- href: /eksempler/patterns/
+  categorynav: 'Patterns_category'
+- href: /eksempler/templates/
+
+Patterns_category:
+- href: /eksempler/patterns/angivelse-af-telefonnummer/
+- href: /eksempler/patterns/forlad-siden/
+- href: /eksempler/patterns/session-udloeber/
 
 Faellesskab_category:
-  - href: /faellesskab/samarbejdsforum/
-    categorynav: 'Samarbejdsforum_category'
-  - href: /faellesskab/nyhedsmail/
-  - href: /faellesskab/kontakt-support/
-  - href: /faellesskab/roadmap/
-  - href: /faellesskab/releases/
-
-Samarbejdsforum_category:
-  - href: /faellesskab/samarbejdsforum/governance/
+- href: /faellesskab/samarbejdsforum/
+- href: /faellesskab/governance/
+- href: /faellesskab/nyhedsmail/
+- href: /faellesskab/kontakt-support/
+- href: /faellesskab/roadmap/
+- href: /faellesskab/releases/
 
 Eksempelloesninger_category:
 - href: /pages/eksempler/aktindsigt/aktindsigt-1/

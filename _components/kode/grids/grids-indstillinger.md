@@ -29,11 +29,11 @@ Grid systemet har følgende standardindstillinger:
         </tr>
         <tr>
             <th>Klasser</th>
-            <td><code>.col-</code></td>
-            <td><code>.col-sm-</code></td>
-            <td><code>.col-md-</code></td>
-            <td><code>.col-lg-</code></td>
-            <td><code>.col-xl-</code></td>
+            <td><code>col-</code></td>
+            <td><code>col-sm-</code></td>
+            <td><code>col-md-</code></td>
+            <td><code>col-lg-</code></td>
+            <td><code>col-xl-</code></td>
         </tr>
         <tr>
             <th>Antal kolonner</th>

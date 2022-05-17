@@ -35,3 +35,11 @@ Hver fejl tilføjes til `<ul>` listen med et anchor link til feltet der er omtal
 #### Placering
 
 {% include code/syntax.html component="error-summary-page" link="true" %}
+
+
+### Javascript
+Fejlopsummering kræver JavaScript for at fungere korrekt i alle browsers. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.ErrorSummary(document.getElementById('ALERT-ID')).init();
+{% endhighlight %}

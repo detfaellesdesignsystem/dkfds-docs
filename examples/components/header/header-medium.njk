@@ -1,93 +1,92 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-{% from "components/modal/modal.njk" import modal as modal %}
 
 <header class="header">
+  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+  <!--1A: Portal header -->
+  <div class="portal-header portal-header-compact">
+    <div class="container portal-header-inner">
+      <a href="#" aria-label="Portalnavn" class="logo"><span class="d-none d-print-block">Portalnavn</span></a>
+      <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-    <!--1A: Portal header -->
-    <div class="portal-header portal-header-compact">
-      <div class="container portal-header-inner">
-        <a href="#" aria-label="Portalnavn" class="logo"><span class="d-none d-print-block">Portalnavn</span></a>
-        <button class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
-
-        <!-- 1B: Portal header: info + actions-->
-        <div class="portal-info">
-          <p class="user">Christian Emil Vestergaard Christiansen, Forsikringens Forsikringsfirma</p>
-          <button class="button button-secondary alert-leave d-print-none">
-            Log af
-          </button>
-        </div>
-      </div>
-    </div>
-
-     <!--2A: Solution header -->
-    <div class="solution-header">
-        <div class="container solution-header-inner">
-          <div class="solution-heading">
-            <a href="#" class="alert-leave2">En længere løsningstitel</a>
-          </div>
-
-          <!--2B: Solution header: Authority name + text-->
-          <div class="solution-info"> <!-- nav-secondary -->
-              <p class="h5 authority-name">Myndighedsnavn</p>
-              <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></span></p>
-          </div>
-        </div>
-    </div>
-
-    <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
-      <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
-      <!-- 3: Main navigation-->
-      <div class="navbar navbar-primary">
-        <!--3A: Main navigation-->
-        <div class="navbar-inner container">
-          <ul class="nav-primary">
-            <li>
-              <a href="#" class="nav-link" title="Designsystem">
-                  <span>Første menupunkt</span>
-              </a>
-            </li>
-            <li class="current">
-                <a href="#" class="nav-link" title="Eksempler">
-                    <span>Andet menupunkt</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link" title="Kom godt i gang">
-                    <span>Tredje menupunkt</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link" title="Fællesoffentlige krav">
-                    <span>Fjerde menupunkt</span>
-                </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- 3: Main navigation end-->
-
-      <!-- 5: Contextual actions-->
-      <div class="navbar">
-        <div class="navbar-inner navbar-context-actions container">
-          <div class="nav-actions">
-            <a href="#" class="function-link">{{icon_svg("print", "", "", true)}}Funktionsikon</a>
-          </div>
-        </div>
-      </div>
-      <!-- 5: Contextual actions end-->
-
-      <div class="portal-info-mobile">
-        <p class="user bold">Christian Emil Vestergaard Christiansen, Forsikringens Forsikringsfirma</p>
-        <a href="#" class="button button-secondary button-signout alert-leave">
+      <!-- 1B: Portal header: info + actions-->
+      <div class="portal-info">
+        <p class="user">Anders Andersen, Forsikringens Forsikringsfirma</p>
+        <button class="button button-secondary alert-leave d-print-none">
           Log af
-        </a>
+        </button>
       </div>
+    </div>
+  </div>
 
-      <div class="solution-info-mobile">
-        <p class="h5 authority-name">Myndighedsnavn</p>
-        <p>Support: 12 34 56 78 · <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></p>
+    <!--2A: Solution header -->
+  <div class="solution-header">
+      <div class="container solution-header-inner">
+        <div class="solution-heading">
+          <a href="#" class="alert-leave2">En længere løsningstitel</a>
+        </div>
+
+        <!--2B: Solution header: Authority name + text-->
+        <div class="solution-info"> <!-- nav-secondary -->
+            <p class="h5 authority-name">Myndighedsnavn</p>
+            <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></span></p>
+        </div>
       </div>
+  </div>
 
-    </nav> <!-- collapsible nav end-->
+  <div class="overlay"></div>
+  <nav class=" nav"> <!-- collapsible-->
+    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+    <!-- 3: Main navigation-->
+    <div class="navbar navbar-primary">
+      <!--3A: Main navigation-->
+      <div class="navbar-inner container">
+        <ul class="nav-primary">
+          <li>
+            <a href="#" class="nav-link" title="Designsystem">
+                <span>Første menupunkt</span>
+            </a>
+          </li>
+          <li class="current">
+              <a href="#" class="nav-link" title="Eksempler">
+                  <span>Andet menupunkt</span>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link" title="Kom godt i gang">
+                  <span>Tredje menupunkt</span>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                  <span>Fjerde menupunkt</span>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 3: Main navigation end-->
+
+    <!-- 5: Contextual actions-->
+    <div class="navbar">
+      <div class="navbar-inner container navbar-context-actions">
+        <div class="nav-actions">
+          <a href="#" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
+        </div>
+      </div>
+    </div>
+    <!-- 5: Contextual actions end-->
+
+    <div class="portal-info-mobile">
+      <p class="user bold">Anders Andersen, Forsikringens Forsikringsfirma</p>
+      <a href="#" class="button button-secondary button-signout alert-leave">
+        Log af
+      </a>
+    </div>
+
+    <div class="solution-info-mobile">
+      <p class="h5 authority-name">Myndighedsnavn</p>
+      <p>Support: 12 34 56 78 · <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></p>
+    </div>
+
+  </nav> <!-- collapsible nav end-->
 </header>

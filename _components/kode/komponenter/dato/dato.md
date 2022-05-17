@@ -38,6 +38,16 @@ Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere
 - Ved fejl, tilføj da en hjælpsom fejlmeddelelse over felterne i elementet `<span class="form-error-message" id="form-error-message-input-error" role="alert">`. 
 - Tilføj klassen `form-error` på `form-group` `div` elementet, når der vises en fejlmeddelelse.
 
+
+### Javascript
+Dato felterne kræver JavaScript for at maskerne virker. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new InputRegexMask(document.getElementById('DAY-INPUT-ID'));
+new InputRegexMask(document.getElementById('MONTH-INPUT-ID'));
+new InputRegexMask(document.getElementById('YEAR-INPUT-ID'));
+{% endhighlight %}
+
 ## Varianter
 
 {:#fejlmeddelelse}

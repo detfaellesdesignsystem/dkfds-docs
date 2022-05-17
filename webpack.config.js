@@ -1,6 +1,7 @@
 //const AssetsPlugin = require("./plugins/assets-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 //const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const path = require('path');
 
@@ -13,7 +14,16 @@ module.exports = function (outputPath, prod) {
       styleguide_borgerdk: ["./scss/styleguide-borgerdk.scss"],
       styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
       "requirements-tool": ["./javascript/requirements-tool.js"],
-      "search": ["./javascript/search.js"]
+      "search": ["./javascript/search.js"],
+      "spinner": ["./javascript/components/spinner.js"],
+      "table": ["./javascript/components/table.js"],
+      "toast": ["./javascript/components/toast.js"],
+      "modal": ["./javascript/components/modal.js"],
+      "languageswitcher": ["./javascript/components/languageswitcher.js"],
+      "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
+      "newsletter": ["./javascript/newsletter.js"],
+      "pagination": ["./javascript/components/pagination.js"],
+      "session-timeout": ["./javascript/components/session-timeout.js"]
     },
     module: {
       rules: [
@@ -38,15 +48,15 @@ module.exports = function (outputPath, prod) {
             {
               loader: "css-loader",
               options: {
-                minimize: prod,
                 sourceMap: true,
+                url: false
               }
             },
             {
               loader: "postcss-loader", // postcss loader so we can use autoprefixer
               options: {
-                config: {
-                  path: "postcss.config.js"
+                postcssOptions: {
+                  config: "postcss.config.js"
                 },
                 sourceMap: true
               }
@@ -90,7 +100,7 @@ module.exports = function (outputPath, prod) {
               options: {
                 name: "[name].[ext]",
                 outputPath: "svg/",
-                useRelativePath: true,              
+                useRelativePath: true,         
                 esModule: false,
               }
             }
@@ -108,12 +118,12 @@ module.exports = function (outputPath, prod) {
     },
     plugins: [
       new CopyWebpackPlugin(
-          [
             {//copies all content from /img to /assets/img
-                from: "./img/**/*",
-                to: "" // i assets
+              patterns: [
+                {from: "./img/**/*", to: ""}
+              ]
             }
-          ]),
+          ),
       new MiniCssExtractPlugin(
         {
           filename: 'style/[name].css',
@@ -121,18 +131,20 @@ module.exports = function (outputPath, prod) {
         })
     ],
     optimization: {
-      splitChunks: {
-        chunks: "all",
-        cacheGroups: {
-          vendor: {
-            test: /node_modules|vendor/,
-            chunks: "initial",
-            name: "vendor",
-            priority: 10,
-            enforce: true
-          }
-        }
-      }
+      minimize: true,
+      minimizer: [
+        new TerserPlugin({
+          extractComments: false,
+          terserOptions: {
+            format: {
+              comments: false,
+            },
+          },
+        }),
+      ],
+    },
+    performance: {
+      hints: false
     }
   }
 }

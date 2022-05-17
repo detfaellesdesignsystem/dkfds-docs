@@ -4,7 +4,7 @@
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
@@ -14,12 +14,12 @@
 
 
 {% block header %}
-  <header class="header">
+  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
         <p class="user bold">Navn</p>
@@ -86,33 +86,67 @@
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
             <div><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/" class="back-link d-none d-lg-inline-block">Tilbage</a></div>
-    <h1>Statsstøtte</h1>
-    {{ alert("alert alert-info alert--paragraph", "", "", "Virksomheder må ikke modtage statsstøtte, også kaldet EU de-minimums-støtte, der overstiger grænsen på de EUR 200.000 over de seneste 3 år. Tidligere tilskud givet fra Eksportrådet er omfattet af de-minimis-reglerne og de skal nævnes nedenfor.<br><br>Hvis virksomheden juridisk er en del af en koncernstruktur (indenlandsk som udenlandsk), som tilsammen hæfter for de-minimis-støtte, oplyses det fulde beløb for hele koncernen. Se Statsstøttehåndbogen side 65-86, hvis du er i tvivl om, hvor meget af koncernen, der er omfattet.<br><br>Støtte fra eksportrådet i form af tilskud ydes i henhold til EU-reglerne for de-minimis-støtte, jf. Kommissionernes forordning (EU) nr. 1407/2013 af 18. december 2013.", "warning" ) }}
+            <h1>Statsstøtte</h1>
+            {{ alert({
+                "classes": "alert-info",
+                "content": "Virksomheder må ikke modtage statsstøtte, også kaldet EU de-minimums-støtte, der overstiger grænsen på de EUR 200.000 over de seneste 3 år. Tidligere tilskud givet fra Eksportrådet er omfattet af de-minimis-reglerne og de skal nævnes nedenfor.<br><br>Hvis virksomheden juridisk er en del af en koncernstruktur (indenlandsk som udenlandsk), som tilsammen hæfter for de-minimis-støtte, oplyses det fulde beløb for hele koncernen. Se Statsstøttehåndbogen side 65-86, hvis du er i tvivl om, hvor meget af koncernen, der er omfattet.<br><br>Støtte fra eksportrådet i form af tilskud ydes i henhold til EU-reglerne for de-minimis-støtte, jf. Kommissionernes forordning (EU) nr. 1407/2013 af 18. december 2013.",
+                "paragraph": true}) }}
 
 
-    <div class="mt-6">
-        {{textinput("id-state", "Statsstøtte (EU de-minimis) i DKK", "", "input-width-m", "", "Input til statsstøtte (EU de-minimis) i DKK", "", false, false, "Modtaget fra dags dato og de tre seneste løbende år ekskl. det aktuelle projekt.", "")}}
-    </div>
-
-    <div class="form-group js-radio-toggle-group">
-        <fieldset>
-            <legend class="form-label">Har i modtaget støtte gennem andre internationale de-minimis-ordninger (fx OECD)?</legend>
-            {{radiobutton("id-state-yes", "minimis", "Ja", false, false, "Ja", "radio-large", false, true, '', "", 'data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false"')}}
-            <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
-                <div class="py-4">
-                    {{textinput("id-minimis-name", "Ordningens navn", "", "input-width-m", "", "Input til ordningens navn", "", false, "")}}
-                    {{datoinput("Dato for modtagelse", "Fx. 28 04 1996", "Dato", "Måned", "År")}}
-                    {{textinput("id-amount", "Beløb i DKK", "", "input-width-xs", "", "Input til beløb i DKK", "", false, "")}}
-                    {{textinput("id-reference", "Henvisning til yderligere information om ordningen", "", "input-width-m", "", "Input til henvisning til yderligere information om ordningen", "", false, false, "Fx. et link (url)", "")}}
-                </div>
+            <div class="mt-6">
+                {{textinput({
+                    "id": "id-state", 
+                    "label":{
+                        "text":"Statsstøtte (EU de-minimis) i DKK"
+                        },
+                    "classes": "input-width-m",
+                    "name": "statsstoette",
+                    "hint":"Modtaget fra dags dato og de tre seneste løbende år ekskl. det aktuelle projekt."})}}
             </div>
-            {{radiobutton("id-state-no", "minimis", "Nej", false, false, "Nej", "radio-large", false, true)}}
-        </fieldset>
-    </div>
 
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/" class="button button-primary">Næste</a>
-    </nav>
+            <div class="form-group js-radio-toggle-group">
+                <fieldset>
+                    <legend class="form-label">Har i modtaget støtte gennem andre internationale de-minimis-ordninger (fx OECD)?</legend>
+                    <ul class="nobullet-list">
+                        <li>
+                            {{radiobutton(radio_state_ja)}}
+                            <div id="collapse-radio" aria-hidden="true" class="radio-content radio-content-large">
+                                <div class="py-4">
+                                    {{textinput({
+                                        "id": "id-minimis-name",
+                                        "label": {
+                                            "text": "Ordningens navn"
+                                            },
+                                        "classes": "input-width-m",
+                                        "name": "ordning-navn"})}}
+                                    {{datoinput(dateInput)}}
+                                    {{textinput({
+                                        "id": "id-amount",
+                                        "label": {
+                                            "text": "Beløb i DKK"
+                                            },
+                                        "classes": "input-width-xs",
+                                        "name": "amount"})}}
+                                    {{textinput({
+                                        "id": "id-reference",
+                                        "label": {
+                                            "text": "Henvisning til yderligere information om ordningen"
+                                            },
+                                        "classes": "input-width-m",
+                                        "hint":"Fx. et link (url)",
+                                        "name": "reference"})}}
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            {{radiobutton(radio_state_nej)}}
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <form novalidate method="get" action="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/">
+                <button class="button button-primary mt-8 d-print-none">Næste</button>
+            </form>
         </main>
     </div>
 </div>
@@ -122,7 +156,7 @@
 {% endblock %}
 
 {% block footer -%}
-  {{ footer_simple(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

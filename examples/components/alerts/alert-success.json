@@ -1,8 +1,7 @@
 {
   "alert_example": {
-        "name": "success",
         "classes": "alert-success",
-        "title": "Succesbesked",
+        "heading": "Succesbesked",
         "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet."
       }
 }

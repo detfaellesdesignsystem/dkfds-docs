@@ -60,7 +60,7 @@ Vær opmærksom på, at vi anbefaler, at man bruger den store tjekboks.
 For at initialisere collapse funktionaliteten på en checkbox skal `input[type=checkbox]` have følgende:
 
 - Klassen `'js-checkbox-toggle-content'`. Denne klasse gør at funktionaliteten bliver initialiseret. 
-- Attributten `data-js-target="id-of-target-to-collapse"`: denne attribute skal have id'et på det element som skal vises på tjekboksen er aktiveret. 
+- Attributten `data-js-target="id-of-target-to-collapse"`: denne attribute skal have samme værdi som i id attributten på det element som skal vises på tjekboksen er aktiveret. 
 - Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten `'checked'`.
 - `aria-controls="id-of-target-to-collapse" `
 
@@ -73,7 +73,7 @@ Det element som skal collapses/expandes skal have følgende:
 Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID'));
+new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).init();
 {% endhighlight %}
 
 {:.h4}
@@ -82,5 +82,5 @@ new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID'));
 {:.table}
 | Event key           | Element                           | Beskrivelse                                                                                               |
 |---------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------|
-| fds.collapse.open  | `input.js-checkbox-toggle-content` | Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet   |
-| fds.collapse.close | `input.js-checkbox-toggle-content` | Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet |
+| fds.collapse.expanded  | `input.js-checkbox-toggle-content` | Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet   |
+| fds.collapse.collapsed | `input.js-checkbox-toggle-content` | Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet |

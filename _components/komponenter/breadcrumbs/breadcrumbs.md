@@ -24,7 +24,7 @@ Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en 
 
 Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikatorer/">trinindikator</a>.
 
-Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbasserede løsninger og i løsninger med en flad struktur. 
+Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur. 
 
 {:.h3}
 ## Vejledning
@@ -54,8 +54,8 @@ På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses 
 - <a href="https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/" class="icon-link">Breadcrumbs In Web Design: Examples And Best Practices<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" class="icon-link">When You Should Use a Breadcrumb Navigation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/aes/sagsoverblik/" target="_blank" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
+- <a href="/pages/eksempler/aes/sagsoverblik/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>

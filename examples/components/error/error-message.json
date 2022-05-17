@@ -1,9 +1,11 @@
 {
   "textinput_example":{
     "id": "form-error",
-    "label": "Hvad hedder dit kursus?",
+    "label": {
+      "text":"Hvad hedder dit kursus?"
+    },
     "name": "form-error",
     "hint": "Fx: Skriv godt",
-    "error": "Giv dit kursus et navn"
+    "errorMessage": "Giv dit kursus et navn"
   }
 }

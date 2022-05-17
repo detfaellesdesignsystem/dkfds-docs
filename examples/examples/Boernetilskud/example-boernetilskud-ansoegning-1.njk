@@ -1,22 +1,22 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
-{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/footers/footer.njk" import footer as footer %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
 {% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-
+{% import "components/buttons/buttons.njk" as button %}
 
 {% block header %}
-  <header class="header">
+  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-        <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+        <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
@@ -31,10 +31,10 @@
                 <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
                   <ul class="overflow-list">
                       <li>
-                        <a href="/pages/eksempler/boernetilskud/boernetilskud-oversigt">Overssigtsside som liste</a>
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-oversigt/">Overssigtsside som liste</a>
                       </li>
                       <li>
-                        <a href="/pages/eksempler/boernetilskud/boernetilskud-oversigt-2">Oversigt med cards</a>
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-oversigt-2/">Oversigt med cards</a>
                       </li>
                   </ul>
                 </div>
@@ -56,7 +56,7 @@
                         </a>
                     </li>
                     <li class="current">
-                        <a href="/pages/eksempler/boernetilskud/boernetilskud-1" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="/pages/eksempler/boernetilskud/boernetilskud-1/" class="nav-link" title="Fællesoffentlige krav">
                             <span>Ansøgninger</span>
                         </a>
                     </li>
@@ -76,7 +76,7 @@
         <!-- 3: Main navigation end-->
 
         <div class="portal-info-mobile">
-            <p class="user bold">Christian Emil Vestergaard Christiansen</p>
+            <p class="user bold">Anders Andersen</p>
             <a href="#" class="button button-secondary button-signout">
             Log af
             </a>
@@ -93,58 +93,45 @@
 
 {% block body %}
   <main class="container page-container" id="main-content">
-    <section class="page-content">
-        {{overflowmenu("Trin 1 af 2","overflow_steps", true, false, "arrow-drop-down" ,"
-              <nav><ul class='sidenav-list' role='menu'>
-                  <li class='active current' role='none'>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-1' role='menuitem' aria-current='page'>
-                          1. Hvilke børn søger du tilskud til?
-                      </a>
-                  </li>
-                  <li role='none'>
-                      <a href='/pages/eksempler/boernetilskud/boernetilskud-2' role='menuitem'>
-                          2. Hvornår blev du eller bliver du enlig?
-                      </a>
-                  </li>
-              </ul></nav>
-              "
-          ) }}
-        <h1>{{title}}</h1>
-        <div class="row">
-            <div class="col-12 col-md-8 col-lg-5">
-                <form class="form">
-                    <div class="form-group">
-                        <fieldset>
-                            <legend class="form-label">Jeg søger tilskud til:</legend>
-                            <ul class="nobullet-list">
-                                <li>
-                                    {{ alert("alert-warning", "", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium." ) }}
-                                    {{ checkbox("checkbox-id-1", "", "checkbox1_selected", true, false, "Keld Hedagaardsen <br> 353535-3535 <br> Fælles", "", false, true) }}
-                                </li>
-                                <li>
-                                    {{ alert("alert-warning", "", "Allerede registreret", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.") }}
-                                    {{ checkbox("checkbox-id-2", "", "checkbox2_selected", true, false, "Anita Hedagaardsen <br> 353535-3535 <br> Fælles", "", false, true) }}
-                                </li>
-                                <li>
-                                    {{ checkbox("checkbox-id-3", "", "checkbox3_selected", false, false, "<span class=\"bold\">Ylmig Hedagaardsen</span> <br> 353535-3535 <br> Fælles", "", false, true) }}
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </div>
-                    <div class="form-group">
-                        <button class="button button-secondary mt-4">{{ icon_svg('add')}} Tilføj barn</button>
-                    </div>
-                </form>
+    {{overflowmenu(stepguide)}}
+    <h1>{{title}}</h1>
+    <form novalidate action="/pages/eksempler/boernetilskud/boernetilskud-2/">
+        <div class="form-group">
+            <fieldset>
+                <legend class="form-label">Jeg søger tilskud til</legend>
+                <ul class="nobullet-list">
+                    <li>
+                        {{ checkbox({
+                            "id": "checkbox-id-353535-3535",
+                            "name": "checkbox-tilskud",
+                            "label": "Ylmig Hedagaardsen<br />353535-3535<br>Fælles forældremyndighed", 
+                            "large": true}) }}
+                    </li>
+                    
+                </ul>
+            </fieldset>
+            <div class="mt-6">
+                Keld Hedagaardsen, 353535-3535, Fælles forældremyndighed<br/>
+                <span class="form-hint d-inline-block">Allerede registreret</span>
+                <button type="button" class="js-tooltip button-unstyled" data-tooltip="Nullam ultrices tincidunt felis non viverra. Aliquam dignissim turpis sit amet urna efficitur ultrices at vel enim. Ut ultrices, tortor eu suscipit posuere, tellus lacus posuere massa, sit amet rhoncus risus odio ut tellus." data-tooltip-trigger="click">
+                    {{ icon_svg({"name":'help'})}}<span class="sr-only">Hvad betyder det?</span>
+                </button>
             </div>
+            <div class="mt-6">
+                Anita Hedagaardsen, 353535-3040, Fælles forældremyndighed<br/>
+                <span class="form-hint d-inline-block">Allerede registreret</span>
+                <button type="button" class="js-tooltip button-unstyled" data-tooltip="Nullam ultrices tincidunt felis non viverra. Aliquam dignissim turpis sit amet urna efficitur ultrices at vel enim. Ut ultrices, tortor eu suscipit posuere, tellus lacus posuere massa, sit amet rhoncus risus odio ut tellus." data-tooltip-trigger="click">
+                    {{ icon_svg({"name":'help'})}}<span class="sr-only">Hvad betyder det?</span>
+                </button>
+            </div>
+            
+            <button type="button" class="button button-secondary mt-6">{{ icon_svg({"name": 'add'})}} Tilføj barn</button>
         </div>
-
-    </section>
-    <nav class="page-navigation d-print-none">
-        <a href="/pages/eksempler/boernetilskud/boernetilskud-2" class="button button-primary">Næste</a>
-    </nav>
+        <button type="submit" class="button button-primary d-print-none mt-6">Næste</button>
+    </form>
   </main>
 {% endblock %}
 
 {% block footer -%}
-  {{ footer_simple(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}

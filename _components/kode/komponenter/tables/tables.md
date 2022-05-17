@@ -131,5 +131,5 @@ new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID')).init();
 {:.table}
 | Event key                      | Element       | Beskrivelse                                                                                                              |
 |--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------|
-| fds.table.selectable.updated   | `<table>`     | Når en tjekbox ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>` elementet |
+| fds.table.selectable.updated   | `<table>`     | Når en tjekboks ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>` elementet |
 

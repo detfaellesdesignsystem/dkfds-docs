@@ -46,11 +46,10 @@ Placér fejlmeddelelser mellem label og felt, og markér feltet med rødt.
 
 ISO 9241-143: Forms (2012)
 
-
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
+- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
 
 {% include child-components.html parent='Textarea' %}

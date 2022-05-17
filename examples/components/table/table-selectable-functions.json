@@ -18,18 +18,18 @@
     "actions": [
       {
         "text": "Download",
-        "class": "primary",
+        "classes": "primary",
         "icon": "file-download"
       },
       {
         "text": "Duplikér",
-        "class": "secondary",
+        "classes": "secondary",
         "icon": "content-copy"
       },
       {
         "text": "Slet",
-        "class": "secondary",
-        "icon": "delete"
+        "classes": "secondary",
+        "icon": "trash-can"
       }
 
     ]

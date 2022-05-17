@@ -24,6 +24,6 @@ subnav:
   href: "#streger"
 - text: Skygger
   href: "#skygger"
-lead: ''
 ---
+
 {% include child-components.html parent='borders-shadows' %}

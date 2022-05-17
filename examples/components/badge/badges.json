@@ -2,12 +2,12 @@
   "badge_example": {
     "items": [
       {
-        "class": "badge-large",
-        "label": "Stort badge"
+        "classes": "badge-large",
+        "text": "Stort badge"
       },
       {
-        "class": "badge-small",
-        "label": "Lille badge"
+        "classes": "badge-small",
+        "text": "Lille badge"
       }
     ]
   }

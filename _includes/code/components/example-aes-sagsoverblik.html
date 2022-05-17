@@ -1,25 +1,25 @@
 <header class="header">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
     <!--1A: Portal header -->
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn"
-                class="logo alert-leave">
+                class="logo ">
 
             </a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="menu"
+                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><span class="username">Christian Emil
-                        Vestergaard Christiansen, Forsikringens
-                        Forsikringsfirma</span> </p>
+                <p class="user"><span class="username">Anders Andersen,
+                        Forsikringens Forsikringsfirma</span> </p>
 
-                <button
-                    class="button button-secondary alert-leave d-print-none">
+                <button class="button button-secondary d-print-none">
                     Log af
                 </button>
             </div>
@@ -27,10 +27,10 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header header-end">
+    <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" class="alert-leave2">
+                <a href="#" class="">
                     Sager hos AES
                 </a>
             </div>
@@ -52,14 +52,12 @@
     <div class="overlay"></div>
     <nav class=" nav">
         <!-- collapsible-->
-        <button
-            class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+        <button class="function-link button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><span class="weight-semibold">Christian Emil
-                    Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma
-            </p>
+            <p class="user"><span class="weight-semibold">Anders
+                    Andersen</span><br />Forsikringens Forsikringsfirma</p>
             <a href="#" class="button button-secondary button-signout">
                 Log af
             </a>
@@ -76,7 +74,6 @@
                 <div class="nav-secondary d-none d-lg-block">
                     <nav class="breadcrumbs" aria-label="Brødkrumme">
                         <ol class="breadcrumbs__list">
-
                             <li class="breadcrumbs__list-item">
                                 <a class="breadcrumbs__link"
                                     href="/pages/eksempler/aes/oversigt/">Find
@@ -86,13 +83,12 @@
                             <li class="breadcrumbs__list-item"
                                 aria-current="page">Sagsnr. 2020-0000015
                             </li>
-
                         </ol>
                     </nav>
                 </div>
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#account-circle"></use></svg>Min
+                        class="function-link"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#account-circle"></use></svg>Min
                         profil</a>
                 </div>
             </div>
@@ -103,7 +99,6 @@
 
 <nav class="breadcrumbs container d-lg-none mt-3" aria-label="Brødkrumme">
     <ol class="breadcrumbs__list">
-
         <li class="breadcrumbs__list-item">
             <a class="breadcrumbs__link"
                 href="/pages/eksempler/aes/oversigt/">Find sag</a>
@@ -111,49 +106,54 @@
 
         <li class="breadcrumbs__list-item" aria-current="page">Sagsnr.
             2020-0000015</li>
-
     </ol>
 </nav>
 
 <main class="container page-container" id="main-content">
     <h1>Sagsnr. 2020-0000015</h1>
-    <div class="form-group">
-        <label class="form-label" for="input-status">Status</label>
-        <input class="form-input" required="" id="input-status"
-            value="Under behandling" name="input-readonly" type="text"
-            readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="input-navn">Navn</label>
-        <input class="form-input" required="" id="input-navn"
-            value="Lone Hansen" name="input-readonly" type="text"
-            readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="input-skadedato">Skadedato</label>
-        <input class="form-input" required="" id="input-skadedato"
-            value="04-01-2019" name="input-readonly" type="text"
-            readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label"
-            for="input-anmeldedato">Anmeldedato</label>
-        <input class="form-input" required="" id="input-anmeldedato"
-            value="10-01-2019" name="input-readonly" type="text"
-            readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label" for="input-sagstype">Sagstype</label>
-        <input class="form-input" required="" id="input-sagstype"
-            value="Arbejdsulykke" name="input-readonly" type="text"
-            readonly="">
-    </div>
-    <div class="form-group">
-        <label class="form-label"
-            for="input-vedroerende">Vedrørende</label>
-        <input class="form-input" required="" id="input-vedroerende"
-            value="Arm, herunder albue" name="input-readonly" type="text"
-            readonly="">
+    <span class="badge badge-large badge-warning mb-7">Under
+        behandling</span>
+    <div class="w w-percent-sm-50 w-percent-md-30 mt-4">
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Navn
+            </div>
+            <div class="col-12 col-md-8">
+                Anders Andersen
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Skadedato
+            </div>
+            <div class="col-12 col-md-8">
+                04-01-2019
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Anmeldedato
+            </div>
+            <div class="col-12 col-md-8">
+                10-01-2019
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Sagstype
+            </div>
+            <div class="col-12 col-md-8">
+                Arbejdsulykke
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Vedrørende
+            </div>
+            <div class="col-12 col-md-8">
+                Arm, herunder albue
+            </div>
+        </div>
     </div>
     <h2 class="h3">Sagsindhold</h2>
     <ul class="nobullet-list">
@@ -258,20 +258,6 @@
                     </section>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="language-switcher">
-        <div class="container">
-            <ul aria-label="Vælg sprog fra listen ">
-                <li><a href="" lang="da"
-                        aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a>
-                </li>
-                <li><a href="" lang="en-GB">English</a></li>
-                <li><a href="" lang="de">Deutsch</a></li>
-                <li><a href="" lang="kl">Kalaallisut</a></li>
-                <li><a href="" lang="pl">Polski</a></li>
-            </ul>
         </div>
     </div>
 

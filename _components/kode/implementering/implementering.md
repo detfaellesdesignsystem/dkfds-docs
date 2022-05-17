@@ -46,6 +46,7 @@ Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/
 
 Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.
 
+{:#javascript}
 ## Inkludér JavaScript
 
 JavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.
@@ -73,10 +74,25 @@ Når DKFDS er inkluderet kan du køre funktionen `DKFDS.init();` ved dom ready, 
 
 {% highlight javascript %}
 document.addEventListener("DOMContentLoaded", function(){
-  // Handler when the DOM is fully loaded
   DKFDS.init();
 });
 {% endhighlight %}
+
+#### Initiér alle komponenter i et bestemt område
+Det er muligt at bruge DKFDS.init() i bestemte områder af din side ved at medsende parameter.
+
+I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det vil sige navigation, alle overflow menuer samt eventuelle modaler i headeren. Komponenter uden for headeren vil ikke blive berørt.
+
+{% highlight javascript %}
+let $header = document.getElementsByTagName('header')[0];
+DKFDS.init({'scope': $header});
+{% endhighlight %}
+
+#### Initiér komponenter enkeltvis
+
+Javascript for komponenter kan kaldes enkeltvis, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance kan dette være værd at undersøge.
+
+Javascript dokumentationen for hver komponent findes på de enkelte <a href="/kode/komponenter/">komponentsider under kodesektionen</a>.
 
 {:#temahaandtering}
 ## Temahåndtering
@@ -88,25 +104,26 @@ Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de t
 <p class="mb-2">Tema eksempel – borger.dk (scss):</p>
 
 {% highlight scss %}
-// These variables overwrite the default values, giving the style the borger.dk theme
-$color-primary:               #44831E;
-$color-primary-medium:        #3C5C22;
-$color-primary-dark:          #233614;
+// These variables overwrite the default values
+$theme-colors: (
+    "virk": (
+        100: #0059B3,
+        200: #004993,
+        300: #003972
+    )
+);
 
-.header {
-    .portal-header{
-        background-color: #f1f1f1;
-        .logo{
-            background-image: url($image-path + '/logo-borgerdk.svg');
-            height: 4.8rem;
-        }
-    }
-}
+$theme-color-primary: 'virk-100';
+$theme-color-primary-dark: 'virk-200';
+$theme-color-primary-darker: 'virk-300';
+$header-portal-logo: 'logo_virk.svg';
+$header-portal-logo-height: 4.8rem;
+$header-portal-logo-width: 7.8rem;
+$header-portal-compact-logo-width: 3.8rem;
 
-$font-path:         '~dkfds/src/fonts/IBMPlexSans/';
-$image-path:        '~dkfds/src/img';
-$site-image-path:   '~dkfds/src/img';
-$icons-folder-path: '~dkfds/src/img/svg-icons';
+$font-path:         '/assets/fonts/IBMPlexSans/';
+$image-path:        '/assets/img';
+$icons-folder-path: '/assets/svg';
 @import '~dkfds/src/stylesheets/dkfds';
 {% endhighlight %}
 
@@ -115,13 +132,13 @@ $icons-folder-path: '~dkfds/src/img/svg-icons';
 
 Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.
 
-For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen. 
+For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/autoprefixer" class="icon-link">autoprefixer til webpack<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen. 
 
 ### Gulp
 
 Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.
 
-For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.
+For at tilføje dette bør SCSS filen køres igennem <a href="https://www.npmjs.com/package/gulp-autoprefixer" class="icon-link">autoprefixer til gulp<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor den relevante styling vil blive tilføjet til output CSS filen.
 
 Disse browsers bør defineres i autoprefixer:
 
@@ -131,6 +148,6 @@ Disse browsers bør defineres i autoprefixer:
   'Last 2 versions',
   'IE 11',
   'IE 10',
-  'IE 9',
+  'IE 9'
 ]
 {% endhighlight %} 

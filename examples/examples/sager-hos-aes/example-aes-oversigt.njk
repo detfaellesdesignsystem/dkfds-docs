@@ -4,20 +4,20 @@
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/footers/footer-three-columns.njk" import footer_columns as footer_columns %}
+{% from "components/footers/footer.njk" import footer as footer %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-<a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 {% block header %}
   <header class="header">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
-        <p class="user"><span class="weight-semibold">Christian Emil Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma</p>
+        <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
         <a href="#" class="button button-secondary button-signout">
           Log af
         </a>
@@ -31,7 +31,7 @@
       <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
               <div class="nav-actions">
-                <a href="#" class="function-link">{{icon_svg("account-circle")}}Min profil</a>
+                <a href="#" class="function-link">{{icon_svg({"name": "account-circle"})}}Min profil</a>
               </div>
         </div>
       </div>
@@ -44,16 +44,17 @@
 <main class="container page-container pt-4 pt-lg-0" id="main-content">
     <h1 id="searchlabel">Find sag</h1>
     <span class="form-hint" id="search-hint">
-        Søg på CPR-nr. eller sagsnr.
+        
     </span>
+    <label for="search-input" class="form-label">Søg på CPR-nr. eller sagsnr.</label>
     <div class="form-group search mt-3">
         <input class="form-input input-char-27" id="search-input"
-            name="search" aria-describedby="search-hint" value="311270-1234" aria-labelledby="searchlabel" type="search">
+            name="search" aria-describedby="search-hint" value="311270-1234" type="search" />
 
         <button class="button button-search">Søg</button>
     </div>
     <h2 class="h5 mb-2">Navn: Lone Hansen</h3>
-    <table class="table table--zebra table--responsive-headers">
+    <table class="table table--responsive-headers">
       <thead>
           <tr>
               <th>Sagsnr.</th>
@@ -104,7 +105,7 @@
       </tbody>
     </table>
 
-<details class="details js-details mt-4">
+<details class="details mt-4">
     <summary class="details-summary">
         <span class="details-summary-text">
             Der er en sag hos AES jeg ikke kan finde
@@ -156,7 +157,7 @@
 {% endblock %}
 
 {% block footer -%}
-  {{ footer_columns(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

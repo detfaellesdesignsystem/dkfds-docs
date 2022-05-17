@@ -1,0 +1,17 @@
+{
+    "list":  [
+        {
+            "label": "Navn",
+            "value": "Kirsten Mønster Jensen"
+        },
+        {
+            "label": "E-mail",
+            "value": "kirstenjensen@eksempel.dk"
+        },
+        {
+            "label": "Telefonnummer",
+            "value": "12 34 56 78"
+        }
+    ]
+
+}

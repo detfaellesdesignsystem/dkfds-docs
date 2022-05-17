@@ -1,8 +1,7 @@
 {
   "alert_example": {
-        "name": "warning",
         "classes": "alert-warning",
-        "title": "Advarsel",
+        "heading": "Advarsel",
         "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.",
         "role": "alert"
       }

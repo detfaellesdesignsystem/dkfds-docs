@@ -34,7 +34,7 @@ subnav:
     </div>
 </div>
 
-Sprogvælgeren indsættes nederst i footeren. <a href="/eksempler/selvbetjeningsloesninger/#solution-7">Se eksempel på implementering i eksempelløsningen “Sager hos AES”</a>
+Sprogvælgeren indsættes nederst i footeren. <a href="/eksempler/selvbetjeningsloesninger/#sager-hos-aes">Se eksempel på implementering i eksempelløsningen “Sager hos AES”</a>
 
 Hvert sprog tilføjes i listen på original sproget og med den tilsvarende landekode i `lang` attributten.
 

@@ -1,9 +1,11 @@
 {
-  "textinput_example":{
+  "params":{
     "id": "form-error",
-    "label": "Inputfelt med fejl",
+    "label": {
+      "text": "Inputfelt med fejl"
+    },
     "name": "form-error",
     "hint": "Fx 12345678",
-    "error": "Hjælpsom fejlbesked"
+    "errorMessage": "Hjælpsom fejlbesked"
   }
 }

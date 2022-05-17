@@ -1,7 +1,9 @@
 {
-  "textinput_example":{
+  "params":{
     "id": "input-type-text",
-    "label": "Inputfelt med label",
+    "label": {
+      "text": "Inputfelt med label"
+    },
     "name": "input-type-text"
   }
 }

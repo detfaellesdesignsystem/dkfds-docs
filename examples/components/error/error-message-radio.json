@@ -5,9 +5,7 @@
         "id": "sagen-omhandler-ulykkesforsikring",
         "name": "sagen-omhandler",
         "value": "ulykkesforsikring",
-        "text": "Ulykkesforsikring (ASL §81)",
-        "checked": false,
-        "disabled": false,
+        "label": "Ulykkesforsikring (ASL §81)",
         "large": true
 
       },
@@ -15,18 +13,14 @@
         "id": "sagen-omhandler-erstatningsansvar",
         "name": "sagen-omhandler",
         "value": "erstatningsansvar",
-        "text": "Erstatningsansvar (ASL §10)",
-        "checked": false,
-        "disabled": false,
+        "label": "Erstatningsansvar (ASL §10)",
         "large": true
       },
       {
         "id": "sagen-omhandler-forsikringsselskab",
         "name": "sagen-omhandler",
         "value": "forsikringsselskab",
-        "text": "Forsikringsselskab (ASL §10)",
-        "checked": false,
-        "disabled": false,
+        "label": "Forsikringsselskab (ASL §10)",
         "large": true
       }
     ]

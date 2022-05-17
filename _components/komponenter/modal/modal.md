@@ -13,6 +13,9 @@ description: Modalvinduer er separate vinduer, som popper-up på siden, når du 
 component: modal
 componentTitle: Eksempel på modal
 componentCode: "/kode/komponenter/modal/"
+subnav:
+- text: Modalvindue som kræver handling
+  href: "#kraever-handling"
 
 ---
 {:.h3 #retningslinjer}
@@ -42,7 +45,7 @@ Undgå at have flere åbne modaler på siden - det giver en dårligere brugeropl
 
 Modalvinduet skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
-Knapper i modalvinduet skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige anbefalinger for knapper.
+<a href="/komponenter/knapper/">Knapper i modalvinduet skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/#retningslinjer">anbefalinger for knapper</a>.
 
 Vær sikker på at modalvinduet kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 
@@ -50,8 +53,16 @@ Brugeren skal selv aktivere modalvinduet. Det må ikke aktiveres per automatik, 
 
 Hold teksten i modalvinduet så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalvinduet bliver så langt, at vinduet scroller. Overvej at bruge en individuel side i stedet for et modalvindue, hvis indholdet er meget langt.
 
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/AES-erstatningssag/aes-5/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+
+* <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+
+{:#kraever-handling}
+## Modalvindue som kræver handling
+
+Anvend modalvindue som kræver handling, når brugeren ikke skal kunne lukke modalvinduet uden at tage stilling til dets indhold. 
+
+{% include code/preview-box.html component="modal-forced-action" title="Eksempel på modalvindue, som kræver handling" link="true" %}

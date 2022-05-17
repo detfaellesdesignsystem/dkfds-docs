@@ -1,13 +1,14 @@
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
 <div class="container pt-6 align-text-right">
-    {{overflowmenu("Overflow menu","overflow2", false, true, "more-vert" ,"
+    {{overflowmenu({
+        "button": {"text": "Overflow menu"}, "id": "overflow2", "openRight": false,
+        "content": "
         <ul class='overflow-list'>
             <li><button>Option 1</button></li>
             <li><button>Option 2</button></li>
             <li><a href='#'>Option 3 as link</a></li>
             <li><button>Option 4 is longer text</button></li>
         </ul>
-        "
-    ) }}
+        "}) }}
 </div>

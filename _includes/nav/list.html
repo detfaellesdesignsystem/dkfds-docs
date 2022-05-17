@@ -1,4 +1,9 @@
+
+
+{% assign _uniqueid = 0 %}
+{% assign _level = include.level | plus:1 %}
 {% for link in include.links -%}
+{% assign _uniqueid = _uniqueid | plus:1 %}
   {% if link.href -%}
     {% assign _page = link.href | resolve_permalink %}
   {% else -%}
@@ -14,7 +19,11 @@
         use_alt_text=include.use_alt_text
         categorynav=link.categorynav
         alternative_text=link.alternative_text
+        overblik=link.overblik
         subnav_class=include.subnav_class
+        parent=include.parent
+        item=_uniqueid
+        level=_level
       %}
     {% else -%}
       {% include nav/link-item.html

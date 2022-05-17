@@ -1,20 +1,22 @@
 {
-  "list_ul": [
-    {"text": "Unordered list"},
-    {"text": "Unordered list"},
-    {"text": "Unordered list"},
-    {
-      "text": "Unordered list",
-      "list_ul": [
-        {"text": "Unordered list"},
-        {"text": "Unordered list"},
-        {"text": "Unordered list",
-          "list_ul": [
-            {"text": "Unordered list"},
-            {"text": "Unordered list"},
-            {"text": "Unordered list"}
-          ]}
-      ]
-    }
-  ]
+  "list": {
+    "items": [
+      {"text": "Unordered list"},
+      {"text": "Unordered list"},
+      {"text": "Unordered list"},
+      {
+        "text": "Unordered list",
+        "items": [
+          {"text": "Unordered list"},
+          {"text": "Unordered list"},
+          {"text": "Unordered list",
+            "items": [
+              {"text": "Unordered list"},
+              {"text": "Unordered list"},
+              {"text": "Unordered list"}
+            ]}
+        ]
+      }
+    ]
+  }
 }

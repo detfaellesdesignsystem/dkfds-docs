@@ -1,7 +1,7 @@
 {
   "tag_example": {
     "text": "Default",
-    "class": "tag-icon",
+    "classes": "tag-icon",
     "icon": "highlight-off"
   }
 }

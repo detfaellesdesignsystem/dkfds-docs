@@ -1,25 +1,26 @@
-<header class="header">
+<header class="header"><a href="#main-content" class="skipnav">Gå til
+        sidens indhold</a>
 
     <!--1A: Portal header -->
     <div class="portal-header ">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn"
-                class="logo alert-leave">
+                class="logo ">
 
             </a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="menu"
+                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
                 <p class="user"><span
-                        class="username weight-semibold">Christian Emil
-                        Vestergaard Christiansen</span> </p>
+                        class="username weight-semibold">Anders
+                        Andersen</span> </p>
 
-                <button
-                    class="button button-secondary alert-leave d-print-none">
+                <button class="button button-secondary d-print-none">
                     Log af
                 </button>
             </div>
@@ -27,10 +28,10 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header header-end">
+    <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" class="alert-leave2">
+                <a href="#" class="">
                     Strategiske virksomhedsalliancer
                 </a>
             </div>
@@ -53,9 +54,8 @@
     <div class="overlay"></div>
     <nav class=" nav">
         <!-- collapsible-->
-        <button
-            class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+        <button class="function-link button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user bold">Navn</p>
@@ -155,33 +155,32 @@
             </p>
             <a href="#" class="5">Se eksempel</a>
             <div class="form-group">
-                <label class="form-label " for="id-employees">
+
+                <label class="form-label" for="id-employees">
                     Antal ansatte i seneste regnskabsår
                 </label>
 
-                <input class="form-input input-width-m" required
-                    id="id-employees" value=""
-                    name="Input til antal ansatte i seneste regnskabsår"
-                    type="text">
+                <input class="form-input input-width-m" id="id-employees"
+                    name="number-employees" type="text" required />
             </div>
             <div class="form-group">
-                <label class="form-label " for="id-sales">
+
+                <label class="form-label" for="id-sales">
                     Omsætning i DKK i seneste regnskabsår
                 </label>
                 <span class="form-hint" id="id-sales-hint">
                     Angives i helt tal, fx. 11.650.334
                 </span>
-
-                <input class="form-input input-width-m" required
-                    id="id-sales" value=""
-                    name="Input til omsætning i DKK i seneste regnskabsår"
-                    type="text" aria-describedby="id-sales-hint ">
+                <input class="form-input input-width-m" id="id-sales"
+                    name="number-sales" type="text"
+                    aria-describedby="id-sales-hint" required />
             </div>
 
-            <nav class="page-navigation d-print-none">
-                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/"
-                    class="button button-primary">Næste</a>
-            </nav>
+            <form novalidate method="get"
+                action="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/">
+                <button
+                    class="button button-primary mt-8 d-print-none">Næste</button>
+            </form>
         </main>
     </div>
 </div>
@@ -189,31 +188,29 @@
 <footer>
     <div class="footer">
         <div class="container">
-            <div class="align-text-left">
-                <ul class="unstyled-list inline-list">
-                    <li class=""><span
-                            class="h5 weight-semibold">Eksempelstyrelsen</span>
-                    </li>
-                    <li class=""><a class="function-link"
-                            href="mailto:support@example.dk">support@example.dk</a>
-                    </li>
-                    <li class=""><a class="function-link"
-                            href="tel:12345678">12 34 56 78</a></li>
-                    <li class="d-print-none"><a href="#"
-                            class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-                    </li>
-                    <li class="d-print-none"><a href="#"
-                            class="function-link">Privatlivspolitik
-                            (cookies)</a></li>
-                </ul>
-            </div>
+            <ul class="align-text-left unstyled-list inline-list">
+                <li class=""><span
+                        class="h5 weight-semibold">Eksempelstyrelsen</span>
+                </li>
+                <li class=""><a class="function-link"
+                        href="mailto:support@example.dk">support@example.dk</a>
+                </li>
+                <li class=""><a class="function-link"
+                        href="tel:12345678">12 34 56 78</a></li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+                </li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link">Privatlivspolitik
+                        (cookies)</a></li>
+            </ul>
         </div>
     </div>
 
 </footer>
 
 <div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-contact-title">
+    aria-modal="true" aria-labelledby="modal-id-1-title">
     <div class="modal-content">
         <div class="modal-header">
             <h2 class="modal-title" id="modal-contact-title">

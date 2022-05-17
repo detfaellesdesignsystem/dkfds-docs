@@ -61,7 +61,7 @@ Hvis man har en navigation i headeren skal man bruge en af de andre herunder.
 {% include code/syntax.html component="header-navigation" %}
 
 ##### Hovednavigation med ekstra navigationsrækker
-Ekstra navigationsrækker kan indeholde alt lige fra <a href="/komponenter/buttons/">knapper</a>, links til <a href="/komponenter/modal/">modalvinduer</a>, <a href="/komponenter/overflowmenu/">overflow menuer</a> og sidst <a href="/komponenter/funktionslink/">funktionslink</a>.
+Ekstra navigationsrækker kan indeholde alt lige fra <a href="/komponenter/knapper/">knapper</a>, links til <a href="/komponenter/modal/">modalvinduer</a>, <a href="/komponenter/overflowmenu/">overflow menuer</a> og sidst <a href="/komponenter/funktionslink/">funktionslink</a>.
 
 Hvis man laver en header med lidt indhold, er det anbefalet at man indstiller `$nav-responsive-breakpoint` til at have en lavere værdi, fx. 768px.
 
@@ -71,5 +71,5 @@ Hvis man laver en header med lidt indhold, er det anbefalet at man indstiller `$
 Mobil menuen kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight js %}
-new DKFDS.Navigation();
+new DKFDS.Navigation().init();
 {% endhighlight %}

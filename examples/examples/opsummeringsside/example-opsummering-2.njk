@@ -4,15 +4,15 @@
 
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/footers/footer-simple.njk" import footer_simple as footer_simple %}
+{% from "components/footers/footer.njk" import footer as footer %}
 
 {% block header %}
-  <header class="header">
+  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
     <nav class=" nav"> <!-- collapsible-->
-      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg("close")}}Luk</button>
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
 
       <div class="portal-info-mobile">
         <p class="user bold">Navn</p>
@@ -44,7 +44,7 @@
                 <div class="overflow-menu-inner" id="overflow4" aria-hidden="true">
                     <nav><ul class="sidenav-list sidenav-list-locked" role="menu">
                         <li role="none">
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1" role="menuitem">
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/" role="menuitem">
                                 1. Stamdata
                                 <span class="sidenav-icon" aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#done"></use></svg>
@@ -52,7 +52,7 @@
                             </a>
                         </li>
                         <li role="none">
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2" role="menuitem">
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/" role="menuitem">
                                 2. SMV-kriterier
                                 <span class="sidenav-icon" aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#done"></use></svg>
@@ -60,7 +60,7 @@
                             </a>
                         </li>
                         <li role="none">
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3" role="menuitem">
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/" role="menuitem">
                                 3. Statsstøtte
                                 <span class="sidenav-icon" aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#done"></use></svg>
@@ -68,7 +68,7 @@
                             </a>
                         </li>
                         <li role="none">
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4" role="menuitem">
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/" role="menuitem">
                                 4. Tilskud til land
                                 <span class="sidenav-icon" aria-label="Gennemført">
                                     <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#done"></use></svg>
@@ -76,7 +76,7 @@
                             </a>
                         </li>
                         <li class="active current" role="none">
-                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5" role="menuitem" aria-current="page">
+                            <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/" role="menuitem" aria-current="page">
                                5. Opsummering
                             </a>
                         </li>
@@ -89,93 +89,160 @@
             <h1>Opsummering</h1>
             <p class="font-lead">Her kan du kontrollere, om oplysningerne er korrekte.</p>
             <h2>Dine oplysninger</h2>
-            <table class="table table--borderless table--compact table--responsive-headers d-print-table mb-7">
-                <tbody>
-                    <tr>
-                        <th class="w-percent-md-30">Virksomhedens navn</th>
-                        <td>Forsikringens forsikring (enhed)</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Kontaktperson</th>
-                        <td>John Doe<br>privatskade@ff.dk<br>+45 1234 5678</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Afsender er</th>
-                        <td>Forsikringens forsikring (enhed)</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3 class="h4">Oplysninger om skadelidte</h3>
-            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
-                <tbody>
-                    <tr>
-                        <th class="w-percent-md-30">Skadelidtes navn</th>
-                        <td>Susanne Maria Zaggariasen</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Skadelidtes CPR</th>
-                        <td>110687-1478</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3 class="h4">Oplysninger om sagen</h3>
-            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
-                <tbody>
-                    <tr>
-                        <th class="w-percent-md-30">Sagstype</th>
-                        <td>Erstatningsansvarloven</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Emne</th>
-                        <td>Mén (6.220 kr.)</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Skadedato</th>
-                        <td>1/10-2017</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Sagsnummer</th>
-                        <td>prsk013456</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Verserende retssag</th>
-                        <td>Nej</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                    <tr>
-                        <th class="w-percent-md-30">Skadelidtes advokat</th>
-                        <td>Nej</td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3 class="h4">Yderligere oplysninger</h3>
-            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
-                <tbody>
-                    <tr>
-                        <th class="w-percent-md-30">Faktuelle oplysninger</th>
-                        <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy.
-                            Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio.
-                            Donec augue. Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.
-                            Aliquam aliquam sodales orci. Suspendisse potenti. Nunc adipiscing euismod arcu. Quisque facilisis mattis lacus.
-                        </td>
-                        <td class="align-text-md-right d-print-none"><a href="#">Rediger</a></td>
-                    </tr>
-                </tbody>
-            </table>
+             <div class="w-percent-md-80 mt-6 mb-7">
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Virksomhedens navn
+            </div>
+            <div class="col-12 col-md-6">
+                Forsikringens forsikring (enhed)
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> virksomhedens navn</span></a>
+            </div>
+        </div> 
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Kontaktperson
+            </div>
+            <div class="col-12 col-md-6">
+                John Doe<br/>
+                <span class="sr-only">Telefonnummer til kontaktperson:</span>
+                +45 1234 5678
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> virksomhedens kontaktperson</span></a>
+            </div>
+        </div> 
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Afsender
+            </div>
+            <div class="col-12 col-md-6">
+                Forsikringens forsikring (enhed)
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> afsender</span></a>
+            </div>
+        </div> 
+    </div>
+    <h3 class="h4">Oplysninger om skadelidte</h3>
+    <div class="w-percent-md-80 mt-6 mb-7">
+      <div class="row no-gutters row-bordered">
+        <div class="col-12 col-md-4 weight-semibold">
+            Skadelidtes navn
+        </div>
+        <div class="col-12 col-md-6">
+            Susanne Maria Zaggariasen
+        </div>
+        <div class="col-12 col-md-2 align-text-md-right">
+            <a href="#">Redigér<span class="sr-only"> skadelidtes navn</span></a>
+        </div>
+      </div>
+      <div class="row no-gutters row-bordered">
+        <div class="col-12 col-md-4 weight-semibold">
+            Skadelidtes CPR
+        </div>
+        <div class="col-12 col-md-6">
+            110687-1478
+        </div>
+        <div class="col-12 col-md-2 align-text-md-right">
+            <a href="#">Redigér<span class="sr-only"> skadelidtes CPR</span></a>
+        </div>
+      </div>
+    </div>
+    <h3 class="h4">Oplysninger om sagen</h3>
+    
+    <div class="w-percent-md-80 mt-6 mb-7">
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Sagstype
+            </div>
+            <div class="col-12 col-md-6">
+                Erstatningsansvarloven
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> sagstype</span></a>
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Emne
+            </div>
+            <div class="col-12 col-md-6">
+                Mén (6.220 kr.)
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> emne</span></a>
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Skadedato
+            </div>
+            <div class="col-12 col-md-6">
+                01/10/2017
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> skadedato</span></a>
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Sagsnummer
+            </div>
+            <div class="col-12 col-md-6">
+                prsk013456
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> sagsnummer</span></a>
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Verserende retssag
+            </div>
+            <div class="col-12 col-md-6">
+                Nej
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> verserende retssag</span></a>
+            </div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Skadelidtes advokat
+            </div>
+            <div class="col-12 col-md-6">
+                Nej
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> skadelidtes advokat</span></a>
+            </div>
+        </div>
+    </div>
+    <h3 class="h4">Yderligere oplysninger</h3>
+
+    <div class="w-percent-md-80 mt-6 mb-7">
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Faktuelle oplysninger
+            </div>
+            <div class="col-12 col-md-6">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy.
+Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio.
+Donec augue. Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.
+Aliquam aliquam sodales orci. Suspendisse potenti. Nunc adipiscing euismod arcu. Quisque facilisis mattis lacus.
+            </div>
+            <div class="col-12 col-md-2 align-text-md-right">
+                <a href="#">Redigér<span class="sr-only"> faktuelle oplysninger</span></a>
+            </div>
+        </div>
+    </div>
+
             <h2>Bilagsoversigt</h2>
             <h3 class="h4">Første undersøgelse af skade</h3>
-            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
+            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-md-80">
                 <thead>
                     <tr>
                         <th>Original titel</th>
@@ -196,7 +263,7 @@
                 </tbody>
             </table>
             <h3 class="h4">Oplysninger om varigt mén</h3>
-            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7">
+            <table class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-md-80">
                 <thead>
                     <tr>
                         <th>Original titel</th>
@@ -224,7 +291,7 @@
                 </tbody>
             </table>
             <h3 class="h4">Første undersøgelse af skade</h3>
-            <table class="table table--borderless table--responsive-headers d-print-table table--compact mt-6">
+            <table class="table table--borderless table--responsive-headers d-print-table table--compact mt-6 w-percent-md-80">
                 <thead>
                     <tr>
                         <th>Original titel</th>
@@ -245,9 +312,9 @@
                 </tbody>
             </table>
 
-            <nav class="page-navigation d-print-none">
-                <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-6/" class="button button-primary">Send sagen</a>
-            </nav>
+            <form novalidate method="get" action="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-6/">
+                <button class="button button-primary mt-8 d-print-none">Send sagen</button>
+            </form>
         </main>
     </div>
 </div>
@@ -257,7 +324,7 @@
 {% endblock %}
 
 {% block footer -%}
-  {{ footer_simple(footer_data) }}
+  {{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

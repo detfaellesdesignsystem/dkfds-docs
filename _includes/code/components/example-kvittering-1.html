@@ -1,24 +1,25 @@
-<header class="header">
+<header class="header"><a href="#main-content" class="skipnav">Gå til
+        sidens indhold</a>
 
     <!--1A: Portal header -->
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn"
-                class="logo alert-leave">
+                class="logo ">
 
             </a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="menu"
+                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><span class="username">Christian Emil
-                        Vestergaard Christiansen</span> </p>
+                <p class="user"><span class="username">Anders
+                        Andersen</span> </p>
 
-                <button
-                    class="button button-secondary alert-leave d-print-none">
+                <button class="button button-secondary d-print-none">
                     Log af
                 </button>
             </div>
@@ -26,10 +27,10 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header header-end">
+    <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" class="alert-leave2">
+                <a href="#" class="">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
             </div>
@@ -52,14 +53,12 @@
     <div class="overlay"></div>
     <nav class=" nav">
         <!-- collapsible-->
-        <button
-            class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+        <button class="function-link button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><span class="weight-semibold">Christian Emil
-                    Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma
-            </p>
+            <p class="user"><span class="weight-semibold">Anders
+                    Andersen</span><br />Forsikringens Forsikringsfirma</p>
             <a href="#" class="button button-secondary button-signout">
                 Log af
             </a>
@@ -77,16 +76,14 @@
 
 <main class="container page-container" id="main-content">
 
-    <div class="alert alert alert-success alert--show-icon" role="alert"
-        aria-atomic="true" aria-label="success">
+    <div class="alert alert-success alert--show-icon">
         <div class="alert-body">
             <p class="alert-heading">Sagen er sendt til AES</p>
             <p class="alert-text"></p>
         </div>
     </div>
 
-    <div class="alert alert alert-warning alert--show-icon" role="alert"
-        aria-atomic="true" aria-label="warning">
+    <div class="alert alert-warning alert--show-icon">
         <div class="alert-body">
             <p class="alert-heading">Husk betaling</p>
             <p class="alert-text">Gebyret skal indsættes på vores konto i
@@ -99,7 +96,7 @@
     <p class="mt-0 mb-4">Hvis du ønsker dokumentation på fremsendelse kan
         du downloade anmodningen.</p>
     <button
-        class="button button-secondary d-print-none"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
+        class="button button-secondary d-print-none"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
         Download kvittering som pdf</button>
     <h2 class="h4 mt-7">Hvad sker der nu</h2>
     <p>Sagens parter vil indenfor 7 hverdage modtage en kvittering med
@@ -108,20 +105,18 @@
     <h2 class="h4 mt-7">Husk betaling</h2>
     <p class="my-0">Gebyret for udtalelsen skal sættes ind på vores konto i
         Danske Bank:</p>
-    <div class="row">
-        <div class="col-12 col-sm-3 col-md-3 col-lg-3">
-            <table class="table table--borderless table--compact">
-                <tbody>
-                    <tr>
-                        <td class="weight-semibold">Reg.nr.:</td>
-                        <td>0216</td>
-                    </tr>
-                    <tr>
-                        <td class="weight-semibold">Kontonr.:</td>
-                        <td>4069068936</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="w-percent-md-30 mt-4">
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Reg.nr.
+            </div>
+            <div class="col-12 col-md-8">0216</div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Kontonr.
+            </div>
+            <div class="col-12 col-md-8">4069068936</div>
         </div>
     </div>
     <div class="mt-4">
@@ -143,31 +138,29 @@
 <footer>
     <div class="footer">
         <div class="container">
-            <div class="align-text-left">
-                <ul class="unstyled-list inline-list">
-                    <li class=""><span
-                            class="h5 weight-semibold">Eksempelstyrelsen</span>
-                    </li>
-                    <li class=""><a class="function-link"
-                            href="mailto:support@example.dk">support@example.dk</a>
-                    </li>
-                    <li class=""><a class="function-link"
-                            href="tel:12345678">12345678</a></li>
-                    <li class="d-print-none"><a href="#"
-                            class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-                    </li>
-                    <li class="d-print-none"><a href="#"
-                            class="function-link">Privatlivspolitik
-                            (cookies)</a></li>
-                </ul>
-            </div>
+            <ul class="align-text-left unstyled-list inline-list">
+                <li class=""><span
+                        class="h5 weight-semibold">Eksempelstyrelsen</span>
+                </li>
+                <li class=""><a class="function-link"
+                        href="mailto:support@example.dk">support@example.dk</a>
+                </li>
+                <li class=""><a class="function-link"
+                        href="tel:12345678">12345678</a></li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+                </li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link">Privatlivspolitik
+                        (cookies)</a></li>
+            </ul>
         </div>
     </div>
 
 </footer>
 
 <div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-contact-title">
+    aria-modal="true" aria-labelledby="modal-id-1-title">
     <div class="modal-content">
         <div class="modal-header">
             <h2 class="modal-title" id="modal-contact-title">

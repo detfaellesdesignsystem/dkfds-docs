@@ -20,8 +20,6 @@ subnav:
   href: '#responsiv'
 - text: Linjehøjde
   href: '#forskellig-linjehøjde'
-- text: Med titel i venstre kolonne
-  href: '#med-titel-i-venstre-kolonne'
 - text: Sortering i tabeller
   href: '#sortering-i-tabeller'
 - text: Søgning i tabeller
@@ -43,9 +41,9 @@ Tabeller anvendes til at præsentere brugeren for data som fx statistik opstille
 {:.h3}
 ## Anvendes ikke til
 
-Tabeller anvendes ikke til at opsætte en sides eller en komponents indhold udover data.
+Anvend ikke tabeller til at opsætte en sides eller en komponents indhold udover data.
 
-Overvej at anvende en liste (en unordered eller definition list), hvis det giver brugeren et bedre overblik.
+Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/TR/WCAG20-TECHS/F91.html" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></a>. Anvend da i stedet <a href="/komponenter/strukturerede-lister/">strukturerede lister</a>.
 
 {:.h3}
 ## Vejledning
@@ -67,12 +65,15 @@ Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tal
 - <a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://alistapart.com/article/web-typography-tables/" class="icon-link">Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/mobile-tables/" class="icon-link">Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.w3.org/TR/WCAG20-TECHS/F91.html" class="icon-link">W3C: F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3}
+
+
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/" target="_blank" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
-- <a href="/pages/eksempler/aes/oversigt/" target="_blank" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
+- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
+- <a href="/pages/eksempler/aes/oversigt/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
 
 {% include child-components.html parent='Tables' %}

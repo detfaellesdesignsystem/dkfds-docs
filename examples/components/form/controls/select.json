@@ -2,7 +2,9 @@
   "select_example": {
     "name": "options",
     "id": "options",
-    "label": "Dropdown label (select)",
+    "label": {
+      "text": "Dropdown label (select)"
+    },
     "options": [
       {
         "value": "option1",

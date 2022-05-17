@@ -12,7 +12,7 @@ subcategory: Design
 ---
 <h2 class="h5">1. Headeren skal indeholde de obligatoriske linjer og følge layoutreglerne</h2>
 
-Headerens to obligatoriske linjer - med portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt - skal altid være at finde i alle selvbetjeningsløsninger og <a href="/komigang/regler-principper-layout/#header">hele headeren skal følge retningslinjerne for layout</a>.
+Headerens to obligatoriske linjer - med portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt - skal altid være at finde i alle selvbetjeningsløsninger og <a href="/design/layout/#header">hele headeren skal følge retningslinjerne for layout</a>.
 
 <h2 class="h5">2. Fonten skal anvendes</h2>
 
@@ -36,7 +36,7 @@ Ikoner til beskeder skal fx altid være de samme alt efter typen af besked.<br /
 
 <h2 class="h5">7. Der skal bruges et responsivt grid</h2>
 
-Grid-systemet i det Fælles Designsystem er et 12 kolonne grid (desktop), præcist hvilket grid du anvender i teknisk forstand er ikke vigtig så længe det er responsivt og følger <a href="/design/grid/">reglerne for grid-systemet</a>.
+Grid-systemet i det Fælles Designsystem er et 12 kolonne grid (desktop), præcist hvilket grid du anvender i teknisk forstand er ikke vigtig så længe det er responsivt og følger <a href="/kode/grid/">reglerne for grid-systemet</a>.
 
 <h2 class="h5">8. De komponenter du bruger skal fungere som beskrevet</h2>
 

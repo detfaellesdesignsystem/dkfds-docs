@@ -1,10 +1,11 @@
-<div class="alert alert-error mt-0 mb-8" role="alert" aria-atomic="true">
+<div class="alert alert-error mt-0 mb-8" role="alert" aria-atomic="true"
+    data-module="error-summary">
     <div class="alert-body">
         <p class="alert-heading">Der er problemer</p>
         <ul class="alert-text nobullet-list">
             <li><a class="function-link" href="#example-name">Skriv dit
                     fulde navn, og adskil for- og efternavne med mellemrum,
-                    fx Christian Emil Vestergaard Christiansen</a></li>
+                    fx Anders Andersen</a></li>
             <li><a class="function-link" href="#nationalitet1">Angiv om du
                     er dansk, svensk eller anden nationalitet</a></li>
             <li><a class="function-link" href="#date-day">Datoen kan ikke
@@ -14,21 +15,20 @@
 </div>
 
 <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
-<form>
+<form novalidate>
 
     <div class="form-group form-error">
-        <label class="form-label " for="example-name">
+
+        <label class="form-label" for="example-name">
             Hvad er dit fulde navn?
         </label>
 
         <span class="form-error-message" id="example-name-error">
             <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og
-            adskil for- og efternavne med mellemrum, fx Christian Emil
-            Vestergaard Christiansen
-        </span>
-        <input class="form-input " required id="example-name" value=""
+            adskil for- og efternavne med mellemrum, fx Anders Andersen
+        </span><input class="form-input" id="example-name"
             name="form-error" type="text" aria-invalid="true"
-            aria-describedby=" example-name-error">
+            aria-describedby=" example-name-error" required />
     </div>
 
     <div class="form-group form-error">
@@ -42,19 +42,19 @@
                 <li>
                     <input id="nationalitet1" type="checkbox"
                         name="nationalitet" value="dansk"
-                        class="form-checkbox  checkbox-large " />
+                        class="form-checkbox checkbox-large " />
                     <label for="nationalitet1" class="">Dansk</label>
                 </li>
                 <li>
                     <input id="nationalitet2" type="checkbox"
                         name="nationalitet[]" value="svensk"
-                        class="form-checkbox  checkbox-large " />
+                        class="form-checkbox checkbox-large " />
                     <label for="nationalitet2" class="">Svensk</label>
                 </li>
                 <li>
                     <input id="nationalitet3" type="checkbox"
                         name="nationalitet[]" value="anden"
-                        class="form-checkbox  checkbox-large " />
+                        class="form-checkbox checkbox-large " />
                     <label for="nationalitet3" class="">Anden
                         nationalitet</label>
                 </li>

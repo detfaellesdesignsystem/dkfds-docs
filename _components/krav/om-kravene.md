@@ -6,7 +6,7 @@ category: Krav_category
 subcategory: Krav
 description: Information om eksterne krav, fælles aftalte krav og krav til digitale
   løsninger der skal på borger.dk og Virk.
-parentlink: "/komigang/krav/"
+parentlink: "/krav/"
 
 ---
 <a href="https://arkitektur.digst.dk/node/697" class="icon-link">De fælles krav til digitale løsninger<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> består af tre forskellige typer af krav:

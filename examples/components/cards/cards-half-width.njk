@@ -1,16 +1,15 @@
-{% from "components/cards/cards.njk" import cards2 as cards2 %}
-{% from "components/cards/cards.njk" import cards3 as cards3 %}
+{% from "components/cards/cards.njk" import card as card %}
 
 <div class="container pb-5">
   <div class="row">
     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-      {% for card2 in cards2_example.items -%}
-        {{ cards2(card2.name, card2.header, card2.subheader, card2.cardtext, card2.contenttext, card2.cardcontent, card2.actioncontent, card2.actionbuttons, card2.actionlinks ) }}
+      {% for item in cards2_example.items -%}
+        {{ card(item) }}
       {%- endfor %}
     </div>
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0">
-      {% for card3 in cards3_example.items -%}
-        {{ cards3(card3.name, card3.header, card3.subheader, card3.cardtext, card3.contenttext, card3.cardcontent, card3.actioncontent, card3.actionbuttons, card3.actionlinks ) }}
+      {% for item in cards3_example.items -%}
+        {{ card(item) }}
       {%- endfor %}
     </div>
   </div>

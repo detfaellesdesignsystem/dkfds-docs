@@ -1,29 +1,34 @@
 {
   "alert_example": {
-    "name": "error",
     "classes": "alert-error mt-0 mb-8",
-    "title": "Der er problemer",
-    "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#example-name\">Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Christian Emil Vestergaard Christiansen</a></li><li><a class=\"function-link\" href=\"#nationalitet1\">Angiv om du er dansk, svensk eller anden nationalitet</a></li><li><a class=\"function-link\" href=\"#date-day\">Datoen kan ikke være i fremtiden</a></li></ul>",
+    "heading": "Der er problemer",
+    "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#example-name\">Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen</a></li><li><a class=\"function-link\" href=\"#nationalitet1\">Angiv om du er dansk, svensk eller anden nationalitet</a></li><li><a class=\"function-link\" href=\"#date-day\">Datoen kan ikke være i fremtiden</a></li></ul>",
     "role": "alert",
-    "contentContainer": false
+    "contentContainer": false,
+    "attributes": "data-module=\"error-summary\""
   },
   "dateObject": {
-    "label": "Hvornår blev dit pas udstedt?",
-    "hint": "Fx: 05 12 2018",
-    "day": "Dag",
-    "month": "Måned",
-    "year": "År",
-    "error": "Datoen kan ikke være i fremtiden",
-    "dayValue": "01",
-    "monthValue": "12",
-    "yearValue": "2076",
-    "id": "example-date"
+    "labels": {
+      "legend": "Hvornår blev dit pas udstedt?",
+      "day": "Dag",
+      "month": "Måned",
+      "year": "År"
+    },
+    "helptext": "Fx: 05 12 2018",
+    "errorMessage": "Datoen kan ikke være i fremtiden",
+    "values": {
+      "day": "01",
+      "month": "12",
+      "year": "2076"
+    }
   },
   "textinput_example": {
     "id": "example-name",
-    "label": "Hvad er dit fulde navn?",
+    "label": {
+      "text":"Hvad er dit fulde navn?"
+    },
     "name": "form-error",
-    "error": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Christian Emil Vestergaard Christiansen"
+    "errorMessage": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen"
   },
   "checkbox_error_examples": {
     "items": [
@@ -33,7 +38,7 @@
         "value": "dansk",
         "checked": false,
         "disabled": false,
-        "text": "Dansk",
+        "label": "Dansk",
         "large": true
       },
       {
@@ -42,7 +47,7 @@
         "value": "svensk",
         "checked": false,
         "disabled": false,
-        "text": "Svensk",
+        "label": "Svensk",
         "large": true
       },
       {
@@ -51,7 +56,7 @@
         "value": "anden",
         "checked": false,
         "disabled": false,
-        "text": "Anden nationalitet",
+        "label": "Anden nationalitet",
         "large": true
       }
     ]

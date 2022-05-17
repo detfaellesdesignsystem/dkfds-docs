@@ -1,7 +1,7 @@
-{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-{% from "components/type/links.njk" import link as link %}
+{% from 'components/icons/icons--svg.njk' import icon_svg as icon_svg %}
+{% from 'components/type/links.njk' import link as link %}
 
-<p>{{ link('javascript:void(0);', '', 'Standard link','') }}</p>
-<p>{{ link('javascript:void(0);', 'link-hover', 'Standard link, hover','') }}</p>
-<p>{{ link('javascript:void(0);', 'link-visited', 'Standard link, besøgt','') }}</p>
-<p>{{ link('javascript:void(0);', 'link-focus', 'Standard link, fokus','') }}</p>
+<p>{{ link({'url': 'https://designsystem.dk/', 'text':'Standard link','classes': 'link-default'}) }}</p>
+<p>{{ link({'url': 'https://designsystem.dk/', 'text':'Standard link, hover', 'classes': 'link-hover'}) }}</p>
+<p>{{ link({'url': 'https://designsystem.dk/', 'text':'Standard link, besøgt', 'classes': 'link-visited'}) }}</p>
+<p>{{ link({'url': 'https://designsystem.dk/', 'text':'Standard link, fokus', 'classes': 'link-focus'}) }}</p>

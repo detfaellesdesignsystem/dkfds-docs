@@ -1,23 +1,26 @@
 {
   "lists": {
-    "list_ul": [
-      {"text": "Unordered list"},
-      {"text": "Unordered list"},
-      {"text": "Unordered list"},
-      {
-        "text": "Unordered list",
-        "list_ul": [
-          {"text": "Unordered list"},
-          {"text": "Unordered list"},
-          {"text": "Unordered list",
-            "list_ul": [
+    "list_ul": {
+      "items": [
+        {"text": "Unordered list"},
+        {"text": "Unordered list"},
+        {"text": "Unordered list"},
+        {
+          "text": "Unordered list",
+            "items":[
               {"text": "Unordered list"},
               {"text": "Unordered list"},
-              {"text": "Unordered list"}
-            ]}
-        ]
-      }
-    ],
+              {"text": "Unordered list",
+                  "items":[
+                    {"text": "Unordered list"},
+                    {"text": "Unordered list"},
+                    {"text": "Unordered list"}
+                  ]
+                }
+            ]
+          }
+      ]
+    },
     "list_ol": {
       "items": [
         {
@@ -31,7 +34,7 @@
         },
         {
           "text": "Ordered list",
-          "list_ol": {
+          "list": {
             "type": "a",
             "items": [
               {
@@ -42,7 +45,7 @@
               },
               {
                 "text": "Ordered list",
-                "list_ol": {
+                "list": {
                   "type": "i",
                   "items": [
                     {

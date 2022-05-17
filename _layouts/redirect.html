@@ -1,14 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="da">
     <head>
         <meta charset="utf-8"/>
-        <meta http-equiv="refresh" content="1;url={{ page.redirect }}"/>
-        <link rel="canonical" href="{{ page.redirect }}"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="refresh" content="1;url={{ page.redirect.to }}"/>
+        <link rel="canonical" href="{{ page.redirect.to }}"/>
         <script type="text/javascript">
-                window.location.href = "{{ page.redirect }}"
+                window.location.href = "{{ page.redirect.to }}"
         </script>
         <title>Du sendes videre til en anden side</title>
     </head>
     <body>
-    Hvis du ikke automatisk bliver videresendt, <a href='{{ page.redirect }}'></a>klik her for at komme videre</a>.
+        <h1>Du sendes videre til en anden side</h1>
+    Hvis du ikke automatisk bliver videresendt, <a href="{{ page.redirect.to }}">klik her for at komme videre</a>.
     </body>
 </html>

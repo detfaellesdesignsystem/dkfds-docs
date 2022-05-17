@@ -35,6 +35,3 @@ fields:
   config: {}
   template: component
   label: Component example
-pages:
-- _components/om_designsystemet/privatlivspolitik/privatlivspolitik-cookies.md
-- _components/om_designsystemet/privatlivspolitik/privatlivspolitik-privatlivspolitik.md

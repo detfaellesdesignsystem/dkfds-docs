@@ -5,22 +5,31 @@
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
 
 <h1 class="h2">Dine kontaktoplysninger</h1>
-<form>
+<form novalidate>
     <!-- Felt start: Navn -->
-    {{textinput("navn", "Navn", false, "", false, "navn", "", false, false)}}
+    {{textinput({
+        "name": "name", 
+        "label": {
+            "text": "Navn"
+        },
+        "id": "input-name"})}}
     <!-- Felt slut: Navn -->
 
     <!-- Felt start: Kørekort -->
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Har du kørekort?</legend>
-            {{ radiobutton("kort-ja", "kontakt", "kort-ja", false, false, "Ja", "", "", true) }}
-            {{ radiobutton("kort-nej", "kontakt", "kort-nej", false, false, "Nej", "", "", true) }}
+            <ul class="nobullet-list">
+              <li>{{ radiobutton(radiobutton_kort_ja) }}</li>
+              <li>{{ radiobutton(radiobutton_kort_nej) }}</li>
+            </ul>
         </fieldset>
     </div>
     <!-- Felt slut: Kørekort -->
 
     <!-- Knap start -->
-    {{ button("Gem oplysninger", "primary mt-9") }}
+    {{ button({
+        "text":"Gem oplysninger", 
+        "classes":"primary mt-9"}) }}
     <!-- Knap slut -->
 </form>

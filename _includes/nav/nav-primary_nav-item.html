@@ -36,17 +36,28 @@
 
   {% if _links -%}
     <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow{{ include.uniqueid }}" aria-haspopup="true" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
+      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-{{ titletext | slugify }}" aria-haspopup="true" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
         <span>{{ titletext | smartify }}</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow{{ include.uniqueid }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
-        <ul class="overflow-list">{%
+      <div role="menu" aria-label="{{ titletext | smartify }}" class="overflow-menu-inner" id="submenu-level1-{{ titletext | slugify }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
+        <ul class="overflow-list" role="menu">
+          {%
+            include nav/page-item.html
+            page=include.page
+            use_alt_text=include.use_alt_text
+            alternative_text=include.alternative_text
+            overblik=true
+          %}
+
+          {%
             include nav/list.html
             links=_links
             text_key=_text_key
             href_key=_href_key
-            subnav_class="overflow-list"
+            subnav_class="nav-list"
             use_alt_text=true
+            parent=titletext
+            level=1
           %}
         </ul>
       </div>

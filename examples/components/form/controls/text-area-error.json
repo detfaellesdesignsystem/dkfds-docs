@@ -1,9 +1,11 @@
 {
   "item": {
     "id": "input-error",
-    "label": "Tekstområde med fejlmeddelelse",
+    "label": {
+      "text": "Tekstområde med fejlmeddelelse"
+    },
     "name": "input-error",
-    "error": "Hjælpsom fejlmeddelelse",
+    "errorMessage": "Hjælpsom fejlmeddelelse",
     "rows": 5
   }
 }

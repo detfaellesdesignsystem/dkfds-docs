@@ -1,0 +1,13 @@
+<div class="container">
+    {% for row in list %}<div class="row row-bordered no-gutters">
+        <div class="col-12 col-md-4 weight-semibold">
+            {{row.label}}
+        </div>
+        <div class="col-12 col-md-6">
+            {{row.value}}
+        </div>
+        <div class="col-12 col-md-2 align-text-md-right">
+            <a href="#">Redigér<span class="sr-only"> {{row.label | lower }}</span></a>
+        </div>
+    </div>{% endfor %}
+</div>

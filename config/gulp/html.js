@@ -46,7 +46,7 @@ function isThisAComponentExample(file){
 function createMarkdown(content, path, file) {
     var fileName = path.split("\\").pop().replace('.html', '');
     var header = ``;
-    if(path.includes('language-switcher') || path.includes('footer') || path.includes('cookie-message') || (path.includes('header') && !path.includes('table--body-headers') ) || path.includes('notification')) {
+    if(path.includes('language-switcher') || path.includes('footer') || path.includes('cookie-message') || (path.includes('header') && !path.includes('table--body-headers') ) || path.includes('notification.')) {
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: example 

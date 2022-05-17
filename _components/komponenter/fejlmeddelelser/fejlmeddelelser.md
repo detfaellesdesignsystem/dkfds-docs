@@ -79,7 +79,7 @@ Generelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening uden for k
 
 * "En fejl opstod"
 * "Svar på spørgsmålet"
-* "Vælg et et svar fra listen"
+* "Vælg et svar fra listen"
 * "Udfyld feltet"
 * "Dette felt er påkrævet"
 
@@ -116,13 +116,14 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
+- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" class="icon-link">Understanding Success Criterion 3.3.1: Error Identification<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" class="icon-link">Understanding Success Criterion 3.3.3: Error Suggestion<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/" target="_blank" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
 
 {:#eksempler}
 ## Eksempler på fejlmeddelelser

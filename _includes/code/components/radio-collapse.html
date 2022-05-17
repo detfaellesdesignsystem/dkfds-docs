@@ -1,56 +1,61 @@
 <div class="js-radio-toggle-group">
     <fieldset>
         <legend class="form-label">Vælg en radioknap</legend>
+        <ul class="nobullet-list">
+            <li>
+                <div class="form-group-radio">
+                    <input id="id-radio1" type="radio" name="radio-group1"
+                        value="1" class="form-radio radio-large " checked
+                        data-controls="#collapse-radio1"
+                        data-expanded="false" />
+                    <label for="id-radio1" id="form-label-id-radio1"
+                        class="">Radioknap viser indhold <span
+                            class="sr-only">Udfyld informationer
+                            herunder</span></label>
 
-        <div class="form-group-radio">
-            <input id="id-radio1" type="radio" name="radio-group1"
-                value="Value" class="form-radio  radio-large " checked
-                data-js-target='#collapse-radio1'
-                aria-controls='collapse-radio1' aria-expanded='false' />
-            <label for="id-radio1" id="form-label-id-radio1"
-                class="">Radioknap viser indhold <span
-                    class="sr-only">Udfyld informationer
-                    herunder</span></label>
-
-        </div>
-
-        <div id="collapse-radio1" aria-hidden="true"
-            class="box-border-l collapsed">
-            <div class="py-4">
-                <div class="form-group">
-                    <label class="form-label " for="textinput1">
-                        Inputfelt med label
-                    </label>
-
-                    <input class="form-input input-width-m" required
-                        id="textinput1" value="" name="text1" type="text">
                 </div>
-            </div>
-        </div>
 
-        <div class="form-group-radio">
-            <input id="id-radio2" type="radio" name="radio-group1"
-                value="Value" class="form-radio  radio-large "
-                data-js-target='#collapse-radio2' />
-            <label for="id-radio2" id="form-label-id-radio2"
-                class="">Radioknap viser andet indhold <span
-                    class="sr-only">Udfyld informationer
-                    herunder</span></label>
+                <div id="collapse-radio1" aria-hidden="true"
+                    class="radio-content radio-content-large">
+                    <div class="form-group">
 
-        </div>
+                        <label class="form-label" for="textinput1">
+                            Inputfelt med label
+                        </label>
 
-        <div id="collapse-radio2" aria-hidden="true"
-            class="box-border-l collapsed">
-            <div class="py-4">
-                <div class="form-group">
-                    <label class="form-label " for="textinput2">
-                        Inputfelt med anden label
-                    </label>
-
-                    <input class="form-input input-width-m" required
-                        id="textinput2" value="" name="text2" type="text">
+                        <input class="form-input input-width-m"
+                            id="textinput1" name="text1" type="text"
+                            required />
+                    </div>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li>
+                <div class="form-group-radio">
+                    <input id="id-radio2" type="radio" name="radio-group1"
+                        value="2" class="form-radio radio-large "
+                        data-controls="#collapse-radio2"
+                        data-expanded="false" />
+                    <label for="id-radio2" id="form-label-id-radio2"
+                        class="">Radioknap viser andet indhold <span
+                            class="sr-only">Udfyld informationer
+                            herunder</span></label>
+
+                </div>
+
+                <div id="collapse-radio2" aria-hidden="true"
+                    class="radio-content radio-content-large">
+                    <div class="form-group">
+
+                        <label class="form-label" for="textinput2">
+                            Inputfelt med anden label
+                        </label>
+
+                        <input class="form-input input-width-m"
+                            id="textinput2" name="text2" type="text"
+                            required />
+                    </div>
+                </div>
+            </li>
+        </ul>
     </fieldset>
 </div>

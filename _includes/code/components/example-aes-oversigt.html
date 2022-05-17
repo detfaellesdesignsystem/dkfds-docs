@@ -1,27 +1,25 @@
-<a href="#main-content" class="skipnav">Gå til sidens indhold</a>
-
 <header class="header">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
     <!--1A: Portal header -->
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
             <a href="javascript:void(0);" aria-label="Portalnavn"
-                class="logo alert-leave">
+                class="logo ">
 
             </a>
             <button
-                class="button button-secondary button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="menu"
+                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><span class="username">Christian Emil
-                        Vestergaard Christiansen, Forsikringens
-                        Forsikringsfirma</span> </p>
+                <p class="user"><span class="username">Anders Andersen,
+                        Forsikringens Forsikringsfirma</span> </p>
 
-                <button
-                    class="button button-secondary alert-leave d-print-none">
+                <button class="button button-secondary d-print-none">
                     Log af
                 </button>
             </div>
@@ -29,10 +27,10 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header header-end">
+    <div class="solution-header ">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" title="Hjem" class="alert-leave2">
+                <a href="#" class="">
                     Sager hos AES
                 </a>
             </div>
@@ -54,14 +52,12 @@
     <div class="overlay"></div>
     <nav class=" nav">
         <!-- collapsible-->
-        <button
-            class="button button-tertiary button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+        <button class="function-link button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><span class="weight-semibold">Christian Emil
-                    Vestergaard Christiansen</span><br />Forsikringens Forsikringsfirma
-            </p>
+            <p class="user"><span class="weight-semibold">Anders
+                    Andersen</span><br />Forsikringens Forsikringsfirma</p>
             <a href="#" class="button button-secondary button-signout">
                 Log af
             </a>
@@ -77,7 +73,7 @@
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#account-circle"></use></svg>Min
+                        class="function-link"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#account-circle"></use></svg>Min
                         profil</a>
                 </div>
             </div>
@@ -89,18 +85,19 @@
 <main class="container page-container pt-4 pt-lg-0" id="main-content">
     <h1 id="searchlabel">Find sag</h1>
     <span class="form-hint" id="search-hint">
-        Søg på CPR-nr. eller sagsnr.
+
     </span>
+    <label for="search-input" class="form-label">Søg på CPR-nr. eller
+        sagsnr.</label>
     <div class="form-group search mt-3">
         <input class="form-input input-char-27" id="search-input"
             name="search" aria-describedby="search-hint"
-            value="311270-1234" aria-labelledby="searchlabel"
-            type="search">
+            value="311270-1234" type="search" />
 
         <button class="button button-search">Søg</button>
     </div>
     <h2 class="h5 mb-2">Navn: Lone Hansen</h3>
-        <table class="table table--zebra table--responsive-headers">
+        <table class="table table--responsive-headers">
             <thead>
                 <tr>
                     <th>Sagsnr.</th>
@@ -155,7 +152,7 @@
             </tbody>
         </table>
 
-        <details class="details js-details mt-4">
+        <details class="details mt-4">
             <summary class="details-summary">
                 <span class="details-summary-text">
                     Der er en sag hos AES jeg ikke kan finde
@@ -287,20 +284,6 @@
                     </section>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="language-switcher">
-        <div class="container">
-            <ul aria-label="Vælg sprog fra listen ">
-                <li><a href="" lang="da"
-                        aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a>
-                </li>
-                <li><a href="" lang="en-GB">English</a></li>
-                <li><a href="" lang="de">Deutsch</a></li>
-                <li><a href="" lang="kl">Kalaallisut</a></li>
-                <li><a href="" lang="pl">Polski</a></li>
-            </ul>
         </div>
     </div>
 

@@ -15,8 +15,11 @@ var pdfUrls = ["",
     "design/typografi/lister/",
     "design/borders/",
     "design/ikoner/",
-    "design/ikoner/ikoner-og-deres-betydning/",
     "design/logoer/",
+    "design/datavisualisering-infografik/",
+    "design/datavisualisering-infografik/tilgaengelig-grafik/",
+    "design/datavisualisering-infografik/datavisualisering/",
+    "design/datavisualisering-infografik/infografik/",
     "design/layout/",
     "design/layout/grid/",
     "design/designressourcer/",
@@ -30,13 +33,13 @@ var pdfUrls = ["",
     "komponenter/cards/",
     "komponenter/cookiemeddelelse/",
     "komponenter/dato-felt/",
+    "komponenter/datovaelger/",
     "komponenter/detaljer/",
     "komponenter/drop-down/",
     "komponenter/faneblad/",
     "komponenter/fejlmeddelelser/",
     "komponenter/fejlopsummering/",
     "komponenter/felter/",
-    "komponenter/fil-upload/",
     "komponenter/footers/",
     "komponenter/formular/",
     "komponenter/funktionslink/",
@@ -45,11 +48,13 @@ var pdfUrls = ["",
     "komponenter/modal/",
     "komponenter/notifikation/",
     "komponenter/overflowmenu/",
+    "komponenter/paginering",
     "komponenter/radioknap/",
     "komponenter/sidenav/",
-    "komponenter/sprogvaegler//",
     "komponenter/skip-link/",
     "komponenter/spinner/",
+    "komponenter/sprogvaegler/",
+    "komponenter/strukturerede-lister/",
     "komponenter/search/",
     "komponenter/tilbage-link/",
     "komponenter/tables/",
@@ -59,6 +64,7 @@ var pdfUrls = ["",
     "komponenter/toggle/",
     "komponenter/tooltip/",
     "komponenter/trinindikatorer/",
+    "komponenter/fil-upload/",
     "kode/",
     "kode/implementering/",
     "kode/browserunderstoettelse/",
@@ -70,13 +76,13 @@ var pdfUrls = ["",
     "kode/komponenter/cards/",
     "kode/komponenter/cookiemeddelelse/",
     "kode/komponenter/dato-felt/",
+    "kode/komponenter/datovaelger/",
     "kode/komponenter/detaljer/",
     "kode/komponenter/drop-down/",
     "kode/komponenter/faneblad/",
     "kode/komponenter/fejlmeddelelser/",
     "kode/komponenter/fejlopsummering/",
     "kode/komponenter/felter/",
-    "kode/komponenter/fil-upload/",
     "kode/komponenter/footers/",
     "kode/komponenter/formular/",
     "kode/komponenter/funktionslink/",
@@ -85,11 +91,13 @@ var pdfUrls = ["",
     "kode/komponenter/modal/",
     "kode/komponenter/notifikation/",
     "kode/komponenter/overflowmenu/",
+    "kode/komponenter/paginering",
     "kode/komponenter/radioknap/",
     "kode/komponenter/sidenav/",
-    "kode/komponenter/sprogvaegler/",
     "kode/komponenter/skip-link/",
     "kode/komponenter/spinner/",
+    "kode/komponenter/sprogvaegler/",
+    "kode/komponenter/strukturerede-lister/",
     "kode/komponenter/search/",
     "kode/komponenter/tilbage-link/",
     "kode/komponenter/tables/",
@@ -99,6 +107,7 @@ var pdfUrls = ["",
     "kode/komponenter/toggle/",
     "kode/komponenter/tooltip/",
     "kode/komponenter/trinindikatorer/",
+    "kode/komponenter/fil-upload/",
     "kode/grid/",
     "kode/typografi/",
     "kode/typografi/overskrifter/",
@@ -106,7 +115,6 @@ var pdfUrls = ["",
     "kode/typografi/links/",
     "kode/typografi/lister/",
     "kode/ikoner/",
-    "kode/ikoner/ikoner-og-deres-betydning/",
     "kode/utilities/",
     "kode/eksempler-implementering/",
     "kode/print/",
@@ -123,8 +131,11 @@ var pdfUrls = ["",
     "faellesskab/kontakt-support/",
     "faellesskab/privatlivspolitik-cookies/",
     "faellesskab/releases/",
-    "faellesskab/roadmap/"
-];
+    "faellesskab/roadmap/",
+    "eksempler/patterns/angivelse-af-telefonnummer/",
+    "eksempler/patterns/forlad-siden/",
+    "eksempler/patterns/session-udloeber/"
+]
 
 var exampleUrls = [
     {"url": "pages/eksempler/opsummering/opsummering-1/", "filename": "opsummering1"},
@@ -143,7 +154,7 @@ var exampleUrls = [
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'load'});
         await page.setViewport({width: resWidth, height: resHeight});
-        await page.emulateMedia('screen')
+        await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
             var buttons = document.querySelectorAll('.accordion-button');
             for(var i = 0; i < buttons.length; i++){
@@ -178,7 +189,7 @@ var exampleUrls = [
     for(var i=0; i<exampleUrls.length; i++){
         await page.goto(root + exampleUrls[i].url, {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
-        await page.emulateMedia('screen');
+        await page.evaluate(() => matchMedia('screen').matches);
 
         var pdfFileName =  targetRootDir+'screenshots/'+(i+1)+'-'+exampleUrls[i].filename+'.png';
 
@@ -188,7 +199,7 @@ var exampleUrls = [
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
-        await page.emulateMedia('screen');
+        await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
             var buttons = document.querySelectorAll('.accordion-button');
             for(var i = 0; i < buttons.length; i++){

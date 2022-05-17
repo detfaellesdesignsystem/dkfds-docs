@@ -2,47 +2,65 @@
   "tabnavlist": {
     "items": [
       {
-        "title": "Fane 1",
-        "button_id": "tab1",
-        "panel_id": "tabpanel1",
-        "heading": "Indhold 1",
-        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        "button": {
+          "text": "Fane 1",
+          "id": "tab1"
+        },
+        "panel":{
+          "id": "tabpanel1",
+          "content": "<h2>Indhold 1</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        }
       },
       {
-        "title": "Fane 2",
         "active": true,
-        "button_id": "tab2",
-        "panel_id": "tabpanel2",
-        "heading": "Indhold 2",
-        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        "button": {
+          "text": "Fane 2",
+          "id": "tab2"
+        },
+        "panel":{
+          "id": "tabpanel2",
+          "content": "<h2>Indhold 2</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        }
       },
       {
-        "title": "Fane 3",
-        "button_id": "tab3",
-        "panel_id": "tabpanel3",
-        "heading": "Indhold 3",
-        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        "button": {
+          "text": "Fane 3",
+          "id": "tab3"
+        },
+        "panel":{
+          "id": "tabpanel3",
+          "content": "<h2>Indhold 3</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        }
       },
       {
-        "title": "Fane 4",
-        "button_id": "tab4",
-        "panel_id": "tabpanel4",
-        "heading": "Indhold 4",
-        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        "button": {
+          "text": "Fane 4",
+          "id": "tab4"
+        },
+        "panel":{
+          "id": "tabpanel4",
+          "content": "<h2>Indhold 4</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        }
       },
       {
-        "title": "Fane 5",
-        "button_id": "tab5",
-        "panel_id": "tabpanel5",
-        "heading": "Indhold 5",
-        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        "button": {
+          "text": "Fane 5",
+          "id": "tab5"
+        },
+        "panel":{
+          "id": "tabpanel5",
+          "content": "<h2>Indhold 5</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        }
       },
       {
-        "title": "Fane 6",
-        "button_id": "tab6",
-        "panel_id": "tabpanel6",
-        "heading": "Indhold 6",
-        "content": "<p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        "button": {
+          "text": "Fane 6",
+          "id": "tab6"
+        },
+        "panel":{
+          "id": "tabpanel6",
+          "content": "<h2>Indhold 6</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
+        }
       }
     ]
   }

@@ -77,13 +77,13 @@ Vi har udvalgt nogle eksempelløsninger, hvor du kan se eksempler på dette.
 
 Knapper har ingen funktion på print, hvorfor vi anbefaler at man skjuler knappen.
 
-<h4 class="h5">Eksempler</h4>
+{:.h5 #knapper-eksempelloesninger}
+#### Eksempler
 
 <ul class="nobullet-list">
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1" title="Aktindsigt, side 1">Aktindsigt, side 1</a></li>
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-4/" title="Aktindsigt, side 4">Aktindsigt, side 4</a></li>
-    <li><a href="/pages/eksempler/AES-erstatningssag/aes-10/" title="Erstatningssag, side 10">Erstatningssag, side 10</a></li>
-    <li><a href="/pages/eksempler/digital-flytning/flytning-2/" title="Digital flytning, side 2">Digital flytning, side 2</a></li>
+    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Aktindsigt, side 1">Aktindsigt, side 1</a></li>
+    <li><a href="/pages/eksempler/AES-erstatningssag/aes-10/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Erstatningssag, side 10">Erstatningssag, side 10</a></li>
+    <li><a href="/pages/eksempler/digital-flytning/flytning-2/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Digital flytning, side 2">Digital flytning, side 2</a></li>
 </ul>
 
 <h3 class="h4">Header</h3>
@@ -92,29 +92,31 @@ I headeren bør kun de højst nødvendige informationer vises. Menuen, links og 
 
 Hvis du har kontaktinformationer stående både i headeren og footeren bør én af dem skjules, da det ikke er nødvendigt at bruge plads på den samme information flere steder.
 
-<h4 class="h5">Eksempler</h4>
+{:.h5 #header-eksempelloesninger}
+#### Eksempler
 
 <ul class="nobullet-list">
-    <li><a href="/eksempel/header-simple/" title="Standard header">Standard header</a></li>
-    <li><a href="/eksempel/header-medium/" title="Standard header med topmenu">Standard header med topmenu</a></li>
-    <li><a href="/eksempel/header-full/" title="Kompleks header">Kompleks header</a></li>
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
-    <li><a href="/pages/eksempler/boernetilskud/boernetilskud-1/" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
+    <li><a href="/eksempel/header-simple/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header">Standard header</a></li>
+    <li><a href="/eksempel/header-medium/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header med topmenu">Standard header med topmenu</a></li>
+    <li><a href="/eksempel/header-full/?r={{page.permalink}}%23header-eksempelloesninger" title="Kompleks header">Kompleks header</a></li>
+    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1?r={{page.permalink}}%23header-eksempelloesninger" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
+    <li><a href="/pages/eksempler/boernetilskud/boernetilskud-1/?r={{page.permalink}}%23header-eksempelloesninger" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
 </ul>
 
 <h3 class="h4">Footer</h3>
 
 Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysninger, men andre, så som privatlivspolitik eller andre links, er ikke relevante, da de ikke virker på print. Derfor anbefaler vi at man skjuler dem.
 
-<h4 class="h5">Eksempler</h4>
+{:.h5 #footer-eksempelloesninger}
+#### Eksempler
 
 <ul class="nobullet-list">
-    <li><a href="/eksempel/footer-simple/" title="Simpel footer eksempel">Simpel footer eksempel</a></li>
-    <li><a href="/eksempel/footer-three-columns/" title="Footer med 3 kolonner">Footer med 3 kolonner</a></li>
-    <li><a href="/eksempel/footer-four-columns/" title="Footer med 4 kolonner">Footer med 4 kolonner</a></li>
-    <li><a href="/eksempel/footer-four-columns/" title="Kompleks footer">Kompleks footer</a></li>
-    <li><a href="/eksempel/footer-logo/" title="Footer med logo">Footer med logo</a></li>
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
+    <li><a href="/eksempel/footer-simple/?r={{page.permalink}}%23footer-eksempelloesninger" title="Simpel footer eksempel">Simpel footer eksempel</a></li>
+    <li><a href="/eksempel/footer-three-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 3 kolonner">Footer med 3 kolonner</a></li>
+    <li><a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 4 kolonner">Footer med 4 kolonner</a></li>
+    <li><a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Kompleks footer">Kompleks footer</a></li>
+    <li><a href="/eksempel/footer-logo/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med logo">Footer med logo</a></li>
+    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r={{page.permalink}}%23footer-eksempelloesninger" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
 </ul>
 
 <h3 class="h4">Responsiv tabel</h3>
@@ -123,11 +125,12 @@ I nogle tilfælde, hvis man bruger en <a href="/komponenter/tables/#responsiv">r
 
 Hvis man ønsker at tabellen skal forblive normal ved print, kan man tilføje klassen `d-print-table` til `table` elementet.
 
-<h4 class="h5">Eksempler</h4>
+{:.h5 #tabel-eksempelloesninger}
+#### Eksempler
 
 <ul class="nobullet-list">
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-3/" title="Aktindsigt, side 1">Aktindsigt, side 3</a></li>
-    <li><a href="/pages/eksempler/AES-erstatningssag/aes-6/" title="Erstatningssag, side 9">Erstatningssag, side 6</a></li>
-    <li><a href="/pages/eksempler/AES-erstatningssag/aes-9/" title="Erstatningssag, side 9">Erstatningssag, side 9</a></li>
-    <li><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/" title="Strategiske virksomhedsalliancer, side 5">Strategiske virksomhedsalliancer, side 5</a></li>
+    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-3/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Aktindsigt, side 1">Aktindsigt, side 3</a></li>
+    <li><a href="/pages/eksempler/AES-erstatningssag/aes-6/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Erstatningssag, side 9">Erstatningssag, side 6</a></li>
+    <li><a href="/pages/eksempler/AES-erstatningssag/aes-9/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Erstatningssag, side 9">Erstatningssag, side 9</a></li>
+    <li><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Strategiske virksomhedsalliancer, side 5">Strategiske virksomhedsalliancer, side 5</a></li>
 </ul>

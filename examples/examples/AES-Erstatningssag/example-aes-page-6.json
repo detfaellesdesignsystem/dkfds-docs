@@ -2,7 +2,7 @@
   "portal_header_data": {
     "compact": true,
     "user": {
-      "name": "Christian Emil Vestergaard Christiansen, Forsikringens Forsikringsfirma"
+      "name": "Anders Andersen, Forsikringens Forsikringsfirma"
     },
     "logolink": {
       "sronly": "Portalnavn",
@@ -31,18 +31,28 @@
   },
   "modal_data": {
     "id": "modal-contact",
-    "title_id": "modal-contact-title",
-    "title": "Kontakt",
+    "headingId": "modal-contact-title",
+    "heading": "Kontakt",
     "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
     "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
   },
   "footer_data": {
-    "listitems": [
-      {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},
-      {"content": "<a class=\"function-link\" href=\"mailto:support@example.dk\">support@example.dk</a>"},
-      {"content": "<a class=\"function-link\" href=\"tel:12345678\">12 34 56 78</a>"},
-      {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
-      {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-    ]
+    "list": {
+        "items": [
+        {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},
+        {"content": "<a class=\"function-link\" href=\"mailto:support@example.dk\">support@example.dk</a>"},
+        {"content": "<a class=\"function-link\" href=\"tel:12345678\">12 34 56 78</a>"},
+        {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
+        {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
+      ]
+    }
+  },
+  "stepguide": {
+    "button":{
+      "text": "Trin 6 af 9",
+      "icon": "arrow-drop-down"
+      },
+    "id": "overflow_steps",
+    "content": "<nav><ul class='sidenav-list' role='menu'> <li role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-1/' role='menuitem'> 1. Oplysninger om afsender <span class='sidenav-icon' aria-label='Gennemført'> <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg> </span> </a> </li><li role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-2/' role='menuitem'><span class='sidenav-number'>2.</span><span class='sidenav-title'>Hvis AES har spørgsmål til sagen</span><span class='sidenav-icon' aria-label='Gennemført'> <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg> </span> </a> </li><li role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-3/' role='menuitem'> <span class='sidenav-number'>3.</span><span class='sidenav-title'>Oplysninger om skadelidte</span> <span class='sidenav-icon' aria-label='Gennemført'> <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg> </span> </a> </li><li role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-4/' role='menuitem'><span class='sidenav-number'>4.</span><span class='sidenav-title'>Sagens natur</span><span class='sidenav-icon' aria-label='Gennemført'> <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg> </span> </a> </li><li role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-5/' role='menuitem'><span class='sidenav-number'>5.</span><span class='sidenav-title'>Oplysninger om sagen</span><span class='sidenav-icon' aria-label='Gennemført'> <svg class='icon-svg' aria-hidden='true' focusable='false'><use xlink:href='#done'></use></svg> </span> </a> </li><li class='active current' role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-6/' role='menuitem' aria-current='page'><span class='sidenav-number'>6.</span><span class='sidenav-title'>Tilføj dokumentation for første undersøgelse af skaden</span></a> </li><li role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-7/' role='menuitem'><span class='sidenav-number'>7.</span><span class='sidenav-title'>Tilføj dokumentation fra sagen</span></a> </li><li role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-8/' role='menuitem'><span class='sidenav-number'>8.</span><span class='sidenav-title'>Tilføj kommentarer til sagen</span></a> </li><li role='none'> <a href='/pages/eksempler/AES-erstatningssag/aes-9/' role='menuitem'><span class='sidenav-number'>9.</span><span class='sidenav-title'>Opsummering</span></a> </li></ul></nav>"
   }
 }

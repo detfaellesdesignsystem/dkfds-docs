@@ -5,58 +5,90 @@
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
 
 <h1 class="h2">Dine kontaktoplysninger</h1>
-<form>
-    <!-- Felt start: Fornavn -->
-    {{textinput("fnavn", "Fornavn", false, "", false, "fnavn", "", false, false)}}
-    <!-- Felt slut: Fornavn -->
-    <!-- Felt start: Efternavn -->
-    {{textinput("enavn", "Efternavn", false, "", false, "enavn", "", false, false)}}
-    <!-- Felt slut: Efternavn -->
-    <!-- Felt start: E-mail adresse -->
-    {{textinput("fieldset-email", "E-mail adresse", false, "", false, "email", "", false, false)}}
-    <!-- Felt slut: E-mail adresse -->
-    <!-- Felt start: Telefonnr -->
-    {{textinput("telefon", "Telefonnr.", false, "input-char-8", false, "telefon", "", false, false)}}
-    <!-- Felt slut: Telefonnr -->
+<form novalidate>
+    {{textinput({
+        "id":"fnavn",
+        "label": {
+            "text":"Fornavn"
+            },
+        "name":"fnavn"})}}
+    {{textinput({
+        "name":"enavn", 
+        "label": {
+            "text":"Efternavn"
+            },
+        "id":"enavn"})}}
+    {{textinput({
+        "id":"fieldset-email",
+        "label":{
+            "text":"E-mail adresse"
+            },
+        "name":"email"})}}
+    {{textinput({
+        "id":"fieldset-telefon",
+        "label": {
+            "text":"Telefonnummer"
+            },
+        "classes":"input-width-s",
+        "name":"telefon"})}}
 
-    <!-- Felt start: Kontaktmetode -->
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Hvordan vil du helst kontaktes?</legend>
-            {{ radiobutton("kontakt-telefon", "kontakt", "kontakt-telefon", false, false, "Pr. telefon", "", "", true) }}
-            {{ radiobutton("kontakt-email", "kontakt", "kontakt-email", false, false, "Pr. e-mail", "", "", true) }}
+            <ul class="nobullet-list">
+              <li>{{ radiobutton(radiobutton_telefon) }}</li>
+              <li>{{ radiobutton(radiobutton_email) }}</li>
+            </ul>
         </fieldset>
     </div>
-    <!-- Felt slut: Kontaktmetode -->
-
-    <!-- Felt start: Tid på dagen -->
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</legend>
             <ul class="nobullet-list">
-              <li>{{ checkbox("morgen", "tidspunkt[]", "morgen", false, false, "Om morgenen", "", "", true, "", "", "", "", "false") }}</li>
-              <li>{{ checkbox("middag", "tidspunkt[]", "middag", false, false, "Ved middagstid", "", "", true, "", "", "", "", "false") }}</li>
-              <li>{{ checkbox("eftermiddag", "tidspunkt[]", "eftermiddag", false, false, "Om eftermiddagen", "", "", true, "", "", "", "", "false") }}</li>
-              <li>{{ checkbox("aften", "tidspunkt[]", "aften", false, false, "Om aftenen", "", "", true, "", "", "", "", "false") }}</li>
+              <li>{{ checkbox({
+                  "id":"checkbox-morgen",
+                  "name": "tidspunkt[]",
+                  "value": "morgen",
+                  "label": "Om morgenen",
+                  "large": true}) }}</li>
+              <li>{{ checkbox({
+                  "id": "checkbox-middag",
+                  "name": "tidspunkt[]",
+                  "value": "middag", 
+                  "label":"Ved middagstid",
+                  "large": true}) }}</li>
+              <li>{{ checkbox({
+                  "id": "checkbox-eftermiddag",
+                  "name": "tidspunkt[]",
+                  "value": "eftermiddag",
+                  "label": "Om eftermiddagen",
+                  "large": true}) }}</li>
+              <li>{{ checkbox({
+                  "id": "checkbox-aften",
+                  "name": "tidspunkt[]",
+                  "value": "aften",
+                  "label": "Om aftenen", 
+                  "large":true}) }}</li>
             </ul>
         </fieldset>
     </div>
-    <!-- Felt slut: Tid på dagen -->
-    <!-- Felt start: Personlige oplysninger -->
     <div class="form-group">
         <fieldset>
             <legend class="h4">Personlige oplysninger</legend>
 
             <!-- Felt start: Fødselsdato -->
-            {{datoinput("Fødselsdato", "For eksempel: 05 12 1987", "Dag", "Måned", "År", "", "", "", "", "", "","","", "mt-0")}}
+            {{datoinput({
+                "labels": {"legend": "Fødselsdato", "day": "Dag", "month": "Måned", "year":"År"}, "helptext": "For eksempel: 05 12 1987", "classes": "mt-0"})}}
             <!-- Felt slut: Fødselsdato -->
 
             <!-- Felt start: Odense -->
             <div class="form-group">
                 <fieldset>
                     <legend class="h5">Bor du i Odense?</legend>
-                    {{ radiobutton("odense-ja", "odense", "odense-ja", false, false, "Ja", "", "", true) }}
-                    {{ radiobutton("odense-nej", "odense", "odense-nej", false, false, "Nej", "", "", true) }}
+                    <ul class="nobullet-list">
+                      <li>{{ radiobutton(radiobutton_odense_ja) }}</li>
+                      <li>{{ radiobutton(radiobutton_odense_nej) }}</li>
+                    </ul>
                 </fieldset>
             </div>
             <!-- Felt slut: Odense -->
@@ -64,6 +96,8 @@
     </div>
     <!-- Felt slut: Personlige oplysninger -->
     <!-- Knap start -->
-    {{ button("Gem oplysninger", "primary mt-9") }}
+    {{ button({
+        "text":"Gem oplysninger",
+        "classes": "primary mt-9"}) }}
     <!-- Knap slut -->
 </form>

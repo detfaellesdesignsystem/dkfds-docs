@@ -2,7 +2,7 @@
   "portal_header_data": {
     "compact": true,
     "user": {
-      "name": "Christian Emil Vestergaard Christiansen, Forsikringens Forsikringsfirma"
+      "name": "Anders Andersen, Forsikringens Forsikringsfirma"
     },
     "logolink": {
       "label": "Portalnavn",
@@ -62,33 +62,33 @@
     ]
   },
 "footer_data":{
-    "cols": [
+    "columns": [
       {
-        "col_size_desktop": 3,
-        "text_align_right": false,
+        "columnSize": 3,
+        "textAlignRight": false,
         "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Arbejdsmarkedets Erhvervssikring<br/>Kongens Vænge 8<br/>3400 Hillerød</p>"
       },
       {
-        "col_size_desktop": 3,
-        "text_align_right": false,
+        "columnSize": 3,
+        "textAlignRight": false,
         "content": "<h2 class=\"h5 mb-4\">Teknisk support</h2><p><a href=\"tel:+4572206112\" class=\"function-link\">(+45) 72 20 61 12</a></p><p>Mandag til torsdag 08-16<br />Fredag 08-15<br />Weekend og helligdage lukket</p>"
       },
       {
-        "col_size_desktop": 3,
-        "class": "d-print-none",
-        "text_align_right": false,
+        "columnSize": 3,
+        "classes": "d-print-none",
+        "textAlignRight": false,
         "content": "<h2 class=\"h5 mb-4\">Spørgsmål til en sag</h2><p>Skriv til <a href=\"mailto:aes@atp.dk\" class=\"function-link\">aes@atp.dk</a></p>"
       },
       {
-        "col_size_desktop": 3,
-        "class": "d-print-none",
-        "text_align_right": false,
+        "columnSize": 3,
+        "classes": "d-print-none",
+        "textAlignRight": false,
         "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
         "lists": [
           {
-            "inline_list": false,
-            "listclass": "mt-0 nobullet-list",
-            "listitems": [
+            "inline": false,
+            "classes": "mt-0 nobullet-list",
+            "items": [
               {"content": "<a href=\"#\" target=\"_blank\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"},
               {"content": "<a class=\"function-link\" href=\"#\">Privatlivspolitik og cookies</a>"}
             ]
@@ -96,9 +96,9 @@
         ]
       }
     ],
-  "language_switcher": {
-    "aria_label": "Vælg sprog fra listen",
-    "first_aria_label": "Valgt sprog: Dansk",
+  "languageSwitcher": {
+    "ariaLabel": "Vælg sprog fra listen",
+    "firstAriaLabel": "Valgt sprog: Dansk",
     "languages": [
       {"code": "da", "name": "Dansk"},
       {"code": "en-GB", "name": "English"},
@@ -106,6 +106,22 @@
       {"code": "kl", "name": "Kalaallisut"},
       {"code": "pl", "name": "Polski"}
     ]
-  }
+    }
+  },
+  "details_anerkendelse": {
+    "summary": "Læs om vurdering af anerkendelse",
+    "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+  },
+  "details_men": {
+    "summary": "Læs om vurdering af mén",
+    "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+  },
+  "details_erhvervsevne": {
+    "summary": "Læs om vurdering af erhvervsevne",
+    "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+  },
+  "details_behandlingsudgifter": {
+    "summary": "Læs om vurdering af behandlingsudgifter, under sagen, hjælpemidler",
+    "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
   }
 }

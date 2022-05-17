@@ -1,19 +1,24 @@
 {
   "item": {
-    "label": "Datoangivelse med fejl",
-    "hint": "For eksempel: 05 12 2018",
-    "day": "Dag",
-    "month": "Måned",
-    "year": "År",
-    "error": "Indtast en måned i tal mellem 1 og 12",
-    "dayValue": "01",
-    "monthValue": "20",
-    "yearValue": "2030",
+    "labels": {
+      "legend": "Datoangivelse med fejl",
+      "day": "Dag",
+      "month": "Måned",
+      "year": "År"
+    },
+    "helptext": "For eksempel: 05 12 2018",
+    "errorMessage": "Indtast en måned i tal mellem 1 og 12",
+    "values": {
+      "day": "01",
+      "month": "20",
+      "year": "2030"
+    },
     "id": {
       "day": "date-day2",
       "month": "date-month2",
       "year": "date-year2",
-      "hint": "example-date-field-hint2"
+      "helptext": "example-date-field-hint2",
+      "errorMessage": "example-date-field-error2"
     }
   }
 }

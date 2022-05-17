@@ -2,26 +2,23 @@
   "alert_example": {
     "items": [
       {
-        "name": "info no text",
-        "classes": "alert-info alert--show-icon",
-        "role": "alert",
-        "title": "Informativ besked - kun overskrift",
-        "aria": "Beskedbox der viser information"
-      },
-      {
-        "name": "info no heading",
         "classes": "alert-info",
         "role": "alert",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "aria": "Beskedbox der viser information"
+        "heading": "Informativ besked - kun overskrift",
+        "icon": true
+      },
+      {
+        "classes": "alert-info",
+        "role": "alert",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       },
       {
         "name": "Info paragraph",
-        "classes": "alert-info alert--paragraph",
+        "classes": "alert-info",
         "role": "alert",
-        "title": "Informativ besked - tekstafsnit",
-        "content": "Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <a href=\"#\">totam rem Nemo enim</a> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro quisquam est, qui doloremipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-        "aria": "Beskedbox der viser information"
+        "paragraph": true,
+        "heading": "Informativ besked - tekstafsnit",
+        "content": "Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <a href=\"#\">totam rem Nemo enim</a> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro quisquam est, qui doloremipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
       }
     ]
   }

@@ -1,6 +1,6 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 
 {% for item in button_example.items %}
-{{ button(item.text, item.class, item.attribute, item.icon, item.sronly) }}
+{{ button(item) }}
 {% endfor %}
 

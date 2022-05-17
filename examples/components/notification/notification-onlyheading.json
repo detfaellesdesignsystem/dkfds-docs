@@ -1,0 +1,8 @@
+{
+  "notification_data": {
+    "id": "notification-onlyheading",
+    "type": "info",
+    "heading": "Dine ændringer er blevet gemt.",
+    "show": true
+  }
+}

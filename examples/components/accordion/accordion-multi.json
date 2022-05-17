@@ -1,8 +1,6 @@
 {
   "accordion_example3": {
-    "id_prefix": "m-",
-    "multiselectable": true,
-    "variant": "bordered",
+    "idPrefix": "m-",
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",

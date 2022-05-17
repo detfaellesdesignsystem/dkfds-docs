@@ -16,8 +16,6 @@ subnav:
   href: "#med-fejl"
 - text: Med succesbeskeder
   href: "#med-succesbeskeder"
-- text: Uden ramme
-  href: "#uden-ramme"
 ---
 
 {% include code/preview-box.html component="accordion-simple" title="Eksempel på accordion komponent" %}
@@ -42,7 +40,7 @@ Husk at tilpasse koden, således at ikke kun indholdet passer, men også attribu
 Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
-new DKFDS.Accordion(document.getElementById('ACCORDION-ID'));
+new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID')).init();
 {% endhighlight %}
 
 Attributten `aria-hidden` tilføjes automatisk i JavaScript, hvis man har undladt at tilføje attributten.
@@ -68,8 +66,3 @@ Attributten `aria-hidden` tilføjes automatisk i JavaScript, hvis man har undlad
 {:#med-succesbeskeder}
 ### Med succesbeskeder
 {% include code/syntax.html component="accordion-success" link="true" %}
-
-{:#uden-ramme}
-### Uden ramme
-
-Fjern klassen `accordion-bordered` på elementet med klassen `accordion` for at fjerne den synlige ramme.

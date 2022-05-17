@@ -1,35 +1,51 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
+<html lang="da">
   <head>
     <meta name="robots" content="noindex" />
     {% include head.html %}
   </head>
   <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
-    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
     {% if page.title contains "Notification" %}
-    <div class="toast-container">
-    {{ content }}
-    </div>
+    <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
+    <main class="container page-container" id="main-content">
+      <div class="toast-container"></div>
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+      {{ content }}
+    </main>
     {% else %}
     
     {% if page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher"  %}
+    <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     <main class="container page-container" id="main-content">
-    <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
     </main>
     {% endif %}
 
     {{ content }}
     {% endif %}
-    {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" %}
+    {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" or  page.title contains "Notification" %}
+    {% unless page.title contains "header" or page.title contains "Header"%}
+    <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
+    {% endunless %}
     <main class="container page-container" id="main-content">
-    <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title }}</h1>
+      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
     </main>
     {% endunless %}
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/requirements-tool~styleguide.js"></script>
+    {% if page.url contains "spinner" %}
+    <script src="{{ site.baseurl }}/assets/js/spinner.js"></script>
+    {% endif %}
+    {% if page.url contains "table" %}
+    <script src="{{ site.baseurl }}/assets/js/table.js"></script>
+    {% endif %}
+    {% if page.url contains "notifikation" or page.url contains "notification" %}
+    <script src="{{ site.baseurl }}/assets/js/toast.js"></script>
+    {% endif %}
+    {% if page.url contains "language-switcher" %}
+    <script src="{{ site.baseurl }}/assets/js/languageswitcher.js"></script>
+    {% endif %}
   </body>
 </html>

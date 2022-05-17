@@ -3,23 +3,23 @@
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
 {% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
 
-{{ alert(alert_example.classes, alert_example.role, alert_example.title, alert_example.content, alert_example.aria, alert_example.close, alert_example.contentContainer ) }}
+{{ alert(alert_example) }}
 <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
-<form>
+<form novalidate>
 
-    {{textinput(textinput_example.id, textinput_example.label, textinput_example.optionallabel, textinput_example.class, textinput_example.error, textinput_example.name, textinput_example.classLabel, textinput_example.success, textinput_example.disabled, textinput_example.hint, textinput_example.placeholder, textinput_example.value, textinput_example.tooltip, textinput_example.tooltipTitle, textinput_example.readonly)}}
+    {{textinput(textinput_example)}}
 
     <div class="form-group form-error">
         <fieldset aria-describedby="example-nationalitet-error">
             <legend class="form-label">Hvad er din nationalitet?</legend>
             <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk, svensk eller anden nationalitet</span>
             <ul class="nobullet-list">
-                {% for item in checkbox_error_examples.items %}<li>{{ checkbox(item.id, item.name, item.value, item.disabled, item.checked, item.text, item.class, item.focus, item.large, item.attr, item.inputClasses, item.inputAttrs, item.formClasses) }}</li>{% endfor %}
+                {% for item in checkbox_error_examples.items %}<li>{{ checkbox(item) }}</li>{% endfor %}
             </ul>
         </fieldset>
     </div>
 
-    {{datoinput(dateObject.label, dateObject.hint, dateObject.day, dateObject.month, dateObject.year, dateObject.tooltip, dateObject.tooltipTitle, dateObject.datepicker, dateObject.error, dateObject.dayValue, dateObject.monthValue, dateObject.yearValue, dateObject.id, dateObject.formClass)}}
+    {{datoinput(dateObject)}}
 
 </form>
 

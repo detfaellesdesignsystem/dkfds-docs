@@ -26,7 +26,7 @@ Anvend kun dropdown menuer, når det er absolut nødvendigt og kun i tilfælde, 
 
 Brug tjekbokse fremfor dropdown menu, hvis brugeren skal vælge mere end 1 værdi.
 
-Brug ikke dropdown-menu til navigation, som den ikke er velegnet til.
+Brug ikke dropdown-menu til navigering mellem sider, som den ikke er velegnet til.
 
 {:.h3}
 ## Vejledning
@@ -37,7 +37,7 @@ Undgå at lade brugerens valg i én dropdown menu påvirke indholdet i en anden.
 
 Hvis du ved, at mange brugere vil vælge den samme værdi i en dropdown menu, så marker den med `<option selected="selected">Default</option>`. Dermed slipper brugerne for at bruge tid på at gennemsøge listen.
 
-Anvend ikke JavaScript til automatisk at sende den valgte værdi, men sørg for at der er en submit-knap til at sende formularen med.
+Undlad at løsningen reagerer på brugerens direkte valg i dropdownen, så brugeren altid let kan vælge en anden mulighed. Tilføj i stedet en knap, så løsningen først anvender brugerens valg ved klik på knappen.
 
 {% include dos-donts-box.html component="dropdown-dos-donts" title="Dropdown-menu do's and don'ts" %}
 
@@ -49,10 +49,10 @@ Anvend ikke JavaScript til automatisk at sende den valgte værdi, men sørg for 
 - <a href="https://www.lukew.com/ff/entry.asp?1950" class="icon-link">Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 
-{:.h3}
+{:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/AES-erstatningssag/aes-6/" target="_blank" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/AES-erstatningssag/aes-6/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
 
 {% include child-components.html parent='Drop-down' %}
