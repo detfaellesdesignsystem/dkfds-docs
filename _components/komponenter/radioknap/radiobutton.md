@@ -4,7 +4,7 @@ redirect_from:
 - /komponenter/radiobutton/
 layout: styleguide
 type: component
-title: Radioknap
+title: Radioknap (Radio button)
 category: Komponenter_category
 subcategory: Komponenter
 anchor: true

@@ -1,7 +1,7 @@
 ---
 permalink: /kode/komponenter/radioknap/
 parentlink: /kode/komponenter/
-title: Radioknap
+title: Radioknap (Radio button)
 layout: styleguide
 type: component
 category: Kode_category
