@@ -4,7 +4,7 @@ redirect_from:
 - "/komponenter/buttons/"
 layout: styleguide
 type: element
-title: Knapper
+title: Knapper (Buttons)
 category: Komponenter_category
 subcategory: Komponenter
 description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke på

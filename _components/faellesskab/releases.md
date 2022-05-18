@@ -132,16 +132,16 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret attributter for <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet gamle <a href="/design/ikoner/">ikoner</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet <a href="/kode/komponenter/beskeder/">JavaScript til luk knap i beskeder</a>
-- Tilføjet <a href="/komponenter/modal/#kraever-handling">modalvindue</a> som kræver handling, så brugeren ikke kan lukke modalvinduet uden at tage stilling til dets indhold. 
-- <span class="badge badge-info badge-small mr-3">Change</span> Ved luk af <a href="/komponenter/modal/">modalvindue</a> sættes fokus på element, som åbnede modalvinduet
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Luk modalvindue, hvis en ny <a href="/komponenter/modal/">modalvindue</a> åbnes.
+- Tilføjet <a href="/komponenter/modal/#kraever-handling">modal</a> som kræver handling, så brugeren ikke kan lukke modalen uden at tage stilling til dets indhold. 
+- <span class="badge badge-info badge-small mr-3">Change</span> Ved luk af <a href="/komponenter/modal/">modal</a> sættes fokus på element, som åbnede modalen
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Luk modal, hvis en ny <a href="/komponenter/modal/">modal</a> åbnes.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Forbedret <a href="/komponenter/header/#standard-header-med-navigation">navigation i headeren</a> på mobil.
 - Vis <a href="/komponenter/tjekboks/">tjekbokse</a> og <a href="/komponenter/radioknap/">radioknapper</a> ved print.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.
 - Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/">datovælgeren</a>.
 - Opdateret breakpoints i <a href="/komponenter/knapper/">knapper</a>, så knapperne ikke er helt så brede på mindre skærme.
 - <span class="badge badge-info badge-small mr-3">Change</span> Fjernet accordion uden ramme.
-- Tilpasset afstande i <a href="/komponenter/modal/">modalvindue</a> på mindre skærme
+- Tilpasset afstande i <a href="/komponenter/modal/">modal</a> på mindre skærme
 - Opdateret normalize.css til v8.0.1
 - Fjernet styling på <a href="/komponenter/badges/">badges</a>, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.
 - Grå baggrundsfarve på <a href="/komponenter/dropdown/">dropdown</a> i Firefox er ændret til hvid.
@@ -180,7 +180,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - <a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a>
 - <a href="/komponenter/tekstfelter/#prefix-og-suffix">Prefix og suffix på tekstfelter</a>
-- Småtilpasninger i designet på <a href="/komponenter/modal/">modalvinduer</a>
+- Småtilpasninger i designet på <a href="/komponenter/modal/">modaler</a>
 - Opdateret design på <a href="/komponenter/datovaelger/">datovælger</a>
 - Tilføjet 72px i bunden af <a href="/komponenter/footer/">footer</a>
 - Tilføjet styling og retningslinjer for <a href="/komponenter/tables/#sortering-i-tabeller">sortering i tabeller</a>
@@ -211,7 +211,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Timing issue på datovælger - sæt ikke knappen, hvis den allerede eksisterer
 - Generel oprydning i dependencies
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/130" class="icon-link">issue #130 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Håndtering af situation: Escape funktion på <a href="/komponenter/overflowmenu/">overflow menu</a> og <a href="/komponenter/modal/">modalvinduer</a> kolliderer og lukker begge, når en overflow er inde i en modal
+- Håndtering af situation: Escape funktion på <a href="/komponenter/overflowmenu/">overflow menu</a> og <a href="/komponenter/modal/">modaler</a> kolliderer og lukker begge, når en overflow er inde i en modal
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/125" class="icon-link">issue #125 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <a href="/design/borders/#streger">Facit streger</a>
 - Udvidelse af breakpoint for <a href="/kode/komponenter/tables/#responsiv">responsiv tabel</a>
@@ -377,7 +377,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblade/">faneblade</a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Modalvinduer-komponenten er blevet flyttet til plugins.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Modal-komponenten er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span>
 - Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>. 
@@ -442,7 +442,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet afstand af tags, når de fylder flere linjer.
 - Fjernet primærfarve på teksten i faneblade ved hover.
 - Fikset fokusramme på faneblade.
-- Fikset fejl i modalvindue, hvor overskriften blev overlappet af luk knappen.
+- Fikset fejl i modal, hvor overskriften blev overlappet af luk knappen.
 - <span class="badge badge-info badge-small mr-3">Change</span> Log ud skal nu hedde Log af.
 
 {:#version-4-0-1 .mb-0}

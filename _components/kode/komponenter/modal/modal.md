@@ -3,7 +3,7 @@ permalink: "/kode/komponenter/modal/"
 parentlink: "/kode/komponenter/"
 layout: styleguide
 type: component
-title: Modalvindue
+title: Modal
 category: Kode_category
 subcategory: Kode
 description: Dokumentation på implementering af modal.
@@ -15,7 +15,7 @@ tags:
 - dialogue
 anchor: true
 subnav:
-- text: Modalvindue som kræver handling
+- text: Modal som kræver handling
   href: "#kraever-handling"
 
 ---
@@ -60,7 +60,7 @@ modal.init();
 ## Varianter
 
 {:#kraever-handling}
-### Modalvindue som kræver handling
+### Modal som kræver handling
 
 {% include code/syntax.html component="modal-forced-action" link="true" %}
 
