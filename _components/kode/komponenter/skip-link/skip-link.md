@@ -1,7 +1,7 @@
 ---
 permalink: /kode/komponenter/skip-link/
 parentlink: /kode/komponenter/
-title: Skip-link
+title: Gå til sidens indhold (Skip link)
 layout: styleguide
 type: component
 description: "Dokumentation på implementering af skip-link."
