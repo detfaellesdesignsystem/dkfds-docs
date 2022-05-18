@@ -1,11 +1,13 @@
 ---
-permalink: "/kode/komponenter/trinindikatorer/"
-title: Trinindikatorer
+permalink: "/kode/komponenter/trinindikator/"
+redirect_from:
+- /kode/komponenter/trinindikatorer/
+title: Trinindikator
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
 category: Kode_category
-description: "Dokumentation på implementering af trinindikatorer."
+description: "Dokumentation på implementering af trinindikator."
 tags:
 subcategory: Kode
 anchor: true
@@ -24,8 +26,8 @@ subnav:
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/trinindikatorer/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/trinindikatorer/">Eksempler</a></li>
+    <li><a href="/komponenter/trinindikator/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/trinindikator/">Eksempler</a></li>
 </ul>
 
 ## Installation

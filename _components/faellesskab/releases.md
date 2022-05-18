@@ -118,7 +118,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Ny komponent: <a href="/komponenter/paginering/">Paginering</a>
 - Ny komponent: <a href="/komponenter/strukturerede-lister/">Strukturerede lister</a>
-- Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikatorer/">trinindikator</a>
+- Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikator/">trinindikator</a>
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
@@ -248,7 +248,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Fikset fejl i Internet Explorer, hvor <a href="/komponenter/tekstfelter/#feltbredde">feltbredde i tekstfelter</a> er defineret ved antal karakterer bliver ignoreret.
 - Luk <a href="/komponenter/overflowmenu/">overflow menu</a> i <a href="/komponenter/header/">header</a> ved klik uden for menuen.
-- Tilføjet ARIA attributter i <a href="/komponenter/trinindikatorer/">trinindikator</a> for bedre tilgængelighed
+- Tilføjet ARIA attributter i <a href="/komponenter/trinindikator/">trinindikator</a> for bedre tilgængelighed
 
 {:#version-7-1-0 .mb-0}
 ## Version 7.1.0
@@ -315,7 +315,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret aktive farve på undermenupunkt i <a href="/komponenter/venstremenu/">venstremenu</a>
 - Tilføjet retningslinjer for <a href="/komponenter/funktionslink/">funktionslink</a>, <a href="/komponenter/tilbage-link/">tilbage-link</a> og <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a>.
 - <span class="badge badge-info badge-small mr-3">Change</span> Tilføjet korrekte ARIA attributer på <a href="/kode/komponenter/venstremenu/" title="Se koden til venstremenuen">venstremenuen</a>, <a href="/kode/komponenter/header/" title="Se koden til mobilmenu og headermenu">mobilmenu og headermenuen</a>.
-- Fikset fejl på <a href="/komponenter/trinindikatorer/#responsiv">responsiv trinindikator</a>.
+- Fikset fejl på <a href="/komponenter/trinindikator/#responsiv">responsiv trinindikator</a>.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 {:#version-5-3-0 .mb-0}
@@ -343,7 +343,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Teksten i <a href="/komponenter/cards/#cards-med-samme-højde">cards med samme højde</a> placeres nu korrekt
 - Tilføjet mere afstand mellem links i footer
 - Overskriftstørrelser på mobil er blevet opdateret
-- Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/venstremenu/#ekstra-information">venstremenu med ekstra information</a> og <a href="/komponenter/trinindikatorer/#ekstra-information">trinindikator med ekstra information</a>
+- Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/venstremenu/#ekstra-information">venstremenu med ekstra information</a> og <a href="/komponenter/trinindikator/#ekstra-information">trinindikator med ekstra information</a>
 - Tilføjet eksempel på tabel i Datatable
 <span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
 - Opdateret <a href="/kode/eksempler-implementering/">Eksempel på implementering i Angular</a>

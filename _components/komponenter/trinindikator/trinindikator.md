@@ -1,13 +1,15 @@
 ---
-permalink: "/komponenter/trinindikatorer/"
+permalink: "/komponenter/trinindikator/"
+redirect_from:
+- /komponenter/trinindikatorer/
 layout: styleguide
 type: component
-title: Trinindikatorer
+title: Trinindikator
 category: Komponenter_category
 subcategory: Komponenter
-description: "Tringuides anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål."
+description: "Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål."
 tags:
-lead: "Trinindikatorer markerer trin i guides til brugerne om, hvordan de fx skal tilgå en løsning eller som fører dem igennem en kendt sekvens af spørgsmål."
+lead: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
 anchor: true
 subnav:
 - text: Responsiv
@@ -20,18 +22,18 @@ subnav:
   href: "#ekstra-information"
 component: tringuide-overflowmenu
 componentTitle: "Eksempel på trinindikator i overflow menu"
-componentCode: "/kode/komponenter/trinindikatorer/"
+componentCode: "/kode/komponenter/trinindikator/"
 ---
 
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Tringuides anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.
+Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.
 
 {:.h3}
 ## Anvendes ikke til
 
-Tringuides skal ikke anvendes som primær eller sekundær navigationselement.
+Trinindikator skal ikke anvendes som primær eller sekundær navigationselement.
 
 {:.h3}
 ## Vejledning

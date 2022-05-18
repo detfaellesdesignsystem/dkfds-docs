@@ -22,7 +22,7 @@ Brug en brødkrumme, når du har brug for at hjælpe brugerne med at forstå, hv
 
 Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (tringuide).
 
-Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikatorer/">trinindikator</a>.
+Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikator/">trinindikator</a>.
 
 Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur. 
 
