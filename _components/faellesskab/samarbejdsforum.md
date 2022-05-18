@@ -14,11 +14,6 @@ lead: I forummet sparrer vi om Det Fælles Designsystem (FDS) og udviklingen fre
 Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsystemet. Myndigheder, som overvejer at anvende designsystemet er også velkomne til at deltage.
 
 ## Næste samarbejdsforum
-<div class="alert alert-info mb-6">
-<div class="alert-body">
-<p class="alert-heading">Tirsdag den 15. marts kl. 14.00-15.30</p>
-<p class="alert-text">Samarbejdsforum afholdes som videomøde. Vi sender mail med link til videomødet til alle tilmeldte deltagere.</p>
-<p><a href="https://digst.dk/digital-service/brugeroplevelse/samarbejdsforum-for-det-faelles-designsystem/" class="icon-link">Tilmeld/frameld dig og dine kollegaer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
-</div></div>
+Næste samarbejdsforum er ikke planlagt endnu.
 
 <a href="/faellesskab/governance/">Læs om governance af FDS</a>
