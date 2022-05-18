@@ -25,7 +25,7 @@ Sagerne kan være:
 ## Nye komponenter
 
 {% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/felter/#prefix-og-suffix" %}
-{% include roadmap.html title="Karakterbegræsning på tekstfelt/tekstområde" status="I gang" %}
+{% include roadmap.html title="Karakterbegrænsning på tekstfelt/tekstområde" status="I gang" %}
 {% include roadmap.html title="Modalvindue som kræver handling" status="Gennemført" link="/komponenter/modal/#kraever-handling" %}
 {% include roadmap.html title="Multiselect dropdown" status="I gang" %}
 {% include roadmap.html title="Notifikationsprik" status="I gang" %}
@@ -60,7 +60,7 @@ Sagerne kan være:
 {% include roadmap.html title="Session udløber" status="Gennemført" link="/eksempler/patterns/session-udloeber/" %}
 {% include roadmap.html title="Skift fuldmagt" status="Foreslået" %}
 {% include roadmap.html title="Telefonnummer" status="Gennemført" link="/eksempler/patterns/angivelse-af-telefonnummer/" %}
-{% include roadmap.html title="Teksttfelt med hentet data" status="Foreslået" %}
+{% include roadmap.html title="Tekstfelt med hentet data" status="Foreslået" %}
 {% include roadmap.html title="Tidsangivelse" status="Foreslået" %}
 
 
