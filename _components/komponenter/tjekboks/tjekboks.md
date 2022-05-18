@@ -2,7 +2,7 @@
 permalink: /komponenter/tjekboks/
 layout: styleguide
 type: component
-title: Tjekboks
+title: Tjekboks (Checkbox)
 category: Komponenter_category
 subcategory: Komponenter
 description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste."

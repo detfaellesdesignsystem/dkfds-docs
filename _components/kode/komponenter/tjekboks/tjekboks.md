@@ -1,6 +1,6 @@
 ---
 permalink: /kode/komponenter/tjekboks/
-title: Tjekboks
+title: Tjekboks (Checkbox)
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
