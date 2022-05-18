@@ -85,7 +85,6 @@ Komponenter_category:
   - href: /komponenter/header/
   - href: /komponenter/knapper/
   - href: /komponenter/modal/
-  - href: /komponenter/notifikation/
   - href: /komponenter/overflowmenu/
   - href: /komponenter/paginering/
   - href: /komponenter/radioknap/
@@ -100,6 +99,7 @@ Komponenter_category:
   - href: /komponenter/tekstfelter/
   - href: /komponenter/textarea/
   - href: /komponenter/tjekboks/
+  - href: /komponenter/toastbesked/
   - href: /komponenter/toggle/
   - href: /komponenter/tooltip/
   - href: /komponenter/trinindikatorer/
@@ -123,43 +123,44 @@ Kode_category:
 
 #Left menu for komponent-category
 Kode_Komponenter_category:
-- href: /kode/komponenter/accordions/
-- href: /kode/komponenter/badges/
-- href: /kode/komponenter/beskeder/
-- href: /kode/komponenter/broedkrumme/
-- href: /kode/komponenter/cards/
-- href: /kode/komponenter/cookiemeddelelse/
-- href: /kode/komponenter/dato-felt/
-- href: /kode/komponenter/datovaelger/
-- href: /kode/komponenter/detaljer/
-- href: /kode/komponenter/dropdown/
-- href: /kode/komponenter/faneblade/
-- href: /kode/komponenter/fejlmeddelelser/
-- href: /kode/komponenter/fejlopsummering/
-- href: /kode/komponenter/footer/
-- href: /kode/komponenter/funktionslink/
-- href: /kode/komponenter/header/
-- href: /kode/komponenter/knapper/
-- href: /kode/komponenter/modal/
-- href: /kode/komponenter/notifikation/
-- href: /kode/komponenter/overflowmenu/
-- href: /kode/komponenter/paginering/
-- href: /kode/komponenter/radioknap/
-- href: /kode/komponenter/skip-link/
-- href: /kode/komponenter/spinner/
-- href: /kode/komponenter/sprogvaegler/
-- href: /kode/komponenter/strukturerede-lister/
-- href: /kode/komponenter/search/
-- href: /kode/komponenter/tilbage-link/
-- href: /kode/komponenter/tables/
-- href: /kode/komponenter/tags/
-- href: /kode/komponenter/tekstfelter/
-- href: /kode/komponenter/textarea/
-- href: /kode/komponenter/tjekboks/
-- href: /kode/komponenter/tooltip/
-- href: /kode/komponenter/trinindikatorer/
-- href: /kode/komponenter/fil-upload/
-- href: /kode/komponenter/venstremenu/
+  - href: /kode/komponenter/accordions/
+  - href: /kode/komponenter/badges/
+  - href: /kode/komponenter/beskeder/
+  - href: /kode/komponenter/broedkrumme/
+  - href: /kode/komponenter/cards/
+  - href: /kode/komponenter/cookiemeddelelse/
+  - href: /kode/komponenter/dato-felt/
+  - href: /kode/komponenter/datovaelger/
+  - href: /kode/komponenter/detaljer/
+  - href: /kode/komponenter/dropdown/
+  - href: /kode/komponenter/faneblade/
+  - href: /kode/komponenter/fejlmeddelelser/
+  - href: /kode/komponenter/fejlopsummering/
+  - href: /kode/komponenter/footer/
+  - href: /kode/komponenter/funktionslink/
+  - href: /kode/komponenter/header/
+  - href: /kode/komponenter/knapper/
+  - href: /kode/komponenter/modal/
+  - href: /kode/komponenter/overflowmenu/
+  - href: /kode/komponenter/paginering/
+  - href: /kode/komponenter/radioknap/
+  - href: /kode/komponenter/skip-link/
+  - href: /kode/komponenter/spinner/
+  - href: /kode/komponenter/sprogvaegler/
+  - href: /kode/komponenter/strukturerede-lister/
+  - href: /kode/komponenter/search/
+  - href: /kode/komponenter/tilbage-link/
+  - href: /kode/komponenter/tables/
+  - href: /kode/komponenter/tags/
+  - href: /kode/komponenter/tekstfelter/
+  - href: /kode/komponenter/textarea/
+  - href: /kode/komponenter/tjekboks/
+  - href: /kode/komponenter/toastbesked/
+  - href: /kode/komponenter/toggle/
+  - href: /kode/komponenter/tooltip/
+  - href: /kode/komponenter/trinindikatorer/
+  - href: /kode/komponenter/fil-upload/
+  - href: /kode/komponenter/venstremenu/
 
 Eksempler_category:
 - href: /eksempler/selvbetjeningsloesninger/

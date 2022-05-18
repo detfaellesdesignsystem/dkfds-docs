@@ -206,7 +206,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
 - <a href="/design/ikoner/">Ikontaksonomi</a>
-- Ny komponent: <a href="/komponenter/notifikation/">Notifikation (Toast) komponent</a>
+- Ny komponent: <a href="/komponenter/toastbesked/">Notifikation (Toast) komponent</a>
 - Fjernet unødvendige kald til fontfiler
 - Timing issue på datovælger - sæt ikke knappen, hvis den allerede eksisterer
 - Generel oprydning i dependencies
