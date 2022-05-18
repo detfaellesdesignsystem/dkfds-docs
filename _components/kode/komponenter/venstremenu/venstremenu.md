@@ -3,7 +3,7 @@ permalink: /kode/komponenter/venstremenu/
 parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/sidenav/
-title: venstremenu
+title: Venstremenu
 layout: styleguide
 type: component
 description: "Dokumentation på implementering af venstremenu."

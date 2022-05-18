@@ -27,7 +27,7 @@ Brug aldrig tilbage-link-komponenten sammen med brødkrummer. Vælg enten tilbag
 {:.h3}
 ## Vejledning
 
-Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen) på trinnet/siden. Bruges tilbage-linket i selvbetjeningsløsninger, der har en synlig tringuide eller en venstremenu, placeres tilbage-linket øverst venstrestillet over indholdet.
+Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen) på trinnet/siden. Bruges tilbage-linket i selvbetjeningsløsninger, der har en synlig trinindikator eller en venstremenu, placeres tilbage-linket øverst venstrestillet over indholdet.
 
 Sørg for, at tilbage-linket fører brugerne til den forrige side, de var på, i den tilstand, de sidst så trinnet/siden.
 

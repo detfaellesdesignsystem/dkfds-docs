@@ -3,7 +3,7 @@ permalink: /kode/komponenter/header/
 redirect_from:
 - /kode/komponenter/headers/
 parentlink: /kode/komponenter/
-title: Headers
+title: Header
 layout: styleguide
 type: component
 category: Kode_category

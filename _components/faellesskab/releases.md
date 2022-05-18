@@ -419,7 +419,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fjernet margin-top på h1.
 - <span class="badge badge-info badge-small mr-3">Change</span> Fjernet form-group div fra li i radioknap og tjekboks liste (Løser udfordringen med at JAWS skærmlæseren læser skrivebeskyttet ved hver tjekboks eller radioknap).
 - Fikset styling i niveau 4 i sidemenuen på mobil.
-- Fikset tilgængelighed på responsiv tringuide - aria-hidden opdateres nu automatisk alt efter status på komponenten.
+- Fikset tilgængelighed på responsiv trinindikator - aria-hidden opdateres nu automatisk alt efter status på komponenten.
 - Responsiv tabel er  nu sat til display:block på små skærme således at skærmlæsere ikke tror det er en tom tabel.
 
 {:#version-4-1-1 .mb-0}

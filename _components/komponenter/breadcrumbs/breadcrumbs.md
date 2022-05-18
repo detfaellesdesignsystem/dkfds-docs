@@ -20,7 +20,7 @@ Brug en brødkrumme, når du har brug for at hjælpe brugerne med at forstå, hv
 {:.h3}
 ## Anvendes ikke til
 
-Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (tringuide).
+Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (trinindikator).
 
 Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikator/">trinindikator</a>.
 

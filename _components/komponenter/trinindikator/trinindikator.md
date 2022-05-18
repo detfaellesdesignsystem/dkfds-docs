@@ -38,11 +38,11 @@ Trinindikator skal ikke anvendes som primær eller sekundær navigationselement.
 {:.h3}
 ## Vejledning
 
-Forsøg med ændret opsætning af dit indhold, type og antallet af spørgsmål før du vælger en tringuide til din løsning.
+Forsøg med ændret opsætning af dit indhold, type og antallet af spørgsmål før du vælger en trinindikator til din løsning.
 
-Vælg den tringuide-model, der passer til dine brugeres behov.
+Vælg den trinindikator variant, der passer til dine brugeres behov.
 
-Undgå at lave en horisontal tringuide.
+Undgå at lave en horisontal trinindikator.
 
 Anvend trin der virker naturlige og logiske for brugerne.
 
