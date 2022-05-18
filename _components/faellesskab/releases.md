@@ -114,7 +114,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 {:#version-8-0-0 .mb-0}
 ## Version 8.0.0
-<div><span class="small-text mt-0 d-block">xx-05-2022</span></div>
+<div><span class="small-text mt-0 d-block">17-05-2022</span></div>
 
 - Ny komponent: <a href="/komponenter/paginering/">Paginering</a>
 - Ny komponent: <a href="/komponenter/strukturerede-lister/">Strukturerede lister</a>
@@ -140,14 +140,17 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.
 - Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/">datovælgeren</a>.
 - Opdateret breakpoints i <a href="/komponenter/knapper/">knapper</a>, så knapperne ikke er helt så brede på mindre skærme.
-- <span class="badge badge-info badge-small mr-3">Change</span> Fjernet accordion uden ramme.
+- Fjernet accordion uden ramme.
 - Tilpasset afstande i <a href="/komponenter/modal/">modal</a> på mindre skærme
 - Opdateret normalize.css til v8.0.1
 - Fjernet styling på <a href="/komponenter/badges/">badges</a>, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.
 - Grå baggrundsfarve på <a href="/komponenter/dropdown/">dropdown</a> i Firefox er ændret til hvid.
 - <a href="/komponenter/header/">Header komponent</a>: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.
 - Lille fejl i border på <a href="/komponenter/tables/">tabeller</a> er fikset.
-- <span class="badge badge-info badge-small mr-3">Change</span> Bredde på <a href="/komponenter/overflowmenu/">overflow menu</a> ændret til at fylde hele skærmens bredde på små skærme.
+- Bredde på <a href="/komponenter/overflowmenu/">overflow menu</a> ændret til at fylde hele skærmens bredde på små skærme.
+- Ændringer i opførelse af <a href="/komponenter/tooltip/">tooltip</a>, for at sikre teksten kan markeres.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/163" class="icon-link">issue #163 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet og ændret SASS variabler for bedre vedligehold og tematisering.
 
 {:#version-7-5-3 .mb-0}
 ## Version 7.5.3

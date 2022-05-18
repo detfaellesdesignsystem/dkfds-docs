@@ -40,10 +40,7 @@
 ================================================== -->
 
 <!-- Preload fonts -->
-<link rel="preload" href="/assets/fonts/IBMPlexSans-Medium.woff" as="font" crossorigin>
-<link rel="preload" href="/assets/fonts/IBMPlexSans-Bold.woff" as="font" crossorigin>
-<link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin>
-<link rel="preload" href="/assets/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style" />
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style" />
 <link rel="preload" href="/assets/js/theme.js" as="script" />
@@ -451,7 +448,11 @@
     <div class="form-group">
 
         <label class="form-label" for="id-skadenummer">
-            Jeres sags-/skadenummer
+            Jeres sags-/skadenummer<button
+                class="button-unstyled js-tooltip"
+                data-tooltip="Forklarende tekst omkring feltet"
+                data-tooltip-trigger="click"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#help"></use></svg><span
+                    class="sr-only">Hvad betyder det?</span></button>
         </label>
         <span class="form-hint" id="id-skadenummer-hint">
             Her står relevant uddybende hjælpetekst.
