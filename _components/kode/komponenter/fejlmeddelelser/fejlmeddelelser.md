@@ -22,8 +22,8 @@ subnav:
 ## Eksempler og retningslinjer
 
 {:.nobullet-list}
-- <a href="/komponenter/fejlmeddelelser/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/fejlmeddelelser/">Eksempler</a>
+- <a href="/komponenter/fejlangivelse/fejlmeddelelser/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/fejlangivelse/fejlmeddelelser/">Eksempler</a>
 
 ## Installation
 

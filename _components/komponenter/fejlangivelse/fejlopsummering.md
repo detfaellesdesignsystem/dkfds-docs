@@ -1,5 +1,8 @@
 ---
-permalink: "/komponenter/fejlopsummering/"
+permalink: "/komponenter/fejlangivelse/fejlopsummering/"
+redirect_from:
+- /komponenter/fejlopsummering/
+parentlink: "/komponenter/fejlangivelse/"
 layout: styleguide
 type: component
 title: Fejlopsummering
@@ -16,7 +19,7 @@ subnav:
 ---
 <p class="font-lead">Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.</p>
 
-Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.
+Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de <a href="/komponenter/fejlangivelse/fejlmeddelelser/">fejlmeddelelser</a>, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.
 
 {% include code/preview-box.html component="error-summary" title="Eksempel på fejlopsummering" link="true" code="/kode/komponenter/fejlopsummering/" %}
 

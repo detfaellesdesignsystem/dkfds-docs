@@ -1228,6 +1228,51 @@
     
 
 
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-komponenter-fejlangivelse" aria-expanded="false"  >
+          <span>Fejlangivelse</span>
+        </button>
+        <div aria-label="Fejlangivelse" class="overflow-menu-inner" id="submenu-level2-komponenter-fejlangivelse" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/fejlangivelse/" role="menuitem"  class="nav-link">
+        Fejlangivelse<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
 <li class="  has-anchor-links" role="none">
 
   
@@ -1235,7 +1280,7 @@
 
   
     
-    <a href="/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fejlangivelse/fejlmeddelelser/" role="menuitem"  class="nav-link">
         Fejlmeddelelser
       </a>
      
@@ -1255,10 +1300,20 @@
 
   
     
-    <a href="/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fejlangivelse/fejlopsummering/" role="menuitem"  class="nav-link">
         Fejlopsummering
       </a>
      
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
     
   
 </li>
@@ -4407,34 +4462,16 @@ let searchIndex = [
 
 
 {
-"url": "/komponenter/fejlmeddelelser/",
-"title": "Fejlmeddelelser",
+"url": "/komponenter/fejlangivelse/",
+"title": "Fejlangivelse",
 "category": "Komponenter_category",
 "subcategory": "Komponenter",
-"lead": "",
-"tags": ['fejlbesked','fejlmeddelelse','meddelelser','fejl','fejlmeddelelser','fejlbeskeder','fejlnotifikationer','medelelser','meddellelser','medellelser','fejlmedelelser','fejlmeddellelser','fejlmedellelser'],
-"layout": "styleguide",
-"content" : "                        Åbn dette eksempel i et nyt vindue: error-message                                                Hvad hedder dit kursus?                Fx: Skriv godt                Fejl: Giv dit kursus et navn                                Gå til kodeafsnit: error-message        Anvendes tilBrug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsningen. Fortæl brugeren, hvad der skal til for at rette problemet og komme videre i et simpelt og venligt sprog.Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så brugeren ikke skal lede, ved at sætte fejlmeddelelsen umiddelbart over det, der skal rettes eller mangler.Anvendes ikke tilBrug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en besked.VejledningFejlmeddelelsen skal også vises som et link til fejlen i fejlopsummeringen. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.Vis fejlmeddelelsen i rød umiddelbart over, der hvor fejlen er.Vis en rød streg i venstre side af området, ud for fejlen for at fremhæve fejlen.Marker også selve feltet der er fejl i med rødt.For at hjælpe skærmlæsere tilføjes en skjult tekst med ordet “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre “Fejl: Dette er ikke en gyldig mailadresse.”Skriv klart og præcistBeskriv for brugeren, hvad der er sket og hvordan det kan rettes.Meddelelsen skal være skrevet i lægmandssprog, være imødekommende og så kortfattet som muligt.Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står “ddmmååå-nnnn” eller “22091908-1856” som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.Vær konsistentBrug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de ser ens ud, lyder ens, og betyder det samme, og så de giver mening ude af kontekst.Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står “Hvor mange timer arbejder du om ugen?”, så kan fejlmeddelelsen være “Indtast hvor mange timer du arbejder om ugen”.Vær præcisGenerelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening uden for kontekst. Undgå derfor fejlmeddelelser som:  “En fejl opstod”  “Svar på spørgsmålet”  “Vælg et svar fra listen”  “Udfyld feltet”  “Dette felt er påkrævet”Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud som fx:  “Skriv adressen korrekt”  “Du har lavet en fejl”  “Ikke godkendt”Forskellige fejl har brug for forskellige fejlmeddelelser.Fx kan der opstå forskellige fejl på tekstfelter, felter kan være: tomme, for lange, for korte, indeholde ugyldige tegn, være i et forkert format, m.fl.En fejlmeddelelse, der forklarer den specifikke situation er mere hjælpsom end den generiske fejlmeddelelse.Den gode fejlmeddelelse vil fortælle brugeren, hvad der er sket og hvordan det kan løses.Brug instruktioner og beskrivelserVisse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. Fx:  “Indtast dit fornavn” er tydeligere og mere direkte end “Fornavn skal være udfyldt”  “Indtast et fornavn, der indeholder 35 bogstaver eller færre” bruger flere ord og er  mindre direkte og naturligt end “Fornavnet må højst være på 35 bogstaver”.  “Indtast en dato efter den 31. august 2020, der viser hvornår du startede på det pågældende kursus” bruger flere ord og er mindre direkte og naturligt end “Startdatoen for det valgte kursus skal være efter den 31. august 2020”.Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som “Indtast dit navn” men brug en beskrivelse som “Navnet bør højst være 35 bogstaver” til felter som er for lange.                        Sådan (do)                        Sådan: Indsæt fejlmeddelelser over det felt, hvor fejlen skal rettes, samt øverst på siden. Brug farven rød til både fejlmeddelelser og til at markere, hvor fejlen er (Wroblewski, 2008, s. 119-132). Farven rød signalerer i computersystemer &quot;alarm&quot;, &quot;fare&quot;, &quot;problem&quot;, &quot;fejl&quot; osv. (Johnson, 2010, s. 72) og er den farve, det menneskelige øje ser bedst (Johnson, 2010, s. 54).                Ikke sådan (don&#39;t)                        Ikke sådan: Undgå, at fejlmeddelelsen kun optræder ét sted på siden. Nogle brugere vil ikke få øje på den. Undgå også, at fejlen kun vises på én måde – fx med farve (Wroblewski, 2008, s. 119-133). Undgå så vidt muligt at bruge den røde farve til andet end fejlmeddelelser (Johnson, 2010, s. 57).        Referencer  Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)  Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)  Understanding Success Criterion 3.3.1: Error Identification  Understanding Success Criterion 3.3.3: Error SuggestionSe komponenten i eksempelløsninger  Vedhæft filerEksempler på fejlmeddelelserNavn                        Åbn dette eksempel i et nyt vindue: error-message-name                                                Hvad er dit fulde navn?                Fejl: Skriv dit fulde navn, og adskil        for- og efternavne med mellemrum, fx Anders Andersen                    Personnummer                        Åbn dette eksempel i et nyt vindue: error-message-personnummer                                                Personnummer                Fx: 22091908-1654 (ddmmåååå-nnnn)                Fejl: Indtast dit personnummer i det        korrekte format                    Postnummer                        Åbn dette eksempel i et nyt vindue: error-message-postnummer                                                Postnummer                Fejl: Indtast et postnummer med fire        tal                    Tjekbokse                        Åbn dette eksempel i et nyt vindue: error-message-checkbox                                                Hvad er din nationalitet?        Fejl: Angiv om du er dansk, svensk            eller anden nationalitet                                                    Dansk                                                        Svensk                                                        Anden                    nationalitet                                        Radioknapper                        Åbn dette eksempel i et nyt vindue: error-message-radio                                                Sagen handler om        Fejl: Vælg hvad sagen handler            om                                                                            Ulykkesforsikring (ASL §81)                                                                                                 Erstatningsansvar (ASL §10)                                                                                                 Forsikringsselskab (ASL §10)                                                         Dato                        Åbn dette eksempel i et nyt vindue: error-message-date                                                Hvornår blev dit pas udstedt?        Fx: 05 12            2018        Fejl: Datoen kan ikke være i            fremtiden                                    Dag                                                        Måned                                                        År                                                        Vedhæft fil                        Åbn dette eksempel i et nyt vindue: error-message-file-input                                        Vedhæft        fil    Fejl: Filens størrelse skal være under        2MB                    ",
-"description" : "",
-"subnav": ["Eksempler på fejlmeddelelser",""]
-},
-
-
-
-
-
-
-{
-"url": "/komponenter/fejlopsummering/",
-"title": "Fejlopsummering",
-"category": "Komponenter_category",
-"subcategory": "Komponenter",
-"lead": "",
+"lead": "Når der er fejl i de oplysninger, brugeren har indtastet, skal dette altid angives både med en overordnet fejlopsummering og en fejlmeddelelse ved hver enkelt fejl.",
 "tags": [''],
 "layout": "styleguide",
-"content" : "Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de fejlmeddelelser, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.                        Åbn dette eksempel i et nyt vindue: error-summary                                                Der er problemer                    Datoen for                    udløbsdato på dit pas bør inkludere årstal            Indtast                    postnummer - fx 4000                                        Gå til kodeafsnit: error-summary        Anvendes tilVis en fejlopsummering når der er fejl i noget af det brugeren har indtastet, også hvis der kun er én fejl på siden.VejledningDer skal være links fra fejlene i filopsummeringen til det sted på siden, hvor fejlen er. Når der trykkes på linket i opsummering, skal fokus flyttes til det felt fejlmeddelelsen knytter sig til.Sørg for at linkene i fejlopsummeringen er identiske med fejlmeddelelsen de linker til.For fejl i et enkeltstående felt, skal du linke direkte til feltet.Når en bruger skal indtaste svar i flere felter, fx dag-, måned- og årsfelterne i datoangivelse, skal du linke til det første felt, der indeholder en fejl.Hvis du ikke ved, hvilket felt der indeholder en fejl, skal du linke til det første felt i gruppen af felter.For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste ved hjælp af en radioknap eller en tjekboks, skal du linke til den første radioknap eller tjekboks på listen.                        Sådan (do)                        Sådan: Indsæt fejlmeddelelser over det felt, hvor fejlen skal rettes, samt øverst på siden. Brug farven rød til både fejlmeddelelser og til at markere, hvor fejlen er (Wroblewski, 2008, s. 119-132). Farven rød signalerer i computersystemer &quot;alarm&quot;, &quot;fare&quot;, &quot;problem&quot;, &quot;fejl&quot; osv. (Johnson, 2010, s. 72) og er den farve, det menneskelige øje ser bedst (Johnson, 2010, s. 54).                Ikke sådan (don&#39;t)                        Ikke sådan: Undgå, at fejlmeddelelsen kun optræder ét sted på siden. Nogle brugere vil ikke få øje på den. Undgå også, at fejlen kun vises på én måde – fx med farve (Wroblewski, 2008, s. 119-133). Undgå så vidt muligt at bruge den røde farve til andet end fejlmeddelelser (Johnson, 2010, s. 57).        Referencer  Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)  Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)Se komponenten i eksempelløsninger  Vedhæft filerPlaceringSæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumme eller et tilbage-link, skal du placere den under disse, men over titlen (den øverste overskrift) på siden.                        Åbn dette eksempel i et nyt vindue: error-summary-page                                                Der er problemer                    Skriv dit                    fulde navn, og adskil for- og efternavne med mellemrum,                    fx Anders Andersen            Angiv om du                    er dansk, svensk eller anden nationalitet            Datoen kan ikke                    være i fremtiden            Oplysninger om dig                        Hvad er dit fulde navn?                            Fejl: Skriv dit fulde navn, og            adskil for- og efternavne med mellemrum, fx Anders Andersen                                    Hvad er din nationalitet?            Fejl: Angiv om du er dansk,                svensk eller anden nationalitet                                                                    Dansk                                                                        Svensk                                                                        Anden                        nationalitet                                                                Hvornår blev dit pas udstedt?                        Fx: 05 12                2018            Fejl: Datoen kan ikke være i                fremtiden                                                Dag                                                                        Måned                                                                        År                                                                            ",
+"content" : "  Fejlmeddelelser  Fejlopsummering",
 "description" : "",
-"subnav": ["Placering",""]
+"subnav": [""]
 },
 
 
@@ -4885,6 +4922,50 @@ let searchIndex = [
 "content" : "Anvendes tilVenstremenu anvendes til at afspejle et navigations-hierarki i op til tre niveauer.Venstremenu anvendes til den sekundære navigation/undermenu på en side i en større løsning.Anvendes ikke tilVenstremenu bør ikke anvendes på mindre løsninger (mindre end 5 sider).Hvis din løsning allerede har topmenu og evt. tilknyttet dropdown, bør du overveje at forenkle din navigation før du vælger en venstremenu.VejledningMarker det aktive punkt (”der hvor brugeren er”) i venstremenuen.Brug korte og præcise ord og begreber. De må eksempelvis gerne være kortere varianter af selve sidernes indholdstitler.Undgå at lave for mange punkter.Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.                        Sådan (do)                        Sådan: Sørg for, at navigationsmenuer tydeligt viser brugerne, hvor de er på sitet, hvor de kan gå hen, og hvor de har været. Det indebærer, at et menupunkt kan have tre stadier: (1) Ikke fremhævet, men klikbart, (2) fremhævet, men ikke klikbart samt (3) fremhævet og klikbart (Powazek, 2006).                Ikke sådan (don&#39;t)                        Ikke sådan: Lad ikke brugerne være forvirrede over, hvor de er i webstedets hierarki.        ReferencerDerek Powazek: Where Am I? (2006)  2 niveauer                              Åbn dette eksempel i et nyt vindue: sidenav-normal-level2                                                                            Hovedside                                                        Hovedside                                                                                    Underside                                                                                                Underside                                                                                                Underside                                                                                                Underside                                                                                                Underside                                                                                            Hovedside                                              3 niveauer                              Åbn dette eksempel i et nyt vindue: sidenav-normal-level3                                                                            Hovedside                                                        Hovedside                                                                                    Underside                                                                                                Underside                                                                                                                            Underside                                                                                                                                        Underside                                                                                                                                        Underside                                                                                                                                        Underside                                                                                                                                                    Underside                                                                                                Underside                                                                                                Underside                                                                                            Hovedside                                              Aktivt link med anchor links                              Åbn dette eksempel i et nyt vindue: sidenav-anchor                                                                            Hovedside                                                        Hovedside                                                                                    Anchor link                                                                                                Anchor link                                                                                                                        Anchor link                                                                                                Anchor link                                                                                  Ekstra information                              Åbn dette eksempel i et nyt vindue: sidenav-information-level1                                                                            Hovedside Informationstekst for                    parent link                                                        Hovedside Informationstekst for                    current link                                                        Hovedside Informationstekst for                    another link                                            ",
 "description" : "Venstremenu giver brugerne overblik over struktur og indhold, så de kan finde vej til det indhold, de leder efter.",
 "subnav": ["2 niveauer","3 niveauer","Aktivt link med anchor links","Ekstra information",""]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"url": "/komponenter/fejlangivelse/fejlmeddelelser/",
+"title": "Fejlmeddelelser",
+"category": "Komponenter_category",
+"subcategory": "Komponenter",
+"lead": "",
+"tags": ['fejlbesked','fejlmeddelelse','meddelelser','fejl','fejlmeddelelser','fejlbeskeder','fejlnotifikationer','medelelser','meddellelser','medellelser','fejlmedelelser','fejlmeddellelser','fejlmedellelser'],
+"layout": "styleguide",
+"content" : "                        Åbn dette eksempel i et nyt vindue: error-message                                                Hvad hedder dit kursus?                Fx: Skriv godt                Fejl: Giv dit kursus et navn                                Gå til kodeafsnit: error-message        Anvendes tilBrug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsningen. Fortæl brugeren, hvad der skal til for at rette problemet og komme videre i et simpelt og venligt sprog.Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så brugeren ikke skal lede, ved at sætte fejlmeddelelsen umiddelbart over det, der skal rettes eller mangler.Anvendes ikke tilBrug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en besked.VejledningFejlmeddelelsen skal også vises som et link til fejlen i fejlopsummeringen. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.Vis fejlmeddelelsen i rød umiddelbart over, der hvor fejlen er.Vis en rød streg i venstre side af området, ud for fejlen for at fremhæve fejlen.Marker også selve feltet der er fejl i med rødt.For at hjælpe skærmlæsere tilføjes en skjult tekst med ordet “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre “Fejl: Dette er ikke en gyldig mailadresse.”Skriv klart og præcistBeskriv for brugeren, hvad der er sket og hvordan det kan rettes.Meddelelsen skal være skrevet i lægmandssprog, være imødekommende og så kortfattet som muligt.Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står “ddmmååå-nnnn” eller “22091908-1856” som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.Vær konsistentBrug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de ser ens ud, lyder ens, og betyder det samme, og så de giver mening ude af kontekst.Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står “Hvor mange timer arbejder du om ugen?”, så kan fejlmeddelelsen være “Indtast hvor mange timer du arbejder om ugen”.Vær præcisGenerelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening uden for kontekst. Undgå derfor fejlmeddelelser som:  “En fejl opstod”  “Svar på spørgsmålet”  “Vælg et svar fra listen”  “Udfyld feltet”  “Dette felt er påkrævet”Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud som fx:  “Skriv adressen korrekt”  “Du har lavet en fejl”  “Ikke godkendt”Forskellige fejl har brug for forskellige fejlmeddelelser.Fx kan der opstå forskellige fejl på tekstfelter, felter kan være: tomme, for lange, for korte, indeholde ugyldige tegn, være i et forkert format, m.fl.En fejlmeddelelse, der forklarer den specifikke situation er mere hjælpsom end den generiske fejlmeddelelse.Den gode fejlmeddelelse vil fortælle brugeren, hvad der er sket og hvordan det kan løses.Brug instruktioner og beskrivelserVisse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. Fx:  “Indtast dit fornavn” er tydeligere og mere direkte end “Fornavn skal være udfyldt”  “Indtast et fornavn, der indeholder 35 bogstaver eller færre” bruger flere ord og er  mindre direkte og naturligt end “Fornavnet må højst være på 35 bogstaver”.  “Indtast en dato efter den 31. august 2020, der viser hvornår du startede på det pågældende kursus” bruger flere ord og er mindre direkte og naturligt end “Startdatoen for det valgte kursus skal være efter den 31. august 2020”.Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som “Indtast dit navn” men brug en beskrivelse som “Navnet bør højst være 35 bogstaver” til felter som er for lange.                        Sådan (do)                        Sådan: Indsæt fejlmeddelelser over det felt, hvor fejlen skal rettes, samt øverst på siden. Brug farven rød til både fejlmeddelelser og til at markere, hvor fejlen er (Wroblewski, 2008, s. 119-132). Farven rød signalerer i computersystemer &quot;alarm&quot;, &quot;fare&quot;, &quot;problem&quot;, &quot;fejl&quot; osv. (Johnson, 2010, s. 72) og er den farve, det menneskelige øje ser bedst (Johnson, 2010, s. 54).                Ikke sådan (don&#39;t)                        Ikke sådan: Undgå, at fejlmeddelelsen kun optræder ét sted på siden. Nogle brugere vil ikke få øje på den. Undgå også, at fejlen kun vises på én måde – fx med farve (Wroblewski, 2008, s. 119-133). Undgå så vidt muligt at bruge den røde farve til andet end fejlmeddelelser (Johnson, 2010, s. 57).        Referencer  Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)  Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)  Understanding Success Criterion 3.3.1: Error Identification  Understanding Success Criterion 3.3.3: Error SuggestionSe komponenten i eksempelløsninger  Vedhæft filerEksempler på fejlmeddelelserNavn                        Åbn dette eksempel i et nyt vindue: error-message-name                                                Hvad er dit fulde navn?                Fejl: Skriv dit fulde navn, og adskil        for- og efternavne med mellemrum, fx Anders Andersen                    Personnummer                        Åbn dette eksempel i et nyt vindue: error-message-personnummer                                                Personnummer                Fx: 22091908-1654 (ddmmåååå-nnnn)                Fejl: Indtast dit personnummer i det        korrekte format                    Postnummer                        Åbn dette eksempel i et nyt vindue: error-message-postnummer                                                Postnummer                Fejl: Indtast et postnummer med fire        tal                    Tjekbokse                        Åbn dette eksempel i et nyt vindue: error-message-checkbox                                                Hvad er din nationalitet?        Fejl: Angiv om du er dansk, svensk            eller anden nationalitet                                                    Dansk                                                        Svensk                                                        Anden                    nationalitet                                        Radioknapper                        Åbn dette eksempel i et nyt vindue: error-message-radio                                                Sagen handler om        Fejl: Vælg hvad sagen handler            om                                                                            Ulykkesforsikring (ASL §81)                                                                                                 Erstatningsansvar (ASL §10)                                                                                                 Forsikringsselskab (ASL §10)                                                         Dato                        Åbn dette eksempel i et nyt vindue: error-message-date                                                Hvornår blev dit pas udstedt?        Fx: 05 12            2018        Fejl: Datoen kan ikke være i            fremtiden                                    Dag                                                        Måned                                                        År                                                        Vedhæft fil                        Åbn dette eksempel i et nyt vindue: error-message-file-input                                        Vedhæft        fil    Fejl: Filens størrelse skal være under        2MB                    ",
+"description" : "",
+"subnav": ["Eksempler på fejlmeddelelser",""]
+},
+
+
+
+
+
+
+{
+"url": "/komponenter/fejlangivelse/fejlopsummering/",
+"title": "Fejlopsummering",
+"category": "Komponenter_category",
+"subcategory": "Komponenter",
+"lead": "",
+"tags": [''],
+"layout": "styleguide",
+"content" : "Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de fejlmeddelelser, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.                        Åbn dette eksempel i et nyt vindue: error-summary                                                Der er problemer                    Datoen for                    udløbsdato på dit pas bør inkludere årstal            Indtast                    postnummer - fx 4000                                        Gå til kodeafsnit: error-summary        Anvendes tilVis en fejlopsummering når der er fejl i noget af det brugeren har indtastet, også hvis der kun er én fejl på siden.VejledningDer skal være links fra fejlene i filopsummeringen til det sted på siden, hvor fejlen er. Når der trykkes på linket i opsummering, skal fokus flyttes til det felt fejlmeddelelsen knytter sig til.Sørg for at linkene i fejlopsummeringen er identiske med fejlmeddelelsen de linker til.For fejl i et enkeltstående felt, skal du linke direkte til feltet.Når en bruger skal indtaste svar i flere felter, fx dag-, måned- og årsfelterne i datoangivelse, skal du linke til det første felt, der indeholder en fejl.Hvis du ikke ved, hvilket felt der indeholder en fejl, skal du linke til det første felt i gruppen af felter.For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste ved hjælp af en radioknap eller en tjekboks, skal du linke til den første radioknap eller tjekboks på listen.                        Sådan (do)                        Sådan: Indsæt fejlmeddelelser over det felt, hvor fejlen skal rettes, samt øverst på siden. Brug farven rød til både fejlmeddelelser og til at markere, hvor fejlen er (Wroblewski, 2008, s. 119-132). Farven rød signalerer i computersystemer &quot;alarm&quot;, &quot;fare&quot;, &quot;problem&quot;, &quot;fejl&quot; osv. (Johnson, 2010, s. 72) og er den farve, det menneskelige øje ser bedst (Johnson, 2010, s. 54).                Ikke sådan (don&#39;t)                        Ikke sådan: Undgå, at fejlmeddelelsen kun optræder ét sted på siden. Nogle brugere vil ikke få øje på den. Undgå også, at fejlen kun vises på én måde – fx med farve (Wroblewski, 2008, s. 119-133). Undgå så vidt muligt at bruge den røde farve til andet end fejlmeddelelser (Johnson, 2010, s. 57).        Referencer  Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)  Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)Se komponenten i eksempelløsninger  Vedhæft filerPlaceringSæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumme eller et tilbage-link, skal du placere den under disse, men over titlen (den øverste overskrift) på siden.                        Åbn dette eksempel i et nyt vindue: error-summary-page                                                Der er problemer                    Skriv dit                    fulde navn, og adskil for- og efternavne med mellemrum,                    fx Anders Andersen            Angiv om du                    er dansk, svensk eller anden nationalitet            Datoen kan ikke                    være i fremtiden            Oplysninger om dig                        Hvad er dit fulde navn?                            Fejl: Skriv dit fulde navn, og            adskil for- og efternavne med mellemrum, fx Anders Andersen                                    Hvad er din nationalitet?            Fejl: Angiv om du er dansk,                svensk eller anden nationalitet                                                                    Dansk                                                                        Svensk                                                                        Anden                        nationalitet                                                                Hvornår blev dit pas udstedt?                        Fx: 05 12                2018            Fejl: Datoen kan ikke være i                fremtiden                                                Dag                                                                        Måned                                                                        År                                                                            ",
+"description" : "",
+"subnav": ["Placering",""]
 },
 
 
@@ -5782,6 +5863,50 @@ let searchIndex = [
 "layout": "styleguide",
 "content" : "                        Åbn dette eksempel i et nyt vindue: sidenav-normal-level2                                                                            Hovedside                                                        Hovedside                                                                                    Underside                                                                                                Underside                                                                                                Underside                                                                                                Underside                                                                                                Underside                                                                                            Hovedside                                        Eksempler og retningslinjer    Retningslinjer    EksemplerInstallationHTML Struktur        &amp;lt;nav&amp;gt;    &amp;lt;ul class=&amp;quot;sidenav-list&amp;quot; role=&amp;quot;menu&amp;quot;&amp;gt;        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;            &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                Hovedside            &amp;lt;/a&amp;gt;        &amp;lt;/li&amp;gt;        &amp;lt;li class=&amp;quot;current  &amp;quot; role=&amp;quot;none&amp;quot;&amp;gt;            &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot; aria-current=&amp;quot;true&amp;quot;&amp;gt;                Hovedside            &amp;lt;/a&amp;gt;            &amp;lt;ul class=&amp;quot;sidenav-sub_list&amp;quot; role=&amp;quot;menu&amp;quot;&amp;gt;                &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                        Underside                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;                &amp;lt;li class=&amp;quot; active &amp;quot; role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot; aria-current=&amp;quot;page&amp;quot;&amp;gt;                        Underside                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;                &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                        Underside                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;                &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                        Underside                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;                &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                        Underside                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;            &amp;lt;/ul&amp;gt;        &amp;lt;/li&amp;gt;        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;            &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                Hovedside            &amp;lt;/a&amp;gt;        &amp;lt;/li&amp;gt;    &amp;lt;/ul&amp;gt;&amp;lt;/nav&amp;gt;    Aktive menupunkter  Aktive menupunkter skal have klassen current.  Kun det sidste aktive menupunkt skal have klassen active.  Hvis der kun er ét aktivt niveau sættes begge klasser.Anchor linksHvis en undermenu består af links til områder på den aktuelle side tilføjes klassen has-anchor-links på &amp;lt;ul&amp;gt; elementet.                        Vis dette eksempel i et nyt vindue: sidenav-anchor                    &amp;lt;nav&amp;gt;    &amp;lt;ul class=&amp;quot;sidenav-list&amp;quot; role=&amp;quot;menu&amp;quot;&amp;gt;        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;            &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                Hovedside            &amp;lt;/a&amp;gt;        &amp;lt;/li&amp;gt;        &amp;lt;li class=&amp;quot;current  active  has-anchor-links&amp;quot; role=&amp;quot;none&amp;quot;&amp;gt;            &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot; aria-current=&amp;quot;true&amp;quot;                aria-current=&amp;quot;page&amp;quot;&amp;gt;                Hovedside            &amp;lt;/a&amp;gt;            &amp;lt;ul class=&amp;quot;sidenav-sub_list&amp;quot; role=&amp;quot;menu&amp;quot;&amp;gt;                &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                        Anchor link                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;                &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                        Anchor link                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;            &amp;lt;/ul&amp;gt;            &amp;lt;ul class=&amp;quot;sidenav-sub_list&amp;quot; role=&amp;quot;menu&amp;quot;&amp;gt;                &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                        Anchor link                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;                &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;                    &amp;lt;a href=&amp;quot;#&amp;quot; role=&amp;quot;menuitem&amp;quot;&amp;gt;                        Anchor link                    &amp;lt;/a&amp;gt;                &amp;lt;/li&amp;gt;            &amp;lt;/ul&amp;gt;        &amp;lt;/li&amp;gt;    &amp;lt;/ul&amp;gt;&amp;lt;/nav&amp;gt;    Tilføj ikon og information i venstremenu  For at tilføje et ikon til et punkt i venstremenuen bruges klassen sidenav-icon-before.  For at tilføje information til et punkt i venstremenuen bruges klassen sidenav-information.  Ikoner og informationer kan også sammensættes i én venstremenu.",
 "description" : "Dokumentation på implementering af venstremenu.",
+"subnav": [""]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"url": "/kode/komponenter/fejlangivelse/fejlmeddelelser/",
+"title": "",
+"category": "",
+"subcategory": "",
+"lead": "",
+"tags": [''],
+"layout": "",
+"content" : "",
+"description" : "",
+"subnav": [""]
+},
+
+
+
+
+
+
+{
+"url": "/kode/komponenter/fejlangivelse/fejlopsummering/",
+"title": "",
+"category": "",
+"subcategory": "",
+"lead": "",
+"tags": [''],
+"layout": "",
+"content" : "",
+"description" : "",
 "subnav": [""]
 },
 

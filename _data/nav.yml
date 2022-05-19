@@ -78,8 +78,8 @@ Komponenter_category:
   - href: /komponenter/detaljer/
   - href: /komponenter/dropdown/
   - href: /komponenter/faneblade/
-  - href: /komponenter/fejlmeddelelser/
-  - href: /komponenter/fejlopsummering/
+  - href: /komponenter/fejlangivelse/
+    categorynav: 'komponenter_fejlangivelse'
   - href: /komponenter/footer/
   - href: /komponenter/funktionslink/
   - href: /komponenter/header/
@@ -105,6 +105,10 @@ Komponenter_category:
   - href: /komponenter/trinindikator/
   - href: /komponenter/fil-upload/
   - href: /komponenter/venstremenu/
+
+komponenter_fejlangivelse:
+  - href: /komponenter/fejlangivelse/fejlmeddelelser/
+  - href: /komponenter/fejlangivelse/fejlopsummering/
 
 Kode_category:
 - href: /kode/implementering/
@@ -161,6 +165,11 @@ Kode_Komponenter_category:
   - href: /kode/komponenter/trinindikator/
   - href: /kode/komponenter/fil-upload/
   - href: /kode/komponenter/venstremenu/
+
+  
+kode_komponenter_fejlangivelse:
+  - href: /kode/komponenter/fejlangivelse/fejlmeddelelser/
+  - href: /kode/komponenter/fejlangivelse/fejlopsummering/
 
 Eksempler_category:
 - href: /eksempler/selvbetjeningsloesninger/

@@ -1,5 +1,8 @@
 ---
-permalink: "/komponenter/fejlmeddelelser/"
+permalink: "/komponenter/fejlangivelse/fejlmeddelelser/"
+redirect_from:
+- /komponenter/fejlmeddelelser/
+parentlink: "/komponenter/fejlangivelse/"
 layout: styleguide
 type: component
 title: Fejlmeddelelser
@@ -46,7 +49,7 @@ Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har me
 {:.h3}
 ## Vejledning
 
-Fejlmeddelelsen skal også vises som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.
+Fejlmeddelelsen skal også vises som et link til fejlen i <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.
 
 Vis fejlmeddelelsen i rød umiddelbart over, der hvor fejlen er.
 
