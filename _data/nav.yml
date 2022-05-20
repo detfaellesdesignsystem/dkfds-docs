@@ -97,7 +97,7 @@ Komponenter_category:
   - href: /komponenter/tables/
   - href: /komponenter/tags/
   - href: /komponenter/tekstfelter/
-  - href: /komponenter/textarea/
+    categorynav: 'komponenter_tekstfelter'
   - href: /komponenter/tjekboks/
   - href: /komponenter/toastbesked/
   - href: /komponenter/toggle/
@@ -109,6 +109,11 @@ Komponenter_category:
 komponenter_fejlangivelse:
   - href: /komponenter/fejlangivelse/fejlmeddelelser/
   - href: /komponenter/fejlangivelse/fejlopsummering/
+
+  
+komponenter_tekstfelter:
+  - href: /komponenter/tekstfelter/tekstfelt/
+  - href: /komponenter/tekstfelter/tekstomraade/
 
 Kode_category:
 - href: /kode/implementering/

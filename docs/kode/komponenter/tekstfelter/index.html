@@ -1665,7 +1665,28 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-komponenter-tekstfelter" aria-expanded="false"  >
+          <span>Tekstfelter</span>
+        </button>
+        <div aria-label="Tekstfelter" class="overflow-menu-inner" id="submenu-level3-komponenter-tekstfelter" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
 
   
 
@@ -1673,6 +1694,30 @@
   
     
     <a href="/komponenter/tekstfelter/" role="menuitem"  class="nav-link">
+        Tekstfelter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tekstfelter/tekstfelt/" role="menuitem"  class="nav-link">
         Tekstfelter
       </a>
      
@@ -1692,10 +1737,20 @@
 
   
     
-    <a href="/komponenter/textarea/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tekstfelter/tekstomraade/" role="menuitem"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
     
   
 </li>
@@ -2321,7 +2376,7 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
@@ -3700,7 +3755,7 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
 
   
@@ -4090,7 +4145,7 @@
 
 
 <li class=" " role="none">
-<a href="#felt-med-fejlmeddelelse"  role="menuitem">Felt med fejlmeddelelse</a>
+<a href="#hjaelpetekst"  role="menuitem">Hjælpetekst</a>
 </li>
 
     
@@ -4099,7 +4154,7 @@
 
 
 <li class=" " role="none">
-<a href="#felt-med-frivillig-indtastning"  role="menuitem">Felt med frivillig indtastning</a>
+<a href="#obligatoriske-og-frivillige-felter"  role="menuitem">Obligatoriske og frivillige felter</a>
 </li>
 
     
@@ -4108,7 +4163,7 @@
 
 
 <li class=" " role="none">
-<a href="#felt-med-hjaelpetekst"  role="menuitem">Felt med hjælpetekst</a>
+<a href="#read-only"  role="menuitem">Read-only</a>
 </li>
 
     
@@ -4117,16 +4172,7 @@
 
 
 <li class=" " role="none">
-<a href="#deaktiveret-felt"  role="menuitem">Deaktiveret felt</a>
-</li>
-
-    
-
-    
-
-
-<li class=" " role="none">
-<a href="#read-only-felt"  role="menuitem">Read-only felt</a>
+<a href="#deaktiveret"  role="menuitem">Deaktiveret</a>
 </li>
 
     
@@ -4464,11 +4510,10 @@
           
           
           <ul class="d-lg-none nobullet-list">
-          <li><a href="#felt-med-fejlmeddelelse">Felt med fejlmeddelelse</a></li>
-          <li><a href="#felt-med-frivillig-indtastning">Felt med frivillig indtastning</a></li>
-          <li><a href="#felt-med-hjaelpetekst">Felt med hjælpetekst</a></li>
-          <li><a href="#deaktiveret-felt">Deaktiveret felt</a></li>
-          <li><a href="#read-only-felt">Read-only felt</a></li>
+          <li><a href="#hjaelpetekst">Hjælpetekst</a></li>
+          <li><a href="#obligatoriske-og-frivillige-felter">Obligatoriske og frivillige felter</a></li>
+          <li><a href="#read-only">Read-only</a></li>
+          <li><a href="#deaktiveret">Deaktiveret</a></li>
           <li><a href="#prefix-og-suffix">Prefix og suffix</a></li>
           <li><a href="#feltbredde">Feltbredde</a></li>
           
@@ -4505,8 +4550,8 @@
 
 <h2>Eksempler og retningslinjer</h2>
 <ul class="nobullet-list">
-    <li><a href="/komponenter/tekstfelter/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tekstfelter/">Eksempler</a></li>
+    <li><a href="/komponenter/tekstfelter/tekstfelt/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/tekstfelter/tekstfelt/">Eksempler</a></li>
 </ul>
 
 <h2>Installation</h2>
@@ -4533,48 +4578,36 @@
 
 <h2>Varianter</h2>
 
-<h3 id="felt-med-fejlmeddelelse">Felt med fejlmeddelelse</h3>
+<h3 id="hjaelpetekst">Hjælpetekst</h3>
 
-<div class="component-preview component-preview-code  component-code-text-input-error" aria-label="">
+<div class="component-preview component-preview-code  component-code-text-input-helptext" aria-label="">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/text-input-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-error</span></a>
+        <a href="/eksempel/text-input-helptext/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-helptext</span></a>
         
     </div>
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
 
-    &lt;label class=&quot;form-label&quot; for=&quot;form-error&quot;&gt;
-        Inputfelt med fejl
+    &lt;label class=&quot;form-label&quot; for=&quot;input-type-help-text&quot;&gt;
+        Inputfelt med label og hjælpetekst
     &lt;/label&gt;
-    &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;
+    &lt;span class=&quot;form-hint&quot; id=&quot;input-type-help-text-hint&quot;&gt;
         Fx 12345678
     &lt;/span&gt;
-    &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Hjælpsom fejlbesked
-    &lt;/span&gt;&lt;input class=&quot;form-input&quot; id=&quot;form-error&quot; name=&quot;form-error&quot;
-        type=&quot;text&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;form-error-hint form-error-error&quot; required /&gt;
+    &lt;input class=&quot;form-input&quot; id=&quot;input-type-help-text&quot;
+        name=&quot;input-type-help-text&quot; type=&quot;text&quot;
+        aria-describedby=&quot;input-type-help-text-hint&quot; required /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
     </div>
 </div>
 
-<p>Sørg for at rette i de nødvendige attributter, så værdierne er unikke og refererer til de rette elementer:</p>
-
-<ul>
-  <li><code>for</code></li>
-  <li><code>id</code></li>
-  <li><code>name</code></li>
-  <li><code>aria-labelledby</code></li>
-  <li><code>aria-describedby</code></li>
-</ul>
-
-<h3 id="felt-med-frivillig-indtastning">Felt med frivillig indtastning</h3>
+<h3 id="obligatoriske-og-frivillige-felter">Obligatoriske og frivillige felter</h3>
 
 <div class="component-preview component-preview-code  component-code-text-input-optional" aria-label="">
     
@@ -4627,64 +4660,9 @@
     </div>
 </div>
 
-<p>De fleste felter i en selvbetjeningsløsning er påkrævet, så for at undgå mange af de standard røde stjerner ved hvert felt har vi i stedet valgt at skrive (frivilligt) ved de felter, som ikke er påkrævede.</p>
+<p>Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man “(frivilligt)” ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man “(*skal udfyldes)” ved de få felter, der er påkrævede. <a href="/komponenter/tekstfelter/tekstfelt/#obligatoriske-og-frivillige-felter">Se eksempler på frivillige og obligatoriske felter</a>.</p>
 
-<h3 id="felt-med-hjaelpetekst">Felt med hjælpetekst</h3>
-
-<div class="component-preview component-preview-code  component-code-text-input-helptext" aria-label="">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-input-helptext/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-helptext</span></a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-
-    &lt;label class=&quot;form-label&quot; for=&quot;input-type-help-text&quot;&gt;
-        Inputfelt med label og hjælpetekst
-    &lt;/label&gt;
-    &lt;span class=&quot;form-hint&quot; id=&quot;input-type-help-text-hint&quot;&gt;
-        Fx 12345678
-    &lt;/span&gt;
-    &lt;input class=&quot;form-input&quot; id=&quot;input-type-help-text&quot;
-        name=&quot;input-type-help-text&quot; type=&quot;text&quot;
-        aria-describedby=&quot;input-type-help-text-hint&quot; required /&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
-<h3 id="deaktiveret-felt">Deaktiveret felt</h3>
-
-<div class="component-preview component-preview-code  component-code-text-input-disabled" aria-label="">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-input-disabled/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-disabled</span></a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-
-    &lt;label class=&quot;form-label&quot; for=&quot;input-disabled&quot;&gt;
-        Inputfelt som er låst
-    &lt;/label&gt;
-
-    &lt;input class=&quot;form-input&quot; id=&quot;input-disabled&quot; name=&quot;input-disabled&quot;
-        type=&quot;text&quot; disabled=&quot;disabled&quot; /&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
-<h3 id="read-only-felt">Read-only felt</h3>
+<h3 id="read-only">Read-only</h3>
 
 <div class="component-preview component-preview-code  component-code-text-input-readonly" aria-label="">
     
@@ -4704,6 +4682,32 @@
 
     &lt;input class=&quot;form-input&quot; id=&quot;input-readonly&quot; value=&quot;012345-6789&quot;
         name=&quot;input-readonly&quot; type=&quot;text&quot; readonly /&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="deaktiveret">Deaktiveret</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-disabled" aria-label="">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-disabled/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-disabled</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-disabled&quot;&gt;
+        Inputfelt som er låst
+    &lt;/label&gt;
+
+    &lt;input class=&quot;form-input&quot; id=&quot;input-disabled&quot; name=&quot;input-disabled&quot;
+        type=&quot;text&quot; disabled=&quot;disabled&quot; /&gt;
 &lt;/div&gt;</code></pre></figure>
 
 

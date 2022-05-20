@@ -16,9 +16,11 @@
 ================================================== -->
   
 
-<title>Deaktiveret felt | Det Fælles Designsystem</title>
-<meta property="og:title" content="Deaktiveret felt | Det Fælles Designsystem">
+<title>Tekstfelter | Det Fælles Designsystem</title>
+<meta property="og:title" content="Tekstfelter | Det Fælles Designsystem">
 
+<meta name="description" content="Tekstfelter til indtastning af information i form af bogstaver, tal og en kombination af begge.">
+<meta property="og:description" content="Tekstfelter til indtastning af information i form af bogstaver, tal og en kombination af begge.">
 
 
 
@@ -55,7 +57,7 @@
 </noscript>
 
   </head>
-  <body class="page-deaktiveret-felt layout-component">
+  <body class="page-tekstfelter layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -1148,7 +1150,7 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
@@ -1235,8 +1237,8 @@
 
   
     
-    <a href="/komponenter/faneblad/" role="menuitem"  class="nav-link">
-        Faneblade
+    <a href="/komponenter/faneblade/" role="menuitem"  class="nav-link">
+        Faneblade (Tabs)
       </a>
      
     
@@ -1248,14 +1250,59 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
 
   
     
-    <a href="/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-komponenter-fejlangivelse" aria-expanded="true"  >
+          <span>Fejlangivelse</span>
+        </button>
+        <div aria-label="Fejlangivelse" class="overflow-menu-inner" id="submenu-level2-komponenter-fejlangivelse" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/fejlangivelse/" role="menuitem"  class="nav-link">
+        Fejlangivelse<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/fejlangivelse/fejlmeddelelser/" role="menuitem"  class="nav-link">
         Fejlmeddelelser
       </a>
      
@@ -1275,7 +1322,7 @@
 
   
     
-    <a href="/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fejlangivelse/fejlopsummering/" role="menuitem"  class="nav-link">
         Fejlopsummering
       </a>
      
@@ -1284,21 +1331,11 @@
 </li>
     
 
-  
-    
 
+          </ul>
+        </div>
+      </div>  
 
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/komponenter/felter/" role="menuitem"  class="nav-link">
-        Felter
-      </a>
-     
     
   
 </li>
@@ -1315,28 +1352,8 @@
 
   
     
-    <a href="/komponenter/footers/" role="menuitem"  class="nav-link">
-        Footers
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/komponenter/formular/" role="menuitem"  class="nav-link">
-        Formular
+    <a href="/komponenter/footer/" role="menuitem"  class="nav-link">
+        Footer
       </a>
      
     
@@ -1375,8 +1392,8 @@
 
   
     
-    <a href="/komponenter/headers/" role="menuitem"  class="nav-link">
-        Headers
+    <a href="/komponenter/header/" role="menuitem"  class="nav-link">
+        Header
       </a>
      
     
@@ -1396,7 +1413,7 @@
   
     
     <a href="/komponenter/knapper/" role="menuitem"  class="nav-link">
-        Knapper
+        Knapper (Buttons)
       </a>
      
     
@@ -1416,27 +1433,7 @@
   
     
     <a href="/komponenter/modal/" role="menuitem"  class="nav-link">
-        Modalvindue
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/komponenter/notifikation/" role="menuitem"  class="nav-link">
-        Notifikation (Toast)
+        Modal
       </a>
      
     
@@ -1496,7 +1493,7 @@
   
     
     <a href="/komponenter/radioknap/" role="menuitem"  class="nav-link">
-        Radioknap
+        Radioknap (Radio button)
       </a>
      
     
@@ -1516,7 +1513,7 @@
   
     
     <a href="/komponenter/skip-link/" role="menuitem"  class="nav-link">
-        Skip-link
+        Gå til sidens indhold (Skip link)
       </a>
      
     
@@ -1536,7 +1533,7 @@
   
     
     <a href="/komponenter/spinner/" role="menuitem"  class="nav-link">
-        Spinner
+        Loading spinner
       </a>
      
     
@@ -1668,6 +1665,71 @@
     
 
 
+<li class="current  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-komponenter-tekstfelter" aria-expanded="true"  >
+          <span>Tekstfelter</span>
+        </button>
+        <div aria-label="Tekstfelter" class="overflow-menu-inner" id="submenu-level3-komponenter-tekstfelter" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="current  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tekstfelter/" role="menuitem" aria-current="true" class="nav-link">
+        Tekstfelter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="current active has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tekstfelter/tekstfelt/" role="menuitem" aria-current="page" class="nav-link">
+        Tekstfelter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
 <li class="  " role="none">
 
   
@@ -1675,8 +1737,38 @@
 
   
     
-    <a href="/komponenter/textarea/" role="menuitem"  class="nav-link">
-        Tekstområde
+    <a href="/komponenter/tekstfelter/tekstomraade/" role="menuitem"  class="nav-link">
+        Tekstområde (Textarea)
+      </a>
+     
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+        Tjekboks (Checkbox)
       </a>
      
     
@@ -1695,8 +1787,8 @@
 
   
     
-    <a href="/komponenter/tjekboks/" role="menuitem"  class="nav-link">
-        Tjekboks
+    <a href="/komponenter/toastbesked/" role="menuitem"  class="nav-link">
+        Toastbesked
       </a>
      
     
@@ -1755,8 +1847,8 @@
 
   
     
-    <a href="/komponenter/trinindikatorer/" role="menuitem"  class="nav-link">
-        Trinindikatorer
+    <a href="/komponenter/trinindikator/" role="menuitem"  class="nav-link">
+        Trinindikator
       </a>
      
     
@@ -1776,7 +1868,7 @@
   
     
     <a href="/komponenter/fil-upload/" role="menuitem"  class="nav-link">
-        Vedhæft fil (Upload)
+        Vedhæft fil
       </a>
      
     
@@ -1960,6 +2052,26 @@
     
     <a href="/eksempler/patterns/forlad-siden/" role="menuitem"  class="nav-link">
         Er du sikker på, du vil forlade siden?
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/formular/" role="menuitem"  class="nav-link">
+        Formular
       </a>
      
     
@@ -2264,7 +2376,7 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
@@ -2351,8 +2463,8 @@
 
   
     
-    <a href="/kode/komponenter/faneblad/" role="menuitem"  class="nav-link">
-        Faneblade
+    <a href="/kode/komponenter/faneblade/" role="menuitem"  class="nav-link">
+        Faneblade (Tabs)
       </a>
      
     
@@ -2411,48 +2523,8 @@
 
   
     
-    <a href="/kode/komponenter/felter/" role="menuitem"  class="nav-link">
-        Felter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/footers/" role="menuitem"  class="nav-link">
-        Footers
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/formular/" role="menuitem"  class="nav-link">
-        Formular
+    <a href="/kode/komponenter/footer/" role="menuitem"  class="nav-link">
+        Footer
       </a>
      
     
@@ -2491,8 +2563,8 @@
 
   
     
-    <a href="/kode/komponenter/headers/" role="menuitem"  class="nav-link">
-        Headers
+    <a href="/kode/komponenter/header/" role="menuitem"  class="nav-link">
+        Header
       </a>
      
     
@@ -2512,7 +2584,7 @@
   
     
     <a href="/kode/komponenter/knapper/" role="menuitem"  class="nav-link">
-        Knapper
+        Knapper (Buttons)
       </a>
      
     
@@ -2532,27 +2604,7 @@
   
     
     <a href="/kode/komponenter/modal/" role="menuitem"  class="nav-link">
-        Modalvindue
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/notifikation/" role="menuitem"  class="nav-link">
-        Notifikation (Toast)
+        Modal
       </a>
      
     
@@ -2612,7 +2664,7 @@
   
     
     <a href="/kode/komponenter/radioknap/" role="menuitem"  class="nav-link">
-        Radioknap
+        Radioknap (Radio button)
       </a>
      
     
@@ -2632,7 +2684,7 @@
   
     
     <a href="/kode/komponenter/skip-link/" role="menuitem"  class="nav-link">
-        Skip-link
+        Gå til sidens indhold (Skip link)
       </a>
      
     
@@ -2652,7 +2704,7 @@
   
     
     <a href="/kode/komponenter/spinner/" role="menuitem"  class="nav-link">
-        Spinner
+        Loading spinner
       </a>
      
     
@@ -2784,6 +2836,26 @@
     
 
 
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/tekstfelter/" role="menuitem"  class="nav-link">
+        Tekstfelter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
 <li class="  " role="none">
 
   
@@ -2792,7 +2864,7 @@
   
     
     <a href="/kode/komponenter/textarea/" role="menuitem"  class="nav-link">
-        Tekstområde
+        Tekstområde (Textarea)
       </a>
      
     
@@ -2812,7 +2884,47 @@
   
     
     <a href="/kode/komponenter/tjekboks/" role="menuitem"  class="nav-link">
-        Tjekboks
+        Tjekboks (Checkbox)
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/toastbesked/" role="menuitem"  class="nav-link">
+        Toastbesked
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/kode/komponenter/toggle/" role="menuitem"  class="nav-link">
+        Toggle switch
       </a>
      
     
@@ -2851,8 +2963,8 @@
 
   
     
-    <a href="/kode/komponenter/trinindikatorer/" role="menuitem"  class="nav-link">
-        Trinindikatorer
+    <a href="/kode/komponenter/trinindikator/" role="menuitem"  class="nav-link">
+        Trinindikator
       </a>
      
     
@@ -2872,7 +2984,7 @@
   
     
     <a href="/kode/komponenter/fil-upload/" role="menuitem"  class="nav-link">
-        Vedhæft fil (Upload)
+        Vedhæft fil
       </a>
      
     
@@ -2892,7 +3004,7 @@
   
     
     <a href="/kode/komponenter/venstremenu/" role="menuitem"  class="nav-link">
-        venstremenu
+        Venstremenu
       </a>
      
     
@@ -3507,6 +3619,706 @@
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         
         
+        <ul class="sidenav-list" role="menu">
+          
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/accordions/" role="menuitem" 
+  class="nav-link">
+  Accordions
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/badges/" role="menuitem" 
+  class="nav-link">
+  Badges
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/beskeder/" role="menuitem" 
+  class="nav-link">
+  Beskeder (Alerts)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/broedkrumme/" role="menuitem" 
+  class="nav-link">
+  Brødkrumme
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/cards/" role="menuitem" 
+  class="nav-link">
+  Cards
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/cookiemeddelelse/" role="menuitem" 
+  class="nav-link">
+  Cookiemeddelelse
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/dato-felt/" role="menuitem" 
+  class="nav-link">
+  Datoangivelse
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/datovaelger/" role="menuitem" 
+  class="nav-link">
+  Datovælger
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/detaljer/" role="menuitem" 
+  class="nav-link">
+  Detaljer
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/dropdown/" role="menuitem" 
+  class="nav-link">
+  Dropdown
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/faneblade/" role="menuitem" 
+  class="nav-link">
+  Faneblade (Tabs)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/fejlangivelse/" role="menuitem" 
+  class="nav-link">
+  Fejlangivelse
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/footer/" role="menuitem" 
+  class="nav-link">
+  Footer
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/funktionslink/" role="menuitem" 
+  class="nav-link">
+  Funktionslink
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/header/" role="menuitem" 
+  class="nav-link">
+  Header
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/knapper/" role="menuitem" 
+  class="nav-link">
+  Knapper (Buttons)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/modal/" role="menuitem" 
+  class="nav-link">
+  Modal
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/overflowmenu/" role="menuitem" 
+  class="nav-link">
+  Overflow menu
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/paginering/" role="menuitem" 
+  class="nav-link">
+  Paginering
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/radioknap/" role="menuitem" 
+  class="nav-link">
+  Radioknap (Radio button)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/skip-link/" role="menuitem" 
+  class="nav-link">
+  Gå til sidens indhold (Skip link)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/spinner/" role="menuitem" 
+  class="nav-link">
+  Loading spinner
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/sprogvaegler/" role="menuitem" 
+  class="nav-link">
+  Sprogvælger
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/strukturerede-lister/" role="menuitem" 
+  class="nav-link">
+  Strukturerede lister
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/search/" role="menuitem" 
+  class="nav-link">
+  Søgefelt
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/tilbage-link/" role="menuitem" 
+  class="nav-link">
+  Tilbage link
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tables/" role="menuitem" 
+  class="nav-link">
+  Tabeller
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tags/" role="menuitem" 
+  class="nav-link">
+  Tags
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="current  " role="none">
+
+
+  
+
+<a href="/komponenter/tekstfelter/" role="menuitem" aria-current="true"
+  class="nav-link">
+  Tekstfelter
+</a>
+
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+    
+
+    
+
+    <ul class="sidenav-sub_list" role="menu">
+    
+
+<li class="current active has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tekstfelter/tekstfelt/" role="menuitem" aria-current="page"
+  class="nav-link">
+  Tekstfelter
+</a>
+
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    <ul class="sidenav-sub_list" role="menu">
+    
+
+
+<li class=" " role="none">
+<a href="#fejlmeddelelse"  role="menuitem">Fejlmeddelelse</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#hjaelpetekst"  role="menuitem">Hjælpetekst</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#obligatoriske-og-frivillige-felter"  role="menuitem">Obligatoriske og frivillige felter</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#read-only"  role="menuitem">Read-only</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#deaktiveret"  role="menuitem">Deaktiveret</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#prefix-og-suffix"  role="menuitem">Prefix og suffix</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#feltbredde"  role="menuitem">Feltbredde</a>
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/tekstfelter/tekstomraade/" role="menuitem" 
+  class="nav-link">
+  Tekstområde (Textarea)
+</a>
+
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tjekboks/" role="menuitem" 
+  class="nav-link">
+  Tjekboks (Checkbox)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/toastbesked/" role="menuitem" 
+  class="nav-link">
+  Toastbesked
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/toggle/" role="menuitem" 
+  class="nav-link">
+  Toggle switch
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tooltip/" role="menuitem" 
+  class="nav-link">
+  Tooltip
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/trinindikator/" role="menuitem" 
+  class="nav-link">
+  Trinindikator
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/fil-upload/" role="menuitem" 
+  class="nav-link">
+  Vedhæft fil
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/venstremenu/" role="menuitem" 
+  class="nav-link">
+  Venstremenu
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+        
       </nav>
     </aside>
 
@@ -3520,28 +4332,350 @@
         </div>
     </div>
 
-      <section id="section-/komponenter/felter/tekstfelt-disabled">
+      <section id="section-/komponenter/tekstfelter/tekstfelt">
           
           
 
           <div class="subheading">
-            
+            Komponenter
           </div>
-          <h1 id="deaktiveret-felt">Deaktiveret felt</h1>
+          <h1 id="tekstfelter">Tekstfelter</h1>
           
+          
+          <ul class="d-lg-none nobullet-list">
+          <li><a href="#fejlmeddelelse">Fejlmeddelelse</a></li>
+          <li><a href="#hjaelpetekst">Hjælpetekst</a></li>
+          <li><a href="#obligatoriske-og-frivillige-felter">Obligatoriske og frivillige felter</a></li>
+          <li><a href="#read-only">Read-only</a></li>
+          <li><a href="#deaktiveret">Deaktiveret</a></li>
+          <li><a href="#prefix-og-suffix">Prefix og suffix</a></li>
+          <li><a href="#feltbredde">Feltbredde</a></li>
+          
+          </ul>
           
 
           
 
           
           
-<div class="component-preview  component-preview-text-input-disabled" aria-label="Eksempel på låst tekstfelt">
+<div class="component-preview  component-preview-text-input" aria-label="Eksempel på tekstfelter">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/text-input-disabled/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input-disabled</span></a>
+        <a href="/eksempel/text-input/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input</span></a>
         
     </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group">
+
+    <label class="form-label" for="input-type-text">
+        Inputfelt med label
+    </label>
+
+    <input class="form-input" id="input-type-text" name="input-type-text"
+        type="text" required />
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/tekstfelter/" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-input</span></a>
+    </div>
+    
+</div>
+
+
+          
+
+          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Brug til input af information i form af bogstaver og tal eller en kombination af begge.</p>
+
+<p>Brug tekstfelter når det er nemmere for brugeren at skrive information end at vælge den på anden vis.</p>
+
+<p>Brug når brugeren skal kunne copy paste information ind i en formular.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Når brugeren skal vælge ud fra et prædefineret sæt af værdier (fx nogle få bestemte datoer) eller hvis der er strenge krav til datakonsistens, oftest i en løsning uden klientside validering (hvis brugerens input-format kan skabe fejl på serversiden).</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.</p>
+
+<p>Vis kun fejlmeddelelser, når brugeren har indtastet en ugyldig værdi.</p>
+
+<p>Fejlmeddelelser skal være meningsfulde og hjælpsomme.</p>
+
+<p>Placér fejlmeddelelser mellem label og feltet, som bliver markeret med rødt.</p>
+
+<p>Felter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.</p>
+
+<p>Brug feltbredden til at begrænse antallet af tegn i et felt. Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på minimum 27 tegn.</p>
+
+<p>Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til inputvalidering i en vejledning.</p>
+
+<p>Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.</p>
+
+<div class=" component-preview-text-input-dos-donts" aria-label="Felter do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Felter-do.svg" alt="Eksempel på, hvordan tekstfelter kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Brug tekstfelter, når der er mange gyldige svarmuligheder, som ikke kan opstilles på forhånd, og når mange typer svar er acceptable. (ISO, 2012, afsnit 8.5).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Felter-dont.svg" alt="Eksempel på, hvordan tekstfelter ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undlad at bruge tekstfelter til information, som lettere kan vælges ud fra prædefinerede værdier (ISO 9241-143, afsnit 8.5), og som brugerne let indtaster forkert (Miller &amp; Jarrett, 2001).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<div class=" component-preview-text-input-labels-dos-donts" aria-label="Felt labels do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Labels-do.svg" alt="Eksempel på, hvordan labels på felter kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Placér labels over formularens felter – tættere på de felter, de hører til, end på andre felter (Silver, 2018, s. 31-32). Placeringen over felterne gør formularen hurtigere at skanne, fordi øjet ikke behøver at bevæge sig frem og tilbage mellem label og indtastningsfelt, som det skulle, hvis labelen var placeret til venstre for feltet (McCloskey, 2013).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Labels-dont.svg" alt="Eksempel på, hvordan labels på felter ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undlad at placere labels inde i formularens felter. Formularens labels er afsenderens anmodninger eller spørgsmål, mens felterne bør være forbeholdt brugernes svar (Jarrett, 2013). En label inde i felt kan medføre, at brugerne fejlfortolker labelen som autoudfyldt data, og at feltet slet ikke ligner et indtastningsfelt (Sherwin, 2014-2018).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li>ISO 9241-143: Forms (2012)</li>
+  <li>Adam Silver: Form Design Patterns (2018)</li>
+  <li><a href="https://www.nngroup.com/articles/form-design-white-space/" class="icon-link">Marieke McCloskey: Form Design Quick Fix: Group Form Elements Effectively Using White Space (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php" class="icon-link">Caroline Jarrett: Don’t Put Labels Inside Text Boxes (Unless You’re Luke W) (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.nngroup.com/articles/form-design-placeholders/" class="icon-link">Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/AES-erstatningssag/aes-5/?r=/komponenter/tekstfelter/tekstfelt/%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a></li>
+  <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r=/komponenter/tekstfelter/tekstfelt/%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a></li>
+  <li><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/?r=/komponenter/tekstfelter/tekstfelt/%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a></li>
+</ul>
+
+<h2 id="fejlmeddelelse">Fejlmeddelelse</h2>
+
+<p><a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
+
+<p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.</p>
+
+<h2 id="hjaelpetekst">Hjælpetekst</h2>
+
+<div class="component-preview  component-preview-text-input-helptext" aria-label="Eksempel på tekstfelt med hjælpetekst">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group">
+
+    <label class="form-label" for="input-type-help-text">
+        Inputfelt med label og hjælpetekst
+    </label>
+    <span class="form-hint" id="input-type-help-text-hint">
+        Fx 12345678
+    </span>
+    <input class="form-input" id="input-type-help-text" name="input-type-help-text" type="text" aria-describedby="input-type-help-text-hint" required="" />
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/tekstfelter/#felt-med-hjaelpetekst" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-input-helptext</span></a>
+    </div>
+    
+</div>
+
+<div class=" component-preview-text-input-helptext-dos-donts" aria-label="Felt med hjælpetekst do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Hjaelpetekster-do.svg" alt="Eksempel på, hvordan hjælpetekster kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Placér indlejret hjælpetekst sammen med labelen (Sherwin, 2014-2018). På grund af menneskets svage perifere syn, kan brugerne kun se skarpt i en diameter på 2-4 cm ved en computerskærm (Johnson, 2014, s. 54). Hvis hjælpeteksten ikke står tæt på labelen, vil brugerne derfor måske ikke opdage den.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Hjaelpetekster-dont.svg" alt="Eksempel på, hvordan hjælpetekster ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undlad at placere hjælpetekster under felter, hvor de er svære at få øje på. Undgå også at placere dem inde i indtastningsfelterne, hvor de forsvinder, når brugerne begynder at taste (Sherwin, 2014-2018).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.nngroup.com/articles/form-design-placeholders/" class="icon-link">Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li>Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)</li>
+</ul>
+
+<h2 id="obligatoriske-og-frivillige-felter">Obligatoriske og frivillige felter</h2>
+
+<p>Undgå frivillige felter så vidt muligt. Hvis et felt er frivilligt, så overvej altid, om det er nødvendigt at have med i formularen.</p>
+
+<p>Hvis en formular indeholder frivillige felter, som vil have en betydelig positiv effekt for brugeren, kan dette forklares i en hjælpetekst. Det kan f.eks. være tilfældet med felter, der forkorter tiden for en sagsbehandling betragteligt, hvis de bliver udfyldt.</p>
+
+<h3>Når der er flest obligatoriske felter</h3>
+
+<p>I de fleste tilfælde bør der være flere obligatoriske end frivillige felter. Marker da de frivillige felter i formularen.</p>
+
+<div class="component-preview  component-preview-text-input-mandatory" aria-label="Eksempel på formular med flest obligatoriske felter">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-mandatory/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input-mandatory</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group">
+
+    <label class="form-label" for="input-mandatory1">
+        Label
+    </label>
+
+    <input class="form-input" id="input-mandatory1" name="input-mandatory1" type="text" required="" />
+</div>
+<div class="form-group">
+
+    <label class="form-label" for="input-optional">
+        Label<span class="weight-normal"> (frivilligt)</span>
+    </label>
+
+    <input class="form-input" id="input-optional" name="input-optional" type="text" />
+</div>
+<div class="form-group">
+
+    <label class="form-label" for="input-mandatory2">
+        Label
+    </label>
+
+    <input class="form-input" id="input-mandatory2" name="input-mandatory2" type="text" required="" />
+</div>
+<div class="form-group">
+
+    <label class="form-label" for="input-mandatory3">
+        Label
+    </label>
+
+    <input class="form-input" id="input-mandatory3" name="input-mandatory3" type="text" required="" />
+</div>
+        
+    </div>
+    
+</div>
+
+<h3>Når der er flest frivillige felter</h3>
+
+<p>Hvis en formular indeholder flere frivillige end obligatoriske felter, fremhæves de obligatoriske felter i stedet for de frivillige.</p>
+
+<div class="component-preview  component-preview-text-input-optional" aria-label="Eksempel på formular med flest frivillige felter">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-optional/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input-optional</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group">
+
+    <label class="form-label" for="input-optional1">
+        Label
+    </label>
+
+    <input class="form-input" id="input-optional1" name="input-optional1" type="text" />
+</div>
+<div class="form-group">
+
+    <label class="form-label" for="input-mandatory">
+        Label<span class="weight-normal"> (*skal udfyldes)</span>
+    </label>
+
+    <input class="form-input" id="input-mandatory" name="input-mandatory" type="text" required="" />
+</div>
+<div class="form-group">
+
+    <label class="form-label" for="input-optional2">
+        Label
+    </label>
+
+    <input class="form-input" id="input-optional2" name="input-optional2" type="text" />
+</div>
+<div class="form-group">
+
+    <label class="form-label" for="input-optional3">
+        Label
+    </label>
+
+    <input class="form-input" id="input-optional3" name="input-optional3" type="text" />
+</div>
+        
+    </div>
+    
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
+  <li>Caroline Jarrett &amp; Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)</li>
+</ul>
+
+<h2 id="read-only">Read-only</h2>
+
+<div class="component-preview  component-preview-text-input-readonly" aria-label="Eksempel på readonly tekstfelt">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group">
+
+    <label class="form-label" for="input-readonly">
+        Inputfelt som er readonly
+    </label>
+
+    <input class="form-input" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/felter/#read-only-felt" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-input-readonly</span></a>
+    </div>
+    
+</div>
+
+<h2 id="deaktiveret">Deaktiveret</h2>
+
+<div class="component-preview  component-preview-text-input-disabled" aria-label="Eksempel på deaktiveret tekstfelt">
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
@@ -3551,21 +4685,386 @@
         Inputfelt som er låst
     </label>
 
-    <input class="form-input" id="input-disabled" name="input-disabled"
-        type="text" disabled="disabled" />
+    <input class="form-input" id="input-disabled" name="input-disabled" type="text" disabled="disabled" />
 </div>
         
     </div>
     
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/felter/#read-only-felt" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-input-disabled</span></a>
+    </div>
+    
 </div>
 
+<p>Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af <a href="#read-only">read-only</a>.</p>
+
+<h2 id="prefix-og-suffix">Prefix og suffix</h2>
+<p>Prefix og suffix kan bruges til at tydeliggøre, hvordan brugeren skal angive bestemte data såsom beløb, antal m.m.</p>
+
+<p>Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyldes, eftersom det ikke læses højt af skærmlæsere. Feltets label eller en hjælpetekst kan bruges til også at indikere dette.</p>
+
+<div class="component-preview  component-preview-text-input-prefix-suffix" aria-label="Eksempel på felter med prefix og suffix">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group">
+
+    <label class="form-label" for="input-antal">
+        Antal
+    </label>
+
+    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-8" id="input-antal" value="56" name="input-antal" type="number" required="" />
+        <div class="form-input-suffix" aria-hidden="true">stk.</div>
+    </div>
+</div>
+<div class="form-group">
+
+    <label class="form-label" for="input-pris">
+        Pris i 1000 kr.
+    </label>
+
+    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-11" id="input-pris" value="123" name="input-pris" type="number" required="" />
+        <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
+    </div>
+</div>
+<div class="form-group">
+
+    <label class="form-label" for="input-beloeb">
+        Beløb i €
+    </label>
+
+    <div class="form-input-wrapper form-input-wrapper--prefix">
+        <div class="form-input-prefix" aria-hidden="true">€</div><input class="form-input input-width-xs" id="input-beloeb" value="1.234" name="input-beloeb" type="number" required="" />
+    </div>
+</div>
+<div class="form-group form-error">
+
+    <label class="form-label" for="input-pris-error">
+        Pris i 1000 kr.
+    </label>
+
+    <span class="form-error-message" id="input-pris-error-error">
+        <span class="sr-only">Fejl:</span> Angiv en pris
+    </span>
+    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-11" id="input-pris-error" name="input-pris" type="number" aria-invalid="true" aria-describedby=" input-pris-error-error" required="" />
+        <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
+    </div>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/tekstfelter/#prefix-og-suffix" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-input-prefix-suffix</span></a>
+    </div>
+    
+</div>
+
+<h2 id="feltbredde">Feltbredde</h2>
+
+<div class="component-preview  component-preview-text-input-width" aria-label="Eksempel på felter med forskellig bredde">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <fieldset>
+    <legend class="h4">Input bredde med rem</legend>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-xxs">
+            Inputfelt med klassen input-width-xxs (8rem)
+        </label>
+
+        <input class="form-input input-width-xxs" id="input-type-text-xxs" name="input-type-text-xxs" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-xs">
+            Inputfelt med klassen input-width-xs (16rem)
+        </label>
+
+        <input class="form-input input-width-xs" id="input-type-text-xs" name="input-type-text-xs" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-s">
+            Inputfelt med klassen input-width-s (24rem)
+        </label>
+
+        <input class="form-input input-width-s" id="input-type-text-s" name="input-type-text-s" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-m">
+            Inputfelt med klassen input-width-m (32rem)
+        </label>
+
+        <input class="form-input input-width-m" id="input-type-text-m" name="input-type-text-m" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-l">
+            Inputfelt med klassen input-width-l (40rem)
+        </label>
+
+        <input class="form-input input-width-l" id="input-type-text-l" name="input-type-text-l" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-xl">
+            Inputfelt med klassen input-width-xl (48rem)
+        </label>
+
+        <input class="form-input input-width-xl" id="input-type-text-xl" name="input-type-text-xl" type="text" required="" />
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend class="h4 mt-7">Input bredde med tegn</legend>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-char-4">
+            Inputfelt med klassen input-char-4 (4 tegn)
+        </label>
+
+        <input class="form-input input-char-4" id="input-type-text-char-4" name="input-type-text-char-4" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-char-8">
+            Inputfelt med klassen input-char-8 (8 tegn)
+        </label>
+
+        <input class="form-input input-char-8" id="input-type-text-char-8" name="input-type-text-char-8" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-char-11">
+            Inputfelt med klassen input-char-11 (11 tegn)
+        </label>
+
+        <input class="form-input input-char-11" id="input-type-text-char-11" name="input-type-text-char-11" type="text" required="" />
+    </div>
+
+    <div class="form-group">
+
+        <label class="form-label" for="input-type-text-char-27">
+            Inputfelt med klassen input-char-27 (27 tegn)
+        </label>
+
+        <input class="form-input input-char-27" id="input-type-text-char-27" name="input-type-text-char-27" type="text" required="" />
+    </div>
+
+</fieldset>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/felter/#feltbredde" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-input-width</span></a>
+    </div>
+    
+</div>
+
+<div class=" component-preview-text-input-width-dos-donts" aria-label="Feltbredde do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Feltbredde-do.svg" alt="Eksempel på, hvordan tekstfeltbredde kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Afstem længden af feltet til det, der skal indtastes (Jarrett, 2000). Når et design er intuitivt, signalerer de forskellige elementer, hvordan de skal bruges (Norman, 2013). Et felt til e-mailadresser bør derfor være længere end et felt til telefonnumre. Et felt til postnumre bør være kortere end andre felter (Silver, 2018, s. 81).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Feltbredde-dont.svg" alt="Eksempel på, hvordan tekstfeltbredde ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undgå felter, der er så korte, at brugernes indtastninger ikke kan ses. Det virker, som at afbryde én, der taler. Undgå også felter, der er meget længere end det input, der forventes. For meget plads kan få brugeren til at tro, at han har misforstået spørgsmålet (Jarrett, 2000; Silver, 2018, s. 82).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<ul class="nobullet-list">
+  <li>Adam Silver: Form Design Patterns (2018)</li>
+  <li><a href="https://web.archive.org/web/20120120004811/http://www.formsthatwork.com/files/Articles/DesigningUsableForms.pdf" class="icon-link">Caroline Jarrett: Designing usable forms: the three-layer model of the form (2000)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.designprinciplesftw.com/collections/don-normans-principles-of-design" class="icon-link">Don Norman: Don Normans Principles of Design (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
 
           
+            
+            
+              
 
-          
+              
+              
+              
 
+              
+              
+              
 
+              
+              
+              
 
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+                
+                  
+                
+                  
+                
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+                
+                  
+                    
+                      
+                    
+                    
+                    
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
           
       </section>
     </main>

@@ -16,9 +16,11 @@
 ================================================== -->
   
 
-<title>Read-only felt | Det Fælles Designsystem</title>
-<meta property="og:title" content="Read-only felt | Det Fælles Designsystem">
+<title>Tekstområde (Textarea) | Det Fælles Designsystem</title>
+<meta property="og:title" content="Tekstområde (Textarea) | Det Fælles Designsystem">
 
+<meta name="description" content="Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge.">
+<meta property="og:description" content="Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge.">
 
 
 
@@ -55,7 +57,7 @@
 </noscript>
 
   </head>
-  <body class="page-read-only-felt layout-component">
+  <body class="page-tekstområde-textarea layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="open-in-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></symbol>
@@ -1663,6 +1665,51 @@
     
 
 
+<li class="current  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-komponenter-tekstfelter" aria-expanded="true"  >
+          <span>Tekstfelter</span>
+        </button>
+        <div aria-label="Tekstfelter" class="overflow-menu-inner" id="submenu-level3-komponenter-tekstfelter" aria-hidden="false">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="current  " role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tekstfelter/" role="menuitem" aria-current="true" class="nav-link">
+        Tekstfelter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
 <li class="  has-anchor-links" role="none">
 
   
@@ -1670,7 +1717,7 @@
 
   
     
-    <a href="/komponenter/tekstfelter/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tekstfelter/tekstfelt/" role="menuitem"  class="nav-link">
         Tekstfelter
       </a>
      
@@ -1683,17 +1730,27 @@
     
 
 
-<li class="  " role="none">
+<li class="current active " role="none">
 
   
 
 
   
     
-    <a href="/komponenter/textarea/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tekstfelter/tekstomraade/" role="menuitem" aria-current="page" class="nav-link">
         Tekstområde (Textarea)
       </a>
      
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
     
   
 </li>
@@ -2319,7 +2376,7 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
@@ -3562,6 +3619,641 @@
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         
         
+        <ul class="sidenav-list" role="menu">
+          
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/accordions/" role="menuitem" 
+  class="nav-link">
+  Accordions
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/badges/" role="menuitem" 
+  class="nav-link">
+  Badges
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/beskeder/" role="menuitem" 
+  class="nav-link">
+  Beskeder (Alerts)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/broedkrumme/" role="menuitem" 
+  class="nav-link">
+  Brødkrumme
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/cards/" role="menuitem" 
+  class="nav-link">
+  Cards
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/cookiemeddelelse/" role="menuitem" 
+  class="nav-link">
+  Cookiemeddelelse
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/dato-felt/" role="menuitem" 
+  class="nav-link">
+  Datoangivelse
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/datovaelger/" role="menuitem" 
+  class="nav-link">
+  Datovælger
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/detaljer/" role="menuitem" 
+  class="nav-link">
+  Detaljer
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/dropdown/" role="menuitem" 
+  class="nav-link">
+  Dropdown
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/faneblade/" role="menuitem" 
+  class="nav-link">
+  Faneblade (Tabs)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/fejlangivelse/" role="menuitem" 
+  class="nav-link">
+  Fejlangivelse
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/footer/" role="menuitem" 
+  class="nav-link">
+  Footer
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/funktionslink/" role="menuitem" 
+  class="nav-link">
+  Funktionslink
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/header/" role="menuitem" 
+  class="nav-link">
+  Header
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/knapper/" role="menuitem" 
+  class="nav-link">
+  Knapper (Buttons)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/modal/" role="menuitem" 
+  class="nav-link">
+  Modal
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/overflowmenu/" role="menuitem" 
+  class="nav-link">
+  Overflow menu
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/paginering/" role="menuitem" 
+  class="nav-link">
+  Paginering
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/radioknap/" role="menuitem" 
+  class="nav-link">
+  Radioknap (Radio button)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/skip-link/" role="menuitem" 
+  class="nav-link">
+  Gå til sidens indhold (Skip link)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/spinner/" role="menuitem" 
+  class="nav-link">
+  Loading spinner
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/sprogvaegler/" role="menuitem" 
+  class="nav-link">
+  Sprogvælger
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/strukturerede-lister/" role="menuitem" 
+  class="nav-link">
+  Strukturerede lister
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/search/" role="menuitem" 
+  class="nav-link">
+  Søgefelt
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/tilbage-link/" role="menuitem" 
+  class="nav-link">
+  Tilbage link
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tables/" role="menuitem" 
+  class="nav-link">
+  Tabeller
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tags/" role="menuitem" 
+  class="nav-link">
+  Tags
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="current  " role="none">
+
+
+  
+
+<a href="/komponenter/tekstfelter/" role="menuitem" aria-current="true"
+  class="nav-link">
+  Tekstfelter
+</a>
+
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+    
+
+    
+
+    <ul class="sidenav-sub_list" role="menu">
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tekstfelter/tekstfelt/" role="menuitem" 
+  class="nav-link">
+  Tekstfelter
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="current active " role="none">
+
+
+  
+
+<a href="/komponenter/tekstfelter/tekstomraade/" role="menuitem" aria-current="page"
+  class="nav-link">
+  Tekstområde (Textarea)
+</a>
+
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+  
+
+</li>
+
+    
+
+</ul>
+    
+  
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tjekboks/" role="menuitem" 
+  class="nav-link">
+  Tjekboks (Checkbox)
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/toastbesked/" role="menuitem" 
+  class="nav-link">
+  Toastbesked
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/toggle/" role="menuitem" 
+  class="nav-link">
+  Toggle switch
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/tooltip/" role="menuitem" 
+  class="nav-link">
+  Tooltip
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/trinindikator/" role="menuitem" 
+  class="nav-link">
+  Trinindikator
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  " role="none">
+
+
+  
+
+<a href="/komponenter/fil-upload/" role="menuitem" 
+  class="nav-link">
+  Vedhæft fil
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/komponenter/venstremenu/" role="menuitem" 
+  class="nav-link">
+  Venstremenu
+</a>
+
+</li>
+
+    
+
+
+        </ul>
+        
       </nav>
     </aside>
 
@@ -3575,14 +4267,14 @@
         </div>
     </div>
 
-      <section id="section-/komponenter/tekstfelter/tekstfelt-readonly">
+      <section id="section-/komponenter/tekstfelter/textarea">
           
           
 
           <div class="subheading">
-            
+            Komponenter
           </div>
-          <h1 id="read-only-felt">Read-only felt</h1>
+          <h1 id="tekstområde-textarea">Tekstområde (Textarea)</h1>
           
           
 
@@ -3590,26 +4282,28 @@
 
           
           
-<div class="component-preview  component-preview-text-input-readonly" aria-label="Eksempel på readonly tekstfelt">
+<div class="component-preview  component-preview-text-area" aria-label="Eksempel på tekstområde">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/text-input-readonly/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input-readonly</span></a>
+        <a href="/eksempel/text-area/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-area</span></a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
-
-    <label class="form-label" for="input-readonly">
-        Inputfelt som er readonly
+    <label class="form-label" for="input-area">
+        Tekstområde med label
     </label>
 
-    <input class="form-input" id="input-readonly" value="012345-6789"
-        name="input-readonly" type="text" readonly />
+    <textarea class="form-input " rows="5" id="input-area" name="input-area" ></textarea>
 </div>
         
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/textarea/" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-area</span></a>
     </div>
     
 </div>
@@ -3617,10 +4311,226 @@
 
           
 
+          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+
+<p>Brug tekstområder til sammenhængende (mere end 2 linjer) men ustruktureret tekst og sætninger, der har karakter af prosa. Fx en baggrundsfortælling.</p>
+
+<p>Anvendes når der er behov for yderligere sammenhængende information, hvis karakter brugeren ikke kan vælge ud fra et prædefineret sæt værdier.</p>
+
+<p>Anvendes når løsningen stiller et spørgsmål, der ikke kan besvares i et felt.</p>
+
+<h2 class="h3">Anvendes ikke til</h2>
+
+<p>Brug ikke tekstområder til struktureret information, hvor datakonsistens har betydning.</p>
+
+<h2 class="h3">Vejledning</h2>
+
+<p>Angiv tekstområdets højde, så det modsvarer den tekstmængde, du forventer, at brugeren skal indtaste.</p>
+
+<p>Overvej at begrænse antallet af tegn, hvis det giver mening.</p>
+
+<p>Vis kun fejlmeddelelser, når brugeren har indtastet en ugyldig værdi.</p>
+
+<p>Fejlmeddelelser skal være meningsfulde og hjælpsomme.</p>
+
+<p>Placér fejlmeddelelser mellem label og felt, og markér feltet med rødt.</p>
+
+<div class=" component-preview-textarea-dos-donts" aria-label="Tekstområde do's and don'ts">
+    <div class="component-example" aria-label="Eksempel">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Sådan (do)</h3>
+        <div><img src="/assets/img/components/Tekstomraade-do.svg" alt="Eksempel på, hvordan et tekstområde kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Tilpas højde og bredde af tekstområdet, så brugerne komfortabelt kan indtaste kommentarer eller redegøre for handlingsforløb. Teksten skal ombryde, så enkeltord ikke bliver delt (ISO, 2012, afsnit 9.1.3). Lad områdets størrelse indikere mængden af indhold, der forventeligt skal skrives i tekstområdet.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h3 class="h4">Ikke sådan (don't)</h3>
+        <div><img src="/assets/img/components/Tekstomraade-dont.svg" alt="Eksempel på, hvordan et tekstområde ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Gør ikke tekstområder så små, at brugerne bliver nødt til at scrolle for at kontrollere almindelige mængder tekst. Undgå helt horisontal scroll.</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h3 class="h4">Referencer</h3>
+
+<p>ISO 9241-143: Forms (2012)</p>
+
+<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/?r=/komponenter/tekstfelter/tekstomraade/%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a></li>
+</ul>
+
+
           
+            
+            
+              
 
+              
+              
+              
 
+              
+              
+              
 
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+                
+                  
+                
+                  
+                
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+                
+                  
+                
+                  
+                    
+                      
+                    
+                    
+                    
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
+              
+
+              
+              
           
       </section>
     </main>

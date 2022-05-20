@@ -1665,7 +1665,28 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-komponenter-tekstfelter" aria-expanded="false"  >
+          <span>Tekstfelter</span>
+        </button>
+        <div aria-label="Tekstfelter" class="overflow-menu-inner" id="submenu-level3-komponenter-tekstfelter" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
 
   
 
@@ -1673,6 +1694,30 @@
   
     
     <a href="/komponenter/tekstfelter/" role="menuitem"  class="nav-link">
+        Tekstfelter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tekstfelter/tekstfelt/" role="menuitem"  class="nav-link">
         Tekstfelter
       </a>
      
@@ -1692,10 +1737,20 @@
 
   
     
-    <a href="/komponenter/textarea/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tekstfelter/tekstomraade/" role="menuitem"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
     
   
 </li>
@@ -2321,7 +2376,7 @@
     
 
 
-<li class="current active has-anchor-links" role="none">
+<li class="current active " role="none">
 
   
 
@@ -3700,7 +3755,7 @@
 
     
 
-<li class="current active has-anchor-links" role="none">
+<li class="current active " role="none">
 
 
   
@@ -3717,17 +3772,6 @@
 
     
 
-    <ul class="sidenav-sub_list" role="menu">
-    
-
-
-<li class=" " role="none">
-<a href="#fejlmeddelelse"  role="menuitem">Fejlmeddelelse</a>
-</li>
-
-    
-
-</ul>
     
   
 
@@ -4409,11 +4453,6 @@
           <h1 id="datoangivelse">Datoangivelse</h1>
           
           
-          <ul class="d-lg-none nobullet-list">
-          <li><a href="#fejlmeddelelse">Fejlmeddelelse</a></li>
-          
-          </ul>
-          
 
           
 
@@ -4536,67 +4575,6 @@ Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new InputRegexMask(document.getElementById(&#39;DAY-INPUT-ID&#39;));
 new InputRegexMask(document.getElementById(&#39;MONTH-INPUT-ID&#39;));
 new InputRegexMask(document.getElementById(&#39;YEAR-INPUT-ID&#39;));</code></pre></figure>
-
-<h2>Varianter</h2>
-
-<h3 id="fejlmeddelelse">Fejlmeddelelse</h3>
-
-<div class="component-preview component-preview-code  component-code-date-input-error" aria-label="">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/date-input-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: date-input-error</span></a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group  form-error  &quot;&gt;
-    &lt;fieldset
-        aria-describedby=&quot;example-date-field-hint2 example-date-field-error2&quot;&gt;
-        &lt;legend class=&quot;form-label&quot;&gt;Datoangivelse med fejl&lt;/legend&gt;
-        &lt;span class=&quot;form-hint&quot; id=&quot;example-date-field-hint2&quot;&gt;For eksempel:
-            05 12 2018&lt;/span&gt;
-        &lt;span class=&quot;form-error-message &quot;
-            id=&quot;example-date-field-error2&quot;&gt;&lt;span
-                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Indtast en måned i tal mellem
-            1 og 12&lt;/span&gt;
-        &lt;div class=&quot;date-group js-calendar-group mt-3&quot;&gt;
-            &lt;div class=&quot;form-group form-group-day&quot;&gt;
-                &lt;label class=&quot;form-label&quot; for=&quot;date-day2&quot;&gt;Dag&lt;/label&gt;
-                &lt;input class=&quot;form-input js-calendar-day-input&quot;
-                    id=&quot;date-day2&quot; value=&quot;01&quot; type=&quot;tel&quot; data-min=&quot;1&quot;
-                    data-max=&quot;31&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
-                    data-input-regex=&quot;^[0-9]{0,2}$&quot;
-                    title=&quot;Indskriv dag på måneden som tal&quot;
-                    aria-describedby=&quot;example-date-field-hint2&quot; /&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;form-group form-group-month&quot;&gt;
-                &lt;label class=&quot;form-label&quot; for=&quot;date-month2&quot;&gt;Måned&lt;/label&gt;
-                &lt;input class=&quot;form-input js-calendar-month-input&quot;
-                    id=&quot;date-month2&quot; value=&quot;20&quot; type=&quot;tel&quot; data-min=&quot;1&quot;
-                    data-max=&quot;12&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
-                    data-input-regex=&quot;^[0-9]{0,2}$&quot;
-                    title=&quot;Indskriv månedens nummer&quot;
-                    aria-describedby=&quot;example-date-field-hint2&quot; /&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;form-group form-group-year &quot;&gt;
-                &lt;label class=&quot;form-label&quot; for=&quot;date-year2&quot;&gt;År&lt;/label&gt;
-                &lt;input class=&quot;form-input js-calendar-year-input&quot;
-                    id=&quot;date-year2&quot; value=&quot;2030&quot; type=&quot;tel&quot; data-min=&quot;1900&quot;
-                    data-max=&quot;3000&quot; maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;
-                    data-input-regex=&quot;^[0-9]{0,4}$&quot; title=&quot;Indskriv årstal&quot;
-                    aria-describedby=&quot;example-date-field-hint2&quot; /&gt;
-            &lt;/div&gt;
-
-        &lt;/div&gt;
-    &lt;/fieldset&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
 
 
           

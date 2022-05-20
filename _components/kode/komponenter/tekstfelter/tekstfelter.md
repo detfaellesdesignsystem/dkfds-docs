@@ -12,14 +12,14 @@ subcategory: Kode
 description: "Dokumentation på implementering af tekstfelter."
 anchor: true
 subnav:
-- text: Felt med frivillig indtastning
-  href: "#felt-med-frivillig-indtastning"
-- text: Felt med hjælpetekst
-  href: "#felt-med-hjaelpetekst"
-- text: Deaktiveret felt
-  href: "#deaktiveret-felt"
-- text: Read-only felt
-  href: "#read-only-felt"
+- text: Hjælpetekst
+  href: "#hjaelpetekst"
+- text: Obligatoriske og frivillige felter
+  href: "#obligatoriske-og-frivillige-felter"
+- text: Read-only
+  href: "#read-only"
+- text: Deaktiveret
+  href: "#deaktiveret"
 - text: Prefix og suffix
   href: "#prefix-og-suffix"
 - text: Feltbredde
@@ -30,8 +30,8 @@ subnav:
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/tekstfelter/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tekstfelter/">Eksempler</a></li>
+    <li><a href="/komponenter/tekstfelter/tekstfelt/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/tekstfelter/tekstfelt/">Eksempler</a></li>
 </ul>
 
 ## Installation
@@ -42,33 +42,34 @@ subnav:
 
 ## Varianter
 
-{:#felt-med-frivillig-indtastning}
-### Felt med frivillig indtastning
 
-{% include code/syntax.html component="text-input-optional" link="true" %}
-
-De fleste felter i en selvbetjeningsløsning er påkrævet, så for at undgå mange af de standard røde stjerner ved hvert felt har vi i stedet valgt at skrive (frivilligt) ved de felter, som ikke er påkrævede.
-
-{:#felt-med-hjaelpetekst}
-### Felt med hjælpetekst
+{:#hjaelpetekst}
+### Hjælpetekst
 
 {% include code/syntax.html component="text-input-helptext" link="true" %}
 
-{:#deaktiveret-felt}
-### Deaktiveret felt
+{:#obligatoriske-og-frivillige-felter}
+### Obligatoriske og frivillige felter
 
-{% include code/syntax.html component="text-input-disabled" link="true" %}
+{% include code/syntax.html component="text-input-optional" link="true" %}
 
-{:#read-only-felt}
-### Read-only felt
+Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede. <a href="/komponenter/tekstfelter/tekstfelt/#obligatoriske-og-frivillige-felter">Se eksempler på frivillige og obligatoriske felter</a>.
+
+
+{:#read-only}
+### Read-only
 
 {% include code/syntax.html component="text-input-readonly" link="true" %}
+
+{:#deaktiveret}
+### Deaktiveret
+
+{% include code/syntax.html component="text-input-disabled" link="true" %}
 
 {:#prefix-og-suffix}
 ### Prefix og suffix
 
 {% include code/syntax.html component="text-input-prefix-suffix" link="true" %}
-
 
 {:#feltbredde}
 ### Feltbredde

@@ -1,5 +1,8 @@
 ---
-permalink: /komponenter/textarea/
+permalink: /komponenter/tekstfelter/tekstomraade/
+parentlink: /komponenter/tekstfelter/
+redirect_from:
+- /komponenter/textarea/
 layout: styleguide
 type: component
 title: Tekstområde (Textarea)

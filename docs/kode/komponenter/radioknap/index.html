@@ -1665,7 +1665,28 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+      
+      
+
+      
+      <div class="overflow-menu">
+        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-komponenter-tekstfelter" aria-expanded="false"  >
+          <span>Tekstfelter</span>
+        </button>
+        <div aria-label="Tekstfelter" class="overflow-menu-inner" id="submenu-level3-komponenter-tekstfelter" aria-hidden="true">
+          <ul class="overflow-list" role="menu">
+            
+
+
+<li class="  " role="none">
 
   
 
@@ -1673,6 +1694,30 @@
   
     
     <a href="/komponenter/tekstfelter/" role="menuitem"  class="nav-link">
+        Tekstfelter<span class="helptext"> (overblik)</span>
+      </a>
+     
+    
+  
+</li>
+            
+          
+
+
+
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
+    <a href="/komponenter/tekstfelter/tekstfelt/" role="menuitem"  class="nav-link">
         Tekstfelter
       </a>
      
@@ -1692,10 +1737,20 @@
 
   
     
-    <a href="/komponenter/textarea/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tekstfelter/tekstomraade/" role="menuitem"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
+    
+  
+</li>
+    
+
+
+          </ul>
+        </div>
+      </div>  
+
     
   
 </li>
@@ -2321,7 +2376,7 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
@@ -3700,7 +3755,7 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
 
   
@@ -3947,15 +4002,6 @@
 
 <li class=" " role="none">
 <a href="#hjaelpetekst"  role="menuitem">Hjælpetekst</a>
-</li>
-
-    
-
-    
-
-
-<li class=" " role="none">
-<a href="#fejlmeddelelse"  role="menuitem">Fejlmeddelelse</a>
 </li>
 
     
@@ -4438,7 +4484,6 @@
           
           <ul class="d-lg-none nobullet-list">
           <li><a href="#hjaelpetekst">Hjælpetekst</a></li>
-          <li><a href="#fejlmeddelelse">Fejlmeddelelse</a></li>
           <li><a href="#lille-radioknap">Lille radioknap</a></li>
           <li><a href="#skjult-indhold">Skjult indhold (Collapse)</a></li>
           
@@ -4582,61 +4627,6 @@
                     &lt;span class=&quot;form-hint&quot;
                         id=&quot;helptext-radio-helptext-2&quot;&gt;Dette er en
                         hjælpetekst&lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/fieldset&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
-<h3 id="fejlmeddelelse">Radioknap med fejlmeddelelse</h3>
-
-<div class="component-preview component-preview-code  component-code-radiobutton-error" aria-label="">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/radiobutton-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: radiobutton-error</span></a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;fieldset aria-describedby=&quot;example-radiobutton-error&quot;&gt;
-        &lt;legend class=&quot;form-label&quot;&gt;Radioknap med fejl&lt;/legend&gt;
-        &lt;span class=&quot;form-error-message&quot;
-            id=&quot;example-radiobutton-error&quot;&gt;&lt;span
-                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Hjælpsom fejlmeddelelse&lt;/span&gt;
-        &lt;ul class=&quot;nobullet-list&quot;&gt;
-            &lt;li&gt;
-                &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;weekly&quot; type=&quot;radio&quot; name=&quot;often-pay&quot;
-                        value=&quot;weekly&quot; class=&quot;form-radio radio-large &quot; /&gt;
-                    &lt;label for=&quot;weekly&quot; id=&quot;form-label-weekly&quot;
-                        class=&quot;&quot;&gt;Ugentligt &lt;/label&gt;
-
-                &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;fortnightly&quot; type=&quot;radio&quot; name=&quot;often-pay&quot;
-                        value=&quot;fortnightly&quot;
-                        class=&quot;form-radio radio-large &quot; /&gt;
-                    &lt;label for=&quot;fortnightly&quot; id=&quot;form-label-fortnightly&quot;
-                        class=&quot;&quot;&gt;Hver fjortende dag &lt;/label&gt;
-
-                &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;monthly&quot; type=&quot;radio&quot; name=&quot;often-pay&quot;
-                        value=&quot;monthly&quot; class=&quot;form-radio radio-large &quot; /&gt;
-                    &lt;label for=&quot;monthly&quot; id=&quot;form-label-monthly&quot;
-                        class=&quot;&quot;&gt;Månedligt &lt;/label&gt;
-
                 &lt;/div&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
