@@ -23,12 +23,6 @@ tags:
 - fejlmedelelser
 - fejlmeddellelser
 - fejlmedellelser
-lead:
-anchor: true
-subnav:
-- text: Eksempler på fejlmeddelelser
-  href: "#eksempler"
-
 ---
 {% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" link="true" code="/kode/komponenter/fejlmeddelelser/" %}
 
@@ -128,40 +122,43 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 {:.nobullet-list}
 - <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
 
-{:#eksempler}
-## Eksempler på fejlmeddelelser
 
-{:.h4}
-### Navn
-
-{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" link="true" %}
-
-{:.h4}
-### Personnummer
-
-{% include code/preview-box.html component="error-message-personnummer" title="Eksempel på tekstfelt med tal og fejlmeddelelse" link="true" %}
-
-{:.h4}
-### Postnummer
-
-{% include code/preview-box.html component="error-message-postnummer" title="Eksempel på talfelt med fejlmeddelelse" link="true" %}
-
-{:.h4}
-### Tjekbokse
-
-{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" link="true" %}
-
-{:.h4}
-### Radioknapper
-
-{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link="true" %}
-
-{:.h4}
-### Dato
+{:.h3}
+## Datoangivelse
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datoangivelse med fejlmeddelelse" link="true" %}
 
-{:.h4}
-### Vedhæft fil
+{:.h3}
+## Datovælger
+
+{% include code/preview-box.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" link="true" %}
+
+{:.h3}
+## Dropdown
+
+{% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" link="true" %}
+
+{:.h3}
+## Radioknapper
+
+{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link="true" %}
+
+{:.h3}
+## Tekstfelt
+
+{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" link="true" %}
+
+{:.h3}
+## Tekstområde
+
+{% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" link="true" %}
+
+{:.h3}
+## Tjekboks
+
+{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" link="true" %}
+
+{:.h3}
+## Vedhæft fil
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}

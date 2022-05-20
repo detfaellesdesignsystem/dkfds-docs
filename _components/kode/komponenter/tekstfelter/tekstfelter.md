@@ -12,8 +12,6 @@ subcategory: Kode
 description: "Dokumentation på implementering af tekstfelter."
 anchor: true
 subnav:
-- text: Felt med fejlmeddelelse
-  href: "#felt-med-fejlmeddelelse"
 - text: Felt med frivillig indtastning
   href: "#felt-med-frivillig-indtastning"
 - text: Felt med hjælpetekst
@@ -43,19 +41,6 @@ subnav:
 {% include code/syntax.html component="text-input" %}
 
 ## Varianter
-
-{:#felt-med-fejlmeddelelse}
-### Felt med fejlmeddelelse
-
-{% include code/syntax.html component="text-input-error" link="true" %}
-
-Sørg for at rette i de nødvendige attributter, så værdierne er unikke og refererer til de rette elementer:
-
-- `for`
-- `id`
-- `name`
-- `aria-labelledby`
-- `aria-describedby`
 
 {:#felt-med-frivillig-indtastning}
 ### Felt med frivillig indtastning

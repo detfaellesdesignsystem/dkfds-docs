@@ -51,5 +51,3 @@ ISO 9241-143: Forms (2012)
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
-
-{% include child-components.html parent='Textarea' %}

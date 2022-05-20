@@ -9,12 +9,22 @@ description: Dokumentation på implementering af fejlmeddelelser.
 subcategory: Kode
 anchor: true
 subnav:
-- text: Tjekboks
-  href: "#tjekboks"
-- text: Radioknap
-  href: "#radioknap"
 - text: Datoangivelse
   href: "#datoangivelse"
+- text: Datovælger
+  href: "#datovaelger"
+- text: Dropdown
+  href: "#dropdown"
+- text: Radioknapper
+  href: "#radioknapper"
+- text: Tekstfelt
+  href: "#tekstfelt"
+- text: Tekstområde
+  href: "#tekstomraade"
+- text: Tjekboks
+  href: "#tjekboks"
+- text: Vedhæft fil
+  href: "#vedhaeft-fil"
 ---
 
 {% include code/preview-box.html component="error-message-name" title="Eksempel på fejlmeddelelser" %}
@@ -37,18 +47,43 @@ Teksten er skjult i et `<span>` element med klassen `sr-only`.
 Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlopsummeringen</a> øverst på siden.
 
 ## Varianter
+ 
+{:.h3 #datoangivelse}
+## Datoangivelse
 
-{:#tjekboks}
-### Tjekboks
+{% include code/syntax.html component="error-message-date" title="Eksempel på datoangivelse med fejlmeddelelse" link="true" %}
 
-{% include code/syntax.html component="error-message-checkbox" link="true" %}
+{:.h3 #datovaelger}
+## Datovælger
 
-{:#radioknap}
-### Radioknap
+{% include code/syntax.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" link="true" %}
 
-{% include code/syntax.html component="error-message-radio" link="true" %}
+{:.h3 #dropdown}
+## Dropdown
 
-{:#datoangivelse}
-### Datoangivelse
+{% include code/syntax.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" link="true" %}
 
-{% include code/syntax.html component="error-message-date" link="true" %}
+{:.h3 #radioknapper}
+## Radioknapper
+
+{% include code/syntax.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link="true" %}
+
+{:.h3 #tekstfelt}
+## Tekstfelt
+
+{% include code/syntax.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" link="true" %}
+
+{:.h3 #tekstomraade}
+## Tekstområde
+
+{% include code/syntax.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" link="true" %}
+
+{:.h3 #tjekboks}
+## Tjekboks
+
+{% include code/syntax.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" link="true" %}
+
+{:.h3 #vedhaeft-fil}
+## Vedhæft fil
+
+{% include code/syntax.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}

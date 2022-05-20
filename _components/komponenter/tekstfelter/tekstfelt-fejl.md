@@ -2,6 +2,8 @@
 title: Felt med fejlmeddelelse
 parent: Text-field
 order: 20
-component: text-input-error
-componentTitle: Eksempel på tekstfelt med fejlmeddelelse
 ---
+
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.

@@ -1148,7 +1148,7 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
@@ -1293,7 +1293,7 @@
     
 
 
-<li class="current active has-anchor-links" role="none">
+<li class="current active " role="none">
 
   
 
@@ -3662,7 +3662,7 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
 
   
@@ -3762,7 +3762,7 @@
     <ul class="sidenav-sub_list" role="menu">
     
 
-<li class="current active has-anchor-links" role="none">
+<li class="current active " role="none">
 
 
   
@@ -3779,17 +3779,6 @@
 
     
 
-    <ul class="sidenav-sub_list" role="menu">
-    
-
-
-<li class=" " role="none">
-<a href="#eksempler"  role="menuitem">Eksempler på fejlmeddelelser</a>
-</li>
-
-    
-
-</ul>
     
   
 
@@ -4247,11 +4236,6 @@
           <h1 id="fejlmeddelelser">Fejlmeddelelser</h1>
           
           
-          <ul class="d-lg-none nobullet-list">
-          <li><a href="#eksempler">Eksempler på fejlmeddelelser</a></li>
-          
-          </ul>
-          
 
           
 
@@ -4402,126 +4386,40 @@
   <li><a href="/pages/eksempler/vedhaeft-fil/fil-3/?r=/komponenter/fejlangivelse/fejlmeddelelser/%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a></li>
 </ul>
 
-<h2 id="eksempler">Eksempler på fejlmeddelelser</h2>
+<h2 class="h3">Datoangivelse</h2>
 
-<h3 class="h4">Navn</h3>
-
-<div class="component-preview  component-preview-error-message-name" aria-label="Eksempel på tekstfelt med fejlmeddelelse">
+<div class="component-preview  component-preview-error-message-date" aria-label="Eksempel på datoangivelse med fejlmeddelelse">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/error-message-name/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-name</span></a>
+        <a href="/eksempel/error-message-date/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-date</span></a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error">
+        <div class="form-group  form-error  ">
+    <fieldset aria-describedby="example-date-field-hint example-date-field-error">
+        <legend class="form-label">Hvornår blev dit pas udstedt?</legend>
+        <span class="form-hint" id="example-date-field-hint">Fx: 05 12
+            2018</span>
+        <span class="form-error-message " id="example-date-field-error"><span class="sr-only">Fejl:</span> Datoen kan ikke være i
+            fremtiden</span>
+        <div class="date-group js-calendar-group mt-3">
+            <div class="form-group form-group-day">
+                <label class="form-label" for="date-day">Dag</label>
+                <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="date-month">Måned</label>
+                <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+            </div>
+            <div class="form-group form-group-year ">
+                <label class="form-label" for="date-year">År</label>
+                <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+            </div>
 
-    <label class="form-label" for="fullname-error-example">
-        Hvad er dit fulde navn?
-    </label>
-
-    <span class="form-error-message" id="fullname-error-example-error">
-        <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
-        for- og efternavne med mellemrum, fx Anders Andersen
-    </span><input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby=" fullname-error-example-error" required="" />
-</div>
-        
-    </div>
-    
-</div>
-
-<h3 class="h4">Personnummer</h3>
-
-<div class="component-preview  component-preview-error-message-personnummer" aria-label="Eksempel på tekstfelt med tal og fejlmeddelelse">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/error-message-personnummer/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-personnummer</span></a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        
-        <div class="form-group form-error">
-
-    <label class="form-label" for="example-cpr">
-        Personnummer
-    </label>
-    <span class="form-hint" id="example-cpr-hint">
-        Fx: 22091908-1654 (ddmmåååå-nnnn)
-    </span>
-    <span class="form-error-message" id="example-cpr-error">
-        <span class="sr-only">Fejl:</span> Indtast dit personnummer i det
-        korrekte format
-    </span><input class="form-input input-char-11" id="example-cpr" value="L-091908-PP65" name="form-error" type="text" aria-invalid="true" aria-describedby="example-cpr-hint example-cpr-error" required="" />
-</div>
-        
-    </div>
-    
-</div>
-
-<h3 class="h4">Postnummer</h3>
-
-<div class="component-preview  component-preview-error-message-postnummer" aria-label="Eksempel på talfelt med fejlmeddelelse">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/error-message-postnummer/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-postnummer</span></a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        
-        <div class="form-group form-error">
-
-    <label class="form-label" for="example-zipcode">
-        Postnummer
-    </label>
-
-    <span class="form-error-message" id="example-zipcode-error">
-        <span class="sr-only">Fejl:</span> Indtast et postnummer med fire
-        tal
-    </span><input class="form-input input-char-4" id="example-zipcode" value="RRYY" name="form-error" type="text" aria-invalid="true" aria-describedby=" example-zipcode-error" required="" />
-</div>
-        
-    </div>
-    
-</div>
-
-<h3 class="h4">Tjekbokse</h3>
-
-<div class="component-preview  component-preview-error-message-checkbox" aria-label="Eksempel på tjekbokse med fejlmeddelelse">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/error-message-checkbox/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-checkbox</span></a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        
-        <div class="form-group form-error">
-    <fieldset aria-describedby="example-nationalitet-error">
-        <legend class="form-label">Hvad er din nationalitet?</legend>
-        <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk, svensk
-            eller anden nationalitet</span>
-        <ul class="nobullet-list">
-            <li>
-                <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox checkbox-large " />
-                <label for="nationalitet1" class="">Dansk</label>
-            </li>
-            <li>
-                <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox checkbox-large " />
-                <label for="nationalitet2" class="">Svensk</label>
-            </li>
-            <li>
-                <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox checkbox-large " />
-                <label for="nationalitet3" class="">Anden
-                    nationalitet</label>
-            </li>
-        </ul>
+        </div>
     </fieldset>
 </div>
         
@@ -4529,7 +4427,75 @@
     
 </div>
 
-<h3 class="h4">Radioknapper</h3>
+<h2 class="h3">Datovælger</h2>
+
+<div class="component-preview  component-preview-date-picker-error" aria-label="Eksempel på datovælger med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/date-picker-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: date-picker-error</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group form-error">
+    <label class="form-label" for="datepicker-example1">
+        Dato for aftale
+    </label>
+
+    <span class="form-error-message" id="datepicker-example1-error">
+        <span class="sr-only">Fejl:</span> Vælg en dato
+    </span>
+
+    <div class="date-picker"><input class="form-input " required="" id="datepicker-example1" value="" name="appointment-date1" type="text" aria-invalid="true" aria-describedby=" " /></div>
+</div>
+        
+    </div>
+    
+</div>
+
+<h2 class="h3">Dropdown</h2>
+
+<div class="component-preview  component-preview-select-error" aria-label="Eksempel på dropdown med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/select-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: select-error</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <form novalidate="" class="form mb-7 input-width-m">
+
+    <div class="form-group form-error">
+        <label class="form-label" for="options">
+            Dropdown label (select)
+        </label>
+
+        <span class="form-error-message" id="options-error">
+            <span class="sr-only">Fejl:</span> Vælg en mulighed
+        </span>
+
+        <select class=" form-select" name="options" id="options">
+
+            <option value="option1">Mulighed 1</option>
+
+            <option value="option2">Mulighed 2</option>
+
+            <option value="option3">Mulighed 3</option>
+
+        </select>
+    </div>
+
+</form>
+        
+    </div>
+    
+</div>
+
+<h2 class="h3">Radioknapper</h2>
 
 <div class="component-preview  component-preview-error-message-radio" aria-label="Eksempel på radioknapper med fejlmeddelelse">
     
@@ -4576,40 +4542,94 @@
     
 </div>
 
-<h3 class="h4">Dato</h3>
+<h2 class="h3">Tekstfelt</h2>
 
-<div class="component-preview  component-preview-error-message-date" aria-label="Eksempel på datoangivelse med fejlmeddelelse">
+<div class="component-preview  component-preview-error-message-name" aria-label="Eksempel på tekstfelt med fejlmeddelelse">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/error-message-date/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-date</span></a>
+        <a href="/eksempel/error-message-name/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-name</span></a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group  form-error  ">
-    <fieldset aria-describedby="example-date-field-hint example-date-field-error">
-        <legend class="form-label">Hvornår blev dit pas udstedt?</legend>
-        <span class="form-hint" id="example-date-field-hint">Fx: 05 12
-            2018</span>
-        <span class="form-error-message " id="example-date-field-error"><span class="sr-only">Fejl:</span> Datoen kan ikke være i
-            fremtiden</span>
-        <div class="date-group js-calendar-group mt-3">
-            <div class="form-group form-group-day">
-                <label class="form-label" for="date-day">Dag</label>
-                <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
-            </div>
-            <div class="form-group form-group-month">
-                <label class="form-label" for="date-month">Måned</label>
-                <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
-            </div>
-            <div class="form-group form-group-year ">
-                <label class="form-label" for="date-year">År</label>
-                <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
-            </div>
+        <div class="form-group form-error">
 
-        </div>
+    <label class="form-label" for="fullname-error-example">
+        Hvad er dit fulde navn?
+    </label>
+
+    <span class="form-error-message" id="fullname-error-example-error">
+        <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
+        for- og efternavne med mellemrum, fx Anders Andersen
+    </span><input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby=" fullname-error-example-error" required="" />
+</div>
+        
+    </div>
+    
+</div>
+
+<h2 class="h3">Tekstområde</h2>
+
+<div class="component-preview  component-preview-text-area-error" aria-label="Eksempel på tekstområde med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-area-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-area-error</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group form-error">
+    <label class="form-label" for="input-error">
+        Tekstområde med fejlmeddelelse
+    </label>
+
+    <span class="form-error-message" id="input-error-error">
+        <span class="sr-only">Fejl:</span> Hjælpsom fejlmeddelelse
+    </span>
+
+    <textarea class="form-input " rows="5" id="input-error" name="input-error" aria-describedby="form-error-message-input-error "></textarea>
+</div>
+        
+    </div>
+    
+</div>
+
+<h2 class="h3">Tjekboks</h2>
+
+<div class="component-preview  component-preview-error-message-checkbox" aria-label="Eksempel på tjekbokse med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-message-checkbox/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-checkbox</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group form-error">
+    <fieldset aria-describedby="example-nationalitet-error">
+        <legend class="form-label">Hvad er din nationalitet?</legend>
+        <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk, svensk
+            eller anden nationalitet</span>
+        <ul class="nobullet-list">
+            <li>
+                <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox checkbox-large " />
+                <label for="nationalitet1" class="">Dansk</label>
+            </li>
+            <li>
+                <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox checkbox-large " />
+                <label for="nationalitet2" class="">Svensk</label>
+            </li>
+            <li>
+                <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox checkbox-large " />
+                <label for="nationalitet3" class="">Anden
+                    nationalitet</label>
+            </li>
+        </ul>
     </fieldset>
 </div>
         
@@ -4617,7 +4637,7 @@
     
 </div>
 
-<h3 class="h4">Vedhæft fil</h3>
+<h2 class="h3">Vedhæft fil</h2>
 
 <div class="component-preview  component-preview-error-message-file-input" aria-label="Eksempel på felt til vedhæftning af fil med fejlmeddelelse">
     

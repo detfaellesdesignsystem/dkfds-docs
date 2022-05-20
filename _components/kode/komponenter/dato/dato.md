@@ -6,11 +6,7 @@ layout: styleguide
 type: component
 category: Kode_category
 subcategory: Kode
-anchor: true
 description: "Dokumentation på implementering af datofelt."
-subnav:
-- text: Fejlmeddelelse
-  href: '#fejlmeddelelse'
 ---
 
 {% include code/preview-box.html component="date-input" title="Eksempel på dato felt" %}
@@ -47,9 +43,3 @@ new InputRegexMask(document.getElementById('DAY-INPUT-ID'));
 new InputRegexMask(document.getElementById('MONTH-INPUT-ID'));
 new InputRegexMask(document.getElementById('YEAR-INPUT-ID'));
 {% endhighlight %}
-
-## Varianter
-
-{:#fejlmeddelelse}
-### Fejlmeddelelse
-{% include code/syntax.html component="date-input-error" link="true" %}

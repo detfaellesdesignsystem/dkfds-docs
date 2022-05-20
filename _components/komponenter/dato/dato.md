@@ -8,10 +8,6 @@ subcategory: Komponenter
 description: Brug dette datofelt til datoangivelse i en formular.
 tags: 
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
-anchor: true
-subnav:
-- text: Fejlmeddelelse
-  href: "#fejlmeddelelse"
 component: date-input
 componentTitle: Eksempel på datoangivelse
 componentCode: "/kode/komponenter/dato-felt/"
