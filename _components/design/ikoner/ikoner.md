@@ -1,7 +1,7 @@
 ---
 permalink: /design/ikoner/
 redirect_from:
-- /design/ikoner/ikoner-og-deres-betydning
+- /design/ikoner/ikoner-og-deres-betydning/
 layout: styleguide
 title: Ikoner
 category: Design_category
