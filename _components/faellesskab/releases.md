@@ -62,10 +62,11 @@ tags:
 - 8
 - 8.0
 - 8.0.0
+- 8.0.1
 anchor: true
 subnav:
 - text: Version 8.0.1
-  href: "#version-8-0-0"
+  href: "#version-8-0-1"
 - text: Version 8.0.0
   href: "#version-8-0-0"
 - text: Version 7.5.3
