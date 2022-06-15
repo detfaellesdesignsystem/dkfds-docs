@@ -64,6 +64,8 @@ tags:
 - 8.0.0
 anchor: true
 subnav:
+- text: Version 8.0.1
+  href: "#version-8-0-0"
 - text: Version 8.0.0
   href: "#version-8-0-0"
 - text: Version 7.5.3
@@ -111,6 +113,18 @@ Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagu
 ## Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+
+{:#version-8-0-1 .mb-0}
+## Version 8.0.1
+
+<div><span class="small-text mt-0 d-block">16-06-2022</span></div>
+
+- Rettet aria-labels i <a href="/komponenter/datovaelger/">datovælgerens</a> tilbage/frem-knapper.
+- Tilføjet `chevron-double-left` og `chevron-double-right` til <a href="/design/ikoner/">ikoner</a>, der manglede efter version 8.0.0.
+- Opdateret ikonet `arrow-left`, der viste det forkerte ikon, når man indsatte det vha. klassen.
+- Opdateret ikonerne `sort-default` og `sort-table-none`, så de også kan bruges som klasse.
+- Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender <a href="/kode/ikoner/">ikonsamlingen</a>.
+
 
 {:#version-8-0-0 .mb-0}
 ## Version 8.0.0

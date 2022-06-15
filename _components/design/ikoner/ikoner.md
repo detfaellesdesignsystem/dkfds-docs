@@ -169,7 +169,8 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
 <section class="icon-section" id="icon-section-navigation">
   <h2 class="h5 mb-4">Navigation</h2>
   <div class="container">
-    <div class="icon-list row" id="icon-list-navigation"> {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
+    <div class="icon-list row" id="icon-list-navigation"> 
+          {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
           {% include icon.html icon="arrow-right" keywords="right, højre, frem, pil, arrow" label="Frem (højre)" %}
           {% include icon.html icon="menu" keywords="hamburger, menu, burger, burgermenu, burger menu" label="Menu" %}
           {% include icon.html icon="more-vert" keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical" label="Overflow menu (vertikalt)" %}
@@ -184,6 +185,8 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
           {% include icon.html icon="arrow-left" keywords="pil, arrow, back, tilbage" label="Tilbage (venstre)" %}
           {% include icon.html icon="subdirectory-arrow-right" keywords="højre, knækpil, pil, arrow" label="Undermenu højre" %}
           {% include icon.html icon="subdirectory-arrow-left" keywords="venstre, knækpil, pil, arrow" label="Undermenu venstre" %}
+          {% include icon.html icon="chevron-double-left" keywords="venstre, dobbeltpil, pil, arrow" label="Langt tilbage" %}
+          {% include icon.html icon="chevron-double-right" keywords="højre, dobbeltpil, pil, arrow" label="Langt frem" %}
     </div>
   </div>
 </section>
@@ -199,6 +202,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
           {% include icon.html icon="zoom-in" keywords="lup, zoom, zoom ind, ind" label="Forstør" %}
           {% include icon.html icon="fullscreen" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm" label="Fuld skærm" %}
           {% include icon.html icon="remove" keywords="-, minus, luk, accordion, close, collapse" label="Luk accordion (minus)" %}
+          {% include icon.html icon="add" keywords="+, plus, åben, accordion, open, expand" label="Åben accordion (plus)" %}
           {% include icon.html icon="fullscreen-exit" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit" label="Luk fuld skærm" %}
           {% include icon.html icon="sort" keywords="sortering, sort, unsorted" label="Ikke sorteret" %}
           {% include icon.html icon="lock-open" keywords="log off, log af, log ud, log, off, af, ud, exit, lås, lock, hængelås, åben, open" label="Log af (åben hængelås)" %}
