@@ -42,7 +42,7 @@ Da Internet Explorer sætter fokus på svg elementer bør `focusable="false"` ti
 
 ### Ikoner indsat med klasser
 
-Ikoner der indsættes inline med i-tagget får på den måde samme skriftstørrelse. Følgende kode indsætter et 'alert'-ikon: `<i class="icon icon-alert-outline"></i>`
+Ikoner der indsættes inline med i-tagget får på den måde samme skriftstørrelse. Følgende kode indsætter et 'advarsel'-ikon: `<i class="icon icon-report-problem"></i>`
 
 Denne metode har nogle begrænsninger, hvorfor vi anbefaler, at man benytter den anden metode.
         
