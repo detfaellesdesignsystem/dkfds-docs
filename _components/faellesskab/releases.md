@@ -166,6 +166,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændringer i opførelse af <a href="/komponenter/tooltip/">tooltip</a>, for at sikre teksten kan markeres.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/163" class="icon-link">issue #163 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet og ændret SASS variabler for bedre vedligehold og tematisering.
+- Opdateret højden på knapper med ikoner, så de nu har samme højde som knapper uden ikoner.
 
 {:#version-7-5-3 .mb-0}
 ## Version 7.5.3
