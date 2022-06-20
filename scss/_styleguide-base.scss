@@ -68,15 +68,15 @@
       }
     }
     > div:first-of-type .separator {
-      svg{fill: color($theme-color-positive); }
+      svg{fill: color($theme-color-text-positive); }
       div{
-        background-color: color($theme-color-positive);
+        background-color: color($theme-color-text-positive);
       }
     }
     > div:last-of-type .separator{
-      svg{fill: color($theme-color-negative);}
+      svg{fill: color($theme-color-text-negative);}
       div{
-        background-color: color($theme-color-negative);
+        background-color: color($theme-color-text-negative);
       }
     }
   }
@@ -302,10 +302,10 @@
       background-color: $virk-dark;
     }
     &.color-positive {
-      background-color: color($theme-color-positive);
+      background-color: color($theme-color-text-positive);
     }
     &.color-negative {
-      background-color: color($theme-color-negative);
+      background-color: color($theme-color-text-negative);
     }
   }
   .color-container-medium {
@@ -414,11 +414,11 @@
       }
   
       .text-negative {
-        color:color($theme-color-negative);
+        color:color($theme-color-text-negative);
       }
   
       .text-positive {
-        color:color($theme-color-positive);
+        color:color($theme-color-text-positive);
       }
     }
   
@@ -744,7 +744,6 @@
       min-height: 500px; //so that datepicker is visible
     }
   }
-  
   
   .component-preview-tooltip .container{
     min-height: 350px;
@@ -1136,10 +1135,10 @@ $extra-colors: (
   background-color: color($theme-color-link-visited);
 }
 .background-positive {
-  background-color: color($theme-color-positive);
+  background-color: color($theme-color-text-positive);
 }
 .background-negative {
-  background-color: color($theme-color-negative);
+  background-color: color($theme-color-text-negative);
 }
 
 /*

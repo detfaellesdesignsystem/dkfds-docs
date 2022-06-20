@@ -125,7 +125,7 @@ $( document ).ready(function( $ ) {
                             frameld: ''
                         },
                         success: function( xmlResponse ) {
-                            let url = window.location.origin + '/omdesignsystemet/nyhedsmail/tilmeldt?';
+                            let url = window.location.origin + '/faellesskab/nyhedsmail/tilmeldt?';
                             url += 'response='+encodeURI($(xmlResponse).text());
                             window.location.href = url;
                         }

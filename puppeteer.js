@@ -15,7 +15,6 @@ var pdfUrls = ["",
     "design/typografi/lister/",
     "design/borders/",
     "design/ikoner/",
-    "design/ikoner/ikoner-og-deres-betydning/",
     "design/logoer/",
     "design/datavisualisering-infografik/",
     "design/datavisualisering-infografik/tilgaengelig-grafik/",
@@ -34,13 +33,13 @@ var pdfUrls = ["",
     "komponenter/cards/",
     "komponenter/cookiemeddelelse/",
     "komponenter/dato-felt/",
+    "komponenter/datovaelger/",
     "komponenter/detaljer/",
     "komponenter/drop-down/",
     "komponenter/faneblad/",
     "komponenter/fejlmeddelelser/",
     "komponenter/fejlopsummering/",
     "komponenter/felter/",
-    "komponenter/fil-upload/",
     "komponenter/footers/",
     "komponenter/formular/",
     "komponenter/funktionslink/",
@@ -52,9 +51,10 @@ var pdfUrls = ["",
     "komponenter/paginering",
     "komponenter/radioknap/",
     "komponenter/sidenav/",
-    "komponenter/sprogvaegler//",
     "komponenter/skip-link/",
     "komponenter/spinner/",
+    "komponenter/sprogvaegler/",
+    "komponenter/strukturerede-lister/",
     "komponenter/search/",
     "komponenter/tilbage-link/",
     "komponenter/tables/",
@@ -64,6 +64,7 @@ var pdfUrls = ["",
     "komponenter/toggle/",
     "komponenter/tooltip/",
     "komponenter/trinindikatorer/",
+    "komponenter/fil-upload/",
     "kode/",
     "kode/implementering/",
     "kode/browserunderstoettelse/",
@@ -75,13 +76,13 @@ var pdfUrls = ["",
     "kode/komponenter/cards/",
     "kode/komponenter/cookiemeddelelse/",
     "kode/komponenter/dato-felt/",
+    "kode/komponenter/datovaelger/",
     "kode/komponenter/detaljer/",
     "kode/komponenter/drop-down/",
     "kode/komponenter/faneblad/",
     "kode/komponenter/fejlmeddelelser/",
     "kode/komponenter/fejlopsummering/",
     "kode/komponenter/felter/",
-    "kode/komponenter/fil-upload/",
     "kode/komponenter/footers/",
     "kode/komponenter/formular/",
     "kode/komponenter/funktionslink/",
@@ -93,9 +94,10 @@ var pdfUrls = ["",
     "kode/komponenter/paginering",
     "kode/komponenter/radioknap/",
     "kode/komponenter/sidenav/",
-    "kode/komponenter/sprogvaegler/",
     "kode/komponenter/skip-link/",
     "kode/komponenter/spinner/",
+    "kode/komponenter/sprogvaegler/",
+    "kode/komponenter/strukturerede-lister/",
     "kode/komponenter/search/",
     "kode/komponenter/tilbage-link/",
     "kode/komponenter/tables/",
@@ -105,6 +107,7 @@ var pdfUrls = ["",
     "kode/komponenter/toggle/",
     "kode/komponenter/tooltip/",
     "kode/komponenter/trinindikatorer/",
+    "kode/komponenter/fil-upload/",
     "kode/grid/",
     "kode/typografi/",
     "kode/typografi/overskrifter/",
@@ -112,7 +115,6 @@ var pdfUrls = ["",
     "kode/typografi/links/",
     "kode/typografi/lister/",
     "kode/ikoner/",
-    "kode/ikoner/ikoner-og-deres-betydning/",
     "kode/utilities/",
     "kode/eksempler-implementering/",
     "kode/print/",
@@ -127,10 +129,13 @@ var pdfUrls = ["",
     "faellesskab/samarbejdsforum/",
     "faellesskab/nyhedsmail/",
     "faellesskab/kontakt-support/",
-    "faellesskab/privatlivspolitik-cookies/",
+    "privatlivspolitik-cookies/",
     "faellesskab/releases/",
-    "faellesskab/roadmap/"
-];
+    "faellesskab/roadmap/",
+    "eksempler/patterns/angivelse-af-telefonnummer/",
+    "eksempler/patterns/forlad-siden/",
+    "eksempler/patterns/session-udloeber/"
+]
 
 var exampleUrls = [
     {"url": "pages/eksempler/opsummering/opsummering-1/", "filename": "opsummering1"},
@@ -139,15 +144,22 @@ var exampleUrls = [
 ];
 
 (async () => {
+    console.log("Starting...");
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+
+    // Ensure that 'leave' dialogs don't block when you change page with page.goto()
+    page.on('dialog', async dialog => {
+        await dialog.accept();
+    });
 
     var pdfFiles=[];
     var resWidth = 1366; // width of screenshot
     var resHeight = 1000;
 
+    console.log("...creating pdfs...");
     for(var i=0; i<pdfUrls.length; i++){
-        await page.goto(root + pdfUrls[i], {waitUntil: 'load'});
+        await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
@@ -181,16 +193,29 @@ var exampleUrls = [
         await page.pdf({path: pdfFileName, format: "A3", printBackground: true, fullPage: true});
     }
 
+    console.log("...creating example page images...");
     for(var i=0; i<exampleUrls.length; i++){
         await page.goto(root + exampleUrls[i].url, {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
 
-        var pdfFileName =  targetRootDir+'screenshots/'+(i+1)+'-'+exampleUrls[i].filename+'.png';
+        await page.evaluate(() => {
+            // Remove cookie message
+            let cookieMessage = document.getElementById('cookiePrompt');
+            if (cookieMessage !== null) {
+                cookieMessage.parentNode.style.display = 'none';
+            }
+            // Scroll down to bottom to avoid the example footer blocking content.
+            // '5000' can be increased if the bottom wasn't reached.
+            window.scrollBy(0, 5000);
+        });
+
+        var pdfFileName =  targetRootDir+'screenshots/'+'example_'+(i+1)+'-'+exampleUrls[i].filename+'.png';
 
         await page.screenshot({path: pdfFileName, fullPage: true});
     }
 
+    console.log("...creating page images...");
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
@@ -227,5 +252,5 @@ var exampleUrls = [
     }
 
     await browser.close();
-
+    console.log("Done");
 })();
