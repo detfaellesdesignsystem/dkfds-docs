@@ -129,7 +129,7 @@ var pdfUrls = ["",
     "faellesskab/samarbejdsforum/",
     "faellesskab/nyhedsmail/",
     "faellesskab/kontakt-support/",
-    "faellesskab/privatlivspolitik-cookies/",
+    "privatlivspolitik-cookies/",
     "faellesskab/releases/",
     "faellesskab/roadmap/",
     "eksempler/patterns/angivelse-af-telefonnummer/",
@@ -144,15 +144,22 @@ var exampleUrls = [
 ];
 
 (async () => {
+    console.log("Starting...");
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+
+    // Ensure that 'leave' dialogs don't block when you change page with page.goto()
+    page.on('dialog', async dialog => {
+        await dialog.accept();
+    });
 
     var pdfFiles=[];
     var resWidth = 1366; // width of screenshot
     var resHeight = 1000;
 
+    console.log("...creating pdfs...");
     for(var i=0; i<pdfUrls.length; i++){
-        await page.goto(root + pdfUrls[i], {waitUntil: 'load'});
+        await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
@@ -186,16 +193,29 @@ var exampleUrls = [
         await page.pdf({path: pdfFileName, format: "A3", printBackground: true, fullPage: true});
     }
 
+    console.log("...creating example page images...");
     for(var i=0; i<exampleUrls.length; i++){
         await page.goto(root + exampleUrls[i].url, {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
 
-        var pdfFileName =  targetRootDir+'screenshots/'+(i+1)+'-'+exampleUrls[i].filename+'.png';
+        await page.evaluate(() => {
+            // Remove cookie message
+            let cookieMessage = document.getElementById('cookiePrompt');
+            if (cookieMessage !== null) {
+                cookieMessage.parentNode.style.display = 'none';
+            }
+            // Scroll down to bottom to avoid the example footer blocking content.
+            // '5000' can be increased if the bottom wasn't reached.
+            window.scrollBy(0, 5000);
+        });
+
+        var pdfFileName =  targetRootDir+'screenshots/'+'example_'+(i+1)+'-'+exampleUrls[i].filename+'.png';
 
         await page.screenshot({path: pdfFileName, fullPage: true});
     }
 
+    console.log("...creating page images...");
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
@@ -232,5 +252,5 @@ var exampleUrls = [
     }
 
     await browser.close();
-
+    console.log("Done");
 })();

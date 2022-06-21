@@ -10,7 +10,7 @@ category: Kode_category
 subcategory: Kode
 ---
 
-{% include code/preview-box.html component="skiplink" title="Eksempel på skiplink" %}
+{% include code/preview-image.html component="skip-link-eksempel" image="skiplink" title="Eksempel på skiplink" %}
 
 ## Eksempler og retningslinjer
 

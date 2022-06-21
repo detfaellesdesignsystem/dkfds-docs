@@ -21,7 +21,8 @@ var exampleUrls = [
     {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
     {"url": "/eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
     {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 270 },
-    {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 }
+    {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 },
+    {"url": "/eksempel/skiplink/", "filename": "skiplink.png", "width": 771, "height": 70 }    
 ];
 
 (async () => {
@@ -43,9 +44,13 @@ var exampleUrls = [
                 await page.evaluate(() => {
                     let cookieMessage = document.getElementById('cookiePrompt');
                     if (cookieMessage !== null) {
-                        cookieMessage.parentNode.style.display = 'none';
+                        cookieMessage = cookieMessage.parentNode;
+                        cookieMessage.style.display = 'none';
                     }
 
+                    if(document.body.classList.contains('page-skiplink')){
+                        document.getElementsByClassName('skipnav')[0].focus();
+                    }
                     window.scrollTo(0, 0);
                     if(document.getElementsByClassName('footer').length > 0){
                         document.getElementsByClassName('footer')[0].style.marginTop = "0px";

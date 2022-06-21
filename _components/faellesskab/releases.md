@@ -62,8 +62,11 @@ tags:
 - 8
 - 8.0
 - 8.0.0
+- 8.0.1
 anchor: true
 subnav:
+- text: Version 8.0.1
+  href: "#version-8-0-1"
 - text: Version 8.0.0
   href: "#version-8-0-0"
 - text: Version 7.5.3
@@ -112,6 +115,20 @@ Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagu
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
 
+{:#version-8-0-1 .mb-0}
+## Version 8.0.1
+
+<div><span class="small-text mt-0 d-block">16-06-2022</span></div>
+
+- Rettet aria-labels i <a href="/komponenter/datovaelger/">datovælgerens</a> tilbage/frem-knapper.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/180" class="icon-link">issue #180 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+- Tilføjet `chevron-double-left` og `chevron-double-right` til <a href="/design/ikoner/">ikoner</a>, der manglede efter version 8.0.0.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+- Opdateret ikonet `arrow-left`, der viste det forkerte ikon, når man indsatte det ved hjælp af klassen.
+- Opdateret ikonerne `sort-default` og `sort-table-none`, så de også kan bruges som klasse.
+- Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender <a href="/kode/ikoner/">ikonsamlingen</a>.
+
+
 {:#version-8-0-0 .mb-0}
 ## Version 8.0.0
 <div><span class="small-text mt-0 d-block">17-05-2022</span></div>
@@ -151,6 +168,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændringer i opførelse af <a href="/komponenter/tooltip/">tooltip</a>, for at sikre teksten kan markeres.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/163" class="icon-link">issue #163 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet og ændret SASS variabler for bedre vedligehold og tematisering.
+- Opdateret højden på knapper med ikoner, så de nu har samme højde som knapper uden ikoner.
 
 {:#version-7-5-3 .mb-0}
 ## Version 7.5.3
