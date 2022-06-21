@@ -8,12 +8,9 @@ subcategory: Komponenter
 description: "Skip links anvendes til at give brugere, der navigerer med tastatur en bedre oplevelse."
 tags: 
 lead: "Skip links anvendes til at give brugere, der navigerer med tastatur en bedre oplevelse."
-component: skiplink
-componentTitle: "Eksempel på Skip link"
-componentLink: true
-componentCode: "/kode/komponenter/skip-link/"
-componentUrl: "skip-link-eksempel"
 ---
+
+{% include code/preview-image.html component="skip-link-eksempel" image="skiplink" code="/kode/komponenter/skip-link/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -35,5 +32,3 @@ Et skip link er et skjult link, der kun vises, når en bruger navigerer på side
 Når brugeren trykker på linket (med tastatur eller mus) sættes fokus på første indholdselement på den aktuelle side.
 
 Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan undgå at få læst alle menupunkter op før de får adgang til selve indholdet.
-
-{% include child-components.html parent='skip-link' %}
