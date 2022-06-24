@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/sprogvaegler/"
+permalink: "/komponenter/sprogvaelger/"
+redirect_from:
+- /komponenter/sprogvaegler/
 layout: styleguide
 type: component
 title: Sprogvælger
@@ -14,7 +16,7 @@ subnav:
 - text: Tooltip
   href: "#sprogvælger-med-tooltip"
 ---
-{% include code/preview-image.html component="language-switcher" alt="Eksempel på sprogvælger" code="/kode/komponenter/sprogvaegler/" %}
+{% include code/preview-image.html component="language-switcher" alt="Eksempel på sprogvælger" code="/kode/komponenter/sprogvaelger/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -66,4 +68,4 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 - <a href="/pages/eksempler/digital-flytning/flytning-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
 - <a href="/pages/eksempler/aes/oversigt/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
 
-{% include child-components.html parent='sprogvaegler' %}
+{% include child-components.html parent='sprogvaelger' %}

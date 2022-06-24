@@ -25,7 +25,7 @@ lead: Sekundære links bruges til at skabe en visuel forskel på links til funkt
 
 ### Anvendes ikke til
 
-Brug ikke sekundære links i eller i mellem afsnit af tekst eller til generel navigation mellem sider, brug da et standard link.
+Brug ikke sekundære links i eller imellem afsnit af tekst eller til generel navigation mellem sider, brug da et standard link.
 
 ### Vejledning
 

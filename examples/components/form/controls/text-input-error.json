@@ -2,7 +2,7 @@
   "params":{
     "id": "form-error",
     "label": {
-      "text": "Inputfelt med fejl"
+      "text": "Tekstfelt med fejl"
     },
     "name": "form-error",
     "hint": "Fx 12345678",

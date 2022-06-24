@@ -1,6 +1,6 @@
 ---
 title: Sprogvælger med tooltip
-parent: sprogvaegler
+parent: sprogvaelger
 order: 10
 ---
 {% include code/preview-image.html component="language-switcher-tooltip" alt="sprogvælger med tooltip" title="Sprogvælger med tooltip" %}

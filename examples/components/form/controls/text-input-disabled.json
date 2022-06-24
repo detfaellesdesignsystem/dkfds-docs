@@ -3,7 +3,7 @@
     "id": "input-disabled",
     "name": "input-disabled",
     "label": {
-      "text": "Inputfelt som er låst"
+      "text": "Tekstfelt som er låst"
     },
     "disabled": true,
     "required": false

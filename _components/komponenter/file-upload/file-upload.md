@@ -28,6 +28,11 @@ Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil b
 
 Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
+## Fejlmeddelelse
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
+
 ### Fejlbeskeder
 
 #### Ingen fil er valgt

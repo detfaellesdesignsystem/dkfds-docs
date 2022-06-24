@@ -1,7 +1,7 @@
 ---
 permalink: /komponenter/footer/
 redirect_from:
-- /kode/komponenter/footers/
+- /komponenter/footers/
 layout: styleguide
 title: Footer
 category: Komponenter_category

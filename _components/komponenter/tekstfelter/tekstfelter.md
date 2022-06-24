@@ -1,7 +1,5 @@
 ---
 permalink: "/komponenter/tekstfelter/"
-redirect_from:
-- /komponenter/felter/
 layout: styleguide
 type: component
 title: Tekstfelter

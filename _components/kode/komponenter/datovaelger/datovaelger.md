@@ -7,13 +7,17 @@ type: component
 category: Kode_category
 subcategory: Kode
 anchor: true
-description: "Dokumentation på implementering af datofelt."
+description: "Dokumentation på implementering af datovælger."
 subnav:
 - text: Interval
   href: '#interval'
+- text: Fast værdi
+  href: '#fast-værdi'
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
 ---
 
-{% include code/preview-box.html component="date-picker" title="Eksempel på dato felt" %}
+{% include code/preview-box.html component="date-picker" title="Eksempel på datovælger" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
@@ -28,7 +32,7 @@ subnav:
 {% include code/syntax.html component="date-picker" %}
 
 ### Javascript
-Datovælger komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+Datovælger-komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
 DKFDS.datePicker.on(document.body);
@@ -53,3 +57,9 @@ DKFDS.datePicker.on(document.body);
 {:#fast-værdi}
 ### Fast værdi
 {% include code/syntax.html component="date-picker-default-date" link="true" %}
+
+{:#fejlmeddelelse}
+## Fejlmeddelelse
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.

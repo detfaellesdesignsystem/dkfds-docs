@@ -49,7 +49,7 @@ subnav:
 {% include code/syntax.html component="text-input-helptext" link="true" %}
 
 {:#obligatoriske-og-frivillige-felter}
-### Obligatoriske og frivillige felter
+### Obligatoriske og frivillige tekstfelter
 
 {% include code/syntax.html component="text-input-optional" link="true" %}
 
@@ -74,7 +74,7 @@ Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(
 {:#feltbredde}
 ### Feltbredde
    
-Inputfelter har en standard bredde på 32rem, for at ændre bredden på inputfelter bruges nedenstående klasser:
+Tekstfelter har en standard bredde på 32rem, for at ændre bredden på tekstfelter bruges nedenstående klasser:
 
 - `input-width-xxs` har en bredde på 8rem
 - `input-width-xs` har en bredde på 16rem

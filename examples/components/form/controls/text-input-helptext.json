@@ -2,7 +2,7 @@
   "params":{
     "id": "input-type-help-text",
     "label": {
-      "text": "Inputfelt med label og hjælpetekst"
+      "text": "Tekstfelt med label og hjælpetekst"
     },
     "name": "input-type-help-text",
     "hint": "Fx 12345678"

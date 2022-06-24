@@ -271,7 +271,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-7-1-0 .mb-0}
 ## Version 7.1.0
 
-- Ny komponent: <a href="/komponenter/sprogvaegler/">Sprogvælger</a>
+- Ny komponent: <a href="/komponenter/sprogvaelger/">Sprogvælger</a>
 
 {:#version-7-0-0 .mb-0}
 ## Version 7.0.0

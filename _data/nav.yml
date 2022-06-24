@@ -73,8 +73,8 @@ Komponenter_category:
   - href: /komponenter/broedkrumme/
   - href: /komponenter/cards/
   - href: /komponenter/cookiemeddelelse/
-  - href: /komponenter/dato-felt/
-  - href: /komponenter/datovaelger/
+  - href: /komponenter/datoangivelse/
+    categorynav: 'komponenter_datoangivelse'
   - href: /komponenter/detaljer/
   - href: /komponenter/dropdown/
   - href: /komponenter/faneblade/
@@ -82,22 +82,22 @@ Komponenter_category:
     categorynav: 'komponenter_fejlangivelse'
   - href: /komponenter/footer/
   - href: /komponenter/funktionslink/
+  - href: /komponenter/skip-link/
   - href: /komponenter/header/
   - href: /komponenter/knapper/
+  - href: /komponenter/spinner/
   - href: /komponenter/modal/
   - href: /komponenter/overflowmenu/
   - href: /komponenter/paginering/
   - href: /komponenter/radioknap/
-  - href: /komponenter/skip-link/
-  - href: /komponenter/spinner/
-  - href: /komponenter/sprogvaegler/
+  - href: /komponenter/sprogvaelger/
   - href: /komponenter/strukturerede-lister/
   - href: /komponenter/search/
-  - href: /komponenter/tilbage-link/
   - href: /komponenter/tables/
   - href: /komponenter/tags/
   - href: /komponenter/tekstfelter/
     categorynav: 'komponenter_tekstfelter'
+  - href: /komponenter/tilbage-link/
   - href: /komponenter/tjekboks/
   - href: /komponenter/toastbesked/
   - href: /komponenter/toggle/
@@ -106,11 +106,14 @@ Komponenter_category:
   - href: /komponenter/fil-upload/
   - href: /komponenter/venstremenu/
 
+komponenter_datoangivelse:
+  - href: /komponenter/datoangivelse/datofelter/
+  - href: /komponenter/datoangivelse/datovaelger/
+
 komponenter_fejlangivelse:
   - href: /komponenter/fejlangivelse/fejlmeddelelser/
   - href: /komponenter/fejlangivelse/fejlopsummering/
 
-  
 komponenter_tekstfelter:
   - href: /komponenter/tekstfelter/tekstfelt/
   - href: /komponenter/tekstfelter/tekstomraade/
@@ -138,7 +141,7 @@ Kode_Komponenter_category:
   - href: /kode/komponenter/broedkrumme/
   - href: /kode/komponenter/cards/
   - href: /kode/komponenter/cookiemeddelelse/
-  - href: /kode/komponenter/dato-felt/
+  - href: /kode/komponenter/datofelter/
   - href: /kode/komponenter/datovaelger/
   - href: /kode/komponenter/detaljer/
   - href: /kode/komponenter/dropdown/
@@ -147,22 +150,22 @@ Kode_Komponenter_category:
   - href: /kode/komponenter/fejlopsummering/
   - href: /kode/komponenter/footer/
   - href: /kode/komponenter/funktionslink/
+  - href: /kode/komponenter/skip-link/
   - href: /kode/komponenter/header/
   - href: /kode/komponenter/knapper/
+  - href: /kode/komponenter/spinner/
   - href: /kode/komponenter/modal/
   - href: /kode/komponenter/overflowmenu/
   - href: /kode/komponenter/paginering/
   - href: /kode/komponenter/radioknap/
-  - href: /kode/komponenter/skip-link/
-  - href: /kode/komponenter/spinner/
-  - href: /kode/komponenter/sprogvaegler/
+  - href: /kode/komponenter/sprogvaelger/
   - href: /kode/komponenter/strukturerede-lister/
   - href: /kode/komponenter/search/
-  - href: /kode/komponenter/tilbage-link/
   - href: /kode/komponenter/tables/
   - href: /kode/komponenter/tags/
   - href: /kode/komponenter/tekstfelter/
   - href: /kode/komponenter/textarea/
+  - href: /kode/komponenter/tilbage-link/
   - href: /kode/komponenter/tjekboks/
   - href: /kode/komponenter/toastbesked/
   - href: /kode/komponenter/toggle/

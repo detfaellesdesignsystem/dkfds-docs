@@ -1,5 +1,7 @@
 ---
-permalink: "/kode/komponenter/sprogvaegler/"
+permalink: "/kode/komponenter/sprogvaelger/"
+redirect_from:
+- /kode/komponenter/sprogvaegler/
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
@@ -18,8 +20,8 @@ subnav:
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/sprogvaegler/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/sprogvaegler/">Eksempler</a></li>
+    <li><a href="/komponenter/sprogvaelger/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/sprogvaelger/">Eksempler</a></li>
 </ul>
 
 ## Installation

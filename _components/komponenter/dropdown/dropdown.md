@@ -56,6 +56,11 @@ Undlad at løsningen reagerer på brugerens direkte valg i dropdownen, så bruge
 {:.nobullet-list}
 - <a href="/pages/eksempler/AES-erstatningssag/aes-6/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
 
+## Fejlmeddelelse
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
+
 ## Multiselect og søgning
 
 Vi tilbyder på nuværende tidspunkt ikke en multiselect dropdown komponent med søgefunktion, men hvis man finder eller laver en selv kan det se ud som på billedet nedenfor.

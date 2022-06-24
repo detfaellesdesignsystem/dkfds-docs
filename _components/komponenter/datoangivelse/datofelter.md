@@ -1,17 +1,22 @@
 ---
-permalink: "/komponenter/dato-felt/"
+permalink: "/komponenter/datoangivelse/datofelter/"
+redirect_from:
+- /komponenter/dato-felt/
+parentlink: /komponenter/datoangivelse/
 layout: styleguide
 type: component
-title: Datoangivelse
+title: Datofelter
 category: Komponenter_category
 subcategory: Komponenter
-description: Brug dette datofelt til datoangivelse i en formular.
+description: Brug datofelter for datoer, der er velkendte for brugeren (fx fødselsdato).
 tags: 
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
-component: date-input
-componentTitle: Eksempel på datoangivelse
-componentCode: "/kode/komponenter/dato-felt/"
+subnav:
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
 ---
+
+{% include code/preview-box.html component="date-input" title="Eksempel på datofelter" link=true code="/kode/komponenter/datofelter/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -20,16 +25,16 @@ Sætter brugeren i stand til at tilføje struktureret datoinformation.
 {:.h3}
 ## Anvendes ikke til
 
-Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med specifikke åbne og lukkede datoer.
+Når der er specifikt udvalgte datoer at vælge imellem som fx ved bookninger og planlægning med specifikke åbne og lukkede datoer.
 
 {:.h3}
 ## Vejledning
 
-Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, dvs. dag, måned og år.
+Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, det vil sige dag, måned og år.
 
 Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.
 
-Ofte kan et datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en datovælger (date picker) funktion.
+Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en datovælger (date picker) funktion.
 
 {% include dos-donts-box.html component="date-dos-donts" title="Dato do's and don'ts" %}
 
@@ -55,4 +60,8 @@ Ofte kan et datofelter til indtastning være nemmere at anvende - og gøre tilg�
 - <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
 - <a href="/pages/eksempler/digital-flytning/flytning-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
 
-{% include child-components.html parent='Date' %}
+{:#fejlmeddelelse}
+## Fejlmeddelelse
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.

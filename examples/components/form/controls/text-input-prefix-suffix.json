@@ -32,17 +32,6 @@
       "prefix": "€",
       "value": "1.234",
       "classes": "input-width-xs"
-    },
-    {
-      "id": "input-pris-error",
-      "label": {
-        "text": "Pris i 1000 kr."
-      },
-      "name": "input-pris",
-      "type": "number",
-      "suffix": ".000 kr",
-      "errorMessage": "Angiv en pris",
-      "classes": "input-char-11"
     }
   ]
 }

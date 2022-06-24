@@ -1,5 +1,7 @@
 ---
 permalink: "/komponenter/tekstfelter/tekstfelt/"
+redirect_from:
+- /komponenter/felter/
 parentlink: /komponenter/tekstfelter/
 layout: styleguide
 type: component
@@ -73,7 +75,7 @@ Fejlmeddelelser skal være meningsfulde og hjælpsomme.
 
 Placér fejlmeddelelser mellem label og feltet, som bliver markeret med rødt.
 
-Felter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.
+Tekstfelter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.
 
 Brug feltbredden til at begrænse antallet af tegn i et felt. Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på minimum 27 tegn.
 
@@ -126,25 +128,25 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivel
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 
 {:#obligatoriske-og-frivillige-felter}
-## Obligatoriske og frivillige felter
+## Obligatoriske og frivillige tekstfelter
 
-Undgå frivillige felter så vidt muligt. Hvis et felt er frivilligt, så overvej altid, om det er nødvendigt at have med i formularen. 
+Undgå frivillige tekstfelter så vidt muligt. Hvis et felt er frivilligt, så overvej altid, om det er nødvendigt at have med i formularen. 
 
-Hvis en formular indeholder frivillige felter, som vil have en betydelig positiv effekt for brugeren, kan dette forklares i en hjælpetekst. Det kan f.eks. være tilfældet med felter, der forkorter tiden for en sagsbehandling betragteligt, hvis de bliver udfyldt. 
-
-{:h4}
-### Når der er flest obligatoriske felter
-
-I de fleste tilfælde bør der være flere obligatoriske end frivillige felter. Marker da de frivillige felter i formularen.
-
-{% include code/preview-box.html component="text-input-mandatory" title="Eksempel på formular med flest obligatoriske felter" %}
+Hvis en formular indeholder frivillige tekstfelter, som vil have en betydelig positiv effekt for brugeren, kan dette forklares i en hjælpetekst. Det kan f.eks. være tilfældet med tekstfelter, der forkorter tiden for en sagsbehandling betragteligt, hvis de bliver udfyldt. 
 
 {:h4}
-### Når der er flest frivillige felter
+### Når der er flest obligatoriske tekstfelter
 
-Hvis en formular indeholder flere frivillige end obligatoriske felter, fremhæves de obligatoriske felter i stedet for de frivillige. 
+I de fleste tilfælde bør der være flere obligatoriske end frivillige tekstfelter. Marker da de frivillige tekstfelter i formularen.
 
-{% include code/preview-box.html component="text-input-optional" title="Eksempel på formular med flest frivillige felter" %}
+{% include code/preview-box.html component="text-input-mandatory" title="Eksempel på formular med flest obligatoriske tekstfelter" %}
+
+{:h4}
+### Når der er flest frivillige tekstfelter
+
+Hvis en formular indeholder flere frivillige end obligatoriske tekstfelter, fremhæves de obligatoriske tekstfelter i stedet for de frivillige. 
+
+{% include code/preview-box.html component="text-input-optional" title="Eksempel på formular med flest frivillige tekstfelter" %}
 
 {:.h4}
 ### Referencer

@@ -124,39 +124,43 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 
 {:.h3}
-## Datoangivelse
+## Datofelter
 
-{% include code/preview-box.html component="error-message-date" title="Eksempel på datoangivelse med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 
 {:.h3}
 ## Datovælger
 
-{% include code/preview-box.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" %}
 
 {:.h3}
 ## Dropdown
 
-{% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 
 {:.h3}
 ## Radioknapper
 
-{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
 
 {:.h3}
-## Tekstfelt
+## Inputfelt
 
-{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
+
+{:.h4}
+### Inputfelt med suffix
+{% include code/preview-box.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" %}
 
 {:.h3}
 ## Tekstområde
 
-{% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" %}
 
 {:.h3}
 ## Tjekboks
 
-{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" %}
 
 {:.h3}
 ## Vedhæft fil

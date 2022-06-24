@@ -4,7 +4,7 @@
       {
         "id": "input-type-text-xxs",
         "label": {
-          "text": "Inputfelt med klassen input-width-xxs (8rem)"
+          "text": "Tekstfelt med klassen input-width-xxs (8rem)"
         },
         "name": "input-type-text-xxs",
         "classes": "input-width-xxs"
@@ -12,7 +12,7 @@
       {
         "id": "input-type-text-xs",
         "label": {
-          "text": "Inputfelt med klassen input-width-xs (16rem)"
+          "text": "Tekstfelt med klassen input-width-xs (16rem)"
         },
         "name": "input-type-text-xs",
         "classes": "input-width-xs"
@@ -20,7 +20,7 @@
       {
         "id": "input-type-text-s",
         "label": {
-          "text": "Inputfelt med klassen input-width-s (24rem)"
+          "text": "Tekstfelt med klassen input-width-s (24rem)"
         },
         "name": "input-type-text-s",
         "classes": "input-width-s"
@@ -28,7 +28,7 @@
       {
         "id": "input-type-text-m",
         "label": {
-          "text": "Inputfelt med klassen input-width-m (32rem)"
+          "text": "Tekstfelt med klassen input-width-m (32rem)"
         },
         "name": "input-type-text-m",
         "classes": "input-width-m"
@@ -36,7 +36,7 @@
       {
         "id": "input-type-text-l",
         "label": {
-          "text": "Inputfelt med klassen input-width-l (40rem)"
+          "text": "Tekstfelt med klassen input-width-l (40rem)"
         },
         "name": "input-type-text-l",
         "classes": "input-width-l"
@@ -44,7 +44,7 @@
       {
         "id": "input-type-text-xl",
         "label": {
-          "text": "Inputfelt med klassen input-width-xl (48rem)"
+          "text": "Tekstfelt med klassen input-width-xl (48rem)"
         },
         "name": "input-type-text-xl",
         "classes": "input-width-xl"
@@ -56,7 +56,7 @@
       {
         "id": "input-type-text-char-4",
         "label": {
-          "text": "Inputfelt med klassen input-char-4 (4 tegn)"
+          "text": "Tekstfelt med klassen input-char-4 (4 tegn)"
         },
         "name": "input-type-text-char-4",
         "classes": "input-char-4"
@@ -64,7 +64,7 @@
       {
         "id": "input-type-text-char-8",
         "label": {
-          "text": "Inputfelt med klassen input-char-8 (8 tegn)"
+          "text": "Tekstfelt med klassen input-char-8 (8 tegn)"
         },
         "name": "input-type-text-char-8",
         "classes": "input-char-8"
@@ -72,7 +72,7 @@
       {
         "id": "input-type-text-char-11",
         "label": {
-          "text": "Inputfelt med klassen input-char-11 (11 tegn)"
+          "text": "Tekstfelt med klassen input-char-11 (11 tegn)"
         },
         "name": "input-type-text-char-11",
         "classes": "input-char-11"
@@ -80,7 +80,7 @@
       {
         "id": "input-type-text-char-27",
         "label": {
-          "text": "Inputfelt med klassen input-char-27 (27 tegn)"
+          "text": "Tekstfelt med klassen input-char-27 (27 tegn)"
         },
         "name": "input-type-text-char-27",
         "classes": "input-char-27"
