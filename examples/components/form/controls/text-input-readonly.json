@@ -3,7 +3,7 @@
     "id": "input-readonly",
     "name": "input-readonly",
     "label": {
-      "text": "Tekstfelt som er readonly"
+      "text": "Inputfelt som er readonly"
     },
     "value": "012345-6789",
     "readonly": true,

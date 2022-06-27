@@ -1483,6 +1483,26 @@
 
   
     
+    <a href="/komponenter/inputfelter/" role="menuitem"  class="nav-link">
+        Inputfelter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
     <a href="/komponenter/knapper/" role="menuitem"  class="nav-link">
         Knapper (Buttons)
       </a>
@@ -1703,85 +1723,10 @@
 
   
     
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-      
-      
-
-      
-      <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-komponenter-tekstfelter" aria-expanded="false"  >
-          <span>Tekstfelter</span>
-        </button>
-        <div aria-label="Tekstfelter" class="overflow-menu-inner" id="submenu-level4-komponenter-tekstfelter" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
-            
-
-
-<li class="  " role="none">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tekstfelter/" role="menuitem"  class="nav-link">
-        Tekstfelter<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-            
-          
-
-
-
-
-  
-    
-
-
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tekstfelter/tekstfelt/" role="menuitem"  class="nav-link">
-        Tekstfelter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  " role="none">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tekstfelter/tekstomraade/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tekstomraade/" role="menuitem"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
-    
-  
-</li>
-    
-
-
-          </ul>
-        </div>
-      </div>  
-
     
   
 </li>
@@ -2654,6 +2599,26 @@
 
   
     
+    <a href="/kode/komponenter/inputfelter/" role="menuitem"  class="nav-link">
+        Inputfelter
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  has-anchor-links" role="none">
+
+  
+
+
+  
+    
     <a href="/kode/komponenter/knapper/" role="menuitem"  class="nav-link">
         Knapper (Buttons)
       </a>
@@ -2867,26 +2832,6 @@
     
 
 
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/tekstfelter/" role="menuitem"  class="nav-link">
-        Tekstfelter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
 <li class="  " role="none">
 
   
@@ -2894,7 +2839,7 @@
 
   
     
-    <a href="/kode/komponenter/textarea/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tekstomraade/" role="menuitem"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
@@ -3944,7 +3889,16 @@
 
 
 <li class=" " role="none">
-<a href="#tekstfelt"  role="menuitem">Tekstfelt</a>
+<a href="#tekstfelt"  role="menuitem">Inputfelt</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#tekstfeltsuffix"  role="menuitem">Inputfelt med suffix</a>
 </li>
 
     
@@ -4058,6 +4012,22 @@
 <a href="/kode/komponenter/header/" role="menuitem" 
   class="nav-link">
   Header
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  has-anchor-links" role="none">
+
+
+  
+
+<a href="/kode/komponenter/inputfelter/" role="menuitem" 
+  class="nav-link">
+  Inputfelter
 </a>
 
 </li>
@@ -4242,28 +4212,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
-
-
-  
-
-<a href="/kode/komponenter/tekstfelter/" role="menuitem" 
-  class="nav-link">
-  Tekstfelter
-</a>
-
-</li>
-
-    
-
-    
-
 <li class="  " role="none">
 
 
   
 
-<a href="/kode/komponenter/textarea/" role="menuitem" 
+<a href="/kode/komponenter/tekstomraade/" role="menuitem" 
   class="nav-link">
   Tekstområde (Textarea)
 </a>
@@ -4583,7 +4537,8 @@
           <li><a href="#datovaelger">Datovælger</a></li>
           <li><a href="#dropdown">Dropdown</a></li>
           <li><a href="#radioknapper">Radioknapper</a></li>
-          <li><a href="#tekstfelt">Tekstfelt</a></li>
+          <li><a href="#tekstfelt">Inputfelt</a></li>
+          <li><a href="#tekstfeltsuffix">Inputfelt med suffix</a></li>
           <li><a href="#tekstomraade">Tekstområde</a></li>
           <li><a href="#tjekboks">Tjekboks</a></li>
           <li><a href="#vedhaeft-fil">Vedhæft fil</a></li>
@@ -4848,9 +4803,9 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="tekstfelt">Tekstfelt</h2>
+<h2 class="h3" id="tekstfelt">Inputfelt</h2>
 
-<div class="component-preview component-preview-code  component-code-error-message-name" aria-label="Eksempel på tekstfelt med fejlmeddelelse">
+<div class="component-preview component-preview-code  component-code-error-message-name" aria-label="Eksempel på inputfelt med fejlmeddelelse">
     
     <div class="component-link px-4 py-4">
         
@@ -4872,6 +4827,39 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     &lt;/span&gt;&lt;input class=&quot;form-input&quot; id=&quot;fullname-error-example&quot;
         name=&quot;fullname-error-example&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
         aria-describedby=&quot; fullname-error-example-error&quot; required /&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 class="h4" id="tekstfeltsuffix">Inputfelt med suffix</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-suffix-error" aria-label="Eksempel på inputfejl med suffix og fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-suffix-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-suffix-error</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;
+        Pris i 1000 kr.
+    &lt;/label&gt;
+
+    &lt;span class=&quot;form-error-message&quot; id=&quot;input-pris-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv en pris
+    &lt;/span&gt;
+    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input
+            class=&quot;form-input input-char-11&quot; id=&quot;input-pris-error&quot;
+            name=&quot;input-pris&quot; type=&quot;number&quot; aria-invalid=&quot;true&quot;
+            aria-describedby=&quot; input-pris-error-error&quot; required /&gt;
+        &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4955,6 +4943,12 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 <h2 class="h3" id="vedhaeft-fil">Vedhæft fil</h2>
 
 <div class="component-preview component-preview-code  component-code-error-message-file-input" aria-label="Eksempel på felt til vedhæftning af fil med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-message-file-input/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: error-message-file-input</span></a>
+        
+    </div>
     
     <div class="component-code" aria-label="Kodeeksempel">
 

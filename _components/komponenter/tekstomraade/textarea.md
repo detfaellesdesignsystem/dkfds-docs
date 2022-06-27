@@ -1,6 +1,5 @@
 ---
-permalink: /komponenter/tekstfelter/tekstomraade/
-parentlink: /komponenter/tekstfelter/
+permalink: /komponenter/tekstomraade/
 redirect_from:
 - /komponenter/textarea/
 layout: styleguide
@@ -10,10 +9,9 @@ category: Komponenter_category
 subcategory: Komponenter
 description: "Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge."
 tags:
-component: text-area
-componentTitle: Eksempel på tekstområde
-componentCode: "/kode/komponenter/textarea/"
 ---
+
+{% include code/preview-box.html component="text-area" title="Eksempel på tekstområde" link=true code="/kode/komponenter/tekstomraade/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til

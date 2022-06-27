@@ -1,5 +1,7 @@
 ---
-permalink: /kode/komponenter/textarea/
+permalink: /kode/komponenter/tekstomraade/
+redirect_from:
+- /kode/komponenter/textarea/
 parentlink: /kode/komponenter/
 title: Tekstområde (Textarea)
 layout: styleguide
@@ -14,8 +16,8 @@ subcategory: Kode
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/textarea/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/textarea/">Eksempler</a></li>
+    <li><a href="/komponenter/tekstomraade/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/tekstomraade/">Eksempler</a></li>
 </ul>
 
 ## Installation
@@ -32,7 +34,7 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 - `rows`
 
 
-Sæt højden på et textarea ved brug af `rows` attributten. Sæt højden, så det svarer til den mængde tekst, der forventes indtastet.
+Sæt højden på et tekstområde ved brug af `rows` attributten. Sæt højden, så det svarer til den mængde tekst, der forventes indtastet.
 
 ## Varianter
 

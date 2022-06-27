@@ -88,7 +88,7 @@ Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud som f
 
 Forskellige fejl har brug for forskellige fejlmeddelelser.
 
-Fx kan der opstå forskellige fejl på tekstfelter, felter kan være: tomme, for lange, for korte, indeholde ugyldige tegn, være i et forkert format, m.fl.
+Fx kan der opstå forskellige fejl på inputfelter, felter kan være: tomme, for lange, for korte, indeholde ugyldige tegn, være i et forkert format, m.fl.
 
 En fejlmeddelelse, der forklarer den specifikke situation er mere hjælpsom end den generiske fejlmeddelelse.
 

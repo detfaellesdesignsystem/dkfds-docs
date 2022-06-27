@@ -20,7 +20,7 @@ subnav:
 - text: Inputfelt
   href: "#tekstfelt"
 - text: Inputfelt med suffix
-  href: "tekstfeltsuffix"
+  href: "#tekstfeltsuffix"
 - text: Tekstområde
   href: "#tekstomraade"
 - text: Tjekboks
@@ -73,7 +73,7 @@ Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlo
 {:.h3 #tekstfelt}
 ## Inputfelt
 
-{% include code/syntax.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="error-message-name" title="Eksempel på inputfelt med fejlmeddelelse" link=true %}
 
 {:.h4 #tekstfeltsuffix}
 ### Inputfelt med suffix

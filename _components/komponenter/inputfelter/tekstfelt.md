@@ -1,11 +1,11 @@
 ---
-permalink: "/komponenter/tekstfelter/tekstfelt/"
+permalink: /komponenter/inputfelter/
 redirect_from:
 - /komponenter/felter/
-parentlink: /komponenter/tekstfelter/
+- /komponenter/tekstfelter/
 layout: styleguide
 type: component
-title: Tekstfelter
+title: Inputfelter
 tags:
 - tekstfelt
 - input
@@ -26,7 +26,7 @@ tags:
 - feltbredde
 - låst felt
 category: Komponenter_category
-description: Tekstfelter til indtastning af information i form af bogstaver, tal og en kombination
+description: Inputfelter til indtastning af information i form af bogstaver, tal og en kombination
   af begge.
 subcategory: Komponenter
 anchor: true
@@ -45,17 +45,15 @@ subnav:
   href: "#prefix-og-suffix"
 - text: Feltbredde
   href: "#feltbredde"
-component: text-input
-componentTitle: Eksempel på tekstfelter
-componentCode: "/kode/komponenter/tekstfelter/"
-
 ---
+{% include code/preview-box.html component="text-input" title="Eksempel på inputfelt" link=true code="/kode/komponenter/inputfelter/" %}
+
 {:.h3 #retningslinjer}
 ## Anvendes til
 
 Brug til input af information i form af bogstaver og tal eller en kombination af begge.
 
-Brug tekstfelter når det er nemmere for brugeren at skrive information end at vælge den på anden vis. 
+Brug inputfelter når det er nemmere for brugeren at skrive information end at vælge den på anden vis. 
 
 Brug når brugeren skal kunne copy paste information ind i en formular.
 
@@ -75,7 +73,7 @@ Fejlmeddelelser skal være meningsfulde og hjælpsomme.
 
 Placér fejlmeddelelser mellem label og feltet, som bliver markeret med rødt.
 
-Tekstfelter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.
+Inputfelter er ikke perfekte til mobile løsninger. Overvej om de er nødvendige eller om du kan tilbyde brugeren en anden form for interaktion.
 
 Brug feltbredden til at begrænse antallet af tegn i et felt. Feltbredden angiver det forventede omfang af tegn, så brugeren får en fornemmelse af, hvad der skal indtastes. Fx bør et felt, hvor man skal angive et dansk postnummer, kun være 4 tegn bredt, mens et felt til et gadenavn bør være på minimum 27 tegn.
 
@@ -116,7 +114,7 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivel
 {:#hjaelpetekst}
 ## Hjælpetekst
 
-{% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på tekstfelt med hjælpetekst" code="/kode/komponenter/tekstfelter/#felt-med-hjaelpetekst" %}
+{% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på inputfelt med hjælpetekst" code="/kode/komponenter/inputfelter/#felt-med-hjaelpetekst" %}
 
 {% include dos-donts-box.html component="text-input-helptext-dos-donts" title="Felt med hjælpetekst do's and don'ts" %}
 
@@ -128,25 +126,25 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivel
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 
 {:#obligatoriske-og-frivillige-felter}
-## Obligatoriske og frivillige tekstfelter
+## Obligatoriske og frivillige inputfelter
 
-Undgå frivillige tekstfelter så vidt muligt. Hvis et felt er frivilligt, så overvej altid, om det er nødvendigt at have med i formularen. 
+Undgå frivillige inputfelter så vidt muligt. Hvis et felt er frivilligt, så overvej altid, om det er nødvendigt at have med i formularen. 
 
-Hvis en formular indeholder frivillige tekstfelter, som vil have en betydelig positiv effekt for brugeren, kan dette forklares i en hjælpetekst. Det kan f.eks. være tilfældet med tekstfelter, der forkorter tiden for en sagsbehandling betragteligt, hvis de bliver udfyldt. 
-
-{:h4}
-### Når der er flest obligatoriske tekstfelter
-
-I de fleste tilfælde bør der være flere obligatoriske end frivillige tekstfelter. Marker da de frivillige tekstfelter i formularen.
-
-{% include code/preview-box.html component="text-input-mandatory" title="Eksempel på formular med flest obligatoriske tekstfelter" %}
+Hvis en formular indeholder frivillige inputfelter, som vil have en betydelig positiv effekt for brugeren, kan dette forklares i en hjælpetekst. Det kan f.eks. være tilfældet med inputfelter, der forkorter tiden for en sagsbehandling betragteligt, hvis de bliver udfyldt. 
 
 {:h4}
-### Når der er flest frivillige tekstfelter
+### Når der er flest obligatoriske inputfelter
 
-Hvis en formular indeholder flere frivillige end obligatoriske tekstfelter, fremhæves de obligatoriske tekstfelter i stedet for de frivillige. 
+I de fleste tilfælde bør der være flere obligatoriske end frivillige inputfelter. Marker da de frivillige felter i formularen.
 
-{% include code/preview-box.html component="text-input-optional" title="Eksempel på formular med flest frivillige tekstfelter" %}
+{% include code/preview-box.html component="text-input-mandatory" title="Eksempel på formular med flest obligatoriske inputfelter" %}
+
+{:h4}
+### Når der er flest frivillige inputfelter
+
+Hvis en formular indeholder flere frivillige end obligatoriske inputfelter, fremhæves de obligatoriske felter i stedet for de frivillige. 
+
+{% include code/preview-box.html component="text-input-optional" title="Eksempel på formular med flest frivillige inputfelter" %}
 
 {:.h4}
 ### Referencer
@@ -157,11 +155,11 @@ Hvis en formular indeholder flere frivillige end obligatoriske tekstfelter, frem
 
 {:#read-only}
 ## Read-only
-{% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly tekstfelt" code="/kode/komponenter/felter/#read-only-felt" %}
+{% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly inputfelt" code="/kode/komponenter/felter/#read-only-felt" %}
 
 {:#deaktiveret}
 ## Deaktiveret
-{% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret tekstfelt" code="/kode/komponenter/felter/#read-only-felt" %}
+{% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/kode/komponenter/felter/#read-only-felt" %}
 
 Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af <a href="#read-only">read-only</a>.
 
@@ -171,7 +169,7 @@ Prefix og suffix kan bruges til at tydeliggøre, hvordan brugeren skal angive be
 
 Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyldes, eftersom det ikke læses højt af skærmlæsere. Feltets label eller en hjælpetekst kan bruges til også at indikere dette.
 
-{% include code/preview-box.html component="text-input-prefix-suffix" link=false title="Eksempel på felter med prefix og suffix" code="/kode/komponenter/tekstfelter/#prefix-og-suffix" %}
+{% include code/preview-box.html component="text-input-prefix-suffix" link=false title="Eksempel på felter med prefix og suffix" code="/kode/komponenter/inputfelter/#prefix-og-suffix" %}
 
 {:#feltbredde}
 ## Feltbredde

@@ -37,7 +37,7 @@ Systemfunktionalitet er fx:
 - at gemme en kladde i løsningen
 - m.fl...
 
-Funktionsikoner bør akkompagneres af et ord, der beskriver funktionaliteten. For næsten alle ikoner gælder det, at betydningen af disse ikke er entydigt givet og skal du vælge i mellem kun et ikon eller kun et ord, vil ordet altid være det bedste og sikreste valg.
+Funktionsikoner bør akkompagneres af et ord, der beskriver funktionaliteten. For næsten alle ikoner gælder det, at betydningen af disse ikke er entydigt givet og skal du vælge imellem kun et ikon eller kun et ord, vil ordet altid være det bedste og sikreste valg.
 
 Enkelte ikoner kan stå alene, hvis der fx skal spares på pladsen i en tabel. Det drejer sig fx om: slet, rediger, print, pdf og gem, der er relativt konventionelle ikoner.
 

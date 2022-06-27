@@ -2,7 +2,7 @@
   "params":{
     "id": "input-type-text",
     "label": {
-      "text": "Tekstfelt med label"
+      "text": "Inputfelt med label"
     },
     "name": "input-type-text"
   }
