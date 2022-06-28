@@ -7,7 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse."
 tags: 
-lead: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse."
+lead: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse. Brugerens første tryk på tab-tasten vil få et skjult link til at komme frem, der lader brugeren skippe menuen og gå direkte til sidens indhold."
 ---
 
 {% include code/preview-image.html component="skip-link-eksempel" image="skiplink" code="/kode/komponenter/skip-link/" %}

@@ -2,6 +2,11 @@
 permalink: "/kode/komponenter/toastbesked/"
 redirect_from:
 - /kode/komponenter/notifikation/
+- /eksempel/toastbesked/
+- /eksempel/notification-success/
+- /eksempel/notification-warning/
+- /eksempel/notification-error/
+- /eksempel/notification-info/
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
@@ -22,7 +27,7 @@ subnav:
   href: "#information"
 ---
 
-{% include code/preview-box.html component="notification-info" title="Eksempel på toastbesked komponent" %}
+{% include code/preview-box.html component="toastbesked-info" title="Eksempel på toastbesked komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
@@ -48,7 +53,7 @@ Ved at bruge nedenstående javascript vil dette komme ud af boksen. Men bemærk 
 #### Placering
 Toastbeskeder placeres i en div med class `toast-container`. Denne div placeres som første element i `<main>`.
 
-<a href="/eksempel/notification/" target="_blank">Se fungerende eksempel på implementering af toastbesked i et nyt vindue</a>
+<a href="/eksempel/toastbesked/" target="_blank">Se fungerende eksempel på implementering af toastbesked i et nyt vindue</a>
 
 ### Javascript
 Der medfølger Javascript til komponenten, som man kan vælge at bruge. 
@@ -73,16 +78,16 @@ toast.hide();
 
 {:#succes}
 ### Succes
-{% include code/syntax.html component="notification-success" link="true" %}
+{% include code/syntax.html component="toastbesked-success" link="true" %}
 
 {:#advarsel}
 ### Advarsel
-{% include code/syntax.html component="notification-warning" link="true" %}
+{% include code/syntax.html component="toastbesked-warning" link="true" %}
 
 {:#fejl}
 ### Fejl
-{% include code/syntax.html component="notification-error" link="true" %}
+{% include code/syntax.html component="toastbesked-error" link="true" %}
 
 {:#information}
 ### Information
-{% include code/syntax.html component="notification-info" link="true" %}
+{% include code/syntax.html component="toastbesked-info" link="true" %}

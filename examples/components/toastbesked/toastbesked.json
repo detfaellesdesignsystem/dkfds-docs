@@ -1,6 +1,6 @@
 {
   "button_example": {
-      "text": "Tilføj notifikation",
+      "text": "Vis en toastbesked",
       "classes": "primary",
       "attributes": "id=\"toast-example-button\""
   }

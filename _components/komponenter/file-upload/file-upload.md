@@ -29,42 +29,9 @@ Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil b
 Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
 ## Fejlmeddelelse
-<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser.</a>
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/#vedhaeft-fil">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
-
-### Fejlbeskeder
-
-#### Ingen fil er valgt
-Skriv "Vælg en [dokumenttype]".<br />
-Fx "Vælg en lægeerklæring".
-
-#### Den valgte fil er forkert filtype
-Skriv "Den valgte fil skal være af typen [liste af filtyper]".<br />
-Fx "Den valgte fil skal være af typen CSV eller ODS" eller "Den valgte fil skal være af typen JPG, BMP, PNG, TIF eller PDF".
-
-#### Filen er for stor
-Skriv "Filens størrelse skal være under [største filstørrelse]".<br />
-Fx "Filens størrelse skal være under 2MB".
-
-#### Filen er tom
-Skriv "Den valgte fil er tom".
-
-#### Filen indeholder en virus
-Skriv "Den valgte fil indeholder en virus".
-
-#### Filen er beskyttet af en adgangskode
-Skriv "Den valgte fil er beskyttet af en adgangskode".
-
-#### Der var en fejl, og filen ikke kunne uploades
-Skriv "Den valgte fil kunne ikke uploades - prøv venligst igen".
-
-#### Der er en begrænsning på antal filer brugeren kan vælge
-Skriv "Du kan kun vælge op til [højeste antal filer] filer på samme tid".<br />
-Fx "Du kan kun vælge op til 10 filer på samme tid".
-
-#### Der ikke er brugt den korrekte skabelon
-Skriv "Den valgte fil skal gøre brug af skabelonen".
 
 {:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger

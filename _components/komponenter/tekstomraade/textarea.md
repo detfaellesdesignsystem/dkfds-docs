@@ -54,6 +54,6 @@ ISO 9241-143: Forms (2012)
 - <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
 
 ## Fejlmeddelelse
-<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/#tekstomraade">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.

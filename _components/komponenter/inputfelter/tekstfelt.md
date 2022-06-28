@@ -107,14 +107,14 @@ Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så b
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
 
-<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/#inputfelt">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
 
 {:#hjaelpetekst}
 ## Hjælpetekst
 
-{% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på inputfelt med hjælpetekst" code="/kode/komponenter/inputfelter/#felt-med-hjaelpetekst" %}
+{% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på inputfelt med hjælpetekst" code="/kode/komponenter/inputfelter/#hjaelpetekst" %}
 
 {% include dos-donts-box.html component="text-input-helptext-dos-donts" title="Felt med hjælpetekst do's and don'ts" %}
 
@@ -155,11 +155,11 @@ Hvis en formular indeholder flere frivillige end obligatoriske inputfelter, frem
 
 {:#read-only}
 ## Read-only
-{% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly inputfelt" code="/kode/komponenter/felter/#read-only-felt" %}
+{% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly inputfelt" code="/kode/komponenter/inputfelter/#read-only" %}
 
 {:#deaktiveret}
 ## Deaktiveret
-{% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/kode/komponenter/felter/#read-only-felt" %}
+{% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/kode/komponenter/inputfelter/#deaktiveret" %}
 
 Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af <a href="#read-only">read-only</a>.
 
@@ -173,7 +173,7 @@ Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyld
 
 {:#feltbredde}
 ## Feltbredde
-{% include code/preview-box.html component="text-input-width" link=false title="Eksempel på felter med forskellig bredde" code="/kode/komponenter/felter/#feltbredde" %}
+{% include code/preview-box.html component="text-input-width" link=false title="Eksempel på felter med forskellig bredde" code="/kode/komponenter/inputfelter/#feltbredde" %}
 
 {% include dos-donts-box.html component="text-input-width-dos-donts" title="Feltbredde do's and don'ts" %}
 

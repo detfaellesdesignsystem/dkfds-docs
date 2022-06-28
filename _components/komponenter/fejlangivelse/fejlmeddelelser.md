@@ -23,6 +23,24 @@ tags:
 - fejlmedelelser
 - fejlmeddellelser
 - fejlmedellelser
+subnav:
+- text: Datofelter
+  href: "#datofelter"
+- text: Datovælger
+  href: "#datovaelger"
+- text: Dropdown
+  href: "#dropdown"
+- text: Inputfelt
+  href: "#inputfelt"
+- text: Radioknapper
+  href: "#radioknapper"
+- text: Tekstområde
+  href: "#tekstomraade"
+- text: Tjekboks
+  href: "#tjekboks"
+- text: Vedhæft fil
+  href: "#vedhaeft-fil"
+
 ---
 {% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" link="true" code="/kode/komponenter/fejlmeddelelser/" %}
 
@@ -123,46 +141,78 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 - <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
 
 
-{:.h3}
+{:.h3 #datofelter}
 ## Datofelter
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 
-{:.h3}
+{:.h3 #datovaelger}
 ## Datovælger
 
 {% include code/preview-box.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" %}
 
-{:.h3}
+{:.h3 #dropdown}
 ## Dropdown
 
 {% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 
-{:.h3}
-## Radioknapper
-
-{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
-
-{:.h3}
+{:.h3 #inputfelt}
 ## Inputfelt
 
 {% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
 
 {:.h4}
 ### Inputfelt med suffix
+
 {% include code/preview-box.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" %}
 
-{:.h3}
+{:.h3 #radioknapper}
+## Radioknapper
+
+{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
+
+{:.h3 #tekstomraade}
 ## Tekstområde
 
 {% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" %}
 
-{:.h3}
+{:.h3 #tjekboks}
 ## Tjekboks
 
 {% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" %}
 
-{:.h3}
+{:.h3 #vedhaeft-fil}
 ## Vedhæft fil
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
+
+#### Ingen fil er valgt
+Skriv "Vælg en [dokumenttype]".<br />
+Fx "Vælg en lægeerklæring".
+
+#### Den valgte fil er forkert filtype
+Skriv "Den valgte fil skal være af typen [liste af filtyper]".<br />
+Fx "Den valgte fil skal være af typen CSV eller ODS" eller "Den valgte fil skal være af typen JPG, BMP, PNG, TIF eller PDF".
+
+#### Filen er for stor
+Skriv "Filens størrelse skal være under [største filstørrelse]".<br />
+Fx "Filens størrelse skal være under 2MB".
+
+#### Filen er tom
+Skriv "Den valgte fil er tom".
+
+#### Filen indeholder en virus
+Skriv "Den valgte fil indeholder en virus".
+
+#### Filen er beskyttet af en adgangskode
+Skriv "Den valgte fil er beskyttet af en adgangskode".
+
+#### Der var en fejl, og filen ikke kunne uploades
+Skriv "Den valgte fil kunne ikke uploades - prøv venligst igen".
+
+#### Der er en begrænsning på antal filer brugeren kan vælge
+Skriv "Du kan kun vælge op til [højeste antal filer] filer på samme tid".<br />
+Fx "Du kan kun vælge op til 10 filer på samme tid".
+
+#### Der ikke er brugt den korrekte skabelon
+Skriv "Den valgte fil skal gøre brug af skabelonen".

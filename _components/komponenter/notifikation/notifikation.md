@@ -9,9 +9,6 @@ category: Komponenter_category
 subcategory: Komponenter
 description: 
 lead: Toastbeskeder bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l. 
-component: notification
-componentTitle: Eksempel på toastbesked
-componentCode: "/kode/komponenter/toastbesked/"
 anchor: true
 subnav:
 - text: Succes
@@ -25,6 +22,7 @@ subnav:
 - text: Uden brødtekst
   href: "#uden-brødtekst"
 ---
+{% include code/preview-box.html component="toastbesked" title="Eksempel på toastbesked" link=true code="/kode/komponenter/toastbesked/" %}
 
 Til forskel fra <a href="/komponenter/beskeder/">Beskeder (alerts)</a> som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
 Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige til at opfattes som anmassende og påtrængende, så overvej nøje om det er denne komponent, der er det rigtige valg.
