@@ -55,7 +55,7 @@ var exampleUrls = [
                     if(document.getElementsByClassName('footer').length > 0){
                         document.getElementsByClassName('footer')[0].style.marginTop = "0px";
                     }
-                    if(document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
+                    if(document.getElementsByTagName('body') !== null  && document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
                         var eventClick = new Event('mouseenter');
                         document.getElementsByClassName('js-tooltip')[0].dispatchEvent(eventClick);
                     }

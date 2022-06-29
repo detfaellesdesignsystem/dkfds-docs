@@ -6,7 +6,7 @@
   </head>
   <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
-    {% if page.title contains "Notification" %}
+    {% if page.title contains "Toastbesked" %}
     <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     <main class="container page-container" id="main-content">
       <div class="toast-container"></div>
@@ -24,7 +24,7 @@
 
     {{ content }}
     {% endif %}
-    {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" or  page.title contains "Notification" %}
+    {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" or page.title contains "Toastbesked" %}
     {% unless page.title contains "header" or page.title contains "Header"%}
     <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     {% endunless %}
@@ -41,7 +41,7 @@
     {% if page.url contains "table" %}
     <script src="{{ site.baseurl }}/assets/js/table.js"></script>
     {% endif %}
-    {% if page.url contains "notifikation" or page.url contains "notification" %}
+    {% if page.url contains "notifikation" or page.url contains "notification" or page.url contains "toastbesked" %}
     <script src="{{ site.baseurl }}/assets/js/toast.js"></script>
     {% endif %}
     {% if page.url contains "language-switcher" %}

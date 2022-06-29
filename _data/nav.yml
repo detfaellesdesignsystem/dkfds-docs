@@ -73,39 +73,46 @@ Komponenter_category:
   - href: /komponenter/broedkrumme/
   - href: /komponenter/cards/
   - href: /komponenter/cookiemeddelelse/
-  - href: /komponenter/dato-felt/
-  - href: /komponenter/datovaelger/
+  - href: /komponenter/datoangivelse/
+    categorynav: 'komponenter_datoangivelse'
   - href: /komponenter/detaljer/
-  - href: /komponenter/drop-down/
-  - href: /komponenter/faneblad/
-  - href: /komponenter/fejlmeddelelser/
-  - href: /komponenter/fejlopsummering/
-  - href: /komponenter/felter/
-  - href: /komponenter/footers/
-  - href: /komponenter/formular/
+  - href: /komponenter/dropdown/
+  - href: /komponenter/faneblade/
+  - href: /komponenter/fejlangivelse/
+    categorynav: 'komponenter_fejlangivelse'
+  - href: /komponenter/footer/
   - href: /komponenter/funktionslink/
-  - href: /komponenter/headers/
+  - href: /komponenter/skip-link/
+  - href: /komponenter/header/
+  - href: /komponenter/inputfelter/
   - href: /komponenter/knapper/
+  - href: /komponenter/spinner/
   - href: /komponenter/modal/
-  - href: /komponenter/notifikation/
   - href: /komponenter/overflowmenu/
   - href: /komponenter/paginering/
   - href: /komponenter/radioknap/
-  - href: /komponenter/sidenav/
-  - href: /komponenter/skip-link/
-  - href: /komponenter/spinner/
-  - href: /komponenter/sprogvaegler/
+  - href: /komponenter/sprogvaelger/
   - href: /komponenter/strukturerede-lister/
   - href: /komponenter/search/
-  - href: /komponenter/tilbage-link/
   - href: /komponenter/tables/
   - href: /komponenter/tags/
-  - href: /komponenter/textarea/
+  - href: /komponenter/tekstomraade/
+  - href: /komponenter/tilbage-link/
   - href: /komponenter/tjekboks/
+  - href: /komponenter/toastbesked/
   - href: /komponenter/toggle/
   - href: /komponenter/tooltip/
-  - href: /komponenter/trinindikatorer/
+  - href: /komponenter/trinindikator/
   - href: /komponenter/fil-upload/
+  - href: /komponenter/venstremenu/
+
+komponenter_datoangivelse:
+  - href: /komponenter/datoangivelse/datofelter/
+  - href: /komponenter/datoangivelse/datovaelger/
+
+komponenter_fejlangivelse:
+  - href: /komponenter/fejlangivelse/fejlmeddelelser/
+  - href: /komponenter/fejlangivelse/fejlopsummering/
 
 Kode_category:
 - href: /kode/implementering/
@@ -124,44 +131,49 @@ Kode_category:
 
 #Left menu for komponent-category
 Kode_Komponenter_category:
-- href: /kode/komponenter/accordions/
-- href: /kode/komponenter/badges/
-- href: /kode/komponenter/beskeder/
-- href: /kode/komponenter/broedkrumme/
-- href: /kode/komponenter/cards/
-- href: /kode/komponenter/cookiemeddelelse/
-- href: /kode/komponenter/dato-felt/
-- href: /kode/komponenter/datovaelger/
-- href: /kode/komponenter/detaljer/
-- href: /kode/komponenter/drop-down/
-- href: /kode/komponenter/faneblad/
-- href: /kode/komponenter/fejlmeddelelser/
-- href: /kode/komponenter/fejlopsummering/
-- href: /kode/komponenter/felter/
-- href: /kode/komponenter/footers/
-- href: /kode/komponenter/formular/
-- href: /kode/komponenter/funktionslink/
-- href: /kode/komponenter/headers/
-- href: /kode/komponenter/knapper/
-- href: /kode/komponenter/modal/
-- href: /kode/komponenter/notifikation/
-- href: /kode/komponenter/overflowmenu/
-- href: /kode/komponenter/paginering/
-- href: /kode/komponenter/radioknap/
-- href: /kode/komponenter/sidenav/
-- href: /kode/komponenter/skip-link/
-- href: /kode/komponenter/spinner/
-- href: /kode/komponenter/sprogvaegler/
-- href: /kode/komponenter/strukturerede-lister/
-- href: /kode/komponenter/search/
-- href: /kode/komponenter/tilbage-link/
-- href: /kode/komponenter/tables/
-- href: /kode/komponenter/tags/
-- href: /kode/komponenter/textarea/
-- href: /kode/komponenter/tjekboks/
-- href: /kode/komponenter/tooltip/
-- href: /kode/komponenter/trinindikatorer/
-- href: /kode/komponenter/fil-upload/
+  - href: /kode/komponenter/accordions/
+  - href: /kode/komponenter/badges/
+  - href: /kode/komponenter/beskeder/
+  - href: /kode/komponenter/broedkrumme/
+  - href: /kode/komponenter/cards/
+  - href: /kode/komponenter/cookiemeddelelse/
+  - href: /kode/komponenter/datofelter/
+  - href: /kode/komponenter/datovaelger/
+  - href: /kode/komponenter/detaljer/
+  - href: /kode/komponenter/dropdown/
+  - href: /kode/komponenter/faneblade/
+  - href: /kode/komponenter/fejlmeddelelser/
+  - href: /kode/komponenter/fejlopsummering/
+  - href: /kode/komponenter/footer/
+  - href: /kode/komponenter/funktionslink/
+  - href: /kode/komponenter/skip-link/
+  - href: /kode/komponenter/header/
+  - href: /kode/komponenter/inputfelter/
+  - href: /kode/komponenter/knapper/
+  - href: /kode/komponenter/spinner/
+  - href: /kode/komponenter/modal/
+  - href: /kode/komponenter/overflowmenu/
+  - href: /kode/komponenter/paginering/
+  - href: /kode/komponenter/radioknap/
+  - href: /kode/komponenter/sprogvaelger/
+  - href: /kode/komponenter/strukturerede-lister/
+  - href: /kode/komponenter/search/
+  - href: /kode/komponenter/tables/
+  - href: /kode/komponenter/tags/
+  - href: /kode/komponenter/tekstomraade/
+  - href: /kode/komponenter/tilbage-link/
+  - href: /kode/komponenter/tjekboks/
+  - href: /kode/komponenter/toastbesked/
+  - href: /kode/komponenter/toggle/
+  - href: /kode/komponenter/tooltip/
+  - href: /kode/komponenter/trinindikator/
+  - href: /kode/komponenter/fil-upload/
+  - href: /kode/komponenter/venstremenu/
+
+  
+kode_komponenter_fejlangivelse:
+  - href: /kode/komponenter/fejlangivelse/fejlmeddelelser/
+  - href: /kode/komponenter/fejlangivelse/fejlopsummering/
 
 Eksempler_category:
 - href: /eksempler/selvbetjeningsloesninger/
@@ -172,6 +184,7 @@ Eksempler_category:
 Patterns_category:
 - href: /eksempler/patterns/angivelse-af-telefonnummer/
 - href: /eksempler/patterns/forlad-siden/
+- href: /eksempler/patterns/formular/
 - href: /eksempler/patterns/session-udloeber/
 
 Faellesskab_category:

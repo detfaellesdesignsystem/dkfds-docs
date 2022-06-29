@@ -1,0 +1,24 @@
+{
+  "select_example": {
+    "name": "options",
+    "id": "options",
+    "errorMessage": "Vælg en mulighed",
+    "label": {
+      "text": "Dropdown label (select)"
+    },
+    "options": [
+      {
+        "value": "option1",
+        "text": "Mulighed 1"
+      },
+      {
+        "value": "option2",
+        "text": "Mulighed 2"
+      },
+      {
+        "value": "option3",
+        "text": "Mulighed 3"
+      }
+    ]
+  }
+}

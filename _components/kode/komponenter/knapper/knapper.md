@@ -3,7 +3,7 @@ permalink: /kode/komponenter/knapper/
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
-title: Knapper
+title: Knapper (Buttons)
 category: Kode_category
 subcategory: Kode
 description: "Dokumentation på implementering af knapper."

@@ -4,7 +4,7 @@ redirect_from:
 - /komponenter/radiobutton/
 layout: styleguide
 type: component
-title: Radioknap
+title: Radioknap (Radio button)
 category: Komponenter_category
 subcategory: Komponenter
 anchor: true
@@ -38,7 +38,7 @@ Når listen over mulige valg kan være på en mobilvisning.
 
 Når brugeren skal kunne vælge mere end én værdi ud fra en synlig liste. Her skal du i stedet bruge tjekbokse.
 
-Du bør overveje at anvende en dropdown menu, hvis antallet af mulige værdier er for mange til en mobilvisning.
+Du bør overveje at anvende en dropdown, hvis antallet af mulige værdier er for mange til en mobilvisning.
 
 Når brugeren skal kunne undlade at vælge en værdi.
 

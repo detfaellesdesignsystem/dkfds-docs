@@ -278,12 +278,11 @@ let setScreenshots = function(){
         }
     }
 
-    if(document.getElementsByTagName('body')[0].classList.contains('page-skip-link') 
-        || document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') 
+    if(document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link')
         || document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') 
         || document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger') 
-        ||  document.getElementsByTagName('body')[0].classList.contains('page-footers') 
-        || document.getElementsByTagName('body')[0].classList.contains('page-headers') 
+        || document.getElementsByTagName('body')[0].classList.contains('page-footer') 
+        || document.getElementsByTagName('body')[0].classList.contains('page-header') 
         || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
         let screenshots = document.querySelectorAll('.screenshot');
         for(let i = 0; i < screenshots.length; i++){

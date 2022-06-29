@@ -2,13 +2,13 @@
 permalink: /komponenter/tilbage-link/
 layout: styleguide
 type: element
-title: Tilbage link
+title: Tilbage-link
 category: Komponenter_category
 description: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 subcategory: Komponenter
 component: back-link
-componentTitle: "Eksempel på tilbage link"
+componentTitle: "Eksempel på tilbage-link"
 componentCode: "/kode/komponenter/tilbage-link/"
 ---
 
@@ -27,7 +27,7 @@ Brug aldrig tilbage-link-komponenten sammen med brødkrummer. Vælg enten tilbag
 {:.h3}
 ## Vejledning
 
-Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen) på trinnet/siden. Bruges tilbage-linket i selvbetjeningsløsninger, der har en synlig tringuide eller en venstremenu, placeres tilbage-linket øverst venstrestillet over indholdet.
+Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen) på trinnet/siden. Bruges tilbage-linket i selvbetjeningsløsninger, der har en synlig trinindikator eller en venstremenu, placeres tilbage-linket øverst venstrestillet over indholdet.
 
 Sørg for, at tilbage-linket fører brugerne til den forrige side, de var på, i den tilstand, de sidst så trinnet/siden.
 

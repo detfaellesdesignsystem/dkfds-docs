@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "core-js": "^3.21.1",
-    "dkfds": "^7.5.3"
+    "dkfds": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.4",

@@ -1,7 +1,7 @@
 ---
 permalink: /kode/komponenter/spinner/
 parentlink: /kode/komponenter/
-title: Spinner
+title: Loading spinner
 layout: styleguide
 type: component
 category: Kode_category

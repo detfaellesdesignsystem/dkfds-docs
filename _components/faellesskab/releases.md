@@ -135,9 +135,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Ny komponent: <a href="/komponenter/paginering/">Paginering</a>
 - Ny komponent: <a href="/komponenter/strukturerede-lister/">Strukturerede lister</a>
-- Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikatorer/">trinindikator</a>
+- Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikator/">trinindikator</a>
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
-- <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
+- <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
 - <span class="badge badge-info badge-small mr-3">Change</span> Ændret <a href="/design/ikoner/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
@@ -149,20 +149,20 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Ændret attributter for <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet gamle <a href="/design/ikoner/">ikoner</a>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Tilføjet <a href="/kode/komponenter/beskeder/">JavaScript til luk knap i beskeder</a>
-- Tilføjet <a href="/komponenter/modal/#kraever-handling">modalvindue</a> som kræver handling, så brugeren ikke kan lukke modalvinduet uden at tage stilling til dets indhold. 
-- <span class="badge badge-info badge-small mr-3">Change</span> Ved luk af <a href="/komponenter/modal/">modalvindue</a> sættes fokus på element, som åbnede modalvinduet
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Luk modalvindue, hvis en ny <a href="/komponenter/modal/">modalvindue</a> åbnes.
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Forbedret <a href="/komponenter/headers/#standard-header-med-navigation">navigation i headeren</a> på mobil.
+- Tilføjet <a href="/komponenter/modal/#kraever-handling">modal</a> som kræver handling, så brugeren ikke kan lukke modalen uden at tage stilling til dets indhold. 
+- <span class="badge badge-info badge-small mr-3">Change</span> Ved luk af <a href="/komponenter/modal/">modal</a> sættes fokus på element, som åbnede modalen
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Luk modal, hvis en ny <a href="/komponenter/modal/">modal</a> åbnes.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Forbedret <a href="/komponenter/header/#standard-header-med-navigation">navigation i headeren</a> på mobil.
 - Vis <a href="/komponenter/tjekboks/">tjekbokse</a> og <a href="/komponenter/radioknap/">radioknapper</a> ved print.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.
 - Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/">datovælgeren</a>.
 - Opdateret breakpoints i <a href="/komponenter/knapper/">knapper</a>, så knapperne ikke er helt så brede på mindre skærme.
 - Fjernet accordion uden ramme.
-- Tilpasset afstande i <a href="/komponenter/modal/">modalvindue</a> på mindre skærme
+- Tilpasset afstande i <a href="/komponenter/modal/">modal</a> på mindre skærme
 - Opdateret normalize.css til v8.0.1
 - Fjernet styling på <a href="/komponenter/badges/">badges</a>, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.
-- Grå baggrundsfarve på <a href="/komponenter/drop-down/">dropdown-menu</a> i Firefox er ændret til hvid.
-- <a href="/komponenter/headers/">Header komponent</a>: Log af og Log på knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.
+- Grå baggrundsfarve på <a href="/komponenter/dropdown/">dropdown</a> i Firefox er ændret til hvid.
+- <a href="/komponenter/header/">Header komponent</a>: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.
 - Lille fejl i border på <a href="/komponenter/tables/">tabeller</a> er fikset.
 - Bredde på <a href="/komponenter/overflowmenu/">overflow menu</a> ændret til at fylde hele skærmens bredde på små skærme.
 - Ændringer i opførelse af <a href="/komponenter/tooltip/">tooltip</a>, for at sikre teksten kan markeres.
@@ -200,14 +200,14 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">29-09-2021</span></div>
 
 - <a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a>
-- <a href="/komponenter/felter/#prefix-og-suffix">Prefix og suffix på felter</a>
-- Småtilpasninger i designet på <a href="/komponenter/modal/">modalvinduer</a>
+- <a href="/komponenter/inputfelter/#prefix-og-suffix">Prefix og suffix på felter</a>
+- Småtilpasninger i designet på <a href="/komponenter/modal/">modaler</a>
 - Opdateret design på <a href="/komponenter/datovaelger/">datovælger</a>
-- Tilføjet 72px i bunden af <a href="/komponenter/footers/">footer</a>
+- Tilføjet 72px i bunden af <a href="/komponenter/footer/">footer</a>
 - Tilføjet styling og retningslinjer for <a href="/komponenter/tables/#sortering-i-tabeller">sortering i tabeller</a>
 - Tilføjet eksempel og retningslinjer på <a href="/komponenter/tables/#søgning-i-tabeller">søgning i tabeller</a>
 - Tilføjet en tykkere border i bunden af <a href="/komponenter/knapper/">knapper</a>
-- Opdateret <a href="/komponenter/felter/#obligatoriske-og-frivillige-felter">retningslinjer for obligatoriske og frivillige felter</a>
+- Opdateret <a href="/komponenter/inputfelter/#obligatoriske-og-frivillige-felter">retningslinjer for obligatoriske og frivillige felter</a>
 - Tilføjet <a href="/design/ikoner/?s=sorter">ikoner til sortering i tabel</a>
 - Tilføjet variant til <a href="/komponenter/overflowmenu/#sortering">overflow menu til brug ved sortering</a>
 - Ændret ikon i <a href="/komponenter/detaljer/">detalje komponent</a>
@@ -227,12 +227,12 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
 - <a href="/design/ikoner/">Ikontaksonomi</a>
-- Ny komponent: <a href="/komponenter/notifikation/">Notifikation (Toast) komponent</a>
+- Ny komponent: <a href="/komponenter/toastbesked/">Notifikation (Toast) komponent</a>
 - Fjernet unødvendige kald til fontfiler
 - Timing issue på datovælger - sæt ikke knappen, hvis den allerede eksisterer
 - Generel oprydning i dependencies
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/130" class="icon-link">issue #130 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Håndtering af situation: Escape funktion på <a href="/komponenter/overflowmenu/">overflow menu</a> og <a href="/komponenter/modal/">modalvinduer</a> kolliderer og lukker begge, når en overflow er inde i en modal
+- Håndtering af situation: Escape funktion på <a href="/komponenter/overflowmenu/">overflow menu</a> og <a href="/komponenter/modal/">modaler</a> kolliderer og lukker begge, når en overflow er inde i en modal
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/125" class="icon-link">issue #125 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <a href="/design/borders/#streger">Facit streger</a>
 - Udvidelse af breakpoint for <a href="/kode/komponenter/tables/#responsiv">responsiv tabel</a>
@@ -262,16 +262,16 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">28-10-2020</span></div>
 
-- Fikset fejl, hvor border ved aktivt menupunkt i <a href="/komponenter/headers/">header</a> hopper ved hover.
+- Fikset fejl, hvor border ved aktivt menupunkt i <a href="/komponenter/header/">header</a> hopper ved hover.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Fikset fejl i Internet Explorer, hvor <a href="/komponenter/felter/#feltbredde">feltbredde i tekstfelter</a> er defineret ved antal karakterer bliver ignoreret.
-- Luk <a href="/komponenter/overflowmenu/">overflow menu</a> i <a href="/komponenter/headers/">header</a> ved klik uden for menuen.
-- Tilføjet ARIA attributter i <a href="/komponenter/trinindikatorer/">trinindikator</a> for bedre tilgængelighed
+- Fikset fejl i Internet Explorer, hvor <a href="/komponenter/inputfelter/#feltbredde">feltbredde i tekstfelter</a> er defineret ved antal karakterer bliver ignoreret.
+- Luk <a href="/komponenter/overflowmenu/">overflow menu</a> i <a href="/komponenter/header/">header</a> ved klik uden for menuen.
+- Tilføjet ARIA attributter i <a href="/komponenter/trinindikator/">trinindikator</a> for bedre tilgængelighed
 
 {:#version-7-1-0 .mb-0}
 ## Version 7.1.0
 
-- Ny komponent: <a href="/komponenter/sprogvaegler/">Sprogvælger</a>
+- Ny komponent: <a href="/komponenter/sprogvaelger/">Sprogvælger</a>
 
 {:#version-7-0-0 .mb-0}
 ## Version 7.0.0
@@ -302,10 +302,10 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">14-05-2020</span></div>
 
 - Ny komponent: <a href="/komponenter/broedkrumme/">Brødkrumme</a>
-- Mulighed for en mere kompakt <a href="/komponenter/headers/">header</a> med brug af en <a href="/komponenter/knapper/#lille-knap">lille knap</a>
+- Mulighed for en mere kompakt <a href="/komponenter/header/">header</a> med brug af en <a href="/komponenter/knapper/#lille-knap">lille knap</a>
 - Linjehøjden for <a href="/design/typografi/tekst/">lille brødtekst</a> er ændret til 20px
-- Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> og <a href="/komponenter/fejlopsummering/">fejlopsummeringer</a>.
-- <a href="/komponenter/sidenav/">Tilpasset alignment på sidenavigation</a>
+- Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlangivelse/fejlmeddelelser/">fejlmeddelelser</a> og <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummeringer</a>.
+- <a href="/komponenter/venstremenu/">Tilpasset alignment på venstremenu</a>
 
 {:#version-6-0-1 .mb-0}
 ## Version 6.0.1
@@ -316,7 +316,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/104" class="icon-link">issue #104 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Understøttelse af Tippy.js v6.1.0
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/105" class="icon-link">issue #105 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Tilpasset CSS til faneblad, så der ikke længere kommer fejl ved import af dkfds scss i angular.
+- Tilpasset CSS til faneblade, så der ikke længere kommer fejl ved import af dkfds scss i angular.
 
 {:#version-6-0-0 .mb-0}
 ## Version 6.0.0
@@ -329,11 +329,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Rettet fejl med border i tabel.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet mulighed for styling af <a href="/design/typografi/overskrifter/#overskrift-som-link">links i overskrifter</a>.
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblad/" title="Læs mere om faneblads-komponenten">Fanebladskomponenten</a> er ændret i HTML og JavaScript.
-- Ændret aktive farve på undermenupunkt i <a href="/komponenter/sidenav/">sidenavigation</a>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblade/" title="Læs mere om faneblade">Faneblade</a> er ændret i HTML og JavaScript.
+- Ændret aktive farve på undermenupunkt i <a href="/komponenter/venstremenu/">venstremenu</a>
 - Tilføjet retningslinjer for <a href="/komponenter/funktionslink/">funktionslink</a>, <a href="/komponenter/tilbage-link/">tilbage-link</a> og <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a>.
-- <span class="badge badge-info badge-small mr-3">Change</span> Tilføjet korrekte ARIA attributer på <a href="/kode/komponenter/sidenav/" title="Se koden til sidenavigationen">sidenavigationen</a>, <a href="/kode/komponenter/headers/" title="Se koden til mobilmenu og headermenu">mobilmenu og headermenuen</a>.
-- Fikset fejl på <a href="/komponenter/trinindikatorer/#responsiv">responsiv trinindikator</a>.
+- <span class="badge badge-info badge-small mr-3">Change</span> Tilføjet korrekte ARIA attributer på <a href="/kode/komponenter/venstremenu/" title="Se koden til venstremenuen">venstremenuen</a>, <a href="/kode/komponenter/header/" title="Se koden til mobilmenu og headermenu">mobilmenu og headermenuen</a>.
+- Fikset fejl på <a href="/komponenter/trinindikator/#responsiv">responsiv trinindikator</a>.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 {:#version-5-3-0 .mb-0}
@@ -342,10 +342,10 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">16-12-2019</span></div>
 
 - <a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.
-- Mere padding i toppen af <a href="/komponenter/headers/#header-medium">navbar indeholdende funktionslink og overflow menu i header</a>.
+- Mere padding i toppen af <a href="/komponenter/header/#header-medium">navbar indeholdende funktionslink og overflow menu i header</a>.
 - Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.
 - <a href="/design/typografi/lister/">Lister</a> har fået nyt udtryk.
-- Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/headers/">header</a> samt <a href="/komponenter/sidenav/">sidenavigationen</a>.
+- Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/header/">header</a> samt <a href="/komponenter/venstremenu/">venstremenuen</a>.
 - Tilføjet mulighed for <a href="/komponenter/radioknap/#hjælpetekst">hjælpetekst på radioknap</a>.
 - Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.
 - Tilpasset retningslinjer for <a href="/komponenter/radioknap/#skjult-indhold-collapse">Skjul/vis med radioknapper</a>.
@@ -361,7 +361,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Teksten i <a href="/komponenter/cards/#cards-med-samme-højde">cards med samme højde</a> placeres nu korrekt
 - Tilføjet mere afstand mellem links i footer
 - Overskriftstørrelser på mobil er blevet opdateret
-- Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/sidenav/#ekstra-information">sidenavigation med ekstra information</a> og <a href="/komponenter/trinindikatorer/#ekstra-information">trinindikator med ekstra information</a>
+- Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/venstremenu/#ekstra-information">venstremenu med ekstra information</a> og <a href="/komponenter/trinindikator/#ekstra-information">trinindikator med ekstra information</a>
 - Tilføjet eksempel på tabel i Datatable
 <span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
 - Opdateret <a href="/kode/eksempler-implementering/">Eksempel på implementering i Angular</a>
@@ -392,13 +392,13 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/kode/implementering/">implementering af DKFDS til udviklere</a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/sidenav/">Sidenavigationen</a> har fået nyt design.
-<span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/sidenav/">sidenavigations-komponenten</a>.</span>
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblad/">Faneblads-komponenten</a> er blevet redefineret.
-<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblad/">faneblads-komponenten</a>.</span>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/venstremenu/">Venstremenuen</a> har fået nyt design.
+<span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/venstremenu/">venstremenu-komponenten</a>.</span>
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> <a href="/komponenter/faneblade/">Faneblade</a> er blevet redefineret.
+<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblade/">faneblade</a>.</span>
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>
-- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Modalvinduer-komponenten er blevet flyttet til plugins.
+- <span class="badge badge-warning badge-small mr-3">Breaking change</span> Modal-komponenten er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span>
 - Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>. 
@@ -411,7 +411,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">20-08-2019</span></div>
 
 - <span class="badge badge-info badge-small mr-3">Change</span> Tilpasset CSS til print
-- Farven på valgt menupunkt i sidenavigationen er ændret til #1A1A1A
+- Farven på valgt menupunkt i venstremenu er ændret til #1A1A1A
 - Ændret udseende på tjekboks og radioknap ved print
 - Fikset fejl med border på den sidste række i en tabel
 - Fikset fejl med modal ved print
@@ -437,7 +437,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fjernet margin-top på h1.
 - <span class="badge badge-info badge-small mr-3">Change</span> Fjernet form-group div fra li i radioknap og tjekboks liste (Løser udfordringen med at JAWS skærmlæseren læser skrivebeskyttet ved hver tjekboks eller radioknap).
 - Fikset styling i niveau 4 i sidemenuen på mobil.
-- Fikset tilgængelighed på responsiv tringuide - aria-hidden opdateres nu automatisk alt efter status på komponenten.
+- Fikset tilgængelighed på responsiv trinindikator - aria-hidden opdateres nu automatisk alt efter status på komponenten.
 - Responsiv tabel er  nu sat til display:block på små skærme således at skærmlæsere ikke tror det er en tom tabel.
 
 {:#version-4-1-1 .mb-0}
@@ -461,9 +461,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fjernet tekstmarkøren på et read only felt i Internet Explorer.
 - Tilføjet eksempler på advarsel, når man forlader siden i eksempelløsningerne.
 - Tilføjet afstand af tags, når de fylder flere linjer.
-- Fjernet primærfarve på teksten i faneblad ved hover.
-- Fikset fokusramme på faneblad.
-- Fikset fejl i modalvindue, hvor overskriften blev overlappet af luk knappen.
+- Fjernet primærfarve på teksten i faneblade ved hover.
+- Fikset fokusramme på faneblade.
+- Fikset fejl i modal, hvor overskriften blev overlappet af luk knappen.
 - <span class="badge badge-info badge-small mr-3">Change</span> Log ud skal nu hedde Log af.
 
 {:#version-4-0-1 .mb-0}
@@ -487,7 +487,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Fjernet højde på cards
 - Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.
-- Fikset fokus border på faneblad
+- Fikset fokus border på faneblade
 
 <div class="alert alert-info" role="alert"
     aria-label="Der vises fremhævet information">
@@ -523,7 +523,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Defineret tilbage-knap
 - Tilføjet readonly eksempel i input felter
 - Ændret Skjul/Vis eksempel ved brug af radio knap for at løse tilgængelighedsproblemer
-- Fikset fejl på dropdown-menu i Internet Explorer, hvor pilen blev vist to gange
+- Fikset fejl på dropdown i Internet Explorer, hvor pilen blev vist to gange
 - Nederste border i header ændret til `$outer-border`
 - Tilføjet klassen .nobullet-list, som kan bruges ved liste af links
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Flyttet Pikaday datovælger plugin til Plugins-projektet
@@ -540,7 +540,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <h3 class="h4">Smårettelser til CSS og ikoner</h3>
 
 - `small-text` og `small-tag` klasserne fik ændret font-size fra 13px til 14px
-- Ændrede level 2 og 3 i sidenavigation på mobil
+- Ændrede level 2 og 3 i venstremenu på mobil
 - Rettede ikonerne help og `close-circle`
 
 <h3 class="h4">Smårettelser til eksempler</h3>
@@ -598,7 +598,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
   <p class="form-hint mt-0">Klassen '.content' er fjernet. Max-width style er nu kodet direkte til p, font-lead etc.</p>
 </li>
 <li class="mt-4">
-  Sidenavigation i bunden af eksempelsiderne:
+  Navigation i bunden af eksempelsiderne:
   <p class="form-hint mt-0">"Breadcrumb" er omdøbt til "page-navigation". HTML ser nu således ud:</p>
   <div class="code-highlight">
     <code>

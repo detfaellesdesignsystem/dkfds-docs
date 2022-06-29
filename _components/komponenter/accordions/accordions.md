@@ -37,7 +37,7 @@ Brug ikke accordions til små mængder indhold, der i stedet kunne stå synligt 
 
 Brug ikke accordions til at kollapse indhold i fx søgeresultater eller andre længere oversigter.
 
-Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger. Der bør du eventuelt i stedet anvende en tringuide.
+Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger. Der bør du eventuelt i stedet anvende en trinindikator.
 
 ## Vejledning  
 {: .h3}

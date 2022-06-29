@@ -3,7 +3,8 @@ const puppeteer = require('puppeteer');
 var path = 'pdf/';
 var root = "https://designsystem.dk/";
 var targetRootDir = "pdf/";
-var pdfUrls = ["",
+var pdfUrls = [
+    "",
     "design/",
     "design/farver/",
     "design/typografi/",
@@ -32,42 +33,50 @@ var pdfUrls = ["",
     "komponenter/broedkrumme/",
     "komponenter/cards/",
     "komponenter/cookiemeddelelse/",
-    "komponenter/dato-felt/",
-    "komponenter/datovaelger/",
+    "komponenter/datoangivelse/",
+    "komponenter/datoangivelse/datofelter/",
+    "komponenter/datoangivelse/datovaelger/",
     "komponenter/detaljer/",
-    "komponenter/drop-down/",
-    "komponenter/faneblad/",
-    "komponenter/fejlmeddelelser/",
-    "komponenter/fejlopsummering/",
-    "komponenter/felter/",
-    "komponenter/footers/",
-    "komponenter/formular/",
+    "komponenter/dropdown/",
+    "komponenter/faneblade/",
+    "komponenter/fejlangivelse/",
+    "komponenter/fejlangivelse/fejlmeddelelser/",
+    "komponenter/fejlangivelse/fejlopsummering/",
+    "komponenter/footer/",
     "komponenter/funktionslink/",
-    "komponenter/headers/",
+    "komponenter/skip-link/",
+    "komponenter/header/",
+    "komponenter/inputfelter/",
     "komponenter/knapper/",
+    "komponenter/spinner/",
     "komponenter/modal/",
-    "komponenter/notifikation/",
     "komponenter/overflowmenu/",
     "komponenter/paginering",
     "komponenter/radioknap/",
-    "komponenter/sidenav/",
-    "komponenter/skip-link/",
-    "komponenter/spinner/",
-    "komponenter/sprogvaegler/",
+    "komponenter/sprogvaelger/",
     "komponenter/strukturerede-lister/",
     "komponenter/search/",
-    "komponenter/tilbage-link/",
     "komponenter/tables/",
     "komponenter/tags/",
-    "komponenter/textarea/",
+    "komponenter/tekstomraade/",
+    "komponenter/tilbage-link/",
     "komponenter/tjekboks/",
+    "komponenter/toastbesked/",
     "komponenter/toggle/",
     "komponenter/tooltip/",
-    "komponenter/trinindikatorer/",
+    "komponenter/trinindikator/",
     "komponenter/fil-upload/",
+    "komponenter/venstremenu/",
+    "eksempler/",
+    "eksempler/selvbetjeningsloesninger/",
+    "eksempler/patterns/",
+    "eksempler/patterns/angivelse-af-telefonnummer/",
+    "eksempler/patterns/forlad-siden/",
+    "eksempler/patterns/formular/",
+    "eksempler/patterns/session-udloeber/",
+    "eksempler/templates/",
     "kode/",
     "kode/implementering/",
-    "kode/browserunderstoettelse/",
     "kode/komponenter/",
     "kode/komponenter/accordions/",
     "kode/komponenter/badges/",
@@ -75,39 +84,39 @@ var pdfUrls = ["",
     "kode/komponenter/broedkrumme/",
     "kode/komponenter/cards/",
     "kode/komponenter/cookiemeddelelse/",
-    "kode/komponenter/dato-felt/",
+    "kode/komponenter/datofelter/",
     "kode/komponenter/datovaelger/",
     "kode/komponenter/detaljer/",
-    "kode/komponenter/drop-down/",
-    "kode/komponenter/faneblad/",
+    "kode/komponenter/dropdown/",
+    "kode/komponenter/faneblade/",
     "kode/komponenter/fejlmeddelelser/",
     "kode/komponenter/fejlopsummering/",
-    "kode/komponenter/felter/",
-    "kode/komponenter/footers/",
-    "kode/komponenter/formular/",
+    "kode/komponenter/footer/",
     "kode/komponenter/funktionslink/",
-    "kode/komponenter/headers/",
+    "kode/komponenter/skip-link/",
+    "kode/komponenter/header/",
+    "kode/komponenter/inputfelter/",
     "kode/komponenter/knapper/",
+    "kode/komponenter/spinner/",
     "kode/komponenter/modal/",
-    "kode/komponenter/notifikation/",
     "kode/komponenter/overflowmenu/",
     "kode/komponenter/paginering",
     "kode/komponenter/radioknap/",
-    "kode/komponenter/sidenav/",
-    "kode/komponenter/skip-link/",
-    "kode/komponenter/spinner/",
-    "kode/komponenter/sprogvaegler/",
+    "kode/komponenter/sprogvaelger/",
     "kode/komponenter/strukturerede-lister/",
     "kode/komponenter/search/",
-    "kode/komponenter/tilbage-link/",
     "kode/komponenter/tables/",
     "kode/komponenter/tags/",
-    "kode/komponenter/textarea/",
+    "kode/komponenter/tekstomraade/",
+    "kode/komponenter/tilbage-link/",
     "kode/komponenter/tjekboks/",
+    "kode/komponenter/toastbesked/",
     "kode/komponenter/toggle/",
     "kode/komponenter/tooltip/",
-    "kode/komponenter/trinindikatorer/",
+    "kode/komponenter/trinindikator/",
     "kode/komponenter/fil-upload/",
+    "kode/komponenter/venstremenu/",
+    "kode/browserunderstoettelse/",
     "kode/grid/",
     "kode/typografi/",
     "kode/typografi/overskrifter/",
@@ -121,20 +130,18 @@ var pdfUrls = ["",
     "kode/plugins/",
     "kode/anbefalinger-vaerktoejer/",
     "krav/",
+    "krav-vaerktoej/anvendes-af-virksomheder/",
     "krav/borgerdk-virk/",
     "krav/om-kravene/",
-    "krav/designtjek/",
-    "krav/tilgaengelighed/",
     "faellesskab/",
     "faellesskab/samarbejdsforum/",
+    "faellesskab/governance/",
     "faellesskab/nyhedsmail/",
+    "faellesskab/nyhedsmail/afmeld/",
     "faellesskab/kontakt-support/",
-    "privatlivspolitik-cookies/",
-    "faellesskab/releases/",
     "faellesskab/roadmap/",
-    "eksempler/patterns/angivelse-af-telefonnummer/",
-    "eksempler/patterns/forlad-siden/",
-    "eksempler/patterns/session-udloeber/"
+    "faellesskab/releases/",
+    "privatlivspolitik-cookies/"
 ]
 
 var exampleUrls = [
@@ -144,7 +151,10 @@ var exampleUrls = [
 ];
 
 (async () => {
-    console.log("Starting...");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Starting...");
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
@@ -157,9 +167,12 @@ var exampleUrls = [
     var resWidth = 1366; // width of screenshot
     var resHeight = 1000;
 
-    console.log("...creating pdfs...");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Creating pdfs...");
     for(var i=0; i<pdfUrls.length; i++){
-        await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
+        await page.goto(root + pdfUrls[i], {waitUntil: 'networkidle0', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
@@ -190,12 +203,15 @@ var exampleUrls = [
         var pdfFileName = targetRootDir+(i+1)+'-'+filename+'.pdf';
 
         pdfFiles.push(pdfFileName);
-        await page.pdf({path: pdfFileName, format: "A3", printBackground: true, fullPage: true});
+        await page.pdf({path: pdfFileName, format: "A3", printBackground: true});
     }
 
-    console.log("...creating example page images...");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Creating example page images...");
     for(var i=0; i<exampleUrls.length; i++){
-        await page.goto(root + exampleUrls[i].url, {waitUntil: 'load', timeout: 0});
+        await page.goto(root + exampleUrls[i].url, {waitUntil: 'networkidle0', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
 
@@ -215,9 +231,12 @@ var exampleUrls = [
         await page.screenshot({path: pdfFileName, fullPage: true});
     }
 
-    console.log("...creating page images...");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Creating page images...");
     for(var i=0; i<pdfUrls.length; i++){
-        await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
+        await page.goto(root + pdfUrls[i], {waitUntil: 'networkidle0', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
@@ -247,10 +266,13 @@ var exampleUrls = [
             filename = "frontpage";
         }
         var pdfFileName =  targetRootDir+'screenshots/'+(i+1)+'-'+filename+'.png';
-
+        
         await page.screenshot({path: pdfFileName, fullPage: true});
     }
 
     await browser.close();
-    console.log("Done");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Done");
 })();

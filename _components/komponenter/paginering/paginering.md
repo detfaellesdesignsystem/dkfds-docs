@@ -24,7 +24,7 @@ ved at opdele indholdet over flere sider.
 
 {:.h3}
 ## Anvendes ikke til
-Anvendes ikke til at føre brugeren igennem flere dele af en formular. Anvend da i stedet <a href="/komponenter/trinindikatorer/">trinindikator</a>.
+Anvendes ikke til at føre brugeren igennem flere dele af en formular. Anvend da i stedet <a href="/komponenter/trinindikator/">trinindikator</a>.
 
 {:.h3}
 ## Vejledning

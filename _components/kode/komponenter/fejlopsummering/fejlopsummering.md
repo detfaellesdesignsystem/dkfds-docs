@@ -18,8 +18,8 @@ subnav:
 ## Eksempler og retningslinjer
 
 {:.nobullet-list}
-- <a href="/komponenter/fejlopsummering/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/fejlopsummering/">Eksempler</a>
+- <a href="/komponenter/fejlangivelse/fejlopsummering/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/fejlangivelse/fejlopsummering/">Eksempler</a>
 
 ## Installation
 
