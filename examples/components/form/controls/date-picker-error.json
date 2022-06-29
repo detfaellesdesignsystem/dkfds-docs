@@ -1,9 +1,9 @@
 {
   "parameters": {
-    "id": "datepicker-example1",
+    "id": "datepicker-example-error1",
     "label": {
       "text": "Dato for aftale",
-      "for": "datepicker-example1"
+      "for": "datepicker-example-error1"
     },
     "name": "appointment-date1",
     "required": true,

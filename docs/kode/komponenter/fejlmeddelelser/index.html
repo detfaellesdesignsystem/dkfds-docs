@@ -833,7 +833,7 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
@@ -854,7 +854,7 @@
             
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  " role="none">
 
   
 
@@ -3880,15 +3880,6 @@
 
 
 <li class=" " role="none">
-<a href="#radioknapper"  role="menuitem">Radioknapper</a>
-</li>
-
-    
-
-    
-
-
-<li class=" " role="none">
 <a href="#tekstfelt"  role="menuitem">Inputfelt</a>
 </li>
 
@@ -3898,7 +3889,7 @@
 
 
 <li class=" " role="none">
-<a href="#tekstfeltsuffix"  role="menuitem">Inputfelt med suffix</a>
+<a href="#radioknapper"  role="menuitem">Radioknapper</a>
 </li>
 
     
@@ -4536,9 +4527,8 @@
           <li><a href="#datofelter">Datofelter</a></li>
           <li><a href="#datovaelger">Datovælger</a></li>
           <li><a href="#dropdown">Dropdown</a></li>
-          <li><a href="#radioknapper">Radioknapper</a></li>
           <li><a href="#tekstfelt">Inputfelt</a></li>
-          <li><a href="#tekstfeltsuffix">Inputfelt med suffix</a></li>
+          <li><a href="#radioknapper">Radioknapper</a></li>
           <li><a href="#tekstomraade">Tekstområde</a></li>
           <li><a href="#tjekboks">Tjekboks</a></li>
           <li><a href="#vedhaeft-fil">Vedhæft fil</a></li>
@@ -4689,13 +4679,18 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;datepicker-example1&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;datepicker-example-error1&quot;&gt;
         Dato for aftale
     &lt;/label&gt;
 
+    &lt;span class=&quot;form-error-message&quot; id=&quot;datepicker-example-error1-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Vælg en dato
+    &lt;/span&gt;
+
     &lt;div class=&quot;date-picker&quot;&gt;&lt;input class=&quot;form-input &quot; required
-            id=&quot;datepicker-example1&quot; value=&quot;&quot; name=&quot;appointment-date1&quot;
-            type=&quot;text&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot; &quot;&gt;&lt;/div&gt;
+            id=&quot;datepicker-example-error1&quot; value=&quot;&quot;
+            name=&quot;appointment-date1&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
+            aria-describedby=&quot;datepicker-example-error1-error&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4734,6 +4729,69 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     &lt;/div&gt;
 
 &lt;/form&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h2 class="h3" id="tekstfelt">Inputfelt</h2>
+
+<div class="component-preview component-preview-code  component-code-error-message-name" aria-label="Eksempel på inputfelt med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-message-name/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: error-message-name</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;fullname-error-example&quot;&gt;
+        Hvad er dit fulde navn?
+    &lt;/label&gt;
+
+    &lt;span class=&quot;form-error-message&quot; id=&quot;fullname-error-example-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Skriv dit fulde navn, og adskil
+        for- og efternavne med mellemrum, fx Anders Andersen
+    &lt;/span&gt;&lt;input class=&quot;form-input&quot; id=&quot;fullname-error-example&quot;
+        name=&quot;fullname-error-example&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
+        aria-describedby=&quot; fullname-error-example-error&quot; required /&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 class="h4" id="tekstfeltsuffix">Inputfelt med suffix</h3>
+
+<div class="component-preview component-preview-code  component-code-text-input-suffix-error" aria-label="Eksempel på inputfejl med suffix og fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-suffix-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-suffix-error</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;
+        Pris i 1000 kr.
+    &lt;/label&gt;
+
+    &lt;span class=&quot;form-error-message&quot; id=&quot;input-pris-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv en pris
+    &lt;/span&gt;
+    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input
+            class=&quot;form-input input-char-11&quot; id=&quot;input-pris-error&quot;
+            name=&quot;input-pris&quot; type=&quot;number&quot; aria-invalid=&quot;true&quot;
+            aria-describedby=&quot; input-pris-error-error&quot; required /&gt;
+        &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
 
 
     </div>
@@ -4803,69 +4861,6 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="tekstfelt">Inputfelt</h2>
-
-<div class="component-preview component-preview-code  component-code-error-message-name" aria-label="Eksempel på inputfelt med fejlmeddelelse">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/error-message-name/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: error-message-name</span></a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-
-    &lt;label class=&quot;form-label&quot; for=&quot;fullname-error-example&quot;&gt;
-        Hvad er dit fulde navn?
-    &lt;/label&gt;
-
-    &lt;span class=&quot;form-error-message&quot; id=&quot;fullname-error-example-error&quot;&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Skriv dit fulde navn, og adskil
-        for- og efternavne med mellemrum, fx Anders Andersen
-    &lt;/span&gt;&lt;input class=&quot;form-input&quot; id=&quot;fullname-error-example&quot;
-        name=&quot;fullname-error-example&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot; fullname-error-example-error&quot; required /&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
-<h3 class="h4" id="tekstfeltsuffix">Inputfelt med suffix</h3>
-
-<div class="component-preview component-preview-code  component-code-text-input-suffix-error" aria-label="Eksempel på inputfejl med suffix og fejlmeddelelse">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-input-suffix-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-suffix-error</span></a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-
-    &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;
-        Pris i 1000 kr.
-    &lt;/label&gt;
-
-    &lt;span class=&quot;form-error-message&quot; id=&quot;input-pris-error-error&quot;&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv en pris
-    &lt;/span&gt;
-    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input
-            class=&quot;form-input input-char-11&quot; id=&quot;input-pris-error&quot;
-            name=&quot;input-pris&quot; type=&quot;number&quot; aria-invalid=&quot;true&quot;
-            aria-describedby=&quot; input-pris-error-error&quot; required /&gt;
-        &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
 <h2 class="h3" id="tekstomraade">Tekstområde</h2>
 
 <div class="component-preview component-preview-code  component-code-text-area-error" aria-label="Eksempel på tekstområde med fejlmeddelelse">
@@ -4892,6 +4887,15 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 
     </div>
 </div>
+
+<p>Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:</p>
+
+<ul>
+  <li><code>for</code></li>
+  <li><code>id</code></li>
+  <li><code>name</code></li>
+  <li><code>aria-describedby</code></li>
+</ul>
 
 <h2 class="h3" id="tjekboks">Tjekboks</h2>
 

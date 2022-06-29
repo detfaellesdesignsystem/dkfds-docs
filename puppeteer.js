@@ -1,7 +1,8 @@
 const puppeteer = require('puppeteer');
 
 var path = 'pdf/';
-var root = "https://designsystem.dk/";
+//var root = "https://designsystem.dk/";
+var root = "http://127.0.0.1:4000/";
 var targetRootDir = "pdf/";
 var pdfUrls = [
     "",
@@ -39,37 +40,44 @@ var pdfUrls = [
     "komponenter/detaljer/",
     "komponenter/dropdown/",
     "komponenter/faneblade/",
-    "komponenter/fejlmeddelelser/",
-    "komponenter/fejlopsummering/",
-    "komponenter/footers/",
-    "komponenter/formular/",
+    "komponenter/fejlangivelse/",
+    "komponenter/fejlangivelse/fejlmeddelelser/",
+    "komponenter/fejlangivelse/fejlopsummering/",
+    "komponenter/footer/",
     "komponenter/funktionslink/",
+    "komponenter/skip-link/",
     "komponenter/header/",
+    "komponenter/inputfelter/",
     "komponenter/knapper/",
+    "komponenter/spinner/",
     "komponenter/modal/",
-    "komponenter/toastbesked/",
     "komponenter/overflowmenu/",
     "komponenter/paginering",
     "komponenter/radioknap/",
-    "komponenter/skip-link/",
-    "komponenter/spinner/",
     "komponenter/sprogvaelger/",
     "komponenter/strukturerede-lister/",
     "komponenter/search/",
-    "komponenter/tilbage-link/",
     "komponenter/tables/",
     "komponenter/tags/",
-    "komponenter/inputfelter/",
     "komponenter/tekstomraade/",
+    "komponenter/tilbage-link/",
     "komponenter/tjekboks/",
+    "komponenter/toastbesked/",
     "komponenter/toggle/",
     "komponenter/tooltip/",
-    "komponenter/trinindikatorer/",
+    "komponenter/trinindikator/",
     "komponenter/fil-upload/",
     "komponenter/venstremenu/",
+    "eksempler/",
+    "eksempler/selvbetjeningsloesninger/",
+    "eksempler/patterns/",
+    "eksempler/patterns/angivelse-af-telefonnummer/",
+    "eksempler/patterns/forlad-siden/",
+    "eksempler/patterns/formular/",
+    "eksempler/patterns/session-udloeber/",
+    "eksempler/templates/",
     "kode/",
     "kode/implementering/",
-    "kode/browserunderstoettelse/",
     "kode/komponenter/",
     "kode/komponenter/accordions/",
     "kode/komponenter/badges/",
@@ -84,31 +92,32 @@ var pdfUrls = [
     "kode/komponenter/faneblade/",
     "kode/komponenter/fejlmeddelelser/",
     "kode/komponenter/fejlopsummering/",
-    "kode/komponenter/inputfelter/",
-    "kode/komponenter/footers/",
+    "kode/komponenter/footer/",
     "kode/komponenter/funktionslink/",
-    "kode/komponenter/headers/",
+    "kode/komponenter/skip-link/",
+    "kode/komponenter/header/",
+    "kode/komponenter/inputfelter/",
     "kode/komponenter/knapper/",
+    "kode/komponenter/spinner/",
     "kode/komponenter/modal/",
-    "kode/komponenter/toastbesked/",
     "kode/komponenter/overflowmenu/",
     "kode/komponenter/paginering",
     "kode/komponenter/radioknap/",
-    "kode/komponenter/venstremenu/",
-    "kode/komponenter/skip-link/",
-    "kode/komponenter/spinner/",
     "kode/komponenter/sprogvaelger/",
     "kode/komponenter/strukturerede-lister/",
     "kode/komponenter/search/",
-    "kode/komponenter/tilbage-link/",
     "kode/komponenter/tables/",
     "kode/komponenter/tags/",
     "kode/komponenter/tekstomraade/",
+    "kode/komponenter/tilbage-link/",
     "kode/komponenter/tjekboks/",
+    "kode/komponenter/toastbesked/",
     "kode/komponenter/toggle/",
     "kode/komponenter/tooltip/",
-    "kode/komponenter/trinindikatorer/",
+    "kode/komponenter/trinindikator/",
     "kode/komponenter/fil-upload/",
+    "kode/komponenter/venstremenu/",
+    "kode/browserunderstoettelse/",
     "kode/grid/",
     "kode/typografi/",
     "kode/typografi/overskrifter/",
@@ -124,18 +133,21 @@ var pdfUrls = [
     "krav/",
     "krav/borgerdk-virk/",
     "krav/om-kravene/",
-    "krav/designtjek/",
-    "krav/tilgaengelighed/",
     "faellesskab/",
     "faellesskab/samarbejdsforum/",
+    "faellesskab/governance/",
     "faellesskab/nyhedsmail/",
     "faellesskab/kontakt-support/",
-    "privatlivspolitik-cookies/",
-    "faellesskab/releases/",
     "faellesskab/roadmap/",
-    "eksempler/patterns/angivelse-af-telefonnummer/",
-    "eksempler/patterns/forlad-siden/",
-    "eksempler/patterns/session-udloeber/"
+    "faellesskab/releases/",
+    "privatlivspolitik-cookies/",
+    "krav-vaerktoej/anvendes-af-virksomheder/",
+    "krav-vaerktoej/anvendes-af-borgere/",
+    "krav-vaerktoej/obligatorisk-for-borgere/",
+    "krav-vaerktoej/besoegende-om-aaret/",
+    "krav-vaerktoej/en-eller-flere-loesninger-brugertest/",
+    "krav-vaerktoej/transaktioner-per-aar/",
+    "krav-vaerktoej/resultat/"
 ]
 
 var exampleUrls = [
@@ -145,7 +157,14 @@ var exampleUrls = [
 ];
 
 (async () => {
-    console.log("Starting...");
+    /* var hours = String(new Date().getHours()).padStart(2, '0');
+    var minutes = String(new Date().getMinutes()).padStart(2, '0');
+    var seconds = String(new Date().getSeconds()).padStart(2, '0');
+    console.log("[" + hours + ":" + minutes + ":" + seconds + "] " + "Starting..."); */
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Starting...");
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
@@ -158,7 +177,10 @@ var exampleUrls = [
     var resWidth = 1366; // width of screenshot
     var resHeight = 1000;
 
-    console.log("...creating pdfs...");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Creating pdfs...");
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
@@ -194,7 +216,10 @@ var exampleUrls = [
         await page.pdf({path: pdfFileName, format: "A3", printBackground: true, fullPage: true});
     }
 
-    console.log("...creating example page images...");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Creating example page images...");
     for(var i=0; i<exampleUrls.length; i++){
         await page.goto(root + exampleUrls[i].url, {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
@@ -213,10 +238,15 @@ var exampleUrls = [
 
         var pdfFileName =  targetRootDir+'screenshots/'+'example_'+(i+1)+'-'+exampleUrls[i].filename+'.png';
 
+        await page.waitForTimeout(1000);
+
         await page.screenshot({path: pdfFileName, fullPage: true});
     }
 
-    console.log("...creating page images...");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Creating page images...");
     for(var i=0; i<pdfUrls.length; i++){
         await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
@@ -253,5 +283,8 @@ var exampleUrls = [
     }
 
     await browser.close();
-    console.log("Done");
+    console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Done");
 })();

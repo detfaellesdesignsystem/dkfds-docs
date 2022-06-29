@@ -1,11 +1,11 @@
 ---
-permalink: "/design/layout/grid/"
+permalink: /design/layout/grid/
 redirect_from:
 - "/grid/"
 - "/design/grid/"
 layout: styleguide
 type: component
-parentlink: "/design/layout/"
+parentlink: /design/layout/
 title: Grid og baseline grid
 category: Design_category
 tags:

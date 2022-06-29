@@ -15,12 +15,10 @@ subnav:
   href: "#datovaelger"
 - text: Dropdown
   href: "#dropdown"
-- text: Radioknapper
-  href: "#radioknapper"
 - text: Inputfelt
   href: "#tekstfelt"
-- text: Inputfelt med suffix
-  href: "#tekstfeltsuffix"
+- text: Radioknapper
+  href: "#radioknapper"
 - text: Tekstområde
   href: "#tekstomraade"
 - text: Tjekboks
@@ -65,11 +63,6 @@ Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlo
 
 {% include code/syntax.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" link=true %}
 
-{:.h3 #radioknapper}
-## Radioknapper
-
-{% include code/syntax.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link=true %}
-
 {:.h3 #tekstfelt}
 ## Inputfelt
 
@@ -80,10 +73,23 @@ Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlo
 
 {% include code/syntax.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" link=true %}
 
+{:.h3 #radioknapper}
+## Radioknapper
+
+{% include code/syntax.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link=true %}
+
 {:.h3 #tekstomraade}
 ## Tekstområde
 
 {% include code/syntax.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" link=true %}
+
+Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:
+
+- `for`
+- `id`
+- `name`
+- `aria-describedby`
+
 
 {:.h3 #tjekboks}
 ## Tjekboks
