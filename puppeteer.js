@@ -1,8 +1,7 @@
 const puppeteer = require('puppeteer');
 
 var path = 'pdf/';
-//var root = "https://designsystem.dk/";
-var root = "http://127.0.0.1:4000/";
+var root = "https://designsystem.dk/";
 var targetRootDir = "pdf/";
 var pdfUrls = [
     "",
@@ -131,23 +130,18 @@ var pdfUrls = [
     "kode/plugins/",
     "kode/anbefalinger-vaerktoejer/",
     "krav/",
+    "krav-vaerktoej/anvendes-af-virksomheder/",
     "krav/borgerdk-virk/",
     "krav/om-kravene/",
     "faellesskab/",
     "faellesskab/samarbejdsforum/",
     "faellesskab/governance/",
     "faellesskab/nyhedsmail/",
+    "faellesskab/nyhedsmail/afmeld/",
     "faellesskab/kontakt-support/",
     "faellesskab/roadmap/",
     "faellesskab/releases/",
-    "privatlivspolitik-cookies/",
-    "krav-vaerktoej/anvendes-af-virksomheder/",
-    "krav-vaerktoej/anvendes-af-borgere/",
-    "krav-vaerktoej/obligatorisk-for-borgere/",
-    "krav-vaerktoej/besoegende-om-aaret/",
-    "krav-vaerktoej/en-eller-flere-loesninger-brugertest/",
-    "krav-vaerktoej/transaktioner-per-aar/",
-    "krav-vaerktoej/resultat/"
+    "privatlivspolitik-cookies/"
 ]
 
 var exampleUrls = [
@@ -157,10 +151,6 @@ var exampleUrls = [
 ];
 
 (async () => {
-    /* var hours = String(new Date().getHours()).padStart(2, '0');
-    var minutes = String(new Date().getMinutes()).padStart(2, '0');
-    var seconds = String(new Date().getSeconds()).padStart(2, '0');
-    console.log("[" + hours + ":" + minutes + ":" + seconds + "] " + "Starting..."); */
     console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
                 ":" + String(new Date().getMinutes()).padStart(2, '0') + 
                 ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
@@ -182,7 +172,7 @@ var exampleUrls = [
                 ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
                 "Creating pdfs...");
     for(var i=0; i<pdfUrls.length; i++){
-        await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
+        await page.goto(root + pdfUrls[i], {waitUntil: 'networkidle0', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
@@ -213,7 +203,7 @@ var exampleUrls = [
         var pdfFileName = targetRootDir+(i+1)+'-'+filename+'.pdf';
 
         pdfFiles.push(pdfFileName);
-        await page.pdf({path: pdfFileName, format: "A3", printBackground: true, fullPage: true});
+        await page.pdf({path: pdfFileName, format: "A3", printBackground: true});
     }
 
     console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
@@ -221,7 +211,7 @@ var exampleUrls = [
                 ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
                 "Creating example page images...");
     for(var i=0; i<exampleUrls.length; i++){
-        await page.goto(root + exampleUrls[i].url, {waitUntil: 'load', timeout: 0});
+        await page.goto(root + exampleUrls[i].url, {waitUntil: 'networkidle0', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
 
@@ -238,8 +228,6 @@ var exampleUrls = [
 
         var pdfFileName =  targetRootDir+'screenshots/'+'example_'+(i+1)+'-'+exampleUrls[i].filename+'.png';
 
-        await page.waitForTimeout(1000);
-
         await page.screenshot({path: pdfFileName, fullPage: true});
     }
 
@@ -248,7 +236,7 @@ var exampleUrls = [
                 ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
                 "Creating page images...");
     for(var i=0; i<pdfUrls.length; i++){
-        await page.goto(root + pdfUrls[i], {waitUntil: 'load', timeout: 0});
+        await page.goto(root + pdfUrls[i], {waitUntil: 'networkidle0', timeout: 0});
         await page.setViewport({width: resWidth, height: resHeight});
         await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
@@ -278,7 +266,7 @@ var exampleUrls = [
             filename = "frontpage";
         }
         var pdfFileName =  targetRootDir+'screenshots/'+(i+1)+'-'+filename+'.png';
-
+        
         await page.screenshot({path: pdfFileName, fullPage: true});
     }
 
