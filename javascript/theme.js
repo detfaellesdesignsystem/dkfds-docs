@@ -278,8 +278,7 @@ let setScreenshots = function(){
         }
     }
 
-    if(document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link') 
-        || document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') 
+    if(document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link')
         || document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') 
         || document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger') 
         || document.getElementsByTagName('body')[0].classList.contains('page-footer') 
