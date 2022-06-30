@@ -9,6 +9,8 @@ description: Dokumentation på implementering af fejlmeddelelser.
 subcategory: Kode
 anchor: true
 subnav:
+- text: Accordions
+  href: "#accordions"
 - text: Datofelter
   href: "#datofelter"
 - text: Datovælger
@@ -47,6 +49,11 @@ Teksten er skjult i et `<span>` element med klassen `sr-only`.
 Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlopsummeringen</a> øverst på siden.
 
 ## Varianter
+
+{:.h3 #accordions}
+## Accordions
+
+{% include code/syntax.html component="error-message-accordion" title="Eksempel på accordion med fejl" link=true %}
  
 {:.h3 #datofelter}
 ## Datofelter
