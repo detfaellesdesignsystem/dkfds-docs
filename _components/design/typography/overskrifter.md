@@ -39,14 +39,14 @@ Overskriftstyperne har to formål:
 ## Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
-| Tekst        | Skrifttype     | Skriftstørrelse | Tekst tykkelse | Tekstfarve | Afstand mellem bogstaver |
-|--------------|---------------|-----------------|-----------------|------------|---------------------------|
-| Overskrift 1 | IBM Plex Sans | 39px            | 700             | #1a1a1a    | -0.5px                    |
-| Overskrift 2 | IBM Plex Sans | 31px            | 600             | #1a1a1a    | -0.4px                    |
-| Overskrift 3 | IBM Plex Sans | 25px            | 600             | #1a1a1a    | -0.3px                    |
-| Overskrift 4 | IBM Plex Sans | 20px            | 600             | #1a1a1a    | -0.2px                    |
-| Overskrift 5 | IBM Plex Sans | 16px            | 600             | #1a1a1a    |                           |
-| Overskrift 6 | IBM Plex Sans | 13px            | 500             | #1a1a1a    | -0.25px                   |
+| Tekst        | Skrifttype     | Skriftstørrelse | Tekst tykkelse | Tekstfarve | 
+|--------------|---------------|-----------------|-----------------|------------|
+| Overskrift 1 | IBM Plex Sans | 39px            | 700             | #1a1a1a    |
+| Overskrift 2 | IBM Plex Sans | 31px            | 600             | #1a1a1a    |
+| Overskrift 3 | IBM Plex Sans | 25px            | 600             | #1a1a1a    |
+| Overskrift 4 | IBM Plex Sans | 20px            | 600             | #1a1a1a    |
+| Overskrift 5 | IBM Plex Sans | 16px            | 600             | #1a1a1a    |
+| Overskrift 6 | IBM Plex Sans | 13px            | 500             | #1a1a1a    |
 
 {:#retningslinjer}
 ## Retningslinjer
