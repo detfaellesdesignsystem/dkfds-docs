@@ -4,7 +4,7 @@ parent: Hjælpefunktioner
 order: 04
 ---
 
-Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 
 Format: `d-{display}` og `d-{breakpoint}-{display}`
 

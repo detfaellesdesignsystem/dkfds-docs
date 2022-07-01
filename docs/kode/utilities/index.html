@@ -3773,6 +3773,15 @@
 
 
 <li class=" " role="none">
+<a href="#flexbox"  role="menuitem">Flexbox</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
 <a href="#bredde-i-procent"  role="menuitem">Bredde i procent</a>
 </li>
 
@@ -3899,6 +3908,7 @@
           <li><a href="#text-align">Text align</a></li>
           <li><a href="#margin-og-padding">Margin og padding</a></li>
           <li><a href="#display">Display</a></li>
+          <li><a href="#flexbox">Flexbox</a></li>
           <li><a href="#bredde-i-procent">Bredde i procent</a></li>
           <li><a href="#baggrundsfarver">Baggrundsfarver</a></li>
           <li><a href="#tilgængelighed">Tilgængelighed</a></li>
@@ -4017,7 +4027,7 @@
 <section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/04-display">
   <h2 id="display">Display</h2>
   
-  <p>Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i <code>$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.&lt;/p&gt;</p>
+  <p>Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i <code>$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 
 <p>Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code></p>
 
@@ -4157,7 +4167,115 @@
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/05-width">
+<section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/05-flex">
+  <h2 id="flexbox">Flexbox</h2>
+  
+  <p>Der er opsat en hjælpefunktion som automatisk genererer klasser til flexbox baseret på de definerede breakpoints i <code>$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/flex/" class="icon-link">Bootstraps Flex Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Bemærk at disse hjælpeklasser kun kan anvendes, når display er sat til flexbox. Afsnittene om vandret og lodret justering tager udgangspunkt i at retningen er sat til <code>row</code>.</p>
+
+<h3>Retning</h3>
+
+<p>Format: <code>flex-{retning}</code> og <code>flex-{breakpoint}-{retning}</code></p>
+
+<h4 class="h5 mb-0">Retning</h4>
+
+<ul>
+  <li><code>row</code></li>
+  <li><code>column</code></li>
+  <li><code>row-reverse</code></li>
+  <li><code>column-reverse</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex flex-row&quot;&gt; Flex-containerens elementer står vandret &lt;/div&gt;
+&lt;div class=&quot;d-flex flex-md-column&quot;&gt; Flex-containerens elementer står lodret på skærme over 768px &lt;/div&gt;</code></pre></figure>
+
+<h3>Ombrydning</h3>
+
+<p>Format: <code>flex-{ombrydning}</code> og <code>flex-{breakpoint}-{ombrydning}</code></p>
+
+<h4 class="h5 mb-0">Ombrydning</h4>
+
+<ul>
+  <li><code>wrap</code></li>
+  <li><code>nowrap</code></li>
+  <li><code>wrap-reverse</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex flex-nowrap&quot;&gt; Flex-containerens elementer står altid i én række &lt;/div&gt;
+&lt;div class=&quot;d-flex flex-md-wrap&quot;&gt; Flex-containerens elementer kan ombrydes på skærme over 768px &lt;/div&gt;</code></pre></figure>
+
+<h3>Vandret justering</h3>
+
+<p>Format: <code>justify-content-{justering}</code> og <code>justify-content-{breakpoint}-{justering}</code></p>
+
+<h4 class="h5 mb-0">Justering</h4>
+
+<ul>
+  <li><code>start</code></li>
+  <li><code>end</code></li>
+  <li><code>center</code></li>
+  <li><code>between</code></li>
+  <li><code>around</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex justify-content-start&quot;&gt; Flex-containerens elementer står til venstre &lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-md-center&quot;&gt; Flex-containerens elementer står i midten på skærme over 768px &lt;/div&gt;</code></pre></figure>
+
+<h3>Lodret justering af elementer</h3>
+
+<p>Format: <code>align-items-{justering}</code> og <code>align-items-{breakpoint}-{justering}</code></p>
+
+<h4 class="h5 mb-0">Justering</h4>
+
+<ul>
+  <li><code>start</code></li>
+  <li><code>end</code></li>
+  <li><code>center</code></li>
+  <li><code>baseline</code></li>
+  <li><code>stretch</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex align-items-start&quot;&gt; Flex-containerens elementer står øverst &lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-md-end&quot;&gt; Flex-containerens elementer står nederst på skærme over 768px &lt;/div&gt;</code></pre></figure>
+
+<h3>Lodret justering af et enkelt element</h3>
+
+<p>Format: <code>align-self-{justering}</code> og <code>align-self-{breakpoint}-{justering}</code></p>
+
+<h4 class="h5 mb-0">Justering</h4>
+
+<ul>
+  <li><code>auto</code></li>
+  <li><code>start</code></li>
+  <li><code>end</code></li>
+  <li><code>center</code></li>
+  <li><code>baseline</code></li>
+  <li><code>stretch</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex&quot;&gt;&lt;div class=&quot;align-self-start&quot;&gt; Flex-containerens element står øverst &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;d-flex&quot;&gt;&lt;div class=&quot;align-self-md-end&quot;&gt; Flex-containerens element står nederst på skærme over 768px &lt;/div&gt;&lt;/div&gt;</code></pre></figure>
+
+<h3>Lodret justering af rækker af elementer</h3>
+
+<p>Format: <code>align-content-{justering}</code> og <code>align-content-{breakpoint}-{justering}</code></p>
+
+<h4 class="h5 mb-0">Justering</h4>
+
+<ul>
+  <li><code>start</code></li>
+  <li><code>end</code></li>
+  <li><code>center</code></li>
+  <li><code>between</code></li>
+  <li><code>around</code></li>
+  <li><code>stretch</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex flex-wrap align-content-start&quot;&gt; Flex-containerens elementer står samlet øverst &lt;/div&gt;
+&lt;div class=&quot;d-flex flex-wrap align-content-md-end&quot;&gt; Flex-containerens elementer står samlet nederst på skærme over 768px &lt;/div&gt;</code></pre></figure>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/06-width">
   <h2 id="bredde-i-procent">Bredde i procent</h2>
   
   <p>Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i <code>$grid-breakpoints</code>.</p>
@@ -4187,7 +4305,7 @@
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/06-backgrounds">
+<section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/07-backgrounds">
   <h2 id="baggrundsfarver">Baggrundsfarver</h2>
   
   <p>Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer baggrundsfarver.</p>
@@ -4211,7 +4329,7 @@
 
 </section>
 
-<section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/07-accessibility">
+<section class="styleguide-child-container content" id="section-/kode/hjaelpefunktioner/08-accessibility">
   <h2 id="tilgængelighed">Tilgængelighed</h2>
   
   <p>Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.</p>

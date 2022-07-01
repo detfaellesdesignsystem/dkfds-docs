@@ -1,7 +1,7 @@
 ---
 title: Baggrundsfarver
 parent: Hjælpefunktioner
-order: 06
+order: 07
 ---
 
 Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer baggrundsfarver.
