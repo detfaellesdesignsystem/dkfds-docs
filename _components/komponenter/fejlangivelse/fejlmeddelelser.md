@@ -24,6 +24,8 @@ tags:
 - fejlmeddellelser
 - fejlmedellelser
 subnav:
+- text: Accordions
+  href: "#accordions"
 - text: Datofelter
   href: "#datofelter"
 - text: Datovælger
@@ -78,7 +80,7 @@ Beskriv for brugeren, hvad der er sket og hvordan det kan rettes.
 
 Meddelelsen skal være skrevet i lægmandssprog, være imødekommende og så kortfattet som muligt.
 
-Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står "ddmmååå-nnnn" eller "22091908-1856" som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.
+Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står "ddmmåååå-nnnn" eller "22091908-1856" som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.
 
 {:.h4}
 ### Vær konsistent
@@ -140,6 +142,11 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 {:.nobullet-list}
 - <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
 
+
+{:.h3 #accordions}
+## Accordions
+
+{% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" %}
 
 {:.h3 #datofelter}
 ## Datofelter

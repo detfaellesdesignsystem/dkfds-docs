@@ -1,7 +1,7 @@
 ---
 title: Tilgængelighed
 parent: Hjælpefunktioner
-order: 07
+order: 08
 ---
 Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.
 

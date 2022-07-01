@@ -3853,6 +3853,15 @@
 
 
 <li class=" " role="none">
+<a href="#accordions"  role="menuitem">Accordions</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
 <a href="#datofelter"  role="menuitem">Datofelter</a>
 </li>
 
@@ -4524,6 +4533,7 @@
           
           
           <ul class="d-lg-none nobullet-list">
+          <li><a href="#accordions">Accordions</a></li>
           <li><a href="#datofelter">Datofelter</a></li>
           <li><a href="#datovaelger">Datovælger</a></li>
           <li><a href="#dropdown">Dropdown</a></li>
@@ -4607,6 +4617,50 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 <p>Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlopsummeringen</a> øverst på siden.</p>
 
 <h2>Varianter</h2>
+
+<h2 class="h3" id="accordions">Accordions</h2>
+
+<div class="component-preview component-preview-code  component-code-error-message-accordion" aria-label="Eksempel på accordion med fejl">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-message-accordion/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: error-message-accordion</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;accordion accordion-multiselectable&quot;&gt;
+    &lt;li&gt;&lt;button class=&quot;accordion-button accordion-error &quot;
+            aria-expanded=&quot;true&quot; aria-describedby=&quot;error-a1&quot;
+            aria-controls=&quot;error-a1&quot;&gt;
+            Lorem ipsum dolor sit amet
+            &lt;span class=&quot;accordion-icon&quot;&gt;
+                &lt;span class=&quot;icon_text&quot;&gt;Fejl&lt;/span&gt;
+                &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#highlight-off&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;div id=&quot;error-a1&quot; aria-hidden=&quot;false&quot; class=&quot;accordion-content&quot;&gt;
+            &lt;div class=&quot;alert alert-error&quot; role=&quot;alert&quot;&gt;
+                &lt;div class=&quot;alert-body&quot;&gt;
+                    &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis
+                        iste natus error sit voluptatem accusantium
+                        doloremque laudantium.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre></figure>
+
+
+    </div>
+</div>
 
 <h2 class="h3" id="datofelter">Datofelter</h2>
 

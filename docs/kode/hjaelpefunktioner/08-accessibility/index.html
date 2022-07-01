@@ -16,8 +16,8 @@
 ================================================== -->
   
 
-<title>'Auto' og 'Fill' kolonner | Det Fælles Designsystem</title>
-<meta property="og:title" content="'Auto' og 'Fill' kolonner | Det Fælles Designsystem">
+<title>Tilgængelighed | Det Fælles Designsystem</title>
+<meta property="og:title" content="Tilgængelighed | Det Fælles Designsystem">
 
 
 
@@ -55,7 +55,7 @@
 </noscript>
 
   </head>
-  <body class="page-auto-og-fill-kolonner layout-component">
+  <body class="page-tilgængelighed layout-component">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 
@@ -3626,14 +3626,14 @@
         </div>
     </div>
 
-      <section id="section-/kode/grids/grids-auto-fill-kolonner">
+      <section id="section-/kode/hjaelpefunktioner/08-accessibility">
           
           
 
           <div class="subheading">
             
           </div>
-          <h1 id="auto-og-fill-kolonner">'Auto' og 'Fill' kolonner</h1>
+          <h1 id="tilgængelighed">Tilgængelighed</h1>
           
           
 
@@ -3641,146 +3641,14 @@
 
           
 
-          <p>Du kan specificere bredden på en kolonne uden at angive en eksplicit nummer-klasse som fx <code>col-sm-6</code>.</p>
+          <p>Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.</p>
 
-<h3>Specifik bredde på kun én kolonne</h3>
-
-<p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.</p>
-
-<div class="component-preview  component-preview-grid-one-column-width" aria-label="Eksempel af grid med fast bredde på én kolonne">
-    
-    <div class="component-example  py-4" aria-label="Eksempel">
-        
-        <div class="container">
-    <div class="row">
-        <div class="col">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-6">
-            <p>2 of 3 (col-6)</p>
-        </div>
-        <div class="col">
-            <p>3 of 3</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-5">
-            <p>2 of 3 (col-5)</p>
-        </div>
-        <div class="col">
-            <p>3 of 3</p>
-        </div>
-    </div>
-</div>
-        
-    </div>
-    
-</div>
-<details class="details ">
-    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med fast bredde på én kolonne</span></summary>
-    <div class="details-text">
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;1 of 3&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-6&quot;&gt;
-            &lt;p&gt;2 of 3 (col-6)&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;3 of 3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;1 of 3&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-5&quot;&gt;
-            &lt;p&gt;2 of 3 (col-5)&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;3 of 3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</details>
-
-<h3>Individuel kolonnebredde efter indhold</h3>
-
-<p>Ved at brug <code>col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
-
-<div class="component-preview  component-preview-grid-one-column-width" aria-label="Eksempel af grid med indholdsbestemt bredde på kolonner">
-    
-    <div class="component-example  py-4" aria-label="Eksempel">
-        
-        <div class="container">
-    <div class="row">
-        <div class="col">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-6">
-            <p>2 of 3 (col-6)</p>
-        </div>
-        <div class="col">
-            <p>3 of 3</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-5">
-            <p>2 of 3 (col-5)</p>
-        </div>
-        <div class="col">
-            <p>3 of 3</p>
-        </div>
-    </div>
-</div>
-        
-    </div>
-    
-</div>
-<details class="details ">
-    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med indholdsbestemt bredde på kolonner</span></summary>
-    <div class="details-text">
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;1 of 3&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-6&quot;&gt;
-            &lt;p&gt;2 of 3 (col-6)&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;3 of 3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;1 of 3&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-5&quot;&gt;
-            &lt;p&gt;2 of 3 (col-5)&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;3 of 3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</details>
-
+<ul>
+  <li><code>aria-hidden="true"</code> og <code>aria-hidden="false"</code> bruges til at skjule og vise elementer for skærmlæsere.</li>
+  <li><code>.sr-only</code> klassen og mixin <code>@mixin sr-only()</code> bruges når elementer kun skal vises for skærmlæsere.</li>
+  <li><code>aria-expanded="true"</code> og <code>aria-expanded="false"</code> bruges til elementer som toggler mellem at være åbne og lukket.</li>
+  <li><code>aria-label=""</code> skal beskrive hvad funktionen af et element gør.</li>
+</ul>
 
 
 

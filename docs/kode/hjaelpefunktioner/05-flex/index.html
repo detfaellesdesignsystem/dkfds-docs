@@ -16,8 +16,8 @@
 ================================================== -->
   
 
-<title>'Auto' og 'Fill' kolonner | Det Fælles Designsystem</title>
-<meta property="og:title" content="'Auto' og 'Fill' kolonner | Det Fælles Designsystem">
+<title>Flexbox | Det Fælles Designsystem</title>
+<meta property="og:title" content="Flexbox | Det Fælles Designsystem">
 
 
 
@@ -55,7 +55,7 @@
 </noscript>
 
   </head>
-  <body class="page-auto-og-fill-kolonner layout-component">
+  <body class="page-flexbox layout-component">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
 
@@ -3626,14 +3626,14 @@
         </div>
     </div>
 
-      <section id="section-/kode/grids/grids-auto-fill-kolonner">
+      <section id="section-/kode/hjaelpefunktioner/05-flex">
           
           
 
           <div class="subheading">
             
           </div>
-          <h1 id="auto-og-fill-kolonner">'Auto' og 'Fill' kolonner</h1>
+          <h1 id="flexbox">Flexbox</h1>
           
           
 
@@ -3641,146 +3641,108 @@
 
           
 
-          <p>Du kan specificere bredden på en kolonne uden at angive en eksplicit nummer-klasse som fx <code>col-sm-6</code>.</p>
+          <p>Der er opsat en hjælpefunktion som automatisk genererer klasser til flexbox baseret på de definerede breakpoints i <code>$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/flex/" class="icon-link">Bootstraps Flex Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Bemærk at disse hjælpeklasser kun kan anvendes, når display er sat til flexbox. Afsnittene om vandret og lodret justering tager udgangspunkt i at retningen er sat til <code>row</code>.</p>
 
-<h3>Specifik bredde på kun én kolonne</h3>
+<h3>Retning</h3>
 
-<p>Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.</p>
+<p>Format: <code>flex-{retning}</code> og <code>flex-{breakpoint}-{retning}</code></p>
 
-<div class="component-preview  component-preview-grid-one-column-width" aria-label="Eksempel af grid med fast bredde på én kolonne">
-    
-    <div class="component-example  py-4" aria-label="Eksempel">
-        
-        <div class="container">
-    <div class="row">
-        <div class="col">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-6">
-            <p>2 of 3 (col-6)</p>
-        </div>
-        <div class="col">
-            <p>3 of 3</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-5">
-            <p>2 of 3 (col-5)</p>
-        </div>
-        <div class="col">
-            <p>3 of 3</p>
-        </div>
-    </div>
-</div>
-        
-    </div>
-    
-</div>
-<details class="details ">
-    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med fast bredde på én kolonne</span></summary>
-    <div class="details-text">
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;1 of 3&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-6&quot;&gt;
-            &lt;p&gt;2 of 3 (col-6)&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;3 of 3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;1 of 3&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-5&quot;&gt;
-            &lt;p&gt;2 of 3 (col-5)&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;3 of 3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+<h4 class="h5 mb-0">Retning</h4>
 
+<ul>
+  <li><code>row</code></li>
+  <li><code>column</code></li>
+  <li><code>row-reverse</code></li>
+  <li><code>column-reverse</code></li>
+</ul>
 
-    </div>
-</details>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex flex-row&quot;&gt; Flex-containerens elementer står vandret &lt;/div&gt;
+&lt;div class=&quot;d-flex flex-md-column&quot;&gt; Flex-containerens elementer står lodret på skærme over 768px &lt;/div&gt;</code></pre></figure>
 
-<h3>Individuel kolonnebredde efter indhold</h3>
+<h3>Ombrydning</h3>
 
-<p>Ved at brug <code>col-{breakpoint}-auto</code> kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.</p>
+<p>Format: <code>flex-{ombrydning}</code> og <code>flex-{breakpoint}-{ombrydning}</code></p>
 
-<div class="component-preview  component-preview-grid-one-column-width" aria-label="Eksempel af grid med indholdsbestemt bredde på kolonner">
-    
-    <div class="component-example  py-4" aria-label="Eksempel">
-        
-        <div class="container">
-    <div class="row">
-        <div class="col">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-6">
-            <p>2 of 3 (col-6)</p>
-        </div>
-        <div class="col">
-            <p>3 of 3</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-5">
-            <p>2 of 3 (col-5)</p>
-        </div>
-        <div class="col">
-            <p>3 of 3</p>
-        </div>
-    </div>
-</div>
-        
-    </div>
-    
-</div>
-<details class="details ">
-    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel af grid med indholdsbestemt bredde på kolonner</span></summary>
-    <div class="details-text">
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;1 of 3&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-6&quot;&gt;
-            &lt;p&gt;2 of 3 (col-6)&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;3 of 3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;1 of 3&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-5&quot;&gt;
-            &lt;p&gt;2 of 3 (col-5)&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col&quot;&gt;
-            &lt;p&gt;3 of 3&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+<h4 class="h5 mb-0">Ombrydning</h4>
 
+<ul>
+  <li><code>wrap</code></li>
+  <li><code>nowrap</code></li>
+  <li><code>wrap-reverse</code></li>
+</ul>
 
-    </div>
-</details>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex flex-nowrap&quot;&gt; Flex-containerens elementer står altid i én række &lt;/div&gt;
+&lt;div class=&quot;d-flex flex-md-wrap&quot;&gt; Flex-containerens elementer kan ombrydes på skærme over 768px &lt;/div&gt;</code></pre></figure>
 
+<h3>Vandret justering</h3>
+
+<p>Format: <code>justify-content-{justering}</code> og <code>justify-content-{breakpoint}-{justering}</code></p>
+
+<h4 class="h5 mb-0">Justering</h4>
+
+<ul>
+  <li><code>start</code></li>
+  <li><code>end</code></li>
+  <li><code>center</code></li>
+  <li><code>between</code></li>
+  <li><code>around</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex justify-content-start&quot;&gt; Flex-containerens elementer står til venstre &lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-md-center&quot;&gt; Flex-containerens elementer står i midten på skærme over 768px &lt;/div&gt;</code></pre></figure>
+
+<h3>Lodret justering af elementer</h3>
+
+<p>Format: <code>align-items-{justering}</code> og <code>align-items-{breakpoint}-{justering}</code></p>
+
+<h4 class="h5 mb-0">Justering</h4>
+
+<ul>
+  <li><code>start</code></li>
+  <li><code>end</code></li>
+  <li><code>center</code></li>
+  <li><code>baseline</code></li>
+  <li><code>stretch</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex align-items-start&quot;&gt; Flex-containerens elementer står øverst &lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-md-end&quot;&gt; Flex-containerens elementer står nederst på skærme over 768px &lt;/div&gt;</code></pre></figure>
+
+<h3>Lodret justering af et enkelt element</h3>
+
+<p>Format: <code>align-self-{justering}</code> og <code>align-self-{breakpoint}-{justering}</code></p>
+
+<h4 class="h5 mb-0">Justering</h4>
+
+<ul>
+  <li><code>auto</code></li>
+  <li><code>start</code></li>
+  <li><code>end</code></li>
+  <li><code>center</code></li>
+  <li><code>baseline</code></li>
+  <li><code>stretch</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex&quot;&gt;&lt;div class=&quot;align-self-start&quot;&gt; Flex-containerens element står øverst &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;d-flex&quot;&gt;&lt;div class=&quot;align-self-md-end&quot;&gt; Flex-containerens element står nederst på skærme over 768px &lt;/div&gt;&lt;/div&gt;</code></pre></figure>
+
+<h3>Lodret justering af rækker af elementer</h3>
+
+<p>Format: <code>align-content-{justering}</code> og <code>align-content-{breakpoint}-{justering}</code></p>
+
+<h4 class="h5 mb-0">Justering</h4>
+
+<ul>
+  <li><code>start</code></li>
+  <li><code>end</code></li>
+  <li><code>center</code></li>
+  <li><code>between</code></li>
+  <li><code>around</code></li>
+  <li><code>stretch</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;d-flex flex-wrap align-content-start&quot;&gt; Flex-containerens elementer står samlet øverst &lt;/div&gt;
+&lt;div class=&quot;d-flex flex-wrap align-content-md-end&quot;&gt; Flex-containerens elementer står samlet nederst på skærme over 768px &lt;/div&gt;</code></pre></figure>
 
 
 
