@@ -7,7 +7,20 @@ import * as DKFDS from "dkfds";
 require('./sidenav');
 document.addEventListener("DOMContentLoaded", function() {
     
-    DKFDS.init();
+    // If this is a page with a back-to-top button example, ensure that only the 'real' back-to-top button's JavaScript works
+    // Without this code, the back-to-top button example would not be visible due to the JavaScript hiding it
+    let bodytag = document.getElementsByTagName('body')[0];
+    if (bodytag.classList.contains('page-tilbage-til-top') || bodytag.classList.contains('page-back-to-top')) {
+        let backtotopbuttons = document.getElementsByClassName('back-to-top-button');
+        if (backtotopbuttons.length === 2) {
+            new DKFDS.BackToTop(backtotopbuttons[1]).init();
+        }
+        new DKFDS.Navigation().init(); // Only other relevant JavaScript on back-to-top pages is navigation
+    }
+    // If this is not a back-to-top example page, init all JavaScript
+    else {
+        DKFDS.init();
+    }
 
     let icons = document.getElementsByClassName('icon-box');
     if(icons.length !== 0){
