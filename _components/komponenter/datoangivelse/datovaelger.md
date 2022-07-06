@@ -22,7 +22,7 @@ Når der er specifikt udvalgte datoer at vælge imellem som fx ved bookninger og
 {:.h3}
 ## Anvendes ikke til
 
-Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/datofelter/" title="">datofelter</a>.
+Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/datoangivelse/datofelter/" title="">datofelter</a>.
 
 {:.h3}
 ## Vejledning
