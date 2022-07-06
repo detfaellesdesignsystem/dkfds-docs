@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
         setScreenshots();
 
+        setDoDontImages();
+
         setHomepageIllustration();
 });
 
@@ -294,6 +296,32 @@ let setScreenshots = function(){
             let filename = getThemeCookie()+'-'+componentName+'.png';
             let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';
             screenshots[i].innerHTML = image;
+        }
+    }
+};
+
+let setDoDontImages = function() {
+    let dodonts = document.querySelectorAll('.do-dont-container');
+    let cookie = getThemeCookie();
+    console.log("Do-dont examples: " + dodonts.length);
+    console.log("Cookie: " + cookie);
+
+    for (let i = 0; i < dodonts.length; i++) {
+        let images = dodonts[i].getElementsByTagName('IMG');
+        for (let j = 0; j < images.length; j++) {
+            let src = images[j].src;
+            let url_parts = src.split('/');
+            let filename = url_parts[url_parts.length-1];
+            if (filename.includes("-borgerdk") || filename.includes("-virk")) {
+                if (filename.includes("-borgerdk") && cookie === "virk") {
+                    let new_filename = filename.replace("-borgerdk", "-virk");
+                    images[j].src = "/assets/img/do-dont/" + new_filename;
+                }
+                else if (filename.includes("-virk") && cookie === "borgerdk") {
+                    let new_filename = filename.replace("-virk", "-borgerdk");
+                    images[j].src = "/assets/img/do-dont/" + new_filename;
+                }
+            }
         }
     }
 };

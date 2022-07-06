@@ -53,7 +53,7 @@ subnav:
 
 {% include code/syntax.html component="text-input-optional" link="true" %}
 
-Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede. <a href="/komponenter/inputfelt/#obligatoriske-og-frivillige-felter">Se eksempler på frivillige og obligatoriske felter</a>.
+Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede. <a href="/komponenter/inputfelter/#obligatoriske-og-frivillige-felter">Se eksempler på frivillige og obligatoriske felter</a>.
 
 
 {:#read-only}
