@@ -7,6 +7,9 @@
     },
     "name": "appointment-date1",
     "required": true,
-    "errorMessage": "Vælg en dato"
+    "errorMessage": {
+      "id": "datepicker-example-error1",
+      "text": "Vælg en dato"
+    }
   }
 }
