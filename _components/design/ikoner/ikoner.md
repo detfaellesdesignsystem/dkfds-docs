@@ -196,13 +196,13 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
   <div class="container">
     <div class="icon-list row" id="icon-list-tilstande">
      {% include icon.html icon="arrow-right" keywords="pil, højre, lukket, luk, detalje" label="Detalje lukket" %}
-          {% include icon.html icon="arrow-drop-down" keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud" label="Detalje åben / Fold dropdown/overflow ud" %}
-          {% include icon.html icon="arrow-drop-up" keywords="pil, op, up, arrow, dropdown, fold ind, luk" label="Fold dropdown/overflow ind" %}
+          {% include icon.html icon="arrow-drop-down" keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud" label="Detalje åben / Fold overflow ud" %}
+          {% include icon.html icon="arrow-drop-up" keywords="pil, op, up, arrow, dropdown, fold ind, luk" label="Fold overflow ind" %}
           {% include icon.html icon="zoom-out" keywords="lup, zoom, zoom ud, ud" label="Formindsk" %}
           {% include icon.html icon="zoom-in" keywords="lup, zoom, zoom ind, ind" label="Forstør" %}
           {% include icon.html icon="fullscreen" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm" label="Fuld skærm" %}
           {% include icon.html icon="remove" keywords="-, minus, luk, accordion, close, collapse" label="Luk accordion (minus)" %}
-          {% include icon.html icon="add" keywords="+, plus, åben, accordion, open, expand" label="Åben accordion (plus)" %}
+          {% include icon.html icon="add" keywords="+, plus, åben, accordion, open, expand" label="Åbn accordion (plus)" %}
           {% include icon.html icon="fullscreen-exit" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit" label="Luk fuld skærm" %}
           {% include icon.html icon="sort" keywords="sortering, sort, unsorted" label="Ikke sorteret" %}
           {% include icon.html icon="lock-open" keywords="log off, log af, log ud, log, off, af, ud, exit, lås, lock, hængelås, åben, open" label="Log af (åben hængelås)" %}
