@@ -4528,6 +4528,7 @@
     </label>
 
     <textarea class="form-input " rows="5" id="input-area" name="input-area"></textarea>
+
 </div>
         
     </div>
@@ -4554,6 +4555,7 @@
     &lt;/label&gt;
 
     &lt;textarea class=&quot;form-input &quot;  rows=&quot;5&quot;     id=&quot;input-area&quot; name=&quot;input-area&quot; &gt;&lt;/textarea&gt;
+
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4575,6 +4577,34 @@
 <p><a href="/kode/komponenter/fejlmeddelelser/#tekstomraade">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
 
 <p>Når der vises en fejlmeddelelse, vis da også <a href="/kode/komponenter/fejlopsummering/">fejlopsummering</a>.</p>
+
+<h2 id="karakterbegraensning">Karakterbegrænsning</h2>
+
+<div class="component-preview component-preview-code  component-code-text-area-character-limit" aria-label="">
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;60&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-area&quot;&gt;
+        Tekstområde med karakterbegrænsning
+    &lt;/label&gt;
+
+    &lt;textarea class=&quot;form-input &quot;  rows=&quot;5&quot;     id=&quot;input-area&quot; name=&quot;input-area&quot; &gt;&lt;/textarea&gt;
+
+    &lt;span id=&quot;input-area-text-limit&quot; class=&quot;sr-only&quot;&gt;Du kan indtaste op til
+        60 tegn&lt;/span&gt;
+    &lt;span class=&quot;form-hint character-limit&quot; aria-hidden=&quot;true&quot;&gt;Du har 60
+        tegn tilbage&lt;/span&gt;
+    &lt;span class=&quot;character-limit-sr-only sr-only&quot; aria-live=&quot;polite&quot;&gt;Du har
+        60 tegn tilbage&lt;/span&gt;
+
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Husk at medtage de to beskeder skjult med klassen <code>sr-only</code>. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.</p>
 
 
           

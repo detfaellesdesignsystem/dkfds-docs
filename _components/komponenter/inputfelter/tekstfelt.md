@@ -43,6 +43,8 @@ subnav:
   href: "#deaktiveret"
 - text: Prefix og suffix
   href: "#prefix-og-suffix"
+- text: Karakterbegrænsning
+  href: "#karakterbegraensning"
 - text: Feltbredde
   href: "#feltbredde"
 ---
@@ -171,11 +173,22 @@ Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyld
 
 {% include code/preview-box.html component="text-input-prefix-suffix" link=false title="Eksempel på felter med prefix og suffix" code="/kode/komponenter/inputfelter/#prefix-og-suffix" %}
 
+{:#karakterbegraensning}
+## Karakterbegrænsning
+Karakterbegrænsning sætter et maksimalt antal af tegn, som brugeren kan indtaste i et felt. Karakterbegrænsning indikerer løbende overfor brugeren, hvor mange tegn der er tilbage, og hvor mange tegn de evt. har overskredet med.
+
+Vis altid antallet af tegn, der er til rådighed i inputfeltet, inden brugeren begynder at skrive.
+
+Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stedet løbende med rød tekst under feltet, hvor mange tegn der er overskredet med.
+
+{% include code/preview-box.html component="text-input-character-limit" link=false title="Eksempel på felt med karakterbegrænsning" code="/kode/komponenter/inputfelter/#karakterbegraensning" %}
+
 {:#feltbredde}
 ## Feltbredde
 {% include code/preview-box.html component="text-input-width" link=false title="Eksempel på felter med forskellig bredde" code="/kode/komponenter/inputfelter/#feltbredde" %}
 
 {% include dos-donts-box.html component="text-input-width-dos-donts" title="Feltbredde do's and don'ts" %}
+
 
 {:.h4}
 ### Referencer

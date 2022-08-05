@@ -23,6 +23,8 @@ subnav:
   href: "#deaktiveret"
 - text: Prefix og suffix
   href: "#prefix-og-suffix"
+- text: Karakterbegrænsning
+  href: "#karakterbegraensning"
 - text: Feltbredde
   href: "#feltbredde"
 ---
@@ -70,6 +72,13 @@ Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(
 ### Prefix og suffix
 
 {% include code/syntax.html component="text-input-prefix-suffix" link="true" %}
+
+{:#karakterbegraensning}
+### Karakterbegrænsning
+
+{% include code/syntax.html component="text-input-character-limit" link="true" %}
+
+Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 
 {:#feltbredde}
 ### Feltbredde
