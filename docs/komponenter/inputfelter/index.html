@@ -3976,6 +3976,15 @@
 
 
 <li class=" " role="none">
+<a href="#karakterbegraensning"  role="menuitem">Karakterbegrænsning</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
 <a href="#feltbredde"  role="menuitem">Feltbredde</a>
 </li>
 
@@ -4358,6 +4367,7 @@
           <li><a href="#read-only">Read-only</a></li>
           <li><a href="#deaktiveret">Deaktiveret</a></li>
           <li><a href="#prefix-og-suffix">Prefix og suffix</a></li>
+          <li><a href="#karakterbegraensning">Karakterbegrænsning</a></li>
           <li><a href="#feltbredde">Feltbredde</a></li>
           
           </ul>
@@ -4385,6 +4395,7 @@
     </label>
 
     <input class="form-input" id="input-type-text" name="input-type-text" type="text" required="" />
+
 </div>
         
     </div>
@@ -4503,7 +4514,8 @@
     <span class="form-hint" id="input-type-help-text-hint">
         Fx 12345678
     </span>
-    <input class="form-input" id="input-type-help-text" name="input-type-help-text" type="text" aria-describedby="input-type-help-text-hint" required="" />
+    <input class="form-input" id="input-type-help-text" name="input-type-help-text" type="text" aria-describedby="input-type-help-text-hint " required="" />
+
 </div>
         
     </div>
@@ -4568,6 +4580,7 @@
     </label>
 
     <input class="form-input" id="input-mandatory1" name="input-mandatory1" type="text" required="" />
+
 </div>
 <div class="form-group">
 
@@ -4576,6 +4589,7 @@
     </label>
 
     <input class="form-input" id="input-optional" name="input-optional" type="text" />
+
 </div>
 <div class="form-group">
 
@@ -4584,6 +4598,7 @@
     </label>
 
     <input class="form-input" id="input-mandatory2" name="input-mandatory2" type="text" required="" />
+
 </div>
 <div class="form-group">
 
@@ -4592,6 +4607,7 @@
     </label>
 
     <input class="form-input" id="input-mandatory3" name="input-mandatory3" type="text" required="" />
+
 </div>
         
     </div>
@@ -4619,6 +4635,7 @@
     </label>
 
     <input class="form-input" id="input-optional1" name="input-optional1" type="text" />
+
 </div>
 <div class="form-group">
 
@@ -4627,6 +4644,7 @@
     </label>
 
     <input class="form-input" id="input-mandatory" name="input-mandatory" type="text" required="" />
+
 </div>
 <div class="form-group">
 
@@ -4635,6 +4653,7 @@
     </label>
 
     <input class="form-input" id="input-optional2" name="input-optional2" type="text" />
+
 </div>
 <div class="form-group">
 
@@ -4643,6 +4662,7 @@
     </label>
 
     <input class="form-input" id="input-optional3" name="input-optional3" type="text" />
+
 </div>
         
     </div>
@@ -4669,6 +4689,7 @@
     </label>
 
     <input class="form-input" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
+
 </div>
         
     </div>
@@ -4692,6 +4713,7 @@
     </label>
 
     <input class="form-input" id="input-disabled" name="input-disabled" type="text" disabled="disabled" />
+
 </div>
         
     </div>
@@ -4722,6 +4744,7 @@
     <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-8" id="input-antal" value="56" name="input-antal" type="number" required="" />
         <div class="form-input-suffix" aria-hidden="true">stk.</div>
     </div>
+
 </div>
 <div class="form-group">
 
@@ -4732,6 +4755,7 @@
     <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-11" id="input-pris" value="123" name="input-pris" type="number" required="" />
         <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
     </div>
+
 </div>
 <div class="form-group">
 
@@ -4742,12 +4766,49 @@
     <div class="form-input-wrapper form-input-wrapper--prefix">
         <div class="form-input-prefix" aria-hidden="true">€</div><input class="form-input input-width-xs" id="input-beloeb" value="1.234" name="input-beloeb" type="number" required="" />
     </div>
+
 </div>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
         <a href="/kode/komponenter/inputfelter/#prefix-og-suffix" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-input-prefix-suffix</span></a>
+    </div>
+    
+</div>
+
+<h2 id="karakterbegraensning">Karakterbegrænsning</h2>
+<p>Karakterbegrænsning sætter et maksimalt antal af tegn, som brugeren kan indtaste i et felt. Karakterbegrænsning indikerer løbende overfor brugeren, hvor mange tegn der er tilbage, og hvor mange tegn de evt. har overskredet med.</p>
+
+<p>Vis altid antallet af tegn, der er til rådighed i inputfeltet, inden brugeren begynder at skrive.</p>
+
+<p>Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stedet løbende med rød tekst under feltet, hvor mange tegn der er overskredet med.</p>
+
+<div class="component-preview  component-preview-text-input-character-limit" aria-label="Eksempel på felt med karakterbegrænsning">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group form-limit" data-maxlength="20">
+
+    <label class="form-label" for="input-type-text">
+        Inputfelt med karakterbegrænsning
+    </label>
+
+    <input class="form-input" id="input-type-text" name="input-type-text" type="text" aria-describedby=" input-type-text-limit" />
+
+    <span id="input-type-text-limit" class="sr-only">Du kan indtaste op til
+        20 tegn</span>
+    <span class="form-hint character-limit" aria-hidden="true">Du har 20
+        tegn tilbage</span>
+    <span class="character-limit-sr-only sr-only" aria-live="polite">Du har
+        20 tegn tilbage</span>
+
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/inputfelter/#karakterbegraensning" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-input-character-limit</span></a>
     </div>
     
 </div>
@@ -4768,6 +4829,7 @@
         </label>
 
         <input class="form-input input-width-xxs" id="input-type-text-xxs" name="input-type-text-xxs" type="text" required="" />
+
     </div>
 
     <div class="form-group">
@@ -4777,6 +4839,7 @@
         </label>
 
         <input class="form-input input-width-xs" id="input-type-text-xs" name="input-type-text-xs" type="text" required="" />
+
     </div>
 
     <div class="form-group">
@@ -4786,6 +4849,7 @@
         </label>
 
         <input class="form-input input-width-s" id="input-type-text-s" name="input-type-text-s" type="text" required="" />
+
     </div>
 
     <div class="form-group">
@@ -4795,6 +4859,7 @@
         </label>
 
         <input class="form-input input-width-m" id="input-type-text-m" name="input-type-text-m" type="text" required="" />
+
     </div>
 
     <div class="form-group">
@@ -4804,6 +4869,7 @@
         </label>
 
         <input class="form-input input-width-l" id="input-type-text-l" name="input-type-text-l" type="text" required="" />
+
     </div>
 
     <div class="form-group">
@@ -4813,6 +4879,7 @@
         </label>
 
         <input class="form-input input-width-xl" id="input-type-text-xl" name="input-type-text-xl" type="text" required="" />
+
     </div>
 
 </fieldset>
@@ -4827,6 +4894,7 @@
         </label>
 
         <input class="form-input input-char-4" id="input-type-text-char-4" name="input-type-text-char-4" type="text" required="" />
+
     </div>
 
     <div class="form-group">
@@ -4836,6 +4904,7 @@
         </label>
 
         <input class="form-input input-char-8" id="input-type-text-char-8" name="input-type-text-char-8" type="text" required="" />
+
     </div>
 
     <div class="form-group">
@@ -4845,6 +4914,7 @@
         </label>
 
         <input class="form-input input-char-11" id="input-type-text-char-11" name="input-type-text-char-11" type="text" required="" />
+
     </div>
 
     <div class="form-group">
@@ -4854,6 +4924,7 @@
         </label>
 
         <input class="form-input input-char-27" id="input-type-text-char-27" name="input-type-text-char-27" type="text" required="" />
+
     </div>
 
 </fieldset>

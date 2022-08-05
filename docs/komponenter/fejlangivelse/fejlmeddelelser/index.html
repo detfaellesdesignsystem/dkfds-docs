@@ -4437,7 +4437,8 @@
     </span>
     <span class="form-error-message" id="form-error-error">
         <span class="sr-only">Fejl:</span> Giv dit kursus et navn
-    </span><input class="form-input" id="form-error" name="form-error" type="text" aria-invalid="true" aria-describedby="form-error-hint form-error-error" required="" />
+    </span><input class="form-input" id="form-error" name="form-error" type="text" aria-invalid="true" aria-describedby="form-error-hint form-error-error " required="" />
+
 </div>
         
     </div>
@@ -4730,7 +4731,8 @@
     <span class="form-error-message" id="fullname-error-example-error">
         <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
         for- og efternavne med mellemrum, fx Anders Andersen
-    </span><input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby=" fullname-error-example-error" required="" />
+    </span><input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby=" fullname-error-example-error " required="" />
+
 </div>
         
     </div>
@@ -4758,9 +4760,45 @@
     <span class="form-error-message" id="input-pris-error-error">
         <span class="sr-only">Fejl:</span> Angiv en pris
     </span>
-    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-11" id="input-pris-error" name="input-pris" type="number" aria-invalid="true" aria-describedby=" input-pris-error-error" required="" />
+    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-11" id="input-pris-error" name="input-pris" type="number" aria-invalid="true" aria-describedby=" input-pris-error-error " required="" />
         <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
     </div>
+
+</div>
+        
+    </div>
+    
+</div>
+
+<h3 class="h4">Inputfelt med karakterbegrænsning</h3>
+
+<div class="component-preview  component-preview-text-input-character-limit-error" aria-label="Eksempel på inputfelt med karakterbegrænsning med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-character-limit-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-input-character-limit-error</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group form-error form-limit" data-maxlength="20">
+
+    <label class="form-label" for="input-type-limit-error">
+        Inputfelt med karakterbegrænsning
+    </label>
+
+    <span class="form-error-message" id="input-type-limit-error-error">
+        <span class="sr-only">Fejl:</span> Du kan maks. taste 20 tegn
+    </span><input class="form-input" id="input-type-limit-error" value="Dette er en sætning med mange tegn" name="input-type-limit-error" type="text" aria-invalid="true" aria-describedby=" input-type-limit-error-error input-type-text-limit" />
+
+    <span id="input-type-text-limit" class="sr-only">Du kan indtaste op til
+        20 tegn</span>
+    <span class="form-hint character-limit" aria-hidden="true">Du har 20
+        tegn tilbage</span>
+    <span class="character-limit-sr-only sr-only" aria-live="polite">Du har
+        20 tegn tilbage</span>
+
 </div>
         
     </div>
@@ -4832,7 +4870,41 @@
     </label>
 
     <span class="form-error-message" id="form-error-message-input-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlmeddelelse</span>
-    <textarea class="form-input " rows="5" id="input-error" name="input-error" aria-describedby="form-error-message-input-error "></textarea>
+    <textarea class="form-input " rows="5" id="input-error" name="input-error" aria-describedby="form-error-message-input-error  "></textarea>
+
+</div>
+        
+    </div>
+    
+</div>
+
+<h3 class="h4">Tekstområde med karakterbegrænsning</h3>
+
+<div class="component-preview  component-preview-text-area-character-limit-error" aria-label="Eksempel på tekstområde med karakterbegrænsning med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-area-character-limit-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-area-character-limit-error</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group form-error form-limit" data-maxlength="50">
+    <label class="form-label" for="textarea-limit-error">
+        Karakterbegrænsning med fejlmeddelelse
+    </label>
+
+    <span class="form-error-message" id="form-error-message-textarea-limit-error"><span class="sr-only">Fejl:</span> Du kan maks. taste 50 tegn</span>
+    <textarea class="form-input " rows="3" id="textarea-limit-error" name="textarea-limit-error" aria-describedby="form-error-message-textarea-limit-error  input-area-text-limit-error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+
+    <span id="input-area-text-limit-error" class="sr-only">Du kan indtaste
+        op til 50 tegn</span>
+    <span class="form-hint character-limit" aria-hidden="true">Du har 50
+        tegn tilbage</span>
+    <span class="character-limit-sr-only sr-only" aria-live="polite">Du har
+        50 tegn tilbage</span>
+
 </div>
         
     </div>

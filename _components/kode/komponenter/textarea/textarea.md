@@ -41,3 +41,10 @@ Sæt højden på et tekstområde ved brug af `rows` attributten. Sæt højden, s
 <a href="/kode/komponenter/fejlmeddelelser/#tekstomraade">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
 Når der vises en fejlmeddelelse, vis da også <a href="/kode/komponenter/fejlopsummering/">fejlopsummering</a>.
+
+{:#karakterbegraensning}
+## Karakterbegrænsning
+
+{% include code/syntax.html component="text-area-character-limit" %}
+
+Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.

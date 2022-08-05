@@ -4308,6 +4308,7 @@
     </label>
 
     <textarea class="form-input " rows="5" id="input-area" name="input-area"></textarea>
+
 </div>
         
     </div>
@@ -4376,6 +4377,42 @@
 <p><a href="/komponenter/fejlangivelse/fejlmeddelelser/#tekstomraade">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
 
 <p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.</p>
+
+<h2>Karakterbegrænsning</h2>
+<p>Karakterbegrænsning sætter et maksimalt antal af tegn, som brugeren kan indtaste i et tekstområde. Karakterbegrænsning indikerer løbende overfor brugeren, hvor mange tegn der er tilbage, og hvor mange tegn de evt. har overskredet med.</p>
+
+<p>Vis altid antallet af tegn, der er til rådighed i tekstområdet, inden brugeren begynder at skrive.</p>
+
+<p>Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stedet løbende med rød tekst under feltet, hvor mange tegn der er overskredet med.</p>
+
+<div class="component-preview  component-preview-text-area-character-limit" aria-label="Eksempel på tekstområde med karakterbegrænsning">
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group form-limit" data-maxlength="60">
+    <label class="form-label" for="input-area">
+        Tekstområde med karakterbegrænsning
+    </label>
+
+    <textarea class="form-input " rows="5" id="input-area" name="input-area"></textarea>
+
+    <span id="input-area-text-limit" class="sr-only">Du kan indtaste op til
+        60 tegn</span>
+    <span class="form-hint character-limit" aria-hidden="true">Du har 60
+        tegn tilbage</span>
+    <span class="character-limit-sr-only sr-only" aria-live="polite">Du har
+        60 tegn tilbage</span>
+
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/tekstomraade/" class="small-text">Gå til kodeafsnit<span class="sr-only">: text-area-character-limit</span></a>
+    </div>
+    
+</div>
+
 
 
           

@@ -173,6 +173,11 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 {% include code/preview-box.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" %}
 
+{:.h4}
+### Inputfelt med karakterbegrænsning
+
+{% include code/preview-box.html component="text-input-character-limit-error" title="Eksempel på inputfelt med karakterbegrænsning med fejlmeddelelse" %}
+
 {:.h3 #radioknapper}
 ## Radioknapper
 
@@ -182,6 +187,10 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 ## Tekstområde
 
 {% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" %}
+
+{:.h4}
+### Tekstområde med karakterbegrænsning
+{% include code/preview-box.html component="text-area-character-limit-error" title="Eksempel på tekstområde med karakterbegrænsning med fejlmeddelelse" %}
 
 {:.h3 #tjekboks}
 ## Tjekboks

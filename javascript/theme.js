@@ -303,8 +303,6 @@ let setScreenshots = function(){
 let setDoDontImages = function() {
     let dodonts = document.querySelectorAll('.do-dont-container');
     let cookie = getThemeCookie();
-    console.log("Do-dont examples: " + dodonts.length);
-    console.log("Cookie: " + cookie);
 
     for (let i = 0; i < dodonts.length; i++) {
         let images = dodonts[i].getElementsByTagName('IMG');
