@@ -1,13 +1,13 @@
 {
     "item": {
-      "id": "input-area",
+      "id": "input-area-limit",
       "label": {
         "text": "Tekstområde med karakterbegrænsning"
       },
-      "name": "input-area",
+      "name": "input-area-limit",
       "rows": 5,
       "characterLimit": {
-        "id": "input-area-text-limit",
+        "id": "input-area-limit-message",
         "limit": 60
       }
     }

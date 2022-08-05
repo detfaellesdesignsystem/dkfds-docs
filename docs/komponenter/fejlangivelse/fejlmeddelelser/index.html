@@ -4688,18 +4688,19 @@
         <form novalidate="" class="form mb-7 input-width-m">
 
     <div class="form-group form-error">
-        <label class="form-label" for="options">
-            Dropdown label (select)
+        <label class="form-label" for="options-error">
+            Dropdown (select)
         </label>
-        <span class="form-error-message"><span class="sr-only">Fejl:</span>
-            Vælg en mulighed</span>
-        <select class=" form-select" name="options" id="options">
+        <span class="form-error-message" id="options-error-error"><span class="sr-only">Fejl:</span> Vælg en mulighed</span>
+        <select class=" form-select" name="options-error" id="options-error" aria-invalid="true" aria-describedby=" options-error-error">
 
-            <option value="option1">Mulighed 1</option>
+            <option value="option1">Ingen mulighed valgt</option>
 
-            <option value="option2">Mulighed 2</option>
+            <option value="option2">Mulighed 1</option>
 
-            <option value="option3">Mulighed 3</option>
+            <option value="option3">Mulighed 2</option>
+
+            <option value="option4">Mulighed 3</option>
 
         </select>
     </div>
