@@ -13,8 +13,6 @@ subnav:
   href: "#accordions"
 - text: Datofelter
   href: "#datofelter"
-- text: Datovælger
-  href: "#datovaelger"
 - text: Dropdown
   href: "#dropdown"
 - text: Inputfelt
@@ -59,11 +57,6 @@ Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlo
 ## Datofelter
 
 {% include code/syntax.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" link=true %}
-
-{:.h3 #datovaelger}
-## Datovælger
-
-{% include code/syntax.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" link=true %}
 
 {:.h3 #dropdown}
 ## Dropdown

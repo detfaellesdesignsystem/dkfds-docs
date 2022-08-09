@@ -1,13 +1,13 @@
 {
     "params":{
-      "id": "input-type-text",
+      "id": "input-type-text-limit",
       "label": {
         "text": "Inputfelt med karakterbegrænsning"
       },
-      "name": "input-type-text",
+      "name": "input-type-text-limit",
       "required": false,
       "characterLimit": {
-        "id": "input-type-text-limit",
+        "id": "input-type-character-limit",
         "limit": 20
       }
     }

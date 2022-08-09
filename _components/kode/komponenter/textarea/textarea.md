@@ -45,6 +45,13 @@ Når der vises en fejlmeddelelse, vis da også <a href="/kode/komponenter/fejlop
 {:#karakterbegraensning}
 ## Karakterbegrænsning
 
-{% include code/syntax.html component="text-area-character-limit" %}
+{% include code/syntax.html component="text-area-character-limit" link="true" %}
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
+
+### Javascript
+Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID')).init();
+{% endhighlight %}

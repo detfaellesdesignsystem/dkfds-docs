@@ -4788,16 +4788,16 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-limit" data-maxlength="20">
+        <div class="form-group form-limit" data-maxlength="20" id="input-type-character-limit">
 
-    <label class="form-label" for="input-type-text">
+    <label class="form-label" for="input-type-text-limit">
         Inputfelt med karakterbegrænsning
     </label>
 
-    <input class="form-input" id="input-type-text" name="input-type-text" type="text" aria-describedby=" input-type-text-limit" />
+    <input class="form-input" id="input-type-text-limit" name="input-type-text-limit" type="text" aria-describedby=" input-type-character-limit-message" />
 
-    <span id="input-type-text-limit" class="sr-only">Du kan indtaste op til
-        20 tegn</span>
+    <span id="input-type-character-limit-message" class="sr-only">Du kan
+        indtaste op til 20 tegn</span>
     <span class="form-hint character-limit" aria-hidden="true">Du har 20
         tegn tilbage</span>
     <span class="character-limit-sr-only sr-only" aria-live="polite">Du har

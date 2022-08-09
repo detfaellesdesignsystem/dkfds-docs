@@ -4582,17 +4582,24 @@
 
 <div class="component-preview component-preview-code  component-code-text-area-character-limit" aria-label="">
     
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-area-character-limit/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-area-character-limit</span></a>
+        
+    </div>
+    
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;60&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-area&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;60&quot;
+    id=&quot;input-area-character-limit&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-area-limit&quot;&gt;
         Tekstområde med karakterbegrænsning
     &lt;/label&gt;
 
-    &lt;textarea class=&quot;form-input &quot;  rows=&quot;5&quot;     id=&quot;input-area&quot; name=&quot;input-area&quot; &gt;&lt;/textarea&gt;
+    &lt;textarea class=&quot;form-input &quot;  rows=&quot;5&quot;     id=&quot;input-area-limit&quot; name=&quot;input-area-limit&quot; aria-describedby=&quot;  input-area-character-limit-message&quot; &gt;&lt;/textarea&gt;
 
-    &lt;span id=&quot;input-area-text-limit&quot; class=&quot;sr-only&quot;&gt;Du kan indtaste op til
-        60 tegn&lt;/span&gt;
+    &lt;span id=&quot;input-area-character-limit-message&quot; class=&quot;sr-only&quot;&gt;Du kan
+        indtaste op til 60 tegn&lt;/span&gt;
     &lt;span class=&quot;form-hint character-limit&quot; aria-hidden=&quot;true&quot;&gt;Du har 60
         tegn tilbage&lt;/span&gt;
     &lt;span class=&quot;character-limit-sr-only sr-only&quot; aria-live=&quot;polite&quot;&gt;Du har
@@ -4605,6 +4612,11 @@
 </div>
 
 <p>Husk at medtage de to beskeder skjult med klassen <code>sr-only</code>. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.</p>
+
+<h3>Javascript</h3>
+<p>Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CharacterLimit(document.getElementById(&#39;FORM-LIMIT-ID&#39;)).init();</code></pre></figure>
 
 
           

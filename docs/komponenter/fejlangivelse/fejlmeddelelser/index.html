@@ -3878,15 +3878,6 @@
 
 
 <li class=" " role="none">
-<a href="#datovaelger"  role="menuitem">Datovælger</a>
-</li>
-
-    
-
-    
-
-
-<li class=" " role="none">
 <a href="#dropdown"  role="menuitem">Dropdown</a>
 </li>
 
@@ -4645,34 +4636,6 @@
     
 </div>
 
-<h2 class="h3" id="datovaelger">Datovælger</h2>
-
-<div class="component-preview  component-preview-date-picker-error" aria-label="Eksempel på datovælger med fejlmeddelelse">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/date-picker-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: date-picker-error</span></a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        
-        <div class="form-group form-error">
-    <label class="form-label" for="datepicker-example-error1">
-        Dato for aftale
-    </label>
-
-    <span class="form-error-message" id="datepicker-example-error1-error">
-        <span class="sr-only">Fejl:</span> Vælg en dato
-    </span>
-
-    <div class="date-picker"><input class="form-input " required="" id="datepicker-example-error1" value="" name="appointment-date1" type="text" aria-invalid="true" aria-describedby=" datepicker-example-error1" /></div>
-</div>
-        
-    </div>
-    
-</div>
-
 <h2 class="h3" id="dropdown">Dropdown</h2>
 
 <div class="component-preview  component-preview-select-error" aria-label="Eksempel på dropdown med fejlmeddelelse">
@@ -4688,18 +4651,19 @@
         <form novalidate="" class="form mb-7 input-width-m">
 
     <div class="form-group form-error">
-        <label class="form-label" for="options">
-            Dropdown label (select)
+        <label class="form-label" for="options-error">
+            Dropdown (select)
         </label>
-        <span class="form-error-message"><span class="sr-only">Fejl:</span>
-            Vælg en mulighed</span>
-        <select class=" form-select" name="options" id="options">
+        <span class="form-error-message" id="options-error-error"><span class="sr-only">Fejl:</span> Vælg en mulighed</span>
+        <select class=" form-select" name="options-error" id="options-error" aria-invalid="true" aria-describedby=" options-error-error">
 
-            <option value="option1">Mulighed 1</option>
+            <option value="option1">Ingen mulighed valgt</option>
 
-            <option value="option2">Mulighed 2</option>
+            <option value="option2">Mulighed 1</option>
 
-            <option value="option3">Mulighed 3</option>
+            <option value="option3">Mulighed 2</option>
+
+            <option value="option4">Mulighed 3</option>
 
         </select>
     </div>
@@ -4782,7 +4746,7 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error form-limit" data-maxlength="20">
+        <div class="form-group form-error form-limit" data-maxlength="20" id="input-type-text-limit">
 
     <label class="form-label" for="input-type-limit-error">
         Inputfelt med karakterbegrænsning
@@ -4790,10 +4754,10 @@
 
     <span class="form-error-message" id="input-type-limit-error-error">
         <span class="sr-only">Fejl:</span> Du kan maks. taste 20 tegn
-    </span><input class="form-input" id="input-type-limit-error" value="Dette er en sætning med mange tegn" name="input-type-limit-error" type="text" aria-invalid="true" aria-describedby=" input-type-limit-error-error input-type-text-limit" />
+    </span><input class="form-input" id="input-type-limit-error" value="Dette er en sætning med mange tegn" name="input-type-limit-error" type="text" aria-invalid="true" aria-describedby=" input-type-limit-error-error input-type-text-limit-message" />
 
-    <span id="input-type-text-limit" class="sr-only">Du kan indtaste op til
-        20 tegn</span>
+    <span id="input-type-text-limit-message" class="sr-only">Du kan
+        indtaste op til 20 tegn</span>
     <span class="form-hint character-limit" aria-hidden="true">Du har 20
         tegn tilbage</span>
     <span class="character-limit-sr-only sr-only" aria-live="polite">Du har
@@ -4890,16 +4854,16 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error form-limit" data-maxlength="50">
+        <div class="form-group form-error form-limit" data-maxlength="50" id="input-area-text-limit-error">
     <label class="form-label" for="textarea-limit-error">
         Karakterbegrænsning med fejlmeddelelse
     </label>
 
     <span class="form-error-message" id="form-error-message-textarea-limit-error"><span class="sr-only">Fejl:</span> Du kan maks. taste 50 tegn</span>
-    <textarea class="form-input " rows="3" id="textarea-limit-error" name="textarea-limit-error" aria-describedby="form-error-message-textarea-limit-error  input-area-text-limit-error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+    <textarea class="form-input " rows="3" id="textarea-limit-error" name="textarea-limit-error" aria-describedby="form-error-message-textarea-limit-error  input-area-text-limit-error-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
 
-    <span id="input-area-text-limit-error" class="sr-only">Du kan indtaste
-        op til 50 tegn</span>
+    <span id="input-area-text-limit-error-message" class="sr-only">Du kan
+        indtaste op til 50 tegn</span>
     <span class="form-hint character-limit" aria-hidden="true">Du har 50
         tegn tilbage</span>
     <span class="character-limit-sr-only sr-only" aria-live="polite">Du har
