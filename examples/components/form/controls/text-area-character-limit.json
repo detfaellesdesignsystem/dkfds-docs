@@ -7,7 +7,7 @@
       "name": "input-area-limit",
       "rows": 5,
       "characterLimit": {
-        "id": "input-area-limit-message",
+        "id": "input-area-character-limit",
         "limit": 60
       }
     }

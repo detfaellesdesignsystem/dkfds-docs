@@ -80,6 +80,13 @@ Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 
+#### Javascript
+Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID')).init();
+{% endhighlight %}
+
 {:#feltbredde}
 ### Feltbredde
    

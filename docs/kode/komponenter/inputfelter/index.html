@@ -4854,7 +4854,8 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;20&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;20&quot;
+    id=&quot;input-type-character-limit&quot;&gt;
 
     &lt;label class=&quot;form-label&quot; for=&quot;input-type-text-limit&quot;&gt;
         Inputfelt med karakterbegrænsning
@@ -4862,9 +4863,9 @@
 
     &lt;input class=&quot;form-input&quot; id=&quot;input-type-text-limit&quot;
         name=&quot;input-type-text-limit&quot; type=&quot;text&quot;
-        aria-describedby=&quot; input-type-text-limit-message&quot; /&gt;
+        aria-describedby=&quot; input-type-character-limit-message&quot; /&gt;
 
-    &lt;span id=&quot;input-type-text-limit-message&quot; class=&quot;sr-only&quot;&gt;Du kan
+    &lt;span id=&quot;input-type-character-limit-message&quot; class=&quot;sr-only&quot;&gt;Du kan
         indtaste op til 20 tegn&lt;/span&gt;
     &lt;span class=&quot;form-hint character-limit&quot; aria-hidden=&quot;true&quot;&gt;Du har 20
         tegn tilbage&lt;/span&gt;
@@ -4878,6 +4879,11 @@
 </div>
 
 <p>Husk at medtage de to beskeder skjult med klassen <code>sr-only</code>. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.</p>
+
+<h4>Javascript</h4>
+<p>Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CharacterLimit(document.getElementById(&#39;FORM-LIMIT-ID&#39;)).init();</code></pre></figure>
 
 <h3 id="feltbredde">Feltbredde</h3>
 
