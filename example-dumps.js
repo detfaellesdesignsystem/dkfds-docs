@@ -6,9 +6,9 @@ var targetRootDir = "img/examples_pages/";
 var themes = ["virk", "borgerdk"];
 
 var exampleUrls = [
-    {"url": "pages/eksempler/aktindsigt/aktindsigt-1/", "folder": "aktindsigt", "filename": "aktindsigt-1.PNG"},
-    {"url": "pages/eksempler/aktindsigt/aktindsigt-2/", "folder": "aktindsigt", "filename": "aktindsigt-2.PNG"},
-    {"url": "pages/eksempler/aktindsigt/aktindsigt-3/", "folder": "aktindsigt", "filename": "aktindsigt-3.PNG"},
+    {"url": "pages/eksempler/formular-til-kontaktoplysninger/formular-1/", "folder": "formular-til-kontaktoplysninger", "filename": "formular-1.PNG"},
+    {"url": "pages/eksempler/formular-til-kontaktoplysninger/formular-2/", "folder": "formular-til-kontaktoplysninger", "filename": "formular-2.PNG"},
+    {"url": "pages/eksempler/formular-til-kontaktoplysninger/formular-3/", "folder": "formular-til-kontaktoplysninger", "filename": "formular-3.PNG"},
     {"url": "pages/eksempler/boernetilskud/boernetilskud-oversigt-2/", "folder": "boernetilskud", "filename": "boernetilskud-oversigt-2.PNG"},
     {"url": "pages/eksempler/boernetilskud/boernetilskud-oversigt/", "folder": "boernetilskud", "filename": "boernetilskud-oversigt.PNG"},
     {"url": "pages/eksempler/boernetilskud/boernetilskud-1/", "folder": "boernetilskud", "filename": "boernetilskud-1.PNG"},

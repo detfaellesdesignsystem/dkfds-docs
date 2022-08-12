@@ -7,8 +7,8 @@ subcategory: Eksempler
 description: Eksempler på selvbetjeningsløsninger, der gør brug af Det Fælles Designsystem
 anchor: true
 subnav:
-- text: 'Aktindsigt'
-  href: '#aktindsigt'
+- text: 'Formular til kontaktoplysninger'
+  href: '#formularkontaktoplysninger'
 - text: 'Børnetilskud'
   href: '#boernetilskud'
 - text: 'Erstatningssag'
@@ -21,20 +21,20 @@ subnav:
   href: '#sager-hos-aes'
 ---
 
-<!-- Løsning 1: Aktindsigt -->
-<h2 id="aktindsigt">Aktindsigt</h2>
+<!-- Formular til kontaktoplysninger -->
+<h2 id="formularkontaktoplysninger">Formular til kontaktoplysninger</h2>
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-1/?r=/eksempler/selvbetjeningsloesninger/%23aktindsigt" title="Aktindsigt, 1. side: Oplysninger om dig" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 1. side: Oplysninger om dig" class="screenshot d-block"></a>
   </div>
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-2/?r=/eksempler/selvbetjeningsloesninger/%23aktindsigt" title="Aktindsigt, 2. side: Bekræft oplysninger" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 2. side: Bekræft oplysninger" class="screenshot d-block"></a>
   </div>
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-3/?r=/eksempler/selvbetjeningsloesninger/%23aktindsigt" title="Aktindsigt, 3. side: Kvittering" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 3. side: Kvittering" class="screenshot d-block"></a>
   </div>
 </div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-1/?r=/eksempler/selvbetjeningsloesninger/%23aktindsigt">Demo aktindsigt</a>
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger">Demo af formular til kontaktoplysninger</a>
 
 <!-- Løsning 2: Børnetilskud -->
 <h2 id="boernetilskud">Børnetilskud</h2>

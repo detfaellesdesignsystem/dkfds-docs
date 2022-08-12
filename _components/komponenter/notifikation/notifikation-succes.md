@@ -2,6 +2,6 @@
 title: Succes
 parent: Notification
 order: 10
-component: notification-success
+component: toastbesked-success
 componentTitle: "Eksempel på notifikation med success farver"
 ---
