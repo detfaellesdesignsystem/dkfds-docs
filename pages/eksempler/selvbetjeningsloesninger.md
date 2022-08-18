@@ -9,6 +9,8 @@ anchor: true
 subnav:
 - text: 'Formular til kontaktoplysninger'
   href: '#formularkontaktoplysninger'
+- text: 'Trinformular til registrering'
+  href: '#trinformularregistrering'
 - text: 'Børnetilskud'
   href: '#boernetilskud'
 - text: 'Erstatningssag'
@@ -24,17 +26,44 @@ subnav:
 <!-- Formular til kontaktoplysninger -->
 <h2 id="formularkontaktoplysninger">Formular til kontaktoplysninger</h2>
 <div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 1. side: Oplysninger om dig" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger" title="Formular til kontaktoplysninger, 1. side: Oplysninger om dig" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 2. side: Bekræft oplysninger" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger" title="Formular til kontaktoplysninger, 2. side: Bekræft oplysninger" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 3. side: Kvittering" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger" title="Formular til kontaktoplysninger, 3. side: Kvittering" class="screenshot d-block"></a>
   </div>
 </div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger">Demo af formular til kontaktoplysninger</a>
+<a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger">Demo af kontaktoplysninger</a>
+
+<!-- Trinformular til registrering -->
+<h2 id="trinformularregistrering">Trinformular til registrering</h2>
+<div class="row screenshot-gallery d-none">
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 1. side: Vælg personer" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-2/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 2. side: Vælg noget mere" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-3/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 3. side: Vedhæft dokumenter" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-4/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 4. side: Tidligere registrering" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-5/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 5. side: Kontaktoplysninger" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-6/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 6. side: Opsummering" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-7/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 7. side: Kvittering" class="screenshot d-block"></a>
+  </div>
+</div>
+<a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering">Demo af registrering</a>
 
 <!-- Løsning 2: Børnetilskud -->
 <h2 id="boernetilskud">Børnetilskud</h2>
