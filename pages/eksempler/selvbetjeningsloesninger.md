@@ -11,6 +11,8 @@ subnav:
   href: '#formularkontaktoplysninger'
 - text: 'Trinformular til registrering'
   href: '#trinformularregistrering'
+- text: 'Trinformular til ansøgning'
+  href: '#trinformularansoegning'
 - text: 'Børnetilskud'
   href: '#boernetilskud'
 - text: 'Erstatningssag'
@@ -65,6 +67,30 @@ subnav:
 </div>
 <a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering">Demo af registrering</a>
 
+<!-- Trinformular til ansøgning -->
+<h2 id="trinformularansoegning">Trinformular til ansøgning</h2>
+<div class="row screenshot-gallery d-none">
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 1. side: Oplysninger om ansøger" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 2. side: Kontaktoplysninger" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 3. side: Ansøgningens type" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 4. side: Tilføj dokumentation" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 5. side: Opsummering" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 6. side: Kvittering" class="screenshot d-block"></a>
+  </div>
+</div>
+<a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning">Demo af ansøgning</a>
+
 <!-- Løsning 2: Børnetilskud -->
 <h2 id="boernetilskud">Børnetilskud</h2>
 <div class="row screenshot-gallery d-none">
@@ -76,48 +102,6 @@ subnav:
   </div>
 </div>
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt-2/?r=/eksempler/selvbetjeningsloesninger/%23boernetilskud">Demo børnetilskud</a>
-
-<!-- Løsning 3: Erstatningssag -->
-<h2 id="erstatningssag">Erstatningssag</h2>
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-1/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 1: Oplysninger om afsender" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-2/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 2: Hvis AES har spørgsmål til sagen" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-3/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 3: Oplysninger om skadelidte" class="screenshot d-block"></a>
-  </div>
-</div>
-<div class="row mt-5 screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-4/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 4: Sagens natur" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-5/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 5: Oplysninger om sagen" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-6/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 6: Tilføj dokumentation for første undersøgelse af skaden" class="screenshot d-block"></a>
-  </div>
-</div>
-<div class="row mt-5 screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-7/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 7: Tilføj dokumentation fra sagen" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-8/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 8: Tilføj kommentarer til sagen" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-9/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 9: Opsummering" class="screenshot d-block"></a>
-  </div>
-</div>
-<div class="row mt-5 screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-10/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 10: Kvittering" class="screenshot d-block"></a>
-  </div>
-</div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-1/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag">Demo erstatningssag</a>
 
 <!-- Løsning 4: Digital flytning -->
 <h2 id="digital-flytning">Digital flytning</h2>

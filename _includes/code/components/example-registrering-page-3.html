@@ -32,7 +32,7 @@
         <div class="container solution-header-inner">
             <div class="solution-heading">
                 <a href="#" class="">
-                    Løsningstitel står her
+                    Registrer et eller andet
                 </a>
             </div>
 
@@ -187,7 +187,11 @@
                 <div class="form-group file-input mb-5">
                     <label class="form-label" for="fileinput">Vedhæft
                         fil</label>
-                    <input type="file" id="fileinput" name="file" />
+                    <span class="form-hint" id="help-text-hint">Valgte
+                        filer uploades med det samme og kan derefter ses
+                        eller fjernes på denne side</span>
+                    <input class="mt-3" type="file" id="fileinput"
+                        name="file" aria-describedby="help-text-hint " />
                 </div>
             </form>
 

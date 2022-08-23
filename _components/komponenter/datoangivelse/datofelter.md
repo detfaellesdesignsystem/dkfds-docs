@@ -34,7 +34,7 @@ Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, det vi
 
 Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.
 
-Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en datovælger (date picker) funktion.
+Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en <a href="/komponenter/datoangivelse/datovaelger/">datovælger</a> (date picker) funktion.
 
 {% include dos-donts-box.html component="date-dos-donts" title="Datofelter do's and don'ts" %}
 

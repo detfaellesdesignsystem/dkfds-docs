@@ -1,0 +1,251 @@
+<header class="header">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+
+    <!--1A: Portal header -->
+    <div class="portal-header ">
+        <div class="container portal-header-inner">
+            <a href="#" class="logo ">
+                <span class="sr-only">Portalnavn</span>
+            </a>
+            <button
+                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="menu"
+                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+
+            <!-- 1B: Portal header: info + actions-->
+            <div class="portal-info">
+
+                <p class="user"><span
+                        class="username weight-semibold">Anders
+                        Andersen</span> <br />Forsikringens Forsikringsfirma
+                </p>
+
+                <button class="button button-secondary d-print-none">
+                    Log af
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--2A: Solution header -->
+    <div class="solution-header header-end">
+        <div class="container solution-header-inner">
+            <div class="solution-heading">
+                <a href="#" class="">
+                    Ansøg om et eller andet
+                </a>
+            </div>
+
+            <!--2B: Solution header: Authority name + text-->
+            <div class="solution-info d-print-none">
+                <!-- nav-secondary -->
+
+                <p class="h5 authority-name"> Myndighedsnavn</p>
+
+                <p>Support: 12 34 56 78 <span class='d-print-none'>· <a
+                            href="javascript:void(0);" data-module="modal"
+                            data-target="modal-contact"
+                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <nav class="nav">
+        <!-- collapsible-->
+        <button class="function-link button-menu-close js-menu-close"
+            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+
+        <div class="portal-info-mobile">
+            <p class="user"><span class="weight-semibold">Anders
+                    Andersen</span><br />Forsikringens Forsikringsfirma</p>
+
+            <a href="#" class="button button-secondary button-signout">
+                Log af
+            </a>
+        </div>
+
+        <div class="solution-info-mobile">
+            <p class="bold">Myndighedsnavn</p>
+            <p>Support: 12 34 56 78 <br><a href="javascript:void(0);"
+                    data-module="modal" data-target="modal-contact"
+                    class="function-link d-inline-block">
+                    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a>
+            </p>
+        </div>
+    </nav> <!-- collapsible nav end-->
+</header>
+
+<main class="container page-container" id="main-content">
+    <div><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/"
+            class="back-link">Tilbage</a></div>
+
+    <div class="overflow-menu  overflow-menu--open-right">
+        <button class="button-overflow-menu js-dropdown "
+            data-js-target="overflow-ansoeg" aria-haspopup="true"
+            aria-expanded="false">
+            Trin 2 af 5
+            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
+        </button>
+        <div class="overflow-menu-inner" id="overflow-ansoeg"
+            aria-hidden="true">
+
+            <nav>
+                <ul class='sidenav-list' role='menu'>
+                    <li role='none'>
+                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/'
+                            role='menuitem'>
+                            <span class='sidenav-number'>1.</span><span
+                                class='sidenav-title'>Oplysninger&nbsp;om&nbsp;afsender</span>
+                            <span class='sidenav-icon'>
+                                <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li role='none' class='active current'>
+                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/'
+                            role='menuitem' aria-current='page'>
+                            <span class='sidenav-number'>2.</span><span
+                                class='sidenav-title'>Kontaktoplysninger</span>
+                        </a>
+                    </li>
+                    <li role='none'>
+                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/'
+                            role='menuitem'>
+                            <span class='sidenav-number'>3.</span><span
+                                class='sidenav-title'>Ansøgningens&nbsp;type</span>
+                        </a>
+                    </li>
+                    <li role='none'>
+                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/'
+                            role='menuitem'>
+                            <span class='sidenav-number'>4.</span><span
+                                class='sidenav-title'>Tilføj&nbsp;dokumentation</span>
+                        </a>
+                    </li>
+                    <li role='none'>
+                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/'
+                            role='menuitem'>
+                            <span class='sidenav-number'>5.</span><span
+                                class='sidenav-title'>Opsummering</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <h1 class="mt-6 mb-6">Kontaktoplysninger</h1>
+    <p class="font-lead mb-6">Hvis vi har spørgsmål til ansøgningen, har vi
+        brug for at kunne kontakte dig telefonisk.</p>
+    <form novalidate method="post"
+        action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/">
+        <div class="form-group mb-6">
+
+            <label class="form-label" for="input-telefonnummer">
+                Telefonnummer
+            </label>
+
+            <input class="form-input input-width-m"
+                id="input-telefonnummer" name="telefonnummer" type="text"
+                required />
+
+        </div>
+        <div class="form-group">
+
+            <label class="form-label" for="input-navn">
+                Navn på kontaktperson<span class="weight-normal">
+                    (frivilligt)</span>
+            </label>
+            <span class="form-hint" id="input-navn-hint">
+                Dette felt skal kun udfyldes, hvis kontaktpersonen er en
+                anden end dig selv.
+            </span>
+            <input class="form-input input-width-m" id="input-navn"
+                name="navn" type="text" aria-describedby="input-navn-hint "
+                required />
+
+        </div>
+        <button class="button button-primary d-print-none mt-7"
+            type='submit'>
+            Næste
+        </button>
+    </form>
+
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <ul class="align-text-left unstyled-list inline-list">
+                <li class=""><span
+                        class="h5 weight-semibold">Myndighedsnavn</span>
+                </li>
+                <li class=""><a class="function-link"
+                        href="mailto:support@myndighed.dk">support@myndighed.dk</a>
+                </li>
+                <li class=""><a class="function-link"
+                        href="tel:12345678">(+45) 12 34 56 78</a></li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link">Tilgængelighedserklæring</a>
+                </li>
+                <li class="d-print-none"><a href="#"
+                        class="function-link">Privatlivspolitik
+                        (cookies)</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
+    aria-modal="true" aria-labelledby="modal-contact-title">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-id-1-title">
+                Kontakt
+            </h2>
+            <button class="modal-close function-link"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+        </div>
+        <div class="modal-body">
+            <div class="alert alert-warning" role="alert">
+                <div class="alert-body">
+                    <h3 class="alert-heading">Vi har noget information af
+                        advarende karakter</h3>
+                    <p class="alert-text">Noget tekst, der forklarer det af
+                        advarende karakter, som brugeren bør vide inden
+                        denne ringer eller skriver. Noget tekst, der
+                        forklarer det af advarende karakter, som brugeren
+                        bør vide inden denne ringer eller skriver.</p>
+                </div>
+            </div>
+            <h3>En form for support</h3>
+            <p>Hvis du har spørgsmål om:</p>
+            <ul>
+                <li>En ting som denne</li>
+                <li>Et andet emne som dette</li>
+            </ul>
+            <p>Kan du ringe direkte til: 12 34 56 78</p>
+            <p>Telefonen er åben:</p>
+            <p class="m-0">
+                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                kl. 9-17</p>
+            <p class="m-0">
+                Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl.
+                9-17</p>
+            <p class="m-0">
+                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                kl. kl. 9-14</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="button button-secondary"
+                data-modal-close>Luk</button>
+        </div>
+
+    </div>
+</div>
