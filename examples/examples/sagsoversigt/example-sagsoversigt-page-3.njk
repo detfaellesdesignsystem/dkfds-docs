@@ -1,0 +1,246 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer.njk" import footer as footer %}
+
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/badge/badges.njk" import badge as badge %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
+{% from "components/details/details.njk" import details as details %}
+
+{% block header %}
+<header class="header">
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+    
+    <div class="overlay"></div>
+    <nav class="nav"> <!-- collapsible-->
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+
+      <div class="navbar navbar-primary">
+        <div class="navbar-inner container">
+          <ul class="nav-primary" >
+            <li class="current">
+              <a href="#" class="nav-link">
+                  <span>Find sag</span>
+              </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <span>Ansøgninger</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <span>Beskeder</span>
+                </a>
+            </li>
+            <li>
+              <div class="overflow-menu">
+                <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                  <span>Udbetalinger</span>
+                </button>
+                <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+                  <ul class="overflow-list" role="menu">
+                      <li role="none">
+                        <a href="#" role="menuitem">2022</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2021</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2020</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2019</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2018</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav-secondary d-none d-lg-block">
+            </div>
+        </div>
+      </div>
+      <div class="portal-info-mobile">
+        <p class="user">Anders Andersen</p>
+
+        <a href="#" class="button button-secondary button-signout">
+            Log af
+        </a>
+      </div>
+      <div class="solution-info-mobile">
+        <p class="bold">Myndighedsnavn</p>
+        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">
+            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar-inner navbar-context-actions container">
+          <div class="nav-secondary d-none d-lg-block">
+          {{ breadcrumbs(breadcrumbs_data_desktop) }}
+          </div>
+          <div class="nav-actions">
+            
+          </div>
+        </div>
+      </div>
+  </nav> <!-- collapsible nav end-->
+</header>
+{% endblock %}
+
+{{ breadcrumbs(breadcrumbs_data_mobile) }}
+
+{% block body %}
+<main class="container page-container" id="main-content">
+  {{ alert(alert_afslutning) }}
+  <div class="subheading mt-7">Sagsnr. 123456789</div>
+  <h1>Afgørelser</h1>
+  <p class="font-lead mb-7">Du kan her se sagens afgørelser. Der findes enkelte afgørelsestyper som ikke kan vises nedenfor, men for de fleste sager vil alle sagens afgørelser være listet nedenfor.</p>
+  <hr>
+  <h2 class="mb-3">Anerkendelse</h2>
+  {{ badge(badge_afsluttet) }}
+  <h3>Afgørelse</h3>
+  <div class="w-percent-xs-100 w-percent-md-60 w-percent-lg-50 mb-5">
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+            Resultat
+        </div>
+        <div class="col-md-6">
+          Anerkendt
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+          Dato for afgørelse
+        </div>
+        <div class="col-md-6">
+          01-01-2019
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+          Dokument med afgørelse
+        </div>
+        <div class="col-md-6">
+          <a href="#">Afgørelse for anerkendelse (PDF)</a>
+        </div>
+    </div>
+  </div>
+  {{ details(details_anerkendelse) }}
+  <hr class="mt-7">
+  <h2 class="mb-3">Sagsindhold X</h2>
+  {{ badge(badge_myndighed) }}
+  <h3>Afgørelse</h3>
+  <div class="w-percent-xs-100 w-percent-md-60 w-percent-lg-50 mb-5">
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+            Resultat
+        </div>
+        <div class="col-md-6">
+          10%
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+          Dato for afgørelse
+        </div>
+        <div class="col-md-6">
+          01-01-2019
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+          Dokument med afgørelse
+        </div>
+        <div class="col-md-6">
+          <a href="#">Afgørelse for X (PDF)</a>
+        </div>
+    </div>
+  </div>
+  {{ details(details_afgoerelse_X) }}
+  <hr class="mt-7">
+  <h2 class="mb-3">Sagsindhold Y</h2>
+  <ul class="unstyled-list" aria-label="Status">
+    <li>{{ badge(badge_selskab) }}</li>
+    <li>{{ badge(badge_navn) }}</li>
+  </ul>
+  <h3>Afgørelse</h3>
+  <div class="w-percent-xs-100 w-percent-md-60 w-percent-lg-50 mb-5">
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+            Resultat
+        </div>
+        <div class="col-md-6">
+          20%
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+          Dato for afgørelse
+        </div>
+        <div class="col-md-6">
+          01-01-2019
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+          Dokument med afgørelse
+        </div>
+        <div class="col-md-6">
+          <a href="#">Afgørelse for Y (PDF)</a>
+        </div>
+    </div>
+  </div>
+  <h3>Afgørelse</h3>
+  <div class="w-percent-xs-100 w-percent-md-60 w-percent-lg-50 mb-5">
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+            Resultat
+        </div>
+        <div class="col-md-6">
+          Under 15%
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+          Dato for afgørelse
+        </div>
+        <div class="col-md-6">
+          01-01-2019
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-6 weight-semibold">
+          Dokument med afgørelse
+        </div>
+        <div class="col-md-6">
+          <a href="#">Afgørelse for Y (PDF)</a>
+        </div>
+    </div>
+  </div>
+  {{ details(details_afgoerelse_Y) }}
+  <hr class="mt-7">
+  <h2 class="mb-3">Behandling af sagsudgifter</h2>
+  {{ badge(badge_ikke_afgjort) }}
+  <h3>Afgørelse</h3>
+  <p class="mb-6">Ingen afgørelse endnu</p>
+  {{ details(details_sagsudgifter) }}
+</main>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

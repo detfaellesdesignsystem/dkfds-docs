@@ -1,0 +1,148 @@
+{
+    "portal_header_data": {
+        "compact": true,
+        "user": {
+            "name": "Anders Andersen"
+        },
+        "logolink": {
+            "sronly": "Portalnavn",
+            "href" : "#"
+        }
+      },
+    "solution_header_data": {
+        "classes": "header-end",
+        "title": {
+            "href": "#",
+            "text": "Sagsunivers"
+        },
+        "solutionInfo": {
+          "hideOnPrint": true
+        },
+        "authority": {
+            "name": "Myndighedsnavn",
+            "text": "Support: 12 34 56 78 <span class='d-print-none'>· <a href=\"javascript:void(0);\" data-module=\"modal\" data-target=\"modal-contact\" class=\"function-link d-inline-block\"><svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#card-text\"></use></svg>Kontakt</a></span>"
+          }
+    },
+    "modal_data": {
+        "id": "modal-contact",
+        "headingID": "modal-contact-title",
+        "heading": "Kontakt",
+        "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
+        "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
+      },
+      "footer_data":{
+        "columns": [
+          {
+            "columnSize": 3,
+            "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Digitaliseringsstyrelsen<br/>Landgreven 4<br/>1413 København K</p>"
+          },
+          {
+            "columnSize": 3,
+            "classes": "d-print-none",
+            "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
+            "lists": [
+              {
+                "inline": false,
+                "classes": "mt-0 mb-1 nobullet-list",
+                "items": [
+                  {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"},
+                  {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"}
+                ]
+              }
+            ]
+          },
+          {
+            "columnSize": 6,
+            "textAlignRight": false,
+            "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
+            "lists": [
+              {
+                "inline": false,
+                "classes": "d-print-none mt-0 nobullet-list",
+                "items": [
+                  {"content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"},
+                  {"content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "breadcrumbs_data_desktop": {
+        "classes": "",
+        "aria-label": "Brødkrumme",
+        "items": [
+          {
+            "text": "Find sag",
+            "href": "/pages/eksempler/sagsoversigt/sagsoversigt-1/"
+          },
+          {
+            "text": "Sagsnr. 123456789",
+            "href": "/pages/eksempler/sagsoversigt/sagsoversigt-2/"
+          },
+          {
+            "text": "Afgørelser"
+          }
+        ]
+      },
+      "breadcrumbs_data_mobile": {
+        "classes": "container d-lg-none mt-3",
+        "aria-label": "Brødkrumme",
+        "items": [
+          {
+            "text": "Find sag",
+            "href": "/pages/eksempler/sagsoversigt/sagsoversigt-1/"
+          },
+          {
+            "text": "Sagsnr. 123456789",
+            "href": "/pages/eksempler/sagsoversigt/sagsoversigt-2/"
+          },
+          {
+            "text": "Afgørelser"
+          }
+        ]
+      },
+      "alert_afslutning": {
+        "classes": "alert-info",
+        "heading": "Sagen forventes afsluttet",
+        "content": "Maj 2021",
+        "icon": true,
+        "role": "alert"
+      },
+      "badge_afsluttet": {
+        "classes": "badge-small badge-info",
+        "text": "Afsluttet"
+      },
+      "details_anerkendelse": {
+        "summary": "Læs om vurdering af anerkendelse",
+        "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+      },
+      "badge_myndighed": {
+        "classes": "badge-small badge-info",
+        "text": "Sendt til <Myndighed>"
+      },
+      "badge_selskab": {
+        "classes": "badge-small badge-info",
+        "text": "Påklaget af forsikringsselskab ABC"
+      },
+      "badge_navn": {
+        "classes": "badge-small badge-info",
+        "text": "Påklaget af Kim Nielsen"
+      },
+      "details_afgoerelse_X": {
+        "summary": "Læs om vurdering X",
+        "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+      },
+      "details_afgoerelse_Y": {
+        "summary": "Læs om vurdering Y",
+        "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+      },
+      "badge_ikke_afgjort": {
+        "classes": "badge-small badge-info",
+        "text": "Ikke afgjort"
+      },
+      "details_sagsudgifter": {
+        "summary": "Læs om vurdering af sagsudgifter",
+        "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
+      }
+}
