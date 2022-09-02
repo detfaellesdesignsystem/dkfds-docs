@@ -41,8 +41,8 @@
     {{ button(button_print) }}
     <h2>Dine oplysninger</h2>
       <h3>Vælg personer</h3>
-      <div class="table--responsive-scroll w-percent-md-60 mt-4 mb-7">
-        <table class="table table--borderless table--responsive-headers">
+      <div class="table--responsive-scroll">
+        <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
             <thead>
                 <tr>
                   <th>Person</th>
@@ -66,8 +66,8 @@
         </table>
     </div>
       <h3>Vælg noget mere</h3>
-      <div class="table--responsive-scroll w-percent-md-60 mt-4 mb-7">
-        <table class="table table--borderless table--responsive-headers">
+      <div class="table--responsive-scroll">
+        <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
             <thead>
                 <tr>
                   <th>Nummer</th>
@@ -90,23 +90,21 @@
         </table>
     </div>
       <h3>Vedhæft dokumenter</h3>
-      <div class="table--responsive-scroll w-percent-md-60 mt-4 mb-7">
-        <table class="table table--borderless table--responsive-headers">
-            <thead>
-                <tr>
-                  <th>Vedhæftet</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</a></td>
-                </tr>
-                <tr>
-                  <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Kopi-af-dokument-x.pdf</a></td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
+      <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
+        <thead>
+            <tr>
+              <th>Vedhæftet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</a></td>
+            </tr>
+            <tr>
+              <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Kopi-af-dokument-x.pdf</a></td>
+          </tr>
+        </tbody>
+    </table>
       <h3>Tidligere registrering</h3>
       <div class="w-percent-md-60 mt-6 mb-7">
         {% for row in tidligere_registrering %}

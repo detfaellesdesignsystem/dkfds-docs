@@ -297,18 +297,23 @@
 </header>
 
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
-    <a href="javascript:void(0);" class="back-link">Tilbage</a>
+    <a href="#" class="back-link">Tilbage</a>
 
-    <h1>Dokumentation</h1>
-
-    <div class="form-group file-input mb-5">
-        <label class="form-label" for="fileinput">Vedhæft fil</label>
-        <input type="file" id="fileinput" name="file" />
-    </div>
-
-    <nav class="page-navigation d-print-none">
-        <button class="button button-primary">Næste</button>
-    </nav>
+    <form novalidate method="post"
+        action="/pages/eksempler/vedhaeft-fil/fil-1/">
+        <fieldset>
+            <legend>
+                <h1>Dokumentation</h1>
+            </legend>
+            <div class="form-group file-input mb-5">
+                <label class="form-label" for="fileinput">Vedhæft
+                    fil</label>
+                <input type="file" id="fileinput" name="file" />
+            </div>
+            <button type="button"
+                class="button button-primary d-print-none mt-7">Næste</button>
+        </fieldset>
+    </form>
 </main>
 
 <footer>

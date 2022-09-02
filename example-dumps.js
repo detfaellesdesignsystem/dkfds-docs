@@ -25,16 +25,16 @@ var exampleUrls = [
     {"url": "pages/eksempler/sagsoversigt/sagsoversigt-1/", "folder": "sagsoversigt", "filename": "sagsoversigt-1.PNG"},
     {"url": "pages/eksempler/sagsoversigt/sagsoversigt-2/", "folder": "sagsoversigt", "filename": "sagsoversigt-2.PNG"},
     {"url": "pages/eksempler/sagsoversigt/sagsoversigt-3/", "folder": "sagsoversigt", "filename": "sagsoversigt-3.PNG"},
-    {"url": "pages/eksempler/opsummering/opsummering-1/", "folder": "opsummering", "filename": "opsummering-1.PNG"},
-    {"url": "pages/eksempler/kvittering/kvittering-1/", "folder": "kvittering", "filename": "kvittering-1.PNG"},
-    {"url": "pages/eksempler/kvittering/kvittering-2/", "folder": "kvittering", "filename": "kvittering-2.PNG"},
+    {"url": "pages/eksempler/dashboard/dashboard-1/", "folder": "dashboard", "filename": "dashboard-1.PNG"},
+    {"url": "pages/eksempler/opgaveliste/", "folder": "opgaveliste", "filename": "opgaveliste.PNG"},
     {"url": "pages/eksempler/vedhaeft-fil/fil-1/", "folder": "vedhaeft-fil", "filename": "fil-1.PNG"},
     {"url": "pages/eksempler/vedhaeft-fil/fil-2/", "folder": "vedhaeft-fil", "filename": "fil-2.PNG"},
     {"url": "pages/eksempler/vedhaeft-fil/fil-3/", "folder": "vedhaeft-fil", "filename": "fil-3.PNG"},
-    {"url": "pages/eksempler/aes/oversigt/", "folder": "aes", "filename": "oversigt.PNG"},
-    {"url": "pages/eksempler/aes/sagsoverblik/", "folder": "aes", "filename": "sagsoverblik.PNG"},
-    {"url": "pages/eksempler/aes/sagsoverblik/afgoerelser/", "folder": "aes", "filename": "afgoerelser.PNG"},
-    {"url": "pages/eksempler/opgaveliste/", "folder": "opgaveliste", "filename": "opgaveliste.PNG"}
+    {"url": "pages/eksempler/opsummering/opsummering-1/", "folder": "opsummering", "filename": "opsummering-1.PNG"},
+    {"url": "pages/eksempler/opsummering/opsummering-2/", "folder": "opsummering", "filename": "opsummering-2.PNG"},
+    {"url": "pages/eksempler/kvittering/kvittering-1/", "folder": "kvittering", "filename": "kvittering-1.PNG"},
+    {"url": "pages/eksempler/kvittering/kvittering-2/", "folder": "kvittering", "filename": "kvittering-2.PNG"},
+    {"url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "folder": "formular-med-fejl", "filename": "formular-med-fejl-1.PNG"}
 ];
 
 

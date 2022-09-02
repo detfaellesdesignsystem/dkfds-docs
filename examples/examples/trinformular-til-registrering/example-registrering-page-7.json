@@ -57,30 +57,25 @@
       "tidligere_registrering": [
         {
           "label": "Har du tidligere lavet en lignende registrering?",
-          "value": "Ja",
-          "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+          "value": "Ja"
         },
         {
           "label": "Tidligere registreringsnummer",
-          "value": "123.678",
-          "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+          "value": "123.678"
         },
         {
           "label": "Dato for registreringen",
-          "value": "10.10.2010",
-          "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+          "value": "10.10.2010"
         }
       ],
       "kontaktoplysninger": [
         {
           "label": "E-mail",
-          "value": "eksempel@mail.dk",
-          "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
+          "value": "eksempel@mail.dk"
         },
         {
           "label": "Telefonnummer",
-          "value": "12345678",
-          "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
+          "value": "12345678"
         }
       ],
       "button_done": {
