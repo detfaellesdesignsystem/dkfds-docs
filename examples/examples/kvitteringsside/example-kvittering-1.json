@@ -81,5 +81,8 @@
     "button_done": {
       "text": "Log ud og gå til forsiden",
       "classes": "primary d-print-none mt-4"
+    },
+    "back_to_top_button": {
+      "topLink": "#top"
     }
 }

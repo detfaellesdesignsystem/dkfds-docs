@@ -11,9 +11,11 @@
 {% from "components/badge/badges.njk" import badge as badge %}
 {% from "components/details/details.njk" import details as details %}
 {% from "components/cards/cards.njk" import card as card %}
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 {% block header %}
 <header class="header">
+    <div id="top"></div>
     <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
@@ -213,7 +215,7 @@
     {{ card(card_anmodning) }}
   </div>
   
-
+{{ back_to_top(back_to_top_button) }}
 </main>
 {% endblock %}
 

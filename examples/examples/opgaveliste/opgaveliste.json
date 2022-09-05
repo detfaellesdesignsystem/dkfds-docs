@@ -42,5 +42,8 @@
         {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
       ]
     }
+  },
+  "back_to_top_button": {
+    "topLink": "#top"
   }
 }

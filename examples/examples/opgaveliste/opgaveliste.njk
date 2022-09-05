@@ -3,10 +3,13 @@
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer.njk" import footer as footer %}
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 
 {% block header %}
-  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+  <header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
@@ -99,6 +102,7 @@
             </div>
         </div>
     </div>
+    {{ back_to_top(back_to_top_button) }}
 </main>
 {% endblock %}
 

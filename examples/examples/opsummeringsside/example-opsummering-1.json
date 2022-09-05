@@ -110,5 +110,8 @@
       "text": "Send registrering",
       "classes": "primary d-print-none mt-4",
       "attributes": "type='button'"
+    },
+    "back_to_top_button": {
+      "topLink": "#top"
     }
 }

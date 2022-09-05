@@ -11,10 +11,13 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 
 {% block header %}
-  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+  <header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
@@ -52,6 +55,7 @@
           <button type="button" class="button button-primary d-print-none mt-7">Næste</button>
       </fieldset>
     </form>
+    {{ back_to_top(back_to_top_button) }}
 </main>
 {% endblock %}
 {% block footer -%}

@@ -68,6 +68,9 @@
             ]
           }
         ]
+      },
+      "back_to_top_button": {
+        "topLink": "#top"
       }
   }
   

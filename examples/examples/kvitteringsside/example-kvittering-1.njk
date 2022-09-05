@@ -6,9 +6,11 @@
 
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 {% block header %}
     <header class="header">
+      <div id="top"></div>
     <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
@@ -132,7 +134,9 @@
         {% endfor %}
       </div>
       {{ button(button_done) }}
+      {{ back_to_top(back_to_top_button) }}
   </main>
+  
 {% endblock %}
 
 {% block banner -%}

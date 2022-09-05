@@ -91,5 +91,8 @@
         "actionButtons": "<button class=\"button button-tertiary\">Annuller anmodning</button>",
         "content": "<span class='badge badge-small badge-info ml-5'>Afventer godkendelse</span>",
         "order": ["header", "text", "content", "action"]
+      },
+      "back_to_top_button": {
+        "topLink": "#top"
       }
 }

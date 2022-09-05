@@ -82,5 +82,8 @@
       "classes": "primary d-print-none mt-7",
       "attributes": "type='button'"
       
+    },
+    "back_to_top_button": {
+      "topLink": "#top"
     }
 }
