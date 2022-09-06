@@ -76,9 +76,9 @@ Linda Newman Lior: Writing for Interaction (2013)
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/aktindsigt/aktindsigt-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
-- <a href="/pages/eksempler/boernetilskud/boernetilskud-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
-- <a href="/pages/eksempler/AES-erstatningssag/aes-10/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 7'">Trinformular til registrering, side 7</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning, side 6'">Trinformular til ansøgning, side 6</a>
+- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt, side 3'">Sagsoversigt, side 3</a>
+
 
 {% include child-components.html parent='Beskeder' %}

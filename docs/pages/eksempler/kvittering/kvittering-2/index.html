@@ -220,15 +220,15 @@
 <symbol id="zoom-out" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"/></symbol>
 </svg>
 </div>
-<header class="header"><a href="#main-content" class="skipnav">Gå til
-        sidens indhold</a>
+<header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
     <!--1A: Portal header -->
     <div class="portal-header ">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" aria-label="Portalnavn"
-                class="logo ">
-
+            <a href="#" class="logo ">
+                <span class="sr-only">Portalnavn</span>
             </a>
             <button
                 class="function-link button-menu-open js-menu-open ml-auto d-print-none"
@@ -240,7 +240,8 @@
 
                 <p class="user"><span
                         class="username weight-semibold">Anders
-                        Andersen</span> </p>
+                        Andersen</span> <br />Forsikringens Forsikringsfirma
+                </p>
 
                 <button class="button button-secondary d-print-none">
                     Log af
@@ -250,23 +251,24 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header ">
+    <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
                 <a href="#" class="">
-                    Vejledende udtalelse fra AES i privat erstatningssag
+                    Ansøg om et eller andet
                 </a>
             </div>
 
             <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info ">
+            <div class="solution-info d-print-none">
                 <!-- nav-secondary -->
 
-                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
+                <p class="h5 authority-name"> Myndighedsnavn</p>
 
-                <p><a href="javascript:void(0);" data-module="modal"
-                        data-target="modal-contact"
-                        class="function-link d-inline-block d-print-none"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</a>
+                <p>Support: 12 34 56 78 <span class='d-print-none'>· <a
+                            href="javascript:void(0);" data-module="modal"
+                            data-target="modal-contact"
+                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
@@ -274,232 +276,95 @@
     </div>
 
     <div class="overlay"></div>
-    <nav class=" nav">
+    <nav class="nav">
         <!-- collapsible-->
         <button class="function-link button-menu-close js-menu-close"
             title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user bold">Anders Andersen</p>
-            <p class="mt-0">Københavns Urmager Værksted v/Martin Elsig</p>
+            <p class="user"><span class="weight-semibold">Anders
+                    Andersen</span><br />Forsikringens Forsikringsfirma</p>
+
             <a href="#" class="button button-secondary button-signout">
                 Log af
             </a>
         </div>
 
         <div class="solution-info-mobile">
-            <p class="bold">Erhvervsministeriet</p>
-            <p><button data-module="modal" data-target="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</button>
+            <p class="bold">Myndighedsnavn</p>
+            <p>Support: 12 34 56 78 <br><a href="javascript:void(0);"
+                    data-module="modal" data-target="modal-contact"
+                    class="function-link d-inline-block">
+                    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a>
             </p>
         </div>
     </nav> <!-- collapsible nav end-->
 </header>
 
-<main class="container  page-container" id="main-content">
+<main class="container page-container" id="main-content">
 
-    <div class="alert alert-success alert--show-icon">
+    <div class="alert alert-success alert--show-icon" role="alert"
+        aria-atomic="true">
         <div class="alert-body">
-            <p class="alert-heading">Din virksomhedsregistrering er
-                modtaget</p>
+            <p class="alert-heading">Ansøgningen er sendt</p>
             <p class="alert-text"></p>
         </div>
     </div>
 
-    <h1 class="mt-5">Kvittering</h1>
-    <p class="font-lead">Nedenfor finder du dine indtastninger fra de
-        foregående sider.</p>
-    <button
-        class="button button-secondary d-print-none"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#print"></use></svg>
-        Udskriv kvittering</button>
-    <h2>Dine oplysninger</h2>
-    <div class="w-percent-md-70 mt-6 mb-7">
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Virksomhedens navn
-            </div>
-            <div class="col-12 col-md-8">
-                Forsikringens forsikring (enhed)
-            </div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Kontaktperson
-            </div>
-            <div class="col-12 col-md-8">
-                John Doe<br />
-                <span class="sr-only">Telefonnummer til
-                    kontaktperson:</span>
-                +45 1234 5678
-            </div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Afsender
-            </div>
-            <div class="col-12 col-md-8">
-                Forsikringens forsikring (enhed)
-            </div>
-        </div>
-    </div>
-    <h3 class="h4">Oplysninger om skadelidte</h3>
-    <div class="w-percent-md-70 mt-6 mb-7">
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Skadelidtes navn
-            </div>
-            <div class="col-12 col-md-8">
-                Susanne Maria Zaggariasen
-            </div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Skadelidtes CPR</label>
-            </div>
-            <div class="col-12 col-md-8">
-                110687-1478
-            </div>
-        </div>
-    </div>
-    <h3 class="h4">Oplysninger om sagen</h3>
-
-    <div class="w-percent-md-70 mt-6 mb-7">
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Sagstype
-            </div>
-            <div class="col-12 col-md-8">
-                Erstatningsansvarloven
-            </div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Emne
-            </div>
-            <div class="col-12 col-md-8">
-                Mén (6.220 kr.)
-            </div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Skadedato
-            </div>
-            <div class="col-12 col-md-8">
-                01/10/2017
-            </div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Sagsnummer
-            </div>
-            <div class="col-12 col-md-8">
-                prsk013456
-            </div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Verserende retssag
-            </div>
-            <div class="col-12 col-md-8">
-                Nej
-            </div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Skadelidtes advokat
-            </div>
-            <div class="col-12 col-md-8">
-                Nej
-            </div>
-        </div>
-    </div>
-    <h3 class="h4">Yderligere oplysninger</h3>
-
-    <div class="w-percent-md-70 mt-6 mb-7">
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Faktuelle oplysninger
-            </div>
-            <div class="col-12 col-md-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Fusce quis lectus quis sem lacinia nonummy.
-                Proin mollis lorem non dolor. In hac habitasse platea
-                dictumst. Nulla ultrices odio.
-                Donec augue. Phasellus dui. Maecenas facilisis nisl vitae
-                nibh. Proin vel seo est vitae eros pretium dignissim.
-                Aliquam aliquam sodales orci. Suspendisse potenti. Nunc
-                adipiscing euismod arcu. Quisque facilisis mattis lacus.
-            </div>
+    <div class="alert alert-warning alert--show-icon" role="alert"
+        aria-atomic="true">
+        <div class="alert-body">
+            <p class="alert-heading">Husk betaling</p>
+            <p class="alert-text">Gebyret skal indsættes på vores konto i
+                banken</p>
         </div>
     </div>
 
-    <h2>Bilagsoversigt</h2>
-    <h3 class="h4 mt-8 mb-5">Første undersøgelse af skade</h3>
-    <table
-        class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-lg-70">
-        <thead>
-            <tr>
-                <th>Original titel</th>
-                <th>Navngivning</th>
-                <th>Kommentar</th>
-                <th>Størrelse</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>prn1023152_attest.pdf</td>
-                <td>Journal fra egen læge</td>
-                <td>2/10-2017</td>
-                <td>2,3 mb</td>
-            </tr>
-        </tbody>
-    </table>
-    <h3 class="h4 mt-8 mb-5">Oplysninger om varigt mén</h3>
-    <table
-        class="table table--borderless table--compact table--responsive-headers d-print-table mt-6 mb-7 w-percent-lg-70">
-        <thead>
-            <tr>
-                <th>Original titel</th>
-                <th>Navngivning</th>
-                <th>Kommentar</th>
-                <th>Størrelse</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>prn1023152_attest.pdf</td>
-                <td>Journal fra egen læge</td>
-                <td>2/10-2017</td>
-                <td>2,3 mb</td>
-            </tr>
-            <tr>
-                <td>prn1023152_attest.pdf</td>
-                <td>Journal fra egen læge</td>
-                <td>2/10-2017</td>
-                <td>2,3 mb</td>
-            </tr>
-        </tbody>
-    </table>
-    <h3 class="h4 mt-8 mb-5">Første undersøgelse af skade</h3>
-    <table
-        class="table table--borderless table--responsive-headers d-print-table table--compact mt-6 w-percent-lg-70">
-        <thead>
-            <tr>
-                <th>Original titel</th>
-                <th>Navngivning</th>
-                <th>Kommentar</th>
-                <th>Størrelse</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>prn1023152_attest.pdf</td>
-                <td>Journal fra egen læge</td>
-                <td>2/10-2017</td>
-                <td>2,3 mb</td>
-            </tr>
-        </tbody>
-    </table>
+    <h1 class="mb-3 mt-6">Kvittering</h1>
+    <p class="form-hint mt-3 mb-5">Referencenummer: 98765432</p>
+    <p>Hvis du ønsker dokumentation på ansøgningen kan du downloade
+        kvitteringen.</p>
+    <button class="button button-secondary d-print-none">
+        <svg class="icon-svg" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
+        Download kvittering som pdf
+    </button>
+    <h2 class="h4 mt-7">Hvad sker der nu</h2>
+    <p>Sagens parter vil inden for 7 hverdage modtage en kvittering med
+        journalnummer og oplysninger om, hvornår det forventes, at der er
+        en udtalelse klar.</p>
+    <h2 class="h4 mt-7">Husk betaling</h2>
+    <p>Gebyret for udtalelsen skal sættes ind på vores konto:</p>
+    <div class="w-percent-md-30 mt-4">
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Reg.nr.
+            </div>
+            <div class="col-12 col-md-8">1234</div>
+        </div>
+        <div class="row no-gutters row-bordered">
+            <div class="col-12 col-md-4 weight-semibold">
+                Kontonr.
+            </div>
+            <div class="col-12 col-md-8">1234567890</div>
+        </div>
+    </div>
+    <p>Gebyr: 6.000 kr.<br />Ved overførslen skal I oplyse ansøgers CPR-nummer.
+    </p>
+    <h2 class="h4 mt-7">Ved spørgsmål eller supplerende oplysninger</h2>
+    <p>Kontakt os på kontakt@eksempel.dk eller telefon 12 34 56 78.<br />Referencenummer: 98765432
+    </p>
+    <div><button class="button button-secondary d-print-none mt-7">
+            Opret ny ansøgning
+        </button></div>
+    <button class="button button-primary d-print-none mt-4">
+        Log ud og gå til forsiden
+    </button>
+
+    <a class="back-to-top-button button button-tertiary"
+        href="#top"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+        <span class="d-none d-md-inline-block">Til toppen</span>
+    </a>
+
 </main>
 
 <footer>
@@ -507,15 +372,15 @@
         <div class="container">
             <ul class="align-text-left unstyled-list inline-list">
                 <li class=""><span
-                        class="h5 weight-semibold">Eksempelstyrelsen</span>
+                        class="h5 weight-semibold">Myndighedsnavn</span>
                 </li>
                 <li class=""><a class="function-link"
-                        href="mailto:support@example.dk">support@example.dk</a>
+                        href="mailto:support@myndighed.dk">support@myndighed.dk</a>
                 </li>
                 <li class=""><a class="function-link"
-                        href="tel:12345678">12 34 56 78</a></li>
+                        href="tel:12345678">(+45) 12 34 56 78</a></li>
                 <li class="d-print-none"><a href="#"
-                        class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+                        class="function-link">Tilgængelighedserklæring</a>
                 </li>
                 <li class="d-print-none"><a href="#"
                         class="function-link">Privatlivspolitik
@@ -527,10 +392,10 @@
 </footer>
 
 <div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-id-1-title">
+    aria-modal="true" aria-labelledby="modal-contact-title">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="modal-title" id="modal-contact-title">
+            <h2 class="modal-title" id="modal-id-1-title">
                 Kontakt
             </h2>
             <button class="modal-close function-link"

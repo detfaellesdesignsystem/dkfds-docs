@@ -40,11 +40,9 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-* <a href="/pages/eksempler/aktindsigt/aktindsigt-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
-* <a href="/pages/eksempler/AES-erstatningssag/aes-9/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
-* <a href="/pages/eksempler/opgaveliste/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Opgaveliste åbnes i nyt vindue">Opgaveliste</a>
-* <a href="/pages/eksempler/aes/sagsoverblik/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES: Sagsoverblik åbnes i nyt vindue">Sager hos AES: Sagsoverblik</a>
-* <a href="/pages/eksempler/aes/sagsoverblik/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES: Afgørelser åbnes i nyt vindue">Sager hos AES: Afgørelser</a>
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger, side 2'">Formular til kontaktoplysninger, side 2</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 7'">Trinformular til registrering, side 7</a>
+- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt, side 2'">Sagsoversigt, side 2</a>
 
 {:#med-link}
 ## Struktureret liste med link

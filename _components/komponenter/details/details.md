@@ -48,11 +48,10 @@ Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) 
 Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Undgå generelt for mange interaktionsniveauer.
 
 {:.h3 #eksempelloesninger}
-
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-
-* <a href="/pages/eksempler/aes/oversigt/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager os AES åbnes i nyt vindue">Sager hos AES</a>
+- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt, side 1'">Sagsoversigt, side 1</a>
+- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt, side 3'">Sagsoversigt, side 3</a>
 
 {% include child-components.html parent='Detaljer' %}

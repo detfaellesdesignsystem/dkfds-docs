@@ -1,0 +1,96 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer.njk" import footer as footer %}
+
+{% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
+
+{% block header %}
+    <header class="header">
+      <div id="top"></div>
+  <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+  {{ portal_header(portal_header_data) }}
+  {{ solution_header(solution_header_data) }}
+
+  <div class="overlay"></div>
+  <nav class="nav"> <!-- collapsible-->
+    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+
+    <div class="portal-info-mobile">
+      <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
+
+      <a href="#" class="button button-secondary button-signout">
+        Log af
+      </a>
+    </div>
+
+    <div class="solution-info-mobile">
+      <p class="bold">Myndighedsnavn</p>
+      <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+    </div>
+
+    <div class="navbar">
+      <div class="navbar-inner navbar-context-actions container">
+        <div class="nav-actions">
+          <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
+        </div>
+      </div>
+    </div>
+  </nav> <!-- collapsible nav end-->
+</header>
+{% endblock %}
+
+{% block body %}
+<div class="container page-container pt-5">
+  <div class="row">
+    <aside class="col-12 col-lg-3 sidebar-col">
+      <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
+        <button class="button-overflow-menu js-dropdown" data-js-target="overflow-reg" aria-haspopup="true" aria-expanded="false">
+            Trin 3 af 6
+            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
+        </button>
+        <div class="overflow-menu-inner" id="overflow-reg" aria-hidden="false">
+          {{ stepguide(trinindikator_data) }}
+        </div>
+    </div>
+    </aside>
+    <main class="col-12 col-lg-9" id="main-content">
+      <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-2/" class="back-link">Tilbage</a></div>
+      <h1 class="mb-6">Vedhæft dokumenter</h1>
+      <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-3/">
+        <div class="form-group file-input mb-5">
+          <label class="form-label" for="fileinput">Vedhæft fil</label>
+          <input class="mt-3" type="file" id="fileinput" name="file" aria-describedby="help-text-hint " />
+        </div>
+        <button class="button button-secondary" type="submit">Upload fil</button>
+      </form>
+  
+      <h2 class="h5 mt-8">Vedhæftet</h2>
+      <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-3/">
+        <ul class="bordered-list w-percent-md-40 mt-3">
+          <li><div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</a><button class="function-link">{{ icon_svg({"name": 'trash-can'})}}Slet</button></div></li>
+          <li><div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Kopi-af-dokument-x.pdf</a><button class="function-link">{{ icon_svg({"name": 'trash-can'})}}Slet</button></div></li>
+        </ul>
+      </form>
+      
+      <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-4/">
+        <input type="hidden" name="files-attached" value="true">
+        {{ button(button_next) }}
+      </form>
+      {{ back_to_top(back_to_top_button) }}
+    </main>
+  </div>
+</div>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

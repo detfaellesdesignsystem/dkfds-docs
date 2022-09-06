@@ -1,5 +1,6 @@
-<header class="header"><a href="#main-content" class="skipnav">Gå til
-        sidens indhold</a>
+<header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
     <!--1A: Portal header -->
     <div class="portal-header portal-header-compact">
@@ -27,7 +28,7 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header ">
+    <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
                 <a href="#" class="">
@@ -75,7 +76,7 @@
 </header>
 
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
-    <a href="javascript:void(0);" class="back-link">Tilbage</a>
+    <a href="#" class="back-link">Tilbage</a>
 
     <h1>Dokumentation</h1>
 
@@ -83,6 +84,7 @@
         <label class="form-label" for="fileinput">Vedhæft fil</label>
         <input type="file" id="fileinput" name="file" />
     </div>
+    <button class="button button-secondary">Upload fil</button>
 
     <h2 class="h5 mt-8">Vedhæftet</h2>
     <ul class="bordered-list w-percent-md-40 mt-3">
@@ -101,6 +103,12 @@
     </ul>
 
     <button class="button button-primary mt-8">Næste</button>
+
+    <a class="back-to-top-button button button-tertiary"
+        href="#top"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+        <span class="d-none d-md-inline-block">Til toppen</span>
+    </a>
+
 </main>
 
 <footer>

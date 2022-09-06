@@ -11,10 +11,13 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 
 {% block header %}
-  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+  <header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
@@ -40,7 +43,7 @@
 
 {% block body %}
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
-    <a href="javascript:void(0);" class="back-link">Tilbage</a>
+    <a href="#" class="back-link">Tilbage</a>
 
     <h1>Dokumentation</h1>
 
@@ -48,6 +51,7 @@
         <label class="form-label" for="fileinput">Vedhæft fil</label>
         <input type="file" id="fileinput" name="file" />
     </div>
+    <button class="button button-secondary">Upload fil</button>
 
     <h2 class="h5 mt-8">Vedhæftet</h2>
     <ul class="bordered-list w-percent-md-40 mt-3">
@@ -56,6 +60,7 @@
     </ul>
 
     <button class="button button-primary mt-8">Næste</button>
+    {{ back_to_top(back_to_top_button) }}
 </main>
 {% endblock %}
 {% block footer -%}

@@ -33,8 +33,12 @@ Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
 
+{% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
+
 {:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 3'">Trinformular til registrering, side 3</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning, side 4'">Trinformular til ansøgning, side 4</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Vedhæft fil'">Vedhæft fil</a>

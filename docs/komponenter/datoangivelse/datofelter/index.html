@@ -4404,7 +4404,7 @@
 
 <p>Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.</p>
 
-<p>Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en datovælger (date picker) funktion.</p>
+<p>Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en <a href="/komponenter/datoangivelse/datovaelger/">datovælger</a> (date picker) funktion.</p>
 
 <div class=" component-preview-date-dos-donts" aria-label="Datofelter do's and don'ts">
     <div class="component-example" aria-label="Eksempel">
@@ -4442,15 +4442,53 @@
 <h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
 
 <ul class="nobullet-list">
-  <li><a href="/pages/eksempler/boernetilskud/boernetilskud-2/?r=/komponenter/datoangivelse/datofelter/%23eksempelloesninger" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a></li>
-  <li><a href="/pages/eksempler/AES-erstatningssag/aes-5/?r=/komponenter/datoangivelse/datofelter/%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a></li>
-  <li><a href="/pages/eksempler/digital-flytning/flytning-3/?r=/komponenter/datoangivelse/datofelter/%23eksempelloesninger" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a></li>
+  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-4/?r=/komponenter/datoangivelse/datofelter/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 4'">Trinformular til registrering, side 4</a></li>
 </ul>
 
 <h2 id="fejlmeddelelse">Fejlmeddelelse</h2>
 <p><a href="/komponenter/fejlangivelse/fejlmeddelelser/#datofelter">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
 
 <p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.</p>
+
+<div class="component-preview  component-preview-error-message-date" aria-label="Eksempel på datofelter med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/error-message-date/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: error-message-date</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group  form-error  ">
+    <fieldset aria-describedby="example-date-field-hint example-date-field-error">
+        <legend class="form-label">Hvornår blev dit pas udstedt?</legend>
+        <span class="form-hint" id="example-date-field-hint">Fx: 05 12
+            2018</span>
+        <span class="form-error-message " id="example-date-field-error"><span class="sr-only">Fejl:</span> Datoen kan ikke være i
+            fremtiden</span>
+        <div class="date-group js-calendar-group mt-3">
+            <div class="form-group form-group-day">
+                <label class="form-label" for="date-day">Dag</label>
+                <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="date-month">Måned</label>
+                <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+            </div>
+            <div class="form-group form-group-year ">
+                <label class="form-label" for="date-year">År</label>
+                <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+            </div>
+
+        </div>
+    </fieldset>
+</div>
+        
+    </div>
+    
+</div>
+
 
 
           

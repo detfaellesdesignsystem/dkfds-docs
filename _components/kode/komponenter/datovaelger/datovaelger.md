@@ -9,7 +9,7 @@ subcategory: Kode
 anchor: true
 description: "Dokumentation på implementering af datovælger."
 subnav:
-- text: Interval
+- text: Begræns mulige datoer
   href: '#interval'
 - text: Fast værdi
   href: '#fast-værdi'
@@ -51,7 +51,7 @@ DKFDS.datePicker.on(document.body);
 ## Varianter
 
 {:#interval}
-### Interval
+### Begræns mulige datoer
 {% include code/syntax.html component="date-picker-interval" link="true" %}
 
 {:#fast-værdi}

@@ -7,149 +7,103 @@ subcategory: Eksempler
 description: Eksempler på selvbetjeningsløsninger, der gør brug af Det Fælles Designsystem
 anchor: true
 subnav:
-- text: 'Aktindsigt'
-  href: '#aktindsigt'
-- text: 'Børnetilskud'
-  href: '#boernetilskud'
-- text: 'Erstatningssag'
-  href: '#erstatningssag'
-- text: 'Digital flytning'
-  href: '#digital-flytning'
-- text: 'Strategiske virksomhedsalliancer'
-  href: '#strategiske-virksomhedsalliancer'
-- text: 'Sager hos AES'
-  href: '#sager-hos-aes'
+- text: 'Formular til kontaktoplysninger'
+  href: '#formularkontaktoplysninger'
+- text: 'Trinformular til registrering'
+  href: '#trinformularregistrering'
+- text: 'Trinformular til ansøgning'
+  href: '#trinformularansoegning'
+- text: 'Sagsoversigt'
+  href: '#sagsoversigt'
 ---
 
-<!-- Løsning 1: Aktindsigt -->
-<h2 id="aktindsigt">Aktindsigt</h2>
+<!-- Formular til kontaktoplysninger -->
+<h2 id="formularkontaktoplysninger">Formular til kontaktoplysninger</h2>
 <div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-1/?r=/eksempler/selvbetjeningsloesninger/%23aktindsigt" title="Aktindsigt, 1. side: Oplysninger om dig" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger" title="Formular til kontaktoplysninger, 1. side: Oplysninger om dig" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-2/?r=/eksempler/selvbetjeningsloesninger/%23aktindsigt" title="Aktindsigt, 2. side: Bekræft oplysninger" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger" title="Formular til kontaktoplysninger, 2. side: Bekræft oplysninger" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-3/?r=/eksempler/selvbetjeningsloesninger/%23aktindsigt" title="Aktindsigt, 3. side: Kvittering" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger" title="Formular til kontaktoplysninger, 3. side: Kvittering" class="screenshot d-block"></a>
   </div>
 </div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/aktindsigt/aktindsigt-1/?r=/eksempler/selvbetjeningsloesninger/%23aktindsigt">Demo aktindsigt</a>
+<p class="mt-0">
+  <a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger">Demo af kontaktoplysninger</a>
+</p>
 
-<!-- Løsning 2: Børnetilskud -->
-<h2 id="boernetilskud">Børnetilskud</h2>
+
+<!-- Trinformular til registrering -->
+<h2 id="trinformularregistrering">Trinformular til registrering</h2>
 <div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-1/?r=/eksempler/selvbetjeningsloesninger/%23boernetilskud" title="Børnetilskud, 3. side: Hvilke børn søger du tilskud til?" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 1. side: Vælg personer" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-2/?r=/eksempler/selvbetjeningsloesninger/%23boernetilskud" title="Børnetilskud, 4. side: Hvornår blev du eller bliver du enlig?" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-2/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 2. side: Vælg noget mere" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-3/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 3. side: Vedhæft dokumenter" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-4/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 4. side: Tidligere registrering" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-5/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 5. side: Kontaktoplysninger" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-6/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 6. side: Opsummering" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-7/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering" title="Trinformular til registrering, 7. side: Kvittering" class="screenshot d-block"></a>
   </div>
 </div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/boernetilskud/boernetilskud-oversigt-2/?r=/eksempler/selvbetjeningsloesninger/%23boernetilskud">Demo børnetilskud</a>
+<p class="mt-0">
+  <a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering">Demo af registrering</a>
+</p>
 
-<!-- Løsning 3: Erstatningssag -->
-<h2 id="erstatningssag">Erstatningssag</h2>
+
+<!-- Trinformular til ansøgning -->
+<h2 id="trinformularansoegning">Trinformular til ansøgning</h2>
 <div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-1/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 1: Oplysninger om afsender" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 1. side: Oplysninger om ansøger" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-2/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 2: Hvis AES har spørgsmål til sagen" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 2. side: Kontaktoplysninger" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-3/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 3: Oplysninger om skadelidte" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 3. side: Ansøgningens type" class="screenshot d-block"></a>
   </div>
-</div>
-<div class="row mt-5 screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-4/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 4: Sagens natur" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 4. side: Tilføj dokumentation" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-5/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 5: Oplysninger om sagen" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 5. side: Opsummering" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-6/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 6: Tilføj dokumentation for første undersøgelse af skaden" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning" title="Trinformular til ansøgning, 6. side: Kvittering" class="screenshot d-block"></a>
   </div>
 </div>
-<div class="row mt-5 screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-7/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 7: Tilføj dokumentation fra sagen" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-8/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 8: Tilføj kommentarer til sagen" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-9/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 9: Opsummering" class="screenshot d-block"></a>
-  </div>
-</div>
-<div class="row mt-5 screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-10/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag" title="Erstatningssag, side 10: Kvittering" class="screenshot d-block"></a>
-  </div>
-</div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/AES-erstatningssag/aes-1/?r=/eksempler/selvbetjeningsloesninger/%23erstatningssag">Demo erstatningssag</a>
+<p class="mt-0">
+  <a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning">Demo af ansøgning</a>
+</p>
 
-<!-- Løsning 4: Digital flytning -->
-<h2 id="digital-flytning">Digital flytning</h2>
+<!-- Sagsoversigt -->
+<h2 id="sagsoversigt">Sagsoversigt</h2>
 <div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/digital-flytning/flytning-1/?r=/eksempler/selvbetjeningsloesninger/%23digital-flytning" title="Digital flytning, side 1: Oversigt" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/sagsoversigt-1/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 1. side: Find sag" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/digital-flytning/flytning-2/?r=/eksempler/selvbetjeningsloesninger/%23digital-flytning" title="Digital flytning, side 2: Personer" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/sagsoversigt-2/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 2. side: Sagsnr. 123456789" class="screenshot d-block"></a>
   </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/digital-flytning/flytning-3/?r=/eksempler/selvbetjeningsloesninger/%23digital-flytning" title="Digital flytning, side 3: Adresse" class="screenshot d-block"></a>
-  </div>
-</div>
-<div class="row mt-5 screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/digital-flytning/flytning-4/?r=/eksempler/selvbetjeningsloesninger/%23digital-flytning" title="Digital flytning, side 4: Logivært" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/digital-flytning/flytning-5/?r=/eksempler/selvbetjeningsloesninger/%23digital-flytning" title="Digital flytning, side 5: Lægevalg" class="screenshot d-block"></a>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/sagsoversigt-3/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 3. side: Afgørelser" class="screenshot d-block"></a>
   </div>
 </div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/digital-flytning/flytning-1/?r=/eksempler/selvbetjeningsloesninger/%23digital-flytning">Demo digital flytning</a>
-
-<!-- Løsning 5: Strategiske virksomhedsalliancer -->
-<h2 id="strategiske-virksomhedsalliancer">Strategiske virksomhedsalliancer</h2>
-<div class="row screenshot-gallery">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/?r=/eksempler/selvbetjeningsloesninger/%23strategiske-virksomhedsalliancer" title="Strategiske virksomhedsalliancer, side 1: Stamdata" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/?r=/eksempler/selvbetjeningsloesninger/%23strategiske-virksomhedsalliancer" title="Strategiske virksomhedsalliancer, side 2: SMV-kriterier" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-   <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-3/?r=/eksempler/selvbetjeningsloesninger/%23strategiske-virksomhedsalliancer" title="Strategiske virksomhedsalliancer, side 3: Statsstøtte" class="screenshot d-block"></a>
-  </div>
-</div>
-<div class="row mt-5 screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/?r=/eksempler/selvbetjeningsloesninger/%23strategiske-virksomhedsalliancer" title="Strategiske virksomhedsalliancer, side 4: Tilskud til land" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/?r=/eksempler/selvbetjeningsloesninger/%23strategiske-virksomhedsalliancer" title="Strategiske virksomhedsalliancer, side 5: Opsummering" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-6/?r=/eksempler/selvbetjeningsloesninger/%23strategiske-virksomhedsalliancer" title="Strategiske virksomhedsalliancer, side 4: Kvittering" class="screenshot d-block"></a>
-  </div>
-</div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/?r=/eksempler/selvbetjeningsloesninger/%23strategiske-virksomhedsalliancer">Demo strategiske virksomhedsalliancer</a>
-
-<!-- Løsning 7: Sager hos AES -->
-<h2 id="sager-hos-aes">Sager hos AES</h2>
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aes/oversigt/?r=/eksempler/selvbetjeningsloesninger/%23sager-hos-aes" title="Sager hos AES: Find sag" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aes/sagsoverblik/?r=/eksempler/selvbetjeningsloesninger/%23sager-hos-aes" title="Sager hos AES: Sagsoverblik" class="screenshot d-block"></a>
-  </div>
-  <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
-    <a href="{{ site.baseurl }}/pages/eksempler/aes/sagsoverblik/afgoerelser/?r=/eksempler/selvbetjeningsloesninger/%23sager-hos-aes" title="Sager hos AES: Afgørelser" class="screenshot d-block"></a>
-  </div>
-</div>
-<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/eksempler/aes/oversigt/?r=/eksempler/selvbetjeningsloesninger/%23sager-hos-aes">Demo Sager hos AES</a>
+<p class="mt-0">
+  <a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/sagsoversigt-1/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt">Demo af sagsoversigt</a>
+</p>

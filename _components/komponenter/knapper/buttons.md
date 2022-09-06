@@ -77,12 +77,11 @@ I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/boernetilskud/boernetilskud-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
-- <a href="/pages/eksempler/aktindsigt/aktindsigt-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
-- <a href="/pages/eksempler/AES-erstatningssag/aes-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
-- <a href="/pages/eksempler/digital-flytning/flytning-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
-- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger, side 3'">Formular til kontaktoplysninger, side 3</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 1'">Trinformular til registrering, side 1</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning, side 4'">Trinformular til ansøgning, side 4</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning, side 6'">Trinformular til ansøgning, side 6</a>
+- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt, side 2'">Sagsoversigt, side 2</a>
 
 {:.h4}
 ### Disabled tilstand

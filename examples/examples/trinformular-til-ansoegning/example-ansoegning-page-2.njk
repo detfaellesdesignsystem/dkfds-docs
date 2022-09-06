@@ -1,0 +1,104 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer.njk" import footer as footer %}
+
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
+
+{% block header %}
+<header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+
+    <div class="overlay"></div>
+    <nav class="nav"> <!-- collapsible-->
+        <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+
+        <div class="portal-info-mobile">
+        <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
+
+        <a href="#" class="button button-secondary button-signout">
+            Log af
+        </a>
+    </div>
+
+    <div class="solution-info-mobile">
+        <p class="bold">Myndighedsnavn</p>
+        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">
+            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+    </div>
+  </nav> <!-- collapsible nav end-->
+</header>
+{% endblock %}
+
+{% block body %}
+<main class="container page-container" id="main-content">
+  <div><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/" class="back-link">Tilbage</a></div>
+    {{overflowmenu({
+        "button": {
+            "text": "Trin 2 af 5",
+            "icon":"arrow-drop-down"
+        },
+        "id": "overflow-ansoeg",
+        "content": "
+        <nav>
+            <ul class='sidenav-list' role='menu'>
+                <li role='none' >
+                <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/' role='menuitem' >
+                  <span class='sidenav-number'>1.</span><span class='sidenav-title'>Oplysninger&nbsp;om&nbsp;afsender</span>
+                  <span class='sidenav-icon'>
+                    <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
+                </span>
+              </a>
+                </li>
+                <li role='none' class='active current'>
+              <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/' role='menuitem' aria-current='page'>
+                  <span class='sidenav-number'>2.</span><span class='sidenav-title'>Kontaktoplysninger</span>
+              </a>
+                </li>
+                <li role='none'>
+              <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/' role='menuitem'>
+                  <span class='sidenav-number'>3.</span><span class='sidenav-title'>Ansøgningens&nbsp;type</span>
+              </a>
+                </li>
+                <li role='none'>
+            <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/' role='menuitem'>
+                <span class='sidenav-number'>4.</span><span class='sidenav-title'>Tilføj&nbsp;dokumentation</span>
+            </a>
+                </li>
+                <li role='none'>
+          <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/' role='menuitem'>
+              <span class='sidenav-number'>5.</span><span class='sidenav-title'>Opsummering</span>
+          </a>
+                </li>
+            </ul>
+        </nav>
+        "
+        }) 
+    }}
+    <h1 class="mt-6 mb-6">Kontaktoplysninger</h1>
+    <p class="font-lead mb-6">Hvis vi har spørgsmål til ansøgningen, har vi brug for at kunne kontakte dig telefonisk.</p>
+    <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/">
+        {{ textinput(input_telefonnummer) }}
+        {{ textinput(input_navn) }}
+        {{ button(button_next) }}
+    </form>
+    {{ back_to_top(back_to_top_button) }}
+</main>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

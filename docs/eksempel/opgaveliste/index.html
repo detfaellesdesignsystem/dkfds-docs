@@ -222,8 +222,9 @@
     <main class="container page-container" id="main-content">
     
       <h1 id="example-heading-opgaveliste" class="sr-only">Opgaveliste</h1>
-      <header class="header"><a href="#main-content" class="skipnav">Gå til
-        sidens indhold</a>
+      <header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
     <!--1A: Portal header -->
     <div class="portal-header ">
@@ -248,7 +249,7 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header ">
+    <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
                 <a href="#" class="">
@@ -359,6 +360,11 @@
             </div>
         </div>
     </div>
+
+    <a class="back-to-top-button button button-tertiary" href="#top"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+        <span class="d-none d-md-inline-block">Til toppen</span>
+    </a>
+
 </main>
 
 <footer>

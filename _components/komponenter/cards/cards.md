@@ -63,6 +63,7 @@ Skriv kort og præcist i hvert card.
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/boernetilskud/boernetilskud-oversigt-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
+- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt, side 1'">Sagsoversigt, side 1</a>
+- <a href="/pages/eksempler/dashboard/dashboard-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Dashboard'">Dashboard</a>
 
 {% include child-components.html parent='Cards' %}

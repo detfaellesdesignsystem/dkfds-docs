@@ -55,7 +55,8 @@ For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a>
+- <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a>
 
 
 {:#placering}

@@ -45,7 +45,7 @@ Undgå at have flere åbne modaler på siden - det giver en dårligere brugeropl
 
 Modalen skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
-<a href="/komponenter/knapper/">Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/#retningslinjer">anbefalinger for knapper</a>.
+<a href="/komponenter/knapper/">Knapper</a> i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/#retningslinjer">anbefalinger for knapper</a>.
 
 Vær sikker på at modalen kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 
@@ -56,9 +56,7 @@ Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at ind
 {:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-{:.nobullet-list}
-
-* <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>
 
 {:#kraever-handling}
 ## Modal som kræver handling
