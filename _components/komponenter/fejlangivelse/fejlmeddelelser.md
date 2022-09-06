@@ -138,7 +138,8 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a>
+- <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a>
 
 
 {:.h3 #accordions}

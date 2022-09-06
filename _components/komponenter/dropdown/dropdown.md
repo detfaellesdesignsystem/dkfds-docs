@@ -54,12 +54,14 @@ Undlad at løsningen reagerer på brugerens direkte valg i dropdownen, så bruge
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/AES-erstatningssag/aes-6/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning, side 4'">Trinformular til ansøgning, side 4</a>
 
 ## Fejlmeddelelse
 <a href="/komponenter/fejlangivelse/fejlmeddelelser/#dropdown">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
+
+{% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 
 ## Multiselect og søgning
 

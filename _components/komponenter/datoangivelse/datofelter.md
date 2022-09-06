@@ -56,12 +56,12 @@ Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgæng
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/boernetilskud/boernetilskud-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Børnetilskud åbnes i nyt vindue">Børnetilskud</a>
-- <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
-- <a href="/pages/eksempler/digital-flytning/flytning-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 4'">Trinformular til registrering, side 4</a>
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
 <a href="/komponenter/fejlangivelse/fejlmeddelelser/#datofelter">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
+
+{% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}

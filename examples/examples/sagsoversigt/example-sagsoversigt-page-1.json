@@ -31,6 +31,18 @@
         "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
       },
       "footer_data":{
+        "languageSwitcher": {
+          "ariaLabel": "Vælg sprog fra listen",
+          "firstAriaLabel": "Valgt sprog: Dansk",
+          "languages": [
+            {"code": "da", "name": "Dansk"},
+            {"code": "en-GB", "name": "English"},
+            {"code": "de", "name": "Deutsch"},
+            {"code": "kl", "name": "Kalaallisut"},
+            {"code": "pl", "name": "Polski"},
+            {"code": "se", "name": "Svenska"}
+          ]
+        },
         "columns": [
           {
             "columnSize": 3,
