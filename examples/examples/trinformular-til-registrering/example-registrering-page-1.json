@@ -105,7 +105,7 @@
         "name": "registered",
         "label": {
             "text": "Allerede registreret ",
-            "tooltip": "Forklarende tekst omkring feltet",
+            "tooltip": "Følgende personer kan ikke vælges, da de allerede er blevet registreret.",
             "tooltipattr": "type='button'"
         },
         "classes":"input-width-xl",

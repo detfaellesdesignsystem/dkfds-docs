@@ -42,9 +42,3 @@ Definér en dato som udgangspunkt. Hvis datoen ikke defineres vil udgangspunktet
 I eksemplet er der valgt at man ved aktivering af datovælgeren starter fokus d. 1 december 2020. Datoen er ikke valgt, man tager blot udgangspunkt i den dag i kalenderen. Hvis man ikke vælger en fast værdi, vil datoen i stedet være dags dato.
 
 {% include code/preview-box.html component="date-picker-default-date" title="Eksempel på datovælger med fast værdi"%}
-
-{:#fejlmeddelelse}
-## Fejlmeddelelse
-<a href="/komponenter/fejlangivelse/fejlmeddelelser/#datovaelger">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
-
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.

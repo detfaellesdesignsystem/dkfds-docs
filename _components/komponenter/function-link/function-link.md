@@ -56,6 +56,6 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 1'">Trinformular til registrering, side 1</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
 
 {% include child-components.html parent='Funktionslink' %}

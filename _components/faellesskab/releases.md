@@ -63,8 +63,11 @@ tags:
 - 8.0
 - 8.0.0
 - 8.0.1
+- 8.1.0
 anchor: true
 subnav:
+- text: Version 8.1.0
+  href: "#version-8-1-0"
 - text: Version 8.0.1
   href: "#version-8-0-1"
 - text: Version 8.0.0
@@ -114,6 +117,14 @@ Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagu
 ## Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+
+{:#version-8-1-0 .mb-0}
+## Version 8.1.0
+
+<div><span class="small-text mt-0 d-block">xx-xx-2022</span></div>
+
+- TO DO
+
 
 {:#version-8-0-1 .mb-0}
 ## Version 8.0.1
