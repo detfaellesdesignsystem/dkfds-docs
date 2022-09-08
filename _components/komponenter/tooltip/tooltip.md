@@ -74,7 +74,7 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 1'">Trinformular til registrering, side 1</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
 
 
 {% include child-components.html parent='Tooltip' %}

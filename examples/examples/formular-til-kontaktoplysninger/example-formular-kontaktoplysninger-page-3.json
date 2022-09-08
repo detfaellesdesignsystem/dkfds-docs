@@ -74,7 +74,7 @@
   },
   "alert_succes": {
     "classes": "alert-success",
-    "heading": "Vi har modtaget dine oplysninger og vil behandle ansøgningen hurtigst muligt",
+    "heading": "Vi har modtaget dine oplysninger",
     "icon": true
   },
   "back_to_top_button": {

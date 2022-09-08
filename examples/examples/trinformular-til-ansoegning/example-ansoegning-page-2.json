@@ -48,7 +48,7 @@
         "label": {
             "text": "Telefonnummer"
         },
-        "classes":"input-width-m",
+        "classes":"input-width-s",
         "formgroup": {
             "classes": "mb-6"
         }

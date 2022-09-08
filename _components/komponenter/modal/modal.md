@@ -56,7 +56,7 @@ Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at ind
 {:.h3 #eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>
+<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger (tryk på <em>'Kontakt'</em> i eksemplernes header)</a>
 
 {:#kraever-handling}
 ## Modal som kræver handling

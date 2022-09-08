@@ -110,7 +110,7 @@
       "label": {
           "text": "Tidligere registreringsnummer"
       },
-      "classes":"input-width-xl"
+      "classes":"input-width-m"
     },
     "dateinput_data": {
       "labels": {

@@ -45,7 +45,7 @@
 {% endblock %}
 
 {% block body %}
-<div class="container page-container pt-5">
+<div class="container page-container pt-5 pt-lg-0">
   <div class="row">
     <aside class="col-12 col-lg-3 sidebar-col">
       <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
@@ -62,8 +62,8 @@
       <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/" class="back-link">Tilbage</a></div>
       <h1 class="mb-6">Vælg noget mere</h1>
       <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-3/">
-        <strong>Du må kun vælge det, som lever op til dit og dat</strong>
-        <p>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, sed ut perspiciatis unde omnis iste 
+        <strong>Du må kun vælge det, som lever op til dit og dat.</strong>
+        <p class="mb-6">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, sed ut perspiciatis unde omnis iste 
           natus error sit voluptatem accusantium doloremque laudantium.</p>
         {{ table(table_data) }}
         {{ button(button_next) }}

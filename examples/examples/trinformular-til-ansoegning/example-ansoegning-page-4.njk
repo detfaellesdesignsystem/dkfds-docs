@@ -89,7 +89,7 @@
         "
         }) 
     }}
-    <h1 class="mt-6 mb-6">Tilføj dokumentation</h1>
+    <h1>Tilføj dokumentation</h1>
     <form class="mb-6" novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/">
       <div class="form-group file-input mb-5">
         <label class="form-label" for="fileinput">Tilføj dokument</label>
@@ -110,8 +110,8 @@
             </thead>
             <tbody>
                 <tr>
-                  <td data-title="Filnavn" id="file1">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</td>
-                  <td data-title="Dokumentationstype">
+                  <td class="vertical-align-middle" data-title="Filnavn" id="file1">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</td>
+                  <td class="vertical-align-middle" data-title="Dokumentationstype">
                     <div class="form-group">
                       <select class="form-select input-width-s" name="options" id="options" aria-labelledby="file1 header2">
                         <option value="option1">Vælg type</option>
@@ -121,13 +121,13 @@
                       </select>
                   </div>
                   </td>
-                  <td data-title="Sidetal">
+                  <td class="vertical-align-middle" data-title="Sidetal">
                     <div class="form-group">
                       <input class="form-input input-width-xxs" id="input-type-text" name="input-type-text" type="number" aria-labelledby="file1 header3" />
                   </div>
                   </td>
-                  <td data-title="Slet">
-                    <button class="button button-unstyled" aria-labelledby="header4 file1">
+                  <td class="vertical-align-middle" data-title="Slet">
+                    <button class="button button-unstyled" aria-labelledby="header4 file1" type="button">
                       <svg class="icon-svg" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
                     </button>
                   </td>

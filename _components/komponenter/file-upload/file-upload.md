@@ -29,7 +29,7 @@ Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil b
 Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
 ## Fejlmeddelelse
-<a href="/komponenter/fejlangivelse/fejlmeddelelser/#vedhaeft-fil">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
 
@@ -39,6 +39,6 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivel
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering, side 3'">Trinformular til registrering, side 3</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning, side 4'">Trinformular til ansøgning, side 4</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vedhæft dokumenter'">Trinformular til registrering: Vedhæft dokumenter</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>
 - <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Vedhæft fil'">Vedhæft fil</a>
