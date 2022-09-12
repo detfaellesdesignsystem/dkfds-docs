@@ -148,7 +148,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ny komponent: <a href="/komponenter/strukturerede-lister/">Strukturerede lister</a>
 - Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikator/">trinindikator</a>
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
-- <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
+- <span class="badge badge-info badge-small mr-3">Change</span> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
 - <span class="badge badge-info badge-small mr-3">Change</span> Ændret <a href="/design/ikoner/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
 - <span class="badge badge-warning badge-small mr-3">Breaking change</span> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
@@ -315,7 +315,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ny komponent: <a href="/komponenter/broedkrumme/">Brødkrumme</a>
 - Mulighed for en mere kompakt <a href="/komponenter/header/">header</a> med brug af en <a href="/komponenter/knapper/#lille-knap">lille knap</a>
 - Linjehøjden for <a href="/design/typografi/tekst/">lille brødtekst</a> er ændret til 20px
-- Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlangivelse/fejlmeddelelser/">fejlmeddelelser</a> og <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummeringer</a>.
+- Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> og <a href="/komponenter/fejlopsummering/">fejlopsummeringer</a>.
 - <a href="/komponenter/venstremenu/">Tilpasset alignment på venstremenu</a>
 
 {:#version-6-0-1 .mb-0}

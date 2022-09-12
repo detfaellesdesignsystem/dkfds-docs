@@ -29,9 +29,9 @@ Gør tydeligt brugeren opmærksom på, hvilke formater og størrelser, der vil b
 Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
 ## Fejlmeddelelse
-<a href="/komponenter/fejlangivelse/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
 

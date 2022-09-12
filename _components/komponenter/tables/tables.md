@@ -43,7 +43,7 @@ Tabeller anvendes til at præsentere brugeren for data som fx statistik opstille
 
 Anvend ikke tabeller til at opsætte en sides eller en komponents indhold udover data.
 
-Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/TR/WCAG20-TECHS/F91.html" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></a>. Anvend da i stedet <a href="/komponenter/strukturerede-lister/">strukturerede lister</a>.
+Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/TR/WCAG20-TECHS/F91.html" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Anvend da i stedet <a href="/komponenter/strukturerede-lister/">strukturerede lister</a>.
 
 {:.h3}
 ## Vejledning
@@ -76,6 +76,6 @@ Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tal
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Opsummering'">Trinformular til registrering: Opsummering</a>
 - <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>
-- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
 
 {% include child-components.html parent='Tables' %}

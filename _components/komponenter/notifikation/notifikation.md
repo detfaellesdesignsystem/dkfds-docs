@@ -35,7 +35,7 @@ At gøre brugeren opmærksom på vigtige oplysninger, ofte relateret til brugere
 ## Anvendes ikke til
 Brug <a href="/komponenter/beskeder/">Beskeder (alerts)</a>, hvis en besked skal placeres, som en del af indholdet på siden.
 
-Brug ikke toastbeskeder til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlangivelse/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
+Brug ikke toastbeskeder til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
 
 Brug modal dialog – ikke toastbeskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
 

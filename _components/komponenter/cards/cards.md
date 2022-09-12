@@ -63,7 +63,7 @@ Skriv kort og præcist i hvert card.
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
 - <a href="/pages/eksempler/dashboard/dashboard-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Dashboard'">Dashboard</a>
 
 {% include child-components.html parent='Cards' %}

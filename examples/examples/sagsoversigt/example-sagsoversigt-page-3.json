@@ -16,7 +16,7 @@
             "text": "Sagsunivers"
         },
         "solutionInfo": {
-          "hideOnPrint": true
+          "hideOnPrint": false
         },
         "authority": {
             "name": "Myndighedsnavn",
@@ -46,7 +46,7 @@
         "columns": [
           {
             "columnSize": 3,
-            "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Digitaliseringsstyrelsen<br/>Landgreven 4<br/>1413 København K</p>"
+            "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
           },
           {
             "columnSize": 3,
@@ -86,11 +86,11 @@
         "items": [
           {
             "text": "Find sag",
-            "href": "/pages/eksempler/sagsoversigt/sagsoversigt-1/"
+            "href": "/pages/eksempler/sagsoversigt/find-sag/"
           },
           {
             "text": "Sagsnr. 123456789",
-            "href": "/pages/eksempler/sagsoversigt/sagsoversigt-2/"
+            "href": "/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/"
           },
           {
             "text": "Afgørelser"
@@ -103,11 +103,11 @@
         "items": [
           {
             "text": "Find sag",
-            "href": "/pages/eksempler/sagsoversigt/sagsoversigt-1/"
+            "href": "/pages/eksempler/sagsoversigt/find-sag/"
           },
           {
             "text": "Sagsnr. 123456789",
-            "href": "/pages/eksempler/sagsoversigt/sagsoversigt-2/"
+            "href": "/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/"
           },
           {
             "text": "Afgørelser"

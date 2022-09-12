@@ -26,14 +26,14 @@ tags:
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, generelle fejl, til <a href="/komponenter/fejlangivelse/fejlopsummering/">fejlopsummeringer</a>, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.
+Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, generelle fejl, til <a href="/komponenter/fejlopsummering/">fejlopsummeringer</a>, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.
 
 Anvend succes- og advarselsbeskeder til at bekræfte en handling eller give besked om behov for handling.
 
 {:.h3}
 ## Anvendes ikke til
 
-Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet <a href="/komponenter/fejlangivelse/fejlmeddelelser/">fejlmeddelelser</a>.
+Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>.
 
 Brug modal dialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
 
@@ -79,7 +79,7 @@ Linda Newman Lior: Writing for Interaction (2013)
 - <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a>
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a>
 - <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kvittering'">Trinformular til ansøgning: Kvittering</a>
-- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
 
 
 {% include child-components.html parent='Beskeder' %}

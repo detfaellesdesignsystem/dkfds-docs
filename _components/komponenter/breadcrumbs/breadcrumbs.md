@@ -58,5 +58,5 @@ På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses 
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
-- <a href="/pages/eksempler/sagsoversigt/sagsoversigt-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>

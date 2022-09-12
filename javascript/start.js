@@ -1,16 +1,16 @@
 'use strict';
 import $ from "jquery";
-var Cookies = require('./vendor/js-cookie');
+var Cookies = require('./vendor/js-cookie'); // Node.js: Load js-cookie.js
 import {CookiePrompter, PiwikProTracker, CookieMgr } from "./vendor/CookiePrompter";
 import * as DKFDS from "dkfds";
 
-require('./sidenav');
+require('./sidenav'); // Node.js: Load sidenav.js
 document.addEventListener("DOMContentLoaded", function() {
     
     // If this is a page with a back-to-top button example, ensure that only the 'real' back-to-top button's JavaScript works
     // Without this code, the back-to-top button example would not be visible due to the JavaScript hiding it
     let bodytag = document.getElementsByTagName('body')[0];
-    if (bodytag.classList.contains('page-tilbage-til-top') || bodytag.classList.contains('page-back-to-top')) {
+    if (bodytag.classList.contains('page-tilbage-til-toppen') || bodytag.classList.contains('page-back-to-top')) {
         let backtotopbuttons = document.getElementsByClassName('back-to-top-button');
         if (backtotopbuttons.length === 2) {
             new DKFDS.BackToTop(backtotopbuttons[1]).init();

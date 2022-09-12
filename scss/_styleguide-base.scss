@@ -118,6 +118,8 @@ header #search-form-mobile{
   }
 }
 
+// Back-to-top button --------------
+
 // Ensure that the back-to-top button used in the component preview example stays within the preview window
 .component-preview .button.back-to-top-button {
   position: relative;
@@ -126,6 +128,13 @@ header #search-form-mobile{
   left: auto;
   top: auto;
   z-index: 1;
+}
+
+// Ensure that the back-to-top button is visible in the example areas when printing the page
+@media print {
+  .component-preview-back-to-top .back-to-top-button.d-print-none {
+    display: inline-block !important;
+  }
 }
 
 // Typography --------------

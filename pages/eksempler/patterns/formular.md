@@ -64,9 +64,9 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 ## Se eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
-- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
-- <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kontaktoplysninger'">Trinformular til registrering: Kontaktoplysninger</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
 
 {:#kompleks}
 ## Kompleks formular
