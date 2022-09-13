@@ -15,8 +15,8 @@ description: "Dokumentation på implementering af datofelter."
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/datoangivelse/datofelter/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/datoangivelse/datofelter/">Eksempler</a></li>
+    <li><a href="/komponenter/datofelter/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/datofelter/">Eksempler</a></li>
 </ul>
 
 ## Installation

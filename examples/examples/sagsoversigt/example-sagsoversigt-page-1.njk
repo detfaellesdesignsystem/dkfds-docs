@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="portal-info-mobile">
-        <p class="user">Anders Andersen</p>
+        <p class="user bold">Anders Andersen</p>
 
         <a href="#" class="button button-secondary button-signout">
             Log af
@@ -98,13 +98,9 @@
       <button class="button button-search" id="btnSearchTable">Søg</button>
   </div>
     <div class="table--responsive-scroll mt-4 mb-4">
-      <table class="table table--selectable" id="selectable-table2">
+      <table class="table">
           <thead>
               <tr>
-                  <th>
-                      <input id="selectable-table2-check-35-all" type="checkbox" class="form-checkbox" aria-controls=" selectable-table2-check-35-1 selectable-table2-check-35-2 selectable-table2-check-35-3 selectable-table2-check-35-4 selectable-table2-check-35-5">
-                      <label for="selectable-table2-check-35-all" aria-label="Vælg alle rækker"><span class="sr-only">Vælg alle rækker</span></label>
-                  </th>
                   <th>Sagsnummer</th>
   
                   <th>Sidst ændret</th>
@@ -123,10 +119,7 @@
           <tbody>
   
               <tr>
-                  <td data-title="Vælg alle rækker"><input id="selectable-table2-check-35-1" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="123456789">
-                      <label for="selectable-table2-check-35-1" aria-label="Vælg række"><span class="sr-only">Vælg række</span></label>
-                  </td>
-                  <td data-title="Sagsnummer"><a href="/pages/eksempler/sagsoversigt/sagsoversigt-2/">123456789</a></td>
+                  <td data-title="Sagsnummer"><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/">123456789</a></td>
                   <td data-title="Sidst ændret">01.01.2021</td>
                   <td data-title="Sag forventes afsluttet">01.01.2021</td>
                   <td data-title="Beskrivelse">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</td>
@@ -135,9 +128,6 @@
               </tr>
   
               <tr>
-                <td data-title="Vælg alle rækker"><input id="selectable-table2-check-35-2" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="3456789">
-                  <label for="selectable-table2-check-35-2" aria-label="Vælg række"><span class="sr-only">Vælg række</span></label>
-              </td>
               <td data-title="Sagsnummer"><a href="#">3456789</a></td>
               <td data-title="Sidst ændret">01.01.2021</td>
               <td data-title="Sag forventes afsluttet">01.01.2021</td>
@@ -148,9 +138,6 @@
               </tr>
   
               <tr>
-                <td data-title="Vælg alle rækker"><input id="selectable-table2-check-35-3" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="4567890">
-                  <label for="selectable-table2-check-35-3" aria-label="Vælg række"><span class="sr-only">Vælg række</span></label>
-              </td>
               <td data-title="Sagsnummer"><a href="#">4567890</a></td>
               <td data-title="Sidst ændret">01.01.2021</td>
               <td data-title="Sag forventes afsluttet">01.01.2021</td>
@@ -161,9 +148,6 @@
               </tr>
   
               <tr>
-                <td data-title="Vælg alle rækker"><input id="selectable-table2-check-35-4" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="56789000">
-                  <label for="selectable-table2-check-35-4" aria-label="Vælg række"><span class="sr-only">Vælg række</span></label>
-              </td>
               <td data-title="Sagsnummer"><a href="#">56789000</a></td>
               <td data-title="Sidst ændret">01.01.2021</td>
               <td data-title="Sag forventes afsluttet">01.01.2021</td>
@@ -172,9 +156,6 @@
               <td data-title="Status">{{ badge(badge_under_behandling) }}</td>
               </tr>
               <tr>
-                <td data-title="Vælg alle rækker"><input id="selectable-table2-check-35-5" type="checkbox" name="selectable-table2-check[]" class="form-checkbox" value="3456789">
-                  <label for="selectable-table2-check-35-5" aria-label="Vælg række"><span class="sr-only">Vælg række</span></label>
-              </td>
               <td data-title="Sagsnummer"><a href="#">3456789</a></td>
               <td data-title="Sidst ændret">01.01.2021</td>
               <td data-title="Sag forventes afsluttet">01.01.2021</td>
@@ -184,27 +165,6 @@
               </tr>
           </tbody>
       </table>
-  
-      <div class="table-actions">
-          <p class="table-selected-number no-selected">Vælg en eller flere
-              rækker for at udføre funktioner</p>
-  
-          <button class="button button-primary">
-              <svg class="icon-svg" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
-              Download sagsdokumenter
-          </button>
-  
-          <button class="button button-secondary">
-              <svg class="icon-svg" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
-              Duplikér
-          </button>
-  
-          <button class="button button-secondary">
-              <svg class="icon-svg" aria-hidden="true"><use xlink:href="#done"></use></svg>
-              Afslut sagsbehandling
-          </button>
-  
-      </div>
   </div>
   {{ details(details_tabel) }}
   <h2>Anmod om adgang</h2>

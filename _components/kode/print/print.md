@@ -80,11 +80,10 @@ Knapper har ingen funktion på print, hvorfor vi anbefaler at man skjuler knappe
 {:.h5 #knapper-eksempelloesninger}
 #### Eksempler
 
-<ul class="nobullet-list">
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Aktindsigt, side 1">Aktindsigt, side 1</a></li>
-    <li><a href="/pages/eksempler/AES-erstatningssag/aes-10/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Erstatningssag, side 10">Erstatningssag, side 10</a></li>
-    <li><a href="/pages/eksempler/digital-flytning/flytning-2/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Digital flytning, side 2">Digital flytning, side 2</a></li>
-</ul>
+{:.nobullet-list}
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kvittering'">Trinformular til ansøgning: Kvittering</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
 
 <h3 class="h4">Header</h3>
 
@@ -95,13 +94,12 @@ Hvis du har kontaktinformationer stående både i headeren og footeren bør én 
 {:.h5 #header-eksempelloesninger}
 #### Eksempler
 
-<ul class="nobullet-list">
-    <li><a href="/eksempel/header-simple/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header">Standard header</a></li>
-    <li><a href="/eksempel/header-medium/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header med topmenu">Standard header med topmenu</a></li>
-    <li><a href="/eksempel/header-full/?r={{page.permalink}}%23header-eksempelloesninger" title="Kompleks header">Kompleks header</a></li>
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1?r={{page.permalink}}%23header-eksempelloesninger" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
-    <li><a href="/pages/eksempler/boernetilskud/boernetilskud-1/?r={{page.permalink}}%23header-eksempelloesninger" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
-</ul>
+{:.nobullet-list}
+- <a href="/eksempel/header-simple/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header">Standard header</a>
+- <a href="/eksempel/header-medium/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header med topmenu">Standard header med topmenu</a>
+- <a href="/eksempel/header-full/?r={{page.permalink}}%23header-eksempelloesninger" title="Kompleks header">Kompleks header</a>
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23header-eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23header-eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
 
 <h3 class="h4">Footer</h3>
 
@@ -110,14 +108,13 @@ Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysni
 {:.h5 #footer-eksempelloesninger}
 #### Eksempler
 
-<ul class="nobullet-list">
-    <li><a href="/eksempel/footer-simple/?r={{page.permalink}}%23footer-eksempelloesninger" title="Simpel footer eksempel">Simpel footer eksempel</a></li>
-    <li><a href="/eksempel/footer-three-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 3 kolonner">Footer med 3 kolonner</a></li>
-    <li><a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 4 kolonner">Footer med 4 kolonner</a></li>
-    <li><a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Kompleks footer">Kompleks footer</a></li>
-    <li><a href="/eksempel/footer-logo/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med logo">Footer med logo</a></li>
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-1/?r={{page.permalink}}%23footer-eksempelloesninger" title="Aktindsigt, 1. side">Aktindsigt, side 1</a></li>
-</ul>
+{:.nobullet-list}
+- <a href="/eksempel/footer-simple/?r={{page.permalink}}%23footer-eksempelloesninger" title="Simpel footer eksempel">Simpel footer eksempel</a>
+- <a href="/eksempel/footer-three-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 3 kolonner">Footer med 3 kolonner</a>
+- <a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 4 kolonner">Footer med 4 kolonner</a>
+- <a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Kompleks footer">Kompleks footer</a>
+- <a href="/eksempel/footer-logo/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med logo">Footer med logo</a>
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23footer-eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
 
 <h3 class="h4">Responsiv tabel</h3>
 
@@ -128,9 +125,7 @@ Hvis man ønsker at tabellen skal forblive normal ved print, kan man tilføje kl
 {:.h5 #tabel-eksempelloesninger}
 #### Eksempler
 
-<ul class="nobullet-list">
-    <li><a href="/pages/eksempler/aktindsigt/aktindsigt-3/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Aktindsigt, side 1">Aktindsigt, side 3</a></li>
-    <li><a href="/pages/eksempler/AES-erstatningssag/aes-6/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Erstatningssag, side 9">Erstatningssag, side 6</a></li>
-    <li><a href="/pages/eksempler/AES-erstatningssag/aes-9/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Erstatningssag, side 9">Erstatningssag, side 9</a></li>
-    <li><a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-5/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Strategiske virksomhedsalliancer, side 5">Strategiske virksomhedsalliancer, side 5</a></li>
-</ul>
+{:.nobullet-list}
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-6/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Opsummering'">Trinformular til registrering: Opsummering</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>

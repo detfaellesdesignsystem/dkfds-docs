@@ -73,13 +73,13 @@ Komponenter_category:
   - href: /komponenter/broedkrumme/
   - href: /komponenter/cards/
   - href: /komponenter/cookiemeddelelse/
-  - href: /komponenter/datoangivelse/
-    categorynav: 'komponenter_datoangivelse'
+  - href: /komponenter/datofelter/
+  - href: /komponenter/datovaelger/
   - href: /komponenter/detaljer/
   - href: /komponenter/dropdown/
   - href: /komponenter/faneblade/
-  - href: /komponenter/fejlangivelse/
-    categorynav: 'komponenter_fejlangivelse'
+  - href: /komponenter/fejlmeddelelser/
+  - href: /komponenter/fejlopsummering/
   - href: /komponenter/footer/
   - href: /komponenter/funktionslink/
   - href: /komponenter/skip-link/
@@ -106,14 +106,6 @@ Komponenter_category:
   - href: /komponenter/trinindikator/
   - href: /komponenter/fil-upload/
   - href: /komponenter/venstremenu/
-
-komponenter_datoangivelse:
-  - href: /komponenter/datoangivelse/datofelter/
-  - href: /komponenter/datoangivelse/datovaelger/
-
-komponenter_fejlangivelse:
-  - href: /komponenter/fejlangivelse/fejlmeddelelser/
-  - href: /komponenter/fejlangivelse/fejlopsummering/
 
 Kode_category:
 - href: /kode/implementering/
@@ -172,11 +164,6 @@ Kode_Komponenter_category:
   - href: /kode/komponenter/fil-upload/
   - href: /kode/komponenter/venstremenu/
 
-  
-kode_komponenter_fejlangivelse:
-  - href: /kode/komponenter/fejlangivelse/fejlmeddelelser/
-  - href: /kode/komponenter/fejlangivelse/fejlopsummering/
-
 Eksempler_category:
 - href: /eksempler/selvbetjeningsloesninger/
 - href: /eksempler/patterns/
@@ -214,9 +201,9 @@ Eksempelloesninger_category:
 - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-4/
 - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-5/
 - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-6/
-- href: /pages/eksempler/sagsoversigt/sagsoversigt-1/
-- href: /pages/eksempler/sagsoversigt/sagsoversigt-2/
-- href: /pages/eksempler/sagsoversigt/sagsoversigt-3/
+- href: /pages/eksempler/sagsoversigt/find-sag/
+- href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/
+- href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/
 - href: /pages/eksempler/dashboard/dashboard-1/
 - href: /pages/eksempler/opgaveliste/
 - href: /pages/eksempler/vedhaeft-fil/fil-1/

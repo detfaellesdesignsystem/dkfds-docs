@@ -1,44 +1,57 @@
 ---
 permalink: /komponenter/tilbage-til-top/
-title: Tilbage-til-top
+title: Tilbage til toppen
 layout: styleguide
 type: component
 category: Komponenter_category
 subcategory: Komponenter
-lead: Kan hjælpe brugeren til at navigere til toppen af en lang side på en let måde uden at miste overblikket over, hvordan man kommer dertil.
-description: Lad brugeren navigere tilbage til toppen, hej Kristina.
+lead: Tilbage til toppen-knappen hjælper brugeren med at navigere til toppen af en lang side på en let måde uden at miste overblikket. 
+description: Lad brugeren navigere tilbage til toppen.
 tags:
 - back-to-top
 - top-link
 - top-knap
+- til toppen
+- til-top
 ---
 
-{% include code/preview-box.html component="back-to-top" title="Eksempel på tilbage-til-top" link=true code="/kode/komponenter/tilbage-til-top/" %}
+{% include code/preview-box.html component="back-to-top" title="Eksempel på tilbage til toppen" link=true code="/kode/komponenter/tilbage-til-top/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
 
-Bruges i forbindelse med lange sider hvor brugeren kan befinde sig langt fra de øvrige knapper og interaktioner på siden.
+Bruges i forbindelse med lange sider, hvor brugeren kan befinde sig langt fra de øvrige knapper og interaktioner på siden.
 
 {:.h3}
 ## Anvendes ikke til
 
-Anvendes ikke som navigationsknap eller på anden vis til andet end at sende brugeren til toppen af siden.
+Anvendes ikke som navigationsknap eller på anden vis til andet end at sende brugeren til toppen af siden. 
 
 {:.h3}
 ## Vejledning
 
-Bruges ved placering i højre side nederst på siden. Vil først komme til syne når sidste element i venstre side (trinindikatoren) er ude af syne for brugeren. Knappen vil have en “stickyness” til siden og uanfægtet hvor lang siden er efter trinindikatoren er ude af syne, vil tilbage-til-toppen-knappen være placeret det samme sted. 
+Tilbage til toppen-knappen placeres nederst til højre på siden. Knappen vises først, når sidste element i venstre side (<a href="/komponenter/trinindikator/">trinindikatoren</a> eller <a href="/komponenter/venstremenu/">venstremenuen</a>) er ude af syne for brugeren. Knappen er "sticky", således at den altid er placeret det samme sted.
 
-Ved sider, hvor der ikke er en trinindikator eller andet i venstre side som kan bruges som markør for hvornår knappen skal blive synlig for brugeren, anvendes 4 skærmsider som længden hvor knappen “Til toppen” vil komme til syne. Ligeledes vil knappen forsvinde igen, når brugeren scroller op og siden er “kortere” end 4 skærmsider. 
+På sider, der ikke har trinindikator eller venstremenu, vises tilbage til toppen-knappen efter brugeren har scrollet 2 skærmsiders længde. Ligeledes vil knappen forsvinde igen, når brugeren scroller op og der er mindre end 2 skærmsiders længde til toppen af siden. 
 
-Placering af knappen i højre side er anderledes end hvad FDS ellers foreskriver omkring generel venstrestilling. Dog så er den generelle ‘best practice’ omkring “til toppen”-knapper at de placeres i højre side nederst tæt ved scollbaren. Dette gør muligheden for at overlappe andet indhold på siden væsentligt mindre, samtidigt med at det følger kendte konventioner for placering, så brugeren vil være bekendt med at skulle se efter knappen i denne placering.
+Bemærk at placeringen af knappen i højre side afviger fra den generelle anbefaling om venstrestilling af indholdet i én kolonne (se <a href="/design/layout/">Layout</a>). Denne beslutning er baseret på etableret best practice vedrørende "til toppen"-knapper (Loranger, 2017). Dette gør yderligere risikoen for at overlappe andet indhold på siden mindre.
 
-Ved brug på mobil anvendes knappen uden tekst for at spare plads på skærmen. 
+Det anbefales at lave en scroll-animation til toppen, når der klikkes på knappen, da det understøtter brugerens fornemmelse af, hvor de er på siden.
 
 {:.h3}
-## Tilbage-til-toppen når der er en trinindikator
+## Komponenten på mobil
 
-Knappen kommer til syne efter sidste trin i trinindikatoren er blevet scrollet forbi. Knappen er “sticky” og vil forblive på sin plads uanset den resterende længde på siden. 
+På mobil anvendes knappen uden tekst for at spare plads på skærmen. 
 
-Scrolles der op til trinindikatoren igen, vil knappen ligeledes komme til syne, da behovet for at komme til top nu er ophørt.
+{:.h3}
+## Referencer
+
+{:.nobullet-list}
+- <a href="https://www.nngroup.com/articles/back-to-top/" target="_blank" class="icon-link">Hoa Loranger: Back-to-Top Button Design Guidelines (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+{:.h3 #eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Opsummering'">Trinformular til registrering: Opsummering</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser//?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
