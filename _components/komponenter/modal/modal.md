@@ -8,8 +8,7 @@ type: element
 title: Modal
 category: Komponenter_category
 subcategory: Komponenter
-description: Modal er separate vinduer, som popper-up på siden, når du aktiverer
-  dem.
+description: Modal er separate vinduer, som popper-up på siden, når du aktiverer dem.
 component: modal
 componentTitle: Eksempel på modal
 componentCode: "/kode/komponenter/modal/"
@@ -19,6 +18,7 @@ subnav:
 
 ---
 {:.h3 #retningslinjer}
+
 ## Anvendes til
 
 Modaler anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen. Det kunne fx være en godkendelse af en handling, behov for bekræftelse eller overførsel af rettigheder, som løsningen skal kunne udføre for at kunne fuldføre sin dialog med brugeren.
@@ -26,6 +26,7 @@ Modaler anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indh
 Brug en modal, når du vil være sikker på, at brugeren ser en bestemt dialog og forholder sig til dens indhold.
 
 {:.h3}
+
 ## Anvendes ikke til
 
 En modal kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.
@@ -39,28 +40,31 @@ Undgå modaler på mobile løsninger og visninger, da de ikke fungerer godt for 
 Undgå at have formularer inde i en modal. Særligt hvis det er en formular med mere end ét felt. I sådan et tilfælde bør man overveje at dele siden op, så indholdet strækker sig over flere sider.
 
 {:.h3}
+
 ## Vejledning
 
 Undgå at have flere åbne modaler på siden - det giver en dårligere brugeroplevelse og kan resultere i at brugeren mister fornemmelsen af, hvor de er på siden.
 
 Modalen skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
-<a href="/komponenter/knapper/">Knapper</a> i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/#retningslinjer">anbefalinger for knapper</a>.
+Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/">anbefalinger for knapper</a>.
 
 Vær sikker på at modalen kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 
-Brugeren skal selv aktivere modalen. Det må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt.
+Brugeren skal selv aktivere modalen. Den må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt. Den eneste undtagelse er pattern for <a href="/eksempler/patterns/session-udloeber/">Session udløber</a>, hvor modalen åbner af sig selv for at advare om en anden ændring i brugergrænsefladen, som brugeren ikke selv har aktiveret - nemlig automatisk log af.
 
 Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalen bliver så langt, at der opstår scroll. Overvej at bruge en individuel side i stedet for et modal, hvis indholdet er meget langt.
 
 {:.h3 #eksempelloesninger}
+
 ## Se komponenten i eksempelløsninger
 
 <a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger (tryk på <em>'Kontakt'</em> i eksemplernes header)</a>
 
 {:#kraever-handling}
+
 ## Modal som kræver handling
 
-Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen uden at tage stilling til dets indhold. 
+Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen uden at tage stilling til dets indhold.
 
 {% include code/preview-box.html component="modal-forced-action" title="Eksempel på modal, som kræver handling" link="true" %}
