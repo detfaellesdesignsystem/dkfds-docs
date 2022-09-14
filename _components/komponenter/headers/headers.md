@@ -55,7 +55,9 @@ Når du laver en header, bør du følge disse principper:
 - Brug kun række 3, 4, 5, med knapper, links og ekstra navigation, når det er absolut nødvendigt.
 - Hold altid rækkefølgen, uanset kombinationen
 
-<div><img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" /></div>
+<div class="header-rows-example">
+  <img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" />
+</div>
 
 
 {:.h3 #eksempelloesninger}

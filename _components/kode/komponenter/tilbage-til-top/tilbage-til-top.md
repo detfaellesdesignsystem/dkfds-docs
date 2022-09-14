@@ -32,6 +32,8 @@ Tilbage til toppen-knappen kræver JavaScript for at fungere. Man kan enten gør
 new DKFDS.BackToTop(document.getElementById('BACK-TO-TOP-ID')).init();
 {% endhighlight %}
 
+Bemærk, at JavaScripten udelukkende kontrollerer, hvornår knappen skal vises eller skjules. Hvis tryk på knappen skal lave en scroll-animation til toppen, skal man selv stå for implementeringen af denne animation.
+
 #### Events
 
 {:.table}

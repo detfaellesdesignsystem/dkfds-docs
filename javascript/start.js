@@ -5,6 +5,7 @@ import {CookiePrompter, PiwikProTracker, CookieMgr } from "./vendor/CookiePrompt
 import * as DKFDS from "dkfds";
 
 require('./sidenav'); // Node.js: Load sidenav.js
+require('./scroll-top');
 document.addEventListener("DOMContentLoaded", function() {
     
     // If this is a page with a back-to-top button example, ensure that only the 'real' back-to-top button's JavaScript works

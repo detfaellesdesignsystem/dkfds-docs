@@ -123,8 +123,14 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-xx-2022</span></div>
 
-- TO DO
-
+- Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a>
+- Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
+- Tilføjet manglende padding i venstre side af overflow-menupunkter i headerens række 3
+- Rettet fejl hvor skip-links ikke blev vist, når der var zoomet ca. 400% ind i browseren
+- Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3
+- <span class="badge badge-info badge-small mr-2">Change</span> Negativ letter-spacing er fjernet fra al tekst - vær opmærksom på, at brødtekster og titler kan fylde mere end tidligere
+- Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre ændringer, for eksempel fejlrettelser (dropdowns og tekstområder) eller tilføjelse af valgfri properties
+- Dokumentationens eksempler på <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningsløsninger</a> og <a href="/eksempler/templates/">templates</a> er blevet opdateret. Derudover er der foretaget flere mindre rettelser, heriblandt er <a href="/eksempler/patterns/formular/">formularer</a> flyttet ind under <a href="/eksempler/patterns/">patterns</a>, 'sidenavigation' er omdøbt til '<a href="/komponenter/venstremenu/">venstremenu</a>', 'felter' er omdøbt til '<a href="/komponenter/inputfelter/">inputfelter</a>', 'notifikation' er omdøbt til '<a href="/komponenter/toastbesked/">toastbesked</a>', 'skip-link' er omdøbt til '<a href="/komponenter/skip-link/">gå til sidens indhold</a>' og 'spinner' er omdøbt til '<a href="/komponenter/spinner/">loading spinner</a>'. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.
 
 {:#version-8-0-1 .mb-0}
 ## Version 8.0.1
@@ -138,7 +144,6 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Opdateret ikonet `arrow-left`, der viste det forkerte ikon, når man indsatte det ved hjælp af klassen.
 - Opdateret ikonerne `sort-default` og `sort-table-none`, så de også kan bruges som klasse.
 - Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender <a href="/kode/ikoner/">ikonsamlingen</a>.
-
 
 {:#version-8-0-0 .mb-0}
 ## Version 8.0.0
