@@ -30,6 +30,9 @@
     "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
   },
   "footer_data": {
+    "topButton": {
+      "topLink": "#top"
+    },
     "list": {
       "items": [
         {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
@@ -95,8 +98,5 @@
     "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a class=\"function-link\" href=\"#fileinput\">Filens størrelse skal være under 10MB. Opdel evt. dokumentet og tilføj som flere dokumenter.</a></li></ul>",
     "contentContainer": false,
     "role": "alert"
-  },
-  "back_to_top_button": {
-    "topLink": "#top"
   }
 }

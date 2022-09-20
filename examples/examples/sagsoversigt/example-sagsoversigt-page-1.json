@@ -31,6 +31,9 @@
         "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
       },
       "footer_data":{
+        "topButton": {
+          "topLink": "#top"
+        },
         "languageSwitcher": {
           "ariaLabel": "Vælg sprog fra listen",
           "firstAriaLabel": "Valgt sprog: Dansk",
@@ -103,8 +106,5 @@
         "actionButtons": "<button class=\"button button-tertiary\">Annuller anmodning</button>",
         "content": "<span class='badge badge-small badge-info ml-5'>Afventer godkendelse</span>",
         "order": ["header", "text", "content", "action"]
-      },
-      "back_to_top_button": {
-        "topLink": "#top"
       }
 }

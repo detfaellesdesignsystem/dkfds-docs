@@ -33,6 +33,9 @@
     "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
   },
   "footer_data": {
+    "topButton": {
+      "topLink": "#top"
+    },
     "list": {
       "items": [
         {"content": "<span class=\"h5 weight-semibold\">Eksempelstyrelsen</span>"},

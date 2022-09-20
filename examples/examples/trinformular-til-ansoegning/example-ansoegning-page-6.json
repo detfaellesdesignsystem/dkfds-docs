@@ -32,6 +32,9 @@
         "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
       },
       "footer_data": {
+        "topButton": {
+          "topLink": "#top"
+        },
         "list": {
           "items": [
             {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
@@ -67,8 +70,5 @@
       "button_afslut": {
         "text": "Log ud og gå til forsiden",
         "classes": "primary d-print-none mt-4"
-      },
-      "back_to_top_button": {
-        "topLink": "#top"
       }
 }

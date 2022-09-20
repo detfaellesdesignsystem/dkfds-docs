@@ -9,7 +9,6 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 {% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
 {% from "components/details/details.njk" import details as details %}
-{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 {% block header %}
 <header class="header">
@@ -235,7 +234,6 @@
   <h3>Afgørelse</h3>
   <p class="mb-6">Ingen afgørelse endnu</p>
   {{ details(details_sagsudgifter) }}
-  {{ back_to_top(back_to_top_button) }}
 </main>
 {% endblock %}
 

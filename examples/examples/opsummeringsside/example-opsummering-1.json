@@ -32,6 +32,9 @@
       "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
     },
     "footer_data": {
+      "topButton": {
+        "topLink": "#top"
+      },
       "list": {
         "items": [
           {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
@@ -110,8 +113,5 @@
       "text": "Send registrering",
       "classes": "primary d-print-none mt-4",
       "attributes": "type='button'"
-    },
-    "back_to_top_button": {
-      "topLink": "#top"
     }
 }

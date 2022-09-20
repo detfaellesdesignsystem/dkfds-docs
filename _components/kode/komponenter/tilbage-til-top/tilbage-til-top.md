@@ -23,7 +23,7 @@ subcategory: Kode
 
 Husk at have et id i toppen af siden, f.eks. `id="top"`, som tilbage til toppen-knappen kan linke til. Hvis siden indeholder et <a href="/komponenter/skip-link/">skip-link</a>, bør id'et ligge umiddelbart før dette.
 
-Tilbage til toppen-knappen bør altid være det sidste element i en sides hovedindhold, så det først får fokus lige inden footeren, hvis en bruger navigerer med tastaturet.
+Tilbage til toppen-knappen bør altid være det første element i en sides footer.
 
 ### Javascript
 Tilbage til toppen-knappen kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
@@ -34,10 +34,4 @@ new DKFDS.BackToTop(document.getElementById('BACK-TO-TOP-ID')).init();
 
 Bemærk, at JavaScripten udelukkende kontrollerer, hvornår knappen skal vises eller skjules. Hvis tryk på knappen skal lave en scroll-animation til toppen, skal man selv stå for implementeringen af denne animation.
 
-#### Events
-
-{:.table}
-| Event key               | Element                | Beskrivelse                                                                                          |
-|-------------------------|------------------------|------------------------------------------------------------------------------------------------------|
-| fds.backtotop.hidden    | `a.back-to-top-button` | Når en tilbage til toppen-knap bliver skjult, bliver eventet `fds.backtotop.hidden` udløst på knappen   |
-| fds.backtotop.displayed | `a.back-to-top-button` | Når en tilbage til toppen-knap bliver vist, bliver eventet `fds.backtotop.displayed` udløst på knappen  |
+Knappen vises og skjules forskelligt, hvis der er en <a href="/komponenter/venstremenu/">venstremenu</a> eller <a href="/komponenter/trinindikator/">trinindikator</a> til stede på siden. Det er derfor vigtigt, at HTML for disse komponenter er anvendt som beskrevet.

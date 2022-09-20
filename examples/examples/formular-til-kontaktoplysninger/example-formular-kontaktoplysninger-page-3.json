@@ -32,6 +32,9 @@
     "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
   },
   "footer_data": {
+    "topButton": {
+      "topLink": "#top"
+    },
     "columns": [
     {
       "columnSize": 3,
@@ -76,8 +79,5 @@
     "classes": "alert-success",
     "heading": "Vi har modtaget dine oplysninger",
     "icon": true
-  },
-  "back_to_top_button": {
-    "topLink": "#top"
   }
 }
