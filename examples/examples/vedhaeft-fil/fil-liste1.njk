@@ -11,7 +11,6 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
-{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 
 {% block header %}
@@ -56,7 +55,6 @@
           <button type="button" class="button button-primary d-print-none mt-7">Næste</button>
       </fieldset>
     </form>
-    {{ back_to_top(back_to_top_button) }}
 </main>
 {% endblock %}
 {% block footer -%}

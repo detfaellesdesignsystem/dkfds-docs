@@ -8,7 +8,6 @@
 {% from "components/form/controls/text-area.njk" import textarea as textarea %}
 {% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
 {% from "components/buttons/buttons.njk" import button as button %}
-{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 {% block header %}
 <header class="header">
@@ -99,7 +98,6 @@
       {{ textarea(textarea_data) }}
       {{ button(button_next) }}
     </form>
-    {{ back_to_top(back_to_top_button) }}
 </main>
 {% endblock %}
 

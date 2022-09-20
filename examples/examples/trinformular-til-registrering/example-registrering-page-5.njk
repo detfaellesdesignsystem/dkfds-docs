@@ -7,7 +7,6 @@
 {% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
-{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 {% block header %}
     <header class="header">
@@ -66,7 +65,6 @@
         {{ textinput(input_telefonnummer) }}
         {{ button(button_next) }}
       </form>
-      {{ back_to_top(back_to_top_button) }}
     </main>
   </div>
 </div>

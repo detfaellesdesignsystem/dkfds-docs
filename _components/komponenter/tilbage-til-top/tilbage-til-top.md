@@ -30,9 +30,11 @@ Anvendes ikke som navigationsknap eller på anden vis til andet end at sende bru
 {:.h3}
 ## Vejledning
 
-Tilbage til toppen-knappen placeres nederst til højre på siden. Knappen vises først, når sidste element i venstre side (<a href="/komponenter/trinindikator/">trinindikatoren</a> eller <a href="/komponenter/venstremenu/">venstremenuen</a>) er ude af syne for brugeren. Knappen er "sticky", således at den altid er placeret det samme sted.
+Tilbage til toppen-knappen placeres nederst til højre på siden. Knappen er "sticky", således at den altid er placeret det samme sted.
 
-På sider, der ikke har trinindikator eller venstremenu, vises tilbage til toppen-knappen efter brugeren har scrollet 2 skærmsiders længde. Ligeledes vil knappen forsvinde igen, når brugeren scroller op og der er mindre end 2 skærmsiders længde til toppen af siden. 
+På sider, der ikke har <a href="/komponenter/trinindikator/">trinindikator</a> eller <a href="/komponenter/venstremenu/">venstremenu</a>, vises tilbage til toppen-knappen efter brugeren har scrollet 2 skærmsiders længde. Ligeledes vil knappen forsvinde igen, når brugeren scroller op og der er mindre end 2 skærmsiders længde til toppen af siden. 
+
+På sider med trinindikator eller venstremenu vises knappen, når sidste element i venstre side (af trinindikatoren eller venstremenuen) er ude af syne for brugeren eller hvis brugeren har scrollet 2 skærmsiders længde.
 
 Bemærk at placeringen af knappen i højre side afviger fra den generelle anbefaling om venstrestilling af indholdet i én kolonne (se <a href="/design/layout/">Layout</a>). Denne beslutning er baseret på etableret best practice vedrørende "til toppen"-knapper (Loranger, 2017). Dette gør yderligere risikoen for at overlappe andet indhold på siden mindre.
 

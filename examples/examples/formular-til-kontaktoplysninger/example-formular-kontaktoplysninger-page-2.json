@@ -32,6 +32,9 @@
         "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
       },
       "footer_data":{
+        "topButton": {
+          "topLink": "#top"
+        },
         "columns": [
           {
             "columnSize": 3,
@@ -68,9 +71,6 @@
             ]
           }
         ]
-      },
-      "back_to_top_button": {
-        "topLink": "#top"
       }
   }
   

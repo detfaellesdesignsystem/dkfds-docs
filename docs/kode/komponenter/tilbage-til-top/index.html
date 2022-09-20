@@ -4443,7 +4443,7 @@
 
 <p>Husk at have et id i toppen af siden, f.eks. <code>id="top"</code>, som tilbage til toppen-knappen kan linke til. Hvis siden indeholder et <a href="/komponenter/skip-link/">skip-link</a>, bør id’et ligge umiddelbart før dette.</p>
 
-<p>Tilbage til toppen-knappen bør altid være det sidste element i en sides hovedindhold, så det først får fokus lige inden footeren, hvis en bruger navigerer med tastaturet.</p>
+<p>Tilbage til toppen-knappen bør altid være det første element i en sides footer.</p>
 
 <h3>Javascript</h3>
 <p>Tilbage til toppen-knappen kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
@@ -4452,29 +4452,7 @@
 
 <p>Bemærk, at JavaScripten udelukkende kontrollerer, hvornår knappen skal vises eller skjules. Hvis tryk på knappen skal lave en scroll-animation til toppen, skal man selv stå for implementeringen af denne animation.</p>
 
-<h4>Events</h4>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Event key</th>
-      <th>Element</th>
-      <th>Beskrivelse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fds.backtotop.hidden</td>
-      <td><code>a.back-to-top-button</code></td>
-      <td>Når en tilbage til toppen-knap bliver skjult, bliver eventet <code>fds.backtotop.hidden</code> udløst på knappen</td>
-    </tr>
-    <tr>
-      <td>fds.backtotop.displayed</td>
-      <td><code>a.back-to-top-button</code></td>
-      <td>Når en tilbage til toppen-knap bliver vist, bliver eventet <code>fds.backtotop.displayed</code> udløst på knappen</td>
-    </tr>
-  </tbody>
-</table>
+<p>Knappen vises og skjules forskelligt, hvis der er en <a href="/komponenter/venstremenu/">venstremenu</a> eller <a href="/komponenter/trinindikator/">trinindikator</a> til stede på siden. Det er derfor vigtigt, at HTML for disse komponenter er anvendt som beskrevet.</p>
 
 
           
@@ -4608,10 +4586,6 @@
               
           
       </section>
-      <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
-    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
-    <span class="d-none d-md-inline-block">Til toppen</span>
-</a>
     </main>
 
   </div>
@@ -4619,6 +4593,10 @@
 
 
 <footer>
+    <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
+    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+    <span class="d-none d-md-inline-block">Til toppen</span>
+</a>
     <div class="footer">
         <div class="container">
             <div class="row">

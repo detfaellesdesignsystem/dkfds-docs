@@ -31,6 +31,9 @@
         "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
       },
       "footer_data":{
+        "topButton": {
+          "topLink": "#top"
+        },
         "languageSwitcher": {
           "ariaLabel": "Vælg sprog fra listen",
           "firstAriaLabel": "Valgt sprog: Dansk",
@@ -156,8 +159,5 @@
       "details_sagsudgifter": {
         "summary": "Læs om vurdering af sagsudgifter",
         "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
-      },
-      "back_to_top_button": {
-        "topLink": "#top"
       }
 }

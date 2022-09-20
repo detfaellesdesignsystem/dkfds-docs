@@ -7,7 +7,6 @@
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/cards/cards.njk" import card as card %}
-{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
 
 {% block header %}
   <header class="header">
@@ -86,7 +85,6 @@
         <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_aendringer) }}</div>
         <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_dokumentation) }}</div>
     </div>
-    {{ back_to_top(back_to_top_button) }}
   </main>
 {% endblock %}
 

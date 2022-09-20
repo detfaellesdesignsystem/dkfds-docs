@@ -32,6 +32,9 @@
         "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
       },
       "footer_data": {
+        "topButton": {
+          "topLink": "#top"
+        },
         "list": {
           "items": [
             {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
@@ -122,9 +125,6 @@
         "text": "Næste",
         "classes": "primary d-print-none mt-7",
         "attributes": "type='submit'"
-      },
-      "back_to_top_button": {
-        "topLink": "#top"
       }
   }
   
