@@ -616,7 +616,7 @@ var CookiePrompter = (function () {
         html.push('<ul class="inline-list">');
         html.push('<li><a href="#" class="cpAcceptBtn button button-secondary">' + config.textAccept + '</a></li>');
         if (config.textDontAccept !== '') {
-            html.push('<li><a href="#" class="cpDontAcceptBtn ml-md-4 button button-tertiary">' + config.textDontAccept + '</a></li>');
+            html.push('<li><a href="#" class="cpDontAcceptBtn ml-md-4 button button-secondary">' + config.textDontAccept + '</a></li>');
         }
         html.push('</ul>');
         html.push('</div>');

@@ -125,10 +125,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a>
 - Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
-- Tilføjet manglende padding i venstre side af overflow-menupunkter i headerens række 3
-- Rettet fejl hvor skip-links ikke blev vist, når der var zoomet ca. 400% ind i browseren
+- Tilføjet manglende padding i venstre side af overflow-menupunkter i <a href="/komponenter/header/#kompleks-header-med-alle-r%C3%A6kker">headerens</a> række 3
+- Rettet fejl hvor <a href="/komponenter/skip-link/">skip-links</a> ikke blev vist, når der var zoomet ca. 400% ind i browseren
 - Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3
 - <span class="badge badge-info badge-small mr-2">Change</span> Negativ letter-spacing er fjernet fra al tekst - vær opmærksom på, at brødtekster og titler kan fylde mere end tidligere
+- <span class="badge badge-info badge-small mr-2">Change</span> Begge knapper i <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a> har nu typen <a href="/komponenter/knapper/#sekundærknapper">sekundærknapper</a>
 - Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre ændringer, for eksempel fejlrettelser (dropdowns og tekstområder) eller tilføjelse af valgfri properties
 - Dokumentationens eksempler på <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningsløsninger</a> og <a href="/eksempler/templates/">templates</a> er blevet opdateret. Derudover er der foretaget flere mindre rettelser, heriblandt er <a href="/eksempler/patterns/formular/">formularer</a> flyttet ind under <a href="/eksempler/patterns/">patterns</a>, 'sidenavigation' er omdøbt til '<a href="/komponenter/venstremenu/">venstremenu</a>', 'felter' er omdøbt til '<a href="/komponenter/inputfelter/">inputfelter</a>', 'notifikation' er omdøbt til '<a href="/komponenter/toastbesked/">toastbesked</a>', 'skip-link' er omdøbt til '<a href="/komponenter/skip-link/">gå til sidens indhold</a>' og 'spinner' er omdøbt til '<a href="/komponenter/spinner/">loading spinner</a>'. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.
 
@@ -466,7 +467,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret afstand fra label til read-only felt.
 - Ændret JavaScript, der håndterer regex maske på dato felt, således at man nu kan bruge copy/paste igen.
     - Fejlhåndtering omkring ikke gyldige karakterer indsat i feltet med copy/paste bør håndteres i projektet selv.
-- Tilføjet sektion omkring <a href="/komponenter/formular/">formularstruktur</a>.
+- Tilføjet sektion omkring <a href="/eksempler/patterns/formular/">formularstruktur</a>.
 
 {:#version-4-1-0 .mb-0}
 ## Version 4.1.0

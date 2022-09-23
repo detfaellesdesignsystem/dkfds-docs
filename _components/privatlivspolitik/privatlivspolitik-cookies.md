@@ -53,8 +53,8 @@ Når du klikker på "nej", bliver der ikke sat cookies fra Piwik PRO.
     </div>
     <div id="cookieButtons" class="mt-6 d-none">
         <input type="hidden" id="originalValue" value="" />
-        <button type="submit" class="button button-secondary" id="cookieSave">Gem</button>
-        <button type="button" class="button button-tertiary" id="cookieCancel">Annuller</button>
+        <button type="submit" class="button button-primary" id="cookieSave">Gem</button>
+        <button type="button" class="button button-secondary" id="cookieCancel">Annuller</button>
     </div>
 </form>
 <div class="alert alert-success alert--show-icon alert--paragraph d-none" role="alert" id="cookieNoAlert">

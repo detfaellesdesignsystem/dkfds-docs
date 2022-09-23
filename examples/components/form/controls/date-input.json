@@ -9,7 +9,7 @@
       },
       "helptext": "For eksempel: 05 12 2018",
       "id": {
-        "error": "example-date-field-error2"
+        "helptext": "example-date-field-helptext"
       }
     }
 }

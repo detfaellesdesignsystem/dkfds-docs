@@ -1145,7 +1145,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
   
 
@@ -1245,7 +1245,7 @@
     
 
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
   
 
@@ -1425,7 +1425,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
   
 
@@ -1465,7 +1465,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
   
 
@@ -3644,7 +3644,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -3724,7 +3724,7 @@
 
     
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
 
   
@@ -3952,7 +3952,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -3984,7 +3984,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -4280,6 +4280,18 @@
           <h1 id="fejlmeddelelser">Fejlmeddelelser</h1>
           
           
+          <ul class="d-lg-none nobullet-list">
+          <li><a href="#accordions">Accordions</a></li>
+          <li><a href="#datofelter">Datofelter</a></li>
+          <li><a href="#dropdown">Dropdown</a></li>
+          <li><a href="#inputfelt">Inputfelt</a></li>
+          <li><a href="#radioknapper">Radioknapper</a></li>
+          <li><a href="#tekstomraade">Tekstområde</a></li>
+          <li><a href="#tjekboks">Tjekboks</a></li>
+          <li><a href="#vedhaeft-fil">Vedhæft fil</a></li>
+          
+          </ul>
+          
 
           
 
@@ -4487,24 +4499,24 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group  form-error  ">
-    <fieldset aria-describedby="example-date-field-hint example-date-field-error">
+    <fieldset aria-describedby="example-date-field-error-helptext example-date-field-error">
         <legend class="form-label">Hvornår blev dit pas udstedt?</legend>
-        <span class="form-hint" id="example-date-field-hint">Fx: 05 12
-            2018</span>
+        <span class="form-hint" id="example-date-field-error-helptext">Fx:
+            05 12 2018</span>
         <span class="form-error-message " id="example-date-field-error"><span class="sr-only">Fejl:</span> Datoen kan ikke være i
             fremtiden</span>
         <div class="date-group js-calendar-group mt-3">
             <div class="form-group form-group-day">
                 <label class="form-label" for="date-day">Dag</label>
-                <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-error-helptext" />
             </div>
             <div class="form-group form-group-month">
                 <label class="form-label" for="date-month">Måned</label>
-                <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-error-helptext" />
             </div>
             <div class="form-group form-group-year ">
                 <label class="form-label" for="date-year">År</label>
-                <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-error-helptext" />
             </div>
 
         </div>
@@ -4817,35 +4829,35 @@
     
 </div>
 
-<h4>Ingen fil er valgt</h4>
+<h3 class="h4">Ingen fil er valgt</h3>
 <p>Skriv “Vælg en [dokumenttype]”.<br />
 Fx “Vælg en lægeerklæring”.</p>
 
-<h4>Den valgte fil er forkert filtype</h4>
+<h3 class="h4">Den valgte fil er forkert filtype</h3>
 <p>Skriv “Den valgte fil skal være af typen [liste af filtyper]”.<br />
 Fx “Den valgte fil skal være af typen CSV eller ODS” eller “Den valgte fil skal være af typen JPG, BMP, PNG, TIF eller PDF”.</p>
 
-<h4>Filen er for stor</h4>
+<h3 class="h4">Filen er for stor</h3>
 <p>Skriv “Filens størrelse skal være under [største filstørrelse]”.<br />
 Fx “Filens størrelse skal være under 2MB”.</p>
 
-<h4>Filen er tom</h4>
+<h3 class="h4">Filen er tom</h3>
 <p>Skriv “Den valgte fil er tom”.</p>
 
-<h4>Filen indeholder en virus</h4>
+<h3 class="h4">Filen indeholder en virus</h3>
 <p>Skriv “Den valgte fil indeholder en virus”.</p>
 
-<h4>Filen er beskyttet af en adgangskode</h4>
+<h3 class="h4">Filen er beskyttet af en adgangskode</h3>
 <p>Skriv “Den valgte fil er beskyttet af en adgangskode”.</p>
 
-<h4>Der var en fejl, og filen ikke kunne uploades</h4>
+<h3 class="h4">Der var en fejl, og filen ikke kunne uploades</h3>
 <p>Skriv “Den valgte fil kunne ikke uploades - prøv venligst igen”.</p>
 
-<h4>Der er en begrænsning på antal filer brugeren kan vælge</h4>
+<h3 class="h4">Der er en begrænsning på antal filer brugeren kan vælge</h3>
 <p>Skriv “Du kan kun vælge op til [højeste antal filer] filer på samme tid”.<br />
 Fx “Du kan kun vælge op til 10 filer på samme tid”.</p>
 
-<h4>Der ikke er brugt den korrekte skabelon</h4>
+<h3 class="h4">Der ikke er brugt den korrekte skabelon</h3>
 <p>Skriv “Den valgte fil skal gøre brug af skabelonen”.</p>
 
 

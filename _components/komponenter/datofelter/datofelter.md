@@ -10,6 +10,7 @@ subcategory: Komponenter
 description: Brug datofelter for datoer, der er velkendte for brugeren (fx fødselsdato).
 tags: 
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
+anchor: true
 subnav:
 - text: Fejlmeddelelse
   href: '#fejlmeddelelse'

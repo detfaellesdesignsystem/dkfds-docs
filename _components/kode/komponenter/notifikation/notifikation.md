@@ -2,7 +2,7 @@
 permalink: "/kode/komponenter/toastbesked/"
 redirect_from:
 - /kode/komponenter/notifikation/
-- /eksempel/toastbesked/
+- /eksempel/notification/
 - /eksempel/notification-success/
 - /eksempel/notification-warning/
 - /eksempel/notification-error/

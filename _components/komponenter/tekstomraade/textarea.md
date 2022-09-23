@@ -9,6 +9,11 @@ category: Komponenter_category
 subcategory: Komponenter
 description: "Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge."
 tags:
+- tekstområde
+- tekstomraade
+- textarea
+- karakterbegrænsning
+- karakterbegraensning
 ---
 
 {% include code/preview-box.html component="text-area" title="Eksempel på tekstområde" link=true code="/kode/komponenter/tekstomraade/" %}

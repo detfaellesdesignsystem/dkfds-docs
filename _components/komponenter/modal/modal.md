@@ -9,9 +9,20 @@ title: Modal
 category: Komponenter_category
 subcategory: Komponenter
 description: Modal er separate vinduer, som popper-up på siden, når du aktiverer dem.
+tags:
+- besked
+- dialog
+- dialogue
+- modal
+- modaler
+- modalvindue
+- popup
+- pop up
+- vindue
 component: modal
 componentTitle: Eksempel på modal
 componentCode: "/kode/komponenter/modal/"
+anchor: true
 subnav:
 - text: Modal som kræver handling
   href: "#kraever-handling"

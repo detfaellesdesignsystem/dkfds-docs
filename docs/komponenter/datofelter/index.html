@@ -1147,7 +1147,7 @@
     
 
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
   
 
@@ -1247,7 +1247,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
   
 
@@ -1427,7 +1427,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
   
 
@@ -1467,7 +1467,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
   
 
@@ -3646,7 +3646,7 @@
 
     
 
-<li class="current active " role="none">
+<li class="current active has-anchor-links" role="none">
 
 
   
@@ -3747,7 +3747,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -3891,7 +3891,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -3923,7 +3923,7 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links" role="none">
 
 
   
@@ -4219,6 +4219,11 @@
           <h1 id="datofelter">Datofelter</h1>
           
           
+          <ul class="d-lg-none nobullet-list">
+          <li><a href="#fejlmeddelelse">Fejlmeddelelse</a></li>
+          
+          </ul>
+          
 
           
             <p class="font-lead">Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.</p>
@@ -4238,23 +4243,23 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group  ">
-    <fieldset aria-describedby="example-date-field-hint ">
+    <fieldset aria-describedby="example-date-field-helptext ">
         <legend class="form-label">Indsendelsesfrist</legend>
-        <span class="form-hint" id="example-date-field-hint">For eksempel:
-            05 12 2018</span>
+        <span class="form-hint" id="example-date-field-helptext">For
+            eksempel: 05 12 2018</span>
 
         <div class="date-group js-calendar-group mt-3">
             <div class="form-group form-group-day">
                 <label class="form-label" for="date-day">Dag</label>
-                <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-helptext" />
             </div>
             <div class="form-group form-group-month">
                 <label class="form-label" for="date-month">Måned</label>
-                <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-helptext" />
             </div>
             <div class="form-group form-group-year ">
                 <label class="form-label" for="date-year">År</label>
-                <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-helptext" />
             </div>
 
         </div>
@@ -4339,24 +4344,24 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group  form-error  ">
-    <fieldset aria-describedby="example-date-field-hint example-date-field-error">
+    <fieldset aria-describedby="example-date-field-error-helptext example-date-field-error">
         <legend class="form-label">Hvornår blev dit pas udstedt?</legend>
-        <span class="form-hint" id="example-date-field-hint">Fx: 05 12
-            2018</span>
+        <span class="form-hint" id="example-date-field-error-helptext">Fx:
+            05 12 2018</span>
         <span class="form-error-message " id="example-date-field-error"><span class="sr-only">Fejl:</span> Datoen kan ikke være i
             fremtiden</span>
         <div class="date-group js-calendar-group mt-3">
             <div class="form-group form-group-day">
                 <label class="form-label" for="date-day">Dag</label>
-                <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-day-input" id="date-day" value="01" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-error-helptext" />
             </div>
             <div class="form-group form-group-month">
                 <label class="form-label" for="date-month">Måned</label>
-                <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-month-input" id="date-month" value="12" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-error-helptext" />
             </div>
             <div class="form-group form-group-year ">
                 <label class="form-label" for="date-year">År</label>
-                <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+                <input class="form-input js-calendar-year-input" id="date-year" value="2076" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-error-helptext" />
             </div>
 
         </div>

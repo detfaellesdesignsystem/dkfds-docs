@@ -12,6 +12,9 @@
       "day": "01",
       "month": "12",
       "year": "2076"
+    },
+    "id": {
+      "helptext": "example-date-field-error-helptext"
     }
   }
 }

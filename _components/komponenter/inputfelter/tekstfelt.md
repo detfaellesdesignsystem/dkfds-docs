@@ -25,6 +25,16 @@ tags:
 - read-only
 - feltbredde
 - låst felt
+- karakterbegrænsning
+- karakterbegraensning
+- prefix
+- præfix
+- prefiks
+- præfiks
+- suffix
+- suffiks
+- sufix
+- sufiks
 category: Komponenter_category
 description: Inputfelter til indtastning af information i form af bogstaver, tal og en kombination
   af begge.

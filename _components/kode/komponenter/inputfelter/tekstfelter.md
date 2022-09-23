@@ -9,6 +9,34 @@ layout: styleguide
 type: component
 category: Kode_category
 tags:
+- tekstfelt
+- input
+- frivilligt
+- påkrævet
+- påkrævede
+- required
+- fejlbesked
+- fejlmeddelelse
+- fejl på felt
+- hjælpetekst
+- hjælp på felt
+- felt
+- felter
+- længde på felter
+- deaktiveret felt
+- read-only
+- feltbredde
+- låst felt
+- karakterbegrænsning
+- karakterbegraensning
+- prefix
+- præfix
+- prefiks
+- præfiks
+- suffix
+- suffiks
+- sufix
+- sufiks
 subcategory: Kode
 description: "Dokumentation på implementering af inputfelter."
 anchor: true

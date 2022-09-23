@@ -145,9 +145,35 @@ var pdfUrls = [
 ]
 
 var exampleUrls = [
-    {"url": "pages/eksempler/opsummering/opsummering-1/", "filename": "opsummering1"},
-    {"url": "pages/eksempler/kvittering/kvittering-1/", "filename": "kvittering1"},
-    {"url": "pages/eksempler/kvittering/kvittering-2/", "filename": "kvittering2"}
+    {"url": "pages/eksempler/formular-til-kontaktoplysninger/formular-1/", "filename": "formular-1"},
+    {"url": "pages/eksempler/formular-til-kontaktoplysninger/formular-2/", "filename": "formular-2"},
+    {"url": "pages/eksempler/formular-til-kontaktoplysninger/formular-3/", "filename": "formular-3"},
+    {"url": "pages/eksempler/trinformular-til-registrering/registrering-1/", "filename": "registrering-1"},
+    {"url": "pages/eksempler/trinformular-til-registrering/registrering-2/", "filename": "registrering-2"},
+    {"url": "pages/eksempler/trinformular-til-registrering/registrering-3/", "filename": "registrering-3"},
+    {"url": "pages/eksempler/trinformular-til-registrering/registrering-4/", "filename": "registrering-4"},
+    {"url": "pages/eksempler/trinformular-til-registrering/registrering-5/", "filename": "registrering-5"},
+    {"url": "pages/eksempler/trinformular-til-registrering/registrering-6/", "filename": "registrering-6"},
+    {"url": "pages/eksempler/trinformular-til-registrering/registrering-7/", "filename": "registrering-7"},
+    {"url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-1/", "filename": "ansoegning-1"},
+    {"url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-2/", "filename": "ansoegning-2"},
+    {"url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-3/", "filename": "ansoegning-3"},
+    {"url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-4/", "filename": "ansoegning-4"},
+    {"url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-5/", "filename": "ansoegning-5"},
+    {"url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-6/", "filename": "ansoegning-6"},
+    {"url": "pages/eksempler/sagsoversigt/find-sag/", "filename": "find-sag"},
+    {"url": "pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/", "filename": "sagsnr-123456789"},
+    {"url": "pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/", "filename": "afgoerelser"},
+    {"url": "pages/eksempler/dashboard/dashboard-1/", "filename": "dashboard-1"},
+    {"url": "pages/eksempler/opgaveliste/", "filename": "opgaveliste"},
+    {"url": "pages/eksempler/vedhaeft-fil/fil-1/", "filename": "fil-1"},
+    {"url": "pages/eksempler/vedhaeft-fil/fil-2/", "filename": "fil-2"},
+    {"url": "pages/eksempler/vedhaeft-fil/fil-3/", "filename": "fil-3"},
+    {"url": "pages/eksempler/opsummering/opsummering-1/", "filename": "opsummering-1"},
+    {"url": "pages/eksempler/opsummering/opsummering-2/", "filename": "opsummering-2"},
+    {"url": "pages/eksempler/kvittering/kvittering-1/", "filename": "kvittering-1"},
+    {"url": "pages/eksempler/kvittering/kvittering-2/", "filename": "kvittering-2"},
+    {"url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "filename": "formular-med-fejl-1"}
 ];
 
 (async () => {

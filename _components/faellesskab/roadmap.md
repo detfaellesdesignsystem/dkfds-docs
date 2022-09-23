@@ -24,7 +24,7 @@ Sagerne kan være:
 {:.h3 .mb-md-0}
 ## Nye komponenter
 
-{% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/felter/#prefix-og-suffix" %}
+{% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/inputfelter/#prefix-og-suffix" %}
 {% include roadmap.html title="Karakterbegrænsning på inputfelt/tekstområde" status="I gang" %}
 {% include roadmap.html title="Modalvindue som kræver handling" status="Gennemført" link="/komponenter/modal/#kraever-handling" %}
 {% include roadmap.html title="Multiselect dropdown" status="I gang" %}

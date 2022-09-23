@@ -20,6 +20,7 @@ tags:
 - fejlmedelelser
 - fejlmeddellelser
 - fejlmedellelser
+anchor: true
 subnav:
 - text: Accordions
   href: "#accordions"
@@ -193,33 +194,42 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
 
-#### Ingen fil er valgt
+{:.h4}
+### Ingen fil er valgt
 Skriv "Vælg en [dokumenttype]".<br />
 Fx "Vælg en lægeerklæring".
 
-#### Den valgte fil er forkert filtype
+{:.h4}
+### Den valgte fil er forkert filtype
 Skriv "Den valgte fil skal være af typen [liste af filtyper]".<br />
 Fx "Den valgte fil skal være af typen CSV eller ODS" eller "Den valgte fil skal være af typen JPG, BMP, PNG, TIF eller PDF".
 
-#### Filen er for stor
+{:.h4}
+### Filen er for stor
 Skriv "Filens størrelse skal være under [største filstørrelse]".<br />
 Fx "Filens størrelse skal være under 2MB".
 
-#### Filen er tom
+{:.h4}
+### Filen er tom
 Skriv "Den valgte fil er tom".
 
-#### Filen indeholder en virus
+{:.h4}
+### Filen indeholder en virus
 Skriv "Den valgte fil indeholder en virus".
 
-#### Filen er beskyttet af en adgangskode
+{:.h4}
+### Filen er beskyttet af en adgangskode
 Skriv "Den valgte fil er beskyttet af en adgangskode".
 
-#### Der var en fejl, og filen ikke kunne uploades
+{:.h4}
+### Der var en fejl, og filen ikke kunne uploades
 Skriv "Den valgte fil kunne ikke uploades - prøv venligst igen".
 
-#### Der er en begrænsning på antal filer brugeren kan vælge
+{:.h4}
+### Der er en begrænsning på antal filer brugeren kan vælge
 Skriv "Du kan kun vælge op til [højeste antal filer] filer på samme tid".<br />
 Fx "Du kan kun vælge op til 10 filer på samme tid".
 
-#### Der ikke er brugt den korrekte skabelon
+{:.h4}
+### Der ikke er brugt den korrekte skabelon
 Skriv "Den valgte fil skal gøre brug af skabelonen".

@@ -11,6 +11,7 @@ tags:
 - paginering
 - pagination
 - sidevælger
+anchor: true
 subnav:
 - text: Eksempler på paginering
   href: "#eksempler"

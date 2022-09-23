@@ -8,11 +8,15 @@ category: Kode_category
 subcategory: Kode
 description: Dokumentation på implementering af modal.
 tags:
-- modal
+- besked
 - dialog
+- dialogue
+- modal
+- modaler
+- modalvindue
 - popup
 - pop up
-- dialogue
+- vindue
 anchor: true
 subnav:
 - text: Modal som kræver handling
