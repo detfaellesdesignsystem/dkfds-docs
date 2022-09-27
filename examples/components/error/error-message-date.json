@@ -14,7 +14,10 @@
       "year": "2076"
     },
     "id": {
-      "helptext": "example-date-field-error-helptext"
+      "helptext": "example-date-field-error-helptext",
+      "day": "date-day-error",
+      "month": "date-month-error",
+      "year": "date-year-error"
     }
   }
 }

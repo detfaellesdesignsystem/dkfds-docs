@@ -121,7 +121,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-8-1-0 .mb-0}
 ## Version 8.1.0
 
-<div><span class="small-text mt-0 d-block">26-09-2022</span></div>
+<div><span class="small-text mt-0 d-block">27-09-2022</span></div>
 
 - Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a>
 - Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
