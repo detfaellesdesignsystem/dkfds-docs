@@ -21,7 +21,9 @@ var exampleUrls = [
     {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
     {"url": "/eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
     {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 270 },
-    {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 }
+    {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 },
+    {"url": "/eksempel/skiplink/", "filename": "skiplink.png", "width": 771, "height": 70 },
+    {"url": "/eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 }    
 ];
 
 (async () => {
@@ -41,16 +43,25 @@ var exampleUrls = [
 
             if (exampleUrls[i].filename !== "cookie-message.png"){
                 await page.evaluate(() => {
-                    let cookieMessage = document.getElementById('cookiePrompt').parentNode;
+                    let cookieMessage = document.getElementById('cookiePrompt');
                     if (cookieMessage !== null) {
+                        cookieMessage = cookieMessage.parentNode;
                         cookieMessage.style.display = 'none';
                     }
-
+                    if(document.body.classList.contains('page-skiplink')){
+                        document.getElementsByClassName('skipnav')[0].focus();
+                    }
+                    if(document.body.classList.contains('page-back-to-top')){
+                        var toTopButton = document.getElementsByClassName('back-to-top-button')[0];
+                        toTopButton.style.right = "auto";
+                        toTopButton.style.bottom = "auto";
+                        toTopButton.style.top = "10px";
+                    }
                     window.scrollTo(0, 0);
                     if(document.getElementsByClassName('footer').length > 0){
                         document.getElementsByClassName('footer')[0].style.marginTop = "0px";
                     }
-                    if(document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
+                    if(document.getElementsByTagName('body') !== null  && document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
                         var eventClick = new Event('mouseenter');
                         document.getElementsByClassName('js-tooltip')[0].dispatchEvent(eventClick);
                     }

@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/sprogvaegler/"
+permalink: "/komponenter/sprogvaelger/"
+redirect_from:
+- /komponenter/sprogvaegler/
 layout: styleguide
 type: component
 title: Sprogvælger
@@ -14,7 +16,7 @@ subnav:
 - text: Tooltip
   href: "#sprogvælger-med-tooltip"
 ---
-{% include code/preview-image.html component="language-switcher" alt="Eksempel på sprogvælger" code="/kode/komponenter/sprogvaegler/" %}
+{% include code/preview-image.html component="language-switcher" alt="Eksempel på sprogvælger" code="/kode/komponenter/sprogvaelger/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -37,7 +39,7 @@ Sprogvælgeren indeholder en liste af sprog skrevet på original sproget. Sprogv
 
 Når brugeren vælger et andet sprog, vil det blive markeret som fed i stedet. Det valgte sprog skifter placering til at være det første sprog i listen.
 
-Husk at skrive sproget ud på det sprog det har. Eksempelvis "English" for engelsk og "Kalaallisut" for Grønlandsk. På denne måde, kan brugerne stadig finde frem til deres fortrukne sprog, trods resten af indholdet vises i et sprog de ikke forstår.
+Husk at skrive sproget ud på det sprog det har. Eksempelvis "English" for engelsk og "Kalaallisut" for Grønlandsk. På denne måde, kan brugerne stadig finde frem til deres foretrukne sprog, trods resten af indholdet vises i et sprog de ikke forstår.
 
 Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert sprog, således at brugere, der gør brug af hjælpeteknologier (fx skærmlæser) kan forstå komponenten på det valgte sprog.
 
@@ -63,7 +65,7 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/digital-flytning/flytning-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
-- <a href="/pages/eksempler/aes/oversigt/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt'">Sagsoversigt</a>
 
-{% include child-components.html parent='sprogvaegler' %}
+{% include child-components.html parent='sprogvaelger' %}

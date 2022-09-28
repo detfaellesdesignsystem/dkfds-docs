@@ -1,0 +1,200 @@
+{
+    "portal_header_data": {
+      "compact": false,
+      "user": {
+        "name": "Anders Andersen",
+        "work": "Forsikringens Forsikringsfirma"
+      },
+      "logolink": {
+        "sronly": "Portalnavn",
+        "href" : "#"
+      }
+    },
+    "solution_header_data": {
+      "classes": "header-end",
+      "title": {
+        "href": "#",
+        "text": "Løsningstitel står her"
+      },
+      "solutionInfo": {
+        "hideOnPrint": true
+      },
+      "authority": {
+        "name": "Myndighedsnavn",
+        "text": "Support: 12 34 56 78 <span class='d-print-none'>· <a href=\"javascript:void(0);\" data-module=\"modal\" data-target=\"modal-contact\" class=\"function-link d-inline-block\"><svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#card-text\"></use></svg>Kontakt</a></span>"
+      }
+    },
+    "modal_data": {
+      "id": "modal-contact",
+      "headingID": "modal-contact-title",
+      "heading": "Kontakt",
+      "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
+      "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
+    },
+    "footer_data":{
+      "topButton": {
+        "topLink": "#top"
+      },
+      "columns": [
+        {
+          "columnSize": 3,
+          "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
+        },
+        {
+          "columnSize": 3,
+          "classes": "d-print-none",
+          "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
+          "lists": [
+            {
+              "inline": false,
+              "classes": "mt-0 mb-1 nobullet-list",
+              "items": [
+                {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"},
+                {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"}
+              ]
+            }
+          ]
+        },
+        {
+          "columnSize": 6,
+          "textAlignRight": false,
+          "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
+          "lists": [
+            {
+              "inline": false,
+              "classes": "d-print-none mt-0 nobullet-list",
+              "items": [
+                {"content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"},
+                {"content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "alert_summary": {
+        "name": "error",
+        "classes": "alert-error mt-0 mb-8",
+        "heading": "Der er problemer",
+        "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#input-email\">Angiv din e-mail fx eksempel@mail.dk</a></li><li><a class=\"function-link\" href=\"#alder1\">Angiv din alder. Vi skal bruge den til dit og dat.</a></li></ul>",
+        "role": "alert",
+        "contentContainer": false,
+        "attributes": "data-module=\"error-summary\""
+      },
+    "input_navn": {
+        "id": "input-navn",
+        "name": "navn",
+        "label": {
+            "text": "Navn"
+        },
+        "classes":"input-width-xl",
+        "value": "Anders Andersen"
+    },
+    "input_gade": {
+        "id": "input-gade",
+        "name": "gade",
+        "formgroup": {
+            "classes": "mr-sm-4 mt-5 mt-sm-0 w-percent-sm-100"
+        },
+        "label": {
+            "text": "Gade/vej"
+        },
+        "classes":"input-width-xl",
+        "value": "Mønstergade"
+    },
+    "input_husnummer": {
+        "id": "input-husnummer",
+        "name": "husnummer",
+        "label": {
+            "text": "Husnummer"
+        },
+        "classes":"input-width-xs",
+        "value": "13"
+    },
+    "input_postnummer": {
+      "id": "input-postnummer",
+      "name": "postnummer",
+      "formgroup": {
+        "classes": "mr-sm-4 mt-5 mt-sm-0"
+      },"label": {
+          "text": "Postnummer"
+      },
+      "classes":"input-width-xs",
+      "value": "2300"
+    },
+    "input_by": {
+      "id": "input-by",
+      "name": "by",
+      "formgroup": {
+        "classes": "w-percent-sm-100"
+    },
+      "label": {
+          "text": "By"
+      },
+      "classes":"input-width-xl",
+      "value": "København S"
+    },
+    "input_COadresse": {
+      "id": "input-co-adresse",
+      "name": "COadresse",
+      "label": {
+          "text": "Evt. C/O adresse",
+          "optionalLabel": true
+      },
+      "classes":"input-width-xl",
+      "required": false
+    },
+    "input_telefonnummer": {
+      "id": "input-telefonnummer",
+      "name": "telefonnummer",
+      "label": {
+          "text": "Telefonnummer",
+          "optionalLabel": true
+      },
+      "classes":"input-width-s",
+      "required": false
+    },
+    "input_email": {
+      "id": "input-email",
+      "name": "email",
+      "label": {
+          "text": "E-mail"
+      },
+      "classes":"input-width-xl",
+      "errorMessage": "Angiv din e-mail fx eksempel@mail.dk"
+    },
+    "radiobuttons_alder": {
+      "items": [{
+        "id": "alder1",
+        "name": "alder",
+        "value": "Under 18",
+        "label": "Under 18",
+        "large": true
+      },{
+        "id": "alder2",
+        "name": "alder",
+        "value": "18-29",
+        "label": "18-29",
+        "large": true
+      },{
+        "id": "alder3",
+        "name": "alder",
+        "value": "30-39",
+        "label": "30-39",
+        "large": true
+      },{
+        "id": "alder4",
+        "name": "alder",
+        "value": "40-59",
+        "label": "40-59",
+        "large": true
+      },{
+        "id": "alder5",
+        "name": "alder",
+        "value": "60 eller ældre",
+        "label": "60 eller ældre",
+        "large": true
+      }
+      ]
+    }
+  }

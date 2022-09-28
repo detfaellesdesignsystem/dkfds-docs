@@ -1,0 +1,180 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer.njk" import footer as footer %}
+
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/badge/badges.njk" import badge as badge %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
+
+{% block header %}
+<header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+    
+    <div class="overlay"></div>
+    <nav class="nav"> <!-- collapsible-->
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+
+      <div class="navbar navbar-primary">
+        <div class="navbar-inner container">
+          <ul class="nav-primary" >
+            <li class="current">
+              <a href="#" class="nav-link">
+                  <span>Find sag</span>
+              </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <span>Ansøgninger</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <span>Beskeder</span>
+                </a>
+            </li>
+            <li>
+              <div class="overflow-menu">
+                <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                  <span>Udbetalinger</span>
+                </button>
+                <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+                  <ul class="overflow-list" role="menu">
+                      <li role="none">
+                        <a href="#" role="menuitem">2022</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2021</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2020</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2019</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2018</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav-secondary d-none d-lg-block">
+            </div>
+        </div>
+      </div>
+      <div class="portal-info-mobile">
+        <p class="user bold">Anders Andersen</p>
+
+        <a href="#" class="button button-secondary button-signout">
+            Log af
+        </a>
+      </div>
+      <div class="solution-info-mobile">
+        <p class="bold">Myndighedsnavn</p>
+        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">
+            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar-inner navbar-context-actions container">
+          <div class="nav-secondary d-none d-lg-block">
+          {{ breadcrumbs(breadcrumbs_data_desktop) }}
+          </div>
+          <div class="nav-actions">
+            
+          </div>
+        </div>
+      </div>
+  </nav> <!-- collapsible nav end-->
+</header>
+{% endblock %}
+
+{{ breadcrumbs(breadcrumbs_data_mobile) }}
+
+{% block body %}
+<main class="container page-container" id="main-content">
+  {{ alert(alert_afslutning) }}
+  <h1 class="mt-6">Sagsnr. 123456789</h1>
+  {{ badge(badge_under_behandling) }}
+  <div class="w-percent-xs-100 w-percent-md-40 mt-7">
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-4 weight-semibold">
+            Navn
+        </div>
+        <div class="col-md-8">
+          Lone Hansen
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-4 weight-semibold">
+          Sag sidst ændret
+        </div>
+        <div class="col-md-8">
+          04-01-2019
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-4 weight-semibold">
+          Kode
+        </div>
+        <div class="col-md-8">
+          ABC
+        </div>
+    </div>
+    <div class="row row-bordered no-gutters">
+        <div class="col-md-4 weight-semibold">
+          Beskrivelse
+        </div>
+        <div class="col-md-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </div>
+    </div>
+  </div>
+  
+  <h2>Sagsindhold</h2>
+  <ul class="nobullet-list">
+    <li><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/">Se sagens afgørelser og status</a></li>
+    <li><a href="#">Se sagens dokumenter</a></li>
+    <li><a href="#">Se sagens involverede</a></li>
+  </ul>
+  <h2>Henvend dig til &lt;Myndigheden&gt; om sagen</h2>
+  
+  <h3>Skriv til &lt;Myndigheden&gt;</h3>
+  <p>Hvis du har kommentarer til sagen eller nye relevante oplysninger, så kan du skrive til &lt;Myndigheden&gt;. Det kan fx være sagsoplysninger du ikke mener er korrekte.</p>
+  {{ button(button_myndigheden) }}
+  
+  <h3>Giv adgang til sag</h3>
+  <p>Du kan give en anden person eller organisation adgang til at se oplysninger i din sag, ved at de får adgang til sagen i Se Sag.</p>
+  {{ button(button_adgang) }}
+
+  <h3>Giv fuldmagt til sag</h3>
+  <p>Du kan give en anden person eller organisation adgang til at se oplysninger i din sag, ved at de får adgang til sagen i Se Sag.</p>
+  {{ button(button_fuldmagt) }}
+
+  <h3>Blanketter</h3>
+  <p>Her kan du finde blanketter, du kan bruge til at henvende dig, hvis du vil:</p>
+  <ul>
+    <li>Klage over en afgørelse</li>
+    <li>Bede om at en sag ikke behandles</li>
+    <li>Genoptagelse af en afgørelse</li>
+    <li>Udbetaling som engangsbeløb</li>
+  </ul>
+  <a href="#">Gå til blanketter</a>
+</main>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

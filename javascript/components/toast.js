@@ -15,7 +15,7 @@ function toastExample(){
 
         button.addEventListener('click', function(){
             let type = ["info", "warning", "error", "success"];
-            let headings = ["Du har fået en besked", "Dette er en advarsel", "Der opstod en fejl", "Din ansøgning er afsendt"];
+            let headings = ["Toastbesked med info", "Toastbesked med advarsel", "Toastbesked med fejl", "Toastbesked med succesbesked"];
             let randomType = Math.floor(Math.random() * type.length);
             let toastContainerEl = document.getElementsByClassName('toast-container')[0];
             let toastEl = document.createElement('div');

@@ -5,64 +5,77 @@ redirect_from:
 - "/kode/plugins/micromodal/"
 layout: styleguide
 type: element
-title: Modalvindue
+title: Modal
 category: Komponenter_category
 subcategory: Komponenter
-description: Modalvinduer er separate vinduer, som popper-up på siden, når du aktiverer
-  dem.
+description: Modal er separate vinduer, som popper-up på siden, når du aktiverer dem.
+tags:
+- besked
+- dialog
+- dialogue
+- modal
+- modaler
+- modalvindue
+- popup
+- pop up
+- vindue
 component: modal
 componentTitle: Eksempel på modal
 componentCode: "/kode/komponenter/modal/"
+anchor: true
 subnav:
-- text: Modalvindue som kræver handling
+- text: Modal som kræver handling
   href: "#kraever-handling"
 
 ---
 {:.h3 #retningslinjer}
+
 ## Anvendes til
 
-Modalvinduer anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen. Det kunne fx være en godkendelse af en handling, behov for bekræftelse eller overførsel af rettigheder, som løsningen skal kunne udføre for at kunne fuldføre sin dialog med brugeren.
+Modaler anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen. Det kunne fx være en godkendelse af en handling, behov for bekræftelse eller overførsel af rettigheder, som løsningen skal kunne udføre for at kunne fuldføre sin dialog med brugeren.
 
-Brug modalvinduer, når du vil være sikker på, at brugeren ser en bestemt dialog og forholder sig til dens indhold.
+Brug en modal, når du vil være sikker på, at brugeren ser en bestemt dialog og forholder sig til dens indhold.
 
 {:.h3}
+
 ## Anvendes ikke til
 
-Modalvinduer kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.
+En modal kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.
 
-Modalvinduer anvendes ikke til længere, sammenhængende indhold.
+Modaler anvendes ikke til længere, sammenhængende indhold.
 
-Modalvinduer anvendes i begrænset omfang, da de kan øge løsningens kognitive load pga brugerens fokus flyttes.
+Modaler anvendes i begrænset omfang, da de kan øge løsningens kognitive load pga brugerens fokus flyttes.
 
-Undgå modalvinduer på mobile løsninger og visninger, da de ikke fungerer godt for brugeren.
+Undgå modaler på mobile løsninger og visninger, da de ikke fungerer godt for brugeren.
 
 Undgå at have formularer inde i en modal. Særligt hvis det er en formular med mere end ét felt. I sådan et tilfælde bør man overveje at dele siden op, så indholdet strækker sig over flere sider.
 
 {:.h3}
+
 ## Vejledning
 
 Undgå at have flere åbne modaler på siden - det giver en dårligere brugeroplevelse og kan resultere i at brugeren mister fornemmelsen af, hvor de er på siden.
 
-Modalvinduet skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
+Modalen skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
-<a href="/komponenter/knapper/">Knapper i modalvinduet skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/#retningslinjer">anbefalinger for knapper</a>.
+Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/">anbefalinger for knapper</a>.
 
-Vær sikker på at modalvinduet kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
+Vær sikker på at modalen kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 
-Brugeren skal selv aktivere modalvinduet. Det må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt.
+Brugeren skal selv aktivere modalen. Den må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt. Den eneste undtagelse er pattern for <a href="/eksempler/patterns/session-udloeber/">Session udløber</a>, hvor modalen åbner af sig selv for at advare om en anden ændring i brugergrænsefladen, som brugeren ikke selv har aktiveret - nemlig automatisk log af.
 
-Hold teksten i modalvinduet så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalvinduet bliver så langt, at vinduet scroller. Overvej at bruge en individuel side i stedet for et modalvindue, hvis indholdet er meget langt.
+Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalen bliver så langt, at der opstår scroll. Overvej at bruge en individuel side i stedet for et modal, hvis indholdet er meget langt.
 
 {:.h3 #eksempelloesninger}
+
 ## Se komponenten i eksempelløsninger
 
-{:.nobullet-list}
-
-* <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger (tryk på <em>'Kontakt'</em> i eksemplernes header)</a>
 
 {:#kraever-handling}
-## Modalvindue som kræver handling
 
-Anvend modalvindue som kræver handling, når brugeren ikke skal kunne lukke modalvinduet uden at tage stilling til dets indhold. 
+## Modal som kræver handling
 
-{% include code/preview-box.html component="modal-forced-action" title="Eksempel på modalvindue, som kræver handling" link="true" %}
+Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen uden at tage stilling til dets indhold.
+
+{% include code/preview-box.html component="modal-forced-action" title="Eksempel på modal, som kræver handling" link="true" %}

@@ -2,13 +2,13 @@
 permalink: /komponenter/tilbage-link/
 layout: styleguide
 type: element
-title: Tilbage link
+title: Tilbage-link
 category: Komponenter_category
 description: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 subcategory: Komponenter
 component: back-link
-componentTitle: "Eksempel på tilbage link"
+componentTitle: "Eksempel på tilbage-link"
 componentCode: "/kode/komponenter/tilbage-link/"
 ---
 
@@ -27,7 +27,7 @@ Brug aldrig tilbage-link-komponenten sammen med brødkrummer. Vælg enten tilbag
 {:.h3}
 ## Vejledning
 
-Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen) på trinnet/siden. Bruges tilbage-linket i selvbetjeningsløsninger, der har en synlig tringuide eller en venstremenu, placeres tilbage-linket øverst venstrestillet over indholdet.
+Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen) på trinnet/siden. Bruges tilbage-linket i selvbetjeningsløsninger, der har en synlig trinindikator eller en venstremenu, placeres tilbage-linket øverst venstrestillet over indholdet.
 
 Sørg for, at tilbage-linket fører brugerne til den forrige side, de var på, i den tilstand, de sidst så trinnet/siden.
 
@@ -43,10 +43,8 @@ Adam Silver: Form Design Patterns (2018)
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/aktindsigt/aktindsigt-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
-- <a href="/pages/eksempler/AES-erstatningssag/aes-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
-- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
-- <a href="/pages/eksempler/digital-flytning/flytning-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Digital flytning åbnes i nyt vindue">Digital flytning</a>
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Bekræft oplysninger'">Formular til kontaktoplysninger: Bekræft oplysninger</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kontaktoplysninger'">Trinformular til ansøgning: Kontaktoplysninger</a>
 
 {% include child-components.html parent='Backlink' %}

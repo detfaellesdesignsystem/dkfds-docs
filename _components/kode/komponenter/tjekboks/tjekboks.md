@@ -1,6 +1,6 @@
 ---
 permalink: /kode/komponenter/tjekboks/
-title: Tjekboks
+title: Tjekboks (Checkbox)
 parentlink: /kode/komponenter/
 layout: styleguide
 type: component
@@ -10,8 +10,6 @@ description: "Dokumentation på implementering af tjekbokse."
 tags:
 anchor: true
 subnav:
-- text: Fejlmeddelelse
-  href: '#fejlmeddelelse'
 - text: Lille tjekboks
   href: '#lille-tjekboks'
 - text: Skjult indhold (Collapse)
@@ -38,10 +36,6 @@ subnav:
 - Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.
 
 ## Varianter
-
-{:#fejlmeddelelse}
-### Fejlmeddelelse
-{% include code/syntax.html component="checkbox-error" link="true" %}
 
 {:#lille-tjekboks}
 ### Lille tjekboks

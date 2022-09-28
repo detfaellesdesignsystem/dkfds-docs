@@ -1,16 +1,16 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
-{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
-
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer.njk" import footer as footer %}
 
+{% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
-
 {% block header %}
-  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    <header class="header">
+      <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
@@ -20,64 +20,121 @@
 
       <div class="portal-info-mobile">
         <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
+
         <a href="#" class="button button-secondary button-signout">
           Log af
         </a>
       </div>
 
       <div class="solution-info-mobile">
-        <p class="bold">Erhvervsministeriet</p>
-        <p>Support: 72 20 60 00 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+        <p class="bold">Myndighedsnavn</p>
+        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
       </div>
     </nav> <!-- collapsible nav end-->
   </header>
 {% endblock %}
 
 {% block body %}
-<main class="container page-container" id="main-content">
-  {{ alert({
-    "classes": "alert-success",
-    "icon": true,
-    "heading": "Sagen er sendt til AES"}) }}
-  {{ alert({
-    "classes": "alert-warning",
-    "icon": true,
-    "heading": "Husk betaling",
-    "content": "Gebyret skal indsættes på vores konto i banken"}) }}
-    <h1 class="mb-0 mt-5">Kvittering</h1>
-    <p class="form-hint mt-2">Referencenummer: 28346863</p>
-    <p class="mt-0 mb-4" >Hvis du ønsker dokumentation på fremsendelse kan du downloade anmodningen.</p>
-    <button class="button button-secondary d-print-none">{{ icon_svg({"name": 'file-download'})}} Download kvittering som pdf</button>
-    <h2 class="h4 mt-7">Hvad sker der nu</h2>
-    <p>Sagens parter vil indenfor 7 hverdage modtage en kvittering med journalnummer og oplysninger om, hvornår AES forventer at have en udtalelse klar.</p>
-    <h2 class="h4 mt-7">Husk betaling</h2>
-    <p class="my-0">Gebyret for udtalelsen skal sættes ind på vores konto i Danske Bank:</p>
-    <div class="w-percent-md-30 mt-4">
-      <div class="row no-gutters row-bordered">
-        <div class="col-12 col-md-4 weight-semibold">
-            Reg.nr.
+  <main class="container page-container" id="main-content">
+    {{ alert(alert_receipt) }}
+    <h1 class="mb-6 mt-6">Kvittering</h1>
+    <p class="font-lead">Nedenfor finder du dine indtastninger fra de foregående sider.</p>
+    {{ button(button_print) }}
+    <h2>Dine oplysninger</h2>
+      <h3>Vælg personer</h3>
+      <div class="table--responsive-scroll">
+        <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
+            <thead>
+                <tr>
+                  <th>Person</th>
+                  <th>CPR-nummer</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-title="Person">Jens Jensen</td>
+                <td data-title="CPR-nummer">123456-7890</td>
+              </tr>
+              <tr>
+                <td data-title="Person">Keld Hedagaardsen</td>
+                <td data-title="CPR-nummer">230495-1111</td>
+              </tr>
+              <tr>
+                <td data-title="Person">Anni Hedagaardsen</td>
+                <td data-title="CPR-nummer">120394-2222</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+      <h3>Vælg noget mere</h3>
+      <div class="table--responsive-scroll">
+        <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
+            <thead>
+                <tr>
+                  <th>Nummer</th>
+                  <th>Dato</th>
+                  <th>Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td data-title="Nummer">123456789</td>
+                  <td data-title="Dato">01.01.2021</td>
+                  <td data-title="Information">Lorem ipsum dolor sit</td>
+                </tr>
+                <tr>
+                  <td data-title="Nummer">123456789</td>
+                  <td data-title="Dato">01.01.2021</td>
+                  <td data-title="Information">Lorem ipsum dolor sit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+      <h3>Vedhæft dokumenter</h3>
+      <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
+        <thead>
+            <tr>
+              <th>Vedhæftet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</a></td>
+            </tr>
+            <tr>
+              <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Kopi-af-dokument-x.pdf</a></td>
+          </tr>
+        </tbody>
+    </table>
+      <h3>Tidligere registrering</h3>
+      <div class="w-percent-md-60 mt-6 mb-7">
+        {% for row in tidligere_registrering %}
+        <div class="row row-bordered no-gutters">
+          <div class="col-12 col-md-8 weight-semibold">
+              {{ row.label }}
+          </div>
+          <div class="col-12 col-md-2">
+              {{ row.value }}
+          </div>
         </div>
-        <div class="col-12 col-md-8">0216</div>
+        {% endfor %}
       </div>
-      <div class="row no-gutters row-bordered">
-        <div class="col-12 col-md-4 weight-semibold">
-            Kontonr.
+      <h3>Kontaktoplysninger</h3>
+      <div class="w-percent-md-60 mt-6 mb-7">
+        {% for row in kontaktoplysninger %}
+        <div class="row row-bordered no-gutters">
+          <div class="col-12 col-md-4 weight-semibold">
+              {{ row.label }}
+          </div>
+          <div class="col-12 col-md-6">
+              {{ row.value }}
+          </div>
         </div>
-        <div class="col-12 col-md-8">4069068936</div>
+        {% endfor %}
       </div>
-    </div>
-    <div class="mt-4">
-      <p class="mt-0 mb-0">Gebyr: 6.220 kr.</p>
-      <p class="mt-0 mb-0">Ved overførslen skal I oplyse skadelidtes CPR-nr.: 1702671913</p>
-    </div>
-    <h2 class="h4">Ved spørgsmål eller supplerende oplysninger</h2>
-    <div class="mt-4">
-      <p class="mt-0 mb-0">Kontakt AES på aes@aes.dk eller 72 00 60 00</p>
-      <p class="mt-0 mb-0">Referencenummer: 28346863</p>
-    </div>
-    <br>
-    <button class="button button-secondary mt-5 d-print-none">Opret ny sag</button>
-</main>
+      {{ button(button_done) }}
+  </main>
+  
 {% endblock %}
 
 {% block banner -%}

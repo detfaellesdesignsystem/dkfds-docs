@@ -16,4 +16,4 @@ subnav: []
 Du bør bestræbe dig på at følge standarderne for opsummerings- og kvitteringssider, så disse bliver konsistente på tværs af selvbetjeningsløsninger.
 
 ## Designsystemet er bygget med sig selv
-Du kan bruge designssystem.dk som eksempel, da det er bygget med sig selv og overholder sine egne regler.
+Du kan bruge designsystem.dk som eksempel, da det er bygget med sig selv og overholder sine egne regler.

@@ -19,7 +19,7 @@ eventuelle afhængigheder, der følger med pluginnet.
 Bruger du et plugin skal de styles, så de visuelt passer ind i designsystemet. Der er 
 stylingeksempler under Komponenter: 
 
-- <a href="/komponenter/drop-down/#multiselect-og-søgning">Drop down med multiselect og søgefunktion</a>
+- <a href="/komponenter/dropdown/#multiselect-og-søgning">Drop down med multiselect og søgefunktion</a>
 - <a href="/komponenter/tables/#avancerede-tabeller">Avancerede tabeller</a>
 
 Support til det plugin du eventuelt har har valgt at bruge, får du hos udbyderen af pluginnet. 

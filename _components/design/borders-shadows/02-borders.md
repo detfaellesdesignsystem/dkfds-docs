@@ -19,6 +19,6 @@ componentLink: false
 | Horisontal ruler | #BFBFBF | 1px | solid |
 | Fejl ved felt | #CC0000 | 4px | solid |
 | Streg ved åben detalje-komponent | #BFBFBF | 4px | solid |
-| Streg ved aktivt menupunkt i sidenavigation | #44831E (Borger.dk)<br />#0059B3 (Virk) | 4px | solid |
-| Streg ved aktivt menupunkt i sidenavigation | #44831E (Borger.dk)<br />#0059B3 (Virk) | 7px | solid |
+| Streg ved aktivt menupunkt i venstremenu | #44831E (Borger.dk)<br />#0059B3 (Virk) | 4px | solid |
+| Streg ved aktivt menupunkt i venstremenu | #44831E (Borger.dk)<br />#0059B3 (Virk) | 7px | solid |
 | Facit streg | #747474 | 4px | double |

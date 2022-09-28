@@ -23,7 +23,7 @@ subnav:
 {% include code/preview.html component="labels" %}
 
 {:.nobullet-list}
-- <a href="/kode/komponenter/felter/">Se dokumentationen om felter til udviklere</a>
+- <a href="/kode/komponenter/inputfelter/">Se dokumentationen om inputfelter til udviklere</a>
 
 ### Designværdier
 
@@ -44,7 +44,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 - Feltoverskrifter placeres altid over feltet, som anvist under formularelementer.
 - Alle felter skal have en feltoverskrift.
 
-<a href="/komponenter/felter/">Se eksempel på brug af feltoverskrift (label)</a>
+<a href="/komponenter/inputfelter/">Se eksempel på brug af feltoverskrift (label)</a>
 
 {:#tabeloverskrifter}
 ## Tabeloverskrifter

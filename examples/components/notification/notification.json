@@ -1,7 +1,0 @@
-{
-  "button_example": {
-      "text": "Tilføj notifikation",
-      "classes": "primary",
-      "attributes": "id=\"toast-example-button\""
-  }
-}

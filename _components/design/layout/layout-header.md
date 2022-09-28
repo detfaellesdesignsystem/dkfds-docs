@@ -8,7 +8,7 @@ Headeren identificerer portal, ansvarlig myndighed og den bruger, der er logget 
 
 Headeren er ens på tværs af trin og undersider i en given selvbetjeningsløsning. Den er således et “ankerpunkt”, som brugeren altid kan vende tilbage til og orientere sig ved.
 
-<a href="/komponenter/headers/">Se header-komponenten</a>
+<a href="/komponenter/header/">Se header-komponenten</a>
 
 En header består af et antal rækker, som vist nedenfor.
 
@@ -37,7 +37,7 @@ Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt su
 
 <h3 class="h5">Række 3 (frivillig)</h3>
 
-Sidenavigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
+Navigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
 
 <h3 class="h5">Række 4 (frivillig)</h3>
 

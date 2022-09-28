@@ -20,20 +20,20 @@ Brug en brødkrumme, når du har brug for at hjælpe brugerne med at forstå, hv
 {:.h3}
 ## Anvendes ikke til
 
-Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (tringuide).
+Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (trinindikator).
 
-Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikatorer/">trinindikator</a>.
+Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikator/">trinindikator</a>.
 
 Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur. 
 
 {:.h3}
 ## Vejledning
 
-Overvej nøje om du har brug for at anvende en brødkrumme, hvis du allerede bruger andre navigationskomponenter, der også indikerer, hvor i strukturen brugeren er, som fx sidenavigation (venstremenu).
+Overvej nøje om du har brug for at anvende en brødkrumme, hvis du allerede bruger andre navigationskomponenter, der også indikerer, hvor i strukturen brugeren er, som fx venstremenu.
 
 Overvej nøje om du skal bruge brødkrummer, hvis der er færre end to niveauer.
 
-Brødkrummer bør ikke erstatte top- eller sidenavigation.
+Brødkrummer bør ikke erstatte top- eller venstremenu.
 
 Brødkrummer skal vise den aktuelle placering i stedets hierarkiske struktur, ikke brugerens (tilfældige) færden rundt på webstedet. Hvis der er flere veje igennem din løsning til samme side, skal brødkrummen kun vise en enkelt vej (sti).
 
@@ -58,4 +58,5 @@ På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses 
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/aes/sagsoverblik/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>

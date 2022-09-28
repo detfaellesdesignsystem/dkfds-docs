@@ -1,7 +1,9 @@
 ---
-permalink: /komponenter/headers/
+permalink: /komponenter/header/
+redirect_from:
+- /komponenter/headers/
 layout: styleguide
-title: Headers
+title: Header
 category: Komponenter_category
 subcategory: Komponenter
 description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
@@ -19,7 +21,7 @@ subnav:
   href: '#header-med-større-logo-og-brugeroplysninger'
 ---
 
-{% include code/preview-image.html component="header-simple" code="/kode/komponenter/headers/" %}
+{% include code/preview-image.html component="header-simple" code="/kode/komponenter/header/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -35,7 +37,7 @@ En eventuel overordnet navigation (topnavigation) skal også placeres i headeren
 
 Anvend ikke headeren andre steder i løsningen end i toppen af siden. 
 
-Brug ikke topnavigationen som faneblad, anvend da <a href="/komponenter/faneblad/">fanebladskomponenten</a>. 
+Brug ikke topnavigationen som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>. 
 
 {:.h3}
 ## Vejledning
@@ -53,7 +55,9 @@ Når du laver en header, bør du følge disse principper:
 - Brug kun række 3, 4, 5, med knapper, links og ekstra navigation, når det er absolut nødvendigt.
 - Hold altid rækkefølgen, uanset kombinationen
 
-<div><img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" /></div>
+<div class="header-rows-example">
+  <img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" />
+</div>
 
 
 {:.h3 #eksempelloesninger}
@@ -77,7 +81,7 @@ Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt su
 {:.h4}
 ### Række 3 (frivillig)
 
-Sidenavigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
+Navigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
 
 {:.h4}
 ### Række 4 (frivillig)

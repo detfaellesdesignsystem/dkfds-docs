@@ -24,8 +24,8 @@ Sagerne kan være:
 {:.h3 .mb-md-0}
 ## Nye komponenter
 
-{% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/felter/#prefix-og-suffix" %}
-{% include roadmap.html title="Karakterbegrænsning på tekstfelt/tekstområde" status="I gang" %}
+{% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/inputfelter/#prefix-og-suffix" %}
+{% include roadmap.html title="Karakterbegrænsning på inputfelt/tekstområde" status="Gennemført" link="/komponenter/inputfelter/#karakterbegraensning" %}
 {% include roadmap.html title="Modalvindue som kræver handling" status="Gennemført" link="/komponenter/modal/#kraever-handling" %}
 {% include roadmap.html title="Multiselect dropdown" status="I gang" %}
 {% include roadmap.html title="Notifikationsprik" status="I gang" %}
@@ -37,7 +37,7 @@ Sagerne kan være:
 {% include roadmap.html title="Strukturerede lister" status="Gennemført" link="/komponenter/strukturerede-lister/" %}
 {% include roadmap.html title="Søgefelt med autoudfyldelse" status="Foreslået" %}
 {% include roadmap.html title="Søgning i tabeller" status="Gennemført" link="/komponenter/tables/#søgning-i-tabeller" %}
-{% include roadmap.html title="Tilbage til toppen" status="I gang" %}
+{% include roadmap.html title="Tilbage til toppen" status="Gennemført" link="/komponenter/tilbage-til-top/" %}
 {% include roadmap.html title="Tiles" status="Annulleret" %}
 {% include roadmap.html title="Toggle switch" status="Gennemført" link="/komponenter/toggle/" %}
 {% include roadmap.html title="Trinindikator med angivelse af fejl" status="I gang" %}
@@ -46,7 +46,7 @@ Sagerne kan være:
 {:.h3 .mb-md-0}
 ## Eksempelløsninger
 {% include roadmap.html title="404 - Siden blev ikke fundet" status="I gang" %}
-{% include roadmap.html title="Generiske eksempelløsninger" status="I gang" %}
+{% include roadmap.html title="Generiske eksempelløsninger" status="Gennemført" link="/eksempler/selvbetjeningsloesninger/" %}
 {% include roadmap.html title="Komplekse eksempelløsninger" status="Foreslået" %}
 
 

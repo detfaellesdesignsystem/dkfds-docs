@@ -2,6 +2,6 @@
 title: Uden brødtekst
 parent: Notification
 order: 50
-component: notification-onlyheading
+component: toastbesked-onlyheading
 componentTitle: "Eksempel på notifikation uden brødtekst"
 ---

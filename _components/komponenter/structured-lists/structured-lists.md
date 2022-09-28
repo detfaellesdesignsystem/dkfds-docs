@@ -40,11 +40,9 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-* <a href="/pages/eksempler/aktindsigt/aktindsigt-2/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Aktindsigt åbnes i nyt vindue">Aktindsigt</a>
-* <a href="/pages/eksempler/AES-erstatningssag/aes-9/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
-* <a href="/pages/eksempler/opgaveliste/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Opgaveliste åbnes i nyt vindue">Opgaveliste</a>
-* <a href="/pages/eksempler/aes/sagsoverblik/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES: Sagsoverblik åbnes i nyt vindue">Sager hos AES: Sagsoverblik</a>
-* <a href="/pages/eksempler/aes/sagsoverblik/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES: Afgørelser åbnes i nyt vindue">Sager hos AES: Afgørelser</a>
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Bekræft oplysninger'">Formular til kontaktoplysninger: Bekræft oplysninger</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
 
 {:#med-link}
 ## Struktureret liste med link

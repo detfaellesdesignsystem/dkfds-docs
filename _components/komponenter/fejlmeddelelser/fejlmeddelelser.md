@@ -20,11 +20,24 @@ tags:
 - fejlmedelelser
 - fejlmeddellelser
 - fejlmedellelser
-lead:
 anchor: true
 subnav:
-- text: Eksempler på fejlmeddelelser
-  href: "#eksempler"
+- text: Accordions
+  href: "#accordions"
+- text: Datofelter
+  href: "#datofelter"
+- text: Dropdown
+  href: "#dropdown"
+- text: Inputfelt
+  href: "#inputfelt"
+- text: Radioknapper
+  href: "#radioknapper"
+- text: Tekstområde
+  href: "#tekstomraade"
+- text: Tjekboks
+  href: "#tjekboks"
+- text: Vedhæft fil
+  href: "#vedhaeft-fil"
 
 ---
 {% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" link="true" code="/kode/komponenter/fejlmeddelelser/" %}
@@ -63,7 +76,7 @@ Beskriv for brugeren, hvad der er sket og hvordan det kan rettes.
 
 Meddelelsen skal være skrevet i lægmandssprog, være imødekommende og så kortfattet som muligt.
 
-Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står "ddmmååå-nnnn" eller "22091908-1856" som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.
+Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står "ddmmåååå-nnnn" eller "22091908-1856" som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.
 
 {:.h4}
 ### Vær konsistent
@@ -91,7 +104,7 @@ Undgå også fejlmeddelelser, der taler ned til eller skælder brugeren ud som f
 
 Forskellige fejl har brug for forskellige fejlmeddelelser.
 
-Fx kan der opstå forskellige fejl på tekstfelter, felter kan være: tomme, for lange, for korte, indeholde ugyldige tegn, være i et forkert format, m.fl.
+Fx kan der opstå forskellige fejl på inputfelter, felter kan være: tomme, for lange, for korte, indeholde ugyldige tegn, være i et forkert format, m.fl.
 
 En fejlmeddelelse, der forklarer den specifikke situation er mere hjælpsom end den generiske fejlmeddelelse.
 
@@ -123,42 +136,100 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Vedhæft filer åbnes i nyt vindue">Vedhæft filer</a>
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a>
+- <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a>
 
-{:#eksempler}
-## Eksempler på fejlmeddelelser
 
-{:.h4}
-### Navn
+{:.h3 #accordions}
+## Accordions
 
-{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" %}
 
-{:.h4}
-### Personnummer
+{:.h3 #datofelter}
+## Datofelter
 
-{% include code/preview-box.html component="error-message-personnummer" title="Eksempel på tekstfelt med tal og fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 
-{:.h4}
-### Postnummer
+{:.h3 #dropdown}
+## Dropdown
 
-{% include code/preview-box.html component="error-message-postnummer" title="Eksempel på talfelt med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 
-{:.h4}
-### Tjekbokse
+{:.h3 #inputfelt}
+## Inputfelt
 
-{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" link="true" %}
-
-{:.h4}
-### Radioknapper
-
-{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
 
 {:.h4}
-### Dato
+### Inputfelt med suffix
 
-{% include code/preview-box.html component="error-message-date" title="Eksempel på datoangivelse med fejlmeddelelse" link="true" %}
+{% include code/preview-box.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" %}
 
 {:.h4}
-### Vedhæft fil
+### Inputfelt med karakterbegrænsning
+
+{% include code/preview-box.html component="text-input-character-limit-error" title="Eksempel på inputfelt med karakterbegrænsning med fejlmeddelelse" %}
+
+{:.h3 #radioknapper}
+## Radioknapper
+
+{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
+
+{:.h3 #tekstomraade}
+## Tekstområde
+
+{% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" %}
+
+{:.h4}
+### Tekstområde med karakterbegrænsning
+{% include code/preview-box.html component="text-area-character-limit-error" title="Eksempel på tekstområde med karakterbegrænsning med fejlmeddelelse" %}
+
+{:.h3 #tjekboks}
+## Tjekboks
+
+{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" %}
+
+{:.h3 #vedhaeft-fil}
+## Vedhæft fil
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
+
+{:.h4}
+### Ingen fil er valgt
+Skriv "Vælg en [dokumenttype]".<br />
+Fx "Vælg en lægeerklæring".
+
+{:.h4}
+### Den valgte fil er forkert filtype
+Skriv "Den valgte fil skal være af typen [liste af filtyper]".<br />
+Fx "Den valgte fil skal være af typen CSV eller ODS" eller "Den valgte fil skal være af typen JPG, BMP, PNG, TIF eller PDF".
+
+{:.h4}
+### Filen er for stor
+Skriv "Filens størrelse skal være under [største filstørrelse]".<br />
+Fx "Filens størrelse skal være under 2MB".
+
+{:.h4}
+### Filen er tom
+Skriv "Den valgte fil er tom".
+
+{:.h4}
+### Filen indeholder en virus
+Skriv "Den valgte fil indeholder en virus".
+
+{:.h4}
+### Filen er beskyttet af en adgangskode
+Skriv "Den valgte fil er beskyttet af en adgangskode".
+
+{:.h4}
+### Der var en fejl, og filen ikke kunne uploades
+Skriv "Den valgte fil kunne ikke uploades - prøv venligst igen".
+
+{:.h4}
+### Der er en begrænsning på antal filer brugeren kan vælge
+Skriv "Du kan kun vælge op til [højeste antal filer] filer på samme tid".<br />
+Fx "Du kan kun vælge op til 10 filer på samme tid".
+
+{:.h4}
+### Der ikke er brugt den korrekte skabelon
+Skriv "Den valgte fil skal gøre brug af skabelonen".

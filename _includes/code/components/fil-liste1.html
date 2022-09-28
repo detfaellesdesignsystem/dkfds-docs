@@ -1,12 +1,12 @@
-<header class="header"><a href="#main-content" class="skipnav">Gå til
-        sidens indhold</a>
+<header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
     <!--1A: Portal header -->
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
-            <a href="javascript:void(0);" aria-label="Portalnavn"
-                class="logo ">
-
+            <a href="#" class="logo ">
+                <span class="sr-only">Portalnavn</span>
             </a>
             <button
                 class="function-link button-menu-open js-menu-open ml-auto d-print-none"
@@ -27,7 +27,7 @@
     </div>
 
     <!--2A: Solution header -->
-    <div class="solution-header ">
+    <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
                 <a href="#" class="">
@@ -39,9 +39,9 @@
             <div class="solution-info ">
                 <!-- nav-secondary -->
 
-                <p class="h5 authority-name"> Styrelsen for Eksempler</p>
+                <p class="h5 authority-name"> Myndighedsnavn</p>
 
-                <p>Support: 72 20 60 00 <span class='d-print-none'>· <a
+                <p>Support: 12 34 56 78 <span class='d-print-none'>· <a
                             href="javascript:void(0);" data-module="modal"
                             data-target="modal-contact"
                             class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
@@ -65,44 +65,56 @@
         </div>
 
         <div class="solution-info-mobile">
-            <p class="bold">Erhvervsministeriet</p>
-            <p><a href="javascript:void(0);" data-module="modal"
-                    data-target="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a>
+            <p class="bold">Myndighedsnavn</p>
+            <p>Support: 12 34 56 78 <br><a href="javascript:void(0);"
+                    data-module="modal" data-target="modal-contact"
+                    class="function-link d-inline-block">
+                    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a>
             </p>
         </div>
     </nav> <!-- collapsible nav end-->
 </header>
 
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
-    <a href="javascript:void(0);" class="back-link">Tilbage</a>
+    <a href="#" class="back-link">Tilbage</a>
 
-    <h1>Dokumentation</h1>
-
-    <div class="form-group file-input mb-5">
-        <label class="form-label" for="fileinput">Vedhæft fil</label>
-        <input type="file" id="fileinput" name="file" />
-    </div>
-
-    <nav class="page-navigation d-print-none">
-        <button class="button button-primary">Næste</button>
-    </nav>
+    <form novalidate method="post"
+        action="/pages/eksempler/vedhaeft-fil/fil-1/">
+        <fieldset>
+            <legend>
+                <h1>Dokumentation</h1>
+            </legend>
+            <div class="form-group file-input mb-5">
+                <label class="form-label" for="fileinput">Vedhæft
+                    fil</label>
+                <input type="file" id="fileinput" name="file" />
+            </div>
+            <button type="button"
+                class="button button-primary d-print-none mt-7">Næste</button>
+        </fieldset>
+    </form>
 </main>
 
 <footer>
+
+    <a class="back-to-top-button button button-tertiary d-print-none"
+        href="#top"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+        <span class="d-none d-md-inline-block">Til toppen</span>
+    </a>
+
     <div class="footer">
         <div class="container">
             <ul class="align-text-left unstyled-list inline-list">
                 <li class=""><span
-                        class="h5 weight-semibold">Eksempelstyrelsen</span>
+                        class="h5 weight-semibold">Myndighedsnavn</span>
                 </li>
                 <li class=""><a class="function-link"
-                        href="mailto:support@example.dk">support@example.dk</a>
+                        href="mailto:support@myndighed.dk">support@myndighed.dk</a>
                 </li>
                 <li class=""><a class="function-link"
-                        href="tel:12345678">12 34 56 78</a></li>
+                        href="tel:12345678">(+45) 12 34 56 78</a></li>
                 <li class="d-print-none"><a href="#"
-                        class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable=">false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+                        class="function-link">Tilgængelighedserklæring</a>
                 </li>
                 <li class="d-print-none"><a href="#"
                         class="function-link">Privatlivspolitik

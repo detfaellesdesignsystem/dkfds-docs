@@ -23,6 +23,8 @@ subnav:
   href: '#margin-og-padding'
 - text: Display
   href: '#display'
+- text: Flexbox
+  href: '#flexbox'
 - text: Bredde i procent
   href: '#bredde-i-procent'
 - text: Baggrundsfarver

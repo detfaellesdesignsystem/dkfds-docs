@@ -46,7 +46,7 @@ Følg allerede etablerede standarder og konventioner for placering og gruppering
 
 <a href="/design/layout/">Regler og principper for layout</a>
 
-Hav forståelse for dit ansvar for sammenhængen i mellem og på tværs af de mange tusinde selvbetjeningsløsninger, der kan tilgås fra borger.dk og Virk. Ved at tage ansvar, er du med til at gøre brugerne mere effektive, så de ikke skal genlære alle offentlige brugergrænseflader forfra hver gang.
+Hav forståelse for dit ansvar for sammenhængen imellem og på tværs af de mange tusinde selvbetjeningsløsninger, der kan tilgås fra borger.dk og Virk. Ved at tage ansvar, er du med til at gøre brugerne mere effektive, så de ikke skal genlære alle offentlige brugergrænseflader forfra hver gang.
 
 ## 12 punkter til designeren
 

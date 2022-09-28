@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
         setScreenshots();
 
+        setDoDontImages();
+
         setHomepageIllustration();
 });
 
@@ -266,6 +268,7 @@ let setScreenshots = function(){
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
             let filename = getThemeCookie()+'-'+url[url.length-2]+'.PNG';
+
             let image = '<img src="/assets/img/examples_pages/'+url[3]+'/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="w-percent-100 d-block" />';
             screenshots[i].innerHTML = image;
         }
@@ -277,14 +280,53 @@ let setScreenshots = function(){
         }
     }
 
-    if(document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') || document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger') ||  document.getElementsByTagName('body')[0].classList.contains('page-footers') || document.getElementsByTagName('body')[0].classList.contains('page-headers') || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
+    if(document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link')
+        || document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') 
+        || document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger') 
+        || document.getElementsByTagName('body')[0].classList.contains('page-footer') 
+        || document.getElementsByTagName('body')[0].classList.contains('page-header') 
+        || document.getElementsByTagName('body')[0].classList.contains('page-tilbage-til-toppen')
+        || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
         let screenshots = document.querySelectorAll('.screenshot');
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
             let componentName = url[url.length-2];
+            if(screenshots[i].getAttribute('data-image') !== null){
+                componentName = screenshots[i].getAttribute('data-image');
+            }
             let filename = getThemeCookie()+'-'+componentName+'.png';
             let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';
             screenshots[i].innerHTML = image;
+        }
+    }
+
+    if (document.getElementsByTagName('body')[0].classList.contains('page-header')) {
+        let imageContainer = document.querySelectorAll('.header-rows-example');
+        let filename = getThemeCookie() + "-header-rows.png";
+        imageContainer[0].innerHTML = '<img src="/assets/img/headers/' + filename + '" class="w-percent-100 inner-border-box p-4" alt="De 5 foskellige rækker i headeren" />';
+    }
+};
+
+let setDoDontImages = function() {
+    let dodonts = document.querySelectorAll('.do-dont-container');
+    let cookie = getThemeCookie();
+
+    for (let i = 0; i < dodonts.length; i++) {
+        let images = dodonts[i].getElementsByTagName('IMG');
+        for (let j = 0; j < images.length; j++) {
+            let src = images[j].src;
+            let url_parts = src.split('/');
+            let filename = url_parts[url_parts.length-1];
+            if (filename.includes("-borgerdk") || filename.includes("-virk")) {
+                if (filename.includes("-borgerdk") && cookie === "virk") {
+                    let new_filename = filename.replace("-borgerdk", "-virk");
+                    images[j].src = "/assets/img/do-dont/" + new_filename;
+                }
+                else if (filename.includes("-virk") && cookie === "borgerdk") {
+                    let new_filename = filename.replace("-virk", "-borgerdk");
+                    images[j].src = "/assets/img/do-dont/" + new_filename;
+                }
+            }
         }
     }
 };

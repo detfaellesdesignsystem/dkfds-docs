@@ -13,7 +13,9 @@
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
 {% block header %}
-  <header class="header"><a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+  <header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
 
@@ -29,9 +31,10 @@
       </div>
 
       <div class="solution-info-mobile">
-        <p class="bold">Erhvervsministeriet</p>
-        <p><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
-      </div>
+        <p class="bold">Myndighedsnavn</p>
+        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">
+            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+    </div>
     </nav> <!-- collapsible nav end-->
   </header>
 {% endblock %}
@@ -47,9 +50,10 @@
 
     <div class="form-group file-input mb-5 form-error">
         <label class="form-label" for="fileinput">Vedhæft fil</label>
-        <span class="form-error-message mb-3" id="fileinput-error"><span class="sr-only">Fejl:</span> Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</span>
+        <span class="form-error-message mb-3" id="fileinput-error"><span class="sr-only">Fejl:</span> Filens størrelse skal være under 10MB. Opdel evt. dokumentet og tilføj som flere dokumenter.</span>
         <input type="file" id="fileinput" name="file" aria-describedby="fileinput-error" />
     </div>
+    <button class="button button-secondary d-print-none">Upload fil</button>
 
     <h2 class="h5 mt-8">Vedhæftet</h2>
     <ul class="bordered-list w-percent-md-40 mt-3">

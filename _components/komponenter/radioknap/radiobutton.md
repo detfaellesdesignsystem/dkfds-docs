@@ -4,7 +4,7 @@ redirect_from:
 - /komponenter/radiobutton/
 layout: styleguide
 type: component
-title: Radioknap
+title: Radioknap (Radio button)
 category: Komponenter_category
 subcategory: Komponenter
 anchor: true
@@ -38,7 +38,7 @@ Når listen over mulige valg kan være på en mobilvisning.
 
 Når brugeren skal kunne vælge mere end én værdi ud fra en synlig liste. Her skal du i stedet bruge tjekbokse.
 
-Du bør overveje at anvende en dropdown menu, hvis antallet af mulige værdier er for mange til en mobilvisning.
+Du bør overveje at anvende en dropdown, hvis antallet af mulige værdier er for mange til en mobilvisning.
 
 Når brugeren skal kunne undlade at vælge en værdi.
 
@@ -70,7 +70,9 @@ Der bør være en overordnet label for hele listen af radioknapper
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/strategiske-virksomhedsalliancer/virksomhedsalliancer-4/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Strategiske virksomhedsalliancer åbnes i nyt vindue">Strategiske virksomhedsalliancer</a>
-- <a href="/pages/eksempler/AES-erstatningssag/aes-1/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Tidligere registrering'">Trinformular til registrering: Tidligere registrering</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Oplysninger om ansøger'">Trinformular til ansøgning: Oplysninger om ansøger</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
 
 {% include child-components.html parent='Radiobutton' %}

@@ -9,12 +9,22 @@ description: Dokumentation på implementering af fejlmeddelelser.
 subcategory: Kode
 anchor: true
 subnav:
+- text: Accordions
+  href: "#accordions"
+- text: Datofelter
+  href: "#datofelter"
+- text: Dropdown
+  href: "#dropdown"
+- text: Inputfelt
+  href: "#tekstfelt"
+- text: Radioknapper
+  href: "#radioknapper"
+- text: Tekstområde
+  href: "#tekstomraade"
 - text: Tjekboks
   href: "#tjekboks"
-- text: Radioknap
-  href: "#radioknap"
-- text: Datoangivelse
-  href: "#datoangivelse"
+- text: Vedhæft fil
+  href: "#vedhaeft-fil"
 ---
 
 {% include code/preview-box.html component="error-message-name" title="Eksempel på fejlmeddelelser" %}
@@ -38,17 +48,55 @@ Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlo
 
 ## Varianter
 
-{:#tjekboks}
-### Tjekboks
+{:.h3 #accordions}
+## Accordions
 
-{% include code/syntax.html component="error-message-checkbox" link="true" %}
+{% include code/syntax.html component="error-message-accordion" title="Eksempel på accordion med fejl" link=true %}
+ 
+{:.h3 #datofelter}
+## Datofelter
 
-{:#radioknap}
-### Radioknap
+{% include code/syntax.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" link=true %}
 
-{% include code/syntax.html component="error-message-radio" link="true" %}
+{:.h3 #dropdown}
+## Dropdown
 
-{:#datoangivelse}
-### Datoangivelse
+{% include code/syntax.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" link=true %}
 
-{% include code/syntax.html component="error-message-date" link="true" %}
+{:.h3 #tekstfelt}
+## Inputfelt
+
+{% include code/syntax.html component="error-message-name" title="Eksempel på inputfelt med fejlmeddelelse" link=true %}
+
+{:.h4 #tekstfeltsuffix}
+### Inputfelt med suffix
+
+{% include code/syntax.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" link=true %}
+
+{:.h3 #radioknapper}
+## Radioknapper
+
+{% include code/syntax.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link=true %}
+
+{:.h3 #tekstomraade}
+## Tekstområde
+
+{% include code/syntax.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" link=true %}
+
+Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:
+
+- `for`
+- `id`
+- `name`
+- `aria-describedby`
+
+
+{:.h3 #tjekboks}
+## Tjekboks
+
+{% include code/syntax.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" link=true %}
+
+{:.h3 #vedhaeft-fil}
+## Vedhæft fil
+
+{% include code/syntax.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" link=true %}

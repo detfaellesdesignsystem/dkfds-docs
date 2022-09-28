@@ -8,7 +8,7 @@
     {% include code/components/base-svg.html %}
     <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     <main class="container page-container" id="main-content">
-    {% if page.title contains "Notification" %}
+    {% if page.title contains "Toastbesked" %}
       <div class="toast-container">
         {{ content }}
       </div>
@@ -16,7 +16,7 @@
     {% else %}
       <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
       {{ content }}
-      {% if page.title contains "tringuide" or page.title contains "Tringuide"  %}
+      {% if page.title contains "tringuide" or page.title contains "Tringuide" %}
       </aside>
       </div>
       {% endif %}
@@ -31,7 +31,7 @@
     {% if page.url contains "table" %}
     <script src="{{ site.baseurl }}/assets/js/table.js"></script>
     {% endif %}
-    {% if page.url contains "notifikation" or page.url contains "notification" %}
+    {% if page.url contains "notifikation" or page.url contains "notification" or page.url contains "toastbesked" %}
     <script src="{{ site.baseurl }}/assets/js/toast.js"></script>
     {% endif %}
     {% if page.url contains "language-switcher" %}

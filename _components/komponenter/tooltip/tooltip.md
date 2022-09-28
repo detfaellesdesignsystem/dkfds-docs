@@ -57,6 +57,8 @@ Vær opmærksom på, at tooltips på klikbare elementer med anden funktion ved k
 
 Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).
 
+{% include dos-donts-box.html component="tooltip-dos-donts" title="Datovælger do's and don'ts" %}
+
 {:.h4}
 ### Referencer
 
@@ -72,7 +74,7 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/AES-erstatningssag/aes-5/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
 
 
 {% include child-components.html parent='Tooltip' %}

@@ -3,8 +3,8 @@ permalink: /kode/komponenter/tilbage-link/
 parentlink: /kode/komponenter/
 layout: styleguide
 type: element
-title: Tilbage link
-description: "Dokumentation på implementering af tilbage link."
+title: Tilbage-link
+description: "Dokumentation på implementering af tilbage-link."
 tags:
 category: Kode_category
 subcategory: Kode
@@ -27,6 +27,6 @@ subcategory: Kode
 
 Linket placeres så vidt muligt i headeren, se eksempel på implementering i vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23html-struktur">Vedhæft filer</a>
 
-Bemærk, at tilbage linket stadig skal være synligt ved mobilvisning.
+Bemærk, at tilbage-linket stadig skal være synligt ved mobilvisning.
 
 Selve funktionaliteten står man selv for i ens løsning.

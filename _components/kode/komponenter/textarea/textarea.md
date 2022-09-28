@@ -1,12 +1,19 @@
 ---
-permalink: /kode/komponenter/textarea/
+permalink: /kode/komponenter/tekstomraade/
+redirect_from:
+- /kode/komponenter/textarea/
 parentlink: /kode/komponenter/
-title: Tekstområde
+title: Tekstområde (Textarea)
 layout: styleguide
 type: component
 category: Kode_category
 description: "Dokumentation på implementering af tekstområde."
 tags:
+- tekstområde
+- tekstomraade
+- textarea
+- karakterbegrænsning
+- karakterbegraensning
 subcategory: Kode
 ---
 
@@ -14,8 +21,8 @@ subcategory: Kode
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
-    <li><a href="/komponenter/textarea/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/textarea/">Eksempler</a></li>
+    <li><a href="/komponenter/tekstomraade/#retningslinjer">Retningslinjer</a></li>
+    <li><a href="/komponenter/tekstomraade/">Eksempler</a></li>
 </ul>
 
 ## Installation
@@ -32,18 +39,24 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 - `rows`
 
 
-Sæt højden på et textarea ved brug af `rows` attributten. Sæt højden, så det svarer til den mængde tekst, der forventes indtastet.
+Sæt højden på et tekstområde ved brug af `rows` attributten. Sæt højden, så det svarer til den mængde tekst, der forventes indtastet.
 
-## Varianter
+{:#fejlmeddelelse}
+## Fejlmeddelelse
+<a href="/kode/komponenter/fejlmeddelelser/#tekstomraade">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
-## Fejl
+Når der vises en fejlmeddelelse, vis da også <a href="/kode/komponenter/fejlopsummering/">fejlopsummering</a>.
 
-{% include code/syntax.html component="text-area-error" link="true" %}
+{:#karakterbegraensning}
+## Karakterbegrænsning
 
-Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:
+{% include code/syntax.html component="text-area-character-limit" link="true" %}
 
-- `for`
-- `id`
-- `name`
-- `aria-describedby`
-- `name`
+Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
+
+### Javascript
+Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID')).init();
+{% endhighlight %}

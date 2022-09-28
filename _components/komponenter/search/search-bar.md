@@ -62,5 +62,4 @@ Søgeknappen skal være en submit-knap.
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/AES-erstatningssag/aes-3/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Erstatningssag åbnes i nyt vindue">Erstatningssag</a>
-- <a href="/pages/eksempler/aes/oversigt/?r={{page.permalink}}%23eksempelloesninger" title="Eksempelløsning Sager hos AES åbnes i nyt vindue">Sager hos AES</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>

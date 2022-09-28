@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "id": "datepicker-example-error1",
+    "label": {
+      "text": "Dato for aftale",
+      "for": "datepicker-example-error1"
+    },
+    "name": "appointment-date1",
+    "required": true,
+    "errorMessage": {
+      "id": "datepicker-example-error1",
+      "text": "Vælg en dato"
+    }
+  }
+}

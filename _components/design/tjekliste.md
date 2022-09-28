@@ -48,4 +48,4 @@ Bruger du en tredjeparts plugin, skal du sikre at de visuelt passer ind i design
 
 <h2 class="h5">10. Brug et af de anviste layouts til din footer</h2>
 
-Slut din løsning af med en footer og <a href="/komponenter/footers/">brug et af de anviste layouts</a> til det.
+Slut din løsning af med en footer og <a href="/komponenter/footer/">brug et af de anviste layouts</a> til det.

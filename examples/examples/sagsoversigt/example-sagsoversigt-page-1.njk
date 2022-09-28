@@ -1,0 +1,187 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{%- from "components/header/header.njk" import portal_header as portal_header -%}
+{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/footers/footer.njk" import footer as footer %}
+
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/badge/badges.njk" import badge as badge %}
+{% from "components/details/details.njk" import details as details %}
+{% from "components/cards/cards.njk" import card as card %}
+
+{% block header %}
+<header class="header">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+    
+    <div class="overlay"></div>
+    <nav class="nav"> <!-- collapsible-->
+      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+
+      <div class="navbar navbar-primary">
+        <div class="navbar-inner container">
+          <ul class="nav-primary" >
+            <li class="current">
+              <a href="#" class="nav-link">
+                  <span>Find sag</span>
+              </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <span>Ansøgninger</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    <span>Beskeder</span>
+                </a>
+            </li>
+            <li>
+              <div class="overflow-menu">
+                <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                  <span>Udbetalinger</span>
+                </button>
+                <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+                  <ul class="overflow-list" role="menu">
+                      <li role="none">
+                        <a href="#" role="menuitem">2022</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2021</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2020</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2019</a>
+                      </li>
+                      <li role="none">
+                        <a href="#" role="menuitem">2018</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="portal-info-mobile">
+        <p class="user bold">Anders Andersen</p>
+
+        <a href="#" class="button button-secondary button-signout">
+            Log af
+        </a>
+      </div>
+      <div class="solution-info-mobile">
+        <p class="bold">Myndighedsnavn</p>
+        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">
+            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
+      </div>
+  </nav> <!-- collapsible nav end-->
+</header>
+{% endblock %}
+
+{% block body %}
+<main class="container page-container" id="main-content">
+    <h1>Find sag</h1>
+    <p class="font-lead mb-8">Her kan der stå en manchettekst, som siger noget meningsfyldt om siden.</p>
+    
+    <div class="form-group search">
+      <label for="inputSearchTable" class="sr-only">Søg efter indhold i tabellen</label>
+      <input class="form-input input-char-27" id="inputSearchTable" name="searchtable" type="search">
+      <button class="button button-search" id="btnSearchTable">Søg</button>
+  </div>
+    <div class="table--responsive-scroll mt-4 mb-4">
+      <table class="table">
+          <thead>
+              <tr>
+                  <th>Sagsnummer</th>
+  
+                  <th>Sidst ændret</th>
+  
+                  <th>Sag forventes afsluttet</th>
+  
+                  <th class="w-percent-20">Beskrivelse</th>
+
+                  <th>Kode</th>
+
+                  <th>Status</th>
+  
+              </tr>
+          </thead>
+  
+          <tbody>
+  
+              <tr>
+                  <td data-title="Sagsnummer"><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/">123456789</a></td>
+                  <td data-title="Sidst ændret">01.01.2021</td>
+                  <td data-title="Sag forventes afsluttet">01.01.2021</td>
+                  <td data-title="Beskrivelse">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</td>
+                  <td data-title="Kode">ABC</td>
+                  <td data-title="Status">{{ badge(badge_under_behandling) }}</td>
+              </tr>
+  
+              <tr>
+              <td data-title="Sagsnummer"><a href="#">3456789</a></td>
+              <td data-title="Sidst ændret">01.01.2021</td>
+              <td data-title="Sag forventes afsluttet">01.01.2021</td>
+              <td data-title="Beskrivelse">Lorem ipsum dolor sit amet.</td>
+              <td data-title="Kode">DEF</td>
+              <td data-title="Status">{{ badge(badge_afsluttet) }}</td>
+  
+              </tr>
+  
+              <tr>
+              <td data-title="Sagsnummer"><a href="#">4567890</a></td>
+              <td data-title="Sidst ændret">01.01.2021</td>
+              <td data-title="Sag forventes afsluttet">01.01.2021</td>
+              <td data-title="Beskrivelse">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</td>
+              <td data-title="Kode">GHI</td>
+              <td data-title="Status">{{ badge(badge_under_behandling) }}</td>
+  
+              </tr>
+  
+              <tr>
+              <td data-title="Sagsnummer"><a href="#">56789000</a></td>
+              <td data-title="Sidst ændret">01.01.2021</td>
+              <td data-title="Sag forventes afsluttet">01.01.2021</td>
+              <td data-title="Beskrivelse">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+              <td data-title="Kode">JKL</td>
+              <td data-title="Status">{{ badge(badge_under_behandling) }}</td>
+              </tr>
+              <tr>
+              <td data-title="Sagsnummer"><a href="#">3456789</a></td>
+              <td data-title="Sidst ændret">01.01.2021</td>
+              <td data-title="Sag forventes afsluttet">01.01.2021</td>
+              <td data-title="Beskrivelse">Lorem ipsum dolor sit amet.</td>
+              <td data-title="Kode">MNO</td>
+              <td data-title="Status">{{ badge(badge_under_behandling) }}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  {{ details(details_tabel) }}
+  <h2>Anmod om adgang</h2>
+  <p>Du kan anmode om at få adgang til sager, du endnu ikke kan se her.</p>
+  {{ button(button_anmod_om_adgang) }}
+  <h3>Anmodninger, der afventer svar</h3>
+  <div class="w-percent-xs-100 w-percent-sm-60 w-percent-md-50 w-percent-xl-30">
+    {{ card(card_anmodning) }}
+  </div>
+  
+</main>
+{% endblock %}
+
+{% block banner -%}
+{% endblock %}
+
+{% block footer -%}
+  {{ footer(footer_data) }}
+{% endblock %}
+
+{{ modal(modal_data) }}

@@ -1,0 +1,130 @@
+{
+    "portal_header_data": {
+        "compact": false,
+        "user": {
+          "name": "Anders Andersen",
+          "work": "Forsikringens Forsikringsfirma"
+        },
+        "logolink": {
+          "sronly": "Portalnavn",
+          "href" : "#"
+        }
+      },
+      "solution_header_data": {
+        "classes": "header-end",
+        "title": {
+          "href": "#",
+          "text": "Registrer et eller andet"
+        },
+        "solutionInfo": {
+          "hideOnPrint": true
+        },
+        "authority": {
+            "name": "Myndighedsnavn",
+            "text": "Support: 12 34 56 78 <span class='d-print-none'>· <a href=\"javascript:void(0);\" data-module=\"modal\" data-target=\"modal-contact\" class=\"function-link d-inline-block\"><svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#card-text\"></use></svg>Kontakt</a></span>"
+          }
+      },
+      "modal_data": {
+        "id": "modal-contact",
+        "headingID": "modal-contact-title",
+        "heading": "Kontakt",
+        "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
+        "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
+      },
+      "footer_data": {
+        "topButton": {
+          "topLink": "#top"
+        },
+        "list": {
+          "items": [
+            {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
+            {"content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"},
+            {"content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"},
+            {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true},
+            {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
+          ]
+        },
+        "languageSwitcher": {
+          "ariaLabel": "Vælg sprog fra listen",
+          "firstAriaLabel": "Valgt sprog: Dansk",
+          "languages": [
+            {"code": "da", "name": "Dansk"},
+            {"code": "en-GB", "name": "English"},
+            {"code": "de", "name": "Deutsch"},
+            {"code": "kl", "name": "Kalaallisut"},
+            {"code": "pl", "name": "Polski"},
+            {"code": "se", "name": "Svenska"}
+          ]
+        }
+      },
+      "trinindikator_data": {
+        "steps": [
+          {
+            "safetext": "Vælg&nbsp;personer",
+            "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
+            "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          },
+          {
+            "safetext": "Vælg&nbsp;noget&nbsp;mere",
+            "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
+            "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          },
+          {
+            "safetext": "Vedhæft&nbsp;dokumenter",
+            "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/",
+            "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          },
+          {
+            "safetext": "Tidligere&nbsp;registrering",
+            "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/",
+            "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          },
+          {
+            "text": "Kontaktoplysninger",
+            "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/",
+            "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          },
+          {
+            "text": "Opsummering",
+            "href": "/pages/eksempler/trinformular-til-registrering/registrering-6/",
+            "active": true,
+            "current": true
+          }
+        ]
+      },
+      "tidligere_registrering": [
+        {
+          "label": "Har du tidligere lavet en lignende registrering?",
+          "value": "Ja",
+          "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+        },
+        {
+          "label": "Tidligere registreringsnummer",
+          "value": "123.678",
+          "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+        },
+        {
+          "label": "Dato for registreringen",
+          "value": "10.10.2010",
+          "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+        }
+      ],
+      "kontaktoplysninger": [
+        {
+          "label": "E-mail",
+          "value": "eksempel@mail.dk",
+          "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
+        },
+        {
+          "label": "Telefonnummer",
+          "value": "12345678",
+          "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
+        }
+      ],
+      "button_next": {
+        "text": "Send registrering",
+        "classes": "primary d-print-none mt-4",
+        "attributes": "type='submit'"
+      }
+  }
+  
