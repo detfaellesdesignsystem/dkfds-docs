@@ -39,7 +39,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="notification-info" %}
+{% include code/syntax.html component="toastbesked-info" %}
 
 Kopiér ovenstående kode for at indsætte én toastbesked.
 

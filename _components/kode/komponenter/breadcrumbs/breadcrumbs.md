@@ -25,4 +25,4 @@ tags:
 
 {% include code/syntax.html component="breadcrumbs" %}
 
-Se <a href="/eksempler/selvbetjeningsloesninger/#sager-hos-aes">eksempelløsningen "Sager hos AES"</a> for placering i koden. Bemærk at brødkrummen placeres to forskellige steder, så den vises korrekt i alle skærmstørrelser.
+Se <a href="/eksempler/selvbetjeningsloesninger/#sagsoversigt">eksempelløsningen "Sagsoversigt"</a> for placering i koden. Bemærk at brødkrummen placeres to forskellige steder, så den vises korrekt i alle skærmstørrelser.
