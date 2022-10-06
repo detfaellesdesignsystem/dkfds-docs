@@ -38,6 +38,48 @@ Datovælger-komponenten kræver JavaScript for at fungere. Man kan enten gøre b
 DKFDS.datePicker.on(document.body);
 {% endhighlight %}
 
+#### Sprog
+Hvis du ønsker at anvende et andet sprog end dansk i datovælgeren, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
+
+{% highlight javascript %}
+DKFDS.datePicker.setLanguage({
+  "open_calendar": "Åbn kalender",
+  "aria_label_date": "{dayStr} den {day}. {monthStr} {year}",
+  "previous_year": "Navigér ét år tilbage",
+  "previous_month": "Navigér én måned tilbage",
+  "next_month": "Navigér én måned frem",
+  "next_year": "Navigér ét år frem",
+  "select_month": "Vælg måned",
+  "select_year": "Vælg år",
+  "date_selected": "Dato valgt",
+  "previous_years": "Navigér {years} år tilbage",
+  "next_years": "Navigér {years} år frem",
+  "guide": "Du kan navigere mellem dage ved at bruge højre og venstre piletaster, uger ved at bruge op og ned piletaster, måneder ved at bruge page up og page down-tasterne og år ved at at taste shift og page up eller ned. Home og end-tasten navigerer til start eller slutning af en uge.",
+  "months_displayed": "Vælg en måned",
+  "years_displayed": "Viser år {start} til {end}. Vælg et år.",
+  "january": "januar",
+  "february": "februar",
+  "march": "marts",
+  "april": "april",
+  "may": "maj",
+  "june": "juni",
+  "july": "juli",
+  "august": "august",
+  "september": "september",
+  "october": "oktober",
+  "november": "november",
+  "december": "december",
+  "monday": "mandag",
+  "tuesday": "tirsdag",
+  "wednesday": "onsdag",
+  "thursday": "torsdag",
+  "friday": "fredag",
+  "saturday": "lørdag",
+  "sunday": "søndag"
+  });
+DKFDS.datePicker.on(document.body);
+{% endhighlight %}
+
 #### Funktioner
 
 {:.table}

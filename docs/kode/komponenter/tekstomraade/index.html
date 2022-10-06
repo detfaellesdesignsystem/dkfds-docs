@@ -4508,6 +4508,16 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CharacterLimit(document.getElementById(&#39;FORM-LIMIT-ID&#39;)).init();</code></pre></figure>
 
+<h4>Sprog</h4>
+<p>Hvis du ønsker at anvende et andet sprog end dansk til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten “lang” i din sides html-tag. Indholdet i krøllede parenteser <code>{...}</code> nedenunder skal ikke oversættes eller ændres.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CharacterLimit(document.getElementById(&#39;FORM-LIMIT-ID&#39;), {
+  &quot;character_remaining&quot;: &quot;Du har {value} tegn tilbage&quot;,
+  &quot;characters_remaining&quot;: &quot;Du har {value} tegn tilbage&quot;,
+  &quot;character_too_many&quot;: &quot;Du har {value} tegn for meget&quot;,
+  &quot;characters_too_many&quot;: &quot;Du har {value} tegn for meget&quot;
+}).init();</code></pre></figure>
+
 
           
             

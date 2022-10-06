@@ -4493,6 +4493,46 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">DKFDS.datePicker.on(document.body);</code></pre></figure>
 
+<h4>Sprog</h4>
+<p>Hvis du ønsker at anvende et andet sprog end dansk i datovælgeren, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten “lang” i din sides html-tag. Indholdet i krøllede parenteser <code>{...}</code> nedenunder skal ikke oversættes eller ændres.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">DKFDS.datePicker.setLanguage({
+  &quot;open_calendar&quot;: &quot;Åbn kalender&quot;,
+  &quot;aria_label_date&quot;: &quot;{dayStr} den {day}. {monthStr} {year}&quot;,
+  &quot;previous_year&quot;: &quot;Navigér ét år tilbage&quot;,
+  &quot;previous_month&quot;: &quot;Navigér én måned tilbage&quot;,
+  &quot;next_month&quot;: &quot;Navigér én måned frem&quot;,
+  &quot;next_year&quot;: &quot;Navigér ét år frem&quot;,
+  &quot;select_month&quot;: &quot;Vælg måned&quot;,
+  &quot;select_year&quot;: &quot;Vælg år&quot;,
+  &quot;date_selected&quot;: &quot;Dato valgt&quot;,
+  &quot;previous_years&quot;: &quot;Navigér {years} år tilbage&quot;,
+  &quot;next_years&quot;: &quot;Navigér {years} år frem&quot;,
+  &quot;guide&quot;: &quot;Du kan navigere mellem dage ved at bruge højre og venstre piletaster, uger ved at bruge op og ned piletaster, måneder ved at bruge page up og page down-tasterne og år ved at at taste shift og page up eller ned. Home og end-tasten navigerer til start eller slutning af en uge.&quot;,
+  &quot;months_displayed&quot;: &quot;Vælg en måned&quot;,
+  &quot;years_displayed&quot;: &quot;Viser år {start} til {end}. Vælg et år.&quot;,
+  &quot;january&quot;: &quot;januar&quot;,
+  &quot;february&quot;: &quot;februar&quot;,
+  &quot;march&quot;: &quot;marts&quot;,
+  &quot;april&quot;: &quot;april&quot;,
+  &quot;may&quot;: &quot;maj&quot;,
+  &quot;june&quot;: &quot;juni&quot;,
+  &quot;july&quot;: &quot;juli&quot;,
+  &quot;august&quot;: &quot;august&quot;,
+  &quot;september&quot;: &quot;september&quot;,
+  &quot;october&quot;: &quot;oktober&quot;,
+  &quot;november&quot;: &quot;november&quot;,
+  &quot;december&quot;: &quot;december&quot;,
+  &quot;monday&quot;: &quot;mandag&quot;,
+  &quot;tuesday&quot;: &quot;tirsdag&quot;,
+  &quot;wednesday&quot;: &quot;onsdag&quot;,
+  &quot;thursday&quot;: &quot;torsdag&quot;,
+  &quot;friday&quot;: &quot;fredag&quot;,
+  &quot;saturday&quot;: &quot;lørdag&quot;,
+  &quot;sunday&quot;: &quot;søndag&quot;
+  });
+DKFDS.datePicker.on(document.body);</code></pre></figure>
+
 <h4>Funktioner</h4>
 
 <table class="table">
