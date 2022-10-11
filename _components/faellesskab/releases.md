@@ -130,7 +130,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-info badge-small mr-2">Change</span> Ændret placeringen af <a href="/komponenter/toastbesked/">toastbeskeder</a>, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.
 - Tilføjet `cursor:pointer` til <a href="/komponenter/toastbesked/">toastbeskeders</a> luk-knap.
 - Opdateret <a href="/komponenter/dropdown/">dropdown</a>-komponentens background-image, så det sættes ved hjælp af ikonet `expand-more`.
-- Ændret stylingen på responsive trinindikatorers top- og bund-kanter, så de ikke længere forsvinder på mindre skærme.
+- Ændret stylingen på <a href="/komponenter/trinindikator/#responsiv">responsive trinindikatorers</a> top- og bund-kanter, så de ikke længere forsvinder på mindre skærme.
+- Rettet en mindre fejl, hvor <a href="/komponenter/tooltip/">tooltip</a>-pilen kunne pege væk fra elementet.
 
 {:#version-8-1-0 .mb-0}
 ## Version 8.1.0
