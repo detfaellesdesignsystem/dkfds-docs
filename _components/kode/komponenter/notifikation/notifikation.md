@@ -51,7 +51,16 @@ Bemærk at ovenstående har class `show` som default. Der følger en animation m
 Ved at bruge nedenstående javascript vil dette komme ud af boksen. Men bemærk at en toastbesked bør have class `hide` fra start.
 
 #### Placering
-Toastbeskeder placeres i en div med class `toast-container`. Denne div placeres som første element i `<main>`.
+Toastbeskeder placeres i en div med class `toast-container` og attributter `aria-live="assertive"`, `aria-atomic="false"` og `aria-relevant="additions"`. Denne div placeres som første element i `<main>`.
+
+{% highlight html %}
+<main id="main-content">
+    <div class="toast-container" aria-live="assertive" aria-atomic="false" aria-relevant="additions">
+        <!-- Placer toastbeskeder her -->
+    </div>
+    ...
+</main>
+{% endhighlight %}
 
 <a href="/eksempel/toastbesked/" target="_blank">Se fungerende eksempel på implementering af toastbesked i et nyt vindue</a>
 
@@ -59,7 +68,7 @@ Toastbeskeder placeres i en div med class `toast-container`. Denne div placeres 
 Der medfølger Javascript til komponenten, som man kan vælge at bruge. 
 
 #### Vis
-Når en toastbesked vises ændres class fra `hide` til `showing` og til sidst `show`.
+Når en toastbesked vises, ændres class fra `hide` til `showing` og til sidst `show`.
 
 {% highlight javascript %}
 let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
@@ -67,7 +76,7 @@ toast.show();
 {% endhighlight %}
 
 ### Skjul
-Når en toastbesked skjules ændre `show` til `hide`.
+Når en toastbesked skjules, ændres class fra `show` til `hide`.
 
 {% highlight javascript %}
 let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));

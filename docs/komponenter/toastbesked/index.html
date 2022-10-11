@@ -4322,6 +4322,8 @@ Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige
 
 <p>Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom på at <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" class="icon-link">WCAG succes kriteriet 2.2.1: Timing Adjustable<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> bør efterleves.</p>
 
+<p>Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist ad gangen og rækkefølgen er vigtig, så tilføj et tidsstempel til toastbeskeden.</p>
+
 <section class="styleguide-child-container content" id="section-/komponenter/notifikation/notifikation-succes">
   <h2 id="succes">Succes</h2>
   
@@ -4337,7 +4339,7 @@ Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="toast toast-success show" id="notification-success" role="status">
+        <div class="toast toast-success show" id="notification-success" aria-live="assertive" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
         <p class="bold">Din ansøgning er afsendt</p>
@@ -4372,7 +4374,7 @@ Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="toast toast-warning show" id="notification-warning" role="status">
+        <div class="toast toast-warning show" id="notification-warning" aria-live="assertive" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
         <p class="bold">Dette er en advarsel</p>
@@ -4407,7 +4409,7 @@ Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="toast toast-error show" id="notification-error" role="status">
+        <div class="toast toast-error show" id="notification-error" aria-live="assertive" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
         <p class="bold">Der opstod en fejl</p>
@@ -4442,7 +4444,7 @@ Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="toast toast-info show" id="notification-info" role="status">
+        <div class="toast toast-info show" id="notification-info" aria-live="assertive" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
         <p class="bold">Du har fået en besked</p>
@@ -4477,7 +4479,7 @@ Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="toast toast-info show" id="notification-onlyheading" role="status">
+        <div class="toast toast-info show" id="notification-onlyheading" aria-live="assertive" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
         <p class="bold">Dine ændringer er blevet gemt.</p>
