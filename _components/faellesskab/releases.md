@@ -7,6 +7,11 @@ category: Faellesskab_category
 subcategory: Fællesskab
 description: Release notes for Det Fælles Designsystem
 tags:
+- changelog
+- releases
+- udgivelse
+- version
+- versioner
 - 2.1.2
 - 3
 - 3
@@ -64,6 +69,7 @@ tags:
 - 8.0.0
 - 8.0.1
 - 8.1.0
+- 8.2.0
 anchor: true
 subnav:
 - text: Version 8.2.0

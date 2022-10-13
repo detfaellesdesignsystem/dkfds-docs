@@ -127,7 +127,7 @@ new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID')).init();
 {% endhighlight %}
 
 ##### Sprog
-Hvis du ønsker at anvende et andet sprog end dansk i tabeller med valgbare rækker, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag.
+Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for tabeller med valgbare rækker, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag.
 
 {% highlight javascript %}
 new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID'), {

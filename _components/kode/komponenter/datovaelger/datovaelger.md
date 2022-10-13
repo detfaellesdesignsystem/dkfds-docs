@@ -39,7 +39,7 @@ DKFDS.datePicker.on(document.body);
 {% endhighlight %}
 
 #### Sprog
-Hvis du ønsker at anvende et andet sprog end dansk i datovælgeren, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
+Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for datovælgeren, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
 
 {% highlight javascript %}
 DKFDS.datePicker.setLanguage({

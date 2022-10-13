@@ -14,7 +14,11 @@ title: Toastbesked
 category: Kode_category
 subcategory: Kode
 description: "Dokumentation på implementering af toastbesked."
-tags: 
+tags:
+- toast
+- toastbesked
+- notifikation
+- besked
 anchor: true
 subnav:
 - text: Succes

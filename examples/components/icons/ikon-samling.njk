@@ -1,1 +1,8 @@
+{% from "components/icons/base-svg.njk" import icons as icons %}
 
+{%- set all_icons -%}{{- icons() -}}{%- endset -%}
+<figure class="highlight">
+    <pre style="overflow-x: scroll; white-space: pre;">
+        <code class="language-html" data-lang="html">{{- all_icons -}}</code>
+    </pre>
+</figure>

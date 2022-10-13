@@ -108,7 +108,7 @@ Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 
-#### Javascript
+#### JavaScript
 Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
@@ -116,7 +116,7 @@ new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID')).init();
 {% endhighlight %}
 
 ##### Sprog
-Hvis du ønsker at anvende et andet sprog end dansk til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
+Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
 
 {% highlight javascript %}
 new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID'), {
