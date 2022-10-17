@@ -46,7 +46,7 @@ new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID')).init();
 Attributten `aria-hidden` tilføjes automatisk i JavaScript, hvis man har undladt at tilføje attributten.
 
 #### Sprog
-Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for accordions, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag.
+Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for accordions med åbn/luk alle-funktionen, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag.
 
 {% highlight javascript %}
 new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID'), {

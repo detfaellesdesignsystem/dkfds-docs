@@ -129,7 +129,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-8-2-0 .mb-0}
 ## Version 8.2.0
 
-<div><span class="small-text mt-0 d-block">xx-10-2022</span></div>
+<div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
 - <span class="badge badge-success badge-small mr-3">New</span> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/datovaelger/">datovælger</a>.
 - <span class="badge badge-info badge-small mr-2">Change</span> Ændret aria-attributter for <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.
