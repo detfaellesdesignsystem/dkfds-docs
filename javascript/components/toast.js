@@ -10,6 +10,9 @@ function toastExample(){
         if(document.getElementsByClassName('toast-container').length === 0){
             let toastContainer = document.createElement('div');
             toastContainer.classList.add('toast-container');
+            toastContainer.setAttribute('aria-live', "assertive");
+            toastContainer.setAttribute('aria-atomic', "false");
+            toastContainer.setAttribute('aria-relevant', "additions");
             document.getElementById('main-content').prepend(toastContainer);
         }
 
@@ -20,7 +23,8 @@ function toastExample(){
             let toastContainerEl = document.getElementsByClassName('toast-container')[0];
             let toastEl = document.createElement('div');
             toastEl.classList.add('toast', 'toast-'+type[randomType], 'hide');
-            toastEl.setAttribute('role', "status");
+            toastEl.setAttribute('aria-live', "assertive");
+            toastEl.setAttribute('aria-atomic', "true");
             let icon = document.createElement('div');
             icon.classList.add('toast-icon');
             toastEl.appendChild(icon);
@@ -35,10 +39,10 @@ function toastExample(){
             close.innerText = "Luk";
             message.appendChild(close);
             let content = document.createElement('p');
-            content.innerText = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.";
+            content.innerText = "Her står der noget uddybende information";
             message.appendChild(content);
             toastEl.appendChild(message);
-            toastContainerEl.appendChild(toastEl);
+            toastContainerEl.prepend(toastEl);
             requestAnimationFrame(showtoast);
         });
     }

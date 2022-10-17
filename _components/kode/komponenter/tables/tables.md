@@ -20,7 +20,7 @@ subnav:
 - text: Linjehøjde
   href: '#linjehoejde'
 - text: Sortering i tabel
-  href: '#sortering-i-tabel
+  href: '#sortering-i-tabel'
 - text: Valgbare rækker
   href: '#valgbare-raekker'
 ---
@@ -124,6 +124,18 @@ Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gør
 
 {% highlight javascript %}
 new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID')).init();
+{% endhighlight %}
+
+##### Sprog
+Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for tabeller med valgbare rækker, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag.
+
+{% highlight javascript %}
+new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID'), {
+  "select_row": "Vælg række",
+  "unselect_row": "Fravælg række",
+  "select_all_rows": "Vælg alle rækker",
+  "unselect_all_rows": "Fravælg alle rækker"
+}).init();
 {% endhighlight %}
 
 ##### Events

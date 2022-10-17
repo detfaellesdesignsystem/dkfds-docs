@@ -9,6 +9,11 @@ category: Komponenter_category
 subcategory: Komponenter
 description: 
 lead: Toastbeskeder bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l. 
+tags:
+- toast
+- toastbesked
+- notifikation
+- besked
 anchor: true
 subnav:
 - text: Succes
@@ -33,7 +38,7 @@ At gøre brugeren opmærksom på vigtige oplysninger, ofte relateret til brugere
 
 {:.h3}
 ## Anvendes ikke til
-Brug <a href="/komponenter/beskeder/">Beskeder (alerts)</a>, hvis en besked skal placeres, som en del af indholdet på siden.
+Brug <a href="/komponenter/beskeder/">Beskeder (alerts)</a>, hvis en besked skal placeres som en del af indholdet på siden.
 
 Brug ikke toastbeskeder til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
 
@@ -54,5 +59,7 @@ Brug beskeder til at øge brugerens forståelse for løsningen.
 Tilføj ikke interaktivt indhold som links ol. på toastbeskeden, da der kan opstå udfordringer i forbindelse med tilgængelighed.
 
 Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom på at <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" class="icon-link">WCAG succes kriteriet 2.2.1: Timing Adjustable<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> bør efterleves.
+
+Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist ad gangen og rækkefølgen er vigtig, så tilføj et tidsstempel til toastbeskeden.
 
 {% include child-components.html parent='Notification' %}

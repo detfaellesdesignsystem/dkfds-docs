@@ -60,3 +60,15 @@ Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug
 {% highlight javascript %}
 new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID')).init();
 {% endhighlight %}
+
+#### Sprog
+Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
+
+{% highlight javascript %}
+new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID'), {
+  "character_remaining": "Du har {value} tegn tilbage",
+  "characters_remaining": "Du har {value} tegn tilbage",
+  "character_too_many": "Du har {value} tegn for meget",
+  "characters_too_many": "Du har {value} tegn for meget"
+}).init();
+{% endhighlight %}

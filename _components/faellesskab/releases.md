@@ -7,6 +7,11 @@ category: Faellesskab_category
 subcategory: Fællesskab
 description: Release notes for Det Fælles Designsystem
 tags:
+- changelog
+- releases
+- udgivelse
+- version
+- versioner
 - 2.1.2
 - 3
 - 3
@@ -64,8 +69,11 @@ tags:
 - 8.0.0
 - 8.0.1
 - 8.1.0
+- 8.2.0
 anchor: true
 subnav:
+- text: Version 8.2.0
+  href: "#version-8-2-0"
 - text: Version 8.1.0
   href: "#version-8-1-0"
 - text: Version 8.0.1
@@ -117,6 +125,19 @@ Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagu
 ## Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+
+{:#version-8-2-0 .mb-0}
+## Version 8.2.0
+
+<div><span class="small-text mt-0 d-block">17-10-2022</span></div>
+
+- <span class="badge badge-success badge-small mr-3">New</span> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/datovaelger/">datovælger</a>.
+- <span class="badge badge-info badge-small mr-2">Change</span> Ændret aria-attributter for <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.
+- <span class="badge badge-info badge-small mr-2">Change</span> Ændret placeringen af <a href="/komponenter/toastbesked/">toastbeskeder</a>, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.
+- Tilføjet `cursor:pointer` til <a href="/komponenter/toastbesked/">toastbeskeders</a> luk-knap.
+- Opdateret <a href="/komponenter/dropdown/">dropdown</a>-komponentens background-image, så det sættes ved hjælp af ikonet `expand-more`.
+- Ændret stylingen på <a href="/komponenter/trinindikator/#responsiv">responsive trinindikatorers</a> top- og bund-kanter, så de ikke længere forsvinder på mindre skærme.
+- Rettet en mindre fejl, hvor <a href="/komponenter/tooltip/">tooltip</a>-pilen kunne pege væk fra elementet.
 
 {:#version-8-1-0 .mb-0}
 ## Version 8.1.0
