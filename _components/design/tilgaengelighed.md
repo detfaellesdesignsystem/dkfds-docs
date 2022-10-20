@@ -68,6 +68,6 @@ Få hjælp med at forstå syv hyppige webtilgængelighedsfejl, såsom kontraster
 
 ### Evalueringsværktøjer
 
-Der findes evalueringsværktøjer, der kan hjælpe dig med at sikre, at webindhold opfylder kravene til tilgængelighed. På W3Cs (Web Accessibility initiative) hjemmeside findes et eksempel på en liste over forskellige evalueringsværktøjer: <a href="https://www.w3.org/WAI/ER/tools/" class="icon-link" target="_blank">Liste over evalueringsværktøjer til webtilgængelighed<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. 
+Der findes evalueringsværktøjer, der kan hjælpe dig med at sikre, at webindhold opfylder kravene til tilgængelighed. På W3Cs (Web Accessibility initiative) hjemmeside findes et eksempel på en liste over forskellige evalueringsværktøjer: <a href="https://www.w3.org/WAI/ER/tools/" class="icon-link" target="_blank">Liste over evalueringsværktøjer til webtilgængelighed<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 
 Bemærk, at W3C ikke opfordrer til brugen af specifikke produkter, men at evalueringsværktøjer og oplysninger på siden kommer fra blandt andet leverandører.
