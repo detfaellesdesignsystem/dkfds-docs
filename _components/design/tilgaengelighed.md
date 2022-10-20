@@ -27,7 +27,7 @@ Der er fire overordnede principper i webtilgængelighedsloven:
 - <strong>Forståelighed</strong>
 - <strong>Robusthed</strong>
 
-Principperne dækker blandt andet over: 
+Principperne dækker blandt andet over:
 
 - at billeder/ikoner gøres <strong>opfattelige</strong> for skærmlæserprogrammer ved at tekstliggøre den visuelle information 
 - at webstedet er <strong>anvendeligt</strong> for brugere, der anvender tastatur og ikke mus 
