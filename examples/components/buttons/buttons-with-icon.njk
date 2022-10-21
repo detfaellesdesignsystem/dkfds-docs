@@ -1,5 +1,9 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 
-{% for item in button_example.items %}
-{{ button(item) }}
-{% endfor %}
+{{ 
+    button({
+        "variant": "primary",
+        "text": "Refresh",
+        "icon": "refresh"
+    }) 
+}}

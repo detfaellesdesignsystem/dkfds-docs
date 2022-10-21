@@ -112,7 +112,8 @@
       },
       "button_next": {
         "text": "Næste",
-        "classes": "primary d-print-none mt-8",
+        "variant": "primary",
+        "classes": "d-print-none mt-8",
         "attributes": "type='submit'"
       }
   }

@@ -98,5 +98,15 @@
     "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a class=\"function-link\" href=\"#fileinput\">Filens størrelse skal være under 10MB. Opdel evt. dokumentet og tilføj som flere dokumenter.</a></li></ul>",
     "contentContainer": false,
     "role": "alert"
+  },
+  "button_upload": {
+    "text": "Upload fil",
+    "variant": "secondary",
+    "classes": "d-print-none"
+  },
+  "button_next": {
+    "text": "Næste",
+    "variant": "primary",
+    "classes": "mt-8"
   }
 }

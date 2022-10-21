@@ -1,6 +1,14 @@
-{% import "components/buttons/buttons.njk" as button %}
-{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/buttons/buttons.njk" import button as button %}
 
-<button class="js-tooltip button-unstyled" data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
-    {{ icon_svg({"name": 'help'})}}<span class="sr-only">Hvad betyder det?</span>
-</button>
+{{ 
+    button({
+        "variant": "unstyled",
+        "attributes": "type=\"button\"",
+        "srOnly": "Hvad betyder det?",
+        "icon": "help",
+        "tooltip": {
+            "text": "Dette er et tooltip",
+            "showOnClick": true
+        }
+    }) 
+}}

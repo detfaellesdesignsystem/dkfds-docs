@@ -9,6 +9,7 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/buttons/buttons.njk" import button as button %}
 
 {% block header %}
   <header class="header">
@@ -67,7 +68,7 @@
                   </ul>
                 </fieldset>
               </div>
-              <button type="button" class="button button-primary d-print-none mt-7">Næste</button>
+              {{ button(button_next) }}
             </div>
           </div>
       </fieldset>

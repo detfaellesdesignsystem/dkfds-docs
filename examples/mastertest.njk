@@ -1,0 +1,21 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/details/details.njk" import details as details %}
+{% from "components/form/controls/select.njk" import select as select %}
+
+{% block header %}
+<header class="header">
+</header>
+{% endblock %}
+
+{% block body %}
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ select(mastertest_data) }}
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block footer -%}
+{% endblock %}

@@ -196,5 +196,11 @@
         "large": true
       }
       ]
-    }
+    },
+    "button_next": {
+      "variant": "primary",
+      "text": "Næste",
+      "classes": "d-print-none mt-7",
+      "attributes": "type=\"button\""
+  }
   }

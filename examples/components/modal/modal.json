@@ -1,14 +1,14 @@
 {
-  "modal_data": {
-    "id": "modal-example",
-    "headingId": "modal-example-title",
-    "heading": "Lorem ipsum",
-    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales turpis nec tincidunt dictum. Aliquam hendrerit nunc nec arcu lobortis fringilla. Sed nulla lectus, mollis eget rhoncus sed, porta eu ipsum.</p><p>Cras eleifend elementum finibus. Mauris ac magna quis orci dapibus suscipit. Vestibulum accumsan turpis diam, ut pretium quam sollicitudin sed. Pellentesque posuere eget tortor quis imperdiet. Pellentesque gravida, enim vel porttitor sagittis, libero neque efficitur justo, nec gravida orci risus consequat lacus.</p>",
-    "actions": "<button class=\"button button-primary\">Primær knap</button><button class=\"button button-secondary\">Sekundær knap</button>"
-  },
-  "button_example": {
-    "text": "Åbn modal",
-    "classes": "tertiary",
-    "attributes": "data-module=\"modal\" data-target=\"modal-example\""
-  }
+    "modal_data": {
+        "id": "modal-example",
+        "headingId": "modal-example-title",
+        "heading": "Lorem ipsum",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales turpis nec tincidunt dictum. Aliquam hendrerit nunc nec arcu lobortis fringilla. Sed nulla lectus, mollis eget rhoncus sed, porta eu ipsum.</p><p>Cras eleifend elementum finibus. Mauris ac magna quis orci dapibus suscipit. Vestibulum accumsan turpis diam, ut pretium quam sollicitudin sed. Pellentesque posuere eget tortor quis imperdiet. Pellentesque gravida, enim vel porttitor sagittis, libero neque efficitur justo, nec gravida orci risus consequat lacus.</p>",
+        "actions": "<button class=\"button button-primary\">Primær knap</button><button class=\"button button-secondary\">Sekundær knap</button>"
+    },
+    "button_example": {
+        "text": "Åbn modal",
+        "variant": "tertiary",
+        "attributes": "data-module=\"modal\" data-target=\"modal-example\""
+    }
 }

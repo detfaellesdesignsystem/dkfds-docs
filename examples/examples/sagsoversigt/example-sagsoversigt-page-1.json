@@ -97,7 +97,8 @@
       },
       "button_anmod_om_adgang": {
         "text": "Anmod om adgang",
-        "classes": "secondary d-print-none"
+        "variant": "secondary",
+        "classes": "d-print-none"
       },
       "card_anmodning": {
         "heading": "Jørgen Hansen",

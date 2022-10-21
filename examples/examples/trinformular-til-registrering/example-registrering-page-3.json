@@ -89,9 +89,15 @@
           }
         ]
       },
+      "button_upload": {
+        "text": "Upload fil",
+        "variant": "secondary",
+        "attributes": "type='submit'"
+      },
       "button_next": {
         "text": "Næste",
-        "classes": "primary d-print-none mt-7",
+        "variant": "primary",
+        "classes": "d-print-none mt-7",
         "attributes": "type='submit'"
       }
   }

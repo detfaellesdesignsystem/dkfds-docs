@@ -9,6 +9,8 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 
+{% from "components/buttons/buttons.njk" import button as button %}
+
 {% block header %}
   <header class="header">
     <div id="top"></div>
@@ -65,8 +67,8 @@
     <p class="mt-0">40-59</p>
   </div>
 
-  <button class="button button-secondary mt-6 d-print-none">{{ icon_svg({'name':'file-download'})}} Gem som pdf</button> <br>
-  <button class="button button-secondary mt-4 d-print-none">{{ icon_svg({'name':'print'})}} Print</button>
+  {{ button(button_save) }}<br>
+  {{ button(button_print) }}
 </main>
 {% endblock %}
 

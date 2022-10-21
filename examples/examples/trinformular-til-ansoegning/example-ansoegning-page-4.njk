@@ -94,7 +94,7 @@
         <label class="form-label" for="fileinput">Tilføj dokument</label>
         <input class="mt-3" type="file" id="fileinput" name="file" aria-describedby="help-text-hint" />
       </div>
-      <button class="button button-secondary d-print-none" type="submit">Upload fil</button>
+      {{ button(button_upload) }}
     </form>
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/">
       <div class="table--responsive-scroll mt-4 mb-7">
@@ -126,9 +126,7 @@
                   </div>
                   </td>
                   <td class="vertical-align-middle" data-title="Slet">
-                    <button class="button button-unstyled" aria-labelledby="header4 file1" type="button">
-                      <svg class="icon-svg" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
-                    </button>
+                    {{ button(button_delete) }}
                   </td>
                 </tr>
             </tbody>

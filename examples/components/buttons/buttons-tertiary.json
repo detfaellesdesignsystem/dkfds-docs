@@ -1,26 +1,28 @@
 {
-  "button_example":
-  {
+  "button_example": {
     "items": [
       {
         "text": "Default",
-        "classes": "tertiary"
+        "variant": "tertiary"
       },
       {
         "text": "Hover",
-        "classes": "tertiary button-hover"
+        "variant": "tertiary",
+        "classes": "button-hover"
       },
       {
         "text": "Active",
-        "classes": "tertiary button-active"
+        "variant": "tertiary",
+        "classes": "button-active"
       },
       {
         "text": "Focus",
-        "classes": "tertiary focus"
+        "variant": "tertiary",
+        "classes": "focus"
       },
       {
         "text": "Disabled",
-        "classes": "tertiary",
+        "variant": "tertiary",
         "attributes": "disabled"
       }
     ]

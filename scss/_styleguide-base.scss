@@ -564,7 +564,7 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
   border: border(20);
 }
 
-code{
+code {
   background-color: color('gray-100');
   color: color('black');
 }
@@ -573,7 +573,10 @@ code,
 pre {
   font-family: monospace;
   line-height: units(4, 'rem');
-  code{
+  //overflow-x: auto;
+  //white-space: pre;
+
+  code {
     background-color: transparent;
   }
 }

@@ -60,15 +60,18 @@
       },
       "button_download": {
         "text": "Download kvittering som pdf",
-        "classes": "secondary d-print-none",
+        "variant": "secondary",
+        "classes": "d-print-none",
         "icon": "file-download"
       },
       "button_opret": {
         "text": "Opret ny ansøgning",
-        "classes": "secondary d-print-none mt-7"
+        "variant": "secondary",
+        "classes": "d-print-none mt-7"
       },
       "button_afslut": {
         "text": "Log ud og gå til forsiden",
-        "classes": "primary d-print-none mt-4"
+        "variant": "primary",
+        "classes": "d-print-none mt-4"
       }
 }

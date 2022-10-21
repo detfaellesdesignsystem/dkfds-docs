@@ -66,7 +66,8 @@
     },
     "button_print": {
       "text": "Udskriv kvittering",
-      "classes": "secondary d-print-none mb-4",
+      "variant": "secondary",
+      "classes": "d-print-none mb-4",
       "icon": "print"
     },
     "tidligere_registrering": [
@@ -95,6 +96,7 @@
     ],
     "button_done": {
       "text": "Log ud og gå til forsiden",
-      "classes": "primary d-print-none mt-4"
+      "variant": "primary",
+      "classes": "d-print-none mt-4"
     }
 }

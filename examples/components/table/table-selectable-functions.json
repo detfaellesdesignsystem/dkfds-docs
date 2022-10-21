@@ -18,17 +18,17 @@
     "actions": [
       {
         "text": "Download",
-        "classes": "primary",
+        "variant": "primary",
         "icon": "file-download"
       },
       {
         "text": "Duplikér",
-        "classes": "secondary",
+        "variant": "secondary",
         "icon": "content-copy"
       },
       {
         "text": "Slet",
-        "classes": "secondary",
+        "variant": "secondary",
         "icon": "trash-can"
       }
 

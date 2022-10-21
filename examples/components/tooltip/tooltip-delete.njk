@@ -1,6 +1,12 @@
-{% import "components/buttons/buttons.njk" as button %}
-{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/buttons/buttons.njk" import button as button %}
 
-<button class="js-tooltip button-unstyled" data-tooltip="Slet element">
-    {{ icon_svg({"name": 'trash-can'})}}<span class="sr-only">Slet</span>
-</button>
+{{ 
+    button({
+        "variant": "unstyled",
+        "srOnly": "Slet",
+        "icon": "trash-can",
+        "tooltip": {
+            "text": "Slet element"
+        }
+    }) 
+}}

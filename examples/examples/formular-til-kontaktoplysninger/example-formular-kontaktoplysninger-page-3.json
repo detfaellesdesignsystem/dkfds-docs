@@ -7,7 +7,7 @@
     },
     "logolink": {
       "sronly": "Portalnavn",
-      "href" : "#"
+      "href": "#"
     }
   },
   "solution_header_data": {
@@ -36,48 +36,65 @@
       "topLink": "#top"
     },
     "columns": [
-    {
-      "columnSize": 3,
-      "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
-    },
-    {
-      "columnSize": 3,
-      "classes": "d-print-none",
-      "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
-      "lists": [
       {
-        "inline": false,
-        "classes": "mt-0 mb-1 nobullet-list",
-        "items": [
-        {
-          "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"
-        },
-        {
-          "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"
-        }]
-      }]
-    },
-    {
-      "columnSize": 6,
-      "textAlignRight": false,
-      "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
-      "lists": [
+        "columnSize": 3,
+        "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
+      },
       {
-        "inline": false,
-        "classes": "d-print-none mt-0 nobullet-list",
-        "items": [
-        {
-          "content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"
-        },
-        {
-          "content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"
-        }]
-      }]
-    }]
+        "columnSize": 3,
+        "classes": "d-print-none",
+        "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
+        "lists": [
+          {
+            "inline": false,
+            "classes": "mt-0 mb-1 nobullet-list",
+            "items": [
+              {
+                "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"
+              },
+              {
+                "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "columnSize": 6,
+        "textAlignRight": false,
+        "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
+        "lists": [
+          {
+            "inline": false,
+            "classes": "d-print-none mt-0 nobullet-list",
+            "items": [
+              {
+                "content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"
+              },
+              {
+                "content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "alert_succes": {
     "classes": "alert-success",
     "heading": "Vi har modtaget dine oplysninger",
     "icon": true
+  },
+  "button_save": {
+    "variant": "secondary",
+    "text": "Gem som pdf",
+    "classes": "mt-6 d-print-none",
+    "icon": "file-download"
+  },
+  "button_print": {
+    "variant": "secondary",
+    "text": "Print",
+    "classes": "mt-4 d-print-none",
+    "icon": "print"
   }
 }

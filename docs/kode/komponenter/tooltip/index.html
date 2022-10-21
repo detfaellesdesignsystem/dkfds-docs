@@ -4457,8 +4457,9 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <button class="js-tooltip button-unstyled" data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
-    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#help"></use></svg><span class="sr-only">Hvad betyder det?</span>
+        <button class="button button-unstyled" type="button" data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
+    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#help"></use></svg>
+    <span class="sr-only">Hvad betyder det?</span>
 </button>
         
     </div>
@@ -4479,10 +4480,10 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;js-tooltip button-unstyled&quot;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-unstyled&quot; type=&quot;button&quot;
     data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-trigger=&quot;click&quot;&gt;
-    &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
-        class=&quot;sr-only&quot;&gt;Hvad betyder det?&lt;/span&gt;
+    &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Hvad betyder det?&lt;/span&gt;
 &lt;/button&gt;</code></pre></figure>
 
 
@@ -4508,9 +4509,9 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;js-tooltip button-unstyled&quot; data-tooltip=&quot;Slet element&quot;&gt;
-    &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#trash-can&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
-        class=&quot;sr-only&quot;&gt;Slet&lt;/span&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-unstyled&quot; data-tooltip=&quot;Slet element&quot;&gt;
+    &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#trash-can&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Slet&lt;/span&gt;
 &lt;/button&gt;</code></pre></figure>
 
 
@@ -4534,7 +4535,7 @@ Tilføj attributten <code>data-tooltip-trigger="click"</code> på knappen for at
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Her er der &lt;a href=&quot;javascript:void(0)&quot; class=&quot;js-tooltip tooltip-link&quot;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Her er der &lt;a href=&quot;javascript:void(0)&quot; class=&quot;tooltip-link&quot;
         data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-trigger=&quot;click&quot;&gt;ord
         med tooltip&lt;/a&gt; inde i en tekst&lt;/p&gt;</code></pre></figure>
 
@@ -4556,8 +4557,7 @@ Tilføj attributten <code>data-tooltip-trigger="click"</code> på knappen for at
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-primary js-tooltip&quot;
-    data-tooltip=&quot;Dette er et tooltip&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-primary&quot; data-tooltip=&quot;Dette er et tooltip&quot;&gt;
     Knap med tooltip
 &lt;/button&gt;</code></pre></figure>
 
@@ -4580,14 +4580,14 @@ Tilføj attributten <code>data-tooltip-trigger="click"</code> på knappen for at
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;!-- Placering: top --&gt;
-&lt;button class=&quot;button button-primary js-tooltip&quot;
-    data-tooltip-position=&quot;top&quot; data-tooltip=&quot;Top tooltip&quot;&gt;
+&lt;button class=&quot;button button-primary&quot; data-tooltip=&quot;Top tooltip&quot;
+    data-tooltip-position=&quot;top&quot;&gt;
     Top
 &lt;/button&gt;
 
 &lt;!-- Placering: bund --&gt;
-&lt;button class=&quot;button button-primary js-tooltip&quot;
-    data-tooltip-position=&quot;bottom&quot; data-tooltip=&quot;Bund tooltip&quot;&gt;
+&lt;button class=&quot;button button-primary&quot; data-tooltip=&quot;Bund tooltip&quot;
+    data-tooltip-position=&quot;bottom&quot;&gt;
     Bund
 &lt;/button&gt;</code></pre></figure>
 

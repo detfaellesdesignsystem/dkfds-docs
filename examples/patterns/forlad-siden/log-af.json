@@ -9,7 +9,7 @@
     },
     "button_example": {
       "text": "Åbn modal",
-      "classes": "tertiary",
+      "variant": "tertiary",
       "attributes": "data-module=\"modal\" data-target=\"example-log-off\""
     }
   }

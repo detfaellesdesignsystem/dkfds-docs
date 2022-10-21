@@ -70,8 +70,11 @@ tags:
 - 8.0.1
 - 8.1.0
 - 8.2.0
+- 9.0.0
 anchor: true
 subnav:
+- text: Version 9.0.0
+  href: "#version-9-0-0"
 - text: Version 8.2.0
   href: "#version-8-2-0"
 - text: Version 8.1.0
@@ -92,14 +95,8 @@ subnav:
   href: "#version-7-4-0"
 - text: Version 7.3.0
   href: "#version-7-3-0"
-- text: Version 7.2.0
-  href: "#version-7-2-0"
-- text: Version 7.1.1
-  href: "#version-7-1-1"
-- text: Version 7.1.0
-  href: "#version-7-1-0"
 - text: Tidligere versioner
-  href: "#version-7-0-0"
+  href: "#version-7-2-0"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 
@@ -126,12 +123,22 @@ Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagu
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
 
+{:#version-9-0-0 .mb-0}
+## Version 9.0.0
+<div><span class="small-text mt-0 d-block">xx-xx-xxxx</span></div>
+
+- <span class="badge badge-success badge-small mr-2">New</span> Oprettet tooltip macro.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret button-macro. Macroen kræver nu at man angiver en variant og der er kommet mulighed for at tilføje tooltip.
+- <span class="badge badge-info badge-small mr-2">Change</span> Opdateret label-macro. Tooltip placeres nu korrekt.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret select-macro. Label skal nu ikke længere gives med som et objekt.
+- Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for at JavaScripten fungerer.
+
 {:#version-8-2-0 .mb-0}
 ## Version 8.2.0
 
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
-- <span class="badge badge-success badge-small mr-3">New</span> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/datovaelger/">datovælger</a>.
+- <span class="badge badge-success badge-small mr-2">New</span> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/datovaelger/">datovælger</a>.
 - <span class="badge badge-info badge-small mr-2">Change</span> Ændret aria-attributter for <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.
 - <span class="badge badge-info badge-small mr-2">Change</span> Ændret placeringen af <a href="/komponenter/toastbesked/">toastbeskeder</a>, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.
 - Tilføjet `cursor:pointer` til <a href="/komponenter/toastbesked/">toastbeskeders</a> luk-knap.
@@ -144,8 +151,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">28-09-2022</span></div>
 
-- <span class="badge badge-success badge-small mr-3">New</span> Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a>
-- <span class="badge badge-success badge-small mr-3">New</span> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
+- <span class="badge badge-success badge-small mr-2">New</span> Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a>
+- <span class="badge badge-success badge-small mr-2">New</span> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
 - Tilføjet manglende padding i venstre side af overflow-menupunkter i <a href="/komponenter/header/#kompleks-header-med-alle-r%C3%A6kker">headerens</a> række 3
 - Rettet fejl hvor <a href="/komponenter/skip-link/">skip-links</a> ikke blev vist, når der var zoomet ca. 400% ind i browseren
 - Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3

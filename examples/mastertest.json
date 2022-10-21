@@ -1,5 +1,5 @@
 {
-    "select_example": {
+    "mastertest_data": {
         "name": "options",
         "id": "options",
         "label": "Dropdown label (select)",

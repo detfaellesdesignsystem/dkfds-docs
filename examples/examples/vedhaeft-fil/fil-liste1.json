@@ -99,6 +99,12 @@
     "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a class=\"function-link\" href=\"#fileinput\">Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</a></li><li><a class=\"function-link\" href=\"#options2\">Vælg et navn til dokumentet Fuldmagt_88.pdf</a></li></ul>",
     "contentContainer": false,
     "role": "alert"
+  },
+  "button_next": {
+    "text": "Næste",
+    "variant": "primary",
+    "classes": "d-print-none mt-7",
+    "attributes": "type=\"button\""
   }
 }
 

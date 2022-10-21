@@ -96,15 +96,18 @@
       },
       "button_myndigheden": {
         "text": "Skriv til <Myndigheden>",
-        "classes": "tertiary d-print-none"
+        "variant": "tertiary",
+        "classes": "d-print-none"
       },
       "button_adgang": {
         "text": "Giv adgang",
-        "classes": "tertiary d-print-none"
+        "variant": "tertiary",
+        "classes": "d-print-none"
       },
       "button_fuldmagt": {
         "text": "Giv fuldmagt",
-        "classes": "tertiary d-print-none"
+        "variant": "tertiary",
+        "classes": "d-print-none"
       },
       "breadcrumbs_data_desktop": {
         "classes": "",
