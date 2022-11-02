@@ -1,0 +1,36 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+{% set radiogroupContent1 %}
+{{textinput({ "id":"textinput1", "label":{ "text":"Inputfelt med label" }, "classes":"input-width-m", "name":"text1"})}}
+{% endset %}
+
+{% set radiogroupContent2 %}
+{{textinput({ "id":"textinput2", "label":{ "text":"Inputfelt med anden label" }, "classes":"input-width-m", "name":"text2"})}}
+{% endset %}
+
+{{ 
+    radiobuttons({
+        "id": "radiogroup",
+        "groupname": "radiogroup-collapse",
+        "radiogroupLegend": "Vælg en radioknap",
+        "collapsedItems": true,
+        "items": [
+            {
+                "id": "radio-collapse-1",
+                "value": "1",
+                "checked": true,
+                "label": "Radioknap viser indhold",
+                "srOnly": "Udfyld informationer herunder",
+                "hiddenContent": radiogroupContent1
+            },
+            {
+                "id": "radio-collapse-2",
+                "value": "2",
+                "label": "Radioknap viser andet indhold",
+                "srOnly": "Udfyld informationer herunder",
+                "hiddenContent": radiogroupContent2
+            }
+        ]
+    })
+}}

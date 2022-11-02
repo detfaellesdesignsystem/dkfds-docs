@@ -1,5 +1,5 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
@@ -32,15 +32,23 @@
         "classes":"input-width-s",
         "name":"telefon"})}}
 
-    <div class="form-group">
-        <fieldset>
-            <legend class="form-label">Hvordan vil du helst kontaktes?</legend>
-            <ul class="nobullet-list">
-              <li>{{ radiobutton(radiobutton_telefon) }}</li>
-              <li>{{ radiobutton(radiobutton_email) }}</li>
-            </ul>
-        </fieldset>
-    </div>
+    {{ radiobuttons({
+            "radiogroupLegend": "Hvordan vil du helst kontaktes?",
+            "groupname": "kontakt",
+            "items": [
+                {
+                    "id": "kontakt-telefon",
+                    "value": "telefon",
+                    "label": "Pr. telefon"
+                },
+                {
+                    "id": "kontakt-email",
+                    "value": "email",
+                    "label": "Pr. e-mail"
+                }
+            ]
+        })
+    }}
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</legend>
@@ -82,15 +90,23 @@
             <!-- Felt slut: Fødselsdato -->
 
             <!-- Felt start: Odense -->
-            <div class="form-group">
-                <fieldset>
-                    <legend class="h5">Bor du i Odense?</legend>
-                    <ul class="nobullet-list">
-                      <li>{{ radiobutton(radiobutton_odense_ja) }}</li>
-                      <li>{{ radiobutton(radiobutton_odense_nej) }}</li>
-                    </ul>
-                </fieldset>
-            </div>
+            {{ radiobuttons({
+                    "radiogroupLegend": "Bor du i Odense?",
+                    "groupname": "odense",
+                    "items": [
+                        {
+                            "id": "odense-ja",
+                            "value": "ja",
+                            "label": "Ja"
+                        },
+                        {
+                            "id": "odense-nej",
+                            "value": "nej",
+                            "label": "Nej"
+                        }
+                    ]
+                })
+            }}
             <!-- Felt slut: Odense -->
         </fieldset>
     </div>

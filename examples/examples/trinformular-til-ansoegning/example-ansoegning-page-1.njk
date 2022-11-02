@@ -6,7 +6,7 @@
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
 {% block header %}
@@ -81,24 +81,38 @@
     <h1>Oplysninger om ansøger</h1>
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/">
         {{ textinput(input_ansoeger) }}
-        <div class="js-radio-toggle-group mt-6">
-            <fieldset>
-                <legend class="form-label">Jeg ansøger som</legend>
-                <ul class="nobullet-list">
-                    <li>{{ radiobutton(radiobutton1_data) }}</li>
-                    <li>{{ radiobutton(radiobutton2_data) }}
-                        <div id="collapse-radio2" aria-hidden="true" class="radio-content radio-content-large">
-                            {{ textinput(input_CPR) }}
-                        </div>
-                    </li>
-                    <li>{{ radiobutton(radiobutton3_data) }}
-                        <div id="collapse-radio3" aria-hidden="true" class="radio-content radio-content-large">
-                            {{ textinput(input_CVR) }}
-                        </div>
-                    </li>
-                </ul>
-            </fieldset>
-        </div>
+        {% set radioContentCPR %} {{ textinput(input_CPR) }} {% endset %}
+        {% set radioContentCVR %} {{ textinput(input_CVR) }} {% endset %}
+        {{ radiobuttons({
+                "id": "radiogroup-ansoeger-som",
+                "groupname": "radiogroup-ansoeger",
+                "radiogroupLegend": "Jeg ansøger som",
+                "classes": "mt-6",
+                "collapsedItems": true,
+                "items": [
+                    {
+                        "id": "id-radio1",
+                        "value": "1",
+                        "label": "Privatperson"
+                    },
+                    {
+                        "id": "id-radio2",
+                        "value": "2",
+                        "label": "Repræsentant for anden person",
+                        "srOnly": "Udfyld informationer herunder",
+                        "hiddenContent": radioContentCPR
+                    },
+                    {
+                        "id": "id-radio3",
+                        "value": "3",
+                        "label": "Repræsentant for virksomhed",
+                        "srOnly": "Udfyld informationer herunder",
+                        "hiddenContent": radioContentCVR
+                    }
+                ]
+            })
+        }}
+
         {{ button(button_next) }}
     </form>
 </main>

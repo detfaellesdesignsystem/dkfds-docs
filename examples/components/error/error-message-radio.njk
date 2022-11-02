@@ -1,10 +1,27 @@
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
-<div class="form-group form-error">
-    <fieldset aria-describedby="example-radiobutton-error">
-        <legend class="h5">Sagen handler om</legend>
-        <span class="form-error-message" id="example-radiobutton-error"><span class="sr-only">Fejl:</span> Vælg hvad sagen handler om</span>
-        <ul class="nobullet-list">
-            {% for item in radiobuttons_error_example.items %}<li>{{ radiobutton(item) }}</li>{% endfor %}
-        </ul>
-    </fieldset>
-</div>
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+{{
+    radiobuttons({
+        "id": "radiogroup-error",
+        "groupname": "sagen-omhandler",
+        "radiogroupLegend": "Sagen handler om",
+        "errorMessage": "Vælg hvad sagen handler om",
+        "items": [
+            {
+                "id": "sagen-omhandler-ulykkesforsikring",
+                "value": "ulykkesforsikring",
+                "label": "Ulykkesforsikring"
+            },
+            {
+                "id": "sagen-omhandler-erstatningsansvar",
+                "value": "erstatningsansvar",
+                "label": "Erstatningsansvar"
+            },
+            {
+                "id": "sagen-omhandler-forsikringsselskab",
+                "value": "forsikringsselskab",
+                "label": "Forsikringsselskab"
+            }
+        ]
+    })
+}}

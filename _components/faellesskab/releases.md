@@ -127,11 +127,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 9.0.0
 <div><span class="small-text mt-0 d-block">xx-xx-xxxx</span></div>
 
-- <span class="badge badge-success badge-small mr-2">New</span> Oprettet tooltip macro.
-- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret button-macro. Macroen kræver nu at man angiver en variant og der er kommet mulighed for at tilføje tooltip.
-- <span class="badge badge-info badge-small mr-2">Change</span> Opdateret label-macro. Tooltip placeres nu korrekt.
-- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret select-macro. Label skal nu ikke længere gives med som et objekt.
-- Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for at JavaScripten fungerer.
+- <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip og radiobuttons.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button og select. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.
+- Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.
 
 {:#version-8-2-0 .mb-0}
 ## Version 8.2.0

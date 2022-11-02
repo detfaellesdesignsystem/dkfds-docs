@@ -46,25 +46,25 @@
         }
       },
       "radiobuttons_ansoegning": {
-        "items": [{
-          "id": "ansoegning1",
-          "name": "ansoegning",
-          "value": "ABC",
-          "label": "Lorem ipsum dolor (§ABC)",
-          "large": true
-        },{
-          "id": "ansoegning2",
-          "name": "ansoegning",
-          "value": "DEF",
-          "label": "Sit amet (§DEF)",
-          "large": true
-        },{
-          "id": "ansoegning3",
-          "name": "ansoegning",
-          "value": "GHI",
-          "label": "Consectetur adipiscing elit (§GHI)",
-          "large": true
-        }
+        "id": "radiobuttons-ansoegning",
+        "radiogroupLegend": "Der ansøges om",
+        "groupname": "ansoegning",
+        "items": [
+            {
+                "id": "ansoegning1",
+                "value": "ABC",
+                "label": "Lorem ipsum dolor (§ABC)"
+            },
+            {
+                "id": "ansoegning2",
+                "value": "DEF",
+                "label": "Sit amet (§DEF)"
+            },
+            {
+                "id": "ansoegning3",
+                "value": "GHI",
+                "label": "Consectetur adipiscing elit (§GHI)"
+            }
         ]
       },
       "textarea_data": {

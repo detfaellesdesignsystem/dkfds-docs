@@ -7,7 +7,7 @@
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
@@ -59,15 +59,7 @@
               {{ textinput(input_COadresse) }}
               {{ textinput(input_telefonnummer) }}
               {{ textinput(input_email) }}
-              <div class="form-group form-error">
-                <fieldset aria-describedby="radiobutton-error">
-                  <legend class="form-label">Alder</legend>
-                  <span class="form-error-message" id="radiobutton-error"><span class="sr-only">Fejl:</span> Angiv din alder. Vi skal bruge den til dit og dat.</span>
-                  <ul class="nobullet-list">
-                  {% for item in radiobuttons_alder.items %}<li>{{ radiobutton(item) }}</li>{% endfor %}
-                  </ul>
-                </fieldset>
-              </div>
+              {{ radiobuttons(radiobuttons_alder) }}
               {{ button(button_next) }}
             </div>
           </div>

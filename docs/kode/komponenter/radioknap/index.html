@@ -3984,15 +3984,6 @@
 
 
 <li class=" " role="none">
-<a href="#lille-radioknap"  role="menuitem">Lille radioknap</a>
-</li>
-
-    
-
-    
-
-
-<li class=" " role="none">
 <a href="#skjult-indhold"  role="menuitem">Skjult indhold (Collapse)</a>
 </li>
 
@@ -4426,7 +4417,6 @@
           
           <ul class="d-lg-none nobullet-list">
           <li><a href="#hjaelpetekst">Hjælpetekst</a></li>
-          <li><a href="#lille-radioknap">Lille radioknap</a></li>
           <li><a href="#skjult-indhold">Skjult indhold (Collapse)</a></li>
           
           </ul>
@@ -4447,22 +4437,24 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group">
+        <div class="form-group" id="radiogroup-1">
     <fieldset>
         <legend class="form-label">Liste med radioknapper</legend>
         <ul class="nobullet-list">
             <li>
                 <div class="form-group-radio">
-                    <input id="radio-1" type="radio" name="radio" value="v1" class="form-radio radio-large " />
-                    <label for="radio-1" id="form-label-radio-1" class="">Valg 1 </label>
-
+                    <input type="radio" id="radio-1" name="radio-example-1" value="v1" class="form-radio" />
+                    <label class="form-label" for="radio-1" id="radio-1-form-label">
+                        Valg 1
+                    </label>
                 </div>
             </li>
             <li>
                 <div class="form-group-radio">
-                    <input id="radio-2" type="radio" name="radio" value="v2" class="form-radio radio-large " />
-                    <label for="radio-2" id="form-label-radio-2" class="">Valg 2 </label>
-
+                    <input type="radio" id="radio-2" name="radio-example-1" value="v2" class="form-radio" />
+                    <label class="form-label" for="radio-2" id="radio-2-form-label">
+                        Valg 2
+                    </label>
                 </div>
             </li>
         </ul>
@@ -4487,26 +4479,28 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot; id=&quot;radiogroup-1&quot;&gt;
     &lt;fieldset&gt;
         &lt;legend class=&quot;form-label&quot;&gt;Liste med radioknapper&lt;/legend&gt;
         &lt;ul class=&quot;nobullet-list&quot;&gt;
             &lt;li&gt;
                 &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;radio-1&quot; type=&quot;radio&quot; name=&quot;radio&quot;
-                        value=&quot;v1&quot; class=&quot;form-radio radio-large &quot; /&gt;
-                    &lt;label for=&quot;radio-1&quot; id=&quot;form-label-radio-1&quot;
-                        class=&quot;&quot;&gt;Valg 1 &lt;/label&gt;
-
+                    &lt;input type=&quot;radio&quot; id=&quot;radio-1&quot; name=&quot;radio-example-1&quot;
+                        value=&quot;v1&quot; class=&quot;form-radio&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;radio-1&quot;
+                        id=&quot;radio-1-form-label&quot;&gt;
+                        Valg 1
+                    &lt;/label&gt;
                 &lt;/div&gt;
             &lt;/li&gt;
             &lt;li&gt;
                 &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;radio-2&quot; type=&quot;radio&quot; name=&quot;radio&quot;
-                        value=&quot;v2&quot; class=&quot;form-radio radio-large &quot; /&gt;
-                    &lt;label for=&quot;radio-2&quot; id=&quot;form-label-radio-2&quot;
-                        class=&quot;&quot;&gt;Valg 2 &lt;/label&gt;
-
+                    &lt;input type=&quot;radio&quot; id=&quot;radio-2&quot; name=&quot;radio-example-1&quot;
+                        value=&quot;v2&quot; class=&quot;form-radio&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;radio-2&quot;
+                        id=&quot;radio-2-form-label&quot;&gt;
+                        Valg 2
+                    &lt;/label&gt;
                 &lt;/div&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
@@ -4539,78 +4533,38 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot; id=&quot;radiogroup-helptext&quot;&gt;
     &lt;fieldset&gt;
-        &lt;legend class=&quot;form-label&quot;&gt;Radioknap med hjælpetekst&lt;/legend&gt;
+        &lt;legend class=&quot;form-label&quot;&gt;Radioknapper med hjælpetekst&lt;/legend&gt;
         &lt;ul class=&quot;nobullet-list&quot;&gt;
             &lt;li&gt;
                 &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;radio-helptext-1&quot; type=&quot;radio&quot;
+                    &lt;input type=&quot;radio&quot; id=&quot;radio-helptext-1&quot;
                         name=&quot;radio-helptext&quot; value=&quot;v1&quot;
-                        aria-labelledby=&quot;form-label-radio-helptext-1 helptext-radio-helptext-1&quot;
-                        class=&quot;form-radio radio-large &quot; /&gt;
-                    &lt;label for=&quot;radio-helptext-1&quot;
-                        id=&quot;form-label-radio-helptext-1&quot; class=&quot;&quot;&gt;Valg 1
+                        aria-describedby=&quot;radio-helptext-1-helptext&quot;
+                        class=&quot;form-radio&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;radio-helptext-1&quot;
+                        id=&quot;radio-helptext-1-form-label&quot;&gt;
+                        Valg 1
                     &lt;/label&gt;
                     &lt;span class=&quot;form-hint&quot;
-                        id=&quot;helptext-radio-helptext-1&quot;&gt;Dette er en
+                        id=&quot;radio-helptext-1-helptext&quot;&gt;Dette er en
                         hjælpetekst&lt;/span&gt;
                 &lt;/div&gt;
             &lt;/li&gt;
             &lt;li&gt;
                 &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;radio-helptext-2&quot; type=&quot;radio&quot;
+                    &lt;input type=&quot;radio&quot; id=&quot;radio-helptext-2&quot;
                         name=&quot;radio-helptext&quot; value=&quot;v2&quot;
-                        aria-labelledby=&quot;form-label-radio-helptext-2 helptext-radio-helptext-2&quot;
-                        class=&quot;form-radio radio-large &quot; /&gt;
-                    &lt;label for=&quot;radio-helptext-2&quot;
-                        id=&quot;form-label-radio-helptext-2&quot; class=&quot;&quot;&gt;Valg 2
+                        aria-describedby=&quot;radio-helptext-2-helptext&quot;
+                        class=&quot;form-radio&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;radio-helptext-2&quot;
+                        id=&quot;radio-helptext-2-form-label&quot;&gt;
+                        Valg 2
                     &lt;/label&gt;
                     &lt;span class=&quot;form-hint&quot;
-                        id=&quot;helptext-radio-helptext-2&quot;&gt;Dette er en
+                        id=&quot;radio-helptext-2-helptext&quot;&gt;Dette er en
                         hjælpetekst&lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/fieldset&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
-<h3 id="lille-radioknap">Lille radioknap</h3>
-
-<div class="component-preview component-preview-code  component-code-radiobutton-small" aria-label="">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/radiobutton-small/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: radiobutton-small</span></a>
-        
-    </div>
-    
-    <div class="component-code" aria-label="Kodeeksempel">
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;fieldset&gt;
-        &lt;legend class=&quot;form-label&quot;&gt;Lille radioknap&lt;/legend&gt;
-        &lt;ul class=&quot;nobullet-list&quot;&gt;
-            &lt;li&gt;
-                &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;smallradio1&quot; type=&quot;radio&quot; name=&quot;smallradio&quot;
-                        value=&quot;1&quot; class=&quot;form-radio  &quot; /&gt;
-                    &lt;label for=&quot;smallradio1&quot; id=&quot;form-label-smallradio1&quot;
-                        class=&quot;&quot;&gt;Valg 1 &lt;/label&gt;
-
-                &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;smallradio2&quot; type=&quot;radio&quot; name=&quot;smallradio&quot;
-                        value=&quot;0&quot; class=&quot;form-radio  &quot; /&gt;
-                    &lt;label for=&quot;smallradio2&quot; id=&quot;form-label-smallradio2&quot;
-                        class=&quot;&quot;&gt;Valg 2 &lt;/label&gt;
-
                 &lt;/div&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
@@ -4633,25 +4587,26 @@
     
     <div class="component-code" aria-label="Kodeeksempel">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;js-radio-toggle-group&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group js-radio-toggle-group&quot; id=&quot;radiogroup&quot;&gt;
     &lt;fieldset&gt;
         &lt;legend class=&quot;form-label&quot;&gt;Vælg en radioknap&lt;/legend&gt;
         &lt;ul class=&quot;nobullet-list&quot;&gt;
             &lt;li&gt;
                 &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;id-radio1&quot; type=&quot;radio&quot; name=&quot;radio-group1&quot;
-                        value=&quot;1&quot; class=&quot;form-radio radio-large &quot; checked
-                        data-controls=&quot;#collapse-radio1&quot;
-                        data-expanded=&quot;false&quot; /&gt;
-                    &lt;label for=&quot;id-radio1&quot; id=&quot;form-label-id-radio1&quot;
-                        class=&quot;&quot;&gt;Radioknap viser indhold &lt;span
-                            class=&quot;sr-only&quot;&gt;Udfyld informationer
-                            herunder&lt;/span&gt;&lt;/label&gt;
-
+                    &lt;input type=&quot;radio&quot; id=&quot;radio-collapse-1&quot;
+                        name=&quot;radiogroup-collapse&quot; value=&quot;1&quot;
+                        class=&quot;form-radio&quot; checked
+                        data-controls=&quot;#radio-collapse-1-collapse&quot;
+                        data-expanded=&quot;true&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;radio-collapse-1&quot;
+                        id=&quot;radio-collapse-1-form-label&quot;&gt;
+                        Radioknap viser indhold&lt;span class=&quot;sr-only&quot;&gt;
+                            Udfyld informationer herunder&lt;/span&gt;
+                    &lt;/label&gt;
                 &lt;/div&gt;
+                &lt;div id=&quot;radio-collapse-1-collapse&quot; aria-hidden=&quot;false&quot;
+                    class=&quot;radio-content&quot;&gt;
 
-                &lt;div id=&quot;collapse-radio1&quot; aria-hidden=&quot;true&quot;
-                    class=&quot;radio-content radio-content-large&quot;&gt;
                     &lt;div class=&quot;form-group&quot;&gt;
 
                         &lt;label class=&quot;form-label&quot; for=&quot;textinput1&quot;&gt;
@@ -4663,23 +4618,25 @@
                             required /&gt;
 
                     &lt;/div&gt;
+
                 &lt;/div&gt;
             &lt;/li&gt;
             &lt;li&gt;
                 &lt;div class=&quot;form-group-radio&quot;&gt;
-                    &lt;input id=&quot;id-radio2&quot; type=&quot;radio&quot; name=&quot;radio-group1&quot;
-                        value=&quot;2&quot; class=&quot;form-radio radio-large &quot;
-                        data-controls=&quot;#collapse-radio2&quot;
-                        data-expanded=&quot;false&quot; /&gt;
-                    &lt;label for=&quot;id-radio2&quot; id=&quot;form-label-id-radio2&quot;
-                        class=&quot;&quot;&gt;Radioknap viser andet indhold &lt;span
-                            class=&quot;sr-only&quot;&gt;Udfyld informationer
-                            herunder&lt;/span&gt;&lt;/label&gt;
-
+                    &lt;input type=&quot;radio&quot; id=&quot;radio-collapse-2&quot;
+                        name=&quot;radiogroup-collapse&quot; value=&quot;2&quot;
+                        class=&quot;form-radio&quot;
+                        data-controls=&quot;#radio-collapse-2-collapse&quot;
+                        data-expanded=&quot;false&quot;&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;radio-collapse-2&quot;
+                        id=&quot;radio-collapse-2-form-label&quot;&gt;
+                        Radioknap viser andet indhold&lt;span class=&quot;sr-only&quot;&gt;
+                            Udfyld informationer herunder&lt;/span&gt;
+                    &lt;/label&gt;
                 &lt;/div&gt;
+                &lt;div id=&quot;radio-collapse-2-collapse&quot; aria-hidden=&quot;true&quot;
+                    class=&quot;radio-content&quot;&gt;
 
-                &lt;div id=&quot;collapse-radio2&quot; aria-hidden=&quot;true&quot;
-                    class=&quot;radio-content radio-content-large&quot;&gt;
                     &lt;div class=&quot;form-group&quot;&gt;
 
                         &lt;label class=&quot;form-label&quot; for=&quot;textinput2&quot;&gt;
@@ -4691,6 +4648,7 @@
                             required /&gt;
 
                     &lt;/div&gt;
+
                 &lt;/div&gt;
             &lt;/li&gt;
         &lt;/ul&gt;

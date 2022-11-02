@@ -54,31 +54,6 @@
         "value": "Kirsten Mønster Jensen",
         "readonly": true
       },
-      "radiobutton1_data": {
-        "id": "id-radio1",
-        "name": "radio-group1",
-        "value": "1",
-        "label": "Privatperson",
-        "large": true
-    },
-      "radiobutton2_data": {
-        "id": "id-radio2",
-        "name": "radio-group1",
-        "value": "2",
-        "label": "Repræsentant for anden person",
-        "large": true,
-        "inputAttributes": "data-controls=\"#collapse-radio2\" data-expanded=\"false\"",
-        "srOnly": "Udfyld informationer herunder"
-    },
-    "radiobutton3_data": {
-        "id": "id-radio3",
-        "name": "radio-group1",
-        "value": "3",
-        "label": "Repræsentant for virksomhed",
-        "large": true,
-        "inputAttributes": "data-controls=\"#collapse-radio3\" data-expanded=\"false\"",
-        "srOnly": "Udfyld informationer herunder"
-    },
     "input_CPR": {
         "id": "input-CPR",
         "name": "CPR",

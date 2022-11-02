@@ -6,7 +6,7 @@
 
 {% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
 {% from "components/buttons/buttons.njk" import button as button %}
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/form/controls/date-input.njk" import datoinput as dateinput %}
 
@@ -63,19 +63,28 @@
       <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/" class="back-link">Tilbage</a></div>
       <h1 class="mb-6">Tidligere registrering</h1>
       <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-        <div class="js-radio-toggle-group">
-          <fieldset>
-              <legend class="form-label">Har du tidligere lavet en lignende registrering?</legend>
-              <ul class="nobullet-list">
-                  <li>{{ radiobutton(radiobutton1_data) }}
-                      <div id="collapse-radio1" aria-hidden="true" class="radio-content radio-content-large">
-                          {{ textinput(textinput_data) }}
-                          {{ dateinput(dateinput_data) }}
-                      </div></li>
-                  <li>{{ radiobutton(radiobutton2_data) }}</li>
-              </ul>
-          </fieldset>
-        </div>
+        {% set radioTidligereRegistrering %} {{ textinput(textinput_data) }} {{ dateinput(dateinput_data) }} {% endset %}
+        {{ radiobuttons({
+            "id": "radiogroup-lignende-registrering",
+            "groupname": "radio-group",
+            "radiogroupLegend": "Har du tidligere lavet en lignende registrering?",
+            "collapsedItems": true,
+            "items": [
+              {
+                  "id": "id-radio1",
+                  "value": "1",
+                  "label": "Ja",
+                  "srOnly": "Udfyld informationer herunder",
+                  "hiddenContent": radioTidligereRegistrering
+              },
+              {
+                  "id": "id-radio2",
+                  "value": "2",
+                  "label": "Nej"
+              }
+            ]
+          })
+        }}
         {{ button(button_next) }}
       </form>
     </main>

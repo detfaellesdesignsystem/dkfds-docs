@@ -164,37 +164,36 @@
       "errorMessage": "Angiv din e-mail fx eksempel@mail.dk"
     },
     "radiobuttons_alder": {
-      "items": [{
-        "id": "alder1",
-        "name": "alder",
-        "value": "Under 18",
-        "label": "Under 18",
-        "large": true
-      },{
-        "id": "alder2",
-        "name": "alder",
-        "value": "18-29",
-        "label": "18-29",
-        "large": true
-      },{
-        "id": "alder3",
-        "name": "alder",
-        "value": "30-39",
-        "label": "30-39",
-        "large": true
-      },{
-        "id": "alder4",
-        "name": "alder",
-        "value": "40-59",
-        "label": "40-59",
-        "large": true
-      },{
-        "id": "alder5",
-        "name": "alder",
-        "value": "60 eller ældre",
-        "label": "60 eller ældre",
-        "large": true
-      }
+      "id": "radiobuttons-alder",
+      "radiogroupLegend": "Alder",
+      "groupname": "alder",
+      "errorMessage": "Angiv din alder. Vi skal bruge den til dit og dat.",
+      "items": [
+        {
+          "id": "alder1",
+          "value": "Under 18",
+          "label": "Under 18"
+        },
+        {
+          "id": "alder2",
+          "value": "18-29",
+          "label": "18-29"
+        },
+        {
+          "id": "alder3",
+          "value": "30-39",
+          "label": "30-39"
+        },
+        {
+          "id": "alder4",
+          "value": "40-59",
+          "label": "40-59"
+        },
+        {
+          "id": "alder5",
+          "value": "60 eller ældre",
+          "label": "60 eller ældre"
+        }
       ]
     },
     "button_next": {

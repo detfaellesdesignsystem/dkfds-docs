@@ -189,30 +189,30 @@
             <h1 class="mb-6">Tidligere registrering</h1>
             <form novalidate method="post"
                 action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-                <div class="js-radio-toggle-group">
+
+                <div class="form-group js-radio-toggle-group"
+                    id="radiogroup-lignende-registrering">
                     <fieldset>
                         <legend class="form-label">Har du tidligere lavet
                             en lignende registrering?</legend>
                         <ul class="nobullet-list">
                             <li>
                                 <div class="form-group-radio">
-                                    <input id="id-radio1" type="radio"
+                                    <input type="radio" id="id-radio1"
                                         name="radio-group" value="1"
-                                        class="form-radio radio-large "
-                                        data-controls="#collapse-radio1"
-                                        data-expanded="false" />
-                                    <label for="id-radio1"
-                                        id="form-label-id-radio1"
-                                        class="">Ja <span
-                                            class="sr-only">Udfyld
-                                            informationer
-                                            herunder</span></label>
-
+                                        class="form-radio"
+                                        data-controls="#id-radio1-collapse"
+                                        data-expanded="false">
+                                    <label class="form-label"
+                                        for="id-radio1"
+                                        id="id-radio1-form-label">
+                                        Ja<span class="sr-only"> Udfyld
+                                            informationer herunder</span>
+                                    </label>
                                 </div>
-
-                                <div id="collapse-radio1"
+                                <div id="id-radio1-collapse"
                                     aria-hidden="true"
-                                    class="radio-content radio-content-large">
+                                    class="radio-content">
                                     <div class="form-group">
 
                                         <label class="form-label"
@@ -226,7 +226,6 @@
                                             type="text" required />
 
                                     </div>
-
                                     <div class="form-group  ">
                                         <fieldset
                                             aria-describedby="example-date-field-hint ">
@@ -298,18 +297,20 @@
                             </li>
                             <li>
                                 <div class="form-group-radio">
-                                    <input id="id-radio2" type="radio"
+                                    <input type="radio" id="id-radio2"
                                         name="radio-group" value="2"
-                                        class="form-radio radio-large " />
-                                    <label for="id-radio2"
-                                        id="form-label-id-radio2"
-                                        class="">Nej </label>
-
+                                        class="form-radio">
+                                    <label class="form-label"
+                                        for="id-radio2"
+                                        id="id-radio2-form-label">
+                                        Nej
+                                    </label>
                                 </div>
                             </li>
                         </ul>
                     </fieldset>
                 </div>
+
                 <button class="button button-primary d-print-none mt-7"
                     type='submit'>
                     Næste

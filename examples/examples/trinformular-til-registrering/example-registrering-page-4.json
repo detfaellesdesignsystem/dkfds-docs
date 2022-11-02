@@ -90,23 +90,6 @@
           }
         ]
       },
-      "radiobutton1_data": {
-        "id": "id-radio1",
-        "name": "radio-group",
-        "value": "1",
-        "label": "Ja",
-        "large": true,
-        "inputAttributes": "data-controls=\"#collapse-radio1\" data-expanded=\"false\"",
-        "srOnly": "Udfyld informationer herunder"
-    },
-    "radiobutton2_data": {
-        "id": "id-radio2",
-        "name": "radio-group",
-        "value": "2",
-        "checked": false,
-        "label": "Nej",
-        "large": true
-    },
     "textinput_data": {
       "id": "input-case",
       "name": "case",

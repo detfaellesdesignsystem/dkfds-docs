@@ -6,7 +6,7 @@
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 {% from "components/form/controls/text-area.njk" import textarea as textarea %}
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
 {% block header %}
@@ -87,14 +87,7 @@
     }}
     <h1>Ansøgningens type</h1>
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/">
-      <div class="form-group">
-        <fieldset>
-          <legend class="form-label">Der ansøges om</legend>
-          <ul class="nobullet-list">
-          {% for item in radiobuttons_ansoegning.items %}<li>{{ radiobutton(item) }}</li>{% endfor %}
-          </ul>
-        </fieldset>
-      </div>
+      {{ radiobuttons(radiobuttons_ansoegning) }}
       {{ textarea(textarea_data) }}
       {{ button(button_next) }}
     </form>

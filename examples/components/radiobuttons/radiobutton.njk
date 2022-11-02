@@ -1,0 +1,21 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+{{
+    radiobuttons({
+        "id": "radiogroup-1",
+        "radiogroupLegend": "Liste med radioknapper",
+        "groupname": "radio-example-1",
+        "items": [
+            {
+                "id": "radio-1",
+                "value": "v1",
+                "label": "Valg 1"
+            },
+            {
+                "id": "radio-2",
+                "value": "v2",
+                "label": "Valg 2"
+            }
+        ]
+    })
+}}

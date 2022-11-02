@@ -221,19 +221,20 @@
     <main class="container page-container" id="main-content">
     
       <h1 id="example-heading-radio-collapse" class="sr-only">Radio collapse</h1>
-      <div class="js-radio-toggle-group">
+      <div class="form-group js-radio-toggle-group" id="radiogroup">
     <fieldset>
         <legend class="form-label">Vælg en radioknap</legend>
         <ul class="nobullet-list">
             <li>
                 <div class="form-group-radio">
-                    <input id="id-radio1" type="radio" name="radio-group1" value="1" class="form-radio radio-large " checked="" data-controls="#collapse-radio1" data-expanded="false" />
-                    <label for="id-radio1" id="form-label-id-radio1" class="">Radioknap viser indhold <span class="sr-only">Udfyld informationer
-                            herunder</span></label>
-
+                    <input type="radio" id="radio-collapse-1" name="radiogroup-collapse" value="1" class="form-radio" checked="" data-controls="#radio-collapse-1-collapse" data-expanded="true" />
+                    <label class="form-label" for="radio-collapse-1" id="radio-collapse-1-form-label">
+                        Radioknap viser indhold<span class="sr-only">
+                            Udfyld informationer herunder</span>
+                    </label>
                 </div>
+                <div id="radio-collapse-1-collapse" aria-hidden="false" class="radio-content">
 
-                <div id="collapse-radio1" aria-hidden="true" class="radio-content radio-content-large">
                     <div class="form-group">
 
                         <label class="form-label" for="textinput1">
@@ -243,17 +244,19 @@
                         <input class="form-input input-width-m" id="textinput1" name="text1" type="text" required="" />
 
                     </div>
+
                 </div>
             </li>
             <li>
                 <div class="form-group-radio">
-                    <input id="id-radio2" type="radio" name="radio-group1" value="2" class="form-radio radio-large " data-controls="#collapse-radio2" data-expanded="false" />
-                    <label for="id-radio2" id="form-label-id-radio2" class="">Radioknap viser andet indhold <span class="sr-only">Udfyld informationer
-                            herunder</span></label>
-
+                    <input type="radio" id="radio-collapse-2" name="radiogroup-collapse" value="2" class="form-radio" data-controls="#radio-collapse-2-collapse" data-expanded="false" />
+                    <label class="form-label" for="radio-collapse-2" id="radio-collapse-2-form-label">
+                        Radioknap viser andet indhold<span class="sr-only">
+                            Udfyld informationer herunder</span>
+                    </label>
                 </div>
+                <div id="radio-collapse-2-collapse" aria-hidden="true" class="radio-content">
 
-                <div id="collapse-radio2" aria-hidden="true" class="radio-content radio-content-large">
                     <div class="form-group">
 
                         <label class="form-label" for="textinput2">
@@ -263,6 +266,7 @@
                         <input class="form-input input-width-m" id="textinput2" name="text2" type="text" required="" />
 
                     </div>
+
                 </div>
             </li>
         </ul>

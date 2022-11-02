@@ -3939,7 +3939,7 @@
 
 
 <li class=" " role="none">
-<a href="#hjælpetekst"  role="menuitem">Hjælpetekst</a>
+<a href="#hjaelpetekst"  role="menuitem">Hjælpetekst</a>
 </li>
 
     
@@ -3949,15 +3949,6 @@
 
 <li class=" " role="none">
 <a href="#fejlmeddelelse"  role="menuitem">Fejlmeddelelse</a>
-</li>
-
-    
-
-    
-
-
-<li class=" " role="none">
-<a href="#lille-radioknap"  role="menuitem">Lille radioknap</a>
 </li>
 
     
@@ -4246,9 +4237,8 @@
           
           
           <ul class="d-lg-none nobullet-list">
-          <li><a href="#hjælpetekst">Hjælpetekst</a></li>
+          <li><a href="#hjaelpetekst">Hjælpetekst</a></li>
           <li><a href="#fejlmeddelelse">Fejlmeddelelse</a></li>
-          <li><a href="#lille-radioknap">Lille radioknap</a></li>
           <li><a href="#skjult-indhold-collapse">Skjult indhold (Collapse)</a></li>
           
           </ul>
@@ -4257,37 +4247,36 @@
           
 
           
+
           
-<div class="component-preview  component-preview-radiobutton-large" aria-label="Eksempel på radioknapper">
+<div class="component-preview  component-preview-radiobutton" aria-label="Eksempel på radioknapper">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/radiobutton-large/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: radiobutton-large</span></a>
+        <a href="/eksempel/radiobutton/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: radiobutton</span></a>
         
     </div>
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group">
+        <div class="form-group" id="radiogroup-1">
     <fieldset>
-        <legend class="form-label">Stor radioknap (anbefalet)</legend>
+        <legend class="form-label">Liste med radioknapper</legend>
         <ul class="nobullet-list">
             <li>
                 <div class="form-group-radio">
-                    <input id="largeradio1" type="radio" name="largeradio"
-                        value="1" class="form-radio radio-large " />
-                    <label for="largeradio1" id="form-label-largeradio1"
-                        class="">Valg 1 </label>
-
+                    <input type="radio" id="radio-1" name="radio-example-1" value="v1" class="form-radio" />
+                    <label class="form-label" for="radio-1" id="radio-1-form-label">
+                        Valg 1
+                    </label>
                 </div>
             </li>
             <li>
                 <div class="form-group-radio">
-                    <input id="largeradio2" type="radio" name="largeradio"
-                        value="0" class="form-radio radio-large " />
-                    <label for="largeradio2" id="form-label-largeradio2"
-                        class="">Valg 2 </label>
-
+                    <input type="radio" id="radio-2" name="radio-example-1" value="v2" class="form-radio" />
+                    <label class="form-label" for="radio-2" id="radio-2-form-label">
+                        Valg 2
+                    </label>
                 </div>
             </li>
         </ul>
@@ -4297,15 +4286,12 @@
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/kode/komponenter/radioknap/" class="small-text">Gå til kodeafsnit<span class="sr-only">: radiobutton-large</span></a>
+        <a href="/kode/komponenter/radioknap/" class="small-text">Gå til kodeafsnit<span class="sr-only">: radiobutton</span></a>
     </div>
     
 </div>
 
-
-          
-
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 class="h3" id="retningslinjer">Anvendes til</h2>
 
 <p>Radioknapper giver brugeren mulighed for at vælge en enkelt værdi ud fra en synlig liste.</p>
 
@@ -4370,11 +4356,8 @@
   <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/komponenter/radioknap/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a></li>
 </ul>
 
-<section class="styleguide-child-container content" id="section-/komponenter/radioknap/radiobutton-helptext">
-  <h2 id="hjælpetekst">Hjælpetekst</h2>
-  
-  
-  
+<h2 id="hjaelpetekst">Hjælpetekst</h2>
+
 <div class="component-preview  component-preview-radiobutton-helptext" aria-label="Eksempel på radioknapper">
     
     <div class="component-link px-4 py-4">
@@ -4385,25 +4368,27 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group">
+        <div class="form-group" id="radiogroup-helptext">
     <fieldset>
-        <legend class="form-label">Radioknap med hjælpetekst</legend>
+        <legend class="form-label">Radioknapper med hjælpetekst</legend>
         <ul class="nobullet-list">
             <li>
                 <div class="form-group-radio">
-                    <input id="radio-helptext-1" type="radio" name="radio-helptext" value="v1" aria-labelledby="form-label-radio-helptext-1 helptext-radio-helptext-1" class="form-radio radio-large " />
-                    <label for="radio-helptext-1" id="form-label-radio-helptext-1" class="">Valg 1
+                    <input type="radio" id="radio-helptext-1" name="radio-helptext" value="v1" aria-describedby="radio-helptext-1-helptext" class="form-radio" />
+                    <label class="form-label" for="radio-helptext-1" id="radio-helptext-1-form-label">
+                        Valg 1
                     </label>
-                    <span class="form-hint" id="helptext-radio-helptext-1">Dette er en
+                    <span class="form-hint" id="radio-helptext-1-helptext">Dette er en
                         hjælpetekst</span>
                 </div>
             </li>
             <li>
                 <div class="form-group-radio">
-                    <input id="radio-helptext-2" type="radio" name="radio-helptext" value="v2" aria-labelledby="form-label-radio-helptext-2 helptext-radio-helptext-2" class="form-radio radio-large " />
-                    <label for="radio-helptext-2" id="form-label-radio-helptext-2" class="">Valg 2
+                    <input type="radio" id="radio-helptext-2" name="radio-helptext" value="v2" aria-describedby="radio-helptext-2-helptext" class="form-radio" />
+                    <label class="form-label" for="radio-helptext-2" id="radio-helptext-2-form-label">
+                        Valg 2
                     </label>
-                    <span class="form-hint" id="helptext-radio-helptext-2">Dette er en
+                    <span class="form-hint" id="radio-helptext-2-helptext">Dette er en
                         hjælpetekst</span>
                 </div>
             </li>
@@ -4415,17 +4400,8 @@
     
 </div>
 
-
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/radioknap/radiobutton-error">
-  <h2 id="fejlmeddelelse">Fejlmeddelelse</h2>
-  
-  
-  <p><a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
+<h2 id="fejlmeddelelse">Fejlmeddelelse</h2>
+<p><a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
 
 <p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.</p>
 
@@ -4439,31 +4415,34 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error">
-    <fieldset aria-describedby="example-radiobutton-error">
-        <legend class="h5">Sagen handler om</legend>
-        <span class="form-error-message" id="example-radiobutton-error"><span class="sr-only">Fejl:</span> Vælg hvad sagen handler
+        <div class="form-group form-error" id="radiogroup-error">
+    <fieldset aria-describedby="radiogroup-error-error">
+        <legend class="form-label">Sagen handler om</legend>
+        <span class="form-error-message" id="radiogroup-error-error"><span class="sr-only">Fejl:</span> Vælg hvad sagen handler
             om</span>
         <ul class="nobullet-list">
             <li>
                 <div class="form-group-radio">
-                    <input id="sagen-omhandler-ulykkesforsikring" type="radio" name="sagen-omhandler" value="ulykkesforsikring" class="form-radio radio-large " />
-                    <label for="sagen-omhandler-ulykkesforsikring" id="form-label-sagen-omhandler-ulykkesforsikring" class="">Ulykkesforsikring (ASL §81) </label>
-
+                    <input type="radio" id="sagen-omhandler-ulykkesforsikring" name="sagen-omhandler" value="ulykkesforsikring" class="form-radio" />
+                    <label class="form-label" for="sagen-omhandler-ulykkesforsikring" id="sagen-omhandler-ulykkesforsikring-form-label">
+                        Ulykkesforsikring
+                    </label>
                 </div>
             </li>
             <li>
                 <div class="form-group-radio">
-                    <input id="sagen-omhandler-erstatningsansvar" type="radio" name="sagen-omhandler" value="erstatningsansvar" class="form-radio radio-large " />
-                    <label for="sagen-omhandler-erstatningsansvar" id="form-label-sagen-omhandler-erstatningsansvar" class="">Erstatningsansvar (ASL §10) </label>
-
+                    <input type="radio" id="sagen-omhandler-erstatningsansvar" name="sagen-omhandler" value="erstatningsansvar" class="form-radio" />
+                    <label class="form-label" for="sagen-omhandler-erstatningsansvar" id="sagen-omhandler-erstatningsansvar-form-label">
+                        Erstatningsansvar
+                    </label>
                 </div>
             </li>
             <li>
                 <div class="form-group-radio">
-                    <input id="sagen-omhandler-forsikringsselskab" type="radio" name="sagen-omhandler" value="forsikringsselskab" class="form-radio radio-large " />
-                    <label for="sagen-omhandler-forsikringsselskab" id="form-label-sagen-omhandler-forsikringsselskab" class="">Forsikringsselskab (ASL §10) </label>
-
+                    <input type="radio" id="sagen-omhandler-forsikringsselskab" name="sagen-omhandler" value="forsikringsselskab" class="form-radio" />
+                    <label class="form-label" for="sagen-omhandler-forsikringsselskab" id="sagen-omhandler-forsikringsselskab-form-label">
+                        Forsikringsselskab
+                    </label>
                 </div>
             </li>
         </ul>
@@ -4474,61 +4453,8 @@
     
 </div>
 
+<h2 id="skjult-indhold-collapse">Skjult indhold (Collapse)</h2>
 
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/radioknap/radiobutton-small">
-  <h2 id="lille-radioknap">Lille radioknap</h2>
-  
-  
-  
-<div class="component-preview  component-preview-radiobutton-small" aria-label="Eksempel på radioknapper">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/radiobutton-small/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: radiobutton-small</span></a>
-        
-    </div>
-    
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
-        
-        <div class="form-group">
-    <fieldset>
-        <legend class="form-label">Lille radioknap</legend>
-        <ul class="nobullet-list">
-            <li>
-                <div class="form-group-radio">
-                    <input id="smallradio1" type="radio" name="smallradio" value="1" class="form-radio  " />
-                    <label for="smallradio1" id="form-label-smallradio1" class="">Valg 1 </label>
-
-                </div>
-            </li>
-            <li>
-                <div class="form-group-radio">
-                    <input id="smallradio2" type="radio" name="smallradio" value="0" class="form-radio  " />
-                    <label for="smallradio2" id="form-label-smallradio2" class="">Valg 2 </label>
-
-                </div>
-            </li>
-        </ul>
-    </fieldset>
-</div>
-        
-    </div>
-    
-</div>
-
-
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/radioknap/radiobutton-collapse">
-  <h2 id="skjult-indhold-collapse">Skjult indhold (Collapse)</h2>
-  
-  
-  
 <div class="component-preview  component-preview-radio-collapse" aria-label="Eksempel på radioknapper med skjult indhold">
     
     <div class="component-link px-4 py-4">
@@ -4539,19 +4465,20 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="js-radio-toggle-group">
+        <div class="form-group js-radio-toggle-group" id="radiogroup">
     <fieldset>
         <legend class="form-label">Vælg en radioknap</legend>
         <ul class="nobullet-list">
             <li>
                 <div class="form-group-radio">
-                    <input id="id-radio1" type="radio" name="radio-group1" value="1" class="form-radio radio-large " checked="" data-controls="#collapse-radio1" data-expanded="false" />
-                    <label for="id-radio1" id="form-label-id-radio1" class="">Radioknap viser indhold <span class="sr-only">Udfyld informationer
-                            herunder</span></label>
-
+                    <input type="radio" id="radio-collapse-1" name="radiogroup-collapse" value="1" class="form-radio" checked="" data-controls="#radio-collapse-1-collapse" data-expanded="true" />
+                    <label class="form-label" for="radio-collapse-1" id="radio-collapse-1-form-label">
+                        Radioknap viser indhold<span class="sr-only">
+                            Udfyld informationer herunder</span>
+                    </label>
                 </div>
+                <div id="radio-collapse-1-collapse" aria-hidden="false" class="radio-content">
 
-                <div id="collapse-radio1" aria-hidden="true" class="radio-content radio-content-large">
                     <div class="form-group">
 
                         <label class="form-label" for="textinput1">
@@ -4561,17 +4488,19 @@
                         <input class="form-input input-width-m" id="textinput1" name="text1" type="text" required="" />
 
                     </div>
+
                 </div>
             </li>
             <li>
                 <div class="form-group-radio">
-                    <input id="id-radio2" type="radio" name="radio-group1" value="2" class="form-radio radio-large " data-controls="#collapse-radio2" data-expanded="false" />
-                    <label for="id-radio2" id="form-label-id-radio2" class="">Radioknap viser andet indhold <span class="sr-only">Udfyld informationer
-                            herunder</span></label>
-
+                    <input type="radio" id="radio-collapse-2" name="radiogroup-collapse" value="2" class="form-radio" data-controls="#radio-collapse-2-collapse" data-expanded="false" />
+                    <label class="form-label" for="radio-collapse-2" id="radio-collapse-2-form-label">
+                        Radioknap viser andet indhold<span class="sr-only">
+                            Udfyld informationer herunder</span>
+                    </label>
                 </div>
+                <div id="radio-collapse-2-collapse" aria-hidden="true" class="radio-content">
 
-                <div id="collapse-radio2" aria-hidden="true" class="radio-content radio-content-large">
                     <div class="form-group">
 
                         <label class="form-label" for="textinput2">
@@ -4581,6 +4510,7 @@
                         <input class="form-input input-width-m" id="textinput2" name="text2" type="text" required="" />
 
                     </div>
+
                 </div>
             </li>
         </ul>
@@ -4591,18 +4521,13 @@
     
 </div>
 
-
-  
-  <h3 id="collapse-retningslinjer">Anvendes til</h3>
-
-<p>Anvendes til at vise et ekstra felt relevant for brugerens valg, fx kan du vise et email-felt, når brugeren vælger at ville kontaktes pr. email.</p>
+<h3 id="collapse-retningslinjer">Anvendes til</h3>
+<p>Anvendes til at vise et ekstra felt relevant for brugerens valg, fx kan du vise et e-mailfelt, når brugeren vælger at ville kontaktes pr. e-mail.</p>
 
 <h3>Anvendes ikke til</h3>
-
 <p>Anvendes ikke til at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.</p>
 
 <h3>Vejledning</h3>
-
 <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
 
 <div class=" component-preview-details-dos-donts" aria-label="Radioknap med skjul/vis do's and don'ts">
@@ -4627,9 +4552,6 @@
 
 <h4>Referencer</h4>
 <p><a href="https://www.nngroup.com/articles/interaction-cost-definition/" class="icon-link">Raluca Budiu: Interaction Cost (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
-
-</section>
-
 
 
           
