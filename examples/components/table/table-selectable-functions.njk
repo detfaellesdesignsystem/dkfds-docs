@@ -1,3 +1,65 @@
 {% from "components/table/table.njk" import table as table %}
-{% from "components/buttons/buttons.njk" import button as button %}
-{{table(data)}}
+
+{{ 
+    table({
+        "selectable": true,
+        "id": "selectable-table2",
+        "thead": [
+            {
+                "columnName": "Affaldstype"
+            },
+            {
+                "columnName": "Farvekode"
+            },
+            {
+                "columnName": "Beskrivelse"
+            },
+            {
+                "columnName": "Hvor ender det?"
+            }
+        ],
+        "tbody": [
+            [
+                "Dagrenovation",
+                "Grøn",
+                "Madaffald, samt papir, pap eller plastik der ikke kan genanvendes, fordi der er madrester eller andet snask på.",
+                "Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen."
+            ],
+            [
+                "Bioaffald og kompost",
+                "Beige",
+                "Alt madaffald uden fødevareemballage.",
+                "Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret til muld."
+            ],
+            [
+                "Glas",
+                "Hvid",
+                "Alle typer glas og flasker.",
+                "De hele vinflasker rengøres og genbruges af vinhuse, mens glasskårene bliver smeltet om til nyt glas."
+            ],
+            [
+                "Elektronik",
+                "Orange",
+                "Genstande der har brugt strøm.",
+                "Det elektroniske affald bliver typisk kørt til et demonteringsanlæg, hvor det bliver skilt ad, så de forskellige dele kan genanvendes separat."
+            ]
+        ],
+        "actions": [
+            {
+                "text": "Download",
+                "variant": "primary",
+                "icon": "file-download"
+            },
+            {
+                "text": "Duplikér",
+                "variant": "secondary",
+                "icon": "content-copy"
+            },
+            {
+                "text": "Slet",
+                "variant": "secondary",
+                "icon": "trash-can"
+            }
+        ]
+    })
+}}

@@ -1,39 +1,57 @@
-{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-<div class="table--responsive-scroll">
-<table class="table mt-6" id="sortingTable">
-    <thead>
-      <tr>
-        <th aria-sort="ascending" class="table-header-no-wrap">Affaldstype<button id="btn-sort-by-affaldstype" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-ascending"></use></svg><span class="sr-only">Sortér efter affaldstype</span></button></th>
-        <th aria-sort="none" class="table-header-no-wrap">Farvekode<button id="btn-sort-by-farvekode" class="button button-unstyled ml-2"><svg class="icon-svg mr-0" focusable="false" aria-hidden="true"><use href="#sort-table-none"></use></svg><span class="sr-only">Sortér efter farvekode</span></button></th>
-        <th aria-sort="none">Beskrivelse</th>
-        <th aria-sort="none">Hvor ender det?</th>
-      </tr>
-    </thead>
-    <tbody aria-live="polite">
-      <tr>
-        <td data-title="Affaldstype">Bioaffald og kompost</td>
-        <td data-title="Farvekode">Beige</td>
-        <td data-title="Beskrivelse">Alt madaffald uden fødevareemballage.</td>
-        <td data-title="Hvor ender det?">Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret til muld.</td>
-      </tr>
-      <tr>
-        <td data-title="Affaldstype">Dagrenovation</td>
-        <td data-title="Farvekode">Grøn</td>
-        <td data-title="Beskrivelse">Madaffald, samt papir, pap eller plastik der ikke kan genanvendes, fordi der er madrester eller andet snask på.</td>
-        <td data-title="Hvor ender det?">Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen. </td>
-      </tr>
-      <tr>
-        <td data-title="Affaldstype">Elektronik</td>
-        <td data-title="Farvekode">Orange</td>
-        <td data-title="Beskrivelse">Genstande der har brugt strøm.</td>
-        <td data-title="Hvor ender det?">Det elektroniske affald bliver typisk kørt til et demonteringsanlæg, hvor det bliver skilt ad, så de forskellige dele kan genanvendes separat.</td>
-      </tr>
-      <tr>
-        <td data-title="Affaldstype">Glas</td>
-        <td data-title="Farvekode">Hvid</td>
-        <td data-title="Beskrivelse">Alle typer glas og flasker.</td>
-        <td data-title="Hvor ender det?">De hele vinflasker rengøres og genbruges af vinhuse, mens glasskårene bliver smeltet om til nyt glas.</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+{% from "components/table/table.njk" import table as table %}
+
+{{ 
+    table({
+        "id": "sortingTable",
+        "sorting": {
+            "column": 1,
+            "direction": "ascending"
+        },
+        "thead": [
+            {
+                "columnName": "Affaldstype",
+                "sorting": true,
+                "classes": "table-header-no-wrap",
+                "sortingID": "btn-sort-by-affaldstype"
+            },
+            {
+                "columnName": "Farvekode",
+                "sorting": true,
+                "classes": "table-header-no-wrap",
+                "sortingID": "btn-sort-by-farvekode"
+            },
+            {
+                "columnName": "Beskrivelse"
+            },
+            {
+                "columnName": "Hvor ender det?"
+            }
+        ],
+        "tbody": [
+            [
+                "Bioaffald og kompost",
+                "Beige",
+                "Alt madaffald uden fødevareemballage.",
+                "Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret til muld."
+            ],
+            [
+                "Dagrenovation",
+                "Grøn",
+                "Madaffald, samt papir, pap eller plastik der ikke kan genanvendes, fordi der er madrester eller andet snask på.",
+                "Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen."
+            ],
+            [
+                "Elektronik",
+                "Orange",
+                "Genstande der har brugt strøm.",
+                "Det elektroniske affald bliver typisk kørt til et demonteringsanlæg, hvor det bliver skilt ad, så de forskellige dele kan genanvendes separat."
+            ],
+            [
+                "Glas",
+                "Hvid",
+                "Alle typer glas og flasker.",
+                "De hele vinflasker rengøres og genbruges af vinhuse, mens glasskårene bliver smeltet om til nyt glas."
+            ]
+        ]
+    })
+}}
