@@ -125,57 +125,47 @@
         "selectable": true,
         "id": "selectable-table",
         "thead": [
-            {
-                "columnName": "Nummer"
-            },
-            {
-                "columnName": "Dato"
-            },
-            {
-                "columnName": "Information"
-            },
-            {
-                "columnName": "Beskrivelse"
-            },
-            {
-                "columnName": "En label"
-            }
+            { "headerContent": "Nummer" },
+            { "headerContent": "Dato" },
+            { "headerContent": "Information" },
+            { "headerContent": "Beskrivelse" },
+            { "headerContent": "En label" }
         ],
         "tbody": [
             [
-                "123456789",
-                "01.01.2021",
-                "Lorem ipsum dolor sit",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-                "ABCDEFG"
+                { "content": "123456789" },
+                { "content": "01.01.2021" },
+                { "content": "Lorem ipsum dolor sit" },
+                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
+                { "content": "ABCDEFG" }
             ],
             [
-                "123456789",
-                "01.01.2021",
-                "Lorem ipsum dolor sit",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-                "ABCDEFG"
+                { "content": "123456789" },
+                { "content": "01.01.2021" },
+                { "content": "Lorem ipsum dolor sit" },
+                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
+                { "content": "ABCDEFG" }
             ],
             [
-                "123456789",
-                "01.01.2021",
-                "Lorem ipsum dolor sit",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-                "ABCDEFG"
+                { "content": "123456789" },
+                { "content": "01.01.2021" },
+                { "content": "Lorem ipsum dolor sit" },
+                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
+                { "content": "ABCDEFG" }
             ],
             [
-                "123456789",
-                "01.01.2021",
-                "Lorem ipsum dolor sit",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-                "ABCDEFG"
+                { "content": "123456789" },
+                { "content": "01.01.2021" },
+                { "content": "Lorem ipsum dolor sit" },
+                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
+                { "content": "ABCDEFG" }
             ],
             [
-                "123456789",
-                "01.01.2021",
-                "Lorem ipsum dolor sit",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-                "ABCDEFG"
+                { "content": "123456789" },
+                { "content": "01.01.2021" },
+                { "content": "Lorem ipsum dolor sit" },
+                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
+                { "content": "ABCDEFG" }
             ]
         ]
     },

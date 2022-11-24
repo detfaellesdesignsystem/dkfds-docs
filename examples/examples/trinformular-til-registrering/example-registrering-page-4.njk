@@ -63,7 +63,7 @@
       <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/" class="back-link">Tilbage</a></div>
       <h1 class="mb-6">Tidligere registrering</h1>
       <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-        {% set radioTidligereRegistrering %} {{ textinput(textinput_data) }} {{ dateinput(dateinput_data) }} {% endset %}
+        {% set radioTidligereRegistrering = textinput(textinput_data) + dateinput(dateinput_data) %}
         {{ radiobuttons({
             "id": "radiogroup-lignende-registrering",
             "groupname": "radio-group",

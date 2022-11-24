@@ -1,13 +1,18 @@
-{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/search/search.njk" import search as search %}
 
-<div class="form-group search">
-  <label for="input-type-text" class="sr-only">Søg efter indhold</label>
-  <input class="form-input input-char-27" id="input-type-text" name="search-button" title="Search" type="search">
-  <button class="button button-search">Søg</button>
-</div>
+{{ 
+    search({
+        "inputId": "input-type-text",
+        "classes": "input-char-27",
+        "name": "search-button"
+    }) 
+}}
 
-<div class="form-group search">
-  <label for="input-type-text-icon" class="sr-only">Søg efter indhold</label>
-  <input class="form-input input-char-27" id="input-type-text-icon" name="search-icon" title="Search" type="search">
-  <button class="button button-search">{{ icon_svg({"name": 'search', "classes": 'm-0'})}}<span class="sr-only">Søg</span></button>
-</div>
+{{ 
+    search({
+        "inputId": "input-type-text-icon",
+        "classes": "input-char-27",
+        "name": "search-icon",
+        "useIcon": true
+    }) 
+}}

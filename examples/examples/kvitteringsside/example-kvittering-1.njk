@@ -6,6 +6,7 @@
 
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/table/table.njk" import table as table %}
 
 {% block header %}
     <header class="header">
@@ -41,71 +42,81 @@
     <p class="font-lead">Nedenfor finder du dine indtastninger fra de foregående sider.</p>
     {{ button(button_print) }}
     <h2>Dine oplysninger</h2>
-      <h3>Vælg personer</h3>
-      <div class="table--responsive-scroll">
-        <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
-            <thead>
-                <tr>
-                  <th>Person</th>
-                  <th>CPR-nummer</th>
-                </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-title="Person">Jens Jensen</td>
-                <td data-title="CPR-nummer">123456-7890</td>
-              </tr>
-              <tr>
-                <td data-title="Person">Keld Hedagaardsen</td>
-                <td data-title="CPR-nummer">230495-1111</td>
-              </tr>
-              <tr>
-                <td data-title="Person">Anni Hedagaardsen</td>
-                <td data-title="CPR-nummer">120394-2222</td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
-      <h3>Vælg noget mere</h3>
-      <div class="table--responsive-scroll">
-        <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
-            <thead>
-                <tr>
-                  <th>Nummer</th>
-                  <th>Dato</th>
-                  <th>Information</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td data-title="Nummer">123456789</td>
-                  <td data-title="Dato">01.01.2021</td>
-                  <td data-title="Information">Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td data-title="Nummer">123456789</td>
-                  <td data-title="Dato">01.01.2021</td>
-                  <td data-title="Information">Lorem ipsum dolor sit</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-      <h3>Vedhæft dokumenter</h3>
-      <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
-        <thead>
-            <tr>
-              <th>Vedhæftet</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</a></td>
-            </tr>
-            <tr>
-              <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Kopi-af-dokument-x.pdf</a></td>
-          </tr>
-        </tbody>
-    </table>
+    <h3>Vælg personer</h3>
+    {{ 
+        table({
+            "tableClasses": "w-percent-md-60 mt-4 mb-7 d-print-table",
+            "borderless": true,
+            "responsive": true,
+            "thead": [
+                { "headerContent": "Person" },
+                { "headerContent": "CPR-nummer" }
+            ],
+            "tbody": [
+                [
+                    { "content": "Jens Jensen" },
+                    { "content": "123456-7890" }
+                ],
+                [
+                    { "content": "Keld Hedagaardsen" },
+                    { "content": "230495-1111" }
+                ],
+                [
+                    { "content": "Anni Hedagaardsen" },
+                    { "content": "120394-2222" }
+                ]
+            ]
+        })
+    }}
+
+    <h3>Vælg noget mere</h3>
+    {{ 
+        table({
+            "tableClasses": "w-percent-md-60 mt-4 mb-7 d-print-table",
+            "borderless": true,
+            "responsive": true,
+            "thead": [
+                { "headerContent": "Nummer" },
+                { "headerContent": "Dato" },
+                { "headerContent": "Information" }
+            ],
+            "tbody": [
+                [
+                    { "content": "123456789" },
+                    { "content": "01.01.2021" },
+                    { "content": "Lorem ipsum dolor sit" }
+                ],
+                [
+                    { "content": "123456789" },
+                    { "content": "01.01.2021" },
+                    { "content": "Lorem ipsum dolor sit" }
+                ]
+            ]
+        })
+    }}
+
+    <h3>Vedhæft dokumenter</h3>
+    {% set exampleDocumentLink1 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Journal.pdf</a>' %}
+    {% set exampleDocumentLink2 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Kopi-af-dokument-x.pdf</a>' %}
+    {{ 
+        table({
+            "tableClasses": "w-percent-md-60 mt-4 mb-7 d-print-table",
+            "borderless": true,
+            "responsive": true,
+            "thead": [
+                { "headerContent": "Vedhæftet dokument" }
+            ],
+            "tbody": [
+                [
+                    { "content": exampleDocumentLink1 }
+                ],
+                [
+                    { "content": exampleDocumentLink2 }
+                ]
+            ]
+        })
+    }}
+
       <h3>Tidligere registrering</h3>
       <div class="w-percent-md-60 mt-6 mb-7">
         {% for row in tidligere_registrering %}

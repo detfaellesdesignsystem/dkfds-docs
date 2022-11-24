@@ -235,7 +235,7 @@
         <form method="get" action="/search/" id="mobileSearchForm">
           <div class="form-group search">
             <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search">
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -387,7 +387,7 @@
             <form method="get" action="/search/" id="menuSearchForm">
               <div class="form-group search">
                 <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <input class="form-input input-char-27" id="search-input" name="q" type="search">
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
@@ -3837,13 +3837,15 @@
 <div><span class="small-text mt-0 d-block">xx-xx-xxxx</span></div>
 
 <ul>
-  <li><span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip og radiobuttons.</li>
+  <li><span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.</li>
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.</li>
-  <li><span class="badge badge-warning badge-small mr-2">Change</span> Uoverensstemmelser i dokumentationens kodeeksempler er rettet.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Klassen <code>table--lines</code> er fjernet.</li>
-  <li>Rettet fejl relateret til margin og padding for tabeller uden ramme.</li>
+  <li><span class="badge badge-warning badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler er rettet.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Den udokumenterede klasse <code>table--lines</code> er fjernet fra kodebasen.</li>
+  <li>Rettet fejl relateret til margin og padding for tabeller.</li>
   <li>Opdateret teksten på søgeknappen ved søgning i tabeller.</li>
   <li>Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.</li>
+  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.</li>
+  <li>Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.</li>
 </ul>
 
 <h2 id="version-8-2-0" class="mb-0">Version 8.2.0</h2>

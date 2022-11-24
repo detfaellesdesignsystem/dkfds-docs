@@ -235,7 +235,7 @@
         <form method="get" action="/search/" id="mobileSearchForm">
           <div class="form-group search">
             <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search">
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -387,7 +387,7 @@
             <form method="get" action="/search/" id="menuSearchForm">
               <div class="form-group search">
                 <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <input class="form-input input-char-27" id="search-input" name="q" type="search">
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
@@ -4838,13 +4838,18 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;form novalidate method=&quot;get&quot; action=&quot;&quot; id=&quot;formSearchTable&quot;&gt;
+
     &lt;div class=&quot;form-group search&quot;&gt;
-        &lt;label for=&quot;inputSearchTable&quot; class=&quot;sr-only&quot;&gt;Søg&lt;/label&gt;
+        &lt;label for=&quot;inputSearchTable&quot; class=&quot;sr-only&quot;&gt;Søg efter
+            indhold&lt;/label&gt;
         &lt;input class=&quot;form-input input-char-27&quot; id=&quot;inputSearchTable&quot;
             name=&quot;searchtable&quot; type=&quot;search&quot;&gt;
-        &lt;button class=&quot;button button-search&quot;
-            id=&quot;btnSearchTable&quot;&gt;Søg&lt;/button&gt;
+        &lt;button class=&quot;button button-search&quot; id=&quot;btnSearchTable&quot;
+            type=&quot;submit&quot;&gt;
+            Søg
+        &lt;/button&gt;
     &lt;/div&gt;
+
 &lt;/form&gt;
 
 &lt;div class=&quot;table--responsive-scroll mt-4&quot;&gt;

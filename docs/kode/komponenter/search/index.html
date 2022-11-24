@@ -235,7 +235,7 @@
         <form method="get" action="/search/" id="mobileSearchForm">
           <div class="form-group search">
             <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search">
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -387,7 +387,7 @@
             <form method="get" action="/search/" id="menuSearchForm">
               <div class="form-group search">
                 <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <input class="form-input input-char-27" id="search-input" name="q" type="search">
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
@@ -4413,15 +4413,19 @@
         
         <div class="form-group search">
     <label for="input-type-text" class="sr-only">Søg efter indhold</label>
-    <input class="form-input input-char-27" id="input-type-text" name="search-button" title="Search" type="search" />
-    <button class="button button-search">Søg</button>
+    <input class="form-input input-char-27" id="input-type-text" name="search-button" type="search" />
+    <button class="button button-search">
+        Søg
+    </button>
 </div>
 
 <div class="form-group search">
     <label for="input-type-text-icon" class="sr-only">Søg efter
         indhold</label>
-    <input class="form-input input-char-27" id="input-type-text-icon" name="search-icon" title="Search" type="search" />
-    <button class="button button-search"><svg class="icon-svg m-0" aria-hidden="true"><use xlink:href="#search"></use></svg><span class="sr-only">Søg</span></button>
+    <input class="form-input input-char-27" id="input-type-text-icon" name="search-icon" type="search" />
+    <button class="button button-search">
+        <svg class="icon-svg m-0" aria-hidden="true"><use xlink:href="#search"></use></svg><span class="sr-only">Søg</span>
+    </button>
 </div>
         
     </div>
@@ -4445,18 +4449,21 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group search&quot;&gt;
     &lt;label for=&quot;input-type-text&quot; class=&quot;sr-only&quot;&gt;Søg efter indhold&lt;/label&gt;
     &lt;input class=&quot;form-input input-char-27&quot; id=&quot;input-type-text&quot;
-        name=&quot;search-button&quot; title=&quot;Search&quot; type=&quot;search&quot;&gt;
-    &lt;button class=&quot;button button-search&quot;&gt;Søg&lt;/button&gt;
+        name=&quot;search-button&quot; type=&quot;search&quot;&gt;
+    &lt;button class=&quot;button button-search&quot;&gt;
+        Søg
+    &lt;/button&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;form-group search&quot;&gt;
     &lt;label for=&quot;input-type-text-icon&quot; class=&quot;sr-only&quot;&gt;Søg efter
         indhold&lt;/label&gt;
     &lt;input class=&quot;form-input input-char-27&quot; id=&quot;input-type-text-icon&quot;
-        name=&quot;search-icon&quot; title=&quot;Search&quot; type=&quot;search&quot;&gt;
-    &lt;button
-        class=&quot;button button-search&quot;&gt;&lt;svg class=&quot;icon-svg m-0&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#search&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Søg&lt;/span&gt;&lt;/button&gt;
+        name=&quot;search-icon&quot; type=&quot;search&quot;&gt;
+    &lt;button class=&quot;button button-search&quot;&gt;
+        &lt;svg class=&quot;icon-svg m-0&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#search&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+            class=&quot;sr-only&quot;&gt;Søg&lt;/span&gt;
+    &lt;/button&gt;
 &lt;/div&gt;</code></pre></figure>
 
 

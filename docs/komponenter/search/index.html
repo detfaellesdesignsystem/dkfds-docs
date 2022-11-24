@@ -235,7 +235,7 @@
         <form method="get" action="/search/" id="mobileSearchForm">
           <div class="form-group search">
             <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search">
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -387,7 +387,7 @@
             <form method="get" action="/search/" id="menuSearchForm">
               <div class="form-group search">
                 <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <input class="form-input input-char-27" id="search-input" name="q" type="search">
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
@@ -4227,18 +4227,21 @@
         <div class="form-group search">
     <label for="input-type-text" class="sr-only">Søg efter indhold</label>
     <input class="form-input input-char-27" id="input-type-text"
-        name="search-button" title="Search" type="search">
-    <button class="button button-search">Søg</button>
+        name="search-button" type="search">
+    <button class="button button-search">
+        Søg
+    </button>
 </div>
 
 <div class="form-group search">
     <label for="input-type-text-icon" class="sr-only">Søg efter
         indhold</label>
     <input class="form-input input-char-27" id="input-type-text-icon"
-        name="search-icon" title="Search" type="search">
-    <button
-        class="button button-search"><svg class="icon-svg m-0" aria-hidden="true"><use xlink:href="#search"></use></svg><span
-            class="sr-only">Søg</span></button>
+        name="search-icon" type="search">
+    <button class="button button-search">
+        <svg class="icon-svg m-0" aria-hidden="true"><use xlink:href="#search"></use></svg><span
+            class="sr-only">Søg</span>
+    </button>
 </div>
         
     </div>

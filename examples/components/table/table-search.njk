@@ -1,57 +1,54 @@
+{% from "components/search/search.njk" import search as search %}
 {% from "components/table/table.njk" import table as table %}
 
 <form novalidate method="get" action="" id="formSearchTable">
-  <div class="form-group search">
-    <label for="inputSearchTable" class="sr-only">Søg</label>
-    <input class="form-input input-char-27" id="inputSearchTable" name="searchtable" type="search">
-    <button class="button button-search" id="btnSearchTable">Søg</button>
-  </div>
+    {{ 
+        search({
+            "inputId": "inputSearchTable",
+            "classes": "input-char-27",
+            "name": "searchtable",
+            "buttonId": "btnSearchTable",
+            "buttonType": "submit"
+        }) 
+    }}
 </form>
 
 {{ 
-  table({
-      "outerClasses": "mt-4",
-      "id": "searchTable",
-      "attributes": "aria-live=\"polite\"",
-      "thead": [
-            {
-                "columnName": "Affaldstype"
-            },
-            {
-                "columnName": "Farvekode"
-            },
-            {
-                "columnName": "Beskrivelse"
-            },
-            {
-                "columnName": "Hvor ender det?"
-            }
+    table({
+        "outerClasses": "mt-4",
+        "id": "searchTable",
+        "attributes": "aria-live=\"polite\"",
+        "thead": [
+            { "headerContent": "Affaldstype" },
+            { "headerContent": "Farvekode" },
+            { "headerContent": "Beskrivelse" },
+            { "headerContent": "Hvor ender det?" }
         ],
-      "tbody": [
-          [
-              "Dagrenovation",
-              "Grøn",
-              "Madaffald, samt papir, pap eller plastik der ikke kan genanvendes, fordi der er madrester eller andet snask på.",
-              "Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen."
-          ],
-          [
-              "Bioaffald og kompost",
-              "Beige",
-              "Alt madaffald uden fødevareemballage.",
-              "Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret til muld."
-          ],
-          [
-              "Glas",
-              "Hvid",
-              "Alle typer glas og flasker.",
-              "De hele vinflasker rengøres og genbruges af vinhuse, mens glasskårene bliver smeltet om til nyt glas."
-          ],
-          [
-              "Elektronik",
-              "Orange",
-              "Genstande der har brugt strøm.",
-              "Det elektroniske affald bliver typisk kørt til et demonteringsanlæg, hvor det bliver skilt ad, så de forskellige dele kan genanvendes separat."
-          ]
-      ]
-  })
+        "tbody": [
+            [
+                { "content": "Dagrenovation" },
+                { "content": "Grøn" },
+                { "content": "Madaffald, samt papir, pap eller plastik der ikke kan genanvendes, fordi der er madrester eller andet snask på." },
+                { "content": "Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen." }
+            ],
+            [
+                { "content": "Bioaffald og kompost" },
+                { "content": "Beige" },
+                { "content": "Alt madaffald uden fødevareemballage." },
+                { "content": "Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret til muld." }
+            ],
+            [
+                { "content": "Glas" },
+                { "content": "Hvid" },
+                { "content": "Alle typer glas og flasker." },
+                { "content": "De hele vinflasker rengøres og genbruges af vinhuse, mens glasskårene bliver smeltet om til nyt glas." }
+            ],
+            [
+                { "content": "Elektronik" },
+                { "content": "Orange" },
+                { "content": "Genstande der har brugt strøm." },
+                { "content": "Det elektroniske affald bliver typisk kørt til et demonteringsanlæg, hvor det bliver skilt ad, så de forskellige dele kan genanvendes separat." }
+            ]
+        ]
+    })
 }}

@@ -6,6 +6,7 @@
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 {% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/table/table.njk" import table as table %}
 
 {% block header %}
 <header class="header">
@@ -145,26 +146,7 @@
       {% endfor %}
     </div>
     <h2>Tilføj dokumentation</h2>
-      <div class="table--responsive-scroll w-percent-md-70 mt-4 mb-7">
-        <table class="table table--borderless table--responsive-headers">
-            <thead>
-                <tr>
-                  <th>Filnavn</th>
-                  <th>Dokumentationstype</th>
-                  <th>Sidetal</th>
-                  <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td data-title="Filnavn">Journal.pdf</td>
-                  <td data-title="Dokumentationstype">Type 1</td>
-                  <td data-title="Sidetal">14</td>
-                  <td class="align-text-md-right d-print-none" data-title=""><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/">Redigér</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    {{ table(tabel_dokumentation) }}
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/">
       <input type="hidden" name="entries-confirmed" value="true">
       {{ button(button_send) }}

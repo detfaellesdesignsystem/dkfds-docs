@@ -86,5 +86,24 @@
       "classes": "d-print-none mt-7",
       "attributes": "type='button'"
       
+    },
+    "tabel_dokumentation": {
+      "outerClasses": "w-percent-md-70 mt-4 mb-7",
+        "borderless": true,
+        "responsive": true,
+        "thead": [
+            { "headerContent": "Filnavn" },
+            { "headerContent": "Dokumentationstype" },
+            { "headerContent": "Sidetal" },
+            { "td": true, "classes": "d-print-none" }
+        ],
+        "tbody": [
+            [
+                { "content": "Journal.pdf" },
+                { "content": "Type 1" },
+                { "content": "14" },
+                { "content": "<a href=\"#\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+            ]
+        ]
     }
 }

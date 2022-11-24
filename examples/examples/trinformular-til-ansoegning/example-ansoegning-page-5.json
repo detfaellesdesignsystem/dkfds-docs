@@ -85,5 +85,24 @@
         "variant": "primary",
         "classes": "d-print-none mt-7",
         "attributes": "type='submit'"
+      },
+      "tabel_dokumentation": {
+        "outerClasses": "w-percent-md-70 mt-4 mb-7",
+          "borderless": true,
+          "responsive": true,
+          "thead": [
+              { "headerContent": "Filnavn" },
+              { "headerContent": "Dokumentationstype" },
+              { "headerContent": "Sidetal" },
+              { "td": true, "classes": "d-print-none" }
+          ],
+          "tbody": [
+              [
+                  { "content": "Journal.pdf" },
+                  { "content": "Type 1" },
+                  { "content": "14" },
+                  { "content": "<a href=\"/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+              ]
+          ]
       }
 }

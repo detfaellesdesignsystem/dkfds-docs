@@ -81,8 +81,8 @@
     <h1>Oplysninger om ansøger</h1>
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/">
         {{ textinput(input_ansoeger) }}
-        {% set radioContentCPR %} {{ textinput(input_CPR) }} {% endset %}
-        {% set radioContentCVR %} {{ textinput(input_CVR) }} {% endset %}
+        {% set radioContentCPR = textinput(input_CPR) %}
+        {% set radioContentCVR = textinput(input_CVR) %}
         {{ radiobuttons({
                 "id": "radiogroup-ansoeger-som",
                 "groupname": "radiogroup-ansoeger",
