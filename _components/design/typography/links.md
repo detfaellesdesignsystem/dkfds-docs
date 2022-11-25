@@ -17,7 +17,9 @@ subnav:
 - text: Eksternt link
   href: "#eksternt-link"
 - text: Sekundære link
-  href: "#sekundære-links"
+  href: "#sekundaere-links"
+- text: Billeder som links
+  href: "#billeder-som-links"
 ---
 
 Se også vores <a href="/komponenter/skip-link/">Skip-link</a>, <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.
@@ -60,4 +62,42 @@ Gør gerne brugeren opmærksom på, hvor det eksterne link fører hen, fx i en p
 
 Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.
 
-{% include child-components.html parent='Links' %}
+{:#eksternt-link}
+## Eksternt link
+
+{% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" link=false code="/kode/typografi/links/#eksternt-link" %}
+
+{:#sekundaere-links}
+## Sekundære links
+
+<p class="font-lead">Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.</p>
+
+{% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" link=false code="/kode/typografi/links/#sekundaere-links" %}
+
+### Designværdier
+
+{:.table .table--borderless .table--responsive-headers}
+| Tekstfarve | Understreget |
+|------------|--------------|
+| #1a1a1a    | Ja           |
+
+### Anvendes til
+
+- <a href="/komponenter/funktionslink/">Funktionslink</a>
+- <a href="/komponenter/broedkrumme/">Brødkrumme</a>
+- <a href="/komponenter/footer/">Footer</a> links
+
+### Anvendes ikke til
+
+Brug ikke sekundære links i eller imellem afsnit af tekst eller til generel navigation mellem sider, brug da et standard link.
+
+### Vejledning
+
+Vær ikke kreativ med brugen af sekundære links, da de giver mindre fært end standard-links. Alternativ anvendelse af sekundære links kan tillige skabe tvivl og forvirring hos brugerne omkring, hvad der er klikbart. 
+
+{:#billeder-som-links}
+## Billeder som links
+
+Links har som standard stylingen `display: inline`. Hvis du vil anvende et billede som link, er du nødt til at vælge en anden display-værdi ved at tilføje en <a href="/kode/utilities/#display">hjælpeklasse</a>, fx `d-inline-block` eller `d-block`, ellers vises der ikke nogen <a href="/design/farver/#fokusfarve">fokusramme</a> omkring billedet, når linket har fokus. 
+
+Bemærk, at når du ændrer `display`, vil bredden på dit billede blive begrænset. Du kan forhindre dette ved også at tilføje klassen `full-width-image` til linket udover hjælpeklassen.

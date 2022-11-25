@@ -3678,7 +3678,16 @@
 
 
 <li class=" " role="none">
-<a href="#sekundære-links"  role="menuitem">Sekundære link</a>
+<a href="#sekundaere-links"  role="menuitem">Sekundære link</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#billeder-som-links"  role="menuitem">Billeder som links</a>
 </li>
 
     
@@ -3855,7 +3864,8 @@
           
           <ul class="d-lg-none nobullet-list">
           <li><a href="#eksternt-link">Eksternt link</a></li>
-          <li><a href="#sekundære-links">Sekundære link</a></li>
+          <li><a href="#sekundaere-links">Sekundære link</a></li>
+          <li><a href="#billeder-som-links">Billeder som links</a></li>
           
           </ul>
           
@@ -3965,11 +3975,8 @@
 
 <p>Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.</p>
 
-<section class="styleguide-child-container content" id="section-/design/typography/links/links-ekstern">
-  <h2 id="eksternt-link">Eksternt link</h2>
-  
-  
-  
+<h2 id="eksternt-link">Eksternt link</h2>
+
 <div class="component-preview  component-preview-external-link" aria-label="Eksempel på eksternt link">
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
@@ -3986,19 +3993,10 @@
     
 </div>
 
+<h2 id="sekundaere-links">Sekundære links</h2>
 
-  
-  
+<p class="font-lead">Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.</p>
 
-</section>
-
-<section class="styleguide-child-container content" id="section-/design/typography/links/links-secondary">
-  <h2 id="sekundære-links">Sekundære links</h2>
-  
-    <p class="font-lead">Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.</p>
-  
-  
-  
 <div class="component-preview  component-preview-secondary-links" aria-label="Eksempel på sekundære links">
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
@@ -4013,9 +4011,7 @@
     
 </div>
 
-
-  
-  <h3>Designværdier</h3>
+<h3>Designværdier</h3>
 
 <table class="table table--borderless table--responsive-headers">
   <thead>
@@ -4048,8 +4044,11 @@
 
 <p>Vær ikke kreativ med brugen af sekundære links, da de giver mindre fært end standard-links. Alternativ anvendelse af sekundære links kan tillige skabe tvivl og forvirring hos brugerne omkring, hvad der er klikbart.</p>
 
-</section>
+<h2 id="billeder-som-links">Billeder som links</h2>
 
+<p>Links har som standard stylingen <code>display: inline</code>. Hvis du vil anvende et billede som link, er du nødt til at vælge en anden display-værdi ved at tilføje en <a href="/kode/utilities/#display">hjælpeklasse</a>, fx <code>d-inline-block</code> eller <code>d-block</code>, ellers vises der ikke nogen <a href="/design/farver/#fokusfarve">fokusramme</a> omkring billedet, når linket har fokus.</p>
+
+<p>Bemærk, at når du ændrer <code>display</code>, vil bredden på dit billede blive begrænset. Du kan forhindre dette ved også at tilføje klassen <code>full-width-image</code> til linket udover hjælpeklassen.</p>
 
 
           
