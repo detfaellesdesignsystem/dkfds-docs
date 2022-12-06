@@ -103,18 +103,6 @@
         }
         ]
       },
-      "input_registered": {
-        "id": "input-registered",
-        "name": "registered",
-        "label": {
-            "text": "Allerede registreret ",
-            "tooltip": "Følgende personer kan ikke vælges, da de allerede er blevet registreret.",
-            "tooltipattr": "type='button'"
-        },
-        "classes":"input-width-xl",
-        "value": "Jens Jensen, 123456-7890",
-        "readonly": true
-      },
       "button_add": {
         "text": "Tilføj person",
         "classes": "tertiary d-print-none mt-5",

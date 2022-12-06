@@ -59,7 +59,7 @@ $(document).ready(function () {
                     piwikProPath: 'erst.containers.piwik.pro'
                 }
             }],
-            readMoreUrl: '/omdesignsystemet/privatlivspolitik-cookies/',
+            readMoreUrl: '/privatlivspolitik-cookies/',
             enableLog: false,
             explicitAccept: true,
             textHeader: 'Fortæl os om du accepterer cookies',
@@ -82,6 +82,7 @@ $(document).ready(function () {
             }
         });
     }
+
     $('#start-reqtool').click(function(e){
         e.preventDefault();
         localStorage.removeItem("reqTool");
@@ -94,12 +95,15 @@ $(document).ready(function () {
         window.location.href = window.location.origin + $(this).attr('action');
     });
 
+    // Checks whether the cookie radio buttons are present (visible in privatlivspolitik)
     if($('#cookieForm').length !== 0) {
 
         if (CookieMgr.readCookie('cookieOptOut') === "n") {
             $('#statCookiesNo').prop("checked", true);
             $('#originalValue').val('0');
-        }else{
+        }
+        else if (CookieMgr.readCookie('cookieOptOut') === "y") {
+            $('#statCookiesYes').prop("checked", true);
             $('#originalValue').val('1');
         }
 
@@ -108,6 +112,7 @@ $(document).ready(function () {
             var val = $('input[name=statCookies]:checked').val();
             if (val === "1") {
                 CookieMgr.createCookie('cookieOptOut', 'y', 1);
+                CookiePrompter.removePrompt();
                 $('#cookieYesAlert').removeClass('d-none');
                 $('#originalValue').val('1');
             } else {
@@ -135,7 +140,6 @@ $(document).ready(function () {
             $('#cookieButtons').addClass('d-none');
         });
     }
-
 
 
     var inFormOrLink = false;

@@ -64,6 +64,7 @@
             "optionalLabel": true
         },
         "classes":"input-width-m",
+        "required": false,
         "hint": "Dette felt skal kun udfyldes, hvis kontaktpersonen er en anden end dig selv."
       },
       "button_next": {
