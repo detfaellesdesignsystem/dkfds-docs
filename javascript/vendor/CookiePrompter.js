@@ -27,13 +27,11 @@ var CookieMgr = (function () {
     };
 
     var getCookieDomain = function (hostname) {
-        console.log("hostname", hostname);
         var domain = hostname.replace('www.', ''); // strip www
         log('setting cookie on toplevel domain:' + setCookieOnTopLevelDomain);
         if (setCookieOnTopLevelDomain) {
             domain = domain.replace(/[\w\d\-\.]*\.([\w\d\-]*\.\w{2,3})$/i, '$1');
         }
-        console.log("domain", domain);
         return domain;
     };
 
@@ -48,6 +46,7 @@ var CookieMgr = (function () {
             if (value === '') {
                 // deleting cookies from www-domain, if set
                 document.cookie = name + "=" + value + expires + ";domain=" + window.location.hostname + "; path=/";
+                console.log("Value is empty string: " + name + "=" + value + expires + ";domain=" + window.location.hostname + "; path=/");
             }
 
             var domain = getCookieDomain(window.location.hostname);
@@ -56,6 +55,7 @@ var CookieMgr = (function () {
                 document.cookie = name + "=" + value + expires + "; path=/"+ ";SameSite=Strict";
             } else {
                 document.cookie = name + "=" + value + expires + ";domain=" + domain + "; path=/"+ ";SameSite=Strict";
+                console.log("Cookie created: " + name + "=" + value + expires + ";domain=" + domain + "; path=/"+ ";SameSite=Strict");
             }
         },
         readCookie = function (name) {
