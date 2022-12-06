@@ -95,16 +95,19 @@ $(document).ready(function () {
         window.location.href = window.location.origin + $(this).attr('action');
     });
 
-    // Checks whether the cookie radio buttons are present (visible in privatlivspolitik)
+    /*
+     * If the "cookie radio buttons" are present (i.e. user is on the page "privatlivspolitik"),
+     * ensure that they show the correct cookie status and add functionality to the form.
+     */
     if($('#cookieForm').length !== 0) {
 
         if (CookieMgr.readCookie('cookieOptOut') === "n") {
             $('#statCookiesNo').prop("checked", true);
-            $('#originalValue').val('0');
+            $('#originalValue').val('0'); // Update hidden input
         }
         else if (CookieMgr.readCookie('cookieOptOut') === "y") {
             $('#statCookiesYes').prop("checked", true);
-            $('#originalValue').val('1');
+            $('#originalValue').val('1'); // Update hidden input
         }
 
         $('#cookieForm').submit(function (event) {
@@ -114,11 +117,11 @@ $(document).ready(function () {
                 CookieMgr.createCookie('cookieOptOut', 'y', 1);
                 CookiePrompter.removePrompt();
                 $('#cookieYesAlert').removeClass('d-none');
-                $('#originalValue').val('1');
+                $('#originalValue').val('1'); // Update hidden input
             } else {
                 CookiePrompter.eraseCookiesAndRemovePrompt();
                 $('#cookieNoAlert').removeClass('d-none');
-                $('#originalValue').val('0');
+                $('#originalValue').val('0'); // Update hidden input
             }
 
             $('#cookieButtons').addClass('d-none');

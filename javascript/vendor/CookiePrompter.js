@@ -45,8 +45,7 @@ var CookieMgr = (function () {
 
             if (value === '') {
                 // deleting cookies from www-domain, if set
-                document.cookie = name + "=" + value + expires + ";domain=" + window.location.hostname + "; path=/";
-                console.log("Value is empty string: " + name + "=" + value + expires + ";domain=" + window.location.hostname + "; path=/");
+                document.cookie = name + "=" + value + expires + "; path=/";
             }
 
             var domain = getCookieDomain(window.location.hostname);
@@ -55,7 +54,6 @@ var CookieMgr = (function () {
                 document.cookie = name + "=" + value + expires + "; path=/"+ ";SameSite=Strict";
             } else {
                 document.cookie = name + "=" + value + expires + ";domain=" + domain + "; path=/"+ ";SameSite=Strict";
-                console.log("Cookie created: " + name + "=" + value + expires + ";domain=" + domain + "; path=/"+ ";SameSite=Strict");
             }
         },
         readCookie = function (name) {
@@ -196,7 +194,7 @@ var PiwikProTracker = (function () {
         piwikProPath,
         params = [],
         fakeAnalytics,
-        enableLog = true;
+        enableLog = false;
 
     var log = function (msg) {
         if (window.console && enableLog) {
@@ -705,6 +703,7 @@ var CookiePrompter = (function () {
                 insertTrackingCode();
             } else {
                 log('  rendering prompt because explicit (no cookie)');
+                eraseCookies(); // Ensure that there are no cookies when the user hasn't selected an option
                 renderCookieprompt();
             }
         }
