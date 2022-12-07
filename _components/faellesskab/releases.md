@@ -135,6 +135,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">xx-12-2022</span></div>
 
 - Tilføjet klassen `full-width-image`, der kan bruges til <a href="/design/typografi/links/#billeder-som-links">billeder anvendt som links</a>. 
+- Rettet fejl i <a href="/komponenter/modal/">modaler</a>, hvor baggrunden kunne blive dækket helt af modalen på især mindre skærme.
 
 {:#version-8-2-0 .mb-0}
 ## Version 8.2.0
