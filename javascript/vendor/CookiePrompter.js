@@ -617,8 +617,8 @@ var CookiePrompter = (function () {
         html.push('<p class="mt-0" id="cookie-message-content1">' + config.textblock1);
         html.push(config.textblock2);
 
-        if (config.readMoreUrl && document.location.hash !== '#cookieprompt') {
-            html.push(' <a href="' + config.readMoreUrl + '#cookieprompt">' + config.textReadMore + '</a>');
+        if (config.readMoreUrl && document.location.pathname !== config.readMoreUrl) {
+            html.push(' <a href="' + config.readMoreUrl + '">' + config.textReadMore + '</a>');
         }
         html.push('</p>');
         html.push('</div>');
@@ -682,12 +682,6 @@ var CookiePrompter = (function () {
             }
         } else {
             log('  no trackers added. You would probably want at least one.');
-        }
-
-        // read more page
-        if (document.location.hash === '#cookieprompt') {
-            renderCookieprompt();
-            return;
         }
 
         // check for cookie
