@@ -227,8 +227,12 @@ var PiwikProTracker = (function () {
         cookieMgr.eraseCookie('stg_utm_campaign');
         cookieMgr.eraseCookie('stg_pk_campaign');
         cookieMgr.eraseCookie('stg_externalReferrer');
+        cookieMgr.eraseCookie('_stg_opt_out_simulate');
+        cookieMgr.eraseCookie('_stg_optout');
         cookieMgr.eraseCookie('stg_popup');
         cookieMgr.eraseCookie('stg_content');
+        cookieMgr.eraseCookie('csrftoken');
+        cookieMgr.eraseCookie('sessionid');
     };
 
     var callSetupCode = function (accountPath, accountId) {
