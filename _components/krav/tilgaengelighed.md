@@ -7,7 +7,9 @@ layout: styleguide
 title: Tilgængelighed
 category: Krav_category
 subcategory: Krav
-lead: "Webtilgængelighed handler om de principper og teknikker, du skal følge for, at alle kan anvende dine websteder og indholdet derpå, herunder også brugere med funktionsnedsættelser eller handicap."
+lead: Webtilgængelighed handler om de principper og teknikker, du skal følge, for
+  at alle kan anvende dine websteder og indholdet derpå, herunder også brugere med
+  funktionsnedsættelser eller handicap.
 description: Hjælp og værktøjer til at efterleve tilgængelighedskrav WCAG 2.1 level
   AA.
 tags:

@@ -70,11 +70,14 @@ tags:
 - 8.0.1
 - 8.1.0
 - 8.2.0
+- 8.2.1
 - 9.0.0
 anchor: true
 subnav:
 - text: Version 9.0.0
   href: "#version-9-0-0"
+- text: Version 8.2.1
+  href: "#version-8-2-1"
 - text: Version 8.2.0
   href: "#version-8-2-0"
 - text: Version 8.1.0
@@ -125,6 +128,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0
+
 <div><span class="small-text mt-0 d-block">xx-xx-xxxx</span></div>
 
 - <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.
@@ -136,6 +140,14 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.
 - Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.
+
+{:#version-8-2-1 .mb-0}
+## Version 8.2.1
+
+<div><span class="small-text mt-0 d-block">xx-12-2022</span></div>
+
+- Tilføjet klassen `full-width-image`, der kan bruges til <a href="/design/typografi/links/#billeder-som-links">billeder anvendt som links</a>. 
+- Rettet fejl i <a href="/komponenter/modal/">modaler</a>, hvor baggrunden kunne blive dækket helt af modalen på især mindre skærme.
 
 {:#version-8-2-0 .mb-0}
 ## Version 8.2.0
