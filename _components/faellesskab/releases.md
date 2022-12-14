@@ -140,6 +140,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.
 - Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.
+- Fjernet `jsnext:main` fra package.json.
+
 
 {:#version-8-2-1 .mb-0}
 ## Version 8.2.1
