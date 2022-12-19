@@ -141,11 +141,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.
 - Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.
 - Fjernet `jsnext:main` fra package.json.
-- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, om et trin var gennemført.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede når et trin var markeret som gennemført.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
-
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet `delete`. Brug i stedet ikonet `trash-can`.
 
 
 
