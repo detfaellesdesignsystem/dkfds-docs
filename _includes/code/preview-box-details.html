@@ -11,8 +11,8 @@
     {% endif %}
     <div class="component-example {% if include.component contains 'grid-' %}{% else %}px-4{% endif %} py-4" aria-label="Eksempel">
         {% if include.component contains "tringuide" %}
-        <div class="row mx-0">
-        <aside class="sidebar-col">
+        <div class="row">
+        <aside class="col-12 sidebar-col">
         {% endif %}
         {% include code/components/{{ include.component }}.html %}
         {% if include.component contains "tringuide" %}

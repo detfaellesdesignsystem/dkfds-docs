@@ -68,6 +68,31 @@
         "href": "#"
       }
     ],
+    "trinindikator_data": {
+      "id": "overflow-ansoeg",
+      "steps": [
+        {
+          "text": "Oplysninger om afsender",
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
+        },
+        {
+          "text": "Kontaktoplysninger",
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
+        },
+        {
+          "text": "Ansøgningens type",
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
+        },
+        {
+          "text": "Tilføj dokumentation",
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
+        },
+        {
+          "text": "Opsummering",
+          "active": true
+        }
+      ]
+    },
     "ansoegningens_type": [
       {
           "label": "Der ansøges om",

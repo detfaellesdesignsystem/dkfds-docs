@@ -4,7 +4,7 @@
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/table/table.njk" import table as table %}
 
@@ -39,58 +39,8 @@
 {% block body %}
 <main class="container page-container" id="main-content">
   <div><a href="#" class="back-link">Tilbage</a></div>
-    {{overflowmenu({
-        "button": {
-            "text": "Trin 5 af 5",
-            "icon":"arrow-drop-down"
-        },
-        "id": "overflow-ansoeg",
-        "content": "
-        <nav>
-          <ul class='sidenav-list' role='menu'>
-              <li role='none' >
-              <a href='#' role='menuitem' >
-                <span class='sidenav-number'>1.</span><span class='sidenav-title'>Oplysninger&nbsp;om&nbsp;afsender</span>
-                <span class='sidenav-icon'>
-                  <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-              </span>
-            </a>
-              </li>
-              <li role='none'>
-            <a href='#' role='menuitem' >
-                <span class='sidenav-number'>2.</span><span class='sidenav-title'>Kontaktoplysninger</span>
-                <span class='sidenav-icon'>
-                  <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-              </span>
-            </a>
-              </li>
-              <li role='none' >
-            <a href='#' role='menuitem' >
-                <span class='sidenav-number'>3.</span><span class='sidenav-title'>Ansøgningens&nbsp;type</span>
-                <span class='sidenav-icon'>
-                  <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-              </span>
-            </a>
-              </li>
-              <li role='none' >
-          <a href='#' role='menuitem' >
-              <span class='sidenav-number'>4.</span><span class='sidenav-title'>Tilføj&nbsp;dokumentation</span>
-              <span class='sidenav-icon'>
-                <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-            </span>
-          </a>
-              </li>
-              <li role='none' class='active current'>
-        <a href='#' role='menuitem' aria-current='page'>
-            <span class='sidenav-number'>5.</span><span class='sidenav-title'>Opsummering</span>
-        </a>
-              </li>
-          </ul>
-      </nav>
-        "
-        }) 
-    }}
-    <h1 class="mt-6 mb-6">Opsummering</h1>
+  {{ overflow_stepguide(trinindikator_data) }}
+    <h1>Opsummering</h1>
     <h2>Oplysninger om ansøger</h2>
     <div class="w-percent-md-70 mt-6 mb-7">
       {% for row in oplysninger_om_afsender %}

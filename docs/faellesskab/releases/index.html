@@ -3845,12 +3845,12 @@
 
 <h2 id="version-9-0-0" class="mb-0">Version 9.0.0</h2>
 
-<div><span class="small-text mt-0 d-block">xx-xx-xxxx</span></div>
+<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
 <ul>
   <li><span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.</li>
-  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.</li>
-  <li><span class="badge badge-warning badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler er rettet.</li>
+  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler er rettet.</li>
   <li><span class="badge badge-info badge-small mr-2">Change</span> Den udokumenterede klasse <code>table--lines</code> er fjernet fra kodebasen.</li>
   <li>Rettet fejl relateret til margin og padding for tabeller.</li>
   <li>Opdateret teksten på søgeknappen ved søgning i tabeller.</li>
@@ -3858,6 +3858,10 @@
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.</li>
   <li>Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.</li>
   <li>Fjernet <code>jsnext:main</code> fra package.json.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, om et trin var gennemført.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.</li>
 </ul>
 
 <h2 id="version-8-2-1" class="mb-0">Version 8.2.1</h2>

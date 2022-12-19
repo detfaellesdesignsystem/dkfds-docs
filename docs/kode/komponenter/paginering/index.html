@@ -4412,9 +4412,13 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <nav class="pagination" id="pagination-ID" aria-label="Pagineringseksempel med 12 sider">
-    <a href="#" class="button button-arrow button-first"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span class="sr-only">Første side</span></a>
+    <a href="#" class="button button-arrow button-first">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg>
+        <span class="sr-only">Første side</span></a>
     <a href="#" class="button button-arrow button-previous" aria-label="Forrige side">
-        <svg class="icon-svg" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span class="pagination-nav-link">Forrige</span>
+
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg>
+        <span class="pagination-nav-link">Forrige</span>
     </a>
     <span class="pagination-mobile">Side 8 af 12</span>
     <ul class="pagination__items">
@@ -4441,9 +4445,13 @@
         </li>
     </ul>
     <a href="#" class="button button-arrow button-next" aria-label="Næste side">
-        <span class="pagination-nav-link">Næste</span><svg class="icon-svg" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+        <span class="pagination-nav-link">Næste</span>
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+
     </a>
-    <a href="#" class="button button-arrow button-last"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span class="sr-only">Sidste side</span></a>
+    <a href="#" class="button button-arrow button-last">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg>
+        <span class="sr-only">Sidste side</span></a>
 </nav>
         
     </div>
@@ -4466,13 +4474,14 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;pagination&quot; id=&quot;pagination-ID&quot;
     aria-label=&quot;Pagineringseksempel med 12 sider&quot;&gt;
-    &lt;a href=&quot;#&quot;
-        class=&quot;button button-arrow button-first&quot;&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#first-page&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Første side&lt;/span&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button button-arrow button-first&quot;&gt;
+        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#first-page&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Første side&lt;/span&gt;&lt;/a&gt;
     &lt;a href=&quot;#&quot; class=&quot;button button-arrow button-previous&quot;
         aria-label=&quot;Forrige side&quot;&gt;
-        &lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#chevron-left&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
-            class=&quot;pagination-nav-link&quot;&gt;Forrige&lt;/span&gt;
+
+        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#chevron-left&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;span class=&quot;pagination-nav-link&quot;&gt;Forrige&lt;/span&gt;
     &lt;/a&gt;
     &lt;span class=&quot;pagination-mobile&quot;&gt;Side 8 af 12&lt;/span&gt;
     &lt;ul class=&quot;pagination__items&quot;&gt;
@@ -4507,12 +4516,13 @@
     &lt;/ul&gt;
     &lt;a href=&quot;#&quot; class=&quot;button button-arrow button-next&quot;
         aria-label=&quot;Næste side&quot;&gt;
-        &lt;span
-            class=&quot;pagination-nav-link&quot;&gt;Næste&lt;/span&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#chevron-right&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;span class=&quot;pagination-nav-link&quot;&gt;Næste&lt;/span&gt;
+        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#chevron-right&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+
     &lt;/a&gt;
-    &lt;a href=&quot;#&quot;
-        class=&quot;button button-arrow button-last&quot;&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#last-page&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Sidste side&lt;/span&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button button-arrow button-last&quot;&gt;
+        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#last-page&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Sidste side&lt;/span&gt;&lt;/a&gt;
 &lt;/nav&gt;</code></pre></figure>
 
 

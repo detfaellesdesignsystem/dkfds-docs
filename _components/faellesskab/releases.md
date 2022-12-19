@@ -129,11 +129,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0
 
-<div><span class="small-text mt-0 d-block">xx-xx-xxxx</span></div>
+<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
 - <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.
-- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.
-- <span class="badge badge-warning badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler er rettet.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.
+- <span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler er rettet.
 - <span class="badge badge-info badge-small mr-2">Change</span> Den udokumenterede klasse `table--lines` er fjernet fra kodebasen.
 - Rettet fejl relateret til margin og padding for tabeller.
 - Opdateret teksten på søgeknappen ved søgning i tabeller.
@@ -141,6 +141,12 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.
 - Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.
 - Fjernet `jsnext:main` fra package.json.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, om et trin var gennemført.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
+
+
 
 
 {:#version-8-2-1 .mb-0}

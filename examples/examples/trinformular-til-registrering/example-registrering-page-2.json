@@ -88,27 +88,25 @@
         }
     },
     "trinindikator_data": {
+        "id": "overflow-reg",
+        "responsive": true,
         "steps": [
             {
-                "safetext": "Vælg&nbsp;personer",
+                "text": "Vælg personer",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
-                "icon": {
-                    "name": "done",
-                    "ariaLabel": "Gennemført"
-                }
+                "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
             },
             {
-                "safetext": "Vælg&nbsp;noget&nbsp;mere",
+                "text": "Vælg noget mere",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
-                "active": true,
-                "current": true
+                "active": true
             },
             {
-                "safetext": "Vedhæft&nbsp;dokumenter",
+                "text": "Vedhæft dokumenter",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/"
             },
             {
-                "safetext": "Tidligere&nbsp;registrering",
+                "text": "Tidligere registrering",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
             },
             {

@@ -45,6 +45,34 @@
           ]
         }
       },
+      "trinindikator_data": {
+        "id": "overflow-ansoeg",
+        "steps": [
+          {
+            "text": "Oplysninger om afsender",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/",
+            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
+          },
+          {
+            "text": "Kontaktoplysninger",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/",
+            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
+          },
+          {
+            "text": "Ansøgningens type",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/",
+            "active": true
+          },
+          {
+            "text": "Tilføj dokumentation",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/"
+          },
+          {
+            "text": "Opsummering",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/"
+          }
+        ]
+      },
       "radiobuttons_ansoegning": {
         "id": "radiobuttons-ansoegning",
         "radiogroupLegend": "Der ansøges om",

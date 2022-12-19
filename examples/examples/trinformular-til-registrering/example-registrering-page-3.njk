@@ -4,7 +4,7 @@
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
 {% block header %}
@@ -46,15 +46,7 @@
 <div class="container page-container pt-5 pt-lg-0">
   <div class="row">
     <aside class="col-12 col-lg-3 sidebar-col">
-      <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
-        <button class="button-overflow-menu js-dropdown" data-js-target="overflow-reg" aria-haspopup="true" aria-expanded="false">
-            Trin 3 af 6
-            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
-        </button>
-        <div class="overflow-menu-inner" id="overflow-reg" aria-hidden="false">
-          {{ stepguide(trinindikator_data) }}
-        </div>
-    </div>
+      {{ overflow_stepguide(trinindikator_data) }}
     </aside>
     <main class="col-12 col-lg-9" id="main-content">
       <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-2/" class="back-link">Tilbage</a></div>

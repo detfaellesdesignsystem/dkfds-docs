@@ -46,37 +46,32 @@
       }
     },
     "trinindikator_data": {
+      "id": "overflow-reg",
+      "responsive": true,
       "steps": [
         {
-          "safetext": "Vælg&nbsp;personer",
-          "href": "#",
-          "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          "text": "Vælg personer",
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
         },
         {
-          "safetext": "Vælg&nbsp;noget&nbsp;mere",
-          "href": "#",
-          "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          "text": "Vælg noget mere",
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
         },
         {
-          "safetext": "Vedhæft&nbsp;dokumenter",
-          "href": "#",
-          "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          "text": "Vedhæft dokumenter",
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
         },
         {
-          "safetext": "Tidligere&nbsp;registrering",
-          "href": "#",
-          "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          "text": "Tidligere registrering",
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
         },
         {
           "text": "Kontaktoplysninger",
-          "href": "#",
-          "icon": {"name":"done", "ariaLabel": "Gennemført"}
+          "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
         },
         {
           "text": "Opsummering",
-          "href": "#",
-          "active": true,
-          "current": true
+          "active": true
         }
       ]
     },

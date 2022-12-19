@@ -278,7 +278,9 @@
     <nav class="nav">
         <!-- collapsible-->
         <button class="function-link button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            title="Luk mobil menu">
+            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>
+            Luk</button>
 
         <div class="portal-info-mobile">
             <p class="user"><span class="weight-semibold">Anders
@@ -304,63 +306,103 @@
     <div><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/"
             class="back-link">Tilbage</a></div>
 
-    <div class="overflow-menu  overflow-menu--open-right">
-        <button class="button-overflow-menu js-dropdown "
+    <div class="overflow-menu overflow-menu--open-right">
+        <button class="button-overflow-menu js-dropdown"
             data-js-target="overflow-ansoeg" aria-haspopup="true"
             aria-expanded="false">
             Trin 5 af 5
-            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
+
+            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
+
         </button>
         <div class="overflow-menu-inner" id="overflow-ansoeg"
             aria-hidden="true">
 
             <nav>
-                <ul class='sidenav-list' role='menu'>
-                    <li role='none'>
-                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/'
-                            role='menuitem'>
-                            <span class='sidenav-number'>1.</span><span
-                                class='sidenav-title'>Oplysninger&nbsp;om&nbsp;afsender</span>
-                            <span class='sidenav-icon'>
-                                <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
+                <ul class="sidenav-list" role="menu">
+
+                    <li role="none">
+                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/"
+                            role="menuitem">
+                            <span class="sidenav-number">1.</span>
+                            <div>
+                                <span>Oplysninger om afsender</span>
+
+                            </div>
+
+                            <span class="sidenav-icon">
+
+                                <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="false"><use xlink:href="#done"></use></svg>
+
                             </span>
+
                         </a>
                     </li>
-                    <li role='none'>
-                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/'
-                            role='menuitem'>
-                            <span class='sidenav-number'>2.</span><span
-                                class='sidenav-title'>Kontaktoplysninger</span>
-                            <span class='sidenav-icon'>
-                                <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
+
+                    <li role="none">
+                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/"
+                            role="menuitem">
+                            <span class="sidenav-number">2.</span>
+                            <div>
+                                <span>Kontaktoplysninger</span>
+
+                            </div>
+
+                            <span class="sidenav-icon">
+
+                                <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="false"><use xlink:href="#done"></use></svg>
+
                             </span>
+
                         </a>
                     </li>
-                    <li role='none'>
-                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/'
-                            role='menuitem'>
-                            <span class='sidenav-number'>3.</span><span
-                                class='sidenav-title'>Ansøgningens&nbsp;type</span>
-                            <span class='sidenav-icon'>
-                                <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
+
+                    <li role="none">
+                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/"
+                            role="menuitem">
+                            <span class="sidenav-number">3.</span>
+                            <div>
+                                <span>Ansøgningens type</span>
+
+                            </div>
+
+                            <span class="sidenav-icon">
+
+                                <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="false"><use xlink:href="#done"></use></svg>
+
                             </span>
+
                         </a>
                     </li>
-                    <li role='none'>
-                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/'
-                            role='menuitem'>
-                            <span class='sidenav-number'>4.</span><span
-                                class='sidenav-title'>Tilføj&nbsp;dokumentation</span>
-                            <span class='sidenav-icon'>
-                                <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
+
+                    <li role="none">
+                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/"
+                            role="menuitem">
+                            <span class="sidenav-number">4.</span>
+                            <div>
+                                <span>Tilføj dokumentation</span>
+
+                            </div>
+
+                            <span class="sidenav-icon">
+
+                                <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="false"><use xlink:href="#done"></use></svg>
+
                             </span>
+
                         </a>
                     </li>
-                    <li role='none' class='active current'>
-                        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/'
-                            role='menuitem' aria-current='page'>
-                            <span class='sidenav-number'>5.</span><span
-                                class='sidenav-title'>Opsummering</span>
+
+                    <li class=" active current" role="none">
+                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/"
+                            role="menuitem" aria-current="page"
+                            aria-current="page">
+                            <span class="sidenav-number">5.</span>
+                            <div>
+                                <span>Opsummering</span>
+
+                            </div>
+
                         </a>
                     </li>
                 </ul>
@@ -530,7 +572,9 @@
 <footer>
 
     <a class="back-to-top-button button button-tertiary d-print-none"
-        href="#top"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+        href="#top">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+
         <span class="d-none d-md-inline-block">Til toppen</span>
     </a>
 

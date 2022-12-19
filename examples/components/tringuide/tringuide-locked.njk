@@ -1,4 +1,23 @@
 {% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
 
-{{ stepguide(tringuiden) }}
+{{ 
+    stepguide({
+        "steps": [
+            {
+                "text": "Trin 1",
+                "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false},
+                "disabled": true
+            },
+            {
+                "text": "Trin 2",
+                "active": true,
+                "disabled": true
+            },
+            {
+                "text": "Trin 3",
+                "disabled": true
+            }
+        ]
+    }) 
+}}
 

@@ -4,7 +4,7 @@
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/form/controls/text-area.njk" import textarea as textarea %}
 {% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/buttons/buttons.njk" import button as button %}
@@ -40,51 +40,7 @@
 {% block body %}
 <main class="container page-container" id="main-content">
   <div><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/" class="back-link">Tilbage</a></div>
-    {{overflowmenu({
-        "button": {
-            "text": "Trin 3 af 5",
-            "icon":"arrow-drop-down"
-        },
-        "id": "overflow-ansoeg",
-        "content": "
-        <nav>
-          <ul class='sidenav-list' role='menu'>
-              <li role='none' >
-              <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/' role='menuitem' >
-                <span class='sidenav-number'>1.</span><span class='sidenav-title'>Oplysninger&nbsp;om&nbsp;afsender</span>
-                <span class='sidenav-icon'>
-                  <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-              </span>
-            </a>
-              </li>
-              <li role='none'>
-            <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/' role='menuitem' >
-                <span class='sidenav-number'>2.</span><span class='sidenav-title'>Kontaktoplysninger</span>
-                <span class='sidenav-icon'>
-                  <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-              </span>
-            </a>
-              </li>
-              <li role='none' class='active current'>
-            <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/' role='menuitem' aria-current='page'>
-                <span class='sidenav-number'>3.</span><span class='sidenav-title'>Ansøgningens&nbsp;type</span>
-            </a>
-              </li>
-              <li role='none'>
-          <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/' role='menuitem'>
-              <span class='sidenav-number'>4.</span><span class='sidenav-title'>Tilføj&nbsp;dokumentation</span>
-          </a>
-              </li>
-              <li role='none'>
-        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/' role='menuitem'>
-            <span class='sidenav-number'>5.</span><span class='sidenav-title'>Opsummering</span>
-        </a>
-              </li>
-          </ul>
-      </nav>
-        "
-        }) 
-    }}
+  {{ overflow_stepguide(trinindikator_data) }}
     <h1>Ansøgningens type</h1>
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/">
       {{ radiobuttons(radiobuttons_ansoegning) }}

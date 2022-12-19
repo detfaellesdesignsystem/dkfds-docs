@@ -45,6 +45,32 @@
           ]
         }
       },
+      "trinindikator_data": {
+        "id": "overflow-ansoeg",
+        "steps": [
+          {
+            "text": "Oplysninger om afsender",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/",
+            "active": true
+          },
+          {
+            "text": "Kontaktoplysninger",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/"
+          },
+          {
+            "text": "Ansøgningens type",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/"
+          },
+          {
+            "text": "Tilføj dokumentation",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/"
+          },
+          {
+            "text": "Opsummering",
+            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/"
+          }
+        ]
+      },
       "input_ansoeger": {
         "id": "input-ansoeger",
         "name": "ansoeger",
