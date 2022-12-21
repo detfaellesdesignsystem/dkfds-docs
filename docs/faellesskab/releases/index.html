@@ -3846,11 +3846,13 @@
 
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
+<p>Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængeligheden.</p>
+
 <ul>
   <li><span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.</li>
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.</li>
   <li><span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler er rettet.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Den udokumenterede klasse <code>table--lines</code> er fjernet fra kodebasen.</li>
+  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet klassen <code>table--lines</code> der var en forældet måde at style en tabel på.</li>
   <li>Rettet fejl relateret til margin og padding for tabeller.</li>
   <li>Opdateret teksten på søgeknappen ved søgning i tabeller.</li>
   <li>Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.</li>
@@ -3862,6 +3864,7 @@
   <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.</li>
   <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.</li>
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor tilbage til toppen-knappen ikke blev læst korrekt op på mindre skærmstørrelser.</li>
 </ul>
 
 <h2 id="version-8-2-1" class="mb-0">Version 8.2.1</h2>
@@ -4475,8 +4478,7 @@
 
 <footer>
     <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
-    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
-    <span class="d-none d-md-inline-block">Til toppen</span>
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg><span class="sr-only">Til toppen</span><span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
 </a>
     <div class="footer">
         <div class="container">

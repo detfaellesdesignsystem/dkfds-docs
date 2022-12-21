@@ -131,10 +131,12 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
+Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængeligheden.
+
 - <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.
 - <span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler er rettet.
-- <span class="badge badge-info badge-small mr-2">Change</span> Den udokumenterede klasse `table--lines` er fjernet fra kodebasen.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet klassen `table--lines` der var en forældet måde at style en tabel på.
 - Rettet fejl relateret til margin og padding for tabeller.
 - Opdateret teksten på søgeknappen ved søgning i tabeller.
 - Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.
@@ -146,6 +148,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet `delete`. Brug i stedet ikonet `trash-can`.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor tilbage til toppen-knappen ikke blev læst korrekt op på mindre skærmstørrelser.
 
 
 
