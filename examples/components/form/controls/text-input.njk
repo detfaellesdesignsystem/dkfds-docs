@@ -1,2 +1,9 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(params)}}
+
+{{
+    textinput({
+        "id": "input-type-text",
+        "name": "input-type-text",
+        "label": "Inputfelt med label"
+    })
+}}

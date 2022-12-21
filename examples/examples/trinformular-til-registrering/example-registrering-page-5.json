@@ -95,19 +95,15 @@
       "input_email": {
         "id": "input-email",
         "name": "email",
-        "label": {
-            "text": "E-mail"
-        },
-        "classes":"input-width-l"
+        "label": "E-mail",
+        "classes": { "input": "input-width-l" }
       },
       "input_telefonnummer": {
         "id": "input-telefonnummer",
         "name": "telefonnummer",
-        "label": {
-            "text": "Telefonnummer",
-            "optionalLabel": true
-        },
-        "classes":"input-width-s",
+        "label": "Telefonnummer",
+        "optionalLabel": true,
+        "classes": { "input": "input-width-s" },
         "required": false,
         "hint": "Behandlingstiden kan forkortes, hvis vi kan kontakte dig på telefon i tilfælde af spørgsmål"
       },

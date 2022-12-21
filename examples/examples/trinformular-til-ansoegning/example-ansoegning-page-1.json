@@ -74,27 +74,21 @@
       "input_ansoeger": {
         "id": "input-ansoeger",
         "name": "ansoeger",
-        "label": {
-            "text": "Navn på ansøger"
-        },
+        "label": "Navn på ansøger",
         "value": "Kirsten Mønster Jensen",
         "readonly": true
       },
     "input_CPR": {
         "id": "input-CPR",
         "name": "CPR",
-        "label": {
-            "text": "Personens CPR-nummer"
-        },
-        "classes":"input-width-m"
+        "label": "Personens CPR-nummer",
+        "classes": { "input": "input-width-m" }
       },
       "input_CVR": {
         "id": "input-CVR",
         "name": "CVR",
-        "label": {
-            "text": "Virksomhedens CVR-nummer"
-        },
-        "classes":"input-width-m"
+        "label": "Virksomhedens CVR-nummer",
+        "classes": { "input": "input-width-m" }
       },
       "button_next": {
         "text": "Næste",

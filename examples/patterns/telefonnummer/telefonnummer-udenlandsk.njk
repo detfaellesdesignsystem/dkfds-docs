@@ -1,2 +1,13 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(textinput_example)}}
+
+{{
+    textinput({
+        "id": "input-phonenumber-foreign",
+        "name": "input-phonenumber-foreign",
+        "label": "Telefonnummer",
+        "type": "tel",
+        "classes": { "input": "input-width-s" },
+        "hint": "Ved udenlandske numre inkluder landekode",
+        "autocomplete": "tel"
+    })
+}}

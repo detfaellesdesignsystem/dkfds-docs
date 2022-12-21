@@ -219,17 +219,91 @@
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <button class="button button-primary">
-                Gem
-            </button>
+            <div class="mb-6">
+
+                <div class="form-group">
+                    <label class="form-label" for="textinput-example-plain">Dette er en
+                        label</label>
+
+                    <input class="form-input" id="textinput-example-plain" name="textinput-example-plain" type="text" />
+
+                </div>
+
+            </div>
+            <div class="mb-6">
+
+                <div class="form-group form-error">
+                    <label class="form-label" for="textinput-example-error">Test af
+                        fejlbesked</label>
+
+                    <span class="form-error-message" id="textinput-example-error-error"><span class="sr-only">Fejl:</span> Noget er
+                        fejlet</span>
+
+                    <input class="form-input" id="textinput-example-error" value="Tekst inde i tekstfeltet" name="textinput-example-error" type="text" aria-invalid="true" aria-describedby="textinput-example-error-error " />
+
+                </div>
+
+            </div>
+            <div class="mb-6">
+
+                <div class="form-group ml-5" data-test-1="1">
+                    <label class="form-label pl-4" for="textinput-example-attribute" data-test-2="2">Test af attributter og
+                        klasser</label>
+
+                    <input class="form-input pl-8" id="textinput-example-attribute" name="textinput-example-attribute" type="text" data-test-3="3" />
+
+                </div>
+
+            </div>
+            <div class="mb-6">
+
+                <div class="form-group form-error form-limit" data-maxlength="30">
+                    <label class="form-label" for="textinput-example-extras">Alle ekstra tekster
+                        vist</label>
+                    <button class="button button-unstyled" type="button" data-tooltip="Dette er et tooltip" data-tooltip-trigger="click" data-tooltip-position="top">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+                        <span class="sr-only">Hvad betyder det?</span>
+                    </button>
+
+                    <span class="form-hint" id="textinput-example-extras-hint">Dette er en
+                        hjælpetekst</span>
+
+                    <span class="form-error-message" id="textinput-example-extras-error"><span class="sr-only">Fejl:</span> Noget er
+                        fejlet</span>
+
+                    <input class="form-input" id="textinput-example-extras" name="textinput-example-extras" type="text" aria-invalid="true" aria-describedby="textinput-example-extras-hint textinput-example-extras-error textinput-example-extras-limit-message" />
+
+                    <span id="textinput-example-extras-limit-message" class="sr-only">Du kan indtaste op til 30
+                        tegn</span>
+                    <span class="form-hint character-limit" aria-hidden="true">Du har 30 tegn tilbage</span>
+                    <span class="character-limit-sr-only sr-only" aria-live="polite">Du har 30 tegn tilbage</span>
+
+                </div>
+
+            </div>
+            <div class="mb-6">
+
+            </div>
+            <div class="mb-6">
+
+            </div>
+            <div class="mb-6">
+
+            </div>
+            <div class="mb-6">
+
+            </div>
+            <div class="mb-6">
+
+            </div>
         </div>
     </div>
 </main>
 
 <div class="container page-container">
-  <div class="row">
-    <div class="col-12">
-      
+    <div class="row">
+        <div class="col-12">
+            
 <div class="component-preview component-preview-code  component-code-mastertest" aria-label="">
     
     <div class="component-code" aria-label="Kodeeksempel">
@@ -237,9 +311,111 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;main class=&quot;container page-container&quot; id=&quot;main-content&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-12&quot;&gt;
-            &lt;button class=&quot;button button-primary&quot;&gt;
-                Gem
-            &lt;/button&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label class=&quot;form-label&quot;
+                        for=&quot;textinput-example-plain&quot;&gt;Dette er en
+                        label&lt;/label&gt;
+
+                    &lt;input class=&quot;form-input&quot; id=&quot;textinput-example-plain&quot;
+                        name=&quot;textinput-example-plain&quot; type=&quot;text&quot;&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+                &lt;div class=&quot;form-group form-error&quot;&gt;
+                    &lt;label class=&quot;form-label&quot;
+                        for=&quot;textinput-example-error&quot;&gt;Test af
+                        fejlbesked&lt;/label&gt;
+
+                    &lt;span class=&quot;form-error-message&quot;
+                        id=&quot;textinput-example-error-error&quot;&gt;&lt;span
+                            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Noget er
+                        fejlet&lt;/span&gt;
+
+                    &lt;input class=&quot;form-input&quot; id=&quot;textinput-example-error&quot;
+                        value=&quot;Tekst inde i tekstfeltet&quot;
+                        name=&quot;textinput-example-error&quot; type=&quot;text&quot;
+                        aria-invalid=&quot;true&quot;
+                        aria-describedby=&quot;textinput-example-error-error &quot;&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+                &lt;div class=&quot;form-group ml-5&quot; data-test-1=&quot;1&quot;&gt;
+                    &lt;label class=&quot;form-label pl-4&quot;
+                        for=&quot;textinput-example-attribute&quot;
+                        data-test-2=&quot;2&quot;&gt;Test af attributter og
+                        klasser&lt;/label&gt;
+
+                    &lt;input class=&quot;form-input pl-8&quot;
+                        id=&quot;textinput-example-attribute&quot;
+                        name=&quot;textinput-example-attribute&quot; type=&quot;text&quot;
+                        data-test-3=&quot;3&quot;&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+                &lt;div class=&quot;form-group form-error form-limit&quot;
+                    data-maxlength=&quot;30&quot;&gt;
+                    &lt;label class=&quot;form-label&quot;
+                        for=&quot;textinput-example-extras&quot;&gt;Alle ekstra tekster
+                        vist&lt;/label&gt;
+                    &lt;button class=&quot;button button-unstyled&quot; type=&quot;button&quot;
+                        data-tooltip=&quot;Dette er et tooltip&quot;
+                        data-tooltip-trigger=&quot;click&quot;
+                        data-tooltip-position=&quot;top&quot;&gt;
+                        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Hvad betyder det?&lt;/span&gt;
+                    &lt;/button&gt;
+
+                    &lt;span class=&quot;form-hint&quot;
+                        id=&quot;textinput-example-extras-hint&quot;&gt;Dette er en
+                        hjælpetekst&lt;/span&gt;
+
+                    &lt;span class=&quot;form-error-message&quot;
+                        id=&quot;textinput-example-extras-error&quot;&gt;&lt;span
+                            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Noget er
+                        fejlet&lt;/span&gt;
+
+                    &lt;input class=&quot;form-input&quot; id=&quot;textinput-example-extras&quot;
+                        name=&quot;textinput-example-extras&quot; type=&quot;text&quot;
+                        aria-invalid=&quot;true&quot;
+                        aria-describedby=&quot;textinput-example-extras-hint textinput-example-extras-error textinput-example-extras-limit-message&quot;&gt;
+
+                    &lt;span id=&quot;textinput-example-extras-limit-message&quot;
+                        class=&quot;sr-only&quot;&gt;Du kan indtaste op til 30
+                        tegn&lt;/span&gt;
+                    &lt;span class=&quot;form-hint character-limit&quot;
+                        aria-hidden=&quot;true&quot;&gt;Du har 30 tegn tilbage&lt;/span&gt;
+                    &lt;span class=&quot;character-limit-sr-only sr-only&quot;
+                        aria-live=&quot;polite&quot;&gt;Du har 30 tegn tilbage&lt;/span&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;mb-6&quot;&gt;
+
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/main&gt;</code></pre></figure>
@@ -249,10 +425,9 @@
 </div>
 
 
+        </div>
     </div>
-  </div>
 </div>
-
 
 <footer class="demo-footer d-print-none" aria-label="Gå tilbage til oversigten eller skift tema">
   <div class="demo-footer-content d-flex align-items-center">

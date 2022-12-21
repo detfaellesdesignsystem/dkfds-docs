@@ -75,22 +75,15 @@
     "input_telefonnummer": {
         "id": "input-telefonnummer",
         "name": "telefonnummer",
-        "label": {
-            "text": "Telefonnummer"
-        },
-        "classes":"input-width-s",
-        "formgroup": {
-            "classes": "mb-6"
-        }
+        "label": "Telefonnummer",
+        "classes": { "formgroup": "mb-6", "input": "input-width-s" }
       },
       "input_navn": {
         "id": "input-navn",
         "name": "navn",
-        "label": {
-            "text": "Navn på kontaktperson",
-            "optionalLabel": true
-        },
-        "classes":"input-width-m",
+        "label": "Navn på kontaktperson",
+        "optionalLabel": true,
+        "classes": { "input": "input-width-m" },
         "required": false,
         "hint": "Dette felt skal kun udfyldes, hvis kontaktpersonen er en anden end dig selv."
       },

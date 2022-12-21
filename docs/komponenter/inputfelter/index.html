@@ -4309,12 +4309,10 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
+    <label class="form-label" for="input-type-text">Inputfelt med
+        label</label>
 
-    <label class="form-label" for="input-type-text">
-        Inputfelt med label
-    </label>
-
-    <input class="form-input" id="input-type-text" name="input-type-text" type="text" required="" />
+    <input class="form-input" id="input-type-text" name="input-type-text" type="text" />
 
 </div>
         
@@ -4432,15 +4430,13 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error">
+    <label class="form-label" for="fullname-error-example">Hvad er dit
+        fulde navn?</label>
 
-    <label class="form-label" for="fullname-error-example">
-        Hvad er dit fulde navn?
-    </label>
+    <span class="form-error-message" id="fullname-error-example-error"><span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
+        for- og efternavne med mellemrum, fx Anders Andersen</span>
 
-    <span class="form-error-message" id="fullname-error-example-error">
-        <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
-        for- og efternavne med mellemrum, fx Anders Andersen
-    </span><input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby=" fullname-error-example-error " required="" />
+    <input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby="fullname-error-example-error " />
 
 </div>
         
@@ -4455,14 +4451,13 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
+    <label class="form-label" for="input-type-help-text">Inputfelt med
+        label og hjælpetekst</label>
 
-    <label class="form-label" for="input-type-help-text">
-        Inputfelt med label og hjælpetekst
-    </label>
-    <span class="form-hint" id="input-type-help-text-hint">
-        Fx 12345678
-    </span>
-    <input class="form-input" id="input-type-help-text" name="input-type-help-text" type="text" aria-describedby="input-type-help-text-hint " required="" />
+    <span class="form-hint" id="input-type-help-text-hint">Fx
+        12345678</span>
+
+    <input class="form-input" id="input-type-help-text" name="input-type-help-text" type="text" aria-describedby="input-type-help-text-hint " />
 
 </div>
         
@@ -4522,39 +4517,30 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
+    <label class="form-label" for="input-mandatory1">Label</label>
 
-    <label class="form-label" for="input-mandatory1">
-        Label
-    </label>
-
-    <input class="form-input" id="input-mandatory1" name="input-mandatory1" type="text" required="" />
+    <input class="form-input" id="input-mandatory1" name="input-mandatory1" type="text" />
 
 </div>
-<div class="form-group">
 
-    <label class="form-label" for="input-optional">
-        Label<span class="weight-normal"> (frivilligt)</span>
-    </label>
+<div class="form-group">
+    <label class="form-label" for="input-optional">Label<span class="weight-normal"> (frivilligt)</span></label>
 
     <input class="form-input" id="input-optional" name="input-optional" type="text" />
 
 </div>
+
 <div class="form-group">
+    <label class="form-label" for="input-mandatory2">Label</label>
 
-    <label class="form-label" for="input-mandatory2">
-        Label
-    </label>
-
-    <input class="form-input" id="input-mandatory2" name="input-mandatory2" type="text" required="" />
+    <input class="form-input" id="input-mandatory2" name="input-mandatory2" type="text" />
 
 </div>
+
 <div class="form-group">
+    <label class="form-label" for="input-mandatory3">Label</label>
 
-    <label class="form-label" for="input-mandatory3">
-        Label
-    </label>
-
-    <input class="form-input" id="input-mandatory3" name="input-mandatory3" type="text" required="" />
+    <input class="form-input" id="input-mandatory3" name="input-mandatory3" type="text" />
 
 </div>
         
@@ -4577,37 +4563,28 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
-
-    <label class="form-label" for="input-optional1">
-        Label
-    </label>
+    <label class="form-label" for="input-optional1">Label</label>
 
     <input class="form-input" id="input-optional1" name="input-optional1" type="text" />
 
 </div>
-<div class="form-group">
 
-    <label class="form-label" for="input-mandatory">
-        Label<span class="weight-normal"> (*skal udfyldes)</span>
-    </label>
+<div class="form-group">
+    <label class="form-label" for="input-mandatory">Label<span class="weight-normal"> (*skal udfyldes)</span></label>
 
     <input class="form-input" id="input-mandatory" name="input-mandatory" type="text" required="" />
 
 </div>
-<div class="form-group">
 
-    <label class="form-label" for="input-optional2">
-        Label
-    </label>
+<div class="form-group">
+    <label class="form-label" for="input-optional2">Label</label>
 
     <input class="form-input" id="input-optional2" name="input-optional2" type="text" />
 
 </div>
-<div class="form-group">
 
-    <label class="form-label" for="input-optional3">
-        Label
-    </label>
+<div class="form-group">
+    <label class="form-label" for="input-optional3">Label</label>
 
     <input class="form-input" id="input-optional3" name="input-optional3" type="text" />
 
@@ -4631,10 +4608,8 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
-
-    <label class="form-label" for="input-readonly">
-        Inputfelt som er readonly
-    </label>
+    <label class="form-label" for="input-readonly">Inputfelt som er
+        readonly</label>
 
     <input class="form-input" id="input-readonly" value="012345-6789" name="input-readonly" type="text" readonly="" />
 
@@ -4655,10 +4630,8 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
-
-    <label class="form-label" for="input-disabled">
-        Inputfelt som er låst
-    </label>
+    <label class="form-label" for="input-disabled">Inputfelt som er
+        låst</label>
 
     <input class="form-input" id="input-disabled" name="input-disabled" type="text" disabled="disabled" />
 
@@ -4684,35 +4657,30 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group">
+    <label class="form-label" for="input-antal">Antal styk</label>
 
-    <label class="form-label" for="input-antal">
-        Antal
-    </label>
-
-    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-8" id="input-antal" value="56" name="input-antal" type="number" required="" />
+    <div class="form-input-wrapper form-input-wrapper--suffix">
+        <input class="form-input input-char-8" id="input-antal" value="56" name="input-antal" type="number" />
         <div class="form-input-suffix" aria-hidden="true">stk.</div>
     </div>
 
 </div>
+
 <div class="form-group">
+    <label class="form-label" for="input-pris">Pris i 1000 kr.</label>
 
-    <label class="form-label" for="input-pris">
-        Pris i 1000 kr.
-    </label>
-
-    <div class="form-input-wrapper form-input-wrapper--suffix"><input class="form-input input-char-11" id="input-pris" value="123" name="input-pris" type="number" required="" />
+    <div class="form-input-wrapper form-input-wrapper--suffix">
+        <input class="form-input input-char-11" id="input-pris" value="123" name="input-pris" type="number" />
         <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
     </div>
 
 </div>
-<div class="form-group">
 
-    <label class="form-label" for="input-beloeb">
-        Beløb i €
-    </label>
+<div class="form-group">
+    <label class="form-label" for="input-beloeb">Beløb i €</label>
 
     <div class="form-input-wrapper form-input-wrapper--prefix">
-        <div class="form-input-prefix" aria-hidden="true">€</div><input class="form-input input-width-xs" id="input-beloeb" value="1.234" name="input-beloeb" type="number" required="" />
+        <div class="form-input-prefix" aria-hidden="true">€</div><input class="form-input input-width-xs" id="input-beloeb" value="1.234" name="input-beloeb" type="number" />
     </div>
 
 </div>
@@ -4736,15 +4704,13 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-limit" data-maxlength="20" id="input-type-character-limit">
+        <div class="form-group form-limit" data-maxlength="20">
+    <label class="form-label" for="input-type-text-limit">Inputfelt med
+        karakterbegrænsning</label>
 
-    <label class="form-label" for="input-type-text-limit">
-        Inputfelt med karakterbegrænsning
-    </label>
+    <input class="form-input" id="input-type-text-limit" name="input-type-text-limit" type="text" aria-describedby="input-type-text-limit-limit-message" />
 
-    <input class="form-input" id="input-type-text-limit" name="input-type-text-limit" type="text" aria-describedby=" input-type-character-limit-message" />
-
-    <span id="input-type-character-limit-message" class="sr-only">Du kan
+    <span id="input-type-text-limit-limit-message" class="sr-only">Du kan
         indtaste op til 20 tegn</span>
     <span class="form-hint character-limit" aria-hidden="true">Du har 20
         tegn tilbage</span>
@@ -4771,62 +4737,50 @@
     <legend class="h4">Input bredde med rem</legend>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-xxs">Inputfelt med
+            klassen input-width-xxs (8rem)</label>
 
-        <label class="form-label" for="input-type-text-xxs">
-            Inputfelt med klassen input-width-xxs (8rem)
-        </label>
-
-        <input class="form-input input-width-xxs" id="input-type-text-xxs" name="input-type-text-xxs" type="text" required="" />
+        <input class="form-input input-width-xxs" id="input-type-text-xxs" name="input-type-text-xxs" type="text" />
 
     </div>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-xs">Inputfelt med
+            klassen input-width-xs (16rem)</label>
 
-        <label class="form-label" for="input-type-text-xs">
-            Inputfelt med klassen input-width-xs (16rem)
-        </label>
-
-        <input class="form-input input-width-xs" id="input-type-text-xs" name="input-type-text-xs" type="text" required="" />
+        <input class="form-input input-width-xs" id="input-type-text-xs" name="input-type-text-xs" type="text" />
 
     </div>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-s">Inputfelt med
+            klassen input-width-s (24rem)</label>
 
-        <label class="form-label" for="input-type-text-s">
-            Inputfelt med klassen input-width-s (24rem)
-        </label>
-
-        <input class="form-input input-width-s" id="input-type-text-s" name="input-type-text-s" type="text" required="" />
+        <input class="form-input input-width-s" id="input-type-text-s" name="input-type-text-s" type="text" />
 
     </div>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-m">Inputfelt med
+            klassen input-width-m (32rem)</label>
 
-        <label class="form-label" for="input-type-text-m">
-            Inputfelt med klassen input-width-m (32rem)
-        </label>
-
-        <input class="form-input input-width-m" id="input-type-text-m" name="input-type-text-m" type="text" required="" />
+        <input class="form-input input-width-m" id="input-type-text-m" name="input-type-text-m" type="text" />
 
     </div>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-l">Inputfelt med
+            klassen input-width-l (40rem)</label>
 
-        <label class="form-label" for="input-type-text-l">
-            Inputfelt med klassen input-width-l (40rem)
-        </label>
-
-        <input class="form-input input-width-l" id="input-type-text-l" name="input-type-text-l" type="text" required="" />
+        <input class="form-input input-width-l" id="input-type-text-l" name="input-type-text-l" type="text" />
 
     </div>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-xl">Inputfelt med
+            klassen input-width-xl (48rem)</label>
 
-        <label class="form-label" for="input-type-text-xl">
-            Inputfelt med klassen input-width-xl (48rem)
-        </label>
-
-        <input class="form-input input-width-xl" id="input-type-text-xl" name="input-type-text-xl" type="text" required="" />
+        <input class="form-input input-width-xl" id="input-type-text-xl" name="input-type-text-xl" type="text" />
 
     </div>
 
@@ -4836,42 +4790,34 @@
     <legend class="h4 mt-7">Input bredde med tegn</legend>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-char-4">Inputfelt
+            med klassen input-char-4 (4 tegn)</label>
 
-        <label class="form-label" for="input-type-text-char-4">
-            Inputfelt med klassen input-char-4 (4 tegn)
-        </label>
-
-        <input class="form-input input-char-4" id="input-type-text-char-4" name="input-type-text-char-4" type="text" required="" />
+        <input class="form-input input-char-4" id="input-type-text-char-4" name="input-type-text-char-4" type="text" />
 
     </div>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-char-8">Inputfelt
+            med klassen input-char-8 (8 tegn)</label>
 
-        <label class="form-label" for="input-type-text-char-8">
-            Inputfelt med klassen input-char-8 (8 tegn)
-        </label>
-
-        <input class="form-input input-char-8" id="input-type-text-char-8" name="input-type-text-char-8" type="text" required="" />
+        <input class="form-input input-char-8" id="input-type-text-char-8" name="input-type-text-char-8" type="text" />
 
     </div>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-char-11">Inputfelt
+            med klassen input-char-11 (11 tegn)</label>
 
-        <label class="form-label" for="input-type-text-char-11">
-            Inputfelt med klassen input-char-11 (11 tegn)
-        </label>
-
-        <input class="form-input input-char-11" id="input-type-text-char-11" name="input-type-text-char-11" type="text" required="" />
+        <input class="form-input input-char-11" id="input-type-text-char-11" name="input-type-text-char-11" type="text" />
 
     </div>
 
     <div class="form-group">
+        <label class="form-label" for="input-type-text-char-27">Inputfelt
+            med klassen input-char-27 (27 tegn)</label>
 
-        <label class="form-label" for="input-type-text-char-27">
-            Inputfelt med klassen input-char-27 (27 tegn)
-        </label>
-
-        <input class="form-input input-char-27" id="input-type-text-char-27" name="input-type-text-char-27" type="text" required="" />
+        <input class="form-input input-char-27" id="input-type-text-char-27" name="input-type-text-char-27" type="text" />
 
     </div>
 

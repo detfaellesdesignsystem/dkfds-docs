@@ -4497,15 +4497,13 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error">
+    <label class="form-label" for="fullname-error-example">Hvad er dit
+        fulde navn?</label>
 
-    <label class="form-label" for="fullname-error-example">
-        Hvad er dit fulde navn?
-    </label>
+    <span class="form-error-message" id="fullname-error-example-error"><span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
+        for- og efternavne med mellemrum, fx Anders Andersen</span>
 
-    <span class="form-error-message" id="fullname-error-example-error">
-        <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil
-        for- og efternavne med mellemrum, fx Anders Andersen
-    </span><input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby=" fullname-error-example-error " required="" />
+    <input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby="fullname-error-example-error " />
 
 </div>
         
@@ -4529,18 +4527,17 @@
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;form-error&quot;&gt;Hvad hedder dit
+        kursus?&lt;/label&gt;
 
-    &lt;label class=&quot;form-label&quot; for=&quot;form-error&quot;&gt;
-        Hvad hedder dit kursus?
-    &lt;/label&gt;
-    &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;
-        Fx: Skriv godt
-    &lt;/span&gt;
-    &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Giv dit kursus et navn
-    &lt;/span&gt;&lt;input class=&quot;form-input&quot; id=&quot;form-error&quot; name=&quot;form-error&quot;
-        type=&quot;text&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;form-error-hint form-error-error &quot; required /&gt;
+    &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;Fx: Skriv godt&lt;/span&gt;
+
+    &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;&lt;span
+            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Giv dit kursus et navn&lt;/span&gt;
+
+    &lt;input class=&quot;form-input&quot; id=&quot;form-error&quot; name=&quot;form-error&quot; type=&quot;text&quot;
+        aria-invalid=&quot;true&quot;
+        aria-describedby=&quot;form-error-hint form-error-error &quot;&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -4575,7 +4572,6 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
             &lt;span class=&quot;accordion-icon&quot;&gt;
                 &lt;span class=&quot;icon_text&quot;&gt;Fejl&lt;/span&gt;
                 &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#highlight-off&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-
             &lt;/span&gt;
         &lt;/button&gt;
 
@@ -4675,9 +4671,8 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;form novalidate class=&quot;form mb-7 input-width-m&quot;&gt;
 
     &lt;div class=&quot;form-group form-error&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;options-error&quot;&gt;
-            Dropdown (select)
-        &lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;options-error&quot;&gt;Dropdown
+            (select)&lt;/label&gt;
 
         &lt;span class=&quot;form-error-message&quot; id=&quot;options-error-error&quot;&gt;&lt;span
                 class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Vælg en mulighed&lt;/span&gt;
@@ -4715,17 +4710,17 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;fullname-error-example&quot;&gt;Hvad er dit
+        fulde navn?&lt;/label&gt;
 
-    &lt;label class=&quot;form-label&quot; for=&quot;fullname-error-example&quot;&gt;
-        Hvad er dit fulde navn?
-    &lt;/label&gt;
+    &lt;span class=&quot;form-error-message&quot;
+        id=&quot;fullname-error-example-error&quot;&gt;&lt;span
+            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Skriv dit fulde navn, og adskil
+        for- og efternavne med mellemrum, fx Anders Andersen&lt;/span&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;fullname-error-example-error&quot;&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Skriv dit fulde navn, og adskil
-        for- og efternavne med mellemrum, fx Anders Andersen
-    &lt;/span&gt;&lt;input class=&quot;form-input&quot; id=&quot;fullname-error-example&quot;
+    &lt;input class=&quot;form-input&quot; id=&quot;fullname-error-example&quot;
         name=&quot;fullname-error-example&quot; type=&quot;text&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot; fullname-error-example-error &quot; required /&gt;
+        aria-describedby=&quot;fullname-error-example-error &quot;&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -4746,18 +4741,16 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;Pris i 1000
+        kr.&lt;/label&gt;
 
-    &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;
-        Pris i 1000 kr.
-    &lt;/label&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;input-pris-error-error&quot;&gt;&lt;span
+            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv en pris&lt;/span&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;input-pris-error-error&quot;&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv en pris
-    &lt;/span&gt;
-    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input
-            class=&quot;form-input input-char-11&quot; id=&quot;input-pris-error&quot;
-            name=&quot;input-pris&quot; type=&quot;number&quot; aria-invalid=&quot;true&quot;
-            aria-describedby=&quot; input-pris-error-error &quot; required /&gt;
+    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;
+        &lt;input class=&quot;form-input input-char-11&quot; id=&quot;input-pris-error&quot;
+            value=&quot;123&quot; name=&quot;input-pris-error&quot; type=&quot;number&quot;
+            aria-invalid=&quot;true&quot; aria-describedby=&quot;input-pris-error-error &quot;&gt;
         &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
     &lt;/div&gt;
 
@@ -4794,9 +4787,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
                         class=&quot;form-radio&quot;&gt;
                     &lt;label class=&quot;form-label&quot;
                         for=&quot;sagen-omhandler-ulykkesforsikring&quot;
-                        id=&quot;sagen-omhandler-ulykkesforsikring-form-label&quot;&gt;
-                        Ulykkesforsikring
-                    &lt;/label&gt;
+                        id=&quot;sagen-omhandler-ulykkesforsikring-form-label&quot;&gt;Ulykkesforsikring&lt;/label&gt;
                 &lt;/div&gt;
             &lt;/li&gt;
             &lt;li&gt;
@@ -4807,9 +4798,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
                         class=&quot;form-radio&quot;&gt;
                     &lt;label class=&quot;form-label&quot;
                         for=&quot;sagen-omhandler-erstatningsansvar&quot;
-                        id=&quot;sagen-omhandler-erstatningsansvar-form-label&quot;&gt;
-                        Erstatningsansvar
-                    &lt;/label&gt;
+                        id=&quot;sagen-omhandler-erstatningsansvar-form-label&quot;&gt;Erstatningsansvar&lt;/label&gt;
                 &lt;/div&gt;
             &lt;/li&gt;
             &lt;li&gt;
@@ -4820,9 +4809,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
                         class=&quot;form-radio&quot;&gt;
                     &lt;label class=&quot;form-label&quot;
                         for=&quot;sagen-omhandler-forsikringsselskab&quot;
-                        id=&quot;sagen-omhandler-forsikringsselskab-form-label&quot;&gt;
-                        Forsikringsselskab
-                    &lt;/label&gt;
+                        id=&quot;sagen-omhandler-forsikringsselskab-form-label&quot;&gt;Forsikringsselskab&lt;/label&gt;
                 &lt;/div&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
@@ -4846,9 +4833,8 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     <div class="component-code" aria-label="Kodeeksempel">
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-error&quot;&gt;
-        Tekstområde med fejlmeddelelse
-    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-error&quot;&gt;Tekstområde med
+        fejlmeddelelse&lt;/label&gt;
 
     &lt;span class=&quot;form-error-message&quot;
         id=&quot;form-error-message-input-error&quot;&gt;&lt;span

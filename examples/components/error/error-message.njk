@@ -1,2 +1,11 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(textinput_example)}}
+
+{{
+    textinput({
+        "id": "form-error",
+        "name": "form-error",
+        "label": "Hvad hedder dit kursus?",
+        "hint": "Fx: Skriv godt",
+        "errorMessage": "Giv dit kursus et navn"
+    })
+}}

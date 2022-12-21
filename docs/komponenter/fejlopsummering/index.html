@@ -4344,15 +4344,14 @@
 <form novalidate="">
 
     <div class="form-group form-error">
+        <label class="form-label" for="example-name-error">Hvad er dit
+            fulde navn?</label>
 
-        <label class="form-label" for="example-name">
-            Hvad er dit fulde navn?
-        </label>
+        <span class="form-error-message" id="example-name-error-error"><span class="sr-only">Fejl:</span> Skriv dit fulde navn, og
+            adskil for- og efternavne med mellemrum, fx Anders
+            Andersen</span>
 
-        <span class="form-error-message" id="example-name-error">
-            <span class="sr-only">Fejl:</span> Skriv dit fulde navn, og
-            adskil for- og efternavne med mellemrum, fx Anders Andersen
-        </span><input class="form-input" id="example-name" name="form-error" type="text" aria-invalid="true" aria-describedby=" example-name-error " required="" />
+        <input class="form-input" id="example-name-error" name="example-name-error" type="text" aria-invalid="true" aria-describedby="example-name-error-error " />
 
     </div>
 

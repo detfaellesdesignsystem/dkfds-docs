@@ -7,29 +7,21 @@
 <h1 class="h2">Dine kontaktoplysninger</h1>
 <form novalidate>
     {{textinput({
-        "id":"fnavn",
-        "label": {
-            "text":"Fornavn"
-            },
-        "name":"fnavn"})}}
+        "id": "fnavn",
+        "label": "Fornavn",
+        "name": "fnavn"})}}
     {{textinput({
-        "name":"enavn", 
-        "label": {
-            "text":"Efternavn"
-            },
-        "id":"enavn"})}}
+        "name": "enavn", 
+        "label": "Efternavn",
+        "id": "enavn"})}}
     {{textinput({
         "id":"fieldset-email",
-        "label":{
-            "text":"E-mail adresse"
-            },
+        "label":"E-mail adresse",
         "name":"email"})}}
     {{textinput({
         "id":"fieldset-telefon",
-        "label": {
-            "text":"Telefonnummer"
-            },
-        "classes":"input-width-s",
+        "label": "Telefonnummer",
+        "classes": { "input": "input-width-s" },
         "name":"telefon"})}}
 
     {{ radiobuttons({

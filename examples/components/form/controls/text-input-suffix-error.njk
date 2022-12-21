@@ -1,4 +1,16 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{%- for input in params -%}
-    {{textinput(input)}}
-{% endfor -%}
+
+{{
+    textinput({
+        "id": "input-pris-error",
+        "name": "input-pris-error",
+        "label": "Pris i 1000 kr.",
+        "type": "number",
+        "suffix": ".000 kr",
+        "value": "123",
+        "errorMessage": "Angiv en pris",
+        "classes": {
+            "input": "input-char-11"
+        }
+    })
+}}

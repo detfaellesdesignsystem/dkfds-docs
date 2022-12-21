@@ -221,15 +221,13 @@
     
       <h1 id="example-heading-telefonnummer-fejl-uden-landekode" class="sr-only">Telefonnummer fejl uden landekode</h1>
       <div class="form-group form-error">
+    <label class="form-label" for="input-phonenumber-no-countrycode">Telefonnummer</label>
 
-    <label class="form-label" for="input-phonenumber-no-countrycode">
-        Telefonnummer
-    </label>
+    <span class="form-error-message" id="input-phonenumber-no-countrycode-error"><span class="sr-only">Fejl:</span> Indtast et gyldigt
+        telefonnummer&lt;br/&gt;Ved udenlandske numre inkluder landekode,
+        fx +49 123 1234 1234 eller 0044 808 157 0192</span>
 
-    <span class="form-error-message" id="input-phonenumber-no-countrycode-error">
-        <span class="sr-only">Fejl:</span> Indtast et gyldigt
-        telefonnummer<br />Ved udenlandske numre inkluder landekode, fx +49 123 1234 1234 eller 0044 808 157 0192
-    </span><input class="form-input input-width-s" id="input-phonenumber-no-countrycode" value="0123 4567 8900" name="input-phonenumber" type="tel" aria-invalid="true" aria-describedby=" input-phonenumber-no-countrycode-error " required="" autocomplete="tel" />
+    <input class="form-input input-width-s" id="input-phonenumber-no-countrycode" value="0123 4567 8900" name="input-phonenumber-no-countrycode" type="tel" aria-invalid="true" aria-describedby="input-phonenumber-no-countrycode-error " autocomplete="tel" />
 
 </div>
 

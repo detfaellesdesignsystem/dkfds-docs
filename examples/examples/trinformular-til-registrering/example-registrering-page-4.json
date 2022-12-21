@@ -94,10 +94,8 @@
     "textinput_data": {
       "id": "input-case",
       "name": "case",
-      "label": {
-          "text": "Tidligere registreringsnummer"
-      },
-      "classes":"input-width-m"
+      "label": "Tidligere registreringsnummer",
+      "classes": { "input": "input-width-m" }
     },
     "dateinput_data": {
       "labels": {

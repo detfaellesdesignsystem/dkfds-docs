@@ -1,15 +1,107 @@
 {% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/icons/icons.njk" import icon as icon %}
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
 
 {% block body %}
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            {{ 
-                button({
-                    "variant": "primary",
-                    "text": "Gem"
-                }) 
-            }}
+            <div class="mb-6">
+                {{
+                    textinput({
+                        "label": "Dette er en label",
+                        "id": "textinput-example-plain",
+                        "name": "textinput-example-plain"
+                    })
+                }}
+            </div>
+            <div class="mb-6">
+                {{
+                    textinput({
+                        "label": "Test af fejlbesked",
+                        "id": "textinput-example-error",
+                        "name": "textinput-example-error",
+                        "errorMessage": "Noget er fejlet",
+                        "value": "Tekst inde i tekstfeltet"
+                    })
+                }}
+            </div>
+            <div class="mb-6">
+                {{
+                    textinput({
+                        "label": "Test af attributter og klasser",
+                        "id": "textinput-example-attribute",
+                        "name": "textinput-example-attribute",
+                        "classes": {
+                            "formgroup": "ml-5",
+                            "label": "pl-4",
+                            "input": "pl-8"
+                        },
+                        "attributes": {
+                            "formgroup": "data-test-1=\"1\"",
+                            "label": "data-test-2=\"2\"",
+                            "input": "data-test-3=\"3\""
+                        }
+                    })
+                }}
+            </div>
+            <div class="mb-6">
+                {{
+                    textinput({
+                        "label": "Alle ekstra tekster vist",
+                        "id": "textinput-example-extras",
+                        "name": "textinput-example-extras",
+                        "tooltip": "Dette er et tooltip",
+                        "hint": "Dette er en hjælpetekst",
+                        "errorMessage": "Noget er fejlet",
+                        "characterLimit": 30
+                    })
+                }}
+            </div>
+            <div class="mb-6">
+                {#
+                    button({
+                        "variant": "primary",
+                        "text": "Gem"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    icon({
+                        "iconName": "print"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    icon({
+                        "iconName": "print",
+                        "classes": "ml-4",
+                        "ariaLabel": "Printer icon"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    icon_svg({
+                        "name": "print"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    icon_svg({
+                        "name": "print",
+                        "classes": "ml-5",
+                        "ariaLabel": "Another printer icon",
+                        "focusable": true,
+                        "ariaHidden": false,
+                        "tabindex": true
+                    })
+                #}
+            </div>
         </div>
     </div>
 </main>

@@ -2,11 +2,11 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 
 {% set radiogroupContent1 = 
-textinput({ "id":"textinput1", "label":{ "text":"Inputfelt med label" }, "classes":"input-width-m", "name":"text1"}) 
+textinput({ "id": "textinput1", "label": "Inputfelt med label", "classes": { "input": "input-width-m" }, "name": "text1"}) 
 %}
 
 {% set radiogroupContent2 = 
-textinput({ "id":"textinput2", "label":{ "text":"Inputfelt med anden label" }, "classes":"input-width-m", "name":"text2"}) 
+textinput({ "id": "textinput2", "label": "Inputfelt med anden label", "classes": { "input": "input-width-m" }, "name": "text2"}) 
 %}
 
 {{ 
