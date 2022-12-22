@@ -63,7 +63,7 @@ $(document).ready(function () {
             enableLog: false,
             explicitAccept: true,
             textHeader: 'Fortæl os om du accepterer cookies',
-            textblock1: 'Vi indsamler statistik ved hjælp af cookies til at forbedre brugeroplevelsen. Alle indsamlede data anonymiseres.',
+            textblock1: 'Vi indsamler statistik ved hjælp af tredjepartscookies til at forbedre brugeroplevelsen. Alle indsamlede data anonymiseres.',
             textblock2: '',
             textReadMore: 'Læs mere om vores brug af cookies',
             textDontAccept: 'Nej tak til cookies',
