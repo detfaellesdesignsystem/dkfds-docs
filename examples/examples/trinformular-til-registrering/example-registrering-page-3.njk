@@ -1,7 +1,9 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
@@ -14,7 +16,7 @@
   {{ portal_header(portal_header_data) }}
   
   {% set authorityText = 
-      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
     %}
     {{ 
       solution_header({
@@ -35,20 +37,18 @@
 
   <div class="overlay"></div>
   <nav class="nav"> <!-- collapsible-->
-    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+    <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
 
-    <div class="portal-info-mobile">
-      <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
+    {{ mobile_portal_header(portal_header_data) }}
 
-      <a href="#" class="button button-secondary button-signout">
-        Log af
-      </a>
-    </div>
-
-    <div class="solution-info-mobile">
-      <p class="bold">Myndighedsnavn</p>
-      <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
-    </div>
+    {{ 
+      mobile_solution_header({
+          "authority": {
+              "name": "Myndighedsnavn",
+              "text": authorityText
+          }
+      }) 
+    }}
 
     <div class="navbar">
       <div class="navbar-inner navbar-context-actions container">

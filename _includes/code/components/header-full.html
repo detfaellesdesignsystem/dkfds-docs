@@ -55,7 +55,7 @@
     <div class="overlay"></div>
     <nav class=" nav">
         <button class="function-link button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <!-- Start: Hovedmenu -->
         <div class="navbar navbar-primary">
@@ -209,19 +209,28 @@
         <!-- 5: Contextual actions end-->
 
         <div class="portal-info-mobile">
-            <p class="user">Christian Emil Vestergaard Christensen</p>
-            <p>Københavns Urmager og Værksted v/Martin Elsig</p>
-            <a href="#" class="button button-secondary alert-leave"
-                role="button">
+
+            <p class="user">
+
+                <span class="username">Anders Andersen, Forsikringens
+                    Forsikringsfirma</span>
+
+            </p>
+
+            <button class="button button-secondary d-print-none mt-3">
                 Log af
-            </a>
+            </button>
         </div>
 
         <div class="solution-info-mobile">
-            <p class="h5 authority-name">Myndighedsnavn</p>
-            <p>Support: 12 34 56 78 · <a href="#"
-                    class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a>
+
+            <h2 class="authority-name">Myndighedsnavn</h2>
+
+            <p>Support: 12 34 56 78 <span class="d-print-none">· <a
+                        href="#"
+                        class="icon-link function-link">Kontakt<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
             </p>
+
         </div>
 
     </nav>

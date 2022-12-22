@@ -55,7 +55,7 @@
     <nav class=" nav">
         <!-- collapsible-->
         <button class="function-link button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         <!-- 3: Main navigation-->
         <div class="navbar navbar-primary">
             <!--3A: Main navigation-->
@@ -98,19 +98,28 @@
         <!-- 5: Contextual actions end-->
 
         <div class="portal-info-mobile">
-            <p class="user bold">Anders Andersen, Forsikringens
-                Forsikringsfirma</p>
-            <a href="#"
-                class="button button-secondary button-signout alert-leave">
+
+            <p class="user">
+
+                <span class="username">Anders Andersen, Forsikringens
+                    Forsikringsfirma</span>
+
+            </p>
+
+            <button class="button button-secondary d-print-none mt-3">
                 Log af
-            </a>
+            </button>
         </div>
 
         <div class="solution-info-mobile">
-            <p class="h5 authority-name">Myndighedsnavn</p>
-            <p>Support: 12 34 56 78 · <a href="#"
-                    class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a>
+
+            <h2 class="authority-name">Myndighedsnavn</h2>
+
+            <p>Support: 12 34 56 78 <span class="d-print-none">· <a
+                        href="#"
+                        class="icon-link function-link">Kontakt<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
             </p>
+
         </div>
 
     </nav> <!-- collapsible nav end-->

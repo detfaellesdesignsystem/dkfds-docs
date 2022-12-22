@@ -1,6 +1,8 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
 {% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 
 <header class="header">
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
@@ -26,7 +28,7 @@
     <!-- Start: Navigation -->
     <div class="overlay"></div>
     <nav class=" nav">
-        <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
 
         <!-- Start: Hovedmenu -->
         <div class="navbar navbar-primary">
@@ -150,18 +152,16 @@
         </div>
         <!-- 5: Contextual actions end-->
 
-        <div class="portal-info-mobile">
-        <p class="user">Christian Emil Vestergaard Christensen</p>
-        <p>Københavns Urmager og Værksted v/Martin Elsig</p>
-        <a href="#" class="button button-secondary alert-leave" role="button">
-            Log af
-        </a>
-        </div>
+        {{ mobile_portal_header(portal_header_data) }}
 
-        <div class="solution-info-mobile">
-        <p class="h5 authority-name">Myndighedsnavn</p>
-        <p>Support: 12 34 56 78 · <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></p>
-        </div>
+        {{ 
+            mobile_solution_header({
+                "authority": {
+                    "name": "Myndighedsnavn",
+                    "text": authorityText
+                }
+            }) 
+        }}
 
     </nav>
     <!-- Slut: Navigation -->
