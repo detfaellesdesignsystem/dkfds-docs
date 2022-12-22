@@ -1,17 +1,12 @@
 {
-  "portal_header_data": {
-    "compact": true,
-    "user": {
-      "name": "Anders Andersen, Forsikringens Forsikringsfirma"
-    },
-    "logolink": {
-      "sronly": "Portalnavn",
-      "href": "#"
-    },
-    "link": {
-      "href": "#",
-      "class": "button-secondary",
-      "text": "Log af"
+    "portal_header_data": {
+        "compact": true,
+        "user": {
+            "name": "Anders Andersen, Forsikringens Forsikringsfirma"
+        },
+        "logolink": {
+            "sronly": "Portalnavn",
+            "href": "#"
+        }
     }
-  }
 }

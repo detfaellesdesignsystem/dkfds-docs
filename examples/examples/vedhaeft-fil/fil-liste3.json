@@ -8,20 +8,6 @@
       "href" : "#"
   }
 },
-"solution_header_data": {
-  "classes": "header-end",
-  "title": {
-      "href": "#",
-      "text": "Fejl i vedhæftede filer"
-  },
-  "solutionInfo": {
-    "hideOnPrint": false
-  },
-  "authority": {
-      "name": "Myndighedsnavn",
-      "text": "Support: 12 34 56 78 <span class='d-print-none'>· <a href=\"javascript:void(0);\" data-module=\"modal\" data-target=\"modal-contact\" class=\"function-link d-inline-block\"><svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#card-text\"></use></svg>Kontakt</a></span>"
-    }
-},
   "modal_data": {
     "id": "modal-contact",
     "headingId": "modal-contact-title",

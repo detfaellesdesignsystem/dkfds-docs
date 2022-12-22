@@ -1,27 +1,23 @@
 {
-  "portal_header_data": {
-    "compact": true,
-    "user": {
-      "name": "Anders Andersen, Forsikringens Forsikringsfirma"
+    "portal_header_data": {
+        "compact": true,
+        "user": {
+            "name": "Anders Andersen, Forsikringens Forsikringsfirma"
+        },
+        "logolink": {
+            "sronly": "Portalnavn",
+            "href": "#"
+        }
     },
-    "logolink": {
-      "sronly": "Portalnavn",
-      "href": "#"
-    },
-    "link": {
-      "href": "#",
-      "class": "button-secondary",
-      "text": "Log af"
+    "solution_header_data": {
+        "lastHeader": true,
+        "title": {
+            "href": "#",
+            "text": "Løsningstitel"
+        },
+        "authority": {
+            "name": "Myndighedsnavn",
+            "text": "Support: 12 34 56 78"
+        }
     }
-  },
-  "solution_header_data": {
-    "title": {
-      "href": "#",
-      "text": "Løsningstitel"
-    },
-    "authority": {
-      "name": "Myndighedsnavn",
-      "text": "Support: 12 34 56 78"
-    }
-  }
 }

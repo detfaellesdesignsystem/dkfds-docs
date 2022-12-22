@@ -17,7 +17,23 @@
     <div id="top"></div>
     <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {{ portal_header(portal_header_data) }}
-    {{ solution_header(solution_header_data) }}
+    
+    {% set authorityText = 
+      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    %}
+    {{ 
+      solution_header({
+        "lastHeader": false,
+        "title": {
+          "href": "#",
+          "text": "Sagsunivers"
+        },
+        "authority": {
+          "name": "Myndighedsnavn",
+          "text": authorityText
+        }
+      }) 
+    }}
 
     <div class="overlay"></div>
     <nav class="nav">
