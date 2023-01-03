@@ -940,26 +940,6 @@
 </li>
     
 
-  
-    
-
-
-<li class="  " role="none">
-
-  
-
-
-  
-    
-    <a href="/design/tilgaengelighed/" role="menuitem"  class="nav-link">
-        Tilgængelighed
-      </a>
-     
-    
-  
-</li>
-    
-
 
         </ul>
       </div>
@@ -3337,6 +3317,26 @@
 </li>
     
 
+  
+    
+
+
+<li class="  " role="none">
+
+  
+
+
+  
+    
+    <a href="/krav/tilgaengelighed/" role="menuitem"  class="nav-link">
+        Tilgængelighed
+      </a>
+     
+    
+  
+</li>
+    
+
 
         </ul>
       </div>
@@ -3692,7 +3692,16 @@
 
 
 <li class=" " role="none">
-<a href="#sekundære-links"  role="menuitem">Sekundære links</a>
+<a href="#sekundaere-links"  role="menuitem">Sekundære links</a>
+</li>
+
+    
+
+    
+
+
+<li class=" " role="none">
+<a href="#billeder-som-links"  role="menuitem">Billeder som links</a>
 </li>
 
     
@@ -3853,7 +3862,8 @@
           
           <ul class="d-lg-none nobullet-list">
           <li><a href="#eksternt-link">Eksternt link</a></li>
-          <li><a href="#sekundære-links">Sekundære links</a></li>
+          <li><a href="#sekundaere-links">Sekundære links</a></li>
+          <li><a href="#billeder-som-links">Billeder som links</a></li>
           
           </ul>
           
@@ -3862,12 +3872,8 @@
 
           
 
-          
-<section class="styleguide-child-container content" id="section-/kode/typografi/links/links-ekstern">
-  <h2 id="eksternt-link">Eksternt link</h2>
-  
-  
-  
+          <h2 id="eksternt-link">Eksternt link</h2>
+
 <div class="component-preview  component-preview-external-link" aria-label="Eksempel på eksternt link">
     
     <div class="component-link px-4 py-4">
@@ -3886,9 +3892,7 @@
     
 </div>
 
-
-  
-  <h3 class="h4">HTML Struktur</h3>
+<h3>HTML Struktur</h3>
 
 <div class="component-preview component-preview-code  component-code-external-link" aria-label="">
     
@@ -3904,13 +3908,8 @@
 
 <p>Eksternt link gør brug af ikoner. <a href="/kode/ikoner/">Se dokumentationen for implementering af ikoner</a>.</p>
 
-</section>
+<h2 id="sekundaere-links">Sekundære links</h2>
 
-<section class="styleguide-child-container content" id="section-/kode/typografi/links/links-secondary">
-  <h2 id="sekundære-links">Sekundære links</h2>
-  
-  
-  
 <div class="component-preview  component-preview-secondary-links" aria-label="Eksempel på sekundære links">
     
     <div class="component-link px-4 py-4">
@@ -3927,9 +3926,7 @@
     
 </div>
 
-
-  
-  <h3 class="h4">HTML Struktur</h3>
+<h3>HTML Struktur</h3>
 
 <div class="component-preview component-preview-code  component-code-secondary-links" aria-label="">
     
@@ -3941,9 +3938,17 @@
     </div>
 </div>
 
+<h2 id="billeder-som-links">Billeder som links</h2>
 
-</section>
+<p>Brug en <a href="/kode/utilities/#display">hjælpeklasse</a> til at vælge en anden display-værdi end <code>inline</code>.</p>
 
+<p>Tilføj yderligere klassen <code>full-width-image</code>, hvis billedets bredde ikke skal begrænses.</p>
+
+<p>Nedenstående kode viser et eksempel på, hvordan klasserne kan anvendes:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;a href=&quot;#&quot; class=&quot;d-block full-width-image&quot;&gt;
+  &lt;img src=&quot;...&quot; alt=&quot;...&quot;&gt;
+&lt;/a&gt;</code></pre></figure>
 
 
           

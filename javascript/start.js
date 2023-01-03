@@ -59,11 +59,11 @@ $(document).ready(function () {
                     piwikProPath: 'erst.containers.piwik.pro'
                 }
             }],
-            readMoreUrl: '/omdesignsystemet/privatlivspolitik-cookies/',
+            readMoreUrl: '/privatlivspolitik-cookies/',
             enableLog: false,
             explicitAccept: true,
             textHeader: 'Fortæl os om du accepterer cookies',
-            textblock1: 'Vi indsamler statistik ved hjælp af cookies. Alle indsamlede data anonymiseres.',
+            textblock1: 'Vi indsamler statistik ved hjælp af tredjepartscookies til at forbedre brugeroplevelsen. Alle indsamlede data anonymiseres.',
             textblock2: '',
             textReadMore: 'Læs mere om vores brug af cookies',
             textDontAccept: 'Nej tak til cookies',
@@ -82,6 +82,7 @@ $(document).ready(function () {
             }
         });
     }
+
     $('#start-reqtool').click(function(e){
         e.preventDefault();
         localStorage.removeItem("reqTool");
@@ -94,13 +95,19 @@ $(document).ready(function () {
         window.location.href = window.location.origin + $(this).attr('action');
     });
 
+    /*
+     * If the "cookie radio buttons" are present (i.e. user is on the page "privatlivspolitik"),
+     * ensure that they show the correct cookie status and add functionality to the form.
+     */
     if($('#cookieForm').length !== 0) {
 
         if (CookieMgr.readCookie('cookieOptOut') === "n") {
             $('#statCookiesNo').prop("checked", true);
-            $('#originalValue').val('0');
-        }else{
-            $('#originalValue').val('1');
+            $('#originalValue').val('0'); // Update hidden input
+        }
+        else if (CookieMgr.readCookie('cookieOptOut') === "y") {
+            $('#statCookiesYes').prop("checked", true);
+            $('#originalValue').val('1'); // Update hidden input
         }
 
         $('#cookieForm').submit(function (event) {
@@ -108,12 +115,13 @@ $(document).ready(function () {
             var val = $('input[name=statCookies]:checked').val();
             if (val === "1") {
                 CookieMgr.createCookie('cookieOptOut', 'y', 1);
+                CookiePrompter.removePrompt();
                 $('#cookieYesAlert').removeClass('d-none');
-                $('#originalValue').val('1');
+                $('#originalValue').val('1'); // Update hidden input
             } else {
                 CookiePrompter.eraseCookiesAndRemovePrompt();
                 $('#cookieNoAlert').removeClass('d-none');
-                $('#originalValue').val('0');
+                $('#originalValue').val('0'); // Update hidden input
             }
 
             $('#cookieButtons').addClass('d-none');
@@ -135,7 +143,6 @@ $(document).ready(function () {
             $('#cookieButtons').addClass('d-none');
         });
     }
-
 
 
     var inFormOrLink = false;

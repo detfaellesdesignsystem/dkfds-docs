@@ -37,7 +37,7 @@ Følg retningslinjer og principperne for design og layout. Brug komponenterne og
 {:.nobullet-list}
 
 * <a href="/design/designtjek/">Designtjek</a>
-* <a href="/design/tilgaengelighed/">Tilgængelighed (WCAG 2.1)</a>
+* <a href="/krav/tilgaengelighed/">Tilgængelighed</a>
 
 {:.h4}
 

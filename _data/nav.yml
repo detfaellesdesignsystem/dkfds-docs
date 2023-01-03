@@ -26,6 +26,7 @@ mobile:
 Krav_category:
 - href: /krav/borgerdk-virk/
 - href: /krav/om-kravene/
+- href: /krav/tilgaengelighed/
 
 #Left menu for design-category
 Design_category:
@@ -41,7 +42,6 @@ Design_category:
   categorynav: 'Layout_category'
 - href: /design/designressourcer/
 - href: /design/designtjek/
-- href: /design/tilgaengelighed/
 
 Datavisualisering_category:
   - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
