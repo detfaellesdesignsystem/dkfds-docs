@@ -155,10 +155,11 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 {:#version-8-2-1 .mb-0}
 ## Version 8.2.1
 
-<div><span class="small-text mt-0 d-block">xx-12-2022</span></div>
+<div><span class="small-text mt-0 d-block">03-01-2023</span></div>
 
 - Tilføjet klassen `full-width-image`, der kan bruges til <a href="/design/typografi/links/#billeder-som-links">billeder anvendt som links</a>. 
 - Rettet fejl i <a href="/komponenter/modal/">modaler</a>, hvor baggrunden kunne blive dækket helt af modalen på især mindre skærme.
+- Opdateret licensinformation og tilføjet licensfilen til <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link" target="_blank">zip-filen i GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 
 {:#version-8-2-0 .mb-0}
 ## Version 8.2.0

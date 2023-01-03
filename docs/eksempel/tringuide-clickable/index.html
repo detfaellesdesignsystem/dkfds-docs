@@ -220,58 +220,44 @@
     <main class="container page-container" id="main-content">
     
       <h1 id="example-heading-tringuide-clickable" class="sr-only">Tringuide clickable</h1>
-      <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive">
-    <button class="button-overflow-menu js-dropdown" data-js-target="trinindikator-klikbar" aria-haspopup="true" aria-expanded="false">
-        Trin 2 af 3
+      <nav>
+    <ul class="sidenav-list" role="menu">
 
-        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
+        <li role="none">
+            <a href="" role="menuitem">
+                <span class="sidenav-number">1.</span> <span class="sidenav-title">Trin 1</span>
 
-    </button>
-    <div class="overflow-menu-inner" id="trinindikator-klikbar" aria-hidden="true">
+                <span class="sidenav-icon">
+                    <svg class="icon-svg" aria-label="Gennemført" aria-hidden="true"><use xlink:href="#done"></use></svg>
+                </span>
 
-        <nav>
-            <ul class="sidenav-list" role="menu">
+                <span class="sidenav-information">Informationstekst for
+                    trin 1</span>
 
-                <li role="none">
-                    <a href="" role="menuitem">
-                        <span class="sidenav-number">1.</span> <span class="sidenav-title">Trin 1</span>
+            </a>
+        </li>
 
-                        <span class="sidenav-icon">
+        <li class=" active current" role="none">
+            <a href="" role="menuitem" aria-current="page">
+                <span class="sidenav-number">2.</span> <span class="sidenav-title">Trin 2</span>
 
-                            <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+                <span class="sidenav-information">Informationstekst for
+                    trin 2</span>
 
-                        </span>
+            </a>
+        </li>
 
-                        <span class="sidenav-information">Informationstekst
-                            for trin 1</span>
+        <li role="none">
+            <a href="" role="menuitem">
+                <span class="sidenav-number">3.</span> <span class="sidenav-title">Trin 3</span>
 
-                    </a>
-                </li>
+                <span class="sidenav-information">Informationstekst for
+                    trin 3</span>
 
-                <li class=" active current" role="none">
-                    <a href="" role="menuitem" aria-current="page">
-                        <span class="sidenav-number">2.</span> <span class="sidenav-title">Trin 2</span>
-
-                        <span class="sidenav-information">Informationstekst
-                            for trin 2</span>
-
-                    </a>
-                </li>
-
-                <li role="none">
-                    <a href="" role="menuitem">
-                        <span class="sidenav-number">3.</span> <span class="sidenav-title">Trin 3</span>
-
-                        <span class="sidenav-information">Informationstekst
-                            for trin 3</span>
-
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-    </div>
-</div>
+            </a>
+        </li>
+    </ul>
+</nav>
 
       
       </aside>
