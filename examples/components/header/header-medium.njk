@@ -1,83 +1,68 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/header/header.njk" import portal_header as portal_header %}
 {% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
 {% from "components/header/header.njk" import solution_header as solution_header %}
 {% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 
-<header class="header">
-    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-    {{ portal_header(portal_header_data) }}
+{% set solution_header_data = {
+    "lastHeader": false,
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "En længere løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
+    }
+} %}
 
-    {% set authorityText = 
-        'Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
-    %}
-    {{ 
-        solution_header({
-            "lastHeader": false,
-            "title": {
-                "href": "#",
-                "text": "En længere løsningstitel"
-            },
-            "authority": {
-                "name": "Myndighedsnavn",
-                "text": authorityText
-            }
-        }) 
-    }}
+<header class="header">
+    {{ skiplink() }}
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
-        <!-- 3: Main navigation-->
+    <nav class="nav">
+        {{ menu_close_button() }}
         <div class="navbar navbar-primary">
-        <!--3A: Main navigation-->
-        <div class="navbar-inner container">
-            <ul class="nav-primary">
-            <li>
-                <a href="#" class="nav-link">
-                    <span>Første menupunkt</span>
-                </a>
-            </li>
-            <li class="current">
-                <a href="#" class="nav-link">
-                    <span>Andet menupunkt</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <span>Tredje menupunkt</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <span>Fjerde menupunkt</span>
-                </a>
-            </li>
-            </ul>
-        </div>
-        </div>
-        <!-- 3: Main navigation end-->
-
-        <!-- 5: Contextual actions-->
-        <div class="navbar">
-        <div class="navbar-inner container navbar-context-actions">
-            <div class="nav-actions">
-            <a href="#" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
+            <div class="navbar-inner container">
+                <ul class="nav-primary">
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Første menupunkt</span>
+                        </a>
+                    </li>
+                    <li class="current active">
+                        <a href="#" class="nav-link" aria-current="page">
+                            <span>Andet menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Tredje menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Fjerde menupunkt</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+        <div class="navbar">
+            <div class="navbar-inner container navbar-context-actions">
+                <div class="nav-actions">
+                    <a href="#" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
+                </div>
+            </div>
         </div>
-        <!-- 5: Contextual actions end-->
-
         {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
 
-        {{ 
-            mobile_solution_header({
-                "authority": {
-                    "name": "Myndighedsnavn",
-                    "text": authorityText
-                }
-            }) 
-        }}
-
-    </nav> <!-- collapsible nav end-->
+    </nav>
 </header>

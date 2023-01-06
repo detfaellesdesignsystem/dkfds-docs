@@ -2,40 +2,39 @@
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
 {%- from "components/header/header.njk" import portal_header as portal_header -%}
 {% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
 {%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
-{% from "components/footers/footer.njk" import footer as footer %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
 
+{% from "components/footers/footer.njk" import footer as footer %}
 {% from "components/cards/cards.njk" import card as card %}
+
+{% set solution_header_data = {
+  "lastHeader": false,
+  "hideOnPrint": false,
+  "title": {
+      "href": "#",
+      "text": "Løsningstitel står her"
+  },
+  "authority": {
+      "name": "Myndighedsnavn",
+      "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+  }
+} %}
 
 {% block header %}
   <header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
-
-    {% set authorityText = 
-      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
-    %}
-    {{ 
-      solution_header({
-        "lastHeader": false,
-        "title": {
-          "href": "#",
-          "text": "Løsningstitel står her"
-        },
-        "authority": {
-          "name": "Myndighedsnavn",
-          "text": authorityText
-        }
-      }) 
-    }}
+    {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav class="nav"> <!-- collapsible-->
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
+    <nav class="nav">
+      {{ menu_close_button() }}
   
         <div class="navbar navbar-primary">
           <div class="navbar-inner container">
@@ -71,20 +70,11 @@
                 </a>
             </li>
             </ul>
-            <div class="nav-secondary d-none d-lg-block">
-              </div>
           </div>
         </div>
         {{ mobile_portal_header(portal_header_data) }}
-        {{ 
-          mobile_solution_header({
-              "authority": {
-                  "name": "Myndighedsnavn",
-                  "text": authorityText
-              }
-          }) 
-        }}
-    </nav> <!-- collapsible nav end-->
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
   </header>
 
 {% endblock %}

@@ -1,19 +1,17 @@
 <header class="header">
+
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
-    <!--1A: Portal header -->
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
-            <a href="#" class="logo ">
-                <span class="sr-only">Portalnavn</span>
+            <a href="#" aria-label="Portalnavn" class="logo ">
+                <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
                 class="function-link button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+                aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
-
                 <p class="user">
 
                     <span class="username">Anders Andersen, Forsikringens
@@ -28,16 +26,14 @@
         </div>
     </div>
 
-    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" class="">
+                <a href="#">
                     Løsningstitel
                 </a>
             </div>
 
-            <!--2B: Solution header: Authority name + text-->
             <div class="solution-info">
 
                 <h2 class="authority-name">Myndighedsnavn</h2>
@@ -45,12 +41,13 @@
                 <p>Support: 12 34 56 78</p>
 
             </div>
+
         </div>
     </div>
 
     <div class="overlay"></div>
-    <nav class=" nav">
-        <!-- collapsible-->
+    <nav class="nav">
+
         <button class="function-link button-menu-close js-menu-close"
             aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
@@ -76,5 +73,5 @@
 
         </div>
 
-    </nav> <!-- collapsible nav end-->
+    </nav>
 </header>

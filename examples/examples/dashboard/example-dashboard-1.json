@@ -5,7 +5,7 @@
         "work": "Forsikringens Forsikringsfirma"
       },
       "logolink": {
-          "sronly": "Portalnavn",
+          "label": "Portalnavn",
           "href": "#"
       }
     },

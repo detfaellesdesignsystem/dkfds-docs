@@ -221,10 +221,10 @@
     
 
     <div class="overlay"></div>
-<nav class=" nav">
-    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+<nav class="nav">
 
-    <!-- Start: Hovedmenu -->
+    <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+
     <div class="navbar navbar-primary">
         <div class="navbar-inner container">
             <ul class="nav-primary">
@@ -256,8 +256,8 @@
                         <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
                             <ul class="overflow-list">
                                 <li class="active">
-                                    <a href="#">Subsektion med en meget
-                                        lang titel som går i flere
+                                    <a href="#" aria-current="page">Subsektion med
+                                        en meget lang titel som går i flere
                                         linier</a>
                                 </li>
                                 <li>
@@ -276,7 +276,6 @@
                 </li>
             </ul>
 
-            <!-- Start: Overflow menu i navigation -->
             <ul class="unstyled-list nav-actions">
                 <li>
                     <div class="overflow-menu overflow-menu--open-left">
@@ -294,12 +293,9 @@
                     </div>
                 </li>
             </ul>
-            <!-- Slut: Overflow menu i navigation -->
         </div>
     </div>
-    <!-- Slut: Hovedmenu -->
 
-    <!-- 4: Secondary navigation-->
     <div class="navbar">
         <div class="navbar-inner container">
             <div class="nav-secondary">
@@ -338,9 +334,7 @@
             </ul>
         </div>
     </div>
-    <!-- 4: Secondary header end-->
 
-    <!-- 5: Contextual actions-->
     <div class="navbar">
         <div class="navbar-inner navbar-context-actions container">
             <div class="nav-actions">
@@ -349,20 +343,28 @@
             </div>
         </div>
     </div>
-    <!-- 5: Contextual actions end-->
 
     <div class="portal-info-mobile">
-        <p class="user">Christian Emil Vestergaard Christensen</p>
-        <p>Københavns Urmager og Værksted v/Martin Elsig</p>
-        <a href="#" class="button button-secondary alert-leave" role="button">
+
+        <p class="user">
+
+            <span class="username">Anders Andersen, Forsikringens
+                Forsikringsfirma</span>
+
+        </p>
+
+        <button class="button button-secondary d-print-none mt-3">
             Log af
-        </a>
+        </button>
     </div>
 
     <div class="solution-info-mobile">
-        <p class="h5 authority-name">Myndighedsnavn</p>
-        <p>Support: 12 34 56 78 · <a href="#" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</a>
+
+        <h2 class="authority-name">Myndighedsnavn</h2>
+
+        <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link">Kontakt<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
         </p>
+
     </div>
 
 </nav>

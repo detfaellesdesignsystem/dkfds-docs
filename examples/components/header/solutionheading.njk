@@ -1,10 +1,14 @@
+{% from "components/header/header.njk" import solution_header as solution_header %}
+
 <header class="header">
-    <div class="solution-header">
-        <div class="container solution-header-inner">
-            <!-- Start: Løsningstitel -->
-            <div class="solution-heading">
-                <a href="#">En langt langt længere løsningstitel</a>
-            </div>
-        </div>
-    </div>
+    {{ 
+        solution_header({
+            "lastHeader": false,
+            "hideOnPrint": false,
+            "title": {
+                "href": "#",
+                "text": "En langt langt længere løsningstitel"
+            }
+        }) 
+    }}
 </header>

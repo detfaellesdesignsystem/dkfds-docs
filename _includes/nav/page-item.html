@@ -1,6 +1,6 @@
 {% include nav/current.html page=include.page %}
 {% assign _overblik = include.overblik | default: false %}
-<li class="{% if _current -%}current{% endif %} {% if _active -%}active{% endif %} {% if _anchor -%}has-anchor-links{% endif %}" role="none">
+<li class="{% if _current -%}current{% endif %} {% if _active -%}active{% endif %} {% if _anchor -%}has-anchor-links{% endif %}">
 {% assign titletext = include.page.title %}
   {%  assign _anchor = false %}
 {% if include.use_alt_text and include.alternative_text %}
@@ -24,11 +24,11 @@
 
       {% assign _parent = include.parent | append: "-" | append: include.item %}
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level{{include.level}}-{{ include.parent | slugify }}-{{ titletext | slugify }}" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level{{include.level}}-{{ include.parent | slugify }}-{{ titletext | slugify }}" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
           <span>{{ titletext | smartify }}</span>
         </button>
         <div aria-label="{{ titletext | smartify }}" class="overflow-menu-inner" id="submenu-level{{include.level}}-{{ include.parent | slugify }}-{{ titletext | slugify }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
-          <ul class="overflow-list" role="menu">
+          <ul class="overflow-list">
             {%
               include nav/page-item.html
               page=include.page
@@ -53,7 +53,7 @@
 
     {% else -%}
 
-      <a href="{{ include.page.url | relative_url }}" role="menuitem" {% if _current and _active == false %}aria-current="true"{% endif %}{%  if _active %}aria-current="page"{% endif %} class="nav-link">
+      <a href="{{ include.page.url | relative_url }}" {% if _current and _active == false %}aria-current="true"{% endif %}{%  if _active %}aria-current="page"{% endif %} class="nav-link">
         {{ titletext | smartify }}{% if _overblik == true %}<span class="helptext"> (overblik)</span>{% endif %}
       </a>
      

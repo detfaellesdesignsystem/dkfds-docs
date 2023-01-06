@@ -1,18 +1,25 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
 
 <div class="overlay"></div>
 <nav class="nav">
-  <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
-
-  <div class="portal-info-mobile">
-    <p class="user bold">Lone Hansen</p>
-    <a href="#" class="button button-secondary button-signout">
-      Log af
-    </a>
-  </div>
-
-  <div class="solution-info-mobile">
-    <p class="bold">Myndighedsnavn</p>
-    <p>Support: 12 34 56 78</p>
-  </div>
+    {{ menu_close_button() }}
+    {{ 
+        mobile_portal_header({
+            "compact": true,
+            "user": {
+                "name": "Anders Andersen, Forsikringens Forsikringsfirma"
+            }
+        }) 
+    }}
+    {{ 
+        mobile_solution_header({
+            "authority": {
+                "name": "Myndighedsnavn",
+                "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
+            }
+        }) 
+    }}
 </nav>

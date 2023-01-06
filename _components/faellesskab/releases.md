@@ -135,7 +135,7 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 
 - <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.
-- <span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler er rettet.
+- <span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksemplerne er rettet.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet klassen `table--lines` der var en forældet måde at style en tabel på.
 - Rettet fejl relateret til margin og padding for tabeller.
 - Opdateret teksten på søgeknappen ved søgning i tabeller.
@@ -149,6 +149,9 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet `delete`. Brug i stedet ikonet `trash-can`.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor tilbage til toppen-knappen ikke blev læst korrekt op på mindre skærmstørrelser.
+- <span class="badge badge-info badge-small mr-2">Change</span> Flere mindre tilgængelighedsrettelser i headeren: Fjernet `title` fra mobilmenuens knapper og ændret html for portal.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headers-eksempler, hvor den aktive side ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headeren, hvor portalnavnet ikke blev vist korrekt ved print.
 
 
 

@@ -1,19 +1,17 @@
 <header class="header">
+
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
-    <!--1A: Portal header -->
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
-            <a href="#" class="logo ">
-                <span class="sr-only">Portalnavn</span>
+            <a href="#" aria-label="Portalnavn" class="logo ">
+                <span class="d-none d-print-block">Portalnavn</span>
             </a>
             <button
                 class="function-link button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+                aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
-
                 <p class="user">
 
                     <span class="username">Anders Andersen, Forsikringens
@@ -28,16 +26,14 @@
         </div>
     </div>
 
-    <!--2A: Solution header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" class="">
+                <a href="#">
                     En længere løsningstitel
                 </a>
             </div>
 
-            <!--2B: Solution header: Authority name + text-->
             <div class="solution-info">
 
                 <h2 class="authority-name">Myndighedsnavn</h2>
@@ -48,17 +44,17 @@
                 </p>
 
             </div>
+
         </div>
     </div>
 
     <div class="overlay"></div>
-    <nav class=" nav">
-        <!-- collapsible-->
+    <nav class="nav">
+
         <button class="function-link button-menu-close js-menu-close"
             aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-        <!-- 3: Main navigation-->
+
         <div class="navbar navbar-primary">
-            <!--3A: Main navigation-->
             <div class="navbar-inner container">
                 <ul class="nav-primary">
                     <li>
@@ -66,8 +62,8 @@
                             <span>Første menupunkt</span>
                         </a>
                     </li>
-                    <li class="current">
-                        <a href="#" class="nav-link">
+                    <li class="current active">
+                        <a href="#" class="nav-link" aria-current="page">
                             <span>Andet menupunkt</span>
                         </a>
                     </li>
@@ -84,9 +80,6 @@
                 </ul>
             </div>
         </div>
-        <!-- 3: Main navigation end-->
-
-        <!-- 5: Contextual actions-->
         <div class="navbar">
             <div class="navbar-inner container navbar-context-actions">
                 <div class="nav-actions">
@@ -95,7 +88,6 @@
                 </div>
             </div>
         </div>
-        <!-- 5: Contextual actions end-->
 
         <div class="portal-info-mobile">
 
@@ -122,5 +114,5 @@
 
         </div>
 
-    </nav> <!-- collapsible nav end-->
+    </nav>
 </header>

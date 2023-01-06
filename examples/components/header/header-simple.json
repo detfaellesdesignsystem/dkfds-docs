@@ -5,12 +5,13 @@
             "name": "Anders Andersen, Forsikringens Forsikringsfirma"
         },
         "logolink": {
-            "sronly": "Portalnavn",
+            "label": "Portalnavn",
             "href": "#"
         }
     },
     "solution_header_data": {
         "lastHeader": true,
+        "hideOnPrint": false,
         "title": {
             "href": "#",
             "text": "Løsningstitel"

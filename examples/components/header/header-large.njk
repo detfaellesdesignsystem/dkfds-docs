@@ -1,21 +1,19 @@
-{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/header/header.njk" import portal_header as portal_header %}
 {% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
 {% from "components/header/header.njk" import solution_header as solution_header %}
 {% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 
 <header class="header">
-    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
-
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
-
+    <nav class="nav">
+        {{ menu_close_button() }}
         {{ mobile_portal_header(portal_header_data) }}
-
         {{ mobile_solution_header(solution_header_data) }}
-
-    </nav> <!-- collapsible nav end-->
+    </nav>
 </header>
