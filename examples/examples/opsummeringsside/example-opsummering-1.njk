@@ -1,56 +1,44 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/table/table.njk" import table as table %}
 
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Registrer et eller andet"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
 {% block header %}
 <header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
-    
-    {% set authorityText = 
-      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
-    %}
-    {{ 
-      solution_header({
-        "lastHeader": true,
-        "title": {
-          "href": "#",
-          "text": "Registrer et eller andet"
-        },
-        "solutionInfo": {
-          "hideOnPrint": true
-        },
-        "authority": {
-          "name": "Myndighedsnavn",
-          "text": authorityText
-        }
-      }) 
-    }}
+    {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
     <nav class="nav">
-        <!-- collapsible-->
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
-
+        {{ menu_close_button() }}
         {{ mobile_portal_header(portal_header_data) }}
-
-        {{ 
-            mobile_solution_header({
-                "authority": {
-                    "name": "Myndighedsnavn",
-                    "text": authorityText
-                }
-            }) 
-        }}
+        {{ mobile_solution_header(solution_header_data) }}
 
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
@@ -59,7 +47,7 @@
                 </div>
             </div>
         </div>
-    </nav> <!-- collapsible nav end-->
+    </nav>
 </header>
 {% endblock %}
 
@@ -73,7 +61,7 @@
             <div><a href="#" class="back-link">Tilbage</a></div>
             <h1 class="mb-6">Opsummering</h1>
             <h2>Vælg personer</h2>
-            {{ 
+            {{
                 table({
                     "tableClasses": "w-percent-md-70 d-print-table",
                     "borderless": true,
@@ -103,7 +91,7 @@
                 })
             }}
             <h2>Vælg noget mere</h2>
-            {{ 
+            {{
                 table({
                     "tableClasses": "w-percent-md-70 d-print-table",
                     "borderless": true,
@@ -133,7 +121,7 @@
             <h2>Vedhæft dokumenter</h2>
             {% set exampleDocumentLink1 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Journal.pdf</a>' %}
             {% set exampleDocumentLink2 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Kopi-af-dokument-x.pdf</a>' %}
-            {{ 
+            {{
                 table({
                     "tableClasses": "w-percent-md-70 d-print-table",
                     "borderless": true,

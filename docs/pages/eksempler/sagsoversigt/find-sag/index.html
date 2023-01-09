@@ -220,15 +220,15 @@
 </div>
 <header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+
+    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
             <a href="#" aria-label="Portalnavn" class="logo ">
                 <span class="d-none d-print-block">Portalnavn</span>
             </a>
-            <button
-                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
             <div class="portal-info">
@@ -257,11 +257,8 @@
 
                 <h2 class="authority-name">Myndighedsnavn</h2>
 
-                <p>Support: 12 34 56 78 <span class="d-print-none">· <a
-                            href="javascript:void(0);" data-module="modal"
-                            data-target="modal-contact"
-                            class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
-                </p>
+                <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact"
+                            class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span></p>
 
             </div>
 
@@ -270,15 +267,14 @@
 
     <div class="overlay"></div>
     <nav class="nav">
-        <!-- collapsible-->
-        <button class="function-link button-menu-close js-menu-close"
-            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+
+        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="navbar navbar-primary">
             <div class="navbar-inner container">
                 <ul class="nav-primary">
-                    <li class="current">
-                        <a href="#" class="nav-link">
+                    <li class="current active">
+                        <a href="#" class="nav-link" aria-current="page">
                             <span>Find sag</span>
                         </a>
                     </li>
@@ -294,34 +290,25 @@
                     </li>
                     <li>
                         <div class="overflow-menu">
-                            <button
-                                class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
-                                data-js-target="headeroverflow1"
-                                aria-haspopup="true" aria-expanded="false">
+                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
                                 <span>Udbetalinger</span>
                             </button>
-                            <div class="overflow-menu-inner"
-                                id="headeroverflow1" aria-hidden="true">
+                            <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
                                 <ul class="overflow-list" role="menu">
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2022</a>
+                                        <a href="#" role="menuitem">2022</a>
                                     </li>
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2021</a>
+                                        <a href="#" role="menuitem">2021</a>
                                     </li>
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2020</a>
+                                        <a href="#" role="menuitem">2020</a>
                                     </li>
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2019</a>
+                                        <a href="#" role="menuitem">2019</a>
                                     </li>
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2018</a>
+                                        <a href="#" role="menuitem">2018</a>
                                     </li>
                                 </ul>
                             </div>
@@ -348,27 +335,21 @@
 
             <h2 class="authority-name">Myndighedsnavn</h2>
 
-            <p>Support: 12 34 56 78 <span class="d-print-none">· <a
-                        href="javascript:void(0);" data-module="modal"
-                        data-target="modal-contact"
-                        class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
-            </p>
+            <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact"
+                        class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span></p>
 
         </div>
 
-    </nav> <!-- collapsible nav end-->
+    </nav>
 </header>
 
 <main class="container page-container" id="main-content">
     <h1>Find sag</h1>
-    <p class="font-lead mb-8">Her kan der stå en manchettekst, som siger
-        noget meningsfyldt om siden.</p>
+    <p class="font-lead mb-8">Her kan der stå en manchettekst, som siger noget meningsfyldt om siden.</p>
 
     <div class="form-group search">
-        <label for="inputSearchTable" class="sr-only">Søg efter
-            indhold</label>
-        <input class="form-input input-char-27" id="inputSearchTable"
-            name="searchtable" type="search">
+        <label for="inputSearchTable" class="sr-only">Søg efter indhold</label>
+        <input class="form-input input-char-27" id="inputSearchTable" name="searchtable" type="search">
         <button class="button button-search">
             Søg
         </button>
@@ -402,21 +383,17 @@
             <tbody>
 
                 <tr>
-                    <td><a
-                            href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/">123456789</a>
-                    </td>
+                    <td><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/">123456789</a></td>
 
                     <td>01.01.2021</td>
 
                     <td>01.01.2021</td>
 
-                    <td>Her står en længere og mere detaljeret beskrivelse
-                        af sagen.</td>
+                    <td>Her står en længere og mere detaljeret beskrivelse af sagen.</td>
 
                     <td>ABC</td>
 
-                    <td><span class="badge badge-small badge-warning">Under
-                            behandling</span></td>
+                    <td><span class="badge badge-small badge-warning">Under behandling</span></td>
 
                 </tr>
 
@@ -431,9 +408,7 @@
 
                     <td>DEF</td>
 
-                    <td><span
-                            class="badge badge-small badge-success">Afsluttet</span>
-                    </td>
+                    <td><span class="badge badge-small badge-success">Afsluttet</span></td>
 
                 </tr>
 
@@ -444,13 +419,11 @@
 
                     <td>01.01.2021</td>
 
-                    <td>Her står en længere og mere detaljeret beskrivelse
-                        af sagen.</td>
+                    <td>Her står en længere og mere detaljeret beskrivelse af sagen.</td>
 
                     <td>GHI</td>
 
-                    <td><span class="badge badge-small badge-warning">Under
-                            behandling</span></td>
+                    <td><span class="badge badge-small badge-warning">Under behandling</span></td>
 
                 </tr>
 
@@ -461,13 +434,11 @@
 
                     <td>01.01.2021</td>
 
-                    <td>Her står en længere og mere detaljeret beskrivelse
-                        af sagen.</td>
+                    <td>Her står en længere og mere detaljeret beskrivelse af sagen.</td>
 
                     <td>JKL</td>
 
-                    <td><span class="badge badge-small badge-warning">Under
-                            behandling</span></td>
+                    <td><span class="badge badge-small badge-warning">Under behandling</span></td>
 
                 </tr>
 
@@ -482,8 +453,7 @@
 
                     <td>MNO</td>
 
-                    <td><span class="badge badge-small badge-warning">Under
-                            behandling</span></td>
+                    <td><span class="badge badge-small badge-warning">Under behandling</span></td>
 
                 </tr>
 
@@ -492,31 +462,22 @@
     </div>
 
     <details class="details">
-        <summary class="details-summary">Der er en sag, jeg ikke kan finde
-        </summary>
+        <summary class="details-summary">Der er en sag, jeg ikke kan finde</summary>
         <div class="details-text">
-            <p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at
-                libero. Integer euismod augue leo. </p>
-            <p>Morbi faucibus nunc tortor, condimentum vulputate urna
-                sollicitudin non. Nam commodo nulla metus. Phasellus varius
-                eu dolor nec ultricies. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Mauris ac leo finibus, blandit
-                velit nec, consequat est. Nulla facilisi.</p><button
-                class='button button-secondary'>Kontakt
-                &lt;Myndigheden&gt;</button>
+            <p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo. </p>
+            <p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p><button class='button button-secondary'>Kontakt &lt;Myndigheden&gt;</button>
         </div>
     </details>
 
     <h2>Anmod om adgang</h2>
-    <p>Du kan anmode om at få adgang til sager, du endnu ikke kan se her.
-    </p>
+    <p>Du kan anmode om at få adgang til sager, du endnu ikke kan se her.</p>
     <button class="button button-secondary d-print-none">
         Anmod om adgang
     </button>
 
     <h3>Anmodninger, der afventer svar</h3>
-    <div
-        class="w-percent-xs-100 w-percent-sm-60 w-percent-md-50 w-percent-xl-30">
+    <div class="w-percent-xs-100 w-percent-sm-60 w-percent-md-50 w-percent-xl-30">
 
         <div class="card">
             <div class="card-header">
@@ -528,15 +489,13 @@
             </div>
 
             <div class="card-content">
-                <span class='badge badge-small badge-info ml-5'>Afventer
-                    godkendelse</span>
+                <span class='badge badge-small badge-info ml-5'>Afventer godkendelse</span>
             </div>
 
             <div class="card-footer card-action">
 
                 <div class="action-buttons">
-                    <button class="button button-tertiary">Annuller
-                        anmodning</button>
+                    <button class="button button-tertiary">Annuller anmodning</button>
                 </div>
 
             </div>
@@ -548,11 +507,8 @@
 
 <footer>
 
-    <a class="back-to-top-button button button-tertiary d-print-none"
-        href="#top"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg><span
-            class="sr-only">Til toppen</span><span
-            class="d-none d-md-inline-block" aria-hidden="true">Til
-            toppen</span></a>
+    <a class="back-to-top-button button button-tertiary d-print-none" href="#top"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg><span
+            class="sr-only">Til toppen</span><span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span></a>
 
     <div class="footer">
         <div class="container">
@@ -561,28 +517,21 @@
                     <section>
                         <div class=" align-text-left ">
                             <h2 class="h5 mb-4">Ansvarlig myndighed</h2>
-                            <p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø
-                            </p>
+                            <p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>
 
                         </div>
                     </section>
                 </div>
-                <div
-                    class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
+                <div class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h2 class="h5 mb-4">Webtilgængelighed og
-                                cookies</h2>
+                            <h2 class="h5 mb-4">Webtilgængelighed og cookies</h2>
 
                             <ul class=" mt-0 mb-1 nobullet-list">
 
-                                <li class=""><a href="#"
-                                        class="function-link">Tilgængelighedserklæring</a>
-                                </li>
+                                <li class=""><a href="#" class="function-link">Tilgængelighedserklæring</a></li>
 
-                                <li class=""><a href="#"
-                                        class="function-link">Privatlivspolitik
-                                        og cookies</a></li>
+                                <li class=""><a href="#" class="function-link">Privatlivspolitik og cookies</a></li>
 
                             </ul>
 
@@ -593,20 +542,13 @@
                     <section>
                         <div class=" align-text-left ">
                             <h2 class="h5 mb-4">Links</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Suspendisse mattis, felis
-                                quis vestibulum aliquet, elit ex rhoncus.
-                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>
 
                             <ul class=" d-print-none mt-0 nobullet-list">
 
-                                <li class=""><a href="#"
-                                        class="function-link">Læs lidt om
-                                        dit</a></li>
+                                <li class=""><a href="#" class="function-link">Læs lidt om dit</a></li>
 
-                                <li class=""><a href="#"
-                                        class="function-link">Her er også
-                                        lidt om dat</a></li>
+                                <li class=""><a href="#" class="function-link">Her er også lidt om dat</a></li>
 
                             </ul>
 
@@ -620,9 +562,7 @@
     <div class="language-switcher">
         <div class="container">
             <ul aria-label="Vælg sprog fra listen ">
-                <li><a href="" lang="da"
-                        aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a>
-                </li>
+                <li><a href="" lang="da" aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a></li>
                 <li><a href="" lang="en-GB">English</a></li>
                 <li><a href="" lang="de">Deutsch</a></li>
                 <li><a href="" lang="kl">Kalaallisut</a></li>
@@ -634,26 +574,20 @@
 
 </footer>
 
-<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-contact-title">
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-contact-title">
     <div class="modal-content">
         <div class="modal-header">
             <h2 class="modal-title" id="modal-id-1-title">
                 Kontakt
             </h2>
-            <button class="modal-close function-link"
-                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            <button class="modal-close function-link" data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
             <div class="alert alert-warning" role="alert">
                 <div class="alert-body">
-                    <h3 class="alert-heading">Vi har noget information af
-                        advarende karakter</h3>
-                    <p class="alert-text">Noget tekst, der forklarer det af
-                        advarende karakter, som brugeren bør vide inden
-                        denne ringer eller skriver. Noget tekst, der
-                        forklarer det af advarende karakter, som brugeren
-                        bør vide inden denne ringer eller skriver.</p>
+                    <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>
+                    <p class="alert-text">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende
+                        karakter, som brugeren bør vide inden denne ringer eller skriver.</p>
                 </div>
             </div>
             <h3>En form for support</h3>
@@ -664,20 +598,13 @@
             </ul>
             <p>Kan du ringe direkte til: 12 34 56 78</p>
             <p>Telefonen er åben:</p>
-            <p class="m-0">
-                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                kl. 9-17</p>
-            <p class="m-0">
-                Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl.
-                9-17</p>
-            <p class="m-0">
-                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                kl. kl. 9-14</p>
+            <p class="m-0">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>
+            <p class="m-0">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>
+            <p class="m-0">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>
         </div>
 
         <div class="modal-footer">
-            <button class="button button-secondary"
-                data-modal-close>Luk</button>
+            <button class="button button-secondary" data-modal-close>Luk</button>
         </div>
 
     </div>

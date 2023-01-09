@@ -1,100 +1,113 @@
-{"portal_header_data": {
-  "compact": true,
-  "user": {
-      "name": "Anders Andersen"
-  },
-  "logolink": {
-      "label": "Portalnavn",
-      "href" : "#"
-  }
-},
-  "modal_data": {
-    "id": "modal-contact",
-    "headingId": "modal-contact-title",
-    "heading": "Kontakt",
-    "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
-    "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
-  },
-  "footer_data": {
-    "topButton": {
-      "topLink": "#top"
+{
+    "portal_header_data": {
+        "compact": true,
+        "user": {
+            "name": "Anders Andersen"
+        },
+        "logolink": {
+            "label": "Portalnavn",
+            "href": "#"
+        }
     },
-    "list": {
-      "items": [
-        {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
-        {"content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"},
-        {"content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"},
-        {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true},
-        {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-      ]
+    "modal_data": {
+        "id": "modal-contact",
+        "headingId": "modal-contact-title",
+        "heading": "Kontakt",
+        "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
+        "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
+    },
+    "footer_data": {
+        "topButton": {
+            "topLink": "#top"
+        },
+        "list": {
+            "items": [
+                {
+                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
+                    "hideOnPrint": true
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
+                    "hideOnPrint": true
+                }
+            ]
+        }
+    },
+    "select_example1": {
+        "name": "options",
+        "id": "options",
+        "label": "Navngiv dokument",
+        "classLabel": "sr-only",
+        "options": [
+            {
+                "value": "Lægeerklæring",
+                "text": "Lægeerklæring",
+                "selected": true
+            },
+            {
+                "value": "Fuldmagt",
+                "text": "Fuldmagt"
+            },
+            {
+                "value": "Journal",
+                "text": "Journal"
+            },
+            {
+                "value": "Spørgeskema",
+                "text": "Spørgeskema"
+            }
+        ]
+    },
+    "select_example2": {
+        "name": "options2",
+        "id": "options2",
+        "label": "Navngiv dokument",
+        "classLabel": "sr-only",
+        "formError": "Vælg et navn til dokumentet Fuldmagt_88.pdf",
+        "options": [
+            {
+                "value": "Lægeerklæring",
+                "text": "Lægeerklæring"
+            },
+            {
+                "value": "Fuldmagt",
+                "text": "Fuldmagt"
+            },
+            {
+                "value": "Journal",
+                "text": "Journal"
+            },
+            {
+                "value": "Spørgeskema",
+                "text": "Spørgeskema"
+            }
+        ]
+    },
+    "error_summary": {
+        "name": "error",
+        "classes": "alert-error mt-0 mb-8",
+        "title": "Der er problemer",
+        "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a class=\"function-link\" href=\"#fileinput\">Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</a></li><li><a class=\"function-link\" href=\"#options2\">Vælg et navn til dokumentet Fuldmagt_88.pdf</a></li></ul>",
+        "contentContainer": false,
+        "role": "alert"
+    },
+    "button_upload": {
+        "text": "Upload fil",
+        "variant": "secondary",
+        "classes": "d-print-none"
+    },
+    "button_next": {
+        "text": "Næste",
+        "variant": "primary",
+        "classes": "mt-8"
     }
-  },
-  "select_example1": {
-    "name": "options",
-    "id": "options",
-    "label": "Navngiv dokument",
-    "classLabel": "sr-only",
-    "options": [
-      {
-        "value": "Lægeerklæring",
-        "text": "Lægeerklæring",
-        "selected": true
-      },
-      {
-        "value": "Fuldmagt",
-        "text": "Fuldmagt"
-      },
-      {
-        "value": "Journal",
-        "text": "Journal"
-      },
-      {
-        "value": "Spørgeskema",
-        "text": "Spørgeskema"
-      }
-    ]
-  },
-  "select_example2": {
-  "name": "options2",
-  "id": "options2",
-  "label": "Navngiv dokument",
-  "classLabel": "sr-only",
-  "formError": "Vælg et navn til dokumentet Fuldmagt_88.pdf",
-  "options": [
-    {
-      "value": "Lægeerklæring",
-      "text": "Lægeerklæring"
-    },
-    {
-      "value": "Fuldmagt",
-      "text": "Fuldmagt"
-    },
-    {
-      "value": "Journal",
-      "text": "Journal"
-    },
-    {
-      "value": "Spørgeskema",
-      "text": "Spørgeskema"
-    }]
-  },
-  "error_summary": {
-    "name": "error",
-    "classes": "alert-error mt-0 mb-8",
-    "title": "Der er problemer",
-    "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a class=\"function-link\" href=\"#fileinput\">Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</a></li><li><a class=\"function-link\" href=\"#options2\">Vælg et navn til dokumentet Fuldmagt_88.pdf</a></li></ul>",
-    "contentContainer": false,
-    "role": "alert"
-  },
-  "button_upload": {
-    "text": "Upload fil",
-    "variant": "secondary",
-    "classes": "d-print-none"
-  },
-  "button_next": {
-    "text": "Næste",
-    "variant": "primary",
-    "classes": "mt-8"
-  }
 }
-

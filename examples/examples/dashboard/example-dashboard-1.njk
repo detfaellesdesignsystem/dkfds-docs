@@ -1,32 +1,32 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
-
-{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
-{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
 
 {% from "components/footers/footer.njk" import footer as footer %}
 {% from "components/cards/cards.njk" import card as card %}
 
 {% set solution_header_data = {
-  "lastHeader": false,
-  "hideOnPrint": false,
-  "title": {
-      "href": "#",
-      "text": "Løsningstitel står her"
-  },
-  "authority": {
-      "name": "Myndighedsnavn",
-      "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
-  }
+    "lastHeader": false,
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel står her"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
 } %}
 
 {% block header %}
-  <header class="header">
+<header class="header">
     <div id="top"></div>
     {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
@@ -34,53 +34,52 @@
 
     <div class="overlay"></div>
     <nav class="nav">
-      {{ menu_close_button() }}
-  
+        {{ menu_close_button() }}
+
         <div class="navbar navbar-primary">
-          <div class="navbar-inner container">
-            <ul class="nav-primary" >
-              <li>
-                <a href="#" class="nav-link">
-                    <span>Beskeder</span>
-                </a>
-              </li>
-              <li>
-                  <a href="#" class="nav-link">
-                      <span>Udbetalinger</span>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="nav-link">
-                      <span>Sager</span>
-                  </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">
-                    <span>Ansøgninger</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <span>Ændringer</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <span>Dokumentation</span>
-                </a>
-            </li>
-            </ul>
-          </div>
+            <div class="navbar-inner container">
+                <ul class="nav-primary">
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Beskeder</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Udbetalinger</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Sager</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Ansøgninger</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Ændringer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Dokumentation</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         {{ mobile_portal_header(portal_header_data) }}
         {{ mobile_solution_header(solution_header_data) }}
     </nav>
-  </header>
-
+</header>
 {% endblock %}
 
 {% block body %}
-  <main class="container page-container" id="main-content">
+<main class="container page-container" id="main-content">
     <h1 class="mb-8">Oversigt</h1>
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_beskeder) }}</div>
@@ -90,14 +89,14 @@
         <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_aendringer) }}</div>
         <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_dokumentation) }}</div>
     </div>
-  </main>
+</main>
 {% endblock %}
 
 {% block banner -%}
 {% endblock %}
 
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

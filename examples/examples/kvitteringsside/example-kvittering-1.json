@@ -1,88 +1,90 @@
 {
-  "portal_header_data": {
-      "compact": false,
-      "user": {
-        "name": "Anders Andersen",
-        "work": "Forsikringens Forsikringsfirma"
-      },
-      "logolink": {
-        "label": "Portalnavn",
-        "href" : "#"
-      }
+    "portal_header_data": {
+        "compact": false,
+        "user": {
+            "name": "Anders Andersen",
+            "work": "Forsikringens Forsikringsfirma"
+        },
+        "logolink": {
+            "label": "Portalnavn",
+            "href": "#"
+        }
     },
     "modal_data": {
-      "id": "modal-contact",
-      "headingID": "modal-contact-title",
-      "heading": "Kontakt",
-      "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
-      "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
+        "id": "modal-contact",
+        "headingID": "modal-contact-title",
+        "heading": "Kontakt",
+        "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
+        "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
     },
     "footer_data": {
-      "topButton": {
-        "topLink": "#top"
-      },
-      "list": {
-        "items": [
-          {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
-          {"content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"},
-          {"content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"},
-          {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true},
-          {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-        ]
-      },
-      "languageSwitcher": {
-        "ariaLabel": "Vælg sprog fra listen",
-        "firstAriaLabel": "Valgt sprog: Dansk",
-        "languages": [
-          {"code": "da", "name": "Dansk"},
-          {"code": "en-GB", "name": "English"},
-          {"code": "de", "name": "Deutsch"},
-          {"code": "kl", "name": "Kalaallisut"},
-          {"code": "pl", "name": "Polski"},
-          {"code": "se", "name": "Svenska"}
-        ]
-      }
+        "topButton": {
+            "topLink": "#top"
+        },
+        "list": {
+            "items": [
+                { "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>" },
+                { "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>" },
+                { "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>" },
+                { "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
+                  "hideOnPrint": true },
+                { "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
+                  "hideOnPrint": true }
+            ]
+        },
+        "languageSwitcher": {
+            "ariaLabel": "Vælg sprog fra listen",
+            "firstAriaLabel": "Valgt sprog: Dansk",
+            "languages": [
+                { "code": "da", "name": "Dansk" },
+                { "code": "en-GB", "name": "English" },
+                { "code": "de", "name": "Deutsch" },
+                { "code": "kl", "name": "Kalaallisut" },
+                { "code": "pl", "name": "Polski" },
+                { "code": "se", "name": "Svenska" }
+            ]
+        }
     },
     "alert_receipt": {
-      "classes": "alert-success",
-      "heading": "Kvittering",
-      "content": "Din registrering er modtaget",
-      "icon": true,
-      "role": "alert"
+        "classes": "alert-success",
+        "heading": "Kvittering",
+        "content": "Din registrering er modtaget",
+        "icon": true,
+        "role": "alert"
     },
     "button_print": {
-      "text": "Udskriv kvittering",
-      "variant": "secondary",
-      "classes": "d-print-none mb-4",
-      "icon": "print"
+        "text": "Udskriv kvittering",
+        "variant": "secondary",
+        "classes": "d-print-none mb-4",
+        "icon": "print"
     },
     "tidligere_registrering": [
-      {
-        "label": "Har du tidligere lavet en lignende registrering?",
-        "value": "Ja"
-      },
-      {
-        "label": "Tidligere registreringsnummer",
-        "value": "123.678"
-      },
-      {
-        "label": "Dato for registreringen",
-        "value": "10.10.2010"
-      }
+        {
+            "label": "Har du tidligere lavet en lignende registrering?",
+            "value": "Ja"
+        },
+        {
+            "label": "Tidligere registreringsnummer",
+            "value": "123.678"
+        },
+        {
+            "label": "Dato for registreringen",
+            "value": "10.10.2010"
+        }
     ],
     "kontaktoplysninger": [
-      {
-        "label": "E-mail",
-        "value": "eksempel@mail.dk"
-      },
-      {
-        "label": "Telefonnummer",
-        "value": "12345678"
-      }
+        {
+            "label": "E-mail",
+            "value": "eksempel@mail.dk"
+        },
+        {
+            "label": "Telefonnummer",
+            "value": "12345678"
+        }
     ],
     "button_done": {
-      "text": "Log ud og gå til forsiden",
-      "variant": "primary",
-      "classes": "d-print-none mt-4"
+        "text": "Log ud og gå til forsiden",
+        "variant": "primary",
+        "classes": "d-print-none mt-4"
     }
 }

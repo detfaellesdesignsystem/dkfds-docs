@@ -1,3 +1,10 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/form/controls/select.njk" import select as select %}
 {% from "components/buttons/buttons.njk" import button as button %}
@@ -5,77 +12,61 @@
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Simpelt eksempel på vedhæft fil"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
 
 {% block header %}
-  <header class="header">
+<header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
-    
-    {% set authorityText = 
-      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
-    %}
-    {{ 
-      solution_header({
-        "lastHeader": true,
-        "title": {
-          "href": "#",
-          "text": "Simpelt eksempel på vedhæft fil"
-        },
-        "authority": {
-          "name": "Myndighedsnavn",
-          "text": authorityText
-        }
-      }) 
-    }}
-
+    {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
-      <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
-
-      {{ mobile_portal_header(portal_header_data) }}
-
-      {{ 
-        mobile_solution_header({
-            "authority": {
-                "name": "Myndighedsnavn",
-                "text": authorityText
-            }
-        }) 
-      }}
-    </nav> <!-- collapsible nav end-->
-  </header>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
+</header>
 {% endblock %}
-
 
 {% block body %}
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
     <a href="#" class="back-link">Tilbage</a>
 
     <form novalidate method="post" action="/pages/eksempler/vedhaeft-fil/fil-1/">
-      <fieldset>
-          <legend><h1>Dokumentation</h1></legend>
-          <div class="form-group file-input mb-5">
-            <label class="form-label" for="fileinput">Vedhæft fil</label>
-            <input type="file" id="fileinput" name="file" />
-          </div>
-          {{ button(button_next) }}
-      </fieldset>
+        <fieldset>
+            <legend>
+                <h1>Dokumentation</h1>
+            </legend>
+            <div class="form-group file-input mb-5">
+                <label class="form-label" for="fileinput">Vedhæft fil</label>
+                <input type="file" id="fileinput" name="file" />
+            </div>
+            {{ button(button_next) }}
+        </fieldset>
     </form>
 </main>
 {% endblock %}
+
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}
-

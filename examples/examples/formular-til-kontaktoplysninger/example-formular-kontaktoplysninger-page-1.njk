@@ -1,92 +1,83 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel står her"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
 {% block header %}
-  <header class="header">
+<header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
-    
-    {% set authorityText = 
-      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
-    %}
-    {{ 
-      solution_header({
-        "lastHeader": true,
-        "title": {
-          "href": "#",
-          "text": "Løsningstitel står her"
-        },
-        "authority": {
-          "name": "Myndighedsnavn",
-          "text": authorityText
-        }
-      }) 
-    }}
-
+    {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
-      <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
-
-      {{ mobile_portal_header(portal_header_data) }}
-
-      {{ 
-        mobile_solution_header({
-            "authority": {
-                "name": "Myndighedsnavn",
-                "text": authorityText
-            }
-        }) 
-      }}
-    </nav> <!-- collapsible nav end-->
-  </header>
-
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
+</header>
 {% endblock %}
 
 {% block body %}
-  <main class="container page-container" id="main-content">
+<main class="container page-container" id="main-content">
     <form novalidate method="post" action="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/">
-      <fieldset>
-          <legend><h1>Oplysninger om dig</h1></legend>
-          <div class="row">
-            <div class="mt-5 col-lg-4 col-md-6 col-sm-8">
-              {{ textinput(input_navn) }}
-              <div class="d-block d-sm-flex align-items-sm-end">
-                {{ textinput(input_gade) }}
-                {{ textinput(input_husnummer) }}
-              </div>
-              <div class="d-block d-sm-flex align-items-sm-end">
-                {{ textinput(input_postnummer) }}
-                {{ textinput(input_by) }}
-              </div>
-              {{ textinput(input_COadresse) }}
-              {{ textinput(input_telefonnummer) }}
-              {{ textinput(input_email) }}
-              {{ radiobuttons(radiobuttons_alder) }}
-              {{ button(button_next) }}
+        <fieldset>
+            <legend>
+                <h1>Oplysninger om dig</h1>
+            </legend>
+            <div class="row">
+                <div class="mt-5 col-lg-4 col-md-6 col-sm-8">
+                    {{ textinput(input_navn) }}
+                    <div class="d-block d-sm-flex align-items-sm-end">
+                        {{ textinput(input_gade) }}
+                        {{ textinput(input_husnummer) }}
+                    </div>
+                    <div class="d-block d-sm-flex align-items-sm-end">
+                        {{ textinput(input_postnummer) }}
+                        {{ textinput(input_by) }}
+                    </div>
+                    {{ textinput(input_COadresse) }}
+                    {{ textinput(input_telefonnummer) }}
+                    {{ textinput(input_email) }}
+                    {{ radiobuttons(radiobuttons_alder) }}
+                    {{ button(button_next) }}
+                </div>
             </div>
-          </div>
-      </fieldset>
+        </fieldset>
     </form>
-  </main>
+</main>
 {% endblock %}
 
 {% block banner -%}
 {% endblock %}
 
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

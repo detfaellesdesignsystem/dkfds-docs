@@ -1,3 +1,10 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/form/controls/select.njk" import select as select %}
 {% from "components/buttons/buttons.njk" import button as button %}
@@ -5,55 +12,38 @@
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Eksempel på liste af vedhæftede filer"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
 
 {% block header %}
-  <header class="header">
+<header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
-    
-    {% set authorityText = 
-      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
-    %}
-    {{ 
-      solution_header({
-        "lastHeader": true,
-        "title": {
-          "href": "#",
-          "text": "Eksempel på liste af vedhæftede filer"
-        },
-        "authority": {
-          "name": "Myndighedsnavn",
-          "text": authorityText
-        }
-      }) 
-    }}
-
+    {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
-      <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
-
-      {{ mobile_portal_header(portal_header_data) }}
-
-      {{ 
-        mobile_solution_header({
-            "authority": {
-                "name": "Myndighedsnavn",
-                "text": authorityText
-            }
-        }) 
-      }}
-    </nav> <!-- collapsible nav end-->
-  </header>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
+</header>
 {% endblock %}
 
 
@@ -71,15 +61,23 @@
 
     <h2 class="h5 mt-8">Vedhæftet</h2>
     <ul class="bordered-list w-percent-md-40 mt-3">
-      <li><div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Lægeerklæring.pdf</a><button class="function-link">{{ icon_svg({"name": 'trash-can'})}}Slet</button></div></li>
-      <li><div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Fuldmagt_88.pdf</a><button class="function-link">{{ icon_svg({"name": 'trash-can'})}}Slet</button></div></li>
+        <li>
+            <div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name":
+                    'file-pdf'})}}Lægeerklæring.pdf</a><button class="function-link">{{ icon_svg({"name":
+                    'trash-can'})}}Slet</button></div>
+        </li>
+        <li>
+            <div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name":
+                    'file-pdf'})}}Fuldmagt_88.pdf</a><button class="function-link">{{ icon_svg({"name":
+                    'trash-can'})}}Slet</button></div>
+        </li>
     </ul>
 
     {{ button(button_next) }}
 </main>
 {% endblock %}
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

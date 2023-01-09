@@ -70,38 +70,53 @@
         "id": "input-navn",
         "name": "navn",
         "label": "Navn",
-        "classes": { "input": "input-width-xl" }
+        "classes": {
+            "input": "input-width-xl"
+        }
     },
     "input_gade": {
         "id": "input-gade",
         "name": "gade",
         "label": "Gade/vej",
-        "classes": { "formgroup": "mr-sm-4 mt-5 mt-sm-0 w-percent-sm-100", "input": "input-width-xl" }
+        "classes": {
+            "formgroup": "mr-sm-4 mt-5 mt-sm-0 w-percent-sm-100",
+            "input": "input-width-xl"
+        }
     },
     "input_husnummer": {
         "id": "input-husnummer",
         "name": "husnummer",
         "label": "Husnummer",
-        "classes": { "input": "input-width-xs" }
+        "classes": {
+            "input": "input-width-xs"
+        }
     },
     "input_postnummer": {
         "id": "input-postnummer",
         "name": "postnummer",
         "label": "Postnummer",
-        "classes": { "formgroup": "mr-sm-4 mt-5 mt-sm-0", "input": "input-width-xs" }
+        "classes": {
+            "formgroup": "mr-sm-4 mt-5 mt-sm-0",
+            "input": "input-width-xs"
+        }
     },
     "input_by": {
         "id": "input-by",
         "name": "by",
         "label": "By",
-        "classes": { "formgroup": "w-percent-sm-100", "input": "input-width-xl" }
+        "classes": {
+            "formgroup": "w-percent-sm-100",
+            "input": "input-width-xl"
+        }
     },
     "input_COadresse": {
         "id": "input-co-adresse",
         "name": "COadresse",
         "label": "Evt. C/O adresse",
         "optionalLabel": true,
-        "classes": { "input": "input-width-xl" },
+        "classes": {
+            "input": "input-width-xl"
+        },
         "required": false
     },
     "input_telefonnummer": {
@@ -109,14 +124,18 @@
         "name": "telefonnummer",
         "label": "Telefonnummer",
         "optionalLabel": true,
-        "classes": { "input": "input-width-s" },
+        "classes": {
+            "input": "input-width-s"
+        },
         "required": false
     },
     "input_email": {
         "id": "input-email",
         "name": "email",
         "label": "E-mail",
-        "classes": { "input": "input-width-xl" }
+        "classes": {
+            "input": "input-width-xl"
+        }
     },
     "radiobuttons_alder": {
         "id": "radiobuttons-alder",

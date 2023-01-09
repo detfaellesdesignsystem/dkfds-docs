@@ -2,102 +2,151 @@
     "portal_header_data": {
         "compact": false,
         "user": {
-          "name": "Anders Andersen",
-          "work": "Forsikringens Forsikringsfirma"
+            "name": "Anders Andersen",
+            "work": "Forsikringens Forsikringsfirma"
         },
         "logolink": {
-          "label": "Portalnavn",
-          "href" : "#"
+            "label": "Portalnavn",
+            "href": "#"
         }
-      },
-      "modal_data": {
+    },
+    "modal_data": {
         "id": "modal-contact",
         "headingID": "modal-contact-title",
         "heading": "Kontakt",
         "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
         "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
-      },
-      "footer_data": {
+    },
+    "footer_data": {
         "topButton": {
-          "topLink": "#top"
+            "topLink": "#top"
         },
         "list": {
-          "items": [
-            {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
-            {"content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"},
-            {"content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"},
-            {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true},
-            {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-          ]
+            "items": [
+                {
+                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
+                    "hideOnPrint": true
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
+                    "hideOnPrint": true
+                }
+            ]
         },
         "languageSwitcher": {
-          "ariaLabel": "Vælg sprog fra listen",
-          "firstAriaLabel": "Valgt sprog: Dansk",
-          "languages": [
-            {"code": "da", "name": "Dansk"},
-            {"code": "en-GB", "name": "English"},
-            {"code": "de", "name": "Deutsch"},
-            {"code": "kl", "name": "Kalaallisut"},
-            {"code": "pl", "name": "Polski"},
-            {"code": "se", "name": "Svenska"}
-          ]
+            "ariaLabel": "Vælg sprog fra listen",
+            "firstAriaLabel": "Valgt sprog: Dansk",
+            "languages": [
+                {
+                    "code": "da",
+                    "name": "Dansk"
+                },
+                {
+                    "code": "en-GB",
+                    "name": "English"
+                },
+                {
+                    "code": "de",
+                    "name": "Deutsch"
+                },
+                {
+                    "code": "kl",
+                    "name": "Kalaallisut"
+                },
+                {
+                    "code": "pl",
+                    "name": "Polski"
+                },
+                {
+                    "code": "se",
+                    "name": "Svenska"
+                }
+            ]
         }
-      },
-      "trinindikator_data": {
+    },
+    "trinindikator_data": {
         "id": "overflow-reg",
         "responsive": true,
         "steps": [
-          {
-            "text": "Vælg personer",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
-            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
-          },
-          {
-            "text": "Vælg noget mere",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
-            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
-          },
-          {
-            "text": "Vedhæft dokumenter",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/",
-            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
-          },
-          {
-            "text": "Tidligere registrering",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/",
-            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
-          },
-          {
-            "text": "Kontaktoplysninger",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/",
-            "active": true
-          },
-          {
-            "text": "Opsummering",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-6/"
-          }
+            {
+                "text": "Vælg personer",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
+                "icon": {
+                    "name": "done",
+                    "ariaLabel": "Gennemført",
+                    "ariahidden": false
+                }
+            },
+            {
+                "text": "Vælg noget mere",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
+                "icon": {
+                    "name": "done",
+                    "ariaLabel": "Gennemført",
+                    "ariahidden": false
+                }
+            },
+            {
+                "text": "Vedhæft dokumenter",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/",
+                "icon": {
+                    "name": "done",
+                    "ariaLabel": "Gennemført",
+                    "ariahidden": false
+                }
+            },
+            {
+                "text": "Tidligere registrering",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/",
+                "icon": {
+                    "name": "done",
+                    "ariaLabel": "Gennemført",
+                    "ariahidden": false
+                }
+            },
+            {
+                "text": "Kontaktoplysninger",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/",
+                "active": true
+            },
+            {
+                "text": "Opsummering",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-6/"
+            }
         ]
-      },
-      "input_email": {
+    },
+    "input_email": {
         "id": "input-email",
         "name": "email",
         "label": "E-mail",
-        "classes": { "input": "input-width-l" }
-      },
-      "input_telefonnummer": {
+        "classes": {
+            "input": "input-width-l"
+        }
+    },
+    "input_telefonnummer": {
         "id": "input-telefonnummer",
         "name": "telefonnummer",
         "label": "Telefonnummer",
         "optionalLabel": true,
-        "classes": { "input": "input-width-s" },
+        "classes": {
+            "input": "input-width-s"
+        },
         "required": false,
         "hint": "Behandlingstiden kan forkortes, hvis vi kan kontakte dig på telefon i tilfælde af spørgsmål"
-      },
-      "button_next": {
+    },
+    "button_next": {
         "text": "Næste",
         "variant": "primary",
         "classes": "d-print-none mt-8",
         "attributes": "type='submit'"
-      }
-  }
-  
+    }
+}

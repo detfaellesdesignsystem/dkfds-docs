@@ -7,79 +7,95 @@
         },
         "logolink": {
             "label": "Portalnavn",
-            "href" : "#"
+            "href": "#"
         }
-      },
+    },
     "modal_data": {
         "id": "modal-contact",
         "headingID": "modal-contact-title",
         "heading": "Kontakt",
         "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
         "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
-      },
-      "footer_data": {
+    },
+    "footer_data": {
         "topButton": {
-          "topLink": "#top"
+            "topLink": "#top"
         },
         "list": {
-          "items": [
-            {"content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"},
-            {"content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"},
-            {"content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"},
-            {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true},
-            {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-          ]
+            "items": [
+                {
+                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
+                    "hideOnPrint": true
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
+                    "hideOnPrint": true
+                }
+            ]
         }
-      },
-      "trinindikator_data": {
+    },
+    "trinindikator_data": {
         "id": "overflow-ansoeg",
         "steps": [
-          {
-            "text": "Oplysninger om afsender",
-            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/",
-            "active": true
-          },
-          {
-            "text": "Kontaktoplysninger",
-            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/"
-          },
-          {
-            "text": "Ansøgningens type",
-            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/"
-          },
-          {
-            "text": "Tilføj dokumentation",
-            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/"
-          },
-          {
-            "text": "Opsummering",
-            "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/"
-          }
+            {
+                "text": "Oplysninger om afsender",
+                "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/",
+                "active": true
+            },
+            {
+                "text": "Kontaktoplysninger",
+                "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/"
+            },
+            {
+                "text": "Ansøgningens type",
+                "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/"
+            },
+            {
+                "text": "Tilføj dokumentation",
+                "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/"
+            },
+            {
+                "text": "Opsummering",
+                "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/"
+            }
         ]
-      },
-      "input_ansoeger": {
+    },
+    "input_ansoeger": {
         "id": "input-ansoeger",
         "name": "ansoeger",
         "label": "Navn på ansøger",
         "value": "Kirsten Mønster Jensen",
         "readonly": true
-      },
+    },
     "input_CPR": {
         "id": "input-CPR",
         "name": "CPR",
         "label": "Personens CPR-nummer",
-        "classes": { "input": "input-width-m" }
-      },
-      "input_CVR": {
+        "classes": {
+            "input": "input-width-m"
+        }
+    },
+    "input_CVR": {
         "id": "input-CVR",
         "name": "CVR",
         "label": "Virksomhedens CVR-nummer",
-        "classes": { "input": "input-width-m" }
-      },
-      "button_next": {
+        "classes": {
+            "input": "input-width-m"
+        }
+    },
+    "button_next": {
         "text": "Næste",
         "variant": "primary",
         "classes": "d-print-none mt-7",
         "attributes": "type='submit'"
-      }
+    }
 }

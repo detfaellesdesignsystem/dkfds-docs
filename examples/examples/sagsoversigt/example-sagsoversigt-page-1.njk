@@ -1,10 +1,14 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/search/search.njk" import search as search %}
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
@@ -14,39 +18,35 @@
 {% from "components/cards/cards.njk" import card as card %}
 {% from "components/table/table.njk" import table as table %}
 
+{% set solution_header_data = {
+    "lastHeader": false,
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Sagsunivers"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
 {% block header %}
 <header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
-    
-    {% set authorityText = 
-      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
-    %}
-    {{ 
-      solution_header({
-        "lastHeader": false,
-        "title": {
-          "href": "#",
-          "text": "Sagsunivers"
-        },
-        "authority": {
-          "name": "Myndighedsnavn",
-          "text": authorityText
-        }
-      }) 
-    }}
+    {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
     <nav class="nav">
-        <!-- collapsible-->
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
+        {{ menu_close_button() }}
 
         <div class="navbar navbar-primary">
             <div class="navbar-inner container">
                 <ul class="nav-primary">
-                    <li class="current">
-                        <a href="#" class="nav-link">
+                    <li class="current active">
+                        <a href="#" class="nav-link" aria-current="page">
                             <span>Find sag</span>
                         </a>
                     </li>
@@ -62,8 +62,7 @@
                     </li>
                     <li>
                         <div class="overflow-menu">
-                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
-                                data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
                                 <span>Udbetalinger</span>
                             </button>
                             <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
@@ -91,15 +90,8 @@
             </div>
         </div>
         {{ mobile_portal_header(portal_header_data) }}
-        {{ 
-            mobile_solution_header({
-                "authority": {
-                    "name": "Myndighedsnavn",
-                    "text": authorityText
-                }
-            }) 
-        }}
-    </nav> <!-- collapsible nav end-->
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
 </header>
 {% endblock %}
 
@@ -112,7 +104,7 @@
 
     {% set badgeUnderBehandling = badge(badge_under_behandling) %}
     {% set badgeAfsluttet = badge(badge_afsluttet) %}
-    {{ 
+    {{
         table({
             "outerClasses": "mt-4 mb-4",
             "thead": [

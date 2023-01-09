@@ -1,9 +1,13 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
@@ -12,94 +16,81 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/form/controls/date-input.njk" import datoinput as dateinput %}
 
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Registrer et eller andet"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
 {% block header %}
-    <header class="header">
-      <div id="top"></div>
-  <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
-  {{ portal_header(portal_header_data) }}
-  
-  {% set authorityText = 
-      'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
-    %}
-    {{ 
-      solution_header({
-        "lastHeader": true,
-        "title": {
-          "href": "#",
-          "text": "Registrer et eller andet"
-        },
-        "solutionInfo": {
-          "hideOnPrint": true
-        },
-        "authority": {
-          "name": "Myndighedsnavn",
-          "text": authorityText
-        }
-      }) 
-    }}
+<header class="header">
+    <div id="top"></div>
+    {{ skiplink() }}
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
 
-  <div class="overlay"></div>
-  <nav class="nav"> <!-- collapsible-->
-    <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu">{{icon_svg({"name":"close"})}}Luk</button>
+    <div class="overlay"></div>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
 
-    {{ mobile_portal_header(portal_header_data) }}
-
-    {{ 
-      mobile_solution_header({
-          "authority": {
-              "name": "Myndighedsnavn",
-              "text": authorityText
-          }
-      }) 
-    }}
-
-    <div class="navbar">
-      <div class="navbar-inner navbar-context-actions container">
-        <div class="nav-actions">
-          <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
+        <div class="navbar">
+            <div class="navbar-inner navbar-context-actions container">
+                <div class="nav-actions">
+                    <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav> <!-- collapsible nav end-->
+    </nav>
 </header>
 {% endblock %}
 
 {% block body %}
 <div class="container page-container pt-5 pt-lg-0">
-  <div class="row">
-    <aside class="col-12 col-lg-3 sidebar-col">
-      {{ overflow_stepguide(trinindikator_data) }}
-    </aside>
-    <main class="col-12 col-lg-9" id="main-content">
-      <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/" class="back-link">Tilbage</a></div>
-      <h1 class="mb-6">Tidligere registrering</h1>
-      <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-        {% set radioTidligereRegistrering = textinput(textinput_data) + dateinput(dateinput_data) %}
-        {{ radiobuttons({
-            "id": "radiogroup-lignende-registrering",
-            "groupname": "radio-group",
-            "radiogroupLegend": "Har du tidligere lavet en lignende registrering?",
-            "collapsedItems": true,
-            "items": [
-              {
-                  "id": "id-radio1",
-                  "value": "1",
-                  "label": "Ja",
-                  "srOnly": "Udfyld informationer herunder",
-                  "hiddenContent": radioTidligereRegistrering
-              },
-              {
-                  "id": "id-radio2",
-                  "value": "2",
-                  "label": "Nej"
-              }
-            ]
-          })
-        }}
-        {{ button(button_next) }}
-      </form>
-    </main>
-  </div>
+    <div class="row">
+        <aside class="col-12 col-lg-3 sidebar-col">
+            {{ overflow_stepguide(trinindikator_data) }}
+        </aside>
+        <main class="col-12 col-lg-9" id="main-content">
+            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/" class="back-link">Tilbage</a>
+            </div>
+            <h1 class="mb-6">Tidligere registrering</h1>
+            <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
+                {% set radioTidligereRegistrering = textinput(textinput_data) + dateinput(dateinput_data) %}
+                {{ 
+                    radiobuttons({
+                        "id": "radiogroup-lignende-registrering",
+                        "groupname": "radio-group",
+                        "radiogroupLegend": "Har du tidligere lavet en lignende registrering?",
+                        "collapsedItems": true,
+                        "items": [
+                            {
+                                "id": "id-radio1",
+                                "value": "1",
+                                "label": "Ja",
+                                "srOnly": "Udfyld informationer herunder",
+                                "hiddenContent": radioTidligereRegistrering
+                            },
+                            {
+                                "id": "id-radio2",
+                                "value": "2",
+                                "label": "Nej"
+                            }
+                        ]
+                    })
+                }}
+                {{ button(button_next) }}
+            </form>
+        </main>
+    </div>
 </div>
 {% endblock %}
 
@@ -107,7 +98,7 @@
 {% endblock %}
 
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
 {{ modal(modal_data) }}

@@ -80,7 +80,11 @@
             {
                 "text": "Vælg personer",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
-                "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
+                "icon": {
+                    "name": "done",
+                    "ariaLabel": "Gennemført",
+                    "ariahidden": false
+                }
             },
             {
                 "text": "Vælg noget mere",
@@ -109,47 +113,107 @@
         "selectable": true,
         "id": "selectable-table",
         "thead": [
-            { "headerContent": "Nummer" },
-            { "headerContent": "Dato" },
-            { "headerContent": "Information" },
-            { "headerContent": "Beskrivelse" },
-            { "headerContent": "En label" }
+            {
+                "headerContent": "Nummer"
+            },
+            {
+                "headerContent": "Dato"
+            },
+            {
+                "headerContent": "Information"
+            },
+            {
+                "headerContent": "Beskrivelse"
+            },
+            {
+                "headerContent": "En label"
+            }
         ],
         "tbody": [
             [
-                { "content": "123456789" },
-                { "content": "01.01.2021" },
-                { "content": "Lorem ipsum dolor sit" },
-                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
-                { "content": "ABCDEFG" }
+                {
+                    "content": "123456789"
+                },
+                {
+                    "content": "01.01.2021"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                },
+                {
+                    "content": "ABCDEFG"
+                }
             ],
             [
-                { "content": "123456789" },
-                { "content": "01.01.2021" },
-                { "content": "Lorem ipsum dolor sit" },
-                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
-                { "content": "ABCDEFG" }
+                {
+                    "content": "123456789"
+                },
+                {
+                    "content": "01.01.2021"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                },
+                {
+                    "content": "ABCDEFG"
+                }
             ],
             [
-                { "content": "123456789" },
-                { "content": "01.01.2021" },
-                { "content": "Lorem ipsum dolor sit" },
-                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
-                { "content": "ABCDEFG" }
+                {
+                    "content": "123456789"
+                },
+                {
+                    "content": "01.01.2021"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                },
+                {
+                    "content": "ABCDEFG"
+                }
             ],
             [
-                { "content": "123456789" },
-                { "content": "01.01.2021" },
-                { "content": "Lorem ipsum dolor sit" },
-                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
-                { "content": "ABCDEFG" }
+                {
+                    "content": "123456789"
+                },
+                {
+                    "content": "01.01.2021"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                },
+                {
+                    "content": "ABCDEFG"
+                }
             ],
             [
-                { "content": "123456789" },
-                { "content": "01.01.2021" },
-                { "content": "Lorem ipsum dolor sit" },
-                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." },
-                { "content": "ABCDEFG" }
+                {
+                    "content": "123456789"
+                },
+                {
+                    "content": "01.01.2021"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit"
+                },
+                {
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                },
+                {
+                    "content": "ABCDEFG"
+                }
             ]
         ]
     },
