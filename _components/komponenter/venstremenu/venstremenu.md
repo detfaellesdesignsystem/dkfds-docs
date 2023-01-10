@@ -31,7 +31,7 @@ componentCode: "/kode/komponenter/venstremenu/"
 
 ## Anvendes til
 
-Venstremenu anvendes til at afspejle et navigations-hierarki i op til tre niveauer.
+Venstremenu anvendes til at afspejle et navigationshierarki i op til tre niveauer.
 
 Venstremenu anvendes til den sekundære navigation/undermenu på en side i en større løsning.
 
