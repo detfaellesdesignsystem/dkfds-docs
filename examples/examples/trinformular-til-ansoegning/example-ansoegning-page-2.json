@@ -92,7 +92,7 @@
             "input": "input-width-m"
         },
         "required": false,
-        "hint": "Dette felt skal kun udfyldes, hvis kontaktpersonen er en anden end dig selv."
+        "helptext": "Dette felt skal kun udfyldes, hvis kontaktpersonen er en anden end dig selv."
     },
     "button_next": {
         "text": "Næste",

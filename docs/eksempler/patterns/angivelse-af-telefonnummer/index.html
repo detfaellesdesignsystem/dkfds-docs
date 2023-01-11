@@ -3730,10 +3730,17 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group">
-    <label class="form-label" for="input-phonenumber">Telefonnummer</label>
+        <div class="form-group
+        
+        
+        ">
 
-    <input class="form-input input-width-s" id="input-phonenumber" name="input-phonenumber" type="tel" autocomplete="tel" />
+    <label class="form-label" for="input-phonenumber">
+        Telefonnummer
+
+    </label>
+
+    <input type="tel" id="input-phonenumber" name="input-phonenumber" class="form-input input-width-s" autocomplete="tel" />
 
 </div>
         
@@ -3744,10 +3751,17 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på angivelse af telefonnummer</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber&quot;&gt;Telefonnummer&lt;/label&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group
+        
+        
+        &quot;&gt;
 
-    &lt;input class=&quot;form-input input-width-s&quot; id=&quot;input-phonenumber&quot; name=&quot;input-phonenumber&quot; type=&quot;tel&quot; autocomplete=&quot;tel&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber&quot;&gt;
+        Telefonnummer
+
+    &lt;/label&gt;
+
+    &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber&quot; name=&quot;input-phonenumber&quot; class=&quot;form-input input-width-s&quot; autocomplete=&quot;tel&quot;&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -3763,13 +3777,22 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error">
-    <label class="form-label" for="input-phonenumber-no-countrycode">Telefonnummer</label>
+        <div class="form-group
+         form-error
+        
+        ">
+
+    <label class="form-label" for="input-phonenumber-no-countrycode">
+        Telefonnummer
+
+    </label>
 
     <span class="form-error-message" id="input-phonenumber-no-countrycode-error"><span class="sr-only">Fejl:</span> Indtast et gyldigt
         telefonnummer<br />Ved udenlandske numre inkluder landekode, fx +49 123 1234 1234 eller 0044 808 157 0192</span>
-
-    <input class="form-input input-width-s" id="input-phonenumber-no-countrycode" value="0123 4567 8900" name="input-phonenumber-no-countrycode" type="tel" aria-invalid="true" aria-describedby="input-phonenumber-no-countrycode-error " autocomplete="tel" />
+    <input type="tel" id="input-phonenumber-no-countrycode" name="input-phonenumber-no-countrycode" class="form-input input-width-s" value="0123 4567 8900" aria-invalid="true" aria-describedby="
+            
+            input-phonenumber-no-countrycode-error 
+            " autocomplete="tel" />
 
 </div>
         
@@ -3780,14 +3803,22 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på angivelse af telefonnummer med udenlandsk nummer uden landekode</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-no-countrycode&quot;&gt;Telefonnummer&lt;/label&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group
+         form-error
+        
+        &quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-no-countrycode&quot;&gt;
+        Telefonnummer
+
+    &lt;/label&gt;
 
     &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-no-countrycode-error&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Indtast et gyldigt
         telefonnummer&lt;br/&gt;Ved udenlandske numre inkluder landekode, fx +49 123 1234 1234 eller 0044 808 157 0192&lt;/span&gt;
-
-    &lt;input class=&quot;form-input input-width-s&quot; id=&quot;input-phonenumber-no-countrycode&quot; value=&quot;0123 4567 8900&quot; name=&quot;input-phonenumber-no-countrycode&quot; type=&quot;tel&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;input-phonenumber-no-countrycode-error &quot; autocomplete=&quot;tel&quot;&gt;
+    &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-no-countrycode&quot; name=&quot;input-phonenumber-no-countrycode&quot; class=&quot;form-input input-width-s&quot; value=&quot;0123 4567 8900&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;
+            
+            input-phonenumber-no-countrycode-error 
+            &quot; autocomplete=&quot;tel&quot;&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -3801,12 +3832,22 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group">
-    <label class="form-label" for="input-phonenumber-foreign">Telefonnummer</label>
+        <div class="form-group
+        
+        
+        ">
+
+    <label class="form-label" for="input-phonenumber-foreign">
+        Telefonnummer
+
+    </label>
 
     <span class="form-hint" id="input-phonenumber-foreign-hint">Ved udenlandske numre inkluder landekode</span>
 
-    <input class="form-input input-width-s" id="input-phonenumber-foreign" name="input-phonenumber-foreign" type="tel" aria-describedby="input-phonenumber-foreign-hint " autocomplete="tel" />
+    <input type="tel" id="input-phonenumber-foreign" name="input-phonenumber-foreign" class="form-input input-width-s" aria-describedby="
+            input-phonenumber-foreign-hint 
+            
+            " autocomplete="tel" />
 
 </div>
         
@@ -3817,12 +3858,22 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på angivelse af udenlandsk telefonnummer</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-foreign&quot;&gt;Telefonnummer&lt;/label&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group
+        
+        
+        &quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-foreign&quot;&gt;
+        Telefonnummer
+
+    &lt;/label&gt;
 
     &lt;span class=&quot;form-hint&quot; id=&quot;input-phonenumber-foreign-hint&quot;&gt;Ved udenlandske numre inkluder landekode&lt;/span&gt;
 
-    &lt;input class=&quot;form-input input-width-s&quot; id=&quot;input-phonenumber-foreign&quot; name=&quot;input-phonenumber-foreign&quot; type=&quot;tel&quot; aria-describedby=&quot;input-phonenumber-foreign-hint &quot; autocomplete=&quot;tel&quot;&gt;
+    &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-foreign&quot; name=&quot;input-phonenumber-foreign&quot; class=&quot;form-input input-width-s&quot; aria-describedby=&quot;
+            input-phonenumber-foreign-hint 
+            
+            &quot; autocomplete=&quot;tel&quot;&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -3838,15 +3889,24 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error">
-    <label class="form-label" for="input-phonenumber-invalid">Telefonnummer</label>
+        <div class="form-group
+         form-error
+        
+        ">
+
+    <label class="form-label" for="input-phonenumber-invalid">
+        Telefonnummer
+
+    </label>
 
     <span class="form-hint" id="input-phonenumber-invalid-hint">Ved udenlandske numre inkluder landekode</span>
 
     <span class="form-error-message" id="input-phonenumber-invalid-error"><span class="sr-only">Fejl:</span> Indtast et gyldigt telefonnummer, fx 12345678, +49 123 1234 1234 eller 0044 808 157
         0192</span>
-
-    <input class="form-input input-width-s" id="input-phonenumber-invalid" value="0123 4567 8900" name="input-phonenumber-invalid" type="tel" aria-invalid="true" aria-describedby="input-phonenumber-invalid-hint input-phonenumber-invalid-error " autocomplete="tel" />
+    <input type="tel" id="input-phonenumber-invalid" name="input-phonenumber-invalid" class="form-input input-width-s" value="0123 4567 8900" aria-invalid="true" aria-describedby="
+            input-phonenumber-invalid-hint 
+            input-phonenumber-invalid-error 
+            " autocomplete="tel" />
 
 </div>
         
@@ -3857,16 +3917,24 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på angivelse af gyldigt telefonnummer</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-invalid&quot;&gt;Telefonnummer&lt;/label&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group
+         form-error
+        
+        &quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-invalid&quot;&gt;
+        Telefonnummer
+
+    &lt;/label&gt;
 
     &lt;span class=&quot;form-hint&quot; id=&quot;input-phonenumber-invalid-hint&quot;&gt;Ved udenlandske numre inkluder landekode&lt;/span&gt;
 
     &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-invalid-error&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Indtast et gyldigt telefonnummer, fx 12345678, +49 123 1234 1234 eller 0044 808 157
         0192&lt;/span&gt;
-
-    &lt;input class=&quot;form-input input-width-s&quot; id=&quot;input-phonenumber-invalid&quot; value=&quot;0123 4567 8900&quot; name=&quot;input-phonenumber-invalid&quot; type=&quot;tel&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;input-phonenumber-invalid-hint input-phonenumber-invalid-error &quot; autocomplete=&quot;tel&quot;&gt;
+    &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-invalid&quot; name=&quot;input-phonenumber-invalid&quot; class=&quot;form-input input-width-s&quot; value=&quot;0123 4567 8900&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;
+            input-phonenumber-invalid-hint 
+            input-phonenumber-invalid-error 
+            &quot; autocomplete=&quot;tel&quot;&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -3882,10 +3950,17 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group">
-    <label class="form-label" for="input-phonenumber-danish">Dansk telefonnummer</label>
+        <div class="form-group
+        
+        
+        ">
 
-    <input class="form-input input-width-xs" id="input-phonenumber-danish" name="input-phonenumber-danish" type="tel" autocomplete="tel" />
+    <label class="form-label" for="input-phonenumber-danish">
+        Dansk telefonnummer
+
+    </label>
+
+    <input type="tel" id="input-phonenumber-danish" name="input-phonenumber-danish" class="form-input input-width-xs" autocomplete="tel" />
 
 </div>
         
@@ -3896,10 +3971,17 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på angivelse af dansk telefonnummer</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-danish&quot;&gt;Dansk telefonnummer&lt;/label&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group
+        
+        
+        &quot;&gt;
 
-    &lt;input class=&quot;form-input input-width-xs&quot; id=&quot;input-phonenumber-danish&quot; name=&quot;input-phonenumber-danish&quot; type=&quot;tel&quot; autocomplete=&quot;tel&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-danish&quot;&gt;
+        Dansk telefonnummer
+
+    &lt;/label&gt;
+
+    &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-danish&quot; name=&quot;input-phonenumber-danish&quot; class=&quot;form-input input-width-xs&quot; autocomplete=&quot;tel&quot;&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -3911,12 +3993,21 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error">
-    <label class="form-label" for="input-phonenumber-danish-e">Dansk telefonnummer</label>
+        <div class="form-group
+         form-error
+        
+        ">
+
+    <label class="form-label" for="input-phonenumber-danish-e">
+        Dansk telefonnummer
+
+    </label>
 
     <span class="form-error-message" id="input-phonenumber-danish-e-error"><span class="sr-only">Fejl:</span> Indtast et dansk telefonnummer, fx 12345678 eller +45 12 34 56 78</span>
-
-    <input class="form-input input-width-xs" id="input-phonenumber-danish-e" value="12 34 56 7" name="input-phonenumber-danish-e" type="tel" aria-invalid="true" aria-describedby="input-phonenumber-danish-e-error " autocomplete="tel" />
+    <input type="tel" id="input-phonenumber-danish-e" name="input-phonenumber-danish-e" class="form-input input-width-xs" value="12 34 56 7" aria-invalid="true" aria-describedby="
+            
+            input-phonenumber-danish-e-error 
+            " autocomplete="tel" />
 
 </div>
         
@@ -3927,13 +4018,21 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på angivelse af dansk telefonnummer med fejlbesked</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-danish-e&quot;&gt;Dansk telefonnummer&lt;/label&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group
+         form-error
+        
+        &quot;&gt;
+
+    &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-danish-e&quot;&gt;
+        Dansk telefonnummer
+
+    &lt;/label&gt;
 
     &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-danish-e-error&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Indtast et dansk telefonnummer, fx 12345678 eller +45 12 34 56 78&lt;/span&gt;
-
-    &lt;input class=&quot;form-input input-width-xs&quot; id=&quot;input-phonenumber-danish-e&quot; value=&quot;12 34 56 7&quot; name=&quot;input-phonenumber-danish-e&quot; type=&quot;tel&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;input-phonenumber-danish-e-error &quot; autocomplete=&quot;tel&quot;&gt;
+    &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-danish-e&quot; name=&quot;input-phonenumber-danish-e&quot; class=&quot;form-input input-width-xs&quot; value=&quot;12 34 56 7&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;
+            
+            input-phonenumber-danish-e-error 
+            &quot; autocomplete=&quot;tel&quot;&gt;
 
 &lt;/div&gt;</code></pre></figure>
 

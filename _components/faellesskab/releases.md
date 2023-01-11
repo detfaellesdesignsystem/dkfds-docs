@@ -152,6 +152,7 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 - <span class="badge badge-info badge-small mr-2">Change</span> Flere mindre tilgængelighedsrettelser i headeren: Fjernet `title` fra mobilmenuens knapper og ændret html for portal.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headers-eksempler, hvor den aktive side ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headeren, hvor portalnavnet ikke blev vist korrekt ved print.
+- Mindsket afstanden mellem label og hjælpetekst ved store radioknapper.
 
 
 

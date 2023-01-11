@@ -141,7 +141,7 @@
             "input": "input-width-s"
         },
         "required": false,
-        "hint": "Behandlingstiden kan forkortes, hvis vi kan kontakte dig på telefon i tilfælde af spørgsmål"
+        "helptext": "Behandlingstiden kan forkortes, hvis vi kan kontakte dig på telefon i tilfælde af spørgsmål"
     },
     "button_next": {
         "text": "Næste",

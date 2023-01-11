@@ -85,17 +85,14 @@
         "groupname": "ansoegning",
         "items": [
             {
-                "id": "ansoegning1",
                 "value": "ABC",
                 "label": "Lorem ipsum dolor (§ABC)"
             },
             {
-                "id": "ansoegning2",
                 "value": "DEF",
                 "label": "Sit amet (§DEF)"
             },
             {
-                "id": "ansoegning3",
                 "value": "GHI",
                 "label": "Consectetur adipiscing elit (§GHI)"
             }

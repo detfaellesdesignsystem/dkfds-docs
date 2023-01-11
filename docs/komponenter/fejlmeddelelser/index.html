@@ -4306,14 +4306,23 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error">
-    <label class="form-label" for="form-error">Hvad hedder dit kursus?</label>
+        <div class="form-group
+         form-error
+        
+        ">
+
+    <label class="form-label" for="form-error">
+        Hvad hedder dit kursus?
+
+    </label>
 
     <span class="form-hint" id="form-error-hint">Fx: Skriv godt</span>
 
     <span class="form-error-message" id="form-error-error"><span class="sr-only">Fejl:</span> Giv dit kursus et navn</span>
-
-    <input class="form-input" id="form-error" name="form-error" type="text" aria-invalid="true" aria-describedby="form-error-hint form-error-error " />
+    <input type="text" id="form-error" name="form-error" class="form-input" aria-invalid="true" aria-describedby="
+            form-error-hint 
+            form-error-error 
+            " />
 
 </div>
         
@@ -4529,7 +4538,10 @@
         <form novalidate="" class="form mb-7 input-width-m">
 
     <div class="form-group form-error">
-        <label class="form-label" for="options-error">Dropdown (select)</label>
+        <label class="form-label" for="options-error">
+            Dropdown (select)
+
+        </label>
 
         <span class="form-error-message" id="options-error-error"><span class="sr-only">Fejl:</span> Vælg en mulighed</span>
         <select class=" form-select" name="options-error" id="options-error" aria-invalid="true" aria-describedby=" options-error-error">
@@ -4563,12 +4575,21 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error">
-    <label class="form-label" for="fullname-error-example">Hvad er dit fulde navn?</label>
+        <div class="form-group
+         form-error
+        
+        ">
+
+    <label class="form-label" for="fullname-error-example">
+        Hvad er dit fulde navn?
+
+    </label>
 
     <span class="form-error-message" id="fullname-error-example-error"><span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen</span>
-
-    <input class="form-input" id="fullname-error-example" name="fullname-error-example" type="text" aria-invalid="true" aria-describedby="fullname-error-example-error " />
+    <input type="text" id="fullname-error-example" name="fullname-error-example" class="form-input" aria-invalid="true" aria-describedby="
+            
+            fullname-error-example-error 
+            " />
 
 </div>
         
@@ -4588,13 +4609,23 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error">
-    <label class="form-label" for="input-pris-error">Pris i 1000 kr.</label>
+        <div class="form-group
+         form-error
+        
+        ">
+
+    <label class="form-label" for="input-pris-error">
+        Pris i 1000 kr.
+
+    </label>
 
     <span class="form-error-message" id="input-pris-error-error"><span class="sr-only">Fejl:</span> Angiv en pris</span>
 
     <div class="form-input-wrapper form-input-wrapper--suffix">
-        <input class="form-input input-char-11" id="input-pris-error" value="123" name="input-pris-error" type="number" aria-invalid="true" aria-describedby="input-pris-error-error " />
+        <input type="number" id="input-pris-error" name="input-pris-error" class="form-input input-char-11" value="123" aria-invalid="true" aria-describedby="
+            
+            input-pris-error-error 
+            " />
         <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
     </div>
 
@@ -4616,12 +4647,21 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error form-limit" data-maxlength="20">
-    <label class="form-label" for="input-type-limit-error">Inputfelt med karakterbegrænsning</label>
+        <div class="form-group
+         form-error
+        
+         form-limit" data-maxlength="20">
+
+    <label class="form-label" for="input-type-limit-error">
+        Inputfelt med karakterbegrænsning
+
+    </label>
 
     <span class="form-error-message" id="input-type-limit-error-error"><span class="sr-only">Fejl:</span> Du kan maks. taste 20 tegn</span>
-
-    <input class="form-input" id="input-type-limit-error" value="Dette er en sætning med mange tegn" name="input-type-limit-error" type="text" aria-invalid="true" aria-describedby="input-type-limit-error-error input-type-limit-error-limit-message" />
+    <input type="text" id="input-type-limit-error" name="input-type-limit-error" class="form-input" value="Dette er en sætning med mange tegn" aria-invalid="true" aria-describedby="
+            
+            input-type-limit-error-error 
+            input-type-limit-error-limit-message" />
 
     <span id="input-type-limit-error-limit-message" class="sr-only">Du kan indtaste op til 20 tegn</span>
     <span class="form-hint character-limit" aria-hidden="true">Du har 20 tegn tilbage</span>
@@ -4645,30 +4685,61 @@
     
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
-        <div class="form-group form-error" id="radiogroup-error">
-    <fieldset aria-describedby="radiogroup-error-error">
-        <legend class="form-label">Sagen handler om</legend>
+        <div class="form-group
+         form-error
+        
+        ">
+    <fieldset aria-describedby="
+        radiogroup-error-error ">
+        <legend class="form-label">
+            Sagen handler om
+
+        </legend>
+
         <span class="form-error-message" id="radiogroup-error-error"><span class="sr-only">Fejl:</span> Vælg hvad sagen handler om</span>
-        <ul class="nobullet-list">
-            <li>
-                <div class="form-group-radio">
-                    <input type="radio" id="sagen-omhandler-ulykkesforsikring" name="sagen-omhandler" value="ulykkesforsikring" class="form-radio" />
-                    <label class="form-label" for="sagen-omhandler-ulykkesforsikring" id="sagen-omhandler-ulykkesforsikring-form-label">Ulykkesforsikring</label>
-                </div>
-            </li>
-            <li>
-                <div class="form-group-radio">
-                    <input type="radio" id="sagen-omhandler-erstatningsansvar" name="sagen-omhandler" value="erstatningsansvar" class="form-radio" />
-                    <label class="form-label" for="sagen-omhandler-erstatningsansvar" id="sagen-omhandler-erstatningsansvar-form-label">Erstatningsansvar</label>
-                </div>
-            </li>
-            <li>
-                <div class="form-group-radio">
-                    <input type="radio" id="sagen-omhandler-forsikringsselskab" name="sagen-omhandler" value="forsikringsselskab" class="form-radio" />
-                    <label class="form-label" for="sagen-omhandler-forsikringsselskab" id="sagen-omhandler-forsikringsselskab-form-label">Forsikringsselskab</label>
-                </div>
-            </li>
-        </ul>
+
+        <div class="form-group-radio
+    ">
+
+            <input type="radio" id="radiogroup-error-option1" name="sagen-omhandler" class="form-radio
+             radio-large
+            " value="ulykkesforsikring" />
+
+            <label class="form-label" for="radiogroup-error-option1">
+                Ulykkesforsikring
+
+            </label>
+
+        </div>
+
+        <div class="form-group-radio
+    ">
+
+            <input type="radio" id="radiogroup-error-option2" name="sagen-omhandler" class="form-radio
+             radio-large
+            " value="erstatningsansvar" />
+
+            <label class="form-label" for="radiogroup-error-option2">
+                Erstatningsansvar
+
+            </label>
+
+        </div>
+
+        <div class="form-group-radio
+    ">
+
+            <input type="radio" id="radiogroup-error-option3" name="sagen-omhandler" class="form-radio
+             radio-large
+            " value="forsikringsselskab" />
+
+            <label class="form-label" for="radiogroup-error-option3">
+                Forsikringsselskab
+
+            </label>
+
+        </div>
+
     </fieldset>
 </div>
         
@@ -4689,7 +4760,10 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error">
-    <label class="form-label" for="input-error">Tekstområde med fejlmeddelelse</label>
+    <label class="form-label" for="input-error">
+        Tekstområde med fejlmeddelelse
+
+    </label>
 
     <span class="form-error-message" id="form-error-message-input-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlmeddelelse</span>
     <textarea class="form-input " rows="5" id="input-error" name="input-error" aria-describedby="form-error-message-input-error  "></textarea>
@@ -4713,7 +4787,10 @@
     <div class="component-example px-4 py-4" aria-label="Eksempel">
         
         <div class="form-group form-error form-limit" data-maxlength="50" id="input-area-text-limit-error">
-    <label class="form-label" for="textarea-limit-error">Karakterbegrænsning med fejlmeddelelse</label>
+    <label class="form-label" for="textarea-limit-error">
+        Karakterbegrænsning med fejlmeddelelse
+
+    </label>
 
     <span class="form-error-message" id="form-error-message-textarea-limit-error"><span class="sr-only">Fejl:</span> Du kan maks. taste 50 tegn</span>
     <textarea class="form-input " rows="3" id="textarea-limit-error" name="textarea-limit-error" aria-describedby="form-error-message-textarea-limit-error  input-area-text-limit-error-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>

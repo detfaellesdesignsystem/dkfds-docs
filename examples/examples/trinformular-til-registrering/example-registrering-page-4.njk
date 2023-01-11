@@ -29,6 +29,27 @@
     }
 } %}
 
+{% set radiobuttons_data = {
+    "id": "radiogroup-lignende-registrering",
+    "groupname": "radio-group",
+    "radiogroupLegend": "Har du tidligere lavet en lignende registrering?",
+    "collapsedItems": true,
+    "items": [
+        {
+            "value": "1",
+            "label": "Ja",
+            "srOnly": "Udfyld informationer herunder",
+            "hiddenContent": textinput(textinput_data) + dateinput(dateinput_data)
+        },
+        {
+            "value": "2",
+            "label": "Nej"
+        }
+    ]
+} %}
+
+{# <!-- Page content starts here --> #}
+
 {% block header %}
 <header class="header">
     <div id="top"></div>
@@ -60,41 +81,17 @@
             {{ overflow_stepguide(trinindikator_data) }}
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/" class="back-link">Tilbage</a>
+            <div>
+                <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/" class="back-link">Tilbage</a>
             </div>
             <h1 class="mb-6">Tidligere registrering</h1>
             <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-                {% set radioTidligereRegistrering = textinput(textinput_data) + dateinput(dateinput_data) %}
-                {{ 
-                    radiobuttons({
-                        "id": "radiogroup-lignende-registrering",
-                        "groupname": "radio-group",
-                        "radiogroupLegend": "Har du tidligere lavet en lignende registrering?",
-                        "collapsedItems": true,
-                        "items": [
-                            {
-                                "id": "id-radio1",
-                                "value": "1",
-                                "label": "Ja",
-                                "srOnly": "Udfyld informationer herunder",
-                                "hiddenContent": radioTidligereRegistrering
-                            },
-                            {
-                                "id": "id-radio2",
-                                "value": "2",
-                                "label": "Nej"
-                            }
-                        ]
-                    })
-                }}
+                {{ radiobuttons(radiobuttons_data) }}
                 {{ button(button_next) }}
             </form>
         </main>
     </div>
 </div>
-{% endblock %}
-
-{% block banner -%}
 {% endblock %}
 
 {% block footer -%}

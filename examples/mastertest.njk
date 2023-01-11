@@ -2,22 +2,94 @@
 {% from "components/icons/icons.njk" import icon as icon %}
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 
 {% block body %}
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <div class="mb-6">
+            <div class="mb-6 min">
                 {{
+                    radiobuttons({
+                        "id": "radiobuttons-min-id",
+                        "groupname": "radiobuttons-min-groupname",
+                        "radiogroupLegend": "Radioknapper med få muligheder",
+                        "items": [
+                            {
+                                "value": "option1",
+                                "label": "Mulighed 1"
+                            },
+                            {
+                                "value": "option2",
+                                "label": "Mulighed 2"
+                            },
+                            {
+                                "value": "option3",
+                                "label": "Mulighed 3"
+                            }
+                        ]
+                    })
+                }}
+            </div>
+            <div class="mb-6 max">
+                {{
+                    radiobuttons({
+                        "id": "radiobuttons-max-id",
+                        "groupname": "radiobuttons-max-groupname",
+                        "radiogroupLegend": "Radioknapper med alle muligheder",
+                        "collapsedItems": true,
+                        "classes": "test-formgroup",
+                        "optionalLabel": true,
+                        "requiredLabel": true,
+                        "helptext": "Hjælpetekst til radioknapperne",
+                        "errorMessage": "Fejlbesked til radioknapperne",
+                        "tooltip": "Tooltip til radioknapperne",
+                        "items": [
+                            {
+                                "value": "option1",
+                                "label": "Mulighed 1",
+                                "isLarge": false,
+                                "classes": {
+                                    "formgroupradio": "test-formgroupradio",
+                                    "input": "test-input",
+                                    "label": "test-label"
+                                },
+                                "srOnly": "Udfyld informationer herunder",
+                                "attributes": {
+                                    "formgroupradio": "data-test-formgroupradio",
+                                    "input": "data-test-input",
+                                    "label": "data-test-label"
+                                },
+                                "hiddenContent": textinput({ "label": "Ekstra info", "id": "radiobuttons-max-text", "name": "radiobuttons-max-text" })
+                            },
+                            {
+                                "value": "option2",
+                                "label": "Mulighed 2",
+                                "isLarge": false,
+                                "checked": true,
+                                "helptext": "Hjælpetekst til mulighed 2"
+                            },
+                            {
+                                "value": "option3",
+                                "label": "Mulighed 3",
+                                "isLarge": false,
+                                "disabled": true
+                            }
+                        ]
+                    })
+                }}
+            </div>
+            <div class="mb-6">
+                {#
                     textinput({
                         "label": "Dette er en label",
                         "id": "textinput-example-plain",
                         "name": "textinput-example-plain"
                     })
-                }}
+                #}
             </div>
             <div class="mb-6">
-                {{
+                {#
                     textinput({
                         "label": "Test af fejlbesked",
                         "id": "textinput-example-error",
@@ -25,10 +97,10 @@
                         "errorMessage": "Noget er fejlet",
                         "value": "Tekst inde i tekstfeltet"
                     })
-                }}
+                #}
             </div>
             <div class="mb-6">
-                {{
+                {#
                     textinput({
                         "label": "Test af attributter og klasser",
                         "id": "textinput-example-attribute",
@@ -44,20 +116,20 @@
                             "input": "data-test-3=\"3\""
                         }
                     })
-                }}
+                #}
             </div>
             <div class="mb-6">
-                {{
+                {#
                     textinput({
                         "label": "Alle ekstra tekster vist",
                         "id": "textinput-example-extras",
                         "name": "textinput-example-extras",
                         "tooltip": "Dette er et tooltip",
-                        "hint": "Dette er en hjælpetekst",
+                        "helptext": "Dette er en hjælpetekst",
                         "errorMessage": "Noget er fejlet",
                         "characterLimit": 30
                     })
-                }}
+                #}
             </div>
             <div class="mb-6">
                 {#

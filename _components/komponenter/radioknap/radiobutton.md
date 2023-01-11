@@ -15,6 +15,8 @@ subnav:
   href: '#hjaelpetekst'
 - text: Fejlmeddelelse
   href: '#fejlmeddelelse'
+- text: Lille radioknap
+  href: '#lille-radioknap'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold-collapse'
 ---
@@ -73,7 +75,7 @@ Der bør være en overordnet label for hele listen af radioknapper
 
 {:#hjaelpetekst}
 ## Hjælpetekst
-{% include code/preview-box.html component="radiobutton-helptext" title="Eksempel på radioknapper" %}
+{% include code/preview-box.html component="radiobutton-helptext" title="Eksempel på radioknapper med hjælpetekst" %}
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
@@ -82,6 +84,10 @@ Der bør være en overordnet label for hele listen af radioknapper
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
 
 {% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
+
+{:#lille-radioknap}
+## Lille radioknap
+{% include code/preview-box.html component="radiobutton-small" title="Eksempel på små radioknapper" %}
 
 {:#skjult-indhold-collapse}
 ## Skjult indhold (Collapse)

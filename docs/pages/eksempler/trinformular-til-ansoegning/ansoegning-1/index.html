@@ -372,56 +372,110 @@
     <h1>Oplysninger om ansøger</h1>
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/">
 
-        <div class="form-group">
-            <label class="form-label" for="input-ansoeger">Navn på ansøger</label>
+        <div class="form-group
+        
+        
+        ">
 
-            <input class="form-input" id="input-ansoeger" value="Kirsten Mønster Jensen" name="ansoeger" type="text" readonly>
+            <label class="form-label" for="input-ansoeger">
+                Navn på ansøger
+
+            </label>
+
+            <input type="text" id="input-ansoeger" name="ansoeger" class="form-input" value="Kirsten Mønster Jensen" readonly>
 
         </div>
 
-        <div class="form-group js-radio-toggle-group mt-6" id="radiogroup-ansoeger-som">
+        <div class="form-group
+        
+         mt-6
+         js-radio-toggle-group">
             <fieldset>
-                <legend class="form-label">Jeg ansøger som</legend>
-                <ul class="nobullet-list">
-                    <li>
-                        <div class="form-group-radio">
-                            <input type="radio" id="id-radio1" name="radiogroup-ansoeger" value="1" class="form-radio">
-                            <label class="form-label" for="id-radio1" id="id-radio1-form-label">Privatperson</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-group-radio">
-                            <input type="radio" id="id-radio2" name="radiogroup-ansoeger" value="2" class="form-radio" data-controls="#id-radio2-collapse" data-expanded="false">
-                            <label class="form-label" for="id-radio2" id="id-radio2-form-label">Repræsentant for anden person<span class="sr-only"> Udfyld informationer herunder</span></label>
-                        </div>
-                        <div id="id-radio2-collapse" aria-hidden="true" class="radio-content">
+                <legend class="form-label">
+                    Jeg ansøger som
 
-                            <div class="form-group">
-                                <label class="form-label" for="input-CPR">Personens CPR-nummer</label>
+                </legend>
 
-                                <input class="form-input input-width-m" id="input-CPR" name="CPR" type="text">
+                <div class="form-group-radio
+    ">
 
-                            </div>
+                    <input type="radio" id="radiogroup-ansoeger-som-option1" name="radiogroup-ansoeger" class="form-radio
+             radio-large
+            " value="1">
 
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-group-radio">
-                            <input type="radio" id="id-radio3" name="radiogroup-ansoeger" value="3" class="form-radio" data-controls="#id-radio3-collapse" data-expanded="false">
-                            <label class="form-label" for="id-radio3" id="id-radio3-form-label">Repræsentant for virksomhed<span class="sr-only"> Udfyld informationer herunder</span></label>
-                        </div>
-                        <div id="id-radio3-collapse" aria-hidden="true" class="radio-content">
+                    <label class="form-label" for="radiogroup-ansoeger-som-option1">
+                        Privatperson
 
-                            <div class="form-group">
-                                <label class="form-label" for="input-CVR">Virksomhedens CVR-nummer</label>
+                    </label>
 
-                                <input class="form-input input-width-m" id="input-CVR" name="CVR" type="text">
+                </div>
 
-                            </div>
+                <div class="form-group-radio
+    ">
 
-                        </div>
-                    </li>
-                </ul>
+                    <input type="radio" id="radiogroup-ansoeger-som-option2" name="radiogroup-ansoeger" class="form-radio
+             radio-large
+            " value="2" data-controls="#radiogroup-ansoeger-som-option2-collapse" data-expanded="false">
+
+                    <label class="form-label" for="radiogroup-ansoeger-som-option2">
+                        Repræsentant for anden person
+
+                        <span class="sr-only"> Udfyld informationer herunder</span>
+                    </label>
+
+                </div>
+
+                <div id="radiogroup-ansoeger-som-option2-collapse" aria-hidden="true" class="radio-content">
+
+                    <div class="form-group
+        
+        
+        ">
+
+                        <label class="form-label" for="input-CPR">
+                            Personens CPR-nummer
+
+                        </label>
+
+                        <input type="text" id="input-CPR" name="CPR" class="form-input input-width-m">
+
+                    </div>
+
+                </div>
+
+                <div class="form-group-radio
+    ">
+
+                    <input type="radio" id="radiogroup-ansoeger-som-option3" name="radiogroup-ansoeger" class="form-radio
+             radio-large
+            " value="3" data-controls="#radiogroup-ansoeger-som-option3-collapse" data-expanded="false">
+
+                    <label class="form-label" for="radiogroup-ansoeger-som-option3">
+                        Repræsentant for virksomhed
+
+                        <span class="sr-only"> Udfyld informationer herunder</span>
+                    </label>
+
+                </div>
+
+                <div id="radiogroup-ansoeger-som-option3-collapse" aria-hidden="true" class="radio-content">
+
+                    <div class="form-group
+        
+        
+        ">
+
+                        <label class="form-label" for="input-CVR">
+                            Virksomhedens CVR-nummer
+
+                        </label>
+
+                        <input type="text" id="input-CVR" name="CVR" class="form-input input-width-m">
+
+                    </div>
+
+                </div>
+
             </fieldset>
         </div>
 

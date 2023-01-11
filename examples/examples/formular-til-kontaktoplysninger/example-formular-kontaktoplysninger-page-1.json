@@ -143,27 +143,22 @@
         "groupname": "alder",
         "items": [
             {
-                "id": "alder1",
                 "value": "Under 18",
                 "label": "Under 18"
             },
             {
-                "id": "alder2",
                 "value": "18-29",
                 "label": "18-29"
             },
             {
-                "id": "alder3",
                 "value": "30-39",
                 "label": "30-39"
             },
             {
-                "id": "alder4",
                 "value": "40-59",
                 "label": "40-59"
             },
             {
-                "id": "alder5",
                 "value": "60 eller ældre",
                 "label": "60 eller ældre"
             }

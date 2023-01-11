@@ -28,6 +28,34 @@
     }
 } %}
 
+{% set radiobuttons_data = {
+    "id": "radiogroup-ansoeger-som",
+    "groupname": "radiogroup-ansoeger",
+    "radiogroupLegend": "Jeg ansøger som",
+    "classes": "mt-6",
+    "collapsedItems": true,
+    "items": [
+        {
+            "value": "1",
+            "label": "Privatperson"
+        },
+        {
+            "value": "2",
+            "label": "Repræsentant for anden person",
+            "srOnly": "Udfyld informationer herunder",
+            "hiddenContent": textinput(input_CPR)
+        },
+        {
+            "value": "3",
+            "label": "Repræsentant for virksomhed",
+            "srOnly": "Udfyld informationer herunder",
+            "hiddenContent": textinput(input_CVR)
+        }
+    ]
+} %}
+
+{# <!-- Page content starts here --> #}
+
 {% block header %}
 <header class="header">
     <div id="top"></div>
@@ -49,39 +77,7 @@
     <h1>Oplysninger om ansøger</h1>
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/">
         {{ textinput(input_ansoeger) }}
-        {% set radioContentCPR = textinput(input_CPR) %}
-        {% set radioContentCVR = textinput(input_CVR) %}
-        {{ 
-            radiobuttons({
-                "id": "radiogroup-ansoeger-som",
-                "groupname": "radiogroup-ansoeger",
-                "radiogroupLegend": "Jeg ansøger som",
-                "classes": "mt-6",
-                "collapsedItems": true,
-                "items": [
-                    {
-                        "id": "id-radio1",
-                        "value": "1",
-                        "label": "Privatperson"
-                    },
-                    {
-                        "id": "id-radio2",
-                        "value": "2",
-                        "label": "Repræsentant for anden person",
-                        "srOnly": "Udfyld informationer herunder",
-                        "hiddenContent": radioContentCPR
-                    },
-                    {
-                        "id": "id-radio3",
-                        "value": "3",
-                        "label": "Repræsentant for virksomhed",
-                        "srOnly": "Udfyld informationer herunder",
-                        "hiddenContent": radioContentCVR
-                    }
-                ]
-            })
-        }}
-
+        {{ radiobuttons(radiobuttons_data) }}
         {{ button(button_next) }}
     </form>
 </main>

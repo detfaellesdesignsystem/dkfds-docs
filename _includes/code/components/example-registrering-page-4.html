@@ -183,64 +183,95 @@
 
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/" class="back-link">Tilbage</a>
+            <div>
+                <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/" class="back-link">Tilbage</a>
             </div>
             <h1 class="mb-6">Tidligere registrering</h1>
             <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
 
-                <div class="form-group js-radio-toggle-group" id="radiogroup-lignende-registrering">
+                <div class="form-group
+        
+        
+         js-radio-toggle-group">
                     <fieldset>
-                        <legend class="form-label">Har du tidligere lavet en lignende registrering?</legend>
-                        <ul class="nobullet-list">
-                            <li>
-                                <div class="form-group-radio">
-                                    <input type="radio" id="id-radio1" name="radio-group" value="1" class="form-radio" data-controls="#id-radio1-collapse" data-expanded="false">
-                                    <label class="form-label" for="id-radio1" id="id-radio1-form-label">Ja<span class="sr-only"> Udfyld informationer herunder</span></label>
-                                </div>
-                                <div id="id-radio1-collapse" aria-hidden="true" class="radio-content">
+                        <legend class="form-label">
+                            Har du tidligere lavet en lignende registrering?
 
-                                    <div class="form-group">
-                                        <label class="form-label" for="input-case">Tidligere registreringsnummer</label>
+                        </legend>
 
-                                        <input class="form-input input-width-m" id="input-case" name="case" type="text">
+                        <div class="form-group-radio
+    ">
+
+                            <input type="radio" id="radiogroup-lignende-registrering-option1" name="radio-group" class="form-radio
+             radio-large
+            " value="1" data-controls="#radiogroup-lignende-registrering-option1-collapse" data-expanded="false">
+
+                            <label class="form-label" for="radiogroup-lignende-registrering-option1">
+                                Ja
+
+                                <span class="sr-only"> Udfyld informationer herunder</span>
+                            </label>
+
+                        </div>
+
+                        <div id="radiogroup-lignende-registrering-option1-collapse" aria-hidden="true" class="radio-content">
+
+                            <div class="form-group
+        
+        
+        ">
+
+                                <label class="form-label" for="input-case">
+                                    Tidligere registreringsnummer
+
+                                </label>
+
+                                <input type="text" id="input-case" name="case" class="form-input input-width-m">
+
+                            </div>
+
+                            <div class="form-group  ">
+                                <fieldset aria-describedby="example-date-field-hint ">
+                                    <legend class="form-label">Dato for registreringen</legend>
+                                    <span class="form-hint" id="example-date-field-hint">For eksempel: 01 12 2016</span>
+
+                                    <div class="date-group js-calendar-group mt-3">
+                                        <div class="form-group form-group-day">
+                                            <label class="form-label" for="date-day">Dag</label>
+                                            <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                                                data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+                                        </div>
+                                        <div class="form-group form-group-month">
+                                            <label class="form-label" for="date-month">Måned</label>
+                                            <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$"
+                                                data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+                                        </div>
+                                        <div class="form-group form-group-year ">
+                                            <label class="form-label" for="date-year">År</label>
+                                            <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
+                                                data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+                                        </div>
 
                                     </div>
+                                </fieldset>
+                            </div>
 
-                                    <div class="form-group  ">
-                                        <fieldset aria-describedby="example-date-field-hint ">
-                                            <legend class="form-label">Dato for registreringen</legend>
-                                            <span class="form-hint" id="example-date-field-hint">For eksempel: 01 12 2016</span>
+                        </div>
 
-                                            <div class="date-group js-calendar-group mt-3">
-                                                <div class="form-group form-group-day">
-                                                    <label class="form-label" for="date-day">Dag</label>
-                                                    <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
-                                                        data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
-                                                </div>
-                                                <div class="form-group form-group-month">
-                                                    <label class="form-label" for="date-month">Måned</label>
-                                                    <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2"
-                                                        pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
-                                                </div>
-                                                <div class="form-group form-group-year ">
-                                                    <label class="form-label" for="date-year">År</label>
-                                                    <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4"
-                                                        pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
-                                                </div>
+                        <div class="form-group-radio
+    ">
 
-                                            </div>
-                                        </fieldset>
-                                    </div>
+                            <input type="radio" id="radiogroup-lignende-registrering-option2" name="radio-group" class="form-radio
+             radio-large
+            " value="2">
 
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-group-radio">
-                                    <input type="radio" id="id-radio2" name="radio-group" value="2" class="form-radio">
-                                    <label class="form-label" for="id-radio2" id="id-radio2-form-label">Nej</label>
-                                </div>
-                            </li>
-                        </ul>
+                            <label class="form-label" for="radiogroup-lignende-registrering-option2">
+                                Nej
+
+                            </label>
+
+                        </div>
+
                     </fieldset>
                 </div>
 
