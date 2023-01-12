@@ -327,7 +327,7 @@
 
                         </label>
 
-                        <input type="text" id="input-navn" name="navn" class="form-input input-width-xl" value="Anders Andersen">
+                        <input type="text" id="input-navn" name="navn" class="form-input input-width-xl" value="Anders Andersen" required>
 
                     </div>
 
@@ -343,7 +343,7 @@
 
                             </label>
 
-                            <input type="text" id="input-gade" name="gade" class="form-input input-width-xl" value="Mønstergade">
+                            <input type="text" id="input-gade" name="gade" class="form-input input-width-xl" value="Mønstergade" required>
 
                         </div>
 
@@ -357,7 +357,7 @@
 
                             </label>
 
-                            <input type="text" id="input-husnummer" name="husnummer" class="form-input input-width-xs" value="13">
+                            <input type="text" id="input-husnummer" name="husnummer" class="form-input input-width-xs" value="13" required>
 
                         </div>
 
@@ -374,7 +374,7 @@
 
                             </label>
 
-                            <input type="text" id="input-postnummer" name="postnummer" class="form-input input-width-xs" value="2300">
+                            <input type="text" id="input-postnummer" name="postnummer" class="form-input input-width-xs" value="2300" required>
 
                         </div>
 
@@ -388,7 +388,7 @@
 
                             </label>
 
-                            <input type="text" id="input-by" name="by" class="form-input input-width-xl" value="København S">
+                            <input type="text" id="input-by" name="by" class="form-input input-width-xl" value="København S" required>
 
                         </div>
 
@@ -437,8 +437,8 @@
                         <span class="form-error-message" id="input-email-error"><span class="sr-only">Fejl:</span> Angiv din e-mail fx eksempel@mail.dk</span>
                         <input type="text" id="input-email" name="email" class="form-input input-width-xl" aria-invalid="true" aria-describedby="
             
-            input-email-error 
-            ">
+            input-email-error
+            " required>
 
                     </div>
 
@@ -446,8 +446,8 @@
          form-error
         
         ">
-                        <fieldset aria-describedby="
-        radiobuttons-alder-error ">
+                        <fieldset role="radiogroup" aria-describedby="
+        radiobuttons-alder-error " aria-invalid="true">
                             <legend class="form-label">
                                 Alder
 

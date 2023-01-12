@@ -7,7 +7,7 @@
         
         
         ">
-                    <fieldset>
+                    <fieldset role="radiogroup">
                         <legend class="form-label">
                             Radioknapper med få muligheder
 
@@ -65,8 +65,8 @@
          form-error
          test-formgroup
          js-radio-toggle-group">
-                    <fieldset aria-describedby="radiobuttons-max-id-hint 
-        radiobuttons-max-id-error ">
+                    <fieldset role="radiogroup" aria-describedby="radiobuttons-max-id-hint 
+        radiobuttons-max-id-error " aria-invalid="true">
                         <legend class="form-label">
                             Radioknapper med alle muligheder
                             <span class="weight-normal"> (frivilligt)</span>
@@ -108,7 +108,7 @@
 
                                 </label>
 
-                                <input type="text" id="radiobuttons-max-text" name="radiobuttons-max-text" class="form-input">
+                                <input type="text" id="radiobuttons-max-text" name="radiobuttons-max-text" class="form-input" required>
 
                             </div>
 

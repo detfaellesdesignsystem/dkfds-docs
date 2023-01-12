@@ -3800,6 +3800,15 @@
 
 
 <li class=" ">
+<a href="#datovaelger" >Datovælger</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
 <a href="#dropdown" >Dropdown</a>
 </li>
 
@@ -4471,6 +4480,7 @@
           <ul class="d-lg-none nobullet-list">
           <li><a href="#accordions">Accordions</a></li>
           <li><a href="#datofelter">Datofelter</a></li>
+          <li><a href="#datovaelger">Datovælger</a></li>
           <li><a href="#dropdown">Dropdown</a></li>
           <li><a href="#tekstfelt">Inputfelt</a></li>
           <li><a href="#radioknapper">Radioknapper</a></li>
@@ -4509,8 +4519,8 @@
     <span class="form-error-message" id="fullname-error-example-error"><span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen</span>
     <input type="text" id="fullname-error-example" name="fullname-error-example" class="form-input" aria-invalid="true" aria-describedby="
             
-            fullname-error-example-error 
-            " />
+            fullname-error-example-error
+            " required="" />
 
 </div>
         
@@ -4547,9 +4557,9 @@
 
     &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Giv dit kursus et navn&lt;/span&gt;
     &lt;input type=&quot;text&quot; id=&quot;form-error&quot; name=&quot;form-error&quot; class=&quot;form-input&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;
-            form-error-hint 
-            form-error-error 
-            &quot;&gt;
+            form-error-hint
+            form-error-error
+            &quot; required&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -4642,6 +4652,38 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
+<h2 class="h3" id="datovaelger">Datovælger</h2>
+
+<div class="component-preview component-preview-code  component-code-date-picker-error" aria-label="Eksempel på datovælger med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/date-picker-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: date-picker-error</span></a>
+        
+    </div>
+    
+    <div class="component-code" aria-label="Kodeeksempel">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group  form-error
+    &quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;datepicker-example-error1&quot;&gt;
+        Dato for aftale
+
+    &lt;/label&gt;
+
+    &lt;span class=&quot;form-error-message&quot; id=&quot;datepicker-example-error1-error&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Vælg en dato&lt;/span&gt;
+
+    &lt;div class=&quot;date-picker&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;datepicker-example-error1&quot; name=&quot;datepicker-example-error1&quot; class=&quot;form-input&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;
+                
+                datepicker-example-error1-error&quot; required&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 <h2 class="h3" id="dropdown">Dropdown</h2>
 
 <div class="component-preview component-preview-code  component-code-select-error" aria-label="Eksempel på dropdown med fejlmeddelelse">
@@ -4707,8 +4749,8 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     &lt;span class=&quot;form-error-message&quot; id=&quot;fullname-error-example-error&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen&lt;/span&gt;
     &lt;input type=&quot;text&quot; id=&quot;fullname-error-example&quot; name=&quot;fullname-error-example&quot; class=&quot;form-input&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;
             
-            fullname-error-example-error 
-            &quot;&gt;
+            fullname-error-example-error
+            &quot; required&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -4743,8 +4785,8 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;
         &lt;input type=&quot;number&quot; id=&quot;input-pris-error&quot; name=&quot;input-pris-error&quot; class=&quot;form-input input-char-11&quot; value=&quot;123&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;
             
-            input-pris-error-error 
-            &quot;&gt;
+            input-pris-error-error
+            &quot; required&gt;
         &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
     &lt;/div&gt;
 
@@ -4770,8 +4812,8 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
          form-error
         
         &quot;&gt;
-    &lt;fieldset aria-describedby=&quot;
-        radiogroup-error-error &quot;&gt;
+    &lt;fieldset role=&quot;radiogroup&quot; aria-describedby=&quot;
+        radiogroup-error-error &quot; aria-invalid=&quot;true&quot;&gt;
         &lt;legend class=&quot;form-label&quot;&gt;
             Sagen handler om
 

@@ -3762,6 +3762,15 @@
 
 
 <li class=" ">
+<a href="#datovaelger" >Datovælger</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
 <a href="#dropdown" >Dropdown</a>
 </li>
 
@@ -4281,6 +4290,7 @@
           <ul class="d-lg-none nobullet-list">
           <li><a href="#accordions">Accordions</a></li>
           <li><a href="#datofelter">Datofelter</a></li>
+          <li><a href="#datovaelger">Datovælger</a></li>
           <li><a href="#dropdown">Dropdown</a></li>
           <li><a href="#inputfelt">Inputfelt</a></li>
           <li><a href="#radioknapper">Radioknapper</a></li>
@@ -4320,9 +4330,9 @@
 
     <span class="form-error-message" id="form-error-error"><span class="sr-only">Fejl:</span> Giv dit kursus et navn</span>
     <input type="text" id="form-error" name="form-error" class="form-input" aria-invalid="true" aria-describedby="
-            form-error-hint 
-            form-error-error 
-            " />
+            form-error-hint
+            form-error-error
+            " required="" />
 
 </div>
         
@@ -4523,6 +4533,38 @@
     
 </div>
 
+<h2 class="h3" id="datovaelger">Datovælger</h2>
+
+<div class="component-preview  component-preview-date-picker-error" aria-label="Eksempel på datovælger med fejlmeddelelse">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/date-picker-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: date-picker-error</span></a>
+        
+    </div>
+    
+    <div class="component-example px-4 py-4" aria-label="Eksempel">
+        
+        <div class="form-group  form-error
+    ">
+    <label class="form-label" for="datepicker-example-error1">
+        Dato for aftale
+
+    </label>
+
+    <span class="form-error-message" id="datepicker-example-error1-error"><span class="sr-only">Fejl:</span> Vælg en dato</span>
+
+    <div class="date-picker">
+        <input type="text" id="datepicker-example-error1" name="datepicker-example-error1" class="form-input" aria-invalid="true" aria-describedby="
+                
+                datepicker-example-error1-error" required="" />
+    </div>
+</div>
+        
+    </div>
+    
+</div>
+
 <h2 class="h3" id="dropdown">Dropdown</h2>
 
 <div class="component-preview  component-preview-select-error" aria-label="Eksempel på dropdown med fejlmeddelelse">
@@ -4588,8 +4630,8 @@
     <span class="form-error-message" id="fullname-error-example-error"><span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen</span>
     <input type="text" id="fullname-error-example" name="fullname-error-example" class="form-input" aria-invalid="true" aria-describedby="
             
-            fullname-error-example-error 
-            " />
+            fullname-error-example-error
+            " required="" />
 
 </div>
         
@@ -4624,8 +4666,8 @@
     <div class="form-input-wrapper form-input-wrapper--suffix">
         <input type="number" id="input-pris-error" name="input-pris-error" class="form-input input-char-11" value="123" aria-invalid="true" aria-describedby="
             
-            input-pris-error-error 
-            " />
+            input-pris-error-error
+            " required="" />
         <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
     </div>
 
@@ -4660,8 +4702,8 @@
     <span class="form-error-message" id="input-type-limit-error-error"><span class="sr-only">Fejl:</span> Du kan maks. taste 20 tegn</span>
     <input type="text" id="input-type-limit-error" name="input-type-limit-error" class="form-input" value="Dette er en sætning med mange tegn" aria-invalid="true" aria-describedby="
             
-            input-type-limit-error-error 
-            input-type-limit-error-limit-message" />
+            input-type-limit-error-error
+            input-type-limit-error-limit-message" required="" />
 
     <span id="input-type-limit-error-limit-message" class="sr-only">Du kan indtaste op til 20 tegn</span>
     <span class="form-hint character-limit" aria-hidden="true">Du har 20 tegn tilbage</span>
@@ -4689,8 +4731,8 @@
          form-error
         
         ">
-    <fieldset aria-describedby="
-        radiogroup-error-error ">
+    <fieldset role="radiogroup" aria-describedby="
+        radiogroup-error-error " aria-invalid="true">
         <legend class="form-label">
             Sagen handler om
 
