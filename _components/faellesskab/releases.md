@@ -106,7 +106,6 @@ lead: Nedenfor vises release notes — en opsummering af bug fixes, nye feature
 ---
 Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3}
 ## Versionering
 Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.
 
@@ -121,8 +120,8 @@ Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR 
 
 Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens.
 
-{:.h3}
-## Tidligere versioner af dokumentationen
+{:.h4}
+### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
 
@@ -133,6 +132,17 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængeligheden.
 
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Datovælger</h3>
+  <span class="badge badge-warning badge-small mr-2">Breaking change</span>
+</div>
+- Rettet en fejl, hvor den forkerte dag til en dato blev læst højt af skærmlæsere.
+- Rettet en fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.
+- Tilføjet skærmlæserbeskeder for datovælgere med begrænsninger på datovalg.
+- Opdateret og tilføjet flere skærmlæserbeskeder.
+- Datovælgeren kræver nu et ID for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
+
+<h3 class="h4">Øvrige</h3>
 - <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.
 - <span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksemplerne er rettet.
