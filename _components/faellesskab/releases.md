@@ -136,11 +136,12 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
   <h3 class="h4 mt-0 mb-0 mr-3">Datovælger</h3>
   <span class="badge badge-warning badge-small mr-2">Breaking change</span>
 </div>
-- Rettet en fejl, hvor den forkerte dag til en dato blev læst højt af skærmlæsere.
-- Rettet en fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.
+- Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
+- Rettet fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.
+- Rettet fejl, hvor markøren skiftede udseende på navigationsknapperne, selv når disse knapper ikke var synlige.
 - Tilføjet skærmlæserbeskeder for datovælgere med begrænsninger på datovalg.
-- Opdateret og tilføjet flere skærmlæserbeskeder.
-- Datovælgeren kræver nu et ID for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
+- Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
+- Datovælgeren kræver nu et `id` for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
 
 <h3 class="h4">Øvrige</h3>
 - <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.
@@ -163,7 +164,6 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headers-eksempler, hvor den aktive side ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headeren, hvor portalnavnet ikke blev vist korrekt ved print.
 - Mindsket afstanden mellem label og hjælpetekst ved store radioknapper.
-
 
 
 {:#version-8-2-1 .mb-0}
