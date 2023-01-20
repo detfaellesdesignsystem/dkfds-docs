@@ -57,7 +57,7 @@
           "inline": false,
           "classes": "mt-0 nobullet-list",
           "items": [
-            {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"},
+            {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"},
             {"content": "<a class=\"function-link\" href=\"#\">Privatlivspolitik (cookies)</a>"}
           ]
         }

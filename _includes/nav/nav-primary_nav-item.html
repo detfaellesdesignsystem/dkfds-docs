@@ -39,7 +39,7 @@
       <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-{{ titletext | slugify }}" aria-haspopup="true" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
         <span>{{ titletext | smartify }}</span>
       </button>
-      <div aria-label="{{ titletext | smartify }}" class="overflow-menu-inner" id="submenu-level1-{{ titletext | slugify }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
+      <div class="overflow-menu-inner" id="submenu-level1-{{ titletext | slugify }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
         <ul class="overflow-list">
           {%
             include nav/page-item.html
