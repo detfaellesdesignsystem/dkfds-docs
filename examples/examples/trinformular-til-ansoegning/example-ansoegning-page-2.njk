@@ -7,12 +7,15 @@
 
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
 
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
+
+{# <!-- Variables --> #}
 
 {% set solution_header_data = {
     "lastHeader": true,
@@ -26,6 +29,31 @@
         "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
     }
 } %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
 
 {% block header %}
 <header class="header">
@@ -57,11 +85,16 @@
 </main>
 {% endblock %}
 
-{% block banner -%}
-{% endblock %}
-
 {% block footer -%}
 {{ footer(footer_data) }}
 {% endblock %}
 
-{{ modal(modal_data) }}
+{{
+    modal({
+        "id": "modal-contact",
+        "heading": "Kontakt",
+        "content": modal_content,
+        "forcedAction": false,
+        "actions": modal_actions
+    })
+}}

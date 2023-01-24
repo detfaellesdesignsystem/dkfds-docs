@@ -1,4 +1,10 @@
 {
+    "alert_modal_warning": {
+        "classes": "alert-warning",
+        "heading": "Vi har noget information af advarende karakter",
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.",
+        "role": "alert"
+    },
     "portal_header_data": {
         "compact": false,
         "user": {
@@ -9,13 +15,6 @@
             "label": "Portalnavn",
             "href": "#"
         }
-    },
-    "modal_data": {
-        "id": "modal-contact",
-        "headingId": "modal-contact-title",
-        "heading": "Kontakt",
-        "content": "<h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
-        "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
     },
     "footer_data": {
         "topButton": {

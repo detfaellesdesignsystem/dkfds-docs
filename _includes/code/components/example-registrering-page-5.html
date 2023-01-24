@@ -266,20 +266,20 @@
 
 </footer>
 
-<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-contact-title">
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-contact-heading">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="modal-title" id="modal-id-1-title">
+            <h2 class="modal-title" id="modal-contact-heading">
                 Kontakt
             </h2>
             <button class="modal-close function-link" data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
-            <div class="alert alert-warning" role="alert">
+
+            <div class="alert alert-warning" role="alert" aria-atomic="true">
                 <div class="alert-body">
-                    <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>
-                    <p class="alert-text">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende
-                        karakter, som brugeren bør vide inden denne ringer eller skriver.</p>
+                    <p class="alert-heading">Vi har noget information af advarende karakter</p>
+                    <p class="alert-text">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>
                 </div>
             </div>
             <h3>En form for support</h3>
@@ -288,15 +288,19 @@
                 <li>En ting som denne</li>
                 <li>Et andet emne som dette</li>
             </ul>
-            <p>Kan du ringe direkte til: 12 34 56 78</p>
+            <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
             <p>Telefonen er åben:</p>
-            <p class="m-0">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>
-            <p class="m-0">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>
-            <p class="m-0">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>
+            <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span>
+            </p>
+            <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+            <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl.
+                    9-14</span></p>
         </div>
 
         <div class="modal-footer">
-            <button class="button button-secondary" data-modal-close>Luk</button>
+            <button class="button button-secondary" data-modal-close>
+                Luk
+            </button>
         </div>
 
     </div>
