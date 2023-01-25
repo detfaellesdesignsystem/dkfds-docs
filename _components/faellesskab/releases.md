@@ -143,6 +143,15 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 - Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
 - Datovælgeren kræver nu et `id` for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
 
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Venstremenu og trinindikator</h3>
+  <span class="badge badge-warning badge-small mr-2">Breaking change</span>
+</div>
+Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opdateres.
+- Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.
+- Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert. Stylingen for `.sidenav-list li a` er i denne forbindelse blevet ændret fra `flex-wrap: wrap` til `flex-wrap: nowrap`, hvilket kan give ombrydningsproblemer, hvis man ikke opdaterer html'en.
+- Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
+
 <h3 class="h4">Øvrige</h3>
 - <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.
@@ -154,9 +163,6 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.
 - Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.
 - Fjernet `jsnext:main` fra package.json.
-- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede når et trin var markeret som gennemført.
-- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert.
-- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet `delete`. Brug i stedet ikonet `trash-can`.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor tilbage til toppen-knappen ikke blev læst korrekt op på mindre skærmstørrelser.

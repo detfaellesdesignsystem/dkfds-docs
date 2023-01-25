@@ -6,7 +6,7 @@
     <section class="tabnav-panel px-0 component-preview component-preview-{{ include.component | slugify }} {{include.previewclass}}" aria-hidden="true" role="tabpanel" tabindex="0" id="tabpanel-component-{{include.component}}" aria-labelledby="tabbutton-component-{{include.component}}">
         {% if include.component contains "tringuide" %}
         <div class="row">
-        <aside class="col-12 sidebar-col">
+        <aside class="col-12">
         {% endif %}
         {% include code/components/{{ include.component }}.html %}
         {% if include.component contains "tringuide" %}

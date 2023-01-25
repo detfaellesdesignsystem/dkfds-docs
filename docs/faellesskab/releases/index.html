@@ -3865,6 +3865,17 @@
   <li>Datovælgeren kræver nu et <code>id</code> for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.</li>
 </ul>
 
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Venstremenu og trinindikator</h3>
+  <span class="badge badge-warning badge-small mr-2">Breaking change</span>
+</div>
+<p>Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opdateres.</p>
+<ul>
+  <li>Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.</li>
+  <li>Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert. Stylingen for <code>.sidenav-list li a</code> er i denne forbindelse blevet ændret fra <code>flex-wrap: wrap</code> til <code>flex-wrap: nowrap</code>, hvilket kan give ombrydningsproblemer, hvis man ikke opdaterer html’en.</li>
+  <li>Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.</li>
+</ul>
+
 <h3 class="h4">Øvrige</h3>
 <ul>
   <li><span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.</li>
@@ -3877,9 +3888,6 @@
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.</li>
   <li>Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.</li>
   <li>Fjernet <code>jsnext:main</code> fra package.json.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede når et trin var markeret som gennemført.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.</li>
   <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.</li>
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
   <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor tilbage til toppen-knappen ikke blev læst korrekt op på mindre skærmstørrelser.</li>
