@@ -1,7 +1,7 @@
 ---
 permalink: "/komponenter/sprogvaelger/"
 redirect_from:
-- /komponenter/sprogvaegler/
+- "/komponenter/sprogvaegler/"
 layout: styleguide
 type: component
 title: Sprogvælger
@@ -15,6 +15,7 @@ anchor: true
 subnav:
 - text: Tooltip
   href: "#sprogvælger-med-tooltip"
+
 ---
 {% include code/preview-image.html component="language-switcher" alt="Eksempel på sprogvælger" code="/kode/komponenter/sprogvaelger/" %}
 
@@ -33,9 +34,9 @@ Brug ikke sprogvælger, hvis løsningen kun findes i ét sprog.
 {:.h3}
 ## Vejledning
 
-Sprogvælgeren placeres altid nederst i footeren. Denne placering giver fleksibilitet og understøtter brugen af alle headertyper. 
+Sprogvælgeren placeres altid nederst i footeren. Denne placering giver fleksibilitet og understøtter brugen af alle headertyper.
 
-Sprogvælgeren indeholder en liste af sprog skrevet på original sproget. Sprogvælgeren fungerer således, at det valgte sprog bliver markeret med fed tekst og står altid som det første sprog i listen.
+Sprogvælgeren indeholder en liste af sprog skrevet på originalsproget. Sprogvælgeren fungerer således, at det valgte sprog bliver markeret med fed tekst og står altid som det første sprog i listen.
 
 Når brugeren vælger et andet sprog, vil det blive markeret som fed i stedet. Det valgte sprog skifter placering til at være det første sprog i listen.
 
