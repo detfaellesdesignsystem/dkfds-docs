@@ -9,7 +9,7 @@ layout: default
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         {% assign sidenavFromNavData = site.data.nav[page.category] %}
         {% if sidenavFromNavData %}
-        <ul class="sidenav-list" role="menu">
+        <ul class="sidenav-list">
           {% include nav/sidenavigation/list.html links=sidenavFromNavData use_alt_text=true %}
         </ul>
         {% endif %}
