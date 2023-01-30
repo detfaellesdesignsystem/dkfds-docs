@@ -3874,14 +3874,24 @@
   <li>Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.</li>
 </ul>
 
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Tabeller</h3>
+  <span class="badge badge-warning badge-small mr-2">Breaking change</span>
+</div>
+<ul>
+  <li>Fjernet klassen <code>table--lines</code> der var en udokumenteret måde at style en tabel på.</li>
+  <li>Rettet fejl relateret til margin og padding for tabeller.</li>
+  <li>Opdateret teksten på søgeknappen ved søgning i tabeller.</li>
+  <li>Skærmlæserbeskederne til tjekboksene i tabeller med valgbare rækker skifter ikke længere mellem “vælg række” og “fravælg række”, da forståelsen blev tvetydig, når tjekboksens status blev læst højt. I stedet anvendes kun “vælg række” sammen med tjekboksens status. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, bortfalder muligheden for at give andre sprogoversættelser og eventuelle oversættelser skrives direkte i HTML’en.</li>
+</ul>
+
 <h3 class="h4">Øvrige</h3>
 <ul>
   <li><span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.</li>
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksemplerne er rettet.</li>
-  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet klassen <code>table--lines</code> der var en forældet måde at style en tabel på.</li>
-  <li>Rettet fejl relateret til margin og padding for tabeller.</li>
-  <li>Opdateret teksten på søgeknappen ved søgning i tabeller.</li>
+  <li>
+    <p><span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksemplerne er rettet.</p>
+  </li>
   <li>Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.</li>
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.</li>
   <li>Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.</li>
