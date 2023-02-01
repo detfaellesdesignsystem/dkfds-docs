@@ -71,38 +71,22 @@
             {
                 "text": "Oplysninger om afsender",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/",
-                "icon": {
-                    "name": "done",
-                    "ariaLabel": "Gennemført",
-                    "ariahidden": false
-                }
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariahidden": false }
             },
             {
                 "text": "Kontaktoplysninger",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/",
-                "icon": {
-                    "name": "done",
-                    "ariaLabel": "Gennemført",
-                    "ariahidden": false
-                }
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariahidden": false }
             },
             {
                 "text": "Ansøgningens type",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/",
-                "icon": {
-                    "name": "done",
-                    "ariaLabel": "Gennemført",
-                    "ariahidden": false
-                }
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariahidden": false }
             },
             {
                 "text": "Tilføj dokumentation",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/",
-                "icon": {
-                    "name": "done",
-                    "ariaLabel": "Gennemført",
-                    "ariahidden": false
-                }
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariahidden": false }
             },
             {
                 "text": "Opsummering",
@@ -134,35 +118,17 @@
         "borderless": true,
         "responsive": true,
         "thead": [
-            {
-                "headerContent": "Filnavn"
-            },
-            {
-                "headerContent": "Dokumentationstype"
-            },
-            {
-                "headerContent": "Sidetal"
-            },
-            {
-                "td": true,
-                "classes": "d-print-none"
-            }
+            { "headerContent": "Filnavn" },
+            { "headerContent": "Dokumentationstype" },
+            { "headerContent": "Sidetal" },
+            { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none actions-header" }
         ],
         "tbody": [
             [
-                {
-                    "content": "Journal.pdf"
-                },
-                {
-                    "content": "Type 1"
-                },
-                {
-                    "content": "14"
-                },
-                {
-                    "content": "<a href=\"/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/\">Redigér</a>",
-                    "classes": "align-text-md-right d-print-none"
-                }
+                { "content": "Journal.pdf" },
+                { "content": "Type 1" },
+                { "content": "14" },
+                { "content": "<a href=\"/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
             ]
         ]
     }

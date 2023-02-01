@@ -80,7 +80,7 @@
 {% endblock %}
 
 {% block body %}
-<div class="container page-container pt-5">
+<div class="container page-container pt-5 pt-lg-0">
     <div class="row">
         <aside class="col-12 col-lg-3 sidebar-col">
             {{ overflow_stepguide(trinindikator_data) }}
@@ -88,6 +88,7 @@
         <main class="col-12 col-lg-9" id="main-content">
             <div><a href="#" class="back-link">Tilbage</a></div>
             <h1 class="mb-6">Opsummering</h1>
+
             <h2>Vælg personer</h2>
             {{
                 table({
@@ -97,7 +98,7 @@
                     "thead": [
                         { "headerContent": "Person" },
                         { "headerContent": "CPR-nummer" },
-                        { "td": true, "classes": "d-print-none" }
+                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none actions-header" }
                     ],
                     "tbody": [
                         [
@@ -108,16 +109,17 @@
                         [
                             { "content": "Keld Hedagaardsen" },
                             { "content": "230495-1111" },
-                            { "content": "<a href=\"#\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
                         ],
                         [
                             { "content": "Anni Hedagaardsen" },
                             { "content": "120394-2222" },
-                            { "content": "<a href=\"#\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
                         ]
                     ]
                 })
             }}
+            
             <h2>Vælg noget mere</h2>
             {{
                 table({
@@ -128,24 +130,25 @@
                         { "headerContent": "Nummer" },
                         { "headerContent": "Dato" },
                         { "headerContent": "Information" },
-                        { "td": true, "classes": "d-print-none" }
+                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none actions-header" }
                     ],
                     "tbody": [
                         [
                             { "content": "123456789" },
                             { "content": "01.01.2021" },
                             { "content": "Lorem ipsum dolor sit" },
-                            { "content": "<a href=\"#\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
                         ],
                         [
                             { "content": "123456789" },
                             { "content": "01.01.2021" },
                             { "content": "Lorem ipsum dolor sit" },
-                            { "content": "<a href=\"#\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
                         ]
                     ]
                 })
             }}
+
             <h2>Vedhæft dokumenter</h2>
             {% set exampleDocumentLink1 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Journal.pdf</a>' %}
             {% set exampleDocumentLink2 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Kopi-af-dokument-x.pdf</a>' %}
@@ -156,20 +159,21 @@
                     "responsive": true,
                     "thead": [
                         { "headerContent": "Vedhæftet dokument" },
-                        { "td": true, "classes": "d-print-none" }
+                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none actions-header" }
                     ],
                     "tbody": [
                         [
                             { "content": exampleDocumentLink1 },
-                            { "content": "<a href=\"#\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
                         ],
                         [
                             { "content": exampleDocumentLink2 },
-                            { "content": "<a href=\"#\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
                         ]
                     ]
                 })
             }}
+
             <h2>Tidligere registrering</h2>
             <div class="w-percent-md-70 mt-6 mb-7">
                 {% for row in tidligere_registrering %}
@@ -186,6 +190,7 @@
                 </div>
                 {% endfor %}
             </div>
+
             <h2>Kontaktoplysninger</h2>
             <div class="w-percent-md-70 mt-6 mb-7">
                 {% for row in kontaktoplysninger %}
@@ -202,7 +207,7 @@
                 </div>
                 {% endfor %}
             </div>
-            <form novalidate method="post" action="/pages/eksempler/opsummering/opsummering-1/">
+            <form novalidate method="post">
                 <input type="hidden" name="entries-confirmed" value="true">
                 {{ button(button_next) }}
             </form>

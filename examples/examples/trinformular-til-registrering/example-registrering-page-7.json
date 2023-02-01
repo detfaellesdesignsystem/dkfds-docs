@@ -22,53 +22,23 @@
         },
         "list": {
             "items": [
-                {
-                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
-                },
-                {
-                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
-                },
-                {
-                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
-                },
-                {
-                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
-                    "hideOnPrint": true
-                },
-                {
-                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
-                    "hideOnPrint": true
-                }
+                { "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>" },
+                { "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>" },
+                { "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>" },
+                { "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true },
+                { "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true }
             ]
         },
         "languageSwitcher": {
             "ariaLabel": "Vælg sprog fra listen",
             "firstAriaLabel": "Valgt sprog: Dansk",
             "languages": [
-                {
-                    "code": "da",
-                    "name": "Dansk"
-                },
-                {
-                    "code": "en-GB",
-                    "name": "English"
-                },
-                {
-                    "code": "de",
-                    "name": "Deutsch"
-                },
-                {
-                    "code": "kl",
-                    "name": "Kalaallisut"
-                },
-                {
-                    "code": "pl",
-                    "name": "Polski"
-                },
-                {
-                    "code": "se",
-                    "name": "Svenska"
-                }
+                { "code": "da", "name": "Dansk" },
+                { "code": "en-GB", "name": "English" },
+                { "code": "de", "name": "Deutsch" },
+                { "code": "kl", "name": "Kalaallisut" },
+                { "code": "pl", "name": "Polski" },
+                { "code": "se", "name": "Svenska" }
             ]
         }
     },

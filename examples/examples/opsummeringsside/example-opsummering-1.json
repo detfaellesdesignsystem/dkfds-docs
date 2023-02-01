@@ -40,6 +40,36 @@
                     "hideOnPrint": true
                 }
             ]
+        },
+        "languageSwitcher": {
+            "ariaLabel": "Vælg sprog fra listen",
+            "firstAriaLabel": "Valgt sprog: Dansk",
+            "languages": [
+                {
+                    "code": "da",
+                    "name": "Dansk"
+                },
+                {
+                    "code": "en-GB",
+                    "name": "English"
+                },
+                {
+                    "code": "de",
+                    "name": "Deutsch"
+                },
+                {
+                    "code": "kl",
+                    "name": "Kalaallisut"
+                },
+                {
+                    "code": "pl",
+                    "name": "Polski"
+                },
+                {
+                    "code": "se",
+                    "name": "Svenska"
+                }
+            ]
         }
     },
     "trinindikator_data": {

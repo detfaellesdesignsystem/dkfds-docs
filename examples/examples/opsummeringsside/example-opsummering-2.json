@@ -116,7 +116,7 @@
             { "headerContent": "Filnavn" },
             { "headerContent": "Dokumentationstype" },
             { "headerContent": "Sidetal" },
-            { "td": true, "classes": "d-print-none" }
+            { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none actions-header" }
         ],
         "tbody": [
             [

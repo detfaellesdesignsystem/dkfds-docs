@@ -304,7 +304,7 @@
     </nav>
 </header>
 
-<div class="container page-container pt-5">
+<div class="container page-container pt-5 pt-lg-0">
     <div class="row">
         <aside class="col-12 col-lg-3 sidebar-col">
 
@@ -413,6 +413,7 @@
         <main class="col-12 col-lg-9" id="main-content">
             <div><a href="#" class="back-link">Tilbage</a></div>
             <h1 class="mb-6">Opsummering</h1>
+
             <h2>Vælg personer</h2>
 
             <div class="table--responsive-scroll">
@@ -420,13 +421,14 @@
                     <thead>
                         <tr>
 
-                            <th>Person
+                            <th scope="col">Person
                             </th>
 
-                            <th>CPR-nummer
+                            <th scope="col">CPR-nummer
                             </th>
 
-                            <td class="d-print-none"></td>
+                            <th scope="col" class="d-print-none actions-header"><span class="sr-only">Handlinger</span>
+                            </th>
 
                         </tr>
                     </thead>
@@ -446,7 +448,7 @@
 
                             <td>230495-1111</td>
 
-                            <td class="align-text-md-right d-print-none"><a href="#">Redigér</a></td>
+                            <td class="align-text-md-right d-print-none"><a href="#">Redigér<span class="sr-only"> rækkens indhold</span></a></td>
 
                         </tr>
 
@@ -455,7 +457,7 @@
 
                             <td>120394-2222</td>
 
-                            <td class="align-text-md-right d-print-none"><a href="#">Redigér</a></td>
+                            <td class="align-text-md-right d-print-none"><a href="#">Redigér<span class="sr-only"> rækkens indhold</span></a></td>
 
                         </tr>
 
@@ -470,16 +472,17 @@
                     <thead>
                         <tr>
 
-                            <th>Nummer
+                            <th scope="col">Nummer
                             </th>
 
-                            <th>Dato
+                            <th scope="col">Dato
                             </th>
 
-                            <th>Information
+                            <th scope="col">Information
                             </th>
 
-                            <td class="d-print-none"></td>
+                            <th scope="col" class="d-print-none actions-header"><span class="sr-only">Handlinger</span>
+                            </th>
 
                         </tr>
                     </thead>
@@ -492,7 +495,7 @@
 
                             <td>Lorem ipsum dolor sit</td>
 
-                            <td class="align-text-md-right d-print-none"><a href="#">Redigér</a></td>
+                            <td class="align-text-md-right d-print-none"><a href="#">Redigér<span class="sr-only"> rækkens indhold</span></a></td>
 
                         </tr>
 
@@ -503,7 +506,7 @@
 
                             <td>Lorem ipsum dolor sit</td>
 
-                            <td class="align-text-md-right d-print-none"><a href="#">Redigér</a></td>
+                            <td class="align-text-md-right d-print-none"><a href="#">Redigér<span class="sr-only"> rækkens indhold</span></a></td>
 
                         </tr>
 
@@ -518,10 +521,11 @@
                     <thead>
                         <tr>
 
-                            <th>Vedhæftet dokument
+                            <th scope="col">Vedhæftet dokument
                             </th>
 
-                            <td class="d-print-none"></td>
+                            <th scope="col" class="d-print-none actions-header"><span class="sr-only">Handlinger</span>
+                            </th>
 
                         </tr>
                     </thead>
@@ -530,14 +534,14 @@
                         <tr>
                             <td><a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>Journal.pdf</a></td>
 
-                            <td class="align-text-md-right d-print-none"><a href="#">Redigér</a></td>
+                            <td class="align-text-md-right d-print-none"><a href="#">Redigér<span class="sr-only"> rækkens indhold</span></a></td>
 
                         </tr>
 
                         <tr>
                             <td><a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>Kopi-af-dokument-x.pdf</a></td>
 
-                            <td class="align-text-md-right d-print-none"><a href="#">Redigér</a></td>
+                            <td class="align-text-md-right d-print-none"><a href="#">Redigér<span class="sr-only"> rækkens indhold</span></a></td>
 
                         </tr>
 
@@ -585,6 +589,7 @@
                 </div>
 
             </div>
+
             <h2>Kontaktoplysninger</h2>
             <div class="w-percent-md-70 mt-6 mb-7">
 
@@ -613,7 +618,7 @@
                 </div>
 
             </div>
-            <form novalidate method="post" action="/pages/eksempler/opsummering/opsummering-1/">
+            <form novalidate method="post">
                 <input type="hidden" name="entries-confirmed" value="true">
                 <button class="button button-primary d-print-none mt-4" type='button'>
                     Send registrering
@@ -636,6 +641,19 @@
                 <li class=""><a class="function-link" href="tel:12345678">(+45) 12 34 56 78</a></li>
                 <li class="d-print-none"><a href="#" class="function-link">Tilgængelighedserklæring</a></li>
                 <li class="d-print-none"><a href="#" class="function-link">Privatlivspolitik (cookies)</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="language-switcher">
+        <div class="container">
+            <ul aria-label="Vælg sprog fra listen ">
+                <li><a href="" lang="da" aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a></li>
+                <li><a href="" lang="en-GB">English</a></li>
+                <li><a href="" lang="de">Deutsch</a></li>
+                <li><a href="" lang="kl">Kalaallisut</a></li>
+                <li><a href="" lang="pl">Polski</a></li>
+                <li><a href="" lang="se">Svenska</a></li>
             </ul>
         </div>
     </div>
