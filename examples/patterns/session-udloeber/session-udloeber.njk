@@ -1,23 +1,29 @@
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
-{% set sessionUdloeberContent = 
-'<p>Din session udløber snart. Du logges automatisk af om <span role="timer"><span class="bold session-timeout-countdown-minutes">5 min.</span><span class="bold session-timeout-countdown-seconds"></span></span></p>' 
-%}
+{% set modal_content = "<p>Din session udløber snart. Du logges automatisk af om <span role='timer'><strong class='bold session-timeout-countdown-minutes'>5 min.</strong><strong class='bold session-timeout-countdown-seconds'></strong></span></p>" %}
 
-{% set sessionUdloeberActions = 
-button({ "variant": "primary", "text": "Forbliv logget på", "attributes": "data-modal-close" }) + 
-button({ "variant": "secondary", "text": "Log af", "attributes": "data-modal-close" }) 
+{% set modal_actions = 
+    button({
+        "variant": "primary",
+        "text": "Forbliv logget på",
+        "attributes": "data-modal-close"
+    })
+    +
+    button({
+        "variant": "secondary",
+        "text": "Log af",
+        "attributes": "data-modal-close"
+    })
 %}
 
 {{
     modal({
         "id": "example-sesssion-udloeber",
-        "headingId": "example-sesssion-udloeber-heading",
         "heading": "Du er ved at blive logget af",
-        "content": sessionUdloeberContent,
-        "actions": sessionUdloeberActions,
-        "forcedAction": true
+        "content": modal_content,
+        "forcedAction": true,
+        "actions": modal_actions
     })
 }}
 
@@ -28,4 +34,3 @@ button({ "variant": "secondary", "text": "Log af", "attributes": "data-modal-clo
         "attributes": "data-module=\"modal\" data-target=\"example-sesssion-udloeber\""
     }) 
 }}
-

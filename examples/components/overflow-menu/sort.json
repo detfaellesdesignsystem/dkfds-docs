@@ -1,10 +1,11 @@
 {
   "data": {
     "button": {
-    "label": "Sortér:",
-    "id": "trash-sorting-overflowmenu",
-    "icon": "sort-default"
+      "label": "Sortér:",
+      "id": "trash-sorting-overflowmenu",
+      "icon": "sort-default"
     },
+    "id": "overflow-sort-example",
     "items": [
       {
         "text": "Nyeste først",

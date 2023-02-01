@@ -142,6 +142,7 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 - Tilføjet skærmlæserbeskeder for datovælgere med begrænsninger på datovalg.
 - Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
 - Datovælgeren kræver nu et `id` for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
+- Ændret `aria-selected` til `aria-current`.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Venstremenu og trinindikator</h3>
@@ -177,6 +178,7 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headers-eksempler, hvor den aktive side ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 - <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headeren, hvor portalnavnet ikke blev vist korrekt ved print.
 - Mindsket afstanden mellem label og hjælpetekst ved store radioknapper.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Ændret `aria-selected` til `aria-current` på sortering. Både JavaScript og styling er opdateret.
 
 
 {:#version-8-2-1 .mb-0}

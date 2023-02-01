@@ -81,7 +81,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
         <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
     </div>
 </details>
-<form method="get" action="/design/ikoner/" id="search-icons-form">
+<form method="get" id="search-icons-form">
 <div class="search-container form-group">
     <label class="form-label" for="icon-search-input">
         Find dit ikon
