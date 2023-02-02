@@ -121,6 +121,16 @@
             }
         ]
     },
+    "button_tooltip": {
+        "variant": "unstyled",
+        "attributes": "type=\"button\"",
+        "srOnly": "Hvad betyder det?",
+        "icon": "help",
+        "tooltip": {
+            "text": "Følgende personer kan ikke vælges, da de allerede er blevet registreret.",
+            "showOnClick": true
+        }
+    },
     "button_add": {
         "text": "Tilføj person",
         "variant": "tertiary",

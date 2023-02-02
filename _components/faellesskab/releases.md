@@ -94,12 +94,8 @@ subnav:
   href: "#version-7-5-1"
 - text: Version 7.5.0
   href: "#version-7-5-0"
-- text: Version 7.4.0
-  href: "#version-7-4-0"
-- text: Version 7.3.0
-  href: "#version-7-3-0"
 - text: Tidligere versioner
-  href: "#version-7-2-0"
+  href: "#version-7-4-0"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 
@@ -128,12 +124,12 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0
 
-<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
+<div><span class="small-text mt-0 d-block">xx-02-2023</span></div>
 
 Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængeligheden.
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">Datovælger</h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/">Datovælger</a></h3>
   <span class="badge badge-warning badge-small mr-2">Breaking change</span>
 </div>
 - Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
@@ -142,10 +138,10 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 - Tilføjet skærmlæserbeskeder for datovælgere med begrænsninger på datovalg.
 - Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
 - Datovælgeren kræver nu et `id` for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
-- Ændret `aria-selected` til `aria-current`.
+- Ændret `aria-selected` til `aria-current` på valgte datoer, måneder og år.
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">Venstremenu og trinindikator</h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
   <span class="badge badge-warning badge-small mr-2">Breaking change</span>
 </div>
 Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opdateres.
@@ -154,32 +150,37 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">Tabeller</h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a></h3>
   <span class="badge badge-warning badge-small mr-2">Breaking change</span>
 </div>
 - Fjernet klassen `table--lines` der var en udokumenteret måde at style en tabel på.
 - Rettet fejl relateret til margin og padding for tabeller.
-- Opdateret teksten på søgeknappen ved søgning i tabeller.
-- Skærmlæserbeskederne til tjekboksene i tabeller med valgbare rækker skifter ikke længere mellem "vælg række" og "fravælg række", da forståelsen blev tvetydig, når tjekboksens status blev læst højt. I stedet anvendes kun "vælg række" sammen med tjekboksens status. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, bortfalder muligheden for at give andre sprogoversættelser og eventuelle oversættelser skrives direkte i HTML'en.
+- Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.
+- Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> skifter ikke længere mellem "vælg række" og "fravælg række", da forståelsen blev tvetydig, når tjekboksens status blev læst højt. I stedet anvendes kun "vælg række" sammen med tjekboksens status. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, bortfalder muligheden for at give andre sprogoversættelser og eventuelle oversættelser skrives direkte i HTML'en.
+- Fjernet `aria-label` fra `label`-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.
+- Opdateret JavaScript for responsive tabeller, så det nu kun er `th`-elementer uden klassen `actions-header`, der kan sætte `data-title`-attributten.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
+  <span class="badge badge-info badge-small mr-2">Change</span>
+</div>
+- Opdateret myndighedsnavnet i række 2, så det nu er kodet som en heading og kan styles med klassen `authority-name`.
+- Rettet fejl, hvor portalnavnet ikke blev vist korrekt ved print.
+- Log af-knappen er nu altid kodet som en `button`, uanset hvilken skærmstørrelse den vises på.
+- `title` er fjernet fra mobilmenuens knapper og erstattet af `aria-label`.
+- Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 
 <h3 class="h4">Øvrige</h3>
-- <span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.
-- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.
-- <span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksemplerne er rettet.
-
-- Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.
-- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.
-- Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.
-- Fjernet `jsnext:main` fra package.json.
-- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
+- Fjernet `jsnext:main` fra <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.
 - <span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet `delete`. Brug i stedet ikonet `trash-can`.
-- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor tilbage til toppen-knappen ikke blev læst korrekt op på mindre skærmstørrelser.
-- <span class="badge badge-info badge-small mr-2">Change</span> Flere mindre tilgængelighedsrettelser i headeren: Fjernet `title` fra mobilmenuens knapper og ændret html for portal.
-- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headers-eksempler, hvor den aktive side ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
-- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headeren, hvor portalnavnet ikke blev vist korrekt ved print.
-- Mindsket afstanden mellem label og hjælpetekst ved store radioknapper.
-- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Ændret `aria-selected` til `aria-current` på sortering. Både JavaScript og styling er opdateret.
-
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Attributten `aria-selected` på <a href="/komponenter/overflowmenu/#sortering">sortering</a> er ændret til `aria-current` og flyttet fra `li`-elementet til `button`-elementet. Både JavaScript og styling er blevet tilpasset.
+- <span class="badge badge-info badge-small mr-2">Change</span> <a href="/komponenter/radioknap/">Radioknapper</a> indeholder ikke længere listeelementerne `li` og `ul`.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i <a href="/komponenter/overflowmenu/">overflow menuer</a>, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
+- Rettet fejl, hvor <a href="/komponenter/search/">søgefelter</a> blev grå i stedet for hvide på iPhones.
+- Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a>.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, der indeholder både rettelser og tilføjelser. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.
+- <span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksempler er rettet. 
 
 {:#version-8-2-1 .mb-0}
 ## Version 8.2.1
@@ -313,6 +314,7 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Tilføjet <a href="/design/ikoner/?s=sorter">ikoner til sortering i tabel</a>
 - Tilføjet variant til <a href="/komponenter/overflowmenu/#sortering">overflow menu til brug ved sortering</a>
 - Ændret ikon i <a href="/komponenter/detaljer/">detalje komponent</a>
+
 {:#version-7-4-0 .mb-0}
 ## Version 7.4.0
 

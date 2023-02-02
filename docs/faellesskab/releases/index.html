@@ -3738,25 +3738,7 @@
 
 
 <li class=" ">
-<a href="#version-7-4-0" >Version 7.4.0</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-7-3-0" >Version 7.3.0</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-7-2-0" >Tidligere versioner</a>
+<a href="#version-7-4-0" >Tidligere versioner</a>
 </li>
 
     
@@ -3810,9 +3792,7 @@
           <li><a href="#version-7-5-2">Version 7.5.2</a></li>
           <li><a href="#version-7-5-1">Version 7.5.1</a></li>
           <li><a href="#version-7-5-0">Version 7.5.0</a></li>
-          <li><a href="#version-7-4-0">Version 7.4.0</a></li>
-          <li><a href="#version-7-3-0">Version 7.3.0</a></li>
-          <li><a href="#version-7-2-0">Tidligere versioner</a></li>
+          <li><a href="#version-7-4-0">Tidligere versioner</a></li>
           
           </ul>
           
@@ -3846,12 +3826,12 @@
 
 <h2 id="version-9-0-0" class="mb-0">Version 9.0.0</h2>
 
-<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
+<div><span class="small-text mt-0 d-block">xx-02-2023</span></div>
 
 <p>Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængeligheden.</p>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">Datovælger</h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/">Datovælger</a></h3>
   <span class="badge badge-warning badge-small mr-2">Breaking change</span>
 </div>
 <ul>
@@ -3861,11 +3841,11 @@
   <li>Tilføjet skærmlæserbeskeder for datovælgere med begrænsninger på datovalg.</li>
   <li>Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.</li>
   <li>Datovælgeren kræver nu et <code>id</code> for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.</li>
-  <li>Ændret <code>aria-selected</code> til <code>aria-current</code>.</li>
+  <li>Ændret <code>aria-selected</code> til <code>aria-current</code> på valgte datoer, måneder og år.</li>
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">Venstremenu og trinindikator</h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
   <span class="badge badge-warning badge-small mr-2">Breaking change</span>
 </div>
 <p>Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opdateres.</p>
@@ -3876,35 +3856,42 @@
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">Tabeller</h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a></h3>
   <span class="badge badge-warning badge-small mr-2">Breaking change</span>
 </div>
 <ul>
   <li>Fjernet klassen <code>table--lines</code> der var en udokumenteret måde at style en tabel på.</li>
   <li>Rettet fejl relateret til margin og padding for tabeller.</li>
-  <li>Opdateret teksten på søgeknappen ved søgning i tabeller.</li>
-  <li>Skærmlæserbeskederne til tjekboksene i tabeller med valgbare rækker skifter ikke længere mellem “vælg række” og “fravælg række”, da forståelsen blev tvetydig, når tjekboksens status blev læst højt. I stedet anvendes kun “vælg række” sammen med tjekboksens status. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, bortfalder muligheden for at give andre sprogoversættelser og eventuelle oversættelser skrives direkte i HTML’en.</li>
+  <li>Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.</li>
+  <li>Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> skifter ikke længere mellem “vælg række” og “fravælg række”, da forståelsen blev tvetydig, når tjekboksens status blev læst højt. I stedet anvendes kun “vælg række” sammen med tjekboksens status. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, bortfalder muligheden for at give andre sprogoversættelser og eventuelle oversættelser skrives direkte i HTML’en.</li>
+  <li>Fjernet <code>aria-label</code> fra <code>label</code>-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.</li>
+  <li>Opdateret JavaScript for responsive tabeller, så det nu kun er <code>th</code>-elementer uden klassen <code>actions-header</code>, der kan sætte <code>data-title</code>-attributten.</li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
+  <span class="badge badge-info badge-small mr-2">Change</span>
+</div>
+<ul>
+  <li>Opdateret myndighedsnavnet i række 2, så det nu er kodet som en heading og kan styles med klassen <code>authority-name</code>.</li>
+  <li>Rettet fejl, hvor portalnavnet ikke blev vist korrekt ved print.</li>
+  <li>Log af-knappen er nu altid kodet som en <code>button</code>, uanset hvilken skærmstørrelse den vises på.</li>
+  <li><code>title</code> er fjernet fra mobilmenuens knapper og erstattet af <code>aria-label</code>.</li>
+  <li>Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.</li>
 </ul>
 
 <h3 class="h4">Øvrige</h3>
 <ul>
-  <li><span class="badge badge-success badge-small mr-2">New</span> Oprettet følgende macroer: Tooltip, tabeller, søgefelter og radiobuttons.</li>
-  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af følgende macroer: Helptext, label, radiobutton, button, select, overflow, trinindikator og tabeller. Macroerne er blevet ensrettet, så fx klasser, varianter, attributter, hjælpetekster eller fejlbeskeder angives på samme måde. Der er derfor omfattende ændringer i alle førnævnte macroer. Se macroernes tilhørende YAML-filer for, hvilke værdier der nu kan sættes. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt den færdige HTML-kode vist på dokumentationssiden, så kan man se bort fra dette punkt i release notes.</li>
-  <li>
-    <p><span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksemplerne er rettet.</p>
-  </li>
-  <li>Opdateret tooltip, så klassen js-tooltip ikke længere er nødvendig for, at JavaScripten fungerer.</li>
-  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Opdateret JavaScript for responsive tabeller, så det nu er acceptabelt at blande th- og td-elementer. Der vil kun blive sat data-title-attribut for celler i th-kolonner.</li>
-  <li>Rettet fejl hvor søgefelter blev grå i stedet for hvide på iPhones.</li>
-  <li>Fjernet <code>jsnext:main</code> fra package.json.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i overflow menuer, hvor indholdet kunne ryge ud over skærmkanten på små skærme.</li>
+  <li>Fjernet <code>jsnext:main</code> fra <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.</li>
   <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl hvor tilbage til toppen-knappen ikke blev læst korrekt op på mindre skærmstørrelser.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Flere mindre tilgængelighedsrettelser i headeren: Fjernet <code>title</code> fra mobilmenuens knapper og ændret html for portal.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headers-eksempler, hvor den aktive side ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.</li>
-  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i headeren, hvor portalnavnet ikke blev vist korrekt ved print.</li>
-  <li>Mindsket afstanden mellem label og hjælpetekst ved store radioknapper.</li>
-  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Ændret <code>aria-selected</code> til <code>aria-current</code> på sortering. Både JavaScript og styling er opdateret.</li>
+  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Attributten <code>aria-selected</code> på <a href="/komponenter/overflowmenu/#sortering">sortering</a> er ændret til <code>aria-current</code> og flyttet fra <code>li</code>-elementet til <code>button</code>-elementet. Både JavaScript og styling er blevet tilpasset.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> <a href="/komponenter/radioknap/">Radioknapper</a> indeholder ikke længere listeelementerne <code>li</code> og <code>ul</code>.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i <a href="/komponenter/overflowmenu/">overflow menuer</a>, hvor indholdet kunne ryge ud over skærmkanten på små skærme.</li>
+  <li>Rettet fejl, hvor <a href="/komponenter/search/">søgefelter</a> blev grå i stedet for hvide på iPhones.</li>
+  <li>Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a>.</li>
+  <li><span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, der indeholder både rettelser og tilføjelser. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
+  <li><span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksempler er rettet.</li>
 </ul>
 
 <h2 id="version-8-2-1" class="mb-0">Version 8.2.1</h2>
@@ -4033,7 +4020,7 @@
 
 <div><span class="small-text mt-0 d-block">29-09-2021</span></div>
 
-<ul id="version-7-4-0" class="mb-0">
+<ul>
   <li><a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a></li>
   <li><a href="/komponenter/inputfelter/#prefix-og-suffix">Prefix og suffix på felter</a></li>
   <li>Småtilpasninger i designet på <a href="/komponenter/modal/">modaler</a></li>
@@ -4047,7 +4034,8 @@
   <li>Tilføjet variant til <a href="/komponenter/overflowmenu/#sortering">overflow menu til brug ved sortering</a></li>
   <li>Ændret ikon i <a href="/komponenter/detaljer/">detalje komponent</a></li>
 </ul>
-<h2>Version 7.4.0</h2>
+
+<h2 id="version-7-4-0" class="mb-0">Version 7.4.0</h2>
 
 <div><span class="small-text mt-0 d-block">02-06-2021</span></div>
 
