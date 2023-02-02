@@ -15,12 +15,12 @@ subnav:
   href: '#zebralinjer'
 - text: Responsiv
   href: '#responsiv'
-- text: Scroll
-  href: '#scroll'
 - text: Linjehøjde
   href: '#linjehoejde'
 - text: Sortering i tabel
   href: '#sortering-i-tabel'
+- text: Søgning i tabeller
+  href: '#soegning-i-tabeller'
 - text: Valgbare rækker
   href: '#valgbare-raekker'
 ---
@@ -39,24 +39,13 @@ subnav:
 
 {% include code/syntax.html component="table" %}
 
-Man kan gøre brug af <a href="/kode/utilities/#bredde-i-procent">hjælpeklasser</a> til at definere bredde på kolonner.
+Man kan gøre brug af hjælpeklassen for <a href="/kode/utilities/#bredde-i-procent">bredde i procent</a> til at definere bredde på kolonner. 
 
-### Tilgængelighed
+Brug klassen `table-header-no-wrap` på `th`-elementet inde i `thead`, hvis du ikke ønsker, at en header skal kunne ombrydes til flere linjer.
 
-Tabeller i Det Fælles Designsystem overholder HTML standarden, men du skal selv tilføje `scope=col` eller `scope=row` til hver header celle `th`
+Brug klasserne `vertical-align-top`, `vertical-align-middle` og `vertical-align-bottom` på enten `<th>` eller `<td>` til at ændre den vertikale placering af indholdet i en celle i toppen, midten eller bunden.
 
-Hvis du konstruerer en såkaldt kompleks tabel – en tabel med flere header-niveauer -  skal hver header have tilføjet et unikt id (fx `id=header-eksempel`) og hver celle tilføjes en header-attribut med den relevante og tilknyttede tabel header’s `id` angivet (fx `header=header-eksempel`).
-
-Når du tilføjer en titel til en tabel, skal du skrive den i `caption` indenfor table-elementet.
-
-{:#javascript}
-### Javascript
-
-Man kan sætte de korrekte attributter automatisk, hvis man ønsker en responsiv tabel. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
-
-{% highlight javascript %}
-new DKFDS.ResponsiveTable(document.getElementById('TABLE-ID'));
-{% endhighlight %}
+Tabeller er som udgangspunkt sat ind i en `<div>`, som har klassen `table--responsive-scroll`, hvilket gør at tabellen kan scrolles vandret, hvis den bliver for smal. Hvis man ikke ønsker, at dette skal være muligt, kan man undlade denne `<div>`.
 
 ## Varianter
 
@@ -68,20 +57,15 @@ For at fjerne den yderste ramme tilføj klassen `table--borderless` til `<table>
 ### Zebralinjer
 Man kan sætte zebralinjer på en tabel med klassen `table--zebra` på `<table>`.
 
-
 {:#responsiv}
 ### Responsiv tabel
-Tilføj en af nedenstående klasser:
+En tabel gøres responsiv ved at tilføje klassen `table--responsive-headers` til `<table>`. Responsive tabeller ændrer som standard udseende ved <a href="/kode/utilities/#responsive-hjælpeklasser">breakpoint</a> `sm`, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint. Du kan anvende en af nedenstående klasser for at ændre, ved hvilket breakpoint tabellens udseende skal ændres:
 
-- `table-sm-responsive-headers`
+- `table-sm-responsive-headers` (svarer til `table--responsive-headers`)
 - `table-md-responsive-headers`
 - `table-lg-responsive-headers`
 
-Indsæt den klasse der passer til mængden af kolonner i din tabel. Klasserne ændrer tabellens udseende i forskellige breakpoints.
-
-Attributten `data-title` bør tilføjes til hver `<td>`, således at en label bliver tilføjet for hver celle på mindre skærme.
-
-Attributten kan sættes automatisk ved brug af <a href="#javascript">JavaScript</a>.
+Udover at tilføje en klasse, skal attributten `data-title` tilføjes til hver `<td>`, hvilket gør at en label bliver tilføjet for hver celle på mindre skærme.
 
 {% highlight html %}
 <tr>
@@ -92,56 +76,67 @@ Attributten kan sættes automatisk ved brug af <a href="#javascript">JavaScript<
 </tr>
 {% endhighlight %}
 
-{:#scroll}
-### Scroll på tabel
-En tabel er som udgangspunkt ikke responsiv, men man kan gøre den responsiv til en vis grad ved at tilføje vandret scroll.
+Attributten kan sættes automatisk ved brug af <a href="#javascript-responsiv">JavaScript</a>.
 
-Sæt `<table>` elementet i en `<div>`, som har klassen `table--responsive-scroll`.
+Bemærk, at tabeller med sortering og tabeller med valgbare rækker ikke har en responsiv version.
+
+{:#javascript-responsiv}
+#### JavaScript for responsive tabeller
+
+Anvendes til at sætte de korrekte attributter automatisk, hvis man ønsker en responsiv tabel. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.ResponsiveTable(document.getElementById('TABLE-ID'));
+{% endhighlight %}
 
 {:#linjehoejde}
 ### Linjehøjde
 
 #### Kompakt
-Tilføj klassen `table--compact` på `<table>`
+Tilføj klassen `table--compact` på `<table>`.
 
 #### Ekstra kompakt
-Tilføj klassen `table--extracompact` på `<table>`
+Tilføj klassen `table--extracompact` på `<table>`.
 
-#### Sortering i tabel
+{:#sortering-i-tabel}
+### Sortering i tabel
+Se nedenstående eksempels HTML for, hvilke klasser, attributter og knapper, der skal sættes på hhv. `<th>` og `<tbody>`.
+
+Der følger ikke JavaScript med til sortering i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
+
 {% include code/syntax.html component="table-sort" link="true" %}
 
-Eksemplet er fuldt funktionelt, men funktionaliteten følger ikke med i FDS koden. Man skal derfor selv bygge sorteringsfunktionen ved tryk på diverse knapper. Eksemplet viser, hvordan HTML tilpasses ved ændring af sortering.
+{:#soegning-i-tabeller}
+### Søgning i tabeller
+Anvend <a href="/kode/komponenter/search/">søgefeltkomponenten</a> sammen med din tabel og tilføj `aria-live="polite"` til `<table>`. 
+
+Der følger ikke JavaScript med til søgning i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
+
+{% include code/syntax.html component="table-search" link="true" %}
 
 {:#valgbare-raekker}
 ### Valgbare rækker
 {% include code/syntax.html component="table-selectable" link="true" %}
 
+{:#valgbare-raekker-knapper}
 #### Valgbare rækker med funktionsknapper
 {% include code/syntax.html component="table-selectable-functions" link="true" %}
 
-#### Javascript
+#### JavaScript for tabeller med valgbare rækker
 Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
 new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID')).init();
 {% endhighlight %}
 
-##### Sprog
-Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for tabeller med valgbare rækker, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag.
-
-{% highlight javascript %}
-new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID'), {
-  "select_row": "Vælg række",
-  "unselect_row": "Fravælg række",
-  "select_all_rows": "Vælg alle rækker",
-  "unselect_all_rows": "Fravælg alle rækker"
-}).init();
-{% endhighlight %}
+Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Nedenstående eksempel er gjort funktionelt som demonstration.
 
 ##### Events
 
 {:.table}
 | Event key                      | Element       | Beskrivelse                                                                                                              |
 |--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------|
-| fds.table.selectable.updated   | `<table>`     | Når en tjekboks ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>` elementet |
+| fds.table.selectable.updated   | `<table>`     | Når en tjekboks ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>`-elementet |
+
+
 

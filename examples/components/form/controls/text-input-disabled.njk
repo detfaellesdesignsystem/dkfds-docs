@@ -1,2 +1,11 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(params)}}
+
+{{
+    textinput({
+        "id": "input-disabled",
+        "name": "input-disabled",
+        "label": "Inputfelt som er låst",
+        "disabled": true,
+        "required": false
+    })
+}}

@@ -233,7 +233,7 @@
         <form method="get" action="/search/" id="mobileSearchForm">
           <div class="form-group search">
             <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search">
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -385,7 +385,7 @@
             <form method="get" action="/search/" id="menuSearchForm">
               <div class="form-group search">
                 <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <input class="form-input input-char-27" id="search-input" name="q" type="search">
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
@@ -3593,7 +3593,9 @@
                     class="sidenav-title">Trin 1</span>
 
                 <span class="sidenav-icon">
-                    <svg class="icon-svg" aria-label="Gennemført" aria-hidden="true"><use xlink:href="#done"></use></svg>
+
+                    <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+
                 </span>
 
                 <span class="sidenav-information">Informationstekst for

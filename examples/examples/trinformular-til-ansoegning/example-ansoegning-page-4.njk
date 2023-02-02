@@ -1,149 +1,141 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/form/controls/select.njk" import select as select %}
-{% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
+
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Ansøg om et eller andet"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
 
 {% block header %}
 <header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
-
     <div class="overlay"></div>
-    <nav class="nav"> <!-- collapsible-->
-        <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
-
-        <div class="portal-info-mobile">
-        <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
-
-        <a href="#" class="button button-secondary button-signout">
-            Log af
-        </a>
-    </div>
-
-    <div class="solution-info-mobile">
-        <p class="bold">Myndighedsnavn</p>
-        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block">
-            <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
-    </div>
-  </nav> <!-- collapsible nav end-->
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
 </header>
 {% endblock %}
 
 {% block body %}
 <main class="container page-container" id="main-content">
-  <div><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/" class="back-link">Tilbage</a></div>
-    {{overflowmenu({
-        "button": {
-            "text": "Trin 4 af 5",
-            "icon":"arrow-drop-down"
-        },
-        "id": "overflow-ansoeg",
-        "content": "
-        <nav>
-          <ul class='sidenav-list' role='menu'>
-              <li role='none' >
-              <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/' role='menuitem' >
-                <span class='sidenav-number'>1.</span><span class='sidenav-title'>Oplysninger&nbsp;om&nbsp;afsender</span>
-                <span class='sidenav-icon'>
-                  <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-              </span>
-            </a>
-              </li>
-              <li role='none'>
-            <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/' role='menuitem' >
-                <span class='sidenav-number'>2.</span><span class='sidenav-title'>Kontaktoplysninger</span>
-                <span class='sidenav-icon'>
-                  <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-              </span>
-            </a>
-              </li>
-              <li role='none' >
-            <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/' role='menuitem' >
-                <span class='sidenav-number'>3.</span><span class='sidenav-title'>Ansøgningens&nbsp;type</span>
-                <span class='sidenav-icon'>
-                  <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
-              </span>
-            </a>
-              </li>
-              <li role='none' class='active current'>
-          <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/' role='menuitem' aria-current='page'>
-              <span class='sidenav-number'>4.</span><span class='sidenav-title'>Tilføj&nbsp;dokumentation</span>
-          </a>
-              </li>
-              <li role='none'>
-        <a href='/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/' role='menuitem'>
-            <span class='sidenav-number'>5.</span><span class='sidenav-title'>Opsummering</span>
-        </a>
-              </li>
-          </ul>
-      </nav>
-        "
-        }) 
-    }}
+    <div><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/" class="back-link">Tilbage</a></div>
+    {{ overflow_stepguide(trinindikator_data) }}
     <h1>Tilføj dokumentation</h1>
     <form class="mb-6" novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/">
-      <div class="form-group file-input mb-5">
-        <label class="form-label" for="fileinput">Tilføj dokument</label>
-        <input class="mt-3" type="file" id="fileinput" name="file" aria-describedby="help-text-hint" />
-      </div>
-      <button class="button button-secondary d-print-none" type="submit">Upload fil</button>
+        <div class="form-group file-input mb-5">
+            <label class="form-label" for="fileinput">Tilføj dokument</label>
+            <input class="mt-3" type="file" id="fileinput" name="file">
+        </div>
+        {{ button(button_upload) }}
     </form>
     <form novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/">
-      <div class="table--responsive-scroll mt-4 mb-7">
-        <table class="table table--borderless table--responsive-headers table--compact">
-            <thead>
-                <tr>
-                  <th>Filnavn</th>
-                  <th id="header2">Dokumentationstype</th>
-                  <th id="header3">Sidetal <span class="weight-normal">(frivilligt)</span></th>
-                  <th id="header4">Slet</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td class="vertical-align-middle" data-title="Filnavn" id="file1">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</td>
-                  <td class="vertical-align-middle" data-title="Dokumentationstype">
-                    <div class="form-group">
-                      <select class="form-select input-width-s" name="options" id="options" aria-labelledby="file1 header2">
-                        <option value="option1">Vælg type</option>
-                          <option value="option2">Type 1</option>
-                          <option value="option3">Type 2</option>
-                          <option value="option4">Type 3</option>
-                      </select>
-                  </div>
-                  </td>
-                  <td class="vertical-align-middle" data-title="Sidetal">
-                    <div class="form-group">
-                      <input class="form-input input-width-xxs" id="input-type-text" name="input-type-text" type="number" aria-labelledby="file1 header3" />
-                  </div>
-                  </td>
-                  <td class="vertical-align-middle" data-title="Slet">
-                    <button class="button button-unstyled" aria-labelledby="header4 file1" type="button">
-                      <svg class="icon-svg" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
-                    </button>
-                  </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    {{ button(button_next) }}
+        <div class="table--responsive-scroll mt-4 mb-7">
+            <table class="table table--borderless table--responsive-headers table--compact">
+                <thead>
+                    <tr>
+                        <th>Filnavn</th>
+                        <th id="header2">Dokumentationstype</th>
+                        <th id="header3">Sidetal <span class="weight-normal">(frivilligt)</span></th>
+                        <th id="header4">Slet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vertical-align-middle" data-title="Filnavn" id="file1">{{ icon_svg({"name":
+                            'file-pdf'})}}Journal.pdf</td>
+                        <td class="vertical-align-middle" data-title="Dokumentationstype">
+                            <div class="form-group">
+                                <select class="form-select input-width-s" name="options" id="options"
+                                    aria-labelledby="file1 header2">
+                                    <option value="option1">Vælg type</option>
+                                    <option value="option2">Type 1</option>
+                                    <option value="option3">Type 2</option>
+                                    <option value="option4">Type 3</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td class="vertical-align-middle" data-title="Sidetal">
+                            <div class="form-group">
+                                <input class="form-input input-width-xxs" id="input-type-text" name="input-type-text"
+                                    type="number" aria-labelledby="file1 header3" />
+                            </div>
+                        </td>
+                        <td class="vertical-align-middle" data-title="Slet">
+                            {{ button(button_delete) }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {{ button(button_next) }}
     </form>
 </main>
 {% endblock %}
 
-{% block banner -%}
-{% endblock %}
-
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
-{{ modal(modal_data) }}
+{{
+    modal({
+        "id": "modal-contact",
+        "heading": "Kontakt",
+        "content": modal_content,
+        "forcedAction": false,
+        "actions": modal_actions
+    })
+}}

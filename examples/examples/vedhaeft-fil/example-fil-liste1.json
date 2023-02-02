@@ -1,0 +1,108 @@
+{
+    "alert_modal_warning": {
+        "classes": "alert-warning",
+        "heading": "Vi har noget information af advarende karakter",
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.",
+        "role": "alert"
+    },
+    "portal_header_data": {
+        "compact": true,
+        "user": {
+            "name": "Anders Andersen"
+        },
+        "logolink": {
+            "label": "Portalnavn",
+            "href": "#"
+        }
+    },
+    "footer_data": {
+        "topButton": {
+            "topLink": "#top"
+        },
+        "list": {
+            "items": [
+                {
+                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
+                    "hideOnPrint": true
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
+                    "hideOnPrint": true
+                }
+            ]
+        }
+    },
+    "select_example1": {
+        "name": "options",
+        "id": "options",
+        "label": "Navngiv dokument",
+        "classLabel": "sr-only",
+        "options": [
+            {
+                "value": "Lægeerklæring",
+                "text": "Lægeerklæring",
+                "selected": true
+            },
+            {
+                "value": "Fuldmagt",
+                "text": "Fuldmagt"
+            },
+            {
+                "value": "Journal",
+                "text": "Journal"
+            },
+            {
+                "value": "Spørgeskema",
+                "text": "Spørgeskema"
+            }
+        ]
+    },
+    "select_example2": {
+        "name": "options2",
+        "id": "options2",
+        "label": "Navngiv dokument",
+        "classLabel": "sr-only",
+        "formError": "Vælg et navn til dokumentet Fuldmagt_88.pdf",
+        "options": [
+            {
+                "value": "Lægeerklæring",
+                "text": "Lægeerklæring"
+            },
+            {
+                "value": "Fuldmagt",
+                "text": "Fuldmagt"
+            },
+            {
+                "value": "Journal",
+                "text": "Journal"
+            },
+            {
+                "value": "Spørgeskema",
+                "text": "Spørgeskema"
+            }
+        ]
+    },
+    "error_summary": {
+        "name": "error",
+        "classes": "alert-error mt-0 mb-8",
+        "title": "Der er problemer",
+        "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a class=\"function-link\" href=\"#fileinput\">Dokumentet er større end 10 MB, og kan derfor ikke tilføjes. Opdel dokumentet og tilføj som flere dokumenter.</a></li><li><a class=\"function-link\" href=\"#options2\">Vælg et navn til dokumentet Fuldmagt_88.pdf</a></li></ul>",
+        "contentContainer": false,
+        "role": "alert"
+    },
+    "button_next": {
+        "text": "Næste",
+        "variant": "primary",
+        "classes": "d-print-none mt-7",
+        "attributes": "type=\"button\""
+    }
+}

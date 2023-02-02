@@ -1,5 +1,5 @@
 {% if include.component and include.component != '' %}
-<div class="component-preview component-preview-code {{ include.classes }} component-code-{{ include.component | slugify }}" aria-label="{{ include.title }}">
+<div class="component-preview component-preview-code {{ include.classes }} component-code-{{ include.component | slugify }}">
     {% if include.link %}
     <div class="component-link px-4 py-4">
         {% if include.url %}
@@ -9,12 +9,17 @@
         {% endif %}
     </div>
     {% endif %}
-    <div class="component-code" aria-label="Kodeeksempel">
-{% capture _syntax %}
-{% highlight html %}
-{% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
-{% endhighlight %}
-{% endcapture %}{{ _syntax | markdownify }}
+    {% if include.title %}
+    <div class="sr-only">{{ include.title }}</div>
+    {% else %}
+    <div class="sr-only">Kodeeksempel</div>
+    {% endif %}
+    <div class="component-code">
+        {% capture _syntax %}
+        {% highlight html %}
+        {% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
+        {% endhighlight %}
+        {% endcapture %}{{ _syntax | markdownify }}
     </div>
 </div>
 {% endif %}

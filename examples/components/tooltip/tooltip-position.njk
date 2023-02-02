@@ -1,9 +1,25 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+
 <!-- Placering: top -->
-<button class="button button-primary js-tooltip" data-tooltip-position="top" data-tooltip="Top tooltip">
-    Top
-</button>
+{{ 
+    button({
+        "variant": "primary",
+        "text": "Top",
+        "tooltip": {
+            "text": "Top tooltip",
+            "position": "top"
+        }
+    }) 
+}}
 
 <!-- Placering: bund -->
-<button class="button button-primary js-tooltip" data-tooltip-position="bottom" data-tooltip="Bund tooltip">
-    Bund
-</button>
+{{ 
+    button({
+        "variant": "primary",
+        "text": "Bund",
+        "tooltip": {
+            "text": "Bund tooltip",
+            "position": "bottom"
+        }
+    }) 
+}}

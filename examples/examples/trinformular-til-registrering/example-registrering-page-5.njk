@@ -1,80 +1,114 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Registrer et eller andet"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
+
 {% block header %}
-    <header class="header">
-      <div id="top"></div>
-  <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
-  {{ portal_header(portal_header_data) }}
-  {{ solution_header(solution_header_data) }}
+<header class="header">
+    <div id="top"></div>
+    {{ skiplink() }}
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
 
-  <div class="overlay"></div>
-  <nav class="nav"> <!-- collapsible-->
-    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+    <div class="overlay"></div>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
 
-    <div class="portal-info-mobile">
-      <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
-
-      <a href="#" class="button button-secondary button-signout">
-        Log af
-      </a>
-    </div>
-
-    <div class="solution-info-mobile">
-      <p class="bold">Myndighedsnavn</p>
-      <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
-    </div>
-
-    <div class="navbar">
-      <div class="navbar-inner navbar-context-actions container">
-        <div class="nav-actions">
-          <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
+        <div class="navbar">
+            <div class="navbar-inner navbar-context-actions container">
+                <div class="nav-actions">
+                    <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav> <!-- collapsible nav end-->
+    </nav>
 </header>
 {% endblock %}
 
 {% block body %}
 <div class="container page-container pt-5 pt-lg-0">
-  <div class="row">
-    <aside class="col-12 col-lg-3 sidebar-col">
-      <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
-        <button class="button-overflow-menu js-dropdown" data-js-target="overflow-reg" aria-haspopup="true" aria-expanded="false">
-            Trin 5 af 6
-            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
-        </button>
-        <div class="overflow-menu-inner" id="overflow-reg" aria-hidden="false">
-          {{ stepguide(trinindikator_data) }}
-        </div>
+    <div class="row">
+        <aside class="col-12 col-lg-3 sidebar-col">
+            {{ overflow_stepguide(trinindikator_data) }}
+        </aside>
+        <main class="col-12 col-lg-9" id="main-content">
+            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-4/" class="back-link">Tilbage</a>
+            </div>
+            <h1 class="mb-6">Kontaktoplysninger</h1>
+            <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-6/">
+                {{ textinput(input_email) }}
+                {{ textinput(input_telefonnummer) }}
+                {{ button(button_next) }}
+            </form>
+        </main>
     </div>
-    </aside>
-    <main class="col-12 col-lg-9" id="main-content">
-      <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-4/" class="back-link">Tilbage</a></div>
-      <h1 class="mb-6">Kontaktoplysninger</h1>
-      <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-6/">
-        {{ textinput(input_email) }}
-        {{ textinput(input_telefonnummer) }}
-        {{ button(button_next) }}
-      </form>
-    </main>
-  </div>
 </div>
 {% endblock %}
 
-{% block banner -%}
-{% endblock %}
-
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
-{{ modal(modal_data) }}
+{{
+    modal({
+        "id": "modal-contact",
+        "heading": "Kontakt",
+        "content": modal_content,
+        "forcedAction": false,
+        "actions": modal_actions
+    })
+}}

@@ -1,120 +1,118 @@
-<p class="h5">Normal</p>
-<div class="table--responsive-scroll">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Affaldstype</th>
-      <th>Farvekode</th>
-      <th>Beskrivelse</th>
-      <th>Hvor ender det?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dagrenovation</td>
-      <td>Grøn</td>
-      <td>Madaffald, samt papir.</td>
-      <td>Alt det affald, du smider ud i din. </td>
-    </tr>
-    <tr>
-      <td>Bioaffald og kompost</td>
-      <td>Beige</td>
-      <td>Alt madaffald.</td>
-      <td>Bioaffaldet kommes i bionedbrydelige.</td>
-    </tr>
-    <tr>
-      <td>Glas</td>
-      <td>Hvid</td>
-      <td>Alle typer glas.</td>
-      <td>De hele vinflasker.</td>
-    </tr>
-    <tr>
-      <td>Elektronik</td>
-      <td>Orange</td>
-      <td>Genstande.</td>
-      <td>Det elektroniske affald.</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+{% from "components/table/table.njk" import table as table %}
+
+<h3 class="mt-0">Normal</h3>
+{{ 
+    table({
+        "thead": [
+            { "headerContent": "Affaldstype" },
+            { "headerContent": "Farvekode" },
+            { "headerContent": "Beskrivelse" },
+            { "headerContent": "Hvor ender det?" }
+        ],
+        "tbody": [
+            [
+                { "content": "Dagrenovation" },
+                { "content": "Grøn" },
+                { "content": "Madaffald, samt papir." },
+                { "content": "Forbrændingen" }
+            ],
+            [
+                { "content": "Bioaffald og kompost" },
+                { "content": "Beige" },
+                { "content": "Alt madaffald." },
+                { "content": "Komposteret til muld" }
+            ],
+            [
+                { "content": "Glas" },
+                { "content": "Hvid" },
+                { "content": "Alle typer glas." },
+                { "content": "Vinhuse og nyt glas" }
+            ],
+            [
+                { "content": "Elektronik" },
+                { "content": "Orange" },
+                { "content": "Genstande, der har brugt strøm." },
+                { "content": "Demonteringsanlæg" }
+            ]
+        ]
+    })
+}}
 
 
-<p class="h5">Klasse: compact</p>
-<div class="table--responsive-scroll">
-<table class="table table--compact">
-  <thead>
-    <tr>
-      <th>Affaldstype</th>
-      <th>Farvekode</th>
-      <th>Beskrivelse</th>
-      <th>Hvor ender det?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dagrenovation</td>
-      <td>Grøn</td>
-      <td>Madaffald, samt papir.</td>
-      <td>Alt det affald, du smider ud i din. </td>
-    </tr>
-    <tr>
-      <td>Bioaffald og kompost</td>
-      <td>Beige</td>
-      <td>Alt madaffald.</td>
-      <td>Bioaffaldet kommes i bionedbrydelige.</td>
-    </tr>
-    <tr>
-      <td>Glas</td>
-      <td>Hvid</td>
-      <td>Alle typer glas.</td>
-      <td>De hele vinflasker.</td>
-    </tr>
-    <tr>
-      <td>Elektronik</td>
-      <td>Orange</td>
-      <td>Genstande.</td>
-      <td>Det elektroniske affald.</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<h3>Kompakt</h3>
+{{ 
+    table({
+        "compactClass": "table--compact",
+        "thead": [
+            { "headerContent": "Affaldstype" },
+            { "headerContent": "Farvekode" },
+            { "headerContent": "Beskrivelse" },
+            { "headerContent": "Hvor ender det?" }
+        ],
+        "tbody": [
+            [
+                { "content": "Dagrenovation" },
+                { "content": "Grøn" },
+                { "content": "Madaffald, samt papir." },
+                { "content": "Forbrændingen" }
+            ],
+            [
+                { "content": "Bioaffald og kompost" },
+                { "content": "Beige" },
+                { "content": "Alt madaffald." },
+                { "content": "Komposteret til muld" }
+            ],
+            [
+                { "content": "Glas" },
+                { "content": "Hvid" },
+                { "content": "Alle typer glas." },
+                { "content": "Vinhuse og nyt glas" }
+            ],
+            [
+                { "content": "Elektronik" },
+                { "content": "Orange" },
+                { "content": "Genstande, der har brugt strøm." },
+                { "content": "Demonteringsanlæg" }
+            ]
+        ]
+    })
+}}
 
-<p class="h5">Klasse: extracompact</p>
-<div class="table--responsive-scroll">
-<table class="table table--extracompact">
-  <thead>
-    <tr>
-      <th>Affaldstype</th>
-      <th>Farvekode</th>
-      <th>Beskrivelse</th>
-      <th>Hvor ender det?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dagrenovation</td>
-      <td>Grøn</td>
-      <td>Madaffald, samt papir.</td>
-      <td>Alt det affald, du smider ud i din. </td>
-    </tr>
-    <tr>
-      <td>Bioaffald og kompost</td>
-      <td>Beige</td>
-      <td>Alt madaffald.</td>
-      <td>Bioaffaldet kommes i bionedbrydelige.</td>
-    </tr>
-    <tr>
-      <td>Glas</td>
-      <td>Hvid</td>
-      <td>Alle typer glas.</td>
-      <td>De hele vinflasker.</td>
-    </tr>
-    <tr>
-      <td>Elektronik</td>
-      <td>Orange</td>
-      <td>Genstande.</td>
-      <td>Det elektroniske affald.</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<h3>Ekstra kompakt</h3>
+{{ 
+    table({
+        "compactClass": "table--extracompact",
+        "thead": [
+            { "headerContent": "Affaldstype" },
+            { "headerContent": "Farvekode" },
+            { "headerContent": "Beskrivelse" },
+            { "headerContent": "Hvor ender det?" }
+        ],
+        "tbody": [
+            [
+                { "content": "Dagrenovation" },
+                { "content": "Grøn" },
+                { "content": "Madaffald, samt papir." },
+                { "content": "Forbrændingen" }
+            ],
+            [
+                { "content": "Bioaffald og kompost" },
+                { "content": "Beige" },
+                { "content": "Alt madaffald." },
+                { "content": "Komposteret til muld" }
+            ],
+            [
+                { "content": "Glas" },
+                { "content": "Hvid" },
+                { "content": "Alle typer glas." },
+                { "content": "Vinhuse og nyt glas" }
+            ],
+            [
+                { "content": "Elektronik" },
+                { "content": "Orange" },
+                { "content": "Genstande, der har brugt strøm." },
+                { "content": "Demonteringsanlæg" }
+            ]
+        ]
+    })
+}}

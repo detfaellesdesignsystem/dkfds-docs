@@ -233,7 +233,7 @@
         <form method="get" action="/search/" id="mobileSearchForm">
           <div class="form-group search">
             <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search">
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -385,7 +385,7 @@
             <form method="get" action="/search/" id="menuSearchForm">
               <div class="form-group search">
                 <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <input class="form-input input-char-27" id="search-input" name="q" type="search">
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
@@ -3585,39 +3585,54 @@
         <aside class="sidebar-col">
         
         <div
-    class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
+    class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive">
     <button class="button-overflow-menu js-dropdown"
-        data-js-target="overflow4" aria-haspopup="true"
+        data-js-target="trinindikator-responsiv" aria-haspopup="true"
         aria-expanded="false">
         Trin 2 af 3
-        <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
+
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
+
     </button>
-    <div class="overflow-menu-inner" id="overflow4" aria-hidden="true">
+    <div class="overflow-menu-inner" id="trinindikator-responsiv"
+        aria-hidden="true">
+
         <nav>
             <ul class="sidenav-list" role="menu">
+
                 <li role="none">
-                    <a href="#" role="menuitem">
-                        <span class='sidenav-number'>1.</span><span
-                            class='sidenav-title'>Trin 1</span>
+                    <a href="" role="menuitem">
+                        <span class="sidenav-number">1.</span> <span
+                            class="sidenav-title">Trin 1</span>
+
                         <span class="sidenav-icon">
-                            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#done"></use></svg>
+
+                            <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="false"><use xlink:href="#done"></use></svg>
+
                         </span>
+
                     </a>
                 </li>
-                <li class="active current" role="none">
-                    <a href="#" role="menuitem" aria-current="page">
-                        <span class='sidenav-number'>2.</span><span
-                            class='sidenav-title'>Trin 2</span>
+
+                <li class=" active current" role="none">
+                    <a href="" role="menuitem" aria-current="page"
+                        aria-current="page">
+                        <span class="sidenav-number">2.</span> <span
+                            class="sidenav-title">Trin 2</span>
+
                     </a>
                 </li>
+
                 <li role="none">
-                    <a href="#" role="menuitem">
-                        <span class='sidenav-number'>3.</span><span
-                            class='sidenav-title'>Trin 3</span>
+                    <a href="" role="menuitem">
+                        <span class="sidenav-number">3.</span> <span
+                            class="sidenav-title">Trin 3</span>
+
                     </a>
                 </li>
             </ul>
         </nav>
+
     </div>
 </div>
         

@@ -1,5 +1,36 @@
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/buttons/buttons.njk" import button as button %}
-{{modal(modal_data)}}
 
-{{ button(button_example) }}
+{% set modal_content = "<p>Du er ved at logge af selvbetjeningen. Ændringer, der ikke er gemt, vil gå tabt.</p>" %}
+
+{% set modal_actions = 
+    button({
+        "variant": "primary",
+        "text": "Forbliv logget på",
+        "attributes": "data-modal-close"
+    })
+    +
+    button({
+        "variant": "secondary",
+        "text": "Log af",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{{
+    modal({
+        "id": "example-log-off",
+        "heading": "Er du sikker på, du vil logge af?",
+        "content": modal_content,
+        "forcedAction": true,
+        "actions": modal_actions
+    })
+}}
+
+{{ 
+    button({
+        "text": "Åbn modal",
+        "variant": "tertiary",
+        "attributes": "data-module=\"modal\" data-target=\"example-log-off\""
+    }) 
+}}

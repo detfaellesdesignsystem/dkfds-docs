@@ -14,16 +14,12 @@ anchor: true
 subnav:
 - text: Responsiv
   href: "#responsiv"
-- text: Klikbar
-  href: "#klikbar"
 - text: Låst
-  href: "#låst"
+  href: "#laast"
 - text: Ekstra information
   href: "#ekstra-information"
-component: tringuide-overflowmenu
-componentTitle: "Eksempel på trinindikator i overflow menu"
-componentCode: "/kode/komponenter/trinindikator/"
 ---
+{% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" link=true code="/kode/komponenter/trinindikator/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -72,5 +68,18 @@ Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ik
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
 - <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning'">Trinformular til ansøgning</a>
 
+{:#responsiv}
+## Responsiv
+Denne komponent er responsiv, og vil derfor ændre udseende, når man ændrer skærmstørrelse.
 
-{% include child-components.html parent='Tringuide' %}
+{% include code/preview-box.html component="tringuide-responsive-overflowmenu" title="Eksempel på responsiv trinindikator" %}
+
+{:#laast}
+## Låst
+
+{% include code/preview-box.html component="tringuide-locked" title="Eksempel på trinindikator med låste trin" %}
+
+{:#ekstra-information}
+## Ekstra information
+
+{% include code/preview-box.html component="tringuide-information" title="Eksempel på trinindikator med information" %}

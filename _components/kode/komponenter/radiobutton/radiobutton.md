@@ -48,7 +48,6 @@ Radioknappernes design er ændret i forhold til standardvisningen for at gøre d
 
 {:#lille-radioknap}
 ### Lille radioknap
-
 {% include code/syntax.html component="radiobutton-small" link="true" %}
 
 {:#skjult-indhold}

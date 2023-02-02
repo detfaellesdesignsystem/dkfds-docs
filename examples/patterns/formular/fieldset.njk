@@ -5,30 +5,23 @@
 <form novalidate>
     {{textinput({
         "id": "simple-fnavn",
-        "label": {
-            "text": "Fornavn"
-        },
+        "label": "Fornavn",
         "name": "fnavn"})}}
     {{textinput({
         "id": "simple-enavn", 
-        "label": {
-            "text": "Efternavn"
-        },
+        "label": "Efternavn",
         "name": "enavn"})}}
     {{textinput({
         "id": "simple-email", 
-        "label": {
-            "text": "E-mail adresse"
-            },
+        "label": "E-mail adresse",
         "name": "email"})}}
     {{textinput({
         "id": "simple-telefon",
-        "label": {
-            "text": "Telefonnummer"
-            },
-        "classes": "input-width-s",
+        "label": "Telefonnummer",
+        "classes": { "input": "input-width-s" },
         "name": "telefon"})}}
     {{ button({
         "text":"Gem oplysninger", 
-        "classes":"primary mt-9"}) }}
+        "variant":"primary",
+        "classes":"mt-9"}) }}
 </form>

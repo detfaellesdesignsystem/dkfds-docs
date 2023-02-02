@@ -71,8 +71,11 @@ tags:
 - 8.1.0
 - 8.2.0
 - 8.2.1
+- 9.0.0
 anchor: true
 subnav:
+- text: Version 9.0.0
+  href: "#version-9-0-0"
 - text: Version 8.2.1
   href: "#version-8-2-1"
 - text: Version 8.2.0
@@ -91,25 +94,14 @@ subnav:
   href: "#version-7-5-1"
 - text: Version 7.5.0
   href: "#version-7-5-0"
-- text: Version 7.4.0
-  href: "#version-7-4-0"
-- text: Version 7.3.0
-  href: "#version-7-3-0"
-- text: Version 7.2.0
-  href: "#version-7-2-0"
-- text: Version 7.1.1
-  href: "#version-7-1-1"
-- text: Version 7.1.0
-  href: "#version-7-1-0"
 - text: Tidligere versioner
-  href: "#version-7-0-0"
+  href: "#version-7-4-0"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 
 ---
 Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3}
 ## Versionering
 Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.
 
@@ -124,10 +116,71 @@ Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR 
 
 Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens.
 
-{:.h3}
-## Tidligere versioner af dokumentationen
+{:.h4}
+### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+
+{:#version-9-0-0 .mb-0}
+## Version 9.0.0
+
+<div><span class="small-text mt-0 d-block">xx-02-2023</span></div>
+
+Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængeligheden.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/">Datovælger</a></h3>
+  <span class="badge badge-warning badge-small mr-2">Breaking change</span>
+</div>
+- Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
+- Rettet fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.
+- Rettet fejl, hvor markøren skiftede udseende på navigationsknapperne, selv når disse knapper ikke var synlige.
+- Tilføjet skærmlæserbeskeder for datovælgere med begrænsninger på datovalg.
+- Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
+- Datovælgeren kræver nu et `id` for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
+- Ændret `aria-selected` til `aria-current` på valgte datoer, måneder og år.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
+  <span class="badge badge-warning badge-small mr-2">Breaking change</span>
+</div>
+Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opdateres.
+- Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.
+- Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert. Stylingen for `.sidenav-list li a` er i denne forbindelse blevet ændret fra `flex-wrap: wrap` til `flex-wrap: nowrap`, hvilket kan give ombrydningsproblemer, hvis man ikke opdaterer html'en.
+- Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a></h3>
+  <span class="badge badge-warning badge-small mr-2">Breaking change</span>
+</div>
+- Fjernet klassen `table--lines` der var en udokumenteret måde at style en tabel på.
+- Rettet fejl relateret til margin og padding for tabeller.
+- Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.
+- Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> skifter ikke længere mellem "vælg række" og "fravælg række", da forståelsen blev tvetydig, når tjekboksens status blev læst højt. I stedet anvendes kun "vælg række" sammen med tjekboksens status. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, bortfalder muligheden for at give andre sprogoversættelser og eventuelle oversættelser skrives direkte i HTML'en.
+- Fjernet `aria-label` fra `label`-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.
+- Opdateret JavaScript for responsive tabeller, så det nu kun er `th`-elementer uden klassen `actions-header`, der kan sætte `data-title`-attributten.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
+  <span class="badge badge-info badge-small mr-2">Change</span>
+</div>
+- Opdateret myndighedsnavnet i række 2, så det nu er kodet som en heading og kan styles med klassen `authority-name`.
+- Rettet fejl, hvor portalnavnet ikke blev vist korrekt ved print.
+- Log af-knappen er nu altid kodet som en `button`, uanset hvilken skærmstørrelse den vises på.
+- `title` er fjernet fra mobilmenuens knapper og erstattet af `aria-label`.
+- Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
+
+<h3 class="h4">Øvrige</h3>
+- Fjernet `jsnext:main` fra <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Fjernet ikonet `delete`. Brug i stedet ikonet `trash-can`.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Attributten `aria-selected` på <a href="/komponenter/overflowmenu/#sortering">sortering</a> er ændret til `aria-current` og flyttet fra `li`-elementet til `button`-elementet. Både JavaScript og styling er blevet tilpasset.
+- <span class="badge badge-info badge-small mr-2">Change</span> <a href="/komponenter/radioknap/">Radioknapper</a> indeholder ikke længere listeelementerne `li` og `ul`.
+- <span class="badge badge-info badge-small mr-2">Change</span> Rettet fejl i <a href="/komponenter/overflowmenu/">overflow menuer</a>, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
+- Rettet fejl, hvor <a href="/komponenter/search/">søgefelter</a> blev grå i stedet for hvide på iPhones.
+- Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a>.
+- <span class="badge badge-warning badge-small mr-2">Breaking change</span> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, der indeholder både rettelser og tilføjelser. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.
+- <span class="badge badge-info badge-small mr-2">Change</span> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksempler er rettet. 
 
 {:#version-8-2-1 .mb-0}
 ## Version 8.2.1
@@ -143,7 +196,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
-- <span class="badge badge-success badge-small mr-3">New</span> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/datovaelger/">datovælger</a>.
+- <span class="badge badge-success badge-small mr-2">New</span> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/datovaelger/">datovælger</a>.
 - <span class="badge badge-info badge-small mr-2">Change</span> Ændret aria-attributter for <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.
 - <span class="badge badge-info badge-small mr-2">Change</span> Ændret placeringen af <a href="/komponenter/toastbesked/">toastbeskeder</a>, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.
 - Tilføjet `cursor:pointer` til <a href="/komponenter/toastbesked/">toastbeskeders</a> luk-knap.
@@ -156,8 +209,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">28-09-2022</span></div>
 
-- <span class="badge badge-success badge-small mr-3">New</span> Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a>
-- <span class="badge badge-success badge-small mr-3">New</span> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
+- <span class="badge badge-success badge-small mr-2">New</span> Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a>
+- <span class="badge badge-success badge-small mr-2">New</span> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
 - Tilføjet manglende padding i venstre side af overflow-menupunkter i <a href="/komponenter/header/#kompleks-header-med-alle-r%C3%A6kker">headerens</a> række 3
 - Rettet fejl hvor <a href="/komponenter/skip-link/">skip-links</a> ikke blev vist, når der var zoomet ca. 400% ind i browseren
 - Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3
@@ -261,6 +314,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet <a href="/design/ikoner/?s=sorter">ikoner til sortering i tabel</a>
 - Tilføjet variant til <a href="/komponenter/overflowmenu/#sortering">overflow menu til brug ved sortering</a>
 - Ændret ikon i <a href="/komponenter/detaljer/">detalje komponent</a>
+
 {:#version-7-4-0 .mb-0}
 ## Version 7.4.0
 
@@ -396,7 +450,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.
 - <a href="/design/typografi/lister/">Lister</a> har fået nyt udtryk.
 - Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/header/">header</a> samt <a href="/komponenter/venstremenu/">venstremenuen</a>.
-- Tilføjet mulighed for <a href="/komponenter/radioknap/#hjælpetekst">hjælpetekst på radioknap</a>.
+- Tilføjet mulighed for <a href="/komponenter/radioknap/#hjaelpetekst">hjælpetekst på radioknap</a>.
 - Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.
 - Tilpasset retningslinjer for <a href="/komponenter/radioknap/#skjult-indhold-collapse">Skjul/vis med radioknapper</a>.
 - Opdateret <a href="/design/designressourcer/">SVG filer</a>, samt tilføjet link til <a href="/design/designressourcer/">Figma komponent bibliotek</a>.

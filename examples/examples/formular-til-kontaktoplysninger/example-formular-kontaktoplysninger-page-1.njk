@@ -1,82 +1,116 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel står her"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
 
 {% block header %}
-  <header class="header">
+<header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
-
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
-      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
-
-      <div class="portal-info-mobile">
-        <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
-
-        <a href="#" class="button button-secondary button-signout">
-          Log af
-        </a>
-      </div>
-
-      <div class="solution-info-mobile">
-        <p class="bold">Myndighedsnavn</p>
-        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
-      </div>
-    </nav> <!-- collapsible nav end-->
-  </header>
-
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
+</header>
 {% endblock %}
 
 {% block body %}
-  <main class="container page-container" id="main-content">
+<main class="container page-container" id="main-content">
     <form novalidate method="post" action="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/">
-      <fieldset>
-          <legend><h1>Oplysninger om dig</h1></legend>
-          <div class="row">
-            <div class="mt-5 col-lg-4 col-md-6 col-sm-8">
-              {{ textinput(input_navn) }}
-              <div class="d-block d-sm-flex align-items-sm-end">
-                {{ textinput(input_gade) }}
-                {{ textinput(input_husnummer) }}
-              </div>
-              <div class="d-block d-sm-flex align-items-sm-end">
-                {{ textinput(input_postnummer) }}
-                {{ textinput(input_by) }}
-              </div>
-              {{ textinput(input_COadresse) }}
-              {{ textinput(input_telefonnummer) }}
-              {{ textinput(input_email) }}
-              <div class="form-group">
-                <fieldset>
-                  <legend class="form-label">Alder</legend>
-                  <ul class="nobullet-list">
-                  {% for item in radiobuttons_alder.items %}<li>{{ radiobutton(item) }}</li>{% endfor %}
-                  </ul>
-                </fieldset>
-              </div>
-              <button type="submit" class="button button-primary d-print-none mt-7">Næste</button>
+        <fieldset>
+            <legend>
+                <h1>Oplysninger om dig</h1>
+            </legend>
+            <div class="row">
+                <div class="mt-5 col-lg-4 col-md-6 col-sm-8">
+                    {{ textinput(input_navn) }}
+                    <div class="d-block d-sm-flex align-items-sm-end">
+                        {{ textinput(input_gade) }}
+                        {{ textinput(input_husnummer) }}
+                    </div>
+                    <div class="d-block d-sm-flex align-items-sm-end">
+                        {{ textinput(input_postnummer) }}
+                        {{ textinput(input_by) }}
+                    </div>
+                    {{ textinput(input_COadresse) }}
+                    {{ textinput(input_telefonnummer) }}
+                    {{ textinput(input_email) }}
+                    {{ radiobuttons(radiobuttons_alder) }}
+                    {{ button(button_next) }}
+                </div>
             </div>
-          </div>
-      </fieldset>
+        </fieldset>
     </form>
-  </main>
-{% endblock %}
-
-{% block banner -%}
+</main>
 {% endblock %}
 
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
-{{ modal(modal_data) }}
+{{
+    modal({
+        "id": "modal-contact",
+        "heading": "Kontakt",
+        "content": modal_content,
+        "forcedAction": false,
+        "actions": modal_actions
+    })
+}}

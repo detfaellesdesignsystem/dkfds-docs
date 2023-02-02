@@ -9,7 +9,7 @@ layout: default
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         {% assign sidenavFromNavData = site.data.nav[page.category] %}
         {% if sidenavFromNavData %}
-        <ul class="sidenav-list" role="menu">
+        <ul class="sidenav-list">
           {% include nav/sidenavigation/list.html links=sidenavFromNavData use_alt_text=true %}
         </ul>
         {% endif %}
@@ -46,7 +46,13 @@ layout: default
           <div class="subheading">
             {{ page.subcategory }}
           </div>
+
+          {% if page.title == "Print" %}
+          <h1 id="printpage">{{ page.title }}</h1>
+          {% else %}
           <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+          {% endif %}
+
           {% comment %}List of hash links/anchor links outputted for mobile overview and use{% endcomment %}
           {% if page.subnav and page.anchor == true %}
           <ul class="d-lg-none nobullet-list">

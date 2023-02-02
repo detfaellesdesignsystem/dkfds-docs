@@ -14,10 +14,10 @@
 {% if include.is_sidenav and include.text %}
   {% assign titletext = include.text %}
 {% endif %}
-<li class="{% if is_active -%}current{% endif %}" role="none">
+<li class="{% if is_active -%}current{% endif %}">
 {% if include.flat -%}
   <!-- Do not render subnavs-->
-  <a href="{{ include.page.url | relative_url }}" role="menuitem" {% if is_active -%}aria-current="page"{% endif %}
+  <a href="{{ include.page.url | relative_url }}" {% if is_active -%}aria-current="page"{% endif %}
     class="nav-link">
     <span>{{ titletext | smartify }}</span>
   </a>
@@ -36,11 +36,11 @@
 
   {% if _links -%}
     <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-{{ titletext | slugify }}" aria-haspopup="true" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-{{ titletext | slugify }}" aria-haspopup="true" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
         <span>{{ titletext | smartify }}</span>
       </button>
-      <div role="menu" aria-label="{{ titletext | smartify }}" class="overflow-menu-inner" id="submenu-level1-{{ titletext | slugify }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-{{ titletext | slugify }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
+        <ul class="overflow-list">
           {%
             include nav/page-item.html
             page=include.page

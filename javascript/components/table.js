@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 newSorting = "descending";
             }
             setSortingIcon(this, newSorting);
-            btnFarvekode.parentNode.setAttribute('aria-sort', "none");
+            btnFarvekode.parentNode.removeAttribute("aria-sort");
+            //btnFarvekode.parentNode.setAttribute('aria-sort', "none");
             setSortingIcon(btnFarvekode, 'none');
             this.parentNode.setAttribute('aria-sort', newSorting);
             sortTable('affaldstype', newSorting);
@@ -33,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 newSorting = "descending";
             }
             setSortingIcon(this, newSorting);
-            btnAffaldstype.parentNode.setAttribute('aria-sort', "none");
+            btnAffaldstype.parentNode.removeAttribute("aria-sort");
+            //btnAffaldstype.parentNode.setAttribute('aria-sort', "none");
             setSortingIcon(btnAffaldstype, 'none');
             this.parentNode.setAttribute('aria-sort', newSorting);
             sortTable('farvekode', newSorting);

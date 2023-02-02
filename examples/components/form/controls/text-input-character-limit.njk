@@ -1,3 +1,10 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 
-{{textinput(params)}}
+{{
+    textinput({
+        "id": "input-type-text-limit",
+        "name": "input-type-text-limit",
+        "label": "Inputfelt med karakterbegrænsning",
+        "characterLimit": 20
+    })
+}}

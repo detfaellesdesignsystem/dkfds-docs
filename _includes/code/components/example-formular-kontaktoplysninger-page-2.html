@@ -1,24 +1,22 @@
 <header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
-    <!--1A: Portal header -->
-    <div class="portal-header ">
+    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+
+    <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="#" class="logo ">
-                <span class="sr-only">Portalnavn</span>
+            <a href="#" aria-label="Portalnavn" class="logo ">
+                <span class="d-none d-print-block">Portalnavn</span>
             </a>
-            <button
-                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu"
-                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
+                <p class="user">
 
-                <p class="user"><span
-                        class="username weight-semibold">Anders
-                        Andersen</span> <br />Forsikringens Forsikringsfirma
+                    <strong class="username weight-semibold">Anders Andersen</strong>
+
+                    <br />Forsikringens Forsikringsfirma
                 </p>
 
                 <button class="button button-secondary d-print-none">
@@ -28,63 +26,62 @@
         </div>
     </div>
 
-    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" class="">
+                <a href="#">
                     Løsningstitel står her
                 </a>
             </div>
 
-            <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info ">
-                <!-- nav-secondary -->
+            <div class="solution-info">
 
-                <p class="h5 authority-name"> Myndighedsnavn</p>
+                <h2 class="authority-name">Myndighedsnavn</h2>
 
-                <p>Support: 12 34 56 78 <span class='d-print-none'>· <a
-                            href="javascript:void(0);" data-module="modal"
-                            data-target="modal-contact"
-                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
-                </p>
+                <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact"
+                            class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span></p>
 
             </div>
+
         </div>
     </div>
 
     <div class="overlay"></div>
-    <nav class=" nav">
-        <!-- collapsible-->
-        <button class="function-link button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+    <nav class="nav">
+
+        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><span class="weight-semibold">Anders
-                    Andersen</span><br />Forsikringens Forsikringsfirma</p>
 
-            <a href="#" class="button button-secondary button-signout">
+            <p class="user">
+
+                <strong class="username weight-semibold">Anders Andersen</strong>
+
+                <br />Forsikringens Forsikringsfirma
+            </p>
+
+            <button class="button button-secondary d-print-none mt-3">
                 Log af
-            </a>
+            </button>
         </div>
 
         <div class="solution-info-mobile">
-            <p class="bold">Myndighedsnavn</p>
-            <p>Support: 12 34 56 78 <br><a href="javascript:void(0);"
-                    data-module="modal" data-target="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a>
-            </p>
+
+            <h2 class="authority-name">Myndighedsnavn</h2>
+
+            <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact"
+                        class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span></p>
+
         </div>
-    </nav> <!-- collapsible nav end-->
+
+    </nav>
 </header>
 
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
 
-    <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
-        class="back-link">Tilbage</a>
+    <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/" class="back-link">Tilbage</a>
 
-    <form novalidate method="post"
-        action="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/">
+    <form novalidate method="post" action="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/">
         <fieldset>
             <legend>
                 <h1 class="mb-4">Bekræft oplysninger</h1>
@@ -95,65 +92,52 @@
                     <div class="row row-bordered no-gutters">
                         <div class="col-md-4 weight-semibold">Navn</div>
                         <div class="col-md-5">Karen Jensen</div>
-                        <div
-                            class="col-md-3 align-text-md-right d-print-none">
-                            <a
-                                href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
+                        <div class="col-md-3 align-text-md-right d-print-none">
+                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
                         </div>
                     </div>
                     <div class="row row-bordered no-gutters">
                         <div class="col-md-4 weight-semibold">Adresse</div>
-                        <div class="col-md-5">Vængestræde 77<br>0081 Købstad
-                        </div>
-                        <div
-                            class="col-md-3 align-text-md-right d-print-none">
-                            <a
-                                href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
+                        <div class="col-md-5">Vængestræde 77<br>0081 Købstad</div>
+                        <div class="col-md-3 align-text-md-right d-print-none">
+                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
                         </div>
                     </div>
                     <div class="row row-bordered no-gutters">
-                        <div class="col-md-4 weight-semibold">Telefonnummer
-                        </div>
+                        <div class="col-md-4 weight-semibold">Telefonnummer</div>
                         <div class="col-md-5">01 23 45 67</div>
-                        <div
-                            class="col-md-3 align-text-md-right d-print-none">
-                            <a
-                                href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
+                        <div class="col-md-3 align-text-md-right d-print-none">
+                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
                         </div>
                     </div>
                     <div class="row row-bordered no-gutters">
                         <div class="col-md-4 weight-semibold">E-mail</div>
                         <div class="col-md-5">kjensen@eksempelmail.dk</div>
-                        <div
-                            class="col-md-3 align-text-md-right d-print-none">
-                            <a
-                                href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
+                        <div class="col-md-3 align-text-md-right d-print-none">
+                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
                         </div>
                     </div>
                     <div class="row row-bordered no-gutters">
                         <div class="col-md-4 weight-semibold">Alder</div>
                         <div class="col-md-5">40-59</div>
-                        <div
-                            class="col-md-3 align-text-md-right d-print-none">
-                            <a
-                                href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
+                        <div class="col-md-3 align-text-md-right d-print-none">
+                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button type="submit"
-                class="button button-primary d-print-none mt-6">Send</button>
+            <button class="button button-primary d-print-none mt-6" type="submit">
+                Send
+            </button>
         </fieldset>
     </form>
 </main>
 
 <footer>
 
-    <a class="back-to-top-button button button-tertiary d-print-none"
-        href="#top"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
-        <span class="d-none d-md-inline-block">Til toppen</span>
-    </a>
+    <a class="back-to-top-button button button-tertiary d-print-none" href="#top"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg><span
+            class="sr-only">Til toppen</span><span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span></a>
 
     <div class="footer">
         <div class="container">
@@ -162,28 +146,21 @@
                     <section>
                         <div class=" align-text-left ">
                             <h2 class="h5 mb-4">Ansvarlig myndighed</h2>
-                            <p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø
-                            </p>
+                            <p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>
 
                         </div>
                     </section>
                 </div>
-                <div
-                    class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
+                <div class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h2 class="h5 mb-4">Webtilgængelighed og
-                                cookies</h2>
+                            <h2 class="h5 mb-4">Webtilgængelighed og cookies</h2>
 
                             <ul class=" mt-0 mb-1 nobullet-list">
 
-                                <li class=""><a href="#"
-                                        class="function-link">Tilgængelighedserklæring</a>
-                                </li>
+                                <li class=""><a href="#" class="function-link">Tilgængelighedserklæring</a></li>
 
-                                <li class=""><a href="#"
-                                        class="function-link">Privatlivspolitik
-                                        og cookies</a></li>
+                                <li class=""><a href="#" class="function-link">Privatlivspolitik og cookies</a></li>
 
                             </ul>
 
@@ -194,20 +171,13 @@
                     <section>
                         <div class=" align-text-left ">
                             <h2 class="h5 mb-4">Links</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Suspendisse mattis, felis
-                                quis vestibulum aliquet, elit ex rhoncus.
-                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>
 
                             <ul class=" d-print-none mt-0 nobullet-list">
 
-                                <li class=""><a href="#"
-                                        class="function-link">Læs lidt om
-                                        dit</a></li>
+                                <li class=""><a href="#" class="function-link">Læs lidt om dit</a></li>
 
-                                <li class=""><a href="#"
-                                        class="function-link">Her er også
-                                        lidt om dat</a></li>
+                                <li class=""><a href="#" class="function-link">Her er også lidt om dat</a></li>
 
                             </ul>
 
@@ -220,26 +190,20 @@
 
 </footer>
 
-<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-contact-title">
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-contact-heading">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="modal-title" id="modal-id-1-title">
+            <h2 class="modal-title" id="modal-contact-heading">
                 Kontakt
             </h2>
-            <button class="modal-close function-link"
-                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            <button class="modal-close function-link" data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
-            <div class="alert alert-warning" role="alert">
+
+            <div class="alert alert-warning" role="alert" aria-atomic="true">
                 <div class="alert-body">
-                    <h3 class="alert-heading">Vi har noget information af
-                        advarende karakter</h3>
-                    <p class="alert-text">Noget tekst, der forklarer det af
-                        advarende karakter, som brugeren bør vide inden
-                        denne ringer eller skriver. Noget tekst, der
-                        forklarer det af advarende karakter, som brugeren
-                        bør vide inden denne ringer eller skriver.</p>
+                    <p class="alert-heading">Vi har noget information af advarende karakter</p>
+                    <p class="alert-text">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>
                 </div>
             </div>
             <h3>En form for support</h3>
@@ -248,22 +212,19 @@
                 <li>En ting som denne</li>
                 <li>Et andet emne som dette</li>
             </ul>
-            <p>Kan du ringe direkte til: 12 34 56 78</p>
+            <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
             <p>Telefonen er åben:</p>
-            <p class="m-0">
-                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                kl. 9-17</p>
-            <p class="m-0">
-                Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl.
-                9-17</p>
-            <p class="m-0">
-                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                kl. kl. 9-14</p>
+            <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span>
+            </p>
+            <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+            <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl.
+                    9-14</span></p>
         </div>
 
         <div class="modal-footer">
-            <button class="button button-secondary"
-                data-modal-close>Luk</button>
+            <button class="button button-secondary" data-modal-close>
+                Luk
+            </button>
         </div>
 
     </div>

@@ -1,0 +1,199 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/icons/icons.njk" import icon as icon %}
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+{% block body %}
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <div class="mb-6 min">
+                {{
+                    radiobuttons({
+                        "id": "radiobuttons-min-id",
+                        "groupname": "radiobuttons-min-groupname",
+                        "radiogroupLegend": "Radioknapper med få muligheder",
+                        "items": [
+                            {
+                                "value": "option1",
+                                "label": "Mulighed 1"
+                            },
+                            {
+                                "value": "option2",
+                                "label": "Mulighed 2"
+                            },
+                            {
+                                "value": "option3",
+                                "label": "Mulighed 3"
+                            }
+                        ]
+                    })
+                }}
+            </div>
+            <div class="mb-6 max">
+                {{
+                    radiobuttons({
+                        "id": "radiobuttons-max-id",
+                        "groupname": "radiobuttons-max-groupname",
+                        "radiogroupLegend": "Radioknapper med alle muligheder",
+                        "collapsedItems": true,
+                        "classes": "test-formgroup",
+                        "optionalLabel": true,
+                        "requiredLabel": true,
+                        "helptext": "Hjælpetekst til radioknapperne",
+                        "errorMessage": "Fejlbesked til radioknapperne",
+                        "tooltip": "Tooltip til radioknapperne",
+                        "items": [
+                            {
+                                "value": "option1",
+                                "label": "Mulighed 1",
+                                "isLarge": false,
+                                "classes": {
+                                    "formgroupradio": "test-formgroupradio",
+                                    "input": "test-input",
+                                    "label": "test-label"
+                                },
+                                "srOnly": "Udfyld informationer herunder",
+                                "attributes": {
+                                    "formgroupradio": "data-test-formgroupradio",
+                                    "input": "data-test-input",
+                                    "label": "data-test-label"
+                                },
+                                "hiddenContent": textinput({ "label": "Ekstra info", "id": "radiobuttons-max-text", "name": "radiobuttons-max-text" })
+                            },
+                            {
+                                "value": "option2",
+                                "label": "Mulighed 2",
+                                "isLarge": false,
+                                "checked": true,
+                                "helptext": "Hjælpetekst til mulighed 2"
+                            },
+                            {
+                                "value": "option3",
+                                "label": "Mulighed 3",
+                                "isLarge": false,
+                                "disabled": true
+                            }
+                        ]
+                    })
+                }}
+            </div>
+            <div class="mb-6">
+                {#
+                    textinput({
+                        "label": "Dette er en label",
+                        "id": "textinput-example-plain",
+                        "name": "textinput-example-plain"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    textinput({
+                        "label": "Test af fejlbesked",
+                        "id": "textinput-example-error",
+                        "name": "textinput-example-error",
+                        "errorMessage": "Noget er fejlet",
+                        "value": "Tekst inde i tekstfeltet"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    textinput({
+                        "label": "Test af attributter og klasser",
+                        "id": "textinput-example-attribute",
+                        "name": "textinput-example-attribute",
+                        "classes": {
+                            "formgroup": "ml-5",
+                            "label": "pl-4",
+                            "input": "pl-8"
+                        },
+                        "attributes": {
+                            "formgroup": "data-test-1=\"1\"",
+                            "label": "data-test-2=\"2\"",
+                            "input": "data-test-3=\"3\""
+                        }
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    textinput({
+                        "label": "Alle ekstra tekster vist",
+                        "id": "textinput-example-extras",
+                        "name": "textinput-example-extras",
+                        "tooltip": "Dette er et tooltip",
+                        "helptext": "Dette er en hjælpetekst",
+                        "errorMessage": "Noget er fejlet",
+                        "characterLimit": 30
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    button({
+                        "variant": "primary",
+                        "text": "Gem"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    icon({
+                        "iconName": "print"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    icon({
+                        "iconName": "print",
+                        "classes": "ml-4",
+                        "ariaLabel": "Printer icon"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    icon_svg({
+                        "name": "print"
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {#
+                    icon_svg({
+                        "name": "print",
+                        "classes": "ml-5",
+                        "ariaLabel": "Another printer icon",
+                        "focusable": true,
+                        "ariaHidden": false,
+                        "tabindex": true
+                    })
+                #}
+            </div>
+            <div class="mb-6">
+                {# 
+                    datepicker({
+                        "id": "datepicker-example2-min",
+                        "name": "appointment-date2-min",
+                        "label": "Dato for aftale",
+                        "minDate": "2035-05-04"
+                    }) 
+                #}
+
+                {# 
+                    datepicker({
+                        "id": "datepicker-example2-max",
+                        "name": "appointment-date2-max",
+                        "label": "Dato for aftale",
+                        "maxDate": "2012-03-01"
+                    }) 
+                #}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

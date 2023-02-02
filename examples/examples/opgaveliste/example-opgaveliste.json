@@ -1,0 +1,57 @@
+{
+    "alert_modal_warning": {
+        "classes": "alert-warning",
+        "heading": "Vi har noget information af advarende karakter",
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.",
+        "role": "alert"
+    },
+    "portal_header_data": {
+        "compact": false,
+        "user": {
+            "name": "Anders Andersen",
+            "work": "Forsikringens Forsikringsfirma"
+        },
+        "logolink": {
+            "label": "Portalnavn",
+            "href": "#"
+        }
+    },
+    "footer_data": {
+        "topButton": {
+            "topLink": "#top"
+        },
+        "list": {
+            "items": [
+                {
+                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
+                    "hideOnPrint": true
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
+                    "hideOnPrint": true
+                }
+            ]
+        }
+    },
+    "badge_gennemfoert": {
+        "classes": "badge-small badge-success",
+        "text": "Gennemført"
+    },
+    "badge_igang": {
+        "classes": "badge-small badge-warning",
+        "text": "I gang"
+    },
+    "badge_ikke_startet": {
+        "classes": "badge-small badge-info",
+        "text": "Ikke startet"
+    }
+}

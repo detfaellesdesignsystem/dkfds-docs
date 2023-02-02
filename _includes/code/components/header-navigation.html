@@ -1,10 +1,9 @@
 <div class="overlay"></div>
-<nav class=" nav">
-    <button class="function-link button-menu-close js-menu-close"
-        title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-    <!-- 3: Main navigation-->
+<nav class="nav">
+
+    <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+
     <div class="navbar navbar-primary">
-        <!--3A: Main navigation-->
         <div class="navbar-inner container">
             <ul class="nav-primary">
                 <li>
@@ -12,8 +11,8 @@
                         <span>Første menupunkt</span>
                     </a>
                 </li>
-                <li class="current">
-                    <a href="#" class="nav-link">
+                <li class="current active">
+                    <a href="#" class="nav-link" aria-current="page">
                         <span>Andet menupunkt</span>
                     </a>
                 </li>
@@ -30,32 +29,35 @@
             </ul>
         </div>
     </div>
-    <!-- 3: Main navigation end-->
 
-    <!-- 5: Contextual actions-->
     <div class="navbar">
         <div class="navbar-inner container navbar-context-actions">
             <div class="nav-actions">
-                <a href="#"
-                    class="function-link"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#print"></use></svg>Funktionsikon</a>
+                <a href="#" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#print"></use></svg>Funktionsikon</a>
             </div>
         </div>
     </div>
-    <!-- 5: Contextual actions end-->
 
     <div class="portal-info-mobile">
-        <p class="user bold">Ida Ester Petersen</p>
-        <a href="#"
-            class="button button-secondary button-signout alert-leave">
+
+        <p class="user">
+
+            <span class="username">Anders Andersen, Forsikringens Forsikringsfirma</span>
+
+        </p>
+
+        <button class="button button-secondary d-print-none mt-3">
             Log af
-        </a>
+        </button>
     </div>
 
     <div class="solution-info-mobile">
-        <p class="h5 authority-name">Myndighedsnavn</p>
-        <p>Support: 12 34 56 78 · <a href="#"
-                class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a>
-        </p>
+
+        <h2 class="authority-name">Myndighedsnavn</h2>
+
+        <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="#"
+                    class="icon-link function-link">Kontakt<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span></p>
+
     </div>
 
 </nav>

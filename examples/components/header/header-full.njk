@@ -1,184 +1,148 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
+{% set solution_header_data = {
+    "lastHeader": false,
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "En langt langt længere løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
+    }
+} %}
 
 <header class="header">
-  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-  <!-- Start: Portal header -->
-  <div class="portal-header portal-header-compact">
-    <div class="container portal-header-inner">
-      <!-- Start: Portallogo -->
-      <a href="#" aria-label="Portalnavn" class="logo"><span class="d-none d-print-block">Portalnavn</span></a>
-      <!-- Slut: Portallogo -->
+    {{ skiplink() }}
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
 
-      <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+    <div class="overlay"></div>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        <div class="navbar navbar-primary">
+        <div class="navbar-inner container">
+            <ul class="nav-primary">
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Første menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Andet menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Tredje menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Fjerde menupunkt</span>
+                    </a>
+                </li>
+                <li class="current">
+                    <div class="overflow-menu">
+                        <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                            <span>Femte menupunkt</span>
+                        </button>
+                        <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+                            <ul class="overflow-list">
+                                <li class="active">
+                                    <a href="#" aria-current="page">Subsektion med en meget lang titel som går i flere linier</a>
+                                </li>
+                                <li>
+                                    <a href="#">Subsektiontitel</a>
+                                </li>
+                                <li>
+                                    <a href="#">Subsektiontitel</a>
+                                </li>
+                                <li>
+                                    <a href="#">Subsektiontitel som også er forholdsvis lang</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
-      <!-- Start: Persondetaljer -->
-      <div class="portal-info">
-        <p class="user">Anders Andersen, Forsikringens Forsikringsfirma</p>
-        <button href="#" class="button button-secondary d-print-none">
-          Log af
-        </button>
-      </div>
-      <!-- Slut: Persondetaljer -->
-    </div>
-  </div>
-  <!-- Slut: Portal header -->
-
-  <!-- Start: Løsningsheader -->
-  <div class="solution-header">
-      <div class="container solution-header-inner">
-        <div class="solution-heading">
-          <a href="#">En langt langt længere løsningstitel</a>
-        </div>
-
-        <!--2B: Solution header: Authority name + text -->
-        <div class="solution-info">
-            <p class="h5 authority-name">Myndighedsnavn</p>
-            <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></span></p>
-        </div>
-      </div>
-  </div>
-  <!-- Slut: Løsningsheader -->
-
-  <!-- Start: Navigation -->
-  <div class="overlay"></div>
-  <nav class=" nav">
-    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
-
-    <!-- Start: Hovedmenu -->
-    <div class="navbar navbar-primary">
-      <div class="navbar-inner container">
-        <ul class="nav-primary">
-          <li>
-            <a href="#" class="nav-link">
-                <span>Første menupunkt</span>
-            </a>
-          </li>
-          <li>
-              <a href="#" class="nav-link">
-                  <span>Andet menupunkt</span>
-              </a>
-          </li>
-          <li>
-              <a href="#" class="nav-link">
-                  <span>Tredje menupunkt</span>
-              </a>
-          </li>
-          <li>
-              <a href="#" class="nav-link">
-                  <span>Fjerde menupunkt</span>
-              </a>
-          </li>
-          <li class="current">
-            <div class="overflow-menu">
-              <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
-                <span>Femte menupunkt</span>
-              </button>
-              <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
-                <ul class="overflow-list">
-                    <li class="active">
-                      <a href="#">Subsektion med en meget lang titel som går i flere linier</a>
-                    </li>
-                    <li>
-                      <a href="#">Subsektion title</a>
-                    </li>
-                    <li>
-                      <a href="#">Subsektion title</a>
-                    </li>
-                    <li>
-                      <a href="#">Subsektion title som også er forholdsvis lang</a>
-                    </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <!-- Start: Overflow menu i navigation -->
-        <ul class="unstyled-list nav-actions">
-          <li>
-            <div class="overflow-menu overflow-menu--open-left">
-              <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow2" aria-haspopup="true" aria-expanded="false">
-                Overflow menu
-                {{ icon_svg({"name": 'arrow-drop-down'}) }}
-              </button>
-              <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
-                <ul class="overflow-list">
-                    <li><a href="#">Menupunkt 1</a></li>
-                    <li><a href="#">Et menupunkt 2</a></li>
-                    <li><a href="#">Tredje menupunkt 3</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <!-- Slut: Overflow menu i navigation -->
-      </div>
-    </div>
-    <!-- Slut: Hovedmenu -->
-
-    <!-- 4: Secondary navigation-->
-    <div class="navbar">
-      <div class="navbar-inner container">
-        <div class="nav-secondary">
-          <p class="nav-secondary-heading">Ekstra menu- og funktionslinje</p>
-          <ul class="unstyled-list nav-actions">
+            <ul class="unstyled-list nav-actions">
             <li>
-              <div class="overflow-menu overflow-menu--open-right">
-                <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow3" aria-haspopup="true" aria-expanded="false">
-                  Overflow menu
-                  {{ icon_svg({"name": 'arrow-drop-down'}) }}
+                <div class="overflow-menu overflow-menu--open-left">
+                <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow2" aria-haspopup="true" aria-expanded="false">
+                    Overflow menu
+                    {{ icon_svg({"name": 'arrow-drop-down'}) }}
                 </button>
-                <div class="overflow-menu-inner" id="headeroverflow3" aria-hidden="true">
-                  <ul class="overflow-list">
-                    <li><a href="#">Menupunkt 1</a></li>
-                    <li><a href="#">Et menupunkt 2</a></li>
-                    <li><a href="#">Tredje menupunkt 3</a></li>
-                  </ul>
+                <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li><a href="#">Menupunkt 1</a></li>
+                        <li><a href="#">Et menupunkt 2</a></li>
+                        <li><a href="#">Tredje menupunkt 3</a></li>
+                    </ul>
                 </div>
-              </div>
+                </div>
             </li>
-          </ul>
+            </ul>
+        </div>
         </div>
 
-        <ul class="unstyled-list nav-actions">
-          <li>
-            <a href="#" class="button button-tertiary">Tertiærknap</a>
-          </li>
-          <li>
-            <a href="#" class="button button-tertiary">Tertiærknap</a>
-          </li>
-          <li>
-            <a href="#" class="button button-tertiary">Tertiærknap</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- 4: Secondary header end-->
+        <div class="navbar">
+        <div class="navbar-inner container">
+            <div class="nav-secondary">
+            <p class="nav-secondary-heading">Ekstra menu- og funktionslinje</p>
+            <ul class="unstyled-list nav-actions">
+                <li>
+                <div class="overflow-menu overflow-menu--open-right">
+                    <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow3" aria-haspopup="true" aria-expanded="false">
+                    Overflow menu
+                    {{ icon_svg({"name": 'arrow-drop-down'}) }}
+                    </button>
+                    <div class="overflow-menu-inner" id="headeroverflow3" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li><a href="#">Menupunkt 1</a></li>
+                        <li><a href="#">Et menupunkt 2</a></li>
+                        <li><a href="#">Tredje menupunkt 3</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </li>
+            </ul>
+            </div>
 
-    <!-- 5: Contextual actions-->
-    <div class="navbar">
-      <div class="navbar-inner container navbar-context-actions">
-        <div class="nav-actions">
-          <a href="" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
-          <a href="" class="function-link">{{icon_svg({"name": "save"})}}Funktionsikon</a>
+            <ul class="unstyled-list nav-actions">
+            <li>
+                <a href="#" class="button button-tertiary">Tertiærknap</a>
+            </li>
+            <li>
+                <a href="#" class="button button-tertiary">Tertiærknap</a>
+            </li>
+            <li>
+                <a href="#" class="button button-tertiary">Tertiærknap</a>
+            </li>
+            </ul>
         </div>
-      </div>
-    </div>
-    <!-- 5: Contextual actions end-->
+        </div>
+        <div class="navbar">
+        <div class="navbar-inner container navbar-context-actions">
+            <div class="nav-actions">
+            <a href="" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
+            <a href="" class="function-link">{{icon_svg({"name": "save"})}}Funktionsikon</a>
+            </div>
+        </div>
+        </div>
 
-    <div class="portal-info-mobile">
-      <p class="user">Christian Emil Vestergaard Christensen</p>
-      <p>Københavns Urmager og Værksted v/Martin Elsig</p>
-      <a href="#" class="button button-secondary alert-leave" role="button">
-        Log af
-      </a>
-    </div>
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
 
-    <div class="solution-info-mobile">
-      <p class="h5 authority-name">Myndighedsnavn</p>
-      <p>Support: 12 34 56 78 · <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></p>
-    </div>
-
-  </nav>
-  <!-- Slut: Navigation -->
+    </nav>
 </header>

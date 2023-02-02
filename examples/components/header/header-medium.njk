@@ -1,92 +1,68 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
+{% set solution_header_data = {
+    "lastHeader": false,
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "En længere løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
+    }
+} %}
 
 <header class="header">
-  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-  <!--1A: Portal header -->
-  <div class="portal-header portal-header-compact">
-    <div class="container portal-header-inner">
-      <a href="#" aria-label="Portalnavn" class="logo"><span class="d-none d-print-block">Portalnavn</span></a>
-      <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+    {{ skiplink() }}
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
 
-      <!-- 1B: Portal header: info + actions-->
-      <div class="portal-info">
-        <p class="user">Anders Andersen, Forsikringens Forsikringsfirma</p>
-        <button class="button button-secondary alert-leave d-print-none">
-          Log af
-        </button>
-      </div>
-    </div>
-  </div>
-
-    <!--2A: Solution header -->
-  <div class="solution-header">
-      <div class="container solution-header-inner">
-        <div class="solution-heading">
-          <a href="#" class="alert-leave2">En længere løsningstitel</a>
+    <div class="overlay"></div>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        <div class="navbar navbar-primary">
+            <div class="navbar-inner container">
+                <ul class="nav-primary">
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Første menupunkt</span>
+                        </a>
+                    </li>
+                    <li class="current active">
+                        <a href="#" class="nav-link" aria-current="page">
+                            <span>Andet menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Tredje menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Fjerde menupunkt</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <!--2B: Solution header: Authority name + text-->
-        <div class="solution-info"> <!-- nav-secondary -->
-            <p class="h5 authority-name">Myndighedsnavn</p>
-            <p>Support: 12 34 56 78 <span class="d-print-none">· <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></span></p>
+        <div class="navbar">
+            <div class="navbar-inner container navbar-context-actions">
+                <div class="nav-actions">
+                    <a href="#" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
+                </div>
+            </div>
         </div>
-      </div>
-  </div>
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
 
-  <div class="overlay"></div>
-  <nav class=" nav"> <!-- collapsible-->
-    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
-    <!-- 3: Main navigation-->
-    <div class="navbar navbar-primary">
-      <!--3A: Main navigation-->
-      <div class="navbar-inner container">
-        <ul class="nav-primary">
-          <li>
-            <a href="#" class="nav-link">
-                <span>Første menupunkt</span>
-            </a>
-          </li>
-          <li class="current">
-              <a href="#" class="nav-link">
-                  <span>Andet menupunkt</span>
-              </a>
-          </li>
-          <li>
-              <a href="#" class="nav-link">
-                  <span>Tredje menupunkt</span>
-              </a>
-          </li>
-          <li>
-              <a href="#" class="nav-link">
-                  <span>Fjerde menupunkt</span>
-              </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- 3: Main navigation end-->
-
-    <!-- 5: Contextual actions-->
-    <div class="navbar">
-      <div class="navbar-inner container navbar-context-actions">
-        <div class="nav-actions">
-          <a href="#" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
-        </div>
-      </div>
-    </div>
-    <!-- 5: Contextual actions end-->
-
-    <div class="portal-info-mobile">
-      <p class="user bold">Anders Andersen, Forsikringens Forsikringsfirma</p>
-      <a href="#" class="button button-secondary button-signout alert-leave">
-        Log af
-      </a>
-    </div>
-
-    <div class="solution-info-mobile">
-      <p class="h5 authority-name">Myndighedsnavn</p>
-      <p>Support: 12 34 56 78 · <a href="#" class="icon-link function-link alert-leave">Kontakt<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a></p>
-    </div>
-
-  </nav> <!-- collapsible nav end-->
+    </nav>
 </header>

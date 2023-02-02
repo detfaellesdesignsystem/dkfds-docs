@@ -1,2 +1,12 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(params)}}
+
+{{
+    textinput({
+        "id": "input-readonly",
+        "name": "input-readonly",
+        "label": "Inputfelt som er readonly",
+        "value": "012345-6789",
+        "readonly": true,
+        "required": false
+    })
+}}

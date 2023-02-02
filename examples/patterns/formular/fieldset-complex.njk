@@ -1,5 +1,5 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
@@ -7,40 +7,39 @@
 <h1 class="h2">Dine kontaktoplysninger</h1>
 <form novalidate>
     {{textinput({
-        "id":"fnavn",
-        "label": {
-            "text":"Fornavn"
-            },
-        "name":"fnavn"})}}
+        "id": "fnavn",
+        "label": "Fornavn",
+        "name": "fnavn"})}}
     {{textinput({
-        "name":"enavn", 
-        "label": {
-            "text":"Efternavn"
-            },
-        "id":"enavn"})}}
+        "name": "enavn", 
+        "label": "Efternavn",
+        "id": "enavn"})}}
     {{textinput({
         "id":"fieldset-email",
-        "label":{
-            "text":"E-mail adresse"
-            },
+        "label":"E-mail adresse",
         "name":"email"})}}
     {{textinput({
         "id":"fieldset-telefon",
-        "label": {
-            "text":"Telefonnummer"
-            },
-        "classes":"input-width-s",
+        "label": "Telefonnummer",
+        "classes": { "input": "input-width-s" },
         "name":"telefon"})}}
 
-    <div class="form-group">
-        <fieldset>
-            <legend class="form-label">Hvordan vil du helst kontaktes?</legend>
-            <ul class="nobullet-list">
-              <li>{{ radiobutton(radiobutton_telefon) }}</li>
-              <li>{{ radiobutton(radiobutton_email) }}</li>
-            </ul>
-        </fieldset>
-    </div>
+    {{ radiobuttons({
+            "id": "kontakt",
+            "radiogroupLegend": "Hvordan vil du helst kontaktes?",
+            "groupname": "kontakt",
+            "items": [
+                {
+                    "value": "telefon",
+                    "label": "Pr. telefon"
+                },
+                {
+                    "value": "email",
+                    "label": "Pr. e-mail"
+                }
+            ]
+        })
+    }}
     <div class="form-group">
         <fieldset>
             <legend class="form-label">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</legend>
@@ -82,15 +81,22 @@
             <!-- Felt slut: Fødselsdato -->
 
             <!-- Felt start: Odense -->
-            <div class="form-group">
-                <fieldset>
-                    <legend class="h5">Bor du i Odense?</legend>
-                    <ul class="nobullet-list">
-                      <li>{{ radiobutton(radiobutton_odense_ja) }}</li>
-                      <li>{{ radiobutton(radiobutton_odense_nej) }}</li>
-                    </ul>
-                </fieldset>
-            </div>
+            {{ radiobuttons({
+                    "id": "odense",
+                    "radiogroupLegend": "Bor du i Odense?",
+                    "groupname": "odense",
+                    "items": [
+                        {
+                            "value": "ja",
+                            "label": "Ja"
+                        },
+                        {
+                            "value": "nej",
+                            "label": "Nej"
+                        }
+                    ]
+                })
+            }}
             <!-- Felt slut: Odense -->
         </fieldset>
     </div>
@@ -98,6 +104,7 @@
     <!-- Knap start -->
     {{ button({
         "text":"Gem oplysninger",
-        "classes": "primary mt-9"}) }}
+        "variant":"primary",
+        "classes": "mt-9"}) }}
     <!-- Knap slut -->
 </form>

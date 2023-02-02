@@ -3,9 +3,7 @@
     "name": "options-error",
     "id": "options-error",
     "errorMessage": "Vælg en mulighed",
-    "label": {
-      "text": "Dropdown (select)"
-    },
+    "label": "Dropdown (select)",
     "options": [
       {
         "value": "option1",

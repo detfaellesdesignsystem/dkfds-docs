@@ -12,17 +12,15 @@ description: "Radioknapper giver brugeren mulighed for at vælge en enkelt værd
 tags:
 subnav:
 - text: Hjælpetekst
-  href: '#hjælpetekst'
+  href: '#hjaelpetekst'
 - text: Fejlmeddelelse
   href: '#fejlmeddelelse'
 - text: Lille radioknap
   href: '#lille-radioknap'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold-collapse'
-component: radiobutton-large
-componentTitle: Eksempel på radioknapper
-componentCode: "/kode/komponenter/radioknap/"
 ---
+{% include code/preview-box.html component="radiobutton" title="Eksempel på radioknapper" link=true code="/kode/komponenter/radioknap/" %}
 
 {:.h3 #retningslinjer}
 ## Anvendes til
@@ -75,4 +73,37 @@ Der bør være en overordnet label for hele listen af radioknapper
 - <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Oplysninger om ansøger'">Trinformular til ansøgning: Oplysninger om ansøger</a>
 - <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
 
-{% include child-components.html parent='Radiobutton' %}
+{:#hjaelpetekst}
+## Hjælpetekst
+{% include code/preview-box.html component="radiobutton-helptext" title="Eksempel på radioknapper med hjælpetekst" %}
+
+{:#fejlmeddelelse}
+## Fejlmeddelelse
+<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+
+{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
+
+{:#lille-radioknap}
+## Lille radioknap
+{% include code/preview-box.html component="radiobutton-small" title="Eksempel på små radioknapper" %}
+
+{:#skjult-indhold-collapse}
+## Skjult indhold (Collapse)
+{% include code/preview-box.html component="radio-collapse" title="Eksempel på radioknapper med skjult indhold" %}
+
+{:#collapse-retningslinjer}
+### Anvendes til
+Anvendes til at vise et ekstra felt relevant for brugerens valg, fx kan du vise et e-mailfelt, når brugeren vælger at ville kontaktes pr. e-mail.
+
+### Anvendes ikke til
+Anvendes ikke til at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.
+
+### Vejledning                
+Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.
+
+{% include dos-donts-box.html component="details-dos-donts" title="Radioknap med skjul/vis do's and don'ts" %}
+
+#### Referencer
+<a href="https://www.nngroup.com/articles/interaction-cost-definition/" class="icon-link">Raluca Budiu: Interaction Cost (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

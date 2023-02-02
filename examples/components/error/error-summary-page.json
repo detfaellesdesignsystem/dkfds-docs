@@ -23,11 +23,9 @@
     }
   },
   "textinput_example": {
-    "id": "example-name",
-    "label": {
-      "text":"Hvad er dit fulde navn?"
-    },
-    "name": "form-error",
+    "id": "example-name-error",
+    "name": "example-name-error",
+    "label": "Hvad er dit fulde navn?",
     "errorMessage": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen"
   },
   "checkbox_error_examples": {

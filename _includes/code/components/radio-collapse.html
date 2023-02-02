@@ -1,63 +1,78 @@
-<div class="js-radio-toggle-group">
-    <fieldset>
-        <legend class="form-label">Vælg en radioknap</legend>
-        <ul class="nobullet-list">
-            <li>
-                <div class="form-group-radio">
-                    <input id="id-radio1" type="radio" name="radio-group1"
-                        value="1" class="form-radio radio-large " checked
-                        data-controls="#collapse-radio1"
-                        data-expanded="false" />
-                    <label for="id-radio1" id="form-label-id-radio1"
-                        class="">Radioknap viser indhold <span
-                            class="sr-only">Udfyld informationer
-                            herunder</span></label>
+<div class="form-group
+        
+        
+         js-radio-toggle-group">
+    <fieldset role="radiogroup">
+        <legend class="form-label">
+            Vælg en radioknap
 
-                </div>
+        </legend>
 
-                <div id="collapse-radio1" aria-hidden="true"
-                    class="radio-content radio-content-large">
-                    <div class="form-group">
+        <div class="form-group-radio
+    ">
 
-                        <label class="form-label" for="textinput1">
-                            Inputfelt med label
-                        </label>
+            <input type="radio" id="radiogroup-collapse-option1" name="radio-collapse" class="form-radio
+             radio-large
+            " value="1" checked data-controls="#radiogroup-collapse-option1-collapse" data-expanded="true">
 
-                        <input class="form-input input-width-m"
-                            id="textinput1" name="text1" type="text"
-                            required />
+            <label class="form-label" for="radiogroup-collapse-option1">
+                Radioknap viser indhold
 
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="form-group-radio">
-                    <input id="id-radio2" type="radio" name="radio-group1"
-                        value="2" class="form-radio radio-large "
-                        data-controls="#collapse-radio2"
-                        data-expanded="false" />
-                    <label for="id-radio2" id="form-label-id-radio2"
-                        class="">Radioknap viser andet indhold <span
-                            class="sr-only">Udfyld informationer
-                            herunder</span></label>
+                <span class="sr-only"> Udfyld informationer herunder</span>
+            </label>
 
-                </div>
+        </div>
 
-                <div id="collapse-radio2" aria-hidden="true"
-                    class="radio-content radio-content-large">
-                    <div class="form-group">
+        <div id="radiogroup-collapse-option1-collapse" aria-hidden="false" class="radio-content">
 
-                        <label class="form-label" for="textinput2">
-                            Inputfelt med anden label
-                        </label>
+            <div class="form-group
+        
+        
+        ">
 
-                        <input class="form-input input-width-m"
-                            id="textinput2" name="text2" type="text"
-                            required />
+                <label class="form-label" for="textinput1">
+                    Inputfelt med label
 
-                    </div>
-                </div>
-            </li>
-        </ul>
+                </label>
+
+                <input type="text" id="textinput1" name="text1" class="form-input input-width-m" required>
+
+            </div>
+
+        </div>
+
+        <div class="form-group-radio
+    ">
+
+            <input type="radio" id="radiogroup-collapse-option2" name="radio-collapse" class="form-radio
+             radio-large
+            " value="2" data-controls="#radiogroup-collapse-option2-collapse" data-expanded="false">
+
+            <label class="form-label" for="radiogroup-collapse-option2">
+                Radioknap viser andet indhold
+
+                <span class="sr-only"> Udfyld informationer herunder</span>
+            </label>
+
+        </div>
+
+        <div id="radiogroup-collapse-option2-collapse" aria-hidden="true" class="radio-content">
+
+            <div class="form-group
+        
+        
+        ">
+
+                <label class="form-label" for="textinput2">
+                    Inputfelt med anden label
+
+                </label>
+
+                <input type="text" id="textinput2" name="text2" class="form-input input-width-m" required>
+
+            </div>
+
+        </div>
+
     </fieldset>
 </div>

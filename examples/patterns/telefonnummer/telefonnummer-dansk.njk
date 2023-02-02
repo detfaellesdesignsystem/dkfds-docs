@@ -1,2 +1,12 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(textinput_example)}}
+
+{{
+    textinput({
+        "id": "input-phonenumber-danish",
+        "name": "input-phonenumber-danish",
+        "label": "Dansk telefonnummer",
+        "type": "tel",
+        "classes": { "input": "input-width-xs" },
+        "autocomplete": "tel"
+    })
+}}

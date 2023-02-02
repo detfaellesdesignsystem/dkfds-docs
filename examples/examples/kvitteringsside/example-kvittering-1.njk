@@ -1,147 +1,196 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/table/table.njk" import table as table %}
+
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Registrer et eller andet"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-print-none">· <a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
 
 {% block header %}
-    <header class="header">
-      <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+<header class="header">
+    <div id="top"></div>
+    {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
-
     <div class="overlay"></div>
-    <nav class=" nav"> <!-- collapsible-->
-      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
-
-      <div class="portal-info-mobile">
-        <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
-
-        <a href="#" class="button button-secondary button-signout">
-          Log af
-        </a>
-      </div>
-
-      <div class="solution-info-mobile">
-        <p class="bold">Myndighedsnavn</p>
-        <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
-      </div>
-    </nav> <!-- collapsible nav end-->
-  </header>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
+</header>
 {% endblock %}
 
 {% block body %}
-  <main class="container page-container" id="main-content">
+<main class="container page-container" id="main-content">
     {{ alert(alert_receipt) }}
     <h1 class="mb-6 mt-6">Kvittering</h1>
     <p class="font-lead">Nedenfor finder du dine indtastninger fra de foregående sider.</p>
     {{ button(button_print) }}
     <h2>Dine oplysninger</h2>
-      <h3>Vælg personer</h3>
-      <div class="table--responsive-scroll">
-        <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
-            <thead>
-                <tr>
-                  <th>Person</th>
-                  <th>CPR-nummer</th>
-                </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-title="Person">Jens Jensen</td>
-                <td data-title="CPR-nummer">123456-7890</td>
-              </tr>
-              <tr>
-                <td data-title="Person">Keld Hedagaardsen</td>
-                <td data-title="CPR-nummer">230495-1111</td>
-              </tr>
-              <tr>
-                <td data-title="Person">Anni Hedagaardsen</td>
-                <td data-title="CPR-nummer">120394-2222</td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
-      <h3>Vælg noget mere</h3>
-      <div class="table--responsive-scroll">
-        <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
-            <thead>
-                <tr>
-                  <th>Nummer</th>
-                  <th>Dato</th>
-                  <th>Information</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td data-title="Nummer">123456789</td>
-                  <td data-title="Dato">01.01.2021</td>
-                  <td data-title="Information">Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td data-title="Nummer">123456789</td>
-                  <td data-title="Dato">01.01.2021</td>
-                  <td data-title="Information">Lorem ipsum dolor sit</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-      <h3>Vedhæft dokumenter</h3>
-      <table class="table table--borderless table--responsive-headers w-percent-md-60 mt-4 mb-7">
-        <thead>
-            <tr>
-              <th>Vedhæftet</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</a></td>
-            </tr>
-            <tr>
-              <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Kopi-af-dokument-x.pdf</a></td>
-          </tr>
-        </tbody>
-    </table>
-      <h3>Tidligere registrering</h3>
-      <div class="w-percent-md-60 mt-6 mb-7">
+    <h3>Vælg personer</h3>
+    {{
+        table({
+            "tableClasses": "w-percent-md-60 mt-4 mb-7 d-print-table",
+            "borderless": true,
+            "responsive": true,
+            "thead": [
+                { "headerContent": "Person" },
+                { "headerContent": "CPR-nummer" }
+            ],
+            "tbody": [
+                [
+                    { "content": "Jens Jensen" },
+                    { "content": "123456-7890" }
+                ],
+                [
+                    { "content": "Keld Hedagaardsen" },
+                    { "content": "230495-1111" }
+                ],
+                [
+                    { "content": "Anni Hedagaardsen" },
+                    { "content": "120394-2222" }
+                ]
+            ]
+        })
+    }}
+
+    <h3>Vælg noget mere</h3>
+    {{
+        table({
+            "tableClasses": "w-percent-md-60 mt-4 mb-7 d-print-table",
+            "borderless": true,
+            "responsive": true,
+            "thead": [
+                    { "headerContent": "Nummer" },
+                    { "headerContent": "Dato" },
+                    { "headerContent": "Information" }
+                ],
+            "tbody": [
+                [
+                    { "content": "123456789" },
+                    { "content": "01.01.2021" },
+                    { "content": "Lorem ipsum dolor sit" }
+                ],
+                [
+                    { "content": "123456789" },
+                    { "content": "01.01.2021" },
+                    { "content": "Lorem ipsum dolor sit" }
+                ]
+            ]
+        })
+    }}
+
+    <h3>Vedhæft dokumenter</h3>
+    {% set exampleDocumentLink1 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Journal.pdf</a>' %}
+    {% set exampleDocumentLink2 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Kopi-af-dokument-x.pdf</a>' %}
+    {{
+        table({
+            "tableClasses": "w-percent-md-60 mt-4 mb-7 d-print-table",
+            "borderless": true,
+            "responsive": true,
+            "thead": [
+                { "headerContent": "Vedhæftet dokument" }
+            ],
+            "tbody": [
+                [
+                    { "content": exampleDocumentLink1 }
+                ],
+                [
+                    { "content": exampleDocumentLink2 }
+                ]
+            ]
+        })
+    }}
+
+    <h3>Tidligere registrering</h3>
+    <div class="w-percent-md-60 mt-6 mb-7">
         {% for row in tidligere_registrering %}
         <div class="row row-bordered no-gutters">
-          <div class="col-12 col-md-8 weight-semibold">
-              {{ row.label }}
-          </div>
-          <div class="col-12 col-md-2">
-              {{ row.value }}
-          </div>
+            <div class="col-12 col-md-8 weight-semibold">
+                {{ row.label }}
+            </div>
+            <div class="col-12 col-md-2">
+                {{ row.value }}
+            </div>
         </div>
         {% endfor %}
-      </div>
-      <h3>Kontaktoplysninger</h3>
-      <div class="w-percent-md-60 mt-6 mb-7">
+    </div>
+    <h3>Kontaktoplysninger</h3>
+    <div class="w-percent-md-60 mt-6 mb-7">
         {% for row in kontaktoplysninger %}
         <div class="row row-bordered no-gutters">
-          <div class="col-12 col-md-4 weight-semibold">
-              {{ row.label }}
-          </div>
-          <div class="col-12 col-md-6">
-              {{ row.value }}
-          </div>
+            <div class="col-12 col-md-4 weight-semibold">
+                {{ row.label }}
+            </div>
+            <div class="col-12 col-md-6">
+                {{ row.value }}
+            </div>
         </div>
         {% endfor %}
-      </div>
-      {{ button(button_done) }}
-  </main>
-  
-{% endblock %}
-
-{% block banner -%}
+    </div>
+    {{ button(button_done) }}
+</main>
 {% endblock %}
 
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
-{{ modal(modal_data) }}
+{{
+    modal({
+        "id": "modal-contact",
+        "heading": "Kontakt",
+        "content": modal_content,
+        "forcedAction": false,
+        "actions": modal_actions
+    })
+}}

@@ -14,8 +14,6 @@ anchor: true
 subnav:
 - text: Responsiv
   href: "#responsiv"
-- text: Klikbar
-  href: "#klikbar"
 - text: Låst
   href: "#laast"
 - text: Ekstra information
@@ -50,10 +48,6 @@ Nedenstående varianter implementeres i et grid på samme måde som <a href="/ko
 {:#responsiv}
 ### Responsiv
 {% include code/syntax.html component="tringuide-responsive-overflowmenu" link="true" %}
-
-{:#klikbar}
-### Klikbar
-{% include code/syntax.html component="tringuide-clickable" link="true" %}
 
 {:#laast}
 ### Låst

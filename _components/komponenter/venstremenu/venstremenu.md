@@ -28,7 +28,6 @@ componentCode: "/kode/komponenter/venstremenu/"
 
 ---
 {:.h3 #retningslinjer}
-
 ## Anvendes til
 
 Venstremenu anvendes til at afspejle et navigationshierarki i op til tre niveauer.
@@ -36,7 +35,6 @@ Venstremenu anvendes til at afspejle et navigationshierarki i op til tre niveaue
 Venstremenu anvendes til den sekundære navigation/undermenu på en side i en større løsning.
 
 {:.h3}
-
 ## Anvendes ikke til
 
 Venstremenu bør ikke anvendes på mindre løsninger (mindre end 5 sider).
@@ -44,7 +42,6 @@ Venstremenu bør ikke anvendes på mindre løsninger (mindre end 5 sider).
 Hvis din løsning allerede har topmenu og evt. tilknyttet dropdown, bør du overveje at forenkle din navigation før du vælger en venstremenu.
 
 {:.h3}
-
 ## Vejledning
 
 Markér det aktive punkt (”der hvor brugeren er”) i venstremenuen.
@@ -58,7 +55,6 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 {% include dos-donts-box.html component="sidenav-dos-donts" title="Venstremenu do's and don'ts" %}
 
 {:.h4}
-
 ### Referencer
 
 <a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

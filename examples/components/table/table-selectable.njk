@@ -1,3 +1,40 @@
 {% from "components/table/table.njk" import table as table %}
-{% from "components/buttons/buttons.njk" import button as button %}
-{{table(data)}}
+
+{{ 
+    table({
+        "selectable": true,
+        "id": "selectable-table1",
+        "thead": [
+            { "headerContent": "Affaldstype" },
+            { "headerContent": "Farvekode" },
+            { "headerContent": "Beskrivelse" },
+            { "headerContent": "Hvor ender det?" }
+        ],
+        "tbody": [
+            [
+                { "content": "Dagrenovation" },
+                { "content": "Grøn" },
+                { "content": "Madaffald, samt papir, pap eller plastik der ikke kan genanvendes, fordi der er madrester eller andet snask på." },
+                { "content": "Alt det affald, du smider ud i din primære skraldespand, som er dagrenovationen, bliver hentet og kørt på forbrændingen." }
+            ],
+            [
+                { "content": "Bioaffald og kompost" },
+                { "content": "Beige" },
+                { "content": "Alt madaffald uden fødevareemballage." },
+                { "content": "Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret til muld." }
+            ],
+            [
+                { "content": "Glas" },
+                { "content": "Hvid" },
+                { "content": "Alle typer glas og flasker." },
+                { "content": "De hele vinflasker rengøres og genbruges af vinhuse, mens glasskårene bliver smeltet om til nyt glas." }
+            ],
+            [
+                { "content": "Elektronik" },
+                { "content": "Orange" },
+                { "content": "Genstande der har brugt strøm." },
+                { "content": "Det elektroniske affald bliver typisk kørt til et demonteringsanlæg, hvor det bliver skilt ad, så de forskellige dele kan genanvendes separat." }
+            ]
+        ]
+    })
+}}
