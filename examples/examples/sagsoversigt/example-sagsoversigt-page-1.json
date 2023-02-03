@@ -100,12 +100,18 @@
         "name": "searchtable"
     },
     "badge_under_behandling": {
-        "classes": "badge-small badge-warning",
-        "text": "Under behandling"
+        "text": "Under behandling",
+        "variant": {
+            "size": "small",
+            "status": "warning"
+        }
     },
     "badge_afsluttet": {
-        "classes": "badge-small badge-success",
-        "text": "Afsluttet"
+        "text": "Afsluttet",
+        "variant": {
+            "size": "small",
+            "status": "success"
+        }
     },
     "details_tabel": {
         "summary": "Der er en sag, jeg ikke kan finde",
@@ -121,7 +127,7 @@
         "headingLevel": "h4",
         "text": "Ansøgning om adgang til sagsnr. 20200000012.",
         "actionButtons": "<button class=\"button button-tertiary\">Annuller anmodning</button>",
-        "content": "<span class='badge badge-small badge-info ml-5'>Afventer godkendelse</span>",
+        "content": "<strong class='badge badge-small badge-info ml-5'>Afventer godkendelse</strong>",
         "order": [
             "header",
             "text",

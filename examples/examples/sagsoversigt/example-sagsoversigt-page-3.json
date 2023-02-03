@@ -136,24 +136,36 @@
         "role": "alert"
     },
     "badge_afsluttet": {
-        "classes": "badge-small badge-info",
-        "text": "Afsluttet"
+        "text": "Afsluttet",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
     },
     "details_anerkendelse": {
         "summary": "Læs om vurdering af anerkendelse",
         "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
     },
     "badge_myndighed": {
-        "classes": "badge-small badge-info",
-        "text": "Sendt til <Myndighed>"
+        "text": "Sendt til <Myndighed>",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
     },
     "badge_selskab": {
-        "classes": "badge-small badge-info",
-        "text": "Påklaget af forsikringsselskab ABC"
+        "text": "Påklaget af forsikringsselskab ABC",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
     },
     "badge_navn": {
-        "classes": "badge-small badge-info",
-        "text": "Påklaget af Kim Nielsen"
+        "text": "Påklaget af Kim Nielsen",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
     },
     "details_afgoerelse_X": {
         "summary": "Læs om vurdering X",
@@ -164,8 +176,11 @@
         "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
     },
     "badge_ikke_afgjort": {
-        "classes": "badge-small badge-info",
-        "text": "Ikke afgjort"
+        "text": "Ikke afgjort",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
     },
     "details_sagsudgifter": {
         "summary": "Læs om vurdering af sagsudgifter",

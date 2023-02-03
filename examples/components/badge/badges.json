@@ -1,14 +1,20 @@
 {
-  "badge_example": {
-    "items": [
-      {
-        "classes": "badge-large",
-        "text": "Stort badge"
-      },
-      {
-        "classes": "badge-small",
-        "text": "Lille badge"
-      }
-    ]
-  }
+    "badge_example": {
+        "items": [
+            {
+                "text": "Stort badge",
+                "variant": {
+                    "size": "large",
+                    "status": "none"
+                }
+            },
+            {
+                "text": "Lille badge",
+                "variant": {
+                    "size": "small",
+                    "status": "none"
+                }
+            }
+        ]
+    }
 }

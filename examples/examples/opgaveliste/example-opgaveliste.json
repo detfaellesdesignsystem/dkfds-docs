@@ -43,15 +43,24 @@
         }
     },
     "badge_gennemfoert": {
-        "classes": "badge-small badge-success",
-        "text": "Gennemført"
+        "text": "Gennemført",
+        "variant": {
+            "size": "small",
+            "status": "success"
+        }
     },
     "badge_igang": {
-        "classes": "badge-small badge-warning",
-        "text": "I gang"
+        "text": "I gang",
+        "variant": {
+            "size": "small",
+            "status": "warning"
+        }
     },
     "badge_ikke_startet": {
-        "classes": "badge-small badge-info",
-        "text": "Ikke startet"
+        "text": "Ikke startet",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
     }
 }

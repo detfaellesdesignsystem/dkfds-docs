@@ -4460,11 +4460,13 @@
     </div>
 </div>
 
-<p>Alle badges skal have en <code>badge</code> class på <code>&lt;label&gt;&lt;/label&gt;</code> elementet.</p>
+<p>Alle badges skal have en <code>badge</code> klasse på <code>&lt;span&gt;</code>-elementet.</p>
+
+<p>Hvis et badge anvendes til særlig fræmhævning af et ord i en kontekst, for eksempel når nyt indhold markeres på en side, anvend da et <code>&lt;strong&gt;</code>-element i stedet for <code>&lt;span&gt;</code>.</p>
 
 <h2>Tilgængelighed</h2>
 
-<p>Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tastaturet navigerer sig frem til dem.</p>
+<p>Interaktive badges bliver automatisk markeret, når brugere ved hjælp af tastaturet navigerer sig frem til dem.</p>
 
 <p>Du skal anvende ARIA live regions til at gøre skærmlæsere opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.</p>
 
@@ -4481,10 +4483,10 @@
 <p>Statusbadges har 4 forskellige farver og formål:</p>
 
 <ul>
-  <li><label class="badge badge-small badge-success">Grøn</label>, som er succesfarven og implementeres med klassen <code>badge-success</code>.</li>
-  <li><label class="badge badge-small badge-info">Blå</label>, som er informationsfarven og implementeres med klassen <code>badge-info</code>.</li>
-  <li><label class="badge badge-small badge-warning">Gul</label>, som er advarselsfarven og implementeres med klassen <code>badge-warning</code>.</li>
-  <li><label class="badge badge-small badge-error">Rød</label>, som er fejlfarven og implementeres med klassen <code>badge-error</code>.</li>
+  <li><strong class="badge badge-small badge-success">Grøn</strong>, som er succesfarven og implementeres med klassen <code>badge-success</code>.</li>
+  <li><strong class="badge badge-small badge-info">Blå</strong>, som er informationsfarven og implementeres med klassen <code>badge-info</code>.</li>
+  <li><strong class="badge badge-small badge-warning">Gul</strong>, som er advarselsfarven og implementeres med klassen <code>badge-warning</code>.</li>
+  <li><strong class="badge badge-small badge-error">Rød</strong>, som er fejlfarven og implementeres med klassen <code>badge-error</code>.</li>
 </ul>
 
 <p>Se eksempel på anvendelse af statusbadges i vores <a href="/faellesskab/releases/">release notes</a>.</p>

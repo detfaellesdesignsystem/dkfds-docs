@@ -102,8 +102,11 @@
         "role": "alert"
     },
     "badge_under_behandling": {
-        "classes": "badge-small badge-warning",
-        "text": "Under behandling"
+        "text": "Under behandling",
+        "variant": {
+            "size": "small",
+            "status": "warning"
+        }
     },
     "button_myndigheden": {
         "text": "Skriv til <Myndigheden>",
