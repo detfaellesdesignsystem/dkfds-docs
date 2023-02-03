@@ -1,2 +1,17 @@
 {% from "components/accordion/accordion.njk" import accordion as accordion %}
-{{ accordion(accordion_error_example) }}
+
+{{ 
+    accordion({
+        "headingLevel": "h3",
+        "items": [
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "id": "error-example-accordion",
+                variant: "error",
+                "errorMessage": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+                "expanded": true,
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            }
+        ]
+    }) 
+}}

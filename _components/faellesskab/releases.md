@@ -171,6 +171,7 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 
 <h3 class="h4">Øvrige</h3>
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl i <a href="/komponenter/fejlmeddelelser/#accordions">accordioneksempel</a>, hvor fejlbeskedens `id` ikke var korrekt sat for skærmlæsere.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret beskrivelsen af <a href="/kode/komponenter/badges/">badges</a>, der enten skal anvendes med `span` eller `strong`.
 - Fjernet `jsnext:main` fra <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.

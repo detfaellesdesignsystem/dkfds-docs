@@ -145,7 +145,7 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 {:.h3 #accordions}
 ## Accordions
 
-{% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" %}
+{% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" link="true" code="/kode/komponenter/fejlmeddelelser/#accordions" %}
 
 {:.h3 #datofelter}
 ## Datofelter

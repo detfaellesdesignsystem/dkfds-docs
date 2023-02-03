@@ -14,15 +14,14 @@ lead: En accordion er et grafisk element, som du kan bruge til at skjule og vise
 anchor: true
 subnav:
 - text: Åbn/luk alle
-  href: "#åbn-luk-alle"
+  href: "#aabn-luk-alle"
 - text: Med fejl
   href: "#med-fejl"
 - text: Med succesbeskeder
   href: "#med-succesbeskeder"
-component: accordion
-componentTitle: Eksempel på accordion
-componentCode: "/kode/komponenter/accordions/"
 ---
+{% include code/preview-box.html component="accordion" title="Eksempel på accordion" link=true code="/kode/komponenter/accordions/" %}
+
 ## Anvendes til  
 {: .h3 #retningslinjer}
 
@@ -48,7 +47,6 @@ Overvej at lade den accordion, som har det vigtigste indhold, være foldet ud, n
 
 Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere spiselig. Overvej om det er nødvendigt at kollapse indhold og hvorfor, det er det. Hvis indholdet er unødigt langt eller uoverskueligt, bør du i stedet omformulere teksten og eventuelt fordele den på flere sider.
 
-
 {% include dos-donts-box.html component="accordion-dos-donts" title="Accordion do's and don'ts" %}
 
 {:.h4}
@@ -58,4 +56,21 @@ Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere s
 - <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-{% include child-components.html parent='Accordions' %}
+{:#aabn-luk-alle}
+## Åbn/luk alle
+
+{% include code/preview-box.html component="accordion-bulk-open" title="Eksempel på accordions med åbn alle funktion" %}
+
+{:#med-fejl}
+## Med fejl
+
+<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+
+{% include code/preview-box.html component="accordion-error" title="Eksempel på accordion med fejl" %}
+
+{:#med-succesbeskeder}
+## Med succesbeskeder
+
+{% include code/preview-box.html component="accordion-success" title="Eksempel på accordion med succesbesked" %}

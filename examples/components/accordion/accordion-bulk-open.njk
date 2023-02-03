@@ -1,2 +1,35 @@
 {% from "components/accordion/accordion.njk" import accordion as accordion %}
-<div>{{ accordion(accordion_example) }}</div>
+
+{{ 
+    accordion({
+        "openCloseButton": true,
+        "headingLevel": "h3",
+        "items": [
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "id": "ao1",
+                "variant": "none",
+                "expanded": true,
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            },
+            {
+                "title": "Consectetur adipiscing elit",
+                "id": "ao2",
+                "variant": "none",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            },
+            {
+                "title": "Sed do eiusmod tempor",
+                "id": "ao3",
+                "variant": "none",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            },
+            {
+                "title": "Labore et dolore magna",
+                "id": "ao4",
+                "variant": "none",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            }
+        ]
+    }) 
+}}
