@@ -33,8 +33,6 @@ Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere
     - Dag input: `.js-calendar-day-input`
     - Måned input: `.js-calendar-month-input`
     - År input: `.js-calendar-year-input`
-- Ved fejl, tilføj da en hjælpsom fejlmeddelelse over felterne i elementet `<span class="form-error-message" id="form-error-message-input-error" role="alert">`. 
-- Tilføj klassen `form-error` på `form-group` `div` elementet, når der vises en fejlmeddelelse.
 
 
 ### Javascript
@@ -45,3 +43,9 @@ new InputRegexMask(document.getElementById('DAY-INPUT-ID'));
 new InputRegexMask(document.getElementById('MONTH-INPUT-ID'));
 new InputRegexMask(document.getElementById('YEAR-INPUT-ID'));
 {% endhighlight %}
+
+{:#fejlmeddelelse}
+## Fejlmeddelelse
+<a href="/kode/komponenter/fejlmeddelelser/#datofelter">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/kode/komponenter/fejlopsummering/">fejlopsummering</a>.

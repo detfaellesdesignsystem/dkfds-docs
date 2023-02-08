@@ -227,57 +227,29 @@
         <h1 class="h2">Dine kontaktoplysninger</h1>
 <form novalidate="">
 
-    <div class="form-group
-        
-        
-        ">
-
-        <label class="form-label" for="fnavn">
-            Fornavn
-
-        </label>
+    <div class="form-group">
+        <label class="form-label" for="fnavn">Fornavn</label>
 
         <input type="text" id="fnavn" name="fnavn" class="form-input" required="" />
 
     </div>
 
-    <div class="form-group
-        
-        
-        ">
-
-        <label class="form-label" for="enavn">
-            Efternavn
-
-        </label>
+    <div class="form-group">
+        <label class="form-label" for="enavn">Efternavn</label>
 
         <input type="text" id="enavn" name="enavn" class="form-input" required="" />
 
     </div>
 
-    <div class="form-group
-        
-        
-        ">
-
-        <label class="form-label" for="fieldset-email">
-            E-mail adresse
-
-        </label>
+    <div class="form-group">
+        <label class="form-label" for="fieldset-email">E-mail adresse</label>
 
         <input type="text" id="fieldset-email" name="email" class="form-input" required="" />
 
     </div>
 
-    <div class="form-group
-        
-        
-        ">
-
-        <label class="form-label" for="fieldset-telefon">
-            Telefonnummer
-
-        </label>
+    <div class="form-group">
+        <label class="form-label" for="fieldset-telefon">Telefonnummer</label>
 
         <input type="text" id="fieldset-telefon" name="telefon" class="form-input input-width-s" required="" />
 
@@ -300,10 +272,7 @@
              radio-large
             " value="telefon" />
 
-                <label class="form-label" for="kontakt-option1">
-                    Pr. telefon
-
-                </label>
+                <label class="form-label" for="kontakt-option1">Pr. telefon</label>
 
             </div>
 
@@ -314,10 +283,7 @@
              radio-large
             " value="email" />
 
-                <label class="form-label" for="kontakt-option2">
-                    Pr. e-mail
-
-                </label>
+                <label class="form-label" for="kontakt-option2">Pr. e-mail</label>
 
             </div>
 
@@ -326,7 +292,8 @@
 
     <div class="form-group">
         <fieldset>
-            <legend class="form-label">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</legend>
+            <legend class="form-label">Hvornår på dagen vil det passe bedst, at vi kontakter
+                dig?</legend>
             <ul class="nobullet-list">
                 <li>
                     <input id="checkbox-morgen" type="checkbox" name="tidspunkt[]" value="morgen" class="form-checkbox checkbox-large " />
@@ -353,23 +320,32 @@
 
             <!-- Felt start: Fødselsdato -->
 
-            <div class="form-group  mt-0">
-                <fieldset aria-describedby="example-date-field-hint ">
-                    <legend class="form-label">Fødselsdato</legend>
-                    <span class="form-hint" id="example-date-field-hint">For eksempel: 05 12 1987</span>
+            <div class="form-group mt-0">
+                <fieldset aria-describedby="-hint ">
+                    <legend class="form-label"></legend>
+                    <span class="form-hint" id="-hint">For eksempel: 05 12 1987</span>
 
                     <div class="date-group js-calendar-group mt-3">
+
                         <div class="form-group form-group-day">
-                            <label class="form-label" for="date-day">Dag</label>
-                            <input class="form-input js-calendar-day-input" id="date-day" value="" type="tel" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på måneden som tal" aria-describedby="example-date-field-hint" />
+                            <label class="form-label" for="undefined-day">Dag</label>
+
+                            <input type="tel" id="undefined-day" class="form-input js-calendar-day-input" required="" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
+
                         </div>
+
                         <div class="form-group form-group-month">
-                            <label class="form-label" for="date-month">Måned</label>
-                            <input class="form-input js-calendar-month-input" id="date-month" value="" type="tel" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" aria-describedby="example-date-field-hint" />
+                            <label class="form-label" for="undefined-month">Måned</label>
+
+                            <input type="tel" id="undefined-month" class="form-input js-calendar-month-input" required="" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
+
                         </div>
-                        <div class="form-group form-group-year ">
-                            <label class="form-label" for="date-year">År</label>
-                            <input class="form-input js-calendar-year-input" id="date-year" value="" type="tel" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" aria-describedby="example-date-field-hint" />
+
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="undefined-year">År</label>
+
+                            <input type="tel" id="undefined-year" class="form-input js-calendar-year-input" required="" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
+
                         </div>
 
                     </div>
@@ -397,10 +373,7 @@
              radio-large
             " value="ja" />
 
-                        <label class="form-label" for="odense-option1">
-                            Ja
-
-                        </label>
+                        <label class="form-label" for="odense-option1">Ja</label>
 
                     </div>
 
@@ -411,10 +384,7 @@
              radio-large
             " value="nej" />
 
-                        <label class="form-label" for="odense-option2">
-                            Nej
-
-                        </label>
+                        <label class="form-label" for="odense-option2">Nej</label>
 
                     </div>
 
