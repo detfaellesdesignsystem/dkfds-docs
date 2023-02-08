@@ -34,12 +34,8 @@
                         "inline": false,
                         "classes": "mt-0 mb-1 nobullet-list",
                         "items": [
-                            {
-                                "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"
-                            },
-                            {
-                                "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"
-                            }
+                            { "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>" },
+                            { "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>" }
                         ]
                     }
                 ]
@@ -53,12 +49,8 @@
                         "inline": false,
                         "classes": "d-print-none mt-0 nobullet-list",
                         "items": [
-                            {
-                                "content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"
-                            },
-                            {
-                                "content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"
-                            }
+                            { "content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>" },
+                            { "content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>" }
                         ]
                     }
                 ]
@@ -94,6 +86,7 @@
         "id": "input-postnummer",
         "name": "postnummer",
         "label": "Postnummer",
+        "type": "number",
         "classes": {
             "formgroup": "mr-sm-4 mt-5 mt-sm-0",
             "input": "input-width-xs"
@@ -122,6 +115,7 @@
         "id": "input-telefonnummer",
         "name": "telefonnummer",
         "label": "Telefonnummer",
+        "type": "tel",
         "optionalLabel": true,
         "classes": {
             "input": "input-width-s"
@@ -132,6 +126,7 @@
         "id": "input-email",
         "name": "email",
         "label": "E-mail",
+        "type": "email",
         "classes": {
             "input": "input-width-xl"
         }

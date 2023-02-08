@@ -83,6 +83,18 @@
             }
         ]
     },
+    "pages_data": {
+        "id": "total-pages-row1",
+        "name": "total-pages-row1",
+        "type": "number",
+        "required": false,
+        "classes": {
+            "input": "input-width-xxs"
+        },
+        "attributes": {
+            "input": "aria-labelledby=\"file1 header3\""
+        }
+    },
     "button_upload": {
         "text": "Upload fil",
         "variant": "secondary",

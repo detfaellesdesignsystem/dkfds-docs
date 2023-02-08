@@ -122,21 +122,15 @@
         "id": "input-case",
         "name": "case",
         "label": "Tidligere registreringsnummer",
+        "type": "number",
         "classes": {
             "input": "input-width-m"
         }
     },
     "dateinput_data": {
-        "labels": {
-            "legend": "Dato for registreringen",
-            "day": "Dag",
-            "month": "Måned",
-            "year": "År"
-        },
-        "helptext": "For eksempel: 01 12 2016",
-        "id": {
-            "error": "example-date-field"
-        }
+        "id": "input-date",
+        "legend": "Dato for registreringen",
+        "helptext": "For eksempel: 01 12 2016"
     },
     "button_next": {
         "text": "Næste",

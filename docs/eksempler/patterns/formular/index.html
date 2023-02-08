@@ -3737,7 +3737,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <h1 class="h2">Dine kontaktoplysninger</h1>
+        <h2>Dine kontaktoplysninger</h2>
 <form novalidate="">
 
     <div class="form-group">
@@ -3755,16 +3755,16 @@
     </div>
 
     <div class="form-group">
-        <label class="form-label" for="simple-email">E-mail adresse</label>
+        <label class="form-label" for="simple-email">E-mailadresse</label>
 
-        <input type="text" id="simple-email" name="email" class="form-input" required="" />
+        <input type="email" id="simple-email" name="email" class="form-input" required="" />
 
     </div>
 
     <div class="form-group">
         <label class="form-label" for="simple-telefon">Telefonnummer</label>
 
-        <input type="text" id="simple-telefon" name="telefon" class="form-input input-width-s" required="" />
+        <input type="tel" id="simple-telefon" name="telefon" class="form-input input-width-s" required="" />
 
     </div>
 
@@ -3780,7 +3780,7 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på formularstruktur</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1 class=&quot;h2&quot;&gt;Dine kontaktoplysninger&lt;/h1&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h2&gt;Dine kontaktoplysninger&lt;/h2&gt;
 &lt;form novalidate&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
@@ -3798,16 +3798,16 @@
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;simple-email&quot;&gt;E-mail adresse&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;simple-email&quot;&gt;E-mailadresse&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;simple-email&quot; name=&quot;email&quot; class=&quot;form-input&quot; required&gt;
+        &lt;input type=&quot;email&quot; id=&quot;simple-email&quot; name=&quot;email&quot; class=&quot;form-input&quot; required&gt;
 
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;simple-telefon&quot;&gt;Telefonnummer&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;simple-telefon&quot; name=&quot;telefon&quot; class=&quot;form-input input-width-s&quot;
+        &lt;input type=&quot;tel&quot; id=&quot;simple-telefon&quot; name=&quot;telefon&quot; class=&quot;form-input input-width-s&quot;
             required&gt;
 
     &lt;/div&gt;
@@ -3934,34 +3934,34 @@
     
     <div class="component-example px-4 py-4">
         
-        <h1 class="h2">Dine kontaktoplysninger</h1>
+        <h2>Dine kontaktoplysninger</h2>
 <form novalidate="">
 
     <div class="form-group">
-        <label class="form-label" for="fnavn">Fornavn</label>
+        <label class="form-label" for="fnavn-complex">Fornavn</label>
 
-        <input type="text" id="fnavn" name="fnavn" class="form-input" required="" />
-
-    </div>
-
-    <div class="form-group">
-        <label class="form-label" for="enavn">Efternavn</label>
-
-        <input type="text" id="enavn" name="enavn" class="form-input" required="" />
+        <input type="text" id="fnavn-complex" name="fnavn-complex" class="form-input" required="" />
 
     </div>
 
     <div class="form-group">
-        <label class="form-label" for="fieldset-email">E-mail adresse</label>
+        <label class="form-label" for="enavn-complex">Efternavn</label>
 
-        <input type="text" id="fieldset-email" name="email" class="form-input" required="" />
+        <input type="text" id="enavn-complex" name="enavn-complex" class="form-input" required="" />
 
     </div>
 
     <div class="form-group">
-        <label class="form-label" for="fieldset-telefon">Telefonnummer</label>
+        <label class="form-label" for="email-complex">E-mailadresse</label>
 
-        <input type="text" id="fieldset-telefon" name="telefon" class="form-input input-width-s" required="" />
+        <input type="email" id="email-complex" name="email-complex" class="form-input" required="" />
+
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="telefon-complex">Telefonnummer</label>
+
+        <input type="tel" id="telefon-complex" name="telefon-complex" class="form-input input-width-s" required="" />
 
     </div>
 
@@ -4028,43 +4028,38 @@
         <fieldset>
             <legend class="h4">Personlige oplysninger</legend>
 
-            <!-- Felt start: Fødselsdato -->
-
             <div class="form-group mt-0">
-                <fieldset aria-describedby="-hint ">
-                    <legend class="form-label"></legend>
-                    <span class="form-hint" id="-hint">For eksempel: 05 12 1987</span>
+                <fieldset aria-describedby="date-input-birthday-hint ">
+                    <legend class="form-label">Fødselsdato</legend>
+                    <span class="form-hint" id="date-input-birthday-hint">For eksempel: 05 12
+                        1987</span>
 
                     <div class="date-group js-calendar-group mt-3">
 
                         <div class="form-group form-group-day">
-                            <label class="form-label" for="undefined-day">Dag</label>
+                            <label class="form-label" for="date-input-birthday-day">Dag</label>
 
-                            <input type="tel" id="undefined-day" class="form-input js-calendar-day-input" required="" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
+                            <input type="tel" id="date-input-birthday-day" class="form-input js-calendar-day-input" required="" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
 
                         </div>
 
                         <div class="form-group form-group-month">
-                            <label class="form-label" for="undefined-month">Måned</label>
+                            <label class="form-label" for="date-input-birthday-month">Måned</label>
 
-                            <input type="tel" id="undefined-month" class="form-input js-calendar-month-input" required="" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
+                            <input type="tel" id="date-input-birthday-month" class="form-input js-calendar-month-input" required="" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
 
                         </div>
 
                         <div class="form-group form-group-year">
-                            <label class="form-label" for="undefined-year">År</label>
+                            <label class="form-label" for="date-input-birthday-year">År</label>
 
-                            <input type="tel" id="undefined-year" class="form-input js-calendar-year-input" required="" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
+                            <input type="tel" id="date-input-birthday-year" class="form-input js-calendar-year-input" required="" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
 
                         </div>
 
                     </div>
                 </fieldset>
             </div>
-
-            <!-- Felt slut: Fødselsdato -->
-
-            <!-- Felt start: Odense -->
 
             <div class="form-group
         
@@ -4101,15 +4096,11 @@
                 </fieldset>
             </div>
 
-            <!-- Felt slut: Odense -->
         </fieldset>
     </div>
-    <!-- Felt slut: Personlige oplysninger -->
-    <!-- Knap start -->
     <button class="button button-primary mt-9">
         Gem oplysninger
     </button>
-    <!-- Knap slut -->
 </form>
         
     </div>
@@ -4119,34 +4110,37 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på kompleks formularstruktur</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1 class=&quot;h2&quot;&gt;Dine kontaktoplysninger&lt;/h1&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h2&gt;Dine kontaktoplysninger&lt;/h2&gt;
 &lt;form novalidate&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;fnavn&quot;&gt;Fornavn&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;fnavn-complex&quot;&gt;Fornavn&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;fnavn&quot; name=&quot;fnavn&quot; class=&quot;form-input&quot; required&gt;
-
-    &lt;/div&gt;
-
-    &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;enavn&quot;&gt;Efternavn&lt;/label&gt;
-
-        &lt;input type=&quot;text&quot; id=&quot;enavn&quot; name=&quot;enavn&quot; class=&quot;form-input&quot; required&gt;
+        &lt;input type=&quot;text&quot; id=&quot;fnavn-complex&quot; name=&quot;fnavn-complex&quot; class=&quot;form-input&quot;
+            required&gt;
 
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;fieldset-email&quot;&gt;E-mail adresse&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;enavn-complex&quot;&gt;Efternavn&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;fieldset-email&quot; name=&quot;email&quot; class=&quot;form-input&quot; required&gt;
+        &lt;input type=&quot;text&quot; id=&quot;enavn-complex&quot; name=&quot;enavn-complex&quot; class=&quot;form-input&quot;
+            required&gt;
 
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;fieldset-telefon&quot;&gt;Telefonnummer&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;email-complex&quot;&gt;E-mailadresse&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;fieldset-telefon&quot; name=&quot;telefon&quot;
+        &lt;input type=&quot;email&quot; id=&quot;email-complex&quot; name=&quot;email-complex&quot; class=&quot;form-input&quot;
+            required&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;telefon-complex&quot;&gt;Telefonnummer&lt;/label&gt;
+
+        &lt;input type=&quot;tel&quot; id=&quot;telefon-complex&quot; name=&quot;telefon-complex&quot;
             class=&quot;form-input input-width-s&quot; required&gt;
 
     &lt;/div&gt;
@@ -4218,19 +4212,19 @@
         &lt;fieldset&gt;
             &lt;legend class=&quot;h4&quot;&gt;Personlige oplysninger&lt;/legend&gt;
 
-            &lt;!-- Felt start: Fødselsdato --&gt;
-
             &lt;div class=&quot;form-group mt-0&quot;&gt;
-                &lt;fieldset aria-describedby=&quot;-hint &quot;&gt;
-                    &lt;legend class=&quot;form-label&quot;&gt;&lt;/legend&gt;
-                    &lt;span class=&quot;form-hint&quot; id=&quot;-hint&quot;&gt;For eksempel: 05 12 1987&lt;/span&gt;
+                &lt;fieldset aria-describedby=&quot;date-input-birthday-hint &quot;&gt;
+                    &lt;legend class=&quot;form-label&quot;&gt;Fødselsdato&lt;/legend&gt;
+                    &lt;span class=&quot;form-hint&quot; id=&quot;date-input-birthday-hint&quot;&gt;For eksempel: 05 12
+                        1987&lt;/span&gt;
 
                     &lt;div class=&quot;date-group js-calendar-group mt-3&quot;&gt;
 
                         &lt;div class=&quot;form-group form-group-day&quot;&gt;
-                            &lt;label class=&quot;form-label&quot; for=&quot;undefined-day&quot;&gt;Dag&lt;/label&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-input-birthday-day&quot;&gt;Dag&lt;/label&gt;
 
-                            &lt;input type=&quot;tel&quot; id=&quot;undefined-day&quot;
+                            &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-day&quot;
                                 class=&quot;form-input js-calendar-day-input&quot; required data-min=&quot;1&quot;
                                 data-max=&quot;31&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
                                 data-input-regex=&quot;^[0-9]{0,2}$&quot;
@@ -4239,9 +4233,10 @@
                         &lt;/div&gt;
 
                         &lt;div class=&quot;form-group form-group-month&quot;&gt;
-                            &lt;label class=&quot;form-label&quot; for=&quot;undefined-month&quot;&gt;Måned&lt;/label&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-input-birthday-month&quot;&gt;Måned&lt;/label&gt;
 
-                            &lt;input type=&quot;tel&quot; id=&quot;undefined-month&quot;
+                            &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-month&quot;
                                 class=&quot;form-input js-calendar-month-input&quot; required
                                 data-min=&quot;1&quot; data-max=&quot;12&quot; maxlength=&quot;2&quot;
                                 pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
@@ -4250,9 +4245,10 @@
                         &lt;/div&gt;
 
                         &lt;div class=&quot;form-group form-group-year&quot;&gt;
-                            &lt;label class=&quot;form-label&quot; for=&quot;undefined-year&quot;&gt;År&lt;/label&gt;
+                            &lt;label class=&quot;form-label&quot;
+                                for=&quot;date-input-birthday-year&quot;&gt;År&lt;/label&gt;
 
-                            &lt;input type=&quot;tel&quot; id=&quot;undefined-year&quot;
+                            &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-year&quot;
                                 class=&quot;form-input js-calendar-year-input&quot; required
                                 data-min=&quot;1900&quot; data-max=&quot;3000&quot; maxlength=&quot;4&quot;
                                 pattern=&quot;^[0-9]{0,4}$&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;
@@ -4263,10 +4259,6 @@
                     &lt;/div&gt;
                 &lt;/fieldset&gt;
             &lt;/div&gt;
-
-            &lt;!-- Felt slut: Fødselsdato --&gt;
-
-            &lt;!-- Felt start: Odense --&gt;
 
             &lt;div class=&quot;form-group
         
@@ -4303,15 +4295,11 @@
                 &lt;/fieldset&gt;
             &lt;/div&gt;
 
-            &lt;!-- Felt slut: Odense --&gt;
         &lt;/fieldset&gt;
     &lt;/div&gt;
-    &lt;!-- Felt slut: Personlige oplysninger --&gt;
-    &lt;!-- Knap start --&gt;
     &lt;button class=&quot;button button-primary mt-9&quot;&gt;
         Gem oplysninger
     &lt;/button&gt;
-    &lt;!-- Knap slut --&gt;
 &lt;/form&gt;</code></pre></figure>
 
 

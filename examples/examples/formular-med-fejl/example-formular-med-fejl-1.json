@@ -98,6 +98,7 @@
         "id": "input-postnummer",
         "name": "postnummer",
         "label": "Postnummer",
+        "type": "number",
         "classes": {
             "formgroup": "mr-sm-4 mt-5 mt-sm-0",
             "input": "input-width-xs"
@@ -128,6 +129,7 @@
         "id": "input-telefonnummer",
         "name": "telefonnummer",
         "label": "Telefonnummer",
+        "type": "tel",
         "optionalLabel": true,
         "classes": {
             "input": "input-width-s"
@@ -138,6 +140,7 @@
         "id": "input-email",
         "name": "email",
         "label": "E-mail",
+        "type": "email",
         "classes": {
             "input": "input-width-xl"
         },
@@ -150,27 +153,22 @@
         "errorMessage": "Angiv din alder. Vi skal bruge den til dit og dat.",
         "items": [
             {
-                "id": "alder1",
                 "value": "Under 18",
                 "label": "Under 18"
             },
             {
-                "id": "alder2",
                 "value": "18-29",
                 "label": "18-29"
             },
             {
-                "id": "alder3",
                 "value": "30-39",
                 "label": "30-39"
             },
             {
-                "id": "alder4",
                 "value": "40-59",
                 "label": "40-59"
             },
             {
-                "id": "alder5",
                 "value": "60 eller ældre",
                 "label": "60 eller ældre"
             }

@@ -79,6 +79,7 @@
         "id": "input-CPR",
         "name": "CPR",
         "label": "Personens CPR-nummer",
+        "type": "number",
         "classes": {
             "input": "input-width-m"
         }
@@ -87,6 +88,7 @@
         "id": "input-CVR",
         "name": "CVR",
         "label": "Virksomhedens CVR-nummer",
+        "type": "number",
         "classes": {
             "input": "input-width-m"
         }

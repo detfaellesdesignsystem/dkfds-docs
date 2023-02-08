@@ -77,6 +77,7 @@
         "id": "input-telefonnummer",
         "name": "telefonnummer",
         "label": "Telefonnummer",
+        "type": "tel",
         "classes": {
             "formgroup": "mb-6",
             "input": "input-width-s"

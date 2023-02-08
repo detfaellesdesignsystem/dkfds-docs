@@ -460,24 +460,25 @@
                                 <label class="form-label" for="input-case">Tidligere
                                     registreringsnummer</label>
 
-                                <input type="text" id="input-case" name="case"
+                                <input type="number" id="input-case" name="case"
                                     class="form-input input-width-m" required>
 
                             </div>
 
                             <div class="form-group">
-                                <fieldset aria-describedby="[object Object]-hint ">
-                                    <legend class="form-label"></legend>
-                                    <span class="form-hint" id="[object Object]-hint">For
-                                        eksempel: 01 12 2016</span>
+                                <fieldset aria-describedby="input-date-hint ">
+                                    <legend class="form-label">Dato for registreringen
+                                    </legend>
+                                    <span class="form-hint" id="input-date-hint">For eksempel:
+                                        01 12 2016</span>
 
                                     <div class="date-group js-calendar-group mt-3">
 
                                         <div class="form-group form-group-day">
                                             <label class="form-label"
-                                                for="[object Object]-day">Dag</label>
+                                                for="input-date-day">Dag</label>
 
-                                            <input type="tel" id="[object Object]-day"
+                                            <input type="tel" id="input-date-day"
                                                 class="form-input js-calendar-day-input"
                                                 required data-min="1" data-max="31"
                                                 maxlength="2" pattern="^[0-9]{0,2}$"
@@ -488,9 +489,9 @@
 
                                         <div class="form-group form-group-month">
                                             <label class="form-label"
-                                                for="[object Object]-month">Måned</label>
+                                                for="input-date-month">Måned</label>
 
-                                            <input type="tel" id="[object Object]-month"
+                                            <input type="tel" id="input-date-month"
                                                 class="form-input js-calendar-month-input"
                                                 required data-min="1" data-max="12"
                                                 maxlength="2" pattern="^[0-9]{0,2}$"
@@ -501,9 +502,9 @@
 
                                         <div class="form-group form-group-year">
                                             <label class="form-label"
-                                                for="[object Object]-year">År</label>
+                                                for="input-date-year">År</label>
 
-                                            <input type="tel" id="[object Object]-year"
+                                            <input type="tel" id="input-date-year"
                                                 class="form-input js-calendar-year-input"
                                                 required data-min="1900" data-max="3000"
                                                 maxlength="4" pattern="^[0-9]{0,4}$"

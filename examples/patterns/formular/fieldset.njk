@@ -1,27 +1,44 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
-<h1 class="h2">Dine kontaktoplysninger</h1>
+<h2>Dine kontaktoplysninger</h2>
 <form novalidate>
-    {{textinput({
-        "id": "simple-fnavn",
-        "label": "Fornavn",
-        "name": "fnavn"})}}
-    {{textinput({
-        "id": "simple-enavn", 
-        "label": "Efternavn",
-        "name": "enavn"})}}
-    {{textinput({
-        "id": "simple-email", 
-        "label": "E-mail adresse",
-        "name": "email"})}}
-    {{textinput({
-        "id": "simple-telefon",
-        "label": "Telefonnummer",
-        "classes": { "input": "input-width-s" },
-        "name": "telefon"})}}
-    {{ button({
-        "text":"Gem oplysninger", 
-        "variant":"primary",
-        "classes":"mt-9"}) }}
+    {{
+        textinput({
+            "id": "simple-fnavn",
+            "label": "Fornavn",
+            "name": "fnavn"
+        })
+    }}
+    {{
+        textinput({
+            "id": "simple-enavn", 
+            "label": "Efternavn",
+            "name": "enavn"
+        })
+    }}
+    {{
+        textinput({
+            "id": "simple-email", 
+            "label": "E-mailadresse",
+            "name": "email",
+            "type": "email"
+        })
+    }}
+    {{
+        textinput({
+            "id": "simple-telefon",
+            "label": "Telefonnummer",
+            "classes": { "input": "input-width-s" },
+            "name": "telefon",
+            "type": "tel"
+        })
+    }}
+    {{ 
+        button({
+            "text":"Gem oplysninger", 
+            "variant":"primary",
+            "classes":"mt-9"
+        }) 
+    }}
 </form>

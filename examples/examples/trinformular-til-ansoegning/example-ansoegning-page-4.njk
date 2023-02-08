@@ -13,6 +13,7 @@
 
 {% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/form/controls/select.njk" import select as select %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
 {# <!-- Variables --> #}
@@ -95,8 +96,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="vertical-align-middle" data-title="Filnavn" id="file1">{{ icon_svg({"name":
-                            'file-pdf'})}}Journal.pdf</td>
+                        <td class="vertical-align-middle" data-title="Filnavn" id="file1">
+                            {{ icon_svg({"name": 'file-pdf'})}}Journal.pdf
+                        </td>
                         <td class="vertical-align-middle" data-title="Dokumentationstype">
                             <div class="form-group">
                                 <select class="form-select input-width-s" name="options" id="options"
@@ -109,10 +111,7 @@
                             </div>
                         </td>
                         <td class="vertical-align-middle" data-title="Sidetal">
-                            <div class="form-group">
-                                <input class="form-input input-width-xxs" id="input-type-text" name="input-type-text"
-                                    type="number" aria-labelledby="file1 header3" />
-                            </div>
+                            {{ textinput(pages_data) }}
                         </td>
                         <td class="vertical-align-middle" data-title="Slet">
                             {{ button(button_delete) }}

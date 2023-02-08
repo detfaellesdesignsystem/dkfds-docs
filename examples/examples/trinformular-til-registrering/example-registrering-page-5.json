@@ -127,6 +127,7 @@
         "id": "input-email",
         "name": "email",
         "label": "E-mail",
+        "type": "email",
         "classes": {
             "input": "input-width-l"
         }
@@ -135,6 +136,7 @@
         "id": "input-telefonnummer",
         "name": "telefonnummer",
         "label": "Telefonnummer",
+        "type": "tel",
         "optionalLabel": true,
         "classes": {
             "input": "input-width-s"
