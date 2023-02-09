@@ -30,7 +30,7 @@ subnav:
 
 {% include code/syntax.html component="language-switcher" %}
 
-<div class="alert alert-warning">
+<div class="alert alert-warning" role="alert">
     <div class="alert-body">
         <p class="alert-text">Bemærk, at man i løsningen selv står for funktionaliteten i denne komponent.</p>
     </div>

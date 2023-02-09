@@ -4386,7 +4386,7 @@
     <main class="col-12 col-lg-9" id="main-content">
           <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <div class="alert-body">
-            <p class="alert-heading pr-7">Vælg et tema</p><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
+            <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
             <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
@@ -4431,9 +4431,9 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="alert alert-error mt-0 mb-8" role="alert" aria-atomic="true" data-module="error-summary">
+        <div class="alert alert-error mt-0 mb-8" role="alert" data-module="error-summary">
     <div class="alert-body">
-        <p class="alert-heading">Der er problemer</p>
+        <h2 class="alert-heading">Der er problemer</h2>
         <ul class="alert-text nobullet-list">
             <li><a class="function-link" href="#date-field-year">Datoen for udløbsdato på dit
                     pas bør inkludere årstal</a></li>
@@ -4465,10 +4465,9 @@
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;
-    data-module=&quot;error-summary&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; data-module=&quot;error-summary&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/p&gt;
+        &lt;h2 class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/h2&gt;
         &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
             &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-field-year&quot;&gt;Datoen for udløbsdato på dit
                     pas bør inkludere årstal&lt;/a&gt;&lt;/li&gt;
@@ -4501,17 +4500,16 @@
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;
-    data-module=&quot;error-summary&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; data-module=&quot;error-summary&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/p&gt;
+        &lt;h2 class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/h2&gt;
         &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
-            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#example-name&quot;&gt;Skriv dit fulde navn, og adskil
-                    for- og efternavne med mellemrum, fx Anders Andersen&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#example-name-error&quot;&gt;Skriv dit fulde navn, og
+                    adskil for- og efternavne med mellemrum, fx Anders Andersen&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#nationalitet1&quot;&gt;Angiv om du er dansk, svensk
                     eller anden nationalitet&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-day&quot;&gt;Datoen kan ikke være i fremtiden&lt;/a&gt;
-            &lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-input-error-day&quot;&gt;Datoen kan ikke være i
+                    fremtiden&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -4558,19 +4556,20 @@
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group form-error&quot;&gt;
-        &lt;fieldset aria-describedby=&quot;-hint -error &quot; aria-invalid=&quot;true&quot;&gt;
-            &lt;legend class=&quot;form-label&quot;&gt;&lt;/legend&gt;
-            &lt;span class=&quot;form-hint&quot; id=&quot;-hint&quot;&gt;Fx: 05 12 2018&lt;/span&gt;
+        &lt;fieldset aria-describedby=&quot;date-input-error-hint date-input-error-error &quot;
+            aria-invalid=&quot;true&quot;&gt;
+            &lt;legend class=&quot;form-label&quot;&gt;Hvornår blev dit pas udstedt?&lt;/legend&gt;
+            &lt;span class=&quot;form-hint&quot; id=&quot;date-input-error-hint&quot;&gt;For eksempel: 05 12 2018&lt;/span&gt;
 
-            &lt;span class=&quot;form-error-message&quot; id=&quot;-error&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt;
-                Datoen kan ikke være i fremtiden&lt;/span&gt;
+            &lt;span class=&quot;form-error-message&quot; id=&quot;date-input-error-error&quot;&gt;&lt;span
+                    class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Datoen kan ikke være i fremtiden&lt;/span&gt;
 
             &lt;div class=&quot;date-group js-calendar-group mt-3&quot;&gt;
 
                 &lt;div class=&quot;form-group form-group-day&quot;&gt;
-                    &lt;label class=&quot;form-label&quot; for=&quot;undefined-day&quot;&gt;Dag&lt;/label&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;date-input-error-day&quot;&gt;Dag&lt;/label&gt;
 
-                    &lt;input type=&quot;tel&quot; id=&quot;undefined-day&quot;
+                    &lt;input type=&quot;tel&quot; id=&quot;date-input-error-day&quot;
                         class=&quot;form-input js-calendar-day-input&quot; value=&quot;01&quot; required
                         data-min=&quot;1&quot; data-max=&quot;31&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
                         data-input-regex=&quot;^[0-9]{0,2}$&quot;
@@ -4579,9 +4578,9 @@
                 &lt;/div&gt;
 
                 &lt;div class=&quot;form-group form-group-month&quot;&gt;
-                    &lt;label class=&quot;form-label&quot; for=&quot;undefined-month&quot;&gt;Måned&lt;/label&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;date-input-error-month&quot;&gt;Måned&lt;/label&gt;
 
-                    &lt;input type=&quot;tel&quot; id=&quot;undefined-month&quot;
+                    &lt;input type=&quot;tel&quot; id=&quot;date-input-error-month&quot;
                         class=&quot;form-input js-calendar-month-input&quot; value=&quot;12&quot; required
                         data-min=&quot;1&quot; data-max=&quot;12&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
                         data-input-regex=&quot;^[0-9]{0,2}$&quot; title=&quot;Indtast månedens nummer&quot;&gt;
@@ -4589,9 +4588,9 @@
                 &lt;/div&gt;
 
                 &lt;div class=&quot;form-group form-group-year&quot;&gt;
-                    &lt;label class=&quot;form-label&quot; for=&quot;undefined-year&quot;&gt;År&lt;/label&gt;
+                    &lt;label class=&quot;form-label&quot; for=&quot;date-input-error-year&quot;&gt;År&lt;/label&gt;
 
-                    &lt;input type=&quot;tel&quot; id=&quot;undefined-year&quot;
+                    &lt;input type=&quot;tel&quot; id=&quot;date-input-error-year&quot;
                         class=&quot;form-input js-calendar-year-input&quot; value=&quot;2076&quot; required
                         data-min=&quot;1900&quot; data-max=&quot;3000&quot; maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;
                         data-input-regex=&quot;^[0-9]{0,4}$&quot; title=&quot;Indtast årstal&quot;&gt;
@@ -4609,7 +4608,7 @@
 </div>
 
 <h3>Javascript</h3>
-<p>Fejlopsummering kræver JavaScript for at fungere korrekt i alle browsers. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+<p>Fejlopsummering kræver JavaScript samt attributten <code>data-module="error-summary"</code> for at fungere korrekt. Dermed vil et klik på et link i opsummeringen betyde, at brugeren scroller ned til feltet med fejl uden at scrolle forbi feltets label. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.ErrorSummary(document.getElementById(&#39;ALERT-ID&#39;)).init();</code></pre></figure>
 

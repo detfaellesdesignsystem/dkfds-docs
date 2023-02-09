@@ -4413,7 +4413,7 @@
     <main class="col-12 col-lg-9" id="main-content">
           <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <div class="alert-body">
-            <p class="alert-heading pr-7">Vælg et tema</p><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
+            <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
             <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
@@ -4463,7 +4463,7 @@
         
         <div class="alert alert-info">
     <div class="alert-body">
-        <p class="alert-heading">Informativ besked</p>
+        <h2 class="alert-heading">Informativ besked</h2>
         <p class="alert-text">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.</p>
     </div>
 </div>
@@ -4491,7 +4491,7 @@
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Informativ besked&lt;/p&gt;
+        &lt;h2 class=&quot;alert-heading&quot;&gt;Informativ besked&lt;/h2&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
@@ -4500,10 +4500,12 @@
     </div>
 </div>
 
-<p>Anvend ARIA <code>role="alert"</code> til at øge tilgængeligheden ved at markere beskeden som noget der skal annonceres gennem eventuelle hjælpeteknologier. Mærk beskeden med <code>role="alertdialog"</code>, hvis den indeholder interaktivitet for brugeren.</p>
+<p>Anvend <code>role="alert"</code> til beskeder, der skal læses højt af en skærmlæser med det samme, hvis indholdet ændrer sig. Dette kan for eksempel være en besked, der bliver synlig efter at have været skjult eller hvor indholdet ændrer sig. Advarsler og fejlbeskeder bør altid være markeret med <code>role="alert"</code>.</p>
+
+<p>Hvis beskeden indeholder en <code>alert-heading</code>, sørg da for at benytte et html-element, der passer ind i beskedens kontekst. Dette vil som regel være en overskrift, for eksempel <code>&lt;h3&gt;</code>, eller et <code>&lt;strong&gt;</code>-element.</p>
 
 <h3>Javascript</h3>
-<p>Man kan bruge nedenstående JavaScript for at sætte events på luk knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk knappen.
+<p>Man kan bruge nedenstående JavaScript for at sætte events på luk-knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk-knappen.
 Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Alert(document.getElementById(&#39;ALERT-ID&#39;)).init();</code></pre></figure>
@@ -4554,7 +4556,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Informativ besked&lt;/p&gt;
+        &lt;h2 class=&quot;alert-heading&quot;&gt;Informativ besked&lt;/h2&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
@@ -4581,7 +4583,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-success&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Succesbesked&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading&quot;&gt;Succesbesked&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
@@ -4591,9 +4593,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
 </div>
 
 <h4>Advarsel</h4>
-<p>Besked med advarsel er orange, og defineres med klassen <code>alert-warning</code>.</p>
-
-<p>Bemærk, at attributten <code>role="alert"</code> bør tilføjes i dette tilfælde for at øge tilgængeligheden. Uanset, hvor fokus er på siden, vil beskeden da blive læst op med det samme.</p>
+<p>Besked med advarsel er gul, og defineres med klassen <code>alert-warning</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alert-warning">
     
@@ -4608,9 +4608,9 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Advarsel&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading&quot;&gt;Advarsel&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
@@ -4621,8 +4621,6 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
 
 <h4>Fejl</h4>
 <p>Besked med fejl er rød, og defineres med klassen <code>alert-error</code>.</p>
-
-<p>Bemærk, at attributten <code>role="alert"</code> bør tilføjes i dette tilfælde for at øge tilgængeligheden. Uanset, hvor fokus er på siden, vil beskeden da blive læst op med det samme.</p>
 
 <div class="component-preview component-preview-code  component-code-alert-error">
     
@@ -4637,9 +4635,9 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error&quot; role=&quot;alert&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Fejl&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading&quot;&gt;Fejl&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
@@ -4649,6 +4647,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
 </div>
 
 <h3 id="beskeder-med-ikon">Ikon</h3>
+<p>Defineres med klassen <code>alert--show-icon</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alerts-icons">
     
@@ -4663,33 +4662,33 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info alert--show-icon&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info alert--show-icon&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Informativ besked - med ikon&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading&quot;&gt;Informativ besked - med ikon&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;alert alert-success alert--show-icon&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+&lt;div class=&quot;alert alert-success alert--show-icon&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Succesmeddelelse - med ikon&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading&quot;&gt;Succesmeddelelse - med ikon&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;alert alert-warning alert--show-icon&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+&lt;div class=&quot;alert alert-warning alert--show-icon&quot; role=&quot;alert&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Advarsel - med ikon&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading&quot;&gt;Advarsel - med ikon&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;alert alert-error alert--show-icon&quot; role=&quot;alert&quot; aria-atomic=&quot;true&quot;&gt;
+&lt;div class=&quot;alert alert-error alert--show-icon&quot; role=&quot;alert&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Fejlbesked - med ikon&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading&quot;&gt;Fejlbesked - med ikon&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.&lt;/p&gt;
     &lt;/div&gt;
@@ -4700,6 +4699,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
 </div>
 
 <h3 id="paragrafbredde">Paragrafbredde</h3>
+<p>Defineres med klassen <code>alert--paragraph</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alert-paragraph">
     
@@ -4716,7 +4716,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info alert--paragraph&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading&quot;&gt;Besked med mindre bredde&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading&quot;&gt;Besked med mindre bredde&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
@@ -4742,10 +4742,11 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-info has-close&quot;&gt;
     &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;p class=&quot;alert-heading pr-7&quot;&gt;Besked med luk&lt;/p&gt;
+        &lt;h3 class=&quot;alert-heading pr-7&quot;&gt;Besked med luk&lt;/h3&gt;
         &lt;p class=&quot;alert-text&quot;&gt;Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.&lt;/p&gt;
-        &lt;button type=&quot;button&quot;
-            class=&quot;alert-close&quot;&gt;&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;alert-close&quot;&gt;
+            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk
+        &lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 

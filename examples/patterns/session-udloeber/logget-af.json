@@ -1,40 +1,64 @@
 {
-  "portal_header_data": {
-    "logolink": {
-      "sronly": "Portalnavn",
-      "href": "#"
+    "portal_header_data": {
+        "compact": false,
+        "logolink": {
+            "label": "Portalnavn",
+            "href": "#"
+        },
+        "button": {
+            "text": "Log på"
+        }
     },
-    "link": {
-      "href": "#",
-      "class": "button-secondary",
-      "text": "Log på"
-    }
-  },
-  "solution_header_data": {
-    "title": {
-      "href": "#",
-      "text": "En langt længere løsningstitel"
+    "solution_header_data": {
+        "lastHeader": true,
+        "hideOnPrint": false,
+        "title": {
+            "href": "#",
+            "text": "Løsningstitel står her"
+        },
+        "authority": {
+            "name": "Myndighedsnavn",
+            "text": "Support: 12 34 56 78"
+        }
     },
-    "authority": {
-      "name": "Myndighedsnavn",
-      "text": "Support: 12 34 56 78"
+    "footer_data": {
+        "topButton": {
+            "topLink": "#top"
+        },
+        "list": {
+            "items": [
+                {
+                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
+                    "hideOnPrint": true
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
+                    "hideOnPrint": true
+                }
+            ]
+        }
+    },
+    "alert_example": {
+        "variant": "info",
+        "classes": "mb-6",
+        "headingLevel": "h2",
+        "heading": "Hvis andre har adgang til denne computer, smartphone eller tablet, skal du:",
+        "contentContainer": false,
+        "content": "<ul class='mb-0'><li>lukke internetbrowseren helt ned - ikke kun fanebladet, eller</li><li>slette internetbrowserens midlertidige filer.</li></ul>",
+        "icon": true
+    },
+    "button_logon": {
+        "variant": "primary",
+        "text": "Log på igen",
+        "classes": "mt-5"
     }
-  },
-  "footer_data":
-  { "list": {
-    "items": [
-        {"content": "<span class=\"h5 weight-semibold\">Digitaliseringsstyrelsen</span>"},
-        {"content": "<a href=\"mailto:support@myndighed.dk\" class=\"function-link\" title=\"Skriv til Digitaliseringsstyrelsen\">support@myndighed.dk</a>"},
-        {"content": "<a href=\"tel:+4512345678\" class=\"function-link\" title=\"Ring til Digitaliseringsstyrelsen\">(+45) 12 34 56 78</a>"},
-        {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>", "hideOnPrint": true},
-        {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true}
-      ]
-    }
-  },
-  "alert_example": {
-    "classes": "alert-info",
-    "icon": true,
-    "heading": "Hvis andre har adgang til denne computer, smartphone eller tablet, skal du:",
-    "content": "<ul><li>lukke internetbrowseren helt ned - ikke kun fanebladet, eller</li><li>slette internetbrowserens midlertidige filer.</li></ul>"
-  }
 }

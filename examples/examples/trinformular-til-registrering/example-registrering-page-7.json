@@ -1,9 +1,9 @@
 {
     "alert_modal_warning": {
-        "classes": "alert-warning",
+        "variant": "warning",
+        "headingLevel": "h3",
         "heading": "Vi har noget information af advarende karakter",
-        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.",
-        "role": "alert"
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver."
     },
     "portal_header_data": {
         "compact": false,
@@ -43,11 +43,11 @@
         }
     },
     "alert_receipt": {
-        "classes": "alert-success",
+        "variant": "success",
+        "headingLevel": "h2",
         "heading": "Kvittering",
         "content": "Din registrering er modtaget",
-        "icon": true,
-        "role": "alert"
+        "icon": true
     },
     "button_print": {
         "text": "Udskriv kvittering",

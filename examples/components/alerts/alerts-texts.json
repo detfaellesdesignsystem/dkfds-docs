@@ -1,25 +1,23 @@
 {
-  "alert_example": {
-    "items": [
-      {
-        "classes": "alert-info",
-        "role": "alert",
-        "heading": "Informativ besked - kun overskrift",
-        "icon": true
-      },
-      {
-        "classes": "alert-info",
-        "role": "alert",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-      },
-      {
-        "name": "Info paragraph",
-        "classes": "alert-info",
-        "role": "alert",
-        "paragraph": true,
-        "heading": "Informativ besked - tekstafsnit",
-        "content": "Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <a href=\"#\">totam rem Nemo enim</a> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro quisquam est, qui doloremipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-      }
-    ]
-  }
+    "alert_example": {
+        "items": [
+            {
+                "variant": "info",
+                "headingLevel": "strong",
+                "heading": "Informativ besked - kun overskrift",
+                "icon": true
+            },
+            {
+                "variant": "info",
+                "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+            },
+            {
+                "variant": "info",
+                "headingLevel": "h3",
+                "heading": "Informativ besked - tekstafsnit",
+                "content": "Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <a href=\"#\">totam rem Nemo enim</a> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro quisquam est, qui doloremipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+                "paragraph": true
+            }
+        ]
+    }
 }

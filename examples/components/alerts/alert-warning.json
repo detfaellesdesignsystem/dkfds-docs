@@ -1,8 +1,0 @@
-{
-  "alert_example": {
-        "classes": "alert-warning",
-        "heading": "Advarsel",
-        "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.",
-        "role": "alert"
-      }
-}

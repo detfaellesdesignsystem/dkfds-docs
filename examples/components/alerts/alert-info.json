@@ -1,7 +1,0 @@
-{
-  "alert_example": {
-        "classes": "alert-info",
-        "heading": "Informativ besked",
-        "content": "Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet."
-      }
-}

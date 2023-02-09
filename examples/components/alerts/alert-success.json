@@ -1,7 +1,0 @@
-{
-  "alert_example": {
-        "classes": "alert-success",
-        "heading": "Succesbesked",
-        "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet."
-      }
-}

@@ -1,9 +1,9 @@
 {
     "alert_modal_warning": {
-        "classes": "alert-warning",
+        "variant": "warning",
+        "headingLevel": "h3",
         "heading": "Vi har noget information af advarende karakter",
-        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.",
-        "role": "alert"
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver."
     },
     "portal_header_data": {
         "compact": true,
@@ -129,11 +129,11 @@
         ]
     },
     "alert_afslutning": {
-        "classes": "alert-info",
+        "variant": "info",
+        "headingLevel": "h2",
         "heading": "Sagen forventes afsluttet",
         "content": "Maj 2021",
-        "icon": true,
-        "role": "alert"
+        "icon": true
     },
     "badge_afsluttet": {
         "text": "Afsluttet",

@@ -595,10 +595,9 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Tilføjet klassen card-align-height, så cards kan have ens højde på samme række.
 - Fikset fokus border på faneblade
 
-<div class="alert alert-info" role="alert"
-    aria-label="Der vises fremhævet information">
+<div class="alert alert-info" role="alert">
     <div class="alert-body">
-        <p class="alert-heading">Semantisk versionering</p>
+        <strong class="alert-heading">Semantisk versionering</strong>
         <p class="alert-text">Fra denne release 4.0.0 og fremover vil FDS gøre brug af semantisk versionering.</p>
     </div>
 </div>

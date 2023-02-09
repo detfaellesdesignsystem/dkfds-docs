@@ -1,8 +1,0 @@
-{
-  "alert_example": {
-    "classes": "alert-info",
-    "heading": "Besked med luk",
-    "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.",
-    "closeButton": true
-  }
-}
