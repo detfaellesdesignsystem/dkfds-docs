@@ -1,2 +1,11 @@
 {% from "components/toast/toast.njk" import toast as toast %}
-{{toast(notification_data)}}
+
+{{
+    toast({
+        "id": "notification-onlyheading",
+        "variant": "info",
+        "srVariant": "Information",
+        "heading": "Dine ændringer er blevet gemt",
+        "show": true
+    })
+}}

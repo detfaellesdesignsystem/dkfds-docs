@@ -221,13 +221,15 @@
     <main class="container page-container" id="main-content">
       <div class="toast-container"></div>
       <h1 id="example-heading-toastbesked-success" class="sr-only">Toastbesked success</h1>
-      <div class="toast toast-success show" id="notification-success" aria-live="assertive" aria-atomic="true">
+      <div class="toast toast-success show" id="notification-success" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
-        <p class="bold">Din ansøgning er afsendt</p>
-        <button class="toast-close">Luk</button>
+        <p><strong><span class="sr-only">Succes: </span>Din ansøgning er afsendt</strong></p>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.</p>
+        <button class="toast-close">
+            Luk<span class="sr-only"> beskeden: Din ansøgning er afsendt</span>
+        </button>
     </div>
 </div>
 

@@ -4461,13 +4461,16 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="toast toast-info show" id="notification-info" aria-live="assertive" aria-atomic="true">
+        <div class="toast toast-info show" id="notification-info" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
-        <p class="bold">Du har fået en besked</p>
-        <button class="toast-close">Luk</button>
+        <p><strong><span class="sr-only">Information: </span>Du har fået en besked</strong>
+        </p>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.</p>
+        <button class="toast-close">
+            Luk<span class="sr-only"> beskeden: Du har fået en besked</span>
+        </button>
     </div>
 </div>
         
@@ -4492,14 +4495,16 @@
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-info show&quot; id=&quot;notification-info&quot; aria-live=&quot;assertive&quot;
-    aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-info show&quot; id=&quot;notification-info&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;toast-message&quot;&gt;
-        &lt;p class=&quot;bold&quot;&gt;Du har fået en besked&lt;/p&gt;
-        &lt;button class=&quot;toast-close&quot;&gt;Luk&lt;/button&gt;
+        &lt;p&gt;&lt;strong&gt;&lt;span class=&quot;sr-only&quot;&gt;Information: &lt;/span&gt;Du har fået en besked&lt;/strong&gt;
+        &lt;/p&gt;
         &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.&lt;/p&gt;
+        &lt;button class=&quot;toast-close&quot;&gt;
+            Luk&lt;span class=&quot;sr-only&quot;&gt; beskeden: Du har fået en besked&lt;/span&gt;
+        &lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
@@ -4562,14 +4567,15 @@ toast.hide();</code></pre></figure>
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-success show&quot; id=&quot;notification-success&quot; aria-live=&quot;assertive&quot;
-    aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-success show&quot; id=&quot;notification-success&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;toast-message&quot;&gt;
-        &lt;p class=&quot;bold&quot;&gt;Din ansøgning er afsendt&lt;/p&gt;
-        &lt;button class=&quot;toast-close&quot;&gt;Luk&lt;/button&gt;
+        &lt;p&gt;&lt;strong&gt;&lt;span class=&quot;sr-only&quot;&gt;Succes: &lt;/span&gt;Din ansøgning er afsendt&lt;/strong&gt;&lt;/p&gt;
         &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.&lt;/p&gt;
+        &lt;button class=&quot;toast-close&quot;&gt;
+            Luk&lt;span class=&quot;sr-only&quot;&gt; beskeden: Din ansøgning er afsendt&lt;/span&gt;
+        &lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
@@ -4592,14 +4598,15 @@ toast.hide();</code></pre></figure>
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-warning show&quot; id=&quot;notification-warning&quot; aria-live=&quot;assertive&quot;
-    aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-warning show&quot; id=&quot;notification-warning&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;toast-message&quot;&gt;
-        &lt;p class=&quot;bold&quot;&gt;Dette er en advarsel&lt;/p&gt;
-        &lt;button class=&quot;toast-close&quot;&gt;Luk&lt;/button&gt;
+        &lt;p&gt;&lt;strong&gt;&lt;span class=&quot;sr-only&quot;&gt;Advarsel: &lt;/span&gt;Dette er en advarsel&lt;/strong&gt;&lt;/p&gt;
         &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.&lt;/p&gt;
+        &lt;button class=&quot;toast-close&quot;&gt;
+            Luk&lt;span class=&quot;sr-only&quot;&gt; beskeden: Dette er en advarsel&lt;/span&gt;
+        &lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
@@ -4622,14 +4629,15 @@ toast.hide();</code></pre></figure>
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-error show&quot; id=&quot;notification-error&quot; aria-live=&quot;assertive&quot;
-    aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-error show&quot; id=&quot;notification-error&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;toast-message&quot;&gt;
-        &lt;p class=&quot;bold&quot;&gt;Der opstod en fejl&lt;/p&gt;
-        &lt;button class=&quot;toast-close&quot;&gt;Luk&lt;/button&gt;
+        &lt;p&gt;&lt;strong&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Der opstod en fejl&lt;/strong&gt;&lt;/p&gt;
         &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.&lt;/p&gt;
+        &lt;button class=&quot;toast-close&quot;&gt;
+            Luk&lt;span class=&quot;sr-only&quot;&gt; beskeden: Der opstod en fejl&lt;/span&gt;
+        &lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
@@ -4652,14 +4660,16 @@ toast.hide();</code></pre></figure>
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-info show&quot; id=&quot;notification-info&quot; aria-live=&quot;assertive&quot;
-    aria-atomic=&quot;true&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-info show&quot; id=&quot;notification-info&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;toast-message&quot;&gt;
-        &lt;p class=&quot;bold&quot;&gt;Du har fået en besked&lt;/p&gt;
-        &lt;button class=&quot;toast-close&quot;&gt;Luk&lt;/button&gt;
+        &lt;p&gt;&lt;strong&gt;&lt;span class=&quot;sr-only&quot;&gt;Information: &lt;/span&gt;Du har fået en besked&lt;/strong&gt;
+        &lt;/p&gt;
         &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.&lt;/p&gt;
+        &lt;button class=&quot;toast-close&quot;&gt;
+            Luk&lt;span class=&quot;sr-only&quot;&gt; beskeden: Du har fået en besked&lt;/span&gt;
+        &lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 

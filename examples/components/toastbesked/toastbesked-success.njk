@@ -1,2 +1,12 @@
 {% from "components/toast/toast.njk" import toast as toast %}
-{{toast(notification_data)}}
+
+{{
+    toast({
+        "id": "notification-success",
+        "variant": "success",
+        "srVariant": "Succes",
+        "heading": "Din ansøgning er afsendt",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "show": true
+    })
+}}
