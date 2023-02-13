@@ -55,30 +55,44 @@
         "classes": "d-print-none mb-4",
         "icon": "print"
     },
-    "tidligere_registrering": [
-        {
-            "label": "Har du tidligere lavet en lignende registrering?",
-            "value": "Ja"
+    "tidligere_registrering": {
+        "headingLevel": "h4",
+        "classes": { 
+            "label": "col-md-8",
+            "value": "col-md-2"
         },
-        {
-            "label": "Tidligere registreringsnummer",
-            "value": "123.678"
+        "items": [
+            {
+                "label": "Har du tidligere lavet en lignende registrering?",
+                "value": "Ja"
+            },
+            {
+                "label": "Tidligere registreringsnummer",
+                "value": "123.678"
+            },
+            {
+                "label": "Dato for registreringen",
+                "value": "10.10.2010"
+            }
+        ]
+    },
+    "kontaktoplysninger": {
+        "headingLevel": "h4",
+        "classes": { 
+            "label": "col-md-4",
+            "value": "col-md-6"
         },
-        {
-            "label": "Dato for registreringen",
-            "value": "10.10.2010"
-        }
-    ],
-    "kontaktoplysninger": [
-        {
-            "label": "E-mail",
-            "value": "eksempel@mail.dk"
-        },
-        {
-            "label": "Telefonnummer",
-            "value": "12345678"
-        }
-    ],
+        "items": [
+            {
+                "label": "E-mail",
+                "value": "eksempel@mail.dk"
+            },
+            {
+                "label": "Telefonnummer",
+                "value": "12345678"
+            }
+        ]
+    },
     "button_done": {
         "text": "Log ud og gå til forsiden",
         "variant": "primary",

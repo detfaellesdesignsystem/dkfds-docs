@@ -1,10 +1,3 @@
-<div class="container">
-    {% for row in list %}<div class="row row-bordered no-gutters">
-        <div class="col-md-4 weight-semibold">
-            {{row.label}}
-        </div>
-        <div class="col-md-8">
-            {{row.value}}
-        </div>
-    </div>{% endfor %}
-</div>
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
+
+{{structured_list(structured_list_example)}}

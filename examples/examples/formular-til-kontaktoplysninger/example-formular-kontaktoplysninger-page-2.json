@@ -65,6 +65,41 @@
             }
         ]
     },
+    "oplysninger": {
+        "headingLevel": "h2",
+        "classes": { 
+            "label": "col-md-4",
+            "value": "col-md-5",
+            "edit": "col-md-3 align-text-md-right d-print-none"
+        },
+        "items": [
+            {
+                "label": "Navn",
+                "value": "Karen Jensen",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            },
+            {
+                "label": "Adresse",
+                "value": "Vængestræde 77<br>0081 Købstad",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            },
+            {
+                "label": "Telefonnummer",
+                "value": "01 23 45 67",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            },
+            {
+                "label": "E-mail",
+                "value": "kjensen@eksempelmail.dk",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            },
+            {
+                "label": "Alder",
+                "value": "40-59",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            }
+        ]
+    },
     "button_send": {
         "variant": "primary",
         "text": "Send",

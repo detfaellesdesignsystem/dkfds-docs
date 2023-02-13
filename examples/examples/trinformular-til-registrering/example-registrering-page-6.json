@@ -22,23 +22,11 @@
         },
         "list": {
             "items": [
-                {
-                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
-                },
-                {
-                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
-                },
-                {
-                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
-                },
-                {
-                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
-                    "hideOnPrint": true
-                },
-                {
-                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
-                    "hideOnPrint": true
-                }
+                { "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>" },
+                { "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>" },
+                { "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>" },
+                { "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true },
+                { "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true }
             ]
         },
         "languageSwitcher": {
@@ -108,35 +96,51 @@
             }
         ]
     },
-    "tidligere_registrering": [
-        {
-            "label": "Har du tidligere lavet en lignende registrering?",
-            "value": "Ja",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+    "tidligere_registrering": {
+        "headingLevel": "h3",
+        "classes": { 
+            "label": "col-md-8",
+            "value": "col-md-2",
+            "edit": "col-md-2 align-text-md-right d-print-none"
         },
-        {
-            "label": "Tidligere registreringsnummer",
-            "value": "123.678",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+        "items": [
+            {
+                "label": "Har du tidligere lavet en lignende registrering?",
+                "value": "Ja",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+            },
+            {
+                "label": "Tidligere registreringsnummer",
+                "value": "123.678",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+            },
+            {
+                "label": "Dato for registreringen",
+                "value": "10.10.2010",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+            }
+        ]
+    },
+    "kontaktoplysninger": {
+        "headingLevel": "h3",
+        "classes": { 
+            "label": "col-md-4",
+            "value": "col-md-6",
+            "edit": "col-md-2 align-text-md-right d-print-none"
         },
-        {
-            "label": "Dato for registreringen",
-            "value": "10.10.2010",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
-        }
-    ],
-    "kontaktoplysninger": [
-        {
-            "label": "E-mail",
-            "value": "eksempel@mail.dk",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
-        },
-        {
-            "label": "Telefonnummer",
-            "value": "12345678",
-            "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
-        }
-    ],
+        "items": [
+            {
+                "label": "E-mail",
+                "value": "eksempel@mail.dk",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
+            },
+            {
+                "label": "Telefonnummer",
+                "value": "12345678",
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
+            }
+        ]
+    },
     "button_next": {
         "text": "Send registrering",
         "variant": "primary",

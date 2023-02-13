@@ -23,7 +23,7 @@ description: "Dokumentation på implementering af strukturerede lister."
 
 {% include code/syntax.html component="structured-list" %}
 
-Tilføj klasserne `no-gutters` or `row-bordered` til row-elementet. Kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som alternativ til en tabel, hvis der ingen headers er.
+Tilføj klasserne `no-gutters` or `row-bordered` til row-elementet. Kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som alternativ til en tabel, hvis der ingen headers er. Hver titel i listen skal være markeret som en passende heading, der har klassen `structured-heading`.
 
 Strukturerede lister gør brug af designsystemets grid, for mere vejledning om implementering se derfor under <a href="/kode/grid/">grid</a>
 

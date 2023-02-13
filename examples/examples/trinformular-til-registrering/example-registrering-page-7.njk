@@ -13,6 +13,7 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
 {% from "components/table/table.njk" import table as table %}
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
 
 {# <!-- Variables --> #}
 
@@ -141,41 +142,19 @@
                 { "headerContent": "Vedhæftet dokument" }
             ],
             "tbody": [
-                [
-                    { "content": exampleDocumentLink1 }
-                ],
-                [
-                    { "content": exampleDocumentLink2 }
-                ]
+                [ { "content": exampleDocumentLink1 } ],
+                [ { "content": exampleDocumentLink2 } ]
             ]
         })
     }}
 
     <h3>Tidligere registrering</h3>
     <div class="w-percent-md-60 mt-6 mb-7">
-        {% for row in tidligere_registrering %}
-        <div class="row row-bordered no-gutters">
-            <div class="col-12 col-md-8 weight-semibold">
-                {{ row.label }}
-            </div>
-            <div class="col-12 col-md-2">
-                {{ row.value }}
-            </div>
-        </div>
-        {% endfor %}
+        {{structured_list(tidligere_registrering)}}
     </div>
     <h3>Kontaktoplysninger</h3>
     <div class="w-percent-md-60 mt-6 mb-7">
-        {% for row in kontaktoplysninger %}
-        <div class="row row-bordered no-gutters">
-            <div class="col-12 col-md-4 weight-semibold">
-                {{ row.label }}
-            </div>
-            <div class="col-12 col-md-6">
-                {{ row.value }}
-            </div>
-        </div>
-        {% endfor %}
+        {{structured_list(kontaktoplysninger)}}
     </div>
     {{ button(button_done) }}
 </main>

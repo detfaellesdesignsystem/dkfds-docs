@@ -1,17 +1,27 @@
 {
-    "list":  [
-        {
-            "label": "Navn",
-            "value": "Kirsten Mønster Jensen"
+    "structured_list_edit_example": {
+        "headingLevel": "h3",
+        "classes": { 
+            "label": "col-md-4",
+            "value": "col-md-6",
+            "edit": "col-md-2 align-text-md-right"
         },
-        {
-            "label": "E-mail",
-            "value": "kirstenjensen@eksempel.dk"
-        },
-        {
-            "label": "Telefonnummer",
-            "value": "12 34 56 78"
-        }
-    ]
-
+        "items":  [
+            {
+                "label": "Navn",
+                "value": "Kirsten Mønster Jensen",
+                "href": "#"
+            },
+            {
+                "label": "E-mail",
+                "value": "kirstenjensen@eksempel.dk",
+                "href": "#"
+            },
+            {
+                "label": "Telefonnummer",
+                "value": "12 34 56 78",
+                "href": "#"
+            }
+        ]
+    }
 }

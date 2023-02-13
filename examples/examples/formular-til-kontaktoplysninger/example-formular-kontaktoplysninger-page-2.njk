@@ -13,6 +13,7 @@
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
 
 {# <!-- Variables --> #}
 
@@ -71,55 +72,17 @@
 
 {% block body %}
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
-
     <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/" class="back-link">Tilbage</a>
-
     <form novalidate method="post" action="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/">
         <fieldset>
             <legend>
                 <h1 class="mb-4">Bekræft oplysninger</h1>
             </legend>
-
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    <div class="row row-bordered no-gutters">
-                        <div class="col-md-4 weight-semibold">Navn</div>
-                        <div class="col-md-5">Karen Jensen</div>
-                        <div class="col-md-3 align-text-md-right d-print-none">
-                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
-                        </div>
-                    </div>
-                    <div class="row row-bordered no-gutters">
-                        <div class="col-md-4 weight-semibold">Adresse</div>
-                        <div class="col-md-5">Vængestræde 77<br>0081 Købstad</div>
-                        <div class="col-md-3 align-text-md-right d-print-none">
-                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
-                        </div>
-                    </div>
-                    <div class="row row-bordered no-gutters">
-                        <div class="col-md-4 weight-semibold">Telefonnummer</div>
-                        <div class="col-md-5">01 23 45 67</div>
-                        <div class="col-md-3 align-text-md-right d-print-none">
-                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
-                        </div>
-                    </div>
-                    <div class="row row-bordered no-gutters">
-                        <div class="col-md-4 weight-semibold">E-mail</div>
-                        <div class="col-md-5">kjensen@eksempelmail.dk</div>
-                        <div class="col-md-3 align-text-md-right d-print-none">
-                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
-                        </div>
-                    </div>
-                    <div class="row row-bordered no-gutters">
-                        <div class="col-md-4 weight-semibold">Alder</div>
-                        <div class="col-md-5">40-59</div>
-                        <div class="col-md-3 align-text-md-right d-print-none">
-                            <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/">Rediger</a>
-                        </div>
-                    </div>
+                    {{structured_list(oplysninger)}}
                 </div>
             </div>
-
             {{ button(button_send) }}
         </fieldset>
     </form>

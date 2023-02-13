@@ -42,29 +42,65 @@
             ]
         }
     },
-    "oplysninger_om_afsender": [
-        {
-            "label": "Navn på ansøger",
-            "value": "Kirsten Mønster Jensen"
+    "oplysninger_om_ansoeger": {
+        "headingLevel": "h3",
+        "classes": { 
+            "label": "col-md-4",
+            "value": "col-md-6",
+            "edit": "col-md-2 align-text-md-right d-print-none"
         },
-        {
-            "label": "Jeg ansøger som",
-            "value": "Repræsentant for virksomhed",
-            "href": "#"
+        "items": [
+            {
+                "label": "Navn på ansøger",
+                "value": "Kirsten Mønster Jensen"
+            },
+            {
+                "label": "Jeg ansøger som",
+                "value": "Repræsentant for virksomhed",
+                "href": "#"
+            },
+            {
+                "label": "Virksomhedens CVR-nummer",
+                "value": "01234567",
+                "href": "#"
+            }
+        ]
+    },
+    "kontaktoplysninger": {
+        "headingLevel": "h3",
+        "classes": { 
+            "label": "col-md-4",
+            "value": "col-md-6",
+            "edit": "col-md-2 align-text-md-right d-print-none"
         },
-        {
-            "label": "Virksomhedens CVR-nummer",
-            "value": "01234567",
-            "href": "#"
-        }
-    ],
-    "kontaktoplysninger": [
-        {
-            "label": "Telefonnummer",
-            "value": "12345678",
-            "href": "#"
-        }
-    ],
+        "items": [
+            {
+                "label": "Telefonnummer",
+                "value": "12345678",
+                "href": "#"
+            }
+        ]
+    },
+    "ansoegningens_type": {
+        "headingLevel": "h3",
+        "classes": { 
+            "label": "col-md-4",
+            "value": "col-md-6",
+            "edit": "col-md-2 align-text-md-right d-print-none"
+        },
+        "items": [
+            {
+                "label": "Der ansøges om",
+                "value": "Lorem ipsum dolor (§ABC)",
+                "href": "#"
+            },
+            {
+                "label": "Baggrund for ansøgningen",
+                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lobortis erat. Aliquam gravida, lectus viverra dapibus bibendum, est eros tristique nunc.",
+                "href": "#"
+            }
+        ]
+    },
     "trinindikator_data": {
         "id": "overflow-ansoeg",
         "steps": [
@@ -90,18 +126,6 @@
             }
         ]
     },
-    "ansoegningens_type": [
-        {
-            "label": "Der ansøges om",
-            "value": "Lorem ipsum dolor (§ABC)",
-            "href": "#"
-        },
-        {
-            "label": "Baggrund for ansøgningen",
-            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lobortis erat. Aliquam gravida, lectus viverra dapibus bibendum, est eros tristique nunc.",
-            "href": "#"
-        }
-    ],
     "button_send": {
         "text": "Send ansøgning",
         "variant": "primary",
