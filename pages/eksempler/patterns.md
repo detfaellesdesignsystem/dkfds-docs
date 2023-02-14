@@ -1,5 +1,7 @@
 ---
 permalink: /eksempler/patterns/
+redirect_from:
+- /eksempler/patterns/forlad-siden/
 layout: styleguide
 title: Patterns
 category: Eksempler_category

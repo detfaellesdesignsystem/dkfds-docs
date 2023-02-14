@@ -174,6 +174,7 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 
 <h3 class="h4">Øvrige</h3>
+- Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes. 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Forbedret tilgængeligheden for <a href="/komponenter/strukturerede-lister/">strukturerede lister</a>, hvor titlerne er markeret som en heading.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret tilgængeligheden for <a href="/komponenter/toastbesked/">toastbeskeder</a>: HTML'en er ændret, så titlen nu er markeret med `<strong>` og en skærmlæser annoncerer toastbesked-varianten samt titlen ved fokus på luk-knappen.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret tilgængeligheden for <a href="/komponenter/beskeder/">beskeder</a>: HTML'en er ændret, så titlen nu er markeret med `<strong>` eller et heading-element afhængigt af konteksten.

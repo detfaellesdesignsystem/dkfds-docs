@@ -66,24 +66,24 @@
         "steps": [
             {
                 "text": "Vælg personer",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariahidden": false }
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Vælg noget mere",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariahidden": false }
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Vedhæft dokumenter",
-                "icon": { "name": "highlight-off", "ariaLabel": "Fejl", "ariahidden": false },
+                "icon": { "name": "highlight-off", "ariaLabel": "Fejl", "ariaHidden": false },
                 "error": true
             },
             {
                 "text": "Tidligere registrering",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariahidden": false }
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Kontaktoplysninger",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariahidden": false }
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Opsummering",

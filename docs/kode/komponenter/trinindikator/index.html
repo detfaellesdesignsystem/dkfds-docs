@@ -1926,26 +1926,6 @@
     
 
 
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/eksempler/patterns/forlad-siden/"  class="nav-link">
-        Er du sikker på, du vil forlade siden?
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
 <li class="  has-anchor-links">
 
   
@@ -4180,6 +4160,15 @@
 
 
 <li class=" ">
+<a href="#klikbar" >Alle trin synlige</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
 <a href="#responsiv" >Responsiv</a>
 </li>
 
@@ -4199,6 +4188,15 @@
 
 <li class=" ">
 <a href="#ekstra-information" >Ekstra information</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
+<a href="#med-fejl" >Trinindikator med fejl</a>
 </li>
 
     
@@ -4426,9 +4424,11 @@
           
           
           <ul class="d-lg-none nobullet-list">
+          <li><a href="#klikbar">Alle trin synlige</a></li>
           <li><a href="#responsiv">Responsiv</a></li>
           <li><a href="#laast">Låst</a></li>
           <li><a href="#ekstra-information">Ekstra information</a></li>
+          <li><a href="#med-fejl">Trinindikator med fejl</a></li>
           
           </ul>
           
@@ -4473,7 +4473,7 @@
                         </div>
 
                         <span class="sidenav-icon">
-                            <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+                            <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use xlink:href="#done"></use></svg>
                         </span>
 
                     </a>
@@ -4550,7 +4550,7 @@
                         &lt;/div&gt;
 
                         &lt;span class=&quot;sidenav-icon&quot;&gt;
-                            &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                         &lt;/span&gt;
 
                     &lt;/a&gt;
@@ -4600,6 +4600,67 @@
 
 <p>Nedenstående varianter implementeres i et grid på samme måde som <a href="/komponenter/venstremenu/">venstremenu</a>, således at komponenten vises i en kolonne til venstre for indholdet.</p>
 
+<h3 id="klikbar">Alle trin synlige</h3>
+
+<div class="component-preview component-preview-code  component-code-tringuide-clickable">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tringuide-clickable/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tringuide-clickable</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;sidebar-col&quot;&gt;
+    &lt;ul class=&quot;sidenav-list&quot; role=&quot;menu&quot;&gt;
+
+        &lt;li role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                &lt;span class=&quot;sidenav-number&quot;&gt;1.&lt;/span&gt;
+                &lt;div&gt;
+                    &lt;span&gt;Trin 1&lt;/span&gt;
+
+                &lt;/div&gt;
+
+                &lt;span class=&quot;sidenav-icon&quot;&gt;
+                    &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                &lt;/span&gt;
+
+            &lt;/a&gt;
+        &lt;/li&gt;
+
+        &lt;li class=&quot;active current &quot; role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;&gt;
+                &lt;span class=&quot;sidenav-number&quot;&gt;2.&lt;/span&gt;
+                &lt;div&gt;
+                    &lt;span&gt;Trin 2&lt;/span&gt;
+
+                &lt;/div&gt;
+
+            &lt;/a&gt;
+        &lt;/li&gt;
+
+        &lt;li role=&quot;none&quot;&gt;
+            &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                &lt;span class=&quot;sidenav-number&quot;&gt;3.&lt;/span&gt;
+                &lt;div&gt;
+                    &lt;span&gt;Trin 3&lt;/span&gt;
+
+                &lt;/div&gt;
+
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 <h3 id="responsiv">Responsiv</h3>
 
 <div class="component-preview component-preview-code  component-code-tringuide-responsive-overflowmenu">
@@ -4636,7 +4697,7 @@
                         &lt;/div&gt;
 
                         &lt;span class=&quot;sidenav-icon&quot;&gt;
-                            &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                         &lt;/span&gt;
 
                     &lt;/a&gt;
@@ -4700,7 +4761,7 @@
                 &lt;/div&gt;
 
                 &lt;span class=&quot;sidenav-icon&quot;&gt;
-                    &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                    &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                 &lt;/span&gt;
 
             &lt;/a&gt;
@@ -4734,7 +4795,7 @@
     </div>
 </div>
 
-<h2 id="ekstra-information">Ekstra information</h2>
+<h3 id="ekstra-information">Ekstra information</h3>
 
 <div class="component-preview component-preview-code  component-code-tringuide-information">
     
@@ -4763,7 +4824,7 @@
                 &lt;/div&gt;
 
                 &lt;span class=&quot;sidenav-icon&quot;&gt;
-                    &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                    &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                 &lt;/span&gt;
 
             &lt;/a&gt;
@@ -4796,6 +4857,96 @@
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3>Trinindikator med fejl</h3>
+
+<p>Tilføj klassen <code>sidenav-error</code> til de liste-elementer, der er fejl i og anvend ikonet <code>highlight-off</code> med en passende <code>aria-label</code>.</p>
+
+<div class="component-preview component-preview-code  component-code-tringuide-error-responsive">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tringuide-error-responsive/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tringuide-error-responsive</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div
+    class=&quot;overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive sidebar-col&quot;&gt;
+    &lt;button class=&quot;button-overflow-menu js-dropdown&quot; data-js-target=&quot;trinindikator-error&quot;
+        aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+        Trin 3 af 4
+        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#arrow-drop-down&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;overflow-menu-inner&quot; id=&quot;trinindikator-error&quot; aria-hidden=&quot;true&quot;&gt;
+
+        &lt;nav class=&quot;sidebar-col&quot;&gt;
+            &lt;ul class=&quot;sidenav-list&quot; role=&quot;menu&quot;&gt;
+
+                &lt;li class=&quot;sidenav-error&quot; role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        &lt;span class=&quot;sidenav-number&quot;&gt;1.&lt;/span&gt;
+                        &lt;div&gt;
+                            &lt;span&gt;Trin 1&lt;/span&gt;
+
+                        &lt;/div&gt;
+
+                        &lt;span class=&quot;sidenav-icon&quot;&gt;
+                            &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Fejl&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#highlight-off&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                        &lt;/span&gt;
+
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        &lt;span class=&quot;sidenav-number&quot;&gt;2.&lt;/span&gt;
+                        &lt;div&gt;
+                            &lt;span&gt;Trin 2&lt;/span&gt;
+
+                        &lt;/div&gt;
+
+                        &lt;span class=&quot;sidenav-icon&quot;&gt;
+                            &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;Gennemført&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                        &lt;/span&gt;
+
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;active current &quot; role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot; aria-current=&quot;page&quot;&gt;
+                        &lt;span class=&quot;sidenav-number&quot;&gt;3.&lt;/span&gt;
+                        &lt;div&gt;
+                            &lt;span&gt;Trin 3&lt;/span&gt;
+
+                        &lt;/div&gt;
+
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li role=&quot;none&quot;&gt;
+                    &lt;a href=&quot;&quot; role=&quot;menuitem&quot;&gt;
+                        &lt;span class=&quot;sidenav-number&quot;&gt;4.&lt;/span&gt;
+                        &lt;div&gt;
+                            &lt;span&gt;Trin 4&lt;/span&gt;
+
+                        &lt;/div&gt;
+
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
 
 
     </div>

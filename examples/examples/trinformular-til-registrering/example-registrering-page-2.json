@@ -82,7 +82,7 @@
                 "icon": {
                     "name": "done",
                     "ariaLabel": "Gennemført",
-                    "ariahidden": false
+                    "ariaHidden": false
                 }
             },
             {
