@@ -3848,7 +3848,7 @@
   <li>Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.</li>
   <li>Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> skifter ikke længere mellem “vælg række” og “fravælg række”, da forståelsen blev tvetydig, når tjekboksens status blev læst højt. I stedet anvendes kun “vælg række” sammen med tjekboksens status. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, bortfalder muligheden for at give andre sprogoversættelser og eventuelle oversættelser skrives direkte i HTML’en.</li>
   <li>Fjernet <code>aria-label</code> fra <code>label</code>-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.</li>
-  <li>Opdateret JavaScript for responsive tabeller, så det nu kun er <code>th</code>-elementer uden klassen <code>actions-header</code>, der kan sætte <code>data-title</code>-attributten.</li>
+  <li>Tilføjet klassen <code>actions-header</code>, der giver mulighed for at tilføje en skærmlæserbesked i en ellers tom headercelle, uden at denne besked vises i de responsive tabeller. Benyttes typisk til tabelkolonnerne med rediger-mulighed på opsummeringssider. JavaScript’en er hertil blevet tilpasset.</li>
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
@@ -3865,12 +3865,10 @@
 
 <h3 class="h4">Øvrige</h3>
 <ul>
-  <li>Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Forbedret tilgængeligheden for <a href="/komponenter/strukturerede-lister/">strukturerede lister</a>, hvor titlerne er markeret som en heading.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret tilgængeligheden for <a href="/komponenter/toastbesked/">toastbeskeder</a>: HTML’en er ændret, så titlen nu er markeret med <code>&lt;strong&gt;</code> og en skærmlæser annoncerer toastbesked-varianten samt titlen ved fokus på luk-knappen.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret tilgængeligheden for <a href="/komponenter/beskeder/">beskeder</a>: HTML’en er ændret, så titlen nu er markeret med <code>&lt;strong&gt;</code> eller et heading-element afhængigt af konteksten.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Følgende komponenter har fået opdateret HTML’en, så titler nu er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/kode/komponenter/badges/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/kode/komponenter/cookiemeddelelse/">cookiemeddelelser</a>, <a href="/kode/komponenter/strukturerede-lister/">strukturerede lister</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæsere annoncerer nu også <a href="/komponenter/toastbesked/">toastbeskeders</a> variant og derudover titlen ved fokus på luk-knappen.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl i <a href="/komponenter/fejlmeddelelser/#accordions">accordioneksempel</a>, hvor fejlbeskedens <code>id</code> ikke var korrekt sat for skærmlæsere.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret beskrivelsen af <a href="/kode/komponenter/badges/">badges</a>, der enten skal anvendes med <code>span</code> eller <code>strong</code>.</li>
   <li>Fjernet <code>jsnext:main</code> fra <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet ikonet <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
