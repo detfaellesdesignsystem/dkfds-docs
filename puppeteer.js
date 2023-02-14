@@ -173,7 +173,8 @@ var exampleUrls = [
     {"url": "pages/eksempler/opsummering/opsummering-2/", "filename": "opsummering-2"},
     {"url": "pages/eksempler/kvittering/kvittering-1/", "filename": "kvittering-1"},
     {"url": "pages/eksempler/kvittering/kvittering-2/", "filename": "kvittering-2"},
-    {"url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "filename": "formular-med-fejl-1"}
+    {"url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "filename": "formular-med-fejl-1"},
+    {"url": "pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/", "filename": "trinindikator-med-fejl-1"}
 ];
 
 (async () => {

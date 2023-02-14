@@ -20,7 +20,7 @@ subnav:
   href: '#opsummering'
 - text: 'Kvittering'
   href: '#kvittering'
-- text: 'Formular med fejl'
+- text: 'Fejl'
   href: '#formular-med-fejl'
 ---
 Templates er best practice designløsninger til specifikke sidetyper.
@@ -85,9 +85,12 @@ Templates er best practice designløsninger til specifikke sidetyper.
 </div>
 
 {:#formular-med-fejl}
-## Formular med fejl
+## Fejl
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r=/eksempler/templates/%23formular-med-fejl" title="Eksempelside: Formular med fejl" class="screenshot d-block"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <a href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/?r=/eksempler/templates/%23formular-med-fejl" title="Eksempelside: Opsummeringsside med fejl" class="screenshot d-block"></a>
   </div>
 </div>

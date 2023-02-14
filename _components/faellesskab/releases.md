@@ -133,8 +133,9 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
   <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
 </div>
 - Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/201" class="icon-link">issue #201 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Rettet fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.
-- Rettet fejl, hvor markøren skiftede udseende på navigationsknapperne, selv når disse knapper ikke var synlige.
+- Rettet fejl, hvor markøren skiftede udseende på navigationsknapperne, selvom disse knapper ikke var synlige.
 - Tilføjet skærmlæserbeskeder for datovælgere med begrænsninger på datovalg.
 - Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
 - Datovælgeren kræver nu et `id` for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
@@ -148,6 +149,8 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.
 - Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert. Stylingen for `.sidenav-list li a` er i denne forbindelse blevet ændret fra `flex-wrap: wrap` til `flex-wrap: nowrap`, hvilket kan give ombrydningsproblemer, hvis man ikke opdaterer html'en.
 - Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er fejl i et trin i trinindikatoren.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a></h3>

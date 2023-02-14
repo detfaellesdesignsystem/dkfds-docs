@@ -4144,6 +4144,15 @@
 
 
 <li class=" ">
+<a href="#klikbar" >Alle trin synlige</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
 <a href="#responsiv" >Responsiv</a>
 </li>
 
@@ -4163,6 +4172,15 @@
 
 <li class=" ">
 <a href="#ekstra-information" >Ekstra information</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
+<a href="#med-fejl" >Trinindikator med fejl</a>
 </li>
 
     
@@ -4238,9 +4256,11 @@
           
           
           <ul class="d-lg-none nobullet-list">
+          <li><a href="#klikbar">Alle trin synlige</a></li>
           <li><a href="#responsiv">Responsiv</a></li>
           <li><a href="#laast">Låst</a></li>
           <li><a href="#ekstra-information">Ekstra information</a></li>
+          <li><a href="#med-fejl">Trinindikator med fejl</a></li>
           
           </ul>
           
@@ -4293,7 +4313,7 @@
                     </a>
                 </li>
 
-                <li class=" active current" role="none">
+                <li class="active current " role="none">
                     <a href="" role="menuitem" aria-current="page">
                         <span class="sidenav-number">2.</span>
                         <div>
@@ -4396,6 +4416,73 @@
   <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/komponenter/trinindikator/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning'">Trinformular til ansøgning</a></li>
 </ul>
 
+<h2 id="klikbar">Alle trin synlige</h2>
+
+<div class="component-preview  component-preview-tringuide-clickable">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tringuide-clickable/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tringuide-clickable</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på synlig trinindikator</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="row">
+        <aside class="col-12">
+        
+        <nav class="sidebar-col">
+    <ul class="sidenav-list" role="menu">
+
+        <li role="none">
+            <a href="" role="menuitem">
+                <span class="sidenav-number">1.</span>
+                <div>
+                    <span>Trin 1</span>
+
+                </div>
+
+                <span class="sidenav-icon">
+                    <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+                </span>
+
+            </a>
+        </li>
+
+        <li class="active current " role="none">
+            <a href="" role="menuitem" aria-current="page">
+                <span class="sidenav-number">2.</span>
+                <div>
+                    <span>Trin 2</span>
+
+                </div>
+
+            </a>
+        </li>
+
+        <li role="none">
+            <a href="" role="menuitem">
+                <span class="sidenav-number">3.</span>
+                <div>
+                    <span>Trin 3</span>
+
+                </div>
+
+            </a>
+        </li>
+    </ul>
+</nav>
+        
+        </aside>
+        </div>
+        
+    </div>
+    
+</div>
+
 <h2 id="responsiv">Responsiv</h2>
 <p>Denne komponent er responsiv, og vil derfor ændre udseende, når man ændrer skærmstørrelse.</p>
 
@@ -4440,7 +4527,7 @@
                     </a>
                 </li>
 
-                <li class=" active current" role="none">
+                <li class="active current " role="none">
                     <a href="" role="menuitem" aria-current="page">
                         <span class="sidenav-number">2.</span>
                         <div>
@@ -4510,7 +4597,7 @@
             </a>
         </li>
 
-        <li class="disabled active current" role="none">
+        <li class="disabled active current " role="none">
             <a role="menuitem" aria-current="page">
                 <span class="sidenav-number">2.</span>
                 <div>
@@ -4579,7 +4666,7 @@
             </a>
         </li>
 
-        <li class=" active current" role="none">
+        <li class="active current " role="none">
             <a href="" role="menuitem" aria-current="page">
                 <span class="sidenav-number">2.</span>
                 <div>
@@ -4614,6 +4701,116 @@
     
 </div>
 
+<h2 id="med-fejl">Trinindikator med fejl</h2>
+
+<p>Ved brug af trinindikator kan der i nogle tilfælde være behov for at indikere overfor brugeren, at et eller flere trin mangler information og/eller har fejl, efter brugeren er gået videre til næste trin.</p>
+
+<div class="component-preview  component-preview-tringuide-error-responsive">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tringuide-error-responsive/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tringuide-error-responsive</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på trinindikator med fejl</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="row">
+        <aside class="col-12">
+        
+        <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive sidebar-col">
+    <button class="button-overflow-menu js-dropdown" data-js-target="trinindikator-error" aria-haspopup="true" aria-expanded="false">
+        Trin 3 af 4
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
+    </button>
+    <div class="overflow-menu-inner" id="trinindikator-error" aria-hidden="true">
+
+        <nav class="sidebar-col">
+            <ul class="sidenav-list" role="menu">
+
+                <li class="sidenav-error" role="none">
+                    <a href="" role="menuitem">
+                        <span class="sidenav-number">1.</span>
+                        <div>
+                            <span>Trin 1</span>
+
+                        </div>
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg" aria-label="Fejl" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li role="none">
+                    <a href="" role="menuitem">
+                        <span class="sidenav-number">2.</span>
+                        <div>
+                            <span>Trin 2</span>
+
+                        </div>
+
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg" aria-label="Gennemført" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class="active current " role="none">
+                    <a href="" role="menuitem" aria-current="page">
+                        <span class="sidenav-number">3.</span>
+                        <div>
+                            <span>Trin 3</span>
+
+                        </div>
+
+                    </a>
+                </li>
+
+                <li role="none">
+                    <a href="" role="menuitem">
+                        <span class="sidenav-number">4.</span>
+                        <div>
+                            <span>Trin 4</span>
+
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+        
+        </aside>
+        </div>
+        
+    </div>
+    
+</div>
+
+<h3>Anvendes til</h3>
+
+<p>Trinindikator med fejl anvendes til at gøre brugeren opmærksom på eventuelle fejl i de trin i formularen, der i øjeblikket ikke er valgt og hvor der efter validering er registreret en fejl, men som ikke blokerer brugeren i at gå videre til næste trin.</p>
+
+<h3>Vejledning</h3>
+
+<ul>
+  <li>Fejl vises, hvis der er fejl i det indtastede data eller obligatoriske felter ikke er udfyldt.</li>
+  <li>Fejl angives med et fejl-ikon ud for trinnet med fejl samt med en baggrundsfarve. Ikonet kan fjernes igen ved indtastning af korrekt data i det pågældende trin.</li>
+</ul>
+
+<h3>Opsummeringsside</h3>
+
+<p>Eventuelle fejl vises på opsummeringssiden i form af <a href="/komponenter/fejlopsummering/">fejlopsummering</a> med henvisning til de specifikke trin som link i fejlopsummeringen.</p>
+
+<p><a href="/eksempler/templates/#formular-med-fejl">Se et eksempel på opsummeringssiden med fejl i trinindikatoren.</a></p>
 
 
           

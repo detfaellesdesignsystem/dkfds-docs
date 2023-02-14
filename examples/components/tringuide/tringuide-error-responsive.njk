@@ -1,0 +1,26 @@
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+
+{{ 
+    overflow_stepguide({
+        "id": "trinindikator-error",
+        "responsive": true,
+        "steps": [
+            {
+                "text": "Trin 1",
+                "icon": {"name": "highlight-off", "ariaLabel": "Fejl", "ariahidden": false},
+                "error": true
+            },
+            {
+                "text": "Trin 2",
+                "icon": {"name": "done", "ariaLabel": "Gennemført", "ariahidden": false}
+            },
+            {
+                "text": "Trin 3",
+                "active": true
+            },
+            {
+                "text": "Trin 4"
+            }
+        ]
+    }) 
+}}
