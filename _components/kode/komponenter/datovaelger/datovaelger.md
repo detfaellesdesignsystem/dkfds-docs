@@ -13,6 +13,8 @@ subnav:
   href: '#interval'
 - text: Fast værdi
   href: '#fast-værdi'
+- text: Datoformat
+  href: '#datoformat'
 - text: Fejlmeddelelse
   href: '#fejlmeddelelse'
 ---
@@ -105,6 +107,19 @@ DKFDS.datePicker.on(document.body);
 {:#fast-værdi}
 ### Fast værdi
 {% include code/syntax.html component="date-picker-default-date" link="true" %}
+
+{:#datoformat}
+### Datoformat
+Anvend attributten `data-dateformat`. Mulige værdier er:
+- `"DD/MM/YYYY"` (default, hvis der ikke er nogen attribut)
+- `"DD-MM-YYYY"`
+- `"DD.MM.YYYY"`
+- `"DD MM YYYY"`
+- `"DD/MM-YYYY"`
+
+Bemærk at valg af datoformat udelukkende påvirker, hvordan datoer vises i inputfeltet, efter brugeren har trykket på en dato i datovælgeren. Alle ovenstående datoformater er gyldige, hvis brugeren selv vælger at skrive datoen ind i feltet.
+
+{% include code/syntax.html component="date-picker-format" link="true" %}
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse

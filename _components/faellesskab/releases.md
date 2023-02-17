@@ -109,12 +109,12 @@ Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR 
 
 - MAJOR: Ændringer i kode og/eller design, der ikke er bagud-kompatible - som fx erstatning eller sletning af komponenter eller ændringer i kode og/eller design, der medfører bagudrettede tilpasninger ved opdatering til den pågældende version.
 - MINOR: Tilføjelser, ændringer og ny funktionalitet, der er bagud-kompatible.
-- PATCH: bagud-kompatible fejlrettelser (bug fixes).
+- PATCH: Bagud-kompatible fejlrettelser (bug fixes).
 
 {:.h4}
-### Release proces
+### Release-proces
 
-Designsystemet er "levende" og skal holdes á jour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens.
+Designsystemet er "levende" og skal holdes ajour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens.
 
 {:.h4}
 ### Tidligere versioner af dokumentationen
@@ -140,6 +140,7 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 - Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
 - Datovælgeren kræver nu et `id` for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
 - Ændret `aria-selected` til `aria-current` på valgte datoer, måneder og år.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at tilpasse datoformatet. Datovælgerens inputfelt er i denne forbindelse opdateret, så den accepterer flere måder at indtaste en dato på.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>

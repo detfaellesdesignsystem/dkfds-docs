@@ -3714,6 +3714,15 @@
 
 
 <li class=" ">
+<a href="#datoformat" >Datoformat</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
 <a href="#fejlmeddelelse" >Fejlmeddelelse</a>
 </li>
 
@@ -4408,6 +4417,7 @@
           <ul class="d-lg-none nobullet-list">
           <li><a href="#interval">Begræns mulige datoer</a></li>
           <li><a href="#fast-værdi">Fast værdi</a></li>
+          <li><a href="#datoformat">Datoformat</a></li>
           <li><a href="#fejlmeddelelse">Fejlmeddelelse</a></li>
           
           </ul>
@@ -4431,8 +4441,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group 
-    ">
+        <div class="form-group">
     <label class="form-label" for="datepicker-example1">Dato for aftale</label>
 
     <div class="date-picker">
@@ -4461,8 +4470,7 @@
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group 
-    &quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;datepicker-example1&quot;&gt;Dato for aftale&lt;/label&gt;
 
     &lt;div class=&quot;date-picker&quot;&gt;
@@ -4577,8 +4585,7 @@ DKFDS.datePicker.on(document.body);</code></pre></figure>
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group 
-    &quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;datepicker-example2&quot;&gt;Dato for aftale&lt;/label&gt;
 
     &lt;div class=&quot;date-picker&quot; data-min-date=&quot;2020-12-04&quot; data-max-date=&quot;2020-12-24&quot;&gt;
@@ -4606,13 +4613,54 @@ DKFDS.datePicker.on(document.body);</code></pre></figure>
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group 
-    &quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;datepicker-example3&quot;&gt;Dato for aftale&lt;/label&gt;
 
     &lt;div class=&quot;date-picker&quot; data-default-date=&quot;2020-12-01&quot;&gt;
         &lt;input type=&quot;text&quot; id=&quot;datepicker-example3&quot; name=&quot;appointment-date3&quot;
             class=&quot;form-input&quot; required&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<h3 id="datoformat">Datoformat</h3>
+<p>Anvend attributten <code>data-dateformat</code>. Mulige værdier er:</p>
+<ul>
+  <li><code>"DD/MM/YYYY"</code> (default, hvis der ikke er nogen attribut)</li>
+  <li><code>"DD-MM-YYYY"</code></li>
+  <li><code>"DD.MM.YYYY"</code></li>
+  <li><code>"DD MM YYYY"</code></li>
+  <li><code>"DD/MM-YYYY"</code></li>
+</ul>
+
+<p>Bemærk at valg af datoformat udelukkende påvirker, hvordan datoer vises i inputfeltet, efter brugeren har trykket på en dato i datovælgeren. Alle datoformater er gyldige, hvis brugeren selv vælger at skrive datoen ind i feltet.</p>
+
+<div class="component-preview component-preview-code  component-code-date-picker-format">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/date-picker-format/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: date-picker-format</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;datepicker-format-example&quot;&gt;Datoeksempel med
+        bindestreger&lt;/label&gt;
+
+    &lt;span class=&quot;form-hint&quot; id=&quot;datepicker-format-example-hint&quot;&gt;Valgte datoer vises i formatet
+        DD-MM-ÅÅÅÅ&lt;/span&gt;
+
+    &lt;div class=&quot;date-picker&quot; data-dateformat=&quot;DD-MM-YYYY&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;datepicker-format-example&quot; name=&quot;datepicker-format-example&quot;
+            class=&quot;form-input&quot; aria-describedby=&quot;datepicker-format-example-hint &quot; required&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 

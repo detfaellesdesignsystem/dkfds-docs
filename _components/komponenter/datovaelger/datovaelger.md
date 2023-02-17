@@ -7,7 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
 tags: 
-lead: Ét felt med knap, hvor man kan vælge en dato
+lead: Ét felt med knap, hvor man kan vælge en dato.
 ---
 
 {% include code/preview-box.html component="date-picker" title="Eksempel på datovælger" link=true code="/kode/komponenter/datovaelger/" %}
@@ -39,3 +39,8 @@ Definér en dato som udgangspunkt. Hvis datoen ikke defineres vil udgangspunktet
 I eksemplet er der valgt at man ved aktivering af datovælgeren starter fokus d. 1 december 2020. Datoen er ikke valgt, man tager blot udgangspunkt i den dag i kalenderen. Hvis man ikke vælger en fast værdi, vil datoen i stedet være dags dato.
 
 {% include code/preview-box.html component="date-picker-default-date" title="Eksempel på datovælger med fast værdi"%}
+
+## Datoformat
+Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også <a href="/kode/komponenter/datovaelger/#datoformat">andre datoformater</a>, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.
+
+{% include code/preview-box.html component="date-picker-format" title="Eksempel på datovælger med andet datoformat"%}

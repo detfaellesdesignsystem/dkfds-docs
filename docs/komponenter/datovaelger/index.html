@@ -4190,7 +4190,7 @@
           
 
           
-            <p class="font-lead">Ét felt med knap, hvor man kan vælge en dato</p>
+            <p class="font-lead">Ét felt med knap, hvor man kan vælge en dato.</p>
           
 
           
@@ -4209,8 +4209,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group 
-    ">
+        <div class="form-group">
     <label class="form-label" for="datepicker-example1">Dato for aftale</label>
 
     <div class="date-picker">
@@ -4276,8 +4275,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group 
-    ">
+        <div class="form-group">
     <label class="form-label" for="datepicker-example2">Dato for aftale</label>
 
     <div class="date-picker" data-min-date="2020-12-04" data-max-date="2020-12-24">
@@ -4307,12 +4305,43 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group 
-    ">
+        <div class="form-group">
     <label class="form-label" for="datepicker-example3">Dato for aftale</label>
 
     <div class="date-picker" data-default-date="2020-12-01">
         <input type="text" id="datepicker-example3" name="appointment-date3" class="form-input" required="" />
+    </div>
+</div>
+        
+    </div>
+    
+</div>
+
+<h2>Datoformat</h2>
+<p>Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også <a href="/kode/komponenter/datovaelger/#datoformat">andre datoformater</a>, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.</p>
+
+<div class="component-preview  component-preview-date-picker-format">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/date-picker-format/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: date-picker-format</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på datovælger med andet datoformat</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="form-group">
+    <label class="form-label" for="datepicker-format-example">Datoeksempel med
+        bindestreger</label>
+
+    <span class="form-hint" id="datepicker-format-example-hint">Valgte datoer vises i formatet
+        DD-MM-ÅÅÅÅ</span>
+
+    <div class="date-picker" data-dateformat="DD-MM-YYYY">
+        <input type="text" id="datepicker-format-example" name="datepicker-format-example" class="form-input" aria-describedby="datepicker-format-example-hint " required="" />
     </div>
 </div>
         

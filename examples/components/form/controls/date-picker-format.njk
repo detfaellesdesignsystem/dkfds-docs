@@ -1,0 +1,11 @@
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+
+{{ 
+    datepicker({
+        "id": "datepicker-format-example",
+        "name": "datepicker-format-example",
+        "label": "Datoeksempel med bindestreger",
+        "helptext": "Valgte datoer vises i formatet DD-MM-ÅÅÅÅ",
+        "format": "DD-MM-YYYY"
+    }) 
+}}
