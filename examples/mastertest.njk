@@ -1,198 +1,52 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
+{% from "components/badge/badges.njk" import badge as badge %}
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
 {% from "components/buttons/buttons.njk" import button as button %}
-{% from "components/icons/icons.njk" import icon as icon %}
-{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/cards/cards.njk" import card as card %}
+{% from "components/cookie-message/cookie-message.njk" import cookie_message as cookie_message %}
+{% from "components/details/details.njk" import details as details %}
+{% from "components/footers/footer.njk" import footer as footer %}
+{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
+{% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+{% from "components/form/controls/select.njk" import select as select %}
+{% from "components/form/controls/text-area.njk" import textarea as textarea %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+{% from "components/icons/base-svg.njk" import icons as icons %}
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/icons/icons.njk" import icon as icon %}
+{% from "components/language-switcher/language-switcher.njk" import languageSwitcher as languageSwitcher %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/overflow-menu/overflow-menu-sort.njk" import overflowmenu as overflowmenu_sort %}
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+{% from "components/pagination/pagination.njk" import pagination as pagination %}
 {% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+{% from "components/search/search.njk" import search as search %}
+{% from "components/side-navigation/sidenav.njk" import nav_list as nav_list %}
+{% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/spinner/spinner.njk" import spinner as spinner %}
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
+{% from "components/table/table.njk" import table as table %}
+{% from "components/tabnav/tabnav.njk" import tabnav as tabnav %}
+{% from "components/tags/tags.njk" import tag as tag %}
+{% from "components/toast/toast.njk" import toast as toast %}
+{% from "components/toggle/toggle.njk" import toggle as toggle %}
+{% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
+
 
 {% block body %}
 <main class="container page-container" id="main-content">
     <div class="row">
-        <div class="col-12">
-            <div class="mb-6 min">
-                {{
-                    radiobuttons({
-                        "id": "radiobuttons-min-id",
-                        "groupname": "radiobuttons-min-groupname",
-                        "radiogroupLegend": "Radioknapper med få muligheder",
-                        "items": [
-                            {
-                                "value": "option1",
-                                "label": "Mulighed 1"
-                            },
-                            {
-                                "value": "option2",
-                                "label": "Mulighed 2"
-                            },
-                            {
-                                "value": "option3",
-                                "label": "Mulighed 3"
-                            }
-                        ]
-                    })
-                }}
-            </div>
-            <div class="mb-6 max">
-                {{
-                    radiobuttons({
-                        "id": "radiobuttons-max-id",
-                        "groupname": "radiobuttons-max-groupname",
-                        "radiogroupLegend": "Radioknapper med alle muligheder",
-                        "collapsedItems": true,
-                        "classes": "test-formgroup",
-                        "optionalLabel": true,
-                        "requiredLabel": true,
-                        "helptext": "Hjælpetekst til radioknapperne",
-                        "errorMessage": "Fejlbesked til radioknapperne",
-                        "tooltip": "Tooltip til radioknapperne",
-                        "items": [
-                            {
-                                "value": "option1",
-                                "label": "Mulighed 1",
-                                "isLarge": false,
-                                "classes": {
-                                    "formgroupradio": "test-formgroupradio",
-                                    "input": "test-input",
-                                    "label": "test-label"
-                                },
-                                "srOnly": "Udfyld informationer herunder",
-                                "attributes": {
-                                    "formgroupradio": "data-test-formgroupradio",
-                                    "input": "data-test-input",
-                                    "label": "data-test-label"
-                                },
-                                "hiddenContent": textinput({ "label": "Ekstra info", "id": "radiobuttons-max-text", "name": "radiobuttons-max-text" })
-                            },
-                            {
-                                "value": "option2",
-                                "label": "Mulighed 2",
-                                "isLarge": false,
-                                "checked": true,
-                                "helptext": "Hjælpetekst til mulighed 2"
-                            },
-                            {
-                                "value": "option3",
-                                "label": "Mulighed 3",
-                                "isLarge": false,
-                                "disabled": true
-                            }
-                        ]
-                    })
-                }}
-            </div>
-            <div class="mb-6">
-                {#
-                    textinput({
-                        "label": "Dette er en label",
-                        "id": "textinput-example-plain",
-                        "name": "textinput-example-plain"
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {#
-                    textinput({
-                        "label": "Test af fejlbesked",
-                        "id": "textinput-example-error",
-                        "name": "textinput-example-error",
-                        "errorMessage": "Noget er fejlet",
-                        "value": "Tekst inde i tekstfeltet"
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {#
-                    textinput({
-                        "label": "Test af attributter og klasser",
-                        "id": "textinput-example-attribute",
-                        "name": "textinput-example-attribute",
-                        "classes": {
-                            "formgroup": "ml-5",
-                            "label": "pl-4",
-                            "input": "pl-8"
-                        },
-                        "attributes": {
-                            "formgroup": "data-test-1=\"1\"",
-                            "label": "data-test-2=\"2\"",
-                            "input": "data-test-3=\"3\""
-                        }
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {#
-                    textinput({
-                        "label": "Alle ekstra tekster vist",
-                        "id": "textinput-example-extras",
-                        "name": "textinput-example-extras",
-                        "tooltip": "Dette er et tooltip",
-                        "helptext": "Dette er en hjælpetekst",
-                        "errorMessage": "Noget er fejlet",
-                        "characterLimit": 30
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {#
-                    button({
-                        "variant": "primary",
-                        "text": "Gem"
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {#
-                    icon({
-                        "iconName": "print"
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {#
-                    icon({
-                        "iconName": "print",
-                        "classes": "ml-4",
-                        "ariaLabel": "Printer icon"
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {#
-                    icon_svg({
-                        "name": "print"
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {#
-                    icon_svg({
-                        "name": "print",
-                        "classes": "ml-5",
-                        "ariaLabel": "Another printer icon",
-                        "focusable": true,
-                        "ariaHidden": false,
-                        "tabindex": true
-                    })
-                #}
-            </div>
-            <div class="mb-6">
-                {# 
-                    datepicker({
-                        "id": "datepicker-example2-min",
-                        "name": "appointment-date2-min",
-                        "label": "Dato for aftale",
-                        "minDate": "2035-05-04"
-                    }) 
-                #}
-
-                {# 
-                    datepicker({
-                        "id": "datepicker-example2-max",
-                        "name": "appointment-date2-max",
-                        "label": "Dato for aftale",
-                        "maxDate": "2012-03-01"
-                    }) 
-                #}
-            </div>
+        <div class="col-12 mb-6">
         </div>
     </div>
 </main>
