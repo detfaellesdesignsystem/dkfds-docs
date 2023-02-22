@@ -73,8 +73,26 @@ new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).in
 {:.h4}
 ### Events
 
-{:.table}
-| Event key           | Element                           | Beskrivelse                                                                                               |
-|---------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------|
-| fds.collapse.expanded  | `input.js-checkbox-toggle-content` | Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet   |
-| fds.collapse.collapsed | `input.js-checkbox-toggle-content` | Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet |
+<div class="table--responsive-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Event key</th>
+        <th scope="col">Element</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fds.collapse.expanded</td>
+        <td><code>input.js-checkbox-toggle-content</code></td>
+        <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet</td>
+      </tr>
+      <tr>
+        <td>fds.collapse.collapsed</td>
+        <td><code>input.js-checkbox-toggle-content</code></td>
+        <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

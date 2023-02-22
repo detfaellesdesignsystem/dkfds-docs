@@ -90,13 +90,39 @@ DKFDS.datePicker.on(document.body);
 
 #### Funktioner
 
-{:.table}
-| Funktion                                        | Element                                 | Beskrivelse                                                                                          |
-|-------------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------|
-| <code>DKFDS.datePicker.getDatePickerContext(ELEMENT)</code>  | Vilkårligt HTML element i datovælgeren  | Få fat i datovælger json objekt inklusiv alle HTML elementer i komponenten.             |
-| <code>DKFDS.datePicker.validateDateInput(ELEMENT)</code>     | Vilkårligt HTML element i datovælgeren  | Valider værdien i feltet, således at det er et korrekt datoformat og datoen eksisterer. Brug checkValidity() på input elementet efterfølgende. |
-| <code>DKFDS.datePicker.disable(ELEMENT)</code>               | Vilkårligt HTML element i datovælgeren  | Deaktiver felt og knap i datovælgeren.                                                                |
-| <code>DKFDS.datePicker.enable(ELEMENT)</code>                | Vilkårligt HTML element i datovælgeren  | Aktiver felt og knap i datovælgeren.                                                                  |
+<div class="table--responsive-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Funktion</th>
+        <th scope="col">Element</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>DKFDS.datePicker.getDatePickerContext(ELEMENT)</code></td>
+        <td>Vilkårligt HTML element i datovælgeren</td>
+        <td>Få fat i datovælger json objekt inklusiv alle HTML elementer i komponenten.</td>
+      </tr>
+      <tr>
+        <td><code>DKFDS.datePicker.validateDateInput(ELEMENT)</code></td>
+        <td>Vilkårligt HTML element i datovælgeren</td>
+        <td>Valider værdien i feltet, således at det er et korrekt datoformat og datoen eksisterer. Brug checkValidity() på input elementet efterfølgende.</td>
+      </tr>
+      <tr>
+        <td><code>DKFDS.datePicker.disable(ELEMENT)</code></td>
+        <td>Vilkårligt HTML element i datovælgeren</td>
+        <td>Deaktiver felt og knap i datovælgeren.</td>
+      </tr>
+      <tr>
+        <td><code>DKFDS.datePicker.enable(ELEMENT)</code></td>
+        <td>Vilkårligt HTML element i datovælgeren</td>
+        <td>Aktiver felt og knap i datovælgeren.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Varianter
 

@@ -57,7 +57,7 @@ new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID'), {
 
 #### Events
 
-{:.table}
+{:.table .table--responsive-headers}
 | Event key           | Element                   | Beskrivelse                                                                                          |
 |---------------------|---------------------------|------------------------------------------------------------------------------------------------------|
 | fds.accordion.open  | `button.accordion-button` | Når en accordion bliver foldet ud, bliver eventet `fds.accordion.open` udløst på accordion knappen   |

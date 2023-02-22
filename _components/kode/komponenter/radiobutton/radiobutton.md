@@ -76,7 +76,7 @@ new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
 
 ### Events
 
-{:.table}
+{:.table .table--responsive-headers}
 | Event key           | Element                           | Beskrivelse                                                                                               |
 |---------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------|
 | fds.collapse.expanded  | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet.       |

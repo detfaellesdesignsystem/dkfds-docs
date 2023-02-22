@@ -47,7 +47,7 @@ modal.init();
 
 #### Funktioner
 
-{:.table}
+{:.table .table--responsive-headers}
 | Funktion     | Beskrivelse      |
 |--------------|------------------|
 | modal.show() | Viser en modal   |
@@ -55,7 +55,7 @@ modal.init();
 
 #### Events
 
-{:.table}
+{:.table .table--responsive-headers}
 | Event key           | Element       | Beskrivelse                                                                       |
 |---------------------|---------------|-----------------------------------------------------------------------------------|
 | fds.modal.hidden    | Modal element | Når en modal skjules, bliver eventet `fds.modal.hidden` udløst på modal elementet |

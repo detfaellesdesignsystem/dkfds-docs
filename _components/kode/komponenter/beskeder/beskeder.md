@@ -48,11 +48,29 @@ new DKFDS.Alert(document.getElementById('ALERT-ID')).init();
 
 #### Events
 
-{:.table}
-| Event key           | Element                   | Beskrivelse                                                                                                                                         |
-|---------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| fds.alert.show      | `div.alert`               | Når en besked bliver vist med `DKFDS.Alert(document.getElementById('ALERT-ID')).show();` bliver `fds.alert.show` udløst på beskedelementet                            |
-| fds.alert.hide      | `div.alert`               | Når en besked bliver skjult med `DKFDS.Alert(document.getElementById('ALERT-ID')).hide();` eller der trykkes på luk bliver `fds.alert.hide` udløst på beskedelementet |
+<div class="table--responsive-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Event key</th>
+        <th scope="col">Element</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fds.alert.show</td>
+        <td><code>div.alert</code></td>
+        <td>Når en besked bliver vist med <code>DKFDS.Alert(document.getElementById('ALERT-ID')).show();</code> bliver <code>fds.alert.show</code> udløst på beskedelementet</td>
+      </tr>
+      <tr>
+        <td>fds.alert.hide</td>
+        <td><code>div.alert</code></td>
+        <td>Når en besked bliver skjult med <code>DKFDS.Alert(document.getElementById('ALERT-ID')).hide();</code> eller der trykkes på luk bliver <code>fds.alert.hide</code> udløst på beskedelementet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Varianter
 

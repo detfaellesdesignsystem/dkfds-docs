@@ -45,7 +45,10 @@ Brug klassen `table-header-no-wrap` på `th`-elementet inde i `thead`, hvis du i
 
 Brug klasserne `vertical-align-top`, `vertical-align-middle` og `vertical-align-bottom` på enten `<th>` eller `<td>` til at ændre den vertikale placering af indholdet i en celle i toppen, midten eller bunden.
 
-Tabeller er som udgangspunkt sat ind i en `<div>`, som har klassen `table--responsive-scroll`, hvilket gør at tabellen kan scrolles vandret, hvis den bliver for smal. Hvis man ikke ønsker, at dette skal være muligt, kan man undlade denne `<div>`.
+{:#horisontalt-scroll}
+#### Horisontalt scroll
+
+Tabeller er som udgangspunkt sat ind i en `<div>`, der har klassen `table--responsive-scroll`, hvilket gør at tabellen kan scrolles vandret, hvis den bliver for smal. Hvis man ikke ønsker, at dette skal være muligt, kan man undlade denne `<div>`.
 
 ## Varianter
 
@@ -59,7 +62,11 @@ Man kan sætte zebralinjer på en tabel med klassen `table--zebra` på `<table>`
 
 {:#responsiv}
 ### Responsiv tabel
-En tabel gøres responsiv ved at tilføje klassen `table--responsive-headers` til `<table>`. Responsive tabeller ændrer som standard udseende ved <a href="/kode/utilities/#responsive-hjælpeklasser">breakpoint</a> `sm`, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint. Du kan anvende en af nedenstående klasser for at ændre, ved hvilket breakpoint tabellens udseende skal ændres:
+En tabel gøres responsiv ved at tilføje klassen `table--responsive-headers` til `<table>`. Responsive tabeller ændrer som standard udseende ved <a href="/kode/utilities/#responsive-hjælpeklasser">breakpoint</a> `sm`, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint. 
+
+Hvis din tabel indeholder værdier, der kræver mere end ca. 290 pixels i bredden for at blive vist, bør du undlade at gøre den responsiv og i stedet anvende <a href="/kode/komponenter/tables/#horisontalt-scroll">horisontalt scroll</a> - tjek eventuelt om din responsive tabel kan vises pænt, når skærmstørrelsen er 320 pixels i bredden, uden at indholdet ryger ud over kanten.
+
+Du kan anvende en af nedenstående klasser for at ændre, ved hvilket breakpoint tabellens udseende skal ændres:
 
 - `table-sm-responsive-headers` (svarer til `table--responsive-headers`)
 - `table-md-responsive-headers`
@@ -133,7 +140,7 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 
 ##### Events
 
-{:.table}
+{:.table .table--responsive-headers}
 | Event key                      | Element       | Beskrivelse                                                                                                              |
 |--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------|
 | fds.table.selectable.updated   | `<table>`     | Når en tjekboks ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>`-elementet |

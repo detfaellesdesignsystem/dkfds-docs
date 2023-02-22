@@ -4650,7 +4650,9 @@
 
 <p>Brug klasserne <code>vertical-align-top</code>, <code>vertical-align-middle</code> og <code>vertical-align-bottom</code> på enten <code>&lt;th&gt;</code> eller <code>&lt;td&gt;</code> til at ændre den vertikale placering af indholdet i en celle i toppen, midten eller bunden.</p>
 
-<p>Tabeller er som udgangspunkt sat ind i en <code>&lt;div&gt;</code>, som har klassen <code>table--responsive-scroll</code>, hvilket gør at tabellen kan scrolles vandret, hvis den bliver for smal. Hvis man ikke ønsker, at dette skal være muligt, kan man undlade denne <code>&lt;div&gt;</code>.</p>
+<h4 id="horisontalt-scroll">Horisontalt scroll</h4>
+
+<p>Tabeller er som udgangspunkt sat ind i en <code>&lt;div&gt;</code>, der har klassen <code>table--responsive-scroll</code>, hvilket gør at tabellen kan scrolles vandret, hvis den bliver for smal. Hvis man ikke ønsker, at dette skal være muligt, kan man undlade denne <code>&lt;div&gt;</code>.</p>
 
 <h2>Varianter</h2>
 
@@ -4661,7 +4663,11 @@
 <p>Man kan sætte zebralinjer på en tabel med klassen <code>table--zebra</code> på <code>&lt;table&gt;</code>.</p>
 
 <h3 id="responsiv">Responsiv tabel</h3>
-<p>En tabel gøres responsiv ved at tilføje klassen <code>table--responsive-headers</code> til <code>&lt;table&gt;</code>. Responsive tabeller ændrer som standard udseende ved <a href="/kode/utilities/#responsive-hjælpeklasser">breakpoint</a> <code>sm</code>, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint. Du kan anvende en af nedenstående klasser for at ændre, ved hvilket breakpoint tabellens udseende skal ændres:</p>
+<p>En tabel gøres responsiv ved at tilføje klassen <code>table--responsive-headers</code> til <code>&lt;table&gt;</code>. Responsive tabeller ændrer som standard udseende ved <a href="/kode/utilities/#responsive-hjælpeklasser">breakpoint</a> <code>sm</code>, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint.</p>
+
+<p>Hvis din tabel indeholder værdier, der kræver mere end ca. 290 pixels i bredden for at blive vist, bør du undlade at gøre den responsiv og i stedet anvende <a href="/kode/komponenter/tables/#horisontalt-scroll">horisontalt scroll</a> - tjek eventuelt om din responsive tabel kan vises pænt, når skærmstørrelsen er 320 pixels i bredden, uden at indholdet ryger ud over kanten.</p>
+
+<p>Du kan anvende en af nedenstående klasser for at ændre, ved hvilket breakpoint tabellens udseende skal ændres:</p>
 
 <ul>
   <li><code>table-sm-responsive-headers</code> (svarer til <code>table--responsive-headers</code>)</li>
@@ -5187,7 +5193,7 @@
 
 <h5>Events</h5>
 
-<table class="table">
+<table class="table table--responsive-headers">
   <thead>
     <tr>
       <th>Event key</th>
