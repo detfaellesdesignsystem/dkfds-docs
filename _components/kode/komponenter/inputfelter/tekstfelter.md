@@ -109,10 +109,40 @@ Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 
 #### JavaScript
-Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med `init()`.
+
+##### Funktioner
+<div class="table--responsive-scroll">
+  <table class="table table--responsive-headers">
+    <thead>
+      <tr>
+        <th scope="col">Funktion</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>init()</td>
+        <td>Sørger for at beskederne med antal tegn tilbage opdateres.</td>
+      </tr>
+      <tr>
+        <td>charactersLeft()</td>
+        <td>Returnerer det antal tegn, der lige nu kan indtastes i inputfeltet. Tallet er negativt, hvis antallet af tegn er overskredet.</td>
+      </tr>
+      <tr>
+        <td>updateMessages()</td>
+        <td>Fremtvinger en opdatering af beskederne med antal tegn tilbage. Dette kan være nyttigt, hvis eksempelvis værdien i inputfeltet ændres programmatisk.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+Eksempel på anvendelse:
 
 {% highlight javascript %}
-new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID')).init();
+const form_limit = new DKFDS.CharacterLimit(document.getElementsByClassName('form-limit')[0]);
+form_limit.init();
+form_limit.charactersLeft();
 {% endhighlight %}
 
 ##### Sprog

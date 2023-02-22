@@ -4735,9 +4735,39 @@
 <p>Husk at medtage de to beskeder skjult med klassen <code>sr-only</code>. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.</p>
 
 <h4>JavaScript</h4>
-<p>Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+<p>Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med <code>init()</code>.</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CharacterLimit(document.getElementById(&#39;FORM-LIMIT-ID&#39;)).init();</code></pre></figure>
+<h5>Funktioner</h5>
+<div class="table--responsive-scroll">
+  <table class="table table--responsive-headers">
+    <thead>
+      <tr>
+        <th scope="col">Funktion</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>init()</td>
+        <td>Sørger for at beskederne med antal tegn tilbage opdateres.</td>
+      </tr>
+      <tr>
+        <td>charactersLeft()</td>
+        <td>Returnerer det antal tegn, der lige nu kan indtastes i inputfeltet. Tallet er negativt, hvis antallet af tegn er overskredet.</td>
+      </tr>
+      <tr>
+        <td>updateMessages()</td>
+        <td>Fremtvinger en opdatering af beskederne med antal tegn tilbage. Dette kan være nyttigt, hvis eksempelvis værdien i inputfeltet ændres programmatisk.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Eksempel på anvendelse:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">const form_limit = new DKFDS.CharacterLimit(document.getElementsByClassName(&#39;form-limit&#39;)[0]);
+form_limit.init();
+form_limit.charactersLeft();</code></pre></figure>
 
 <h5>Sprog</h5>
 <p>Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten “lang” i din sides html-tag. Indholdet i krøllede parenteser <code>{...}</code> nedenunder skal ikke oversættes eller ændres.</p>
