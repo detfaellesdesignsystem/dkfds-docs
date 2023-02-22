@@ -101,6 +101,31 @@
         "content": "Maj 2021",
         "icon": true
     },
+    "sags_info": {
+        "headingLevel": "h2",
+        "classes": { 
+            "label": "col-md-4",
+            "value": "col-md-8"
+        },
+        "items": [
+            {
+                "label": "Navn",
+                "value": "Lone Hansen"
+            },
+            {
+                "label": "Sag sidst ændret",
+                "value": "04-01-2019"
+            },
+            {
+                "label": "Kode",
+                "value": "ABC"
+            },
+            {
+                "label": "Beskrivelse",
+                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+            }
+        ]
+    },
     "badge_under_behandling": {
         "text": "Under behandling",
         "variant": {

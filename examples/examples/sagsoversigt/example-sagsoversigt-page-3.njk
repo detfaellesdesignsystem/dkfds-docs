@@ -15,6 +15,7 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 {% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
 {% from "components/details/details.njk" import details as details %}
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
 
 {# <!-- Variables --> #}
 
@@ -143,30 +144,7 @@
     {{ badge(badge_afsluttet) }}
     <h3>Afgørelse</h3>
     <div class="w-percent-xs-100 w-percent-md-60 w-percent-lg-50 mb-5">
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Resultat
-            </div>
-            <div class="col-md-6">
-                Anerkendt
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Dato for afgørelse
-            </div>
-            <div class="col-md-6">
-                01-01-2019
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Dokument med afgørelse
-            </div>
-            <div class="col-md-6">
-                <a href="#">Afgørelse for anerkendelse (PDF)</a>
-            </div>
-        </div>
+        {{structured_list(anerkendelse_info)}}
     </div>
     {{ details(details_anerkendelse) }}
     <hr class="mt-7">
@@ -174,30 +152,7 @@
     {{ badge(badge_myndighed) }}
     <h3>Afgørelse</h3>
     <div class="w-percent-xs-100 w-percent-md-60 w-percent-lg-50 mb-5">
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Resultat
-            </div>
-            <div class="col-md-6">
-                10%
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Dato for afgørelse
-            </div>
-            <div class="col-md-6">
-                01-01-2019
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Dokument med afgørelse
-            </div>
-            <div class="col-md-6">
-                <a href="#">Afgørelse for X (PDF)</a>
-            </div>
-        </div>
+        {{structured_list(sagsindhold_1_info)}}
     </div>
     {{ details(details_afgoerelse_X) }}
     <hr class="mt-7">
@@ -208,57 +163,11 @@
     </ul>
     <h3>Afgørelse</h3>
     <div class="w-percent-xs-100 w-percent-md-60 w-percent-lg-50 mb-5">
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Resultat
-            </div>
-            <div class="col-md-6">
-                20%
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Dato for afgørelse
-            </div>
-            <div class="col-md-6">
-                01-01-2019
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Dokument med afgørelse
-            </div>
-            <div class="col-md-6">
-                <a href="#">Afgørelse for Y (PDF)</a>
-            </div>
-        </div>
+        {{structured_list(sagsindhold_2_info)}}
     </div>
     <h3>Afgørelse</h3>
     <div class="w-percent-xs-100 w-percent-md-60 w-percent-lg-50 mb-5">
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Resultat
-            </div>
-            <div class="col-md-6">
-                Under 15%
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Dato for afgørelse
-            </div>
-            <div class="col-md-6">
-                01-01-2019
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-6 weight-semibold">
-                Dokument med afgørelse
-            </div>
-            <div class="col-md-6">
-                <a href="#">Afgørelse for Y (PDF)</a>
-            </div>
-        </div>
+        {{structured_list(sagsindhold_3_info)}}
     </div>
     {{ details(details_afgoerelse_Y) }}
     <hr class="mt-7">

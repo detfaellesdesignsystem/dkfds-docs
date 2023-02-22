@@ -14,6 +14,7 @@
 {% from "components/badge/badges.njk" import badge as badge %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
 {% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
 
 {# <!-- Variables --> #}
 
@@ -137,38 +138,7 @@
     <h1 class="mt-6">Sagsnr. 123456789</h1>
     {{ badge(badge_under_behandling) }}
     <div class="w-percent-xs-100 w-percent-md-40 mt-7">
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-4 weight-semibold">
-                Navn
-            </div>
-            <div class="col-md-8">
-                Lone Hansen
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-4 weight-semibold">
-                Sag sidst ændret
-            </div>
-            <div class="col-md-8">
-                04-01-2019
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-4 weight-semibold">
-                Kode
-            </div>
-            <div class="col-md-8">
-                ABC
-            </div>
-        </div>
-        <div class="row row-bordered no-gutters">
-            <div class="col-md-4 weight-semibold">
-                Beskrivelse
-            </div>
-            <div class="col-md-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-            </div>
-        </div>
+        {{structured_list(sags_info)}}
     </div>
 
     <h2>Sagsindhold</h2>

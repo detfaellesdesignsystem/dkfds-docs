@@ -135,6 +135,90 @@
         "content": "Maj 2021",
         "icon": true
     },
+    "anerkendelse_info": {
+        "headingLevel": "h4",
+        "classes": { 
+            "label": "col-md-6",
+            "value": "col-md-6"
+        },
+        "items": [
+            {
+                "label": "Resultat",
+                "value": "Anerkendt"
+            },
+            {
+                "label": "Dato for afgørelse",
+                "value": "01-01-2019"
+            },
+            {
+                "label": "Dokument med afgørelse",
+                "value": "<a href=\"#\">Afgørelse for anerkendelse (PDF)</a>"
+            }
+        ]
+    },
+    "sagsindhold_1_info": {
+        "headingLevel": "h4",
+        "classes": { 
+            "label": "col-md-6",
+            "value": "col-md-6"
+        },
+        "items": [
+            {
+                "label": "Resultat",
+                "value": "10%"
+            },
+            {
+                "label": "Dato for afgørelse",
+                "value": "01-01-2019"
+            },
+            {
+                "label": "Dokument med afgørelse",
+                "value": "<a href=\"#\">Afgørelse for X (PDF)</a>"
+            }
+        ]
+    },
+    "sagsindhold_2_info": {
+        "headingLevel": "h4",
+        "classes": { 
+            "label": "col-md-6",
+            "value": "col-md-6"
+        },
+        "items": [
+            {
+                "label": "Resultat",
+                "value": "20%"
+            },
+            {
+                "label": "Dato for afgørelse",
+                "value": "01-01-2019"
+            },
+            {
+                "label": "Dokument med afgørelse",
+                "value": "<a href=\"#\">Afgørelse for Y (PDF)</a>"
+            }
+        ]
+    },
+    "sagsindhold_3_info": {
+        "headingLevel": "h4",
+        "classes": { 
+            "label": "col-md-6",
+            "value": "col-md-6"
+        },
+        "items": [
+            {
+                "label": "Resultat",
+                "value": "Under 15%"
+            },
+            {
+                "label": "Dato for afgørelse",
+                "value": "01-01-2019"
+            },
+            {
+                "label": "Dokument med afgørelse",
+                "value": "<a href=\"#\">Afgørelse for Y (PDF)</a>"
+            }
+        ]
+    },
     "badge_afsluttet": {
         "text": "Afsluttet",
         "variant": {
