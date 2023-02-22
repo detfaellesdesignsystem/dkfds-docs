@@ -107,7 +107,8 @@ Trinindikator med fejl anvendes til at gøre brugeren opmærksom på eventuelle 
 ### Vejledning
 
 - Fejl vises, hvis der er fejl i det indtastede data eller obligatoriske felter ikke er udfyldt. 
-- Fejl angives med et fejl-ikon ud for trinnet med fejl samt med en baggrundsfarve. Ikonet kan fjernes igen ved indtastning af korrekt data i det pågældende trin. 
+- Fejl angives med et fejl-ikon ud for trinnet med fejl samt med en baggrundsfarve. Ikonet kan fjernes igen ved indtastning af korrekt data i det pågældende trin.
+- Vis kun fejl i trinindikatoren, når det er muligt for brugeren at fortsætte til næste trin på trods af fejl.
 
 ### Opsummeringsside 
 
