@@ -1143,7 +1143,7 @@
     
 
 
-<li class="current active ">
+<li class="current active has-anchor-links">
 
   
 
@@ -3638,7 +3638,7 @@
 
     
 
-<li class="current active ">
+<li class="current active has-anchor-links">
 
 
   
@@ -3655,6 +3655,35 @@
 
     
 
+    <ul class="sidenav-sub_list">
+    
+
+
+<li class=" ">
+<a href="#begraens" >Begræns mulige datoer</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
+<a href="#default" >Fast værdi</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
+<a href="#datoformat" >Datoformat</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -4188,6 +4217,13 @@
 
           
           
+          <ul class="d-lg-none nobullet-list">
+          <li><a href="#begraens">Begræns mulige datoer</a></li>
+          <li><a href="#default">Fast værdi</a></li>
+          <li><a href="#datoformat">Datoformat</a></li>
+          
+          </ul>
+          
 
           
             <p class="font-lead">Ét felt med knap, hvor man kan vælge en dato.</p>
@@ -4257,7 +4293,7 @@
     </div>
 </div>
 
-<h2>Begræns mulige datoer</h2>
+<h2 id="begraens">Begræns mulige datoer</h2>
 <p>Definér datoer det er muligt for brugeren at vælge fra.</p>
 
 <p>I eksemplet kan brugeren kun vælge datoer mellem 4. december til og med 24. december 2020. Man kan kun vælge datoer inden for dette interval. En anden mulighed kunne også være dags dato og 1 år frem, således at man kun kan vælge en dag i fremtiden.</p>
@@ -4287,7 +4323,7 @@
     
 </div>
 
-<h2>Fast værdi</h2>
+<h2 id="default">Fast værdi</h2>
 <p>Definér en dato som udgangspunkt. Hvis datoen ikke defineres vil udgangspunktet være dags dato.</p>
 
 <p>I eksemplet er der valgt at man ved aktivering af datovælgeren starter fokus d. 1 december 2020. Datoen er ikke valgt, man tager blot udgangspunkt i den dag i kalenderen. Hvis man ikke vælger en fast værdi, vil datoen i stedet være dags dato.</p>
@@ -4317,7 +4353,7 @@
     
 </div>
 
-<h2>Datoformat</h2>
+<h2 id="datoformat">Datoformat</h2>
 <p>Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også <a href="/kode/komponenter/datovaelger/#datoformat">andre datoformater</a>, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.</p>
 
 <div class="component-preview  component-preview-date-picker-format">

@@ -100,10 +100,10 @@ lead: Nedenfor vises release notes — en opsummering af bug fixes, nye feature
   andre opdateringer.
 
 ---
-Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
 ## Versionering
-Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.
+Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link" target="_blank">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.
 
 Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR (y), PATCH (z)
 
@@ -119,7 +119,7 @@ Designsystemet er "levende" og skal holdes ajour, hvorfor langt de fleste bagud-
 {:.h4}
 ### Tidligere versioner af dokumentationen
 
-Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
 
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0
@@ -133,14 +133,13 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
   <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
 </div>
 - Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/201" class="icon-link">issue #201 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/201" class="icon-link" target="_blank">issue #201 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Rettet fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.
 - Rettet fejl, hvor markøren skiftede udseende på navigationsknapperne, selvom disse knapper ikke var synlige.
-- Tilføjet skærmlæserbeskeder for datovælgere med begrænsninger på datovalg.
 - Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
 - Datovælgeren kræver nu et `id` for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
 - Ændret `aria-selected` til `aria-current` på valgte datoer, måneder og år.
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at tilpasse datoformatet. Datovælgerens inputfelt er i denne forbindelse opdateret, så den accepterer flere måder at indtaste en dato på.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at tilpasse <a href="/komponenter/datovaelger/#datoformat">datoformatet</a>. Datovælgerens inputfelt er i denne forbindelse opdateret, så den accepterer flere måder at indtaste en dato på.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
@@ -148,21 +147,21 @@ Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængelig
 </div>
 Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opdateres.
 - Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.
-- Rettet fejl i trinindikatoren, hvor lange tekster blev ombrudt forkert. Stylingen for `.sidenav-list li a` er i denne forbindelse blevet ændret fra `flex-wrap: wrap` til `flex-wrap: nowrap`, hvilket kan give ombrydningsproblemer, hvis man ikke opdaterer html'en.
+- Rettet fejl, hvor lange tekster blev ombrudt forkert. Bemærk, at stylingen er blevet ændret, hvilket kan give ombrydningsproblemer, hvis man ikke opdaterer html'en (gælder både venstremenu og trinindikator).
 - Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er fejl i et trin i trinindikatoren.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er <a href="/komponenter/trinindikator/#med-fejl">fejl i et trin</a> i trinindikatoren.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link" target="_blank">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a></h3>
   <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
 </div>
-- Fjernet klassen `table--lines` der var en udokumenteret måde at style en tabel på.
+- Fjernet klassen `table--lines`, der var en forældet måde at style en tabel på.
 - Rettet fejl relateret til margin og padding for tabeller.
 - Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.
-- Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> skifter ikke længere mellem "vælg række" og "fravælg række", da forståelsen blev tvetydig, når tjekboksens status blev læst højt. I stedet anvendes kun "vælg række" sammen med tjekboksens status. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, bortfalder muligheden for at give andre sprogoversættelser og eventuelle oversættelser skrives direkte i HTML'en.
+- Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> er ændret til kun at være "vælg række". Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML'en fremadrettet.
 - Fjernet `aria-label` fra `label`-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.
-- Tilføjet klassen `actions-header`, der giver mulighed for at tilføje en skærmlæserbesked i en ellers tom headercelle, uden at denne besked vises i de responsive tabeller. Benyttes typisk til tabelkolonnerne med rediger-mulighed på opsummeringssider. JavaScript'en er hertil blevet tilpasset.
+- Opdateret opsummeringssiderne i selvbetjeningseksemplerne, hvor tidligere tomme headers har fået en skærmlæserbesked.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
@@ -170,7 +169,7 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 </div>
 - Opdateret myndighedsnavnet i række 2, så det nu er kodet som en heading og kan styles med klassen `authority-name`.
 - Rettet fejl, hvor portalnavnet ikke blev vist korrekt ved print.
-- Log af-knappen er nu altid kodet som en `button`, uanset hvilken skærmstørrelse den vises på.
+- Log af-knappen er nu altid kodet som en `button` uanset skærmstørrelse.
 - `title` er fjernet fra mobilmenuens knapper og erstattet af `aria-label`.
 - Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 
@@ -189,7 +188,7 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a>.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, der indeholder både rettelser og tilføjelser. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksempler er rettet.
-- Rettet fejl, hvor sprogoversættelser for karakterbegrænsning påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter.
+- Rettet fejl, hvor sprogoversættelser for karakterbegrænsning og accordions påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for karakterbegrænsning. Funktionen `init` samt sprogskifte er uændrede.
 
 {:#version-8-2-1 .mb-0}
@@ -235,9 +234,9 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 <div><span class="small-text mt-0 d-block">16-06-2022</span></div>
 
 - Rettet aria-labels i <a href="/komponenter/datovaelger/">datovælgerens</a> tilbage/frem-knapper.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/180" class="icon-link">issue #180 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/180" class="icon-link" target="_blank">issue #180 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet `chevron-double-left` og `chevron-double-right` til <a href="/design/ikoner/">ikoner</a>, der manglede efter version 8.0.0.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link" target="_blank">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Opdateret ikonet `arrow-left`, der viste det forkerte ikon, når man indsatte det ved hjælp af klassen.
 - Opdateret ikonerne `sort-default` og `sort-table-none`, så de også kan bruges som klasse.
 - Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender <a href="/kode/ikoner/">ikonsamlingen</a>.
