@@ -23,7 +23,7 @@
         "list": {
             "items": [
                 {
-                    "content": "<span class=\"h5 weight-semibold\">Myndighedsnavn</span>"
+                    "content": "<strong class=\"weight-semibold\">Myndighedsnavn</strong>"
                 },
                 {
                     "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"

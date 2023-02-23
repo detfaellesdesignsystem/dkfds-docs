@@ -6,7 +6,6 @@ var targetRootDir = "img/examples/";
 var themes = ["virk", "borgerdk"];
 
 var exampleUrls = [
-    {"url": "/eksempel/header/", "filename": "header.png", "width": 992, "height": 334 },
     {"url": "/eksempel/header-simple/", "filename": "header-simple.png", "width": 992, "height": 158 },
     {"url": "/eksempel/header-large/", "filename": "header-large.png", "width": 992, "height": 158 },
     {"url": "/eksempel/header-medium/", "filename": "header-medium.png", "width": 992, "height": 262 },
