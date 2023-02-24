@@ -3565,15 +3565,15 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="toast toast-warning show" id="notification-warning" aria-atomic="true">
+        <div class="toast toast-warning show" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
-        <p><strong><span class="sr-only">Advarsel: </span>Dette er en advarsel</strong></p>
+        <p><span class="sr-only">Advarsel:
+            </span><strong id="notification-warning-heading">Dette er en advarsel</strong></p>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.</p>
-        <button class="toast-close">
-            Luk<span class="sr-only"> beskeden: Dette er en advarsel</span>
-        </button>
+        <button class="toast-close"
+            aria-describedby="notification-warning-heading">Luk</button>
     </div>
 </div>
         

@@ -3565,16 +3565,14 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="toast toast-info show" id="notification-info" aria-atomic="true">
+        <div class="toast toast-info show" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
-        <p><strong><span class="sr-only">Information: </span>Du har fået en besked</strong>
-        </p>
+        <p><span class="sr-only">Information:
+            </span><strong id="notification-info-heading">Du har fået en besked</strong></p>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.</p>
-        <button class="toast-close">
-            Luk<span class="sr-only"> beskeden: Du har fået en besked</span>
-        </button>
+        <button class="toast-close" aria-describedby="notification-info-heading">Luk</button>
     </div>
 </div>
         

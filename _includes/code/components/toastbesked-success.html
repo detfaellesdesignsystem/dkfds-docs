@@ -1,11 +1,12 @@
-<div class="toast toast-success show" id="notification-success" aria-atomic="true">
+<div class="toast toast-success show" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
-        <p><strong><span class="sr-only">Succes: </span>Din ansøgning er afsendt</strong></p>
+        <p><span class="sr-only">Succes:
+            </span><strong id="notification-success-heading">Din ansøgning er afsendt</strong>
+        </p>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.</p>
-        <button class="toast-close">
-            Luk<span class="sr-only"> beskeden: Din ansøgning er afsendt</span>
-        </button>
+        <button class="toast-close"
+            aria-describedby="notification-success-heading">Luk</button>
     </div>
 </div>

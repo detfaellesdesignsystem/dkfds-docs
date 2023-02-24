@@ -33,8 +33,9 @@ function toastExample(){
             let message = document.createElement('div');
             message.classList.add('toast-message');
 
+            let headingID = type[randomType] + returnIDnumber();
             let heading = document.createElement('p');
-            heading.innerHTML = "<strong><span class='sr-only'>" + icontext[randomType] + ": </span>" + headings[randomType] + "</strong>";
+            heading.innerHTML = "<span class='sr-only'>" + icontext[randomType] + ": </span><strong id='" + headingID + "'>" + headings[randomType] + "</strong>";
             message.appendChild(heading);
 
             let content = document.createElement('p');
@@ -43,7 +44,8 @@ function toastExample(){
             
             let close = document.createElement('button');
             close.classList.add('toast-close');
-            close.innerHTML = "Luk<span class='sr-only'> beskeden: " + headings[randomType] + "</span>";
+            close.setAttribute('aria-describedby', headingID);
+            close.innerText = "Luk";
             message.appendChild(close);
             
             toastEl.appendChild(message);
@@ -55,4 +57,8 @@ function toastExample(){
 
 function showtoast(){
     new Toast(document.getElementsByClassName('toast-container')[0].getElementsByClassName('hide')[0]).show();
+}
+
+function returnIDnumber() {
+    return new Date().getTime();
 }

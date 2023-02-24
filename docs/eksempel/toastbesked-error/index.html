@@ -221,15 +221,14 @@
     <main class="container page-container" id="main-content">
       <div class="toast-container"></div>
       <h1 id="example-heading-toastbesked-error" class="sr-only">Toastbesked error</h1>
-      <div class="toast toast-error show" id="notification-error" aria-atomic="true">
+      <div class="toast toast-error show" aria-atomic="true">
     <div class="toast-icon"></div>
     <div class="toast-message">
-        <p><strong><span class="sr-only">Fejl: </span>Der opstod en fejl</strong></p>
+        <p><span class="sr-only">Fejl:
+            </span><strong id="notification-error-heading">Der opstod en fejl</strong></p>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium.</p>
-        <button class="toast-close">
-            Luk<span class="sr-only"> beskeden: Der opstod en fejl</span>
-        </button>
+        <button class="toast-close" aria-describedby="notification-error-heading">Luk</button>
     </div>
 </div>
 
