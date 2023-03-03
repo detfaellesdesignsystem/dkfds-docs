@@ -4253,34 +4253,18 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group
-        
-        
-        ">
+        <div class="form-group">
     <fieldset role="radiogroup">
-        <legend class="form-label">
-            Liste med radioknapper
+        <legend class="form-label">Liste med radioknapper</legend>
 
-        </legend>
-
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-option1" name="radio-example" class="form-radio
-             radio-large
-            " value="v1" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-option1" name="radio-example" class="form-radio radio-large" value="v1" />
             <label class="form-label" for="radiogroup-option1">Valg 1</label>
 
         </div>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-option2" name="radio-example" class="form-radio
-             radio-large
-            " value="v2" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-option2" name="radio-example" class="form-radio radio-large" value="v2" />
             <label class="form-label" for="radiogroup-option2">Valg 2</label>
 
         </div>
@@ -4322,7 +4306,9 @@
 
 <p>Vær forsigtig med at angive et standard valg, da det kan have en modsatrettet effekt: Brugeren kan føle sig manipuleret eller foretager ikke et bevidst valg.</p>
 
-<p>Der bør være en overordnet label for hele listen af radioknapper</p>
+<p>Der bør være en overordnet label for hele listen af radioknapper.</p>
+
+<p>Radioknapper bør altid kræve, at brugeren foretager et valg. I stedet for at lade brugeren skippe radioknapperne, så giv dem en neutral valgmulighed, der eventuelt er valgt som standard.</p>
 
 <div class=" component-preview-radiobutton-dos-donts">
     
@@ -4379,40 +4365,22 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group
-        
-        
-        ">
+        <div class="form-group">
     <fieldset role="radiogroup">
-        <legend class="form-label">
-            Radioknapper med hjælpetekst
+        <legend class="form-label">Radioknapper med hjælpetekst</legend>
 
-        </legend>
-
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-helptext-option1" name="radio-helptext" class="form-radio
-             radio-large
-            " value="v1" aria-describedby="radiogroup-helptext-option1-hint" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-helptext-option1" name="radio-helptext" class="form-radio radio-large" value="v1" aria-describedby="radiogroup-helptext-option1-hint" />
             <label class="form-label" for="radiogroup-helptext-option1">Valg 1</label>
             <span class="form-hint" id="radiogroup-helptext-option1-hint">Dette er en
                 hjælpetekst</span>
-
         </div>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-helptext-option2" name="radio-helptext" class="form-radio
-             radio-large
-            " value="v2" aria-describedby="radiogroup-helptext-option2-hint" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-helptext-option2" name="radio-helptext" class="form-radio radio-large" value="v2" aria-describedby="radiogroup-helptext-option2-hint" />
             <label class="form-label" for="radiogroup-helptext-option2">Valg 2</label>
             <span class="form-hint" id="radiogroup-helptext-option2-hint">Dette er en
                 hjælpetekst</span>
-
         </div>
 
     </fieldset>
@@ -4440,48 +4408,26 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group
-         form-error
-        
-        ">
-    <fieldset role="radiogroup" aria-describedby="
-        radiogroup-error-error " aria-invalid="true">
-        <legend class="form-label">
-            Sagen handler om
-
-        </legend>
+        <div class="form-group form-error">
+    <fieldset role="radiogroup" aria-describedby="radiogroup-error-error " aria-invalid="true">
+        <legend class="form-label">Sagen handler om</legend>
 
         <span class="form-error-message" id="radiogroup-error-error"><span class="sr-only">Fejl:</span> Vælg hvad sagen handler om</span>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-error-option1" name="sagen-omhandler" class="form-radio
-             radio-large
-            " value="ulykkesforsikring" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option1" name="sagen-omhandler" class="form-radio radio-large" value="ulykkesforsikring" />
             <label class="form-label" for="radiogroup-error-option1">Ulykkesforsikring</label>
 
         </div>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-error-option2" name="sagen-omhandler" class="form-radio
-             radio-large
-            " value="erstatningsansvar" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option2" name="sagen-omhandler" class="form-radio radio-large" value="erstatningsansvar" />
             <label class="form-label" for="radiogroup-error-option2">Erstatningsansvar</label>
 
         </div>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-error-option3" name="sagen-omhandler" class="form-radio
-             radio-large
-            " value="forsikringsselskab" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option3" name="sagen-omhandler" class="form-radio radio-large" value="forsikringsselskab" />
             <label class="form-label" for="radiogroup-error-option3">Forsikringsselskab</label>
 
         </div>
@@ -4508,34 +4454,18 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group
-        
-        
-        ">
+        <div class="form-group">
     <fieldset role="radiogroup">
-        <legend class="form-label">
-            Lille radioknap
+        <legend class="form-label">Lille radioknap</legend>
 
-        </legend>
-
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-small-option1" name="radio-small" class="form-radio
-            
-            " value="v1" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-small-option1" name="radio-small" class="form-radio" value="v1" />
             <label class="form-label" for="radiogroup-small-option1">Valg 1</label>
 
         </div>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-small-option2" name="radio-small" class="form-radio
-            
-            " value="v2" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-small-option2" name="radio-small" class="form-radio" value="v2" />
             <label class="form-label" for="radiogroup-small-option2">Valg 2</label>
 
         </div>
@@ -4562,29 +4492,18 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group
-        
-        
-         js-radio-toggle-group">
+        <div class="form-group js-radio-toggle-group">
     <fieldset role="radiogroup">
-        <legend class="form-label">
-            Vælg en radioknap
+        <legend class="form-label">Vælg en radioknap</legend>
 
-        </legend>
-
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-collapse-option1" name="radio-collapse" class="form-radio
-             radio-large
-            " value="1" checked="" data-controls="#radiogroup-collapse-option1-collapse" data-expanded="true" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-collapse-option1" name="radio-collapse" class="form-radio radio-large" value="1" checked="" data-controls="#radiogroup-collapse-option1-collapse" data-expanded="true" />
             <label class="form-label" for="radiogroup-collapse-option1">Radioknap viser
                 indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
 
         </div>
 
-        <div id="radiogroup-collapse-option1-collapse" aria-hidden="false" class="radio-content">
+        <div id="radiogroup-collapse-option1-collapse" aria-hidden="false" class="radio-content radio-content-large">
 
             <div class="form-group">
                 <label class="form-label" for="textinput1">Inputfelt med label</label>
@@ -4595,19 +4514,14 @@
 
         </div>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-collapse-option2" name="radio-collapse" class="form-radio
-             radio-large
-            " value="2" data-controls="#radiogroup-collapse-option2-collapse" data-expanded="false" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-collapse-option2" name="radio-collapse" class="form-radio radio-large" value="2" data-controls="#radiogroup-collapse-option2-collapse" data-expanded="false" />
             <label class="form-label" for="radiogroup-collapse-option2">Radioknap viser andet
                 indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
 
         </div>
 
-        <div id="radiogroup-collapse-option2-collapse" aria-hidden="true" class="radio-content">
+        <div id="radiogroup-collapse-option2-collapse" aria-hidden="true" class="radio-content radio-content-large">
 
             <div class="form-group">
                 <label class="form-label" for="textinput2">Inputfelt med anden label</label>

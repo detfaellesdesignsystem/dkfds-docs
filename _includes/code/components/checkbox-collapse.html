@@ -1,12 +1,21 @@
 <div class="form-group">
+    <input type="checkbox" id="checkbox1" name="checkbox1"
+        class="form-checkbox checkbox-large js-checkbox-toggle-content" value="1"
+        data-aria-controls="checkbox1-collapse" data-aria-expanded="false">
+    <label class="form-label" for="checkbox1">Tjekboks viser indhold<span class="sr-only">
+            Udfyld informationer herunder</span></label>
 
-    <input id="checkbox1" type="checkbox" name="checkbox1" value="1"
-        class="form-checkbox checkbox-large js-checkbox-toggle-content"
-        data-aria-controls='collapse-check1' data-aria-expanded='false' />
-    <label for="checkbox1" class="">Tjekboks viser indhold</label>
+</div>
 
-    <div id="collapse-check1" aria-hidden="true"
-        class="checkbox-content checkbox-content-large">
-        <p class="mt-0 py-4">Dette indhold bliver vist når tjekboksen er valgt.</p>
+<div id="checkbox1-collapse" aria-hidden="true"
+    class="checkbox-content checkbox-content-large">
+
+    <div class="form-group">
+        <label class="form-label" for="textinput1">Inputfelt med label</label>
+
+        <input type="text" id="textinput1" name="text1" class="form-input input-width-m"
+            required>
+
     </div>
+
 </div>

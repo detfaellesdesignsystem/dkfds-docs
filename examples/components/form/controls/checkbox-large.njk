@@ -1,9 +1,23 @@
-{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
-<div class="form-group">
-    <fieldset>
-        <legend class="form-label">Stor tjekboks (anbefalet)</legend>
-        <ul class="nobullet-list">
-            {% for item in checkbox_example_large.items %}<li>{{ checkbox(item) }}</li>{% endfor %}
-        </ul>
-    </fieldset>
-</div>
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+
+{{
+    checkboxes({
+        "id": "large",
+        "checkboxLegend": "Stor tjekboks (anbefalet)",
+        "groupname": "checkbox-large[]",
+        "items": [
+            {
+                "value": "1",
+                "label": "Tjekboks 1"
+            },
+            {
+                "value": "2",
+                "label": "Tjekboks 2"
+            },
+            {
+                "value": "3",
+                "label": "Tjekboks 3"
+            }
+        ]
+    })
+}}

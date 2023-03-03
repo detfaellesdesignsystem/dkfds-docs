@@ -1,6 +1,6 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
-{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
 
@@ -54,37 +54,31 @@
             ]
         })
     }}
-    <div class="form-group">
-        <fieldset>
-            <legend class="form-label">Hvornår på dagen vil det passe bedst, at vi kontakter dig?</legend>
-            <ul class="nobullet-list">
-                <li>{{ checkbox({
-                    "id":"checkbox-morgen",
-                    "name": "tidspunkt[]",
+    {{
+        checkboxes({
+            "id": "checkbox-tidspunkt",
+            "checkboxLegend": "Hvornår på dagen vil det passe bedst, at vi kontakter dig?",
+            "groupname": "tidspunkt[]",
+            "items": [
+                {
                     "value": "morgen",
-                    "label": "Om morgenen",
-                    "large": true}) }}</li>
-                <li>{{ checkbox({
-                    "id": "checkbox-middag",
-                    "name": "tidspunkt[]",
-                    "value": "middag", 
-                    "label":"Ved middagstid",
-                    "large": true}) }}</li>
-                <li>{{ checkbox({
-                    "id": "checkbox-eftermiddag",
-                    "name": "tidspunkt[]",
+                    "label": "Om morgenen"
+                },
+                {
+                    "value": "middag",
+                    "label": "Ved middagstid"
+                },
+                {
                     "value": "eftermiddag",
-                    "label": "Om eftermiddagen",
-                    "large": true}) }}</li>
-                <li>{{ checkbox({
-                    "id": "checkbox-aften",
-                    "name": "tidspunkt[]",
+                    "label": "Om eftermiddagen"
+                },
+                {
                     "value": "aften",
-                    "label": "Om aftenen", 
-                    "large":true}) }}</li>
-            </ul>
-        </fieldset>
-    </div>
+                    "label": "Om aftenen"
+                }
+            ]
+        })
+    }}
     <div class="form-group">
         <fieldset>
             <legend class="h4">Personlige oplysninger</legend>

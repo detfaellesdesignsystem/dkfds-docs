@@ -12,7 +12,7 @@
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
-{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
 {# <!-- Variables --> #}
@@ -88,14 +88,7 @@
         <main class="col-12 col-lg-9" id="main-content">
             <h1>Vælg personer</h1>
             <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-2/">
-                <div class="form-group">
-                    <fieldset>
-                        <legend class="form-label">Jeg vil gerne registrere</legend>
-                        <ul class="nobullet-list">
-                            {% for item in tjekbokse_personer.items %}<li>{{ checkbox(item) }}</li>{% endfor %}
-                        </ul>
-                    </fieldset>
-                </div>
+                {{checkboxes(tjekbokse_personer)}}
                 <h2 class="form-label mt-5 mb-0">Allerede registreret</h2>
                 {{ button(button_tooltip) }}
                 <ul class="nobullet-list mt-0">

@@ -5,7 +5,7 @@
         "headingLevel": "h2",
         "heading": "Der er problemer",
         "contentContainer": false,
-        "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#example-name-error\">Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen</a></li><li><a class=\"function-link\" href=\"#nationalitet1\">Angiv om du er dansk, svensk eller anden nationalitet</a></li><li><a class=\"function-link\" href=\"#date-input-error-day\">Datoen kan ikke være i fremtiden</a></li></ul>",
+        "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#example-name-error\">Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen</a></li><li><a class=\"function-link\" href=\"#checkboxes-error-option1\">Angiv om du er dansk, svensk eller anden nationalitet</a></li><li><a class=\"function-link\" href=\"#date-input-error-day\">Datoen kan ikke være i fremtiden</a></li></ul>",
         "attributes": "data-module=\"error-summary\""
     },
     "textinput_example": {
@@ -14,34 +14,23 @@
         "label": "Hvad er dit fulde navn?",
         "errorMessage": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen"
     },
-    "checkbox_error_examples": {
+    "checkbox_error_example": {
+        "id": "checkboxes-error",
+        "checkboxLegend": "Hvad er din nationalitet?",
+        "groupname": "nationalitet[]",
+        "errorMessage": "Angiv om du er dansk, svensk eller anden nationalitet",
         "items": [
             {
-                "id": "nationalitet1",
-                "name": "nationalitet",
                 "value": "dansk",
-                "checked": false,
-                "disabled": false,
-                "label": "Dansk",
-                "large": true
+                "label": "Dansk"
             },
             {
-                "id": "nationalitet2",
-                "name": "nationalitet[]",
                 "value": "svensk",
-                "checked": false,
-                "disabled": false,
-                "label": "Svensk",
-                "large": true
+                "label": "Svensk"
             },
             {
-                "id": "nationalitet3",
-                "name": "nationalitet[]",
                 "value": "anden",
-                "checked": false,
-                "disabled": false,
-                "label": "Anden nationalitet",
-                "large": true
+                "label": "Anden nationalitet"
             }
         ]
     },

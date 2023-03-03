@@ -1,9 +1,24 @@
-{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
-<div class="form-group">
-    <fieldset>
-        <legend class="form-label">Lille tjekboks</legend>
-        <ul class="nobullet-list">
-        {% for item in checkbox_example_small.items %}<li>{{ checkbox(item) }}</li>{% endfor %}
-        </ul>
-    </fieldset>
-</div>
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+
+{{
+    checkboxes({
+        "id": "small",
+        "checkboxLegend": "Lille tjekboks",
+        "groupname": "checkbox-small[]",
+        "isLarge": false,
+        "items": [
+            {
+                "value": "1",
+                "label": "Tjekboks 1"
+            },
+            {
+                "value": "2",
+                "label": "Tjekboks 2"
+            },
+            {
+                "value": "3",
+                "label": "Tjekboks 3"
+            }
+        ]
+    })
+}}

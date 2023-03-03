@@ -104,20 +104,17 @@
         ]
     },
     "tjekbokse_personer": {
+        "id": "person",
+        "checkboxLegend": "Jeg vil gerne registrere",
+        "groupname": "personer[]",
         "items": [
             {
-                "id": "person1",
-                "name": "personer",
                 "value": "KeldHedagaardsen",
-                "label": "Keld Hedagaardsen<br>230495-1111",
-                "large": true
+                "label": "Keld Hedagaardsen<br>230495-1111"
             },
             {
-                "id": "person2",
-                "name": "personer",
                 "value": "AnniHedagaardsen",
-                "label": "Anni Hedagaardsen<br>120394-2222",
-                "large": true
+                "label": "Anni Hedagaardsen<br>120394-2222"
             }
         ]
     },

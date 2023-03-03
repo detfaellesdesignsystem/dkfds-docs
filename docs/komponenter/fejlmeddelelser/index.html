@@ -4716,48 +4716,26 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group
-         form-error
-        
-        ">
-    <fieldset role="radiogroup" aria-describedby="
-        radiogroup-error-error " aria-invalid="true">
-        <legend class="form-label">
-            Sagen handler om
-
-        </legend>
+        <div class="form-group form-error">
+    <fieldset role="radiogroup" aria-describedby="radiogroup-error-error " aria-invalid="true">
+        <legend class="form-label">Sagen handler om</legend>
 
         <span class="form-error-message" id="radiogroup-error-error"><span class="sr-only">Fejl:</span> Vælg hvad sagen handler om</span>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-error-option1" name="sagen-omhandler" class="form-radio
-             radio-large
-            " value="ulykkesforsikring" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option1" name="sagen-omhandler" class="form-radio radio-large" value="ulykkesforsikring" />
             <label class="form-label" for="radiogroup-error-option1">Ulykkesforsikring</label>
 
         </div>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-error-option2" name="sagen-omhandler" class="form-radio
-             radio-large
-            " value="erstatningsansvar" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option2" name="sagen-omhandler" class="form-radio radio-large" value="erstatningsansvar" />
             <label class="form-label" for="radiogroup-error-option2">Erstatningsansvar</label>
 
         </div>
 
-        <div class="form-group-radio
-    ">
-
-            <input type="radio" id="radiogroup-error-option3" name="sagen-omhandler" class="form-radio
-             radio-large
-            " value="forsikringsselskab" />
-
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option3" name="sagen-omhandler" class="form-radio radio-large" value="forsikringsselskab" />
             <label class="form-label" for="radiogroup-error-option3">Forsikringsselskab</label>
 
         </div>
@@ -4848,22 +4826,29 @@
         <div class="form-group form-error">
     <fieldset aria-describedby="example-nationalitet-error">
         <legend class="form-label">Hvad er din nationalitet?</legend>
+
         <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk, svensk eller anden
             nationalitet</span>
-        <ul class="nobullet-list">
-            <li>
-                <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox checkbox-large " />
-                <label for="nationalitet1" class="">Dansk</label>
-            </li>
-            <li>
-                <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox checkbox-large " />
-                <label for="nationalitet2" class="">Svensk</label>
-            </li>
-            <li>
-                <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox checkbox-large " />
-                <label for="nationalitet3" class="">Anden nationalitet</label>
-            </li>
-        </ul>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="example-nationalitet-option1" name="nationalitet[]" class="form-checkbox checkbox-large" value="dansk" />
+            <label class="form-label" for="example-nationalitet-option1">Dansk</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="example-nationalitet-option2" name="nationalitet[]" class="form-checkbox checkbox-large" value="svensk" />
+            <label class="form-label" for="example-nationalitet-option2">Svensk</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="example-nationalitet-option3" name="nationalitet[]" class="form-checkbox checkbox-large" value="anden" />
+            <label class="form-label" for="example-nationalitet-option3">Anden
+                nationalitet</label>
+
+        </div>
+
     </fieldset>
 </div>
         

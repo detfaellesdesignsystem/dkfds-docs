@@ -1,0 +1,25 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+
+{% set checkboxContent = 
+    textinput({ 
+        "id": "textinput1", 
+        "label": "Inputfelt med label", 
+        "classes": { 
+            "input": "input-width-m" 
+        }, 
+        "name": "text1"
+    }) 
+%}
+
+{{ 
+    checkbox({
+        "id": "checkbox1",
+        "isStandalone": true,
+        "name": "checkbox1",
+        "value": "1",
+        "label": "Tjekboks viser indhold",
+        "srOnly": "Udfyld informationer herunder",
+        "hiddenContent": checkboxContent
+    }) 
+}}

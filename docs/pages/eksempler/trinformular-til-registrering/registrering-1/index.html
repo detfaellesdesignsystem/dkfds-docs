@@ -410,27 +410,30 @@
             <h1>Vælg personer</h1>
             <form novalidate method="post"
                 action="/pages/eksempler/trinformular-til-registrering/registrering-2/">
+
                 <div class="form-group">
                     <fieldset>
                         <legend class="form-label">Jeg vil gerne registrere</legend>
-                        <ul class="nobullet-list">
-                            <li>
-                                <input id="person1" type="checkbox" name="personer"
-                                    value="KeldHedagaardsen"
-                                    class="form-checkbox checkbox-large " />
-                                <label for="person1" class="">Keld
-                                    Hedagaardsen<br>230495-1111</label>
-                            </li>
-                            <li>
-                                <input id="person2" type="checkbox" name="personer"
-                                    value="AnniHedagaardsen"
-                                    class="form-checkbox checkbox-large " />
-                                <label for="person2" class="">Anni
-                                    Hedagaardsen<br>120394-2222</label>
-                            </li>
-                        </ul>
+
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="person-option1" name="personer[]"
+                                class="form-checkbox checkbox-large" value="KeldHedagaardsen">
+                            <label class="form-label" for="person-option1">Keld
+                                Hedagaardsen<br>230495-1111</label>
+
+                        </div>
+
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="person-option2" name="personer[]"
+                                class="form-checkbox checkbox-large" value="AnniHedagaardsen">
+                            <label class="form-label" for="person-option2">Anni
+                                Hedagaardsen<br>120394-2222</label>
+
+                        </div>
+
                     </fieldset>
                 </div>
+
                 <h2 class="form-label mt-5 mb-0">Allerede registreret</h2>
                 <button class="button button-unstyled js-tooltip" type="button"
                     data-tooltip="Følgende personer kan ikke vælges, da de allerede er blevet registreret."

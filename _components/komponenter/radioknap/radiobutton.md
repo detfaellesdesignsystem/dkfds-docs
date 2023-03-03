@@ -51,7 +51,9 @@ Sørg for at der er tilstrækkelig luft omkring den enkelte radioknap, så den e
 
 Vær forsigtig med at angive et standard valg, da det kan have en modsatrettet effekt: Brugeren kan føle sig manipuleret eller foretager ikke et bevidst valg.
 
-Der bør være en overordnet label for hele listen af radioknapper
+Der bør være en overordnet label for hele listen af radioknapper.
+
+Radioknapper bør altid kræve, at brugeren foretager et valg. I stedet for at lade brugeren skippe radioknapperne, så giv dem en neutral valgmulighed, der eventuelt er valgt som standard.
 
 {% include dos-donts-box.html component="radiobutton-dos-donts" title="Radioknapper do's and don'ts" %}
 

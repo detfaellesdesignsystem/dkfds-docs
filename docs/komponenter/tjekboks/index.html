@@ -4245,28 +4245,28 @@
         <div class="form-group">
     <fieldset>
         <legend class="form-label">Stor tjekboks (anbefalet)</legend>
-        <ul class="nobullet-list">
-            <li>
-                <input id="large1" type="checkbox" name="checkbox-large[]" value="1"
-                    class="form-checkbox checkbox-large " />
-                <label for="large1" class="">Tjekboks 1</label>
-            </li>
-            <li>
-                <input id="large2" type="checkbox" name="checkbox-large[]" value="2"
-                    class="form-checkbox checkbox-large " />
-                <label for="large2" class="">Tjekboks 2</label>
-            </li>
-            <li>
-                <input id="large3" type="checkbox" name="checkbox-large[]" value="3"
-                    class="form-checkbox checkbox-large " />
-                <label for="large3" class="">Tjekboks 3</label>
-            </li>
-            <li>
-                <input id="large4" type="checkbox" name="checkbox-large[]" value="4"
-                    class="form-checkbox checkbox-large " disabled />
-                <label for="large4" class="">Tjekboks 4</label>
-            </li>
-        </ul>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="large-option1" name="checkbox-large[]"
+                class="form-checkbox checkbox-large" value="1">
+            <label class="form-label" for="large-option1">Tjekboks 1</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="large-option2" name="checkbox-large[]"
+                class="form-checkbox checkbox-large" value="2">
+            <label class="form-label" for="large-option2">Tjekboks 2</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="large-option3" name="checkbox-large[]"
+                class="form-checkbox checkbox-large" value="3">
+            <label class="form-label" for="large-option3">Tjekboks 3</label>
+
+        </div>
+
     </fieldset>
 </div>
         
@@ -4306,6 +4306,8 @@
 <p>Anvend et positivt sprog til værdierne. I stedet for fx ”Jeg vil ikke modtage bekræftelse på email” bør du skrive ”Jeg vil gerne modtage bekræftelse på email”.</p>
 
 <p>Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er brugbar på touchskærme.</p>
+
+<p>Hvis du giver brugeren en liste med tjekbokse, så gør det tydeligt gennem enten label eller hjælpetekst, hvor mange tjekbokse det forventes, at de vælger.</p>
 
 <div class=" component-preview-checkbox-dos-donts">
     
@@ -4368,22 +4370,29 @@
         <div class="form-group form-error">
     <fieldset aria-describedby="example-nationalitet-error">
         <legend class="form-label">Hvad er din nationalitet?</legend>
+
         <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk, svensk eller anden
             nationalitet</span>
-        <ul class="nobullet-list">
-            <li>
-                <input id="nationalitet1" type="checkbox" name="nationalitet" value="dansk" class="form-checkbox checkbox-large " />
-                <label for="nationalitet1" class="">Dansk</label>
-            </li>
-            <li>
-                <input id="nationalitet2" type="checkbox" name="nationalitet[]" value="svensk" class="form-checkbox checkbox-large " />
-                <label for="nationalitet2" class="">Svensk</label>
-            </li>
-            <li>
-                <input id="nationalitet3" type="checkbox" name="nationalitet[]" value="anden" class="form-checkbox checkbox-large " />
-                <label for="nationalitet3" class="">Anden nationalitet</label>
-            </li>
-        </ul>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="example-nationalitet-option1" name="nationalitet[]" class="form-checkbox checkbox-large" value="dansk" />
+            <label class="form-label" for="example-nationalitet-option1">Dansk</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="example-nationalitet-option2" name="nationalitet[]" class="form-checkbox checkbox-large" value="svensk" />
+            <label class="form-label" for="example-nationalitet-option2">Svensk</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="example-nationalitet-option3" name="nationalitet[]" class="form-checkbox checkbox-large" value="anden" />
+            <label class="form-label" for="example-nationalitet-option3">Anden
+                nationalitet</label>
+
+        </div>
+
     </fieldset>
 </div>
         
@@ -4415,24 +4424,25 @@
         <div class="form-group">
     <fieldset>
         <legend class="form-label">Lille tjekboks</legend>
-        <ul class="nobullet-list">
-            <li>
-                <input id="small1" type="checkbox" name="checkbox-small[]" value="1" class="form-checkbox " />
-                <label for="small1" class="">Tjekboks 1</label>
-            </li>
-            <li>
-                <input id="small2" type="checkbox" name="checkbox-small[]" value="2" class="form-checkbox " />
-                <label for="small2" class="">Tjekboks 2</label>
-            </li>
-            <li>
-                <input id="small3" type="checkbox" name="checkbox-small[]" value="3" class="form-checkbox " />
-                <label for="small3" class="">Tjekboks 3</label>
-            </li>
-            <li>
-                <input id="small4" type="checkbox" name="checkbox-small[]" value="4" class="form-checkbox " disabled="" />
-                <label for="small4" class="">Tjekboks 4</label>
-            </li>
-        </ul>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="small-option1" name="checkbox-small[]" class="form-checkbox" value="1" />
+            <label class="form-label" for="small-option1">Tjekboks 1</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="small-option2" name="checkbox-small[]" class="form-checkbox" value="2" />
+            <label class="form-label" for="small-option2">Tjekboks 2</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="small-option3" name="checkbox-small[]" class="form-checkbox" value="3" />
+            <label class="form-label" for="small-option3">Tjekboks 3</label>
+
+        </div>
+
     </fieldset>
 </div>
         
@@ -4465,13 +4475,21 @@
     <div class="component-example px-4 py-4">
         
         <div class="form-group">
+    <input type="checkbox" id="checkbox1" name="checkbox1" class="form-checkbox checkbox-large js-checkbox-toggle-content" value="1" data-aria-controls="checkbox1-collapse" data-aria-expanded="false" />
+    <label class="form-label" for="checkbox1">Tjekboks viser indhold<span class="sr-only">
+            Udfyld informationer herunder</span></label>
 
-    <input id="checkbox1" type="checkbox" name="checkbox1" value="1" class="form-checkbox checkbox-large js-checkbox-toggle-content" data-aria-controls="collapse-check1" data-aria-expanded="false" />
-    <label for="checkbox1" class="">Tjekboks viser indhold</label>
+</div>
 
-    <div id="collapse-check1" aria-hidden="true" class="checkbox-content checkbox-content-large">
-        <p class="mt-0 py-4">Dette indhold bliver vist når tjekboksen er valgt.</p>
+<div id="checkbox1-collapse" aria-hidden="true" class="checkbox-content checkbox-content-large">
+
+    <div class="form-group">
+        <label class="form-label" for="textinput1">Inputfelt med label</label>
+
+        <input type="text" id="textinput1" name="text1" class="form-input input-width-m" required="" />
+
     </div>
+
 </div>
         
     </div>
