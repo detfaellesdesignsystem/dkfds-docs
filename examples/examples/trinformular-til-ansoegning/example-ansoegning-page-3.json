@@ -100,10 +100,8 @@
     "textarea_data": {
         "id": "input-background",
         "name": "background",
-        "label": {
-            "text": "Baggrund for ansøgningen",
-            "optionalLabel": true
-        },
+        "label": "Baggrund for ansøgningen",
+        "optionalLabel": true,
         "helptext": "Her kan du beskrive med dine egne ord, hvorfor du ansøger",
         "rows": "6"
     },

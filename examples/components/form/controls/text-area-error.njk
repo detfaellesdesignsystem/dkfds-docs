@@ -1,3 +1,11 @@
 {% from "components/form/controls/text-area.njk" import textarea as textarea %}
 
-{{textarea(item)}}
+{{
+    textarea({
+        "id": "textarea-error",
+        "name": "textarea-error",
+        "label": "Tekstområde med fejlmeddelelse",
+        "errorMessage": "Hjælpsom fejlmeddelelse",
+        "rows": 5
+    })
+}}

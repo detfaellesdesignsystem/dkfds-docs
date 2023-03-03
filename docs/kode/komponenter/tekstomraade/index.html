@@ -4396,9 +4396,9 @@
     <div class="component-example px-4 py-4">
         
         <div class="form-group">
-    <label class="form-label" for="input-area">Tekstområde med label</label>
+    <label class="form-label" for="input-textarea">Tekstområde med label</label>
 
-    <textarea class="form-input " rows="5" id="input-area" name="input-area"></textarea>
+    <textarea class="form-input" id="input-textarea" name="input-textarea" rows="5"></textarea>
 
 </div>
         
@@ -4424,9 +4424,10 @@
     <div class="component-code">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-area&quot;&gt;Tekstområde med label&lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-textarea&quot;&gt;Tekstområde med label&lt;/label&gt;
 
-    &lt;textarea class=&quot;form-input &quot;  rows=&quot;5&quot;     id=&quot;input-area&quot; name=&quot;input-area&quot; &gt;&lt;/textarea&gt;
+    &lt;textarea class=&quot;form-input&quot; id=&quot;input-textarea&quot; name=&quot;input-textarea&quot;
+        rows=&quot;5&quot;&gt;&lt;/textarea&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -4465,13 +4466,13 @@
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;60&quot; id=&quot;input-area-character-limit&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-area-limit&quot;&gt;Tekstområde med
-        karakterbegrænsning&lt;/label&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;60&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;textarea-limit&quot;&gt;Tekstområde med karakterbegrænsning&lt;/label&gt;
 
-    &lt;textarea class=&quot;form-input &quot;  rows=&quot;5&quot;     id=&quot;input-area-limit&quot; name=&quot;input-area-limit&quot; aria-describedby=&quot;  input-area-character-limit-message&quot; &gt;&lt;/textarea&gt;
+    &lt;textarea class=&quot;form-input&quot; id=&quot;textarea-limit&quot; name=&quot;textarea-limit&quot; rows=&quot;5&quot;
+        aria-describedby=&quot;textarea-limit-limit-message&quot;&gt;&lt;/textarea&gt;
 
-    &lt;span id=&quot;input-area-character-limit-message&quot; class=&quot;sr-only&quot;&gt;Du kan indtaste op til 60
+    &lt;span id=&quot;textarea-limit-limit-message&quot; class=&quot;sr-only&quot;&gt;Du kan indtaste op til 60
         tegn&lt;/span&gt;
     &lt;span class=&quot;form-hint character-limit&quot; aria-hidden=&quot;true&quot;&gt;Du har 60 tegn tilbage&lt;/span&gt;
     &lt;span class=&quot;character-limit-sr-only sr-only&quot; aria-live=&quot;polite&quot;&gt;Du har 60 tegn

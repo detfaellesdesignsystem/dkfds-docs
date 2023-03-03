@@ -1,3 +1,13 @@
 {% from "components/form/controls/text-area.njk" import textarea as textarea %}
 
-{{textarea(params)}}
+{{
+    textarea({
+        "id": "textarea-limit-error",
+        "name": "textarea-limit-error",
+        "label": "Karakterbegrænsning med fejlmeddelelse",
+        "rows": 3,
+        "errorMessage": "Du kan maks. taste 50 tegn",
+        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "characterLimit": 50
+    })
+}}

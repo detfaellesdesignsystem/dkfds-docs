@@ -1,3 +1,12 @@
 {% from "components/form/controls/text-area.njk" import textarea as textarea %}
 
-{{textarea(item)}}
+{{
+    textarea({
+        "id": "textarea-limit",
+        "name": "textarea-limit",
+        "label": "Tekstområde med karakterbegrænsning",
+        "rows": 5,
+        "characterLimit": 60
+    })
+}}
+
