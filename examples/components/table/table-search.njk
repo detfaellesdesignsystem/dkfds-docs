@@ -2,7 +2,7 @@
 {% from "components/table/table.njk" import table as table %}
 
 <form novalidate method="get" id="formSearchTable">
-    {{ 
+    {{- 
         search({
             "inputId": "inputSearchTable",
             "classes": "input-char-27",
@@ -10,14 +10,17 @@
             "buttonId": "btnSearchTable",
             "buttonType": "submit"
         }) 
-    }}
+    -}}
 </form>
-
 {{ 
     table({
-        "outerClasses": "mt-4",
         "id": "searchTable",
-        "attributes": "aria-live=\"polite\"",
+        "attributes": {
+            "inner": "aria-live=\"polite\""
+        },
+        "classes": {
+            "outer": "mt-4"
+        },
         "thead": [
             { "headerContent": "Affaldstype" },
             { "headerContent": "Farvekode" },

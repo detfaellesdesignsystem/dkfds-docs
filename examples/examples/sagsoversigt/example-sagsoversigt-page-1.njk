@@ -134,7 +134,9 @@
     {% set badgeAfsluttet = badge(badge_afsluttet) %}
     {{
         table({
-            "outerClasses": "mt-4 mb-4",
+            "classes": {
+                "outer": "mt-4 mb-4"
+            },
             "thead": [
                 { "headerContent": "Sagsnummer" },
                 { "headerContent": "Sidst ændret" },

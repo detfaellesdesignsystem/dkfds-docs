@@ -156,12 +156,13 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a></h3>
   <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
 </div>
-- Fjernet klassen `table--lines`, der var en forældet måde at style en tabel på.
+- Mindre rettelser for styling af tabeller, samt fjernet klassen `table--lines`.
 - Rettet fejl relateret til margin og padding for tabeller.
 - Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.
 - Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> er ændret til kun at være "vælg række". Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML'en fremadrettet.
 - Fjernet `aria-label` fra `label`-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.
 - Opdateret opsummeringssiderne i selvbetjeningseksemplerne, hvor tidligere tomme headers har fået en skærmlæserbesked.
+- Opdateret `DKFDS.init()`, så kun tabeller markeret med <a href="/kode/komponenter/tables/#responsiv">responsive klasser</a> får indsat attributten `data-title`.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>

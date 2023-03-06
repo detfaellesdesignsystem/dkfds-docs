@@ -133,9 +133,11 @@
         "attributes": "type='button'"
     },
     "tabel_dokumentation": {
-        "outerClasses": "w-percent-md-70 mt-4 mb-7",
         "borderless": true,
         "responsive": true,
+        "classes": {
+            "outer": "w-percent-md-70 mt-4 mb-7"
+        },
         "thead": [
             { "headerContent": "Filnavn" },
             { "headerContent": "Dokumentationstype" },
