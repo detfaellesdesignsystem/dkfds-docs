@@ -23,9 +23,11 @@ description: "Dokumentation på implementering af strukturerede lister."
 
 {% include code/syntax.html component="structured-list" %}
 
-Tilføj klasserne `no-gutters` or `row-bordered` til row-elementet. Kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som alternativ til en tabel, hvis der ingen headers er. Hver titel i listen skal være markeret som en passende heading, der har klassen `structured-heading`.
+Strukturerede lister kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som en alternativ tabel, hvis der ikke er nogen vandrette headers. 
 
-Strukturerede lister gør brug af designsystemets grid, for mere vejledning om implementering se derfor under <a href="/kode/grid/">grid</a>
+Listerne skal altid indeholde præcis 2 eller 3 kolonner. Første kolonne anvendes til headers, anden kolonne til indhold og tredje kolonne til redigering af rækkens indhold. Husk at markere `scope="row"` for hver tabelheader.
+
+Listen kan gøres <a href="/kode/komponenter/tables/#responsiv">responsiv</a> ved at tilføje klassen med det ønskede breakpoint. 
 
 ## Varianter
 

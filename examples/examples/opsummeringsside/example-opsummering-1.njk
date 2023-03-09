@@ -181,14 +181,10 @@
             }}
 
             <h2>Tidligere registrering</h2>
-            <div class="w-percent-md-70 mt-6 mb-7">
-                {{structured_list(tidligere_registrering)}}
-            </div>
+            {{ structured_list(list_tidligere_registrering) }}
 
             <h2>Kontaktoplysninger</h2>
-            <div class="w-percent-md-70 mt-6 mb-7">
-                {{structured_list(kontaktoplysninger)}}
-            </div>
+            {{ structured_list(list_kontaktoplysninger) }}
             
             <form novalidate method="post">
                 <input type="hidden" name="entries-confirmed" value="true">

@@ -115,10 +115,10 @@
                 "inner": "w-percent-md-60 mt-4 mb-7 d-print-table"
             },
             "thead": [
-                    { "headerContent": "Nummer" },
-                    { "headerContent": "Dato" },
-                    { "headerContent": "Information" }
-                ],
+                { "headerContent": "Nummer" },
+                { "headerContent": "Dato" },
+                { "headerContent": "Information" }
+            ],
             "tbody": [
                 [
                     { "content": "123456789" },
@@ -155,13 +155,9 @@
     }}
 
     <h3>Tidligere registrering</h3>
-    <div class="w-percent-md-60 mt-6 mb-7">
-        {{structured_list(tidligere_registrering)}}
-    </div>
+    {{ structured_list(list_tidligere_registrering) }}
     <h3>Kontaktoplysninger</h3>
-    <div class="w-percent-md-60 mt-6 mb-7">
-        {{structured_list(kontaktoplysninger)}}
-    </div>
+    {{ structured_list(list_kontaktoplysninger) }}
     {{ button(button_done) }}
 </main>
 {% endblock %}

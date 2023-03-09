@@ -101,11 +101,11 @@
         "content": "Maj 2021",
         "icon": true
     },
-    "sags_info": {
-        "headingLevel": "h2",
-        "classes": { 
-            "label": "col-md-4",
-            "value": "col-md-8"
+    "list_sagsinfo": {
+        "breakpoint": "sm",
+        "classes": {
+            "outer": "mt-7",
+            "table": "w-percent-md-40"
         },
         "items": [
             {

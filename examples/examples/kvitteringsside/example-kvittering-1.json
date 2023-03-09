@@ -55,11 +55,11 @@
         "classes": "d-print-none mb-4",
         "icon": "print"
     },
-    "tidligere_registrering": {
-        "headingLevel": "h4",
+    "list_tidligere_registrering": {
         "classes": { 
-            "label": "col-md-8",
-            "value": "col-md-2"
+            "outer": "mt-6 mb-7",
+            "table": "w-percent-md-60",
+            "label": "w-percent-md-60"
         },
         "items": [
             {
@@ -76,11 +76,12 @@
             }
         ]
     },
-    "kontaktoplysninger": {
-        "headingLevel": "h4",
+    "list_kontaktoplysninger": {
+        "breakpoint": "sm",
         "classes": { 
-            "label": "col-md-4",
-            "value": "col-md-6"
+            "outer": "mt-6 mb-7",
+            "table": "w-percent-md-60",
+            "label": "w-percent-md-30"
         },
         "items": [
             {

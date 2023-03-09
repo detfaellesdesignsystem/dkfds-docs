@@ -135,11 +135,12 @@
         "content": "Maj 2021",
         "icon": true
     },
-    "anerkendelse_info": {
-        "headingLevel": "h4",
+    "list_anerkendelse_info": {
+        "breakpoint": "sm",
         "classes": { 
-            "label": "col-md-6",
-            "value": "col-md-6"
+            "outer": "mb-5",
+            "table": "w-percent-md-60 w-percent-lg-50",
+            "value": "w-percent-md-50"
         },
         "items": [
             {
@@ -156,11 +157,12 @@
             }
         ]
     },
-    "sagsindhold_1_info": {
-        "headingLevel": "h4",
+    "list_sagsindhold_1_info": {
+        "breakpoint": "sm",
         "classes": { 
-            "label": "col-md-6",
-            "value": "col-md-6"
+            "outer": "mb-5",
+            "table": "w-percent-md-60 w-percent-lg-50",
+            "value": "w-percent-md-50"
         },
         "items": [
             {
@@ -177,11 +179,12 @@
             }
         ]
     },
-    "sagsindhold_2_info": {
-        "headingLevel": "h4",
+    "list_sagsindhold_2_info": {
+        "breakpoint": "sm",
         "classes": { 
-            "label": "col-md-6",
-            "value": "col-md-6"
+            "outer": "mb-5",
+            "table": "w-percent-md-60 w-percent-lg-50",
+            "value": "w-percent-md-50"
         },
         "items": [
             {
@@ -198,11 +201,12 @@
             }
         ]
     },
-    "sagsindhold_3_info": {
-        "headingLevel": "h4",
+    "list_sagsindhold_3_info": {
+        "breakpoint": "sm",
         "classes": { 
-            "label": "col-md-6",
-            "value": "col-md-6"
+            "outer": "mb-5",
+            "table": "w-percent-md-60 w-percent-lg-50",
+            "value": "w-percent-md-50"
         },
         "items": [
             {

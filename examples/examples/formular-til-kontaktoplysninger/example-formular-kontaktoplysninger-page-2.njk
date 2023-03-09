@@ -78,11 +78,7 @@
             <legend>
                 <h1 class="mb-4">Bekræft oplysninger</h1>
             </legend>
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    {{structured_list(oplysninger)}}
-                </div>
-            </div>
+            {{ structured_list(list_oplysninger) }}
             {{ button(button_send) }}
         </fieldset>
     </form>

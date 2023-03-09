@@ -137,9 +137,7 @@
     {{ alert(alert_afslutning) }}
     <h1 class="mt-6">Sagsnr. 123456789</h1>
     {{ badge(badge_under_behandling) }}
-    <div class="w-percent-xs-100 w-percent-md-40 mt-7">
-        {{structured_list(sags_info)}}
-    </div>
+    {{ structured_list(list_sagsinfo) }}
 
     <h2>Sagsindhold</h2>
     <ul class="nobullet-list">

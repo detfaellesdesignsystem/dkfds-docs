@@ -1,10 +1,9 @@
 {
     "structured_list_edit_example": {
-        "headingLevel": "h3",
+        "breakpoint": "sm",
+        "edit": true,
         "classes": { 
-            "label": "col-md-4",
-            "value": "col-md-6",
-            "edit": "col-md-2 align-text-md-right"
+            "href": "align-text-md-right"
         },
         "items":  [
             {

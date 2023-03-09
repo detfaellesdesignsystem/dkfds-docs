@@ -175,7 +175,8 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 
 <h3 class="h4">Øvrige</h3>
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Følgende komponenter har fået opdateret HTML'en, så titler nu er angivet med enten et heading-element eller `<strong>`-element: <a href="/kode/komponenter/badges/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/kode/komponenter/cookiemeddelelse/">cookiemeddelelser</a>, <a href="/kode/komponenter/strukturerede-lister/">strukturerede lister</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Følgende komponenter har fået opdateret HTML'en, så titler nu er angivet med enten et heading-element eller `<strong>`-element: <a href="/kode/komponenter/badges/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/kode/komponenter/cookiemeddelelse/">cookiemeddelelser</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret <a href="/komponenter/strukturerede-lister/">strukturerede lister</a> til at anvende tabelstruktur.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes. 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæsere annoncerer nu også <a href="/komponenter/toastbesked/">toastbeskeders</a> variant og derudover titlen ved fokus på luk-knappen.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl i <a href="/komponenter/fejlmeddelelser/#accordions">accordioneksempel</a>, hvor fejlbeskedens `id` ikke var korrekt sat for skærmlæsere.

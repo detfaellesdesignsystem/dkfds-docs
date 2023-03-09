@@ -4395,45 +4395,32 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="row row-bordered no-gutters">
-    <div class="col-md-4">
-        <h3 class="structured-heading">Navn</h3>
-    </div>
-    <div class="col-md-8">
-        Kirsten Mønster Jensen
-    </div>
+        <div class="table--responsive-scroll">
+    <table class="table structured-list table-sm-responsive-headers">
+        <tbody>
+            <tr>
+                <th scope="row" class="w-percent-md-30">Navn</th>
+                <td>Kirsten Mønster Jensen</td>
 
-</div>
+            </tr>
+            <tr>
+                <th scope="row" class="w-percent-md-30">Sagsnummer</th>
+                <td>123.456</td>
 
-<div class="row row-bordered no-gutters">
-    <div class="col-md-4">
-        <h3 class="structured-heading">Sagsnummer</h3>
-    </div>
-    <div class="col-md-8">
-        123.456
-    </div>
+            </tr>
+            <tr>
+                <th scope="row" class="w-percent-md-30">Dato</th>
+                <td>04/05/2011</td>
 
-</div>
+            </tr>
+            <tr>
+                <th scope="row" class="w-percent-md-30">Beskrivelse</th>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </td>
 
-<div class="row row-bordered no-gutters">
-    <div class="col-md-4">
-        <h3 class="structured-heading">Dato</h3>
-    </div>
-    <div class="col-md-8">
-        04/05/2011
-    </div>
-
-</div>
-
-<div class="row row-bordered no-gutters">
-    <div class="col-md-4">
-        <h3 class="structured-heading">Beskrivelse</h3>
-    </div>
-    <div class="col-md-8">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.
-    </div>
-
+            </tr>
+        </tbody>
+    </table>
 </div>
         
     </div>
@@ -4457,54 +4444,43 @@
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;row row-bordered no-gutters&quot;&gt;
-    &lt;div class=&quot;col-md-4&quot;&gt;
-        &lt;h3 class=&quot;structured-heading&quot;&gt;Navn&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-8&quot;&gt;
-        Kirsten Mønster Jensen
-    &lt;/div&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+    &lt;table class=&quot;table structured-list table-sm-responsive-headers&quot;&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;w-percent-md-30&quot;&gt;Navn&lt;/th&gt;
+                &lt;td&gt;Kirsten Mønster Jensen&lt;/td&gt;
 
-&lt;/div&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;w-percent-md-30&quot;&gt;Sagsnummer&lt;/th&gt;
+                &lt;td&gt;123.456&lt;/td&gt;
 
-&lt;div class=&quot;row row-bordered no-gutters&quot;&gt;
-    &lt;div class=&quot;col-md-4&quot;&gt;
-        &lt;h3 class=&quot;structured-heading&quot;&gt;Sagsnummer&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-8&quot;&gt;
-        123.456
-    &lt;/div&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;w-percent-md-30&quot;&gt;Dato&lt;/th&gt;
+                &lt;td&gt;04/05/2011&lt;/td&gt;
 
-&lt;/div&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;w-percent-md-30&quot;&gt;Beskrivelse&lt;/th&gt;
+                &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. &lt;/td&gt;
 
-&lt;div class=&quot;row row-bordered no-gutters&quot;&gt;
-    &lt;div class=&quot;col-md-4&quot;&gt;
-        &lt;h3 class=&quot;structured-heading&quot;&gt;Dato&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-8&quot;&gt;
-        04/05/2011
-    &lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;row row-bordered no-gutters&quot;&gt;
-    &lt;div class=&quot;col-md-4&quot;&gt;
-        &lt;h3 class=&quot;structured-heading&quot;&gt;Beskrivelse&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-8&quot;&gt;
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.
-    &lt;/div&gt;
-
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
     </div>
 </div>
 
-<p>Tilføj klasserne <code>no-gutters</code> or <code>row-bordered</code> til row-elementet. Kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som alternativ til en tabel, hvis der ingen headers er. Hver titel i listen skal være markeret som en passende heading, der har klassen <code>structured-heading</code>.</p>
+<p>Strukturerede lister kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som en alternativ tabel, hvis der ikke er nogen vandrette headers.</p>
 
-<p>Strukturerede lister gør brug af designsystemets grid, for mere vejledning om implementering se derfor under <a href="/kode/grid/">grid</a></p>
+<p>Listerne skal altid indeholde præcis 2 eller 3 kolonner. Første kolonne anvendes til headers, anden kolonne til indhold og tredje kolonne til redigering af rækkens indhold. Husk at markere <code>scope="row"</code> for hver tabelheader.</p>
+
+<p>Listen kan gøres <a href="/kode/komponenter/tables/#responsiv">responsiv</a> ved at tilføje klassen med det ønskede breakpoint.</p>
 
 <h2>Varianter</h2>
 
@@ -4523,46 +4499,29 @@
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;row row-bordered no-gutters&quot;&gt;
-    &lt;div class=&quot;col-md-4&quot;&gt;
-        &lt;h3 class=&quot;structured-heading&quot;&gt;Navn&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-6&quot;&gt;
-        Kirsten Mønster Jensen
-    &lt;/div&gt;
-
-    &lt;div class=&quot;col-md-2 align-text-md-right&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;Redigér&lt;span class=&quot;sr-only&quot;&gt; navn&lt;/span&gt;&lt;/a&gt;
-    &lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;row row-bordered no-gutters&quot;&gt;
-    &lt;div class=&quot;col-md-4&quot;&gt;
-        &lt;h3 class=&quot;structured-heading&quot;&gt;E-mail&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-6&quot;&gt;
-        kirstenjensen@eksempel.dk
-    &lt;/div&gt;
-
-    &lt;div class=&quot;col-md-2 align-text-md-right&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;Redigér&lt;span class=&quot;sr-only&quot;&gt; e-mail&lt;/span&gt;&lt;/a&gt;
-    &lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;row row-bordered no-gutters&quot;&gt;
-    &lt;div class=&quot;col-md-4&quot;&gt;
-        &lt;h3 class=&quot;structured-heading&quot;&gt;Telefonnummer&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-6&quot;&gt;
-        12 34 56 78
-    &lt;/div&gt;
-
-    &lt;div class=&quot;col-md-2 align-text-md-right&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;Redigér&lt;span class=&quot;sr-only&quot;&gt; telefonnummer&lt;/span&gt;&lt;/a&gt;
-    &lt;/div&gt;
-
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+    &lt;table class=&quot;table structured-list table-sm-responsive-headers&quot;&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;Navn&lt;/th&gt;
+                &lt;td&gt;Kirsten Mønster Jensen&lt;/td&gt;
+                &lt;td class=&quot;d-print-none align-text-md-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Redigér&lt;span
+                            class=&quot;sr-only&quot;&gt; navn&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;E-mail&lt;/th&gt;
+                &lt;td&gt;kirstenjensen@eksempel.dk&lt;/td&gt;
+                &lt;td class=&quot;d-print-none align-text-md-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Redigér&lt;span
+                            class=&quot;sr-only&quot;&gt; e-mail&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;Telefonnummer&lt;/th&gt;
+                &lt;td&gt;12 34 56 78&lt;/td&gt;
+                &lt;td class=&quot;d-print-none align-text-md-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Redigér&lt;span
+                            class=&quot;sr-only&quot;&gt; telefonnummer&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
 &lt;/div&gt;</code></pre></figure>
 
 

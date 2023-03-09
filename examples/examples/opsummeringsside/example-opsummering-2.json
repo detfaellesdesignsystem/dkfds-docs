@@ -42,12 +42,14 @@
             ]
         }
     },
-    "oplysninger_om_ansoeger": {
-        "headingLevel": "h3",
+    "list_oplysninger_om_ansoeger": {
+        "breakpoint": "sm",
+        "edit": true,
         "classes": { 
-            "label": "col-md-4",
-            "value": "col-md-6",
-            "edit": "col-md-2 align-text-md-right d-print-none"
+            "outer": "mt-6 mb-7",
+            "table": "w-percent-md-70",
+            "label": "w-percent-md-30",
+            "href": "align-text-md-right"
         },
         "items": [
             {
@@ -66,12 +68,14 @@
             }
         ]
     },
-    "kontaktoplysninger": {
-        "headingLevel": "h3",
+    "list_kontaktoplysninger": {
+        "breakpoint": "sm",
+        "edit": true,
         "classes": { 
-            "label": "col-md-4",
-            "value": "col-md-6",
-            "edit": "col-md-2 align-text-md-right d-print-none"
+            "outer": "mt-6 mb-7",
+            "table": "w-percent-md-70",
+            "label": "w-percent-md-30",
+            "href": "align-text-md-right"
         },
         "items": [
             {
@@ -81,12 +85,14 @@
             }
         ]
     },
-    "ansoegningens_type": {
-        "headingLevel": "h3",
+    "list_ansoegningens_type": {
+        "breakpoint": "sm",
+        "edit": true,
         "classes": { 
-            "label": "col-md-4",
-            "value": "col-md-6",
-            "edit": "col-md-2 align-text-md-right d-print-none"
+            "outer": "mt-6 mb-7",
+            "table": "w-percent-md-70",
+            "label": "w-percent-md-30",
+            "href": "align-text-md-right"
         },
         "items": [
             {

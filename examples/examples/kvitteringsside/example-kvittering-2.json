@@ -49,6 +49,23 @@
         "classes": "d-print-none",
         "icon": "file-download"
     },
+    "list_betaling": {
+        "classes": {
+            "outer": "mt-4",
+            "table": "w-percent-md-30",
+            "label": "w-percent-lg-30"
+        },
+        "items": [
+            {
+                "label": "Reg.nr.",
+                "value": "1234"
+            },
+            {
+                "label": "Kontonr.",
+                "value": "1234567890"
+            }
+        ]
+    },
     "button_opret": {
         "text": "Opret ny ansøgning",
         "variant": "secondary",

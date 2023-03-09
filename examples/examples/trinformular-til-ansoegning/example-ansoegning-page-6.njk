@@ -13,6 +13,7 @@
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
 
 {# <!-- Variables --> #}
 
@@ -82,21 +83,8 @@
         forventes, at der er en udtalelse klar.</p>
     <h2 class="h4 mt-7">Husk betaling</h2>
     <p>Gebyret for udtalelsen skal sættes ind på vores konto:</p>
-    <div class="w-percent-md-30 mt-4">
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Reg.nr.
-            </div>
-            <div class="col-12 col-md-8">1234</div>
-        </div>
-        <div class="row no-gutters row-bordered">
-            <div class="col-12 col-md-4 weight-semibold">
-                Kontonr.
-            </div>
-            <div class="col-12 col-md-8">1234567890</div>
-        </div>
-    </div>
-    <p>Gebyr: 6.000 kr.<br />Ved overførslen skal I oplyse ansøgers CPR-nummer.</p>
+    {{ structured_list(list_betaling) }}
+    <p>Gebyr: 6.000 kr.<br>Ved overførslen skal I oplyse ansøgers CPR-nummer.</p>
     <h2 class="h4 mt-7">Ved spørgsmål eller supplerende oplysninger</h2>
     <p>Kontakt os på kontakt@eksempel.dk eller telefon 12 34 56 78.<br />Referencenummer: 98765432</p>
     <div>{{ button(button_opret) }}</div>

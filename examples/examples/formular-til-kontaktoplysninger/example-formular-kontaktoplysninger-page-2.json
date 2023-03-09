@@ -65,12 +65,13 @@
             }
         ]
     },
-    "oplysninger": {
-        "headingLevel": "h2",
+    "list_oplysninger": {
+        "breakpoint": "sm",
+        "edit": true,
         "classes": { 
-            "label": "col-md-4",
-            "value": "col-md-5",
-            "edit": "col-md-3 align-text-md-right d-print-none"
+            "table": "w-percent-lg-70",
+            "label": "w-percent-md-30",
+            "href": "align-text-md-right"
         },
         "items": [
             {

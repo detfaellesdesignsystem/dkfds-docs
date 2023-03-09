@@ -1,9 +1,8 @@
 {
     "structured_list_example": {
-        "headingLevel": "h3",
+        "breakpoint": "sm",
         "classes": { 
-            "label": "col-md-4",
-            "value": "col-md-8"
+            "label": "w-percent-md-30"
         },
         "items":  [
             {

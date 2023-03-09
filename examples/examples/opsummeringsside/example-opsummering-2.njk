@@ -77,17 +77,11 @@
     {{ overflow_stepguide(trinindikator_data) }}
     <h1>Opsummering</h1>
     <h2>Oplysninger om ansøger</h2>
-    <div class="w-percent-md-70 mt-6 mb-7">
-        {{structured_list(oplysninger_om_ansoeger)}}
-    </div>
+    {{ structured_list(list_oplysninger_om_ansoeger) }}
     <h2>Kontaktoplysninger</h2>
-    <div class="w-percent-md-70 mt-6 mb-7">
-        {{structured_list(kontaktoplysninger)}}
-    </div>
+    {{ structured_list(list_kontaktoplysninger) }}
     <h2>Ansøgningens type</h2>
-    <div class="w-percent-md-70 mt-6 mb-7">
-        {{structured_list(ansoegningens_type)}}
-    </div>
+    {{ structured_list(list_ansoegningens_type) }}
     <h2>Tilføj dokumentation</h2>
     {{ table(tabel_dokumentation) }}
     <form novalidate method="post">
