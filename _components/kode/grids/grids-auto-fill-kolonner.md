@@ -1,6 +1,6 @@
 ---
 type: component
-title: "'Auto' og 'Fill' kolonner"
+title: "Auto og Fill kolonner"
 parent: Grid
 order: 40
 ---

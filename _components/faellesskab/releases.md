@@ -124,7 +124,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0
 
-<div><span class="small-text mt-0 d-block">xx-02-2023</span></div>
+<div><span class="small-text mt-0 d-block">xx-04-2023</span></div>
 
 Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængeligheden.
 
