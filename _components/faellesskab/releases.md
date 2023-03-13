@@ -163,6 +163,7 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 - Fjernet `aria-label` fra `label`-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.
 - Opdateret opsummeringssiderne i selvbetjeningseksemplerne, hvor tidligere tomme headers har fået en skærmlæserbesked.
 - Opdateret `DKFDS.init()`, så kun tabeller markeret med <a href="/kode/komponenter/tables/#responsiv">responsive klasser</a> får indsat attributten `data-title`.
+- <strong><a href="/komponenter/tables/#strukturerede-lister">Strukturerede lister</a> er flyttet ind under tabeller</strong> og er ændret til en tabelstruktur.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
@@ -176,7 +177,6 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 
 <h3 class="h4">Øvrige</h3>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Følgende komponenter har fået opdateret HTML'en, så titler nu er angivet med enten et heading-element eller `<strong>`-element: <a href="/kode/komponenter/badges/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/kode/komponenter/cookiemeddelelse/">cookiemeddelelser</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret <a href="/komponenter/strukturerede-lister/">strukturerede lister</a> til at anvende tabelstruktur.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes. 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæsere annoncerer nu også <a href="/komponenter/toastbesked/">toastbeskeders</a> variant og derudover titlen ved fokus på luk-knappen.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl i <a href="/komponenter/fejlmeddelelser/#accordions">accordioneksempel</a>, hvor fejlbeskedens `id` ikke var korrekt sat for skærmlæsere.
@@ -250,7 +250,7 @@ Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opda
 <div><span class="small-text mt-0 d-block">17-05-2022</span></div>
 
 - Ny komponent: <a href="/komponenter/paginering/">Paginering</a>
-- Ny komponent: <a href="/komponenter/strukturerede-lister/">Strukturerede lister</a>
+- Ny komponent: <a href="/komponenter/tables/#strukturerede-lister">Strukturerede lister</a>
 - Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikator/">trinindikator</a>
 - Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.

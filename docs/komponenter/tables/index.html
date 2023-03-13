@@ -1503,26 +1503,6 @@
     
 
 
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/strukturerede-lister/"  class="nav-link">
-        Strukturerede lister
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
 <li class="  ">
 
   
@@ -2608,26 +2588,6 @@
     
     <a href="/kode/komponenter/sprogvaelger/"  class="nav-link">
         Sprogvælger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/strukturerede-lister/"  class="nav-link">
-        Strukturerede lister
       </a>
      
     
@@ -3926,22 +3886,6 @@
 
     
 
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/komponenter/strukturerede-lister/" 
-  class="nav-link">
-  Strukturerede lister
-</a>
-
-</li>
-
-    
-
-    
-
 <li class="  ">
 
 
@@ -4035,6 +3979,15 @@
 
 <li class=" ">
 <a href="#valgbare-raekker" >Valgbare rækker</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
+<a href="#strukturerede-lister" >Strukturerede lister</a>
 </li>
 
     
@@ -4270,6 +4223,7 @@
           <li><a href="#sortering-i-tabeller">Sortering i tabeller</a></li>
           <li><a href="#soegning-i-tabeller">Søgning i tabeller</a></li>
           <li><a href="#valgbare-raekker">Valgbare rækker</a></li>
+          <li><a href="#strukturerede-lister">Strukturerede lister</a></li>
           <li><a href="#avancerede-tabeller">Avancerede tabeller</a></li>
           
           </ul>
@@ -4355,7 +4309,7 @@
 
 <p>Anvend ikke tabeller til at opsætte en sides eller en komponents indhold udover data.</p>
 
-<p>Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Anvend da i stedet <a href="/komponenter/strukturerede-lister/">strukturerede lister</a>.</p>
+<p>Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 
 <h2 class="h3">Vejledning</h2>
 
@@ -5114,6 +5068,127 @@
     
 </div>
 
+<h2 id="strukturerede-lister">Strukturerede lister</h2>
+<p>Strukturerede lister opstiller simple informationer på en letlæselig måde.</p>
+
+<div class="component-preview  component-preview-structured-list">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/structured-list/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: structured-list</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på struktureret liste</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="table--responsive-scroll">
+    <table class="table structured-list table-sm-responsive-headers">
+        <tbody>
+            <tr>
+                <th scope="row" class="w-percent-md-30">Navn</th>
+                <td>Kirsten Mønster Jensen</td>
+
+            </tr>
+            <tr>
+                <th scope="row" class="w-percent-md-30">Sagsnummer</th>
+                <td>123.456</td>
+
+            </tr>
+            <tr>
+                <th scope="row" class="w-percent-md-30">Dato</th>
+                <td>04/05/2011</td>
+
+            </tr>
+            <tr>
+                <th scope="row" class="w-percent-md-30">Beskrivelse</th>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/tables/#strukturerede-lister" class="small-text">Gå til kodeafsnit<span class="sr-only">: structured-list</span></a>
+    </div>
+    
+</div>
+
+<h3>Anvendes til</h3>
+
+<p>Strukturerede lister anvendes til at vise informationer, der er opstillet i et simpelt format med titler og dertilhørende information. Strukturerede lister anvendes blandt andet til opsummeringssider i formularer.</p>
+
+<h3>Anvendes ikke til</h3>
+
+<p>Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der er opsat i flere kolonner med kolonneoverskrifter.</p>
+
+<h3 class="h3">Vejledning</h3>
+
+<ul>
+  <li>Hvis der er flere lister på samme side, bør alle lister have samme bredde for at holde siden overskuelig.</li>
+  <li>Begræns antallet af rækker i hver liste, så mængden af informationer ikke bliver uoverskuelig for brugeren. Hvis der er mange rækker med information, så overvej, om det giver mening at dele listen op i afsnit ved hjælp af overskrifter.</li>
+  <li>På opsummeringssider i forbindelse med formularer i flere trin kan hver række i listen indeholde et redigeringslink, som viser tilbage til det relevante sted i formularen.</li>
+</ul>
+
+<h3 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h3>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r=/komponenter/tables/%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Bekræft oplysninger'">Formular til kontaktoplysninger: Bekræft oplysninger</a></li>
+  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r=/komponenter/tables/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a></li>
+  <li><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r=/komponenter/tables/%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a></li>
+</ul>
+
+<h3 id="med-link">Struktureret liste med link</h3>
+
+<div class="component-preview  component-preview-structured-list-edit">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/structured-list--edit/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: structured-list--edit</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på struktureret liste med redigérlink</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="table--responsive-scroll">
+    <table class="table structured-list table-sm-responsive-headers">
+        <tbody>
+            <tr>
+                <th scope="row">Navn</th>
+                <td>Kirsten Mønster Jensen</td>
+                <td class="d-print-none align-text-md-right"><a href="#">Redigér<span class="sr-only"> navn</span></a></td>
+            </tr>
+            <tr>
+                <th scope="row">E-mail</th>
+                <td>kirstenjensen@eksempel.dk</td>
+                <td class="d-print-none align-text-md-right"><a href="#">Redigér<span class="sr-only"> e-mail</span></a></td>
+            </tr>
+            <tr>
+                <th scope="row">Telefonnummer</th>
+                <td>12 34 56 78</td>
+                <td class="d-print-none align-text-md-right"><a href="#">Redigér<span class="sr-only"> telefonnummer</span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/kode/komponenter/tables/#strukturerede-lister-edit" class="small-text">Gå til kodeafsnit<span class="sr-only">: structured-list--edit</span></a>
+    </div>
+    
+</div>
+
 <h2 id="avancerede-tabeller">Avancerede tabeller</h2>
 <p>Vi tilbyder på nuværende tidspunkt ikke avancerede tabeller, men hvis man finder eller laver en selv, kan det se ud som på billedet nedenfor.</p>
 
@@ -5134,10 +5209,6 @@
           
             
             
-              
-
-              
-              
               
 
               

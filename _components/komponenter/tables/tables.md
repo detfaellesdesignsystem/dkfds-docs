@@ -2,6 +2,7 @@
 permalink: /komponenter/tables/
 redirect_from:
 - /tables/
+- /komponenter/strukturerede-lister/
 layout: styleguide
 type: component
 title: Tabeller
@@ -26,6 +27,8 @@ subnav:
   href: '#soegning-i-tabeller'
 - text: Valgbare rækker
   href: '#valgbare-raekker'
+- text: Strukturerede lister
+  href: '#strukturerede-lister'
 - text: Avancerede tabeller
   href: '#avancerede-tabeller'
 ---
@@ -41,7 +44,7 @@ Tabeller anvendes til at præsentere brugeren for data som fx statistik opstille
 
 Anvend ikke tabeller til at opsætte en sides eller en komponents indhold udover data.
 
-Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Anvend da i stedet <a href="/komponenter/strukturerede-lister/">strukturerede lister</a>.
+Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
 
 {:.h3}
 ## Vejledning
@@ -124,6 +127,40 @@ Tabeller kan søges med et søgefelt placeret over tabellen. Feltet søger som u
 Hvis der kan udføres særlige funktioner for de valgte rækker, placeres funktionsknapper under tabellen. Brug ikke disabled knapper, når der ikke er nogen valgte rækker, da disabled knapper er svære at læse og forstå for nogle brugere. Vis i stedet en hjælpetekst ved knapperne, hvis de bliver klikket, før der er valgt en eller flere rækker.
 
 {% include code/preview-box.html component="table-selectable-functions" title="Eksempel på valgbare rækker i en tabel med funktionsknapper" code="/kode/komponenter/tables/#valgbare-raekker-knapper" %}
+
+{:#strukturerede-lister}
+## Strukturerede lister
+Strukturerede lister opstiller simple informationer på en letlæselig måde.
+
+{% include code/preview-box.html component="structured-list" title="Eksempel på struktureret liste" code="/kode/komponenter/tables/#strukturerede-lister" %}
+
+### Anvendes til
+
+Strukturerede lister anvendes til at vise informationer, der er opstillet i et simpelt format med titler og dertilhørende information. Strukturerede lister anvendes blandt andet til opsummeringssider i formularer.
+
+### Anvendes ikke til
+
+Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der er opsat i flere kolonner med kolonneoverskrifter. 
+
+{: .h3}
+### Vejledning
+
+* Hvis der er flere lister på samme side, bør alle lister have samme bredde for at holde siden overskuelig.
+* Begræns antallet af rækker i hver liste, så mængden af informationer ikke bliver uoverskuelig for brugeren. Hvis der er mange rækker med information, så overvej, om det giver mening at dele listen op i afsnit ved hjælp af overskrifter.
+* På opsummeringssider i forbindelse med formularer i flere trin kan hver række i listen indeholde et redigeringslink, som viser tilbage til det relevante sted i formularen.
+
+{:.h3 #eksempelloesninger}
+### Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Bekræft oplysninger'">Formular til kontaktoplysninger: Bekræft oplysninger</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
+
+{:#med-link}
+### Struktureret liste med link
+
+{% include code/preview-box.html component="structured-list--edit" title="Eksempel på struktureret liste med redigérlink" code="/kode/komponenter/tables/#strukturerede-lister-edit" %}
 
 {:#avancerede-tabeller}
 ## Avancerede tabeller

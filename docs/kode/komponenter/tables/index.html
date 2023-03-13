@@ -1503,26 +1503,6 @@
     
 
 
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/strukturerede-lister/"  class="nav-link">
-        Strukturerede lister
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
 <li class="  ">
 
   
@@ -2608,26 +2588,6 @@
     
     <a href="/kode/komponenter/sprogvaelger/"  class="nav-link">
         Sprogvælger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/strukturerede-lister/"  class="nav-link">
-        Strukturerede lister
       </a>
      
     
@@ -3967,22 +3927,6 @@
 
   
 
-<a href="/kode/komponenter/strukturerede-lister/" 
-  class="nav-link">
-  Strukturerede lister
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
 <a href="/kode/komponenter/search/" 
   class="nav-link">
   Søgefelt
@@ -4071,6 +4015,15 @@
 
 <li class=" ">
 <a href="#valgbare-raekker" >Valgbare rækker</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
+<a href="#strukturerede-lister" >Strukturerede lister</a>
 </li>
 
     
@@ -4449,6 +4402,7 @@
           <li><a href="#sortering-i-tabel">Sortering i tabel</a></li>
           <li><a href="#soegning-i-tabeller">Søgning i tabeller</a></li>
           <li><a href="#valgbare-raekker">Valgbare rækker</a></li>
+          <li><a href="#strukturerede-lister">Strukturerede lister</a></li>
           
           </ul>
           
@@ -4530,6 +4484,12 @@
 <h3>HTML Struktur</h3>
 
 <div class="component-preview component-preview-code  component-code-table">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: table</span></a>
+        
+    </div>
     
     
     <div class="sr-only">Kodeeksempel</div>
@@ -5023,6 +4983,103 @@
   </tbody>
 </table>
 
+<h3 id="strukturerede-lister">Strukturerede lister</h3>
+
+<div class="component-preview component-preview-code  component-code-structured-list">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/structured-list/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: structured-list</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+    &lt;table class=&quot;table structured-list table-sm-responsive-headers&quot;&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;w-percent-md-30&quot;&gt;Navn&lt;/th&gt;
+                &lt;td&gt;Kirsten Mønster Jensen&lt;/td&gt;
+
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;w-percent-md-30&quot;&gt;Sagsnummer&lt;/th&gt;
+                &lt;td&gt;123.456&lt;/td&gt;
+
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;w-percent-md-30&quot;&gt;Dato&lt;/th&gt;
+                &lt;td&gt;04/05/2011&lt;/td&gt;
+
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;w-percent-md-30&quot;&gt;Beskrivelse&lt;/th&gt;
+                &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. &lt;/td&gt;
+
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Strukturerede lister kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som en alternativ tabel, hvor der ikke er nogen vandrette headers.</p>
+
+<p>Listerne skal altid indeholde præcis 2 eller 3 kolonner. Første kolonne anvendes til headers/titel, anden kolonne til indhold/information og tredje kolonne til eventuel redigering af rækkens indhold. Husk at markere <code>scope="row"</code> for hver tabelheader.</p>
+
+<p>Listen kan gøres <a href="/kode/komponenter/tables/#responsiv">responsiv</a> ved at tilføje klassen med det ønskede breakpoint.</p>
+
+<h4 id="strukturerede-lister-edit">Struktureret liste med redigér</h4>
+
+<div class="component-preview component-preview-code  component-code-structured-list-edit">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/structured-list--edit/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: structured-list--edit</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+    &lt;table class=&quot;table structured-list table-sm-responsive-headers&quot;&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;Navn&lt;/th&gt;
+                &lt;td&gt;Kirsten Mønster Jensen&lt;/td&gt;
+                &lt;td class=&quot;d-print-none align-text-md-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Redigér&lt;span
+                            class=&quot;sr-only&quot;&gt; navn&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;E-mail&lt;/th&gt;
+                &lt;td&gt;kirstenjensen@eksempel.dk&lt;/td&gt;
+                &lt;td class=&quot;d-print-none align-text-md-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Redigér&lt;span
+                            class=&quot;sr-only&quot;&gt; e-mail&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;Telefonnummer&lt;/th&gt;
+                &lt;td&gt;12 34 56 78&lt;/td&gt;
+                &lt;td class=&quot;d-print-none align-text-md-right&quot;&gt;&lt;a href=&quot;#&quot;&gt;Redigér&lt;span
+                            class=&quot;sr-only&quot;&gt; telefonnummer&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 
 
           
@@ -5037,8 +5094,6 @@
               
               
               
-                
-                  
                 
                   
                 

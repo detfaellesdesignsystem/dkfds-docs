@@ -34,7 +34,7 @@ Sagerne kan være:
 {% include roadmap.html title="Redigering af felter i tabeller" status="Foreslået" %}
 {% include roadmap.html title="Retningslinjer for validering" status="I gang" %}
 {% include roadmap.html title="Sortering i tabeller" status="Gennemført" link="/komponenter/tables/#sortering-i-tabeller" %}
-{% include roadmap.html title="Strukturerede lister" status="Gennemført" link="/komponenter/strukturerede-lister/" %}
+{% include roadmap.html title="Strukturerede lister" status="Gennemført" link="/komponenter/tables/#strukturerede-lister" %}
 {% include roadmap.html title="Søgefelt med autoudfyldelse" status="Foreslået" %}
 {% include roadmap.html title="Søgning i tabeller" status="Gennemført" link="/komponenter/tables/#søgning-i-tabeller" %}
 {% include roadmap.html title="Tilbage til toppen" status="Gennemført" link="/komponenter/tilbage-til-top/" %}

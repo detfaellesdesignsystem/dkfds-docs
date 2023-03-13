@@ -1,6 +1,8 @@
 ---
 permalink: /kode/komponenter/tables/
 parentlink: /kode/komponenter/
+redirect_from:
+- /kode/komponenter/strukturerede-lister/
 title: Tabeller
 layout: styleguide
 type: component
@@ -23,6 +25,8 @@ subnav:
   href: '#soegning-i-tabeller'
 - text: Valgbare rækker
   href: '#valgbare-raekker'
+- text: Strukturerede lister
+  href: '#strukturerede-lister'
 ---
 
 {% include code/preview-box.html component="table" title="Eksempel på tabel" %}
@@ -37,7 +41,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="table" %}
+{% include code/syntax.html component="table" link="true" %}
 
 Man kan gøre brug af hjælpeklassen for <a href="/kode/utilities/#bredde-i-procent">bredde i procent</a> til at definere bredde på kolonner. 
 
@@ -145,5 +149,18 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 |--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------|
 | fds.table.selectable.updated   | `<table>`     | Når en tjekboks ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>`-elementet |
 
+{:#strukturerede-lister}
+### Strukturerede lister
 
+{% include code/syntax.html component="structured-list" link="true" %}
 
+Strukturerede lister kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som en alternativ tabel, hvor der ikke er nogen vandrette headers. 
+
+Listerne skal altid indeholde præcis 2 eller 3 kolonner. Første kolonne anvendes til headers/titel, anden kolonne til indhold/information og tredje kolonne til eventuel redigering af rækkens indhold. Husk at markere `scope="row"` for hver tabelheader.
+
+Listen kan gøres <a href="/kode/komponenter/tables/#responsiv">responsiv</a> ved at tilføje klassen med det ønskede breakpoint. 
+
+{:#strukturerede-lister-edit}
+#### Struktureret liste med redigér
+
+{% include code/syntax.html component="structured-list--edit" link="true" %}
