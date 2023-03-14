@@ -23,7 +23,7 @@
     },
     "footer_data": {
         "topButton": {
-            "topLink": "#top"
+            "href": "#top"
         },
         "list": {
             "items": [

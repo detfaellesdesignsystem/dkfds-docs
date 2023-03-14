@@ -17,7 +17,7 @@
     },
     "footer_data": {
         "topButton": {
-            "topLink": "#top"
+            "href": "#top"
         },
         "languageSwitcher": {
             "ariaLabel": "Vælg sprog fra listen",
