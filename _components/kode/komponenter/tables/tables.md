@@ -41,7 +41,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="table" link="true" %}
+{% include code/syntax.html component="table" %}
 
 Man kan gøre brug af hjælpeklassen for <a href="/kode/utilities/#bredde-i-procent">bredde i procent</a> til at definere bredde på kolonner. 
 

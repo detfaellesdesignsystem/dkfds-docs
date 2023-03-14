@@ -62,7 +62,7 @@
     },
     "trinindikator_data": {
         "id": "overflow-reg",
-        "responsive": true,
+        "breakpoint": "lg",
         "steps": [
             {
                 "text": "Vælg personer",
