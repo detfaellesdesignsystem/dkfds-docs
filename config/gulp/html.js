@@ -98,7 +98,7 @@ gulp.task('nunjucks', done => {
                 'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', /*'i',*/ 'iframe', 'img',
                 /*'input',*/ 'ins', 'kbd', 'keygen', /*'label',*/ 'map', 'mark', 'math', 'meter', 'noscript',
                 'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', /* 'script', */ /*'select',*/ 'small',
-                /*'span',*/ 'strong', 'sub', 'sup', 'svg', 'template', /* 'textarea',  */'time', 'u', 'var',
+                /*'span',*/ 'strong', 'sub', 'sup', 'svg', 'template', 'textarea', 'time', 'u', 'var',
                 'video', 'wbr', /*'text',*/
                 // prexisting - not sure of full effect of removing, leaving in
                 'acronym', /*'address',*/ 'big', 'dt', 'ins', 'strike', 'tt',

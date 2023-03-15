@@ -4339,23 +4339,15 @@
     
     <div class="component-example px-4 py-4">
         
-        <form novalidate="" class="form mb-7 input-width-m">
+        <div class="form-group">
+    <label class="form-label" for="options">Dropdown label (select)</label>
 
-    <div class="form-group">
-        <label class="form-label" for="options">Dropdown label (select)</label>
-
-        <select class=" form-select" name="options" id="options">
-
-            <option value="option1">Mulighed 1</option>
-
-            <option value="option2">Mulighed 2</option>
-
-            <option value="option3">Mulighed 3</option>
-
-        </select>
-    </div>
-
-</form>
+    <select class="form-select" name="options" id="options" required="">
+        <option value="option1">Mulighed 1</option>
+        <option value="option2">Mulighed 2</option>
+        <option value="option3">Mulighed 3</option>
+    </select>
+</div>
         
     </div>
     
@@ -4379,23 +4371,15 @@
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;form novalidate class=&quot;form mb-7 input-width-m&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;options&quot;&gt;Dropdown label (select)&lt;/label&gt;
 
-    &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;options&quot;&gt;Dropdown label (select)&lt;/label&gt;
-
-        &lt;select class=&quot; form-select&quot; name=&quot;options&quot; id=&quot;options&quot;&gt;
-
-            &lt;option value=&quot;option1&quot;&gt;Mulighed 1&lt;/option&gt;
-
-            &lt;option value=&quot;option2&quot;&gt;Mulighed 2&lt;/option&gt;
-
-            &lt;option value=&quot;option3&quot;&gt;Mulighed 3&lt;/option&gt;
-
-        &lt;/select&gt;
-    &lt;/div&gt;
-
-&lt;/form&gt;</code></pre></figure>
+    &lt;select class=&quot;form-select&quot; name=&quot;options&quot; id=&quot;options&quot; required&gt;
+        &lt;option value=&quot;option1&quot;&gt;Mulighed 1&lt;/option&gt;
+        &lt;option value=&quot;option2&quot;&gt;Mulighed 2&lt;/option&gt;
+        &lt;option value=&quot;option3&quot;&gt;Mulighed 3&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre></figure>
 
 
     </div>

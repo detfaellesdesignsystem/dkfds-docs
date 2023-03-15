@@ -100,15 +100,7 @@
                             {{ icon_svg({"name": 'file-pdf'})}}Journal.pdf
                         </td>
                         <td class="vertical-align-middle" data-title="Dokumentationstype">
-                            <div class="form-group">
-                                <select class="form-select input-width-s" name="options" id="options"
-                                    aria-labelledby="file1 header2">
-                                    <option value="option1">Vælg type</option>
-                                    <option value="option2">Type 1</option>
-                                    <option value="option3">Type 2</option>
-                                    <option value="option4">Type 3</option>
-                                </select>
-                            </div>
+                            {{ select(dropdown_data) }}
                         </td>
                         <td class="vertical-align-middle" data-title="Sidetal">
                             {{ textinput(pages_data) }}

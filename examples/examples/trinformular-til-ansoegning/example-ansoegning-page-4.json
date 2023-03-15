@@ -83,17 +83,25 @@
             }
         ]
     },
+    "dropdown_data": {
+        "name": "options",
+        "id": "options",
+        "classes": { "select": "input-width-s" },
+        "attributes": { "select": "aria-labelledby=\"file1 header2\"" },
+        "options": [
+            { "value": "option1", "text": "Vælg type" },
+            { "value": "option2", "text": "Type 1" },
+            { "value": "option3", "text": "Type 2" },
+            { "value": "option4", "text": "Type 3" }
+        ]
+    },
     "pages_data": {
         "id": "total-pages-row1",
         "name": "total-pages-row1",
         "type": "number",
         "required": false,
-        "classes": {
-            "input": "input-width-xxs"
-        },
-        "attributes": {
-            "input": "aria-labelledby=\"file1 header3\""
-        }
+        "classes": { "input": "input-width-xxs" },
+        "attributes": { "input": "aria-labelledby=\"file1 header3\"" }
     },
     "button_upload": {
         "text": "Upload fil",

@@ -3699,8 +3699,10 @@
         <div class="form-group form-error">
     <label class="form-label" for="input-phonenumber-no-countrycode">Telefonnummer</label>
 
-    <span class="form-error-message" id="input-phonenumber-no-countrycode-error"><span class="sr-only">Fejl:</span> Indtast et gyldigt
-        telefonnummer<br />Ved udenlandske numre inkluder landekode, fx +49 123 1234 1234 eller 0044 808 157 0192</span>
+    <span class="form-error-message" id="input-phonenumber-no-countrycode-error">
+        <span class="sr-only">Fejl: </span>Indtast et gyldigt telefonnummer<br />Ved udenlandske numre inkluder landekode, fx +49 123 1234 1234 eller 0044 808 157 0192
+    </span>
+
     <input type="tel" id="input-phonenumber-no-countrycode" name="input-phonenumber-no-countrycode" class="form-input input-width-s" value="0123 4567 8900" aria-invalid="true" aria-describedby="input-phonenumber-no-countrycode-error " required="" autocomplete="tel" />
 
 </div>
@@ -3715,9 +3717,10 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-no-countrycode&quot;&gt;Telefonnummer&lt;/label&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-no-countrycode-error&quot;&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Indtast et gyldigt
-        telefonnummer&lt;br/&gt;Ved udenlandske numre inkluder landekode, fx +49 123 1234 1234 eller 0044 808 157 0192&lt;/span&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-no-countrycode-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Indtast et gyldigt telefonnummer&lt;br/&gt;Ved udenlandske numre inkluder landekode, fx +49 123 1234 1234 eller 0044 808 157 0192
+    &lt;/span&gt;
+
     &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-no-countrycode&quot;
         name=&quot;input-phonenumber-no-countrycode&quot; class=&quot;form-input input-width-s&quot;
         value=&quot;0123 4567 8900&quot; aria-invalid=&quot;true&quot;
@@ -3744,6 +3747,7 @@
 
     <span class="form-hint" id="input-phonenumber-foreign-hint">Ved udenlandske numre inkluder
         landekode</span>
+
     <input type="tel" id="input-phonenumber-foreign" name="input-phonenumber-foreign" class="form-input input-width-s" aria-describedby="input-phonenumber-foreign-hint " required="" autocomplete="tel" />
 
 </div>
@@ -3760,6 +3764,7 @@
 
     &lt;span class=&quot;form-hint&quot; id=&quot;input-phonenumber-foreign-hint&quot;&gt;Ved udenlandske numre inkluder
         landekode&lt;/span&gt;
+
     &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-foreign&quot; name=&quot;input-phonenumber-foreign&quot;
         class=&quot;form-input input-width-s&quot; aria-describedby=&quot;input-phonenumber-foreign-hint &quot;
         required autocomplete=&quot;tel&quot;&gt;
@@ -3786,9 +3791,11 @@
 
     <span class="form-hint" id="input-phonenumber-invalid-hint">Ved udenlandske numre inkluder
         landekode</span>
+    <span class="form-error-message" id="input-phonenumber-invalid-error">
+        <span class="sr-only">Fejl: </span>Indtast et gyldigt telefonnummer, fx 12345678, +49
+        123 1234 1234 eller 0044 808 157 0192
+    </span>
 
-    <span class="form-error-message" id="input-phonenumber-invalid-error"><span class="sr-only">Fejl:</span> Indtast et gyldigt telefonnummer, fx 12345678, +49
-        123 1234 1234 eller 0044 808 157 0192</span>
     <input type="tel" id="input-phonenumber-invalid" name="input-phonenumber-invalid" class="form-input input-width-s" value="0123 4567 8900" aria-invalid="true" aria-describedby="input-phonenumber-invalid-hint input-phonenumber-invalid-error " required="" autocomplete="tel" />
 
 </div>
@@ -3805,10 +3812,11 @@
 
     &lt;span class=&quot;form-hint&quot; id=&quot;input-phonenumber-invalid-hint&quot;&gt;Ved udenlandske numre inkluder
         landekode&lt;/span&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-invalid-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Indtast et gyldigt telefonnummer, fx 12345678, +49
+        123 1234 1234 eller 0044 808 157 0192
+    &lt;/span&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-invalid-error&quot;&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Indtast et gyldigt telefonnummer, fx 12345678, +49
-        123 1234 1234 eller 0044 808 157 0192&lt;/span&gt;
     &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-invalid&quot; name=&quot;input-phonenumber-invalid&quot;
         class=&quot;form-input input-width-s&quot; value=&quot;0123 4567 8900&quot; aria-invalid=&quot;true&quot;
         aria-describedby=&quot;input-phonenumber-invalid-hint input-phonenumber-invalid-error &quot;
@@ -3867,8 +3875,11 @@
         <div class="form-group form-error">
     <label class="form-label" for="input-phonenumber-danish-e">Dansk telefonnummer</label>
 
-    <span class="form-error-message" id="input-phonenumber-danish-e-error"><span class="sr-only">Fejl:</span> Indtast et dansk telefonnummer, fx 12345678 eller +45
-        12 34 56 78</span>
+    <span class="form-error-message" id="input-phonenumber-danish-e-error">
+        <span class="sr-only">Fejl: </span>Indtast et dansk telefonnummer, fx 12345678 eller
+        +45 12 34 56 78
+    </span>
+
     <input type="tel" id="input-phonenumber-danish-e" name="input-phonenumber-danish-e" class="form-input input-width-xs" value="12 34 56 7" aria-invalid="true" aria-describedby="input-phonenumber-danish-e-error " required="" autocomplete="tel" />
 
 </div>
@@ -3883,9 +3894,11 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;input-phonenumber-danish-e&quot;&gt;Dansk telefonnummer&lt;/label&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-danish-e-error&quot;&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Indtast et dansk telefonnummer, fx 12345678 eller +45
-        12 34 56 78&lt;/span&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;input-phonenumber-danish-e-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Indtast et dansk telefonnummer, fx 12345678 eller
+        +45 12 34 56 78
+    &lt;/span&gt;
+
     &lt;input type=&quot;tel&quot; id=&quot;input-phonenumber-danish-e&quot; name=&quot;input-phonenumber-danish-e&quot;
         class=&quot;form-input input-width-xs&quot; value=&quot;12 34 56 7&quot; aria-invalid=&quot;true&quot;
         aria-describedby=&quot;input-phonenumber-danish-e-error &quot; required autocomplete=&quot;tel&quot;&gt;

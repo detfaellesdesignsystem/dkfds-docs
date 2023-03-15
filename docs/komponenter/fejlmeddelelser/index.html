@@ -4249,9 +4249,10 @@
     <label class="form-label" for="form-error">Hvad hedder dit kursus?</label>
 
     <span class="form-hint" id="form-error-hint">Fx: Skriv godt</span>
+    <span class="form-error-message" id="form-error-error">
+        <span class="sr-only">Fejl: </span>Giv dit kursus et navn
+    </span>
 
-    <span class="form-error-message" id="form-error-error"><span class="sr-only">Fejl:</span>
-        Giv dit kursus et navn</span>
     <input type="text" id="form-error" name="form-error" class="form-input" aria-invalid="true" aria-describedby="form-error-hint form-error-error " required="" />
 
 </div>
@@ -4451,9 +4452,9 @@
         <legend class="form-label">Hvornår blev dit pas udstedt?</legend>
         <span class="form-hint" id="date-input-error-example-hint">For eksempel: 05 12
             2018</span>
-
-        <span class="form-error-message" id="date-input-error-example-error"><span class="sr-only">Fejl:</span> Datoen kan ikke være i fremtiden</span>
-
+        <span class="form-error-message" id="date-input-error-example-error">
+            <span class="sr-only">Fejl: </span>Datoen kan ikke være i fremtiden
+        </span>
         <div class="date-group js-calendar-group mt-3">
 
             <div class="form-group form-group-day">
@@ -4503,7 +4504,9 @@
         <div class="form-group form-error">
     <label class="form-label" for="datepicker-example-error1">Dato for aftale</label>
 
-    <span class="form-error-message" id="datepicker-example-error1-error"><span class="sr-only">Fejl:</span> Vælg en dato</span>
+    <span class="form-error-message" id="datepicker-example-error1-error">
+        <span class="sr-only">Fejl: </span>Vælg en dato
+    </span>
 
     <div class="date-picker">
         <input type="text" id="datepicker-example-error1" name="datepicker-example-error1" class="form-input" aria-invalid="true" aria-describedby="datepicker-example-error1-error" required="" />
@@ -4529,26 +4532,19 @@
     
     <div class="component-example px-4 py-4">
         
-        <form novalidate="" class="form mb-7 input-width-m">
+        <div class="form-group form-error">
+    <label class="form-label" for="options-error">Dropdown (select)</label>
 
-    <div class="form-group form-error">
-        <label class="form-label" for="options-error">Dropdown (select)</label>
-
-        <span class="form-error-message" id="options-error-error"><span class="sr-only">Fejl:</span> Vælg en mulighed</span>
-        <select class=" form-select" name="options-error" id="options-error" aria-invalid="true" aria-describedby=" options-error-error">
-
-            <option value="option1">Ingen mulighed valgt</option>
-
-            <option value="option2">Mulighed 1</option>
-
-            <option value="option3">Mulighed 2</option>
-
-            <option value="option4">Mulighed 3</option>
-
-        </select>
-    </div>
-
-</form>
+    <span class="form-error-message" id="options-error-error">
+        <span class="sr-only">Fejl: </span>Vælg en mulighed
+    </span>
+    <select class="form-select" name="options-error" id="options-error" aria-invalid="true" aria-describedby="options-error-error" required="">
+        <option value="option1">Ingen mulighed valgt</option>
+        <option value="option2">Mulighed 1</option>
+        <option value="option3">Mulighed 2</option>
+        <option value="option4">Mulighed 3</option>
+    </select>
+</div>
         
     </div>
     
@@ -4572,8 +4568,11 @@
         <div class="form-group form-error">
     <label class="form-label" for="fullname-error-example">Hvad er dit fulde navn?</label>
 
-    <span class="form-error-message" id="fullname-error-example-error"><span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil for- og efternavne
-        med mellemrum, fx Anders Andersen</span>
+    <span class="form-error-message" id="fullname-error-example-error">
+        <span class="sr-only">Fejl: </span>Skriv dit fulde navn, og adskil for- og efternavne
+        med mellemrum, fx Anders Andersen
+    </span>
+
     <input type="text" id="fullname-error-example" name="fullname-error-example" class="form-input" aria-invalid="true" aria-describedby="fullname-error-example-error " required="" />
 
 </div>
@@ -4600,8 +4599,12 @@
         <div class="form-group form-error">
     <label class="form-label" for="input-pris-error">Pris i 1000 kr.</label>
 
-    <span class="form-error-message" id="input-pris-error-error"><span class="sr-only">Fejl:</span> Angiv en pris</span>
-    <div class="form-input-wrapper form-input-wrapper--suffix"><input type="number" id="input-pris-error" name="input-pris-error" class="form-input input-char-11" value="123" aria-invalid="true" aria-describedby="input-pris-error-error " required="" />
+    <span class="form-error-message" id="input-pris-error-error">
+        <span class="sr-only">Fejl: </span>Angiv en pris
+    </span>
+    <div class="form-input-wrapper form-input-wrapper--suffix">
+
+        <input type="number" id="input-pris-error" name="input-pris-error" class="form-input input-char-11" value="123" aria-invalid="true" aria-describedby="input-pris-error-error " required="" />
         <div class="form-input-suffix" aria-hidden="true">.000 kr</div>
     </div>
 
@@ -4630,7 +4633,10 @@
     <label class="form-label" for="input-type-limit-error">Inputfelt med
         karakterbegrænsning</label>
 
-    <span class="form-error-message" id="input-type-limit-error-error"><span class="sr-only">Fejl:</span> Du kan maks. taste 20 tegn</span>
+    <span class="form-error-message" id="input-type-limit-error-error">
+        <span class="sr-only">Fejl: </span>Du kan maks. taste 20 tegn
+    </span>
+
     <input type="text" id="input-type-limit-error" name="input-type-limit-error" class="form-input" value="Dette er en sætning med mange tegn" aria-invalid="true" aria-describedby="input-type-limit-error-error input-type-limit-error-limit-message" required="" />
 
     <span id="input-type-limit-error-limit-message" class="sr-only">Du kan indtaste op til 20
@@ -4664,7 +4670,9 @@
     <fieldset role="radiogroup" aria-describedby="radiogroup-error-error " aria-invalid="true">
         <legend class="form-label">Sagen handler om</legend>
 
-        <span class="form-error-message" id="radiogroup-error-error"><span class="sr-only">Fejl:</span> Vælg hvad sagen handler om</span>
+        <span class="form-error-message" id="radiogroup-error-error">
+            <span class="sr-only">Fejl: </span>Vælg hvad sagen handler om
+        </span>
 
         <div class="form-group-radio">
             <input type="radio" id="radiogroup-error-option1" name="sagen-omhandler" class="form-radio radio-large" value="ulykkesforsikring" />
@@ -4709,8 +4717,9 @@
         <div class="form-group form-error">
     <label class="form-label" for="textarea-error">Tekstområde med fejlmeddelelse</label>
 
-    <span class="form-error-message" id="textarea-error-error"><span class="sr-only">Fejl:</span> Hjælpsom fejlmeddelelse</span>
-
+    <span class="form-error-message" id="textarea-error-error">
+        <span class="sr-only">Fejl: </span>Hjælpsom fejlmeddelelse
+    </span>
     <textarea class="form-input" id="textarea-error" name="textarea-error" rows="5" aria-describedby="textarea-error-error "></textarea>
 
 </div>
@@ -4738,10 +4747,10 @@
     <label class="form-label" for="textarea-limit-error">Karakterbegrænsning med
         fejlmeddelelse</label>
 
-    <span class="form-error-message" id="textarea-limit-error-error"><span class="sr-only">Fejl:</span> Du kan maks. taste 50 tegn</span>
-
-    <textarea class="form-input" id="textarea-limit-error" name="textarea-limit-error" rows="3" aria-describedby="textarea-limit-error-error textarea-limit-error-limit-message">Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+    <span class="form-error-message" id="textarea-limit-error-error">
+        <span class="sr-only">Fejl: </span>Du kan maks. taste 50 tegn
+    </span>
+    <textarea class="form-input" id="textarea-limit-error" name="textarea-limit-error" rows="3" aria-describedby="textarea-limit-error-error textarea-limit-error-limit-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
 
     <span id="textarea-limit-error-limit-message" class="sr-only">Du kan indtaste op til 50
         tegn</span>
@@ -4774,8 +4783,10 @@
     <fieldset aria-describedby="example-nationalitet-error">
         <legend class="form-label">Hvad er din nationalitet?</legend>
 
-        <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk, svensk eller anden
-            nationalitet</span>
+        <span class="form-error-message" id="example-nationalitet-error">
+            <span class="sr-only">Fejl: </span>Angiv om du er dansk, svensk eller anden
+            nationalitet
+        </span>
 
         <div class="form-group-checkbox">
             <input type="checkbox" id="example-nationalitet-option1" name="nationalitet[]" class="form-checkbox checkbox-large" value="dansk" />

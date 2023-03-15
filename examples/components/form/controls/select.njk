@@ -1,4 +1,14 @@
 {% from "components/form/controls/select.njk" import select as select %}
-<form novalidate class="form mb-7 input-width-m">
-{{select(select_example)}}
-</form>
+
+{{ 
+    select({
+        "name": "options",
+        "id": "options",
+        "label": "Dropdown label (select)",
+        "options": [
+            { "value": "option1", "text": "Mulighed 1" },
+            { "value": "option2", "text": "Mulighed 2" },
+            { "value": "option3", "text": "Mulighed 3" }
+        ]
+    }) 
+}}

@@ -4438,8 +4438,11 @@
         <div class="form-group form-error">
     <label class="form-label" for="fullname-error-example">Hvad er dit fulde navn?</label>
 
-    <span class="form-error-message" id="fullname-error-example-error"><span class="sr-only">Fejl:</span> Skriv dit fulde navn, og adskil for- og efternavne
-        med mellemrum, fx Anders Andersen</span>
+    <span class="form-error-message" id="fullname-error-example-error">
+        <span class="sr-only">Fejl: </span>Skriv dit fulde navn, og adskil for- og efternavne
+        med mellemrum, fx Anders Andersen
+    </span>
+
     <input type="text" id="fullname-error-example" name="fullname-error-example" class="form-input" aria-invalid="true" aria-describedby="fullname-error-example-error " required="" />
 
 </div>
@@ -4470,9 +4473,10 @@
     &lt;label class=&quot;form-label&quot; for=&quot;form-error&quot;&gt;Hvad hedder dit kursus?&lt;/label&gt;
 
     &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;Fx: Skriv godt&lt;/span&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Giv dit kursus et navn
+    &lt;/span&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt;
-        Giv dit kursus et navn&lt;/span&gt;
     &lt;input type=&quot;text&quot; id=&quot;form-error&quot; name=&quot;form-error&quot; class=&quot;form-input&quot;
         aria-invalid=&quot;true&quot; aria-describedby=&quot;form-error-hint form-error-error &quot; required&gt;
 
@@ -4558,10 +4562,9 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
         &lt;legend class=&quot;form-label&quot;&gt;Hvornår blev dit pas udstedt?&lt;/legend&gt;
         &lt;span class=&quot;form-hint&quot; id=&quot;date-input-error-example-hint&quot;&gt;For eksempel: 05 12
             2018&lt;/span&gt;
-
-        &lt;span class=&quot;form-error-message&quot; id=&quot;date-input-error-example-error&quot;&gt;&lt;span
-                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Datoen kan ikke være i fremtiden&lt;/span&gt;
-
+        &lt;span class=&quot;form-error-message&quot; id=&quot;date-input-error-example-error&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Datoen kan ikke være i fremtiden
+        &lt;/span&gt;
         &lt;div class=&quot;date-group js-calendar-group mt-3&quot;&gt;
 
             &lt;div class=&quot;form-group form-group-day&quot;&gt;
@@ -4620,8 +4623,9 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;datepicker-example-error1&quot;&gt;Dato for aftale&lt;/label&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;datepicker-example-error1-error&quot;&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Vælg en dato&lt;/span&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;datepicker-example-error1-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Vælg en dato
+    &lt;/span&gt;
 
     &lt;div class=&quot;date-picker&quot;&gt;
         &lt;input type=&quot;text&quot; id=&quot;datepicker-example-error1&quot; name=&quot;datepicker-example-error1&quot;
@@ -4649,28 +4653,20 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     
     <div class="component-code">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;form novalidate class=&quot;form mb-7 input-width-m&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;options-error&quot;&gt;Dropdown (select)&lt;/label&gt;
 
-    &lt;div class=&quot;form-group form-error&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;options-error&quot;&gt;Dropdown (select)&lt;/label&gt;
-
-        &lt;span class=&quot;form-error-message&quot; id=&quot;options-error-error&quot;&gt;&lt;span
-                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Vælg en mulighed&lt;/span&gt;
-        &lt;select class=&quot; form-select&quot; name=&quot;options-error&quot; id=&quot;options-error&quot;
-            aria-invalid=&quot;true&quot; aria-describedby=&quot; options-error-error&quot;&gt;
-
-            &lt;option value=&quot;option1&quot;&gt;Ingen mulighed valgt&lt;/option&gt;
-
-            &lt;option value=&quot;option2&quot;&gt;Mulighed 1&lt;/option&gt;
-
-            &lt;option value=&quot;option3&quot;&gt;Mulighed 2&lt;/option&gt;
-
-            &lt;option value=&quot;option4&quot;&gt;Mulighed 3&lt;/option&gt;
-
-        &lt;/select&gt;
-    &lt;/div&gt;
-
-&lt;/form&gt;</code></pre></figure>
+    &lt;span class=&quot;form-error-message&quot; id=&quot;options-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Vælg en mulighed
+    &lt;/span&gt;
+    &lt;select class=&quot;form-select&quot; name=&quot;options-error&quot; id=&quot;options-error&quot; aria-invalid=&quot;true&quot;
+        aria-describedby=&quot;options-error-error&quot; required&gt;
+        &lt;option value=&quot;option1&quot;&gt;Ingen mulighed valgt&lt;/option&gt;
+        &lt;option value=&quot;option2&quot;&gt;Mulighed 1&lt;/option&gt;
+        &lt;option value=&quot;option3&quot;&gt;Mulighed 2&lt;/option&gt;
+        &lt;option value=&quot;option4&quot;&gt;Mulighed 3&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre></figure>
 
 
     </div>
@@ -4694,9 +4690,11 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;fullname-error-example&quot;&gt;Hvad er dit fulde navn?&lt;/label&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;fullname-error-example-error&quot;&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Skriv dit fulde navn, og adskil for- og efternavne
-        med mellemrum, fx Anders Andersen&lt;/span&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;fullname-error-example-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Skriv dit fulde navn, og adskil for- og efternavne
+        med mellemrum, fx Anders Andersen
+    &lt;/span&gt;
+
     &lt;input type=&quot;text&quot; id=&quot;fullname-error-example&quot; name=&quot;fullname-error-example&quot;
         class=&quot;form-input&quot; aria-invalid=&quot;true&quot;
         aria-describedby=&quot;fullname-error-example-error &quot; required&gt;
@@ -4725,12 +4723,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;Pris i 1000 kr.&lt;/label&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;input-pris-error-error&quot;&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv en pris&lt;/span&gt;
-    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;&lt;input type=&quot;number&quot;
-            id=&quot;input-pris-error&quot; name=&quot;input-pris-error&quot; class=&quot;form-input input-char-11&quot;
-            value=&quot;123&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;input-pris-error-error &quot;
-            required&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;input-pris-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Angiv en pris
+    &lt;/span&gt;
+    &lt;div class=&quot;form-input-wrapper form-input-wrapper--suffix&quot;&gt;
+
+        &lt;input type=&quot;number&quot; id=&quot;input-pris-error&quot; name=&quot;input-pris-error&quot;
+            class=&quot;form-input input-char-11&quot; value=&quot;123&quot; aria-invalid=&quot;true&quot;
+            aria-describedby=&quot;input-pris-error-error &quot; required&gt;
         &lt;div class=&quot;form-input-suffix&quot; aria-hidden=&quot;true&quot;&gt;.000 kr&lt;/div&gt;
     &lt;/div&gt;
 
@@ -4760,8 +4760,9 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
         aria-invalid=&quot;true&quot;&gt;
         &lt;legend class=&quot;form-label&quot;&gt;Sagen handler om&lt;/legend&gt;
 
-        &lt;span class=&quot;form-error-message&quot; id=&quot;radiogroup-error-error&quot;&gt;&lt;span
-                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Vælg hvad sagen handler om&lt;/span&gt;
+        &lt;span class=&quot;form-error-message&quot; id=&quot;radiogroup-error-error&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Vælg hvad sagen handler om
+        &lt;/span&gt;
 
         &lt;div class=&quot;form-group-radio&quot;&gt;
             &lt;input type=&quot;radio&quot; id=&quot;radiogroup-error-option1&quot; name=&quot;sagen-omhandler&quot;
@@ -4810,11 +4811,10 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;textarea-error&quot;&gt;Tekstområde med fejlmeddelelse&lt;/label&gt;
 
-    &lt;span class=&quot;form-error-message&quot; id=&quot;textarea-error-error&quot;&gt;&lt;span
-            class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Hjælpsom fejlmeddelelse&lt;/span&gt;
-
-    &lt;textarea class=&quot;form-input&quot; id=&quot;textarea-error&quot; name=&quot;textarea-error&quot; rows=&quot;5&quot;
-        aria-describedby=&quot;textarea-error-error &quot;&gt;&lt;/textarea&gt;
+    &lt;span class=&quot;form-error-message&quot; id=&quot;textarea-error-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Hjælpsom fejlmeddelelse
+    &lt;/span&gt;
+    &lt;textarea class=&quot;form-input&quot; id=&quot;textarea-error&quot; name=&quot;textarea-error&quot; rows=&quot;5&quot; aria-describedby=&quot;textarea-error-error &quot;&gt;&lt;/textarea&gt;
 
 &lt;/div&gt;</code></pre></figure>
 
@@ -4850,9 +4850,10 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     &lt;fieldset aria-describedby=&quot;example-nationalitet-error&quot;&gt;
         &lt;legend class=&quot;form-label&quot;&gt;Hvad er din nationalitet?&lt;/legend&gt;
 
-        &lt;span class=&quot;form-error-message&quot; id=&quot;example-nationalitet-error&quot;&gt;&lt;span
-                class=&quot;sr-only&quot;&gt;Fejl:&lt;/span&gt; Angiv om du er dansk, svensk eller anden
-            nationalitet&lt;/span&gt;
+        &lt;span class=&quot;form-error-message&quot; id=&quot;example-nationalitet-error&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Angiv om du er dansk, svensk eller anden
+            nationalitet
+        &lt;/span&gt;
 
         &lt;div class=&quot;form-group-checkbox&quot;&gt;
             &lt;input type=&quot;checkbox&quot; id=&quot;example-nationalitet-option1&quot; name=&quot;nationalitet[]&quot;
