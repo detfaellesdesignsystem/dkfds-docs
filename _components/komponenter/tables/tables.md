@@ -142,14 +142,14 @@ Strukturerede lister anvendes til at vise informationer, der er opstillet i et s
 
 Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der er opsat i flere kolonner med kolonneoverskrifter. 
 
-{: .h3}
+{:.h3}
 ### Vejledning
 
 * Hvis der er flere lister på samme side, bør alle lister have samme bredde for at holde siden overskuelig.
 * Begræns antallet af rækker i hver liste, så mængden af informationer ikke bliver uoverskuelig for brugeren. Hvis der er mange rækker med information, så overvej, om det giver mening at dele listen op i afsnit ved hjælp af overskrifter.
 * På opsummeringssider i forbindelse med formularer i flere trin kan hver række i listen indeholde et redigeringslink, som viser tilbage til det relevante sted i formularen.
 
-{:.h3 #eksempelloesninger}
+{:.h3}
 ### Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
