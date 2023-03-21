@@ -74,13 +74,13 @@
     "button_save": {
         "variant": "secondary",
         "text": "Gem som pdf",
-        "classes": "mt-6 d-print-none",
+        "classes": { "button": "mt-6 d-print-none" },
         "icon": "file-download"
     },
     "button_print": {
         "variant": "secondary",
         "text": "Print",
-        "classes": "mt-4 d-print-none",
+        "classes": { "button": "mt-4 d-print-none" },
         "icon": "print"
     }
 }

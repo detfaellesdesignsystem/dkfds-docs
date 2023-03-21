@@ -120,7 +120,7 @@
     "button_anmod_om_adgang": {
         "text": "Anmod om adgang",
         "variant": "secondary",
-        "classes": "d-print-none"
+        "classes": { "button": "d-print-none" }
     },
     "card_anmodning": {
         "heading": "Jørgen Hansen",

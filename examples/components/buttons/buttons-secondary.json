@@ -8,17 +8,17 @@
       {
         "text": "Hover",
         "variant": "secondary",
-        "classes": "button-hover"
+        "classes": { "button": "button-hover" }
       },
       {
         "text": "Active",
         "variant": "secondary",
-        "classes": "button-active"
+        "classes": { "button": "button-active" }
       },
       {
         "text": "Focus",
         "variant": "secondary",
-        "classes": "focus"
+        "classes": { "button": "focus" }
       },
       {
         "text": "Disabled",

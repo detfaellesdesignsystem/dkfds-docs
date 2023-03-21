@@ -59,6 +59,6 @@
     "button_logon": {
         "variant": "primary",
         "text": "Log på igen",
-        "classes": "mt-5"
+        "classes": { "button": "mt-5" }
     }
 }

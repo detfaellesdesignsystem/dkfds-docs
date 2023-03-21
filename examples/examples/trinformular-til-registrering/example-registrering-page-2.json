@@ -219,7 +219,7 @@
     "button_next": {
         "text": "Næste",
         "variant": "primary",
-        "classes": "d-print-none mt-7",
+        "classes": { "button": "d-print-none mt-7" },
         "attributes": "type='submit'"
     }
 }

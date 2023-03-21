@@ -102,11 +102,11 @@
     "button_upload": {
         "text": "Upload fil",
         "variant": "secondary",
-        "classes": "d-print-none"
+        "classes": { "button": "d-print-none" }
     },
     "button_next": {
         "text": "Næste",
         "variant": "primary",
-        "classes": "mt-8"
+        "classes": { "button": "mt-8" }
     }
 }

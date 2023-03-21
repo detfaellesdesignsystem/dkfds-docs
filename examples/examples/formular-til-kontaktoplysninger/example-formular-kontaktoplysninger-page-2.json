@@ -104,7 +104,7 @@
     "button_send": {
         "variant": "primary",
         "text": "Send",
-        "classes": "d-print-none mt-6",
+        "classes": { "button": "d-print-none mt-6" },
         "attributes": "type=\"submit\""
     }
 }

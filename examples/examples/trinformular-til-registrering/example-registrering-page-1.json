@@ -131,14 +131,14 @@
     "button_add": {
         "text": "Tilføj person",
         "variant": "tertiary",
-        "classes": "d-print-none mt-5",
+        "classes": { "button": "d-print-none mt-5" },
         "icon": "add",
         "attributes": "type='button'"
     },
     "button_next": {
         "text": "Næste",
         "variant": "primary",
-        "classes": "d-print-none mt-7",
+        "classes": { "button": "d-print-none mt-7" },
         "attributes": "type='submit'"
     }
 }

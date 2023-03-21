@@ -135,7 +135,7 @@
     "button_send": {
         "text": "Send ansøgning",
         "variant": "primary",
-        "classes": "d-print-none mt-7",
+        "classes": { "button": "d-print-none mt-7" },
         "attributes": "type='button'"
     },
     "tabel_dokumentation": {

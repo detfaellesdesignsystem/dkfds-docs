@@ -46,7 +46,7 @@
     "button_download": {
         "text": "Download kvittering som pdf",
         "variant": "secondary",
-        "classes": "d-print-none",
+        "classes": { "button": "d-print-none" },
         "icon": "file-download"
     },
     "list_betaling": {
@@ -69,11 +69,11 @@
     "button_opret": {
         "text": "Opret ny ansøgning",
         "variant": "secondary",
-        "classes": "d-print-none mt-7"
+        "classes": { "button": "d-print-none mt-7" }
     },
     "button_afslut": {
         "text": "Log ud og gå til forsiden",
         "variant": "primary",
-        "classes": "d-print-none mt-4"
+        "classes": { "button": "d-print-none mt-4" }
     }
 }

@@ -148,7 +148,7 @@
     "button_next": {
         "text": "Send registrering",
         "variant": "primary",
-        "classes": "d-print-none mt-4",
+        "classes": { "button": "d-print-none mt-4" },
         "attributes": "type='submit'"
     }
 }

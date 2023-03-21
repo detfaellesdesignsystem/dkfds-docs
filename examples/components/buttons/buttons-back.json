@@ -9,19 +9,19 @@
       {
         "text": "Hover",
         "variant": "quaternary",
-        "classes": "button-hover",
+        "classes": { "button": "button-hover" },
         "icon": "arrow-left"
       },
       {
         "text": "Active",
         "variant": "quaternary",
-        "classes": "button-active",
+        "classes": { "button": "button-active" },
         "icon": "arrow-left"
       },
       {
         "text": "Focus",
         "variant": "quaternary",
-        "classes": "focus",
+        "classes": { "button": "focus" },
         "icon": "arrow-left"
       },
       {
