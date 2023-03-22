@@ -4,11 +4,13 @@
 <form novalidate method="get" id="formSearchTable">
     {{- 
         search({
-            "inputId": "inputSearchTable",
+            "id": "inputSearchTable",
             "classes": "input-char-27",
             "name": "searchtable",
-            "buttonId": "btnSearchTable",
-            "buttonType": "submit"
+            "searchbutton": {
+                "id": "btnSearchTable",
+                "type": "submit"
+            }
         }) 
     -}}
 </form>

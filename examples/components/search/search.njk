@@ -2,7 +2,7 @@
 
 {{ 
     search({
-        "inputId": "input-type-text",
+        "id": "input-type-text",
         "classes": "input-char-27",
         "name": "search-button"
     }) 
@@ -10,9 +10,11 @@
 
 {{ 
     search({
-        "inputId": "input-type-text-icon",
+        "id": "input-type-text-icon",
         "classes": "input-char-27",
         "name": "search-icon",
-        "useIcon": true
+        "searchbutton": {
+            "iconOnly": true
+        }
     }) 
 }}

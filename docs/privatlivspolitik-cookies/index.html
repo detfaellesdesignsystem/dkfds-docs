@@ -3612,18 +3612,16 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 
 <form id="cookieForm" method="post" action="/">
     <div class="form-group">
-        <fieldset>
-            <legend>Må vi indsamle statistik om din brug af Det Fælles Designsystem (FDS)?</legend>
-            <ul class="nobullet-list">
-                <li>
-                    <input id="statCookiesYes" type="radio" name="statCookies" value="1" class="form-radio radio-large" />
-                    <label for="statCookiesYes">Ja, accepter cookies</label>
-                </li>
-                <li>
-                    <input id="statCookiesNo" type="radio" name="statCookies" value="0" class="form-radio radio-large" />
-                    <label for="statCookiesNo">Nej</label>
-                </li>
-            </ul>
+        <fieldset role="radiogroup">
+            <legend class="form-label">Må vi indsamle statistik om din brug af Det Fælles Designsystem (FDS)?</legend>
+            <div class="form-group-radio">
+                <input id="statCookiesYes" type="radio" name="statCookies" value="1" class="form-radio radio-large" />
+                <label class="form-label" for="statCookiesYes">Ja, accepter cookies</label>
+            </div>
+            <div class="form-group-radio">
+                <input id="statCookiesNo" type="radio" name="statCookies" value="0" class="form-radio radio-large" />
+                <label class="form-label" for="statCookiesNo">Nej</label>
+            </div>
         </fieldset>
     </div>
     <div id="cookieButtons" class="mt-6 d-none">
@@ -3646,109 +3644,111 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 <h3>Varighed af cookies</h3>
 
 <div class="row">
-    <div class="table--responsive-scroll col-12 col-md-10 col-lg-8">
-        <table class="table table--borderless table--compact">
-            <thead>
-                <tr>
-                    <th>Cookienavn</th>
-                    <th>Type</th>
-                    <th>Formål</th>
-                    <th>Varighed</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>theme</td>
-                    <td>Førstepartscookie</td>
-                    <td>Teknisk nødvendig</td>
-                    <td>12 måneder</td>
-                </tr>
-                <tr>
-                    <td>cookieOptOut</td>
-                    <td>Førstepartscookie</td>
-                    <td>Teknisk nødvendig</td>
-                    <td>12 måneder</td>
-                </tr>
-                <tr>
-                    <td>_pk_ses.&lt;appID&gt;.&lt;domainHash&gt;</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>30 minutter</td>
-                </tr>
-                <tr>
-                    <td>_pk_id.&lt;appID&gt;.&lt;domainHash&gt;</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>13 måneder</td>
-                </tr>
-                <tr>
-                    <td>_stg_debug / stg_debug</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>14 dage</td>
-                </tr>
-                <tr>
-                    <td>stg_traffic_source_priority</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>30 minutter</td>
-                </tr>
-                <tr>
-                    <td>stg_last_interaction</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>12 måneder</td>
-                </tr>
-                <tr>
-                    <td>stg_returning_visitor</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>12 måneder</td>
-                </tr>
-                <tr>
-                    <td>stg_fired__&lt;appID&gt;</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>Session</td>
-                </tr>
-                <tr>
-                    <td>stg_utm_campaign</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>Session</td>
-                </tr>
-                <tr>
-                    <td>stg_pk_campaign</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>Session</td>
-                </tr>
-                <tr>
-                    <td>stg_externalReferrer</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>Session</td>
-                </tr>
-                <tr>
-                    <td>_stg_opt_out_simulate</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>12 måneder</td>
-                </tr>
-                <tr>
-                    <td>_stg_optout</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>12 måneder</td>
-                </tr>
-                <tr>
-                    <td>ppms_privacy_&lt;appID&gt;</td>
-                    <td>Tredjepartscookie</td>
-                    <td>Statistik</td>
-                    <td>12 måneder</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="col-12 col-md-10 col-lg-8">
+        <div class="table--responsive-scroll">
+            <table class="table table--borderless table--compact">
+                <thead>
+                    <tr>
+                        <th>Cookienavn</th>
+                        <th>Type</th>
+                        <th>Formål</th>
+                        <th>Varighed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>theme</td>
+                        <td>Førstepartscookie</td>
+                        <td>Teknisk nødvendig</td>
+                        <td>12 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>cookieOptOut</td>
+                        <td>Førstepartscookie</td>
+                        <td>Teknisk nødvendig</td>
+                        <td>12 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>_pk_ses.&lt;appID&gt;.&lt;domainHash&gt;</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>30 minutter</td>
+                    </tr>
+                    <tr>
+                        <td>_pk_id.&lt;appID&gt;.&lt;domainHash&gt;</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>13 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>_stg_debug / stg_debug</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>14 dage</td>
+                    </tr>
+                    <tr>
+                        <td>stg_traffic_source_priority</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>30 minutter</td>
+                    </tr>
+                    <tr>
+                        <td>stg_last_interaction</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>12 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>stg_returning_visitor</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>12 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>stg_fired__&lt;appID&gt;</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>stg_utm_campaign</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>stg_pk_campaign</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>stg_externalReferrer</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>_stg_opt_out_simulate</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>12 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>_stg_optout</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>12 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>ppms_privacy_&lt;appID&gt;</td>
+                        <td>Tredjepartscookie</td>
+                        <td>Statistik</td>
+                        <td>12 måneder</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 

@@ -95,7 +95,7 @@
         ]
     },
     "search_table": {
-        "inputId": "inputSearchTable",
+        "id": "inputSearchTable",
         "classes": "input-char-27",
         "name": "searchtable"
     },
