@@ -4,30 +4,29 @@ parentlink: /omdesignsystemet/nyhedsmail/
 redirect_from:
 - /omdesignsystemet/nyhedsmail/afmeld/
 layout: styleguide
-title: Afmeld nyhedsmail
+title: Afmeld nyhedsbrev
 category: Faellesskab_category
 subcategory: Fællesskab
-description: "Afmeld nyhedsmails fra Det Fælles Designsystem"
+description: "Afmeld nyhedsbrev fra Det Fælles Designsystem"
 tags:
 ---
    
-<div class="alert alert-success d-none" id="newsletter-message" role="alert">
+<div class="alert mt-5" id="newsletter-alert" role="alert" hidden>
     <div class="alert-body">
-        <p class="alert-text"></p>
+        <h2 class="alert-heading"></h2>
+        <div class="alert-text"></div>
     </div>
 </div>
-<div class="newsletter-container">
+<div class="newsletter-container mt-5">
     <form method="post" action="." id="newsform">
-        <div class="form-group">
-            <label for="i_newsform_email" class="form-label">E-mailadresse</label>
+        <div class="form-group" id="newsletter-emailaddress" hidden>
+            <label class="form-label" for="i_newsform_email">Afmeld e-mailadresse</label>
             <span class="form-error-message d-none"></span>
-            <input type="text" class="form-input" id="i_newsform_email" name="i_email" value="" />
-            <input type="hidden" id="i_newsform_navn" name="i_navn" value="" />
-            <input type="hidden" id="i_newsform_segment" name="i_segment" value="" />
+            <input type="email" class="form-input" id="i_newsform_email" name="i_email" autocomplete="email" required>
         </div>
-        <button id="Frameld" class="button button-primary mt-9" type="button" name="Tilmeld" title="Tilmeld" value="Tilmeld">Afmeld</button>
-        <p class="mt-7 pt-0">
-        <a href="/faellesskab/nyhedsmail/">Tilmeld</a>
-        </p>
+        <button id="afmeld" class="button button-primary mt-5" type="button" hidden>Afmeld</button>
     </form>
+    <p class="mt-9 pt-0 mb-9">
+        <a href="/faellesskab/nyhedsmail/">Tilmeld en <span class='nowrap'>e-mailadresse</span> her</a>
+    </p>
 </div>

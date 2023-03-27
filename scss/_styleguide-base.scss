@@ -1216,3 +1216,7 @@ Design
   font-weight: font-weight($table-head-font-weight);
   font-size: font-size($table-font-size);
 }
+
+.nowrap {
+  white-space: nowrap !important;
+}

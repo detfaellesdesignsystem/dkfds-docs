@@ -16,11 +16,11 @@
 ================================================== -->
   
 
-<title>Afmeld nyhedsmail | Det Fælles Designsystem</title>
-<meta property="og:title" content="Afmeld nyhedsmail | Det Fælles Designsystem">
+<title>Afmeld nyhedsbrev | Det Fælles Designsystem</title>
+<meta property="og:title" content="Afmeld nyhedsbrev | Det Fælles Designsystem">
 
-<meta name="description" content="Afmeld nyhedsmails fra Det Fælles Designsystem">
-<meta property="og:description" content="Afmeld nyhedsmails fra Det Fælles Designsystem">
+<meta name="description" content="Afmeld nyhedsbrev fra Det Fælles Designsystem">
+<meta property="og:description" content="Afmeld nyhedsbrev fra Det Fælles Designsystem">
 
 
 
@@ -57,7 +57,7 @@
 </noscript>
 
   </head>
-  <body class="page-afmeld-nyhedsmail layout-styleguide">
+  <body class="page-afmeld-nyhedsbrev layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -3388,7 +3388,7 @@
   
     
     <a href="/faellesskab/nyhedsmail/"  class="nav-link">
-        Nyhedsmail
+        Nyhedsbrev
       </a>
      
     
@@ -3525,7 +3525,7 @@
 
 <a href="/faellesskab/nyhedsmail/" 
   class="nav-link">
-  Nyhedsmail
+  Nyhedsbrev
 </a>
 
 </li>
@@ -3605,7 +3605,7 @@
           </div>
 
           
-          <h1 id="afmeld-nyhedsmail">Afmeld nyhedsmail</h1>
+          <h1 id="afmeld-nyhedsbrev">Afmeld nyhedsbrev</h1>
           
 
           
@@ -3615,25 +3615,24 @@
 
           
 
-          <div class="alert alert-success d-none" id="newsletter-message" role="alert">
+          <div class="alert mt-5" id="newsletter-alert" role="alert" hidden="">
     <div class="alert-body">
-        <p class="alert-text"></p>
+        <h2 class="alert-heading"></h2>
+        <div class="alert-text"></div>
     </div>
 </div>
-<div class="newsletter-container">
+<div class="newsletter-container mt-5">
     <form method="post" action="." id="newsform">
-        <div class="form-group">
-            <label for="i_newsform_email" class="form-label">E-mailadresse</label>
+        <div class="form-group" id="newsletter-emailaddress" hidden="">
+            <label class="form-label" for="i_newsform_email">Afmeld e-mailadresse</label>
             <span class="form-error-message d-none"></span>
-            <input type="text" class="form-input" id="i_newsform_email" name="i_email" value="" />
-            <input type="hidden" id="i_newsform_navn" name="i_navn" value="" />
-            <input type="hidden" id="i_newsform_segment" name="i_segment" value="" />
+            <input type="email" class="form-input" id="i_newsform_email" name="i_email" autocomplete="email" required="" />
         </div>
-        <button id="Frameld" class="button button-primary mt-9" type="button" name="Tilmeld" title="Tilmeld" value="Tilmeld">Afmeld</button>
-        <p class="mt-7 pt-0">
-        <a href="/faellesskab/nyhedsmail/">Tilmeld</a>
-        </p>
+        <button id="afmeld" class="button button-primary mt-5" type="button" hidden="">Afmeld</button>
     </form>
+    <p class="mt-9 pt-0 mb-9">
+        <a href="/faellesskab/nyhedsmail/">Tilmeld en <span class="nowrap">e-mailadresse</span> her</a>
+    </p>
 </div>
 
 
@@ -3671,7 +3670,7 @@
             
             <li><a href="/faellesskab/governance/">Governance</a></li>
             
-            <li><a href="/faellesskab/nyhedsmail/">Nyhedsmail</a></li>
+            <li><a href="/faellesskab/nyhedsmail/">Nyhedsbrev</a></li>
             
             <li><a href="/faellesskab/kontakt-support/">Kontakt og support</a></li>
             

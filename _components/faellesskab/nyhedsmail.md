@@ -3,40 +3,33 @@ permalink: /faellesskab/nyhedsmail/
 redirect_from:
 - /omdesignsystemet/nyhedsmail/
 layout: styleguide
-title: Nyhedsmail
+title: Nyhedsbrev
 category: Faellesskab_category
 subcategory: Fællesskab
 description: "Tilmeld dig nyheder fra Det Fælles Designsystem"
-mailalert: true
 ---
-<div class="newsletter-container">
+<div class="alert mt-5 mb-9" id="newsletter-alert" role="alert" hidden>
+    <div class="alert-body">
+        <h2 class="alert-heading"></h2>
+        <div class="alert-text"></div>
+    </div>
+</div>
+<div class="newsletter-container mt-5">
     <form method="post" action="." id="newsform">
-        <div class="form-group">
-            <label for="i_newsform_email" class="form-label">Tilmeld mailadresse</label>
-            <span class="form-error-message mb-3"></span>
-            <input type="text" class="form-input" id="i_newsform_email" name="i_email" value="" required />
-            <input type="hidden" id="i_newsform_navn" name="i_navn" value="" />
+        <div class="form-group" id="newsletter-emailaddress" hidden>
+            <label class="form-label" for="i_newsform_email">Tilmeld e-mailadresse</label>
+            <span class="form-error-message d-none"></span>
+            <input type="email" class="form-input" id="i_newsform_email" name="i_email" autocomplete="email" required>
         </div>
-        <div class="form-group">
-            <fieldset>
-                <legend class="h4 mb-0">Vælg mails</legend>
-                <span class="form-error-message mb-3"></span>
-                <ul class="nobullet-list d-none" id="subscriptions">
-                </ul>
-            </fieldset>
+        <div class="form-group" id="samtykke-group" hidden>
+            <span class="form-error-message d-none"></span>
+            <input id="samtykke-check" type="checkbox" name="samtykke-check" value="1" class="form-checkbox checkbox-large" required />
+            <label for="samtykke-check">Jeg giver hermed samtykke til, at Erhvervsstyrelsen må opbevare min <span class='nowrap'>e-mailadresse</span>, indtil jeg selv afmelder mig nyhedsbrevet</label>
         </div>
-        <div class="form-group" id="samtykke-group">
-            <fieldset>
-                <legend class="h5">Samtykke</legend>
-                <span class="form-error-message"></span>
-                <input id="samtykke-check" type="checkbox" name="samtykke-check" value="1" class="form-checkbox checkbox-large" required />
-                <label for="samtykke-check">Jeg giver hermed samtykke til at Erhvervsstyrelsen må opbevare min mailadresse, indtil jeg selv afmelder mig det/de valgte nyhedsmails (abonnementer).</label>
-                <p><a href="/privatlivspolitik-cookies/" target="_blank" class="icon-link">Læs om vores behandling af dine personoplysninger og dine rettigheder<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
-            </fieldset>
-        </div>
-        <button id="Tilmeld" class="button button-primary mt-8" type="button" name="Tilmeld" title="Tilmeld" value="Tilmeld">Tilmeld</button>
-        <p class="mt-7 pt-0">
-            <a href="/faellesskab/nyhedsmail/afmeld/">Afmeld en mailadresse her</a>
-        </p>
+        <p><a href="/privatlivspolitik-cookies/">Læs om vores behandling af dine personoplysninger og dine rettigheder</a></p>
+        <button id="tilmeld" class="button button-primary mt-5" type="button" hidden>Tilmeld</button>
     </form>
+    <p class="mt-9 pt-0">
+        <a href="/faellesskab/nyhedsmail/afmeld/">Afmeld en <span class='nowrap'>e-mailadresse</span> her</a>
+    </p>
 </div>
