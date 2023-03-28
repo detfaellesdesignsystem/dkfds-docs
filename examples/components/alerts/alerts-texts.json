@@ -15,7 +15,7 @@
                 "variant": "info",
                 "headingLevel": "h3",
                 "heading": "Informativ besked - tekstafsnit",
-                "content": "Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <a href=\"#\">totam rem Nemo enim</a> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro quisquam est, qui doloremipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+                "content": "Dette eksempel viser, hvordan en besked ser ud, når dens bredde er blevet begrænset. Bredden svarer til længden på en paragraf og denne type beskeder er derfor mere velegnet, hvis du vil vise beskeden midt i en tekst.",
                 "paragraph": true
             }
         ]
