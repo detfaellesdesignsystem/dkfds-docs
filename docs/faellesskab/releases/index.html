@@ -3818,11 +3818,21 @@
   <strong class="badge badge-info badge-small mr-2">Change</strong>
 </div>
 <ul>
-  <li>Opdateret myndighedsnavnet i række 2, så det nu er kodet som en heading og kan styles med klassen <code>authority-name</code>.</li>
+  <li>Opdateret myndighedsnavnet i række 2, så det nu er kodet med <code>&lt;strong&gt;</code> og kan styles med klassen <code>authority-name</code>.</li>
   <li>Rettet fejl, hvor portalnavnet ikke blev vist korrekt ved print.</li>
   <li>Log af-knappen er nu altid kodet som en <code>button</code> uanset skærmstørrelse.</li>
   <li><code>title</code> er fjernet fra mobilmenuens knapper og erstattet af <code>aria-label</code>.</li>
   <li>Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.</li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></h3>
+  <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
+</div>
+<ul>
+  <li>Fjernet linjen med <code>jsnext:main</code>.<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Fjernet <code>release</code> fra <code>scripts</code>.</li>
+  <li>Fjernet <code>app-root-path</code>, <code>array-filter</code>, <code>gulp4-run-sequence</code> og <code>zip-folder</code> fra <code>devDependencies</code>.</li>
 </ul>
 
 <h3 class="h4">Øvrige</h3>
@@ -3830,8 +3840,6 @@
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Følgende komponenter har fået opdateret HTML’en, så titler nu er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/kode/komponenter/badges/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/kode/komponenter/cookiemeddelelse/">cookiemeddelelser</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæsere annoncerer nu også <a href="/komponenter/toastbesked/">toastbeskeders</a> variant og derudover titlen ved fokus på luk-knappen.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <code>app-root-path</code>, <code>array-filter</code>, <code>gulp4-run-sequence</code> og <code>zip-folder</code> fra <code>devDependencies</code> samt <code>jsnext:main</code> fra <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet ikonet <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten <code>aria-selected</code> på <a href="/komponenter/overflowmenu/#sortering">sortering</a> er ændret til <code>aria-current</code> og flyttet fra <code>li</code>-elementet til <code>button</code>-elementet.</li>
@@ -3840,10 +3848,12 @@
   <li>Rettet fejl, hvor <a href="/komponenter/search/">søgefelter</a> blev grå i stedet for hvide på iPhones.</li>
   <li>Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a> og <a href="/komponenter/tjekboks/">store tjekbokse</a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, der indeholder både rettelser og tilføjelser. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Flere uoverensstemmelser i dokumentationens kodeeksempler og selvbetjeningseksempler er rettet.</li>
   <li>Rettet fejl, hvor sprogoversættelser for karakterbegrænsning og accordions påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for datovælgeren, hvor dokumentationen er præciseret.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for karakterbegrænsning. Funktionen <code>init</code> samt sprogskifte er uændrede.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet <code>aria-haspopup</code> til knapper, der åbner modaler. <a href="/kode/komponenter/modal/">Modalkomponenten</a>, <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningseksemplerne</a> og pattern for <a href="/eksempler/patterns/session-udloeber/">session udløber</a> er opdateret.</li>
+  <li>Rettet fejl, hvor deaktiverede tertiærknapper skiftede farve på hover.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet <a href="/komponenter/fejlmeddelelser/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.</li>
 </ul>
 
 <h2 id="version-8-2-1" class="mb-0">Version 8.2.1</h2>
