@@ -126,81 +126,75 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-04-2023</span></div>
 
-Fokus i version 9.0.0 har været på fejlrettelser og forbedring af tilgængeligheden.
-
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/">Datovælger</a></h3>
-  <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
 </div>
 - Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/201" class="icon-link" target="_blank">issue #201 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Rettet fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.
 - Rettet fejl, hvor markøren skiftede udseende på navigationsknapperne, selvom disse knapper ikke var synlige.
-- Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
-- Datovælgeren kræver nu et `id` på inputfeltet for at skærmlæserguiden vedrørende tastaturgenveje fungerer korrekt.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/">sprogoversættelser</a>, skal disse derfor opdateres.
 - Ændret `aria-selected` til `aria-current` på valgte datoer, måneder og år.
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at tilpasse <a href="/komponenter/datovaelger/#datoformat">datoformatet</a>. Datovælgerens inputfelt er i denne forbindelse opdateret, så den accepterer flere måder at indtaste en dato på.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at tilpasse <a href="/komponenter/datovaelger/#datoformat">datoformatet</a>.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret inputfeltet, så datovælgeren accepterer flere måder at indtaste en dato på (uafhængigt af det valgte datoformat).
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
-  <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
 </div>
-Nedenstående ændringer kræver at venstremenuens og trinindikatorens html opdateres.
-- Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.
-- Rettet fejl, hvor lange tekster blev ombrudt forkert. Bemærk, at stylingen er blevet ændret, hvilket kan give ombrydningsproblemer, hvis man ikke opdaterer html'en (gælder både venstremenu og trinindikator).
-- Rettet fejl hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor lange tekster blev ombrudt forkert (ændringen påvirker både venstremenu og trinindikator).
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er <a href="/komponenter/trinindikator/#med-fejl">fejl i et trin</a> i trinindikatoren.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link" target="_blank">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a></h3>
-  <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
 </div>
-- Mindre rettelser for styling af tabeller, samt fjernet klassen `table--lines`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `table--lines`.
 - Rettet fejl relateret til margin og padding for tabeller.
-- Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.
-- Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> er ændret til kun at være "vælg række". Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML'en fremadrettet.
-- Fjernet `aria-label` fra `label`-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.
-- Opdateret opsummeringssiderne i selvbetjeningseksemplerne, hvor tidligere tomme headers har fået en skærmlæserbesked.
-- Opdateret `DKFDS.init()`, så kun tabeller markeret med <a href="/kode/komponenter/tables/#responsiv">responsive klasser</a> får indsat attributten `data-title`.
-- <strong><a href="/komponenter/tables/#strukturerede-lister">Strukturerede lister</a> er flyttet ind under tabeller</strong> og er ændret til en tabelstruktur.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> er ændret til kun at være "vælg række". Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML'en fremadrettet.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet `aria-label` fra `label`-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret opsummeringssiderne i selvbetjeningseksemplerne, hvor tidligere tomme headers har fået en skærmlæserbesked.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret `DKFDS.init()`, så kun tabeller markeret med <a href="/kode/komponenter/tables/#responsiv">responsive klasser</a> får indsat attributten `data-title`.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> <strong><a href="/komponenter/tables/#strukturerede-lister">Strukturerede lister</a> er flyttet ind under tabeller</strong> og er ændret til en tabelstruktur.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
-  <strong class="badge badge-info badge-small mr-2">Change</strong>
 </div>
-- Opdateret myndighedsnavnet i række 2, så det nu er kodet med `<strong>` og kan styles med klassen `authority-name`.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret myndighedsnavnet i række 2, så det nu er kodet med `<strong>` og kan styles med klassen `authority-name`.
 - Rettet fejl, hvor portalnavnet ikke blev vist korrekt ved print.
-- Log af-knappen er nu altid kodet som en `button` uanset skærmstørrelse.
-- `title` er fjernet fra mobilmenuens knapper og erstattet af `aria-label`.
-- Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Log af-knappen er nu altid kodet som en `button` uanset skærmstørrelse.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> `title` er fjernet fra mobilmenuens knapper og erstattet af `aria-label`.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></h3>
-  <strong class="badge badge-warning badge-small mr-2">Breaking change</strong>
 </div>
-- Fjernet linjen med `jsnext:main`.<br><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Fjernet `release` fra `scripts`.
-- Fjernet `app-root-path`, `array-filter`, `gulp4-run-sequence` og `zip-folder` fra `devDependencies`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet linjen `"jsnext:main": "src/js/start.js"`.<br><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `release` fra `scripts`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `app-root-path`, `array-filter`, `gulp4-run-sequence` og `zip-folder` fra `devDependencies`.
 
 <h3 class="h4">Øvrige</h3>
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Følgende komponenter har fået opdateret HTML'en, så titler nu er angivet med enten et heading-element eller `<strong>`-element: <a href="/kode/komponenter/badges/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/kode/komponenter/cookiemeddelelse/">cookiemeddelelser</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes. 
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæsere annoncerer nu også <a href="/komponenter/toastbesked/">toastbeskeders</a> variant og derudover titlen ved fokus på luk-knappen.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet ikonet `delete`. Brug i stedet ikonet `trash-can`.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten `aria-selected` på <a href="/komponenter/overflowmenu/#sortering">sortering</a> er ændret til `aria-current` og flyttet fra `li`-elementet til `button`-elementet.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/radioknap/">Radioknapper</a> og <a href="/komponenter/tjekboks/">tjekbokse</a> indeholder ikke længere listeelementerne `li` og `ul`.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl i <a href="/komponenter/overflowmenu/">overflow menuer</a>, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
-- Rettet fejl, hvor <a href="/komponenter/search/">søgefelter</a> blev grå i stedet for hvide på iPhones.
-- Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a> og <a href="/komponenter/tjekboks/">store tjekbokse</a>.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>, der indeholder både rettelser og tilføjelser. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.
-- Rettet fejl, hvor sprogoversættelser for karakterbegrænsning og accordions påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for datovælgeren, hvor dokumentationen er præciseret.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for karakterbegrænsning. Funktionen `init` samt sprogskifte er uændrede.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `aria-haspopup` til knapper, der åbner modaler. <a href="/kode/komponenter/modal/">Modalkomponenten</a>, <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningseksemplerne</a> og pattern for <a href="/eksempler/patterns/session-udloeber/">session udløber</a> er opdateret.
-- Rettet fejl, hvor deaktiverede tertiærknapper skiftede farve på hover.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet <a href="/komponenter/fejlmeddelelser/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML'en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller `<strong>`-element: <a href="/kode/komponenter/badges/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/kode/komponenter/cookiemeddelelse/">cookiemeddelelser</a>, <a href="/komponenter/footer/">footer</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/toastbesked/">Toastbeskeders</a> aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/komponenter/fejlmeddelelser/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten `aria-selected` på <a href="/komponenter/overflowmenu/#sortering">sortering</a> er ændret til `aria-current` og flyttet fra `li`-elementet til `button`-elementet.
+- Rettet fejl, hvor <a href="/komponenter/search/">søgefelter</a> blev grå i stedet for hvide på iPhones.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/radioknap/">Radioknapper</a> og <a href="/komponenter/tjekboks/">tjekbokse</a> er omskrevet, så de ikke længere indeholder listeelementerne `li` og `ul`.
+- Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a> og <a href="/komponenter/tjekboks/">store tjekbokse</a>.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/accordions/">accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/kode/komponenter/datovaelger/">datovælgeren</a>, hvor dokumentationen er præciseret.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a>. Funktionen `init` samt sprogskifte er uændrede.
+- Rettet fejl, hvor deaktiverede <a href="/komponenter/knapper/#tertiærknapper">tertiærknapper</a> skiftede farve på hover.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes. 
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <a href="/design/ikoner/">ikonet</a> `delete`. Brug i stedet ikonet `trash-can`.
+- Rettet fejl i <a href="/komponenter/overflowmenu/">overflow menuer</a>, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `aria-haspopup` til knapper, der åbner modaler. <a href="/kode/komponenter/modal/">Modalkomponenten</a>, <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningseksemplerne</a> og pattern for <a href="/eksempler/patterns/session-udloeber/">session udløber</a> er opdateret.
+
+
 
 {:#version-8-2-1 .mb-0}
 ## Version 8.2.1
