@@ -54,6 +54,7 @@ Brug klasserne `vertical-align-top`, `vertical-align-middle` og `vertical-align-
 
 Tabeller er som udgangspunkt sat ind i en `<div>`, der har klassen `table--responsive-scroll`, hvilket gør at tabellen kan scrolles vandret, hvis den bliver for smal. Hvis man ikke ønsker, at dette skal være muligt, kan man undlade denne `<div>`.
 
+{:#varianter}
 ## Varianter
 
 {:#uden-ramme}
