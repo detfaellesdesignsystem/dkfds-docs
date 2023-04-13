@@ -111,6 +111,7 @@
     },
     "button_delete": {
         "variant": "unstyled",
+        "classes": { "icon": "mr-0 mt-0" },
         "attributes": "aria-labelledby=\"header4 file1\" type=\"button\"",
         "icon": "trash-can"
     },

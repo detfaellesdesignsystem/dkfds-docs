@@ -124,7 +124,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0
 
-<div><span class="small-text mt-0 d-block">xx-04-2023</span></div>
+<div><span class="small-text mt-0 d-block">14-04-2023</span></div>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/">Datovælger</a></h3>
@@ -190,6 +190,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a> og <a href="/komponenter/tjekboks/">store tjekbokse</a>.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/accordions/">accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/kode/komponenter/datovaelger/">datovælgeren</a>, hvor dokumentationen er præciseret.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a>. Funktionen `init` samt sprogskifte er uændrede.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/knapper/#klikbart-ikon">Klikbare ikoner</a> med klassen `button-unstyled` fylder ikke længere hele skærmbredden på mindre skærme og HTML'en er opdateret for alle eksempler.
 - Rettet fejl, hvor deaktiverede <a href="/komponenter/knapper/#tertiærknapper">tertiærknapper</a> skiftede farve på hover.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes. 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <a href="/design/ikoner/">ikonet</a> `delete`. Brug i stedet ikonet `trash-can`.
