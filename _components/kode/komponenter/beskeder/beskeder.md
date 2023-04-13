@@ -36,7 +36,7 @@ subnav:
 
 Anvend `role="alert"` til beskeder, der skal læses højt af en skærmlæser med det samme, hvis indholdet ændrer sig. Dette kan for eksempel være en besked, der bliver synlig efter at have været skjult eller hvor indholdet ændrer sig. Advarsler og fejlbeskeder bør altid være markeret med `role="alert"`.
 
-Hvis beskeden indeholder en `alert-heading`, sørg da for at benytte et html-element, der passer ind i beskedens kontekst. Dette vil som regel være en overskrift, for eksempel `<h3>`, eller et `<strong>`-element.
+Hvis beskeden indeholder en `alert-heading`, sørg da for at benytte et html-element, der passer ind i konteksten på siden. Dette vil som regel være en overskrift, for eksempel `<h3>`, eller et `<strong>`-element.
 
 ### Javascript
 Man kan bruge nedenstående JavaScript for at sætte events på luk-knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk-knappen.
