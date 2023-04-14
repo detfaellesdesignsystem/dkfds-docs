@@ -38,7 +38,7 @@ Hver fejl tilføjes til `<ul>` listen med et anchor link til feltet der er omtal
 
 
 ### Javascript
-Fejlopsummering kræver JavaScript for at fungere korrekt i alle browsers. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+Fejlopsummering kræver JavaScript samt attributten `data-module="error-summary"` for at fungere korrekt. Dermed vil et klik på et link i opsummeringen betyde, at brugeren scroller ned til feltet med fejl uden at scrolle forbi feltets label. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
 new DKFDS.ErrorSummary(document.getElementById('ALERT-ID')).init();

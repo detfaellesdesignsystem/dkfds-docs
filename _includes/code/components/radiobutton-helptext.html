@@ -1,35 +1,26 @@
 <div class="form-group">
-    <fieldset>
-        <legend class="form-label">Radioknap med hjælpetekst</legend>
-        <ul class="nobullet-list">
-            <li>
-                <div class="form-group-radio">
-                    <input id="radio-helptext-1" type="radio"
-                        name="radio-helptext" value="v1"
-                        aria-labelledby="form-label-radio-helptext-1 helptext-radio-helptext-1"
-                        class="form-radio radio-large " />
-                    <label for="radio-helptext-1"
-                        id="form-label-radio-helptext-1" class="">Valg 1
-                    </label>
-                    <span class="form-hint"
-                        id="helptext-radio-helptext-1">Dette er en
-                        hjælpetekst</span>
-                </div>
-            </li>
-            <li>
-                <div class="form-group-radio">
-                    <input id="radio-helptext-2" type="radio"
-                        name="radio-helptext" value="v2"
-                        aria-labelledby="form-label-radio-helptext-2 helptext-radio-helptext-2"
-                        class="form-radio radio-large " />
-                    <label for="radio-helptext-2"
-                        id="form-label-radio-helptext-2" class="">Valg 2
-                    </label>
-                    <span class="form-hint"
-                        id="helptext-radio-helptext-2">Dette er en
-                        hjælpetekst</span>
-                </div>
-            </li>
-        </ul>
+    <fieldset role="radiogroup">
+        <legend class="form-label">
+            Radioknapper med hjælpetekst
+        </legend>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-helptext-option1" name="radio-helptext"
+                class="form-radio radio-large" value="v1"
+                aria-describedby="radiogroup-helptext-option1-hint">
+            <label class="form-label" for="radiogroup-helptext-option1">Valg 1</label>
+            <span class="form-hint" id="radiogroup-helptext-option1-hint">Dette er en
+                hjælpetekst</span>
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-helptext-option2" name="radio-helptext"
+                class="form-radio radio-large" value="v2"
+                aria-describedby="radiogroup-helptext-option2-hint">
+            <label class="form-label" for="radiogroup-helptext-option2">Valg 2</label>
+            <span class="form-hint" id="radiogroup-helptext-option2-hint">Dette er en
+                hjælpetekst</span>
+        </div>
+
     </fieldset>
 </div>

@@ -1,9 +1,0 @@
-{
-  "notification_data": {
-    "id": "notification-info",
-    "type": "info",
-    "heading": "Du har fået en besked",
-    "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-    "show": true
-  }
-}

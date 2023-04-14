@@ -1,76 +1,110 @@
 {
+    "alert_modal_warning": {
+        "variant": "warning",
+        "headingLevel": "h3",
+        "heading": "Vi har noget information af advarende karakter",
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver."
+    },
     "portal_header_data": {
         "compact": false,
         "user": {
-          "name": "Anders Andersen",
-          "work": "Forsikringens Forsikringsfirma"
+            "name": "Anders Andersen",
+            "work": "Forsikringens Forsikringsfirma"
         },
         "logolink": {
-          "sronly": "Portalnavn",
-          "href" : "#"
+            "label": "Portalnavn",
+            "href": "#"
         }
-      },
-      "solution_header_data": {
-        "classes": "header-end",
-        "title": {
-          "href": "#",
-          "text": "Løsningstitel står her"
-        },
-        "solutionInfo": {
-          "hideOnPrint": false
-        },
-        "authority": {
-            "name": "Myndighedsnavn",
-            "text": "Support: 12 34 56 78 <span class='d-print-none'>· <a href=\"javascript:void(0);\" data-module=\"modal\" data-target=\"modal-contact\" class=\"function-link d-inline-block\"><svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#card-text\"></use></svg>Kontakt</a></span>"
-          }
-      },
-      "modal_data": {
-        "id": "modal-contact",
-        "headingID": "modal-contact-title",
-        "heading": "Kontakt",
-        "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
-        "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
-      },
-      "footer_data":{
+    },
+    "footer_data": {
         "topButton": {
-          "topLink": "#top"
+            "href": "#top"
         },
         "columns": [
-          {
-            "columnSize": 3,
-            "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
-          },
-          {
-            "columnSize": 3,
-            "classes": "d-print-none",
-            "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
-            "lists": [
-              {
-                "inline": false,
-                "classes": "mt-0 mb-1 nobullet-list",
-                "items": [
-                  {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"},
-                  {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"}
+            {
+                "columnSize": 3,
+                "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
+            },
+            {
+                "columnSize": 3,
+                "classes": "d-print-none",
+                "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "mt-0 mb-1 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"
+                            },
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"
+                            }
+                        ]
+                    }
                 ]
-              }
-            ]
-          },
-          {
-            "columnSize": 6,
-            "textAlignRight": false,
-            "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
-            "lists": [
-              {
-                "inline": false,
-                "classes": "d-print-none mt-0 nobullet-list",
-                "items": [
-                  {"content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"},
-                  {"content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"}
+            },
+            {
+                "columnSize": 6,
+                "textAlignRight": false,
+                "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "d-print-none mt-0 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"
+                            },
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"
+                            }
+                        ]
+                    }
                 ]
-              }
-            ]
-          }
+            }
         ]
-      }
-  }
-  
+    },
+    "list_oplysninger": {
+        "breakpoint": "sm",
+        "edit": true,
+        "classes": { 
+            "table": "w-percent-lg-70",
+            "label": "w-percent-md-30",
+            "href": "align-text-md-right"
+        },
+        "items": [
+            {
+                "label": "Navn",
+                "value": "Karen Jensen",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            },
+            {
+                "label": "Adresse",
+                "value": "Vængestræde 77<br>0081 Købstad",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            },
+            {
+                "label": "Telefonnummer",
+                "value": "01 23 45 67",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            },
+            {
+                "label": "E-mail",
+                "value": "kjensen@eksempelmail.dk",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            },
+            {
+                "label": "Alder",
+                "value": "40-59",
+                "href": "/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
+            }
+        ]
+    },
+    "button_send": {
+        "variant": "primary",
+        "text": "Send",
+        "classes": { "button": "d-print-none mt-6" },
+        "attributes": "type=\"submit\""
+    }
+}

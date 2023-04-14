@@ -16,9 +16,9 @@ subnav:
 - text: Standard header med navigation
   href: '#standard-header-med-navigation'
 - text: Kompleks header med alle rækker
-  href: '#kompleks-header-med-alle-rækker'
+  href: '#kompleks-header-med-alle-raekker'
 - text: Header med større logo og brugeroplysninger
-  href: '#header-med-større-logo-og-brugeroplysninger'
+  href: '#header-med-stoerre-logo-og-brugeroplysninger'
 ---
 
 {% include code/preview-image.html component="header-simple" code="/kode/komponenter/header/" %}
@@ -99,4 +99,18 @@ En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servi
 ## Links
 <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-{% include child-components.html parent='Headers' %}
+{:#standard-header}
+## Standard header
+{% include code/preview-image.html component="header-simple" %}
+
+{:#standard-header-med-navigation}
+## Standard header med navigation
+{% include code/preview-image.html component="header-medium" %}
+
+{:#kompleks-header-med-alle-raekker}
+## Kompleks header med alle rækker
+{% include code/preview-image.html component="header-full" %}
+
+{:#header-med-stoerre-logo-og-brugeroplysninger}
+## Header med større logo og brugeroplysninger
+{% include code/preview-image.html component="header-large" %}

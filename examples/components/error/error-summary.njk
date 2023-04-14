@@ -1,3 +1,13 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
-{{ alert(alert_example) }}
+{{ 
+    alert({
+        "variant": "error",
+        "classes": "mt-0 mb-8",
+        "headingLevel": "h2",
+        "heading": "Der er problemer",
+        "contentContainer": false,
+        "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#date-field-year\">Datoen for udløbsdato på dit pas bør inkludere årstal</a></li><li><a class=\"function-link\" href=\"#zipcode-field\">Indtast postnummer - fx 4000</a></li></ul>",
+        "attributes": "data-module=\"error-summary\""
+    }) 
+}}

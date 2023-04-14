@@ -67,7 +67,7 @@ new DKFDS.Dropdown(document.getElementById('OVERFLOW-BUTTON-ID')).init();
 
 #### Events
 
-{:.table}
+{:.table .table--responsive-headers}
 | Event key          | Element              | Beskrivelse                                                                                  |
 |--------------------|----------------------|----------------------------------------------------------------------------------------------|
 | fds.dropdown.open  | `button.js-dropdown` | Når en overflow menu bliver foldet ud, bliver eventet `fds.dropdown.open` udløst på knappen  |
@@ -89,7 +89,7 @@ new DKFDS.DropdownSort(document.getElementById('OVERFLOW-MENU-CONTAINER')).init(
 
 #### Events
 
-{:.table}
+{:.table .table--responsive-headers}
 | Event key          | Element              | Beskrivelse                                                                                  |
 |--------------------|----------------------|----------------------------------------------------------------------------------------------|
 | fds.dropdown.open  | `button.js-dropdown` | Når en overflow menu bliver foldet ud, bliver eventet `fds.dropdown.open` udløst på knappen  |

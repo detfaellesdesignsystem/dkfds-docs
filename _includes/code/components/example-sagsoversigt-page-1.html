@@ -1,23 +1,22 @@
 <header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
-    <!--1A: Portal header -->
+    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+
     <div class="portal-header portal-header-compact">
         <div class="container portal-header-inner">
-            <a href="#" class="logo ">
-                <span class="sr-only">Portalnavn</span>
+            <a href="#" aria-label="Portalnavn" class="logo ">
+                <span class="d-none d-print-block">Portalnavn</span>
             </a>
-            <button
-                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu"
-                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
+                <p class="user">
 
-                <p class="user"><span class="username">Anders
-                        Andersen</span> </p>
+                    <span class="username">Anders Andersen</span>
+
+                </p>
 
                 <button class="button button-secondary d-print-none">
                     Log af
@@ -26,42 +25,42 @@
         </div>
     </div>
 
-    <!--2A: Solution header -->
-    <div class="solution-header header-end">
+    <div class="solution-header">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" class="">
+                <a href="#">
                     Sagsunivers
                 </a>
             </div>
 
-            <!--2B: Solution header: Authority name + text-->
-            <div class="solution-info ">
-                <!-- nav-secondary -->
+            <div class="solution-info">
 
-                <p class="h5 authority-name"> Myndighedsnavn</p>
+                <p><strong class="authority-name">Myndighedsnavn</strong></p>
 
-                <p>Support: 12 34 56 78 <span class='d-print-none'>· <a
+                <p>Support: 12 34 56 78 <span
+                        class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span
+                            class="d-none d-lg-inline-block mr-2">· </span><a
                             href="javascript:void(0);" data-module="modal"
-                            data-target="modal-contact"
-                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
+                            data-target="modal-contact" aria-haspopup="dialog"
+                            class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
+
         </div>
     </div>
 
     <div class="overlay"></div>
     <nav class="nav">
-        <!-- collapsible-->
+
         <button class="function-link button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="navbar navbar-primary">
             <div class="navbar-inner container">
                 <ul class="nav-primary">
-                    <li class="current">
-                        <a href="#" class="nav-link">
+                    <li class="current active">
+                        <a href="#" class="nav-link" aria-current="page">
                             <span>Find sag</span>
                         </a>
                     </li>
@@ -79,32 +78,27 @@
                         <div class="overflow-menu">
                             <button
                                 class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
-                                data-js-target="headeroverflow1"
-                                aria-haspopup="true" aria-expanded="false">
+                                data-js-target="headeroverflow1" aria-haspopup="true"
+                                aria-expanded="false">
                                 <span>Udbetalinger</span>
                             </button>
-                            <div class="overflow-menu-inner"
-                                id="headeroverflow1" aria-hidden="true">
+                            <div class="overflow-menu-inner" id="headeroverflow1"
+                                aria-hidden="true">
                                 <ul class="overflow-list" role="menu">
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2022</a>
+                                        <a href="#" role="menuitem">2022</a>
                                     </li>
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2021</a>
+                                        <a href="#" role="menuitem">2021</a>
                                     </li>
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2020</a>
+                                        <a href="#" role="menuitem">2020</a>
                                     </li>
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2019</a>
+                                        <a href="#" role="menuitem">2019</a>
                                     </li>
                                     <li role="none">
-                                        <a href="#"
-                                            role="menuitem">2018</a>
+                                        <a href="#" role="menuitem">2018</a>
                                     </li>
                                 </ul>
                             </div>
@@ -113,160 +107,135 @@
                 </ul>
             </div>
         </div>
-        <div class="portal-info-mobile">
-            <p class="user bold">Anders Andersen</p>
 
-            <a href="#" class="button button-secondary button-signout">
-                Log af
-            </a>
-        </div>
-        <div class="solution-info-mobile">
-            <p class="bold">Myndighedsnavn</p>
-            <p>Support: 12 34 56 78 <br><a href="javascript:void(0);"
-                    data-module="modal" data-target="modal-contact"
-                    class="function-link d-inline-block">
-                    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a>
+        <div class="portal-info-mobile">
+
+            <p class="user">
+
+                <span class="username">Anders Andersen</span>
+
             </p>
+
+            <button class="button button-secondary d-print-none mt-3">
+                Log af
+            </button>
         </div>
-    </nav> <!-- collapsible nav end-->
+
+        <div class="solution-info-mobile">
+
+            <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
+
+            <p>Support: 12 34 56 78 <span
+                    class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span
+                        class="d-none d-lg-inline-block mr-2">· </span><a
+                        href="javascript:void(0);" data-module="modal"
+                        data-target="modal-contact" aria-haspopup="dialog"
+                        class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
+            </p>
+
+        </div>
+
+    </nav>
 </header>
 
 <main class="container page-container" id="main-content">
     <h1>Find sag</h1>
-    <p class="font-lead mb-8">Her kan der stå en manchettekst, som siger
-        noget meningsfyldt om siden.</p>
+    <p class="font-lead mb-8">Her kan der stå en manchettekst, som siger noget meningsfyldt om
+        siden.</p>
 
     <div class="form-group search">
-        <label for="inputSearchTable" class="sr-only">Søg efter indhold i
-            tabellen</label>
-        <input class="form-input input-char-27" id="inputSearchTable"
-            name="searchtable" type="search">
-        <button class="button button-search"
-            id="btnSearchTable">Søg</button>
+        <label for="inputSearchTable" class="sr-only">Søg efter indhold</label>
+        <input class="form-input input-char-27" id="inputSearchTable" name="searchtable"
+            type="search">
+        <button class="button button-search">
+            Søg
+        </button>
     </div>
+
     <div class="table--responsive-scroll mt-4 mb-4">
         <table class="table">
             <thead>
                 <tr>
-                    <th>Sagsnummer</th>
-
-                    <th>Sidst ændret</th>
-
-                    <th>Sag forventes afsluttet</th>
-
-                    <th class="w-percent-20">Beskrivelse</th>
-
-                    <th>Kode</th>
-
-                    <th>Status</th>
-
+                    <th scope="col">Sagsnummer</th>
+                    <th scope="col">Sidst ændret</th>
+                    <th scope="col">Sag forventes afsluttet</th>
+                    <th scope="col" class="w-percent-20">Beskrivelse</th>
+                    <th scope="col">Kode</th>
+                    <th scope="col">Status</th>
                 </tr>
             </thead>
-
             <tbody>
-
                 <tr>
-                    <td data-title="Sagsnummer"><a
+                    <td><a
                             href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/">123456789</a>
                     </td>
-                    <td data-title="Sidst ændret">01.01.2021</td>
-                    <td data-title="Sag forventes afsluttet">01.01.2021
+                    <td>01.01.2021</td>
+                    <td>01.01.2021</td>
+                    <td>Her står en længere og mere detaljeret beskrivelse af sagen.</td>
+                    <td>ABC</td>
+                    <td><span class="badge badge-small badge-warning">Under behandling</span>
                     </td>
-                    <td data-title="Beskrivelse">Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit, sed do eiusmod.
-                    </td>
-                    <td data-title="Kode">ABC</td>
-                    <td data-title="Status"><span
-                            class="badge badge-small badge-warning">Under
-                            behandling</span></td>
-                </tr>
-
-                <tr>
-                    <td data-title="Sagsnummer"><a href="#">3456789</a>
-                    </td>
-                    <td data-title="Sidst ændret">01.01.2021</td>
-                    <td data-title="Sag forventes afsluttet">01.01.2021
-                    </td>
-                    <td data-title="Beskrivelse">Lorem ipsum dolor sit
-                        amet.</td>
-                    <td data-title="Kode">DEF</td>
-                    <td data-title="Status"><span
-                            class="badge badge-small badge-success">Afsluttet</span>
-                    </td>
-
-                </tr>
-
-                <tr>
-                    <td data-title="Sagsnummer"><a href="#">4567890</a>
-                    </td>
-                    <td data-title="Sidst ændret">01.01.2021</td>
-                    <td data-title="Sag forventes afsluttet">01.01.2021
-                    </td>
-                    <td data-title="Beskrivelse">Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit, sed do eiusmod.
-                    </td>
-                    <td data-title="Kode">GHI</td>
-                    <td data-title="Status"><span
-                            class="badge badge-small badge-warning">Under
-                            behandling</span></td>
-
-                </tr>
-
-                <tr>
-                    <td data-title="Sagsnummer"><a href="#">56789000</a>
-                    </td>
-                    <td data-title="Sidst ændret">01.01.2021</td>
-                    <td data-title="Sag forventes afsluttet">01.01.2021
-                    </td>
-                    <td data-title="Beskrivelse">Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit.</td>
-                    <td data-title="Kode">JKL</td>
-                    <td data-title="Status"><span
-                            class="badge badge-small badge-warning">Under
-                            behandling</span></td>
                 </tr>
                 <tr>
-                    <td data-title="Sagsnummer"><a href="#">3456789</a>
+                    <td><a href="#">3456789</a></td>
+                    <td>01.01.2021</td>
+                    <td>01.01.2021</td>
+                    <td>Kort sagsbeskrivelse.</td>
+                    <td>DEF</td>
+                    <td><span class="badge badge-small badge-success">Afsluttet</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#">4567890</a></td>
+                    <td>01.01.2021</td>
+                    <td>01.01.2021</td>
+                    <td>Her står en længere og mere detaljeret beskrivelse af sagen.</td>
+                    <td>GHI</td>
+                    <td><span class="badge badge-small badge-warning">Under behandling</span>
                     </td>
-                    <td data-title="Sidst ændret">01.01.2021</td>
-                    <td data-title="Sag forventes afsluttet">01.01.2021
+                </tr>
+                <tr>
+                    <td><a href="#">56789000</a></td>
+                    <td>01.01.2021</td>
+                    <td>01.01.2021</td>
+                    <td>Her står en længere og mere detaljeret beskrivelse af sagen.</td>
+                    <td>JKL</td>
+                    <td><span class="badge badge-small badge-warning">Under behandling</span>
                     </td>
-                    <td data-title="Beskrivelse">Lorem ipsum dolor sit
-                        amet.</td>
-                    <td data-title="Kode">MNO</td>
-                    <td data-title="Status"><span
-                            class="badge badge-small badge-warning">Under
-                            behandling</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#">3456789</a></td>
+                    <td>01.01.2021</td>
+                    <td>01.01.2021</td>
+                    <td>Kort sagsbeskrivelse.</td>
+                    <td>MNO</td>
+                    <td><span class="badge badge-small badge-warning">Under behandling</span>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </div>
 
     <details class="details">
-        <summary class="details-summary">Der er en sag, jeg ikke kan finde
-        </summary>
+        <summary class="details-summary">Der er en sag, jeg ikke kan finde</summary>
         <div class="details-text">
-            <p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at
-                libero. Integer euismod augue leo. </p>
-            <p>Morbi faucibus nunc tortor, condimentum vulputate urna
-                sollicitudin non. Nam commodo nulla metus. Phasellus varius
-                eu dolor nec ultricies. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Mauris ac leo finibus, blandit
+            <p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer
+                euismod augue leo. </p>
+            <p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam
+                commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit
                 velit nec, consequat est. Nulla facilisi.</p><button
-                class='button button-secondary'>Kontakt
-                &lt;Myndigheden&gt;</button>
+                class='button button-secondary'>Kontakt &lt;Myndigheden&gt;</button>
         </div>
     </details>
 
     <h2>Anmod om adgang</h2>
-    <p>Du kan anmode om at få adgang til sager, du endnu ikke kan se her.
-    </p>
+    <p>Du kan anmode om at få adgang til sager, du endnu ikke kan se her.</p>
     <button class="button button-secondary d-print-none">
         Anmod om adgang
     </button>
+
     <h3>Anmodninger, der afventer svar</h3>
-    <div
-        class="w-percent-xs-100 w-percent-sm-60 w-percent-md-50 w-percent-xl-30">
+    <div class="w-percent-xs-100 w-percent-sm-60 w-percent-md-50 w-percent-xl-30">
 
         <div class="card">
             <div class="card-header">
@@ -278,15 +247,13 @@
             </div>
 
             <div class="card-content">
-                <span class='badge badge-small badge-info ml-5'>Afventer
-                    godkendelse</span>
+                <strong class='badge badge-small badge-info ml-5'>Afventer godkendelse</strong>
             </div>
 
             <div class="card-footer card-action">
 
                 <div class="action-buttons">
-                    <button class="button button-tertiary">Annuller
-                        anmodning</button>
+                    <button class="button button-tertiary">Annuller anmodning</button>
                 </div>
 
             </div>
@@ -298,9 +265,10 @@
 
 <footer>
 
-    <a class="back-to-top-button button button-tertiary d-print-none"
-        href="#top"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
-        <span class="d-none d-md-inline-block">Til toppen</span>
+    <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+        <span class="sr-only">Til toppen af siden</span>
+        <span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
     </a>
 
     <div class="footer">
@@ -310,18 +278,15 @@
                     <section>
                         <div class=" align-text-left ">
                             <h2 class="h5 mb-4">Ansvarlig myndighed</h2>
-                            <p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø
-                            </p>
+                            <p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>
 
                         </div>
                     </section>
                 </div>
-                <div
-                    class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
+                <div class="col-12 col-sm-12 col-md-3 footer-col d-print-none">
                     <section>
                         <div class=" align-text-left ">
-                            <h2 class="h5 mb-4">Webtilgængelighed og
-                                cookies</h2>
+                            <h2 class="h5 mb-4">Webtilgængelighed og cookies</h2>
 
                             <ul class=" mt-0 mb-1 nobullet-list">
 
@@ -330,8 +295,8 @@
                                 </li>
 
                                 <li class=""><a href="#"
-                                        class="function-link">Privatlivspolitik
-                                        og cookies</a></li>
+                                        class="function-link">Privatlivspolitik og cookies</a>
+                                </li>
 
                             </ul>
 
@@ -342,19 +307,16 @@
                     <section>
                         <div class=" align-text-left ">
                             <h2 class="h5 mb-4">Links</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Suspendisse mattis, felis
-                                quis vestibulum aliquet, elit ex rhoncus.
-                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse mattis, felis quis vestibulum aliquet, elit ex
+                                rhoncus. </p>
 
                             <ul class=" d-print-none mt-0 nobullet-list">
 
-                                <li class=""><a href="#"
-                                        class="function-link">Læs lidt om
+                                <li class=""><a href="#" class="function-link">Læs lidt om
                                         dit</a></li>
 
-                                <li class=""><a href="#"
-                                        class="function-link">Her er også
+                                <li class=""><a href="#" class="function-link">Her er også
                                         lidt om dat</a></li>
 
                             </ul>
@@ -383,26 +345,24 @@
 
 </footer>
 
-<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-contact-title">
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="modal-contact-heading">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="modal-title" id="modal-id-1-title">
+            <h2 class="modal-title" id="modal-contact-heading">
                 Kontakt
             </h2>
             <button class="modal-close function-link"
                 data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
+
             <div class="alert alert-warning" role="alert">
                 <div class="alert-body">
-                    <h3 class="alert-heading">Vi har noget information af
-                        advarende karakter</h3>
-                    <p class="alert-text">Noget tekst, der forklarer det af
-                        advarende karakter, som brugeren bør vide inden
-                        denne ringer eller skriver. Noget tekst, der
-                        forklarer det af advarende karakter, som brugeren
-                        bør vide inden denne ringer eller skriver.</p>
+                    <h3 class="alert-heading">Vi har noget information af advarende karakter
+                    </h3>
+                    <p class="alert-text">Noget tekst, der forklarer det af advarende
+                        karakter, som brugeren bør vide inden denne ringer eller skriver.</p>
                 </div>
             </div>
             <h3>En form for support</h3>
@@ -411,22 +371,22 @@
                 <li>En ting som denne</li>
                 <li>Et andet emne som dette</li>
             </ul>
-            <p>Kan du ringe direkte til: 12 34 56 78</p>
+            <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
             <p>Telefonen er åben:</p>
-            <p class="m-0">
-                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                kl. 9-17</p>
-            <p class="m-0">
-                Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl.
-                9-17</p>
-            <p class="m-0">
-                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                kl. kl. 9-14</p>
+            <p class='m-0'>
+                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class='d-inline-block'>kl. 9-17</span></p>
+            <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class='d-inline-block'>kl. 9-17</span></p>
+            <p class='m-0'>
+                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class='d-inline-block'>kl. 9-14</span></p>
         </div>
 
         <div class="modal-footer">
-            <button class="button button-secondary"
-                data-modal-close>Luk</button>
+            <button class="button button-secondary" data-modal-close>
+                Luk
+            </button>
         </div>
 
     </div>

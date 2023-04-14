@@ -34,10 +34,12 @@ subnav:
 ### HTML Struktur
 {% include code/syntax.html component="alert" %}
 
-Anvend ARIA `role="alert"` til at øge tilgængeligheden ved at markere beskeden som noget der skal annonceres gennem eventuelle hjælpeteknologier. Mærk beskeden med `role="alertdialog"`, hvis den indeholder interaktivitet for brugeren.
+Anvend `role="alert"` til beskeder, der skal læses højt af en skærmlæser med det samme, hvis indholdet ændrer sig. Dette kan for eksempel være en besked, der bliver synlig efter at have været skjult eller hvor indholdet ændrer sig. Advarsler og fejlbeskeder bør altid være markeret med `role="alert"`.
+
+Hvis beskeden indeholder en `alert-heading`, sørg da for at benytte et html-element, der passer ind i konteksten på siden. Dette vil som regel være en overskrift, for eksempel `<h3>`, eller et `<strong>`-element.
 
 ### Javascript
-Man kan bruge nedenstående JavaScript for at sætte events på luk knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk knappen.
+Man kan bruge nedenstående JavaScript for at sætte events på luk-knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk-knappen.
 Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
@@ -46,11 +48,29 @@ new DKFDS.Alert(document.getElementById('ALERT-ID')).init();
 
 #### Events
 
-{:.table}
-| Event key           | Element                   | Beskrivelse                                                                                                                                         |
-|---------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| fds.alert.show      | `div.alert`               | Når en besked bliver vist med `DKFDS.Alert(document.getElementById('ALERT-ID')).show();` bliver `fds.alert.show` udløst på beskedelementet                            |
-| fds.alert.hide      | `div.alert`               | Når en besked bliver skjult med `DKFDS.Alert(document.getElementById('ALERT-ID')).hide();` eller der trykkes på luk bliver `fds.alert.hide` udløst på beskedelementet |
+<div class="table--responsive-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Event key</th>
+        <th scope="col">Element</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fds.alert.show</td>
+        <td><code>div.alert</code></td>
+        <td>Når en besked bliver vist med <code>DKFDS.Alert(document.getElementById('ALERT-ID')).show();</code> bliver <code>fds.alert.show</code> udløst på beskedelementet</td>
+      </tr>
+      <tr>
+        <td>fds.alert.hide</td>
+        <td><code>div.alert</code></td>
+        <td>Når en besked bliver skjult med <code>DKFDS.Alert(document.getElementById('ALERT-ID')).hide();</code> eller der trykkes på luk bliver <code>fds.alert.hide</code> udløst på beskedelementet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Varianter
 
@@ -68,25 +88,25 @@ Succesbesked er grøn, og defineres med klassen `alert-success`.
 {% include code/syntax.html component="alert-success" link="true" %}
 
 #### Advarsel
-Besked med advarsel er orange, og defineres med klassen `alert-warning`.
-
-Bemærk, at attributten `role="alert"` bør tilføjes i dette tilfælde for at øge tilgængeligheden. Uanset, hvor fokus er på siden, vil beskeden da blive læst op med det samme.
+Besked med advarsel er gul, og defineres med klassen `alert-warning`.
 
 {% include code/syntax.html component="alert-warning" link="true" %}
 
 #### Fejl
 Besked med fejl er rød, og defineres med klassen `alert-error`.
 
-Bemærk, at attributten `role="alert"` bør tilføjes i dette tilfælde for at øge tilgængeligheden. Uanset, hvor fokus er på siden, vil beskeden da blive læst op med det samme.
-
 {% include code/syntax.html component="alert-error" link="true" %}
 
 {:#beskeder-med-ikon}
 ### Ikon
+Defineres med klassen `alert--show-icon`.
+
 {% include code/syntax.html component="alerts-icons" link="true"%}
 
 {:#paragrafbredde}
 ### Paragrafbredde
+Defineres med klassen `alert--paragraph`.
+
 {% include code/syntax.html component="alert-paragraph" link="true" %}
 
 {:#luk-knap}

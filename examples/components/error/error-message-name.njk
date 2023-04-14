@@ -1,2 +1,10 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(textinput_example)}}
+
+{{
+    textinput({
+        "id": "fullname-error-example",
+        "name": "fullname-error-example",
+        "label": "Hvad er dit fulde navn?",
+        "errorMessage": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen"
+    })
+}}

@@ -1,0 +1,194 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
+{% from "components/footers/footer.njk" import footer as footer %}
+
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/table/table.njk" import table as table %}
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
+
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Registrer et eller andet"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span class="d-none d-lg-inline-block mr-2">· </span><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
+
+{% block header %}
+<header class="header">
+    <div id="top"></div>
+    {{ skiplink() }}
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+
+    <div class="overlay"></div>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
+
+        <div class="navbar">
+            <div class="navbar-inner navbar-context-actions container">
+                <div class="nav-actions">
+                    <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+{% endblock %}
+
+{% block body %}
+<div class="container page-container pt-5 pt-lg-0">
+    <div class="row">
+        <aside class="col-12 col-lg-3 sidebar-col">
+            {{ overflow_stepguide(trinindikator_data) }}
+        </aside>
+        <main class="col-12 col-lg-9" id="main-content">
+            <div><a href="#" class="back-link">Tilbage</a></div>
+            {{ 
+                alert({
+                    "variant": "error",
+                    "classes": "mt-0 mb-8",
+                    "headingLevel": "h2",
+                    "heading": "Der er problemer på et eller flere af trinene i formularen",
+                    "contentContainer": false,
+                    "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#\">Gå til trin 3: Vedhæft dokumenter</a></li></ul>",
+                    "attributes": "data-module=\"error-summary\""
+                }) 
+            }}
+            <h1 class="mb-6">Opsummering</h1>
+            <h2>Vælg personer</h2>
+            {{
+                table({
+                    "borderless": true,
+                    "responsive": true,
+                    "classes": {
+                        "inner": "w-percent-md-70 d-print-table"
+                    },
+                    "thead": [
+                        { "headerContent": "Person" },
+                        { "headerContent": "CPR-nummer" },
+                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "Jens Jensen" },
+                            { "content": "123456-7890" },
+                            { "classes": "align-text-md-right d-print-none" }
+                        ],
+                        [
+                            { "content": "Keld Hedagaardsen" },
+                            { "content": "230495-1111" },
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ],
+                        [
+                            { "content": "Anni Hedagaardsen" },
+                            { "content": "120394-2222" },
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ]
+                    ]
+                })
+            }}
+            
+            <h2>Vælg noget mere</h2>
+            {{
+                table({
+                    "borderless": true,
+                    "responsive": true,
+                    "classes": {
+                        "inner": "w-percent-md-70 d-print-table"
+                    },
+                    "thead": [
+                        { "headerContent": "Nummer" },
+                        { "headerContent": "Dato" },
+                        { "headerContent": "Information" },
+                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "123456789" },
+                            { "content": "01.01.2021" },
+                            { "content": "Lorem ipsum dolor sit" },
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ],
+                        [
+                            { "content": "123456789" },
+                            { "content": "01.01.2021" },
+                            { "content": "Lorem ipsum dolor sit" },
+                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ]
+                    ]
+                })
+            }}
+
+            <h2>Tidligere registrering</h2>
+            {{ structured_list(list_tidligere_registrering) }}
+
+            <h2>Kontaktoplysninger</h2>
+            {{ structured_list(list_kontaktoplysninger) }}
+            
+            <form novalidate method="post">
+                <input type="hidden" name="entries-confirmed" value="true">
+                {{ button(button_next) }}
+            </form>
+        </main>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer -%}
+{{ footer(footer_data) }}
+{% endblock %}
+
+{{
+    modal({
+        "id": "modal-contact",
+        "heading": "Kontakt",
+        "content": modal_content,
+        "forcedAction": false,
+        "actions": modal_actions
+    })
+}}

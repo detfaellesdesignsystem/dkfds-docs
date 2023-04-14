@@ -1,8 +1,0 @@
-{
-  "alert_example": {
-        "classes": "alert-info",
-        "icon": true,
-        "heading": "Informativ besked",
-        "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet."
-      }
-}

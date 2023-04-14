@@ -1,135 +1,177 @@
 {
+    "alert_modal_warning": {
+        "variant": "warning",
+        "headingLevel": "h3",
+        "heading": "Vi har noget information af advarende karakter",
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver."
+    },
     "portal_header_data": {
         "compact": true,
         "user": {
             "name": "Anders Andersen"
         },
         "logolink": {
-            "sronly": "Portalnavn",
-            "href" : "#"
+            "label": "Portalnavn",
+            "href": "#"
         }
-      },
-    "solution_header_data": {
-        "classes": "header-end",
-        "title": {
-            "href": "#",
-            "text": "Sagsunivers"
-        },
-        "solutionInfo": {
-          "hideOnPrint": false
-        },
-        "authority": {
-            "name": "Myndighedsnavn",
-            "text": "Support: 12 34 56 78 <span class='d-print-none'>· <a href=\"javascript:void(0);\" data-module=\"modal\" data-target=\"modal-contact\" class=\"function-link d-inline-block\"><svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#card-text\"></use></svg>Kontakt</a></span>"
-          }
     },
-    "modal_data": {
-        "id": "modal-contact",
-        "headingID": "modal-contact-title",
-        "heading": "Kontakt",
-        "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
-        "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
-      },
-      "footer_data":{
+    "footer_data": {
         "topButton": {
-          "topLink": "#top"
+            "href": "#top"
         },
         "languageSwitcher": {
-          "ariaLabel": "Vælg sprog fra listen",
-          "firstAriaLabel": "Valgt sprog: Dansk",
-          "languages": [
-            {"code": "da", "name": "Dansk"},
-            {"code": "en-GB", "name": "English"},
-            {"code": "de", "name": "Deutsch"},
-            {"code": "kl", "name": "Kalaallisut"},
-            {"code": "pl", "name": "Polski"},
-            {"code": "se", "name": "Svenska"}
-          ]
+            "ariaLabel": "Vælg sprog fra listen",
+            "firstAriaLabel": "Valgt sprog: Dansk",
+            "languages": [
+                {
+                    "code": "da",
+                    "name": "Dansk"
+                },
+                {
+                    "code": "en-GB",
+                    "name": "English"
+                },
+                {
+                    "code": "de",
+                    "name": "Deutsch"
+                },
+                {
+                    "code": "kl",
+                    "name": "Kalaallisut"
+                },
+                {
+                    "code": "pl",
+                    "name": "Polski"
+                },
+                {
+                    "code": "se",
+                    "name": "Svenska"
+                }
+            ]
         },
         "columns": [
-          {
-            "columnSize": 3,
-            "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
-          },
-          {
-            "columnSize": 3,
-            "classes": "d-print-none",
-            "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
-            "lists": [
-              {
-                "inline": false,
-                "classes": "mt-0 mb-1 nobullet-list",
-                "items": [
-                  {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"},
-                  {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"}
+            {
+                "columnSize": 3,
+                "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
+            },
+            {
+                "columnSize": 3,
+                "classes": "d-print-none",
+                "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "mt-0 mb-1 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"
+                            },
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"
+                            }
+                        ]
+                    }
                 ]
-              }
-            ]
-          },
-          {
-            "columnSize": 6,
-            "textAlignRight": false,
-            "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
-            "lists": [
-              {
-                "inline": false,
-                "classes": "d-print-none mt-0 nobullet-list",
-                "items": [
-                  {"content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"},
-                  {"content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"}
+            },
+            {
+                "columnSize": 6,
+                "textAlignRight": false,
+                "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "d-print-none mt-0 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"
+                            },
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"
+                            }
+                        ]
+                    }
                 ]
-              }
-            ]
-          }
+            }
         ]
-      },
-      "alert_afslutning": {
-        "classes": "alert-info",
+    },
+    "alert_afslutning": {
+        "variant": "info",
+        "headingLevel": "h2",
         "heading": "Sagen forventes afsluttet",
         "content": "Maj 2021",
-        "icon": true,
-        "role": "alert"
-      },
-      "badge_under_behandling": {
-        "classes": "badge-small badge-warning",
-        "text": "Under behandling"
-      },
-      "button_myndigheden": {
+        "icon": true
+    },
+    "list_sagsinfo": {
+        "breakpoint": "sm",
+        "classes": {
+            "outer": "mt-7",
+            "table": "w-percent-md-40"
+        },
+        "items": [
+            {
+                "label": "Navn",
+                "value": "Lone Hansen"
+            },
+            {
+                "label": "Sag sidst ændret",
+                "value": "04-01-2019"
+            },
+            {
+                "label": "Kode",
+                "value": "ABC"
+            },
+            {
+                "label": "Beskrivelse",
+                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+            }
+        ]
+    },
+    "badge_under_behandling": {
+        "text": "Under behandling",
+        "variant": {
+            "size": "small",
+            "status": "warning"
+        }
+    },
+    "button_myndigheden": {
         "text": "Skriv til <Myndigheden>",
-        "classes": "tertiary d-print-none"
-      },
-      "button_adgang": {
+        "variant": "tertiary",
+        "classes": { "button": "d-print-none" }
+    },
+    "button_adgang": {
         "text": "Giv adgang",
-        "classes": "tertiary d-print-none"
-      },
-      "button_fuldmagt": {
+        "variant": "tertiary",
+        "classes": { "button": "d-print-none" }
+    },
+    "button_fuldmagt": {
         "text": "Giv fuldmagt",
-        "classes": "tertiary d-print-none"
-      },
-      "breadcrumbs_data_desktop": {
+        "variant": "tertiary",
+        "classes": { "button": "d-print-none" }
+    },
+    "breadcrumbs_data_desktop": {
         "classes": "",
         "aria-label": "Brødkrumme",
         "items": [
-          {
-            "text": "Find sag",
-            "href": "/pages/eksempler/sagsoversigt/find-sag/"
-          },
-          {
-            "text": "Sagsnr. 123456789"
-          }
+            {
+                "text": "Find sag",
+                "href": "/pages/eksempler/sagsoversigt/find-sag/"
+            },
+            {
+                "text": "Sagsnr. 123456789"
+            }
         ]
-      },
-      "breadcrumbs_data_mobile": {
+    },
+    "breadcrumbs_data_mobile": {
         "classes": "container d-lg-none mt-3",
         "aria-label": "Brødkrumme",
         "items": [
-          {
-            "text": "Find sag",
-            "href": "/pages/eksempler/sagsoversigt/find-sag/"
-          },
-          {
-            "text": "Sagsnr. 123456789"
-          }
+            {
+                "text": "Find sag",
+                "href": "/pages/eksempler/sagsoversigt/find-sag/"
+            },
+            {
+                "text": "Sagsnr. 123456789"
+            }
         ]
-      }
+    }
 }

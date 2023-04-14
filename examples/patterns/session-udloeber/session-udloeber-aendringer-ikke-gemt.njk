@@ -1,5 +1,36 @@
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/buttons/buttons.njk" import button as button %}
-{{modal(modal_data)}}
 
-{{ button(button_example) }}
+{% set modal_content = "<p>Din session udløber snart. Du logges automatisk af om <span role='timer'><strong class='bold session-timeout-countdown-minutes'>5 min.</strong><strong class='bold session-timeout-countdown-seconds'></strong></span></p><p><strong>Ændringer, der ikke er gemt, vil gå tabt.</strong></p>" %}
+
+{% set modal_actions = 
+    button({
+        "variant": "primary",
+        "text": "Forbliv logget på",
+        "attributes": "data-modal-close"
+    })
+    +
+    button({
+        "variant": "secondary",
+        "text": "Log af",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{{
+    modal({
+        "id": "example-sesssion-udloeber-ikke-gemt",
+        "heading": "Du er ved at blive logget af",
+        "content": modal_content,
+        "forcedAction": true,
+        "actions": modal_actions
+    })
+}}
+
+{{ 
+    button({
+        "text": "Åbn modal",
+        "variant": "tertiary",
+        "attributes": "data-module=\"modal\" data-target=\"example-sesssion-udloeber-ikke-gemt\" aria-haspopup=\"dialog\""
+    }) 
+}}

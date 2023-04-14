@@ -1,47 +1,35 @@
 <div class="form-group form-error">
-    <fieldset aria-describedby="example-radiobutton-error">
-        <legend class="h5">Sagen handler om</legend>
-        <span class="form-error-message"
-            id="example-radiobutton-error"><span
-                class="sr-only">Fejl:</span> Vælg hvad sagen handler
-            om</span>
-        <ul class="nobullet-list">
-            <li>
-                <div class="form-group-radio">
-                    <input id="sagen-omhandler-ulykkesforsikring"
-                        type="radio" name="sagen-omhandler"
-                        value="ulykkesforsikring"
-                        class="form-radio radio-large " />
-                    <label for="sagen-omhandler-ulykkesforsikring"
-                        id="form-label-sagen-omhandler-ulykkesforsikring"
-                        class="">Ulykkesforsikring (ASL §81) </label>
+    <fieldset role="radiogroup" aria-describedby="radiogroup-error-error "
+        aria-invalid="true">
+        <legend class="form-label">
+            Sagen handler om
+        </legend>
 
-                </div>
-            </li>
-            <li>
-                <div class="form-group-radio">
-                    <input id="sagen-omhandler-erstatningsansvar"
-                        type="radio" name="sagen-omhandler"
-                        value="erstatningsansvar"
-                        class="form-radio radio-large " />
-                    <label for="sagen-omhandler-erstatningsansvar"
-                        id="form-label-sagen-omhandler-erstatningsansvar"
-                        class="">Erstatningsansvar (ASL §10) </label>
+        <span class="form-error-message" id="radiogroup-error-error">
+            <span class="sr-only">Fejl: </span>Vælg hvad sagen handler om
+        </span>
 
-                </div>
-            </li>
-            <li>
-                <div class="form-group-radio">
-                    <input id="sagen-omhandler-forsikringsselskab"
-                        type="radio" name="sagen-omhandler"
-                        value="forsikringsselskab"
-                        class="form-radio radio-large " />
-                    <label for="sagen-omhandler-forsikringsselskab"
-                        id="form-label-sagen-omhandler-forsikringsselskab"
-                        class="">Forsikringsselskab (ASL §10) </label>
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option1" name="sagen-omhandler"
+                class="form-radio radio-large" value="ulykkesforsikring">
+            <label class="form-label" for="radiogroup-error-option1">Ulykkesforsikring</label>
 
-                </div>
-            </li>
-        </ul>
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option2" name="sagen-omhandler"
+                class="form-radio radio-large" value="erstatningsansvar">
+            <label class="form-label" for="radiogroup-error-option2">Erstatningsansvar</label>
+
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-error-option3" name="sagen-omhandler"
+                class="form-radio radio-large" value="forsikringsselskab">
+            <label class="form-label"
+                for="radiogroup-error-option3">Forsikringsselskab</label>
+
+        </div>
+
     </fieldset>
 </div>

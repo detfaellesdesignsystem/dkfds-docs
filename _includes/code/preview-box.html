@@ -1,5 +1,5 @@
 {% if include.component and include.component != '' %}
-<div class="component-preview {{ include.classes }} component-preview-{{ include.component | slugify }}" aria-label="{{ include.title }}">
+<div class="component-preview {{ include.classes }} component-preview-{{ include.component | slugify }}">
     {% if include.link != false %}
     <div class="component-link px-4 py-4">
         {% if include.url %}
@@ -9,10 +9,15 @@
         {% endif %}
     </div>
     {% endif %}
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
+    {% if include.title %}
+    <div class="sr-only">{{ include.title }}</div>
+    {% else %}
+    <div class="sr-only">Eksempel</div>
+    {% endif %}
+    <div class="component-example px-4 py-4">
         {% if include.component contains "tringuide" %}
-        <div class="row mx-0">
-        <aside class="sidebar-col">
+        <div class="row">
+        <aside class="col-12">
         {% endif %}
         {% include code/components/{{ include.component }}.html %}
         {% if include.component contains "tringuide" %}

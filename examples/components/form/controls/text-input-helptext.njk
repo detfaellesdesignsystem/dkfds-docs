@@ -1,2 +1,10 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(params)}}
+
+{{
+    textinput({
+        "id": "input-type-help-text",
+        "name": "input-type-help-text",
+        "label": "Inputfelt med label og hjælpetekst",
+        "helptext": "Fx 12345678"
+    })
+}}

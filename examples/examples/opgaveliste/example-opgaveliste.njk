@@ -1,0 +1,155 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+{% from "components/footers/footer.njk" import footer as footer %}
+{% from "components/badge/badges.njk" import badge as badge %}
+
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel står her"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span class="d-none d-lg-inline-block mr-2">· </span><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
+
+{% block header %}
+<header class="header">
+    <div id="top"></div>
+    {{ skiplink() }}
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+    <div class="overlay"></div>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
+    </nav>
+</header>
+{% endblock %}
+
+
+{% block body %}
+<main class="container page-container" id="main-content">
+
+    <h1>Opgaveliste</h1>
+
+    <h2 class="h3 mb-md-0">1. Check før du starter</h2>
+    <div class="w-percent-md-60 mt-4">
+        <div class="row row-bordered no-gutters">
+            <div class="col-md-8">
+                <a href="#">Check berettigelse</a>
+            </div>
+            <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
+                {{ badge(badge_gennemfoert) }}
+            </div>
+        </div>
+        <div class="row row-bordered no-gutters">
+            <div class="col-md-8">
+                <a href="#">Læs deklarationen</a>
+            </div>
+            <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
+                {{ badge(badge_gennemfoert) }}
+            </div>
+        </div>
+    </div>
+
+    <h2 class="h3 mb-md-0">2. Forbered ansøgning</h2>
+    <div class="w-percent-md-60 mt-4">
+        <div class="row row-bordered no-gutters">
+            <div class="col-md-8">
+                <a href="#">Virksomhedsoplysninger</a>
+            </div>
+            <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
+                {{ badge(badge_gennemfoert) }}
+            </div>
+        </div>
+        <div class="row row-bordered no-gutters">
+            <div class="col-md-8">
+                <a href="#">Kontaktoplysninger</a>
+            </div>
+            <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
+                {{ badge(badge_gennemfoert) }}
+            </div>
+        </div>
+        <div class="row row-bordered no-gutters">
+            <div class="col-md-8">
+                <a href="#">Liste over domfældelser</a>
+            </div>
+            <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
+                {{ badge(badge_igang) }}
+            </div>
+        </div>
+        <div class="row row-bordered no-gutters">
+            <div class="col-md-8">
+                <a href="#">Fremsæt finansielle beviser</a>
+            </div>
+            <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
+                {{ badge(badge_ikke_startet) }}
+            </div>
+        </div>
+        <div class="row row-bordered no-gutters">
+            <div class="col-md-8">
+                <a href="#">Giv medicinoplysninger</a>
+            </div>
+            <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
+                {{ badge(badge_gennemfoert) }}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block footer -%}
+{{ footer(footer_data) }}
+{% endblock %}
+
+{{
+    modal({
+        "id": "modal-contact",
+        "heading": "Kontakt",
+        "content": modal_content,
+        "forcedAction": false,
+        "actions": modal_actions
+    })
+}}

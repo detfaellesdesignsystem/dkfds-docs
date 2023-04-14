@@ -1,5 +1,38 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
-{% for item in alert_example.items -%}
-{{ alert(item) }}
-{%- endfor %}
+{{ 
+    alert({
+        "variant": "info",
+        "headingLevel": "h3",
+        "heading": "Informativ besked - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "icon": true
+    }) 
+}}
+{{ 
+    alert({
+        "variant": "success",
+        "headingLevel": "h3",
+        "heading": "Succesmeddelelse - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "icon": true
+    }) 
+}}
+{{ 
+    alert({
+        "variant": "warning",
+        "headingLevel": "h3",
+        "heading": "Advarsel - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "icon": true
+    }) 
+}}
+{{ 
+    alert({
+        "variant": "error",
+        "headingLevel": "h3",
+        "heading": "Fejlbesked - med ikon",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "icon": true
+    }) 
+}}

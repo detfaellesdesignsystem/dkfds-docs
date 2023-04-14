@@ -1,2 +1,12 @@
 {% from "components/toast/toast.njk" import toast as toast %}
-{{toast(notification_data)}}
+
+{{
+    toast({
+        "id": "notification-info",
+        "variant": "info",
+        "srVariant": "Information",
+        "heading": "Du har fået en besked",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "show": true
+    })
+}}

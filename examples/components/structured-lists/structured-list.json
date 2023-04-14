@@ -1,20 +1,26 @@
 {
-    "list":  [
-        {
-            "label": "Navn",
-            "value": "Kirsten Mønster Jensen"
+    "structured_list_example": {
+        "breakpoint": "sm",
+        "classes": { 
+            "label": "w-percent-md-30"
         },
-        {
-            "label": "Sagsnummer",
-            "value": "123.456"
-        },
-        {
-            "label": "Dato",
-            "value": "04/05/2011"
-        },
-        {
-            "label": "Beskrivelse",
-            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-        }
-    ]
+        "items":  [
+            {
+                "label": "Navn",
+                "value": "Kirsten Mønster Jensen"
+            },
+            {
+                "label": "Sagsnummer",
+                "value": "123.456"
+            },
+            {
+                "label": "Dato",
+                "value": "04/05/2011"
+            },
+            {
+                "label": "Beskrivelse",
+                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            }
+        ]
+    }
 }

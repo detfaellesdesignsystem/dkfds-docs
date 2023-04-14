@@ -38,9 +38,9 @@
 
 <!-- Preload fonts -->
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style" />
-<link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style" />
-<link rel="preload" href="/assets/js/theme.js" as="script" />
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
+<link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
   body {
@@ -48,10 +48,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css" />
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css">
 </noscript>
 
   </head>
@@ -95,7 +95,6 @@
         <symbol id="create-new-folder" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm0 12H4V6h5.17l2 2H20v10zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"/></symbol>
         <symbol id="credit-card" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></symbol>
         <symbol id="database" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7V17C4 19.21 7.59 21 12 21S20 19.21 20 17V7C20 4.79 16.42 3 12 3M18 17C18 17.5 15.87 19 12 19S6 17.5 6 17V14.77C7.61 15.55 9.72 16 12 16S16.39 15.55 18 14.77V17M18 12.45C16.7 13.4 14.42 14 12 14C9.58 14 7.3 13.4 6 12.45V9.64C7.47 10.47 9.61 11 12 11C14.39 11 16.53 10.47 18 9.64V12.45M12 9C8.13 9 6 7.5 6 7S8.13 5 12 5C15.87 5 18 6.5 18 7S15.87 9 12 9Z" /></symbol>
-        <symbol id="delete" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></symbol>
         <symbol id="desktop-windows" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></symbol>
         <symbol id="domain" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></symbol>
         <symbol id="done" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></symbol>
@@ -225,15 +224,14 @@
         <div class="solution-heading d-flex align-items-center">
             <a href="/">Det Fælles Designsystem</a>
         </div>
-        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
       </div>
 
       
       <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-        <form method="get" action="/search/" id="mobileSearchForm">
+        <form method="get" action="/search/" id="mobileSearchForm" role="search">
           <div class="form-group search">
-            <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required aria-label="Søg">
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -249,7 +247,7 @@
         <!--3A: Main navigation-->
 
         <div class="navbar-inner container">
-          <ul class="nav-primary" role="menu">
+          <ul class="nav-primary">
             
 
   
@@ -263,9 +261,9 @@
 
 
 
-<li class="current" role="none">
+<li class="current">
 <!-- Do not render subnavs-->
-  <a href="/design/" role="menuitem" aria-current="page"
+  <a href="/design/" aria-current="page"
     class="nav-link">
     <span>Design</span>
   </a>
@@ -284,9 +282,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/komponenter/" role="menuitem" 
+  <a href="/komponenter/" 
     class="nav-link">
     <span>Komponenter</span>
   </a>
@@ -305,9 +303,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/eksempler/" role="menuitem" 
+  <a href="/eksempler/" 
     class="nav-link">
     <span>Eksempler</span>
   </a>
@@ -326,9 +324,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/kode/" role="menuitem" 
+  <a href="/kode/" 
     class="nav-link">
     <span>Kode</span>
   </a>
@@ -347,9 +345,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/krav/" role="menuitem" 
+  <a href="/krav/" 
     class="nav-link">
     <span>Krav</span>
   </a>
@@ -368,9 +366,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/faellesskab/" role="menuitem" 
+  <a href="/faellesskab/" 
     class="nav-link">
     <span>Fællesskab</span>
   </a>
@@ -382,10 +380,9 @@
           </ul>
           
           <div class="search-form">
-            <form method="get" action="/search/" id="menuSearchForm">
+            <form method="get" action="/search/" id="menuSearchForm" role="search">
               <div class="form-group search">
-                <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <input class="form-input input-char-27" id="search-input" name="q" type="search" required aria-label="Søg">
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
@@ -398,14 +395,14 @@
     <!-- collapsible nav end-->
 
     <!-- Mobile main menu-->
-    <nav class="nav d-lg-none" aria-label="Mobil hovedmenu">
-      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+    <nav class="nav d-lg-none">
+      <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
 
         <div class="navbar-inner">
-          <ul class="nav-primary" role="menu">
+          <ul class="nav-primary">
             
 
   
@@ -419,7 +416,7 @@
 
 
 
-<li class="current" role="none">
+<li class="current">
 <!--Do render subnavs-->
 
   
@@ -429,22 +426,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="true"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="true"  >
         <span>Design</span>
       </button>
-      <div role="menu" aria-label="Design" class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="false">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="false">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/" role="menuitem"  class="nav-link">
+    <a href="/design/"  class="nav-link">
         Design<span class="helptext"> (overblik)</span>
       </a>
      
@@ -461,14 +458,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/farver/" role="menuitem"  class="nav-link">
+    <a href="/design/farver/"  class="nav-link">
         Farver
       </a>
      
@@ -481,7 +478,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -494,22 +491,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="true"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="true"  >
           <span>Typografi</span>
         </button>
-        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="false">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="false">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/typografi/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/"  class="nav-link">
         Typografi<span class="helptext"> (overblik)</span>
       </a>
      
@@ -526,14 +523,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/typografi/fonte/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/fonte/"  class="nav-link">
         Fonte
       </a>
      
@@ -546,14 +543,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/typografi/overskrifter/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/overskrifter/"  class="nav-link">
         Overskrifter
       </a>
      
@@ -566,14 +563,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/typografi/felt-tabel-overskrifter/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/felt-tabel-overskrifter/"  class="nav-link">
         Felt- og tabeloverskrifter
       </a>
      
@@ -586,14 +583,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/typografi/tekst/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/tekst/"  class="nav-link">
         Tekst
       </a>
      
@@ -606,14 +603,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/typografi/links/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/links/"  class="nav-link">
         Links
       </a>
      
@@ -626,14 +623,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/typografi/lister/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/lister/"  class="nav-link">
         Lister
       </a>
      
@@ -656,14 +653,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/borders/" role="menuitem"  class="nav-link">
+    <a href="/design/borders/"  class="nav-link">
         Hjørner, streger, skygger
       </a>
      
@@ -676,14 +673,14 @@
     
 
 
-<li class="current active " role="none">
+<li class="current active ">
 
   
 
 
   
     
-    <a href="/design/ikoner/" role="menuitem" aria-current="page" class="nav-link">
+    <a href="/design/ikoner/" aria-current="page" class="nav-link">
         Ikoner
       </a>
      
@@ -696,14 +693,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/logoer/" role="menuitem"  class="nav-link">
+    <a href="/design/logoer/"  class="nav-link">
         Logoer
       </a>
      
@@ -716,7 +713,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -729,22 +726,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="true"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="true"  >
           <span>Datavisualisering og infografik</span>
         </button>
-        <div aria-label="Datavisualisering og infografik" class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="false">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="false">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/datavisualisering-infografik/" role="menuitem"  class="nav-link">
+    <a href="/design/datavisualisering-infografik/"  class="nav-link">
         Datavisualisering og infografik<span class="helptext"> (overblik)</span>
       </a>
      
@@ -761,14 +758,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/" role="menuitem"  class="nav-link">
+    <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/"  class="nav-link">
         Tilgængelig grafik
       </a>
      
@@ -781,14 +778,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/datavisualisering-infografik/datavisualisering/" role="menuitem"  class="nav-link">
+    <a href="/design/datavisualisering-infografik/datavisualisering/"  class="nav-link">
         Datavisualisering
       </a>
      
@@ -801,14 +798,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/datavisualisering-infografik/infografik/" role="menuitem"  class="nav-link">
+    <a href="/design/datavisualisering-infografik/infografik/"  class="nav-link">
         Infografik
       </a>
      
@@ -831,7 +828,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -844,22 +841,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="true"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="true"  >
           <span>Layout</span>
         </button>
-        <div aria-label="Layout" class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="false">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="false">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/layout/" role="menuitem"  class="nav-link">
+    <a href="/design/layout/"  class="nav-link">
         Layout<span class="helptext"> (overblik)</span>
       </a>
      
@@ -876,14 +873,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/layout/grid/" role="menuitem"  class="nav-link">
+    <a href="/design/layout/grid/"  class="nav-link">
         Grid og baseline grid
       </a>
      
@@ -906,14 +903,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/designressourcer/" role="menuitem"  class="nav-link">
+    <a href="/design/designressourcer/"  class="nav-link">
         Designressourcer
       </a>
      
@@ -926,14 +923,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/designtjek/" role="menuitem"  class="nav-link">
+    <a href="/design/designtjek/"  class="nav-link">
         Designtjek
       </a>
      
@@ -962,7 +959,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -972,22 +969,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-komponenter" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-komponenter" aria-haspopup="true" aria-expanded="false"  >
         <span>Komponenter</span>
       </button>
-      <div role="menu" aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level1-komponenter" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-komponenter" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/"  class="nav-link">
         Komponenter<span class="helptext"> (overblik)</span>
       </a>
      
@@ -1004,14 +1001,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/accordions/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/accordions/"  class="nav-link">
         Accordions
       </a>
      
@@ -1024,14 +1021,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/badges/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/badges/"  class="nav-link">
         Badges
       </a>
      
@@ -1044,14 +1041,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/beskeder/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/beskeder/"  class="nav-link">
         Beskeder (Alerts)
       </a>
      
@@ -1064,14 +1061,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/broedkrumme/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/broedkrumme/"  class="nav-link">
         Brødkrumme
       </a>
      
@@ -1084,14 +1081,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/cards/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/cards/"  class="nav-link">
         Cards
       </a>
      
@@ -1104,14 +1101,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/cookiemeddelelse/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/cookiemeddelelse/"  class="nav-link">
         Cookiemeddelelse
       </a>
      
@@ -1124,14 +1121,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/datofelter/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/datofelter/"  class="nav-link">
         Datofelter
       </a>
      
@@ -1144,14 +1141,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/datovaelger/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/datovaelger/"  class="nav-link">
         Datovælger
       </a>
      
@@ -1164,14 +1161,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/detaljer/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/detaljer/"  class="nav-link">
         Detaljer
       </a>
      
@@ -1184,14 +1181,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/dropdown/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/dropdown/"  class="nav-link">
         Dropdown
       </a>
      
@@ -1204,14 +1201,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/faneblade/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/faneblade/"  class="nav-link">
         Faneblade (Tabs)
       </a>
      
@@ -1224,14 +1221,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fejlmeddelelser/"  class="nav-link">
         Fejlmeddelelser
       </a>
      
@@ -1244,14 +1241,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fejlopsummering/"  class="nav-link">
         Fejlopsummering
       </a>
      
@@ -1264,14 +1261,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/footer/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/footer/"  class="nav-link">
         Footer
       </a>
      
@@ -1284,14 +1281,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/funktionslink/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/funktionslink/"  class="nav-link">
         Funktionslink
       </a>
      
@@ -1304,14 +1301,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/skip-link/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/skip-link/"  class="nav-link">
         Gå til sidens indhold (Skip-link)
       </a>
      
@@ -1324,14 +1321,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/header/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/header/"  class="nav-link">
         Header
       </a>
      
@@ -1344,14 +1341,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/inputfelter/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/inputfelter/"  class="nav-link">
         Inputfelter
       </a>
      
@@ -1364,14 +1361,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/knapper/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/knapper/"  class="nav-link">
         Knapper (Buttons)
       </a>
      
@@ -1384,14 +1381,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/spinner/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/spinner/"  class="nav-link">
         Loading spinner
       </a>
      
@@ -1404,14 +1401,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/modal/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/modal/"  class="nav-link">
         Modal
       </a>
      
@@ -1424,14 +1421,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/overflowmenu/"  class="nav-link">
         Overflow menu
       </a>
      
@@ -1444,14 +1441,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/paginering/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/paginering/"  class="nav-link">
         Paginering
       </a>
      
@@ -1464,14 +1461,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/radioknap/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/radioknap/"  class="nav-link">
         Radioknap (Radio button)
       </a>
      
@@ -1484,14 +1481,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/sprogvaelger/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/sprogvaelger/"  class="nav-link">
         Sprogvælger
       </a>
      
@@ -1504,34 +1501,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/strukturerede-lister/" role="menuitem"  class="nav-link">
-        Strukturerede lister
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  " role="none">
-
-  
-
-
-  
-    
-    <a href="/komponenter/search/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/search/"  class="nav-link">
         Søgefelt
       </a>
      
@@ -1544,14 +1521,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/tables/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tables/"  class="nav-link">
         Tabeller
       </a>
      
@@ -1564,14 +1541,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/tags/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tags/"  class="nav-link">
         Tags
       </a>
      
@@ -1584,14 +1561,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/tekstomraade/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tekstomraade/"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
@@ -1604,14 +1581,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/tilbage-link/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tilbage-link/"  class="nav-link">
         Tilbage-link
       </a>
      
@@ -1624,14 +1601,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/tilbage-til-top/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tilbage-til-top/"  class="nav-link">
         Tilbage til toppen
       </a>
      
@@ -1644,14 +1621,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tjekboks/"  class="nav-link">
         Tjekboks (Checkbox)
       </a>
      
@@ -1664,14 +1641,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/toastbesked/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/toastbesked/"  class="nav-link">
         Toastbesked
       </a>
      
@@ -1684,14 +1661,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/toggle/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/toggle/"  class="nav-link">
         Toggle switch
       </a>
      
@@ -1704,14 +1681,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/tooltip/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tooltip/"  class="nav-link">
         Tooltip
       </a>
      
@@ -1724,14 +1701,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/trinindikator/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/trinindikator/"  class="nav-link">
         Trinindikator
       </a>
      
@@ -1744,14 +1721,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/fil-upload/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fil-upload/"  class="nav-link">
         Vedhæft fil
       </a>
      
@@ -1764,14 +1741,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/venstremenu/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/venstremenu/"  class="nav-link">
         Venstremenu
       </a>
      
@@ -1800,7 +1777,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -1810,22 +1787,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
-      <div role="menu" aria-label="Eksempler" class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/eksempler/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/"  class="nav-link">
         Eksempler<span class="helptext"> (overblik)</span>
       </a>
      
@@ -1842,14 +1819,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/eksempler/selvbetjeningsloesninger/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/selvbetjeningsloesninger/"  class="nav-link">
         Selvbetjeningsløsninger
       </a>
      
@@ -1862,7 +1839,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -1875,22 +1852,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
           <span>Patterns</span>
         </button>
-        <div aria-label="Patterns" class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/"  class="nav-link">
         Patterns<span class="helptext"> (overblik)</span>
       </a>
      
@@ -1907,14 +1884,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/angivelse-af-telefonnummer/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/angivelse-af-telefonnummer/"  class="nav-link">
         Angivelse af telefonnummer
       </a>
      
@@ -1927,34 +1904,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/forlad-siden/" role="menuitem"  class="nav-link">
-        Er du sikker på, du vil forlade siden?
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/eksempler/patterns/formular/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/formular/"  class="nav-link">
         Formular
       </a>
      
@@ -1967,14 +1924,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/session-udloeber/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/session-udloeber/"  class="nav-link">
         Session udløber
       </a>
      
@@ -1997,14 +1954,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/eksempler/templates/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/templates/"  class="nav-link">
         Templates
       </a>
      
@@ -2033,7 +1990,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -2043,22 +2000,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
         <span>Kode</span>
       </button>
-      <div role="menu" aria-label="Kode" class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/" role="menuitem"  class="nav-link">
+    <a href="/kode/"  class="nav-link">
         Kode<span class="helptext"> (overblik)</span>
       </a>
      
@@ -2075,14 +2032,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/implementering/" role="menuitem"  class="nav-link">
+    <a href="/kode/implementering/"  class="nav-link">
         Implementering af DKFDS
       </a>
      
@@ -2095,7 +2052,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -2108,22 +2065,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
           <span>Komponenter</span>
         </button>
-        <div aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/"  class="nav-link">
         Komponenter<span class="helptext"> (overblik)</span>
       </a>
      
@@ -2140,14 +2097,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/accordions/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/accordions/"  class="nav-link">
         Accordions
       </a>
      
@@ -2160,14 +2117,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/badges/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/badges/"  class="nav-link">
         Badges
       </a>
      
@@ -2180,14 +2137,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/beskeder/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/beskeder/"  class="nav-link">
         Beskeder (Alerts)
       </a>
      
@@ -2200,14 +2157,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/broedkrumme/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/broedkrumme/"  class="nav-link">
         Brødkrumme
       </a>
      
@@ -2220,14 +2177,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/cards/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/cards/"  class="nav-link">
         Cards
       </a>
      
@@ -2240,14 +2197,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/cookiemeddelelse/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/cookiemeddelelse/"  class="nav-link">
         Cookiemeddelelse
       </a>
      
@@ -2260,14 +2217,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/datofelter/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/datofelter/"  class="nav-link">
         Datofelter
       </a>
      
@@ -2280,14 +2237,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/datovaelger/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/datovaelger/"  class="nav-link">
         Datovælger
       </a>
      
@@ -2300,14 +2257,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/detaljer/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/detaljer/"  class="nav-link">
         Detaljer
       </a>
      
@@ -2320,14 +2277,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/dropdown/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/dropdown/"  class="nav-link">
         Dropdown
       </a>
      
@@ -2340,14 +2297,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/faneblade/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/faneblade/"  class="nav-link">
         Faneblade (Tabs)
       </a>
      
@@ -2360,14 +2317,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/fejlmeddelelser/"  class="nav-link">
         Fejlmeddelelser
       </a>
      
@@ -2380,14 +2337,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/fejlopsummering/"  class="nav-link">
         Fejlopsummering
       </a>
      
@@ -2400,14 +2357,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/footer/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/footer/"  class="nav-link">
         Footer
       </a>
      
@@ -2420,14 +2377,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/funktionslink/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/funktionslink/"  class="nav-link">
         Funktionslink
       </a>
      
@@ -2440,14 +2397,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/skip-link/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/skip-link/"  class="nav-link">
         Gå til sidens indhold (Skip-link)
       </a>
      
@@ -2460,14 +2417,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/header/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/header/"  class="nav-link">
         Header
       </a>
      
@@ -2480,14 +2437,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/inputfelter/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/inputfelter/"  class="nav-link">
         Inputfelter
       </a>
      
@@ -2500,14 +2457,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/knapper/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/knapper/"  class="nav-link">
         Knapper (Buttons)
       </a>
      
@@ -2520,14 +2477,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/spinner/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/spinner/"  class="nav-link">
         Loading spinner
       </a>
      
@@ -2540,14 +2497,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/modal/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/modal/"  class="nav-link">
         Modal
       </a>
      
@@ -2560,14 +2517,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/overflowmenu/"  class="nav-link">
         Overflow menu
       </a>
      
@@ -2580,14 +2537,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/paginering/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/paginering/"  class="nav-link">
         Paginering
       </a>
      
@@ -2600,14 +2557,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/radioknap/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/radioknap/"  class="nav-link">
         Radioknap (Radio button)
       </a>
      
@@ -2620,14 +2577,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/sprogvaelger/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/sprogvaelger/"  class="nav-link">
         Sprogvælger
       </a>
      
@@ -2640,34 +2597,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/strukturerede-lister/" role="menuitem"  class="nav-link">
-        Strukturerede lister
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  " role="none">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/search/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/search/"  class="nav-link">
         Søgefelt
       </a>
      
@@ -2680,14 +2617,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tables/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tables/"  class="nav-link">
         Tabeller
       </a>
      
@@ -2700,14 +2637,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tags/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tags/"  class="nav-link">
         Tags
       </a>
      
@@ -2720,14 +2657,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tekstomraade/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tekstomraade/"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
@@ -2740,14 +2677,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tilbage-link/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tilbage-link/"  class="nav-link">
         Tilbage-link
       </a>
      
@@ -2760,14 +2697,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tilbage-til-top/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tilbage-til-top/"  class="nav-link">
         Tilbage til toppen
       </a>
      
@@ -2780,14 +2717,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tjekboks/"  class="nav-link">
         Tjekboks (Checkbox)
       </a>
      
@@ -2800,14 +2737,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/toastbesked/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/toastbesked/"  class="nav-link">
         Toastbesked
       </a>
      
@@ -2820,14 +2757,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/toggle/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/toggle/"  class="nav-link">
         Toggle switch
       </a>
      
@@ -2840,14 +2777,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tooltip/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tooltip/"  class="nav-link">
         Tooltip
       </a>
      
@@ -2860,14 +2797,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/trinindikator/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/trinindikator/"  class="nav-link">
         Trinindikator
       </a>
      
@@ -2880,14 +2817,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/fil-upload/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/fil-upload/"  class="nav-link">
         Vedhæft fil
       </a>
      
@@ -2900,14 +2837,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/venstremenu/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/venstremenu/"  class="nav-link">
         Venstremenu
       </a>
      
@@ -2930,14 +2867,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/browserunderstoettelse/" role="menuitem"  class="nav-link">
+    <a href="/kode/browserunderstoettelse/"  class="nav-link">
         Browserunderstøttelse
       </a>
      
@@ -2950,14 +2887,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/grid/" role="menuitem"  class="nav-link">
+    <a href="/kode/grid/"  class="nav-link">
         Grid
       </a>
      
@@ -2970,7 +2907,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -2983,22 +2920,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
           <span>Typografi</span>
         </button>
-        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/typografi/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/"  class="nav-link">
         Typografi<span class="helptext"> (overblik)</span>
       </a>
      
@@ -3015,14 +2952,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/typografi/overskrifter/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/overskrifter/"  class="nav-link">
         Overskrifter
       </a>
      
@@ -3035,14 +2972,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/typografi/tekst/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/tekst/"  class="nav-link">
         Tekst
       </a>
      
@@ -3055,14 +2992,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/typografi/links/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/links/"  class="nav-link">
         Links
       </a>
      
@@ -3075,14 +3012,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/typografi/lister/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/lister/"  class="nav-link">
         Lister
       </a>
      
@@ -3105,14 +3042,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/ikoner/" role="menuitem"  class="nav-link">
+    <a href="/kode/ikoner/"  class="nav-link">
         Ikoner
       </a>
      
@@ -3125,14 +3062,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/utilities/" role="menuitem"  class="nav-link">
+    <a href="/kode/utilities/"  class="nav-link">
         Hjælpeklasser (Utilities)
       </a>
      
@@ -3145,14 +3082,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/eksempler-implementering/" role="menuitem"  class="nav-link">
+    <a href="/kode/eksempler-implementering/"  class="nav-link">
         Eksempler på implementering
       </a>
      
@@ -3165,14 +3102,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/print/" role="menuitem"  class="nav-link">
+    <a href="/kode/print/"  class="nav-link">
         Print
       </a>
      
@@ -3185,14 +3122,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/plugins/" role="menuitem"  class="nav-link">
+    <a href="/kode/plugins/"  class="nav-link">
         Plugins
       </a>
      
@@ -3205,14 +3142,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/anbefalinger-vaerktoejer/" role="menuitem"  class="nav-link">
+    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
         Anbefalinger og værktøjer
       </a>
      
@@ -3241,7 +3178,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -3251,22 +3188,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-krav" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-krav" aria-haspopup="true" aria-expanded="false"  >
         <span>Krav</span>
       </button>
-      <div role="menu" aria-label="Krav" class="overflow-menu-inner" id="submenu-level1-krav" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-krav" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/krav/" role="menuitem"  class="nav-link">
+    <a href="/krav/"  class="nav-link">
         Krav<span class="helptext"> (overblik)</span>
       </a>
      
@@ -3283,14 +3220,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/krav/borgerdk-virk/" role="menuitem"  class="nav-link">
+    <a href="/krav/borgerdk-virk/"  class="nav-link">
         Når du skal på borger.dk og Virk
       </a>
      
@@ -3303,14 +3240,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/krav/om-kravene/" role="menuitem"  class="nav-link">
+    <a href="/krav/om-kravene/"  class="nav-link">
         Om kravene til selvbetjeningsløsninger
       </a>
      
@@ -3323,14 +3260,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/krav/tilgaengelighed/" role="menuitem"  class="nav-link">
+    <a href="/krav/tilgaengelighed/"  class="nav-link">
         Tilgængelighed
       </a>
      
@@ -3359,7 +3296,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -3369,22 +3306,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-fællesskab" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-fællesskab" aria-haspopup="true" aria-expanded="false"  >
         <span>Fællesskab</span>
       </button>
-      <div role="menu" aria-label="Fællesskab" class="overflow-menu-inner" id="submenu-level1-fællesskab" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-fællesskab" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/"  class="nav-link">
         Fællesskab<span class="helptext"> (overblik)</span>
       </a>
      
@@ -3401,14 +3338,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/samarbejdsforum/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/samarbejdsforum/"  class="nav-link">
         Samarbejdsforum
       </a>
      
@@ -3421,14 +3358,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/governance/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/governance/"  class="nav-link">
         Governance
       </a>
      
@@ -3441,15 +3378,15 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/nyhedsmail/" role="menuitem"  class="nav-link">
-        Nyhedsmail
+    <a href="/faellesskab/nyhedsmail/"  class="nav-link">
+        Nyhedsbrev
       </a>
      
     
@@ -3461,14 +3398,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/kontakt-support/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/kontakt-support/"  class="nav-link">
         Kontakt og support
       </a>
      
@@ -3481,14 +3418,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/roadmap/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/roadmap/"  class="nav-link">
         Roadmap
       </a>
      
@@ -3501,14 +3438,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/faellesskab/releases/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/releases/"  class="nav-link">
         Release notes
       </a>
      
@@ -3543,16 +3480,16 @@
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         
         
-        <ul class="sidenav-list" role="menu">
+        <ul class="sidenav-list">
           
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/design/farver/" role="menuitem" 
+<a href="/design/farver/" 
   class="nav-link">
   Farver
 </a>
@@ -3563,12 +3500,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/design/typografi/" role="menuitem" 
+<a href="/design/typografi/" 
   class="nav-link">
   Typografi
 </a>
@@ -3579,12 +3516,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/design/borders/" role="menuitem" 
+<a href="/design/borders/" 
   class="nav-link">
   Hjørner, streger, skygger
 </a>
@@ -3595,12 +3532,12 @@
 
     
 
-<li class="current active " role="none">
+<li class="current active ">
 
 
   
 
-<a href="/design/ikoner/" role="menuitem" aria-current="page"
+<a href="/design/ikoner/" aria-current="page"
   class="nav-link">
   Ikoner
 </a>
@@ -3621,12 +3558,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/design/logoer/" role="menuitem" 
+<a href="/design/logoer/" 
   class="nav-link">
   Logoer
 </a>
@@ -3637,12 +3574,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/design/datavisualisering-infografik/" role="menuitem" 
+<a href="/design/datavisualisering-infografik/" 
   class="nav-link">
   Datavisualisering og infografik
 </a>
@@ -3653,12 +3590,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/design/layout/" role="menuitem" 
+<a href="/design/layout/" 
   class="nav-link">
   Layout
 </a>
@@ -3669,12 +3606,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/design/designressourcer/" role="menuitem" 
+<a href="/design/designressourcer/" 
   class="nav-link">
   Designressourcer
 </a>
@@ -3685,12 +3622,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/design/designtjek/" role="menuitem" 
+<a href="/design/designtjek/" 
   class="nav-link">
   Designtjek
 </a>
@@ -3708,7 +3645,7 @@
     <main class="col-12 col-lg-9" id="main-content">
           <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <div class="alert-body">
-            <p class="alert-heading pr-7">Vælg et tema</p><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
+            <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
             <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
@@ -3722,7 +3659,11 @@
           <div class="subheading">
             Design
           </div>
+
+          
           <h1 id="ikoner">Ikoner</h1>
+          
+
           
           
 
@@ -3736,23 +3677,23 @@
     <div class="d-flex simple-icon-list">
 
     <div class="w-percent-50 w-percent-md-20 align-text-center">
-        <svg class="icon-svg" aria-hidden="true"><use xlink:href="#home"></use></svg>
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#home"></use></svg>
     </div>
 
     <div class="w-percent-50 w-percent-md-20 align-text-center">
-        <svg class="icon-svg" aria-hidden="true"><use xlink:href="#search"></use></svg>
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#search"></use></svg>
     </div>
 
     <div class="w-percent-50 w-percent-md-20 align-text-center">
-        <svg class="icon-svg" aria-hidden="true"><use xlink:href="#print"></use></svg>
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#print"></use></svg>
     </div>
 
     <div class="w-percent-50 w-percent-md-20 align-text-center">
-        <svg class="icon-svg" aria-hidden="true"><use xlink:href="#save"></use></svg>
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#save"></use></svg>
     </div>
 
     <div class="w-percent-50 w-percent-md-20 align-text-center">
-        <svg class="icon-svg" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
     </div>
 
 </div>
@@ -3811,26 +3752,26 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
     <div class="details-text">
         <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
         <ul>
-          <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-          <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <p>Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes på listen.</p>
         <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
     </div>
 </details>
-<form method="get" action="" id="search-icons-form">
-<div class="search-container form-group">
-    <label class="form-label" for="icon-search-input">
-        Find dit ikon
-    </label>
-    <span class="form-hint" id="icon-search-input-hint">
-        Skriv navnet på ikonet du leder efter  i feltet, så ændres listen
-    </span>
-    <div class="mt-3 search">
-      <input class="form-input input-width-s" aria-describedby="icon-search-input-hint" id="icon-search-input" name="s" title="Search" type="search" />
-      <button type="submit" class="button button-search">Søg ikoner</button>
+<form method="get" id="search-icons-form">
+    <div class="search-container form-group">
+        <label class="form-label" for="icon-search-input">
+            Find dit ikon
+        </label>
+        <span class="form-hint" id="icon-search-input-hint">
+            Skriv navnet på ikonet du leder efter  i feltet, så ændres listen
+        </span>
+        <div class="mt-3 search">
+        <input class="form-input input-width-s" aria-describedby="icon-search-input-hint" id="icon-search-input" name="s" title="Search" type="search" />
+        <button type="submit" class="button button-search">Søg ikoner</button>
+        </div>
     </div>
-</div>
 </form>
 <details class="details mt-4">
     <summary class="details-summary"><span class="details-summary-text" id="checkbox-list-label">Filtrer på kategori</span></summary>
@@ -3875,1490 +3816,1495 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
 </details>
 
 <div aria-live="polite">
-<section class="icon-section" id="icon-section-konventionelle">
-  <h2 class="h5">Konventionelle ikoner</h2>
-  <p>Må ikke bruges til andre formål end de specificerede.</p>
-  
-  <div class="container">
-    <div class="icon-list row" id="icon-list-konventionelle">
-          
+    <section class="icon-section" id="icon-section-konventionelle">
+        <h2 class="h5">Konventionelle ikoner</h2>
+        <p>Må ikke bruges til andre formål end de specificerede.</p>
+        
+        <div class="container">
+            <div class="icon-list row" id="icon-list-konventionelle">
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="open-in-new" data-icon-keywords="open in new, new window, external, ekstern, eksternt link">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>
-        <p data-tooltip="open-in-new">Eksternt link (åbner ny side/fane)</p>
+        <p>Eksternt link (åbner ny side/fane)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="home" data-icon-keywords="hus, hjem, home, forside, house, home">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#home"></use></svg>
-        <p data-tooltip="home">Forside (Hjem)</p>
+        <p>Forside (Hjem)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="save" data-icon-keywords="save, gem, disc, diskette">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#save"></use></svg>
-        <p data-tooltip="save">Gem</p>
+        <p>Gem</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="print" data-icon-keywords="print, printer, udskriv">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#print"></use></svg>
-        <p data-tooltip="print">Print (udskriv)</p>
+        <p>Print (udskriv)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="trash-can" data-icon-keywords="skraldespand, bin, trash, trash can, can, delete, slet, fjern, rubbish">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
-        <p data-tooltip="trash-can">Slet</p>
+        <p>Slet</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="search" data-icon-keywords="lup, search, søg">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#search"></use></svg>
-        <p data-tooltip="search">Søg</p>
+        <p>Søg</p>
     </div>
   </div>
 
-</div>
-  </div>
-</section>
 
-<section class="icon-section" id="icon-section-beskeder">
-  <h2 class="h5 mb-4">Beskeder (feedback)</h2>
-  <div class="container">
-    <div class="icon-list row" id="icon-list-beskeder">
-          
+            </div>
+        </div>
+    </section>
+
+    <section class="icon-section" id="icon-section-beskeder">
+        <h2 class="h5 mb-4">Beskeder (feedback)</h2>
+        <div class="container">
+            <div class="icon-list row" id="icon-list-beskeder">
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="report-problem" data-icon-keywords="besked, alert, message, warning, advarsel, report, problem, report problem">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#report-problem"></use></svg>
-        <p data-tooltip="report-problem">Advarsel</p>
+        <p>Advarsel</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="highlight-off" data-icon-keywords="besked, alert, message, error, fejl">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg>
-        <p data-tooltip="highlight-off">Fejl</p>
+        <p>Fejl</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="info" data-icon-keywords="besked, alert, message, information, info">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
-        <p data-tooltip="info">Information</p>
+        <p>Information</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="help" data-icon-keywords="besked, alert, message, help, hjælp">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
-        <p data-tooltip="help">Hjælp</p>
+        <p>Hjælp</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="check-circle" data-icon-keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg>
-        <p data-tooltip="check-circle">Succes</p>
+        <p>Succes</p>
     </div>
   </div>
 
 
-    </div>
-  </div>
-</section>
+            </div>
+        </div>
+    </section>
 
-<section class="icon-section" id="icon-section-navigation">
-  <h2 class="h5 mb-4">Navigation</h2>
-  <div class="container">
-    <div class="icon-list row" id="icon-list-navigation"> 
-          
+    <section class="icon-section" id="icon-section-navigation">
+        <h2 class="h5 mb-4">Navigation</h2>
+        <div class="container">
+            <div class="icon-list row" id="icon-list-navigation"> 
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="more-horiz" data-icon-keywords="more, vertical, mere">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-horiz"></use></svg>
-        <p data-tooltip="more-horiz">Flere menupunkter (horisontalt)</p>
+        <p>Flere menupunkter (horisontalt)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-right" data-icon-keywords="right, højre, frem, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-        <p data-tooltip="arrow-right">Frem (højre)</p>
+        <p>Frem (højre)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="menu" data-icon-keywords="hamburger, menu, burger, burgermenu, burger menu">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>
-        <p data-tooltip="menu">Menu</p>
+        <p>Menu</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="more-vert" data-icon-keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
-        <p data-tooltip="more-vert">Overflow menu (vertikalt)</p>
+        <p>Overflow menu (vertikalt)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chevron-left" data-icon-keywords="næste, next, side">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg>
-        <p data-tooltip="chevron-left">Paginering forrige</p>
+        <p>Paginering forrige</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="first-page" data-icon-keywords="start, første, side">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg>
-        <p data-tooltip="first-page">Paginering første</p>
+        <p>Paginering første</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chevron-right" data-icon-keywords="forrige, previous, prev, side">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
-        <p data-tooltip="chevron-right">Paginering næste</p>
+        <p>Paginering næste</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="last-page" data-icon-keywords="sidste, slut, side">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg>
-        <p data-tooltip="last-page">Paginering sidste</p>
+        <p>Paginering sidste</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-forward" data-icon-keywords="pil, højre, arrow, frem, forward">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-forward"></use></svg>
-        <p data-tooltip="arrow-forward">Pil frem (højre)</p>
+        <p>Pil frem (højre)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-downward" data-icon-keywords="pil, ned, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-downward"></use></svg>
-        <p data-tooltip="arrow-downward">Pil ned</p>
+        <p>Pil ned</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-upward" data-icon-keywords="pil, op, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
-        <p data-tooltip="arrow-upward">Pil op</p>
+        <p>Pil op</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-back" data-icon-keywords="pil, arrow, tilbage, back">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-back"></use></svg>
-        <p data-tooltip="arrow-back">Pil tilbage (venstre)</p>
+        <p>Pil tilbage (venstre)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-left" data-icon-keywords="pil, arrow, back, tilbage">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>
-        <p data-tooltip="arrow-left">Tilbage (venstre)</p>
+        <p>Tilbage (venstre)</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="subdirectory-arrow-right" data-icon-keywords="højre, knækpil, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#subdirectory-arrow-right"></use></svg>
-        <p data-tooltip="subdirectory-arrow-right">Undermenu højre</p>
+        <p>Undermenu højre</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="subdirectory-arrow-left" data-icon-keywords="venstre, knækpil, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#subdirectory-arrow-left"></use></svg>
-        <p data-tooltip="subdirectory-arrow-left">Undermenu venstre</p>
+        <p>Undermenu venstre</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chevron-double-left" data-icon-keywords="venstre, dobbeltpil, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-double-left"></use></svg>
-        <p data-tooltip="chevron-double-left">Langt tilbage</p>
+        <p>Langt tilbage</p>
     </div>
   </div>
 
 
-          
+                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chevron-double-right" data-icon-keywords="højre, dobbeltpil, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-double-right"></use></svg>
-        <p data-tooltip="chevron-double-right">Langt frem</p>
+        <p>Langt frem</p>
     </div>
   </div>
 
 
-    </div>
-  </div>
-</section>
+            </div>
+        </div>
+    </section>
 
-<section class="icon-section" id="icon-section-tilstande">
-  <h2 class="h5 mb-4">Tilstande</h2>
-  <div class="container">
-    <div class="icon-list row" id="icon-list-tilstande">
-     
+    <section class="icon-section" id="icon-section-tilstande">
+    <h2 class="h5 mb-4">Tilstande</h2>
+    <div class="container">
+        <div class="icon-list row" id="icon-list-tilstande">
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-right" data-icon-keywords="pil, højre, lukket, luk, detalje">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-        <p data-tooltip="arrow-right">Detalje lukket</p>
+        <p>Detalje lukket</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-drop-down" data-icon-keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
-        <p data-tooltip="arrow-drop-down">Detalje åben / Fold overflow ud</p>
+        <p>Detalje åben / Fold overflow ud</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-drop-up" data-icon-keywords="pil, op, up, arrow, dropdown, fold ind, luk">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-up"></use></svg>
-        <p data-tooltip="arrow-drop-up">Fold overflow ind</p>
+        <p>Fold overflow ind</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="zoom-out" data-icon-keywords="lup, zoom, zoom ud, ud">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#zoom-out"></use></svg>
-        <p data-tooltip="zoom-out">Formindsk</p>
+        <p>Formindsk</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="zoom-in" data-icon-keywords="lup, zoom, zoom ind, ind">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#zoom-in"></use></svg>
-        <p data-tooltip="zoom-in">Forstør</p>
+        <p>Forstør</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="fullscreen" data-icon-keywords="fullscreen, fuld skærm, stor skærm, fuldskærm">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#fullscreen"></use></svg>
-        <p data-tooltip="fullscreen">Fuld skærm</p>
+        <p>Fuld skærm</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="remove" data-icon-keywords="-, minus, luk, accordion, close, collapse">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#remove"></use></svg>
-        <p data-tooltip="remove">Luk accordion (minus)</p>
+        <p>Luk accordion (minus)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="add" data-icon-keywords="+, plus, åben, accordion, open, expand">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add"></use></svg>
-        <p data-tooltip="add">Åbn accordion (plus)</p>
+        <p>Åbn accordion (plus)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="fullscreen-exit" data-icon-keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#fullscreen-exit"></use></svg>
-        <p data-tooltip="fullscreen-exit">Luk fuld skærm</p>
+        <p>Luk fuld skærm</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort" data-icon-keywords="sortering, sort, unsorted">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort"></use></svg>
-        <p data-tooltip="sort">Ikke sorteret</p>
+        <p>Ikke sorteret</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="lock-open" data-icon-keywords="log off, log af, log ud, log, off, af, ud, exit, lås, lock, hængelås, åben, open">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock-open"></use></svg>
-        <p data-tooltip="lock-open">Log af (åben hængelås)</p>
+        <p>Log af (åben hængelås)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="lock" data-icon-keywords="log in, login, log på, log ind, log, in, på, ind, lås, lock, hængelås, låst">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>
-        <p data-tooltip="lock">Log på (lukket hængelås)</p>
+        <p>Log på (lukket hængelås)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="visibility-off" data-icon-keywords="øje, eye, se, see, skjul, blind">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#visibility-off"></use></svg>
-        <p data-tooltip="visibility-off">Skjul</p>
+        <p>Skjul</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-by-alpha" data-icon-keywords="sort, sorting, sorter, sortér, alfabetisk">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-by-alpha"></use></svg>
-        <p data-tooltip="sort-by-alpha">Sortér alfabetisk</p>
+        <p>Sortér alfabetisk</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="expand-more" data-icon-keywords="udvid, expand, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#expand-more"></use></svg>
-        <p data-tooltip="expand-more">Udvid (chevron)</p>
+        <p>Udvid (chevron)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="expand-less" data-icon-keywords="collapse, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#expand-less"></use></svg>
-        <p data-tooltip="expand-less">Indskrænk (chevron)</p>
+        <p>Indskrænk (chevron)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="visibility" data-icon-keywords="øje, eye, se, see, vis, blind">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#visibility"></use></svg>
-        <p data-tooltip="visibility">Vis</p>
+        <p>Vis</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-descending" data-icon-keywords="tabel, table, sort, sortering, kolonne, descending">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-descending"></use></svg>
-        <p data-tooltip="sort-table-descending">Sortér tabel (faldende)</p>
+        <p>Sortér tabel (faldende)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-ascending" data-icon-keywords="tabel, table, sort, sortering, kolonne, ascending">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-ascending"></use></svg>
-        <p data-tooltip="sort-table-ascending">Sortér tabel (stigende)</p>
+        <p>Sortér tabel (stigende)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-none" data-icon-keywords="tabel, table, sort, sortering, kolonne">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-none"></use></svg>
-        <p data-tooltip="sort-table-none">Sortér tabel</p>
+        <p>Sortér tabel</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-default" data-icon-keywords="sort, sortering, overflow, overflowmenu, overflow menu">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-default"></use></svg>
-        <p data-tooltip="sort-default">Sortér</p>
+        <p>Sortér</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-ascending" data-icon-keywords="stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-ascending"></use></svg>
-        <p data-tooltip="sort-ascending">Sortér (stigende)</p>
+        <p>Sortér (stigende)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-descending" data-icon-keywords="faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-descending"></use></svg>
-        <p data-tooltip="sort-descending">Sortér (faldende)</p>
+        <p>Sortér (faldende)</p>
     </div>
   </div>
 
 
+        </div>
     </div>
-  </div>
-</section>
-<section class="icon-section" id="icon-section-filtyper">
-  <h2 class="h5 mb-4">Filtyper</h2>
-  <div class="container">
-    <div class="icon-list row" id="icon-list-filtyper">
-     
+    </section>
+
+    <section class="icon-section" id="icon-section-filtyper">
+    <h2 class="h5 mb-4">Filtyper</h2>
+    <div class="container">
+        <div class="icon-list row" id="icon-list-filtyper">
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-image" data-icon-keywords="billede, picture, fotografi, fil, file">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-image"></use></svg>
-        <p data-tooltip="file-image">Billede</p>
+        <p>Billede</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-excel" data-icon-keywords="excel, ark, regneark, fil">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-excel"></use></svg>
-        <p data-tooltip="file-excel">Excel</p>
+        <p>Excel</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-pdf" data-icon-keywords="PDF, dokument, document, fil">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>
-        <p data-tooltip="file-pdf">PDF</p>
+        <p>PDF</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-word" data-icon-keywords="word, dokument, fil, document">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-word"></use></svg>
-        <p data-tooltip="file-word">Word</p>
+        <p>Word</p>
     </div>
   </div>
 
 
+        </div>
     </div>
-  </div>
-</section>
-<section class="icon-section" id="icon-section-funktionalitet">
-  <h2 class="h5 mb-4">Funktionalitet</h2>
-  <div class="container">
-    <div class="icon-list row" id="icon-list-funktionalitet">
-          
+    </section>
+
+    <section class="icon-section" id="icon-section-funktionalitet">
+    <h2 class="h5 mb-4">Funktionalitet</h2>
+    <div class="container">
+        <div class="icon-list row" id="icon-list-funktionalitet">
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="close" data-icon-keywords="anuller, annullér, luk, cancel, discard, fortryd">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>
-        <p data-tooltip="close">Annuller (luk)</p>
+        <p>Annuller (luk)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="hourglass-empty" data-icon-keywords="waiting, hourglass, timeglas, vente, ventetid, tid">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#hourglass-empty"></use></svg>
-        <p data-tooltip="hourglass-empty">Afventer</p>
+        <p>Afventer</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="calculator" data-icon-keywords="calculator, lommeregner, beregning, beregner">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#calculator"></use></svg>
-        <p data-tooltip="calculator">Beregner (lommeregner)</p>
+        <p>Beregner (lommeregner)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="reply" data-icon-keywords="besvar, mail, email">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#reply"></use></svg>
-        <p data-tooltip="reply">Besvar</p>
+        <p>Besvar</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chat" data-icon-keywords="chat, kontakt, kommunikation, communication">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chat"></use></svg>
-        <p data-tooltip="chat">Chat</p>
+        <p>Chat</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="insert-invitation" data-icon-keywords="date, calendar, kalender, dato, invitation, aftale, møde">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#insert-invitation"></use></svg>
-        <p data-tooltip="insert-invitation">Dato / kalender</p>
+        <p>Dato / kalender</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="share" data-icon-keywords="share, del">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#share"></use></svg>
-        <p data-tooltip="share">Del</p>
+        <p>Del</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-download" data-icon-keywords="download">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
-        <p data-tooltip="file-download">Download</p>
+        <p>Download</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="download-done" data-icon-keywords="færdig, gennemført, download">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#download-done"></use></svg>
-        <p data-tooltip="download-done">Download afsluttet</p>
+        <p>Download afsluttet</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="email" data-icon-keywords="email, mail, e-mail, e-mailadresse, adresse, adress">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>
-        <p data-tooltip="email">Email</p>
+        <p>Email</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="feedback" data-icon-keywords="feedback, respons, response, besvarelse">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>
-        <p data-tooltip="feedback">Feedback</p>
+        <p>Feedback</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="person-remove" data-icon-keywords="bruger, person, user, remove">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person-remove"></use></svg>
-        <p data-tooltip="person-remove">Fjern person/bruger</p>
+        <p>Fjern person/bruger</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="flag" data-icon-keywords="flag, filled, udfyldt">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#flag"></use></svg>
-        <p data-tooltip="flag">Flag fyldt</p>
+        <p>Flag fyldt</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="outlined-flag" data-icon-keywords="flag, tomt">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#outlined-flag"></use></svg>
-        <p data-tooltip="outlined-flag">Flag tomt</p>
+        <p>Flag tomt</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="open-with" data-icon-keywords="flyt, move, drag, drop">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-with"></use></svg>
-        <p data-tooltip="open-with">Flyt</p>
+        <p>Flyt</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="credit-card" data-icon-keywords="kreditkort, creditcard, credit, money, payment, betal, betaling, pay">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#credit-card"></use></svg>
-        <p data-tooltip="credit-card">Indbetaling (kreditkort)</p>
+        <p>Indbetaling (kreditkort)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="settings" data-icon-keywords="settings, indstillinger">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#settings"></use></svg>
-        <p data-tooltip="settings">Indstillinger</p>
+        <p>Indstillinger</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="photo-camera" data-icon-keywords="kamera, video, picture, billede">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#photo-camera"></use></svg>
-        <p data-tooltip="photo-camera">Kamera (tag billede)</p>
+        <p>Kamera (tag billede)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="card-text" data-icon-keywords="card, text, tekst, kort, oplysninger, kontakt, contact">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>
-        <p data-tooltip="card-text">Kontaktoplysninger</p>
+        <p>Kontaktoplysninger</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="content-copy" data-icon-keywords="copy, paste, kopi, indsæt, sæt ind">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
-        <p data-tooltip="content-copy">Kopi</p>
+        <p>Kopi</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="playlist-add-check" data-icon-keywords="liste, list, done, check, flueben, completed, gennemført">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#playlist-add-check"></use></svg>
-        <p data-tooltip="playlist-add-check">Liste gennemført</p>
+        <p>Liste gennemført</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="folder" data-icon-keywords="mappe, folder">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#folder"></use></svg>
-        <p data-tooltip="folder">Mappe</p>
+        <p>Mappe</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="notifications" data-icon-keywords="notifikation, besked, toast, notification, bell, klokke, alarm, ringe">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#notifications"></use></svg>
-        <p data-tooltip="notifications">Notifikation/besked</p>
+        <p>Notifikation/besked</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="refresh" data-icon-keywords="update, refresh, opdater, genindlæs, pil, cirkel">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#refresh"></use></svg>
-        <p data-tooltip="refresh">Opdater (genindlæs)</p>
+        <p>Opdater (genindlæs)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="create-new-folder" data-icon-keywords="folder, mappe, opret, ny, add, new, create">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#create-new-folder"></use></svg>
-        <p data-tooltip="create-new-folder">Opret mappe</p>
+        <p>Opret mappe</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="apps" data-icon-keywords="apps, applikation, oversigt, overblik, kasser">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#apps"></use></svg>
-        <p data-tooltip="apps">Oversigt (overblik)</p>
+        <p>Oversigt (overblik)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="location-on" data-icon-keywords="position, maps, adresse, lokation, location">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#location-on"></use></svg>
-        <p data-tooltip="location-on">Placering (adresse)</p>
+        <p>Placering (adresse)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="mode" data-icon-keywords="redigér, edit, rediger, ændre, change">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>
-        <p data-tooltip="mode">Rediger</p>
+        <p>Rediger</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="send" data-icon-keywords="send">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#send"></use></svg>
-        <p data-tooltip="send">Send</p>
+        <p>Send</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="language" data-icon-keywords="sprog, language, globe, earch, jorden, lande, countries">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>
-        <p data-tooltip="language">Sprog (globe)</p>
+        <p>Sprog (globe)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="grade" data-icon-keywords="star, stjerne, bedømmelse, rating">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#grade"></use></svg>
-        <p data-tooltip="grade">Stjerne fyldt (markeret)</p>
+        <p>Stjerne fyldt (markeret)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="grade-outline" data-icon-keywords="star, stjerne, bedømmelse, rating">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#grade-outline"></use></svg>
-        <p data-tooltip="grade-outline">Stjerne tom (ikke-markeret)</p>
+        <p>Stjerne tom (ikke-markeret)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="contact-support" data-icon-keywords="support, kontakt, contact, kommunikation, communication, bubble, help, question">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#contact-support"></use></svg>
-        <p data-tooltip="contact-support">Support</p>
+        <p>Support</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="cached" data-icon-keywords="synkroniser, refresh, genindlæs, update, opdater">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#cached"></use></svg>
-        <p data-tooltip="cached">Synkroniser (refresh)</p>
+        <p>Synkroniser (refresh)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="query-builder" data-icon-keywords="ur, tid, time, clock, klokke">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#query-builder"></use></svg>
-        <p data-tooltip="query-builder">Tid (tidsinterval)</p>
+        <p>Tid (tidsinterval)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="add-a-photo" data-icon-keywords="kamera, camera, picture, add, tilføj, billede, ny, create">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add-a-photo"></use></svg>
-        <p data-tooltip="add-a-photo">Tilføj billede</p>
+        <p>Tilføj billede</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="note-add" data-icon-keywords="add, document, dokument, tilføj, new, nyt, ny, opret, create">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#note-add"></use></svg>
-        <p data-tooltip="note-add">Tilføj dokument</p>
+        <p>Tilføj dokument</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="playlist-add" data-icon-keywords="add, list, tilføj, ny, opret">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#playlist-add"></use></svg>
-        <p data-tooltip="playlist-add">Tilføj til liste</p>
+        <p>Tilføj til liste</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="person-add-alt-1" data-icon-keywords="add, tilføj, ny, create, opret, bruger, user, person">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person-add-alt-1"></use></svg>
-        <p data-tooltip="person-add-alt-1">Tilføj person/bruger</p>
+        <p>Tilføj person/bruger</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="done" data-icon-keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
-        <p data-tooltip="done">Udført (korrekt, gennemført)</p>
+        <p>Udført (korrekt, gennemført)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-upload" data-icon-keywords="Upload, eksporter, export">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-upload"></use></svg>
-        <p data-tooltip="file-upload">Upload (eksportér)</p>
+        <p>Upload (eksportér)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="attach-file" data-icon-keywords="Vedhæft, attachment, bilag">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#attach-file"></use></svg>
-        <p data-tooltip="attach-file">Vedhæft (bilag)</p>
+        <p>Vedhæft (bilag)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="forward" data-icon-keywords="videresend">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#forward"></use></svg>
-        <p data-tooltip="forward">Videresend</p>
+        <p>Videresend</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="view-headline" data-icon-keywords="Liste, justify">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#view-headline"></use></svg>
-        <p data-tooltip="view-headline">Vis i liste form</p>
+        <p>Vis i liste form</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="vertical-split" data-icon-keywords="liste, kasse, billede, layout, vindue">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#vertical-split"></use></svg>
-        <p data-tooltip="vertical-split">Vis i liste form og vindue</p>
+        <p>Vis i liste form og vindue</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="palette" data-icon-keywords="tema, theme, palette, color, colours, painting, paint">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg>
-        <p data-tooltip="palette">Vælg tema (palette)</p>
+        <p>Vælg tema (palette)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="folder-open" data-icon-keywords="open, folder, åben, åbn, mappe">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#folder-open"></use></svg>
-        <p data-tooltip="folder-open">Åben mappe</p>
+        <p>Åben mappe</p>
     </div>
   </div>
 
 
+        </div>
     </div>
-  </div>
-</section>
+    </section>
 
-<section class="icon-section" id="icon-section-illustrative">
-  <h2 class="h5 mb-4">Illustrative</h2>
-  <div class="container">
-    <div class="icon-list row" id="icon-list-illustrative">
-          
+    <section class="icon-section" id="icon-section-illustrative">
+    <h2 class="h5 mb-4">Illustrative</h2>
+    <div class="container">
+        <div class="icon-list row" id="icon-list-illustrative">
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="coronavirus" data-icon-keywords="virus, corona, coronavirus, covid, 19, covid19, covid-19, pandemi, epidemi">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#coronavirus"></use></svg>
-        <p data-tooltip="coronavirus">Corona (Covid-19)</p>
+        <p>Corona (Covid-19)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="list-alt" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#list-alt"></use></svg>
-        <p data-tooltip="list-alt">Opgørelse / Resumé / Opsummering</p>
+        <p>Opgørelse / Resumé / Opsummering</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="assignment" data-icon-keywords="assignment">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#assignment"></use></svg>
-        <p data-tooltip="assignment">Opgave</p>
+        <p>Opgave</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="payments" data-icon-keywords="money, payment">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#payments"></use></svg>
-        <p data-tooltip="payments">Penge/Betaling/Opkrævning</p>
+        <p>Penge/Betaling/Opkrævning</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="database" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#database"></use></svg>
-        <p data-tooltip="database">Data</p>
+        <p>Data</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="assessment" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#assessment"></use></svg>
-        <p data-tooltip="assessment">Analyse</p>
+        <p>Analyse</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="map" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#map"></use></svg>
-        <p data-tooltip="map">Kort</p>
+        <p>Kort</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="link" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#link"></use></svg>
-        <p data-tooltip="link">Links</p>
+        <p>Links</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="person" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person"></use></svg>
-        <p data-tooltip="person">Person (bruger)</p>
+        <p>Person (bruger)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="shopping-cart" data-icon-keywords="shopping, buy, cart, payment, checkout">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#shopping-cart"></use></svg>
-        <p data-tooltip="shopping-cart">Kurv (afventer køb)</p>
+        <p>Kurv (afventer køb)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="videocam" data-icon-keywords="video, kamera">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#videocam"></use></svg>
-        <p data-tooltip="videocam">Videokamera</p>
+        <p>Videokamera</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="headphones" data-icon-keywords="headset, sound, lyd, høretelefoner">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#headphones"></use></svg>
-        <p data-tooltip="headphones">Headset</p>
+        <p>Headset</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="desktop-windows" data-icon-keywords="skærm, screen, computer">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#desktop-windows"></use></svg>
-        <p data-tooltip="desktop-windows">Desktop</p>
+        <p>Desktop</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="laptop" data-icon-keywords="bærbar, computer">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#laptop"></use></svg>
-        <p data-tooltip="laptop">Laptop</p>
+        <p>Laptop</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="phone-iphone" data-icon-keywords="telefon, smartphone">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#phone-iphone"></use></svg>
-        <p data-tooltip="phone-iphone">Mobiltelefon</p>
+        <p>Mobiltelefon</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="mouse" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mouse"></use></svg>
-        <p data-tooltip="mouse">Mus</p>
+        <p>Mus</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="accessibility-new" data-icon-keywords="man, mand">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#accessibility-new"></use></svg>
-        <p data-tooltip="accessibility-new">Tilgængelighed</p>
+        <p>Tilgængelighed</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-list-bulleted" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-bulleted"></use></svg>
-        <p data-tooltip="format-list-bulleted">Liste</p>
+        <p>Liste</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-list-checks" data-icon-keywords="punktopstilling, liste">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg>
-        <p data-tooltip="format-list-checks">Tjekliste</p>
+        <p>Tjekliste</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="bookmark-border" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#bookmark-border"></use></svg>
-        <p data-tooltip="bookmark-border">Bogmærke</p>
+        <p>Bogmærke</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="bookmarks" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#bookmarks"></use></svg>
-        <p data-tooltip="bookmarks">Bogmærker</p>
+        <p>Bogmærker</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="card-account-details" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-account-details"></use></svg>
-        <p data-tooltip="card-account-details">Kontaktoplysninger</p>
+        <p>Kontaktoplysninger</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="people-alt" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#people-alt"></use></svg>
-        <p data-tooltip="people-alt">Personer (brugere)</p>
+        <p>Personer (brugere)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="groups" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#groups"></use></svg>
-        <p data-tooltip="groups">Gruppe (møde)</p>
+        <p>Gruppe (møde)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="forum" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#forum"></use></svg>
-        <p data-tooltip="forum">Forum</p>
+        <p>Forum</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="insert-drive-file" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#insert-drive-file"></use></svg>
-        <p data-tooltip="insert-drive-file">Dokument (sag)</p>
+        <p>Dokument (sag)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="domain" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#domain"></use></svg>
-        <p data-tooltip="domain">Virksomhed</p>
+        <p>Virksomhed</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="face" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#face"></use></svg>
-        <p data-tooltip="face">Elev</p>
+        <p>Elev</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="engineering" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#engineering"></use></svg>
-        <p data-tooltip="engineering">Erhverv/Erhvervsuddannet</p>
+        <p>Erhverv/Erhvervsuddannet</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="account-circle" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#account-circle"></use></svg>
-        <p data-tooltip="account-circle">Brugerprofil</p>
+        <p>Brugerprofil</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="how-to-reg" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#how-to-reg"></use></svg>
-        <p data-tooltip="how-to-reg">Fuldmagtsprofil (3. part)</p>
+        <p>Fuldmagtsprofil (3. part)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="support-agent" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#support-agent"></use></svg>
-        <p data-tooltip="support-agent">Supporter (telefonrådgiver)</p>
+        <p>Supporter (telefonrådgiver)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="local-shipping" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#local-shipping"></use></svg>
-        <p data-tooltip="local-shipping">Lastbil (transport)</p>
+        <p>Lastbil (transport)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="agriculture" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#agriculture"></use></svg>
-        <p data-tooltip="agriculture">Traktor (landmand)</p>
+        <p>Traktor (landmand)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="school" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#school"></use></svg>
-        <p data-tooltip="school">Studerende (studie)</p>
+        <p>Studerende (studie)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="construction" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg>
-        <p data-tooltip="construction">Håndværk (bygge- og anlægsarbejde)</p>
+        <p>Håndværk (bygge- og anlægsarbejde)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="science" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#science"></use></svg>
-        <p data-tooltip="science">Videnskab (kemi)</p>
+        <p>Videnskab (kemi)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="drive-eta" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#drive-eta"></use></svg>
-        <p data-tooltip="drive-eta">Bil (transport)</p>
+        <p>Bil (transport)</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="tune" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#tune"></use></svg>
-        <p data-tooltip="tune">Parameter (finjustering)</p>
+        <p>Parameter (finjustering)</p>
     </div>
   </div>
 
 
+        </div>
     </div>
-  </div>
-</section>
-<section class="icon-section" id="icon-section-tekstredigering">
-  <h2 class="h5 mb-4">Tekstredigering</h2>
-  <div class="container">
-    <div class="icon-list row" id="icon-list-tekstredigering">
-          
+    </section>
+
+    <section class="icon-section" id="icon-section-tekstredigering">
+    <h2 class="h5 mb-4">Tekstredigering</h2>
+    <div class="container">
+        <div class="icon-list row" id="icon-list-tekstredigering">
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="text-format" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#text-format"></use></svg>
-        <p data-tooltip="text-format">Formater tekst</p>
+        <p>Formater tekst</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-size" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-size"></use></svg>
-        <p data-tooltip="format-size">Tekststørrelse</p>
+        <p>Tekststørrelse</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-bold" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-bold"></use></svg>
-        <p data-tooltip="format-bold">Fed</p>
+        <p>Fed</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-italic" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-italic"></use></svg>
-        <p data-tooltip="format-italic">Kursiv</p>
+        <p>Kursiv</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-underlined" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-underlined"></use></svg>
-        <p data-tooltip="format-underlined">Understregning</p>
+        <p>Understregning</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-color-text" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-color-text"></use></svg>
-        <p data-tooltip="format-color-text">Farve</p>
+        <p>Farve</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-color-fill" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-color-fill"></use></svg>
-        <p data-tooltip="format-color-fill">Baggrundsfarve</p>
+        <p>Baggrundsfarve</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-clear" data-icon-keywords="ryd, clear, tekst, formatering, clean">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-clear"></use></svg>
-        <p data-tooltip="format-clear">Ryd tekstformatering</p>
+        <p>Ryd tekstformatering</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-list-bulleted" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-bulleted"></use></svg>
-        <p data-tooltip="format-list-bulleted">Punktopstilling</p>
+        <p>Punktopstilling</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-list-numbered" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-numbered"></use></svg>
-        <p data-tooltip="format-list-numbered">Punktopstilling numerisk</p>
+        <p>Punktopstilling numerisk</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-indent-increase" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-indent-increase"></use></svg>
-        <p data-tooltip="format-indent-increase">Indryk højre</p>
+        <p>Indryk højre</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-indent-decrease" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-indent-decrease"></use></svg>
-        <p data-tooltip="format-indent-decrease">Indryk venstre</p>
+        <p>Indryk venstre</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-align-left" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-left"></use></svg>
-        <p data-tooltip="format-align-left">Venstrestil tekst</p>
+        <p>Venstrestil tekst</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-align-center" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-center"></use></svg>
-        <p data-tooltip="format-align-center">Centreret tekst</p>
+        <p>Centreret tekst</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-align-right" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-right"></use></svg>
-        <p data-tooltip="format-align-right">Højrestillet tekst</p>
+        <p>Højrestillet tekst</p>
     </div>
   </div>
 
 
-          
+            
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-align-justify" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-justify"></use></svg>
-        <p data-tooltip="format-align-justify">Lige marginer</p>
+        <p>Lige marginer</p>
     </div>
   </div>
 
 
+        </div>
     </div>
-  </div>
-</section>
-<div class="alert alert-info d-none mt-4" id="no-results-message">
-    <div class="alert-body">
-        <p class="alert-heading">Der er desværre intet ikon der matcher</p>
-        <p class="alert-text">Prøv evt. at søge hos:</p>
-        <ul class="nobullet-list">
-          <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-          <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-        </ul>
+    </section>
+
+    <div class="alert alert-info d-none mt-4" id="no-results-message">
+        <div class="alert-body">
+            <strong class="alert-heading">Der er desværre intet ikon der matcher</strong>
+            <p class="alert-text">Prøv evt. at søge hos:</p>
+            <ul class="nobullet-list">
+                <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+                <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+            </ul>
+        </div>
     </div>
-</div>
 </div>
 
 <p><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Efterspørg eller giv feedback på et ikon på vores FDS GitHub side<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
@@ -5520,8 +5466,9 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
 
 <footer>
     <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
-    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
-    <span class="d-none d-md-inline-block">Til toppen</span>
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+    <span class="sr-only">Til toppen af siden</span>
+    <span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
 </a>
     <div class="footer">
         <div class="container">

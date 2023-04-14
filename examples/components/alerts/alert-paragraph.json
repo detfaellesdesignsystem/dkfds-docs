@@ -1,8 +1,0 @@
-{
-  "alert_example": {
-        "classes": "alert-info",
-        "heading": "Besked med mindre bredde",
-        "paragraph": true,
-        "content": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet."
-      }
-}

@@ -1,3 +1,9 @@
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
 
-{{datoinput(item)}}
+{{
+    datoinput({
+        "id": "date-input-example",
+        "legend": "Indsendelsesfrist",
+        "helptext": "For eksempel: 05 12 2018"
+    })
+}}

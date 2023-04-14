@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta name="robots" content="noindex" />
+
+<head>
+    <meta name="robots" content="noindex">
     {% include head.html %}
-  </head>
-  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+</head>
+
+<body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
-    <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
+    <header>
+        <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    </header>
     <main class="container page-container" id="main-content">
-    {% if page.title contains "Toastbesked" %}
-      <div class="toast-container">
+        {% if page.title contains "Toastbesked" %}
+        <div class="toast-container">
+            {{ content }}
+        </div>
+        <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+        {% else %}
+        <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
         {{ content }}
-      </div>
-      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
-    {% else %}
-      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
-      {{ content }}
-      {% if page.title contains "tringuide" or page.title contains "Tringuide" %}
-      </aside>
-      </div>
-      {% endif %}
-    {% endif %}
+        {% endif %}
     </main>
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
@@ -40,5 +40,6 @@
     {% if page.url contains "pagination" %}
     <script src="{{ site.baseurl }}/assets/js/pagination.js"></script>
     {% endif %}
-  </body>
+</body>
+
 </html>

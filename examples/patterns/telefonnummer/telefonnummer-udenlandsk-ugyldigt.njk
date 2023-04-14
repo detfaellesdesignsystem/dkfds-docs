@@ -1,2 +1,15 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{{textinput(textinput_example)}}
+
+{{
+    textinput({
+        "id": "input-phonenumber-invalid",
+        "name": "input-phonenumber-invalid",
+        "label": "Telefonnummer",
+        "type": "tel",
+        "classes": { "input": "input-width-s" },
+        "helptext": "Ved udenlandske numre inkluder landekode",
+        "errorMessage": "Indtast et gyldigt telefonnummer, fx 12345678, +49 123 1234 1234 eller 0044 808 157 0192",
+        "value": "0123 4567 8900",
+        "autocomplete": "tel"
+    })
+}}

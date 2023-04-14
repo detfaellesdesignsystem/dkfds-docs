@@ -1,187 +1,210 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
-{%- from "components/header/header.njk" import portal_header as portal_header -%}
-{%- from "components/header/header.njk" import solution_header as solution_header -%}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/table/table.njk" import table as table %}
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
+
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Registrer et eller andet"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span class="d-none d-lg-inline-block mr-2">· </span><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+    }
+} %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
 
 {% block header %}
-    <header class="header">
-      <div id="top"></div>
-  <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
-  {{ portal_header(portal_header_data) }}
-  {{ solution_header(solution_header_data) }}
+<header class="header">
+    <div id="top"></div>
+    {{ skiplink() }}
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
 
-  <div class="overlay"></div>
-  <nav class="nav"> <!-- collapsible-->
-    <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu">{{icon_svg({"name":"close"})}}Luk</button>
+    <div class="overlay"></div>
+    <nav class="nav">
+        {{ menu_close_button() }}
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}
 
-    <div class="portal-info-mobile">
-      <p class="user"><span class="weight-semibold">Anders Andersen</span><br />Forsikringens Forsikringsfirma</p>
-
-      <a href="#" class="button button-secondary button-signout">
-        Log af
-      </a>
-    </div>
-
-    <div class="solution-info-mobile">
-      <p class="bold">Myndighedsnavn</p>
-      <p>Support: 12 34 56 78 <br><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></p>
-    </div>
-
-    <div class="navbar">
-      <div class="navbar-inner navbar-context-actions container">
-        <div class="nav-actions">
-          <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
+        <div class="navbar">
+            <div class="navbar-inner navbar-context-actions container">
+                <div class="nav-actions">
+                    <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav> <!-- collapsible nav end-->
+    </nav>
 </header>
 {% endblock %}
 
 {% block body %}
 <div class="container page-container pt-5 pt-lg-0">
-  <div class="row">
-    <aside class="col-12 col-lg-3 sidebar-col">
-      <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
-        <button class="button-overflow-menu js-dropdown" data-js-target="overflow-reg" aria-haspopup="true" aria-expanded="false">
-            Trin 6 af 6
-            <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
-        </button>
-        <div class="overflow-menu-inner" id="overflow-reg" aria-hidden="false">
-          {{ stepguide(trinindikator_data) }}
-        </div>
+    <div class="row">
+        <aside class="col-12 col-lg-3 sidebar-col">
+            {{ overflow_stepguide(trinindikator_data) }}
+        </aside>
+        <main class="col-12 col-lg-9" id="main-content">
+            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-5/" class="back-link">Tilbage</a></div>
+            <h1 class="mb-6">Opsummering</h1>
+            <h2>Vælg personer</h2>
+            {{
+                table({
+                    "borderless": true,
+                    "responsive": true,
+                    "classes": {
+                        "inner": "w-percent-md-70 d-print-table"
+                    },
+                    "thead": [
+                        { "headerContent": "Person" },
+                        { "headerContent": "CPR-nummer" },
+                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "Jens Jensen" },
+                            { "content": "123456-7890" },
+                            { "classes": "align-text-md-right d-print-none" }
+                        ],
+                        [
+                            { "content": "Keld Hedagaardsen" },
+                            { "content": "230495-1111" },
+                            { "content": "<a href=\"/pages/eksempler/trinformular-til-registrering/registrering-1/\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ],
+                        [
+                            { "content": "Anni Hedagaardsen" },
+                            { "content": "120394-2222" },
+                            { "content": "<a href=\"/pages/eksempler/trinformular-til-registrering/registrering-1/\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ]
+                    ]
+                })
+            }}
+
+            <h2>Vælg noget mere</h2>
+            {{
+                table({
+                    "borderless": true,
+                    "responsive": true,
+                    "classes": {
+                        "inner": "w-percent-md-70 d-print-table"
+                    },
+                    "thead": [
+                        { "headerContent": "Nummer" },
+                        { "headerContent": "Dato" },
+                        { "headerContent": "Information" },
+                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "123456789" },
+                            { "content": "01.01.2021" },
+                            { "content": "Lorem ipsum dolor sit" },
+                            { "content": "<a href=\"/pages/eksempler/trinformular-til-registrering/registrering-2/\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ],
+                        [
+                            { "content": "123456789" },
+                            { "content": "01.01.2021" },
+                            { "content": "Lorem ipsum dolor sit" },
+                            { "content": "<a href=\"/pages/eksempler/trinformular-til-registrering/registrering-2/\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ]
+                    ]
+                })
+            }}
+
+            <h2>Vedhæft dokumenter</h2>
+            {% set exampleDocumentLink1 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Journal.pdf</a>' %}
+            {% set exampleDocumentLink2 = '<a href="#" class="function-link">' + icon_svg({"name": 'file-pdf'}) + 'Kopi-af-dokument-x.pdf</a>' %}
+            {{
+                table({
+                    "borderless": true,
+                    "responsive": true,
+                    "classes": {
+                        "inner": "w-percent-md-70 d-print-table"
+                    },
+                    "thead": [
+                        { "headerContent": "Vedhæftet dokument" },
+                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": exampleDocumentLink1 },
+                            { "content": "<a href=\"/pages/eksempler/trinformular-til-registrering/registrering-3/\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ],
+                        [
+                            { "content": exampleDocumentLink2 },
+                            { "content": "<a href=\"/pages/eksempler/trinformular-til-registrering/registrering-3/\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        ]
+                    ]
+                })
+            }}
+
+            <h2>Tidligere registrering</h2>
+            {{ structured_list(list_tidligere_registrering) }}
+
+            <h2>Kontaktoplysninger</h2>
+            {{ structured_list(list_kontaktoplysninger) }}
+
+            <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-7/">
+                <input type="hidden" name="entries-confirmed" value="true">
+                {{ button(button_next) }}
+            </form>
+        </main>
     </div>
-    </aside>
-    <main class="col-12 col-lg-9" id="main-content">
-      <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-5/" class="back-link">Tilbage</a></div>
-      <h1 class="mb-6">Opsummering</h1>
-      <h2>Vælg personer</h2>
-      <div class="table--responsive-scroll">
-        <table class="table table--borderless table--responsive-headers w-percent-md-70 d-print-table">
-            <thead>
-                <tr>
-                  <th>Person</th>
-                  <th>CPR-nummer</th>
-                  <th class="d-print-none"></th>
-                </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-title="Person">Jens Jensen</td>
-                <td data-title="CPR-nummer">123456-7890</td>
-                <td class="align-text-md-right d-print-none" data-title=""></td>
-              </tr>
-              <tr>
-                <td data-title="Person">Keld Hedagaardsen</td>
-                <td data-title="CPR-nummer">230495-1111</td>
-                <td class="align-text-md-right d-print-none" data-title=""><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/">Redigér</a></td>
-              </tr>
-              <tr>
-                <td data-title="Person">Anni Hedagaardsen</td>
-                <td data-title="CPR-nummer">120394-2222</td>
-                <td class="align-text-md-right d-print-none" data-title=""><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/">Redigér</a></td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
-      <h2>Vælg noget mere</h2>
-      <div class="table--responsive-scroll">
-        <table class="table table--borderless table--responsive-headers w-percent-md-70 d-print-table">
-            <thead>
-                <tr>
-                  <th>Nummer</th>
-                  <th>Dato</th>
-                  <th>Information</th>
-                  <th class="d-print-none"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td data-title="Nummer">123456789</td>
-                  <td data-title="Dato">01.01.2021</td>
-                  <td data-title="Information">Lorem ipsum dolor sit</td>
-                  <td class="align-text-md-right d-print-none" data-title=""><a href="/pages/eksempler/trinformular-til-registrering/registrering-2/">Redigér</a></td>
-                </tr>
-                <tr>
-                  <td data-title="Nummer">123456789</td>
-                  <td data-title="Dato">01.01.2021</td>
-                  <td data-title="Information">Lorem ipsum dolor sit</td>
-                  <td class="align-text-md-right d-print-none" data-title=""><a href="/pages/eksempler/trinformular-til-registrering/registrering-2/">Redigér</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-      <h2>Vedhæft dokumenter</h2>
-      <div class="table--responsive-scroll">
-        <table class="table table--borderless table--responsive-headers w-percent-md-70 d-print-table">
-            <thead>
-                <tr>
-                  <th>Vedhæftet</th>
-                  <th class="d-print-none"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Journal.pdf</a></td>
-                  <td class="align-text-md-right d-print-none" data-title=""><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/">Redigér</a></td>
-                </tr>
-                <tr>
-                  <td data-title="Vedhæftet dokument"><a href="#" class="function-link">{{ icon_svg({"name": 'file-pdf'})}}Kopi-af-dokument-x.pdf</a></td>
-                  <td class="align-text-md-right d-print-none" data-title=""><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/">Redigér</a></td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
-      <h2>Tidligere registrering</h2>
-      <div class="w-percent-md-70 mt-6 mb-7">
-        {% for row in tidligere_registrering %}
-        <div class="row row-bordered no-gutters">
-          <div class="col-12 col-md-8 weight-semibold">
-              {{ row.label }}
-          </div>
-          <div class="col-12 col-md-2">
-              {{ row.value }}
-          </div>
-          <div class="col-12 col-md-2 align-text-md-right">
-              <a href="{{ row.href }}">Redigér<span class="sr-only"> {{row.label | lower }}</span></a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <h2>Kontaktoplysninger</h2>
-      <div class="w-percent-md-70 mt-6 mb-7">
-        {% for row in kontaktoplysninger %}
-        <div class="row row-bordered no-gutters">
-          <div class="col-12 col-md-4 weight-semibold">
-              {{ row.label }}
-          </div>
-          <div class="col-12 col-md-6">
-              {{ row.value }}
-          </div>
-          <div class="col-12 col-md-2 align-text-md-right">
-              <a href="{{ row.href }}">Redigér<span class="sr-only"> {{row.label | lower }}</span></a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-7/">
-        <input type="hidden" name="entries-confirmed" value="true">
-        {{ button(button_next) }}
-      </form>
-    </main>
-  </div>
 </div>
 {% endblock %}
 
-{% block banner -%}
-{% endblock %}
-
 {% block footer -%}
-  {{ footer(footer_data) }}
+{{ footer(footer_data) }}
 {% endblock %}
 
-{{ modal(modal_data) }}
+{{
+    modal({
+        "id": "modal-contact",
+        "heading": "Kontakt",
+        "content": modal_content,
+        "forcedAction": false,
+        "actions": modal_actions
+    })
+}}

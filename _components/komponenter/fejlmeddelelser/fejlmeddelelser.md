@@ -26,6 +26,8 @@ subnav:
   href: "#accordions"
 - text: Datofelter
   href: "#datofelter"
+- text: Datovælger
+  href: "#datovaelger"
 - text: Dropdown
   href: "#dropdown"
 - text: Inputfelt
@@ -143,12 +145,17 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 {:.h3 #accordions}
 ## Accordions
 
-{% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" %}
+{% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" link="true" code="/kode/komponenter/fejlmeddelelser/#accordions" %}
 
 {:.h3 #datofelter}
 ## Datofelter
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
+
+{:.h3 #datovaelger}
+## Datovælger
+
+{% include code/preview-box.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" %}
 
 {:.h3 #dropdown}
 ## Dropdown

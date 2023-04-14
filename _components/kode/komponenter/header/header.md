@@ -44,6 +44,8 @@ Denne del bør altid indgå i en header.
 
 {% include code/syntax.html component="header-solution" %}
 
+Hvis løsningsheaderen er den sidste række i headeren, tilføj da klassen `header-end` efter klassen `solution-header`. Dette sikrer, at menustregen bliver korrekt fremhævet.
+
 {:#navigation}
 #### Navigation (Obligatorisk)
 

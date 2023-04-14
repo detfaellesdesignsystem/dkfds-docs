@@ -42,7 +42,6 @@ Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer
 
 Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor det virkelig er meningsfuldt.
 
-
 {% include dos-donts-box.html component="badges-dos-donts" title="Badges do's and don'ts" %}
 
 {:.h4}

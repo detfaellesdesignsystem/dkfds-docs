@@ -1,7 +1,7 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
-{% from "components/form/controls/checkbox.njk" import checkbox as checkbox %}
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
 
 {{ alert(alert_example) }}
 <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
@@ -9,15 +9,7 @@
 
     {{textinput(textinput_example)}}
 
-    <div class="form-group form-error">
-        <fieldset aria-describedby="example-nationalitet-error">
-            <legend class="form-label">Hvad er din nationalitet?</legend>
-            <span class="form-error-message" id="example-nationalitet-error"><span class="sr-only">Fejl:</span> Angiv om du er dansk, svensk eller anden nationalitet</span>
-            <ul class="nobullet-list">
-                {% for item in checkbox_error_examples.items %}<li>{{ checkbox(item) }}</li>{% endfor %}
-            </ul>
-        </fieldset>
-    </div>
+    {{checkboxes(checkbox_error_example)}}
 
     {{datoinput(dateObject)}}
 

@@ -34,13 +34,13 @@ Sagerne kan være:
 {% include roadmap.html title="Redigering af felter i tabeller" status="Foreslået" %}
 {% include roadmap.html title="Retningslinjer for validering" status="I gang" %}
 {% include roadmap.html title="Sortering i tabeller" status="Gennemført" link="/komponenter/tables/#sortering-i-tabeller" %}
-{% include roadmap.html title="Strukturerede lister" status="Gennemført" link="/komponenter/strukturerede-lister/" %}
+{% include roadmap.html title="Strukturerede lister" status="Gennemført" link="/komponenter/tables/#strukturerede-lister" %}
 {% include roadmap.html title="Søgefelt med autoudfyldelse" status="Foreslået" %}
 {% include roadmap.html title="Søgning i tabeller" status="Gennemført" link="/komponenter/tables/#søgning-i-tabeller" %}
 {% include roadmap.html title="Tilbage til toppen" status="Gennemført" link="/komponenter/tilbage-til-top/" %}
 {% include roadmap.html title="Tiles" status="Annulleret" %}
 {% include roadmap.html title="Toggle switch" status="Gennemført" link="/komponenter/toggle/" %}
-{% include roadmap.html title="Trinindikator med angivelse af fejl" status="I gang" %}
+{% include roadmap.html title="Trinindikator med angivelse af fejl" status="Gennemført" link="/komponenter/trinindikator/#med-fejl" %}
 {% include roadmap.html title="Valgbar rækker i tabeller" status="Gennemført" link="/komponenter/tables/#valgbare-rækker" %}
 
 {:.h3 .mb-md-0}
@@ -55,7 +55,7 @@ Sagerne kan være:
 {% include roadmap.html title="Adresse" status="Foreslået" %}
 {% include roadmap.html title="Angivelse af e-mail" status="Foreslået" %}
 {% include roadmap.html title="Avanceret søgefunktion" status="Foreslået" %}
-{% include roadmap.html title="Du er ved at forlade siden" status="Gennemført" link="/eksempler/patterns/forlad-siden/" %}
+{% include roadmap.html title="Du er ved at forlade siden" status="Annulleret" %}
 {% include roadmap.html title="Kontekstnært hjælpepanel" status="Foreslået" %}
 {% include roadmap.html title="Session udløber" status="Gennemført" link="/eksempler/patterns/session-udloeber/" %}
 {% include roadmap.html title="Skift fuldmagt" status="Foreslået" %}

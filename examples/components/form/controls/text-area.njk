@@ -1,3 +1,10 @@
 {% from "components/form/controls/text-area.njk" import textarea as textarea %}
 
-{{textarea(item)}}
+{{
+    textarea({
+        "id": "input-textarea",
+        "name": "input-textarea",
+        "label": "Tekstområde med label",
+        "rows": 5
+    })
+}}

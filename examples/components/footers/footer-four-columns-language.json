@@ -1,78 +1,115 @@
-{"footer_data":{
-  "languageSwitcher": {
-    "ariaLabel": "Vælg sprog fra listen",
-    "firstAriaLabel": "Valgt sprog: Dansk",
-    "languages": [
-      {"code": "da", "name": "Dansk", "href": "?lang=da"},
-      {"code": "en-GB", "name": "English", "href": "?lang=en-GB"},
-      {"code": "de", "name": "Deutsch", "href": "?lang=de"},
-      {"code": "pl", "name": "Polski", "href": "?lang=pl"}
-    ]
-  },
-  "columns": [
-    {
-      "columnSize": 3,
-      "textAlignRight": false,
-      "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2>",
-      "lists": [
-        {
-          "inline": false,
-          "items": [
-            {"content": "<p>Digitaliseringsstyrelsen</p>"},
-            {"content": "<p>Landgreven 4</p>"},
-            {"content": "<p>1413 København K</p>"}
-          ]
-        }
-      ]
-    },
-    {
-      "columnSize": 3,
-      "textAlignRight": false,
-      "content": "<h2 class=\"h5 mb-4\">Kontakt</h2>",
-      "lists": [
-        {
-          "inline": false,
-          "classes": "mt-0 nobullet-list",
-          "items": [
-            {"content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"},
-            {"content": "<a class=\"function-link\" href=\"tel:004512345678\">(+45) 12 34 56 78</a>"}
-          ]
-        }
-      ]
-    },
-    {
-      "columnSize": 3,
-      "classes": "d-print-none",
-      "textAlignRight": false,
-      "content": "<h2 class=\"h5 mb-4\">Links</h2>",
-      "lists": [
-        {
-          "inline": false,
-          "classes": "mt-0 nobullet-list",
-          "items": [
-            {"content": "<a class=\"function-link\" href=\"#\">Læs lidt om dit</a>"},
-            {"content": "<a class=\"function-link\" href=\"#\">Her er også lidt om dat</a>"},
-            {"content": "<a class=\"function-link\" href=\"#\">Eller måske er du interesseret i noget helt andet, som tager mange linjer at forklare</a>"}
-          ]
-        }
-      ]
-    },
-    {
-      "columnSize": 3,
-      "classes": "d-print-none",
-      "textAlignRight": false,
-      "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
-      "lists": [
-        {
-          "inline": false,
-          "classes": "mt-0 nobullet-list",
-          "items": [
-            {"content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\">false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"},
-            {"content": "<a class=\"function-link\" href=\"#\">Privatlivspolitik (cookies)</a>"}
-          ]
-        }
-      ]
+{
+    "footer_data": {
+        "languageSwitcher": {
+            "ariaLabel": "Vælg sprog fra listen",
+            "firstAriaLabel": "Valgt sprog: Dansk",
+            "languages": [
+                {
+                    "code": "da",
+                    "name": "Dansk",
+                    "href": "?lang=da"
+                },
+                {
+                    "code": "en-GB",
+                    "name": "English",
+                    "href": "?lang=en-GB"
+                },
+                {
+                    "code": "de",
+                    "name": "Deutsch",
+                    "href": "?lang=de"
+                },
+                {
+                    "code": "pl",
+                    "name": "Polski",
+                    "href": "?lang=pl"
+                }
+            ]
+        },
+        "columns": [
+            {
+                "columnSize": 3,
+                "textAlignRight": false,
+                "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "items": [
+                            {
+                                "content": "<p>Digitaliseringsstyrelsen</p>"
+                            },
+                            {
+                                "content": "<p>Landgreven 4</p>"
+                            },
+                            {
+                                "content": "<p>1413 København K</p>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "columnSize": 3,
+                "textAlignRight": false,
+                "content": "<h2 class=\"h5 mb-4\">Kontakt</h2>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "mt-0 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
+                            },
+                            {
+                                "content": "<a class=\"function-link\" href=\"tel:004512345678\">(+45) 12 34 56 78</a>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "columnSize": 3,
+                "classes": "d-print-none",
+                "textAlignRight": false,
+                "content": "<h2 class=\"h5 mb-4\">Links</h2>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "mt-0 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a class=\"function-link\" href=\"#\">Læs lidt om dit</a>"
+                            },
+                            {
+                                "content": "<a class=\"function-link\" href=\"#\">Her er også lidt om dat</a>"
+                            },
+                            {
+                                "content": "<a class=\"function-link\" href=\"#\">Eller måske er du interesseret i noget helt andet, som tager mange linjer at forklare</a>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "columnSize": 3,
+                "classes": "d-print-none",
+                "textAlignRight": false,
+                "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "mt-0 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>"
+                            },
+                            {
+                                "content": "<a class=\"function-link\" href=\"#\">Privatlivspolitik (cookies)</a>"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
-  ]
-}
 }

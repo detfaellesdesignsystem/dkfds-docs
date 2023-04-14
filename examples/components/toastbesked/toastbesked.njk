@@ -1,3 +1,9 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 
-{{ button(button_example) }}
+{{ 
+    button({
+        "variant": "primary",
+        "text": "Vis en toastbesked",
+        "id": "toast-example-button"
+    }) 
+}}

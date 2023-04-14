@@ -1,6 +1,10 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 
-{% for item in button_example.items %}
-{{ button(item) }}
-{% endfor %}
-
+{{ 
+    button({
+        "variant": "unstyled",
+        "icon": "trash-can",
+        "srOnly": "Slet",
+        "classes": { "icon": "mr-0 mt-0" }
+    }) 
+}}

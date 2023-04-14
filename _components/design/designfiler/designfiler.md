@@ -22,7 +22,7 @@ Dit fokus, som designer af en selvbetjeningsløsning, bør være på brugervenli
 
 Du er velkommen til at bidrage med flere designressourcer eller med opdateringer af eksisterende filer.
 
-<div class="alert alert-warning alert--paragraph" role="alert" aria-label="Beskedbox der viser en advarsel">
+<div class="alert alert-warning alert--paragraph" role="alert">
     <div class="alert-body">
         <p class="alert-text">Dokumentationssiden er “source of truth” ikke designfilerne.</p>
     </div>

@@ -62,9 +62,3 @@ Undlad at løsningen reagerer på brugerens direkte valg i dropdownen, så bruge
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
 
 {% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
-
-## Multiselect og søgning
-
-Vi tilbyder på nuværende tidspunkt ikke en multiselect dropdown komponent med søgefunktion, men hvis man finder eller laver en selv kan det se ud som på billedet nedenfor.
-
-<div><img src="{{ site.baseurl }}/assets/img/components/multiselect.png" class="outer-border-box" alt="Eksempel på, hvordan en multiselect dropdown kan se ud" /></div>

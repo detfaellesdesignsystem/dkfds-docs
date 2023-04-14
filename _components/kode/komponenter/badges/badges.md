@@ -28,12 +28,14 @@ subnav:
 
 {% include code/syntax.html component="badge" %}
 
-Alle badges skal have en `badge` class på `<label></label>` elementet.
+Alle badges skal have en `badge` klasse på `<span>`-elementet. 
+
+Hvis et badge anvendes til særlig fræmhævning af et ord i en kontekst, for eksempel når nyt indhold markeres på en side, anvend da et `<strong>`-element i stedet for `<span>`.
 
 
 ## Tilgængelighed
 
-Interaktive badges bliver automatisk markeret , når brugere ved hjælp af tastaturet navigerer sig frem til dem.
+Interaktive badges bliver automatisk markeret, når brugere ved hjælp af tastaturet navigerer sig frem til dem.
 
 Du skal anvende ARIA live regions til at gøre skærmlæsere opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.
 
@@ -50,9 +52,9 @@ For et lille badge skal der tilføjes en `badge-small` class.
 
 Statusbadges har 4 forskellige farver og formål:
 
-- <label class="badge badge-small badge-success">Grøn</label>, som er succesfarven og implementeres med klassen `badge-success`.
-- <label class="badge badge-small badge-info">Blå</label>, som er informationsfarven og implementeres med klassen `badge-info`.
-- <label class="badge badge-small badge-warning">Gul</label>, som er advarselsfarven og implementeres med klassen `badge-warning`.
-- <label class="badge badge-small badge-error">Rød</label>, som er fejlfarven og implementeres med klassen `badge-error`.
+- <strong class="badge badge-small badge-success">Grøn</strong>, som er succesfarven og implementeres med klassen `badge-success`.
+- <strong class="badge badge-small badge-info">Blå</strong>, som er informationsfarven og implementeres med klassen `badge-info`.
+- <strong class="badge badge-small badge-warning">Gul</strong>, som er advarselsfarven og implementeres med klassen `badge-warning`.
+- <strong class="badge badge-small badge-error">Rød</strong>, som er fejlfarven og implementeres med klassen `badge-error`.
 
 Se eksempel på anvendelse af statusbadges i vores <a href="/faellesskab/releases/">release notes</a>.

@@ -30,6 +30,6 @@ Designsystemet er open source og baseret på en filosofi om samarbejde. Både i 
 {:.h3}
 ## Designsystemet er til selvbetjeningsløsninger
 
-Du skal anvende Det Fælles Designsystem til at udvikle selvbetjeningsløsninger, hvis det er et lovkrav at løsningen skal være obligatorisk digital eller den er rettet mod virksomheder.
+Du skal anvende Det Fælles Designsystem til at udvikle selvbetjeningsløsninger, hvis det er et lovkrav, at løsningen skal være obligatorisk digital eller den er rettet mod virksomheder.
 
 <a href="/krav/borgerdk-virk/">Læs om kravene og se om du skal anvende designsystemet</a>

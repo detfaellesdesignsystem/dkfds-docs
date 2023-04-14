@@ -49,6 +49,8 @@ Anvend et positivt sprog til værdierne. I stedet for fx ”Jeg vil ikke modtage
 
 Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er brugbar på touchskærme.
 
+Hvis du giver brugeren en liste med tjekbokse, så gør det tydeligt gennem enten label eller hjælpetekst, hvor mange tjekbokse det forventes, at de vælger.
+
 {% include dos-donts-box.html component="checkbox-dos-donts" title="Tjekboks do's and don'ts" %}
 
 {:.h4}

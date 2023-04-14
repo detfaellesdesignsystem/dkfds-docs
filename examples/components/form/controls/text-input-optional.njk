@@ -1,5 +1,34 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 
-{%- for input in params -%}
-    {{textinput(input)}}
-{% endfor -%}
+{{
+    textinput({
+        "id": "input-optional1",
+        "name": "input-optional1",
+        "label": "Label",
+        "required": false
+    })
+}}
+{{
+    textinput({
+        "id": "input-mandatory",
+        "name": "input-mandatory",
+        "label": "Label",
+        "requiredLabel": true
+    })
+}}
+{{
+    textinput({
+        "id": "input-optional2",
+        "name": "input-optional2",
+        "label": "Label",
+        "required": false
+    })
+}}
+{{
+    textinput({
+        "id": "input-optional3",
+        "name": "input-optional3",
+        "label": "Label",
+        "required": false
+    })
+}}

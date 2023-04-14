@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta name="robots" content="noindex" />
+    <meta name="robots" content="noindex" >
     <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
@@ -39,9 +39,9 @@
 
 <!-- Preload fonts -->
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style" />
-<link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style" />
-<link rel="preload" href="/assets/js/theme.js" as="script" />
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
+<link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
   body {
@@ -49,10 +49,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css" />
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css">
 </noscript>
 
 </head>
@@ -96,7 +96,6 @@
         <symbol id="create-new-folder" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm0 12H4V6h5.17l2 2H20v10zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"/></symbol>
         <symbol id="credit-card" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></symbol>
         <symbol id="database" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7V17C4 19.21 7.59 21 12 21S20 19.21 20 17V7C20 4.79 16.42 3 12 3M18 17C18 17.5 15.87 19 12 19S6 17.5 6 17V14.77C7.61 15.55 9.72 16 12 16S16.39 15.55 18 14.77V17M18 12.45C16.7 13.4 14.42 14 12 14C9.58 14 7.3 13.4 6 12.45V9.64C7.47 10.47 9.61 11 12 11C14.39 11 16.53 10.47 18 9.64V12.45M12 9C8.13 9 6 7.5 6 7S8.13 5 12 5C15.87 5 18 6.5 18 7S15.87 9 12 9Z" /></symbol>
-        <symbol id="delete" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></symbol>
         <symbol id="desktop-windows" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></symbol>
         <symbol id="domain" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></symbol>
         <symbol id="done" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></symbol>
@@ -219,25 +218,23 @@
 </div>
 <header class="header">
     <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
 
-    <!--1A: Portal header -->
-    <div class="portal-header ">
+    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+
+    <div class="portal-header">
         <div class="container portal-header-inner">
-            <a href="#" class="logo ">
-                <span class="sr-only">Portalnavn</span>
+            <a href="#" aria-label="Portalnavn" class="logo ">
+                <span class="d-none d-print-block">Portalnavn</span>
             </a>
-            <button
-                class="function-link button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="menu"
-                title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
+                aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
+                <p class="user">
 
-                <p class="user"><span
-                        class="username weight-semibold">Anders
-                        Andersen</span> <br />Forsikringens Forsikringsfirma
+                    <strong class="username weight-semibold">Anders Andersen</strong>
+
+                    <br />Forsikringens Forsikringsfirma
                 </p>
 
                 <button class="button button-secondary d-print-none">
@@ -247,290 +244,262 @@
         </div>
     </div>
 
-    <!--2A: Solution header -->
     <div class="solution-header header-end">
         <div class="container solution-header-inner">
             <div class="solution-heading">
-                <a href="#" class="">
+                <a href="#">
                     Registrer et eller andet
                 </a>
             </div>
 
-            <!--2B: Solution header: Authority name + text-->
             <div class="solution-info d-print-none">
-                <!-- nav-secondary -->
 
-                <p class="h5 authority-name"> Myndighedsnavn</p>
+                <p><strong class="authority-name">Myndighedsnavn</strong></p>
 
-                <p>Support: 12 34 56 78 <span class='d-print-none'>· <a
+                <p>Support: 12 34 56 78 <span
+                        class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span
+                            class="d-none d-lg-inline-block mr-2">· </span><a
                             href="javascript:void(0);" data-module="modal"
-                            data-target="modal-contact"
-                            class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
+                            data-target="modal-contact" aria-haspopup="dialog"
+                            class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
                 </p>
 
             </div>
+
         </div>
     </div>
 
     <div class="overlay"></div>
     <nav class="nav">
-        <!-- collapsible-->
+
         <button class="function-link button-menu-close js-menu-close"
-            title="Luk mobil menu"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
         <div class="portal-info-mobile">
-            <p class="user"><span class="weight-semibold">Anders
-                    Andersen</span><br />Forsikringens Forsikringsfirma</p>
 
-            <a href="#" class="button button-secondary button-signout">
+            <p class="user">
+
+                <strong class="username weight-semibold">Anders Andersen</strong>
+
+                <br />Forsikringens Forsikringsfirma
+            </p>
+
+            <button class="button button-secondary d-print-none mt-3">
                 Log af
-            </a>
+            </button>
         </div>
 
         <div class="solution-info-mobile">
-            <p class="bold">Myndighedsnavn</p>
-            <p>Support: 12 34 56 78 <br><a href="javascript:void(0);"
-                    data-module="modal" data-target="modal-contact"
-                    class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a>
+
+            <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
+
+            <p>Support: 12 34 56 78 <span
+                    class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span
+                        class="d-none d-lg-inline-block mr-2">· </span><a
+                        href="javascript:void(0);" data-module="modal"
+                        data-target="modal-contact" aria-haspopup="dialog"
+                        class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
             </p>
+
         </div>
 
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
                     <a href="#"
-                        class="function-link"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#save"></use></svg>Gem
+                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#save"></use></svg>Gem
                         kladde</a>
                 </div>
             </div>
         </div>
-    </nav> <!-- collapsible nav end-->
+    </nav>
 </header>
 
 <div class="container page-container pt-5 pt-lg-0">
     <div class="row">
         <aside class="col-12 col-lg-3 sidebar-col">
+
             <div
-                class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
-                <button class="button-overflow-menu js-dropdown"
-                    data-js-target="overflow-reg" aria-haspopup="true"
-                    aria-expanded="false">
+                class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive sidebar-col">
+                <button class="button-overflow-menu js-dropdown" data-js-target="overflow-reg"
+                    aria-haspopup="true" aria-expanded="false">
                     Trin 4 af 6
-                    <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
                 </button>
-                <div class="overflow-menu-inner" id="overflow-reg"
-                    aria-hidden="false">
+                <div class="overflow-menu-inner" id="overflow-reg" aria-hidden="true">
 
-                    <nav>
+                    <nav class="sidebar-col">
                         <ul class="sidenav-list" role="menu">
-
                             <li role="none">
                                 <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/"
                                     role="menuitem">
                                     <span class="sidenav-number">1.</span>
-                                    <span
-                                        class="sidenav-title">Vælg&nbsp;personer</span>
-
+                                    <div>
+                                        <span>Vælg personer</span>
+                                    </div>
                                     <span class="sidenav-icon">
-                                        <svg class="icon-svg" aria-label="Gennemført" aria-hidden="true"><use xlink:href="#done"></use></svg>
+                                        <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use xlink:href="#done"></use></svg>
                                     </span>
-
                                 </a>
                             </li>
-
                             <li role="none">
                                 <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/"
                                     role="menuitem">
                                     <span class="sidenav-number">2.</span>
-                                    <span
-                                        class="sidenav-title">Vælg&nbsp;noget&nbsp;mere</span>
-
+                                    <div>
+                                        <span>Vælg noget mere</span>
+                                    </div>
                                     <span class="sidenav-icon">
-                                        <svg class="icon-svg" aria-label="Gennemført" aria-hidden="true"><use xlink:href="#done"></use></svg>
+                                        <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use xlink:href="#done"></use></svg>
                                     </span>
-
                                 </a>
                             </li>
-
                             <li role="none">
                                 <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/"
                                     role="menuitem">
                                     <span class="sidenav-number">3.</span>
-                                    <span
-                                        class="sidenav-title">Vedhæft&nbsp;dokumenter</span>
-
+                                    <div>
+                                        <span>Vedhæft dokumenter</span>
+                                    </div>
                                     <span class="sidenav-icon">
-                                        <svg class="icon-svg" aria-label="Gennemført" aria-hidden="true"><use xlink:href="#done"></use></svg>
+                                        <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use xlink:href="#done"></use></svg>
                                     </span>
-
                                 </a>
                             </li>
-
-                            <li class=" active current" role="none">
+                            <li class="active current " role="none">
                                 <a href="/pages/eksempler/trinformular-til-registrering/registrering-4/"
-                                    role="menuitem" aria-current="page"
-                                    aria-current="page">
+                                    role="menuitem" aria-current="page">
                                     <span class="sidenav-number">4.</span>
-                                    <span
-                                        class="sidenav-title">Tidligere&nbsp;registrering</span>
-
+                                    <div>
+                                        <span>Tidligere registrering</span>
+                                    </div>
                                 </a>
                             </li>
-
                             <li role="none">
                                 <a href="/pages/eksempler/trinformular-til-registrering/registrering-5/"
                                     role="menuitem">
                                     <span class="sidenav-number">5.</span>
-                                    <span
-                                        class="sidenav-title">Kontaktoplysninger</span>
-
+                                    <div>
+                                        <span>Kontaktoplysninger</span>
+                                    </div>
                                 </a>
                             </li>
-
                             <li role="none">
                                 <a href="/pages/eksempler/trinformular-til-registrering/registrering-6/"
                                     role="menuitem">
                                     <span class="sidenav-number">6.</span>
-                                    <span
-                                        class="sidenav-title">Opsummering</span>
-
+                                    <div>
+                                        <span>Opsummering</span>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
                     </nav>
-
                 </div>
             </div>
+
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/"
-                    class="back-link">Tilbage</a></div>
+            <div>
+                <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/"
+                    class="back-link">Tilbage</a>
+            </div>
             <h1 class="mb-6">Tidligere registrering</h1>
             <form novalidate method="post"
                 action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-                <div class="js-radio-toggle-group">
-                    <fieldset>
-                        <legend class="form-label">Har du tidligere lavet
-                            en lignende registrering?</legend>
-                        <ul class="nobullet-list">
-                            <li>
-                                <div class="form-group-radio">
-                                    <input id="id-radio1" type="radio"
-                                        name="radio-group" value="1"
-                                        class="form-radio radio-large "
-                                        data-controls="#collapse-radio1"
-                                        data-expanded="false" />
-                                    <label for="id-radio1"
-                                        id="form-label-id-radio1"
-                                        class="">Ja <span
-                                            class="sr-only">Udfyld
-                                            informationer
-                                            herunder</span></label>
 
-                                </div>
+                <div class="form-group js-radio-toggle-group">
+                    <fieldset role="radiogroup">
+                        <legend class="form-label">
+                            Har du tidligere lavet en lignende registrering?
+                        </legend>
 
-                                <div id="collapse-radio1"
-                                    aria-hidden="true"
-                                    class="radio-content radio-content-large">
-                                    <div class="form-group">
+                        <div class="form-group-radio">
+                            <input type="radio" id="radiogroup-lignende-registrering-option1"
+                                name="radio-group" class="form-radio radio-large" value="1"
+                                data-controls="#radiogroup-lignende-registrering-option1-collapse"
+                                data-expanded="false">
+                            <label class="form-label"
+                                for="radiogroup-lignende-registrering-option1">Ja<span
+                                    class="sr-only"> Udfyld informationer
+                                    herunder</span></label>
 
-                                        <label class="form-label"
-                                            for="input-case">
-                                            Tidligere registreringsnummer
-                                        </label>
+                        </div>
+                        <div id="radiogroup-lignende-registrering-option1-collapse"
+                            aria-hidden="true" class="radio-content radio-content-large">
 
-                                        <input
-                                            class="form-input input-width-m"
-                                            id="input-case" name="case"
-                                            type="text" required />
+                            <div class="form-group">
+                                <label class="form-label" for="input-case">Tidligere
+                                    registreringsnummer</label>
+
+                                <input type="number" id="input-case" name="case"
+                                    class="form-input input-width-m" required>
+                            </div>
+
+                            <div class="form-group">
+                                <fieldset aria-describedby="input-date-hint ">
+                                    <legend class="form-label">
+                                        Dato for registreringen
+                                    </legend>
+                                    <span class="form-hint" id="input-date-hint">For eksempel:
+                                        01 12 2016</span>
+
+                                    <div class="date-group js-calendar-group mt-3">
+
+                                        <div class="form-group form-group-day">
+                                            <label class="form-label"
+                                                for="input-date-day">Dag</label>
+
+                                            <input type="tel" id="input-date-day"
+                                                class="form-input js-calendar-day-input"
+                                                required data-min="1" data-max="31"
+                                                maxlength="2" pattern="^[0-9]{0,2}$"
+                                                data-input-regex="^[0-9]{0,2}$"
+                                                title="Indtast dag på måneden som tal">
+                                        </div>
+
+                                        <div class="form-group form-group-month">
+                                            <label class="form-label"
+                                                for="input-date-month">Måned</label>
+
+                                            <input type="tel" id="input-date-month"
+                                                class="form-input js-calendar-month-input"
+                                                required data-min="1" data-max="12"
+                                                maxlength="2" pattern="^[0-9]{0,2}$"
+                                                data-input-regex="^[0-9]{0,2}$"
+                                                title="Indtast månedens nummer">
+                                        </div>
+
+                                        <div class="form-group form-group-year">
+                                            <label class="form-label"
+                                                for="input-date-year">År</label>
+
+                                            <input type="tel" id="input-date-year"
+                                                class="form-input js-calendar-year-input"
+                                                required data-min="1900" data-max="3000"
+                                                maxlength="4" pattern="^[0-9]{0,4}$"
+                                                data-input-regex="^[0-9]{0,4}$"
+                                                title="Indtast årstal">
+                                        </div>
 
                                     </div>
+                                </fieldset>
+                            </div>
 
-                                    <div class="form-group  ">
-                                        <fieldset
-                                            aria-describedby="example-date-field-hint ">
-                                            <legend class="form-label">Dato
-                                                for registreringen</legend>
-                                            <span class="form-hint"
-                                                id="example-date-field-hint">For
-                                                eksempel: 01 12 2016</span>
+                        </div>
 
-                                            <div
-                                                class="date-group js-calendar-group mt-3">
-                                                <div
-                                                    class="form-group form-group-day">
-                                                    <label
-                                                        class="form-label"
-                                                        for="date-day">Dag</label>
-                                                    <input
-                                                        class="form-input js-calendar-day-input"
-                                                        id="date-day"
-                                                        value="" type="tel"
-                                                        data-min="1"
-                                                        data-max="31"
-                                                        maxlength="2"
-                                                        pattern="^[0-9]{0,2}$"
-                                                        data-input-regex="^[0-9]{0,2}$"
-                                                        title="Indskriv dag på måneden som tal"
-                                                        aria-describedby="example-date-field-hint" />
-                                                </div>
-                                                <div
-                                                    class="form-group form-group-month">
-                                                    <label
-                                                        class="form-label"
-                                                        for="date-month">Måned</label>
-                                                    <input
-                                                        class="form-input js-calendar-month-input"
-                                                        id="date-month"
-                                                        value="" type="tel"
-                                                        data-min="1"
-                                                        data-max="12"
-                                                        maxlength="2"
-                                                        pattern="^[0-9]{0,2}$"
-                                                        data-input-regex="^[0-9]{0,2}$"
-                                                        title="Indskriv månedens nummer"
-                                                        aria-describedby="example-date-field-hint" />
-                                                </div>
-                                                <div
-                                                    class="form-group form-group-year ">
-                                                    <label
-                                                        class="form-label"
-                                                        for="date-year">År</label>
-                                                    <input
-                                                        class="form-input js-calendar-year-input"
-                                                        id="date-year"
-                                                        value="" type="tel"
-                                                        data-min="1900"
-                                                        data-max="3000"
-                                                        maxlength="4"
-                                                        pattern="^[0-9]{0,4}$"
-                                                        data-input-regex="^[0-9]{0,4}$"
-                                                        title="Indskriv årstal"
-                                                        aria-describedby="example-date-field-hint" />
-                                                </div>
+                        <div class="form-group-radio">
+                            <input type="radio" id="radiogroup-lignende-registrering-option2"
+                                name="radio-group" class="form-radio radio-large" value="2">
+                            <label class="form-label"
+                                for="radiogroup-lignende-registrering-option2">Nej</label>
 
-                                            </div>
-                                        </fieldset>
-                                    </div>
+                        </div>
 
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-group-radio">
-                                    <input id="id-radio2" type="radio"
-                                        name="radio-group" value="2"
-                                        class="form-radio radio-large " />
-                                    <label for="id-radio2"
-                                        id="form-label-id-radio2"
-                                        class="">Nej </label>
-
-                                </div>
-                            </li>
-                        </ul>
                     </fieldset>
                 </div>
-                <button class="button button-primary d-print-none mt-7"
-                    type='submit'>
+
+                <button class="button button-primary d-print-none mt-7" type='submit'>
                     Næste
                 </button>
             </form>
@@ -540,27 +509,23 @@
 
 <footer>
 
-    <a class="back-to-top-button button button-tertiary d-print-none"
-        href="#top"><svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
-        <span class="d-none d-md-inline-block">Til toppen</span>
+    <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+        <span class="sr-only">Til toppen af siden</span>
+        <span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
     </a>
 
     <div class="footer">
         <div class="container">
             <ul class="align-text-left unstyled-list inline-list">
-                <li class=""><span
-                        class="h5 weight-semibold">Myndighedsnavn</span>
-                </li>
+                <li class=""><strong class="weight-semibold">Myndighedsnavn</strong></li>
                 <li class=""><a class="function-link"
-                        href="mailto:support@myndighed.dk">support@myndighed.dk</a>
-                </li>
-                <li class=""><a class="function-link"
-                        href="tel:12345678">(+45) 12 34 56 78</a></li>
+                        href="mailto:support@myndighed.dk">support@myndighed.dk</a></li>
+                <li class=""><a class="function-link" href="tel:12345678">(+45) 12 34 56
+                        78</a></li>
                 <li class="d-print-none"><a href="#"
-                        class="function-link">Tilgængelighedserklæring</a>
-                </li>
-                <li class="d-print-none"><a href="#"
-                        class="function-link">Privatlivspolitik
+                        class="function-link">Tilgængelighedserklæring</a></li>
+                <li class="d-print-none"><a href="#" class="function-link">Privatlivspolitik
                         (cookies)</a></li>
             </ul>
         </div>
@@ -583,26 +548,24 @@
 
 </footer>
 
-<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-    aria-modal="true" aria-labelledby="modal-contact-title">
+<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="modal-contact-heading">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="modal-title" id="modal-id-1-title">
+            <h2 class="modal-title" id="modal-contact-heading">
                 Kontakt
             </h2>
             <button class="modal-close function-link"
                 data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <div class="modal-body">
+
             <div class="alert alert-warning" role="alert">
                 <div class="alert-body">
-                    <h3 class="alert-heading">Vi har noget information af
-                        advarende karakter</h3>
-                    <p class="alert-text">Noget tekst, der forklarer det af
-                        advarende karakter, som brugeren bør vide inden
-                        denne ringer eller skriver. Noget tekst, der
-                        forklarer det af advarende karakter, som brugeren
-                        bør vide inden denne ringer eller skriver.</p>
+                    <h3 class="alert-heading">Vi har noget information af advarende karakter
+                    </h3>
+                    <p class="alert-text">Noget tekst, der forklarer det af advarende
+                        karakter, som brugeren bør vide inden denne ringer eller skriver.</p>
                 </div>
             </div>
             <h3>En form for support</h3>
@@ -611,22 +574,22 @@
                 <li>En ting som denne</li>
                 <li>Et andet emne som dette</li>
             </ul>
-            <p>Kan du ringe direkte til: 12 34 56 78</p>
+            <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
             <p>Telefonen er åben:</p>
-            <p class="m-0">
-                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                kl. 9-17</p>
-            <p class="m-0">
-                Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl.
-                9-17</p>
-            <p class="m-0">
-                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                kl. kl. 9-14</p>
+            <p class='m-0'>
+                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class='d-inline-block'>kl. 9-17</span></p>
+            <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class='d-inline-block'>kl. 9-17</span></p>
+            <p class='m-0'>
+                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class='d-inline-block'>kl. 9-14</span></p>
         </div>
 
         <div class="modal-footer">
-            <button class="button button-secondary"
-                data-modal-close>Luk</button>
+            <button class="button button-secondary" data-modal-close>
+                Luk
+            </button>
         </div>
 
     </div>

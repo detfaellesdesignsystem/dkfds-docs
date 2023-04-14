@@ -1,3 +1,10 @@
 {% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
 
-{{ datepicker(parameters) }}
+{{ 
+    datepicker({
+        "id": "datepicker-example-error1",
+        "name": "datepicker-example-error1",
+        "label": "Dato for aftale",
+        "errorMessage": "Vælg en dato"
+    }) 
+}}

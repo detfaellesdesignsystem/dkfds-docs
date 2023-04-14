@@ -1,0 +1,66 @@
+{
+    "alert_modal_warning": {
+        "variant": "warning",
+        "headingLevel": "h3",
+        "heading": "Vi har noget information af advarende karakter",
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver."
+    },
+    "portal_header_data": {
+        "compact": false,
+        "user": {
+            "name": "Anders Andersen",
+            "work": "Forsikringens Forsikringsfirma"
+        },
+        "logolink": {
+            "label": "Portalnavn",
+            "href": "#"
+        }
+    },
+    "footer_data": {
+        "topButton": {
+            "href": "#top"
+        },
+        "list": {
+            "items": [
+                {
+                    "content": "<strong class=\"weight-semibold\">Myndighedsnavn</strong>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>"
+                },
+                {
+                    "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>"
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>",
+                    "hideOnPrint": true
+                },
+                {
+                    "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>",
+                    "hideOnPrint": true
+                }
+            ]
+        }
+    },
+    "badge_gennemfoert": {
+        "text": "Gennemført",
+        "variant": {
+            "size": "small",
+            "status": "success"
+        }
+    },
+    "badge_igang": {
+        "text": "I gang",
+        "variant": {
+            "size": "small",
+            "status": "warning"
+        }
+    },
+    "badge_ikke_startet": {
+        "text": "Ikke startet",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
+    }
+}

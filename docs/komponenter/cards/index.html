@@ -38,9 +38,9 @@
 
 <!-- Preload fonts -->
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style" />
-<link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style" />
-<link rel="preload" href="/assets/js/theme.js" as="script" />
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
+<link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
   body {
@@ -48,10 +48,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css" />
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css">
 </noscript>
 
   </head>
@@ -95,7 +95,6 @@
         <symbol id="create-new-folder" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm0 12H4V6h5.17l2 2H20v10zm-8-4h2v2h2v-2h2v-2h-2v-2h-2v2h-2z"/></symbol>
         <symbol id="credit-card" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></symbol>
         <symbol id="database" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7V17C4 19.21 7.59 21 12 21S20 19.21 20 17V7C20 4.79 16.42 3 12 3M18 17C18 17.5 15.87 19 12 19S6 17.5 6 17V14.77C7.61 15.55 9.72 16 12 16S16.39 15.55 18 14.77V17M18 12.45C16.7 13.4 14.42 14 12 14C9.58 14 7.3 13.4 6 12.45V9.64C7.47 10.47 9.61 11 12 11C14.39 11 16.53 10.47 18 9.64V12.45M12 9C8.13 9 6 7.5 6 7S8.13 5 12 5C15.87 5 18 6.5 18 7S15.87 9 12 9Z" /></symbol>
-        <symbol id="delete" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></symbol>
         <symbol id="desktop-windows" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></symbol>
         <symbol id="domain" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></symbol>
         <symbol id="done" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></symbol>
@@ -225,15 +224,14 @@
         <div class="solution-heading d-flex align-items-center">
             <a href="/">Det Fælles Designsystem</a>
         </div>
-        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="menu" title="Åben mobil menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
       </div>
 
       
       <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-        <form method="get" action="/search/" id="mobileSearchForm">
+        <form method="get" action="/search/" id="mobileSearchForm" role="search">
           <div class="form-group search">
-            <label for="search-input-mobile" class="sr-only">Søg efter indhold</label>
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" title="Search" type="search" required />
+            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required aria-label="Søg">
             <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
           </div>
         </form>
@@ -249,7 +247,7 @@
         <!--3A: Main navigation-->
 
         <div class="navbar-inner container">
-          <ul class="nav-primary" role="menu">
+          <ul class="nav-primary">
             
 
   
@@ -263,9 +261,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/design/" role="menuitem" 
+  <a href="/design/" 
     class="nav-link">
     <span>Design</span>
   </a>
@@ -284,9 +282,9 @@
 
 
 
-<li class="current" role="none">
+<li class="current">
 <!-- Do not render subnavs-->
-  <a href="/komponenter/" role="menuitem" aria-current="page"
+  <a href="/komponenter/" aria-current="page"
     class="nav-link">
     <span>Komponenter</span>
   </a>
@@ -305,9 +303,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/eksempler/" role="menuitem" 
+  <a href="/eksempler/" 
     class="nav-link">
     <span>Eksempler</span>
   </a>
@@ -326,9 +324,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/kode/" role="menuitem" 
+  <a href="/kode/" 
     class="nav-link">
     <span>Kode</span>
   </a>
@@ -347,9 +345,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/krav/" role="menuitem" 
+  <a href="/krav/" 
     class="nav-link">
     <span>Krav</span>
   </a>
@@ -368,9 +366,9 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/faellesskab/" role="menuitem" 
+  <a href="/faellesskab/" 
     class="nav-link">
     <span>Fællesskab</span>
   </a>
@@ -382,10 +380,9 @@
           </ul>
           
           <div class="search-form">
-            <form method="get" action="/search/" id="menuSearchForm">
+            <form method="get" action="/search/" id="menuSearchForm" role="search">
               <div class="form-group search">
-                <label for="search-input" class="sr-only">Søg efter indhold</label>
-                <input class="form-input input-char-27" id="search-input" name="q" title="Search" type="search" required />
+                <input class="form-input input-char-27" id="search-input" name="q" type="search" required aria-label="Søg">
                 <button class="button button-search" type="submit" id="searchbtn">Søg</button>
               </div>
             </form>
@@ -398,14 +395,14 @@
     <!-- collapsible nav end-->
 
     <!-- Mobile main menu-->
-    <nav class="nav d-lg-none" aria-label="Mobil hovedmenu">
-      <button class="function-link button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+    <nav class="nav d-lg-none">
+      <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
 
         <div class="navbar-inner">
-          <ul class="nav-primary" role="menu">
+          <ul class="nav-primary">
             
 
   
@@ -419,7 +416,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -429,22 +426,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="false"  >
         <span>Design</span>
       </button>
-      <div role="menu" aria-label="Design" class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/" role="menuitem"  class="nav-link">
+    <a href="/design/"  class="nav-link">
         Design<span class="helptext"> (overblik)</span>
       </a>
      
@@ -461,14 +458,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/farver/" role="menuitem"  class="nav-link">
+    <a href="/design/farver/"  class="nav-link">
         Farver
       </a>
      
@@ -481,7 +478,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -494,22 +491,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="false"  >
           <span>Typografi</span>
         </button>
-        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/typografi/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/"  class="nav-link">
         Typografi<span class="helptext"> (overblik)</span>
       </a>
      
@@ -526,14 +523,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/typografi/fonte/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/fonte/"  class="nav-link">
         Fonte
       </a>
      
@@ -546,14 +543,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/typografi/overskrifter/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/overskrifter/"  class="nav-link">
         Overskrifter
       </a>
      
@@ -566,14 +563,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/typografi/felt-tabel-overskrifter/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/felt-tabel-overskrifter/"  class="nav-link">
         Felt- og tabeloverskrifter
       </a>
      
@@ -586,14 +583,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/typografi/tekst/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/tekst/"  class="nav-link">
         Tekst
       </a>
      
@@ -606,14 +603,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/typografi/links/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/links/"  class="nav-link">
         Links
       </a>
      
@@ -626,14 +623,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/typografi/lister/" role="menuitem"  class="nav-link">
+    <a href="/design/typografi/lister/"  class="nav-link">
         Lister
       </a>
      
@@ -656,14 +653,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/borders/" role="menuitem"  class="nav-link">
+    <a href="/design/borders/"  class="nav-link">
         Hjørner, streger, skygger
       </a>
      
@@ -676,14 +673,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/ikoner/" role="menuitem"  class="nav-link">
+    <a href="/design/ikoner/"  class="nav-link">
         Ikoner
       </a>
      
@@ -696,14 +693,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/design/logoer/" role="menuitem"  class="nav-link">
+    <a href="/design/logoer/"  class="nav-link">
         Logoer
       </a>
      
@@ -716,7 +713,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -729,22 +726,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="false"  >
           <span>Datavisualisering og infografik</span>
         </button>
-        <div aria-label="Datavisualisering og infografik" class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/datavisualisering-infografik/" role="menuitem"  class="nav-link">
+    <a href="/design/datavisualisering-infografik/"  class="nav-link">
         Datavisualisering og infografik<span class="helptext"> (overblik)</span>
       </a>
      
@@ -761,14 +758,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/" role="menuitem"  class="nav-link">
+    <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/"  class="nav-link">
         Tilgængelig grafik
       </a>
      
@@ -781,14 +778,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/datavisualisering-infografik/datavisualisering/" role="menuitem"  class="nav-link">
+    <a href="/design/datavisualisering-infografik/datavisualisering/"  class="nav-link">
         Datavisualisering
       </a>
      
@@ -801,14 +798,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/datavisualisering-infografik/infografik/" role="menuitem"  class="nav-link">
+    <a href="/design/datavisualisering-infografik/infografik/"  class="nav-link">
         Infografik
       </a>
      
@@ -831,7 +828,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -844,22 +841,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="false"  >
           <span>Layout</span>
         </button>
-        <div aria-label="Layout" class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/layout/" role="menuitem"  class="nav-link">
+    <a href="/design/layout/"  class="nav-link">
         Layout<span class="helptext"> (overblik)</span>
       </a>
      
@@ -876,14 +873,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/layout/grid/" role="menuitem"  class="nav-link">
+    <a href="/design/layout/grid/"  class="nav-link">
         Grid og baseline grid
       </a>
      
@@ -906,14 +903,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/designressourcer/" role="menuitem"  class="nav-link">
+    <a href="/design/designressourcer/"  class="nav-link">
         Designressourcer
       </a>
      
@@ -926,14 +923,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/design/designtjek/" role="menuitem"  class="nav-link">
+    <a href="/design/designtjek/"  class="nav-link">
         Designtjek
       </a>
      
@@ -962,7 +959,7 @@
 
 
 
-<li class="current" role="none">
+<li class="current">
 <!--Do render subnavs-->
 
   
@@ -972,22 +969,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-komponenter" aria-haspopup="true" aria-expanded="true"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-komponenter" aria-haspopup="true" aria-expanded="true"  >
         <span>Komponenter</span>
       </button>
-      <div role="menu" aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level1-komponenter" aria-hidden="false">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-komponenter" aria-hidden="false">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/"  class="nav-link">
         Komponenter<span class="helptext"> (overblik)</span>
       </a>
      
@@ -1004,14 +1001,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/accordions/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/accordions/"  class="nav-link">
         Accordions
       </a>
      
@@ -1024,14 +1021,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/badges/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/badges/"  class="nav-link">
         Badges
       </a>
      
@@ -1044,14 +1041,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/beskeder/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/beskeder/"  class="nav-link">
         Beskeder (Alerts)
       </a>
      
@@ -1064,14 +1061,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/broedkrumme/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/broedkrumme/"  class="nav-link">
         Brødkrumme
       </a>
      
@@ -1084,14 +1081,14 @@
     
 
 
-<li class="current active has-anchor-links" role="none">
+<li class="current active has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/cards/" role="menuitem" aria-current="page" class="nav-link">
+    <a href="/komponenter/cards/" aria-current="page" class="nav-link">
         Cards
       </a>
      
@@ -1104,14 +1101,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/cookiemeddelelse/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/cookiemeddelelse/"  class="nav-link">
         Cookiemeddelelse
       </a>
      
@@ -1124,14 +1121,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/datofelter/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/datofelter/"  class="nav-link">
         Datofelter
       </a>
      
@@ -1144,14 +1141,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/datovaelger/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/datovaelger/"  class="nav-link">
         Datovælger
       </a>
      
@@ -1164,14 +1161,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/detaljer/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/detaljer/"  class="nav-link">
         Detaljer
       </a>
      
@@ -1184,14 +1181,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/dropdown/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/dropdown/"  class="nav-link">
         Dropdown
       </a>
      
@@ -1204,14 +1201,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/faneblade/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/faneblade/"  class="nav-link">
         Faneblade (Tabs)
       </a>
      
@@ -1224,14 +1221,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fejlmeddelelser/"  class="nav-link">
         Fejlmeddelelser
       </a>
      
@@ -1244,14 +1241,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fejlopsummering/"  class="nav-link">
         Fejlopsummering
       </a>
      
@@ -1264,14 +1261,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/footer/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/footer/"  class="nav-link">
         Footer
       </a>
      
@@ -1284,14 +1281,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/funktionslink/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/funktionslink/"  class="nav-link">
         Funktionslink
       </a>
      
@@ -1304,14 +1301,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/skip-link/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/skip-link/"  class="nav-link">
         Gå til sidens indhold (Skip-link)
       </a>
      
@@ -1324,14 +1321,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/header/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/header/"  class="nav-link">
         Header
       </a>
      
@@ -1344,14 +1341,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/inputfelter/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/inputfelter/"  class="nav-link">
         Inputfelter
       </a>
      
@@ -1364,14 +1361,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/knapper/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/knapper/"  class="nav-link">
         Knapper (Buttons)
       </a>
      
@@ -1384,14 +1381,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/spinner/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/spinner/"  class="nav-link">
         Loading spinner
       </a>
      
@@ -1404,14 +1401,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/modal/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/modal/"  class="nav-link">
         Modal
       </a>
      
@@ -1424,14 +1421,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/overflowmenu/"  class="nav-link">
         Overflow menu
       </a>
      
@@ -1444,14 +1441,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/paginering/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/paginering/"  class="nav-link">
         Paginering
       </a>
      
@@ -1464,14 +1461,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/radioknap/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/radioknap/"  class="nav-link">
         Radioknap (Radio button)
       </a>
      
@@ -1484,14 +1481,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/sprogvaelger/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/sprogvaelger/"  class="nav-link">
         Sprogvælger
       </a>
      
@@ -1504,34 +1501,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/strukturerede-lister/" role="menuitem"  class="nav-link">
-        Strukturerede lister
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  " role="none">
-
-  
-
-
-  
-    
-    <a href="/komponenter/search/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/search/"  class="nav-link">
         Søgefelt
       </a>
      
@@ -1544,14 +1521,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/tables/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tables/"  class="nav-link">
         Tabeller
       </a>
      
@@ -1564,14 +1541,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/tags/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tags/"  class="nav-link">
         Tags
       </a>
      
@@ -1584,14 +1561,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/tekstomraade/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tekstomraade/"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
@@ -1604,14 +1581,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/tilbage-link/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tilbage-link/"  class="nav-link">
         Tilbage-link
       </a>
      
@@ -1624,14 +1601,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/tilbage-til-top/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tilbage-til-top/"  class="nav-link">
         Tilbage til toppen
       </a>
      
@@ -1644,14 +1621,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tjekboks/"  class="nav-link">
         Tjekboks (Checkbox)
       </a>
      
@@ -1664,14 +1641,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/toastbesked/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/toastbesked/"  class="nav-link">
         Toastbesked
       </a>
      
@@ -1684,14 +1661,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/toggle/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/toggle/"  class="nav-link">
         Toggle switch
       </a>
      
@@ -1704,14 +1681,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/tooltip/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/tooltip/"  class="nav-link">
         Tooltip
       </a>
      
@@ -1724,14 +1701,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/trinindikator/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/trinindikator/"  class="nav-link">
         Trinindikator
       </a>
      
@@ -1744,14 +1721,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/komponenter/fil-upload/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/fil-upload/"  class="nav-link">
         Vedhæft fil
       </a>
      
@@ -1764,14 +1741,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/komponenter/venstremenu/" role="menuitem"  class="nav-link">
+    <a href="/komponenter/venstremenu/"  class="nav-link">
         Venstremenu
       </a>
      
@@ -1800,7 +1777,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -1810,22 +1787,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
-      <div role="menu" aria-label="Eksempler" class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/eksempler/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/"  class="nav-link">
         Eksempler<span class="helptext"> (overblik)</span>
       </a>
      
@@ -1842,14 +1819,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/eksempler/selvbetjeningsloesninger/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/selvbetjeningsloesninger/"  class="nav-link">
         Selvbetjeningsløsninger
       </a>
      
@@ -1862,7 +1839,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -1875,22 +1852,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
           <span>Patterns</span>
         </button>
-        <div aria-label="Patterns" class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/"  class="nav-link">
         Patterns<span class="helptext"> (overblik)</span>
       </a>
      
@@ -1907,14 +1884,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/angivelse-af-telefonnummer/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/angivelse-af-telefonnummer/"  class="nav-link">
         Angivelse af telefonnummer
       </a>
      
@@ -1927,34 +1904,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/forlad-siden/" role="menuitem"  class="nav-link">
-        Er du sikker på, du vil forlade siden?
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links" role="none">
-
-  
-
-
-  
-    
-    <a href="/eksempler/patterns/formular/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/formular/"  class="nav-link">
         Formular
       </a>
      
@@ -1967,14 +1924,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/eksempler/patterns/session-udloeber/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/patterns/session-udloeber/"  class="nav-link">
         Session udløber
       </a>
      
@@ -1997,14 +1954,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/eksempler/templates/" role="menuitem"  class="nav-link">
+    <a href="/eksempler/templates/"  class="nav-link">
         Templates
       </a>
      
@@ -2033,7 +1990,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -2043,22 +2000,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
         <span>Kode</span>
       </button>
-      <div role="menu" aria-label="Kode" class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/" role="menuitem"  class="nav-link">
+    <a href="/kode/"  class="nav-link">
         Kode<span class="helptext"> (overblik)</span>
       </a>
      
@@ -2075,14 +2032,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/implementering/" role="menuitem"  class="nav-link">
+    <a href="/kode/implementering/"  class="nav-link">
         Implementering af DKFDS
       </a>
      
@@ -2095,7 +2052,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -2108,22 +2065,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
           <span>Komponenter</span>
         </button>
-        <div aria-label="Komponenter" class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/"  class="nav-link">
         Komponenter<span class="helptext"> (overblik)</span>
       </a>
      
@@ -2140,14 +2097,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/accordions/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/accordions/"  class="nav-link">
         Accordions
       </a>
      
@@ -2160,14 +2117,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/badges/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/badges/"  class="nav-link">
         Badges
       </a>
      
@@ -2180,14 +2137,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/beskeder/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/beskeder/"  class="nav-link">
         Beskeder (Alerts)
       </a>
      
@@ -2200,14 +2157,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/broedkrumme/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/broedkrumme/"  class="nav-link">
         Brødkrumme
       </a>
      
@@ -2220,14 +2177,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/cards/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/cards/"  class="nav-link">
         Cards
       </a>
      
@@ -2240,14 +2197,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/cookiemeddelelse/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/cookiemeddelelse/"  class="nav-link">
         Cookiemeddelelse
       </a>
      
@@ -2260,14 +2217,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/datofelter/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/datofelter/"  class="nav-link">
         Datofelter
       </a>
      
@@ -2280,14 +2237,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/datovaelger/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/datovaelger/"  class="nav-link">
         Datovælger
       </a>
      
@@ -2300,14 +2257,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/detaljer/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/detaljer/"  class="nav-link">
         Detaljer
       </a>
      
@@ -2320,14 +2277,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/dropdown/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/dropdown/"  class="nav-link">
         Dropdown
       </a>
      
@@ -2340,14 +2297,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/faneblade/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/faneblade/"  class="nav-link">
         Faneblade (Tabs)
       </a>
      
@@ -2360,14 +2317,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/fejlmeddelelser/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/fejlmeddelelser/"  class="nav-link">
         Fejlmeddelelser
       </a>
      
@@ -2380,14 +2337,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/fejlopsummering/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/fejlopsummering/"  class="nav-link">
         Fejlopsummering
       </a>
      
@@ -2400,14 +2357,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/footer/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/footer/"  class="nav-link">
         Footer
       </a>
      
@@ -2420,14 +2377,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/funktionslink/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/funktionslink/"  class="nav-link">
         Funktionslink
       </a>
      
@@ -2440,14 +2397,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/skip-link/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/skip-link/"  class="nav-link">
         Gå til sidens indhold (Skip-link)
       </a>
      
@@ -2460,14 +2417,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/header/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/header/"  class="nav-link">
         Header
       </a>
      
@@ -2480,14 +2437,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/inputfelter/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/inputfelter/"  class="nav-link">
         Inputfelter
       </a>
      
@@ -2500,14 +2457,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/knapper/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/knapper/"  class="nav-link">
         Knapper (Buttons)
       </a>
      
@@ -2520,14 +2477,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/spinner/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/spinner/"  class="nav-link">
         Loading spinner
       </a>
      
@@ -2540,14 +2497,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/modal/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/modal/"  class="nav-link">
         Modal
       </a>
      
@@ -2560,14 +2517,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/overflowmenu/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/overflowmenu/"  class="nav-link">
         Overflow menu
       </a>
      
@@ -2580,14 +2537,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/paginering/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/paginering/"  class="nav-link">
         Paginering
       </a>
      
@@ -2600,14 +2557,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/radioknap/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/radioknap/"  class="nav-link">
         Radioknap (Radio button)
       </a>
      
@@ -2620,14 +2577,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/sprogvaelger/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/sprogvaelger/"  class="nav-link">
         Sprogvælger
       </a>
      
@@ -2640,34 +2597,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/strukturerede-lister/" role="menuitem"  class="nav-link">
-        Strukturerede lister
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  " role="none">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/search/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/search/"  class="nav-link">
         Søgefelt
       </a>
      
@@ -2680,14 +2617,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tables/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tables/"  class="nav-link">
         Tabeller
       </a>
      
@@ -2700,14 +2637,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tags/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tags/"  class="nav-link">
         Tags
       </a>
      
@@ -2720,14 +2657,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tekstomraade/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tekstomraade/"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
@@ -2740,14 +2677,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tilbage-link/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tilbage-link/"  class="nav-link">
         Tilbage-link
       </a>
      
@@ -2760,14 +2697,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tilbage-til-top/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tilbage-til-top/"  class="nav-link">
         Tilbage til toppen
       </a>
      
@@ -2780,14 +2717,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tjekboks/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tjekboks/"  class="nav-link">
         Tjekboks (Checkbox)
       </a>
      
@@ -2800,14 +2737,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/toastbesked/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/toastbesked/"  class="nav-link">
         Toastbesked
       </a>
      
@@ -2820,14 +2757,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/toggle/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/toggle/"  class="nav-link">
         Toggle switch
       </a>
      
@@ -2840,14 +2777,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tooltip/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/tooltip/"  class="nav-link">
         Tooltip
       </a>
      
@@ -2860,14 +2797,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/komponenter/trinindikator/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/trinindikator/"  class="nav-link">
         Trinindikator
       </a>
      
@@ -2880,14 +2817,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/fil-upload/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/fil-upload/"  class="nav-link">
         Vedhæft fil
       </a>
      
@@ -2900,14 +2837,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/venstremenu/" role="menuitem"  class="nav-link">
+    <a href="/kode/komponenter/venstremenu/"  class="nav-link">
         Venstremenu
       </a>
      
@@ -2930,14 +2867,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/browserunderstoettelse/" role="menuitem"  class="nav-link">
+    <a href="/kode/browserunderstoettelse/"  class="nav-link">
         Browserunderstøttelse
       </a>
      
@@ -2950,14 +2887,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/grid/" role="menuitem"  class="nav-link">
+    <a href="/kode/grid/"  class="nav-link">
         Grid
       </a>
      
@@ -2970,7 +2907,7 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
@@ -2983,22 +2920,22 @@
 
       
       <div class="overflow-menu">
-        <button role="menuitem" aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
           <span>Typografi</span>
         </button>
-        <div aria-label="Typografi" class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
-          <ul class="overflow-list" role="menu">
+        <div class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
+          <ul class="overflow-list">
             
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/typografi/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/"  class="nav-link">
         Typografi<span class="helptext"> (overblik)</span>
       </a>
      
@@ -3015,14 +2952,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/typografi/overskrifter/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/overskrifter/"  class="nav-link">
         Overskrifter
       </a>
      
@@ -3035,14 +2972,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/typografi/tekst/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/tekst/"  class="nav-link">
         Tekst
       </a>
      
@@ -3055,14 +2992,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/typografi/links/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/links/"  class="nav-link">
         Links
       </a>
      
@@ -3075,14 +3012,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/typografi/lister/" role="menuitem"  class="nav-link">
+    <a href="/kode/typografi/lister/"  class="nav-link">
         Lister
       </a>
      
@@ -3105,14 +3042,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/ikoner/" role="menuitem"  class="nav-link">
+    <a href="/kode/ikoner/"  class="nav-link">
         Ikoner
       </a>
      
@@ -3125,14 +3062,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/utilities/" role="menuitem"  class="nav-link">
+    <a href="/kode/utilities/"  class="nav-link">
         Hjælpeklasser (Utilities)
       </a>
      
@@ -3145,14 +3082,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/eksempler-implementering/" role="menuitem"  class="nav-link">
+    <a href="/kode/eksempler-implementering/"  class="nav-link">
         Eksempler på implementering
       </a>
      
@@ -3165,14 +3102,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/print/" role="menuitem"  class="nav-link">
+    <a href="/kode/print/"  class="nav-link">
         Print
       </a>
      
@@ -3185,14 +3122,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/plugins/" role="menuitem"  class="nav-link">
+    <a href="/kode/plugins/"  class="nav-link">
         Plugins
       </a>
      
@@ -3205,14 +3142,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/kode/anbefalinger-vaerktoejer/" role="menuitem"  class="nav-link">
+    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
         Anbefalinger og værktøjer
       </a>
      
@@ -3241,7 +3178,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -3251,22 +3188,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-krav" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-krav" aria-haspopup="true" aria-expanded="false"  >
         <span>Krav</span>
       </button>
-      <div role="menu" aria-label="Krav" class="overflow-menu-inner" id="submenu-level1-krav" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-krav" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/krav/" role="menuitem"  class="nav-link">
+    <a href="/krav/"  class="nav-link">
         Krav<span class="helptext"> (overblik)</span>
       </a>
      
@@ -3283,14 +3220,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/krav/borgerdk-virk/" role="menuitem"  class="nav-link">
+    <a href="/krav/borgerdk-virk/"  class="nav-link">
         Når du skal på borger.dk og Virk
       </a>
      
@@ -3303,14 +3240,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/krav/om-kravene/" role="menuitem"  class="nav-link">
+    <a href="/krav/om-kravene/"  class="nav-link">
         Om kravene til selvbetjeningsløsninger
       </a>
      
@@ -3323,14 +3260,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/krav/tilgaengelighed/" role="menuitem"  class="nav-link">
+    <a href="/krav/tilgaengelighed/"  class="nav-link">
         Tilgængelighed
       </a>
      
@@ -3359,7 +3296,7 @@
 
 
 
-<li class="" role="none">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -3369,22 +3306,22 @@
   
 
   <div class="overflow-menu">
-      <button role="menuitem"  class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-fællesskab" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-fællesskab" aria-haspopup="true" aria-expanded="false"  >
         <span>Fællesskab</span>
       </button>
-      <div role="menu" aria-label="Fællesskab" class="overflow-menu-inner" id="submenu-level1-fællesskab" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
+      <div class="overflow-menu-inner" id="submenu-level1-fællesskab" aria-hidden="true">
+        <ul class="overflow-list">
           
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/"  class="nav-link">
         Fællesskab<span class="helptext"> (overblik)</span>
       </a>
      
@@ -3401,14 +3338,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/samarbejdsforum/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/samarbejdsforum/"  class="nav-link">
         Samarbejdsforum
       </a>
      
@@ -3421,14 +3358,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/governance/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/governance/"  class="nav-link">
         Governance
       </a>
      
@@ -3441,15 +3378,15 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/nyhedsmail/" role="menuitem"  class="nav-link">
-        Nyhedsmail
+    <a href="/faellesskab/nyhedsmail/"  class="nav-link">
+        Nyhedsbrev
       </a>
      
     
@@ -3461,14 +3398,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/kontakt-support/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/kontakt-support/"  class="nav-link">
         Kontakt og support
       </a>
      
@@ -3481,14 +3418,14 @@
     
 
 
-<li class="  " role="none">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/faellesskab/roadmap/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/roadmap/"  class="nav-link">
         Roadmap
       </a>
      
@@ -3501,14 +3438,14 @@
     
 
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
   
 
 
   
     
-    <a href="/faellesskab/releases/" role="menuitem"  class="nav-link">
+    <a href="/faellesskab/releases/"  class="nav-link">
         Release notes
       </a>
      
@@ -3543,16 +3480,16 @@
       <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
         
         
-        <ul class="sidenav-list" role="menu">
+        <ul class="sidenav-list">
           
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/accordions/" role="menuitem" 
+<a href="/komponenter/accordions/" 
   class="nav-link">
   Accordions
 </a>
@@ -3563,12 +3500,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/badges/" role="menuitem" 
+<a href="/komponenter/badges/" 
   class="nav-link">
   Badges
 </a>
@@ -3579,12 +3516,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/beskeder/" role="menuitem" 
+<a href="/komponenter/beskeder/" 
   class="nav-link">
   Beskeder (Alerts)
 </a>
@@ -3595,12 +3532,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/broedkrumme/" role="menuitem" 
+<a href="/komponenter/broedkrumme/" 
   class="nav-link">
   Brødkrumme
 </a>
@@ -3611,12 +3548,12 @@
 
     
 
-<li class="current active has-anchor-links" role="none">
+<li class="current active has-anchor-links">
 
 
   
 
-<a href="/komponenter/cards/" role="menuitem" aria-current="page"
+<a href="/komponenter/cards/" aria-current="page"
   class="nav-link">
   Cards
 </a>
@@ -3628,12 +3565,12 @@
 
     
 
-    <ul class="sidenav-sub_list" role="menu">
+    <ul class="sidenav-sub_list">
     
 
 
-<li class=" " role="none">
-<a href="#card-med-halv-bredde"  role="menuitem">Card med halv bredde</a>
+<li class=" ">
+<a href="#card-med-halv-bredde" >Card med halv bredde</a>
 </li>
 
     
@@ -3641,8 +3578,8 @@
     
 
 
-<li class=" " role="none">
-<a href="#card-med-tredjedel-bredde"  role="menuitem">Card med tredjedel bredde</a>
+<li class=" ">
+<a href="#card-med-tredjedel-bredde" >Card med tredjedel bredde</a>
 </li>
 
     
@@ -3650,8 +3587,8 @@
     
 
 
-<li class=" " role="none">
-<a href="#samme-højde"  role="menuitem">Samme højde</a>
+<li class=" ">
+<a href="#samme-højde" >Samme højde</a>
 </li>
 
     
@@ -3666,12 +3603,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/cookiemeddelelse/" role="menuitem" 
+<a href="/komponenter/cookiemeddelelse/" 
   class="nav-link">
   Cookiemeddelelse
 </a>
@@ -3682,12 +3619,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/datofelter/" role="menuitem" 
+<a href="/komponenter/datofelter/" 
   class="nav-link">
   Datofelter
 </a>
@@ -3698,12 +3635,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/datovaelger/" role="menuitem" 
+<a href="/komponenter/datovaelger/" 
   class="nav-link">
   Datovælger
 </a>
@@ -3714,12 +3651,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/detaljer/" role="menuitem" 
+<a href="/komponenter/detaljer/" 
   class="nav-link">
   Detaljer
 </a>
@@ -3730,12 +3667,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/dropdown/" role="menuitem" 
+<a href="/komponenter/dropdown/" 
   class="nav-link">
   Dropdown
 </a>
@@ -3746,12 +3683,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/faneblade/" role="menuitem" 
+<a href="/komponenter/faneblade/" 
   class="nav-link">
   Faneblade (Tabs)
 </a>
@@ -3762,12 +3699,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/fejlmeddelelser/" role="menuitem" 
+<a href="/komponenter/fejlmeddelelser/" 
   class="nav-link">
   Fejlmeddelelser
 </a>
@@ -3778,12 +3715,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/fejlopsummering/" role="menuitem" 
+<a href="/komponenter/fejlopsummering/" 
   class="nav-link">
   Fejlopsummering
 </a>
@@ -3794,12 +3731,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/footer/" role="menuitem" 
+<a href="/komponenter/footer/" 
   class="nav-link">
   Footer
 </a>
@@ -3810,12 +3747,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/funktionslink/" role="menuitem" 
+<a href="/komponenter/funktionslink/" 
   class="nav-link">
   Funktionslink
 </a>
@@ -3826,12 +3763,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/skip-link/" role="menuitem" 
+<a href="/komponenter/skip-link/" 
   class="nav-link">
   Gå til sidens indhold (Skip-link)
 </a>
@@ -3842,12 +3779,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/header/" role="menuitem" 
+<a href="/komponenter/header/" 
   class="nav-link">
   Header
 </a>
@@ -3858,12 +3795,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/inputfelter/" role="menuitem" 
+<a href="/komponenter/inputfelter/" 
   class="nav-link">
   Inputfelter
 </a>
@@ -3874,12 +3811,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/knapper/" role="menuitem" 
+<a href="/komponenter/knapper/" 
   class="nav-link">
   Knapper (Buttons)
 </a>
@@ -3890,12 +3827,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/spinner/" role="menuitem" 
+<a href="/komponenter/spinner/" 
   class="nav-link">
   Loading spinner
 </a>
@@ -3906,12 +3843,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/modal/" role="menuitem" 
+<a href="/komponenter/modal/" 
   class="nav-link">
   Modal
 </a>
@@ -3922,12 +3859,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/overflowmenu/" role="menuitem" 
+<a href="/komponenter/overflowmenu/" 
   class="nav-link">
   Overflow menu
 </a>
@@ -3938,12 +3875,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/paginering/" role="menuitem" 
+<a href="/komponenter/paginering/" 
   class="nav-link">
   Paginering
 </a>
@@ -3954,12 +3891,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/radioknap/" role="menuitem" 
+<a href="/komponenter/radioknap/" 
   class="nav-link">
   Radioknap (Radio button)
 </a>
@@ -3970,12 +3907,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/sprogvaelger/" role="menuitem" 
+<a href="/komponenter/sprogvaelger/" 
   class="nav-link">
   Sprogvælger
 </a>
@@ -3986,28 +3923,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/strukturerede-lister/" role="menuitem" 
-  class="nav-link">
-  Strukturerede lister
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  " role="none">
-
-
-  
-
-<a href="/komponenter/search/" role="menuitem" 
+<a href="/komponenter/search/" 
   class="nav-link">
   Søgefelt
 </a>
@@ -4018,12 +3939,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/tables/" role="menuitem" 
+<a href="/komponenter/tables/" 
   class="nav-link">
   Tabeller
 </a>
@@ -4034,12 +3955,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/tags/" role="menuitem" 
+<a href="/komponenter/tags/" 
   class="nav-link">
   Tags
 </a>
@@ -4050,12 +3971,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/tekstomraade/" role="menuitem" 
+<a href="/komponenter/tekstomraade/" 
   class="nav-link">
   Tekstområde (Textarea)
 </a>
@@ -4066,12 +3987,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/tilbage-link/" role="menuitem" 
+<a href="/komponenter/tilbage-link/" 
   class="nav-link">
   Tilbage-link
 </a>
@@ -4082,12 +4003,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/tilbage-til-top/" role="menuitem" 
+<a href="/komponenter/tilbage-til-top/" 
   class="nav-link">
   Tilbage til toppen
 </a>
@@ -4098,12 +4019,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/tjekboks/" role="menuitem" 
+<a href="/komponenter/tjekboks/" 
   class="nav-link">
   Tjekboks (Checkbox)
 </a>
@@ -4114,12 +4035,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/toastbesked/" role="menuitem" 
+<a href="/komponenter/toastbesked/" 
   class="nav-link">
   Toastbesked
 </a>
@@ -4130,12 +4051,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/toggle/" role="menuitem" 
+<a href="/komponenter/toggle/" 
   class="nav-link">
   Toggle switch
 </a>
@@ -4146,12 +4067,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/tooltip/" role="menuitem" 
+<a href="/komponenter/tooltip/" 
   class="nav-link">
   Tooltip
 </a>
@@ -4162,12 +4083,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/trinindikator/" role="menuitem" 
+<a href="/komponenter/trinindikator/" 
   class="nav-link">
   Trinindikator
 </a>
@@ -4178,12 +4099,12 @@
 
     
 
-<li class="  " role="none">
+<li class="  ">
 
 
   
 
-<a href="/komponenter/fil-upload/" role="menuitem" 
+<a href="/komponenter/fil-upload/" 
   class="nav-link">
   Vedhæft fil
 </a>
@@ -4194,12 +4115,12 @@
 
     
 
-<li class="  has-anchor-links" role="none">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/komponenter/venstremenu/" role="menuitem" 
+<a href="/komponenter/venstremenu/" 
   class="nav-link">
   Venstremenu
 </a>
@@ -4217,7 +4138,7 @@
     <main class="col-12 col-lg-9" id="main-content">
           <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <div class="alert-body">
-            <p class="alert-heading pr-7">Vælg et tema</p><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
+            <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
             <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
@@ -4231,7 +4152,11 @@
           <div class="subheading">
             Komponenter
           </div>
+
+          
           <h1 id="cards">Cards</h1>
+          
+
           
           
           <ul class="d-lg-none nobullet-list">
@@ -4246,7 +4171,7 @@
 
           
           
-<div class="component-preview  component-preview-cards-full-width" aria-label="Eksempel på card">
+<div class="component-preview  component-preview-cards-full-width">
     
     <div class="component-link px-4 py-4">
         
@@ -4254,7 +4179,10 @@
         
     </div>
     
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
+    
+    <div class="sr-only">Eksempel på card</div>
+    
+    <div class="component-example px-4 py-4">
         
         <div class="card">
     <div class="card-header">
@@ -4263,20 +4191,17 @@
     </div>
 
     <div class="card-text">
-        <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har
-            lyst til.</p>
+        <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til.</p>
     </div>
 
     <div class="card-content">
         <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
         <div class='row background-data-green-blue-300 p-6'>
-            <div
-                class='col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0'>
+            <div class='col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0'>
                 <h2>Aliquam aliquet niboh faucibus varius</h2>
-                <p>Aenean euismod vestibulum lacinia. Pellentesque nec nisi
-                    diam. Pellentesque nec urna vel ante ultrices facilisis
-                    sed in dolor. Curabitur eu leo semper, gravida justo
-                    at, euismod ex.</p>
+                <p>Aenean euismod vestibulum lacinia. Pellentesque nec nisi diam. Pellentesque
+                    nec urna vel ante ultrices facilisis sed in dolor. Curabitur eu leo
+                    semper, gravida justo at, euismod ex.</p>
             </div>
             <div class='col-12 col-md-6 col-lg-7 align-text-right'><img src='/assets/img/cards/Card-illustration-graf.svg' alt='Billedeksempel med graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100 mt-md-4' />
             </div>
@@ -4286,17 +4211,15 @@
     <div class="card-footer card-action">
 
         <div class="action-buttons">
-            <button
-                class="button button-secondary">Sekundærknap</button><button
+            <button class="button button-secondary">Sekundærknap</button><button
                 class="button button-tertiary">Tertiærknap</button>
         </div>
         <div class="action-links">
             <ul class="nobullet-list">
-                <li><a href="javascript:void(0);"
-                        class="default link state">Et link til et sted i
-                        løsningen</a></li>
-                <li><a href="javascript:void(0);" class="icon-link">Et link
-                        til et sted uden for
+                <li><a href="javascript:void(0);" class="default link state">Et link til et
+                        sted i løsningen</a></li>
+                <li><a href="javascript:void(0);" class="icon-link">Et link til et sted uden
+                        for
                         løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
                 </li>
             </ul>
@@ -4341,8 +4264,11 @@
 
 <p>Skriv kort og præcist i hvert card.</p>
 
-<div class=" component-preview-cards-dos-donts" aria-label="Cards do's and don'ts">
-    <div class="component-example" aria-label="Eksempel">
+<div class=" component-preview-cards-dos-donts">
+    
+    <div class="sr-only">Cards do's and don'ts</div>
+    
+    <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
         <h3 class="h4">Sådan (do)</h3>
@@ -4380,7 +4306,7 @@
   
   
   
-<div class="component-preview  component-preview-cards-third-width" aria-label="Eksempel på cards i tre kolonner">
+<div class="component-preview  component-preview-cards-third-width">
     
     <div class="component-link px-4 py-4">
         
@@ -4388,7 +4314,10 @@
         
     </div>
     
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
+    
+    <div class="sr-only">Eksempel på cards i tre kolonner</div>
+    
+    <div class="component-example px-4 py-4">
         
         <div class="container pb-5">
     <div class="row">
@@ -4396,13 +4325,13 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h2 class="header-title">Header</h2>
+                    <h3 class="header-title">Header</h3>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
                 <div class="card-text">
-                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive
-                        hvad du har lyst til.</p>
+                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst
+                        til.</p>
                 </div>
 
                 <div class="card-footer card-action">
@@ -4412,10 +4341,10 @@
                     </div>
                     <div class="action-links">
                         <ul class="nobullet-list">
-                            <li><a href="javascript:void(0);" class="default link state">Et link til
-                                    et sted i løsningen</a></li>
-                            <li><a href="javascript:void(0);" class="icon-link">Et link til et sted
-                                    uden for
+                            <li><a href="javascript:void(0);" class="default link state">Et
+                                    link til et sted i løsningen</a></li>
+                            <li><a href="javascript:void(0);" class="icon-link">Et link til et
+                                    sted uden for
                                     løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
                             </li>
                         </ul>
@@ -4428,21 +4357,21 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h2 class="header-title">Header</h2>
+                    <h3 class="header-title">Header</h3>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
                 <div class="card-content">
                     <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
                     <div class="align-text-center background-data-green-blue-300 p-6">
-                        <h2 class="h5 mb-5">Lorem ipsum fordeling</h2>
+                        <h4 class="h5 mb-5">Lorem ipsum fordeling</h4>
                         <div class="mt-3 row">
                             <div class="col-6">
                                 <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i København er 80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">København</span>
                             </div>
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele
-                                    landet</span></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele landet</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -4454,13 +4383,13 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h2 class="header-title">Header</h2>
+                    <h3 class="header-title">Header</h3>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
                 <div class="card-text">
-                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive
-                        hvad du har lyst til.</p>
+                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst
+                        til.</p>
                 </div>
 
             </div>
@@ -4484,7 +4413,7 @@
   
   
   
-<div class="component-preview  component-preview-cards-half-width" aria-label="Eksempel på cards i to kolonner">
+<div class="component-preview  component-preview-cards-half-width">
     
     <div class="component-link px-4 py-4">
         
@@ -4492,7 +4421,10 @@
         
     </div>
     
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
+    
+    <div class="sr-only">Eksempel på cards i to kolonner</div>
+    
+    <div class="component-example px-4 py-4">
         
         <div class="container pb-5">
     <div class="row">
@@ -4500,26 +4432,26 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h2 class="header-title">Header</h2>
+                    <h3 class="header-title">Header</h3>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
                 <div class="card-content">
                     <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
                     <div class="align-text-center row background-data-pink-violet-300 p-6">
                         <div class="col-12 col-sm-6 mb-6 mb-sm-0">
-                            <h2 class="h5">2018</h2><img src="/assets/img/cards/card-illustration-22procent.svg" alt="Billedeksempel, der viser at fordelingen var 22% i 2018" class="w-percent-60 w-percent-sm-40 w-percent-md-60" />
+                            <h4 class="h5">2018</h4><img src="/assets/img/cards/card-illustration-22procent.svg" alt="Billedeksempel, der viser at fordelingen var 22% i 2018" class="w-percent-60 w-percent-sm-40 w-percent-md-60" />
                             <p class="mt-0">Lorem ipsum dolor sit amet</p>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <h2 class="h5">2019</h2><img src="/assets/img/cards/card-illustration-41procent.svg" alt="Billedeksempel, der viser at fordelingen var 41% i 2019" class="w-percent-60 w-percent-sm-40 w-percent-md-60" />
+                            <h4 class="h5">2019</h4><img src="/assets/img/cards/card-illustration-41procent.svg" alt="Billedeksempel, der viser at fordelingen var 41% i 2019" class="w-percent-60 w-percent-sm-40 w-percent-md-60" />
                             <p class="mt-0">Etiam aliquet at felis vel</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="card-text">
-                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive
-                        hvad du har lyst til.</p>
+                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst
+                        til.</p>
                 </div>
 
             </div>
@@ -4533,8 +4465,7 @@
                     <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
                     <div class="row background-data-violet-300 p-6">
                         <div class="col-12 align-text-left">
-                            <h2 class="h3 mb-0">3 ofte stillede spørgsmål
-                            </h2>
+                            <h3 class="h3 mb-0">3 ofte stillede spørgsmål</h3>
                             <ul class="mt-0 noindent-list">
                                 <li>In viverra faucibus lorem?</li>
                                 <li>Phasellus posuere neque?</li>
@@ -4544,7 +4475,7 @@
                     </div>
                 </div>
                 <div class="card-header">
-                    <h2 class="header-title">Header</h2>
+                    <h4 class="header-title">Header</h4>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -4555,10 +4486,10 @@
                     </div>
                     <div class="action-links">
                         <ul class="nobullet-list">
-                            <li><a href="javascript:void(0);" class="default link state">Et link til
-                                    et sted i løsningen</a></li>
-                            <li><a href="javascript:void(0);" class="icon-link">Et link til et sted
-                                    uden for
+                            <li><a href="javascript:void(0);" class="default link state">Et
+                                    link til et sted i løsningen</a></li>
+                            <li><a href="javascript:void(0);" class="icon-link">Et link til et
+                                    sted uden for
                                     løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
                             </li>
                         </ul>
@@ -4585,7 +4516,7 @@
   
   
   
-<div class="component-preview  component-preview-cards-same-height" aria-label="Eksempel på cards med samme højde">
+<div class="component-preview  component-preview-cards-same-height">
     
     <div class="component-link px-4 py-4">
         
@@ -4593,7 +4524,10 @@
         
     </div>
     
-    <div class="component-example px-4 py-4" aria-label="Eksempel">
+    
+    <div class="sr-only">Eksempel på cards med samme højde</div>
+    
+    <div class="component-example px-4 py-4">
         
         <div class="container pb-5">
     <div class="row">
@@ -4604,25 +4538,24 @@
                 <div class="card-content">
                     <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
                     <div class="align-text-center background-data-green-blue-300 p-6">
-                        <h2 class="h5 mb-5">Lorem ipsum fordeling</h2>
+                        <h3 class="h5 mb-5">Lorem ipsum fordeling</h3>
                         <div class="mt-3 row">
                             <div class="col-6">
                                 <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i København er 80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">København</span>
                             </div>
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele
-                                    landet</span></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele landet</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-header">
-                    <h2 class="header-title">Header</h2>
+                    <h4 class="header-title">Header</h4>
                 </div>
 
                 <div class="card-text">
-                    <p>In sollicitudin, nulla sit amet facilisis euismod,
-                        ex ex hendrerit eros, et egestas purus lectus vitae
-                        tortor.</p>
+                    <p>In sollicitudin, nulla sit amet facilisis euismod, ex ex hendrerit
+                        eros, et egestas purus lectus vitae tortor.</p>
                 </div>
 
                 <div class="card-footer card-action">
@@ -4642,24 +4575,23 @@
                 <div class="card-content">
                     <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
                     <div class="align-text-center background-data-green-blue-300 p-6">
-                        <h2 class="h5 mb-5">Lorem ipsum fordeling</h2>
+                        <h3 class="h5 mb-5">Lorem ipsum fordeling</h3>
                         <div class="mt-3 row">
                             <div class="col-6">
                                 <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i København er 80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">København</span>
                             </div>
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele
-                                    landet</span></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele landet</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-header">
-                    <h2 class="header-title">Header</h2>
+                    <h4 class="header-title">Header</h4>
                 </div>
 
                 <div class="card-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
 
                 <div class="card-footer card-action">
@@ -4679,25 +4611,24 @@
                 <div class="card-content">
                     <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
                     <div class="align-text-center background-data-green-blue-300 p-6">
-                        <h2 class="h5 mb-5">Lorem ipsum fordeling</h2>
+                        <h3 class="h5 mb-5">Lorem ipsum fordeling</h3>
                         <div class="mt-3 row">
                             <div class="col-6">
                                 <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i København er 80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">København</span>
                             </div>
                             <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele
-                                    landet</span></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele landet</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-header">
-                    <h2 class="header-title">Header</h2>
+                    <h4 class="header-title">Header</h4>
                 </div>
 
                 <div class="card-text">
-                    <p>Sed tincidunt, risus vitae rutrum accumsan, urna leo
-                        fermentum dui, ac suscipit ante nulla sit amet
-                        magna.</p>
+                    <p>Sed tincidunt, risus vitae rutrum accumsan, urna leo fermentum dui, ac
+                        suscipit ante nulla sit amet magna.</p>
                 </div>
 
                 <div class="card-footer card-action">
@@ -4759,8 +4690,9 @@
 
 <footer>
     <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
-    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
-    <span class="d-none d-md-inline-block">Til toppen</span>
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+    <span class="sr-only">Til toppen af siden</span>
+    <span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
 </a>
     <div class="footer">
         <div class="container">

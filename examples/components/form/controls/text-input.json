@@ -1,9 +1,0 @@
-{
-  "params":{
-    "id": "input-type-text",
-    "label": {
-      "text": "Inputfelt med label"
-    },
-    "name": "input-type-text"
-  }
-}

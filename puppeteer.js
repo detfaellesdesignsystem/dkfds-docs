@@ -51,7 +51,6 @@ var pdfUrls = [
     "komponenter/paginering",
     "komponenter/radioknap/",
     "komponenter/sprogvaelger/",
-    "komponenter/strukturerede-lister/",
     "komponenter/search/",
     "komponenter/tables/",
     "komponenter/tags/",
@@ -69,7 +68,6 @@ var pdfUrls = [
     "eksempler/selvbetjeningsloesninger/",
     "eksempler/patterns/",
     "eksempler/patterns/angivelse-af-telefonnummer/",
-    "eksempler/patterns/forlad-siden/",
     "eksempler/patterns/formular/",
     "eksempler/patterns/session-udloeber/",
     "eksempler/templates/",
@@ -101,7 +99,6 @@ var pdfUrls = [
     "kode/komponenter/paginering",
     "kode/komponenter/radioknap/",
     "kode/komponenter/sprogvaelger/",
-    "kode/komponenter/strukturerede-lister/",
     "kode/komponenter/search/",
     "kode/komponenter/tables/",
     "kode/komponenter/tags/",
@@ -173,7 +170,8 @@ var exampleUrls = [
     {"url": "pages/eksempler/opsummering/opsummering-2/", "filename": "opsummering-2"},
     {"url": "pages/eksempler/kvittering/kvittering-1/", "filename": "kvittering-1"},
     {"url": "pages/eksempler/kvittering/kvittering-2/", "filename": "kvittering-2"},
-    {"url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "filename": "formular-med-fejl-1"}
+    {"url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "filename": "formular-med-fejl-1"},
+    {"url": "pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/", "filename": "trinindikator-med-fejl-1"}
 ];
 
 (async () => {

@@ -2,16 +2,19 @@
 permalink: /faellesskab/nyhedsmail/tilmeldt/
 parentlink: /faellesskab/nyhedsmail/
 layout: styleguide
-title: Tilmelding til nyhedsmail
+title: Tilmelding til nyhedsbrev
 category: Faellesskab_category
 subcategory: Fællesskab
-description: "Tilmelding til nyhedsmail fra Det Fælles Designsystem"
+description: "Tilmelding til nyhedsbrev fra Det Fælles Designsystem"
 tags:
 ---
-<div class="alert alert-success d-none mb-8" id="newsletter-message" role="alert">
+<div class="alert mt-5" id="newsletter-alert" role="alert" hidden>
     <div class="alert-body">
-        <p class="alert-text"></p>
+        <h2 class="alert-heading"></h2>
+        <div class="alert-text"></div>
     </div>
 </div>
 
-<a href="/faellesskab/nyhedsmail/">Tilmeld endnu en mailadresse</a>
+<p class="mt-9 mb-9 pt-0">
+    <a href="/faellesskab/nyhedsmail/">Tilmeld endnu en <span class='nowrap'>e-mailadresse</span></a>
+</p>

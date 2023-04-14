@@ -1,4 +1,41 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
-{%- for input in params -%}
-    {{textinput(input)}}
-{% endfor -%}
+
+{{
+    textinput({
+        "id": "input-antal",
+        "name": "input-antal",
+        "label": "Antal styk",
+        "type": "number",
+        "suffix": "stk.",
+        "value": "56",
+        "classes": {
+            "input": "input-char-8"
+        }
+    })
+}}
+{{
+    textinput({
+        "id": "input-pris",
+        "name": "input-pris",
+        "label": "Pris i 1000 kr.",
+        "type": "number",
+        "suffix": "000 kr",
+        "value": "123",
+        "classes": {
+            "input": "input-char-11"
+        }
+    })
+}}
+{{
+    textinput({
+        "id": "input-beloeb",
+        "name": "input-beloeb",
+        "label": "Beløb i €",
+        "type": "number",
+        "prefix": "€",
+        "value": "1.234",
+        "classes": {
+            "input": "input-width-xs"
+        }
+    })
+}}

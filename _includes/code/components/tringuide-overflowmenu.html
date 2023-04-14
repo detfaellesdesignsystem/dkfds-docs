@@ -1,38 +1,41 @@
-<div class="overflow-menu  overflow-menu--open-right">
-    <button class="button-overflow-menu js-dropdown "
-        data-js-target="overflow5" aria-haspopup="true"
-        aria-expanded="false">
+<div class="overflow-menu overflow-menu--open-right sidebar-col">
+    <button class="button-overflow-menu js-dropdown" data-js-target="trinindikator-overflow"
+        aria-haspopup="true" aria-expanded="false">
         Trin 2 af 3
-        <svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#arrow-drop-down"></use></svg>
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
     </button>
-    <div class="overflow-menu-inner" id="overflow5" aria-hidden="true">
+    <div class="overflow-menu-inner" id="trinindikator-overflow" aria-hidden="true">
 
-        <nav>
-            <ul class='sidenav-list' role='menu'>
-                <li role='none'>
-                    <a href='#' role='menuitem'>
-                        <span class='sidenav-number'>1.</span><span
-                            class='sidenav-title'>Lorem ipsum</span>
-                        <span class='sidenav-icon'>
-                            <svg class='icon-svg' aria-hidden='true' focusable='false' tabindex='-1'><use xlink:href='#done'></use></svg>
+        <nav class="sidebar-col">
+            <ul class="sidenav-list" role="menu">
+                <li role="none">
+                    <a href="javascript:void(0);" role="menuitem">
+                        <span class="sidenav-number">1.</span>
+                        <div>
+                            <span>Lorem ipsum</span>
+                        </div>
+                        <span class="sidenav-icon">
+                            <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use xlink:href="#done"></use></svg>
                         </span>
                     </a>
                 </li>
-                <li role='none' class='active current'>
-                    <a href='#' role='menuitem' aria-current='page'>
-                        <span class='sidenav-number'>2.</span><span
-                            class='sidenav-title'>Dolor sit amet</span>
+                <li class="active current " role="none">
+                    <a href="javascript:void(0);" role="menuitem" aria-current="page">
+                        <span class="sidenav-number">2.</span>
+                        <div>
+                            <span>Dolor sit amet</span>
+                        </div>
                     </a>
                 </li>
-                <li role='none'>
-                    <a href='#' role='menuitem'>
-                        <span class='sidenav-number'>3.</span><span
-                            class='sidenav-title'>Consectetur adipiscing
-                            elit</span>
+                <li role="none">
+                    <a href="javascript:void(0);" role="menuitem">
+                        <span class="sidenav-number">3.</span>
+                        <div>
+                            <span>Consectetur adipiscing elit</span>
+                        </div>
                     </a>
                 </li>
             </ul>
         </nav>
-
     </div>
 </div>

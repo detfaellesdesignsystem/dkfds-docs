@@ -92,7 +92,6 @@ Komponenter_category:
   - href: /komponenter/paginering/
   - href: /komponenter/radioknap/
   - href: /komponenter/sprogvaelger/
-  - href: /komponenter/strukturerede-lister/
   - href: /komponenter/search/
   - href: /komponenter/tables/
   - href: /komponenter/tags/
@@ -149,7 +148,6 @@ Kode_Komponenter_category:
   - href: /kode/komponenter/paginering/
   - href: /kode/komponenter/radioknap/
   - href: /kode/komponenter/sprogvaelger/
-  - href: /kode/komponenter/strukturerede-lister/
   - href: /kode/komponenter/search/
   - href: /kode/komponenter/tables/
   - href: /kode/komponenter/tags/
@@ -172,7 +170,6 @@ Eksempler_category:
 
 Patterns_category:
 - href: /eksempler/patterns/angivelse-af-telefonnummer/
-- href: /eksempler/patterns/forlad-siden/
 - href: /eksempler/patterns/formular/
 - href: /eksempler/patterns/session-udloeber/
 
@@ -214,3 +211,4 @@ Eksempelloesninger_category:
 - href: /pages/eksempler/kvittering/kvittering-1/
 - href: /pages/eksempler/kvittering/kvittering-2/
 - href: /pages/eksempler/formular-med-fejl/formular-med-fejl-1/
+- href: /pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/

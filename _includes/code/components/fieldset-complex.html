@@ -1,204 +1,173 @@
-<h1 class="h2">Dine kontaktoplysninger</h1>
+<h2>Dine kontaktoplysninger</h2>
 <form novalidate>
+
     <div class="form-group">
+        <label class="form-label" for="fnavn-complex">Fornavn</label>
 
-        <label class="form-label" for="fnavn">
-            Fornavn
-        </label>
-
-        <input class="form-input" id="fnavn" name="fnavn" type="text"
-            required />
-
-    </div>
-    <div class="form-group">
-
-        <label class="form-label" for="enavn">
-            Efternavn
-        </label>
-
-        <input class="form-input" id="enavn" name="enavn" type="text"
-            required />
-
-    </div>
-    <div class="form-group">
-
-        <label class="form-label" for="fieldset-email">
-            E-mail adresse
-        </label>
-
-        <input class="form-input" id="fieldset-email" name="email"
-            type="text" required />
-
-    </div>
-    <div class="form-group">
-
-        <label class="form-label" for="fieldset-telefon">
-            Telefonnummer
-        </label>
-
-        <input class="form-input input-width-s" id="fieldset-telefon"
-            name="telefon" type="text" required />
-
+        <input type="text" id="fnavn-complex" name="fnavn-complex" class="form-input"
+            required>
     </div>
 
     <div class="form-group">
-        <fieldset>
-            <legend class="form-label">Hvordan vil du helst kontaktes?
+        <label class="form-label" for="enavn-complex">Efternavn</label>
+
+        <input type="text" id="enavn-complex" name="enavn-complex" class="form-input"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="email-complex">E-mailadresse</label>
+
+        <input type="email" id="email-complex" name="email-complex" class="form-input"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="telefon-complex">Telefonnummer</label>
+
+        <input type="tel" id="telefon-complex" name="telefon-complex"
+            class="form-input input-width-s" required>
+    </div>
+
+    <div class="form-group">
+        <fieldset role="radiogroup">
+            <legend class="form-label">
+                Hvordan vil du helst kontaktes?
             </legend>
-            <ul class="nobullet-list">
-                <li>
-                    <div class="form-group-radio">
-                        <input id="kontakt-telefon" type="radio"
-                            name="kontakt" value="telefon"
-                            class="form-radio radio-large " />
-                        <label for="kontakt-telefon"
-                            id="form-label-kontakt-telefon" class="">Pr.
-                            telefon </label>
 
-                    </div>
-                </li>
-                <li>
-                    <div class="form-group-radio">
-                        <input id="kontakt-email" type="radio"
-                            name="kontakt" value="email"
-                            class="form-radio radio-large " />
-                        <label for="kontakt-email"
-                            id="form-label-kontakt-email" class="">Pr.
-                            e-mail </label>
+            <div class="form-group-radio">
+                <input type="radio" id="kontakt-option1" name="kontakt"
+                    class="form-radio radio-large" value="telefon">
+                <label class="form-label" for="kontakt-option1">Pr. telefon</label>
 
-                    </div>
-                </li>
-            </ul>
+            </div>
+
+            <div class="form-group-radio">
+                <input type="radio" id="kontakt-option2" name="kontakt"
+                    class="form-radio radio-large" value="email">
+                <label class="form-label" for="kontakt-option2">Pr. e-mail</label>
+
+            </div>
+
         </fieldset>
     </div>
+
     <div class="form-group">
         <fieldset>
-            <legend class="form-label">Hvornår på dagen vil det passe
-                bedst, at vi kontakter dig?</legend>
-            <ul class="nobullet-list">
-                <li>
-                    <input id="checkbox-morgen" type="checkbox"
-                        name="tidspunkt[]" value="morgen"
-                        class="form-checkbox checkbox-large " />
-                    <label for="checkbox-morgen" class="">Om
-                        morgenen</label>
-                </li>
-                <li>
-                    <input id="checkbox-middag" type="checkbox"
-                        name="tidspunkt[]" value="middag"
-                        class="form-checkbox checkbox-large " />
-                    <label for="checkbox-middag" class="">Ved
-                        middagstid</label>
-                </li>
-                <li>
-                    <input id="checkbox-eftermiddag" type="checkbox"
-                        name="tidspunkt[]" value="eftermiddag"
-                        class="form-checkbox checkbox-large " />
-                    <label for="checkbox-eftermiddag" class="">Om
-                        eftermiddagen</label>
-                </li>
-                <li>
-                    <input id="checkbox-aften" type="checkbox"
-                        name="tidspunkt[]" value="aften"
-                        class="form-checkbox checkbox-large " />
-                    <label for="checkbox-aften" class="">Om aftenen</label>
-                </li>
-            </ul>
+            <legend class="form-label">
+                Hvornår på dagen vil det passe bedst, at vi kontakter dig?
+            </legend>
+
+            <div class="form-group-checkbox">
+                <input type="checkbox" id="checkbox-tidspunkt-option1" name="tidspunkt[]"
+                    class="form-checkbox checkbox-large" value="morgen">
+                <label class="form-label" for="checkbox-tidspunkt-option1">Om morgenen</label>
+
+            </div>
+
+            <div class="form-group-checkbox">
+                <input type="checkbox" id="checkbox-tidspunkt-option2" name="tidspunkt[]"
+                    class="form-checkbox checkbox-large" value="middag">
+                <label class="form-label" for="checkbox-tidspunkt-option2">Ved
+                    middagstid</label>
+
+            </div>
+
+            <div class="form-group-checkbox">
+                <input type="checkbox" id="checkbox-tidspunkt-option3" name="tidspunkt[]"
+                    class="form-checkbox checkbox-large" value="eftermiddag">
+                <label class="form-label" for="checkbox-tidspunkt-option3">Om
+                    eftermiddagen</label>
+
+            </div>
+
+            <div class="form-group-checkbox">
+                <input type="checkbox" id="checkbox-tidspunkt-option4" name="tidspunkt[]"
+                    class="form-checkbox checkbox-large" value="aften">
+                <label class="form-label" for="checkbox-tidspunkt-option4">Om aftenen</label>
+
+            </div>
+
         </fieldset>
     </div>
+
     <div class="form-group">
         <fieldset>
             <legend class="h4">Personlige oplysninger</legend>
 
-            <!-- Felt start: Fødselsdato -->
-
-            <div class="form-group  mt-0">
-                <fieldset aria-describedby="example-date-field-hint ">
-                    <legend class="form-label">Fødselsdato</legend>
-                    <span class="form-hint"
-                        id="example-date-field-hint">For eksempel: 05 12
+            <div class="form-group mt-0">
+                <fieldset aria-describedby="date-input-birthday-hint ">
+                    <legend class="form-label">
+                        Fødselsdato
+                    </legend>
+                    <span class="form-hint" id="date-input-birthday-hint">For eksempel: 05 12
                         1987</span>
 
                     <div class="date-group js-calendar-group mt-3">
+
                         <div class="form-group form-group-day">
                             <label class="form-label"
-                                for="date-day">Dag</label>
-                            <input class="form-input js-calendar-day-input"
-                                id="date-day" value="" type="tel"
-                                data-min="1" data-max="31" maxlength="2"
-                                pattern="^[0-9]{0,2}$"
+                                for="date-input-birthday-day">Dag</label>
+
+                            <input type="tel" id="date-input-birthday-day"
+                                class="form-input js-calendar-day-input" required data-min="1"
+                                data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
                                 data-input-regex="^[0-9]{0,2}$"
-                                title="Indskriv dag på måneden som tal"
-                                aria-describedby="example-date-field-hint" />
+                                title="Indtast dag på måneden som tal">
                         </div>
+
                         <div class="form-group form-group-month">
                             <label class="form-label"
-                                for="date-month">Måned</label>
-                            <input
-                                class="form-input js-calendar-month-input"
-                                id="date-month" value="" type="tel"
+                                for="date-input-birthday-month">Måned</label>
+
+                            <input type="tel" id="date-input-birthday-month"
+                                class="form-input js-calendar-month-input" required
                                 data-min="1" data-max="12" maxlength="2"
-                                pattern="^[0-9]{0,2}$"
-                                data-input-regex="^[0-9]{0,2}$"
-                                title="Indskriv månedens nummer"
-                                aria-describedby="example-date-field-hint" />
+                                pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast månedens nummer">
                         </div>
-                        <div class="form-group form-group-year ">
+
+                        <div class="form-group form-group-year">
                             <label class="form-label"
-                                for="date-year">År</label>
-                            <input
-                                class="form-input js-calendar-year-input"
-                                id="date-year" value="" type="tel"
-                                data-min="1900" data-max="3000"
-                                maxlength="4" pattern="^[0-9]{0,4}$"
-                                data-input-regex="^[0-9]{0,4}$"
-                                title="Indskriv årstal"
-                                aria-describedby="example-date-field-hint" />
+                                for="date-input-birthday-year">År</label>
+
+                            <input type="tel" id="date-input-birthday-year"
+                                class="form-input js-calendar-year-input" required
+                                data-min="1900" data-max="3000" maxlength="4"
+                                pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$"
+                                title="Indtast årstal">
                         </div>
 
                     </div>
                 </fieldset>
             </div>
 
-            <!-- Felt slut: Fødselsdato -->
-
-            <!-- Felt start: Odense -->
             <div class="form-group">
-                <fieldset>
-                    <legend class="h5">Bor du i Odense?</legend>
-                    <ul class="nobullet-list">
-                        <li>
-                            <div class="form-group-radio">
-                                <input id="odense-ja" type="radio"
-                                    name="odense" value="ja"
-                                    class="form-radio radio-large " />
-                                <label for="odense-ja"
-                                    id="form-label-odense-ja" class="">Ja
-                                </label>
+                <fieldset role="radiogroup">
+                    <legend class="form-label">
+                        Bor du i Odense?
+                    </legend>
 
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-group-radio">
-                                <input id="odense-nej" type="radio"
-                                    name="odense" value="nej"
-                                    class="form-radio radio-large " />
-                                <label for="odense-nej"
-                                    id="form-label-odense-nej" class="">Nej
-                                </label>
+                    <div class="form-group-radio">
+                        <input type="radio" id="odense-option1" name="odense"
+                            class="form-radio radio-large" value="ja">
+                        <label class="form-label" for="odense-option1">Ja</label>
 
-                            </div>
-                        </li>
-                    </ul>
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="odense-option2" name="odense"
+                            class="form-radio radio-large" value="nej">
+                        <label class="form-label" for="odense-option2">Nej</label>
+
+                    </div>
+
                 </fieldset>
             </div>
-            <!-- Felt slut: Odense -->
+
         </fieldset>
     </div>
-    <!-- Felt slut: Personlige oplysninger -->
-    <!-- Knap start -->
     <button class="button button-primary mt-9">
         Gem oplysninger
     </button>
-    <!-- Knap slut -->
 </form>

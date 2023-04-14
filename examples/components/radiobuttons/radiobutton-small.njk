@@ -1,0 +1,20 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+{{
+    radiobuttons({
+        "id": "radiogroup-small",
+        "radiogroupLegend": "Lille radioknap",
+        "groupname": "radio-small",
+        "isLarge": false,
+        "items": [
+            {
+                "value": "v1",
+                "label": "Valg 1"
+            },
+            {
+                "value": "v2",
+                "label": "Valg 2"
+            }
+        ]
+    })
+}}

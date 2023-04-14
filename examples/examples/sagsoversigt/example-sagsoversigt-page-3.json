@@ -1,163 +1,277 @@
 {
+    "alert_modal_warning": {
+        "variant": "warning",
+        "headingLevel": "h3",
+        "heading": "Vi har noget information af advarende karakter",
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver."
+    },
     "portal_header_data": {
         "compact": true,
         "user": {
             "name": "Anders Andersen"
         },
         "logolink": {
-            "sronly": "Portalnavn",
-            "href" : "#"
+            "label": "Portalnavn",
+            "href": "#"
         }
-      },
-    "solution_header_data": {
-        "classes": "header-end",
-        "title": {
-            "href": "#",
-            "text": "Sagsunivers"
-        },
-        "solutionInfo": {
-          "hideOnPrint": false
-        },
-        "authority": {
-            "name": "Myndighedsnavn",
-            "text": "Support: 12 34 56 78 <span class='d-print-none'>· <a href=\"javascript:void(0);\" data-module=\"modal\" data-target=\"modal-contact\" class=\"function-link d-inline-block\"><svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#card-text\"></use></svg>Kontakt</a></span>"
-          }
     },
-    "modal_data": {
-        "id": "modal-contact",
-        "headingID": "modal-contact-title",
-        "heading": "Kontakt",
-        "content": "<div class=\"alert alert-warning\" role=\"alert\"><div class=\"alert-body\"><h3 class=\"alert-heading\">Vi har noget information af advarende karakter</h3><p class=\"alert-text\">Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver. Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver.</p>        </div>      </div>      <h3>En form for support</h3>      <p>Hvis du har spørgsmål om:</p>      <ul>        <li>En ting som denne</li>        <li>Et andet emne som dette</li>      </ul>        <p>Kan du ringe direkte til: 12 34 56 78</p>      <p>Telefonen er åben:</p>      <p class=\"m-0\">Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. 9-17</p>      <p class=\"m-0\">Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kl. kl. 9-14</p>",
-        "actions": "<button class=\"button button-secondary\" data-modal-close>Luk</button>"
-      },
-      "footer_data":{
+    "footer_data": {
         "topButton": {
-          "topLink": "#top"
+            "href": "#top"
         },
         "languageSwitcher": {
-          "ariaLabel": "Vælg sprog fra listen",
-          "firstAriaLabel": "Valgt sprog: Dansk",
-          "languages": [
-            {"code": "da", "name": "Dansk"},
-            {"code": "en-GB", "name": "English"},
-            {"code": "de", "name": "Deutsch"},
-            {"code": "kl", "name": "Kalaallisut"},
-            {"code": "pl", "name": "Polski"},
-            {"code": "se", "name": "Svenska"}
-          ]
+            "ariaLabel": "Vælg sprog fra listen",
+            "firstAriaLabel": "Valgt sprog: Dansk",
+            "languages": [
+                {
+                    "code": "da",
+                    "name": "Dansk"
+                },
+                {
+                    "code": "en-GB",
+                    "name": "English"
+                },
+                {
+                    "code": "de",
+                    "name": "Deutsch"
+                },
+                {
+                    "code": "kl",
+                    "name": "Kalaallisut"
+                },
+                {
+                    "code": "pl",
+                    "name": "Polski"
+                },
+                {
+                    "code": "se",
+                    "name": "Svenska"
+                }
+            ]
         },
         "columns": [
-          {
-            "columnSize": 3,
-            "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
-          },
-          {
-            "columnSize": 3,
-            "classes": "d-print-none",
-            "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
-            "lists": [
-              {
-                "inline": false,
-                "classes": "mt-0 mb-1 nobullet-list",
-                "items": [
-                  {"content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"},
-                  {"content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"}
+            {
+                "columnSize": 3,
+                "content": "<h2 class=\"h5 mb-4\">Ansvarlig myndighed</h2><p>Myndighedsnavn<br/>Landsgaden 15<br/>2100 København Ø</p>"
+            },
+            {
+                "columnSize": 3,
+                "classes": "d-print-none",
+                "content": "<h2 class=\"h5 mb-4\">Webtilgængelighed og cookies</h2>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "mt-0 mb-1 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>"
+                            },
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik og cookies</a>"
+                            }
+                        ]
+                    }
                 ]
-              }
-            ]
-          },
-          {
-            "columnSize": 6,
-            "textAlignRight": false,
-            "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
-            "lists": [
-              {
-                "inline": false,
-                "classes": "d-print-none mt-0 nobullet-list",
-                "items": [
-                  {"content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"},
-                  {"content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"}
+            },
+            {
+                "columnSize": 6,
+                "textAlignRight": false,
+                "content": "<h2 class=\"h5 mb-4\">Links</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, felis quis vestibulum aliquet, elit ex rhoncus. </p>",
+                "lists": [
+                    {
+                        "inline": false,
+                        "classes": "d-print-none mt-0 nobullet-list",
+                        "items": [
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Læs lidt om dit</a>"
+                            },
+                            {
+                                "content": "<a href=\"#\" class=\"function-link\">Her er også lidt om dat</a>"
+                            }
+                        ]
+                    }
                 ]
-              }
-            ]
-          }
+            }
         ]
-      },
-      "breadcrumbs_data_desktop": {
+    },
+    "breadcrumbs_data_desktop": {
         "classes": "",
         "aria-label": "Brødkrumme",
         "items": [
-          {
-            "text": "Find sag",
-            "href": "/pages/eksempler/sagsoversigt/find-sag/"
-          },
-          {
-            "text": "Sagsnr. 123456789",
-            "href": "/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/"
-          },
-          {
-            "text": "Afgørelser"
-          }
+            {
+                "text": "Find sag",
+                "href": "/pages/eksempler/sagsoversigt/find-sag/"
+            },
+            {
+                "text": "Sagsnr. 123456789",
+                "href": "/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/"
+            },
+            {
+                "text": "Afgørelser"
+            }
         ]
-      },
-      "breadcrumbs_data_mobile": {
+    },
+    "breadcrumbs_data_mobile": {
         "classes": "container d-lg-none mt-3",
         "aria-label": "Brødkrumme",
         "items": [
-          {
-            "text": "Find sag",
-            "href": "/pages/eksempler/sagsoversigt/find-sag/"
-          },
-          {
-            "text": "Sagsnr. 123456789",
-            "href": "/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/"
-          },
-          {
-            "text": "Afgørelser"
-          }
+            {
+                "text": "Find sag",
+                "href": "/pages/eksempler/sagsoversigt/find-sag/"
+            },
+            {
+                "text": "Sagsnr. 123456789",
+                "href": "/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/"
+            },
+            {
+                "text": "Afgørelser"
+            }
         ]
-      },
-      "alert_afslutning": {
-        "classes": "alert-info",
+    },
+    "alert_afslutning": {
+        "variant": "info",
+        "headingLevel": "h2",
         "heading": "Sagen forventes afsluttet",
         "content": "Maj 2021",
-        "icon": true,
-        "role": "alert"
-      },
-      "badge_afsluttet": {
-        "classes": "badge-small badge-info",
-        "text": "Afsluttet"
-      },
-      "details_anerkendelse": {
+        "icon": true
+    },
+    "list_anerkendelse_info": {
+        "breakpoint": "sm",
+        "classes": { 
+            "outer": "mb-5",
+            "table": "w-percent-md-60 w-percent-lg-50",
+            "value": "w-percent-md-50"
+        },
+        "items": [
+            {
+                "label": "Resultat",
+                "value": "Anerkendt"
+            },
+            {
+                "label": "Dato for afgørelse",
+                "value": "01-01-2019"
+            },
+            {
+                "label": "Dokument med afgørelse",
+                "value": "<a href=\"#\">Afgørelse for anerkendelse (PDF)</a>"
+            }
+        ]
+    },
+    "list_sagsindhold_1_info": {
+        "breakpoint": "sm",
+        "classes": { 
+            "outer": "mb-5",
+            "table": "w-percent-md-60 w-percent-lg-50",
+            "value": "w-percent-md-50"
+        },
+        "items": [
+            {
+                "label": "Resultat",
+                "value": "10%"
+            },
+            {
+                "label": "Dato for afgørelse",
+                "value": "01-01-2019"
+            },
+            {
+                "label": "Dokument med afgørelse",
+                "value": "<a href=\"#\">Afgørelse for X (PDF)</a>"
+            }
+        ]
+    },
+    "list_sagsindhold_2_info": {
+        "breakpoint": "sm",
+        "classes": { 
+            "outer": "mb-5",
+            "table": "w-percent-md-60 w-percent-lg-50",
+            "value": "w-percent-md-50"
+        },
+        "items": [
+            {
+                "label": "Resultat",
+                "value": "20%"
+            },
+            {
+                "label": "Dato for afgørelse",
+                "value": "01-01-2019"
+            },
+            {
+                "label": "Dokument med afgørelse",
+                "value": "<a href=\"#\">Afgørelse for Y (PDF)</a>"
+            }
+        ]
+    },
+    "list_sagsindhold_3_info": {
+        "breakpoint": "sm",
+        "classes": { 
+            "outer": "mb-5",
+            "table": "w-percent-md-60 w-percent-lg-50",
+            "value": "w-percent-md-50"
+        },
+        "items": [
+            {
+                "label": "Resultat",
+                "value": "Under 15%"
+            },
+            {
+                "label": "Dato for afgørelse",
+                "value": "01-01-2019"
+            },
+            {
+                "label": "Dokument med afgørelse",
+                "value": "<a href=\"#\">Afgørelse for Y (PDF)</a>"
+            }
+        ]
+    },
+    "badge_afsluttet": {
+        "text": "Afsluttet",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
+    },
+    "details_anerkendelse": {
         "summary": "Læs om vurdering af anerkendelse",
         "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
-      },
-      "badge_myndighed": {
-        "classes": "badge-small badge-info",
-        "text": "Sendt til <Myndighed>"
-      },
-      "badge_selskab": {
-        "classes": "badge-small badge-info",
-        "text": "Påklaget af forsikringsselskab ABC"
-      },
-      "badge_navn": {
-        "classes": "badge-small badge-info",
-        "text": "Påklaget af Kim Nielsen"
-      },
-      "details_afgoerelse_X": {
+    },
+    "badge_myndighed": {
+        "text": "Sendt til <Myndighed>",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
+    },
+    "badge_selskab": {
+        "text": "Påklaget af forsikringsselskab ABC",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
+    },
+    "badge_navn": {
+        "text": "Påklaget af Kim Nielsen",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
+    },
+    "details_afgoerelse_X": {
         "summary": "Læs om vurdering X",
         "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
-      },
-      "details_afgoerelse_Y": {
+    },
+    "details_afgoerelse_Y": {
         "summary": "Læs om vurdering Y",
         "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
-      },
-      "badge_ikke_afgjort": {
-        "classes": "badge-small badge-info",
-        "text": "Ikke afgjort"
-      },
-      "details_sagsudgifter": {
+    },
+    "badge_ikke_afgjort": {
+        "text": "Ikke afgjort",
+        "variant": {
+            "size": "small",
+            "status": "info"
+        }
+    },
+    "details_sagsudgifter": {
         "summary": "Læs om vurdering af sagsudgifter",
         "content": "<p>Pellentesque nulla mi, pulvinar id blandit eu, volutpat at libero. Integer euismod augue leo.</p><p>Morbi faucibus nunc tortor, condimentum vulputate urna sollicitudin non. Nam commodo nulla metus. Phasellus varius eu dolor nec ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac leo finibus, blandit velit nec, consequat est. Nulla facilisi.</p>"
-      }
+    }
 }

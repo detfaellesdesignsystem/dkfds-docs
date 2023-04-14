@@ -46,7 +46,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             <p><a href="/eksempler/" class="bold-link">Se eksemplerne</a></p>
         </div>
     </div>
-    <hr />
+    <hr>
     <div class="py-9">
         <h2 class="mt-0">Samarbejde</h2>
         <p>Det Fælles Designsystem bliver løbende opdateret og vedligeholdt. For at sikre transparens, er systemet åbent for alle. Alle myndigheder med en interesse i at præge udviklingen og få indflydelse på designsystemets indhold er velkomne. </p>
@@ -55,7 +55,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             <li><a href="/faellesskab/nyhedsmail/">Tilmeld nyhedsmail</a></li>
         </ul>
     </div>
-    <hr />
+    <hr>
     <div class="py-9">
         <h2 class="mt-0">Support</h2>
         <p>Har du spørgsmål, så kontakt os på mail, så skal vi hjælpe dig så godt vi kan, men brug GitHub til support og teknik.</p>
@@ -65,7 +65,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             <li><a href="/faellesskab/kontakt-support/">Kontakt os</a></li>
         </ul>
     </div>
-    <hr />
+    <hr>
     <div class="pt-9">
         <h2 class="mt-0">Opdateringer</h2>
         <p>Hold dig opdateret på de seneste opdateringer. Vi releaser jævnligt.</p>

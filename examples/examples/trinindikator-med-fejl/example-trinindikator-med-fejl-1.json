@@ -1,0 +1,149 @@
+{
+    "alert_modal_warning": {
+        "variant": "warning",
+        "headingLevel": "h3",
+        "heading": "Vi har noget information af advarende karakter",
+        "content": "Noget tekst, der forklarer det af advarende karakter, som brugeren bør vide inden denne ringer eller skriver."
+    },
+    "portal_header_data": {
+        "compact": false,
+        "user": {
+            "name": "Anders Andersen",
+            "work": "Forsikringens Forsikringsfirma"
+        },
+        "logolink": {
+            "label": "Portalnavn",
+            "href": "#"
+        }
+    },
+    "footer_data": {
+        "topButton": {
+            "href": "#top"
+        },
+        "list": {
+            "items": [
+                { "content": "<strong class=\"weight-semibold\">Myndighedsnavn</strong>" },
+                { "content": "<a class=\"function-link\" href=\"mailto:support@myndighed.dk\">support@myndighed.dk</a>" },
+                { "content": "<a class=\"function-link\" href=\"tel:12345678\">(+45) 12 34 56 78</a>" },
+                { "content": "<a href=\"#\" class=\"function-link\">Tilgængelighedserklæring</a>", "hideOnPrint": true },
+                { "content": "<a href=\"#\" class=\"function-link\">Privatlivspolitik (cookies)</a>", "hideOnPrint": true }
+            ]
+        },
+        "languageSwitcher": {
+            "ariaLabel": "Vælg sprog fra listen",
+            "firstAriaLabel": "Valgt sprog: Dansk",
+            "languages": [
+                {
+                    "code": "da",
+                    "name": "Dansk"
+                },
+                {
+                    "code": "en-GB",
+                    "name": "English"
+                },
+                {
+                    "code": "de",
+                    "name": "Deutsch"
+                },
+                {
+                    "code": "kl",
+                    "name": "Kalaallisut"
+                },
+                {
+                    "code": "pl",
+                    "name": "Polski"
+                },
+                {
+                    "code": "se",
+                    "name": "Svenska"
+                }
+            ]
+        }
+    },
+    "trinindikator_data": {
+        "id": "overflow-reg",
+        "breakpoint": "lg",
+        "steps": [
+            {
+                "text": "Vælg personer",
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+            },
+            {
+                "text": "Vælg noget mere",
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+            },
+            {
+                "text": "Vedhæft dokumenter",
+                "icon": { "name": "highlight-off", "ariaLabel": "Fejl", "ariaHidden": false },
+                "error": true
+            },
+            {
+                "text": "Tidligere registrering",
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+            },
+            {
+                "text": "Kontaktoplysninger",
+                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+            },
+            {
+                "text": "Opsummering",
+                "active": true
+            }
+        ]
+    },
+    "list_tidligere_registrering": {
+        "breakpoint": "sm",
+        "edit": true,
+        "classes": { 
+            "outer": "mt-6 mb-7",
+            "table": "w-percent-md-70",
+            "label": "w-percent-md-70",
+            "href": "align-text-md-right"
+        },
+        "items": [
+            {
+                "label": "Har du tidligere lavet en lignende registrering?",
+                "value": "Ja",
+                "href": "#"
+            },
+            {
+                "label": "Tidligere registreringsnummer",
+                "value": "123.678",
+                "href": "#"
+            },
+            {
+                "label": "Dato for registreringen",
+                "value": "10.10.2010",
+                "href": "#"
+            }
+        ]
+    },
+    "list_kontaktoplysninger": {
+        "breakpoint": "sm",
+        "edit": true,
+        "classes": { 
+            "outer": "mt-6 mb-7",
+            "table": "w-percent-md-70",
+            "label": "w-percent-md-30",
+            "href": "align-text-md-right"
+        },
+        "items": [
+            {
+                "label": "E-mail",
+                "value": "eksempel@mail.dk",
+                "href": "#"
+            },
+            {
+                "label": "Telefonnummer",
+                "value": "12345678",
+                "href": "#"
+            }
+        ]
+    },
+    "button_next": {
+        "text": "Send registrering",
+        "variant": "primary",
+        "classes": { "button": "d-print-none mt-4" },
+        "attributes": "type='button'"
+    }
+}

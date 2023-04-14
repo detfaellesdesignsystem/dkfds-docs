@@ -92,7 +92,7 @@ gulp.task('nunjucks', done => {
             path: 'node_modules/dkfds/src/'
         }))
         .pipe(prettify({
-            wrap_line_length: 75,
+            wrap_line_length: 94,
             max_preserve_newlines: 1,
             unformatted: [ /*'a',*/ 'abbr','pre', 'area', 'audio', 'b', 'bdi', 'bdo', 'br', /*'button',*/ 'canvas', 'cite',
                 'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', /*'i',*/ 'iframe', 'img',

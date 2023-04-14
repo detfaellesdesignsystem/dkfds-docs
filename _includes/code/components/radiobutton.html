@@ -1,25 +1,22 @@
 <div class="form-group">
-    <fieldset>
-        <legend class="form-label">Liste med radioknapper</legend>
-        <ul class="nobullet-list">
-            <li>
-                <div class="form-group-radio">
-                    <input id="radio-1" type="radio" name="radio"
-                        value="v1" class="form-radio radio-large " />
-                    <label for="radio-1" id="form-label-radio-1"
-                        class="">Valg 1 </label>
+    <fieldset role="radiogroup">
+        <legend class="form-label">
+            Liste med radioknapper
+        </legend>
 
-                </div>
-            </li>
-            <li>
-                <div class="form-group-radio">
-                    <input id="radio-2" type="radio" name="radio"
-                        value="v2" class="form-radio radio-large " />
-                    <label for="radio-2" id="form-label-radio-2"
-                        class="">Valg 2 </label>
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-option1" name="radio-example"
+                class="form-radio radio-large" value="v1">
+            <label class="form-label" for="radiogroup-option1">Valg 1</label>
 
-                </div>
-            </li>
-        </ul>
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-option2" name="radio-example"
+                class="form-radio radio-large" value="v2">
+            <label class="form-label" for="radiogroup-option2">Valg 2</label>
+
+        </div>
+
     </fieldset>
 </div>

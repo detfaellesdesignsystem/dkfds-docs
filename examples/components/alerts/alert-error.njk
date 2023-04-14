@@ -1,3 +1,10 @@
 {% from "components/alerts/alerts.njk" import alert as alert %}
 
-{{ alert(alert_example) }}
+{{ 
+    alert({
+        "variant": "error",
+        "headingLevel": "h3",
+        "heading": "Fejl",
+        "content": "Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet."
+    }) 
+}}

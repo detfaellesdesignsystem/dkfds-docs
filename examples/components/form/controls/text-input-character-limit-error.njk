@@ -1,3 +1,12 @@
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 
-{{textinput(params)}}
+{{
+    textinput({
+        "id": "input-type-limit-error",
+        "name": "input-type-limit-error",
+        "label": "Inputfelt med karakterbegrænsning",
+        "errorMessage": "Du kan maks. taste 20 tegn",
+        "value": "Dette er en sætning med mange tegn",
+        "characterLimit": 20
+    })
+}}

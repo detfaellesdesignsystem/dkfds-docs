@@ -1,9 +1,0 @@
-{% from "components/form/controls/radiobutton.njk" import radiobutton as radiobutton %}
-<div class="form-group">
-    <fieldset>
-        <legend class="form-label">Stor radioknap (anbefalet)</legend>
-        <ul class="nobullet-list">
-            {% for item in radiobuttons_example_large.items %}<li>{{ radiobutton(item) }}</li>{% endfor %}
-        </ul>
-    </fieldset>
-</div>
