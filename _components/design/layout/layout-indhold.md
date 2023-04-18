@@ -9,7 +9,7 @@ Det specifikke indhold i selvbetjeningsløsningerne kan variere. De konkrete ret
 <div class="row">
     <div class="col-12 col-lg-5 bg-alternative">
         <h3 class="h5">Gør det let at skimme indholdet</h3>
-        <p>Lad fx overskrifter, labels, brødtekst, inputfelter og primærknap flugte til venstre ned ad siden, så øjets flugt primært foregår i en bevægelse op og ned ad siden (i én kolonne).</p>
+        <p>Lad fx overskrifter, labels, brødtekst, inputfelter og primærknap flugte til venstre ned ad siden, så øjets flugt primært foregår i en bevægelse op og ned ad siden (i én kolonne). Placer så vidt som muligt det vigtigste indhold øverst.</p>
     </div>
     <div class="col-12 col-lg-7 bg-darkgrey text-align-center">
         <img src="{{ site.baseurl }}/assets/img/descriptionimages/Skimme.svg" class="my-5 mx-2" alt="Grafisk visning af en side som er let at skimme" />

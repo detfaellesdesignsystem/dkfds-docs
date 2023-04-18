@@ -1044,7 +1044,7 @@ body[class*="page-grid"][class*="-html"]
 }
 
 .button-border-example {
-  border-top: $button-border-width solid $button-primary-default-border-color;
+  border-top: $button-border-width solid color($button-primary-default-border-color);
 }
 
 .form-error-border-example{

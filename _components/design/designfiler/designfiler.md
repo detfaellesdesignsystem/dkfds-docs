@@ -24,7 +24,7 @@ Du er velkommen til at bidrage med flere designressourcer eller med opdateringer
 
 <div class="alert alert-warning alert--paragraph" role="alert">
     <div class="alert-body">
-        <p class="alert-text">Dokumentationssiden er “source of truth” ikke designfilerne.</p>
+        <p class="alert-text">Dokumentationssiden er “source of truth”, ikke designfilerne.</p>
     </div>
 </div>
 
