@@ -830,10 +830,13 @@ code {
   .button {
     background-color: black;
     border-color: white !important;
-    display: inline;
     &:hover, &:visited {
       color: white;
     }
+
+    .icon-svg {
+      margin-right: units(2);
+  }
   }
 
   .form-select{

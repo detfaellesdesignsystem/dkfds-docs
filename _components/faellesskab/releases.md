@@ -72,8 +72,11 @@ tags:
 - 8.2.0
 - 8.2.1
 - 9.0.0
+- 9.0.1
 anchor: true
 subnav:
+- text: Version 9.0.1
+  href: "#version-9-0-1"
 - text: Version 9.0.0
   href: "#version-9-0-0"
 - text: Version 8.2.1
@@ -92,10 +95,8 @@ subnav:
   href: "#version-7-5-2"
 - text: Version 7.5.1
   href: "#version-7-5-1"
-- text: Version 7.5.0
-  href: "#version-7-5-0"
 - text: Tidligere versioner
-  href: "#version-7-4-0"
+  href: "#version-7-5-0"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 ---
@@ -119,6 +120,13 @@ Designsystemet er "levende" og skal holdes ajour, hvorfor langt de fleste bagud-
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+
+{:#version-9-0-1 .mb-0}
+## Version 9.0.1
+
+<div><span class="small-text mt-0 d-block">??-04-2023</span></div>
+
+- Rettet fejl, hvor knapper blev vist forkert, hvis teksten fyldte flere linjer.
 
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0
