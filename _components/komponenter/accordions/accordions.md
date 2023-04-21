@@ -15,20 +15,20 @@ anchor: true
 subnav:
 - text: Åbn/luk alle
   href: "#aabn-luk-alle"
-- text: Med fejl
-  href: "#med-fejl"
 - text: Med succesbeskeder
   href: "#med-succesbeskeder"
 ---
+
 {% include code/preview-box.html component="accordion" title="Eksempel på accordion" link=true code="/kode/komponenter/accordions/" %}
 
-## Anvendes til  
-{: .h3 #retningslinjer}
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til  
 
 Accordions er interaktive overskrifter, der anvendes til at skjule og vise det relaterede indhold.
 
-## Anvendes ikke til  
-{: .h3}
+### Anvendes ikke til  
 
 Accordions erstatter ikke individuelle trin i en selvbetjeningsløsning eller sider på en hjemmeside.
 
@@ -38,8 +38,7 @@ Brug ikke accordions til at kollapse indhold i fx søgeresultater eller andre l�
 
 Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger. Der bør du eventuelt i stedet anvende en trinindikator.
 
-## Vejledning  
-{: .h3}
+### Vejledning  
 
 Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.
 
@@ -49,20 +48,8 @@ Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere s
 
 {% include dos-donts-box.html component="accordion-dos-donts" title="Accordion do's and don'ts" %}
 
-{:.h4}
-### Referencer
-
-{:.nobullet-list}
-- <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
-{:#aabn-luk-alle}
-## Åbn/luk alle
-
-{% include code/preview-box.html component="accordion-bulk-open" title="Eksempel på accordions med åbn alle funktion" %}
-
 {:#med-fejl}
-## Med fejl
+#### Fejlmeddelelse
 
 <a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
@@ -70,7 +57,20 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsumme
 
 {% include code/preview-box.html component="accordion-error" title="Eksempel på accordion med fejl" %}
 
+#### Referencer
+
+{:.nobullet-list}
+- <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+## Varianter
+
+{:#aabn-luk-alle}
+### Åbn/luk alle
+
+{% include code/preview-box.html component="accordion-bulk-open" title="Eksempel på accordions med åbn alle funktion" %}
+
 {:#med-succesbeskeder}
-## Med succesbeskeder
+### Med succesbeskeder
 
 {% include code/preview-box.html component="accordion-success" title="Eksempel på accordion med succesbesked" %}

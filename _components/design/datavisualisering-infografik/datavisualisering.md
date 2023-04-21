@@ -22,7 +22,6 @@ Vær meget opmærksom på <a href="/design/datavisualisering-infografik/tilgaeng
 
 Vær opmærksom på, hvilke <a href="/design/farver/#datavisualiseringsfarver">farvepaletter der anbefales til de forskellige typer af diagrammer og datavisualisering</a>.
 
-{:.h3}
 ## Cirkeldiagrammer (Kagediagram)
 Et cirkeldiagram består af en cirkel, som opdeles i områder, der svarer til de enkelte datas størrelse. Det bruges typisk, hvis data er en del af en samlet mængde.
 
@@ -30,8 +29,8 @@ Det anbefales at benytte en kvalitativ farvepalette, hvor der ikke er en farver�
 
 For at gøre datavisualiseringen endnu mere tilgængelig, kan en tabel med data fra cirkeldiagrammet placeres under eller i forbindelse med diagrammet. 
 
-{:.h3 .mb-6}
-### Andelen af ture på cykel i Danmark
+{:.mb-6}
+### Eksempel: Andelen af ture på cykel i Danmark
 <figure class="w-percent-md-50 mb-6">
     <img src="/assets/img/design/datavisualisering/piechart-transport.svg" class="w-percent-100" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
     <figcaption>
@@ -69,7 +68,6 @@ For at gøre datavisualiseringen endnu mere tilgængelig, kan en tabel med data 
     </figcaption>
 </figure>
 
-{:.h3}
 ## Søjlediagram (kolonnediagram)
 
 Et søjlediagram består af søjler, som går op til højden af de forskellige data. Det kan både være stående og liggende. Det anbefales at bruge denne type diagram til sammenligninger, der består af 10 eller færre kategorier. 
@@ -78,14 +76,12 @@ Ved brug af mønstre sammen med farver, kan brugere med synshandikap som farvebl
 
 For at gøre datavisualiseringen mere tilgængelig, kan beskrivende tekst med en opsummering eller konklusion placeres under eller i forbindelse med diagrammet. 
 
-{:.h4}
-### Cyklede kilometer fordelt på alder
+### Eksempel: Cyklede kilometer fordelt på alder
 <figure>
     <img src="/assets/img/design/datavisualisering/bar-chart.svg" alt="Eksempel på søjlediagram, der viser cyklede kilometer pr. person pr. dag fordelt på alder" class="w-percent-md-70">
 <figcaption><p>Unge mennesker fra 18-34 år cykler mest. Ældre mennesker fra 67-84 år og børn fra 6-9 cykler mindst.</p><p>Kilde: Transportvaneundersøgelsen 2016-2019</p></figcaption>
 </figure>
 
-{:.h3}
 ## Kurvediagram (linjediagram)
 
 Kurvediagrammer bruges ikke lige så tit som søjlediagram og cirkeldiagram, men er gode til at vise en udvikling over tid, samt håndtere lidt større datamængder.
@@ -98,8 +94,7 @@ Etiketter gør det også hurtigere at aflæse data i diagrammet. Det kan være s
 
 For at gøre datavisualiseringen mere tilgængelig, kan beskrivende tekst med en opsummering eller konklusion placeres under eller i forbindelse med diagrammet. 
 
-{:.h4}
-### Mest cykling på ture under 5km (2014-17)
+### Eksempel: Mest cykling på ture under 5km (2014-17)
 <figure class="mb-6">
     <img src="/assets/img/design/datavisualisering/graph-biking.svg" class="w-percent-md-70" alt="Eksempel på graf der viser fordelingen af cykelture og cykelkm efter turens længde." />
     <figcaption>

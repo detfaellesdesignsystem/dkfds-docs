@@ -1123,7 +1123,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1243,7 +1243,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1563,7 +1563,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2759,7 +2759,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -4069,7 +4069,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -4416,6 +4416,35 @@
 
 <p>Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.</p>
 
+<h3>JavaScript</h3>
+<p>Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.RadioToggleGroup(document.getElementById(&#39;DIV-CONTAINER-ID&#39;)).init();</code></pre></figure>
+
+<h4>Events</h4>
+
+<table class="table table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Event key</th>
+      <th>Element</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fds.collapse.expanded</td>
+      <td><code>input.js-radio-toggle-group</code></td>
+      <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet.</td>
+    </tr>
+    <tr>
+      <td>fds.collapse.collapsed</td>
+      <td><code>input.js-radio-toggle-group</code></td>
+      <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet.</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2>Varianter</h2>
 
 <h3 id="hjaelpetekst">Hjælpetekst</h3>
@@ -4590,34 +4619,6 @@
   <li><code>aria-hidden="false"</code> hvis indholdet vises og <code>aria-hidden="true"</code> hvis indholdet skjules</li>
 </ul>
 
-<h2>JavaScript</h2>
-<p>Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.RadioToggleGroup(document.getElementById(&#39;DIV-CONTAINER-ID&#39;)).init();</code></pre></figure>
-
-<h3>Events</h3>
-
-<table class="table table--responsive-headers">
-  <thead>
-    <tr>
-      <th>Event key</th>
-      <th>Element</th>
-      <th>Beskrivelse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>fds.collapse.expanded</td>
-      <td><code>input.js-radio-toggle-group</code></td>
-      <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet.</td>
-    </tr>
-    <tr>
-      <td>fds.collapse.collapsed</td>
-      <td><code>input.js-radio-toggle-group</code></td>
-      <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet.</td>
-    </tr>
-  </tbody>
-</table>
 
 
           

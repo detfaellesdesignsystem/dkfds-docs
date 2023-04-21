@@ -10,22 +10,22 @@ description: Cookiemeddelelsen vises midt på siden, og blokerer indhold indtil 
 tags:
 lead: Anvender din selvbetjeningsløsning cookies til andet end teknisk nødvendige
   formål, skal brugeren vises en cookiemeddelelse.
-
 ---
+
 {% include code/preview-image.html component="cookie-message" code="/kode/komponenter/cookiemeddelelse/" %}
 
-{:.h3}
-## Anvendes til
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug cookiemeddelelsen til at få brugerens accept af de cookies du sætter i din løsning ud over de funktionelt nødvendige.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Du behøver ikke vise en cookiemeddelelse, hvis din løsning kun sætter funktionelt nødvendige cookies.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Det Fælles Designsystem anviser kun styling for cookiemeddelelsen, ikke den tekniske implementering af cookiemeddelelsen.
 
@@ -33,8 +33,9 @@ Du skal selv tilpasse indholdet i meddelelsen, så den overholder gældende lovg
 
 {% include dos-donts-box.html component="cookie-message-dos-donts" title="Cookiemeddelelser do's and don'ts" %}
 
-{:.h4}
-### Referencer
+#### Referencer
+
+{:.nobullet-list}
 - <a href="https://www.smashingmagazine.com/2019/04/privacy-ux-better-cookie-consent-experiences/" class="icon-link">Vitaly Friedman: Privacy UX: Better Cookie Consent Experiences (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/modal-nonmodal-dialog/" class="icon-link">Therese Fessenden: Modal & Nonmodal Dialogs: When (& When Not) to Use Them (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://erhvervsstyrelsen.dk/cookieregler" class="icon-link">Læs om cookies på Erhvervsstyrelsens hjemmeside<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

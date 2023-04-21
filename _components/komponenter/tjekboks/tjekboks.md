@@ -9,19 +9,18 @@ description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere væ
 tags:
 anchor: true
 subnav:
-- text: Fejlmeddelelse
-  href: '#fejlmeddelelse'
 - text: Lille tjekboks
   href: '#lille-tjekboks'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold-collapse'
-component: checkbox-large
-componentTitle: Eksempel på tjekbokse
-componentCode: "/kode/komponenter/tjekboks/"
 ---
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{% include code/preview-box.html component="checkbox-large" title="Eksempel på tjekbokse" link=true code="/kode/komponenter/tjekboks/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste.
 
@@ -31,15 +30,13 @@ Når brugeren skal be- eller afkræfte et valg, fx ”Ja/Nej” (i det tilfælde
 
 Når listen over mulige valg kan være på en mobilvisning.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Når der er for mange valg til at give mening på en mobilvisning.
 
 Når brugeren kun kan vælge én værdi. Her skal du i stedet anvende radioknapper.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Brugeren skal kunne tappe eller klikke på tjekboksen eller dens label for at vælge eller fravælge dens værdi.
 
@@ -53,18 +50,35 @@ Hvis du giver brugeren en liste med tjekbokse, så gør det tydeligt gennem ente
 
 {% include dos-donts-box.html component="checkbox-dos-donts" title="Tjekboks do's and don'ts" %}
 
-{:.h4}
-### Referencer
+#### Fejlmeddelelse
 
-{:.nobullet-list}
-- ISO 9241-143: Forms (2012)
-- <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+
+{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" %}
+
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
 
-{% include child-components.html parent='Checkbox' %}
+#### Referencer
+
+{:.nobullet-list}
+- ISO 9241-143: Forms (2012)
+- <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+## Varianter
+
+{:#lille-tjekboks}
+### Lille tjekboks
+
+{% include code/preview-box.html component="checkbox-small" title="Eksempel på små tjekbokse" %}
+
+{:#skjult-indhold-collapse}
+### Skjult indhold (Collapse)
+
+{% include code/preview-box.html component="checkbox-collapse" title="Eksempel på tjekboks med skjult indhold" %}

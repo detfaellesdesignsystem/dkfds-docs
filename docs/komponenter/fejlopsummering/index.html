@@ -19,6 +19,8 @@
 <title>Fejlopsummering | Det Fælles Designsystem</title>
 <meta property="og:title" content="Fejlopsummering | Det Fælles Designsystem">
 
+<meta name="description" content="Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.">
+<meta property="og:description" content="Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.">
 
 
 
@@ -1121,7 +1123,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1243,7 @@
     
 
 
-<li class="current active has-anchor-links">
+<li class="current active ">
 
   
 
@@ -1561,7 +1563,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2759,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3560,7 +3562,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3656,7 +3658,7 @@
 
     
 
-<li class="current active has-anchor-links">
+<li class="current active ">
 
 
   
@@ -3673,17 +3675,6 @@
 
     
 
-    <ul class="sidenav-sub_list">
-    
-
-
-<li class=" ">
-<a href="#placering" >Placering</a>
-</li>
-
-    
-
-</ul>
     
   
 
@@ -3933,7 +3924,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4121,20 +4112,14 @@
 
           
           
-          <ul class="d-lg-none nobullet-list">
-          <li><a href="#placering">Placering</a></li>
-          
-          </ul>
-          
 
+          
+            <p class="font-lead">Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.</p>
           
 
           
 
-          <p class="font-lead">Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.</p>
-
-<p>Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.</p>
-
+          
 <div class="component-preview  component-preview-error-summary">
     
     <div class="component-link px-4 py-4">
@@ -4168,13 +4153,17 @@
     
 </div>
 
-<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 id="retningslinjer">Retningslinjer</h2>
+
+<h3>Anvendes til</h3>
 
 <p>Vis en fejlopsummering når der er fejl i noget af det brugeren har indtastet, også hvis der kun er én fejl på siden.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
-<p>Der skal være links fra fejlene i filopsummeringen til det sted på siden, hvor fejlen er. Når der trykkes på linket i opsummering, skal fokus flyttes til det felt fejlmeddelelsen knytter sig til.</p>
+<p>Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.</p>
+
+<p>Der skal være links i fejlopsummeringen til de steder på siden, hvor fejlene er. Når der trykkes på et link i opsummeringen, skal fokus flyttes til det felt fejlmeddelelsen knytter sig til.</p>
 
 <p>Sørg for at linkene i fejlopsummeringen er identiske med fejlmeddelelsen de linker til.</p>
 
@@ -4186,44 +4175,7 @@
 
 <p>For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste ved hjælp af en radioknap eller en tjekboks, skal du linke til den første radioknap eller tjekboks på listen.</p>
 
-<div class=" component-preview-error-message-dos-donts">
-    
-    <div class="sr-only">Fejlmeddelelser og fejlopsummering do's and don'ts</div>
-    
-    <div class="component-example">
-        <div class="row do-dont-container">
-    <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
-        <div><img src="/assets/img/do-dont/Fejl-funktion-do.svg" alt="Eksempel på, hvordan en fejlmeddelelse kan se ud" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
-        <p><strong>Sådan:</strong> Indsæt fejlmeddelelser over det felt, hvor fejlen skal rettes, samt øverst på siden. Brug farven rød til både fejlmeddelelser og til at markere, hvor fejlen er (Wroblewski, 2008, s. 119-132). Farven rød signalerer i computersystemer "alarm", "fare", "problem", "fejl" osv. (Johnson, 2010, s. 72) og er den farve, det menneskelige øje ser bedst (Johnson, 2010, s. 54).</p>
-    </div>
-    <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
-        <div><img src="/assets/img/do-dont/Fejl-funktion-dont.svg" alt="Eksempel på, hvordan en fejlmeddelelse ikke bør se ud" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
-        <p><strong>Ikke sådan:</strong> Undgå, at fejlmeddelelsen kun optræder ét sted på siden. Nogle brugere vil ikke få øje på den. Undgå også, at fejlen kun vises på én måde – fx med farve (Wroblewski, 2008, s. 119-133). Undgå så vidt muligt at bruge den røde farve til andet end fejlmeddelelser (Johnson, 2010, s. 57).</p>
-    </div>
-</div>
-
-    </div>
-</div>
-
-<h3>Referencer</h3>
-
-<ul class="nobullet-list">
-  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
-  <li>Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)</li>
-</ul>
-
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
-
-<ul class="nobullet-list">
-  <li><a href="/pages/eksempler/vedhaeft-fil/fil-3/?r=/komponenter/fejlopsummering/%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a></li>
-  <li><a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r=/komponenter/fejlopsummering/%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a></li>
-</ul>
-
-<h2 id="placering">Placering</h2>
+<h4 id="placering">Placering</h4>
 
 <p>Sæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumme eller et tilbage-link, skal du placere den under disse, men over titlen (den øverste overskrift) på siden.</p>
 
@@ -4340,6 +4292,42 @@
     
 </div>
 
+<div class=" component-preview-error-message-dos-donts">
+    
+    <div class="sr-only">Fejlmeddelelser og fejlopsummering do's and don'ts</div>
+    
+    <div class="component-example">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h4>Sådan (do)</h4>
+        <div><img src="/assets/img/do-dont/Fejl-funktion-do.svg" alt="Eksempel på, hvordan en fejlmeddelelse kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Indsæt fejlmeddelelser over det felt, hvor fejlen skal rettes, samt øverst på siden. Brug farven rød til både fejlmeddelelser og til at markere, hvor fejlen er (Wroblewski, 2008, s. 119-132). Farven rød signalerer i computersystemer "alarm", "fare", "problem", "fejl" osv. (Johnson, 2010, s. 72) og er den farve, det menneskelige øje ser bedst (Johnson, 2010, s. 54).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h4>Ikke sådan (don't)</h4>
+        <div><img src="/assets/img/do-dont/Fejl-funktion-dont.svg" alt="Eksempel på, hvordan en fejlmeddelelse ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undgå, at fejlmeddelelsen kun optræder ét sted på siden. Nogle brugere vil ikke få øje på den. Undgå også, at fejlen kun vises på én måde – fx med farve (Wroblewski, 2008, s. 119-133). Undgå så vidt muligt at bruge den røde farve til andet end fejlmeddelelser (Johnson, 2010, s. 57).</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/vedhaeft-fil/fil-3/?r=/komponenter/fejlopsummering/%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a></li>
+  <li><a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r=/komponenter/fejlopsummering/%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a></li>
+</ul>
+
+<h4>Referencer</h4>
+
+<ul class="nobullet-list">
+  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
+  <li>Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)</li>
+</ul>
 
 
           

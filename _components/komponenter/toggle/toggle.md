@@ -8,27 +8,25 @@ subcategory: Komponenter
 description: ""
 tags:
 - "switch"
-component: toggle
-componentTitle: Eksempel på toggle
-componentCode: "/kode/komponenter/toggle/"
 lead: "En toggle switch er en digital tænd/sluk-knap. Til forskel fra en radioknap eller tjekboks træder valget i kraft i det øjeblik brugerne interagerer med komponenten."
 ---
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{% include code/preview-box.html component="toggle" title="Eksempel på toggle" link=true code="/kode/komponenter/toggle/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 En toggle switch bruges hvis der kan vælges mellem to modsatrettede tilstande. 
 
 Det forventes af denne type komponent at brugernes skiftevalg træder i kraft med det samme. 
 
-
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Hvis der er flere valgmuligheder og multiple valgmuligheder, eller hvis valget først træder i kraft efter klik på en gem-knap, skal du vælge radioknapper eller tjekbokse.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 For at gøre komponenten mere tilgængelig anbefaler vi, at du ud over en sigende label også har en etiket på selve switchen.
 

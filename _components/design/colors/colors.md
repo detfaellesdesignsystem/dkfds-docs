@@ -51,17 +51,19 @@ subnav:
   href: "#positiv-og-negativ-farver"
 - text: Datavisualiseringsfarver
   href: "#datavisualiseringsfarver"
+- text: Kontrastforhold
+  href: "#kontrastforhold"
 ---
 {:#portalfarver-tema}
 ## Portalfarver (tema)
 Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af <a href="/kode/implementering/#temahaandtering">temahåndtering i koden</a>.
 
 <!-- new setup start -->
-<h3 class="h4">Primærfarver for borger.dk</h3>
+<h3>Primærfarver for borger.dk</h3>
 
 Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til borger.dk
 
-<div class="row color-scale color-scale-spacing mb-8">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-6 mb-4 md-md-0">
     <div class="color background-borgerdk-100"></div>
     <div class="color-text-label"><span class="color-hex">#44831E</span><span>primary</span></div>
@@ -76,11 +78,11 @@ Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på prim
   </div>
 </div>
 
-<h3 class="h4">Primærfarver for Virk</h3>
+<h3>Primærfarver for Virk</h3>
 
 Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til Virk.
 
-<div class="row color-scale color-scale-spacing mb-8">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-6 mb-4 md-md-0">
     <div class="color background-virk-100"></div>
     <div class="color-text-label"><span class="color-hex">#0059B3</span><span>primary</span></div>
@@ -95,10 +97,10 @@ Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærkn
   </div>
 </div>
 
-Designsystemets generelle palette består mest af gråtoner og nogle få dedikerede farver til kommunikation og feedback. Paletten understøtter de visuelle principper om et neutralt, simpelt og fleksibelt designsystem.
-
 {:#graatoner}
 ## Gråtoner
+
+Designsystemets generelle palette består mest af gråtoner og nogle få dedikerede farver til kommunikation og feedback. Paletten understøtter de visuelle principper om et neutralt, simpelt og fleksibelt designsystem.
 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
@@ -138,9 +140,8 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 {:#besked-farver-alerts}
 ## Besked-farver (alerts)
 
-{:.h4}
 ### Succes
-<div class="row color-scale color-scale-spacing mb-8">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-success-light"></div>
     <div class="color-text-label"><span class="color-hex">#EEFFE2</span><span>success-light</span></div>
@@ -151,9 +152,8 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:.h4}
 ### Advarsel
-<div class="row color-scale color-scale-spacing mb-8">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-warning-light"></div>
     <div class="color-text-label"><span class="color-hex">#FFEECC</span><span>warning-light</span></div>
@@ -164,9 +164,8 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:.h4}
 ### Fejl
-<div class="row color-scale color-scale-spacing mb-8">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-error-light"></div>
     <div class="color-text-label"><span class="color-hex">#FFE0E0</span><span>error-light</span></div>
@@ -177,9 +176,8 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:.h4}
 ### Info
-<div class="row color-scale color-scale-spacing mb-8">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-info-light"></div>
     <div class="color-text-label"><span class="color-hex">#E2F2FB</span><span>info-light</span></div>
@@ -193,7 +191,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 {:#link-farver}
 ## Link-farver
 
-<div class="row color-scale mb-8">
+<div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link"></div>
     <div class="color-text-label"><span class="color-hex">#004D99</span><span>$theme-color-link</span></div>
@@ -210,7 +208,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 {:#fokusfarve}
 ## Fokusfarve
-<div class="row color-scale mb-8">
+<div class="row color-scale">
   <div class="col col-12 col-md-3">
     <div class="color background-focus"></div>
     <div class="color-text-label"><span class="color-hex">#747474</span><span>$theme-focus-color</span></div>
@@ -220,7 +218,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 {:#baggrundsfarver}
 ## Baggrundsfarver
 
-<div class="row color-scale mb-8">
+<div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color bg-normal"></div>
     <div class="color-text-label"><span class="color-hex">#FFFFFF</span><span>$background-normal</span></div>
@@ -235,18 +233,9 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:.h5}
-### Din tekst skal være læsbar for alle og efterleve gældende regler for kontrastforhold
-
-<ul class="nobullet-list">
-  <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" class="icon-link">Læs om kontrastforhold for tekst i WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://webaim.org/resources/contrastchecker/" class="icon-link">Tjek din teksts kontrast (WebAIM)<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://webaim.org/resources/linkcontrastchecker/" class="icon-link">Tjek dit links kontrast (WebAIM)<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
 {:#positiv-og-negativ-farver}
 ## Positiv og negativ farver
-<div class="row color-scale mb-8">
+<div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-positive"></div>
     <div class="color-text-label"><span class="color-hex">#358000</span><span>positive</span></div>
@@ -262,7 +251,6 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former for visuelle fremstillinger til kommunikative formål.
 
-{:.h4}
 ### Violet data palette
 
 <div class="row color-scale no-gutters">
@@ -304,7 +292,6 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-{:.h4}
 ### Pink Violet data palette
 
 <div class="row color-scale no-gutters">
@@ -346,7 +333,6 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-{:.h4}
 ### Orange data palette
 
 <div class="row color-scale no-gutters">
@@ -388,7 +374,6 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-{:.h4}
 ### Gul Rød data palette
 
 <div class="row color-scale no-gutters">
@@ -430,7 +415,6 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-{:.h4}
 ### Blå data palette
 
 <div class="row color-scale no-gutters">
@@ -472,7 +456,6 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-{:.h4}
 ### Grøn Blå data palette
 
 <div class="row color-scale no-gutters">
@@ -514,7 +497,6 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-{:.h4}
 ### Grøn data palette
 
 <div class="row color-scale no-gutters">
@@ -555,3 +537,13 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
     <div class="color-text-label"><span class="color-hex">#00441B</span><span class="js-tooltip" data-tooltip="data-green-900">900</span></div>
   </div>
 </div>
+
+{:#kontrastforhold}
+## Kontrastforhold
+Din tekst skal være læsbar for alle og efterleve gældende regler for kontrastforhold.
+
+<ul class="nobullet-list">
+  <li><a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/kontrastforhold-farvekontrast/" class="icon-link" target="_blank">Læs mere om kontrastforhold<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" class="icon-link" target="_blank">Læs om kontrastforhold for tekst i WCAG 2.1 (engelsk)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" class="icon-link" target="_blank">Læs om kontrastforhold for ikke-tekstbaseret indhold i WCAG 2.1 (engelsk)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>

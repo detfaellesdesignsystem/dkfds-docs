@@ -13,6 +13,8 @@ tags:
 - billede
 - header
 subnav:
+- text: SVG-filer til download
+  href: "#svg-filer-til-download"
 - text: Retningslinjer for logo i headeren
   href: "#retningslinjer-for-logo-i-headeren"
 - text: Retningslinjer for logo i footeren

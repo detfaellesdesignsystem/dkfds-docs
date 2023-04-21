@@ -1123,7 +1123,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1243,7 +1243,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1563,7 +1563,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2759,7 +2759,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3562,7 +3562,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3697,7 +3697,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3953,7 +3953,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4185,14 +4185,17 @@
     
 </div>
 
-<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 id="retningslinjer">Retningslinjer</h2>
+
+<h3>Anvendes til</h3>
+
 <p>Når der er specifikt udvalgte datoer at vælge imellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/datofelter/">datofelter</a>.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <div class=" component-preview-datepicker-dos-donts">
     
@@ -4201,13 +4204,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Datovaelger-funktion-do.svg" alt="Eksempel på, hvordan datoangivelse kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Brug datovælgeren, når der er specifikt udvalgte datoer at vælge imellem, samt når det gavner brugeren at se, hvilke ugedage forskellige datoer rammer.</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Datovaelger-funktion-dont.svg" alt="Eksempel på, hvordan datoangivelse ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Undgå avancerede datovælgere, når brugerne kun skal angive en enkelt dato og ikke et datointerval, og når datoen ligger mere end et år fra dags dato (Li, 2017). I sådanne tilfælde kan en datovælger medføre, at brugerne skal klikke urimeligt mange gange (Enders, 2016, s. 106). Anvend derfor i stedet <a href="/komponenter/datofelter/">datofelter</a>.</p>
@@ -4217,7 +4220,10 @@
     </div>
 </div>
 
-<h2 id="begraens">Begræns mulige datoer</h2>
+<h2>Varianter</h2>
+
+<h3 id="begraens">Begræns mulige datoer</h3>
+
 <p>Definér datoer det er muligt for brugeren at vælge fra.</p>
 
 <p>I eksemplet kan brugeren kun vælge datoer mellem 4. december til og med 24. december 2020. Man kan kun vælge datoer inden for dette interval. En anden mulighed kunne også være dags dato og 1 år frem, således at man kun kan vælge en dag i fremtiden.</p>
@@ -4247,7 +4253,8 @@
     
 </div>
 
-<h2 id="default">Fast værdi</h2>
+<h3 id="default">Fast værdi</h3>
+
 <p>Definér en dato som udgangspunkt. Hvis datoen ikke defineres vil udgangspunktet være dags dato.</p>
 
 <p>I eksemplet er der valgt at man ved aktivering af datovælgeren starter fokus d. 1 december 2020. Datoen er ikke valgt, man tager blot udgangspunkt i den dag i kalenderen. Hvis man ikke vælger en fast værdi, vil datoen i stedet være dags dato.</p>
@@ -4277,7 +4284,8 @@
     
 </div>
 
-<h2 id="datoformat">Datoformat</h2>
+<h3 id="datoformat">Datoformat</h3>
+
 <p>Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også <a href="/kode/komponenter/datovaelger/#datoformat">andre datoformater</a>, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.</p>
 
 <div class="component-preview  component-preview-date-picker-format">

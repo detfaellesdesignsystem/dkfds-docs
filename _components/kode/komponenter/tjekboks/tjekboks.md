@@ -35,6 +35,39 @@ subnav:
 - Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
 - Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.
 
+### JavaScript
+Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).init();
+{% endhighlight %}
+
+#### Events
+
+<div class="table--responsive-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Event key</th>
+        <th scope="col">Element</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fds.collapse.expanded</td>
+        <td><code>input.js-checkbox-toggle-content</code></td>
+        <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet</td>
+      </tr>
+      <tr>
+        <td>fds.collapse.collapsed</td>
+        <td><code>input.js-checkbox-toggle-content</code></td>
+        <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 ## Varianter
 
 {:#lille-tjekboks}
@@ -63,36 +96,3 @@ Det element som skal collapses/expandes skal have følgende:
 - `id="id-of-target-to-collapse"`
 - `aria-hidden="true/false"`
 
-## JavaScript
-Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
-
-{% highlight javascript %}
-new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).init();
-{% endhighlight %}
-
-{:.h4}
-### Events
-
-<div class="table--responsive-scroll">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Event key</th>
-        <th scope="col">Element</th>
-        <th scope="col">Beskrivelse</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>fds.collapse.expanded</td>
-        <td><code>input.js-checkbox-toggle-content</code></td>
-        <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet</td>
-      </tr>
-      <tr>
-        <td>fds.collapse.collapsed</td>
-        <td><code>input.js-checkbox-toggle-content</code></td>
-        <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet</td>
-      </tr>
-    </tbody>
-  </table>
-</div>

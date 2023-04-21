@@ -1123,7 +1123,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1243,7 +1243,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1563,7 +1563,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2759,7 +2759,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3562,7 +3562,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3658,7 +3658,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3914,7 +3914,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4032,7 +4032,7 @@
 
 
 <li class=" ">
-<a href="#klikbart-ikon-med-tooltip" >Klikbart ikon</a>
+<a href="#klikbart-ikon-med-tooltip" >Klikbart ikon med tooltip</a>
 </li>
 
     
@@ -4041,7 +4041,7 @@
 
 
 <li class=" ">
-<a href="#tekst-med-tooltip" >Tekst</a>
+<a href="#tekst-med-tooltip" >Tekst med tooltip</a>
 </li>
 
     
@@ -4059,7 +4059,7 @@
 
 
 <li class=" ">
-<a href="#placering-af-tooltip" >Placering</a>
+<a href="#placering-af-tooltip" >Placering af tooltip</a>
 </li>
 
     
@@ -4151,10 +4151,10 @@
           
           
           <ul class="d-lg-none nobullet-list">
-          <li><a href="#klikbart-ikon-med-tooltip">Klikbart ikon</a></li>
-          <li><a href="#tekst-med-tooltip">Tekst</a></li>
+          <li><a href="#klikbart-ikon-med-tooltip">Klikbart ikon med tooltip</a></li>
+          <li><a href="#tekst-med-tooltip">Tekst med tooltip</a></li>
           <li><a href="#knap-med-tooltip">Knap med tooltip</a></li>
-          <li><a href="#placering-af-tooltip">Placering</a></li>
+          <li><a href="#placering-af-tooltip">Placering af tooltip</a></li>
           
           </ul>
           
@@ -4164,6 +4164,7 @@
           
 
           
+
           
 <div class="component-preview  component-preview-tooltip-icon">
     
@@ -4178,8 +4179,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <button class="button button-unstyled js-tooltip" type="button"
-    data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
+        <button class="button button-unstyled js-tooltip" type="button" data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
     <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
     <span class="sr-only">Hvad betyder det?</span>
 </button>
@@ -4192,18 +4192,17 @@
     
 </div>
 
+<h2 id="retningslinjer">Retningslinjer</h2>
 
-          
-
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h3>Anvendes til</h3>
 
 <p>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen. Tooltips kan enten vises ved hover over deciderede hjælpeikoner eller ved andre elementer såsom ikoner, billeder, enkelte ord i tekststykker eller til tekst, som er forkortet i brugergrænsefladen. Tooltips bør altid bruges ved ikoner, som fremstår uden tekst.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Tooltips anvendes ikke til informationer, der er essentielle for at brugeren kan gennemføre løsningen. Hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst i stedet for.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Gør indholdet i tooltips så kort og koncist som muligt, da længere tekster er sværere at skimme og blokerer andet indhold på skærmen i højere grad.</p>
 
@@ -4232,13 +4231,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Tooltip-indhold-do.svg" alt="Eksempel på, hvordan et tooltip eller popover kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Brug tooltips til ekstra information, som det skønnes at kun få brugere vil behøve for at udføre opgaven (Joyce, 2019).</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Tooltip-indhold-dont.svg" alt="Eksempel på, hvordan et tooltip eller popover ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Brug ikke tooltips som erstatning for hjælpetekster eller for at spare plads. Tooltips anvendes ikke til vigtige informationer eller hjælp, som de fleste brugere har brug for, eller som ikke er umiddelbart intuitive, fx ved særlige krav til formatering (Joyce, 2019).</p>
@@ -4248,7 +4247,13 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/komponenter/tooltip/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a></li>
+</ul>
+
+<h4>Referencer</h4>
 
 <ul class="nobullet-list">
   <li><a href="https://www.nngroup.com/articles/timing-exposing-content/" class="icon-link">Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
@@ -4258,17 +4263,10 @@
   <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+<h2>Varianter</h2>
 
-<ul class="nobullet-list">
-  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/komponenter/tooltip/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a></li>
-</ul>
+<h3 id="klikbart-ikon-med-tooltip">Klikbart ikon med tooltip</h3>
 
-<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-icon">
-  <h2 id="klikbart-ikon-med-tooltip">Klikbart ikon med tooltip</h2>
-  
-  
-  
 <div class="component-preview  component-preview-tooltip-delete">
     
     <div class="component-link px-4 py-4">
@@ -4291,17 +4289,8 @@
     
 </div>
 
+<h3 id="tekst-med-tooltip">Tekst med tooltip</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-tekst">
-  <h2 id="tekst-med-tooltip">Tekst med tooltip</h2>
-  
-  
-  
 <div class="component-preview  component-preview-tooltip-text">
     
     <div class="component-link px-4 py-4">
@@ -4322,17 +4311,8 @@
     
 </div>
 
+<h3 id="knap-med-tooltip">Knap med tooltip</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-knap">
-  <h2 id="knap-med-tooltip">Knap med tooltip</h2>
-  
-  
-  
 <div class="component-preview  component-preview-tooltip-button">
     
     <div class="component-link px-4 py-4">
@@ -4354,17 +4334,8 @@
     
 </div>
 
+<h3 id="placering-af-tooltip">Placering af tooltip</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/tooltip/tooltip-position">
-  <h2 id="placering-af-tooltip">Placering af tooltip</h2>
-  
-  
-  
 <div class="component-preview  component-preview-tooltip-position">
     
     <div class="component-link px-4 py-4">
@@ -4391,12 +4362,6 @@
     </div>
     
 </div>
-
-
-  
-  
-
-</section>
 
 
 

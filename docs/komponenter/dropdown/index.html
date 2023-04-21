@@ -1123,7 +1123,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1243,7 +1243,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1563,7 +1563,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2759,7 +2759,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3562,7 +3562,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3668,7 +3668,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3924,7 +3924,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4116,6 +4116,7 @@
           
 
           
+
           
 <div class="component-preview  component-preview-select">
     
@@ -4133,7 +4134,7 @@
         <div class="form-group">
     <label class="form-label" for="options">Dropdown label (select)</label>
 
-    <select class="form-select" name="options" id="options" required>
+    <select class="form-select" name="options" id="options" required="">
         <option value="option1">Mulighed 1</option>
         <option value="option2">Mulighed 2</option>
         <option value="option3">Mulighed 3</option>
@@ -4148,25 +4149,23 @@
     
 </div>
 
+<h2 id="retningslinjer">Retningslinjer</h2>
 
-          
-
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h3>Anvendes til</h3>
 
 <p>Anvend kun dropdown, når det er absolut nødvendigt og kun i tilfælde, hvor brugeren skal vælge mellem 7 til 15 værdier på en begrænset plads.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
-<ul>
-  <li>Lister med færre værdier end 7.</li>
-  <li>Lister med flere værdier end 15. I så tilfælde bør du tilbyde brugeren et felt med auto-forslag, når brugeren begynder at indtaste.</li>
-</ul>
+<p>Lister med færre værdier end 7.</p>
+
+<p>Lister med flere værdier end 15. I så tilfælde bør du tilbyde brugeren et felt med auto-forslag, når brugeren begynder at indtaste.</p>
 
 <p>Brug tjekbokse fremfor dropdown, hvis brugeren skal vælge mere end 1 værdi.</p>
 
 <p>Brug ikke dropdown til navigering mellem sider, som den ikke er velegnet til.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Dropdown kræver ekstra aftestning på målgruppen pga. de kognitive udfordringer, de kan afføde.</p>
 
@@ -4183,13 +4182,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Dropdown-valgmuligheder-do.svg" alt="Eksempel på, hvordan en dropdown-menu kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Brug en dropdown-menu, når brugerne skal vælge 1 svar blandt mindst 5 gensidigt udelukkende valgmuligheder (ISO, 2012, afsnit 8.11). Formulér valgmulighederne så kort og konsistent som muligt.</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Dropdown-valgmuligheder-dont.svg" alt="Eksempel på, hvordan en dropdown-menu ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Skjul ikke valgmuligheder i en dropdown-menu, når der kun er nogle få, eller når der er plads til at vise valgmulighederne som radioknapper eller tjekbokse. Dropdown-menuer bør kun bruges, når der ikke er andre muligheder (Wroblewski, 2015) – fx af pladshensyn. Dropdown-menuer er ergonomisk svære at bruge og skjuler brugernes valgmuligheder.</p>
@@ -4199,20 +4198,7 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
-
-<ul class="nobullet-list">
-  <li>ISO 9241-143: Forms (2012)</li>
-  <li><a href="https://www.lukew.com/ff/entry.asp?1950" class="icon-link">Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
-
-<ul class="nobullet-list">
-  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r=/komponenter/dropdown/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a></li>
-</ul>
-
-<h2>Fejlmeddelelse</h2>
+<h4>Fejlmeddelelse</h4>
 <p><a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
 
 <p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.</p>
@@ -4247,6 +4233,17 @@
     </div>
     
 </div>
+
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
+
+<p><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r=/komponenter/dropdown/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a></p>
+
+<h4>Referencer</h4>
+
+<ul class="nobullet-list">
+  <li>ISO 9241-143: Forms (2012)</li>
+  <li><a href="https://www.lukew.com/ff/entry.asp?1950" class="icon-link">Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
 
 
 

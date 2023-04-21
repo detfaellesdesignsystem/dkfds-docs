@@ -8,16 +8,6 @@ category: Kode_category
 subcategory: Kode
 description: "Dokumentation på implementering af accordions."
 tags: 
-anchor: true
-subnav:
-- text: Åbn/luk alle
-  href: "#aabn-luk-alle"
-- text: Med fejl
-  href: "#med-fejl"
-- text: Med succesbeskeder
-  href: "#med-succesbeskeder"
-- text: Uden ramme
-  href: "#uden-ramme"
 ---
 
 {% include code/preview-box.html component="toggle" title="Eksempel på toggle komponent" %}

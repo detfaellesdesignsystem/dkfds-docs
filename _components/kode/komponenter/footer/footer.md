@@ -26,7 +26,9 @@ subnav:
 
 ## Eksempler og retningslinjer
 
-<a href="/komponenter/footer/">Eksempler</a>
+{:.nobullet-list}
+- <a href="/komponenter/footer/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/footer/">Eksempler</a>
 
 ## Installation
 

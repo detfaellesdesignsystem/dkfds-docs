@@ -11,7 +11,6 @@ componentLink: false
 
 <a href="/design/typografi/tekst/#billedtekst-retningslinjer">Læs retningslinjer for billedtekst</a>
 
-{:.h4}
 ### HTML Struktur
 
 {% include code/syntax.html component="caption" %}

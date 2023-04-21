@@ -41,8 +41,6 @@ description: Inputfelter til indtastning af information i form af bogstaver, tal
 subcategory: Komponenter
 anchor: true
 subnav:
-- text: Fejlmeddelelse
-  href: "#fejlmeddelelse"
 - text: Hjælpetekst
   href: "#hjaelpetekst"
 - text: Obligatoriske og frivillige felter
@@ -58,10 +56,13 @@ subnav:
 - text: Feltbredde
   href: "#feltbredde"
 ---
+
 {% include code/preview-box.html component="text-input" title="Eksempel på inputfelt" link=true code="/kode/komponenter/inputfelter/" %}
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug til input af information i form af bogstaver og tal eller en kombination af begge.
 
@@ -69,13 +70,11 @@ Brug inputfelter når det er nemmere for brugeren at skrive information end at v
 
 Brug når brugeren skal kunne copy paste information ind i en formular.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Når brugeren skal vælge ud fra et prædefineret sæt af værdier (fx nogle få bestemte datoer) eller hvis der er strenge krav til datakonsistens, oftest i en løsning uden klientside validering (hvis brugerens input-format kan skabe fejl på serversiden).
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.
 
@@ -97,8 +96,25 @@ Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så b
 
 {% include dos-donts-box.html component="text-input-labels-dos-donts" title="Felt labels do's and don'ts" %}
 
-{:.h4}
-### Referencer
+{:#fejlmeddelelse}
+#### Fejlmeddelelse
+
+<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+
+Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+
+{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
+
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kontaktoplysninger'">Trinformular til registrering: Kontaktoplysninger</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kontaktoplysninger'">Trinformular til ansøgning: Kontaktoplysninger</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>
+
+#### Referencer
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
@@ -107,79 +123,61 @@ Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så b
 - <a href="https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php" class="icon-link">Caroline Jarrett: Don’t Put Labels Inside Text Boxes (Unless You’re Luke W) (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/form-design-placeholders/" class="icon-link">Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kontaktoplysninger'">Trinformular til registrering: Kontaktoplysninger</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kontaktoplysninger'">Trinformular til ansøgning: Kontaktoplysninger</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>
-
-{:#fejlmeddelelse}
-## Fejlmeddelelse
-
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
-
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
-
-{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
+## Varianter
 
 {:#hjaelpetekst}
-## Hjælpetekst
+### Hjælpetekst
 
 {% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på inputfelt med hjælpetekst" code="/kode/komponenter/inputfelter/#hjaelpetekst" %}
 
 {% include dos-donts-box.html component="text-input-helptext-dos-donts" title="Felt med hjælpetekst do's and don'ts" %}
 
-{:.h4}
-### Referencer
+#### Referencer
 
 {:.nobullet-list}
 - <a href="https://www.nngroup.com/articles/form-design-placeholders/" class="icon-link">Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 
 {:#obligatoriske-og-frivillige-felter}
-## Obligatoriske og frivillige inputfelter
+### Obligatoriske og frivillige inputfelter
 
 Undgå frivillige inputfelter så vidt muligt. Hvis et felt er frivilligt, så overvej altid, om det er nødvendigt at have med i formularen. 
 
 Hvis en formular indeholder frivillige inputfelter, som vil have en betydelig positiv effekt for brugeren, kan dette forklares i en hjælpetekst. Det kan f.eks. være tilfældet med inputfelter, der forkorter tiden for en sagsbehandling betragteligt, hvis de bliver udfyldt. 
 
-{:h4}
-### Når der er flest obligatoriske inputfelter
+#### Når der er flest obligatoriske inputfelter
 
 I de fleste tilfælde bør der være flere obligatoriske end frivillige inputfelter. Marker da de frivillige felter i formularen.
 
 {% include code/preview-box.html component="text-input-mandatory" title="Eksempel på formular med flest obligatoriske inputfelter" %}
 
-{:h4}
-### Når der er flest frivillige inputfelter
+#### Når der er flest frivillige inputfelter
 
 Hvis en formular indeholder flere frivillige end obligatoriske inputfelter, fremhæves de obligatoriske felter i stedet for de frivillige. 
 
 {% include code/preview-box.html component="text-input-optional" title="Eksempel på formular med flest frivillige inputfelter" %}
 
-{:.h4}
-### Referencer
+#### Referencer
 
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)
 
 {:#read-only}
-## Read-only
+### Read-only
+
 {% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly inputfelt" code="/kode/komponenter/inputfelter/#read-only" %}
 
 {:#deaktiveret}
-## Deaktiveret
+### Deaktiveret
+
 {% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/kode/komponenter/inputfelter/#deaktiveret" %}
 
 Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af <a href="#read-only">read-only</a>.
 
 {:#prefix-og-suffix}
-## Prefix og suffix
+### Prefix og suffix
+
 Prefix og suffix kan bruges til at tydeliggøre, hvordan brugeren skal angive bestemte data såsom beløb, antal m.m.
 
 Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyldes, eftersom det ikke læses højt af skærmlæsere. Feltets label eller en hjælpetekst kan bruges til også at indikere dette.
@@ -187,7 +185,8 @@ Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyld
 {% include code/preview-box.html component="text-input-prefix-suffix" link=false title="Eksempel på felter med prefix og suffix" code="/kode/komponenter/inputfelter/#prefix-og-suffix" %}
 
 {:#karakterbegraensning}
-## Karakterbegrænsning
+### Karakterbegrænsning
+
 Karakterbegrænsning sætter et maksimalt antal af tegn, som brugeren kan indtaste i et felt. Karakterbegrænsning indikerer løbende overfor brugeren, hvor mange tegn der er tilbage, og hvor mange tegn de evt. har overskredet med.
 
 Vis altid antallet af tegn, der er til rådighed i inputfeltet, inden brugeren begynder at skrive.
@@ -197,14 +196,13 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 {% include code/preview-box.html component="text-input-character-limit" link=false title="Eksempel på felt med karakterbegrænsning" code="/kode/komponenter/inputfelter/#karakterbegraensning" %}
 
 {:#feltbredde}
-## Feltbredde
+### Feltbredde
+
 {% include code/preview-box.html component="text-input-width" link=false title="Eksempel på felter med forskellig bredde" code="/kode/komponenter/inputfelter/#feltbredde" %}
 
 {% include dos-donts-box.html component="text-input-width-dos-donts" title="Feltbredde do's and don'ts" %}
 
-
-{:.h4}
-### Referencer
+#### Referencer
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)

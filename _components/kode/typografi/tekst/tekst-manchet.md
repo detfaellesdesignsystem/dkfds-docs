@@ -11,7 +11,6 @@ componentLink: false
 
 <a href="/design/typografi/tekst/#manchet-tekst-retningslinjer">Læs retningslinjerne for manchet tekst</a>
 
-{:.h4}
 ### HTML Struktur
 
 {% include code/syntax.html component="lead_paragraph" %}

@@ -40,6 +40,21 @@ Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.
 
 Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
 
+### JavaScript
+Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
+{% endhighlight %}
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event key           | Element                           | Beskrivelse                                                                                               |
+|---------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------|
+| fds.collapse.expanded  | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet.       |
+| fds.collapse.collapsed | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet.     |
+
 ## Varianter
 
 {:#hjaelpetekst}
@@ -67,17 +82,3 @@ Det element som skal collapses/expandes skal have følgende:
 - `id="id-of-target-to-collapse"`
 - `aria-hidden="false"` hvis indholdet vises og `aria-hidden="true"` hvis indholdet skjules
 
-## JavaScript
-Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
-
-{% highlight javascript %}
-new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
-{% endhighlight %}
-
-### Events
-
-{:.table .table--responsive-headers}
-| Event key           | Element                           | Beskrivelse                                                                                               |
-|---------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------|
-| fds.collapse.expanded  | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet.       |
-| fds.collapse.collapsed | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet.     |

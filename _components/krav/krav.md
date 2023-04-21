@@ -9,37 +9,27 @@ lead: Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begg
   skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem
   og integrationsproces.
 tags: 
-
 ---
-{:.h4}
 
 ## Se hvilke krav din selvbetjeningsløsning skal overholde
 
 <a href="/krav-vaerktoej/anvendes-af-virksomheder/" id="start-reqtool" class="button button-primary mt-3 mb-4">Start fælles krav værktøj</a>
-
-{:.h5}
 
 ### Kort om kravet om at anvende Det Fælles Designsystem
 
 Kravet om anvendelse af det Fælles Designsystem gælder for obligatorisk digitale (borgerrettede) selvbetjeningsløsninger, der skal på borger.dk og alle virksomhedsrettede selvbetjeningsløsninger, der skal på Virk.
 
 {:.nobullet-list}
-
 * <a href="/krav/om-kravene/">Om kravene til selvbetjeningsløsninger</a>
 * <a href="/krav/borgerdk-virk/">Portalernes krav til integration (Når du skal på borger.dk og Virk)</a>
-
-{:.h5}
 
 ### Brug Det Fælles Designsystem til din selvbetjeningsløsning
 
 Følg retningslinjer og principperne for design og layout. Brug komponenterne og koden, så laver du effektivt simple brugervenlige og tilgængelige selvbetjeningsløsninger.
 
 {:.nobullet-list}
-
 * <a href="/design/designtjek/">Designtjek</a>
 * <a href="/krav/tilgaengelighed/">Tilgængelighed</a>
-
-{:.h4}
 
 ## Det Fælles Designsystem er del af den fællesoffentlige digitale arkitektur
 

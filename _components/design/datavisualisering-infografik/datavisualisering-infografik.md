@@ -21,7 +21,6 @@ Vi skelner mellem datavisualisering og infografik. Infografik formidler en histo
 
 Vær meget opmærksom på <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">tilgængelighed i forbindelse med grafik og visualisering</a>.
 
-{:.h5}
 ## Datavisualisering
 
 Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram eller en graf. 
@@ -35,7 +34,6 @@ Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram
     </figcaption>
 </figure>
 
-{:.h5}
 ## Infografik
 
 Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af personer, ting, processer, mm. sat sammen så det formidler et budskab. 
@@ -50,12 +48,11 @@ Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af pers
     </figcaption>
 </figure>
 
-{: .h3 #retningslinjer}
+{:#retningslinjer}
 ## Anvendes til  
 
 Datavisualisering og infografik anvendes til at sammenfatte og formidle data og information grafisk på en måde, der øger brugerens forståelse af indholdet.
 
-{: .h3}
 ## Anvendes ikke til  
 
 Brug ikke infografik og datavisualiseringer som dekoration eller for at pifte løsningen op.

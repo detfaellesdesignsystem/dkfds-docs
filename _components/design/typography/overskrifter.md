@@ -19,6 +19,10 @@ subcategory: Design
 layout: styleguide
 anchor: true
 subnav:
+- text: Designværdier
+  href: "#designvaerdier"
+- text: Retningslinjer
+  href: "#retningslinjer"
 - text: Overskrift som link
   href: "#overskrift-som-link"
 - text: Overskrift i søgeresultat
@@ -35,7 +39,7 @@ Overskriftstyperne har to formål:
 
 {% include code/preview-box.html component="headings" code="/kode/typografi/overskrifter/" title="Oversigt over overskriftshierarki" %}
 
-{:.h3}
+{:#designvaerdier}
 ## Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
@@ -53,17 +57,14 @@ Overskriftstyperne har to formål:
 
 Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.
 
-{:.h4}
 ### Hvornår skal du bruge overskrifter?
 
 Du skal bruge overskrifter til at skabe struktur på din side og gruppere dit indhold i logiske og overskuelige bidder, både for skærmlæsere og visuelt orienterede brugere.
 
-{:.h4}
 ### Hvornår skal du overveje anden formatering end overskrifter?
 
 Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx <a href="/komponenter/beskeder/">beskeder til information</a>, <a href="/design/typografi/lister/">fremhæv særlige punkter med punktopstilling</a> eller anvend <a href="/design/typografi/tekst/#stor-tekst">stor tekst</a> til at markere udvalgte dele af teksten.
 
-{:.h4}
 ### Hvis du vil vide mere
 
 {:.nobullet-list}

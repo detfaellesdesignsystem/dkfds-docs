@@ -79,7 +79,7 @@ let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
 toast.show();
 {% endhighlight %}
 
-### Skjul
+#### Skjul
 Når en toastbesked skjules, ændres class fra `show` til `hide`.
 
 {% highlight javascript %}

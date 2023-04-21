@@ -30,15 +30,15 @@ Modulet 'dkfds' er nu installeret i 'node_modules' mappen.
 
 Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">version som zipfil på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, og pak indholdet ud i dit projekt.
 
-## Inkludér  CSS
+### Inkludér  CSS
 
-### Virk tema
+#### Virk tema
 
 {% highlight html %}
 <link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-virkdk.css" />
 {% endhighlight %}
 
-### Borger.dk tema
+#### Borger.dk tema
 
 {% highlight html %}
 <link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css" />
@@ -47,24 +47,24 @@ Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/
 Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.
 
 {:#javascript}
-## Inkludér JavaScript
+### Inkludér JavaScript
 
 JavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.
 
-## `<script>` tag
+#### `<script>` tag
 Indsæt følgende script tag før`</body>`
 
 {% highlight html %}
 <script src='[sti til DKFDS mappen]/dist/js/dkfds.js'></script>
 {% endhighlight %}
 
-### Importer modulet i en .js fil
+#### Importer modulet i en .js fil
 
 {% highlight javascript %}
 import * as DKFDS from "dkfds";
 {% endhighlight %}
 
-### Init
+#### Init
 
 Når DKFDS er inkluderet kan du køre funktionen `DKFDS.init();` ved dom ready, eller hvornår det nu end passer i dit projekt.
 
@@ -128,6 +128,7 @@ $icons-folder-path: '/assets/svg';
 {% endhighlight %}
 
 ## Browserspecifik styling tilføjes i projektet
+
 ### Webpack
 
 Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.

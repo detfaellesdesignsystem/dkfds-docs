@@ -14,6 +14,10 @@ tags:
 - "footer link"
 - "footerlink"
 subnav:
+- text: Designværdier
+  href: "#designvaerdier"
+- text: Retningslinjer
+  href: "#retningslinjer"
 - text: Eksternt link
   href: "#eksternt-link"
 - text: Sekundære link
@@ -26,7 +30,7 @@ Se også vores <a href="/komponenter/skip-link/">Skip-link</a>, <a href="/kompon
 
 {% include code/preview-box.html component="links" link="false" %}
 
-{:.h3}
+{:#designvaerdier}
 ## Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
@@ -37,6 +41,7 @@ Se også vores <a href="/komponenter/skip-link/">Skip-link</a>, <a href="/kompon
 | Standard link, besøgt | #800080    | Ja           |                                 |
 | Standard link, fokus  | #004D99    | Ja           | Tykkelse: 4px<br>Farve: #747474 |
 
+{:#retningslinjer}
 ## Retningslinjer
 
 ### Tilgængelighed

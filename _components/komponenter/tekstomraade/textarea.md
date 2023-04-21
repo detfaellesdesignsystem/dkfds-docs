@@ -14,12 +14,18 @@ tags:
 - textarea
 - karakterbegrænsning
 - karakterbegraensning
+anchor: true
+subnav:
+- text: Karakterbegrænsning
+  href: "#karakterbegraensning"
 ---
 
 {% include code/preview-box.html component="text-area" title="Eksempel på tekstområde" link=true code="/kode/komponenter/tekstomraade/" %}
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug tekstområder til sammenhængende (mere end 2 linjer) men ustruktureret tekst og sætninger, der har karakter af prosa. Fx en baggrundsfortælling.
 
@@ -27,13 +33,11 @@ Anvendes når der er behov for yderligere sammenhængende information, hvis kara
 
 Anvendes når løsningen stiller et spørgsmål, der ikke kan besvares i et felt.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Brug ikke tekstområder til struktureret information, hvor datakonsistens har betydning.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Angiv tekstområdets højde, så det modsvarer den tekstmængde, du forventer, at brugeren skal indtaste.
 
@@ -47,25 +51,29 @@ Placér fejlmeddelelser mellem label og felt, og markér feltet med rødt.
 
 {% include dos-donts-box.html component="textarea-dos-donts" title="Tekstområde do's and don'ts" %}
 
-{:.h4}
-### Referencer
+#### Fejlmeddelelse
 
-ISO 9241-143: Forms (2012)
-
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
-
-## Fejlmeddelelse
 <a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
 Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
 
 {% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" %}
 
-## Karakterbegrænsning
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
+
+#### Referencer
+
+ISO 9241-143: Forms (2012)
+
+## Varianter
+
+{:#karakterbegraensning}
+### Karakterbegrænsning
+
 Karakterbegrænsning sætter et maksimalt antal af tegn, som brugeren kan indtaste i et tekstområde. Karakterbegrænsning indikerer løbende overfor brugeren, hvor mange tegn der er tilbage, og hvor mange tegn de evt. har overskredet med.
 
 Vis altid antallet af tegn, der er til rådighed i tekstområdet, inden brugeren begynder at skrive.
