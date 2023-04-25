@@ -30,7 +30,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="radiobutton" %}
+{% include code/syntax.html component="radiobutton" copybutton=true %}
 
 Indsæt altid to eller flere radioknapper i et fieldset inklusive legend.
 
@@ -59,15 +59,15 @@ new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
 
 {:#hjaelpetekst}
 ### Hjælpetekst
-{% include code/syntax.html component="radiobutton-helptext" link="true" %}
+{% include code/syntax.html component="radiobutton-helptext" link=true copybutton=true %}
 
 {:#lille-radioknap}
 ### Lille radioknap
-{% include code/syntax.html component="radiobutton-small" link="true" %}
+{% include code/syntax.html component="radiobutton-small" link=true copybutton=true %}
 
 {:#skjult-indhold}
 ### Skjult indhold (Collapse)
-{% include code/syntax.html component="radio-collapse" link="true" %}
+{% include code/syntax.html component="radio-collapse" link=true copybutton=true %}
 
 <a href="/komponenter/radioknap/#collapse-retningslinjer">Retningslinjer for radioknap med skjult indhold</a>
 

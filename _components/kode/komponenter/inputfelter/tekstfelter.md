@@ -69,19 +69,19 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="text-input" %}
+{% include code/syntax.html component="text-input" copybutton=true %}
 
 ## Varianter
 
 {:#hjaelpetekst}
 ### Hjælpetekst
 
-{% include code/syntax.html component="text-input-helptext" link="true" %}
+{% include code/syntax.html component="text-input-helptext" link=true copybutton=true %}
 
 {:#obligatoriske-og-frivillige-felter}
 ### Obligatoriske og frivillige inputfelter
 
-{% include code/syntax.html component="text-input-optional" link="true" %}
+{% include code/syntax.html component="text-input-optional" link=true copybutton=true %}
 
 Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede. <a href="/komponenter/inputfelter/#obligatoriske-og-frivillige-felter">Se eksempler på frivillige og obligatoriske felter</a>.
 
@@ -89,22 +89,22 @@ Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(
 {:#read-only}
 ### Read-only
 
-{% include code/syntax.html component="text-input-readonly" link="true" %}
+{% include code/syntax.html component="text-input-readonly" link=true copybutton=true %}
 
 {:#deaktiveret}
 ### Deaktiveret
 
-{% include code/syntax.html component="text-input-disabled" link="true" %}
+{% include code/syntax.html component="text-input-disabled" link=true copybutton=true %}
 
 {:#prefix-og-suffix}
 ### Prefix og suffix
 
-{% include code/syntax.html component="text-input-prefix-suffix" link="true" %}
+{% include code/syntax.html component="text-input-prefix-suffix" link=true copybutton=true %}
 
 {:#karakterbegraensning}
 ### Karakterbegrænsning
 
-{% include code/syntax.html component="text-input-character-limit" link="true" %}
+{% include code/syntax.html component="text-input-character-limit" link=true copybutton=true %}
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 

@@ -15,6 +15,11 @@
     <div class="sr-only">Kodeeksempel</div>
     {% endif %}
     <div class="component-code">
+        {% if include.copybutton %}
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        {% endif %}
         {% capture _syntax %}
         {% highlight html %}
         {% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}

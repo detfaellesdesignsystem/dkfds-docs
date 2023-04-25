@@ -22,4 +22,4 @@ tags:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="toggle" %}
+{% include code/syntax.html component="toggle" copybutton=true %}

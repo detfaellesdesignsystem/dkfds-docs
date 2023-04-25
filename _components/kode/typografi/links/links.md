@@ -29,7 +29,7 @@ tags:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="external-link" %}
+{% include code/syntax.html component="external-link" copybutton=true %}
 
 Eksternt link gør brug af ikoner. <a href="/kode/ikoner/">Se dokumentationen for implementering af ikoner</a>.
 
@@ -40,7 +40,7 @@ Eksternt link gør brug af ikoner. <a href="/kode/ikoner/">Se dokumentationen fo
 
 ### HTML Struktur
 
-{% include code/syntax.html component="secondary-links" %}
+{% include code/syntax.html component="secondary-links" copybutton=true %}
 
 {:#billeder-som-links}
 ## Billeder som links

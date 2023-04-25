@@ -41,7 +41,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="error-message-name" %}
+{% include code/syntax.html component="error-message-name" copybutton=true %}
 
 For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da høre “Fejl: Datoen for udløb af dit pas bør være i fortiden.”
 Teksten er skjult i et `<span>` element med klassen `sr-only`.
@@ -53,42 +53,42 @@ Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlo
 {:#accordions}
 ### Accordions
 
-{% include code/syntax.html component="error-message-accordion" title="Eksempel på accordion med fejl" link=true %}
+{% include code/syntax.html component="error-message-accordion" link=true copybutton=true %}
  
 {:#datofelter}
 ### Datofelter
 
-{% include code/syntax.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="error-message-date" link=true copybutton=true %}
 
 {:#datovaelger}
 ### Datovælger
 
-{% include code/syntax.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="date-picker-error" link=true copybutton=true %}
 
 {:#dropdown}
 ### Dropdown
 
-{% include code/syntax.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="select-error" link=true copybutton=true %}
 
 {:#tekstfelt}
 ### Inputfelt
 
-{% include code/syntax.html component="error-message-name" title="Eksempel på inputfelt med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="error-message-name" link=true copybutton=true %}
 
 {:#tekstfeltsuffix}
 #### Inputfelt med suffix
 
-{% include code/syntax.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" link=true %}
+{% include code/syntax.html component="text-input-suffix-error" link=true copybutton=true %}
 
 {:#radioknapper}
 ### Radioknapper
 
-{% include code/syntax.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="error-message-radio" link=true copybutton=true %}
 
 {:#tekstomraade}
 ### Tekstområde
 
-{% include code/syntax.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="text-area-error" link=true copybutton=true %}
 
 Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:
 
@@ -101,9 +101,9 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 {:#tjekboks}
 ### Tjekboks
 
-{% include code/syntax.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="error-message-checkbox" link=true copybutton=true %}
 
 {:#vedhaeft-fil}
 ### Vedhæft fil
 
-{% include code/syntax.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" link=true %}
+{% include code/syntax.html component="error-message-file-input" link=true copybutton=true %}

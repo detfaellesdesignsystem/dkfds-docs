@@ -22,7 +22,7 @@ tags:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="file-input" %}
+{% include code/syntax.html component="file-input" copybutton=true %}
 
 Vi anbefaler at bruge det indbyggede input felt til filer `type="file"` frem for en skræddersyet løsning.
 

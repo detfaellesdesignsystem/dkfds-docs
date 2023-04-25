@@ -581,6 +581,7 @@ pre {
 }
 
 *:not(.details-text) > figure.highlight > pre {
+  background-color: color('gray-100');
   padding: 1.6rem;
   white-space: pre-wrap;
   margin: 0;
@@ -889,6 +890,7 @@ div.component-preview {
 .component-preview-code{
   figure.highlight{
     border: 0;
+    background-color: color('gray-100');
   }
 }
 
@@ -897,6 +899,19 @@ div.component-preview {
   top: units(2);
   right: 0;
   display: none;
+}
+
+.button-copy-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: color('gray-100');
+  padding-top: units(4);
+  padding-left: units(4);
+  padding-right: units(4);
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: -(units(3));
+  }
 }
 
 .preview-iframe {

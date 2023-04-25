@@ -13,4 +13,4 @@ componentLink: false
 
 ### HTML Struktur
 
-{% include code/syntax.html component="subheading" %}
+{% include code/syntax.html component="subheading" copybutton=true %}

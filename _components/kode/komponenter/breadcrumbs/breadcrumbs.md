@@ -23,6 +23,6 @@ tags:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="breadcrumbs" %}
+{% include code/syntax.html component="breadcrumbs" copybutton=true %}
 
 Se <a href="/eksempler/selvbetjeningsloesninger/#sagsoversigt">eksempelløsningen "Sagsoversigt"</a> for placering i koden. Bemærk at brødkrummen placeres to forskellige steder, så den vises korrekt i alle skærmstørrelser.

@@ -25,7 +25,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="error-summary" %}
+{% include code/syntax.html component="error-summary" copybutton=true %}
 
 Indsættes over formularen, men under `h1` overskriften.
 
@@ -34,7 +34,7 @@ Hver fejl tilføjes til `<ul>` listen med et anchor link til feltet der er omtal
 {:#placering}
 #### Placering
 
-{% include code/syntax.html component="error-summary-page" link="true" %}
+{% include code/syntax.html component="error-summary-page" link=true copybutton=true %}
 
 
 ### Javascript

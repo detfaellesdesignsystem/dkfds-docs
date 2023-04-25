@@ -26,7 +26,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="badge" %}
+{% include code/syntax.html component="badge" copybutton=true %}
 
 Alle badges skal have en `badge` klasse på `<span>`-elementet. 
 

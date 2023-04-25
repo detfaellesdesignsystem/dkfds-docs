@@ -28,7 +28,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="checkbox-large" %}
+{% include code/syntax.html component="checkbox-large" copybutton=true %}
 
 - Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.
 - Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.
@@ -73,14 +73,14 @@ new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).in
 {:#lille-tjekboks}
 ### Lille tjekboks
 
-{% include code/syntax.html component="checkbox-small" link="true" %}
+{% include code/syntax.html component="checkbox-small" link=true copybutton=true %}
 
 Vær opmærksom på, at vi anbefaler, at man bruger den store tjekboks.
 
 {:#skjult-indhold-collapse}
 ### Skjult indhold (Collapse)
 
-{% include code/syntax.html component="checkbox-collapse" link="true" %}
+{% include code/syntax.html component="checkbox-collapse" link=true copybutton=true %}
 
 <a href="/komponenter/tjekboks/#retningslinjer">Retningslinjer</a>
 

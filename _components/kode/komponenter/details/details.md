@@ -24,4 +24,4 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="details" %}
+{% include code/syntax.html component="details" copybutton=true %}

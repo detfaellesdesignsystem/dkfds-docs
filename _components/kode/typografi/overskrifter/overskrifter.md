@@ -26,7 +26,7 @@ subnav:
 
 ## HTML Struktur
 
-{% include code/syntax.html component="headings" %}
+{% include code/syntax.html component="headings" copybutton=true %}
 
 Hold en stram overskriftsstruktur i koden. En `<h3>` altid er under en `<h2>`, en `<h4>` under en `<h3>` osv. `<h1>` er altid øverst i hierarkiet.  
 
@@ -34,7 +34,7 @@ Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet 
 
 ### Eksempel på en overskrift, der ligner et andet niveau
 
-{% include code/syntax.html component="heading" link="true" %}
+{% include code/syntax.html component="heading" link=true copybutton=true %}
 
 
 {% include child-components.html parent='Overskrift-kode' %}

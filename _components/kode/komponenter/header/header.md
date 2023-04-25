@@ -22,7 +22,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="header-wrapper" %}
+{% include code/syntax.html component="header-wrapper" copybutton=true %}
 
 Nedenstående dele indsættes i et `header` element under `body`.
 
@@ -32,7 +32,7 @@ Portal header indeholder portalens logo samt info om hvem, der er logget ind.
 
 Denne del bør altid indgå i en header.
 
-{% include code/syntax.html component="header-portal" %}
+{% include code/syntax.html component="header-portal" copybutton=true %}
 
 Hvis man har en header uden navigation skal man stadig <a href="#navigation-mobil">tilføje en mobilmenu</a>, da den viser data fra headeren, som normalt skjules i mobilvisning.
 
@@ -42,7 +42,7 @@ Løsningsheaderen indeholder løsningens titel samt info om, hvilken myndighed, 
 
 Denne del bør altid indgå i en header.
 
-{% include code/syntax.html component="header-solution" %}
+{% include code/syntax.html component="header-solution" copybutton=true %}
 
 Hvis løsningsheaderen er den sidste række i headeren, tilføj da klassen `header-end` efter klassen `solution-header`. Dette sikrer, at menustregen bliver korrekt fremhævet.
 
@@ -57,19 +57,19 @@ Alt indhold i `<nav>` elementet vil på små skærme bliver vist i en skjult men
 ##### Navigation kun til mobil
 Hvis man har en header uden navigation skal nedenstående stadig tilføjes, da det er en menu der kan åbnes på mobil som viser information fra headeren som ellers bliver skjult.
 
-{% include code/syntax.html component="header-navigation-mobil" %}
+{% include code/syntax.html component="header-navigation-mobil" copybutton=true %}
 
 Hvis man har en navigation i headeren skal man bruge en af de andre herunder.
 
 ##### Hovednavigation
-{% include code/syntax.html component="header-navigation" %}
+{% include code/syntax.html component="header-navigation" copybutton=true %}
 
 ##### Hovednavigation med ekstra navigationsrækker
 Ekstra navigationsrækker kan indeholde alt lige fra <a href="/komponenter/knapper/">knapper</a>, links til <a href="/komponenter/modal/">modaler</a>, <a href="/komponenter/overflowmenu/">overflow menuer</a> og sidst <a href="/komponenter/funktionslink/">funktionslink</a>.
 
 Hvis man laver en header med lidt indhold, er det anbefalet at man indstiller `$nav-responsive-breakpoint` til at have en lavere værdi, fx. 768px.
 
-{% include code/syntax.html component="header-navigation-complex" %}
+{% include code/syntax.html component="header-navigation-complex" copybutton=true %}
 
 ### JavaScript
 Mobil menuen kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:

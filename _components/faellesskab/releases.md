@@ -126,7 +126,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">??-04-2023</span></div>
 
-- Rettet fejl, hvor knapper blev vist forkert, hvis teksten fyldte flere linjer.
+- Rettet fejl, hvor teksten på <a href="/komponenter/knapper/">knapper</a> røg ud over kanten, hvis teksten fyldte flere linjer.
 
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0

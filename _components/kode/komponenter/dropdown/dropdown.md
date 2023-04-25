@@ -24,7 +24,7 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="select" %}
+{% include code/syntax.html component="select" copybutton=true %}
 
 Dropdown skal have et label tilknyttet.
 

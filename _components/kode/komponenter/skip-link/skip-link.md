@@ -22,7 +22,7 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="skiplink" %}
+{% include code/syntax.html component="skiplink" copybutton=true %}
 
 Skip-link `<a>` elementet indsættes som første element i `<header>`. Elementet skal være det første element, der kommer i fokus på siden ved brug af tastaturet.
 

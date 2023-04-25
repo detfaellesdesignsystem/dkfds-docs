@@ -28,7 +28,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="language-switcher" %}
+{% include code/syntax.html component="language-switcher" copybutton=true %}
 
 <div class="alert alert-warning" role="alert">
     <div class="alert-body">
@@ -47,6 +47,6 @@ Bemærk aria-labels i koden, hvor der vil være tekst og formuleringer der skal 
 {:#sprogvaelger-med-tooltip}
 ### Sprogvælger med tooltip
 
-{% include code/syntax.html component="language-switcher-tooltip" link="true" %}
+{% include code/syntax.html component="language-switcher-tooltip" link=true copybutton=true %}
 
 <a href="/kode/komponenter/tooltip/">For mere info om implementering se tooltip komponenten</a>

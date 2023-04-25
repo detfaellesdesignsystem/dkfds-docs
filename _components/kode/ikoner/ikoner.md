@@ -43,13 +43,13 @@ Ikonerne i ikonsamlingen er defineret ved hjælp af `<symbol>`, der hver har et 
 
 Det anbefales at indsætte alle ikoner i samlingen på hver side, men du kan også vælge kun at medtage de ikoner, der er relevante for den enkelte side. Du kan se den fulde ikonsamling ved at åbne nedenstående eksempel i et nyt vindue.
 
-{% include code/syntax.html component="simple-base-svg" link="true" url="ikon-samling" %}
+{% include code/syntax.html component="simple-base-svg" link=true url="ikon-samling" %}
 
 ### Anvendelse
 
 For at anvende et ikon skal du indsætte det ved hjælp af `<svg>` og referere til det korrekte `id` i ikonsamlingen. For eksempel skal ikonet for "print (udskriv)" indsættes med:
 
-{% include code/syntax.html component="icon" link="true" %}
+{% include code/syntax.html component="icon" link=true %}
 
 #### Tilpasning af ikonet til teksten
 
@@ -61,7 +61,7 @@ Der er et ikon <svg class="icon-svg inline-svg" focusable="false" aria-hidden="t
 
 Ikoner kan indsættes ved hjælp af klasser på følgende måde:
 
-{% include code/syntax.html component="icon-class" link="true" %}
+{% include code/syntax.html component="icon-class" link=true %}
 
 Denne metode har nogle begrænsninger, hvorfor vi anbefaler, at man benytter ikonsamlingen i stedet for.
 

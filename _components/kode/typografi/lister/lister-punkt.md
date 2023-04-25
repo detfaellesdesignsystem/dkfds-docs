@@ -12,4 +12,4 @@ componentLink: false
 
 ### HTML Struktur
 
-{% include code/syntax.html component="lists-unordered" %}
+{% include code/syntax.html component="lists-unordered" copybutton=true %}

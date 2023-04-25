@@ -24,7 +24,7 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="tabnav" %}
+{% include code/syntax.html component="tabnav" copybutton=true %}
 
 ### JavaScript
 

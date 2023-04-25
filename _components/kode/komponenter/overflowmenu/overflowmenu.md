@@ -25,7 +25,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="overflow-menu" %}
+{% include code/syntax.html component="overflow-menu" copybutton=true %}
 
 #### Klasser
 
@@ -75,7 +75,7 @@ Overflow menu skal kunne aktiveres og håndteres fra tastatur og brugeren skal k
 
 {:#sortering}
 ### Sortering
-{% include code/syntax.html component="sort" link="true" %}
+{% include code/syntax.html component="sort" link=true copybutton=true %}
 
 #### JavaScript
 

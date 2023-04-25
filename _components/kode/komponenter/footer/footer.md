@@ -34,7 +34,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="footer-simple" %}
+{% include code/syntax.html component="footer-simple" copybutton=true %}
 
 Ovenstående indsættes i bunden af siden, under `<main>`.
 
@@ -62,16 +62,16 @@ Yderligere bør brugeren oplyses om, at de nu forlader løsningen, og at eventue
 {:#tre-kolonner}
 ### Tre kolonner
 
-{% include code/syntax.html component="footer-three-columns" link="true" %}
+{% include code/syntax.html component="footer-three-columns" link=true copybutton=true %}
 
 {:#fire-kolonner}
 ### Fire kolonner
-{% include code/syntax.html component="footer-four-columns" link="true" %}
+{% include code/syntax.html component="footer-four-columns" link=true copybutton=true %}
 
 {:#kompleks}
 ### Kompleks
-{% include code/syntax.html component="footer-complex" link="true" %}
+{% include code/syntax.html component="footer-complex" link=true copybutton=true %}
 
 {:#logo}
 ### Logo
-{% include code/syntax.html component="footer-logo" link="true" %}
+{% include code/syntax.html component="footer-logo" link=true copybutton=true %}

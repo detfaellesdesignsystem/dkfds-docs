@@ -13,4 +13,4 @@ componentLink: false
 
 ### HTML Struktur
 
-{% include code/syntax.html component="lead_paragraph" %}
+{% include code/syntax.html component="lead_paragraph" copybutton=true %}

@@ -31,7 +31,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="date-picker" %}
+{% include code/syntax.html component="date-picker" copybutton=true %}
 
 ### Javascript
 Datovælger-komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
@@ -129,11 +129,11 @@ DKFDS.datePicker.on(document.body);
 
 {:#interval}
 ### Begræns mulige datoer
-{% include code/syntax.html component="date-picker-interval" link="true" %}
+{% include code/syntax.html component="date-picker-interval" link=true copybutton=true %}
 
 {:#fast-vaerdi}
 ### Fast værdi
-{% include code/syntax.html component="date-picker-default-date" link="true" %}
+{% include code/syntax.html component="date-picker-default-date" link=true copybutton=true %}
 
 {:#datoformat}
 ### Datoformat
@@ -146,7 +146,7 @@ Anvend attributten `data-dateformat`. Mulige værdier er:
 
 Bemærk at valg af datoformat udelukkende påvirker, hvordan datoer vises i inputfeltet, efter brugeren har trykket på en dato i datovælgeren. Alle ovenstående datoformater er gyldige, hvis brugeren selv vælger at skrive datoen ind i feltet.
 
-{% include code/syntax.html component="date-picker-format" link="true" %}
+{% include code/syntax.html component="date-picker-format" link=true copybutton=true %}
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
