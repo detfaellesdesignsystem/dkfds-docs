@@ -1,6 +1,6 @@
 ---
 permalink: /faellesskab/nyhedsmail/afmeld/
-parentlink: /omdesignsystemet/nyhedsmail/
+parentlink: /faellesskab/nyhedsmail/
 redirect_from:
 - /omdesignsystemet/nyhedsmail/afmeld/
 layout: styleguide
@@ -18,13 +18,17 @@ tags:
     </div>
 </div>
 <div class="newsletter-container mt-5">
-    <form method="post" action="." id="newsform">
-        <div class="form-group" id="newsletter-emailaddress" hidden>
+    <form action="https://det-faelles-designsystem.uxmail.io/handlers/post/" method="post" id="newsform" novalidate>
+        <input type="hidden" name="action" value="unsubscribe">
+        <input type="hidden" name="lists" value="82268">
+        <input type="hidden" name="failure_url" value="" id="failure_url" />
+        <input type="hidden" name="success_url" value="" id="success_url" />
+        <div class="form-group" id="newsletter-emailaddress">
             <label class="form-label" for="i_newsform_email">Afmeld e-mailadresse</label>
             <span class="form-error-message d-none"></span>
-            <input type="email" class="form-input" id="i_newsform_email" name="i_email" autocomplete="email" required>
+            <input type="email" class="form-input" id="i_newsform_email" name="email_address" autocomplete="email" required>
         </div>
-        <button id="afmeld" class="button button-primary mt-5" type="button" hidden>Afmeld</button>
+        <input type="submit" class="button button-primary mt-5" value="Afmeld" id="newsletter-submit">
     </form>
     <p class="mt-9 pt-0 mb-9">
         <a href="/faellesskab/nyhedsmail/">Tilmeld en <span class='nowrap'>e-mailadresse</span> her</a>

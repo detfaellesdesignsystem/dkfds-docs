@@ -8,6 +8,7 @@ category: Faellesskab_category
 subcategory: Fællesskab
 description: "Tilmeld dig nyheder fra Det Fælles Designsystem"
 ---
+
 <div class="alert mt-5 mb-9" id="newsletter-alert" role="alert" hidden>
     <div class="alert-body">
         <h2 class="alert-heading"></h2>
@@ -15,19 +16,23 @@ description: "Tilmeld dig nyheder fra Det Fælles Designsystem"
     </div>
 </div>
 <div class="newsletter-container mt-5">
-    <form method="post" action="." id="newsform">
-        <div class="form-group" id="newsletter-emailaddress" hidden>
+    <form action="https://det-faelles-designsystem.uxmail.io/handlers/post/" method="post" id="newsform" novalidate>
+        <input type="hidden" name="action" value="subscribe">
+        <input type="hidden" name="lists" value="82268">
+        <input type="hidden" name="failure_url" value="" id="failure_url" />
+        <input type="hidden" name="success_url" value="" id="success_url" />
+        <div class="form-group" id="newsletter-emailaddress">
             <label class="form-label" for="i_newsform_email">Tilmeld e-mailadresse</label>
             <span class="form-error-message d-none"></span>
-            <input type="email" class="form-input" id="i_newsform_email" name="i_email" autocomplete="email" required>
+            <input type="email" class="form-input" id="i_newsform_email" name="email_address" autocomplete="email" required>
         </div>
-        <div class="form-group" id="samtykke-group" hidden>
+        <div class="form-group" id="samtykke-group">
             <span class="form-error-message d-none"></span>
-            <input id="samtykke-check" type="checkbox" name="samtykke-check" value="1" class="form-checkbox checkbox-large" required />
+            <input id="samtykke-check" type="checkbox" name="data_Samtykke" value="Ja" class="form-checkbox checkbox-large" required />
             <label for="samtykke-check">Jeg giver hermed samtykke til, at Erhvervsstyrelsen må opbevare min <span class='nowrap'>e-mailadresse</span>, indtil jeg selv afmelder mig nyhedsbrevet</label>
         </div>
         <p><a href="/privatlivspolitik-cookies/">Læs om vores behandling af dine personoplysninger og dine rettigheder</a></p>
-        <button id="tilmeld" class="button button-primary mt-5" type="button" hidden>Tilmeld</button>
+        <input type="submit" class="button button-primary mt-5" value="Tilmeld" id="newsletter-submit">
     </form>
     <p class="mt-9 pt-0">
         <a href="/faellesskab/nyhedsmail/afmeld/">Afmeld en <span class='nowrap'>e-mailadresse</span> her</a>
