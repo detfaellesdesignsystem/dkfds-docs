@@ -20,6 +20,23 @@ document.addEventListener("DOMContentLoaded", function () {
     let unsubscriptionPage = document.querySelector('body').classList.contains('page-afmeld-nyhedsbrev');
     let alert = document.getElementById('newsletter-alert');
 
+    /* Don't change these values */
+    document.getElementById('newsletter_lists').setAttribute('name', 'lists');
+    document.getElementById('newsletter_lists').value = "82268";
+    document.getElementById('newsletter_language').setAttribute('name', 'language_code');
+    document.getElementById('newsletter_language').value = "da";
+    document.getElementById('i_newsform_email').setAttribute('name', 'email_address');
+    if (subscriptionPage) {
+        document.getElementById('newsletter_action').setAttribute('name', 'action');
+        document.getElementById('newsletter_action').value = "subscribe";
+        document.getElementById('samtykke-check').setAttribute('name', 'data_Samtykke');
+        document.getElementById('samtykke-check').value = "Ja";
+    }
+    if (unsubscriptionPage) {
+        document.getElementById('newsletter_action').setAttribute('name', 'action');
+        document.getElementById('newsletter_action').value = "unsubscribe";
+    }
+
     if (subscriptionPage || unsubscriptionPage) {
 
         /* Suppress form submit until we have checked that all required fields have been filled out */
@@ -48,13 +65,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert.querySelector('.alert-heading').innerHTML = "Afmelding fejlede";
             }
 
-            if (errorCodes.includes('11')) {
+            if (errorCodes.includes('11') && subscriptionPage) {
                 alert.querySelector('.alert-text').innerHTML = '<p>Den indtastede adresse er allerede tilmeldt nyhedsbrevet.</p><p class="mb-0">Du er velkommen til at <a href="mailto:FDS@erst.dk">sende en e-mail til FDS-teamet</a>, hvis du har spørgsmål.</p>';
             }
-            else if (errorCodes.includes('14')) {
+            else if (errorCodes.includes('14') && unsubscriptionPage) {
                 alert.querySelector('.alert-text').innerHTML = '<p>Den indtastede adresse er ikke tilmeldt nyhedsbrevet og kan derfor ikke afmeldes.</p><p class="mb-0">Du er velkommen til at <a href="mailto:FDS@erst.dk">sende en e-mail til FDS-teamet</a>, hvis du har spørgsmål.</p>';
             }
-            else {
+            else if (subscriptionPage) {
+                alert.querySelector('.alert-text').innerHTML = '<p>Det var ikke muligt at tilmelde den indtastede e-mailadresse. Tjek at du har indtastet den korrekte e-mailadresse og prøv at tilmelde igen.</p><p class="mb-0">Hvis problemet fortsætter, så <a href="mailto:FDS@erst.dk">send en e-mail til FDS-teamet</a> og oplys fejlkoden <strong>error_codes_' + errorCodes.toString() + '</strong> samt den <strong>e-mailadresse, du forsøgte at tilmelde</strong>. Vi beklager ulejligheden.</p>';
+            }
+            else if (unsubscriptionPage) {
                 alert.querySelector('.alert-text').innerHTML = '<p>Det var ikke muligt at afmelde den indtastede e-mailadresse. Tjek at du har indtastet den korrekte e-mailadresse og prøv at afmelde igen.</p><p class="mb-0">Hvis problemet fortsætter, så <a href="mailto:FDS@erst.dk">send en e-mail til FDS-teamet</a> og oplys fejlkoden <strong>error_codes_' + errorCodes.toString() + '</strong> samt den <strong>e-mailadresse, du forsøgte at afmelde</strong>. Vi beklager ulejligheden.</p>';
             }
 
@@ -128,8 +148,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.getElementById('samtykke-check').focus();
                 }
             }
+            /* No errors detected in fields - submit the form */
             else {
-                document.getElementById('failure_url').value = (window.location.href).replace(/\?.+/ig, ''); // Reload the page and remove current error messages in url
+
+                /* Error happened in backend. Reload the page and remove any current error messages in url. */
+                document.getElementById('failure_url').value = (window.location.href).replace(/\?.+/ig, '');
 
                 if (subscriptionPage) {
                     document.getElementById('success_url').value = window.location.href + 'tilmeldt/';
