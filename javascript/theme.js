@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
         setFooterSwitcher();
 
         // handle theme selector on demo pages
-        initDemoThemeSelector();
+        setDemoSwitcher();
 
         setScreenshots();
 
@@ -73,6 +73,7 @@ let setCookieIfMissing = function (){
         setRandomThemeCookie();
     }
 };
+
 let verifyCookieOrDelete = function(){
     if(isCookieSet()) {
         let themeChosen = getThemeCookie();
@@ -175,6 +176,7 @@ let setCookie = function (name, value, daysToLive) {
 let deleteCookie = function ( name ) {
     document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';
 };
+
 let getCookie = function(name) {
     // Split cookie string and get all individual name=value pairs in an array
     let cookieArr = document.cookie.split(";");
@@ -195,46 +197,15 @@ let getCookie = function(name) {
     return null;
 };
 
-let initDemoThemeSelector = function(){
-    let demoSelector = document.getElementById(demoSelectorId);
-    if(demoSelector !== null && demoSelector !== undefined){
-        setCorrectSelectedtheme();
-
-        demoSelector.addEventListener('change', (event) => {
-           let value = document.getElementById(demoSelectorId).value;
-           if(themes.indexOf(value) >= 0) {
-               setThemeCookie(value);
-               window.themeChangeProcess = true;
-               location.reload();
-           } else{
-               alert('The selected theme does not exist');
-           }
-        });
-
-    }
-};
-
-let setCorrectSelectedtheme = function(){
-    let demoSelector = document.getElementById(demoSelectorId);
-    let options = demoSelector.getElementsByTagName('option');
-    let cookie = getThemeCookie();
-
-    for (let i = 0; i < options.length; i++){
-        if(cookie === options[i].value){
-            demoSelector.selectedIndex = i;
-        }
-    }
-};
-
 let setFooterSwitcher = function(){
     if(document.getElementById('changeTheme') !== null) {
         let cookie = getThemeCookie();
         let theme = "";
         switch (cookie) {
-            case 'virk':
+            case themes[0]:
                 theme = "Borger.dk";
                 break;
-            case 'borgerdk':
+            case themes[1]:
                 theme = "Virk";
                 break;
 
@@ -246,13 +217,49 @@ let setFooterSwitcher = function(){
         document.getElementById('changeTheme').addEventListener('click', toggleTheme);
     }
 };
-let toggleTheme = function(){
-  let cookie = getThemeCookie();
-  if(cookie === 'virk'){
-      onBorgerdkThemeSelected();
-  } else if(cookie === 'borgerdk'){
-      onVirkThemeSelected();
-  }
+
+let setDemoSwitcher = function () {
+    if (document.getElementById('changeDemoTheme') !== null) {
+
+        /* Ensure the button shows the correct text */
+        let cookie = getThemeCookie();
+        let theme = "";
+        switch (cookie) {
+            case themes[0]:
+                theme = "Borger.dk";
+                break;
+            case themes[1]:
+                theme = "Virk";
+                break;
+        }
+        let text = "Skift til " + theme + " tema";
+        document.getElementById('changeDemoThemeText').innerText = text;
+
+        /* Add event listener */
+        document.getElementById('changeDemoTheme').addEventListener('click', function() {
+            let newTheme = "";
+            switch (cookie) {
+                case themes[0]:
+                    newTheme = themes[1];
+                    break;
+                case themes[1]:
+                    newTheme = themes[0];
+                    break;
+            }
+            setThemeCookie(newTheme);
+            window.themeChangeProcess = true;
+            location.reload();
+        });
+    }
+};
+
+let toggleTheme = function () {
+    let cookie = getThemeCookie();
+    if (cookie === themes[0]) {
+        onBorgerdkThemeSelected();
+    } else if (cookie === themes[1]) {
+        onVirkThemeSelected();
+    }
 };
 
 let debug = function(title, value){
@@ -260,7 +267,6 @@ let debug = function(title, value){
         console.log(title, value);
     }
 };
-
 
 let setScreenshots = function(){
     if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || document.getElementsByTagName('body')[0].classList.contains('page-dashboard') || document.getElementsByTagName('body')[0].classList.contains('page-patterns') || document.getElementsByTagName('body')[0].classList.contains('page-templates') || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
