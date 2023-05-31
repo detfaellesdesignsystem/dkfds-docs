@@ -89,11 +89,6 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsumme
 
 {% include code/preview-box.html component="radiobutton-helptext" title="Eksempel på radioknapper med hjælpetekst" %}
 
-{:#lille-radioknap}
-### Lille radioknap
-
-{% include code/preview-box.html component="radiobutton-small" title="Eksempel på små radioknapper" %}
-
 {:#skjult-indhold-collapse}
 ### Skjult indhold (Collapse)
 

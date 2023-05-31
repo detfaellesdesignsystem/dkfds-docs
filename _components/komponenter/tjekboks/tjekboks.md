@@ -73,11 +73,6 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsumme
 
 ## Varianter
 
-{:#lille-tjekboks}
-### Lille tjekboks
-
-{% include code/preview-box.html component="checkbox-small" title="Eksempel på små tjekbokse" %}
-
 {:#skjult-indhold-collapse}
 ### Skjult indhold (Collapse)
 
