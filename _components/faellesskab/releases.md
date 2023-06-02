@@ -75,6 +75,8 @@ tags:
 - 9.0.1
 anchor: true
 subnav:
+- text: Version 10.0.0
+  href: "#version-10-0-0"
 - text: Version 9.0.1
   href: "#version-9-0-1"
 - text: Version 9.0.0
