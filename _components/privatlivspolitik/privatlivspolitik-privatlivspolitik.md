@@ -25,15 +25,7 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a>
 
 <h3>Formålene med og retsgrundlaget for behandlingen af dine personoplysninger</h3>
 
-Vi anvender data til at forbedre Det Fælles Designsystem (FDS) og give dig/myndigheden et bedre produkt. Vi indsamler desuden oplysninger til en anonymiseret statistik over, hvor mange brugere der åbner deres mails.
-
-<h3>Kategorier af personoplysninger</h3>
-
-Når du anvender FDS, vil vi i forbindelse med indsamling af brugsstatistik registrere din IP-adresse.
-
-<h3>Hvor behandles dine personoplysninger?</h3>
-
-IP-adressen gemmes hos Piwik PRO.
+Hvis du siger ja til cookies, anvender vi data til at forbedre Det Fælles Designsystem (FDS) og give dig/myndigheden et bedre produkt. Vi indsamler desuden oplysninger til en anonymiseret statistik over, hvor mange brugere der åbner deres mails blandt de, som er tilmeldt vores nyhedsbrev. Databehandleren opbevarer nyhedsbrevsabonnenternes e-mailadresser, indtil abonnenten selv afmelder sig nyhedsbrevet.
 
 <h3>Hvem har adgang til dine oplysninger?</h3>
 
