@@ -124,7 +124,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-9-0-1 .mb-0}
 ## Version 9.0.1
 
-<div><span class="small-text mt-0 d-block">??-06-2023</span></div>
+<div><span class="small-text mt-0 d-block">20-06-2023</span></div>
 
 - Rettet fejl, hvor teksten på <a href="/komponenter/knapper/">knapper</a> røg ud over kanten, hvis teksten fyldte flere linjer.
 - Rettet fejl, hvor <a href="/komponenter/cookiemeddelelse/">cookiemeddelelsen</a> ikke kunne læses, når der var zoomet kraftigt ind i browseren.
