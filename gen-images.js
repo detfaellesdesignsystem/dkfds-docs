@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
-var root = "http://127.0.0.1:4000";
-//var root = "https://develop.designsystem.dk/";
+//var root = "http://127.0.0.1:4000";
+var root = "https://develop.designsystem.dk/";
 var targetRootDir = "img/examples/";
 var themes = ["virk", "borgerdk"];
 
@@ -19,10 +19,10 @@ var exampleUrls = [
     {"url": "/eksempel/footer-four-columns-language/", "filename": "footer-four-columns-language.png", "width": 1017, "height": 363 },
     {"url": "/eksempel/footer-complex/", "filename": "footer-complex.png", "width": 1017, "height": 376 },
     {"url": "/eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
-    {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 270 },
+    {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 280 },
     {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 },
     {"url": "/eksempel/skiplink/", "filename": "skiplink.png", "width": 771, "height": 70 },
-    {"url": "/eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 }    
+    {"url": "/eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 }
 ];
 
 (async () => {
