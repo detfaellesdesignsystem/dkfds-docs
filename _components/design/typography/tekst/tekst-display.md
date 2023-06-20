@@ -28,9 +28,11 @@ At fremhæve tal eller ord i særlig grad.
 
 #### Anvendes ikke til
 
-- Afsnit af tekst
-- Alle tal i en beregning
-- Overskrifter
+Afsnit af tekst.
+
+Alle tal i en beregning.
+
+Overskrifter.
 
 #### Vejledning
 

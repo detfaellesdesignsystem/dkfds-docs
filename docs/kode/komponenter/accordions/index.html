@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -4087,7 +4075,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -4301,22 +4289,6 @@
 
     
 
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
-
-</li>
-
-    
-
 
         </ul>
         
@@ -4414,6 +4386,11 @@
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;accordion&quot;&gt;
     &lt;li&gt;
         &lt;h2&gt;
@@ -4441,6 +4418,8 @@
 <p>Kopiér ovenstående kode for at indsætte én accordion. Ønsker du flere kan du duplikere <code>&lt;li&gt;</code> elementet.</p>
 
 <p>Husk at tilpasse koden, således at ikke kun indholdet passer, men også attributterne. Herunder er særligt <code>aria-controls</code> og <code>id</code> vigtige, da disse skal være unikke.</p>
+
+<p>Overskriften på en accordion skal angives som en heading. Sørg for at anvende det korrekte heading-niveau, som passer semantisk ind i konteksten på siden.</p>
 
 <h3>Javascript</h3>
 <p>Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
@@ -4498,15 +4477,20 @@
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div&gt;
     &lt;button class=&quot;accordion-bulk-button&quot; data-accordion-bulk-expand=&quot;true&quot;&gt;Åbn alle&lt;/button&gt;
     &lt;ul class=&quot;accordion&quot;&gt;
         &lt;li&gt;
-            &lt;h3&gt;
+            &lt;h4&gt;
                 &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;ao1&quot;&gt;
                     Lorem ipsum dolor sit amet
                 &lt;/button&gt;
-            &lt;/h3&gt;
+            &lt;/h4&gt;
             &lt;div id=&quot;ao1&quot; aria-hidden=&quot;false&quot; class=&quot;accordion-content&quot;&gt;
                 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -4515,11 +4499,11 @@
             &lt;/div&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;h3&gt;
+            &lt;h4&gt;
                 &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;ao2&quot;&gt;
                     Consectetur adipiscing elit
                 &lt;/button&gt;
-            &lt;/h3&gt;
+            &lt;/h4&gt;
             &lt;div id=&quot;ao2&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
                 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -4528,11 +4512,11 @@
             &lt;/div&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;h3&gt;
+            &lt;h4&gt;
                 &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;ao3&quot;&gt;
                     Sed do eiusmod tempor
                 &lt;/button&gt;
-            &lt;/h3&gt;
+            &lt;/h4&gt;
             &lt;div id=&quot;ao3&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
                 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -4541,11 +4525,11 @@
             &lt;/div&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;h3&gt;
+            &lt;h4&gt;
                 &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;ao4&quot;&gt;
                     Labore et dolore magna
                 &lt;/button&gt;
-            &lt;/h3&gt;
+            &lt;/h4&gt;
             &lt;div id=&quot;ao4&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
                 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -4575,13 +4559,18 @@
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;accordion&quot;&gt;
     &lt;li&gt;
-        &lt;h2&gt;
+        &lt;h5&gt;
             &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;error-a1&quot;&gt;
                 Lorem ipsum dolor sit amet
             &lt;/button&gt;
-        &lt;/h2&gt;
+        &lt;/h5&gt;
         &lt;div id=&quot;error-a1&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4590,7 +4579,7 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-        &lt;h2&gt;
+        &lt;h5&gt;
             &lt;button class=&quot;accordion-button accordion-error &quot; aria-expanded=&quot;true&quot;
                 aria-describedby=&quot;error-a2-error&quot; aria-controls=&quot;error-a2&quot;&gt;
                 Consectetur adipiscing elit
@@ -4599,7 +4588,7 @@
                     &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#highlight-off&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                 &lt;/span&gt;
             &lt;/button&gt;
-        &lt;/h2&gt;
+        &lt;/h5&gt;
         &lt;div id=&quot;error-a2&quot; aria-hidden=&quot;false&quot; class=&quot;accordion-content&quot;&gt;
             &lt;div class=&quot;alert alert-error&quot; role=&quot;alert&quot; id=&#39;error-a2-error&#39;&gt;
                 &lt;div class=&quot;alert-body&quot;&gt;
@@ -4615,7 +4604,7 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-        &lt;h2&gt;
+        &lt;h5&gt;
             &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;error-a3&quot;&gt;
                 Sed do eiusmod tempor
                 &lt;span class=&quot;accordion-icon&quot;&gt;
@@ -4623,7 +4612,7 @@
                     &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#report-problem&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                 &lt;/span&gt;
             &lt;/button&gt;
-        &lt;/h2&gt;
+        &lt;/h5&gt;
         &lt;div id=&quot;error-a3&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4632,11 +4621,11 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-        &lt;h2&gt;
+        &lt;h5&gt;
             &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;error-a4&quot;&gt;
                 Labore et dolore magna
             &lt;/button&gt;
-        &lt;/h2&gt;
+        &lt;/h5&gt;
         &lt;div id=&quot;error-a4&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4665,13 +4654,18 @@
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;accordion&quot;&gt;
     &lt;li&gt;
-        &lt;h3&gt;
+        &lt;h4&gt;
             &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;success-a1&quot;&gt;
                 Lorem ipsum dolor sit amet
             &lt;/button&gt;
-        &lt;/h3&gt;
+        &lt;/h4&gt;
         &lt;div id=&quot;success-a1&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4680,11 +4674,11 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-        &lt;h3&gt;
+        &lt;h4&gt;
             &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;success-a2&quot;&gt;
                 Consectetur adipiscing elit
             &lt;/button&gt;
-        &lt;/h3&gt;
+        &lt;/h4&gt;
         &lt;div id=&quot;success-a2&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4693,7 +4687,7 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-        &lt;h3&gt;
+        &lt;h4&gt;
             &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;success-a3&quot;&gt;
                 Sed do eiusmod tempor
                 &lt;span class=&quot;accordion-icon&quot;&gt;
@@ -4701,7 +4695,7 @@
                     &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#check-circle&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
                 &lt;/span&gt;
             &lt;/button&gt;
-        &lt;/h3&gt;
+        &lt;/h4&gt;
         &lt;div id=&quot;success-a3&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4710,11 +4704,11 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-        &lt;h3&gt;
+        &lt;h4&gt;
             &lt;button class=&quot;accordion-button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;success-a4&quot;&gt;
                 Labore et dolore magna
             &lt;/button&gt;
-        &lt;/h3&gt;
+        &lt;/h4&gt;
         &lt;div id=&quot;success-a4&quot; aria-hidden=&quot;true&quot; class=&quot;accordion-content&quot;&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4772,10 +4766,6 @@
                 
                   
                 
-              
-              
-
-              
               
               
 

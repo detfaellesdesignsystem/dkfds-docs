@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -4141,7 +4129,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -4355,22 +4343,6 @@
 
     
 
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
-
-</li>
-
-    
-
 
         </ul>
         
@@ -4459,23 +4431,29 @@
 
 <h3>HTML Struktur</h3>
 
-<div class="component-preview component-preview-code  component-code-error-message">
+<div class="component-preview component-preview-code  component-code-error-message-name">
     
     
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;form-error&quot;&gt;Hvad hedder dit kursus?&lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;fullname-error-example&quot;&gt;Hvad er dit fulde navn?&lt;/label&gt;
 
-    &lt;span class=&quot;form-hint&quot; id=&quot;form-error-hint&quot;&gt;Fx: Skriv godt&lt;/span&gt;
-    &lt;span class=&quot;form-error-message&quot; id=&quot;form-error-error&quot;&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Giv dit kursus et navn
+    &lt;span class=&quot;form-error-message&quot; id=&quot;fullname-error-example-error&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Fejl: &lt;/span&gt;Skriv dit fulde navn, og adskil for- og efternavne
+        med mellemrum, fx Anders Andersen
     &lt;/span&gt;
 
-    &lt;input type=&quot;text&quot; id=&quot;form-error&quot; name=&quot;form-error&quot; class=&quot;form-input&quot;
-        aria-invalid=&quot;true&quot; aria-describedby=&quot;form-error-hint form-error-error &quot; required&gt;
+    &lt;input type=&quot;text&quot; id=&quot;fullname-error-example&quot; name=&quot;fullname-error-example&quot;
+        class=&quot;form-input&quot; aria-invalid=&quot;true&quot;
+        aria-describedby=&quot;fullname-error-example-error &quot; required&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4489,7 +4467,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 
 <h2>Varianter</h2>
 
-<h2 class="h3" id="accordions">Accordions</h2>
+<h3 id="accordions">Accordions</h3>
 
 <div class="component-preview component-preview-code  component-code-error-message-accordion">
     
@@ -4500,9 +4478,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på accordion med fejl</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;accordion&quot;&gt;
     &lt;li&gt;
@@ -4537,7 +4520,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="datofelter">Datofelter</h2>
+<h3 id="datofelter">Datofelter</h3>
 
 <div class="component-preview component-preview-code  component-code-error-message-date">
     
@@ -4548,9 +4531,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på datofelter med fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;fieldset
@@ -4600,7 +4588,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="datovaelger">Datovælger</h2>
+<h3 id="datovaelger">Datovælger</h3>
 
 <div class="component-preview component-preview-code  component-code-date-picker-error">
     
@@ -4611,9 +4599,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på datovælger med fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;datepicker-example-error1&quot;&gt;Dato for aftale&lt;/label&gt;
@@ -4632,7 +4625,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="dropdown">Dropdown</h2>
+<h3 id="dropdown">Dropdown</h3>
 
 <div class="component-preview component-preview-code  component-code-select-error">
     
@@ -4643,9 +4636,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på dropdown med fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;options-error&quot;&gt;Dropdown (select)&lt;/label&gt;
@@ -4666,7 +4664,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="tekstfelt">Inputfelt</h2>
+<h3 id="tekstfelt">Inputfelt</h3>
 
 <div class="component-preview component-preview-code  component-code-error-message-name">
     
@@ -4677,9 +4675,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på inputfelt med fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;fullname-error-example&quot;&gt;Hvad er dit fulde navn?&lt;/label&gt;
@@ -4698,7 +4701,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h3 class="h4" id="tekstfeltsuffix">Inputfelt med suffix</h3>
+<h4 id="tekstfeltsuffix">Inputfelt med suffix</h4>
 
 <div class="component-preview component-preview-code  component-code-text-input-suffix-error">
     
@@ -4709,9 +4712,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på inputfejl med suffix og fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;input-pris-error&quot;&gt;Pris i 1000 kr.&lt;/label&gt;
@@ -4732,7 +4740,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="radioknapper">Radioknapper</h2>
+<h3 id="radioknapper">Radioknapper</h3>
 
 <div class="component-preview component-preview-code  component-code-error-message-radio">
     
@@ -4743,9 +4751,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på radioknapper med fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;fieldset role=&quot;radiogroup&quot; aria-describedby=&quot;radiogroup-error-error &quot;
@@ -4787,7 +4800,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="tekstomraade">Tekstområde</h2>
+<h3 id="tekstomraade">Tekstområde</h3>
 
 <div class="component-preview component-preview-code  component-code-text-area-error">
     
@@ -4798,9 +4811,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på tekstområde med fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;textarea-error&quot;&gt;Tekstområde med fejlmeddelelse&lt;/label&gt;
@@ -4825,7 +4843,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
   <li><code>aria-describedby</code></li>
 </ul>
 
-<h2 class="h3" id="tjekboks">Tjekboks</h2>
+<h3 id="tjekboks">Tjekboks</h3>
 
 <div class="component-preview component-preview-code  component-code-error-message-checkbox">
     
@@ -4836,9 +4854,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på tjekbokse med fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-error&quot;&gt;
     &lt;fieldset aria-describedby=&quot;example-nationalitet-error&quot;&gt;
@@ -4880,7 +4903,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
 </div>
 
-<h2 class="h3" id="vedhaeft-fil">Vedhæft fil</h2>
+<h3 id="vedhaeft-fil">Vedhæft fil</h3>
 
 <div class="component-preview component-preview-code  component-code-error-message-file-input">
     
@@ -4891,9 +4914,14 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
     </div>
     
     
-    <div class="sr-only">Eksempel på felt til vedhæftning af fil med fejlmeddelelse</div>
+    <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group file-input form-error&quot;&gt;
     &lt;label class=&quot;form-label&quot; for=&quot;form-fileinput-error&quot;&gt;Vedhæft fil&lt;/label&gt;
@@ -4973,10 +5001,6 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
                 
                   
                 
-              
-              
-
-              
               
               
 

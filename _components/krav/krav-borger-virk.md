@@ -16,9 +16,10 @@ subnav:
 - text: Integration på Virk
   href: '#integration-paa-virk'
 ---
+
 Kravene til integration som borger.dk og Virk stiller, handler om tilslutningen af selvbetjeningsløsningen til den givne portal. Mens krav til designet af selvbetjeningsløsningen retter sig specifikt mod anvendelsen af det Fælles Designsystem. Designkravet handler således om fonte, former, farver og grundlæggende layout samt konsistens i brugen af komponenter.
 
-{:.h4 #design-til-borgerdk-og-virk}
+{:#design-til-borgerdk-og-virk}
 ## Design til borger.dk og Virk
 
 Brug eller imiter det Fælles Designsystem.
@@ -32,7 +33,7 @@ Det anbefales desuden, at løsningen har en <a href="/komponenter/footer/">foote
 
 <a href="/design/designtjek/">Designtjekliste</a>
 
-{:.h4 #integration-paa-borgerdk}
+{:#integration-paa-borgerdk}
 ## Integration på borger.dk
 
 - din løsning skal være <a href="https://www.digitaliser.dk/resource/2406098" class="icon-link">tilsluttet via opis<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
@@ -40,7 +41,7 @@ Det anbefales desuden, at løsningen har en <a href="/komponenter/footer/">foote
 
 <a href="https://www.digitaliser.dk/resource/4134076" class="icon-link">Vejledning til integration på borger.dk<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h4 #integration-paa-virk}
+{:#integration-paa-virk}
 ## Integration på Virk
 
 - din løsning skal være tilsluttet via <a href="https://myndighedsnet.virk.dk/integration/vaerktoejer/dia-vaerktoejet" class="icon-link">DIA (Digital Indberetnings Administration)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, der er myndighedernes værktøj til styring af deres indhold på Virk.

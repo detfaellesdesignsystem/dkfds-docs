@@ -35,7 +35,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="modal" %}
+{% include code/syntax.html component="modal" copybutton=true %}
 
 ### Javascript
 Modal komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
@@ -66,6 +66,6 @@ modal.init();
 {:#kraever-handling}
 ### Modal som kræver handling
 
-{% include code/syntax.html component="modal-forced-action" link="true" %}
+{% include code/syntax.html component="modal-forced-action" link=true copybutton=true %}
 
 Tilføj attributten `data-modal-forced-action` for at deaktivere luk funktioner som escape. Bemærk, at eksemplet også undlader luk knappen øverst i modalen. Man skal huske at tilføre luk funktionalitet i knapperne tilføjet i modalen.

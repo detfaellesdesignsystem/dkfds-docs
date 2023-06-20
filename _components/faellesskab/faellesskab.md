@@ -27,7 +27,6 @@ Fordele ved at anvende designsystemet:
 
 Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde omkring kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.
 
-{:.h3}
 ## Designsystemet er til selvbetjeningsløsninger
 
 Du skal anvende Det Fælles Designsystem til at udvikle selvbetjeningsløsninger, hvis det er et lovkrav, at løsningen skal være obligatorisk digital eller den er rettet mod virksomheder.

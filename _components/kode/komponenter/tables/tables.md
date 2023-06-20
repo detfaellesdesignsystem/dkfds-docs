@@ -41,7 +41,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="table" %}
+{% include code/syntax.html component="table" copybutton=true %}
 
 Man kan gøre brug af hjælpeklassen for <a href="/kode/utilities/#bredde-i-procent">bredde i procent</a> til at definere bredde på kolonner. 
 
@@ -116,7 +116,7 @@ Se nedenstående eksempels HTML for, hvilke klasser, attributter og knapper, der
 
 Der følger ikke JavaScript med til sortering i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
 
-{% include code/syntax.html component="table-sort" link="true" %}
+{% include code/syntax.html component="table-sort" link=true copybutton=true %}
 
 {:#soegning-i-tabeller}
 ### Søgning i tabeller
@@ -124,15 +124,15 @@ Anvend <a href="/kode/komponenter/search/">søgefeltkomponenten</a> sammen med d
 
 Der følger ikke JavaScript med til søgning i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
 
-{% include code/syntax.html component="table-search" link="true" %}
+{% include code/syntax.html component="table-search" link=true copybutton=true %}
 
 {:#valgbare-raekker}
 ### Valgbare rækker
-{% include code/syntax.html component="table-selectable" link="true" %}
+{% include code/syntax.html component="table-selectable" link=true copybutton=true %}
 
 {:#valgbare-raekker-knapper}
 #### Valgbare rækker med funktionsknapper
-{% include code/syntax.html component="table-selectable-functions" link="true" %}
+{% include code/syntax.html component="table-selectable-functions" link=true copybutton=true %}
 
 #### JavaScript for tabeller med valgbare rækker
 Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
@@ -153,7 +153,7 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 {:#strukturerede-lister}
 ### Strukturerede lister
 
-{% include code/syntax.html component="structured-list" link="true" %}
+{% include code/syntax.html component="structured-list" link=true copybutton=true %}
 
 Strukturerede lister kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som en alternativ tabel, hvor der ikke er nogen vandrette headers. 
 
@@ -164,4 +164,4 @@ Listen kan gøres <a href="/kode/komponenter/tables/#responsiv">responsiv</a> ve
 {:#strukturerede-lister-edit}
 #### Struktureret liste med redigér
 
-{% include code/syntax.html component="structured-list--edit" link="true" %}
+{% include code/syntax.html component="structured-list--edit" link=true copybutton=true %}

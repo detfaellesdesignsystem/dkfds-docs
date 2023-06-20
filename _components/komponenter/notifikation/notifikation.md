@@ -27,17 +27,21 @@ subnav:
 - text: Uden brødtekst
   href: "#uden-brødtekst"
 ---
+
 {% include code/preview-box.html component="toastbesked" title="Eksempel på toastbesked" link=true code="/kode/komponenter/toastbesked/" %}
 
 Til forskel fra <a href="/komponenter/beskeder/">Beskeder (alerts)</a> som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
 Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige til at opfattes som anmassende og påtrængende, så overvej nøje om det er denne komponent, der er det rigtige valg.
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
+
 At gøre brugeren opmærksom på vigtige oplysninger, ofte relateret til brugerens aktuelle aktivitet.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
+
 Brug <a href="/komponenter/beskeder/">Beskeder (alerts)</a>, hvis en besked skal placeres som en del af indholdet på siden.
 
 Brug ikke toastbeskeder til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
@@ -46,8 +50,8 @@ Brug modal dialog – ikke toastbeskeder – til at give brugerne information om
 
 Kritiske beskeder eller lange beskeder, hvis toastbeskeden er tidsindstillet og forsvinder automatisk. Det gør det vanskeligt for brugere, som fx gør brug af hjælpeteknologier, at læse meddelelsen før den forsvinder.
 
-{:.h3}
-## Vejledning
+### Vejledning
+
 Gør informationen i toastbeskeden aktiv og handlingsanvisende, så brugeren forstår, hvad der er behov for eller hvad den aktuelle status er.
 
 Brug ord og begreber, som brugeren kan genkende fra løsningen.
@@ -62,4 +66,30 @@ Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom p
 
 Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist ad gangen og rækkefølgen er vigtig, så tilføj et tidsstempel til toastbeskeden.
 
-{% include child-components.html parent='Notification' %}
+## Varianter
+
+{:#succes}
+### Succes
+
+{% include code/preview-box.html component="toastbesked-success" title="Eksempel på notifikation med success farver" %}
+
+{:#advarsel}
+### Advarsel
+
+{% include code/preview-box.html component="toastbesked-warning" title="Eksempel på notifikation med advarselsfarver" %}
+
+{:#fejl}
+### Fejl
+
+{% include code/preview-box.html component="toastbesked-error" title="Eksempel på notifikation med fejlfarver" %}
+
+{:#information}
+### Information
+
+{% include code/preview-box.html component="toastbesked-info" title="Eksempel på notifikation med infofarver" %}
+
+{:#uden-brødtekst}
+### Uden brødtekst
+
+{% include code/preview-box.html component="toastbesked-onlyheading" title="Eksempel på notifikation uden brødtekst" %}
+

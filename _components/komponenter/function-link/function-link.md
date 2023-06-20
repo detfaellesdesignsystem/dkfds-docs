@@ -7,25 +7,24 @@ category: Komponenter_category
 subcategory: Komponenter
 description: Et link, der udfører en handling på siden - så som print. Der er gerne
   tilføjet et ikon, som underbygger handlingen.
-component: function-link-print
-componentTitle: Eksempel på funktions link
-componentCode: "/kode/komponenter/funktionslink/"
-
 ---
-{:.h3 #retningslinjer}
-## Anvendes til
+
+{% include code/preview-box.html component="function-link-print" title="Eksempel på funktions link" link="true" code="/kode/komponenter/funktionslink/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug funktionsikoner til at tilbyde brugeren systemfunktionalitet, som fx: print, pdf, indstillinger, etc. Funktionalitet, der ikke er essentiel for brugerens umiddelbare gennemførsel af løsningen.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Brug ikke funktionsikoner til generel navigation mellem sider eller til næste trin. Brug da standard links og primærknap i stedet. Anvend ikke funktionslinks til navigation til forrige side, anvend da tilbage-linket.
 
-Brug sprogvælgeren til valg af sprog.
+Brug <a href="/komponenter/sprogvaelger/">sprogvælgeren</a> til valg af sprog.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Systemfunktionalitet er fx:
 
@@ -45,17 +44,14 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 
 {% include dos-donts-box.html component="function-link-dos-donts" title="Funktionslink do's and don'ts" %}
 
-{:.h4}
-### Referencer
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
+
+<a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
+
+#### Referencer
 
 {:.nobullet-list}
 - <a href="https://slate.com/technology/2013/06/how-people-read-online-why-you-wont-finish-this-article.html" class="icon-link">Farhad Manjoo: You Won’t Finish This Article (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/utility-navigation/" class="icon-link">Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
-
-{% include child-components.html parent='Funktionslink' %}

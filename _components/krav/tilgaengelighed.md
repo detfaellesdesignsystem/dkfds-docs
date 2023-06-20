@@ -19,10 +19,9 @@ tags:
 - vcag
 - wcag
 - 2.1
-
 ---
-Lov nr. 692 af 08/06/2018 om tilgængelighed af offentlige organers websteder og mobilapplikationer (webtilgængelighedsloven) stiller krav til tilgængeligheden af blandt andet offentlige selvbetjeningsløsninger. 
 
+Lov nr. 692 af 08/06/2018 om tilgængelighed af offentlige organers websteder og mobilapplikationer (webtilgængelighedsloven) stiller krav til tilgængeligheden af blandt andet offentlige selvbetjeningsløsninger. 
 
 Der er fire overordnede principper i webtilgængelighedsloven:
 
@@ -30,7 +29,6 @@ Der er fire overordnede principper i webtilgængelighedsloven:
 - <strong>Anvendelighed</strong>
 - <strong>Forståelighed</strong>
 - <strong>Robusthed</strong>
-
 
 Principperne dækker blandt andet over:
 

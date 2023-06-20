@@ -23,7 +23,7 @@ description: "Dokumentation på implementering af datofelter."
 
 ### HTML Struktur
 
-{% include code/syntax.html component="date-input" %}
+{% include code/syntax.html component="date-input" copybutton=true %}
 
 - Anvend ikke JavaScript til automatisk at flytte fokus fra felt til felt, da det gør det svært for tastatur-brugere at navigere i formularen.
 - Datofelter-komponenten består af 3 inputfelter.

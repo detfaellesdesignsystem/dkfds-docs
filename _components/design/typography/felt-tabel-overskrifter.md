@@ -62,7 +62,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 | IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
 
 {:#tabeloverskrift-retningslinjer}
-#### Tabeloverskrift (th)
+### Retningslinjer
 
 Tabeloverskrifter er visuelt ens med feltoverskrifter. Du kan bruge dem til at skabe overblik over rækker eller kolonner af data i tabeller og lister.
 

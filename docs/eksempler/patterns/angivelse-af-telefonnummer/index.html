@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3637,18 +3625,19 @@
 
           
 
-          <h2 class="h3">Vejledning</h2>
+          <h2>Vejledning</h2>
 
-<ul>
-  <li>Accepter altid internationale telefonnumre, når dette er teknisk muligt.</li>
-  <li>Danske numre skal kunne angives både med eller uden landekode.</li>
-  <li>Accepter altid enhver gængs formatering af telefonnumre såsom med eller uden mellemrum, bindestreger eller parenteser samt landekoder skrevet med enten + eller 00 (fx +45 eller 0045).</li>
-  <li>Hvis der kun kan angives et mobilnummer, fx hvis der skal sendes sms-beskeder til det angivne nummer, brug da “Mobilnummer” som feltets label.</li>
-  <li>Brug ikke num pad til telefonnummerfeltet på mobil grundet problemer med tilgængelighed (Laakso, 2020)</li>
-  <li>Angiv altid autocomplete attributten i input feltet, så brugerne har mulighed for automatisk udfyldning af feltet (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link">WCAG 2.1 Success Criterion 1.3.5 Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</li>
-</ul>
+<p>Accepter altid internationale telefonnumre, når dette er teknisk muligt.</p>
 
-<h2 class="h3">Når målgruppen hovedsageligt har danske telefonnumre</h2>
+<p>Danske numre skal kunne angives både med eller uden landekode.</p>
+
+<p>Accepter altid enhver gængs formatering af telefonnumre såsom med eller uden mellemrum, bindestreger eller parenteser samt landekoder skrevet med enten + eller 00 (fx +45 eller 0045).</p>
+
+<p>Hvis der kun kan angives et mobilnummer, fx hvis der skal sendes sms-beskeder til det angivne nummer, brug da “Mobilnummer” som feltets label.</p>
+
+<p>Angiv altid autocomplete attributten i input feltet, så brugerne har mulighed for automatisk udfyldning af feltet (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link">WCAG 2.1 Success Criterion 1.3.5 Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</p>
+
+<h2>Når målgruppen hovedsageligt har danske telefonnumre</h2>
 
 <div class="component-preview  component-preview-telefonnummer">
     
@@ -3727,7 +3716,7 @@
     </div>
 </details>
 
-<h2 class="h3">Når målgruppen hovedsageligt har udenlandske telefonnumre</h2>
+<h2>Når målgruppen hovedsageligt har udenlandske telefonnumre</h2>
 
 <div class="component-preview  component-preview-telefonnummer-udenlandsk">
     
@@ -3818,7 +3807,7 @@
     </div>
 </details>
 
-<h2 class="h3">Hvis der kun kan angives danske telefonnumre (ikke anbefalet)</h2>
+<h2>Hvis der kun kan angives danske telefonnumre (ikke anbefalet)</h2>
 
 <p>Accepter altid udenlandske telefonnumre, når det er muligt. Hvis det teknisk ikke kan lade sig gøre at acceptere udenlandske numre, vis da en fejlmeddelelse, når det indtastede nummer ikke har et almindeligt dansk format såsom 12345678, 12 123 123, +45 12345678 eller 0045 12 34 56 78.</p>
 
@@ -3895,11 +3884,6 @@
     </div>
 </details>
 
-<h2 class="h3">Referencer</h2>
-
-<ul class="nobullet-list">
-  <li><a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/" class="icon-link">Hanna Laakso: Why the GOV.UK Design System team changed the input type for numbers (2020)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
 
 
           

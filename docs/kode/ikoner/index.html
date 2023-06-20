@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3652,22 +3640,6 @@
 
     
 
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
-
-</li>
-
-    
-
 
         </ul>
         
@@ -3706,9 +3678,11 @@
           <p>Ikoner kan enten indsættes ved hjælp af en ikonsamling (anbefalet) eller ved hjælp af klasser.</p>
 
 <h2>Ikoner indsat med ikonsamling</h2>
+
 <p>Ikonsamlingen gør, at du kan indsætte ikoner med <code>&lt;svg&gt;</code>. Før dette virker, er du nødt til at implementere ikonsamlingen, der skal indsættes på hver side i løsningen.</p>
 
 <h3>Implementering</h3>
+
 <p>Placér ikonsamlingen i toppen af <code>&lt;body&gt;</code> i et område, der er skjult:</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;body&gt;
@@ -3739,6 +3713,7 @@
     
     <div class="component-code">
         
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;hide-base-svg&quot;&gt;
     &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
         &lt;symbol id=&quot;accessibility-new&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M0 0h24v24H0V0z&quot; fill=&quot;none&quot;/&gt;&lt;path d=&quot;M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z&quot;/&gt;&lt;/symbol&gt;
@@ -3752,6 +3727,7 @@
 </div>
 
 <h3>Anvendelse</h3>
+
 <p>For at anvende et ikon skal du indsætte det ved hjælp af <code>&lt;svg&gt;</code> og referere til det korrekte <code>id</code> i ikonsamlingen. For eksempel skal ikonet for “print (udskriv)” indsættes med:</p>
 
 <div class="component-preview component-preview-code  component-code-icon">
@@ -3767,6 +3743,7 @@
     
     <div class="component-code">
         
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#print&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre></figure>
 
 
@@ -3780,6 +3757,7 @@
 <p>Der er et ikon <svg class="icon-svg inline-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg> midt i denne sætning.</p>
 
 <h2>Ikoner indsat med klasser</h2>
+
 <p>Ikoner kan indsættes ved hjælp af klasser på følgende måde:</p>
 
 <div class="component-preview component-preview-code  component-code-icon-class">
@@ -3794,6 +3772,7 @@
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;i class=&quot;icon icon-print&quot;&gt;&lt;/i&gt;</code></pre></figure>
 

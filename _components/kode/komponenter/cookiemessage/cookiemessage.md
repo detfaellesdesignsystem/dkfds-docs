@@ -15,7 +15,7 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="cookie-message" %}
+{% include code/syntax.html component="cookie-message" copybutton=true %}
 
 Koden indsættes under body og før header. Gør man brug af <a href="/komponenter/skip-link/">skip link</a>, skal skip-link indsættes efter cookiemeddelelsen.
 

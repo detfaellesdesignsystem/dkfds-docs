@@ -24,7 +24,7 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="sidenav-normal-level2" %}
+{% include code/syntax.html component="sidenav-normal-level2" copybutton=true %}
 
 #### Aktive menupunkter
 
@@ -35,7 +35,7 @@ subcategory: Kode
 #### Anchor links
 Hvis en undermenu består af links til områder på den aktuelle side tilføjes klassen `has-anchor-links` på `<ul>` elementet.
 
-{% include code/syntax.html component="sidenav-anchor" link="true" %}
+{% include code/syntax.html component="sidenav-anchor" link=true copybutton=true %}
 
 #### Tilføj ikon og information i venstremenu
 

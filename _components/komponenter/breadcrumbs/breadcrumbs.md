@@ -7,18 +7,18 @@ category: Komponenter_category
 description: ""
 lead: "En brødkrumme bruges til at vise brugerne, hvor i løsningen de befinder sig, samtidig med at den gør det muligt for brugerne at navigere tilbage igennem løsningens niveauer."
 subcategory: Komponenter
-component: breadcrumbs
-componentTitle: "Eksempel på brødkrumme"
-componentCode: "/kode/komponenter/broedkrumme/"
 ---
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{% include code/preview-box.html component="breadcrumbs" title="Eksempel på brødkrumme" link=true code="/kode/komponenter/broedkrumme/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug en brødkrumme, når du har brug for at hjælpe brugerne med at forstå, hvor de er i en dybere hierarkisk struktur (IA) med flere sektioner og underafsnit (niveauer) og til at give brugeren mulighed for at navigere logisk tilbage igennem niveauerne.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (trinindikator).
 
@@ -26,8 +26,7 @@ Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikator/">trini
 
 Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur. 
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Overvej nøje om du har brug for at anvende en brødkrumme, hvis du allerede bruger andre navigationskomponenter, der også indikerer, hvor i strukturen brugeren er, som fx venstremenu.
 
@@ -45,18 +44,17 @@ Brødkrummestien skal omfatte brugerens aktuelle side, der skal være visuelt fo
 
 På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses sammen og gøres mindre. Overvej i stedet kun at vise de sidste niveauer i brødkrummen.
 
-{:.h3}
-## Referencer 
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
+
+#### Referencer 
 
 {:.nobullet-list}
 - <a href="https://design-system.service.gov.uk/components/breadcrumbs/" class="icon-link">GovUK Design System Breadcrumbs<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/breadcrumbs/" class="icon-link">Breadcrumbs: 11 Design Guidelines for Desktop and Mobile<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/" class="icon-link">Breadcrumbs In Web Design: Examples And Best Practices<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" class="icon-link">When You Should Use a Breadcrumb Navigation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>

@@ -30,11 +30,13 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="accordion-simple" %}
+{% include code/syntax.html component="accordion-simple" copybutton=true %}
 
 Kopiér ovenstående kode for at indsætte én accordion. Ønsker du flere kan du duplikere `<li>` elementet.
 
 Husk at tilpasse koden, således at ikke kun indholdet passer, men også attributterne. Herunder er særligt `aria-controls` og `id` vigtige, da disse skal være unikke. 
+
+Overskriften på en accordion skal angives som en heading. Sørg for at anvende det korrekte heading-niveau, som passer semantisk ind i konteksten på siden.
 
 ### Javascript
 Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
@@ -67,12 +69,12 @@ new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID'), {
 
 {:#aabn-luk-alle}
 ### Åbn/luk alle
-{% include code/syntax.html component="accordion-bulk-open" link="true" %}
+{% include code/syntax.html component="accordion-bulk-open" link=true copybutton=true %}
 
 {:#med-fejl}
 ### Med fejl
-{% include code/syntax.html component="accordion-error" link="true" %}
+{% include code/syntax.html component="accordion-error" link=true copybutton=true %}
 
 {:#med-succesbeskeder}
 ### Med succesbeskeder
-{% include code/syntax.html component="accordion-success" link="true" %}
+{% include code/syntax.html component="accordion-success" link=true copybutton=true %}

@@ -20,8 +20,12 @@ componentCode: "/kode/typografi/tekst/#brødtekst"
 {:#broedtekst-retningslinjer}
 ### Retningslinjer
 
-- Undgå "mure af tekst" i din selvbetjeningsløsning: Bruge white space / mellemrum til at skabe luft mellem tekster og øge læsbarheden.
-- Brug kun fed tekst i meget begrænset omfang: Fx inde i sætninger til at fremhæve særligt centrale tal eller pointer.
-- Brug ikke fed tekst som overskrift.
-- Brug ikke understreget tekst, da det ligner links.
-- Brug ikke kursiv tekst, da det nedsætter læsbarheden.
+Undgå "mure af tekst" i din selvbetjeningsløsning: Bruge white space / mellemrum til at skabe luft mellem tekster og øge læsbarheden.
+
+Brug kun fed tekst i meget begrænset omfang: Fx inde i sætninger til at fremhæve særligt centrale tal eller pointer.
+
+Brug ikke fed tekst som overskrift.
+
+Brug ikke understreget tekst, da det ligner links.
+
+Brug ikke kursiv tekst, da det nedsætter læsbarheden.

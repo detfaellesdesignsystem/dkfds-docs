@@ -124,7 +124,6 @@ var pdfUrls = [
     "kode/eksempler-implementering/",
     "kode/print/",
     "kode/plugins/",
-    "kode/anbefalinger-vaerktoejer/",
     "krav/",
     "krav-vaerktoej/anvendes-af-virksomheder/",
     "krav/borgerdk-virk/",

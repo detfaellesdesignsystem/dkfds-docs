@@ -22,7 +22,7 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="search" %}
+{% include code/syntax.html component="search" copybutton=true %}
 
 Du kan styre søgefeltets bredde via `input-width-` og `input-char-` se mere under punktet formular elementer og input bredde og validering.
 

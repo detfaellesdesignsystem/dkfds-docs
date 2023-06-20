@@ -12,14 +12,16 @@ tags:
 - svg
 - svg use
 - inline svg
-
 ---
+
 Ikoner kan enten indsættes ved hjælp af en ikonsamling (anbefalet) eller ved hjælp af klasser.
 
 ## Ikoner indsat med ikonsamling
+
 Ikonsamlingen gør, at du kan indsætte ikoner med `<svg>`. Før dette virker, er du nødt til at implementere ikonsamlingen, der skal indsættes på hver side i løsningen.
 
 ### Implementering
+
 Placér ikonsamlingen i toppen af `<body>` i et område, der er skjult:
 
 {% highlight html %}
@@ -41,12 +43,13 @@ Ikonerne i ikonsamlingen er defineret ved hjælp af `<symbol>`, der hver har et 
 
 Det anbefales at indsætte alle ikoner i samlingen på hver side, men du kan også vælge kun at medtage de ikoner, der er relevante for den enkelte side. Du kan se den fulde ikonsamling ved at åbne nedenstående eksempel i et nyt vindue.
 
-{% include code/syntax.html component="simple-base-svg" link="true" url="ikon-samling" %}
+{% include code/syntax.html component="simple-base-svg" link=true url="ikon-samling" %}
 
 ### Anvendelse
+
 For at anvende et ikon skal du indsætte det ved hjælp af `<svg>` og referere til det korrekte `id` i ikonsamlingen. For eksempel skal ikonet for "print (udskriv)" indsættes med:
 
-{% include code/syntax.html component="icon" link="true" %}
+{% include code/syntax.html component="icon" link=true %}
 
 #### Tilpasning af ikonet til teksten
 
@@ -55,9 +58,10 @@ Tilføj klassen `inline-svg` på ikoner, som skal fremgå i en tekst. Ikonet vil
 Der er et ikon <svg class="icon-svg inline-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg> midt i denne sætning.
 
 ## Ikoner indsat med klasser
+
 Ikoner kan indsættes ved hjælp af klasser på følgende måde:
 
-{% include code/syntax.html component="icon-class" link="true" %}
+{% include code/syntax.html component="icon-class" link=true %}
 
 Denne metode har nogle begrænsninger, hvorfor vi anbefaler, at man benytter ikonsamlingen i stedet for.
 

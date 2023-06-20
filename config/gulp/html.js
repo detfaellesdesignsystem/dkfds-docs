@@ -96,7 +96,7 @@ gulp.task('nunjucks', done => {
             max_preserve_newlines: 1,
             unformatted: [ /*'a',*/ 'abbr','pre', 'area', 'audio', 'b', 'bdi', 'bdo', 'br', /*'button',*/ 'canvas', 'cite',
                 'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', /*'i',*/ 'iframe', 'img',
-                /*'input',*/ 'ins', 'kbd', 'keygen', /*'label',*/ 'map', 'mark', 'math', 'meter', 'noscript',
+                /*'input',*/ 'ins', 'kbd', 'keygen', /*'label',*/ 'link', 'map', 'mark', 'math', 'meter', 'noscript',
                 'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', /* 'script', */ /*'select',*/ 'small',
                 /*'span',*/ 'strong', 'sub', 'sup', 'svg', 'template', 'textarea', 'time', 'u', 'var',
                 'video', 'wbr', /*'text',*/

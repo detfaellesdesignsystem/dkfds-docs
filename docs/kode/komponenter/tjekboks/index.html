@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -4078,7 +4066,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -4292,22 +4280,6 @@
 
     
 
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
-
-</li>
-
-    
-
 
         </ul>
         
@@ -4411,6 +4383,11 @@
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
     &lt;fieldset&gt;
         &lt;legend class=&quot;form-label&quot;&gt;
@@ -4452,6 +4429,37 @@
   <li>Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.</li>
 </ul>
 
+<h3>JavaScript</h3>
+<p>Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CheckboxToggleContent(document.getElementById(&#39;CHECKBOX-INPUT-ID&#39;)).init();</code></pre></figure>
+
+<h4>Events</h4>
+
+<div class="table--responsive-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Event key</th>
+        <th scope="col">Element</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fds.collapse.expanded</td>
+        <td><code>input.js-checkbox-toggle-content</code></td>
+        <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet</td>
+      </tr>
+      <tr>
+        <td>fds.collapse.collapsed</td>
+        <td><code>input.js-checkbox-toggle-content</code></td>
+        <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <h2>Varianter</h2>
 
 <h3 id="lille-tjekboks">Lille tjekboks</h3>
@@ -4468,6 +4476,11 @@
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
     &lt;fieldset&gt;
@@ -4520,6 +4533,11 @@
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
     &lt;input type=&quot;checkbox&quot; id=&quot;checkbox1&quot; name=&quot;checkbox1&quot;
         class=&quot;form-checkbox checkbox-large js-checkbox-toggle-content&quot; value=&quot;1&quot;
@@ -4562,36 +4580,6 @@
   <li><code>aria-hidden="true/false"</code></li>
 </ul>
 
-<h2>JavaScript</h2>
-<p>Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CheckboxToggleContent(document.getElementById(&#39;CHECKBOX-INPUT-ID&#39;)).init();</code></pre></figure>
-
-<h3 class="h4">Events</h3>
-
-<div class="table--responsive-scroll">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Event key</th>
-        <th scope="col">Element</th>
-        <th scope="col">Beskrivelse</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>fds.collapse.expanded</td>
-        <td><code>input.js-checkbox-toggle-content</code></td>
-        <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet</td>
-      </tr>
-      <tr>
-        <td>fds.collapse.collapsed</td>
-        <td><code>input.js-checkbox-toggle-content</code></td>
-        <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 
           
@@ -4698,10 +4686,6 @@
                 
                   
                 
-              
-              
-
-              
               
               
 

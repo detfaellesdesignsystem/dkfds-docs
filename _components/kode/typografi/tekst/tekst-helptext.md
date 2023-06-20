@@ -11,7 +11,6 @@ componentLink: false
 
 <a href="/design/typografi/tekst/#hjaelpetekst-retningslinjer">Læs retningslinjer for hjælpetekst og fejlmeddelelser</a>
 
-{:.h4}
 ### HTML Struktur
 
-{% include code/syntax.html component="helptext" %}
+{% include code/syntax.html component="helptext" copybutton=true %}

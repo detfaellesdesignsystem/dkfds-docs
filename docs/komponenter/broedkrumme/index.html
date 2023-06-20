@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3590,7 +3578,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3686,7 +3674,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3942,7 +3930,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4136,6 +4124,7 @@
           
 
           
+
           
 <div class="component-preview  component-preview-breadcrumbs">
     
@@ -4172,14 +4161,13 @@
     
 </div>
 
+<h2 id="retningslinjer">Retningslinjer</h2>
 
-          
-
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h3>Anvendes til</h3>
 
 <p>Brug en brødkrumme, når du har brug for at hjælpe brugerne med at forstå, hvor de er i en dybere hierarkisk struktur (IA) med flere sektioner og underafsnit (niveauer) og til at give brugeren mulighed for at navigere logisk tilbage igennem niveauerne.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (trinindikator).</p>
 
@@ -4187,7 +4175,7 @@
 
 <p>Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Overvej nøje om du har brug for at anvende en brødkrumme, hvis du allerede bruger andre navigationskomponenter, der også indikerer, hvor i strukturen brugeren er, som fx venstremenu.</p>
 
@@ -4205,20 +4193,20 @@
 
 <p>På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses sammen og gøres mindre. Overvej i stedet kun at vise de sidste niveauer i brødkrummen.</p>
 
-<h2 class="h3">Referencer</h2>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r=/komponenter/broedkrumme/%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a></li>
+  <li><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r=/komponenter/broedkrumme/%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a></li>
+</ul>
+
+<h4>Referencer</h4>
 
 <ul class="nobullet-list">
   <li><a href="https://design-system.service.gov.uk/components/breadcrumbs/" class="icon-link">GovUK Design System Breadcrumbs<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
   <li><a href="https://www.nngroup.com/articles/breadcrumbs/" class="icon-link">Breadcrumbs: 11 Design Guidelines for Desktop and Mobile<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
   <li><a href="https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/" class="icon-link">Breadcrumbs In Web Design: Examples And Best Practices<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
   <li><a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" class="icon-link">When You Should Use a Breadcrumb Navigation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
-
-<ul class="nobullet-list">
-  <li><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r=/komponenter/broedkrumme/%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a></li>
-  <li><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r=/komponenter/broedkrumme/%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a></li>
 </ul>
 
 

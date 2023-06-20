@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3586,6 +3574,15 @@
 
 
 <li class=" ">
+<a href="#version-9-0-1" >Version 9.0.1</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
 <a href="#version-9-0-0" >Version 9.0.0</a>
 </li>
 
@@ -3667,16 +3664,7 @@
 
 
 <li class=" ">
-<a href="#version-7-5-0" >Version 7.5.0</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-7-4-0" >Tidligere versioner</a>
+<a href="#version-7-5-0" >Tidligere versioner</a>
 </li>
 
     
@@ -3720,6 +3708,7 @@
           
           
           <ul class="d-lg-none nobullet-list">
+          <li><a href="#version-9-0-1">Version 9.0.1</a></li>
           <li><a href="#version-9-0-0">Version 9.0.0</a></li>
           <li><a href="#version-8-2-1">Version 8.2.1</a></li>
           <li><a href="#version-8-2-0">Version 8.2.0</a></li>
@@ -3729,8 +3718,7 @@
           <li><a href="#version-7-5-3">Version 7.5.3</a></li>
           <li><a href="#version-7-5-2">Version 7.5.2</a></li>
           <li><a href="#version-7-5-1">Version 7.5.1</a></li>
-          <li><a href="#version-7-5-0">Version 7.5.0</a></li>
-          <li><a href="#version-7-4-0">Tidligere versioner</a></li>
+          <li><a href="#version-7-5-0">Tidligere versioner</a></li>
           
           </ul>
           
@@ -3744,6 +3732,7 @@
           <p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
 
 <h2>Versionering</h2>
+
 <p>Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link" target="_blank">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.</p>
 
 <p>Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR (y), PATCH (z)</p>
@@ -3754,13 +3743,25 @@
   <li>PATCH: Bagud-kompatible fejlrettelser (bug fixes).</li>
 </ul>
 
-<h3 class="h4">Release-proces</h3>
+<h3>Release-proces</h3>
 
 <p>Designsystemet er “levende” og skal holdes ajour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens.</p>
 
-<h3 class="h4">Tidligere versioner af dokumentationen</h3>
+<h3>Tidligere versioner af dokumentationen</h3>
 
 <p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.</p>
+
+<h2 id="version-9-0-1" class="mb-0">Version 9.0.1</h2>
+
+<div><span class="small-text mt-0 d-block">20-06-2023</span></div>
+
+<ul>
+  <li>Rettet fejl, hvor teksten på <a href="/komponenter/knapper/">knapper</a> røg ud over kanten, hvis teksten fyldte flere linjer.</li>
+  <li>Rettet fejl, hvor <a href="/komponenter/cookiemeddelelse/">cookiemeddelelsen</a> ikke kunne læses, når der var zoomet kraftigt ind i browseren.</li>
+  <li>Tilføjet tjek i JavaScript-koden for <a href="/komponenter/modal/">modaler</a>, så man ikke længere får en fejlbesked i browserens konsol, hvis man programmatisk forsøger at lukke en allerede lukket modal.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/210" class="icon-link" target="_blank">issue #210 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Rettet fejl i dokumentationen, hvor nogle <a href="/design/farver/">farver</a> stod angivet forkert.</li>
+</ul>
 
 <h2 id="version-9-0-0" class="mb-0">Version 9.0.0</h2>
 
@@ -3904,6 +3905,7 @@
 </ul>
 
 <h2 id="version-8-0-0" class="mb-0">Version 8.0.0</h2>
+
 <div><span class="small-text mt-0 d-block">17-05-2022</span></div>
 
 <ul>

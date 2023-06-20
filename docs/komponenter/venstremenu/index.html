@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3580,7 +3568,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3676,7 +3664,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3932,7 +3920,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4182,6 +4170,7 @@
           
 
           
+
           
 <div class="component-preview  component-preview-sidenav-normal-level1">
     
@@ -4229,22 +4218,21 @@
     
 </div>
 
+<h2 id="retningslinjer">Retningslinjer</h2>
 
-          
-
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h3>Anvendes til</h3>
 
 <p>Venstremenu anvendes til at afspejle et navigationshierarki i op til tre niveauer.</p>
 
 <p>Venstremenu anvendes til den sekundære navigation/undermenu på en side i en større løsning.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Venstremenu bør ikke anvendes på mindre løsninger (mindre end 5 sider).</p>
 
 <p>Hvis din løsning allerede har topmenu og evt. tilknyttet dropdown, bør du overveje at forenkle din navigation før du vælger en venstremenu.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Markér det aktive punkt (”der hvor brugeren er”) i venstremenuen.</p>
 
@@ -4261,13 +4249,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Venstremenu-hierarki-do-borgerdk.svg" alt="Eksempel på, hvordan en sidenavigation kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Sørg for, at navigationsmenuer tydeligt viser brugerne, hvor de er på sitet, hvor de kan gå hen, og hvor de har været. Det indebærer, at et menupunkt kan have tre stadier: (1) Ikke fremhævet, men klikbart, (2) fremhævet, men ikke klikbart samt (3) fremhævet og klikbart (Powazek, 2006).</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Venstremenu-hierarki-dont.svg" alt="Eksempel på, hvordan en sidenavigation ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Lad ikke brugerne være forvirrede over, hvor de er i webstedets hierarki.</p>
@@ -4277,15 +4265,14 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
+<h4>Referencer</h4>
 
 <p><a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
 
-<section class="styleguide-child-container content" id="section-/komponenter/venstremenu/venstremenu-2level">
-  <h2 id="2-niveauer">2 niveauer</h2>
-  
-  
-  
+<h2>Varianter</h2>
+
+<h3>2 niveauer</h3>
+
 <div class="component-preview  component-preview-sidenav-normal-level2">
     
     <div class="component-link px-4 py-4">
@@ -4360,17 +4347,8 @@
     
 </div>
 
+<h3>3 niveauer</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/venstremenu/venstremenu-3level">
-  <h2 id="3-niveauer">3 niveauer</h2>
-  
-  
-  
 <div class="component-preview  component-preview-sidenav-normal-level3">
     
     <div class="component-link px-4 py-4">
@@ -4473,17 +4451,8 @@
     
 </div>
 
+<h3 id="aktivt-link-med-anchor-links">Aktivt link med anchor links</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/venstremenu/venstremenu-anchor">
-  <h2 id="aktivt-link-med-anchor-links">Aktivt link med anchor links</h2>
-  
-  
-  
 <div class="component-preview  component-preview-sidenav-anchor">
     
     <div class="component-link px-4 py-4">
@@ -4548,17 +4517,8 @@
     
 </div>
 
+<h3 id="ekstra-information">Ekstra information</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/venstremenu/venstremenu-information">
-  <h2 id="ekstra-information">Ekstra information</h2>
-  
-  
-  
 <div class="component-preview  component-preview-sidenav-information-level1">
     
     <div class="component-link px-4 py-4">
@@ -4603,12 +4563,6 @@
     </div>
     
 </div>
-
-
-  
-  
-
-</section>
 
 
 

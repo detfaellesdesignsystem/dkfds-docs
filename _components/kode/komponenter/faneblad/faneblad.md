@@ -24,9 +24,9 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="tabnav" %}
+{% include code/syntax.html component="tabnav" copybutton=true %}
 
-## JavaScript
+### JavaScript
 
 Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.
 
@@ -38,7 +38,7 @@ new DKFDS.Tabnav(document.getElementById('TABNAV-ID')).init();
 
 Bemærk, at dette kun gælder fra version 5.0.0.
 
-### Events
+#### Events
 
 Når man vælger et nyt faneblad, bliver eventet `fds.tabnav.changed` udløst på `.tabnav` elementet, som man kan koble sig på med en eventlistener.
 

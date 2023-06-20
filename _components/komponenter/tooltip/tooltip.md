@@ -11,31 +11,30 @@ lead: Et tooltip kommer frem, når musen er over det element tooltippet henviser
 tags: 
 anchor: true
 subnav:
-- text: Klikbart ikon
+- text: Klikbart ikon med tooltip
   href: "#klikbart-ikon-med-tooltip"
-- text: Tekst
+- text: Tekst med tooltip
   href: "#tekst-med-tooltip"
 - text: Knap med tooltip
   href: "#knap-med-tooltip"
-- text: Placering
+- text: Placering af tooltip
   href: "#placering-af-tooltip"
-component: tooltip-icon
-componentTitle: "Eksempel på ikon med tooltip"
-componentCode: "/kode/komponenter/tooltip/"
 ---
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{% include code/preview-box.html component="tooltip-icon" title="Eksempel på ikon med tooltip" link=true code="/kode/komponenter/tooltip/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen. Tooltips kan enten vises ved hover over deciderede hjælpeikoner eller ved andre elementer såsom ikoner, billeder, enkelte ord i tekststykker eller til tekst, som er forkortet i brugergrænsefladen. Tooltips bør altid bruges ved ikoner, som fremstår uden tekst.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Tooltips anvendes ikke til informationer, der er essentielle for at brugeren kan gennemføre løsningen. Hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst i stedet for.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Gør indholdet i tooltips så kort og koncist som muligt, da længere tekster er sværere at skimme og blokerer andet indhold på skærmen i højere grad.
 
@@ -59,8 +58,13 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 
 {% include dos-donts-box.html component="tooltip-dos-donts" title="Datovælger do's and don'ts" %}
 
-{:.h4}
-### Referencer
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
+
+#### Referencer
 
 {:.nobullet-list}
 - <a href="https://www.nngroup.com/articles/timing-exposing-content/" class="icon-link">Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
@@ -69,12 +73,24 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 - <a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
+## Varianter
 
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
+{:#klikbart-ikon-med-tooltip}
+### Klikbart ikon med tooltip
 
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
+{% include code/preview-box.html component="tooltip-delete" title="Eksempel på klikbart ikon med tooltip" %}
 
+{:#tekst-med-tooltip}
+### Tekst med tooltip
 
-{% include child-components.html parent='Tooltip' %}
+{% include code/preview-box.html component="tooltip-text" title="Eksempel på tekst med tooltip" %}
+
+{:#knap-med-tooltip}
+### Knap med tooltip
+
+{% include code/preview-box.html component="tooltip-button" title="Eksempel på primærknap med tooltip" %}
+
+{:#placering-af-tooltip}
+### Placering af tooltip
+
+{% include code/preview-box.html component="tooltip-position" title="Eksempel på placering af tooltip" %}

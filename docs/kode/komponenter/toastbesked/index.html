@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -4096,7 +4084,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -4310,22 +4298,6 @@
 
     
 
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
-
-</li>
-
-    
-
 
         </ul>
         
@@ -4415,6 +4387,11 @@
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-info show&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;toast-message&quot;&gt;
@@ -4462,7 +4439,7 @@
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let toast = new DKFDS.Toast(document.getElementById(&#39;TOAST-ID&#39;));
 toast.show();</code></pre></figure>
 
-<h3>Skjul</h3>
+<h4>Skjul</h4>
 <p>Når en toastbesked skjules, ændres class fra <code>show</code> til <code>hide</code>.</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let toast = new DKFDS.Toast(document.getElementById(&#39;TOAST-ID&#39;));
@@ -4484,6 +4461,11 @@ toast.hide();</code></pre></figure>
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-success show&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
@@ -4517,6 +4499,11 @@ toast.hide();</code></pre></figure>
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-warning show&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;toast-message&quot;&gt;
@@ -4548,6 +4535,11 @@ toast.hide();</code></pre></figure>
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-error show&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;toast-message&quot;&gt;
@@ -4577,6 +4569,11 @@ toast.hide();</code></pre></figure>
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;toast toast-info show&quot; aria-atomic=&quot;true&quot;&gt;
     &lt;div class=&quot;toast-icon&quot;&gt;&lt;/div&gt;
@@ -4701,10 +4698,6 @@ toast.hide();</code></pre></figure>
                 
                   
                 
-              
-              
-
-              
               
               
 

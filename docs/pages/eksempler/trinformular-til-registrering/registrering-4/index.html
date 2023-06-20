@@ -38,7 +38,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -597,12 +605,8 @@
 
 <footer class="demo-footer d-print-none" aria-label="Gå tilbage til oversigten eller skift tema">
   <div class="demo-footer-content d-flex align-items-center">
-    <a class="button" id="btn-demo-return" href="/eksempler/"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Tilbage<span class="sr-only"> til dokumentationssiden</span></a>
-    <label class="sr-only" for="themeselector">Skift tema</label>
-    <select class="form-select style-switcher mt-0 ml-4" id="themeselector" name="themeselector">
-      <option value="virk">Tema: Virk</option>
-      <option value="borgerdk">Tema: Borger.dk</option>
-    </select>
+    <a class="button mr-5" id="btn-demo-return" href="/eksempler/"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Tilbage<span class="sr-only"> til dokumentationssiden</span></a>
+    <button class="function-link" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span></button>
   </div>
 </footer>
 <script src="/assets/js/theme.js"></script>

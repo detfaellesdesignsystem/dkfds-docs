@@ -15,25 +15,24 @@ anchor: true
 subnav:
 - text: Tags med luk-ikon
   href: "#tags-med-luk-ikon"
-component: tags
-componentTitle: Eksempel på tags
-componentCode: "/kode/komponenter/tags/"
-
 ---
-{:.h3 #retningslinjer}
-## Anvendes til
+
+{% include code/preview-box.html component="tags" title="Eksempel på tags" link=true code="/kode/komponenter/tags/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Primær funktionalitet som fx ”Gem”, hvor der i stedet bør anvendes en knap.
 
 Hvis tags anvendes i tæt forbindelse med knapper, kan det forvirre brugeren. Overvej nøje placering og anvendelse og udfør brugertest.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Generelt skal du bruge tags til at give brugeren yderligere, sekundær information og nøgleord i relation til  indholdet. 
 
@@ -49,4 +48,9 @@ Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden
 
 {% include dos-donts-box.html component="tags-dos-donts" title="Tags do's and don'ts" %}
 
-{% include child-components.html parent='Tags' %}
+## Varianter
+
+{:#tags-med-luk-ikon}
+### Tags med luk-ikon
+
+{% include code/preview-box.html component="tags-icon" title="Eksempel på tags med luk-ikon" %}

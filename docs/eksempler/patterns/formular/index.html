@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3735,7 +3723,7 @@
     </div>
 </details>
 
-<h2 class="h3">Vejledning</h2>
+<h2>Vejledning</h2>
 
 <p>Gør brug af <code>&lt;div class="form-group"&gt;</code>, fieldset og overskrifter til at strukturere din formular.</p>
 
@@ -3764,13 +3752,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h3>Sådan (do)</h3>
         <div><img src="/assets/img/do-dont/Formular-trinopdeling-do-borgerdk.svg" alt="Eksempel på, hvordan formular-struktur kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Opdel komplicerede formularer i små bidder, og placér hvert element på en side for sig (Silver, 2018, s. 68-73). Princippet hedder '<em>One thing per page</em>' (én ting pr. side) og har vist sig at fungere godt på mobile enheder og være bedre i forbindelse med fx fejlhåndtering (Paul, 2015). Konceptet er også fordelagtigt for ældre brugere med nedsatte kognitive evner (Johnson &amp; Finn, 2017, s. 99) og nye computerbrugere (Long, 2017).</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h3>Ikke sådan (don't)</h3>
         <div><img src="/assets/img/do-dont/Formular-trinopdeling-dont-borgerdk.svg" alt="Eksempel på, hvordan formular-struktur ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Del ikke tæt relaterede felter op på flere sider (Silver, 2018, s. 71). Felter for postnummer og by bør fx stå på samme side (Jarret &amp; Gaffney, 2010, s. 102). Det samme gælder felter til fornavn og efternavn samt datoer og tidspunkter (Wroblewski, 2008, s. 84).</p>
@@ -3787,13 +3775,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h3>Sådan (do)</h3>
         <div><img src="/assets/img/do-dont/Formular-overskrift-do-borgerdk.svg" alt="Eksempel på, hvordan headers kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Giv formularen en overskrift, der gør det klart, hvad den gør (Wroblewski, 2008, s. 40). Giv overskrifter prominens (fx vha. størrelse eller farve) i formularens visuelle hierarki (Wroblewski, 2003). Brug verber i stedet for navneord i overskriften (Downe, 2015), fx ”Skriv dit barn op til pasning”.</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h3>Ikke sådan (don't)</h3>
         <div><img src="/assets/img/do-dont/Formular-overskrift-dont-borgerdk.svg" alt="Eksempel på, hvordan headers ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Undgå at formulere titler som navneord. Især navneord, der taler om systemet (fx ”Digital pladsanvisning”) frem for brugernes ærinder. Brugerne er muligvis ikke bekendte med de navne, som myndighederne har givet selvbetjeningsløsningerne for at kunne identificere dem (Downe, 2015). </p>
@@ -3801,13 +3789,13 @@
 </div>
 <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h3>Sådan (do)</h3>
         <div><img src="/assets/img/do-dont/Formular-formaal-do-borgerdk.svg" alt="Eksempel på, hvordan headers kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Lad formålet med den enkelte side fremgå af overskriften under løsningstitlen, når formularen har flere sider (Lior, 2013, s. 205). </p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h3>Ikke sådan (don't)</h3>
         <div><img src="/assets/img/do-dont/Formular-formaal-dont-borgerdk.svg" alt="Eksempel på, hvordan headers ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Risikér ikke, at brugerne mister fornemmelsen af, hvilken formular de er ved at udfylde eller hvad de er ved at udfylde på den pågældende side, hvis formularen har flere sider.</p>
@@ -3817,7 +3805,15 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
+<h3 id="eksempelloesninger">Se eksempelløsninger</h3>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a></li>
+  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kontaktoplysninger'">Trinformular til registrering: Kontaktoplysninger</a></li>
+  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a></li>
+</ul>
+
+<h3>Referencer</h3>
 
 <ul class="nobullet-list">
   <li>Adam Silver: Form Design Patterns (2018)</li>
@@ -3831,14 +3827,6 @@
   <li>Linda Newman Lior: Writing for Interaction (2013)</li>
 </ul>
 
-<h2 class="h3" id="eksempelloesninger">Se eksempelløsninger</h2>
-
-<ul class="nobullet-list">
-  <li><a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a></li>
-  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kontaktoplysninger'">Trinformular til registrering: Kontaktoplysninger</a></li>
-  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/eksempler/patterns/formular/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a></li>
-</ul>
-
 <h2 id="kompleks">Kompleks formular</h2>
 
 <div class="component-preview  component-preview-fieldset-complex">
@@ -3848,7 +3836,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <h2>Dine kontaktoplysninger</h2>
+        <h3>Dine kontaktoplysninger</h3>
 <form novalidate="">
 
     <div class="form-group">
@@ -4002,7 +3990,7 @@
     <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på kompleks formularstruktur</span></summary>
     <div class="details-text">
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h2&gt;Dine kontaktoplysninger&lt;/h2&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h3&gt;Dine kontaktoplysninger&lt;/h3&gt;
 &lt;form novalidate&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;

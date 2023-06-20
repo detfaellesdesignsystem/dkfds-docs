@@ -1,6 +1,6 @@
 ---
 permalink: /faellesskab/nyhedsmail/afmeld/
-parentlink: /omdesignsystemet/nyhedsmail/
+parentlink: /faellesskab/nyhedsmail/
 redirect_from:
 - /omdesignsystemet/nyhedsmail/afmeld/
 layout: styleguide
@@ -11,13 +11,27 @@ description: "Afmeld nyhedsbrev fra Det Fælles Designsystem"
 tags:
 ---
    
-<div class="alert alert-info mt-5 mb-9" id="newsletter-alert" role="alert">
+<div class="alert mt-5" id="newsletter-alert" role="alert" hidden>
     <div class="alert-body">
-        <h2 class="alert-heading">Siden er under opdatering</h2>
-        <div class="alert-text">
-            <p class="mt-3">Vi er ved at opdatere afmeldingssiden til nyhedsbrevet og det er i øjeblikket derfor ikke muligt at afmelde sig ved hjælp af vores hjemmeside.</p>
-            <p>Hvis du ønsker at afmelde dig nyhedsbrevet, skal du sende en e-mail til <a href="mailto:FDS@erst.dk">FDS@erst.dk</a>.</p>
-            <p class="mb-0">Vi beklager ulejligheden og arbejder på snarest muligt at åbne for afmelding på denne side igen.</p>
-        </div>
+        <h2 class="alert-heading"></h2>
+        <div class="alert-text"></div>
     </div>
+</div>
+<div class="newsletter-container mt-5">
+    <form action="https://det-faelles-designsystem.uxmail.io/handlers/post/" method="post" id="newsform" novalidate>
+        <input type="hidden" value="" id="newsletter_action">
+        <input type="hidden" value="" id="newsletter_lists">
+        <input type="hidden" value="" id="newsletter_language">
+        <input type="hidden" name="failure_url" value="" id="failure_url">
+        <input type="hidden" name="success_url" value="" id="success_url">
+        <div class="form-group" id="newsletter-emailaddress">
+            <label class="form-label" for="i_newsform_email">Afmeld e-mailadresse</label>
+            <span class="form-error-message d-none"></span>
+            <input type="email" class="form-input" id="i_newsform_email" autocomplete="email" required>
+        </div>
+        <input type="submit" class="button button-primary mt-5" value="Afmeld" id="newsletter-submit">
+    </form>
+    <p class="mt-9 pt-0 mb-9">
+        <a href="/faellesskab/nyhedsmail/">Tilmeld en <span class='nowrap'>e-mailadresse</span> her</a>
+    </p>
 </div>

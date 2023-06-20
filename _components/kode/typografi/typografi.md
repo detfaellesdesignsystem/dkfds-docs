@@ -18,10 +18,4 @@ Man kan vælge at gøre brug af preload, således at fonten loades tidligere og 
 
 Nedenstående kode opdateres, så stien matcher løsningen, og koden indsættes i `<head>`-sektionen.
 
-{% highlight html %}
-<!-- Preload fonts -->
-<link rel="preload" href="/dkfds/dist/fonts/IBMPlexSans-Medium.woff" as="font" crossorigin="">
-<link rel="preload" href="/dkfds/dist/fonts/IBMPlexSans-Bold.woff" as="font" crossorigin="">
-<link rel="preload" href="/dkfds/dist/fonts/IBMPlexSans-Regular.woff" as="font" crossorigin="">
-<link rel="preload" href="/dkfds/dist/fonts/IBMPlexSans-SemiBold.woff" as="font" crossorigin="">
-{% endhighlight %}
+{% include code/syntax.html component="font-preload" copybutton=true %}

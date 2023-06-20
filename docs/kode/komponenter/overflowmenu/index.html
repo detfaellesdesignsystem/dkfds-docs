@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -4069,7 +4057,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -4283,22 +4271,6 @@
 
     
 
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
-
-</li>
-
-    
-
 
         </ul>
         
@@ -4389,6 +4361,11 @@
     
     <div class="component-code">
         
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu overflow-menu--open-right&quot;&gt;
     &lt;button class=&quot;button-overflow-menu js-dropdown&quot; data-js-target=&quot;overflow1&quot;
         aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
@@ -4409,15 +4386,7 @@
     </div>
 </div>
 
-<h4>Tilgængelighed</h4>
-
-<p>Overflow menu skal kunne aktiveres og håndteres fra tastatur.</p>
-
-<p>Overflow menu skjuler indhold for brugeren og bør anvendes i begrænset omfang.</p>
-
-<p>Overflow menu skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tastaturet til navigation.</p>
-
-<h3 class="h4">Klasser</h3>
+<h4>Klasser</h4>
 
 <p>Følgende aria tags styrer hvorvidt menuen er foldet ud:</p>
 
@@ -4435,7 +4404,7 @@
 
 <p>Der er lavet et specifikt liste element til overflow-menuen (se <code>.overflow-list</code>) som kan indeholde links eller buttons. Det er dog ikke nødvendigt at benytte denne liste. Overflow-menuen er bare en container hvor man kan placere det indhold man nu har lyst til.</p>
 
-<h3 class="h4">Skjul/vis</h3>
+<h4>Skjul/vis</h4>
 
 <p>Initialiser collapse/expand javascript med at placere følgende på button elementet: <code>class="js-dropdown" data-js-target="#overflow1"</code></p>
 
@@ -4471,6 +4440,14 @@
   </tbody>
 </table>
 
+<h2>Tilgængelighed</h2>
+
+<p>Overflow menu skal kunne aktiveres og håndteres fra tastatur.</p>
+
+<p>Overflow menu skjuler indhold for brugeren og bør anvendes i begrænset omfang.</p>
+
+<p>Overflow menu skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tastaturet til navigation.</p>
+
 <h2>Varianter</h2>
 
 <h3 id="sortering">Sortering</h3>
@@ -4487,6 +4464,11 @@
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu overflow-menu--sort overflow-menu--open-right&quot;
     id=&quot;overflow-sort-example&quot;&gt;
@@ -4523,7 +4505,7 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.DropdownSort(document.getElementById(&#39;OVERFLOW-MENU-CONTAINER&#39;)).init();</code></pre></figure>
 
-<h4>Events</h4>
+<h5>Events</h5>
 
 <table class="table table--responsive-headers">
   <thead>
@@ -4637,10 +4619,6 @@
                 
                   
                 
-              
-              
-
-              
               
               
 

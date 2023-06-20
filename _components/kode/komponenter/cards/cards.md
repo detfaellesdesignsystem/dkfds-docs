@@ -26,7 +26,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="card" %}
+{% include code/syntax.html component="card" copybutton=true %}
 
 Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde, som i øvrigt kan ligge i en footer. Du kan frit sammensætte cards efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.
 
@@ -70,4 +70,4 @@ Footer defineres med klassen `card-footer`.
 {:#samme-hoejde}
 ### Samme højde
 
-{% include code/syntax.html component="cards-same-height" link="true" %}
+{% include code/syntax.html component="cards-same-height" link=true copybutton=true %}

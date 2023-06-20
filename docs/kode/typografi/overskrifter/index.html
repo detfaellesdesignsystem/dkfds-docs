@@ -35,7 +35,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1119,7 +1127,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1239,7 +1247,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1559,7 +1567,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2755,7 +2763,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3129,26 +3137,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3737,22 +3725,6 @@
 
     
 
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
-
-</li>
-
-    
-
 
         </ul>
         
@@ -3820,7 +3792,7 @@
 
 <p><a href="/design/typografi/overskrifter/#retningslinjer">Læs retningslinjerne for overskrifter</a></p>
 
-<h2 class="h4">HTML Struktur</h2>
+<h2>HTML Struktur</h2>
 
 <div class="component-preview component-preview-code  component-code-headings">
     
@@ -3828,6 +3800,11 @@
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h1&gt;Overskrift 1&lt;/h1&gt;
 &lt;h2&gt;Overskrift 2&lt;/h2&gt;
@@ -3842,9 +3819,9 @@
 
 <p>Hold en stram overskriftsstruktur i koden. En <code>&lt;h3&gt;</code> altid er under en <code>&lt;h2&gt;</code>, en <code>&lt;h4&gt;</code> under en <code>&lt;h3&gt;</code> osv. <code>&lt;h1&gt;</code> er altid øverst i hierarkiet.</p>
 
-<p>Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet udtryk, så brug en klasse til at style overskriften til at ligne et andet niveau.</p>
+<p>Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet udtryk, så brug en klasse til at style overskriften.</p>
 
-<h3 class="h5">Eksempel på en overskrift, der ligner et andet niveau</h3>
+<h3>Eksempel på en overskrift, der ligner et andet niveau</h3>
 
 <div class="component-preview component-preview-code  component-code-heading">
     
@@ -3858,6 +3835,11 @@
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h2 class=&quot;h3&quot;&gt;Dette er en h2 overskrift, som ligner en h3&lt;/h2&gt;</code></pre></figure>
 
@@ -3889,7 +3871,7 @@
   
   <p><a href="/design/typografi/overskrifter/#subheading">Læs retningslinjer for subheadings</a></p>
 
-<h3 class="h4">HTML Struktur</h3>
+<h3>HTML Struktur</h3>
 
 <div class="component-preview component-preview-code  component-code-subheading">
     
@@ -3897,6 +3879,11 @@
     <div class="sr-only">Kodeeksempel</div>
     
     <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;subheading&quot;&gt;Dette er en subheading&lt;/div&gt;</code></pre></figure>
 
@@ -4019,10 +4006,6 @@
                     
                     
                     
-              
-              
-
-              
               
               
 

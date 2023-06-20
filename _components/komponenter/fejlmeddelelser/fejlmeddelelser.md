@@ -40,26 +40,26 @@ subnav:
   href: "#tjekboks"
 - text: Vedhæft fil
   href: "#vedhaeft-fil"
-
 ---
+
 {% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" link="true" code="/kode/komponenter/fejlmeddelelser/" %}
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsningen. Fortæl brugeren, hvad der skal til for at rette problemet og komme videre i et simpelt og venligt sprog.
 
 Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så brugeren ikke skal lede, ved at sætte fejlmeddelelsen umiddelbart over det, der skal rettes eller mangler.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Brug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.
 
 Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en <a href="/komponenter/beskeder/">besked</a>.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Fejlmeddelelsen skal også vises som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.
 
@@ -71,8 +71,7 @@ Marker også selve feltet der er fejl i med rødt.
 
 For at hjælpe skærmlæsere tilføjes en skjult tekst med ordet "Fejl:" foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre "Fejl: Dette er ikke en gyldig mailadresse."
 
-{:.h4}
-### Skriv klart og præcist
+#### Skriv klart og præcist
 
 Beskriv for brugeren, hvad der er sket og hvordan det kan rettes.
 
@@ -80,15 +79,13 @@ Meddelelsen skal være skrevet i lægmandssprog, være imødekommende og så kor
 
 Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står "ddmmåååå-nnnn" eller "22091908-1856" som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.
 
-{:.h4}
-### Vær konsistent
+#### Vær konsistent
 
 Brug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de ser ens ud, lyder ens, og betyder det samme, og så de giver mening ude af kontekst.
 
 Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står "Hvor mange timer arbejder du om ugen?", så kan fejlmeddelelsen være "Indtast hvor mange timer du arbejder om ugen".
 
-{:.h4}
-### Vær præcis
+#### Vær præcis
 
 Generelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening uden for kontekst. Undgå derfor fejlmeddelelser som:
 
@@ -112,8 +109,7 @@ En fejlmeddelelse, der forklarer den specifikke situation er mere hjælpsom end 
 
 Den gode fejlmeddelelse vil fortælle brugeren, hvad der er sket og hvordan det kan løses.
 
-{:.h4}
-### Brug instruktioner og beskrivelser
+#### Brug instruktioner og beskrivelser
 
 Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. Fx:
 
@@ -123,10 +119,16 @@ Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. F
 
 Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør højst være 35 bogstaver" til felter som er for lange.
 
-
 {% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser do's and don'ts" %}
 
-### Referencer
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a>
+- <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a>
+
+#### Referencer
 
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
@@ -134,109 +136,101 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 - <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" class="icon-link">Understanding Success Criterion 3.3.1: Error Identification<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" class="icon-link">Understanding Success Criterion 3.3.3: Error Suggestion<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
+## Komponenter med fejlmeddelelser
 
-{:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a>
-- <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a>
-
-
-{:.h3 #accordions}
-## Accordions
+{:#accordions}
+### Accordions
 
 {% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" link="true" code="/kode/komponenter/fejlmeddelelser/#accordions" %}
 
-{:.h3 #datofelter}
-## Datofelter
+{:#datofelter}
+### Datofelter
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 
-{:.h3 #datovaelger}
-## Datovælger
+{:#datovaelger}
+### Datovælger
 
 {% include code/preview-box.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" %}
 
-{:.h3 #dropdown}
-## Dropdown
+{:#dropdown}
+### Dropdown
 
 {% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 
-{:.h3 #inputfelt}
-## Inputfelt
+{:#inputfelt}
+### Inputfelt
 
 {% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
 
-{:.h4}
-### Inputfelt med suffix
+#### Inputfelt med suffix
 
 {% include code/preview-box.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" %}
 
-{:.h4}
-### Inputfelt med karakterbegrænsning
+#### Inputfelt med karakterbegrænsning
 
 {% include code/preview-box.html component="text-input-character-limit-error" title="Eksempel på inputfelt med karakterbegrænsning med fejlmeddelelse" %}
 
-{:.h3 #radioknapper}
-## Radioknapper
+{:#radioknapper}
+### Radioknapper
 
 {% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
 
-{:.h3 #tekstomraade}
-## Tekstområde
+{:#tekstomraade}
+### Tekstområde
 
 {% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" %}
 
-{:.h4}
-### Tekstområde med karakterbegrænsning
+#### Tekstområde med karakterbegrænsning
+
 {% include code/preview-box.html component="text-area-character-limit-error" title="Eksempel på tekstområde med karakterbegrænsning med fejlmeddelelse" %}
 
-{:.h3 #tjekboks}
-## Tjekboks
+{:#tjekboks}
+### Tjekboks
 
 {% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" %}
 
-{:.h3 #vedhaeft-fil}
-## Vedhæft fil
+{:#vedhaeft-fil}
+### Vedhæft fil
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
 
-{:.h4}
-### Ingen fil er valgt
+#### Ingen fil er valgt
+
 Skriv "Vælg en [dokumenttype]".<br />
 Fx "Vælg en lægeerklæring".
 
-{:.h4}
-### Den valgte fil er forkert filtype
+#### Den valgte fil er forkert filtype
+
 Skriv "Den valgte fil skal være af typen [liste af filtyper]".<br />
 Fx "Den valgte fil skal være af typen CSV eller ODS" eller "Den valgte fil skal være af typen JPG, BMP, PNG, TIF eller PDF".
 
-{:.h4}
-### Filen er for stor
+#### Filen er for stor
+
 Skriv "Filens størrelse skal være under [største filstørrelse]".<br />
 Fx "Filens størrelse skal være under 2MB".
 
-{:.h4}
-### Filen er tom
+#### Filen er tom
+
 Skriv "Den valgte fil er tom".
 
-{:.h4}
-### Filen indeholder en virus
+#### Filen indeholder en virus
+
 Skriv "Den valgte fil indeholder en virus".
 
-{:.h4}
-### Filen er beskyttet af en adgangskode
+#### Filen er beskyttet af en adgangskode
+
 Skriv "Den valgte fil er beskyttet af en adgangskode".
 
-{:.h4}
-### Der var en fejl, og filen ikke kunne uploades
+#### Der var en fejl, og filen ikke kunne uploades
+
 Skriv "Den valgte fil kunne ikke uploades - prøv venligst igen".
 
-{:.h4}
-### Der er en begrænsning på antal filer brugeren kan vælge
+#### Der er en begrænsning på antal filer brugeren kan vælge
+
 Skriv "Du kan kun vælge op til [højeste antal filer] filer på samme tid".<br />
 Fx "Du kan kun vælge op til 10 filer på samme tid".
 
-{:.h4}
-### Der ikke er brugt den korrekte skabelon
+#### Der ikke er brugt den korrekte skabelon
+
 Skriv "Den valgte fil skal gøre brug af skabelonen".

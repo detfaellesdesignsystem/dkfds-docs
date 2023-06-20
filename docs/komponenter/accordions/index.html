@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3138,26 +3146,6 @@
 </li>
     
 
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
-      </a>
-     
-    
-  
-</li>
-    
-
 
         </ul>
       </div>
@@ -3515,15 +3503,6 @@
 
 
 <li class=" ">
-<a href="#med-fejl" >Med fejl</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
 <a href="#med-succesbeskeder" >Med succesbeskeder</a>
 </li>
 
@@ -3619,7 +3598,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3715,7 +3694,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3971,7 +3950,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4161,7 +4140,6 @@
           
           <ul class="d-lg-none nobullet-list">
           <li><a href="#aabn-luk-alle">Åbn/luk alle</a></li>
-          <li><a href="#med-fejl">Med fejl</a></li>
           <li><a href="#med-succesbeskeder">Med succesbeskeder</a></li>
           
           </ul>
@@ -4250,11 +4228,13 @@
     
 </div>
 
-<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 id="retningslinjer">Retningslinjer</h2>
+
+<h3>Anvendes til</h3>
 
 <p>Accordions er interaktive overskrifter, der anvendes til at skjule og vise det relaterede indhold.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Accordions erstatter ikke individuelle trin i en selvbetjeningsløsning eller sider på en hjemmeside.</p>
 
@@ -4264,7 +4244,7 @@
 
 <p>Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger. Der bør du eventuelt i stedet anvende en trinindikator.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.</p>
 
@@ -4279,13 +4259,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Accordions-ikoner-do.svg" alt="Eksempel på korrekt placering af ikoner i en accordion (placeret i venstre side)" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Brug plus-ikoner til at indikere, at accordions (akkordeonbjælker) kan åbnes. Brug minus-ikoner til at indikere, at accordions er åbne og kan lukkes. En undersøgelse viser, at brugerne klikker mere på plus-ikoner end på pileikoner (Thomas, 2006).</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Accordions-ikoner-dont.svg" alt="Eksempel på ukorrekt placering af ikoner i en accordion (placeret i højre side)" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Undgå at bruge pile som ikoner i accordions (akkordeonbjælker). De er mindre entydige end plusser og kan få nogle brugere til at tro, at den enkelte accordion er et link til en ny side. Undgå at placere ikoner til højre, hvor de er svære at få øje på. Mange brugere tror, at de skal klikke på ikonet for at åbne en accordion (Thomas, 2006).</p>
@@ -4295,91 +4275,7 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
-
-<ul class="nobullet-list">
-  <li><a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-<h2 id="aabn-luk-alle">Åbn/luk alle</h2>
-
-<div class="component-preview  component-preview-accordion-bulk-open">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/accordion-bulk-open/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: accordion-bulk-open</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på accordions med åbn alle funktion</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div>
-    <button class="accordion-bulk-button" data-accordion-bulk-expand="true">Åbn alle</button>
-    <ul class="accordion">
-        <li>
-            <h3>
-                <button class="accordion-button" aria-expanded="true" aria-controls="ao1">
-                    Lorem ipsum dolor sit amet
-                </button>
-            </h3>
-            <div id="ao1" aria-hidden="false" class="accordion-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-        <li>
-            <h3>
-                <button class="accordion-button" aria-expanded="false" aria-controls="ao2">
-                    Consectetur adipiscing elit
-                </button>
-            </h3>
-            <div id="ao2" aria-hidden="true" class="accordion-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-        <li>
-            <h3>
-                <button class="accordion-button" aria-expanded="false" aria-controls="ao3">
-                    Sed do eiusmod tempor
-                </button>
-            </h3>
-            <div id="ao3" aria-hidden="true" class="accordion-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-        <li>
-            <h3>
-                <button class="accordion-button" aria-expanded="false" aria-controls="ao4">
-                    Labore et dolore magna
-                </button>
-            </h3>
-            <div id="ao4" aria-hidden="true" class="accordion-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</p>
-            </div>
-        </li>
-    </ul>
-</div>
-        
-    </div>
-    
-</div>
-
-<h2 id="med-fejl">Med fejl</h2>
+<h4 id="med-fejl">Fejlmeddelelse</h4>
 
 <p><a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
 
@@ -4400,11 +4296,11 @@
         
         <ul class="accordion">
     <li>
-        <h2>
+        <h5>
             <button class="accordion-button" aria-expanded="false" aria-controls="error-a1">
                 Lorem ipsum dolor sit amet
             </button>
-        </h2>
+        </h5>
         <div id="error-a1" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4413,7 +4309,7 @@
         </div>
     </li>
     <li>
-        <h2>
+        <h5>
             <button class="accordion-button accordion-error " aria-expanded="true" aria-describedby="error-a2-error" aria-controls="error-a2">
                 Consectetur adipiscing elit
                 <span class="accordion-icon">
@@ -4421,7 +4317,7 @@
                     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg>
                 </span>
             </button>
-        </h2>
+        </h5>
         <div id="error-a2" aria-hidden="false" class="accordion-content">
             <div class="alert alert-error" role="alert" id="error-a2-error">
                 <div class="alert-body">
@@ -4437,7 +4333,7 @@
         </div>
     </li>
     <li>
-        <h2>
+        <h5>
             <button class="accordion-button" aria-expanded="false" aria-controls="error-a3">
                 Sed do eiusmod tempor
                 <span class="accordion-icon">
@@ -4445,7 +4341,7 @@
                     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#report-problem"></use></svg>
                 </span>
             </button>
-        </h2>
+        </h5>
         <div id="error-a3" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4454,11 +4350,11 @@
         </div>
     </li>
     <li>
-        <h2>
+        <h5>
             <button class="accordion-button" aria-expanded="false" aria-controls="error-a4">
                 Labore et dolore magna
             </button>
-        </h2>
+        </h5>
         <div id="error-a4" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4472,7 +4368,93 @@
     
 </div>
 
-<h2 id="med-succesbeskeder">Med succesbeskeder</h2>
+<h4>Referencer</h4>
+
+<ul class="nobullet-list">
+  <li><a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<h2>Varianter</h2>
+
+<h3 id="aabn-luk-alle">Åbn/luk alle</h3>
+
+<div class="component-preview  component-preview-accordion-bulk-open">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/accordion-bulk-open/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: accordion-bulk-open</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på accordions med åbn alle funktion</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div>
+    <button class="accordion-bulk-button" data-accordion-bulk-expand="true">Åbn alle</button>
+    <ul class="accordion">
+        <li>
+            <h4>
+                <button class="accordion-button" aria-expanded="true" aria-controls="ao1">
+                    Lorem ipsum dolor sit amet
+                </button>
+            </h4>
+            <div id="ao1" aria-hidden="false" class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+        <li>
+            <h4>
+                <button class="accordion-button" aria-expanded="false" aria-controls="ao2">
+                    Consectetur adipiscing elit
+                </button>
+            </h4>
+            <div id="ao2" aria-hidden="true" class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+        <li>
+            <h4>
+                <button class="accordion-button" aria-expanded="false" aria-controls="ao3">
+                    Sed do eiusmod tempor
+                </button>
+            </h4>
+            <div id="ao3" aria-hidden="true" class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+        <li>
+            <h4>
+                <button class="accordion-button" aria-expanded="false" aria-controls="ao4">
+                    Labore et dolore magna
+                </button>
+            </h4>
+            <div id="ao4" aria-hidden="true" class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+        
+    </div>
+    
+</div>
+
+<h3 id="med-succesbeskeder">Med succesbeskeder</h3>
 
 <div class="component-preview  component-preview-accordion-success">
     
@@ -4489,11 +4471,11 @@
         
         <ul class="accordion">
     <li>
-        <h3>
+        <h4>
             <button class="accordion-button" aria-expanded="false" aria-controls="success-a1">
                 Lorem ipsum dolor sit amet
             </button>
-        </h3>
+        </h4>
         <div id="success-a1" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4502,11 +4484,11 @@
         </div>
     </li>
     <li>
-        <h3>
+        <h4>
             <button class="accordion-button" aria-expanded="false" aria-controls="success-a2">
                 Consectetur adipiscing elit
             </button>
-        </h3>
+        </h4>
         <div id="success-a2" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4515,7 +4497,7 @@
         </div>
     </li>
     <li>
-        <h3>
+        <h4>
             <button class="accordion-button" aria-expanded="false" aria-controls="success-a3">
                 Sed do eiusmod tempor
                 <span class="accordion-icon">
@@ -4523,7 +4505,7 @@
                     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg>
                 </span>
             </button>
-        </h3>
+        </h4>
         <div id="success-a3" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -4532,11 +4514,11 @@
         </div>
     </li>
     <li>
-        <h3>
+        <h4>
             <button class="accordion-button" aria-expanded="false" aria-controls="success-a4">
                 Labore et dolore magna
             </button>
-        </h3>
+        </h4>
         <div id="success-a4" aria-hidden="true" class="accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

@@ -11,7 +11,6 @@ componentLink: false
 
 <a href="/design/typografi/tekst/#broedtekst-retningslinjer">Læs retningslinjerne for brødtekst</a>
 
-{:.h4}
 ### HTML Struktur
 
-{% include code/syntax.html component="inlinetext" %}
+{% include code/syntax.html component="inlinetext" copybutton=true %}

@@ -13,7 +13,7 @@
             },
             {
                 "variant": "info",
-                "headingLevel": "h3",
+                "headingLevel": "h4",
                 "heading": "Informativ besked - tekstafsnit",
                 "content": "Dette eksempel viser, hvordan en besked ser ud, når dens bredde er blevet begrænset. Bredden svarer til længden på en paragraf og denne type beskeder er derfor mere velegnet, hvis du vil vise beskeden midt i en tekst.",
                 "paragraph": true

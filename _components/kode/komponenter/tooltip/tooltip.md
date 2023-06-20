@@ -32,7 +32,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="tooltip-icon" %}
+{% include code/syntax.html component="tooltip-icon" copybutton=true %}
 
 ### Javascript
 Tooltip komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
@@ -45,7 +45,7 @@ new DKFDS.Tooltip(document.getElementById('Tooltip-ID')).init();
 
 {:#klikbart-ikon-med-tooltip}
 ### Klikbart ikon med tooltip
-{% include code/syntax.html component="tooltip-delete" link="true" %}
+{% include code/syntax.html component="tooltip-delete" link=true copybutton=true %}
 
 Tooltip på knappen aktiveres ved hover eller fokus af knappen. Ikonet kan ændres så det svarer til knappens funktion.
 
@@ -54,16 +54,16 @@ Tilføj attributten `data-tooltip-trigger="click"` på knappen for at tilføje v
 
 {:#tekst-med-tooltip}
 ### Tekst med tooltip
-{% include code/syntax.html component="tooltip-text" link="true" %}
+{% include code/syntax.html component="tooltip-text" link=true copybutton=true %}
 
 Tooltip i teksten aktiveres ved hover, fokus af knappen eller klik.
 
 {:#knap-med-tooltip}
 ### Knap med tooltip
-{% include code/syntax.html component="tooltip-button" link="true" %}
+{% include code/syntax.html component="tooltip-button" link=true copybutton=true %}
 
 Tooltip i teksten aktiveres ved hover og fokus af knappen.
 
 {:#placering-af-tooltip}
 ### Placering af tooltip
-{% include code/syntax.html component="tooltip-position" link="true" %}
+{% include code/syntax.html component="tooltip-position" link=true copybutton=true %}

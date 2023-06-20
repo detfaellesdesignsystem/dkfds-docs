@@ -11,7 +11,6 @@ componentLink: false
 
 <a href="/design/typografi/overskrifter/#subheading">Læs retningslinjer for subheadings</a>
 
-{:.h4}
 ### HTML Struktur
 
-{% include code/syntax.html component="subheading" %}
+{% include code/syntax.html component="subheading" copybutton=true %}

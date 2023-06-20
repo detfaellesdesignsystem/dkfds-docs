@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3580,7 +3568,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3676,7 +3664,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3794,7 +3782,7 @@
 
 
 <li class=" ">
-<a href="#primærknap" >Primærknap</a>
+<a href="#primaerknap" >Primærknap</a>
 </li>
 
     
@@ -3803,7 +3791,7 @@
 
 
 <li class=" ">
-<a href="#sekundærknapper" >Sekundærknapper</a>
+<a href="#sekundaerknapper" >Sekundærknapper</a>
 </li>
 
     
@@ -3812,7 +3800,7 @@
 
 
 <li class=" ">
-<a href="#tertiærknapper" >Tertiærknapper</a>
+<a href="#tertiaerknapper" >Tertiærknapper</a>
 </li>
 
     
@@ -3998,7 +3986,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4187,9 +4175,9 @@
           
           
           <ul class="d-lg-none nobullet-list">
-          <li><a href="#primærknap">Primærknap</a></li>
-          <li><a href="#sekundærknapper">Sekundærknapper</a></li>
-          <li><a href="#tertiærknapper">Tertiærknapper</a></li>
+          <li><a href="#primaerknap">Primærknap</a></li>
+          <li><a href="#sekundaerknapper">Sekundærknapper</a></li>
+          <li><a href="#tertiaerknapper">Tertiærknapper</a></li>
           <li><a href="#tilbage-knap">Tilbage-knap</a></li>
           <li><a href="#knap-med-ikon">Knap med ikon</a></li>
           <li><a href="#klikbart-ikon">Klikbart ikon</a></li>
@@ -4200,6 +4188,7 @@
           
 
           
+
           
 <div class="component-preview  component-preview-button-primary">
     
@@ -4226,18 +4215,17 @@
     
 </div>
 
+<h2 id="retningslinjer">Retningslinjer</h2>
 
-          
-
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h3>Anvendes til</h3>
 
 <p>Du kan bruge de forskellige typer af knapper til at kommunikere centrale og vigtige funktioner til brugerne, såsom “næste” trin i en selvbetjeningsløsning, eller ”Gem”, ”Rediger”, ”Log ind”, ”Log af” m.fl.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anvende link.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Der er kun én primærknap pr. side.</p>
 
@@ -4257,6 +4245,14 @@
 
 <p>I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i knappen for at signalere bestemte handlinger.</p>
 
+<h4>Disabled tilstand</h4>
+
+<p>Brug helst ikke “disabled” state på knapper eller i det hele taget, da ikke alle brugere forstår, at det som er “disabled” ikke kan anvendes.</p>
+
+<p>Brug ikke “disabled” tilstand på “næste” knapper (knapper der bringer brugeren videre i løsningen), da brugeren ved tryk på sådanne knapper skal have at vide, hvor i formularen, der mangler udfyldelse og dermed hjælpes til gennemførelse af selvbetjeningsløsningen.</p>
+
+<p>Der kan være tilfælde, hvor det giver mening for brugeren at du anvender “disabled” tilstanden, men så skal det være en aktiv del af en umiddelbar og kontekstuel kommunikation på siden; fx ved at en knap først bliver aktiv, når brugeren har godkendt nogle betingelser ved fx at sætte et flueben. I sådanne tilfælde er det vigtigt at knap og betingelse, står i umiddelbar nærhed, så brugerne bliver opmærksomme på forskellen, og så brugere der anvender zoom også kan se ændringen ske inden for deres zoom.</p>
+
 <div class=" component-preview-buttons-dos-donts">
     
     <div class="sr-only">Knapper do's and don'ts</div>
@@ -4264,13 +4260,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Knapper-placering-do-borgerdk.svg" alt="Eksempel på, hvordan knapper kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Placér knapper i venstre side under formularens felter. Øjet følger som oftest en ”skannelinje” til venstre i formularer (Wroblewski, 2008, s. 93-97). Når alle elementer står på én linje, skal brugerne kun bevæge øjet vertikalt – ikke både vertikalt og horisontalt.</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Knapper-placering-dont-borgerdk.svg" alt="Eksempel på, hvordan knapper ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Undlad at placere den afsluttende knap i formularer til højre. Brugerne kan let overse højrestillede knapper, da øjet mest fokuserer til venstre, og kun kan se skarpt i en diameter på 2-4 cm ved en computerskærm (Johnson, 2014, s. 54).</p>
@@ -4280,15 +4276,7 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
-
-<ul class="nobullet-list">
-  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
-  <li>Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)</li>
-  <li><a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link">Hvornår skal du bruge en knap eller et link<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
 
 <ul class="nobullet-list">
   <li><a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/komponenter/knapper/%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a></li>
@@ -4299,19 +4287,18 @@
   <li><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r=/komponenter/knapper/%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a></li>
 </ul>
 
-<h3 class="h4">Disabled tilstand</h3>
+<h4>Referencer</h4>
 
-<p>Brug helst ikke “disabled” state på knapper eller i det hele taget, da ikke alle brugere forstår, at det som er “disabled” ikke kan anvendes.</p>
+<ul class="nobullet-list">
+  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
+  <li>Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)</li>
+  <li><a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link">Hvornår skal du bruge en knap eller et link<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
 
-<p>Brug ikke “disabled” tilstand på “næste” knapper (knapper der bringer brugeren videre i løsningen), da brugeren ved tryk på sådanne knapper skal have at vide, hvor i formularen, der mangler udfyldelse og dermed hjælpes til gennemførelse af selvbetjeningsløsningen.</p>
+<h2>Varianter</h2>
 
-<p>Der kan være tilfælde, hvor det giver mening for brugeren at du anvender “disabled” tilstanden, men så skal det være en aktiv del af en umiddelbar og kontekstuel kommunikation på siden; fx ved at en knap først bliver aktiv, når brugeren har godkendt nogle betingelser ved fx at sætte et flueben. I sådanne tilfælde er det vigtigt at knap og betingelse, står i umiddelbar nærhed, så brugerne bliver opmærksomme på forskellen, og så brugere der anvender zoom også kan se ændringen ske inden for deres zoom.</p>
+<h3 id="primaerknap">Primærknap</h3>
 
-<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-primary">
-  <h2 id="primærknap">Primærknap</h2>
-  
-  
-  
 <div class="component-preview  component-preview-buttons-primary">
     
     <div class="component-link px-4 py-4">
@@ -4349,17 +4336,8 @@
     
 </div>
 
+<h3 id="sekundaerknapper">Sekundærknapper</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-secondary">
-  <h2 id="sekundærknapper">Sekundærknapper</h2>
-  
-  
-  
 <div class="component-preview  component-preview-buttons-secondary">
     
     <div class="component-link px-4 py-4">
@@ -4369,7 +4347,7 @@
     </div>
     
     
-    <div class="sr-only">Eksempel på sekundær knap</div>
+    <div class="sr-only">Eksempel på sekundærknap</div>
     
     <div class="component-example px-4 py-4">
         
@@ -4397,17 +4375,8 @@
     
 </div>
 
+<h3 id="tertiaerknapper">Tertiærknapper</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-tertiary">
-  <h2 id="tertiærknapper">Tertiærknapper</h2>
-  
-  
-  
 <div class="component-preview  component-preview-buttons-tertiary">
     
     <div class="component-link px-4 py-4">
@@ -4445,17 +4414,8 @@
     
 </div>
 
+<h3 id="tilbage-knap">Tilbage-knap</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-back">
-  <h2 id="tilbage-knap">Tilbage-knap</h2>
-  
-  
-  
 <div class="component-preview  component-preview-buttons-back">
     
     <div class="component-link px-4 py-4">
@@ -4498,17 +4458,8 @@
     
 </div>
 
+<h3 id="knap-med-ikon">Knap med ikon</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-with-icon">
-  <h2 id="knap-med-ikon">Knap med ikon</h2>
-  
-  
-  
 <div class="component-preview  component-preview-buttons-with-icon">
     
     <div class="component-link px-4 py-4">
@@ -4531,17 +4482,12 @@
     
 </div>
 
+<h3 id="klikbart-ikon">Klikbart ikon</h3>
 
-  
-  
+<p>Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med <a href="/komponenter/tables/">sorteringsikoner i tabeller</a> eller skraldespandsikoner på mobil, hvor pladsen er begrænset.</p>
 
-</section>
+<p>Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid <a href="/komponenter/funktionslink/">funktionslink</a> i stedet for klikbare ikoner, når det er muligt.</p>
 
-<section class="styleguide-child-container content" id="section-/komponenter/knapper/buttons-only-icon">
-  <h2 id="klikbart-ikon">Klikbart ikon</h2>
-  
-  
-  
 <div class="component-preview  component-preview-buttons-only-icon">
     
     <div class="component-link px-4 py-4">
@@ -4563,14 +4509,6 @@
     </div>
     
 </div>
-
-
-  
-  <p>Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med <a href="/komponenter/tables/">sorteringsikoner i tabeller</a> eller skraldespandsikoner på mobil, hvor pladsen er begrænset.</p>
-
-<p>Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid <a href="/komponenter/funktionslink/">funktionslink</a> i stedet for klikbare ikoner, når det er muligt.</p>
-
-</section>
 
 
 

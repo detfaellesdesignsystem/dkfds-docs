@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3699,7 +3687,7 @@
 </div>
 </div>
 
-<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 id="retningslinjer">Anvendes til</h2>
 
 <p>Brug ikoner til at understøtte brugerens forståelse af det som kommunikeres.</p>
 
@@ -3707,13 +3695,13 @@
 
 <p><a href="/design/ikoner/#betydning">Se flere betydninger i ikontaksonomien</a></p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h2>Anvendes ikke til</h2>
 
 <p>Brug ikke dekorative ikoner til at “pynte” med, da de oftere end ikke bliver til visuel støj, hvilket øger den kognitive belastning, og dermed mindsker brugervenligheden og brugerens effektivitet.</p>
 
 <p>Illustrative ikoner skal bruges med omtanke, hvis brugeren ikke forstår ikonet umiddelbart er det oftest bedre at bruge tekst uden ikon.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h2>Vejledning</h2>
 
 <p>Ikoner kan skabe klarhed ved at understøtte din kommunikation visuelt eller tilføre forvirring ved at forekomme arbitrært.</p>
 
@@ -3737,7 +3725,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
 
 <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
 
-<h3 class="h4">Links</h3>
+<h3>Links</h3>
 
 <ul>
   <li><a href="https://www.nngroup.com/articles/icon-usability/" class="icon-link">Icon Usability<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
@@ -3816,13 +3804,12 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
 </details>
 
 <div aria-live="polite">
-    <section class="icon-section" id="icon-section-konventionelle">
-        <h2 class="h5">Konventionelle ikoner</h2>
-        <p>Må ikke bruges til andre formål end de specificerede.</p>
+  <section class="icon-section" id="icon-section-konventionelle">
+    <h3>Konventionelle ikoner</h3>
+    <p>Må ikke bruges til andre formål end de specificerede.</p>
+    <div class="container">
+      <div class="icon-list row" id="icon-list-konventionelle">
         
-        <div class="container">
-            <div class="icon-list row" id="icon-list-konventionelle">
-                
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="open-in-new" data-icon-keywords="open in new, new window, external, ekstern, eksternt link">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>
@@ -3831,7 +3818,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="home" data-icon-keywords="hus, hjem, home, forside, house, home">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#home"></use></svg>
@@ -3840,7 +3827,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="save" data-icon-keywords="save, gem, disc, diskette">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#save"></use></svg>
@@ -3849,7 +3836,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="print" data-icon-keywords="print, printer, udskriv">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#print"></use></svg>
@@ -3858,7 +3845,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="trash-can" data-icon-keywords="skraldespand, bin, trash, trash can, can, delete, slet, fjern, rubbish">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
@@ -3867,7 +3854,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="search" data-icon-keywords="lup, search, søg">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#search"></use></svg>
@@ -3876,15 +3863,14 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            </div>
-        </div>
-    </section>
-
-    <section class="icon-section" id="icon-section-beskeder">
-        <h2 class="h5 mb-4">Beskeder (feedback)</h2>
-        <div class="container">
-            <div class="icon-list row" id="icon-list-beskeder">
-                
+      </div>
+    </div>
+  </section>
+  <section class="icon-section" id="icon-section-beskeder">
+    <h3>Beskeder (feedback)</h3>
+    <div class="container">
+      <div class="icon-list row" id="icon-list-beskeder">
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="report-problem" data-icon-keywords="besked, alert, message, warning, advarsel, report, problem, report problem">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#report-problem"></use></svg>
@@ -3893,7 +3879,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="highlight-off" data-icon-keywords="besked, alert, message, error, fejl">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg>
@@ -3902,7 +3888,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="info" data-icon-keywords="besked, alert, message, information, info">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
@@ -3911,7 +3897,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="help" data-icon-keywords="besked, alert, message, help, hjælp">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
@@ -3920,7 +3906,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="check-circle" data-icon-keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg>
@@ -3929,15 +3915,14 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            </div>
-        </div>
-    </section>
-
-    <section class="icon-section" id="icon-section-navigation">
-        <h2 class="h5 mb-4">Navigation</h2>
-        <div class="container">
-            <div class="icon-list row" id="icon-list-navigation"> 
-                
+      </div>
+    </div>
+  </section>
+  <section class="icon-section" id="icon-section-navigation">
+    <h3>Navigation</h3>
+    <div class="container">
+      <div class="icon-list row" id="icon-list-navigation"> 
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="more-horiz" data-icon-keywords="more, vertical, mere">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-horiz"></use></svg>
@@ -3946,7 +3931,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-right" data-icon-keywords="right, højre, frem, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
@@ -3955,7 +3940,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="menu" data-icon-keywords="hamburger, menu, burger, burgermenu, burger menu">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>
@@ -3964,7 +3949,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="more-vert" data-icon-keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
@@ -3973,7 +3958,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chevron-left" data-icon-keywords="næste, next, side">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg>
@@ -3982,7 +3967,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="first-page" data-icon-keywords="start, første, side">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg>
@@ -3991,7 +3976,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chevron-right" data-icon-keywords="forrige, previous, prev, side">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
@@ -4000,7 +3985,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="last-page" data-icon-keywords="sidste, slut, side">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg>
@@ -4009,7 +3994,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-forward" data-icon-keywords="pil, højre, arrow, frem, forward">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-forward"></use></svg>
@@ -4018,7 +4003,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-downward" data-icon-keywords="pil, ned, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-downward"></use></svg>
@@ -4027,7 +4012,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-upward" data-icon-keywords="pil, op, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
@@ -4036,7 +4021,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-back" data-icon-keywords="pil, arrow, tilbage, back">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-back"></use></svg>
@@ -4045,7 +4030,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-left" data-icon-keywords="pil, arrow, back, tilbage">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>
@@ -4054,7 +4039,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="subdirectory-arrow-right" data-icon-keywords="højre, knækpil, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#subdirectory-arrow-right"></use></svg>
@@ -4063,7 +4048,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="subdirectory-arrow-left" data-icon-keywords="venstre, knækpil, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#subdirectory-arrow-left"></use></svg>
@@ -4072,7 +4057,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chevron-double-left" data-icon-keywords="venstre, dobbeltpil, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-double-left"></use></svg>
@@ -4081,7 +4066,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-                
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chevron-double-right" data-icon-keywords="højre, dobbeltpil, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-double-right"></use></svg>
@@ -4090,14 +4075,13 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            </div>
-        </div>
-    </section>
-
-    <section class="icon-section" id="icon-section-tilstande">
-    <h2 class="h5 mb-4">Tilstande</h2>
+      </div>
+    </div>
+  </section>
+  <section class="icon-section" id="icon-section-tilstande">
+    <h3>Tilstande</h3>
     <div class="container">
-        <div class="icon-list row" id="icon-list-tilstande">
+      <div class="icon-list row" id="icon-list-tilstande">
         
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-right" data-icon-keywords="pil, højre, lukket, luk, detalje">
@@ -4107,7 +4091,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-drop-down" data-icon-keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
@@ -4116,7 +4100,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="arrow-drop-up" data-icon-keywords="pil, op, up, arrow, dropdown, fold ind, luk">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-up"></use></svg>
@@ -4125,7 +4109,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="zoom-out" data-icon-keywords="lup, zoom, zoom ud, ud">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#zoom-out"></use></svg>
@@ -4134,7 +4118,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="zoom-in" data-icon-keywords="lup, zoom, zoom ind, ind">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#zoom-in"></use></svg>
@@ -4143,7 +4127,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="fullscreen" data-icon-keywords="fullscreen, fuld skærm, stor skærm, fuldskærm">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#fullscreen"></use></svg>
@@ -4152,7 +4136,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="remove" data-icon-keywords="-, minus, luk, accordion, close, collapse">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#remove"></use></svg>
@@ -4161,7 +4145,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="add" data-icon-keywords="+, plus, åben, accordion, open, expand">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add"></use></svg>
@@ -4170,7 +4154,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="fullscreen-exit" data-icon-keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#fullscreen-exit"></use></svg>
@@ -4179,7 +4163,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort" data-icon-keywords="sortering, sort, unsorted">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort"></use></svg>
@@ -4188,7 +4172,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="lock-open" data-icon-keywords="log off, log af, log ud, log, off, af, ud, exit, lås, lock, hængelås, åben, open">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock-open"></use></svg>
@@ -4197,7 +4181,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="lock" data-icon-keywords="log in, login, log på, log ind, log, in, på, ind, lås, lock, hængelås, låst">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>
@@ -4206,7 +4190,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="visibility-off" data-icon-keywords="øje, eye, se, see, skjul, blind">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#visibility-off"></use></svg>
@@ -4215,7 +4199,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-by-alpha" data-icon-keywords="sort, sorting, sorter, sortér, alfabetisk">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-by-alpha"></use></svg>
@@ -4224,7 +4208,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="expand-more" data-icon-keywords="udvid, expand, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#expand-more"></use></svg>
@@ -4233,7 +4217,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="expand-less" data-icon-keywords="collapse, pil, arrow">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#expand-less"></use></svg>
@@ -4242,7 +4226,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="visibility" data-icon-keywords="øje, eye, se, see, vis, blind">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#visibility"></use></svg>
@@ -4251,7 +4235,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-descending" data-icon-keywords="tabel, table, sort, sortering, kolonne, descending">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-descending"></use></svg>
@@ -4260,7 +4244,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-ascending" data-icon-keywords="tabel, table, sort, sortering, kolonne, ascending">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-ascending"></use></svg>
@@ -4269,7 +4253,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-table-none" data-icon-keywords="tabel, table, sort, sortering, kolonne">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-none"></use></svg>
@@ -4278,7 +4262,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-default" data-icon-keywords="sort, sortering, overflow, overflowmenu, overflow menu">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-default"></use></svg>
@@ -4287,7 +4271,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-ascending" data-icon-keywords="stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-ascending"></use></svg>
@@ -4296,7 +4280,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="sort-descending" data-icon-keywords="faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-descending"></use></svg>
@@ -4305,14 +4289,13 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-        </div>
+      </div>
     </div>
-    </section>
-
-    <section class="icon-section" id="icon-section-filtyper">
-    <h2 class="h5 mb-4">Filtyper</h2>
+  </section>
+  <section class="icon-section" id="icon-section-filtyper">
+    <h3>Filtyper</h3>
     <div class="container">
-        <div class="icon-list row" id="icon-list-filtyper">
+      <div class="icon-list row" id="icon-list-filtyper">
         
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-image" data-icon-keywords="billede, picture, fotografi, fil, file">
@@ -4322,7 +4305,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-excel" data-icon-keywords="excel, ark, regneark, fil">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-excel"></use></svg>
@@ -4331,7 +4314,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-pdf" data-icon-keywords="PDF, dokument, document, fil">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-pdf"></use></svg>
@@ -4340,7 +4323,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-word" data-icon-keywords="word, dokument, fil, document">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-word"></use></svg>
@@ -4349,15 +4332,14 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-        </div>
+      </div>
     </div>
-    </section>
-
-    <section class="icon-section" id="icon-section-funktionalitet">
-    <h2 class="h5 mb-4">Funktionalitet</h2>
+  </section>
+  <section class="icon-section" id="icon-section-funktionalitet">
+    <h3>Funktionalitet</h3>
     <div class="container">
-        <div class="icon-list row" id="icon-list-funktionalitet">
-            
+      <div class="icon-list row" id="icon-list-funktionalitet">
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="close" data-icon-keywords="anuller, annullér, luk, cancel, discard, fortryd">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>
@@ -4366,7 +4348,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="hourglass-empty" data-icon-keywords="waiting, hourglass, timeglas, vente, ventetid, tid">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#hourglass-empty"></use></svg>
@@ -4375,7 +4357,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="calculator" data-icon-keywords="calculator, lommeregner, beregning, beregner">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#calculator"></use></svg>
@@ -4384,7 +4366,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="reply" data-icon-keywords="besvar, mail, email">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#reply"></use></svg>
@@ -4393,7 +4375,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="chat" data-icon-keywords="chat, kontakt, kommunikation, communication">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chat"></use></svg>
@@ -4402,7 +4384,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="insert-invitation" data-icon-keywords="date, calendar, kalender, dato, invitation, aftale, møde">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#insert-invitation"></use></svg>
@@ -4411,7 +4393,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="share" data-icon-keywords="share, del">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#share"></use></svg>
@@ -4420,7 +4402,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-download" data-icon-keywords="download">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
@@ -4429,7 +4411,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="download-done" data-icon-keywords="færdig, gennemført, download">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#download-done"></use></svg>
@@ -4438,7 +4420,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="email" data-icon-keywords="email, mail, e-mail, e-mailadresse, adresse, adress">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>
@@ -4447,7 +4429,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="feedback" data-icon-keywords="feedback, respons, response, besvarelse">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>
@@ -4456,7 +4438,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="person-remove" data-icon-keywords="bruger, person, user, remove">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person-remove"></use></svg>
@@ -4465,7 +4447,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="flag" data-icon-keywords="flag, filled, udfyldt">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#flag"></use></svg>
@@ -4474,7 +4456,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="outlined-flag" data-icon-keywords="flag, tomt">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#outlined-flag"></use></svg>
@@ -4483,7 +4465,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="open-with" data-icon-keywords="flyt, move, drag, drop">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-with"></use></svg>
@@ -4492,7 +4474,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="credit-card" data-icon-keywords="kreditkort, creditcard, credit, money, payment, betal, betaling, pay">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#credit-card"></use></svg>
@@ -4501,7 +4483,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="settings" data-icon-keywords="settings, indstillinger">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#settings"></use></svg>
@@ -4510,7 +4492,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="photo-camera" data-icon-keywords="kamera, video, picture, billede">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#photo-camera"></use></svg>
@@ -4519,7 +4501,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="card-text" data-icon-keywords="card, text, tekst, kort, oplysninger, kontakt, contact">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>
@@ -4528,7 +4510,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="content-copy" data-icon-keywords="copy, paste, kopi, indsæt, sæt ind">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
@@ -4537,7 +4519,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="playlist-add-check" data-icon-keywords="liste, list, done, check, flueben, completed, gennemført">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#playlist-add-check"></use></svg>
@@ -4546,7 +4528,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="folder" data-icon-keywords="mappe, folder">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#folder"></use></svg>
@@ -4555,7 +4537,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="notifications" data-icon-keywords="notifikation, besked, toast, notification, bell, klokke, alarm, ringe">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#notifications"></use></svg>
@@ -4564,7 +4546,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="refresh" data-icon-keywords="update, refresh, opdater, genindlæs, pil, cirkel">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#refresh"></use></svg>
@@ -4573,7 +4555,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="create-new-folder" data-icon-keywords="folder, mappe, opret, ny, add, new, create">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#create-new-folder"></use></svg>
@@ -4582,7 +4564,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="apps" data-icon-keywords="apps, applikation, oversigt, overblik, kasser">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#apps"></use></svg>
@@ -4591,7 +4573,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="location-on" data-icon-keywords="position, maps, adresse, lokation, location">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#location-on"></use></svg>
@@ -4600,7 +4582,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="mode" data-icon-keywords="redigér, edit, rediger, ændre, change">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>
@@ -4609,7 +4591,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="send" data-icon-keywords="send">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#send"></use></svg>
@@ -4618,7 +4600,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="language" data-icon-keywords="sprog, language, globe, earch, jorden, lande, countries">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>
@@ -4627,7 +4609,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="grade" data-icon-keywords="star, stjerne, bedømmelse, rating">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#grade"></use></svg>
@@ -4636,7 +4618,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="grade-outline" data-icon-keywords="star, stjerne, bedømmelse, rating">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#grade-outline"></use></svg>
@@ -4645,7 +4627,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="contact-support" data-icon-keywords="support, kontakt, contact, kommunikation, communication, bubble, help, question">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#contact-support"></use></svg>
@@ -4654,7 +4636,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="cached" data-icon-keywords="synkroniser, refresh, genindlæs, update, opdater">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#cached"></use></svg>
@@ -4663,7 +4645,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="query-builder" data-icon-keywords="ur, tid, time, clock, klokke">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#query-builder"></use></svg>
@@ -4672,7 +4654,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="add-a-photo" data-icon-keywords="kamera, camera, picture, add, tilføj, billede, ny, create">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#add-a-photo"></use></svg>
@@ -4681,7 +4663,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="note-add" data-icon-keywords="add, document, dokument, tilføj, new, nyt, ny, opret, create">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#note-add"></use></svg>
@@ -4690,7 +4672,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="playlist-add" data-icon-keywords="add, list, tilføj, ny, opret">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#playlist-add"></use></svg>
@@ -4699,7 +4681,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="person-add-alt-1" data-icon-keywords="add, tilføj, ny, create, opret, bruger, user, person">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person-add-alt-1"></use></svg>
@@ -4708,7 +4690,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="done" data-icon-keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
@@ -4717,7 +4699,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="file-upload" data-icon-keywords="Upload, eksporter, export">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-upload"></use></svg>
@@ -4726,7 +4708,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="attach-file" data-icon-keywords="Vedhæft, attachment, bilag">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#attach-file"></use></svg>
@@ -4735,7 +4717,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="forward" data-icon-keywords="videresend">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#forward"></use></svg>
@@ -4744,7 +4726,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="view-headline" data-icon-keywords="Liste, justify">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#view-headline"></use></svg>
@@ -4753,7 +4735,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="vertical-split" data-icon-keywords="liste, kasse, billede, layout, vindue">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#vertical-split"></use></svg>
@@ -4762,7 +4744,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="palette" data-icon-keywords="tema, theme, palette, color, colours, painting, paint">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg>
@@ -4771,7 +4753,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="folder-open" data-icon-keywords="open, folder, åben, åbn, mappe">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#folder-open"></use></svg>
@@ -4780,15 +4762,14 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-        </div>
+      </div>
     </div>
-    </section>
-
-    <section class="icon-section" id="icon-section-illustrative">
-    <h2 class="h5 mb-4">Illustrative</h2>
+  </section>
+  <section class="icon-section" id="icon-section-illustrative">
+    <h3>Illustrative</h3>
     <div class="container">
-        <div class="icon-list row" id="icon-list-illustrative">
-            
+      <div class="icon-list row" id="icon-list-illustrative">
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="coronavirus" data-icon-keywords="virus, corona, coronavirus, covid, 19, covid19, covid-19, pandemi, epidemi">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#coronavirus"></use></svg>
@@ -4797,7 +4778,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="list-alt" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#list-alt"></use></svg>
@@ -4806,7 +4787,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="assignment" data-icon-keywords="assignment">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#assignment"></use></svg>
@@ -4815,7 +4796,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="payments" data-icon-keywords="money, payment">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#payments"></use></svg>
@@ -4824,7 +4805,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="database" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#database"></use></svg>
@@ -4833,7 +4814,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="assessment" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#assessment"></use></svg>
@@ -4842,7 +4823,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="map" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#map"></use></svg>
@@ -4851,7 +4832,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="link" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#link"></use></svg>
@@ -4860,7 +4841,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="person" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#person"></use></svg>
@@ -4869,7 +4850,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="shopping-cart" data-icon-keywords="shopping, buy, cart, payment, checkout">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#shopping-cart"></use></svg>
@@ -4878,7 +4859,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="videocam" data-icon-keywords="video, kamera">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#videocam"></use></svg>
@@ -4887,7 +4868,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="headphones" data-icon-keywords="headset, sound, lyd, høretelefoner">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#headphones"></use></svg>
@@ -4896,7 +4877,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="desktop-windows" data-icon-keywords="skærm, screen, computer">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#desktop-windows"></use></svg>
@@ -4905,7 +4886,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="laptop" data-icon-keywords="bærbar, computer">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#laptop"></use></svg>
@@ -4914,7 +4895,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="phone-iphone" data-icon-keywords="telefon, smartphone">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#phone-iphone"></use></svg>
@@ -4923,7 +4904,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="mouse" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mouse"></use></svg>
@@ -4932,7 +4913,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="accessibility-new" data-icon-keywords="man, mand">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#accessibility-new"></use></svg>
@@ -4941,7 +4922,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-list-bulleted" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-bulleted"></use></svg>
@@ -4950,7 +4931,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-list-checks" data-icon-keywords="punktopstilling, liste">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg>
@@ -4959,7 +4940,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="bookmark-border" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#bookmark-border"></use></svg>
@@ -4968,7 +4949,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="bookmarks" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#bookmarks"></use></svg>
@@ -4977,7 +4958,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="card-account-details" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-account-details"></use></svg>
@@ -4986,7 +4967,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="people-alt" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#people-alt"></use></svg>
@@ -4995,7 +4976,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="groups" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#groups"></use></svg>
@@ -5004,7 +4985,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="forum" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#forum"></use></svg>
@@ -5013,7 +4994,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="insert-drive-file" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#insert-drive-file"></use></svg>
@@ -5022,7 +5003,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="domain" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#domain"></use></svg>
@@ -5031,7 +5012,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="face" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#face"></use></svg>
@@ -5040,7 +5021,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="engineering" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#engineering"></use></svg>
@@ -5049,7 +5030,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="account-circle" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#account-circle"></use></svg>
@@ -5058,7 +5039,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="how-to-reg" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#how-to-reg"></use></svg>
@@ -5067,7 +5048,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="support-agent" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#support-agent"></use></svg>
@@ -5076,7 +5057,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="local-shipping" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#local-shipping"></use></svg>
@@ -5085,7 +5066,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="agriculture" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#agriculture"></use></svg>
@@ -5094,7 +5075,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="school" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#school"></use></svg>
@@ -5103,7 +5084,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="construction" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg>
@@ -5112,7 +5093,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="science" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#science"></use></svg>
@@ -5121,7 +5102,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="drive-eta" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#drive-eta"></use></svg>
@@ -5130,7 +5111,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="tune" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#tune"></use></svg>
@@ -5139,15 +5120,14 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-        </div>
+      </div>
     </div>
-    </section>
-
-    <section class="icon-section" id="icon-section-tekstredigering">
-    <h2 class="h5 mb-4">Tekstredigering</h2>
+  </section>
+  <section class="icon-section" id="icon-section-tekstredigering">
+    <h3>Tekstredigering</h3>
     <div class="container">
-        <div class="icon-list row" id="icon-list-tekstredigering">
-            
+      <div class="icon-list row" id="icon-list-tekstredigering">
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="text-format" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#text-format"></use></svg>
@@ -5156,7 +5136,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-size" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-size"></use></svg>
@@ -5165,7 +5145,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-bold" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-bold"></use></svg>
@@ -5174,7 +5154,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-italic" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-italic"></use></svg>
@@ -5183,7 +5163,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-underlined" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-underlined"></use></svg>
@@ -5192,7 +5172,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-color-text" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-color-text"></use></svg>
@@ -5201,7 +5181,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-color-fill" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-color-fill"></use></svg>
@@ -5210,7 +5190,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-clear" data-icon-keywords="ryd, clear, tekst, formatering, clean">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-clear"></use></svg>
@@ -5219,7 +5199,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-list-bulleted" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-bulleted"></use></svg>
@@ -5228,7 +5208,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-list-numbered" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-numbered"></use></svg>
@@ -5237,7 +5217,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-indent-increase" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-indent-increase"></use></svg>
@@ -5246,7 +5226,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-indent-decrease" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-indent-decrease"></use></svg>
@@ -5255,7 +5235,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-align-left" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-left"></use></svg>
@@ -5264,7 +5244,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-align-center" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-center"></use></svg>
@@ -5273,7 +5253,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-align-right" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-right"></use></svg>
@@ -5282,7 +5262,7 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-            
+        
 <div class="col-6 col-md-3 icon-container p-0">
     <div class="icon-box" data-icon-name="format-align-justify" data-icon-keywords="">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-align-justify"></use></svg>
@@ -5291,23 +5271,22 @@ Hvorvidt du skal anvende et ikon eller ej afhænger i høj grad af konteksten.</
   </div>
 
 
-        </div>
+      </div>
     </div>
-    </section>
-
-    <div class="alert alert-info d-none mt-4" id="no-results-message">
-        <div class="alert-body">
-            <strong class="alert-heading">Der er desværre intet ikon der matcher</strong>
-            <p class="alert-text">Prøv evt. at søge hos:</p>
-            <ul class="nobullet-list">
-                <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-                <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            </ul>
-        </div>
+  </section>
+  <div class="alert alert-info d-none mt-4" id="no-results-message">
+    <div class="alert-body">
+      <strong class="alert-heading">Der er desværre intet ikon der matcher</strong>
+      <p class="alert-text">Prøv evt. at søge hos:</p>
+      <ul class="nobullet-list">
+        <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+      </ul>
     </div>
+  </div>
 </div>
 
-<p><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Efterspørg eller giv feedback på et ikon på vores FDS GitHub side<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+<p class="mt-9"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Efterspørg eller giv feedback på et ikon på vores FDS GitHub side<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
 
 <script>
     let searchTerm, selectedIcon

@@ -6,9 +6,9 @@ layout: styleguide
 title: Footer
 category: Komponenter_category
 subcategory: Komponenter
-description: "Du kan bruge en footer til at guide brugere, som når til sidens bund videre."
+description: "Du kan bruge en footer til at guide brugere, som når til sidens bund, videre."
 tags: 
-lead: Du kan bruge en footer til at guide brugere, som når til sidens bund videre.
+lead: Du kan bruge en footer til at guide brugere, som når til sidens bund, videre.
 anchor: true
 subnav:
 - text: Tre kolonner
@@ -23,24 +23,42 @@ subnav:
 
 {% include code/preview-image.html component="footer-simple" code="/kode/komponenter/footer/" %}
 
-{:.h3}
-## Vejledning
+{:#retningslinjer}
+## Retningslinjer
 
-Tag et kig på <a href="/eksempler/selvbetjeningsloesninger/">eksempelløsningerne</a>, for at se hvordan komponenten passer ind i en komplet løsning.
+### Vejledning
 
 {% include dos-donts-box.html component="footer-dos-donts" title="Footers do's and don'ts" %}
 
-{:.h4}
-### Referencer
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
+
+<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>
+
+#### Referencer
 
 {:.nobullet-list}
 - <a href="https://www.nngroup.com/articles/footers/" class="icon-link">Therese Fessenden: Footers 101: Design Patterns and When to Use Each (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.interaction-design.org/literature/article/how-to-implement-sitemap-footers-to-keep-users-going" class="icon-link">Priscilla Esser: How to Implement Sitemap Footers to Keep Users Going (2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
+## Varianter
 
-<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>
+{:#tre-kolonner}
+### Tre kolonner
 
+{% include code/preview-image.html component="footer-three-columns" %}
 
-{% include child-components.html parent='Footers' %}
+{:#fire-kolonner}
+### Fire kolonner
+
+{% include code/preview-image.html component="footer-four-columns" %}
+
+{:#kompleks}
+### Kompleks
+
+{% include code/preview-image.html component="footer-complex" %}
+
+{:#logo}
+### Logo
+
+{% include code/preview-image.html component="footer-logo" %}

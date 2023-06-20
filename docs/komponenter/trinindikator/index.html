@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3580,7 +3568,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3676,7 +3664,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3932,7 +3920,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4262,15 +4250,17 @@
     
 </div>
 
-<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 id="retningslinjer">Retningslinjer</h2>
+
+<h3>Anvendes til</h3>
 
 <p>Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Trinindikator skal ikke anvendes som primær eller sekundær navigationselement.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Forsøg med ændret opsætning af dit indhold, type og antallet af spørgsmål før du vælger en trinindikator til din løsning.</p>
 
@@ -4295,13 +4285,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Trinindikator-udseende-do-borgerdk.svg" alt="Eksempel på, hvordan en trinindikator kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Brug evt. en trinindikator til formularer, der er delt op over flere sider, hvis den har faste trin (Jarrett &amp; Gaffney, 2009, s. 106) – især hvis formularen er lang (Silver, 2018, s. 115). Gør det synligt, hvilket trin ud af hvor mange brugeren er kommet til (Enders, 2016, s. 210).</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Trinindikator-udseende-dont.svg" alt="Eksempel på, hvordan en trinindikator ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Undgå horisontale trinindikatorer, der optager meget plads og er svære at få til at fungere på små skærme (Jarrett, 2016). En enkelt test fra Gov.uk indikerer, at trinindikatorer ikke bliver bemærket, så meget som man kunne forvente, men flere undersøgelser er nødvendige for at kunne sige noget endeligt om komponenten (Enders, 2016, s. 210).</p>
@@ -4311,7 +4301,14 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/komponenter/trinindikator/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a></li>
+  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/komponenter/trinindikator/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning'">Trinformular til ansøgning</a></li>
+</ul>
+
+<h4>Referencer</h4>
 
 <ul class="nobullet-list">
   <li>Caroline Jarrett &amp; Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)</li>
@@ -4320,14 +4317,9 @@
   <li><a href="https://www.effortmark.co.uk/design-patterns-government-2016/" class="icon-link">Caroline Jarrett: Design patterns in government (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+<h2>Varianter</h2>
 
-<ul class="nobullet-list">
-  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/komponenter/trinindikator/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a></li>
-  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/komponenter/trinindikator/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning'">Trinformular til ansøgning</a></li>
-</ul>
-
-<h2 id="klikbar">Alle trin synlige</h2>
+<h3 id="klikbar">Alle trin synlige</h3>
 
 <div class="component-preview  component-preview-tringuide-clickable">
     
@@ -4384,7 +4376,8 @@
     
 </div>
 
-<h2 id="responsiv">Responsiv</h2>
+<h3 id="responsiv">Responsiv</h3>
+
 <p>Denne komponent er responsiv, og vil derfor ændre udseende, når man ændrer skærmstørrelse.</p>
 
 <div class="component-preview  component-preview-tringuide-responsive-overflowmenu">
@@ -4451,7 +4444,7 @@
     
 </div>
 
-<h2 id="laast">Låst</h2>
+<h3 id="laast">Låst</h3>
 
 <div class="component-preview  component-preview-tringuide-locked">
     
@@ -4508,7 +4501,7 @@
     
 </div>
 
-<h2 id="ekstra-information">Ekstra information</h2>
+<h3 id="ekstra-information">Ekstra information</h3>
 
 <div class="component-preview  component-preview-tringuide-information">
     
@@ -4568,7 +4561,7 @@
     
 </div>
 
-<h2 id="med-fejl">Trinindikator med fejl</h2>
+<h3 id="med-fejl">Trinindikator med fejl</h3>
 
 <p>Ved brug af trinindikator kan der i nogle tilfælde være behov for at indikere overfor brugeren, at et eller flere trin mangler information og/eller har fejl, efter brugeren er gået videre til næste trin.</p>
 
@@ -4647,19 +4640,19 @@
     
 </div>
 
-<h3>Anvendes til</h3>
+<h4>Anvendes til</h4>
 
 <p>Trinindikator med fejl anvendes til at gøre brugeren opmærksom på eventuelle fejl i de trin i formularen, der i øjeblikket ikke er valgt og hvor der efter validering er registreret en fejl, men som ikke blokerer brugeren i at gå videre til næste trin.</p>
 
-<h3>Vejledning</h3>
+<h4>Vejledning</h4>
 
-<ul>
-  <li>Fejl vises, hvis der er fejl i det indtastede data eller obligatoriske felter ikke er udfyldt.</li>
-  <li>Fejl angives med et fejl-ikon ud for trinnet med fejl samt med en baggrundsfarve. Ikonet kan fjernes igen ved indtastning af korrekt data i det pågældende trin.</li>
-  <li>Vis kun fejl i trinindikatoren, når det er muligt for brugeren at fortsætte til næste trin på trods af fejl.</li>
-</ul>
+<p>Fejl vises, hvis der er fejl i det indtastede data eller obligatoriske felter ikke er udfyldt.</p>
 
-<h3>Opsummeringsside</h3>
+<p>Fejl angives med et fejl-ikon ud for trinnet med fejl samt med en baggrundsfarve. Ikonet kan fjernes igen ved indtastning af korrekt data i det pågældende trin.</p>
+
+<p>Vis kun fejl i trinindikatoren, når det er muligt for brugeren at fortsætte til næste trin på trods af fejl.</p>
+
+<h4>Opsummeringsside</h4>
 
 <p>Eventuelle fejl vises på opsummeringssiden i form af <a href="/komponenter/fejlopsummering/">fejlopsummering</a> med henvisning til de specifikke trin som link i fejlopsummeringen.</p>
 

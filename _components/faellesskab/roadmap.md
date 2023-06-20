@@ -7,7 +7,6 @@ subcategory: Fællesskab
 description: ""
 ---
 
-
 Det Fælles Designsystem er bygget på forskning og erfaring fra FDS-teamet, andre designsystemer (<a href="https://designsystem.digital.gov/" class="icon-link">US Web Design System<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://design-system.service.gov.uk/" class="icon-link">Gov.UK Design System<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>) samt input fra anvendere af FDS.
 
 Mangler der noget på listen? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" >Opret et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
@@ -21,7 +20,6 @@ Sagerne kan være:
 - <span class="badge badge-small badge-success">Gennemført</span>
 - <span class="badge badge-small badge-error">Annulleret</span>
 
-{:.h3 .mb-md-0}
 ## Nye komponenter
 
 {% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/inputfelter/#prefix-og-suffix" %}
@@ -43,15 +41,14 @@ Sagerne kan være:
 {% include roadmap.html title="Trinindikator med angivelse af fejl" status="Gennemført" link="/komponenter/trinindikator/#med-fejl" %}
 {% include roadmap.html title="Valgbar rækker i tabeller" status="Gennemført" link="/komponenter/tables/#valgbare-rækker" %}
 
-{:.h3 .mb-md-0}
 ## Eksempelløsninger
+
 {% include roadmap.html title="404 - Siden blev ikke fundet" status="I gang" %}
 {% include roadmap.html title="Generiske eksempelløsninger" status="Gennemført" link="/eksempler/selvbetjeningsloesninger/" %}
 {% include roadmap.html title="Komplekse eksempelløsninger" status="Foreslået" %}
 
-
-{:.h3 .mb-md-0}
 ## Patterns
+
 {% include roadmap.html title="Adresse" status="Foreslået" %}
 {% include roadmap.html title="Angivelse af e-mail" status="Foreslået" %}
 {% include roadmap.html title="Avanceret søgefunktion" status="Foreslået" %}
@@ -63,7 +60,6 @@ Sagerne kan være:
 {% include roadmap.html title="Tekstfelt med hentet data" status="Foreslået" %}
 {% include roadmap.html title="Tidsangivelse" status="Foreslået" %}
 
-
-{:.h3 .mb-md-0}
 ## Andet
+
 {% include roadmap.html title="Vejledning til datavisualisering og infografik" status="Gennemført" link="/design/datavisualisering-infografik/" %}

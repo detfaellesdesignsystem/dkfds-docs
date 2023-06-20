@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3570,15 +3558,6 @@
 
 
 <li class=" ">
-<a href="#card-med-halv-bredde" >Card med halv bredde</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
 <a href="#card-med-tredjedel-bredde" >Card med tredjedel bredde</a>
 </li>
 
@@ -3588,7 +3567,16 @@
 
 
 <li class=" ">
-<a href="#samme-højde" >Samme højde</a>
+<a href="#card-med-halv-bredde" >Card med halv bredde</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
+<a href="#samme-hoejde" >Samme højde</a>
 </li>
 
     
@@ -3619,7 +3607,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3715,7 +3703,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3971,7 +3959,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4160,9 +4148,9 @@
           
           
           <ul class="d-lg-none nobullet-list">
-          <li><a href="#card-med-halv-bredde">Card med halv bredde</a></li>
           <li><a href="#card-med-tredjedel-bredde">Card med tredjedel bredde</a></li>
-          <li><a href="#samme-højde">Samme højde</a></li>
+          <li><a href="#card-med-halv-bredde">Card med halv bredde</a></li>
+          <li><a href="#samme-hoejde">Samme højde</a></li>
           
           </ul>
           
@@ -4170,6 +4158,7 @@
           
 
           
+
           
 <div class="component-preview  component-preview-cards-full-width">
     
@@ -4196,14 +4185,14 @@
 
     <div class="card-content">
         <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
-        <div class='row background-data-green-blue-300 p-6'>
-            <div class='col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0'>
+        <div class="row background-data-green-blue-300 p-6">
+            <div class="col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0">
                 <h2>Aliquam aliquet niboh faucibus varius</h2>
                 <p>Aenean euismod vestibulum lacinia. Pellentesque nec nisi diam. Pellentesque
                     nec urna vel ante ultrices facilisis sed in dolor. Curabitur eu leo
                     semper, gravida justo at, euismod ex.</p>
             </div>
-            <div class='col-12 col-md-6 col-lg-7 align-text-right'><img src='/assets/img/cards/Card-illustration-graf.svg' alt='Billedeksempel med graf, der viser udviklingen fra 2015 til 2019' class='w-percent-100 mt-md-4' />
+            <div class="col-12 col-md-6 col-lg-7 align-text-right"><img src="/assets/img/cards/Card-illustration-graf.svg" alt="Billedeksempel med graf, der viser udviklingen fra 2015 til 2019" class="w-percent-100 mt-md-4" />
             </div>
         </div>
     </div>
@@ -4211,8 +4200,7 @@
     <div class="card-footer card-action">
 
         <div class="action-buttons">
-            <button class="button button-secondary">Sekundærknap</button><button
-                class="button button-tertiary">Tertiærknap</button>
+            <button class="button button-secondary">Sekundærknap</button><button class="button button-tertiary">Tertiærknap</button>
         </div>
         <div class="action-links">
             <ul class="nobullet-list">
@@ -4235,14 +4223,13 @@
     
 </div>
 
+<h2 id="retningslinjer">Retningslinjer</h2>
 
-          
-
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h3>Anvendes til</h3>
 
 <p>Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Det kan fx være en afledt, men ikke direkte koblet ekstra funktion ift. sidens sammenhæng.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Brug ikke cards til det primære indhold på en løsning, men derimod til indhold, der kan stå og forstås alene og fortsat være del af den samlede løsning.</p>
 
@@ -4250,7 +4237,7 @@
 
 <p>Cards er ikke en statusbesked.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Cards skal tilbyde en enkel og fokuseret funktion.</p>
 
@@ -4271,13 +4258,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Cards-funktion-do.svg" alt="Eksempel på, hvordan cards kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Brug <em>cards</em> (kort) til at gruppere elementer, der adskiller sig fra sidens øvrige indhold. Et <em>card</em> er en gruppering og indramning af nogle få, korte og relaterede oplysninger. Det har ofte form og størrelse som et spillekort (Laubheimer, 2016).</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Cards-funktion-dont.svg" alt="Eksempel på, hvordan cards ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Brug ikke <em>cards</em> til at gruppere forskellige dele af en formular. <em>Cards</em> hjælper med at fokusere brugernes opmærksomhed på én gruppe af informationer (såkaldte subregioner), men betyder også, at det er lettere at ignorere eller overse sidens øvrige indhold (Kitajima et al., 2000).</p>
@@ -4287,25 +4274,24 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
-
-<ul class="nobullet-list">
-  <li><a href="https://www.nngroup.com/articles/cards-component/" class="icon-link">Page Laubheimer: Cards: UI-Component Definition (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" class="icon-link">Muneo Kitajima, Marilyn H Blackmon &amp; Peter G Polson: A Comprehension-based Model of Web Navigation and Its Application to Web Usability Analysis (2000)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
 
 <ul class="nobullet-list">
   <li><a href="/pages/eksempler/sagsoversigt/find-sag/?r=/komponenter/cards/%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a></li>
   <li><a href="/pages/eksempler/dashboard/dashboard-1/?r=/komponenter/cards/%23eksempelloesninger" title="Vis eksempel 'Dashboard'">Dashboard</a></li>
 </ul>
 
-<section class="styleguide-child-container content" id="section-/komponenter/cards/card-third-width">
-  <h2 id="card-med-tredjedel-bredde">Card med tredjedel bredde</h2>
-  
-  
-  
+<h4>Referencer</h4>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.nngroup.com/articles/cards-component/" class="icon-link">Page Laubheimer: Cards: UI-Component Definition (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" class="icon-link">Muneo Kitajima, Marilyn H Blackmon &amp; Peter G Polson: A Comprehension-based Model of Web Navigation and Its Application to Web Usability Analysis (2000)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+<h2>Varianter</h2>
+
+<h3 id="card-med-tredjedel-bredde">Card med tredjedel bredde</h3>
+
 <div class="component-preview  component-preview-cards-third-width">
     
     <div class="component-link px-4 py-4">
@@ -4402,17 +4388,8 @@
     
 </div>
 
+<h3 id="card-med-halv-bredde">Card med halv bredde</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/cards/card-half-width">
-  <h2 id="card-med-halv-bredde">Card med halv bredde</h2>
-  
-  
-  
 <div class="component-preview  component-preview-cards-half-width">
     
     <div class="component-link px-4 py-4">
@@ -4505,17 +4482,8 @@
     
 </div>
 
+<h3 id="samme-hoejde">Samme højde</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/cards/card-same-height">
-  <h2 id="samme-højde">Samme højde</h2>
-  
-  
-  
 <div class="component-preview  component-preview-cards-same-height">
     
     <div class="component-link px-4 py-4">
@@ -4647,12 +4615,6 @@
     </div>
     
 </div>
-
-
-  
-  
-
-</section>
 
 
 

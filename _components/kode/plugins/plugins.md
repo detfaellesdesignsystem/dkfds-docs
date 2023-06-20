@@ -16,10 +16,6 @@ lead: 'Plugins er komponenter som er lavet af en tredjepart. De er for store og 
 Brug plugins på eget ansvar. Det vil sige at du selv står på mål for tilgængelighed og 
 eventuelle afhængigheder, der følger med pluginnet. 
 
-Bruger du et plugin skal de styles, så de visuelt passer ind i designsystemet. Der er 
-stylingeksempler under Komponenter: 
+Bruger du et plugin skal de styles, så de visuelt passer ind i designsystemet.
 
-- <a href="/komponenter/dropdown/#multiselect-og-søgning">Drop down med multiselect og søgefunktion</a>
-- <a href="/komponenter/tables/#avancerede-tabeller">Avancerede tabeller</a>
-
-Support til det plugin du eventuelt har har valgt at bruge, får du hos udbyderen af pluginnet. 
+Support til det plugin, du eventuelt har har valgt at bruge, får du hos udbyderen af pluginnet. 

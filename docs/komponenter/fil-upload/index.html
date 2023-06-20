@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3580,7 +3568,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3676,7 +3664,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3932,7 +3920,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4134,6 +4122,7 @@
           
 
           
+
           
 <div class="component-preview  component-preview-file-input">
     
@@ -4150,7 +4139,7 @@
         
         <div class="form-group file-input">
     <label class="form-label" for="form-fileinput">Vedhæft fil</label>
-    <input type="file" id="form-fileinput" name="file">
+    <input type="file" id="form-fileinput" name="file" />
 </div>
         
     </div>
@@ -4161,16 +4150,15 @@
     
 </div>
 
+<h2 id="retningslinjer">Retningslinjer</h2>
 
-          
+<h3>Anvendes til</h3>
 
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
-
-<p>Brug det til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.</p>
+<p>Brug komponenten til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.</p>
 
 <p>Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Sørg for at brugeren får en positiv respons, når filen er overført.</p>
 
@@ -4178,7 +4166,8 @@
 
 <p>Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.</p>
 
-<h2>Fejlmeddelelse</h2>
+<h4>Fejlmeddelelse</h4>
+
 <p><a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
 
 <p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.</p>
@@ -4206,7 +4195,7 @@
     
 </div>
 
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
 
 <ul class="nobullet-list">
   <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-3/?r=/komponenter/fil-upload/%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vedhæft dokumenter'">Trinformular til registrering: Vedhæft dokumenter</a></li>

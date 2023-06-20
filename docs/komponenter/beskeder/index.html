@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3556,7 +3544,7 @@
 
 
 <li class=" ">
-<a href="#besked-med-luk-knap" >Luk knap</a>
+<a href="#besked-med-luk-knap" >Besked med luk knap</a>
 </li>
 
     
@@ -3619,7 +3607,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3715,7 +3703,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3971,7 +3959,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4162,7 +4150,7 @@
           <ul class="d-lg-none nobullet-list">
           <li><a href="#beskeder-med-ikon">Beskeder med ikon</a></li>
           <li><a href="#teksteksempler">Teksteksempler</a></li>
-          <li><a href="#besked-med-luk-knap">Luk knap</a></li>
+          <li><a href="#besked-med-luk-knap">Besked med luk knap</a></li>
           
           </ul>
           
@@ -4170,6 +4158,7 @@
           
 
           
+
           
 <div class="component-preview  component-preview-alerts">
     
@@ -4224,16 +4213,15 @@
     
 </div>
 
+<h2 id="retningslinjer">Retningslinjer</h2>
 
-          
-
-          <h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h3>Anvendes til</h3>
 
 <p>Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, generelle fejl, til <a href="/komponenter/fejlopsummering/">fejlopsummeringer</a>, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.</p>
 
 <p>Anvend succes- og advarselsbeskeder til at bekræfte en handling eller give besked om behov for handling.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>.</p>
 
@@ -4241,7 +4229,7 @@
 
 <p>Brug ikke beskeder som farvelade for at “peppe” løsningen op, når informationen er neutral og statisk. Anvend da i stedet almindelig brødtekst.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Brug kun beskeder, når det er nødvendigt og hjælper brugeren med at forstå hvad denne skal, hvad der sker eller hvorfor.</p>
 
@@ -4251,16 +4239,20 @@
 
 <p>Brug beskeder til at øge brugerens forståelse for løsningen.</p>
 
-<h3 class="h4">Informativ besked</h3>
+<h4>Informativ besked</h4>
+
 <p>Anvend informative beskeder til at gøre brugeren opmærksom på, at der er sket noget i brugergrænsefladen, som kan have betydning for deres handlinger. Det kan fx være hvis visse felter er blevet automatisk udfyldt med data andetstedsfra, som brugeren bør kontrollere.</p>
 
-<h3 class="h4">Succesmeddelelse</h3>
+<h4>Succesmeddelelse</h4>
+
 <p>Anvend succesmeddelelser til at gøre brugeren opmærksom på, at en bestemt handling er gået korrekt igennem. Det kan fx være når en formular er blevet sendt af sted, eller hvis brugerens ændringer i en løsning er blevet gemt.</p>
 
-<h3 class="h4">Advarsel</h3>
+<h4>Advarsel</h4>
+
 <p>Brug advarsler til information, som ikke er udtryk for fejl, men som med høj sandsynlighed kan lede til fejl eller problemer, hvis ikke brugeren er opmærksom på det. Det kan fx være for at gøre opmærksom på planlagt nedetid for en løsning, eller hvis behandlingstiden pga. aktuelle omstændigheder er forlænget i en sådan grad, at det kan have særlige konsekvenser for brugeren.</p>
 
-<h3 class="h4">Fejlbesked</h3>
+<h4>Fejlbesked</h4>
+
 <p>Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering af fejl i brugerens egne indtastninger, eller hvis en handling ikke kunne gennemføres grundet tekniske fejl.</p>
 
 <div class=" component-preview-alerts-dos-donts">
@@ -4270,13 +4262,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Beskeder-funktion-do.svg" alt="Beskeder bør placeres i øverst i formularen - dvs. over alle felter." /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Brug beskeder til at gøre brugerne opmærksomme på vigtige oplysninger, der kan hjælpe dem med at udføre og fuldføre deres opgave, fx status, opdateringer, nedetid eller fejl. Gør informationen konstruktiv og handlingsanvisende (Lior, 2013, s. 153).</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Beskeder-funktion-dont.svg" alt="Beskeder bør ikke placeres midt i formularen, og slet ikke flere beskeder på én gang." /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Brug ikke besked-komponenten som erstatning for fejlmeddelelser eller hjælpetekster, der kun er relevante for et bestemt felt i formularen.</p>
@@ -4286,10 +4278,30 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
-<p>Linda Newman Lior: Writing for Interaction (2013)</p>
+<div class=" component-preview-alerts-success-dos-donts">
+    
+    <div class="sr-only">Successbeskeder do's and don'ts</div>
+    
+    <div class="component-example">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h4>Sådan (do)</h4>
+        <div><img src="/assets/img/do-dont/Beskeder-indhold-do.svg" alt="Eksempel på, hvordan en successbesked kan se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Giv brugerne besked, når noget er lykkedes (Wroblewski, 2008, s. 133). Succesmeddelelser er bekræftelser på, at systemet har modtaget en brugers input. De kan vises, når et felt er udfyldt korrekt, når et trin i en proces er gennemført eller som afslutning på formularen. Giv brugerne mulighed for at bekræfte eller ændre det indtastede, når det er relevant (Lior, 2013, s. 151).</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h4>Ikke sådan (don't)</h4>
+        <div><img src="/assets/img/do-dont/Beskeder-indhold-dont.svg" alt="Eksempel på, hvordan en successbesked ikke bør se ud" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Undgå succesmeddelelser, der er så korte, at de efterlader brugerne usikre på, hvad der er sket, hvad der er indsendt, og hvad der sker næst. Undgå blindgyder ved at foreslå passende næste handlinger på kvitteringssider (Wroblewski 2008, s. 95 og 136). Undgå at vise succesmeddelelser i modale vinduer (Silver, 2018, s. 256-257).</p>
+    </div>
+</div>
 
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+    </div>
+</div>
+
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
 
 <ul class="nobullet-list">
   <li><a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/komponenter/beskeder/%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a></li>
@@ -4298,11 +4310,18 @@
   <li><a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r=/komponenter/beskeder/%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a></li>
 </ul>
 
-<section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-icons">
-  <h2 id="beskeder-med-ikon">Beskeder med ikon</h2>
-  
-  
-  
+<h4>Referencer</h4>
+
+<ul class="nobullet-list">
+  <li>Linda Newman Lior: Writing for Interaction (2013)</li>
+  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
+  <li>Adam Silver: Form Design Patterns (2018)</li>
+</ul>
+
+<h2>Varianter</h2>
+
+<h3 id="beskeder-med-ikon">Beskeder med ikon</h3>
+
 <div class="component-preview  component-preview-alerts-icons">
     
     <div class="component-link px-4 py-4">
@@ -4318,7 +4337,7 @@
         
         <div class="alert alert-info alert--show-icon">
     <div class="alert-body">
-        <h3 class="alert-heading">Informativ besked - med ikon</h3>
+        <h4 class="alert-heading">Informativ besked - med ikon</h4>
         <p class="alert-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.</p>
     </div>
@@ -4326,7 +4345,7 @@
 
 <div class="alert alert-success alert--show-icon">
     <div class="alert-body">
-        <h3 class="alert-heading">Succesmeddelelse - med ikon</h3>
+        <h4 class="alert-heading">Succesmeddelelse - med ikon</h4>
         <p class="alert-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.</p>
     </div>
@@ -4334,7 +4353,7 @@
 
 <div class="alert alert-warning alert--show-icon" role="alert">
     <div class="alert-body">
-        <h3 class="alert-heading">Advarsel - med ikon</h3>
+        <h4 class="alert-heading">Advarsel - med ikon</h4>
         <p class="alert-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.</p>
     </div>
@@ -4342,7 +4361,7 @@
 
 <div class="alert alert-error alert--show-icon" role="alert">
     <div class="alert-body">
-        <h3 class="alert-heading">Fejlbesked - med ikon</h3>
+        <h4 class="alert-heading">Fejlbesked - med ikon</h4>
         <p class="alert-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.</p>
     </div>
@@ -4352,17 +4371,8 @@
     
 </div>
 
+<h3 id="teksteksempler">Teksteksempler</h3>
 
-  
-  
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-texts">
-  <h2 id="teksteksempler">Teksteksempler</h2>
-  
-  
-  
 <div class="component-preview  component-preview-alerts-texts">
     
     <div class="component-link px-4 py-4">
@@ -4392,7 +4402,7 @@
 
 <div class="alert alert-info alert--paragraph">
     <div class="alert-body">
-        <h3 class="alert-heading">Informativ besked - tekstafsnit</h3>
+        <h4 class="alert-heading">Informativ besked - tekstafsnit</h4>
         <p class="alert-text">Dette eksempel viser, hvordan en besked ser ud, når dens bredde
             er blevet begrænset. Bredden svarer til længden på en paragraf og denne type
             beskeder er derfor mere velegnet, hvis du vil vise beskeden midt i en tekst.</p>
@@ -4403,47 +4413,8 @@
     
 </div>
 
+<h3 id="besked-med-luk-knap">Besked med luk knap</h3>
 
-  
-  
-<div class=" component-preview-alerts-success-dos-donts">
-    
-    <div class="sr-only">Successbeskeder do's and don'ts</div>
-    
-    <div class="component-example">
-        <div class="row do-dont-container">
-    <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
-        <div><img src="/assets/img/do-dont/Beskeder-indhold-do.svg" alt="Eksempel på, hvordan en successbesked kan se ud" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
-        <p><strong>Sådan:</strong> Giv brugerne besked, når noget er lykkedes (Wroblewski, 2008, s. 133). Succesmeddelelser er bekræftelser på, at systemet har modtaget en brugers input. De kan vises, når et felt er udfyldt korrekt, når et trin i en proces er gennemført eller som afslutning på formularen. Giv brugerne mulighed for at bekræfte eller ændre det indtastede, når det er relevant (Lior, 2013, s. 151).</p>
-    </div>
-    <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
-        <div><img src="/assets/img/do-dont/Beskeder-indhold-dont.svg" alt="Eksempel på, hvordan en successbesked ikke bør se ud" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
-        <p><strong>Ikke sådan:</strong> Undgå succesmeddelelser, der er så korte, at de efterlader brugerne usikre på, hvad der er sket, hvad der er indsendt, og hvad der sker næst. Undgå blindgyder ved at foreslå passende næste handlinger på kvitteringssider (Wroblewski 2008, s. 95 og 136). Undgå at vise succesmeddelelser i modale vinduer (Silver, 2018, s. 256-257).</p>
-    </div>
-</div>
-
-    </div>
-</div>
-
-<h3 class="h4">Referencer</h3>
-
-<ul class="nobullet-list">
-  <li>Linda Newman Lior: Writing for Interaction (2013)</li>
-  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
-  <li>Adam Silver: Form Design Patterns (2018)</li>
-</ul>
-
-</section>
-
-<section class="styleguide-child-container content" id="section-/komponenter/beskeder/beskeder-close">
-  <h2 id="besked-med-luk-knap">Besked med luk knap</h2>
-  
-  
-  
 <div class="component-preview  component-preview-alert-close">
     
     <div class="component-link px-4 py-4">
@@ -4459,7 +4430,7 @@
         
         <div class="alert alert-info has-close">
     <div class="alert-body">
-        <h3 class="alert-heading pr-7">Besked med luk</h3>
+        <h4 class="alert-heading pr-7">Besked med luk</h4>
         <p class="alert-text">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
         <button type="button" class="alert-close">
             <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk
@@ -4470,12 +4441,6 @@
     </div>
     
 </div>
-
-
-  
-  
-
-</section>
 
 
 

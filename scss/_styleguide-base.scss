@@ -581,6 +581,7 @@ pre {
 }
 
 *:not(.details-text) > figure.highlight > pre {
+  background-color: color('gray-100');
   padding: 1.6rem;
   white-space: pre-wrap;
   margin: 0;
@@ -830,15 +831,38 @@ code {
   .button {
     background-color: black;
     border-color: white !important;
-    display: inline;
-    &:hover, &:visited {
+    width: auto;
+
+    &:hover,
+    &:visited {
       color: white;
     }
+
+    .icon-svg {
+      margin-right: units(2);
+    }
+
+    & + .function-link {
+      margin-top: 0;
+    }
+
   }
 
-  .form-select{
+  .form-select {
     background-color: black;
     color: #fff;
+  }
+
+  .function-link {
+    color: color('white');
+
+    .icon-svg {
+      fill: #fff;
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
   }
 }
 
@@ -886,6 +910,7 @@ div.component-preview {
 .component-preview-code{
   figure.highlight{
     border: 0;
+    background-color: color('gray-100');
   }
 }
 
@@ -894,6 +919,19 @@ div.component-preview {
   top: units(2);
   right: 0;
   display: none;
+}
+
+.button-copy-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: color('gray-100');
+  padding-top: units(4);
+  padding-left: units(4);
+  padding-right: units(4);
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: -(units(3));
+  }
 }
 
 .preview-iframe {
@@ -1044,7 +1082,7 @@ body[class*="page-grid"][class*="-html"]
 }
 
 .button-border-example {
-  border-top: $button-border-width solid $button-primary-default-border-color;
+  border-top: $button-border-width solid color($button-primary-default-border-color);
 }
 
 .form-error-border-example{

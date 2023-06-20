@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="current active ">
+<li class="current active has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3580,7 +3568,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3676,7 +3664,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3932,7 +3920,7 @@
 
     
 
-<li class="current active ">
+<li class="current active has-anchor-links">
 
 
   
@@ -3949,6 +3937,17 @@
 
     
 
+    <ul class="sidenav-sub_list">
+    
+
+
+<li class=" ">
+<a href="#karakterbegraensning" >Karakterbegrænsning</a>
+</li>
+
+    
+
+</ul>
     
   
 
@@ -4130,6 +4129,11 @@
 
           
           
+          <ul class="d-lg-none nobullet-list">
+          <li><a href="#karakterbegraensning">Karakterbegrænsning</a></li>
+          
+          </ul>
+          
 
           
 
@@ -4164,7 +4168,9 @@
     
 </div>
 
-<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 id="retningslinjer">Retningslinjer</h2>
+
+<h3>Anvendes til</h3>
 
 <p>Brug tekstområder til sammenhængende (mere end 2 linjer) men ustruktureret tekst og sætninger, der har karakter af prosa. Fx en baggrundsfortælling.</p>
 
@@ -4172,11 +4178,11 @@
 
 <p>Anvendes når løsningen stiller et spørgsmål, der ikke kan besvares i et felt.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Brug ikke tekstområder til struktureret information, hvor datakonsistens har betydning.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Angiv tekstområdets højde, så det modsvarer den tekstmængde, du forventer, at brugeren skal indtaste.</p>
 
@@ -4195,13 +4201,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Tekstomraade-stoerrelse-do-borgerdk.svg" alt="Eksempel på, hvordan et tekstområde kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Tilpas højde og bredde af tekstområdet, så brugerne komfortabelt kan indtaste kommentarer eller redegøre for handlingsforløb. Teksten skal ombryde, så enkeltord ikke bliver delt (ISO, 2012, afsnit 9.1.3). Lad områdets størrelse indikere mængden af indhold, der forventeligt skal skrives i tekstområdet.</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Tekstomraade-stoerrelse-dont-borgerdk.svg" alt="Eksempel på, hvordan et tekstområde ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Gør ikke tekstområder så små, at brugerne bliver nødt til at scrolle for at kontrollere almindelige mængder tekst. Undgå helt horisontal scroll.</p>
@@ -4211,17 +4217,8 @@
     </div>
 </div>
 
-<h3 class="h4">Referencer</h3>
+<h4>Fejlmeddelelse</h4>
 
-<p>ISO 9241-143: Forms (2012)</p>
-
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
-
-<ul class="nobullet-list">
-  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/komponenter/tekstomraade/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a></li>
-</ul>
-
-<h2>Fejlmeddelelse</h2>
 <p><a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
 
 <p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.</p>
@@ -4253,7 +4250,20 @@
     
 </div>
 
-<h2>Karakterbegrænsning</h2>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/komponenter/tekstomraade/%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a></li>
+</ul>
+
+<h4>Referencer</h4>
+
+<p>ISO 9241-143: Forms (2012)</p>
+
+<h2>Varianter</h2>
+
+<h3 id="karakterbegraensning">Karakterbegrænsning</h3>
+
 <p>Karakterbegrænsning sætter et maksimalt antal af tegn, som brugeren kan indtaste i et tekstområde. Karakterbegrænsning indikerer løbende overfor brugeren, hvor mange tegn der er tilbage, og hvor mange tegn de evt. har overskredet med.</p>
 
 <p>Vis altid antallet af tegn, der er til rådighed i tekstområdet, inden brugeren begynder at skrive.</p>

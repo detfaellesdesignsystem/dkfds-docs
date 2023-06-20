@@ -17,7 +17,7 @@ parentlink: "/krav/"
 
 <a href="/krav/">Se hvilke krav og anbefalinger, der gælder din løsning</a>
 
-<h2 class="h4">Eksterne krav</h2>
+<h2>Eksterne krav</h2>
 
 Her finder du blandt andet eksempler på relevant lovgivning og sikkerhedsstandarder, som du skal forholde dig til. Det er ikke en udtømmende oversigt, men alene en hjælp til at orientere dig i forhold til reguleringen af myndighedernes digitale kommunikation med borgere og virksomheder. De eksterne krav er ikke aftalt mellem de fællesoffentlige parter, men skal følges i det omfang, at lovgivning, aftaler eller lignende forpligter dig til det.
 
@@ -31,7 +31,7 @@ Her finder du blandt andet eksempler på relevant lovgivning og sikkerhedsstanda
 
 Efterleves og gælder i overensstemmelse med lovgivning, aftaler mv.
 
-<h2 class="h4">Fælles aftalte krav</h2>
+<h2>Fælles aftalte krav</h2>
 
 Indeholder krav og anbefalinger til brugergrænsefladen i selvbetjeningsløsninger, fællesoffentlige infrastrukturkomponenter og nationale portaler. Her finder du eksempelvis kravet om gennemførelse af den fællesoffentlige slutbrugertest, feltvalidering og tidlig brugerinddragelse i udviklingsforløb. Både krav og anbefalinger er udarbejdet i samarbejde mellem de fællesoffentlige parter for at sikre kvaliteten i den digitale kommunikation mellem myndigheder og borger samt myndigheder og virksomheder.
 
@@ -54,7 +54,7 @@ Krav og anbefalinger er differentierede i forhold til en række parametre. Det b
 
 Løsningens størrelse, type mv. afgør, om der er tale om et krav eller en anbefaling.<br/>Kravet gælder ved ny- og væsentlig videreudvikling af løsningerne.
 
-<h2 class="h4">Krav til digitale løsninger, der skal på Virk og borger.dk</h2>
+<h2>Krav til digitale løsninger, der skal på Virk og borger.dk</h2>
 
 Hvis din løsning skal på Virk, borger.dk eller begge portaler, skal løsningen overholde enkle krav, som eksempelvis indebærer, at din løsning skal styles med ’Det fælles designsystem’ og i øvrigt leve op til portalernes integrationskrav. I lighed med de fælles aftalte krav kan visse løsninger i kraft af deres størrelse, målgruppe eller andre forhold være undtaget fra kravet.
 

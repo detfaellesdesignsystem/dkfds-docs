@@ -6,6 +6,7 @@ import * as DKFDS from "dkfds";
 
 require('./sidenav'); // Node.js: Load sidenav.js
 require('./scroll-top');
+require('./copy-code-button');
 document.addEventListener("DOMContentLoaded", function() {
     
     // If this is a page with a back-to-top button example, ensure that only the 'real' back-to-top button's JavaScript works
@@ -21,13 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // If this is not a back-to-top example page, init all JavaScript
     else {
         DKFDS.init();
-    }
-
-    let icons = document.getElementsByClassName('icon-box');
-    if(icons.length !== 0){
-        for(let i = 0; i < icons.length; i++){
-            new DKFDS.Tooltip(icons[i].getElementsByTagName('p')[0]);
-        }
     }
 
     let searchForm = document.getElementById('search-form');

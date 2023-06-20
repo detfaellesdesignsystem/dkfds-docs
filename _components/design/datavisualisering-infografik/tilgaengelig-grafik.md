@@ -22,15 +22,12 @@ lead: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal. De
   farveblinde brugere.
 
 ---
-{:.h4}
 
 ## Forenkl kompleksiteten
 
 Reducer mængden af unødvendige oplysninger, så de vigtige ting er klare.
 
 Målet er at nå ud til alle målgrupper ved at kommunikere med det klareste sprog og de enkleste teknikker. Fjern det unødvendige visuelle rod for at skabe en klar og enkel oplevelse. Og husk, nogle mennesker ser tingene fysisk anderledes eller slet ikke.
-
-{:.h4}
 
 ## Brug farve med omhu
 
@@ -45,25 +42,23 @@ Datavisualiseringer og infografik bør kunne aflæses i sort/hvid for sikre at b
 </figure>
 
 <section class="do-dont-container row" aria-label="Eksempel på korrekt søjlediagram">
-<div class="col-12 col-md-6">
-<h3 class="h4">Sådan (do)</h3>
-<div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-do.svg" alt="Eksempel på korrekt visning af søjlediagram med farver og mønstre" /></div>
-<div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
-<p><strong>Sådan:</strong> Betydning bør ikke kommunikeres af farve alene. Brug også mønstre, teksturer, figurer, linjetyper og andet for fx at adskille de forskellige udsnit (søjler, linjer, dele, mv.).</p>
-</div>
-<div class="col-12 col-md-6">
-<h3 class="h4">Ikke sådan (don't)</h3>
-<div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-dont.svg" alt="Eksempel på ukorrekt visning af søjlediagram med manglende farver og mønstre" /></div>
-<div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
-<p><strong>Ikke sådan:</strong>Undgå farvekombinationerne grøn-rød, grøn-blå, grøn-brun, grøn-sort, grøn-grå, blå-grå, lys grøn-gul, blå-lilla.</p>
-</div>
+  <div class="col-12 col-md-6">
+    <h3>Sådan (do)</h3>
+    <div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-do.svg" alt="Eksempel på korrekt visning af søjlediagram med farver og mønstre" /></div>
+    <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+    <p><strong>Sådan:</strong> Betydning bør ikke kommunikeres af farve alene. Brug også mønstre, teksturer, figurer, linjetyper og andet for fx at adskille de forskellige udsnit (søjler, linjer, dele, mv.).</p>
+    </div>
+    <div class="col-12 col-md-6">
+    <h3>Ikke sådan (don't)</h3>
+    <div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-dont.svg" alt="Eksempel på ukorrekt visning af søjlediagram med manglende farver og mønstre" /></div>
+    <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+    <p><strong>Ikke sådan:</strong> Undgå farvekombinationerne grøn-rød, grøn-blå, grøn-brun, grøn-sort, grøn-grå, blå-grå, lys grøn-gul og blå-lilla.</p>
+  </div>
 </section>
 
 Vær opmærksomhed på at farver der grænser op til hinanden skal overholde WCAG 2.1 ift farvekontrast.
 
 Tjek gerne datavisualiseringer og infografikker med et simulationsværktøj (fx <a href="https://chrome.google.com/webstore/detail/a11y-color-blindness-empa/idphhflanmeibmjgaciaadkmjebljhcc?hl=en" class="icon-link">A11Y Color Blind Empathy<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>) for at se, hvordan de forskellige farver syner overfor hinanden med et synshandikap som farveblindhed.
-
-{:.h4}
 
 ## Sørg for alternativer til grafikken
 
@@ -73,16 +68,12 @@ Giv gerne de enkelte udsnit (søjler, linjer, dele mv.) en etikette (beskrivende
 
 Sørg for at etiketterne (de beskrivende tekster) til de forskellige elementer/segmenter er nemme af forstå og adskiller sig fra hinanden.
 
-{:.h5}
-
-### Mest cykling på ture under 5km (2014-17)
-
 <figure class="mb-6">
-<img src="/assets/img/design/datavisualisering/graph-biking.svg" class="w-percent-md-70" alt="Eksempel på graf der viser fordelingen af cykelture og cykelkm efter turens længde." />
-<figcaption>
-<p>Figuren viser fordelingen af cykelture og cykelkm efter turens længde. Det ses, at lige over halvdelen af alle cykelture er under 2km, men at disse ture kun udgør 23% af cykeltrafikarbejdet.</p>
-<p>Kilde: DTU</p>
-</figcaption>
+  <img src="/assets/img/design/datavisualisering/graph-biking.svg" class="w-percent-md-70" alt="Eksempel på graf der viser fordelingen af cykelture og cykelkm efter turens længde." />
+  <figcaption>
+    <p>Figuren viser fordelingen af cykelture og cykelkm efter turens længde. Det ses, at lige over halvdelen af alle cykelture er under 2km, men at disse ture kun udgør 23% af cykeltrafikarbejdet.</p>
+    <p>Kilde: DTU</p>
+  </figcaption>
 </figure>
 
 Sæt etiketten (beskrivende tekst) i en boks med hvid baggrund og sort kant på, hvis der er problemer med farvekontrast mellem tekstfarven på  etiketten og den baggrund de skal være på.
@@ -90,8 +81,6 @@ Sæt etiketten (beskrivende tekst) i en boks med hvid baggrund og sort kant på,
 Husk en sigende/forklarende alt-attribut på grafikken eller elementerne i datavisualiseringen så skærmlæseren kan læse op.
 
 Giv brugeren en oversigt over data fra diagrammet eller en tekstbeskrivelse af diagrammet. Beskrivelsen kan evt fungere som opsummering og kan hjælpe brugeren med at drage en konklusion.
-
-{:.h5}
 
 ## Referencer
 

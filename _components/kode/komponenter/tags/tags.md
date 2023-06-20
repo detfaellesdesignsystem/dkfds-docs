@@ -26,11 +26,11 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="tags" %}
+{% include code/syntax.html component="tags" copybutton=true %}
 
 ## Varianter
 
 {:#tags-med-ikon}
 ### Tags med ikon
 
-{% include code/syntax.html component="tags-icon" link="true" %}
+{% include code/syntax.html component="tags-icon" link=true copybutton=true %}

@@ -32,7 +32,7 @@ subnav:
 ## Installation
 
 ### HTML Struktur
-{% include code/syntax.html component="alert" %}
+{% include code/syntax.html component="alert" copybutton=true %}
 
 Anvend `role="alert"` til beskeder, der skal læses højt af en skærmlæser med det samme, hvis indholdet ændrer sig. Dette kan for eksempel være en besked, der bliver synlig efter at have været skjult eller hvor indholdet ændrer sig. Advarsler og fejlbeskeder bør altid være markeret med `role="alert"`.
 
@@ -80,35 +80,35 @@ new DKFDS.Alert(document.getElementById('ALERT-ID')).init();
 #### Informativ
 Informativ er blå, og defineres med klassen `alert-info`.
 
-{% include code/syntax.html component="alert" link="true" %}
+{% include code/syntax.html component="alert" link=true copybutton=true %}
 
 #### Succes
 Succesbesked er grøn, og defineres med klassen `alert-success`.
 
-{% include code/syntax.html component="alert-success" link="true" %}
+{% include code/syntax.html component="alert-success" link=true copybutton=true %}
 
 #### Advarsel
 Besked med advarsel er gul, og defineres med klassen `alert-warning`.
 
-{% include code/syntax.html component="alert-warning" link="true" %}
+{% include code/syntax.html component="alert-warning" link=true copybutton=true %}
 
 #### Fejl
 Besked med fejl er rød, og defineres med klassen `alert-error`.
 
-{% include code/syntax.html component="alert-error" link="true" %}
+{% include code/syntax.html component="alert-error" link=true copybutton=true %}
 
 {:#beskeder-med-ikon}
 ### Ikon
 Defineres med klassen `alert--show-icon`.
 
-{% include code/syntax.html component="alerts-icons" link="true"%}
+{% include code/syntax.html component="alerts-icons" link=true copybutton=true %}
 
 {:#paragrafbredde}
 ### Paragrafbredde
 Defineres med klassen `alert--paragraph`.
 
-{% include code/syntax.html component="alert-paragraph" link="true" %}
+{% include code/syntax.html component="alert-paragraph" link=true copybutton=true %}
 
 {:#luk-knap}
 ### Luk knap
-{% include code/syntax.html component="alert-close" link="true" %}
+{% include code/syntax.html component="alert-close" link=true copybutton=true %}

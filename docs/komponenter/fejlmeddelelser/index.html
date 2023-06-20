@@ -35,7 +35,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1119,7 +1127,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1239,7 +1247,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1559,7 +1567,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2755,7 +2763,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3129,26 +3137,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3578,7 +3566,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3767,7 +3755,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -4023,7 +4011,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4262,19 +4250,21 @@
     
 </div>
 
-<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 id="retningslinjer">Retningslinjer</h2>
+
+<h3>Anvendes til</h3>
 
 <p>Brug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsningen. Fortæl brugeren, hvad der skal til for at rette problemet og komme videre i et simpelt og venligt sprog.</p>
 
 <p>Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så brugeren ikke skal lede, ved at sætte fejlmeddelelsen umiddelbart over det, der skal rettes eller mangler.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Brug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.</p>
 
 <p>Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en <a href="/komponenter/beskeder/">besked</a>.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Fejlmeddelelsen skal også vises som et link til fejlen i <a href="/komponenter/fejlopsummering/">fejlopsummeringen</a>. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.</p>
 
@@ -4286,7 +4276,7 @@
 
 <p>For at hjælpe skærmlæsere tilføjes en skjult tekst med ordet “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da fx høre “Fejl: Dette er ikke en gyldig mailadresse.”</p>
 
-<h3 class="h4">Skriv klart og præcist</h3>
+<h4>Skriv klart og præcist</h4>
 
 <p>Beskriv for brugeren, hvad der er sket og hvordan det kan rettes.</p>
 
@@ -4294,13 +4284,13 @@
 
 <p>Kom ikke med et eksempel i fejlmeddelelsen, hvis der allerede er et eksempel som hjælpetekst. Hvis du fx beder om et cpr-nummer og der allerede under labelen står “ddmmåååå-nnnn” eller “22091908-1856” som hjælpetekst, så skal det ikke også stå i fejlmeddelelsen.</p>
 
-<h3 class="h4">Vær konsistent</h3>
+<h4>Vær konsistent</h4>
 
 <p>Brug den samme fejlmeddelelse ved feltet og i fejlopsummeringen så de ser ens ud, lyder ens, og betyder det samme, og så de giver mening ude af kontekst.</p>
 
 <p>Gør det nemt for brugeren at forstå, hvad der er sket og hvad der skal til for at komme videre. Brug således den label (spørgsmålet), der er knyttet til feltet, til at gøre fejlmeddelelsen forståelig. Fx, hvis et felt har en label, hvor der står “Hvor mange timer arbejder du om ugen?”, så kan fejlmeddelelsen være “Indtast hvor mange timer du arbejder om ugen”.</p>
 
-<h3 class="h4">Vær præcis</h3>
+<h4>Vær præcis</h4>
 
 <p>Generelle fejlmeddelelser er ikke hjælpsomme og de giver ikke mening uden for kontekst. Undgå derfor fejlmeddelelser som:</p>
 
@@ -4328,7 +4318,7 @@
 
 <p>Den gode fejlmeddelelse vil fortælle brugeren, hvad der er sket og hvordan det kan løses.</p>
 
-<h3 class="h4">Brug instruktioner og beskrivelser</h3>
+<h4>Brug instruktioner og beskrivelser</h4>
 
 <p>Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. Fx:</p>
 
@@ -4347,13 +4337,13 @@
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
-        <h3 class="h4">Sådan (do)</h3>
+        <h4>Sådan (do)</h4>
         <div><img src="/assets/img/do-dont/Fejl-funktion-do.svg" alt="Eksempel på, hvordan en fejlmeddelelse kan se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
         <p><strong>Sådan:</strong> Indsæt fejlmeddelelser over det felt, hvor fejlen skal rettes, samt øverst på siden. Brug farven rød til både fejlmeddelelser og til at markere, hvor fejlen er (Wroblewski, 2008, s. 119-132). Farven rød signalerer i computersystemer "alarm", "fare", "problem", "fejl" osv. (Johnson, 2010, s. 72) og er den farve, det menneskelige øje ser bedst (Johnson, 2010, s. 54).</p>
     </div>
     <div class="col-12 col-md-6">
-        <h3 class="h4">Ikke sådan (don't)</h3>
+        <h4>Ikke sådan (don't)</h4>
         <div><img src="/assets/img/do-dont/Fejl-funktion-dont.svg" alt="Eksempel på, hvordan en fejlmeddelelse ikke bør se ud" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
         <p><strong>Ikke sådan:</strong> Undgå, at fejlmeddelelsen kun optræder ét sted på siden. Nogle brugere vil ikke få øje på den. Undgå også, at fejlen kun vises på én måde – fx med farve (Wroblewski, 2008, s. 119-133). Undgå så vidt muligt at bruge den røde farve til andet end fejlmeddelelser (Johnson, 2010, s. 57).</p>
@@ -4363,7 +4353,14 @@
     </div>
 </div>
 
-<h3>Referencer</h3>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
+
+<ul class="nobullet-list">
+  <li><a href="/pages/eksempler/vedhaeft-fil/fil-3/?r=/komponenter/fejlmeddelelser/%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a></li>
+  <li><a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r=/komponenter/fejlmeddelelser/%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a></li>
+</ul>
+
+<h4>Referencer</h4>
 
 <ul class="nobullet-list">
   <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
@@ -4372,14 +4369,9 @@
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" class="icon-link">Understanding Success Criterion 3.3.3: Error Suggestion<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+<h2>Komponenter med fejlmeddelelser</h2>
 
-<ul class="nobullet-list">
-  <li><a href="/pages/eksempler/vedhaeft-fil/fil-3/?r=/komponenter/fejlmeddelelser/%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a></li>
-  <li><a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r=/komponenter/fejlmeddelelser/%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a></li>
-</ul>
-
-<h2 class="h3" id="accordions">Accordions</h2>
+<h3 id="accordions">Accordions</h3>
 
 <div class="component-preview  component-preview-error-message-accordion">
     
@@ -4429,7 +4421,7 @@
     
 </div>
 
-<h2 class="h3" id="datofelter">Datofelter</h2>
+<h3 id="datofelter">Datofelter</h3>
 
 <div class="component-preview  component-preview-error-message-date">
     
@@ -4482,7 +4474,7 @@
     
 </div>
 
-<h2 class="h3" id="datovaelger">Datovælger</h2>
+<h3 id="datovaelger">Datovælger</h3>
 
 <div class="component-preview  component-preview-date-picker-error">
     
@@ -4512,7 +4504,7 @@
     
 </div>
 
-<h2 class="h3" id="dropdown">Dropdown</h2>
+<h3 id="dropdown">Dropdown</h3>
 
 <div class="component-preview  component-preview-select-error">
     
@@ -4545,7 +4537,7 @@
     
 </div>
 
-<h2 class="h3" id="inputfelt">Inputfelt</h2>
+<h3 id="inputfelt">Inputfelt</h3>
 
 <div class="component-preview  component-preview-error-message-name">
     
@@ -4575,7 +4567,7 @@
     
 </div>
 
-<h3 class="h4">Inputfelt med suffix</h3>
+<h4>Inputfelt med suffix</h4>
 
 <div class="component-preview  component-preview-text-input-suffix-error">
     
@@ -4607,7 +4599,7 @@
     
 </div>
 
-<h3 class="h4">Inputfelt med karakterbegrænsning</h3>
+<h4>Inputfelt med karakterbegrænsning</h4>
 
 <div class="component-preview  component-preview-text-input-character-limit-error">
     
@@ -4642,7 +4634,7 @@
     
 </div>
 
-<h2 class="h3" id="radioknapper">Radioknapper</h2>
+<h3 id="radioknapper">Radioknapper</h3>
 
 <div class="component-preview  component-preview-error-message-radio">
     
@@ -4692,7 +4684,7 @@
     
 </div>
 
-<h2 class="h3" id="tekstomraade">Tekstområde</h2>
+<h3 id="tekstomraade">Tekstområde</h3>
 
 <div class="component-preview  component-preview-text-area-error">
     
@@ -4721,7 +4713,7 @@
     
 </div>
 
-<h3 class="h4">Tekstområde med karakterbegrænsning</h3>
+<h4>Tekstområde med karakterbegrænsning</h4>
 
 <div class="component-preview  component-preview-text-area-character-limit-error">
     
@@ -4755,7 +4747,7 @@
     
 </div>
 
-<h2 class="h3" id="tjekboks">Tjekboks</h2>
+<h3 id="tjekboks">Tjekboks</h3>
 
 <div class="component-preview  component-preview-error-message-checkbox">
     
@@ -4807,7 +4799,7 @@
     
 </div>
 
-<h2 class="h3" id="vedhaeft-fil">Vedhæft fil</h2>
+<h3 id="vedhaeft-fil">Vedhæft fil</h3>
 
 <div class="component-preview  component-preview-error-message-file-input">
     
@@ -4832,35 +4824,44 @@
     
 </div>
 
-<h3 class="h4">Ingen fil er valgt</h3>
+<h4>Ingen fil er valgt</h4>
+
 <p>Skriv “Vælg en [dokumenttype]”.<br />
 Fx “Vælg en lægeerklæring”.</p>
 
-<h3 class="h4">Den valgte fil er forkert filtype</h3>
+<h4>Den valgte fil er forkert filtype</h4>
+
 <p>Skriv “Den valgte fil skal være af typen [liste af filtyper]”.<br />
 Fx “Den valgte fil skal være af typen CSV eller ODS” eller “Den valgte fil skal være af typen JPG, BMP, PNG, TIF eller PDF”.</p>
 
-<h3 class="h4">Filen er for stor</h3>
+<h4>Filen er for stor</h4>
+
 <p>Skriv “Filens størrelse skal være under [største filstørrelse]”.<br />
 Fx “Filens størrelse skal være under 2MB”.</p>
 
-<h3 class="h4">Filen er tom</h3>
+<h4>Filen er tom</h4>
+
 <p>Skriv “Den valgte fil er tom”.</p>
 
-<h3 class="h4">Filen indeholder en virus</h3>
+<h4>Filen indeholder en virus</h4>
+
 <p>Skriv “Den valgte fil indeholder en virus”.</p>
 
-<h3 class="h4">Filen er beskyttet af en adgangskode</h3>
+<h4>Filen er beskyttet af en adgangskode</h4>
+
 <p>Skriv “Den valgte fil er beskyttet af en adgangskode”.</p>
 
-<h3 class="h4">Der var en fejl, og filen ikke kunne uploades</h3>
+<h4>Der var en fejl, og filen ikke kunne uploades</h4>
+
 <p>Skriv “Den valgte fil kunne ikke uploades - prøv venligst igen”.</p>
 
-<h3 class="h4">Der er en begrænsning på antal filer brugeren kan vælge</h3>
+<h4>Der er en begrænsning på antal filer brugeren kan vælge</h4>
+
 <p>Skriv “Du kan kun vælge op til [højeste antal filer] filer på samme tid”.<br />
 Fx “Du kan kun vælge op til 10 filer på samme tid”.</p>
 
-<h3 class="h4">Der ikke er brugt den korrekte skabelon</h3>
+<h4>Der ikke er brugt den korrekte skabelon</h4>
+
 <p>Skriv “Den valgte fil skal gøre brug af skabelonen”.</p>
 
 

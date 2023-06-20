@@ -7,25 +7,24 @@ category: Komponenter_category
 description: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 subcategory: Komponenter
-component: back-link
-componentTitle: "Eksempel på tilbage-link"
-componentCode: "/kode/komponenter/tilbage-link/"
 ---
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{% include code/preview-box.html component="back-link" title="Eksempel på tilbage-link" link=true code="/kode/komponenter/tilbage-link/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug tilbage-link-komponenten i selvbetjeningsløsninger med flere trin, hvor brugeren skal kunne navigere tilbage.
 
 Du kan også bruge tilbage-link-komponenten i løsninger med flere sammenhængende sider, hvis det giver mening at gøre det.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Brug aldrig tilbage-link-komponenten sammen med brødkrummer. Vælg enten tilbage-linket eller brødkrummen alt efter, hvad der fungerer bedst for brugeren i en given kontekst.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Placer tilbage-linket øverst til venstre umiddelbart under headeren (top-menuen) på trinnet/siden. Bruges tilbage-linket i selvbetjeningsløsninger, der har en synlig trinindikator eller en venstremenu, placeres tilbage-linket øverst venstrestillet over indholdet.
 
@@ -35,16 +34,14 @@ Hvor det er muligt, skal du sikre dig, at tilbage-linket fungerer, selvom JavaSc
 
 {% include dos-donts-box.html component="back-link-dos-donts" title="Tilbage-link do's and don'ts" %}
 
-{:.h4}
-### Referencer
-Adam Silver: Form Design Patterns (2018)
-
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Bekræft oplysninger'">Formular til kontaktoplysninger: Bekræft oplysninger</a>
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
 - <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kontaktoplysninger'">Trinformular til ansøgning: Kontaktoplysninger</a>
 
-{% include child-components.html parent='Backlink' %}
+#### Referencer
+Adam Silver: Form Design Patterns (2018)
+

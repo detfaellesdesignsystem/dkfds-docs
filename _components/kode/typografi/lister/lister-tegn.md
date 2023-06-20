@@ -10,7 +10,6 @@ componentLink: false
 
 <a href="/design/typografi/lister/#retningslinjer">Læs retningslinjerne for lister</a>
 
-{:.h4}
 ### HTML Struktur
 
-{% include code/syntax.html component="lists-ordered" %}
+{% include code/syntax.html component="lists-ordered" copybutton=true %}

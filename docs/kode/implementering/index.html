@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3652,22 +3640,6 @@
 
     
 
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/anbefalinger-vaerktoejer/" 
-  class="nav-link">
-  Anbefalinger og værktøjer
-</a>
-
-</li>
-
-    
-
 
         </ul>
         
@@ -3719,32 +3691,32 @@
 
 <p>Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">version som zipfil på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, og pak indholdet ud i dit projekt.</p>
 
-<h2>Inkludér  CSS</h2>
+<h3>Inkludér  CSS</h3>
 
-<h3>Virk tema</h3>
+<h4>Virk tema</h4>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;[sti til DKFDS mappen]/dist/css/dkfds-virkdk.css&quot; /&gt;</code></pre></figure>
 
-<h3>Borger.dk tema</h3>
+<h4>Borger.dk tema</h4>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css&quot; /&gt;</code></pre></figure>
 
 <p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.</p>
 
-<h2 id="javascript">Inkludér JavaScript</h2>
+<h3 id="javascript">Inkludér JavaScript</h3>
 
 <p>JavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.</p>
 
-<h2><code>&lt;script&gt;</code> tag</h2>
+<h4><code>&lt;script&gt;</code> tag</h4>
 <p>Indsæt følgende script tag før<code>&lt;/body&gt;</code></p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;script src=&#39;[sti til DKFDS mappen]/dist/js/dkfds.js&#39;&gt;&lt;/script&gt;</code></pre></figure>
 
-<h3>Importer modulet i en .js fil</h3>
+<h4>Importer modulet i en .js fil</h4>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">import * as DKFDS from &quot;dkfds&quot;;</code></pre></figure>
 
-<h3>Init</h3>
+<h4>Init</h4>
 
 <p>Når DKFDS er inkluderet kan du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
 
@@ -3801,6 +3773,7 @@ $icons-folder-path: &#39;/assets/svg&#39;;
 @import &#39;~dkfds/src/stylesheets/dkfds&#39;;</code></pre></figure>
 
 <h2>Browserspecifik styling tilføjes i projektet</h2>
+
 <h3>Webpack</h3>
 
 <p>Bemærk, at scss filen kun indeholder basic CSS. Den indeholder således ikke browser specifik CSS.</p>

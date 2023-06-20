@@ -25,7 +25,7 @@ tags:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="pagination" %}
+{% include code/syntax.html component="pagination" copybutton=true %}
 
 Brug `class="hidden"` på Forrige-, Næste-, Første- og Sidste-knapperne, når de ikke skal vises.
 

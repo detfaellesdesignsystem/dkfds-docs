@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3580,7 +3568,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3676,7 +3664,7 @@
 
     
 
-<li class="  has-anchor-links">
+<li class="  ">
 
 
   
@@ -3980,7 +3968,7 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
@@ -4201,7 +4189,9 @@
     
 </div>
 
-<h2 class="h3" id="retningslinjer">Anvendes til</h2>
+<h2 id="retningslinjer">Retningslinjer</h2>
+
+<h3>Anvendes til</h3>
 
 <p>Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen.</p>
 
@@ -4209,13 +4199,13 @@
 
 <p>En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Anvend ikke headeren andre steder i løsningen end i toppen af siden.</p>
 
 <p>Brug ikke topnavigationen som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>.</p>
 
-<h2 class="h3">Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Tag et kig på <a href="/eksempler/selvbetjeningsloesninger/">eksempelløsningerne</a>, for at se hvordan komponenten passer ind i en komplet løsning.</p>
 
@@ -4238,38 +4228,41 @@
   <img src="/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" />
 </div>
 
-<h2 class="h3" id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+<h4>Headerens rækker forklaret</h4>
 
-<p><a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a></p>
-
-<h2 class="h3">Headerens rækker forklaret</h2>
-
-<h3 class="h4">Række 1 (obligatorisk)</h3>
+<h5>Række 1 (obligatorisk)</h5>
 
 <p>Portal-logo, NemLog-in-oplysninger og ”Log af” knap.</p>
 
-<h3 class="h4">Række 2 (obligatorisk)</h3>
+<h5>Række 2 (obligatorisk)</h5>
 
 <p>Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt support/kontakt oplysninger.</p>
 
-<h3 class="h4">Række 3 (frivillig)</h3>
+<h5>Række 3 (frivillig)</h5>
 
 <p>Navigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.</p>
 
-<h3 class="h4">Række 4 (frivillig)</h3>
+<h5>Række 4 (frivillig)</h5>
 
 <p>Flere sorteringsmuligheder, eventuelt ekstramenu, eventuelt knapper.</p>
 
-<h3 class="h4">Række 5 (frivillig)</h3>
+<h5>Række 5 (frivillig)</h5>
 
 <p>Funktionslinks (igangsætter system- eller OS-funktionalitet, fx gem, print osv.)</p>
 
 <p>En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servicere både simple og komplekse løsninger. Den er også kompleks at anvende for brugerne. Du bør derfor udgangspunkt anvende færre end fem rækker i din header.</p>
 
-<h2 class="h3">Links</h2>
+<h4 id="eksempelloesninger">Se komponenten i eksempelløsninger</h4>
+
+<p><a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a></p>
+
+<h4>Referencer</h4>
+
 <p><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
 
-<h2 id="standard-header">Standard header</h2>
+<h2>Varianter</h2>
+
+<h3 id="standard-header">Standard header</h3>
 
 <div class="component-preview  component-preview-header-simple">
     <div class="component-link px-4 py-4">
@@ -4284,7 +4277,7 @@
     
 </div>
 
-<h2 id="standard-header-med-navigation">Standard header med navigation</h2>
+<h3 id="standard-header-med-navigation">Standard header med navigation</h3>
 
 <div class="component-preview  component-preview-header-medium">
     <div class="component-link px-4 py-4">
@@ -4299,7 +4292,7 @@
     
 </div>
 
-<h2 id="kompleks-header-med-alle-raekker">Kompleks header med alle rækker</h2>
+<h3 id="kompleks-header-med-alle-raekker">Kompleks header med alle rækker</h3>
 
 <div class="component-preview  component-preview-header-full">
     <div class="component-link px-4 py-4">
@@ -4314,7 +4307,7 @@
     
 </div>
 
-<h2 id="header-med-stoerre-logo-og-brugeroplysninger">Header med større logo og brugeroplysninger</h2>
+<h3 id="header-med-stoerre-logo-og-brugeroplysninger">Header med større logo og brugeroplysninger</h3>
 
 <div class="component-preview  component-preview-header-large">
     <div class="component-link px-4 py-4">

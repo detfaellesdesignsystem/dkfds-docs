@@ -22,7 +22,7 @@ subcategory: Kode
 
 ### HTML Struktur
 
-{% include code/syntax.html component="spinner" %}
+{% include code/syntax.html component="spinner" copybutton=true %}
 
 For at ændre spinnerens størrelse kan `font-size` gøres større eller mindre.
 

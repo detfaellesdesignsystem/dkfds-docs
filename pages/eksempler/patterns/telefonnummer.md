@@ -9,17 +9,18 @@ description: Visning af felt for angivelse af telefonnummer
 lead: Måden at håndtere angivelsen af telefonnummer på bør afhænge af selvbetjeningsløsningens målgruppe.
 ---
 
-{:.h3}
 ## Vejledning
 
-- Accepter altid internationale telefonnumre, når dette er teknisk muligt.
-- Danske numre skal kunne angives både med eller uden landekode.
-- Accepter altid enhver gængs formatering af telefonnumre såsom med eller uden mellemrum, bindestreger eller parenteser samt landekoder skrevet med enten + eller 00 (fx +45 eller 0045).
-- Hvis der kun kan angives et mobilnummer, fx hvis der skal sendes sms-beskeder til det angivne nummer, brug da “Mobilnummer” som feltets label.
-- Brug ikke num pad til telefonnummerfeltet på mobil grundet problemer med tilgængelighed (Laakso, 2020)
-- Angiv altid autocomplete attributten i input feltet, så brugerne har mulighed for automatisk udfyldning af feltet (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link">WCAG 2.1 Success Criterion 1.3.5 Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)
+Accepter altid internationale telefonnumre, når dette er teknisk muligt.
 
-{:.h3}
+Danske numre skal kunne angives både med eller uden landekode.
+
+Accepter altid enhver gængs formatering af telefonnumre såsom med eller uden mellemrum, bindestreger eller parenteser samt landekoder skrevet med enten + eller 00 (fx +45 eller 0045).
+
+Hvis der kun kan angives et mobilnummer, fx hvis der skal sendes sms-beskeder til det angivne nummer, brug da “Mobilnummer” som feltets label.
+
+Angiv altid autocomplete attributten i input feltet, så brugerne har mulighed for automatisk udfyldning af feltet (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link">WCAG 2.1 Success Criterion 1.3.5 Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)
+
 ## Når målgruppen hovedsageligt har danske telefonnumre
 
 {% include code/preview-box-details.html component="telefonnummer" title="Eksempel på angivelse af telefonnummer" link=false detaillabel="for eksempel på angivelse af telefonnummer" %}
@@ -30,7 +31,6 @@ Hvis et udenlandsk nummer er skrevet uden landekode, eller hvis formatet ikke sv
 
 {% include code/preview-box-details.html component="telefonnummer-fejl-uden-landekode" title="Eksempel på angivelse af telefonnummer med udenlandsk nummer uden landekode" link=false detaillabel="for eksempel på angivelse af telefonnummer med udenlandsk nummer uden landekode" %}
 
-{:.h3}
 ## Når målgruppen hovedsageligt har udenlandske telefonnumre
 
 {% include code/preview-box-details.html component="telefonnummer-udenlandsk" title="Eksempel på angivelse af udenlandsk telefonnummer" link=false detaillabel="for eksempel på angivelse af udenlandsk telefonnummer" %}
@@ -41,7 +41,6 @@ Hvis et udenlandsk nummer skrives uden landekode, eller hvis formatet ikke svare
 
 {% include code/preview-box-details.html component="telefonnummer-udenlandsk-ugyldigt" title="Eksempel på angivelse af ugyldigt telefonnummer" link=false detaillabel="for eksempel på angivelse af gyldigt telefonnummer" %}
 
-{:.h3}
 ## Hvis der kun kan angives danske telefonnumre (ikke anbefalet)
 
 Accepter altid udenlandske telefonnumre, når det er muligt. Hvis det teknisk ikke kan lade sig gøre at acceptere udenlandske numre, vis da en fejlmeddelelse, når det indtastede nummer ikke har et almindeligt dansk format såsom 12345678, 12 123 123, +45 12345678 eller 0045 12 34 56 78.
@@ -50,9 +49,3 @@ Accepter altid udenlandske telefonnumre, når det er muligt. Hvis det teknisk ik
 
 
 {% include code/preview-box-details.html component="telefonnummer-dansk-fejl" title="Eksempel på angivelse af dansk telefonnummer med fejlbesked" link=false detaillabel="for eksempel på angivelse af dansk telefonnummer med fejlbesked" %}
-
-{:.h3}
-## Referencer
-
-{:.nobullet-list}
-- <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/" class="icon-link">Hanna Laakso: Why the GOV.UK Design System team changed the input type for numbers (2020)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

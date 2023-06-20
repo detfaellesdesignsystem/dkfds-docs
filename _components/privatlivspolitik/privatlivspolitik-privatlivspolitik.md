@@ -25,15 +25,7 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a>
 
 <h3>Formålene med og retsgrundlaget for behandlingen af dine personoplysninger</h3>
 
-Vi anvender data til at forbedre Det Fælles Designsystem (FDS) og give dig/myndigheden et bedre produkt. Vi indsamler desuden oplysninger til en anonymiseret statistik over, hvor mange brugere der åbner deres mails.
-
-<h3>Kategorier af personoplysninger</h3>
-
-Når du anvender FDS, vil vi i forbindelse med indsamling af brugsstatistik registrere din IP-adresse.
-
-<h3>Hvor behandles dine personoplysninger?</h3>
-
-IP-adressen gemmes hos Piwik PRO.
+Hvis du siger ja til cookies, anvender vi data til at forbedre Det Fælles Designsystem (FDS) og give dig/myndigheden et bedre produkt. Vi indsamler desuden oplysninger til en anonymiseret statistik over, hvor mange brugere der åbner deres mails blandt de, som er tilmeldt vores nyhedsbrev. Databehandleren opbevarer nyhedsbrevsabonnenternes e-mailadresser, indtil abonnenten selv afmelder sig nyhedsbrevet.
 
 <h3>Hvem har adgang til dine oplysninger?</h3>
 
@@ -41,7 +33,7 @@ Dine personoplysninger bliver videregivet til følgende modtagere:
 
 Medarbejderne i Erhvervsstyrelsen har adgang til dine personoplysninger i det omfang, det er nødvendigt for at forbedre produktet.
 
-Piwik PRO er databehandlere for hovedparten af FDS-behandlinger af personoplysninger. De har adgang efter instruks fra FDS-teamet i det omfang, det er nødvendigt for at kunne foretage driften af IT-systemerne.
+Erhvervsstyrelsen benytter en databehandler, der efter instruks fra Erhvervsstyrelsen har adgang til dine personoplysninger i det omfang, det er nødvendigt for at levere deres tjenester til os. Vi videregiver ikke dine personoplysninger til andre end vores databehandler. 
 
 <h3>Opbevaring af dine personoplysninger</h3>
 
@@ -51,7 +43,7 @@ Vi arbejder kontinuerligt for at beskytte fortroligheden af de oplysninger, vi b
 
 Oplysninger om dig gemmes så længe, det er nødvendigt for at kunne opfylde vore forpligtelser som offentlig myndighed og for at kunne overholde gældende lovgivning, herunder arkivloven.
 
-Oplysningerne i forbindelse med din tilmelding til at modtage nyhedsmail vil blive opbevaret, indtil du afmelder dit nyhedsabonnement.
+Ved bekræftet afmelding, eller hvis du ikke har bekræftet din tilmelding til et abonnement, gemmer vi dine personoplysninger i op til syv dage. 
 
 ### Retten til at trække samtykke tilbage
 Du har til enhver tid ret til at trække dit samtykke tilbage, konsekvensen heraf vil være at du ikke længere kan modtage nyhedsbrev fra Det Fælles Designsystem.

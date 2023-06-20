@@ -37,7 +37,15 @@
 ================================================== -->
 
 <!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
 <link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
 <link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
@@ -1121,7 +1129,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1241,7 +1249,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -1561,7 +1569,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -2757,7 +2765,7 @@
     
 
 
-<li class="  has-anchor-links">
+<li class="  ">
 
   
 
@@ -3131,26 +3139,6 @@
     
     <a href="/kode/plugins/"  class="nav-link">
         Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/anbefalinger-vaerktoejer/"  class="nav-link">
-        Anbefalinger og værktøjer
       </a>
      
     
@@ -3716,32 +3704,31 @@
     </div>
 </details>
 
-<h2 class="h3">Anvendes til</h2>
+<h2>Anvendes til</h2>
+
 <p>Dialogen anvendes, når en bruger er ved at blive logget af en løsning automatisk, dvs. når deres session udløber.</p>
 
-<h2 class="h3">Anvendes ikke til</h2>
+<h2>Anvendes ikke til</h2>
+
 <p>Dialogen anvendes ikke, når en bruger selv har trykket på en log af-knap. Hvis brugeren er ved at logge af en løsning, hvor der er foretaget ændringer, som ikke er gemt, så anvend i stedet dialogen Er du sikker på, du vil forlade siden?</p>
 
-<h2 class="h3">Vejledning</h2>
-<ul>
-  <li>Til dette mønster anvendes komponenten <a href="/komponenter/modal/#kraever-handling">Modalvindue, som kræver handling</a>.</li>
-  <li>Dialogen vises ca. 5 minutter før, brugeren automatisk bliver logget af. Således kan brugeren nå at handle på informationen og fx vælge at forblive logget ind. En kortere tid for dialogen kan vælges af sikkerhedsmæssige årsager, dog må brugeren aldrig få mindre end 20 sekunders varsel af hensyn til tilgængelighed (Timing Adjustable: Understanding SC 2.2.1).</li>
-  <li>En nedtælling i dialogen kan hjælpe brugeren med at forstå, hvor lang tid de har til at reagere. Hvis dialogen “Session udløber” fx vises 5 minutter før, brugeren automatisk logges af, så tælles der ned fra 5 minutter.</li>
-  <li>Hvis sessionens udløb vil resultere i, at ændringer, som brugere har foretaget, vil gå tabt, bør dialogen gøre opmærksom på dette. Det kan fx være, hvis brugeren er i gang med at udfylde en formular.</li>
-  <li>Hvis brugeren har foretaget ændringer, og disse er gemt automatisk, bør dialogen gøre opmærksom på dette.</li>
-  <li>Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/">Se eksempel på, hvordan siden kan se ud med FDS</a>. Den kan ydermere informere brugeren om ekstra sikkerhed.</li>
-  <li>Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold. Hvis din løsning bruger NemLogin, kan du <a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">læse mere om kravene på digitaliser.dk<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</li>
-</ul>
+<h2>Vejledning</h2>
 
-<h2 class="h3">Referencer</h2>
+<p>Til dette mønster anvendes komponenten <a href="/komponenter/modal/#kraever-handling">Modalvindue, som kræver handling</a>.</p>
 
-<ul class="nobullet-list">
-  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" class="icon-link">Timing Adjustable:
-Understanding SC 2.2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">Tekniske krav til tilslutning af it-system i NemLog-in<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
+<p>Dialogen vises ca. 5 minutter før, brugeren automatisk bliver logget af. Således kan brugeren nå at handle på informationen og fx vælge at forblive logget ind. En kortere tid for dialogen kan vælges af sikkerhedsmæssige årsager, dog må brugeren aldrig få mindre end 20 sekunders varsel af hensyn til tilgængelighed (Timing Adjustable: Understanding SC 2.2.1).</p>
 
-<h2>Ændringer er ikke gemt</h2>
+<p>En nedtælling i dialogen kan hjælpe brugeren med at forstå, hvor lang tid de har til at reagere. Hvis dialogen “Session udløber” fx vises 5 minutter før, brugeren automatisk logges af, så tælles der ned fra 5 minutter.</p>
+
+<p>Hvis sessionens udløb vil resultere i, at ændringer, som brugere har foretaget, vil gå tabt, bør dialogen gøre opmærksom på dette. Det kan fx være, hvis brugeren er i gang med at udfylde en formular.</p>
+
+<p>Hvis brugeren har foretaget ændringer, og disse er gemt automatisk, bør dialogen gøre opmærksom på dette.</p>
+
+<p>Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/">Se eksempel på, hvordan siden kan se ud med FDS</a>. Den kan ydermere informere brugeren om ekstra sikkerhed.</p>
+
+<p>Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold. Hvis din løsning bruger NemLogin, kan du <a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">læse mere om kravene på digitaliser.dk<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+
+<h3>Ændringer er ikke gemt</h3>
 
 <div class="component-preview  component-preview-session-udloeber-aendringer-ikke-gemt">
     
@@ -3823,7 +3810,7 @@ Understanding SC 2.2.1<svg class="icon-svg" focusable="false" aria-hidden="true"
     </div>
 </details>
 
-<h2>Ændringer er gemt</h2>
+<h3>Ændringer er gemt</h3>
 
 <div class="component-preview  component-preview-session-udloeber-aendringer-gemt">
     
@@ -3904,6 +3891,14 @@ Understanding SC 2.2.1<svg class="icon-svg" focusable="false" aria-hidden="true"
 
     </div>
 </details>
+
+<h3>Referencer</h3>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" class="icon-link">Timing Adjustable:
+Understanding SC 2.2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">Tekniske krav til tilslutning af it-system i NemLog-in<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
 
 
 

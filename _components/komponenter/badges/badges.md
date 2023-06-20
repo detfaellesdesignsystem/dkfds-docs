@@ -14,25 +14,24 @@ anchor: true
 subnav:
 - text: Statusbadges
   href: "#statusbadges"
-component: badges
-componentTitle: Eksempel på badges
-componentCode: "/kode/komponenter/badges/"
-
 ---
-{:.h3 #retningslinjer}
-## Anvendes til
+
+{% include code/preview-box.html component="badges" title="Eksempel på badges" link=true code="/kode/komponenter/badges/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Brug badges til at gøre opmærksom på ændringer, nyt eller vigtigt indhold.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 Brug ikke badge, hvis placeringen af det får brugeren til at tro, det er en knap. Test altid for dette, når du vil anvende badges.
 
 Brug ikke badges på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyhedssider, hvor brugeren nemt kan se, hvad der er det nyeste indhold, når det blot står øverst.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Brug ord og begreber, som brugeren kan genkendes fra løsningen.
 
@@ -44,13 +43,8 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 
 {% include dos-donts-box.html component="badges-dos-donts" title="Badges do's and don'ts" %}
 
-{:.h4}
-### Referencer
-
-<a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" class="icon-link">Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
@@ -58,4 +52,13 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 - <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
 - <a href="/pages/eksempler/opgaveliste/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Opgaveliste'">Opgaveliste</a>
 
-{% include child-components.html parent='Badges' %}
+#### Referencer
+
+<a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" class="icon-link">Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+## Varianter
+
+{:#statusbadges}
+### Statusbadges
+
+{% include code/preview-box.html component="badges-status" title="Eksempel på statusbadges" %}

@@ -19,7 +19,6 @@ subnav:
 
 {% include code/preview-box-details.html component="fieldset" title="Eksempel på formularstruktur" link=false detaillabel="for eksempel på formularstruktur" %}
 
-{:.h3}
 ## Vejledning
 
 Gør brug af `<div class="form-group">`, fieldset og overskrifter til at strukturere din formular.
@@ -46,7 +45,14 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 
 {% include dos-donts-box.html component="overskrifter-dos-donts" title="Overskrifter do's and don'ts" %}
 
-{:.h4}
+{:#eksempelloesninger}
+### Se eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kontaktoplysninger'">Trinformular til registrering: Kontaktoplysninger</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
+
 ### Referencer
 
 {:.nobullet-list}
@@ -59,14 +65,6 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 - Luke Wroblewski: Visible Narratives: Understanding Visual Organization (2003)
 - Louise Downe: Good services are verbs, bad services are nouns (2015)
 - Linda Newman Lior: Writing for Interaction (2013)
-
-{:.h3 #eksempelloesninger}
-## Se eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kontaktoplysninger'">Trinformular til registrering: Kontaktoplysninger</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
 
 {:#kompleks}
 ## Kompleks formular

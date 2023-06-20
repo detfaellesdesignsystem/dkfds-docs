@@ -43,7 +43,7 @@ subnav:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="toastbesked-info" %}
+{% include code/syntax.html component="toastbesked-info" copybutton=true %}
 
 Kopiér ovenstående kode for at indsætte én toastbesked.
 
@@ -79,7 +79,7 @@ let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
 toast.show();
 {% endhighlight %}
 
-### Skjul
+#### Skjul
 Når en toastbesked skjules, ændres class fra `show` til `hide`.
 
 {% highlight javascript %}
@@ -91,16 +91,16 @@ toast.hide();
 
 {:#succes}
 ### Succes
-{% include code/syntax.html component="toastbesked-success" link="true" %}
+{% include code/syntax.html component="toastbesked-success" link=true copybutton=true %}
 
 {:#advarsel}
 ### Advarsel
-{% include code/syntax.html component="toastbesked-warning" link="true" %}
+{% include code/syntax.html component="toastbesked-warning" link=true copybutton=true %}
 
 {:#fejl}
 ### Fejl
-{% include code/syntax.html component="toastbesked-error" link="true" %}
+{% include code/syntax.html component="toastbesked-error" link=true copybutton=true %}
 
 {:#information}
 ### Information
-{% include code/syntax.html component="toastbesked-info" link="true" %}
+{% include code/syntax.html component="toastbesked-info" link=true copybutton=true %}

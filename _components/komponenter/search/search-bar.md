@@ -8,25 +8,24 @@ subcategory: Komponenter
 description: "Et søgefelt udstiller brugeren muligheden for at søge efter bestemt indhold på siden eller i løsningen."
 tags:
 lead: Et søgefelt udstiller brugerne muligheden at søge efter bestemt indhold på siden eller i løsningen.
-component: search
-componentTitle: "Eksempel på søgefelt"
-componentCode: "/kode/komponenter/search/"
 ---
 
-{:.h3 #retningslinjer}
-## Anvendes til
+{% include code/preview-box.html component="search" title="Eksempel på søgefelt" link=true code="/kode/komponenter/search/" %}
+
+{:#retningslinjer}
+## Retningslinjer
+
+### Anvendes til
 
 Søgefeltet er en samlet komponent (søgefelt og -knap), der giver brugeren mulighed for at søge efter specifikt indhold, hvis de kender søgeordene eller ikke kan finde indholdet gennem menuer eller anden navigation.
 
 Søgefeltet giver et alternativ til brugere, der af den ene eller anden årsag ikke kan anvende løsningens navigation.
 
-{:.h3}
-## Anvendes ikke til
+### Anvendes ikke til
 
 På meget små løsninger eller løsninger, der kun består af en enkelt side, bør det ikke være nødvendigt med et søgefelt.
 
-{:.h3}
-## Vejledning
+### Vejledning
 
 Det er vigtigt for brugerne, at kunne se de indtastede søgeord. En god tommelfingerregel er at søgefeltet er 27 karakterer (27ch) langt som minimum.
 
@@ -44,8 +43,13 @@ Søgeknappen skal være en submit-knap.
 
 {% include dos-donts-box.html component="search-dos-donts" title="Søgefelt do's and don'ts" %}
 
-{:.h4}
-### Referencer
+{:#eksempelloesninger}
+#### Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
+
+#### Referencer
 
 {:.nobullet-list}
 - <a href="https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/" class="icon-link">Jakob Nielsen: Top 10 Guidelines for Homepage Usability (2002)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
@@ -56,10 +60,3 @@ Søgeknappen skal være en submit-knap.
 - <a href="https://uxplanet.org/design-a-perfect-search-box-b6baaf9599c" class="icon-link">Design a perfect search box<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://uxplanet.org/best-practices-for-search-results-1bbed9d7a311" class="icon-link">Best practises for search results<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
 - <a href="https://www.nngroup.com/articles/magnifying-glass-icon/" class="icon-link">The Magnifying-Glass Icon in Search Design: Pros and Cons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-
-
-{:.h3 #eksempelloesninger}
-## Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
