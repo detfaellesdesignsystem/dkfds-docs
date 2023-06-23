@@ -73,10 +73,13 @@ tags:
 - 8.2.1
 - 9.0.0
 - 9.0.1
+- 9.0.2
 anchor: true
 subnav:
 - text: Version 10.0.0
   href: "#version-10-0-0"
+- text: Version 9.0.2
+  href: "#version-9-0-2"
 - text: Version 9.0.1
   href: "#version-9-0-1"
 - text: Version 9.0.0
@@ -95,10 +98,8 @@ subnav:
   href: "#version-7-5-3"
 - text: Version 7.5.2
   href: "#version-7-5-2"
-- text: Version 7.5.1
-  href: "#version-7-5-1"
 - text: Tidligere versioner
-  href: "#version-7-5-0"
+  href: "#version-7-5-1"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 ---
@@ -126,15 +127,22 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-10-0-0 .mb-0}
 ## Version 10.0.0
 
-<div><span class="small-text mt-0 d-block">??-??-2023</span></div>
+<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) <a href="/komponenter/radioknap/">radioknapper</a> og <a href="/komponenter/tjekboks/">tjekbokse</a>. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> og tjekbokse skal opdateres.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret gulp-sass i package.json. 
 
+{:#version-9-0-2 .mb-0}
+## Version 9.0.2
+
+<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
+
+- Rettet fejl, hvor musemarkøren ikke blev vist korrekt på <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede felter</a>, når de var angivet som andet end `type="text"`.
+
 {:#version-9-0-1 .mb-0}
 ## Version 9.0.1
 
-<div><span class="small-text mt-0 d-block">??-06-2023</span></div>
+<div><span class="small-text mt-0 d-block">20-06-2023</span></div>
 
 - Rettet fejl, hvor teksten på <a href="/komponenter/knapper/">knapper</a> røg ud over kanten, hvis teksten fyldte flere linjer.
 - Rettet fejl, hvor <a href="/komponenter/cookiemeddelelse/">cookiemeddelelsen</a> ikke kunne læses, når der var zoomet kraftigt ind i browseren.
