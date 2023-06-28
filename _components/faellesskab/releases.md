@@ -130,7 +130,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) <a href="/komponenter/radioknap/">radioknapper</a> og <a href="/komponenter/tjekboks/">tjekbokse</a>. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> og tjekbokse skal opdateres.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret gulp-sass i package.json. 
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret `devDependencies` og `scripts` i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
 
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2
