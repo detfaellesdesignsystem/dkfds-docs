@@ -5,6 +5,11 @@ const TerserPlugin = require('terser-webpack-plugin');
 //const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const path = require('path');
 
+console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Running webpack...\n");
+
 module.exports = function (outputPath, prod) {
   return {
     entry: {
@@ -114,13 +119,15 @@ module.exports = function (outputPath, prod) {
       filename: "js/[name].js"
     },
     resolve: {
-      modules: ["node_modules"]
+      modules: ["node_modules"],
     },
+    stats: 'minimal',
     plugins: [
       new CopyWebpackPlugin(
             {//copies all content from /img to /assets/img
               patterns: [
-                {from: "./img/**/*", to: ""}
+                { from: "./img/**/*", to: "" },
+                { from: "./node_modules/dkfds/dist/img/svg-icons", to: "svg" },
               ]
             }
           ),
