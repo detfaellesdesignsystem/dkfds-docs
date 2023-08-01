@@ -136,9 +136,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2
 
-<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
+<div><span class="small-text mt-0 d-block">xx-08-2023</span></div>
 
 - Rettet fejl, hvor musemarkøren ikke blev vist korrekt på <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede felter</a>, når de var angivet som andet end `type="text"`.
+- Rettet fejl, hvor <a href="/komponenter/knapper/">knapper</a> ikke altid stod på linje, når de lå i samme række.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/215" class="icon-link" target="_blank">issue #215 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 {:#version-9-0-1 .mb-0}
 ## Version 9.0.1
